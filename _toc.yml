@@ -6,7 +6,7 @@ root: intro
 parts:
 - caption: Vettori
   chapters:
-  - file: ch/vectors.md
+  - file: ch/vectors
 - caption: Geometria analitica
   chapters:
   - file: ch/analytic_geometry
@@ -19,7 +19,7 @@ parts:
   chapters:
   - file: ch/infinitesimal_calculus
     sections:
-    - file: ch/infinitesimal_calculus/real_funcions
+    - file: ch/infinitesimal_calculus/real_functions
     - file: ch/infinitesimal_calculus/limits
     - file: ch/infinitesimal_calculus/derivatives
     - file: ch/infinitesimal_calculus/integrals
