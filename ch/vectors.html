@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Algebra e calcolo vettoriale per la scuola superiore &#8212; My sample book</title>
+    <title>Vettori &#8212; My sample book</title>
   
   
   
@@ -172,7 +172,7 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Vettori</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Algebra e calcolo vettoriale per la scuola superiore</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Vettori</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Geometria analitica</span></p>
 <ul class="nav bd-sidenav">
@@ -365,9 +365,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -378,19 +376,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Algebra e calcolo vettoriale per la scuola superiore</h1>
+    <h1>Vettori</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calcolo-vettoriale-in-spazi-euclidei-usando-coordinate-cartesiane">Calcolo vettoriale in spazi euclidei, usando coordinate cartesiane</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -419,75 +409,35 @@ document.write(`
 </div>
 </div>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="algebra-e-calcolo-vettoriale-per-la-scuola-superiore">
-<span id="vectors-high-school"></span><h1>Algebra e calcolo vettoriale per la scuola superiore<a class="headerlink" href="#algebra-e-calcolo-vettoriale-per-la-scuola-superiore" title="Permalink to this heading">#</a></h1>
-<p><strong>Necessità dei vettori.</strong> In vari ambiti della matematica e della fisica, i numeri scalari non sono sufficienti a rappresentare correttamente alcune grandezze. Un esempio di queste grandezze possono essere una velocità o una forza in fisica, o la posizione di un punto in uno spazio euclideo in geometria. <strong>TODO</strong></p>
-<p>La caratteristica fondamentale di questi oggetti matematici è la loro indipendenza - <strong>invarianza</strong>, assolutezza - rispetto alle scelte che si possono fare per rappresentarli: scelte diverse possono essere più o meno convenienti, ma non cambiano la natura di un vettore.</p>
-<p><strong>Intuizione di vettore.</strong> Un vettore è un oggetto matematico necessario a rappresentare grandezze che sono caratterizzate da intensità, direzione e verso.</p>
-<div class="math notranslate nohighlight">
-\[\vec{v}, \vec{w} \in \mathscr{V} \quad , \quad a, b \in \mathbb{R}\]</div>
-<p><strong>Operazioni sui vettori: definizione di spazio vettoriale.</strong></p>
-<div class="math notranslate nohighlight">
-\[a \vec{v} \in \mathscr{V}\]</div>
-<div class="math notranslate nohighlight">
-\[\vec{v} + \vec{w} \in \mathscr{V}\]</div>
-<div class="math notranslate nohighlight">
-\[a \vec{v} + b \vec{w} \in \mathscr{V}\]</div>
-<p><strong>Base di uno spazio</strong> In uno spazio vettoriale, ogni vettore può essere rappresentato come una combinazione lineare di un insieme di vettori dello spazio, opportunamente scelti. Il numero minimo di questi vettori è definita come dimensione dello spazio vettoriale.</p>
-<p><strong>Prodotto scalare - o prodotto interno.</strong></p>
-<div class="math notranslate nohighlight">
-\[\vec{v} \cdot \vec{w}: \mathscr{V} \times \mathscr{V} \rightarrow \mathbb{R}\]</div>
-<div class="math notranslate nohighlight">
-\[\vec{v} \cdot \vec{w} = |\vec{v}| |\vec{w}| \cos \theta_{\vec{v} \vec{w}}\]</div>
-<p><strong>Prodotto vettoriale.</strong></p>
-<div class="math notranslate nohighlight">
-\[\vec{v} \times \vec{w}: \mathscr{V} \times \mathscr{V} \rightarrow \mathscr{V}\]</div>
-<div class="math notranslate nohighlight">
-\[\vec{v} \times \vec{w} = \hat{k} |\vec{v}| |\vec{w}| \sin \theta_{\vec{v} \vec{w}}\]</div>
-<p><strong>Base cartesiana.</strong> <span class="math notranslate nohighlight">\(\{ \hat{e}_i \}_{i=1:n^d}\)</span>, <span class="math notranslate nohighlight">\(\{ \hat{x}, \hat{y}, \hat{z} \}\)</span>,</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-  \hat{x} \cdot  \hat{x} &amp; = \hat{y} \cdot  \hat{y} = \hat{z} \cdot  \hat{z} = 1 \\
-  \hat{x} \cdot  \hat{y} &amp; = \hat{y} \cdot  \hat{z} = \hat{z} \cdot  \hat{x} = 0
-\end{aligned}\end{split}\]</div>
-<p>e usando il prodotto vettore per definire l’orientazione dei 3 vettori,</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-  \hat{x} \times \hat{y} &amp; = \hat{z} \\
-  \hat{y} \times \hat{z} &amp; = \hat{x} \\
-  \hat{z} \times \hat{x} &amp; = \hat{y} \\
-\end{aligned}\end{split}\]</div>
-<p>Un vettore può essere scritto in una base cartesiana come</p>
-<div class="math notranslate nohighlight">
-\[\vec{v} = v_x \hat{x} + v_y \hat{y} + v_z \hat{z}\]</div>
-<p>Una coordinata del vettore è semplicemente</p>
-<div class="math notranslate nohighlight">
-\[v_x = \hat{x} \cdot \vec{v} \ .\]</div>
-<p>Somma di vettori e moltiplicazione per uno scalare</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-   \vec{v} + \vec{w} &amp; =   (v_x \hat{x} + v_y \hat{y} + v_z \hat{z}) + (w_x \hat{x} + w_y \hat{y} + w_z \hat{z}) = \\
-                     &amp; =   (v_x + w_x) \hat{x} + (v_y + w_y) \hat{y} + (v_z + w_z) \hat{z} \\ \\
- a \vec{v}           &amp; = a (v_x \hat{x} + v_y \hat{y} + v_z \hat{z}) = \\
-                     &amp; =   ( a v_x ) \hat{x} + ( a v_y ) \hat{y} + ( a v_z ) \hat{z}
-\end{aligned}\end{split}\]</div>
-<p>Il prodotto scalare diventa quindi</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-  \vec{v} \cdot \vec{w}
-  &amp; = (v_x \hat{x} + v_y \hat{y} + v_z \hat{z}) \cdot (w_x \hat{x} + w_y \hat{y} + w_z \hat{z}) = \\
-  &amp; = v_x w_x + v_y w_y + v_z w_z
-\end{aligned}\end{split}\]</div>
-<p>mentre il prodotto vettoriale</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-  \vec{v} \times \vec{w}
-  &amp; = (v_x \hat{x} + v_y \hat{y} + v_z \hat{z}) \times (w_x \hat{x} + w_y \hat{y} + w_z \hat{z}) = \\
-  &amp; = (v_y w_z - v_z w_y) \hat{x} + (v_z w_x - v_x w_z) \hat{y} + (v_x w_y - v_y w_x) \hat{z} = \\
-\end{aligned}\end{split}\]</div>
-<div class="section" id="calcolo-vettoriale-in-spazi-euclidei-usando-coordinate-cartesiane">
-<h2>Calcolo vettoriale in spazi euclidei, usando coordinate cartesiane<a class="headerlink" href="#calcolo-vettoriale-in-spazi-euclidei-usando-coordinate-cartesiane" title="Permalink to this heading">#</a></h2>
-</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="vettori">
+<span id="vectors-high-school"></span><h1>Vettori<a class="headerlink" href="#vettori" title="Permalink to this heading">#</a></h1>
+<p>Mentre alcune grandezze possono essere rappresentate completamente da un numero (e un’unità di misura, se necessaria), molte altre grandezze richiedono una quantità maggiore di informazioni.</p>
+<p><strong>I limiti dei numeri scalari.</strong>
+Ad esempio, le frasi:</p>
+<ul class="simple">
+<li><p>“preparo <span class="math notranslate nohighlight">\(150 \ g\)</span> di riso”</p></li>
+<li><p>“oggi è una bella giornata di primavera con temperatura massima prevista di 25°C”</p></li>
+<li><p>“il treno ha impiegato <span class="math notranslate nohighlight">\(20\)</span> minuti”
+non lasciano alcun dubbio sulla quantità di riso, sulla previsione della temperatura, e sulla durata del viaggio.</p></li>
+</ul>
+<p>D’altra parte, le frasi:</p>
+<ul class="simple">
+<li><p>“l’oasi si trova a <span class="math notranslate nohighlight">\(5 \ km\)</span> da qui”</p></li>
+<li><p>“l’aereo è passato qui sopra a <span class="math notranslate nohighlight">\(500 \ km/h\)</span>”</p></li>
+<li><p>“il ciclista ha ricevuto una spinta dai tifosi”
+lasciano molti dubbi sulla situazione descritta. Se mi trovassi disidratato nel deserto mi farebbe piacere sapere che c’è un’oasi nei paraggi, ma mi farebbe ancora più piacere conoscere in quale direzione devo andare. La seconda frase non mi permette di decidere in quale direzione guardare per cercare l’aereo, se mi fossi perso il passaggio sopra la mia testa. La terza frase contiene ancora meno informazioni: ha ricevuto una spinta, ok, ma di quale entità? E in quale direzione? L’ha aiutato, l’ha frenato, l’ha sbilanciato?</p></li>
+</ul>
+<p>La differenza della completezza dell’informazione è dovuta al fatto che:</p>
+<ul class="simple">
+<li><p><strong>massa</strong>, <strong>temperatura</strong>, <strong>tempo</strong> sono <strong>grandezze scalari</strong>, che possono essere completamente rappresentate con un solo numero, con l’opportuna unità di misura,</p></li>
+<li><p><strong>spostamento</strong>, <strong>velocità</strong>, <strong>forza</strong> sono <strong>grandezze vettoriali</strong>, che per essere rappresentate completamente hanno bisogno di un’informazione su intensità e verso.</p></li>
+</ul>
+<p><strong>Introduzione ai vettori.</strong></p>
+<ul class="simple">
+<li><p><strong>Algebra vettoriale.</strong></p></li>
+<li><p><strong>Geometria nello spazio euclideo.</strong></p></li>
+<li><p><strong>Cenni di calcolo vettoriale.</strong></p></li>
+</ul>
 </div>
 
     <script type="text/x-thebe-config">
@@ -544,20 +494,6 @@ document.write(`
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calcolo-vettoriale-in-spazi-euclidei-usando-coordinate-cartesiane">Calcolo vettoriale in spazi euclidei, usando coordinate cartesiane</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>
