@@ -10,13 +10,13 @@
 **Definizione di uno spazio euclideo, $E^n$.**
 
 - Gli elementi dell'insieme $E^n$ vengono chiamati punti.
-- Tra due punti $P$, $Q$ è possibile tracciare uno e un solo segmento orientato, $\voverrightarrow{QP} = P - Q$, definito **vettore euclideo**, o **vettore spaziale**
+- Tra due punti $P$, $Q$ è possibile tracciare uno e un solo segmento orientato, $\overrightarrow{QP} = P - Q$, definito **vettore euclideo**, o **vettore spaziale**
 
 - Operazioni:
   - somma vettorialei
 
     $$\begin{aligned}
-      \voverrightarrow{QP} & = \voverrightarrow{QR} + \voverrightarrow{RP} \\
+      \overrightarrow{QP} & = \overrightarrow{QR} + \overrightarrow{RP} \\
      (P- Q) & = ( R - Q ) + ( P - R)
     \end{aligned}$$
 
