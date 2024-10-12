@@ -24,7 +24,6 @@ parts:
     sections:
     - file: ch/infinitesimal_calculus/real_functions
     - file: ch/infinitesimal_calculus/limits
-    - file: ch/infinitesimal_calculus/limits_exercise_gpt
     - file: ch/infinitesimal_calculus/derivatives
     - file: ch/infinitesimal_calculus/integrals
 
