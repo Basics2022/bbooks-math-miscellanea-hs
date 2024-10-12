@@ -16,17 +16,12 @@
 
 - **Geometria nello spazio euclideo 3-dimensionale**
 
-  - [Sistemi di coordinate]()
-
-  - [Punti]()
-
-  - [Rette]()
-
-  - [Piani]()
-
-  - [Cono e rivisitazione delle coniche]()
-
-  - [Superfici quadratiche]()
+  -  Sistemi di coordinate
+  -  Punti
+  -  Rette
+  -  Piani
+  -  Cono e rivisitazione delle coniche
+  -  Superfici quadratiche
 
 
 ## Geometria
