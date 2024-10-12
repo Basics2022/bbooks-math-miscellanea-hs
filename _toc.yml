@@ -7,6 +7,9 @@ parts:
 - caption: Vettori
   chapters:
   - file: ch/vectors
+    sections:
+    - file: ch/vectors/euclidean-space-hs
+    - file: ch/vectors/algebra-hs
 - caption: Geometria analitica
   chapters:
   - file: ch/analytic_geometry

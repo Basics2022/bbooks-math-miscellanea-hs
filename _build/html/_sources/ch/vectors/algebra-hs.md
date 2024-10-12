@@ -4,8 +4,8 @@
 :read-time: "{sub-ref}`wordcount-minutes` min read"
 ```
 
-(vectors:high-school:algebra-hs)=
-# Algebra vettoriale
+(vectors:high-school)=
+# Algebra e calcolo vettoriale per la scuola superiore
 
 **Necessità dei vettori.** In vari ambiti della matematica e della fisica, i numeri scalari non sono sufficienti a rappresentare correttamente alcune grandezze. Un esempio di queste grandezze possono essere una velocità o una forza in fisica, o la posizione di un punto in uno spazio euclideo in geometria. **TODO**
 
