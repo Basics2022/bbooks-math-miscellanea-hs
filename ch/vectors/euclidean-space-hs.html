@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Algebra vettoriale &#8212; My sample book</title>
+    <title>Spazio euclideo e vettori &#8212; My sample book</title>
   
   
   
@@ -62,13 +62,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/vectors/algebra-hs';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/vectors/euclidean-space-hs';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Geometria analitica" href="../analytic_geometry.html" />
-    <link rel="prev" title="Spazio euclideo e vettori" href="euclidean-space-hs.html" />
+    <link rel="next" title="Algebra vettoriale" href="algebra-hs.html" />
+    <link rel="prev" title="Vettori" href="../vectors.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -173,8 +171,8 @@ const thebe_selector_output = ".output, .cell_output"
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Vettori</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../vectors.html">Vettori</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="euclidean-space-hs.html">Spazio euclideo e vettori</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Algebra vettoriale</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Spazio euclideo e vettori</a></li>
+<li class="toctree-l2"><a class="reference internal" href="algebra-hs.html">Algebra vettoriale</a></li>
 </ul>
 </li>
 </ul>
@@ -268,7 +266,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fch/vectors/algebra-hs.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fch/vectors/euclidean-space-hs.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -298,7 +296,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/ch/vectors/algebra-hs.md" target="_blank"
+      <li><a href="../../_sources/ch/vectors/euclidean-space-hs.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -369,9 +367,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -382,19 +378,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Algebra vettoriale</h1>
+    <h1>Spazio euclideo e vettori</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calcolo-vettoriale-in-spazi-euclidei-usando-coordinate-cartesiane">Calcolo vettoriale in spazi euclidei, usando coordinate cartesiane</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -416,82 +404,15 @@ document.write(`
 <p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-calendar" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path></svg></span>Oct 12, 2024</p>
 </div>
 <div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
-<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>1 min read</p>
+<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>0 min read</p>
 </div>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="algebra-vettoriale">
-<span id="vectors-high-school-algebra-hs"></span><h1>Algebra vettoriale<a class="headerlink" href="#algebra-vettoriale" title="Permalink to this heading">#</a></h1>
-<p><strong>Necessità dei vettori.</strong> In vari ambiti della matematica e della fisica, i numeri scalari non sono sufficienti a rappresentare correttamente alcune grandezze. Un esempio di queste grandezze possono essere una velocità o una forza in fisica, o la posizione di un punto in uno spazio euclideo in geometria. <strong>TODO</strong></p>
-<p>La caratteristica fondamentale di questi oggetti matematici è la loro indipendenza - <strong>invarianza</strong>, assolutezza - rispetto alle scelte che si possono fare per rappresentarli: scelte diverse possono essere più o meno convenienti, ma non cambiano la natura di un vettore.</p>
-<p><strong>Intuizione di vettore.</strong> Un vettore è un oggetto matematico necessario a rappresentare grandezze che sono caratterizzate da intensità, direzione e verso.</p>
-<div class="math notranslate nohighlight">
-\[\vec{v}, \vec{w} \in \mathscr{V} \quad , \quad a, b \in \mathbb{R}\]</div>
-<p><strong>Operazioni sui vettori: definizione di spazio vettoriale.</strong></p>
-<div class="math notranslate nohighlight">
-\[a \vec{v} \in \mathscr{V}\]</div>
-<div class="math notranslate nohighlight">
-\[\vec{v} + \vec{w} \in \mathscr{V}\]</div>
-<div class="math notranslate nohighlight">
-\[a \vec{v} + b \vec{w} \in \mathscr{V}\]</div>
-<p><strong>Base di uno spazio</strong> In uno spazio vettoriale, ogni vettore può essere rappresentato come una combinazione lineare di un insieme di vettori dello spazio, opportunamente scelti. Il numero minimo di questi vettori è definita come dimensione dello spazio vettoriale.</p>
-<p><strong>Prodotto scalare - o prodotto interno.</strong></p>
-<div class="math notranslate nohighlight">
-\[\vec{v} \cdot \vec{w}: \mathscr{V} \times \mathscr{V} \rightarrow \mathbb{R}\]</div>
-<div class="math notranslate nohighlight">
-\[\vec{v} \cdot \vec{w} = |\vec{v}| |\vec{w}| \cos \theta_{\vec{v} \vec{w}}\]</div>
-<p><strong>Prodotto vettoriale.</strong></p>
-<div class="math notranslate nohighlight">
-\[\vec{v} \times \vec{w}: \mathscr{V} \times \mathscr{V} \rightarrow \mathscr{V}\]</div>
-<div class="math notranslate nohighlight">
-\[\vec{v} \times \vec{w} = \hat{k} |\vec{v}| |\vec{w}| \sin \theta_{\vec{v} \vec{w}}\]</div>
-<p><strong>Base cartesiana.</strong> <span class="math notranslate nohighlight">\(\{ \hat{e}_i \}_{i=1:n^d}\)</span>, <span class="math notranslate nohighlight">\(\{ \hat{x}, \hat{y}, \hat{z} \}\)</span>,</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-  \hat{x} \cdot  \hat{x} &amp; = \hat{y} \cdot  \hat{y} = \hat{z} \cdot  \hat{z} = 1 \\
-  \hat{x} \cdot  \hat{y} &amp; = \hat{y} \cdot  \hat{z} = \hat{z} \cdot  \hat{x} = 0
-\end{aligned}\end{split}\]</div>
-<p>e usando il prodotto vettore per definire l’orientazione dei 3 vettori,</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-  \hat{x} \times \hat{y} &amp; = \hat{z} \\
-  \hat{y} \times \hat{z} &amp; = \hat{x} \\
-  \hat{z} \times \hat{x} &amp; = \hat{y} \\
-\end{aligned}\end{split}\]</div>
-<p>Un vettore può essere scritto in una base cartesiana come</p>
-<div class="math notranslate nohighlight">
-\[\vec{v} = v_x \hat{x} + v_y \hat{y} + v_z \hat{z}\]</div>
-<p>Una coordinata del vettore è semplicemente</p>
-<div class="math notranslate nohighlight">
-\[v_x = \hat{x} \cdot \vec{v} \ .\]</div>
-<p>Somma di vettori e moltiplicazione per uno scalare</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-   \vec{v} + \vec{w} &amp; =   (v_x \hat{x} + v_y \hat{y} + v_z \hat{z}) + (w_x \hat{x} + w_y \hat{y} + w_z \hat{z}) = \\
-                     &amp; =   (v_x + w_x) \hat{x} + (v_y + w_y) \hat{y} + (v_z + w_z) \hat{z} \\ \\
- a \vec{v}           &amp; = a (v_x \hat{x} + v_y \hat{y} + v_z \hat{z}) = \\
-                     &amp; =   ( a v_x ) \hat{x} + ( a v_y ) \hat{y} + ( a v_z ) \hat{z}
-\end{aligned}\end{split}\]</div>
-<p>Il prodotto scalare diventa quindi</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-  \vec{v} \cdot \vec{w}
-  &amp; = (v_x \hat{x} + v_y \hat{y} + v_z \hat{z}) \cdot (w_x \hat{x} + w_y \hat{y} + w_z \hat{z}) = \\
-  &amp; = v_x w_x + v_y w_y + v_z w_z
-\end{aligned}\end{split}\]</div>
-<p>mentre il prodotto vettoriale</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-  \vec{v} \times \vec{w}
-  &amp; = (v_x \hat{x} + v_y \hat{y} + v_z \hat{z}) \times (w_x \hat{x} + w_y \hat{y} + w_z \hat{z}) = \\
-  &amp; = (v_y w_z - v_z w_y) \hat{x} + (v_z w_x - v_x w_z) \hat{y} + (v_x w_y - v_y w_x) \hat{z} = \\
-\end{aligned}\end{split}\]</div>
-<div class="section" id="calcolo-vettoriale-in-spazi-euclidei-usando-coordinate-cartesiane">
-<h2>Calcolo vettoriale in spazi euclidei, usando coordinate cartesiane<a class="headerlink" href="#calcolo-vettoriale-in-spazi-euclidei-usando-coordinate-cartesiane" title="Permalink to this heading">#</a></h2>
-</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="spazio-euclideo-e-vettori">
+<span id="vectors-high-school-euclidean-geometry"></span><h1>Spazio euclideo e vettori<a class="headerlink" href="#spazio-euclideo-e-vettori" title="Permalink to this heading">#</a></h1>
 </div>
 
     <script type="text/x-thebe-config">
@@ -525,20 +446,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="euclidean-space-hs.html"
+       href="../vectors.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Spazio euclideo e vettori</p>
+        <p class="prev-next-title">Vettori</p>
       </div>
     </a>
     <a class="right-next"
-       href="../analytic_geometry.html"
+       href="algebra-hs.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Geometria analitica</p>
+        <p class="prev-next-title">Algebra vettoriale</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -548,20 +469,6 @@ document.write(`
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calcolo-vettoriale-in-spazi-euclidei-usando-coordinate-cartesiane">Calcolo vettoriale in spazi euclidei, usando coordinate cartesiane</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>
