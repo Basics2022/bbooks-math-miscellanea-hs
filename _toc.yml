@@ -26,4 +26,12 @@ parts:
     - file: ch/infinitesimal_calculus/limits
     - file: ch/infinitesimal_calculus/derivatives
     - file: ch/infinitesimal_calculus/integrals
-
+- caption: Serie e successioni
+  chapters:
+  - file: series
+- caption: Numeri complessi
+  chapters:
+  - file: complex
+- caption: Algebra lineare
+  chapters:
+  - file: linear_algebra
