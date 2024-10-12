@@ -67,7 +67,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/vectors';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Geometria analitica" href="analytic_geometry.html" />
+    <link rel="next" title="Spazio euclideo e vettori" href="vectors/euclidean-space-hs.html" />
     <link rel="prev" title="Matematica per il triennio delle scuole superiori" href="../intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -172,11 +172,15 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Vettori</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Vettori</a></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Vettori</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="vectors/euclidean-space-hs.html">Spazio euclideo e vettori</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vectors/algebra-hs.html">Algebra vettoriale</a></li>
+</ul>
+</li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Geometria analitica</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="analytic_geometry.html">Geometria analitica</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="analytic_geometry.html">Geometria analitica</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/coordinates.html">Sistemi di coordinate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/points.html">Punti nel piano</a></li>
 <li class="toctree-l2"><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/lines.html">Rette nel piano</a></li>
@@ -186,7 +190,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Calcolo infinitesimale</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="infinitesimal_calculus.html">Calcolo infinitesimale</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="infinitesimal_calculus.html">Calcolo infinitesimale</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="infinitesimal_calculus/real_functions.html">Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\( f: \mathbb{R} \rightarrow \mathbb{R} \)</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="infinitesimal_calculus/limits.html">Limiti</a></li>
 <li class="toctree-l2"><a class="reference internal" href="infinitesimal_calculus/derivatives.html">Derivate</a></li>
@@ -417,16 +421,16 @@ Ad esempio, le frasi:</p>
 <ul class="simple">
 <li><p>“preparo <span class="math notranslate nohighlight">\(150 \ g\)</span> di riso”</p></li>
 <li><p>“oggi è una bella giornata di primavera con temperatura massima prevista di 25°C”</p></li>
-<li><p>“il treno ha impiegato <span class="math notranslate nohighlight">\(20\)</span> minuti”
-non lasciano alcun dubbio sulla quantità di riso, sulla previsione della temperatura, e sulla durata del viaggio.</p></li>
+<li><p>“il treno ha impiegato <span class="math notranslate nohighlight">\(20\)</span> minuti”</p></li>
 </ul>
+<p>non lasciano alcun dubbio sulla quantità di riso, sulla previsione della temperatura, e sulla durata del viaggio.</p>
 <p>D’altra parte, le frasi:</p>
 <ul class="simple">
 <li><p>“l’oasi si trova a <span class="math notranslate nohighlight">\(5 \ km\)</span> da qui”</p></li>
 <li><p>“l’aereo è passato qui sopra a <span class="math notranslate nohighlight">\(500 \ km/h\)</span>”</p></li>
-<li><p>“il ciclista ha ricevuto una spinta dai tifosi”
-lasciano molti dubbi sulla situazione descritta. Se mi trovassi disidratato nel deserto mi farebbe piacere sapere che c’è un’oasi nei paraggi, ma mi farebbe ancora più piacere conoscere in quale direzione devo andare. La seconda frase non mi permette di decidere in quale direzione guardare per cercare l’aereo, se mi fossi perso il passaggio sopra la mia testa. La terza frase contiene ancora meno informazioni: ha ricevuto una spinta, ok, ma di quale entità? E in quale direzione? L’ha aiutato, l’ha frenato, l’ha sbilanciato?</p></li>
+<li><p>“il ciclista ha ricevuto una spinta dai tifosi”</p></li>
 </ul>
+<p>lasciano molti dubbi sulla situazione descritta. Se mi trovassi disidratato nel deserto mi farebbe piacere sapere che c’è un’oasi nei paraggi, ma mi farebbe ancora più piacere conoscere in quale direzione devo andare. La seconda frase non mi permette di decidere in quale direzione guardare per cercare l’aereo, se mi fossi perso il passaggio sopra la mia testa. La terza frase contiene ancora meno informazioni: ha ricevuto una spinta, ok, ma di quale entità? E in quale direzione? L’ha aiutato, l’ha frenato, l’ha sbilanciato?</p>
 <p>La differenza della completezza dell’informazione è dovuta al fatto che:</p>
 <ul class="simple">
 <li><p><strong>massa</strong>, <strong>temperatura</strong>, <strong>tempo</strong> sono <strong>grandezze scalari</strong>, che possono essere completamente rappresentate con un solo numero, con l’opportuna unità di misura,</p></li>
@@ -434,10 +438,12 @@ lasciano molti dubbi sulla situazione descritta. Se mi trovassi disidratato nel 
 </ul>
 <p><strong>Introduzione ai vettori.</strong></p>
 <ul class="simple">
-<li><p><strong>Algebra vettoriale.</strong></p></li>
 <li><p><strong>Geometria nello spazio euclideo.</strong></p></li>
+<li><p><strong>Algebra vettoriale.</strong></p></li>
 <li><p><strong>Cenni di calcolo vettoriale.</strong></p></li>
 </ul>
+<div class="toctree-wrapper compound">
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -480,11 +486,11 @@ lasciano molti dubbi sulla situazione descritta. Se mi trovassi disidratato nel 
       </div>
     </a>
     <a class="right-next"
-       href="analytic_geometry.html"
+       href="vectors/euclidean-space-hs.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Geometria analitica</p>
+        <p class="prev-next-title">Spazio euclideo e vettori</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
