@@ -7,11 +7,6 @@
 (vectors:high-school:algebra-hs)=
 # Algebra vettoriale
 
-**Necessità dei vettori.** In vari ambiti della matematica e della fisica, i numeri scalari non sono sufficienti a rappresentare correttamente alcune grandezze. Un esempio di queste grandezze possono essere una velocità o una forza in fisica, o la posizione di un punto in uno spazio euclideo in geometria. **TODO**
-
-La caratteristica fondamentale di questi oggetti matematici è la loro indipendenza - **invarianza**, assolutezza - rispetto alle scelte che si possono fare per rappresentarli: scelte diverse possono essere più o meno convenienti, ma non cambiano la natura di un vettore.
-
-**Intuizione di vettore.** Un vettore è un oggetto matematico necessario a rappresentare grandezze che sono caratterizzate da intensità, direzione e verso.
 
 $$\vec{v}, \vec{w} \in \mathscr{V} \quad , \quad a, b \in \mathbb{R}$$
 

@@ -406,7 +406,7 @@ document.write(`
 <p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-calendar" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path></svg></span>Oct 12, 2024</p>
 </div>
 <div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
-<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>0 min read</p>
+<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>1 min read</p>
 </div>
 </div>
 </div>
@@ -414,21 +414,51 @@ document.write(`
 </div>
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="spazio-euclideo-e-vettori">
-<span id="voverrightarrowtors-high-school-euclidean-geometry"></span><h1>Spazio euclideo e vettori<a class="headerlink" href="#spazio-euclideo-e-vettori" title="Permalink to this heading">#</a></h1>
+<span id="vectors-high-school-euclidean-geometry"></span><h1>Spazio euclideo e vettori<a class="headerlink" href="#spazio-euclideo-e-vettori" title="Permalink to this heading">#</a></h1>
 <p><strong>Definizione di uno spazio euclideo, <span class="math notranslate nohighlight">\(E^n\)</span>.</strong></p>
 <ul>
+<li><p><strong>Idea.</strong> Lo spazio euclideo è una formalizzazione dell’idea di spazio alla quale siamo abitutati nella <strong>vita di tutti i giorni</strong>, e ancora più di noi, l’unica idea di spazio alla quale erano abituati gli esseri umani fino al XIX secolo.
+Pensiamo allo spazio di tutti i giorni come uno <strong>spazio assolto</strong> e <strong>omogeneo</strong> (<strong>todo</strong> è corretto attribuire il concetto di omogeneità allo spazio?), nel senso che la misura di distanze e di angoli, le ralazioni di congruenza non variano se vengono valutate in diversi punti dello spazio (<strong>todo</strong> migiorare spiegazione; aggiungere immagini?). Ad esempio, lo spazio euclideo di due dimensioni è quello descritto dai 5 postulati della geometria di Euclide, <strong>quinto postulato</strong> incluso.</p></li>
 <li><p>Gli elementi dell’insieme <span class="math notranslate nohighlight">\(E^n\)</span> vengono chiamati punti.</p></li>
 <li><p>Tra due punti <span class="math notranslate nohighlight">\(P\)</span>, <span class="math notranslate nohighlight">\(Q\)</span> è possibile tracciare uno e un solo segmento orientato, <span class="math notranslate nohighlight">\(\overrightarrow{QP} = P - Q\)</span>, definito <strong>vettore euclideo</strong>, o <strong>vettore spaziale</strong></p></li>
 <li><p>Operazioni:</p>
 <ul>
-<li><p>somma vettorialei</p>
+<li><p>somma vettoriale:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
       \overrightarrow{QP} &amp; = \overrightarrow{QR} + \overrightarrow{RP} \\
      (P- Q) &amp; = ( R - Q ) + ( P - R)
     \end{aligned}\end{split}\]</div>
 </li>
-<li><p>moltiplicazione per uno scalare</p></li>
+<li><p>moltiplicazione per uno scalare: <strong>todo</strong></p></li>
+</ul>
+</li>
+<li><p>Spazio vettoriale euclideo: definizione di un punto come origine</p></li>
+<li><p>Base vettoriale</p></li>
+<li><p>Norma, prodotto interno, prodotto vettoriale nello spazio euclideo 3-dimensionale.</p>
+<ul class="simple">
+<li><p><strong>todo.</strong> introdurre le definizioni di <strong>spazio metrico con prodotto interno</strong></p></li>
+</ul>
+</li>
+<li><p><strong>Invarianza</strong></p>
+<ul class="simple">
+<li><p>carattere assoluto dei vettori, che li rendono gli strumenti fondamentali per la formulazione di teorie che non dipendono dall’osservatore o da scelte arbitrarie</p></li>
+<li><p>invarianza di:</p>
+<ul>
+<li><p>vettori</p></li>
+<li><p>operazioni sui vettori</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Confronto tra</strong>:</p>
+<ul class="simple">
+<li><p><strong>Spazi vettoriali e basi.</strong></p></li>
+<li><p><strong>Spazi e sistemi di coordinate.</strong></p>
+<ul>
+<li><p>Esempi: diversi sistemi di coordinate (2D: cartesiane, cartesiane “ruotate”, “lineari”, polari,…; 3D: cartesiane, cilindriche, sferiche,…)</p></li>
+<li><p>Introduzione al calcolo vettoriale</p></li>
 </ul>
 </li>
 </ul>

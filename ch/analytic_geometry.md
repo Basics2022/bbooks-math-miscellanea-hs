@@ -1,10 +1,15 @@
 (geometry:analytic)=
 # Geometria analitica
 
+La geometria analitica si occupa dello stuido delle figure geometriche nello spazio tramite l'uso di **sistemi di coordinate**.
+- scelta arbitaria, spesso guidata da criteri di "comodità"
+
+Nel 1637 Cartesio formalizzò le basi della geometria analitica, o geometria cartesiana, nel libro *Geometria*, introdotto dal suo più famoso *Discorso sul metodo*.
+
 
 **Argomenti.**
 
-- **Geometria nello spazio euclideo 2-dimensionale, cioè in un piano**
+- **Geometria nel piano - spazio euclideo 2D, $E^2$**
 
   - [Sistemi di coordinate](geometry:analytic:2d:coordinates) *Cartesiane e polari; trasformazione tra sistemi di coordinate: polari e cartesiane; cartesiano-cartesiano: traslazione e rotazione*
 
@@ -14,7 +19,7 @@
 
   - [Coniche](geometry:analytic:2d:conics) **todo** *parabola, ellisse, iperbole: def, caratteristiche, descrizione in coord. cartesiane e polari; riferimento a gravitazione in meccanica classica*
 
-- **Geometria nello spazio euclideo 3-dimensionale**
+- **Geometria nello spazio euclideo 3D, $E^3$**
 
   -  Sistemi di coordinate
   -  Punti
@@ -24,6 +29,7 @@
   -  Superfici quadratiche
 
 
+<!--
 ## Geometria
 La geometria si occupa della descrizione e della misura dello spazio e degli oggetti presenti in esso.
 
@@ -41,4 +47,4 @@ Questo approccio permette di associare un elemento geometrico a un'equazione che
 **todo: argomenti.** *Geometria piana: coordinate; distanza; retta; coniche;... Geometria nello spazio euclideo 3-dimensionale: coordinate; distanza; retta; piano; superfici quadratiche*
 
 **Geometria differenziale** Si occupa dello studio di oggetti geometrici differenziabili, lisci, come curve e superfici. **todo** *Grandezze locali (differenziali): normale, curvatura,...; grandezze globali (integrali): lunghezza, superficie, volume; massa, momenti di inerzia;...*
-
+-->
