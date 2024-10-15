@@ -14,7 +14,7 @@ Usando le coordinate cartesiane, la distanza tra due punti $P \equiv(x_P, y_P, z
 $$|P-Q|^2 = (x_P - x_Q)^2 + (y_P - y_Q)^2 + (z_P - z_Q)^2 \ .$$
 
 ## Coordinate cilindriche
-Dato un sistema di coordinate cartesiane, si può definire un sistema di coordinate cilindriche $$(R, \theta, z)$$ tramite la legge di trasformazione delle coordinate
+Dato un sistema di coordinate cartesiane, si può definire un sistema di coordinate cilindriche $(R, \theta, z)$ tramite la legge di trasformazione delle coordinate
 
 $$\begin{cases}
 x = R \cos \theta \\
@@ -23,7 +23,7 @@ z = z
 \end{cases}$$
 
 ## Coordinate sferiche
-Dato un sistema di coordinate cartesiane, si può definire un sistema di coordinate sferiche $$(r, \theta, \phi)$$ tramite la legge di trasformazione delle coordinate
+Dato un sistema di coordinate cartesiane, si può definire un sistema di coordinate sferiche $(r, \theta, \phi)$ tramite la legge di trasformazione delle coordinate
 
 $$\begin{cases}
 x = r \sin \phi + \cos \theta \\
