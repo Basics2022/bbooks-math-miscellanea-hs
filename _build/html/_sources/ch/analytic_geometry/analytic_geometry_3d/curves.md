@@ -7,6 +7,6 @@ $$q^k(\lambda) \ .$$
 
 Usando le coordinate cartesiane, i punti della curva sono identificati dalla famiglia di vettori euclidei
 
-$$\gamma: \ \vec{r}(\lambda) = x(\lambda) \hat{x} + y(\lambda) \hat{y} + z(\lmabda) \hat{z} \ ,$$
+$$\gamma: \ \vec{r}(\lambda) = x(\lambda) \hat{x} + y(\lambda) \hat{y} + z(\lambda) \hat{z} \ ,$$
 
-al variare del parametro $\lambda$ 
+al variare del parametro $\lambda$. 

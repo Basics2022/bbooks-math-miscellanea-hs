@@ -37,6 +37,9 @@ parts:
     - file: ch/infinitesimal_calculus/limits
     - file: ch/infinitesimal_calculus/derivatives
     - file: ch/infinitesimal_calculus/integrals
+- caption: Trigonometria
+  chapters:
+  - file: ch/trigonometry
 - caption: Serie e successioni
   chapters:
   - file: ch/series
