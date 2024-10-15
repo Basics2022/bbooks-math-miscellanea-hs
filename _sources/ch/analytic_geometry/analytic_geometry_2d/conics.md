@@ -47,7 +47,7 @@ $$x^2 + 2 c x + c^2 + y^2 = 4 a^2 - 4a \sqrt{(x-c)^2 + y^2} + x^2 - 2 c x + c^2 
 $$4a \sqrt{(x-c)^2 + y^2} = 4 a^2 - 4 c x$$
 $$a^2 x^2-2 a^2 c x + a^2 c^2 + a^2 y^2 = a^4 - 2 a^2 c x + c^2 x^2$$
 $$(a^2 - c^2)x^2 + a^2 y^2 = a^2 ( a^2 - c^2 )$$
-$$\dfrac{x^2}{a}^2 + \dfrac{y^2}{b^2} = 1$$
+$$\dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} = 1$$
 
 avendo definito $b^2 := a^2 - c^2$.
 
@@ -63,7 +63,7 @@ $$x^2 + 2 c x + c^2 + y^2 = 4 a^2 \mp 4a \sqrt{(x-c)^2 + y^2} + x^2 - 2 c x + c^
 $$\pm 4a \sqrt{(x-c)^2 + y^2} = 4 a^2 - 4 c x$$
 $$a^2 x^2-2 a^2 c x + a^2 c^2 + a^2 y^2 = a^4 - 2 a^2 c x + c^2 x^2$$
 $$(a^2 - c^2)x^2 + a^2 y^2 = a^2 ( a^2 - c^2 )$$
-$$\dfrac{x^2}{a}^2 + \dfrac{y^2}{b^2} = 1$$
+$$\dfrac{x^2}{a^2} - \dfrac{y^2}{b^2} = 1$$
 
-avendo definito $b^2 := a^2 - c^2$.
+avendo definito $b^2 := c^2 - a^2$.
 
