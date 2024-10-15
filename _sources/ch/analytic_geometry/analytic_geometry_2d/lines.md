@@ -6,10 +6,17 @@ Per Euclide, il concetto di retta è un concetto primitivo.
 
 ```{figure} ./../../../media/line-point-vector.svg
 ---
-scale: 100%
+scale: 50%
 align: left
 ---
-Caption
+Def. 1
+```
+```{figure} ./../../../media/line-point-vector.svg
+---
+scale: 50%
+align: right
+---
+Def. 2
 ```
 
 Per trovare l'equazione di una retta, si possono usare delle definizione equivalenti.
