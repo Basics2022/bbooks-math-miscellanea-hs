@@ -432,21 +432,28 @@ document.write(`
 <div class="section" id="definizioni-ed-equazione">
 <h2>Definizioni ed equazione<a class="headerlink" href="#definizioni-ed-equazione" title="Permalink to this heading">#</a></h2>
 <p>Per Euclide, il concetto di retta è un concetto primitivo.</p>
-<div class="figure align-left" id="id1">
-<a class="reference internal image-reference" href="../../../_images/line-point-vector.svg"><img alt="../../../_images/line-point-vector.svg" height="188" src="../../../_images/line-point-vector.svg" width="188" /></a>
-<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">Def. 1</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
-</div>
 <!--
 ```{figure} ./../../../media/line-point-vector.svg
 ---
 scale: 50%
-align: right
+align: left
 ---
-Def. 2
+Def. 1
 ```
 -->
 <p>Per trovare l’equazione di una retta, si possono usare delle definizione equivalenti.</p>
-<p><strong>Def. 1</strong> Una retta è il luogo geometrico dei punti equidistanti da due punti distinti nel piano, <span class="math notranslate nohighlight">\(P_1\)</span>, <span class="math notranslate nohighlight">\(P_2\)</span>. Usando un sistema di coordinate cartesiano, <span class="math notranslate nohighlight">\(P_1 = (x_1, y_1)\)</span>, <span class="math notranslate nohighlight">\(P_2 = (x_2, y_2)\)</span>, mentre le coordinate di un punto <span class="math notranslate nohighlight">\(P\)</span> appartenente alla retta sono <span class="math notranslate nohighlight">\((x,y)\)</span></p>
+<p><strong>Def. 1 Passaggio per un punto e direzione: equazione parametrica.</strong></p>
+<div class="math notranslate nohighlight">
+\[P = P_0 + \lambda \overrightarrow{v}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}r: \begin{cases}
+  x(p) = x_0 + p \ d_x \\
+  y(p) = y_0 + p \ d_y \\
+\end{cases}
+\qquad \text{o} \qquad
+  \mathbf{r}(p) = \mathbf{r}_0 + p \mathbf{d} 
+\end{split}\]</div>
+<p><strong>Def. 2</strong> Una retta è il luogo geometrico dei punti equidistanti da due punti distinti nel piano, <span class="math notranslate nohighlight">\(P_1\)</span>, <span class="math notranslate nohighlight">\(P_2\)</span>. Usando un sistema di coordinate cartesiano, <span class="math notranslate nohighlight">\(P_1 = (x_1, y_1)\)</span>, <span class="math notranslate nohighlight">\(P_2 = (x_2, y_2)\)</span>, mentre le coordinate di un punto <span class="math notranslate nohighlight">\(P\)</span> appartenente alla retta sono <span class="math notranslate nohighlight">\((x,y)\)</span></p>
 <div class="math notranslate nohighlight">
 \[|P - P_1| = |P-P_2|\]</div>
 <div class="math notranslate nohighlight">
@@ -456,22 +463,13 @@ Def. 2
 \end{aligned}\end{split}\]</div>
 <div class="math notranslate nohighlight">
 \[  2 ( x_2 - x_1 ) x + 2 ( y_2 - y_1 ) y - x_1^2 - y_1^2 - x_2^2 - y_2^2 = 0 \]</div>
-<p><strong>Def. 2 Passaggio per un punto e direzione: equazione parametrica.</strong></p>
-<div class="math notranslate nohighlight">
-\[\begin{split}r: \begin{cases}
-  x(p) = x_0 + p \ d_x \\
-  y(p) = y_0 + p \ d_y \\
-\end{cases}
-\qquad \text{o} \qquad
-  \mathbf{r}(p) = \mathbf{r}_0 + p \mathbf{d} 
-\end{split}\]</div>
 </div>
 <div class="section" id="posizioni-reciproche">
 <h2>Posizioni reciproche<a class="headerlink" href="#posizioni-reciproche" title="Permalink to this heading">#</a></h2>
 <div class="section" id="posizione-reciproca-di-punto-e-retta">
 <h3>Posizione reciproca di punto e retta<a class="headerlink" href="#posizione-reciproca-di-punto-e-retta" title="Permalink to this heading">#</a></h3>
-<p><strong>Punto appartenente alla retta.</strong></p>
-<p><strong>Punto non appartenente alla retta.</strong></p>
+<p><strong>Punto appartenente alla retta.</strong> Una retta <span class="math notranslate nohighlight">\(r\)</span> passa per un punto <span class="math notranslate nohighlight">\(P\)</span> assegnato se le coordinate del punto <span class="math notranslate nohighlight">\(P\)</span> soddisfano le equazioni che descrivono la retta.</p>
+<p><strong>Distanza punto-retta.</strong> per calcolare la distanza punto-retta si può</p>
 </div>
 <div class="section" id="posizione-reciproca-di-rette">
 <h3>Posizione reciproca di rette<a class="headerlink" href="#posizione-reciproca-di-rette" title="Permalink to this heading">#</a></h3>
@@ -484,7 +482,7 @@ Def. 2
 <p>con</p>
 <div class="math notranslate nohighlight">
 \[\mathbf{r}_{1,0} = \mathbf{r}_{2,0} \qquad , \qquad \mathbf{d}_1 \propto \mathbf{d}_2\]</div>
-<p><strong>Rette parallele.</strong></p>
+<p><strong>Rette parallele nel piano.</strong></p>
 <div class="math notranslate nohighlight">
 \[\mathbf{d}_1 \propto \mathbf{d}_2\]</div>
 <p><strong>Rette incidenti.</strong></p>
