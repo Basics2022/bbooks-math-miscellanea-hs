@@ -40,11 +40,30 @@ $$y = \frac{1}{4d} x^2$$
 
 $$|P - F_1| + |P - F_2| = 2a$$
 
-$$\sqrt{(x-x_1)^2 + (y-y_1)^2} = 2a - \sqrt{(x-x_2)^2 + (y-y_2)^2}$$
-$$x^2 + 2 x_1 x + x_1^2 + y^2-2 y_1 y + y_1^2 = 4 a^2 - 4a \sqrt{(x-x_2)^2 + (y-y_2)^2} + x^2 + 2 x_2 x + x_2^2 + y^2-2 y_2 y + y_2^2 $$
+Con la scelta $F_1 \equiv (-c,0)$, $F_2 \equiv (c,0)$
+
+$$\sqrt{(x+c)^2 + y^2} = 2a - \sqrt{(x-c)^2 + y^2}$$
+$$x^2 + 2 c x + c^2 + y^2 = 4 a^2 - 4a \sqrt{(x-c)^2 + y^2} + x^2 - 2 c x + c^2 + y^2$$
+$$4a \sqrt{(x-c)^2 + y^2} = 4 a^2 - 4 c x$$
+$$a^2 x^2-2 a^2 c x + a^2 c^2 + a^2 y^2 = a^4 - 2 a^2 c x + c^2 x^2$$
+$$(a^2 - c^2)x^2 + a^2 y^2 = a^2 ( a^2 - c^2 )$$
+$$\dfrac{x^2}{a}^2 + \dfrac{y^2}{b^2} = 1$$
+
+avendo definito $b^2 := a^2 - c^2$.
 
 
 ## Iperbole
 
 $$\big| |P - F_1| - |P - F_2| \big| = 2a$$
+
+Con la scelta $F_1 \equiv (-c,0)$, $F_2 \equiv (c,0)$
+
+$$\sqrt{(x+c)^2 + y^2} = \mp 2a + \sqrt{(x-c)^2 + y^2}$$
+$$x^2 + 2 c x + c^2 + y^2 = 4 a^2 \mp 4a \sqrt{(x-c)^2 + y^2} + x^2 - 2 c x + c^2 + y^2$$
+$$\pm 4a \sqrt{(x-c)^2 + y^2} = 4 a^2 - 4 c x$$
+$$a^2 x^2-2 a^2 c x + a^2 c^2 + a^2 y^2 = a^4 - 2 a^2 c x + c^2 x^2$$
+$$(a^2 - c^2)x^2 + a^2 y^2 = a^2 ( a^2 - c^2 )$$
+$$\dfrac{x^2}{a}^2 + \dfrac{y^2}{b^2} = 1$$
+
+avendo definito $b^2 := a^2 - c^2$.
 
