@@ -1,4 +1,4 @@
-(geometry:analytic:2d:conics-eccentricity)=
+(geometry:analytic:2d:conics-polar)=
 # Coniche nel piano: coordinate polari
 
 Le coniche possono essere anche caratterizzate dal valore dell'eccentricità,

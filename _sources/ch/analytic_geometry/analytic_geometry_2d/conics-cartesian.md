@@ -1,4 +1,4 @@
-(geometry:analytic:2d:conics)=
+(geometry:analytic:2d:conics-cartesian)=
 # Coniche nel piano
 - Sezioni di un cono
 - Definibili tramite le distanze dei loro punti da punti (centro o fuochi) e rette caratteristiche (direttrici)
