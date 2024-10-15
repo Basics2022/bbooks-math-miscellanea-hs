@@ -54,7 +54,7 @@ y = r \sin \theta
 \begin{aligned}
 z & = r \cos \theta + i \ r \sin \theta = \\
   & = r \left( \cos \theta + i \sin \theta \right) = \\
-  & = r \, e^{i \, theta} \ ,
+  & = r \, e^{i \, \theta} \ ,
 \end{aligned}$$
 
 avendo anticipato qui la **formula di Eulero** per l'esponenziale di un numero immaginario,
