@@ -444,9 +444,9 @@ document.write(`
 <span id="vectors-high-school-algebra-hs"></span><h1>Algebra vettoriale<a class="headerlink" href="#algebra-vettoriale" title="Permalink to this heading">#</a></h1>
 <p><strong>Definizione.</strong> Uno spazio vettoriale è una struttura algebrica formata da:</p>
 <ul class="simple">
-<li><p>un insieme <span class="math notranslate nohighlight">\(\mathscr{V}\)</span>, i cui elementi sono chiamati <strong>vettori</strong></p></li>
-<li><p>un campo <span class="math notranslate nohighlight">\(\mathscr{K}\)</span> (di solito quello dei numeri reali <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> o complessi <span class="math notranslate nohighlight">\(\mathbb{C}\)</span>), i cui elementi sono chiamati <strong>scalari</strong></p></li>
-<li><p>due operazioni chiuse rispetto all’insieme <span class="math notranslate nohighlight">\(\mathscr{V}\)</span> chiamate:</p>
+<li><p>un insieme <span class="math notranslate nohighlight">\(V\)</span>, i cui elementi sono chiamati <strong>vettori</strong></p></li>
+<li><p>un campo <span class="math notranslate nohighlight">\(K\)</span> (di solito quello dei numeri reali <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> o complessi <span class="math notranslate nohighlight">\(\mathbb{C}\)</span>), i cui elementi sono chiamati <strong>scalari</strong></p></li>
+<li><p>due operazioni chiuse rispetto all’insieme <span class="math notranslate nohighlight">\(V\)</span> chiamate:</p>
 <ul>
 <li><p>somma vettoriale</p></li>
 <li><p>moltiplicazione per uno scalare,
@@ -457,12 +457,54 @@ che soddisfano determinate proprietà che verranno elencate in seguito.</p></li>
 <p>Un’operazione è chiusa rispetto a un’insieme, se il risultato delle operazioni è un elemento dell’insieme.</p>
 <p>Nel seguito del capitolo verranno considerati solo campi vettoriali definiti sui numeri reali, per i quali <span class="math notranslate nohighlight">\(\mathscr{K} = \mathbb{R}\)</span>.</p>
 <p><strong>Operazioni sui vettori: definizione di spazio vettoriale.</strong></p>
-<p>La moltiplicazione di un vettore <span class="math notranslate nohighlight">\(\mathbf{v} \in \mathscr{V}\)</span> per uno scalare <span class="math notranslate nohighlight">\(\alpha \in \mathbb{R}\)</span> è il vettore</p>
-<div class="math notranslate nohighlight">
-\[\alpha \vec{v} \in \mathscr{V}\]</div>
-<p>La somma vettoriale tra due vettori <span class="math notranslate nohighlight">\(\mathbf{v}\)</span>, $\mathbf{w} , \in \mathscr{V}$ è il vettore</p>
+<ul class="simple">
+<li><p>La <strong>somma</strong> tra due vettori <span class="math notranslate nohighlight">\(\mathbf{v}\)</span>, <span class="math notranslate nohighlight">\(\mathbf{w} \, \in V\)</span> è il vettore</p></li>
+</ul>
 <div class="math notranslate nohighlight">
 \[\vec{v} + \vec{w} \in \mathscr{V}\]</div>
+<ul class="simple">
+<li><p>La <strong>moltiplicazione per uno scalare</strong> di un vettore <span class="math notranslate nohighlight">\(\mathbf{v} \in \mathscr{V}\)</span> per uno scalare <span class="math notranslate nohighlight">\(\alpha \in \mathbb{R}\)</span> è il vettore</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\alpha \vec{v} \in \mathscr{V}\]</div>
+<p>Queste due operazioni devono soddisfare le seguenti proprietà:</p>
+<ul class="simple">
+<li><p>proprietà commutativa della somma</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\mathbf{u} + \mathbf{v} = \mathbf{v} + \mathbf{u} \qquad \forall \mathbf{u}, \mathbf{v} \in V\]</div>
+<ul class="simple">
+<li><p>proprietà associativa della somma</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[(\mathbf{u} + \mathbf{v}) + \mathbf{w} = \mathbf{u} + ( \mathbf{v} + \mathbf{w} ) \qquad \forall \mathbf{u}, \mathbf{v}, mathbf{w} \in V\]</div>
+<ul class="simple">
+<li><p>esistenza dell’elemento neutro della somma</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\exists \mathbf{0}_V \in V \qquad s.t. \qquad \mathbf{u} + \mathbf{0}_V = \mathbf{u} \qquad \forall \mathbf{u} \in V\]</div>
+<ul class="simple">
+<li><p>esistenza dell’elemento inverso della somma</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\forall \mathbf{u} \in V \exists \mathbf{u}' \in V \qquad s.t. \qquad \mathbf{u} + \mathbf{u}' = \mathbf{0}\]</div>
+<ul class="simple">
+<li><p>proprietà associativa del prodotto scalare</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[(\alpha \beta) \mathbf{u} = \alpha ( \beta \mathbf{u} ) \forall \alpha, \beta \in K, \ \mathbf{u} \in V\]</div>
+<ul class="simple">
+<li><p>esistenza dell’elemento neutro della moltiplicazione per uno scalare</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\exists 1 \in K \qquad s.t. \qquad 1 \, \mathbf{u} = \mathbf{u} \quad \forall \mathbf{u} \in V\]</div>
+<ul class="simple">
+<li><p>proprietà distributiva della moltiplicazione per uno scalare</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[(\alpha + \beta) \mathbf{u} = \alpha \mathbf{u} + \beta \mathbf{u}\]</div>
+<div class="math notranslate nohighlight">
+\[\alpha (\mathbf{u} + \mathbf{v}) = \alpha \mathbf{u} + \alpha \mathbf{v} \]</div>
 <p><strong>Base di uno spazio</strong> In uno spazio vettoriale, ogni vettore può essere rappresentato come una combinazione lineare di un insieme di vettori dello spazio, opportunamente scelti. Il numero minimo di questi vettori è definita come dimensione dello spazio vettoriale.</p>
 <p><strong>Prodotto scalare - o prodotto interno.</strong></p>
 <div class="math notranslate nohighlight">

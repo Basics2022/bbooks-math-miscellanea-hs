@@ -8,9 +8,9 @@
 # Algebra vettoriale
 
 **Definizione.** Uno spazio vettoriale è una struttura algebrica formata da:
-- un insieme $\mathscr{V}$, i cui elementi sono chiamati **vettori**
-- un campo $\mathscr{K}$ (di solito quello dei numeri reali $\mathbb{R}$ o complessi $\mathbb{C}$), i cui elementi sono chiamati **scalari**
-- due operazioni chiuse rispetto all'insieme $\mathscr{V}$ chiamate:
+- un insieme $V$, i cui elementi sono chiamati **vettori**
+- un campo $K$ (di solito quello dei numeri reali $\mathbb{R}$ o complessi $\mathbb{C}$), i cui elementi sono chiamati **scalari**
+- due operazioni chiuse rispetto all'insieme $V$ chiamate:
   - somma vettoriale
   - moltiplicazione per uno scalare,
   che soddisfano determinate proprietà che verranno elencate in seguito. 
@@ -21,13 +21,44 @@ Nel seguito del capitolo verranno considerati solo campi vettoriali definiti sui
 
 **Operazioni sui vettori: definizione di spazio vettoriale.**
 
-La moltiplicazione di un vettore $\mathbf{v} \in \mathscr{V}$ per uno scalare $\alpha \in \mathbb{R}$ è il vettore 
+- La **somma** tra due vettori $\mathbf{v}$, $\mathbf{w} \, \in V$ è il vettore
+
+$$\vec{v} + \vec{w} \in \mathscr{V}$$
+
+- La **moltiplicazione per uno scalare** di un vettore $\mathbf{v} \in \mathscr{V}$ per uno scalare $\alpha \in \mathbb{R}$ è il vettore 
 
 $$\alpha \vec{v} \in \mathscr{V}$$
 
-La somma vettoriale tra due vettori $\mathbf{v}$, \$\mathbf{w} \, \in \mathscr{V}$ è il vettore
+Queste due operazioni devono soddisfare le seguenti proprietà:
+- proprietà commutativa della somma
 
-$$\vec{v} + \vec{w} \in \mathscr{V}$$
+$$\mathbf{u} + \mathbf{v} = \mathbf{v} + \mathbf{u} \qquad \forall \mathbf{u}, \mathbf{v} \in V$$
+
+- proprietà associativa della somma
+
+$$(\mathbf{u} + \mathbf{v}) + \mathbf{w} = \mathbf{u} + ( \mathbf{v} + \mathbf{w} ) \qquad \forall \mathbf{u}, \mathbf{v}, mathbf{w} \in V$$
+
+- esistenza dell'elemento neutro della somma
+
+$$\exists \mathbf{0}_V \in V \qquad s.t. \qquad \mathbf{u} + \mathbf{0}_V = \mathbf{u} \qquad \forall \mathbf{u} \in V$$
+
+- esistenza dell'elemento inverso della somma
+
+$$\forall \mathbf{u} \in V \exists \mathbf{u}' \in V \qquad s.t. \qquad \mathbf{u} + \mathbf{u}' = \mathbf{0}$$
+
+- proprietà associativa del prodotto scalare
+
+$$(\alpha \beta) \mathbf{u} = \alpha ( \beta \mathbf{u} ) \forall \alpha, \beta \in K, \ \mathbf{u} \in V$$
+
+- esistenza dell'elemento neutro della moltiplicazione per uno scalare
+
+$$\exists 1 \in K \qquad s.t. \qquad 1 \, \mathbf{u} = \mathbf{u} \quad \forall \mathbf{u} \in V$$
+
+- proprietà distributiva della moltiplicazione per uno scalare
+
+$$(\alpha + \beta) \mathbf{u} = \alpha \mathbf{u} + \beta \mathbf{u}$$
+
+$$\alpha (\mathbf{u} + \mathbf{v}) = \alpha \mathbf{u} + \alpha \mathbf{v} $$
 
 
 **Base di uno spazio** In uno spazio vettoriale, ogni vettore può essere rappresentato come una combinazione lineare di un insieme di vettori dello spazio, opportunamente scelti. Il numero minimo di questi vettori è definita come dimensione dello spazio vettoriale.
