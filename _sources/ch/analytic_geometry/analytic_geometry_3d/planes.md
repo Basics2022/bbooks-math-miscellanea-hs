@@ -1,4 +1,4 @@
-(geometry:analytic:2d:planes)=
+(geometry:analytic:3d:planes)=
 # Piani nello spazio
 
 Un piano $\pi$ può essere definito come il luogo dei punti $P$ dello spazio che formano un vettore $(P-Q)$ con un punto dato $Q$ ortogonali a un vettore $\overrightarrow{n}$ che indica la direzione normale al piano $\pi$. Usando le proprietà del prodotto scalare,
