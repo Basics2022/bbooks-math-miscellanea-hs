@@ -3,19 +3,18 @@
 
 ## Definizioni e proprietà
 
-$$a = b^c \qquad \leftrightarrow \qquad c = \log_b a$$ **todo**
+$$a = b^c \qquad \leftrightarrow \qquad c = \log_{b} a $$
 
-<!--
 ## Funzione esponenziale e logaritmo
 
 ## $e$ di Nepero, $e^x$ e logaritmo naturale
 
 ### Definizione di $e^x$
--->
 
 **Esponenziale reale.** Per ogni $x \in \mathbb{R}$, si definisce la funzione $e^x$ come
+
 $$\begin{aligned}
-e^x & := \lim_{n \rightarrow \infty} \left( 1 + \frac{x}{n}\rightarrow)^n  = \\
+e^x & := \lim_{n \rightarrow \infty} \left( 1 + \frac{x}{n}\right)^n  = \\
     & := \lim_{n \rightarrow \infty} \sum_{k=0}^{n} \frac{x^n}{n!} \\
 \end{aligned}$$
 
