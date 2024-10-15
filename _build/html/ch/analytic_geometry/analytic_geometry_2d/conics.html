@@ -172,13 +172,18 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Vettori</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../../vectors.html">Algebra e calcolo vettoriale per la scuola superiore</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../vectors.html">Vettori</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../vectors/euclidean-space-hs.html">Spazio euclideo e vettori</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../vectors/algebra-hs.html">Algebra vettoriale</a></li>
+</ul>
+</li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Geometria analitica</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../analytic_geometry.html">Geometria analitica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../analytic_geometry.html">Geometria analitica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="coordinates.html">Sistemi di coordinate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="points.html">Punti nel piano</a></li>
+<li class="toctree-l2"><a class="reference internal" href="curves.html">Curve nel piano</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lines.html">Rette nel piano</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Coniche nel piano</a></li>
 </ul>
@@ -186,7 +191,8 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Calcolo infinitesimale</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../infinitesimal_calculus.html">Calcolo infinitesimale</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../infinitesimal_calculus.html">Calcolo infinitesimale</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../infinitesimal_calculus/real_functions.html">Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\( f: \mathbb{R} \rightarrow \mathbb{R} \)</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../infinitesimal_calculus/limits.html">Limiti</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../infinitesimal_calculus/derivatives.html">Derivate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../infinitesimal_calculus/integrals.html">Integrali</a></li>
@@ -364,7 +370,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -380,6 +388,17 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#circonferenza">Circonferenza</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parabola">Parabola</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ellisse">Ellisse</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iperbole">Iperbole</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -398,18 +417,71 @@ document.write(`
 <li><p>Proprietà “ottiche”</p></li>
 <li><p>Applicazioni nella teoria della gravitazione di Newton</p></li>
 </ul>
-<p><strong>Cerchio.</strong></p>
+<div class="section" id="circonferenza">
+<h2>Circonferenza<a class="headerlink" href="#circonferenza" title="Permalink to this heading">#</a></h2>
+<p><strong>Definizione.</strong> Una circonferenza è il luogo dei punti equidistanti da un punto <span class="math notranslate nohighlight">\(C\)</span> dato, detto centro della criconferenza. La distanza tra i punti del circonferenza e il centro viene definito raggio della circonferenza.</p>
 <div class="math notranslate nohighlight">
 \[|P - C| = R\]</div>
-<p><strong>Parabola.</strong></p>
+<p><strong>Equazione in coordinate cartesiane.</strong> Per ricavare l’equazione di una criconferenza in coordinate cartesiane, si usa la formula per il calcolo della distanza tra punti. La condizione che identifica le coordinate cartesiane <span class="math notranslate nohighlight">\((x,y)\)</span> dei punti di una circonferenza di raggio <span class="math notranslate nohighlight">\(R\)</span> centrata in <span class="math notranslate nohighlight">\(C:(x_C, y_C)\)</span> è</p>
+<div class="math notranslate nohighlight">
+\[R^2 = |P-C|^2 = (x-x_C)^2 + (y-y_C)^2 \ ,\]</div>
+<p>che può essere riscritta come</p>
+<div class="math notranslate nohighlight">
+\[x^2 - 2 x_C \, x + x_C^2 + y^2 - 2 x_C \, y + y_C^2 - R^2 = 0 \ .\]</div>
+<p><strong>Eqauzione in coordinate polari.</strong> Usando un sistema di coordinate polari <span class="math notranslate nohighlight">\(\{r, \theta\}\)</span> con origine nel centro della circonferenza, la condizione che identifica una criconferenza di raggio <span class="math notranslate nohighlight">\(R\)</span> è</p>
+<div class="math notranslate nohighlight">
+\[r = R\]</div>
+</div>
+<div class="section" id="parabola">
+<h2>Parabola<a class="headerlink" href="#parabola" title="Permalink to this heading">#</a></h2>
 <div class="math notranslate nohighlight">
 \[|P - d| = |P - F|\]</div>
-<p><strong>Ellisse.</strong></p>
+<p><strong>Equazione in coordinate cartesiane.</strong></p>
+<div class="math notranslate nohighlight">
+\[\left(y+\dfrac{d}{2}\right)^2 = x^2 + \left(y-\dfrac{d}{2}\right)^2\]</div>
+<div class="math notranslate nohighlight">
+\[y^2 + d y + \dfrac{d^2}{4} = x^2 + y^2 - d y + \dfrac{d^2}{4}\]</div>
+<div class="math notranslate nohighlight">
+\[y = \frac{1}{4d} x^2\]</div>
+</div>
+<div class="section" id="ellisse">
+<h2>Ellisse<a class="headerlink" href="#ellisse" title="Permalink to this heading">#</a></h2>
 <div class="math notranslate nohighlight">
 \[|P - F_1| + |P - F_2| = 2a\]</div>
-<p><strong>Iperbole.</strong></p>
+<p>Con la scelta <span class="math notranslate nohighlight">\(F_1 \equiv (-c,0)\)</span>, <span class="math notranslate nohighlight">\(F_2 \equiv (c,0)\)</span></p>
+<div class="math notranslate nohighlight">
+\[\sqrt{(x+c)^2 + y^2} = 2a - \sqrt{(x-c)^2 + y^2}\]</div>
+<div class="math notranslate nohighlight">
+\[x^2 + 2 c x + c^2 + y^2 = 4 a^2 - 4a \sqrt{(x-c)^2 + y^2} + x^2 - 2 c x + c^2 + y^2\]</div>
+<div class="math notranslate nohighlight">
+\[4a \sqrt{(x-c)^2 + y^2} = 4 a^2 - 4 c x\]</div>
+<div class="math notranslate nohighlight">
+\[a^2 x^2-2 a^2 c x + a^2 c^2 + a^2 y^2 = a^4 - 2 a^2 c x + c^2 x^2\]</div>
+<div class="math notranslate nohighlight">
+\[(a^2 - c^2)x^2 + a^2 y^2 = a^2 ( a^2 - c^2 )\]</div>
+<div class="math notranslate nohighlight">
+\[\dfrac{x^2}{a}^2 + \dfrac{y^2}{b^2} = 1\]</div>
+<p>avendo definito <span class="math notranslate nohighlight">\(b^2 := a^2 - c^2\)</span>.</p>
+</div>
+<div class="section" id="iperbole">
+<h2>Iperbole<a class="headerlink" href="#iperbole" title="Permalink to this heading">#</a></h2>
 <div class="math notranslate nohighlight">
 \[\big| |P - F_1| - |P - F_2| \big| = 2a\]</div>
+<p>Con la scelta <span class="math notranslate nohighlight">\(F_1 \equiv (-c,0)\)</span>, <span class="math notranslate nohighlight">\(F_2 \equiv (c,0)\)</span></p>
+<div class="math notranslate nohighlight">
+\[\sqrt{(x+c)^2 + y^2} = \mp 2a + \sqrt{(x-c)^2 + y^2}\]</div>
+<div class="math notranslate nohighlight">
+\[x^2 + 2 c x + c^2 + y^2 = 4 a^2 \mp 4a \sqrt{(x-c)^2 + y^2} + x^2 - 2 c x + c^2 + y^2\]</div>
+<div class="math notranslate nohighlight">
+\[\pm 4a \sqrt{(x-c)^2 + y^2} = 4 a^2 - 4 c x\]</div>
+<div class="math notranslate nohighlight">
+\[a^2 x^2-2 a^2 c x + a^2 c^2 + a^2 y^2 = a^4 - 2 a^2 c x + c^2 x^2\]</div>
+<div class="math notranslate nohighlight">
+\[(a^2 - c^2)x^2 + a^2 y^2 = a^2 ( a^2 - c^2 )\]</div>
+<div class="math notranslate nohighlight">
+\[\dfrac{x^2}{a}^2 + \dfrac{y^2}{b^2} = 1\]</div>
+<p>avendo definito <span class="math notranslate nohighlight">\(b^2 := a^2 - c^2\)</span>.</p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -466,6 +538,23 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#circonferenza">Circonferenza</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parabola">Parabola</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ellisse">Ellisse</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iperbole">Iperbole</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
