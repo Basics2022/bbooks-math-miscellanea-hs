@@ -11,6 +11,7 @@ align: left
 ---
 Def. 1
 ```
+<!--
 ```{figure} ./../../../media/line-point-vector.svg
 ---
 scale: 50%
@@ -18,6 +19,7 @@ align: right
 ---
 Def. 2
 ```
+-->
 
 Per trovare l'equazione di una retta, si possono usare delle definizione equivalenti.
 
