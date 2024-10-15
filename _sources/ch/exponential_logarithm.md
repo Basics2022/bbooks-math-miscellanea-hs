@@ -3,9 +3,9 @@
 
 ## Definizioni e proprietà
 
-$$a = b^c \qquad \leftrightarrow \qquad c = \log_b a$$ **todo**
 
 <!--
+$$a = b^c \qquad \leftrightarrow \qquad c = \log_b a$$ **todo**
 ## Funzione esponenziale e logaritmo
 
 ## $e$ di Nepero, $e^x$ e logaritmo naturale
