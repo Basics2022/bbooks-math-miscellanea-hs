@@ -1,11 +1,12 @@
 (geometry:analytic)=
 # Geometria analitica
 
-La geometria analitica si occupa dello stuido delle figure geometriche nello spazio tramite l'uso di **sistemi di coordinate**.
-- scelta arbitaria, spesso guidata da criteri di "comodità"
-
-Nel 1637 Cartesio formalizzò le basi della geometria analitica, o geometria cartesiana, nel libro *Geometria*, introdotto dal suo più famoso *Discorso sul metodo*.
-
+- La geometria analitica si occupa dello stuido delle figure geometriche nello spazio tramite l'uso di **sistemi di coordinate**: la scelta può arbitaria, spesso guidata da criteri di "comodità"; i risultati sono indipendenti dalla scelta
+- L'utilizzo di un sistema di coordinate per la descrizione dello spazio produce un legame tra la **geometria** e l'**algebra**:
+  - da un lato, le entità geometriche possono essere rappresentate con funzioni, equazioni e/o disequazioni che coinvolgono le coordinate;
+  - dall'altro, ai problemi algebrici si può dare un'interpretazione geometrica;
+- Nel 1637 Cartesio formalizzò le basi della geometria analitica, o geometria cartesiana, nel libro *Geometria*, introdotto dal suo più famoso *Discorso sul metodo*.
+- Il lavoro di Cartesio fornisce strumenti fondamentali usati nella seconda metà del XVII secolo da Newton e Leibniz per sviluppare il calcolo infinitesimale, e in contemporaneanmente la meccanica razionale di Newton.
 
 **Argomenti.**
 

@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Geometria analitica &#8212; My sample book</title>
+    <title>Numeri complessi &#8212; My sample book</title>
   
   
   
@@ -64,11 +64,9 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/analytic_geometry';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/complex';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Sistemi di coordinate" href="analytic_geometry/analytic_geometry_2d/coordinates.html" />
-    <link rel="prev" title="Algebra vettoriale" href="vectors/algebra-hs.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -179,8 +177,8 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Geometria analitica</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Geometria analitica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="analytic_geometry.html">Geometria analitica</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/coordinates.html">Sistemi di coordinate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/points.html">Punti nel piano</a></li>
 <li class="toctree-l2"><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/lines.html">Rette nel piano</a></li>
@@ -268,7 +266,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fch/analytic_geometry.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fch/complex.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -298,7 +296,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/ch/analytic_geometry.md" target="_blank"
+      <li><a href="../_sources/ch/complex.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -380,7 +378,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Geometria analitica</h1>
+    <h1>Numeri complessi</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -394,61 +392,37 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="geometria-analitica">
-<span id="geometry-analytic"></span><h1>Geometria analitica<a class="headerlink" href="#geometria-analitica" title="Permalink to this heading">#</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="numeri-complessi">
+<h1>Numeri complessi<a class="headerlink" href="#numeri-complessi" title="Permalink to this heading">#</a></h1>
+<p><strong>Rappresentazione.</strong></p>
 <ul class="simple">
-<li><p>La geometria analitica si occupa dello stuido delle figure geometriche nello spazio tramite l’uso di <strong>sistemi di coordinate</strong>: la scelta può arbitaria, spesso guidata da criteri di “comodità”; i risultati sono indipendenti dalla scelta</p></li>
-<li><p>L’utilizzo di un sistema di coordinate per la descrizione dello spazio produce un legame tra la <strong>geometria</strong> e l’<strong>algebra</strong>:</p>
-<ul>
-<li><p>da un lato, le entità geometriche possono essere rappresentate con funzioni, equazioni e/o disequazioni che coinvolgono le coordinate;</p></li>
-<li><p>dall’altro, ai problemi algebrici si può dare un’interpretazione geometrica;</p></li>
+<li><p>cartesiana <span class="math notranslate nohighlight">\(z = x + i y\)</span></p></li>
+<li><p>polare: <span class="math notranslate nohighlight">\(z = r e^{i \theta}\)</span></p></li>
+<li><p><strong>todo</strong> Giustificare con identità di Eulero, <span class="math notranslate nohighlight">\(e^{i \theta} = \cos \theta + i \sin \theta\)</span></p></li>
+<li><p><strong>todo</strong> dimostrare l’identità di Eulero e la definizione di <span class="math notranslate nohighlight">\(e^{x}\)</span>, con le espansioni in serie convergenti</p></li>
 </ul>
-</li>
-<li><p>Nel 1637 Cartesio formalizzò le basi della geometria analitica, o geometria cartesiana, nel libro <em>Geometria</em>, introdotto dal suo più famoso <em>Discorso sul metodo</em>.</p></li>
-<li><p>Il lavoro di Cartesio fornisce strumenti fondamentali usati nella seconda metà del XVII secolo da Newton e Leibniz per sviluppare il calcolo infinitesimale, e in contemporaneanmente la meccanica razionale di Newton.</p></li>
-</ul>
-<p><strong>Argomenti.</strong></p>
+<p><strong>Algebra.</strong></p>
 <ul class="simple">
-<li><p><strong>Geometria nel piano - spazio euclideo 2D, <span class="math notranslate nohighlight">\(E^2\)</span></strong></p>
+<li><p><strong>Operazioni.</strong></p>
 <ul>
-<li><p><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/coordinates.html#geometry-analytic-2d-coordinates"><span class="std std-ref">Sistemi di coordinate</span></a> <em>Cartesiane e polari; trasformazione tra sistemi di coordinate: polari e cartesiane; cartesiano-cartesiano: traslazione e rotazione</em></p></li>
-<li><p><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/points.html#geometry-analytic-2d-points"><span class="std std-ref">Punti</span></a></p></li>
-<li><p><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/lines.html#geometry-analytic-2d-lines"><span class="std std-ref">Rette</span></a></p></li>
-<li><p><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/conics.html#geometry-analytic-2d-conics"><span class="std std-ref">Coniche</span></a> <strong>todo</strong> <em>parabola, ellisse, iperbole: def, caratteristiche, descrizione in coord. cartesiane e polari; riferimento a gravitazione in meccanica classica</em></p></li>
+<li><p>Somma e differenza</p></li>
+<li><p>Prodotto</p></li>
+<li><p>Potenza</p></li>
+<li><p>Esponenziale e logaritmo</p></li>
 </ul>
 </li>
-<li><p><strong>Geometria nello spazio euclideo 3D, <span class="math notranslate nohighlight">\(E^3\)</span></strong></p>
+<li><p>Teoremi e proprietà</p>
 <ul>
-<li><p>Sistemi di coordinate</p></li>
-<li><p>Punti</p></li>
-<li><p>Rette</p></li>
-<li><p>Piani</p></li>
-<li><p>Cono e rivisitazione delle coniche</p></li>
-<li><p>Superfici quadratiche</p></li>
+<li><p><strong>Teorema fondamentale dell’algebra</strong></p></li>
+</ul>
+</li>
+<li><p><strong>Problemi</strong></p>
+<ul>
+<li><p>Equazioni</p></li>
+<li><p>Disequazioni</p></li>
 </ul>
 </li>
 </ul>
-<!--
-## Geometria
-La geometria si occupa della descrizione e della misura dello spazio e degli oggetti presenti in esso.
-
-**Geometria euclidea** Formulazione assiomatica della geometria negli *Elementi* di Euclide. L'opera di Euclide contiene i risultati di geometria noti al tempo, IV-III secolo a.C., ed è la base dei principi di geometria insegnati ancora oggi.
-
-Si occupa di elementi geometrici nel piano 2-dimensionale o nello spazio 3-dimensionale. In ordine di complessità, si occupa inizialmente della geometria piana, introducendo concetti primitivi (punto,...), **todo** *...concentrandosi su angoli, rette e triangoli, oggetti elementari nei quali è possibile scomprre altre figure piane*
-
-**Geometria analitica** Si occupa dello studio di elementi geometrici, con l'uso di sistemi di coordinate. **todo** *E'possibile usare diversi tipi di sistemi di coordinate, come ad esempio coord. cartesiane o polari nel piano.*
-Questo approccio permette di associare un elemento geometrico a un'equazione che rappresenta il legame tra le coordinate dei suoi punti: la geometria analitica rappresenta quindi un **ponte** tra la geometria e l'algebra.
-
-**todo** *Gli oggetti geometrici sono indipendenti dai sistemi di riferimento usati per descriverli; si può quindi definire i sistemi di riferimento per rendere la descrizione la più semplice possibile*
-
-**todo** *Si possono riconoscere i punti di uno spazio euclideo come elementi di uno* **spazio vettoriale**. Si possono quindi usare gli strumenti dell'algebra e del calcolo lineare (vettoriale).
-
-**todo: argomenti.** *Geometria piana: coordinate; distanza; retta; coniche;... Geometria nello spazio euclideo 3-dimensionale: coordinate; distanza; retta; piano; superfici quadratiche*
-
-**Geometria differenziale** Si occupa dello studio di oggetti geometrici differenziabili, lisci, come curve e superfici. **todo** *Grandezze locali (differenziali): normale, curvatura,...; grandezze globali (integrali): lunghezza, superficie, volume; massa, momenti di inerzia;...*
--->
-<div class="toctree-wrapper compound">
-</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -481,24 +455,6 @@ Questo approccio permette di associare un elemento geometrico a un'equazione che
                 <footer class="prev-next-footer">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="vectors/algebra-hs.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Algebra vettoriale</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="analytic_geometry/analytic_geometry_2d/coordinates.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Sistemi di coordinate</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
