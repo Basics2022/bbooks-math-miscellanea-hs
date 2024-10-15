@@ -14,7 +14,7 @@ $$a = b^c \qquad \Leftrightarrow \qquad c $$
 **Esponenziale reale.** Per ogni $x \in \mathbb{R}$, si definisce la funzione $e^x$ come
 
 $$\begin{aligned}
-e^x & := \lim_{n \rightarrow \infty} \left( 1 + \frac{x}{n}\rightarrow)^n  = \\
+e^x & := \lim_{n \rightarrow \infty} \left( 1 + \frac{x}{n}\right)^n  = \\
     & := \lim_{n \rightarrow \infty} \sum_{k=0}^{n} \frac{x^n}{n!} \\
 \end{aligned}$$
 
