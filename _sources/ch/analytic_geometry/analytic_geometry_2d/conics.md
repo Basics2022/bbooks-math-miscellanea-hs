@@ -30,7 +30,7 @@ $$|P - d| = |P - F|$$
 
 **Equazione in coordinate cartesiane.**
 
-$$\left(y+\dfrac{d}{2})^2 = x^2 + \left(y-\dfrac{d}{2}\right)^2$$
+$$\left(y+\dfrac{d}{2}\right)^2 = x^2 + \left(y-\dfrac{d}{2}\right)^2$$
 
 $$y^2 + d y + \dfrac{d^2}{4} = x^2 + y^2 - d y + \dfrac{d^2}{4}$$
 
