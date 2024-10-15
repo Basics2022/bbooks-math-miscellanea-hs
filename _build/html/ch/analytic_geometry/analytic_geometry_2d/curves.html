@@ -180,14 +180,18 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Geometria analitica</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../analytic_geometry.html">Geometria analitica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../analytic_geometry.html">Geometria analitica</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../analytic_geometry_2d.html">Geometria analitica nel piano</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="coordinates.html">Sistemi di coordinate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="points.html">Punti nel piano</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Curve nel piano</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lines.html">Rette nel piano</a></li>
-<li class="toctree-l2"><a class="reference internal" href="conics.html">Coniche nel piano</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conics.html">Coniche</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conics-cartesian.html">Coniche nel piano</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conics-polar.html">Coniche nel piano: coordinate polari</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../analytic_geometry_3d.html">Geometria analitica nello spazio</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Calcolo infinitesimale</span></p>
 <ul class="nav bd-sidenav">
@@ -198,6 +202,18 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../infinitesimal_calculus/integrals.html">Integrali</a></li>
 </ul>
 </li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Serie e successioni</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../series.html">Serie e successioni</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Numeri complessi</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../complex.html">Numeri complessi</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Algebra lineare</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../linear_algebra.html">Algebra lineare</a></li>
 </ul>
 
     </div>
@@ -394,6 +410,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rappresentazioni-di-una-curva">Rappresentazioni di una curva</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">Esempi</a></li>
 </ul>
             </nav>
         </div>
@@ -407,7 +424,8 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="curve-nel-piano">
 <span id="geometry-analytic-2d-curves"></span><h1>Curve nel piano<a class="headerlink" href="#curve-nel-piano" title="Permalink to this heading">#</a></h1>
-<p>Una curva nello spazio euclideo <span class="math notranslate nohighlight">\(E^2\)</span> è un luogo dei punti del piano che possono essere identificati con una funzione</p>
+<p><strong>todo.</strong> migliorare la definizione.</p>
+<p>Una curva nello spazio euclideo <span class="math notranslate nohighlight">\(E^2\)</span> è un luogo dei punti del piano che possono essere identificati con una funzione di una variabile indipendente.</p>
 <p><strong>Esempi.</strong> <strong>todo.</strong> grafici</p>
 <!--
 **Definizioni e classificazioni.**
@@ -428,6 +446,9 @@ document.write(`
 <p><strong>Rappresentazione paramterica.</strong></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\gamma(s) :\begin{cases} q^1 = f^1(s) \\ q^2 = f^2(s) \end{cases}\end{split}\]</div>
+</div>
+<div class="section" id="esempi">
+<h2>Esempi<a class="headerlink" href="#esempi" title="Permalink to this heading">#</a></h2>
 </div>
 </div>
 
@@ -495,6 +516,7 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rappresentazioni-di-una-curva">Rappresentazioni di una curva</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">Esempi</a></li>
 </ul>
   </nav></div>
 
