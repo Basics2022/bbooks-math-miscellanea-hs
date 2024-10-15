@@ -7,9 +7,16 @@
 (complex_numbers:high-school)=
 # Numeri complessi
 
-Utilità dei numeri complessi
-- utilizzo in molti ambiti della matematica, della fisica e dell'ingegneria
+Utilità dei numeri complessi:
+- utilizzo in molti ambiti della matematica, della fisica e dell'ingegneria: soluzione ODE, soluzione PDE, teoria delle trasformate
 - facile rappresentazione di funzioni armoniche, grazie all'identità di Eulero
+
+**Argomenti**
+- Definizioni e rappresentazioni
+- Algebra:
+  - operazioni
+  - equazioni e disequazioni
+  - teorema fondamentale dell'algebra
 
 ## Definizione
 I numeri complessi estendono il campo dei numeri reali, grazie all'introduzione dell'**unità immaginaria**, $i$, definita come la radice quadra di $-1$,
@@ -44,4 +51,19 @@ $$\begin{cases}
 x = r \cos \theta \\
 y = r \sin \theta
 \end{cases} \quad \rightarrow \quad 
-z = r \cos \theta + i \ r \sin \theta \ .$$
+\begin{aligned}
+z & = r \cos \theta + i \ r \sin \theta = \\
+  & = r \left( \cos \theta + i \sin \theta \right) = \\
+  & = r \, e^{i \, theta} \ ,
+\end{aligned}$$
+
+avendo anticipato qui la **formula di Eulero** per l'esponenziale di un numero immaginario,
+
+$$e^{i \, \theta} = \cos \theta + i \, \sin \theta \ .$$
+
+**todo** 
+- Riferimento alla formula di Eulero. Dimostrazione con serie? Cosa serve? Serie di Taylor? Crietri di convergenza delle serie?
+- Riferimento alla definizione di esponenziale
+
+
+
