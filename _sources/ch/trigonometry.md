@@ -21,10 +21,10 @@ $$\sin^2 x = (\sin x)^2 \neq $\sin( \sin x) \ .$$
 ## Proprietà
 $$\sin\left(x+\frac{\pi}{2}\right) = \cos x$$
 $$\cos\left(x+\frac{\pi}{2}\right) =-\sin x$$
-...
+...<br>
 $$\sin(\pi - x) = \sin x$$
 $$\cos(\pi - x) =-\cos x$$
-...
+...<br>
 
 ## Angoli particolari
 $$\begin{aligned}
