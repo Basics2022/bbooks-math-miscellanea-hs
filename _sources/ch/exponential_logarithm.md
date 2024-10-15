@@ -22,6 +22,7 @@ e^x & := \lim_{n \rightarrow \infty} \left( 1 + \frac{x}{n}\rightarrow)^n  = \\
 Si può dimostrare che 
 - le due definizioni sono equivalenti, e la serie è convergente per ogni $\mathbf{x} \in \mathbb{R}$ finito 
 - la funzione $e^x$ giustifica questa notazione poiché soddisfa le proprietà delle potenze, come 
+  
   $$e^{x+y} = e^x \, e^y \ .$$
 
 **Esponenziale complesso.** Si può estendere la definizione di esponenziale anche a un numero complesso, $z \in \mathbb{C}$
