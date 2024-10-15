@@ -3,7 +3,7 @@
 
 ## Definizioni e proprietà
 
-$$a = b^c \qquad \leftrightarrow \qquad c = \log a $$
+$$a = b^c \qquad \leftrightarrow \qquad c = \log_{b} a $$
 
 ## Funzione esponenziale e logaritmo
 
