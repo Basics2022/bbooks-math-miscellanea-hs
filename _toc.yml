@@ -40,6 +40,9 @@ parts:
 - caption: Trigonometria
   chapters:
   - file: ch/trigonometry
+- caption: Esponenziale e logaritmo
+  chapters:
+  - file: ch/exponential_logarithm
 - caption: Serie e successioni
   chapters:
   - file: ch/series
