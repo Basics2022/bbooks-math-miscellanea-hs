@@ -62,11 +62,13 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/analytic_geometry/analytic_geometry_2d/conics';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/analytic_geometry/analytic_geometry_2d/conics-cartesian';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Coniche nel piano" href="conics-cartesian.html" />
-    <link rel="prev" title="Rette nel piano" href="lines.html" />
+    <link rel="next" title="Coniche nel piano: coordinate polari" href="conics-polar.html" />
+    <link rel="prev" title="Coniche nel piano" href="conics.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -183,8 +185,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="points.html">Punti nel piano</a></li>
 <li class="toctree-l2"><a class="reference internal" href="curves.html">Curve nel piano</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lines.html">Rette nel piano</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conics.html">Coniche nel piano</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Coniche nel piano</a></li>
-<li class="toctree-l2"><a class="reference internal" href="conics-cartesian.html">Coniche nel piano</a></li>
 <li class="toctree-l2"><a class="reference internal" href="conics-polar.html">Coniche nel piano: coordinate polari</a></li>
 </ul>
 </li>
@@ -269,7 +271,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fch/analytic_geometry/analytic_geometry_2d/conics.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fch/analytic_geometry/analytic_geometry_2d/conics-cartesian.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -299,7 +301,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../../_sources/ch/analytic_geometry/analytic_geometry_2d/conics.md" target="_blank"
+      <li><a href="../../../_sources/ch/analytic_geometry/analytic_geometry_2d/conics-cartesian.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -394,6 +396,9 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#circonferenza">Circonferenza</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parabola">Parabola</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ellisse">Ellisse</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iperbole">Iperbole</a></li>
 </ul>
             </nav>
         </div>
@@ -416,6 +421,68 @@ document.write(`
 </ul>
 <div class="section" id="circonferenza">
 <h2>Circonferenza<a class="headerlink" href="#circonferenza" title="Permalink to this heading">#</a></h2>
+<p><strong>Definizione.</strong> Una circonferenza è il luogo dei punti equidistanti da un punto <span class="math notranslate nohighlight">\(C\)</span> dato, detto centro della criconferenza. La distanza tra i punti del circonferenza e il centro viene definito raggio della circonferenza.</p>
+<div class="math notranslate nohighlight">
+\[|P - C| = R\]</div>
+<p><strong>Equazione in coordinate cartesiane.</strong> Per ricavare l’equazione di una criconferenza in coordinate cartesiane, si usa la formula per il calcolo della distanza tra punti. La condizione che identifica le coordinate cartesiane <span class="math notranslate nohighlight">\((x,y)\)</span> dei punti di una circonferenza di raggio <span class="math notranslate nohighlight">\(R\)</span> centrata in <span class="math notranslate nohighlight">\(C:(x_C, y_C)\)</span> è</p>
+<div class="math notranslate nohighlight">
+\[R^2 = |P-C|^2 = (x-x_C)^2 + (y-y_C)^2 \ ,\]</div>
+<p>che può essere riscritta come</p>
+<div class="math notranslate nohighlight">
+\[x^2 - 2 x_C \, x + x_C^2 + y^2 - 2 x_C \, y + y_C^2 - R^2 = 0 \ .\]</div>
+<p><strong>Eqauzione in coordinate polari.</strong> Usando un sistema di coordinate polari <span class="math notranslate nohighlight">\(\{r, \theta\}\)</span> con origine nel centro della circonferenza, la condizione che identifica una criconferenza di raggio <span class="math notranslate nohighlight">\(R\)</span> è</p>
+<div class="math notranslate nohighlight">
+\[r = R\]</div>
+</div>
+<div class="section" id="parabola">
+<h2>Parabola<a class="headerlink" href="#parabola" title="Permalink to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[|P - d| = |P - F|\]</div>
+<p><strong>Equazione in coordinate cartesiane.</strong></p>
+<div class="math notranslate nohighlight">
+\[\left(y+\dfrac{d}{2}\right)^2 = x^2 + \left(y-\dfrac{d}{2}\right)^2\]</div>
+<div class="math notranslate nohighlight">
+\[y^2 + d y + \dfrac{d^2}{4} = x^2 + y^2 - d y + \dfrac{d^2}{4}\]</div>
+<div class="math notranslate nohighlight">
+\[y = \frac{1}{4d} x^2\]</div>
+</div>
+<div class="section" id="ellisse">
+<h2>Ellisse<a class="headerlink" href="#ellisse" title="Permalink to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[|P - F_1| + |P - F_2| = 2a\]</div>
+<p>Con la scelta <span class="math notranslate nohighlight">\(F_1 \equiv (-c,0)\)</span>, <span class="math notranslate nohighlight">\(F_2 \equiv (c,0)\)</span></p>
+<div class="math notranslate nohighlight">
+\[\sqrt{(x+c)^2 + y^2} = 2a - \sqrt{(x-c)^2 + y^2}\]</div>
+<div class="math notranslate nohighlight">
+\[x^2 + 2 c x + c^2 + y^2 = 4 a^2 - 4a \sqrt{(x-c)^2 + y^2} + x^2 - 2 c x + c^2 + y^2\]</div>
+<div class="math notranslate nohighlight">
+\[4a \sqrt{(x-c)^2 + y^2} = 4 a^2 - 4 c x\]</div>
+<div class="math notranslate nohighlight">
+\[a^2 x^2-2 a^2 c x + a^2 c^2 + a^2 y^2 = a^4 - 2 a^2 c x + c^2 x^2\]</div>
+<div class="math notranslate nohighlight">
+\[(a^2 - c^2)x^2 + a^2 y^2 = a^2 ( a^2 - c^2 )\]</div>
+<div class="math notranslate nohighlight">
+\[\dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} = 1\]</div>
+<p>avendo definito <span class="math notranslate nohighlight">\(b^2 := a^2 - c^2\)</span>.</p>
+</div>
+<div class="section" id="iperbole">
+<h2>Iperbole<a class="headerlink" href="#iperbole" title="Permalink to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[\big| |P - F_1| - |P - F_2| \big| = 2a\]</div>
+<p>Con la scelta <span class="math notranslate nohighlight">\(F_1 \equiv (-c,0)\)</span>, <span class="math notranslate nohighlight">\(F_2 \equiv (c,0)\)</span></p>
+<div class="math notranslate nohighlight">
+\[\sqrt{(x+c)^2 + y^2} = \mp 2a + \sqrt{(x-c)^2 + y^2}\]</div>
+<div class="math notranslate nohighlight">
+\[x^2 + 2 c x + c^2 + y^2 = 4 a^2 \mp 4a \sqrt{(x-c)^2 + y^2} + x^2 - 2 c x + c^2 + y^2\]</div>
+<div class="math notranslate nohighlight">
+\[\pm 4a \sqrt{(x-c)^2 + y^2} = 4 a^2 - 4 c x\]</div>
+<div class="math notranslate nohighlight">
+\[a^2 x^2-2 a^2 c x + a^2 c^2 + a^2 y^2 = a^4 - 2 a^2 c x + c^2 x^2\]</div>
+<div class="math notranslate nohighlight">
+\[(a^2 - c^2)x^2 + a^2 y^2 = a^2 ( a^2 - c^2 )\]</div>
+<div class="math notranslate nohighlight">
+\[\dfrac{x^2}{a^2} - \dfrac{y^2}{b^2} = 1\]</div>
+<p>avendo definito <span class="math notranslate nohighlight">\(b^2 := c^2 - a^2\)</span>.</p>
 </div>
 </div>
 
@@ -450,20 +517,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="lines.html"
+       href="conics.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Rette nel piano</p>
+        <p class="prev-next-title">Coniche nel piano</p>
       </div>
     </a>
     <a class="right-next"
-       href="conics-cartesian.html"
+       href="conics-polar.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Coniche nel piano</p>
+        <p class="prev-next-title">Coniche nel piano: coordinate polari</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -483,6 +550,9 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#circonferenza">Circonferenza</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parabola">Parabola</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ellisse">Ellisse</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iperbole">Iperbole</a></li>
 </ul>
   </nav></div>
 

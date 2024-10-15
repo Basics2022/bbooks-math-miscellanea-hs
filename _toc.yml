@@ -13,12 +13,16 @@ parts:
 - caption: Geometria analitica
   chapters:
   - file: ch/analytic_geometry
+  - file: ch/analytic_geometry_2d
     sections:
     - file: ch/analytic_geometry/analytic_geometry_2d/coordinates
     - file: ch/analytic_geometry/analytic_geometry_2d/points
     - file: ch/analytic_geometry/analytic_geometry_2d/curves
     - file: ch/analytic_geometry/analytic_geometry_2d/lines
     - file: ch/analytic_geometry/analytic_geometry_2d/conics
+    - file: ch/analytic_geometry/analytic_geometry_2d/conics-cartesian
+    - file: ch/analytic_geometry/analytic_geometry_2d/conics-polar
+  - file: ch/analytic_geometry_3d
 - caption: Calcolo infinitesimale
   chapters:
   - file: ch/infinitesimal_calculus
