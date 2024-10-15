@@ -7,16 +7,28 @@
 (vectors:high-school:algebra-hs)=
 # Algebra vettoriale
 
+**Definizione.** Uno spazio vettoriale è una struttura algebrica formata da:
+- un insieme $\mathscr{V}$, i cui elementi sono chiamati **vettori**
+- un campo $\mathscr{K}$ (di solito quello dei numeri reali $\mathbb{R}$ o complessi $\mathbb{C}$), i cui elementi sono chiamati **scalari**
+- due operazioni chiuse rispetto all'insieme $\mathscr{V}$ chiamate:
+  - somma vettoriale
+  - moltiplicazione per uno scalare,
+  che soddisfano determinate proprietà che verranno elencate in seguito. 
 
-$$\vec{v}, \vec{w} \in \mathscr{V} \quad , \quad a, b \in \mathbb{R}$$
+Un'operazione è chiusa rispetto a un'insieme, se il risultato delle operazioni è un elemento dell'insieme.
+
+Nel seguito del capitolo verranno considerati solo campi vettoriali definiti sui numeri reali, per i quali $\mathscr{K} = \mathbb{R}$.
 
 **Operazioni sui vettori: definizione di spazio vettoriale.**
 
-$$a \vec{v} \in \mathscr{V}$$
+La moltiplicazione di un vettore $\mathbf{v} \in \mathscr{V}$ per uno scalare $\alpha \in \mathbb{R}$ è il vettore 
+
+$$\alpha \vec{v} \in \mathscr{V}$$
+
+La somma vettoriale tra due vettori $\mathbf{v}$, \$\mathbf{w} \, \in \mathscr{V}$ è il vettore
 
 $$\vec{v} + \vec{w} \in \mathscr{V}$$
 
-$$a \vec{v} + b \vec{w} \in \mathscr{V}$$
 
 **Base di uno spazio** In uno spazio vettoriale, ogni vettore può essere rappresentato come una combinazione lineare di un insieme di vettori dello spazio, opportunamente scelti. Il numero minimo di questi vettori è definita come dimensione dello spazio vettoriale.
 
