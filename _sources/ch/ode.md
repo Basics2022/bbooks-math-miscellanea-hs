@@ -7,7 +7,17 @@
 (ode:high-school)=
 # Equazioni differenziali ordinarie
 
-**Motivazione.**
+**Motivazione.** In molti ambiti delle scienze compaiono equazioni differenziali ordinarie, equazioni che impongono una condizione tra una funzione reale incognita e le sue derivate. Così, ad esempio:
+- le equazioni del moto in dinamica
+- le equazioni della statica in meccanica delle strutture
+- le equazioni che descrivono l'andamento della temperatura attraverso un mezzo, in condizioni stazionarie
+- ...
+e in generale, in tutti i problemi in cui **todo**
+
+**Approccio.**
+Mentre le motivazioni date dovrebbero essere sufficienti a convincere dell'importanza e della necessità di un'introduzione alle equazioni differenziali ordinarie, una trattazione completa dell'argomento richiede strumenti matematici più avanzati di quelli disponibili a uno studente delle scuole superiori (e spesso anche di molti studenti universitari).
+
+Si cercherà quindi di trattare l'argomento nella maniera più rigorosa possibile per fornire gli strumenti necessari per (semplici) applicazioni nelle quali compaiono le ODE, mentre si chiederà qualche atto di fede nell'accettare alcuni risultati. Per completezza, in corrispondenza di questi atti di fede, verrà messo a disposizione un collegamento a una trattazione più completa dell'argomento.
 
 **Definizioni.**
 Un'equazione differenziale ordinaria è una funzione che coinvolge una funzione reale di una variabile reale, incognita, e le sue derivate. Formalmente una ODE può essere scritta come
