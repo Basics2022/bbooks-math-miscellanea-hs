@@ -12,15 +12,15 @@
 
 $$|P - C| = R$$
 
-**Equazione in coordinate cartesiane.** Per ricavare l'equazione di una criconferenza in coordinate cartesiane, si usa la formula per il calcolo della distanza tra punti. La condizione che identifica le coordinate cartesiane $(x,y)$ dei punti di una circonferenza di raggio $R$ centrata in $C:(x_C, y_C)$ è
+**Equazione in coordinate cartesiane.** Per ricavare l'equazione di una circonferenza in coordinate cartesiane, si usa la formula per il calcolo della distanza tra punti. Se si sceglie un sistema di coordinate cartesiane con origine in $C$ s.t. $(x_C, y_C) = (0,0)$, la condizione che identifica le coordinate cartesiane $(x,y)$ dei punti di una circonferenza di raggio $R$ centrata in $C$
 
-$$R^2 = |P-C|^2 = (x-x_C)^2 + (y-y_C)^2 \ ,$$
+$$R^2 = |P-C|^2 = x^2 + y^2 \ ,$$
 
-che può essere riscritta come
+cioè
 
-$$x^2 - 2 x_C \, x + x_C^2 + y^2 - 2 x_C \, y + y_C^2 - R^2 = 0 \ .$$
+$$x^2 + y^2 = R^2 \ .$$
 
-**Eqauzione in coordinate polari.** Usando un sistema di coordinate polari $\{r, \theta\}$ con origine nel centro della circonferenza, la condizione che identifica una criconferenza di raggio $R$ è
+**Equazione in coordinate polari.** Usando un sistema di coordinate polari $\{r, \theta\}$ con origine nel centro della circonferenza, la condizione che identifica una criconferenza di raggio $R$ è
 
 $$r = R$$
 

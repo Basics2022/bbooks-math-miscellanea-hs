@@ -13,6 +13,7 @@ parts:
 - caption: Geometria analitica
   chapters:
   - file: ch/analytic_geometry
+  - file: ch/analytic_geometry/euclidean_space
   - file: ch/analytic_geometry/analytic_geometry_2d
     sections:
     - file: ch/analytic_geometry/analytic_geometry_2d/coordinates
@@ -37,6 +38,9 @@ parts:
     - file: ch/infinitesimal_calculus/limits
     - file: ch/infinitesimal_calculus/derivatives
     - file: ch/infinitesimal_calculus/integrals
+- caption: Equazioni differenziali ordinarie
+  chapters:
+  - file: ch/ode
 - caption: Trigonometria
   chapters:
   - file: ch/trigonometry

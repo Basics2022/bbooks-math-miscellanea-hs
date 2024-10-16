@@ -42,6 +42,16 @@ $$\sin ( x \mp y ) = \sin x \ \cos y \mp \cos x \ \sin y$$
 
 **todo** dimostrazione con geometria
 
+$$\cos ( \alpha + \beta ) = \frac{OF}{R}$$
+$$\sin ( \alpha + \beta ) = \frac{BF}{R}$$
+
+
+$$OF = \frac{OC}{OA} OE = \cos \alpha \ OE$$
+$$OE = OD - ED = OB \cos \beta - OB \sin \beta \frac{\sin \alpha}{\cos \alpha}$$
+$$OF = OB \left( \cos \alpha \cos \beta - \sin \beta \sin \alpha  \right)$$
+$$\cos (\alpha + \beta) = \cos \alpha \cos \beta - \sin \beta \sin \alpha$$ 
+
+
 ## Werner
 
 $$\cos x \cos y = \dfrac{1}{2} \left[ \cos( x - y ) + \cos ( x + y ) \right]$$
