@@ -429,20 +429,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">Esempi</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coordinate-cartesiane">Coordinate cartesiane</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coordinate-polari">Coordinate polari</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trasformazione-di-coordinate">Trasformazione di coordinate</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#trasformazione-delle-coordiante-di-due-sistemi-cartesiani">Trasformazione delle coordiante di due sistemi cartesiani</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#traslazione-dell-origine">Traslazione dell’origine</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rotazione-degli-assi">Rotazione degli assi</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#traslazione-dell-origine-e-rotazione-degli-assi">Traslazione dell’origine e rotazione degli assi</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">Esempi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trasformazione-di-coordinate">Trasformazione di coordinate</a></li>
 </ul>
             </nav>
         </div>
@@ -458,28 +446,19 @@ document.write(`
 <span id="geometry-analytic-2d-coordinates"></span><h1>Sistemi di coordinate<a class="headerlink" href="#sistemi-di-coordinate" title="Permalink to this heading">#</a></h1>
 <div class="section" id="esempi">
 <h2>Esempi<a class="headerlink" href="#esempi" title="Permalink to this heading">#</a></h2>
-<div class="section" id="coordinate-cartesiane">
-<h3>Coordinate cartesiane<a class="headerlink" href="#coordinate-cartesiane" title="Permalink to this heading">#</a></h3>
-<div class="math notranslate nohighlight">
-\[(x, y)\]</div>
-</div>
-<div class="section" id="coordinate-polari">
-<h3>Coordinate polari<a class="headerlink" href="#coordinate-polari" title="Permalink to this heading">#</a></h3>
-<div class="math notranslate nohighlight">
-\[(r, \theta)\]</div>
+<p><strong>Sistema di coordinate cartesiane ortonormale.</strong> <span class="math notranslate nohighlight">\((x, y)\)</span></p>
+<p><strong>Sistema di coordinate polari.</strong> <span class="math notranslate nohighlight">\((r, \theta)\)</span>. La legge di trasformazione delle coordinate tra un sistema di coordinate cartesiane ortonormale e un sistema di coordinate polari, con la stessa origine e l’asse <span class="math notranslate nohighlight">\(x\)</span> come direzione di riferimento per la misura dell’angolo <span class="math notranslate nohighlight">\(\theta\)</span> è</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{cases}
   x = r \cos \theta \\
-  y = r \sin \theta
+  y = r \sin \theta \ .
 \end{cases}\end{split}\]</div>
-</div>
+<p><strong>todo.</strong> Aggiungere immagine</p>
 </div>
 <div class="section" id="trasformazione-di-coordinate">
 <h2>Trasformazione di coordinate<a class="headerlink" href="#trasformazione-di-coordinate" title="Permalink to this heading">#</a></h2>
-<div class="section" id="trasformazione-delle-coordiante-di-due-sistemi-cartesiani">
-<h3>Trasformazione delle coordiante di due sistemi cartesiani<a class="headerlink" href="#trasformazione-delle-coordiante-di-due-sistemi-cartesiani" title="Permalink to this heading">#</a></h3>
-<div class="section" id="traslazione-dell-origine">
-<h4>Traslazione dell’origine<a class="headerlink" href="#traslazione-dell-origine" title="Permalink to this heading">#</a></h4>
+<p>Vengono discusse alcune leggi di trasformazione tra le coordinate di diversi sistemi di coordinate.</p>
+<p><strong>Traslazione dell’origine di due sistemi cartesiani con assi allineati.</strong></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{cases}
   x' = x - x_{O'} \\
@@ -487,9 +466,7 @@ document.write(`
 \end{cases}\end{split}\]</div>
 <div class="math notranslate nohighlight">
 \[\underline{x}' = \underline{x} - \underline{x}_{O'}\]</div>
-</div>
-<div class="section" id="rotazione-degli-assi">
-<h4>Rotazione degli assi<a class="headerlink" href="#rotazione-degli-assi" title="Permalink to this heading">#</a></h4>
+<p><strong>Rotazione degli assi di due sistemi cartesiani con stessa origine.</strong></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{cases}
   x' = x \cos \theta + y \sin \theta \\
@@ -497,10 +474,8 @@ document.write(`
 \end{cases}\end{split}\]</div>
 <div class="math notranslate nohighlight">
 \[\underline{x}' = R \underline{x}\]</div>
-</div>
-<div class="section" id="traslazione-dell-origine-e-rotazione-degli-assi">
-<h4>Traslazione dell’origine e rotazione degli assi<a class="headerlink" href="#traslazione-dell-origine-e-rotazione-degli-assi" title="Permalink to this heading">#</a></h4>
-<p><strong>TODO</strong> <em>L’ordine delle trasformazioni è importante</em></p>
+<p><strong>Traslazione dell’origine e rotazione degli assi di due sistemi di coordinate cartesiane.</strong></p>
+<p><strong>todo</strong> <em>L’ordine delle trasformazioni è importante</em></p>
 <div class="math notranslate nohighlight">
 \[ x \rightarrow T \rightarrow x' \rightarrow R \rightarrow x''\]</div>
 <div class="math notranslate nohighlight">
@@ -515,8 +490,6 @@ document.write(`
 \underline{x}'  &amp; = R \, \underline{x}  \\
 \underline{x}'' &amp; = \underline{x}' - \underline{x}'_{O''} = R \, \underline{x} - \underline{x}'_{O''} \\ 
 \end{aligned}\end{split}\]</div>
-</div>
-</div>
 </div>
 </div>
 
@@ -583,20 +556,8 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">Esempi</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coordinate-cartesiane">Coordinate cartesiane</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coordinate-polari">Coordinate polari</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trasformazione-di-coordinate">Trasformazione di coordinate</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#trasformazione-delle-coordiante-di-due-sistemi-cartesiani">Trasformazione delle coordiante di due sistemi cartesiani</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#traslazione-dell-origine">Traslazione dell’origine</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rotazione-degli-assi">Rotazione degli assi</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#traslazione-dell-origine-e-rotazione-degli-assi">Traslazione dell’origine e rotazione degli assi</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">Esempi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trasformazione-di-coordinate">Trasformazione di coordinate</a></li>
 </ul>
   </nav></div>
 

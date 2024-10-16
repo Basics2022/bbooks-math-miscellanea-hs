@@ -17,7 +17,7 @@ La geometria analitica nel piano si occupa della descrizione dello spazio bidime
     - posizione relativa punto-retta, distanza punto-retta, posizione relativa retta-retta
   - **Coniche**:
     - introduzione: ...motivazione della loro importanza (gravitazione, ottica,...)
-    - def, equazioni e caratteristiche
+    - def, equazioni e caratteristiche con un'oppportuna scelta del sistema di coordinate; successivamente traslazione e rotazione
     - ...
 
 
