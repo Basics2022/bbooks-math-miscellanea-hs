@@ -8,8 +8,11 @@
 - Nel 1637 Cartesio formalizzò le basi della geometria analitica, o geometria cartesiana, nel libro *Geometria*, introdotto dal suo più famoso *Discorso sul metodo*.
 - Il lavoro di Cartesio fornisce strumenti fondamentali usati nella seconda metà del XVII secolo da Newton e Leibniz per sviluppare il calcolo infinitesimale, e in contemporaneanmente la meccanica razionale di Newton.
 
+
 **Argomenti.**
 
+- **Spazi euclidei**
+  
 - **Geometria nel piano - spazio euclideo 2D, $E^2$**
 
   - [Sistemi di coordinate](geometry:analytic:2d:coordinates) *Cartesiane e polari; trasformazione tra sistemi di coordinate: polari e cartesiane; cartesiano-cartesiano: traslazione e rotazione*
