@@ -472,7 +472,7 @@ Un’equazione differenziale ordinaria è una funzione che coinvolge una funzion
 \[m \dot{x} + c x  = f(t)\]</div>
 <p>Soluzione dell’equazione omogenea</p>
 <div class="math notranslate nohighlight">
-\[x_o(t) = C e^{-frac{c}{m} t}\]</div>
+\[x_o(t) = C e^{-\frac{c}{m} t}\]</div>
 <ul class="simple">
 <li><p>Equazioni di secondo grado</p></li>
 </ul>
@@ -484,15 +484,18 @@ Un’equazione differenziale ordinaria è una funzione che coinvolge una funzion
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
 x_o(t) &amp; = C_1 e^{s_1 t } + C_2 e^{s_2 t} = \\
-         = e^{\sigma t} \left( C_1 e^{-i \omega t } + C_2 e^{i \omega t} \right) = \\
+       &amp; = e^{\sigma t} \left( C_1 e^{-i \omega t } + C_2 e^{i \omega t} \right) = \\
 \end{aligned}\end{split}\]</div>
 <p>con le costanti di integrazione complesse coniugate,</p>
 <div class="math notranslate nohighlight">
-\[ \begin{align}\begin{aligned}C_1 = C_2^* = (A + i B)^* = A - i B\\al fine di avere una soluzione reale. Ricordando che la somma di un numero complesso e del suo coniugato vale due volte la parte reale,\\$$w + w^* = (u+iv) + (u+iv)^* = u+iv + u - i v = 2 u = 2 \re\{w\}\end{aligned}\end{align} \]</div>
+\[C_1 = C_2^* = (A + i B)^* = A - i B\]</div>
+<p>al fine di avere una soluzione reale. Ricordando che la somma di un numero complesso e del suo coniugato vale due volte la parte reale,</p>
+<div class="math notranslate nohighlight">
+\[w + w^* = (u+iv) + (u+iv)^* = u+iv + u - i v = 2 u = 2 \text{Re}\{w\}\]</div>
 <p>si può riscrivere la soluzione dell’equazione omogenea</p>
 <div class="math notranslate nohighlight">
 \[x_o(t) = 2 \left[ A \cos ( \omega t ) - B \sin (\omega t ) \right] \]</div>
-<p>avendo riconosciuto <span class="math notranslate nohighlight">\(\re\{C_2 e^{i \omega t}\}\)</span></p>
+<p>avendo riconosciuto <span class="math notranslate nohighlight">\(\text{Re}\{C_2 e^{i \omega t}\}\)</span></p>
 <p><strong>Equazioni separabili: tecnica di soluzione di separazione delle variabili.</strong></p>
 <div class="math notranslate nohighlight">
 \[\frac{d y}{d x} = f(y(x)) \ g(x) \]</div>

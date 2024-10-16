@@ -30,7 +30,7 @@ $$m \dot{x} + c x  = f(t)$$
 
 Soluzione dell'equazione omogenea
 
-$$x_o(t) = C e^{-frac{c}{m} t}$$
+$$x_o(t) = C e^{-\frac{c}{m} t}$$
 
 - Equazioni di secondo grado
 
@@ -42,22 +42,22 @@ $$s_{1,2} = \sigma \mp i \omega$$
 
 $$\begin{aligned}
 x_o(t) & = C_1 e^{s_1 t } + C_2 e^{s_2 t} = \\
-         = e^{\sigma t} \left( C_1 e^{-i \omega t } + C_2 e^{i \omega t} \right) = \\
+       & = e^{\sigma t} \left( C_1 e^{-i \omega t } + C_2 e^{i \omega t} \right) = \\
 \end{aligned}$$
 
 con le costanti di integrazione complesse coniugate,
 
-$$C_1 = C_2^* = (A + i B)^* = A - i B
+$$C_1 = C_2^* = (A + i B)^* = A - i B$$
 
 al fine di avere una soluzione reale. Ricordando che la somma di un numero complesso e del suo coniugato vale due volte la parte reale,
 
-$$w + w^* = (u+iv) + (u+iv)^* = u+iv + u - i v = 2 u = 2 \re\{w\}$$
+$$w + w^* = (u+iv) + (u+iv)^* = u+iv + u - i v = 2 u = 2 \text{Re}\{w\}$$
 
 si può riscrivere la soluzione dell'equazione omogenea
 
 $$x_o(t) = 2 \left[ A \cos ( \omega t ) - B \sin (\omega t ) \right] $$
 
-avendo riconosciuto $\re\{C_2 e^{i \omega t}\}$
+avendo riconosciuto $\text{Re}\{C_2 e^{i \omega t}\}$
 
 
 
