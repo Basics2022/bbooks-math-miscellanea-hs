@@ -57,7 +57,12 @@ si può riscrivere la soluzione dell'equazione omogenea
 
 $$x_o(t) = 2 \left[ A \cos ( \omega t ) - B \sin (\omega t ) \right] $$
 
-avendo riconosciuto $\text{Re}\{C_2 e^{i \omega t}\}$
+avendo riconosciuto 
+
+$$\begin{aligned}
+  \text{Re}\{C_2 e^{i \omega t}\} &= \text{Re}\{ (A + i B)(\cos(\omega t) + i \sin(\omega t)\} = \\
+  \text{Re}\{ A \cos(\omega t) - B \sin (\omega t) + i \left[ A \sin (\omega t) + B \cos (\omega t) \right]\} \ .
+\end{aligned}$$
 
 
 
