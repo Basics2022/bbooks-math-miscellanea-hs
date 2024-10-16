@@ -3,6 +3,8 @@
 
 ## Definizioni e proprietà
 
+Nel campo reale, per ogni $b > 0$,
+
 $$a = b^c \qquad \leftrightarrow \qquad c = \log_{b} a $$
 
 ## Funzione esponenziale e logaritmo
@@ -23,6 +25,8 @@ Si può dimostrare che
 - la funzione $e^x$ giustifica questa notazione poiché soddisfa le proprietà delle potenze, come 
   
   $$e^{x+y} = e^x \, e^y \ .$$
+
+- la base della potenza, $e$, viene definita $e$ **di Nepero**, ed è un numero reale irrazionale, il cui valore approssimato è $e \approx 2.718281828\text{"e poi la magia finisce"}$: nonostante le prime cifre decimali facciano pensare che possa essere periodico, se si scrivono le cifre successive, l'approssimazione diventa $e \approx 2.71828182845904523\dots$
 
 **Esponenziale complesso.** Si può estendere la definizione di esponenziale anche a un numero complesso, $z \in \mathbb{C}$
 **todo**
