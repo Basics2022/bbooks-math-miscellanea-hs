@@ -210,6 +210,14 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Trigonometria</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../trigonometry.html">Trigonometria</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Esponenziale e logaritmo</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../exponential_logarithm.html">Esponenziale e logaritmo</a></li>
+</ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Serie e successioni</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../series.html">Serie e successioni</a></li>
@@ -393,7 +401,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -409,6 +419,14 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distanza-punto-piano">Distanza punto-piano</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -423,9 +441,23 @@ document.write(`
 <p>Un piano <span class="math notranslate nohighlight">\(\pi\)</span> può essere definito come il luogo dei punti <span class="math notranslate nohighlight">\(P\)</span> dello spazio che formano un vettore <span class="math notranslate nohighlight">\((P-Q)\)</span> con un punto dato <span class="math notranslate nohighlight">\(Q\)</span> ortogonali a un vettore <span class="math notranslate nohighlight">\(\overrightarrow{n}\)</span> che indica la direzione normale al piano <span class="math notranslate nohighlight">\(\pi\)</span>. Usando le proprietà del prodotto scalare,</p>
 <div class="math notranslate nohighlight">
 \[(P-Q) \cdot \overrightarrow{n} = 0 \ .\]</div>
-<p>Usando un sistema di coordinate cartesiane, si può trovare l’equazione</p>
+<p>Usando un sistema di coordinate cartesiane, si può trovare l’equazione implicita del piano <span class="math notranslate nohighlight">\(\pi\)</span>,</p>
 <div class="math notranslate nohighlight">
-\[(x - x_Q) n_x + (y - y_Q) n_y + (z - z_Q) n_z = 0 \ .\]</div>
+\[\pi: \ (x - x_Q) n_x + (y - y_Q) n_y + (z - z_Q) n_z = 0 \ .\]</div>
+<p><strong>Osservazione.</strong> L’equazione implicita del piano è independente dal modulo del vettore <span class="math notranslate nohighlight">\(\vec{n}\)</span>, poiché rappresenterebbe un ininfluente fattore moltiplicativo (diverso da zero) nel termine di sinistra quando uguagliato a zero.</p>
+<p>Partendo dalla prima definizione, si possono ricavare le equazioni parametriche del piano. Dato il vettore <span class="math notranslate nohighlight">\(\vec{n}\)</span>, si possono trovare due vettori <span class="math notranslate nohighlight">\(\vec{t}_1\)</span>, <span class="math notranslate nohighlight">\(\vec{t}_2\)</span> a esso ortogonali,</p>
+<div class="math notranslate nohighlight">
+\[\vec{t} \cdot \vec{n} = 0 \ .\]</div>
+<p>Se i due vettori non sono tra di loro allineati, o meglio proporzionali, è possibile descrivere tutti i punti del piano come una loro combinazione lineare</p>
+<div class="math notranslate nohighlight">
+\[\pi: \ P = Q + \lambda_1 \vec{t}_1 + \lambda_2 \vec{t}_2 \ .\]</div>
+<div class="section" id="distanza-punto-piano">
+<h2>Distanza punto-piano<a class="headerlink" href="#distanza-punto-piano" title="Permalink to this heading">#</a></h2>
+<p>Dato un punto <span class="math notranslate nohighlight">\(A\)</span> e un piano <span class="math notranslate nohighlight">\(\pi\)</span>, di cui sono noti un punto <span class="math notranslate nohighlight">\(Q\)</span> e il vettore normale <span class="math notranslate nohighlight">\(\vec{n}\)</span>, la distanza di <span class="math notranslate nohighlight">\(A\)</span> da <span class="math notranslate nohighlight">\(\pi\)</span> può essere calcolata come il valore assoluto della proiezione del vettore <span class="math notranslate nohighlight">\(A-Q\)</span> lungo la direzione normale al piano, individuata da <span class="math notranslate nohighlight">\(\vec{n}\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\text{dist}(A,\pi) = \left| \hat{n} \cdot (A-Q) \right| \ ,\]</div>
+<p>avendo usato il vettore unitario <span class="math notranslate nohighlight">\(\hat{n} = \frac{\vec{n}}{|\vec{n}|}\)</span> per la proiezione.</p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -482,6 +514,20 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distanza-punto-piano">Distanza punto-piano</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

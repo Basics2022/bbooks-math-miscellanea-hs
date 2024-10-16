@@ -210,6 +210,14 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Trigonometria</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../trigonometry.html">Trigonometria</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Esponenziale e logaritmo</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../exponential_logarithm.html">Esponenziale e logaritmo</a></li>
+</ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Serie e successioni</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../series.html">Serie e successioni</a></li>
@@ -417,6 +425,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equazione-della-retta">Equazione della retta</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distanza-punto-retta">Distanza punto-retta</a></li>
 </ul>
             </nav>
         </div>
@@ -434,8 +443,18 @@ document.write(`
 <h2>Equazione della retta<a class="headerlink" href="#equazione-della-retta" title="Permalink to this heading">#</a></h2>
 <p><strong>Forma parametrica</strong></p>
 <div class="math notranslate nohighlight">
-\[P = Q + \lambda \, \vec{v} \ .\]</div>
+\[r: \P = Q + \lambda \, \vec{v} \ .\]</div>
 <p><strong>…</strong> Intersezione tra due piani</p>
+</div>
+<div class="section" id="distanza-punto-retta">
+<h2>Distanza punto-retta<a class="headerlink" href="#distanza-punto-retta" title="Permalink to this heading">#</a></h2>
+<p>Dato un punto <span class="math notranslate nohighlight">\(A\)</span> e una retta <span class="math notranslate nohighlight">\(r\)</span>, di cui sono noti un punto <span class="math notranslate nohighlight">\(Q\)</span> e il vettore <span class="math notranslate nohighlight">\(\vec{v}\)</span>, la distanza di <span class="math notranslate nohighlight">\(A\)</span> da <span class="math notranslate nohighlight">\(r\)</span> può essere calcolata come il valore assoluto della proiezione del vettore <span class="math notranslate nohighlight">\(A-Q\)</span> in direzione ortogonale alla direzione della retta, individuata da <span class="math notranslate nohighlight">\(\vec{v}\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\text{dist}(A,r) &amp; = \left| (A-Q) - \hat{v} \ \hat{v} \cdot (A-Q) \right| = \\ ,
+                 &amp; = \left| \hat{v} \times (A-Q) \right| = \\ ,
+\end{aligned}\end{split}\]</div>
+<p>avendo usato il vettore unitario <span class="math notranslate nohighlight">\(\hat{v} = \frac{\vec{v}}{|\vec{v}|}\)</span> per la proiezione.</p>
 </div>
 </div>
 
@@ -503,6 +522,7 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equazione-della-retta">Equazione della retta</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distanza-punto-retta">Distanza punto-retta</a></li>
 </ul>
   </nav></div>
 

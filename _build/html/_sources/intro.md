@@ -1,8 +1,10 @@
 (book:math-hs-miscellanea)=
 # Matematica per il triennio delle scuole superiori
 
+<span style="color:red">
 Questo libro potrebbe diventare la **landing page** per la matematica delle scuole superiori. 
 Per ora colleziona gli argomenti di matematica delle scuole superiori. L'organizzazione migliore verrà decisa in un secondo momento.
+</span>
 
 ## Obiettivi
 - Descrizione dello spazio e di oggetti (matematici e fisici) nello spazio
