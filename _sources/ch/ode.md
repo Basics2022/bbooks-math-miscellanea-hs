@@ -47,7 +47,7 @@ x_o(t) & = C_1 e^{s_1 t } + C_2 e^{s_2 t} = \\
 
 con le costanti di integrazione complesse coniugate,
 
-$$C_1 = C_2^* = (A + i B)^* = A - i B$$
+$$C_1 = C_2^* = (A - i B)^* = A + i B$$
 
 al fine di avere una soluzione reale. Ricordando che la somma di un numero complesso e del suo coniugato vale due volte la parte reale,
 
@@ -55,13 +55,13 @@ $$w + w^* = (u+iv) + (u+iv)^* = u+iv + u - i v = 2 u = 2 \text{Re}\{w\}$$
 
 si può riscrivere la soluzione dell'equazione omogenea
 
-$$x_o(t) = 2 \left[ A \cos ( \omega t ) - B \sin (\omega t ) \right] $$
+$$x_o(t) = 2 \left[ A \cos ( \omega t ) + B \sin (\omega t ) \right] $$
 
 avendo riconosciuto 
 
 $$\begin{aligned}
-  \text{Re}\{C_2 e^{i \omega t}\} &= \text{Re}\{ (A + i B)(\cos(\omega t) + i \sin(\omega t)\} = \\
-  \text{Re}\{ A \cos(\omega t) - B \sin (\omega t) + i \left[ A \sin (\omega t) + B \cos (\omega t) \right]\} \ .
+  \text{Re}\{C_2 e^{i \omega t}\} &= \text{Re}\{ (A - i B)(\cos(\omega t) + i \sin(\omega t)\} = \\
+  \text{Re}\{ A \cos(\omega t) + B \sin (\omega t) + i \left[ A \sin (\omega t) - B \cos (\omega t) \right]\} \ .
 \end{aligned}$$
 
 
