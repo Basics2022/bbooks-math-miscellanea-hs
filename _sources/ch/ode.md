@@ -42,7 +42,7 @@ $$s_{1,2} = \sigma \mp i \omega$$
 
 $$\begin{aligned}
 x_o(t) & = C_1 e^{s_1 t } + C_2 e^{s_2 t} = \\
-       & = e^{\sigma t} \left( C_1 e^{-i \omega t } + C_2 e^{i \omega t} \right) = \\
+       & = e^{\sigma t} \left( C_1 e^{-i \omega t } + C_2 e^{i \omega t} \right) \ ,
 \end{aligned}$$
 
 con le costanti di integrazione complesse coniugate,
@@ -61,7 +61,7 @@ avendo riconosciuto
 
 $$\begin{aligned}
   \text{Re}\{C_2 e^{i \omega t}\} &= \text{Re}\{ (A - i B)(\cos(\omega t) + i \sin(\omega t)\} = \\
-  \text{Re}\{ A \cos(\omega t) + B \sin (\omega t) + i \left[ A \sin (\omega t) - B \cos (\omega t) \right]\} \ .
+  & = \text{Re}\{ A \cos(\omega t) + B \sin (\omega t) + i \left[ A \sin (\omega t) - B \cos (\omega t) \right]\} \ .
 \end{aligned}$$
 
 
