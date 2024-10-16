@@ -2,23 +2,23 @@
 # Sistemi di coordinate
 
 ## Esempi
+**Sistema di coordinate cartesiane ortonormale.** $(x, y)$
 
-### Coordinate cartesiane
-$$(x, y)$$
-
-### Coordinate polari
-$$(r, \theta)$$
+**Sistema di coordinate polari.** $(r, \theta)$. La legge di trasformazione delle coordinate tra un sistema di coordinate cartesiane ortonormale e un sistema di coordinate polari, con la stessa origine e l'asse $x$ come direzione di riferimento per la misura dell'angolo $\theta$ è
 
 $$\begin{cases}
   x = r \cos \theta \\
-  y = r \sin \theta
+  y = r \sin \theta \ .
 \end{cases}$$
+
+**todo.** Aggiungere immagine
 
 ## Trasformazione di coordinate
 
-### Trasformazione delle coordiante di due sistemi cartesiani
+Vengono discusse alcune leggi di trasformazione tra le coordinate di diversi sistemi di coordinate.
 
-#### Traslazione dell'origine
+
+**Traslazione dell'origine di due sistemi cartesiani con assi allineati.**
 
 $$\begin{cases}
   x' = x - x_{O'} \\
@@ -27,7 +27,7 @@ $$\begin{cases}
 
 $$\underline{x}' = \underline{x} - \underline{x}_{O'}$$
 
-#### Rotazione degli assi
+**Rotazione degli assi di due sistemi cartesiani con stessa origine.**
 
 $$\begin{cases}
   x' = x \cos \theta + y \sin \theta \\
@@ -36,9 +36,9 @@ $$\begin{cases}
 
 $$\underline{x}' = R \underline{x}$$
 
-#### Traslazione dell'origine e rotazione degli assi
+**Traslazione dell'origine e rotazione degli assi di due sistemi di coordinate cartesiane.**
 
-**TODO** *L'ordine delle trasformazioni è importante*
+**todo** *L'ordine delle trasformazioni è importante*
 
 $$ x \rightarrow T \rightarrow x' \rightarrow R \rightarrow x''$$
 $$\begin{aligned}

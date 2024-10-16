@@ -1,9 +1,15 @@
+```{article-info}
+:author: basics
+:date: "{sub-ref}`today`"
+:read-time: "{sub-ref}`wordcount-minutes` min read"
+```
+
 (geometry:analytic:euclidean-space)=
 # Spazio euclideo
 
 **Approccio storico-applicativo**
 - *Elementi di Euclide*: formulazione assiomatica della geometria, partendo dalla definizione di concetti primitivi e postulati (5), viene sviluppata la teoria in teoremi e corollari, tramite un procedimento deduttivo.
-- Qualitativamente, la geometria di Euclide corrisponde alla concezione quotidiana dello spazio nel quale viviamo.
+- Qualitativamente, la geometria di Euclide corrisponde alla concezione quotidiana dello spazio nel quale viviamo. Lo spazio euclideo fornisce il modello di spazio per la meccanica di Newton, formulata nel XVII secolo, e che rimane un ottimo modello ampiamente usato tutt'oggi per l'evoluzione di sistemi con dimensioni caratteristiche sufficientemente maggiori della scala atomica, e velocità caratteristiche sufficientemente minori della velocità della luce.
 - Una definizione più moderna di uno spazio euclideo si basa sulle traslazioni (**todo** citare Bowen, *Introduction to tensors and vectors*). Sia $E$ un insieme di elementi, definiti **punti**, e $V$ lo spazio vettoriale (**todo** riferimento al capitolo sui vettori) delle traslazioni, $E$ viene definito uno spazio euclideo se esiste una funzione $f: E \times E \rightarrow V$ che associa a due punti dell'insieme $E$ uno e un solo vettore traslazione $v \in V$ tale che
   1. $f(x,y) = f(x,z) + f(z,y)$ per ogni $ x, y, z \in E$
   2. per $\forall x \in E$, $v \in V$, $\exists ! \, y \in E$ tale che $f(x,y) = v$
@@ -24,4 +30,4 @@
 
      ossia si può usare il **teorema di Pitagora** per il calcolo delle distanze.
 
-
+- **todo** cenni a spazi/geometrie non euclidee: esempi, e criteri "avanzati" per la definizione (basati su curvatura, geodesiche,...), e conseguenze,...
