@@ -433,15 +433,34 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="spazio-euclideo">
 <span id="geometry-analytic-euclidean-space"></span><h1>Spazio euclideo<a class="headerlink" href="#spazio-euclideo" title="Permalink to this heading">#</a></h1>
-<p><strong>Introduzione storica.</strong></p>
-<ul class="simple">
+<p><strong>Approccio storico-applicativo</strong></p>
+<ul>
 <li><p><em>Elementi di Euclide</em>: formulazione assiomatica della geometria, partendo dalla definizione di concetti primitivi e postulati (5), viene sviluppata la teoria in teoremi e corollari, tramite un procedimento deduttivo.</p></li>
 <li><p>Qualitativamente, la geometria di Euclide corrisponde alla concezione quotidiana dello spazio nel quale viviamo.</p></li>
-<li><p>Una definizione più moderna di uno spazio euclideo si basa sulle traslazioni (<strong>todo</strong> citare Bowen, <em>introduction to tensors and vectors</em>). Sia <span class="math notranslate nohighlight">\(E\)</span> un insieme di elementi, definiti <strong>punti</strong>, e <span class="math notranslate nohighlight">\(V\)</span> lo spazio vettoriale (<strong>todo</strong> riferimento al capitolo sui vettori) delle traslazioni, <span class="math notranslate nohighlight">\(E\)</span> viene definito uno spazio euclideo se esiste una funzione <span class="math notranslate nohighlight">\(f: E \times E \rightarrow V\)</span> che associa a due punti dell’insieme <span class="math notranslate nohighlight">\(E\)</span> uno e un solo vettore traslazione <span class="math notranslate nohighlight">\(v \in V\)</span> tale che</p>
+<li><p>Una definizione più moderna di uno spazio euclideo si basa sulle traslazioni (<strong>todo</strong> citare Bowen, <em>Introduction to tensors and vectors</em>). Sia <span class="math notranslate nohighlight">\(E\)</span> un insieme di elementi, definiti <strong>punti</strong>, e <span class="math notranslate nohighlight">\(V\)</span> lo spazio vettoriale (<strong>todo</strong> riferimento al capitolo sui vettori) delle traslazioni, <span class="math notranslate nohighlight">\(E\)</span> viene definito uno spazio euclideo se esiste una funzione <span class="math notranslate nohighlight">\(f: E \times E \rightarrow V\)</span> che associa a due punti dell’insieme <span class="math notranslate nohighlight">\(E\)</span> uno e un solo vettore traslazione <span class="math notranslate nohighlight">\(v \in V\)</span> tale che</p>
 <ol class="arabic simple">
-<li><p><span class="math notranslate nohighlight">\(f(x,y) = f(x,z) + f(z,y) \qquad , \qquad x, y, z \in E\)</span></p></li>
-<li><p>per <span class="math notranslate nohighlight">\(\forall x \in E\)</span>, <span class="math notranslate nohighlight">\(v in V\)</span>, <span class="math notranslate nohighlight">\(\exists ! y \in E\)</span> tale che <span class="math notranslate nohighlight">\(f(x,y) = v\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x,y) = f(x,z) + f(z,y)\)</span> per ogni <span class="math notranslate nohighlight">\( x, y, z \in E\)</span></p></li>
+<li><p>per <span class="math notranslate nohighlight">\(\forall x \in E\)</span>, <span class="math notranslate nohighlight">\(v \in V\)</span>, <span class="math notranslate nohighlight">\(\exists ! \, y \in E\)</span> tale che <span class="math notranslate nohighlight">\(f(x,y) = v\)</span></p></li>
 </ol>
+</li>
+<li><p><strong>todo</strong> Dato uno spazio euclideo, si può usare un punto <span class="math notranslate nohighlight">\(O\)</span>  chiamato <strong>origine</strong>, per definire uno spazio vettoriale associando ogni punto <span class="math notranslate nohighlight">\(P\)</span> dello spazio euclideo <span class="math notranslate nohighlight">\(E\)</span> al vettore traslazione <span class="math notranslate nohighlight">\(\vec{v} = P - O \in V\)</span> <strong>todo</strong> differenza tra spazi vettoriali e spazi affini</p></li>
+<li><p>Seguendo l’approccio di <em>Cartesio</em>, i punti di uno spazio possono essere rappresentati da un <strong>sistema di coordinate</strong> (<strong>todo</strong> coordinate: funzioni scalari definite nello spazio). <em>A volte non si riesce a rappresentare tutto lo spazio con un solo insieme di coordinate, ma servono più carte di coordinate, che si sovrappongano in alcune regioni, per poter ricavare una transizione tra due mappe differenti</em>. Il numero di coordinate necessario e sufficiente a rappresentare tutti i punti dello spazio coincide con la <strong>dimensione</strong> dello spazio. In questa maniera, ogni punto <span class="math notranslate nohighlight">\(x\)</span> in uno spazio <span class="math notranslate nohighlight">\(n\)</span>-dimensionale, <em>o in un suo sottoinsieme</em>, può essere identificato dal valore di <span class="math notranslate nohighlight">\(n\)</span> funzioni scalari definite nello spazio, definite coordinate.</p>
+<div class="math notranslate nohighlight">
+\[x(q^1, q^2, \dots, q^n) \ .\]</div>
+</li>
+<li><p>Tra le infinite scelte possibili di un sistema di coordinate, esistono alcuni sistemi particolari, i sistemi di <strong>coordinate cartesiane</strong> <strong>todo</strong> definire le coordinate cartesiane associandole alle traslazioni <span class="math notranslate nohighlight">\(\{ \hat{e}_k \}_{k=1:n}\)</span></p></li>
+<li><p>Tra i sistemi di coordinate cartesiane, i sistemi di <strong>coordinate cartesiane ortonormali</strong> sono associati a traslazioni unitarie in direzioni ortogonali tra di loro. Usando un sistema di coordinate cartesiane ortogonali, è possibile definire uno spazio euclideo come uno spazio in cui sono valide le espressioni:</p>
+<ul>
+<li><p>il prodotto interno:</p>
+<div class="math notranslate nohighlight">
+\[\vec{u} \cdot \vec{v} = \sum_k u^k v^k\]</div>
+</li>
+<li><p>la norma di un vettore (indotta dal prodotto interno), o della distanza tra due punti che definiscono il vettore <span class="math notranslate nohighlight">\(\vec{v}\)</span></p>
+<div class="math notranslate nohighlight">
+\[|\vec{u}|^2 = \vec{u} \cdot \vec{u} = \sum_k u^k u^k \ ,\]</div>
+<p>ossia si può usare il <strong>teorema di Pitagora</strong> per il calcolo delle distanze.</p>
+</li>
+</ul>
 </li>
 </ul>
 </div>
