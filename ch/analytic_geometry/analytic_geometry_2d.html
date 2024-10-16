@@ -62,6 +62,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/analytic_geometry/analytic_geometry_2d';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -429,21 +431,40 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="geometria-analitica-nel-piano">
+  <div class="sd-container-fluid sd-sphinx-override sd-p-0 sd-mt-2 sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-gx-2 sd-gy-1 docutils">
+<div class="sd-col sd-d-flex-row sd-align-minor-center docutils">
+<div class="sd-container-fluid sd-sphinx-override docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-gx-3 sd-gy-1 docutils">
+<div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
+<p class="sd-p-0 sd-m-0">basics</p>
+</div>
+<div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
+<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-calendar" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path></svg></span>Oct 17, 2024</p>
+</div>
+<div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
+<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>1 min read</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="geometria-analitica-nel-piano">
 <span id="geometry-analytic-2d"></span><h1>Geometria analitica nel piano<a class="headerlink" href="#geometria-analitica-nel-piano" title="Permalink to this heading">#</a></h1>
-<p><strong>Argomenti.</strong></p>
+<p>La geometria analitica nel piano si occupa della descrizione dello spazio bidimensionale euclideo e delle entità geometriche in esso, grazie all’uso di sistemi di coordinate <span class="math notranslate nohighlight">\((q^1, q^2)\)</span>.</p>
 <ul class="simple">
-<li><p>Sistemi di coodinate e descrizione dei punti nel piano</p></li>
-<li><p>Curve:</p>
+<li><p><strong>Sistemi di coordinate, e punti nello spazio.</strong> Vengono presentati alcuni sistemi di coordinate che risulteranno utili nello studio della geometria analitica nel piano, e le regole di trasformazione tra di esse.</p></li>
+<li><p><strong>Angoli e distanze.</strong> Viene definita la struttura di uno spazio euclideo tramite la definizione degli angoli e delle distanze usando sistemi di coordinate cartesiane ortonormali, e le definizioni di prodotto interno (<strong>todo</strong> e prodotto vettoriale?).</p></li>
+<li><p><strong>Curve.</strong> Vengono definite le curve nel piano, come relazioni tra le coordinate di un sistema di coordinate. <strong>todo</strong> <em>l’equazione di una curva rappresenta un tra la geometria e l’algebra tipico della geometria analitica.</em> Vengono poi studiate alcune curve particolari:</p>
 <ul>
-<li><p>Rette:</p>
+<li><p><strong>Rette</strong>:</p>
 <ul>
 <li><p>equazione</p></li>
-<li><p>posizione relativa punto-retta</p></li>
-<li><p>posizione relativa retta-retta</p></li>
+<li><p>posizione relativa punto-retta, distanza punto-retta, posizione relativa retta-retta</p></li>
 </ul>
 </li>
-<li><p>Coniche:</p>
+<li><p><strong>Coniche</strong>:</p>
 <ul>
 <li><p>introduzione: …motivazione della loro importanza (gravitazione, ottica,…)</p></li>
 <li><p>def, equazioni e caratteristiche</p></li>
