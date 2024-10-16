@@ -465,7 +465,7 @@ Mentre le motivazioni date dovrebbero essere sufficienti a convincere dell’imp
 <p><strong>Definizioni.</strong>
 Un’equazione differenziale ordinaria è una funzione che coinvolge una funzione reale di una variabile reale, incognita, e le sue derivate. Formalmente una ODE può essere scritta come</p>
 <div class="math notranslate nohighlight">
-\[F(y^{(n)}(x), \dots y'(x), y(x), x) = 0 \ .\]</div>
+\[F(y^{(n)}(x), \dots y'(x), y(x), x) = 0 \quad , \qquad x in [x_0, x_1]\]</div>
 <p>Il <strong>grado</strong> di una ODE è l’ordine massimo della derivata che compare nell’equazione.</p>
 <p>In generale, la soluzione di una ODE di grado <span class="math notranslate nohighlight">\(n\)</span> è il risultato di <span class="math notranslate nohighlight">\(n\)</span> operazioni di integrazione che producono <span class="math notranslate nohighlight">\(n\)</span> costanti arbitrarie. Affinché un problema sia definito, sono necessarie <span class="math notranslate nohighlight">\(n\)</span> condizioni sulla funzione incognita o sulle sue derivate.</p>
 <p>Si possono definire alcuni problemi:</p>
@@ -520,6 +520,65 @@ x_o(t) &amp; = C_1 e^{s_1 t } + C_2 e^{s_2 t} = \\
 <p>e integrata con le opportune condizioni</p>
 <div class="math notranslate nohighlight">
 \[\tilde{F}(y(x)) - \tilde{F}(y(x_0)) = G(x) - G(x_0)\]</div>
+<p><strong>Esempi</strong></p>
+<ul class="simple">
+<li><p>Moto rettilineo in un campo di forze costante e uniforme</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[m \ddot{x} = f =: m g\]</div>
+<p>L’integrazione produce</p>
+<div class="math notranslate nohighlight">
+\[x(t) = \frac{1}{2} g t^2 + v_0 t + x_0\]</div>
+<ul class="simple">
+<li><p>Moto di un corpo in un campo di forze costante e uniforme e forza viscosa (lineare e quadratica)</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+m \dot{v} = f + f^{visc} \\
+\dot{x} = v
+\end{cases}\end{split}\]</div>
+<p><strong>resistenza proporzionale alla velocità</strong>
+$<span class="math notranslate nohighlight">\(\begin{cases}
+m \dot{v} + c v = mg \\
+\dot{x} = v
+\end{cases}\)</span>$</p>
+<p><strong>resistenza proporzionale al quadrato della velocità</strong>
+$<span class="math notranslate nohighlight">\(\begin{cases}
+m \dot{v} + \frac{1}{2} \rho S c_x v^2 = mg \\
+\dot{x} = v
+\end{cases}\)</span>$</p>
+<ul class="simple">
+<li><p>Temperatura della testa di una termocoppia</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\dot{E} = \dot{Q} \ ,\]</div>
+<p>con <span class="math notranslate nohighlight">\(E = m c T\)</span>, <span class="math notranslate nohighlight">\(\dot{Q} = h (T_e - T)\)</span></p>
+<div class="math notranslate nohighlight">
+\[m c \dot{T} + h T = h T_e\]</div>
+<ul class="simple">
+<li><p>Distribuzione della temperatura, in un caso stazionario</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[(k T')' = \rho r\]</div>
+<ul class="simple">
+<li><p>Sistema massa-molla-smorzatore, libero e forzato (<strong>todo</strong> risonanza)</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[m \ddot{x} + c \dot{x} + k x = f\]</div>
+<ul class="simple">
+<li><p>Circuiti RLC (analogia formale con sistema MMS)</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(\dots\)</span></p>
+<ul class="simple">
+<li><p>Deformazione a trazione di una trave</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[(EA u')' = f\]</div>
+<ul class="simple">
+<li><p>Deformazione a flessione di una trave</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[(EJ w'')'' = f\]</div>
 </div>
 
     <script type="text/x-thebe-config">

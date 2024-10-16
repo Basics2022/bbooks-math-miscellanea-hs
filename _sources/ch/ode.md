@@ -22,7 +22,7 @@ Si cercherà quindi di trattare l'argomento nella maniera più rigorosa possibil
 **Definizioni.**
 Un'equazione differenziale ordinaria è una funzione che coinvolge una funzione reale di una variabile reale, incognita, e le sue derivate. Formalmente una ODE può essere scritta come
 
-$$F(y^{(n)}(x), \dots y'(x), y(x), x) = 0 \ .$$
+$$F(y^{(n)}(x), \dots y'(x), y(x), x) = 0 \quad , \qquad x in [x_0, x_1]$$
 
 Il **grado** di una ODE è l'ordine massimo della derivata che compare nell'equazione.
 
@@ -75,7 +75,6 @@ $$\begin{aligned}
 \end{aligned}$$
 
 
-
 **Equazioni separabili: tecnica di soluzione di separazione delle variabili.**
 
 $$\frac{d y}{d x} = f(y(x)) \ g(x) $$
@@ -87,3 +86,59 @@ $$\dfrac{dy}{f(y)} = g(x) \ d x $$
 e integrata con le opportune condizioni 
 
 $$\tilde{F}(y(x)) - \tilde{F}(y(x_0)) = G(x) - G(x_0)$$
+
+**Esempi**
+- Moto rettilineo in un campo di forze costante e uniforme
+
+$$m \ddot{x} = f =: m g$$
+
+L'integrazione produce
+
+$$x(t) = \frac{1}{2} g t^2 + v_0 t + x_0$$
+
+- Moto di un corpo in un campo di forze costante e uniforme e forza viscosa (lineare e quadratica)
+
+$$\begin{cases}
+m \dot{v} = f + f^{visc} \\
+\dot{x} = v
+\end{cases}$$
+
+**resistenza proporzionale alla velocità**
+$$\begin{cases}
+m \dot{v} + c v = mg \\
+\dot{x} = v
+\end{cases}$$
+
+**resistenza proporzionale al quadrato della velocità**
+$$\begin{cases}
+m \dot{v} + \frac{1}{2} \rho S c_x v^2 = mg \\
+\dot{x} = v
+\end{cases}$$
+
+- Temperatura della testa di una termocoppia
+
+$$\dot{E} = \dot{Q} \ ,$$
+
+con $E = m c T$, $\dot{Q} = h (T_e - T)$
+
+$$m c \dot{T} + h T = h T_e$$
+
+- Distribuzione della temperatura, in un caso stazionario
+
+$$(k T')' = \rho r$$
+
+- Sistema massa-molla-smorzatore, libero e forzato (**todo** risonanza)
+
+$$m \ddot{x} + c \dot{x} + k x = f$$
+
+- Circuiti RLC (analogia formale con sistema MMS)
+
+$\dots$
+
+- Deformazione a trazione di una trave
+
+$$(EA u')' = f$$
+
+- Deformazione a flessione di una trave
+
+$$(EJ w'')'' = f$$
