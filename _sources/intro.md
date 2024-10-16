@@ -1,6 +1,8 @@
 (book:math-hs-miscellanea)=
 # Matematica per il triennio delle scuole superiori
 
+Questo libro fa parte del materiale pensato per [le scuole superiori](https://basics2022.github.io/bbooks-hs)
+
 <span style="color:red">
 Questo libro potrebbe diventare la **landing page** per la matematica delle scuole superiori. 
 Per ora colleziona gli argomenti di matematica delle scuole superiori. L'organizzazione migliore verrà decisa in un secondo momento.
