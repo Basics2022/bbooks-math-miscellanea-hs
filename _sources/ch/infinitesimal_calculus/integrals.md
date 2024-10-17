@@ -6,7 +6,7 @@
 
 **Somma di Riemann.** Data una funzione continua $f: [a,b] \rightarrow \mathbb{R}$ e $P = \{ x_0, x_1, \dots x_n | a = x_0 < x_1 < \dots < x_n = b \}$ partizione dell'intervallo $[a,b]$, la somma di Riemann viene definita come
 
-$$\sigma_P = \sum_{k=1}^{n} f(\xi_k) (x_{k} - x_{k-1}) \ ,$$
+$$\sigma_P = \sum_{k=1}^{n} f(\xi_k) (x_{k} - x_{k-1}) \ ,$$ (infinitesimal-calculus:integrals:riemann:sum)
 
 con $\xi_k \in [x_{k-1}, x_k]$.
 
@@ -14,7 +14,7 @@ con $\xi_k \in [x_{k-1}, x_k]$.
 
 Sia $\Delta x = \max_k (x_{k} - x_{k-1})$, l'integrale definitio di Riemann è definito come il limite per $\Delta x \rightarrow 0$ della somma di Riemann $\sigma$
 
-$$\int_a^b f(x) \ dx = \lim_{\Delta x \rightarrow 0} \sigma_P \ .$$
+$$\int_a^b f(x) \ dx = \lim_{\Delta x \rightarrow 0} \sigma_P \ .$$ (infinitesimal-calculus:integrals:riemann:def)
 
 **Osservazione.** Dato l'intervallo $[a,b]$, per $\Delta x \rightarrow 0$ il numero di intervalli della partizione tende all'infinito, $n \rightarrow \infty$.
 
@@ -28,12 +28,23 @@ corrisponde al valore dell'**area con segno** tra il grafico della funzione $y=f
 (infinitesimal-calculus:integrals:def:definite)=
 ### Integrale definito
 (infinitesimal-calculus:integrals:def:definite:prop)=
+
 #### Proprietà dell'integrale definito
 (infinitesimal-calculus:integrals:def:indefinite)=
 
-$$\int_a^b \big( \alpha f(x) + \beta g(x) \big) \ dx = \alpha \int_a^b f(x) \ dx + \beta \int_a^b g(x) \ dx \ .$$
+Dalla definizione {eq}`` dell'integrale di Riemann seguono immediatamente le seguenti proprietà:
 
-$$\int_a^b f(x) \ dx + \int_b^c f(x) \ dx = \int_a^c f(x) \ dx \ .$$
+- linearità dell'integrale definito
+
+$$\int_a^b \big( \alpha f(x) + \beta g(x) \big) \ dx = \alpha \int_a^b f(x) \ dx + \beta \int_a^b g(x) \ dx \ ,$$
+
+- additività sull'intervallo
+
+$$\int_a^b f(x) \ dx + \int_b^c f(x) \ dx = \int_a^c f(x) \ dx \ ,$$
+
+- valore assoluto dell'integrale è minore dell'integrale del valore assoluto
+
+$$\left| \int_a^b f(x) \ dx \right| \le \int_a^b | f(x) | \ dx \ ,$$
 
 ### Integrale indefinito
 Usando la proprietà dell'integrale definito,
