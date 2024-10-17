@@ -10,9 +10,7 @@ $$\sigma_P = \sum_{k=1}^{n} f(\xi_k) (x_{k} - x_{k-1}) \ ,$$ (infinitesimal-calc
 
 con $\xi_k \in [x_{k-1}, x_k]$.
 
-**Integrale di Riemann.**
-
-Sia $\Delta x = \max_k (x_{k} - x_{k-1})$, l'integrale definitio di Riemann è definito come il limite per $\Delta x \rightarrow 0$ della somma di Riemann $\sigma$
+**Integrale di Riemann.** Sia $\Delta x = \max_k (x_{k} - x_{k-1})$, l'integrale definito di Riemann è  il limite per $\Delta x \rightarrow 0$ della somma di Riemann $\sigma$
 
 $$\int_a^b f(x) \ dx = \lim_{\Delta x \rightarrow 0} \sigma_P \ .$$ (infinitesimal-calculus:integrals:riemann:def)
 
@@ -21,7 +19,7 @@ $$\int_a^b f(x) \ dx = \lim_{\Delta x \rightarrow 0} \sigma_P \ .$$ (infinitesim
 ### Interpretazione geometrica
 L'integrale definito 
 
-$$\int_{a}^{b} f(x) \, dx \ .$$
+$$\int_{a}^{b} f(x) \, dx \ ,$$
 
 corrisponde al valore dell'**area con segno** tra il grafico della funzione $y=f(x)$ e l'asse $x$, per valori di $x \in [a,b]$. Se la funzione è positiva in un intervallo, il contributo dell'integrale sull'intervallo è positivo; se la funzione è negativa in un intervallo, il contributo dell'integrale sull'intervallo è negativo.
 
@@ -69,26 +67,40 @@ $$\begin{aligned}
 
 e che questo risultato è indipendente dal valore $c$, usato come parametro nella definizione della funzione $F$. 
 
-**todo** *Definizione di primitiva*
+Data una funzione $f(x)$, le due funzioni $F(x;a_1)$, $F(x;a_2)$ differiscono solo di un termine che dipende dai parametri $a_1$, $a_2$ ma non dalla variabile indipendente $x$. La famiglia di funzioni $F(x;a)$ ottenuta per ogni valore di $a$ definisce quindi una funzione $F(x)$ a meno di una costante additiva, la **funzione primitiva** della funzione $f(x)$.
 
-$$\int^x f(t) \ dt = F(x) + C$$
+L'**integrale indefinito** di una funzione $f(x)$ viene definito come,
+
+$$\int^x f(t) \ dt = F(x) + C \ ,$$
+
+dove la costante additiva $C$ tiene conto dell'arbitrarietà appena discussa.
 
 
-
+(infinitesimal-calculus:derivatives:thm)=
 ## Teoremi
+
+<!--
 (infinitesimal-calculus:derivatives:thm:avg)=
 ### Teorema della media
+-->
+```{prf:theorem} Teorema della media
+
 **Enunciato.** Sia $f: [a,b] \in \mathbb{R} \rightarrow \mathbb{R}$ una funzione continua su $[a,b]$, allora esiste $c \in [a,b]$ tale che
 
 $$\int_{a}^{b} f(x) dx = (b-a) f(c) $$
-
+```
 **Dim.**
 
+<!--
 (infinitesimal-calculus:derivatives:thm:fund)=
 ### Teorema fondamentale del calcolo integrale
+-->
 **Enunciato.**
+```{prf:theorem} Teorema fondamentale del calcolo infinitesimale
 
 $$\dfrac{d}{dx} \int_{a}^{x} f(y) dy = f(x) $$
+
+```
 
 **Dim.** Usando la [definizione di derivata](infinitesimal-calculus:derivatives:def), le [proprietà dell'integrale definito](infinitesimal-calculus:integrals:def:definite:prop) e il [teorema della media](infinitesimal-calculus:derivatives:thm:avg),
 

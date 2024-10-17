@@ -34,6 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/style.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
@@ -436,11 +437,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integrale-indefinito">Integrale indefinito</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoremi">Teoremi</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-della-media">Teorema della media</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-fondamentale-del-calcolo-integrale">Teorema fondamentale del calcolo integrale</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoremi">Teoremi</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-fondamentali">Integrali fondamentali</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regole-di-integrazione">Regole di integrazione</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integrazione-per-parti">Integrazione per parti</a></li>
@@ -466,8 +463,7 @@ document.write(`
 <div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-integrals-riemann-sum">
 <span class="eqno">(1)<a class="headerlink" href="#equation-infinitesimal-calculus-integrals-riemann-sum" title="Permalink to this equation">#</a></span>\[\sigma_P = \sum_{k=1}^{n} f(\xi_k) (x_{k} - x_{k-1}) \ ,\]</div>
 <p>con <span class="math notranslate nohighlight">\(\xi_k \in [x_{k-1}, x_k]\)</span>.</p>
-<p><strong>Integrale di Riemann.</strong></p>
-<p>Sia <span class="math notranslate nohighlight">\(\Delta x = \max_k (x_{k} - x_{k-1})\)</span>, l’integrale definitio di Riemann è definito come il limite per <span class="math notranslate nohighlight">\(\Delta x \rightarrow 0\)</span> della somma di Riemann <span class="math notranslate nohighlight">\(\sigma\)</span></p>
+<p><strong>Integrale di Riemann.</strong> Sia <span class="math notranslate nohighlight">\(\Delta x = \max_k (x_{k} - x_{k-1})\)</span>, l’integrale definito di Riemann è  il limite per <span class="math notranslate nohighlight">\(\Delta x \rightarrow 0\)</span> della somma di Riemann <span class="math notranslate nohighlight">\(\sigma\)</span></p>
 <div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-integrals-riemann-def">
 <span class="eqno">(2)<a class="headerlink" href="#equation-infinitesimal-calculus-integrals-riemann-def" title="Permalink to this equation">#</a></span>\[\int_a^b f(x) \ dx = \lim_{\Delta x \rightarrow 0} \sigma_P \ .\]</div>
 <p><strong>Osservazione.</strong> Dato l’intervallo <span class="math notranslate nohighlight">\([a,b]\)</span>, per <span class="math notranslate nohighlight">\(\Delta x \rightarrow 0\)</span> il numero di intervalli della partizione tende all’infinito, <span class="math notranslate nohighlight">\(n \rightarrow \infty\)</span>.</p>
@@ -475,7 +471,7 @@ document.write(`
 <h3>Interpretazione geometrica<a class="headerlink" href="#interpretazione-geometrica" title="Permalink to this heading">#</a></h3>
 <p>L’integrale definito</p>
 <div class="math notranslate nohighlight">
-\[\int_{a}^{b} f(x) \, dx \ .\]</div>
+\[\int_{a}^{b} f(x) \, dx \ ,\]</div>
 <p>corrisponde al valore dell’<strong>area con segno</strong> tra il grafico della funzione <span class="math notranslate nohighlight">\(y=f(x)\)</span> e l’asse <span class="math notranslate nohighlight">\(x\)</span>, per valori di <span class="math notranslate nohighlight">\(x \in [a,b]\)</span>. Se la funzione è positiva in un intervallo, il contributo dell’integrale sull’intervallo è positivo; se la funzione è negativa in un intervallo, il contributo dell’integrale sull’intervallo è negativo.</p>
 </div>
 <div class="section" id="integrale-definito">
@@ -521,26 +517,39 @@ document.write(`
                          &amp; = F(b;c) - F(a;c) \ ,
 \end{aligned}\end{split}\]</div>
 <p>e che questo risultato è indipendente dal valore <span class="math notranslate nohighlight">\(c\)</span>, usato come parametro nella definizione della funzione <span class="math notranslate nohighlight">\(F\)</span>.</p>
-<p><strong>todo</strong> <em>Definizione di primitiva</em></p>
+<p>Data una funzione <span class="math notranslate nohighlight">\(f(x)\)</span>, le due funzioni <span class="math notranslate nohighlight">\(F(x;a_1)\)</span>, <span class="math notranslate nohighlight">\(F(x;a_2)\)</span> differiscono solo di un termine che dipende dai parametri <span class="math notranslate nohighlight">\(a_1\)</span>, <span class="math notranslate nohighlight">\(a_2\)</span> ma non dalla variabile indipendente <span class="math notranslate nohighlight">\(x\)</span>. La famiglia di funzioni <span class="math notranslate nohighlight">\(F(x;a)\)</span> ottenuta per ogni valore di <span class="math notranslate nohighlight">\(a\)</span> definisce quindi una funzione <span class="math notranslate nohighlight">\(F(x)\)</span> a meno di una costante additiva, la <strong>funzione primitiva</strong> della funzione <span class="math notranslate nohighlight">\(f(x)\)</span>.</p>
+<p>L’<strong>integrale indefinito</strong> di una funzione <span class="math notranslate nohighlight">\(f(x)\)</span> viene definito come,</p>
 <div class="math notranslate nohighlight">
-\[\int^x f(t) \ dt = F(x) + C\]</div>
+\[\int^x f(t) \ dt = F(x) + C \ ,\]</div>
+<p>dove la costante additiva <span class="math notranslate nohighlight">\(C\)</span> tiene conto dell’arbitrarietà appena discussa.</p>
 </div>
 </div>
 <div class="section" id="teoremi">
-<h2>Teoremi<a class="headerlink" href="#teoremi" title="Permalink to this heading">#</a></h2>
-<div class="section" id="teorema-della-media">
-<span id="infinitesimal-calculus-derivatives-thm-avg"></span><h3>Teorema della media<a class="headerlink" href="#teorema-della-media" title="Permalink to this heading">#</a></h3>
+<span id="infinitesimal-calculus-derivatives-thm"></span><h2>Teoremi<a class="headerlink" href="#teoremi" title="Permalink to this heading">#</a></h2>
+<!--
+(infinitesimal-calculus:derivatives:thm:avg)=
+### Teorema della media
+-->
+<div class="proof theorem admonition" id="theorem-0">
+<p class="admonition-title"><span class="caption-number">Theorem 1 </span> (Teorema della media)</p>
+<div class="theorem-content section" id="proof-content">
 <p><strong>Enunciato.</strong> Sia <span class="math notranslate nohighlight">\(f: [a,b] \in \mathbb{R} \rightarrow \mathbb{R}\)</span> una funzione continua su <span class="math notranslate nohighlight">\([a,b]\)</span>, allora esiste <span class="math notranslate nohighlight">\(c \in [a,b]\)</span> tale che</p>
 <div class="math notranslate nohighlight">
 \[\int_{a}^{b} f(x) dx = (b-a) f(c) \]</div>
-<p><strong>Dim.</strong></p>
 </div>
-<div class="section" id="teorema-fondamentale-del-calcolo-integrale">
-<span id="infinitesimal-calculus-derivatives-thm-fund"></span><h3>Teorema fondamentale del calcolo integrale<a class="headerlink" href="#teorema-fondamentale-del-calcolo-integrale" title="Permalink to this heading">#</a></h3>
+</div><p><strong>Dim.</strong></p>
+<!--
+(infinitesimal-calculus:derivatives:thm:fund)=
+### Teorema fondamentale del calcolo integrale
+-->
 <p><strong>Enunciato.</strong></p>
+<div class="proof theorem admonition" id="theorem-1">
+<p class="admonition-title"><span class="caption-number">Theorem 2 </span> (Teorema fondamentale del calcolo infinitesimale)</p>
+<div class="theorem-content section" id="proof-content">
 <div class="math notranslate nohighlight">
 \[\dfrac{d}{dx} \int_{a}^{x} f(y) dy = f(x) \]</div>
-<p><strong>Dim.</strong> Usando la <a class="reference internal" href="derivatives.html#infinitesimal-calculus-derivatives-def"><span class="std std-ref">definizione di derivata</span></a>, le <a class="reference internal" href="#infinitesimal-calculus-integrals-def-definite-prop"><span class="std std-ref">proprietà dell’integrale definito</span></a> e il <a class="reference internal" href="#infinitesimal-calculus-derivatives-thm-avg"><span class="std std-ref">teorema della media</span></a>,</p>
+</div>
+</div><p><strong>Dim.</strong> Usando la <a class="reference internal" href="derivatives.html#infinitesimal-calculus-derivatives-def"><span class="std std-ref">definizione di derivata</span></a>, le <a class="reference internal" href="#infinitesimal-calculus-integrals-def-definite-prop"><span class="std std-ref">proprietà dell’integrale definito</span></a> e il <span class="xref myst">teorema della media</span>,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
 \dfrac{d}{dx} \int_{a}^x f(y) dy &amp; = \lim_{\varepsilon \rightarrow 0 }\frac{1}{\varepsilon} \Big[ \int_{a}^{x+\varepsilon} f(y) dy - \int_{a}^{x} f(y) dy \Big] = \\
@@ -565,10 +574,9 @@ Sia <span class="math notranslate nohighlight">\(x \in D\)</span>, e gli estremi
 &amp; =  - a'(x) \, f(a(x)) +  b'(x) \, f(b(x))  \ .
 \end{aligned}\end{split}\]</div>
 </div>
-</div>
 <div class="section" id="integrali-fondamentali">
 <span id="infinitesimal-calculus-integrals-fund"></span><h2>Integrali fondamentali<a class="headerlink" href="#integrali-fondamentali" title="Permalink to this heading">#</a></h2>
-<p>Una volta provato il <a class="reference internal" href="#infinitesimal-calculus-derivatives-thm-fund"><span class="std std-ref">teorema fondamentale del calcolo infinitesimale</span></a>, si possono definire alcuni integrali fondamentali come l’operazione inversa alla derivazione applicata alle <a class="reference internal" href="derivatives.html#infinitesimal-calculus-derivatives-fund"><span class="std std-ref">derivate fondamentali</span></a></p>
+<p>Una volta provato il <span class="xref myst">teorema fondamentale del calcolo infinitesimale</span>, si possono definire alcuni integrali fondamentali come l’operazione inversa alla derivazione applicata alle <a class="reference internal" href="derivatives.html#infinitesimal-calculus-derivatives-fund"><span class="std std-ref">derivate fondamentali</span></a></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
  \int x^n         \ dx &amp; = \frac{1}{n} x^{n+1} + C  \qquad (n \neq 0) \\ 
@@ -606,7 +614,7 @@ La regola di derivazione del prodotto <span class="math notranslate nohighlight"
 <div class="math notranslate nohighlight">
 \[\widetilde{f}(x) := \dfrac{d}{dx} \widetilde{F}(x) = \dfrac{d}{dx} F(y(x)) = 
 \dfrac{d F}{d y}(y(x)) \frac{d y}{d x}(x) =: f(y(x)) y'(x) \ .\]</div>
-<p>Usando il <a class="reference internal" href="#infinitesimal-calculus-derivatives-thm-fund"><span class="std std-ref">teorema del calcolo infinitesimale</span></a></p>
+<p>Usando il <span class="xref myst">teorema del calcolo infinitesimale</span></p>
 <p><strong>todo…</strong></p>
 </div>
 </div>
@@ -684,11 +692,7 @@ La regola di derivazione del prodotto <span class="math notranslate nohighlight"
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integrale-indefinito">Integrale indefinito</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoremi">Teoremi</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-della-media">Teorema della media</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-fondamentale-del-calcolo-integrale">Teorema fondamentale del calcolo integrale</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoremi">Teoremi</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-fondamentali">Integrali fondamentali</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regole-di-integrazione">Regole di integrazione</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integrazione-per-parti">Integrazione per parti</a></li>
