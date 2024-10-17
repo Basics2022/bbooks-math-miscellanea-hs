@@ -156,8 +156,8 @@ f(x) & = \cos x \qquad & \qquad f'(x) & =-\sin x
 ```{dropdown} Dimostrazione di $\ (\ln x)'$
 ```
 ```{dropdown} Dimostrazione di $\ (\sin x)'$
-$$\begin{aligned}
 Usando le formule di somma delle funzioni armoniche, **todo** ref, e gli infinitesimi delle funzioni $\sin x$, $\cos x$ per $x\rightarrow 0$,
+$$\begin{aligned}
   \dfrac{d}{dx} \sin(x) 
   & = \lim_{\varepsilon \rightarrow 0}  \dfrac{\sin(x+\varepsilon) - \sin x}{\varepsilon} = \\
   & = \lim_{\varepsilon \rightarrow 0} \dfrac{\sin x \cos \varepsilon + \cos x \sin \varepsilon - \sin x}{\varepsilon} = \\
@@ -168,6 +168,7 @@ Usando le formule di somma delle funzioni armoniche, **todo** ref, e gli infinit
 ```
 ```{dropdown} Dimostrazione di $\ (\cos x)'$
 Usando le formule di somma delle funzioni armoniche, **todo** ref, e gli infinitesimi delle funzioni $\sin x$, $\cos x$ per $x\rightarrow 0$,
+$$\begin{aligned}
   \dfrac{d}{dx} \cos(x) 
   & = \lim_{\varepsilon \rightarrow 0}  \dfrac{\cos(x+\varepsilon) - \cossin x}{\varepsilon} = \\
   & = \lim_{\varepsilon \rightarrow 0} \dfrac{\cos x \cos \varepsilon - \sin x \sin \varepsilon - \sin x}{\varepsilon} = \\
