@@ -40,13 +40,16 @@ $$\frac{d}{dx} f\big( g(x) \big) = \frac{d f}{dy}\Big|_{y=g(x)} \dfrac{d g}{d x}
 $$$$ (infinitesimal-calculus:derivatives:rules:inverse)
 
 ```{dropdown} Dimostrazione della linearità dell'operazione di derivazione
+**todo**
 ```
 ```{dropdown} Dimostrazione della regola del prodotto
+**todo**
 ```
 ```{dropdown} Dimostrazione della regola del quoziente
+**todo**
 ```
 ```{dropdown} Dimostrazione della regola della funzione composta
-
+**todo**
 ```
 ```{dropdown} Dimostrazione della regola della funzione inversa
 Si usa la regola di derivazione della funzione composta applicata alla relazione 
