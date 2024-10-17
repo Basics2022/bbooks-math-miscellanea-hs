@@ -429,7 +429,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definizione">Definizione</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regole">Regole</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regole-di-derivazione">Regole di derivazione</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoremi">Teoremi</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-fermat">Teorema di Fermat</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-rolle">Teorema di Rolle</a></li>
@@ -465,28 +465,41 @@ document.write(`
 <div class="section" id="definizione">
 <span id="infinitesimal-calculus-derivatives-def"></span><h2>Definizione<a class="headerlink" href="#definizione" title="Permalink to this heading">#</a></h2>
 <p><strong>Rapporto incrementale.</strong> Il rapporto incrementale di una funzione reale nel punto <span class="math notranslate nohighlight">\(x\)</span> viene definito come il rapporto tra la differenza dei valori della funzione e la differenza del valore della variabile indipendente</p>
-<div class="math notranslate nohighlight">
-\[R[f(\cdot), x, a] := \dfrac{f(x+a)-f(x)}{a} \ .\]</div>
+<div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-derivatives-def">
+<span class="eqno">(1)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-def" title="Permalink to this equation">#</a></span>\[R[f(\cdot), x, a] := \dfrac{f(x+a)-f(x)}{a} \ .\]</div>
 <p><strong>Derivata.</strong> La derivata di una funzione reale in un punto <span class="math notranslate nohighlight">\(x\)</span> viene definita come il limite del rapporto incrementale, per l’incremento della variabile indipendente che tende a zero,</p>
 <div class="math notranslate nohighlight">
 \[f'(x) = \dfrac{d f}{d x}(x) := \lim_{a \rightarrow 0} \dfrac{f(x+a)-f(x)}{a} \ .\]</div>
-<p><strong>TODO</strong> <em>In generale, la derivata di una funzione reale è un’altra funzione reale.</em></p>
+<p><strong>todo</strong> <em>In generale, la derivata di una funzione reale è un’altra funzione reale.</em></p>
 </div>
-<div class="section" id="regole">
-<span id="infinitesimal-calculus-derivatives-rules"></span><h2>Regole<a class="headerlink" href="#regole" title="Permalink to this heading">#</a></h2>
-<p><strong>Derivata della combinazione lineare di funzioni</strong> L’operatore di derivazione è un <strong>operatore lineare</strong>, cioé</p>
-<div class="math notranslate nohighlight">
-\[\big( a \, f(x) + b \, g(x) \big)' = a \, f'(x) + b \, g'(x)\]</div>
-<p><strong>Derivata del prodotto di funzioni</strong></p>
-<div class="math notranslate nohighlight">
-\[\Bigl( f(x) g(x) \Bigr)' = f'(x) g(x) + f(x) g'(x)\]</div>
-<p><strong>Derivata del quoziente di funzioni</strong></p>
-<div class="math notranslate nohighlight">
-\[\Big( \frac{f(x)}{g(x)} \Big)' = \frac{f'(x) g(x) - f(x) g'(x)}{g^2(x)}  \]</div>
-<p><strong>Derivata della funzione composta</strong></p>
-<div class="math notranslate nohighlight">
-\[\frac{d}{dx} f\big( g(x) \big) = \frac{d f}{dy}\Big|_{y=g(x)} \dfrac{d g}{d x}\Big|_{x}\]</div>
-<p><strong>Derivata della funzione inversa</strong></p>
+<div class="section" id="regole-di-derivazione">
+<span id="infinitesimal-calculus-derivatives-rules"></span><h2>Regole di derivazione<a class="headerlink" href="#regole-di-derivazione" title="Permalink to this heading">#</a></h2>
+<p>Usando la definizione <a class="reference internal" href="#equation-infinitesimal-calculus-derivatives-def">(1)</a> di derivata e le proprietà dei limiti, è possibile dimostrare le seguenti proprietà</p>
+<ul class="simple">
+<li><p>linearità</p></li>
+</ul>
+<div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-derivatives-rules-linearity">
+<span class="eqno">(2)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-rules-linearity" title="Permalink to this equation">#</a></span>\[\big( a \, f(x) + b \, g(x) \big)' = a \, f'(x) + b \, g'(x)\]</div>
+<ul class="simple">
+<li><p>derivata del prodotto di funzioni</p></li>
+</ul>
+<div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-derivatives-rules-product">
+<span class="eqno">(3)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-rules-product" title="Permalink to this equation">#</a></span>\[\Bigl( f(x) g(x) \Bigr)' = f'(x) g(x) + f(x) g'(x)\]</div>
+<ul class="simple">
+<li><p>derivata del rapporto di funzioni</p></li>
+</ul>
+<div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-derivatives-rules-division">
+<span class="eqno">(4)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-rules-division" title="Permalink to this equation">#</a></span>\[\Big( \frac{f(x)}{g(x)} \Big)' = \frac{f'(x) g(x) - f(x) g'(x)}{g^2(x)}\]</div>
+<ul class="simple">
+<li><p>derivata della funzione composta</p></li>
+</ul>
+<div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-derivatives-rules-composite">
+<span class="eqno">(5)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-rules-composite" title="Permalink to this equation">#</a></span>\[\frac{d}{dx} f\big( g(x) \big) = \frac{d f}{dy}\Big|_{y=g(x)} \dfrac{d g}{d x}\Big|_{x}\]</div>
+<ul class="simple">
+<li><p>derivata della funzione inversa</p></li>
+</ul>
+<div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-derivatives-rules-inverse">
+<span class="eqno">(6)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-rules-inverse" title="Permalink to this equation">#</a></span>\[\frac{d}{dx} f\big( g(x) \big) = \frac{d f}{dy}\Big|_{y=g(x)} \dfrac{d g}{d x}\Big|_{x}\]</div>
 </div>
 <div class="section" id="teoremi">
 <span id="infinitesimal-calculus-derivatives-thm"></span><h2>Teoremi<a class="headerlink" href="#teoremi" title="Permalink to this heading">#</a></h2>
@@ -674,7 +687,7 @@ e^{ix} &amp; = 1 + ix + \frac{(ix)^2}{2!} + \frac{(ix)^3}{3!} + \frac{(ix)^4}{4!
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definizione">Definizione</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regole">Regole</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regole-di-derivazione">Regole di derivazione</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoremi">Teoremi</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-fermat">Teorema di Fermat</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-rolle">Teorema di Rolle</a></li>

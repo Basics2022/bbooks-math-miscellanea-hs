@@ -6,34 +6,40 @@
 
 **Rapporto incrementale.** Il rapporto incrementale di una funzione reale nel punto $x$ viene definito come il rapporto tra la differenza dei valori della funzione e la differenza del valore della variabile indipendente
 
-$$R[f(\cdot), x, a] := \dfrac{f(x+a)-f(x)}{a} \ .$$
+$$R[f(\cdot), x, a] := \dfrac{f(x+a)-f(x)}{a} \ .$$ (infinitesimal-calculus:derivatives:def)
 
 **Derivata.** La derivata di una funzione reale in un punto $x$ viene definita come il limite del rapporto incrementale, per l'incremento della variabile indipendente che tende a zero,
 
 $$f'(x) = \dfrac{d f}{d x}(x) := \lim_{a \rightarrow 0} \dfrac{f(x+a)-f(x)}{a} \ .$$
 
-**TODO** *In generale, la derivata di una funzione reale è un'altra funzione reale.*
+**todo** *In generale, la derivata di una funzione reale è un'altra funzione reale.*
 
 (infinitesimal-calculus:derivatives:rules)=
-## Regole
+## Regole di derivazione
 
-**Derivata della combinazione lineare di funzioni** L'operatore di derivazione è un **operatore lineare**, cioé
+Usando la definizione {eq}`infinitesimal-calculus:derivatives:def` di derivata e le proprietà dei limiti, è possibile dimostrare le seguenti proprietà
 
-$$\big( a \, f(x) + b \, g(x) \big)' = a \, f'(x) + b \, g'(x)$$
+- linearità
 
-**Derivata del prodotto di funzioni**
+$$\big( a \, f(x) + b \, g(x) \big)' = a \, f'(x) + b \, g'(x)$$ (infinitesimal-calculus:derivatives:rules:linearity)
 
-$$\Bigl( f(x) g(x) \Bigr)' = f'(x) g(x) + f(x) g'(x)$$
+- derivata del prodotto di funzioni
 
-**Derivata del quoziente di funzioni**
+$$\Bigl( f(x) g(x) \Bigr)' = f'(x) g(x) + f(x) g'(x)$$ (infinitesimal-calculus:derivatives:rules:product)
 
-$$\Big( \frac{f(x)}{g(x)} \Big)' = \frac{f'(x) g(x) - f(x) g'(x)}{g^2(x)}  $$
+- derivata del rapporto di funzioni
 
-**Derivata della funzione composta**
+$$\Big( \frac{f(x)}{g(x)} \Big)' = \frac{f'(x) g(x) - f(x) g'(x)}{g^2(x)}$$ (infinitesimal-calculus:derivatives:rules:division)
 
-$$\frac{d}{dx} f\big( g(x) \big) = \frac{d f}{dy}\Big|_{y=g(x)} \dfrac{d g}{d x}\Big|_{x}$$
+- derivata della funzione composta
 
-**Derivata della funzione inversa**
+$$\frac{d}{dx} f\big( g(x) \big) = \frac{d f}{dy}\Big|_{y=g(x)} \dfrac{d g}{d x}\Big|_{x}$$ (infinitesimal-calculus:derivatives:rules:composite)
+
+- derivata della funzione inversa
+
+$$\frac{d}{dx} f\big( g(x) \big) = \frac{d f}{dy}\Big|_{y=g(x)} \dfrac{d g}{d x}\Big|_{x}$$ (infinitesimal-calculus:derivatives:rules:inverse)
+
+
 
 (infinitesimal-calculus:derivatives:thm)=
 ## Teoremi
