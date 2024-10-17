@@ -1,7 +1,7 @@
 (infinitesimal-calculus)=
 # Calcolo infinitesimale
 
-Il calcolo infinitesimale si occupa dello studio **di... TODO**
+Il calcolo infinitesimale si occupa dello studio **di... todo**
 
 Questo capitolo presenta il calcolo infinitesimale per le funzioni reali di una variabile reale, $f: D \in \mathbb{R} \rightarrow \mathbb{R}$, come inizialmente formulate da Newton **[REF]** e Lebniz **[REF]** nel XVII secolo nell'ambito dello sviluppo della meccanica classica **[REF]** e formalizzate nel XVIII secolo a Parigi da D'Alembert e Cauchy.
 

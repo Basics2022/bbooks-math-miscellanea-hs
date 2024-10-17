@@ -32,7 +32,7 @@ corrisponde al valore dell'**area con segno** tra il grafico della funzione $y=f
 #### Proprietà dell'integrale definito
 (infinitesimal-calculus:integrals:def:indefinite)=
 
-Dalla definizione {eq}`` dell'integrale di Riemann seguono immediatamente le seguenti proprietà:
+Dalla definizione {eq}`infinitesimal-calculus:integrals:riemann:def` dell'integrale di Riemann seguono immediatamente le seguenti proprietà:
 
 - linearità dell'integrale definito
 
