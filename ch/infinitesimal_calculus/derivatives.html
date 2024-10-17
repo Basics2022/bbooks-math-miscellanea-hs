@@ -750,15 +750,49 @@ Dimostrazione di <span class="math notranslate nohighlight">\(\ (\cos x)'\)</spa
 <span id="infinitesimal-calculus-derivatives-applications"></span><h2>Applicazioni<a class="headerlink" href="#applicazioni" title="Permalink to this heading">#</a></h2>
 <div class="section" id="espansioni-in-serie-di-taylor-e-maclaurin">
 <span id="infinitesimal-calculus-derivatives-taylor"></span><h3>Espansioni in serie di Taylor e MacLaurin<a class="headerlink" href="#espansioni-in-serie-di-taylor-e-maclaurin" title="Permalink to this heading">#</a></h3>
-<p>L’espansione in serie di MacEspansione in serie polinomiale di una funzione reale</p>
+<p>Le espansioni in serie di Taylor e di MacLaurin sono serie polinomiali che forniscono un’<strong>approssimazione locale</strong> di una funzione, <em>valida nell’intorno</em> (<strong>todo</strong> valutare questa espressione) di un punto.</p>
+<p>La <strong>serie di Taylor</strong> della funzione <span class="math notranslate nohighlight">\(f(x)\)</span> in un intervallo centrato in <span class="math notranslate nohighlight">\(x_0\)</span> è la serie</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
-f(x) &amp; = f(0) + f'(0) x + \frac{f''(0)}{2!} x^2 + \dots + \frac{f^{(n)}(0)}{n!} x^n + o(x^n) = \\
- &amp; = \sum_{k=0}^{n} \frac{f^{k}(0)}{k!} x^k + o(x^n)
+  T[f(x); x_0] &amp; = \sum_{n=0}^{\infty} \dfrac{f^{(n)(x_0)}}{n!} (x-x_0)^n = \\
+       &amp; = f(x_0) + f'(x_0) (x-x_0) + \dfrac{f''(x_0)^2}{2!} (x-x_0)^2 + \dots \ .
 \end{aligned}\end{split}\]</div>
-<p>1/(1+x), -1/(1+x)^2, 2/(1+x)^3</p>
-<div class="section" id="esempi">
+<p>La serie di MacLaurin è la serie di Taylor centrata in <span class="math notranslate nohighlight">\(x_0 = 0\)</span>.</p>
+<p>La serie di Taylor troncata al <span class="math notranslate nohighlight">\(n\)</span>-esimo termine fornisce un’approssimazione locale della funzione <span class="math notranslate nohighlight">\(f(x)\)</span> di ordine <span class="math notranslate nohighlight">\(n\)</span>, nel senso definito dal seguente teorema.</p>
+<div class="proof theorem admonition" id="theorem-5">
+<p class="admonition-title"><span class="caption-number">Theorem 6 </span> (Approssimazione locale)</p>
+<div class="theorem-content section" id="proof-content">
+<div class="math notranslate nohighlight">
+\[\lim_{x \rightarrow x_0} \frac{f(x) - T[f(x); x_0]}{x^n} = f^{(n)}(x_0) \ , \]</div>
+<div class="math notranslate nohighlight">
+\[f(x) = T[f(x); x_0] + o(x^n) \quad \text{ per } \quad x \rightarrow x_0\]</div>
+</div>
+</div><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Dimostrazione<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Usando il teorema di de l’Hopital, fino a quando il rapporto non è una forma indeterminata</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \lim_{x \rightarrow x_0} \frac{f(x) - T[f(x); x_0]}{x^n}
+  &amp; = \lim_{x \rightarrow x_0} \dfrac{f(x) - f(x_0) + f'(x_0) (x-x_0) + \frac{f''(x_0)}{2!} (x-x_0)^2 + \dots \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n}{x^n} = \text{(H)} = \\
+  &amp; = \lim_{x \rightarrow x_0} \dfrac{f'(x) - f'(x_0) + \frac{f''(x_0)}{1!} (x-x_0) + \dots \frac{f^{(n)}(x_0)}{(n-1)!}(x-x_0)^{n-1}}{n \, x^{n-1}} = \text{(H)} = \\
+  &amp; = \lim_{x \rightarrow x_0} \dfrac{f''(x) - f''(x_0) + \dots \frac{f^{(n)}(x_0)}{(n-2)!}(x-x_0)^{n-2}}{n \, (n-1) \, x^{n-1}} = \text{(H)} =\\
+  &amp; = \dots \\
+  &amp; = \lim_{x \rightarrow x_0} \dfrac{f^{(n)}(x) - f^{(n)}(x_0)}{n!} =  0 \ ,
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">si dimostra che il numeratore è un infinitesimo del denominatore. Usando la notazione dell’<em>”o piccolo”</em> per gli infinitesimi si può quindi scrivere l’approssimazione locale come:</p>
+<div class="math notranslate nohighlight">
+\[f(x) - T[f(x), x_0] = o\left((x-x_0)^n\right) \ ,\]</div>
+<p class="sd-card-text">o in maniera equivalente
+$<span class="math notranslate nohighlight">\(f(x) = T[f(x), x_0] + o\left((x-x_0)^n\right) \ .\)</span>$</p>
+</div>
+</details><div class="section" id="esempi">
 <h4>Esempi<a class="headerlink" href="#esempi" title="Permalink to this heading">#</a></h4>
+<p>La serie di MacLaurin per le funzioni interessate nei <a class="reference internal" href="limits.html#infinitesimal-calculus-limits-fund"><span class="std std-ref">limiti notevoli</span></a> forniscono approssimazioni locali di ordine maggiore per <span class="math notranslate nohighlight">\(x \rightarrow 0\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
  \cos(x) &amp; = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} + o(x^5) \\
@@ -767,7 +801,7 @@ f(x) &amp; = f(0) + f'(0) x + \frac{f''(0)}{2!} x^2 + \dots + \frac{f^{(n)}(0)}{
  (1+x)^a &amp; = 1 + a x + a(a-1) \frac{x^2}{2} + o(x^2) \\
  e^x     &amp; = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + \frac{x^5}{5!} + o(x^5)
 \end{aligned}\end{split}\]</div>
-<p><strong>TODO</strong> <em>Dimostrare la convergenza delle serie. Convergenza puntuale, convergenza uniforme (in un insieme di convergenza, di solito centrato in un punto e le cui dimensioni sono definite da un raggio di convergenza)</em></p>
+<p><strong>todo</strong> <em>Dimostrare la convergenza delle serie. Convergenza puntuale, convergenza uniforme (in un insieme di convergenza, di solito centrato in un punto e le cui dimensioni sono definite da un raggio di convergenza)</em></p>
 <p><strong>Rivisitazione limiti notevoli</strong>
 Per <span class="math notranslate nohighlight">\(x \rightarrow 0\)</span></p>
 <div class="math notranslate nohighlight">
