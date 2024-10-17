@@ -33,11 +33,10 @@ parts:
 - caption: Calcolo infinitesimale
   chapters:
   - file: ch/infinitesimal_calculus
-    sections:
-    - file: ch/infinitesimal_calculus/real_functions
-    - file: ch/infinitesimal_calculus/limits
-    - file: ch/infinitesimal_calculus/derivatives
-    - file: ch/infinitesimal_calculus/integrals
+  - file: ch/infinitesimal_calculus/real_functions
+  - file: ch/infinitesimal_calculus/limits
+  - file: ch/infinitesimal_calculus/derivatives
+  - file: ch/infinitesimal_calculus/integrals
 - caption: Equazioni differenziali ordinarie
   chapters:
   - file: ch/ode

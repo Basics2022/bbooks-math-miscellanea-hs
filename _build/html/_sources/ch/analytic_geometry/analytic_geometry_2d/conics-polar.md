@@ -14,7 +14,7 @@ $$\text{dist}(P,d) = D - r \cos \theta$$
 
 l'equazione generale delle coniche diventa
 
-$$e \left( D - r \cos \theta ) = r$$
+$$e \left( D - r \cos \theta \right) = r$$
 
 **Circonferenza, $e = 0$.** L'equazione generale per la circonferenza degenera in 
 
