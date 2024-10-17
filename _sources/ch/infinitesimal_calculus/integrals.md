@@ -34,7 +34,7 @@ Dalla definizione {eq}`infinitesimal-calculus:integrals:riemann:def` dell'integr
 
 - linearità dell'integrale definito
 
-$$\int_a^b \big( \alpha f(x) + \beta g(x) \big) \ dx = \alpha \int_a^b f(x) \ dx + \beta \int_a^b g(x) \ dx \ ,$$
+$$\int_a^b \big( \alpha f(x) + \beta g(x) \big) \ dx = \alpha \int_a^b f(x) \ dx + \beta \int_a^b g(x) \ dx \ ,$$ (infinitesimal-calculus:integrals:prop:linearity)
 
 - additività sull'intervallo
 

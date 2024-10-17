@@ -430,14 +430,7 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definizione">Definizione</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regole-di-derivazione">Regole di derivazione</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoremi">Teoremi</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-fermat">Teorema di Fermat</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-rolle">Teorema di Rolle</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-cauchy">Teorema di Cauchy</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-lagrange">Teorema di Lagrange</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-de-l-hopital-bernoulli">Teorema di de l’Hopital (Bernoulli)</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoremi">Teoremi</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#derivate-fondamentali">Derivate fondamentali</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#derivate-di-ordine-superiore">Derivate di ordine superiore</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applicazioni">Applicazioni</a><ul class="nav section-nav flex-column">
@@ -499,7 +492,7 @@ document.write(`
 <li><p>derivata della funzione inversa, <span class="math notranslate nohighlight">\(y = f(x)\)</span>, <span class="math notranslate nohighlight">\(x = f^{-1}(y)\)</span></p></li>
 </ul>
 <div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-derivatives-rules-inverse">
-<span class="eqno">(7)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-rules-inverse" title="Permalink to this equation">#</a></span>\[ \dfrac{d f^{-1}}{d y}\bigg|_{y = f(x)} = \dfrac{1}{ \dfrac{d y}{d x}}\bigg|_{x} \ .\]</div>
+<span class="eqno">(7)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-rules-inverse" title="Permalink to this equation">#</a></span>\[ \dfrac{d f^{-1}}{d y}\bigg|_{y = f(x)} = \dfrac{1}{ \dfrac{d y}{d x}\bigg|_{x}} \ .\]</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Dimostrazione della linearità dell’operazione di derivazione<div class="sd-summary-down docutils">
@@ -551,47 +544,78 @@ Dimostrazione della regola della funzione inversa<div class="sd-summary-down doc
 \[1 = \dfrac{d f^{-1}}{d y}\bigg|_{y = f(x)} \, \dfrac{d f(x)}{d x} \ ,\]</div>
 <p class="sd-card-text">dalla quale segue immediatamente la regola di derivazione della funzione inversa</p>
 <div class="math notranslate nohighlight">
-\[ \dfrac{d f^{-1}}{d y}\bigg|_{y = f(x)} = \dfrac{1}{ \dfrac{d y}{d x}}\bigg|_{x} \ .\]</div>
+\[ \dfrac{d f^{-1}}{d y}\bigg|_{y = f(x)} = \dfrac{1}{ \dfrac{d y}{d x}\bigg|_{x}} \ .\]</div>
 </div>
 </details></div>
 <div class="section" id="teoremi">
 <span id="infinitesimal-calculus-derivatives-thm"></span><h2>Teoremi<a class="headerlink" href="#teoremi" title="Permalink to this heading">#</a></h2>
-<div class="section" id="teorema-di-fermat">
-<h3>Teorema di Fermat<a class="headerlink" href="#teorema-di-fermat" title="Permalink to this heading">#</a></h3>
+<div class="proof theorem admonition" id="theorem-0">
+<span id="infinitesimal-calculus-derivatives-thm-fermat"></span><p class="admonition-title"><span class="caption-number">Theorem 1 </span> (Teorema di Fermat)</p>
+<div class="theorem-content section" id="proof-content">
 <p>Data la funzione <span class="math notranslate nohighlight">\(f: (a,b) \rightarrow \mathbb{R}\)</span> derivabile nel punto di estremo locale <span class="math notranslate nohighlight">\(x_0 \in (a,b)\)</span>, allora <span class="math notranslate nohighlight">\(f'(x_0) = 0\)</span>.</p>
-<p><strong>Dimostrazione</strong></p>
-<div class="toggle toggle-shown docutils container">
-<p>La dimostrazione del teorema di Fermat…</p>
 </div>
-</div>
-<div class="section" id="teorema-di-rolle">
-<h3>Teorema di Rolle<a class="headerlink" href="#teorema-di-rolle" title="Permalink to this heading">#</a></h3>
-<p>Data la funzione <span class="math notranslate nohighlight">\(f: [a,b] \rightarrow \mathbb{R}\)</span> continua e derivabile in ogni punto dell’intervallo <span class="math notranslate nohighlight">\((a,b)\)</span> con <span class="math notranslate nohighlight">\(f(a) = f(b)\)</span>, allora esiste un valore <span class="math notranslate nohighlight">\(c \in (a,b)\)</span> in cui <span class="math notranslate nohighlight">\(f'(c) = 0\)</span>.</p>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+</div><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Dimostrazione<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">La dimostrazione del teorema di Rolle…</p>
+<p class="sd-card-text"><strong>todo</strong></p>
 </div>
-</details><p><strong>Dim.</strong></p>
+</details><!-- **todo** why was this block here? Was it a test? What are the drawbacks of {dropdown}? Maybe something with .pdf build?
+```{toggle} Dim.
+:show:
+La dimostrazione del teorema di Fermat...
+```
+-->
+<div class="proof theorem admonition" id="theorem-1">
+<span id="infinitesimal-calculus-derivatives-thm-rolle"></span><p class="admonition-title"><span class="caption-number">Theorem 2 </span> (Teorema di Rolle)</p>
+<div class="theorem-content section" id="proof-content">
+<p>Data la funzione <span class="math notranslate nohighlight">\(f: [a,b] \rightarrow \mathbb{R}\)</span> continua e derivabile in ogni punto dell’intervallo <span class="math notranslate nohighlight">\((a,b)\)</span> con <span class="math notranslate nohighlight">\(f(a) = f(b)\)</span>, allora esiste un valore <span class="math notranslate nohighlight">\(c \in (a,b)\)</span> in cui <span class="math notranslate nohighlight">\(f'(c) = 0\)</span>.</p>
 </div>
-<div class="section" id="teorema-di-cauchy">
-<h3>Teorema di Cauchy<a class="headerlink" href="#teorema-di-cauchy" title="Permalink to this heading">#</a></h3>
+</div><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Dimostrazione<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>todo</strong></p>
+</div>
+</details><div class="proof theorem admonition" id="theorem-2">
+<span id="infinitesimal-calculus-derivatives-thm-cauchy"></span><p class="admonition-title"><span class="caption-number">Theorem 3 </span> (Teorema di Cauchy)</p>
+<div class="theorem-content section" id="proof-content">
 <p>Date le funzioni <span class="math notranslate nohighlight">\(f, g: [a,b] \rightarrow \mathbb{R}\)</span> continue e derivabili in ogni punto dell’intervallo <span class="math notranslate nohighlight">\((a,b)\)</span> con <span class="math notranslate nohighlight">\(f(a) = f(b)\)</span>, allora esiste un valore <span class="math notranslate nohighlight">\(c \in (a,b)\)</span> tale che</p>
 <div class="math notranslate nohighlight">
 \[f(b) - f(a) = (b -  a) f'(c) \ .\]</div>
-<p><strong>Dim.</strong></p>
 </div>
-<div class="section" id="teorema-di-lagrange">
-<h3>Teorema di Lagrange<a class="headerlink" href="#teorema-di-lagrange" title="Permalink to this heading">#</a></h3>
+</div><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Dimostrazione<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>todo</strong></p>
+</div>
+</details><div class="proof theorem admonition" id="theorem-3">
+<span id="infinitesimal-calculus-derivatives-thm-lagrange"></span><p class="admonition-title"><span class="caption-number">Theorem 4 </span> (Theorema di Lagrange)</p>
+<div class="theorem-content section" id="proof-content">
 <p>Date le funzioni <span class="math notranslate nohighlight">\(f, g: [a,b] \rightarrow \mathbb{R}\)</span> continue e derivabili in ogni punto dell’intervallo <span class="math notranslate nohighlight">\((a,b)\)</span> con <span class="math notranslate nohighlight">\(f(a) = f(b)\)</span>, allora esiste un valore <span class="math notranslate nohighlight">\(c \in (a,b)\)</span> tale che</p>
-<p><strong>Dim.</strong> Usando il teorema di Cauhcy con <span class="math notranslate nohighlight">\(g(x) = x\)</span>.</p>
 </div>
-<div class="section" id="teorema-di-de-l-hopital-bernoulli">
-<span id="infinitesimal-calculus-derivatives-thm-hopital"></span><h3>Teorema di de l’Hopital (Bernoulli)<a class="headerlink" href="#teorema-di-de-l-hopital-bernoulli" title="Permalink to this heading">#</a></h3>
+</div><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Dimostrazione<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>todo</strong> Usando il teorema di Cauhcy con <span class="math notranslate nohighlight">\(g(x) = x\)</span>.</p>
+</div>
+</details><div class="proof theorem admonition" id="theorem-4">
+<span id="infinitesimal-calculus-derivatives-thm-hopital"></span><p class="admonition-title"><span class="caption-number">Theorem 5 </span> (Teorema di de l’Hopital (Bernoulli))</p>
+<div class="theorem-content section" id="proof-content">
 <p><strong>TODO</strong> <em>Controllare l’enunciato</em>
 Siano <span class="math notranslate nohighlight">\(f(x), g(x): [a,b] \rightarrow \mathbb{R}\)</span> funzioni reali di variabile reale continue in <span class="math notranslate nohighlight">\([a,b]\)</span> e derivabili in <span class="math notranslate nohighlight">\((a,b) \backslash \{ x_0 \}\)</span>.</p>
 <div class="math notranslate nohighlight">
@@ -605,14 +629,22 @@ Siano <span class="math notranslate nohighlight">\(f(x), g(x): [a,b] \rightarrow
 <p>allora</p>
 <div class="math notranslate nohighlight">
 \[ \lim_{x \rightarrow x_0} \frac{f(x)}{g(x)} = L \ . \]</div>
-<p><strong>Dim.</strong></p>
-<p><strong>Oss.</strong> Il teorema di de l’Hopital può essere applicato anche in successione, più di una volta, fermandosi al primo rapporto di derivate dello stesso ordine che non produe una forma indeterminata.</p>
 </div>
+</div><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Dimostrazione<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>todo</strong></p>
+</div>
+</details><p><strong>Oss.</strong> Il teorema di de l’Hopital può essere applicato anche in successione, più di una volta, fermandosi al primo rapporto di derivate dello stesso ordine che non produe una forma indeterminata.</p>
 </div>
 <div class="section" id="derivate-fondamentali">
 <span id="infinitesimal-calculus-derivatives-fund"></span><h2>Derivate fondamentali<a class="headerlink" href="#derivate-fondamentali" title="Permalink to this heading">#</a></h2>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
+<div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-derivatives-fund">
+<span class="eqno">(8)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-fund" title="Permalink to this equation">#</a></span>\[\begin{split}\begin{aligned}
 f(x) &amp; = x^n    \qquad &amp; \qquad f'(x) &amp; = n x^{n-1}   \\ 
 f(x) &amp; = e^x    \qquad &amp; \qquad f'(x) &amp; = e^x         \\ 
 f(x) &amp; = \ln x  \qquad &amp; \qquad f'(x) &amp; = \frac{1}{x} \\ 
@@ -741,14 +773,7 @@ e^{ix} &amp; = 1 + ix + \frac{(ix)^2}{2!} + \frac{(ix)^3}{3!} + \frac{(ix)^4}{4!
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definizione">Definizione</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regole-di-derivazione">Regole di derivazione</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoremi">Teoremi</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-fermat">Teorema di Fermat</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-rolle">Teorema di Rolle</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-cauchy">Teorema di Cauchy</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-lagrange">Teorema di Lagrange</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-de-l-hopital-bernoulli">Teorema di de l’Hopital (Bernoulli)</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoremi">Teoremi</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#derivate-fondamentali">Derivate fondamentali</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#derivate-di-ordine-superiore">Derivate di ordine superiore</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applicazioni">Applicazioni</a><ul class="nav section-nav flex-column">
