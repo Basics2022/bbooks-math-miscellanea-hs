@@ -6,73 +6,114 @@
 
 **Rapporto incrementale.** Il rapporto incrementale di una funzione reale nel punto $x$ viene definito come il rapporto tra la differenza dei valori della funzione e la differenza del valore della variabile indipendente
 
-$$R[f(\cdot), x, a] := \dfrac{f(x+a)-f(x)}{a} \ .$$
+$$R[f(\cdot), x, a] := \dfrac{f(x+a)-f(x)}{a} \ .$$ (infinitesimal-calculus:derivatives:def_delta)
 
 **Derivata.** La derivata di una funzione reale in un punto $x$ viene definita come il limite del rapporto incrementale, per l'incremento della variabile indipendente che tende a zero,
 
-$$f'(x) = \dfrac{d f}{d x}(x) := \lim_{a \rightarrow 0} \dfrac{f(x+a)-f(x)}{a} \ .$$
+$$f'(x) = \dfrac{d f}{d x}(x) := \lim_{a \rightarrow 0} \dfrac{f(x+a)-f(x)}{a} \ .$$ (infinitesimal-calculus:derivatives:def)
 
-**TODO** *In generale, la derivata di una funzione reale è un'altra funzione reale.*
+**todo** *In generale, la derivata di una funzione reale è un'altra funzione reale.*
 
 (infinitesimal-calculus:derivatives:rules)=
-## Regole
+## Regole di derivazione
 
-**Derivata della combinazione lineare di funzioni** L'operatore di derivazione è un **operatore lineare**, cioé
+Usando la definizione {eq}`infinitesimal-calculus:derivatives:def` di derivata e le proprietà dei limiti, è possibile dimostrare le seguenti proprietà
 
-$$\big( a \, f(x) + b \, g(x) \big)' = a \, f'(x) + b \, g'(x)$$
+- linearità
 
-**Derivata del prodotto di funzioni**
+$$\big( a \, f(x) + b \, g(x) \big)' = a \, f'(x) + b \, g'(x)$$ (infinitesimal-calculus:derivatives:rules:linearity)
 
-$$\Bigl( f(x) g(x) \Bigr)' = f'(x) g(x) + f(x) g'(x)$$
+- derivata del prodotto di funzioni
 
-**Derivata del quoziente di funzioni**
+$$\Bigl( f(x) g(x) \Bigr)' = f'(x) g(x) + f(x) g'(x)$$ (infinitesimal-calculus:derivatives:rules:product)
 
-$$\Big( \frac{f(x)}{g(x)} \Big)' = \frac{f'(x) g(x) - f(x) g'(x)}{g^2(x)}  $$
+- derivata del rapporto di funzioni
 
-**Derivata della funzione composta**
+$$\Big( \frac{f(x)}{g(x)} \Big)' = \frac{f'(x) g(x) - f(x) g'(x)}{g^2(x)}$$ (infinitesimal-calculus:derivatives:rules:division)
 
-$$\frac{d}{dx} f\big( g(x) \big) = \frac{d f}{dy}\Big|_{y=g(x)} \dfrac{d g}{d x}\Big|_{x}$$
+- derivata della funzione composta
 
-**Derivata della funzione inversa**
+$$\frac{d}{dx} f\big( g(x) \big) = \frac{d f}{dy}\Big|_{y=g(x)} \dfrac{d g}{d x}\Big|_{x}$$ (infinitesimal-calculus:derivatives:rules:composite)
+
+- derivata della funzione inversa, $y = f(x)$, $x = f^{-1}(y)$
+
+$$ \dfrac{d f^{-1}}{d y}\bigg|_{y = f(x)} = \dfrac{1}{ \dfrac{d y}{d x}\bigg|_{x}} \ .$$ (infinitesimal-calculus:derivatives:rules:inverse)
+
+```{dropdown} Dimostrazione della linearità dell'operazione di derivazione
+**todo**
+```
+```{dropdown} Dimostrazione della regola del prodotto
+**todo**
+```
+```{dropdown} Dimostrazione della regola del quoziente
+**todo**
+```
+```{dropdown} Dimostrazione della regola della funzione composta
+**todo**
+```
+```{dropdown} Dimostrazione della regola della funzione inversa
+Si usa la regola {eq}`infinitesimal-calculus:derivatives:rules:composite` di derivazione della funzione composta applicata alla relazione 
+
+$$x = f^{-1} \left( f(x) \right)$$
+
+che caratterizza la funzione inversa $f^{-1}$. Derivando entrambi i termini della relazione rispetto alla variabile indipendente $x$ si ottiene
+
+$$1 = \dfrac{d f^{-1}}{d y}\bigg|_{y = f(x)} \, \dfrac{d f(x)}{d x} \ ,$$
+
+dalla quale segue immediatamente la regola di derivazione della funzione inversa
+
+$$ \dfrac{d f^{-1}}{d y}\bigg|_{y = f(x)} = \dfrac{1}{ \dfrac{d y}{d x}\bigg|_{x}} \ .$$
+
+```
 
 (infinitesimal-calculus:derivatives:thm)=
 ## Teoremi
 
-### Teorema di Fermat
+(infinitesimal-calculus:derivatives:thm:fermat)=
+```{prf:theorem} Teorema di Fermat
 Data la funzione $f: (a,b) \rightarrow \mathbb{R}$ derivabile nel punto di estremo locale $x_0 \in (a,b)$, allora $f'(x_0) = 0$.
+```
+```{dropdown} Dimostrazione
+**todo**
+```
 
-**Dimostrazione**
+<!-- **todo** why was this block here? Was it a test? What are the drawbacks of {dropdown}? Maybe something with .pdf build?
 ```{toggle} Dim.
 :show:
-
 La dimostrazione del teorema di Fermat...
-
 ```
+-->
 
-### Teorema di Rolle
+(infinitesimal-calculus:derivatives:thm:rolle)=
+```{prf:theorem} Teorema di Rolle
 Data la funzione $f: [a,b] \rightarrow \mathbb{R}$ continua e derivabile in ogni punto dell'intervallo $(a,b)$ con $f(a) = f(b)$, allora esiste un valore $c \in (a,b)$ in cui $f'(c) = 0$.
-
-```{dropdown} Dimostrazione
-La dimostrazione del teorema di Rolle...
 ```
-**Dim.**
+```{dropdown} Dimostrazione
+**todo**
+```
 
-### Teorema di Cauchy
+(infinitesimal-calculus:derivatives:thm:cauchy)=
+```{prf:theorem} Teorema di Cauchy
 Date le funzioni $f, g: [a,b] \rightarrow \mathbb{R}$ continue e derivabili in ogni punto dell'intervallo $(a,b)$ con $f(a) = f(b)$, allora esiste un valore $c \in (a,b)$ tale che
 
 $$f(b) - f(a) = (b -  a) f'(c) \ .$$
 
-**Dim.**
+```
+```{dropdown} Dimostrazione
+**todo**
+```
 
-### Teorema di Lagrange
+(infinitesimal-calculus:derivatives:thm:lagrange)=
+```{prf:theorem} Theorema di Lagrange
 Date le funzioni $f, g: [a,b] \rightarrow \mathbb{R}$ continue e derivabili in ogni punto dell'intervallo $(a,b)$ con $f(a) = f(b)$, allora esiste un valore $c \in (a,b)$ tale che
 
-**Dim.** Usando il teorema di Cauhcy con $g(x) = x$.
-
+```
+```{dropdown} Dimostrazione
+**todo** Usando il teorema di Cauhcy con $g(x) = x$.
+```
 
 (infinitesimal-calculus:derivatives:thm:hopital)=
-### Teorema di de l'Hopital (Bernoulli)
-**TODO** *Controllare l'enunciato*
+```{prf:theorem} Teorema di de l'Hopital (Bernoulli)
 Siano $f(x), g(x): [a,b] \rightarrow \mathbb{R}$ funzioni reali di variabile reale continue in $[a,b]$ e derivabili in $(a,b) \backslash \{ x_0 \}$.
 
 $$\begin{aligned}
@@ -88,13 +129,17 @@ allora
 
 $$ \lim_{x \rightarrow x_0} \frac{f(x)}{g(x)} = L \ . $$
 
-**Dim.**
-
-**Oss.** Il teorema di de l'Hopital può essere applicato anche in successione, più di una volta, fermandosi al primo rapporto di derivate dello stesso ordine che non produe una forma indeterminata.
+**todo** Controllare l'enunciato
+```
+```{dropdown} Dimostrazione
+**todo**
+```
+**Oss.** Il teorema di de l'Hopital può essere applicato anche in successione, più di una volta, fermandosi al primo rapporto di derivate dello stesso ordine che non produce una forma indeterminata.
 
 
 (infinitesimal-calculus:derivatives:fund)=
 ## Derivate fondamentali
+Usando i [limiti fondamentali](infinitesimal-calculus:limits:fund), vengono calcolate le derivate fondamentali, che a loro volta permettono il calcolo degli [integrali fondamentali](infinitesimal-calculus:integrals:fund). Le derivate fondamentali e la loro combinazione con le [regole di derivazione](infinitesimal-calculus:derivatives:rules) permettono la derivazione di funzioni generiche. Le derivate fondamentali sono:
 
 $$\begin{aligned}
 f(x) & = x^n    \qquad & \qquad f'(x) & = n x^{n-1}   \\ 
@@ -102,7 +147,73 @@ f(x) & = e^x    \qquad & \qquad f'(x) & = e^x         \\
 f(x) & = \ln x  \qquad & \qquad f'(x) & = \frac{1}{x} \\ 
 f(x) & = \sin x \qquad & \qquad f'(x) & = \cos x      \\ 
 f(x) & = \cos x \qquad & \qquad f'(x) & =-\sin x         
+\end{aligned}$$ (infinitesimal-calculus:derivatives:fund)
+
+```{dropdown} Dimostrazione di $\ (x^n)'$
+Usando la formua binomiale $$(x + \varepsilon)^n = x^n + n x^{n-1} \varepsilon + f(\varepsilon^2, \varepsilon^3, \dots)$$ **todo** *aggiungere riferimento*,
+
+$$\begin{aligned}
+  \dfrac{d}{dx} x^n
+  & = \lim_{\varepsilon \rightarrow 0}  \dfrac{(x+\varepsilon)^{n} - x^n}{\varepsilon} = \\
+  & = \lim_{\varepsilon \rightarrow 0}  \dfrac{x^n + n x^{n-1} \varepsilon + o(\varepsilon) - x^n}{\varepsilon} = \\
+  & = \lim_{\varepsilon \rightarrow 0}  \left( n x^{n-1} + O(\varepsilon) \right) = \\
+  & = n x^{n-1} \ .
 \end{aligned}$$
+
+```
+```{dropdown} Dimostrazione di $\ (e^x)'$
+Usando le proprietà della funzione esponenziale e il limite $e^{\varepsilon} - 1 \sim \varepsilon$ per $\varepsilon \rightarrow 0$
+
+$$\begin{aligned}
+  \dfrac{d}{dx} e^x       
+  & = \lim_{\varepsilon \rightarrow 0}  \dfrac{e^{x+\varepsilon} - e^x}{\varepsilon} = \\
+  & = \lim_{\varepsilon \rightarrow 0}  \dfrac{e^x \left( e^{\varepsilon} - 1 \right)}{\varepsilon} = \\
+  & = e^x \lim_{\varepsilon \rightarrow 0}  \dfrac{\varepsilon + o(\varepsilon)}{\varepsilon} = \\
+  & = e^x \lim_{\varepsilon \rightarrow 0}  \left( 1 + O(\varepsilon) \right) = \\
+  & = e^x \ .
+\end{aligned}$$
+```
+```{dropdown} Dimostrazione di $\ (\ln x)'$
+Usando le proprietà della funzione logaritmo naturale e il limite $\ln(1 + \varepsilon) \sim \varepsilon$ per $\varepsilon \rightarrow 0$, per $x > 0$
+
+$$\begin{aligned}
+  \dfrac{d}{dx} \ln x       
+  & = \lim_{\varepsilon \rightarrow 0}  \dfrac{\ln(x+\varepsilon) - \ln x}{\varepsilon} = \\
+  & = \lim_{\varepsilon \rightarrow 0}  \dfrac{\ln \left(1 + \frac{\varepsilon}{x} \right)}{\varepsilon} = \\
+  & = \lim_{\varepsilon \rightarrow 0}  \dfrac{\frac{\varepsilon}{x} + o(\varepsilon)}{\varepsilon} = \\
+  & = \lim_{\varepsilon \rightarrow 0}  \left( \frac{1}{x} + O(\varepsilon) \right) = \\
+  & = \frac{1}{x} \ .
+\end{aligned}$$
+
+```
+```{dropdown} Dimostrazione di $\ (\sin x)'$
+Usando le formule di somma delle funzioni armoniche, **todo** ref, e gli infinitesimi delle funzioni $\sin \varepsilon \sim \varepsilon$, $\cos \varepsilon \sim 1 - \frac{\varepsilon^2}{2}$ per $\varepsilon \rightarrow 0$,
+
+$$\begin{aligned}
+  \dfrac{d}{dx} \sin(x) 
+  & = \lim_{\varepsilon \rightarrow 0}  \dfrac{\sin(x+\varepsilon) - \sin x}{\varepsilon} = \\
+  & = \lim_{\varepsilon \rightarrow 0} \dfrac{\sin x \cos \varepsilon + \cos x \sin \varepsilon - \sin x}{\varepsilon} = \\
+  & = \lim_{\varepsilon \rightarrow 0} \dfrac{\sin x \left( 1 - \frac{\varepsilon^2}{2} \right) + \varepsilon \, \cos x - \sin x}{\varepsilon} = \\
+  & = \lim_{\varepsilon \rightarrow 0} \left( \cos x + O(\varepsilon) \right) = \\
+  & = \cos x \ .
+\end{aligned}$$
+```
+```{dropdown} Dimostrazione di $\ (\cos x)'$
+Usando le formule di somma delle funzioni armoniche, **todo** ref, e gli infinitesimi delle funzioni $\sin \varepsilon \sim \varepsilon$, $\cos \varepsilon \sim 1 - \frac{\varepsilon^2}{2}$ per $\varepsilon \rightarrow 0$,
+
+$$\begin{aligned}
+  \dfrac{d}{dx} \cos(x) 
+  & = \lim_{\varepsilon \rightarrow 0}  \dfrac{\cos(x+\varepsilon) - \cos x}{\varepsilon} = \\
+  & = \lim_{\varepsilon \rightarrow 0} \dfrac{\cos x \cos \varepsilon - \sin x \sin \varepsilon - \sin x}{\varepsilon} = \\
+  & = \lim_{\varepsilon \rightarrow 0} \dfrac{\cos x \left( 1 - \frac{\varepsilon^2}{2} \right) - \varepsilon \, \sin x - \cos x}{\varepsilon} = \\
+  & = \lim_{\varepsilon \rightarrow 0} \left( - \sin x + O(\varepsilon) \right) = \\
+  & = - \sin x \ .
+\end{aligned}$$
+```
+
+
+
+
 
 (infinitesimal-calculus:derivatives:higher)=
 ## Derivate di ordine superiore

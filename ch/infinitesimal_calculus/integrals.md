@@ -34,7 +34,7 @@ Dalla definizione {eq}`infinitesimal-calculus:integrals:riemann:def` dell'integr
 
 - linearità dell'integrale definito
 
-$$\int_a^b \big( \alpha f(x) + \beta g(x) \big) \ dx = \alpha \int_a^b f(x) \ dx + \beta \int_a^b g(x) \ dx \ ,$$
+$$\int_a^b \big( \alpha f(x) + \beta g(x) \big) \ dx = \alpha \int_a^b f(x) \ dx + \beta \int_a^b g(x) \ dx \ ,$$ (infinitesimal-calculus:integrals:prop:linearity)
 
 - additività sull'intervallo
 
@@ -93,7 +93,7 @@ $$\int_{a}^{b} f(x) dx = (b-a) f(c) $$
 ```
 
 ```{dropdown} Dimostrazione
-
+**todo**
 ```
 
 <!--
@@ -120,10 +120,13 @@ $$\begin{aligned}
 
 ```
 
-**Derivata su dominio dipendente dalla variabile indipendente**
-Sia $x \in D$, e gli estremi di integrazione $a(x)$, $b(x)$ **TODO** *Caratteristiche?*
+(infinitesimal-calculus:derivatives:thm:fund:reynolds)=
+```{prf:theorem} Derivata su dominio dipendente dalla variabile indipendente
+
+Sia $x \in D$, e gli estremi di integrazione $a(x)$, $b(x)$ **todo** *Caratteristiche?*
 
 $$\dfrac{d}{dx} \int_{a(x)}^{b(x)} f(y) \, dy = - a'(x) \, f(a(x)) + b'(x) f(b(x)) $$
+```
 
 ```{dropdown} Dimostrazione
 
@@ -140,10 +143,9 @@ $$\begin{aligned}
 
 ```
 
-
 (infinitesimal-calculus:integrals:fund)=
 ## Integrali fondamentali
-Una volta provato il [teorema fondamentale del calcolo infinitesimale](infinitesimal-calculus:derivatives:thm:fund), si possono definire alcuni integrali fondamentali come l'operazione inversa alla derivazione applicata alle [derivate fondamentali](infinitesimal-calculus:derivatives:fund) 
+Una volta dimostrato il [teorema fondamentale del calcolo infinitesimale](infinitesimal-calculus:derivatives:thm:fund), questo risultato può essere usato per valutare gli integrali fondamentali come l'operazione inversa alla derivazione applicata alle [derivate fondamentali](infinitesimal-calculus:derivatives:fund) 
 
 $$\begin{aligned}
  \int x^n         \ dx & = \frac{1}{n} x^{n+1} + C  \qquad (n \neq 0) \\ 

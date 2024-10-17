@@ -79,8 +79,8 @@ $$+\infty-\infty \quad , \quad 0 \cdot \mp \infty \quad , \quad \frac{\mp \infty
 ### Teorema di de l'Hopital
 **TODO.** Si rimanda alla sezione del [teorema di de l'Hopital](infinitesimal-calculus:derivatives:thm:hopital) nel capitolo sulle [derivate](infinitesimal-calculus:derivatives).
 
-
-## Limiti notevoli
+(infinitesimal-calculus:limits:fund)=
+## Limiti fondamentali
 Limiti di funzioni continue
 
 $$ \lim_{x \rightarrow 0} \frac{(1+x)^a - 1}{x} = a $$

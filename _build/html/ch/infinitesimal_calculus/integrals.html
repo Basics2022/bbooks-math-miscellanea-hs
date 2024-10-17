@@ -461,11 +461,11 @@ document.write(`
 <span id="infinitesimal-calculus-integrals-def"></span><h2>Definizioni<a class="headerlink" href="#definizioni" title="Permalink to this heading">#</a></h2>
 <p><strong>Somma di Riemann.</strong> Data una funzione continua <span class="math notranslate nohighlight">\(f: [a,b] \rightarrow \mathbb{R}\)</span> e <span class="math notranslate nohighlight">\(P = \{ x_0, x_1, \dots x_n | a = x_0 &lt; x_1 &lt; \dots &lt; x_n = b \}\)</span> partizione dell’intervallo <span class="math notranslate nohighlight">\([a,b]\)</span>, la somma di Riemann viene definita come</p>
 <div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-integrals-riemann-sum">
-<span class="eqno">(1)<a class="headerlink" href="#equation-infinitesimal-calculus-integrals-riemann-sum" title="Permalink to this equation">#</a></span>\[\sigma_P = \sum_{k=1}^{n} f(\xi_k) (x_{k} - x_{k-1}) \ ,\]</div>
+<span class="eqno">(9)<a class="headerlink" href="#equation-infinitesimal-calculus-integrals-riemann-sum" title="Permalink to this equation">#</a></span>\[\sigma_P = \sum_{k=1}^{n} f(\xi_k) (x_{k} - x_{k-1}) \ ,\]</div>
 <p>con <span class="math notranslate nohighlight">\(\xi_k \in [x_{k-1}, x_k]\)</span>.</p>
 <p><strong>Integrale di Riemann.</strong> Sia <span class="math notranslate nohighlight">\(\Delta x = \max_k (x_{k} - x_{k-1})\)</span>, l’integrale definito di Riemann è  il limite per <span class="math notranslate nohighlight">\(\Delta x \rightarrow 0\)</span> della somma di Riemann <span class="math notranslate nohighlight">\(\sigma\)</span></p>
 <div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-integrals-riemann-def">
-<span class="eqno">(2)<a class="headerlink" href="#equation-infinitesimal-calculus-integrals-riemann-def" title="Permalink to this equation">#</a></span>\[\int_a^b f(x) \ dx = \lim_{\Delta x \rightarrow 0} \sigma_P \ .\]</div>
+<span class="eqno">(10)<a class="headerlink" href="#equation-infinitesimal-calculus-integrals-riemann-def" title="Permalink to this equation">#</a></span>\[\int_a^b f(x) \ dx = \lim_{\Delta x \rightarrow 0} \sigma_P \ .\]</div>
 <p><strong>Osservazione.</strong> Dato l’intervallo <span class="math notranslate nohighlight">\([a,b]\)</span>, per <span class="math notranslate nohighlight">\(\Delta x \rightarrow 0\)</span> il numero di intervalli della partizione tende all’infinito, <span class="math notranslate nohighlight">\(n \rightarrow \infty\)</span>.</p>
 <div class="section" id="interpretazione-geometrica">
 <h3>Interpretazione geometrica<a class="headerlink" href="#interpretazione-geometrica" title="Permalink to this heading">#</a></h3>
@@ -478,37 +478,37 @@ document.write(`
 <span id="infinitesimal-calculus-integrals-def-definite"></span><h3>Integrale definito<a class="headerlink" href="#integrale-definito" title="Permalink to this heading">#</a></h3>
 <div class="section" id="proprieta-dell-integrale-definito">
 <span id="infinitesimal-calculus-integrals-def-definite-prop"></span><h4>Proprietà dell’integrale definito<a class="headerlink" href="#proprieta-dell-integrale-definito" title="Permalink to this heading">#</a></h4>
-<p id="infinitesimal-calculus-integrals-def-indefinite">Dalla definizione <a class="reference internal" href="#equation-infinitesimal-calculus-integrals-riemann-def">(2)</a> dell’integrale di Riemann seguono immediatamente le seguenti proprietà:</p>
+<p id="infinitesimal-calculus-integrals-def-indefinite">Dalla definizione <a class="reference internal" href="#equation-infinitesimal-calculus-integrals-riemann-def">(10)</a> dell’integrale di Riemann seguono immediatamente le seguenti proprietà:</p>
 <ul class="simple">
 <li><p>linearità dell’integrale definito</p></li>
 </ul>
-<div class="math notranslate nohighlight">
-\[\int_a^b \big( \alpha f(x) + \beta g(x) \big) \ dx = \alpha \int_a^b f(x) \ dx + \beta \int_a^b g(x) \ dx \ ,\]</div>
+<div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-integrals-prop-linearity">
+<span class="eqno">(11)<a class="headerlink" href="#equation-infinitesimal-calculus-integrals-prop-linearity" title="Permalink to this equation">#</a></span>\[\int_a^b \big( \alpha f(x) + \beta g(x) \big) \ dx = \alpha \int_a^b f(x) \ dx + \beta \int_a^b g(x) \ dx \ ,\]</div>
 <ul class="simple">
 <li><p>additività sull’intervallo</p></li>
 </ul>
 <div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-integrals-prop-add">
-<span class="eqno">(3)<a class="headerlink" href="#equation-infinitesimal-calculus-integrals-prop-add" title="Permalink to this equation">#</a></span>\[\int_a^b f(x) \ dx + \int_b^c f(x) \ dx = \int_a^c f(x) \ dx \ ,\]</div>
+<span class="eqno">(12)<a class="headerlink" href="#equation-infinitesimal-calculus-integrals-prop-add" title="Permalink to this equation">#</a></span>\[\int_a^b f(x) \ dx + \int_b^c f(x) \ dx = \int_a^c f(x) \ dx \ ,\]</div>
 <ul class="simple">
 <li><p>valore assoluto dell’integrale è minore dell’integrale del valore assoluto</p></li>
 </ul>
 <div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-integrals-prop-abs">
-<span class="eqno">(4)<a class="headerlink" href="#equation-infinitesimal-calculus-integrals-prop-abs" title="Permalink to this equation">#</a></span>\[\left| \int_a^b f(x) \ dx \right| \le \int_a^b | f(x) | \ dx \ ,\]</div>
+<span class="eqno">(13)<a class="headerlink" href="#equation-infinitesimal-calculus-integrals-prop-abs" title="Permalink to this equation">#</a></span>\[\left| \int_a^b f(x) \ dx \right| \le \int_a^b | f(x) | \ dx \ ,\]</div>
 <ul class="simple">
 <li><p>scambio degli estremi di integrazione</p></li>
 </ul>
 <div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-integrals-prop-swap">
-<span class="eqno">(5)<a class="headerlink" href="#equation-infinitesimal-calculus-integrals-prop-swap" title="Permalink to this equation">#</a></span>\[\int_{x=a}^{b} f(x) dx = - \int_{x=b}^{a} f(x) \, dx\]</div>
+<span class="eqno">(14)<a class="headerlink" href="#equation-infinitesimal-calculus-integrals-prop-swap" title="Permalink to this equation">#</a></span>\[\int_{x=a}^{b} f(x) dx = - \int_{x=b}^{a} f(x) \, dx\]</div>
 </div>
 </div>
 <div class="section" id="integrale-indefinito">
 <h3>Integrale indefinito<a class="headerlink" href="#integrale-indefinito" title="Permalink to this heading">#</a></h3>
-<p>Usando la proprietà <a class="reference internal" href="#equation-infinitesimal-calculus-integrals-prop-add">(3)</a> di additività sull’intervallo dell’integrale definito,</p>
+<p>Usando la proprietà <a class="reference internal" href="#equation-infinitesimal-calculus-integrals-prop-add">(12)</a> di additività sull’intervallo dell’integrale definito,</p>
 <div class="math notranslate nohighlight">
 \[\int_a^x f(t) \ dt = \int_a^b f(t) \ dt + \int_b^x f(t) \ dt \ , \]</div>
 <p>si osserva che i due integrali con estremo superiore <span class="math notranslate nohighlight">\(x\)</span> e diverso estremo inferiore differiscono solo per una quantità indipendente da <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(\int_{a}^{b} f(t) \ dt\)</span>. Data la funzione <span class="math notranslate nohighlight">\(f(x)\)</span> e il valore <span class="math notranslate nohighlight">\(a\)</span> come paramtetro, si definisce una funzione di <span class="math notranslate nohighlight">\(x\)</span></p>
 <div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-integrals-primi">
-<span class="eqno">(6)<a class="headerlink" href="#equation-infinitesimal-calculus-integrals-primi" title="Permalink to this equation">#</a></span>\[F(x;a) := \int_a^x f(t) \ dt \ .\]</div>
+<span class="eqno">(15)<a class="headerlink" href="#equation-infinitesimal-calculus-integrals-primi" title="Permalink to this equation">#</a></span>\[F(x;a) := \int_a^x f(t) \ dt \ .\]</div>
 <p>Usando questa definizione, è immediato dimostrare che l’integrale definito <span class="math notranslate nohighlight">\(\int_{a}^{b} f(t) \ dt\)</span> è uguale alla differenza della funzione <span class="math notranslate nohighlight">\(F(\cdot; b)\)</span> calcolata nei due estremi,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
@@ -532,7 +532,7 @@ document.write(`
 :label: infinitesimal-calculus:derivatives:thm:avg
 -->
 <div class="proof theorem admonition" id="theorem-0">
-<span id="infinitesimal-calculus-derivatives-thm-avg"></span><p class="admonition-title"><span class="caption-number">Theorem 1 </span> (Teorema della media)</p>
+<span id="infinitesimal-calculus-derivatives-thm-avg"></span><p class="admonition-title"><span class="caption-number">Theorem 6 </span> (Teorema della media)</p>
 <div class="theorem-content section" id="proof-content">
 <p>Sia <span class="math notranslate nohighlight">\(f: [a,b] \in \mathbb{R} \rightarrow \mathbb{R}\)</span> una funzione continua su <span class="math notranslate nohighlight">\([a,b]\)</span>, allora esiste <span class="math notranslate nohighlight">\(c \in [a,b]\)</span> tale che</p>
 <div class="math notranslate nohighlight">
@@ -545,6 +545,7 @@ Dimostrazione<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>todo</strong></p>
 </div>
 </details><!--
 (infinitesimal-calculus:derivatives:thm:fund)=
@@ -552,7 +553,7 @@ Dimostrazione<div class="sd-summary-down docutils">
 :label: infinitesimal-calculus:derivatives:thm:fund
 -->
 <div class="proof theorem admonition" id="theorem-1">
-<span id="infinitesimal-calculus-derivatives-thm-fund"></span><p class="admonition-title"><span class="caption-number">Theorem 2 </span> (Teorema fondamentale del calcolo infinitesimale)</p>
+<span id="infinitesimal-calculus-derivatives-thm-fund"></span><p class="admonition-title"><span class="caption-number">Theorem 7 </span> (Teorema fondamentale del calcolo infinitesimale)</p>
 <div class="theorem-content section" id="proof-content">
 <div class="math notranslate nohighlight">
 \[\dfrac{d}{dx} \int_{a}^{x} f(y) dy = f(x) \]</div>
@@ -573,11 +574,14 @@ Dimostrazione<div class="sd-summary-down docutils">
 &amp; = \lim_{\varepsilon \rightarrow 0 } f(\xi) = f(x) . \\
 \end{aligned}\end{split}\]</div>
 </div>
-</details><p><strong>Derivata su dominio dipendente dalla variabile indipendente</strong>
-Sia <span class="math notranslate nohighlight">\(x \in D\)</span>, e gli estremi di integrazione <span class="math notranslate nohighlight">\(a(x)\)</span>, <span class="math notranslate nohighlight">\(b(x)\)</span> <strong>TODO</strong> <em>Caratteristiche?</em></p>
+</details><div class="proof theorem admonition" id="theorem-2">
+<span id="infinitesimal-calculus-derivatives-thm-fund-reynolds"></span><p class="admonition-title"><span class="caption-number">Theorem 8 </span> (Derivata su dominio dipendente dalla variabile indipendente)</p>
+<div class="theorem-content section" id="proof-content">
+<p>Sia <span class="math notranslate nohighlight">\(x \in D\)</span>, e gli estremi di integrazione <span class="math notranslate nohighlight">\(a(x)\)</span>, <span class="math notranslate nohighlight">\(b(x)\)</span> <strong>todo</strong> <em>Caratteristiche?</em></p>
 <div class="math notranslate nohighlight">
 \[\dfrac{d}{dx} \int_{a(x)}^{b(x)} f(y) \, dy = - a'(x) \, f(a(x)) + b'(x) f(b(x)) \]</div>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+</div>
+</div><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Dimostrazione<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
@@ -599,7 +603,7 @@ Dimostrazione<div class="sd-summary-down docutils">
 </details></div>
 <div class="section" id="integrali-fondamentali">
 <span id="infinitesimal-calculus-integrals-fund"></span><h2>Integrali fondamentali<a class="headerlink" href="#integrali-fondamentali" title="Permalink to this heading">#</a></h2>
-<p>Una volta provato il <a class="reference internal" href="#infinitesimal-calculus-derivatives-thm-fund"><span class="std std-ref">teorema fondamentale del calcolo infinitesimale</span></a>, si possono definire alcuni integrali fondamentali come l’operazione inversa alla derivazione applicata alle <a class="reference internal" href="derivatives.html#infinitesimal-calculus-derivatives-fund"><span class="std std-ref">derivate fondamentali</span></a></p>
+<p>Una volta dimostrato il <a class="reference internal" href="#infinitesimal-calculus-derivatives-thm-fund"><span class="std std-ref">teorema fondamentale del calcolo infinitesimale</span></a>, questo risultato può essere usato per valutare gli integrali fondamentali come l’operazione inversa alla derivazione applicata alle <a class="reference internal" href="derivatives.html#infinitesimal-calculus-derivatives-fund"><span class="std std-ref">derivate fondamentali</span></a></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
  \int x^n         \ dx &amp; = \frac{1}{n} x^{n+1} + C  \qquad (n \neq 0) \\ 

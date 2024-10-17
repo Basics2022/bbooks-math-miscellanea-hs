@@ -22,7 +22,7 @@ Si cercherà quindi di trattare l'argomento nella maniera più rigorosa possibil
 **Definizioni.**
 Un'equazione differenziale ordinaria è una funzione che coinvolge una funzione reale di una variabile reale, incognita, e le sue derivate. Formalmente una ODE può essere scritta come
 
-$$F(y^{(n)}(x), \dots y'(x), y(x), x) = 0 \quad , \qquad x in [x_0, x_1]$$
+$$F(y^{(n)}(x), \dots y'(x), y(x), x) = 0 \quad , \qquad x \in [x_0, x_1]$$
 
 Il **grado** di una ODE è l'ordine massimo della derivata che compare nell'equazione.
 
