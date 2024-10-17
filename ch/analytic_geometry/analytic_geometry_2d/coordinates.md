@@ -51,3 +51,5 @@ $$\begin{aligned}
 \underline{x}'  & = R \, \underline{x}  \\
 \underline{x}'' & = \underline{x}' - \underline{x}'_{O''} = R \, \underline{x} - \underline{x}'_{O''} \\ 
 \end{aligned}$$
+
+**Altri esempi di coordinate e trasformazioni di coordinate.** **todo.** come esercizio?

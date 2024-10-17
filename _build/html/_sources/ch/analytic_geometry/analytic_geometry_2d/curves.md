@@ -1,9 +1,7 @@
 (geometry:analytic:2d:curves)=
 # Curve nel piano
 
-**todo.** migliorare la definizione.
-
-Una curva nello spazio euclideo $E^2$ è un luogo dei punti del piano che possono essere identificati con una funzione di una variabile indipendente.
+Una curva nello spazio euclideo $E^2$, nel piano, è un luogo dei punti del piano che possono essere identificati da una relazione tra le coordinate di un sistema di coordinate.
 
 **Esempi.** **todo.** grafici
 
@@ -14,7 +12,7 @@ Una curva nello spazio euclideo $E^2$ è un luogo dei punti del piano che posson
 -->
 
 ## Rappresentazioni di una curva
-Dato un sistema di coordinate $\{q^1, q^2\}$ che descrive il piano, una curva $\gamma$ può essere rappresentata in diverse maniere:
+Dato un sistema di coordinate $(q^1, q^2)$ che descrive il piano, una curva $\gamma$ può essere rappresentata in diverse maniere:
 
 **Rappresentazione esplicita.** 
 
@@ -30,7 +28,7 @@ $$F(q^1, q^2) = 0$$
 
 **Rappresentazione paramterica.** 
 
-$$\gamma(s) :\begin{cases} q^1 = f^1(s) \\ q^2 = f^2(s) \end{cases}$$
+$$\gamma(s): \ \begin{cases} q^1 = f^1(s) \\ q^2 = f^2(s) \end{cases}$$
 
 ## Esempi
 
