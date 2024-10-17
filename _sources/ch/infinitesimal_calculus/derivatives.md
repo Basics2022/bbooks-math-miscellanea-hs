@@ -6,11 +6,11 @@
 
 **Rapporto incrementale.** Il rapporto incrementale di una funzione reale nel punto $x$ viene definito come il rapporto tra la differenza dei valori della funzione e la differenza del valore della variabile indipendente
 
-$$R[f(\cdot), x, a] := \dfrac{f(x+a)-f(x)}{a} \ .$$ (infinitesimal-calculus:derivatives:def)
+$$R[f(\cdot), x, a] := \dfrac{f(x+a)-f(x)}{a} \ .$$ (infinitesimal-calculus:derivatives:def_delta)
 
 **Derivata.** La derivata di una funzione reale in un punto $x$ viene definita come il limite del rapporto incrementale, per l'incremento della variabile indipendente che tende a zero,
 
-$$f'(x) = \dfrac{d f}{d x}(x) := \lim_{a \rightarrow 0} \dfrac{f(x+a)-f(x)}{a} \ .$$
+$$f'(x) = \dfrac{d f}{d x}(x) := \lim_{a \rightarrow 0} \dfrac{f(x+a)-f(x)}{a} \ .$$ (infinitesimal-calculus:derivatives:def)
 
 **todo** *In generale, la derivata di una funzione reale è un'altra funzione reale.*
 

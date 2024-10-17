@@ -465,41 +465,41 @@ document.write(`
 <div class="section" id="definizione">
 <span id="infinitesimal-calculus-derivatives-def"></span><h2>Definizione<a class="headerlink" href="#definizione" title="Permalink to this heading">#</a></h2>
 <p><strong>Rapporto incrementale.</strong> Il rapporto incrementale di una funzione reale nel punto <span class="math notranslate nohighlight">\(x\)</span> viene definito come il rapporto tra la differenza dei valori della funzione e la differenza del valore della variabile indipendente</p>
-<div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-derivatives-def">
-<span class="eqno">(1)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-def" title="Permalink to this equation">#</a></span>\[R[f(\cdot), x, a] := \dfrac{f(x+a)-f(x)}{a} \ .\]</div>
+<div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-derivatives-def-delta">
+<span class="eqno">(1)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-def-delta" title="Permalink to this equation">#</a></span>\[R[f(\cdot), x, a] := \dfrac{f(x+a)-f(x)}{a} \ .\]</div>
 <p><strong>Derivata.</strong> La derivata di una funzione reale in un punto <span class="math notranslate nohighlight">\(x\)</span> viene definita come il limite del rapporto incrementale, per l’incremento della variabile indipendente che tende a zero,</p>
-<div class="math notranslate nohighlight">
-\[f'(x) = \dfrac{d f}{d x}(x) := \lim_{a \rightarrow 0} \dfrac{f(x+a)-f(x)}{a} \ .\]</div>
+<div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-derivatives-def">
+<span class="eqno">(2)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-def" title="Permalink to this equation">#</a></span>\[f'(x) = \dfrac{d f}{d x}(x) := \lim_{a \rightarrow 0} \dfrac{f(x+a)-f(x)}{a} \ .\]</div>
 <p><strong>todo</strong> <em>In generale, la derivata di una funzione reale è un’altra funzione reale.</em></p>
 </div>
 <div class="section" id="regole-di-derivazione">
 <span id="infinitesimal-calculus-derivatives-rules"></span><h2>Regole di derivazione<a class="headerlink" href="#regole-di-derivazione" title="Permalink to this heading">#</a></h2>
-<p>Usando la definizione <a class="reference internal" href="#equation-infinitesimal-calculus-derivatives-def">(1)</a> di derivata e le proprietà dei limiti, è possibile dimostrare le seguenti proprietà</p>
+<p>Usando la definizione <a class="reference internal" href="#equation-infinitesimal-calculus-derivatives-def">(2)</a> di derivata e le proprietà dei limiti, è possibile dimostrare le seguenti proprietà</p>
 <ul class="simple">
 <li><p>linearità</p></li>
 </ul>
 <div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-derivatives-rules-linearity">
-<span class="eqno">(2)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-rules-linearity" title="Permalink to this equation">#</a></span>\[\big( a \, f(x) + b \, g(x) \big)' = a \, f'(x) + b \, g'(x)\]</div>
+<span class="eqno">(3)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-rules-linearity" title="Permalink to this equation">#</a></span>\[\big( a \, f(x) + b \, g(x) \big)' = a \, f'(x) + b \, g'(x)\]</div>
 <ul class="simple">
 <li><p>derivata del prodotto di funzioni</p></li>
 </ul>
 <div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-derivatives-rules-product">
-<span class="eqno">(3)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-rules-product" title="Permalink to this equation">#</a></span>\[\Bigl( f(x) g(x) \Bigr)' = f'(x) g(x) + f(x) g'(x)\]</div>
+<span class="eqno">(4)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-rules-product" title="Permalink to this equation">#</a></span>\[\Bigl( f(x) g(x) \Bigr)' = f'(x) g(x) + f(x) g'(x)\]</div>
 <ul class="simple">
 <li><p>derivata del rapporto di funzioni</p></li>
 </ul>
 <div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-derivatives-rules-division">
-<span class="eqno">(4)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-rules-division" title="Permalink to this equation">#</a></span>\[\Big( \frac{f(x)}{g(x)} \Big)' = \frac{f'(x) g(x) - f(x) g'(x)}{g^2(x)}\]</div>
+<span class="eqno">(5)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-rules-division" title="Permalink to this equation">#</a></span>\[\Big( \frac{f(x)}{g(x)} \Big)' = \frac{f'(x) g(x) - f(x) g'(x)}{g^2(x)}\]</div>
 <ul class="simple">
 <li><p>derivata della funzione composta</p></li>
 </ul>
 <div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-derivatives-rules-composite">
-<span class="eqno">(5)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-rules-composite" title="Permalink to this equation">#</a></span>\[\frac{d}{dx} f\big( g(x) \big) = \frac{d f}{dy}\Big|_{y=g(x)} \dfrac{d g}{d x}\Big|_{x}\]</div>
+<span class="eqno">(6)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-rules-composite" title="Permalink to this equation">#</a></span>\[\frac{d}{dx} f\big( g(x) \big) = \frac{d f}{dy}\Big|_{y=g(x)} \dfrac{d g}{d x}\Big|_{x}\]</div>
 <ul class="simple">
 <li><p>derivata della funzione inversa, <span class="math notranslate nohighlight">\(y = f(x)\)</span>, <span class="math notranslate nohighlight">\(x = f^{-1}(y)\)</span></p></li>
 </ul>
 <div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-derivatives-rules-inverse">
-<span class="eqno">(6)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-rules-inverse" title="Permalink to this equation">#</a></span>\[ \dfrac{d f^{-1}}{d y}\bigg|_{y = f(x)} = \dfrac{1}{ \dfrac{d y}{d x}}\bigg_{x} \ .\]</div>
+<span class="eqno">(7)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-rules-inverse" title="Permalink to this equation">#</a></span>\[ \dfrac{d f^{-1}}{d y}\bigg|_{y = f(x)} = \dfrac{1}{ \dfrac{d y}{d x}}\bigg_{x} \ .\]</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Dimostrazione della linearità dell’operazione di derivazione<div class="sd-summary-down docutils">
@@ -543,7 +543,7 @@ Dimostrazione della regola della funzione inversa<div class="sd-summary-down doc
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Si usa la regola <a class="reference internal" href="#equation-infinitesimal-calculus-derivatives-rules-composite">(5)</a> di derivazione della funzione composta applicata alla relazione</p>
+<p class="sd-card-text">Si usa la regola <a class="reference internal" href="#equation-infinitesimal-calculus-derivatives-rules-composite">(6)</a> di derivazione della funzione composta applicata alla relazione</p>
 <div class="math notranslate nohighlight">
 \[x = f^{-1} \left( f(x) \right)\]</div>
 <p class="sd-card-text">che caratterizza la funzione inversa <span class="math notranslate nohighlight">\(f^{-1}\)</span>. Derivando entrambi i termini della relazione rispetto alla variabile indipendente <span class="math notranslate nohighlight">\(x\)</span> si ottiene</p>
