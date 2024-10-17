@@ -35,11 +35,33 @@ $$\Big( \frac{f(x)}{g(x)} \Big)' = \frac{f'(x) g(x) - f(x) g'(x)}{g^2(x)}$$ (inf
 
 $$\frac{d}{dx} f\big( g(x) \big) = \frac{d f}{dy}\Big|_{y=g(x)} \dfrac{d g}{d x}\Big|_{x}$$ (infinitesimal-calculus:derivatives:rules:composite)
 
-- derivata della funzione inversa
+- derivata della funzione inversa, $y = f(x)$, $x = f^{-1}(y)$
 
-$$\frac{d}{dx} f\big( g(x) \big) = \frac{d f}{dy}\Big|_{y=g(x)} \dfrac{d g}{d x}\Big|_{x}$$ (infinitesimal-calculus:derivatives:rules:inverse)
+$$$$ (infinitesimal-calculus:derivatives:rules:inverse)
 
+```{dropdown} Dimostrazione della linearità dell'operazione di derivazione
+```
+```{dropdown} Dimostrazione della regola del prodotto
+```
+```{dropdown} Dimostrazione della regola del quoziente
+```
+```{dropdown} Dimostrazione della regola della funzione composta
 
+```
+```{dropdown} Dimostrazione della regola della funzione inversa
+Si usa la regola di derivazione della funzione composta applicata alla relazione 
+
+$$x = f^{-1} \left( f(x) \right)$$
+
+che caratterizza la funzione inversa $f^{-1}$. Derivando entrambi i termini della relazione rispetto alla variabile indipendente $x$ si ottiene
+
+$$1 = \dfrac{d f^{-1}}{d y}\bigg|_{y = f(x)} \, \dfrac{d f(x)}{d x} \ ,$$
+
+dalla quale segue immediatamente la regola di derivazione della funzione inversa
+
+$$ \dfrac{d f^{-1}}{d y}\bigg|_{y = f(x)} = \dfrac{1}{ \dfrac{d y}{d x}} \ .$$
+
+```
 
 (infinitesimal-calculus:derivatives:thm)=
 ## Teoremi
