@@ -40,26 +40,34 @@ $$\int_a^b \big( \alpha f(x) + \beta g(x) \big) \ dx = \alpha \int_a^b f(x) \ dx
 
 - additività sull'intervallo
 
-$$\int_a^b f(x) \ dx + \int_b^c f(x) \ dx = \int_a^c f(x) \ dx \ ,$$
+$$\int_a^b f(x) \ dx + \int_b^c f(x) \ dx = \int_a^c f(x) \ dx \ ,$$ (infinitesimal-calculus:integrals:prop:add)
 
 - valore assoluto dell'integrale è minore dell'integrale del valore assoluto
 
-$$\left| \int_a^b f(x) \ dx \right| \le \int_a^b | f(x) | \ dx \ ,$$
+$$\left| \int_a^b f(x) \ dx \right| \le \int_a^b | f(x) | \ dx \ ,$$ (infinitesimal-calculus:integrals:prop:abs)
+
+- scambio degli estremi di integrazione
+
+$$\int_{x=a}^{b} f(x) dx = - \int_{x=b}^{a} f(x) \, dx$$ (infinitesimal-calculus:integrals:prop:swap)
 
 ### Integrale indefinito
-Usando la proprietà dell'integrale definito,
+Usando la proprietà {eq}`infinitesimal-calculus:integrals:prop:add` di additività sull'intervallo dell'integrale definito,
 
 $$\int_a^x f(t) \ dt = \int_a^b f(t) \ dt + \int_b^x f(t) \ dt \ , $$
 
-si osserva che i due integrali con estremo superiore $x$ e diverso estremo inferiore differiscono solo per una costante, $\int_{a}^{b} f(t) \ dt$. Data la funzione $f(x)$ e il valore $a$ come paramtetro, si definisce una funzione di $x$ 
+si osserva che i due integrali con estremo superiore $x$ e diverso estremo inferiore differiscono solo per una quantità indipendente da $x$, $\int_{a}^{b} f(t) \ dt$. Data la funzione $f(x)$ e il valore $a$ come paramtetro, si definisce una funzione di $x$ 
 
 $$F(x;a) := \int_a^x f(t) \ dt \ .$$
 
-Usando questa definizione, è immediato dimostrare che l'integrale definito $\int_{b}^{c} f(t) \ dt$ è uguale alla differenza della funzione $F(\cdot; a)$ calcolata nei due estremi,
+Usando questa definizione, è immediato dimostrare che l'integrale definito $\int_{a}^{b} f(t) \ dt$ è uguale alla differenza della funzione $F(\cdot; a)$ calcolata nei due estremi,
 
-$$\int_{b}^{c} f(t) \ dt = F(c;a) - F(b;a) \ ,$$
+$$\begin{aligned}
+  \int_{a}^{x} f(t) \ dt & = \int_{b}^{x} f(t) dt + \int_{a}^{b} f(t) dt = \\ 
+                         & = \int_{b}^{x} f(t) dt - \int_{b}^{a} f(t) dt = \\
+                         & = F(x;b) - F(a;b) \ ,
+\end{aligned}$$
 
-e che questo risultato è indipendente dal valore $a$. 
+e che questo risultato è indipendente dal valore $b$. 
 
 **TODO** *Definizione di primitiva*
 
