@@ -114,7 +114,6 @@ Date le funzioni $f, g: [a,b] \rightarrow \mathbb{R}$ continue e derivabili in o
 
 (infinitesimal-calculus:derivatives:thm:hopital)=
 ```{prf:theorem} Teorema di de l'Hopital (Bernoulli)
-**TODO** *Controllare l'enunciato*
 Siano $f(x), g(x): [a,b] \rightarrow \mathbb{R}$ funzioni reali di variabile reale continue in $[a,b]$ e derivabili in $(a,b) \backslash \{ x_0 \}$.
 
 $$\begin{aligned}
@@ -129,6 +128,8 @@ $$ \lim_{x \rightarrow x_0} \frac{f'(x)}{g'(x)} = L \quad \text{finito}$$
 allora
 
 $$ \lim_{x \rightarrow x_0} \frac{f(x)}{g(x)} = L \ . $$
+
+**todo** Controllare l'enunciato
 ```
 ```{dropdown} Dimostrazione
 **todo**
@@ -138,6 +139,7 @@ $$ \lim_{x \rightarrow x_0} \frac{f(x)}{g(x)} = L \ . $$
 
 (infinitesimal-calculus:derivatives:fund)=
 ## Derivate fondamentali
+Usando i [limiti fondamentali](infinitesimal-calculus:limits:fund), vengono calcolate le derivate fondamentali, che a loro volta permettono il calcolo degli [integrali fondamentali](infinitesimal-calculus:integrals:fund). Le derivate fondamentali e la loro combinazione con le [regole di derivazione](infinitesimal-calculus:derivatives:rules) permettono la derivazione di funzioni generiche. Le derivate fondamentali sono:
 
 $$\begin{aligned}
 f(x) & = x^n    \qquad & \qquad f'(x) & = n x^{n-1}   \\ 
@@ -146,6 +148,36 @@ f(x) & = \ln x  \qquad & \qquad f'(x) & = \frac{1}{x} \\
 f(x) & = \sin x \qquad & \qquad f'(x) & = \cos x      \\ 
 f(x) & = \cos x \qquad & \qquad f'(x) & =-\sin x         
 \end{aligned}$$ (infinitesimal-calculus:derivatives:fund)
+
+```{dropdown} Dimostrazione di $(x^n)'$
+```
+```{dropdown} Dimostrazione di $(e^x)'$
+```
+```{dropdown} Dimostrazione di $(\ln x)'$
+```
+```{dropdown} Dimostrazione di $(\sin x)'$
+$$\begin{aligned}
+Usando le formule di somma delle funzioni armoniche, **todo** ref, e gli infinitesimi delle funzioni $\sin x$, $\cos x$ per $x\rightarrow 0$,
+  \dfrac{d}{dx} \sin(x) 
+  & = \lim_{\varepsilon \rightarrow 0}  \dfrac{\sin(x+\varepsilon) - \sin x}{\varepsilon} = \\
+  & = \lim_{\varepsilon \rightarrow 0} \dfrac{\sin x \cos \varepsilon + \cos x \sin \varepsilon - \sin x}{\varepsilon} = \\
+  & = \lim_{\varepsilon \rightarrow 0} \dfrac{\sin x \left( 1 - \frac{\varepsilon^2}{2} )\right + \cos x \varepsilon - \sin x}{\varepsilon} = \\
+  & = \lim_{\varepsilon \rightarrow 0} \left( \cos x + O(\varepsilon) \right) = \\
+  & = \cos x \ .
+\end{aligned}$$
+```
+```{dropdown} Dimostrazione di $(\cos x)'$
+Usando le formule di somma delle funzioni armoniche, **todo** ref, e gli infinitesimi delle funzioni $\sin x$, $\cos x$ per $x\rightarrow 0$,
+  \dfrac{d}{dx} \cos(x) 
+  & = \lim_{\varepsilon \rightarrow 0}  \dfrac{\cos(x+\varepsilon) - \cossin x}{\varepsilon} = \\
+  & = \lim_{\varepsilon \rightarrow 0} \dfrac{\cos x \cos \varepsilon - \sin x \sin \varepsilon - \sin x}{\varepsilon} = \\
+  & = \lim_{\varepsilon \rightarrow 0} \dfrac{\cos x \left( 1 - \frac{\varepsilon^2}{2} )\right - \sin x \varepsilon - \cos x}{\varepsilon} = \\
+  & = \lim_{\varepsilon \rightarrow 0} \left( - \sin x + O(\varepsilon) \right) = \\
+  & = - \sin x \ .
+\end{aligned}$$
+```
+
+
 
 
 
