@@ -149,29 +149,29 @@ f(x) & = \sin x \qquad & \qquad f'(x) & = \cos x      \\
 f(x) & = \cos x \qquad & \qquad f'(x) & =-\sin x         
 \end{aligned}$$ (infinitesimal-calculus:derivatives:fund)
 
-```{dropdown} Dimostrazione di $(x^n)'$
+```{dropdown} Dimostrazione di $\ (x^n)'$
 ```
-```{dropdown} Dimostrazione di $(e^x)'$
+```{dropdown} Dimostrazione di $\ (e^x)'$
 ```
-```{dropdown} Dimostrazione di $(\ln x)'$
+```{dropdown} Dimostrazione di $\ (\ln x)'$
 ```
-```{dropdown} Dimostrazione di $(\sin x)'$
+```{dropdown} Dimostrazione di $\ (\sin x)'$
 $$\begin{aligned}
 Usando le formule di somma delle funzioni armoniche, **todo** ref, e gli infinitesimi delle funzioni $\sin x$, $\cos x$ per $x\rightarrow 0$,
   \dfrac{d}{dx} \sin(x) 
   & = \lim_{\varepsilon \rightarrow 0}  \dfrac{\sin(x+\varepsilon) - \sin x}{\varepsilon} = \\
   & = \lim_{\varepsilon \rightarrow 0} \dfrac{\sin x \cos \varepsilon + \cos x \sin \varepsilon - \sin x}{\varepsilon} = \\
-  & = \lim_{\varepsilon \rightarrow 0} \dfrac{\sin x \left( 1 - \frac{\varepsilon^2}{2} )\right + \cos x \varepsilon - \sin x}{\varepsilon} = \\
+  & = \lim_{\varepsilon \rightarrow 0} \dfrac{\sin x \left( 1 - \frac{\varepsilon^2}{2} \right) + \cos x \varepsilon - \sin x}{\varepsilon} = \\
   & = \lim_{\varepsilon \rightarrow 0} \left( \cos x + O(\varepsilon) \right) = \\
   & = \cos x \ .
 \end{aligned}$$
 ```
-```{dropdown} Dimostrazione di $(\cos x)'$
+```{dropdown} Dimostrazione di $\ (\cos x)'$
 Usando le formule di somma delle funzioni armoniche, **todo** ref, e gli infinitesimi delle funzioni $\sin x$, $\cos x$ per $x\rightarrow 0$,
   \dfrac{d}{dx} \cos(x) 
   & = \lim_{\varepsilon \rightarrow 0}  \dfrac{\cos(x+\varepsilon) - \cossin x}{\varepsilon} = \\
   & = \lim_{\varepsilon \rightarrow 0} \dfrac{\cos x \cos \varepsilon - \sin x \sin \varepsilon - \sin x}{\varepsilon} = \\
-  & = \lim_{\varepsilon \rightarrow 0} \dfrac{\cos x \left( 1 - \frac{\varepsilon^2}{2} )\right - \sin x \varepsilon - \cos x}{\varepsilon} = \\
+  & = \lim_{\varepsilon \rightarrow 0} \dfrac{\cos x \left( 1 - \frac{\varepsilon^2}{2} \right) - \sin x \varepsilon - \cos x}{\varepsilon} = \\
   & = \lim_{\varepsilon \rightarrow 0} \left( - \sin x + O(\varepsilon) \right) = \\
   & = - \sin x \ .
 \end{aligned}$$
