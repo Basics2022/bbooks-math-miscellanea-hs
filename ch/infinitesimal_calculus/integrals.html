@@ -511,17 +511,17 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[\int_a^x f(t) \ dt = \int_a^b f(t) \ dt + \int_b^x f(t) \ dt \ , \]</div>
 <p>si osserva che i due integrali con estremo superiore <span class="math notranslate nohighlight">\(x\)</span> e diverso estremo inferiore differiscono solo per una quantità indipendente da <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(\int_{a}^{b} f(t) \ dt\)</span>. Data la funzione <span class="math notranslate nohighlight">\(f(x)\)</span> e il valore <span class="math notranslate nohighlight">\(a\)</span> come paramtetro, si definisce una funzione di <span class="math notranslate nohighlight">\(x\)</span></p>
-<div class="math notranslate nohighlight">
-\[F(x;a) := \int_a^x f(t) \ dt \ .\]</div>
-<p>Usando questa definizione, è immediato dimostrare che l’integrale definito <span class="math notranslate nohighlight">\(\int_{a}^{b} f(t) \ dt\)</span> è uguale alla differenza della funzione <span class="math notranslate nohighlight">\(F(\cdot; a)\)</span> calcolata nei due estremi,</p>
+<div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-integrals-primi">
+<span class="eqno">(6)<a class="headerlink" href="#equation-infinitesimal-calculus-integrals-primi" title="Permalink to this equation">#</a></span>\[F(x;a) := \int_a^x f(t) \ dt \ .\]</div>
+<p>Usando questa definizione, è immediato dimostrare che l’integrale definito <span class="math notranslate nohighlight">\(\int_{a}^{b} f(t) \ dt\)</span> è uguale alla differenza della funzione <span class="math notranslate nohighlight">\(F(\cdot; b)\)</span> calcolata nei due estremi,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
-  \int_{a}^{x} f(t) \ dt &amp; = \int_{b}^{x} f(t) dt + \int_{a}^{b} f(t) dt = \\ 
-                         &amp; = \int_{b}^{x} f(t) dt - \int_{b}^{a} f(t) dt = \\
-                         &amp; = F(x;b) - F(a;b) \ ,
+  \int_{a}^{b} f(t) \ dt &amp; = \int_{c}^{b} f(t) dt + \int_{a}^{c} f(t) dt = \\ 
+                         &amp; = \int_{c}^{b} f(t) dt - \int_{c}^{a} f(t) dt = \\
+                         &amp; = F(b;c) - F(a;c) \ ,
 \end{aligned}\end{split}\]</div>
-<p>e che questo risultato è indipendente dal valore <span class="math notranslate nohighlight">\(b\)</span>.</p>
-<p><strong>TODO</strong> <em>Definizione di primitiva</em></p>
+<p>e che questo risultato è indipendente dal valore <span class="math notranslate nohighlight">\(c\)</span>, usato come parametro nella definizione della funzione <span class="math notranslate nohighlight">\(F\)</span>.</p>
+<p><strong>todo</strong> <em>Definizione di primitiva</em></p>
 <div class="math notranslate nohighlight">
 \[\int^x f(t) \ dt = F(x) + C\]</div>
 </div>

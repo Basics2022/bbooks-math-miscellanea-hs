@@ -57,19 +57,19 @@ $$\int_a^x f(t) \ dt = \int_a^b f(t) \ dt + \int_b^x f(t) \ dt \ , $$
 
 si osserva che i due integrali con estremo superiore $x$ e diverso estremo inferiore differiscono solo per una quantità indipendente da $x$, $\int_{a}^{b} f(t) \ dt$. Data la funzione $f(x)$ e il valore $a$ come paramtetro, si definisce una funzione di $x$ 
 
-$$F(x;a) := \int_a^x f(t) \ dt \ .$$
+$$F(x;a) := \int_a^x f(t) \ dt \ .$$ (infinitesimal-calculus:integrals:primi    )
 
-Usando questa definizione, è immediato dimostrare che l'integrale definito $\int_{a}^{b} f(t) \ dt$ è uguale alla differenza della funzione $F(\cdot; a)$ calcolata nei due estremi,
+Usando questa definizione, è immediato dimostrare che l'integrale definito $\int_{a}^{b} f(t) \ dt$ è uguale alla differenza della funzione $F(\cdot; b)$ calcolata nei due estremi,
 
 $$\begin{aligned}
-  \int_{a}^{x} f(t) \ dt & = \int_{b}^{x} f(t) dt + \int_{a}^{b} f(t) dt = \\ 
-                         & = \int_{b}^{x} f(t) dt - \int_{b}^{a} f(t) dt = \\
-                         & = F(x;b) - F(a;b) \ ,
+  \int_{a}^{b} f(t) \ dt & = \int_{c}^{b} f(t) dt + \int_{a}^{c} f(t) dt = \\ 
+                         & = \int_{c}^{b} f(t) dt - \int_{c}^{a} f(t) dt = \\
+                         & = F(b;c) - F(a;c) \ ,
 \end{aligned}$$
 
-e che questo risultato è indipendente dal valore $b$. 
+e che questo risultato è indipendente dal valore $c$, usato come parametro nella definizione della funzione $F$. 
 
-**TODO** *Definizione di primitiva*
+**todo** *Definizione di primitiva*
 
 $$\int^x f(t) \ dt = F(x) + C$$
 
