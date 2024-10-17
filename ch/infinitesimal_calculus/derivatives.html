@@ -639,7 +639,7 @@ Dimostrazione<div class="sd-summary-down docutils">
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><strong>todo</strong></p>
 </div>
-</details><p><strong>Oss.</strong> Il teorema di de l’Hopital può essere applicato anche in successione, più di una volta, fermandosi al primo rapporto di derivate dello stesso ordine che non produe una forma indeterminata.</p>
+</details><p><strong>Oss.</strong> Il teorema di de l’Hopital può essere applicato anche in successione, più di una volta, fermandosi al primo rapporto di derivate dello stesso ordine che non produce una forma indeterminata.</p>
 </div>
 <div class="section" id="derivate-fondamentali">
 <span id="infinitesimal-calculus-derivatives-fund"></span><h2>Derivate fondamentali<a class="headerlink" href="#derivate-fondamentali" title="Permalink to this heading">#</a></h2>
@@ -659,6 +659,15 @@ Dimostrazione di <span class="math notranslate nohighlight">\(\ (x^n)'\)</span><
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Usando la formua binomiale $<span class="math notranslate nohighlight">\((x + \varepsilon)^n = x^n + n x^{n-1} \varepsilon + f(\varepsilon^2, \varepsilon^3, \dots)\)</span>$ <strong>todo</strong> <em>aggiungere riferimento</em>,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \dfrac{d}{dx} x^n
+  &amp; = \lim_{\varepsilon \rightarrow 0}  \dfrac{(x+\varepsilon)^{n} - x^n}{\varepsilon} = \\
+  &amp; = \lim_{\varepsilon \rightarrow 0}  \dfrac{x^n + n x^{n-1} \varepsilon + o(\varepsilon) - x^n}{\varepsilon} = \\
+  &amp; = \lim_{\varepsilon \rightarrow 0}  \left( n x^{n-1} + O(\varepsilon) \right) = \\
+  &amp; = n x^{n-1} \ .
+\end{aligned}\end{split}\]</div>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -667,6 +676,16 @@ Dimostrazione di <span class="math notranslate nohighlight">\(\ (e^x)'\)</span><
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Usando le proprietà della funzione esponenziale e il limite <span class="math notranslate nohighlight">\(e^{\varepsilon} - 1 \sim \varepsilon\)</span> per <span class="math notranslate nohighlight">\(\varepsilon \rightarrow 0\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \dfrac{d}{dx} e^x       
+  &amp; = \lim_{\varepsilon \rightarrow 0}  \dfrac{e^{x+\varepsilon} - e^x}{\varepsilon} = \\
+  &amp; = \lim_{\varepsilon \rightarrow 0}  \dfrac{e^x \left( e^{\varepsilon} - 1 \right)}{\varepsilon} = \\
+  &amp; = e^x \lim_{\varepsilon \rightarrow 0}  \dfrac{\varepsilon + o(\varepsilon)}{\varepsilon} = \\
+  &amp; = e^x \lim_{\varepsilon \rightarrow 0}  \left( 1 + O(\varepsilon) \right) = \\
+  &amp; = e^x \ .
+\end{aligned}\end{split}\]</div>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -675,6 +694,16 @@ Dimostrazione di <span class="math notranslate nohighlight">\(\ (\ln x)'\)</span
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Usando le proprietà della funzione logaritmo naturale e il limite <span class="math notranslate nohighlight">\(\ln(1 + \varepsilon) \sim \varepsilon\)</span> per <span class="math notranslate nohighlight">\(\varepsilon \rightarrow 0\)</span>, per <span class="math notranslate nohighlight">\(x &gt; 0\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \dfrac{d}{dx} \ln x       
+  &amp; = \lim_{\varepsilon \rightarrow 0}  \dfrac{\ln(x+\varepsilon) - \ln x}{\varepsilon} = \\
+  &amp; = \lim_{\varepsilon \rightarrow 0}  \dfrac{\ln \left(1 + \frac{\varepsilon}{x} \right)}{\varepsilon} = \\
+  &amp; = \lim_{\varepsilon \rightarrow 0}  \dfrac{\frac{\varepsilon}{x} + o(\varepsilon)}{\varepsilon} = \\
+  &amp; = \lim_{\varepsilon \rightarrow 0}  \left( \frac{1}{x} + O(\varepsilon) \right) = \\
+  &amp; = \frac{1}{x} \ .
+\end{aligned}\end{split}\]</div>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -683,13 +712,13 @@ Dimostrazione di <span class="math notranslate nohighlight">\(\ (\sin x)'\)</spa
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Usando le formule di somma delle funzioni armoniche, <strong>todo</strong> ref, e gli infinitesimi delle funzioni <span class="math notranslate nohighlight">\(\sin x\)</span>, <span class="math notranslate nohighlight">\(\cos x\)</span> per <span class="math notranslate nohighlight">\(x\rightarrow 0\)</span>,</p>
+<p class="sd-card-text">Usando le formule di somma delle funzioni armoniche, <strong>todo</strong> ref, e gli infinitesimi delle funzioni <span class="math notranslate nohighlight">\(\sin \varepsilon \sim \varepsilon\)</span>, <span class="math notranslate nohighlight">\(\cos \varepsilon \sim 1 - \frac{\varepsilon^2}{2}\)</span> per <span class="math notranslate nohighlight">\(\varepsilon \rightarrow 0\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
   \dfrac{d}{dx} \sin(x) 
   &amp; = \lim_{\varepsilon \rightarrow 0}  \dfrac{\sin(x+\varepsilon) - \sin x}{\varepsilon} = \\
   &amp; = \lim_{\varepsilon \rightarrow 0} \dfrac{\sin x \cos \varepsilon + \cos x \sin \varepsilon - \sin x}{\varepsilon} = \\
-  &amp; = \lim_{\varepsilon \rightarrow 0} \dfrac{\sin x \left( 1 - \frac{\varepsilon^2}{2} \right) + \cos x \varepsilon - \sin x}{\varepsilon} = \\
+  &amp; = \lim_{\varepsilon \rightarrow 0} \dfrac{\sin x \left( 1 - \frac{\varepsilon^2}{2} \right) + \varepsilon \, \cos x - \sin x}{\varepsilon} = \\
   &amp; = \lim_{\varepsilon \rightarrow 0} \left( \cos x + O(\varepsilon) \right) = \\
   &amp; = \cos x \ .
 \end{aligned}\end{split}\]</div>
@@ -701,13 +730,13 @@ Dimostrazione di <span class="math notranslate nohighlight">\(\ (\cos x)'\)</spa
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Usando le formule di somma delle funzioni armoniche, <strong>todo</strong> ref, e gli infinitesimi delle funzioni <span class="math notranslate nohighlight">\(\sin x\)</span>, <span class="math notranslate nohighlight">\(\cos x\)</span> per <span class="math notranslate nohighlight">\(x\rightarrow 0\)</span>,</p>
+<p class="sd-card-text">Usando le formule di somma delle funzioni armoniche, <strong>todo</strong> ref, e gli infinitesimi delle funzioni <span class="math notranslate nohighlight">\(\sin \varepsilon \sim \varepsilon\)</span>, <span class="math notranslate nohighlight">\(\cos \varepsilon \sim 1 - \frac{\varepsilon^2}{2}\)</span> per <span class="math notranslate nohighlight">\(\varepsilon \rightarrow 0\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
   \dfrac{d}{dx} \cos(x) 
   &amp; = \lim_{\varepsilon \rightarrow 0}  \dfrac{\cos(x+\varepsilon) - \cos x}{\varepsilon} = \\
   &amp; = \lim_{\varepsilon \rightarrow 0} \dfrac{\cos x \cos \varepsilon - \sin x \sin \varepsilon - \sin x}{\varepsilon} = \\
-  &amp; = \lim_{\varepsilon \rightarrow 0} \dfrac{\cos x \left( 1 - \frac{\varepsilon^2}{2} \right) - \sin x \varepsilon - \cos x}{\varepsilon} = \\
+  &amp; = \lim_{\varepsilon \rightarrow 0} \dfrac{\cos x \left( 1 - \frac{\varepsilon^2}{2} \right) - \varepsilon \, \sin x - \cos x}{\varepsilon} = \\
   &amp; = \lim_{\varepsilon \rightarrow 0} \left( - \sin x + O(\varepsilon) \right) = \\
   &amp; = - \sin x \ .
 \end{aligned}\end{split}\]</div>
