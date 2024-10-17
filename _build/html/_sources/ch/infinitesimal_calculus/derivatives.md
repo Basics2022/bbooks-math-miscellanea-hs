@@ -134,7 +134,7 @@ $$ \lim_{x \rightarrow x_0} \frac{f(x)}{g(x)} = L \ . $$
 ```{dropdown} Dimostrazione
 **todo**
 ```
-**Oss.** Il teorema di de l'Hopital può essere applicato anche in successione, più di una volta, fermandosi al primo rapporto di derivate dello stesso ordine che non produe una forma indeterminata.
+**Oss.** Il teorema di de l'Hopital può essere applicato anche in successione, più di una volta, fermandosi al primo rapporto di derivate dello stesso ordine che non produce una forma indeterminata.
 
 
 (infinitesimal-calculus:derivatives:fund)=
@@ -212,9 +212,6 @@ $$\begin{aligned}
 ```
 
 
-
-
-
 (infinitesimal-calculus:derivatives:higher)=
 ## Derivate di ordine superiore
 Nel calcolo delle derivate di ordine superiore non c'è nulla di speciale: una volta che si è in grado di calcolare la derivata di una funzione reale, la derivata di ordine $n$ viene calcolata applicando $n$ volte l'operatore derivata alla funzione.
@@ -224,16 +221,49 @@ Nel calcolo delle derivate di ordine superiore non c'è nulla di speciale: una v
 
 (infinitesimal-calculus:derivatives:taylor)=
 ### Espansioni in serie di Taylor e MacLaurin
-L'espansione in serie di MacEspansione in serie polinomiale di una funzione reale
+Le espansioni in serie di Taylor e di MacLaurin sono serie polinomiali che forniscono un'**approssimazione locale** di una funzione, *valida nell'intorno* (**todo** valutare questa espressione) di un punto.
+
+La **serie di Taylor** della funzione $f(x)$ in un intervallo centrato in $x_0$ è la serie
 
 $$\begin{aligned}
-f(x) & = f(0) + f'(0) x + \frac{f''(0)}{2!} x^2 + \dots + \frac{f^{(n)}(0)}{n!} x^n + o(x^n) = \\
- & = \sum_{k=0}^{n} \frac{f^{k}(0)}{k!} x^k + o(x^n)
+  T[f(x); x_0] & = \sum_{n=0}^{\infty} \dfrac{f^{(n)(x_0)}}{n!} (x-x_0)^n = \\
+       & = f(x_0) + f'(x_0) (x-x_0) + \dfrac{f''(x_0)^2}{2!} (x-x_0)^2 + \dots \ .
 \end{aligned}$$
 
-1/(1+x), -1/(1+x)^2, 2/(1+x)^3
+La serie di MacLaurin è la serie di Taylor centrata in $x_0 = 0$.
+
+La serie di Taylor troncata al $n$-esimo termine fornisce un'approssimazione locale della funzione $f(x)$ di ordine $n$, nel senso definito dal seguente teorema.
+```{prf:theorem} Approssimazione locale
+
+$$\lim_{x \rightarrow x_0} \frac{f(x) - T[f(x); x_0]}{x^n} = f^{(n)}(x_0) \ , $$
+
+$$f(x) = T[f(x); x_0] + o(x^n) \quad \text{ per } \quad x \rightarrow x_0$$
+
+```
+```{dropdown} Dimostrazione
+Usando il teorema di de l'Hopital, fino a quando il rapporto non è una forma indeterminata
+
+$$\begin{aligned}
+  \lim_{x \rightarrow x_0} \frac{f(x) - T[f(x); x_0]}{x^n}
+  & = \lim_{x \rightarrow x_0} \dfrac{f(x) - f(x_0) + f'(x_0) (x-x_0) + \frac{f''(x_0)}{2!} (x-x_0)^2 + \dots \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n}{x^n} = \text{(H)} = \\
+  & = \lim_{x \rightarrow x_0} \dfrac{f'(x) - f'(x_0) + \frac{f''(x_0)}{1!} (x-x_0) + \dots \frac{f^{(n)}(x_0)}{(n-1)!}(x-x_0)^{n-1}}{n \, x^{n-1}} = \text{(H)} = \\
+  & = \lim_{x \rightarrow x_0} \dfrac{f''(x) - f''(x_0) + \dots \frac{f^{(n)}(x_0)}{(n-2)!}(x-x_0)^{n-2}}{n \, (n-1) \, x^{n-1}} = \text{(H)} =\\
+  & = \dots \\
+  & = \lim_{x \rightarrow x_0} \dfrac{f^{(n)}(x) - f^{(n)}(x_0)}{n!} =  0 \ ,
+\end{aligned}$$
+
+si dimostra che il numeratore è un infinitesimo del denominatore. Usando la notazione dell'*"o piccolo"* per gli infinitesimi si può quindi scrivere l'approssimazione locale come:
+
+$$f(x) - T[f(x), x_0] = o\left((x-x_0)^n\right) \ ,$$
+
+o in maniera equivalente
+$$f(x) = T[f(x), x_0] + o\left((x-x_0)^n\right) \ .$$
+
+```
 
 #### Esempi
+La serie di MacLaurin per le funzioni interessate nei [limiti notevoli](infinitesimal-calculus:limits:fund) forniscono approssimazioni locali di ordine maggiore per $x \rightarrow 0$,
+
 $$\begin{aligned}
  \cos(x) & = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} + o(x^5) \\
  \sin(x) & = x - \frac{x^3}{3!} + \frac{x^5}{5!} + o(x^6) \\
@@ -242,7 +272,7 @@ $$\begin{aligned}
  e^x     & = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + \frac{x^5}{5!} + o(x^5)
 \end{aligned}$$
 
-**TODO** *Dimostrare la convergenza delle serie. Convergenza puntuale, convergenza uniforme (in un insieme di convergenza, di solito centrato in un punto e le cui dimensioni sono definite da un raggio di convergenza)*
+**todo** *Dimostrare la convergenza delle serie. Convergenza puntuale, convergenza uniforme (in un insieme di convergenza, di solito centrato in un punto e le cui dimensioni sono definite da un raggio di convergenza)*
 
 **Rivisitazione limiti notevoli**
 Per $x \rightarrow 0$
