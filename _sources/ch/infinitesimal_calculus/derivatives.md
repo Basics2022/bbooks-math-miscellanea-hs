@@ -37,7 +37,7 @@ $$\frac{d}{dx} f\big( g(x) \big) = \frac{d f}{dy}\Big|_{y=g(x)} \dfrac{d g}{d x}
 
 - derivata della funzione inversa, $y = f(x)$, $x = f^{-1}(y)$
 
-$$ \dfrac{d f^{-1}}{d y}\bigg|_{y = f(x)} = \dfrac{1}{ \dfrac{d y}{d x}}\bigg_{x} \ .$$ (infinitesimal-calculus:derivatives:rules:inverse)
+$$ \dfrac{d f^{-1}}{d y}\bigg|_{y = f(x)} = \dfrac{1}{ \dfrac{d y}{d x}}\bigg|_{x} \ .$$ (infinitesimal-calculus:derivatives:rules:inverse)
 
 ```{dropdown} Dimostrazione della linearità dell'operazione di derivazione
 **todo**
@@ -62,7 +62,7 @@ $$1 = \dfrac{d f^{-1}}{d y}\bigg|_{y = f(x)} \, \dfrac{d f(x)}{d x} \ ,$$
 
 dalla quale segue immediatamente la regola di derivazione della funzione inversa
 
-$$ \dfrac{d f^{-1}}{d y}\bigg|_{y = f(x)} = \dfrac{1}{ \dfrac{d y}{d x}}\bigg_{x} \ .$$
+$$ \dfrac{d f^{-1}}{d y}\bigg|_{y = f(x)} = \dfrac{1}{ \dfrac{d y}{d x}}\bigg|_{x} \ .$$
 
 ```
 
