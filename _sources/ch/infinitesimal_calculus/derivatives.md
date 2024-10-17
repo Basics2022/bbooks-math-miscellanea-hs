@@ -37,7 +37,7 @@ $$\frac{d}{dx} f\big( g(x) \big) = \frac{d f}{dy}\Big|_{y=g(x)} \dfrac{d g}{d x}
 
 - derivata della funzione inversa, $y = f(x)$, $x = f^{-1}(y)$
 
-$$$$ (infinitesimal-calculus:derivatives:rules:inverse)
+$$ \dfrac{d f^{-1}}{d y}\bigg|_{y = f(x)} = \dfrac{1}{ \dfrac{d y}{d x}}\bigg_{x} \ .$$ (infinitesimal-calculus:derivatives:rules:inverse)
 
 ```{dropdown} Dimostrazione della linearità dell'operazione di derivazione
 **todo**
@@ -52,7 +52,7 @@ $$$$ (infinitesimal-calculus:derivatives:rules:inverse)
 **todo**
 ```
 ```{dropdown} Dimostrazione della regola della funzione inversa
-Si usa la regola di derivazione della funzione composta applicata alla relazione 
+Si usa la regola {eq}`infinitesimal-calculus:derivatives:rules:composite` di derivazione della funzione composta applicata alla relazione 
 
 $$x = f^{-1} \left( f(x) \right)$$
 
@@ -62,7 +62,7 @@ $$1 = \dfrac{d f^{-1}}{d y}\bigg|_{y = f(x)} \, \dfrac{d f(x)}{d x} \ ,$$
 
 dalla quale segue immediatamente la regola di derivazione della funzione inversa
 
-$$ \dfrac{d f^{-1}}{d y}\bigg|_{y = f(x)} = \dfrac{1}{ \dfrac{d y}{d x}} \ .$$
+$$ \dfrac{d f^{-1}}{d y}\bigg|_{y = f(x)} = \dfrac{1}{ \dfrac{d y}{d x}}\bigg_{x} \ .$$
 
 ```
 
