@@ -82,26 +82,33 @@ dove la costante additiva $C$ tiene conto dell'arbitrarietà appena discussa.
 <!--
 (infinitesimal-calculus:derivatives:thm:avg)=
 ### Teorema della media
+:label: infinitesimal-calculus:derivatives:thm:avg
 -->
+(infinitesimal-calculus:derivatives:thm:avg)=
 ```{prf:theorem} Teorema della media
 
-**Enunciato.** Sia $f: [a,b] \in \mathbb{R} \rightarrow \mathbb{R}$ una funzione continua su $[a,b]$, allora esiste $c \in [a,b]$ tale che
+Sia $f: [a,b] \in \mathbb{R} \rightarrow \mathbb{R}$ una funzione continua su $[a,b]$, allora esiste $c \in [a,b]$ tale che
 
 $$\int_{a}^{b} f(x) dx = (b-a) f(c) $$
 ```
-**Dim.**
+
+```{dropdown} Dimostrazione
+
+```
 
 <!--
 (infinitesimal-calculus:derivatives:thm:fund)=
 ### Teorema fondamentale del calcolo integrale
+:label: infinitesimal-calculus:derivatives:thm:fund
 -->
-**Enunciato.**
+(infinitesimal-calculus:derivatives:thm:fund)=
 ```{prf:theorem} Teorema fondamentale del calcolo infinitesimale
 
 $$\dfrac{d}{dx} \int_{a}^{x} f(y) dy = f(x) $$
 
 ```
 
+```{dropdown} Dimostrazione
 **Dim.** Usando la [definizione di derivata](infinitesimal-calculus:derivatives:def), le [proprietà dell'integrale definito](infinitesimal-calculus:integrals:def:definite:prop) e il [teorema della media](infinitesimal-calculus:derivatives:thm:avg),
 
 $$\begin{aligned}
@@ -111,12 +118,14 @@ $$\begin{aligned}
 & = \lim_{\varepsilon \rightarrow 0 } f(\xi) = f(x) . \\
 \end{aligned}$$
 
+```
+
 **Derivata su dominio dipendente dalla variabile indipendente**
 Sia $x \in D$, e gli estremi di integrazione $a(x)$, $b(x)$ **TODO** *Caratteristiche?*
 
 $$\dfrac{d}{dx} \int_{a(x)}^{b(x)} f(y) \, dy = - a'(x) \, f(a(x)) + b'(x) f(b(x)) $$
 
-**Dim.**
+```{dropdown} Dimostrazione
 
 $$\begin{aligned}
 \dfrac{d}{dx} \int_{a(x)}^{b(x)} f(y) dy & = \lim_{\varepsilon \rightarrow 0 }\frac{1}{\varepsilon} \Big[ \int_{a(x+\varepsilon)}^{b(x+\varepsilon)} f(y) dy - \int_{a(x)}^{b(x)} f(y) dy \Big] = \\
@@ -129,6 +138,7 @@ $$\begin{aligned}
 & =  - a'(x) \, f(a(x)) +  b'(x) \, f(b(x))  \ .
 \end{aligned}$$
 
+```
 
 
 (infinitesimal-calculus:integrals:fund)=
