@@ -16,17 +16,17 @@ Dato un sistema di coordinate $(q^1, q^2)$ che descrive il piano, una curva $\ga
 
 **Rappresentazione esplicita.** 
 
-$$q^2 = f(q^1)$$
+$$\gamma: \ q^2 = f(q^1)$$
 
 **todo.** limiti di questa rappresentazione
 
 **Rappresentazione implicita.** 
 
-$$F(q^1, q^2) = 0$$
+$$\gamma: \ F(q^1, q^2) = 0$$
 
 **todo.** limiti di questa rappresentazione
 
-**Rappresentazione paramterica.** 
+**Rappresentazione parametrica.** 
 
 $$\gamma(s): \ \begin{cases} q^1 = f^1(s) \\ q^2 = f^2(s) \end{cases}$$
 
