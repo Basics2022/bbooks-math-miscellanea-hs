@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Punti nel piano &#8212; My sample book</title>
+    <title>Distanze e angoli &#8212; My sample book</title>
   
   
   
@@ -184,7 +184,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../euclidean_space.html">Spazio euclideo</a></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../analytic_geometry_2d.html">Geometria analitica nel piano</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="coordinates.html">Sistemi di coordinate</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Punti nel piano</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Distanze e angoli</a></li>
 <li class="toctree-l2"><a class="reference internal" href="curves.html">Curve nel piano</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lines.html">Rette nel piano</a></li>
 <li class="toctree-l2"><a class="reference internal" href="conics.html">Coniche</a></li>
@@ -419,7 +419,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Punti nel piano</h1>
+    <h1>Distanze e angoli</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -429,7 +429,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distanza">Distanza</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distanza-tra-punti">Distanza tra punti</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#angoli-tra-direzioni">Angoli tra direzioni</a></li>
 </ul>
             </nav>
         </div>
@@ -441,13 +442,26 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="punti-nel-piano">
-<span id="geometry-analytic-2d-points"></span><h1>Punti nel piano<a class="headerlink" href="#punti-nel-piano" title="Permalink to this heading">#</a></h1>
-<div class="section" id="distanza">
-<h2>Distanza<a class="headerlink" href="#distanza" title="Permalink to this heading">#</a></h2>
-<p>Usando un sistema di coordinate cartesiane, la distanza tra due punti viene calcolata usando il teorema di Pitagora <strong>[REF]</strong>,</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="distanze-e-angoli">
+<span id="geometry-analytic-2d-points"></span><h1>Distanze e angoli<a class="headerlink" href="#distanze-e-angoli" title="Permalink to this heading">#</a></h1>
+<div class="section" id="distanza-tra-punti">
+<h2>Distanza tra punti<a class="headerlink" href="#distanza-tra-punti" title="Permalink to this heading">#</a></h2>
+<p>Usando un sistema di coordinate cartesiane, la distanza tra due punti nel piano viene calcolata usando il teorema di Pitagora ,</p>
 <div class="math notranslate nohighlight">
 \[d_{12} = |P_2 - P_1| = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}\]</div>
+<p>In maniera equivalente viene il modulo (o lunghezza) di un vettore <span class="math notranslate nohighlight">\(\vec{v} = v_x \hat{x} + v_y \hat{y}\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[|\vec{v}| = \sqrt{v_x^2 + v_y^2} \ .\]</div>
+</div>
+<div class="section" id="angoli-tra-direzioni">
+<h2>Angoli tra direzioni<a class="headerlink" href="#angoli-tra-direzioni" title="Permalink to this heading">#</a></h2>
+<p>Nello spazio euclideo, una direzione con verso può essere identificata da un vettore <span class="math notranslate nohighlight">\(\vec{v}\)</span>. Date due direzioni con verso identificate dai vettori <span class="math notranslate nohighlight">\(\vec{u}\)</span>, <span class="math notranslate nohighlight">\(\vec{v}\)</span>, l’angolo formato tra i due vettori può essere identificato dalla proiezione di un vettore sull’altro tramite il prodotto interno</p>
+<div class="math notranslate nohighlight">
+\[\vec{u} \cdot \vec{v} := |\vec{u}| |\vec{v}| \cos \theta_{uv} \ ,\]</div>
+<p>e usando un sistema di coordinate cartesiano</p>
+<div class="math notranslate nohighlight">
+\[\vec{u} \cdot \vec{v} = u_x v_x + u_y v_y \ .\]</div>
+<p><strong>todo</strong> Dimostrazione con <span class="math notranslate nohighlight">\(\vec{u} = u_x \hat{x} + u_y \hat{y}\)</span>, <span class="math notranslate nohighlight">\(\vec{v} = v_x \hat{x} + v_y \hat{y}\)</span>, <span class="math notranslate nohighlight">\(\hat{x} \cdot \hat{x} = \hat{y} \cdot \hat{y} = 1\)</span>, <span class="math notranslate nohighlight">\(\hat{x} \cdot \hat{y} = 0\)</span>.</p>
 </div>
 </div>
 
@@ -514,7 +528,8 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distanza">Distanza</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distanza-tra-punti">Distanza tra punti</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#angoli-tra-direzioni">Angoli tra direzioni</a></li>
 </ul>
   </nav></div>
 
