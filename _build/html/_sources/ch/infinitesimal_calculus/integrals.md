@@ -158,7 +158,7 @@ $$\begin{aligned}
 ## Regole di integrazione
 (infinitesimal-calculus:integrals:by-parts)=
 ### Integrazione per parti
-La regola di integrazione per parti viene ottenuta integrando la regola di [derivazione del prodotto](infinitesimal-calculus:derivatives:product). Siano $F(x)$, $G(x)$ le primitive delle funzioni $f(x)$, $g(x)$, e quindi vale $F'(x) = f(x)$, $G'(x) = g(x)$.
+La regola di integrazione per parti viene ottenuta integrando la regola di [derivazione del prodotto](infinitesimal-calculus:derivatives:rules:product). Siano $F(x)$, $G(x)$ le primitive delle funzioni $f(x)$, $g(x)$, e quindi vale $F'(x) = f(x)$, $G'(x) = g(x)$.
 La regola di derivazione del prodotto $F(x)G(x)$ viene scritta come
 
 $$\begin{aligned}
@@ -175,7 +175,7 @@ $$\begin{aligned}
 
 (infinitesimal-calculus:integrals:substitution)=
 ### Integrazione con sostituzione
-La regola di integrazione per parti viene ottenuta dalla regola di [derivazione della funzione composta](infinitesimal-calculus:derivatives:product). Sia $\widetilde{F}(x)$ la funzione composta $\widetilde{F}(x) = F( y(x) )$ e siano definite le derivate
+La regola di integrazione per parti viene ottenuta dalla regola di [derivazione della funzione composta](infinitesimal-calculus:derivatives:rules:product). Sia $\widetilde{F}(x)$ la funzione composta $\widetilde{F}(x) = F( y(x) )$ e siano definite le derivate
 
 $$\widetilde{f}(x) = \dfrac{d}{dx} \widetilde{F}(x)  \qquad , \qquad
              f (y) = \dfrac{d}{dy}            F (y)$$
