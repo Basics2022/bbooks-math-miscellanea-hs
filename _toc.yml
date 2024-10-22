@@ -37,6 +37,9 @@ parts:
   - file: ch/infinitesimal_calculus/limits
   - file: ch/infinitesimal_calculus/derivatives
   - file: ch/infinitesimal_calculus/integrals
+    sections:
+    - file: ch/infinitesimal_calculus/integrals-table
+    - file: ch/infinitesimal_calculus/integrals-problems
 - caption: Equazioni differenziali ordinarie
   chapters:
   - file: ch/ode

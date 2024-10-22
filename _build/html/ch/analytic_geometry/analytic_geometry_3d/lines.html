@@ -167,7 +167,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../../../intro.html">
-                    Matematica per il triennio delle scuole superiori
+                    Obiettivi
                 </a>
             </li>
         </ul>
@@ -208,7 +208,11 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../../infinitesimal_calculus/real_functions.html">Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\( f: \mathbb{R} \rightarrow \mathbb{R} \)</span></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../infinitesimal_calculus/limits.html">Limiti</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../infinitesimal_calculus/derivatives.html">Derivate</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infinitesimal_calculus/integrals.html">Integrali</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../infinitesimal_calculus/integrals.html">Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../infinitesimal_calculus/integrals-table.html">Tavola degli integrali indefiniti più comuni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../infinitesimal_calculus/integrals-problems.html">Problemi</a></li>
+</ul>
+</li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Equazioni differenziali ordinarie</span></p>
 <ul class="nav bd-sidenav">
@@ -447,7 +451,7 @@ document.write(`
 <h2>Equazione della retta<a class="headerlink" href="#equazione-della-retta" title="Permalink to this heading">#</a></h2>
 <p><strong>Forma parametrica</strong></p>
 <div class="math notranslate nohighlight">
-\[r: \P = Q + \lambda \, \vec{v} \ .\]</div>
+\[r: P = Q + \lambda \, \vec{v} \ .\]</div>
 <p><strong>…</strong> Intersezione tra due piani</p>
 </div>
 <div class="section" id="distanza-punto-retta">
@@ -455,8 +459,8 @@ document.write(`
 <p>Dato un punto <span class="math notranslate nohighlight">\(A\)</span> e una retta <span class="math notranslate nohighlight">\(r\)</span>, di cui sono noti un punto <span class="math notranslate nohighlight">\(Q\)</span> e il vettore <span class="math notranslate nohighlight">\(\vec{v}\)</span>, la distanza di <span class="math notranslate nohighlight">\(A\)</span> da <span class="math notranslate nohighlight">\(r\)</span> può essere calcolata come il valore assoluto della proiezione del vettore <span class="math notranslate nohighlight">\(A-Q\)</span> in direzione ortogonale alla direzione della retta, individuata da <span class="math notranslate nohighlight">\(\vec{v}\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
-\text{dist}(A,r) &amp; = \left| (A-Q) - \hat{v} \ \hat{v} \cdot (A-Q) \right| = \\ ,
-                 &amp; = \left| \hat{v} \times (A-Q) \right| = \\ ,
+\text{dist}(A,r) &amp; = \left| (A-Q) - \hat{v} \ \hat{v} \cdot (A-Q) \right| = \\ 
+                 &amp; = \left| \hat{v} \times (A-Q) \right| 
 \end{aligned}\end{split}\]</div>
 <p>avendo usato il vettore unitario <span class="math notranslate nohighlight">\(\hat{v} = \frac{\vec{v}}{|\vec{v}|}\)</span> per la proiezione.</p>
 </div>
