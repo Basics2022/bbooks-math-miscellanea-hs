@@ -12,7 +12,7 @@ $$\sin^2 \theta + \cos^2 \theta = 1 \ .$$
 
 **Nota sulla notazione.** Nell'uso delle funzioni trigonometriche, $\sin^2 x$ indica il quadrato della funzione e non la composizione della funzione con se stessa,
 
-$$\sin^2 x = (\sin x)^2 \neq $\sin( \sin x) \ .$$
+$$\sin^2 x = (\sin x)^2 \neq \sin( \sin x) \ .$$
 
 **Tangente.** $$\tan \theta = \dfrac{\sin \theta}{\cos \theta} \ .$$
 
