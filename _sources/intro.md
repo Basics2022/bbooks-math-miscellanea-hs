@@ -3,6 +3,32 @@
 
 Questo libro fa parte del materiale pensato per [le scuole superiori](https://basics2022.github.io/bbooks-hs)
 
+- Algebra: reale, complessa, vettoriale/tensoriale
+  - oggetti; operazioni; calcolo letterale; equazioni e disequazioni, sistemi;
+
+- Geometria analitica
+
+- Calcolo infinitesimale, f: R -> R
+- Calcolo: reale, complesso, vettoriale/tensoriale
+  - funzioni, limiti, derivate, integrali
+
+- Statistica
+  - ...
+  - ...
+  - ...
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--
 <span style="color:red">
 Questo libro potrebbe diventare la **landing page** per la matematica delle scuole superiori. 
