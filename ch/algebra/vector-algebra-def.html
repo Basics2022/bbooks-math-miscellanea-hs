@@ -63,6 +63,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/algebra/vector-algebra-def';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -413,7 +415,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -429,6 +433,19 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definizione-di-spazio-vettoriale">Definizione di spazio vettoriale</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni-sui-vettori-definizione-di-spazio-vettoriale">Operazioni sui vettori: definizione di spazio vettoriale</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">Esempi</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#base-di-uno-spazio-vettoriale">Base di uno spazio vettoriale</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -450,7 +467,7 @@ document.write(`
 <p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-calendar" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path></svg></span>Nov 04, 2024</p>
 </div>
 <div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
-<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>0 min read</p>
+<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>2 min read</p>
 </div>
 </div>
 </div>
@@ -459,6 +476,118 @@ document.write(`
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="prime-definizioni">
 <span id="math-hs-algebra-vector-def"></span><h1>Prime definizioni<a class="headerlink" href="#prime-definizioni" title="Permalink to this heading">#</a></h1>
+<div class="section" id="definizione-di-spazio-vettoriale">
+<h2>Definizione di spazio vettoriale<a class="headerlink" href="#definizione-di-spazio-vettoriale" title="Permalink to this heading">#</a></h2>
+<p>Uno spazio vettoriale è una struttura algebrica formata da:</p>
+<ul class="simple">
+<li><p>un insieme <span class="math notranslate nohighlight">\(V\)</span>, i cui elementi sono chiamati <strong>vettori</strong></p></li>
+<li><p>un campo <span class="math notranslate nohighlight">\(K\)</span> (di solito quello dei numeri reali <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> o complessi <span class="math notranslate nohighlight">\(\mathbb{C}\)</span>), i cui elementi sono chiamati <strong>scalari</strong></p></li>
+<li><p>due operazioni chiuse rispetto all’insieme <span class="math notranslate nohighlight">\(V\)</span> chiamate:</p>
+<ul>
+<li><p>somma vettoriale</p></li>
+<li><p>moltiplicazione per uno scalare,
+che soddisfano determinate proprietà che verranno elencate in seguito.</p></li>
+</ul>
+</li>
+</ul>
+<p>Un’<strong>operazione</strong> è <strong>chiusa</strong> rispetto a un’insieme, se il risultato delle operazioni è un elemento dell’insieme.</p>
+<p>Nel seguito del capitolo verranno considerati solo campi vettoriali definiti sui numeri reali, per i quali <span class="math notranslate nohighlight">\(K = \mathbb{R}\)</span>.</p>
+<div class="section" id="operazioni-sui-vettori-definizione-di-spazio-vettoriale">
+<h3>Operazioni sui vettori: definizione di spazio vettoriale<a class="headerlink" href="#operazioni-sui-vettori-definizione-di-spazio-vettoriale" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>La <strong>somma</strong> tra due vettori <span class="math notranslate nohighlight">\(\mathbf{v}\)</span>, <span class="math notranslate nohighlight">\(\mathbf{w} \, \in V\)</span> è il vettore</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\mathbf{v} + \mathbf{w} \in V\]</div>
+<ul class="simple">
+<li><p>La <strong>moltiplicazione per uno scalare</strong> di un vettore <span class="math notranslate nohighlight">\(\mathbf{v} \in V\)</span> per uno scalare <span class="math notranslate nohighlight">\(\alpha \in K\)</span> è il vettore</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\alpha \mathbf{v} \in V\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Proprietà delle operazioni<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">proprietà commutativa della somma</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\mathbf{u} + \mathbf{v} = \mathbf{v} + \mathbf{u} \qquad \forall \mathbf{u}, \mathbf{v} \in V\]</div>
+<ul class="simple">
+<li><p class="sd-card-text">proprietà associativa della somma</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[(\mathbf{u} + \mathbf{v}) + \mathbf{w} = \mathbf{u} + ( \mathbf{v} + \mathbf{w} ) \qquad \forall \mathbf{u}, \mathbf{v}, \mathbf{w} \in V\]</div>
+<ul class="simple">
+<li><p class="sd-card-text">esistenza dell’elemento neutro della somma</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\exists \mathbf{0}_V \in V \qquad s.t. \qquad \mathbf{u} + \mathbf{0}_V = \mathbf{u} \qquad \forall \mathbf{u} \in V\]</div>
+<ul class="simple">
+<li><p class="sd-card-text">esistenza dell’elemento inverso della somma</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\forall \mathbf{u} \in V \ \exists \mathbf{u}' \in V \qquad s.t. \qquad \mathbf{u} + \mathbf{u}' = \mathbf{0}\]</div>
+<ul class="simple">
+<li><p class="sd-card-text">proprietà associativa del prodotto scalare</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[(\alpha \beta) \mathbf{u} = \alpha ( \beta \mathbf{u} ) \qquad \forall \alpha, \beta \in K, \ \mathbf{u} \in V\]</div>
+<ul class="simple">
+<li><p class="sd-card-text">esistenza dell’elemento neutro della moltiplicazione per uno scalare</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\exists 1 \in K \qquad s.t. \qquad 1 \, \mathbf{u} = \mathbf{u} \quad \forall \mathbf{u} \in V\]</div>
+<ul class="simple">
+<li><p class="sd-card-text">proprietà distributiva della moltiplicazione per uno scalare</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[(\alpha + \beta) \mathbf{u} = \alpha \mathbf{u} + \beta \mathbf{u}\]</div>
+<div class="math notranslate nohighlight">
+\[\alpha (\mathbf{u} + \mathbf{v}) = \alpha \mathbf{u} + \alpha \mathbf{v} \]</div>
+</div>
+</details></div>
+<div class="section" id="esempi">
+<h3>Esempi<a class="headerlink" href="#esempi" title="Permalink to this heading">#</a></h3>
+<p><strong>Esempio 1 - <span class="math notranslate nohighlight">\(n\)</span>-upla di numeri reali ordinati.</strong>
+Gli elementi <span class="math notranslate nohighlight">\(\mathbf{u} = (u_1, u_2, \dots, u_N)\)</span> formano uno spazio vettoriale sui numeri reali, con le operazioni di somma e moltiplicazione per uno scalare con la seguenti definizioni:</p>
+<ul class="simple">
+<li><p>somma:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+  \mathbf{u} + \mathbf{v} = (u_1, u_2, \dots, u_N) + (v_1, v_2, \dots, v_N) = (u_1+v_1, u_2+v_2, \dots, u_N+v_N)
+\]</div>
+<ul class="simple">
+<li><p>moltiplicazione per uno scalare:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+  \alpha \mathbf{u}       = \alpha (u_1, u_2, \dots, u_N)                   = (\alpha u_1, \alpha u_2, \dots, \alpha u_N)
+\]</div>
+<p><strong>Esempio 2 - vettori in uno spazio euclideo.</strong>
+Fissato un punto <span class="math notranslate nohighlight">\(O\)</span> in uno spazio euclideo (<strong>todo</strong> <em>riferimenti?</em>), si può associare a ogni punto <span class="math notranslate nohighlight">\(P\)</span> nello spazio il segmento orientato <span class="math notranslate nohighlight">\(\overrightarrow{OP}\)</span>. L’insieme dei segmenti orientati associati a ogni punto dello spazio forma uno spazio vettoriale con le operazioni di somma e moltiplicazione per uno scalare con le seguenti definizioni:</p>
+<ul class="simple">
+<li><p>somma: tramite il metodo del parallelogramma <strong>todo</strong></p></li>
+<li><p>moltiplicazione per uno scalare: <strong>todo</strong></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="base-di-uno-spazio-vettoriale">
+<h2>Base di uno spazio vettoriale<a class="headerlink" href="#base-di-uno-spazio-vettoriale" title="Permalink to this heading">#</a></h2>
+<p><strong>Combinazione lineare.</strong> Una combinazione lineare di <span class="math notranslate nohighlight">\(D\)</span> vettori <span class="math notranslate nohighlight">\(\{ \mathbf{u}_i \}_{i=1:D}\)</span> è data dalla somma</p>
+<div class="math notranslate nohighlight">
+\[\alpha_1 \mathbf{u}_1 + \dots + \alpha_D \mathbf{u}_D \ ,\]</div>
+<p>dove i coefficienti scalari <span class="math notranslate nohighlight">\(\alpha_i\)</span> vengono definiti coefficienti della combinazione lineare.</p>
+<p><strong>Vettori linearmente indipendenti.</strong> Un insieme di vettori <span class="math notranslate nohighlight">\(\{ \mathbf{u}_i \}_{i=1:D}\)</span> è linearmente indipendente se non è possibile esprimere uno di questi vettori in funzione degli altri. Un’altra definizione equivalente definisce un insieme di vettori linearmente indipendente se vale</p>
+<div class="math notranslate nohighlight">
+\[\alpha_1 \mathbf{u}_1 + \dots + \alpha_D \mathbf{u}_D = \mathbf{0} \qquad \rightarrow \qquad \alpha_1 = \dots = \alpha_D = 0 \ ,\]</div>
+<p>cioè una combinazione lineare di questi vettori è uguale al vettore nullo solo se tutti i coefficienti della combinazione lineare sono nulli.</p>
+<p><strong>Base di uno spazio vettoriale.</strong> In uno spazio vettoriale, ogni vettore può essere rappresentato come una combinazione lineare di un insieme di vettori dello spazio, opportunamente scelti. Il numero minimo di questi vettori è definita come dimensione dello spazio vettoriale.</p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -515,6 +644,25 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definizione-di-spazio-vettoriale">Definizione di spazio vettoriale</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni-sui-vettori-definizione-di-spazio-vettoriale">Operazioni sui vettori: definizione di spazio vettoriale</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">Esempi</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#base-di-uno-spazio-vettoriale">Base di uno spazio vettoriale</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

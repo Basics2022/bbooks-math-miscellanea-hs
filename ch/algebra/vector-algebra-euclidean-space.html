@@ -63,6 +63,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/algebra/vector-algebra-euclidean-space';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -459,6 +461,57 @@ document.write(`
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="spazio-vettoriale-euclideo">
 <span id="math-hs-algebra-vector-euclidean-space"></span><h1>Spazio vettoriale euclideo<a class="headerlink" href="#spazio-vettoriale-euclideo" title="Permalink to this heading">#</a></h1>
+<p><strong>Prodotto scalare - o prodotto interno.</strong></p>
+<div class="math notranslate nohighlight">
+\[\vec{v} \cdot \vec{w}: V \times V \rightarrow \mathbb{R}\]</div>
+<div class="math notranslate nohighlight">
+\[\vec{v} \cdot \vec{w} = |\vec{v}| |\vec{w}| \cos \theta_{\vec{v} \vec{w}}\]</div>
+<p><strong>Prodotto vettoriale.</strong></p>
+<div class="math notranslate nohighlight">
+\[\vec{v} \times \vec{w}: V \times V \rightarrow V\]</div>
+<div class="math notranslate nohighlight">
+\[\vec{v} \times \vec{w} = \hat{k} |\vec{v}| |\vec{w}| \sin \theta_{\vec{v} \vec{w}}\]</div>
+<p><strong>Base cartesiana.</strong> <span class="math notranslate nohighlight">\(\{ \hat{e}_i \}_{i=1:n^d}\)</span>, <span class="math notranslate nohighlight">\(\{ \hat{x}, \hat{y}, \hat{z} \}\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \hat{x} \cdot  \hat{x} &amp; = \hat{y} \cdot  \hat{y} = \hat{z} \cdot  \hat{z} = 1 \\
+  \hat{x} \cdot  \hat{y} &amp; = \hat{y} \cdot  \hat{z} = \hat{z} \cdot  \hat{x} = 0
+\end{aligned}\end{split}\]</div>
+<p>e usando il prodotto vettore per definire l’orientazione dei 3 vettori,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \hat{x} \times \hat{y} &amp; = \hat{z} \\
+  \hat{y} \times \hat{z} &amp; = \hat{x} \\
+  \hat{z} \times \hat{x} &amp; = \hat{y} \\
+\end{aligned}\end{split}\]</div>
+<p>Un vettore può essere scritto in una base cartesiana come</p>
+<div class="math notranslate nohighlight">
+\[\vec{v} = v_x \hat{x} + v_y \hat{y} + v_z \hat{z}\]</div>
+<p>Una coordinata del vettore è semplicemente</p>
+<div class="math notranslate nohighlight">
+\[v_x = \hat{x} \cdot \vec{v} \ .\]</div>
+<p>Somma di vettori e moltiplicazione per uno scalare</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+   \vec{v} + \vec{w} &amp; =   (v_x \hat{x} + v_y \hat{y} + v_z \hat{z}) + (w_x \hat{x} + w_y \hat{y} + w_z \hat{z}) = \\
+                     &amp; =   (v_x + w_x) \hat{x} + (v_y + w_y) \hat{y} + (v_z + w_z) \hat{z} \\ \\
+ a \vec{v}           &amp; = a (v_x \hat{x} + v_y \hat{y} + v_z \hat{z}) = \\
+                     &amp; =   ( a v_x ) \hat{x} + ( a v_y ) \hat{y} + ( a v_z ) \hat{z}
+\end{aligned}\end{split}\]</div>
+<p>Il prodotto scalare diventa quindi</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \vec{v} \cdot \vec{w}
+  &amp; = (v_x \hat{x} + v_y \hat{y} + v_z \hat{z}) \cdot (w_x \hat{x} + w_y \hat{y} + w_z \hat{z}) = \\
+  &amp; = v_x w_x + v_y w_y + v_z w_z
+\end{aligned}\end{split}\]</div>
+<p>mentre il prodotto vettoriale</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \vec{v} \times \vec{w}
+  &amp; = (v_x \hat{x} + v_y \hat{y} + v_z \hat{z}) \times (w_x \hat{x} + w_y \hat{y} + w_z \hat{z}) = \\
+  &amp; = (v_y w_z - v_z w_y) \hat{x} + (v_z w_x - v_x w_z) \hat{y} + (v_x w_y - v_y w_x) \hat{z} = \\
+\end{aligned}\end{split}\]</div>
 </div>
 
     <script type="text/x-thebe-config">
