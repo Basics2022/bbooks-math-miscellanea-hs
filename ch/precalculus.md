@@ -15,7 +15,7 @@ Nel gran calderone del pre-calcolo finiscono qui tutti gli argomenti propedeutic
 Senza fare uso di nessun concetto di calcolo differenziale o integrale, nel primo volume dell'opera Eulero fornisce alcuni **fondamenti dell'analisi** e delle **serie infinite**:
 - il concetto di variabile e funzione, vol.1 cap.1-3
 - le [serie infinite](math-hs:series), vol.1 cap.4
-- il concetto di funzioni a più variabili, vol.1 cap.5
+- il concetto di [funzioni a più variabili](math-hs:precalculus:multivariable-real-fun), vol.1 cap.5
 - le [funzioni logaritmo ed esponenziale](math-hs:exp-log) con base $e$, vol.1 cap.6-7
 - le [funzioni trigonometriche](math-hs:trigonometry), vol.1 cap.8
 

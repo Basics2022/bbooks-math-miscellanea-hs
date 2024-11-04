@@ -53,6 +53,7 @@ parts:
   - file: ch/series
   - file: ch/trigonometry
   - file: ch/exponential_logarithm
+  - file: ch/precalculus/multivariable-real-fun
 - caption: Calcolo
   chapters:
   - file: ch/calculus
