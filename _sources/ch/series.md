@@ -48,6 +48,10 @@ la somma dei primi $2^N$ termini della serie è maggiore di $1 + \frac{N}{2}$, $
 
 $$\sum_{n=0}^{\infty} a^n$$
 
+La serie risulta convergente per $|a|<1$. Infatti
+
+$$S_N = \sum_{n=0}^{N} a^n = 1 + a \sum_{n=0}^{N} - a^{N+1} = 1 - a^{N+1} - a \, S_N$$
+
 **Serie telescopiche.**
 
 $$\sum_{n=1}^{\infty} a_n = \sum_{n=1}^{\infty} \left( A_{n} - A_{n+1} \right) = A_1 - \lim_{n \rightarrow \infty} A_n $$

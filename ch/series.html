@@ -526,6 +526,9 @@ document.write(`
 <p><strong>Serie geometrica.</strong></p>
 <div class="math notranslate nohighlight">
 \[\sum_{n=0}^{\infty} a^n\]</div>
+<p>La serie risulta convergente per <span class="math notranslate nohighlight">\(|a|&lt;1\)</span>. Infatti</p>
+<div class="math notranslate nohighlight">
+\[S_N = \sum_{n=0}^{N} a^n = 1 + a \sum_{n=0}^{N} - a^{N+1} = 1 - a^{N+1} - a \, S_N\]</div>
 <p><strong>Serie telescopiche.</strong></p>
 <div class="math notranslate nohighlight">
 \[\sum_{n=1}^{\infty} a_n = \sum_{n=1}^{\infty} \left( A_{n} - A_{n+1} \right) = A_1 - \lim_{n \rightarrow \infty} A_n \]</div>
