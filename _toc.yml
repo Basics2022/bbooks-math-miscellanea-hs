@@ -16,6 +16,9 @@ parts:
     sections:
     - file: ch/linear_algebra
   - file: ch/algebra/vector-algebra
+    sections:
+    - file: ch/algebra/vector-algebra-def
+    - file: ch/algebra/vector-algebra-euclidean-space
   - file: ch/algebra/complex-algebra
 # - caption: Vettori
 #   chapters:
