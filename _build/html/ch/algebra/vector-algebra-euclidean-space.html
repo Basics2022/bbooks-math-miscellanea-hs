@@ -217,12 +217,13 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Pre-calcolo</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Precalcolo</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../precalculus.html">Introduzione al pre-calcolo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../series.html">Serie e successioni</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../trigonometry.html">Trigonometria</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../exponential_logarithm.html">Esponenziale e logaritmo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../precalculus/multivariable-real-fun.html">Funzioni multi-variabile</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Calcolo</span></p>
 <ul class="nav bd-sidenav">
@@ -415,7 +416,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -431,6 +434,16 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prodotto-interno-e-distanza">Prodotto interno e distanza</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prodotto-vettoriale">Prodotto vettoriale</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#base-cartesiana">Base cartesiana</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -452,7 +465,7 @@ document.write(`
 <p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-calendar" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path></svg></span>Nov 04, 2024</p>
 </div>
 <div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
-<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>0 min read</p>
+<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>1 min read</p>
 </div>
 </div>
 </div>
@@ -461,17 +474,38 @@ document.write(`
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="spazio-vettoriale-euclideo">
 <span id="math-hs-algebra-vector-euclidean-space"></span><h1>Spazio vettoriale euclideo<a class="headerlink" href="#spazio-vettoriale-euclideo" title="Permalink to this heading">#</a></h1>
-<p><strong>Prodotto scalare - o prodotto interno.</strong></p>
+<p><strong>Definizione di uno spazio vettoriale euclideo.</strong></p>
+<p><strong>todo</strong></p>
+<div class="section" id="prodotto-interno-e-distanza">
+<h2>Prodotto interno e distanza<a class="headerlink" href="#prodotto-interno-e-distanza" title="Permalink to this heading">#</a></h2>
+<p>Uno spazio vettoriale euclideo può essere equipaggiato con un’operazione bilineare, simmetrica (su campi reali), e semi-definita positiva, definita <strong>prodotto interno</strong>,</p>
 <div class="math notranslate nohighlight">
-\[\vec{v} \cdot \vec{w}: V \times V \rightarrow \mathbb{R}\]</div>
+\[\cdot: \ V \times V \rightarrow \mathbb{R} \ ,\]</div>
+<p>che permette di definire la norma di un vettore e l’angolo tra due vettori</p>
 <div class="math notranslate nohighlight">
-\[\vec{v} \cdot \vec{w} = |\vec{v}| |\vec{w}| \cos \theta_{\vec{v} \vec{w}}\]</div>
-<p><strong>Prodotto vettoriale.</strong></p>
+\[\begin{split}\begin{aligned}
+  \vec{u} \cdot \vec{v} &amp; := |\vec{u}||\vec{v}| \cos \theta_{\vec{u} \vec{v}}  \\
+              |\vec{v}| &amp; = \sqrt{\vec{v} \cdot \vec{v}}  \\
+\end{aligned}\end{split}\]</div>
+<p>E’ semplice verificare che la definizione del prodotto interno induce la definizione della norma. Infatti, calcolando il prodotto interno tra un vettore <span class="math notranslate nohighlight">\(\vec{v}\)</span> e se stesso, l’angolo compreso è l’angolo nullo, <span class="math notranslate nohighlight">\(\theta_{\vec{v} \vec{v}} = 0\)</span>, con <span class="math notranslate nohighlight">\(\cos \theta_{\vec{u}\vec{u}} = 0\)</span>.</p>
+</div>
+<div class="section" id="prodotto-vettoriale">
+<h2>Prodotto vettoriale<a class="headerlink" href="#prodotto-vettoriale" title="Permalink to this heading">#</a></h2>
+<p>Per lo spazio euclideo <span class="math notranslate nohighlight">\(E^3\)</span> è possibile definire anche un’operazione bilineare, antisimmetrica, definita <strong>prodotto vettoriale</strong>,</p>
 <div class="math notranslate nohighlight">
-\[\vec{v} \times \vec{w}: V \times V \rightarrow V\]</div>
+\[\times: \ V \times V \rightarrow V \ ,\]</div>
+<p>in modo tale da avere</p>
 <div class="math notranslate nohighlight">
-\[\vec{v} \times \vec{w} = \hat{k} |\vec{v}| |\vec{w}| \sin \theta_{\vec{v} \vec{w}}\]</div>
-<p><strong>Base cartesiana.</strong> <span class="math notranslate nohighlight">\(\{ \hat{e}_i \}_{i=1:n^d}\)</span>, <span class="math notranslate nohighlight">\(\{ \hat{x}, \hat{y}, \hat{z} \}\)</span>,</p>
+\[\vec{u} \times \vec{v} = \hat{k} |\vec{u}| |\vec{v}| \sin \theta_{\vec{u} \vec{v}} \ ,\]</div>
+<p>con il vettore <span class="math notranslate nohighlight">\(\hat{k}\)</span> ortogonale a entrambi i vettori <span class="math notranslate nohighlight">\(\vec{u}\)</span>, <span class="math notranslate nohighlight">\(\vec{v}\)</span> nella direzione definita dalla regola della mano destra <strong>todo</strong></p>
+<ul class="simple">
+<li><p><strong>todo.</strong> E in <span class="math notranslate nohighlight">\(E^2\)</span>? A volte è comodo assumere che esista una dimensione aggiuntiva, e che quindi ci si trovi in <span class="math notranslate nohighlight">\(E^3\)</span>. In questo caso, il prodotto vettore di due vettori di <span class="math notranslate nohighlight">\(E^2\)</span> è sempre ortogonale ad esso.</p></li>
+<li><p><strong>todo.</strong> Il prodotto vettoriale può essere visto come un caso particolare di un’operazione “strana” chiamata prodotto esterno</p></li>
+</ul>
+</div>
+<div class="section" id="base-cartesiana">
+<h2>Base cartesiana<a class="headerlink" href="#base-cartesiana" title="Permalink to this heading">#</a></h2>
+<p>In uno spazio vettoriale euclideo, <span class="math notranslate nohighlight">\(E^3\)</span>, è possibile definire una base carteisana, <span class="math notranslate nohighlight">\(\{ \hat{x}, \hat{y}, \hat{z} \}\)</span>, come un’insieme di vettori di norma unitaria e reciprocamente ortogonali,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
   \hat{x} \cdot  \hat{x} &amp; = \hat{y} \cdot  \hat{y} = \hat{z} \cdot  \hat{z} = 1 \\
@@ -484,34 +518,47 @@ document.write(`
   \hat{y} \times \hat{z} &amp; = \hat{x} \\
   \hat{z} \times \hat{x} &amp; = \hat{y} \\
 \end{aligned}\end{split}\]</div>
-<p>Un vettore può essere scritto in una base cartesiana come</p>
+<p>Un vettore di uno spazio vettoriale può essere sempre scritto come combinazione lineare degli elementi di una base vettoriale,</p>
 <div class="math notranslate nohighlight">
-\[\vec{v} = v_x \hat{x} + v_y \hat{y} + v_z \hat{z}\]</div>
-<p>Una coordinata del vettore è semplicemente</p>
-<div class="math notranslate nohighlight">
-\[v_x = \hat{x} \cdot \vec{v} \ .\]</div>
-<p>Somma di vettori e moltiplicazione per uno scalare</p>
+\[\vec{v} = v_x \hat{x} + v_y \hat{y} + v_z \hat{z} \ .\]</div>
+<p>Usando una base cartesiana, è immediato ricavare le coordinate cartesiane di un vettore <span class="math notranslate nohighlight">\(\vec{v}\)</span> come il prodotto interno del vettore <span class="math notranslate nohighlight">\(\vec{v}\)</span> per i vettori della base,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
-   \vec{v} + \vec{w} &amp; =   (v_x \hat{x} + v_y \hat{y} + v_z \hat{z}) + (w_x \hat{x} + w_y \hat{y} + w_z \hat{z}) = \\
-                     &amp; =   (v_x + w_x) \hat{x} + (v_y + w_y) \hat{y} + (v_z + w_z) \hat{z} \\ \\
- a \vec{v}           &amp; = a (v_x \hat{x} + v_y \hat{y} + v_z \hat{z}) = \\
-                     &amp; =   ( a v_x ) \hat{x} + ( a v_y ) \hat{y} + ( a v_z ) \hat{z}
+  v_x &amp; = \hat{x} \cdot \vec{v} \\
+  v_y &amp; = \hat{y} \cdot \vec{v} \\
+  v_z &amp; = \hat{z} \cdot \vec{v} \\
 \end{aligned}\end{split}\]</div>
-<p>Il prodotto scalare diventa quindi</p>
+<p>Usando una base cartesiana, si possono scrivere:</p>
+<ul class="simple">
+<li><p>la <strong>somma di vettori</strong> e la <strong>moltiplicazione per uno scalare</strong> in componenti,</p></li>
+</ul>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
-  \vec{v} \cdot \vec{w}
-  &amp; = (v_x \hat{x} + v_y \hat{y} + v_z \hat{z}) \cdot (w_x \hat{x} + w_y \hat{y} + w_z \hat{z}) = \\
-  &amp; = v_x w_x + v_y w_y + v_z w_z
-\end{aligned}\end{split}\]</div>
-<p>mentre il prodotto vettoriale</p>
+     \vec{v} + \vec{w} &amp; =   (v_x \hat{x} + v_y \hat{y} + v_z \hat{z}) + (w_x \hat{x} + w_y \hat{y} + w_z \hat{z}) = \\
+                       &amp; =   (v_x + w_x) \hat{x} + (v_y + w_y) \hat{y} + (v_z + w_z) \hat{z} \\ \\
+   a \vec{v}           &amp; = a (v_x \hat{x} + v_y \hat{y} + v_z \hat{z}) = \\
+                       &amp; =   ( a v_x ) \hat{x} + ( a v_y ) \hat{y} + ( a v_z ) \hat{z}
+  \end{aligned}\end{split}\]</div>
+<ul class="simple">
+<li><p>il <strong>prodotto interno</strong> in termini delle componenti cartesiane dei vettori</p></li>
+</ul>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
-  \vec{v} \times \vec{w}
-  &amp; = (v_x \hat{x} + v_y \hat{y} + v_z \hat{z}) \times (w_x \hat{x} + w_y \hat{y} + w_z \hat{z}) = \\
-  &amp; = (v_y w_z - v_z w_y) \hat{x} + (v_z w_x - v_x w_z) \hat{y} + (v_x w_y - v_y w_x) \hat{z} = \\
-\end{aligned}\end{split}\]</div>
+    \vec{v} \cdot \vec{w}
+    &amp; = (v_x \hat{x} + v_y \hat{y} + v_z \hat{z}) \cdot (w_x \hat{x} + w_y \hat{y} + w_z \hat{z}) = \\
+    &amp; = v_x w_x + v_y w_y + v_z w_z
+  \end{aligned}\end{split}\]</div>
+<ul class="simple">
+<li><p>il <strong>prodotto vettoriale</strong>, in termini del determinante formale</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+    \vec{v} \times \vec{w}
+    &amp; = (v_x \hat{x} + v_y \hat{y} + v_z \hat{z}) \times (w_x \hat{x} + w_y \hat{y} + w_z \hat{z}) = \\
+    &amp; = (v_y w_z - v_z w_y) \hat{x} + (v_z w_x - v_x w_z) \hat{y} + (v_x w_y - v_y w_x) \hat{z} = \\
+    &amp; = \left| \begin{matrix} \hat{x} &amp; \hat{y} &amp; \hat{z} \\ v_x &amp; v_y &amp; v_z \\ w_x &amp; w_y &amp; w_z  \end{matrix} \right|
+  \end{aligned}\end{split}\]</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -568,6 +615,22 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prodotto-interno-e-distanza">Prodotto interno e distanza</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prodotto-vettoriale">Prodotto vettoriale</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#base-cartesiana">Base cartesiana</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

@@ -6,18 +6,18 @@
 
 **Rapporto incrementale.** Il rapporto incrementale di una funzione reale nel punto $x$ viene definito come il rapporto tra la differenza dei valori della funzione e la differenza del valore della variabile indipendente
 
-$$R[f(\cdot), x, a] := \dfrac{f(x+a)-f(x)}{a} \ .$$ (infinitesimal-calculus:derivatives:def_delta)
+$$R[f(\cdot), x, a] := \dfrac{f(x+a)-f(x)}{a} \ .$$ (eq:infinitesimal-calculus:derivatives:def_delta)
 
 **Derivata.** La derivata di una funzione reale in un punto $x$ viene definita come il limite del rapporto incrementale, per l'incremento della variabile indipendente che tende a zero,
 
-$$f'(x) = \dfrac{d f}{d x}(x) := \lim_{a \rightarrow 0} \dfrac{f(x+a)-f(x)}{a} \ .$$ (infinitesimal-calculus:derivatives:def)
+$$f'(x) = \dfrac{d f}{d x}(x) := \lim_{a \rightarrow 0} \dfrac{f(x+a)-f(x)}{a} \ .$$ (eq:infinitesimal-calculus:derivatives:def)
 
 **todo** *In generale, la derivata di una funzione reale è un'altra funzione reale.*
 
 (infinitesimal-calculus:derivatives:rules)=
 ## Regole di derivazione
 
-Usando la definizione {eq}`infinitesimal-calculus:derivatives:def` di derivata e le proprietà dei limiti, è possibile dimostrare le seguenti proprietà
+Usando la definizione {eq}`eq:infinitesimal-calculus:derivatives:def` di derivata e le proprietà dei limiti, è possibile dimostrare le seguenti proprietà
 
 - linearità
 
@@ -147,7 +147,7 @@ f(x) & = e^x    \qquad & \qquad f'(x) & = e^x         \\
 f(x) & = \ln x  \qquad & \qquad f'(x) & = \frac{1}{x} \\ 
 f(x) & = \sin x \qquad & \qquad f'(x) & = \cos x      \\ 
 f(x) & = \cos x \qquad & \qquad f'(x) & =-\sin x         
-\end{aligned}$$ (infinitesimal-calculus:derivatives:fund)
+\end{aligned}$$ (eq:infinitesimal-calculus:derivatives:fund)
 
 ```{dropdown} Dimostrazione di $\ (x^n)'$
 Usando la formua binomiale $$(x + \varepsilon)^n = x^n + n x^{n-1} \varepsilon + f(\varepsilon^2, \varepsilon^3, \dots)$$ **todo** *aggiungere riferimento*,

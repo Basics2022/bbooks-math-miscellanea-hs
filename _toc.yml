@@ -20,12 +20,6 @@ parts:
     - file: ch/algebra/vector-algebra-def
     - file: ch/algebra/vector-algebra-euclidean-space
   - file: ch/algebra/complex-algebra
-# - caption: Vettori
-#   chapters:
-#   - file: ch/vectors
-#     sections:
-#     - file: ch/vectors/euclidean-space-hs
-#     - file: ch/vectors/algebra-hs
 - caption: Geometria analitica
   chapters:
   - file: ch/analytic_geometry
@@ -47,7 +41,7 @@ parts:
     - file: ch/analytic_geometry/analytic_geometry_3d/curves
     - file: ch/analytic_geometry/analytic_geometry_3d/lines
     - file: ch/analytic_geometry/analytic_geometry_3d/cone
-- caption: Pre-calcolo
+- caption: Precalcolo
   chapters:
   - file: ch/precalculus
   - file: ch/series
