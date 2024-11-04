@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pre-calcolo &#8212; Matematica per le scuole superiori</title>
+    <title>Introduzione al pre-calcolo &#8212; Matematica per le scuole superiori</title>
   
   
   
@@ -63,10 +63,12 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/precalculus';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Calcolo" href="calculus.html" />
+    <link rel="next" title="Serie e successioni" href="series.html" />
     <link rel="prev" title="Cono circolare retto e coniche" href="analytic_geometry/analytic_geometry_3d/cone.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -178,12 +180,13 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Algebra</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="algebra.html">Algebra</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="algebra/real-algebra.html">Algebra sui numeri reali</a></li>
-<li class="toctree-l2"><a class="reference internal" href="algebra/vector-algebra.html">Algebra vettoriale</a></li>
-<li class="toctree-l2"><a class="reference internal" href="algebra/complex-algebra.html">Algebra complessa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="algebra.html">Introduzione all’algebra</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="algebra/real-algebra.html">Algebra sui numeri reali</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="linear_algebra.html">Algebra lineare</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="algebra/vector-algebra.html">Algebra vettoriale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="algebra/complex-algebra.html">Algebra complessa</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Geometria analitica</span></p>
 <ul class="nav bd-sidenav">
@@ -212,47 +215,30 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Pre-calcolo</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Pre-calcolo</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Introduzione al pre-calcolo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="series.html">Serie e successioni</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trigonometry.html">Trigonometria</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exponential_logarithm.html">Esponenziale e logaritmo</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Calcolo</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="calculus.html">Calcolo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculus.html">Introduzione al calcolo</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="infinitesimal_calculus.html">Calcolo infinitesimale</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="infinitesimal_calculus/real_functions.html">Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\( f: \mathbb{R} \rightarrow \mathbb{R} \)</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="infinitesimal_calculus/limits.html">Limiti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="infinitesimal_calculus/derivatives.html">Derivate</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="infinitesimal_calculus/integrals.html">Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="infinitesimal_calculus/integrals-table.html">Tavola degli integrali indefiniti più comuni</a></li>
+<li class="toctree-l3"><a class="reference internal" href="infinitesimal_calculus/integrals-problems.html">Problemi</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Calcolo infinitesimale</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="infinitesimal_calculus.html">Calcolo infinitesimale</a></li>
-<li class="toctree-l1"><a class="reference internal" href="infinitesimal_calculus/real_functions.html">Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\( f: \mathbb{R} \rightarrow \mathbb{R} \)</span></a></li>
-<li class="toctree-l1"><a class="reference internal" href="infinitesimal_calculus/limits.html">Limiti</a></li>
-<li class="toctree-l1"><a class="reference internal" href="infinitesimal_calculus/derivatives.html">Derivate</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="infinitesimal_calculus/integrals.html">Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="infinitesimal_calculus/integrals-table.html">Tavola degli integrali indefiniti più comuni</a></li>
-<li class="toctree-l2"><a class="reference internal" href="infinitesimal_calculus/integrals-problems.html">Problemi</a></li>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ode.html">Equazioni differenziali ordinarie</a></li>
 </ul>
 </li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Equazioni differenziali ordinarie</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Statistica</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="ode.html">Equazioni differenziali ordinarie</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Trigonometria</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="trigonometry.html">Trigonometria</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Esponenziale e logaritmo</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="exponential_logarithm.html">Esponenziale e logaritmo</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Serie e successioni</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="series.html">Serie e successioni</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Numeri complessi</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="complex.html">Numeri complessi</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Algebra lineare</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="linear_algebra.html">Algebra lineare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="statistics.html">Introduzione alla statistica</a></li>
 </ul>
 
     </div>
@@ -436,7 +422,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Pre-calcolo</h1>
+    <h1>Introduzione al pre-calcolo</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -462,15 +448,33 @@ document.write(`
 <p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-calendar" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path></svg></span>Nov 04, 2024</p>
 </div>
 <div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
-<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>0 min read</p>
+<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>1 min read</p>
 </div>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="pre-calcolo">
-<span id="math-hs-precalculus"></span><h1>Pre-calcolo<a class="headerlink" href="#pre-calcolo" title="Permalink to this heading">#</a></h1>
+<div class="tex2jax_ignore mathjax_ignore section" id="introduzione-al-pre-calcolo">
+<span id="math-hs-precalculus"></span><h1>Introduzione al pre-calcolo<a class="headerlink" href="#introduzione-al-pre-calcolo" title="Permalink to this heading">#</a></h1>
+<p>Nel gran calderone del pre-calcolo finiscono qui tutti gli argomenti propedeutici allo studio del calcolo, seguendo quanto fatto da <strong>Eulero</strong> - ovviamente come Eulero, ma peggio - nel 1748 nel suo <strong>“Introductio in analysin infinitorum”</strong>, pensato come una raccolta di concetti e metodi di analisi e geometria analitica in preparazione al calcolo differenziale e integrale.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p><img alt="" src="../_images/euler-introductio-1.png" /></p></th>
+<th class="head"><p><img alt="" src="../_images/euler-introductio-2.png" /></p></th>
+<th class="head"><p><img alt="" src="../_images/euler-introductio-3.png" /></p></th>
+</tr>
+</thead>
+</table>
+<p>Senza fare uso di nessun concetto di calcolo differenziale o integrale, nel primo volume dell’opera Eulero fornisce alcuni <strong>fondamenti dell’analisi</strong> e delle <strong>serie infinite</strong>:</p>
+<ul class="simple">
+<li><p>il concetto di variabile e funzione, vol.1 cap.1-3</p></li>
+<li><p>le <a class="reference internal" href="series.html#math-hs-series"><span class="std std-ref">serie infinite</span></a>, vol.1 cap.4</p></li>
+<li><p>il concetto di funzioni a più variabili, vol.1 cap.5</p></li>
+<li><p>le <a class="reference internal" href="exponential_logarithm.html#math-hs-exp-log"><span class="std std-ref">funzioni logaritmo ed esponenziale</span></a> con base <span class="math notranslate nohighlight">\(e\)</span>, vol.1 cap.6-7</p></li>
+<li><p>le <a class="reference internal" href="trigonometry.html#math-hs-trigonometry"><span class="std std-ref">funzioni trigonometriche</span></a>, vol.1 cap.8</p></li>
+</ul>
+<p>Nel secondo volume, Eulero applica i risultati del primo volume allo studio delle <strong>curve</strong> e delle <strong>superfici</strong> nel piano e nello spazio.</p>
 </div>
 
     <script type="text/x-thebe-config">
@@ -513,11 +517,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="calculus.html"
+       href="series.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Calcolo</p>
+        <p class="prev-next-title">Serie e successioni</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

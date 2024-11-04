@@ -1,4 +1,4 @@
-(geometry:trigonometry)=
+(math-hs:trigonometry)=
 # Trigonometria
 
 ## Prime definizioni e relazioni

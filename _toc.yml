@@ -48,8 +48,8 @@ parts:
   chapters:
   - file: ch/precalculus
   - file: ch/series
-  - file: ch/exponential_logarithm
   - file: ch/trigonometry
+  - file: ch/exponential_logarithm
 - caption: Calcolo
   chapters:
   - file: ch/calculus

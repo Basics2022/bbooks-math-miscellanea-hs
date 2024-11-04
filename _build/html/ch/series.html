@@ -63,11 +63,13 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/series';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Numeri complessi" href="complex.html" />
-    <link rel="prev" title="Esponenziale e logaritmo" href="exponential_logarithm.html" />
+    <link rel="next" title="Trigonometria" href="trigonometry.html" />
+    <link rel="prev" title="Introduzione al pre-calcolo" href="precalculus.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -171,24 +173,28 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduzione</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="school-programs.html">Programma</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="school-programs.html">Esempi di programmi</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="school-programs/current-guidelines-italy.html">Indicazioni nazionali per i licei</a></li>
 </ul>
 </li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Vettori</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Algebra</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="vectors.html">Vettori</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="vectors/euclidean-space-hs.html">Spazio euclideo e vettori</a></li>
-<li class="toctree-l2"><a class="reference internal" href="vectors/algebra-hs.html">Algebra vettoriale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="algebra.html">Introduzione all’algebra</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="algebra/real-algebra.html">Algebra sui numeri reali</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="linear_algebra.html">Algebra lineare</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="algebra/vector-algebra.html">Algebra vettoriale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="algebra/complex-algebra.html">Algebra complessa</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Geometria analitica</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="analytic_geometry.html">Geometria analitica</a></li>
-<li class="toctree-l1"><a class="reference internal" href="analytic_geometry/euclidean_space.html">Spazio euclideo</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="analytic_geometry/analytic_geometry_2d.html">Geometria analitica nel piano</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="analytic_geometry.html">Introduzione alla geometria analitica</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="analytic_geometry/euclidean_space.html">Spazio euclideo</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="analytic_geometry/analytic_geometry_2d.html">Geometria analitica nel piano</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/coordinates.html">Sistemi di coordinate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/points.html">Distanze e angoli</a></li>
 <li class="toctree-l2"><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/curves.html">Curve nel piano</a></li>
@@ -198,7 +204,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/conics-polar.html">Coniche nel piano: coordinate polari</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="analytic_geometry/analytic_geometry_3d.html">Geometria analitica nello spazio</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="analytic_geometry/analytic_geometry_3d.html">Geometria analitica nello spazio</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="analytic_geometry/analytic_geometry_3d/points.html">Sistemi di coordinate per lo spazio euclideo <span class="math notranslate nohighlight">\(E^3\)</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="analytic_geometry/analytic_geometry_3d/planes.html">Piani nello spazio</a></li>
 <li class="toctree-l2"><a class="reference internal" href="analytic_geometry/analytic_geometry_3d/curves.html">Curve nello spazio</a></li>
@@ -207,41 +213,32 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Calcolo infinitesimale</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Pre-calcolo</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="precalculus.html">Introduzione al pre-calcolo</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Serie e successioni</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trigonometry.html">Trigonometria</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exponential_logarithm.html">Esponenziale e logaritmo</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Calcolo</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="infinitesimal_calculus.html">Calcolo infinitesimale</a></li>
-<li class="toctree-l1"><a class="reference internal" href="infinitesimal_calculus/real_functions.html">Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\( f: \mathbb{R} \rightarrow \mathbb{R} \)</span></a></li>
-<li class="toctree-l1"><a class="reference internal" href="infinitesimal_calculus/limits.html">Limiti</a></li>
-<li class="toctree-l1"><a class="reference internal" href="infinitesimal_calculus/derivatives.html">Derivate</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="infinitesimal_calculus/integrals.html">Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="infinitesimal_calculus/integrals-table.html">Tavola degli integrali indefiniti più comuni</a></li>
-<li class="toctree-l2"><a class="reference internal" href="infinitesimal_calculus/integrals-problems.html">Problemi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculus.html">Introduzione al calcolo</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="infinitesimal_calculus.html">Calcolo infinitesimale</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="infinitesimal_calculus/real_functions.html">Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\( f: \mathbb{R} \rightarrow \mathbb{R} \)</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="infinitesimal_calculus/limits.html">Limiti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="infinitesimal_calculus/derivatives.html">Derivate</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="infinitesimal_calculus/integrals.html">Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="infinitesimal_calculus/integrals-table.html">Tavola degli integrali indefiniti più comuni</a></li>
+<li class="toctree-l3"><a class="reference internal" href="infinitesimal_calculus/integrals-problems.html">Problemi</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ode.html">Equazioni differenziali ordinarie</a></li>
 </ul>
 </li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Equazioni differenziali ordinarie</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Statistica</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="ode.html">Equazioni differenziali ordinarie</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Trigonometria</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="trigonometry.html">Trigonometria</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Esponenziale e logaritmo</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="exponential_logarithm.html">Esponenziale e logaritmo</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Serie e successioni</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Serie e successioni</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Numeri complessi</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="complex.html">Numeri complessi</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Algebra lineare</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="linear_algebra.html">Algebra lineare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="statistics.html">Introduzione alla statistica</a></li>
 </ul>
 
     </div>
@@ -414,7 +411,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -430,6 +429,23 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#serie-numeriche-reali">Serie numeriche reali</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#criteri-di-convergenza">Criteri di convergenza</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#serie-a-termini-concordi">Serie a termini concordi</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Serie a termini concordi</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">Esempi</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#serie-numeriche-complesse">Serie numeriche complesse</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -459,7 +475,52 @@ document.write(`
 </div>
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="serie-e-successioni">
-<span id="series-high-school"></span><h1>Serie e successioni<a class="headerlink" href="#serie-e-successioni" title="Permalink to this heading">#</a></h1>
+<span id="math-hs-series"></span><h1>Serie e successioni<a class="headerlink" href="#serie-e-successioni" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p>successioni numeriche</p></li>
+<li><p>successioni di funzioni</p></li>
+<li><p>serie numeriche</p></li>
+<li><p>serie di funzioni</p></li>
+</ul>
+<div class="section" id="serie-numeriche-reali">
+<h2>Serie numeriche reali<a class="headerlink" href="#serie-numeriche-reali" title="Permalink to this heading">#</a></h2>
+<p><strong>Carattere della serie</strong></p>
+<div class="section" id="criteri-di-convergenza">
+<h3>Criteri di convergenza<a class="headerlink" href="#criteri-di-convergenza" title="Permalink to this heading">#</a></h3>
+<div class="section" id="serie-a-termini-concordi">
+<h4>Serie a termini concordi<a class="headerlink" href="#serie-a-termini-concordi" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>Criterio del confronto.</strong></p></li>
+<li><p><strong>Criteri  del confronto con serie geometrica.</strong></p>
+<ul>
+<li><p>criterio della radice</p></li>
+<li><p>criterio del rapporto</p></li>
+</ul>
+</li>
+<li><p><strong>Criterio di Raabe</strong></p></li>
+<li><p>…</p></li>
+</ul>
+</div>
+<div class="section" id="id1">
+<h4>Serie a termini concordi<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>Criterio di convergenza assoluta.</strong></p></li>
+<li><p>…</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="esempi">
+<h3>Esempi<a class="headerlink" href="#esempi" title="Permalink to this heading">#</a></h3>
+<p><strong>Serie armonica.</strong>
+<strong>Serie geometrica.</strong>
+<strong>Serie telescopiche.</strong>
+<strong>Serie di Mengoli.</strong>
+<strong><span class="math notranslate nohighlight">\(e\)</span></strong></p>
+</div>
+</div>
+<div class="section" id="serie-numeriche-complesse">
+<h2>Serie numeriche complesse<a class="headerlink" href="#serie-numeriche-complesse" title="Permalink to this heading">#</a></h2>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -493,20 +554,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="exponential_logarithm.html"
+       href="precalculus.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Esponenziale e logaritmo</p>
+        <p class="prev-next-title">Introduzione al pre-calcolo</p>
       </div>
     </a>
     <a class="right-next"
-       href="complex.html"
+       href="trigonometry.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Numeri complessi</p>
+        <p class="prev-next-title">Trigonometria</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -516,6 +577,29 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#serie-numeriche-reali">Serie numeriche reali</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#criteri-di-convergenza">Criteri di convergenza</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#serie-a-termini-concordi">Serie a termini concordi</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Serie a termini concordi</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">Esempi</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#serie-numeriche-complesse">Serie numeriche complesse</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
