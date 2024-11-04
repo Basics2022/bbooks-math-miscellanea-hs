@@ -1,5 +1,5 @@
 (geometry:analytic)=
-# Geometria analitica
+# Introduzione alla geometria analitica
 
 - La geometria analitica si occupa dello stuido delle figure geometriche nello spazio tramite l'uso di **sistemi di coordinate**: la scelta può arbitaria, spesso guidata da criteri di "comodità"; i risultati sono indipendenti dalla scelta
 - L'utilizzo di un sistema di coordinate per la descrizione dello spazio produce un legame tra la **geometria** e l'**algebra**:
