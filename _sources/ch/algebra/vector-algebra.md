@@ -71,6 +71,16 @@ $$(\alpha + \beta) \mathbf{u} = \alpha \mathbf{u} + \beta \mathbf{u}$$
 $$\alpha (\mathbf{u} + \mathbf{v}) = \alpha \mathbf{u} + \alpha \mathbf{v} $$
 ```
 
+## Esempi
+
+**Esempio 1.**
+Gli elementi $\mathbf{u} = (u_1, u_2, \dots, u_N)$ formano uno spazio vettoriale sui numeri reali, con le operazioni di somma e moltiplicazione per uno scalare definite come
+
+$$\begin{aligned}
+  \mathbf{u} + \mathbf{v} & = (u_1, u_2, \dots, u_N) + (v_1, v_2, \dots, v_N) = (u_1+v_1, u_2+v_2, \dots, u_N+v_N)
+  \alpha \mathbf{u}       & = \alpha (u_1, u_2, \dots, u_N)                   = (\alpha u_1, \alpha u_2, \dots, \alpha u_N)
+\end{aligned}$$
+
 ## Base di uno spazio vettoriale
 
 **Combinazione lineare.**
