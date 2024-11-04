@@ -1,4 +1,4 @@
-(geometry:exponential-logarithm)=
+(math-hs:exp-log)=
 # Esponenziale e logaritmo
 
 ## Definizioni e proprietà
