@@ -63,10 +63,12 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/algebra/vector-algebra';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Algebra complessa" href="complex-algebra.html" />
+    <link rel="next" title="Prime definizioni" href="vector-algebra-def.html" />
     <link rel="prev" title="Algebra lineare" href="../linear_algebra.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -183,16 +185,20 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../linear_algebra.html">Algebra lineare</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Algebra vettoriale</a></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Algebra vettoriale</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="vector-algebra-def.html">Prime definizioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vector-algebra-euclidean-space.html">Spazio vettoriale euclideo</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="complex-algebra.html">Algebra complessa</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Geometria analitica</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../analytic_geometry.html">Introduzione alla geometria analitica</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../analytic_geometry.html">Introduzione alla geometria analitica</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/euclidean_space.html">Spazio euclideo</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d.html">Geometria analitica nel piano</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d.html">Geometria analitica nel piano</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/coordinates.html">Sistemi di coordinate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/points.html">Distanze e angoli</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/curves.html">Curve nel piano</a></li>
@@ -202,7 +208,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/conics-polar.html">Coniche nel piano: coordinate polari</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../analytic_geometry/analytic_geometry_3d.html">Geometria analitica nello spazio</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../analytic_geometry/analytic_geometry_3d.html">Geometria analitica nello spazio</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_3d/points.html">Sistemi di coordinate per lo spazio euclideo <span class="math notranslate nohighlight">\(E^3\)</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_3d/planes.html">Piani nello spazio</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_3d/curves.html">Curve nello spazio</a></li>
@@ -221,11 +227,11 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Calcolo</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../calculus.html">Introduzione al calcolo</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../infinitesimal_calculus.html">Calcolo infinitesimale</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../infinitesimal_calculus.html">Calcolo infinitesimale</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/real_functions.html">Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\( f: \mathbb{R} \rightarrow \mathbb{R} \)</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/limits.html">Limiti</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/derivatives.html">Derivate</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../infinitesimal_calculus/integrals.html">Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../infinitesimal_calculus/integrals.html">Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../infinitesimal_calculus/integrals-table.html">Tavola degli integrali indefiniti più comuni</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../infinitesimal_calculus/integrals-problems.html">Problemi</a></li>
 </ul>
@@ -409,7 +415,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -425,6 +433,18 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definizione-di-spazio-vettoriale">Definizione di spazio vettoriale</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni-sui-vettori-definizione-di-spazio-vettoriale">Operazioni sui vettori: definizione di spazio vettoriale</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#base-di-uno-spazio-vettoriale">Base di uno spazio vettoriale</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -446,7 +466,7 @@ document.write(`
 <p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-calendar" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path></svg></span>Nov 04, 2024</p>
 </div>
 <div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
-<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>0 min read</p>
+<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>1 min read</p>
 </div>
 </div>
 </div>
@@ -455,6 +475,152 @@ document.write(`
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="algebra-vettoriale">
 <span id="math-hs-algebra-vector"></span><h1>Algebra vettoriale<a class="headerlink" href="#algebra-vettoriale" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p>Definizione di spazio vettoriale: struttura algebrica e proprietà delle operazioni</p></li>
+<li><p>Definizione di combinazione lineare, vettori linearmente indipendenti</p></li>
+<li><p>Definizione di base di uno spazio vettoriale</p></li>
+<li><p>Spazio vettoriale euclideo:</p>
+<ul>
+<li><p>prodotto scalare e norma</p></li>
+<li><p>base ortonormale</p></li>
+<li><p>definizione del prodotto vettoriale</p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="definizione-di-spazio-vettoriale">
+<h2>Definizione di spazio vettoriale<a class="headerlink" href="#definizione-di-spazio-vettoriale" title="Permalink to this heading">#</a></h2>
+<p>Uno spazio vettoriale è una struttura algebrica formata da:</p>
+<ul class="simple">
+<li><p>un insieme <span class="math notranslate nohighlight">\(V\)</span>, i cui elementi sono chiamati <strong>vettori</strong></p></li>
+<li><p>un campo <span class="math notranslate nohighlight">\(K\)</span> (di solito quello dei numeri reali <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> o complessi <span class="math notranslate nohighlight">\(\mathbb{C}\)</span>), i cui elementi sono chiamati <strong>scalari</strong></p></li>
+<li><p>due operazioni chiuse rispetto all’insieme <span class="math notranslate nohighlight">\(V\)</span> chiamate:</p>
+<ul>
+<li><p>somma vettoriale</p></li>
+<li><p>moltiplicazione per uno scalare,
+che soddisfano determinate proprietà che verranno elencate in seguito.</p></li>
+</ul>
+</li>
+</ul>
+<p>Un’<strong>operazione</strong> è <strong>chiusa</strong> rispetto a un’insieme, se il risultato delle operazioni è un elemento dell’insieme.</p>
+<p>Nel seguito del capitolo verranno considerati solo campi vettoriali definiti sui numeri reali, per i quali <span class="math notranslate nohighlight">\(K = \mathbb{R}\)</span>.</p>
+<div class="section" id="operazioni-sui-vettori-definizione-di-spazio-vettoriale">
+<h3>Operazioni sui vettori: definizione di spazio vettoriale<a class="headerlink" href="#operazioni-sui-vettori-definizione-di-spazio-vettoriale" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>La <strong>somma</strong> tra due vettori <span class="math notranslate nohighlight">\(\mathbf{v}\)</span>, <span class="math notranslate nohighlight">\(\mathbf{w} \, \in V\)</span> è il vettore</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\mathbf{v} + \mathbf{w} \in V\]</div>
+<ul class="simple">
+<li><p>La <strong>moltiplicazione per uno scalare</strong> di un vettore <span class="math notranslate nohighlight">\(\mathbf{v} \in V\)</span> per uno scalare <span class="math notranslate nohighlight">\(\alpha \in K\)</span> è il vettore</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\alpha \mathbf{v} \in V\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Proprietà delle operazioni<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">proprietà commutativa della somma</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\mathbf{u} + \mathbf{v} = \mathbf{v} + \mathbf{u} \qquad \forall \mathbf{u}, \mathbf{v} \in V\]</div>
+<ul class="simple">
+<li><p class="sd-card-text">proprietà associativa della somma</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[(\mathbf{u} + \mathbf{v}) + \mathbf{w} = \mathbf{u} + ( \mathbf{v} + \mathbf{w} ) \qquad \forall \mathbf{u}, \mathbf{v}, \mathbf{w} \in V\]</div>
+<ul class="simple">
+<li><p class="sd-card-text">esistenza dell’elemento neutro della somma</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\exists \mathbf{0}_V \in V \qquad s.t. \qquad \mathbf{u} + \mathbf{0}_V = \mathbf{u} \qquad \forall \mathbf{u} \in V\]</div>
+<ul class="simple">
+<li><p class="sd-card-text">esistenza dell’elemento inverso della somma</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\forall \mathbf{u} \in V \ \exists \mathbf{u}' \in V \qquad s.t. \qquad \mathbf{u} + \mathbf{u}' = \mathbf{0}\]</div>
+<ul class="simple">
+<li><p class="sd-card-text">proprietà associativa del prodotto scalare</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[(\alpha \beta) \mathbf{u} = \alpha ( \beta \mathbf{u} ) \qquad \forall \alpha, \beta \in K, \ \mathbf{u} \in V\]</div>
+<ul class="simple">
+<li><p class="sd-card-text">esistenza dell’elemento neutro della moltiplicazione per uno scalare</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\exists 1 \in K \qquad s.t. \qquad 1 \, \mathbf{u} = \mathbf{u} \quad \forall \mathbf{u} \in V\]</div>
+<ul class="simple">
+<li><p class="sd-card-text">proprietà distributiva della moltiplicazione per uno scalare</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[(\alpha + \beta) \mathbf{u} = \alpha \mathbf{u} + \beta \mathbf{u}\]</div>
+<div class="math notranslate nohighlight">
+\[\alpha (\mathbf{u} + \mathbf{v}) = \alpha \mathbf{u} + \alpha \mathbf{v} \]</div>
+</div>
+</details></div>
+</div>
+<div class="section" id="base-di-uno-spazio-vettoriale">
+<h2>Base di uno spazio vettoriale<a class="headerlink" href="#base-di-uno-spazio-vettoriale" title="Permalink to this heading">#</a></h2>
+<p><strong>Combinazione lineare.</strong></p>
+<p><strong>Vettori linearmente indipendenti.</strong></p>
+<p><strong>Base di uno spazio vettoriale.</strong> In uno spazio vettoriale, ogni vettore può essere rappresentato come una combinazione lineare di un insieme di vettori dello spazio, opportunamente scelti. Il numero minimo di questi vettori è definita come dimensione dello spazio vettoriale.</p>
+<p><strong>Prodotto scalare - o prodotto interno.</strong></p>
+<div class="math notranslate nohighlight">
+\[\vec{v} \cdot \vec{w}: V \times V \rightarrow \mathbb{R}\]</div>
+<div class="math notranslate nohighlight">
+\[\vec{v} \cdot \vec{w} = |\vec{v}| |\vec{w}| \cos \theta_{\vec{v} \vec{w}}\]</div>
+<p><strong>Prodotto vettoriale.</strong></p>
+<div class="math notranslate nohighlight">
+\[\vec{v} \times \vec{w}: V \times V \rightarrow V\]</div>
+<div class="math notranslate nohighlight">
+\[\vec{v} \times \vec{w} = \hat{k} |\vec{v}| |\vec{w}| \sin \theta_{\vec{v} \vec{w}}\]</div>
+<p><strong>Base cartesiana.</strong> <span class="math notranslate nohighlight">\(\{ \hat{e}_i \}_{i=1:n^d}\)</span>, <span class="math notranslate nohighlight">\(\{ \hat{x}, \hat{y}, \hat{z} \}\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \hat{x} \cdot  \hat{x} &amp; = \hat{y} \cdot  \hat{y} = \hat{z} \cdot  \hat{z} = 1 \\
+  \hat{x} \cdot  \hat{y} &amp; = \hat{y} \cdot  \hat{z} = \hat{z} \cdot  \hat{x} = 0
+\end{aligned}\end{split}\]</div>
+<p>e usando il prodotto vettore per definire l’orientazione dei 3 vettori,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \hat{x} \times \hat{y} &amp; = \hat{z} \\
+  \hat{y} \times \hat{z} &amp; = \hat{x} \\
+  \hat{z} \times \hat{x} &amp; = \hat{y} \\
+\end{aligned}\end{split}\]</div>
+<p>Un vettore può essere scritto in una base cartesiana come</p>
+<div class="math notranslate nohighlight">
+\[\vec{v} = v_x \hat{x} + v_y \hat{y} + v_z \hat{z}\]</div>
+<p>Una coordinata del vettore è semplicemente</p>
+<div class="math notranslate nohighlight">
+\[v_x = \hat{x} \cdot \vec{v} \ .\]</div>
+<p>Somma di vettori e moltiplicazione per uno scalare</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+   \vec{v} + \vec{w} &amp; =   (v_x \hat{x} + v_y \hat{y} + v_z \hat{z}) + (w_x \hat{x} + w_y \hat{y} + w_z \hat{z}) = \\
+                     &amp; =   (v_x + w_x) \hat{x} + (v_y + w_y) \hat{y} + (v_z + w_z) \hat{z} \\ \\
+ a \vec{v}           &amp; = a (v_x \hat{x} + v_y \hat{y} + v_z \hat{z}) = \\
+                     &amp; =   ( a v_x ) \hat{x} + ( a v_y ) \hat{y} + ( a v_z ) \hat{z}
+\end{aligned}\end{split}\]</div>
+<p>Il prodotto scalare diventa quindi</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \vec{v} \cdot \vec{w}
+  &amp; = (v_x \hat{x} + v_y \hat{y} + v_z \hat{z}) \cdot (w_x \hat{x} + w_y \hat{y} + w_z \hat{z}) = \\
+  &amp; = v_x w_x + v_y w_y + v_z w_z
+\end{aligned}\end{split}\]</div>
+<p>mentre il prodotto vettoriale</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \vec{v} \times \vec{w}
+  &amp; = (v_x \hat{x} + v_y \hat{y} + v_z \hat{z}) \times (w_x \hat{x} + w_y \hat{y} + w_z \hat{z}) = \\
+  &amp; = (v_y w_z - v_z w_y) \hat{x} + (v_z w_x - v_x w_z) \hat{y} + (v_x w_y - v_y w_x) \hat{z} = \\
+\end{aligned}\end{split}\]</div>
+</div>
+<div class="toctree-wrapper compound">
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -497,11 +663,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="complex-algebra.html"
+       href="vector-algebra-def.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Algebra complessa</p>
+        <p class="prev-next-title">Prime definizioni</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -511,6 +677,24 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definizione-di-spazio-vettoriale">Definizione di spazio vettoriale</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni-sui-vettori-definizione-di-spazio-vettoriale">Operazioni sui vettori: definizione di spazio vettoriale</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#base-di-uno-spazio-vettoriale">Base di uno spazio vettoriale</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
