@@ -76,7 +76,7 @@ $$\int^x f(t) \ dt = F(x) + C \ ,$$
 dove la costante additiva $C$ tiene conto dell'arbitrarietà appena discussa.
 
 
-(infinitesimal-calculus:derivatives:thm)=
+(infinitesimal-calculus:integrals:thm)=
 ## Teoremi
 
 <!--
@@ -84,8 +84,9 @@ dove la costante additiva $C$ tiene conto dell'arbitrarietà appena discussa.
 ### Teorema della media
 :label: infinitesimal-calculus:derivatives:thm:avg
 -->
-(infinitesimal-calculus:derivatives:thm:avg)=
+(infinitesimal-calculus:integrals:thm:avg)=
 ```{prf:theorem} Teorema della media
+:label: integrals:thm:avg
 
 Sia $f: [a,b] \in \mathbb{R} \rightarrow \mathbb{R}$ una funzione continua su $[a,b]$, allora esiste $c \in [a,b]$ tale che
 
@@ -101,15 +102,16 @@ $$\int_{a}^{b} f(x) dx = (b-a) f(c) $$
 ### Teorema fondamentale del calcolo integrale
 :label: infinitesimal-calculus:derivatives:thm:fund
 -->
-(infinitesimal-calculus:derivatives:thm:fund)=
+(infinitesimal-calculus:integrals:thm:fund)=
 ```{prf:theorem} Teorema fondamentale del calcolo infinitesimale
+:label: integrals:thm:fund
 
 $$\dfrac{d}{dx} \int_{a}^{x} f(y) dy = f(x) $$
 
 ```
 
 ```{dropdown} Dimostrazione
-**Dim.** Usando la [definizione di derivata](infinitesimal-calculus:derivatives:def), le [proprietà dell'integrale definito](infinitesimal-calculus:integrals:def:definite:prop) e il [teorema della media](infinitesimal-calculus:derivatives:thm:avg),
+**Dim.** Usando la [definizione di derivata](infinitesimal-calculus:derivatives:def), le [proprietà dell'integrale definito](infinitesimal-calculus:integrals:def:definite:prop) e il [teorema della media](infinitesimal-calculus:integrals:thm:avg),
 
 $$\begin{aligned}
 \dfrac{d}{dx} \int_{a}^x f(y) dy & = \lim_{\varepsilon \rightarrow 0 }\frac{1}{\varepsilon} \Big[ \int_{a}^{x+\varepsilon} f(y) dy - \int_{a}^{x} f(y) dy \Big] = \\
@@ -120,8 +122,9 @@ $$\begin{aligned}
 
 ```
 
-(infinitesimal-calculus:derivatives:thm:fund:reynolds)=
+(infinitesimal-calculus:integrals:thm:fund:reynolds)=
 ```{prf:theorem} Derivata su dominio dipendente dalla variabile indipendente
+:label: integrals:thm:fund:reynolds
 
 Sia $x \in D$, e gli estremi di integrazione $a(x)$, $b(x)$ **todo** *Caratteristiche?*
 
@@ -145,7 +148,7 @@ $$\begin{aligned}
 
 (infinitesimal-calculus:integrals:fund)=
 ## Integrali fondamentali
-Una volta dimostrato il [teorema fondamentale del calcolo infinitesimale](infinitesimal-calculus:derivatives:thm:fund), questo risultato può essere usato per valutare gli integrali fondamentali come l'operazione inversa alla derivazione applicata alle [derivate fondamentali](infinitesimal-calculus:derivatives:fund) 
+Una volta dimostrato il [teorema fondamentale del calcolo infinitesimale](infinitesimal-calculus:integrals:thm:fund), questo risultato può essere usato per valutare gli integrali fondamentali come l'operazione inversa alla derivazione applicata alle [derivate fondamentali](infinitesimal-calculus:integrals:fund) 
 
 $$\begin{aligned}
  \int x^n         \ dx & = \frac{1}{n} x^{n+1} + C  \qquad (n \neq 0) \\ 
@@ -185,7 +188,7 @@ per la regola di derivazione della funzione composta,
 $$\widetilde{f}(x) := \dfrac{d}{dx} \widetilde{F}(x) = \dfrac{d}{dx} F(y(x)) = 
 \dfrac{d F}{d y}(y(x)) \frac{d y}{d x}(x) =: f(y(x)) y'(x) \ .$$
 
-Usando il [teorema del calcolo infinitesimale](infinitesimal-calculus:derivatives:thm:fund)
+Usando il [teorema del calcolo infinitesimale](infinitesimal-calculus:integrals:thm:fund)
 
 **todo...**
 
