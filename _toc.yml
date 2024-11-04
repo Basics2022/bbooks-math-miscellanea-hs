@@ -4,16 +4,30 @@
 format: jb-book
 root: intro
 parts:
-- caption: Vettori
+- caption: Introduzione
   chapters:
-  - file: ch/vectors
+  - file: ch/school-programs
     sections:
-    - file: ch/vectors/euclidean-space-hs
-    - file: ch/vectors/algebra-hs
+    - file: ch/school-programs/current-guidelines-italy
+- caption: Algebra
+  chapters:
+  - file: ch/algebra
+  - file: ch/algebra/real-algebra
+    sections:
+    - file: ch/linear_algebra
+  - file: ch/algebra/vector-algebra
+  - file: ch/algebra/complex-algebra
+# - caption: Vettori
+#   chapters:
+#   - file: ch/vectors
+#     sections:
+#     - file: ch/vectors/euclidean-space-hs
+#     - file: ch/vectors/algebra-hs
 - caption: Geometria analitica
   chapters:
   - file: ch/analytic_geometry
-  - file: ch/analytic_geometry/euclidean_space
+    sections:
+    - file: ch/analytic_geometry/euclidean_space
   - file: ch/analytic_geometry/analytic_geometry_2d
     sections:
     - file: ch/analytic_geometry/analytic_geometry_2d/coordinates
@@ -30,31 +44,25 @@ parts:
     - file: ch/analytic_geometry/analytic_geometry_3d/curves
     - file: ch/analytic_geometry/analytic_geometry_3d/lines
     - file: ch/analytic_geometry/analytic_geometry_3d/cone
-- caption: Calcolo infinitesimale
+- caption: Pre-calcolo
   chapters:
-  - file: ch/infinitesimal_calculus
-  - file: ch/infinitesimal_calculus/real_functions
-  - file: ch/infinitesimal_calculus/limits
-  - file: ch/infinitesimal_calculus/derivatives
-  - file: ch/infinitesimal_calculus/integrals
-    sections:
-    - file: ch/infinitesimal_calculus/integrals-table
-    - file: ch/infinitesimal_calculus/integrals-problems
-- caption: Equazioni differenziali ordinarie
-  chapters:
-  - file: ch/ode
-- caption: Trigonometria
-  chapters:
-  - file: ch/trigonometry
-- caption: Esponenziale e logaritmo
-  chapters:
-  - file: ch/exponential_logarithm
-- caption: Serie e successioni
-  chapters:
+  - file: ch/precalculus
   - file: ch/series
-- caption: Numeri complessi
+  - file: ch/exponential_logarithm
+  - file: ch/trigonometry
+- caption: Calcolo
   chapters:
-  - file: ch/complex
-- caption: Algebra lineare
+  - file: ch/calculus
+  - file: ch/infinitesimal_calculus
+    sections:
+    - file: ch/infinitesimal_calculus/real_functions
+    - file: ch/infinitesimal_calculus/limits
+    - file: ch/infinitesimal_calculus/derivatives
+    - file: ch/infinitesimal_calculus/integrals
+      sections:
+      - file: ch/infinitesimal_calculus/integrals-table
+      - file: ch/infinitesimal_calculus/integrals-problems
+    - file: ch/ode
+- caption: Statistica
   chapters:
-  - file: ch/linear_algebra
+  - file: ch/statistics

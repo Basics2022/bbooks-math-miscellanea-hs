@@ -1,13 +1,92 @@
 (book:math-hs-miscellanea)=
-<!-- # Matematica per il triennio delle scuole superiori -->
+# Matematica per le scuole superiori
 
 Questo libro fa parte del materiale pensato per [le scuole superiori](https://basics2022.github.io/bbooks-hs)
 
+**Obiettivi.** **todo**
+
+**Contenuti.**
+
+````{dropdown} Algebra
+<!-- :open: -->
+```{dropdown} Numeri reali
+```
+```{dropdown} Numeri complessi
+```
+```{dropdown} Vettori
+```
+````
+
+````{dropdown} Geometria analitica
+<!-- :open: -->
+```{dropdown} Geometrica analitica nel piano $E^2$
+```
+```{dropdown} Geometrica analitica nello spazio $E^3$
+```
+````
+
+````{dropdown} Pre-calcolo
+<!-- :open: -->
+```{dropdown} Serie e successioni
+```
+```{dropdown} Funzioni notevoli
+  - Funzioni trigonometriche
+  - Esponenziale e logaritmo
+  - Funzioni iperboliche
+```
+````
+
+````{dropdown} Calcolo
+<!-- :open: -->
+```{dropdown} Reale, $ f: D \subset \mathbb{R} \rightarrow \mathbb{R}$
+  - Limiti
+  - Derivate
+  - Integrali
+  - Equazioni differenziali
+```
+```{dropdown} Reale multi-variabile, $$
+```
+```{dropdown} Vettoriale in spazi euclidei, $ f: D \subset E^n \rightarrow V$
+```
+````
+
+````{dropdown} Statistica
+<!-- :open: -->
+````
+
+
+
+
+
+
+
+
+<!--
+- Algebra: reale, complessa, vettoriale/tensoriale
+  - oggetti; operazioni; calcolo letterale; equazioni e disequazioni, sistemi;
+
+- Geometria analitica
+
+- Calcolo infinitesimale, f: R -> R
+- Calcolo: reale, complesso, vettoriale/tensoriale
+  - funzioni, limiti, derivate, integrali
+
+- Statistica
+  - ...
+  - ...
+  - ...
+
+-->
+
+
+<!--
 <span style="color:red">
 Questo libro potrebbe diventare la **landing page** per la matematica delle scuole superiori. 
 Per ora colleziona gli argomenti di matematica delle scuole superiori. L'organizzazione migliore verrà decisa in un secondo momento.
 </span>
+-->
 
+<!--
 ## Obiettivi
 - Descrizione dello spazio e di oggetti (matematici e fisici) nello spazio
 - ...
@@ -37,7 +116,7 @@ Lista di argomenti utili, per trattare in maniera sufficientemente completa gli 
 **Algebra sui numeri reali.**
 
 **Geometria euclidea.**
-
+-->
 
 
 
