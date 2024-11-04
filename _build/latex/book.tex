@@ -2764,16 +2764,6 @@ Nel gran calderone del pre\sphinxhyphen{}calcolo finiscono qui tutti gli argomen
 \sphinxincludegraphics{{euler-introductio-3}.png}
 \\
 \hline
-\sphinxAtStartPar
-Subcaption 1
-&
-\sphinxAtStartPar
-Subcaption 2
-&
-\sphinxAtStartPar
-Subcaption 3
-\\
-\hline
 \end{tabulary}
 \par
 \sphinxattableend\end{savenotes}
@@ -2805,10 +2795,6 @@ le {\hyperref[\detokenize{ch/trigonometry:math-hs-trigonometry}]{\sphinxcrossref
 
 \sphinxAtStartPar
 Nel secondo volume, Eulero applica i risultati del primo volume allo studio delle \sphinxstylestrong{curve} e delle \sphinxstylestrong{superfici} nel piano e nello spazio.
-
-
-
-
 
 \sphinxstepscope
 
@@ -2861,7 +2847,7 @@ Nov 04, 2024
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-0 min read
+1 min read
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -2965,13 +2951,72 @@ criterio del rapporto
 
 
 \subsection{Esempi}
-\label{\detokenize{ch/series:esempi}}
+\label{\detokenize{ch/series:esempi}}\subsubsection*{Serie armonica, \protect\(\ \sum_{n=1}^{\infty} \frac{1}{n}\protect\).}
+
 \sphinxAtStartPar
-\sphinxstylestrong{Serie armonica.}
-\sphinxstylestrong{Serie geometrica.}
-\sphinxstylestrong{Serie telescopiche.}
-\sphinxstylestrong{Serie di Mengoli.}
-\sphinxstylestrong{\(e\)}
+La serie armonica,
+\begin{equation*}
+\begin{split}\sum_{n=1}^{\infty} \frac{1}{n} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+è una serie divergente. Non è difficile dimostrare che la serie è sempre crescente e non è limitata superiormente: infatti
+\begin{equation*}
+\begin{split}\sum_{n=1}^{\infty} \frac{1}{n} = 1 + \frac{1}{2} + \underbrace{\frac{1}{3} + \frac{1}{4}}_{> \frac{1}{2}} + \underbrace{\frac{1}{5} + \frac{1}{6} + \frac{1}{7} + \frac{1}{8}}_{> \frac{1}{2}} + \dots \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+la somma dei primi \(2^N\) termini della serie è maggiore di \(1 + \frac{N}{2}\), \(\sum_{n=1}^{2^N} \frac{1}{n} > 1 + \frac{N}{2}\).
+\subsubsection*{Serie geometrica, \protect\(\ \sum_{n=1}^{\infty} a^n\protect\).}
+\begin{equation*}
+\begin{split}\sum_{n=0}^{\infty} a^n\end{split}
+\end{equation*}
+\sphinxAtStartPar
+La serie risulta convergente per \(|a|<1\). Infatti
+\begin{equation*}
+\begin{split}S_N = \sum_{n=0}^{N} a^n = 1 + a \sum_{n=0}^{N} - a^{N+1} = 1 - a^{N+1} + a \, S_N\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}S_N = \frac{1 - a^{N+1}}{1-a} \ .\end{split}
+\end{equation*}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+per \(|a| < 1\), \(S = \lim_{N \rightarrow \infty} = \frac{1}{1 - a}\)
+
+\item {} 
+\sphinxAtStartPar
+per \(a \ge 1\), \(S = \lim_{N \rightarrow \infty} S_N = +\infty\)
+
+\item {} 
+\sphinxAtStartPar
+per \(a<1\), …
+
+\end{itemize}
+\subsubsection*{Serie telescopiche, \protect\(\ \sum_{n=1}^{\infty} \left( A_n - A_{n+1} \right)\protect\).}
+\begin{equation*}
+\begin{split}\sum_{n=1}^{\infty} a_n = \sum_{n=1}^{\infty} \left( A_{n} - A_{n+1} \right) = A_1 - \lim_{n \rightarrow \infty} A_n \end{split}
+\end{equation*}\subsubsection*{Serie di Mengoli, \protect\(\ \sum_{n=1}^{\infty} \frac{1}{n(n+1)}\protect\).}
+
+\sphinxAtStartPar
+La serie di Mengoli è un esempio di serie telescopica, con
+\begin{equation*}
+\begin{split}a_n = \frac{1}{n(n+1)} = \frac{1}{n} - \frac{1}{n+1}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e quindi la serie risulta convergente,
+\begin{equation*}
+\begin{split}\sum_{n=1}^{\infty} \frac{1}{n(n+1)} = 1 - \lim_{n \rightarrow \infty} \frac{1}{n+1} = 1 \ .\end{split}
+\end{equation*}\subsubsection*{\protect\(e\ \protect\) di Eulero o di Nepero, \protect\(\ e = \sum_{n=0}^{\infty} \frac{1}{n!}\protect\).}
+
+\sphinxAtStartPar
+La serie
+\begin{equation*}
+\begin{split}\sum_{n=0}^{\infty} \frac{1}{n!}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+converge a un numero irrazionale \(e\), che viene definito il \sphinxstylestrong{numero di Eulero o di Nepero}, e il cui valore approssimato è
+\begin{equation*}
+\begin{split}e = 2.718281828\text{"e poi la magia finisce"} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+cioè le cifre decimali successive non sono periodiche.
 
 
 \section{Serie numeriche complesse}
