@@ -19,3 +19,12 @@ $$\begin{aligned}
 avendo usato il vettore unitario $\hat{v} = \frac{\vec{v}}{|\vec{v}|}$ per la proiezione.
 
 
+## Posizione reciproca
+
+```{list-table}
+:header-rows: 0
+* - ![](../../../media/analytic-geometry-3d-lines-skew.png)
+  - ![](../../../media/analytic-geometry-3d-lines-parallel.png)
+  - ![](../../../media/analytic-geometry-3d-lines-incident.png)
+```
+

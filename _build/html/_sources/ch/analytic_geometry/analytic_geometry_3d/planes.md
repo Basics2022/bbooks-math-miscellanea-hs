@@ -19,6 +19,16 @@ Se i due vettori non sono tra di loro allineati, o meglio proporzionali, è poss
 
 $$\pi: \ P = Q + \lambda_1 \vec{t}_1 + \lambda_2 \vec{t}_2 \ .$$
 
+```{list-table}
+:header-rows: 0
+* - ![](../../../media/analytic-geometry-3d-plane-def.png)
+  - ![](../../../media/analytic-geometry-3d-planes-parallel.png)
+  - ![](../../../media/analytic-geometry-3d-planes-incident.png)
+```
+
+## Posizione reciproca di piani
+
+
 ## Distanza punto-piano
 Dato un punto $A$ e un piano $\pi$, di cui sono noti un punto $Q$ e il vettore normale $\vec{n}$, la distanza di $A$ da $\pi$ può essere calcolata come il valore assoluto della proiezione del vettore $A-Q$ lungo la direzione normale al piano, individuata da $\vec{n}$,
 
