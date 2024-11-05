@@ -44,9 +44,12 @@ parts:
 - caption: Precalcolo
   chapters:
   - file: ch/precalculus
+  - file: ch/precalculus/polynomials
   - file: ch/series
   - file: ch/trigonometry
   - file: ch/exponential_logarithm
+    sections:
+    - file: ch/exponential_logarithm-proof
   - file: ch/precalculus/multivariable-real-fun
 - caption: Calcolo
   chapters:

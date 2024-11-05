@@ -220,19 +220,23 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Precalcolo</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../precalculus.html">Introduzione al pre-calcolo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../precalculus/polynomials.html">Polinomi</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../series.html">Serie e successioni</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../trigonometry.html">Trigonometria</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../exponential_logarithm.html">Esponenziale e logaritmo</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../exponential_logarithm.html">Esponenziale e logaritmo</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../exponential_logarithm-proof.html">Esponenziale e logaritmo - dimostrazioni</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../precalculus/multivariable-real-fun.html">Funzioni multi-variabile</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Calcolo</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../calculus.html">Introduzione al calcolo</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../infinitesimal_calculus.html">Calcolo infinitesimale</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../infinitesimal_calculus.html">Calcolo infinitesimale</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../infinitesimal_calculus/real_functions.html">Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\( f: \mathbb{R} \rightarrow \mathbb{R} \)</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../infinitesimal_calculus/limits.html">Limiti</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../infinitesimal_calculus/derivatives.html">Derivate</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../../infinitesimal_calculus/integrals.html">Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../infinitesimal_calculus/integrals.html">Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../infinitesimal_calculus/integrals-table.html">Tavola degli integrali indefiniti più comuni</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../infinitesimal_calculus/integrals-problems.html">Problemi</a></li>
 </ul>
@@ -440,7 +444,6 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distanza-tra-punti">Distanza tra punti</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#angoli-tra-direzioni">Angoli tra direzioni</a></li>
 </ul>
             </nav>
         </div>
@@ -462,16 +465,18 @@ document.write(`
 <p>In maniera equivalente viene il modulo (o lunghezza) di un vettore <span class="math notranslate nohighlight">\(\vec{v} = v_x \hat{x} + v_y \hat{y}\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[|\vec{v}| = \sqrt{v_x^2 + v_y^2} \ .\]</div>
-</div>
-<div class="section" id="angoli-tra-direzioni">
-<h2>Angoli tra direzioni<a class="headerlink" href="#angoli-tra-direzioni" title="Permalink to this heading">#</a></h2>
-<p>Nello spazio euclideo, una direzione con verso può essere identificata da un vettore <span class="math notranslate nohighlight">\(\vec{v}\)</span>. Date due direzioni con verso identificate dai vettori <span class="math notranslate nohighlight">\(\vec{u}\)</span>, <span class="math notranslate nohighlight">\(\vec{v}\)</span>, l’angolo formato tra i due vettori può essere identificato dalla proiezione di un vettore sull’altro tramite il prodotto interno</p>
-<div class="math notranslate nohighlight">
-\[\vec{u} \cdot \vec{v} := |\vec{u}| |\vec{v}| \cos \theta_{uv} \ ,\]</div>
-<p>e usando un sistema di coordinate cartesiano</p>
-<div class="math notranslate nohighlight">
-\[\vec{u} \cdot \vec{v} = u_x v_x + u_y v_y \ .\]</div>
-<p><strong>todo</strong> Dimostrazione con <span class="math notranslate nohighlight">\(\vec{u} = u_x \hat{x} + u_y \hat{y}\)</span>, <span class="math notranslate nohighlight">\(\vec{v} = v_x \hat{x} + v_y \hat{y}\)</span>, <span class="math notranslate nohighlight">\(\hat{x} \cdot \hat{x} = \hat{y} \cdot \hat{y} = 1\)</span>, <span class="math notranslate nohighlight">\(\hat{x} \cdot \hat{y} = 0\)</span>.</p>
+<!--
+## Angoli tra direzioni
+Nello spazio euclideo, una direzione con verso può essere identificata da un vettore $\vec{v}$. Date due direzioni con verso identificate dai vettori $\vec{u}$, $\vec{v}$, l'angolo formato tra i due vettori può essere identificato dalla proiezione di un vettore sull'altro tramite il prodotto interno
+
+$$\vec{u} \cdot \vec{v} := |\vec{u}| |\vec{v}| \cos \theta_{uv} \ ,$$
+
+e usando un sistema di coordinate cartesiano
+
+$$\vec{u} \cdot \vec{v} = u_x v_x + u_y v_y \ .$$
+
+**todo** Dimostrazione con $\vec{u} = u_x \hat{x} + u_y \hat{y}$, $\vec{v} = v_x \hat{x} + v_y \hat{y}$, $\hat{x} \cdot \hat{x} = \hat{y} \cdot \hat{y} = 1$, $\hat{x} \cdot \hat{y} = 0$.
+-->
 </div>
 </div>
 
@@ -539,7 +544,6 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distanza-tra-punti">Distanza tra punti</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#angoli-tra-direzioni">Angoli tra direzioni</a></li>
 </ul>
   </nav></div>
 

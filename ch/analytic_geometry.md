@@ -11,6 +11,14 @@
 - L'utilizzo di un sistema di coordinate per la descrizione dello spazio produce un legame tra la **geometria** e l'**algebra**:
   - da un lato, le entità geometriche possono essere rappresentate con funzioni, equazioni e/o disequazioni che coinvolgono le coordinate;
   - dall'altro, ai problemi algebrici si può dare un'interpretazione geometrica;
+
+```{list-table}
+:header-rows: 0
+* - ![](../media/analytic-geometry-graphical-sln-equation.png)
+  - ![](../media/analytic-geometry-graphical-sln-system-eqn.png)
+  - ![](../media/analytic-geometry-graphical-sln-system-ineq.png)
+```
+
 - Nel 1637 Cartesio formalizzò le basi della geometria analitica, o geometria cartesiana, nel libro *Geometria*, introdotto dal suo più famoso *Discorso sul metodo*.
 - Il lavoro di Cartesio fornisce strumenti fondamentali usati nella seconda metà del XVII secolo da Newton e Leibniz per sviluppare il calcolo infinitesimale, e in contemporaneanmente la meccanica razionale di Newton.
 
