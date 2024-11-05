@@ -68,7 +68,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/exponential_logarithm';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Funzioni multi-variabile" href="precalculus/multivariable-real-fun.html" />
+    <link rel="next" title="Esponenziale e logaritmo - dimostrazioni" href="exponential_logarithm-proof.html" />
     <link rel="prev" title="Trigonometria" href="trigonometry.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -220,19 +220,23 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Precalcolo</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="precalculus.html">Introduzione al pre-calcolo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="precalculus/polynomials.html">Polinomi</a></li>
 <li class="toctree-l1"><a class="reference internal" href="series.html">Serie e successioni</a></li>
 <li class="toctree-l1"><a class="reference internal" href="trigonometry.html">Trigonometria</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Esponenziale e logaritmo</a></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Esponenziale e logaritmo</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="exponential_logarithm-proof.html">Esponenziale e logaritmo - dimostrazioni</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="precalculus/multivariable-real-fun.html">Funzioni multi-variabile</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Calcolo</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="calculus.html">Introduzione al calcolo</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="infinitesimal_calculus.html">Calcolo infinitesimale</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="infinitesimal_calculus.html">Calcolo infinitesimale</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="infinitesimal_calculus/real_functions.html">Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\( f: \mathbb{R} \rightarrow \mathbb{R} \)</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="infinitesimal_calculus/limits.html">Limiti</a></li>
 <li class="toctree-l2"><a class="reference internal" href="infinitesimal_calculus/derivatives.html">Derivate</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="infinitesimal_calculus/integrals.html">Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="infinitesimal_calculus/integrals.html">Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="infinitesimal_calculus/integrals-table.html">Tavola degli integrali indefiniti più comuni</a></li>
 <li class="toctree-l3"><a class="reference internal" href="infinitesimal_calculus/integrals-problems.html">Problemi</a></li>
 </ul>
@@ -479,7 +483,7 @@ e^x &amp; := \lim_{n \rightarrow \infty} \left( 1 + \frac{x}{n}\right)^n  = \\
 \end{aligned}\end{split}\]</div>
 <p>Si può dimostrare che</p>
 <ul>
-<li><p>le due definizioni sono equivalenti, e la serie è convergente per ogni <span class="math notranslate nohighlight">\(\mathbf{x} \in \mathbb{R}\)</span> finito</p></li>
+<li><p>le due definizioni sono equivalenti, e la serie è convergente per ogni <span class="math notranslate nohighlight">\(x \in \mathbb{R}\)</span> finito</p></li>
 <li><p>la funzione <span class="math notranslate nohighlight">\(e^x\)</span> giustifica questa notazione poiché soddisfa le proprietà delle potenze, come</p>
 <div class="math notranslate nohighlight">
 \[e^{x+y} = e^x \, e^y \ .\]</div>
@@ -489,6 +493,8 @@ e^x &amp; := \lim_{n \rightarrow \infty} \left( 1 + \frac{x}{n}\right)^n  = \\
 <p><strong>Esponenziale complesso.</strong> Si può estendere la definizione di esponenziale anche a un numero complesso, <span class="math notranslate nohighlight">\(z \in \mathbb{C}\)</span>
 <strong>todo</strong></p>
 </div>
+</div>
+<div class="toctree-wrapper compound">
 </div>
 </div>
 
@@ -532,11 +538,11 @@ e^x &amp; := \lim_{n \rightarrow \infty} \left( 1 + \frac{x}{n}\right)^n  = \\
       </div>
     </a>
     <a class="right-next"
-       href="precalculus/multivariable-real-fun.html"
+       href="exponential_logarithm-proof.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Funzioni multi-variabile</p>
+        <p class="prev-next-title">Esponenziale e logaritmo - dimostrazioni</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

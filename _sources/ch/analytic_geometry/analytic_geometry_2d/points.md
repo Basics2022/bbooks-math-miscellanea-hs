@@ -10,6 +10,7 @@ In maniera equivalente viene il modulo (o lunghezza) di un vettore $\vec{v} = v_
 
 $$|\vec{v}| = \sqrt{v_x^2 + v_y^2} \ .$$
 
+<!--
 ## Angoli tra direzioni
 Nello spazio euclideo, una direzione con verso può essere identificata da un vettore $\vec{v}$. Date due direzioni con verso identificate dai vettori $\vec{u}$, $\vec{v}$, l'angolo formato tra i due vettori può essere identificato dalla proiezione di un vettore sull'altro tramite il prodotto interno
 
@@ -20,3 +21,4 @@ e usando un sistema di coordinate cartesiano
 $$\vec{u} \cdot \vec{v} = u_x v_x + u_y v_y \ .$$
 
 **todo** Dimostrazione con $\vec{u} = u_x \hat{x} + u_y \hat{y}$, $\vec{v} = v_x \hat{x} + v_y \hat{y}$, $\hat{x} \cdot \hat{x} = \hat{y} \cdot \hat{y} = 1$, $\hat{x} \cdot \hat{y} = 0$.
+-->

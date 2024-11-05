@@ -69,7 +69,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Trigonometria" href="trigonometry.html" />
-    <link rel="prev" title="Introduzione al pre-calcolo" href="precalculus.html" />
+    <link rel="prev" title="Polinomi" href="precalculus/polynomials.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -220,19 +220,23 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Precalcolo</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="precalculus.html">Introduzione al pre-calcolo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="precalculus/polynomials.html">Polinomi</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Serie e successioni</a></li>
 <li class="toctree-l1"><a class="reference internal" href="trigonometry.html">Trigonometria</a></li>
-<li class="toctree-l1"><a class="reference internal" href="exponential_logarithm.html">Esponenziale e logaritmo</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="exponential_logarithm.html">Esponenziale e logaritmo</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="exponential_logarithm-proof.html">Esponenziale e logaritmo - dimostrazioni</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="precalculus/multivariable-real-fun.html">Funzioni multi-variabile</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Calcolo</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="calculus.html">Introduzione al calcolo</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="infinitesimal_calculus.html">Calcolo infinitesimale</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="infinitesimal_calculus.html">Calcolo infinitesimale</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="infinitesimal_calculus/real_functions.html">Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\( f: \mathbb{R} \rightarrow \mathbb{R} \)</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="infinitesimal_calculus/limits.html">Limiti</a></li>
 <li class="toctree-l2"><a class="reference internal" href="infinitesimal_calculus/derivatives.html">Derivate</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="infinitesimal_calculus/integrals.html">Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="infinitesimal_calculus/integrals.html">Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="infinitesimal_calculus/integrals-table.html">Tavola degli integrali indefiniti più comuni</a></li>
 <li class="toctree-l3"><a class="reference internal" href="infinitesimal_calculus/integrals-problems.html">Problemi</a></li>
 </ul>
@@ -469,7 +473,7 @@ document.write(`
 <p class="sd-p-0 sd-m-0">basics</p>
 </div>
 <div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
-<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-calendar" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path></svg></span>Nov 04, 2024</p>
+<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-calendar" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path></svg></span>Nov 05, 2024</p>
 </div>
 <div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
 <p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>1 min read</p>
@@ -516,36 +520,81 @@ document.write(`
 </div>
 <div class="section" id="esempi">
 <h3>Esempi<a class="headerlink" href="#esempi" title="Permalink to this heading">#</a></h3>
-<p><strong>Serie armonica.</strong> La serie armonica,</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Serie armonica, <span class="math notranslate nohighlight">\(\ \sum_{n=1}^{\infty} \frac{1}{n}\)</span>.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">La serie armonica,</p>
 <div class="math notranslate nohighlight">
 \[\sum_{n=1}^{\infty} \frac{1}{n} \ ,\]</div>
-<p>è una serie divergente. Non è difficile dimostrare che la serie è crescente e non è limitata superiormente: infatti</p>
+<p class="sd-card-text">è una serie divergente. Non è difficile dimostrare che la serie è sempre crescente e non è limitata superiormente: infatti</p>
 <div class="math notranslate nohighlight">
 \[\sum_{n=1}^{\infty} \frac{1}{n} = 1 + \frac{1}{2} + \underbrace{\frac{1}{3} + \frac{1}{4}}_{&gt; \frac{1}{2}} + \underbrace{\frac{1}{5} + \frac{1}{6} + \frac{1}{7} + \frac{1}{8}}_{&gt; \frac{1}{2}} + \dots \ ,\]</div>
-<p>la somma dei primi <span class="math notranslate nohighlight">\(2^N\)</span> termini della serie è maggiore di <span class="math notranslate nohighlight">\(1 + \frac{N}{2}\)</span>, <span class="math notranslate nohighlight">\(\sum_{n=1}^{2^N} \frac{1}{n} &gt; 1 + \frac{N}{2}\)</span>.</p>
-<p><strong>Serie geometrica.</strong></p>
+<p class="sd-card-text">la somma dei primi <span class="math notranslate nohighlight">\(2^N\)</span> termini della serie è maggiore di <span class="math notranslate nohighlight">\(1 + \frac{N}{2}\)</span>, <span class="math notranslate nohighlight">\(\sum_{n=1}^{2^N} \frac{1}{n} &gt; 1 + \frac{N}{2}\)</span>.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Serie geometrica, <span class="math notranslate nohighlight">\(\ \sum_{n=1}^{\infty} a^n\)</span>.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
 <div class="math notranslate nohighlight">
 \[\sum_{n=0}^{\infty} a^n\]</div>
-<p>La serie risulta convergente per <span class="math notranslate nohighlight">\(|a|&lt;1\)</span>. Infatti</p>
+<p class="sd-card-text">La serie risulta convergente per <span class="math notranslate nohighlight">\(|a|&lt;1\)</span>. Infatti</p>
 <div class="math notranslate nohighlight">
-\[S_N = \sum_{n=0}^{N} a^n = 1 + a \sum_{n=0}^{N} - a^{N+1} = 1 - a^{N+1} - a \, S_N\]</div>
-<p><strong>Serie telescopiche.</strong></p>
+\[S_N = \sum_{n=0}^{N} a^n = 1 + a \sum_{n=0}^{N} - a^{N+1} = 1 - a^{N+1} + a \, S_N\]</div>
+<div class="math notranslate nohighlight">
+\[S_N = \frac{1 - a^{N+1}}{1-a} \ .\]</div>
+<ul class="simple">
+<li><p class="sd-card-text">per <span class="math notranslate nohighlight">\(|a| &lt; 1\)</span>, <span class="math notranslate nohighlight">\(S = \lim_{N \rightarrow \infty} = \frac{1}{1 - a}\)</span></p></li>
+<li><p class="sd-card-text">per <span class="math notranslate nohighlight">\(a \ge 1\)</span>, <span class="math notranslate nohighlight">\(S = \lim_{N \rightarrow \infty} S_N = +\infty\)</span></p></li>
+<li><p class="sd-card-text">per <span class="math notranslate nohighlight">\(a&lt;1\)</span>, …</p></li>
+</ul>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Serie telescopiche, <span class="math notranslate nohighlight">\(\ \sum_{n=1}^{\infty} \left( A_n - A_{n+1} \right)\)</span>.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
 <div class="math notranslate nohighlight">
 \[\sum_{n=1}^{\infty} a_n = \sum_{n=1}^{\infty} \left( A_{n} - A_{n+1} \right) = A_1 - \lim_{n \rightarrow \infty} A_n \]</div>
-<p><strong>Serie di Mengoli.</strong> La serie di Mengoli è un esempio di serie telescopica, con</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Serie di Mengoli, <span class="math notranslate nohighlight">\(\ \sum_{n=1}^{\infty} \frac{1}{n(n+1)}\)</span>.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">La serie di Mengoli è un esempio di serie telescopica, con</p>
 <div class="math notranslate nohighlight">
 \[a_n = \frac{1}{n(n+1)} = \frac{1}{n} - \frac{1}{n+1}\]</div>
-<p>e quindi la serie risulta convergente,</p>
+<p class="sd-card-text">e quindi la serie risulta convergente,</p>
 <div class="math notranslate nohighlight">
 \[\sum_{n=1}^{\infty} \frac{1}{n(n+1)} = 1 - \lim_{n \rightarrow \infty} \frac{1}{n+1} = 1 \ .\]</div>
-<p><strong><span class="math notranslate nohighlight">\(e\)</span> di Eulero o di Nepero.</strong> La serie</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="math notranslate nohighlight">\(e\ \)</span> di Eulero o di Nepero, <span class="math notranslate nohighlight">\(\ e = \sum_{n=0}^{\infty} \frac{1}{n!}\)</span>.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">La serie</p>
 <div class="math notranslate nohighlight">
 \[\sum_{n=0}^{\infty} \frac{1}{n!}\]</div>
-<p>converge a un numero irrazionale <span class="math notranslate nohighlight">\(e\)</span>, che viene definito il <strong>numero di Eulero o di Nepero</strong>, e il cui valore approssimato è</p>
+<p class="sd-card-text">converge a un numero irrazionale <span class="math notranslate nohighlight">\(e\)</span>, che viene definito il <strong>numero di Eulero o di Nepero</strong>, e il cui valore approssimato è</p>
 <div class="math notranslate nohighlight">
 \[e = 2.718281828\text{&quot;e poi la magia finisce&quot;} \ ,\]</div>
-<p>cioè le cifre decimali successive non sono periodiche.</p>
+<p class="sd-card-text">cioè le cifre decimali successive non sono periodiche.</p>
 </div>
+</details></div>
 </div>
 <div class="section" id="serie-numeriche-complesse">
 <h2>Serie numeriche complesse<a class="headerlink" href="#serie-numeriche-complesse" title="Permalink to this heading">#</a></h2>
@@ -583,12 +632,12 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="precalculus.html"
+       href="precalculus/polynomials.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Introduzione al pre-calcolo</p>
+        <p class="prev-next-title">Polinomi</p>
       </div>
     </a>
     <a class="right-next"

@@ -21,7 +21,7 @@ e^x & := \lim_{n \rightarrow \infty} \left( 1 + \frac{x}{n}\right)^n  = \\
 \end{aligned}$$
 
 Si può dimostrare che 
-- le due definizioni sono equivalenti, e la serie è convergente per ogni $\mathbf{x} \in \mathbb{R}$ finito 
+- le due definizioni sono equivalenti, e la serie è convergente per ogni $x \in \mathbb{R}$ finito 
 - la funzione $e^x$ giustifica questa notazione poiché soddisfa le proprietà delle potenze, come 
   
   $$e^{x+y} = e^x \, e^y \ .$$

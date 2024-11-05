@@ -220,19 +220,23 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Precalcolo</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../precalculus.html">Introduzione al pre-calcolo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../precalculus/polynomials.html">Polinomi</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../series.html">Serie e successioni</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../trigonometry.html">Trigonometria</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../exponential_logarithm.html">Esponenziale e logaritmo</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../exponential_logarithm.html">Esponenziale e logaritmo</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../exponential_logarithm-proof.html">Esponenziale e logaritmo - dimostrazioni</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../precalculus/multivariable-real-fun.html">Funzioni multi-variabile</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Calcolo</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../calculus.html">Introduzione al calcolo</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../infinitesimal_calculus.html">Calcolo infinitesimale</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../infinitesimal_calculus.html">Calcolo infinitesimale</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../infinitesimal_calculus/real_functions.html">Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\( f: \mathbb{R} \rightarrow \mathbb{R} \)</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../infinitesimal_calculus/limits.html">Limiti</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../infinitesimal_calculus/derivatives.html">Derivate</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../../infinitesimal_calculus/integrals.html">Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../infinitesimal_calculus/integrals.html">Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../infinitesimal_calculus/integrals-table.html">Tavola degli integrali indefiniti più comuni</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../infinitesimal_calculus/integrals-problems.html">Problemi</a></li>
 </ul>
@@ -441,6 +445,7 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equazione-della-retta">Equazione della retta</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distanza-punto-retta">Distanza punto-retta</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#posizione-reciproca">Posizione reciproca</a></li>
 </ul>
             </nav>
         </div>
@@ -470,6 +475,22 @@ document.write(`
                  &amp; = \left| \hat{v} \times (A-Q) \right| 
 \end{aligned}\end{split}\]</div>
 <p>avendo usato il vettore unitario <span class="math notranslate nohighlight">\(\hat{v} = \frac{\vec{v}}{|\vec{v}|}\)</span> per la proiezione.</p>
+</div>
+<div class="section" id="posizione-reciproca">
+<h2>Posizione reciproca<a class="headerlink" href="#posizione-reciproca" title="Permalink to this heading">#</a></h2>
+<table class="table">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><img alt="" src="../../../_images/analytic-geometry-3d-lines-skew.png" /></p></td>
+<td><p><img alt="" src="../../../_images/analytic-geometry-3d-lines-parallel.png" /></p></td>
+<td><p><img alt="" src="../../../_images/analytic-geometry-3d-lines-incident.png" /></p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 
@@ -538,6 +559,7 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equazione-della-retta">Equazione della retta</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distanza-punto-retta">Distanza punto-retta</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#posizione-reciproca">Posizione reciproca</a></li>
 </ul>
   </nav></div>
 

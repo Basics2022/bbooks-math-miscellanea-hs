@@ -11,6 +11,7 @@
 
 **todo**
 
+(math-hs:algebra:vector:euclidean-space:inner-product)=
 ## Prodotto interno e distanza
 Uno spazio vettoriale euclideo può essere equipaggiato con un'operazione bilineare, simmetrica (su campi reali), e semi-definita positiva, definita **prodotto interno**,
 
@@ -26,6 +27,7 @@ $$\begin{aligned}
 E' semplice verificare che la definizione del prodotto interno induce la definizione della norma. Infatti, calcolando il prodotto interno tra un vettore $\vec{v}$ e se stesso, l'angolo compreso è l'angolo nullo, $\theta_{\vec{v} \vec{v}} = 0$, con $\cos \theta_{\vec{u}\vec{u}} = 0$.
 
 
+(math-hs:algebra:vector:euclidean-space:vector-product)=
 ## Prodotto vettoriale
 Per lo spazio euclideo $E^3$ è possibile definire anche un'operazione bilineare, antisimmetrica, definita **prodotto vettoriale**,
 

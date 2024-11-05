@@ -30,6 +30,12 @@ $$\gamma: \ F(q^1, q^2) = 0$$
 
 $$\gamma(s): \ \begin{cases} q^1 = f^1(s) \\ q^2 = f^2(s) \end{cases}$$
 
-## Esempi
+**todo** *figura*
+
+## Appartenenza di un punto a una curva
+
+## Interesezione di curve
+
+## Interpretazione grafica di equazioni, sistemi di equazioni e disequazioni
 
 

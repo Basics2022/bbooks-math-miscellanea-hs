@@ -220,19 +220,23 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Precalcolo</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../precalculus.html">Introduzione al pre-calcolo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../precalculus/polynomials.html">Polinomi</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../series.html">Serie e successioni</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../trigonometry.html">Trigonometria</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../exponential_logarithm.html">Esponenziale e logaritmo</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../exponential_logarithm.html">Esponenziale e logaritmo</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../exponential_logarithm-proof.html">Esponenziale e logaritmo - dimostrazioni</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../precalculus/multivariable-real-fun.html">Funzioni multi-variabile</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Calcolo</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../calculus.html">Introduzione al calcolo</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../infinitesimal_calculus.html">Calcolo infinitesimale</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../infinitesimal_calculus.html">Calcolo infinitesimale</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../infinitesimal_calculus/real_functions.html">Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\( f: \mathbb{R} \rightarrow \mathbb{R} \)</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../infinitesimal_calculus/limits.html">Limiti</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../infinitesimal_calculus/derivatives.html">Derivate</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../../infinitesimal_calculus/integrals.html">Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../infinitesimal_calculus/integrals.html">Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../infinitesimal_calculus/integrals-table.html">Tavola degli integrali indefiniti più comuni</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../infinitesimal_calculus/integrals-problems.html">Problemi</a></li>
 </ul>
@@ -439,6 +443,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#posizione-reciproca-di-piani">Posizione reciproca di piani</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distanza-punto-piano">Distanza punto-piano</a></li>
 </ul>
             </nav>
@@ -466,6 +471,22 @@ document.write(`
 <p>Se i due vettori non sono tra di loro allineati, o meglio proporzionali, è possibile descrivere tutti i punti del piano come una loro combinazione lineare</p>
 <div class="math notranslate nohighlight">
 \[\pi: \ P = Q + \lambda_1 \vec{t}_1 + \lambda_2 \vec{t}_2 \ .\]</div>
+<table class="table">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><img alt="" src="../../../_images/analytic-geometry-3d-plane-def.png" /></p></td>
+<td><p><img alt="" src="../../../_images/analytic-geometry-3d-planes-parallel.png" /></p></td>
+<td><p><img alt="" src="../../../_images/analytic-geometry-3d-planes-incident.png" /></p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="posizione-reciproca-di-piani">
+<h2>Posizione reciproca di piani<a class="headerlink" href="#posizione-reciproca-di-piani" title="Permalink to this heading">#</a></h2>
+</div>
 <div class="section" id="distanza-punto-piano">
 <h2>Distanza punto-piano<a class="headerlink" href="#distanza-punto-piano" title="Permalink to this heading">#</a></h2>
 <p>Dato un punto <span class="math notranslate nohighlight">\(A\)</span> e un piano <span class="math notranslate nohighlight">\(\pi\)</span>, di cui sono noti un punto <span class="math notranslate nohighlight">\(Q\)</span> e il vettore normale <span class="math notranslate nohighlight">\(\vec{n}\)</span>, la distanza di <span class="math notranslate nohighlight">\(A\)</span> da <span class="math notranslate nohighlight">\(\pi\)</span> può essere calcolata come il valore assoluto della proiezione del vettore <span class="math notranslate nohighlight">\(A-Q\)</span> lungo la direzione normale al piano, individuata da <span class="math notranslate nohighlight">\(\vec{n}\)</span>,</p>
@@ -538,6 +559,7 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#posizione-reciproca-di-piani">Posizione reciproca di piani</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distanza-punto-piano">Distanza punto-piano</a></li>
 </ul>
   </nav></div>
