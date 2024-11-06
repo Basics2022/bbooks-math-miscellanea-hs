@@ -1,5 +1,5 @@
 (geometry:analytic:2d:conics-cartesian)=
-# Equazioni in coordinate cartesiane
+# Forma canonica in coordinate cartesiane
 
 ## Circonferenza
 Una circonferenza è il luogo dei punti equidistanti da un punto $C$ dato, detto centro della circonferenza. La distanza tra i punti del circonferenza e il centro viene definito raggio della circonferenza.

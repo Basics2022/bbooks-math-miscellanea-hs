@@ -1,5 +1,5 @@
 (geometry:analytic:2d:conics-polar)=
-# Equazioni in coordinate polari
+# Forma canonica in coordinate polari
 
 Le coniche possono essere anche caratterizzate dal valore dell'eccentricità,
 
@@ -18,8 +18,7 @@ $$e \big| D - r \cos \theta \big| = r \ .$$
 
 Questa equazione descrive tutte le coniche con eccentricità non nulla, cioè tutte le coniche tranne la circonferenza. La circonferenza si ottiene come limite dell' eccentricità $e \rightarrow 0$ e distanza $D \rightarrow \infty$, in modo tale da avere $e D = R$ finito.
 
-
-
+<!--
 **Circonferenza, $e = 0$.** L'equazione generale per la circonferenza degenera in 
 
 $$r = R \ ,$$
@@ -47,3 +46,6 @@ e riscrivendo
 $$r - \frac{D}{2} = \frac{D}{2} - r \cos \theta$$
 
 **Iperbole, $e > 1$.**
+-->
+
+

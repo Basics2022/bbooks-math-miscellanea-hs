@@ -14,6 +14,10 @@ Queste curve compaiono in diversi ambiti della matematica e della fisica. Ad ese
   - ![](../../../media/analytic-geometry-conics-optics-hyperbola.png)
 ```
 
+Le coniche possono essere definite in maniera implicita, senza fare uso di sistemi di coordinate. Partendo da definizioni implicite equivalenti, e sfruttando l'arbitrarietà nel definire il sistema di coordinate più comodo, vengono ricavate 
+- prima, le equazioni delle coniche in **forma canonica** con un'opportuna scelta di sistemi di coordinate 
+- poi, l'equazione in forma generale di una conica nel piano, ottenuta tramite una trasformazione rigida - roto-traslazione - della curva o, viceversa, delle coordinate.
+
 Queste curve possono essere definite a partire da un punto $F$, detto **fuoco**, e una retta $d$, detta **direttrice** come verrà fatto per ricavare le [equazioni in coordinate polari](geometry:analytic:2d:conics-polar) delle coniche.
 ```{dropdown} Definizione in termini di eccentricità
 Una conica può essere definita come il luogo dei punti $P$ dello spazio per i quali il rapporto tra la distanza dal fuoco e dalla direttrice è costante,

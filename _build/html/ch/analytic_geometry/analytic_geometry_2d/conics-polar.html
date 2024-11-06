@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Equazioni in coordinate polari &#8212; Matematica per le scuole superiori</title>
+    <title>Forma canonica in coordinate polari &#8212; Matematica per le scuole superiori</title>
   
   
   
@@ -68,8 +68,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/analytic_geometry/analytic_geometry_2d/conics-polar';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Geometria analitica nello spazio" href="../analytic_geometry_3d.html" />
-    <link rel="prev" title="Equazioni in coordinate cartesiane" href="conics-cartesian.html" />
+    <link rel="next" title="Equazione generale delle coniche" href="conics-general.html" />
+    <link rel="prev" title="Forma canonica in coordinate cartesiane" href="conics-cartesian.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -174,6 +174,7 @@ const thebe_selector_output = ".output, .cell_output"
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduzione</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../school-programs.html">Esempi di programmi</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../school-programs/intro.html">Prefazione</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../school-programs/current-guidelines-italy.html">Indicazioni nazionali per i licei</a></li>
 </ul>
 </li>
@@ -204,8 +205,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="curves.html">Curve nel piano</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lines.html">Rette nel piano</a></li>
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="conics.html">Coniche</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="conics-cartesian.html">Equazioni in coordinate cartesiane</a></li>
-<li class="toctree-l3 current active"><a class="current reference internal" href="#">Equazioni in coordinate polari</a></li>
+<li class="toctree-l3"><a class="reference internal" href="conics-cartesian.html">Forma canonica in coordinate cartesiane</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Forma canonica in coordinate polari</a></li>
+<li class="toctree-l3"><a class="reference internal" href="conics-general.html">Equazione generale delle coniche</a></li>
 </ul>
 </li>
 </ul>
@@ -246,6 +248,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../ode.html">Equazioni differenziali ordinarie</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../multivariable-calculus.html">Calcolo multi-variabile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../vector-calculus.html">Calcolo lineare e multilineare</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Statistica</span></p>
 <ul class="nav bd-sidenav">
@@ -433,7 +437,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Equazioni in coordinate polari</h1>
+    <h1>Forma canonica in coordinate polari</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -447,8 +451,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="equazioni-in-coordinate-polari">
-<span id="geometry-analytic-2d-conics-polar"></span><h1>Equazioni in coordinate polari<a class="headerlink" href="#equazioni-in-coordinate-polari" title="Permalink to this heading">#</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="forma-canonica-in-coordinate-polari">
+<span id="geometry-analytic-2d-conics-polar"></span><h1>Forma canonica in coordinate polari<a class="headerlink" href="#forma-canonica-in-coordinate-polari" title="Permalink to this heading">#</a></h1>
 <p>Le coniche possono essere anche caratterizzate dal valore dell’eccentricità,</p>
 <div class="math notranslate nohighlight">
 \[e = \dfrac{\text{dist(punto, fuoco)}}{\text{dist(punto, direttrice)}} = \dfrac{\text{dist}(P,F)}{\text{dst}(P,d)} \ .\]</div>
@@ -462,26 +466,35 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[e \big| D - r \cos \theta \big| = r \ .\]</div>
 <p>Questa equazione descrive tutte le coniche con eccentricità non nulla, cioè tutte le coniche tranne la circonferenza. La circonferenza si ottiene come limite dell’ eccentricità <span class="math notranslate nohighlight">\(e \rightarrow 0\)</span> e distanza <span class="math notranslate nohighlight">\(D \rightarrow \infty\)</span>, in modo tale da avere <span class="math notranslate nohighlight">\(e D = R\)</span> finito.</p>
-<p><strong>Circonferenza, <span class="math notranslate nohighlight">\(e = 0\)</span>.</strong> L’equazione generale per la circonferenza degenera in</p>
-<div class="math notranslate nohighlight">
-\[r = R \ ,\]</div>
-<p>per <span class="math notranslate nohighlight">\(e \rightarrow 0\)</span>, <span class="math notranslate nohighlight">\(D \rightarrow +\infty\)</span> in modo tale che <span class="math notranslate nohighlight">\(e D := R\)</span> finito.</p>
-<p><strong>Ellisse, <span class="math notranslate nohighlight">\(e \in (0,1)\)</span>.</strong></p>
-<p><strong>Parabola, <span class="math notranslate nohighlight">\(e = 1\)</span>.</strong> Per <span class="math notranslate nohighlight">\(e = 1\)</span> e <span class="math notranslate nohighlight">\(D - r \cos \theta &gt; 0\)</span>, l’equazione della parabola diventa</p>
-<div class="math notranslate nohighlight">
-\[r(1 + \cos \theta) = D \ .\]</div>
-<p>Con la trasformazione di coordinate</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{cases}
+<!--
+**Circonferenza, $e = 0$.** L'equazione generale per la circonferenza degenera in 
+
+$$r = R \ ,$$
+
+per $e \rightarrow 0$, $D \rightarrow +\infty$ in modo tale che $e D := R$ finito.
+
+**Ellisse, $e \in (0,1)$.**
+
+**Parabola, $e = 1$.** Per $e = 1$ e $D - r \cos \theta > 0$, l'equazione della parabola diventa
+
+$$r(1 + \cos \theta) = D \ .$$
+
+Con la trasformazione di coordinate
+
+$$\begin{cases}
   x = r \sin \theta \\
   y = \frac{D}{2} - r \cos \theta \\
-\end{cases}\end{split}\]</div>
-<div class="math notranslate nohighlight">
-\[x^2 = r^2 \sin^2 \theta = r^2 - r^2 \cos^2 \theta = \]</div>
-<p>e riscrivendo</p>
-<div class="math notranslate nohighlight">
-\[r - \frac{D}{2} = \frac{D}{2} - r \cos \theta\]</div>
-<p><strong>Iperbole, <span class="math notranslate nohighlight">\(e &gt; 1\)</span>.</strong></p>
+\end{cases}$$
+
+$$x^2 = r^2 \sin^2 \theta = r^2 - r^2 \cos^2 \theta = $$
+
+
+e riscrivendo
+
+$$r - \frac{D}{2} = \frac{D}{2} - r \cos \theta$$
+
+**Iperbole, $e > 1$.**
+-->
 </div>
 
     <script type="text/x-thebe-config">
@@ -520,15 +533,15 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Equazioni in coordinate cartesiane</p>
+        <p class="prev-next-title">Forma canonica in coordinate cartesiane</p>
       </div>
     </a>
     <a class="right-next"
-       href="../analytic_geometry_3d.html"
+       href="conics-general.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Geometria analitica nello spazio</p>
+        <p class="prev-next-title">Equazione generale delle coniche</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

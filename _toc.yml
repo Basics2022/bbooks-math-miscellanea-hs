@@ -8,6 +8,7 @@ parts:
   chapters:
   - file: ch/school-programs
     sections:
+    - file: ch/school-programs/intro
     - file: ch/school-programs/current-guidelines-italy
 - caption: Algebra
   chapters:
@@ -35,6 +36,7 @@ parts:
       sections:
       - file: ch/analytic_geometry/analytic_geometry_2d/conics-cartesian
       - file: ch/analytic_geometry/analytic_geometry_2d/conics-polar
+      - file: ch/analytic_geometry/analytic_geometry_2d/conics-general
   - file: ch/analytic_geometry/analytic_geometry_3d
     sections:
     - file: ch/analytic_geometry/analytic_geometry_3d/points
@@ -65,6 +67,8 @@ parts:
       - file: ch/infinitesimal_calculus/integrals-table
       - file: ch/infinitesimal_calculus/integrals-problems
     - file: ch/ode
+  - file: ch/multivariable-calculus
+  - file: ch/vector-calculus
 - caption: Statistica
   chapters:
   - file: ch/statistics

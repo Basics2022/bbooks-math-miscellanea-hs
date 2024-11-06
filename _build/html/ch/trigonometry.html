@@ -174,6 +174,7 @@ const thebe_selector_output = ".output, .cell_output"
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduzione</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="school-programs.html">Esempi di programmi</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="school-programs/intro.html">Prefazione</a></li>
 <li class="toctree-l2"><a class="reference internal" href="school-programs/current-guidelines-italy.html">Indicazioni nazionali per i licei</a></li>
 </ul>
 </li>
@@ -204,8 +205,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/curves.html">Curve nel piano</a></li>
 <li class="toctree-l2"><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/lines.html">Rette nel piano</a></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/conics.html">Coniche</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/conics-cartesian.html">Equazioni delle coniche in coordinate cartesiane</a></li>
-<li class="toctree-l3"><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/conics-polar.html">Coniche nel piano: coordinate polari</a></li>
+<li class="toctree-l3"><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/conics-cartesian.html">Equazioni in coordinate cartesiane</a></li>
+<li class="toctree-l3"><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/conics-polar.html">Equazioni in coordinate polari</a></li>
 </ul>
 </li>
 </ul>
@@ -471,7 +472,11 @@ document.write(`
 \[\sin \theta := \frac{\overline{PH}}{R}\]</div>
 <div class="math notranslate nohighlight">
 \[\cos \theta := \frac{\overline{OH}}{R}\]</div>
-<p><img alt="" src="../_images/trigonometry-def.png" /></p>
+<div class="figure align-default">
+<img alt="../_images/trigonometry-def.png" src="../_images/trigonometry-def.png" />
+</div>
+<!-- :align: center -->
+<!--  ![]()  -->
 <p>Usando il teorema di Pitagora è immediato dimostrare la relazione fondamentale tra le funzioni trigonometriche</p>
 <div class="math notranslate nohighlight">
 \[\sin^2 \theta + \cos^2 \theta = 1 \ .\]</div>
@@ -537,7 +542,9 @@ document.write(`
 </tr>
 </tbody>
 </table>
-<p><img alt="" src="../_images/trigonometry-particular.png" /></p>
+<div class="figure align-default">
+<img alt="../_images/trigonometry-particular.png" src="../_images/trigonometry-particular.png" />
+</div>
 </div>
 <div class="section" id="formule-di-somma-e-sottrazione">
 <h2>Formule di somma e sottrazione<a class="headerlink" href="#formule-di-somma-e-sottrazione" title="Permalink to this heading">#</a></h2>
@@ -547,7 +554,6 @@ document.write(`
   \cos ( x \mp y ) &amp; = \cos x \ \cos y \pm \sin x \ \sin y \\
   \sin ( x \mp y ) &amp; = \sin x \ \cos y \mp \cos x \ \sin y \\
 \end{aligned}\end{split}\]</div>
-<p><img alt="" src="../_images/trigonometry-sum.png" /></p>
 <p>Per completezza, come utile esercizio di geometria sulla similitudine dei triangoli, e per familiarizzare con le funzioni armoniche, si fornisce la dimostrazione della formula del coseno della somma.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -556,6 +562,9 @@ Dimostrazione di <span class="math notranslate nohighlight">\(\ \cos ( x + y ) =
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
+<div class="figure align-default">
+<img alt="../_images/trigonometry-sum.png" src="../_images/trigonometry-sum.png" />
+</div>
 <p class="sd-card-text">Partendo dall’interpretazione geometrica del coseno di <span class="math notranslate nohighlight">\(\alpha + \beta\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[\cos ( \alpha + \beta ) = \frac{\overline{OF}}{R}\]</div>
