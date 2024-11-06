@@ -3,6 +3,8 @@
 
 format: jb-book
 root: intro
+options:
+  numbered: True
 parts:
 - caption: Introduzione
   chapters:
@@ -68,7 +70,14 @@ parts:
       - file: ch/infinitesimal_calculus/integrals-problems
     - file: ch/ode
   - file: ch/multivariable-calculus
+    sections:
+    - file: ch/multivariable-calculus/limits
+    - file: ch/multivariable-calculus/derivatives
+    - file: ch/multivariable-calculus/integrals
   - file: ch/vector-calculus
+    sections:
+    - file: ch/vector-calculus/derivatives
+    - file: ch/vector-calculus/integrals
 - caption: Statistica
   chapters:
   - file: ch/statistics

@@ -63,6 +63,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/analytic_geometry/analytic_geometry_2d/conics-general';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -246,8 +248,16 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../ode.html">Equazioni differenziali ordinarie</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../multivariable-calculus.html">Calcolo multi-variabile</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../vector-calculus.html">Calcolo lineare e multilineare</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../multivariable-calculus.html">Introduzione al calcolo multi-variabile</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../multivariable-calculus/derivatives.html">Derivate di funzioni di più variabili</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../multivariable-calculus/integrals.html">Integrali su domini multi-dimensionali</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../vector-calculus.html">Introduzione al calcolo vettoriale su spazi euclidei</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../vector-calculus/derivatives.html">Operatori differenziali in spazi euclidei</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../vector-calculus/integrals.html">Integrali in spazi euclidei</a></li>
+</ul>
+</li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Statistica</span></p>
 <ul class="nav bd-sidenav">
@@ -424,7 +434,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -440,6 +452,15 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi">Esercizi</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -451,6 +472,103 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="equazione-generale-delle-coniche">
 <span id="geometry-analytic-2d-conics-general"></span><h1>Equazione generale delle coniche<a class="headerlink" href="#equazione-generale-delle-coniche" title="Permalink to this heading">#</a></h1>
+<p>L’equazione di una conica disposta nel piano in maniera arbitraria rispetto a un sistema di coordinate cartesiane ha l’epsressione</p>
+<div class="math notranslate nohighlight">
+\[A x^2 + B x y + C y^2 + D x + E y + F = 0 \ .\]</div>
+<p>E’ possibile dimostrare questa affermazione tramite una trasformazione rigida generica di roto-traslazione. In particolare, si applicherà prima una rotazione di un angolo <span class="math notranslate nohighlight">\(theta\)</span> e poi una traslazione <span class="math notranslate nohighlight">\(\vec{v} = x_{1,P} \hat{x}_1 + y_{1,P} \hat{y}_1\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+x_1 =   x \cos \theta + y \sin \theta \\
+y_1 = - x \sin \theta + y \cos \theta \\
+\end{cases}
+\qquad , \qquad
+\begin{cases}
+x_2 = x_1 - x_{1,P}  \\
+y_2 = y_1 - y_{1,P}  \\
+\end{cases}
+\end{split}\]</div>
+<p>Diversi tipi di coniche sono caratterizzati da diverse relazioni tra i coefficienti del polinomio di secondo grado, in particolare, dal valore del coefficiente <span class="math notranslate nohighlight">\(\Delta := B^2 - 4 A C\)</span>,</p>
+<ul class="simple">
+<li><p>ellisse:  <span class="math notranslate nohighlight">\(\Delta &lt; 0\)</span></p></li>
+<li><p>parabola: <span class="math notranslate nohighlight">\(\Delta = 0\)</span></p></li>
+<li><p>iperbole: <span class="math notranslate nohighlight">\(\Delta &gt; 0\)</span></p></li>
+</ul>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Dimostrazione, ellisse e iperbole<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Le equazioni in forma canonica di un’ellisse e un’iperbole possono essere scritte come</p>
+<div class="math notranslate nohighlight">
+\[\frac{x_2^2}{a^2} + \gamma \frac{y^2}{b^2} = 1 \qquad \rightarrow \qquad 0 = b^2 x_2^2 + \gamma a^2 y_2^2 - a^2 b^2 \ ,\]</div>
+<p class="sd-card-text">con <span class="math notranslate nohighlight">\(\gamma = 1\)</span> per l’ellisse e <span class="math notranslate nohighlight">\(\gamma = -1\)</span> per l’iperbole. Introducendo le trasformazioni di coordinate, si può manipolare l’espressione delle coniche</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  0 
+  &amp; = b^2 ( x_1 - x_{1,P} )^2 + \gamma a^2 ( y_1 - y_{1,P} )^2 - a^2 b^2 = \\
+  &amp; = b^2 ( x \cos \theta + y \sin \theta - x_{1,P} )^2 + \gamma a^2 ( - x \sin \theta + y \cos \theta - y_{1,P} )^2 - a^2 b^2 = \\
+  &amp; = x^2   \left( b^2 \cos^2 \theta + \gamma a^2 \sin^2 \theta \right)
+    + 2 x y \left( b^2 - \gamma a^2 \right) \sin \theta \cos \theta 
+    + y^2   \left( b^2 \sin^2 \theta + \gamma a^2 \cos^2 \theta \right) \\
+  &amp; + x     \left( - 2 b^2 x_{1,P} \cos \theta + 2 \gamma a^2 y_{1,P} \sin \theta \right) 
+    + y     \left( - 2 b^2 x_{1,P} \sin \theta - 2 \gamma a^2 y_{1,P} \cos \theta \right) \\
+  &amp; + b^2 x_{1,P}^2 + \gamma a^2 y_{1,P}^2 - a^2 b^2 
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">per calcolare il discriminante, usando la relazione <span class="math notranslate nohighlight">\(\gamma^2 = 1\)</span>, come</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \frac{\Delta}{4}
+  &amp; = \frac{B^2}{4} - AC = \\
+  &amp; = \left[ \left( b^2 - \gamma a^2 \right) \sin \theta \cos \theta \right]^2 - \left( b^2 \cos^2 \theta + \gamma a^2 \sin^2 \theta \right) \left( b^2 \sin^2 \theta + \gamma a^2 \cos^2 \theta \right) = \\
+  &amp; = b^4 \sin^2 \theta \cos^2 \theta - 2 \gamma a^2 b^2 \sin^2 \theta \cos^2 \theta + a^4 \sin^2 \theta \cos^2 \theta \\
+  &amp; - b^4 \sin^2 \theta \cos^2 \theta - \gamma a^2 b^2 \left( \sin^4 \theta + \cos^4 \theta \right) - a^4 \sin^2 \theta \cos^2 \theta = \\
+  &amp; = - \gamma a^2 b^2 \left(\underbrace{ \sin^2 \theta + \cos^2 \theta}_{=1} \right)^2 = - \gamma a^2 b^2
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">E quindi</p>
+<ul class="simple">
+<li><p class="sd-card-text">per un’ellisse, <span class="math notranslate nohighlight">\(\gamma = 1\)</span> e <span class="math notranslate nohighlight">\(\Delta &lt; 0\)</span></p></li>
+<li><p class="sd-card-text">per un’iperbole, <span class="math notranslate nohighlight">\(\gamma =-1\)</span> e <span class="math notranslate nohighlight">\(\Delta &gt; 0\)</span></p></li>
+</ul>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Dimostrazione, parabola<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Introducendo le trasformazioni di coordinate, si può manipolare l’espressione dell’equazione in forma canonica delle parabole</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  0
+  &amp; = a x_2^2 - y_2 = \\
+  &amp; = a ( x_1 - x_{1,P} )^2 - y_1 + y_{1,P} = \\
+  &amp; = a ( x \cos \theta + y \sin \theta - x_{1,P} )^2 - ( - x \sin \theta + y \cos \theta ) + y_{1,P} = \\
+  &amp; = x^2   \left( a \cos^2 \theta \right)
+    + 2 x y \left( a \cos \theta \sin \theta \right) 
+    + y^2   \left( a \sin^2 \theta \right) \\
+  &amp; + x     \left( - 2 a x_{1,P} \cos \theta + 2 \sin \theta \right) 
+    + y     \left( - 2 a x_{1,P} \sin \theta - 2 \cos \theta \right) \\
+  &amp; + x_{1,P}^2 + y_{1,P}
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">per poi calcolare il discrimminante,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \frac{\Delta}{4}
+  &amp; = \frac{B^2}{4} - AC = \\
+  &amp; = a^2 \cos^2 \theta \sin^2 \theta - a^2 \cos^2 \theta \sin^2 \theta = 0
+\end{aligned}\end{split}\]</div>
+</div>
+</details><p><strong>todo</strong> significato</p>
+<div class="section" id="id1">
+<h2><a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+</div>
+<div class="section" id="esercizi">
+<h2>Esercizi<a class="headerlink" href="#esercizi" title="Permalink to this heading">#</a></h2>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -507,6 +625,21 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi">Esercizi</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

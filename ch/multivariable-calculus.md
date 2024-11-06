@@ -1,4 +1,3 @@
 (multivariable-calculus)=
-# Calcolo multi-variabile
-
+# Introduzione al calcolo multi-variabile
 

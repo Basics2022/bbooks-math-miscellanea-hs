@@ -205,8 +205,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/curves.html">Curve nel piano</a></li>
 <li class="toctree-l2"><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/lines.html">Rette nel piano</a></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/conics.html">Coniche</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/conics-cartesian.html">Equazioni in coordinate cartesiane</a></li>
-<li class="toctree-l3"><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/conics-polar.html">Equazioni in coordinate polari</a></li>
+<li class="toctree-l3"><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/conics-cartesian.html">Forma canonica in coordinate cartesiane</a></li>
+<li class="toctree-l3"><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/conics-polar.html">Forma canonica in coordinate polari</a></li>
+<li class="toctree-l3"><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/conics-general.html">Equazione generale delle coniche</a></li>
 </ul>
 </li>
 </ul>
@@ -247,8 +248,16 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="ode.html">Equazioni differenziali ordinarie</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="multivariable-calculus.html">Calcolo multi-variabile</a></li>
-<li class="toctree-l1"><a class="reference internal" href="vector-calculus.html">Calcolo lineare e multilineare</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="multivariable-calculus.html">Introduzione al calcolo multi-variabile</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="multivariable-calculus/derivatives.html">Derivate di funzioni di più variabili</a></li>
+<li class="toctree-l2"><a class="reference internal" href="multivariable-calculus/integrals.html">Integrali su domini multi-dimensionali</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="vector-calculus.html">Introduzione al calcolo vettoriale su spazi euclidei</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="vector-calculus/derivatives.html">Operatori differenziali in spazi euclidei</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vector-calculus/integrals.html">Integrali in spazi euclidei</a></li>
+</ul>
+</li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Statistica</span></p>
 <ul class="nav bd-sidenav">
@@ -472,7 +481,9 @@ document.write(`
 <div class="tex2jax_ignore mathjax_ignore section" id="introduzione-alla-geometria-analitica">
 <span id="geometry-analytic"></span><h1>Introduzione alla geometria analitica<a class="headerlink" href="#introduzione-alla-geometria-analitica" title="Permalink to this heading">#</a></h1>
 <ul class="simple">
-<li><p>La geometria analitica si occupa dello stuido delle figure geometriche nello spazio tramite l’uso di <strong>sistemi di coordinate</strong>: la scelta dei sistemi di coordinate può spesso essere arbitaria, spesso guidata da criteri di “comodità”; i risultati sono indipendenti dalla scelta</p></li>
+<li><p>Nel 1637 Cartesio formalizzò le basi della geometria analitica, o geometria cartesiana, nel libro <em>Geometria</em>, introdotto dal suo più famoso <em>Discorso sul metodo</em>.</p></li>
+<li><p>Il lavoro di Cartesio fornisce strumenti fondamentali usati nella seconda metà del XVII secolo da Newton e Leibniz per sviluppare il <a class="reference internal" href="calculus.html#math-hs-calculus"><span class="std std-ref">calcolo infinitesimale</span></a>, e contemporanemente la <a class="reference external" href="https://basics2022.github.io/bbooks-physics-hs/ch/mechanics">meccanica razionale</a> di Newton.</p></li>
+<li><p>La geometria analitica si occupa dello studio delle figure geometriche nello spazio tramite l’uso di <strong>sistemi di coordinate</strong>: la scelta dei sistemi di coordinate può spesso essere arbitaria, spesso guidata da criteri di “comodità”; i risultati sono indipendenti dalla scelta.</p></li>
 <li><p>L’utilizzo di un sistema di coordinate per la descrizione dello spazio produce un legame tra la <strong>geometria</strong> e l’<strong>algebra</strong>:</p>
 <ul>
 <li><p>da un lato, le entità geometriche possono essere rappresentate con funzioni, equazioni e/o disequazioni che coinvolgono le coordinate;</p></li>
@@ -491,33 +502,29 @@ document.write(`
 <td><p><img alt="" src="../_images/analytic-geometry-graphical-sln-system-eqn.png" /></p></td>
 <td><p><img alt="" src="../_images/analytic-geometry-graphical-sln-system-ineq.png" /></p></td>
 </tr>
+<tr class="row-even"><td><p>Soluzione grafica dell’equazione <span class="math notranslate nohighlight">\(f(x) = 0\)</span></p></td>
+<td><p>Soluzione grafica del sistema di equazioni <span class="math notranslate nohighlight">\(\begin{cases} F(x,y) = 0 \\ G(x,y)=0 \end{cases}\)</span></p></td>
+<td><p>Soluzione grafica del sistema di disequazioni <span class="math notranslate nohighlight">\(\begin{cases} y &gt; f(x) \\ y &gt; g(x) \end{cases}\)</span></p></td>
+</tr>
 </tbody>
 </table>
-<ul class="simple">
-<li><p>Nel 1637 Cartesio formalizzò le basi della geometria analitica, o geometria cartesiana, nel libro <em>Geometria</em>, introdotto dal suo più famoso <em>Discorso sul metodo</em>.</p></li>
-<li><p>Il lavoro di Cartesio fornisce strumenti fondamentali usati nella seconda metà del XVII secolo da Newton e Leibniz per sviluppare il <a class="reference internal" href="calculus.html#math-hs-calculus"><span class="std std-ref">calcolo infinitesimale</span></a>, e contemporanemente la <a class="reference external" href="https://basics2022.github.io/bbooks-physics-hs/ch/mechanics">meccanica razionale</a> di Newton.</p></li>
-</ul>
 <p><strong>Argomenti.</strong></p>
+<p><strong>Spazi euclidei</strong></p>
+<p><strong>Geometria nel piano - spazio euclideo 2D, <span class="math notranslate nohighlight">\(E^2\)</span></strong></p>
 <ul class="simple">
-<li><p><strong>Spazi euclidei</strong></p></li>
-<li><p><strong>Geometria nel piano - spazio euclideo 2D, <span class="math notranslate nohighlight">\(E^2\)</span></strong></p>
-<ul>
 <li><p><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/coordinates.html#geometry-analytic-2d-coordinates"><span class="std std-ref">Sistemi di coordinate</span></a> <em>Cartesiane e polari; trasformazione tra sistemi di coordinate: polari e cartesiane; cartesiano-cartesiano: traslazione e rotazione</em></p></li>
 <li><p><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/points.html#geometry-analytic-2d-points"><span class="std std-ref">Punti</span></a></p></li>
 <li><p><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/lines.html#geometry-analytic-2d-lines"><span class="std std-ref">Rette</span></a></p></li>
 <li><p><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/conics.html#geometry-analytic-2d-conics"><span class="std std-ref">Coniche</span></a> <strong>todo</strong> <em>parabola, ellisse, iperbole: def, caratteristiche, descrizione in coord. cartesiane e polari; riferimento a gravitazione in meccanica classica</em></p></li>
 </ul>
-</li>
-<li><p><strong>Geometria nello spazio euclideo 3D, <span class="math notranslate nohighlight">\(E^3\)</span></strong></p>
-<ul>
+<p><strong>Geometria nello spazio euclideo 3D, <span class="math notranslate nohighlight">\(E^3\)</span></strong></p>
+<ul class="simple">
 <li><p>Sistemi di coordinate</p></li>
 <li><p>Punti</p></li>
 <li><p>Rette</p></li>
 <li><p>Piani</p></li>
 <li><p>Cono e rivisitazione delle coniche</p></li>
 <li><p>Superfici quadratiche</p></li>
-</ul>
-</li>
 </ul>
 <!--
 ## Geometria

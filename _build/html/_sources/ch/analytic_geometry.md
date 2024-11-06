@@ -7,7 +7,11 @@
 (geometry:analytic)=
 # Introduzione alla geometria analitica
 
-- La geometria analitica si occupa dello stuido delle figure geometriche nello spazio tramite l'uso di **sistemi di coordinate**: la scelta dei sistemi di coordinate può spesso essere arbitaria, spesso guidata da criteri di "comodità"; i risultati sono indipendenti dalla scelta
+
+- Nel 1637 Cartesio formalizzò le basi della geometria analitica, o geometria cartesiana, nel libro *Geometria*, introdotto dal suo più famoso *Discorso sul metodo*.
+- Il lavoro di Cartesio fornisce strumenti fondamentali usati nella seconda metà del XVII secolo da Newton e Leibniz per sviluppare il [calcolo infinitesimale](math-hs:calculus), e contemporanemente la [meccanica razionale](https://basics2022.github.io/bbooks-physics-hs/ch/mechanics) di Newton.
+
+- La geometria analitica si occupa dello studio delle figure geometriche nello spazio tramite l'uso di **sistemi di coordinate**: la scelta dei sistemi di coordinate può spesso essere arbitaria, spesso guidata da criteri di "comodità"; i risultati sono indipendenti dalla scelta.
 - L'utilizzo di un sistema di coordinate per la descrizione dello spazio produce un legame tra la **geometria** e l'**algebra**:
   - da un lato, le entità geometriche possono essere rappresentate con funzioni, equazioni e/o disequazioni che coinvolgono le coordinate;
   - dall'altro, ai problemi algebrici si può dare un'interpretazione geometrica;
@@ -17,27 +21,26 @@
 * - ![](../media/analytic-geometry-graphical-sln-equation.png)
   - ![](../media/analytic-geometry-graphical-sln-system-eqn.png)
   - ![](../media/analytic-geometry-graphical-sln-system-ineq.png)
+* - Soluzione grafica dell'equazione $f(x) = 0$
+  - Soluzione grafica del sistema di equazioni $\begin{cases} F(x,y) = 0 \\ G(x,y)=0 \end{cases}$
+  - Soluzione grafica del sistema di disequazioni $\begin{cases} y > f(x) \\ y > g(x) \end{cases}$
 ```
-
-- Nel 1637 Cartesio formalizzò le basi della geometria analitica, o geometria cartesiana, nel libro *Geometria*, introdotto dal suo più famoso *Discorso sul metodo*.
-- Il lavoro di Cartesio fornisce strumenti fondamentali usati nella seconda metà del XVII secolo da Newton e Leibniz per sviluppare il [calcolo infinitesimale](math-hs:calculus), e contemporanemente la [meccanica razionale](https://basics2022.github.io/bbooks-physics-hs/ch/mechanics) di Newton.
-
 
 **Argomenti.**
 
-- **Spazi euclidei**
-  
-- **Geometria nel piano - spazio euclideo 2D, $E^2$**
+**Spazi euclidei**
 
-  - [Sistemi di coordinate](geometry:analytic:2d:coordinates) *Cartesiane e polari; trasformazione tra sistemi di coordinate: polari e cartesiane; cartesiano-cartesiano: traslazione e rotazione*
+**Geometria nel piano - spazio euclideo 2D, $E^2$**
 
-  - [Punti](geometry:analytic:2d:points)
+- [Sistemi di coordinate](geometry:analytic:2d:coordinates) *Cartesiane e polari; trasformazione tra sistemi di coordinate: polari e cartesiane; cartesiano-cartesiano: traslazione e rotazione*
 
-  - [Rette](geometry:analytic:2d:lines)
+- [Punti](geometry:analytic:2d:points)
 
-  - [Coniche](geometry:analytic:2d:conics) **todo** *parabola, ellisse, iperbole: def, caratteristiche, descrizione in coord. cartesiane e polari; riferimento a gravitazione in meccanica classica*
+- [Rette](geometry:analytic:2d:lines)
 
-- **Geometria nello spazio euclideo 3D, $E^3$**
+- [Coniche](geometry:analytic:2d:conics) **todo** *parabola, ellisse, iperbole: def, caratteristiche, descrizione in coord. cartesiane e polari; riferimento a gravitazione in meccanica classica*
+
+**Geometria nello spazio euclideo 3D, $E^3$**
 
   -  Sistemi di coordinate
   -  Punti
