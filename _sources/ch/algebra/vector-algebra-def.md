@@ -63,6 +63,7 @@ $$(\alpha + \beta) \mathbf{u} = \alpha \mathbf{u} + \beta \mathbf{u}$$
 $$\alpha (\mathbf{u} + \mathbf{v}) = \alpha \mathbf{u} + \alpha \mathbf{v} $$
 ```
 
+(math-hs:algebra:vector:def:examples)=
 ### Esempi
 
 **Esempio 1 - $n$-upla di numeri reali ordinati.**
@@ -87,6 +88,16 @@ Fissato un punto $O$ in uno spazio euclideo (**todo** *riferimenti?*), si può a
 
 - moltiplicazione per uno scalare: **todo**
 
+(math-hs:algebra:vector:def:example:translations)=
+**Esempio 3 - spazio vettoriale delle traslazioni.** In uno spazio euclideo, l'insieme delle traslazioni forma uno spazio vettoriale.
+
+**todo**
+
+**Esempio 4 - polinomi di grado minore o uguale a $n$** L'insieme dei polinomi di grado minore o uguale a $n$,
+
+$$\mathbf{u} = u_n x^n + u_{n-1} x^{n-1} + \dots u_1 x + u_0 \ ,$$
+
+forma uno spazio vettoriale con le usuali definizioni di somma e moltiplicazione per uno scalare valide per i polinomi.
 
 ## Base di uno spazio vettoriale
 

@@ -68,7 +68,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/analytic_geometry/analytic_geometry_2d/conics';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Coniche nel piano" href="conics-cartesian.html" />
+    <link rel="next" title="Forma canonica in coordinate cartesiane" href="conics-cartesian.html" />
     <link rel="prev" title="Rette nel piano" href="lines.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -174,6 +174,7 @@ const thebe_selector_output = ".output, .cell_output"
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduzione</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../school-programs.html">Esempi di programmi</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../school-programs/intro.html">Prefazione</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../school-programs/current-guidelines-italy.html">Indicazioni nazionali per i licei</a></li>
 </ul>
 </li>
@@ -203,12 +204,15 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="points.html">Distanze e angoli</a></li>
 <li class="toctree-l2"><a class="reference internal" href="curves.html">Curve nel piano</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lines.html">Rette nel piano</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Coniche</a></li>
-<li class="toctree-l2"><a class="reference internal" href="conics-cartesian.html">Coniche nel piano</a></li>
-<li class="toctree-l2"><a class="reference internal" href="conics-polar.html">Coniche nel piano: coordinate polari</a></li>
+<li class="toctree-l2 current active has-children"><a class="current reference internal" href="#">Coniche</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="conics-cartesian.html">Forma canonica in coordinate cartesiane</a></li>
+<li class="toctree-l3"><a class="reference internal" href="conics-polar.html">Forma canonica in coordinate polari</a></li>
+<li class="toctree-l3"><a class="reference internal" href="conics-general.html">Equazione generale delle coniche</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../analytic_geometry_3d.html">Geometria analitica nello spazio</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../analytic_geometry_3d.html">Geometria analitica nello spazio</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../analytic_geometry_3d/points.html">Sistemi di coordinate per lo spazio euclideo <span class="math notranslate nohighlight">\(E^3\)</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../analytic_geometry_3d/planes.html">Piani nello spazio</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../analytic_geometry_3d/curves.html">Curve nello spazio</a></li>
@@ -223,7 +227,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../../precalculus/polynomials.html">Polinomi</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../series.html">Serie e successioni</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../trigonometry.html">Trigonometria</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../exponential_logarithm.html">Esponenziale e logaritmo</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../exponential_logarithm.html">Esponenziale e logaritmo</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../exponential_logarithm-proof.html">Esponenziale e logaritmo - dimostrazioni</a></li>
 </ul>
 </li>
@@ -232,11 +236,11 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Calcolo</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../calculus.html">Introduzione al calcolo</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../infinitesimal_calculus.html">Calcolo infinitesimale</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../infinitesimal_calculus.html">Calcolo infinitesimale</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../infinitesimal_calculus/real_functions.html">Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\( f: \mathbb{R} \rightarrow \mathbb{R} \)</span></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../infinitesimal_calculus/limits.html">Limiti</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../infinitesimal_calculus/derivatives.html">Derivate</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../../infinitesimal_calculus/integrals.html">Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../infinitesimal_calculus/integrals.html">Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../infinitesimal_calculus/integrals-table.html">Tavola degli integrali indefiniti più comuni</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../infinitesimal_calculus/integrals-problems.html">Problemi</a></li>
 </ul>
@@ -244,6 +248,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../ode.html">Equazioni differenziali ordinarie</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../multivariable-calculus.html">Calcolo multi-variabile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../vector-calculus.html">Calcolo lineare e multilineare</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Statistica</span></p>
 <ul class="nav bd-sidenav">
@@ -447,22 +453,98 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="coniche">
 <span id="geometry-analytic-2d-conics"></span><h1>Coniche<a class="headerlink" href="#coniche" title="Permalink to this heading">#</a></h1>
-<p>Le coniche sono curve che possono essere ottenute come intersezione tra un piano e un (doppio) cono circolare retto <strong>todo</strong> Aggiungere collegamento alla pagina della geometria 3D, con dimostrazione.</p>
-<p>Queste curve compaiono in alcuni ambiti di interesse pratico:</p>
+<p>Le coniche sono curve che possono essere ottenute come <a class="reference internal" href="../analytic_geometry_3d/cone.html#geometry-analytic-3d-cone-conics"><span class="std std-ref">intersezione tra un piano e un (doppio) cono circolare retto</span></a>.</p>
+<p>Queste curve compaiono in diversi ambiti della matematica e della fisica. Ad esempio,</p>
 <ul class="simple">
-<li><p>ottica e acustica geometrica</p></li>
-<li><p>gravitazione: secondo la meccanica di Newton, i corpi celesti descrivono traiettorie nello spazio che hanno la forma delle curve coniche:</p></li>
-<li><p>in altri ambiti della scienza in cui compaiono funzioni quadratiche</p></li>
+<li><p>in <strong>ottica</strong>: le coniche hanno proprietà geometriche che risultano utili in <strong>ottica</strong>, e nella trasmissione delle informazioni (le antenne paraboliche si chiamano così, poiché hanno la forma di un paraboloide)</p></li>
+<li><p>in <strong>astronomia</strong>: le traiettorie di due corpi isolati soggetti alla mutua interazione gravitazionale sono delle coniche, come mostrato nell’analisi del problema dei due corpi in meccanica classica.</p></li>
 </ul>
-<p>Per la loro relativa semplicità e frequenza con la quale appaiono in diverse applicazioni, lo studio delle coniche si presenta come utile argomento per l’applicazione delle nozioni di geometria analitica apprese finora.</p>
-<p>Le coniche possono essere definite tramite pochi elementi geometrici caratteristici, come un punto di riferimento <span class="math notranslate nohighlight">\(F\)</span> detto <strong>fuoco</strong> e una retta di riferimento <span class="math notranslate nohighlight">\(d\)</span> detta <strong>direttrice</strong>.</p>
+<table class="table">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><img alt="" src="../../../_images/analytic-geometry-conics-optics-ellipses.png" /></p></td>
+<td><p><img alt="" src="../../../_images/analytic-geometry-conics-optics-parabola.png" /></p></td>
+<td><p><img alt="" src="../../../_images/analytic-geometry-conics-optics-hyperbola.png" /></p></td>
+</tr>
+</tbody>
+</table>
+<p>Le coniche possono essere definite in maniera implicita, senza fare uso di sistemi di coordinate. Partendo da definizioni implicite equivalenti, e sfruttando l’arbitrarietà nel definire il sistema di coordinate più comodo, vengono ricavate</p>
 <ul class="simple">
-<li><p>equazione delle coniche usando le coordinate cartesiane</p></li>
-<li><p>equazione delle coniche usando le coordinate polari</p></li>
-<li><p>proprietà geometriche delle coniche</p></li>
-<li><p>coniche come sezione di un cono circolare</p></li>
-<li><p>coniche e gravitazione di Newton</p></li>
+<li><p>prima, le equazioni delle coniche in <strong>forma canonica</strong> con un’opportuna scelta di sistemi di coordinate</p></li>
+<li><p>poi, l’equazione in forma generale di una conica nel piano, ottenuta tramite una trasformazione rigida - roto-traslazione - della curva o, viceversa, delle coordinate.</p></li>
 </ul>
+<p>Queste curve possono essere definite a partire da un punto <span class="math notranslate nohighlight">\(F\)</span>, detto <strong>fuoco</strong>, e una retta <span class="math notranslate nohighlight">\(d\)</span>, detta <strong>direttrice</strong> come verrà fatto per ricavare le <a class="reference internal" href="conics-polar.html#geometry-analytic-2d-conics-polar"><span class="std std-ref">equazioni in coordinate polari</span></a> delle coniche.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Definizione in termini di eccentricità<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Una conica può essere definita come il luogo dei punti <span class="math notranslate nohighlight">\(P\)</span> dello spazio per i quali il rapporto tra la distanza dal fuoco e dalla direttrice è costante,</p>
+<div class="math notranslate nohighlight">
+\[e = \frac{\text{dist}(P,F)}{\text{dist}(P,d)} \ .\]</div>
+<p class="sd-card-text">Questo rapporto viene definito <strong>eccentricità</strong> della conica e il suo valore determina la figura geometrica descritta:</p>
+<ul class="simple">
+<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(e&lt;1\)</span>, ellisse;
+il caso particolare della circonferenza con eccentricità nulla, con <span class="math notranslate nohighlight">\(\text{dist}(P,d) \rightarrow \infty\)</span></p></li>
+<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(e=1\)</span>, parabola;</p></li>
+<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(e&gt;1\)</span>, iperbole;</p></li>
+</ul>
+<p class="sd-card-text">Esistono due fuochi e due direttrici per ogni ellisse e ogni iperbole.</p>
+</div>
+</details><p>E’ possibile definire le coniche anche grazie alla proprietà che caratterizza la distanza dei punti della conica dai fuochi, come verrà fatto per trovare le <a class="reference internal" href="conics-cartesian.html#geometry-analytic-2d-conics-cartesian"><span class="std std-ref">equazioni in coordinate cartesiane</span></a> delle coniche.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Definizione in termini di distanza dai fuochi<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">una circonferenza è il luogo dei punti del piano che hanno distanza costante da un punto <span class="math notranslate nohighlight">\(C\)</span>,</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[|P - C| = R \ ,\]</div>
+<ul>
+<li><p class="sd-card-text">un’ellisse è il luogo dei punti del piano che hanno la somma delle distanze da due punti dati, i fuochi <span class="math notranslate nohighlight">\(F_1\)</span> e <span class="math notranslate nohighlight">\(F_2\)</span>, costante,</p>
+<div class="math notranslate nohighlight">
+\[|P-F_1| + |P-F_2| = 2 \, a \ ,\]</div>
+</li>
+<li><p class="sd-card-text">una parabola è il luogo dei punti del piano equidistante da un punto <span class="math notranslate nohighlight">\(F\)</span>, il fuoco della parabola, e da una retta <span class="math notranslate nohighlight">\(d\)</span>, la direttrice</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[|P - C| = \text{dist}(P,d) \, \]</div>
+<ul>
+<li><p class="sd-card-text">un’iperbole è il luogo dei punti del piano che hanno la differenza delle distanze da due punti dati, i fuochi <span class="math notranslate nohighlight">\(F_1\)</span> e <span class="math notranslate nohighlight">\(F_2\)</span>, costante,</p>
+<div class="math notranslate nohighlight">
+\[|P-F_1| - |P-F_2| = 2 \, a \ ,\]</div>
+<p class="sd-card-text">avendo considerato il modulo delle distanze per comprendere entrambi i rami dell’iperbole</p>
+</li>
+</ul>
+</div>
+</details><!--
+Queste curve compaiono in alcuni ambiti di interesse pratico:
+- ottica e acustica geometrica 
+- gravitazione: secondo la meccanica di Newton, i corpi celesti descrivono traiettorie nello spazio che hanno la forma delle curve coniche:
+- in altri ambiti della scienza in cui compaiono funzioni quadratiche
+
+Per la loro relativa semplicità e frequenza con la quale appaiono in diverse applicazioni, lo studio delle coniche si presenta come utile argomento per l'applicazione delle nozioni di geometria analitica apprese finora.
+
+Le coniche possono essere definite tramite pochi elementi geometrici caratteristici, come un punto di riferimento $F$ detto **fuoco** e una retta di riferimento $d$ detta **direttrice**.  
+
+- equazione delle coniche usando le coordinate cartesiane
+- equazione delle coniche usando le coordinate polari
+- proprietà geometriche delle coniche
+- coniche come sezione di un cono circolare
+- coniche e gravitazione di Newton
+-->
+<div class="toctree-wrapper compound">
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -509,7 +591,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Coniche nel piano</p>
+        <p class="prev-next-title">Forma canonica in coordinate cartesiane</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

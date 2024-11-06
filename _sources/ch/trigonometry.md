@@ -8,7 +8,10 @@ Facendo riferimento a una circonferenza di raggio $R$, e scegliendo una semirett
 $$\sin \theta := \frac{\overline{PH}}{R}$$
 $$\cos \theta := \frac{\overline{OH}}{R}$$
 
-![](../media/trigonometry-def.png)
+```{figure} ../media/trigonometry-def.png
+```
+<!-- :align: center -->
+<!--  ![]()  -->
 
 Usando il teorema di Pitagora è immediato dimostrare la relazione fondamentale tra le funzioni trigonometriche
 
@@ -62,7 +65,8 @@ $$\begin{aligned}
   - $\rightarrow \infty$
 ```
 
-![](../media/trigonometry-particular.png)
+```{figure} ../media/trigonometry-particular.png
+```
 
 
 ## Formule di somma e sottrazione
@@ -73,11 +77,13 @@ $$\begin{aligned}
   \sin ( x \mp y ) & = \sin x \ \cos y \mp \cos x \ \sin y \\
 \end{aligned}$$
 
-![](../media/trigonometry-sum.png)
 
 Per completezza, come utile esercizio di geometria sulla similitudine dei triangoli, e per familiarizzare con le funzioni armoniche, si fornisce la dimostrazione della formula del coseno della somma.
 
-```{dropdown} Dimostrazione di $\ \cos ( x + y ) = \cos x \ \cos y - \sin x \ \sin y$
+````{dropdown} Dimostrazione di $\ \cos ( x + y ) = \cos x \ \cos y - \sin x \ \sin y$
+
+```{figure} ../media/trigonometry-sum.png
+```
 
 Partendo dall'interpretazione geometrica del coseno di $\alpha + \beta$,
 
@@ -105,7 +111,7 @@ $$\overline{OF} = \overline{OB} \left( \cos \alpha \cos \beta - \sin \beta \sin 
 dalla quale si ottiene la relazione desiderata,
 
 $$\cos (\alpha + \beta) = \cos \alpha \cos \beta - \sin \beta \sin \alpha \ .$$
-```
+````
 
 ## Werner
 
