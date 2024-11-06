@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2024.9.16)  6 NOV 2024 18:30
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2024.9.16)  6 NOV 2024 19:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2255,45 +2255,53 @@ LaTeX Info: Redefining \ttfamily on input line 5693.
 ]
 Chapter 18.
 [101]
-LaTeX Info: Redefining \rmfamily on input line 5766.
-LaTeX Info: Redefining \sffamily on input line 5766.
-LaTeX Info: Redefining \ttfamily on input line 5766.
- [102
+LaTeX Info: Redefining \rmfamily on input line 5832.
+LaTeX Info: Redefining \sffamily on input line 5832.
+LaTeX Info: Redefining \ttfamily on input line 5832.
+ [102]
+LaTeX Info: Redefining \rmfamily on input line 5842.
+LaTeX Info: Redefining \sffamily on input line 5842.
+LaTeX Info: Redefining \ttfamily on input line 5842.
+ [103]
+LaTeX Info: Redefining \rmfamily on input line 5842.
+LaTeX Info: Redefining \sffamily on input line 5842.
+LaTeX Info: Redefining \ttfamily on input line 5842.
+ [104
 
-] [103] [104]
-LaTeX Info: Redefining \rmfamily on input line 5848.
-LaTeX Info: Redefining \sffamily on input line 5848.
-LaTeX Info: Redefining \ttfamily on input line 5848.
- [105]
-LaTeX Info: Redefining \rmfamily on input line 5848.
-LaTeX Info: Redefining \sffamily on input line 5848.
-LaTeX Info: Redefining \ttfamily on input line 5848.
- [106
-
-]
-Chapter 19.
-[107]
-LaTeX Info: Redefining \rmfamily on input line 5856.
-LaTeX Info: Redefining \sffamily on input line 5856.
-LaTeX Info: Redefining \ttfamily on input line 5856.
+] [105] [106]
+LaTeX Info: Redefining \rmfamily on input line 5924.
+LaTeX Info: Redefining \sffamily on input line 5924.
+LaTeX Info: Redefining \ttfamily on input line 5924.
+ [107]
+LaTeX Info: Redefining \rmfamily on input line 5924.
+LaTeX Info: Redefining \sffamily on input line 5924.
+LaTeX Info: Redefining \ttfamily on input line 5924.
  [108
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 5859--5860
+Chapter 19.
+[109]
+LaTeX Info: Redefining \rmfamily on input line 5932.
+LaTeX Info: Redefining \sffamily on input line 5932.
+LaTeX Info: Redefining \ttfamily on input line 5932.
+ [110
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 5935--5936
 []\TU/FreeMono(0)/m/n/10 integrals:thm:avg
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5862--5863
+Underfull \hbox (badness 10000) in paragraph at lines 5938--5939
 []\TU/FreeMono(0)/m/n/10 integrals:thm:fund
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5865--5866
+Underfull \hbox (badness 10000) in paragraph at lines 5941--5942
 []\TU/FreeMono(0)/m/n/10 integrals:thm:fund:reynolds
  []
 
-[109
+[111
 
 
 ] (./book.ind)
@@ -2331,30 +2339,30 @@ braces):
 >  {english/babelname}  =>  {american}
 >  {english/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {english/Localnumeral}  =>  {polyglossia@C@localnumeral}.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 5888.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 5888.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 5964.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 5964.
  (./book.aux
 LaTeX Info: Redefining \rmfamily on input line 19.
 LaTeX Info: Redefining \sffamily on input line 19.
 LaTeX Info: Redefining \ttfamily on input line 19.
 )
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 5888.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 5888.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 5964.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 5964.
 
 Package rerunfilecheck Info: File `book.out' has not changed.
-(rerunfilecheck)             Checksum: F75CBEFF65A975BA5A5782D3DDC41997;13642.
+(rerunfilecheck)             Checksum: 09D325BE90D59C0DF05A1E44CAE73E59;13918.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 42596 strings out of 481789
- 970908 string characters out of 5937152
+ 42601 strings out of 481789
+ 971099 string characters out of 5937152
  1636959 words of memory out of 5000000
- 58748 multiletter control sequences out of 15000+600000
+ 58753 multiletter control sequences out of 15000+600000
  541246 words of font info for 130 fonts, out of 8000000 for 9000
  15 hyphenation exceptions out of 8191
  71i,27n,109p,906b,2232s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on book.pdf (113 pages).
+Output written on book.pdf (115 pages).
