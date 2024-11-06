@@ -62,6 +62,8 @@ per ottenere l'equazione della retta in **forma esplicita**.
 
 ## Posizioni reciproche
 ### Posizione reciproca di punto e retta
+Un punto $P$ o appartiene o non appartiene a una retta $r$. Se appartiene alla curva, la distanza tra punto e retta è nulla; se non appartiene alla curva, la distanza tra punto e retta è positiva e può essere calcolata come mostrato nella sezione [](geometry:analytic:2d:lines:distance-point-line).
+
 **Punto appartenente alla retta.** Una retta $r$ passa per un punto $P$ assegnato se le coordinate del punto $P$ soddisfano le equazioni che descrivono la retta.
 
 **Distanza punto-retta.** per calcolare la distanza punto-retta si può **todo** 
@@ -128,6 +130,7 @@ o usando l'equazione in forma esplicita (nel caso le due rette non siano paralle
 
 $$m_2 = -\frac{1}{m_1}$$
 
+(geometry:analytic:2d:lines:distance-point-line)=
 ## Distanza punto-retta
 La distanza di un punto $Q$ da una retta $r: \, P(\lambda) =  P_0 + \lambda \vec{v}$ può essere calcolato in diverse maniere:
 - calcolando il valore minimo della distanza tra il punto $Q$ dato e i punti $P(\lambda)$ della retta

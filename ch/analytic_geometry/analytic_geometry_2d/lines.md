@@ -32,7 +32,7 @@ Per trovare l'equazione di una retta, si possono usare delle definizione equival
 
 $$|P - P_1| = |P-P_2|$$
 
-Usando un sistema di coordinate cartesiano per identificare i punti, $P_1 \equiv (x_1, y_1)$, $P_2 \equiv (x_2, y_2)$, $P \equiv (x,y)$ per calcolare (il quadrato del)le distanze, 
+Usando un sistema di coordinate cartesiane per identificare i punti, $P_1 \equiv (x_1, y_1)$, $P_2 \equiv (x_2, y_2)$, $P \equiv (x,y)$ per calcolare (il quadrato del)le distanze, 
 
 $$\begin{aligned}
  (x - x_1)^2 + (y - y_1)^2 &=  (x - x_2)^2 + (y - y_2)^2 \\
@@ -62,20 +62,26 @@ per ottenere l'equazione della retta in **forma esplicita**.
 
 ## Posizioni reciproche
 ### Posizione reciproca di punto e retta
-**Punto appartenente alla retta.** Una retta $r$ passa per un punto $P$ assegnato se le coordinate del punto $P$ soddisfano le equazioni che descrivono la retta.
+Un punto $P$ o appartiene o non appartiene a una retta $r$. Se appartiene alla curva, la distanza tra punto e retta è nulla; se non appartiene alla curva, la distanza tra punto e retta è positiva e può essere calcolata come mostrato nella sezione [](geometry:analytic:2d:lines:distance-point-line).
 
-**Distanza punto-retta.** per calcolare la distanza punto-retta si può **todo** 
+**Punto appartenente alla retta.** Una retta $r$ passa per un punto $P$ assegnato se le coordinate del punto $P$ soddisfano le equazioni che descrivono la retta.
 
 
 ### Posizione reciproca di rette
+
+Due rette nel piano possono essere:
+- coincidenti: hanno tutti i punti in comune
+- parallele: non hanno nessun punto in comune
+- incidenti: si intersecano e la loro intersezione è un punto
+
 #### Rette coincidenti
 Due rette sono coincidenti se hanno un punto in comune e hanno la stessa direzione. In geometria analitica, due rette sono coincidenti se sono rappresentate dalla stessa equazione.
 
 Usando la forma parametrica, due rette sono coincidenti se è possibile scrivere le loro equazioni
 
 $$\begin{aligned}
-  r_1: \ P_1(\lambda_1) = P_{1,0} + \lambda_1 \ \mathbf{v}_1 \\
-  r_2: \ P_2(\lambda_2) = P_{2,0} + \lambda_2 \ \mathbf{v}_2
+  r_1: \ P_1(\lambda_1) = P_{1,0} + \lambda_1 \ \vec{v}_1 \\
+  r_2: \ P_2(\lambda_2) = P_{2,0} + \lambda_2 \ \vec{v}_2
 \end{aligned}$$
 
 con
@@ -128,6 +134,7 @@ o usando l'equazione in forma esplicita (nel caso le due rette non siano paralle
 
 $$m_2 = -\frac{1}{m_1}$$
 
+(geometry:analytic:2d:lines:distance-point-line)=
 ## Distanza punto-retta
 La distanza di un punto $Q$ da una retta $r: \, P(\lambda) =  P_0 + \lambda \vec{v}$ può essere calcolato in diverse maniere:
 - calcolando il valore minimo della distanza tra il punto $Q$ dato e i punti $P(\lambda)$ della retta

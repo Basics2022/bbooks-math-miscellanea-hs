@@ -9,4 +9,11 @@ Usando le coordinate cartesiane, i punti della curva sono identificati dalla fam
 
 $$\gamma: \ \vec{r}(\lambda) = x(\lambda) \hat{x} + y(\lambda) \hat{y} + z(\lambda) \hat{z} \ ,$$
 
-al variare del parametro $\lambda$. 
+al variare del parametro $\lambda$.
+
+Una curva può essere anche definita in forma implicita o esplicita, con un sistema di due equazioni che hanno come incognite le tre coordinate,
+
+$$
+\begin{cases} F(q^1, q^2, q^3) = 0 \\ G(q^1, q^2, q^3) = 0 \end{cases} \qquad, \qquad
+\begin{cases} q^1 = f^1(q_3) \\ q^2 = f^2(q^3) \end{cases}
+$$
