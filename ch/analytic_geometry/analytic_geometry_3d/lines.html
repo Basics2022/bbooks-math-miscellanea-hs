@@ -458,9 +458,16 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equazione-della-retta">Equazione della retta</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distanza-punto-retta">Distanza punto-retta</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#posizione-reciproca">Posizione reciproca</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definizione-ed-equazione">Definizione ed equazione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#posizioni-reciproche">Posizioni reciproche</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#posizione-reciproca-di-punto-e-retta">Posizione reciproca di punto e retta</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#distanza-punto-retta">Distanza punto-retta</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#posizione-reciproca-retta-e-piano">Posizione reciproca retta e piano</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#posizione-reciproca-tra-rette">Posizione reciproca tra rette</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -474,15 +481,27 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="rette-nello-spazio">
 <span id="geometry-analytic-3d-lines"></span><h1>Rette nello spazio<a class="headerlink" href="#rette-nello-spazio" title="Permalink to this heading">#</a></h1>
-<div class="section" id="equazione-della-retta">
-<h2>Equazione della retta<a class="headerlink" href="#equazione-della-retta" title="Permalink to this heading">#</a></h2>
-<p><strong>Forma parametrica</strong></p>
+<div class="section" id="definizione-ed-equazione">
+<h2>Definizione ed equazione<a class="headerlink" href="#definizione-ed-equazione" title="Permalink to this heading">#</a></h2>
+<p><strong>Definizione 1 - Passaggio per un punto e direzione tangente.</strong> I punti <span class="math notranslate nohighlight">\(P\)</span> della retta <span class="math notranslate nohighlight">\(r\)</span> passante per il punto <span class="math notranslate nohighlight">\(P_0\)</span> e con direzione <span class="math notranslate nohighlight">\(\vec{v}\)</span> possono essere rappresentati dall’<strong>equazione parametrica</strong>,</p>
 <div class="math notranslate nohighlight">
-\[r: P = Q + \lambda \, \vec{v} \ .\]</div>
-<p><strong>…</strong> Intersezione tra due piani</p>
+\[r: P = P_0 + \lambda \, \vec{v} \ .\]</div>
+<p>Questa relazione può essere scritta usando un sistema di coordidnate carteisane, con base <span class="math notranslate nohighlight">\(\{ \hat{x}, \hat{y}, \hat{z} \}\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+x_P(\lambda) = x_{P_0} + \lambda \, v_x \\
+y_P(\lambda) = y_{P_0} + \lambda \, v_y \\
+z_P(\lambda) = z_{P_0} + \lambda \, v_z \\
+\end{cases}\end{split}\]</div>
+<p><strong>Definizione 2 - Interesezione di due piani incidenti.</strong> <strong>todo</strong></p>
 </div>
+<div class="section" id="posizioni-reciproche">
+<h2>Posizioni reciproche<a class="headerlink" href="#posizioni-reciproche" title="Permalink to this heading">#</a></h2>
+<div class="section" id="posizione-reciproca-di-punto-e-retta">
+<h3>Posizione reciproca di punto e retta<a class="headerlink" href="#posizione-reciproca-di-punto-e-retta" title="Permalink to this heading">#</a></h3>
+<p>Un punto <span class="math notranslate nohighlight">\(P\)</span> o appartiene o non appartiene a una retta <span class="math notranslate nohighlight">\(r\)</span>.</p>
 <div class="section" id="distanza-punto-retta">
-<h2>Distanza punto-retta<a class="headerlink" href="#distanza-punto-retta" title="Permalink to this heading">#</a></h2>
+<h4>Distanza punto-retta<a class="headerlink" href="#distanza-punto-retta" title="Permalink to this heading">#</a></h4>
 <p>Dato un punto <span class="math notranslate nohighlight">\(A\)</span> e una retta <span class="math notranslate nohighlight">\(r\)</span>, di cui sono noti un punto <span class="math notranslate nohighlight">\(Q\)</span> e il vettore <span class="math notranslate nohighlight">\(\vec{v}\)</span>, la distanza di <span class="math notranslate nohighlight">\(A\)</span> da <span class="math notranslate nohighlight">\(r\)</span> può essere calcolata come il valore assoluto della proiezione del vettore <span class="math notranslate nohighlight">\(A-Q\)</span> in direzione ortogonale alla direzione della retta, individuata da <span class="math notranslate nohighlight">\(\vec{v}\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
@@ -491,8 +510,26 @@ document.write(`
 \end{aligned}\end{split}\]</div>
 <p>avendo usato il vettore unitario <span class="math notranslate nohighlight">\(\hat{v} = \frac{\vec{v}}{|\vec{v}|}\)</span> per la proiezione.</p>
 </div>
-<div class="section" id="posizione-reciproca">
-<h2>Posizione reciproca<a class="headerlink" href="#posizione-reciproca" title="Permalink to this heading">#</a></h2>
+</div>
+<div class="section" id="posizione-reciproca-retta-e-piano">
+<h3>Posizione reciproca retta e piano<a class="headerlink" href="#posizione-reciproca-retta-e-piano" title="Permalink to this heading">#</a></h3>
+<p>Una retta <span class="math notranslate nohighlight">\(r\)</span> può essere:</p>
+<ul class="simple">
+<li><p>contenuta in un piano <span class="math notranslate nohighlight">\(\pi\)</span>: ha tutti i punti appartenenti al piano</p></li>
+<li><p>parallela a un piano <span class="math notranslate nohighlight">\(\pi\)</span>: non ha nessun punto appartenente al piano</p></li>
+<li><p>incidente a un piano <span class="math notranslate nohighlight">\(\pi\)</span>: interseca il piano in un solo punto</p></li>
+</ul>
+</div>
+<div class="section" id="posizione-reciproca-tra-rette">
+<h3>Posizione reciproca tra rette<a class="headerlink" href="#posizione-reciproca-tra-rette" title="Permalink to this heading">#</a></h3>
+<p>Due rette possono essere:</p>
+<ul class="simple">
+<li><p>coincidenti: hanno tutti i punti in comune</p></li>
+<li><p>incidenti: si intersecano in un solo punto</p></li>
+<li><p>parallele: non hanno nessun punto in comune e hanno la stessa direzione; esiste un piano che contiene entrambe le rette</p></li>
+<li><p>sghembe: non hanno nessun punto in comune e hanno direzioni diverse; non esiste nessun piano che contiene entrambe le rette</p></li>
+</ul>
+<p><strong>todo</strong> <em>verificare queste condizioni</em></p>
 <table class="table">
 <colgroup>
 <col style="width: 33%" />
@@ -506,6 +543,7 @@ document.write(`
 </tr>
 </tbody>
 </table>
+</div>
 </div>
 </div>
 
@@ -572,9 +610,16 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equazione-della-retta">Equazione della retta</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distanza-punto-retta">Distanza punto-retta</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#posizione-reciproca">Posizione reciproca</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definizione-ed-equazione">Definizione ed equazione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#posizioni-reciproche">Posizioni reciproche</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#posizione-reciproca-di-punto-e-retta">Posizione reciproca di punto e retta</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#distanza-punto-retta">Distanza punto-retta</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#posizione-reciproca-retta-e-piano">Posizione reciproca retta e piano</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#posizione-reciproca-tra-rette">Posizione reciproca tra rette</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

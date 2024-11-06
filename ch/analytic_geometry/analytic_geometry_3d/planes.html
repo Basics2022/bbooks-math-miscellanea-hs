@@ -458,8 +458,12 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#posizione-reciproca-di-piani">Posizione reciproca di piani</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distanza-punto-piano">Distanza punto-piano</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definizioni-ed-equazione">Definizioni ed equazione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#posizioni-reciproche">Posizioni reciproche</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#posizione-reciproca-di-punto-e-piano">Posizione reciproca di punto e piano</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#posizione-reciproca-di-piani">Posizione reciproca di piani</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -473,19 +477,60 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="piani-nello-spazio">
 <span id="geometry-analytic-3d-planes"></span><h1>Piani nello spazio<a class="headerlink" href="#piani-nello-spazio" title="Permalink to this heading">#</a></h1>
-<p>Un piano <span class="math notranslate nohighlight">\(\pi\)</span> può essere definito come il luogo dei punti <span class="math notranslate nohighlight">\(P\)</span> dello spazio che formano un vettore <span class="math notranslate nohighlight">\((P-Q)\)</span> con un punto dato <span class="math notranslate nohighlight">\(Q\)</span> ortogonali a un vettore <span class="math notranslate nohighlight">\(\overrightarrow{n}\)</span> che indica la direzione normale al piano <span class="math notranslate nohighlight">\(\pi\)</span>. Usando le proprietà del prodotto scalare,</p>
+<p>Per Euclide, il concetto di piano è un ente geometrico fondamentale della geometria. In geometria analitica, per trovare l’equazione di un piano si possono usare diverse definizioni equivalenti.</p>
+<div class="section" id="definizioni-ed-equazione">
+<span id="geometry-analytic-3d-planes-def"></span><h2>Definizioni ed equazione<a class="headerlink" href="#definizioni-ed-equazione" title="Permalink to this heading">#</a></h2>
+<p><strong>Definizione 1 - Passaggio per un punto e direzione normale.</strong>
+Un piano <span class="math notranslate nohighlight">\(\pi\)</span> può essere definito come il luogo dei punti <span class="math notranslate nohighlight">\(P\)</span> dello spazio che formano un vettore <span class="math notranslate nohighlight">\((P-Q)\)</span> con un punto dato <span class="math notranslate nohighlight">\(Q\)</span> ortogonali a un vettore <span class="math notranslate nohighlight">\(\overrightarrow{n}\)</span> che indica la direzione normale al piano <span class="math notranslate nohighlight">\(\pi\)</span>. Usando le proprietà del prodotto scalare,</p>
 <div class="math notranslate nohighlight">
 \[(P-Q) \cdot \overrightarrow{n} = 0 \ .\]</div>
 <p>Usando un sistema di coordinate cartesiane, si può trovare l’equazione implicita del piano <span class="math notranslate nohighlight">\(\pi\)</span>,</p>
-<div class="math notranslate nohighlight">
-\[\pi: \ (x - x_Q) n_x + (y - y_Q) n_y + (z - z_Q) n_z = 0 \ .\]</div>
+<div class="math notranslate nohighlight" id="equation-eq-geometry-analytic-3d-planes-def-1">
+<span class="eqno">(1)<a class="headerlink" href="#equation-eq-geometry-analytic-3d-planes-def-1" title="Permalink to this equation">#</a></span>\[\pi: \ (x - x_Q) n_x + (y - y_Q) n_y + (z - z_Q) n_z = 0 \ .\]</div>
 <p><strong>Osservazione.</strong> L’equazione implicita del piano è independente dal modulo del vettore <span class="math notranslate nohighlight">\(\vec{n}\)</span>, poiché rappresenterebbe un ininfluente fattore moltiplicativo (diverso da zero) nel termine di sinistra quando uguagliato a zero.</p>
-<p>Partendo dalla prima definizione, si possono ricavare le equazioni parametriche del piano. Dato il vettore <span class="math notranslate nohighlight">\(\vec{n}\)</span>, si possono trovare due vettori <span class="math notranslate nohighlight">\(\vec{t}_1\)</span>, <span class="math notranslate nohighlight">\(\vec{t}_2\)</span> a esso ortogonali,</p>
+<p><strong>Definizione 2. - Passaggio per un punto e direzioni tangenti.</strong>
+Partendo dalla prima definizione, si possono ricavare le equazioni parametriche del piano. Dato il vettore <span class="math notranslate nohighlight">\(\vec{n}\)</span>, si possono trovare due vettori <span class="math notranslate nohighlight">\(\vec{t}_1\)</span>, <span class="math notranslate nohighlight">\(\vec{t}_2\)</span> a esso ortogonali,</p>
 <div class="math notranslate nohighlight">
-\[\vec{t} \cdot \vec{n} = 0 \ .\]</div>
+\[\vec{t}_1 \cdot \vec{n} = \vec{t}_2 \cdot \vec{n} = 0 \ .\]</div>
 <p>Se i due vettori non sono tra di loro allineati, o meglio proporzionali, è possibile descrivere tutti i punti del piano come una loro combinazione lineare</p>
 <div class="math notranslate nohighlight">
 \[\pi: \ P = Q + \lambda_1 \vec{t}_1 + \lambda_2 \vec{t}_2 \ .\]</div>
+<p><strong>Definizione 3. - Luogo dei punti equidistante da due punti distinti dati.</strong> Il luogo dei punti P dello spazio equidistanti da due punti <span class="math notranslate nohighlight">\(P_1\)</span>, <span class="math notranslate nohighlight">\(P_2\)</span> dati è il piano identificato dalla condizione</p>
+<div class="math notranslate nohighlight">
+\[|P - P_1| = | P - P_2 | \ .\]</div>
+<p>Usando un sistema di coordinate cartesiane per identificare i due punti <span class="math notranslate nohighlight">\(P_1 \equiv (x_1,y_1,z_1)\)</span>, <span class="math notranslate nohighlight">\(P_2 \equiv (x_2,y_2,z_2)\)</span>, per calcolare (il quadrato del)le distanze,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+ (x - x_1)^2 + (y - y_1)^2 + (z - z_1)^2 &amp;=  (x - x_2)^2 + (y - y_2)^2 + (z - z_2)^2 \\
+ x^2 - 2 x x_1 + x_1^2 + y^2 - 2 y y_1 + y_1^2 + z^2 - 2 z z_1 + z_1^2 &amp;=  x^2 - 2 x x_2 + x_2^2 + y^2 - 2 y y_2 + y_2^2 + z^2 - 2 z z_2 + z_2^2 \\
+\end{aligned}\end{split}\]</div>
+<p>semplificando i termini <span class="math notranslate nohighlight">\(x^2\)</span>, <span class="math notranslate nohighlight">\(y^2\)</span>, <span class="math notranslate nohighlight">\(z^2\)</span> e raccogliendo mettendo in evidenza le coordinate <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span>, <span class="math notranslate nohighlight">\(z\)</span>, si ottiene una rappresentazione implicita della retta,</p>
+<div class="math notranslate nohighlight" id="equation-eq-geometry-analytic-3d-planes-def-3-1">
+<span class="eqno">(2)<a class="headerlink" href="#equation-eq-geometry-analytic-3d-planes-def-3-1" title="Permalink to this equation">#</a></span>\[  2 ( x_2 - x_1 ) x + 2 ( y_2 - y_1 ) y + 2 ( z_2 - z_1 ) z - x_1^2 - y_1^2 - z_1^2 - x_2^2 - y_2^2 - z_2^2 = 0 \ ,\]</div>
+<p>che può essere riscritta in generale nella <strong>forma esplicita</strong>,</p>
+<div class="math notranslate nohighlight" id="equation-eq-geometry-analytic-3d-planes-def-3-2">
+<span class="eqno">(3)<a class="headerlink" href="#equation-eq-geometry-analytic-3d-planes-def-3-2" title="Permalink to this equation">#</a></span>\[a \, x + b \, y + c \, z + d = 0 \ ,\]</div>
+<p>con ovvio significato dei coefficienti <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span>, <span class="math notranslate nohighlight">\(c\)</span>, <span class="math notranslate nohighlight">\(d\)</span>, e <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span>, <span class="math notranslate nohighlight">\(c\)</span> non contemporanemante nulli (altrimenti rimarrebbe l’identità <span class="math notranslate nohighlight">\(0 = 0\)</span>, corrispondente alla condizione <span class="math notranslate nohighlight">\(a = x_2 - x_1 = 0\)</span>, <span class="math notranslate nohighlight">\(b = y_2 - y_1 = 0\)</span>, <span class="math notranslate nohighlight">\(c = z_2 - z_1 = 0\)</span> corrispondente ai due punti <span class="math notranslate nohighlight">\(P_1 \equiv P_2\)</span> coinvidenti).</p>
+<p><strong>Osservazione.</strong> Confrontando le espressioni <a class="reference internal" href="#equation-eq-geometry-analytic-3d-planes-def-3-1">(2)</a>, <a class="reference internal" href="#equation-eq-geometry-analytic-3d-planes-def-3-2">(3)</a> con l’espressione <a class="reference internal" href="#equation-eq-geometry-analytic-3d-planes-def-1">(1)</a> della prima definizione, si può riconoscere che il vettore che congiunge i due punti <span class="math notranslate nohighlight">\(P_2 - P_1 = (x_2 - x_1) \hat{x} + (y_2 - y_1) \hat{y} + (z_2 - z_1)\)</span> \hat{z} è allineato al vettore <span class="math notranslate nohighlight">\(\vec{n}\)</span> e ortogonale al piano <span class="math notranslate nohighlight">\(\pi\)</span>, e al vettore <span class="math notranslate nohighlight">\(a \hat{x} + b \hat{y} + c \hat{z}\)</span>.</p>
+</div>
+<div class="section" id="posizioni-reciproche">
+<h2>Posizioni reciproche<a class="headerlink" href="#posizioni-reciproche" title="Permalink to this heading">#</a></h2>
+<div class="section" id="posizione-reciproca-di-punto-e-piano">
+<h3>Posizione reciproca di punto e piano<a class="headerlink" href="#posizione-reciproca-di-punto-e-piano" title="Permalink to this heading">#</a></h3>
+<p>Un punto <span class="math notranslate nohighlight">\(P\)</span> o appartiene o non appartiene a un piano <span class="math notranslate nohighlight">\(\pi: \ \hat{n} \cdot (P - Q) = 0\)</span>. Se appartiene al piano, la distanza tra punto e retta è nulla; se non appartiene al piano, la distanza tra punto e piano può essere calcolata usando le proprietà
+del <a class="reference internal" href="../../algebra/vector-algebra-euclidean-space.html#math-hs-algebra-vector-euclidean-space-inner-product"><span class="std std-ref">prodotto interno in spazi euclidei</span></a>,</p>
+<div class="math notranslate nohighlight">
+\[\text{dist}(A,\pi) = \left| \hat{n} \cdot (A-Q) \right| = |A-Q| \cos \theta \ .\]</div>
+<p><strong>todo</strong> <em>figura</em></p>
+</div>
+<div class="section" id="posizione-reciproca-di-piani">
+<h3>Posizione reciproca di piani<a class="headerlink" href="#posizione-reciproca-di-piani" title="Permalink to this heading">#</a></h3>
+<p>Due piani nello spazio euclideo tridimensionale possono essere:</p>
+<ul class="simple">
+<li><p>coincidenti: hanno tutti i punti in comune</p></li>
+<li><p>paralleli: non hanno nessun punto in comune</p></li>
+<li><p>incidenti: si intersecano e la loro intersezione definisce una retta</p></li>
+</ul>
 <table class="table">
 <colgroup>
 <col style="width: 33%" />
@@ -499,15 +544,13 @@ document.write(`
 </tr>
 </tbody>
 </table>
-<div class="section" id="posizione-reciproca-di-piani">
-<h2>Posizione reciproca di piani<a class="headerlink" href="#posizione-reciproca-di-piani" title="Permalink to this heading">#</a></h2>
+<!--
+## Distanza punto-piano
+Dato un punto $A$ e un piano $\pi$, di cui sono noti un punto $Q$ e il vettore normale $\vec{n}$, la distanza di $A$ da $\pi$ può essere calcolata come il valore assoluto della proiezione del vettore $A-Q$ lungo la direzione normale al piano, individuata da $\vec{n}$,
+
+avendo usato il vettore unitario $\hat{n} = \frac{\vec{n}}{|\vec{n}|}$ per la proiezione.
+-->
 </div>
-<div class="section" id="distanza-punto-piano">
-<h2>Distanza punto-piano<a class="headerlink" href="#distanza-punto-piano" title="Permalink to this heading">#</a></h2>
-<p>Dato un punto <span class="math notranslate nohighlight">\(A\)</span> e un piano <span class="math notranslate nohighlight">\(\pi\)</span>, di cui sono noti un punto <span class="math notranslate nohighlight">\(Q\)</span> e il vettore normale <span class="math notranslate nohighlight">\(\vec{n}\)</span>, la distanza di <span class="math notranslate nohighlight">\(A\)</span> da <span class="math notranslate nohighlight">\(\pi\)</span> può essere calcolata come il valore assoluto della proiezione del vettore <span class="math notranslate nohighlight">\(A-Q\)</span> lungo la direzione normale al piano, individuata da <span class="math notranslate nohighlight">\(\vec{n}\)</span>,</p>
-<div class="math notranslate nohighlight">
-\[\text{dist}(A,\pi) = \left| \hat{n} \cdot (A-Q) \right| \ ,\]</div>
-<p>avendo usato il vettore unitario <span class="math notranslate nohighlight">\(\hat{n} = \frac{\vec{n}}{|\vec{n}|}\)</span> per la proiezione.</p>
 </div>
 </div>
 
@@ -574,8 +617,12 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#posizione-reciproca-di-piani">Posizione reciproca di piani</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distanza-punto-piano">Distanza punto-piano</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definizioni-ed-equazione">Definizioni ed equazione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#posizioni-reciproche">Posizioni reciproche</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#posizione-reciproca-di-punto-e-piano">Posizione reciproca di punto e piano</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#posizione-reciproca-di-piani">Posizione reciproca di piani</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
