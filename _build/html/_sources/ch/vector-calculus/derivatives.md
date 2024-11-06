@@ -48,10 +48,15 @@ quando l'angolo tra il versore $\hat{t}$ e il gradiente $\nabla f(P)$ è nullo, 
 ```
 
 ## Divergenza
-La divergenza di un campo vettoriale $\vec{f}(P)$ nello spazio 3-dimensionale può essere definita come la densità di volume del flusso. Usando le coordinate cartesiane si calcola il flusso del campo vettoriale attraverso la superficie di un cubetto elementare centrato nel punto $P$, **todo**
+La divergenza di un campo vettoriale $\vec{f}(P)$ nello spazio 3-dimensionale è un campo scalare che può essere interpretato come la densità volumetrica del flusso del campo vettoriale. Usando un sistema di coordinate cartesiane, la divergenza di un campo vettoriale può essere scritta formalmente come il prodotto interno tra il vettore formale nabla e il campo vettoriale,
+
+$$\nabla \cdot \vec{f} = \partial_x f_x + \partial_y f_y + \partial_z f_z$$
+
+```{dropdown} Divergenza come densità volumetrica del flusso. Dimostrazione
+Usando le coordinate cartesiane si calcola il flusso del campo vettoriale attraverso la superficie di un cubetto elementare centrato nel punto $P$, **todo**
 
 $$\begin{aligned}
-  \Phi_{\partial \Delta V(P)}(\vec{f}) 
+  \Phi_{\partial \Delta V(P)}\left(\vec{f}\right) 
   & = \Delta y \Delta z \hat{x} \cdot \vec{f}\left(P+\hat{x} \frac{\Delta x}{2} \right)
     - \Delta y \Delta z \hat{x} \cdot \vec{f}\left(P-\hat{x} \frac{\Delta x}{2} \right) + \dots = \\
   & = \Delta y \Delta z \left[ f_x \, \left(P+\hat{x} \frac{\Delta x}{2} \right)
@@ -59,9 +64,46 @@ $$\begin{aligned}
   & = \Delta y \Delta z \left[ f_x(P) + \frac{\Delta x}{2} \,  \partial_x \, f(P) 
                              - f_x(P) + \frac{\Delta x}{2} \,  \partial_x \, f(P) + o(\Delta x) \right] + \dots  = \\
   & = \Delta x \Delta y \Delta z \,  \partial_x \, f_x(P) + o(\Delta V) + \dots = \\ \\
-  & = \Delta V \left[  \partial_x \, f_x(P) +  \partial_y \, f_y(P) + \partial_z \, f_z(P) \right] + o(\Delta V) = \\ \\
-  & = \Delta V \nabla \cdot \vec{f}(P) + o(\Delta V) = \\ \\
+  & = \Delta V \, \left[  \partial_x \, f_x(P) +  \partial_y \, f_y(P) + \partial_z \, f_z(P) \right] + o(\Delta V) = \\ \\
+  & = \Delta V \, \nabla \cdot \vec{f}(P) + o(\Delta V) \ .
 \end{aligned}$$
+```
 
 ## Rotore
+Il rotore di un campo vettoriale $\vec{f}(P)$ nello spazio 3-dimensionale è un campo vettoriale che può essere interpretato come la densità di superficie di circuitazione. Usando un sistema di coordinate cartesiane, il rotore di un campo vettoriale può essere scritto formalmente come il prodotto vettoriale tra il vettore formale nabla e il campo vettoriale,
 
+$$\begin{aligned}
+  \nabla \times \vec{f} & = \hat{x} \left( \partial_y f_z - \partial_z f_y \right) + \\ 
+                        & + \hat{y} \left( \partial_z f_x - \partial_x f_z \right) + \\
+                        & + \hat{z} \left( \partial_x f_y - \partial_y f_x \right) 
+    = \left| \begin{matrix} \hat{x} & \hat{y} & \hat{z} \\ \partial_x & \partial_y & \partial_z \\ f_x & f_y & f_z \end{matrix} \right| \ .
+\end{aligned}$$
+
+```{dropdown} Rotore come densità di circuitazione. Dimostrazione
+Usando le coordinate cartesiane si calcola la circuitazione del campo vettoriale $\vec{f}$ sui lati della faccia maggiore di un tetraedro con spigoli coincidenti con gli assi e di lunghezza $\Delta x$, $\Delta y$, $\Delta z$,
+
+$$\begin{aligned}
+  \Gamma_{\partial \Delta V(P)}\left(\vec{f}\right) 
+  & = \vec{f}\left( P + \frac{\Delta x}{2} \hat{x} + \frac{\Delta y}{2} \hat{y} \right) \cdot \left( - \hat{x} \Delta x + \hat{y} \Delta y \right) + \\
+  & + \vec{f}\left( P + \frac{\Delta y}{2} \hat{y} + \frac{\Delta z}{2} \hat{z} \right) \cdot \left( - \hat{y} \Delta y + \hat{z} \Delta z \right) + \\
+  & + \vec{f}\left( P + \frac{\Delta z}{2} \hat{z} + \frac{\Delta x}{2} \hat{x} \right) \cdot \left( - \hat{z} \Delta z + \hat{x} \Delta x \right) = \\
+  & =       - \Delta x \left( f_x + \frac{\Delta x}{2} \partial_x f_x + \frac{\Delta y}{2} \partial_y f_x \right)
+            + \Delta y \left( f_y + \frac{\Delta x}{2} \partial_x f_y + \frac{\Delta y}{2} \partial_y f_y \right) \\
+  & \ \quad - \Delta y \left( f_y + \frac{\Delta y}{2} \partial_y f_y + \frac{\Delta z}{2} \partial_z f_y \right)
+            + \Delta z \left( f_z + \frac{\Delta y}{2} \partial_y f_z + \frac{\Delta z}{2} \partial_z f_z \right) \\
+  & \ \quad - \Delta z \left( f_z + \frac{\Delta z}{2} \partial_z f_z + \frac{\Delta x}{2} \partial_x f_z \right)
+            + \Delta x \left( f_x + \frac{\Delta z}{2} \partial_z f_x + \frac{\Delta x}{2} \partial_x f_x \right) = \\
+  & = \frac{1}{2} \Delta x \Delta y \left( \partial_x f_y - \partial_y f_x \right)
+    + \frac{1}{2} \Delta y \Delta z \left( \partial_y f_z - \partial_z f_y \right)
+    + \frac{1}{2} \Delta z \Delta x \left( \partial_z f_x - \partial_x f_z \right) = \\
+  & = \Delta S_z \left( \nabla \times \vec{f} \right)_z
+    + \Delta S_x \left( \nabla \times \vec{f} \right)_x
+    + \Delta S_y \left( \nabla \times \vec{f} \right)_y = \\
+  & = \Delta S \left(
+             n_z \left( \nabla \times \vec{f} \right)_z
+             n_x \left( \nabla \times \vec{f} \right)_x
+             n_y \left( \nabla \times \vec{f} \right)_y 
+  \right) = \\
+  & = \Delta S \, \hat{n} \cdot \nabla \times \vec{f}(P) + o(\Delta S) \ .
+\end{aligned}$$
+```
