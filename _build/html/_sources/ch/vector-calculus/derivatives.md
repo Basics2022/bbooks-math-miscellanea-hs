@@ -52,7 +52,7 @@ La divergenza di un campo vettoriale $\vec{f}(P)$ nello spazio 3-dimensionale è
 
 $$\nabla \cdot \vec{f} = \partial_x f_x + \partial_y f_y + \partial_z f_z$$
 
-```{dropdown} Divergenza come densità volumetrica del flusso. Dimostrazione
+```{dropdown} Divergenza come densità volumetrica del flusso. Dimostrazione con un cubetto elementare
 Usando le coordinate cartesiane si calcola il flusso del campo vettoriale attraverso la superficie di un cubetto elementare centrato nel punto $P$, **todo**
 
 $$\begin{aligned}
@@ -65,6 +65,28 @@ $$\begin{aligned}
                              - f_x(P) + \frac{\Delta x}{2} \,  \partial_x \, f(P) + o(\Delta x) \right] + \dots  = \\
   & = \Delta x \Delta y \Delta z \,  \partial_x \, f_x(P) + o(\Delta V) + \dots = \\ \\
   & = \Delta V \, \left[  \partial_x \, f_x(P) +  \partial_y \, f_y(P) + \partial_z \, f_z(P) \right] + o(\Delta V) = \\ \\
+  & = \Delta V \, \nabla \cdot \vec{f}(P) + o(\Delta V) \ .
+\end{aligned}$$
+```
+```{dropdown} Divergenza come densità volumetrica del flusso. Dimostrazione con un tetraedro elementare
+Usando le coordinate cartesiane si calcola il flusso del campo vettoriale attraverso la superficie di un cubetto elementare centrato nel punto $P$, **todo**
+
+$$\begin{aligned}
+  \Phi_{\partial \Delta V(P)}\left(\vec{f}\right) 
+  & =       - \Delta S_x  \hat{x} \cdot \vec{f}\left( P + \hat{y} \frac{\Delta y}{3} + \hat{z} \frac{\Delta z}{3} \right)   
+            - \Delta S_y  \hat{y} \cdot \vec{f}\left( P + \hat{z} \frac{\Delta z}{3} + \hat{x} \frac{\Delta x}{3} \right) \\
+  & \quad \ - \Delta S_z  \hat{z} \cdot \vec{f}\left( P + \hat{x} \frac{\Delta x}{3} + \hat{y} \frac{\Delta y}{3} \right)   
+            + \Delta S    \hat{n} \cdot \vec{f}\left( P + \hat{x} \frac{\Delta x}{3} + \hat{y} \frac{\Delta y}{3} + \hat{z} \frac{\Delta z}{3} \right) + o(\Delta V) = \\
+  & =       - \Delta S_x  \left( f_x + \frac{\Delta y}{3} \partial_y f_x + \frac{\Delta_z}{3} \partial_z f_x \right)     
+            - \Delta S_y  \left( f_y + \frac{\Delta z}{3} \partial_z f_y + \frac{\Delta_x}{3} \partial_x f_y \right) + \\
+  & \quad \ - \Delta S_z  \left( f_z + \frac{\Delta x}{3} \partial_x f_z + \frac{\Delta_y}{3} \partial_y f_z \right)      
+            + \Delta S    \left[ n_k \, \left( f_k(P) + \frac{\Delta x}{3} \partial_x f_k + n_y \, \frac{\Delta y}{3} \partial_y f_k + n_z \, \frac{\Delta_z}{3} \partial_z f_k \right) \right] + \dots + o(\Delta V) = \\ 
+  & =       - \Delta S_x  \left( f_x + \frac{\Delta y}{3} \partial_y f_x + \frac{\Delta_z}{3} \partial_z f_x \right)     
+            - \Delta S_y  \left( f_y + \frac{\Delta z}{3} \partial_z f_y + \frac{\Delta_x}{3} \partial_x f_y \right) + \\
+  & \quad \ - \Delta S_z  \left( f_z + \frac{\Delta x}{3} \partial_x f_z + \frac{\Delta_y}{3} \partial_y f_z \right)      
+            + \Delta S_k  \, \left( f_k(P) + \frac{\Delta x}{3} \partial_x f_k + n_y \, \frac{\Delta y}{3} \partial_y f_k + n_z \, \frac{\Delta_z}{3} \partial_z f_k \right) + \dots + o(\Delta V) = \\ 
+  & = \frac{1}{3} \Delta S_x \, \Delta_x \partial_x f_x + \frac{1}{3} \Delta S_y \Delta_y \partial_y f_y + \frac{1}{3} \Delta S_z \Delta_z \partial_z f_z = \\
+  & = \Delta V \left[ \partial_x \, f_x(P) + \partial_y \, f_y(P) + \partial_z \, f_z(P) \right] + o(\Delta V)\ .
   & = \Delta V \, \nabla \cdot \vec{f}(P) + o(\Delta V) \ .
 \end{aligned}$$
 ```
