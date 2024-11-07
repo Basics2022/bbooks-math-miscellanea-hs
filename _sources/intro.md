@@ -1,7 +1,7 @@
 (book:math-hs-miscellanea)=
 # Matematica per le scuole superiori
 
-Questo libro fa parte del materiale pensato per [le scuole superiori](https://basics2022.github.io/bbooks-hs)
+Questo libro fa parte del materiale pensato per [le scuole superiori](https://basics2022.github.io/bbooks-hs). E' disponibile la [versione in .pdf](https://www.github.com/Basics2022/bbooks-math-hs/blob/master/_build/latex/book.pdf) scaricabile.
 
 **Obiettivi.** **todo**
 
