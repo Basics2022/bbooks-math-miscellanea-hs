@@ -11,11 +11,11 @@ Il calcolo si occupa della variazione continua di grandezze matematiche che poss
 
 Gli strumenti matematici del calcolo vengono sviluppati e formalizzati tra la fine del XVII secolo e il XIX secolo, come strumenti necessari alla costruzione delle teorie fisiche della meccanica razionale di Newton prima, e della meccanica dei mezzi continui (fluidi e solidi) poi.
 
-Newton introduce i concetti fondamentali calcolo differenziale e integrale delle funzioni di una variabile, qui chiamato [calcolo infinitesimale](), necessari allo sviluppo della meccanica: nella meccanica di Newton, il moto di un sistema meccanico è descritto dai suoi gradi di libertà in funzione della variabile tempo, e le equazioni che ne governano il moto sono equazioni differenziali ordinarie. Il lavoro di Newton, e il lavoro contemporaneo di Leibniz, parte dalla [geometria analitica](), che permette di associare una curva a una funzione, e sviluppa la risposta ad alcuni problemi riguardanti la geometria delle curve, come il calcolo della tangente a una curva, la ricerca dei minimi e dei massimi di una funzione o il calcolo delle aree.
+Newton introduce i concetti fondamentali calcolo differenziale e integrale delle funzioni di una variabile, qui chiamato [calcolo infinitesimale](infinitesimal-calculus), necessari allo sviluppo della meccanica: nella meccanica di Newton, il moto di un sistema meccanico è descritto dai suoi gradi di libertà in funzione della variabile tempo, e le equazioni che ne governano il moto sono equazioni differenziali ordinarie. Il lavoro di Newton, e il lavoro contemporaneo di Leibniz, parte dalla [geometria analitica](geometry:analytic), che permette di associare una curva a una funzione, e sviluppa la risposta ad alcuni problemi riguardanti la geometria delle curve, come il calcolo della tangente a una curva, la ricerca dei minimi e dei massimi di una funzione o il calcolo delle aree.
 
 I risultati del calcolo differenziale e integrale vengono connessi tra di loro dal **teorema fondamentale del calcolo** (**todo** aggiungere riferimento).
 
-A Eulero si deve una prima raccolta degli strumenti utili a un'introduzione al calcolo, come discusso nel capitolo sul [precalcolo]().
+A Eulero si deve una prima raccolta degli strumenti utili a un'introduzione al calcolo, come discusso nel capitolo sul [precalcolo](math-hs:precalculus).
 
 Al lavoro di Johann e Jakob Bernoulli e ancora Eulero si deve l'ideazione del calcolo delle variazioni (**todo** *aggiungere una sezione?*), ampiamente sviluppato da **Lagrange** nella sua riformulazione geometrica della meccanica.
 

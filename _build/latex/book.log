@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2024.9.16)  7 NOV 2024 00:36
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2024.9.16)  7 NOV 2024 09:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2263,49 +2263,53 @@ LaTeX Info: Redefining \ttfamily on input line 5874.
 ]
 Chapter 18.
 [103]
-LaTeX Info: Redefining \rmfamily on input line 6019.
-LaTeX Info: Redefining \sffamily on input line 6019.
-LaTeX Info: Redefining \ttfamily on input line 6019.
+LaTeX Info: Redefining \rmfamily on input line 6017.
+LaTeX Info: Redefining \sffamily on input line 6017.
+LaTeX Info: Redefining \ttfamily on input line 6017.
  [104]
-LaTeX Info: Redefining \rmfamily on input line 6068.
-LaTeX Info: Redefining \sffamily on input line 6068.
-LaTeX Info: Redefining \ttfamily on input line 6068.
- [105]
-LaTeX Info: Redefining \rmfamily on input line 6068.
-LaTeX Info: Redefining \sffamily on input line 6068.
-LaTeX Info: Redefining \ttfamily on input line 6068.
- [106
+Overfull \hbox (201.61044pt too wide) detected at line 6040
+[]
+ []
 
-] [107] [108]
-LaTeX Info: Redefining \rmfamily on input line 6150.
-LaTeX Info: Redefining \sffamily on input line 6150.
-LaTeX Info: Redefining \ttfamily on input line 6150.
+LaTeX Info: Redefining \rmfamily on input line 6082.
+LaTeX Info: Redefining \sffamily on input line 6082.
+LaTeX Info: Redefining \ttfamily on input line 6082.
+[105]
+LaTeX Info: Redefining \rmfamily on input line 6091.
+LaTeX Info: Redefining \sffamily on input line 6091.
+LaTeX Info: Redefining \ttfamily on input line 6091.
+ [106] [107
+
+] [108]
+LaTeX Info: Redefining \rmfamily on input line 6173.
+LaTeX Info: Redefining \sffamily on input line 6173.
+LaTeX Info: Redefining \ttfamily on input line 6173.
  [109]
-LaTeX Info: Redefining \rmfamily on input line 6150.
-LaTeX Info: Redefining \sffamily on input line 6150.
-LaTeX Info: Redefining \ttfamily on input line 6150.
+LaTeX Info: Redefining \rmfamily on input line 6173.
+LaTeX Info: Redefining \sffamily on input line 6173.
+LaTeX Info: Redefining \ttfamily on input line 6173.
  [110
 
 ]
 Chapter 19.
 [111]
-LaTeX Info: Redefining \rmfamily on input line 6158.
-LaTeX Info: Redefining \sffamily on input line 6158.
-LaTeX Info: Redefining \ttfamily on input line 6158.
+LaTeX Info: Redefining \rmfamily on input line 6181.
+LaTeX Info: Redefining \sffamily on input line 6181.
+LaTeX Info: Redefining \ttfamily on input line 6181.
  [112
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 6161--6162
+Underfull \hbox (badness 10000) in paragraph at lines 6184--6185
 []\TU/FreeMono(0)/m/n/10 integrals:thm:avg
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6164--6165
+Underfull \hbox (badness 10000) in paragraph at lines 6187--6188
 []\TU/FreeMono(0)/m/n/10 integrals:thm:fund
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6167--6168
+Underfull \hbox (badness 10000) in paragraph at lines 6190--6191
 []\TU/FreeMono(0)/m/n/10 integrals:thm:fund:reynolds
  []
 
@@ -2347,15 +2351,15 @@ braces):
 >  {english/babelname}  =>  {american}
 >  {english/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {english/Localnumeral}  =>  {polyglossia@C@localnumeral}.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 6190.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 6190.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 6213.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 6213.
  (./book.aux
 LaTeX Info: Redefining \rmfamily on input line 19.
 LaTeX Info: Redefining \sffamily on input line 19.
 LaTeX Info: Redefining \ttfamily on input line 19.
 )
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 6190.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 6190.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 6213.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 6213.
 
 Package rerunfilecheck Info: File `book.out' has not changed.
 (rerunfilecheck)             Checksum: F378F5974E1E875FB481ED13C3431908;14445.
@@ -2367,10 +2371,10 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  42614 strings out of 481789
  972038 string characters out of 5937152
- 1640957 words of memory out of 5000000
+ 1653959 words of memory out of 5000000
  58766 multiletter control sequences out of 15000+600000
  541246 words of font info for 130 fonts, out of 8000000 for 9000
  15 hyphenation exceptions out of 8191
- 71i,27n,109p,906b,2232s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,27n,109p,1024b,2232s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on book.pdf (117 pages).

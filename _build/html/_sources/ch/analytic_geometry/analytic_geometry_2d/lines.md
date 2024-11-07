@@ -32,7 +32,7 @@ Per trovare l'equazione di una retta, si possono usare delle definizione equival
 
 $$|P - P_1| = |P-P_2|$$
 
-Usando un sistema di coordinate cartesiano per identificare i punti, $P_1 \equiv (x_1, y_1)$, $P_2 \equiv (x_2, y_2)$, $P \equiv (x,y)$ per calcolare (il quadrato del)le distanze, 
+Usando un sistema di coordinate cartesiane per identificare i punti, $P_1 \equiv (x_1, y_1)$, $P_2 \equiv (x_2, y_2)$, $P \equiv (x,y)$ per calcolare (il quadrato del)le distanze, 
 
 $$\begin{aligned}
  (x - x_1)^2 + (y - y_1)^2 &=  (x - x_2)^2 + (y - y_2)^2 \\
@@ -66,18 +66,22 @@ Un punto $P$ o appartiene o non appartiene a una retta $r$. Se appartiene alla c
 
 **Punto appartenente alla retta.** Una retta $r$ passa per un punto $P$ assegnato se le coordinate del punto $P$ soddisfano le equazioni che descrivono la retta.
 
-**Distanza punto-retta.** per calcolare la distanza punto-retta si può **todo** 
-
 
 ### Posizione reciproca di rette
+
+Due rette nel piano possono essere:
+- coincidenti: hanno tutti i punti in comune
+- parallele: non hanno nessun punto in comune
+- incidenti: si intersecano e la loro intersezione è un punto
+
 #### Rette coincidenti
 Due rette sono coincidenti se hanno un punto in comune e hanno la stessa direzione. In geometria analitica, due rette sono coincidenti se sono rappresentate dalla stessa equazione.
 
 Usando la forma parametrica, due rette sono coincidenti se è possibile scrivere le loro equazioni
 
 $$\begin{aligned}
-  r_1: \ P_1(\lambda_1) = P_{1,0} + \lambda_1 \ \mathbf{v}_1 \\
-  r_2: \ P_2(\lambda_2) = P_{2,0} + \lambda_2 \ \mathbf{v}_2
+  r_1: \ P_1(\lambda_1) = P_{1,0} + \lambda_1 \ \vec{v}_1 \\
+  r_2: \ P_2(\lambda_2) = P_{2,0} + \lambda_2 \ \vec{v}_2
 \end{aligned}$$
 
 con

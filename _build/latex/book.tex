@@ -4329,13 +4329,13 @@ Il calcolo si occupa della variazione continua di grandezze matematiche che poss
 Gli strumenti matematici del calcolo vengono sviluppati e formalizzati tra la fine del XVII secolo e il XIX secolo, come strumenti necessari alla costruzione delle teorie fisiche della meccanica razionale di Newton prima, e della meccanica dei mezzi continui (fluidi e solidi) poi.
 
 \sphinxAtStartPar
-Newton introduce i concetti fondamentali calcolo differenziale e integrale delle funzioni di una variabile, qui chiamato \DUrole{xref,myst}{calcolo infinitesimale}, necessari allo sviluppo della meccanica: nella meccanica di Newton, il moto di un sistema meccanico è descritto dai suoi gradi di libertà in funzione della variabile tempo, e le equazioni che ne governano il moto sono equazioni differenziali ordinarie. Il lavoro di Newton, e il lavoro contemporaneo di Leibniz, parte dalla \DUrole{xref,myst}{geometria analitica}, che permette di associare una curva a una funzione, e sviluppa la risposta ad alcuni problemi riguardanti la geometria delle curve, come il calcolo della tangente a una curva, la ricerca dei minimi e dei massimi di una funzione o il calcolo delle aree.
+Newton introduce i concetti fondamentali calcolo differenziale e integrale delle funzioni di una variabile, qui chiamato {\hyperref[\detokenize{ch/infinitesimal_calculus:infinitesimal-calculus}]{\sphinxcrossref{\DUrole{std,std-ref}{calcolo infinitesimale}}}}, necessari allo sviluppo della meccanica: nella meccanica di Newton, il moto di un sistema meccanico è descritto dai suoi gradi di libertà in funzione della variabile tempo, e le equazioni che ne governano il moto sono equazioni differenziali ordinarie. Il lavoro di Newton, e il lavoro contemporaneo di Leibniz, parte dalla {\hyperref[\detokenize{ch/analytic_geometry:geometry-analytic}]{\sphinxcrossref{\DUrole{std,std-ref}{geometria analitica}}}}, che permette di associare una curva a una funzione, e sviluppa la risposta ad alcuni problemi riguardanti la geometria delle curve, come il calcolo della tangente a una curva, la ricerca dei minimi e dei massimi di una funzione o il calcolo delle aree.
 
 \sphinxAtStartPar
 I risultati del calcolo differenziale e integrale vengono connessi tra di loro dal \sphinxstylestrong{teorema fondamentale del calcolo} (\sphinxstylestrong{todo} aggiungere riferimento).
 
 \sphinxAtStartPar
-A Eulero si deve una prima raccolta degli strumenti utili a un’introduzione al calcolo, come discusso nel capitolo sul \DUrole{xref,myst}{precalcolo}.
+A Eulero si deve una prima raccolta degli strumenti utili a un’introduzione al calcolo, come discusso nel capitolo sul {\hyperref[\detokenize{ch/precalculus:math-hs-precalculus}]{\sphinxcrossref{\DUrole{std,std-ref}{precalcolo}}}}.
 
 \sphinxAtStartPar
 Al lavoro di Johann e Jakob Bernoulli e ancora Eulero si deve l’ideazione del calcolo delle variazioni (\sphinxstylestrong{todo} \sphinxstyleemphasis{aggiungere una sezione?}), ampiamente sviluppato da \sphinxstylestrong{Lagrange} nella sua riformulazione geometrica della meccanica.
@@ -5997,7 +5997,7 @@ quando l’angolo tra il versore \(\hat{t}\) e il gradiente \(\nabla f(P)\) è n
 La divergenza di un campo vettoriale \(\vec{f}(P)\) nello spazio 3\sphinxhyphen{}dimensionale è un campo scalare che può essere interpretato come la densità volumetrica del flusso del campo vettoriale. Usando un sistema di coordinate cartesiane, la divergenza di un campo vettoriale può essere scritta formalmente come il prodotto interno tra il vettore formale nabla e il campo vettoriale,
 \begin{equation*}
 \begin{split}\nabla \cdot \vec{f} = \partial_x f_x + \partial_y f_y + \partial_z f_z\end{split}
-\end{equation*}\subsubsection*{Divergenza come densità volumetrica del flusso. Dimostrazione}
+\end{equation*}\subsubsection*{Divergenza come densità volumetrica del flusso. Dimostrazione con un cubetto elementare}
 
 \sphinxAtStartPar
 Usando le coordinate cartesiane si calcola il flusso del campo vettoriale attraverso la superficie di un cubetto elementare centrato nel punto \(P\), \sphinxstylestrong{todo}
@@ -6012,6 +6012,29 @@ Usando le coordinate cartesiane si calcola il flusso del campo vettoriale attrav
                              - f_x(P) + \frac{\Delta x}{2} \,  \partial_x \, f(P) + o(\Delta x) \right] + \dots  = \\
   & = \Delta x \Delta y \Delta z \,  \partial_x \, f_x(P) + o(\Delta V) + \dots = \\ \\
   & = \Delta V \, \left[  \partial_x \, f_x(P) +  \partial_y \, f_y(P) + \partial_z \, f_z(P) \right] + o(\Delta V) = \\ \\
+  & = \Delta V \, \nabla \cdot \vec{f}(P) + o(\Delta V) \ .
+\end{aligned}\end{split}
+\end{equation*}\subsubsection*{Divergenza come densità volumetrica del flusso. Dimostrazione con un tetraedro elementare}
+
+\sphinxAtStartPar
+Usando le coordinate cartesiane si calcola il flusso del campo vettoriale attraverso la superficie di un cubetto elementare centrato nel punto \(P\), \sphinxstylestrong{todo}
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \Phi_{\partial \Delta V(P)}\left(\vec{f}\right) 
+  & =       - \Delta S_x  \hat{x} \cdot \vec{f}\left( P + \hat{y} \frac{\Delta y}{2} + \hat{z} \frac{\Delta z}{2} \right)   
+            - \Delta S_y  \hat{y} \cdot \vec{f}\left( P + \hat{z} \frac{\Delta z}{2} + \hat{x} \frac{\Delta x}{2} \right) \\
+  & \quad \ - \Delta S_z  \hat{z} \cdot \vec{f}\left( P + \hat{x} \frac{\Delta x}{2} + \hat{y} \frac{\Delta y}{2} \right)   
+            + \Delta S    \hat{n} \cdot \vec{f}\left( P + \hat{x} \frac{\Delta x}{2} + \hat{y} \frac{\Delta y}{2} + \hat{z} \frac{\Delta z}{2} \right) + o(\Delta V) = \\
+  & =       - \Delta S_x  \left( f_x + \frac{\Delta y}{2} \partial_y f_x + \frac{\Delta_z}{2} \partial_z f_x \right)     
+            - \Delta S_y  \left( f_y + \frac{\Delta z}{2} \partial_z f_y + \frac{\Delta_x}{2} \partial_x f_y \right) + \\
+  & \quad \ - \Delta S_z  \left( f_z + \frac{\Delta x}{2} \partial_x f_z + \frac{\Delta_y}{2} \partial_y f_z \right)      
+            + \Delta S    \left[ n_k \, \left( f_k(P) + \frac{\Delta x}{2} \partial_x f_k + n_y \, \frac{\Delta y}{2} \partial_y f_k + n_z \, \frac{\Delta_z}{2} \partial_z f_k \right) \right] + \dots + o(\Delta V) = \\ 
+  & =       - \Delta S_x  \left( f_x + \frac{\Delta y}{2} \partial_y f_x + \frac{\Delta_z}{2} \partial_z f_x \right)     
+            - \Delta S_y  \left( f_y + \frac{\Delta z}{2} \partial_z f_y + \frac{\Delta_x}{2} \partial_x f_y \right) + \\
+  & \quad \ - \Delta S_z  \left( f_z + \frac{\Delta x}{2} \partial_x f_z + \frac{\Delta_y}{2} \partial_y f_z \right)      
+            + \Delta S_k  \, \left( f_k(P) + \frac{\Delta x}{2} \partial_x f_k + n_y \, \frac{\Delta y}{2} \partial_y f_k + n_z \, \frac{\Delta_z}{2} \partial_z f_k \right) + \dots + o(\Delta V) = \\ 
+  & = \frac{1}{2} \Delta S_x \, \Delta_x \partial_x f_x + \frac{1}{2} \Delta S_y \Delta_y \partial_y f_y + \frac{1}{2} \Delta S_z \Delta_z \partial_z f_z = \\
+  & = \Delta V \left[ \partial_x \, f_x(P) + \partial_y \, f_y(P) + \partial_z \, f_z(P) \right] + o(\Delta V)\ .
   & = \Delta V \, \nabla \cdot \vec{f}(P) + o(\Delta V) \ .
 \end{aligned}\end{split}
 \end{equation*}

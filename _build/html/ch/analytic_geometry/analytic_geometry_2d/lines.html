@@ -515,7 +515,7 @@ document.write(`
 <p><strong>Definizione 2 - Luogo dei punti equidistante da due punti distinti dati.</strong> Una retta è il luogo geometrico dei punti <span class="math notranslate nohighlight">\(P\)</span> equidistanti da due punti distinti nel piano, <span class="math notranslate nohighlight">\(P_1\)</span>, <span class="math notranslate nohighlight">\(P_2\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[|P - P_1| = |P-P_2|\]</div>
-<p>Usando un sistema di coordinate cartesiano per identificare i punti, <span class="math notranslate nohighlight">\(P_1 \equiv (x_1, y_1)\)</span>, <span class="math notranslate nohighlight">\(P_2 \equiv (x_2, y_2)\)</span>, <span class="math notranslate nohighlight">\(P \equiv (x,y)\)</span> per calcolare (il quadrato del)le distanze,</p>
+<p>Usando un sistema di coordinate cartesiane per identificare i punti, <span class="math notranslate nohighlight">\(P_1 \equiv (x_1, y_1)\)</span>, <span class="math notranslate nohighlight">\(P_2 \equiv (x_2, y_2)\)</span>, <span class="math notranslate nohighlight">\(P \equiv (x,y)\)</span> per calcolare (il quadrato del)le distanze,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
  (x - x_1)^2 + (y - y_1)^2 &amp;=  (x - x_2)^2 + (y - y_2)^2 \\
@@ -541,18 +541,23 @@ document.write(`
 <h3>Posizione reciproca di punto e retta<a class="headerlink" href="#posizione-reciproca-di-punto-e-retta" title="Permalink to this heading">#</a></h3>
 <p>Un punto <span class="math notranslate nohighlight">\(P\)</span> o appartiene o non appartiene a una retta <span class="math notranslate nohighlight">\(r\)</span>. Se appartiene alla curva, la distanza tra punto e retta è nulla; se non appartiene alla curva, la distanza tra punto e retta è positiva e può essere calcolata come mostrato nella sezione <a class="reference internal" href="#geometry-analytic-2d-lines-distance-point-line"><span class="std std-ref">Distanza punto-retta</span></a>.</p>
 <p><strong>Punto appartenente alla retta.</strong> Una retta <span class="math notranslate nohighlight">\(r\)</span> passa per un punto <span class="math notranslate nohighlight">\(P\)</span> assegnato se le coordinate del punto <span class="math notranslate nohighlight">\(P\)</span> soddisfano le equazioni che descrivono la retta.</p>
-<p><strong>Distanza punto-retta.</strong> per calcolare la distanza punto-retta si può <strong>todo</strong></p>
 </div>
 <div class="section" id="posizione-reciproca-di-rette">
 <h3>Posizione reciproca di rette<a class="headerlink" href="#posizione-reciproca-di-rette" title="Permalink to this heading">#</a></h3>
+<p>Due rette nel piano possono essere:</p>
+<ul class="simple">
+<li><p>coincidenti: hanno tutti i punti in comune</p></li>
+<li><p>parallele: non hanno nessun punto in comune</p></li>
+<li><p>incidenti: si intersecano e la loro intersezione è un punto</p></li>
+</ul>
 <div class="section" id="rette-coincidenti">
 <h4>Rette coincidenti<a class="headerlink" href="#rette-coincidenti" title="Permalink to this heading">#</a></h4>
 <p>Due rette sono coincidenti se hanno un punto in comune e hanno la stessa direzione. In geometria analitica, due rette sono coincidenti se sono rappresentate dalla stessa equazione.</p>
 <p>Usando la forma parametrica, due rette sono coincidenti se è possibile scrivere le loro equazioni</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
-  r_1: \ P_1(\lambda_1) = P_{1,0} + \lambda_1 \ \mathbf{v}_1 \\
-  r_2: \ P_2(\lambda_2) = P_{2,0} + \lambda_2 \ \mathbf{v}_2
+  r_1: \ P_1(\lambda_1) = P_{1,0} + \lambda_1 \ \vec{v}_1 \\
+  r_2: \ P_2(\lambda_2) = P_{2,0} + \lambda_2 \ \vec{v}_2
 \end{aligned}\end{split}\]</div>
 <p>con</p>
 <div class="math notranslate nohighlight">
