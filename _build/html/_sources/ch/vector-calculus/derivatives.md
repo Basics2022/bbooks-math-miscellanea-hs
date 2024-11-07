@@ -80,12 +80,12 @@ $$\begin{aligned}
   & =       - \Delta S_x  \left( f_x + \frac{\Delta y}{3} \partial_y f_x + \frac{\Delta_z}{3} \partial_z f_x \right)     
             - \Delta S_y  \left( f_y + \frac{\Delta z}{3} \partial_z f_y + \frac{\Delta_x}{3} \partial_x f_y \right) + \\
   & \quad \ - \Delta S_z  \left( f_z + \frac{\Delta x}{3} \partial_x f_z + \frac{\Delta_y}{3} \partial_y f_z \right)      
-            + \Delta S    \left[ n_k \, \left( f_k(P) + \frac{\Delta x}{3} \partial_x f_k + n_y \, \frac{\Delta y}{3} \partial_y f_k + n_z \, \frac{\Delta_z}{3} \partial_z f_k \right) \right] + \dots + o(\Delta V) = \\ 
+            + \Delta S  \sum_{k \in \{x,y,z\} }   \left[ n_k \, \left( f_k(P) + \frac{\Delta x}{3} \partial_x f_k + n_y \, \frac{\Delta y}{3} \partial_y f_k + n_z \, \frac{\Delta z}{3} \partial_z f_k \right) \right] + \dots + o(\Delta V) = \\ 
   & =       - \Delta S_x  \left( f_x + \frac{\Delta y}{3} \partial_y f_x + \frac{\Delta_z}{3} \partial_z f_x \right)     
             - \Delta S_y  \left( f_y + \frac{\Delta z}{3} \partial_z f_y + \frac{\Delta_x}{3} \partial_x f_y \right) + \\
   & \quad \ - \Delta S_z  \left( f_z + \frac{\Delta x}{3} \partial_x f_z + \frac{\Delta_y}{3} \partial_y f_z \right)      
-            + \Delta S_k  \, \left( f_k(P) + \frac{\Delta x}{3} \partial_x f_k + n_y \, \frac{\Delta y}{3} \partial_y f_k + n_z \, \frac{\Delta_z}{3} \partial_z f_k \right) + \dots + o(\Delta V) = \\ 
-  & = \frac{1}{3} \Delta S_x \, \Delta_x \partial_x f_x + \frac{1}{3} \Delta S_y \Delta_y \partial_y f_y + \frac{1}{3} \Delta S_z \Delta_z \partial_z f_z = \\
+            + \sum_{k \in \{x,y,z\} } \Delta S_k  \, \left( f_k(P) + \frac{\Delta x}{3} \partial_x f_k + n_y \, \frac{\Delta y}{3} \partial_y f_k + n_z \, \frac{\Delta_z}{3} \partial_z f_k \right) + \dots + o(\Delta V) = \\ 
+  & = \frac{1}{3} \Delta S_x \, \Delta x \partial_x f_x + \frac{1}{3} \Delta S_y \Delta y \partial_y f_y + \frac{1}{3} \Delta S_z \Delta z \partial_z f_z = \\
   & = \Delta V \left[ \partial_x \, f_x(P) + \partial_y \, f_y(P) + \partial_z \, f_z(P) \right] + o(\Delta V)\ .
   & = \Delta V \, \nabla \cdot \vec{f}(P) + o(\Delta V) \ .
 \end{aligned}$$
