@@ -1,8 +1,35 @@
 (math-hs:trigonometry)=
 # Trigonometria
 
-## Prime definizioni e relazioni
+## Definizione delle funzioni trigonometriche e relazione fondamentale
 
+### Seno e coseno
+
+````{only} latex
+
+$$
+\begin{minipage}[t]{.55\textwidth}
+  \vspace{0pt}
+  Facendo riferimento a una circonferenza di raggio $R$, e scegliendo una semiretta di riferimento come origine per la misura degli angoli, positivi in senso orario, si possono definire le funzioni trigonometriche \textbf{seno} e \textbf{coseno}, 
+
+  \begin{equation}
+  \begin{aligned}
+    \sin \theta & := \frac{\overline{PH}}{R} \\
+    \cos \theta & := \frac{\overline{OH}}{R} \\
+  \end{aligned}
+  \end{equation}
+
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/trigonometry-def.png}
+\end{minipage}
+$$
+
+````
+
+````{only} html
 Facendo riferimento a una circonferenza di raggio $R$, e scegliendo una semiretta di riferimento come origine per la misura degli angoli, positivi in senso orario, si possono definire le funzioni trigonometriche
 
 $$\sin \theta := \frac{\overline{PH}}{R}$$
@@ -10,10 +37,11 @@ $$\cos \theta := \frac{\overline{OH}}{R}$$
 
 ```{figure} ../media/trigonometry-def.png
 ```
-<!-- :align: center -->
-<!--  ![]()  -->
 
-Usando il teorema di Pitagora è immediato dimostrare la relazione fondamentale tra le funzioni trigonometriche
+````
+
+### Relazione fondamentale della trignometria
+Usando il teorema di Pitagora è immediato dimostrare la **relazione fondamentale della trigonometria** tra le funzioni seno e coseno di un angolo,
 
 $$\sin^2 \theta + \cos^2 \theta = 1 \ .$$
 
@@ -21,22 +49,59 @@ $$\sin^2 \theta + \cos^2 \theta = 1 \ .$$
 
 $$\sin^2 x = (\sin x)^2 \neq \sin( \sin x) \ .$$
 
-**Tangente.** $\tan \theta := \dfrac{\sin \theta}{\cos \theta} = \frac{\overline{PH}}{\overline{OH}} \ .$
+### Altre funzioni trigonometriche
+**Tangente.** $\tan \theta := \dfrac{\sin \theta}{\cos \theta} = \dfrac{\overline{PH}}{\overline{OH}} \ .$
 
-*Cosecante, secante, cotangente.* Definizioni al limite dell'inutile e dannoso...
-
-## Proprietà
+*Cosecante, secante, cotangente.* Definizioni al limite tra l'inutile e il dannoso,
 
 $$\begin{aligned}
-  \sin\left(-x\right)              & = - \sin x \\ 
-  \cos\left(-x\right)              & =   \cos x \\ 
-  \sin\left(x+\frac{\pi}{2}\right) & =   \cos x \\  
-  \cos\left(x+\frac{\pi}{2}\right) & = - \sin x \\  
-  \sin(x + \pi)                    & = - \sin x \\
-  \cos(x + \pi)                    & = - \cos x \\
+  \text{cosec} \ \theta & := \frac{1}{\sin \theta} \\
+  \text{sec  } \ \theta & := \frac{1}{\cos \theta} \\
+  \text{cotan} \ \theta & := \frac{1}{\tan \theta} \\
 \end{aligned}$$
 
-## Angoli particolari
+## Angoli particolari e proprietà
+
+```{only} latex
+$$
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \textbf{Angoli particolari.}
+  \begin{equation*}
+  \begin{matrix}
+   \theta & \cos \theta & \sin \theta & \tan \theta \\
+   \hline 
+   0             & 1                  & 0                  & 0                  \\
+   \frac{\pi}{6} & \frac{\sqrt{3}}{2} & \frac{1}{2}        & \frac{1}{\sqrt{3}} \\
+   \frac{\pi}{4} & \frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2} & 1                  \\
+   \frac{\pi}{3} & \frac{1}{2}        & \frac{\sqrt{3}}{2} & \sqrt{3}           \\
+   \frac{\pi}{2} & 0                  & 1                  & \rightarrow \infty \\
+  \end{matrix}
+  \end{equation*}
+  \textbf{Proprietà.}
+  \begin{equation*}
+  \begin{aligned}
+    \sin\left(-x\right)              & = - \sin x \\ 
+    \cos\left(-x\right)              & =   \cos x \\ 
+    \sin\left(x+\frac{\pi}{2}\right) & =   \cos x \\  
+    \cos\left(x+\frac{\pi}{2}\right) & = - \sin x \\  
+    \sin(x + \pi)                    & = - \sin x \\
+    \cos(x + \pi)                    & = - \cos x \\
+  \end{aligned}
+  \end{equation*}
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.55\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/trigonometry-particular.png}
+\end{minipage}
+$$
+```
+
+````{only} html
+<!-- ### Angoli particolari -->
+In tabella vengono riportati i valori del seno, coseno e tangente di alcuni angoli particolari $\theta \in \left[0, \frac{\pi}{2} \right]$
+
 ```{list-table}
 :header-rows: 1
 * - $\theta$
@@ -65,9 +130,19 @@ $$\begin{aligned}
   - $\rightarrow \infty$
 ```
 
+Con le proprietà
+
+$$\begin{aligned}
+  \sin x & = -   \sin (-x) = - \ \ \cos \left( x + \frac{\pi}{2} \right) = -   \sin( x + \pi) \\
+  \cos x & = \ \ \cos (-x) = - \ \ \sin \left( x + \frac{\pi}{2} \right) = -   \cos( x + \pi) \\
+\end{aligned}$$
+
+è possibile calcolare il valore delle funzioni trigonometriche di angoli particolari nei quattro quadranti. 
+
 ```{figure} ../media/trigonometry-particular.png
 ```
 
+````
 
 ## Formule di somma e sottrazione
 Valgono le seguenti formule per il coseno e il seno della somma e della differenza di angoli,

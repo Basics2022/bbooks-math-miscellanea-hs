@@ -49,6 +49,7 @@ parts:
 - caption: Precalcolo
   chapters:
   - file: ch/precalculus
+  - file: ch/precalculus/real-functions
   - file: ch/precalculus/polynomials
   - file: ch/series
   - file: ch/trigonometry
@@ -61,8 +62,7 @@ parts:
   - file: ch/calculus
   - file: ch/infinitesimal_calculus
     sections:
-    - file: ch/infinitesimal_calculus/real_functions
-    - file: ch/infinitesimal_calculus/limits
+    - file: ch/infinitesimal_calculus/analysis
     - file: ch/infinitesimal_calculus/derivatives
     - file: ch/infinitesimal_calculus/integrals
       sections:

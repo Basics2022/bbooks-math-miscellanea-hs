@@ -34,7 +34,6 @@
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
     <link rel="stylesheet" type="text/css" href="../_static/style.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
@@ -68,7 +67,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/infinitesimal_calculus';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Funzioni reali a variabile reale, \( f: \mathbb{R} \rightarrow \mathbb{R} \)" href="infinitesimal_calculus/real_functions.html" />
+    <link rel="next" title="Introduzione all’analisi" href="infinitesimal_calculus/analysis.html" />
     <link rel="prev" title="Introduzione al calcolo" href="calculus.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -224,6 +223,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Precalcolo</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="precalculus.html">Introduzione al pre-calcolo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="precalculus/real-functions.html">Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\(f: \mathbb{R} \rightarrow \mathbb{R}\)</span></a></li>
 <li class="toctree-l1"><a class="reference internal" href="precalculus/polynomials.html">Polinomi</a></li>
 <li class="toctree-l1"><a class="reference internal" href="series.html">Serie e successioni</a></li>
 <li class="toctree-l1"><a class="reference internal" href="trigonometry.html">Trigonometria</a></li>
@@ -237,8 +237,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="calculus.html">Introduzione al calcolo</a></li>
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Calcolo infinitesimale</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="infinitesimal_calculus/real_functions.html">Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\( f: \mathbb{R} \rightarrow \mathbb{R} \)</span></a></li>
-<li class="toctree-l2"><a class="reference internal" href="infinitesimal_calculus/limits.html">Limiti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="infinitesimal_calculus/analysis.html">Introduzione all’analisi</a></li>
 <li class="toctree-l2"><a class="reference internal" href="infinitesimal_calculus/derivatives.html">Derivate</a></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="infinitesimal_calculus/integrals.html">Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="infinitesimal_calculus/integrals-table.html">Tavola degli integrali indefiniti più comuni</a></li>
@@ -462,16 +461,22 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="calcolo-infinitesimale">
 <span id="infinitesimal-calculus"></span><h1>Calcolo infinitesimale<a class="headerlink" href="#calcolo-infinitesimale" title="Permalink to this heading">#</a></h1>
-<p>Il calcolo infinitesimale si occupa dello studio <strong>di… todo</strong></p>
-<p>Questo capitolo presenta il calcolo infinitesimale per le funzioni reali di una variabile reale, <span class="math notranslate nohighlight">\(f: D \in \mathbb{R} \rightarrow \mathbb{R}\)</span>, come inizialmente formulate da Newton <strong>[REF]</strong> e Lebniz <strong>[REF]</strong> nel XVII secolo nell’ambito dello sviluppo della meccanica classica <strong>[REF]</strong> e formalizzate nel XVIII secolo a Parigi da D’Alembert e Cauchy.</p>
+<p>Il calcolo infinitesimale si occupa dello studio <em>delle variazioni con continuità delle grandezze</em> <strong>todo</strong>.</p>
+<p>Questo capitolo presenta il calcolo infinitesimale per le funzioni reali di una variabile reale, <span class="math notranslate nohighlight">\(f: D \in \mathbb{R} \rightarrow \mathbb{R}\)</span>, come inizialmente formulate da Newton e Lebniz alla fine del XVII secolo nell’ambito dello sviluppo della <a class="reference external" href="https://basics2022.github.io/bbooks-physics-hs/ch/mechanics.html">meccanica classica</a>, e successivamente formalizzate nel XIX secolo grazie all’opera, tra gli altri, di Cauchy e Weierstrass. Infine vengono introdotte le equazioni differenziali ordinarie. <strong>todo</strong> <em>due parole sull’importanza delle equazioni differenziali?</em></p>
+<p>La presentazione degli argomenti è invertita rispetto a questo ordine cronologico per rispettare un ordine logico: prima vengono presentati alcuni fondamenti dell’<strong>analisi</strong>, come sviluppati da Cauchy e Weierstrass nel XIX secolo; successivamente, questi concetti vengono utilizzati per definire e dare fondamento teorico ai concetti del <strong>calcolo differenziale</strong> e <strong>integrale</strong>, introdotti più di un secolo prima da Newton e Leibniz partendo da risultati di geometria analitica.</p>
+<!--
 <span style="color:red">
 Altre sezioni si occuperanno del calcolo per funzioni multivariabile **[REF]** e per il calcolo con funzioni complesse **[REF]**.
 </span>
-<ul class="simple">
-<li><p>Viene richiamato il concetto di <strong>funzione</strong> di variabile reale a valore reale, <span class="math notranslate nohighlight">\(f: D \in \mathbb{R} \rightarrow \mathbb{R}\)</span>, e la sua rappresentazione grafica in un piano cartesiano.</p></li>
-<li><p>Viene introdotto il concetto di <strong>limite</strong> per funzioni reali e viene usato per definire le <strong>funzioni continue</strong>. Vengono quindi presentati alcuni teoremi sulle funzioni continue e sui limiti che ne permettono il calcolo. Vengono presentate le forme indeterminate al finito e all’infinito, e calcolati i <em>limiti fondamentali</em>.</p></li>
-<li><p>Usando i concetti di limite della sezione precedente, viene introdotto il concetto di <strong>derivata</strong> di una funzione reale, e viene data una sua interpretazione geometrica, legata alla retta tangente al grafico della funzione. Seguono alcune proprietà e teoremi sulle derivate che permettono di valutare le <em>derivate fondamentali</em> e combinare questi risultati per il calcolo della derivata di una funzione qualsiasi. Infine viene introdotto il concetto di derivate di ordine superiore, e vengono mostrate alcune applicazioni: ricerca di punti di estremo locale e di flesso nello studio di funzione, ottimizzazione, approssimazione locale tramite sviluppi in serie polinomiali</p></li>
-<li><p>Viene data la definizione di <strong>integrale di Riemann</strong> e una sua interpretazione geometrica, legata all’area sottesa dal grafico della funzione. Seguono alcune proprietà degli integrali che permettono di definire l’integrale definito e indefinito, e la primitiva di una funzione. Viene presentato il <strong>teorema fondamentale del calcolo infinitesimale</strong>, che permette di riconoscere l’operazione di integrazione come inversa dell’integrazione. Usando questo risultato, vengono valutati gli <em>integrali fondamentali</em>; poche regole di integrazione permettono poi di calcolare l’integrale di funzioni generiche. Infine vengono mostrate alcune applicazioni: … <strong>todo</strong></p></li>
+-->
+<p><strong>Argomenti del capitolo.</strong></p>
+<ul>
+<li><p><a class="reference internal" href="infinitesimal_calculus/analysis.html#infinitesimal-calculus-analysis"><span class="std std-ref"><strong>Introduzione all’analisi</strong></span></a>. Viene richiamato il concetto di <strong>funzione</strong> di variabile reale a valore reale, <span class="math notranslate nohighlight">\(f: D \in \mathbb{R} \rightarrow \mathbb{R}\)</span>, e la sua rappresentazione grafica in un piano cartesiano.</p>
+<p>Viene introdotto il concetto di <strong>limite</strong> per funzioni reali e viene usato per definire le <strong>funzioni continue</strong>. Vengono quindi presentati alcuni teoremi sulle funzioni continue e sui limiti che ne permettono il calcolo. Vengono presentate le forme indeterminate al finito e all’infinito, e calcolati i <em>limiti fondamentali</em>.</p>
+</li>
+<li><p><a class="reference internal" href="infinitesimal_calculus/derivatives.html#infinitesimal-calculus-derivatives"><span class="std std-ref"><strong>Calcolo differenziale</strong></span></a>. Usando i concetti di limite della sezione precedente, viene introdotto il concetto di <strong>derivata</strong> di una funzione reale, e viene data una sua interpretazione geometrica, legata alla retta tangente al grafico della funzione. Seguono alcune proprietà e teoremi sulle derivate che permettono di valutare le <em>derivate fondamentali</em> e combinare questi risultati per il calcolo della derivata di una funzione qualsiasi. Infine viene introdotto il concetto di derivate di ordine superiore, e vengono mostrate alcune applicazioni: ricerca di punti di estremo locale e di flesso nello studio di funzione, ottimizzazione, approssimazione locale tramite sviluppi in serie polinomiali</p></li>
+<li><p><a class="reference internal" href="infinitesimal_calculus/integrals.html#infinitesimal-calculus-integrals"><span class="std std-ref"><strong>Calcolo integrale</strong></span></a>. Viene data la definizione di <strong>integrale di Riemann</strong> e una sua interpretazione geometrica, legata all’area sottesa dal grafico della funzione. Seguono alcune proprietà degli integrali che permettono di definire l’integrale definito e indefinito, e la primitiva di una funzione. Viene presentato il <strong>teorema fondamentale del calcolo infinitesimale</strong>, che permette di riconoscere l’operazione di integrazione come inversa dell’integrazione. Usando questo risultato, vengono valutati gli <em>integrali fondamentali</em>; poche regole di integrazione permettono poi di calcolare l’integrale di funzioni generiche. Infine vengono mostrate alcune applicazioni: … <strong>todo</strong></p></li>
+<li><p><a class="reference internal" href="ode.html#ode-hs"><span class="std std-ref"><strong>Equazioni differenziali ordinarie</strong></span></a>. <strong>todo</strong></p></li>
 </ul>
 <!--
 - Introduzione alle funzioni di variabile reale a valori reali, $f: D \in \mathbb{R} \rightarrow \mathbb{R}$
@@ -524,11 +529,11 @@ Altre sezioni si occuperanno del calcolo per funzioni multivariabile **[REF]** e
       </div>
     </a>
     <a class="right-next"
-       href="infinitesimal_calculus/real_functions.html"
+       href="infinitesimal_calculus/analysis.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\( f: \mathbb{R} \rightarrow \mathbb{R} \)</span></p>
+        <p class="prev-next-title">Introduzione all’analisi</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

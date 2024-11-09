@@ -22,6 +22,7 @@ Senza fare uso di nessun concetto di calcolo differenziale o integrale, nel prim
 - le [funzioni logaritmo ed esponenziale](math-hs:exp-log) con base $e$, vol.1 cap.6-7
 - le [funzioni trigonometriche](math-hs:trigonometry), vol.1 cap.8
 - risultati sulla [fattorizzazione di polinomi](math-hs:precalculus:polynomials), **todo**
+- **numeri complessi** **todo** *riferimento all'algebra dei numeri complessi*
 
 Nel secondo volume, Eulero applica i risultati del primo volume allo studio delle **curve** e delle **superfici** nel piano e nello spazio.
 
