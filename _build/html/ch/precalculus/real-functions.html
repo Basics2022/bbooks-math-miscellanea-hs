@@ -434,7 +434,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -450,6 +452,14 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funzioni-invertibili-e-inverse">Funzioni invertibili e inverse</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -480,6 +490,18 @@ document.write(`
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="funzioni-reali-a-variabile-reale-f-mathbb-r-rightarrow-mathbb-r">
 <span id="math-hs-precalculus-real-functions"></span><h1>Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\(f: \mathbb{R} \rightarrow \mathbb{R}\)</span><a class="headerlink" href="#funzioni-reali-a-variabile-reale-f-mathbb-r-rightarrow-mathbb-r" title="Permalink to this heading">#</a></h1>
+<p><strong>Definizione.</strong> <em>funzione, dominio, immagine,…</em></p>
+<p><strong>Funzioni monotone</strong></p>
+<div class="section" id="funzioni-invertibili-e-inverse">
+<span id="math-hs-precalculus-real-functions-inverse"></span><h2>Funzioni invertibili e inverse<a class="headerlink" href="#funzioni-invertibili-e-inverse" title="Permalink to this heading">#</a></h2>
+<p>Una funzione <span class="math notranslate nohighlight">\(f: X \rightarrow Y\)</span> è <strong>invertibile</strong> se esiste una funzione <span class="math notranslate nohighlight">\(g: Y \rightarrow X\)</span> tale che</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  g\left( f(x) \right) &amp; = x \ , \quad \forall x \in X \\
+  f\left( g(y) \right) &amp; = y \ , \quad \forall y \in Y \\
+\end{aligned}\end{split}\]</div>
+<p>Una funzione <span class="math notranslate nohighlight">\(f: X \rightarrow Y\)</span> monotona è invertibile</p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -536,6 +558,20 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funzioni-invertibili-e-inverse">Funzioni invertibili e inverse</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

@@ -3561,6 +3561,26 @@ Nov 10, 2024
 
 \chapter{Funzioni reali a variabile reale, \protect\(f: \mathbb{R} \rightarrow \mathbb{R}\protect\)}
 \label{\detokenize{ch/precalculus/real-functions:funzioni-reali-a-variabile-reale-f-mathbb-r-rightarrow-mathbb-r}}\label{\detokenize{ch/precalculus/real-functions:math-hs-precalculus-real-functions}}\label{\detokenize{ch/precalculus/real-functions::doc}}
+\sphinxAtStartPar
+\sphinxstylestrong{Definizione.} \sphinxstyleemphasis{funzione, dominio, immagine,…}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Funzioni monotone}
+
+
+\section{Funzioni invertibili e inverse}
+\label{\detokenize{ch/precalculus/real-functions:funzioni-invertibili-e-inverse}}\label{\detokenize{ch/precalculus/real-functions:math-hs-precalculus-real-functions-inverse}}
+\sphinxAtStartPar
+Una funzione \(f: X \rightarrow Y\) è \sphinxstylestrong{invertibile} se esiste una funzione \(g: Y \rightarrow X\) tale che
+\begin{equation*}
+\begin{split}\begin{aligned}
+  g\left( f(x) \right) & = x \ , \quad \forall x \in X \\
+  f\left( g(y) \right) & = y \ , \quad \forall y \in Y \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Una funzione \(f: X \rightarrow Y\) monotona è invertibile
+
 \sphinxstepscope
 
 \begin{sphinxuseclass}{sd-container-fluid}
@@ -3713,7 +3733,7 @@ Nov 10, 2024
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-3 min read
+4 min read
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3763,10 +3783,10 @@ serie di funzioni
 \end{itemize}
 
 
-\section{Successioni a valori reali}
-\label{\detokenize{ch/series:successioni-a-valori-reali}}
+\section{Successioni a di numeri reali}
+\label{\detokenize{ch/series:successioni-a-di-numeri-reali}}
 \sphinxAtStartPar
-\sphinxstylestrong{Definizione.} Una successione a valori reali è una funzione \(f: \mathbb{N} \rightarrow \mathbb{R}\), che associa ai numeri interi \(n \in \mathbb{N}\) un numero reale \(a_n = f(n)\).
+\sphinxstylestrong{Definizione.} Una successione di numeri reali è una funzione \(f: \mathbb{N} \rightarrow \mathbb{R}\), che associa ai numeri interi \(n \in \mathbb{N}\) un numero reale \(a_n = f(n)\).
 
 \sphinxAtStartPar
 \sphinxstylestrong{Limite di una successione.} Una successione \(\{ a_n \}\) ha limite \(\ell\) se per ogni intorno \(U_{\ell}\) di \(\ell\) esiste un numero naturale \(N \in \mathbb{N}\) tale che
@@ -3867,7 +3887,21 @@ A seconda del limite della successione delle somme parziali \(\lim_{k \rightarro
 \subsection{Criteri di convergenza}
 \label{\detokenize{ch/series:id1}}
 \sphinxAtStartPar
-Una serie può essere con
+Una serie può essere:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+convergente
+
+\item {} 
+\sphinxAtStartPar
+divergente
+
+\item {} 
+\sphinxAtStartPar
+indeterminata
+
+\end{itemize}
 
 
 \subsubsection{Serie a termini concordi}
@@ -4016,7 +4050,7 @@ La serie di Mengoli è un esempio di serie telescopica, con
 e quindi la serie risulta convergente,
 \begin{equation*}
 \begin{split}\sum_{n=1}^{\infty} \frac{1}{n(n+1)} = 1 - \lim_{n \rightarrow \infty} \frac{1}{n+1} = 1 \ .\end{split}
-\end{equation*}\subsubsection*{\protect\(e\ \protect\) di Eulero o di Nepero, \protect\(\ e := \sum_{n=0}^{\infty} \frac{1}{n!}\protect\).}
+\end{equation*}\phantomsection\label{\detokenize{ch/series:math-hs-series-e-euler}}\subsubsection*{\protect\(e\ \protect\) di Eulero o di Nepero, \protect\(\ e := \sum_{n=0}^{\infty} \frac{1}{n!}\protect\).}
 
 \sphinxAtStartPar
 La serie
@@ -4048,8 +4082,8 @@ In particolare, usando la serie geometrica con \(a = \frac{1}{2}\),
 e confrontandola termine a termine con la serie di \(e\),
 \begin{equation*}
 \begin{split}\begin{aligned}
-  \sum_{n=0}^{+\infty} \left(\frac{1}{2} \right)^n = & 1 + \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \frac{1}{16} + \dots \\
-  e = \sum_{n=0}^{+\infty} \frac{1}{n!} = 1 + & 1 + \frac{1}{2} + \underbrace{\frac{1}{3!}}_{<\frac{1}{4}} + \underbrace{\frac{1}{4!}}_{< \frac{1}{8}} + \underbrace{\frac{1}{5!}}_{< \frac{1}{16}} + \dots <
+  2  = \sum_{n=0}^{+\infty} \left(\frac{1}{2} \right)^n = & 1 + \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \frac{1}{16} + \dots \\
+  e := \sum_{n=0}^{+\infty} \frac{1}{n!} = 1 + & 1 + \frac{1}{2} + \underbrace{\frac{1}{3!}}_{<\frac{1}{4}} + \underbrace{\frac{1}{4!}}_{< \frac{1}{8}} + \underbrace{\frac{1}{5!}}_{< \frac{1}{16}} + \dots <
     1 + \sum_{n=0}^{+\infty} \left( \frac{1}{2} \right)^n = 3
 \end{aligned}\end{split}
 \end{equation*}
@@ -4060,17 +4094,73 @@ si può trovare la relazione \(e < 3\).
 \sphinxstylestrong{todo} \sphinxstyleemphasis{come trovare stime di maggiorazione più restrittive? come trovare approssimazioni di \(e\)? Cenni al calcolo del valore numerico? Sì, ma anche no…}
 
 
+\section{Successioni di funzioni}
+\label{\detokenize{ch/series:successioni-di-funzioni}}
+\sphinxAtStartPar
+\sphinxstylestrong{Definizione.} Una successione di funzioni tra l’insieme \(X\) e l’insieme \(Y\), è una funzione che associa ai numeri interi \(n \in \mathbb{N}\) una funzione \(f_n: X \rightarrow Y\).
+
+\sphinxAtStartPar
+\sphinxstylestrong{Limite di una successione di funzioni.} Limite “punto per punto”. L’esistenza di un limite (finito?) punto per punto definisice la \sphinxstylestrong{convergenza puntuale}.
+
+
+\subsection{Convergenza}
+\label{\detokenize{ch/series:convergenza}}
+
+\subsubsection{Convergenza puntuale}
+\label{\detokenize{ch/series:convergenza-puntuale}}
+
+\subsubsection{Convergenza uniforme}
+\label{\detokenize{ch/series:convergenza-uniforme}}
+\sphinxAtStartPar
+Sia \(\{ f_n \}_{n \in \mathbb{N}}\) una successione di funzioni \(f_n:  X \rightarrow \mathbb{R}\). La serie converge uniformemente alla funzione \(f\) se per ogni \(\varepsilon > 0\) esiste \(N \in \mathbb{N}\) tale che
+
+\sphinxAtStartPar
+\(|f_n(x) - f(x)| < e \ , \qquad \forall x \in X \ ,\)
+
+\sphinxAtStartPar
+per tutti gli \(n > N\).
+
+
+\section{\sphinxstylestrong{Proprietà.}}
+\label{\detokenize{ch/series:id2}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+…
+
+\item {} 
+\sphinxAtStartPar
+La convergenza uniforme permette di invertire l’ordine delle operazioni di limite, derivata e integrale con la sommatoria nelle serie di funzioni:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+data una successione di funzioni derivatbili \(f_n(x)\), che convergono uniformemente a \(f(x)\) e le cui derivate convergono uniformemente a \(g(x)\), allora
+\begin{equation*}
+\begin{split}f'(x) = g(x)\end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+…
+
+\end{itemize}
+
+\item {} 
+\sphinxAtStartPar
+…
+
+\end{itemize}
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo} discutere differenze tra i due tipi di convergenza; discutere i limiti della convergenza puntuale; discutere le proprietà
+
+
+\section{Serie di funzioni}
+\label{\detokenize{ch/series:serie-di-funzioni}}
+
 \section{Successioni numeriche complesse}
 \label{\detokenize{ch/series:successioni-numeriche-complesse}}
 
 \section{Serie numeriche complesse}
 \label{\detokenize{ch/series:serie-numeriche-complesse}}
-
-\section{Successioni di funzioni}
-\label{\detokenize{ch/series:successioni-di-funzioni}}
-
-\section{Serie di funzioni}
-\label{\detokenize{ch/series:serie-di-funzioni}}
 \sphinxstepscope
 
 
@@ -4302,44 +4392,74 @@ Nel campo reale, per ogni \(b > 0\),
 \begin{split}a = b^c \qquad \leftrightarrow \qquad c = \log_{b} a \end{split}
 \end{equation*}
 
-\section{Funzione esponenziale e logaritmo}
-\label{\detokenize{ch/exponential_logarithm:funzione-esponenziale-e-logaritmo}}
+\section{Funzione esponenziale e logaritmo di variabile reale}
+\label{\detokenize{ch/exponential_logarithm:funzione-esponenziale-e-logaritmo-di-variabile-reale}}
 
-\section{\protect\(e\protect\) di Nepero, \protect\(e^x\protect\) e logaritmo naturale}
-\label{\detokenize{ch/exponential_logarithm:e-di-nepero-e-x-e-logaritmo-naturale}}
-
-\subsection{Definizione di \protect\(e^x\protect\)}
-\label{\detokenize{ch/exponential_logarithm:definizione-di-e-x}}
+\subsection{Funzione esponenziale, \protect\(e^x\protect\)}
+\label{\detokenize{ch/exponential_logarithm:funzione-esponenziale-e-x}}
 \sphinxAtStartPar
-\sphinxstylestrong{Esponenziale reale.} Per ogni \(x \in \mathbb{R}\), si definisce la funzione \(e^x\) come
+\sphinxstylestrong{Definizione.} Per ogni \(x \in \mathbb{R}\), è possibile dare due definizioni equivalenti della \(e^x\), che può essere intesa come l’elevamento a potenza della {\hyperref[\detokenize{ch/series:math-hs-series-e-euler}]{\sphinxcrossref{\DUrole{std,std-ref}{\(e\) di Eulero}}}} con la variabile indipendente \(x\) come esponente.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+definizione come limite della successione di funzioni \(\left( 1 + \frac{x}{n} \right)^n\)
+
+\end{itemize}
 \begin{equation*}
-\begin{split}\begin{aligned}
-e^x & := \lim_{n \rightarrow \infty} \left( 1 + \frac{x}{n}\right)^n  = \\
-    & := \lim_{n \rightarrow \infty} \sum_{k=0}^{n} \frac{x^n}{n!} \\
-\end{aligned}\end{split}
+\begin{split}
+  e^x := \lim_{n \rightarrow \infty} \left( 1 + \frac{x}{n}\right)^n
+\end{split}
+\end{equation*}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+definizione come limite della serie di funzioni con elementi \(\frac{x^n}{n!}\),
+
+\end{itemize}
+\begin{equation*}
+\begin{split}
+  e^x := \lim_{n \rightarrow \infty} \sum_{k=0}^{n} \frac{x^n}{n!} \\
+\end{split}
 \end{equation*}
 \sphinxAtStartPar
 Si può dimostrare che
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
-le due definizioni sono equivalenti, e la serie è convergente per ogni \(x \in \mathbb{R}\) finito
+la {\hyperref[\detokenize{ch/exponential_logarithm-proof:math-hs-exp-log-proof-convergence}]{\sphinxcrossref{\DUrole{std,std-ref}{serie è convergente}}}} per ogni \(x \in \mathbb{R}\) finito
 
 \item {} 
 \sphinxAtStartPar
-la funzione \(e^x\) giustifica questa notazione poiché soddisfa le proprietà delle potenze, come
+le due {\hyperref[\detokenize{ch/exponential_logarithm-proof:math-hs-exp-log-proof-equivalence}]{\sphinxcrossref{\DUrole{std,std-ref}{definizioni sono equivalenti}}}}
+
+\item {} 
+\sphinxAtStartPar
+le definizioni della funzione \(e^x\) giustificano la notazione \(e^x\) questa funznione poiché soddisfa le {\hyperref[\detokenize{ch/exponential_logarithm-proof:math-hs-exp-log-proof-powers}]{\sphinxcrossref{\DUrole{std,std-ref}{proprietà delle potenze (\sphinxstyleemphasis{con stessa base, \(e\)})}}}}:
 \begin{equation*}
-\begin{split}e^{x+y} = e^x \, e^y \ .\end{split}
+\begin{split}\begin{aligned}
+    e^0 & = 1 \\
+    e^1 & = e \\
+  e^{x+y} & = e^x \, e^y \ .
+  \end{aligned}\end{split}
 \end{equation*}
 \item {} 
 \sphinxAtStartPar
-la base della potenza, \(e\), viene definita \(e\) \sphinxstylestrong{di Nepero}, ed è un numero reale irrazionale, il cui valore approssimato è \(e \approx 2.718281828\text{"e poi la magia finisce"}\): nonostante le prime cifre decimali facciano pensare che possa essere periodico, se si scrivono le cifre successive, l’approssimazione diventa \(e \approx 2.71828182845904523\dots\)
-
+la derivata della funzione \(e^x\) è \(e^x\), ed è una delle {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-fund}]{\sphinxcrossref{\DUrole{std,std-ref}{derivate fondamentali}}}} del {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives}]{\sphinxcrossref{\DUrole{std,std-ref}{calcolo differenziale}}}},
+\begin{equation*}
+\begin{split}\frac{d}{dx} e^x = e^x \ .\end{split}
+\end{equation*}
 \end{itemize}
+
+
 
 \sphinxAtStartPar
 \sphinxstylestrong{Esponenziale complesso.} Si può estendere la definizione di esponenziale anche a un numero complesso, \(z \in \mathbb{C}\)
 \sphinxstylestrong{todo}
+
+
+\subsection{Funzione logaritmo naturale, \protect\(\text{ln} \, x\protect\)}
+\label{\detokenize{ch/exponential_logarithm:funzione-logaritmo-naturale-text-ln-x}}
+\sphinxAtStartPar
+\sphinxstylestrong{Definizione.} Poiché la funzione \(e^x\) è monotona crescente, \(e^x: \mathbb{R} \rightarrow (0, +\infty)\), esiste la sua {\hyperref[\detokenize{ch/precalculus/real-functions:math-hs-precalculus-real-functions-inverse}]{\sphinxcrossref{\DUrole{std,std-ref}{funzione inversa}}}} con dominio \((0,+\infty)\) e immagine \(\mathbb{R}\). La funzione inversa della funzione esponenziale con base \(e\) viene definita \sphinxstylestrong{logaritmo naturale}.
 
 \sphinxstepscope
 
@@ -4347,11 +4467,63 @@ la base della potenza, \(e\), viene definita \(e\) \sphinxstylestrong{di Nepero}
 \section{Esponenziale e logaritmo \sphinxhyphen{} dimostrazioni}
 \label{\detokenize{ch/exponential_logarithm-proof:esponenziale-e-logaritmo-dimostrazioni}}\label{\detokenize{ch/exponential_logarithm-proof:math-hs-exp-log-proof}}\label{\detokenize{ch/exponential_logarithm-proof::doc}}
 
+\subsection{Convergenza della serie di funzioni \protect\(\sum_{n=0}^{\infty} \frac{x^n}{n!}\protect\) in ogni intervallo limitato}
+\label{\detokenize{ch/exponential_logarithm-proof:convergenza-della-serie-di-funzioni-sum-n-0-infty-frac-x-n-n-in-ogni-intervallo-limitato}}\label{\detokenize{ch/exponential_logarithm-proof:math-hs-exp-log-proof-convergence}}
+\sphinxAtStartPar
+Per dimostrare la convergenza uniforme di \(\sum_{k=0}^{\infty} \frac{x^k}{k!}\) a \(e^x\) in ogni intervallo limitato \(|x| < M\), è richiesto di dimostrare che per ogni \(\varepsilon > 0\) esiste \(N \in \mathbb{N}\) tale che
+\begin{equation*}
+\begin{split}|e^x - S_n(x)| < \varepsilon \ , \qquad \forall |x| < M \end{split}
+\end{equation*}
+\sphinxAtStartPar
+per tutti gli \(n > N\). Bisogna quindi dimostrare che
+\begin{equation*}
+\begin{split}\left| \sum_{k=n+1}^{\infty} \frac{x^k}{k!} \right| < \varepsilon \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Definendo \(\tilde{M} = \max\{ 1, M \}\)
+\begin{equation*}
+\begin{split}\left| \sum_{k=n+1}^{\infty} \frac{x^k}{k!} \right| < \sum_{k=n+1}^{\infty} \frac{\tilde{M}^k}{k!}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e scegliendo \(k > 2 \tilde{M}\), in maniera da poter scrivere
+\begin{equation*}
+\begin{split}\frac{\tilde{M}^k}{k!} = \frac{\tilde{M}^{2 \tilde{M}}}{( 2 \tilde{M})!} \frac{\tilde{M}}{2\tilde{M}+1} \dots \frac{\tilde{M}}{k} <  \frac{\tilde{M}^{2 \tilde{M}}}{( 2 \tilde{M})!} 2^{-(k - \tilde{M})} = \frac{(2 \tilde{M})^{2 \tilde{M}}}{(2 \tilde{M})!} 2^{-k}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e quindi
+\begin{equation*}
+\begin{split}\sum_{k=n+1}^{\infty} \frac{\tilde{M}}{k!} < \sum_{k=n+1}^{\infty} \frac{(2 \tilde{M})^{2 \tilde{M}}}{(2\tilde{M})!} 2^{-k} =  \frac{(2 \tilde{M})^{2 \tilde{M}}}{(2\tilde{M})!} 2^{-n}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+avendo usato \(\sum_{k=n+1}^{\infty} 2^{-k} = 2^{-n-1} \sum_{k=0}^{\infty} 2^{-k} = 2^{-n-1} \cdot 2 = 2^{-n}\).
+Scegliendo \(N > \log_2 \left( \frac{1}{\varepsilon} \frac{(2\tilde{M})^{2 \tilde{M}}}{(2 \tilde{M})!)} \right)\), per ogni \(n > N\) si ha
+\begin{equation*}
+\begin{split}\left| \sum_{k=n+1}^{\infty} \frac{x^k}{k!} \right| <  \frac{(2 \tilde{M})^{2 \tilde{M}}}{(2\tilde{M})!} 2^{-n} <  \frac{(2 \tilde{M})^{2 \tilde{M}}}{(2\tilde{M})!} 2^{-N} < \varepsilon \ .\end{split}
+\end{equation*}
+
+
+
 \subsection{Equivalenza delle due definizioni}
-\label{\detokenize{ch/exponential_logarithm-proof:equivalenza-delle-due-definizioni}}
+\label{\detokenize{ch/exponential_logarithm-proof:equivalenza-delle-due-definizioni}}\label{\detokenize{ch/exponential_logarithm-proof:math-hs-exp-log-proof-equivalence}}
+\sphinxAtStartPar
+\sphinxstylestrong{todo}
+
 
 \subsection{Giustificazione della notazione \protect\(\ e^x\protect\)}
-\label{\detokenize{ch/exponential_logarithm-proof:giustificazione-della-notazione-e-x}}\begin{equation*}
+\label{\detokenize{ch/exponential_logarithm-proof:giustificazione-della-notazione-e-x}}\label{\detokenize{ch/exponential_logarithm-proof:math-hs-exp-log-proof-powers}}
+\sphinxAtStartPar
+Per evitare la forma indeterminata nel termine \(0^0\), si calcola qui il limite per \(x \rightarrow 0\) (\sphinxstylestrong{todo} \sphinxstyleemphasis{motivare la validità di questa operazione/interpretazione della funzione \(e^x\)})
+\begin{equation*}
+\begin{split}e^0 := \lim_{x \rightarrow 0} e^x = \lim_{x \rightarrow 0} \sum_{n = 0}^{\infty} \frac{x^n}{n!} = 1 + \lim_{x \rightarrow 0} \sum_{n=1}^{\infty} \frac{x^n}{n!} = 1 \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Ricordando la definizione della \(e\) di Eulero, è immediato verificare che il valore della serie di funzioni per \(x = 1\) coincide con il valore di \(e\)
+\begin{equation*}
+\begin{split}e^1 = \sum_{n=0}^{\infty} \frac{x^n}{n!} \bigg|_{x=1} = \sum_{n=0}^{\infty} \frac{1}{n!} = e \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+La serie che definisce la esponenziale soddisfa la proprietà delle potenze \(e^x \, e^y = e^{x+y}\),
+\begin{equation*}
 \begin{split}\begin{aligned}
   e^x \, e^y 
   & = \sum_{n=0}^{\infty} \frac{x^n}{n!} \sum_{m = 0}^{\infty} \frac{y^m}{m!} = \\

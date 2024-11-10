@@ -457,7 +457,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#successioni-a-valori-reali">Successioni a valori reali</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#successioni-a-di-numeri-reali">Successioni a di numeri reali</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#proprieta">Proprietà</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni-con-successioni">Operazioni con successioni</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#confronto-tra-successioni">Confronto tra successioni</a></li>
@@ -473,10 +473,18 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">Esempi</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#successioni-di-funzioni">Successioni di funzioni</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#convergenza">Convergenza</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#convergenza-puntuale">Convergenza puntuale</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#convergenza-uniforme">Convergenza uniforme</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"><strong>Proprietà.</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#serie-di-funzioni">Serie di funzioni</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#successioni-numeriche-complesse">Successioni numeriche complesse</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#serie-numeriche-complesse">Serie numeriche complesse</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#successioni-di-funzioni">Successioni di funzioni</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#serie-di-funzioni">Serie di funzioni</a></li>
 </ul>
             </nav>
         </div>
@@ -500,7 +508,7 @@ document.write(`
 <p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-calendar" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path></svg></span>Nov 10, 2024</p>
 </div>
 <div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
-<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>3 min read</p>
+<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>4 min read</p>
 </div>
 </div>
 </div>
@@ -515,9 +523,9 @@ document.write(`
 <li><p>serie numeriche</p></li>
 <li><p>serie di funzioni</p></li>
 </ul>
-<div class="section" id="successioni-a-valori-reali">
-<h2>Successioni a valori reali<a class="headerlink" href="#successioni-a-valori-reali" title="Permalink to this heading">#</a></h2>
-<p><strong>Definizione.</strong> Una successione a valori reali è una funzione <span class="math notranslate nohighlight">\(f: \mathbb{N} \rightarrow \mathbb{R}\)</span>, che associa ai numeri interi <span class="math notranslate nohighlight">\(n \in \mathbb{N}\)</span> un numero reale <span class="math notranslate nohighlight">\(a_n = f(n)\)</span>.</p>
+<div class="section" id="successioni-a-di-numeri-reali">
+<h2>Successioni a di numeri reali<a class="headerlink" href="#successioni-a-di-numeri-reali" title="Permalink to this heading">#</a></h2>
+<p><strong>Definizione.</strong> Una successione di numeri reali è una funzione <span class="math notranslate nohighlight">\(f: \mathbb{N} \rightarrow \mathbb{R}\)</span>, che associa ai numeri interi <span class="math notranslate nohighlight">\(n \in \mathbb{N}\)</span> un numero reale <span class="math notranslate nohighlight">\(a_n = f(n)\)</span>.</p>
 <p><strong>Limite di una successione.</strong> Una successione <span class="math notranslate nohighlight">\(\{ a_n \}\)</span> ha limite <span class="math notranslate nohighlight">\(\ell\)</span> se per ogni intorno <span class="math notranslate nohighlight">\(U_{\ell}\)</span> di <span class="math notranslate nohighlight">\(\ell\)</span> esiste un numero naturale <span class="math notranslate nohighlight">\(N \in \mathbb{N}\)</span> tale che</p>
 <div class="math notranslate nohighlight">
 \[a_n \in U_{\ell} \ , \qquad \forall n &gt; N \ .\]</div>
@@ -567,7 +575,12 @@ A seconda del limite della successione delle somme parziali <span class="math no
 </ul>
 <div class="section" id="id1">
 <h3>Criteri di convergenza<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
-<p>Una serie può essere con</p>
+<p>Una serie può essere:</p>
+<ul class="simple">
+<li><p>convergente</p></li>
+<li><p>divergente</p></li>
+<li><p>indeterminata</p></li>
+</ul>
 <div class="section" id="serie-a-termini-concordi">
 <h4>Serie a termini concordi<a class="headerlink" href="#serie-a-termini-concordi" title="Permalink to this heading">#</a></h4>
 <p>Si discutono qui le serie a termini non negativi. E’ facile generalizzare i criteri alle serie a termini non positivi.</p>
@@ -669,7 +682,7 @@ Serie di Mengoli, <span class="math notranslate nohighlight">\(\ \sum_{n=1}^{\in
 <div class="math notranslate nohighlight">
 \[\sum_{n=1}^{\infty} \frac{1}{n(n+1)} = 1 - \lim_{n \rightarrow \infty} \frac{1}{n+1} = 1 \ .\]</div>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" id="math-hs-series-e-euler">
 <summary class="sd-summary-title sd-card-header">
 <span class="math notranslate nohighlight">\(e\ \)</span> di Eulero o di Nepero, <span class="math notranslate nohighlight">\(\ e := \sum_{n=0}^{\infty} \frac{1}{n!}\)</span>.<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
@@ -693,8 +706,8 @@ Serie di Mengoli, <span class="math notranslate nohighlight">\(\ \sum_{n=1}^{\in
 <p class="sd-card-text">e confrontandola termine a termine con la serie di <span class="math notranslate nohighlight">\(e\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
-  \sum_{n=0}^{+\infty} \left(\frac{1}{2} \right)^n = &amp; 1 + \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \frac{1}{16} + \dots \\
-  e = \sum_{n=0}^{+\infty} \frac{1}{n!} = 1 + &amp; 1 + \frac{1}{2} + \underbrace{\frac{1}{3!}}_{&lt;\frac{1}{4}} + \underbrace{\frac{1}{4!}}_{&lt; \frac{1}{8}} + \underbrace{\frac{1}{5!}}_{&lt; \frac{1}{16}} + \dots &lt;
+  2  = \sum_{n=0}^{+\infty} \left(\frac{1}{2} \right)^n = &amp; 1 + \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \frac{1}{16} + \dots \\
+  e := \sum_{n=0}^{+\infty} \frac{1}{n!} = 1 + &amp; 1 + \frac{1}{2} + \underbrace{\frac{1}{3!}}_{&lt;\frac{1}{4}} + \underbrace{\frac{1}{4!}}_{&lt; \frac{1}{8}} + \underbrace{\frac{1}{5!}}_{&lt; \frac{1}{16}} + \dots &lt;
     1 + \sum_{n=0}^{+\infty} \left( \frac{1}{2} \right)^n = 3
 \end{aligned}\end{split}\]</div>
 <p class="sd-card-text">si può trovare la relazione <span class="math notranslate nohighlight">\(e &lt; 3\)</span>.</p>
@@ -702,17 +715,48 @@ Serie di Mengoli, <span class="math notranslate nohighlight">\(\ \sum_{n=1}^{\in
 </div>
 </details></div>
 </div>
+<div class="section" id="successioni-di-funzioni">
+<h2>Successioni di funzioni<a class="headerlink" href="#successioni-di-funzioni" title="Permalink to this heading">#</a></h2>
+<p><strong>Definizione.</strong> Una successione di funzioni tra l’insieme <span class="math notranslate nohighlight">\(X\)</span> e l’insieme <span class="math notranslate nohighlight">\(Y\)</span>, è una funzione che associa ai numeri interi <span class="math notranslate nohighlight">\(n \in \mathbb{N}\)</span> una funzione <span class="math notranslate nohighlight">\(f_n: X \rightarrow Y\)</span>.</p>
+<p><strong>Limite di una successione di funzioni.</strong> Limite “punto per punto”. L’esistenza di un limite (finito?) punto per punto definisice la <strong>convergenza puntuale</strong>.</p>
+<div class="section" id="convergenza">
+<h3>Convergenza<a class="headerlink" href="#convergenza" title="Permalink to this heading">#</a></h3>
+<div class="section" id="convergenza-puntuale">
+<h4>Convergenza puntuale<a class="headerlink" href="#convergenza-puntuale" title="Permalink to this heading">#</a></h4>
+</div>
+<div class="section" id="convergenza-uniforme">
+<h4>Convergenza uniforme<a class="headerlink" href="#convergenza-uniforme" title="Permalink to this heading">#</a></h4>
+<p>Sia <span class="math notranslate nohighlight">\(\{ f_n \}_{n \in \mathbb{N}}\)</span> una successione di funzioni <span class="math notranslate nohighlight">\(f_n:  X \rightarrow \mathbb{R}\)</span>. La serie converge uniformemente alla funzione <span class="math notranslate nohighlight">\(f\)</span> se per ogni <span class="math notranslate nohighlight">\(\varepsilon &gt; 0\)</span> esiste <span class="math notranslate nohighlight">\(N \in \mathbb{N}\)</span> tale che</p>
+<p><span class="math notranslate nohighlight">\(|f_n(x) - f(x)| &lt; e \ , \qquad \forall x \in X \ ,\)</span></p>
+<p>per tutti gli <span class="math notranslate nohighlight">\(n &gt; N\)</span>.</p>
+</div>
+</div>
+</div>
+<div class="section" id="id2">
+<h2><strong>Proprietà.</strong><a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<ul>
+<li><p>…</p></li>
+<li><p>La convergenza uniforme permette di invertire l’ordine delle operazioni di limite, derivata e integrale con la sommatoria nelle serie di funzioni:</p>
+<ul>
+<li><p>data una successione di funzioni derivatbili <span class="math notranslate nohighlight">\(f_n(x)\)</span>, che convergono uniformemente a <span class="math notranslate nohighlight">\(f(x)\)</span> e le cui derivate convergono uniformemente a <span class="math notranslate nohighlight">\(g(x)\)</span>, allora</p>
+<div class="math notranslate nohighlight">
+\[f'(x) = g(x)\]</div>
+</li>
+<li><p>…</p></li>
+</ul>
+</li>
+<li><p>…</p></li>
+</ul>
+<p><strong>todo</strong> discutere differenze tra i due tipi di convergenza; discutere i limiti della convergenza puntuale; discutere le proprietà</p>
+</div>
+<div class="section" id="serie-di-funzioni">
+<h2>Serie di funzioni<a class="headerlink" href="#serie-di-funzioni" title="Permalink to this heading">#</a></h2>
+</div>
 <div class="section" id="successioni-numeriche-complesse">
 <h2>Successioni numeriche complesse<a class="headerlink" href="#successioni-numeriche-complesse" title="Permalink to this heading">#</a></h2>
 </div>
 <div class="section" id="serie-numeriche-complesse">
 <h2>Serie numeriche complesse<a class="headerlink" href="#serie-numeriche-complesse" title="Permalink to this heading">#</a></h2>
-</div>
-<div class="section" id="successioni-di-funzioni">
-<h2>Successioni di funzioni<a class="headerlink" href="#successioni-di-funzioni" title="Permalink to this heading">#</a></h2>
-</div>
-<div class="section" id="serie-di-funzioni">
-<h2>Serie di funzioni<a class="headerlink" href="#serie-di-funzioni" title="Permalink to this heading">#</a></h2>
 </div>
 </div>
 
@@ -779,7 +823,7 @@ Serie di Mengoli, <span class="math notranslate nohighlight">\(\ \sum_{n=1}^{\in
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#successioni-a-valori-reali">Successioni a valori reali</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#successioni-a-di-numeri-reali">Successioni a di numeri reali</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#proprieta">Proprietà</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni-con-successioni">Operazioni con successioni</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#confronto-tra-successioni">Confronto tra successioni</a></li>
@@ -795,10 +839,18 @@ Serie di Mengoli, <span class="math notranslate nohighlight">\(\ \sum_{n=1}^{\in
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">Esempi</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#successioni-di-funzioni">Successioni di funzioni</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#convergenza">Convergenza</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#convergenza-puntuale">Convergenza puntuale</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#convergenza-uniforme">Convergenza uniforme</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"><strong>Proprietà.</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#serie-di-funzioni">Serie di funzioni</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#successioni-numeriche-complesse">Successioni numeriche complesse</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#serie-numeriche-complesse">Serie numeriche complesse</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#successioni-di-funzioni">Successioni di funzioni</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#serie-di-funzioni">Serie di funzioni</a></li>
 </ul>
   </nav></div>
 
