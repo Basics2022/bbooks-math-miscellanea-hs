@@ -34,7 +34,6 @@
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
     <link rel="stylesheet" type="text/css" href="../_static/style.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
@@ -224,6 +223,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Precalcolo</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="precalculus.html">Introduzione al pre-calcolo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="precalculus/real-functions.html">Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\(f: \mathbb{R} \rightarrow \mathbb{R}\)</span></a></li>
 <li class="toctree-l1"><a class="reference internal" href="precalculus/polynomials.html">Polinomi</a></li>
 <li class="toctree-l1"><a class="reference internal" href="series.html">Serie e successioni</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Trigonometria</a></li>
@@ -237,8 +237,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="calculus.html">Introduzione al calcolo</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="infinitesimal_calculus.html">Calcolo infinitesimale</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="infinitesimal_calculus/real_functions.html">Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\( f: \mathbb{R} \rightarrow \mathbb{R} \)</span></a></li>
-<li class="toctree-l2"><a class="reference internal" href="infinitesimal_calculus/limits.html">Limiti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="infinitesimal_calculus/analysis.html">Introduzione all’analisi</a></li>
 <li class="toctree-l2"><a class="reference internal" href="infinitesimal_calculus/derivatives.html">Derivate</a></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="infinitesimal_calculus/integrals.html">Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="infinitesimal_calculus/integrals-table.html">Tavola degli integrali indefiniti più comuni</a></li>
@@ -458,9 +457,13 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prime-definizioni-e-relazioni">Prime definizioni e relazioni</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#proprieta">Proprietà</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#angoli-particolari">Angoli particolari</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definizione-delle-funzioni-trigonometriche-e-relazione-fondamentale">Definizione delle funzioni trigonometriche e relazione fondamentale</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#seno-e-coseno">Seno e coseno</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relazione-fondamentale-della-trignometria">Relazione fondamentale della trignometria</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#altre-funzioni-trigonometriche">Altre funzioni trigonometriche</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#angoli-particolari-e-proprieta">Angoli particolari e proprietà</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formule-di-somma-e-sottrazione">Formule di somma e sottrazione</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#werner">Werner</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prostaferesi">Prostaferesi</a></li>
@@ -477,8 +480,10 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="trigonometria">
 <span id="math-hs-trigonometry"></span><h1>Trigonometria<a class="headerlink" href="#trigonometria" title="Permalink to this heading">#</a></h1>
-<div class="section" id="prime-definizioni-e-relazioni">
-<h2>Prime definizioni e relazioni<a class="headerlink" href="#prime-definizioni-e-relazioni" title="Permalink to this heading">#</a></h2>
+<div class="section" id="definizione-delle-funzioni-trigonometriche-e-relazione-fondamentale">
+<h2>Definizione delle funzioni trigonometriche e relazione fondamentale<a class="headerlink" href="#definizione-delle-funzioni-trigonometriche-e-relazione-fondamentale" title="Permalink to this heading">#</a></h2>
+<div class="section" id="seno-e-coseno">
+<h3>Seno e coseno<a class="headerlink" href="#seno-e-coseno" title="Permalink to this heading">#</a></h3>
 <p>Facendo riferimento a una circonferenza di raggio <span class="math notranslate nohighlight">\(R\)</span>, e scegliendo una semiretta di riferimento come origine per la misura degli angoli, positivi in senso orario, si possono definire le funzioni trigonometriche</p>
 <div class="math notranslate nohighlight">
 \[\sin \theta := \frac{\overline{PH}}{R}\]</div>
@@ -487,31 +492,32 @@ document.write(`
 <div class="figure align-default">
 <img alt="../_images/trigonometry-def.png" src="../_images/trigonometry-def.png" />
 </div>
-<!-- :align: center -->
-<!--  ![]()  -->
-<p>Usando il teorema di Pitagora è immediato dimostrare la relazione fondamentale tra le funzioni trigonometriche</p>
+</div>
+<div class="section" id="relazione-fondamentale-della-trignometria">
+<h3>Relazione fondamentale della trignometria<a class="headerlink" href="#relazione-fondamentale-della-trignometria" title="Permalink to this heading">#</a></h3>
+<p>Usando il teorema di Pitagora è immediato dimostrare la <strong>relazione fondamentale della trigonometria</strong> tra le funzioni seno e coseno di un angolo,</p>
 <div class="math notranslate nohighlight">
 \[\sin^2 \theta + \cos^2 \theta = 1 \ .\]</div>
 <p><strong>Nota sulla notazione.</strong> Nell’uso delle funzioni trigonometriche, <span class="math notranslate nohighlight">\(\sin^2 x\)</span> indica il quadrato della funzione e non la composizione della funzione con se stessa,</p>
 <div class="math notranslate nohighlight">
 \[\sin^2 x = (\sin x)^2 \neq \sin( \sin x) \ .\]</div>
-<p><strong>Tangente.</strong> <span class="math notranslate nohighlight">\(\tan \theta := \dfrac{\sin \theta}{\cos \theta} = \frac{\overline{PH}}{\overline{OH}} \ .\)</span></p>
-<p><em>Cosecante, secante, cotangente.</em> Definizioni al limite dell’inutile e dannoso…</p>
 </div>
-<div class="section" id="proprieta">
-<h2>Proprietà<a class="headerlink" href="#proprieta" title="Permalink to this heading">#</a></h2>
+<div class="section" id="altre-funzioni-trigonometriche">
+<h3>Altre funzioni trigonometriche<a class="headerlink" href="#altre-funzioni-trigonometriche" title="Permalink to this heading">#</a></h3>
+<p><strong>Tangente.</strong> <span class="math notranslate nohighlight">\(\tan \theta := \dfrac{\sin \theta}{\cos \theta} = \dfrac{\overline{PH}}{\overline{OH}} \ .\)</span></p>
+<p><em>Cosecante, secante, cotangente.</em> Definizioni al limite tra l’inutile e il dannoso,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
-  \sin\left(-x\right)              &amp; = - \sin x \\ 
-  \cos\left(-x\right)              &amp; =   \cos x \\ 
-  \sin\left(x+\frac{\pi}{2}\right) &amp; =   \cos x \\  
-  \cos\left(x+\frac{\pi}{2}\right) &amp; = - \sin x \\  
-  \sin(x + \pi)                    &amp; = - \sin x \\
-  \cos(x + \pi)                    &amp; = - \cos x \\
+  \text{cosec} \ \theta &amp; := \frac{1}{\sin \theta} \\
+  \text{sec  } \ \theta &amp; := \frac{1}{\cos \theta} \\
+  \text{cotan} \ \theta &amp; := \frac{1}{\tan \theta} \\
 \end{aligned}\end{split}\]</div>
 </div>
-<div class="section" id="angoli-particolari">
-<h2>Angoli particolari<a class="headerlink" href="#angoli-particolari" title="Permalink to this heading">#</a></h2>
+</div>
+<div class="section" id="angoli-particolari-e-proprieta">
+<h2>Angoli particolari e proprietà<a class="headerlink" href="#angoli-particolari-e-proprieta" title="Permalink to this heading">#</a></h2>
+<!-- ### Angoli particolari -->
+<p>In tabella vengono riportati i valori del seno, coseno e tangente di alcuni angoli particolari <span class="math notranslate nohighlight">\(\theta \in \left[0, \frac{\pi}{2} \right]\)</span></p>
 <table class="table">
 <colgroup>
 <col style="width: 25%" />
@@ -554,6 +560,13 @@ document.write(`
 </tr>
 </tbody>
 </table>
+<p>Con le proprietà</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \sin x &amp; = -   \sin (-x) = - \ \ \cos \left( x + \frac{\pi}{2} \right) = -   \sin( x + \pi) \\
+  \cos x &amp; = \ \ \cos (-x) = - \ \ \sin \left( x + \frac{\pi}{2} \right) = -   \cos( x + \pi) \\
+\end{aligned}\end{split}\]</div>
+<p>è possibile calcolare il valore delle funzioni trigonometriche di angoli particolari nei quattro quadranti.</p>
 <div class="figure align-default">
 <img alt="../_images/trigonometry-particular.png" src="../_images/trigonometry-particular.png" />
 </div>
@@ -733,9 +746,13 @@ Dimostrazione di <span class="math notranslate nohighlight">\(\ \cos p + \cos q 
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prime-definizioni-e-relazioni">Prime definizioni e relazioni</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#proprieta">Proprietà</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#angoli-particolari">Angoli particolari</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definizione-delle-funzioni-trigonometriche-e-relazione-fondamentale">Definizione delle funzioni trigonometriche e relazione fondamentale</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#seno-e-coseno">Seno e coseno</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relazione-fondamentale-della-trignometria">Relazione fondamentale della trignometria</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#altre-funzioni-trigonometriche">Altre funzioni trigonometriche</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#angoli-particolari-e-proprieta">Angoli particolari e proprietà</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formule-di-somma-e-sottrazione">Formule di somma e sottrazione</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#werner">Werner</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prostaferesi">Prostaferesi</a></li>

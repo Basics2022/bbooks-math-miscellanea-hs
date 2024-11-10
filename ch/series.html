@@ -34,7 +34,6 @@
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
     <link rel="stylesheet" type="text/css" href="../_static/style.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
@@ -224,6 +223,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Precalcolo</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="precalculus.html">Introduzione al pre-calcolo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="precalculus/real-functions.html">Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\(f: \mathbb{R} \rightarrow \mathbb{R}\)</span></a></li>
 <li class="toctree-l1"><a class="reference internal" href="precalculus/polynomials.html">Polinomi</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Serie e successioni</a></li>
 <li class="toctree-l1"><a class="reference internal" href="trigonometry.html">Trigonometria</a></li>
@@ -237,8 +237,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="calculus.html">Introduzione al calcolo</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="infinitesimal_calculus.html">Calcolo infinitesimale</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="infinitesimal_calculus/real_functions.html">Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\( f: \mathbb{R} \rightarrow \mathbb{R} \)</span></a></li>
-<li class="toctree-l2"><a class="reference internal" href="infinitesimal_calculus/limits.html">Limiti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="infinitesimal_calculus/analysis.html">Introduzione all’analisi</a></li>
 <li class="toctree-l2"><a class="reference internal" href="infinitesimal_calculus/derivatives.html">Derivate</a></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="infinitesimal_calculus/integrals.html">Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="infinitesimal_calculus/integrals-table.html">Tavola degli integrali indefiniti più comuni</a></li>
@@ -458,16 +457,26 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#successioni-a-valori-reali">Successioni a valori reali</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#proprieta">Proprietà</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni-con-successioni">Operazioni con successioni</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#confronto-tra-successioni">Confronto tra successioni</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#criteri-di-convergenza">Criteri di convergenza</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#serie-numeriche-reali">Serie numeriche reali</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#criteri-di-convergenza">Criteri di convergenza</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Criteri di convergenza</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#serie-a-termini-concordi">Serie a termini concordi</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Serie a termini concordi</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#serie-a-termini-discordi">Serie a termini discordi</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">Esempi</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#successioni-numeriche-complesse">Successioni numeriche complesse</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#serie-numeriche-complesse">Serie numeriche complesse</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#successioni-di-funzioni">Successioni di funzioni</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#serie-di-funzioni">Serie di funzioni</a></li>
 </ul>
             </nav>
         </div>
@@ -488,10 +497,10 @@ document.write(`
 <p class="sd-p-0 sd-m-0">basics</p>
 </div>
 <div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
-<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-calendar" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path></svg></span>Nov 07, 2024</p>
+<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-calendar" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path></svg></span>Nov 10, 2024</p>
 </div>
 <div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
-<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>1 min read</p>
+<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>3 min read</p>
 </div>
 </div>
 </div>
@@ -506,27 +515,93 @@ document.write(`
 <li><p>serie numeriche</p></li>
 <li><p>serie di funzioni</p></li>
 </ul>
-<div class="section" id="serie-numeriche-reali">
-<h2>Serie numeriche reali<a class="headerlink" href="#serie-numeriche-reali" title="Permalink to this heading">#</a></h2>
-<p><strong>Carattere della serie</strong></p>
+<div class="section" id="successioni-a-valori-reali">
+<h2>Successioni a valori reali<a class="headerlink" href="#successioni-a-valori-reali" title="Permalink to this heading">#</a></h2>
+<p><strong>Definizione.</strong> Una successione a valori reali è una funzione <span class="math notranslate nohighlight">\(f: \mathbb{N} \rightarrow \mathbb{R}\)</span>, che associa ai numeri interi <span class="math notranslate nohighlight">\(n \in \mathbb{N}\)</span> un numero reale <span class="math notranslate nohighlight">\(a_n = f(n)\)</span>.</p>
+<p><strong>Limite di una successione.</strong> Una successione <span class="math notranslate nohighlight">\(\{ a_n \}\)</span> ha limite <span class="math notranslate nohighlight">\(\ell\)</span> se per ogni intorno <span class="math notranslate nohighlight">\(U_{\ell}\)</span> di <span class="math notranslate nohighlight">\(\ell\)</span> esiste un numero naturale <span class="math notranslate nohighlight">\(N \in \mathbb{N}\)</span> tale che</p>
+<div class="math notranslate nohighlight">
+\[a_n \in U_{\ell} \ , \qquad \forall n &gt; N \ .\]</div>
+<p><strong>todo</strong> <em>fare associazione con il limite finito all’infinito per funzioni</em></p>
+<p>Se il limite esiste è unico (<strong>todo</strong> <em>se <span class="math notranslate nohighlight">\(\ell \in T\)</span>, con <span class="math notranslate nohighlight">\(T\)</span> spazio di Hasudorff. Come evitare questa complicazione?</em>). A seconda del limite della successione, una successione è:</p>
+<ul class="simple">
+<li><p><strong>convergente</strong> se il limite <span class="math notranslate nohighlight">\(\ell\)</span> esiste ed è finito</p></li>
+<li><p><strong>divergente</strong> se il limite <span class="math notranslate nohighlight">\(\ell\)</span> esiste ed è infinito</p></li>
+<li><p><strong>indeterminata</strong> se il limite non esiste</p></li>
+</ul>
+<div class="section" id="proprieta">
+<h3>Proprietà<a class="headerlink" href="#proprieta" title="Permalink to this heading">#</a></h3>
+<p><strong>Limitatezza.</strong> …</p>
+<p><strong>Permanenza del segno.</strong> …</p>
+<p><strong>Valori assoluti.</strong> …</p>
+<p><strong>Succesioni monotone.</strong> Una successione monotona <span class="math notranslate nohighlight">\(\{ a_n \}\)</span> converge sempre a un limite. Il limite è l’estremo superiore se la successione è monotona crescente, o l’estremo inferiore se la successione è monotona decrescente.</p>
+<p><strong>Il limite è finito se e solo se la successione monotona è limitata.</strong></p>
+<p><em>Dimostrazione, qui o in fondo in una sezione di dimostrazioni/esercizi</em></p>
+</div>
+<div class="section" id="operazioni-con-successioni">
+<h3>Operazioni con successioni<a class="headerlink" href="#operazioni-con-successioni" title="Permalink to this heading">#</a></h3>
+<p><em>elencare operazioni, mettere dimostrazione in una sezione di dimostrazioni/esercizi, nello stile Schaum</em></p>
+</div>
+<div class="section" id="confronto-tra-successioni">
+<h3>Confronto tra successioni<a class="headerlink" href="#confronto-tra-successioni" title="Permalink to this heading">#</a></h3>
+<p><em>elencare operazioni, mettere dimostrazione in una sezione di dimostrazioni/esercizi, nello stile Schaum</em></p>
+</div>
 <div class="section" id="criteri-di-convergenza">
 <h3>Criteri di convergenza<a class="headerlink" href="#criteri-di-convergenza" title="Permalink to this heading">#</a></h3>
+<p><em>elencare operazioni, mettere dimostrazione in una sezione di dimostrazioni/esercizi, nello stile Schaum</em></p>
+</div>
+</div>
+<div class="section" id="serie-numeriche-reali">
+<h2>Serie numeriche reali<a class="headerlink" href="#serie-numeriche-reali" title="Permalink to this heading">#</a></h2>
+<p><strong>Definizione.</strong> Data una <strong>successione</strong> di elementi <span class="math notranslate nohighlight">\(\{ a_n \}\)</span>, <span class="math notranslate nohighlight">\(a_n \in \mathbb{R}\)</span>, la serie associata è la somma infinita</p>
+<div class="math notranslate nohighlight">
+\[\sum_{n=0}^{\infty} a_n \ .\]</div>
+<p>Dato ogni indice <span class="math notranslate nohighlight">\(k\)</span> della successione <span class="math notranslate nohighlight">\(\{ a_n \}\)</span>, si definisce la successione delle somme parziali <span class="math notranslate nohighlight">\(\{ S_k \}\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[S_k = \sum_{n=0}^{k} a_n \ .\]</div>
+<p><strong>Carattere della serie.</strong>
+A seconda del limite della successione delle somme parziali <span class="math notranslate nohighlight">\(\lim_{k \rightarrow \infty} S_k\)</span>, una serie è</p>
+<ul class="simple">
+<li><p><strong>convergente</strong> se il limite <span class="math notranslate nohighlight">\(L\)</span> esiste ed è finito</p></li>
+<li><p><strong>divergente</strong> se il limite <span class="math notranslate nohighlight">\(L\)</span> esiste ed è infinito</p></li>
+<li><p><strong>indeterminata</strong> se il limite non esiste</p></li>
+</ul>
+<div class="section" id="id1">
+<h3>Criteri di convergenza<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<p>Una serie può essere con</p>
 <div class="section" id="serie-a-termini-concordi">
 <h4>Serie a termini concordi<a class="headerlink" href="#serie-a-termini-concordi" title="Permalink to this heading">#</a></h4>
+<p>Si discutono qui le serie a termini non negativi. E’ facile generalizzare i criteri alle serie a termini non positivi.</p>
+<p><strong>Criterio del confronto.</strong> Date A = <span class="math notranslate nohighlight">\(\sum_n a_n\)</span>, <span class="math notranslate nohighlight">\(B =\sum_n b_n\)</span> serie a <strong>termini non negativi</strong> tali che <span class="math notranslate nohighlight">\(a_n \le b_n\)</span></p>
 <ul class="simple">
-<li><p><strong>Criterio del confronto.</strong></p></li>
-<li><p><strong>Criteri  del confronto con serie geometrica.</strong></p>
-<ul>
-<li><p>criterio della radice</p></li>
-<li><p>criterio del rapporto</p></li>
+<li><p>se <span class="math notranslate nohighlight">\(B\)</span> converge, <span class="math notranslate nohighlight">\(A\)</span> converge</p></li>
+<li><p>se <span class="math notranslate nohighlight">\(A\)</span>  diverge, <span class="math notranslate nohighlight">\(B\)</span>  diverge</p></li>
 </ul>
-</li>
-<li><p><strong>Criterio di Raabe</strong></p></li>
+<p><strong>Criterio del confronto asintotico.</strong> Date A = <span class="math notranslate nohighlight">\(\sum_n a_n\)</span>, <span class="math notranslate nohighlight">\(B =\sum_n b_n\)</span> serie a <strong>termini non negativi</strong></p>
+<ul class="simple">
+<li><p>se B è convergente e <span class="math notranslate nohighlight">\(\lim_{n \rightarrow \infty} \frac{a_n}{b_n} = \ell \in (0, +\infty)\)</span>, allora A è convergente</p></li>
+<li><p>se B è  divergente e <span class="math notranslate nohighlight">\(\lim_{n \rightarrow \infty} \frac{a_n}{b_n} &gt; 0\)</span>, allora A è  divergente</p></li>
+</ul>
+<p><strong>Criterio del confronto con serie geometrica.</strong></p>
+<p><strong>Criterio della radice - Cauchy.</strong> Data una serie a termini non negativi <span class="math notranslate nohighlight">\(\sum_{n=1}^{+\infty} a_n\)</span> per la quale esiste il limite <span class="math notranslate nohighlight">\(\lim_{n \rightarrow +\infty} {a_n}^{\frac{1}{n}} = k\)</span>, allora</p>
+<ul class="simple">
+<li><p>per <span class="math notranslate nohighlight">\(k &lt; 1\)</span> la serie converge</p></li>
+<li><p>per <span class="math notranslate nohighlight">\(k &gt; 1\)</span> la serie diverge</p></li>
+<li><p>per <span class="math notranslate nohighlight">\(k = 1\)</span> non è possibile stabilire il carattere della serie</p></li>
+</ul>
+<p><strong>Criterio del rapporto - d’Alembert.</strong> Data una serie a termini non negativi <span class="math notranslate nohighlight">\(\sum_{n=1}^{+\infty} a_n\)</span> per la quale esiste il limite <span class="math notranslate nohighlight">\(\lim_{n \rightarrow +\infty} \frac{a_{n+1}}{a_n} = k\)</span>, allora</p>
+<ul class="simple">
+<li><p>se B è convergente e <span class="math notranslate nohighlight">\(\lim_{n \rightarrow \infty} \frac{a_n}{b_n} = \ell \in (0, +\infty)\)</span>, allora A è convergente</p></li>
+<li><p>se B è  divergente e <span class="math notranslate nohighlight">\(\lim_{n \rightarrow \infty} \frac{a_n}{b_n} &gt; 0\)</span>, allora A è  divergente</p></li>
+</ul>
+<p><strong>Criterio di Raabe.</strong></p>
+<p><strong>Criterio dell’integrale.</strong></p>
+<ul class="simple">
 <li><p>…</p></li>
 </ul>
+<p><strong>Dimostrazioni</strong></p>
 </div>
-<div class="section" id="id1">
-<h4>Serie a termini concordi<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h4>
+<div class="section" id="serie-a-termini-discordi">
+<h4>Serie a termini discordi<a class="headerlink" href="#serie-a-termini-discordi" title="Permalink to this heading">#</a></h4>
 <ul class="simple">
 <li><p><strong>Criterio di convergenza assoluta.</strong></p></li>
 <li><p>…</p></li>
@@ -596,7 +671,7 @@ Serie di Mengoli, <span class="math notranslate nohighlight">\(\ \sum_{n=1}^{\in
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="math notranslate nohighlight">\(e\ \)</span> di Eulero o di Nepero, <span class="math notranslate nohighlight">\(\ e = \sum_{n=0}^{\infty} \frac{1}{n!}\)</span>.<div class="sd-summary-down docutils">
+<span class="math notranslate nohighlight">\(e\ \)</span> di Eulero o di Nepero, <span class="math notranslate nohighlight">\(\ e := \sum_{n=0}^{\infty} \frac{1}{n!}\)</span>.<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
@@ -608,11 +683,36 @@ Serie di Mengoli, <span class="math notranslate nohighlight">\(\ \sum_{n=1}^{\in
 <div class="math notranslate nohighlight">
 \[e = 2.718281828\text{&quot;e poi la magia finisce&quot;} \ ,\]</div>
 <p class="sd-card-text">cioè le cifre decimali successive non sono periodiche.</p>
+<p class="sd-card-text">Si può dimostrare la convergenza della serie, ad esempio usando il criterio del rapporto di d’Alembert per le serie a termini concordi, dimostrando che il limite</p>
+<div class="math notranslate nohighlight">
+\[\lim_{n \rightarrow +\infty} \frac{a_{n+1}}{a_n} = \lim_{x \rightarrow +\infty}\frac{n!}{(n+1)!} = \lim_{x \rightarrow +\infty} \frac{1}{n+1} = 0 \ ,\]</div>
+<p class="sd-card-text">è finito e quindi la serie è convergente.</p>
+<p class="sd-card-text">In particolare, usando la serie geometrica con <span class="math notranslate nohighlight">\(a = \frac{1}{2}\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\sum_{n=0}^{+\infty} \left(\frac{1}{2} \right)^n = \dfrac{1}{1 - \frac{1}{2}} = 2\]</div>
+<p class="sd-card-text">e confrontandola termine a termine con la serie di <span class="math notranslate nohighlight">\(e\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \sum_{n=0}^{+\infty} \left(\frac{1}{2} \right)^n = &amp; 1 + \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \frac{1}{16} + \dots \\
+  e = \sum_{n=0}^{+\infty} \frac{1}{n!} = 1 + &amp; 1 + \frac{1}{2} + \underbrace{\frac{1}{3!}}_{&lt;\frac{1}{4}} + \underbrace{\frac{1}{4!}}_{&lt; \frac{1}{8}} + \underbrace{\frac{1}{5!}}_{&lt; \frac{1}{16}} + \dots &lt;
+    1 + \sum_{n=0}^{+\infty} \left( \frac{1}{2} \right)^n = 3
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">si può trovare la relazione <span class="math notranslate nohighlight">\(e &lt; 3\)</span>.</p>
+<p class="sd-card-text"><strong>todo</strong> <em>come trovare stime di maggiorazione più restrittive? come trovare approssimazioni di <span class="math notranslate nohighlight">\(e\)</span>? Cenni al calcolo del valore numerico? Sì, ma anche no…</em></p>
 </div>
 </details></div>
 </div>
+<div class="section" id="successioni-numeriche-complesse">
+<h2>Successioni numeriche complesse<a class="headerlink" href="#successioni-numeriche-complesse" title="Permalink to this heading">#</a></h2>
+</div>
 <div class="section" id="serie-numeriche-complesse">
 <h2>Serie numeriche complesse<a class="headerlink" href="#serie-numeriche-complesse" title="Permalink to this heading">#</a></h2>
+</div>
+<div class="section" id="successioni-di-funzioni">
+<h2>Successioni di funzioni<a class="headerlink" href="#successioni-di-funzioni" title="Permalink to this heading">#</a></h2>
+</div>
+<div class="section" id="serie-di-funzioni">
+<h2>Serie di funzioni<a class="headerlink" href="#serie-di-funzioni" title="Permalink to this heading">#</a></h2>
 </div>
 </div>
 
@@ -679,16 +779,26 @@ Serie di Mengoli, <span class="math notranslate nohighlight">\(\ \sum_{n=1}^{\in
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#successioni-a-valori-reali">Successioni a valori reali</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#proprieta">Proprietà</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni-con-successioni">Operazioni con successioni</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#confronto-tra-successioni">Confronto tra successioni</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#criteri-di-convergenza">Criteri di convergenza</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#serie-numeriche-reali">Serie numeriche reali</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#criteri-di-convergenza">Criteri di convergenza</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Criteri di convergenza</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#serie-a-termini-concordi">Serie a termini concordi</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Serie a termini concordi</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#serie-a-termini-discordi">Serie a termini discordi</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">Esempi</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#successioni-numeriche-complesse">Successioni numeriche complesse</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#serie-numeriche-complesse">Serie numeriche complesse</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#successioni-di-funzioni">Successioni di funzioni</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#serie-di-funzioni">Serie di funzioni</a></li>
 </ul>
   </nav></div>
 

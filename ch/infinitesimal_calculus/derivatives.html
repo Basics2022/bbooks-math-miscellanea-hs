@@ -34,7 +34,6 @@
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/style.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
@@ -69,7 +68,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Integrali" href="integrals.html" />
-    <link rel="prev" title="Limiti" href="limits.html" />
+    <link rel="prev" title="Introduzione all’analisi" href="analysis.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -224,6 +223,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Precalcolo</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../precalculus.html">Introduzione al pre-calcolo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../precalculus/real-functions.html">Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\(f: \mathbb{R} \rightarrow \mathbb{R}\)</span></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../precalculus/polynomials.html">Polinomi</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../series.html">Serie e successioni</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../trigonometry.html">Trigonometria</a></li>
@@ -237,8 +237,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../calculus.html">Introduzione al calcolo</a></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../infinitesimal_calculus.html">Calcolo infinitesimale</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="real_functions.html">Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\( f: \mathbb{R} \rightarrow \mathbb{R} \)</span></a></li>
-<li class="toctree-l2"><a class="reference internal" href="limits.html">Limiti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analysis.html">Introduzione all’analisi</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Derivate</a></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="integrals.html">Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="integrals-table.html">Tavola degli integrali indefiniti più comuni</a></li>
@@ -512,7 +511,7 @@ document.write(`
 <li><p>derivata del rapporto di funzioni</p></li>
 </ul>
 <div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-derivatives-rules-division">
-<span class="eqno">(8)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-rules-division" title="Permalink to this equation">#</a></span>\[\Big( \frac{f(x)}{g(x)} \Big)' = \frac{f'(x) g(x) - f(x) g'(x)}{g^2(x)}\]</div>
+<span class="eqno">(8)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-rules-division" title="Permalink to this equation">#</a></span>\[\left( \frac{f(x)}{g(x)} \right)' = \frac{f'(x) g(x) - f(x) g'(x)}{g^2(x)}\]</div>
 <ul class="simple">
 <li><p>derivata della funzione composta</p></li>
 </ul>
@@ -579,12 +578,7 @@ Dimostrazione della regola della funzione inversa<div class="sd-summary-down doc
 </details></div>
 <div class="section" id="teoremi">
 <span id="infinitesimal-calculus-derivatives-thm"></span><h2>Teoremi<a class="headerlink" href="#teoremi" title="Permalink to this heading">#</a></h2>
-<div class="proof theorem admonition" id="theorem-0">
-<span id="infinitesimal-calculus-derivatives-thm-fermat"></span><p class="admonition-title"><span class="caption-number">Theorem 1 </span> (Teorema di Fermat)</p>
-<div class="theorem-content section" id="proof-content">
-<p>Data la funzione <span class="math notranslate nohighlight">\(f: (a,b) \rightarrow \mathbb{R}\)</span> derivabile nel punto di estremo locale <span class="math notranslate nohighlight">\(x_0 \in (a,b)\)</span>, allora <span class="math notranslate nohighlight">\(f'(x_0) = 0\)</span>.</p>
-</div>
-</div><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Dimostrazione<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
@@ -599,12 +593,7 @@ Dimostrazione<div class="sd-summary-down docutils">
 La dimostrazione del teorema di Fermat...
 ```
 -->
-<div class="proof theorem admonition" id="theorem-1">
-<span id="infinitesimal-calculus-derivatives-thm-rolle"></span><p class="admonition-title"><span class="caption-number">Theorem 2 </span> (Teorema di Rolle)</p>
-<div class="theorem-content section" id="proof-content">
-<p>Data la funzione <span class="math notranslate nohighlight">\(f: [a,b] \rightarrow \mathbb{R}\)</span> continua e derivabile in ogni punto dell’intervallo <span class="math notranslate nohighlight">\((a,b)\)</span> con <span class="math notranslate nohighlight">\(f(a) = f(b)\)</span>, allora esiste un valore <span class="math notranslate nohighlight">\(c \in (a,b)\)</span> in cui <span class="math notranslate nohighlight">\(f'(c) = 0\)</span>.</p>
-</div>
-</div><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Dimostrazione<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
@@ -613,14 +602,7 @@ Dimostrazione<div class="sd-summary-down docutils">
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><strong>todo</strong></p>
 </div>
-</details><div class="proof theorem admonition" id="theorem-2">
-<span id="infinitesimal-calculus-derivatives-thm-cauchy"></span><p class="admonition-title"><span class="caption-number">Theorem 3 </span> (Teorema di Cauchy)</p>
-<div class="theorem-content section" id="proof-content">
-<p>Date le funzioni <span class="math notranslate nohighlight">\(f, g: [a,b] \rightarrow \mathbb{R}\)</span> continue e derivabili in ogni punto dell’intervallo <span class="math notranslate nohighlight">\((a,b)\)</span> con <span class="math notranslate nohighlight">\(f(a) = f(b)\)</span>, allora esiste un valore <span class="math notranslate nohighlight">\(c \in (a,b)\)</span> tale che</p>
-<div class="math notranslate nohighlight">
-\[f(b) - f(a) = (b -  a) f'(c) \ .\]</div>
-</div>
-</div><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Dimostrazione<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
@@ -629,12 +611,7 @@ Dimostrazione<div class="sd-summary-down docutils">
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><strong>todo</strong></p>
 </div>
-</details><div class="proof theorem admonition" id="theorem-3">
-<span id="infinitesimal-calculus-derivatives-thm-lagrange"></span><p class="admonition-title"><span class="caption-number">Theorem 4 </span> (Theorema di Lagrange)</p>
-<div class="theorem-content section" id="proof-content">
-<p>Date le funzioni <span class="math notranslate nohighlight">\(f, g: [a,b] \rightarrow \mathbb{R}\)</span> continue e derivabili in ogni punto dell’intervallo <span class="math notranslate nohighlight">\((a,b)\)</span> con <span class="math notranslate nohighlight">\(f(a) = f(b)\)</span>, allora esiste un valore <span class="math notranslate nohighlight">\(c \in (a,b)\)</span> tale che</p>
-</div>
-</div><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Dimostrazione<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
@@ -643,24 +620,7 @@ Dimostrazione<div class="sd-summary-down docutils">
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><strong>todo</strong> Usando il teorema di Cauhcy con <span class="math notranslate nohighlight">\(g(x) = x\)</span>.</p>
 </div>
-</details><div class="proof theorem admonition" id="theorem-4">
-<span id="infinitesimal-calculus-derivatives-thm-hopital"></span><p class="admonition-title"><span class="caption-number">Theorem 5 </span> (Teorema di de l’Hopital (Bernoulli))</p>
-<div class="theorem-content section" id="proof-content">
-<p>Siano <span class="math notranslate nohighlight">\(f(x), g(x): [a,b] \rightarrow \mathbb{R}\)</span> funzioni reali di variabile reale continue in <span class="math notranslate nohighlight">\([a,b]\)</span> e derivabili in <span class="math notranslate nohighlight">\((a,b) \backslash \{ x_0 \}\)</span>.</p>
-<div class="math notranslate nohighlight">
-\[\begin{aligned}
-  &amp; \lim_{x \rightarrow x_0} f(x) = \lim_{x \rightarrow x_0} g(x) = 0 \qquad \text{oppure}
-  &amp; \lim_{x \rightarrow x_0}|f(x)|= \lim_{x \rightarrow x_0}|g(x)|= \infty
-\end{aligned}\]</div>
-<p>Se esiste</p>
-<div class="math notranslate nohighlight">
-\[ \lim_{x \rightarrow x_0} \frac{f'(x)}{g'(x)} = L \quad \text{finito}\]</div>
-<p>allora</p>
-<div class="math notranslate nohighlight">
-\[ \lim_{x \rightarrow x_0} \frac{f(x)}{g(x)} = L \ . \]</div>
-<p><strong>todo</strong> Controllare l’enunciato</p>
-</div>
-</div><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Dimostrazione<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
@@ -673,7 +633,7 @@ Dimostrazione<div class="sd-summary-down docutils">
 </div>
 <div class="section" id="derivate-fondamentali">
 <span id="infinitesimal-calculus-derivatives-fund"></span><h2>Derivate fondamentali<a class="headerlink" href="#derivate-fondamentali" title="Permalink to this heading">#</a></h2>
-<p>Usando i <a class="reference internal" href="limits.html#infinitesimal-calculus-limits-fund"><span class="std std-ref">limiti fondamentali</span></a>, vengono calcolate le derivate fondamentali, che a loro volta permettono il calcolo degli <a class="reference internal" href="integrals.html#infinitesimal-calculus-integrals-fund"><span class="std std-ref">integrali fondamentali</span></a>. Le derivate fondamentali e la loro combinazione con le <a class="reference internal" href="#infinitesimal-calculus-derivatives-rules"><span class="std std-ref">regole di derivazione</span></a> permettono la derivazione di funzioni generiche. Le derivate fondamentali sono:</p>
+<p>Usando i <a class="reference internal" href="analysis.html#infinitesimal-calculus-limits-fund"><span class="std std-ref">limiti fondamentali</span></a>, vengono calcolate le derivate fondamentali, che a loro volta permettono il calcolo degli <a class="reference internal" href="integrals.html#infinitesimal-calculus-integrals-fund"><span class="std std-ref">integrali fondamentali</span></a>. Le derivate fondamentali e la loro combinazione con le <a class="reference internal" href="#infinitesimal-calculus-derivatives-rules"><span class="std std-ref">regole di derivazione</span></a> permettono la derivazione di funzioni generiche. Le derivate fondamentali sono:</p>
 <div class="math notranslate nohighlight" id="equation-eq-infinitesimal-calculus-derivatives-fund">
 <span class="eqno">(11)<a class="headerlink" href="#equation-eq-infinitesimal-calculus-derivatives-fund" title="Permalink to this equation">#</a></span>\[\begin{split}\begin{aligned}
 f(x) &amp; = x^n    \qquad &amp; \qquad f'(x) &amp; = n x^{n-1}   \\ 
@@ -789,15 +749,7 @@ Dimostrazione di <span class="math notranslate nohighlight">\(\ (\cos x)'\)</spa
 \end{aligned}\end{split}\]</div>
 <p>La serie di MacLaurin è la serie di Taylor centrata in <span class="math notranslate nohighlight">\(x_0 = 0\)</span>.</p>
 <p>La serie di Taylor troncata al <span class="math notranslate nohighlight">\(n\)</span>-esimo termine fornisce un’approssimazione locale della funzione <span class="math notranslate nohighlight">\(f(x)\)</span> di ordine <span class="math notranslate nohighlight">\(n\)</span>, nel senso definito dal seguente teorema.</p>
-<div class="proof theorem admonition" id="theorem-5">
-<p class="admonition-title"><span class="caption-number">Theorem 6 </span> (Approssimazione locale)</p>
-<div class="theorem-content section" id="proof-content">
-<div class="math notranslate nohighlight">
-\[\lim_{x \rightarrow x_0} \frac{f(x) - T[f(x); x_0]}{x^n} = f^{(n)}(x_0) \ , \]</div>
-<div class="math notranslate nohighlight">
-\[f(x) = T[f(x); x_0] + o(x^n) \quad \text{ per } \quad x \rightarrow x_0\]</div>
-</div>
-</div><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Dimostrazione<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
@@ -822,7 +774,7 @@ $<span class="math notranslate nohighlight">\(f(x) = T[f(x), x_0] + o\left((x-x_
 </div>
 </details><div class="section" id="esempi">
 <h4>Esempi<a class="headerlink" href="#esempi" title="Permalink to this heading">#</a></h4>
-<p>La serie di MacLaurin per le funzioni interessate nei <a class="reference internal" href="limits.html#infinitesimal-calculus-limits-fund"><span class="std std-ref">limiti notevoli</span></a> forniscono approssimazioni locali di ordine maggiore per <span class="math notranslate nohighlight">\(x \rightarrow 0\)</span>,</p>
+<p>La serie di MacLaurin per le funzioni interessate nei <a class="reference internal" href="analysis.html#infinitesimal-calculus-limits-fund"><span class="std std-ref">limiti notevoli</span></a> forniscono approssimazioni locali di ordine maggiore per <span class="math notranslate nohighlight">\(x \rightarrow 0\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
  \cos(x) &amp; = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} + o(x^5) \\
@@ -893,12 +845,12 @@ e^{ix} &amp; = 1 + ix + \frac{(ix)^2}{2!} + \frac{(ix)^3}{3!} + \frac{(ix)^4}{4!
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="limits.html"
+       href="analysis.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Limiti</p>
+        <p class="prev-next-title">Introduzione all’analisi</p>
       </div>
     </a>
     <a class="right-next"

@@ -151,7 +151,7 @@ $$\begin{aligned}
 Una volta dimostrato il [teorema fondamentale del calcolo infinitesimale](infinitesimal-calculus:integrals:thm:fund), questo risultato può essere usato per valutare gli integrali fondamentali come l'operazione inversa alla derivazione applicata alle [derivate fondamentali](infinitesimal-calculus:integrals:fund) 
 
 $$\begin{aligned}
- \int x^n         \ dx & = \frac{1}{n} x^{n+1} + C  \qquad (n \neq 0) \\ 
+ \int x^n         \ dx & = \frac{1}{n} x^{n+1} + C  \qquad (n \neq 0, \ n \neq -1) \\ 
  \int e^x         \ dx & = e^x                 + C \\ 
  \int \frac{1}{x} \ dx & = \ln x               + C \\ 
  \int \cos x      \ dx & = \sin x              + C \\ 

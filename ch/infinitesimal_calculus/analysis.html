@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Limiti &#8212; Matematica per le scuole superiori</title>
+    <title>Introduzione all’analisi &#8212; Matematica per le scuole superiori</title>
   
   
   
@@ -34,7 +34,6 @@
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/style.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
@@ -65,11 +64,11 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/infinitesimal_calculus/limits';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/infinitesimal_calculus/analysis';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Derivate" href="derivatives.html" />
-    <link rel="prev" title="Funzioni reali a variabile reale, \( f: \mathbb{R} \rightarrow \mathbb{R} \)" href="real_functions.html" />
+    <link rel="prev" title="Calcolo infinitesimale" href="../infinitesimal_calculus.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -224,6 +223,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Precalcolo</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../precalculus.html">Introduzione al pre-calcolo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../precalculus/real-functions.html">Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\(f: \mathbb{R} \rightarrow \mathbb{R}\)</span></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../precalculus/polynomials.html">Polinomi</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../series.html">Serie e successioni</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../trigonometry.html">Trigonometria</a></li>
@@ -237,8 +237,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../calculus.html">Introduzione al calcolo</a></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../infinitesimal_calculus.html">Calcolo infinitesimale</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="real_functions.html">Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\( f: \mathbb{R} \rightarrow \mathbb{R} \)</span></a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Limiti</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Introduzione all’analisi</a></li>
 <li class="toctree-l2"><a class="reference internal" href="derivatives.html">Derivate</a></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="integrals.html">Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="integrals-table.html">Tavola degli integrali indefiniti più comuni</a></li>
@@ -334,7 +333,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs/issues/new?title=Issue%20on%20page%20%2Fch/infinitesimal_calculus/limits.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs/issues/new?title=Issue%20on%20page%20%2Fch/infinitesimal_calculus/analysis.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -364,7 +363,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/ch/infinitesimal_calculus/limits.md" target="_blank"
+      <li><a href="../../_sources/ch/infinitesimal_calculus/analysis.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -448,7 +447,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Limiti</h1>
+    <h1>Introduzione all’analisi</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -458,10 +457,18 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cenni-di-topologia-per-il-calcolo">Cenni di topologia per il calcolo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definizione-di-limite">Definizione di limite</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funzioni-continue">Funzioni continue</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funzioni-reali-a-variabile-reale-f-mathbb-r-rightarrow-mathbb-r">Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\(f: \mathbb{R} \rightarrow \mathbb{R}\)</span></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definizione">Definizione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rappresentazione-grafica">Rappresentazione grafica</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limiti">Limiti</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cenni-di-topologia-per-il-calcolo">Cenni di topologia per il calcolo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definizione-di-limite">Definizione di limite</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funzioni-continue">Funzioni continue</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#infinitesimal-calculus-continuous-fun-def">Definizione</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teoremi">Teoremi</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-weierstrass">Teorema di Weierstrass</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-della-permanenza-del-segno">Teorema della permanenza del segno</a></li>
@@ -493,14 +500,28 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="limiti">
-<span id="infinitesimal-calculus-limits"></span><h1>Limiti<a class="headerlink" href="#limiti" title="Permalink to this heading">#</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="introduzione-all-analisi">
+<span id="infinitesimal-calculus-analysis"></span><h1>Introduzione all’analisi<a class="headerlink" href="#introduzione-all-analisi" title="Permalink to this heading">#</a></h1>
+<p>In questa sezione viene richiamato il concetto di funzione introdotto nella sezione <a class="reference internal" href="../precalculus.html#math-hs-precalculus"><span class="std std-ref">Precalcolo</span></a>. Viene introdotto il concetto di <a class="reference internal" href="#infinitesimal-calculus-limits"><span class="std std-ref">limite</span></a> e definito in termini topologici (intervalli, punti di accumulazione, insiemi aperti e chiusi,…). Il concetto di limite viene utilizzato per dare una definizione di <a class="reference internal" href="../infinitesimal_calculus.html"><span class="doc std std-doc">funzione continua</span></a>. Vengono poi presentati alcuni teoremi e proprietà di limiti e funzioni continue.</p>
+<!-- Real functions: f: R -> R -->
+<div class="section" id="funzioni-reali-a-variabile-reale-f-mathbb-r-rightarrow-mathbb-r">
+<span id="infinitesimal-calculus-analysis-real-functions"></span><h2>Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\(f: \mathbb{R} \rightarrow \mathbb{R}\)</span><a class="headerlink" href="#funzioni-reali-a-variabile-reale-f-mathbb-r-rightarrow-mathbb-r" title="Permalink to this heading">#</a></h2>
+<div class="section" id="definizione">
+<span id="infinitesimal-calculus-analysis-real-functions-def"></span><h3>Definizione<a class="headerlink" href="#definizione" title="Permalink to this heading">#</a></h3>
+</div>
+<div class="section" id="rappresentazione-grafica">
+<span id="infinitesimal-calculus-analysis-real-functions-graph"></span><h3>Rappresentazione grafica<a class="headerlink" href="#rappresentazione-grafica" title="Permalink to this heading">#</a></h3>
+<!-- Limits and continuous functions -->
+</div>
+</div>
+<div class="section" id="limiti">
+<span id="infinitesimal-calculus-limits"></span><h2>Limiti<a class="headerlink" href="#limiti" title="Permalink to this heading">#</a></h2>
 <div class="section" id="cenni-di-topologia-per-il-calcolo">
-<h2>Cenni di topologia per il calcolo<a class="headerlink" href="#cenni-di-topologia-per-il-calcolo" title="Permalink to this heading">#</a></h2>
-<p><strong>TODO</strong> <em>Punto di accumulazione e punto isolato, intorno, insiemi aperti e chiusi, limsup/liminf, max/min,…</em></p>
+<h3>Cenni di topologia per il calcolo<a class="headerlink" href="#cenni-di-topologia-per-il-calcolo" title="Permalink to this heading">#</a></h3>
+<p><strong>todo</strong> <em>Punto di accumulazione e punto isolato, intorno, insiemi aperti e chiusi, limsup/liminf, max/min,… E’ necessario? Il minimo indispensabile</em></p>
 </div>
 <div class="section" id="definizione-di-limite">
-<h2>Definizione di limite<a class="headerlink" href="#definizione-di-limite" title="Permalink to this heading">#</a></h2>
+<span id="infinitesimal-calculus-limits-def"></span><h3>Definizione di limite<a class="headerlink" href="#definizione-di-limite" title="Permalink to this heading">#</a></h3>
 <!-- **Limite destro e sinistro**<br> -->
 <p><strong>Limite finito al finito</strong></p>
 <div class="math notranslate nohighlight">
@@ -519,47 +540,49 @@ document.write(`
 \[\forall M &gt; 0 \quad \exists U_{\mp \infty, R} \quad {t.c.} \quad |f(x)| &gt; M \quad \forall x \in U_{\mp \infty, R}\]</div>
 <p>dove la condizione sull’intorno di un punto all’infinito per funzioni reali può essere riscritta come <span class="math notranslate nohighlight">\(x &lt; R\)</span> per un intorno di <span class="math notranslate nohighlight">\(-\infty\)</span> o <span class="math notranslate nohighlight">\(x &gt; R\)</span> per un intorno di <span class="math notranslate nohighlight">\(+\infty\)</span>. Se <span class="math notranslate nohighlight">\(f(x) &gt; M\)</span> allora il limite tende a <span class="math notranslate nohighlight">\(+\infty\)</span>, se <span class="math notranslate nohighlight">\(f(x) &lt; -M\)</span> allora il limite tende a <span class="math notranslate nohighlight">\(-\infty\)</span>.</p>
 </div>
+</div>
 <div class="section" id="funzioni-continue">
-<h2>Funzioni continue<a class="headerlink" href="#funzioni-continue" title="Permalink to this heading">#</a></h2>
-<div class="section" id="definizione">
-<h3>Definizione<a class="headerlink" href="#definizione" title="Permalink to this heading">#</a></h3>
+<span id="infinitesimal-calculus-continuous-fun"></span><h2>Funzioni continue<a class="headerlink" href="#funzioni-continue" title="Permalink to this heading">#</a></h2>
+<div class="section" id="infinitesimal-calculus-continuous-fun-def">
+<span id="id1"></span><h3>Definizione<a class="headerlink" href="#infinitesimal-calculus-continuous-fun-def" title="Permalink to this heading">#</a></h3>
 <p>Una funzione reale <span class="math notranslate nohighlight">\(f: D \in \mathbb{R} \rightarrow \mathbb{R}\)</span> è continua in un punto <span class="math notranslate nohighlight">\(x_0 \in D\)</span> se la funzione è definita nel punto, se esiste il limite della fuzione e coincide con il valore della funzione</p>
 <div class="math notranslate nohighlight">
 \[\lim_{x \rightarrow x_0} f(x) = f(x_0) \ .\]</div>
-<p>Una funzione reale è continua in un dominio <strong>TODO</strong> <strong>o insieme?</strong> se è continua in ogni punto del dominio.</p>
+<p>Una funzione reale è continua in un dominio <strong>todo o insieme?</strong> se è continua in ogni punto del dominio.</p>
 </div>
 <div class="section" id="teoremi">
-<h3>Teoremi<a class="headerlink" href="#teoremi" title="Permalink to this heading">#</a></h3>
+<span id="infinitesimal-calculus-continuous-fun-thms"></span><h3>Teoremi<a class="headerlink" href="#teoremi" title="Permalink to this heading">#</a></h3>
 <div class="section" id="teorema-di-weierstrass">
-<h4>Teorema di Weierstrass<a class="headerlink" href="#teorema-di-weierstrass" title="Permalink to this heading">#</a></h4>
-<p><strong>Enunciato.</strong> Data una funzione reale continua <span class="math notranslate nohighlight">\(f: [a,b] \rightarrow \mathbb{R}\)</span> definita sull’intervallo chiuso <span class="math notranslate nohighlight">\([a,b]\)</span>. Allora la funzione <span class="math notranslate nohighlight">\(f(x)\)</span> ammette un punto di massimo assoluto e un punto di minimo assoluto nell’intevallo <span class="math notranslate nohighlight">\([a,b]\)</span>.</p>
+<span id="infinitesimal-calculus-continuous-fun-thms-weierstrass"></span><h4>Teorema di Weierstrass<a class="headerlink" href="#teorema-di-weierstrass" title="Permalink to this heading">#</a></h4>
+<p>Data una funzione reale continua <span class="math notranslate nohighlight">\(f: [a,b] \rightarrow \mathbb{R}\)</span> definita sull’intervallo chiuso <span class="math notranslate nohighlight">\([a,b]\)</span>, la funzione <span class="math notranslate nohighlight">\(f(x)\)</span> ammette un punto di massimo assoluto e un punto di minimo assoluto nell’intevallo <span class="math notranslate nohighlight">\([a,b]\)</span>.</p>
+<p><strong>todo</strong> <em>Dimostrazione? Discussione più intuitiva? Figura?</em></p>
 </div>
 <div class="section" id="teorema-della-permanenza-del-segno">
-<h4>Teorema della permanenza del segno<a class="headerlink" href="#teorema-della-permanenza-del-segno" title="Permalink to this heading">#</a></h4>
-<p><strong>Enunciato.</strong> <span class="math notranslate nohighlight">\(f: D \rightarrow \mathbb{R}\)</span> continua, se <span class="math notranslate nohighlight">\(f(x_0) &gt; 0\)</span> allora <span class="math notranslate nohighlight">\(\exists U_{x_0}\)</span> t.c. <span class="math notranslate nohighlight">\(f(x) &gt; 0\)</span> per <span class="math notranslate nohighlight">\(\forall x \in U_{x_0} \cap D\)</span>.</p>
-<p><strong>TODO</strong> <em>Per ora, enunciato “qualitativo”</em></p>
+<span id="infinitesimal-calculus-continuous-fun-thms-sign"></span><h4>Teorema della permanenza del segno<a class="headerlink" href="#teorema-della-permanenza-del-segno" title="Permalink to this heading">#</a></h4>
+<p>Data una funzione continua <span class="math notranslate nohighlight">\(f: D \rightarrow \mathbb{R}\)</span> continua, e un punto <span class="math notranslate nohighlight">\(x_0 \in D\)</span>. Se <span class="math notranslate nohighlight">\(f(x_0) &gt; 0\)</span> allora <span class="math notranslate nohighlight">\(\exists U_{x_0}\)</span> t.c. <span class="math notranslate nohighlight">\(f(x) &gt; 0\)</span> per <span class="math notranslate nohighlight">\(\forall x \in U_{x_0} \cap D\)</span>.</p>
+<p><strong>todo</strong> <em>Dimostrazione? Discussione più intuitiva? Figura?</em></p>
 </div>
 <div class="section" id="teorema-dei-valori-intermedi">
-<h4>Teorema dei valori intermedi<a class="headerlink" href="#teorema-dei-valori-intermedi" title="Permalink to this heading">#</a></h4>
-<p><strong>Enunciato.</strong> <span class="math notranslate nohighlight">\(f: [a,b] \rightarrow \mathbb{R}\)</span> continua, allora <span class="math notranslate nohighlight">\(f(x)\)</span> assume tutti i valori compresi tra <span class="math notranslate nohighlight">\(f(a)\)</span> e <span class="math notranslate nohighlight">\(f(b)\)</span>, cioè (assumendo <span class="math notranslate nohighlight">\(f(a) &lt; f(b)\)</span>) per <span class="math notranslate nohighlight">\(\forall y \in (f(a), f(b)) \ x_0 \in (a,b) \ \text{t.c..} \ f(x_0) = y\)</span>.</p>
-<p><strong>TODO</strong> <em>Per ora, enunciato “qualitativo”</em></p>
+<span id="infinitesimal-calculus-continuous-fun-thms-intermediate"></span><h4>Teorema dei valori intermedi<a class="headerlink" href="#teorema-dei-valori-intermedi" title="Permalink to this heading">#</a></h4>
+<p>Data una funzione <span class="math notranslate nohighlight">\(f: [a,b] \rightarrow \mathbb{R}\)</span> continua, allora <span class="math notranslate nohighlight">\(f(x)\)</span> assume tutti i valori compresi tra <span class="math notranslate nohighlight">\(f(a)\)</span> e <span class="math notranslate nohighlight">\(f(b)\)</span>, cioè (assumendo <span class="math notranslate nohighlight">\(f(a) &lt; f(b)\)</span>) per <span class="math notranslate nohighlight">\(\forall y \in (f(a), f(b)) \ x_0 \in (a,b) \ \text{t.c..} \ f(x_0) = y\)</span>.</p>
+<p><strong>todo</strong> <em>Dimostrazione? Discussione più intuitiva? Figura?</em></p>
 </div>
 </div>
 </div>
 <div class="section" id="teoremi-sui-limiti">
-<h2>Teoremi sui limiti<a class="headerlink" href="#teoremi-sui-limiti" title="Permalink to this heading">#</a></h2>
+<span id="infinitesimal-calculus-limits-thms"></span><h2>Teoremi sui limiti<a class="headerlink" href="#teoremi-sui-limiti" title="Permalink to this heading">#</a></h2>
 <div class="section" id="operazioni-coi-limiti">
-<h3>Operazioni coi limiti<a class="headerlink" href="#operazioni-coi-limiti" title="Permalink to this heading">#</a></h3>
+<span id="infinitesimal-calculus-limits-thms-operations"></span><h3>Operazioni coi limiti<a class="headerlink" href="#operazioni-coi-limiti" title="Permalink to this heading">#</a></h3>
 <p>Dato un numero reale <span class="math notranslate nohighlight">\(c \in \mathbb{R}\)</span> e i limiti <span class="math notranslate nohighlight">\(\lim_{x \rightarrow x_0} f(x) = L_1\)</span>, <span class="math notranslate nohighlight">\(\lim_{x \rightarrow x_0} g(x) = L_2\)</span></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
  &amp; \lim_{x \rightarrow x_0} \big( c \cdot f(x) \big) = c \, L_1 \\
- &amp; \lim_{x \rightarrow x_0} \big( f(x) \mp g(x) \big) = L_1 + L_2 \\
+ &amp; \lim_{x \rightarrow x_0} \big( f(x) \mp g(x) \big) = L_1 \mp L_2 \\
  &amp; \lim_{x \rightarrow x_0} \big( f(x) \cdot g(x) \big) = L_1 \cdot L_2 \\
  &amp; \lim_{x \rightarrow x_0} \frac{ f(x) }{ g(x) } = \frac{L_1}{L_2} \quad , \quad \text{se $L_2 \ne 0$}  \\
 \end{aligned}\end{split}\]</div>
 <div class="section" id="limiti-infiniti-e-infinitesimi">
-<h4>Limiti infiniti e infinitesimi<a class="headerlink" href="#limiti-infiniti-e-infinitesimi" title="Permalink to this heading">#</a></h4>
+<span id="infinitesimal-calculus-limits-thms-infinite-simal"></span><h4>Limiti infiniti e infinitesimi<a class="headerlink" href="#limiti-infiniti-e-infinitesimi" title="Permalink to this heading">#</a></h4>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
  &amp;  \lim_{x \rightarrow x_0}f(x) \rightarrow \mp \infty \ , c &gt; 0 \quad : \qquad \lim_{x \rightarrow x_0} c \cdot f(x) = \mp \infty \\
@@ -567,22 +590,33 @@ document.write(`
 \end{aligned}\end{split}\]</div>
 </div>
 <div class="section" id="forme-indeterminate">
-<h4>Forme indeterminate<a class="headerlink" href="#forme-indeterminate" title="Permalink to this heading">#</a></h4>
+<span id="infinitesimal-calculus-limits-thms-infinite-simal-undetermined"></span><h4>Forme indeterminate<a class="headerlink" href="#forme-indeterminate" title="Permalink to this heading">#</a></h4>
 <div class="math notranslate nohighlight">
-\[+\infty-\infty \quad , \quad 0 \cdot \mp \infty \quad , \quad \frac{\mp \infty}{\mp \infty} \quad , \quad \frac{0}{0}\]</div>
+\[+\infty-\infty \quad , \quad 0 \cdot \mp \infty \quad , \quad \frac{\mp \infty}{\mp \infty} \quad , \quad \frac{0}{0} \quad , \quad 1^{\infty} \quad , \quad 0^0 \quad , \quad \infty^0\]</div>
+<p><strong>oss.</strong> Invece non sono forme indeterminate <span class="math notranslate nohighlight">\(0^{+\infty} \rightarrow 0\)</span> e <span class="math notranslate nohighlight">\(0^{-\infty} \rightarrow \infty\)</span>.</p>
 </div>
 </div>
 <div class="section" id="teorema-del-confronto">
-<h3>Teorema del confronto<a class="headerlink" href="#teorema-del-confronto" title="Permalink to this heading">#</a></h3>
+<span id="infinitesimal-calculus-limits-thms-comparison"></span><h3>Teorema del confronto<a class="headerlink" href="#teorema-del-confronto" title="Permalink to this heading">#</a></h3>
+<p>Siano <span class="math notranslate nohighlight">\(f\)</span>, <span class="math notranslate nohighlight">\(g\)</span>, <span class="math notranslate nohighlight">\(h: \ X \in \mathbb{R} \rightarrow \mathbb{R}\)</span>, e dato un punto di accumulazione <span class="math notranslate nohighlight">\(x_0\)</span> per <span class="math notranslate nohighlight">\(X\)</span>. Se</p>
+<div class="math notranslate nohighlight">
+\[\lim_{x \rightarrow x_0} f(x) = \lim_{x \rightarrow x_0} h(x) = \ell \ ,\]</div>
+<p>ed esiste un intorno <span class="math notranslate nohighlight">\(U\)</span> di <span class="math notranslate nohighlight">\(x_0\)</span> tale che</p>
+<div class="math notranslate nohighlight">
+\[f(x) \le g(x) \le h(x) \quad \forall x \in U \cap X \ \{ x_0 \} \ ,\]</div>
+<p>allora</p>
+<div class="math notranslate nohighlight">
+\[\lim_{x \rightarrow x_0} g(x) = \ell \ .\]</div>
+<p><strong>todo</strong> <em>Dimostrazione? Discussione più intuitiva? Figura?</em></p>
 </div>
 <div class="section" id="teorema-di-de-l-hopital">
-<h3>Teorema di de l’Hopital<a class="headerlink" href="#teorema-di-de-l-hopital" title="Permalink to this heading">#</a></h3>
-<p><strong>TODO.</strong> Si rimanda alla sezione del <a class="reference internal" href="derivatives.html#infinitesimal-calculus-derivatives-thm-hopital"><span class="std std-ref">teorema di de l’Hopital</span></a> nel capitolo sulle <a class="reference internal" href="derivatives.html#infinitesimal-calculus-derivatives"><span class="std std-ref">derivate</span></a>.</p>
+<span id="infinitesimal-calculus-limits-thms-hopital"></span><h3>Teorema di de l’Hopital<a class="headerlink" href="#teorema-di-de-l-hopital" title="Permalink to this heading">#</a></h3>
+<p>Il teorema di de l’Hopital (o di Bernoulli, <strong>todo</strong> <em>dire due parole sulla storia? Bernoulli precettore di de l’Hopital, ricava il risultato…</em>) è un teorema utile per il calcolo dei limiti delle forme indeterminate <span class="math notranslate nohighlight">\(\frac{0}{0}\)</span> e <span class="math notranslate nohighlight">\(\frac{\infty}{\infty}\)</span>. Poiché il teorema coinvolge il concetto di derivata, si rimanda alla sezione del <a class="reference internal" href="derivatives.html#infinitesimal-calculus-derivatives-thm-hopital"><span class="std std-ref">teorema di de l’Hopital</span></a> nel capitolo sulle <a class="reference internal" href="derivatives.html#infinitesimal-calculus-derivatives"><span class="std std-ref">derivate</span></a>.</p>
 </div>
 </div>
 <div class="section" id="limiti-fondamentali">
 <span id="infinitesimal-calculus-limits-fund"></span><h2>Limiti fondamentali<a class="headerlink" href="#limiti-fondamentali" title="Permalink to this heading">#</a></h2>
-<p>Limiti di funzioni continue</p>
+<p>In questa sezione vengono calcolati alcuni limiti fondamentali. Questi limiti possono essere considerati fondamentali come sinonimo di <em>“minimo da ricordare”</em> per poter calcolare limiti più generali utilizzando le <a class="reference internal" href="#infinitesimal-calculus-limits-thms-operations"><span class="std std-ref">operazioni</span></a> e i <a class="reference internal" href="#infinitesimal-calculus-limits-thms"><span class="std std-ref">teoremi</span></a> sui limiti, e calcolare le <a class="reference internal" href="derivatives.html#infinitesimal-calculus-derivatives-fund"><span class="std std-ref">derivate fondamentali</span></a>. Un elenco minimo di limiti fondamentali è:</p>
 <div class="math notranslate nohighlight">
 \[ \lim_{x \rightarrow 0} \frac{(1+x)^a - 1}{x} = a \]</div>
 <div class="math notranslate nohighlight">
@@ -590,7 +624,7 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[ \lim_{x \rightarrow 0} \frac{1 - \cos^2 x}{x^2} = \frac{1}{2} \]</div>
 <div class="math notranslate nohighlight">
-\[ \lim_{x \rightarrow +\infty} \Big( 1 + \frac{1}{x} \Big)^x = e \]</div>
+\[ \lim_{x \rightarrow +\infty} \left( 1 + \frac{1}{x} \right)^x = e \]</div>
 <div class="math notranslate nohighlight">
 \[ \lim_{x \rightarrow 0} \frac{e^x - 1}{x}= 1 \]</div>
 <div class="math notranslate nohighlight">
@@ -641,12 +675,12 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="real_functions.html"
+       href="../infinitesimal_calculus.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\( f: \mathbb{R} \rightarrow \mathbb{R} \)</span></p>
+        <p class="prev-next-title">Calcolo infinitesimale</p>
       </div>
     </a>
     <a class="right-next"
@@ -673,10 +707,18 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cenni-di-topologia-per-il-calcolo">Cenni di topologia per il calcolo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definizione-di-limite">Definizione di limite</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funzioni-continue">Funzioni continue</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funzioni-reali-a-variabile-reale-f-mathbb-r-rightarrow-mathbb-r">Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\(f: \mathbb{R} \rightarrow \mathbb{R}\)</span></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definizione">Definizione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rappresentazione-grafica">Rappresentazione grafica</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limiti">Limiti</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cenni-di-topologia-per-il-calcolo">Cenni di topologia per il calcolo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definizione-di-limite">Definizione di limite</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funzioni-continue">Funzioni continue</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#infinitesimal-calculus-continuous-fun-def">Definizione</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teoremi">Teoremi</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-weierstrass">Teorema di Weierstrass</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-della-permanenza-del-segno">Teorema della permanenza del segno</a></li>

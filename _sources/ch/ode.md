@@ -4,7 +4,7 @@
 :read-time: "{sub-ref}`wordcount-minutes` min read"
 ```
 
-(ode:high-school)=
+(ode-hs)=
 # Equazioni differenziali ordinarie
 
 **Motivazione.** In molti ambiti delle scienze compaiono equazioni differenziali ordinarie, equazioni che impongono una condizione tra una funzione reale incognita e le sue derivate. Così, ad esempio:
