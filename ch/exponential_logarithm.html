@@ -458,9 +458,9 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definizioni-e-proprieta">Definizioni e proprietà</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funzione-esponenziale-e-logaritmo">Funzione esponenziale e logaritmo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#e-di-nepero-e-x-e-logaritmo-naturale"><span class="math notranslate nohighlight">\(e\)</span> di Nepero, <span class="math notranslate nohighlight">\(e^x\)</span> e logaritmo naturale</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definizione-di-e-x">Definizione di <span class="math notranslate nohighlight">\(e^x\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funzione-esponenziale-e-logaritmo-di-variabile-reale">Funzione esponenziale e logaritmo di variabile reale</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#funzione-esponenziale-e-x">Funzione esponenziale, <span class="math notranslate nohighlight">\(e^x\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#funzione-logaritmo-naturale-text-ln-x">Funzione logaritmo naturale, <span class="math notranslate nohighlight">\(\text{ln} \, x\)</span></a></li>
 </ul>
 </li>
 </ul>
@@ -482,30 +482,51 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[a = b^c \qquad \leftrightarrow \qquad c = \log_{b} a \]</div>
 </div>
-<div class="section" id="funzione-esponenziale-e-logaritmo">
-<h2>Funzione esponenziale e logaritmo<a class="headerlink" href="#funzione-esponenziale-e-logaritmo" title="Permalink to this heading">#</a></h2>
-</div>
-<div class="section" id="e-di-nepero-e-x-e-logaritmo-naturale">
-<h2><span class="math notranslate nohighlight">\(e\)</span> di Nepero, <span class="math notranslate nohighlight">\(e^x\)</span> e logaritmo naturale<a class="headerlink" href="#e-di-nepero-e-x-e-logaritmo-naturale" title="Permalink to this heading">#</a></h2>
-<div class="section" id="definizione-di-e-x">
-<h3>Definizione di <span class="math notranslate nohighlight">\(e^x\)</span><a class="headerlink" href="#definizione-di-e-x" title="Permalink to this heading">#</a></h3>
-<p><strong>Esponenziale reale.</strong> Per ogni <span class="math notranslate nohighlight">\(x \in \mathbb{R}\)</span>, si definisce la funzione <span class="math notranslate nohighlight">\(e^x\)</span> come</p>
+<div class="section" id="funzione-esponenziale-e-logaritmo-di-variabile-reale">
+<h2>Funzione esponenziale e logaritmo di variabile reale<a class="headerlink" href="#funzione-esponenziale-e-logaritmo-di-variabile-reale" title="Permalink to this heading">#</a></h2>
+<div class="section" id="funzione-esponenziale-e-x">
+<h3>Funzione esponenziale, <span class="math notranslate nohighlight">\(e^x\)</span><a class="headerlink" href="#funzione-esponenziale-e-x" title="Permalink to this heading">#</a></h3>
+<p><strong>Definizione.</strong> Per ogni <span class="math notranslate nohighlight">\(x \in \mathbb{R}\)</span>, è possibile dare due definizioni equivalenti della <span class="math notranslate nohighlight">\(e^x\)</span>, che può essere intesa come l’elevamento a potenza della <a class="reference internal" href="series.html#math-hs-series-e-euler"><span class="std std-ref"><span class="math notranslate nohighlight">\(e\)</span> di Eulero</span></a> con la variabile indipendente <span class="math notranslate nohighlight">\(x\)</span> come esponente.</p>
+<ul class="simple">
+<li><p>definizione come limite della successione di funzioni <span class="math notranslate nohighlight">\(\left( 1 + \frac{x}{n} \right)^n\)</span></p></li>
+</ul>
 <div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-e^x &amp; := \lim_{n \rightarrow \infty} \left( 1 + \frac{x}{n}\right)^n  = \\
-    &amp; := \lim_{n \rightarrow \infty} \sum_{k=0}^{n} \frac{x^n}{n!} \\
-\end{aligned}\end{split}\]</div>
+\[
+  e^x := \lim_{n \rightarrow \infty} \left( 1 + \frac{x}{n}\right)^n
+\]</div>
+<ul class="simple">
+<li><p>definizione come limite della serie di funzioni con elementi <span class="math notranslate nohighlight">\(\frac{x^n}{n!}\)</span>,</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+  e^x := \lim_{n \rightarrow \infty} \sum_{k=0}^{n} \frac{x^n}{n!} \\
+\end{split}\]</div>
 <p>Si può dimostrare che</p>
 <ul>
-<li><p>le due definizioni sono equivalenti, e la serie è convergente per ogni <span class="math notranslate nohighlight">\(x \in \mathbb{R}\)</span> finito</p></li>
-<li><p>la funzione <span class="math notranslate nohighlight">\(e^x\)</span> giustifica questa notazione poiché soddisfa le proprietà delle potenze, come</p>
+<li><p>la <a class="reference internal" href="exponential_logarithm-proof.html#math-hs-exp-log-proof-convergence"><span class="std std-ref">serie è convergente</span></a> per ogni <span class="math notranslate nohighlight">\(x \in \mathbb{R}\)</span> finito</p></li>
+<li><p>le due <a class="reference internal" href="exponential_logarithm-proof.html#math-hs-exp-log-proof-equivalence"><span class="std std-ref">definizioni sono equivalenti</span></a></p></li>
+<li><p>le definizioni della funzione <span class="math notranslate nohighlight">\(e^x\)</span> giustificano la notazione <span class="math notranslate nohighlight">\(e^x\)</span> questa funznione poiché soddisfa le <a class="reference internal" href="exponential_logarithm-proof.html#math-hs-exp-log-proof-powers"><span class="std std-ref">proprietà delle potenze (<em>con stessa base, <span class="math notranslate nohighlight">\(e\)</span></em>)</span></a>:</p>
 <div class="math notranslate nohighlight">
-\[e^{x+y} = e^x \, e^y \ .\]</div>
+\[\begin{split}\begin{aligned}
+    e^0 &amp; = 1 \\
+    e^1 &amp; = e \\
+  e^{x+y} &amp; = e^x \, e^y \ .
+  \end{aligned}\end{split}\]</div>
 </li>
-<li><p>la base della potenza, <span class="math notranslate nohighlight">\(e\)</span>, viene definita <span class="math notranslate nohighlight">\(e\)</span> <strong>di Nepero</strong>, ed è un numero reale irrazionale, il cui valore approssimato è <span class="math notranslate nohighlight">\(e \approx 2.718281828\text{&quot;e poi la magia finisce&quot;}\)</span>: nonostante le prime cifre decimali facciano pensare che possa essere periodico, se si scrivono le cifre successive, l’approssimazione diventa <span class="math notranslate nohighlight">\(e \approx 2.71828182845904523\dots\)</span></p></li>
+<li><p>la derivata della funzione <span class="math notranslate nohighlight">\(e^x\)</span> è <span class="math notranslate nohighlight">\(e^x\)</span>, ed è una delle <a class="reference internal" href="infinitesimal_calculus/derivatives.html#infinitesimal-calculus-derivatives-fund"><span class="std std-ref">derivate fondamentali</span></a> del <a class="reference internal" href="infinitesimal_calculus/derivatives.html#infinitesimal-calculus-derivatives"><span class="std std-ref">calcolo differenziale</span></a>,</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dx} e^x = e^x \ .\]</div>
+</li>
 </ul>
+<!--
+- la base della potenza, $e$, viene definita $e$ **di Nepero**, ed è un numero reale irrazionale, il cui valore approssimato è $e \approx 2.718281828\text{"e poi la magia finisce"}$: nonostante le prime cifre decimali facciano pensare che possa essere periodico, se si scrivono le cifre successive, l'approssimazione diventa $e \approx 2.71828182845904523\dots$
+-->
 <p><strong>Esponenziale complesso.</strong> Si può estendere la definizione di esponenziale anche a un numero complesso, <span class="math notranslate nohighlight">\(z \in \mathbb{C}\)</span>
 <strong>todo</strong></p>
+</div>
+<div class="section" id="funzione-logaritmo-naturale-text-ln-x">
+<h3>Funzione logaritmo naturale, <span class="math notranslate nohighlight">\(\text{ln} \, x\)</span><a class="headerlink" href="#funzione-logaritmo-naturale-text-ln-x" title="Permalink to this heading">#</a></h3>
+<p><strong>Definizione.</strong> Poiché la funzione <span class="math notranslate nohighlight">\(e^x\)</span> è monotona crescente, <span class="math notranslate nohighlight">\(e^x: \mathbb{R} \rightarrow (0, +\infty)\)</span>, esiste la sua <a class="reference internal" href="precalculus/real-functions.html#math-hs-precalculus-real-functions-inverse"><span class="std std-ref">funzione inversa</span></a> con dominio <span class="math notranslate nohighlight">\((0,+\infty)\)</span> e immagine <span class="math notranslate nohighlight">\(\mathbb{R}\)</span>. La funzione inversa della funzione esponenziale con base <span class="math notranslate nohighlight">\(e\)</span> viene definita <strong>logaritmo naturale</strong>.</p>
 </div>
 </div>
 <div class="toctree-wrapper compound">
@@ -576,9 +597,9 @@ e^x &amp; := \lim_{n \rightarrow \infty} \left( 1 + \frac{x}{n}\right)^n  = \\
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definizioni-e-proprieta">Definizioni e proprietà</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funzione-esponenziale-e-logaritmo">Funzione esponenziale e logaritmo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#e-di-nepero-e-x-e-logaritmo-naturale"><span class="math notranslate nohighlight">\(e\)</span> di Nepero, <span class="math notranslate nohighlight">\(e^x\)</span> e logaritmo naturale</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definizione-di-e-x">Definizione di <span class="math notranslate nohighlight">\(e^x\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funzione-esponenziale-e-logaritmo-di-variabile-reale">Funzione esponenziale e logaritmo di variabile reale</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#funzione-esponenziale-e-x">Funzione esponenziale, <span class="math notranslate nohighlight">\(e^x\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#funzione-logaritmo-naturale-text-ln-x">Funzione logaritmo naturale, <span class="math notranslate nohighlight">\(\text{ln} \, x\)</span></a></li>
 </ul>
 </li>
 </ul>

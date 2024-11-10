@@ -12,9 +12,9 @@
 - serie numeriche
 - serie di funzioni
 
-## Successioni a valori reali
+## Successioni a di numeri reali
 
-**Definizione.** Una successione a valori reali è una funzione $f: \mathbb{N} \rightarrow \mathbb{R}$, che associa ai numeri interi $n \in \mathbb{N}$ un numero reale $a_n = f(n)$.
+**Definizione.** Una successione di numeri reali è una funzione $f: \mathbb{N} \rightarrow \mathbb{R}$, che associa ai numeri interi $n \in \mathbb{N}$ un numero reale $a_n = f(n)$.
 
 **Limite di una successione.** Una successione $\{ a_n \}$ ha limite $\ell$ se per ogni intorno $U_{\ell}$ di $\ell$ esiste un numero naturale $N \in \mathbb{N}$ tale che
 
@@ -60,14 +60,15 @@ $$S_k = \sum_{n=0}^{k} a_n \ .$$
 **Carattere della serie.** 
 A seconda del limite della successione delle somme parziali $\lim_{k \rightarrow \infty} S_k$, una serie è
 - **convergente** se il limite $L$ esiste ed è finito
-
 - **divergente** se il limite $L$ esiste ed è infinito
-
 - **indeterminata** se il limite non esiste
 
 ### Criteri di convergenza
 
-Una serie può essere con
+Una serie può essere:
+- convergente
+- divergente
+- indeterminata
 
 #### Serie a termini concordi
 
@@ -153,6 +154,7 @@ $$\sum_{n=1}^{\infty} \frac{1}{n(n+1)} = 1 - \lim_{n \rightarrow \infty} \frac{1
 
 ```
 
+(math-hs:series:e-euler)=
 ```{dropdown} $e\ $ di Eulero o di Nepero, $\ e := \sum_{n=0}^{\infty} \frac{1}{n!}$.
 La serie
 
@@ -177,8 +179,8 @@ $$\sum_{n=0}^{+\infty} \left(\frac{1}{2} \right)^n = \dfrac{1}{1 - \frac{1}{2}} 
 e confrontandola termine a termine con la serie di $e$,
 
 $$\begin{aligned}
-  \sum_{n=0}^{+\infty} \left(\frac{1}{2} \right)^n = & 1 + \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \frac{1}{16} + \dots \\
-  e = \sum_{n=0}^{+\infty} \frac{1}{n!} = 1 + & 1 + \frac{1}{2} + \underbrace{\frac{1}{3!}}_{<\frac{1}{4}} + \underbrace{\frac{1}{4!}}_{< \frac{1}{8}} + \underbrace{\frac{1}{5!}}_{< \frac{1}{16}} + \dots <
+  2  = \sum_{n=0}^{+\infty} \left(\frac{1}{2} \right)^n = & 1 + \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \frac{1}{16} + \dots \\
+  e := \sum_{n=0}^{+\infty} \frac{1}{n!} = 1 + & 1 + \frac{1}{2} + \underbrace{\frac{1}{3!}}_{<\frac{1}{4}} + \underbrace{\frac{1}{4!}}_{< \frac{1}{8}} + \underbrace{\frac{1}{5!}}_{< \frac{1}{16}} + \dots <
     1 + \sum_{n=0}^{+\infty} \left( \frac{1}{2} \right)^n = 3
 \end{aligned}$$
 
@@ -189,9 +191,41 @@ si può trovare la relazione $e < 3$.
 
 ```
 
+## Successioni di funzioni
+
+**Definizione.** Una successione di funzioni tra l'insieme $X$ e l'insieme $Y$, è una funzione che associa ai numeri interi $n \in \mathbb{N}$ una funzione $f_n: X \rightarrow Y$.
+
+**Limite di una successione di funzioni.** Limite "punto per punto". L'esistenza di un limite (finito?) punto per punto definisice la **convergenza puntuale**.
+
+### Convergenza
+#### Convergenza puntuale
+
+#### Convergenza uniforme
+
+Sia $\{ f_n \}_{n \in \mathbb{N}}$ una successione di funzioni $f_n:  X \rightarrow \mathbb{R}$. La serie converge uniformemente alla funzione $f$ se per ogni $\varepsilon > 0$ esiste $N \in \mathbb{N}$ tale che
+
+$|f_n(x) - f(x)| < e \ , \qquad \forall x \in X \ ,$
+
+per tutti gli $n > N$.
+
+**Proprietà.**
+- 
+- ...
+
+- La convergenza uniforme permette di invertire l'ordine delle operazioni di limite, derivata e integrale con la sommatoria nelle serie di funzioni:
+  - data una successione di funzioni derivatbili $f_n(x)$, che convergono uniformemente a $f(x)$ e le cui derivate convergono uniformemente a $g(x)$, allora
+
+     $$f'(x) = g(x)$$
+  - ...
+
+- ...
+
+**todo** discutere differenze tra i due tipi di convergenza; discutere i limiti della convergenza puntuale; discutere le proprietà
+
+## Serie di funzioni
+
+
 ## Successioni numeriche complesse
 ## Serie numeriche complesse
-## Successioni di funzioni
-## Serie di funzioni
 
 
