@@ -101,6 +101,7 @@ $$\begin{aligned}
  & \dots \\
 \end{aligned}$$
 
+
 (infinitesimal-calculus:limits:thms:infinite-simal:undetermined)=
 #### Forme indeterminate
 $$+\infty-\infty \quad , \quad 0 \cdot \mp \infty \quad , \quad \frac{\mp \infty}{\mp \infty} \quad , \quad \frac{0}{0} \quad , \quad 1^{\infty} \quad , \quad 0^0 \quad , \quad \infty^0$$
@@ -116,17 +117,43 @@ $$\lim_{x \rightarrow x_0} f(x) = \lim_{x \rightarrow x_0} h(x) = \ell \ ,$$
 
 ed esiste un intorno $U$ di $x_0$ tale che
 
-$$f(x) \le g(x) \le h(x) \quad \forall x \in U \cap X \ \{ x_0 \} \ ,$$
+$$f(x) \le g(x) \le h(x) \quad \forall x \in U \cap X \backslash \{ x_0 \} \ ,$$
 
 allora
 
 $$\lim_{x \rightarrow x_0} g(x) = \ell \ .$$
+
+```{dropdown} Dimostrazione
+Dalla definizione dei limiti di $f(x)$, $g(x)$
+
+$$|f(x) - \ell| < \varepsilon_f \qquad \rightarrow \qquad \ell - \varepsilon_f < f(x) < \ell + \varepsilon_f$$
+$$|h(x) - \ell| < \varepsilon_h \qquad \rightarrow \qquad \ell - \varepsilon_h < h(x) < \ell + \varepsilon_h$$
+
+**todo** *curare i particolari sull'intorno.*
+
+Definendo $\varepsilon_g = \max\{ \varepsilon_f, \varepsilon_h \}$ in $U$ **todo** *curare i dettagli*, usando le ipotesi del problema si può scrivere
+
+$$\ell - \varepsilon_g \le \ell - \varepsilon_f < f(x) \le g(x) \le h(x) < \ell + \varepsilon_h \le \ell + \varepsilon_g$$
+
+e quindi per  $\forall \varepsilon_g > 0$, $\exists U_{x_0,\delta}$ tale che $|g(x) - \ell|<\varepsilon_g$ per $\forall x \in U_{x_0,\delta} \backslash \{ x_0 \}$, cioè $\lim_{x \rightarrow x_0} g(x) = \ell$
+
+```
 
 **todo** *Dimostrazione? Discussione più intuitiva? Figura?*
 
 (infinitesimal-calculus:limits:thms:hopital)=
 ### Teorema di de l'Hopital
 Il teorema di de l'Hopital (o di Bernoulli, **todo** *dire due parole sulla storia? Bernoulli precettore di de l'Hopital, ricava il risultato...*) è un teorema utile per il calcolo dei limiti delle forme indeterminate $\frac{0}{0}$ e $\frac{\infty}{\infty}$. Poiché il teorema coinvolge il concetto di derivata, si rimanda alla sezione del [teorema di de l'Hopital](infinitesimal-calculus:derivatives:thm:hopital) nel capitolo sulle [derivate](infinitesimal-calculus:derivatives).
+
+(infinitesimal-calculus:limits:infinite-simal)=
+## Confronto di infiniti e infinitesimi
+Il confronto di funzioni che tendono a zero $f(x), g(x) \rightarrow 0$, o di funzioni che tendono all'infinito $f(x), g(x) \rightarrow \infty$ permette di definire degli *ordini di infinitesimi o di infiniti* **todo** *definire meglio*, a seconda del valore del limite $\frac{f(x)}{g(x)} = \ell$,
+
+- se $\ell = 0$, si può dire che $f(x)$ è un infinitesimo di ordine superiore, o un infinito di ordine inferiore, rispetto a $g(x)$ e si può indicare con la notazione di *o piccolo* $f(x) = o \left(g(x) \right)$
+
+- se $\ell$ finito diverso da zero, si può dire che $f(x)$ è un infinitesimo, o un infinito,  dello stesso ordine di $g(x)$ e si può indicare con la notazione di *o grande* $f(x) = O \left(g(x) \right)$
+
+- se $\ell$ è infinito, si può dire che $f(x)$ è un infinitesimo di ordine inferiore, o un infinito di ordine superiore, rispetto a $g(x)$; viceversa $g(x)$ è un infinitesimo di ordine superiore, o un infinito di ordine inferiore, rispetto a $f(x)$ e si può indicare con la notazione di *o piccolo* $g(x) = O \left(f(x) \right)$
 
 (infinitesimal-calculus:limits:fund)=
 ## Limiti fondamentali
@@ -136,7 +163,7 @@ $$ \lim_{x \rightarrow 0} \frac{(1+x)^a - 1}{x} = a $$
 
 $$ \lim_{x \rightarrow 0} \frac{\sin x}{x} = 1 $$
 
-$$ \lim_{x \rightarrow 0} \frac{1 - \cos^2 x}{x^2} = \frac{1}{2} $$
+$$ \lim_{x \rightarrow 0} \frac{1 - \cos x}{x^2} = \frac{1}{2} $$
 
 $$ \lim_{x \rightarrow +\infty} \left( 1 + \frac{1}{x} \right)^x = e $$
 
@@ -146,8 +173,42 @@ $$ \lim_{x \rightarrow 0} \frac{e^x}{1+x}= 1 $$
 
 $$ \lim_{x \rightarrow 0} \frac{\ln (1+x)}{x} = 1 $$
 
+```{dropdown} Dimostrazione di $\ \lim_{x \rightarrow 0} \frac{\sin x}{x} = 1 $
+Usando il teorema del confronto per le funzioni $\sin x \le x \le \tan x$ (**todo** *dimostrare con l'area delle figure geometriche $\frac{1}{2}\sin x \le \frac{1}{2} \, x \le \frac{1}{2} \tan x$), si può scrivere per $x \ne 0$
+
+$$1 \le \frac{x}{\sin x} \le \frac{\tan x}{\sin x} = \frac{1}{\cos x} .$$
+
+Il limite per $x \rightarrow 0$ delle due funzioni estreme vale $1$, quindi 
+
+$$\lim_{x \rightarrow 0} \frac{x}{\sin x} = 1 \ .$$
+
+```
+```{dropdown} Dimostrazione di $\ \lim_{x \rightarrow 0} \frac{1 - \cos x}{x^2} = \frac{1}{2} $
+Usando la formula $\cos 2 \alpha = \cos^2 \alpha - \sin^2 \alpha = 2 \cos^2 \alpha - 1 = 1 - 2 \sin^2 \alpha$, si può scrivere $1 - \cos x = 2 \sin^2 \frac{x}{2}$. Si può quindi riscrivere il limite cercato come
+
+$$\lim_{x \rightarrow 0} \frac{1 - \cos x}{x^2} = \lim_{x \rightarrow 0} \frac{ 2 \sin^2 \frac{x}{2} }{x^2} = \lim_{x \rightarrow 0} \frac{1}{2} \frac{\sin^2 \frac{x}{2}}{\left( \frac{x}{2} \right)^2} = \frac{1}{2} \underbrace{\lim_{x \rightarrow 0} \left( \frac{\sin \frac{x}{2}}{\frac{x}{2}} \right)^2}_{=1} = \frac{1}{2} \ .$$
+
+```
+
+```{dropdown} Dimostrazione di $\ \lim_{x \rightarrow 0} \frac{e^x - 1}{x}= 1 $
+
+Usando le notazioni di "o piccolo" e "o grande" per [il confronto tra infinitesimi](infinitesimal-calculus:limits:infinite-simal), si dimostra il limite desiderato,
+
+$$\lim_{x \rightarrow 0} \frac{e^x - 1}{x} = \lim_{x \rightarrow 0} \frac{\sum_{k=0}^{+\infty} \frac{x^k}{k!} - 1}{x} = \lim_{x \rightarrow 0} \frac{1 + x + o(x) - 1}{x} = \lim_{x \rightarrow 0} \left( 1 + O(x) \right) = 1 \ .$$
+
+```
+
+```{dropdown} Dimostrazione di $\ \lim_{x \rightarrow 0} \frac{e^x}{1 + x} = 1 $
+
+Usando le notazioni di "o piccolo" e "o grande" per [il confronto tra infinitesimi](infinitesimal-calculus:limits:infinite-simal), si dimostra il limite desiderato,
+
+$$\lim_{x \rightarrow 0} \frac{e^x}{1 + x} = \lim_{x \rightarrow 0} \frac{\sum_{k=0}^{+\infty} \frac{x^k}{k!}}{1+x} = \lim_{x \rightarrow 0} \frac{1 + x + o(x)}{1+x} = \lim_{x \rightarrow 0} \left( 1 + \frac{o(x)}{1+x} \right) = 1 \ .$$
+
+```
+
 Una volta compresa l'operazione di derivazione e di sviluppo in serie, si può rivisitare i limiti notevoli **todo**
 
+**todo** *Spostare nella sezione di precalcolo sulle successioni*
 Limiti di successioni. **Formula di Sterling**
 
 $$n! \sim \left(\frac{n}{e} \right)^n \qquad \text{per $n \in \mathbb{N} \rightarrow +\infty$}$$
@@ -155,7 +216,5 @@ $$n! \sim \left(\frac{n}{e} \right)^n \qquad \text{per $n \in \mathbb{N} \righta
 o
 
 $$\ln n! \sim n \ln n - n  \qquad \text{per $n \in \mathbb{N} \rightarrow +\infty$}$$
-
-## Infiniti e infinitesimi
 
 

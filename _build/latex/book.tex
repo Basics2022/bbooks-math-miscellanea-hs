@@ -85,7 +85,7 @@
         
 
 \title{Matematica per le scuole superiori}
-\date{Nov 10, 2024}
+\date{Nov 11, 2024}
 \release{}
 \author{basics}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -102,7 +102,7 @@
 
 
 \sphinxAtStartPar
-Questo libro fa parte del materiale pensato per \sphinxhref{https://basics2022.github.io/bbooks-hs}{le scuole superiori}. E’ disponibile la \sphinxhref{https://www.github.com/Basics2022/bbooks-math-hs/blob/master/\_build/latex/book.pdf}{versione in .pdf} scaricabile.
+Questo libro fa parte del materiale pensato per \sphinxhref{https://basics2022.github.io/bbooks-hs}{le scuole superiori}. E’ disponibile la \sphinxhref{https://www.github.com/Basics2022/bbooks-math-miscellanea-hs/blob/master/\_build/latex/book.pdf}{versione in .pdf} scaricabile.
 
 \sphinxAtStartPar
 \sphinxstylestrong{Obiettivi.} \sphinxstylestrong{todo}
@@ -530,7 +530,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-Nov 10, 2024
+Nov 11, 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -650,7 +650,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-Nov 10, 2024
+Nov 11, 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -759,7 +759,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-Nov 10, 2024
+Nov 11, 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -841,7 +841,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-Nov 10, 2024
+Nov 11, 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -955,7 +955,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-Nov 10, 2024
+Nov 11, 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -1229,7 +1229,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-Nov 10, 2024
+Nov 11, 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -1437,7 +1437,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-Nov 10, 2024
+Nov 11, 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -1448,7 +1448,7 @@ Nov 10, 2024
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-1 min read
+3 min read
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -1480,50 +1480,39 @@ Nov 10, 2024
 \chapter{Algebra complessa}
 \label{\detokenize{ch/algebra/complex-algebra:algebra-complessa}}\label{\detokenize{ch/algebra/complex-algebra:math-hs-algebra-complex}}\label{\detokenize{ch/algebra/complex-algebra::doc}}
 \sphinxAtStartPar
-Utilità dei numeri complessi:
+In questa sezione viene introdotto l’insieme dei numeri complessi e le operazioni su di essi che permettono di definire l’algebra complessa.
+
+\sphinxAtStartPar
+I numeri reali sono sottoinsieme dei numeri complessi, \(\mathbb{R} \subset \mathbb{C}\). La definizione di operazioni e funzioni, come l’esponenziale, sui numeri complessi viene data come \sphinxstylestrong{estensione ai numeri complessi} delle definizioni note sui numeri reali.
+
+\sphinxAtStartPar
+I numeri complessi risultano utili in molti ambiti della matematica e della scienza, dalla fisica all’ingegneria:
 \begin{itemize}
-\item {} 
-\sphinxAtStartPar
-utilizzo in molti ambiti della matematica, della fisica e dell’ingegneria: soluzione ODE, soluzione PDE, teoria delle trasformate
-
-\item {} 
-\sphinxAtStartPar
-facile rappresentazione di funzioni armoniche, grazie all’identità di Eulero
-
-\end{itemize}
-
-\sphinxAtStartPar
-\sphinxstylestrong{Argomenti}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-Definizioni e rappresentazioni
-
-\item {} 
-\sphinxAtStartPar
-Algebra:
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-operazioni
-
-\item {} 
-\sphinxAtStartPar
-equazioni e disequazioni
-
 \item {} 
 \sphinxAtStartPar
 teorema fondamentale dell’algebra
 
-\end{itemize}
-
-\end{itemize}
-
-
-\section{Definizione}
-\label{\detokenize{ch/algebra/complex-algebra:definizione}}
+\item {} 
 \sphinxAtStartPar
-I numeri complessi estendono il campo dei numeri reali, grazie all’introduzione dell’\sphinxstylestrong{unità immaginaria}, \(i\), definita come la radice quadra di \(-1\),
+rappresentazione efficace delle funzioni trigonometriche, grazie all’identità di Eulero
+
+\item {} 
+\sphinxAtStartPar
+soluzione di equazioni differenziali
+
+\item {} 
+\sphinxAtStartPar
+…
+
+\end{itemize}
+
+
+
+
+\section{Definizioni}
+\label{\detokenize{ch/algebra/complex-algebra:definizioni}}
+\sphinxAtStartPar
+I numeri complessi estendono il campo dei numeri reali, \(\mathbb{R} \subset \mathbb{C}\). Viene inizialmente definita l’\sphinxstylestrong{unità immaginaria}, \(i\), come la radice quadra di \(-1\),
 \begin{equation*}
 \begin{split}i := \sqrt{-1} \ .\end{split}
 \end{equation*}
@@ -1535,8 +1524,11 @@ L’insieme dei numeri complessi, indicato con \(\mathbb{C}\), è l’insieme di
 \sphinxAtStartPar
 con \(x, \ y \in \mathbb{R}\).
 
+
+\subsection{Operazioni: somma e moltiplicazione}
+\label{\detokenize{ch/algebra/complex-algebra:operazioni-somma-e-moltiplicazione}}
 \sphinxAtStartPar
-I numeri complessi formano la struttura algebrica di \sphinxstylestrong{campo} con le operazioni di somma e prodotto. Dati due numeri complessi \(z_1 = x_1 + i y_1\), \(z_2 = x_2 + i y_2\), grazie alle proprietà \sphinxstylestrong{todo} delle operazioni, si può scrivere
+I numeri complessi formano la struttura algebrica di \sphinxstylestrong{campo} con le operazioni di somma e prodotto. Dati due numeri complessi \(z_1 = x_1 + i y_1\), \(z_2 = x_2 + i y_2\), vengono definiti
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
@@ -1547,52 +1539,177 @@ la somma
 \item {} 
 \sphinxAtStartPar
 il prodotto,
-
-\end{itemize}
 \begin{equation*}
 \begin{split}\begin{aligned}
-z_1 \, z_2 & = (x_1 + i y_1) (x_2 + i y_2) = \\
-& = x_1 \, x_2 - y_1 \, y_2 + i ( x_1 \, y_2 + x_2 \, y_1 )
+    z_1 \, z_2 & = (x_1 + i y_1) (x_2 + i y_2) = \\
+    & = x_1 \, x_2 - y_1 \, y_2 + i ( x_1 \, y_2 + x_2 \, y_1 )
+   \end{aligned}\end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+elevamento a potenza con esponente intero, \(n \in \mathbb{N}\),
+\begin{equation*}
+\begin{split}z^n = \underbrace{z \cdot z \cdot \dots \cdot z}_{n \text{volte}}\end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+elevamento a potenza con esponente reale \sphinxstylestrong{todo} …
+
+\end{itemize}
+
+
+\subsection{Esponenziale complesso e formula di Eulero}
+\label{\detokenize{ch/algebra/complex-algebra:esponenziale-complesso-e-formula-di-eulero}}
+\sphinxAtStartPar
+Estendendo la definizione di funzione esponenziale \(e^x\) ai numeri complessi, si può scrivere
+\begin{equation*}
+\begin{split}e^z = \sum_{n = 0}^{+\infty} \frac{z^n}{n!} = \lim_{n \rightarrow +\infty} \left( 1 + \frac{z}{n} \right)^n\end{split}
+\end{equation*}\subsubsection*{Dimostrazione dell’equivalenza delle due definizioni}
+
+
+\subsubsection{Formula di Eulero}
+\label{\detokenize{ch/algebra/complex-algebra:formula-di-eulero}}
+\sphinxAtStartPar
+Per esponenti reali, vale
+\begin{equation*}
+\begin{split}e^{i x} = \cos x + i \sin x\end{split}
+\end{equation*}\subsubsection*{Dimostrazione usando la definizione come serie}
+
+\sphinxAtStartPar
+L’identità di Eulero può essere dimostrata (\sphinxstylestrong{todo} \sphinxstyleemphasis{bisogna verificare la convergenza (uniforme) delle serie?}) confrontando le serie polinomiali (di Taylor) delle funzioni \(\cos x\), \(\sin x\) definite sui numeri reali, \(x \in \mathbb{R}\)
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \cos x & = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} + \dots \\
+  \sin x & = x - \frac{x^3}{3!} + \frac{x^5}{5!} + \dots \\
 \end{aligned}\end{split}
 \end{equation*}
-
-\section{Rappresentazione nel piano complesso}
-\label{\detokenize{ch/algebra/complex-algebra:rappresentazione-nel-piano-complesso}}
 \sphinxAtStartPar
-Ogni numero complesso \(z = x + i \, y\) può essere rappresentato nel piano complesso, … \sphinxstylestrong{todo}
-
-\sphinxAtStartPar
-La rappresentazione grafica suggerisce una rappresentazione alternativa, la \sphinxstylestrong{rappresentazione polare}, con il cambio di coordinate
+con la serie che definisce l’esponenziale complesso,
 \begin{equation*}
-\begin{split}\begin{cases}
-x = r \cos \theta \\
-y = r \sin \theta
-\end{cases} \quad \rightarrow \quad 
-\begin{aligned}
-z & = r \cos \theta + i \ r \sin \theta = \\
-  & = r \left( \cos \theta + i \sin \theta \right) = r \, e^{i \, \theta} \ ,
+\begin{split}
+  e^z & = 1 + z + \frac{z^2}{2!} + \frac{z^3}{3!} + \frac{z^4}{4!} + \frac{z^5}{5!} + \dots \\
+\end{split}
+\end{equation*}
+\sphinxAtStartPar
+valutata in \(z = i x \in \mathbb{C}\)
+\begin{equation*}
+\begin{split}\begin{aligned}
+  e^{i x} 
+      & = 1 + i x + \frac{(i x)^2}{2!} + \frac{(i x)^3}{3!} + \frac{(i x)^4}{4!} + \frac{(i x)^5}{5!} + \dots = \\
+      & = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} \dots + i \left[ x - \frac{x^3}{3!} + \frac{x^5}{5!}  + \dots \right] = \\
+      & = \cos x + i \sin x \ .
 \end{aligned}\end{split}
-\end{equation*}
-\sphinxAtStartPar
-avendo anticipato qui la \sphinxstylestrong{formula di Eulero} per l’esponenziale di un numero immaginario,
-\begin{equation*}
-\begin{split}e^{i \, \theta} = \cos \theta + i \, \sin \theta \ .\end{split}
-\end{equation*}
+\end{equation*}\subsubsection*{Dimostrazione usando la definizione come limite della successione}
+
 \sphinxAtStartPar
 \sphinxstylestrong{todo}
+\begin{equation*}
+\begin{split}a_n = \left( 1 + \frac{z}{n} \right)^n = \left( 1 + \frac{x}{n} + i \frac{y}{n} \right)^n\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Il modulo di \(a_n\) tende a \(e^x\)
+\begin{equation*}
+\begin{split}r_n = \sqrt{\left(1+ \frac{x}{n}\right)^2 + \left(\frac{y}{n}\right)^2}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}n r_n = \sqrt{( n + x )^2 + y^2}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+l’argomento tende a \(\theta\)
+\begin{equation*}
+\begin{split}\tan \theta_n = \frac{\frac{y}{n}}{1 + \frac{x}{n}} = \frac{y}{x + n}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\begin{aligned}
+\sin \theta_n & = \frac{y}{n \, r_n} \\
+\cos \theta_n & = \frac{x+n}{n \, r_n}
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Usando la \sphinxstylestrong{formula di de Moivre}
+\begin{equation*}
+\begin{split}( \cos x + i \sin x)^n = \cos( n x ) + i \sin ( n x )\end{split}
+\end{equation*}
+\sphinxAtStartPar
+si può scrivere
+\begin{equation*}
+\begin{split}\begin{aligned}
+  a_n & = \left( 1 + \frac{x}{n} + i \frac{y}{n} \right)^n = \\
+      & = \left( r_n \cos \theta_n + i r_n \sin \theta \right)^n = \\
+      & = r_n^n \cdot \left[ \cos ( n \theta_n ) + i \sin (n \theta_n) \right]
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Per \(n \rightarrow \infty\)
+\begin{equation*}
+\begin{split}\theta_n \sim \tan \theta_n = \frac{y}{x+n} \sim \frac{y}{n}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}n \theta_n \sim y\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\begin{aligned}
+  r_n^n & = \left[ \left( 1 + \frac{x}{n} \right)^2 + \left( \frac{y}{n} \right)^2 \right]^{\frac{n}{2}} = \\
+        & = \left( 1 + \frac{x}{n} \right)^{n} \left[ 1 + \left(\frac{y}{n+x}\right)^2 \right]^{\frac{n}{2}} = \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Il primo fattore è asintotico a \(e^x\),
+\begin{equation*}
+\begin{split}\left( 1 + \frac{x}{n} \right)^n \sim e^x \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Il secondo fattore, con il “completamento della definizione di esponenziale”, può essere riscritto come
+\begin{equation*}
+\begin{split}\left[ 1 + \left(\frac{y}{n+x}\right)^2 \right]^{\frac{n}{2}} = \left\{ \left[ 1 + \left(\frac{y}{n+x}\right)^2 \right]^{\left(\frac{n+x}{y}\right)^2} \right\}^{\frac{n y^2}{2(n+x)^2}} \sim e^0 = 1 \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Il termine \(r_n^n\) tende quindi a \(e^x\).
+
+\sphinxAtStartPar
+Il limite dei termini \(a_n\) della successione che definisce l’esponenziale complesso può quindi essere scritto come
+\begin{equation*}
+\begin{split}e^z = e^x \left( \cos y + i \sin y \right) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Si trova quindi l’identità di Eulero usando la proprietà delle potenze estesa ai numeri complessi,
+\begin{equation*}
+\begin{split}e^z = e^{x + iy} = e^x \, e^{i y} =  e^x \left( \cos y + i \sin y \right)
+\rightarrow
+e^{iy} = \cos y + i \sin y \ .
+\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{todo} …
+
+
+\subsection{Rappresentazione nel piano complesso}
+\label{\detokenize{ch/algebra/complex-algebra:rappresentazione-nel-piano-complesso}}
+\sphinxAtStartPar
+Ogni numero complesso \(z \subset \mathbb{C}\) può essere associato a un punto del piano complesso \(\mathbb{C}\); l’uso di coordinate cartesiane o polari per la descrizione dei punti del piano \(\mathbb{R}^2\) suggerisce due tipi di rappresentazioni per un numero complesso:
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
-Riferimento alla formula di Eulero. Dimostrazione con serie? Cosa serve? Serie di Taylor? Crietri di convergenza delle serie?
-
+la \sphinxstylestrong{rappresentazione cartesiana} associa l’asse delle ascisse alla parte reale \(x\) e l’asse delle ordinate alla parte immaginaria \(y\),
+\begin{equation*}
+\begin{split}z = x + i y\end{split}
+\end{equation*}
 \item {} 
 \sphinxAtStartPar
-Riferimento alla definizione di esponenziale
-
+la \sphinxstylestrong{rappresentazione polare}; usando la legge di trasformazione tra coordinate polari \((r, \theta)\) e coordinate cartesiante \((x,y)\)
+\begin{equation*}
+\begin{split}\begin{cases}
+    x = r \cos \theta \\
+    y = r \sin \theta
+  \end{cases}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e la formula di Eulero, \(e^{i \theta} = \cos \theta + i \theta\), è possibile scrivere un numero complesso in forma polare,
+\begin{equation*}
+\begin{split}z = x + i y = r \cos \theta + i r \sin \theta = r \left( \cos \theta + i \sin \theta \right) = r e^{i \theta} \ .\end{split}
+\end{equation*}
 \end{itemize}
 
+\begin{sphinxadmonition}{note}{Note:}
 \sphinxAtStartPar
-\sphinxstylestrong{todo} Le due rappresentazioni non sono equivalenti. Mentre la rappresentazione cartesiana permette di creare una relazione biunivoca tra i numeri complessi \(z = x + i \ y\) e i punti nel piano \((x, \ y)\), la rappresentazione polare assegna infiniti numeri complessi, seppur di uguale valore \(r \, e^{i \theta} = r \, e^{i (\theta + n \, 2 \pi)}\), con \(n \in \mathbb{Z}\) allo stesso punto nello spazio.
+Le due rappresentazioni non sono equivalenti. Mentre la rappresentazione cartesiana permette di creare una relazione biunivoca tra i numeri complessi \(z = x + i \ y\) e i punti nel piano \((x, \ y)\), la rappresentazione polare assegna infiniti numeri complessi, seppur di uguale valore \(r \, e^{i \theta} = r \, e^{i (\theta + n \, 2 \pi)}\), con \(n \in \mathbb{Z}\) allo stesso punto nello spazio.
+\end{sphinxadmonition}
 
 
 \section{Operazioni con i numeri complessi}
@@ -1611,23 +1728,111 @@ prodotto
 \end{equation*}
 \item {} 
 \sphinxAtStartPar
-valore assoluto
+complesso coniugato
 \begin{equation*}
-\begin{split}|z| = \sqrt{x^2 + y^2} = r\end{split}
+\begin{split}z^* = x - i y = r e^{-i\theta} \end{split}
 \end{equation*}
 \item {} 
 \sphinxAtStartPar
-potenza
+valore assoluto
+\begin{equation*}
+\begin{split}|z| = \sqrt{x^2 + y^2} = r = \sqrt{z^* z}\end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+potenza ed esponenziale
+\begin{equation*}
+\begin{split}z^a = \left(r e^{i\theta} \right)^a = r^a e^{i a \theta}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}a^{i y} = \left(e^{\ln a} \right)^{iy} = e^{i y \ln a} = \cos ( y \ln a ) + i \sin ( y \ln a )\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}a^z = a^{x+iy} = a^x a^{iy} = a^x \left( \cos ( y \ln a ) + i \sin ( y \ln a ) \right)\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}z^w = \left(r e^{i \theta}\right)^{( u + i v )} = r^{u+iv} e^{i \theta (u+iv)} = r^u e^{-\theta v} e^{i \left( v \ln r + \theta u \right)} \end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{todo} discutere il caso di potenze intere, potenze razionali, potenze irrazionali,… \sphinxstyleemphasis{con grafico}
 
 \item {} 
 \sphinxAtStartPar
-esponenziale
-
-\item {} 
+logaritmo, con base reale positiva, \(a > 0\)
+\begin{equation*}
+\begin{split}\log_a z = \log_a \left( r \, e^{i ( \theta + n \, 2 \pi )} \right) = \log_a r + \log_a e^{i (\theta + n \, 2 \pi )} = \log_a r + i \, \frac{1}{\ln a} \, \left( \theta + n \, 2 \pi \right)\end{split}
+\end{equation*}
 \sphinxAtStartPar
-logaritmo
-
+avendo usato le proprietà dei logaritmi
+\begin{equation*}
+\begin{split}\begin{aligned}
+     \log ( a b ) & = \log a + \log b \\
+     \log_a b & = \frac{\log_c b}{\log_c a}
+   \end{aligned}\end{split}
+\end{equation*}
 \end{itemize}
+
+
+
+
+\section{Altri argomenti/proprietà}
+\label{\detokenize{ch/algebra/complex-algebra:altri-argomenti-proprieta}}\begin{equation*}
+\begin{split}\begin{aligned}
+  \text{re} \{ z \} & = \frac{1}{2} \left( z + z^* \right) \\
+  \text{im} \{ z \} & = \frac{1}{2} \left( z - z^* \right) \\
+\end{aligned}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}e^{i \alpha} e^{i \beta} = e^{i (\alpha + \beta)}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\left( e^{i \alpha} \right)^n = e^{i n \alpha}\end{split}
+\end{equation*}
+
+\subsection{Formula di de Moivre}
+\label{\detokenize{ch/algebra/complex-algebra:formula-di-de-moivre}}\begin{equation*}
+\begin{split}(\cos x + i \sin x)^n = \cos(nx) + i \sin(nx) \ , \quad n \in \mathbb{Z}\end{split}
+\end{equation*}\subsubsection*{Dimostrazione per induzione}
+
+\sphinxAtStartPar
+Per \(n \in \mathbb{N}\), si procede per induzione \sphinxstylestrong{todo} \sphinxstyleemphasis{aggiungere i capitoli sulla logica? E un riferimento ad essi?} Per \(n = 1\) la formula di de Moivre si riduce a un’identità. Supponiamo quindi che sia valida per un intero \(n > 1\) e verifichiamo se questo implica che sia valida anche per \(n+1\)
+\begin{equation*}
+\begin{split}\begin{aligned}
+  (\cos x + i \sin x)^{n+1} & = (\cos x + i \sin x)^n \, (\cos x + i \sin x) = \\
+                            & = \left(\cos (nx)+ i \sin (nx) \right) \, (\cos x + i \sin x) = \\
+                            & = \cos(nx) \cos x - \sin(nx) \sin x + i \left( \cos(nx) \sin x + \sin(nx) \cos x \right) = \\
+                            & = \cos( (n+1)x ) + i \sin( (n+1) x ) \ .
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Per \(n = 0\), la formula di de Moivre si riduce all’identità \(1 \equiv 1\).
+
+\sphinxAtStartPar
+Per \(m := -n \in \mathbb{N}\), la formula di de Moivre può essere verificata usando la formula di de Moivre per \(m > 0\) e razionalizzando la frazione,
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \left( \cos x + i \sin x \right)^{n} & = \frac{1}{\left( \cos x + i \sin x \right)^m} = \\
+   & = \frac{1}{\left( \cos (m x) + i \sin (m x) \right)} = \\
+   & = \frac{\cos( m x) - i \sin (m x)}{\underbrace{\cos^2(mx) + \sin^2(mx)}_{=1}} = \cos(mx) - i \sin(mx) = \cos(nx) + i \sin(nx) \ .
+\end{aligned}\end{split}
+\end{equation*}
+
+\subsection{Teorema fondamentale dell’algebra}
+\label{\detokenize{ch/algebra/complex-algebra:teorema-fondamentale-dell-algebra}}
+\sphinxAtStartPar
+Ogni polinomio a coefficienti reali (\sphinxstylestrong{todo} o anche complessi) di grado \(n\), \(p_n(x) = a_n x^n + a_{n-1} x^{n-1} + \dots a_1 x + a_0\) può essere fattorizzato come prodotto di \(n\) binomi
+\begin{equation*}
+\begin{split}p_n(x) = a_n ( x - z_1 )( x - z_2 )\dots( x - z_n) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e i numeri \(z_k \in \mathbb{C}\), \(k = 1:n\), sono chiamati \sphinxstylestrong{zeri} del polinomio.
+
+\sphinxAtStartPar
+Come diretta conseguenza, ogni equazione polinomiale di grado \(n\), \(p_n(x) = 0\), ammette \(n\) soluzioni complesse coincidenti con gli zeri \(z_k\) del polinomio \(p_n(x)\).
+
+
+\section{Equazioni e disequazioni con i numeri complessi}
+\label{\detokenize{ch/algebra/complex-algebra:equazioni-e-disequazioni-con-i-numeri-complessi}}
+\sphinxAtStartPar
+Le equazioni e le disequazioni con i numeri complessi possono essere ricondotti a problemi che coinvolgono una coppia di variabili reali, tipicamente le componenti reale e immaginaria, o il modulo e l’argomento, che descrivono il piano dei numeri complessi.
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo}
 
 \sphinxstepscope
 
@@ -1674,7 +1879,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-Nov 10, 2024
+Nov 11, 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -1872,7 +2077,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-Nov 10, 2024
+Nov 11, 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -2021,7 +2226,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-Nov 10, 2024
+Nov 11, 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3378,7 +3583,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-Nov 10, 2024
+Nov 11, 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3519,7 +3724,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-Nov 10, 2024
+Nov 11, 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3621,7 +3826,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-Nov 10, 2024
+Nov 11, 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3722,7 +3927,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-Nov 10, 2024
+Nov 11, 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3783,8 +3988,8 @@ serie di funzioni
 \end{itemize}
 
 
-\section{Successioni a di numeri reali}
-\label{\detokenize{ch/series:successioni-a-di-numeri-reali}}\label{\detokenize{ch/series:math-hs-series-real-sequences}}
+\section{Successioni di numeri reali}
+\label{\detokenize{ch/series:successioni-di-numeri-reali}}\label{\detokenize{ch/series:math-hs-series-real-sequences}}
 \sphinxAtStartPar
 \sphinxstylestrong{Definizione.} Una successione di numeri reali è una funzione \(f: \mathbb{N} \rightarrow \mathbb{R}\), che associa ai numeri interi \(n \in \mathbb{N}\) un numero reale \(a_n = f(n)\).
 
@@ -3853,8 +4058,8 @@ Se il limite esiste è unico (\sphinxstylestrong{todo} \sphinxstyleemphasis{se \
 \sphinxstyleemphasis{elencare operazioni, mettere dimostrazione in una sezione di dimostrazioni/esercizi, nello stile Schaum}
 
 
-\section{Serie numeriche reali}
-\label{\detokenize{ch/series:serie-numeriche-reali}}\label{\detokenize{ch/series:math-hs-series-real-series}}
+\section{Serie di numeri reali}
+\label{\detokenize{ch/series:serie-di-numeri-reali}}\label{\detokenize{ch/series:math-hs-series-real-series}}
 \sphinxAtStartPar
 \sphinxstylestrong{Definizione.} Data una \sphinxstylestrong{successione} di elementi \(\{ a_n \}\), \(a_n \in \mathbb{R}\), la serie associata è la somma infinita
 \begin{equation*}
@@ -4169,23 +4374,23 @@ data una successione di funzioni derivatbili \(f_n(x)\), che convergono uniforme
 \sphinxstylestrong{todo} \sphinxstyleemphasis{valutare le proprietà di convergenza (e specificare gli intervalli di convergenza) di queste funzioni}
 
 
-\section{Successioni numeriche complesse}
-\label{\detokenize{ch/series:successioni-numeriche-complesse}}\label{\detokenize{ch/series:math-hs-series-complex-sequences}}\phantomsection\label{\detokenize{ch/series:math-hs-series-complex-series}}
+\section{Successioni di numeri complessi}
+\label{\detokenize{ch/series:successioni-di-numeri-complessi}}\label{\detokenize{ch/series:math-hs-series-complex-sequences}}\phantomsection\label{\detokenize{ch/series:math-hs-series-complex-series}}
 \sphinxAtStartPar
 \sphinxstylestrong{todo} \sphinxstyleemphasis{Fare riferimento ad algebra complessa. La funzione \(e^{z}\) è necessaria a introdurre la rappresentazione polare dei numeri complessi.}
 
 
-\section{Serie numeriche complesse}
-\label{\detokenize{ch/series:serie-numeriche-complesse}}
+\section{Serie di numeri complessi}
+\label{\detokenize{ch/series:serie-di-numeri-complessi}}
 \sphinxAtStartPar
 \sphinxstylestrong{todo} \sphinxstyleemphasis{Fare riferimento ad algebra complessa. La funzione \(e^{z}\) è necessaria a introdurre la rappresentazione polare dei numeri complessi.}
 
 
-\section{Successioni di funzioni reali}
-\label{\detokenize{ch/series:math-hs-series-fun-complex-sequences}}\label{\detokenize{ch/series:id2}}
+\section{Successioni di funzioni complesse}
+\label{\detokenize{ch/series:successioni-di-funzioni-complesse}}\label{\detokenize{ch/series:math-hs-series-fun-complex-sequences}}
 
-\section{Serie di funzioni reali}
-\label{\detokenize{ch/series:math-hs-series-fun-complex-series}}\label{\detokenize{ch/series:id3}}
+\section{Serie di funzioni complesse}
+\label{\detokenize{ch/series:serie-di-funzioni-complesse}}\label{\detokenize{ch/series:math-hs-series-fun-complex-series}}
 \sphinxstepscope
 
 
@@ -4604,7 +4809,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-Nov 10, 2024
+Nov 11, 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -4691,7 +4896,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-Nov 10, 2024
+Nov 11, 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -4978,13 +5183,32 @@ Siano \(f\), \(g\), \(h: \ X \in \mathbb{R} \rightarrow \mathbb{R}\), e dato un 
 \sphinxAtStartPar
 ed esiste un intorno \(U\) di \(x_0\) tale che
 \begin{equation*}
-\begin{split}f(x) \le g(x) \le h(x) \quad \forall x \in U \cap X \ \{ x_0 \} \ ,\end{split}
+\begin{split}f(x) \le g(x) \le h(x) \quad \forall x \in U \cap X \backslash \{ x_0 \} \ ,\end{split}
 \end{equation*}
 \sphinxAtStartPar
 allora
 \begin{equation*}
 \begin{split}\lim_{x \rightarrow x_0} g(x) = \ell \ .\end{split}
+\end{equation*}\subsubsection*{Dimostrazione}
+
+\sphinxAtStartPar
+Dalla definizione dei limiti di \(f(x)\), \(g(x)\)
+\begin{equation*}
+\begin{split}|f(x) - \ell| < \varepsilon_f \qquad \rightarrow \qquad \ell - \varepsilon_f < f(x) < \ell + \varepsilon_f\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}|h(x) - \ell| < \varepsilon_h \qquad \rightarrow \qquad \ell - \varepsilon_h < h(x) < \ell + \varepsilon_h\end{split}
 \end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{todo} \sphinxstyleemphasis{curare i particolari sull’intorno.}
+
+\sphinxAtStartPar
+Definendo \(\varepsilon_g = \max\{ \varepsilon_f, \varepsilon_h \}\) in \(U\) \sphinxstylestrong{todo} \sphinxstyleemphasis{curare i dettagli}, usando le ipotesi del problema si può scrivere
+\begin{equation*}
+\begin{split}\ell - \varepsilon_g \le \ell - \varepsilon_f < f(x) \le g(x) \le h(x) < \ell + \varepsilon_h \le \ell + \varepsilon_g\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e quindi per  \(\forall \varepsilon_g > 0\), \(\exists U_{x_0,\delta}\) tale che \(|g(x) - \ell|<\varepsilon_g\) per \(\forall x \in U_{x_0,\delta} \backslash \{ x_0 \}\), cioè \(\lim_{x \rightarrow x_0} g(x) = \ell\)
+
 \sphinxAtStartPar
 \sphinxstylestrong{todo} \sphinxstyleemphasis{Dimostrazione? Discussione più intuitiva? Figura?}
 
@@ -5004,7 +5228,7 @@ In questa sezione vengono calcolati alcuni limiti fondamentali. Questi limiti po
 \end{equation*}\begin{equation*}
 \begin{split} \lim_{x \rightarrow 0} \frac{\sin x}{x} = 1 \end{split}
 \end{equation*}\begin{equation*}
-\begin{split} \lim_{x \rightarrow 0} \frac{1 - \cos^2 x}{x^2} = \frac{1}{2} \end{split}
+\begin{split} \lim_{x \rightarrow 0} \frac{1 - \cos x}{x^2} = \frac{1}{2} \end{split}
 \end{equation*}\begin{equation*}
 \begin{split} \lim_{x \rightarrow +\infty} \left( 1 + \frac{1}{x} \right)^x = e \end{split}
 \end{equation*}\begin{equation*}
@@ -5013,11 +5237,27 @@ In questa sezione vengono calcolati alcuni limiti fondamentali. Questi limiti po
 \begin{split} \lim_{x \rightarrow 0} \frac{e^x}{1+x}= 1 \end{split}
 \end{equation*}\begin{equation*}
 \begin{split} \lim_{x \rightarrow 0} \frac{\ln (1+x)}{x} = 1 \end{split}
+\end{equation*}\subsubsection*{Dimostrazione di \protect\( \lim_{x \rightarrow 0} \frac{\sin x}{x} = 1 \protect\)}
+
+\sphinxAtStartPar
+Usando il teorema del confronto per le funzioni \(\sin x \le x \le \tan x\) (\sphinxstylestrong{todo} *dimostrare con l’area delle figure geometriche \(\frac{1}{2}\sin x \le \frac{1}{2} \, x \le \frac{1}{2} \tan x\)), si può scrivere per \(x \ne 0\)
+\begin{equation*}
+\begin{split}1 \le \frac{x}{\sin x} \le \frac{\tan x}{\sin x} = \frac{1}{\cos x} .\end{split}
 \end{equation*}
+\sphinxAtStartPar
+Il limite per \(x \rightarrow 0\) delle due funzioni estreme vale \(1\), quindi
+\begin{equation*}
+\begin{split}\lim_{x \rightarrow 0} \frac{x}{\sin x} = 1 \ .\end{split}
+\end{equation*}\subsubsection*{Dimostrazione di \protect\( \lim_{x \rightarrow 0} \frac{1 - \cos x}{x^2} = \frac{1}{2} \protect\)}
+
+\sphinxAtStartPar
+Usando la formula \(\cos 2 \alpha = \cos^2 \alpha - \sin^2 \alpha = 2 \cos^2 \alpha - 1 = 1 - 2 \sin^2 \alpha\), si può scrivere \(1 - \cos x = 2 \sin^2 \frac{x}{2}\)
+
 \sphinxAtStartPar
 Una volta compresa l’operazione di derivazione e di sviluppo in serie, si può rivisitare i limiti notevoli \sphinxstylestrong{todo}
 
 \sphinxAtStartPar
+\sphinxstylestrong{todo} \sphinxstyleemphasis{Spostare nella sezione di precalcolo sulle successioni}
 Limiti di successioni. \sphinxstylestrong{Formula di Sterling}
 \begin{equation*}
 \begin{split}n! \sim \left(\frac{n}{e} \right)^n \qquad \text{per $n \in \mathbb{N} \rightarrow +\infty$}\end{split}
@@ -5642,7 +5882,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-Nov 10, 2024
+Nov 11, 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -5954,7 +6194,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-Nov 10, 2024
+Nov 11, 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -6058,7 +6298,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-Nov 10, 2024
+Nov 11, 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -6486,7 +6726,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-Nov 10, 2024
+Nov 11, 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
