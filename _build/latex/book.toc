@@ -96,14 +96,16 @@
 \contentsline {subsubsection}{Serie a termini concordi}{64}{subsubsection*.25}%
 \contentsline {subsubsection}{Serie a termini discordi}{65}{subsubsection*.26}%
 \contentsline {subsection}{\numberline {12.2.2}Esempi}{65}{subsection.12.2.2}%
-\contentsline {section}{\numberline {12.3}Successioni di funzioni}{67}{section.12.3}%
+\contentsline {section}{\numberline {12.3}Successioni di funzioni reali}{67}{section.12.3}%
 \contentsline {subsection}{\numberline {12.3.1}Convergenza}{67}{subsection.12.3.1}%
 \contentsline {subsubsection}{Convergenza puntuale}{67}{subsubsection*.28}%
 \contentsline {subsubsection}{Convergenza uniforme}{67}{subsubsection*.29}%
-\contentsline {section}{\numberline {12.4}\sphinxstylestrong {Proprietà.}}{67}{section.12.4}%
-\contentsline {section}{\numberline {12.5}Serie di funzioni}{68}{section.12.5}%
-\contentsline {section}{\numberline {12.6}Successioni numeriche complesse}{68}{section.12.6}%
-\contentsline {section}{\numberline {12.7}Serie numeriche complesse}{68}{section.12.7}%
+\contentsline {section}{\numberline {12.4}Serie di funzioni reali}{68}{section.12.4}%
+\contentsline {subsection}{\numberline {12.4.1}Serie polinomiali}{68}{subsection.12.4.1}%
+\contentsline {section}{\numberline {12.5}Successioni numeriche complesse}{68}{section.12.5}%
+\contentsline {section}{\numberline {12.6}Serie numeriche complesse}{68}{section.12.6}%
+\contentsline {section}{\numberline {12.7}Successioni di funzioni reali}{68}{section.12.7}%
+\contentsline {section}{\numberline {12.8}Serie di funzioni reali}{68}{section.12.8}%
 \contentsline {chapter}{\numberline {13}Trigonometria}{69}{chapter.13}%
 \contentsline {section}{\numberline {13.1}Definizione delle funzioni trigonometriche e relazione fondamentale}{69}{section.13.1}%
 \contentsline {subsection}{\numberline {13.1.1}Seno e coseno}{69}{subsection.13.1.1}%
@@ -118,33 +120,31 @@
 \contentsline {section}{\numberline {14.2}Funzione esponenziale e logaritmo di variabile reale}{73}{section.14.2}%
 \contentsline {subsection}{\numberline {14.2.1}Funzione esponenziale, \(e^x\)}{73}{subsection.14.2.1}%
 \contentsline {subsection}{\numberline {14.2.2}Funzione logaritmo naturale, \(\text {ln} \tmspace +\thinmuskip {.1667em} x\)}{74}{subsection.14.2.2}%
-\contentsline {section}{\numberline {14.3}Esponenziale e logaritmo \sphinxhyphen {} dimostrazioni}{74}{section.14.3}%
-\contentsline {subsection}{\numberline {14.3.1}Convergenza della serie di funzioni \(\sum _{n=0}^{\infty } \frac {x^n}{n!}\) in ogni intervallo limitato}{74}{subsection.14.3.1}%
-\contentsline {subsection}{\numberline {14.3.2}Equivalenza delle due definizioni}{74}{subsection.14.3.2}%
-\contentsline {subsection}{\numberline {14.3.3}Giustificazione della notazione \(\ e^x\)}{75}{subsection.14.3.3}%
+\contentsline {section}{\numberline {14.3}Funzione esponenziale e logaritmo di variabile complessa}{74}{section.14.3}%
+\contentsline {section}{\numberline {14.4}Esponenziale e logaritmo \sphinxhyphen {} dimostrazioni}{74}{section.14.4}%
 \contentsline {chapter}{\numberline {15}Funzioni multi\sphinxhyphen {}variabile}{77}{chapter.15}%
 \contentsline {part}{V\hspace {1em}Calcolo}{79}{part.5}%
 \contentsline {chapter}{\numberline {16}Introduzione al calcolo}{83}{chapter.16}%
 \contentsline {chapter}{\numberline {17}Calcolo infinitesimale}{85}{chapter.17}%
 \contentsline {section}{\numberline {17.1}Introduzione all’analisi}{86}{section.17.1}%
 \contentsline {subsection}{\numberline {17.1.1}Funzioni reali a variabile reale, \(f: \symbb {R} \rightarrow \symbb {R}\)}{86}{subsection.17.1.1}%
-\contentsline {subsubsection}{Definizione}{86}{subsubsection*.30}%
-\contentsline {subsubsection}{Rappresentazione grafica}{86}{subsubsection*.31}%
+\contentsline {subsubsection}{Definizione}{86}{subsubsection*.34}%
+\contentsline {subsubsection}{Rappresentazione grafica}{86}{subsubsection*.35}%
 \contentsline {subsection}{\numberline {17.1.2}Limiti}{86}{subsection.17.1.2}%
-\contentsline {subsubsection}{Cenni di topologia per il calcolo}{86}{subsubsection*.32}%
-\contentsline {subsubsection}{Definizione di limite}{86}{subsubsection*.33}%
+\contentsline {subsubsection}{Cenni di topologia per il calcolo}{86}{subsubsection*.36}%
+\contentsline {subsubsection}{Definizione di limite}{86}{subsubsection*.37}%
 \contentsline {subsection}{\numberline {17.1.3}Funzioni continue}{87}{subsection.17.1.3}%
-\contentsline {subsubsection}{Definizione}{87}{subsubsection*.34}%
-\contentsline {subsubsection}{Teoremi}{87}{subsubsection*.35}%
-\contentsline {paragraph}{Teorema di Weierstrass}{87}{paragraph*.36}%
-\contentsline {paragraph}{Teorema della permanenza del segno}{87}{paragraph*.37}%
-\contentsline {paragraph}{Teorema dei valori intermedi}{87}{paragraph*.38}%
+\contentsline {subsubsection}{Definizione}{87}{subsubsection*.38}%
+\contentsline {subsubsection}{Teoremi}{87}{subsubsection*.39}%
+\contentsline {paragraph}{Teorema di Weierstrass}{87}{paragraph*.40}%
+\contentsline {paragraph}{Teorema della permanenza del segno}{87}{paragraph*.41}%
+\contentsline {paragraph}{Teorema dei valori intermedi}{87}{paragraph*.42}%
 \contentsline {subsection}{\numberline {17.1.4}Teoremi sui limiti}{87}{subsection.17.1.4}%
-\contentsline {subsubsection}{Operazioni coi limiti}{87}{subsubsection*.39}%
-\contentsline {paragraph}{Limiti infiniti e infinitesimi}{88}{paragraph*.40}%
-\contentsline {paragraph}{Forme indeterminate}{88}{paragraph*.41}%
-\contentsline {subsubsection}{Teorema del confronto}{88}{subsubsection*.42}%
-\contentsline {subsubsection}{Teorema di de l’Hopital}{88}{subsubsection*.43}%
+\contentsline {subsubsection}{Operazioni coi limiti}{87}{subsubsection*.43}%
+\contentsline {paragraph}{Limiti infiniti e infinitesimi}{88}{paragraph*.44}%
+\contentsline {paragraph}{Forme indeterminate}{88}{paragraph*.45}%
+\contentsline {subsubsection}{Teorema del confronto}{88}{subsubsection*.46}%
+\contentsline {subsubsection}{Teorema di de l’Hopital}{88}{subsubsection*.47}%
 \contentsline {subsection}{\numberline {17.1.5}Limiti fondamentali}{88}{subsection.17.1.5}%
 \contentsline {subsection}{\numberline {17.1.6}Infiniti e infinitesimi}{89}{subsection.17.1.6}%
 \contentsline {section}{\numberline {17.2}Derivate}{89}{section.17.2}%
@@ -154,24 +154,24 @@
 \contentsline {subsection}{\numberline {17.2.4}Derivate fondamentali}{91}{subsection.17.2.4}%
 \contentsline {subsection}{\numberline {17.2.5}Derivate di ordine superiore}{93}{subsection.17.2.5}%
 \contentsline {subsection}{\numberline {17.2.6}Applicazioni}{93}{subsection.17.2.6}%
-\contentsline {subsubsection}{Espansioni in serie di Taylor e MacLaurin}{93}{subsubsection*.49}%
-\contentsline {paragraph}{Esempi}{94}{paragraph*.50}%
-\contentsline {subsubsection}{Studio di funzione}{95}{subsubsection*.51}%
-\contentsline {subsubsection}{Ottimizzazione}{95}{subsubsection*.52}%
+\contentsline {subsubsection}{Espansioni in serie di Taylor e MacLaurin}{93}{subsubsection*.53}%
+\contentsline {paragraph}{Esempi}{94}{paragraph*.54}%
+\contentsline {subsubsection}{Studio di funzione}{95}{subsubsection*.55}%
+\contentsline {subsubsection}{Ottimizzazione}{95}{subsubsection*.56}%
 \contentsline {section}{\numberline {17.3}Integrali}{95}{section.17.3}%
 \contentsline {subsection}{\numberline {17.3.1}Definizioni}{95}{subsection.17.3.1}%
-\contentsline {subsubsection}{Interpretazione geometrica}{95}{subsubsection*.53}%
-\contentsline {subsubsection}{Integrale definito}{95}{subsubsection*.54}%
-\contentsline {paragraph}{Proprietà dell’integrale definito}{95}{paragraph*.55}%
-\contentsline {subsubsection}{Integrale indefinito}{96}{subsubsection*.57}%
+\contentsline {subsubsection}{Interpretazione geometrica}{95}{subsubsection*.57}%
+\contentsline {subsubsection}{Integrale definito}{95}{subsubsection*.58}%
+\contentsline {paragraph}{Proprietà dell’integrale definito}{95}{paragraph*.59}%
+\contentsline {subsubsection}{Integrale indefinito}{96}{subsubsection*.61}%
 \contentsline {subsection}{\numberline {17.3.2}Teoremi}{97}{subsection.17.3.2}%
 \contentsline {subsection}{\numberline {17.3.3}Integrali fondamentali}{98}{subsection.17.3.3}%
 \contentsline {subsection}{\numberline {17.3.4}Regole di integrazione}{98}{subsection.17.3.4}%
-\contentsline {subsubsection}{Integrazione per parti}{98}{subsubsection*.61}%
-\contentsline {subsubsection}{Integrazione con sostituzione}{98}{subsubsection*.62}%
+\contentsline {subsubsection}{Integrazione per parti}{98}{subsubsection*.65}%
+\contentsline {subsubsection}{Integrazione con sostituzione}{98}{subsubsection*.66}%
 \contentsline {subsection}{\numberline {17.3.5}Tavola degli integrali indefiniti più comuni}{99}{subsection.17.3.5}%
 \contentsline {subsection}{\numberline {17.3.6}Problemi}{99}{subsection.17.3.6}%
-\contentsline {subsubsection}{Calcolo integrali indefiniti}{99}{subsubsection*.63}%
+\contentsline {subsubsection}{Calcolo integrali indefiniti}{99}{subsubsection*.67}%
 \contentsline {section}{\numberline {17.4}Equazioni differenziali ordinarie}{100}{section.17.4}%
 \contentsline {chapter}{\numberline {18}Introduzione al calcolo multi\sphinxhyphen {}variabile}{103}{chapter.18}%
 \contentsline {section}{\numberline {18.1}Limite di una funzione di più variabili}{103}{section.18.1}%
@@ -181,8 +181,8 @@
 \contentsline {subsection}{\numberline {18.2.3}Differenziale}{104}{subsection.18.2.3}%
 \contentsline {section}{\numberline {18.3}Integrali su domini multi\sphinxhyphen {}dimensionali}{105}{section.18.3}%
 \contentsline {subsection}{\numberline {18.3.1}Definizioni}{105}{subsection.18.3.1}%
-\contentsline {subsubsection}{Interpretazione geometrica}{105}{subsubsection*.64}%
-\contentsline {subsubsection}{Proprietà dell’integrale definito}{105}{subsubsection*.65}%
+\contentsline {subsubsection}{Interpretazione geometrica}{105}{subsubsection*.68}%
+\contentsline {subsubsection}{Proprietà dell’integrale definito}{105}{subsubsection*.69}%
 \contentsline {subsection}{\numberline {18.3.2}Teoremi}{105}{subsection.18.3.2}%
 \contentsline {subsection}{\numberline {18.3.3}Regole di integrazione}{105}{subsection.18.3.3}%
 \contentsline {subsection}{\numberline {18.3.4}Esempi}{105}{subsection.18.3.4}%

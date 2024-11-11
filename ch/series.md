@@ -12,6 +12,7 @@
 - serie numeriche
 - serie di funzioni
 
+(math-hs:series:real:sequences)=
 ## Successioni a di numeri reali
 
 **Definizione.** Una successione di numeri reali è una funzione $f: \mathbb{N} \rightarrow \mathbb{R}$, che associa ai numeri interi $n \in \mathbb{N}$ un numero reale $a_n = f(n)$.
@@ -47,6 +48,7 @@ Se il limite esiste è unico (**todo** *se $\ell \in T$, con $T$ spazio di Hasud
 ### Criteri di convergenza
 *elencare operazioni, mettere dimostrazione in una sezione di dimostrazioni/esercizi, nello stile Schaum*
 
+(math-hs:series:real:series)=
 ## Serie numeriche reali
 
 **Definizione.** Data una **successione** di elementi $\{ a_n \}$, $a_n \in \mathbb{R}$, la serie associata è la somma infinita
@@ -191,26 +193,30 @@ si può trovare la relazione $e < 3$.
 
 ```
 
-## Successioni di funzioni
+(math-hs:series:fun:sequences)=
+## Successioni di funzioni reali
 
 **Definizione.** Una successione di funzioni tra l'insieme $X$ e l'insieme $Y$, è una funzione che associa ai numeri interi $n \in \mathbb{N}$ una funzione $f_n: X \rightarrow Y$.
 
-**Limite di una successione di funzioni.** Limite "punto per punto". L'esistenza di un limite (finito?) punto per punto definisice la **convergenza puntuale**.
+**Limite di una successione di funzioni.** Limite "punto per punto". L'esistenza di un limite (finito?) punto per punto definisice la [convergenza puntuale](math-hs:series:fun:sequences:convergence:point).
 
+(math-hs:series:fun:sequences:convergence)=
 ### Convergenza
+(math-hs:series:fun:sequences:convergence:point)=
 #### Convergenza puntuale
 
+**todo** *definizione*
+
+(math-hs:series:fun:sequences:convergence:uniform)=
 #### Convergenza uniforme
 
 Sia $\{ f_n \}_{n \in \mathbb{N}}$ una successione di funzioni $f_n:  X \rightarrow \mathbb{R}$. La serie converge uniformemente alla funzione $f$ se per ogni $\varepsilon > 0$ esiste $N \in \mathbb{N}$ tale che
 
-$|f_n(x) - f(x)| < e \ , \qquad \forall x \in X \ ,$
+$$|f_n(x) - f(x)| < e \ , \qquad \forall x \in X \ ,$$
 
 per tutti gli $n > N$.
 
 **Proprietà.**
-- 
-- ...
 
 - La convergenza uniforme permette di invertire l'ordine delle operazioni di limite, derivata e integrale con la sommatoria nelle serie di funzioni:
   - data una successione di funzioni derivatbili $f_n(x)$, che convergono uniformemente a $f(x)$ e le cui derivate convergono uniformemente a $g(x)$, allora
@@ -222,10 +228,29 @@ per tutti gli $n > N$.
 
 **todo** discutere differenze tra i due tipi di convergenza; discutere i limiti della convergenza puntuale; discutere le proprietà
 
-## Serie di funzioni
+(math-hs:series:fun:series)=
+## Serie di funzioni reali
 
+### Serie polinomiali
+**todo** *fare riferimento alle serie di Taylor e MacLaurin?*
 
+$$\begin{aligned}
+   \cos x & = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} + \dots \\
+   \sin x & = x - \frac{x^3}{3!} + \frac{x^5}{5!} + \dots \\
+   e^x    & = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + \dots \\
+\end{aligned}$$
+
+**todo** *valutare le proprietà di convergenza (e specificare gli intervalli di convergenza) di queste funzioni*
+
+(math-hs:series:complex:sequences)=
 ## Successioni numeriche complesse
+(math-hs:series:complex:series)=
+**todo** *Fare riferimento ad algebra complessa. La funzione $e^{z}$ è necessaria a introdurre la rappresentazione polare dei numeri complessi.*
 ## Serie numeriche complesse
+**todo** *Fare riferimento ad algebra complessa. La funzione $e^{z}$ è necessaria a introdurre la rappresentazione polare dei numeri complessi.*
 
+(math-hs:series:fun-complex:sequences)=
+## Successioni di funzioni reali
+(math-hs:series:fun-complex:series)=
+## Serie di funzioni reali
 

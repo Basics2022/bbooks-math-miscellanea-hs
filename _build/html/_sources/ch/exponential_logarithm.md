@@ -43,10 +43,9 @@ Si può dimostrare che
 - la base della potenza, $e$, viene definita $e$ **di Nepero**, ed è un numero reale irrazionale, il cui valore approssimato è $e \approx 2.718281828\text{"e poi la magia finisce"}$: nonostante le prime cifre decimali facciano pensare che possa essere periodico, se si scrivono le cifre successive, l'approssimazione diventa $e \approx 2.71828182845904523\dots$
 -->
 
-**Esponenziale complesso.** Si può estendere la definizione di esponenziale anche a un numero complesso, $z \in \mathbb{C}$
-**todo**
-
 ### Funzione logaritmo naturale, $\text{ln} \, x$
 
 **Definizione.** Poiché la funzione $e^x$ è monotona crescente, $e^x: \mathbb{R} \rightarrow (0, +\infty)$, esiste la sua [funzione inversa](math-hs:precalculus:real-functions:inverse) con dominio $(0,+\infty)$ e immagine $\mathbb{R}$. La funzione inversa della funzione esponenziale con base $e$ viene definita **logaritmo naturale**.
 
+## Funzione esponenziale e logaritmo di variabile complessa
+**todo** *Fare riferimento ad algebra complessa. La funzione $e^{z}$ è necessaria a introdurre la rappresentazione polare dei numeri complessi.*

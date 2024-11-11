@@ -473,7 +473,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">Esempi</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#successioni-di-funzioni">Successioni di funzioni</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#successioni-di-funzioni-reali">Successioni di funzioni reali</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#convergenza">Convergenza</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#convergenza-puntuale">Convergenza puntuale</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#convergenza-uniforme">Convergenza uniforme</a></li>
@@ -481,10 +481,14 @@ document.write(`
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"><strong>Proprietà.</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#serie-di-funzioni">Serie di funzioni</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#serie-di-funzioni-reali">Serie di funzioni reali</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#serie-polinomiali">Serie polinomiali</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#successioni-numeriche-complesse">Successioni numeriche complesse</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#serie-numeriche-complesse">Serie numeriche complesse</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#math-hs-series-fun-complex-sequences">Successioni di funzioni reali</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#math-hs-series-fun-complex-series">Serie di funzioni reali</a></li>
 </ul>
             </nav>
         </div>
@@ -524,7 +528,7 @@ document.write(`
 <li><p>serie di funzioni</p></li>
 </ul>
 <div class="section" id="successioni-a-di-numeri-reali">
-<h2>Successioni a di numeri reali<a class="headerlink" href="#successioni-a-di-numeri-reali" title="Permalink to this heading">#</a></h2>
+<span id="math-hs-series-real-sequences"></span><h2>Successioni a di numeri reali<a class="headerlink" href="#successioni-a-di-numeri-reali" title="Permalink to this heading">#</a></h2>
 <p><strong>Definizione.</strong> Una successione di numeri reali è una funzione <span class="math notranslate nohighlight">\(f: \mathbb{N} \rightarrow \mathbb{R}\)</span>, che associa ai numeri interi <span class="math notranslate nohighlight">\(n \in \mathbb{N}\)</span> un numero reale <span class="math notranslate nohighlight">\(a_n = f(n)\)</span>.</p>
 <p><strong>Limite di una successione.</strong> Una successione <span class="math notranslate nohighlight">\(\{ a_n \}\)</span> ha limite <span class="math notranslate nohighlight">\(\ell\)</span> se per ogni intorno <span class="math notranslate nohighlight">\(U_{\ell}\)</span> di <span class="math notranslate nohighlight">\(\ell\)</span> esiste un numero naturale <span class="math notranslate nohighlight">\(N \in \mathbb{N}\)</span> tale che</p>
 <div class="math notranslate nohighlight">
@@ -559,7 +563,7 @@ document.write(`
 </div>
 </div>
 <div class="section" id="serie-numeriche-reali">
-<h2>Serie numeriche reali<a class="headerlink" href="#serie-numeriche-reali" title="Permalink to this heading">#</a></h2>
+<span id="math-hs-series-real-series"></span><h2>Serie numeriche reali<a class="headerlink" href="#serie-numeriche-reali" title="Permalink to this heading">#</a></h2>
 <p><strong>Definizione.</strong> Data una <strong>successione</strong> di elementi <span class="math notranslate nohighlight">\(\{ a_n \}\)</span>, <span class="math notranslate nohighlight">\(a_n \in \mathbb{R}\)</span>, la serie associata è la somma infinita</p>
 <div class="math notranslate nohighlight">
 \[\sum_{n=0}^{\infty} a_n \ .\]</div>
@@ -715,27 +719,24 @@ Serie di Mengoli, <span class="math notranslate nohighlight">\(\ \sum_{n=1}^{\in
 </div>
 </details></div>
 </div>
-<div class="section" id="successioni-di-funzioni">
-<h2>Successioni di funzioni<a class="headerlink" href="#successioni-di-funzioni" title="Permalink to this heading">#</a></h2>
+<div class="section" id="successioni-di-funzioni-reali">
+<span id="math-hs-series-fun-sequences"></span><h2>Successioni di funzioni reali<a class="headerlink" href="#successioni-di-funzioni-reali" title="Permalink to this heading">#</a></h2>
 <p><strong>Definizione.</strong> Una successione di funzioni tra l’insieme <span class="math notranslate nohighlight">\(X\)</span> e l’insieme <span class="math notranslate nohighlight">\(Y\)</span>, è una funzione che associa ai numeri interi <span class="math notranslate nohighlight">\(n \in \mathbb{N}\)</span> una funzione <span class="math notranslate nohighlight">\(f_n: X \rightarrow Y\)</span>.</p>
-<p><strong>Limite di una successione di funzioni.</strong> Limite “punto per punto”. L’esistenza di un limite (finito?) punto per punto definisice la <strong>convergenza puntuale</strong>.</p>
+<p><strong>Limite di una successione di funzioni.</strong> Limite “punto per punto”. L’esistenza di un limite (finito?) punto per punto definisice la <a class="reference internal" href="#math-hs-series-fun-sequences-convergence-point"><span class="std std-ref">convergenza puntuale</span></a>.</p>
 <div class="section" id="convergenza">
-<h3>Convergenza<a class="headerlink" href="#convergenza" title="Permalink to this heading">#</a></h3>
+<span id="math-hs-series-fun-sequences-convergence"></span><h3>Convergenza<a class="headerlink" href="#convergenza" title="Permalink to this heading">#</a></h3>
 <div class="section" id="convergenza-puntuale">
-<h4>Convergenza puntuale<a class="headerlink" href="#convergenza-puntuale" title="Permalink to this heading">#</a></h4>
+<span id="math-hs-series-fun-sequences-convergence-point"></span><h4>Convergenza puntuale<a class="headerlink" href="#convergenza-puntuale" title="Permalink to this heading">#</a></h4>
+<p><strong>todo</strong> <em>definizione</em></p>
 </div>
 <div class="section" id="convergenza-uniforme">
-<h4>Convergenza uniforme<a class="headerlink" href="#convergenza-uniforme" title="Permalink to this heading">#</a></h4>
+<span id="math-hs-series-fun-sequences-convergence-uniform"></span><h4>Convergenza uniforme<a class="headerlink" href="#convergenza-uniforme" title="Permalink to this heading">#</a></h4>
 <p>Sia <span class="math notranslate nohighlight">\(\{ f_n \}_{n \in \mathbb{N}}\)</span> una successione di funzioni <span class="math notranslate nohighlight">\(f_n:  X \rightarrow \mathbb{R}\)</span>. La serie converge uniformemente alla funzione <span class="math notranslate nohighlight">\(f\)</span> se per ogni <span class="math notranslate nohighlight">\(\varepsilon &gt; 0\)</span> esiste <span class="math notranslate nohighlight">\(N \in \mathbb{N}\)</span> tale che</p>
-<p><span class="math notranslate nohighlight">\(|f_n(x) - f(x)| &lt; e \ , \qquad \forall x \in X \ ,\)</span></p>
+<div class="math notranslate nohighlight">
+\[|f_n(x) - f(x)| &lt; e \ , \qquad \forall x \in X \ ,\]</div>
 <p>per tutti gli <span class="math notranslate nohighlight">\(n &gt; N\)</span>.</p>
-</div>
-</div>
-</div>
-<div class="section" id="id2">
-<h2><strong>Proprietà.</strong><a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<p><strong>Proprietà.</strong></p>
 <ul>
-<li><p>…</p></li>
 <li><p>La convergenza uniforme permette di invertire l’ordine delle operazioni di limite, derivata e integrale con la sommatoria nelle serie di funzioni:</p>
 <ul>
 <li><p>data una successione di funzioni derivatbili <span class="math notranslate nohighlight">\(f_n(x)\)</span>, che convergono uniformemente a <span class="math notranslate nohighlight">\(f(x)\)</span> e le cui derivate convergono uniformemente a <span class="math notranslate nohighlight">\(g(x)\)</span>, allora</p>
@@ -749,14 +750,35 @@ Serie di Mengoli, <span class="math notranslate nohighlight">\(\ \sum_{n=1}^{\in
 </ul>
 <p><strong>todo</strong> discutere differenze tra i due tipi di convergenza; discutere i limiti della convergenza puntuale; discutere le proprietà</p>
 </div>
-<div class="section" id="serie-di-funzioni">
-<h2>Serie di funzioni<a class="headerlink" href="#serie-di-funzioni" title="Permalink to this heading">#</a></h2>
+</div>
+</div>
+<div class="section" id="serie-di-funzioni-reali">
+<span id="math-hs-series-fun-series"></span><h2>Serie di funzioni reali<a class="headerlink" href="#serie-di-funzioni-reali" title="Permalink to this heading">#</a></h2>
+<div class="section" id="serie-polinomiali">
+<h3>Serie polinomiali<a class="headerlink" href="#serie-polinomiali" title="Permalink to this heading">#</a></h3>
+<p><strong>todo</strong> <em>fare riferimento alle serie di Taylor e MacLaurin?</em></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+   \cos x &amp; = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} + \dots \\
+   \sin x &amp; = x - \frac{x^3}{3!} + \frac{x^5}{5!} + \dots \\
+   e^x    &amp; = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + \dots \\
+\end{aligned}\end{split}\]</div>
+<p><strong>todo</strong> <em>valutare le proprietà di convergenza (e specificare gli intervalli di convergenza) di queste funzioni</em></p>
+</div>
 </div>
 <div class="section" id="successioni-numeriche-complesse">
-<h2>Successioni numeriche complesse<a class="headerlink" href="#successioni-numeriche-complesse" title="Permalink to this heading">#</a></h2>
+<span id="math-hs-series-complex-sequences"></span><h2>Successioni numeriche complesse<a class="headerlink" href="#successioni-numeriche-complesse" title="Permalink to this heading">#</a></h2>
+<p id="math-hs-series-complex-series"><strong>todo</strong> <em>Fare riferimento ad algebra complessa. La funzione <span class="math notranslate nohighlight">\(e^{z}\)</span> è necessaria a introdurre la rappresentazione polare dei numeri complessi.</em></p>
 </div>
 <div class="section" id="serie-numeriche-complesse">
 <h2>Serie numeriche complesse<a class="headerlink" href="#serie-numeriche-complesse" title="Permalink to this heading">#</a></h2>
+<p><strong>todo</strong> <em>Fare riferimento ad algebra complessa. La funzione <span class="math notranslate nohighlight">\(e^{z}\)</span> è necessaria a introdurre la rappresentazione polare dei numeri complessi.</em></p>
+</div>
+<div class="section" id="math-hs-series-fun-complex-sequences">
+<span id="id2"></span><h2>Successioni di funzioni reali<a class="headerlink" href="#math-hs-series-fun-complex-sequences" title="Permalink to this heading">#</a></h2>
+</div>
+<div class="section" id="math-hs-series-fun-complex-series">
+<span id="id3"></span><h2>Serie di funzioni reali<a class="headerlink" href="#math-hs-series-fun-complex-series" title="Permalink to this heading">#</a></h2>
 </div>
 </div>
 
@@ -839,7 +861,7 @@ Serie di Mengoli, <span class="math notranslate nohighlight">\(\ \sum_{n=1}^{\in
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">Esempi</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#successioni-di-funzioni">Successioni di funzioni</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#successioni-di-funzioni-reali">Successioni di funzioni reali</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#convergenza">Convergenza</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#convergenza-puntuale">Convergenza puntuale</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#convergenza-uniforme">Convergenza uniforme</a></li>
@@ -847,10 +869,14 @@ Serie di Mengoli, <span class="math notranslate nohighlight">\(\ \sum_{n=1}^{\in
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"><strong>Proprietà.</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#serie-di-funzioni">Serie di funzioni</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#serie-di-funzioni-reali">Serie di funzioni reali</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#serie-polinomiali">Serie polinomiali</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#successioni-numeriche-complesse">Successioni numeriche complesse</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#serie-numeriche-complesse">Serie numeriche complesse</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#math-hs-series-fun-complex-sequences">Successioni di funzioni reali</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#math-hs-series-fun-complex-series">Serie di funzioni reali</a></li>
 </ul>
   </nav></div>
 

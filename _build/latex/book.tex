@@ -3448,7 +3448,7 @@ Senza fare uso di nessun concetto di calcolo differenziale o integrale, nel prim
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
-il concetto di variabile e funzione, vol.1 cap.1\sphinxhyphen{}3
+il concetto di variabile e {\hyperref[\detokenize{ch/precalculus/real-functions:math-hs-precalculus-real-functions}]{\sphinxcrossref{\DUrole{std,std-ref}{funzione di variabile e valore reale}}}}, \(f: \mathbb{R} \rightarrow \mathbb{R}\), vol.1 cap.1\sphinxhyphen{}3
 
 \item {} 
 \sphinxAtStartPar
@@ -3784,7 +3784,7 @@ serie di funzioni
 
 
 \section{Successioni a di numeri reali}
-\label{\detokenize{ch/series:successioni-a-di-numeri-reali}}
+\label{\detokenize{ch/series:successioni-a-di-numeri-reali}}\label{\detokenize{ch/series:math-hs-series-real-sequences}}
 \sphinxAtStartPar
 \sphinxstylestrong{Definizione.} Una successione di numeri reali è una funzione \(f: \mathbb{N} \rightarrow \mathbb{R}\), che associa ai numeri interi \(n \in \mathbb{N}\) un numero reale \(a_n = f(n)\).
 
@@ -3854,7 +3854,7 @@ Se il limite esiste è unico (\sphinxstylestrong{todo} \sphinxstyleemphasis{se \
 
 
 \section{Serie numeriche reali}
-\label{\detokenize{ch/series:serie-numeriche-reali}}
+\label{\detokenize{ch/series:serie-numeriche-reali}}\label{\detokenize{ch/series:math-hs-series-real-series}}
 \sphinxAtStartPar
 \sphinxstylestrong{Definizione.} Data una \sphinxstylestrong{successione} di elementi \(\{ a_n \}\), \(a_n \in \mathbb{R}\), la serie associata è la somma infinita
 \begin{equation*}
@@ -4094,39 +4094,37 @@ si può trovare la relazione \(e < 3\).
 \sphinxstylestrong{todo} \sphinxstyleemphasis{come trovare stime di maggiorazione più restrittive? come trovare approssimazioni di \(e\)? Cenni al calcolo del valore numerico? Sì, ma anche no…}
 
 
-\section{Successioni di funzioni}
-\label{\detokenize{ch/series:successioni-di-funzioni}}
+\section{Successioni di funzioni reali}
+\label{\detokenize{ch/series:successioni-di-funzioni-reali}}\label{\detokenize{ch/series:math-hs-series-fun-sequences}}
 \sphinxAtStartPar
 \sphinxstylestrong{Definizione.} Una successione di funzioni tra l’insieme \(X\) e l’insieme \(Y\), è una funzione che associa ai numeri interi \(n \in \mathbb{N}\) una funzione \(f_n: X \rightarrow Y\).
 
 \sphinxAtStartPar
-\sphinxstylestrong{Limite di una successione di funzioni.} Limite “punto per punto”. L’esistenza di un limite (finito?) punto per punto definisice la \sphinxstylestrong{convergenza puntuale}.
+\sphinxstylestrong{Limite di una successione di funzioni.} Limite “punto per punto”. L’esistenza di un limite (finito?) punto per punto definisice la {\hyperref[\detokenize{ch/series:math-hs-series-fun-sequences-convergence-point}]{\sphinxcrossref{\DUrole{std,std-ref}{convergenza puntuale}}}}.
 
 
 \subsection{Convergenza}
-\label{\detokenize{ch/series:convergenza}}
+\label{\detokenize{ch/series:convergenza}}\label{\detokenize{ch/series:math-hs-series-fun-sequences-convergence}}
 
 \subsubsection{Convergenza puntuale}
-\label{\detokenize{ch/series:convergenza-puntuale}}
+\label{\detokenize{ch/series:convergenza-puntuale}}\label{\detokenize{ch/series:math-hs-series-fun-sequences-convergence-point}}
+\sphinxAtStartPar
+\sphinxstylestrong{todo} \sphinxstyleemphasis{definizione}
+
 
 \subsubsection{Convergenza uniforme}
-\label{\detokenize{ch/series:convergenza-uniforme}}
+\label{\detokenize{ch/series:convergenza-uniforme}}\label{\detokenize{ch/series:math-hs-series-fun-sequences-convergence-uniform}}
 \sphinxAtStartPar
 Sia \(\{ f_n \}_{n \in \mathbb{N}}\) una successione di funzioni \(f_n:  X \rightarrow \mathbb{R}\). La serie converge uniformemente alla funzione \(f\) se per ogni \(\varepsilon > 0\) esiste \(N \in \mathbb{N}\) tale che
-
-\sphinxAtStartPar
-\(|f_n(x) - f(x)| < e \ , \qquad \forall x \in X \ ,\)
-
+\begin{equation*}
+\begin{split}|f_n(x) - f(x)| < e \ , \qquad \forall x \in X \ ,\end{split}
+\end{equation*}
 \sphinxAtStartPar
 per tutti gli \(n > N\).
 
-
-\section{\sphinxstylestrong{Proprietà.}}
-\label{\detokenize{ch/series:id2}}\begin{itemize}
-\item {} 
 \sphinxAtStartPar
-…
-
+\sphinxstylestrong{Proprietà.}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 La convergenza uniforme permette di invertire l’ordine delle operazioni di limite, derivata e integrale con la sommatoria nelle serie di funzioni:
@@ -4153,14 +4151,41 @@ data una successione di funzioni derivatbili \(f_n(x)\), che convergono uniforme
 \sphinxstylestrong{todo} discutere differenze tra i due tipi di convergenza; discutere i limiti della convergenza puntuale; discutere le proprietà
 
 
-\section{Serie di funzioni}
-\label{\detokenize{ch/series:serie-di-funzioni}}
+\section{Serie di funzioni reali}
+\label{\detokenize{ch/series:serie-di-funzioni-reali}}\label{\detokenize{ch/series:math-hs-series-fun-series}}
+
+\subsection{Serie polinomiali}
+\label{\detokenize{ch/series:serie-polinomiali}}
+\sphinxAtStartPar
+\sphinxstylestrong{todo} \sphinxstyleemphasis{fare riferimento alle serie di Taylor e MacLaurin?}
+\begin{equation*}
+\begin{split}\begin{aligned}
+   \cos x & = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} + \dots \\
+   \sin x & = x - \frac{x^3}{3!} + \frac{x^5}{5!} + \dots \\
+   e^x    & = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + \dots \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{todo} \sphinxstyleemphasis{valutare le proprietà di convergenza (e specificare gli intervalli di convergenza) di queste funzioni}
+
 
 \section{Successioni numeriche complesse}
-\label{\detokenize{ch/series:successioni-numeriche-complesse}}
+\label{\detokenize{ch/series:successioni-numeriche-complesse}}\label{\detokenize{ch/series:math-hs-series-complex-sequences}}\phantomsection\label{\detokenize{ch/series:math-hs-series-complex-series}}
+\sphinxAtStartPar
+\sphinxstylestrong{todo} \sphinxstyleemphasis{Fare riferimento ad algebra complessa. La funzione \(e^{z}\) è necessaria a introdurre la rappresentazione polare dei numeri complessi.}
+
 
 \section{Serie numeriche complesse}
 \label{\detokenize{ch/series:serie-numeriche-complesse}}
+\sphinxAtStartPar
+\sphinxstylestrong{todo} \sphinxstyleemphasis{Fare riferimento ad algebra complessa. La funzione \(e^{z}\) è necessaria a introdurre la rappresentazione polare dei numeri complessi.}
+
+
+\section{Successioni di funzioni reali}
+\label{\detokenize{ch/series:math-hs-series-fun-complex-sequences}}\label{\detokenize{ch/series:id2}}
+
+\section{Serie di funzioni reali}
+\label{\detokenize{ch/series:math-hs-series-fun-complex-series}}\label{\detokenize{ch/series:id3}}
 \sphinxstepscope
 
 
@@ -4451,24 +4476,26 @@ la derivata della funzione \(e^x\) è \(e^x\), ed è una delle {\hyperref[\detok
 
 
 
-\sphinxAtStartPar
-\sphinxstylestrong{Esponenziale complesso.} Si può estendere la definizione di esponenziale anche a un numero complesso, \(z \in \mathbb{C}\)
-\sphinxstylestrong{todo}
-
 
 \subsection{Funzione logaritmo naturale, \protect\(\text{ln} \, x\protect\)}
 \label{\detokenize{ch/exponential_logarithm:funzione-logaritmo-naturale-text-ln-x}}
 \sphinxAtStartPar
 \sphinxstylestrong{Definizione.} Poiché la funzione \(e^x\) è monotona crescente, \(e^x: \mathbb{R} \rightarrow (0, +\infty)\), esiste la sua {\hyperref[\detokenize{ch/precalculus/real-functions:math-hs-precalculus-real-functions-inverse}]{\sphinxcrossref{\DUrole{std,std-ref}{funzione inversa}}}} con dominio \((0,+\infty)\) e immagine \(\mathbb{R}\). La funzione inversa della funzione esponenziale con base \(e\) viene definita \sphinxstylestrong{logaritmo naturale}.
 
+
+\section{Funzione esponenziale e logaritmo di variabile complessa}
+\label{\detokenize{ch/exponential_logarithm:funzione-esponenziale-e-logaritmo-di-variabile-complessa}}
+\sphinxAtStartPar
+\sphinxstylestrong{todo} \sphinxstyleemphasis{Fare riferimento ad algebra complessa. La funzione \(e^{z}\) è necessaria a introdurre la rappresentazione polare dei numeri complessi.}
+
 \sphinxstepscope
 
 
 \section{Esponenziale e logaritmo \sphinxhyphen{} dimostrazioni}
-\label{\detokenize{ch/exponential_logarithm-proof:esponenziale-e-logaritmo-dimostrazioni}}\label{\detokenize{ch/exponential_logarithm-proof:math-hs-exp-log-proof}}\label{\detokenize{ch/exponential_logarithm-proof::doc}}
+\label{\detokenize{ch/exponential_logarithm-proof:esponenziale-e-logaritmo-dimostrazioni}}\label{\detokenize{ch/exponential_logarithm-proof:math-hs-exp-log-proof}}\label{\detokenize{ch/exponential_logarithm-proof::doc}}\phantomsection\label{\detokenize{ch/exponential_logarithm-proof:math-hs-exp-log-proof-convergence}}
 
-\subsection{Convergenza della serie di funzioni \protect\(\sum_{n=0}^{\infty} \frac{x^n}{n!}\protect\) in ogni intervallo limitato}
-\label{\detokenize{ch/exponential_logarithm-proof:convergenza-della-serie-di-funzioni-sum-n-0-infty-frac-x-n-n-in-ogni-intervallo-limitato}}\label{\detokenize{ch/exponential_logarithm-proof:math-hs-exp-log-proof-convergence}}
+\subsubsection*{Convergenza della serie di funzioni \protect\(\sum_{n=0}^{\infty} \frac{x^n}{n!}\protect\) in ogni intervallo limitato}
+
 \sphinxAtStartPar
 Per dimostrare la convergenza uniforme di \(\sum_{k=0}^{\infty} \frac{x^k}{k!}\) a \(e^x\) in ogni intervallo limitato \(|x| < M\), è richiesto di dimostrare che per ogni \(\varepsilon > 0\) esiste \(N \in \mathbb{N}\) tale che
 \begin{equation*}
@@ -4496,28 +4523,28 @@ e quindi
 \end{equation*}
 \sphinxAtStartPar
 avendo usato \(\sum_{k=n+1}^{\infty} 2^{-k} = 2^{-n-1} \sum_{k=0}^{\infty} 2^{-k} = 2^{-n-1} \cdot 2 = 2^{-n}\).
+
+\sphinxAtStartPar
 Scegliendo \(N > \log_2 \left( \frac{1}{\varepsilon} \frac{(2\tilde{M})^{2 \tilde{M}}}{(2 \tilde{M})!)} \right)\), per ogni \(n > N\) si ha
 \begin{equation*}
 \begin{split}\left| \sum_{k=n+1}^{\infty} \frac{x^k}{k!} \right| <  \frac{(2 \tilde{M})^{2 \tilde{M}}}{(2\tilde{M})!} 2^{-n} <  \frac{(2 \tilde{M})^{2 \tilde{M}}}{(2\tilde{M})!} 2^{-N} < \varepsilon \ .\end{split}
-\end{equation*}
+\end{equation*}\phantomsection\label{\detokenize{ch/exponential_logarithm-proof:math-hs-exp-log-proof-equivalence}}
 
+\subsubsection*{Equivalenza delle due definizioni}
 
-
-\subsection{Equivalenza delle due definizioni}
-\label{\detokenize{ch/exponential_logarithm-proof:equivalenza-delle-due-definizioni}}\label{\detokenize{ch/exponential_logarithm-proof:math-hs-exp-log-proof-equivalence}}
 \sphinxAtStartPar
 \sphinxstylestrong{todo}
+\phantomsection\label{\detokenize{ch/exponential_logarithm-proof:math-hs-exp-log-proof-powers}}
 
+\subsubsection*{Giustificazione della notazione \protect\(\ e^x\protect\) }
 
-\subsection{Giustificazione della notazione \protect\(\ e^x\protect\)}
-\label{\detokenize{ch/exponential_logarithm-proof:giustificazione-della-notazione-e-x}}\label{\detokenize{ch/exponential_logarithm-proof:math-hs-exp-log-proof-powers}}
 \sphinxAtStartPar
 Per evitare la forma indeterminata nel termine \(0^0\), si calcola qui il limite per \(x \rightarrow 0\) (\sphinxstylestrong{todo} \sphinxstyleemphasis{motivare la validità di questa operazione/interpretazione della funzione \(e^x\)})
 \begin{equation*}
 \begin{split}e^0 := \lim_{x \rightarrow 0} e^x = \lim_{x \rightarrow 0} \sum_{n = 0}^{\infty} \frac{x^n}{n!} = 1 + \lim_{x \rightarrow 0} \sum_{n=1}^{\infty} \frac{x^n}{n!} = 1 \ .\end{split}
 \end{equation*}
 \sphinxAtStartPar
-Ricordando la definizione della \(e\) di Eulero, è immediato verificare che il valore della serie di funzioni per \(x = 1\) coincide con il valore di \(e\)
+Ricordando la definizione della {\hyperref[\detokenize{ch/series:math-hs-series-e-euler}]{\sphinxcrossref{\DUrole{std,std-ref}{\(e\) di Eulero}}}}, è immediato verificare che il valore della serie di funzioni per \(x = 1\) coincide con il valore di \(e\)
 \begin{equation*}
 \begin{split}e^1 = \sum_{n=0}^{\infty} \frac{x^n}{n!} \bigg|_{x=1} = \sum_{n=0}^{\infty} \frac{1}{n!} = e \ .\end{split}
 \end{equation*}
