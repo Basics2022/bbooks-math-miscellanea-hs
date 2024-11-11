@@ -21,6 +21,8 @@ bibtex_bibfiles:
 
 # sphinx extensions
 sphinx:
+  config:
+    language: it
   extra_extensions:
     - sphinx_proof
 
