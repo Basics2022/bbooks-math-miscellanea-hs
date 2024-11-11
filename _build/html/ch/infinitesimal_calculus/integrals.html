@@ -34,6 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/style.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
@@ -560,7 +561,14 @@ document.write(`
 ### Teorema della media
 :label: infinitesimal-calculus:derivatives:thm:avg
 -->
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<div class="proof theorem admonition" id="integrals:thm:avg">
+<span id="infinitesimal-calculus-integrals-thm-avg"></span><p class="admonition-title"><span class="caption-number">Theorem 7 </span> (Teorema della media)</p>
+<div class="theorem-content section" id="proof-content">
+<p>Sia <span class="math notranslate nohighlight">\(f: [a,b] \in \mathbb{R} \rightarrow \mathbb{R}\)</span> una funzione continua su <span class="math notranslate nohighlight">\([a,b]\)</span>, allora esiste <span class="math notranslate nohighlight">\(c \in [a,b]\)</span> tale che</p>
+<div class="math notranslate nohighlight">
+\[\int_{a}^{b} f(x) dx = (b-a) f(c) \]</div>
+</div>
+</div><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Dimostrazione<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
@@ -574,7 +582,13 @@ Dimostrazione<div class="sd-summary-down docutils">
 ### Teorema fondamentale del calcolo integrale
 :label: infinitesimal-calculus:derivatives:thm:fund
 -->
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<div class="proof theorem admonition" id="integrals:thm:fund">
+<span id="infinitesimal-calculus-integrals-thm-fund"></span><p class="admonition-title"><span class="caption-number">Theorem 8 </span> (Teorema fondamentale del calcolo infinitesimale)</p>
+<div class="theorem-content section" id="proof-content">
+<div class="math notranslate nohighlight">
+\[\dfrac{d}{dx} \int_{a}^{x} f(y) dy = f(x) \]</div>
+</div>
+</div><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Dimostrazione<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
@@ -590,7 +604,14 @@ Dimostrazione<div class="sd-summary-down docutils">
 &amp; = \lim_{\varepsilon \rightarrow 0 } f(\xi) = f(x) . \\
 \end{aligned}\end{split}\]</div>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+</details><div class="proof theorem admonition" id="integrals:thm:fund:reynolds">
+<span id="infinitesimal-calculus-integrals-thm-fund-reynolds"></span><p class="admonition-title"><span class="caption-number">Theorem 9 </span> (Derivata su dominio dipendente dalla variabile indipendente)</p>
+<div class="theorem-content section" id="proof-content">
+<p>Sia <span class="math notranslate nohighlight">\(x \in D\)</span>, e gli estremi di integrazione <span class="math notranslate nohighlight">\(a(x)\)</span>, <span class="math notranslate nohighlight">\(b(x)\)</span> <strong>todo</strong> <em>Caratteristiche?</em></p>
+<div class="math notranslate nohighlight">
+\[\dfrac{d}{dx} \int_{a(x)}^{b(x)} f(y) \, dy = - a'(x) \, f(a(x)) + b'(x) f(b(x)) \]</div>
+</div>
+</div><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Dimostrazione<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>

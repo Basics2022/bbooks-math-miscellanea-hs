@@ -19,10 +19,10 @@ latex:
 bibtex_bibfiles:
   - references.bib
 
-# # sphinx extensions
-# sphinx:
-#   extra_extensions:
-#     - sphinx_proof
+# sphinx extensions
+sphinx:
+  extra_extensions:
+    - sphinx_proof
 
 # Information about where the book exists on the web
 repository:

@@ -5219,6 +5219,26 @@ e quindi per  \(\forall \varepsilon_g > 0\), \(\exists U_{x_0,\delta}\) tale che
 Il teorema di de l’Hopital (o di Bernoulli, \sphinxstylestrong{todo} \sphinxstyleemphasis{dire due parole sulla storia? Bernoulli precettore di de l’Hopital, ricava il risultato…}) è un teorema utile per il calcolo dei limiti delle forme indeterminate \(\frac{0}{0}\) e \(\frac{\infty}{\infty}\). Poiché il teorema coinvolge il concetto di derivata, si rimanda alla sezione del {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm-hopital}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema di de l’Hopital}}}} nel capitolo sulle {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives}]{\sphinxcrossref{\DUrole{std,std-ref}{derivate}}}}.
 
 
+\subsection{Confronto di infiniti e infinitesimi}
+\label{\detokenize{ch/infinitesimal_calculus/analysis:confronto-di-infiniti-e-infinitesimi}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-infinite-simal}}
+\sphinxAtStartPar
+Il confronto di funzioni che tendono a zero \(f(x), g(x) \rightarrow 0\), o di funzioni che tendono all’infinito \(f(x), g(x) \rightarrow \infty\) permette di definire degli \sphinxstyleemphasis{ordini di infinitesimi o di infiniti} \sphinxstylestrong{todo} \sphinxstyleemphasis{definire meglio}, a seconda del valore del limite \(\frac{f(x)}{g(x)} = \ell\),
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+se \(\ell = 0\), si può dire che \(f(x)\) è un infinitesimo di ordine superiore, o un infinito di ordine inferiore, rispetto a \(g(x)\) e si può indicare con la notazione di \sphinxstyleemphasis{o piccolo} \(f(x) = o \left(g(x) \right)\)
+
+\item {} 
+\sphinxAtStartPar
+se \(\ell\) finito diverso da zero, si può dire che \(f(x)\) è un infinitesimo, o un infinito,  dello stesso ordine di \(g(x)\) e si può indicare con la notazione di \sphinxstyleemphasis{o grande} \(f(x) = O \left(g(x) \right)\)
+
+\item {} 
+\sphinxAtStartPar
+se \(\ell\) è infinito, si può dire che \(f(x)\) è un infinitesimo di ordine inferiore, o un infinito di ordine superiore, rispetto a \(g(x)\); viceversa \(g(x)\) è un infinitesimo di ordine superiore, o un infinito di ordine inferiore, rispetto a \(f(x)\) e si può indicare con la notazione di \sphinxstyleemphasis{o piccolo} \(g(x) = O \left(f(x) \right)\)
+
+\end{itemize}
+
+
 \subsection{Limiti fondamentali}
 \label{\detokenize{ch/infinitesimal_calculus/analysis:limiti-fondamentali}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-fund}}
 \sphinxAtStartPar
@@ -5237,7 +5257,7 @@ In questa sezione vengono calcolati alcuni limiti fondamentali. Questi limiti po
 \begin{split} \lim_{x \rightarrow 0} \frac{e^x}{1+x}= 1 \end{split}
 \end{equation*}\begin{equation*}
 \begin{split} \lim_{x \rightarrow 0} \frac{\ln (1+x)}{x} = 1 \end{split}
-\end{equation*}\subsubsection*{Dimostrazione di \protect\( \lim_{x \rightarrow 0} \frac{\sin x}{x} = 1 \protect\)}
+\end{equation*}\subsubsection*{Dimostrazione di \protect\(\ \lim_{x \rightarrow 0} \frac{\sin x}{x} = 1 \protect\)}
 
 \sphinxAtStartPar
 Usando il teorema del confronto per le funzioni \(\sin x \le x \le \tan x\) (\sphinxstylestrong{todo} *dimostrare con l’area delle figure geometriche \(\frac{1}{2}\sin x \le \frac{1}{2} \, x \le \frac{1}{2} \tan x\)), si può scrivere per \(x \ne 0\)
@@ -5248,11 +5268,25 @@ Usando il teorema del confronto per le funzioni \(\sin x \le x \le \tan x\) (\sp
 Il limite per \(x \rightarrow 0\) delle due funzioni estreme vale \(1\), quindi
 \begin{equation*}
 \begin{split}\lim_{x \rightarrow 0} \frac{x}{\sin x} = 1 \ .\end{split}
-\end{equation*}\subsubsection*{Dimostrazione di \protect\( \lim_{x \rightarrow 0} \frac{1 - \cos x}{x^2} = \frac{1}{2} \protect\)}
+\end{equation*}\subsubsection*{Dimostrazione di \protect\(\ \lim_{x \rightarrow 0} \frac{1 - \cos x}{x^2} = \frac{1}{2} \protect\)}
 
 \sphinxAtStartPar
-Usando la formula \(\cos 2 \alpha = \cos^2 \alpha - \sin^2 \alpha = 2 \cos^2 \alpha - 1 = 1 - 2 \sin^2 \alpha\), si può scrivere \(1 - \cos x = 2 \sin^2 \frac{x}{2}\)
+Usando la formula \(\cos 2 \alpha = \cos^2 \alpha - \sin^2 \alpha = 2 \cos^2 \alpha - 1 = 1 - 2 \sin^2 \alpha\), si può scrivere \(1 - \cos x = 2 \sin^2 \frac{x}{2}\). Si può quindi riscrivere il limite cercato come
+\begin{equation*}
+\begin{split}\lim_{x \rightarrow 0} \frac{1 - \cos x}{x^2} = \lim_{x \rightarrow 0} \frac{ 2 \sin^2 \frac{x}{2} }{x^2} = \lim_{x \rightarrow 0} \frac{1}{2} \frac{\sin^2 \frac{x}{2}}{\left( \frac{x}{2} \right)^2} = \frac{1}{2} \underbrace{\lim_{x \rightarrow 0} \left( \frac{\sin \frac{x}{2}}{\frac{x}{2}} \right)^2}_{=1} = \frac{1}{2} \ .\end{split}
+\end{equation*}\subsubsection*{Dimostrazione di \protect\(\ \lim_{x \rightarrow 0} \frac{e^x - 1}{x}= 1 \protect\)}
 
+\sphinxAtStartPar
+Usando le notazioni di “o piccolo” e “o grande” per {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-infinite-simal}]{\sphinxcrossref{\DUrole{std,std-ref}{il confronto tra infinitesimi}}}}, si dimostra il limite desiderato,
+\begin{equation*}
+\begin{split}\lim_{x \rightarrow 0} \frac{e^x - 1}{x} = \lim_{x \rightarrow 0} \frac{\sum_{k=0}^{+\infty} \frac{x^k}{k!} - 1}{x} = \lim_{x \rightarrow 0} \frac{1 + x + o(x) - 1}{x} = \lim_{x \rightarrow 0} \left( 1 + O(x) \right) = 1 \ .\end{split}
+\end{equation*}\subsubsection*{Dimostrazione di \protect\(\ \lim_{x \rightarrow 0} \frac{e^x}{1 + x} = 1 \protect\)}
+
+\sphinxAtStartPar
+Usando le notazioni di “o piccolo” e “o grande” per {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-infinite-simal}]{\sphinxcrossref{\DUrole{std,std-ref}{il confronto tra infinitesimi}}}}, si dimostra il limite desiderato,
+\begin{equation*}
+\begin{split}\lim_{x \rightarrow 0} \frac{e^x}{1 + x} = \lim_{x \rightarrow 0} \frac{\sum_{k=0}^{+\infty} \frac{x^k}{k!}}{1+x} = \lim_{x \rightarrow 0} \frac{1 + x + o(x)}{1+x} = \lim_{x \rightarrow 0} \left( 1 + \frac{o(x)}{1+x} \right) = 1 \ .\end{split}
+\end{equation*}
 \sphinxAtStartPar
 Una volta compresa l’operazione di derivazione e di sviluppo in serie, si può rivisitare i limiti notevoli \sphinxstylestrong{todo}
 
@@ -5267,9 +5301,6 @@ o
 \begin{equation*}
 \begin{split}\ln n! \sim n \ln n - n  \qquad \text{per $n \in \mathbb{N} \rightarrow +\infty$}\end{split}
 \end{equation*}
-
-\subsection{Infiniti e infinitesimi}
-\label{\detokenize{ch/infinitesimal_calculus/analysis:infiniti-e-infinitesimi}}
 \sphinxstepscope
 
 
@@ -5371,25 +5402,85 @@ dalla quale segue immediatamente la regola di derivazione della funzione inversa
 \end{equation*}
 
 \subsection{Teoremi}
-\label{\detokenize{ch/infinitesimal_calculus/derivatives:teoremi}}\label{\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm}}\phantomsection\label{\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm-fermat}}\subsubsection*{Dimostrazione}
+\label{\detokenize{ch/infinitesimal_calculus/derivatives:teoremi}}\label{\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm}}\label{ch/infinitesimal_calculus/derivatives:theorem-0}
+\begin{sphinxadmonition}{note}{Theorem 1 (Teorema di Fermat)}
+
+
+
+\sphinxAtStartPar
+Data la funzione \(f: (a,b) \rightarrow \mathbb{R}\) derivabile nel punto di estremo locale \(x_0 \in (a,b)\), allora \(f'(x_0) = 0\).
+\end{sphinxadmonition}
+\subsubsection*{Dimostrazione}
 
 \sphinxAtStartPar
 \sphinxstylestrong{todo}
 
 
-\phantomsection\label{\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm-rolle}}\subsubsection*{Dimostrazione}
+\label{ch/infinitesimal_calculus/derivatives:theorem-1}
+\begin{sphinxadmonition}{note}{Theorem 2 (Teorema di Rolle)}
+
+
+
+\sphinxAtStartPar
+Data la funzione \(f: [a,b] \rightarrow \mathbb{R}\) continua e derivabile in ogni punto dell’intervallo \((a,b)\) con \(f(a) = f(b)\), allora esiste un valore \(c \in (a,b)\) in cui \(f'(c) = 0\).
+\end{sphinxadmonition}
+\subsubsection*{Dimostrazione}
 
 \sphinxAtStartPar
 \sphinxstylestrong{todo}
-\phantomsection\label{\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm-cauchy}}\subsubsection*{Dimostrazione}
+\label{ch/infinitesimal_calculus/derivatives:theorem-2}
+\begin{sphinxadmonition}{note}{Theorem 3 (Teorema di Cauchy)}
+
+
+
+\sphinxAtStartPar
+Date le funzioni \(f, g: [a,b] \rightarrow \mathbb{R}\) continue e derivabili in ogni punto dell’intervallo \((a,b)\) con \(f(a) = f(b)\), allora esiste un valore \(c \in (a,b)\) tale che
+\begin{equation*}
+\begin{split}f(b) - f(a) = (b -  a) f'(c) \ .\end{split}
+\end{equation*}\end{sphinxadmonition}
+\subsubsection*{Dimostrazione}
 
 \sphinxAtStartPar
 \sphinxstylestrong{todo}
-\phantomsection\label{\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm-lagrange}}\subsubsection*{Dimostrazione}
+\label{ch/infinitesimal_calculus/derivatives:theorem-3}
+\begin{sphinxadmonition}{note}{Theorem 4 (Theorema di Lagrange)}
+
+
+
+\sphinxAtStartPar
+Date le funzioni \(f, g: [a,b] \rightarrow \mathbb{R}\) continue e derivabili in ogni punto dell’intervallo \((a,b)\) con \(f(a) = f(b)\), allora esiste un valore \(c \in (a,b)\) tale che
+\end{sphinxadmonition}
+\subsubsection*{Dimostrazione}
 
 \sphinxAtStartPar
 \sphinxstylestrong{todo} Usando il teorema di Cauhcy con \(g(x) = x\).
-\phantomsection\label{\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm-hopital}}\subsubsection*{Dimostrazione}
+\label{ch/infinitesimal_calculus/derivatives:theorem-4}
+\begin{sphinxadmonition}{note}{Theorem 5 (Teorema di de l’Hopital (Bernoulli))}
+
+
+
+\sphinxAtStartPar
+Siano \(f(x), g(x): [a,b] \rightarrow \mathbb{R}\) funzioni reali di variabile reale continue in \([a,b]\) e derivabili in \((a,b) \backslash \{ x_0 \}\).
+\begin{equation*}
+\begin{split}\begin{aligned}
+  & \lim_{x \rightarrow x_0} f(x) = \lim_{x \rightarrow x_0} g(x) = 0 \qquad \text{oppure}
+  & \lim_{x \rightarrow x_0}|f(x)|= \lim_{x \rightarrow x_0}|g(x)|= \infty
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Se esiste
+\begin{equation*}
+\begin{split} \lim_{x \rightarrow x_0} \frac{f'(x)}{g'(x)} = L \quad \text{finito}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+allora
+\begin{equation*}
+\begin{split} \lim_{x \rightarrow x_0} \frac{f(x)}{g(x)} = L \ . \end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{todo} Controllare l’enunciato
+\end{sphinxadmonition}
+\subsubsection*{Dimostrazione}
 
 \sphinxAtStartPar
 \sphinxstylestrong{todo}
@@ -5503,6 +5594,15 @@ La serie di MacLaurin è la serie di Taylor centrata in \(x_0 = 0\).
 
 \sphinxAtStartPar
 La serie di Taylor troncata al \(n\)\sphinxhyphen{}esimo termine fornisce un’approssimazione locale della funzione \(f(x)\) di ordine \(n\), nel senso definito dal seguente teorema.
+\label{ch/infinitesimal_calculus/derivatives:theorem-5}
+\begin{sphinxadmonition}{note}{Theorem 6 (Approssimazione locale)}
+
+
+\begin{equation*}
+\begin{split}\lim_{x \rightarrow x_0} \frac{f(x) - T[f(x); x_0]}{x^n} = f^{(n)}(x_0) \ , \end{split}
+\end{equation*}\begin{equation*}
+\begin{split}f(x) = T[f(x); x_0] + o(x^n) \quad \text{ per } \quad x \rightarrow x_0\end{split}
+\end{equation*}\end{sphinxadmonition}
 \subsubsection*{Dimostrazione}
 
 \sphinxAtStartPar
@@ -5688,13 +5788,30 @@ dove la costante additiva \(C\) tiene conto dell’arbitrarietà appena discussa
 \subsection{Teoremi}
 \label{\detokenize{ch/infinitesimal_calculus/integrals:teoremi}}\label{\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-thm}}
 
-\phantomsection\label{\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-thm-avg}}\subsubsection*{Dimostrazione}
+\label{ch/infinitesimal_calculus/integrals:integrals:thm:avg}
+\begin{sphinxadmonition}{note}{Theorem 7 (Teorema della media)}
+
+
+
+\sphinxAtStartPar
+Sia \(f: [a,b] \in \mathbb{R} \rightarrow \mathbb{R}\) una funzione continua su \([a,b]\), allora esiste \(c \in [a,b]\) tale che
+\begin{equation*}
+\begin{split}\int_{a}^{b} f(x) dx = (b-a) f(c) \end{split}
+\end{equation*}\end{sphinxadmonition}
+\subsubsection*{Dimostrazione}
 
 \sphinxAtStartPar
 \sphinxstylestrong{todo}
 
 
-\phantomsection\label{\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-thm-fund}}\subsubsection*{Dimostrazione}
+\label{ch/infinitesimal_calculus/integrals:integrals:thm:fund}
+\begin{sphinxadmonition}{note}{Theorem 8 (Teorema fondamentale del calcolo infinitesimale)}
+
+
+\begin{equation*}
+\begin{split}\dfrac{d}{dx} \int_{a}^{x} f(y) dy = f(x) \end{split}
+\end{equation*}\end{sphinxadmonition}
+\subsubsection*{Dimostrazione}
 
 \sphinxAtStartPar
 \sphinxstylestrong{Dim.} Usando la {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-def}]{\sphinxcrossref{\DUrole{std,std-ref}{definizione di derivata}}}}, le {\hyperref[\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-def-definite-prop}]{\sphinxcrossref{\DUrole{std,std-ref}{proprietà dell’integrale definito}}}} e il {\hyperref[\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-thm-avg}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema della media}}}},
@@ -5705,7 +5822,17 @@ dove la costante additiva \(C\) tiene conto dell’arbitrarietà appena discussa
 & = \lim_{\varepsilon \rightarrow 0 } \frac{1}{\varepsilon} \varepsilon f(\xi) = \qquad \xi \in [x,x+\varepsilon] \\
 & = \lim_{\varepsilon \rightarrow 0 } f(\xi) = f(x) . \\
 \end{aligned}\end{split}
-\end{equation*}\phantomsection\label{\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-thm-fund-reynolds}}\subsubsection*{Dimostrazione}
+\end{equation*}\label{ch/infinitesimal_calculus/integrals:integrals:thm:fund:reynolds}
+\begin{sphinxadmonition}{note}{Theorem 9 (Derivata su dominio dipendente dalla variabile indipendente)}
+
+
+
+\sphinxAtStartPar
+Sia \(x \in D\), e gli estremi di integrazione \(a(x)\), \(b(x)\) \sphinxstylestrong{todo} \sphinxstyleemphasis{Caratteristiche?}
+\begin{equation*}
+\begin{split}\dfrac{d}{dx} \int_{a(x)}^{b(x)} f(y) \, dy = - a'(x) \, f(a(x)) + b'(x) f(b(x)) \end{split}
+\end{equation*}\end{sphinxadmonition}
+\subsubsection*{Dimostrazione}
 \begin{equation*}
 \begin{split}\begin{aligned}
 \dfrac{d}{dx} \int_{a(x)}^{b(x)} f(y) dy & = \lim_{\varepsilon \rightarrow 0 }\frac{1}{\varepsilon} \Big[ \int_{a(x+\varepsilon)}^{b(x+\varepsilon)} f(y) dy - \int_{a(x)}^{b(x)} f(y) dy \Big] = \\
@@ -6773,6 +6900,33 @@ Nov 11, 2024
 
 
 
+\renewcommand{\indexname}{Proof Index}
+\begin{sphinxtheindex}
+\let\bigletter\sphinxstyleindexlettergroup
+\bigletter{integrals:thm:avg}
+\item\relax\sphinxstyleindexentry{integrals:thm:avg}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{integrals:thm:avg}}
+\indexspace
+\bigletter{integrals:thm:fund}
+\item\relax\sphinxstyleindexentry{integrals:thm:fund}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{integrals:thm:fund}}
+\indexspace
+\bigletter{integrals:thm:fund:reynolds}
+\item\relax\sphinxstyleindexentry{integrals:thm:fund:reynolds}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{integrals:thm:fund:reynolds}}
+\indexspace
+\bigletter{theorem\sphinxhyphen{}1}
+\item\relax\sphinxstyleindexentry{theorem\sphinxhyphen{}1}\sphinxstyleindexextra{ch/infinitesimal\_calculus/derivatives}\sphinxstyleindexpageref{ch/infinitesimal_calculus/derivatives:\detokenize{theorem-1}}
+\indexspace
+\bigletter{theorem\sphinxhyphen{}2}
+\item\relax\sphinxstyleindexentry{theorem\sphinxhyphen{}2}\sphinxstyleindexextra{ch/infinitesimal\_calculus/derivatives}\sphinxstyleindexpageref{ch/infinitesimal_calculus/derivatives:\detokenize{theorem-2}}
+\indexspace
+\bigletter{theorem\sphinxhyphen{}3}
+\item\relax\sphinxstyleindexentry{theorem\sphinxhyphen{}3}\sphinxstyleindexextra{ch/infinitesimal\_calculus/derivatives}\sphinxstyleindexpageref{ch/infinitesimal_calculus/derivatives:\detokenize{theorem-3}}
+\indexspace
+\bigletter{theorem\sphinxhyphen{}4}
+\item\relax\sphinxstyleindexentry{theorem\sphinxhyphen{}4}\sphinxstyleindexextra{ch/infinitesimal\_calculus/derivatives}\sphinxstyleindexpageref{ch/infinitesimal_calculus/derivatives:\detokenize{theorem-4}}
+\indexspace
+\bigletter{theorem\sphinxhyphen{}5}
+\item\relax\sphinxstyleindexentry{theorem\sphinxhyphen{}5}\sphinxstyleindexextra{ch/infinitesimal\_calculus/derivatives}\sphinxstyleindexpageref{ch/infinitesimal_calculus/derivatives:\detokenize{theorem-5}}
+\end{sphinxtheindex}
 
 \renewcommand{\indexname}{Index}
 \printindex
