@@ -13,7 +13,7 @@
 - serie di funzioni
 
 (math-hs:series:real:sequences)=
-## Successioni a di numeri reali
+## Successioni di numeri reali
 
 **Definizione.** Una successione di numeri reali è una funzione $f: \mathbb{N} \rightarrow \mathbb{R}$, che associa ai numeri interi $n \in \mathbb{N}$ un numero reale $a_n = f(n)$.
 
@@ -49,7 +49,7 @@ Se il limite esiste è unico (**todo** *se $\ell \in T$, con $T$ spazio di Hasud
 *elencare operazioni, mettere dimostrazione in una sezione di dimostrazioni/esercizi, nello stile Schaum*
 
 (math-hs:series:real:series)=
-## Serie numeriche reali
+## Serie di numeri reali
 
 **Definizione.** Data una **successione** di elementi $\{ a_n \}$, $a_n \in \mathbb{R}$, la serie associata è la somma infinita
 
@@ -243,14 +243,14 @@ $$\begin{aligned}
 **todo** *valutare le proprietà di convergenza (e specificare gli intervalli di convergenza) di queste funzioni*
 
 (math-hs:series:complex:sequences)=
-## Successioni numeriche complesse
+## Successioni di numeri complessi
 (math-hs:series:complex:series)=
 **todo** *Fare riferimento ad algebra complessa. La funzione $e^{z}$ è necessaria a introdurre la rappresentazione polare dei numeri complessi.*
-## Serie numeriche complesse
+## Serie di numeri complessi
 **todo** *Fare riferimento ad algebra complessa. La funzione $e^{z}$ è necessaria a introdurre la rappresentazione polare dei numeri complessi.*
 
 (math-hs:series:fun-complex:sequences)=
-## Successioni di funzioni reali
+## Successioni di funzioni complesse
 (math-hs:series:fun-complex:series)=
-## Serie di funzioni reali
+## Serie di funzioni complesse
 

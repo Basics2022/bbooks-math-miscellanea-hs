@@ -487,8 +487,8 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-de-l-hopital">Teorema di de l’Hopital</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#confronto-di-infiniti-e-infinitesimi">Confronto di infiniti e infinitesimi</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limiti-fondamentali">Limiti fondamentali</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#infiniti-e-infinitesimi">Infiniti e infinitesimi</a></li>
 </ul>
             </nav>
         </div>
@@ -603,16 +603,43 @@ document.write(`
 \[\lim_{x \rightarrow x_0} f(x) = \lim_{x \rightarrow x_0} h(x) = \ell \ ,\]</div>
 <p>ed esiste un intorno <span class="math notranslate nohighlight">\(U\)</span> di <span class="math notranslate nohighlight">\(x_0\)</span> tale che</p>
 <div class="math notranslate nohighlight">
-\[f(x) \le g(x) \le h(x) \quad \forall x \in U \cap X \ \{ x_0 \} \ ,\]</div>
+\[f(x) \le g(x) \le h(x) \quad \forall x \in U \cap X \backslash \{ x_0 \} \ ,\]</div>
 <p>allora</p>
 <div class="math notranslate nohighlight">
 \[\lim_{x \rightarrow x_0} g(x) = \ell \ .\]</div>
-<p><strong>todo</strong> <em>Dimostrazione? Discussione più intuitiva? Figura?</em></p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Dimostrazione<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Dalla definizione dei limiti di <span class="math notranslate nohighlight">\(f(x)\)</span>, <span class="math notranslate nohighlight">\(g(x)\)</span></p>
+<div class="math notranslate nohighlight">
+\[|f(x) - \ell| &lt; \varepsilon_f \qquad \rightarrow \qquad \ell - \varepsilon_f &lt; f(x) &lt; \ell + \varepsilon_f\]</div>
+<div class="math notranslate nohighlight">
+\[|h(x) - \ell| &lt; \varepsilon_h \qquad \rightarrow \qquad \ell - \varepsilon_h &lt; h(x) &lt; \ell + \varepsilon_h\]</div>
+<p class="sd-card-text"><strong>todo</strong> <em>curare i particolari sull’intorno.</em></p>
+<p class="sd-card-text">Definendo <span class="math notranslate nohighlight">\(\varepsilon_g = \max\{ \varepsilon_f, \varepsilon_h \}\)</span> in <span class="math notranslate nohighlight">\(U\)</span> <strong>todo</strong> <em>curare i dettagli</em>, usando le ipotesi del problema si può scrivere</p>
+<div class="math notranslate nohighlight">
+\[\ell - \varepsilon_g \le \ell - \varepsilon_f &lt; f(x) \le g(x) \le h(x) &lt; \ell + \varepsilon_h \le \ell + \varepsilon_g\]</div>
+<p class="sd-card-text">e quindi per  <span class="math notranslate nohighlight">\(\forall \varepsilon_g &gt; 0\)</span>, <span class="math notranslate nohighlight">\(\exists U_{x_0,\delta}\)</span> tale che <span class="math notranslate nohighlight">\(|g(x) - \ell|&lt;\varepsilon_g\)</span> per <span class="math notranslate nohighlight">\(\forall x \in U_{x_0,\delta} \backslash \{ x_0 \}\)</span>, cioè <span class="math notranslate nohighlight">\(\lim_{x \rightarrow x_0} g(x) = \ell\)</span></p>
+</div>
+</details><p><strong>todo</strong> <em>Dimostrazione? Discussione più intuitiva? Figura?</em></p>
 </div>
 <div class="section" id="teorema-di-de-l-hopital">
 <span id="infinitesimal-calculus-limits-thms-hopital"></span><h3>Teorema di de l’Hopital<a class="headerlink" href="#teorema-di-de-l-hopital" title="Permalink to this heading">#</a></h3>
 <p>Il teorema di de l’Hopital (o di Bernoulli, <strong>todo</strong> <em>dire due parole sulla storia? Bernoulli precettore di de l’Hopital, ricava il risultato…</em>) è un teorema utile per il calcolo dei limiti delle forme indeterminate <span class="math notranslate nohighlight">\(\frac{0}{0}\)</span> e <span class="math notranslate nohighlight">\(\frac{\infty}{\infty}\)</span>. Poiché il teorema coinvolge il concetto di derivata, si rimanda alla sezione del <a class="reference internal" href="derivatives.html#infinitesimal-calculus-derivatives-thm-hopital"><span class="std std-ref">teorema di de l’Hopital</span></a> nel capitolo sulle <a class="reference internal" href="derivatives.html#infinitesimal-calculus-derivatives"><span class="std std-ref">derivate</span></a>.</p>
 </div>
+</div>
+<div class="section" id="confronto-di-infiniti-e-infinitesimi">
+<span id="infinitesimal-calculus-limits-infinite-simal"></span><h2>Confronto di infiniti e infinitesimi<a class="headerlink" href="#confronto-di-infiniti-e-infinitesimi" title="Permalink to this heading">#</a></h2>
+<p>Il confronto di funzioni che tendono a zero <span class="math notranslate nohighlight">\(f(x), g(x) \rightarrow 0\)</span>, o di funzioni che tendono all’infinito <span class="math notranslate nohighlight">\(f(x), g(x) \rightarrow \infty\)</span> permette di definire degli <em>ordini di infinitesimi o di infiniti</em> <strong>todo</strong> <em>definire meglio</em>, a seconda del valore del limite <span class="math notranslate nohighlight">\(\frac{f(x)}{g(x)} = \ell\)</span>,</p>
+<ul class="simple">
+<li><p>se <span class="math notranslate nohighlight">\(\ell = 0\)</span>, si può dire che <span class="math notranslate nohighlight">\(f(x)\)</span> è un infinitesimo di ordine superiore, o un infinito di ordine inferiore, rispetto a <span class="math notranslate nohighlight">\(g(x)\)</span> e si può indicare con la notazione di <em>o piccolo</em> <span class="math notranslate nohighlight">\(f(x) = o \left(g(x) \right)\)</span></p></li>
+<li><p>se <span class="math notranslate nohighlight">\(\ell\)</span> finito diverso da zero, si può dire che <span class="math notranslate nohighlight">\(f(x)\)</span> è un infinitesimo, o un infinito,  dello stesso ordine di <span class="math notranslate nohighlight">\(g(x)\)</span> e si può indicare con la notazione di <em>o grande</em> <span class="math notranslate nohighlight">\(f(x) = O \left(g(x) \right)\)</span></p></li>
+<li><p>se <span class="math notranslate nohighlight">\(\ell\)</span> è infinito, si può dire che <span class="math notranslate nohighlight">\(f(x)\)</span> è un infinitesimo di ordine inferiore, o un infinito di ordine superiore, rispetto a <span class="math notranslate nohighlight">\(g(x)\)</span>; viceversa <span class="math notranslate nohighlight">\(g(x)\)</span> è un infinitesimo di ordine superiore, o un infinito di ordine inferiore, rispetto a <span class="math notranslate nohighlight">\(f(x)\)</span> e si può indicare con la notazione di <em>o piccolo</em> <span class="math notranslate nohighlight">\(g(x) = O \left(f(x) \right)\)</span></p></li>
+</ul>
 </div>
 <div class="section" id="limiti-fondamentali">
 <span id="infinitesimal-calculus-limits-fund"></span><h2>Limiti fondamentali<a class="headerlink" href="#limiti-fondamentali" title="Permalink to this heading">#</a></h2>
@@ -622,7 +649,7 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[ \lim_{x \rightarrow 0} \frac{\sin x}{x} = 1 \]</div>
 <div class="math notranslate nohighlight">
-\[ \lim_{x \rightarrow 0} \frac{1 - \cos^2 x}{x^2} = \frac{1}{2} \]</div>
+\[ \lim_{x \rightarrow 0} \frac{1 - \cos x}{x^2} = \frac{1}{2} \]</div>
 <div class="math notranslate nohighlight">
 \[ \lim_{x \rightarrow +\infty} \left( 1 + \frac{1}{x} \right)^x = e \]</div>
 <div class="math notranslate nohighlight">
@@ -631,16 +658,61 @@ document.write(`
 \[ \lim_{x \rightarrow 0} \frac{e^x}{1+x}= 1 \]</div>
 <div class="math notranslate nohighlight">
 \[ \lim_{x \rightarrow 0} \frac{\ln (1+x)}{x} = 1 \]</div>
-<p>Una volta compresa l’operazione di derivazione e di sviluppo in serie, si può rivisitare i limiti notevoli <strong>todo</strong></p>
-<p>Limiti di successioni. <strong>Formula di Sterling</strong></p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Dimostrazione di <span class="math notranslate nohighlight">\(\ \lim_{x \rightarrow 0} \frac{\sin x}{x} = 1 \)</span><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Usando il teorema del confronto per le funzioni <span class="math notranslate nohighlight">\(\sin x \le x \le \tan x\)</span> (<strong>todo</strong> *dimostrare con l’area delle figure geometriche <span class="math notranslate nohighlight">\(\frac{1}{2}\sin x \le \frac{1}{2} \, x \le \frac{1}{2} \tan x\)</span>), si può scrivere per <span class="math notranslate nohighlight">\(x \ne 0\)</span></p>
+<div class="math notranslate nohighlight">
+\[1 \le \frac{x}{\sin x} \le \frac{\tan x}{\sin x} = \frac{1}{\cos x} .\]</div>
+<p class="sd-card-text">Il limite per <span class="math notranslate nohighlight">\(x \rightarrow 0\)</span> delle due funzioni estreme vale <span class="math notranslate nohighlight">\(1\)</span>, quindi</p>
+<div class="math notranslate nohighlight">
+\[\lim_{x \rightarrow 0} \frac{x}{\sin x} = 1 \ .\]</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Dimostrazione di <span class="math notranslate nohighlight">\(\ \lim_{x \rightarrow 0} \frac{1 - \cos x}{x^2} = \frac{1}{2} \)</span><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Usando la formula <span class="math notranslate nohighlight">\(\cos 2 \alpha = \cos^2 \alpha - \sin^2 \alpha = 2 \cos^2 \alpha - 1 = 1 - 2 \sin^2 \alpha\)</span>, si può scrivere <span class="math notranslate nohighlight">\(1 - \cos x = 2 \sin^2 \frac{x}{2}\)</span>. Si può quindi riscrivere il limite cercato come</p>
+<div class="math notranslate nohighlight">
+\[\lim_{x \rightarrow 0} \frac{1 - \cos x}{x^2} = \lim_{x \rightarrow 0} \frac{ 2 \sin^2 \frac{x}{2} }{x^2} = \lim_{x \rightarrow 0} \frac{1}{2} \frac{\sin^2 \frac{x}{2}}{\left( \frac{x}{2} \right)^2} = \frac{1}{2} \underbrace{\lim_{x \rightarrow 0} \left( \frac{\sin \frac{x}{2}}{\frac{x}{2}} \right)^2}_{=1} = \frac{1}{2} \ .\]</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Dimostrazione di <span class="math notranslate nohighlight">\(\ \lim_{x \rightarrow 0} \frac{e^x - 1}{x}= 1 \)</span><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Usando le notazioni di “o piccolo” e “o grande” per <a class="reference internal" href="#infinitesimal-calculus-limits-infinite-simal"><span class="std std-ref">il confronto tra infinitesimi</span></a>, si dimostra il limite desiderato,</p>
+<div class="math notranslate nohighlight">
+\[\lim_{x \rightarrow 0} \frac{e^x - 1}{x} = \lim_{x \rightarrow 0} \frac{\sum_{k=0}^{+\infty} \frac{x^k}{k!} - 1}{x} = \lim_{x \rightarrow 0} \frac{1 + x + o(x) - 1}{x} = \lim_{x \rightarrow 0} \left( 1 + O(x) \right) = 1 \ .\]</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Dimostrazione di <span class="math notranslate nohighlight">\(\ \lim_{x \rightarrow 0} \frac{e^x}{1 + x} = 1 \)</span><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Usando le notazioni di “o piccolo” e “o grande” per <a class="reference internal" href="#infinitesimal-calculus-limits-infinite-simal"><span class="std std-ref">il confronto tra infinitesimi</span></a>, si dimostra il limite desiderato,</p>
+<div class="math notranslate nohighlight">
+\[\lim_{x \rightarrow 0} \frac{e^x}{1 + x} = \lim_{x \rightarrow 0} \frac{\sum_{k=0}^{+\infty} \frac{x^k}{k!}}{1+x} = \lim_{x \rightarrow 0} \frac{1 + x + o(x)}{1+x} = \lim_{x \rightarrow 0} \left( 1 + \frac{o(x)}{1+x} \right) = 1 \ .\]</div>
+</div>
+</details><p>Una volta compresa l’operazione di derivazione e di sviluppo in serie, si può rivisitare i limiti notevoli <strong>todo</strong></p>
+<p><strong>todo</strong> <em>Spostare nella sezione di precalcolo sulle successioni</em>
+Limiti di successioni. <strong>Formula di Sterling</strong></p>
 <div class="math notranslate nohighlight">
 \[n! \sim \left(\frac{n}{e} \right)^n \qquad \text{per $n \in \mathbb{N} \rightarrow +\infty$}\]</div>
 <p>o</p>
 <div class="math notranslate nohighlight">
 \[\ln n! \sim n \ln n - n  \qquad \text{per $n \in \mathbb{N} \rightarrow +\infty$}\]</div>
-</div>
-<div class="section" id="infiniti-e-infinitesimi">
-<h2>Infiniti e infinitesimi<a class="headerlink" href="#infiniti-e-infinitesimi" title="Permalink to this heading">#</a></h2>
 </div>
 </div>
 
@@ -737,8 +809,8 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-de-l-hopital">Teorema di de l’Hopital</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#confronto-di-infiniti-e-infinitesimi">Confronto di infiniti e infinitesimi</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limiti-fondamentali">Limiti fondamentali</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#infiniti-e-infinitesimi">Infiniti e infinitesimi</a></li>
 </ul>
   </nav></div>
 
