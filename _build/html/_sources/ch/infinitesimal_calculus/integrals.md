@@ -161,7 +161,7 @@ $$\begin{aligned}
 ## Regole di integrazione
 (infinitesimal-calculus:integrals:by-parts)=
 ### Integrazione per parti
-La regola di integrazione per parti viene ottenuta integrando la regola di [derivazione del prodotto](infinitesimal-calculus:derivatives:rules:product). Siano $F(x)$, $G(x)$ le primitive delle funzioni $f(x)$, $g(x)$, e quindi vale $F'(x) = f(x)$, $G'(x) = g(x)$.
+La regola di integrazione per parti viene ottenuta integrando la regola di [derivazione del prodotto]{eq}`infinitesimal-calculus:derivatives:rules:product`. Siano $F(x)$, $G(x)$ le primitive delle funzioni $f(x)$, $g(x)$, e quindi vale $F'(x) = f(x)$, $G'(x) = g(x)$.
 La regola di derivazione del prodotto $F(x)G(x)$ viene scritta come
 
 $$\begin{aligned}

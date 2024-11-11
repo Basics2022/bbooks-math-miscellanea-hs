@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2024.9.16)  11 NOV 2024 21:44
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2024.9.16)  11 NOV 2024 21:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2278,20 +2278,10 @@ Overfull \hbox (72.85744pt too wide) detected at line 5847
 LaTeX Warning: Hyper reference `ch/infinitesimal_calculus/integrals:infinitesim
 al-calculus-integrals-thm-fund' on page 104 undefined on input line 5852.
 
-
-LaTeX Warning: Hyper reference `ch/infinitesimal_calculus/derivatives:equation-
-infinitesimal-calculus-derivatives-rules-product' on page 104 undefined on inpu
-t line 5869.
-
 LaTeX Info: Redefining \rmfamily on input line 5886.
 LaTeX Info: Redefining \sffamily on input line 5886.
 LaTeX Info: Redefining \ttfamily on input line 5886.
 [104]
-
-LaTeX Warning: Hyper reference `ch/infinitesimal_calculus/derivatives:equation-
-infinitesimal-calculus-derivatives-rules-product' on page 105 undefined on inpu
-t line 5889.
-
 
 LaTeX Warning: Hyper reference `ch/infinitesimal_calculus/integrals:infinitesim
 al-calculus-integrals-thm-fund' on page 105 undefined on input line 5901.
@@ -2420,15 +2410,15 @@ braces):
 >  {english/babelname}  =>  {american}
 >  {english/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {english/Localnumeral}  =>  {polyglossia@C@localnumeral}.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 6933.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 6933.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 6936.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 6936.
  (./book.aux
 LaTeX Info: Redefining \rmfamily on input line 19.
 LaTeX Info: Redefining \sffamily on input line 19.
 LaTeX Info: Redefining \ttfamily on input line 19.
 )
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 6933.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 6933.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 6936.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 6936.
 
 Package rerunfilecheck Info: File `book.out' has not changed.
 (rerunfilecheck)             Checksum: 3A03EC0102EB0A06F7B21CC95059B384;16817.
@@ -2438,10 +2428,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 42687 strings out of 481789
- 975894 string characters out of 5937152
- 1656959 words of memory out of 5000000
- 58835 multiletter control sequences out of 15000+600000
+ 42686 strings out of 481789
+ 975797 string characters out of 5937152
+ 1657959 words of memory out of 5000000
+ 58834 multiletter control sequences out of 15000+600000
  541270 words of font info for 133 fonts, out of 8000000 for 9000
  15 hyphenation exceptions out of 8191
  71i,27n,109p,1024b,2197s stack positions out of 5000i,500n,10000p,200000b,80000s
