@@ -496,7 +496,7 @@ document.write(`
 <p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-calendar" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path></svg></span>12 nov 2024</p>
 </div>
 <div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
-<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>4 min read</p>
+<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>6 min read</p>
 </div>
 </div>
 </div>
@@ -542,6 +542,38 @@ Mentre le motivazioni date dovrebbero essere sufficienti a convincere dell’imp
 </div>
 <div class="section" id="esempi">
 <h4>Esempi<a class="headerlink" href="#esempi" title="Permalink to this heading">#</a></h4>
+<p><strong>Temperatura di un corpo, soggetto a convezione.</strong> L’equazione che governa l’evoluzione della temperatura <span class="math notranslate nohighlight">\(T(t)\)</span> di un sistema, sufficientemente piccolo da poter essere considerato a temperatura uniforme nello spazio, soggetto alla trasmissione del calore per convezione sulla sua superficie in un ambiente a temperatura <span class="math notranslate nohighlight">\(T^e(t)\)</span> nota è l’equazione differenziale ordinaria del primo ordine,</p>
+<div class="math notranslate nohighlight">
+\[m \, C \, \dot{T}(t) + h \, T(t) = h \, T_e(t) \ ,\]</div>
+<p>con le opportune condizioni iniziali.
+Questa equazione può essere ricavata dal principio della termodinamica, per il quale la variazione di energia termica <span class="math notranslate nohighlight">\(E\)</span> di un sistema non sottoposta a lavoro delle forze è uguale al flusso di calore «entrante» nel sistema, <span class="math notranslate nohighlight">\(\dot{Q}^e\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\dot{E} = \dot{Q}^e \ ,\]</div>
+<p>scrivendo l’energia termica come il prodotto della massa <span class="math notranslate nohighlight">\(m\)</span>, del calore specifico <span class="math notranslate nohighlight">\(c\)</span> e della temperatura <span class="math notranslate nohighlight">\(T\)</span> del sistema, e il flusso di calore per convezione con la <em>formula di Newton</em>, <span class="math notranslate nohighlight">\(\dot{Q} = h (T_e - T)\)</span>.</p>
+<p><strong>Sistema massa-molla-smorzatore.</strong> L’equazione che governa la dinamica di un sistema massa-molla-smorzatore con un corpo di massa <span class="math notranslate nohighlight">\(m\)</span> che si muove lungo una direzione <span class="math notranslate nohighlight">\(x\)</span>, vincolato a terra da una molla di costante elastica <span class="math notranslate nohighlight">\(k\)</span> e da uno smorzatore lineare con coefficiente <span class="math notranslate nohighlight">\(c\)</span>, soggetto a una forzante esterna <span class="math notranslate nohighlight">\(f^e(t)\)</span> nota è l’equazione differenziale ordinaria del secondo ordine,</p>
+<div class="math notranslate nohighlight">
+\[m \, \ddot{x}(t) + c \, \dot{x}(t) + k \, x(t) = f^e(t) \ ,\]</div>
+<p>con le opportune condizioni iniziali.
+Questa equazione può essere ricavata dal secondo principio della dinamica di Newton lungo la direzione <span class="math notranslate nohighlight">\(x\)</span></p>
+<div class="math notranslate nohighlight">
+\[\dot{\vec{Q}} = \vec{R}^e = \vec{F}^k + \vec{f}^c + \vec{f}^e(t) \ ,\]</div>
+<p>scrivendo la quantità di moto del sistema lungo <span class="math notranslate nohighlight">\(x\)</span> come <span class="math notranslate nohighlight">\(Q_x = m \dot{x}(t)\)</span> e assumendo che la molla e lo smorzatore esercitino una forza sul corpo <span class="math notranslate nohighlight">\(f^{k} = - k \, x\)</span>, <span class="math notranslate nohighlight">\(f^c = - c \, \dot{x}\)</span> rispettivamente.</p>
+<p><strong>Distribuzione stazionaria di temperatura.</strong> La distribuzione stazionaria di temperatura in un corpo, senza sorgenti di calore al suo interno, è governata dall’equazione differenziale ordinaria del secondo ordine,</p>
+<div class="math notranslate nohighlight">
+\[( k T'(x) )' = 0 \ ,\]</div>
+<p><strong>Circuito RLC.</strong> <strong>todo</strong></p>
+<p><strong>Caduta di un grave - 1: senza resistenza</strong> L’equazione che governa la caduta di un corpo di massa <span class="math notranslate nohighlight">\(m\)</span> soggetto alla gravità <span class="math notranslate nohighlight">\(g\)</span> lungo la verticale nei pressi della superficie terrestre è l’equazione differenziale ordinaria di secondo ordine</p>
+<div class="math notranslate nohighlight">
+\[m \ddot{z} = - m g \ ,\]</div>
+<p>con le opportune condizioni iniziali.
+Questa equazione può essere ricavata dal secondo principio della dinamica di Newton per un corpo di massa <span class="math notranslate nohighlight">\(m\)</span> soggetto unicamente al suo peso <span class="math notranslate nohighlight">\(\vec{F}^{peso} = - m \, g \hat{z}\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\dot{\vec{Q}} = \mathbf{F}^{peso} \ ,\]</div>
+<p>e scegliendo la coordinata <span class="math notranslate nohighlight">\(z\)</span> allineata alla verticale e diretta verso l’alto.</p>
+<p><strong>Caduta di un grave - 2: con resistenza lineare nella velocità</strong></p>
+<p><strong>Caduta di un grave - 3: con resistenza quadratica nella velocità</strong></p>
+<p><strong>Deformazione a torsione di una trave</strong></p>
+<p><strong>Deformazione a flessione di una trave</strong></p>
 </div>
 <div class="section" id="soluzione">
 <h4>Soluzione<a class="headerlink" href="#soluzione" title="Permalink to this heading">#</a></h4>
@@ -582,9 +614,12 @@ Mentre le motivazioni date dovrebbero essere sufficienti a convincere dell’imp
 <h5>Soluzione particolare dell’equazione completa<a class="headerlink" href="#soluzione-particolare-dell-equazione-completa" title="Permalink to this heading">#</a></h5>
 <p>Come regola generale, la ricerca della soluzione particolare dell’equazione completa è guidata dall’espressione della forzante. Ad esempio:</p>
 <ul class="simple">
-<li><p>forzanti polinomiali</p></li>
-<li><p>forzanti esponenziali</p></li>
-<li><p>forzanti armoniche</p></li>
+<li><p>con <strong>forzanti polinomiali</strong> si cerca una soluzione particolare polinomiale</p></li>
+<li><p>con <strong>forzanti esponenziali</strong> si cerca una soluzione particolare esponenziale</p></li>
+<li><p>con <strong>forzanti armoniche</strong> si cerca una soluzione particolare armonica</p></li>
+</ul>
+<p>Nel caso in cui la soluzione particolare abbia la forma di una delle soluzioni della soluzione particolare, si adotta la stessa tecnica adottata nel caso di zeri multipli.</p>
+<ul class="simple">
 <li><p>Equazioni di primo grado</p></li>
 </ul>
 <div class="math notranslate nohighlight">

@@ -46,6 +46,53 @@ Se la funzione $f(x)$ è la funzione identicamente nulla $f(x) \equiv 0$, l'equa
 
 #### Esempi
 
+**Temperatura di un corpo, soggetto a convezione.** L'equazione che governa l'evoluzione della temperatura $T(t)$ di un sistema, sufficientemente piccolo da poter essere considerato a temperatura uniforme nello spazio, soggetto alla trasmissione del calore per convezione sulla sua superficie in un ambiente a temperatura $T^e(t)$ nota è l'equazione differenziale ordinaria del primo ordine,
+
+$$m \, C \, \dot{T}(t) + h \, T(t) = h \, T_e(t) \ ,$$
+
+con le opportune condizioni iniziali.
+Questa equazione può essere ricavata dal principio della termodinamica, per il quale la variazione di energia termica $E$ di un sistema non sottoposta a lavoro delle forze è uguale al flusso di calore "entrante" nel sistema, $\dot{Q}^e$,
+
+$$\dot{E} = \dot{Q}^e \ ,$$
+
+scrivendo l'energia termica come il prodotto della massa $m$, del calore specifico $c$ e della temperatura $T$ del sistema, e il flusso di calore per convezione con la *formula di Newton*, $\dot{Q} = h (T_e - T)$.
+
+**Sistema massa-molla-smorzatore.** L'equazione che governa la dinamica di un sistema massa-molla-smorzatore con un corpo di massa $m$ che si muove lungo una direzione $x$, vincolato a terra da una molla di costante elastica $k$ e da uno smorzatore lineare con coefficiente $c$, soggetto a una forzante esterna $f^e(t)$ nota è l'equazione differenziale ordinaria del secondo ordine,
+
+$$m \, \ddot{x}(t) + c \, \dot{x}(t) + k \, x(t) = f^e(t) \ ,$$
+
+con le opportune condizioni iniziali. 
+Questa equazione può essere ricavata dal secondo principio della dinamica di Newton lungo la direzione $x$
+
+$$\dot{\vec{Q}} = \vec{R}^e = \vec{F}^k + \vec{f}^c + \vec{f}^e(t) \ ,$$
+
+scrivendo la quantità di moto del sistema lungo $x$ come $Q_x = m \dot{x}(t)$ e assumendo che la molla e lo smorzatore esercitino una forza sul corpo $f^{k} = - k \, x$, $f^c = - c \, \dot{x}$ rispettivamente.
+
+**Distribuzione stazionaria di temperatura.** La distribuzione stazionaria di temperatura in un corpo, senza sorgenti di calore al suo interno, è governata dall'equazione differenziale ordinaria del secondo ordine,
+
+$$( k T'(x) )' = 0 \ ,$$
+
+**Circuito RLC.** **todo**
+
+**Caduta di un grave - 1: senza resistenza** L'equazione che governa la caduta di un corpo di massa $m$ soggetto alla gravità $g$ lungo la verticale nei pressi della superficie terrestre è l'equazione differenziale ordinaria di secondo ordine
+
+$$m \ddot{z} = - m g \ ,$$
+
+con le opportune condizioni iniziali.
+Questa equazione può essere ricavata dal secondo principio della dinamica di Newton per un corpo di massa $m$ soggetto unicamente al suo peso $\vec{F}^{peso} = - m \, g \hat{z}$,
+
+$$\dot{\vec{Q}} = \mathbf{F}^{peso} \ ,$$
+
+e scegliendo la coordinata $z$ allineata alla verticale e diretta verso l'alto.
+
+**Caduta di un grave - 2: con resistenza lineare nella velocità**
+
+**Caduta di un grave - 3: con resistenza quadratica nella velocità**
+
+**Deformazione a torsione di una trave**
+
+**Deformazione a flessione di una trave**
+
 #### Soluzione
 La soluzione di un'equazione differenziale lineare a coefficienti costanti può essere scritta come somma di una soluzione $y_o(x)$ dell'equazione omogenea associata e di una soluzione particolare $y_p(x)$ dell'equazione,
 
@@ -85,13 +132,14 @@ poiché la funzione esponenziale non è mai nulla. Il [teorema fondamentale dell
 
 Come regola generale, la ricerca della soluzione particolare dell'equazione completa è guidata dall'espressione della forzante. Ad esempio:
 
-- forzanti polinomiali
+- con **forzanti polinomiali** si cerca una soluzione particolare polinomiale
 
-- forzanti esponenziali
+- con **forzanti esponenziali** si cerca una soluzione particolare esponenziale
 
-- forzanti armoniche
+- con **forzanti armoniche** si cerca una soluzione particolare armonica
 
 
+Nel caso in cui la soluzione particolare abbia la forma di una delle soluzioni della soluzione particolare, si adotta la stessa tecnica adottata nel caso di zeri multipli. 
 
 
 - Equazioni di primo grado
