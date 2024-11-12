@@ -281,9 +281,22 @@ Nel caso in cui la soluzione particolare abbia la forma di una delle soluzioni d
 In questa sezione vengono risolti alcuni problemi governati dalle equazioni differenziali presentate in precedenza come [esempi](ode-hs:types:linear-const:ex) di equazioni differenziali ordinarie lineari a coefficienti costanti, applicando il [metodo di soluzione generale](ode-hs:types:linear-const:sol) per questo tipo di equazioni.
 
 ```{dropdown} Esempio - Temperatura di un corpo, soggetto a convezione.
+**Temperatura costante, $T^e$**
+
+**Temperatura crescente linearmente, $T^e(t) = T_0 + G \, t$**
+
+**Temperatura con andamento periodico, $T^e(t) = T_0 + \Delta T \sin(\Omega t) \, t$**
+
 ```
 
 ```{dropdown} Esempio - Sistema massa-molla-smorzatore
+**todo** *definire il sistema adimensionale e verificare la risposta in funzione del coefficiente di smorzamento del sistema; definire smorzamento critico, e sistemi sovra- e sotto-smorzati; indagare il fenomeno della* **risonanza**
+
+**Moto libero - forzante nulla, $f^e = 0$**
+
+**Forzante costante, $f^e$**
+
+**Forzante armonica, $f^e(t) = f_0 + \Delta f \sin(\Omega t)$**
 ```
 
 ```{dropdown} Esempio - Circuito RLC. **todo**
@@ -305,9 +318,20 @@ In questa sezione vengono risolti alcuni problemi governati dalle equazioni diff
 ```
 
 ```{dropdown} Esempio - Deformazione a torsione di una trave
+**Trave incastrata a un estremo, carico distribuito uniforme in apertura e concentrato all'altro estremo**
+
+**Trave incastrata in entrambi gli estremi e con carico distribuito uniforme in apertura**
+
+**Trave incastrata in un estremo e con carico distribuito triangolare in apertura**
+
 ```
 
 ```{dropdown} Esempio - Deformazione a flessione di una trave
+**Trave incastrata a un estremo, carico distribuito uniforme in apertura e all'altro estremo, sia con forza sia con momento flettente concentrato**
+
+**Trave incastrata in entrambi gli estremi e con carico distribuito uniforme in apertura**
+
+**Trave incastrata in un estremo e vincolata con un pattino all'altro estremo**
 ```
 
 (ode-hs:types:separable)=
