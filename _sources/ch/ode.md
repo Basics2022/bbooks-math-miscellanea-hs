@@ -21,7 +21,7 @@ e in generale, in tutti le equazioni che governano processi in cui il valore di 
 Mentre le motivazioni date dovrebbero essere sufficienti a convincere dell'importanza e della necessità di un'introduzione alle ODE, una trattazione completa dell'argomento richiede strumenti matematici più avanzati di quelli disponibili a uno studente delle scuole superiori (e spesso anche di molti studenti universitari).
 Si cercherà quindi di trattare l'argomento nella maniera più rigorosa possibile per fornire gli strumenti necessari per (semplici) applicazioni nelle quali compaiono le ODE, mentre si chiederà qualche atto di fede nell'accettare alcuni risultati. <span style="color:red">Per completezza, in corrispondenza di questi atti di fede, verrà messo a disposizione un collegamento a una trattazione più completa dell'argomento.</span>
 
-Vengono inizialmente fornite le [prime definizioni](ode-hs:def)
+Il capitolo è diviso come segue: dopo aver fornito le [prime definizioni](ode-hs:def), si introduce una [classificazione](ode-hs:class) delle equazioni differenziali ordinarie, prestando massima attenzione alle [equazioni differenziali lineari a coefficienti costanti](ode-hs:types:linear-const): per questo particolare tipo di ODE, è possibile trovare un metodo generale di soluzione. Dopo aver mostrato [alcuni esempi](ode-hs:types:linear-const:ex), viene presentato il [metodo di soluzione](ode-hs:types:linear-const:sol), e applicato successivamente alla [risoluzione degli esempi](ode-hs:types:linear-const:ex-sol) dati: la soluzione degli esempi è pensata per fare pratica con la tecnica risolutiva e permette di indagare alcuni fenomeni fisici come quello della **risonanza** **todo** *aggiungere riferimento alla soluzione del sistema massa-molla-smorzatore*. Infine, viene presentata un'altra categoria di ODE, per la quale esiste - almeno formalmente - una tecnica risolutiva: la tecnica di separazione delle variabili per le [equazioni differenziali a variabili separabili](ode-hs:types:separable).
 
 (ode-hs:def)=
 ## Prime definizioni
@@ -255,7 +255,7 @@ Nel caso in cui la soluzione particolare abbia la forma di una delle soluzioni d
 ```
 
 (ode-hs:types:separable)=
-### Equazioni separabili: tecnica di soluzione di separazione delle variabili
+### Equazioni differenziali a variabili separabili: tecnica di soluzione di separazione delle variabili
 
 $$\frac{d y}{d x} = f(y(x)) \ g(x) $$
 

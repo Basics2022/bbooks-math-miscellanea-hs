@@ -470,7 +470,7 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#soluzione-degli-esempi">Soluzione degli esempi</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-separabili-tecnica-di-soluzione-di-separazione-delle-variabili">Equazioni separabili: tecnica di soluzione di separazione delle variabili</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-differenziali-a-variabili-separabili-tecnica-di-soluzione-di-separazione-delle-variabili">Equazioni differenziali a variabili separabili: tecnica di soluzione di separazione delle variabili</a></li>
 </ul>
 </li>
 </ul>
@@ -496,7 +496,7 @@ document.write(`
 <p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-calendar" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path></svg></span>12 nov 2024</p>
 </div>
 <div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
-<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>8 min read</p>
+<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>9 min read</p>
 </div>
 </div>
 </div>
@@ -517,7 +517,7 @@ document.write(`
 <p><strong>Approccio.</strong>
 Mentre le motivazioni date dovrebbero essere sufficienti a convincere dell’importanza e della necessità di un’introduzione alle ODE, una trattazione completa dell’argomento richiede strumenti matematici più avanzati di quelli disponibili a uno studente delle scuole superiori (e spesso anche di molti studenti universitari).
 Si cercherà quindi di trattare l’argomento nella maniera più rigorosa possibile per fornire gli strumenti necessari per (semplici) applicazioni nelle quali compaiono le ODE, mentre si chiederà qualche atto di fede nell’accettare alcuni risultati. <span style="color:red">Per completezza, in corrispondenza di questi atti di fede, verrà messo a disposizione un collegamento a una trattazione più completa dell’argomento.</span></p>
-<p>Vengono inizialmente fornite le <a class="reference internal" href="#ode-hs-def"><span class="std std-ref">prime definizioni</span></a></p>
+<p>Il capitolo è diviso come segue: dopo aver fornito le <a class="reference internal" href="#ode-hs-def"><span class="std std-ref">prime definizioni</span></a>, si introduce una <span class="xref myst">classificazione</span> delle equazioni differenziali ordinarie, prestando massima attenzione alle <a class="reference internal" href="#ode-hs-types-linear-const"><span class="std std-ref">equazioni differenziali lineari a coefficienti costanti</span></a>: per questo particolare tipo di ODE, è possibile trovare un metodo generale di soluzione. Dopo aver mostrato <a class="reference internal" href="#ode-hs-types-linear-const-ex"><span class="std std-ref">alcuni esempi</span></a>, viene presentato il <a class="reference internal" href="#ode-hs-types-linear-const-sol"><span class="std std-ref">metodo di soluzione</span></a>, e applicato successivamente alla <a class="reference internal" href="#ode-hs-types-linear-const-ex-sol"><span class="std std-ref">risoluzione degli esempi</span></a> dati: la soluzione degli esempi è pensata per fare pratica con la tecnica risolutiva e permette di indagare alcuni fenomeni fisici come quello della <strong>risonanza</strong> <strong>todo</strong> <em>aggiungere riferimento alla soluzione del sistema massa-molla-smorzatore</em>. Infine, viene presentata un’altra categoria di ODE, per la quale esiste - almeno formalmente - una tecnica risolutiva: la tecnica di separazione delle variabili per le <a class="reference internal" href="#ode-hs-types-separable"><span class="std std-ref">equazioni differenziali a variabili separabili</span></a>.</p>
 <div class="section" id="prime-definizioni">
 <span id="ode-hs-def"></span><h2>Prime definizioni<a class="headerlink" href="#prime-definizioni" title="Permalink to this heading">#</a></h2>
 <p>Un”<strong>equazione differenziale ordinaria</strong> è un’equazione che coinvolge una funzione reale, incognita, di una variabile reale e le sue derivate. Formalmente una ODE può essere scritta come</p>
@@ -827,8 +827,8 @@ Esempio - Deformazione a flessione di una trave<div class="sd-summary-down docut
 </div>
 </details></div>
 </div>
-<div class="section" id="equazioni-separabili-tecnica-di-soluzione-di-separazione-delle-variabili">
-<span id="ode-hs-types-separable"></span><h3>Equazioni separabili: tecnica di soluzione di separazione delle variabili<a class="headerlink" href="#equazioni-separabili-tecnica-di-soluzione-di-separazione-delle-variabili" title="Permalink to this heading">#</a></h3>
+<div class="section" id="equazioni-differenziali-a-variabili-separabili-tecnica-di-soluzione-di-separazione-delle-variabili">
+<span id="ode-hs-types-separable"></span><h3>Equazioni differenziali a variabili separabili: tecnica di soluzione di separazione delle variabili<a class="headerlink" href="#equazioni-differenziali-a-variabili-separabili-tecnica-di-soluzione-di-separazione-delle-variabili" title="Permalink to this heading">#</a></h3>
 <div class="math notranslate nohighlight">
 \[\frac{d y}{d x} = f(y(x)) \ g(x) \]</div>
 <p>può essere riscritta formalmente come</p>
@@ -1015,7 +1015,7 @@ $$(EJ w'')'' = f$$
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#soluzione-degli-esempi">Soluzione degli esempi</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-separabili-tecnica-di-soluzione-di-separazione-delle-variabili">Equazioni separabili: tecnica di soluzione di separazione delle variabili</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-differenziali-a-variabili-separabili-tecnica-di-soluzione-di-separazione-delle-variabili">Equazioni differenziali a variabili separabili: tecnica di soluzione di separazione delle variabili</a></li>
 </ul>
 </li>
 </ul>
