@@ -145,41 +145,42 @@
 \contentsline {subsubsection}{Teoremi}{95}{subsubsection*.40}%
 \contentsline {paragraph}{Teorema di Weierstrass}{95}{paragraph*.41}%
 \contentsline {paragraph}{Teorema della permanenza del segno}{95}{paragraph*.42}%
-\contentsline {paragraph}{Teorema dei valori intermedi}{95}{paragraph*.43}%
-\contentsline {subsection}{\numberline {17.1.4}Teoremi sui limiti}{95}{subsection.17.1.4}%
-\contentsline {subsubsection}{Operazioni coi limiti}{95}{subsubsection*.44}%
-\contentsline {paragraph}{Limiti infiniti e infinitesimi}{96}{paragraph*.45}%
-\contentsline {paragraph}{Forme indeterminate}{96}{paragraph*.46}%
-\contentsline {subsubsection}{Teorema del confronto}{96}{subsubsection*.47}%
-\contentsline {subsubsection}{Teorema di de l’Hopital}{97}{subsubsection*.48}%
-\contentsline {subsection}{\numberline {17.1.5}Confronto di infiniti e infinitesimi}{97}{subsection.17.1.5}%
-\contentsline {subsection}{\numberline {17.1.6}Limiti fondamentali}{97}{subsection.17.1.6}%
-\contentsline {section}{\numberline {17.2}Derivate}{98}{section.17.2}%
-\contentsline {subsection}{\numberline {17.2.1}Definizione}{98}{subsection.17.2.1}%
-\contentsline {subsection}{\numberline {17.2.2}Regole di derivazione}{99}{subsection.17.2.2}%
-\contentsline {subsection}{\numberline {17.2.3}Teoremi}{100}{subsection.17.2.3}%
-\contentsline {subsection}{\numberline {17.2.4}Derivate fondamentali}{101}{subsection.17.2.4}%
-\contentsline {subsection}{\numberline {17.2.5}Derivate di ordine superiore}{103}{subsection.17.2.5}%
-\contentsline {subsection}{\numberline {17.2.6}Applicazioni}{103}{subsection.17.2.6}%
-\contentsline {subsubsection}{Espansioni in serie di Taylor e MacLaurin}{103}{subsubsection*.49}%
-\contentsline {paragraph}{Esempi}{104}{paragraph*.50}%
-\contentsline {subsubsection}{Studio di funzione}{105}{subsubsection*.51}%
-\contentsline {subsubsection}{Ottimizzazione}{105}{subsubsection*.52}%
-\contentsline {section}{\numberline {17.3}Integrali}{105}{section.17.3}%
-\contentsline {subsection}{\numberline {17.3.1}Definizioni}{105}{subsection.17.3.1}%
-\contentsline {subsubsection}{Interpretazione geometrica}{105}{subsubsection*.53}%
-\contentsline {subsubsection}{Integrale definito}{105}{subsubsection*.54}%
-\contentsline {paragraph}{Proprietà dell’integrale definito}{105}{paragraph*.55}%
-\contentsline {subsubsection}{Integrale indefinito}{106}{subsubsection*.57}%
-\contentsline {subsection}{\numberline {17.3.2}Teoremi}{107}{subsection.17.3.2}%
-\contentsline {subsection}{\numberline {17.3.3}Integrali fondamentali}{108}{subsection.17.3.3}%
-\contentsline {subsection}{\numberline {17.3.4}Regole di integrazione}{108}{subsection.17.3.4}%
-\contentsline {subsubsection}{Integrazione per parti}{108}{subsubsection*.58}%
-\contentsline {subsubsection}{Integrazione con sostituzione}{109}{subsubsection*.59}%
-\contentsline {subsection}{\numberline {17.3.5}Tavola degli integrali indefiniti più comuni}{109}{subsection.17.3.5}%
-\contentsline {subsection}{\numberline {17.3.6}Problemi}{110}{subsection.17.3.6}%
-\contentsline {subsubsection}{Calcolo integrali indefiniti}{110}{subsubsection*.60}%
-\contentsline {section}{\numberline {17.4}Equazioni differenziali ordinarie}{111}{section.17.4}%
+\contentsline {paragraph}{Teorema degli zeri}{96}{paragraph*.43}%
+\contentsline {paragraph}{Teorema dei valori intermedi}{96}{paragraph*.44}%
+\contentsline {subsection}{\numberline {17.1.4}Teoremi sui limiti}{96}{subsection.17.1.4}%
+\contentsline {subsubsection}{Operazioni coi limiti}{96}{subsubsection*.45}%
+\contentsline {paragraph}{Limiti infiniti e infinitesimi}{97}{paragraph*.46}%
+\contentsline {paragraph}{Forme indeterminate}{97}{paragraph*.47}%
+\contentsline {subsubsection}{Teorema del confronto}{97}{subsubsection*.48}%
+\contentsline {subsubsection}{Teorema di de l’Hopital}{98}{subsubsection*.49}%
+\contentsline {subsection}{\numberline {17.1.5}Confronto di infiniti e infinitesimi}{98}{subsection.17.1.5}%
+\contentsline {subsection}{\numberline {17.1.6}Limiti fondamentali}{98}{subsection.17.1.6}%
+\contentsline {section}{\numberline {17.2}Derivate}{100}{section.17.2}%
+\contentsline {subsection}{\numberline {17.2.1}Definizione}{100}{subsection.17.2.1}%
+\contentsline {subsection}{\numberline {17.2.2}Regole di derivazione}{100}{subsection.17.2.2}%
+\contentsline {subsection}{\numberline {17.2.3}Teoremi}{101}{subsection.17.2.3}%
+\contentsline {subsection}{\numberline {17.2.4}Derivate fondamentali}{103}{subsection.17.2.4}%
+\contentsline {subsection}{\numberline {17.2.5}Derivate di ordine superiore}{105}{subsection.17.2.5}%
+\contentsline {subsection}{\numberline {17.2.6}Applicazioni}{105}{subsection.17.2.6}%
+\contentsline {subsubsection}{Espansioni in serie di Taylor e MacLaurin}{105}{subsubsection*.50}%
+\contentsline {paragraph}{Esempi}{106}{paragraph*.51}%
+\contentsline {subsubsection}{Studio di funzione}{106}{subsubsection*.52}%
+\contentsline {subsubsection}{Ottimizzazione}{106}{subsubsection*.53}%
+\contentsline {section}{\numberline {17.3}Integrali}{106}{section.17.3}%
+\contentsline {subsection}{\numberline {17.3.1}Definizioni}{106}{subsection.17.3.1}%
+\contentsline {subsubsection}{Interpretazione geometrica}{107}{subsubsection*.54}%
+\contentsline {subsubsection}{Integrale definito}{107}{subsubsection*.55}%
+\contentsline {paragraph}{Proprietà dell’integrale definito}{107}{paragraph*.56}%
+\contentsline {subsubsection}{Integrale indefinito}{107}{subsubsection*.58}%
+\contentsline {subsection}{\numberline {17.3.2}Teoremi}{108}{subsection.17.3.2}%
+\contentsline {subsection}{\numberline {17.3.3}Integrali fondamentali}{110}{subsection.17.3.3}%
+\contentsline {subsection}{\numberline {17.3.4}Regole di integrazione}{110}{subsection.17.3.4}%
+\contentsline {subsubsection}{Integrazione per parti}{110}{subsubsection*.59}%
+\contentsline {subsubsection}{Integrazione con sostituzione}{110}{subsubsection*.60}%
+\contentsline {subsection}{\numberline {17.3.5}Tavola degli integrali indefiniti più comuni}{111}{subsection.17.3.5}%
+\contentsline {subsection}{\numberline {17.3.6}Problemi}{111}{subsection.17.3.6}%
+\contentsline {subsubsection}{Calcolo integrali indefiniti}{111}{subsubsection*.61}%
+\contentsline {section}{\numberline {17.4}Equazioni differenziali ordinarie}{112}{section.17.4}%
 \contentsline {chapter}{\numberline {18}Introduzione al calcolo multi\sphinxhyphen {}variabile}{115}{chapter.18}%
 \contentsline {section}{\numberline {18.1}Limite di una funzione di più variabili}{115}{section.18.1}%
 \contentsline {section}{\numberline {18.2}Derivate di funzioni di più variabili}{116}{section.18.2}%
@@ -188,8 +189,8 @@
 \contentsline {subsection}{\numberline {18.2.3}Differenziale}{116}{subsection.18.2.3}%
 \contentsline {section}{\numberline {18.3}Integrali su domini multi\sphinxhyphen {}dimensionali}{117}{section.18.3}%
 \contentsline {subsection}{\numberline {18.3.1}Definizioni}{117}{subsection.18.3.1}%
-\contentsline {subsubsection}{Interpretazione geometrica}{117}{subsubsection*.61}%
-\contentsline {subsubsection}{Proprietà dell’integrale definito}{117}{subsubsection*.62}%
+\contentsline {subsubsection}{Interpretazione geometrica}{117}{subsubsection*.62}%
+\contentsline {subsubsection}{Proprietà dell’integrale definito}{117}{subsubsection*.63}%
 \contentsline {subsection}{\numberline {18.3.2}Teoremi}{117}{subsection.18.3.2}%
 \contentsline {subsection}{\numberline {18.3.3}Regole di integrazione}{117}{subsection.18.3.3}%
 \contentsline {subsection}{\numberline {18.3.4}Esempi}{117}{subsection.18.3.4}%
@@ -202,4 +203,4 @@
 \contentsline {section}{\numberline {19.2}Integrali in spazi euclidei}{122}{section.19.2}%
 \contentsline {part}{VI\hspace {1em}Statistica}{123}{part.6}%
 \contentsline {chapter}{\numberline {20}Introduzione alla statistica}{127}{chapter.20}%
-\contentsline {chapter}{Proof Index}{129}{section*.63}%
+\contentsline {chapter}{Proof Index}{129}{section*.64}%

@@ -64,21 +64,62 @@ Una funzione reale è continua in un dominio **todo o insieme?** se è continua 
 
 (infinitesimal-calculus:continuous-fun:thms:weierstrass)=
 #### Teorema di Weierstrass
+```{prf:theorem} Teorema di Weierstrass
 Data una funzione reale continua $f: [a,b] \rightarrow \mathbb{R}$ definita sull'intervallo chiuso $[a,b]$, la funzione $f(x)$ ammette un punto di massimo assoluto e un punto di minimo assoluto nell'intevallo $[a,b]$.
+```
 
 **todo** *Dimostrazione? Discussione più intuitiva? Figura?*
 
 (infinitesimal-calculus:continuous-fun:thms:sign)=
 #### Teorema della permanenza del segno
-Data una funzione continua $f: D \rightarrow \mathbb{R}$ continua, e un punto $x_0 \in D$. Se $f(x_0) > 0$ allora $\exists U_{x_0}$ t.c. $f(x) > 0$ per $\forall x \in U_{x_0} \cap D$.
+```{prf:theorem} Teorema della permanenza del segno
+Data una funzione continua $f: D \rightarrow \mathbb{R}$ continua, e un punto $x_0 \in D$ (**todo** *o punto di accumulazione?*). Se $f(x_0) > 0$ allora $\exists U_{x_0}$ t.c. $f(x) > 0$ per $\forall x \in U_{x_0} \cap D$.
+```
 
-**todo** *Dimostrazione? Discussione più intuitiva? Figura?*
+**todo** Non è necessario che la funzione sia continua in $x_0$, ma è sufficiente che esista il limite della funzione $\lim_{x \rightarrow x_0} f(x) = \ell$, con $x_0$ punto di accumulazione di $X$.
+
+```{dropdown} Dimostrazione
+Sia $f(x)$ una funzione continua in $x_0$ con $f(x_0) = \ell > 0$. Poiché $f$ è continua nel punto $x_0$, esiste il limite $\lim_{x \rightarrow x_0} f(x) = \ell > 0$, e quindi
+
+$$\forall \varepsilon > 0 \quad \exists \delta > 0 \quad \text{t.c.} |f(x) - \ell| < \varepsilon \quad \forall x \in U_{\delta_{x_0}} = [ x_0 - \delta, x + \delta] \cap D . $$
+
+Scegliendo $\varepsilon = \ell$, si ottiene $|f(x) - \ell| < \ell$ per i valori di $x \in U_{x_0}$ e quindi la dimostrazione della tesi,
+
+$0 < f(x) < 2 \ell \ .$
+
+```
+(infinitesimal-calculus:continuous-fun:thms:zeros)=
+#### Teorema degli zeri
+```{prf:theorem} Teorema degli zeri
+Data una funzione $f: [a,b] \rightarrow \mathbb{R}$ continua, con $f(a)$ e $f(b)$ discordi, $f(a) f(b) < 0$. Allora esiste un valore $x \in (a,b)$ tale che $f(x) = 0$.
+```
+
+```{dropdown} Dimostrazione
+  **todo**
+  - per assurdo?
+  - con metodo di bisezione? *serve teorema di conservazione delle disuguaglianze per le successioni*
+
+    $$a_n < b_n \quad \rightarrow \quad \lim_{n \rightarrow +\infty} a_n \le \lim_{n \rightarrow +\infty} b_n$$
+
+```
 
 (infinitesimal-calculus:continuous-fun:thms:intermediate)=
 #### Teorema dei valori intermedi
+```{prf:theorem} Teorema dei valori intermedi
 Data una funzione $f: [a,b] \rightarrow \mathbb{R}$ continua, allora $f(x)$ assume tutti i valori compresi tra $f(a)$ e $f(b)$, cioè (assumendo $f(a) < f(b)$) per $\forall y \in (f(a), f(b)) \ x_0 \in (a,b) \ \text{t.c..} \ f(x_0) = y$. 
+```
 
-**todo** *Dimostrazione? Discussione più intuitiva? Figura?*
+```{dropdown} Dimostrazione
+Sia $f(a) < f(b)$ e $y_0$ un valore compreso $f(a) < y_0 < f(b)$. Si definisce la funzione $g(x) = f(x) - y_0$, che verifica le ipotesi del teorema degli zeri,
+
+$$\begin{aligned}
+  g(a) & = f(a) - y_0 < 0 \\
+  g(b) & = f(b) - y_0 > 0 \ ,
+\end{aligned}$$
+
+e che quindi $\exists x_0 \in (a,b)$ t.c $g(x_0) = 0$ o equivalentemente $f(x_0) = y_0$. Da qui dimostrata la tesi che per ogni $y_0 \in (a,b)$ esiste un $x_0$ che sia l'argomento della funzione $f$, che dia $f(x_0) = y_0$.
+
+```
 
 (infinitesimal-calculus:limits:thms)=
 ## Teoremi sui limiti
@@ -110,7 +151,7 @@ $$+\infty-\infty \quad , \quad 0 \cdot \mp \infty \quad , \quad \frac{\mp \infty
 
 (infinitesimal-calculus:limits:thms:comparison)=
 ### Teorema del confronto
-
+```{prf:theorem} Teorema del confronto
 Siano $f$, $g$, $h: \ X \in \mathbb{R} \rightarrow \mathbb{R}$, e dato un punto di accumulazione $x_0$ per $X$. Se
 
 $$\lim_{x \rightarrow x_0} f(x) = \lim_{x \rightarrow x_0} h(x) = \ell \ ,$$
@@ -122,6 +163,7 @@ $$f(x) \le g(x) \le h(x) \quad \forall x \in U \cap X \backslash \{ x_0 \} \ ,$$
 allora
 
 $$\lim_{x \rightarrow x_0} g(x) = \ell \ .$$
+```
 
 ```{dropdown} Dimostrazione
 Dalla definizione dei limiti di $f(x)$, $g(x)$
@@ -153,25 +195,27 @@ Il confronto di funzioni che tendono a zero $f(x), g(x) \rightarrow 0$, o di fun
 
 - se $\ell$ finito diverso da zero, si può dire che $f(x)$ è un infinitesimo, o un infinito,  dello stesso ordine di $g(x)$ e si può indicare con la notazione di *o grande* $f(x) = O \left(g(x) \right)$
 
-- se $\ell$ è infinito, si può dire che $f(x)$ è un infinitesimo di ordine inferiore, o un infinito di ordine superiore, rispetto a $g(x)$; viceversa $g(x)$ è un infinitesimo di ordine superiore, o un infinito di ordine inferiore, rispetto a $f(x)$ e si può indicare con la notazione di *o piccolo* $g(x) = O \left(f(x) \right)$
+- se $\ell$ è infinito, si può dire che $f(x)$ è un infinitesimo di ordine inferiore, o un infinito di ordine superiore, rispetto a $g(x)$; viceversa $g(x)$ è un infinitesimo di ordine superiore, o un infinito di ordine inferiore, rispetto a $f(x)$ e si può indicare con la notazione di *o piccolo* $g(x) = o \left(f(x) \right)$
+
+- se $\ell = 1$, si dice che $f(x)$ e $g(x)$ sono **asintoticamente equivalenti**, o in breve **asintotici**, $f(x) \sim g(x)$in un intorno del punto dove viene calcolato il limite.
+
+### Calcolo dei limiti con sostituzione degli infinitesimi o degli infiniti
+
+Se $h(x) \sim a f(x)$, $k(x) \sim b g(x)$ per $x \rightarrow x_0$, e il rapporto $\frac{a}{b}$ non è indeterminato, allora
+
+$$\lim_{x \rightarrow x_0} \frac{h(x)}{k(x)} = \frac{a}{b} \lim_{x \rightarrow x_0} \frac{f(x)}{g(x)}$$
 
 (infinitesimal-calculus:limits:fund)=
 ## Limiti fondamentali
 In questa sezione vengono calcolati alcuni limiti fondamentali. Questi limiti possono essere considerati fondamentali come sinonimo di *"minimo da ricordare"* per poter calcolare limiti più generali utilizzando le [operazioni](infinitesimal-calculus:limits:thms:operations) e i [teoremi](infinitesimal-calculus:limits:thms) sui limiti, e calcolare le [derivate fondamentali](infinitesimal-calculus:derivatives:fund). Un elenco minimo di limiti fondamentali è:
 
-$$ \lim_{x \rightarrow 0} \frac{(1+x)^a - 1}{x} = a $$
-
 $$ \lim_{x \rightarrow 0} \frac{\sin x}{x} = 1 $$
-
 $$ \lim_{x \rightarrow 0} \frac{1 - \cos x}{x^2} = \frac{1}{2} $$
-
 $$ \lim_{x \rightarrow +\infty} \left( 1 + \frac{1}{x} \right)^x = e $$
-
 $$ \lim_{x \rightarrow 0} \frac{e^x - 1}{x}= 1 $$
-
 $$ \lim_{x \rightarrow 0} \frac{e^x}{1+x}= 1 $$
-
 $$ \lim_{x \rightarrow 0} \frac{\ln (1+x)}{x} = 1 $$
+$$ \lim_{x \rightarrow 0} \frac{(1+x)^a - 1}{x} = a $$
 
 ```{dropdown} Dimostrazione di $\ \lim_{x \rightarrow 0} \frac{\sin x}{x} = 1 $
 Usando il teorema del confronto per le funzioni $\sin x \le x \le \tan x$ (**todo** *dimostrare con l'area delle figure geometriche $\frac{1}{2}\sin x \le \frac{1}{2} \, x \le \frac{1}{2} \tan x$), si può scrivere per $x \ne 0$
@@ -206,7 +250,31 @@ $$\lim_{x \rightarrow 0} \frac{e^x}{1 + x} = \lim_{x \rightarrow 0} \frac{\sum_{
 
 ```
 
-Una volta compresa l'operazione di derivazione e di sviluppo in serie, si può rivisitare i limiti notevoli **todo**
+```{dropdown} Dimostrazione di $\ \lim_{x \rightarrow 0} \frac{\ln (1+x)}{x} = 1$
+- **Dimostrazione 1.** Usando i risultati sui limiti che coinvolgono l'esponenziale, e definendo una nuova variabile $y = e^x - 1$, così da avere $x = \ln (y+1)$, con $y \rightarrow 0$ quando $x \rightarrow 0$, segue la dimostrazione,
+
+  $$\lim_{y \rightarrow 0} \frac{\ln(1+y)}{y} = \lim_{x \rightarrow 0} \frac{x}{e^x-1} = 1 \ .$$
+
+- **Dimostrazione 2.** Usando il [teorema del confronto](infinitesimal-calculus:limits:thms:comparison) con la relazione (**todo** *dimostrare!*)
+
+  $$\frac{x-1}{x} \le \ln x \le x - 1 \ ,$$
+
+  che può essere riscritta, usando il cambio di variabile $x \rightarrow x+1$ e dividendo per $x$ (ipotizzata positiva; se negativa cambia il verso delle disuguaglianze, ma non il risultato) tutti e 3 i termini, come
+
+  $$\frac{1}{x+1} \le \frac{\ln (x + 1)}{x} \le 1 \ .$$
+
+  Per $x \rightarrow 0$ le due funzioni estremanti tendono a $1$ e di conseguenza $\lim_{x \rightarrow 0} \frac{\ln (x+1)}{x} = 1$.
+
+```
+
+```{dropdown} Dimostrazione di $\ \lim_{x \rightarrow 0} \frac{(1+x)^a - 1}{x} = a $
+Usando i risultati che coinvolgono l'esponenziale, dopo aver riscritto $(1+x)^a = e^{a \ln(1+x)}$,
+
+  $$ \lim_{x \rightarrow 0} \frac{(1+x)^a - 1}{x} = \lim_{x \rightarrow 0} \frac{e^{a \ln(1+x)} - 1}{a \ln (1+x)} \frac{a \ln(1+x)}{x} = a \, \underbrace{\lim_{y \rightarrow 0} \frac{e^y - 1}{y}}_{=1} \ \underbrace{\lim_{x \rightarrow 0} \frac{\ln(1+x)}{x}}_{=1} = a \ , $$
+
+  avendo definito la variabile $y = a \ln (1+x)$, che tende a zero quando $x \rightarrow 0$. **todo** *prestare attenzione alle operazioni fatte, e fare riferimento alle operazioni con i limiti, e successivamente all'uso di infinitesimi e asintotici nel calcolo dei limiti.*
+
+```
 
 **todo** *Spostare nella sezione di precalcolo sulle successioni*
 Limiti di successioni. **Formula di Sterling**

@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="it" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
@@ -55,6 +55,7 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -66,12 +67,12 @@ const thebe_selector_output = ".output, .cell_output"
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/infinitesimal_calculus/integrals';</script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="index" title="Indice" href="../../genindex.html" />
+    <link rel="search" title="Cerca" href="../../search.html" />
     <link rel="next" title="Tavola degli integrali indefiniti più comuni" href="integrals-table.html" />
     <link rel="prev" title="Derivate" href="derivatives.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:language" content="it"/>
   </head>
   
   
@@ -319,7 +320,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
-   title="Source repository"
+   title="Repository di origine"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
@@ -336,7 +337,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs/issues/new?title=Issue%20on%20page%20%2Fch/infinitesimal_calculus/integrals.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
-   title="Open an issue"
+   title="Apri un problema"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
@@ -357,7 +358,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 <div class="dropdown dropdown-download-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Scarica questa pagina">
     <i class="fas fa-download"></i>
   </button>
   <ul class="dropdown-menu">
@@ -366,7 +367,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="../../_sources/ch/infinitesimal_calculus/integrals.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
-   title="Download source file"
+   title="Scarica il file sorgente"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
@@ -384,7 +385,7 @@ const thebe_selector_output = ".output, .cell_output"
       <li>
 <button onclick="window.print()"
   class="btn btn-sm btn-download-pdf-button dropdown-item"
-  title="Print to PDF"
+  title="Stampa in PDF"
   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
@@ -404,7 +405,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 <button onclick="toggleFullScreen()"
   class="btn btn-sm btn-fullscreen-button"
-  title="Fullscreen mode"
+  title="Modalità schermo intero"
   data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
   
@@ -430,7 +431,7 @@ document.write(`
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Cerca" aria-label="Cerca" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
@@ -454,7 +455,7 @@ document.write(`
         <div id="jb-print-toc">
             
             <div>
-                <h2> Contents </h2>
+                <h2> Contenuti </h2>
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
@@ -491,18 +492,18 @@ document.write(`
 <span id="infinitesimal-calculus-integrals-def"></span><h2>Definizioni<a class="headerlink" href="#definizioni" title="Permalink to this heading">#</a></h2>
 <p><strong>Somma di Riemann.</strong> Data una funzione continua <span class="math notranslate nohighlight">\(f: [a,b] \rightarrow \mathbb{R}\)</span> e <span class="math notranslate nohighlight">\(P = \{ x_0, x_1, \dots x_n | a = x_0 &lt; x_1 &lt; \dots &lt; x_n = b \}\)</span> partizione dell’intervallo <span class="math notranslate nohighlight">\([a,b]\)</span>, la somma di Riemann viene definita come</p>
 <div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-integrals-riemann-sum">
-<span class="eqno">(12)<a class="headerlink" href="#equation-infinitesimal-calculus-integrals-riemann-sum" title="Permalink to this equation">#</a></span>\[\sigma_P = \sum_{k=1}^{n} f(\xi_k) (x_{k} - x_{k-1}) \ ,\]</div>
+<span class="eqno">(12)<a class="headerlink" href="#equation-infinitesimal-calculus-integrals-riemann-sum" title="Permalink a questa equazione">#</a></span>\[\sigma_P = \sum_{k=1}^{n} f(\xi_k) (x_{k} - x_{k-1}) \ ,\]</div>
 <p>con <span class="math notranslate nohighlight">\(\xi_k \in [x_{k-1}, x_k]\)</span>.</p>
 <p><strong>Integrale di Riemann.</strong> Sia <span class="math notranslate nohighlight">\(\Delta x = \max_k (x_{k} - x_{k-1})\)</span>, l’integrale definito di Riemann è  il limite per <span class="math notranslate nohighlight">\(\Delta x \rightarrow 0\)</span> della somma di Riemann <span class="math notranslate nohighlight">\(\sigma\)</span></p>
 <div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-integrals-riemann-def">
-<span class="eqno">(13)<a class="headerlink" href="#equation-infinitesimal-calculus-integrals-riemann-def" title="Permalink to this equation">#</a></span>\[\int_a^b f(x) \ dx = \lim_{\Delta x \rightarrow 0} \sigma_P \ .\]</div>
+<span class="eqno">(13)<a class="headerlink" href="#equation-infinitesimal-calculus-integrals-riemann-def" title="Permalink a questa equazione">#</a></span>\[\int_a^b f(x) \ dx = \lim_{\Delta x \rightarrow 0} \sigma_P \ .\]</div>
 <p><strong>Osservazione.</strong> Dato l’intervallo <span class="math notranslate nohighlight">\([a,b]\)</span>, per <span class="math notranslate nohighlight">\(\Delta x \rightarrow 0\)</span> il numero di intervalli della partizione tende all’infinito, <span class="math notranslate nohighlight">\(n \rightarrow \infty\)</span>.</p>
 <div class="section" id="interpretazione-geometrica">
 <h3>Interpretazione geometrica<a class="headerlink" href="#interpretazione-geometrica" title="Permalink to this heading">#</a></h3>
 <p>L’integrale definito</p>
 <div class="math notranslate nohighlight">
 \[\int_{a}^{b} f(x) \, dx \ ,\]</div>
-<p>corrisponde al valore dell’<strong>area con segno</strong> tra il grafico della funzione <span class="math notranslate nohighlight">\(y=f(x)\)</span> e l’asse <span class="math notranslate nohighlight">\(x\)</span>, per valori di <span class="math notranslate nohighlight">\(x \in [a,b]\)</span>. Se la funzione è positiva in un intervallo, il contributo dell’integrale sull’intervallo è positivo; se la funzione è negativa in un intervallo, il contributo dell’integrale sull’intervallo è negativo.</p>
+<p>corrisponde al valore dell”<strong>area con segno</strong> tra il grafico della funzione <span class="math notranslate nohighlight">\(y=f(x)\)</span> e l’asse <span class="math notranslate nohighlight">\(x\)</span>, per valori di <span class="math notranslate nohighlight">\(x \in [a,b]\)</span>. Se la funzione è positiva in un intervallo, il contributo dell’integrale sull’intervallo è positivo; se la funzione è negativa in un intervallo, il contributo dell’integrale sull’intervallo è negativo.</p>
 </div>
 <div class="section" id="integrale-definito">
 <span id="infinitesimal-calculus-integrals-def-definite"></span><h3>Integrale definito<a class="headerlink" href="#integrale-definito" title="Permalink to this heading">#</a></h3>
@@ -513,22 +514,22 @@ document.write(`
 <li><p>linearità dell’integrale definito</p></li>
 </ul>
 <div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-integrals-prop-linearity">
-<span class="eqno">(14)<a class="headerlink" href="#equation-infinitesimal-calculus-integrals-prop-linearity" title="Permalink to this equation">#</a></span>\[\int_a^b \big( \alpha f(x) + \beta g(x) \big) \ dx = \alpha \int_a^b f(x) \ dx + \beta \int_a^b g(x) \ dx \ ,\]</div>
+<span class="eqno">(14)<a class="headerlink" href="#equation-infinitesimal-calculus-integrals-prop-linearity" title="Permalink a questa equazione">#</a></span>\[\int_a^b \big( \alpha f(x) + \beta g(x) \big) \ dx = \alpha \int_a^b f(x) \ dx + \beta \int_a^b g(x) \ dx \ ,\]</div>
 <ul class="simple">
 <li><p>additività sull’intervallo</p></li>
 </ul>
 <div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-integrals-prop-add">
-<span class="eqno">(15)<a class="headerlink" href="#equation-infinitesimal-calculus-integrals-prop-add" title="Permalink to this equation">#</a></span>\[\int_a^b f(x) \ dx + \int_b^c f(x) \ dx = \int_a^c f(x) \ dx \ ,\]</div>
+<span class="eqno">(15)<a class="headerlink" href="#equation-infinitesimal-calculus-integrals-prop-add" title="Permalink a questa equazione">#</a></span>\[\int_a^b f(x) \ dx + \int_b^c f(x) \ dx = \int_a^c f(x) \ dx \ ,\]</div>
 <ul class="simple">
 <li><p>valore assoluto dell’integrale è minore dell’integrale del valore assoluto</p></li>
 </ul>
 <div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-integrals-prop-abs">
-<span class="eqno">(16)<a class="headerlink" href="#equation-infinitesimal-calculus-integrals-prop-abs" title="Permalink to this equation">#</a></span>\[\left| \int_a^b f(x) \ dx \right| \le \int_a^b | f(x) | \ dx \ ,\]</div>
+<span class="eqno">(16)<a class="headerlink" href="#equation-infinitesimal-calculus-integrals-prop-abs" title="Permalink a questa equazione">#</a></span>\[\left| \int_a^b f(x) \ dx \right| \le \int_a^b | f(x) | \ dx \ ,\]</div>
 <ul class="simple">
 <li><p>scambio degli estremi di integrazione</p></li>
 </ul>
 <div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-integrals-prop-swap">
-<span class="eqno">(17)<a class="headerlink" href="#equation-infinitesimal-calculus-integrals-prop-swap" title="Permalink to this equation">#</a></span>\[\int_{x=a}^{b} f(x) dx = - \int_{x=b}^{a} f(x) \, dx\]</div>
+<span class="eqno">(17)<a class="headerlink" href="#equation-infinitesimal-calculus-integrals-prop-swap" title="Permalink a questa equazione">#</a></span>\[\int_{x=a}^{b} f(x) dx = - \int_{x=b}^{a} f(x) \, dx\]</div>
 </div>
 </div>
 <div class="section" id="integrale-indefinito">
@@ -538,7 +539,7 @@ document.write(`
 \[\int_a^x f(t) \ dt = \int_a^b f(t) \ dt + \int_b^x f(t) \ dt \ , \]</div>
 <p>si osserva che i due integrali con estremo superiore <span class="math notranslate nohighlight">\(x\)</span> e diverso estremo inferiore differiscono solo per una quantità indipendente da <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(\int_{a}^{b} f(t) \ dt\)</span>. Data la funzione <span class="math notranslate nohighlight">\(f(x)\)</span> e il valore <span class="math notranslate nohighlight">\(a\)</span> come paramtetro, si definisce una funzione di <span class="math notranslate nohighlight">\(x\)</span></p>
 <div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-integrals-primi">
-<span class="eqno">(18)<a class="headerlink" href="#equation-infinitesimal-calculus-integrals-primi" title="Permalink to this equation">#</a></span>\[F(x;a) := \int_a^x f(t) \ dt \ .\]</div>
+<span class="eqno">(18)<a class="headerlink" href="#equation-infinitesimal-calculus-integrals-primi" title="Permalink a questa equazione">#</a></span>\[F(x;a) := \int_a^x f(t) \ dt \ .\]</div>
 <p>Usando questa definizione, è immediato dimostrare che l’integrale definito <span class="math notranslate nohighlight">\(\int_{a}^{b} f(t) \ dt\)</span> è uguale alla differenza della funzione <span class="math notranslate nohighlight">\(F(\cdot; b)\)</span> calcolata nei due estremi,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
@@ -548,7 +549,7 @@ document.write(`
 \end{aligned}\end{split}\]</div>
 <p>e che questo risultato è indipendente dal valore <span class="math notranslate nohighlight">\(c\)</span>, usato come parametro nella definizione della funzione <span class="math notranslate nohighlight">\(F\)</span>.</p>
 <p>Data una funzione <span class="math notranslate nohighlight">\(f(x)\)</span>, le due funzioni <span class="math notranslate nohighlight">\(F(x;a_1)\)</span>, <span class="math notranslate nohighlight">\(F(x;a_2)\)</span> differiscono solo di un termine che dipende dai parametri <span class="math notranslate nohighlight">\(a_1\)</span>, <span class="math notranslate nohighlight">\(a_2\)</span> ma non dalla variabile indipendente <span class="math notranslate nohighlight">\(x\)</span>. La famiglia di funzioni <span class="math notranslate nohighlight">\(F(x;a)\)</span> ottenuta per ogni valore di <span class="math notranslate nohighlight">\(a\)</span> definisce quindi una funzione <span class="math notranslate nohighlight">\(F(x)\)</span> a meno di una costante additiva, la <strong>funzione primitiva</strong> della funzione <span class="math notranslate nohighlight">\(f(x)\)</span>.</p>
-<p>L’<strong>integrale indefinito</strong> di una funzione <span class="math notranslate nohighlight">\(f(x)\)</span> viene definito come,</p>
+<p>L”<strong>integrale indefinito</strong> di una funzione <span class="math notranslate nohighlight">\(f(x)\)</span> viene definito come,</p>
 <div class="math notranslate nohighlight">
 \[\int^x f(t) \ dt = F(x) + C \ ,\]</div>
 <p>dove la costante additiva <span class="math notranslate nohighlight">\(C\)</span> tiene conto dell’arbitrarietà appena discussa.</p>
@@ -562,7 +563,7 @@ document.write(`
 :label: infinitesimal-calculus:derivatives:thm:avg
 -->
 <div class="proof theorem admonition" id="integrals:thm:avg">
-<span id="infinitesimal-calculus-integrals-thm-avg"></span><p class="admonition-title"><span class="caption-number">Theorem 7 </span> (Teorema della media)</p>
+<span id="infinitesimal-calculus-integrals-thm-avg"></span><p class="admonition-title"><span class="caption-number">Theorem 12 </span> (Teorema della media)</p>
 <div class="theorem-content section" id="proof-content">
 <p>Sia <span class="math notranslate nohighlight">\(f: [a,b] \in \mathbb{R} \rightarrow \mathbb{R}\)</span> una funzione continua su <span class="math notranslate nohighlight">\([a,b]\)</span>, allora esiste <span class="math notranslate nohighlight">\(c \in [a,b]\)</span> tale che</p>
 <div class="math notranslate nohighlight">
@@ -583,7 +584,7 @@ Dimostrazione<div class="sd-summary-down docutils">
 :label: infinitesimal-calculus:derivatives:thm:fund
 -->
 <div class="proof theorem admonition" id="integrals:thm:fund">
-<span id="infinitesimal-calculus-integrals-thm-fund"></span><p class="admonition-title"><span class="caption-number">Theorem 8 </span> (Teorema fondamentale del calcolo infinitesimale)</p>
+<span id="infinitesimal-calculus-integrals-thm-fund"></span><p class="admonition-title"><span class="caption-number">Theorem 13 </span> (Teorema fondamentale del calcolo infinitesimale)</p>
 <div class="theorem-content section" id="proof-content">
 <div class="math notranslate nohighlight">
 \[\dfrac{d}{dx} \int_{a}^{x} f(y) dy = f(x) \]</div>
@@ -605,7 +606,7 @@ Dimostrazione<div class="sd-summary-down docutils">
 \end{aligned}\end{split}\]</div>
 </div>
 </details><div class="proof theorem admonition" id="integrals:thm:fund:reynolds">
-<span id="infinitesimal-calculus-integrals-thm-fund-reynolds"></span><p class="admonition-title"><span class="caption-number">Theorem 9 </span> (Derivata su dominio dipendente dalla variabile indipendente)</p>
+<span id="infinitesimal-calculus-integrals-thm-fund-reynolds"></span><p class="admonition-title"><span class="caption-number">Theorem 14 </span> (Derivata su dominio dipendente dalla variabile indipendente)</p>
 <div class="theorem-content section" id="proof-content">
 <p>Sia <span class="math notranslate nohighlight">\(x \in D\)</span>, e gli estremi di integrazione <span class="math notranslate nohighlight">\(a(x)\)</span>, <span class="math notranslate nohighlight">\(b(x)\)</span> <strong>todo</strong> <em>Caratteristiche?</em></p>
 <div class="math notranslate nohighlight">
@@ -647,7 +648,7 @@ Dimostrazione<div class="sd-summary-down docutils">
 <h2>Regole di integrazione<a class="headerlink" href="#regole-di-integrazione" title="Permalink to this heading">#</a></h2>
 <div class="section" id="integrazione-per-parti">
 <span id="infinitesimal-calculus-integrals-by-parts"></span><h3>Integrazione per parti<a class="headerlink" href="#integrazione-per-parti" title="Permalink to this heading">#</a></h3>
-<p>La regola di integrazione per parti viene ottenuta integrando la regola di [derivazione del prodotto]<a class="reference internal" href="derivatives.html#equation-infinitesimal-calculus-derivatives-rules-product">(7)</a>. Siano <span class="math notranslate nohighlight">\(F(x)\)</span>, <span class="math notranslate nohighlight">\(G(x)\)</span> le primitive delle funzioni <span class="math notranslate nohighlight">\(f(x)\)</span>, <span class="math notranslate nohighlight">\(g(x)\)</span>, e quindi vale <span class="math notranslate nohighlight">\(F'(x) = f(x)\)</span>, <span class="math notranslate nohighlight">\(G'(x) = g(x)\)</span>.
+<p>La regola di integrazione per parti viene ottenuta integrando la regola di derivazione del prodotto <a class="reference internal" href="derivatives.html#equation-infinitesimal-calculus-derivatives-rules-product">(7)</a>. Siano <span class="math notranslate nohighlight">\(F(x)\)</span>, <span class="math notranslate nohighlight">\(G(x)\)</span> le primitive delle funzioni <span class="math notranslate nohighlight">\(f(x)\)</span>, <span class="math notranslate nohighlight">\(g(x)\)</span>, e quindi vale <span class="math notranslate nohighlight">\(F'(x) = f(x)\)</span>, <span class="math notranslate nohighlight">\(G'(x) = g(x)\)</span>.
 La regola di derivazione del prodotto <span class="math notranslate nohighlight">\(F(x)G(x)\)</span> viene scritta come</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
@@ -663,7 +664,7 @@ La regola di derivazione del prodotto <span class="math notranslate nohighlight"
 </div>
 <div class="section" id="integrazione-con-sostituzione">
 <span id="infinitesimal-calculus-integrals-substitution"></span><h3>Integrazione con sostituzione<a class="headerlink" href="#integrazione-con-sostituzione" title="Permalink to this heading">#</a></h3>
-<p>La regola di integrazione per parti viene ottenuta dalla regola di <a class="reference internal" href="derivatives.html#equation-infinitesimal-calculus-derivatives-rules-product">(7)</a>. Sia <span class="math notranslate nohighlight">\(\widetilde{F}(x)\)</span> la funzione composta <span class="math notranslate nohighlight">\(\widetilde{F}(x) = F( y(x) )\)</span> e siano definite le derivate</p>
+<p>La regola di integrazione per parti viene ottenuta dalla regola di derivazione della funzione composta <a class="reference internal" href="derivatives.html#equation-infinitesimal-calculus-derivatives-rules-composite">(9)</a>. Sia <span class="math notranslate nohighlight">\(\widetilde{F}(x)\)</span> la funzione composta <span class="math notranslate nohighlight">\(\widetilde{F}(x) = F( y(x) )\)</span> e siano definite le derivate</p>
 <div class="math notranslate nohighlight">
 \[\widetilde{f}(x) = \dfrac{d}{dx} \widetilde{F}(x)  \qquad , \qquad
              f (y) = \dfrac{d}{dy}            F (y)\]</div>
@@ -714,7 +715,7 @@ La regola di derivazione del prodotto <span class="math notranslate nohighlight"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-subtitle">precedente</p>
         <p class="prev-next-title">Derivate</p>
       </div>
     </a>
@@ -722,7 +723,7 @@ La regola di derivazione del prodotto <span class="math notranslate nohighlight"
        href="integrals-table.html"
        title="next page">
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-subtitle">successivo</p>
         <p class="prev-next-title">Tavola degli integrali indefiniti più comuni</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
@@ -738,7 +739,7 @@ La regola di derivazione del prodotto <span class="math notranslate nohighlight"
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
+    <i class="fa-solid fa-list"></i> Contenuti
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
@@ -772,7 +773,7 @@ La regola di derivazione del prodotto <span class="math notranslate nohighlight"
   <div class="footer-item">
     
 <p class="component-author">
-By basics
+Di basics
 </p>
 
   </div>

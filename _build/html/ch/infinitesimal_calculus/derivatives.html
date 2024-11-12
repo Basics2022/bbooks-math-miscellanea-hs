@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="it" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
@@ -55,6 +55,7 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -66,12 +67,12 @@ const thebe_selector_output = ".output, .cell_output"
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/infinitesimal_calculus/derivatives';</script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="index" title="Indice" href="../../genindex.html" />
+    <link rel="search" title="Cerca" href="../../search.html" />
     <link rel="next" title="Integrali" href="integrals.html" />
     <link rel="prev" title="Introduzione all’analisi" href="analysis.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:language" content="it"/>
   </head>
   
   
@@ -319,7 +320,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
-   title="Source repository"
+   title="Repository di origine"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
@@ -336,7 +337,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs/issues/new?title=Issue%20on%20page%20%2Fch/infinitesimal_calculus/derivatives.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
-   title="Open an issue"
+   title="Apri un problema"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
@@ -357,7 +358,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 <div class="dropdown dropdown-download-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Scarica questa pagina">
     <i class="fas fa-download"></i>
   </button>
   <ul class="dropdown-menu">
@@ -366,7 +367,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="../../_sources/ch/infinitesimal_calculus/derivatives.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
-   title="Download source file"
+   title="Scarica il file sorgente"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
@@ -384,7 +385,7 @@ const thebe_selector_output = ".output, .cell_output"
       <li>
 <button onclick="window.print()"
   class="btn btn-sm btn-download-pdf-button dropdown-item"
-  title="Print to PDF"
+  title="Stampa in PDF"
   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
@@ -404,7 +405,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 <button onclick="toggleFullScreen()"
   class="btn btn-sm btn-fullscreen-button"
-  title="Fullscreen mode"
+  title="Modalità schermo intero"
   data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
   
@@ -430,7 +431,7 @@ document.write(`
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Cerca" aria-label="Cerca" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
@@ -454,7 +455,7 @@ document.write(`
         <div id="jb-print-toc">
             
             <div>
-                <h2> Contents </h2>
+                <h2> Contenuti </h2>
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
@@ -489,10 +490,10 @@ document.write(`
 <span id="infinitesimal-calculus-derivatives-def"></span><h2>Definizione<a class="headerlink" href="#definizione" title="Permalink to this heading">#</a></h2>
 <p><strong>Rapporto incrementale.</strong> Il rapporto incrementale di una funzione reale nel punto <span class="math notranslate nohighlight">\(x\)</span> viene definito come il rapporto tra la differenza dei valori della funzione e la differenza del valore della variabile indipendente</p>
 <div class="math notranslate nohighlight" id="equation-eq-infinitesimal-calculus-derivatives-def-delta">
-<span class="eqno">(4)<a class="headerlink" href="#equation-eq-infinitesimal-calculus-derivatives-def-delta" title="Permalink to this equation">#</a></span>\[R[f(\cdot), x, a] := \dfrac{f(x+a)-f(x)}{a} \ .\]</div>
+<span class="eqno">(4)<a class="headerlink" href="#equation-eq-infinitesimal-calculus-derivatives-def-delta" title="Permalink a questa equazione">#</a></span>\[R[f(\cdot), x, a] := \dfrac{f(x+a)-f(x)}{a} \ .\]</div>
 <p><strong>Derivata.</strong> La derivata di una funzione reale in un punto <span class="math notranslate nohighlight">\(x\)</span> viene definita come il limite del rapporto incrementale, per l’incremento della variabile indipendente che tende a zero,</p>
 <div class="math notranslate nohighlight" id="equation-eq-infinitesimal-calculus-derivatives-def">
-<span class="eqno">(5)<a class="headerlink" href="#equation-eq-infinitesimal-calculus-derivatives-def" title="Permalink to this equation">#</a></span>\[f'(x) = \dfrac{d f}{d x}(x) := \lim_{a \rightarrow 0} \dfrac{f(x+a)-f(x)}{a} \ .\]</div>
+<span class="eqno">(5)<a class="headerlink" href="#equation-eq-infinitesimal-calculus-derivatives-def" title="Permalink a questa equazione">#</a></span>\[f'(x) = \dfrac{d f}{d x}(x) := \lim_{a \rightarrow 0} \dfrac{f(x+a)-f(x)}{a} \ .\]</div>
 <p><strong>todo</strong> <em>In generale, la derivata di una funzione reale è un’altra funzione reale.</em></p>
 </div>
 <div class="section" id="regole-di-derivazione">
@@ -502,27 +503,27 @@ document.write(`
 <li><p>linearità</p></li>
 </ul>
 <div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-derivatives-rules-linearity">
-<span class="eqno">(6)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-rules-linearity" title="Permalink to this equation">#</a></span>\[\big( a \, f(x) + b \, g(x) \big)' = a \, f'(x) + b \, g'(x)\]</div>
+<span class="eqno">(6)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-rules-linearity" title="Permalink a questa equazione">#</a></span>\[\big( a \, f(x) + b \, g(x) \big)' = a \, f'(x) + b \, g'(x)\]</div>
 <ul class="simple">
 <li><p>derivata del prodotto di funzioni</p></li>
 </ul>
 <div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-derivatives-rules-product">
-<span class="eqno">(7)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-rules-product" title="Permalink to this equation">#</a></span>\[\Bigl( f(x) g(x) \Bigr)' = f'(x) g(x) + f(x) g'(x)\]</div>
+<span class="eqno">(7)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-rules-product" title="Permalink a questa equazione">#</a></span>\[\Bigl( f(x) g(x) \Bigr)' = f'(x) g(x) + f(x) g'(x)\]</div>
 <ul class="simple">
 <li><p>derivata del rapporto di funzioni</p></li>
 </ul>
 <div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-derivatives-rules-division">
-<span class="eqno">(8)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-rules-division" title="Permalink to this equation">#</a></span>\[\left( \frac{f(x)}{g(x)} \right)' = \frac{f'(x) g(x) - f(x) g'(x)}{g^2(x)}\]</div>
+<span class="eqno">(8)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-rules-division" title="Permalink a questa equazione">#</a></span>\[\left( \frac{f(x)}{g(x)} \right)' = \frac{f'(x) g(x) - f(x) g'(x)}{g^2(x)}\]</div>
 <ul class="simple">
 <li><p>derivata della funzione composta</p></li>
 </ul>
 <div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-derivatives-rules-composite">
-<span class="eqno">(9)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-rules-composite" title="Permalink to this equation">#</a></span>\[\frac{d}{dx} f\big( g(x) \big) = \frac{d f}{dy}\Big|_{y=g(x)} \dfrac{d g}{d x}\Big|_{x}\]</div>
+<span class="eqno">(9)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-rules-composite" title="Permalink a questa equazione">#</a></span>\[\frac{d}{dx} f\big( g(x) \big) = \frac{d f}{dy}\Big|_{y=g(x)} \dfrac{d g}{d x}\Big|_{x}\]</div>
 <ul class="simple">
 <li><p>derivata della funzione inversa, <span class="math notranslate nohighlight">\(y = f(x)\)</span>, <span class="math notranslate nohighlight">\(x = f^{-1}(y)\)</span></p></li>
 </ul>
 <div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-derivatives-rules-inverse">
-<span class="eqno">(10)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-rules-inverse" title="Permalink to this equation">#</a></span>\[ \dfrac{d f^{-1}}{d y}\bigg|_{y = f(x)} = \dfrac{1}{ \dfrac{d y}{d x}\bigg|_{x}} \ .\]</div>
+<span class="eqno">(10)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-rules-inverse" title="Permalink a questa equazione">#</a></span>\[ \dfrac{d f^{-1}}{d y}\bigg|_{y = f(x)} = \dfrac{1}{ \dfrac{d y}{d x}\bigg|_{x}} \ .\]</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Dimostrazione della linearità dell’operazione di derivazione<div class="sd-summary-down docutils">
@@ -580,7 +581,7 @@ Dimostrazione della regola della funzione inversa<div class="sd-summary-down doc
 <div class="section" id="teoremi">
 <span id="infinitesimal-calculus-derivatives-thm"></span><h2>Teoremi<a class="headerlink" href="#teoremi" title="Permalink to this heading">#</a></h2>
 <div class="proof theorem admonition" id="theorem-0">
-<span id="infinitesimal-calculus-derivatives-thm-fermat"></span><p class="admonition-title"><span class="caption-number">Theorem 1 </span> (Teorema di Fermat)</p>
+<span id="infinitesimal-calculus-derivatives-thm-fermat"></span><p class="admonition-title"><span class="caption-number">Theorem 6 </span> (Teorema di Fermat)</p>
 <div class="theorem-content section" id="proof-content">
 <p>Data la funzione <span class="math notranslate nohighlight">\(f: (a,b) \rightarrow \mathbb{R}\)</span> derivabile nel punto di estremo locale <span class="math notranslate nohighlight">\(x_0 \in (a,b)\)</span>, allora <span class="math notranslate nohighlight">\(f'(x_0) = 0\)</span>.</p>
 </div>
@@ -591,7 +592,21 @@ Dimostrazione<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><strong>todo</strong></p>
+<p class="sd-card-text">Sia <span class="math notranslate nohighlight">\(x_0\)</span> un punto di minimo locale della funzione <span class="math notranslate nohighlight">\(f(x)\)</span> derivabile in <span class="math notranslate nohighlight">\(x_0\)</span>. La definizione di minimo locale permette di scrivere</p>
+<div class="math notranslate nohighlight">
+\[\exists \delta &gt; 0: \ x in (x_0 - \delta, x_0 + \delta) \cap (a,b) \quad \rightarrow \quad f(x_0) \le f(x) \ .\]</div>
+<p class="sd-card-text">Quindi si possono scrivere le seguenti relazioni</p>
+<div class="math notranslate nohighlight">
+\[\frac{f(x_0 + h) - f(x_0)}{h} \ge 0 \qquad \forall h \in (0, \delta)\]</div>
+<div class="math notranslate nohighlight">
+\[\frac{f(x_0 + h) - f(x_0)}{h} \le 0 \qquad \forall h \in (-\delta,0)\]</div>
+<p class="sd-card-text">Il limite per <span class="math notranslate nohighlight">\(h \rightarrow 0\)</span> di queste due relazioni esiste ed è <span class="math notranslate nohighlight">\(f'(x_0)\)</span> in entrambi i casi, essendo la derivata il limite del rapporto incrementale. Le due espressioni a sinistra dei segni di disuguaglianza possono essere considerate funzioni continue della variabile <span class="math notranslate nohighlight">\(h\)</span>, il cui limite esiste per <span class="math notranslate nohighlight">\(h \rightarrow 0\)</span>. Usando il <a class="reference internal" href="analysis.html#infinitesimal-calculus-continuous-fun-thms-sign"><span class="std std-ref">teorema della permanenza del segno</span></a>, si può concludere che</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+  f'(x_0) \ge 0 \\
+  f'(x_0) \le 0 \\
+\end{cases}\end{split}\]</div>
+<p class="sd-card-text">e da queste la dimostrazione della tesi del problema, <span class="math notranslate nohighlight">\(f'(x_0)\)</span>.</p>
 </div>
 </details><!-- **todo** why was this block here? Was it a test? What are the drawbacks of {dropdown}? Maybe something with .pdf build?
 ```{toggle} Dim.
@@ -600,7 +615,7 @@ La dimostrazione del teorema di Fermat...
 ```
 -->
 <div class="proof theorem admonition" id="theorem-1">
-<span id="infinitesimal-calculus-derivatives-thm-rolle"></span><p class="admonition-title"><span class="caption-number">Theorem 2 </span> (Teorema di Rolle)</p>
+<span id="infinitesimal-calculus-derivatives-thm-rolle"></span><p class="admonition-title"><span class="caption-number">Theorem 7 </span> (Teorema di Rolle)</p>
 <div class="theorem-content section" id="proof-content">
 <p>Data la funzione <span class="math notranslate nohighlight">\(f: [a,b] \rightarrow \mathbb{R}\)</span> continua e derivabile in ogni punto dell’intervallo <span class="math notranslate nohighlight">\((a,b)\)</span> con <span class="math notranslate nohighlight">\(f(a) = f(b)\)</span>, allora esiste un valore <span class="math notranslate nohighlight">\(c \in (a,b)\)</span> in cui <span class="math notranslate nohighlight">\(f'(c) = 0\)</span>.</p>
 </div>
@@ -614,7 +629,7 @@ Dimostrazione<div class="sd-summary-down docutils">
 <p class="sd-card-text"><strong>todo</strong></p>
 </div>
 </details><div class="proof theorem admonition" id="theorem-2">
-<span id="infinitesimal-calculus-derivatives-thm-cauchy"></span><p class="admonition-title"><span class="caption-number">Theorem 3 </span> (Teorema di Cauchy)</p>
+<span id="infinitesimal-calculus-derivatives-thm-cauchy"></span><p class="admonition-title"><span class="caption-number">Theorem 8 </span> (Teorema di Cauchy)</p>
 <div class="theorem-content section" id="proof-content">
 <p>Date le funzioni <span class="math notranslate nohighlight">\(f, g: [a,b] \rightarrow \mathbb{R}\)</span> continue e derivabili in ogni punto dell’intervallo <span class="math notranslate nohighlight">\((a,b)\)</span> con <span class="math notranslate nohighlight">\(f(a) = f(b)\)</span>, allora esiste un valore <span class="math notranslate nohighlight">\(c \in (a,b)\)</span> tale che</p>
 <div class="math notranslate nohighlight">
@@ -630,7 +645,7 @@ Dimostrazione<div class="sd-summary-down docutils">
 <p class="sd-card-text"><strong>todo</strong></p>
 </div>
 </details><div class="proof theorem admonition" id="theorem-3">
-<span id="infinitesimal-calculus-derivatives-thm-lagrange"></span><p class="admonition-title"><span class="caption-number">Theorem 4 </span> (Theorema di Lagrange)</p>
+<span id="infinitesimal-calculus-derivatives-thm-lagrange"></span><p class="admonition-title"><span class="caption-number">Theorem 9 </span> (Theorema di Lagrange)</p>
 <div class="theorem-content section" id="proof-content">
 <p>Date le funzioni <span class="math notranslate nohighlight">\(f, g: [a,b] \rightarrow \mathbb{R}\)</span> continue e derivabili in ogni punto dell’intervallo <span class="math notranslate nohighlight">\((a,b)\)</span> con <span class="math notranslate nohighlight">\(f(a) = f(b)\)</span>, allora esiste un valore <span class="math notranslate nohighlight">\(c \in (a,b)\)</span> tale che</p>
 </div>
@@ -644,7 +659,7 @@ Dimostrazione<div class="sd-summary-down docutils">
 <p class="sd-card-text"><strong>todo</strong> Usando il teorema di Cauhcy con <span class="math notranslate nohighlight">\(g(x) = x\)</span>.</p>
 </div>
 </details><div class="proof theorem admonition" id="theorem-4">
-<span id="infinitesimal-calculus-derivatives-thm-hopital"></span><p class="admonition-title"><span class="caption-number">Theorem 5 </span> (Teorema di de l’Hopital (Bernoulli))</p>
+<span id="infinitesimal-calculus-derivatives-thm-hopital"></span><p class="admonition-title"><span class="caption-number">Theorem 10 </span> (Teorema di de l’Hopital (Bernoulli))</p>
 <div class="theorem-content section" id="proof-content">
 <p>Siano <span class="math notranslate nohighlight">\(f(x), g(x): [a,b] \rightarrow \mathbb{R}\)</span> funzioni reali di variabile reale continue in <span class="math notranslate nohighlight">\([a,b]\)</span> e derivabili in <span class="math notranslate nohighlight">\((a,b) \backslash \{ x_0 \}\)</span>.</p>
 <div class="math notranslate nohighlight">
@@ -675,7 +690,7 @@ Dimostrazione<div class="sd-summary-down docutils">
 <span id="infinitesimal-calculus-derivatives-fund"></span><h2>Derivate fondamentali<a class="headerlink" href="#derivate-fondamentali" title="Permalink to this heading">#</a></h2>
 <p>Usando i <a class="reference internal" href="analysis.html#infinitesimal-calculus-limits-fund"><span class="std std-ref">limiti fondamentali</span></a>, vengono calcolate le derivate fondamentali, che a loro volta permettono il calcolo degli <a class="reference internal" href="integrals.html#infinitesimal-calculus-integrals-fund"><span class="std std-ref">integrali fondamentali</span></a>. Le derivate fondamentali e la loro combinazione con le <a class="reference internal" href="#infinitesimal-calculus-derivatives-rules"><span class="std std-ref">regole di derivazione</span></a> permettono la derivazione di funzioni generiche. Le derivate fondamentali sono:</p>
 <div class="math notranslate nohighlight" id="equation-eq-infinitesimal-calculus-derivatives-fund">
-<span class="eqno">(11)<a class="headerlink" href="#equation-eq-infinitesimal-calculus-derivatives-fund" title="Permalink to this equation">#</a></span>\[\begin{split}\begin{aligned}
+<span class="eqno">(11)<a class="headerlink" href="#equation-eq-infinitesimal-calculus-derivatives-fund" title="Permalink a questa equazione">#</a></span>\[\begin{split}\begin{aligned}
 f(x) &amp; = x^n    \qquad &amp; \qquad f'(x) &amp; = n x^{n-1}   \\ 
 f(x) &amp; = e^x    \qquad &amp; \qquad f'(x) &amp; = e^x         \\ 
 f(x) &amp; = \ln x  \qquad &amp; \qquad f'(x) &amp; = \frac{1}{x} \\ 
@@ -780,7 +795,7 @@ Dimostrazione di <span class="math notranslate nohighlight">\(\ (\cos x)'\)</spa
 <span id="infinitesimal-calculus-derivatives-applications"></span><h2>Applicazioni<a class="headerlink" href="#applicazioni" title="Permalink to this heading">#</a></h2>
 <div class="section" id="espansioni-in-serie-di-taylor-e-maclaurin">
 <span id="infinitesimal-calculus-derivatives-taylor"></span><h3>Espansioni in serie di Taylor e MacLaurin<a class="headerlink" href="#espansioni-in-serie-di-taylor-e-maclaurin" title="Permalink to this heading">#</a></h3>
-<p>Le espansioni in serie di Taylor e di MacLaurin sono serie polinomiali che forniscono un’<strong>approssimazione locale</strong> di una funzione, <em>valida nell’intorno</em> (<strong>todo</strong> valutare questa espressione) di un punto.</p>
+<p>Le espansioni in serie di Taylor e di MacLaurin sono serie polinomiali che forniscono un”<strong>approssimazione locale</strong> di una funzione, <em>valida nell’intorno</em> (<strong>todo</strong> valutare questa espressione) di un punto.</p>
 <p>La <strong>serie di Taylor</strong> della funzione <span class="math notranslate nohighlight">\(f(x)\)</span> in un intervallo centrato in <span class="math notranslate nohighlight">\(x_0\)</span> è la serie</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
@@ -790,7 +805,7 @@ Dimostrazione di <span class="math notranslate nohighlight">\(\ (\cos x)'\)</spa
 <p>La serie di MacLaurin è la serie di Taylor centrata in <span class="math notranslate nohighlight">\(x_0 = 0\)</span>.</p>
 <p>La serie di Taylor troncata al <span class="math notranslate nohighlight">\(n\)</span>-esimo termine fornisce un’approssimazione locale della funzione <span class="math notranslate nohighlight">\(f(x)\)</span> di ordine <span class="math notranslate nohighlight">\(n\)</span>, nel senso definito dal seguente teorema.</p>
 <div class="proof theorem admonition" id="theorem-5">
-<p class="admonition-title"><span class="caption-number">Theorem 6 </span> (Approssimazione locale)</p>
+<p class="admonition-title"><span class="caption-number">Theorem 11 </span> (Approssimazione locale)</p>
 <div class="theorem-content section" id="proof-content">
 <div class="math notranslate nohighlight">
 \[\lim_{x \rightarrow x_0} \frac{f(x) - T[f(x); x_0]}{x^n} = f^{(n)}(x_0) \ , \]</div>
@@ -814,7 +829,7 @@ Dimostrazione<div class="sd-summary-down docutils">
   &amp; = \dots \\
   &amp; = \lim_{x \rightarrow x_0} \dfrac{f^{(n)}(x) - f^{(n)}(x_0)}{n!} =  0 \ ,
 \end{aligned}\end{split}\]</div>
-<p class="sd-card-text">si dimostra che il numeratore è un infinitesimo del denominatore. Usando la notazione dell’<em>”o piccolo”</em> per gli infinitesimi si può quindi scrivere l’approssimazione locale come:</p>
+<p class="sd-card-text">si dimostra che il numeratore è un infinitesimo del denominatore. Usando la notazione dell”<em>»o piccolo»</em> per gli infinitesimi si può quindi scrivere l’approssimazione locale come:</p>
 <div class="math notranslate nohighlight">
 \[f(x) - T[f(x), x_0] = o\left((x-x_0)^n\right) \ ,\]</div>
 <p class="sd-card-text">o in maniera equivalente
@@ -897,7 +912,7 @@ e^{ix} &amp; = 1 + ix + \frac{(ix)^2}{2!} + \frac{(ix)^3}{3!} + \frac{(ix)^4}{4!
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-subtitle">precedente</p>
         <p class="prev-next-title">Introduzione all’analisi</p>
       </div>
     </a>
@@ -905,7 +920,7 @@ e^{ix} &amp; = 1 + ix + \frac{(ix)^2}{2!} + \frac{(ix)^3}{3!} + \frac{(ix)^4}{4!
        href="integrals.html"
        title="next page">
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-subtitle">successivo</p>
         <p class="prev-next-title">Integrali</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
@@ -921,7 +936,7 @@ e^{ix} &amp; = 1 + ix + \frac{(ix)^2}{2!} + \frac{(ix)^3}{3!} + \frac{(ix)^4}{4!
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
+    <i class="fa-solid fa-list"></i> Contenuti
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
@@ -953,7 +968,7 @@ e^{ix} &amp; = 1 + ix + \frac{(ix)^2}{2!} + \frac{(ix)^3}{3!} + \frac{(ix)^4}{4!
   <div class="footer-item">
     
 <p class="component-author">
-By basics
+Di basics
 </p>
 
   </div>
