@@ -434,7 +434,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -450,6 +452,29 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contenuti </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prime-definizioni">Prime definizioni</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classificazione-esempi-e-tecniche-risolutive">Classificazione, esempi e tecniche risolutive</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-lineari-a-coefficienti-costanti">Equazioni lineari a coefficienti costanti</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#definizione">Definizione</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">Esempi</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#soluzione">Soluzione</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#soluzione-dell-equazione-omogenea">Soluzione dell’equazione omogenea</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#soluzione-particolare-dell-equazione-completa">Soluzione particolare dell’equazione completa</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-separabili-tecnica-di-soluzione-di-separazione-delle-variabili">Equazioni separabili: tecnica di soluzione di separazione delle variabili</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Esempi</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -471,7 +496,7 @@ document.write(`
 <p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-calendar" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path></svg></span>12 nov 2024</p>
 </div>
 <div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
-<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>2 min read</p>
+<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>4 min read</p>
 </div>
 </div>
 </div>
@@ -480,31 +505,86 @@ document.write(`
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="equazioni-differenziali-ordinarie">
 <span id="ode-hs"></span><h1>Equazioni differenziali ordinarie<a class="headerlink" href="#equazioni-differenziali-ordinarie" title="Permalink to this heading">#</a></h1>
-<p><strong>Motivazione.</strong> In molti ambiti delle scienze compaiono equazioni differenziali ordinarie, equazioni che impongono una condizione tra una funzione reale incognita e le sue derivate. Così, ad esempio:</p>
+<p>Le equazioni differenziali ordinarie, spesso abbreviate con l’acronimo <strong>ODE</strong> dall’inglese <em>Ordinary Differential Equations</em>, sono equazioni che coinvolgono una funzione di una variabile e le sue derivate.</p>
+<p><strong>Motivazione.</strong> Le ODE sono un argomento fondamentale da comprendere, poiché esse compaiono e governano la risposta di molti sistemi in vari ambiti della matematica, della fisica e delle scienze in generale, dell’ingegneria e dell’economia. Così, ad esempio sono ODE:</p>
 <ul class="simple">
 <li><p>le equazioni del moto in dinamica</p></li>
 <li><p>le equazioni della statica in meccanica delle strutture</p></li>
 <li><p>le equazioni che descrivono l’andamento della temperatura attraverso un mezzo, in condizioni stazionarie</p></li>
-<li><p>…
-e in generale, in tutti i problemi in cui <strong>todo</strong></p></li>
+<li><p>le equazioni che descrivono l’evoluzione di una popolazione di prede e di predatori (es. modello di Lotka-Volterra)</p></li>
 </ul>
+<p>e in generale, in tutti le equazioni che governano processi in cui il valore di una funzione incognita in un istante di tempo o in un punto dello spazio spazio dipende dal suo valore negli istanti di tempo o nei punti dello spazio «vicini».</p>
 <p><strong>Approccio.</strong>
-Mentre le motivazioni date dovrebbero essere sufficienti a convincere dell’importanza e della necessità di un’introduzione alle equazioni differenziali ordinarie, una trattazione completa dell’argomento richiede strumenti matematici più avanzati di quelli disponibili a uno studente delle scuole superiori (e spesso anche di molti studenti universitari).</p>
-<p>Si cercherà quindi di trattare l’argomento nella maniera più rigorosa possibile per fornire gli strumenti necessari per (semplici) applicazioni nelle quali compaiono le ODE, mentre si chiederà qualche atto di fede nell’accettare alcuni risultati. Per completezza, in corrispondenza di questi atti di fede, verrà messo a disposizione un collegamento a una trattazione più completa dell’argomento.</p>
-<p><strong>Definizioni.</strong>
-Un’equazione differenziale ordinaria è una funzione che coinvolge una funzione reale di una variabile reale, incognita, e le sue derivate. Formalmente una ODE può essere scritta come</p>
+Mentre le motivazioni date dovrebbero essere sufficienti a convincere dell’importanza e della necessità di un’introduzione alle ODE, una trattazione completa dell’argomento richiede strumenti matematici più avanzati di quelli disponibili a uno studente delle scuole superiori (e spesso anche di molti studenti universitari).</p>
+<p>Si cercherà quindi di trattare l’argomento nella maniera più rigorosa possibile per fornire gli strumenti necessari per (semplici) applicazioni nelle quali compaiono le ODE, mentre si chiederà qualche atto di fede nell’accettare alcuni risultati. <span style="color:red">Per completezza, in corrispondenza di questi atti di fede, verrà messo a disposizione un collegamento a una trattazione più completa dell’argomento.</span></p>
+<div class="section" id="prime-definizioni">
+<h2>Prime definizioni<a class="headerlink" href="#prime-definizioni" title="Permalink to this heading">#</a></h2>
+<p>Un”<strong>equazione differenziale ordinaria</strong> è un’equazione che coinvolge una funzione reale, incognita, di una variabile reale e le sue derivate. Formalmente una ODE può essere scritta come</p>
 <div class="math notranslate nohighlight">
-\[F(y^{(n)}(x), \dots y'(x), y(x), x) = 0 \quad , \qquad x \in [x_0, x_1]\]</div>
-<p>Il <strong>grado</strong> di una ODE è l’ordine massimo della derivata che compare nell’equazione.</p>
-<p>In generale, la soluzione di una ODE di grado <span class="math notranslate nohighlight">\(n\)</span> è il risultato di <span class="math notranslate nohighlight">\(n\)</span> operazioni di integrazione che producono <span class="math notranslate nohighlight">\(n\)</span> costanti arbitrarie. Affinché un problema sia definito, sono necessarie <span class="math notranslate nohighlight">\(n\)</span> condizioni sulla funzione incognita o sulle sue derivate.</p>
-<p>Si possono definire alcuni problemi:</p>
+\[F(y^{(n)}(x), \dots y'(x), y(x), x) = 0 \quad , \qquad x \in D = [x_0, x_1]\]</div>
+<p>Un problema differenziale <strong>ben definito</strong>, in generale è definito da una <strong>ODE</strong>, per valori della variabile indipendente <span class="math notranslate nohighlight">\(x\)</span> all’interno di un dominio dato, <span class="math notranslate nohighlight">\(x \in D\)</span>, e da alcune <strong>condizioni al contorno</strong> del dominio che consentano di determinare una soluzione del problema senza arbitrarietà. Come regola generale, affinché un problema sia definito sono necessarie <span class="math notranslate nohighlight">\(n\)</span> condizioni sulla funzione incognita o sulle sue derivate. Si possono definire alcuni problemi:</p>
 <ul class="simple">
-<li><p>problemi differenziali ai valori iniziali</p></li>
-<li><p>problemi differenziali con condizioni al contorno</p></li>
+<li><p>problemi differenziali <strong>ai valori iniziali</strong> (o di <strong>Cauchy</strong>), se le <span class="math notranslate nohighlight">\(n\)</span> condizioni coinvolgono il valore della funzione e delle sue prime <span class="math notranslate nohighlight">\(n-1\)</span> derivate all’estremo inferiore del dominio; un esempio tipico di problemi di Cauchy sono i problemi diretti in meccanica classica, dove l’evoluzione di un sistema è governata da equazioni differenziali del secondo ordine nella posizione, e può essere determinata dalle forze agenti su di esso, una volta nota la posizione (valore della funzione incognita) e della velocità (valore della derivata prima della funzione incognita) all’istante iniziale dell’intervallo di interesse</p></li>
+<li><p>problemi differenziali con <strong>condizioni al contorno</strong></p></li>
 </ul>
-<p><strong>Equazioni lineari a coefficienti costanti.</strong></p>
+<p>Il <strong>grado</strong> di una ODE è l’ordine massimo della derivata che compare nell’equazione. In generale, la soluzione di una ODE di grado <span class="math notranslate nohighlight">\(n\)</span> è il risultato di <span class="math notranslate nohighlight">\(n\)</span> operazioni di integrazione che producono <span class="math notranslate nohighlight">\(n\)</span> costanti arbitrarie.</p>
+</div>
+<div class="section" id="classificazione-esempi-e-tecniche-risolutive">
+<h2>Classificazione, esempi e tecniche risolutive<a class="headerlink" href="#classificazione-esempi-e-tecniche-risolutive" title="Permalink to this heading">#</a></h2>
+<div class="section" id="equazioni-lineari-a-coefficienti-costanti">
+<h3>Equazioni lineari a coefficienti costanti<a class="headerlink" href="#equazioni-lineari-a-coefficienti-costanti" title="Permalink to this heading">#</a></h3>
+<div class="section" id="definizione">
+<h4>Definizione<a class="headerlink" href="#definizione" title="Permalink to this heading">#</a></h4>
+<p>Una ODE lineare a coefficienti costanti di ordine <span class="math notranslate nohighlight">\(n\)</span> è un’equazione differenziale che mette in relazione la combinazione lineare della funzione incognita <span class="math notranslate nohighlight">\(y(x)\)</span> e delle sue prime <span class="math notranslate nohighlight">\(n\)</span> derivate con una funzione nota <span class="math notranslate nohighlight">\(f(x)\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[a_n y^{(n)}(x) + \dots a_1 y'(x) + a_0 y(x) = f(x) \ .\]</div>
+<p>Se la funzione <span class="math notranslate nohighlight">\(f(x)\)</span> è la funzione identicamente nulla <span class="math notranslate nohighlight">\(f(x) \equiv 0\)</span>, l’equazione è un’equazione omogenea.</p>
+</div>
+<div class="section" id="esempi">
+<h4>Esempi<a class="headerlink" href="#esempi" title="Permalink to this heading">#</a></h4>
+</div>
+<div class="section" id="soluzione">
+<h4>Soluzione<a class="headerlink" href="#soluzione" title="Permalink to this heading">#</a></h4>
+<p>La soluzione di un’equazione differenziale lineare a coefficienti costanti può essere scritta come somma di una soluzione <span class="math notranslate nohighlight">\(y_o(x)\)</span> dell’equazione omogenea associata e di una soluzione particolare <span class="math notranslate nohighlight">\(y_p(x)\)</span> dell’equazione,</p>
+<div class="math notranslate nohighlight">
+\[y(x) = y_o(x) + y_p(x)\]</div>
+<div class="section" id="soluzione-dell-equazione-omogenea">
+<h5>Soluzione dell’equazione omogenea<a class="headerlink" href="#soluzione-dell-equazione-omogenea" title="Permalink to this heading">#</a></h5>
+<p>Un’equazione differenziale omogenea è un problema lineare, e quindi la somma di due soluzioni è anch’essa una soluzione. La soluzione generale dell’equazione omogenea di ordine <span class="math notranslate nohighlight">\(n\)</span> può essere scritta come combinazione lineare di <span class="math notranslate nohighlight">\(n\)</span> sue soluzioni particolari <em>indipendenti</em> (qualitativamente, cioè che non contengono le stesse informazioni ripetute).</p>
+<p>Sfruttando le proprietà dell’esponenziale, la soluzione generale dell’equazione omogenea viene cercata come combinazione lineare di soluzioni che hanno un’espressione <span class="math notranslate nohighlight">\(y_o(x) = e^{s x}\)</span>. Sostituendo nell’equazione differenziale omogenea, si ottiene un’equazione algebrica polinomiale in <span class="math notranslate nohighlight">\(s\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  0 &amp; = a_n y^{(n)}(x) + \dots a_1 y'(x) + a_0 y(x) = \\
+    &amp; = \left( a_n \, s^n + \dots a_1 \, s + a_0 \right) \underbrace{e^{s x}}_{\ne 0} \ , \\
+\end{aligned}\end{split}\]</div>
+<p>poiché la funzione esponenziale non è mai nulla. Il <a class="reference internal" href="precalculus/polynomials.html#math-hs-precalculus-polynomials-alg-fund-thm-real-coeffs"><span class="std std-ref">teorema fondamentale dell’algebra</span></a> garantisce che il polinomio con coefficienti reali <span class="math notranslate nohighlight">\(a_n x^n + \dots a_1 x + a_0\)</span> ha <span class="math notranslate nohighlight">\(n\)</span> zeri reali o complessi coniugati.</p>
+<ul>
+<li><p>Se il polinomio <span class="math notranslate nohighlight">\(a_n \, s^n + \dots a_1 s + a_0\)</span> <strong>non ha zeri <span class="math notranslate nohighlight">\(s_k\)</span> multipli</strong>, allora la soluzione generale dell’equazione omogenea è</p>
+<div class="math notranslate nohighlight">
+\[y_o(x) = C_1 \, e^{s_1 x} + \dots + C_n \, e^{s_n x}\]</div>
+<p>Nel caso di zeri complessi coniugati, anche le rispettive costanti di integrazione saranno complesse coniugate, <span class="math notranslate nohighlight">\(C_{-} = C^*_{+}\)</span>, per avere come soluzione una funzione reale</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  C_{+} e^{s x} + C_{-} e^{s^* x}
+    &amp; = ( A + i B ) e^{(\sigma + i \omega) x} + ( A - i B ) e^{(\sigma - i \omega )x} = \\
+    &amp; = ( A + i B ) e^{\sigma x} \left( \cos(\omega x) + i \sin (\omega x) \right) 
+      + ( A - i B ) e^{\sigma x} \left( \cos(\omega x) - i \sin (\omega x) \right) = \\
+    &amp; = 2 \left( A \cos (\omega x) - B \sin (\omega x) \right) \, e^{\sigma x}
+  \end{aligned}\end{split}\]</div>
+</li>
+<li><p>Se il polinomio ha <strong>zeri multipli</strong>, le soluzioni esponenziali in corrispondenza degli zeri multipli non sarebbero linearmente indipendenti. In generale, in corrispondenza di uno zero <span class="math notranslate nohighlight">\(s_p\)</span> con molteplicità <span class="math notranslate nohighlight">\(p\)</span> le soluzioni indipendenti sono</p>
+<div class="math notranslate nohighlight">
+\[e^{s_p x} \ , \quad x \, e^{s_p x} \ , \quad \dots \ , \quad x^{p-1} \, e^{s_p x} \ .\]</div>
+</li>
+</ul>
+</div>
+<div class="section" id="soluzione-particolare-dell-equazione-completa">
+<h5>Soluzione particolare dell’equazione completa<a class="headerlink" href="#soluzione-particolare-dell-equazione-completa" title="Permalink to this heading">#</a></h5>
+<p>Come regola generale, la ricerca della soluzione particolare dell’equazione completa è guidata dall’espressione della forzante. Ad esempio:</p>
 <ul class="simple">
-<li><p>Soluzione generale (senza dimostrazione): <span class="math notranslate nohighlight">\(y(x) = y_o(x) + y_p(x)\)</span></p></li>
+<li><p>forzanti polinomiali</p></li>
+<li><p>forzanti esponenziali</p></li>
+<li><p>forzanti armoniche</p></li>
 <li><p>Equazioni di primo grado</p></li>
 </ul>
 <div class="math notranslate nohighlight">
@@ -540,7 +620,11 @@ x_o(t) &amp; = C_1 e^{s_1 t } + C_2 e^{s_2 t} = \\
   \text{Re}\{C_2 e^{i \omega t}\} &amp;= \text{Re}\{ (A - i B)(\cos(\omega t) + i \sin(\omega t)\} = \\
   &amp; = \text{Re}\{ A \cos(\omega t) + B \sin (\omega t) + i \left[ A \sin (\omega t) - B \cos (\omega t) \right]\} \ .
 \end{aligned}\end{split}\]</div>
-<p><strong>Equazioni separabili: tecnica di soluzione di separazione delle variabili.</strong></p>
+</div>
+</div>
+</div>
+<div class="section" id="equazioni-separabili-tecnica-di-soluzione-di-separazione-delle-variabili">
+<h3>Equazioni separabili: tecnica di soluzione di separazione delle variabili<a class="headerlink" href="#equazioni-separabili-tecnica-di-soluzione-di-separazione-delle-variabili" title="Permalink to this heading">#</a></h3>
 <div class="math notranslate nohighlight">
 \[\frac{d y}{d x} = f(y(x)) \ g(x) \]</div>
 <p>può essere riscritta formalmente come</p>
@@ -549,7 +633,9 @@ x_o(t) &amp; = C_1 e^{s_1 t } + C_2 e^{s_2 t} = \\
 <p>e integrata con le opportune condizioni</p>
 <div class="math notranslate nohighlight">
 \[\tilde{F}(y(x)) - \tilde{F}(y(x_0)) = G(x) - G(x_0)\]</div>
-<p><strong>Esempi</strong></p>
+</div>
+<div class="section" id="id1">
+<h3>Esempi<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Moto rettilineo in un campo di forze costante e uniforme</p></li>
 </ul>
@@ -609,6 +695,8 @@ m \dot{v} + \frac{1}{2} \rho S c_x v^2 = mg \\
 <div class="math notranslate nohighlight">
 \[(EJ w'')'' = f\]</div>
 </div>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -664,6 +752,35 @@ m \dot{v} + \frac{1}{2} \rho S c_x v^2 = mg \\
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenuti
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prime-definizioni">Prime definizioni</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classificazione-esempi-e-tecniche-risolutive">Classificazione, esempi e tecniche risolutive</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-lineari-a-coefficienti-costanti">Equazioni lineari a coefficienti costanti</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#definizione">Definizione</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">Esempi</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#soluzione">Soluzione</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#soluzione-dell-equazione-omogenea">Soluzione dell’equazione omogenea</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#soluzione-particolare-dell-equazione-completa">Soluzione particolare dell’equazione completa</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-separabili-tecnica-di-soluzione-di-separazione-delle-variabili">Equazioni separabili: tecnica di soluzione di separazione delle variabili</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Esempi</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
