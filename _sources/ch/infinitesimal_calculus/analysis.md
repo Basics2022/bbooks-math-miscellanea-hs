@@ -205,6 +205,25 @@ Se $h(x) \sim a f(x)$, $k(x) \sim b g(x)$ per $x \rightarrow x_0$, e il rapporto
 
 $$\lim_{x \rightarrow x_0} \frac{h(x)}{k(x)} = \frac{a}{b} \lim_{x \rightarrow x_0} \frac{f(x)}{g(x)}$$
 
+**todo** esempi
+- confronto di polinomi
+  - per $x \rightarrow 0$, $\frac{a_n x^n + \dots + a_0}{b_m x^m + \dots + b_0} = \frac{a_0}{b_0}$
+  - per $x \rightarrow \infty$, $\frac{a_n x^n + \dots + a_0}{b_m x^m + \dots + b_0} \sim \frac{a_n}{b_m} x^{n-m}$
+- per $x \rightarrow 0$, $x \sim \sin x \sim \tan x$; esempi...
+- molto comodo, ma bisogna prestare attenzione che non avvengano semplificazioni dei termini dominanti in occasione di addizioni e sottrazioni, come ad esempio nel calcolo di 
+
+  $$\lim_{x \rightarrow 0} \frac{x - \sin x}{x^2} \quad \text{oppure} \quad \lim_{x \rightarrow 0} \frac{x - \sin x}{x^3} $$
+
+  La [serie polinomiale]() della funzione seno, produce un'approssimazione $\sin x = x - \frac{x^3}{3!} + O(x^5)$ e quindi il numeratore delle due frazioni ha un'approssimazione
+
+  $$x - \sin x = x - \left( x - \frac{x}{3!} + O(x^5) \right) = \frax{x}{3!} + O(x^5) \sim \frac{1}{6} x^3 \ .$$
+
+  Il risultato dei due limiti è quindi
+
+  $$\lim_{x \rightarrow 0} \frac{x - \ sin x}{x^2} = \lim_{x \rightarrow 0} \frac{\frac{1}{6} x^3 + O(x^5)}{x^2} = 0 $$
+  $$\lim_{x \rightarrow 0} \frac{x - \ sin x}{x^3} = \lim_{x \rightarrow 0} \frac{\frac{1}{6} x^3 + O(x^5)}{x^3} = \frac{1}{6} $$
+
+
 (infinitesimal-calculus:limits:fund)=
 ## Limiti fondamentali
 In questa sezione vengono calcolati alcuni limiti fondamentali. Questi limiti possono essere considerati fondamentali come sinonimo di *"minimo da ricordare"* per poter calcolare limiti più generali utilizzando le [operazioni](infinitesimal-calculus:limits:thms:operations) e i [teoremi](infinitesimal-calculus:limits:thms) sui limiti, e calcolare le [derivate fondamentali](infinitesimal-calculus:derivatives:fund). Un elenco minimo di limiti fondamentali è:
@@ -251,11 +270,11 @@ $$\lim_{x \rightarrow 0} \frac{e^x}{1 + x} = \lim_{x \rightarrow 0} \frac{\sum_{
 ```
 
 ```{dropdown} Dimostrazione di $\ \lim_{x \rightarrow 0} \frac{\ln (1+x)}{x} = 1$
-- **Dimostrazione 1.** Usando i risultati sui limiti che coinvolgono l'esponenziale, e definendo una nuova variabile $y = e^x - 1$, così da avere $x = \ln (y+1)$, con $y \rightarrow 0$ quando $x \rightarrow 0$, segue la dimostrazione,
+**Dimostrazione 1.** Usando i risultati sui limiti che coinvolgono l'esponenziale, e definendo una nuova variabile $y = e^x - 1$, così da avere $x = \ln (y+1)$, con $y \rightarrow 0$ quando $x \rightarrow 0$, segue la dimostrazione,
 
   $$\lim_{y \rightarrow 0} \frac{\ln(1+y)}{y} = \lim_{x \rightarrow 0} \frac{x}{e^x-1} = 1 \ .$$
 
-- **Dimostrazione 2.** Usando il [teorema del confronto](infinitesimal-calculus:limits:thms:comparison) con la relazione (**todo** *dimostrare!*)
+**Dimostrazione 2.** Usando il [teorema del confronto](infinitesimal-calculus:limits:thms:comparison) con la relazione (**todo** *dimostrare!*)
 
   $$\frac{x-1}{x} \le \ln x \le x - 1 \ ,$$
 

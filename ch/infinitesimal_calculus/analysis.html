@@ -719,6 +719,28 @@ Dimostrazione<div class="sd-summary-down docutils">
 <p>Se <span class="math notranslate nohighlight">\(h(x) \sim a f(x)\)</span>, <span class="math notranslate nohighlight">\(k(x) \sim b g(x)\)</span> per <span class="math notranslate nohighlight">\(x \rightarrow x_0\)</span>, e il rapporto <span class="math notranslate nohighlight">\(\frac{a}{b}\)</span> non è indeterminato, allora</p>
 <div class="math notranslate nohighlight">
 \[\lim_{x \rightarrow x_0} \frac{h(x)}{k(x)} = \frac{a}{b} \lim_{x \rightarrow x_0} \frac{f(x)}{g(x)}\]</div>
+<p><strong>todo</strong> esempi</p>
+<ul>
+<li><p>confronto di polinomi</p>
+<ul class="simple">
+<li><p>per <span class="math notranslate nohighlight">\(x \rightarrow 0\)</span>, <span class="math notranslate nohighlight">\(\frac{a_n x^n + \dots + a_0}{b_m x^m + \dots + b_0} = \frac{a_0}{b_0}\)</span></p></li>
+<li><p>per <span class="math notranslate nohighlight">\(x \rightarrow \infty\)</span>, <span class="math notranslate nohighlight">\(\frac{a_n x^n + \dots + a_0}{b_m x^m + \dots + b_0} \sim \frac{a_n}{b_m} x^{n-m}\)</span></p></li>
+</ul>
+</li>
+<li><p>per <span class="math notranslate nohighlight">\(x \rightarrow 0\)</span>, <span class="math notranslate nohighlight">\(x \sim \sin x \sim \tan x\)</span>; esempi…</p></li>
+<li><p>molto comodo, ma bisogna prestare attenzione che non avvengano semplificazioni dei termini dominanti in occasione di addizioni e sottrazioni, come ad esempio nel calcolo di</p>
+<div class="math notranslate nohighlight">
+\[\lim_{x \rightarrow 0} \frac{x - \sin x}{x^2} \quad \text{oppure} \quad \lim_{x \rightarrow 0} \frac{x - \sin x}{x^3} \]</div>
+<p>La <a class="reference internal" href="../infinitesimal_calculus.html"><span class="doc std std-doc">serie polinomiale</span></a> della funzione seno, produce un’approssimazione <span class="math notranslate nohighlight">\(\sin x = x - \frac{x^3}{3!} + O(x^5)\)</span> e quindi il numeratore delle due frazioni ha un’approssimazione</p>
+<div class="math notranslate nohighlight">
+\[x - \sin x = x - \left( x - \frac{x}{3!} + O(x^5) \right) = \frax{x}{3!} + O(x^5) \sim \frac{1}{6} x^3 \ .\]</div>
+<p>Il risultato dei due limiti è quindi</p>
+<div class="math notranslate nohighlight">
+\[\lim_{x \rightarrow 0} \frac{x - \ sin x}{x^2} = \lim_{x \rightarrow 0} \frac{\frac{1}{6} x^3 + O(x^5)}{x^2} = 0 \]</div>
+<div class="math notranslate nohighlight">
+\[\lim_{x \rightarrow 0} \frac{x - \ sin x}{x^3} = \lim_{x \rightarrow 0} \frac{\frac{1}{6} x^3 + O(x^5)}{x^3} = \frac{1}{6} \]</div>
+</li>
+</ul>
 </div>
 </div>
 <div class="section" id="limiti-fondamentali">
@@ -792,20 +814,16 @@ Dimostrazione di <span class="math notranslate nohighlight">\(\ \lim_{x \rightar
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<ul>
-<li><p class="sd-card-text"><strong>Dimostrazione 1.</strong> Usando i risultati sui limiti che coinvolgono l’esponenziale, e definendo una nuova variabile <span class="math notranslate nohighlight">\(y = e^x - 1\)</span>, così da avere <span class="math notranslate nohighlight">\(x = \ln (y+1)\)</span>, con <span class="math notranslate nohighlight">\(y \rightarrow 0\)</span> quando <span class="math notranslate nohighlight">\(x \rightarrow 0\)</span>, segue la dimostrazione,</p>
+<p class="sd-card-text"><strong>Dimostrazione 1.</strong> Usando i risultati sui limiti che coinvolgono l’esponenziale, e definendo una nuova variabile <span class="math notranslate nohighlight">\(y = e^x - 1\)</span>, così da avere <span class="math notranslate nohighlight">\(x = \ln (y+1)\)</span>, con <span class="math notranslate nohighlight">\(y \rightarrow 0\)</span> quando <span class="math notranslate nohighlight">\(x \rightarrow 0\)</span>, segue la dimostrazione,</p>
 <div class="math notranslate nohighlight">
 \[\lim_{y \rightarrow 0} \frac{\ln(1+y)}{y} = \lim_{x \rightarrow 0} \frac{x}{e^x-1} = 1 \ .\]</div>
-</li>
-<li><p class="sd-card-text"><strong>Dimostrazione 2.</strong> Usando il <a class="reference internal" href="#infinitesimal-calculus-limits-thms-comparison"><span class="std std-ref">teorema del confronto</span></a> con la relazione (<strong>todo</strong> <em>dimostrare!</em>)</p>
+<p class="sd-card-text"><strong>Dimostrazione 2.</strong> Usando il <a class="reference internal" href="#infinitesimal-calculus-limits-thms-comparison"><span class="std std-ref">teorema del confronto</span></a> con la relazione (<strong>todo</strong> <em>dimostrare!</em>)</p>
 <div class="math notranslate nohighlight">
 \[\frac{x-1}{x} \le \ln x \le x - 1 \ ,\]</div>
 <p class="sd-card-text">che può essere riscritta, usando il cambio di variabile <span class="math notranslate nohighlight">\(x \rightarrow x+1\)</span> e dividendo per <span class="math notranslate nohighlight">\(x\)</span> (ipotizzata positiva; se negativa cambia il verso delle disuguaglianze, ma non il risultato) tutti e 3 i termini, come</p>
 <div class="math notranslate nohighlight">
 \[\frac{1}{x+1} \le \frac{\ln (x + 1)}{x} \le 1 \ .\]</div>
 <p class="sd-card-text">Per <span class="math notranslate nohighlight">\(x \rightarrow 0\)</span> le due funzioni estremanti tendono a <span class="math notranslate nohighlight">\(1\)</span> e di conseguenza <span class="math notranslate nohighlight">\(\lim_{x \rightarrow 0} \frac{\ln (x+1)}{x} = 1\)</span>.</p>
-</li>
-</ul>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
