@@ -65,6 +65,8 @@ Una funzione reale è continua in un dominio **todo o insieme?** se è continua 
 (infinitesimal-calculus:continuous-fun:thms:weierstrass)=
 #### Teorema di Weierstrass
 ```{prf:theorem} Teorema di Weierstrass
+:label: thm:infinitesimal-calculus:continuous-fun:thms:weierstrass
+
 Data una funzione reale continua $f: [a,b] \rightarrow \mathbb{R}$ definita sull'intervallo chiuso $[a,b]$, la funzione $f(x)$ ammette un punto di massimo assoluto e un punto di minimo assoluto nell'intevallo $[a,b]$.
 ```
 
@@ -73,6 +75,8 @@ Data una funzione reale continua $f: [a,b] \rightarrow \mathbb{R}$ definita sull
 (infinitesimal-calculus:continuous-fun:thms:sign)=
 #### Teorema della permanenza del segno
 ```{prf:theorem} Teorema della permanenza del segno
+:label: thm:infinitesimal-calculus:continuous-fun:thms:sign
+
 Data una funzione continua $f: D \rightarrow \mathbb{R}$ continua, e un punto $x_0 \in D$ (**todo** *o punto di accumulazione?*). Se $f(x_0) > 0$ allora $\exists U_{x_0}$ t.c. $f(x) > 0$ per $\forall x \in U_{x_0} \cap D$.
 ```
 
@@ -91,6 +95,8 @@ $0 < f(x) < 2 \ell \ .$
 (infinitesimal-calculus:continuous-fun:thms:zeros)=
 #### Teorema degli zeri
 ```{prf:theorem} Teorema degli zeri
+:label: thm:infinitesimal-calculus:continuous-fun:thms:zeros
+
 Data una funzione $f: [a,b] \rightarrow \mathbb{R}$ continua, con $f(a)$ e $f(b)$ discordi, $f(a) f(b) < 0$. Allora esiste un valore $x \in (a,b)$ tale che $f(x) = 0$.
 ```
 
@@ -106,6 +112,8 @@ Data una funzione $f: [a,b] \rightarrow \mathbb{R}$ continua, con $f(a)$ e $f(b)
 (infinitesimal-calculus:continuous-fun:thms:intermediate)=
 #### Teorema dei valori intermedi
 ```{prf:theorem} Teorema dei valori intermedi
+:label: thm:infinitesimal-calculus:continuous-fun:thms:intermediate
+
 Data una funzione $f: [a,b] \rightarrow \mathbb{R}$ continua, allora $f(x)$ assume tutti i valori compresi tra $f(a)$ e $f(b)$, cioè (assumendo $f(a) < f(b)$) per $\forall y \in (f(a), f(b)) \ x_0 \in (a,b) \ \text{t.c..} \ f(x_0) = y$. 
 ```
 
@@ -152,6 +160,8 @@ $$+\infty-\infty \quad , \quad 0 \cdot \mp \infty \quad , \quad \frac{\mp \infty
 (infinitesimal-calculus:limits:thms:comparison)=
 ### Teorema del confronto
 ```{prf:theorem} Teorema del confronto
+:label: thm:infinitesimal-calculus:continuous-fun:thms:comparison
+
 Siano $f$, $g$, $h: \ X \in \mathbb{R} \rightarrow \mathbb{R}$, e dato un punto di accumulazione $x_0$ per $X$. Se
 
 $$\lim_{x \rightarrow x_0} f(x) = \lim_{x \rightarrow x_0} h(x) = \ell \ ,$$

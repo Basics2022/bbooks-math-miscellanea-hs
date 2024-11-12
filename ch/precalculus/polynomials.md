@@ -10,6 +10,8 @@
 
 **todo** *Fare esempi di applicazione del teorema fondamentale dell'algebra, come soluzione delle ODE lineari omogenee a coffficienti costanti*
 
+
+(math-hs:precalculus:polynomials:alg-fund-thm)=
 ### Teorema fondamentale dell'algebra
 Il teorema fondamentale dell'algebra afferma che ogni polinomio in una variabile complessa $z \in \mathbb{C}$ a coefficienti complessi,
 
@@ -32,9 +34,10 @@ $$\begin{aligned}
 
 con $p + 2q = n$.
 
+(math-hs:precalculus:polynomials:alg-fund-thm:real-coeffs)=
 ### In campo complesso
 
-Ogni polinomio $p_n(x)$ a coefficienti reali può essere fattorizzato nel prodotto di $n$ binomi coefficienti complessi,
+Ogni polinomio $p_n(x)$ **a coefficienti reali** può essere fattorizzato nel prodotto di $n$ binomi coefficienti complessi,
 
 $$\begin{aligned}
   p_n(x) & = a_n x^n + a_{n-1} x^{n-1} + \dots a_1 x + a_0 = \\
