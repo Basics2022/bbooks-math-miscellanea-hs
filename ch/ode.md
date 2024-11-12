@@ -290,6 +290,8 @@ In questa sezione vengono risolti alcuni problemi governati dalle equazioni diff
 ```
 
 ```{dropdown} Esempio - Sistema massa-molla-smorzatore
+**todo** *definire il sistema adimensionale e verificare la risposta in funzione del coefficiente di smorzamento del sistema; definire smorzamento critico, e sistemi sovra- e sotto-smorzati; indagare il fenomeno della* **risonanza**
+
 **Moto libero - forzante nulla, $f^e = 0$**
 
 **Forzante costante, $f^e$**
