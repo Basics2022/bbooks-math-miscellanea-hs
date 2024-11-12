@@ -52,6 +52,7 @@ Se la funzione $f(x)$ è la funzione identicamente nulla $f(x) \equiv 0$, l'equa
 
 (ode-hs:types:linear-const:ex)=
 #### Esempi
+In questa sezione vengono presentati alcuni esempi di equazioni differenziali ordinarie, ottenute partendo da alcune leggi della fisica. Successivamente nel capitolo verrà presentata la [soluzione](ode-hs:types:linear-const:ex-sol) di alcuni problemi differenziali descritti in questi esempi.
 
 ```{dropdown} Temperatura di un corpo, soggetto a convezione
 **Temperatura di un corpo, soggetto a convezione.** L'equazione che governa l'evoluzione della temperatura $T(t)$ di un sistema, sufficientemente piccolo da poter essere considerato a temperatura uniforme nello spazio, soggetto alla trasmissione del calore per convezione sulla sua superficie in un ambiente a temperatura $T^e(t)$ nota è l'equazione differenziale ordinaria del primo ordine,
@@ -224,6 +225,7 @@ Nel caso in cui la soluzione particolare abbia la forma di una delle soluzioni d
 
 (ode-hs:types:linear-const:ex-sol)=
 #### Soluzione degli esempi
+In questa sezione vengono risolti alcuni problemi governati dalle equazioni differenziali presentate in precedenza come [esempi](ode-hs:types:linear-const:ex) di equazioni differenziali ordinarie lineari a coefficienti costanti.
 
 ```{dropdown} Esempio - Temperatura di un corpo, soggetto a convezione.
 ```
