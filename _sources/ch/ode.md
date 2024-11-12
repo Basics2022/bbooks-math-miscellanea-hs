@@ -209,6 +209,59 @@ poiché la funzione esponenziale non è mai nulla. Il [teorema fondamentale dell
 
   $$e^{s_p x} \ , \quad x \, e^{s_p x} \ , \quad \dots \ , \quad x^{p-1} \, e^{s_p x} \ .$$
 
+<!--
+**todo** *Trattare il caso con radici multiple. Anche se non è una dimostrazione, dare una giustificazione della forma delle soluzioni indipendenti*
+-->
+
+```{dropdown} Radici multiple - "Dimostrazione"
+:open:
+
+Un'equazione differenziale lineare a coefficienti costanti omogenea può essere riscritta come
+
+$$\begin{aligned}
+  0 & = a_n y^{(n)}(x) + \dots a_1 y'(x) + a_0 y(x) = \\
+    & = a_n \left( - s_1 + \frac{d}{dx} \right) \dots \left( - s_n + \frac{d}{dx} \right) y(x) \ ,
+\end{aligned}$$
+
+dove i fattori possono essere commutabili, per la linearità. Nel caso di radici non multiple, l'unico modo affinché l'equazione sia soddisfatta è che l'azione di uno degli *operatori* $\left( - s_k + \frac{d}{dx} \right)$ su $y(x)$ dia risultato nullo, cioè
+
+$$0 = \left(  - s_k + \frac{d}{dx} \right) y(x) = - s_k \, y(x) + y'(x) \ .$$
+
+Nel caso in cui una radice sia multipla e abbia molteplicità $p$, le $p$ soluzioni indipendenti associate a questa radice sono quelle per le quali
+
+$$0 = \left(  - s_k + \frac{d}{dx} \right)^p y(x) \ .$$
+
+**Esempio con $p=2$**. Ad esempio esiste una radice $s$ con molteplicità $p=2$ i due "binomi" relativi a questa radice producono l'equazione differenziale,
+
+$$0 = \left( - s + \frac{d}{dx} \right) \left( -s + \frac{d}{dx} \right) y(x) \ .$$
+
+Affinché questa equazione sia soddisfatta, la funzione $y(x)$ deve essere tale da soddisfare una delle due condizioni
+
+$$\begin{aligned}
+  - s y(x) + y'(x) & = 0 \\
+  - s y(x) + y'(x) & = A \, e^{s x} \\
+\end{aligned}$$
+
+La prima condizione ha una soluzione generale
+
+$$- s y(x) + y'(x) = 0 \qquad \rightarrow \qquad y(t) = C e^{s x}$$
+
+mentre la seconda condizione permette di trovare la soluzione desiderata come combinazione lineare delle $p=2$ desiderate,
+
+$$\begin{aligned}
+  - s y(x) + y'(x) & = A \, e^{sx}  \\
+  e^{-sx} \left( - s y(x) + y'(x) \right) & = A  \\
+  \dfrac{d}{dx} \left( e^{-sx} \, y(x) \right) & = A  \\
+  \int \frac{d}{dx} \left( e^{-sx} y(x) \right) & = A \, x + B \\
+   e^{-sx} y(x) & = A \, x + C \qquad \rightarrow \qquad  y(x) = A \, x \, e^{sx} + B \, e^{sx}  \ ,
+\end{aligned}$$
+
+avendo inizialmente moltiplicato entrambi lati dell'equazione per il termine mai nullo $e^{sx} \ne 0$, successivamente riconoscito con la formula del prodotto la derivata $\frac{d}{dx}\left( e^{-s x} y(x) \right) = - s e^{sx} y(x) + s^{sx} y'(x)$, e integrato ricordandosi delle costanti di integrazione necessarie a ottenere l'espressione più generale possibile, senza perdere pezzi in giro.
+
+**Molteplicità $p$.** Il caso di radici mulitple con molteplicità generale può essere ricavato ricorsivamente, seguendo quanto fatto per il caso $p=2$. Questa dimostrazione viene lasciata come esercizio. 
+
+```
+
 (ode-hs:types:linear-const:sol:part)=
 ##### Soluzione particolare dell'equazione completa
 
@@ -225,7 +278,7 @@ Nel caso in cui la soluzione particolare abbia la forma di una delle soluzioni d
 
 (ode-hs:types:linear-const:ex-sol)=
 #### Soluzione degli esempi
-In questa sezione vengono risolti alcuni problemi governati dalle equazioni differenziali presentate in precedenza come [esempi](ode-hs:types:linear-const:ex) di equazioni differenziali ordinarie lineari a coefficienti costanti.
+In questa sezione vengono risolti alcuni problemi governati dalle equazioni differenziali presentate in precedenza come [esempi](ode-hs:types:linear-const:ex) di equazioni differenziali ordinarie lineari a coefficienti costanti, applicando il [metodo di soluzione generale](ode-hs:types:linear-const:sol) per questo tipo di equazioni.
 
 ```{dropdown} Esempio - Temperatura di un corpo, soggetto a convezione.
 ```
