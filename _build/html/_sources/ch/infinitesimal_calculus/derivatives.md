@@ -287,7 +287,7 @@ $$\begin{aligned}
  \ln (1+x) & = x - \frac{x^2}{2} + \frac{x^3}{3} + o(x^3) \\
  (1+x)^a & = 1 + a x + a(a-1) \frac{x^2}{2} + o(x^2) \\
  e^x     & = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + \frac{x^5}{5!} + o(x^5)
-\end{aligned}$$
+\end{aligned}$$ (eq:infinitesimal-calculus:derivatives:taylor:fund-limits)
 
 **todo** *Dimostrare la convergenza delle serie. Convergenza puntuale, convergenza uniforme (in un insieme di convergenza, di solito centrato in un punto e le cui dimensioni sono definite da un raggio di convergenza)*
 

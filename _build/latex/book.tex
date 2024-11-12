@@ -5304,8 +5304,61 @@ se \(\ell\) finito diverso da zero, si può dire che \(f(x)\) è un infinitesimo
 
 \item {} 
 \sphinxAtStartPar
-se \(\ell\) è infinito, si può dire che \(f(x)\) è un infinitesimo di ordine inferiore, o un infinito di ordine superiore, rispetto a \(g(x)\); viceversa \(g(x)\) è un infinitesimo di ordine superiore, o un infinito di ordine inferiore, rispetto a \(f(x)\) e si può indicare con la notazione di \sphinxstyleemphasis{o piccolo} \(g(x) = O \left(f(x) \right)\)
+se \(\ell\) è infinito, si può dire che \(f(x)\) è un infinitesimo di ordine inferiore, o un infinito di ordine superiore, rispetto a \(g(x)\); viceversa \(g(x)\) è un infinitesimo di ordine superiore, o un infinito di ordine inferiore, rispetto a \(f(x)\) e si può indicare con la notazione di \sphinxstyleemphasis{o piccolo} \(g(x) = o \left(f(x) \right)\)
 
+\item {} 
+\sphinxAtStartPar
+se \(\ell = 1\), si dice che \(f(x)\) e \(g(x)\) sono \sphinxstylestrong{asintoticamente equivalenti}, o in breve \sphinxstylestrong{asintotici}, \(f(x) \sim g(x)\)in un intorno del punto dove viene calcolato il limite.
+
+\end{itemize}
+
+
+\subsubsection{Calcolo dei limiti con sostituzione degli infinitesimi o degli infiniti}
+\label{\detokenize{ch/infinitesimal_calculus/analysis:calcolo-dei-limiti-con-sostituzione-degli-infinitesimi-o-degli-infiniti}}
+\sphinxAtStartPar
+Se \(h(x) \sim a f(x)\), \(k(x) \sim b g(x)\) per \(x \rightarrow x_0\), e il rapporto \(\frac{a}{b}\) non è indeterminato, allora
+\begin{equation*}
+\begin{split}\lim_{x \rightarrow x_0} \frac{h(x)}{k(x)} = \frac{a}{b} \lim_{x \rightarrow x_0} \frac{f(x)}{g(x)}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{todo} esempi
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+confronto di polinomi
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+per \(x \rightarrow 0\), \(\frac{a_n x^n + \dots + a_0}{b_m x^m + \dots + b_0} = \frac{a_0}{b_0}\)
+
+\item {} 
+\sphinxAtStartPar
+per \(x \rightarrow \infty\), \(\frac{a_n x^n + \dots + a_0}{b_m x^m + \dots + b_0} \sim \frac{a_n}{b_m} x^{n-m}\)
+
+\end{itemize}
+
+\item {} 
+\sphinxAtStartPar
+per \(x \rightarrow 0\), \(x \sim \sin x \sim \tan x\); esempi…
+
+\item {} 
+\sphinxAtStartPar
+molto comodo, ma bisogna prestare attenzione che non avvengano semplificazioni dei termini dominanti in occasione di addizioni e sottrazioni, come ad esempio nel calcolo di
+\begin{equation*}
+\begin{split}\lim_{x \rightarrow 0} \frac{x - \sin x}{x^2} \quad \text{oppure} \quad \lim_{x \rightarrow 0} \frac{x - \sin x}{x^3} \end{split}
+\end{equation*}
+\sphinxAtStartPar
+Come mostrato nel capitolo sulle derivate, nella sezione sulle espansioni in {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-taylor}]{\sphinxcrossref{\DUrole{std,std-ref}{serie polinomali di Taylor e MacLaurin}}}}, la serie polinomiale \eqref{equation:ch/infinitesimal_calculus/derivatives:eq:infinitesimal-calculus:derivatives:taylor:fund-limits} della funzione seno produce un’approssimazione \(\sin x = x - \frac{x^3}{3!} + O(x^5)\); quindi il numeratore delle due frazioni ha un’approssimazione
+\begin{equation*}
+\begin{split}x - \sin x = x - \left( x - \frac{x}{3!} + O(x^5) \right) = \frac{x}{3!} + O(x^5) \sim \frac{1}{6} x^3 \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e produce il risultato dei due limiti
+\begin{equation*}
+\begin{split}\lim_{x \rightarrow 0} \frac{x - \sin x}{x^2} = \lim_{x \rightarrow 0} \frac{\frac{1}{6} x^3 + O(x^5)}{x^2} = 0 \end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\lim_{x \rightarrow 0} \frac{x - \sin x}{x^3} = \lim_{x \rightarrow 0} \frac{\frac{1}{6} x^3 + O(x^5)}{x^3} = \frac{1}{6} \end{split}
+\end{equation*}
 \end{itemize}
 
 
@@ -5357,16 +5410,14 @@ Usando le notazioni di «o piccolo» e «o grande» per {\hyperref[\detokenize{c
 \begin{equation*}
 \begin{split}\lim_{x \rightarrow 0} \frac{e^x}{1 + x} = \lim_{x \rightarrow 0} \frac{\sum_{k=0}^{+\infty} \frac{x^k}{k!}}{1+x} = \lim_{x \rightarrow 0} \frac{1 + x + o(x)}{1+x} = \lim_{x \rightarrow 0} \left( 1 + \frac{o(x)}{1+x} \right) = 1 \ .\end{split}
 \end{equation*}\subsubsection*{Dimostrazione di \protect\(\ \lim_{x \rightarrow 0} \frac{\ln (1+x)}{x} = 1\protect\)}
-\begin{itemize}
-\item {} 
+
 \sphinxAtStartPar
-Usando i risultati sui limiti che coinvolgono l’esponenziale, e definendo una nuova variabile \(y = e^x - 1\), così da avere \(x = \ln (y+1)\), con \(y \rightarrow 0\) quando \(x \rightarrow 0\), segue la dimostrazione,
+\sphinxstylestrong{Dimostrazione 1.} Usando i risultati sui limiti che coinvolgono l’esponenziale, e definendo una nuova variabile \(y = e^x - 1\), così da avere \(x = \ln (y+1)\), con \(y \rightarrow 0\) quando \(x \rightarrow 0\), segue la dimostrazione,
 \begin{equation*}
 \begin{split}\lim_{y \rightarrow 0} \frac{\ln(1+y)}{y} = \lim_{x \rightarrow 0} \frac{x}{e^x-1} = 1 \ .\end{split}
 \end{equation*}
-\item {} 
 \sphinxAtStartPar
-Usando il {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-thms-comparison}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema del confronto}}}} con la relazione (\sphinxstylestrong{todo} \sphinxstyleemphasis{dimostrare!})
+\sphinxstylestrong{Dimostrazione 2.} Usando il {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-thms-comparison}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema del confronto}}}} con la relazione (\sphinxstylestrong{todo} \sphinxstyleemphasis{dimostrare!})
 \begin{equation*}
 \begin{split}\frac{x-1}{x} \le \ln x \le x - 1 \ ,\end{split}
 \end{equation*}
@@ -5377,9 +5428,15 @@ che può essere riscritta, usando il cambio di variabile \(x \rightarrow x+1\) e
 \end{equation*}
 \sphinxAtStartPar
 Per \(x \rightarrow 0\) le due funzioni estremanti tendono a \(1\) e di conseguenza \(\lim_{x \rightarrow 0} \frac{\ln (x+1)}{x} = 1\).
-
-\end{itemize}
 \subsubsection*{Dimostrazione di \protect\(\ \lim_{x \rightarrow 0} \frac{(1+x)^a - 1}{x} = a \protect\)}
+
+\sphinxAtStartPar
+Usando i risultati che coinvolgono l’esponenziale, dopo aver riscritto \((1+x)^a = e^{a \ln(1+x)}\),
+\begin{equation*}
+\begin{split} \lim_{x \rightarrow 0} \frac{(1+x)^a - 1}{x} = \lim_{x \rightarrow 0} \frac{e^{a \ln(1+x)} - 1}{a \ln (1+x)} \frac{a \ln(1+x)}{x} = a \, \underbrace{\lim_{y \rightarrow 0} \frac{e^y - 1}{y}}_{=1} \ \underbrace{\lim_{x \rightarrow 0} \frac{\ln(1+x)}{x}}_{=1} = a \ , \end{split}
+\end{equation*}
+\sphinxAtStartPar
+avendo definito la variabile \(y = a \ln (1+x)\), che tende a zero quando \(x \rightarrow 0\). \sphinxstylestrong{todo} \sphinxstyleemphasis{prestare attenzione alle operazioni fatte, e fare riferimento alle operazioni con i limiti, e successivamente all’uso di infinitesimi e asintotici nel calcolo dei limiti.}
 
 \sphinxAtStartPar
 \sphinxstylestrong{todo} \sphinxstyleemphasis{Spostare nella sezione di precalcolo sulle successioni}
@@ -5742,7 +5799,7 @@ o in maniera equivalente
 \label{\detokenize{ch/infinitesimal_calculus/derivatives:esempi}}
 \sphinxAtStartPar
 La serie di MacLaurin per le funzioni interessate nei {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-fund}]{\sphinxcrossref{\DUrole{std,std-ref}{limiti notevoli}}}} forniscono approssimazioni locali di ordine maggiore per \(x \rightarrow 0\),
-\begin{equation*}
+\begin{equation}\label{equation:ch/infinitesimal_calculus/derivatives:eq:infinitesimal-calculus:derivatives:taylor:fund-limits}
 \begin{split}\begin{aligned}
  \cos(x) & = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} + o(x^5) \\
  \sin(x) & = x - \frac{x^3}{3!} + \frac{x^5}{5!} + o(x^6) \\
@@ -5750,7 +5807,7 @@ La serie di MacLaurin per le funzioni interessate nei {\hyperref[\detokenize{ch/
  (1+x)^a & = 1 + a x + a(a-1) \frac{x^2}{2} + o(x^2) \\
  e^x     & = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + \frac{x^5}{5!} + o(x^5)
 \end{aligned}\end{split}
-\end{equation*}
+\end{equation}
 \sphinxAtStartPar
 \sphinxstylestrong{todo} \sphinxstyleemphasis{Dimostrare la convergenza delle serie. Convergenza puntuale, convergenza uniforme (in un insieme di convergenza, di solito centrato in un punto e le cui dimensioni sono definite da un raggio di convergenza)}
 
