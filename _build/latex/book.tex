@@ -6205,7 +6205,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-10 min read
+11 min read
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -6501,6 +6501,7 @@ Se il polinomio ha \sphinxstylestrong{zeri multipli}, le soluzioni esponenziali 
 \end{itemize}
 
 
+\subsubsection*{Radici multiple \sphinxhyphen{} «Dimostrazione»}
 
 \sphinxAtStartPar
 Un’equazione differenziale lineare a coefficienti costanti omogenea può essere riscritta come
@@ -6521,12 +6522,12 @@ Nel caso in cui una radice sia multipla e abbia molteplicità \(p\), le \(p\) so
 \begin{split}0 = \left(  - s_k + \frac{d}{dx} \right)^p y(x) \ .\end{split}
 \end{equation*}
 \sphinxAtStartPar
-Così, ad esempio, per \(p=2\),
+\sphinxstylestrong{Esempio con \(p=2\)}. Ad esempio esiste una radice \(s\) con molteplicità \(p=2\) i due «binomi» relativi a questa radice producono l’equazione differenziale,
 \begin{equation*}
-\begin{split}0 = \left( - s + \frac{d}{dx} \right) \left( -s + \frac{d}{dx} \right) y(x) \ ,\end{split}
+\begin{split}0 = \left( - s + \frac{d}{dx} \right) \left( -s + \frac{d}{dx} \right) y(x) \ .\end{split}
 \end{equation*}
 \sphinxAtStartPar
-la funzione \(y(x)\) deve essere tale da soddisfare una delle due condizioni
+Affinché questa equazione sia soddisfatta, la funzione \(y(x)\) deve essere tale da soddisfare una delle due condizioni
 \begin{equation*}
 \begin{split}\begin{aligned}
   - s y(x) + y'(x) & = 0 \\
@@ -6551,6 +6552,9 @@ mentre la seconda condizione permette di trovare la soluzione desiderata come co
 \end{equation*}
 \sphinxAtStartPar
 avendo inizialmente moltiplicato entrambi lati dell’equazione per il termine mai nullo \(e^{sx} \ne 0\), successivamente riconoscito con la formula del prodotto la derivata \(\frac{d}{dx}\left( e^{-s x} y(x) \right) = - s e^{sx} y(x) + s^{sx} y'(x)\), e integrato ricordandosi delle costanti di integrazione necessarie a ottenere l’espressione più generale possibile, senza perdere pezzi in giro.
+
+\sphinxAtStartPar
+\sphinxstylestrong{Molteplicità \(p\).} Il caso di radici mulitple con molteplicità generale può essere ricavato ricorsivamente, seguendo quanto fatto per il caso \(p=2\). Questa dimostrazione viene lasciata come esercizio.
 
 
 \subparagraph{Soluzione particolare dell’equazione completa}
@@ -6581,7 +6585,28 @@ Nel caso in cui la soluzione particolare abbia la forma di una delle soluzioni d
 \sphinxAtStartPar
 In questa sezione vengono risolti alcuni problemi governati dalle equazioni differenziali presentate in precedenza come {\hyperref[\detokenize{ch/ode:ode-hs-types-linear-const-ex}]{\sphinxcrossref{\DUrole{std,std-ref}{esempi}}}} di equazioni differenziali ordinarie lineari a coefficienti costanti, applicando il {\hyperref[\detokenize{ch/ode:ode-hs-types-linear-const-sol}]{\sphinxcrossref{\DUrole{std,std-ref}{metodo di soluzione generale}}}} per questo tipo di equazioni.
 \subsubsection*{Esempio \sphinxhyphen{} Temperatura di un corpo, soggetto a convezione.}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Temperatura costante, \(T^e\)}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Temperatura crescente linearmente, \(T^e(t) = T_0 + G \, t\)}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Temperatura con andamento periodico, \(T^e(t) = T_0 + \Delta T \sin(\Omega t) \, t\)}
 \subsubsection*{Esempio \sphinxhyphen{} Sistema massa\sphinxhyphen{}molla\sphinxhyphen{}smorzatore}
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo} \sphinxstyleemphasis{definire il sistema adimensionale e verificare la risposta in funzione del coefficiente di smorzamento del sistema; definire smorzamento critico, e sistemi sovra\sphinxhyphen{} e sotto\sphinxhyphen{}smorzati; indagare il fenomeno della} \sphinxstylestrong{risonanza}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Moto libero \sphinxhyphen{} forzante nulla, \(f^e = 0\)}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Forzante costante, \(f^e\)}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Forzante armonica, \(f^e(t) = f_0 + \Delta f \sin(\Omega t)\)}
 \subsubsection*{Esempio \sphinxhyphen{} Circuito RLC. \sphinxstylestrong{todo}}
 \subsubsection*{Esempio \sphinxhyphen{} Caduta di un grave \sphinxhyphen{} 1: senza resistenza}
 \subsubsection*{Esempio \sphinxhyphen{} Caduta di un grave \sphinxhyphen{} 2: con resistenza lineare nella velocità}
@@ -6589,7 +6614,25 @@ In questa sezione vengono risolti alcuni problemi governati dalle equazioni diff
 \subsubsection*{Esempio \sphinxhyphen{} Moto parabolico di un grave \sphinxhyphen{} 1: senza resistenza}
 \subsubsection*{Esempio \sphinxhyphen{} Moto parabolico di un grave \sphinxhyphen{} 2: con resistenza lineare nella velocità}
 \subsubsection*{Esempio \sphinxhyphen{} Deformazione a torsione di una trave}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Trave incastrata a un estremo, carico distribuito uniforme in apertura e concentrato all’altro estremo}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Trave incastrata in entrambi gli estremi e con carico distribuito uniforme in apertura}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Trave incastrata in un estremo e con carico distribuito triangolare in apertura}
 \subsubsection*{Esempio \sphinxhyphen{} Deformazione a flessione di una trave}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Trave incastrata a un estremo, carico distribuito uniforme in apertura e all’altro estremo, sia con forza sia con momento flettente concentrato}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Trave incastrata in entrambi gli estremi e con carico distribuito uniforme in apertura}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Trave incastrata in un estremo e vincolata con un pattino all’altro estremo}
 
 
 \subsubsection{Equazioni differenziali a variabili separabili: tecnica di soluzione di separazione delle variabili}
