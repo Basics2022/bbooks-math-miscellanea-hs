@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2024.9.16)  12 NOV 2024 11:34
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2024.9.16)  12 NOV 2024 12:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2261,172 +2261,183 @@ LaTeX Info: Redefining \rmfamily on input line 5594.
 LaTeX Info: Redefining \sffamily on input line 5594.
 LaTeX Info: Redefining \ttfamily on input line 5594.
  [102]
-LaTeX Info: Redefining \rmfamily on input line 5651.
-LaTeX Info: Redefining \sffamily on input line 5651.
-LaTeX Info: Redefining \ttfamily on input line 5651.
- [103]
-LaTeX Info: Redefining \rmfamily on input line 5697.
-LaTeX Info: Redefining \sffamily on input line 5697.
-LaTeX Info: Redefining \ttfamily on input line 5697.
- [104]
-LaTeX Info: Redefining \rmfamily on input line 5738.
-LaTeX Info: Redefining \sffamily on input line 5738.
-LaTeX Info: Redefining \ttfamily on input line 5738.
+
+LaTeX Warning: Hyper reference `ch/infinitesimal_calculus/derivatives:infinites
+imal-calculus-derivatives-thm-rolle' on page 103 undefined on input line 5606.
+
+
+LaTeX Warning: Hyper reference `ch/infinitesimal_calculus/derivatives:infinites
+imal-calculus-derivatives-thm-rolle' on page 103 undefined on input line 5622.
+
+
+LaTeX Warning: Hyper reference `ch/infinitesimal_calculus/derivatives:infinites
+imal-calculus-derivatives-thm-lagrange' on page 103 undefined on input line 564
+1.
+
+LaTeX Info: Redefining \rmfamily on input line 5664.
+LaTeX Info: Redefining \sffamily on input line 5664.
+LaTeX Info: Redefining \ttfamily on input line 5664.
+[103]
+
+LaTeX Warning: Hyper reference `ch/infinitesimal_calculus/derivatives:infinites
+imal-calculus-derivatives-thm-cauchy' on page 104 undefined on input line 5671.
+
+
+
+LaTeX Warning: Hyper reference `ch/infinitesimal_calculus/derivatives:infinites
+imal-calculus-derivatives-thm-rolle' on page 104 undefined on input line 5671.
+
+
+LaTeX Warning: Hyper reference `ch/infinitesimal_calculus/derivatives:infinites
+imal-calculus-derivatives-thm-cauchy' on page 104 undefined on input line 5674.
+
+
+
+LaTeX Warning: Hyper reference `ch/infinitesimal_calculus/derivatives:infinites
+imal-calculus-derivatives-thm-lagrange' on page 104 undefined on input line 567
+4.
+
+LaTeX Info: Redefining \rmfamily on input line 5717.
+LaTeX Info: Redefining \sffamily on input line 5717.
+LaTeX Info: Redefining \ttfamily on input line 5717.
+[104]
+LaTeX Info: Redefining \rmfamily on input line 5743.
+LaTeX Info: Redefining \sffamily on input line 5743.
+LaTeX Info: Redefining \ttfamily on input line 5743.
  [105]
-Overfull \hbox (9.2988pt too wide) detected at line 5787
+LaTeX Info: Redefining \rmfamily on input line 5794.
+LaTeX Info: Redefining \sffamily on input line 5794.
+LaTeX Info: Redefining \ttfamily on input line 5794.
+ [106]
+Overfull \hbox (9.2988pt too wide) detected at line 5807
 []
  []
 
-LaTeX Info: Redefining \rmfamily on input line 5798.
-LaTeX Info: Redefining \sffamily on input line 5798.
-LaTeX Info: Redefining \ttfamily on input line 5798.
-[106]
-LaTeX Info: Redefining \rmfamily on input line 5863.
-LaTeX Info: Redefining \sffamily on input line 5863.
-LaTeX Info: Redefining \ttfamily on input line 5863.
- [107]
-LaTeX Info: Redefining \rmfamily on input line 5940.
-LaTeX Info: Redefining \sffamily on input line 5940.
-LaTeX Info: Redefining \ttfamily on input line 5940.
+LaTeX Info: Redefining \rmfamily on input line 5854.
+LaTeX Info: Redefining \sffamily on input line 5854.
+LaTeX Info: Redefining \ttfamily on input line 5854.
+[107]
+LaTeX Info: Redefining \rmfamily on input line 5920.
+LaTeX Info: Redefining \sffamily on input line 5920.
+LaTeX Info: Redefining \ttfamily on input line 5920.
  [108]
-LaTeX Info: Redefining \rmfamily on input line 5982.
-LaTeX Info: Redefining \sffamily on input line 5982.
-LaTeX Info: Redefining \ttfamily on input line 5982.
+LaTeX Info: Redefining \rmfamily on input line 5974.
+LaTeX Info: Redefining \sffamily on input line 5974.
+LaTeX Info: Redefining \ttfamily on input line 5974.
  [109]
 
 LaTeX Warning: Hyper reference `ch/infinitesimal_calculus/integrals:infinitesim
-al-calculus-integrals-thm-avg' on page 110 undefined on input line 5985.
+al-calculus-integrals-thm-avg' on page 110 undefined on input line 6003.
 
-
-Overfull \hbox (72.85744pt too wide) detected at line 6015
+LaTeX Info: Redefining \rmfamily on input line 6021.
+LaTeX Info: Redefining \sffamily on input line 6021.
+LaTeX Info: Redefining \ttfamily on input line 6021.
+[110]
+Overfull \hbox (72.85744pt too wide) detected at line 6033
 []
  []
 
-LaTeX Info: Redefining \rmfamily on input line 6017.
-LaTeX Info: Redefining \sffamily on input line 6017.
-LaTeX Info: Redefining \ttfamily on input line 6017.
-[110]
 
 LaTeX Warning: Hyper reference `ch/infinitesimal_calculus/integrals:infinitesim
-al-calculus-integrals-thm-fund' on page 111 undefined on input line 6020.
+al-calculus-integrals-thm-fund' on page 111 undefined on input line 6038.
 
-
-LaTeX Warning: Hyper reference `ch/infinitesimal_calculus/integrals:infinitesim
-al-calculus-integrals-thm-fund' on page 111 undefined on input line 6069.
-
-LaTeX Info: Redefining \rmfamily on input line 6077.
-LaTeX Info: Redefining \sffamily on input line 6077.
-LaTeX Info: Redefining \ttfamily on input line 6077.
+LaTeX Info: Redefining \rmfamily on input line 6070.
+LaTeX Info: Redefining \sffamily on input line 6070.
+LaTeX Info: Redefining \ttfamily on input line 6070.
 [111]
-LaTeX Info: Redefining \rmfamily on input line 6129.
-LaTeX Info: Redefining \sffamily on input line 6129.
-LaTeX Info: Redefining \ttfamily on input line 6129.
- [112]
-LaTeX Info: Redefining \rmfamily on input line 6270.
-LaTeX Info: Redefining \sffamily on input line 6270.
-LaTeX Info: Redefining \ttfamily on input line 6270.
+
+LaTeX Warning: Hyper reference `ch/infinitesimal_calculus/integrals:infinitesim
+al-calculus-integrals-thm-fund' on page 112 undefined on input line 6087.
+
+LaTeX Info: Redefining \rmfamily on input line 6125.
+LaTeX Info: Redefining \sffamily on input line 6125.
+LaTeX Info: Redefining \ttfamily on input line 6125.
+[112]
+LaTeX Info: Redefining \rmfamily on input line 6260.
+LaTeX Info: Redefining \sffamily on input line 6260.
+LaTeX Info: Redefining \ttfamily on input line 6260.
  [113]
-LaTeX Info: Redefining \rmfamily on input line 6378.
-LaTeX Info: Redefining \sffamily on input line 6378.
-LaTeX Info: Redefining \ttfamily on input line 6378.
+LaTeX Info: Redefining \rmfamily on input line 6339.
+LaTeX Info: Redefining \sffamily on input line 6339.
+LaTeX Info: Redefining \ttfamily on input line 6339.
  [114]
-LaTeX Info: Redefining \rmfamily on input line 6450.
-LaTeX Info: Redefining \sffamily on input line 6450.
-LaTeX Info: Redefining \ttfamily on input line 6450.
+LaTeX Info: Redefining \rmfamily on input line 6439.
+LaTeX Info: Redefining \sffamily on input line 6439.
+LaTeX Info: Redefining \ttfamily on input line 6439.
  [115]
-LaTeX Info: Redefining \rmfamily on input line 6450.
-LaTeX Info: Redefining \sffamily on input line 6450.
-LaTeX Info: Redefining \ttfamily on input line 6450.
- [116
+LaTeX Info: Redefining \rmfamily on input line 6468.
+LaTeX Info: Redefining \sffamily on input line 6468.
+LaTeX Info: Redefining \ttfamily on input line 6468.
+ [116]
+Capitolo 18.
+[117
 
 ]
-Capitolo 18.
-[117]
-LaTeX Info: Redefining \rmfamily on input line 6709.
-LaTeX Info: Redefining \sffamily on input line 6709.
-LaTeX Info: Redefining \ttfamily on input line 6709.
+LaTeX Info: Redefining \rmfamily on input line 6727.
+LaTeX Info: Redefining \sffamily on input line 6727.
+LaTeX Info: Redefining \ttfamily on input line 6727.
  [118]
-LaTeX Info: Redefining \rmfamily on input line 6765.
-LaTeX Info: Redefining \sffamily on input line 6765.
-LaTeX Info: Redefining \ttfamily on input line 6765.
+LaTeX Info: Redefining \rmfamily on input line 6783.
+LaTeX Info: Redefining \sffamily on input line 6783.
+LaTeX Info: Redefining \ttfamily on input line 6783.
  [119]
-LaTeX Info: Redefining \rmfamily on input line 6765.
-LaTeX Info: Redefining \sffamily on input line 6765.
-LaTeX Info: Redefining \ttfamily on input line 6765.
+LaTeX Info: Redefining \rmfamily on input line 6783.
+LaTeX Info: Redefining \sffamily on input line 6783.
+LaTeX Info: Redefining \ttfamily on input line 6783.
  [120
 
 ]
 Capitolo 19.
 [121]
-LaTeX Info: Redefining \rmfamily on input line 6891.
-LaTeX Info: Redefining \sffamily on input line 6891.
-LaTeX Info: Redefining \ttfamily on input line 6891.
+LaTeX Info: Redefining \rmfamily on input line 6909.
+LaTeX Info: Redefining \sffamily on input line 6909.
+LaTeX Info: Redefining \ttfamily on input line 6909.
  [122]
-Overfull \hbox (237.04324pt too wide) detected at line 6931
+Overfull \hbox (237.04324pt too wide) detected at line 6949
 []
  []
 
-LaTeX Info: Redefining \rmfamily on input line 6944.
-LaTeX Info: Redefining \sffamily on input line 6944.
-LaTeX Info: Redefining \ttfamily on input line 6944.
+LaTeX Info: Redefining \rmfamily on input line 6962.
+LaTeX Info: Redefining \sffamily on input line 6962.
+LaTeX Info: Redefining \ttfamily on input line 6962.
 [123]
-LaTeX Info: Redefining \rmfamily on input line 6982.
-LaTeX Info: Redefining \sffamily on input line 6982.
-LaTeX Info: Redefining \ttfamily on input line 6982.
+LaTeX Info: Redefining \rmfamily on input line 7000.
+LaTeX Info: Redefining \sffamily on input line 7000.
+LaTeX Info: Redefining \ttfamily on input line 7000.
  [124] [125
 
 ] [126]
-LaTeX Info: Redefining \rmfamily on input line 7064.
-LaTeX Info: Redefining \sffamily on input line 7064.
-LaTeX Info: Redefining \ttfamily on input line 7064.
+LaTeX Info: Redefining \rmfamily on input line 7082.
+LaTeX Info: Redefining \sffamily on input line 7082.
+LaTeX Info: Redefining \ttfamily on input line 7082.
  [127]
-LaTeX Info: Redefining \rmfamily on input line 7064.
-LaTeX Info: Redefining \sffamily on input line 7064.
-LaTeX Info: Redefining \ttfamily on input line 7064.
+LaTeX Info: Redefining \rmfamily on input line 7082.
+LaTeX Info: Redefining \sffamily on input line 7082.
+LaTeX Info: Redefining \ttfamily on input line 7082.
  [128
 
 ]
 Capitolo 20.
 [129]
-LaTeX Info: Redefining \rmfamily on input line 7072.
-LaTeX Info: Redefining \sffamily on input line 7072.
-LaTeX Info: Redefining \ttfamily on input line 7072.
+LaTeX Info: Redefining \rmfamily on input line 7090.
+LaTeX Info: Redefining \sffamily on input line 7090.
+LaTeX Info: Redefining \ttfamily on input line 7090.
  [130
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 7075--7076
+Underfull \hbox (badness 10000) in paragraph at lines 7093--7094
 []\TU/FreeMono(0)/m/n/10 integrals:thm:avg
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7078--7079
+Underfull \hbox (badness 10000) in paragraph at lines 7096--7097
 []\TU/FreeMono(0)/m/n/10 integrals:thm:fund
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7081--7082
+Underfull \hbox (badness 10000) in paragraph at lines 7099--7100
 []\TU/FreeMono(0)/m/n/10 integrals:thm:fund:reynolds
  []
-
-
-LaTeX Warning: Reference `ch/infinitesimal_calculus/analysis:theorem-0' on page
- 131 undefined on input line 7084.
-
-
-LaTeX Warning: Reference `ch/infinitesimal_calculus/analysis:theorem-1' on page
- 131 undefined on input line 7087.
-
-
-LaTeX Warning: Reference `ch/infinitesimal_calculus/analysis:theorem-2' on page
- 131 undefined on input line 7090.
-
-
-LaTeX Warning: Reference `ch/infinitesimal_calculus/analysis:theorem-3' on page
- 131 undefined on input line 7093.
-
-
-LaTeX Warning: Reference `ch/infinitesimal_calculus/analysis:theorem-4' on page
- 131 undefined on input line 7096.
 
 [131
 
@@ -2466,15 +2477,15 @@ braces):
 >  {italian/babelname}  =>  {italian}
 >  {italian/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {italian/Localnumeral}  =>  {polyglossia@C@localnumeral}.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 7104.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 7104.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 7122.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 7122.
  (./book.aux
 LaTeX Info: Redefining \rmfamily on input line 20.
 LaTeX Info: Redefining \sffamily on input line 20.
 LaTeX Info: Redefining \ttfamily on input line 20.
 )
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 7104.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 7104.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 7122.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 7122.
 
 Package rerunfilecheck Info: File `book.out' has not changed.
 (rerunfilecheck)             Checksum: A7A685EC436C55A1CEEAAD1251C0DC54;17059.
@@ -2484,10 +2495,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 42760 strings out of 481789
- 977257 string characters out of 5937152
+ 42758 strings out of 481789
+ 977283 string characters out of 5937152
  1653687 words of memory out of 5000000
- 58904 multiletter control sequences out of 15000+600000
+ 58902 multiletter control sequences out of 15000+600000
  541278 words of font info for 134 fonts, out of 8000000 for 9000
  15 hyphenation exceptions out of 8191
  71i,27n,109p,1024b,2247s stack positions out of 5000i,500n,10000p,200000b,80000s

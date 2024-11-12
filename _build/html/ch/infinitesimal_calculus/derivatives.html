@@ -626,12 +626,35 @@ Dimostrazione<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><strong>todo</strong></p>
+<p class="sd-card-text">Per il <a class="reference internal" href="analysis.html#infinitesimal-calculus-continuous-fun-thms-weierstrass"><span class="std std-ref">teorema di Weierstrass</span></a>, la funzione <span class="math notranslate nohighlight">\(f\)</span> ha un massimo <span class="math notranslate nohighlight">\(M\)</span> e un minimo <span class="math notranslate nohighlight">\(m\)</span> assoluti nell’intervallo <span class="math notranslate nohighlight">\([a,b]\)</span>. Si distinguono due casi:</p>
+<ul class="simple">
+<li><p class="sd-card-text">massimo e minimo sono nei punti estremi dell’intervallo. Allora la funzione è costante, e la derivata è nulla in ogni punto <span class="math notranslate nohighlight">\(c \in (a,b)\)</span></p></li>
+<li><p class="sd-card-text">i punti di massimo e di minimo sono interni all’intervallo. In questo caso, per il <a class="reference internal" href="#infinitesimal-calculus-derivatives-thm-rolle"><span class="std std-ref">teorema di Fermat</span></a> i punti <span class="math notranslate nohighlight">\(c\)</span> di minimo o massimo verificano la condizione <span class="math notranslate nohighlight">\(f'(c) = 0\)</span>.</p></li>
+</ul>
 </div>
 </details><div class="proof theorem admonition" id="theorem-2">
 <span id="infinitesimal-calculus-derivatives-thm-cauchy"></span><p class="admonition-title"><span class="caption-number">Theorem 8 </span> (Teorema di Cauchy)</p>
 <div class="theorem-content section" id="proof-content">
-<p>Date le funzioni <span class="math notranslate nohighlight">\(f, g: [a,b] \rightarrow \mathbb{R}\)</span> continue e derivabili in ogni punto dell’intervallo <span class="math notranslate nohighlight">\((a,b)\)</span> con <span class="math notranslate nohighlight">\(f(a) = f(b)\)</span>, allora esiste un valore <span class="math notranslate nohighlight">\(c \in (a,b)\)</span> tale che</p>
+<p>Date le funzioni <span class="math notranslate nohighlight">\(f, g: [a,b] \rightarrow \mathbb{R}\)</span> continue in <span class="math notranslate nohighlight">\([a,b]\)</span> e derivabili in <span class="math notranslate nohighlight">\((a,b)\)</span>, allora esiste almeno un punto <span class="math notranslate nohighlight">\(c \in (a,b)\)</span> tale che</p>
+<div class="math notranslate nohighlight">
+\[\left[ g(b) - g(a) \right] \, f'(c) = \left[ f(b) - f(a) \right] \, g'(c) \ .\]</div>
+</div>
+</div><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Dimostrazione<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Si applica il <a class="reference internal" href="#infinitesimal-calculus-derivatives-thm-rolle"><span class="std std-ref">teorema di Rolle</span></a> alla funzione</p>
+<div class="math notranslate nohighlight">
+\[h(x) = \left[ g(b) - g(a) \right] \, f(x) - \left[ f(b) - f(a) \right] \, g(x)\]</div>
+<p class="sd-card-text">continua in <span class="math notranslate nohighlight">\([a,b]\)</span>, derivabile in <span class="math notranslate nohighlight">\((a,b)\)</span> e con <span class="math notranslate nohighlight">\(h(a) = g(b) \, f(a) - f(b) \, g(a) = h(b)\)</span>.</p>
+</div>
+</details><div class="proof theorem admonition" id="theorem-3">
+<span id="infinitesimal-calculus-derivatives-thm-lagrange"></span><p class="admonition-title"><span class="caption-number">Theorem 9 </span> (Theorema di Lagrange)</p>
+<div class="theorem-content section" id="proof-content">
+<p>Data la funzione <span class="math notranslate nohighlight">\(f, g: [a,b] \rightarrow \mathbb{R}\)</span> continua in <span class="math notranslate nohighlight">\([a,b]\)</span> e derivabile in <span class="math notranslate nohighlight">\((a,b)\)</span>, allora esiste un valore <span class="math notranslate nohighlight">\(c \in (a,b)\)</span> tale che</p>
 <div class="math notranslate nohighlight">
 \[f(b) - f(a) = (b -  a) f'(c) \ .\]</div>
 </div>
@@ -642,24 +665,10 @@ Dimostrazione<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><strong>todo</strong></p>
-</div>
-</details><div class="proof theorem admonition" id="theorem-3">
-<span id="infinitesimal-calculus-derivatives-thm-lagrange"></span><p class="admonition-title"><span class="caption-number">Theorem 9 </span> (Theorema di Lagrange)</p>
-<div class="theorem-content section" id="proof-content">
-<p>Date le funzioni <span class="math notranslate nohighlight">\(f, g: [a,b] \rightarrow \mathbb{R}\)</span> continue e derivabili in ogni punto dell’intervallo <span class="math notranslate nohighlight">\((a,b)\)</span> con <span class="math notranslate nohighlight">\(f(a) = f(b)\)</span>, allora esiste un valore <span class="math notranslate nohighlight">\(c \in (a,b)\)</span> tale che</p>
-</div>
-</div><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Dimostrazione<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><strong>todo</strong> Usando il teorema di Cauhcy con <span class="math notranslate nohighlight">\(g(x) = x\)</span>.</p>
+<p class="sd-card-text">Si applica il <a class="reference internal" href="#infinitesimal-calculus-derivatives-thm-lagrange"><span class="std std-ref">teorema di Cauhcy</span></a> scegliendo la funzione <span class="math notranslate nohighlight">\(g(x) = x\)</span>.</p>
 </div>
 </details><div class="proof theorem admonition" id="theorem-4">
-<span id="infinitesimal-calculus-derivatives-thm-hopital"></span><p class="admonition-title"><span class="caption-number">Theorem 10 </span> (Teorema di de l’Hopital (Bernoulli))</p>
+<span id="infinitesimal-calculus-derivatives-thm-hopital"></span><p class="admonition-title"><span class="caption-number">Theorem 10 </span> (Teorema di de l’Hopital - Bernoulli)</p>
 <div class="theorem-content section" id="proof-content">
 <p>Siano <span class="math notranslate nohighlight">\(f(x), g(x): [a,b] \rightarrow \mathbb{R}\)</span> funzioni reali di variabile reale continue in <span class="math notranslate nohighlight">\([a,b]\)</span> e derivabili in <span class="math notranslate nohighlight">\((a,b) \backslash \{ x_0 \}\)</span>.</p>
 <div class="math notranslate nohighlight">
@@ -669,10 +678,10 @@ Dimostrazione<div class="sd-summary-down docutils">
 \end{aligned}\]</div>
 <p>Se esiste</p>
 <div class="math notranslate nohighlight">
-\[ \lim_{x \rightarrow x_0} \frac{f'(x)}{g'(x)} = L \quad \text{finito}\]</div>
+\[ \lim_{x \rightarrow x_0} \frac{f'(x)}{g'(x)} = \ell \quad \text{finito}\]</div>
 <p>allora</p>
 <div class="math notranslate nohighlight">
-\[ \lim_{x \rightarrow x_0} \frac{f(x)}{g(x)} = L \ . \]</div>
+\[ \lim_{x \rightarrow x_0} \frac{f(x)}{g(x)} = \ell \ . \]</div>
 <p><strong>todo</strong> Controllare l’enunciato</p>
 </div>
 </div><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -682,7 +691,8 @@ Dimostrazione<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><strong>todo</strong></p>
+<p class="sd-card-text"><strong>Forma indeterminata <span class="math notranslate nohighlight">\(\frac{0}{0}\)</span>.</strong> Usando il <a class="reference internal" href="#infinitesimal-calculus-derivatives-thm-cauchy"><span class="std std-ref">teorema di Cauchy</span></a> e il <a class="reference internal" href="#infinitesimal-calculus-derivatives-thm-rolle"><span class="std std-ref">teorema di Rolle</span></a></p>
+<p class="sd-card-text"><strong>Forma indeterminata <span class="math notranslate nohighlight">\(\frac{\infty}{\infty}\)</span>.</strong> Usando il <a class="reference internal" href="#infinitesimal-calculus-derivatives-thm-cauchy"><span class="std std-ref">teorema di Cauchy</span></a> e il <a class="reference internal" href="#infinitesimal-calculus-derivatives-thm-lagrange"><span class="std std-ref">teorema di Lagrange</span></a></p>
 </div>
 </details><p><strong>Oss.</strong> Il teorema di de l’Hopital può essere applicato anche in successione, più di una volta, fermandosi al primo rapporto di derivate dello stesso ordine che non produce una forma indeterminata.</p>
 </div>
@@ -850,15 +860,13 @@ $<span class="math notranslate nohighlight">\(f(x) = T[f(x), x_0] + o\left((x-x_
 <p><strong>Rivisitazione limiti notevoli</strong>
 Per <span class="math notranslate nohighlight">\(x \rightarrow 0\)</span></p>
 <div class="math notranslate nohighlight">
-\[(1+x)^a - 1 = a \, x + o(x)\]</div>
-<div class="math notranslate nohighlight">
-\[\sin x = x +o(x)\]</div>
-<div class="math notranslate nohighlight">
-\[1 - \cos x = \frac{1}{2} x^2 + o(x^3)\]</div>
-<div class="math notranslate nohighlight">
-\[e^x - 1 = x + o(x)\]</div>
-<div class="math notranslate nohighlight">
-\[\ln(1+x) = x + o(x)\]</div>
+\[\begin{split}\begin{aligned}
+  \sin x      &amp; = x +o(x) \\
+  1 - \cos x  &amp; = \frac{1}{2} x^2 + o(x^3) \\
+  e^x - 1     &amp; = x + o(x) \\
+  \ln(1+x)    &amp; = x + o(x) \\
+  (1+x)^a - 1 &amp; = a \, x + o(x) \\
+\end{aligned}\end{split}\]</div>
 <p><strong>Identità di Eulero.</strong> Usando l’espansione in serie di Taylor per l’esponenziale complesso <span class="math notranslate nohighlight">\(e^{ix}\)</span>, si ottiene</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}

@@ -106,31 +106,41 @@ La dimostrazione del teorema di Fermat...
 Data la funzione $f: [a,b] \rightarrow \mathbb{R}$ continua e derivabile in ogni punto dell'intervallo $(a,b)$ con $f(a) = f(b)$, allora esiste un valore $c \in (a,b)$ in cui $f'(c) = 0$.
 ```
 ```{dropdown} Dimostrazione
-**todo**
+Per il [teorema di Weierstrass](infinitesimal-calculus:continuous-fun:thms:weierstrass), la funzione $f$ ha un massimo $M$ e un minimo $m$ assoluti nell'intervallo $[a,b]$. Si distinguono due casi:
+- massimo e minimo sono nei punti estremi dell'intervallo. Allora la funzione è costante, e la derivata è nulla in ogni punto $c \in (a,b)$
+- i punti di massimo e di minimo sono interni all'intervallo. In questo caso, per il [teorema di Fermat](infinitesimal-calculus:derivatives:thm:rolle) i punti $c$ di minimo o massimo verificano la condizione $f'(c) = 0$.
+
 ```
 
 (infinitesimal-calculus:derivatives:thm:cauchy)=
 ```{prf:theorem} Teorema di Cauchy
-Date le funzioni $f, g: [a,b] \rightarrow \mathbb{R}$ continue e derivabili in ogni punto dell'intervallo $(a,b)$ con $f(a) = f(b)$, allora esiste un valore $c \in (a,b)$ tale che
+Date le funzioni $f, g: [a,b] \rightarrow \mathbb{R}$ continue in $[a,b]$ e derivabili in $(a,b)$, allora esiste almeno un punto $c \in (a,b)$ tale che
+
+$$\left[ g(b) - g(a) \right] \, f'(c) = \left[ f(b) - f(a) \right] \, g'(c) \ .$$
+
+```
+```{dropdown} Dimostrazione
+Si applica il [teorema di Rolle](infinitesimal-calculus:derivatives:thm:rolle) alla funzione
+
+$$h(x) = \left[ g(b) - g(a) \right] \, f(x) - \left[ f(b) - f(a) \right] \, g(x)$$
+
+continua in $[a,b]$, derivabile in $(a,b)$ e con $h(a) = g(b) \, f(a) - f(b) \, g(a) = h(b)$.
+
+```
+
+(infinitesimal-calculus:derivatives:thm:lagrange)=
+```{prf:theorem} Theorema di Lagrange
+Data la funzione $f, g: [a,b] \rightarrow \mathbb{R}$ continua in $[a,b]$ e derivabile in $(a,b)$, allora esiste un valore $c \in (a,b)$ tale che
 
 $$f(b) - f(a) = (b -  a) f'(c) \ .$$
 
 ```
 ```{dropdown} Dimostrazione
-**todo**
-```
-
-(infinitesimal-calculus:derivatives:thm:lagrange)=
-```{prf:theorem} Theorema di Lagrange
-Date le funzioni $f, g: [a,b] \rightarrow \mathbb{R}$ continue e derivabili in ogni punto dell'intervallo $(a,b)$ con $f(a) = f(b)$, allora esiste un valore $c \in (a,b)$ tale che
-
-```
-```{dropdown} Dimostrazione
-**todo** Usando il teorema di Cauhcy con $g(x) = x$.
+Si applica il [teorema di Cauhcy](infinitesimal-calculus:derivatives:thm:lagrange) scegliendo la funzione $g(x) = x$.
 ```
 
 (infinitesimal-calculus:derivatives:thm:hopital)=
-```{prf:theorem} Teorema di de l'Hopital (Bernoulli)
+```{prf:theorem} Teorema di de l'Hopital 
 Siano $f(x), g(x): [a,b] \rightarrow \mathbb{R}$ funzioni reali di variabile reale continue in $[a,b]$ e derivabili in $(a,b) \backslash \{ x_0 \}$.
 
 $$\begin{aligned}
@@ -140,16 +150,20 @@ $$\begin{aligned}
 
 Se esiste 
 
-$$ \lim_{x \rightarrow x_0} \frac{f'(x)}{g'(x)} = L \quad \text{finito}$$
+$$ \lim_{x \rightarrow x_0} \frac{f'(x)}{g'(x)} = \ell \quad \text{finito}$$
 
 allora
 
-$$ \lim_{x \rightarrow x_0} \frac{f(x)}{g(x)} = L \ . $$
+$$ \lim_{x \rightarrow x_0} \frac{f(x)}{g(x)} = \ell \ . $$
 
 **todo** Controllare l'enunciato
 ```
+
 ```{dropdown} Dimostrazione
-**todo**
+**Forma indeterminata $\frac{0}{0}$.** Usando il [teorema di Cauchy](infinitesimal-calculus:derivatives:thm:cauchy) e il [teorema di Rolle](infinitesimal-calculus:derivatives:thm:rolle) **todo**
+
+**Forma indeterminata $\frac{\infty}{\infty}$.** Usando il [teorema di Cauchy](infinitesimal-calculus:derivatives:thm:cauchy) e il [teorema di Lagrange](infinitesimal-calculus:derivatives:thm:lagrange) **todo**
+
 ```
 **Oss.** Il teorema di de l'Hopital può essere applicato anche in successione, più di una volta, fermandosi al primo rapporto di derivate dello stesso ordine che non produce una forma indeterminata.
 
@@ -294,15 +308,13 @@ $$\begin{aligned}
 **Rivisitazione limiti notevoli**
 Per $x \rightarrow 0$
 
-$$(1+x)^a - 1 = a \, x + o(x)$$
-
-$$\sin x = x +o(x)$$
-
-$$1 - \cos x = \frac{1}{2} x^2 + o(x^3)$$
-
-$$e^x - 1 = x + o(x)$$
-
-$$\ln(1+x) = x + o(x)$$
+$$\begin{aligned}
+  \sin x      & = x +o(x) \\
+  1 - \cos x  & = \frac{1}{2} x^2 + o(x^3) \\
+  e^x - 1     & = x + o(x) \\
+  \ln(1+x)    & = x + o(x) \\
+  (1+x)^a - 1 & = a \, x + o(x) \\
+\end{aligned}$$
 
 **Identità di Eulero.** Usando l'espansione in serie di Taylor per l'esponenziale complesso $e^{ix}$, si ottiene
 

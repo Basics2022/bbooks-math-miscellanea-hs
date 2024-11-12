@@ -5348,12 +5348,12 @@ molto comodo, ma bisogna prestare attenzione che non avvengano semplificazioni d
 \begin{split}\lim_{x \rightarrow 0} \frac{x - \sin x}{x^2} \quad \text{oppure} \quad \lim_{x \rightarrow 0} \frac{x - \sin x}{x^3} \end{split}
 \end{equation*}
 \sphinxAtStartPar
-Come mostrato nel capitolo sulle derivate, nella sezione sulle espansioni in {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-taylor}]{\sphinxcrossref{\DUrole{std,std-ref}{serie polinomali di Taylor e MacLaurin}}}}, la serie polinomiale \eqref{equation:ch/infinitesimal_calculus/derivatives:eq:infinitesimal-calculus:derivatives:taylor:fund-limits} della funzione seno produce un’approssimazione \(\sin x = x - \frac{x^3}{3!} + O(x^5)\); quindi il numeratore delle due frazioni ha un’approssimazione
+Come mostrato nel capitolo sulle derivate, nella sezione sulle espansioni in {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-taylor}]{\sphinxcrossref{\DUrole{std,std-ref}{serie polinomali di Taylor e MacLaurin}}}}, la serie polinomiale \eqref{equation:ch/infinitesimal_calculus/derivatives:eq:infinitesimal-calculus:derivatives:taylor:fund-limits} della funzione seno produce un’approssimazione \(\sin x = x - \frac{x^3}{3!} + O(x^5)\); quindi il numeratore delle due frazioni ha un termine dominante di terzo grado,
 \begin{equation*}
 \begin{split}x - \sin x = x - \left( x - \frac{x}{3!} + O(x^5) \right) = \frac{x}{3!} + O(x^5) \sim \frac{1}{6} x^3 \ ,\end{split}
 \end{equation*}
 \sphinxAtStartPar
-e produce il risultato dei due limiti
+che viene utilizzato nel calcolo dei limiti desiderati
 \begin{equation*}
 \begin{split}\lim_{x \rightarrow 0} \frac{x - \sin x}{x^2} = \lim_{x \rightarrow 0} \frac{\frac{1}{6} x^3 + O(x^5)}{x^2} = 0 \end{split}
 \end{equation*}\begin{equation*}
@@ -5595,35 +5595,52 @@ Data la funzione \(f: [a,b] \rightarrow \mathbb{R}\) continua e derivabile in og
 \subsubsection*{Dimostrazione}
 
 \sphinxAtStartPar
-\sphinxstylestrong{todo}
+Per il {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-continuous-fun-thms-weierstrass}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema di Weierstrass}}}}, la funzione \(f\) ha un massimo \(M\) e un minimo \(m\) assoluti nell’intervallo \([a,b]\). Si distinguono due casi:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+massimo e minimo sono nei punti estremi dell’intervallo. Allora la funzione è costante, e la derivata è nulla in ogni punto \(c \in (a,b)\)
+
+\item {} 
+\sphinxAtStartPar
+i punti di massimo e di minimo sono interni all’intervallo. In questo caso, per il {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm-rolle}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema di Fermat}}}} i punti \(c\) di minimo o massimo verificano la condizione \(f'(c) = 0\).
+
+\end{itemize}
 \label{ch/infinitesimal_calculus/derivatives:theorem-2}
 \begin{sphinxadmonition}{note}{Theorem 8 (Teorema di Cauchy)}
 
 
 
 \sphinxAtStartPar
-Date le funzioni \(f, g: [a,b] \rightarrow \mathbb{R}\) continue e derivabili in ogni punto dell’intervallo \((a,b)\) con \(f(a) = f(b)\), allora esiste un valore \(c \in (a,b)\) tale che
+Date le funzioni \(f, g: [a,b] \rightarrow \mathbb{R}\) continue in \([a,b]\) e derivabili in \((a,b)\), allora esiste almeno un punto \(c \in (a,b)\) tale che
 \begin{equation*}
-\begin{split}f(b) - f(a) = (b -  a) f'(c) \ .\end{split}
+\begin{split}\left[ g(b) - g(a) \right] \, f'(c) = \left[ f(b) - f(a) \right] \, g'(c) \ .\end{split}
 \end{equation*}\end{sphinxadmonition}
 \subsubsection*{Dimostrazione}
 
 \sphinxAtStartPar
-\sphinxstylestrong{todo}
+Si applica il {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm-rolle}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema di Rolle}}}} alla funzione
+\begin{equation*}
+\begin{split}h(x) = \left[ g(b) - g(a) \right] \, f(x) - \left[ f(b) - f(a) \right] \, g(x)\end{split}
+\end{equation*}
+\sphinxAtStartPar
+continua in \([a,b]\), derivabile in \((a,b)\) e con \(h(a) = g(b) \, f(a) - f(b) \, g(a) = h(b)\).
 \label{ch/infinitesimal_calculus/derivatives:theorem-3}
 \begin{sphinxadmonition}{note}{Theorem 9 (Theorema di Lagrange)}
 
 
 
 \sphinxAtStartPar
-Date le funzioni \(f, g: [a,b] \rightarrow \mathbb{R}\) continue e derivabili in ogni punto dell’intervallo \((a,b)\) con \(f(a) = f(b)\), allora esiste un valore \(c \in (a,b)\) tale che
-\end{sphinxadmonition}
+Data la funzione \(f, g: [a,b] \rightarrow \mathbb{R}\) continua in \([a,b]\) e derivabile in \((a,b)\), allora esiste un valore \(c \in (a,b)\) tale che
+\begin{equation*}
+\begin{split}f(b) - f(a) = (b -  a) f'(c) \ .\end{split}
+\end{equation*}\end{sphinxadmonition}
 \subsubsection*{Dimostrazione}
 
 \sphinxAtStartPar
-\sphinxstylestrong{todo} Usando il teorema di Cauhcy con \(g(x) = x\).
+Si applica il {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm-lagrange}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema di Cauhcy}}}} scegliendo la funzione \(g(x) = x\).
 \label{ch/infinitesimal_calculus/derivatives:theorem-4}
-\begin{sphinxadmonition}{note}{Theorem 10 (Teorema di de l’Hopital (Bernoulli))}
+\begin{sphinxadmonition}{note}{Theorem 10 (Teorema di de l’Hopital )}
 
 
 
@@ -5638,12 +5655,12 @@ Siano \(f(x), g(x): [a,b] \rightarrow \mathbb{R}\) funzioni reali di variabile r
 \sphinxAtStartPar
 Se esiste
 \begin{equation*}
-\begin{split} \lim_{x \rightarrow x_0} \frac{f'(x)}{g'(x)} = L \quad \text{finito}\end{split}
+\begin{split} \lim_{x \rightarrow x_0} \frac{f'(x)}{g'(x)} = \ell \quad \text{finito}\end{split}
 \end{equation*}
 \sphinxAtStartPar
 allora
 \begin{equation*}
-\begin{split} \lim_{x \rightarrow x_0} \frac{f(x)}{g(x)} = L \ . \end{split}
+\begin{split} \lim_{x \rightarrow x_0} \frac{f(x)}{g(x)} = \ell \ . \end{split}
 \end{equation*}
 \sphinxAtStartPar
 \sphinxstylestrong{todo} Controllare l’enunciato
@@ -5651,7 +5668,10 @@ allora
 \subsubsection*{Dimostrazione}
 
 \sphinxAtStartPar
-\sphinxstylestrong{todo}
+\sphinxstylestrong{Forma indeterminata \(\frac{0}{0}\).} Usando il {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm-cauchy}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema di Cauchy}}}} e il {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm-rolle}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema di Rolle}}}}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Forma indeterminata \(\frac{\infty}{\infty}\).} Usando il {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm-cauchy}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema di Cauchy}}}} e il {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm-lagrange}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema di Lagrange}}}}
 
 \sphinxAtStartPar
 \sphinxstylestrong{Oss.} Il teorema di de l’Hopital può essere applicato anche in successione, più di una volta, fermandosi al primo rapporto di derivate dello stesso ordine che non produce una forma indeterminata.
@@ -5815,15 +5835,13 @@ La serie di MacLaurin per le funzioni interessate nei {\hyperref[\detokenize{ch/
 \sphinxstylestrong{Rivisitazione limiti notevoli}
 Per \(x \rightarrow 0\)
 \begin{equation*}
-\begin{split}(1+x)^a - 1 = a \, x + o(x)\end{split}
-\end{equation*}\begin{equation*}
-\begin{split}\sin x = x +o(x)\end{split}
-\end{equation*}\begin{equation*}
-\begin{split}1 - \cos x = \frac{1}{2} x^2 + o(x^3)\end{split}
-\end{equation*}\begin{equation*}
-\begin{split}e^x - 1 = x + o(x)\end{split}
-\end{equation*}\begin{equation*}
-\begin{split}\ln(1+x) = x + o(x)\end{split}
+\begin{split}\begin{aligned}
+  \sin x      & = x +o(x) \\
+  1 - \cos x  & = \frac{1}{2} x^2 + o(x^3) \\
+  e^x - 1     & = x + o(x) \\
+  \ln(1+x)    & = x + o(x) \\
+  (1+x)^a - 1 & = a \, x + o(x) \\
+\end{aligned}\end{split}
 \end{equation*}
 \sphinxAtStartPar
 \sphinxstylestrong{Identità di Eulero.} Usando l’espansione in serie di Taylor per l’esponenziale complesso \(e^{ix}\), si ottiene
@@ -7081,19 +7099,19 @@ basics
 \item\relax\sphinxstyleindexentry{integrals:thm:fund:reynolds}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{integrals:thm:fund:reynolds}}
 \indexspace
 \bigletter{theorem\sphinxhyphen{}0}
-\item\relax\sphinxstyleindexentry{theorem\sphinxhyphen{}0}\sphinxstyleindexextra{ch/infinitesimal\_calculus/analysis}\sphinxstyleindexpageref{ch/infinitesimal_calculus/analysis:\detokenize{theorem-0}}
+\item\relax\sphinxstyleindexentry{theorem\sphinxhyphen{}0}\sphinxstyleindexextra{ch/infinitesimal\_calculus/derivatives}\sphinxstyleindexpageref{ch/infinitesimal_calculus/derivatives:\detokenize{theorem-0}}
 \indexspace
 \bigletter{theorem\sphinxhyphen{}1}
-\item\relax\sphinxstyleindexentry{theorem\sphinxhyphen{}1}\sphinxstyleindexextra{ch/infinitesimal\_calculus/analysis}\sphinxstyleindexpageref{ch/infinitesimal_calculus/analysis:\detokenize{theorem-1}}
+\item\relax\sphinxstyleindexentry{theorem\sphinxhyphen{}1}\sphinxstyleindexextra{ch/infinitesimal\_calculus/derivatives}\sphinxstyleindexpageref{ch/infinitesimal_calculus/derivatives:\detokenize{theorem-1}}
 \indexspace
 \bigletter{theorem\sphinxhyphen{}2}
-\item\relax\sphinxstyleindexentry{theorem\sphinxhyphen{}2}\sphinxstyleindexextra{ch/infinitesimal\_calculus/analysis}\sphinxstyleindexpageref{ch/infinitesimal_calculus/analysis:\detokenize{theorem-2}}
+\item\relax\sphinxstyleindexentry{theorem\sphinxhyphen{}2}\sphinxstyleindexextra{ch/infinitesimal\_calculus/derivatives}\sphinxstyleindexpageref{ch/infinitesimal_calculus/derivatives:\detokenize{theorem-2}}
 \indexspace
 \bigletter{theorem\sphinxhyphen{}3}
-\item\relax\sphinxstyleindexentry{theorem\sphinxhyphen{}3}\sphinxstyleindexextra{ch/infinitesimal\_calculus/analysis}\sphinxstyleindexpageref{ch/infinitesimal_calculus/analysis:\detokenize{theorem-3}}
+\item\relax\sphinxstyleindexentry{theorem\sphinxhyphen{}3}\sphinxstyleindexextra{ch/infinitesimal\_calculus/derivatives}\sphinxstyleindexpageref{ch/infinitesimal_calculus/derivatives:\detokenize{theorem-3}}
 \indexspace
 \bigletter{theorem\sphinxhyphen{}4}
-\item\relax\sphinxstyleindexentry{theorem\sphinxhyphen{}4}\sphinxstyleindexextra{ch/infinitesimal\_calculus/analysis}\sphinxstyleindexpageref{ch/infinitesimal_calculus/analysis:\detokenize{theorem-4}}
+\item\relax\sphinxstyleindexentry{theorem\sphinxhyphen{}4}\sphinxstyleindexextra{ch/infinitesimal\_calculus/derivatives}\sphinxstyleindexpageref{ch/infinitesimal_calculus/derivatives:\detokenize{theorem-4}}
 \indexspace
 \bigletter{theorem\sphinxhyphen{}5}
 \item\relax\sphinxstyleindexentry{theorem\sphinxhyphen{}5}\sphinxstyleindexextra{ch/infinitesimal\_calculus/derivatives}\sphinxstyleindexpageref{ch/infinitesimal_calculus/derivatives:\detokenize{theorem-5}}
