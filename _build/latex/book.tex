@@ -6205,7 +6205,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-8 min read
+10 min read
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -6269,7 +6269,8 @@ Mentre le motivazioni date dovrebbero essere sufficienti a convincere dell’imp
 Si cercherà quindi di trattare l’argomento nella maniera più rigorosa possibile per fornire gli strumenti necessari per (semplici) applicazioni nelle quali compaiono le ODE, mentre si chiederà qualche atto di fede nell’accettare alcuni risultati. Per completezza, in corrispondenza di questi atti di fede, verrà messo a disposizione un collegamento a una trattazione più completa dell’argomento.
 
 \sphinxAtStartPar
-Vengono inizialmente fornite le {\hyperref[\detokenize{ch/ode:ode-hs-def}]{\sphinxcrossref{\DUrole{std,std-ref}{prime definizioni}}}}
+\sphinxstylestrong{Contenuti.}
+Il capitolo è diviso come segue: dopo aver fornito le {\hyperref[\detokenize{ch/ode:ode-hs-def}]{\sphinxcrossref{\DUrole{std,std-ref}{prime definizioni}}}}, si introduce una {\hyperref[\detokenize{ch/ode:ode-hs-types}]{\sphinxcrossref{\DUrole{std,std-ref}{classificazione}}}} delle equazioni differenziali ordinarie, prestando massima attenzione alle {\hyperref[\detokenize{ch/ode:ode-hs-types-linear-const}]{\sphinxcrossref{\DUrole{std,std-ref}{equazioni differenziali lineari a coefficienti costanti}}}}: per questo particolare tipo di ODE, è possibile trovare un metodo generale di soluzione. Dopo aver mostrato {\hyperref[\detokenize{ch/ode:ode-hs-types-linear-const-ex}]{\sphinxcrossref{\DUrole{std,std-ref}{alcuni esempi}}}}, viene presentato il {\hyperref[\detokenize{ch/ode:ode-hs-types-linear-const-sol}]{\sphinxcrossref{\DUrole{std,std-ref}{metodo di soluzione}}}}, e applicato successivamente alla {\hyperref[\detokenize{ch/ode:ode-hs-types-linear-const-ex-sol}]{\sphinxcrossref{\DUrole{std,std-ref}{risoluzione degli esempi}}}} dati: la soluzione degli esempi è pensata per fare pratica con la tecnica risolutiva e permette di indagare alcuni fenomeni fisici come quello della \sphinxstylestrong{risonanza} \sphinxstylestrong{todo} \sphinxstyleemphasis{aggiungere riferimento alla soluzione del sistema massa\sphinxhyphen{}molla\sphinxhyphen{}smorzatore}. Infine, viene presentata un’altra categoria di ODE, per la quale esiste \sphinxhyphen{} almeno formalmente \sphinxhyphen{} una tecnica risolutiva: la tecnica di separazione delle variabili per le {\hyperref[\detokenize{ch/ode:ode-hs-types-separable}]{\sphinxcrossref{\DUrole{std,std-ref}{equazioni differenziali a variabili separabili}}}}.
 
 
 \subsection{Prime definizioni}
@@ -6277,7 +6278,7 @@ Vengono inizialmente fornite le {\hyperref[\detokenize{ch/ode:ode-hs-def}]{\sphi
 \sphinxAtStartPar
 Un”\sphinxstylestrong{equazione differenziale ordinaria} è un’equazione che coinvolge una funzione reale, incognita, di una variabile reale e le sue derivate. Formalmente una ODE può essere scritta come
 \begin{equation*}
-\begin{split}F(y^{(n)}(x), \dots y'(x), y(x), x) = 0 \quad , \qquad x \in D = [x_0, x_1]\end{split}
+\begin{split}F\left(y^{(n)}(x), \dots y'(x), y(x), x \right) = 0 \quad , \qquad x \in D = [x_0, x_1]\end{split}
 \end{equation*}
 \sphinxAtStartPar
 Un problema differenziale \sphinxstylestrong{ben definito}, in generale è definito da una \sphinxstylestrong{ODE}, per valori della variabile indipendente \(x\) all’interno di un dominio dato, \(x \in D\), e da alcune \sphinxstylestrong{condizioni al contorno} del dominio che consentano di determinare una soluzione del problema senza arbitrarietà. Come regola generale, affinché un problema sia definito sono necessarie \(n\) condizioni sulla funzione incognita o sulle sue derivate. Si possono definire alcuni problemi:
@@ -6314,7 +6315,10 @@ Se la funzione \(f(x)\) è la funzione identicamente nulla \(f(x) \equiv 0\), l�
 
 
 \paragraph{Esempi}
-\label{\detokenize{ch/ode:esempi}}\label{\detokenize{ch/ode:ode-hs-types-linear-const-ex}}\subsubsection*{Temperatura di un corpo, soggetto a convezione}
+\label{\detokenize{ch/ode:esempi}}\label{\detokenize{ch/ode:ode-hs-types-linear-const-ex}}
+\sphinxAtStartPar
+In questa sezione vengono presentati alcuni esempi di equazioni differenziali ordinarie, ottenute partendo da alcune leggi della fisica. Successivamente nel capitolo verrà presentata la {\hyperref[\detokenize{ch/ode:ode-hs-types-linear-const-ex-sol}]{\sphinxcrossref{\DUrole{std,std-ref}{soluzione}}}} di alcuni problemi differenziali descritti in questi esempi.
+\subsubsection*{Temperatura di un corpo, soggetto a convezione}
 
 \sphinxAtStartPar
 \sphinxstylestrong{Temperatura di un corpo, soggetto a convezione.} L’equazione che governa l’evoluzione della temperatura \(T(t)\) di un sistema, sufficientemente piccolo da poter essere considerato a temperatura uniforme nello spazio, soggetto alla trasmissione del calore per convezione sulla sua superficie in un ambiente a temperatura \(T^e(t)\) nota è l’equazione differenziale ordinaria del primo ordine,
@@ -6497,6 +6501,58 @@ Se il polinomio ha \sphinxstylestrong{zeri multipli}, le soluzioni esponenziali 
 \end{itemize}
 
 
+
+\sphinxAtStartPar
+Un’equazione differenziale lineare a coefficienti costanti omogenea può essere riscritta come
+\begin{equation*}
+\begin{split}\begin{aligned}
+  0 & = a_n y^{(n)}(x) + \dots a_1 y'(x) + a_0 y(x) = \\
+    & = a_n \left( - s_1 + \frac{d}{dx} \right) \dots \left( - s_n + \frac{d}{dx} \right) y(x) \ ,
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+dove i fattori possono essere commutabili, per la linearità. Nel caso di radici non multiple, l’unico modo affinché l’equazione sia soddisfatta è che l’azione di uno degli \sphinxstyleemphasis{operatori} \(\left( - s_k + \frac{d}{dx} \right)\) su \(y(x)\) dia risultato nullo, cioè
+\begin{equation*}
+\begin{split}0 = \left(  - s_k + \frac{d}{dx} \right) y(x) = - s_k \, y(x) + y'(x) \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Nel caso in cui una radice sia multipla e abbia molteplicità \(p\), le \(p\) soluzioni indipendenti associate a questa radice sono quelle per le quali
+\begin{equation*}
+\begin{split}0 = \left(  - s_k + \frac{d}{dx} \right)^p y(x) \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Così, ad esempio, per \(p=2\),
+\begin{equation*}
+\begin{split}0 = \left( - s + \frac{d}{dx} \right) \left( -s + \frac{d}{dx} \right) y(x) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+la funzione \(y(x)\) deve essere tale da soddisfare una delle due condizioni
+\begin{equation*}
+\begin{split}\begin{aligned}
+  - s y(x) + y'(x) & = 0 \\
+  - s y(x) + y'(x) & = A \, e^{s x} \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+La prima condizione ha una soluzione generale
+\begin{equation*}
+\begin{split}- s y(x) + y'(x) = 0 \qquad \rightarrow \qquad y(t) = C e^{s x}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+mentre la seconda condizione permette di trovare la soluzione desiderata come combinazione lineare delle \(p=2\) desiderate,
+\begin{equation*}
+\begin{split}\begin{aligned}
+  - s y(x) + y'(x) & = A \, e^{sx}  \\
+  e^{-sx} \left( - s y(x) + y'(x) \right) & = A  \\
+  \dfrac{d}{dx} \left( e^{-sx} \, y(x) \right) & = A  \\
+  \int \frac{d}{dx} \left( e^{-sx} y(x) \right) & = A \, x + B \\
+   e^{-sx} y(x) & = A \, x + C \qquad \rightarrow \qquad  y(x) = A \, x \, e^{sx} + B \, e^{sx}  \ ,
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+avendo inizialmente moltiplicato entrambi lati dell’equazione per il termine mai nullo \(e^{sx} \ne 0\), successivamente riconoscito con la formula del prodotto la derivata \(\frac{d}{dx}\left( e^{-s x} y(x) \right) = - s e^{sx} y(x) + s^{sx} y'(x)\), e integrato ricordandosi delle costanti di integrazione necessarie a ottenere l’espressione più generale possibile, senza perdere pezzi in giro.
+
+
 \subparagraph{Soluzione particolare dell’equazione completa}
 \label{\detokenize{ch/ode:soluzione-particolare-dell-equazione-completa}}\label{\detokenize{ch/ode:ode-hs-types-linear-const-sol-part}}
 \sphinxAtStartPar
@@ -6521,7 +6577,10 @@ Nel caso in cui la soluzione particolare abbia la forma di una delle soluzioni d
 
 
 \paragraph{Soluzione degli esempi}
-\label{\detokenize{ch/ode:soluzione-degli-esempi}}\label{\detokenize{ch/ode:ode-hs-types-linear-const-ex-sol}}\subsubsection*{Esempio \sphinxhyphen{} Temperatura di un corpo, soggetto a convezione.}
+\label{\detokenize{ch/ode:soluzione-degli-esempi}}\label{\detokenize{ch/ode:ode-hs-types-linear-const-ex-sol}}
+\sphinxAtStartPar
+In questa sezione vengono risolti alcuni problemi governati dalle equazioni differenziali presentate in precedenza come {\hyperref[\detokenize{ch/ode:ode-hs-types-linear-const-ex}]{\sphinxcrossref{\DUrole{std,std-ref}{esempi}}}} di equazioni differenziali ordinarie lineari a coefficienti costanti, applicando il {\hyperref[\detokenize{ch/ode:ode-hs-types-linear-const-sol}]{\sphinxcrossref{\DUrole{std,std-ref}{metodo di soluzione generale}}}} per questo tipo di equazioni.
+\subsubsection*{Esempio \sphinxhyphen{} Temperatura di un corpo, soggetto a convezione.}
 \subsubsection*{Esempio \sphinxhyphen{} Sistema massa\sphinxhyphen{}molla\sphinxhyphen{}smorzatore}
 \subsubsection*{Esempio \sphinxhyphen{} Circuito RLC. \sphinxstylestrong{todo}}
 \subsubsection*{Esempio \sphinxhyphen{} Caduta di un grave \sphinxhyphen{} 1: senza resistenza}
@@ -6533,8 +6592,8 @@ Nel caso in cui la soluzione particolare abbia la forma di una delle soluzioni d
 \subsubsection*{Esempio \sphinxhyphen{} Deformazione a flessione di una trave}
 
 
-\subsubsection{Equazioni separabili: tecnica di soluzione di separazione delle variabili}
-\label{\detokenize{ch/ode:equazioni-separabili-tecnica-di-soluzione-di-separazione-delle-variabili}}\label{\detokenize{ch/ode:ode-hs-types-separable}}\begin{equation*}
+\subsubsection{Equazioni differenziali a variabili separabili: tecnica di soluzione di separazione delle variabili}
+\label{\detokenize{ch/ode:equazioni-differenziali-a-variabili-separabili-tecnica-di-soluzione-di-separazione-delle-variabili}}\label{\detokenize{ch/ode:ode-hs-types-separable}}\begin{equation*}
 \begin{split}\frac{d y}{d x} = f(y(x)) \ g(x) \end{split}
 \end{equation*}
 \sphinxAtStartPar

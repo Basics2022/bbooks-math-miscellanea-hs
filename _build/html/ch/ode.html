@@ -496,7 +496,7 @@ document.write(`
 <p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-calendar" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path></svg></span>12 nov 2024</p>
 </div>
 <div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
-<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>9 min read</p>
+<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>10 min read</p>
 </div>
 </div>
 </div>
@@ -517,12 +517,13 @@ document.write(`
 <p><strong>Approccio.</strong>
 Mentre le motivazioni date dovrebbero essere sufficienti a convincere dell’importanza e della necessità di un’introduzione alle ODE, una trattazione completa dell’argomento richiede strumenti matematici più avanzati di quelli disponibili a uno studente delle scuole superiori (e spesso anche di molti studenti universitari).
 Si cercherà quindi di trattare l’argomento nella maniera più rigorosa possibile per fornire gli strumenti necessari per (semplici) applicazioni nelle quali compaiono le ODE, mentre si chiederà qualche atto di fede nell’accettare alcuni risultati. <span style="color:red">Per completezza, in corrispondenza di questi atti di fede, verrà messo a disposizione un collegamento a una trattazione più completa dell’argomento.</span></p>
-<p>Il capitolo è diviso come segue: dopo aver fornito le <a class="reference internal" href="#ode-hs-def"><span class="std std-ref">prime definizioni</span></a>, si introduce una <span class="xref myst">classificazione</span> delle equazioni differenziali ordinarie, prestando massima attenzione alle <a class="reference internal" href="#ode-hs-types-linear-const"><span class="std std-ref">equazioni differenziali lineari a coefficienti costanti</span></a>: per questo particolare tipo di ODE, è possibile trovare un metodo generale di soluzione. Dopo aver mostrato <a class="reference internal" href="#ode-hs-types-linear-const-ex"><span class="std std-ref">alcuni esempi</span></a>, viene presentato il <a class="reference internal" href="#ode-hs-types-linear-const-sol"><span class="std std-ref">metodo di soluzione</span></a>, e applicato successivamente alla <a class="reference internal" href="#ode-hs-types-linear-const-ex-sol"><span class="std std-ref">risoluzione degli esempi</span></a> dati: la soluzione degli esempi è pensata per fare pratica con la tecnica risolutiva e permette di indagare alcuni fenomeni fisici come quello della <strong>risonanza</strong> <strong>todo</strong> <em>aggiungere riferimento alla soluzione del sistema massa-molla-smorzatore</em>. Infine, viene presentata un’altra categoria di ODE, per la quale esiste - almeno formalmente - una tecnica risolutiva: la tecnica di separazione delle variabili per le <a class="reference internal" href="#ode-hs-types-separable"><span class="std std-ref">equazioni differenziali a variabili separabili</span></a>.</p>
+<p><strong>Contenuti.</strong>
+Il capitolo è diviso come segue: dopo aver fornito le <a class="reference internal" href="#ode-hs-def"><span class="std std-ref">prime definizioni</span></a>, si introduce una <a class="reference internal" href="#ode-hs-types"><span class="std std-ref">classificazione</span></a> delle equazioni differenziali ordinarie, prestando massima attenzione alle <a class="reference internal" href="#ode-hs-types-linear-const"><span class="std std-ref">equazioni differenziali lineari a coefficienti costanti</span></a>: per questo particolare tipo di ODE, è possibile trovare un metodo generale di soluzione. Dopo aver mostrato <a class="reference internal" href="#ode-hs-types-linear-const-ex"><span class="std std-ref">alcuni esempi</span></a>, viene presentato il <a class="reference internal" href="#ode-hs-types-linear-const-sol"><span class="std std-ref">metodo di soluzione</span></a>, e applicato successivamente alla <a class="reference internal" href="#ode-hs-types-linear-const-ex-sol"><span class="std std-ref">risoluzione degli esempi</span></a> dati: la soluzione degli esempi è pensata per fare pratica con la tecnica risolutiva e permette di indagare alcuni fenomeni fisici come quello della <strong>risonanza</strong> <strong>todo</strong> <em>aggiungere riferimento alla soluzione del sistema massa-molla-smorzatore</em>. Infine, viene presentata un’altra categoria di ODE, per la quale esiste - almeno formalmente - una tecnica risolutiva: la tecnica di separazione delle variabili per le <a class="reference internal" href="#ode-hs-types-separable"><span class="std std-ref">equazioni differenziali a variabili separabili</span></a>.</p>
 <div class="section" id="prime-definizioni">
 <span id="ode-hs-def"></span><h2>Prime definizioni<a class="headerlink" href="#prime-definizioni" title="Permalink to this heading">#</a></h2>
 <p>Un”<strong>equazione differenziale ordinaria</strong> è un’equazione che coinvolge una funzione reale, incognita, di una variabile reale e le sue derivate. Formalmente una ODE può essere scritta come</p>
 <div class="math notranslate nohighlight">
-\[F(y^{(n)}(x), \dots y'(x), y(x), x) = 0 \quad , \qquad x \in D = [x_0, x_1]\]</div>
+\[F\left(y^{(n)}(x), \dots y'(x), y(x), x \right) = 0 \quad , \qquad x \in D = [x_0, x_1]\]</div>
 <p>Un problema differenziale <strong>ben definito</strong>, in generale è definito da una <strong>ODE</strong>, per valori della variabile indipendente <span class="math notranslate nohighlight">\(x\)</span> all’interno di un dominio dato, <span class="math notranslate nohighlight">\(x \in D\)</span>, e da alcune <strong>condizioni al contorno</strong> del dominio che consentano di determinare una soluzione del problema senza arbitrarietà. Come regola generale, affinché un problema sia definito sono necessarie <span class="math notranslate nohighlight">\(n\)</span> condizioni sulla funzione incognita o sulle sue derivate. Si possono definire alcuni problemi:</p>
 <ul class="simple">
 <li><p>problemi differenziali <strong>ai valori iniziali</strong> (o di <strong>Cauchy</strong>), se le <span class="math notranslate nohighlight">\(n\)</span> condizioni coinvolgono il valore della funzione e delle sue prime <span class="math notranslate nohighlight">\(n-1\)</span> derivate all’estremo inferiore del dominio; un esempio tipico di problemi di Cauchy sono i problemi diretti in meccanica classica, dove l’evoluzione di un sistema è governata da equazioni differenziali del secondo ordine nella posizione, e può essere determinata dalle forze agenti su di esso, una volta nota la posizione (valore della funzione incognita) e della velocità (valore della derivata prima della funzione incognita) all’istante iniziale dell’intervallo di interesse</p></li>
@@ -543,6 +544,7 @@ Si cercherà quindi di trattare l’argomento nella maniera più rigorosa possib
 </div>
 <div class="section" id="esempi">
 <span id="ode-hs-types-linear-const-ex"></span><h4>Esempi<a class="headerlink" href="#esempi" title="Permalink to this heading">#</a></h4>
+<p>In questa sezione vengono presentati alcuni esempi di equazioni differenziali ordinarie, ottenute partendo da alcune leggi della fisica. Successivamente nel capitolo verrà presentata la <a class="reference internal" href="#ode-hs-types-linear-const-ex-sol"><span class="std std-ref">soluzione</span></a> di alcuni problemi differenziali descritti in questi esempi.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Temperatura di un corpo, soggetto a convezione<div class="sd-summary-down docutils">
@@ -731,7 +733,52 @@ Deformazione a flessione di una trave<div class="sd-summary-down docutils">
 \[e^{s_p x} \ , \quad x \, e^{s_p x} \ , \quad \dots \ , \quad x^{p-1} \, e^{s_p x} \ .\]</div>
 </li>
 </ul>
+<!--
+**todo** *Trattare il caso con radici multiple. Anche se non è una dimostrazione, dare una giustificazione della forma delle soluzioni indipendenti*
+-->
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
+<summary class="sd-summary-title sd-card-header">
+Radici multiple - «Dimostrazione»<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Un’equazione differenziale lineare a coefficienti costanti omogenea può essere riscritta come</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  0 &amp; = a_n y^{(n)}(x) + \dots a_1 y'(x) + a_0 y(x) = \\
+    &amp; = a_n \left( - s_1 + \frac{d}{dx} \right) \dots \left( - s_n + \frac{d}{dx} \right) y(x) \ ,
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">dove i fattori possono essere commutabili, per la linearità. Nel caso di radici non multiple, l’unico modo affinché l’equazione sia soddisfatta è che l’azione di uno degli <em>operatori</em> <span class="math notranslate nohighlight">\(\left( - s_k + \frac{d}{dx} \right)\)</span> su <span class="math notranslate nohighlight">\(y(x)\)</span> dia risultato nullo, cioè</p>
+<div class="math notranslate nohighlight">
+\[0 = \left(  - s_k + \frac{d}{dx} \right) y(x) = - s_k \, y(x) + y'(x) \ .\]</div>
+<p class="sd-card-text">Nel caso in cui una radice sia multipla e abbia molteplicità <span class="math notranslate nohighlight">\(p\)</span>, le <span class="math notranslate nohighlight">\(p\)</span> soluzioni indipendenti associate a questa radice sono quelle per le quali</p>
+<div class="math notranslate nohighlight">
+\[0 = \left(  - s_k + \frac{d}{dx} \right)^p y(x) \ .\]</div>
+<p class="sd-card-text"><strong>Esempio con <span class="math notranslate nohighlight">\(p=2\)</span></strong>. Ad esempio esiste una radice <span class="math notranslate nohighlight">\(s\)</span> con molteplicità <span class="math notranslate nohighlight">\(p=2\)</span> i due «binomi» relativi a questa radice producono l’equazione differenziale,</p>
+<div class="math notranslate nohighlight">
+\[0 = \left( - s + \frac{d}{dx} \right) \left( -s + \frac{d}{dx} \right) y(x) \ .\]</div>
+<p class="sd-card-text">Affinché questa equazione sia soddisfatta, la funzione <span class="math notranslate nohighlight">\(y(x)\)</span> deve essere tale da soddisfare una delle due condizioni</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  - s y(x) + y'(x) &amp; = 0 \\
+  - s y(x) + y'(x) &amp; = A \, e^{s x} \\
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">La prima condizione ha una soluzione generale</p>
+<div class="math notranslate nohighlight">
+\[- s y(x) + y'(x) = 0 \qquad \rightarrow \qquad y(t) = C e^{s x}\]</div>
+<p class="sd-card-text">mentre la seconda condizione permette di trovare la soluzione desiderata come combinazione lineare delle <span class="math notranslate nohighlight">\(p=2\)</span> desiderate,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  - s y(x) + y'(x) &amp; = A \, e^{sx}  \\
+  e^{-sx} \left( - s y(x) + y'(x) \right) &amp; = A  \\
+  \dfrac{d}{dx} \left( e^{-sx} \, y(x) \right) &amp; = A  \\
+  \int \frac{d}{dx} \left( e^{-sx} y(x) \right) &amp; = A \, x + B \\
+   e^{-sx} y(x) &amp; = A \, x + C \qquad \rightarrow \qquad  y(x) = A \, x \, e^{sx} + B \, e^{sx}  \ ,
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">avendo inizialmente moltiplicato entrambi lati dell’equazione per il termine mai nullo <span class="math notranslate nohighlight">\(e^{sx} \ne 0\)</span>, successivamente riconoscito con la formula del prodotto la derivata <span class="math notranslate nohighlight">\(\frac{d}{dx}\left( e^{-s x} y(x) \right) = - s e^{sx} y(x) + s^{sx} y'(x)\)</span>, e integrato ricordandosi delle costanti di integrazione necessarie a ottenere l’espressione più generale possibile, senza perdere pezzi in giro.</p>
 </div>
+</details></div>
 <div class="section" id="soluzione-particolare-dell-equazione-completa">
 <span id="ode-hs-types-linear-const-sol-part"></span><h5>Soluzione particolare dell’equazione completa<a class="headerlink" href="#soluzione-particolare-dell-equazione-completa" title="Permalink to this heading">#</a></h5>
 <p>Come regola generale, la ricerca della soluzione particolare dell’equazione completa è guidata dall’espressione della forzante. Ad esempio:</p>
@@ -745,6 +792,7 @@ Deformazione a flessione di una trave<div class="sd-summary-down docutils">
 </div>
 <div class="section" id="soluzione-degli-esempi">
 <span id="ode-hs-types-linear-const-ex-sol"></span><h4>Soluzione degli esempi<a class="headerlink" href="#soluzione-degli-esempi" title="Permalink to this heading">#</a></h4>
+<p>In questa sezione vengono risolti alcuni problemi governati dalle equazioni differenziali presentate in precedenza come <a class="reference internal" href="#ode-hs-types-linear-const-ex"><span class="std std-ref">esempi</span></a> di equazioni differenziali ordinarie lineari a coefficienti costanti, applicando il <a class="reference internal" href="#ode-hs-types-linear-const-sol"><span class="std std-ref">metodo di soluzione generale</span></a> per questo tipo di equazioni.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Esempio - Temperatura di un corpo, soggetto a convezione.<div class="sd-summary-down docutils">

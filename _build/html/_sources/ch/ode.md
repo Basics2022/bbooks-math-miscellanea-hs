@@ -21,13 +21,14 @@ e in generale, in tutti le equazioni che governano processi in cui il valore di 
 Mentre le motivazioni date dovrebbero essere sufficienti a convincere dell'importanza e della necessità di un'introduzione alle ODE, una trattazione completa dell'argomento richiede strumenti matematici più avanzati di quelli disponibili a uno studente delle scuole superiori (e spesso anche di molti studenti universitari).
 Si cercherà quindi di trattare l'argomento nella maniera più rigorosa possibile per fornire gli strumenti necessari per (semplici) applicazioni nelle quali compaiono le ODE, mentre si chiederà qualche atto di fede nell'accettare alcuni risultati. <span style="color:red">Per completezza, in corrispondenza di questi atti di fede, verrà messo a disposizione un collegamento a una trattazione più completa dell'argomento.</span>
 
-Il capitolo è diviso come segue: dopo aver fornito le [prime definizioni](ode-hs:def), si introduce una [classificazione](ode-hs:class) delle equazioni differenziali ordinarie, prestando massima attenzione alle [equazioni differenziali lineari a coefficienti costanti](ode-hs:types:linear-const): per questo particolare tipo di ODE, è possibile trovare un metodo generale di soluzione. Dopo aver mostrato [alcuni esempi](ode-hs:types:linear-const:ex), viene presentato il [metodo di soluzione](ode-hs:types:linear-const:sol), e applicato successivamente alla [risoluzione degli esempi](ode-hs:types:linear-const:ex-sol) dati: la soluzione degli esempi è pensata per fare pratica con la tecnica risolutiva e permette di indagare alcuni fenomeni fisici come quello della **risonanza** **todo** *aggiungere riferimento alla soluzione del sistema massa-molla-smorzatore*. Infine, viene presentata un'altra categoria di ODE, per la quale esiste - almeno formalmente - una tecnica risolutiva: la tecnica di separazione delle variabili per le [equazioni differenziali a variabili separabili](ode-hs:types:separable).
+**Contenuti.**
+Il capitolo è diviso come segue: dopo aver fornito le [prime definizioni](ode-hs:def), si introduce una [classificazione](ode-hs:types) delle equazioni differenziali ordinarie, prestando massima attenzione alle [equazioni differenziali lineari a coefficienti costanti](ode-hs:types:linear-const): per questo particolare tipo di ODE, è possibile trovare un metodo generale di soluzione. Dopo aver mostrato [alcuni esempi](ode-hs:types:linear-const:ex), viene presentato il [metodo di soluzione](ode-hs:types:linear-const:sol), e applicato successivamente alla [risoluzione degli esempi](ode-hs:types:linear-const:ex-sol) dati: la soluzione degli esempi è pensata per fare pratica con la tecnica risolutiva e permette di indagare alcuni fenomeni fisici come quello della **risonanza** **todo** *aggiungere riferimento alla soluzione del sistema massa-molla-smorzatore*. Infine, viene presentata un'altra categoria di ODE, per la quale esiste - almeno formalmente - una tecnica risolutiva: la tecnica di separazione delle variabili per le [equazioni differenziali a variabili separabili](ode-hs:types:separable).
 
 (ode-hs:def)=
 ## Prime definizioni
 Un'**equazione differenziale ordinaria** è un'equazione che coinvolge una funzione reale, incognita, di una variabile reale e le sue derivate. Formalmente una ODE può essere scritta come
 
-$$F(y^{(n)}(x), \dots y'(x), y(x), x) = 0 \quad , \qquad x \in D = [x_0, x_1]$$
+$$F\left(y^{(n)}(x), \dots y'(x), y(x), x \right) = 0 \quad , \qquad x \in D = [x_0, x_1]$$
 
 Un problema differenziale **ben definito**, in generale è definito da una **ODE**, per valori della variabile indipendente $x$ all'interno di un dominio dato, $x \in D$, e da alcune **condizioni al contorno** del dominio che consentano di determinare una soluzione del problema senza arbitrarietà. Come regola generale, affinché un problema sia definito sono necessarie $n$ condizioni sulla funzione incognita o sulle sue derivate. Si possono definire alcuni problemi:
 - problemi differenziali **ai valori iniziali** (o di **Cauchy**), se le $n$ condizioni coinvolgono il valore della funzione e delle sue prime $n-1$ derivate all'estremo inferiore del dominio; un esempio tipico di problemi di Cauchy sono i problemi diretti in meccanica classica, dove l'evoluzione di un sistema è governata da equazioni differenziali del secondo ordine nella posizione, e può essere determinata dalle forze agenti su di esso, una volta nota la posizione (valore della funzione incognita) e della velocità (valore della derivata prima della funzione incognita) all'istante iniziale dell'intervallo di interesse
@@ -51,6 +52,7 @@ Se la funzione $f(x)$ è la funzione identicamente nulla $f(x) \equiv 0$, l'equa
 
 (ode-hs:types:linear-const:ex)=
 #### Esempi
+In questa sezione vengono presentati alcuni esempi di equazioni differenziali ordinarie, ottenute partendo da alcune leggi della fisica. Successivamente nel capitolo verrà presentata la [soluzione](ode-hs:types:linear-const:ex-sol) di alcuni problemi differenziali descritti in questi esempi.
 
 ```{dropdown} Temperatura di un corpo, soggetto a convezione
 **Temperatura di un corpo, soggetto a convezione.** L'equazione che governa l'evoluzione della temperatura $T(t)$ di un sistema, sufficientemente piccolo da poter essere considerato a temperatura uniforme nello spazio, soggetto alla trasmissione del calore per convezione sulla sua superficie in un ambiente a temperatura $T^e(t)$ nota è l'equazione differenziale ordinaria del primo ordine,
@@ -207,6 +209,56 @@ poiché la funzione esponenziale non è mai nulla. Il [teorema fondamentale dell
 
   $$e^{s_p x} \ , \quad x \, e^{s_p x} \ , \quad \dots \ , \quad x^{p-1} \, e^{s_p x} \ .$$
 
+<!--
+**todo** *Trattare il caso con radici multiple. Anche se non è una dimostrazione, dare una giustificazione della forma delle soluzioni indipendenti*
+-->
+
+```{dropdown} Radici multiple - "Dimostrazione"
+:open:
+
+Un'equazione differenziale lineare a coefficienti costanti omogenea può essere riscritta come
+
+$$\begin{aligned}
+  0 & = a_n y^{(n)}(x) + \dots a_1 y'(x) + a_0 y(x) = \\
+    & = a_n \left( - s_1 + \frac{d}{dx} \right) \dots \left( - s_n + \frac{d}{dx} \right) y(x) \ ,
+\end{aligned}$$
+
+dove i fattori possono essere commutabili, per la linearità. Nel caso di radici non multiple, l'unico modo affinché l'equazione sia soddisfatta è che l'azione di uno degli *operatori* $\left( - s_k + \frac{d}{dx} \right)$ su $y(x)$ dia risultato nullo, cioè
+
+$$0 = \left(  - s_k + \frac{d}{dx} \right) y(x) = - s_k \, y(x) + y'(x) \ .$$
+
+Nel caso in cui una radice sia multipla e abbia molteplicità $p$, le $p$ soluzioni indipendenti associate a questa radice sono quelle per le quali
+
+$$0 = \left(  - s_k + \frac{d}{dx} \right)^p y(x) \ .$$
+
+**Esempio con $p=2$**. Ad esempio esiste una radice $s$ con molteplicità $p=2$ i due "binomi" relativi a questa radice producono l'equazione differenziale,
+
+$$0 = \left( - s + \frac{d}{dx} \right) \left( -s + \frac{d}{dx} \right) y(x) \ .$$
+
+Affinché questa equazione sia soddisfatta, la funzione $y(x)$ deve essere tale da soddisfare una delle due condizioni
+
+$$\begin{aligned}
+  - s y(x) + y'(x) & = 0 \\
+  - s y(x) + y'(x) & = A \, e^{s x} \\
+\end{aligned}$$
+
+La prima condizione ha una soluzione generale
+
+$$- s y(x) + y'(x) = 0 \qquad \rightarrow \qquad y(t) = C e^{s x}$$
+
+mentre la seconda condizione permette di trovare la soluzione desiderata come combinazione lineare delle $p=2$ desiderate,
+
+$$\begin{aligned}
+  - s y(x) + y'(x) & = A \, e^{sx}  \\
+  e^{-sx} \left( - s y(x) + y'(x) \right) & = A  \\
+  \dfrac{d}{dx} \left( e^{-sx} \, y(x) \right) & = A  \\
+  \int \frac{d}{dx} \left( e^{-sx} y(x) \right) & = A \, x + B \\
+   e^{-sx} y(x) & = A \, x + C \qquad \rightarrow \qquad  y(x) = A \, x \, e^{sx} + B \, e^{sx}  \ ,
+\end{aligned}$$
+
+avendo inizialmente moltiplicato entrambi lati dell'equazione per il termine mai nullo $e^{sx} \ne 0$, successivamente riconoscito con la formula del prodotto la derivata $\frac{d}{dx}\left( e^{-s x} y(x) \right) = - s e^{sx} y(x) + s^{sx} y'(x)$, e integrato ricordandosi delle costanti di integrazione necessarie a ottenere l'espressione più generale possibile, senza perdere pezzi in giro.
+```
+
 (ode-hs:types:linear-const:sol:part)=
 ##### Soluzione particolare dell'equazione completa
 
@@ -223,6 +275,7 @@ Nel caso in cui la soluzione particolare abbia la forma di una delle soluzioni d
 
 (ode-hs:types:linear-const:ex-sol)=
 #### Soluzione degli esempi
+In questa sezione vengono risolti alcuni problemi governati dalle equazioni differenziali presentate in precedenza come [esempi](ode-hs:types:linear-const:ex) di equazioni differenziali ordinarie lineari a coefficienti costanti, applicando il [metodo di soluzione generale](ode-hs:types:linear-const:sol) per questo tipo di equazioni.
 
 ```{dropdown} Esempio - Temperatura di un corpo, soggetto a convezione.
 ```
