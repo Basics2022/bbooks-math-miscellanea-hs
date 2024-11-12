@@ -257,6 +257,9 @@ $$\begin{aligned}
 \end{aligned}$$
 
 avendo inizialmente moltiplicato entrambi lati dell'equazione per il termine mai nullo $e^{sx} \ne 0$, successivamente riconoscito con la formula del prodotto la derivata $\frac{d}{dx}\left( e^{-s x} y(x) \right) = - s e^{sx} y(x) + s^{sx} y'(x)$, e integrato ricordandosi delle costanti di integrazione necessarie a ottenere l'espressione più generale possibile, senza perdere pezzi in giro.
+
+**Molteplicità $p$.** Il caso di radici mulitple con molteplicità generale può essere ricavato ricorsivamente, seguendo quanto fatto per il caso $p=2$. Questa dimostrazione viene lasciata come esercizio. 
+
 ```
 
 (ode-hs:types:linear-const:sol:part)=
