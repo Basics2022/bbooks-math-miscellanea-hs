@@ -104,70 +104,7 @@
 
 
 \sphinxAtStartPar
-Questo libro fa parte del materiale pensato per \sphinxhref{https://basics2022.github.io/bbooks-hs}{le scuole superiori}. E” disponibile la \sphinxhref{https://www.github.com/Basics2022/bbooks-math-miscellanea-hs/blob/master/\_build/latex/book.pdf}{versione in .pdf} scaricabile.
-
-\sphinxAtStartPar
-\sphinxstylestrong{Obiettivi.} \sphinxstylestrong{todo}
-
-\sphinxAtStartPar
-\sphinxstylestrong{Contenuti.}
-\subsubsection*{Algebra}
-
-
-\subsubsection*{Numeri reali}
-\subsubsection*{Numeri complessi}
-\subsubsection*{Vettori}
-\subsubsection*{Geometria analitica}
-
-
-\subsubsection*{Geometrica analitica nel piano \protect\(E^2\protect\)}
-\subsubsection*{Geometrica analitica nello spazio \protect\(E^3\protect\)}
-\subsubsection*{Pre\sphinxhyphen{}calcolo}
-
-
-\subsubsection*{Serie e successioni}
-\subsubsection*{Funzioni notevoli}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-Funzioni trigonometriche
-
-\item {} 
-\sphinxAtStartPar
-Esponenziale e logaritmo
-
-\item {} 
-\sphinxAtStartPar
-Funzioni iperboliche
-
-\end{itemize}
-\subsubsection*{Calcolo}
-
-
-\subsubsection*{Reale, \protect\( f: D \subset \mathbb{R} \rightarrow \mathbb{R}\protect\)}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-Limiti
-
-\item {} 
-\sphinxAtStartPar
-Derivate
-
-\item {} 
-\sphinxAtStartPar
-Integrali
-
-\item {} 
-\sphinxAtStartPar
-Equazioni differenziali
-
-\end{itemize}
-\subsubsection*{Reale multi\sphinxhyphen{}variabile, \$\$}
-\subsubsection*{Vettoriale in spazi euclidei, \protect\( f: D \subset E^n \rightarrow V\protect\)}
-\subsubsection*{Statistica}
-
-
+Questo libro fa parte del materiale pensato per \sphinxhref{https://basics2022.github.io/bbooks-hs}{le scuole superiori}. “E disponibile la \sphinxhref{https://www.github.com/Basics2022/bbooks-math-miscellanea-hs/blob/master/\_build/latex/book.pdf}{versione in .pdf} scaricabile.
 
 
 
@@ -801,8 +738,8 @@ basics
 \end{sphinxuseclass}
 \end{sphinxuseclass}
 
-\section{Algebra lineare}
-\label{\detokenize{ch/linear_algebra:algebra-lineare}}\label{\detokenize{ch/linear_algebra:linear-algebra-high-school}}\label{\detokenize{ch/linear_algebra::doc}}
+\chapter{Algebra matriciale}
+\label{\detokenize{ch/algebra/matrix-algebra:algebra-matriciale}}\label{\detokenize{ch/algebra/matrix-algebra:math-hs-algebra-matrix}}\label{\detokenize{ch/algebra/matrix-algebra::doc}}
 \sphinxstepscope
 
 \begin{sphinxuseclass}{sd-container-fluid}
@@ -3839,7 +3776,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-0 min read
+1 min read
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3870,14 +3807,76 @@ basics
 
 \chapter{Polinomi}
 \label{\detokenize{ch/precalculus/polynomials:polinomi}}\label{\detokenize{ch/precalculus/polynomials:math-hs-precalculus-polynomials}}\label{\detokenize{ch/precalculus/polynomials::doc}}
+
+\section{Fattorizzazione}
+\label{\detokenize{ch/precalculus/polynomials:fattorizzazione}}
 \sphinxAtStartPar
-…
+\sphinxstylestrong{todo} \sphinxstyleemphasis{Fare esempi di applicazione del teorema fondamentale dell’algebra, come soluzione delle ODE lineari omogenee a coffficienti costanti}
+
+
+\subsection{Teorema fondamentale dell’algebra}
+\label{\detokenize{ch/precalculus/polynomials:teorema-fondamentale-dell-algebra}}
+\sphinxAtStartPar
+Il teorema fondamentale dell’algebra afferma che ogni polinomio in una variabile complessa \(z \in \mathbb{C}\) a coefficienti complessi,
+\begin{equation*}
+\begin{split}p_n(z) = a_n z^n + \dots a_1 z + a_0 \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+ammette almeno una radice complessa, o zero. Di conseguenza, lo stesso polinomio di grado \(n\) ammette \(n\) zeri complessi e può essere fattorizzato come prodotto di monomi
+\begin{equation*}
+\begin{split}p_n(z) = a_n ( z - z_1 ) \dots ( z - z_n ) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+essendo \(z_k\), \(k=1:n\), gli zeri del polinomio.
+
+
+\subsection{In campo reale}
+\label{\detokenize{ch/precalculus/polynomials:in-campo-reale}}
+\sphinxAtStartPar
+Ogni polinomio \(p_n(x)\) a coefficienti reali può essere fattorizzato nel prodotto di binomi e trinomi a coefficienti reali,
+\begin{equation*}
+\begin{split}\begin{aligned}
+  p_n(x) & = a_n x^n + a_{n-1} x^{n-1} + \dots a_1 x + a_0 = \\
+         & =a_n ( x - z_1 ) \dots ( x - z_p ) ( x^2 + b_1 x + c_1 ) \dots ( x^2 + b_q x + c_q )
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+con \(p + 2q = n\).
+
+
+\subsection{In campo complesso}
+\label{\detokenize{ch/precalculus/polynomials:in-campo-complesso}}
+\sphinxAtStartPar
+Ogni polinomio \(p_n(x)\) a coefficienti reali può essere fattorizzato nel prodotto di \(n\) binomi coefficienti complessi,
+\begin{equation*}
+\begin{split}\begin{aligned}
+  p_n(x) & = a_n x^n + a_{n-1} x^{n-1} + \dots a_1 x + a_0 = \\
+         & = a_n ( x - z_1 ) \dots ( x - z_n ) \ .
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Gli zeri di un polinomio a coefficienti costanti possono essere o reali o complessi coniugati, cioè o \(z_k \in \mathbb{R}\) o se \(z_k \notin \mathbb{R}\) allora anche \(z_k^*\) è uno zero del polinomio.
+
+
+\subsubsection{Esempio}
+\label{\detokenize{ch/precalculus/polynomials:esempio}}
+\sphinxAtStartPar
+Il polinomio di terzo grado \(p(x) = x^3 + 1\) può essere fattorizzato come
+\begin{equation*}
+\begin{split}\begin{aligned}
+  p(x) = x^3 + 1
+     & = (x - 1) \, ( x^2 + x + 1 ) = \\
+     & = (x - 1) \, \left( x - \left( -\frac{1}{2} - i \frac{\sqrt{3}}{2} \right) \right) \, \left( x - \left( -\frac{1}{2} + i \frac{\sqrt{3}}{2} \right) \right) \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Il polinomio ha coefficienti reali. Gli zeri del polinomio sono o reali, come  \(1\), o complessi coiungati come \(\left( -\frac{1}{2} + i \frac{\sqrt{3}}{2} \right)^* = -\frac{1}{2} - i \frac{\sqrt{3}}{2}\).
 
 
 \section{Teorema binomiale}
 \label{\detokenize{ch/precalculus/polynomials:teorema-binomiale}}\label{\detokenize{ch/precalculus/polynomials:math-hs-precalculus-polynomials-binomial-thm}}
 \sphinxAtStartPar
-Per \(p \in \mathbb{N}\),
+Con esponente naturale \(p \in \mathbb{N}\),
 \begin{equation*}
 \begin{split}\left( x + y \right)^p = \sum_{k=0}^{p} \left( \begin{matrix} p \\ k \end{matrix} \right) x^k \, y^{p-k} \ ,\end{split}
 \end{equation*}
@@ -3887,7 +3886,7 @@ avendo indicato il coefficente binomiale
 \begin{split}\left( \begin{matrix} p \\ k \end{matrix} \right) = \frac{p!}{k! (p-k)!}\end{split}
 \end{equation*}
 \sphinxAtStartPar
-Per \(p \in \mathbb{Z}, \mathbb{Q}, \mathbb{R}\)
+Con esponente non naturale \(p \in \mathbb{Z}, \mathbb{Q}, \mathbb{R}\),… \sphinxstylestrong{todo}
 
 \sphinxstepscope
 
@@ -5550,7 +5549,7 @@ dalla quale segue immediatamente la regola di derivazione della funzione inversa
 \end{equation*}
 
 \subsection{Teoremi}
-\label{\detokenize{ch/infinitesimal_calculus/derivatives:teoremi}}\label{\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm}}\label{ch/infinitesimal_calculus/derivatives:theorem-0}
+\label{\detokenize{ch/infinitesimal_calculus/derivatives:teoremi}}\label{\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm}}\label{ch/infinitesimal_calculus/derivatives:thm:infinitesimal-calculus:derivatives:thm:fermat}
 \begin{sphinxadmonition}{note}{Theorem 6 (Teorema di Fermat)}
 
 
@@ -5584,7 +5583,7 @@ Il limite per \(h \rightarrow 0\) di queste due relazioni esiste ed è \(f'(x_0)
 e da queste la dimostrazione della tesi del problema, \(f'(x_0)\).
 
 
-\label{ch/infinitesimal_calculus/derivatives:theorem-1}
+\label{ch/infinitesimal_calculus/derivatives:thm:infinitesimal-calculus:derivatives:thm:rolle}
 \begin{sphinxadmonition}{note}{Theorem 7 (Teorema di Rolle)}
 
 
@@ -5606,7 +5605,7 @@ massimo e minimo sono nei punti estremi dell’intervallo. Allora la funzione è
 i punti di massimo e di minimo sono interni all’intervallo. In questo caso, per il {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm-rolle}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema di Fermat}}}} i punti \(c\) di minimo o massimo verificano la condizione \(f'(c) = 0\).
 
 \end{itemize}
-\label{ch/infinitesimal_calculus/derivatives:theorem-2}
+\label{ch/infinitesimal_calculus/derivatives:thm:infinitesimal-calculus:derivatives:thm:cauchy}
 \begin{sphinxadmonition}{note}{Theorem 8 (Teorema di Cauchy)}
 
 
@@ -5625,7 +5624,7 @@ Si applica il {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infin
 \end{equation*}
 \sphinxAtStartPar
 continua in \([a,b]\), derivabile in \((a,b)\) e con \(h(a) = g(b) \, f(a) - f(b) \, g(a) = h(b)\).
-\label{ch/infinitesimal_calculus/derivatives:theorem-3}
+\label{ch/infinitesimal_calculus/derivatives:thm:infinitesimal-calculus:derivatives:thm:lagrange}
 \begin{sphinxadmonition}{note}{Theorem 9 (Theorema di Lagrange)}
 
 
@@ -5639,7 +5638,7 @@ Data la funzione \(f, g: [a,b] \rightarrow \mathbb{R}\) continua in \([a,b]\) e 
 
 \sphinxAtStartPar
 Si applica il {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm-lagrange}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema di Cauhcy}}}} scegliendo la funzione \(g(x) = x\).
-\label{ch/infinitesimal_calculus/derivatives:theorem-4}
+\label{ch/infinitesimal_calculus/derivatives:thm:infinitesimal-calculus:derivatives:thm:hopital}
 \begin{sphinxadmonition}{note}{Theorem 10 (Teorema di de l’Hopital )}
 
 
@@ -5668,10 +5667,10 @@ allora
 \subsubsection*{Dimostrazione}
 
 \sphinxAtStartPar
-\sphinxstylestrong{Forma indeterminata \(\frac{0}{0}\).} Usando il {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm-cauchy}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema di Cauchy}}}} e il {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm-rolle}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema di Rolle}}}}
+\sphinxstylestrong{Forma indeterminata \(\frac{0}{0}\).} Usando il {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm-cauchy}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema di Cauchy}}}} e il {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm-rolle}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema di Rolle}}}} \sphinxstylestrong{todo}
 
 \sphinxAtStartPar
-\sphinxstylestrong{Forma indeterminata \(\frac{\infty}{\infty}\).} Usando il {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm-cauchy}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema di Cauchy}}}} e il {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm-lagrange}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema di Lagrange}}}}
+\sphinxstylestrong{Forma indeterminata \(\frac{\infty}{\infty}\).} Usando il {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm-cauchy}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema di Cauchy}}}} e il {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm-lagrange}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema di Lagrange}}}} \sphinxstylestrong{todo}
 
 \sphinxAtStartPar
 \sphinxstylestrong{Oss.} Il teorema di de l’Hopital può essere applicato anche in successione, più di una volta, fermandosi al primo rapporto di derivate dello stesso ordine che non produce una forma indeterminata.
@@ -5692,7 +5691,7 @@ f(x) & = \cos x \qquad & \qquad f'(x) & =-\sin x
 \end{equation}\subsubsection*{Dimostrazione di \protect\(\ (x^n)'\protect\)}
 
 \sphinxAtStartPar
-Usando la formua binomiale \$\((x + \varepsilon)^n = x^n + n x^{n-1} \varepsilon + f(\varepsilon^2, \varepsilon^3, \dots)\)\$ \sphinxstylestrong{todo} \sphinxstyleemphasis{aggiungere riferimento},
+Usando la {\hyperref[\detokenize{ch/precalculus/polynomials:math-hs-precalculus-polynomials-binomial-thm}]{\sphinxcrossref{\DUrole{std,std-ref}{formula binomiale}}}} \((x + \varepsilon)^n = x^n + n x^{n-1} \varepsilon + f(\varepsilon^2, \varepsilon^3, \dots)\),
 \begin{equation*}
 \begin{split}\begin{aligned}
   \dfrac{d}{dx} x^n
@@ -5782,7 +5781,7 @@ La serie di MacLaurin è la serie di Taylor centrata in \(x_0 = 0\).
 
 \sphinxAtStartPar
 La serie di Taylor troncata al \(n\)\sphinxhyphen{}esimo termine fornisce un’approssimazione locale della funzione \(f(x)\) di ordine \(n\), nel senso definito dal seguente teorema.
-\label{ch/infinitesimal_calculus/derivatives:theorem-5}
+\label{ch/infinitesimal_calculus/derivatives:thm:infinitesimal-calculus:derivatives:taylor}
 \begin{sphinxadmonition}{note}{Theorem 11 (Approssimazione locale)}
 
 
@@ -7099,22 +7098,37 @@ basics
 \item\relax\sphinxstyleindexentry{integrals:thm:fund:reynolds}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{integrals:thm:fund:reynolds}}
 \indexspace
 \bigletter{theorem\sphinxhyphen{}0}
-\item\relax\sphinxstyleindexentry{theorem\sphinxhyphen{}0}\sphinxstyleindexextra{ch/infinitesimal\_calculus/derivatives}\sphinxstyleindexpageref{ch/infinitesimal_calculus/derivatives:\detokenize{theorem-0}}
+\item\relax\sphinxstyleindexentry{theorem\sphinxhyphen{}0}\sphinxstyleindexextra{ch/infinitesimal\_calculus/analysis}\sphinxstyleindexpageref{ch/infinitesimal_calculus/analysis:\detokenize{theorem-0}}
 \indexspace
 \bigletter{theorem\sphinxhyphen{}1}
-\item\relax\sphinxstyleindexentry{theorem\sphinxhyphen{}1}\sphinxstyleindexextra{ch/infinitesimal\_calculus/derivatives}\sphinxstyleindexpageref{ch/infinitesimal_calculus/derivatives:\detokenize{theorem-1}}
+\item\relax\sphinxstyleindexentry{theorem\sphinxhyphen{}1}\sphinxstyleindexextra{ch/infinitesimal\_calculus/analysis}\sphinxstyleindexpageref{ch/infinitesimal_calculus/analysis:\detokenize{theorem-1}}
 \indexspace
 \bigletter{theorem\sphinxhyphen{}2}
-\item\relax\sphinxstyleindexentry{theorem\sphinxhyphen{}2}\sphinxstyleindexextra{ch/infinitesimal\_calculus/derivatives}\sphinxstyleindexpageref{ch/infinitesimal_calculus/derivatives:\detokenize{theorem-2}}
+\item\relax\sphinxstyleindexentry{theorem\sphinxhyphen{}2}\sphinxstyleindexextra{ch/infinitesimal\_calculus/analysis}\sphinxstyleindexpageref{ch/infinitesimal_calculus/analysis:\detokenize{theorem-2}}
 \indexspace
 \bigletter{theorem\sphinxhyphen{}3}
-\item\relax\sphinxstyleindexentry{theorem\sphinxhyphen{}3}\sphinxstyleindexextra{ch/infinitesimal\_calculus/derivatives}\sphinxstyleindexpageref{ch/infinitesimal_calculus/derivatives:\detokenize{theorem-3}}
+\item\relax\sphinxstyleindexentry{theorem\sphinxhyphen{}3}\sphinxstyleindexextra{ch/infinitesimal\_calculus/analysis}\sphinxstyleindexpageref{ch/infinitesimal_calculus/analysis:\detokenize{theorem-3}}
 \indexspace
 \bigletter{theorem\sphinxhyphen{}4}
-\item\relax\sphinxstyleindexentry{theorem\sphinxhyphen{}4}\sphinxstyleindexextra{ch/infinitesimal\_calculus/derivatives}\sphinxstyleindexpageref{ch/infinitesimal_calculus/derivatives:\detokenize{theorem-4}}
+\item\relax\sphinxstyleindexentry{theorem\sphinxhyphen{}4}\sphinxstyleindexextra{ch/infinitesimal\_calculus/analysis}\sphinxstyleindexpageref{ch/infinitesimal_calculus/analysis:\detokenize{theorem-4}}
 \indexspace
-\bigletter{theorem\sphinxhyphen{}5}
-\item\relax\sphinxstyleindexentry{theorem\sphinxhyphen{}5}\sphinxstyleindexextra{ch/infinitesimal\_calculus/derivatives}\sphinxstyleindexpageref{ch/infinitesimal_calculus/derivatives:\detokenize{theorem-5}}
+\bigletter{thm:infinitesimal\sphinxhyphen{}calculus:derivatives:taylor}
+\item\relax\sphinxstyleindexentry{thm:infinitesimal\sphinxhyphen{}calculus:derivatives:taylor}\sphinxstyleindexextra{ch/infinitesimal\_calculus/derivatives}\sphinxstyleindexpageref{ch/infinitesimal_calculus/derivatives:\detokenize{thm:infinitesimal-calculus:derivatives:taylor}}
+\indexspace
+\bigletter{thm:infinitesimal\sphinxhyphen{}calculus:derivatives:thm:cauchy}
+\item\relax\sphinxstyleindexentry{thm:infinitesimal\sphinxhyphen{}calculus:derivatives:thm:cauchy}\sphinxstyleindexextra{ch/infinitesimal\_calculus/derivatives}\sphinxstyleindexpageref{ch/infinitesimal_calculus/derivatives:\detokenize{thm:infinitesimal-calculus:derivatives:thm:cauchy}}
+\indexspace
+\bigletter{thm:infinitesimal\sphinxhyphen{}calculus:derivatives:thm:fermat}
+\item\relax\sphinxstyleindexentry{thm:infinitesimal\sphinxhyphen{}calculus:derivatives:thm:fermat}\sphinxstyleindexextra{ch/infinitesimal\_calculus/derivatives}\sphinxstyleindexpageref{ch/infinitesimal_calculus/derivatives:\detokenize{thm:infinitesimal-calculus:derivatives:thm:fermat}}
+\indexspace
+\bigletter{thm:infinitesimal\sphinxhyphen{}calculus:derivatives:thm:hopital}
+\item\relax\sphinxstyleindexentry{thm:infinitesimal\sphinxhyphen{}calculus:derivatives:thm:hopital}\sphinxstyleindexextra{ch/infinitesimal\_calculus/derivatives}\sphinxstyleindexpageref{ch/infinitesimal_calculus/derivatives:\detokenize{thm:infinitesimal-calculus:derivatives:thm:hopital}}
+\indexspace
+\bigletter{thm:infinitesimal\sphinxhyphen{}calculus:derivatives:thm:lagrange}
+\item\relax\sphinxstyleindexentry{thm:infinitesimal\sphinxhyphen{}calculus:derivatives:thm:lagrange}\sphinxstyleindexextra{ch/infinitesimal\_calculus/derivatives}\sphinxstyleindexpageref{ch/infinitesimal_calculus/derivatives:\detokenize{thm:infinitesimal-calculus:derivatives:thm:lagrange}}
+\indexspace
+\bigletter{thm:infinitesimal\sphinxhyphen{}calculus:derivatives:thm:rolle}
+\item\relax\sphinxstyleindexentry{thm:infinitesimal\sphinxhyphen{}calculus:derivatives:thm:rolle}\sphinxstyleindexextra{ch/infinitesimal\_calculus/derivatives}\sphinxstyleindexpageref{ch/infinitesimal_calculus/derivatives:\detokenize{thm:infinitesimal-calculus:derivatives:thm:rolle}}
 \end{sphinxtheindex}
 
 \renewcommand{\indexname}{Indice}

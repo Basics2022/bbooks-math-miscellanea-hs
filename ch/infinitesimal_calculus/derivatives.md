@@ -71,6 +71,8 @@ $$ \dfrac{d f^{-1}}{d y}\bigg|_{y = f(x)} = \dfrac{1}{ \dfrac{d y}{d x}\bigg|_{x
 
 (infinitesimal-calculus:derivatives:thm:fermat)=
 ```{prf:theorem} Teorema di Fermat
+:label: thm:infinitesimal-calculus:derivatives:thm:fermat
+
 Data la funzione $f: (a,b) \rightarrow \mathbb{R}$ derivabile nel punto di estremo locale $x_0 \in (a,b)$, allora $f'(x_0) = 0$.
 ```
 ```{dropdown} Dimostrazione
@@ -103,6 +105,8 @@ La dimostrazione del teorema di Fermat...
 
 (infinitesimal-calculus:derivatives:thm:rolle)=
 ```{prf:theorem} Teorema di Rolle
+:label: thm:infinitesimal-calculus:derivatives:thm:rolle
+
 Data la funzione $f: [a,b] \rightarrow \mathbb{R}$ continua e derivabile in ogni punto dell'intervallo $(a,b)$ con $f(a) = f(b)$, allora esiste un valore $c \in (a,b)$ in cui $f'(c) = 0$.
 ```
 ```{dropdown} Dimostrazione
@@ -114,6 +118,8 @@ Per il [teorema di Weierstrass](infinitesimal-calculus:continuous-fun:thms:weier
 
 (infinitesimal-calculus:derivatives:thm:cauchy)=
 ```{prf:theorem} Teorema di Cauchy
+:label: thm:infinitesimal-calculus:derivatives:thm:cauchy
+
 Date le funzioni $f, g: [a,b] \rightarrow \mathbb{R}$ continue in $[a,b]$ e derivabili in $(a,b)$, allora esiste almeno un punto $c \in (a,b)$ tale che
 
 $$\left[ g(b) - g(a) \right] \, f'(c) = \left[ f(b) - f(a) \right] \, g'(c) \ .$$
@@ -130,6 +136,8 @@ continua in $[a,b]$, derivabile in $(a,b)$ e con $h(a) = g(b) \, f(a) - f(b) \, 
 
 (infinitesimal-calculus:derivatives:thm:lagrange)=
 ```{prf:theorem} Theorema di Lagrange
+:label: thm:infinitesimal-calculus:derivatives:thm:lagrange
+
 Data la funzione $f, g: [a,b] \rightarrow \mathbb{R}$ continua in $[a,b]$ e derivabile in $(a,b)$, allora esiste un valore $c \in (a,b)$ tale che
 
 $$f(b) - f(a) = (b -  a) f'(c) \ .$$
@@ -141,6 +149,8 @@ Si applica il [teorema di Cauhcy](infinitesimal-calculus:derivatives:thm:lagrang
 
 (infinitesimal-calculus:derivatives:thm:hopital)=
 ```{prf:theorem} Teorema di de l'Hopital 
+:label: thm:infinitesimal-calculus:derivatives:thm:hopital
+
 Siano $f(x), g(x): [a,b] \rightarrow \mathbb{R}$ funzioni reali di variabile reale continue in $[a,b]$ e derivabili in $(a,b) \backslash \{ x_0 \}$.
 
 $$\begin{aligned}
@@ -181,7 +191,7 @@ f(x) & = \cos x \qquad & \qquad f'(x) & =-\sin x
 \end{aligned}$$ (eq:infinitesimal-calculus:derivatives:fund)
 
 ```{dropdown} Dimostrazione di $\ (x^n)'$
-Usando la formua binomiale $$(x + \varepsilon)^n = x^n + n x^{n-1} \varepsilon + f(\varepsilon^2, \varepsilon^3, \dots)$$ **todo** *aggiungere riferimento*,
+Usando la [formula binomiale](math-hs:precalculus:polynomials:binomial-thm) $(x + \varepsilon)^n = x^n + n x^{n-1} \varepsilon + f(\varepsilon^2, \varepsilon^3, \dots)$,
 
 $$\begin{aligned}
   \dfrac{d}{dx} x^n
@@ -265,12 +275,13 @@ La serie di MacLaurin è la serie di Taylor centrata in $x_0 = 0$.
 
 La serie di Taylor troncata al $n$-esimo termine fornisce un'approssimazione locale della funzione $f(x)$ di ordine $n$, nel senso definito dal seguente teorema.
 ```{prf:theorem} Approssimazione locale
+:label: thm:infinitesimal-calculus:derivatives:taylor
 
 $$\lim_{x \rightarrow x_0} \frac{f(x) - T[f(x); x_0]}{x^n} = f^{(n)}(x_0) \ , $$
 
 $$f(x) = T[f(x); x_0] + o(x^n) \quad \text{ per } \quad x \rightarrow x_0$$
 
-```
+``` 
 ```{dropdown} Dimostrazione
 Usando il teorema di de l'Hopital, fino a quando il rapporto non è una forma indeterminata
 

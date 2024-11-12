@@ -16,8 +16,9 @@ parts:
   chapters:
   - file: ch/algebra
   - file: ch/algebra/real-algebra
-    sections:
-    - file: ch/linear_algebra
+#   sections:
+#   - file: ch/linear_algebra
+  - file: ch/algebra/matrix-algebra
   - file: ch/algebra/vector-algebra
     sections:
     - file: ch/algebra/vector-algebra-def
