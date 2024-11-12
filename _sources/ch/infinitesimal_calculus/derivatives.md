@@ -74,7 +74,24 @@ $$ \dfrac{d f^{-1}}{d y}\bigg|_{y = f(x)} = \dfrac{1}{ \dfrac{d y}{d x}\bigg|_{x
 Data la funzione $f: (a,b) \rightarrow \mathbb{R}$ derivabile nel punto di estremo locale $x_0 \in (a,b)$, allora $f'(x_0) = 0$.
 ```
 ```{dropdown} Dimostrazione
-**todo**
+Sia $x_0$ un punto di minimo locale della funzione $f(x)$ derivabile in $x_0$. La definizione di minimo locale permette di scrivere
+
+$$\exists \delta > 0: \ x in (x_0 - \delta, x_0 + \delta) \cap (a,b) \quad \rightarrow \quad f(x_0) \le f(x) \ .$$
+
+Quindi si possono scrivere le seguenti relazioni
+
+$$\frac{f(x_0 + h) - f(x_0)}{h} \ge 0 \qquad \forall h \in (0, \delta)$$
+$$\frac{f(x_0 + h) - f(x_0)}{h} \le 0 \qquad \forall h \in (-\delta,0)$$
+
+Il limite per $h \rightarrow 0$ di queste due relazioni esiste ed è $f'(x_0)$ in entrambi i casi, essendo la derivata il limite del rapporto incrementale. Le due espressioni a sinistra dei segni di disuguaglianza possono essere considerate funzioni continue della variabile $h$, il cui limite esiste per $h \rightarrow 0$. Usando il [teorema della permanenza del segno](infinitesimal-calculus:continuous-fun:thms:sign), si può concludere che
+
+$$\begin{cases}
+  f'(x_0) \ge 0 \\
+  f'(x_0) \le 0 \\
+\end{cases}$$
+
+e da queste la dimostrazione della tesi del problema, $f'(x_0)$.
+
 ```
 
 <!-- **todo** why was this block here? Was it a test? What are the drawbacks of {dropdown}? Maybe something with .pdf build?
