@@ -19,9 +19,11 @@ e in generale, in tutti le equazioni che governano processi in cui il valore di 
 
 **Approccio.**
 Mentre le motivazioni date dovrebbero essere sufficienti a convincere dell'importanza e della necessità di un'introduzione alle ODE, una trattazione completa dell'argomento richiede strumenti matematici più avanzati di quelli disponibili a uno studente delle scuole superiori (e spesso anche di molti studenti universitari).
-
 Si cercherà quindi di trattare l'argomento nella maniera più rigorosa possibile per fornire gli strumenti necessari per (semplici) applicazioni nelle quali compaiono le ODE, mentre si chiederà qualche atto di fede nell'accettare alcuni risultati. <span style="color:red">Per completezza, in corrispondenza di questi atti di fede, verrà messo a disposizione un collegamento a una trattazione più completa dell'argomento.</span>
 
+Vengono inizialmente fornite le [prime definizioni](ode-hs:def)
+
+(ode-hs:def)=
 ## Prime definizioni
 Un'**equazione differenziale ordinaria** è un'equazione che coinvolge una funzione reale, incognita, di una variabile reale e le sue derivate. Formalmente una ODE può essere scritta come
 
@@ -33,10 +35,13 @@ Un problema differenziale **ben definito**, in generale è definito da una **ODE
 
 Il **grado** di una ODE è l'ordine massimo della derivata che compare nell'equazione. In generale, la soluzione di una ODE di grado $n$ è il risultato di $n$ operazioni di integrazione che producono $n$ costanti arbitrarie.
 
+(ode-hs:types)=
 ## Classificazione, esempi e tecniche risolutive
 
+(ode-hs:types:linear-const)=
 ### Equazioni lineari a coefficienti costanti
 
+(ode-hs:types:linear-const:def)=
 #### Definizione
 Una ODE lineare a coefficienti costanti di ordine $n$ è un'equazione differenziale che mette in relazione la combinazione lineare della funzione incognita $y(x)$ e delle sue prime $n$ derivate con una funzione nota $f(x)$,
 
@@ -44,13 +49,134 @@ $$a_n y^{(n)}(x) + \dots a_1 y'(x) + a_0 y(x) = f(x) \ .$$
 
 Se la funzione $f(x)$ è la funzione identicamente nulla $f(x) \equiv 0$, l'equazione è un'equazione omogenea.
 
+(ode-hs:types:linear-const:ex)=
 #### Esempi
 
-#### Soluzione
+```{dropdown} Temperatura di un corpo, soggetto a convezione
+**Temperatura di un corpo, soggetto a convezione.** L'equazione che governa l'evoluzione della temperatura $T(t)$ di un sistema, sufficientemente piccolo da poter essere considerato a temperatura uniforme nello spazio, soggetto alla trasmissione del calore per convezione sulla sua superficie in un ambiente a temperatura $T^e(t)$ nota è l'equazione differenziale ordinaria del primo ordine,
+
+$$m \, C \, \dot{T}(t) + h \, T(t) = h \, T_e(t) \ ,$$
+
+con le opportune condizioni iniziali.
+Questa equazione può essere ricavata dal principio della termodinamica, per il quale la variazione di energia termica $E$ di un sistema non sottoposta a lavoro delle forze è uguale al flusso di calore "entrante" nel sistema, $\dot{Q}^e$,
+
+$$\dot{E} = \dot{Q}^e \ ,$$
+
+scrivendo l'energia termica come il prodotto della massa $m$, del calore specifico $c$ e della temperatura $T$ del sistema, e il flusso di calore per convezione con la *formula di Newton*, $\dot{Q} = h (T_e - T)$.
+```
+
+```{dropdown} Sistema massa-molla-smorzatore
+**Sistema massa-molla-smorzatore.** L'equazione che governa la dinamica di un sistema massa-molla-smorzatore con un corpo di massa $m$ che si muove lungo una direzione $x$, vincolato a terra da una molla di costante elastica $k$ e da uno smorzatore lineare con coefficiente $c$, soggetto a una forzante esterna $f^e(t)$ nota è l'equazione differenziale ordinaria del secondo ordine,
+
+$$m \, \ddot{x}(t) + c \, \dot{x}(t) + k \, x(t) = f^e(t) \ ,$$
+
+con le opportune condizioni iniziali. 
+Questa equazione può essere ricavata dal secondo principio della dinamica di Newton lungo la direzione $x$
+
+$$\dot{\vec{Q}} = \vec{R}^e = \vec{F}^k + \vec{f}^c + \vec{f}^e(t) \ ,$$
+
+scrivendo la quantità di moto del sistema lungo $x$ come $Q_x = m \dot{x}(t)$ e assumendo che la molla e lo smorzatore esercitino una forza sul corpo $f^{k} = - k \, x$, $f^c = - c \, \dot{x}$ rispettivamente.
+
+**Distribuzione stazionaria di temperatura.** La distribuzione stazionaria di temperatura in un corpo, senza sorgenti di calore al suo interno, è governata dall'equazione differenziale ordinaria del secondo ordine,
+
+$$( k T'(x) )' = 0 \ ,$$
+```
+
+```{dropdown} Circuito RLC. **todo**
+**Circuito RLC.** **todo**
+```
+
+```{dropdown} Caduta di un grave - 1: senza resistenza
+**Caduta di un grave - 1: senza resistenza.** L'equazione che governa la caduta di un corpo di massa $m$ soggetto alla gravità $g$ lungo la verticale nei pressi della superficie terrestre è l'equazione differenziale ordinaria del secondo ordine
+
+$$m \ddot{z} = - m \, g \ ,$$
+
+con le opportune condizioni iniziali.
+Questa equazione può essere ricavata dal secondo principio della dinamica di Newton per un corpo di massa $m$ soggetto unicamente al suo peso $\vec{F}^{peso} = - m \, g \hat{z}$,
+
+$$\dot{\vec{Q}} = \vec{F}^{peso} \ ,$$
+
+e scegliendo la coordinata $z$ allineata alla verticale e diretta verso l'alto.
+```
+
+```{dropdown} Caduta di un grave - 2: con resistenza lineare nella velocità
+**Caduta di un grave - 2: con resistenza lineare nella velocità.** Se la caduta del grave è influenzata dalla resistenza aerodinamica dovuta all'interazione con l'aria rispetto alla quale si muove, e se questa interazione può essere rappresentata da una forza lineare rispetto alla velocità, $\vec{D} = - c \dot{\vec{r}}$, il secondo principio della dinamica fornisce l'equazione del moto,
+
+$$\dot{\vec{Q}} = \vec{F}^{peso} + \vec{D} \ ,$$
+
+che può essere proiettata lungo la verticale per dare l'equazione differenziale ordinaria del secondo ordine,
+
+$$m \ddot{z} + c \dot{z} = m \, g \ .$$
+```
+
+```{dropdown} Caduta di un grave - 3: con resistenza quadratica nella velocità
+**Caduta di un grave - 3: con resistenza quadratica nella velocità** Se la caduta del grave è influenzata dalla resistenza aerodinamica dovuta all'interazione con l'aria rispetto alla quale si muove, e se questa interazione può essere rappresentata da una forza lineare rispetto alla velocità, $\vec{D} = - \frac{1}{2} \rho S c_D |\dot{\vec{r}}| \dot{\vec{r}}$, il secondo principio della dinamica fornisce l'equazione del moto,
+
+$$\dot{\vec{Q}} = \vec{F}^{peso} + \vec{D} \ ,$$
+
+che può essere proiettata lungo la verticale per dare l'equazione differenziale ordinaria del secondo ordine,
+
+$$m \ddot{z} + \frac{1}{2} \rho S c_D |\dot{z}| \dot{z} = m \, g \ .$$
+```
+
+```{dropdown} Moto parabolico di un grave - 1: senza resistenza
+**Moto parabolico di un grave - 1: senza resistenza.** Il moto parabolico nei pressi della superficie terrestre è un moto piano governato da un'equazione del moto ricavata dal secondo principio della dinamica,
+
+$$\dot{\vec{Q}} = \vec{R}^e \ .$$
+
+Una scelta conveniente del sistema di coordinate per descrivere il moto piano consiste nella scelta di coordinate cartesiane $(x,y)$, con l'asse $y$ rivolto verso l'alto e l'asse $x$ orizzontale e nel piano del moto. Scegliendo un sistema di coordinate cartesiane, la posizione di un punto può essere scritta usando i due vettori unitari (*uniformi nello spazio, e quindi costanti* **todo** *spiegarsi peggio*)
+
+$$P(t) - O = x_P(t) \hat{x} + y_P(t) \hat{y} \ .$$
+
+Calcolando le derivate nel tempo della posizione si trovano le espressioni della velocità e dell'accelerazione del punto $P$
+
+$$\begin{aligned}
+  \vec{v}_P(t) = v_{x,P}(t) \hat{x} + v_{y,P}(t) \hat{y} & =  \dot{\vec{r}}_P(t) = \dot{x}_{P}(t) \hat{x} + \dot{y}_{P}(t) \hat{y} \\
+  \vec{a}_P(t) = a_{x,P}(t) \hat{x} + a_{y,P}(t) \hat{y} & = \ddot{\vec{r}}_P(t) =\ddot{x}_{P}(t) \hat{x} +\ddot{y}_{P}(t) \hat{y} \\
+\end{aligned}$$
+
+Il secondo principio della dinamica diventa quindi
+
+$$m ( \ddot{x}_P(t) \hat{x} + \ddot{y}_P(t) \hat{y}) = - m \, g \hat{y} \ ,$$
+
+avendo usato l'espressione della forza peso $\vec{F}^{peso} = - m \, g \hat{y}$. Proiettando l'equazione vettoriale lungo le due direzioni cartesiane, si ottiene un sistema di due equazioni differenziali del secondo ordine
+
+$$\begin{cases}
+  m \ddot{x}_P = 0 \\
+  m \ddot{y}_P = - m \, g
+\end{cases}$$
+
+In questo caso, le due equazioni differenziali del sistema sono indipendenti tra di loro e il problema differenziale può essere risolto senza difficoltà aggiuntive, una volta che vengono date le condizioni (iniziali, per problema diretto) necessarie.
+```
+
+```{dropdown} Moto parabolico di un grave - 2: con resistenza lineare nella velocità
+```
+
+```{dropdown} Deformazione a torsione di una trave
+**Deformazione a torsione di una trave.** La rotazione delle sezioni di una trave di lunghezza $L$ soggetta a torsione con un momento torcente distribuito $m(x)$ è governata dall'equazione di equilibrio indefinito,
+
+$$M_z'(z) = m(x) \ ,$$
+
+con una legge costitutiva che leghi la rotazione $\theta(z)$ di una sezione al momento torcente interno $M_z(z)$, e le opportune condizioni al contorno. Nel caso di trave elastica lineare, la legge costitutiva stabilisce la relazione $M_z(z) = GJ \theta'(z)$. Nel caso di trave incastrata nell'estremo identificato dalla coordinata $z=0$ e di momento torcente $M^e$ applicato nell'estremo identificato dalla coordinata $z = L$, la deformazione a torsione della trave è determinata dal problema differenziale
+
+$$\begin{cases}
+(GJ \theta'(z))' = m(z) \qquad z \in [0,L] \\
+\theta(0) = 0 \\
+GJ \theta'(L) = M^e \\
+\end{cases}$$
+```
+
+```{dropdown} Deformazione a flessione di una trave
+**Deformazione a flessione di una trave.** La deformazione a flessione di una trave elastica lineare è governata dall'equazione $$w''''(z) = f(z)$$... **todo**
+```
+
+(ode-hs:types:linear-const:sol)=
+#### Soluzione generale
 La soluzione di un'equazione differenziale lineare a coefficienti costanti può essere scritta come somma di una soluzione $y_o(x)$ dell'equazione omogenea associata e di una soluzione particolare $y_p(x)$ dell'equazione,
 
 $$y(x) = y_o(x) + y_p(x)$$
 
+(ode-hs:types:linear-const:sol:homo)=
 ##### Soluzione dell'equazione omogenea
 
 Un'equazione differenziale omogenea è un problema lineare, e quindi la somma di due soluzioni è anch'essa una soluzione. La soluzione generale dell'equazione omogenea di ordine $n$ può essere scritta come combinazione lineare di $n$ sue soluzioni particolari *indipendenti* (qualitativamente, cioè che non contengono le stesse informazioni ripetute).
@@ -81,19 +207,68 @@ poiché la funzione esponenziale non è mai nulla. Il [teorema fondamentale dell
 
   $$e^{s_p x} \ , \quad x \, e^{s_p x} \ , \quad \dots \ , \quad x^{p-1} \, e^{s_p x} \ .$$
 
+(ode-hs:types:linear-const:sol:part)=
 ##### Soluzione particolare dell'equazione completa
 
 Come regola generale, la ricerca della soluzione particolare dell'equazione completa è guidata dall'espressione della forzante. Ad esempio:
 
-- forzanti polinomiali
+- con **forzanti polinomiali** si cerca una soluzione particolare polinomiale
 
-- forzanti esponenziali
+- con **forzanti esponenziali** si cerca una soluzione particolare esponenziale
 
-- forzanti armoniche
+- con **forzanti armoniche** si cerca una soluzione particolare armonica
+
+Nel caso in cui la soluzione particolare abbia la forma di una delle soluzioni della soluzione particolare, si adotta la stessa tecnica adottata nel caso di zeri multipli. 
 
 
+(ode-hs:types:linear-const:ex-sol)=
+#### Soluzione degli esempi
+
+```{dropdown} Esempio - Temperatura di un corpo, soggetto a convezione.
+```
+
+```{dropdown} Esempio - Sistema massa-molla-smorzatore
+```
+
+```{dropdown} Esempio - Circuito RLC. **todo**
+```
+
+```{dropdown} Esempio - Caduta di un grave - 1: senza resistenza
+```
+
+```{dropdown} Esempio - Caduta di un grave - 2: con resistenza lineare nella velocità
+```
+
+```{dropdown} Esempio - Caduta di un grave - 3: con resistenza quadratica nella velocità
+```
+
+```{dropdown} Esempio - Moto parabolico di un grave - 1: senza resistenza
+```
+
+```{dropdown} Esempio - Moto parabolico di un grave - 2: con resistenza lineare nella velocità
+```
+
+```{dropdown} Esempio - Deformazione a torsione di una trave
+```
+
+```{dropdown} Esempio - Deformazione a flessione di una trave
+```
+
+(ode-hs:types:separable)=
+### Equazioni separabili: tecnica di soluzione di separazione delle variabili
+
+$$\frac{d y}{d x} = f(y(x)) \ g(x) $$
+
+può essere riscritta formalmente come
+
+$$\dfrac{dy}{f(y)} = g(x) \ d x $$
+
+e integrata con le opportune condizioni 
+
+$$\tilde{F}(y(x)) - \tilde{F}(y(x_0)) = G(x) - G(x_0)$$
 
 
+<!--
 - Equazioni di primo grado
 
 $$m \dot{x} + c x  = f(t)$$
@@ -133,20 +308,8 @@ $$\begin{aligned}
   \text{Re}\{C_2 e^{i \omega t}\} &= \text{Re}\{ (A - i B)(\cos(\omega t) + i \sin(\omega t)\} = \\
   & = \text{Re}\{ A \cos(\omega t) + B \sin (\omega t) + i \left[ A \sin (\omega t) - B \cos (\omega t) \right]\} \ .
 \end{aligned}$$
-
-
-### Equazioni separabili: tecnica di soluzione di separazione delle variabili
-
-$$\frac{d y}{d x} = f(y(x)) \ g(x) $$
-
-può essere riscritta formalmente come
-
-$$\dfrac{dy}{f(y)} = g(x) \ d x $$
-
-e integrata con le opportune condizioni 
-
-$$\tilde{F}(y(x)) - \tilde{F}(y(x_0)) = G(x) - G(x_0)$$
-
+-->
+<!--
 ### Esempi
 - Moto rettilineo in un campo di forze costante e uniforme
 
@@ -202,3 +365,4 @@ $$(EA u')' = f$$
 - Deformazione a flessione di una trave
 
 $$(EJ w'')'' = f$$
+-->

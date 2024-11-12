@@ -6205,7 +6205,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-4 min read
+8 min read
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -6266,13 +6266,14 @@ e in generale, in tutti le equazioni che governano processi in cui il valore di 
 \sphinxAtStartPar
 \sphinxstylestrong{Approccio.}
 Mentre le motivazioni date dovrebbero essere sufficienti a convincere dell’importanza e della necessità di un’introduzione alle ODE, una trattazione completa dell’argomento richiede strumenti matematici più avanzati di quelli disponibili a uno studente delle scuole superiori (e spesso anche di molti studenti universitari).
+Si cercherà quindi di trattare l’argomento nella maniera più rigorosa possibile per fornire gli strumenti necessari per (semplici) applicazioni nelle quali compaiono le ODE, mentre si chiederà qualche atto di fede nell’accettare alcuni risultati. Per completezza, in corrispondenza di questi atti di fede, verrà messo a disposizione un collegamento a una trattazione più completa dell’argomento.
 
 \sphinxAtStartPar
-Si cercherà quindi di trattare l’argomento nella maniera più rigorosa possibile per fornire gli strumenti necessari per (semplici) applicazioni nelle quali compaiono le ODE, mentre si chiederà qualche atto di fede nell’accettare alcuni risultati. Per completezza, in corrispondenza di questi atti di fede, verrà messo a disposizione un collegamento a una trattazione più completa dell’argomento.
+Vengono inizialmente fornite le {\hyperref[\detokenize{ch/ode:ode-hs-def}]{\sphinxcrossref{\DUrole{std,std-ref}{prime definizioni}}}}
 
 
 \subsection{Prime definizioni}
-\label{\detokenize{ch/ode:prime-definizioni}}
+\label{\detokenize{ch/ode:prime-definizioni}}\label{\detokenize{ch/ode:ode-hs-def}}
 \sphinxAtStartPar
 Un”\sphinxstylestrong{equazione differenziale ordinaria} è un’equazione che coinvolge una funzione reale, incognita, di una variabile reale e le sue derivate. Formalmente una ODE può essere scritta come
 \begin{equation*}
@@ -6296,13 +6297,13 @@ Il \sphinxstylestrong{grado} di una ODE è l’ordine massimo della derivata che
 
 
 \subsection{Classificazione, esempi e tecniche risolutive}
-\label{\detokenize{ch/ode:classificazione-esempi-e-tecniche-risolutive}}
+\label{\detokenize{ch/ode:classificazione-esempi-e-tecniche-risolutive}}\label{\detokenize{ch/ode:ode-hs-types}}
 
 \subsubsection{Equazioni lineari a coefficienti costanti}
-\label{\detokenize{ch/ode:equazioni-lineari-a-coefficienti-costanti}}
+\label{\detokenize{ch/ode:equazioni-lineari-a-coefficienti-costanti}}\label{\detokenize{ch/ode:ode-hs-types-linear-const}}
 
 \paragraph{Definizione}
-\label{\detokenize{ch/ode:definizione}}
+\label{\detokenize{ch/ode:definizione}}\label{\detokenize{ch/ode:ode-hs-types-linear-const-def}}
 \sphinxAtStartPar
 Una ODE lineare a coefficienti costanti di ordine \(n\) è un’equazione differenziale che mette in relazione la combinazione lineare della funzione incognita \(y(x)\) e delle sue prime \(n\) derivate con una funzione nota \(f(x)\),
 \begin{equation*}
@@ -6313,10 +6314,141 @@ Se la funzione \(f(x)\) è la funzione identicamente nulla \(f(x) \equiv 0\), l�
 
 
 \paragraph{Esempi}
-\label{\detokenize{ch/ode:esempi}}
+\label{\detokenize{ch/ode:esempi}}\label{\detokenize{ch/ode:ode-hs-types-linear-const-ex}}\subsubsection*{Temperatura di un corpo, soggetto a convezione}
 
-\paragraph{Soluzione}
-\label{\detokenize{ch/ode:soluzione}}
+\sphinxAtStartPar
+\sphinxstylestrong{Temperatura di un corpo, soggetto a convezione.} L’equazione che governa l’evoluzione della temperatura \(T(t)\) di un sistema, sufficientemente piccolo da poter essere considerato a temperatura uniforme nello spazio, soggetto alla trasmissione del calore per convezione sulla sua superficie in un ambiente a temperatura \(T^e(t)\) nota è l’equazione differenziale ordinaria del primo ordine,
+\begin{equation*}
+\begin{split}m \, C \, \dot{T}(t) + h \, T(t) = h \, T_e(t) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+con le opportune condizioni iniziali.
+Questa equazione può essere ricavata dal principio della termodinamica, per il quale la variazione di energia termica \(E\) di un sistema non sottoposta a lavoro delle forze è uguale al flusso di calore «entrante» nel sistema, \(\dot{Q}^e\),
+\begin{equation*}
+\begin{split}\dot{E} = \dot{Q}^e \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+scrivendo l’energia termica come il prodotto della massa \(m\), del calore specifico \(c\) e della temperatura \(T\) del sistema, e il flusso di calore per convezione con la \sphinxstyleemphasis{formula di Newton}, \(\dot{Q} = h (T_e - T)\).
+\subsubsection*{Sistema massa\sphinxhyphen{}molla\sphinxhyphen{}smorzatore}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Sistema massa\sphinxhyphen{}molla\sphinxhyphen{}smorzatore.} L’equazione che governa la dinamica di un sistema massa\sphinxhyphen{}molla\sphinxhyphen{}smorzatore con un corpo di massa \(m\) che si muove lungo una direzione \(x\), vincolato a terra da una molla di costante elastica \(k\) e da uno smorzatore lineare con coefficiente \(c\), soggetto a una forzante esterna \(f^e(t)\) nota è l’equazione differenziale ordinaria del secondo ordine,
+\begin{equation*}
+\begin{split}m \, \ddot{x}(t) + c \, \dot{x}(t) + k \, x(t) = f^e(t) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+con le opportune condizioni iniziali.
+Questa equazione può essere ricavata dal secondo principio della dinamica di Newton lungo la direzione \(x\)
+\begin{equation*}
+\begin{split}\dot{\vec{Q}} = \vec{R}^e = \vec{F}^k + \vec{f}^c + \vec{f}^e(t) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+scrivendo la quantità di moto del sistema lungo \(x\) come \(Q_x = m \dot{x}(t)\) e assumendo che la molla e lo smorzatore esercitino una forza sul corpo \(f^{k} = - k \, x\), \(f^c = - c \, \dot{x}\) rispettivamente.
+
+\sphinxAtStartPar
+\sphinxstylestrong{Distribuzione stazionaria di temperatura.} La distribuzione stazionaria di temperatura in un corpo, senza sorgenti di calore al suo interno, è governata dall’equazione differenziale ordinaria del secondo ordine,
+\begin{equation*}
+\begin{split}( k T'(x) )' = 0 \ ,\end{split}
+\end{equation*}\subsubsection*{Circuito RLC. \sphinxstylestrong{todo}}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Circuito RLC.} \sphinxstylestrong{todo}
+\subsubsection*{Caduta di un grave \sphinxhyphen{} 1: senza resistenza}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Caduta di un grave \sphinxhyphen{} 1: senza resistenza.} L’equazione che governa la caduta di un corpo di massa \(m\) soggetto alla gravità \(g\) lungo la verticale nei pressi della superficie terrestre è l’equazione differenziale ordinaria del secondo ordine
+\begin{equation*}
+\begin{split}m \ddot{z} = - m \, g \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+con le opportune condizioni iniziali.
+Questa equazione può essere ricavata dal secondo principio della dinamica di Newton per un corpo di massa \(m\) soggetto unicamente al suo peso \(\vec{F}^{peso} = - m \, g \hat{z}\),
+\begin{equation*}
+\begin{split}\dot{\vec{Q}} = \vec{F}^{peso} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e scegliendo la coordinata \(z\) allineata alla verticale e diretta verso l’alto.
+\subsubsection*{Caduta di un grave \sphinxhyphen{} 2: con resistenza lineare nella velocità}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Caduta di un grave \sphinxhyphen{} 2: con resistenza lineare nella velocità.} Se la caduta del grave è influenzata dalla resistenza aerodinamica dovuta all’interazione con l’aria rispetto alla quale si muove, e se questa interazione può essere rappresentata da una forza lineare rispetto alla velocità, \(\vec{D} = - c \dot{\vec{r}}\), il secondo principio della dinamica fornisce l’equazione del moto,
+\begin{equation*}
+\begin{split}\dot{\vec{Q}} = \vec{F}^{peso} + \vec{D} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+che può essere proiettata lungo la verticale per dare l’equazione differenziale ordinaria del secondo ordine,
+\begin{equation*}
+\begin{split}m \ddot{z} + c \dot{z} = m \, g \ .\end{split}
+\end{equation*}\subsubsection*{Caduta di un grave \sphinxhyphen{} 3: con resistenza quadratica nella velocità}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Caduta di un grave \sphinxhyphen{} 3: con resistenza quadratica nella velocità} Se la caduta del grave è influenzata dalla resistenza aerodinamica dovuta all’interazione con l’aria rispetto alla quale si muove, e se questa interazione può essere rappresentata da una forza lineare rispetto alla velocità, \(\vec{D} = - \frac{1}{2} \rho S c_D |\dot{\vec{r}}| \dot{\vec{r}}\), il secondo principio della dinamica fornisce l’equazione del moto,
+\begin{equation*}
+\begin{split}\dot{\vec{Q}} = \vec{F}^{peso} + \vec{D} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+che può essere proiettata lungo la verticale per dare l’equazione differenziale ordinaria del secondo ordine,
+\begin{equation*}
+\begin{split}m \ddot{z} + \frac{1}{2} \rho S c_D |\dot{z}| \dot{z} = m \, g \ .\end{split}
+\end{equation*}\subsubsection*{Moto parabolico di un grave \sphinxhyphen{} 1: senza resistenza}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Moto parabolico di un grave \sphinxhyphen{} 1: senza resistenza.} Il moto parabolico nei pressi della superficie terrestre è un moto piano governato da un’equazione del moto ricavata dal secondo principio della dinamica,
+\begin{equation*}
+\begin{split}\dot{\vec{Q}} = \vec{R}^e \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Una scelta conveniente del sistema di coordinate per descrivere il moto piano consiste nella scelta di coordinate cartesiane \((x,y)\), con l’asse \(y\) rivolto verso l’alto e l’asse \(x\) orizzontale e nel piano del moto. Scegliendo un sistema di coordinate cartesiane, la posizione di un punto può essere scritta usando i due vettori unitari (\sphinxstyleemphasis{uniformi nello spazio, e quindi costanti} \sphinxstylestrong{todo} \sphinxstyleemphasis{spiegarsi peggio})
+\begin{equation*}
+\begin{split}P(t) - O = x_P(t) \hat{x} + y_P(t) \hat{y} \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Calcolando le derivate nel tempo della posizione si trovano le espressioni della velocità e dell’accelerazione del punto \(P\)
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \vec{v}_P(t) = v_{x,P}(t) \hat{x} + v_{y,P}(t) \hat{y} & =  \dot{\vec{r}}_P(t) = \dot{x}_{P}(t) \hat{x} + \dot{y}_{P}(t) \hat{y} \\
+  \vec{a}_P(t) = a_{x,P}(t) \hat{x} + a_{y,P}(t) \hat{y} & = \ddot{\vec{r}}_P(t) =\ddot{x}_{P}(t) \hat{x} +\ddot{y}_{P}(t) \hat{y} \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Il secondo principio della dinamica diventa quindi
+\begin{equation*}
+\begin{split}m ( \ddot{x}_P(t) \hat{x} + \ddot{y}_P(t) \hat{y}) = - m \, g \hat{y} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+avendo usato l’espressione della forza peso \(\vec{F}^{peso} = - m \, g \hat{y}\). Proiettando l’equazione vettoriale lungo le due direzioni cartesiane, si ottiene un sistema di due equazioni differenziali del secondo ordine
+\begin{equation*}
+\begin{split}\begin{cases}
+  m \ddot{x}_P = 0 \\
+  m \ddot{y}_P = - m \, g
+\end{cases}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+In questo caso, le due equazioni differenziali del sistema sono indipendenti tra di loro e il problema differenziale può essere risolto senza difficoltà aggiuntive, una volta che vengono date le condizioni (iniziali, per problema diretto) necessarie.
+\subsubsection*{Moto parabolico di un grave \sphinxhyphen{} 2: con resistenza lineare nella velocità}
+\subsubsection*{Deformazione a torsione di una trave}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Deformazione a torsione di una trave.} La rotazione delle sezioni di una trave di lunghezza \(L\) soggetta a torsione con un momento torcente distribuito \(m(x)\) è governata dall’equazione di equilibrio indefinito,
+\begin{equation*}
+\begin{split}M_z'(z) = m(x) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+con una legge costitutiva che leghi la rotazione \(\theta(z)\) di una sezione al momento torcente interno \(M_z(z)\), e le opportune condizioni al contorno. Nel caso di trave elastica lineare, la legge costitutiva stabilisce la relazione \(M_z(z) = GJ \theta'(z)\). Nel caso di trave incastrata nell’estremo identificato dalla coordinata \(z=0\) e di momento torcente \(M^e\) applicato nell’estremo identificato dalla coordinata \(z = L\), la deformazione a torsione della trave è determinata dal problema differenziale
+\begin{equation*}
+\begin{split}\begin{cases}
+(GJ \theta'(z))' = m(z) \qquad z \in [0,L] \\
+\theta(0) = 0 \\
+GJ \theta'(L) = M^e \\
+\end{cases}\end{split}
+\end{equation*}\subsubsection*{Deformazione a flessione di una trave}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Deformazione a flessione di una trave.} La deformazione a flessione di una trave elastica lineare è governata dall’equazione \$\(w''''(z) = f(z)\)\$… \sphinxstylestrong{todo}
+
+
+\paragraph{Soluzione generale}
+\label{\detokenize{ch/ode:soluzione-generale}}\label{\detokenize{ch/ode:ode-hs-types-linear-const-sol}}
 \sphinxAtStartPar
 La soluzione di un’equazione differenziale lineare a coefficienti costanti può essere scritta come somma di una soluzione \(y_o(x)\) dell’equazione omogenea associata e di una soluzione particolare \(y_p(x)\) dell’equazione,
 \begin{equation*}
@@ -6324,7 +6456,7 @@ La soluzione di un’equazione differenziale lineare a coefficienti costanti pu�
 \end{equation*}
 
 \subparagraph{Soluzione dell’equazione omogenea}
-\label{\detokenize{ch/ode:soluzione-dell-equazione-omogenea}}
+\label{\detokenize{ch/ode:soluzione-dell-equazione-omogenea}}\label{\detokenize{ch/ode:ode-hs-types-linear-const-sol-homo}}
 \sphinxAtStartPar
 Un’equazione differenziale omogenea è un problema lineare, e quindi la somma di due soluzioni è anch’essa una soluzione. La soluzione generale dell’equazione omogenea di ordine \(n\) può essere scritta come combinazione lineare di \(n\) sue soluzioni particolari \sphinxstyleemphasis{indipendenti} (qualitativamente, cioè che non contengono le stesse informazioni ripetute).
 
@@ -6366,79 +6498,43 @@ Se il polinomio ha \sphinxstylestrong{zeri multipli}, le soluzioni esponenziali 
 
 
 \subparagraph{Soluzione particolare dell’equazione completa}
-\label{\detokenize{ch/ode:soluzione-particolare-dell-equazione-completa}}
+\label{\detokenize{ch/ode:soluzione-particolare-dell-equazione-completa}}\label{\detokenize{ch/ode:ode-hs-types-linear-const-sol-part}}
 \sphinxAtStartPar
 Come regola generale, la ricerca della soluzione particolare dell’equazione completa è guidata dall’espressione della forzante. Ad esempio:
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
-forzanti polinomiali
+con \sphinxstylestrong{forzanti polinomiali} si cerca una soluzione particolare polinomiale
 
 \item {} 
 \sphinxAtStartPar
-forzanti esponenziali
+con \sphinxstylestrong{forzanti esponenziali} si cerca una soluzione particolare esponenziale
 
 \item {} 
 \sphinxAtStartPar
-forzanti armoniche
-
-\item {} 
-\sphinxAtStartPar
-Equazioni di primo grado
+con \sphinxstylestrong{forzanti armoniche} si cerca una soluzione particolare armonica
 
 \end{itemize}
-\begin{equation*}
-\begin{split}m \dot{x} + c x  = f(t)\end{split}
-\end{equation*}
-\sphinxAtStartPar
-Soluzione dell’equazione omogenea
-\begin{equation*}
-\begin{split}x_o(t) = C e^{-\frac{c}{m} t}\end{split}
-\end{equation*}\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-Equazioni di secondo grado
 
-\end{itemize}
-\begin{equation*}
-\begin{split}m \ddot{x} + c \dot{x} + k x = f(t)\end{split}
-\end{equation*}
 \sphinxAtStartPar
-Soluzione dell’equazione omogenea
-\begin{equation*}
-\begin{split}s_{1,2} = \sigma \mp i \omega\end{split}
-\end{equation*}\begin{equation*}
-\begin{split}\begin{aligned}
-x_o(t) & = C_1 e^{s_1 t } + C_2 e^{s_2 t} = \\
-       & = e^{\sigma t} \left( C_1 e^{-i \omega t } + C_2 e^{i \omega t} \right) \ ,
-\end{aligned}\end{split}
-\end{equation*}
-\sphinxAtStartPar
-con le costanti di integrazione complesse coniugate,
-\begin{equation*}
-\begin{split}C_1 = C_2^* = (A - i B)^* = A + i B\end{split}
-\end{equation*}
-\sphinxAtStartPar
-al fine di avere una soluzione reale. Ricordando che la somma di un numero complesso e del suo coniugato vale due volte la parte reale,
-\begin{equation*}
-\begin{split}w + w^* = (u+iv) + (u+iv)^* = u+iv + u - i v = 2 u = 2 \text{Re}\{w\}\end{split}
-\end{equation*}
-\sphinxAtStartPar
-si può riscrivere la soluzione dell’equazione omogenea
-\begin{equation*}
-\begin{split}x_o(t) = 2 \left[ A \cos ( \omega t ) + B \sin (\omega t ) \right] \end{split}
-\end{equation*}
-\sphinxAtStartPar
-avendo riconosciuto
-\begin{equation*}
-\begin{split}\begin{aligned}
-  \text{Re}\{C_2 e^{i \omega t}\} &= \text{Re}\{ (A - i B)(\cos(\omega t) + i \sin(\omega t)\} = \\
-  & = \text{Re}\{ A \cos(\omega t) + B \sin (\omega t) + i \left[ A \sin (\omega t) - B \cos (\omega t) \right]\} \ .
-\end{aligned}\end{split}
-\end{equation*}
+Nel caso in cui la soluzione particolare abbia la forma di una delle soluzioni della soluzione particolare, si adotta la stessa tecnica adottata nel caso di zeri multipli.
+
+
+\paragraph{Soluzione degli esempi}
+\label{\detokenize{ch/ode:soluzione-degli-esempi}}\label{\detokenize{ch/ode:ode-hs-types-linear-const-ex-sol}}\subsubsection*{Esempio \sphinxhyphen{} Temperatura di un corpo, soggetto a convezione.}
+\subsubsection*{Esempio \sphinxhyphen{} Sistema massa\sphinxhyphen{}molla\sphinxhyphen{}smorzatore}
+\subsubsection*{Esempio \sphinxhyphen{} Circuito RLC. \sphinxstylestrong{todo}}
+\subsubsection*{Esempio \sphinxhyphen{} Caduta di un grave \sphinxhyphen{} 1: senza resistenza}
+\subsubsection*{Esempio \sphinxhyphen{} Caduta di un grave \sphinxhyphen{} 2: con resistenza lineare nella velocità}
+\subsubsection*{Esempio \sphinxhyphen{} Caduta di un grave \sphinxhyphen{} 3: con resistenza quadratica nella velocità}
+\subsubsection*{Esempio \sphinxhyphen{} Moto parabolico di un grave \sphinxhyphen{} 1: senza resistenza}
+\subsubsection*{Esempio \sphinxhyphen{} Moto parabolico di un grave \sphinxhyphen{} 2: con resistenza lineare nella velocità}
+\subsubsection*{Esempio \sphinxhyphen{} Deformazione a torsione di una trave}
+\subsubsection*{Esempio \sphinxhyphen{} Deformazione a flessione di una trave}
+
 
 \subsubsection{Equazioni separabili: tecnica di soluzione di separazione delle variabili}
-\label{\detokenize{ch/ode:equazioni-separabili-tecnica-di-soluzione-di-separazione-delle-variabili}}\begin{equation*}
+\label{\detokenize{ch/ode:equazioni-separabili-tecnica-di-soluzione-di-separazione-delle-variabili}}\label{\detokenize{ch/ode:ode-hs-types-separable}}\begin{equation*}
 \begin{split}\frac{d y}{d x} = f(y(x)) \ g(x) \end{split}
 \end{equation*}
 \sphinxAtStartPar
@@ -6452,100 +6548,9 @@ e integrata con le opportune condizioni
 \begin{split}\tilde{F}(y(x)) - \tilde{F}(y(x_0)) = G(x) - G(x_0)\end{split}
 \end{equation*}
 
-\subsubsection{Esempi}
-\label{\detokenize{ch/ode:id1}}\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-Moto rettilineo in un campo di forze costante e uniforme
 
-\end{itemize}
-\begin{equation*}
-\begin{split}m \ddot{x} = f =: m g\end{split}
-\end{equation*}
-\sphinxAtStartPar
-L’integrazione produce
-\begin{equation*}
-\begin{split}x(t) = \frac{1}{2} g t^2 + v_0 t + x_0\end{split}
-\end{equation*}\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-Moto di un corpo in un campo di forze costante e uniforme e forza viscosa (lineare e quadratica)
 
-\end{itemize}
-\begin{equation*}
-\begin{split}\begin{cases}
-m \dot{v} = f + f^{visc} \\
-\dot{x} = v
-\end{cases}\end{split}
-\end{equation*}
-\sphinxAtStartPar
-\sphinxstylestrong{resistenza proporzionale alla velocità}
-\$\(\begin{cases}
-m \dot{v} + c v = mg \\
-\dot{x} = v
-\end{cases}\)\$
 
-\sphinxAtStartPar
-\sphinxstylestrong{resistenza proporzionale al quadrato della velocità}
-\$\(\begin{cases}
-m \dot{v} + \frac{1}{2} \rho S c_x v^2 = mg \\
-\dot{x} = v
-\end{cases}\)\$
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-Temperatura della testa di una termocoppia
-
-\end{itemize}
-\begin{equation*}
-\begin{split}\dot{E} = \dot{Q} \ ,\end{split}
-\end{equation*}
-\sphinxAtStartPar
-con \(E = m c T\), \(\dot{Q} = h (T_e - T)\)
-\begin{equation*}
-\begin{split}m c \dot{T} + h T = h T_e\end{split}
-\end{equation*}\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-Distribuzione della temperatura, in un caso stazionario
-
-\end{itemize}
-\begin{equation*}
-\begin{split}(k T')' = \rho r\end{split}
-\end{equation*}\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-Sistema massa\sphinxhyphen{}molla\sphinxhyphen{}smorzatore, libero e forzato (\sphinxstylestrong{todo} risonanza)
-
-\end{itemize}
-\begin{equation*}
-\begin{split}m \ddot{x} + c \dot{x} + k x = f\end{split}
-\end{equation*}\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-Circuiti RLC (analogia formale con sistema MMS)
-
-\end{itemize}
-
-\sphinxAtStartPar
-\(\dots\)
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-Deformazione a trazione di una trave
-
-\end{itemize}
-\begin{equation*}
-\begin{split}(EA u')' = f\end{split}
-\end{equation*}\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-Deformazione a flessione di una trave
-
-\end{itemize}
-\begin{equation*}
-\begin{split}(EJ w'')'' = f\end{split}
-\end{equation*}
 \sphinxstepscope
 
 
