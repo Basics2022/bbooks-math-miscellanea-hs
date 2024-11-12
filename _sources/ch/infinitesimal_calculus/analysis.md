@@ -214,14 +214,14 @@ $$\lim_{x \rightarrow x_0} \frac{h(x)}{k(x)} = \frac{a}{b} \lim_{x \rightarrow x
 
   $$\lim_{x \rightarrow 0} \frac{x - \sin x}{x^2} \quad \text{oppure} \quad \lim_{x \rightarrow 0} \frac{x - \sin x}{x^3} $$
 
-  La [serie polinomiale]() della funzione seno, produce un'approssimazione $\sin x = x - \frac{x^3}{3!} + O(x^5)$ e quindi il numeratore delle due frazioni ha un'approssimazione
+  Come mostrato nel capitolo sulle derivate, nella sezione sulle espansioni in [serie polinomali di Taylor e MacLaurin](infinitesimal-calculus:derivatives:taylor), la serie polinomiale {eq}`eq:infinitesimal-calculus:derivatives:taylor:fund-limits` della funzione seno produce un'approssimazione $\sin x = x - \frac{x^3}{3!} + O(x^5)$; quindi il numeratore delle due frazioni ha un termine dominante di terzo grado,
 
-  $$x - \sin x = x - \left( x - \frac{x}{3!} + O(x^5) \right) = \frax{x}{3!} + O(x^5) \sim \frac{1}{6} x^3 \ .$$
+  $$x - \sin x = x - \left( x - \frac{x}{3!} + O(x^5) \right) = \frac{x}{3!} + O(x^5) \sim \frac{1}{6} x^3 \ ,$$
 
-  Il risultato dei due limiti è quindi
+  che viene utilizzato nel calcolo dei limiti desiderati
 
-  $$\lim_{x \rightarrow 0} \frac{x - \ sin x}{x^2} = \lim_{x \rightarrow 0} \frac{\frac{1}{6} x^3 + O(x^5)}{x^2} = 0 $$
-  $$\lim_{x \rightarrow 0} \frac{x - \ sin x}{x^3} = \lim_{x \rightarrow 0} \frac{\frac{1}{6} x^3 + O(x^5)}{x^3} = \frac{1}{6} $$
+  $$\lim_{x \rightarrow 0} \frac{x - \sin x}{x^2} = \lim_{x \rightarrow 0} \frac{\frac{1}{6} x^3 + O(x^5)}{x^2} = 0 $$
+  $$\lim_{x \rightarrow 0} \frac{x - \sin x}{x^3} = \lim_{x \rightarrow 0} \frac{\frac{1}{6} x^3 + O(x^5)}{x^3} = \frac{1}{6} $$
 
 
 (infinitesimal-calculus:limits:fund)=

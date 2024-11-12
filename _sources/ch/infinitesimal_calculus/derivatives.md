@@ -71,6 +71,8 @@ $$ \dfrac{d f^{-1}}{d y}\bigg|_{y = f(x)} = \dfrac{1}{ \dfrac{d y}{d x}\bigg|_{x
 
 (infinitesimal-calculus:derivatives:thm:fermat)=
 ```{prf:theorem} Teorema di Fermat
+:label: thm:infinitesimal-calculus:derivatives:thm:fermat
+
 Data la funzione $f: (a,b) \rightarrow \mathbb{R}$ derivabile nel punto di estremo locale $x_0 \in (a,b)$, allora $f'(x_0) = 0$.
 ```
 ```{dropdown} Dimostrazione
@@ -103,34 +105,52 @@ La dimostrazione del teorema di Fermat...
 
 (infinitesimal-calculus:derivatives:thm:rolle)=
 ```{prf:theorem} Teorema di Rolle
+:label: thm:infinitesimal-calculus:derivatives:thm:rolle
+
 Data la funzione $f: [a,b] \rightarrow \mathbb{R}$ continua e derivabile in ogni punto dell'intervallo $(a,b)$ con $f(a) = f(b)$, allora esiste un valore $c \in (a,b)$ in cui $f'(c) = 0$.
 ```
 ```{dropdown} Dimostrazione
-**todo**
+Per il [teorema di Weierstrass](infinitesimal-calculus:continuous-fun:thms:weierstrass), la funzione $f$ ha un massimo $M$ e un minimo $m$ assoluti nell'intervallo $[a,b]$. Si distinguono due casi:
+- massimo e minimo sono nei punti estremi dell'intervallo. Allora la funzione è costante, e la derivata è nulla in ogni punto $c \in (a,b)$
+- i punti di massimo e di minimo sono interni all'intervallo. In questo caso, per il [teorema di Fermat](infinitesimal-calculus:derivatives:thm:rolle) i punti $c$ di minimo o massimo verificano la condizione $f'(c) = 0$.
+
 ```
 
 (infinitesimal-calculus:derivatives:thm:cauchy)=
 ```{prf:theorem} Teorema di Cauchy
-Date le funzioni $f, g: [a,b] \rightarrow \mathbb{R}$ continue e derivabili in ogni punto dell'intervallo $(a,b)$ con $f(a) = f(b)$, allora esiste un valore $c \in (a,b)$ tale che
+:label: thm:infinitesimal-calculus:derivatives:thm:cauchy
+
+Date le funzioni $f, g: [a,b] \rightarrow \mathbb{R}$ continue in $[a,b]$ e derivabili in $(a,b)$, allora esiste almeno un punto $c \in (a,b)$ tale che
+
+$$\left[ g(b) - g(a) \right] \, f'(c) = \left[ f(b) - f(a) \right] \, g'(c) \ .$$
+
+```
+```{dropdown} Dimostrazione
+Si applica il [teorema di Rolle](infinitesimal-calculus:derivatives:thm:rolle) alla funzione
+
+$$h(x) = \left[ g(b) - g(a) \right] \, f(x) - \left[ f(b) - f(a) \right] \, g(x)$$
+
+continua in $[a,b]$, derivabile in $(a,b)$ e con $h(a) = g(b) \, f(a) - f(b) \, g(a) = h(b)$.
+
+```
+
+(infinitesimal-calculus:derivatives:thm:lagrange)=
+```{prf:theorem} Theorema di Lagrange
+:label: thm:infinitesimal-calculus:derivatives:thm:lagrange
+
+Data la funzione $f, g: [a,b] \rightarrow \mathbb{R}$ continua in $[a,b]$ e derivabile in $(a,b)$, allora esiste un valore $c \in (a,b)$ tale che
 
 $$f(b) - f(a) = (b -  a) f'(c) \ .$$
 
 ```
 ```{dropdown} Dimostrazione
-**todo**
-```
-
-(infinitesimal-calculus:derivatives:thm:lagrange)=
-```{prf:theorem} Theorema di Lagrange
-Date le funzioni $f, g: [a,b] \rightarrow \mathbb{R}$ continue e derivabili in ogni punto dell'intervallo $(a,b)$ con $f(a) = f(b)$, allora esiste un valore $c \in (a,b)$ tale che
-
-```
-```{dropdown} Dimostrazione
-**todo** Usando il teorema di Cauhcy con $g(x) = x$.
+Si applica il [teorema di Cauhcy](infinitesimal-calculus:derivatives:thm:lagrange) scegliendo la funzione $g(x) = x$.
 ```
 
 (infinitesimal-calculus:derivatives:thm:hopital)=
-```{prf:theorem} Teorema di de l'Hopital (Bernoulli)
+```{prf:theorem} Teorema di de l'Hopital 
+:label: thm:infinitesimal-calculus:derivatives:thm:hopital
+
 Siano $f(x), g(x): [a,b] \rightarrow \mathbb{R}$ funzioni reali di variabile reale continue in $[a,b]$ e derivabili in $(a,b) \backslash \{ x_0 \}$.
 
 $$\begin{aligned}
@@ -140,16 +160,20 @@ $$\begin{aligned}
 
 Se esiste 
 
-$$ \lim_{x \rightarrow x_0} \frac{f'(x)}{g'(x)} = L \quad \text{finito}$$
+$$ \lim_{x \rightarrow x_0} \frac{f'(x)}{g'(x)} = \ell \quad \text{finito}$$
 
 allora
 
-$$ \lim_{x \rightarrow x_0} \frac{f(x)}{g(x)} = L \ . $$
+$$ \lim_{x \rightarrow x_0} \frac{f(x)}{g(x)} = \ell \ . $$
 
 **todo** Controllare l'enunciato
 ```
+
 ```{dropdown} Dimostrazione
-**todo**
+**Forma indeterminata $\frac{0}{0}$.** Usando il [teorema di Cauchy](infinitesimal-calculus:derivatives:thm:cauchy) e il [teorema di Rolle](infinitesimal-calculus:derivatives:thm:rolle) **todo**
+
+**Forma indeterminata $\frac{\infty}{\infty}$.** Usando il [teorema di Cauchy](infinitesimal-calculus:derivatives:thm:cauchy) e il [teorema di Lagrange](infinitesimal-calculus:derivatives:thm:lagrange) **todo**
+
 ```
 **Oss.** Il teorema di de l'Hopital può essere applicato anche in successione, più di una volta, fermandosi al primo rapporto di derivate dello stesso ordine che non produce una forma indeterminata.
 
@@ -167,7 +191,7 @@ f(x) & = \cos x \qquad & \qquad f'(x) & =-\sin x
 \end{aligned}$$ (eq:infinitesimal-calculus:derivatives:fund)
 
 ```{dropdown} Dimostrazione di $\ (x^n)'$
-Usando la formua binomiale $$(x + \varepsilon)^n = x^n + n x^{n-1} \varepsilon + f(\varepsilon^2, \varepsilon^3, \dots)$$ **todo** *aggiungere riferimento*,
+Usando la [formula binomiale](math-hs:precalculus:polynomials:binomial-thm) $(x + \varepsilon)^n = x^n + n x^{n-1} \varepsilon + f(\varepsilon^2, \varepsilon^3, \dots)$,
 
 $$\begin{aligned}
   \dfrac{d}{dx} x^n
@@ -251,12 +275,13 @@ La serie di MacLaurin è la serie di Taylor centrata in $x_0 = 0$.
 
 La serie di Taylor troncata al $n$-esimo termine fornisce un'approssimazione locale della funzione $f(x)$ di ordine $n$, nel senso definito dal seguente teorema.
 ```{prf:theorem} Approssimazione locale
+:label: thm:infinitesimal-calculus:derivatives:taylor
 
 $$\lim_{x \rightarrow x_0} \frac{f(x) - T[f(x); x_0]}{x^n} = f^{(n)}(x_0) \ , $$
 
 $$f(x) = T[f(x); x_0] + o(x^n) \quad \text{ per } \quad x \rightarrow x_0$$
 
-```
+``` 
 ```{dropdown} Dimostrazione
 Usando il teorema di de l'Hopital, fino a quando il rapporto non è una forma indeterminata
 
@@ -287,22 +312,20 @@ $$\begin{aligned}
  \ln (1+x) & = x - \frac{x^2}{2} + \frac{x^3}{3} + o(x^3) \\
  (1+x)^a & = 1 + a x + a(a-1) \frac{x^2}{2} + o(x^2) \\
  e^x     & = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + \frac{x^5}{5!} + o(x^5)
-\end{aligned}$$
+\end{aligned}$$ (eq:infinitesimal-calculus:derivatives:taylor:fund-limits)
 
 **todo** *Dimostrare la convergenza delle serie. Convergenza puntuale, convergenza uniforme (in un insieme di convergenza, di solito centrato in un punto e le cui dimensioni sono definite da un raggio di convergenza)*
 
 **Rivisitazione limiti notevoli**
 Per $x \rightarrow 0$
 
-$$(1+x)^a - 1 = a \, x + o(x)$$
-
-$$\sin x = x +o(x)$$
-
-$$1 - \cos x = \frac{1}{2} x^2 + o(x^3)$$
-
-$$e^x - 1 = x + o(x)$$
-
-$$\ln(1+x) = x + o(x)$$
+$$\begin{aligned}
+  \sin x      & = x +o(x) \\
+  1 - \cos x  & = \frac{1}{2} x^2 + o(x^3) \\
+  e^x - 1     & = x + o(x) \\
+  \ln(1+x)    & = x + o(x) \\
+  (1+x)^a - 1 & = a \, x + o(x) \\
+\end{aligned}$$
 
 **Identità di Eulero.** Usando l'espansione in serie di Taylor per l'esponenziale complesso $e^{ix}$, si ottiene
 
