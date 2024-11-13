@@ -904,11 +904,51 @@ Esempio - Deformazione a flessione di una trave<div class="sd-summary-down docut
 \[\tilde{F}(y(x)) - \tilde{F}(y(x_0)) = G(x) - G(x_0)\]</div>
 <div class="section" id="ode-hs-types-separable-ex">
 <span id="id1"></span><h4>Esempi<a class="headerlink" href="#ode-hs-types-separable-ex" title="Permalink to this heading">#</a></h4>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Equazione logistica<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
 <div class="math notranslate nohighlight">
 \[\frac{d p}{d t} =  a p \left( 1 - \frac{p}{b} \right)\]</div>
 <div class="math notranslate nohighlight">
-\[\frac{d p}{p \left(1 - \frac{p}{b}\right)} = a \, dt\]</div>
+\[\frac{d p}{p \left(1 - \frac{p}{b}\right)} = a dt\]</div>
+<div class="math notranslate nohighlight">
+\[\left( \frac{1}{p} - \frac{1}{p - b} \right) dp = a dt\]</div>
+<div class="math notranslate nohighlight">
+\[\int_{p_0}^{p(t)} \left( \frac{1}{p} - \frac{1}{p - b} \right) dp = \int_{t_0}^{t} a \, dt\]</div>
+<div class="math notranslate nohighlight">
+\[\ln \left|\frac{p(t)}{p(t)-b}\right| = a t + C\]</div>
+<div class="math notranslate nohighlight">
+\[\left|\frac{p(t)}{p(t)-b}\right| = e^{a \, t + C} = K \, e^{a t}\]</div>
+<div class="math notranslate nohighlight">
+\[p(t) = - \frac{b \, e^{at}}{1 - K \, e^{a t}} = \frac{b}{K - e^{-at}} \]</div>
+<!--
+$$\ln \left. \left|\frac{p}{p-b}\right| \right|_{p_0}^{p(t)} = a \left( t - t_0 \right)$$
+$$\ln \left| \frac{p(t)}{p(t)-b} \right| - \ln \left| \frac{p_0}{p_0-b} \right| = a \left( t - t_0 \right)$$
+-->
 </div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Equazioni nella forma <span class="math notranslate nohighlight">\(\ y'(x) = y^n(x)\)</span><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="math notranslate nohighlight">
+\[y'(x) = y^n\]</div>
+<div class="math notranslate nohighlight">
+\[y^{-n} \, dy = dx\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+ n = 0: &amp; \quad  y(x) = x + C \\
+ n = 1: &amp; \quad  \ln y(x) = x + C \\
+ \dots: &amp; \quad  \frac{1}{1-n} y^{-n+1}(x) = x + C  \\
+\end{aligned}\end{split}\]</div>
+</div>
+</details></div>
 </div>
 </div>
 </div>
