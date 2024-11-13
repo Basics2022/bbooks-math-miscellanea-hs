@@ -470,7 +470,10 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#soluzione-degli-esempi">Soluzione degli esempi</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-differenziali-a-variabili-separabili-tecnica-di-soluzione-di-separazione-delle-variabili">Equazioni differenziali a variabili separabili: tecnica di soluzione di separazione delle variabili</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-differenziali-a-variabili-separabili-tecnica-di-soluzione-di-separazione-delle-variabili">Equazioni differenziali a variabili separabili: tecnica di soluzione di separazione delle variabili</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ode-hs-types-separable-ex">Esempi</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -493,7 +496,7 @@ document.write(`
 <p class="sd-p-0 sd-m-0">basics</p>
 </div>
 <div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
-<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-calendar" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path></svg></span>12 nov 2024</p>
+<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-calendar" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path></svg></span>13 nov 2024</p>
 </div>
 <div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
 <p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>11 min read</p>
@@ -899,104 +902,53 @@ Esempio - Deformazione a flessione di una trave<div class="sd-summary-down docut
 <p>e integrata con le opportune condizioni</p>
 <div class="math notranslate nohighlight">
 \[\tilde{F}(y(x)) - \tilde{F}(y(x_0)) = G(x) - G(x_0)\]</div>
+<div class="section" id="ode-hs-types-separable-ex">
+<span id="id1"></span><h4>Esempi<a class="headerlink" href="#ode-hs-types-separable-ex" title="Permalink to this heading">#</a></h4>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Equazione logistica<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="math notranslate nohighlight">
+\[\frac{d p}{d t} =  a p \left( 1 - \frac{p}{b} \right)\]</div>
+<div class="math notranslate nohighlight">
+\[\frac{d p}{p \left(1 - \frac{p}{b}\right)} = a dt\]</div>
+<div class="math notranslate nohighlight">
+\[\left( \frac{1}{p} - \frac{1}{p - b} \right) dp = a dt\]</div>
+<div class="math notranslate nohighlight">
+\[\int_{p_0}^{p(t)} \left( \frac{1}{p} - \frac{1}{p - b} \right) dp = \int_{t_0}^{t} a \, dt\]</div>
+<div class="math notranslate nohighlight">
+\[\ln \left|\frac{p(t)}{p(t)-b}\right| = a t + C\]</div>
+<div class="math notranslate nohighlight">
+\[\left|\frac{p(t)}{p(t)-b}\right| = e^{a \, t + C} = K \, e^{a t}\]</div>
+<div class="math notranslate nohighlight">
+\[p(t) = - \frac{b \, e^{at}}{1 - K \, e^{a t}} = \frac{b}{K - e^{-at}} \]</div>
 <!--
-- Equazioni di primo grado
-
-$$m \dot{x} + c x  = f(t)$$
-
-Soluzione dell'equazione omogenea
-
-$$x_o(t) = C e^{-\frac{c}{m} t}$$
-
-- Equazioni di secondo grado
-
-$$m \ddot{x} + c \dot{x} + k x = f(t)$$
-
-Soluzione dell'equazione omogenea
-
-$$s_{1,2} = \sigma \mp i \omega$$
-
-$$\begin{aligned}
-x_o(t) & = C_1 e^{s_1 t } + C_2 e^{s_2 t} = \\
-       & = e^{\sigma t} \left( C_1 e^{-i \omega t } + C_2 e^{i \omega t} \right) \ ,
-\end{aligned}$$
-
-con le costanti di integrazione complesse coniugate,
-
-$$C_1 = C_2^* = (A - i B)^* = A + i B$$
-
-al fine di avere una soluzione reale. Ricordando che la somma di un numero complesso e del suo coniugato vale due volte la parte reale,
-
-$$w + w^* = (u+iv) + (u+iv)^* = u+iv + u - i v = 2 u = 2 \text{Re}\{w\}$$
-
-si può riscrivere la soluzione dell'equazione omogenea
-
-$$x_o(t) = 2 \left[ A \cos ( \omega t ) + B \sin (\omega t ) \right] $$
-
-avendo riconosciuto 
-
-$$\begin{aligned}
-  \text{Re}\{C_2 e^{i \omega t}\} &= \text{Re}\{ (A - i B)(\cos(\omega t) + i \sin(\omega t)\} = \\
-  & = \text{Re}\{ A \cos(\omega t) + B \sin (\omega t) + i \left[ A \sin (\omega t) - B \cos (\omega t) \right]\} \ .
-\end{aligned}$$
+$$\ln \left. \left|\frac{p}{p-b}\right| \right|_{p_0}^{p(t)} = a \left( t - t_0 \right)$$
+$$\ln \left| \frac{p(t)}{p(t)-b} \right| - \ln \left| \frac{p_0}{p_0-b} \right| = a \left( t - t_0 \right)$$
 -->
-<!--
-### Esempi
-- Moto rettilineo in un campo di forze costante e uniforme
-
-$$m \ddot{x} = f =: m g$$
-
-L'integrazione produce
-
-$$x(t) = \frac{1}{2} g t^2 + v_0 t + x_0$$
-
-- Moto di un corpo in un campo di forze costante e uniforme e forza viscosa (lineare e quadratica)
-
-$$\begin{cases}
-m \dot{v} = f + f^{visc} \\
-\dot{x} = v
-\end{cases}$$
-
-**resistenza proporzionale alla velocità**
-$$\begin{cases}
-m \dot{v} + c v = mg \\
-\dot{x} = v
-\end{cases}$$
-
-**resistenza proporzionale al quadrato della velocità**
-$$\begin{cases}
-m \dot{v} + \frac{1}{2} \rho S c_x v^2 = mg \\
-\dot{x} = v
-\end{cases}$$
-
-- Temperatura della testa di una termocoppia
-
-$$\dot{E} = \dot{Q} \ ,$$
-
-con $E = m c T$, $\dot{Q} = h (T_e - T)$
-
-$$m c \dot{T} + h T = h T_e$$
-
-- Distribuzione della temperatura, in un caso stazionario
-
-$$(k T')' = \rho r$$
-
-- Sistema massa-molla-smorzatore, libero e forzato (**todo** risonanza)
-
-$$m \ddot{x} + c \dot{x} + k x = f$$
-
-- Circuiti RLC (analogia formale con sistema MMS)
-
-$\dots$
-
-- Deformazione a trazione di una trave
-
-$$(EA u')' = f$$
-
-- Deformazione a flessione di una trave
-
-$$(EJ w'')'' = f$$
--->
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Equazioni nella forma <span class="math notranslate nohighlight">\(\ y'(x) = y^n(x)\)</span><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="math notranslate nohighlight">
+\[y'(x) = y^n\]</div>
+<div class="math notranslate nohighlight">
+\[y^{-n} \, dy = dx\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+ n = 0: &amp; \quad  y(x) = x + C \\
+ n = 1: &amp; \quad  \ln y(x) = x + C \\
+ \dots: &amp; \quad  \frac{1}{1-n} y^{-n+1}(x) = x + C  \\
+\end{aligned}\end{split}\]</div>
+</div>
+</details></div>
 </div>
 </div>
 </div>
@@ -1077,7 +1029,10 @@ $$(EJ w'')'' = f$$
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#soluzione-degli-esempi">Soluzione degli esempi</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-differenziali-a-variabili-separabili-tecnica-di-soluzione-di-separazione-delle-variabili">Equazioni differenziali a variabili separabili: tecnica di soluzione di separazione delle variabili</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-differenziali-a-variabili-separabili-tecnica-di-soluzione-di-separazione-delle-variabili">Equazioni differenziali a variabili separabili: tecnica di soluzione di separazione delle variabili</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ode-hs-types-separable-ex">Esempi</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

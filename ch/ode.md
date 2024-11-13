@@ -347,102 +347,42 @@ e integrata con le opportune condizioni
 
 $$\tilde{F}(y(x)) - \tilde{F}(y(x_0)) = G(x) - G(x_0)$$
 
+(ode-hs:types:separable:ex)=
+#### Esempi
+
+```{dropdown} Equazione logistica
+$$\frac{d p}{d t} =  a p \left( 1 - \frac{p}{b} \right)$$
+
+$$\frac{d p}{p \left(1 - \frac{p}{b}\right)} = a dt$$
+
+$$\left( \frac{1}{p} - \frac{1}{p - b} \right) dp = a dt$$
+
+$$\int_{p_0}^{p(t)} \left( \frac{1}{p} - \frac{1}{p - b} \right) dp = \int_{t_0}^{t} a \, dt$$
+
+$$\ln \left|\frac{p(t)}{p(t)-b}\right| = a t + C$$
+
+$$\left|\frac{p(t)}{p(t)-b}\right| = e^{a \, t + C} = K \, e^{a t}$$
+
+$$p(t) = - \frac{b \, e^{at}}{1 - K \, e^{a t}} = \frac{b}{K - e^{-at}} $$
 
 <!--
-- Equazioni di primo grado
+$$\ln \left. \left|\frac{p}{p-b}\right| \right|_{p_0}^{p(t)} = a \left( t - t_0 \right)$$
+$$\ln \left| \frac{p(t)}{p(t)-b} \right| - \ln \left| \frac{p_0}{p_0-b} \right| = a \left( t - t_0 \right)$$
+-->
+```
 
-$$m \dot{x} + c x  = f(t)$$
-
-Soluzione dell'equazione omogenea
-
-$$x_o(t) = C e^{-\frac{c}{m} t}$$
-
-- Equazioni di secondo grado
-
-$$m \ddot{x} + c \dot{x} + k x = f(t)$$
-
-Soluzione dell'equazione omogenea
-
-$$s_{1,2} = \sigma \mp i \omega$$
+```{dropdown} Equazioni nella forma $\ y'(x) = y^n(x)$
+$$y'(x) = y^n$$
+$$y^{-n} \, dy = dx$$
 
 $$\begin{aligned}
-x_o(t) & = C_1 e^{s_1 t } + C_2 e^{s_2 t} = \\
-       & = e^{\sigma t} \left( C_1 e^{-i \omega t } + C_2 e^{i \omega t} \right) \ ,
+ n = 0: & \quad  y(x) = x + C \\
+ n = 1: & \quad  \ln y(x) = x + C \\
+ \dots: & \quad  \frac{1}{1-n} y^{-n+1}(x) = x + C  \\
 \end{aligned}$$
 
-con le costanti di integrazione complesse coniugate,
+```
 
-$$C_1 = C_2^* = (A - i B)^* = A + i B$$
 
-al fine di avere una soluzione reale. Ricordando che la somma di un numero complesso e del suo coniugato vale due volte la parte reale,
 
-$$w + w^* = (u+iv) + (u+iv)^* = u+iv + u - i v = 2 u = 2 \text{Re}\{w\}$$
 
-si può riscrivere la soluzione dell'equazione omogenea
-
-$$x_o(t) = 2 \left[ A \cos ( \omega t ) + B \sin (\omega t ) \right] $$
-
-avendo riconosciuto 
-
-$$\begin{aligned}
-  \text{Re}\{C_2 e^{i \omega t}\} &= \text{Re}\{ (A - i B)(\cos(\omega t) + i \sin(\omega t)\} = \\
-  & = \text{Re}\{ A \cos(\omega t) + B \sin (\omega t) + i \left[ A \sin (\omega t) - B \cos (\omega t) \right]\} \ .
-\end{aligned}$$
--->
-<!--
-### Esempi
-- Moto rettilineo in un campo di forze costante e uniforme
-
-$$m \ddot{x} = f =: m g$$
-
-L'integrazione produce
-
-$$x(t) = \frac{1}{2} g t^2 + v_0 t + x_0$$
-
-- Moto di un corpo in un campo di forze costante e uniforme e forza viscosa (lineare e quadratica)
-
-$$\begin{cases}
-m \dot{v} = f + f^{visc} \\
-\dot{x} = v
-\end{cases}$$
-
-**resistenza proporzionale alla velocità**
-$$\begin{cases}
-m \dot{v} + c v = mg \\
-\dot{x} = v
-\end{cases}$$
-
-**resistenza proporzionale al quadrato della velocità**
-$$\begin{cases}
-m \dot{v} + \frac{1}{2} \rho S c_x v^2 = mg \\
-\dot{x} = v
-\end{cases}$$
-
-- Temperatura della testa di una termocoppia
-
-$$\dot{E} = \dot{Q} \ ,$$
-
-con $E = m c T$, $\dot{Q} = h (T_e - T)$
-
-$$m c \dot{T} + h T = h T_e$$
-
-- Distribuzione della temperatura, in un caso stazionario
-
-$$(k T')' = \rho r$$
-
-- Sistema massa-molla-smorzatore, libero e forzato (**todo** risonanza)
-
-$$m \ddot{x} + c \dot{x} + k x = f$$
-
-- Circuiti RLC (analogia formale con sistema MMS)
-
-$\dots$
-
-- Deformazione a trazione di una trave
-
-$$(EA u')' = f$$
-
-- Deformazione a flessione di una trave
-
-$$(EJ w'')'' = f$$
--->
