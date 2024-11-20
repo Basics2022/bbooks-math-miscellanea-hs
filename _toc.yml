@@ -7,12 +7,14 @@ options:
   numbered: True
 parts:
 - caption: Introduzione
+  numbered: True
   chapters:
   - file: ch/school-programs
     sections:
     - file: ch/school-programs/intro
     - file: ch/school-programs/current-guidelines-italy
 - caption: Algebra
+  numbered: True
   chapters:
   - file: ch/algebra
   - file: ch/algebra/real-algebra
@@ -25,6 +27,7 @@ parts:
     - file: ch/algebra/vector-algebra-euclidean-space
   - file: ch/algebra/complex-algebra
 - caption: Geometria analitica
+  numbered: True
   chapters:
   - file: ch/analytic_geometry
     sections:
@@ -48,6 +51,7 @@ parts:
     - file: ch/analytic_geometry/analytic_geometry_3d/lines
     - file: ch/analytic_geometry/analytic_geometry_3d/cone
 - caption: Precalcolo
+  numbered: True
   chapters:
   - file: ch/precalculus
   - file: ch/precalculus/real-functions
@@ -59,6 +63,7 @@ parts:
     - file: ch/exponential_logarithm-proof
   - file: ch/precalculus/multivariable-real-fun
 - caption: Calcolo
+  numbered: True
   chapters:
   - file: ch/calculus
   - file: ch/infinitesimal_calculus
@@ -80,5 +85,10 @@ parts:
     - file: ch/vector-calculus/derivatives
     - file: ch/vector-calculus/integrals
 - caption: Statistica
+  numbered: True
   chapters:
   - file: ch/statistics
+- caption: Indice
+  chapters:
+  - file: genindex.md
+

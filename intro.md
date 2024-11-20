@@ -5,8 +5,6 @@ Questo libro fa parte del materiale pensato per [le scuole superiori](https://ba
 
 
 `````{only} html
-**Obiettivi.** **todo**
-
 **Contenuti.**
 
 ````{dropdown} Algebra

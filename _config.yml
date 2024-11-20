@@ -3,7 +3,7 @@
 
 title: Matematica per le scuole superiori
 author: basics
-logo: logo.png
+logo: logo.svg
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -19,13 +19,6 @@ latex:
 bibtex_bibfiles:
   - references.bib
 
-# sphinx extensions
-sphinx:
-  config:
-    language: it
-  extra_extensions:
-    - sphinx_proof
-
 # Information about where the book exists on the web
 repository:
   url: https://github.com/Basics2022/bbooks-math-miscellanea-hs  # Online location of your book
@@ -35,5 +28,22 @@ repository:
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
+  home_page_in_navbar: True
   use_issues_button: true
   use_repository_button: true
+  extra_navbar: ""
+
+# sphinx extensions
+sphinx:
+  config:
+    language: it
+    html_show_copyright: false
+    html_theme_options:
+      logo:
+        image_light: logo.svg
+        image_dark: logo-dark.svg
+      html_favicon: favicon.svg
+      extra_footer: <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+  extra_extensions:
+    - sphinx_proof
+    - sphinx_exercise
