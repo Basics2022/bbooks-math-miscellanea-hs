@@ -37,11 +37,16 @@ sphinx:
     language: it
     html_show_copyright: false
     html_theme_options:
-      use_issues_button: true
-      use_repository_button: true
       logo:
         image_light: logo.svg
         image_dark: logo-dark.svg
+      repository_url: https://github.com/Basics2022/bbooks-math-miscellanea-hs  # Online location of your book
+      repository_branch: master
+      use_repository_button: True
+      use_edit_page_button: True
+      use_issues_button: True
+      launch_buttons:
+        colab_url: "https://colab.research.google.com"    # colab
       extra_footer: <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
     html_favicon: favicon.svg
   extra_extensions:
