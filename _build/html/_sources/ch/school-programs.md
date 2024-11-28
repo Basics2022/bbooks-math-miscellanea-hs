@@ -1,5 +1,0 @@
-
-# Esempi di programmi
-
-**Esempi.**
-
