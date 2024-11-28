@@ -602,7 +602,7 @@ Divergenza come densità volumetrica del flusso. Dimostrazione con un tetraedro 
                         &amp; + \hat{z} \left( \partial_x f_y - \partial_y f_x \right) 
     = \left| \begin{matrix} \hat{x} &amp; \hat{y} &amp; \hat{z} \\ \partial_x &amp; \partial_y &amp; \partial_z \\ f_x &amp; f_y &amp; f_z \end{matrix} \right| \ .
 \end{aligned}\end{split}\]</div>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
 <summary class="sd-summary-title sd-card-header">
 Rotore come densità di circuitazione. Dimostrazione<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
@@ -613,15 +613,15 @@ Rotore come densità di circuitazione. Dimostrazione<div class="sd-summary-down 
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
   \Gamma_{\partial \Delta V(P)}\left(\vec{f}\right) 
-  &amp; = \vec{f}\left( P - \frac{\Delta x}{3} \hat{x} + \frac{\Delta y}{6} \hat{y} - \frac{\Delta z}{2} \hat{z} \right) \cdot \left( - \hat{x} \Delta x + \hat{y} \Delta y \right) + \\
-  &amp; + \vec{f}\left( P - \frac{\Delta y}{3} \hat{y} + \frac{\Delta z}{6} \hat{z} - \frac{\Delta x}{2} \hat{x} \right) \cdot \left( - \hat{y} \Delta y + \hat{z} \Delta z \right) + \\
-  &amp; + \vec{f}\left( P - \frac{\Delta z}{3} \hat{z} + \frac{\Delta x}{6} \hat{x} - \frac{\Delta y}{2} \hat{y} \right) \cdot \left( - \hat{z} \Delta z + \hat{x} \Delta x \right) = \\
-  &amp; =       - \Delta x \left( f_x + \frac{\Delta x}{2} \partial_x f_x + \frac{\Delta y}{2} \partial_y f_x \right)
-            + \Delta y \left( f_y + \frac{\Delta x}{2} \partial_x f_y + \frac{\Delta y}{2} \partial_y f_y \right) \\
-  &amp; \ \quad - \Delta y \left( f_y + \frac{\Delta y}{2} \partial_y f_y + \frac{\Delta z}{2} \partial_z f_y \right)
-            + \Delta z \left( f_z + \frac{\Delta y}{2} \partial_y f_z + \frac{\Delta z}{2} \partial_z f_z \right) \\
-  &amp; \ \quad - \Delta z \left( f_z + \frac{\Delta z}{2} \partial_z f_z + \frac{\Delta x}{2} \partial_x f_z \right)
-            + \Delta x \left( f_x + \frac{\Delta z}{2} \partial_z f_x + \frac{\Delta x}{2} \partial_x f_x \right) = \\
+  &amp; = \vec{f}\left( P - \frac{\Delta x}{3} \hat{x} + \frac{\Delta y}{6} \hat{y} + \frac{\Delta z}{6} \hat{z} \right) \cdot \left( - \hat{x} \Delta x + \hat{y} \Delta y \right) + \\
+  &amp; + \vec{f}\left( P - \frac{\Delta y}{3} \hat{y} + \frac{\Delta z}{6} \hat{z} + \frac{\Delta x}{6} \hat{x} \right) \cdot \left( - \hat{y} \Delta y + \hat{z} \Delta z \right) + \\
+  &amp; + \vec{f}\left( P - \frac{\Delta z}{3} \hat{z} + \frac{\Delta x}{6} \hat{x} + \frac{\Delta y}{6} \hat{y} \right) \cdot \left( - \hat{z} \Delta z + \hat{x} \Delta x \right) = \\
+  &amp; =       - \Delta x \left( f_x - \frac{\Delta x}{3} \partial_x f_x + \frac{\Delta y}{6} \partial_y f_x + \frac{\Delta z}{6} \partial_z f_x \right)
+            + \Delta y \left( f_y - \frac{\Delta x}{3} \partial_x f_y + \frac{\Delta y}{6} \partial_y f_y + \frac{\Delta z}{6} \partial_z f_y \right) \\
+  &amp; \ \quad - \Delta y \left( f_y - \frac{\Delta y}{3} \partial_y f_y + \frac{\Delta z}{6} \partial_z f_y + \frac{\Delta x}{6} \partial_x f_y \right)
+            + \Delta z \left( f_z - \frac{\Delta y}{3} \partial_y f_z + \frac{\Delta z}{6} \partial_z f_z + \frac{\Delta x}{6} \partial_x f_z \right) \\
+  &amp; \ \quad - \Delta z \left( f_z - \frac{\Delta z}{3} \partial_z f_z + \frac{\Delta x}{6} \partial_x f_z + \frac{\Delta y}{6} \partial_y f_z \right)
+            + \Delta x \left( f_x - \frac{\Delta z}{3} \partial_z f_x + \frac{\Delta x}{6} \partial_x f_x + \frac{\Delta y}{6} \partial_y f_x \right) = \\
   &amp; = \frac{1}{2} \Delta x \Delta y \left( \partial_x f_y - \partial_y f_x \right)
     + \frac{1}{2} \Delta y \Delta z \left( \partial_y f_z - \partial_z f_y \right)
     + \frac{1}{2} \Delta z \Delta x \left( \partial_z f_x - \partial_x f_z \right) = \\

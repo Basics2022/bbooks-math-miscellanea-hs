@@ -102,19 +102,21 @@ $$\begin{aligned}
 \end{aligned}$$
 
 ```{dropdown} Rotore come densità di circuitazione. Dimostrazione
+:open:
+
 Usando le coordinate cartesiane si calcola la circuitazione del campo vettoriale $\vec{f}$ sui lati della faccia maggiore di un tetraedro con spigoli coincidenti con gli assi e di lunghezza $\Delta x$, $\Delta y$, $\Delta z$,
 
 $$\begin{aligned}
   \Gamma_{\partial \Delta V(P)}\left(\vec{f}\right) 
-  & = \vec{f}\left( P - \frac{\Delta x}{3} \hat{x} + \frac{\Delta y}{6} \hat{y} - \frac{\Delta z}{2} \hat{z} \right) \cdot \left( - \hat{x} \Delta x + \hat{y} \Delta y \right) + \\
-  & + \vec{f}\left( P - \frac{\Delta y}{3} \hat{y} + \frac{\Delta z}{6} \hat{z} - \frac{\Delta x}{2} \hat{x} \right) \cdot \left( - \hat{y} \Delta y + \hat{z} \Delta z \right) + \\
-  & + \vec{f}\left( P - \frac{\Delta z}{3} \hat{z} + \frac{\Delta x}{6} \hat{x} - \frac{\Delta y}{2} \hat{y} \right) \cdot \left( - \hat{z} \Delta z + \hat{x} \Delta x \right) = \\
-  & =       - \Delta x \left( f_x + \frac{\Delta x}{2} \partial_x f_x + \frac{\Delta y}{2} \partial_y f_x \right)
-            + \Delta y \left( f_y + \frac{\Delta x}{2} \partial_x f_y + \frac{\Delta y}{2} \partial_y f_y \right) \\
-  & \ \quad - \Delta y \left( f_y + \frac{\Delta y}{2} \partial_y f_y + \frac{\Delta z}{2} \partial_z f_y \right)
-            + \Delta z \left( f_z + \frac{\Delta y}{2} \partial_y f_z + \frac{\Delta z}{2} \partial_z f_z \right) \\
-  & \ \quad - \Delta z \left( f_z + \frac{\Delta z}{2} \partial_z f_z + \frac{\Delta x}{2} \partial_x f_z \right)
-            + \Delta x \left( f_x + \frac{\Delta z}{2} \partial_z f_x + \frac{\Delta x}{2} \partial_x f_x \right) = \\
+  & = \vec{f}\left( P - \frac{\Delta x}{3} \hat{x} + \frac{\Delta y}{6} \hat{y} + \frac{\Delta z}{6} \hat{z} \right) \cdot \left( - \hat{x} \Delta x + \hat{y} \Delta y \right) + \\
+  & + \vec{f}\left( P - \frac{\Delta y}{3} \hat{y} + \frac{\Delta z}{6} \hat{z} + \frac{\Delta x}{6} \hat{x} \right) \cdot \left( - \hat{y} \Delta y + \hat{z} \Delta z \right) + \\
+  & + \vec{f}\left( P - \frac{\Delta z}{3} \hat{z} + \frac{\Delta x}{6} \hat{x} + \frac{\Delta y}{6} \hat{y} \right) \cdot \left( - \hat{z} \Delta z + \hat{x} \Delta x \right) = \\
+  & =       - \Delta x \left( f_x - \frac{\Delta x}{3} \partial_x f_x + \frac{\Delta y}{6} \partial_y f_x + \frac{\Delta z}{6} \partial_z f_x \right)
+            + \Delta y \left( f_y - \frac{\Delta x}{3} \partial_x f_y + \frac{\Delta y}{6} \partial_y f_y + \frac{\Delta z}{6} \partial_z f_y \right) \\
+  & \ \quad - \Delta y \left( f_y - \frac{\Delta y}{3} \partial_y f_y + \frac{\Delta z}{6} \partial_z f_y + \frac{\Delta x}{6} \partial_x f_y \right)
+            + \Delta z \left( f_z - \frac{\Delta y}{3} \partial_y f_z + \frac{\Delta z}{6} \partial_z f_z + \frac{\Delta x}{6} \partial_x f_z \right) \\
+  & \ \quad - \Delta z \left( f_z - \frac{\Delta z}{3} \partial_z f_z + \frac{\Delta x}{6} \partial_x f_z + \frac{\Delta y}{6} \partial_y f_z \right)
+            + \Delta x \left( f_x - \frac{\Delta z}{3} \partial_z f_x + \frac{\Delta x}{6} \partial_x f_x + \frac{\Delta y}{6} \partial_y f_x \right) = \\
   & = \frac{1}{2} \Delta x \Delta y \left( \partial_x f_y - \partial_y f_x \right)
     + \frac{1}{2} \Delta y \Delta z \left( \partial_y f_z - \partial_z f_y \right)
     + \frac{1}{2} \Delta z \Delta x \left( \partial_z f_x - \partial_x f_z \right) = \\
