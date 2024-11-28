@@ -17,8 +17,9 @@
 **Applicazioni.**
 - Verifica delle ipotesi
 - Stima
-- Nell'ambito del machine learning
-  - Regressione
-  - Classificazione
-  - Ottimizzazione/Controllo
+- ...
+- Nell'ambito del machine learning:
+  - SL: regressione/classificazione
+  - UL: clustering, riduzione dimensionale,...
+  - RL: ottimizzazione/controllo
 - ...
