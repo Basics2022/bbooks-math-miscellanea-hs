@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>18.3. Integrali su domini multi-dimensionali &#8212; Matematica per le scuole superiori</title>
+    <title>Variabili stocastiche &#8212; Matematica per le scuole superiori</title>
   
   
   
@@ -65,14 +65,10 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/multivariable-calculus/integrals';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/statistics/random_variables';</script>
     <link rel="shortcut icon" href="../../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="19. Introduzione al calcolo vettoriale su spazi euclidei" href="../vector-calculus.html" />
-    <link rel="prev" title="18.2. Derivate di funzioni di più variabili" href="derivatives.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
@@ -168,9 +164,9 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduzione</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../school-programs.html">Esempi di programmi</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../school-programs/intro.html">Prefazione</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../school-programs/current-guidelines-italy.html">Indicazioni nazionali per i licei</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../program.html">Programma</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../program/current-guidelines-italy.html">Indicazioni nazionali per le superiori italiane</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../program/delta.html"><span class="math notranslate nohighlight">\(\Delta\)</span></a></li>
 </ul>
 </li>
 </ul>
@@ -228,7 +224,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../precalculus/multivariable-real-fun.html">15. Funzioni multi-variabile</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Calcolo</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../calculus.html">16. Introduzione al calcolo</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../infinitesimal_calculus.html">17. Calcolo infinitesimale</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/analysis.html">17.1. Introduzione all’analisi</a></li>
@@ -241,10 +237,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../ode.html">17.4. Equazioni differenziali ordinarie</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="../multivariable-calculus.html">18. Introduzione al calcolo multi-variabile</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="limits.html">18.1. Limite di una funzione di più variabili</a></li>
-<li class="toctree-l2"><a class="reference internal" href="derivatives.html">18.2. Derivate di funzioni di più variabili</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">18.3. Integrali su domini multi-dimensionali</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../multivariable-calculus.html">18. Introduzione al calcolo multi-variabile</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../multivariable-calculus/limits.html">18.1. Limite di una funzione di più variabili</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../multivariable-calculus/derivatives.html">18.2. Derivate di funzioni di più variabili</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../multivariable-calculus/integrals.html">18.3. Integrali su domini multi-dimensionali</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../vector-calculus.html">19. Introduzione al calcolo vettoriale su spazi euclidei</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -331,7 +327,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs/edit/master/ch/multivariable-calculus/integrals.md" target="_blank"
+      <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs/edit/master/ch/statistics/random_variables.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -348,7 +344,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs/issues/new?title=Issue%20on%20page%20%2Fch/multivariable-calculus/integrals.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs/issues/new?title=Issue%20on%20page%20%2Fch/statistics/random_variables.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Apri un problema"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -378,7 +374,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/ch/multivariable-calculus/integrals.md" target="_blank"
+      <li><a href="../../_sources/ch/statistics/random_variables.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Scarica il file sorgente"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -449,9 +445,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -462,26 +456,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Integrali su domini multi-dimensionali</h1>
+    <h1>Variabili stocastiche</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contenuti </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definizioni">18.3.1. Definizioni</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretazione-geometrica">18.3.1.1. Interpretazione geometrica</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#proprieta-dell-integrale-definito">18.3.1.2. Proprietà dell’integrale definito</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoremi">18.3.2. Teoremi</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regole-di-integrazione">18.3.3. Regole di integrazione</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">18.3.4. Esempi</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -491,33 +470,27 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="integrali-su-domini-multi-dimensionali">
-<span id="multivariable-calculus-integrals"></span><h1><span class="section-number">18.3. </span>Integrali su domini multi-dimensionali<a class="headerlink" href="#integrali-su-domini-multi-dimensionali" title="Permalink to this heading">#</a></h1>
-<div class="section" id="definizioni">
-<h2><span class="section-number">18.3.1. </span>Definizioni<a class="headerlink" href="#definizioni" title="Permalink to this heading">#</a></h2>
-<p><strong>Somma di Riemann.</strong> Data una funzione continua e limitata <span class="math notranslate nohighlight">\(f: \Omega \subset \mathbb{R}^n \rightarrow \mathbb{R}\)</span> e <span class="math notranslate nohighlight">\(\{ \Omega_k \}\)</span> una partizione del dominio <span class="math notranslate nohighlight">\(\Omega\)</span>, una somma di Riemann viene definita come</p>
-<div class="math notranslate nohighlight">
-\[\sigma = \sum_{k} f(\mathbf{x}_k) \mu(\Omega_k) \ ,\]</div>
-<p>essendo <span class="math notranslate nohighlight">\(\mathbf{x}_k \in \Omega_k\)</span> e <span class="math notranslate nohighlight">\(\mu(\cdot)\)</span> una misura dei sottoinsiemi di <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span>.</p>
-<p><strong>Integrale di Riemann.</strong> Sia <span class="math notranslate nohighlight">\(\Delta \Omega := \max_k \mu(\Omega_k)\)</span>, l’integrale definito di Riemann è definito come il limite per <span class="math notranslate nohighlight">\(\Delta \Omega \rightarrow 0\)</span> della somma di Riemann <span class="math notranslate nohighlight">\(\sigma\)</span>,</p>
-<div class="math notranslate nohighlight">
-\[\int_{\mathbf{x} \in \Omega} f(\mathbf{x}) d \mathbf{x} := \lim_{\Delta \Omega \rightarrow 0} \sigma \ .\]</div>
-<div class="section" id="interpretazione-geometrica">
-<h3><span class="section-number">18.3.1.1. </span>Interpretazione geometrica<a class="headerlink" href="#interpretazione-geometrica" title="Permalink to this heading">#</a></h3>
+  <div class="sd-container-fluid sd-sphinx-override sd-p-0 sd-mt-2 sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-gx-2 sd-gy-1 docutils">
+<div class="sd-col sd-d-flex-row sd-align-minor-center docutils">
+<div class="sd-container-fluid sd-sphinx-override docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-gx-3 sd-gy-1 docutils">
+<div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
+<p class="sd-p-0 sd-m-0">basics</p>
 </div>
-<div class="section" id="proprieta-dell-integrale-definito">
-<h3><span class="section-number">18.3.1.2. </span>Proprietà dell’integrale definito<a class="headerlink" href="#proprieta-dell-integrale-definito" title="Permalink to this heading">#</a></h3>
+<div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
+<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-calendar" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path></svg></span>28 nov 2024</p>
+</div>
+<div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
+<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>0 min read</p>
 </div>
 </div>
-<div class="section" id="teoremi">
-<h2><span class="section-number">18.3.2. </span>Teoremi<a class="headerlink" href="#teoremi" title="Permalink to this heading">#</a></h2>
 </div>
-<div class="section" id="regole-di-integrazione">
-<h2><span class="section-number">18.3.3. </span>Regole di integrazione<a class="headerlink" href="#regole-di-integrazione" title="Permalink to this heading">#</a></h2>
 </div>
-<div class="section" id="esempi">
-<h2><span class="section-number">18.3.4. </span>Esempi<a class="headerlink" href="#esempi" title="Permalink to this heading">#</a></h2>
 </div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="variabili-stocastiche">
+<span id="math-hs-statistics-random-variables"></span><h1>Variabili stocastiche<a class="headerlink" href="#variabili-stocastiche" title="Permalink to this heading">#</a></h1>
 </div>
 
     <script type="text/x-thebe-config">
@@ -533,7 +506,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./ch/multivariable-calculus"
+            path: "./ch/statistics"
         },
         predefinedOutput: true
     }
@@ -550,51 +523,12 @@ document.write(`
                 <footer class="prev-next-footer">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="derivatives.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">precedente</p>
-        <p class="prev-next-title"><span class="section-number">18.2. </span>Derivate di funzioni di più variabili</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="../vector-calculus.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">19. </span>Introduzione al calcolo vettoriale su spazi euclidei</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contenuti
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definizioni">18.3.1. Definizioni</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretazione-geometrica">18.3.1.1. Interpretazione geometrica</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#proprieta-dell-integrale-definito">18.3.1.2. Proprietà dell’integrale definito</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoremi">18.3.2. Teoremi</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regole-di-integrazione">18.3.3. Regole di integrazione</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">18.3.4. Esempi</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>
