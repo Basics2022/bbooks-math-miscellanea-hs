@@ -7,4 +7,18 @@
 (math-hs:statistics)=
 # Introduzione alla statistica
 
+**Approcci.** Statistica descrittiva o inferenziale
 
+**Contenuti.**
+- Calcolo combinatorio
+- Variabili casuali
+- Processi casuali
+
+**Applicazioni.**
+- Verifica delle ipotesi
+- Stima
+- Nell'ambito del machine learning
+  - Regressione
+  - Classificazione
+  - Ottimizzazione/Controllo
+- ...

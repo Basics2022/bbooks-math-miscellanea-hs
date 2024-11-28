@@ -1,5 +1,5 @@
 
-# Indicazioni nazionali per i licei
+# Indicazioni nazionali per le superiori italiane
 
 "Indicazioni nazionali riguardanti gli obiettivi specifici di apprendimento concernenti le attività e gli insegnamenti compresi nei paini degli studi previsti per i percorsi liceali [...]", Ministero dell'istruzione, dell'universtià e della ricerca, 2010
 

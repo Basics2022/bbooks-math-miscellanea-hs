@@ -7,12 +7,12 @@ options:
   numbered: True
 parts:
 - caption: Introduzione
-  numbered: True
+  numbered: false
   chapters:
-  - file: ch/school-programs
+  - file: ch/program
     sections:
-    - file: ch/school-programs/intro
-    - file: ch/school-programs/current-guidelines-italy
+    - file: ch/program/current-guidelines-italy
+    - file: ch/program/delta
 - caption: Algebra
   numbered: True
   chapters:
