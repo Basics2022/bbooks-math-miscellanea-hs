@@ -26,7 +26,7 @@ $$\begin{aligned}
  & \mathbf{5.} \,  \int \frac{1}{x^2 \sqrt{9+x^2}} \, dx & \text{R: } \\
  & \mathbf{6.} \,  \int \frac{1}{x^2 \sqrt{9-x^2}} \, dx & \text{R: } \\
  & \mathbf{7.} \,  \int \frac{x}{\sqrt{x^2-4}} \, dx & \text{R: } \\
- & \mathbf{8.} \,  \int \frac{1}\sqrt{1 - \cos 2 x} \, dx & \text{R: } \\
+ & \mathbf{8.} \,  \int \frac{1}{\sqrt{1 - \cos 2 x}} \, dx & \text{R: } \\
  & \mathbf{9.} \,  \int \sqrt{4 - 9 x^2} \, dx & \text{R: } \\
 \end{aligned}$$
 $$\begin{aligned}
