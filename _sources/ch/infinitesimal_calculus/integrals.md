@@ -200,9 +200,9 @@ Usando il [teorema del calcolo infinitesimale](infinitesimal-calculus:integrals:
 - funzioni trigonometriche **todo** *quando le funzioni iperboliche?*
 
   $$\begin{aligned}
-    & \sqrt{a^2 + x^2} \qquad \rightarrow qquad x = a \tan \theta \\
-    & \sqrt{a^2 - x^2} \qquad \rightarrow qquad x = a \sin \theta \\
-    & \sqrt{x^2 - a^2} \qquad \rightarrow qquad x = a \sec \theta \\
+    & \sqrt{a^2 + x^2} \qquad \rightarrow \qquad x = a \tan \theta \\
+    & \sqrt{a^2 - x^2} \qquad \rightarrow \qquad x = a \sin \theta \\
+    & \sqrt{x^2 - a^2} \qquad \rightarrow \qquad x = a \sec \theta \\
   \end{aligned}$$
 
 - radici
@@ -213,6 +213,6 @@ Usando il [teorema del calcolo infinitesimale](infinitesimal-calculus:integrals:
     & \sqrt{a + bx - x^2} = \sqrt{(\alpha + x)(\beta - x)} \qquad \rightarrow \qquad a + bx - x^2 = ( \alpha + x )^2 z^2 \\
   \end{aligned}$$
 
-- $z = \tan\left( \right{x}{2} \right)$, quando compaiono funzioni trigonometriche per trasformare l'integranda in una funzione razionale, grazie alle formule trigonometriche
+- $z = \tan\left( \frac{x}{2} \right)$, quando compaiono funzioni trigonometriche per trasformare l'integranda in una funzione razionale, grazie alle formule trigonometriche
 
 
