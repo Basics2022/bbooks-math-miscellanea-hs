@@ -1,7 +1,8 @@
-(infinitesimal-calculus:integrals:problems)=
 ---
 unnumbered: true
 ---
+
+(infinitesimal-calculus:integrals:problems)=
 # Integrali - Problemi
 
 ## Calcolo integrali indefiniti
