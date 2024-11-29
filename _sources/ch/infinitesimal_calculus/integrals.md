@@ -222,7 +222,11 @@ Usando il [teorema del calcolo infinitesimale](infinitesimal-calculus:integrals:
 
   si può riscrivere la relazione fondamentale della trigonometria
 
-  $$1 = \cos^2 \frac{x}{2} + \sin^2 \frac{x}{2} = (1 + z^2) \cos^2 \frac{x}{2}$$
+  $$1 = \cos^2 \frac{x}{2} + \sin^2 \frac{x}{2} = (1 + z^2) \cos^2 \frac{x}{2} \ .$$
+
+  Usando le regole per valutare le funzioni trigonometriche di una somma,
+
+  $$\cos x = \cos \left( \frac{x}{2} + \frac{x}{2} \right) = 2 \cos^2 \frac{x}{2} - 1$$
 
 
   ```
