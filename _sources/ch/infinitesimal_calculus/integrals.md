@@ -213,6 +213,18 @@ Usando il [teorema del calcolo infinitesimale](infinitesimal-calculus:integrals:
     & \sqrt{a + bx - x^2} = \sqrt{(\alpha + x)(\beta - x)} \qquad \rightarrow \qquad a + bx - x^2 = ( \alpha + x )^2 z^2 \\
   \end{aligned}$$
 
-- $z = \tan\left( \frac{x}{2} \right)$, quando compaiono funzioni trigonometriche per trasformare l'integranda in una funzione razionale, grazie alle formule trigonometriche
+- $z = \tan\left( \frac{x}{2} \right)$, quando compaiono funzioni trigonometriche per trasformare l'integranda in una funzione razionale.
+
+  ```{dropdown}
+  Usando la definizione della tangente 
+
+  $$z = \tan \left(\frac{x}{2}\right) = \frac{\sin \left(\frac{x}{2}\right)}{\cos \left(\frac{x}{2}\right)}$$
+
+  e la relazione fondamentale della trigonometria,
+
+  $$1 = \cos^2 \left(\frac{x}{2}\right)}{\cos \left(\frac{x}{2}\right) + \sin^2\left(\frac{x}{2}\right)}{\cos \left(\frac{x}{2}\right)$
+
+
+  ```
 
 
