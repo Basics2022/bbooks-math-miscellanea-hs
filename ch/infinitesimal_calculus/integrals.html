@@ -491,7 +491,8 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-fondamentali">17.3.3. Integrali fondamentali</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regole-di-integrazione">17.3.4. Regole di integrazione</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integrazione-per-parti">17.3.4.1. Integrazione per parti</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integrazione-con-sostituzione">17.3.4.2. Integrazione con sostituzione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#frazioni-parziali">17.3.4.2. Frazioni parziali</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integrazione-con-sostituzione">17.3.4.3. Integrazione con sostituzione</a></li>
 </ul>
 </li>
 </ul>
@@ -681,8 +682,12 @@ La regola di derivazione del prodotto <span class="math notranslate nohighlight"
 &amp; = F(x) G(x) - \int F(x) g(x) dx  \ .
 \end{aligned}\end{split}\]</div>
 </div>
+<div class="section" id="frazioni-parziali">
+<h3><span class="section-number">17.3.4.2. </span>Frazioni parziali<a class="headerlink" href="#frazioni-parziali" title="Permalink to this heading">#</a></h3>
+<p><strong>todo</strong> E” una regola valida per funzioni integrande che possono essere scritte come il rapporto di due polinomi, <span class="math notranslate nohighlight">\(f(x) = \frac{N(x)}{D(x)}\)</span>, e segue direttamente dalla possibilità di scomporre il polinomio a denominatore in polinomi di primo e secondo grado, grazie al <a class="reference internal" href="../precalculus/polynomials.html#math-hs-precalculus-polynomials-alg-fund-thm"><span class="std std-ref">teorema fondamentale dell’algebra</span></a>, e scrivere il rapporto come somma di frazioni.</p>
+</div>
 <div class="section" id="integrazione-con-sostituzione">
-<span id="infinitesimal-calculus-integrals-substitution"></span><h3><span class="section-number">17.3.4.2. </span>Integrazione con sostituzione<a class="headerlink" href="#integrazione-con-sostituzione" title="Permalink to this heading">#</a></h3>
+<span id="infinitesimal-calculus-integrals-substitution"></span><h3><span class="section-number">17.3.4.3. </span>Integrazione con sostituzione<a class="headerlink" href="#integrazione-con-sostituzione" title="Permalink to this heading">#</a></h3>
 <p>La regola di integrazione per parti viene ottenuta dalla regola di derivazione della funzione composta <a class="reference internal" href="derivatives.html#equation-infinitesimal-calculus-derivatives-rules-composite">(17.6)</a>. Sia <span class="math notranslate nohighlight">\(\widetilde{F}(x)\)</span> la funzione composta <span class="math notranslate nohighlight">\(\widetilde{F}(x) = F( y(x) )\)</span> e siano definite le derivate</p>
 <div class="math notranslate nohighlight">
 \[\widetilde{f}(x) = \dfrac{d}{dx} \widetilde{F}(x)  \qquad , \qquad
@@ -693,6 +698,26 @@ La regola di derivazione del prodotto <span class="math notranslate nohighlight"
 \dfrac{d F}{d y}(y(x)) \frac{d y}{d x}(x) =: f(y(x)) y'(x) \ .\]</div>
 <p>Usando il <a class="reference internal" href="#infinitesimal-calculus-integrals-thm-fund"><span class="std std-ref">teorema del calcolo infinitesimale</span></a></p>
 <p><strong>todo…</strong></p>
+<p><strong>Sostituzioni tipiche.</strong></p>
+<ul>
+<li><p>funzioni trigonometriche <strong>todo</strong> <em>quando le funzioni iperboliche?</em></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+    &amp; \sqrt{a^2 + x^2} \qquad \rightarrow qquad x = a \tan \theta \\
+    &amp; \sqrt{a^2 - x^2} \qquad \rightarrow qquad x = a \sin \theta \\
+    &amp; \sqrt{x^2 - a^2} \qquad \rightarrow qquad x = a \sec \theta \\
+  \end{aligned}\end{split}\]</div>
+</li>
+<li><p>radici</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+    &amp; \sqrt[n]{ax + b} \qquad \rightarrow \qquad ax + b = z^n \\
+    &amp; \sqrt{a + bx + x^2} \qquad \rightarrow \qquad a + bx + x^2 = ( z - x )^2 \\
+    &amp; \sqrt{a + bx - x^2} = \sqrt{(\alpha + x)(\beta - x)} \qquad \rightarrow \qquad a + bx - x^2 = ( \alpha + x )^2 z^2 \\
+  \end{aligned}\end{split}\]</div>
+</li>
+<li><p><span class="math notranslate nohighlight">\(z = \tan\left( \right{x}{2} \right)\)</span>, quando compaiono funzioni trigonometriche per trasformare l’integranda in una funzione razionale, grazie alle formule trigonometriche</p></li>
+</ul>
 </div>
 </div>
 <div class="toctree-wrapper compound">
@@ -775,7 +800,8 @@ La regola di derivazione del prodotto <span class="math notranslate nohighlight"
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-fondamentali">17.3.3. Integrali fondamentali</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regole-di-integrazione">17.3.4. Regole di integrazione</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integrazione-per-parti">17.3.4.1. Integrazione per parti</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integrazione-con-sostituzione">17.3.4.2. Integrazione con sostituzione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#frazioni-parziali">17.3.4.2. Frazioni parziali</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integrazione-con-sostituzione">17.3.4.3. Integrazione con sostituzione</a></li>
 </ul>
 </li>
 </ul>
