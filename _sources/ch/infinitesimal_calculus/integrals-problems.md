@@ -1,10 +1,9 @@
 ---
-title: Integrali - Problemii
+title: Integrali - Problemi
 unnumbered: true
 ---
-
-(infinitesimal-calculus:integrals:problems)=
 # Integrali - Problemi
+(infinitesimal-calculus:integrals:problems)=
 
 ## Calcolo integrali indefiniti
 
