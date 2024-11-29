@@ -1,10 +1,20 @@
----
-title: Integrali - Problemi
-unnumbered: true
----
 (infinitesimal-calculus:integrals:problems)=
 # Integrali - Problemi
 
+## Calcolo integrali indefiniti
+- integrali elementari
+- metodi di integrazione: per parti, per sostituzione (funzioni trigonometriche, iperboliche,...), somme di frazioni
+
+## Integrali definiti
+- calcolo astratto
+- integrali impropri
+
+## Problemi di geometria
+- area tra curve
+- lunghezza
+- volumi e superficie di solidi di rotazione
+
+<!--
 ## Calcolo integrali indefiniti
 
 $$\int \dfrac{f'(x)}{f(x)} dx$$
@@ -21,3 +31,4 @@ $$\int f'(x) \, \sin f(x) \, dx =-\cos f(x) + C$$
 
 $$\int \sin^2 x \, dx = \dots$$
 $$\int \cos^2 x \, dx = \dots$$
+-->

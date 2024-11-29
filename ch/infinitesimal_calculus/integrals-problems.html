@@ -65,8 +65,6 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/infinitesimal_calculus/integrals-problems';</script>
     <link rel="shortcut icon" href="../../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
@@ -232,11 +230,11 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../calculus.html">16. Introduzione al calcolo</a></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../infinitesimal_calculus.html">17. Calcolo infinitesimale</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2 has-children"><a class="reference internal" href="analysis.html">17.1. Introduzione all’analisi</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="analysis-problems.html">17.1.7. Introduzione all’analisi - Problemi {-}</a></li>
+<li class="toctree-l3"><a class="reference internal" href="analysis-problems.html">17.1.7. Introduzione all’analisi - Problemi</a></li>
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="derivatives.html">17.2. Derivate</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="derivatives-problems.html">17.2.7. Derivate - Problemi {-}</a></li>
+<li class="toctree-l3"><a class="reference internal" href="derivatives-problems.html">17.2.7. Derivate - Problemi</a></li>
 </ul>
 </li>
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="integrals.html">17.3. Integrali</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
@@ -479,6 +477,8 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calcolo-integrali-indefiniti">17.3.6.1. Calcolo integrali indefiniti</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-definiti">17.3.6.2. Integrali definiti</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-di-geometria">17.3.6.3. Problemi di geometria</a></li>
 </ul>
             </nav>
         </div>
@@ -494,28 +494,43 @@ document.write(`
 <span id="infinitesimal-calculus-integrals-problems"></span><h1><span class="section-number">17.3.6. </span>Integrali - Problemi<a class="headerlink" href="#integrali-problemi" title="Permalink to this heading">#</a></h1>
 <div class="section" id="calcolo-integrali-indefiniti">
 <h2><span class="section-number">17.3.6.1. </span>Calcolo integrali indefiniti<a class="headerlink" href="#calcolo-integrali-indefiniti" title="Permalink to this heading">#</a></h2>
-<div class="math notranslate nohighlight">
-\[\int \dfrac{f'(x)}{f(x)} dx\]</div>
-<div class="math notranslate nohighlight">
-\[\int \frac{\sin x}{\cos^2 x} dx\]</div>
-<div class="math notranslate nohighlight">
-\[\int \dfrac{f'(x)}{f(x)} dx\]</div>
-<div class="math notranslate nohighlight">
-\[\int \frac{1}{a x^2 + b x + c} dx \qquad \text{con } \Delta := b^2 - 4 bc &gt; 0\]</div>
-<div class="math notranslate nohighlight">
-\[\int \frac{1}{a x^2 + b x + c} dx \qquad \text{con } \Delta := b^2 - 4 bc &lt; 0\]</div>
-<div class="math notranslate nohighlight">
-\[\int f'(x) e^{f(x)} \, dx  = e^{f(x)} + C\]</div>
-<div class="math notranslate nohighlight">
-\[\int f'(x) a^{f(x)} \, dx  = \frac{a^{f(x)}}{\ln a} + C\]</div>
-<div class="math notranslate nohighlight">
-\[\int f'(x) \, \cos f(x) \, dx = \sin f(x) + C\]</div>
-<div class="math notranslate nohighlight">
-\[\int f'(x) \, \sin f(x) \, dx =-\cos f(x) + C\]</div>
-<div class="math notranslate nohighlight">
-\[\int \sin^2 x \, dx = \dots\]</div>
-<div class="math notranslate nohighlight">
-\[\int \cos^2 x \, dx = \dots\]</div>
+<ul class="simple">
+<li><p>integrali elementari</p></li>
+<li><p>metodi di integrazione: per parti, per sostituzione (funzioni trigonometriche, iperboliche,…), somme di frazioni</p></li>
+</ul>
+</div>
+<div class="section" id="integrali-definiti">
+<h2><span class="section-number">17.3.6.2. </span>Integrali definiti<a class="headerlink" href="#integrali-definiti" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>calcolo astratto</p></li>
+<li><p>integrali impropri</p></li>
+</ul>
+</div>
+<div class="section" id="problemi-di-geometria">
+<h2><span class="section-number">17.3.6.3. </span>Problemi di geometria<a class="headerlink" href="#problemi-di-geometria" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>area tra curve</p></li>
+<li><p>lunghezza</p></li>
+<li><p>volumi e superficie di solidi di rotazione</p></li>
+</ul>
+<!--
+## Calcolo integrali indefiniti
+
+$$\int \dfrac{f'(x)}{f(x)} dx$$
+$$\int \frac{\sin x}{\cos^2 x} dx$$
+$$\int \dfrac{f'(x)}{f(x)} dx$$
+$$\int \frac{1}{a x^2 + b x + c} dx \qquad \text{con } \Delta := b^2 - 4 bc > 0$$
+$$\int \frac{1}{a x^2 + b x + c} dx \qquad \text{con } \Delta := b^2 - 4 bc < 0$$
+
+$$\int f'(x) e^{f(x)} \, dx  = e^{f(x)} + C$$
+$$\int f'(x) a^{f(x)} \, dx  = \frac{a^{f(x)}}{\ln a} + C$$
+
+$$\int f'(x) \, \cos f(x) \, dx = \sin f(x) + C$$
+$$\int f'(x) \, \sin f(x) \, dx =-\cos f(x) + C$$
+
+$$\int \sin^2 x \, dx = \dots$$
+$$\int \cos^2 x \, dx = \dots$$
+-->
 </div>
 </div>
 
@@ -583,6 +598,8 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calcolo-integrali-indefiniti">17.3.6.1. Calcolo integrali indefiniti</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-definiti">17.3.6.2. Integrali definiti</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-di-geometria">17.3.6.3. Problemi di geometria</a></li>
 </ul>
   </nav></div>
 
