@@ -26,7 +26,7 @@ $$\begin{aligned}
  & \text{\textbf{todo}}
 \end{aligned}$$
 ```
-```{exercise} Esercizi di geometria
+```{exercise} Problemi di geometria
 Si chiede di determinare il dominio e la quantità richiesta in funzione della quantità indipendente; si trovino poi i punti di minimo e massimo, locali e assoluti, e disegnare il grafico delle funzioni delle seguenti funzioni all'interno del loro dominio. In particolare
 1. Data la famiglia di rettangoli di perimetro noto $p$, si chiede di studiare l'area $A$ in funzione della lunghezza di un lato $x$, $A(x)$.
 2. Data la famiglia di triangoli rettangoli di area data $A$, si chiede di studiare il perimetro $p$ in funzione della lunghezza di un suo cateto
@@ -34,7 +34,10 @@ Si chiede di determinare il dominio e la quantità richiesta in funzione della q
 4. Data la regione di piano chiusa delimitata tra la parabola $y = -x^2+1$ e l'asse $x$, si chiede di studiare l'area triangolo isoscele con vertice nell'origine degli assi e la base parallela all'asse $x$
 5. Data una sfera di raggio $R$, si chiede di studiare il volume e la superficie di un cilindro retto iscritto nella sfera.
 ```
-- problemi di economia
+
+```{exercise} Problemi di economia
+**todo**
+```
 
 ## Approssimazioni locali di funzioni
 - serie di Taylor? Esercizi su formule di errore di metodi numerici?
