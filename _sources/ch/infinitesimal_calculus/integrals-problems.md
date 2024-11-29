@@ -1,5 +1,5 @@
 (infinitesimal-calculus:integrals:problems)=
-# Problemi
+# Integrali - Problemi {-}
 
 ## Calcolo integrali indefiniti
 
