@@ -230,7 +230,7 @@ Usando il [teorema del calcolo infinitesimale](infinitesimal-calculus:integrals:
 
   e **todo** ...
 
-  $$\sin x = \frac{2 z}{1 - z^2}$$
+  $$\sin x = \frac{2 z}{1 + z^2}$$
 
   $$\tan x = \frac{2 z }{1 - z^2}$$
 
