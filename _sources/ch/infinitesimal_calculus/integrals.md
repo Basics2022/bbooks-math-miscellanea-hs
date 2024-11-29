@@ -195,7 +195,7 @@ Usando il [teorema del calcolo infinitesimale](infinitesimal-calculus:integrals:
 
 **todo...**
 
-**Sostituzioni tipiche.**
+**Sostituzioni utili.**
 
 - funzioni trigonometriche **todo** *quando le funzioni iperboliche?*
 
@@ -205,6 +205,9 @@ Usando il [teorema del calcolo infinitesimale](infinitesimal-calculus:integrals:
     & \sqrt{x^2 - a^2} \qquad \rightarrow \qquad x = a \sec \theta \\
   \end{aligned}$$
 
+  ```{dropdown}
+  ```
+
 - radici
 
   $$\begin{aligned}
@@ -212,6 +215,9 @@ Usando il [teorema del calcolo infinitesimale](infinitesimal-calculus:integrals:
     & \sqrt{a + bx + x^2} \qquad \rightarrow \qquad a + bx + x^2 = ( z - x )^2 \\
     & \sqrt{a + bx - x^2} = \sqrt{(\alpha + x)(\beta - x)} \qquad \rightarrow \qquad a + bx - x^2 = ( \alpha + x )^2 z^2 \\
   \end{aligned}$$
+
+  ```{dropdown}
+  ```
 
 - $z = \tan\left( \frac{x}{2} \right)$, quando compaiono funzioni trigonometriche per trasformare l'integranda in una funzione razionale.
 
@@ -231,9 +237,7 @@ Usando il [teorema del calcolo infinitesimale](infinitesimal-calculus:integrals:
   e **todo** ...
 
   $$\sin x = \frac{2 z}{1 + z^2}$$
-
-  $$\tan x = \frac{2 z }{1 - z^2}$$
-
+  $$\tan x = \frac{2 z}{1 - z^2}$$
 
   ```
 
