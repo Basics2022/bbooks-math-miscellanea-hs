@@ -2,7 +2,6 @@
 title: Integrali - Problemi
 unnumbered: true
 ---
-# Integrali - Problemi
 (infinitesimal-calculus:integrals:problems)=
 
 ## Calcolo integrali indefiniti
