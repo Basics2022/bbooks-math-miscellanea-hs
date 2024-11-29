@@ -14,6 +14,7 @@
 - lunghezza
 ### Volumi e superficie di solidi di rotazione
 ```{exercise}
+:class: dropdown
 ```
 
 <!--
