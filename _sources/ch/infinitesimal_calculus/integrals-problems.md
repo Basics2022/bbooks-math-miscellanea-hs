@@ -17,16 +17,17 @@ Si chiede di:
 ```
 ```{exercise}
 Si chiede di discutere e valutare i seguenti integrali impropri
+
 $$\begin{aligned}
- & \mathbf{1.} \,  \int_{x=0}^{+\infty} \frac{1}{x^2 + 9} \, dx 
- & \mathbf{2.} \,  \int_{x=0}^{+\infty} e^{-x} \cos x \, dx 
- & \mathbf{3.} \,  \int_{x=2}^{\+infty} \frac{1}{2-x} \, dx 
- & \mathbf{4.} \,  \int_{x=0}^{3} \frac{1}{\sqrt{|x-2|}}\, dx 
- & \mathbf{4.} \,  \int_{x=0}^{3} \frac{1}{x-2}\, dx 
- & \mathbf{4.} \,  \int_{x=0}^{3} \frac{1}{(x-2)^2}\, dx 
- & \mathbf{5.} \,  \int_{x=0}^{\pi/2} \frac{\cos x}{\sqrt{1-\cos x}} \, dx 
- & \mathbf{6.} \,  \int_{}^{} \, dx 
- & \mathbf{7.} \,  \int_{}^{} \, dx 
+ & \mathbf{1.} \,  \int_{x=0}^{+\infty} \frac{1}{x^2 + 9} \, dx & \text{R: } \\
+ & \mathbf{2.} \,  \int_{x=0}^{+\infty} e^{-x} \cos x \, dx & \text{R: } \\
+ & \mathbf{3.} \,  \int_{x=2}^{+\infty} \frac{1}{2-x} \, dx & \text{R: } \\
+ & \mathbf{4.} \,  \int_{x=0}^{3} \frac{1}{\sqrt{|x-2|}}\, dx & \text{R: } \\
+ & \mathbf{4.} \,  \int_{x=0}^{3} \frac{1}{x-2}\, dx & \text{R: } \\
+ & \mathbf{4.} \,  \int_{x=0}^{3} \frac{1}{(x-2)^2}\, dx & \text{R: } \\
+ & \mathbf{5.} \,  \int_{x=0}^{\pi/2} \frac{\cos x}{\sqrt{1-\cos x}} \, dx & \text{R: } \\
+ & \mathbf{6.} \,  \int_{}^{} \, dx & \text{R: } \\
+ & \mathbf{7.} \,  \int_{}^{} \, dx & \text{R: } \\
 \end{aligned}$$
 ```
 
