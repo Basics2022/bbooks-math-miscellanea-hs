@@ -3,6 +3,8 @@ title: Integrali - Problemi
 unnumbered: true
 ---
 (infinitesimal-calculus:integrals:problems)=
+# Integrali - Problemi
+:unnumbered:
 
 ## Calcolo integrali indefiniti
 
