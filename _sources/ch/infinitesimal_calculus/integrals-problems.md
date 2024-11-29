@@ -6,8 +6,29 @@
 - metodi di integrazione: per parti, per sostituzione (funzioni trigonometriche, iperboliche,...), somme di frazioni
 
 ## Integrali definiti
-- calcolo astratto
-- integrali impropri
+
+### Integrali impropri
+```{exercise}
+Si chiede di:
+ 1. dimostrare che $\int_{1}^{+\infty} \frac{1}{x^p} \, dx$ converge per $p > 1$ e diverge a $+\infty$ per $p \le 1$.
+ 2. dimostrare che $\lim_{t \rightarrow 0^+} \int_{t}^{1} \frac{1}{x^p} \, dx$ converge per $p < 1$ e diverge a $+\infty$ per $p \ge 1$.
+ 3. dimostrare che $\int_{t}^{1} e^{a x} \, dx$ converge per $a \dots$ e diverge per $a \dots$.
+ 4. ...
+```
+```{exercise}
+Si chiede di discutere e valutare i seguenti integrali impropri
+$$\begin{aligned}
+ & \mathbf{1.} \,  \int_{x=0}^{+\infty} \frac{1}{x^2 + 9} \, dx 
+ & \mathbf{2.} \,  \int_{x=0}^{+\infty} e^{-x} \cos x \, dx 
+ & \mathbf{3.} \,  \int_{x=2}^{\+infty} \frac{1}{2-x} \, dx 
+ & \mathbf{4.} \,  \int_{x=0}^{3} \frac{1}{\sqrt{|x-2|}}\, dx 
+ & \mathbf{4.} \,  \int_{x=0}^{3} \frac{1}{x-2}\, dx 
+ & \mathbf{4.} \,  \int_{x=0}^{3} \frac{1}{(x-2)^2}\, dx 
+ & \mathbf{5.} \,  \int_{x=0}^{\pi/2} \frac{\cos x}{\sqrt{1-\cos x}} \, dx 
+ & \mathbf{6.} \,  \int_{}^{} \, dx 
+ & \mathbf{7.} \,  \int_{}^{} \, dx 
+\end{aligned}$$
+```
 
 ## Problemi di geometria
 - area tra curve

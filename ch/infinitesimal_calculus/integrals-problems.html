@@ -479,7 +479,10 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calcolo-integrali-indefiniti">17.3.6.1. Calcolo integrali indefiniti</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-definiti">17.3.6.2. Integrali definiti</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-definiti">17.3.6.2. Integrali definiti</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-impropri">17.3.6.2.1. Integrali impropri</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-di-geometria">17.3.6.3. Problemi di geometria</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#volumi-e-superficie-di-solidi-di-rotazione">17.3.6.3.1. Volumi e superficie di solidi di rotazione</a></li>
 </ul>
@@ -506,10 +509,40 @@ document.write(`
 </div>
 <div class="section" id="integrali-definiti">
 <h2><span class="section-number">17.3.6.2. </span>Integrali definiti<a class="headerlink" href="#integrali-definiti" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>calcolo astratto</p></li>
-<li><p>integrali impropri</p></li>
-</ul>
+<div class="section" id="integrali-impropri">
+<h3><span class="section-number">17.3.6.2.1. </span>Integrali impropri<a class="headerlink" href="#integrali-impropri" title="Permalink to this heading">#</a></h3>
+<div class="exercise admonition" id="ch/infinitesimal_calculus/integrals-problems-exercise-0">
+
+<p class="admonition-title"><span class="caption-number">Exercise 17.1 </span></p>
+<div class="section" id="exercise-content">
+<p>Si chiede di:</p>
+<ol class="arabic simple">
+<li><p>dimostrare che <span class="math notranslate nohighlight">\(\int_{1}^{+\infty} \frac{1}{x^p} \, dx\)</span> converge per <span class="math notranslate nohighlight">\(p &gt; 1\)</span> e diverge a <span class="math notranslate nohighlight">\(+\infty\)</span> per <span class="math notranslate nohighlight">\(p \le 1\)</span>.</p></li>
+<li><p>dimostrare che <span class="math notranslate nohighlight">\(\lim_{t \rightarrow 0^+} \int_{t}^{1} \frac{1}{x^p} \, dx\)</span> converge per <span class="math notranslate nohighlight">\(p &lt; 1\)</span> e diverge a <span class="math notranslate nohighlight">\(+\infty\)</span> per <span class="math notranslate nohighlight">\(p \ge 1\)</span>.</p></li>
+<li><p>dimostrare che <span class="math notranslate nohighlight">\(\int_{t}^{1} e^{a x} \, dx\)</span> converge per <span class="math notranslate nohighlight">\(a \dots\)</span> e diverge per <span class="math notranslate nohighlight">\(a \dots\)</span>.</p></li>
+<li><p>…</p></li>
+</ol>
+</div>
+</div>
+<div class="exercise admonition" id="ch/infinitesimal_calculus/integrals-problems-exercise-1">
+
+<p class="admonition-title"><span class="caption-number">Exercise 17.2 </span></p>
+<div class="section" id="exercise-content">
+<p>Si chiede di discutere e valutare i seguenti integrali impropri
+$<span class="math notranslate nohighlight">\(\begin{aligned}
+ &amp; \mathbf{1.} \,  \int_{x=0}^{+\infty} \frac{1}{x^2 + 9} \, dx 
+ &amp; \mathbf{2.} \,  \int_{x=0}^{+\infty} e^{-x} \cos x \, dx 
+ &amp; \mathbf{3.} \,  \int_{x=2}^{\+infty} \frac{1}{2-x} \, dx 
+ &amp; \mathbf{4.} \,  \int_{x=0}^{3} \frac{1}{\sqrt{|x-2|}}\, dx 
+ &amp; \mathbf{4.} \,  \int_{x=0}^{3} \frac{1}{x-2}\, dx 
+ &amp; \mathbf{4.} \,  \int_{x=0}^{3} \frac{1}{(x-2)^2}\, dx 
+ &amp; \mathbf{5.} \,  \int_{x=0}^{\pi/2} \frac{\cos x}{\sqrt{1-\cos x}} \, dx 
+ &amp; \mathbf{6.} \,  \int_{}^{} \, dx 
+ &amp; \mathbf{7.} \,  \int_{}^{} \, dx 
+\end{aligned}\)</span>$</p>
+</div>
+</div>
+</div>
 </div>
 <div class="section" id="problemi-di-geometria">
 <h2><span class="section-number">17.3.6.3. </span>Problemi di geometria<a class="headerlink" href="#problemi-di-geometria" title="Permalink to this heading">#</a></h2>
@@ -519,28 +552,12 @@ document.write(`
 </ul>
 <div class="section" id="volumi-e-superficie-di-solidi-di-rotazione">
 <h3><span class="section-number">17.3.6.3.1. </span>Volumi e superficie di solidi di rotazione<a class="headerlink" href="#volumi-e-superficie-di-solidi-di-rotazione" title="Permalink to this heading">#</a></h3>
-<div class="exercise admonition" id="ch/infinitesimal_calculus/integrals-problems-exercise-0">
-
-<p class="admonition-title"><span class="caption-number">Exercise 17.1 </span></p>
-<div class="section" id="exercise-content">
-<!-- :class: dropdown -->
-<p>Calcolare il volume e la superficie del solido generato dalla rotazione del ramo di parabola <span class="math notranslate nohighlight">\(y = 2\, x^2\)</span>, <span class="math notranslate nohighlight">\(x \in [0,2]\)</span> attorno all’asse <span class="math notranslate nohighlight">\(y\)</span></p>
-</div>
-</div>
-<div class="exercise admonition" id="ch/infinitesimal_calculus/integrals-problems-exercise-1">
-
-<p class="admonition-title"><span class="caption-number">Exercise 17.2 </span></p>
-<div class="section" id="exercise-content">
-<!-- :class: dropdown -->
-<p>Calcolare il volume e la superficie del solido generato dalla rotazione del ramo di parabola <span class="math notranslate nohighlight">\(y = 2\, x^2\)</span>, <span class="math notranslate nohighlight">\(x \in [0,2]\)</span> attorno all’asse <span class="math notranslate nohighlight">\(x\)</span>.</p>
-</div>
-</div>
 <div class="exercise admonition" id="ch/infinitesimal_calculus/integrals-problems-exercise-2">
 
 <p class="admonition-title"><span class="caption-number">Exercise 17.3 </span></p>
 <div class="section" id="exercise-content">
 <!-- :class: dropdown -->
-<p>Calcolare il volume e la superficie di un cilindro di altezza <span class="math notranslate nohighlight">\(h\)</span> e base di raggio <span class="math notranslate nohighlight">\(r\)</span>.</p>
+<p>Calcolare il volume e la superficie del solido generato dalla rotazione del ramo di parabola <span class="math notranslate nohighlight">\(y = 2\, x^2\)</span>, <span class="math notranslate nohighlight">\(x \in [0,2]\)</span> attorno all’asse <span class="math notranslate nohighlight">\(y\)</span></p>
 </div>
 </div>
 <div class="exercise admonition" id="ch/infinitesimal_calculus/integrals-problems-exercise-3">
@@ -548,7 +565,7 @@ document.write(`
 <p class="admonition-title"><span class="caption-number">Exercise 17.4 </span></p>
 <div class="section" id="exercise-content">
 <!-- :class: dropdown -->
-<p>Calcolare il volume e la superficie di un cono retto di altezza <span class="math notranslate nohighlight">\(h\)</span> e base di raggio <span class="math notranslate nohighlight">\(r\)</span>.</p>
+<p>Calcolare il volume e la superficie del solido generato dalla rotazione del ramo di parabola <span class="math notranslate nohighlight">\(y = 2\, x^2\)</span>, <span class="math notranslate nohighlight">\(x \in [0,2]\)</span> attorno all’asse <span class="math notranslate nohighlight">\(x\)</span>.</p>
 </div>
 </div>
 <div class="exercise admonition" id="ch/infinitesimal_calculus/integrals-problems-exercise-4">
@@ -556,7 +573,7 @@ document.write(`
 <p class="admonition-title"><span class="caption-number">Exercise 17.5 </span></p>
 <div class="section" id="exercise-content">
 <!-- :class: dropdown -->
-<p>Calcolare il volume e la superficie di un tronco di cono retto ottenuto dalla rivoluzione attorno all’asse <span class="math notranslate nohighlight">\(x\)</span> del segmento <span class="math notranslate nohighlight">\(y = x + 2\)</span>, per <span class="math notranslate nohighlight">\(x = [1,4]\)</span>.</p>
+<p>Calcolare il volume e la superficie di un cilindro di altezza <span class="math notranslate nohighlight">\(h\)</span> e base di raggio <span class="math notranslate nohighlight">\(r\)</span>.</p>
 </div>
 </div>
 <div class="exercise admonition" id="ch/infinitesimal_calculus/integrals-problems-exercise-5">
@@ -564,12 +581,28 @@ document.write(`
 <p class="admonition-title"><span class="caption-number">Exercise 17.6 </span></p>
 <div class="section" id="exercise-content">
 <!-- :class: dropdown -->
-<p>Calcolare il volume e la superficie di un tronco di cono retto ottenuto dalla rivoluzione attorno all’asse <span class="math notranslate nohighlight">\(x\)</span> del segmento <span class="math notranslate nohighlight">\(y = x + 2\)</span>, per <span class="math notranslate nohighlight">\(x = [1,4]\)</span>.</p>
+<p>Calcolare il volume e la superficie di un cono retto di altezza <span class="math notranslate nohighlight">\(h\)</span> e base di raggio <span class="math notranslate nohighlight">\(r\)</span>.</p>
 </div>
 </div>
 <div class="exercise admonition" id="ch/infinitesimal_calculus/integrals-problems-exercise-6">
 
 <p class="admonition-title"><span class="caption-number">Exercise 17.7 </span></p>
+<div class="section" id="exercise-content">
+<!-- :class: dropdown -->
+<p>Calcolare il volume e la superficie di un tronco di cono retto ottenuto dalla rivoluzione attorno all’asse <span class="math notranslate nohighlight">\(x\)</span> del segmento <span class="math notranslate nohighlight">\(y = x + 2\)</span>, per <span class="math notranslate nohighlight">\(x = [1,4]\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/infinitesimal_calculus/integrals-problems-exercise-7">
+
+<p class="admonition-title"><span class="caption-number">Exercise 17.8 </span></p>
+<div class="section" id="exercise-content">
+<!-- :class: dropdown -->
+<p>Calcolare il volume e la superficie di un tronco di cono retto ottenuto dalla rivoluzione attorno all’asse <span class="math notranslate nohighlight">\(x\)</span> del segmento <span class="math notranslate nohighlight">\(y = x + 2\)</span>, per <span class="math notranslate nohighlight">\(x = [1,4]\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/infinitesimal_calculus/integrals-problems-exercise-8">
+
+<p class="admonition-title"><span class="caption-number">Exercise 17.9 </span></p>
 <div class="section" id="exercise-content">
 <!-- :class: dropdown -->
 <p>Calcolare il volume e la superficie di un toro generato dalla rivoluzione del cerchio <span class="math notranslate nohighlight">\(x^2 + (y-r_0)^2 = r_1^2\)</span>, with <span class="math notranslate nohighlight">\(r_0 \ge r_1\)</span>, attorno all’asse <span class="math notranslate nohighlight">\(x\)</span>.</p>
@@ -661,7 +694,10 @@ $$\int \cos^2 x \, dx = \dots$$
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calcolo-integrali-indefiniti">17.3.6.1. Calcolo integrali indefiniti</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-definiti">17.3.6.2. Integrali definiti</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-definiti">17.3.6.2. Integrali definiti</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-impropri">17.3.6.2.1. Integrali impropri</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-di-geometria">17.3.6.3. Problemi di geometria</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#volumi-e-superficie-di-solidi-di-rotazione">17.3.6.3.1. Volumi e superficie di solidi di rotazione</a></li>
 </ul>
