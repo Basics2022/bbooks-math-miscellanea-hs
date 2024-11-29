@@ -4,6 +4,7 @@
 ## Calcolo integrali indefiniti
 ```{exercise}
 Si chiede di calcolare i seguenti integrali indefiniti
+
 $$\begin{aligned}
  & \mathbf{0.} \,  \int x^2 e^x \, dx & \text{R: } \\
  & \mathbf{1.} \,  \int x^3 e^{x^3} \, dx & \text{R: } \\
