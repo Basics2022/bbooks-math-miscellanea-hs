@@ -36,38 +36,6 @@ $$\begin{aligned}
  & \dots
 \end{aligned}$$
 ```
-```{only} latex
-$$\begin{aligned}
- & \mathbf{0.} \,  \int x^2 e^x \, dx & \text{R: } \\
- & \mathbf{1.} \,  \int x^3 e^{x^3} \, dx & \text{R: } \\
- & \mathbf{2.} \,  \int x \ln x \, dx & \text{R: } \\
- & \mathbf{3.} \,  \int x \cos x \, dx & \text{R: } \\
- & \mathbf{4.} \,  \int x^3 \cos 2x \, dx & \text{R: } \\
- & \mathbf{5.} \,  \int x^2 \ln x \, dx & \text{R: } \\
- & \mathbf{6.} \,  \int x^2 \sin x \, dx & \text{R: } \\
- & \mathbf{7.} \,  \int x \text{atan} x \, dx & \text{R: } \\
- & \mathbf{8.} \,  \int \frac{\ln x}{x^2} \, dx & \text{R: } \\
- & \mathbf{9.} \,  \int \sin 3x \, dx & \text{R: } \\
-\end{aligned}$$
-$$\begin{aligned}
- & \mathbf{0.} \,  \int \sin 3x \sin 2x \, dx & \text{R: } \\
- & \mathbf{1.} \,  \int \cos x \sin 2x \, dx & \text{R: } \\
- & \mathbf{2.} \,  \int \sqrt{1 - \sin x} \, dx & \text{R: } \\
- & \mathbf{3.} \,  \int \sqrt{x^2 + 1} \, dx & \text{R: } \\
- & \mathbf{4.} \,  \int \sqrt{x^2 - 3} \, dx & \text{R: } \\
- & \mathbf{5.} \,  \int \frac{1}{x^2 \sqrt{9+x^2}} \, dx & \text{R: } \\
- & \mathbf{6.} \,  \int \frac{1}{x^2 \sqrt{9-x^2}} \, dx & \text{R: } \\
- & \mathbf{7.} \,  \int \frac{x}{\sqrt{x^2-4}} \, dx & \text{R: } \\
- & \mathbf{8.} \,  \int \frac{1}{\sqrt{1 - \cos 2 x}} \, dx & \text{R: } \\
- & \mathbf{9.} \,  \int \sqrt{4 - 9 x^2} \, dx & \text{R: } \\
-\end{aligned}$$
-$$\begin{aligned}
- & \mathbf{0.} \,  \int \frac{\cos^2 x}{\sin^3 x} \, dx & \text{R: } \\
- & \mathbf{0.} \,  \int \frac{1}{(4+x^2)^3} \, dx & \text{R: } \\
- & \mathbf{0.} \,  \int \frac{1}{\sqrt{x^2 - 2x + 3}} \, dx & \text{R: } \\
- & \dots
-\end{aligned}$$
-```
 
 ## Integrali definiti
 ```{exercise}
@@ -101,8 +69,17 @@ $$\begin{aligned}
 ```
 
 ## Problemi di geometria
-- area tra curve
-- lunghezza
+### Area di superfici e lunghezza di curve
+```{exercise}
+Calcolare l'area della superficie chiusa tra la parabola $y = - x^2 + 1$ e l'asse $x$.
+```
+```{exercise}
+Calcolare l'area della superficie chiusa tra la parabola $y = - x^2 + 1$ e la parabola $y = x^2 - 2 x$.
+```
+```{exercise}
+Calcolare la lunghezza del ramo di parabola $y = x^2 - 2x + 1$ tra $x \in [0,2]$.
+```
+
 ### Volumi e superficie di solidi di rotazione
 ```{exercise}
 <!-- :class: dropdown -->
@@ -126,7 +103,11 @@ Calcolare il volume e la superficie di un tronco di cono retto ottenuto dalla ri
 ```
 ```{exercise}
 <!-- :class: dropdown -->
-Calcolare il volume e la superficie di un tronco di cono retto ottenuto dalla rivoluzione attorno all'asse $x$ del segmento $y = x + 2$, per $x = [1,4]$.
+Calcolare il volume e la superficie della sfera generata dalla rivoluzione della semicirconferenza centrata nell'origine di raggio $R$, $x^2 + y^2 = R^2$.
+```
+```{exercise}
+<!-- :class: dropdown -->
+Calcolare il volume e la superficie della calotta sferica sfera generata dalla rivoluzione dell'arco di circonferenza centrata nell'origine di raggio $R$, $y = \sqrt{R^2 - x^2}$, con $x = [-R, a]$, $a \le R$.
 ```
 ```{exercise}
 <!-- :class: dropdown -->
