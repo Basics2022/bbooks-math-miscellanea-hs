@@ -2,16 +2,16 @@
 # Derivate - Problemi
 
 ## Calcolo derivate
-- regole di derivazione
+- derivate fondamentali, regole di derivazione
 
 ## Calcolo di limiti con la regola di de l'Hopital
 - forme indeterminate $\frac{f(x)}{g(x)}$
 
 ## Problemi di geometria
-- rette tangenti alle curve, grafico di una funzione
-- massimi e minimi di una funzione, punti di flesso
+- rette tangenti alle curve
 
 ## Studio di funzione
+- dominio, limiti, massimi e minimi di una funzione, punti di flesso
 
 ## Problemi di ottimizzazione
 - problemi astratti

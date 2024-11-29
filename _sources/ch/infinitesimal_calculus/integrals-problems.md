@@ -12,7 +12,9 @@
 ## Problemi di geometria
 - area tra curve
 - lunghezza
-- volumi e superficie di solidi di rotazione
+### Volumi e superficie di solidi di rotazione
+```{exercise}
+```
 
 <!--
 ## Calcolo integrali indefiniti
