@@ -1,4 +1,5 @@
 ---
+title: Integrali - Problemii
 unnumbered: true
 ---
 
