@@ -23,7 +23,7 @@ $$\begin{aligned}
  & \mathbf{0.} \, f(x) = x^2 - \frac{1}{2} x^3 \quad , \quad x \in [-1,2] & \text{R: } \\
  & \mathbf{1.} \, f(x) = \frac{x}{\cos x + 1}  \quad , \quad x \in \left[ -\frac{\pi}{2}, \frac{\pi}{2} \right]  & \text{R: } \\
  & \mathbf{..} \, f(x) = \sin{x}{x} \quad , \quad x \in \mathbf{R} & \text{R: } \\
- & \text{\textbf{todo}}
+ & \text{todo}
 \end{aligned}$$
 ```
 ```{exercise} Problemi di geometria
