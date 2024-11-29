@@ -224,9 +224,15 @@ Usando il [teorema del calcolo infinitesimale](infinitesimal-calculus:integrals:
 
   $$1 = \cos^2 \frac{x}{2} + \sin^2 \frac{x}{2} = (1 + z^2) \cos^2 \frac{x}{2}\ .$$
 
-  Usando le regole per valutare le funzioni trigonometriche di una somma,
+  Usando le regole per valutare le funzioni trigonometriche di una somma, si può riscrivere $\cos x$ in termini di $z$
 
-  $$\cos x = \cos \left( \frac{x}{2} + \frac{x}{2} \right) = 2 \cos^2 \frac{x}{2} - 1 = 2 \frac{1}{1+z^2} - 1 = \frac{1-z^2}{1+z^2}$$
+  $$\cos x = \cos \left( \frac{x}{2} + \frac{x}{2} \right) = 2 \cos^2 \frac{x}{2} - 1 = 2 \frac{1}{1+z^2} - 1 = \frac{1-z^2}{1+z^2} \ ,$$
+
+  e **todo** ...
+
+  $$\sin x = \frac{2 z}{1 - z^2}$$
+
+  $$\tan x = \frac{2 z }{1 - z^2}$$
 
 
   ```
