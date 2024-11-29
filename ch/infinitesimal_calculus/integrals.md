@@ -176,6 +176,9 @@ $$\begin{aligned}
 & = F(x) G(x) - \int F(x) g(x) dx  \ .
 \end{aligned}$$
 
+### Frazioni parziali
+**todo** E' una regola valida per funzioni integrande che possono essere scritte come il rapporto di due polinomi, $f(x) = \frac{N(x)}{D(x)}$, e segue direttamente dalla possibilità di scomporre il polinomio a denominatore in polinomi di primo e secondo grado, grazie al [teorema fondamentale dell'algebra](math-hs:precalculus:polynomials:alg-fund-thm), e scrivere il rapporto come somma di frazioni.
+
 (infinitesimal-calculus:integrals:substitution)=
 ### Integrazione con sostituzione
 La regola di integrazione per parti viene ottenuta dalla regola di derivazione della funzione composta {eq}`infinitesimal-calculus:derivatives:rules:composite`. Sia $\widetilde{F}(x)$ la funzione composta $\widetilde{F}(x) = F( y(x) )$ e siano definite le derivate
@@ -192,6 +195,50 @@ Usando il [teorema del calcolo infinitesimale](infinitesimal-calculus:integrals:
 
 **todo...**
 
+**Sostituzioni utili.**
 
+- funzioni trigonometriche **todo** *quando le funzioni iperboliche?*
+
+  $$\begin{aligned}
+    & \sqrt{a^2 + x^2} \qquad \rightarrow \qquad x = a \tan \theta \\
+    & \sqrt{a^2 - x^2} \qquad \rightarrow \qquad x = a \sin \theta \\
+    & \sqrt{x^2 - a^2} \qquad \rightarrow \qquad x = a \sec \theta \\
+  \end{aligned}$$
+
+  ```{dropdown}
+  ```
+
+- radici
+
+  $$\begin{aligned}
+    & \sqrt[n]{ax + b} \qquad \rightarrow \qquad ax + b = z^n \\
+    & \sqrt{a + bx + x^2} \qquad \rightarrow \qquad a + bx + x^2 = ( z - x )^2 \\
+    & \sqrt{a + bx - x^2} = \sqrt{(\alpha + x)(\beta - x)} \qquad \rightarrow \qquad a + bx - x^2 = ( \alpha + x )^2 z^2 \\
+  \end{aligned}$$
+
+  ```{dropdown}
+  ```
+
+- $z = \tan\left( \frac{x}{2} \right)$, quando compaiono funzioni trigonometriche per trasformare l'integranda in una funzione razionale.
+
+  ```{dropdown}
+  Usando la definizione della tangente 
+
+  $$z = \tan \left(\frac{x}{2}\right) = \frac{\sin \left(\frac{x}{2}\right)}{\cos \left(\frac{x}{2}\right)}$$
+
+  si può riscrivere la relazione fondamentale della trigonometria
+
+  $$1 = \cos^2 \frac{x}{2} + \sin^2 \frac{x}{2} = (1 + z^2) \cos^2 \frac{x}{2}\ .$$
+
+  Usando le regole per valutare le funzioni trigonometriche di una somma, si può riscrivere $\cos x$ in termini di $z$
+
+  $$\cos x = \cos \left( \frac{x}{2} + \frac{x}{2} \right) = 2 \cos^2 \frac{x}{2} - 1 = 2 \frac{1}{1+z^2} - 1 = \frac{1-z^2}{1+z^2} \ ,$$
+
+  e **todo** ...
+
+  $$\sin x = \frac{2 z}{1 + z^2}$$
+  $$\tan x = \frac{2 z}{1 - z^2}$$
+
+  ```
 
 
