@@ -7,7 +7,7 @@ In questa sezione vengono presentati gli argomenti dell'algebra lineare che rigu
 ## Introduzione
 <span style="color:red">L'algebra lineare è fondamentale per studiare matrici, sistemi lineari e trasformazioni geometriche. Questo capitolo esplora le matrici, i determinanti e la risoluzione dei sistemi.</span>
 
-## Sistemi lineari
+## Sistemi lineari e formalismo matriciale
 Un sistema di $m$ equazioni lineari in $n$ incognite $\{ x_1 \}$,
 
 $$\begin{cases}
@@ -24,16 +24,17 @@ $$
 \mathbf{A} \mathbf{x} = \mathbf{b} \ ,
 $$
 
-avendo raccolto i coefficienti $a_{ij}$ nella matrice $\mathbf{A}$, una tabela di $m$ righe e $n$ colonne, le incognite $x_j$ nella $n$-upla $\mathbf{x} \in \mathbb{R}^n$ e i coefficienti $b_i$ nella $m$-upla $\mathbf{b} \in \mathbb{R}^m$.
+avendo raccolto i coefficienti $a_{ij}$ nella matrice $\mathbf{A} \in \mathbb{R}^{m,n}$, una tabela di $m$ righe e $n$ colonne, le incognite $x_j$ nella $n$-upla $\mathbf{x} \in \mathbb{R}^n$ e i coefficienti $b_i$ nella $m$-upla $\mathbf{b} \in \mathbb{R}^m$, organizzate in un *vettore colonna*. Il prodotto matrice-vettore colonna $\mathbf{A} \mathbf{x}$ rimane definito dall'equivalenza delle diverse espressioni dello stesso sistema lineare.
 
 ## Matrici
 
-Una matrice è una tabella rettangolare di numeri:
+**Definizione.** Una matrice $\mathbf{A} \in \mathbb{R}^{m,n}$ è una tabella 2-dimensionale di numeri reali con $m$ righe e $n$ colonne,
 
 $$
-A = \begin{bmatrix}
-a_{11} & a_{12} \\
-a_{21} & a_{22}
+\mathbf{A} = \begin{bmatrix}
+a_{11} & a_{12} & \dots & a_{1n} \\
+\dots  & \dots  & \dots & \dots  \\
+a_{m1} & a_{m2} & \dots & a_{mn}
 \end{bmatrix}
 $$
 

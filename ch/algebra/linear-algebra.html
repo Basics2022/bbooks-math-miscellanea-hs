@@ -486,7 +486,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduzione">6.1. Introduzione</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-lineari">6.2. Sistemi lineari</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-lineari-e-formalismo-matriciale">6.2. Sistemi lineari e formalismo matriciale</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matrici">6.3. Matrici</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni">6.3.1. Operazioni</a></li>
 </ul>
@@ -512,8 +512,8 @@ document.write(`
 <h2><span class="section-number">6.1. </span>Introduzione<a class="headerlink" href="#introduzione" title="Permalink to this heading">#</a></h2>
 <p><span style="color:red">L’algebra lineare è fondamentale per studiare matrici, sistemi lineari e trasformazioni geometriche. Questo capitolo esplora le matrici, i determinanti e la risoluzione dei sistemi.</span></p>
 </div>
-<div class="section" id="sistemi-lineari">
-<h2><span class="section-number">6.2. </span>Sistemi lineari<a class="headerlink" href="#sistemi-lineari" title="Permalink to this heading">#</a></h2>
+<div class="section" id="sistemi-lineari-e-formalismo-matriciale">
+<h2><span class="section-number">6.2. </span>Sistemi lineari e formalismo matriciale<a class="headerlink" href="#sistemi-lineari-e-formalismo-matriciale" title="Permalink to this heading">#</a></h2>
 <p>Un sistema di <span class="math notranslate nohighlight">\(m\)</span> equazioni lineari in <span class="math notranslate nohighlight">\(n\)</span> incognite <span class="math notranslate nohighlight">\(\{ x_1 \}\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{cases}
@@ -528,16 +528,17 @@ document.write(`
 \qquad , \qquad
 \mathbf{A} \mathbf{x} = \mathbf{b} \ ,
 \end{split}\]</div>
-<p>avendo raccolto i coefficienti <span class="math notranslate nohighlight">\(a_{ij}\)</span> nella matrice <span class="math notranslate nohighlight">\(\mathbf{A}\)</span>, una tabela di <span class="math notranslate nohighlight">\(m\)</span> righe e <span class="math notranslate nohighlight">\(n\)</span> colonne, le incognite <span class="math notranslate nohighlight">\(x_j\)</span> nella <span class="math notranslate nohighlight">\(n\)</span>-upla <span class="math notranslate nohighlight">\(\mathbf{x} \in \mathbb{R}^n\)</span> e i coefficienti <span class="math notranslate nohighlight">\(b_i\)</span> nella <span class="math notranslate nohighlight">\(m\)</span>-upla <span class="math notranslate nohighlight">\(\mathbf{b} \in \mathbb{R}^m\)</span>.</p>
+<p>avendo raccolto i coefficienti <span class="math notranslate nohighlight">\(a_{ij}\)</span> nella matrice <span class="math notranslate nohighlight">\(\mathbf{A} \in \mathbb{R}^{m,n}\)</span>, una tabela di <span class="math notranslate nohighlight">\(m\)</span> righe e <span class="math notranslate nohighlight">\(n\)</span> colonne, le incognite <span class="math notranslate nohighlight">\(x_j\)</span> nella <span class="math notranslate nohighlight">\(n\)</span>-upla <span class="math notranslate nohighlight">\(\mathbf{x} \in \mathbb{R}^n\)</span> e i coefficienti <span class="math notranslate nohighlight">\(b_i\)</span> nella <span class="math notranslate nohighlight">\(m\)</span>-upla <span class="math notranslate nohighlight">\(\mathbf{b} \in \mathbb{R}^m\)</span>, organizzate in un <em>vettore colonna</em>. Il prodotto matrice-vettore colonna <span class="math notranslate nohighlight">\(\mathbf{A} \mathbf{x}\)</span> rimane definito dall’equivalenza delle diverse espressioni dello stesso sistema lineare.</p>
 </div>
 <div class="section" id="matrici">
 <h2><span class="section-number">6.3. </span>Matrici<a class="headerlink" href="#matrici" title="Permalink to this heading">#</a></h2>
-<p>Una matrice è una tabella rettangolare di numeri:</p>
+<p><strong>Definizione.</strong> Una matrice <span class="math notranslate nohighlight">\(\mathbf{A} \in \mathbb{R}^{m,n}\)</span> è una tabella 2-dimensionale di numeri reali con <span class="math notranslate nohighlight">\(m\)</span> righe e <span class="math notranslate nohighlight">\(n\)</span> colonne,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-A = \begin{bmatrix}
-a_{11} &amp; a_{12} \\
-a_{21} &amp; a_{22}
+\mathbf{A} = \begin{bmatrix}
+a_{11} &amp; a_{12} &amp; \dots &amp; a_{1n} \\
+\dots  &amp; \dots  &amp; \dots &amp; \dots  \\
+a_{m1} &amp; a_{m2} &amp; \dots &amp; a_{mn}
 \end{bmatrix}
 \end{split}\]</div>
 <div class="section" id="operazioni">
@@ -665,7 +666,7 @@ x + 2y = 5 \\
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduzione">6.1. Introduzione</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-lineari">6.2. Sistemi lineari</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-lineari-e-formalismo-matriciale">6.2. Sistemi lineari e formalismo matriciale</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matrici">6.3. Matrici</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni">6.3.1. Operazioni</a></li>
 </ul>
