@@ -40,7 +40,11 @@ a_{m1} & a_{m2} & \dots & a_{mn}
 $$
 
 ### Operazioni
-- **Somma**, la somma è possibile tra due matrici con le stesse dimensioni $\mathbf{A}, \ \mathbf{B} \in \mathbb{R}^{m,n}$,
+- **Somma**, la somma è possibile tra due matrici con le stesse dimensioni $\mathbf{A},\, \mathbf{B} \in \mathbb{R}^{m,n}$. La somma di due matrici $\mathbf{A}$, $\mathbf{B}$ è la matrice $\mathbf{A} + \mathbf{B} \in \mathbb{R}^{m,n}$ con componenti
+
+  $$(\mathbf{A} + \mathbf{B})_{ij} = a_{ij} + b_{ij} \ ,$$
+
+  o più esplicitamente,
 
    $$ \mathbf{A} + \mathbf{B} = 
 \begin{bmatrix}
@@ -58,13 +62,17 @@ $$
 \end{bmatrix}
 $$
 
-  $$(\mathbf{A} + \mathbf{B})_{ij} = a_{ij} + b_{ij}$$
+- **Moltiplicazione per uno scalare**. La moltiplicazione di una matrice $\mathbf{A} \in \mathbb{R}^{m,n}$ per un numero reale $c \in \mathbf{R}$ è la matrice $c \mathbf{A} \in \mathbb{R}^{m,n}$ con componenti
 
-- **Moltiplicazione per uno scalare**:
-   $ c \cdot A = \begin{bmatrix}
-   c \cdot a_{11} & c \cdot a_{12} \\
-   c \cdot a_{21} & c \cdot a_{22}
-   \end{bmatrix} $
+  $$(c \mathbf{A})_{ij} = c \, a_ij \ ,$$
+
+  o più esplicitamente,
+
+   $$ c \cdot A = \begin{bmatrix}
+   c \cdot a_{11} & \dots & c \cdot a_{1n} \\
+   \dots          & \dots & \dots          \\
+   c \cdot a_{m1} & \dots & c \cdot a_{mn}
+   \end{bmatrix} $$
 
 ---
 
