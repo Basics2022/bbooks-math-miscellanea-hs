@@ -13,13 +13,17 @@ parts:
     sections:
     - file: ch/program/current-guidelines-italy
     - file: ch/program/delta
+- caption: Logica e insiemistica
+  numbered: True
+  chapters:
+  - file: ch/logics.md
+  - file: ch/set.md
 - caption: Algebra
   numbered: True
   chapters:
   - file: ch/algebra
   - file: ch/algebra/real-algebra
-#   sections:
-#   - file: ch/linear_algebra
+  - file: ch/algebra/real-n-algebra
   - file: ch/algebra/matrix-algebra
   - file: ch/algebra/vector-algebra
     sections:

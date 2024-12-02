@@ -1,0 +1,1286 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="it" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5. Algebra su \(\mathbb{R}^n\) &#8212; Matematica per le scuole superiori</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/exercise.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/style.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/algebra/real-n-algebra';</script>
+    <link rel="shortcut icon" href="../../_static/favicon.svg"/>
+    <link rel="index" title="Indice" href="../../genindex.html" />
+    <link rel="search" title="Cerca" href="../../search.html" />
+    <link rel="next" title="6. Algebra matriciale" href="matrix-algebra.html" />
+    <link rel="prev" title="4. Algebra sui numeri reali" href="real-algebra.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="it"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.svg" class="logo__image only-light" alt="Matematica per le scuole superiori - Home"/>
+    <script>document.write(`<img src="../../_static/logo-dark.svg" class="logo__image only-dark" alt="Matematica per le scuole superiori - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduzione</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../program.html">Programma</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../program/current-guidelines-italy.html">Indicazioni nazionali per le superiori italiane</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../program/delta.html"><span class="math notranslate nohighlight">\(\Delta\)</span></a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Logica e insiemistica</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../logics.html">1. Logica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../set.html">2. Insiemistica</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Algebra</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../algebra.html">3. Introduzione all’algebra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="real-algebra.html">4. Algebra sui numeri reali</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">5. Algebra su <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span></a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix-algebra.html">6. Algebra matriciale</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="vector-algebra.html">7. Algebra vettoriale</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="vector-algebra-def.html">7.1. Prime definizioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vector-algebra-euclidean-space.html">7.2. Spazio vettoriale euclideo</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="complex-algebra.html">8. Algebra complessa</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Geometria analitica</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../analytic_geometry.html">9. Introduzione alla geometria analitica</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/euclidean_space.html">9.1. Spazio euclideo</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d.html">10. Geometria analitica nel piano</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/coordinates.html">10.1. Sistemi di coordinate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/points.html">10.2. Distanze e angoli</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/curves.html">10.3. Curve nel piano</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/lines.html">10.4. Rette nel piano</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/conics.html">10.5. Coniche</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/conics-cartesian.html">10.5.1. Forma canonica in coordinate cartesiane</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/conics-polar.html">10.5.2. Forma canonica in coordinate polari</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/conics-general.html">10.5.3. Equazione generale delle coniche</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../analytic_geometry/analytic_geometry_3d.html">11. Geometria analitica nello spazio</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_3d/points.html">11.1. Sistemi di coordinate per lo spazio euclideo <span class="math notranslate nohighlight">\(E^3\)</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_3d/planes.html">11.2. Piani nello spazio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_3d/curves.html">11.3. Curve nello spazio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_3d/lines.html">11.4. Rette nello spazio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_3d/cone.html">11.5. Cono circolare retto e coniche</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Precalcolo</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../precalculus.html">12. Introduzione al pre-calcolo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../precalculus/real-functions.html">13. Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\(f: \mathbb{R} \rightarrow \mathbb{R}\)</span></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../precalculus/polynomials.html">14. Polinomi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../series.html">15. Serie e successioni</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../trigonometry.html">16. Trigonometria</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../exponential_logarithm.html">17. Esponenziale e logaritmo</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../exponential_logarithm-proof.html">17.4. Esponenziale e logaritmo - dimostrazioni</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../precalculus/multivariable-real-fun.html">18. Funzioni multi-variabile</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Calcolo</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../calculus.html">19. Introduzione al calcolo</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../infinitesimal_calculus.html">20. Calcolo infinitesimale</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../infinitesimal_calculus/analysis.html">20.1. Introduzione all’analisi</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../infinitesimal_calculus/analysis-problems.html">20.1.7. Introduzione all’analisi - Problemi</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../infinitesimal_calculus/derivatives.html">20.2. Derivate</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../infinitesimal_calculus/derivatives-problems.html">20.2.7. Derivate - Problemi</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../infinitesimal_calculus/integrals.html">20.3. Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../infinitesimal_calculus/integrals-table.html">20.3.5. Tavola degli integrali indefiniti più comuni</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../infinitesimal_calculus/integrals-problems.html">20.3.6. Integrali - Problemi</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ode.html">20.4. Equazioni differenziali ordinarie</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/problems.html">20.5. Calcolo infinitesimale - Problemi</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../multivariable-calculus.html">21. Introduzione al calcolo multi-variabile</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../multivariable-calculus/limits.html">21.1. Limite di una funzione di più variabili</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../multivariable-calculus/derivatives.html">21.2. Derivate di funzioni di più variabili</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../multivariable-calculus/integrals.html">21.3. Integrali su domini multi-dimensionali</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../vector-calculus.html">22. Introduzione al calcolo vettoriale su spazi euclidei</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../vector-calculus/derivatives.html">22.1. Operatori differenziali in spazi euclidei</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../vector-calculus/integrals.html">22.2. Integrali in spazi euclidei</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Statistica</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../statistics.html">23. Introduzione alla statistica</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Indice</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../genindex.html">Indice</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Repository di origine"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs/edit/master/ch/algebra/real-n-algebra.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs/issues/new?title=Issue%20on%20page%20%2Fch/algebra/real-n-algebra.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Apri un problema"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Scarica questa pagina">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/ch/algebra/real-n-algebra.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Scarica il file sorgente"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Stampa in PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Modalità schermo intero"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Cerca" aria-label="Cerca" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Algebra su \mathbb{R}^n</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenuti </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi">5.1. Problemi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#forma-generale">5.1.1. Forma generale</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">5.2. …</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">5.3. Problemi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sezione-1-sistemi-lineari-di-equazioni-2-variabili">5.4. Sezione 1: Sistemi Lineari di Equazioni (2 Variabili)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi">5.4.1. Esercizi</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sezione-2-sistemi-lineari-di-disequazioni-2-variabili">5.5. Sezione 2: Sistemi Lineari di Disequazioni (2 Variabili)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">5.5.1. Esercizi</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sezione-3-problemi-misti-equazioni-e-disequazioni">5.6. Sezione 3: Problemi Misti (Equazioni e Disequazioni)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">5.6.1. Esercizi</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sezione-4-sistemi-quadratici">5.7. Sezione 4: Sistemi Quadratici</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-quadratiche">5.7.1. Equazioni Quadratiche</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disequazioni-quadratiche">5.7.2. Disequazioni Quadratiche</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sezione-5-sistemi-di-tre-equazioni">5.8. Sezione 5: Sistemi di Tre Equazioni</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi-determinati">5.8.1. Esercizi Determinati</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi-indeterminati">5.8.2. Esercizi Indeterminati</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi-senza-soluzione">5.8.3. Esercizi senza Soluzione</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sezione-6-sistemi-misti-e-avanzati">5.9. Sezione 6: Sistemi Misti e Avanzati</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">5.9.1. Esercizi</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <!--
+```{article-info}
+:author: basics
+:date: "{sub-ref}`today`"
+:read-time: "{sub-ref}`wordcount-minutes` min read"
+```
+-->
+<div class="tex2jax_ignore mathjax_ignore section" id="algebra-su-mathbb-r-n">
+<span id="math-hs-algebra-real-n"></span><h1><span class="section-number">5. </span>Algebra su <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span><a class="headerlink" href="#algebra-su-mathbb-r-n" title="Permalink to this heading">#</a></h1>
+<p>L’algebra in <span class="math notranslate nohighlight">\( \mathbb{R}^n \)</span> si occupa delle <span class="math notranslate nohighlight">\(n\)</span>-uple <span class="math notranslate nohighlight">\(\mathbf{x} = (x_1, \dots, x_n) \in \mathbb{R}^n\)</span> di <span class="math notranslate nohighlight">\(n\)</span> numeri reali e dei problemi che hanno più di un’incongita, come i sistemi di equazioni e di disequazioni. Alle operazioni sui numeri reali che possono essere compiute sulle singole componenti delle <span class="math notranslate nohighlight">\(n\)</span>-uple, si aggiungono le operazioni di:</p>
+<ul>
+<li><p><strong>Addizione di <span class="math notranslate nohighlight">\(n\)</span>-uple</strong> che produce una <span class="math notranslate nohighlight">\(n\)</span>-upla le cui componenti sono le somme delle componenti,</p>
+<div class="math notranslate nohighlight">
+\[\mathbf{a} + \mathbf{b} = (a_1,\dots,a_n) + (b_1,\dots,b_n) = (a_1+b_1,\dots,a_n+b_n) \ ,\]</div>
+</li>
+<li><p><strong>Moltiplicazione di una <span class="math notranslate nohighlight">\(n\)</span>-upla per uno scalare</strong> che produce una <span class="math notranslate nohighlight">\(n\)</span>-upla le cui componenti sono il prodotto delle componenti per lo scalare</p>
+<div class="math notranslate nohighlight">
+\[c \, \mathbf{a} = c \, (a_1,\dots,a_n) = (c \, a_1, \dots, c \, a_n) \ .\]</div>
+</li>
+</ul>
+<hr class="docutils" />
+<div class="section" id="problemi">
+<h2><span class="section-number">5.1. </span>Problemi<a class="headerlink" href="#problemi" title="Permalink to this heading">#</a></h2>
+<div class="section" id="forma-generale">
+<h3><span class="section-number">5.1.1. </span>Forma generale<a class="headerlink" href="#forma-generale" title="Permalink to this heading">#</a></h3>
+<p><strong>Sistemi di equazioni.</strong> Un sistema di <span class="math notranslate nohighlight">\(m\)</span> equazioni in <span class="math notranslate nohighlight">\(n\)</span> incognite è un insieme di <span class="math notranslate nohighlight">\(m\)</span> equazioni che devono essere soddisfatte simultaneamente,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases} f_1(x_1,\dots,x_n) = 0 \\ \dots \\f_m(x_1, \dots, x_n) = 0 \end{cases}
+\qquad , \qquad \mathbf{f}(\mathbf{x}) = \mathbf{0} \ .\end{split}\]</div>
+<p>Le <span class="math notranslate nohighlight">\(n\)</span>-uple che soddisfano simultaneamente le <span class="math notranslate nohighlight">\(m\)</span> condizioni sono le soluzioni del problema. In generale, non si può dire nulla sull’esistenza e l’eventuale unicità delle soluzioni del problema. Risultati di esistenza e unicità esistono per i problemi lineari, come descritto nella sezione sull”<a class="reference internal" href="../algebra.html"><span class="doc std std-doc">algebra lineare</span></a> <strong>todo</strong> <em>collegamento. Serve un capitolo sull’algebra lineare? Rinominare quello sull’algebra matriciale in algebra lineare?</em>.</p>
+<p><strong>Sistemi di disequazioni.</strong> Un sistema di <span class="math notranslate nohighlight">\(m\)</span> disequazioni in <span class="math notranslate nohighlight">\(n\)</span> incognite è un insieme di <span class="math notranslate nohighlight">\(m\)</span> disequazioni che devono essere soddisfatte simultaneamente,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases} g_1(x_1,\dots,x_n) &gt; 0 \\ \dots \\g_m(x_1, \dots, x_n) &gt; 0 \end{cases}
+\qquad , \qquad \mathbf{g}(\mathbf{x}) &gt; \mathbf{0} \ .\end{split}\]</div>
+<p>Le <span class="math notranslate nohighlight">\(n\)</span>-uple che soddisfano simultaneamente le <span class="math notranslate nohighlight">\(m\)</span> condizioni sono le soluzioni del problema. In generale, non si può dire nulla sull’esistenza e l’eventuale unicità delle soluzioni del problema.</p>
+<p><strong>Sistemi di equazioni e disequazioni.</strong> Un sistema di <span class="math notranslate nohighlight">\(m_1\)</span> equazioni e <span class="math notranslate nohighlight">\(m_2\)</span> disequazioni in <span class="math notranslate nohighlight">\(n\)</span> incognite è un insieme di <span class="math notranslate nohighlight">\(m_1\)</span> equazioni e <span class="math notranslate nohighlight">\(m_2\)</span> disequazioni che devono essere soddisfatte simultaneamente,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases} f_1(x_1,\dots,x_n) = 0 \\ \dots \\ f_{m_1}(x_1,\dots,x_n) = 0 \\ g_1(x_1,\dots,x_n) &gt; 0 \\ \dots \\g_{m_2}(x_1, \dots, x_n) &gt; 0 \end{cases}
+\qquad , \qquad \begin{cases} \mathbf{f}(\mathbf{x}) = \mathbf{0} \\ \mathbf{g}(\mathbf{x}) &gt; \mathbf{0} \end{cases}
+\end{split}\]</div>
+<p>Le <span class="math notranslate nohighlight">\(n\)</span>-uple che soddisfano simultaneamente le <span class="math notranslate nohighlight">\(m\)</span> condizioni sono le soluzioni del problema. In generale, non si può dire nulla sull’esistenza e l’eventuale unicità delle soluzioni del problema.</p>
+</div>
+</div>
+<div class="section" id="id1">
+<h2><span class="section-number">5.2. </span>…<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+</div>
+<div class="section" id="id2">
+<h2><span class="section-number">5.3. </span>Problemi<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+</div>
+<div class="section" id="sezione-1-sistemi-lineari-di-equazioni-2-variabili">
+<h2><span class="section-number">5.4. </span>Sezione 1: Sistemi Lineari di Equazioni (2 Variabili)<a class="headerlink" href="#sezione-1-sistemi-lineari-di-equazioni-2-variabili" title="Permalink to this heading">#</a></h2>
+<div class="section" id="esercizi">
+<h3><span class="section-number">5.4.1. </span>Esercizi<a class="headerlink" href="#esercizi" title="Permalink to this heading">#</a></h3>
+<ol class="arabic">
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{cases}
+   x + y = 7 \\
+   2x - y = 4
+   \end{cases}
+   \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{cases}
+   3x + 4y = 12 \\
+   x - 2y = -1
+   \end{cases}
+   \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{cases}
+   5x - y = 10 \\
+   2x + 3y = 14
+   \end{cases}
+   \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{cases}
+   x + 2y = 5 \\
+   3x - y = 4
+   \end{cases}
+   \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{cases}
+   2x + 3y = 7 \\
+   4x - y = 9
+   \end{cases}
+   \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{cases}
+   x - y = 1 \\
+   2x + y = 8
+   \end{cases}
+   \end{split}\]</div>
+</li>
+</ol>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="sezione-2-sistemi-lineari-di-disequazioni-2-variabili">
+<h2><span class="section-number">5.5. </span>Sezione 2: Sistemi Lineari di Disequazioni (2 Variabili)<a class="headerlink" href="#sezione-2-sistemi-lineari-di-disequazioni-2-variabili" title="Permalink to this heading">#</a></h2>
+<div class="section" id="id3">
+<h3><span class="section-number">5.5.1. </span>Esercizi<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
+<ol class="arabic" start="7">
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{cases}
+   x + y \leq 4 \\
+   2x - y &gt; 3
+   \end{cases}
+   \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{cases}
+   x - 2y \geq 1 \\
+   3x + y &lt; 7
+   \end{cases}
+   \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{cases}
+   x + y \geq 0 \\
+   x - y \leq 3
+   \end{cases}
+   \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    2x - y &lt; 5 \\
+    x + 3y \geq -4
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x - y \leq 2 \\
+    x + y &gt; 6
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    4x + y \geq 8 \\
+    x - y \leq 1
+    \end{cases}
+    \end{split}\]</div>
+</li>
+</ol>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="sezione-3-problemi-misti-equazioni-e-disequazioni">
+<h2><span class="section-number">5.6. </span>Sezione 3: Problemi Misti (Equazioni e Disequazioni)<a class="headerlink" href="#sezione-3-problemi-misti-equazioni-e-disequazioni" title="Permalink to this heading">#</a></h2>
+<div class="section" id="id4">
+<h3><span class="section-number">5.6.1. </span>Esercizi<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h3>
+<ol class="arabic" start="13">
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x + y = 3 \\
+    2x - y \geq 1
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x - y &gt; 0 \\
+    x + y = 5
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    2x + y \leq 6 \\
+    x - y = 2
+    \end{cases}
+    \end{split}\]</div>
+</li>
+</ol>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="sezione-4-sistemi-quadratici">
+<h2><span class="section-number">5.7. </span>Sezione 4: Sistemi Quadratici<a class="headerlink" href="#sezione-4-sistemi-quadratici" title="Permalink to this heading">#</a></h2>
+<div class="section" id="equazioni-quadratiche">
+<h3><span class="section-number">5.7.1. </span>Equazioni Quadratiche<a class="headerlink" href="#equazioni-quadratiche" title="Permalink to this heading">#</a></h3>
+<ol class="arabic" start="16">
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x^2 + y = 4 \\
+    x + y = 3
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    y = x^2 + 2x \\
+    y = -x + 3
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x^2 + y^2 = 25 \\
+    x + y = 7
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x^2 - 4y = 3 \\
+    2x + y = 5
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    y = x^2 - 3x + 2 \\
+    y = 2x - 1
+    \end{cases}
+    \end{split}\]</div>
+</li>
+</ol>
+</div>
+<hr class="docutils" />
+<div class="section" id="disequazioni-quadratiche">
+<h3><span class="section-number">5.7.2. </span>Disequazioni Quadratiche<a class="headerlink" href="#disequazioni-quadratiche" title="Permalink to this heading">#</a></h3>
+<ol class="arabic" start="21">
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x^2 + y &gt; 4 \\
+    x + y \leq 3
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    y &gt; x^2 + 2x \\
+    y \leq -x + 3
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x^2 + y^2 \leq 25 \\
+    x + y &gt; 7
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x^2 - 4y &gt; 3 \\
+    2x + y \leq 5
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    y \leq x^2 - 3x + 2 \\
+    y \geq 2x - 1
+    \end{cases}
+    \end{split}\]</div>
+</li>
+</ol>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="sezione-5-sistemi-di-tre-equazioni">
+<h2><span class="section-number">5.8. </span>Sezione 5: Sistemi di Tre Equazioni<a class="headerlink" href="#sezione-5-sistemi-di-tre-equazioni" title="Permalink to this heading">#</a></h2>
+<div class="section" id="esercizi-determinati">
+<h3><span class="section-number">5.8.1. </span>Esercizi Determinati<a class="headerlink" href="#esercizi-determinati" title="Permalink to this heading">#</a></h3>
+<ol class="arabic" start="26">
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x + y + z = 6 \\
+    2x - y + z = 5 \\
+    x - y - z = -2
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    2x + y + z = 7 \\
+    x - y + 2z = 3 \\
+    x + 2y - z = 4
+    \end{cases}
+    \end{split}\]</div>
+</li>
+</ol>
+</div>
+<hr class="docutils" />
+<div class="section" id="esercizi-indeterminati">
+<h3><span class="section-number">5.8.2. </span>Esercizi Indeterminati<a class="headerlink" href="#esercizi-indeterminati" title="Permalink to this heading">#</a></h3>
+<ol class="arabic" start="28">
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x + y + z = 5 \\
+    2x + 2y + 2z = 10 \\
+    x - y + z = 1
+    \end{cases}
+    \end{split}\]</div>
+</li>
+</ol>
+</div>
+<hr class="docutils" />
+<div class="section" id="esercizi-senza-soluzione">
+<h3><span class="section-number">5.8.3. </span>Esercizi senza Soluzione<a class="headerlink" href="#esercizi-senza-soluzione" title="Permalink to this heading">#</a></h3>
+<ol class="arabic" start="29">
+<li><p>Verifica che il sistema non abbia soluzioni:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x + y + z = 4 \\
+    x - y + z = 6 \\
+    2x + 2y + 2z = 5
+    \end{cases}
+    \end{split}\]</div>
+</li>
+</ol>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="sezione-6-sistemi-misti-e-avanzati">
+<h2><span class="section-number">5.9. </span>Sezione 6: Sistemi Misti e Avanzati<a class="headerlink" href="#sezione-6-sistemi-misti-e-avanzati" title="Permalink to this heading">#</a></h2>
+<div class="section" id="id5">
+<h3><span class="section-number">5.9.1. </span>Esercizi<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h3>
+<ol class="arabic" start="30">
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    \frac{x}{y} + 2 = 3 \\
+    x - \sqrt{y} = 2
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    \log(x) + y = 2 \\
+    x^y = 4
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x^3 + y^2 = 10 \\
+    x - y = 2
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x^2 + y^3 = 9 \\
+    x + \sqrt{y} = 3
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    \frac{x}{y} = 2 \\
+    x^2 - y^2 = 16
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    \frac{1}{x} + \frac{1}{y} = 1 \\
+    x - y = 2
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    e^x + y = 5 \\
+    x + \ln(y) = 2
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x^3 - y = 8 \\
+    y + \sqrt{x} = 10
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    \log(x) + y^2 = 4 \\
+    x + y = 3
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x^2 - y = 3 \\
+    \frac{x + y}{x - y} = 2
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    2^x + y = 10 \\
+    x + \log_2(y) = 3
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x^2 + y^2 = 25 \\
+    x^3 - y = 15
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x + \frac{1}{y} = 4 \\
+    \frac{x}{y} + 2 = 5
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x^4 - y^2 = 16 \\
+    x + y = 6
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    \sqrt{x} + y^3 = 10 \\
+    x + \frac{1}{y} = 4
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    e^x - y = 2 \\
+    x + \ln(y) = 1
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    \frac{1}{x} + y^2 = 5 \\
+    x^2 + y = 6
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x^2 + y^3 = 12 \\
+    \ln(x) + y = 2
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x + y = 7 \\
+    x^2 + y^2 = 49
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x - \sqrt{y} = 3 \\
+    x^2 + y = 18
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    3^x + y = 10 \\
+    x + \log_3(y) = 2
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x^3 + y^2 = 20 \\
+    x + y = 6
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    \frac{x}{y} = 3 \\
+    x^2 + y^2 = 25
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x^2 - y = 4 \\
+    x + y^2 = 10
+    \end{cases}
+    \end{split}\]</div>
+</li>
+</ol>
+<hr class="docutils" />
+<p>Questi esercizi coprono una vasta gamma di difficoltà e argomenti, offrendo un’ampia pratica con polinomi, funzioni razionali, esponenziali, radici e logaritmi.</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./ch/algebra"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="real-algebra.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">precedente</p>
+        <p class="prev-next-title"><span class="section-number">4. </span>Algebra sui numeri reali</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="matrix-algebra.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">successivo</p>
+        <p class="prev-next-title"><span class="section-number">6. </span>Algebra matriciale</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenuti
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi">5.1. Problemi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#forma-generale">5.1.1. Forma generale</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">5.2. …</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">5.3. Problemi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sezione-1-sistemi-lineari-di-equazioni-2-variabili">5.4. Sezione 1: Sistemi Lineari di Equazioni (2 Variabili)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi">5.4.1. Esercizi</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sezione-2-sistemi-lineari-di-disequazioni-2-variabili">5.5. Sezione 2: Sistemi Lineari di Disequazioni (2 Variabili)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">5.5.1. Esercizi</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sezione-3-problemi-misti-equazioni-e-disequazioni">5.6. Sezione 3: Problemi Misti (Equazioni e Disequazioni)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">5.6.1. Esercizi</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sezione-4-sistemi-quadratici">5.7. Sezione 4: Sistemi Quadratici</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-quadratiche">5.7.1. Equazioni Quadratiche</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disequazioni-quadratiche">5.7.2. Disequazioni Quadratiche</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sezione-5-sistemi-di-tre-equazioni">5.8. Sezione 5: Sistemi di Tre Equazioni</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi-determinati">5.8.1. Esercizi Determinati</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi-indeterminati">5.8.2. Esercizi Indeterminati</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi-senza-soluzione">5.8.3. Esercizi senza Soluzione</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sezione-6-sistemi-misti-e-avanzati">5.9. Sezione 6: Sistemi Misti e Avanzati</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">5.9.1. Esercizi</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Di basics
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
