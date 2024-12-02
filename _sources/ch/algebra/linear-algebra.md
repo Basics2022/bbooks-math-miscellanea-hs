@@ -5,12 +5,10 @@
 In questa sezione vengono presentati gli argomenti dell'algebra lineare che riguardano la soluzione di sistemi di equazioni lineari, per i quali si discutono le condizioni di esistenza e unicità della soluzione e dei quali viene fornita una rappresentazione grafica. Viene introdotto il formalismo matriciale, e le operazioni algebriche elementari sulle matrici; vengono date le definizioni  le matrici vengono interpretate come funzioni lineari (applicazioni lineari), e utilizzate per formulare le condizioni di esistenza e unicità delle soluzioni di sistemi lineari (teorema di Rouché-Capelli).
 
 ## Introduzione
-L'algebra lineare è fondamentale per studiare matrici, sistemi lineari e trasformazioni geometriche. Questo capitolo esplora le matrici, i determinanti e la risoluzione dei sistemi.
-
----
+<span style="color:red">L'algebra lineare è fondamentale per studiare matrici, sistemi lineari e trasformazioni geometriche. Questo capitolo esplora le matrici, i determinanti e la risoluzione dei sistemi.</span>
 
 ## Sistemi lineari
-Un sistema di $m$ equazioni lineari in $n$ incognite è il problema
+Un sistema di $m$ equazioni lineari in $n$ incognite $\{ x_1 \}$,
 
 $$\begin{cases}
  a_{11} x_1 + a_{12} x_2 + \dots + a_{1n} x_n & = b_1 \\
@@ -18,6 +16,11 @@ $$\begin{cases}
  a_{m1} x_1 + a_{m2} x_2 + \dots + a_{mn} x_n & = b_m \\
 \end{cases}$$
 
+può essere riscritto usando il formalismo matriciale come
+
+$$
+\begin{bmatrix} a_{11} & a_{12} & \dots a_{1n} \\ \dots & \dots & \dots & \dots \\ a_{m1} & a_{m2} & \dots a_{mn} \end{bmatrix} \begin{bmatrix} x_1 \\ \dots \\ x_n \end{bmatrix} = \begin{bmatrix} b_1 \\ \dots \ b_m \end{bmatrix} \ .
+$$
 
 ## Matrici
 
