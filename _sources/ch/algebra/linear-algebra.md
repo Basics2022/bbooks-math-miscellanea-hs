@@ -31,7 +31,8 @@ avendo raccolto i coefficienti $a_{ij}$ nella matrice $\mathbf{A} \in \mathbb{R}
 **Definizione.** Una matrice $\mathbf{A} \in \mathbb{R}^{m,n}$ è una tabella 2-dimensionale di numeri reali con $m$ righe e $n$ colonne,
 
 $$
-\mathbf{A} = \begin{bmatrix}
+\mathbf{A} =
+\begin{bmatrix}
 a_{11} & a_{12} & \dots & a_{1n} \\
 \dots  & \dots  & \dots & \dots  \\
 a_{m1} & a_{m2} & \dots & a_{mn}
@@ -39,11 +40,24 @@ a_{m1} & a_{m2} & \dots & a_{mn}
 $$
 
 ### Operazioni
-- **Addizione**:
-   $ A + B = \begin{bmatrix}
-   a_{11} + b_{11} & a_{12} + b_{12} \\
-   a_{21} + b_{21} & a_{22} + b_{22}
-   \end{bmatrix} $
+- **Somma**, la somma è possibile tra due matrici con le stesse dimensioni $\mathbf{A}, \ \mathbf{B} \in \mathbb{R}^{m,n}$,
+
+   $$ \mathbf{A} + \mathbf{B} = 
+\begin{bmatrix}
+  a_{11} & a_{12} & \dots & a_{1n} \\ \dots  & \dots  & \dots & \dots  \\ a_{m1} & a_{m2} & \dots & a_{mn}
+\end{bmatrix}
++
+\begin{bmatrix}
+  b_{11} & b_{12} & \dots & b_{1n} \\ \dots  & \dots  & \dots & \dots  \\ b_{m1} & b_{m2} & \dots & b_{mn}
+\end{bmatrix}
+= 
+\begin{bmatrix}
+  a_{11}+b_{11} & a_{12}+b_{12} & \dots & a_{1n}+b_{1n} \\
+  \dots  & \dots  & \dots & \dots  \\
+  a_{m1}+b_{m1} & a_{m2}+b_{m2} & \dots & a_{mn}+b_{mn} \\
+\end{bmatrix}
+$$
+
 - **Moltiplicazione per uno scalare**:
    $ c \cdot A = \begin{bmatrix}
    c \cdot a_{11} & c \cdot a_{12} \\

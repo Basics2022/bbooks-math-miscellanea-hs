@@ -535,7 +535,8 @@ document.write(`
 <p><strong>Definizione.</strong> Una matrice <span class="math notranslate nohighlight">\(\mathbf{A} \in \mathbb{R}^{m,n}\)</span> è una tabella 2-dimensionale di numeri reali con <span class="math notranslate nohighlight">\(m\)</span> righe e <span class="math notranslate nohighlight">\(n\)</span> colonne,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\mathbf{A} = \begin{bmatrix}
+\mathbf{A} =
+\begin{bmatrix}
 a_{11} &amp; a_{12} &amp; \dots &amp; a_{1n} \\
 \dots  &amp; \dots  &amp; \dots &amp; \dots  \\
 a_{m1} &amp; a_{m2} &amp; \dots &amp; a_{mn}
@@ -543,12 +544,25 @@ a_{m1} &amp; a_{m2} &amp; \dots &amp; a_{mn}
 \end{split}\]</div>
 <div class="section" id="operazioni">
 <h3><span class="section-number">6.3.1. </span>Operazioni<a class="headerlink" href="#operazioni" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p><strong>Addizione</strong>:
-<span class="math notranslate nohighlight">\( A + B = \begin{bmatrix}
- a_{11} + b_{11} &amp; a_{12} + b_{12} \\
- a_{21} + b_{21} &amp; a_{22} + b_{22}
- \end{bmatrix} \)</span></p></li>
+<ul>
+<li><p><strong>Somma</strong>, la somma è possibile tra due matrici con le stesse dimensioni <span class="math notranslate nohighlight">\(\mathbf{A}, \ \mathbf{B} \in \mathbb{R}^{m,n}\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} \mathbf{A} + \mathbf{B} = 
+\begin{bmatrix}
+  a_{11} &amp; a_{12} &amp; \dots &amp; a_{1n} \\ \dots  &amp; \dots  &amp; \dots &amp; \dots  \\ a_{m1} &amp; a_{m2} &amp; \dots &amp; a_{mn}
+\end{bmatrix}
++
+\begin{bmatrix}
+  b_{11} &amp; b_{12} &amp; \dots &amp; b_{1n} \\ \dots  &amp; \dots  &amp; \dots &amp; \dots  \\ b_{m1} &amp; b_{m2} &amp; \dots &amp; b_{mn}
+\end{bmatrix}
+= 
+\begin{bmatrix}
+  a_{11}+b_{11} &amp; a_{12}+b_{12} &amp; \dots &amp; a_{1n}+b_{1n} \\
+  \dots  &amp; \dots  &amp; \dots &amp; \dots  \\
+  a_{m1}+b_{m1} &amp; a_{m2}+b_{m2} &amp; \dots &amp; a_{mn}+b_{mn} \\
+\end{bmatrix}
+\end{split}\]</div>
+</li>
 <li><p><strong>Moltiplicazione per uno scalare</strong>:
 <span class="math notranslate nohighlight">\( c \cdot A = \begin{bmatrix}
  c \cdot a_{11} &amp; c \cdot a_{12} \\
