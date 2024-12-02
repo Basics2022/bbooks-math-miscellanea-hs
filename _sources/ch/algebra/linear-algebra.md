@@ -58,6 +58,8 @@ $$
 \end{bmatrix}
 $$
 
+  $$(\mathbf{A} + \mathbf{B})_{ij} = a_{ij} + b_{ij}$$
+
 - **Moltiplicazione per uno scalare**:
    $ c \cdot A = \begin{bmatrix}
    c \cdot a_{11} & c \cdot a_{12} \\
