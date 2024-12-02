@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>6. Algebra matriciale &#8212; Matematica per le scuole superiori</title>
+    <title>5. Algebra su \(\mathbb{R}^n\) &#8212; Matematica per le scuole superiori</title>
   
   
   
@@ -67,12 +67,12 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/algebra/matrix-algebra';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/algebra/real-n-algebra';</script>
     <link rel="shortcut icon" href="../../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="7. Algebra vettoriale" href="vector-algebra.html" />
-    <link rel="prev" title="5. Algebra su \(\mathbb{R}^n\)" href="real-n-algebra.html" />
+    <link rel="next" title="6. Algebra lineare" href="linear-algebra.html" />
+    <link rel="prev" title="4. Algebra sui numeri reali" href="real-algebra.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
@@ -183,8 +183,8 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../algebra.html">3. Introduzione all’algebra</a></li>
 <li class="toctree-l1"><a class="reference internal" href="real-algebra.html">4. Algebra sui numeri reali</a></li>
-<li class="toctree-l1"><a class="reference internal" href="real-n-algebra.html">5. Algebra su <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span></a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">6. Algebra matriciale</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">5. Algebra su <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span></a></li>
+<li class="toctree-l1"><a class="reference internal" href="linear-algebra.html">6. Algebra lineare</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="vector-algebra.html">7. Algebra vettoriale</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="vector-algebra-def.html">7.1. Prime definizioni</a></li>
 <li class="toctree-l2"><a class="reference internal" href="vector-algebra-euclidean-space.html">7.2. Spazio vettoriale euclideo</a></li>
@@ -344,7 +344,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs/edit/master/ch/algebra/matrix-algebra.md" target="_blank"
+      <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs/edit/master/ch/algebra/real-n-algebra.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -361,7 +361,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs/issues/new?title=Issue%20on%20page%20%2Fch/algebra/matrix-algebra.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs/issues/new?title=Issue%20on%20page%20%2Fch/algebra/real-n-algebra.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Apri un problema"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -391,7 +391,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/ch/algebra/matrix-algebra.md" target="_blank"
+      <li><a href="../../_sources/ch/algebra/real-n-algebra.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Scarica il file sorgente"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -475,7 +475,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Algebra matriciale</h1>
+    <h1>Algebra su \mathbb{R}^n</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -485,14 +485,19 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduzione">6.1. Introduzione</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matrici">6.2. Matrici</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni">6.2.1. Operazioni</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi">5.1. Problemi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#forma-generale">5.1.1. Forma generale</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#determinanti">6.3. Determinanti</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#risoluzione-di-sistemi">6.4. Risoluzione di Sistemi</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi">6.5. Esercizi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">5.2. Problemi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-lineari-di-equazioni">5.2.1. Sistemi lineari di equazioni</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-lineari-di-disequazioni">5.2.2. Sistemi lineari di disequazioni</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-di-equazioni-e-disequazioni">5.2.3. Sistemi di equazioni e disequazioni</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-quadratiche">5.2.4. Equazioni Quadratiche</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disequazioni-quadratiche">5.2.5. Disequazioni Quadratiche</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-vari">5.2.6. Problemi vari</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -504,81 +509,571 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="algebra-matriciale">
-<span id="math-hs-algebra-matrix"></span><h1><span class="section-number">6. </span>Algebra matriciale<a class="headerlink" href="#algebra-matriciale" title="Permalink to this heading">#</a></h1>
-<div class="section" id="introduzione">
-<h2><span class="section-number">6.1. </span>Introduzione<a class="headerlink" href="#introduzione" title="Permalink to this heading">#</a></h2>
-<p>L’algebra lineare è fondamentale per studiare matrici, sistemi lineari e trasformazioni geometriche. Questo capitolo esplora le matrici, i determinanti e la risoluzione dei sistemi.</p>
-</div>
-<hr class="docutils" />
-<div class="section" id="matrici">
-<h2><span class="section-number">6.2. </span>Matrici<a class="headerlink" href="#matrici" title="Permalink to this heading">#</a></h2>
-<p>Una matrice è una tabella rettangolare di numeri:</p>
+  <!--
+```{article-info}
+:author: basics
+:date: "{sub-ref}`today`"
+:read-time: "{sub-ref}`wordcount-minutes` min read"
+```
+-->
+<div class="tex2jax_ignore mathjax_ignore section" id="algebra-su-mathbb-r-n">
+<span id="math-hs-algebra-real-n"></span><h1><span class="section-number">5. </span>Algebra su <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span><a class="headerlink" href="#algebra-su-mathbb-r-n" title="Permalink to this heading">#</a></h1>
+<p>L’algebra in <span class="math notranslate nohighlight">\( \mathbb{R}^n \)</span> si occupa delle <span class="math notranslate nohighlight">\(n\)</span>-uple <span class="math notranslate nohighlight">\(\mathbf{x} = (x_1, \dots, x_n) \in \mathbb{R}^n\)</span> di <span class="math notranslate nohighlight">\(n\)</span> numeri reali e dei problemi che hanno più di un’incongita, come i sistemi di equazioni e di disequazioni. Alle operazioni sui numeri reali che possono essere compiute sulle singole componenti delle <span class="math notranslate nohighlight">\(n\)</span>-uple, si aggiungono le operazioni di:</p>
+<ul>
+<li><p><strong>Addizione di <span class="math notranslate nohighlight">\(n\)</span>-uple</strong> che produce una <span class="math notranslate nohighlight">\(n\)</span>-upla le cui componenti sono le somme delle componenti,</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}
-A = \begin{bmatrix}
-a_{11} &amp; a_{12} \\
-a_{21} &amp; a_{22}
-\end{bmatrix}
-\end{split}\]</div>
-<div class="section" id="operazioni">
-<h3><span class="section-number">6.2.1. </span>Operazioni<a class="headerlink" href="#operazioni" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p><strong>Addizione</strong>:
-<span class="math notranslate nohighlight">\( A + B = \begin{bmatrix}
- a_{11} + b_{11} &amp; a_{12} + b_{12} \\
- a_{21} + b_{21} &amp; a_{22} + b_{22}
- \end{bmatrix} \)</span></p></li>
-<li><p><strong>Moltiplicazione per uno scalare</strong>:
-<span class="math notranslate nohighlight">\( c \cdot A = \begin{bmatrix}
- c \cdot a_{11} &amp; c \cdot a_{12} \\
- c \cdot a_{21} &amp; c \cdot a_{22}
- \end{bmatrix} \)</span></p></li>
+\[\mathbf{a} + \mathbf{b} = (a_1,\dots,a_n) + (b_1,\dots,b_n) = (a_1+b_1,\dots,a_n+b_n) \ ,\]</div>
+</li>
+<li><p><strong>Moltiplicazione di una <span class="math notranslate nohighlight">\(n\)</span>-upla per uno scalare</strong> che produce una <span class="math notranslate nohighlight">\(n\)</span>-upla le cui componenti sono il prodotto delle componenti per lo scalare</p>
+<div class="math notranslate nohighlight">
+\[c \, \mathbf{a} = c \, (a_1,\dots,a_n) = (c \, a_1, \dots, c \, a_n) \ .\]</div>
+</li>
 </ul>
-</div>
-</div>
 <hr class="docutils" />
-<div class="section" id="determinanti">
-<h2><span class="section-number">6.3. </span>Determinanti<a class="headerlink" href="#determinanti" title="Permalink to this heading">#</a></h2>
-<p>Il determinante di una matrice quadrata è dato da:</p>
-<div class="math notranslate nohighlight">
-\[
-\text{det}(A) = a_{11}a_{22} - a_{12}a_{21}
-\]</div>
-</div>
-<hr class="docutils" />
-<div class="section" id="risoluzione-di-sistemi">
-<h2><span class="section-number">6.4. </span>Risoluzione di Sistemi<a class="headerlink" href="#risoluzione-di-sistemi" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p><strong>Metodo di Cramer</strong>:
-<span class="math notranslate nohighlight">\( x_i = \frac{\text{det}(A_i)}{\text{det}(A)} \)</span></p></li>
-<li><p><strong>Metodo della matrice inversa</strong>:
-<span class="math notranslate nohighlight">\( \mathbf{x} = A^{-1} \mathbf{b} \)</span></p></li>
-</ul>
-</div>
-<hr class="docutils" />
-<div class="section" id="esercizi">
-<h2><span class="section-number">6.5. </span>Esercizi<a class="headerlink" href="#esercizi" title="Permalink to this heading">#</a></h2>
-<ol class="arabic simple">
-<li><p>Calcola il determinante:</p></li>
-</ol>
+<div class="section" id="problemi">
+<h2><span class="section-number">5.1. </span>Problemi<a class="headerlink" href="#problemi" title="Permalink to this heading">#</a></h2>
+<div class="section" id="forma-generale">
+<h3><span class="section-number">5.1.1. </span>Forma generale<a class="headerlink" href="#forma-generale" title="Permalink to this heading">#</a></h3>
+<p><strong>Sistemi di equazioni.</strong> Un sistema di <span class="math notranslate nohighlight">\(m\)</span> equazioni in <span class="math notranslate nohighlight">\(n\)</span> incognite è un insieme di <span class="math notranslate nohighlight">\(m\)</span> equazioni che devono essere soddisfatte simultaneamente,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\begin{bmatrix}
-1 &amp; 2 \\
-3 &amp; 4
-\end{bmatrix}
-\end{split}\]</div>
-<ol class="arabic simple" start="2">
-<li><p>Risolvi il sistema:</p></li>
-</ol>
+\begin{cases} f_1(x_1,\dots,x_n) = 0 \\ \dots \\f_m(x_1, \dots, x_n) = 0 \end{cases}
+\qquad , \qquad \mathbf{f}(\mathbf{x}) = \mathbf{0} \ .\end{split}\]</div>
+<p>Le <span class="math notranslate nohighlight">\(n\)</span>-uple che soddisfano simultaneamente le <span class="math notranslate nohighlight">\(m\)</span> condizioni sono le soluzioni del problema. In generale, non si può dire nulla sull’esistenza e l’eventuale unicità delle soluzioni del problema. Risultati di esistenza e unicità esistono per i problemi lineari, come descritto nella sezione sull”<a class="reference internal" href="../algebra.html"><span class="doc std std-doc">algebra lineare</span></a> <strong>todo</strong> <em>collegamento. Serve un capitolo sull’algebra lineare? Rinominare quello sull’algebra matriciale in algebra lineare?</em>.</p>
+<p><strong>Sistemi di disequazioni.</strong> Un sistema di <span class="math notranslate nohighlight">\(m\)</span> disequazioni in <span class="math notranslate nohighlight">\(n\)</span> incognite è un insieme di <span class="math notranslate nohighlight">\(m\)</span> disequazioni che devono essere soddisfatte simultaneamente,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\begin{cases}
-x + 2y = 5 \\
-3x - y = 4
-\end{cases}
+\begin{cases} g_1(x_1,\dots,x_n) &gt; 0 \\ \dots \\g_m(x_1, \dots, x_n) &gt; 0 \end{cases}
+\qquad , \qquad \mathbf{g}(\mathbf{x}) &gt; \mathbf{0} \ .\end{split}\]</div>
+<p>Le <span class="math notranslate nohighlight">\(n\)</span>-uple che soddisfano simultaneamente le <span class="math notranslate nohighlight">\(m\)</span> condizioni sono le soluzioni del problema. In generale, non si può dire nulla sull’esistenza e l’eventuale unicità delle soluzioni del problema.</p>
+<p><strong>Sistemi di equazioni e disequazioni.</strong> Un sistema di <span class="math notranslate nohighlight">\(m_1\)</span> equazioni e <span class="math notranslate nohighlight">\(m_2\)</span> disequazioni in <span class="math notranslate nohighlight">\(n\)</span> incognite è un insieme di <span class="math notranslate nohighlight">\(m_1\)</span> equazioni e <span class="math notranslate nohighlight">\(m_2\)</span> disequazioni che devono essere soddisfatte simultaneamente,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases} f_1(x_1,\dots,x_n) = 0 \\ \dots \\ f_{m_1}(x_1,\dots,x_n) = 0 \\ g_1(x_1,\dots,x_n) &gt; 0 \\ \dots \\g_{m_2}(x_1, \dots, x_n) &gt; 0 \end{cases}
+\qquad , \qquad \begin{cases} \mathbf{f}(\mathbf{x}) = \mathbf{0} \\ \mathbf{g}(\mathbf{x}) &gt; \mathbf{0} \end{cases}
 \end{split}\]</div>
+<p>Le <span class="math notranslate nohighlight">\(n\)</span>-uple che soddisfano simultaneamente le <span class="math notranslate nohighlight">\(m\)</span> condizioni sono le soluzioni del problema. In generale, non si può dire nulla sull’esistenza e l’eventuale unicità delle soluzioni del problema.</p>
+<!--
+## ...
+-->
+</div>
+</div>
+<div class="section" id="id1">
+<h2><span class="section-number">5.2. </span>Problemi<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+<div class="section" id="sistemi-lineari-di-equazioni">
+<h3><span class="section-number">5.2.1. </span>Sistemi lineari di equazioni<a class="headerlink" href="#sistemi-lineari-di-equazioni" title="Permalink to this heading">#</a></h3>
+<ol class="arabic">
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{cases}
+   x + y = 7 \\
+   2x - y = 4
+   \end{cases}
+   \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{cases}
+   3x + 4y = 12 \\
+   x - 2y = -1
+   \end{cases}
+   \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{cases}
+   5x - y = 10 \\
+   2x + 3y = 14
+   \end{cases}
+   \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{cases}
+   x + 2y = 5 \\
+   3x - y = 4
+   \end{cases}
+   \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{cases}
+   2x + 3y = 7 \\
+   4x - y = 9
+   \end{cases}
+   \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{cases}
+   x - y = 1 \\
+   2x + y = 8
+   \end{cases}
+   \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x + y + z = 6 \\
+    2x - y + z = 5 \\
+    x - y - z = -2
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x + y + z = 5 \\
+    2x + 2y + 2z = 10 \\
+    x - y + z = 1
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Verifica che il sistema non abbia soluzioni:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x + y + z = 4 \\
+    x - y + z = 6 \\
+    2x + 2y + 2z = 5
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    2x + y + z = 7 \\
+    x - y + 2z = 3 \\
+    x + 2y - z = 4
+    \end{cases}
+    \end{split}\]</div>
+</li>
+</ol>
+</div>
+<div class="section" id="sistemi-lineari-di-disequazioni">
+<h3><span class="section-number">5.2.2. </span>Sistemi lineari di disequazioni<a class="headerlink" href="#sistemi-lineari-di-disequazioni" title="Permalink to this heading">#</a></h3>
+<ol class="arabic">
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{cases}
+   x + y \leq 4 \\
+   2x - y &gt; 3
+   \end{cases}
+   \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{cases}
+   x - 2y \geq 1 \\
+   3x + y &lt; 7
+   \end{cases}
+   \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{cases}
+   x + y \geq 0 \\
+   x - y \leq 3
+   \end{cases}
+   \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    2x - y &lt; 5 \\
+    x + 3y \geq -4
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x - y \leq 2 \\
+    x + y &gt; 6
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    4x + y \geq 8 \\
+    x - y \leq 1
+    \end{cases}
+    \end{split}\]</div>
+</li>
+</ol>
+</div>
+<hr class="docutils" />
+<div class="section" id="sistemi-di-equazioni-e-disequazioni">
+<h3><span class="section-number">5.2.3. </span>Sistemi di equazioni e disequazioni<a class="headerlink" href="#sistemi-di-equazioni-e-disequazioni" title="Permalink to this heading">#</a></h3>
+<ol class="arabic">
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x + y = 3 \\
+    2x - y \geq 1
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x - y &gt; 0 \\
+    x + y = 5
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    2x + y \leq 6 \\
+    x - y = 2
+    \end{cases}
+    \end{split}\]</div>
+</li>
+</ol>
+</div>
+<hr class="docutils" />
+<div class="section" id="equazioni-quadratiche">
+<h3><span class="section-number">5.2.4. </span>Equazioni Quadratiche<a class="headerlink" href="#equazioni-quadratiche" title="Permalink to this heading">#</a></h3>
+<ol class="arabic">
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x^2 + y = 4 \\
+    x + y = 3
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    y = x^2 + 2x \\
+    y = -x + 3
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x^2 + y^2 = 25 \\
+    x + y = 7
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x^2 - 4y = 3 \\
+    2x + y = 5
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    y = x^2 - 3x + 2 \\
+    y = 2x - 1
+    \end{cases}
+    \end{split}\]</div>
+</li>
+</ol>
+</div>
+<div class="section" id="disequazioni-quadratiche">
+<h3><span class="section-number">5.2.5. </span>Disequazioni Quadratiche<a class="headerlink" href="#disequazioni-quadratiche" title="Permalink to this heading">#</a></h3>
+<ol class="arabic">
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x^2 + y &gt; 4 \\
+    x + y \leq 3
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    y &gt; x^2 + 2x \\
+    y \leq -x + 3
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x^2 + y^2 \leq 25 \\
+    x + y &gt; 7
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x^2 - 4y &gt; 3 \\
+    2x + y \leq 5
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    y \leq x^2 - 3x + 2 \\
+    y \geq 2x - 1
+    \end{cases}
+   \end{split}\]</div>
+</li>
+</ol>
+</div>
+<div class="section" id="problemi-vari">
+<h3><span class="section-number">5.2.6. </span>Problemi vari<a class="headerlink" href="#problemi-vari" title="Permalink to this heading">#</a></h3>
+<ol class="arabic" start="0">
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{cases}
+   \frac{x}{y} + 2 = 3 \\
+   x - \sqrt{y} = 2
+   \end{cases}
+   \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{cases}
+   \log(x) + y = 2 \\
+   x^y = 4
+   \end{cases}
+   \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{cases}
+   x^3 + y^2 = 10 \\
+   x - y = 2
+   \end{cases}
+   \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{cases}
+   x^2 + y^3 = 9 \\
+   x + \sqrt{y} = 3
+   \end{cases}
+   \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{cases}
+   \frac{x}{y} = 2 \\
+   x^2 - y^2 = 16
+   \end{cases}
+   \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{cases}
+   \frac{1}{x} + \frac{1}{y} = 1 \\
+   x - y = 2
+   \end{cases}
+   \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{cases}
+   e^x + y = 5 \\
+   x + \ln(y) = 2
+   \end{cases}
+   \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{cases}
+   x^3 - y = 8 \\
+   y + \sqrt{x} = 10
+   \end{cases}
+   \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{cases}
+   \log(x) + y^2 = 4 \\
+   x + y = 3
+   \end{cases}
+   \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x^2 - y = 3 \\
+    \frac{x + y}{x - y} = 2
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    2^x + y = 10 \\
+    x + \log_2(y) = 3
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x^2 + y^2 = 25 \\
+    x^3 - y = 15
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x + \frac{1}{y} = 4 \\
+    \frac{x}{y} + 2 = 5
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x^4 - y^2 = 16 \\
+    x + y = 6
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    \sqrt{x} + y^3 = 10 \\
+    x + \frac{1}{y} = 4
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    e^x - y = 2 \\
+    x + \ln(y) = 1
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    \frac{1}{x} + y^2 = 5 \\
+    x^2 + y = 6
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x^2 + y^3 = 12 \\
+    \ln(x) + y = 2
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x + y = 7 \\
+    x^2 + y^2 = 49
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x - \sqrt{y} = 3 \\
+    x^2 + y = 18
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    3^x + y = 10 \\
+    x + \log_3(y) = 2
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x^3 + y^2 = 20 \\
+    x + y = 6
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    \frac{x}{y} = 3 \\
+    x^2 + y^2 = 25
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x^2 - y = 4 \\
+    x + y^2 = 10
+    \end{cases}
+    \end{split}\]</div>
+</li>
+</ol>
+<hr class="docutils" />
+</div>
 </div>
 </div>
 
@@ -613,20 +1108,20 @@ x + 2y = 5 \\
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="real-n-algebra.html"
+       href="real-algebra.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">precedente</p>
-        <p class="prev-next-title"><span class="section-number">5. </span>Algebra su <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span></p>
+        <p class="prev-next-title"><span class="section-number">4. </span>Algebra sui numeri reali</p>
       </div>
     </a>
     <a class="right-next"
-       href="vector-algebra.html"
+       href="linear-algebra.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">7. </span>Algebra vettoriale</p>
+        <p class="prev-next-title"><span class="section-number">6. </span>Algebra lineare</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -645,14 +1140,19 @@ x + 2y = 5 \\
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduzione">6.1. Introduzione</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matrici">6.2. Matrici</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni">6.2.1. Operazioni</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi">5.1. Problemi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#forma-generale">5.1.1. Forma generale</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#determinanti">6.3. Determinanti</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#risoluzione-di-sistemi">6.4. Risoluzione di Sistemi</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi">6.5. Esercizi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">5.2. Problemi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-lineari-di-equazioni">5.2.1. Sistemi lineari di equazioni</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-lineari-di-disequazioni">5.2.2. Sistemi lineari di disequazioni</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-di-equazioni-e-disequazioni">5.2.3. Sistemi di equazioni e disequazioni</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-quadratiche">5.2.4. Equazioni Quadratiche</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disequazioni-quadratiche">5.2.5. Disequazioni Quadratiche</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-vari">5.2.6. Problemi vari</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

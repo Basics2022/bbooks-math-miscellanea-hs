@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>6. Algebra matriciale &#8212; Matematica per le scuole superiori</title>
+    <title>6. Algebra lineare &#8212; Matematica per le scuole superiori</title>
   
   
   
@@ -67,7 +67,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/algebra/matrix-algebra';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/algebra/linear-algebra';</script>
     <link rel="shortcut icon" href="../../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
@@ -184,7 +184,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../algebra.html">3. Introduzione all’algebra</a></li>
 <li class="toctree-l1"><a class="reference internal" href="real-algebra.html">4. Algebra sui numeri reali</a></li>
 <li class="toctree-l1"><a class="reference internal" href="real-n-algebra.html">5. Algebra su <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span></a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">6. Algebra matriciale</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">6. Algebra lineare</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="vector-algebra.html">7. Algebra vettoriale</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="vector-algebra-def.html">7.1. Prime definizioni</a></li>
 <li class="toctree-l2"><a class="reference internal" href="vector-algebra-euclidean-space.html">7.2. Spazio vettoriale euclideo</a></li>
@@ -344,7 +344,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs/edit/master/ch/algebra/matrix-algebra.md" target="_blank"
+      <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs/edit/master/ch/algebra/linear-algebra.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -361,7 +361,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs/issues/new?title=Issue%20on%20page%20%2Fch/algebra/matrix-algebra.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs/issues/new?title=Issue%20on%20page%20%2Fch/algebra/linear-algebra.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Apri un problema"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -391,7 +391,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/ch/algebra/matrix-algebra.md" target="_blank"
+      <li><a href="../../_sources/ch/algebra/linear-algebra.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Scarica il file sorgente"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -475,7 +475,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Algebra matriciale</h1>
+    <h1>Algebra lineare</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -504,8 +504,9 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="algebra-matriciale">
-<span id="math-hs-algebra-matrix"></span><h1><span class="section-number">6. </span>Algebra matriciale<a class="headerlink" href="#algebra-matriciale" title="Permalink to this heading">#</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="algebra-lineare">
+<span id="math-hs-algebra-linear"></span><h1><span class="section-number">6. </span>Algebra lineare<a class="headerlink" href="#algebra-lineare" title="Permalink to this heading">#</a></h1>
+<p>In questa sezione vengono presentati gli argomenti dell’algebra lineare che riguardano la soluzione di sistemi di equazioni lineari, per i quali si discutono le condizioni di esistenza e unicità della soluzione e dei quali viene fornita una rappresentazione grafica. Viene introdotto il formalismo matriciale, e le operazioni algebriche elementari sulle matrici; vengono date le definizioni  le matrici vengono interpretate come funzioni lineari (applicazioni lineari), e utilizzate per formulare le condizioni di esistenza e unicità delle soluzioni di sistemi lineari (teorema di Rouché-Capelli).</p>
 <div class="section" id="introduzione">
 <h2><span class="section-number">6.1. </span>Introduzione<a class="headerlink" href="#introduzione" title="Permalink to this heading">#</a></h2>
 <p>L’algebra lineare è fondamentale per studiare matrici, sistemi lineari e trasformazioni geometriche. Questo capitolo esplora le matrici, i determinanti e la risoluzione dei sistemi.</p>
