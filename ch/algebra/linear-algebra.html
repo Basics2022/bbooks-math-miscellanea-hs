@@ -486,13 +486,14 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduzione">6.1. Introduzione</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matrici">6.2. Matrici</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni">6.2.1. Operazioni</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-lineari">6.2. Sistemi lineari</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matrici">6.3. Matrici</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni">6.3.1. Operazioni</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#determinanti">6.3. Determinanti</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#risoluzione-di-sistemi">6.4. Risoluzione di Sistemi</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi">6.5. Esercizi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#determinanti">6.4. Determinanti</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#risoluzione-di-sistemi">6.5. Risoluzione di Sistemi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi">6.6. Esercizi</a></li>
 </ul>
             </nav>
         </div>
@@ -512,8 +513,18 @@ document.write(`
 <p>L’algebra lineare è fondamentale per studiare matrici, sistemi lineari e trasformazioni geometriche. Questo capitolo esplora le matrici, i determinanti e la risoluzione dei sistemi.</p>
 </div>
 <hr class="docutils" />
+<div class="section" id="sistemi-lineari">
+<h2><span class="section-number">6.2. </span>Sistemi lineari<a class="headerlink" href="#sistemi-lineari" title="Permalink to this heading">#</a></h2>
+<p>Un sistema di <span class="math notranslate nohighlight">\(m\)</span> equazioni lineari in <span class="math notranslate nohighlight">\(n\)</span> incognite è il problema</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+ a_{11} x_1 + a_{12} x_2 + \dots + a_{1n} x_n = b_1 \\
+ \dots \\
+ a_{m1} x_1 + a_{m2} x_2 + \dots + a_{mn} x_n = b_m \\
+\end{cases}\end{split}\]</div>
+</div>
 <div class="section" id="matrici">
-<h2><span class="section-number">6.2. </span>Matrici<a class="headerlink" href="#matrici" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">6.3. </span>Matrici<a class="headerlink" href="#matrici" title="Permalink to this heading">#</a></h2>
 <p>Una matrice è una tabella rettangolare di numeri:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -523,7 +534,7 @@ a_{21} &amp; a_{22}
 \end{bmatrix}
 \end{split}\]</div>
 <div class="section" id="operazioni">
-<h3><span class="section-number">6.2.1. </span>Operazioni<a class="headerlink" href="#operazioni" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">6.3.1. </span>Operazioni<a class="headerlink" href="#operazioni" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p><strong>Addizione</strong>:
 <span class="math notranslate nohighlight">\( A + B = \begin{bmatrix}
@@ -540,7 +551,7 @@ a_{21} &amp; a_{22}
 </div>
 <hr class="docutils" />
 <div class="section" id="determinanti">
-<h2><span class="section-number">6.3. </span>Determinanti<a class="headerlink" href="#determinanti" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">6.4. </span>Determinanti<a class="headerlink" href="#determinanti" title="Permalink to this heading">#</a></h2>
 <p>Il determinante di una matrice quadrata è dato da:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -549,7 +560,7 @@ a_{21} &amp; a_{22}
 </div>
 <hr class="docutils" />
 <div class="section" id="risoluzione-di-sistemi">
-<h2><span class="section-number">6.4. </span>Risoluzione di Sistemi<a class="headerlink" href="#risoluzione-di-sistemi" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">6.5. </span>Risoluzione di Sistemi<a class="headerlink" href="#risoluzione-di-sistemi" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p><strong>Metodo di Cramer</strong>:
 <span class="math notranslate nohighlight">\( x_i = \frac{\text{det}(A_i)}{\text{det}(A)} \)</span></p></li>
@@ -559,7 +570,7 @@ a_{21} &amp; a_{22}
 </div>
 <hr class="docutils" />
 <div class="section" id="esercizi">
-<h2><span class="section-number">6.5. </span>Esercizi<a class="headerlink" href="#esercizi" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">6.6. </span>Esercizi<a class="headerlink" href="#esercizi" title="Permalink to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>Calcola il determinante:</p></li>
 </ol>
@@ -647,13 +658,14 @@ x + 2y = 5 \\
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduzione">6.1. Introduzione</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matrici">6.2. Matrici</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni">6.2.1. Operazioni</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-lineari">6.2. Sistemi lineari</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matrici">6.3. Matrici</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni">6.3.1. Operazioni</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#determinanti">6.3. Determinanti</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#risoluzione-di-sistemi">6.4. Risoluzione di Sistemi</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi">6.5. Esercizi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#determinanti">6.4. Determinanti</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#risoluzione-di-sistemi">6.5. Risoluzione di Sistemi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi">6.6. Esercizi</a></li>
 </ul>
   </nav></div>
 
