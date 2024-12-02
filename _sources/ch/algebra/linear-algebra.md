@@ -74,9 +74,11 @@ $$
    c \cdot a_{m1} & \dots & c \cdot a_{mn}
    \end{bmatrix} $$
 
-- **Prodotto di matrici.** Il prodotto $\mathbf{A} \mathbf{B}$ tra matrici è possibile tra due matrici $\mathbf{A} \in \mathbb{R}^{m,p}$, $\mathbf{B} \in \mathbb{R}^{p,m}$, ed è la matrice $\mathbf{A} \mathbf{B} \in \mathbb{R}^{m,n}$ con le componenti
+- **Prodotto di matrici.** Il prodotto $\mathbf{A} \mathbf{B}$ tra matrici è possibile tra due matrici $\mathbf{A} \in \mathbb{R}^{m,p}$, $\mathbf{B} \in \mathbb{R}^{p,n}$, ed è la matrice $\mathbf{A} \mathbf{B} \in \mathbb{R}^{m,n}$ con le componenti
 
   $$(\mathbf{A}\mathbf{B})_{ij} = \sum_{k=1}^{n} a_{in} b_{nj} \ .$$
+
+  **Osservazione.** **Non** vale la **proprietà commutativa** per il prodotto di matrici. Per di più, in generale non è possibile formare il prodotto $\mathbf{B} \mathbf{A}$, se $m \ne n$.
 
 ---
 
