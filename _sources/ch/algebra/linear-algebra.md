@@ -13,9 +13,9 @@ L'algebra lineare è fondamentale per studiare matrici, sistemi lineari e trasfo
 Un sistema di $m$ equazioni lineari in $n$ incognite è il problema
 
 $$\begin{cases}
- a_{11} x_1 + a_{12} x_2 + \dots + a_{1n} x_n = b_1 \\
+ a_{11} x_1 + a_{12} x_2 + \dots + a_{1n} x_n & = b_1 \\
  \dots \\
- a_{m1} x_1 + a_{m2} x_2 + \dots + a_{mn} x_n = b_m \\
+ a_{m1} x_1 + a_{m2} x_2 + \dots + a_{mn} x_n & = b_m \\
 \end{cases}$$
 
 
