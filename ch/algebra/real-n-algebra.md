@@ -51,13 +51,14 @@ $$
 
 Le $n$-uple che soddisfano simultaneamente le $m$ condizioni sono le soluzioni del problema. In generale, non si può dire nulla sull'esistenza e l'eventuale unicità delle soluzioni del problema. 
 
+<!--
 ## ...
+-->
 
 ## Problemi
 
-## Sezione 1: Sistemi Lineari di Equazioni (2 Variabili)
+### Sistemi lineari di equazioni
 
-### Esercizi
 1. Risolvi il sistema:
 
    $$
@@ -112,12 +113,49 @@ Le $n$-uple che soddisfano simultaneamente le $m$ condizioni sono le soluzioni d
    \end{cases}
    $$
 
----
-
-## Sezione 2: Sistemi Lineari di Disequazioni (2 Variabili)
-
-### Esercizi
 7. Risolvi il sistema:
+
+    $$
+    \begin{cases}
+    x + y + z = 6 \\
+    2x - y + z = 5 \\
+    x - y - z = -2
+    \end{cases}
+    $$
+
+8. Risolvi il sistema:
+
+    $$
+    \begin{cases}
+    x + y + z = 5 \\
+    2x + 2y + 2z = 10 \\
+    x - y + z = 1
+    \end{cases}
+    $$
+
+9. Verifica che il sistema non abbia soluzioni:
+
+    $$
+    \begin{cases}
+    x + y + z = 4 \\
+    x - y + z = 6 \\
+    2x + 2y + 2z = 5
+    \end{cases}
+    $$
+
+10. Risolvi il sistema:
+
+    $$
+    \begin{cases}
+    2x + y + z = 7 \\
+    x - y + 2z = 3 \\
+    x + 2y - z = 4
+    \end{cases}
+    $$
+
+### Sistemi lineari di disequazioni
+
+1. Risolvi il sistema:
 
    $$
    \begin{cases}
@@ -126,7 +164,7 @@ Le $n$-uple che soddisfano simultaneamente le $m$ condizioni sono le soluzioni d
    \end{cases}
    $$
 
-8. Risolvi il sistema:
+2. Risolvi il sistema:
 
    $$
    \begin{cases}
@@ -135,7 +173,7 @@ Le $n$-uple che soddisfano simultaneamente le $m$ condizioni sono le soluzioni d
    \end{cases}
    $$
 
-9. Risolvi il sistema:
+3. Risolvi il sistema:
 
    $$
    \begin{cases}
@@ -144,7 +182,7 @@ Le $n$-uple che soddisfano simultaneamente le $m$ condizioni sono le soluzioni d
    \end{cases}
    $$
 
-10. Risolvi il sistema:
+4. Risolvi il sistema:
 
     $$
     \begin{cases}
@@ -153,7 +191,7 @@ Le $n$-uple che soddisfano simultaneamente le $m$ condizioni sono le soluzioni d
     \end{cases}
     $$
 
-11. Risolvi il sistema:
+5. Risolvi il sistema:
 
     $$
     \begin{cases}
@@ -162,7 +200,7 @@ Le $n$-uple che soddisfano simultaneamente le $m$ condizioni sono le soluzioni d
     \end{cases}
     $$
 
-12. Risolvi il sistema:
+6. Risolvi il sistema:
 
     $$
     \begin{cases}
@@ -173,10 +211,8 @@ Le $n$-uple che soddisfano simultaneamente le $m$ condizioni sono le soluzioni d
 
 ---
 
-## Sezione 3: Problemi Misti (Equazioni e Disequazioni)
-
-### Esercizi
-13. Risolvi il sistema:
+### Sistemi di equazioni e disequazioni
+1. Risolvi il sistema:
 
     $$
     \begin{cases}
@@ -185,7 +221,7 @@ Le $n$-uple che soddisfano simultaneamente le $m$ condizioni sono le soluzioni d
     \end{cases}
     $$
 
-14. Risolvi il sistema:
+2. Risolvi il sistema:
 
     $$
     \begin{cases}
@@ -194,7 +230,7 @@ Le $n$-uple che soddisfano simultaneamente le $m$ condizioni sono le soluzioni d
     \end{cases}
     $$
 
-15. Risolvi il sistema:
+3. Risolvi il sistema:
 
     $$
     \begin{cases}
@@ -205,10 +241,8 @@ Le $n$-uple che soddisfano simultaneamente le $m$ condizioni sono le soluzioni d
 
 ---
 
-## Sezione 4: Sistemi Quadratici
-
 ### Equazioni Quadratiche
-16. Risolvi il sistema:
+1. Risolvi il sistema:
 
     $$
     \begin{cases}
@@ -217,7 +251,7 @@ Le $n$-uple che soddisfano simultaneamente le $m$ condizioni sono le soluzioni d
     \end{cases}
     $$
 
-17. Risolvi il sistema:
+2. Risolvi il sistema:
 
     $$
     \begin{cases}
@@ -226,7 +260,7 @@ Le $n$-uple che soddisfano simultaneamente le $m$ condizioni sono le soluzioni d
     \end{cases}
     $$
 
-18. Risolvi il sistema:
+3. Risolvi il sistema:
 
     $$
     \begin{cases}
@@ -235,7 +269,7 @@ Le $n$-uple che soddisfano simultaneamente le $m$ condizioni sono le soluzioni d
     \end{cases}
     $$
 
-19. Risolvi il sistema:
+4. Risolvi il sistema:
 
     $$
     \begin{cases}
@@ -244,7 +278,7 @@ Le $n$-uple che soddisfano simultaneamente le $m$ condizioni sono le soluzioni d
     \end{cases}
     $$
 
-20. Risolvi il sistema:
+5. Risolvi il sistema:
 
     $$
     \begin{cases}
@@ -253,10 +287,8 @@ Le $n$-uple che soddisfano simultaneamente le $m$ condizioni sono le soluzioni d
     \end{cases}
     $$
 
----
-
 ### Disequazioni Quadratiche
-21. Risolvi il sistema:
+1. Risolvi il sistema:
 
     $$
     \begin{cases}
@@ -265,7 +297,7 @@ Le $n$-uple che soddisfano simultaneamente le $m$ condizioni sono le soluzioni d
     \end{cases}
     $$
 
-22. Risolvi il sistema:
+2. Risolvi il sistema:
 
     $$
     \begin{cases}
@@ -274,7 +306,7 @@ Le $n$-uple che soddisfano simultaneamente le $m$ condizioni sono le soluzioni d
     \end{cases}
     $$
 
-23. Risolvi il sistema:
+3. Risolvi il sistema:
 
     $$
     \begin{cases}
@@ -283,7 +315,7 @@ Le $n$-uple che soddisfano simultaneamente le $m$ condizioni sono le soluzioni d
     \end{cases}
     $$
 
-24. Risolvi il sistema:
+4. Risolvi il sistema:
 
     $$
     \begin{cases}
@@ -292,153 +324,99 @@ Le $n$-uple che soddisfano simultaneamente le $m$ condizioni sono le soluzioni d
     \end{cases}
     $$
 
-25. Risolvi il sistema:
+5. Risolvi il sistema:
 
     $$
     \begin{cases}
     y \leq x^2 - 3x + 2 \\
     y \geq 2x - 1
     \end{cases}
-    $$
+   $$
 
----
 
-## Sezione 5: Sistemi di Tre Equazioni
+### Problemi vari
+0. Risolvi il sistema:
 
-### Esercizi Determinati
-26. Risolvi il sistema:
+   $$
+   \begin{cases}
+   \frac{x}{y} + 2 = 3 \\
+   x - \sqrt{y} = 2
+   \end{cases}
+   $$
 
-    $$
-    \begin{cases}
-    x + y + z = 6 \\
-    2x - y + z = 5 \\
-    x - y - z = -2
-    \end{cases}
-    $$
+1. Risolvi il sistema:
 
-27. Risolvi il sistema:
+   $$
+   \begin{cases}
+   \log(x) + y = 2 \\
+   x^y = 4
+   \end{cases}
+   $$
 
-    $$
-    \begin{cases}
-    2x + y + z = 7 \\
-    x - y + 2z = 3 \\
-    x + 2y - z = 4
-    \end{cases}
-    $$
+2. Risolvi il sistema:
 
----
+   $$
+   \begin{cases}
+   x^3 + y^2 = 10 \\
+   x - y = 2
+   \end{cases}
+   $$
 
-### Esercizi Indeterminati
-28. Risolvi il sistema:
+3. Risolvi il sistema:
 
-    $$
-    \begin{cases}
-    x + y + z = 5 \\
-    2x + 2y + 2z = 10 \\
-    x - y + z = 1
-    \end{cases}
-    $$
+   $$
+   \begin{cases}
+   x^2 + y^3 = 9 \\
+   x + \sqrt{y} = 3
+   \end{cases}
+   $$
 
----
+4. Risolvi il sistema:
 
-### Esercizi senza Soluzione
-29. Verifica che il sistema non abbia soluzioni:
+   $$
+   \begin{cases}
+   \frac{x}{y} = 2 \\
+   x^2 - y^2 = 16
+   \end{cases}
+   $$
 
-    $$
-    \begin{cases}
-    x + y + z = 4 \\
-    x - y + z = 6 \\
-    2x + 2y + 2z = 5
-    \end{cases}
-    $$
+5. Risolvi il sistema:
 
----
+   $$
+   \begin{cases}
+   \frac{1}{x} + \frac{1}{y} = 1 \\
+   x - y = 2
+   \end{cases}
+   $$
 
-## Sezione 6: Sistemi Misti e Avanzati
+6. Risolvi il sistema:
 
-### Esercizi
-30. Risolvi il sistema:
+   $$
+   \begin{cases}
+   e^x + y = 5 \\
+   x + \ln(y) = 2
+   \end{cases}
+   $$
 
-    $$
-    \begin{cases}
-    \frac{x}{y} + 2 = 3 \\
-    x - \sqrt{y} = 2
-    \end{cases}
-    $$
+7. Risolvi il sistema:
 
-31. Risolvi il sistema:
+   $$
+   \begin{cases}
+   x^3 - y = 8 \\
+   y + \sqrt{x} = 10
+   \end{cases}
+   $$
 
-    $$
-    \begin{cases}
-    \log(x) + y = 2 \\
-    x^y = 4
-    \end{cases}
-    $$
+8. Risolvi il sistema:
 
-32. Risolvi il sistema:
+   $$
+   \begin{cases}
+   \log(x) + y^2 = 4 \\
+   x + y = 3
+   \end{cases}
+   $$
 
-    $$
-    \begin{cases}
-    x^3 + y^2 = 10 \\
-    x - y = 2
-    \end{cases}
-    $$
-
-33. Risolvi il sistema:
-
-    $$
-    \begin{cases}
-    x^2 + y^3 = 9 \\
-    x + \sqrt{y} = 3
-    \end{cases}
-    $$
-
-34. Risolvi il sistema:
-
-    $$
-    \begin{cases}
-    \frac{x}{y} = 2 \\
-    x^2 - y^2 = 16
-    \end{cases}
-    $$
-
-35. Risolvi il sistema:
-
-    $$
-    \begin{cases}
-    \frac{1}{x} + \frac{1}{y} = 1 \\
-    x - y = 2
-    \end{cases}
-    $$
-
-36. Risolvi il sistema:
-
-    $$
-    \begin{cases}
-    e^x + y = 5 \\
-    x + \ln(y) = 2
-    \end{cases}
-    $$
-
-37. Risolvi il sistema:
-
-    $$
-    \begin{cases}
-    x^3 - y = 8 \\
-    y + \sqrt{x} = 10
-    \end{cases}
-    $$
-
-38. Risolvi il sistema:
-
-    $$
-    \begin{cases}
-    \log(x) + y^2 = 4 \\
-    x + y = 3
-    \end{cases}
-    $$
-
-39. Risolvi il sistema:
+9. Risolvi il sistema:
 
     $$
     \begin{cases}
@@ -447,7 +425,7 @@ Le $n$-uple che soddisfano simultaneamente le $m$ condizioni sono le soluzioni d
     \end{cases}
     $$
 
-40. Risolvi il sistema:
+10. Risolvi il sistema:
 
     $$
     \begin{cases}
@@ -456,7 +434,7 @@ Le $n$-uple che soddisfano simultaneamente le $m$ condizioni sono le soluzioni d
     \end{cases}
     $$
 
-41. Risolvi il sistema:
+11. Risolvi il sistema:
 
     $$
     \begin{cases}
@@ -465,7 +443,7 @@ Le $n$-uple che soddisfano simultaneamente le $m$ condizioni sono le soluzioni d
     \end{cases}
     $$
 
-42. Risolvi il sistema:
+12. Risolvi il sistema:
 
     $$
     \begin{cases}
@@ -474,7 +452,7 @@ Le $n$-uple che soddisfano simultaneamente le $m$ condizioni sono le soluzioni d
     \end{cases}
     $$
 
-43. Risolvi il sistema:
+13. Risolvi il sistema:
 
     $$
     \begin{cases}
@@ -483,7 +461,7 @@ Le $n$-uple che soddisfano simultaneamente le $m$ condizioni sono le soluzioni d
     \end{cases}
     $$
 
-44. Risolvi il sistema:
+14. Risolvi il sistema:
 
     $$
     \begin{cases}
@@ -492,7 +470,7 @@ Le $n$-uple che soddisfano simultaneamente le $m$ condizioni sono le soluzioni d
     \end{cases}
     $$
 
-45. Risolvi il sistema:
+15. Risolvi il sistema:
 
     $$
     \begin{cases}
@@ -501,7 +479,7 @@ Le $n$-uple che soddisfano simultaneamente le $m$ condizioni sono le soluzioni d
     \end{cases}
     $$
 
-46. Risolvi il sistema:
+16. Risolvi il sistema:
 
     $$
     \begin{cases}
@@ -510,7 +488,7 @@ Le $n$-uple che soddisfano simultaneamente le $m$ condizioni sono le soluzioni d
     \end{cases}
     $$
 
-47. Risolvi il sistema:
+17. Risolvi il sistema:
 
     $$
     \begin{cases}
@@ -519,7 +497,7 @@ Le $n$-uple che soddisfano simultaneamente le $m$ condizioni sono le soluzioni d
     \end{cases}
     $$
 
-48. Risolvi il sistema:
+18. Risolvi il sistema:
 
     $$
     \begin{cases}
@@ -528,7 +506,7 @@ Le $n$-uple che soddisfano simultaneamente le $m$ condizioni sono le soluzioni d
     \end{cases}
     $$
 
-49. Risolvi il sistema:
+19. Risolvi il sistema:
 
     $$
     \begin{cases}
@@ -537,7 +515,7 @@ Le $n$-uple che soddisfano simultaneamente le $m$ condizioni sono le soluzioni d
     \end{cases}
     $$
 
-50. Risolvi il sistema:
+20. Risolvi il sistema:
 
     $$
     \begin{cases}
@@ -546,7 +524,7 @@ Le $n$-uple che soddisfano simultaneamente le $m$ condizioni sono le soluzioni d
     \end{cases}
     $$
 
-51. Risolvi il sistema:
+21. Risolvi il sistema:
 
     $$
     \begin{cases}
@@ -555,7 +533,7 @@ Le $n$-uple che soddisfano simultaneamente le $m$ condizioni sono le soluzioni d
     \end{cases}
     $$
 
-52. Risolvi il sistema:
+22. Risolvi il sistema:
 
     $$
     \begin{cases}
@@ -564,7 +542,7 @@ Le $n$-uple che soddisfano simultaneamente le $m$ condizioni sono le soluzioni d
     \end{cases}
     $$
 
-53. Risolvi il sistema:
+23. Risolvi il sistema:
 
     $$
     \begin{cases}
@@ -574,6 +552,4 @@ Le $n$-uple che soddisfano simultaneamente le $m$ condizioni sono le soluzioni d
     $$
 
 ---
-
-Questi esercizi coprono una vasta gamma di difficoltà e argomenti, offrendo un'ampia pratica con polinomi, funzioni razionali, esponenziali, radici e logaritmi.
 

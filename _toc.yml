@@ -24,7 +24,7 @@ parts:
   - file: ch/algebra
   - file: ch/algebra/real-algebra
   - file: ch/algebra/real-n-algebra
-  - file: ch/algebra/matrix-algebra
+  - file: ch/algebra/linear-algebra
   - file: ch/algebra/vector-algebra
     sections:
     - file: ch/algebra/vector-algebra-def
