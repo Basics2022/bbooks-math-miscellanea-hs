@@ -40,7 +40,7 @@ a_{m1} & a_{m2} & \dots & a_{mn}
 $$
 
 ### Operazioni
-- **Somma**, la somma è possibile tra due matrici con le stesse dimensioni $\mathbf{A},\, \mathbf{B} \in \mathbb{R}^{m,n}$. La somma di due matrici $\mathbf{A}$, $\mathbf{B}$ è la matrice $\mathbf{A} + \mathbf{B} \in \mathbb{R}^{m,n}$ con componenti
+- **Somma.** La somma è possibile tra due matrici con le stesse dimensioni $\mathbf{A},\, \mathbf{B} \in \mathbb{R}^{m,n}$. La somma di due matrici $\mathbf{A}$, $\mathbf{B}$ è la matrice $\mathbf{A} + \mathbf{B} \in \mathbb{R}^{m,n}$ con componenti
 
   $$(\mathbf{A} + \mathbf{B})_{ij} = a_{ij} + b_{ij} \ ,$$
 
@@ -62,17 +62,21 @@ $$
 \end{bmatrix}
 $$
 
-- **Moltiplicazione per uno scalare**. La moltiplicazione di una matrice $\mathbf{A} \in \mathbb{R}^{m,n}$ per un numero reale $c \in \mathbf{R}$ è la matrice $c \mathbf{A} \in \mathbb{R}^{m,n}$ con componenti
+- **Moltiplicazione per uno scalare.** La moltiplicazione di una matrice $\mathbf{A} \in \mathbb{R}^{m,n}$ per un numero reale $c \in \mathbf{R}$ è la matrice $c \mathbf{A} \in \mathbb{R}^{m,n}$ con componenti
 
-  $$(c \mathbf{A})_{ij} = c \, a_ij \ ,$$
+  $$(c \mathbf{A})_{ij} = c \, a_{ij} \ ,$$
 
   o più esplicitamente,
 
-   $$ c \cdot A = \begin{bmatrix}
+   $$ c A = \begin{bmatrix}
    c \cdot a_{11} & \dots & c \cdot a_{1n} \\
    \dots          & \dots & \dots          \\
    c \cdot a_{m1} & \dots & c \cdot a_{mn}
    \end{bmatrix} $$
+
+- **Prodotto di matrici.** Il prodotto $\mathbf{A} \mathbf{B}$ tra matrici è possibile tra due matrici $\mathbf{A} \in \mathbb{R}^{m,p}$, $\mathbf{B} \in \mathbb{R}^{p,m}$, ed è la matrice $\mathbf{A} \mathbf{B} \in \mathbb{R}^{m,n}$ con le componenti
+
+  $$(\mathbf{A}\mathbf{B})_{ij} = \sum_{k=1}^{n} a_{in} b_{nj} \ .$$
 
 ---
 

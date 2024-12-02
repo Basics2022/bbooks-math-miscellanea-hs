@@ -545,7 +545,7 @@ a_{m1} &amp; a_{m2} &amp; \dots &amp; a_{mn}
 <div class="section" id="operazioni">
 <h3><span class="section-number">6.3.1. </span>Operazioni<a class="headerlink" href="#operazioni" title="Permalink to this heading">#</a></h3>
 <ul>
-<li><p><strong>Somma</strong>, la somma è possibile tra due matrici con le stesse dimensioni <span class="math notranslate nohighlight">\(\mathbf{A},\, \mathbf{B} \in \mathbb{R}^{m,n}\)</span>. La somma di due matrici <span class="math notranslate nohighlight">\(\mathbf{A}\)</span>, <span class="math notranslate nohighlight">\(\mathbf{B}\)</span> è la matrice <span class="math notranslate nohighlight">\(\mathbf{A} + \mathbf{B} \in \mathbb{R}^{m,n}\)</span> con componenti</p>
+<li><p><strong>Somma.</strong> La somma è possibile tra due matrici con le stesse dimensioni <span class="math notranslate nohighlight">\(\mathbf{A},\, \mathbf{B} \in \mathbb{R}^{m,n}\)</span>. La somma di due matrici <span class="math notranslate nohighlight">\(\mathbf{A}\)</span>, <span class="math notranslate nohighlight">\(\mathbf{B}\)</span> è la matrice <span class="math notranslate nohighlight">\(\mathbf{A} + \mathbf{B} \in \mathbb{R}^{m,n}\)</span> con componenti</p>
 <div class="math notranslate nohighlight">
 \[(\mathbf{A} + \mathbf{B})_{ij} = a_{ij} + b_{ij} \ ,\]</div>
 <p>o più esplicitamente,</p>
@@ -566,16 +566,20 @@ a_{m1} &amp; a_{m2} &amp; \dots &amp; a_{mn}
 \end{bmatrix}
 \end{split}\]</div>
 </li>
-<li><p><strong>Moltiplicazione per uno scalare</strong>. La moltiplicazione di una matrice <span class="math notranslate nohighlight">\(\mathbf{A} \in \mathbb{R}^{m,n}\)</span> per un numero reale <span class="math notranslate nohighlight">\(c \in \mathbf{R}\)</span> è la matrice <span class="math notranslate nohighlight">\(c \mathbf{A} \in \mathbb{R}^{m,n}\)</span> con componenti</p>
+<li><p><strong>Moltiplicazione per uno scalare.</strong> La moltiplicazione di una matrice <span class="math notranslate nohighlight">\(\mathbf{A} \in \mathbb{R}^{m,n}\)</span> per un numero reale <span class="math notranslate nohighlight">\(c \in \mathbf{R}\)</span> è la matrice <span class="math notranslate nohighlight">\(c \mathbf{A} \in \mathbb{R}^{m,n}\)</span> con componenti</p>
 <div class="math notranslate nohighlight">
-\[(c \mathbf{A})_{ij} = c \, a_ij \ ,\]</div>
+\[(c \mathbf{A})_{ij} = c \, a_{ij} \ ,\]</div>
 <p>o più esplicitamente,</p>
 <div class="math notranslate nohighlight">
-\[\begin{split} c \cdot A = \begin{bmatrix}
+\[\begin{split} c A = \begin{bmatrix}
    c \cdot a_{11} &amp; \dots &amp; c \cdot a_{1n} \\
    \dots          &amp; \dots &amp; \dots          \\
    c \cdot a_{m1} &amp; \dots &amp; c \cdot a_{mn}
    \end{bmatrix} \end{split}\]</div>
+</li>
+<li><p><strong>Prodotto di matrici.</strong> Il prodotto <span class="math notranslate nohighlight">\(\mathbf{A} \mathbf{B}\)</span> tra matrici è possibile tra due matrici <span class="math notranslate nohighlight">\(\mathbf{A} \in \mathbb{R}^{m,p}\)</span>, <span class="math notranslate nohighlight">\(\mathbf{B} \in \mathbb{R}^{p,m}\)</span>, ed è la matrice <span class="math notranslate nohighlight">\(\mathbf{A} \mathbf{B} \in \mathbb{R}^{m,n}\)</span> con le componenti</p>
+<div class="math notranslate nohighlight">
+\[(\mathbf{A}\mathbf{B})_{ij} = \sum_{k=1}^{n} a_{in} b_{nj} \ .\]</div>
 </li>
 </ul>
 </div>
