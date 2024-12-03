@@ -106,19 +106,34 @@ $$\begin{cases} a + b = 3 \\ b - a = 0 \end{cases} \qquad \rightarrow \qquad a =
 ### Equazioni
 Un'equazione è una relazione di uguaglianza che contiene una o più incognite. L'obiettivo è trovare i valori delle incognite che rendono vera l'uguaglianza.
 
-#### Equazioni lineari
-La forma generale di un'equazione lineare in un'incognita reale $x \in \mathbb{R}$ è
+#### Equazioni di primo grado
+La forma generale di un'equazione di primo grado in un'incognita reale $x \in \mathbb{R}$ è
 
-$$a x + b = 0 \ .$$
+$$a x + b = 0 \qquad a \ne 0 $$
 
-Si possono distinguere due casi:
-- per $a \ne 0$, esiste un'unica soluzione $x = -\frac{b}{a}$
+dove la condizione sul coefficiente $a \ne 0$ esclude i casi in cui l'equazione degenera a un'uguaglianza tra parametri.
+Dopo aver escluso i casi in cui l'equazione degenera in un'uguaglianza tra paramteri, con la condizione $a \ne 0$, la soluzione generale dell'equazione lineare esiste, è **unica** ed è
+
+$$x = - \frac{b}{a} \ .$$
+
+Nel caso degenere in cui $a = 0$, si possono distinguere due casi:
+- se $b \ne 0$ **non esiste** nessuna soluzione, poiché l'equazione si riduce alla [contraddizione]() $0 = b \ne 0$ per $\forall x \in \mathbb{R}$
+- se $b = 0$ **esistono infinite** soluzioni, poiché l'equazione si riduce all'[identità]() $0 = b \ne 0$ per $\forall x \in \mathbb{R}$
+
+<!--
+Si possono distinguere i casi:
+- per $a \ne 0$, esiste un'**unica** soluzione $x = -\frac{b}{a}$
 - per $a = 0$:
-  - per $b \ne 0$ non esiste soluzione, poiché si ottiene la contraddizione $0 = b \ne 0$, per ogni valore dell'incognita $x$
-  - per $b = 0$ esistono infinite soluzioni, poiché si ottiene l'identità $0 = 0$ per ogni valore dell'incognita $x$
+  - per $b \ne 0$ **non esiste** soluzione, poiché si ottiene la contraddizione $0 = b \ne 0$, per $\forall x \in \mathbb{R}$
+  - per $b = 0$ esistono **infinite** soluzioni, poiché si ottiene l'identità $0 = 0$ per $\forall x \in \mathbb{R}$
+-->
 
-#### Equazioni quadratiche
+#### Equazioni di secondo grado
+La forma generale di un'equazione di secondo grado in un'incognita reale $x \in \mathbb{R}$ è
 
+$$a x^2 + b x + c = 0 \qquad a \ne 0 \ ,$$
+
+dove la condizione sul coefficiente $a \ne 0$ esclude i casi in cui l'equazione degenera a un'equazione di primo grado.
 
 #### Equazioni non lineari generali
 

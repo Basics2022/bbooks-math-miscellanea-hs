@@ -497,8 +497,8 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-con-un-incognita">4.3. Problemi con un’incognita</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni">4.3.1. Equazioni</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-lineari">4.3.1.1. Equazioni lineari</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-quadratiche">4.3.1.2. Equazioni quadratiche</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-di-primo-grado">4.3.1.1. Equazioni di primo grado</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-di-secondo-grado">4.3.1.2. Equazioni di secondo grado</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-non-lineari-generali">4.3.1.3. Equazioni non lineari generali</a></li>
 </ul>
 </li>
@@ -610,24 +610,34 @@ document.write(`
 <div class="section" id="equazioni">
 <h3><span class="section-number">4.3.1. </span>Equazioni<a class="headerlink" href="#equazioni" title="Permalink to this heading">#</a></h3>
 <p>Un’equazione è una relazione di uguaglianza che contiene una o più incognite. L’obiettivo è trovare i valori delle incognite che rendono vera l’uguaglianza.</p>
-<div class="section" id="equazioni-lineari">
-<h4><span class="section-number">4.3.1.1. </span>Equazioni lineari<a class="headerlink" href="#equazioni-lineari" title="Permalink to this heading">#</a></h4>
-<p>La forma generale di un’equazione lineare in un’incognita reale <span class="math notranslate nohighlight">\(x \in \mathbb{R}\)</span> è</p>
+<div class="section" id="equazioni-di-primo-grado">
+<h4><span class="section-number">4.3.1.1. </span>Equazioni di primo grado<a class="headerlink" href="#equazioni-di-primo-grado" title="Permalink to this heading">#</a></h4>
+<p>La forma generale di un’equazione di primo grado in un’incognita reale <span class="math notranslate nohighlight">\(x \in \mathbb{R}\)</span> è</p>
 <div class="math notranslate nohighlight">
-\[a x + b = 0 \ .\]</div>
-<p>Si possono distinguere due casi:</p>
+\[a x + b = 0 \qquad a \ne 0 \]</div>
+<p>dove la condizione sul coefficiente <span class="math notranslate nohighlight">\(a \ne 0\)</span> esclude i casi in cui l’equazione degenera a un’uguaglianza tra parametri.
+Dopo aver escluso i casi in cui l’equazione degenera in un’uguaglianza tra paramteri, con la condizione <span class="math notranslate nohighlight">\(a \ne 0\)</span>, la soluzione generale dell’equazione lineare esiste, è <strong>unica</strong> ed è</p>
+<div class="math notranslate nohighlight">
+\[x = - \frac{b}{a} \ .\]</div>
+<p>Nel caso degenere in cui <span class="math notranslate nohighlight">\(a = 0\)</span>, si possono distinguere due casi:</p>
 <ul class="simple">
-<li><p>per <span class="math notranslate nohighlight">\(a \ne 0\)</span>, esiste un’unica soluzione <span class="math notranslate nohighlight">\(x = -\frac{b}{a}\)</span></p></li>
-<li><p>per <span class="math notranslate nohighlight">\(a = 0\)</span>:</p>
-<ul>
-<li><p>per <span class="math notranslate nohighlight">\(b \ne 0\)</span> non esiste soluzione, poiché si ottiene la contraddizione <span class="math notranslate nohighlight">\(0 = b \ne 0\)</span>, per ogni valore dell’incognita <span class="math notranslate nohighlight">\(x\)</span></p></li>
-<li><p>per <span class="math notranslate nohighlight">\(b = 0\)</span> esistono infinite soluzioni, poiché si ottiene l’identità <span class="math notranslate nohighlight">\(0 = 0\)</span> per ogni valore dell’incognita <span class="math notranslate nohighlight">\(x\)</span></p></li>
+<li><p>se <span class="math notranslate nohighlight">\(b \ne 0\)</span> <strong>non esiste</strong> nessuna soluzione, poiché l’equazione si riduce alla <a class="reference internal" href="../algebra.html"><span class="doc std std-doc">contraddizione</span></a> <span class="math notranslate nohighlight">\(0 = b \ne 0\)</span> per <span class="math notranslate nohighlight">\(\forall x \in \mathbb{R}\)</span></p></li>
+<li><p>se <span class="math notranslate nohighlight">\(b = 0\)</span> <strong>esistono infinite</strong> soluzioni, poiché l’equazione si riduce all”<a class="reference internal" href="../algebra.html"><span class="doc std std-doc">identità</span></a> <span class="math notranslate nohighlight">\(0 = b \ne 0\)</span> per <span class="math notranslate nohighlight">\(\forall x \in \mathbb{R}\)</span></p></li>
 </ul>
-</li>
-</ul>
+<!--
+Si possono distinguere i casi:
+- per $a \ne 0$, esiste un'**unica** soluzione $x = -\frac{b}{a}$
+- per $a = 0$:
+  - per $b \ne 0$ **non esiste** soluzione, poiché si ottiene la contraddizione $0 = b \ne 0$, per $\forall x \in \mathbb{R}$
+  - per $b = 0$ esistono **infinite** soluzioni, poiché si ottiene l'identità $0 = 0$ per $\forall x \in \mathbb{R}$
+-->
 </div>
-<div class="section" id="equazioni-quadratiche">
-<h4><span class="section-number">4.3.1.2. </span>Equazioni quadratiche<a class="headerlink" href="#equazioni-quadratiche" title="Permalink to this heading">#</a></h4>
+<div class="section" id="equazioni-di-secondo-grado">
+<h4><span class="section-number">4.3.1.2. </span>Equazioni di secondo grado<a class="headerlink" href="#equazioni-di-secondo-grado" title="Permalink to this heading">#</a></h4>
+<p>La forma generale di un’equazione di secondo grado in un’incognita reale <span class="math notranslate nohighlight">\(x \in \mathbb{R}\)</span> è</p>
+<div class="math notranslate nohighlight">
+\[a x^2 + b x + c = 0 \qquad a \ne 0 \ ,\]</div>
+<p>dove la condizione sul coefficiente <span class="math notranslate nohighlight">\(a \ne 0\)</span> esclude i casi in cui l’equazione degenera a un’equazione di primo grado.</p>
 </div>
 <div class="section" id="equazioni-non-lineari-generali">
 <h4><span class="section-number">4.3.1.3. </span>Equazioni non lineari generali<a class="headerlink" href="#equazioni-non-lineari-generali" title="Permalink to this heading">#</a></h4>
@@ -760,8 +770,8 @@ $$
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-con-un-incognita">4.3. Problemi con un’incognita</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni">4.3.1. Equazioni</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-lineari">4.3.1.1. Equazioni lineari</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-quadratiche">4.3.1.2. Equazioni quadratiche</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-di-primo-grado">4.3.1.1. Equazioni di primo grado</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-di-secondo-grado">4.3.1.2. Equazioni di secondo grado</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-non-lineari-generali">4.3.1.3. Equazioni non lineari generali</a></li>
 </ul>
 </li>
