@@ -139,11 +139,11 @@ $$a x^2 + b x + c = 0 \qquad a \ne 0 \ ,$$
 dove la condizione sul coefficiente $a \ne 0$ esclude i casi in cui l'equazione degenera a un'equazione di [primo grado](math-hs:algebra:real:eq:first).
 Le soluzioni dell'equazione vengono cercate completando il quadrato,
 
-$$0 = x^2 + \frac{b}{a} x + \frac{b^2}{4 a^2} - \frac{b^2}{4 a^2} + c = \left( x + \frac{b}{2a} \right)^2 - \left( \frac{b^2}{4 a^2} - c \right) . $$
+$$0 = x^2 + \frac{b}{a} x + \frac{b^2}{4 a^2} - \frac{b^2}{4 a^2} + \frac{c}{a} = \left( x + \frac{b}{2a} \right)^2 - \left( \frac{b^2}{4 a^2} - \frac{c}{a} \right) . $$
 
 L'equazione viene riscritta come
 
-$$\left( x + \frac{b}{2a} \right)^2 = \frac{b^2}{4 a^2} - c \ ,$$
+$$\left( x + \frac{b}{2a} \right)^2 = \frac{b^2}{4 a^2} - \frac{c}{a} \ ,$$
 
 per mettere in evidenza che l'esistenza delle soluzioni dipende dal valore del **discriminante**, $\frac{\Delta}{(2a)^2} := \frac{b^2 - 4 a c}{(2a)^2}$:
 - se $\Delta > 0$ esistono **due soluzioni reali distinte**, $x_{1,2} = - \frac{b}{2a} \mp \frac{\sqrt{\Delta}}{2a}$
