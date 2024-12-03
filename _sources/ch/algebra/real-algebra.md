@@ -139,7 +139,13 @@ $$a x^2 + b x + c = 0 \qquad a \ne 0 \ ,$$
 dove la condizione sul coefficiente $a \ne 0$ esclude i casi in cui l'equazione degenera a un'equazione di [primo grado](math-hs:algebra:real:eq:first).
 Le soluzioni dell'equazione vengono cercate completando il quadrato,
 
-$$0 = x^2 + \frac{b}{a} x + \frac{b^2}{4 a^2} - \frac{b^2}{4 a^2} + c = \left( x + \frac{b}{2a} \right) - \left( \frac{b^2}{4 a^2} - c \right) $$
+$$0 = x^2 + \frac{b}{a} x + \frac{b^2}{4 a^2} - \frac{b^2}{4 a^2} + c = \left( x + \frac{b}{2a} \right)^2 - \left( \frac{b^2}{4 a^2} - c \right) . $$
+
+L'equazione
+
+$$\left( x + \frac{b}{2a} \right)^2 = \frac{b^2}{4 a^2} - c \ ,$$
+
+ha soluzioni quando $\frac{\Delta}{(2a)^2} := \frac{b^2 - 4 a c}{(2a)^2}$
 
 #### Equazioni non lineari generali
 
