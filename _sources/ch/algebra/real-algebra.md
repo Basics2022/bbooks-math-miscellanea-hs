@@ -77,12 +77,14 @@ La frazione $\frac{x^2-3x+2}{x^2+1} = \frac{(x-2)(x-1)}{x^2+1}$ è in forma rido
 
 Se il denominatore è scomponibile come prodotto di polinomi, allora la frazione algebrica può essere scritta come **somma di frazioni parziali**. In alcune applicazioni, come il calcolo degli integrali, può essere conveniente scrivere una frazione come somma di frazioni parziali, poiché risulta più semplice trattare somme di frazioni con numeratore di grado 1 o 2, di frazioni con numeratore di grado qualsiasi.
 
-```{prf:example}
+```{prf:example} Somma di frazioni parziali
 :class: dropdown
 
 La frazione $\frac{3x}{x^2-1}$ può essere scritta come somma di frazioni parziali $\frac{3 x}{x^2-1} = $.
 
 $$\frac{3x}{x^2-1} = \frac{a}{x+1} + \frac{b}{x-1} = \frac{a(x-1) + b(x+1)}{x^2-1} = \frac{x(a+b)+b-a}{x^2-1}$$
+
+$$\begin{cases} a + b = 3 \\ b - a = 0 \end{cases} \qquad \rightarrow \qquad a = b = \frac{3}{2} \ .$$
 
 ```
 
