@@ -68,14 +68,14 @@ $$\frac{a_n x^n + a_{n-1} x^{n-1} + \dots a_0}{b_m b^m + b_{m-1} x^{m-1} + \dots
 
 Per il [teorema fondamentale dell'algebra](math-hs:precalculus:polynomials:alg-fund-thm), ogni polinomio può essere scritto come prodotto di polinomi di primo o secondo ordine. Se i polinomi al numeratore e al denominatore della frazione algebrica non hanno fattori in comune, la frazione algebrica viene definita **in forma semplice**.
 
-```{prf:example}
-La frazione $\frac{x^2-3x+2}{x^2+1} = \frac{(x-2)(x-1)}{x^2+1}$ è in forma ridotta, mentre la frazione $\frac{x^2-3x+2}{x^2-1}$ non è in forma ridotta,
+```{prf:example} Frazioni algebriche semplici e non semplici
+:class: dropdown
 
-$$\frac{x^2-3x+2}{x^2-1} = \frac{(x-2)(x-1)}{(x+1)(x-1)} \ ,$$
-
-e **per** $x \ne = 1$ è uguale a $\frac{x-2}{x+1}$.
+La frazione $\frac{x^2-3x+2}{x^2+1} = \frac{(x-2)(x-1)}{x^2+1}$ è in forma ridotta, mentre la frazione $\frac{x^2-3x+2}{x^2-1} = \frac{(x-2)(x-1)}{(x+1)(x-1)}$ non è in forma ridotta e, **per** $x \ne 1$ **(!)**, è uguale a $\frac{x-2}{x+1}$.
 
 ```
+
+## Rappresentazione grafica
 
 
 ## Problemi
