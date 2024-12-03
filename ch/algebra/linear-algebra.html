@@ -489,11 +489,21 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-lineari-e-formalismo-matriciale">6.2. Sistemi lineari e formalismo matriciale</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matrici">6.3. Matrici</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni">6.3.1. Operazioni</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#determinante">6.3.2. Determinante</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rango-e-nucleo">6.3.3. Rango e nucleo</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#determinanti">6.4. Determinanti</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#risoluzione-di-sistemi">6.5. Risoluzione di Sistemi</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi">6.6. Esercizi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#risoluzione-di-sistemi">6.4. Risoluzione di Sistemi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-di-sostituzione">6.4.1. Metodo di sostituzione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-di-eliminazione-di-gauss">6.4.2. Metodo di eliminazione di Gauss</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-di-cramer">6.4.3. Metodo di Cramer</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-rouche-capelli">6.5. Teorema di Rouché-Capelli</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretazione-geometrica">6.5.1. Interpretazione geometrica</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi">6.6. Problemi</a></li>
 </ul>
             </nav>
         </div>
@@ -542,6 +552,7 @@ a_{11} &amp; a_{12} &amp; \dots &amp; a_{1n} \\
 a_{m1} &amp; a_{m2} &amp; \dots &amp; a_{mn}
 \end{bmatrix}
 \end{split}\]</div>
+<p><strong>Interpretazione del contenuto della matrice.</strong> Una matrice <span class="math notranslate nohighlight">\(\mathbf{A} \in \mathbb{R}^{m,n}\)</span> può essere interpretata come <span class="math notranslate nohighlight">\(n\)</span> <span class="math notranslate nohighlight">\(m\)</span>-uple <span class="math notranslate nohighlight">\(\mathbf{a}_i\)</span></p>
 <div class="section" id="operazioni">
 <h3><span class="section-number">6.3.1. </span>Operazioni<a class="headerlink" href="#operazioni" title="Permalink to this heading">#</a></h3>
 <ul>
@@ -583,50 +594,416 @@ a_{m1} &amp; a_{m2} &amp; \dots &amp; a_{mn}
 <p><strong>Osservazione.</strong> <strong>Non</strong> vale la <strong>proprietà commutativa</strong> per il prodotto di matrici. Per di più, in generale non è possibile formare il prodotto <span class="math notranslate nohighlight">\(\mathbf{B} \mathbf{A}\)</span>, se <span class="math notranslate nohighlight">\(m \ne n\)</span>.</p>
 </li>
 </ul>
+<div class="proof example admonition" id="example-0">
+<p class="admonition-title"><span class="caption-number">Example 6.1 </span></p>
+<div class="example-content section" id="proof-content">
+</div>
+</div><div class="proof example admonition" id="example-1">
+<p class="admonition-title"><span class="caption-number">Example 6.2 </span></p>
+<div class="example-content section" id="proof-content">
+</div>
+</div><div class="proof example admonition" id="example-2">
+<p class="admonition-title"><span class="caption-number">Example 6.3 </span></p>
+<div class="example-content section" id="proof-content">
+</div>
+</div></div>
+<div class="section" id="determinante">
+<h3><span class="section-number">6.3.2. </span>Determinante<a class="headerlink" href="#determinante" title="Permalink to this heading">#</a></h3>
+<p>Per una matrice quadrata <span class="math notranslate nohighlight">\(\mathbf{A} \in \mathbb{R}^{n,n}\)</span> è possibile definire una grandezza scalare, definita <strong>determinante</strong>, il cui nome dovrebbe farne intuire la rilevanza: essa infatti riassume alcune caratteristiche della matrice e, tra le altre, determina un criterio di esistenza della matrice inversa e un criterio di esistenza e di unicità della soluzione di un sistema lineare, <span class="math notranslate nohighlight">\(\mathbf{A} \mathbf{x} = \mathbf{b}\)</span>.</p>
+<p>La definizione e una discussione completa del determinante di una matrice vanno ben oltre (<strong>todo</strong> <em>probabilmente</em>) lo scopo di questo materiale.</p>
+<p><strong>todo</strong> <em>Espressione del determinante per matrici 2x2, 3x3; mettere in evidenza la comparsa del determinante nei metodi di soluzione sotto</em></p>
+</div>
+<div class="section" id="rango-e-nucleo">
+<h3><span class="section-number">6.3.3. </span>Rango e nucleo<a class="headerlink" href="#rango-e-nucleo" title="Permalink to this heading">#</a></h3>
+<p><strong>todo</strong> …</p>
 </div>
 </div>
-<hr class="docutils" />
-<div class="section" id="determinanti">
-<h2><span class="section-number">6.4. </span>Determinanti<a class="headerlink" href="#determinanti" title="Permalink to this heading">#</a></h2>
-<p>Il determinante di una matrice quadrata è dato da:</p>
-<div class="math notranslate nohighlight">
-\[
-\text{det}(A) = a_{11}a_{22} - a_{12}a_{21}
-\]</div>
-</div>
-<hr class="docutils" />
 <div class="section" id="risoluzione-di-sistemi">
-<h2><span class="section-number">6.5. </span>Risoluzione di Sistemi<a class="headerlink" href="#risoluzione-di-sistemi" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p><strong>Metodo di Cramer</strong>:
-<span class="math notranslate nohighlight">\( x_i = \frac{\text{det}(A_i)}{\text{det}(A)} \)</span></p></li>
-<li><p><strong>Metodo della matrice inversa</strong>:
-<span class="math notranslate nohighlight">\( \mathbf{x} = A^{-1} \mathbf{b} \)</span></p></li>
-</ul>
-</div>
-<hr class="docutils" />
-<div class="section" id="esercizi">
-<h2><span class="section-number">6.6. </span>Esercizi<a class="headerlink" href="#esercizi" title="Permalink to this heading">#</a></h2>
-<ol class="arabic simple">
-<li><p>Calcola il determinante:</p></li>
-</ol>
+<h2><span class="section-number">6.4. </span>Risoluzione di Sistemi<a class="headerlink" href="#risoluzione-di-sistemi" title="Permalink to this heading">#</a></h2>
+<p>La soluzione dei sistemi lineari è una delle attività più frequenti nelle applicazioni di matematica, soprattutto negli algoritmi di calcolo numerico; non ci occuperemo qui dei metodi numerici di soluzione dei sistemi lineari, ma si discutono diversi approcci alla soluzione analitica «a manina» di sistemi lineari, utili per il calcolo analitico della soluzione esatta di sistemi lineari di dimensioni sufficientemente ridotte (3, salvo casi eccezionali…).</p>
+<p>Come descritto dal <a class="reference internal" href="../algebra.html"><span class="doc std std-doc">teorema di Rouché-Capelli</span></a>, esistono 3 possibili situazioni: il sistema lineare ha 1. una sola soluzione; 2. un numero infinito di soluzioni; 3. nessuna soluzione.</p>
+<p>I metodi presentati sono tra di loro equivalenti, intendendo che portano alla stessa soluzione. <strong>todo</strong> <em>Equivalenti nel caso esista una soluzione unica. Danno le stesse informazioni anche nel caso esistano infinite soluzioni o non esistano soluzioni? Riguardo il rango e/o il nucleo…</em></p>
+<div class="section" id="metodo-di-sostituzione">
+<h3><span class="section-number">6.4.1. </span>Metodo di sostituzione<a class="headerlink" href="#metodo-di-sostituzione" title="Permalink to this heading">#</a></h3>
+<p>Il metodo di sostituzione consiste nell’usare in successione un’equazione per ricavare un’incognita in funzione delle altre incognite, e sostituire l’espressione ricavata nelle altre successioni, per ottenere un sistema lineare con al dimensione ridotta di 1. Si continua così fino a ottenere un’equazione in un’incognita, immediata da risolvere. Successivamente si trovano i valori delle altre incognite in funzione delle incognite già calcolate. Se esiste una soluzione del problema, l’algoritmo descritto permette di calcolare la soluzione. <strong>todo</strong> <em>Altrimenti, in caso di esistenza di infinite soluzioni si arriva a un’identità <span class="math notranslate nohighlight">\(0=0\)</span>; in caso di nessuna soluzione si arriva a una contraddizione <span class="math notranslate nohighlight">\(1=0\)</span>.</em> <strong>todo</strong> <em>vedi esempi sotto</em></p>
+<div class="proof example dropdown admonition" id="example-3">
+<p class="admonition-title"><span class="caption-number">Example 6.4 </span> (Metodo di sostituzione per sistema quadrato determinato)</p>
+<div class="example-content section" id="proof-content">
+<p>Si vuole risolvere il sistema</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+      x_1             - x_3 = 1 \\
+                2 x_2 + x_3 =-1 \\
+    3 x_1   +     x_2 - x_3 = 4 \\
+\end{cases}\end{split}\]</div>
+<p>Applichiamo il metodo di sostituzione, usando la prima equazione per esprimere <span class="math notranslate nohighlight">\(x_1\)</span> in funzione delle altre incognite,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+  E1: \   x_1             - x_3 = 1  \qquad \rightarrow \qquad x_1 = x_3 + 1 \\
+  E2: \             2 x_2 + x_3 =-1 \\
+  E3: \ 3 x_1   +     x_2 - x_3 = 4 \\
+\end{cases}\end{split}\]</div>
+<p>si può sostituire l’espressione trovata nelle altre due equazioni per ottenere un sistema di 2 equazioni nelle due incognite <span class="math notranslate nohighlight">\(x_2. x_3\)</span>, e usare l’equazione <span class="math notranslate nohighlight">\(E2\)</span> per esprimere <span class="math notranslate nohighlight">\(x_3\)</span> in funzione di <span class="math notranslate nohighlight">\(x_2\)</span></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\begin{bmatrix}
-1 &amp; 2 \\
-3 &amp; 4
-\end{bmatrix}
+\begin{cases}
+  E2: \             2 x_2 + x_3 =-1 \\
+  E3: \ 3 (x_3 + 1) + x_2 - x_3 = 4 \\
+\end{cases}
+\qquad
+\begin{cases}
+  E2: \ 2 x_2 +   x_3 =-1 \qquad \rightarrow \qquad x_3 = -1 - 2 x_2 \\
+  E3: \   x_2 + 2 x_3 = 1 \\
+\end{cases}
 \end{split}\]</div>
-<ol class="arabic simple" start="2">
+<p>e ottenere un’unica equazione lineare <span class="math notranslate nohighlight">\(E3\)</span> per l’unica incognita <span class="math notranslate nohighlight">\(x_2\)</span>, della quale è possibile calcolare il valore,</p>
+<div class="math notranslate nohighlight">
+\[
+E3: \ x_2 + 2 ( -1 - 2 x_2 ) = 1 \quad \rightarrow \quad x_2 = -1 \ .
+\]</div>
+<p>Una volta trovato il valore <span class="math notranslate nohighlight">\(x_2 = -1\)</span>, si «torna indietro» per calcolare <span class="math notranslate nohighlight">\(x_3 = - 1 - 2 x_2 = 1\)</span> e <span class="math notranslate nohighlight">\(x_1 = x_3 + 1 = 2\)</span>. La soluzione del sistema quindi esiste, è unica ed è <span class="math notranslate nohighlight">\(\mathbf{x} = (x_1, x_2, x_3) = (2, -1, 1)\)</span>.</p>
+</div>
+</div></div>
+<div class="section" id="metodo-di-eliminazione-di-gauss">
+<h3><span class="section-number">6.4.2. </span>Metodo di eliminazione di Gauss<a class="headerlink" href="#metodo-di-eliminazione-di-gauss" title="Permalink to this heading">#</a></h3>
+<p>Il metodo di eliminazione di Gauss consiste nella combinazione lineare delle equazioni del sistema per ottenere una forma del sistema facilmente risolvibile, tipicamente una matrice dei coefficienti con forma triangolare.</p>
+<div class="proof example dropdown admonition" id="example-4">
+<p class="admonition-title"><span class="caption-number">Example 6.5 </span> (Metodo di sostituzione per sistema quadrato determinato)</p>
+<div class="example-content section" id="proof-content">
+<p>Si vuole risolvere il sistema</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+      x_1             - x_3 = 1 \\
+                2 x_2 + x_3 =-1 \\
+    3 x_1   +     x_2 - x_3 = 4 \\
+\end{cases}\end{split}\]</div>
+<p>con il metodo di eliminazione di Gauss. E” comune (ma non obbligatorio, ognuno è libero di fare quello che gli pare, purché vengano seguiti procedimenti logici) applicare il metodo dopo aver riscritto il sistema con il fomralismo matriciale,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix} 1 &amp; 0 &amp; -1 \\ 0 &amp; 2 &amp; 1 \\ 3 &amp;  1 &amp; -1 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} =  \begin{bmatrix} 1 \\ -1 \\ 4 \end{bmatrix} \ ,
+\end{split}\]</div>
+<p>e, sottintendendo il vettore delle incognite,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left[\begin{array}{ccc|c} 1 &amp; 0 &amp; -1 &amp; 1 \\ 0 &amp; 2 &amp; 1 &amp; -1 \\ 3 &amp; 1 &amp; -1 &amp; 4 \end{array} \right] \ .\end{split}\]</div>
+<p>Vogliamo ottenere una forma triangolare della matrice <span class="math notranslate nohighlight">\(\mathbf{A}\)</span>. La prima e la seconda riga soddisfano già questa struttura, mentre è necessario combinare le righe per annullare i primi 2 elementi della tera riga. Sottraendo la prima riga moltiplicata per 3, viene annullato il primo elemento</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left[\begin{array}{ccc|c} 1 &amp; 0 &amp; -1 &amp; 1 \\ 0 &amp; 2 &amp; 1 &amp; -1 \\ 0 &amp; 1 &amp;  2 &amp; 1 \end{array} \right] \ ,\end{split}\]</div>
+<p>e successivamente sottraendo la seconda riga moltiplicata per <span class="math notranslate nohighlight">\(\frac{1}{2}\)</span>, viene annullato il secondo elemento,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left[\begin{array}{ccc|c} 1 &amp; 0 &amp; -1 &amp; 1 \\ 0 &amp; 2 &amp; 1 &amp; -1 \\ 0 &amp; 0 &amp; \frac{3}{2} &amp; \frac{3}{2} \end{array} \right] \ .\end{split}\]</div>
+<p>Ottenuta la forma triangolare desiderata, si fa ricomparire il vettore delle incognite</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix} 1 &amp; 0 &amp; -1 \\ 0 &amp; 2 &amp; 1 \\ 0 &amp;  0 &amp; \frac{3}{2} \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} =  \begin{bmatrix} 1 \\ -1 \\ \frac{3}{2} \end{bmatrix} \ ,
+\end{split}\]</div>
+<p>e si risolve il sistema triangolare partendo dall’ultima equazione</p>
+<div class="math notranslate nohighlight">
+\[\frac{3}{2} x_3 = \frac{3}{2} \qquad \rightarrow \qquad x_3 = 1 \, \]</div>
+<p>a ritroso: questo ordine di soluzione permette di risolvere <span class="math notranslate nohighlight">\(n\)</span> equazioni che contengono una sola incognita per volta, dopo aver sostituito il valore delle incognite già trovate,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+ 2 x_2 + x_3 = - 1 \qquad &amp; \rightarrow \qquad x_2 = -1 \\
+   x_1 - x_3 =   1 \qquad &amp; \rightarrow \qquad x_1 =  2 \\
+\end{aligned}\end{split}\]</div>
+</div>
+</div></div>
+<div class="section" id="metodo-di-cramer">
+<h3><span class="section-number">6.4.3. </span>Metodo di Cramer<a class="headerlink" href="#metodo-di-cramer" title="Permalink to this heading">#</a></h3>
+<p><strong>todo</strong> <em>Per quale motivo discuterlo? E” scomodo, non dà grandi informazioni in caso di assenza o numero infinito di soluzioni…</em></p>
+</div>
+</div>
+<div class="section" id="teorema-di-rouche-capelli">
+<span id="math-hs-algebra-linear-rouche-capelli"></span><h2><span class="section-number">6.5. </span>Teorema di Rouché-Capelli<a class="headerlink" href="#teorema-di-rouche-capelli" title="Permalink to this heading">#</a></h2>
+<div class="section" id="interpretazione-geometrica">
+<h3><span class="section-number">6.5.1. </span>Interpretazione geometrica<a class="headerlink" href="#interpretazione-geometrica" title="Permalink to this heading">#</a></h3>
+<div class="proof example admonition" id="example-5">
+<p class="admonition-title"><span class="caption-number">Example 6.6 </span> (Sistema quadrato determinato)</p>
+<div class="example-content section" id="proof-content">
+</div>
+</div><div class="proof example admonition" id="example-6">
+<p class="admonition-title"><span class="caption-number">Example 6.7 </span> (Sistema quadrato indeterminato)</p>
+<div class="example-content section" id="proof-content">
+</div>
+</div><div class="proof example admonition" id="example-7">
+<p class="admonition-title"><span class="caption-number">Example 6.8 </span> (Sistema quadrato sovradeterminato)</p>
+<div class="example-content section" id="proof-content">
+</div>
+</div><div class="proof example admonition" id="example-8">
+<p class="admonition-title"><span class="caption-number">Example 6.9 </span> (Sistema indeterminato)</p>
+<div class="example-content section" id="proof-content">
+</div>
+</div></div>
+</div>
+<div class="section" id="problemi">
+<h2><span class="section-number">6.6. </span>Problemi<a class="headerlink" href="#problemi" title="Permalink to this heading">#</a></h2>
+<p>Viene chiesto di stabilire se i seguenti problemi hanno soluzione, di calcolare le eventuali soluzioni, fornire una rappresentazione grafica del problema algebrico, e - per sistemi con uguale numero di equazioni ed incognite - calcolare il determinante delle matrici del sistema lineare.</p>
+<ol class="arabic">
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{cases}
+   x + y = 4 \\
+   \frac{3}{2}x + y = 5
+   \end{cases}
+   \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x - y = 2 \\
+    x + y = -1
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{cases}
+   x + 2y = 5 \\
+   2x + 2y = 11
+   \end{cases}
+   \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{cases}
+   x + y = 3 \\
+   x - y = 1
+   \end{cases}
+   \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{cases}
+   x - y + z = 0 \\
+   2x - 2y + 2z = 0 \\
+   -x + y - z = 0
+   \end{cases}
+   \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{cases}
+   x + y + z = 2 \\
+   x + 2y + z = 4 \\
+   x + y + 2z = 6
+   \end{cases}
+   \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{cases}
+   x + y + z = 3 \\
+   2x + 2y + z = 8 \\
+   \end{cases}
+   \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{cases}
+   x + y + z = 7 \\
+   x + y - z = 3
+   \end{cases}
+   \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{cases}
+   3x + 2y = 6 \\
+   x - y = 1
+   \end{cases}
+   \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x + y = 2 \\
+    3x + 2y = 6
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x - y = 1 \\
+    x - 3y + z = 3
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x + y = 5 \\
+    2x - y = 1
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x + y = 1 \\
+    x + y + z = 3 \\
+    2x + 2y + z = 4
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x + y + z = 5 \\
+    2x - 2y + 2z = 10 \\
+    3x - y + 3z = -5
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x + y = 4 \\
+    2x + 2y = 8
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x + 2y = 8 \\
+    3x - 4y = -2
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x + y = 3 \\
+    2x + 2y = 6 \\
+    x + 3y = 4
+    \end{cases}
+    \end{split}\]</div>
+</li>
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x + y - z = 3 \\
+    2x - y + z = 2 \\
+    -x + y + 2z = 4
+    \end{cases}
+    \end{split}\]</div>
+</li>
 <li><p>Risolvi il sistema:</p></li>
 </ol>
 <div class="math notranslate nohighlight">
 \[\begin{split}
+   \begin{cases}
+   x + y + z = 6 \\
+   x - y + z = 4 \\
+   2x + y - z = 7
+   \end{cases}
+   \end{split}\]</div>
+<ol class="arabic" start="20">
+<li><p>Risolvi il sistema:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x + y + 3z = 6 \\
+    2x + 4y + 6z = 12 \\
+    -x - 2y - 3z = -6
+    \end{cases}
+    \end{split}\]</div>
+</li>
+</ol>
+<p>Viene chiesto di ripetere la discussione degli esercizi precedenti, al variare dei parametri nel sistemi.</p>
+<ol class="arabic simple">
+<li></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{cases}
+   x + ky = 2 \\
+   x - 2y = 1
+   \end{cases}
+   \end{split}\]</div>
+<ol class="arabic simple" start="2">
+<li></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{cases}
+   x + y = b \\
+   ax + y = 2
+   \end{cases}
+   \end{split}\]</div>
+<ol class="arabic simple" start="3">
+<li></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{cases}
+   x - y + mz = 3 \\
+   mx + 2y + z = 4 \\
+   x + y - z = 1
+   \end{cases}
+   \end{split}\]</div>
+<ol class="arabic simple" start="4">
+<li></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{cases}
+   kx + y = 4 \\
+   2x + ky = 3 p
+   \end{cases}
+   \end{split}\]</div>
+<ol class="arabic" start="5">
+<li><div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{cases}
+   px + y      = 1 \\
+   2x + y +  z = 2 \\
+        y + qz = p
+   \end{cases}
+   \end{split}\]</div>
+</li>
+</ol>
+<p><strong>todo</strong> <em>Qualche esercizio con disequazioni</em></p>
+<!--
+
+## Esercizi
+1. Calcola il determinante:
+
+$$
+\begin{bmatrix}
+1 & 2 \\
+3 & 4
+\end{bmatrix}
+$$
+
+2. Risolvi il sistema:
+
+$$
 \begin{cases}
 x + 2y = 5 \\
 3x - y = 4
 \end{cases}
-\end{split}\]</div>
+$$
+
+-->
 </div>
 </div>
 
@@ -697,11 +1074,21 @@ x + 2y = 5 \\
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-lineari-e-formalismo-matriciale">6.2. Sistemi lineari e formalismo matriciale</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matrici">6.3. Matrici</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni">6.3.1. Operazioni</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#determinante">6.3.2. Determinante</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rango-e-nucleo">6.3.3. Rango e nucleo</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#determinanti">6.4. Determinanti</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#risoluzione-di-sistemi">6.5. Risoluzione di Sistemi</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi">6.6. Esercizi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#risoluzione-di-sistemi">6.4. Risoluzione di Sistemi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-di-sostituzione">6.4.1. Metodo di sostituzione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-di-eliminazione-di-gauss">6.4.2. Metodo di eliminazione di Gauss</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-di-cramer">6.4.3. Metodo di Cramer</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-rouche-capelli">6.5. Teorema di Rouché-Capelli</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretazione-geometrica">6.5.1. Interpretazione geometrica</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi">6.6. Problemi</a></li>
 </ul>
   </nav></div>
 
