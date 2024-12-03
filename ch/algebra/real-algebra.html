@@ -577,12 +577,20 @@ document.write(`
 <h3><span class="section-number">4.2.1. </span>Frazioni algebriche<a class="headerlink" href="#frazioni-algebriche" title="Permalink to this heading">#</a></h3>
 <p>Una frazione algebrica è il quoziente di due polinomi,</p>
 <div class="math notranslate nohighlight">
-\[\frac{a_n x^n + a_{n-1} x^{n-1} + \dots a_0}{b_m b^m + b_{m-1} x^{m-1} + \dots b_0} \ .\]</div>
+\[\frac{a_n x^n + a_{n-1} x^{n-1} + \dots a_0}{b_m x^m + b_{m-1} x^{m-1} + \dots b_0} \ .\]</div>
 <p>Per il <a class="reference internal" href="../precalculus/polynomials.html#math-hs-precalculus-polynomials-alg-fund-thm"><span class="std std-ref">teorema fondamentale dell’algebra</span></a>, ogni polinomio può essere scritto come prodotto di polinomi di primo o secondo ordine. Se i polinomi al numeratore e al denominatore della frazione algebrica non hanno fattori in comune, la frazione algebrica viene definita <strong>in forma semplice</strong>.</p>
 <div class="proof example dropdown admonition" id="example-0">
 <p class="admonition-title"><span class="caption-number">Example 4.1 </span> (Frazioni algebriche semplici e non semplici)</p>
 <div class="example-content section" id="proof-content">
 <p>La frazione <span class="math notranslate nohighlight">\(\frac{x^2-3x+2}{x^2+1} = \frac{(x-2)(x-1)}{x^2+1}\)</span> è in forma ridotta, mentre la frazione <span class="math notranslate nohighlight">\(\frac{x^2-3x+2}{x^2-1} = \frac{(x-2)(x-1)}{(x+1)(x-1)}\)</span> non è in forma ridotta e, <strong>per</strong> <span class="math notranslate nohighlight">\(x \ne 1\)</span> <strong>(!)</strong>, è uguale a <span class="math notranslate nohighlight">\(\frac{x-2}{x+1}\)</span>.</p>
+</div>
+</div><p>Se il denominatore è scomponibile come prodotto di polinomi, allora la frazione algebrica può essere scritta come <strong>somma di frazioni parziali</strong>. In alcune applicazioni, come il calcolo degli integrali, può essere conveniente scrivere una frazione come somma di frazioni parziali, poiché risulta più semplice trattare somme di frazioni con numeratore di grado 1 o 2, di frazioni con numeratore di grado qualsiasi.</p>
+<div class="proof example dropdown admonition" id="example-1">
+<p class="admonition-title"><span class="caption-number">Example 4.2 </span></p>
+<div class="example-content section" id="proof-content">
+<p>La frazione <span class="math notranslate nohighlight">\(\frac{3x}{x^2-1}\)</span> può essere scritta come somma di frazioni parziali <span class="math notranslate nohighlight">\(\frac{3 x}{x^2-1} = \)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\frac{3x}{x^2-1} = \frac{a}{x+1} + \frac{b}{x-1} = \frac{a(x-1) + b(x+1)}{x^2-1} = \frac{x(a+b)+b-a}{x^2-1}\]</div>
 </div>
 </div></div>
 </div>
