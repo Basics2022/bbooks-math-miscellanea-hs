@@ -431,6 +431,18 @@ esempi di distribuzione: binomiale, normale, Poisson
 
 \chapter{Logica}
 \label{\detokenize{ch/logics:logica}}\label{\detokenize{ch/logics:math-hs-logics}}\label{\detokenize{ch/logics::doc}}
+
+\section{Argomenti …}
+\label{\detokenize{ch/logics:argomenti}}
+\sphinxAtStartPar
+Per ora, elenco di concetti linkati
+
+
+\subsection{Identità}
+\label{\detokenize{ch/logics:logics-identity}}\label{\detokenize{ch/logics:identita}}
+
+\subsection{Contraddizione}
+\label{\detokenize{ch/logics:contraddizione}}\label{\detokenize{ch/logics:logics-contradiction}}
 \sphinxstepscope
 
 
@@ -682,35 +694,183 @@ per \(a < 0\) solo per \(b \in \mathbb{N}\)
 \subsection{Frazioni algebriche}
 \label{\detokenize{ch/algebra/real-algebra:frazioni-algebriche}}
 \sphinxAtStartPar
-Una frazione algebrica è il quoziente di due polinomi.
+Una frazione algebrica è il quoziente di due polinomi,
+\begin{equation*}
+\begin{split}\frac{a_n x^n + a_{n-1} x^{n-1} + \dots a_0}{b_m x^m + b_{m-1} x^{m-1} + \dots b_0} \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Per il {\hyperref[\detokenize{ch/precalculus/polynomials:math-hs-precalculus-polynomials-alg-fund-thm}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema fondamentale dell’algebra}}}}, ogni polinomio può essere scritto come prodotto di polinomi di primo o secondo ordine. Se i polinomi al numeratore e al denominatore della frazione algebrica non hanno fattori in comune, la frazione algebrica viene definita \sphinxstylestrong{in forma semplice}.
+\label{ch/algebra/real-algebra:example-0}
+\begin{sphinxadmonition}{note}{Example 4.2.1 (Frazioni algebriche semplici e non semplici)}
+
+
 
 \sphinxAtStartPar
-\sphinxstylestrong{todo} \sphinxstyleemphasis{forma elementare}
+La frazione \(\frac{x^2-3x+2}{x^2+1} = \frac{(x-2)(x-1)}{x^2+1}\) è in forma ridotta, mentre la frazione \(\frac{x^2-3x+2}{x^2-1} = \frac{(x-2)(x-1)}{(x+1)(x-1)}\) non è in forma ridotta e, \sphinxstylestrong{per} \(x \ne 1\) \sphinxstylestrong{(!)}, è uguale a \(\frac{x-2}{x+1}\).
+\end{sphinxadmonition}
+
+\sphinxAtStartPar
+Una \sphinxstylestrong{frazione propria} ha il grado \(n\) del numeratore inferiore al grado \(m\) del denominatore. Una frazione non propria può essere scritta come un polinomio di grado \(n-m\) e una frazione propria
+\label{ch/algebra/real-algebra:example-1}
+\begin{sphinxadmonition}{note}{Example 4.2.2 (Frazioni non proprie)}
 
 
-\section{Problemi}
-\label{\detokenize{ch/algebra/real-algebra:problemi}}
+
+\sphinxAtStartPar
+La frazione \(\frac{x^2 + 2x + 1}{x - 2}\) può essere scritta «completando il quadrato» come
+\begin{equation*}
+\begin{split}\frac{x^2+2x+1}{x-2} = \frac{x^2-4x+4+4x-4+2x+1}{x-2} = \frac{(x-2)^2+6x-3}{x-2} = x-2 + 3\frac{2x-1}{x-2} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+con la semplificazione possibile per \(x \ne 2\).
+\end{sphinxadmonition}
+
+\sphinxAtStartPar
+Se il denominatore è scomponibile come prodotto di polinomi, allora la frazione algebrica può essere scritta come \sphinxstylestrong{somma di frazioni parziali}. In alcune applicazioni, come il calcolo degli integrali, può essere conveniente scrivere una frazione come somma di frazioni parziali, poiché risulta più semplice trattare somme di frazioni con numeratore di grado 1 o 2, di frazioni con numeratore di grado qualsiasi.
+\label{ch/algebra/real-algebra:example-2}
+\begin{sphinxadmonition}{note}{Example 4.2.3 (Somma di frazioni parziali)}
+
+
+
+\sphinxAtStartPar
+La frazione \(\frac{3x}{x^2-1}\) può essere scritta come somma di frazioni parziali \(\frac{3 x}{x^2-1} = \frac{3}{2} \frac{1}{x-1} + \frac{3}{2}\frac{1}{x+1}\), poiché
+\begin{equation*}
+\begin{split}\frac{3x}{x^2-1} = \frac{a}{x+1} + \frac{b}{x-1} = \frac{a(x-1) + b(x+1)}{x^2-1} = \frac{x(a+b)+b-a}{x^2-1}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\begin{cases} a + b = 3 \\ b - a = 0 \end{cases} \qquad \rightarrow \qquad a = b = \frac{3}{2} \ .\end{split}
+\end{equation*}\end{sphinxadmonition}
+
+
+\section{Problemi con un’incognita}
+\label{\detokenize{ch/algebra/real-algebra:problemi-con-un-incognita}}
 
 \subsection{Equazioni}
-\label{\detokenize{ch/algebra/real-algebra:equazioni}}
+\label{\detokenize{ch/algebra/real-algebra:equazioni}}\label{\detokenize{ch/algebra/real-algebra:math-hs-algebra-real-eq}}
 \sphinxAtStartPar
-Un’equazione è un’uguaglianza che contiene una o più incognite. L’obiettivo è trovare i valori delle incognite che rendono vera l’uguaglianza.
+Un’equazione è una relazione di uguaglianza che contiene una o più incognite. L’obiettivo è trovare i valori delle incognite che rendono vera l’uguaglianza.
 
 
-\subsubsection{Equazioni lineari}
-\label{\detokenize{ch/algebra/real-algebra:equazioni-lineari}}
+\subsubsection{Equazioni di primo grado}
+\label{\detokenize{ch/algebra/real-algebra:equazioni-di-primo-grado}}\label{\detokenize{ch/algebra/real-algebra:math-hs-algebra-real-eq-first}}
+\sphinxAtStartPar
+La forma generale di un’equazione di primo grado in un’incognita reale \(x \in \mathbb{R}\) è
+\begin{equation*}
+\begin{split}a x + b = 0 \qquad a \ne 0 \end{split}
+\end{equation*}
+\sphinxAtStartPar
+dove la condizione sul coefficiente \(a \ne 0\) esclude i casi in cui l’equazione degenera a un’uguaglianza tra parametri.
+Dopo aver escluso i casi in cui l’equazione degenera in un’uguaglianza tra paramteri, con la condizione \(a \ne 0\), la soluzione generale dell’equazione lineare esiste, è \sphinxstylestrong{unica} ed è
+\begin{equation*}
+\begin{split}x = - \frac{b}{a} \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Nel caso degenere in cui \(a = 0\), si possono distinguere due casi:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+se \(b \ne 0\) \sphinxstylestrong{non esiste} nessuna soluzione, poiché l’equazione si riduce alla {\hyperref[\detokenize{ch/logics:logics-identity}]{\sphinxcrossref{\DUrole{std,std-ref}{contraddizione}}}} \(0 = b \ne 0\) per \(\forall x \in \mathbb{R}\)
 
-\subsubsection{Equazioni quadratiche}
-\label{\detokenize{ch/algebra/real-algebra:equazioni-quadratiche}}
+\item {} 
+\sphinxAtStartPar
+se \(b = 0\) \sphinxstylestrong{esistono infinite} soluzioni, poiché l’equazione si riduce all”{\hyperref[\detokenize{ch/logics:logics-contradiction}]{\sphinxcrossref{\DUrole{std,std-ref}{identità}}}} \(0 = b \ne 0\) per \(\forall x \in \mathbb{R}\)
+
+\end{itemize}
+
+
+
+
+\subsubsection{Equazioni di secondo grado}
+\label{\detokenize{ch/algebra/real-algebra:equazioni-di-secondo-grado}}\label{\detokenize{ch/algebra/real-algebra:math-hs-algebra-real-eq-second}}
+\sphinxAtStartPar
+La forma generale di un’equazione di secondo grado in un’incognita reale \(x \in \mathbb{R}\) è
+\begin{equation*}
+\begin{split}a x^2 + b x + c = 0 \qquad a \ne 0 \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+dove la condizione sul coefficiente \(a \ne 0\) esclude i casi in cui l’equazione degenera a un’equazione di {\hyperref[\detokenize{ch/algebra/real-algebra:math-hs-algebra-real-eq-first}]{\sphinxcrossref{\DUrole{std,std-ref}{primo grado}}}}.
+Le soluzioni dell’equazione vengono cercate completando il quadrato,
+\begin{equation*}
+\begin{split}0 = x^2 + \frac{b}{a} x + \frac{b^2}{4 a^2} - \frac{b^2}{4 a^2} + \frac{c}{a} = \left( x + \frac{b}{2a} \right)^2 - \left( \frac{b^2}{4 a^2} - \frac{c}{a} \right) . \end{split}
+\end{equation*}
+\sphinxAtStartPar
+L’equazione viene riscritta come
+\begin{equation*}
+\begin{split}\left( x + \frac{b}{2a} \right)^2 = \frac{b^2}{4 a^2} - \frac{c}{a} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+per mettere in evidenza che l’esistenza delle soluzioni dipende dal valore del \sphinxstylestrong{discriminante}, \(\frac{\Delta}{(2a)^2} := \frac{b^2 - 4 a c}{(2a)^2}\):
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+se \(\Delta > 0\) esistono \sphinxstylestrong{due soluzioni reali distinte}, \(x_{1,2} = - \frac{b}{2a} \mp \frac{\sqrt{\Delta}}{2a} \in \mathbb{R}\)
+
+\item {} 
+\sphinxAtStartPar
+se \(\Delta = 0\) esistono \sphinxstylestrong{due soluzioni reali coincidenti}, \(x_1 = x_2 = - \frac{b}{2a} \in \mathbb{R}\)
+
+\item {} 
+\sphinxAtStartPar
+se \(\Delta < 0\) \sphinxstylestrong{non esistono soluzioni reali}, poiché la radice quadra di un numero negativo non è definita nel campo dei numeri reali, \(\nexists x \in \mathbb{R}\)
+
+\end{itemize}
+
 
 \subsubsection{Equazioni non lineari generali}
-\label{\detokenize{ch/algebra/real-algebra:equazioni-non-lineari-generali}}
+\label{\detokenize{ch/algebra/real-algebra:equazioni-non-lineari-generali}}\label{\detokenize{ch/algebra/real-algebra:id1}}
+\sphinxAtStartPar
+Mentre esiste una formula generale per le equazioni di terzo grado e di quarto grado, queste risultano spesso di scarsa e scarsissima (nulla?) utilità. Per le equazioni polinomiali, a volte è possibile utilizzare i risultati del {\hyperref[\detokenize{ch/precalculus/polynomials:math-hs-precalculus-polynomials-alg-fund-thm}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema fondamentale dell’algebra}}}} per scrivere il polinomio come prodotto di polinomi di primo e secondo ordine, per i quali è possibile calcolare gli zeri con le formule mostrate nelle sezioni sulle equazioni di primo e secondo grado.
+
+\sphinxAtStartPar
+Per equazioni algebriche non lineari che coinvolgono potenze, logaritmi, esponenziali, a parte alcuni casi particolari risolvibili in forma chiusa utilizzando le proprietà di queste operazioni e le soluzioni delle equazioni polinomiali, è necessario affidarsi a metodi di soluzione grafici e/o numerici: \sphinxstylestrong{todo}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+m.grafici: soluzione a mano, per guess iniziale di m.numerici
+
+\item {} 
+\sphinxAtStartPar
+m.numerici: …
+
+\end{itemize}
+
 
 \subsection{Disequazioni}
 \label{\detokenize{ch/algebra/real-algebra:disequazioni}}
+\sphinxAtStartPar
+Un’equazione è una relazione di disuguaglianza che contiene una o più incognite. L’obiettivo è trovare i valori delle incognite che rendono vera la disuguaglianza.
 
-\section{Sistemi di equazioni}
-\label{\detokenize{ch/algebra/real-algebra:sistemi-di-equazioni}}
+
+\section{Rappresentazione grafica di un’equazione con due incognite}
+\label{\detokenize{ch/algebra/real-algebra:rappresentazione-grafica-di-un-equazione-con-due-incognite}}
+\sphinxAtStartPar
+Un’equazione con due incognite \(x,y\) è una relazione di uguaglianza che può essere scritta nella forma generale \(f(x,y) = 0\). In generale, a ogni equazione di questa forma può essere associata una curva nel piano, qui descritto dalle coordinate cartesiane \(x,y\). Senza nessuna pretesa di completezza \sphinxhyphen{} rimandando per quella alla sezione sulla {\hyperref[\detokenize{ch/analytic_geometry:geometry-analytic}]{\sphinxcrossref{\DUrole{std,std-ref}{geometria analitica}}}} \sphinxhyphen{} qui ci si limita a discutere la rappresentazione grafica nel piano di alcune equazioni elementari
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\(y = x\), dipendenza lineare (o proporzionale)
+
+\item {} 
+\sphinxAtStartPar
+\(y = x^2\), dipendenza quadratica
+
+\item {} 
+\sphinxAtStartPar
+\(y = \frac{1}{x}\), dipendenza inversamente proporzionale
+
+\item {} 
+\sphinxAtStartPar
+… \(y = a^x\), \(y = \log_a x\) …
+
+\end{itemize}
+
+
+
+\sphinxAtStartPar
+e delle equazioni ricavabili da queste con una trasformazione \sphinxstyleemphasis{affine} di incognite, nella forma \(u = a_u (x-b_x)\), \(v = a_v (y-b_y)\), corrispondenti a traslazioni del grafico e scalatura nelle direzioni dei due assi.
+
+
+\section{Problemi con due o più incognite \sphinxhyphen{} sistemi di equazioni e disequazioni}
+\label{\detokenize{ch/algebra/real-algebra:problemi-con-due-o-piu-incognite-sistemi-di-equazioni-e-disequazioni}}
 \sphinxAtStartPar
 Un sistema di equazioni è un insieme di equazioni da risolvere simultaneamente. I sistemi di equazioni (e di disequazioni) consentono di introdurre l”{\hyperref[\detokenize{ch/algebra/real-n-algebra:math-hs-algebra-real-n}]{\sphinxcrossref{\DUrole{std,std-ref}{algebra su \(\mathbb{R}^n\)}}}}, descritta nel capitolo successivo.
 
@@ -9149,13 +9309,13 @@ RL: ottimizzazione/controllo
 \begin{sphinxtheindex}
 \let\bigletter\sphinxstyleindexlettergroup
 \bigletter{example\sphinxhyphen{}0}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}0}\sphinxstyleindexextra{ch/algebra/linear\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/linear-algebra:\detokenize{example-0}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}0}\sphinxstyleindexextra{ch/algebra/real\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/real-algebra:\detokenize{example-0}}
 \indexspace
 \bigletter{example\sphinxhyphen{}1}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}1}\sphinxstyleindexextra{ch/algebra/linear\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/linear-algebra:\detokenize{example-1}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}1}\sphinxstyleindexextra{ch/algebra/real\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/real-algebra:\detokenize{example-1}}
 \indexspace
 \bigletter{example\sphinxhyphen{}2}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}2}\sphinxstyleindexextra{ch/algebra/linear\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/linear-algebra:\detokenize{example-2}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}2}\sphinxstyleindexextra{ch/algebra/real\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/real-algebra:\detokenize{example-2}}
 \indexspace
 \bigletter{example\sphinxhyphen{}3}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}3}\sphinxstyleindexextra{ch/algebra/linear\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/linear-algebra:\detokenize{example-3}}

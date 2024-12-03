@@ -495,17 +495,18 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#frazioni-algebriche">4.2.1. Frazioni algebriche</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi">4.3. Problemi</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-con-un-incognita">4.3. Problemi con un’incognita</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni">4.3.1. Equazioni</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-lineari">4.3.1.1. Equazioni lineari</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-quadratiche">4.3.1.2. Equazioni quadratiche</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-di-primo-grado">4.3.1.1. Equazioni di primo grado</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-di-secondo-grado">4.3.1.2. Equazioni di secondo grado</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-non-lineari-generali">4.3.1.3. Equazioni non lineari generali</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disequazioni">4.3.2. Disequazioni</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-di-equazioni">4.4. Sistemi di equazioni</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rappresentazione-grafica-di-un-equazione-con-due-incognite">4.4. Rappresentazione grafica di un’equazione con due incognite</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-con-due-o-piu-incognite-sistemi-di-equazioni-e-disequazioni">4.5. Problemi con due o più incognite - sistemi di equazioni e disequazioni</a></li>
 </ul>
             </nav>
         </div>
@@ -574,31 +575,115 @@ document.write(`
 <p><strong>todo</strong> <em>altre regole? Ruffini?…</em></p>
 <div class="section" id="frazioni-algebriche">
 <h3><span class="section-number">4.2.1. </span>Frazioni algebriche<a class="headerlink" href="#frazioni-algebriche" title="Permalink to this heading">#</a></h3>
-<p>Una frazione algebrica è il quoziente di due polinomi.</p>
-<p><strong>todo</strong> <em>forma elementare</em></p>
+<p>Una frazione algebrica è il quoziente di due polinomi,</p>
+<div class="math notranslate nohighlight">
+\[\frac{a_n x^n + a_{n-1} x^{n-1} + \dots a_0}{b_m x^m + b_{m-1} x^{m-1} + \dots b_0} \ .\]</div>
+<p>Per il <a class="reference internal" href="../precalculus/polynomials.html#math-hs-precalculus-polynomials-alg-fund-thm"><span class="std std-ref">teorema fondamentale dell’algebra</span></a>, ogni polinomio può essere scritto come prodotto di polinomi di primo o secondo ordine. Se i polinomi al numeratore e al denominatore della frazione algebrica non hanno fattori in comune, la frazione algebrica viene definita <strong>in forma semplice</strong>.</p>
+<div class="proof example dropdown admonition" id="example-0">
+<p class="admonition-title"><span class="caption-number">Example 4.1 </span> (Frazioni algebriche semplici e non semplici)</p>
+<div class="example-content section" id="proof-content">
+<p>La frazione <span class="math notranslate nohighlight">\(\frac{x^2-3x+2}{x^2+1} = \frac{(x-2)(x-1)}{x^2+1}\)</span> è in forma ridotta, mentre la frazione <span class="math notranslate nohighlight">\(\frac{x^2-3x+2}{x^2-1} = \frac{(x-2)(x-1)}{(x+1)(x-1)}\)</span> non è in forma ridotta e, <strong>per</strong> <span class="math notranslate nohighlight">\(x \ne 1\)</span> <strong>(!)</strong>, è uguale a <span class="math notranslate nohighlight">\(\frac{x-2}{x+1}\)</span>.</p>
 </div>
+</div><p>Una <strong>frazione propria</strong> ha il grado <span class="math notranslate nohighlight">\(n\)</span> del numeratore inferiore al grado <span class="math notranslate nohighlight">\(m\)</span> del denominatore. Una frazione non propria può essere scritta come un polinomio di grado <span class="math notranslate nohighlight">\(n-m\)</span> e una frazione propria</p>
+<div class="proof example dropdown admonition" id="example-1">
+<p class="admonition-title"><span class="caption-number">Example 4.2 </span> (Frazioni non proprie)</p>
+<div class="example-content section" id="proof-content">
+<p>La frazione <span class="math notranslate nohighlight">\(\frac{x^2 + 2x + 1}{x - 2}\)</span> può essere scritta «completando il quadrato» come</p>
+<div class="math notranslate nohighlight">
+\[\frac{x^2+2x+1}{x-2} = \frac{x^2-4x+4+4x-4+2x+1}{x-2} = \frac{(x-2)^2+6x-3}{x-2} = x-2 + 3\frac{2x-1}{x-2} \ ,\]</div>
+<p>con la semplificazione possibile per <span class="math notranslate nohighlight">\(x \ne 2\)</span>.</p>
 </div>
-<div class="section" id="problemi">
-<h2><span class="section-number">4.3. </span>Problemi<a class="headerlink" href="#problemi" title="Permalink to this heading">#</a></h2>
+</div><p>Se il denominatore è scomponibile come prodotto di polinomi, allora la frazione algebrica può essere scritta come <strong>somma di frazioni parziali</strong>. In alcune applicazioni, come il calcolo degli integrali, può essere conveniente scrivere una frazione come somma di frazioni parziali, poiché risulta più semplice trattare somme di frazioni con numeratore di grado 1 o 2, di frazioni con numeratore di grado qualsiasi.</p>
+<div class="proof example dropdown admonition" id="example-2">
+<p class="admonition-title"><span class="caption-number">Example 4.3 </span> (Somma di frazioni parziali)</p>
+<div class="example-content section" id="proof-content">
+<p>La frazione <span class="math notranslate nohighlight">\(\frac{3x}{x^2-1}\)</span> può essere scritta come somma di frazioni parziali <span class="math notranslate nohighlight">\(\frac{3 x}{x^2-1} = \frac{3}{2} \frac{1}{x-1} + \frac{3}{2}\frac{1}{x+1}\)</span>, poiché</p>
+<div class="math notranslate nohighlight">
+\[\frac{3x}{x^2-1} = \frac{a}{x+1} + \frac{b}{x-1} = \frac{a(x-1) + b(x+1)}{x^2-1} = \frac{x(a+b)+b-a}{x^2-1}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases} a + b = 3 \\ b - a = 0 \end{cases} \qquad \rightarrow \qquad a = b = \frac{3}{2} \ .\end{split}\]</div>
+</div>
+</div></div>
+</div>
+<div class="section" id="problemi-con-un-incognita">
+<h2><span class="section-number">4.3. </span>Problemi con un’incognita<a class="headerlink" href="#problemi-con-un-incognita" title="Permalink to this heading">#</a></h2>
 <div class="section" id="equazioni">
-<h3><span class="section-number">4.3.1. </span>Equazioni<a class="headerlink" href="#equazioni" title="Permalink to this heading">#</a></h3>
-<p>Un’equazione è un’uguaglianza che contiene una o più incognite. L’obiettivo è trovare i valori delle incognite che rendono vera l’uguaglianza.</p>
-<div class="section" id="equazioni-lineari">
-<h4><span class="section-number">4.3.1.1. </span>Equazioni lineari<a class="headerlink" href="#equazioni-lineari" title="Permalink to this heading">#</a></h4>
+<span id="math-hs-algebra-real-eq"></span><h3><span class="section-number">4.3.1. </span>Equazioni<a class="headerlink" href="#equazioni" title="Permalink to this heading">#</a></h3>
+<p>Un’equazione è una relazione di uguaglianza che contiene una o più incognite. L’obiettivo è trovare i valori delle incognite che rendono vera l’uguaglianza.</p>
+<div class="section" id="equazioni-di-primo-grado">
+<span id="math-hs-algebra-real-eq-first"></span><h4><span class="section-number">4.3.1.1. </span>Equazioni di primo grado<a class="headerlink" href="#equazioni-di-primo-grado" title="Permalink to this heading">#</a></h4>
+<p>La forma generale di un’equazione di primo grado in un’incognita reale <span class="math notranslate nohighlight">\(x \in \mathbb{R}\)</span> è</p>
+<div class="math notranslate nohighlight">
+\[a x + b = 0 \qquad a \ne 0 \]</div>
+<p>dove la condizione sul coefficiente <span class="math notranslate nohighlight">\(a \ne 0\)</span> esclude i casi in cui l’equazione degenera a un’uguaglianza tra parametri.
+Dopo aver escluso i casi in cui l’equazione degenera in un’uguaglianza tra paramteri, con la condizione <span class="math notranslate nohighlight">\(a \ne 0\)</span>, la soluzione generale dell’equazione lineare esiste, è <strong>unica</strong> ed è</p>
+<div class="math notranslate nohighlight">
+\[x = - \frac{b}{a} \ .\]</div>
+<p>Nel caso degenere in cui <span class="math notranslate nohighlight">\(a = 0\)</span>, si possono distinguere due casi:</p>
+<ul class="simple">
+<li><p>se <span class="math notranslate nohighlight">\(b \ne 0\)</span> <strong>non esiste</strong> nessuna soluzione, poiché l’equazione si riduce alla <a class="reference internal" href="../logics.html#logics-identity"><span class="std std-ref">contraddizione</span></a> <span class="math notranslate nohighlight">\(0 = b \ne 0\)</span> per <span class="math notranslate nohighlight">\(\forall x \in \mathbb{R}\)</span></p></li>
+<li><p>se <span class="math notranslate nohighlight">\(b = 0\)</span> <strong>esistono infinite</strong> soluzioni, poiché l’equazione si riduce all”<a class="reference internal" href="../logics.html#logics-contradiction"><span class="std std-ref">identità</span></a> <span class="math notranslate nohighlight">\(0 = b \ne 0\)</span> per <span class="math notranslate nohighlight">\(\forall x \in \mathbb{R}\)</span></p></li>
+</ul>
+<!--
+Si possono distinguere i casi:
+- per $a \ne 0$, esiste un'**unica** soluzione $x = -\frac{b}{a}$
+- per $a = 0$:
+  - per $b \ne 0$ **non esiste** soluzione, poiché si ottiene la contraddizione $0 = b \ne 0$, per $\forall x \in \mathbb{R}$
+  - per $b = 0$ esistono **infinite** soluzioni, poiché si ottiene l'identità $0 = 0$ per $\forall x \in \mathbb{R}$
+-->
 </div>
-<div class="section" id="equazioni-quadratiche">
-<h4><span class="section-number">4.3.1.2. </span>Equazioni quadratiche<a class="headerlink" href="#equazioni-quadratiche" title="Permalink to this heading">#</a></h4>
+<div class="section" id="equazioni-di-secondo-grado">
+<span id="math-hs-algebra-real-eq-second"></span><h4><span class="section-number">4.3.1.2. </span>Equazioni di secondo grado<a class="headerlink" href="#equazioni-di-secondo-grado" title="Permalink to this heading">#</a></h4>
+<p>La forma generale di un’equazione di secondo grado in un’incognita reale <span class="math notranslate nohighlight">\(x \in \mathbb{R}\)</span> è</p>
+<div class="math notranslate nohighlight">
+\[a x^2 + b x + c = 0 \qquad a \ne 0 \ ,\]</div>
+<p>dove la condizione sul coefficiente <span class="math notranslate nohighlight">\(a \ne 0\)</span> esclude i casi in cui l’equazione degenera a un’equazione di <a class="reference internal" href="#math-hs-algebra-real-eq-first"><span class="std std-ref">primo grado</span></a>.
+Le soluzioni dell’equazione vengono cercate completando il quadrato,</p>
+<div class="math notranslate nohighlight">
+\[0 = x^2 + \frac{b}{a} x + \frac{b^2}{4 a^2} - \frac{b^2}{4 a^2} + \frac{c}{a} = \left( x + \frac{b}{2a} \right)^2 - \left( \frac{b^2}{4 a^2} - \frac{c}{a} \right) . \]</div>
+<p>L’equazione viene riscritta come</p>
+<div class="math notranslate nohighlight">
+\[\left( x + \frac{b}{2a} \right)^2 = \frac{b^2}{4 a^2} - \frac{c}{a} \ ,\]</div>
+<p>per mettere in evidenza che l’esistenza delle soluzioni dipende dal valore del <strong>discriminante</strong>, <span class="math notranslate nohighlight">\(\frac{\Delta}{(2a)^2} := \frac{b^2 - 4 a c}{(2a)^2}\)</span>:</p>
+<ul class="simple">
+<li><p>se <span class="math notranslate nohighlight">\(\Delta &gt; 0\)</span> esistono <strong>due soluzioni reali distinte</strong>, <span class="math notranslate nohighlight">\(x_{1,2} = - \frac{b}{2a} \mp \frac{\sqrt{\Delta}}{2a} \in \mathbb{R}\)</span></p></li>
+<li><p>se <span class="math notranslate nohighlight">\(\Delta = 0\)</span> esistono <strong>due soluzioni reali coincidenti</strong>, <span class="math notranslate nohighlight">\(x_1 = x_2 = - \frac{b}{2a} \in \mathbb{R}\)</span></p></li>
+<li><p>se <span class="math notranslate nohighlight">\(\Delta &lt; 0\)</span> <strong>non esistono soluzioni reali</strong>, poiché la radice quadra di un numero negativo non è definita nel campo dei numeri reali, <span class="math notranslate nohighlight">\(\nexists x \in \mathbb{R}\)</span></p></li>
+</ul>
 </div>
 <div class="section" id="equazioni-non-lineari-generali">
-<h4><span class="section-number">4.3.1.3. </span>Equazioni non lineari generali<a class="headerlink" href="#equazioni-non-lineari-generali" title="Permalink to this heading">#</a></h4>
+<span id="id1"></span><h4><span class="section-number">4.3.1.3. </span>Equazioni non lineari generali<a class="headerlink" href="#equazioni-non-lineari-generali" title="Permalink to this heading">#</a></h4>
+<p>Mentre esiste una formula generale per le equazioni di terzo grado e di quarto grado, queste risultano spesso di scarsa e scarsissima (nulla?) utilità. Per le equazioni polinomiali, a volte è possibile utilizzare i risultati del <a class="reference internal" href="../precalculus/polynomials.html#math-hs-precalculus-polynomials-alg-fund-thm"><span class="std std-ref">teorema fondamentale dell’algebra</span></a> per scrivere il polinomio come prodotto di polinomi di primo e secondo ordine, per i quali è possibile calcolare gli zeri con le formule mostrate nelle sezioni sulle equazioni di primo e secondo grado.</p>
+<p>Per equazioni algebriche non lineari che coinvolgono potenze, logaritmi, esponenziali, a parte alcuni casi particolari risolvibili in forma chiusa utilizzando le proprietà di queste operazioni e le soluzioni delle equazioni polinomiali, è necessario affidarsi a metodi di soluzione grafici e/o numerici: <strong>todo</strong></p>
+<ul class="simple">
+<li><p>m.grafici: soluzione a mano, per guess iniziale di m.numerici</p></li>
+<li><p>m.numerici: …</p></li>
+</ul>
 </div>
 </div>
 <div class="section" id="disequazioni">
 <h3><span class="section-number">4.3.2. </span>Disequazioni<a class="headerlink" href="#disequazioni" title="Permalink to this heading">#</a></h3>
+<p>Un’equazione è una relazione di disuguaglianza che contiene una o più incognite. L’obiettivo è trovare i valori delle incognite che rendono vera la disuguaglianza.</p>
 </div>
 </div>
-<div class="section" id="sistemi-di-equazioni">
-<h2><span class="section-number">4.4. </span>Sistemi di equazioni<a class="headerlink" href="#sistemi-di-equazioni" title="Permalink to this heading">#</a></h2>
+<div class="section" id="rappresentazione-grafica-di-un-equazione-con-due-incognite">
+<h2><span class="section-number">4.4. </span>Rappresentazione grafica di un’equazione con due incognite<a class="headerlink" href="#rappresentazione-grafica-di-un-equazione-con-due-incognite" title="Permalink to this heading">#</a></h2>
+<p>Un’equazione con due incognite <span class="math notranslate nohighlight">\(x,y\)</span> è una relazione di uguaglianza che può essere scritta nella forma generale <span class="math notranslate nohighlight">\(f(x,y) = 0\)</span>. In generale, a ogni equazione di questa forma può essere associata una curva nel piano, qui descritto dalle coordinate cartesiane <span class="math notranslate nohighlight">\(x,y\)</span>. Senza nessuna pretesa di completezza - rimandando per quella alla sezione sulla <a class="reference internal" href="../analytic_geometry.html#geometry-analytic"><span class="std std-ref">geometria analitica</span></a> - qui ci si limita a discutere la rappresentazione grafica nel piano di alcune equazioni elementari</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(y = x\)</span>, dipendenza lineare (o proporzionale)</p></li>
+<li><p><span class="math notranslate nohighlight">\(y = x^2\)</span>, dipendenza quadratica</p></li>
+<li><p><span class="math notranslate nohighlight">\(y = \frac{1}{x}\)</span>, dipendenza inversamente proporzionale</p></li>
+<li><p>… <span class="math notranslate nohighlight">\(y = a^x\)</span>, <span class="math notranslate nohighlight">\(y = \log_a x\)</span> …</p></li>
+</ul>
+<!--
+- $y = a^x$
+- $y = \log_a x$
+- ...
+-->
+<p>e delle equazioni ricavabili da queste con una trasformazione <em>affine</em> di incognite, nella forma <span class="math notranslate nohighlight">\(u = a_u (x-b_x)\)</span>, <span class="math notranslate nohighlight">\(v = a_v (y-b_y)\)</span>, corrispondenti a traslazioni del grafico e scalatura nelle direzioni dei due assi.</p>
+</div>
+<div class="section" id="problemi-con-due-o-piu-incognite-sistemi-di-equazioni-e-disequazioni">
+<h2><span class="section-number">4.5. </span>Problemi con due o più incognite - sistemi di equazioni e disequazioni<a class="headerlink" href="#problemi-con-due-o-piu-incognite-sistemi-di-equazioni-e-disequazioni" title="Permalink to this heading">#</a></h2>
 <p>Un sistema di equazioni è un insieme di equazioni da risolvere simultaneamente. I sistemi di equazioni (e di disequazioni) consentono di introdurre l”<a class="reference internal" href="real-n-algebra.html#math-hs-algebra-real-n"><span class="std std-ref">algebra su <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span></span></a>, descritta nel capitolo successivo.</p>
 <hr class="docutils" />
 <!--
@@ -701,17 +786,18 @@ $$
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#frazioni-algebriche">4.2.1. Frazioni algebriche</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi">4.3. Problemi</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-con-un-incognita">4.3. Problemi con un’incognita</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni">4.3.1. Equazioni</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-lineari">4.3.1.1. Equazioni lineari</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-quadratiche">4.3.1.2. Equazioni quadratiche</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-di-primo-grado">4.3.1.1. Equazioni di primo grado</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-di-secondo-grado">4.3.1.2. Equazioni di secondo grado</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-non-lineari-generali">4.3.1.3. Equazioni non lineari generali</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disequazioni">4.3.2. Disequazioni</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-di-equazioni">4.4. Sistemi di equazioni</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rappresentazione-grafica-di-un-equazione-con-due-incognite">4.4. Rappresentazione grafica di un’equazione con due incognite</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-con-due-o-piu-incognite-sistemi-di-equazioni-e-disequazioni">4.5. Problemi con due o più incognite - sistemi di equazioni e disequazioni</a></li>
 </ul>
   </nav></div>
 

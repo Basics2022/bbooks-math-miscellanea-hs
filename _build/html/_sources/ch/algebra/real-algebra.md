@@ -62,25 +62,127 @@ $$\begin{aligned}
 **todo** *altre regole? Ruffini?...*
 
 ### Frazioni algebriche
-Una frazione algebrica è il quoziente di due polinomi.
+Una frazione algebrica è il quoziente di due polinomi,
 
-**todo** *forma elementare*
+$$\frac{a_n x^n + a_{n-1} x^{n-1} + \dots a_0}{b_m x^m + b_{m-1} x^{m-1} + \dots b_0} \ .$$
 
-## Problemi
+Per il [teorema fondamentale dell'algebra](math-hs:precalculus:polynomials:alg-fund-thm), ogni polinomio può essere scritto come prodotto di polinomi di primo o secondo ordine. Se i polinomi al numeratore e al denominatore della frazione algebrica non hanno fattori in comune, la frazione algebrica viene definita **in forma semplice**.
 
+```{prf:example} Frazioni algebriche semplici e non semplici
+:class: dropdown
 
+La frazione $\frac{x^2-3x+2}{x^2+1} = \frac{(x-2)(x-1)}{x^2+1}$ è in forma ridotta, mentre la frazione $\frac{x^2-3x+2}{x^2-1} = \frac{(x-2)(x-1)}{(x+1)(x-1)}$ non è in forma ridotta e, **per** $x \ne 1$ **(!)**, è uguale a $\frac{x-2}{x+1}$.
+
+```
+
+Una **frazione propria** ha il grado $n$ del numeratore inferiore al grado $m$ del denominatore. Una frazione non propria può essere scritta come un polinomio di grado $n-m$ e una frazione propria
+
+```{prf:example} Frazioni non proprie
+:class: dropdown
+
+La frazione $\frac{x^2 + 2x + 1}{x - 2}$ può essere scritta "completando il quadrato" come
+
+$$\frac{x^2+2x+1}{x-2} = \frac{x^2-4x+4+4x-4+2x+1}{x-2} = \frac{(x-2)^2+6x-3}{x-2} = x-2 + 3\frac{2x-1}{x-2} \ ,$$
+
+con la semplificazione possibile per $x \ne 2$.
+
+```
+
+Se il denominatore è scomponibile come prodotto di polinomi, allora la frazione algebrica può essere scritta come **somma di frazioni parziali**. In alcune applicazioni, come il calcolo degli integrali, può essere conveniente scrivere una frazione come somma di frazioni parziali, poiché risulta più semplice trattare somme di frazioni con numeratore di grado 1 o 2, di frazioni con numeratore di grado qualsiasi.
+
+```{prf:example} Somma di frazioni parziali
+:class: dropdown
+
+La frazione $\frac{3x}{x^2-1}$ può essere scritta come somma di frazioni parziali $\frac{3 x}{x^2-1} = \frac{3}{2} \frac{1}{x-1} + \frac{3}{2}\frac{1}{x+1}$, poiché
+
+$$\frac{3x}{x^2-1} = \frac{a}{x+1} + \frac{b}{x-1} = \frac{a(x-1) + b(x+1)}{x^2-1} = \frac{x(a+b)+b-a}{x^2-1}$$
+
+$$\begin{cases} a + b = 3 \\ b - a = 0 \end{cases} \qquad \rightarrow \qquad a = b = \frac{3}{2} \ .$$
+
+```
+
+## Problemi con un'incognita
+
+(math-hs:algebra:real:eq)=
 ### Equazioni
+Un'equazione è una relazione di uguaglianza che contiene una o più incognite. L'obiettivo è trovare i valori delle incognite che rendono vera l'uguaglianza.
 
-Un'equazione è un'uguaglianza che contiene una o più incognite. L'obiettivo è trovare i valori delle incognite che rendono vera l'uguaglianza.
+(math-hs:algebra:real:eq:first)=
+#### Equazioni di primo grado
+La forma generale di un'equazione di primo grado in un'incognita reale $x \in \mathbb{R}$ è
 
-#### Equazioni lineari
-#### Equazioni quadratiche
+$$a x + b = 0 \qquad a \ne 0 $$
+
+dove la condizione sul coefficiente $a \ne 0$ esclude i casi in cui l'equazione degenera a un'uguaglianza tra parametri.
+Dopo aver escluso i casi in cui l'equazione degenera in un'uguaglianza tra paramteri, con la condizione $a \ne 0$, la soluzione generale dell'equazione lineare esiste, è **unica** ed è
+
+$$x = - \frac{b}{a} \ .$$
+
+Nel caso degenere in cui $a = 0$, si possono distinguere due casi:
+- se $b \ne 0$ **non esiste** nessuna soluzione, poiché l'equazione si riduce alla [contraddizione](logics:identity) $0 = b \ne 0$ per $\forall x \in \mathbb{R}$
+- se $b = 0$ **esistono infinite** soluzioni, poiché l'equazione si riduce all'[identità](logics:contradiction) $0 = b \ne 0$ per $\forall x \in \mathbb{R}$
+
+<!--
+Si possono distinguere i casi:
+- per $a \ne 0$, esiste un'**unica** soluzione $x = -\frac{b}{a}$
+- per $a = 0$:
+  - per $b \ne 0$ **non esiste** soluzione, poiché si ottiene la contraddizione $0 = b \ne 0$, per $\forall x \in \mathbb{R}$
+  - per $b = 0$ esistono **infinite** soluzioni, poiché si ottiene l'identità $0 = 0$ per $\forall x \in \mathbb{R}$
+-->
+
+(math-hs:algebra:real:eq:second)=
+#### Equazioni di secondo grado
+La forma generale di un'equazione di secondo grado in un'incognita reale $x \in \mathbb{R}$ è
+
+$$a x^2 + b x + c = 0 \qquad a \ne 0 \ ,$$
+
+dove la condizione sul coefficiente $a \ne 0$ esclude i casi in cui l'equazione degenera a un'equazione di [primo grado](math-hs:algebra:real:eq:first).
+Le soluzioni dell'equazione vengono cercate completando il quadrato,
+
+$$0 = x^2 + \frac{b}{a} x + \frac{b^2}{4 a^2} - \frac{b^2}{4 a^2} + \frac{c}{a} = \left( x + \frac{b}{2a} \right)^2 - \left( \frac{b^2}{4 a^2} - \frac{c}{a} \right) . $$
+
+L'equazione viene riscritta come
+
+$$\left( x + \frac{b}{2a} \right)^2 = \frac{b^2}{4 a^2} - \frac{c}{a} \ ,$$
+
+per mettere in evidenza che l'esistenza delle soluzioni dipende dal valore del **discriminante**, $\frac{\Delta}{(2a)^2} := \frac{b^2 - 4 a c}{(2a)^2}$:
+- se $\Delta > 0$ esistono **due soluzioni reali distinte**, $x_{1,2} = - \frac{b}{2a} \mp \frac{\sqrt{\Delta}}{2a} \in \mathbb{R}$
+- se $\Delta = 0$ esistono **due soluzioni reali coincidenti**, $x_1 = x_2 = - \frac{b}{2a} \in \mathbb{R}$
+- se $\Delta < 0$ **non esistono soluzioni reali**, poiché la radice quadra di un numero negativo non è definita nel campo dei numeri reali, $\nexists x \in \mathbb{R}$
+
+(math-hs:algebra:real:eq:second)=
 #### Equazioni non lineari generali
+Mentre esiste una formula generale per le equazioni di terzo grado e di quarto grado, queste risultano spesso di scarsa e scarsissima (nulla?) utilità. Per le equazioni polinomiali, a volte è possibile utilizzare i risultati del [teorema fondamentale dell'algebra](math-hs:precalculus:polynomials:alg-fund-thm) per scrivere il polinomio come prodotto di polinomi di primo e secondo ordine, per i quali è possibile calcolare gli zeri con le formule mostrate nelle sezioni sulle equazioni di primo e secondo grado.
+
+Per equazioni algebriche non lineari che coinvolgono potenze, logaritmi, esponenziali, a parte alcuni casi particolari risolvibili in forma chiusa utilizzando le proprietà di queste operazioni e le soluzioni delle equazioni polinomiali, è necessario affidarsi a metodi di soluzione grafici e/o numerici: **todo**
+- m.grafici: soluzione a mano, per guess iniziale di m.numerici
+- m.numerici: ...
+
 
 ### Disequazioni
+Un'equazione è una relazione di disuguaglianza che contiene una o più incognite. L'obiettivo è trovare i valori delle incognite che rendono vera la disuguaglianza.
 
-## Sistemi di equazioni
+## Rappresentazione grafica di un'equazione con due incognite
+Un'equazione con due incognite $x,y$ è una relazione di uguaglianza che può essere scritta nella forma generale $f(x,y) = 0$. In generale, a ogni equazione di questa forma può essere associata una curva nel piano, qui descritto dalle coordinate cartesiane $x,y$. Senza nessuna pretesa di completezza - rimandando per quella alla sezione sulla [geometria analitica](geometry:analytic) - qui ci si limita a discutere la rappresentazione grafica nel piano di alcune equazioni elementari
+
+- $y = x$, dipendenza lineare (o proporzionale)
+- $y = x^2$, dipendenza quadratica
+- $y = \frac{1}{x}$, dipendenza inversamente proporzionale
+- ... $y = a^x$, $y = \log_a x$ ...
+<!--
+- $y = a^x$
+- $y = \log_a x$
+- ...
+-->
+
+e delle equazioni ricavabili da queste con una trasformazione *affine* di incognite, nella forma $u = a_u (x-b_x)$, $v = a_v (y-b_y)$, corrispondenti a traslazioni del grafico e scalatura nelle direzioni dei due assi.
+
+
+## Problemi con due o più incognite - sistemi di equazioni e disequazioni
 Un sistema di equazioni è un insieme di equazioni da risolvere simultaneamente. I sistemi di equazioni (e di disequazioni) consentono di introdurre l'[algebra su $\mathbb{R}^n$](math-hs:algebra:real-n), descritta nel capitolo successivo. 
+
+
+
 
 
 ---
