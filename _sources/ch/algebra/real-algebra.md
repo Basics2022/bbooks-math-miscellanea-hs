@@ -150,7 +150,14 @@ per mettere in evidenza che l'esistenza delle soluzioni dipende dal valore del *
 - se $\Delta = 0$ esistono **due soluzioni reali coincidenti**, $x_1 = x_2 = - \frac{b}{2a} \in \mathbb{R}$
 - se $\Delta < 0$ **non esistono soluzioni reali**, poiché la radice quadra di un numero negativo non è definita nel campo dei numeri reali, $\nexists x \in \mathbb{R}$
 
+(math-hs:algebra:real:eq:second)=
 #### Equazioni non lineari generali
+Mentre esiste una formula generale per le equazioni di terzo grado e di quarto grado, queste risultano spesso di scarsa e scarsissima (nulla?) utilità. Per le equazioni polinomiali, a volte è possibile utilizzare i risultati del [teorema fondamentale dell'algebra](math-hs:precalculus:polynomials:alg-fund-thm) per scrivere il polinomio come prodotto di polinomi di primo e secondo ordine, per i quali è possibile calcolare gli zeri con le formule mostrate nelle sezioni sulle equazioni di primo e secondo grado.
+
+Per equazioni algebriche non lineari che coinvolgono potenze, logaritmi, esponenziali, a parte alcuni casi particolari risolvibili in forma chiusa utilizzando le proprietà di queste operazioni e le soluzioni delle equazioni polinomiali, è necessario affidarsi a metodi di soluzione grafici e/o numerici: **todo**
+- m.grafici: soluzione a mano, per guess iniziale di m.numerici
+- m.numerici: ...
+
 
 ### Disequazioni
 Un'equazione è una relazione di disuguaglianza che contiene una o più incognite. L'obiettivo è trovare i valori delle incognite che rendono vera la disuguaglianza.
