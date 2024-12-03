@@ -137,6 +137,9 @@ La forma generale di un'equazione di secondo grado in un'incognita reale $x \in 
 $$a x^2 + b x + c = 0 \qquad a \ne 0 \ ,$$
 
 dove la condizione sul coefficiente $a \ne 0$ esclude i casi in cui l'equazione degenera a un'equazione di [primo grado](math-hs:algebra:real:eq:first).
+Le soluzioni dell'equazione vengono cercate completando il quadrato,
+
+$$0 = x^2 + \frac{b}{a} x + \frac{b^2}{4 a^2} - \frac{b^2}{4 a^2} + c = \left( x + \frac{b}{2a} \right) - \left( \frac{b^2}{4 a^2} - c \right) $$
 
 #### Equazioni non lineari generali
 
