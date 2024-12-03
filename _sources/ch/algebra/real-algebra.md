@@ -119,7 +119,7 @@ Un'equazione con due incognite $x,y$ è una relazione di uguaglianza che può es
 - $y = x$, dipendenza lineare (o proporzionale)
 - $y = x^2$, dipendenza quadratica
 - $y = \frac{1}{x}$, dipendenza inversamente proporzionale
-- ...$y = a^x$, $y = \log_a x$...
+- ... $y = a^x$, $y = \log_a x$ ...
 <!--
 - $y = a^x$
 - $y = \log_a x$
