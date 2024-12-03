@@ -551,5 +551,4 @@ Le $n$-uple che soddisfano simultaneamente le $m$ condizioni sono le soluzioni d
     \end{cases}
     $$
 
----
 

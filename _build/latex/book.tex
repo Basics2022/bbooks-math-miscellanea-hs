@@ -87,7 +87,7 @@
         
 
 \title{Matematica per le scuole superiori}
-\date{02 dic 2024}
+\date{03 dic 2024}
 \release{}
 \author{basics}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -1424,10 +1424,6 @@ Risolvi il sistema:
 \end{equation*}
 \end{enumerate}
 
-
-\bigskip\hrule\bigskip
-
-
 \sphinxstepscope
 
 
@@ -1443,99 +1439,505 @@ In questa sezione vengono presentati gli argomenti dell’algebra lineare che ri
 L’algebra lineare è fondamentale per studiare matrici, sistemi lineari e trasformazioni geometriche. Questo capitolo esplora le matrici, i determinanti e la risoluzione dei sistemi.
 
 
-\bigskip\hrule\bigskip
-
+\section{Sistemi lineari e formalismo matriciale}
+\label{\detokenize{ch/algebra/linear-algebra:sistemi-lineari-e-formalismo-matriciale}}
+\sphinxAtStartPar
+Un sistema di \(m\) equazioni lineari in \(n\) incognite \(\{ x_1 \}\),
+\begin{equation*}
+\begin{split}\begin{cases}
+ a_{11} x_1 + a_{12} x_2 + \dots + a_{1n} x_n & = b_1 \\
+ \dots \\
+ a_{m1} x_1 + a_{m2} x_2 + \dots + a_{mn} x_n & = b_m \\
+\end{cases}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+può essere riscritto usando il formalismo matriciale come
+\begin{equation*}
+\begin{split}
+\begin{bmatrix} a_{11} & a_{12} & \dots & a_{1n} \\ \dots & \dots & \dots & \dots \\ a_{m1} & a_{m2} & \dots & a_{mn} \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ \dots \\ x_n \end{bmatrix} = \begin{bmatrix} b_1 \\ \dots \\ b_m \end{bmatrix}
+\qquad , \qquad
+\mathbf{A} \mathbf{x} = \mathbf{b} \ ,
+\end{split}
+\end{equation*}
+\sphinxAtStartPar
+avendo raccolto i coefficienti \(a_{ij}\) nella matrice \(\mathbf{A} \in \mathbb{R}^{m,n}\), una tabela di \(m\) righe e \(n\) colonne, le incognite \(x_j\) nella \(n\)\sphinxhyphen{}upla \(\mathbf{x} \in \mathbb{R}^n\) e i coefficienti \(b_i\) nella \(m\)\sphinxhyphen{}upla \(\mathbf{b} \in \mathbb{R}^m\), organizzate in un \sphinxstyleemphasis{vettore colonna}. Il prodotto matrice\sphinxhyphen{}vettore colonna \(\mathbf{A} \mathbf{x}\) rimane definito dall’equivalenza delle diverse espressioni dello stesso sistema lineare.
 
 
 \section{Matrici}
 \label{\detokenize{ch/algebra/linear-algebra:matrici}}
 \sphinxAtStartPar
-Una matrice è una tabella rettangolare di numeri:
+\sphinxstylestrong{Definizione.} Una matrice \(\mathbf{A} \in \mathbb{R}^{m,n}\) è una tabella 2\sphinxhyphen{}dimensionale di numeri reali con \(m\) righe e \(n\) colonne,
 \begin{equation*}
 \begin{split}
-A = \begin{bmatrix}
-a_{11} & a_{12} \\
-a_{21} & a_{22}
+\mathbf{A} =
+\begin{bmatrix}
+a_{11} & a_{12} & \dots & a_{1n} \\
+\dots  & \dots  & \dots & \dots  \\
+a_{m1} & a_{m2} & \dots & a_{mn}
 \end{bmatrix}
 \end{split}
 \end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{Interpretazione del contenuto della matrice.} Una matrice \(\mathbf{A} \in \mathbb{R}^{m,n}\) può essere interpretata come \(n\) \(m\)\sphinxhyphen{}uple \(\mathbf{a}_i\)
+
 
 \subsection{Operazioni}
 \label{\detokenize{ch/algebra/linear-algebra:operazioni}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
-\sphinxstylestrong{Addizione}:
-\( A + B = \begin{bmatrix}
- a_{11} + b_{11} & a_{12} + b_{12} \\
- a_{21} + b_{21} & a_{22} + b_{22}
- \end{bmatrix} \)
-
-\item {} 
-\sphinxAtStartPar
-\sphinxstylestrong{Moltiplicazione per uno scalare}:
-\( c \cdot A = \begin{bmatrix}
- c \cdot a_{11} & c \cdot a_{12} \\
- c \cdot a_{21} & c \cdot a_{22}
- \end{bmatrix} \)
-
-\end{itemize}
-
-
-\bigskip\hrule\bigskip
-
-
-
-\section{Determinanti}
-\label{\detokenize{ch/algebra/linear-algebra:determinanti}}
-\sphinxAtStartPar
-Il determinante di una matrice quadrata è dato da:
+\sphinxstylestrong{Somma.} La somma è possibile tra due matrici con le stesse dimensioni \(\mathbf{A},\, \mathbf{B} \in \mathbb{R}^{m,n}\). La somma di due matrici \(\mathbf{A}\), \(\mathbf{B}\) è la matrice \(\mathbf{A} + \mathbf{B} \in \mathbb{R}^{m,n}\) con componenti
 \begin{equation*}
-\begin{split}
-\text{det}(A) = a_{11}a_{22} - a_{12}a_{21}
+\begin{split}(\mathbf{A} + \mathbf{B})_{ij} = a_{ij} + b_{ij} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+o più esplicitamente,
+\begin{equation*}
+\begin{split} \mathbf{A} + \mathbf{B} = 
+\begin{bmatrix}
+  a_{11} & a_{12} & \dots & a_{1n} \\ \dots  & \dots  & \dots & \dots  \\ a_{m1} & a_{m2} & \dots & a_{mn}
+\end{bmatrix}
++
+\begin{bmatrix}
+  b_{11} & b_{12} & \dots & b_{1n} \\ \dots  & \dots  & \dots & \dots  \\ b_{m1} & b_{m2} & \dots & b_{mn}
+\end{bmatrix}
+= 
+\begin{bmatrix}
+  a_{11}+b_{11} & a_{12}+b_{12} & \dots & a_{1n}+b_{1n} \\
+  \dots  & \dots  & \dots & \dots  \\
+  a_{m1}+b_{m1} & a_{m2}+b_{m2} & \dots & a_{mn}+b_{mn} \\
+\end{bmatrix}
 \end{split}
 \end{equation*}
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{Moltiplicazione per uno scalare.} La moltiplicazione di una matrice \(\mathbf{A} \in \mathbb{R}^{m,n}\) per un numero reale \(c \in \mathbf{R}\) è la matrice \(c \mathbf{A} \in \mathbb{R}^{m,n}\) con componenti
+\begin{equation*}
+\begin{split}(c \mathbf{A})_{ij} = c \, a_{ij} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+o più esplicitamente,
+\begin{equation*}
+\begin{split} c A = \begin{bmatrix}
+   c \cdot a_{11} & \dots & c \cdot a_{1n} \\
+   \dots          & \dots & \dots          \\
+   c \cdot a_{m1} & \dots & c \cdot a_{mn}
+   \end{bmatrix} \end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{Prodotto di matrici.} Il prodotto \(\mathbf{A} \mathbf{B}\) tra matrici è possibile tra due matrici \(\mathbf{A} \in \mathbb{R}^{m,p}\), \(\mathbf{B} \in \mathbb{R}^{p,n}\), ed è la matrice \(\mathbf{A} \mathbf{B} \in \mathbb{R}^{m,n}\) con le componenti
+\begin{equation*}
+\begin{split}(\mathbf{A}\mathbf{B})_{ij} = \sum_{k=1}^{n} a_{in} b_{nj} \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{Osservazione.} \sphinxstylestrong{Non} vale la \sphinxstylestrong{proprietà commutativa} per il prodotto di matrici. Per di più, in generale non è possibile formare il prodotto \(\mathbf{B} \mathbf{A}\), se \(m \ne n\).
 
-\bigskip\hrule\bigskip
+\end{itemize}
+\label{ch/algebra/linear-algebra:example-0}
+\begin{sphinxadmonition}{note}{Example 6.3.1}
 
+
+\end{sphinxadmonition}
+\label{ch/algebra/linear-algebra:example-1}
+\begin{sphinxadmonition}{note}{Example 6.3.2}
+
+
+\end{sphinxadmonition}
+\label{ch/algebra/linear-algebra:example-2}
+\begin{sphinxadmonition}{note}{Example 6.3.3}
+
+
+\end{sphinxadmonition}
+
+
+\subsection{Determinante}
+\label{\detokenize{ch/algebra/linear-algebra:determinante}}
+\sphinxAtStartPar
+Per una matrice quadrata \(\mathbf{A} \in \mathbb{R}^{n,n}\) è possibile definire una grandezza scalare, definita \sphinxstylestrong{determinante}, il cui nome dovrebbe farne intuire la rilevanza: essa infatti riassume alcune caratteristiche della matrice e, tra le altre, determina un criterio di esistenza della matrice inversa e un criterio di esistenza e di unicità della soluzione di un sistema lineare, \(\mathbf{A} \mathbf{x} = \mathbf{b}\).
+
+\sphinxAtStartPar
+La definizione e una discussione completa del determinante di una matrice vanno ben oltre (\sphinxstylestrong{todo} \sphinxstyleemphasis{probabilmente}) lo scopo di questo materiale.
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo} \sphinxstyleemphasis{Espressione del determinante per matrici 2x2, 3x3; mettere in evidenza la comparsa del determinante nei metodi di soluzione sotto}
+
+
+\subsection{Rango e nucleo}
+\label{\detokenize{ch/algebra/linear-algebra:rango-e-nucleo}}
+\sphinxAtStartPar
+\sphinxstylestrong{todo} …
 
 
 \section{Risoluzione di Sistemi}
-\label{\detokenize{ch/algebra/linear-algebra:risoluzione-di-sistemi}}\begin{itemize}
-\item {} 
+\label{\detokenize{ch/algebra/linear-algebra:risoluzione-di-sistemi}}
 \sphinxAtStartPar
-\sphinxstylestrong{Metodo di Cramer}:
-\( x_i = \frac{\text{det}(A_i)}{\text{det}(A)} \)
+La soluzione dei sistemi lineari è una delle attività più frequenti nelle applicazioni di matematica, soprattutto negli algoritmi di calcolo numerico; non ci occuperemo qui dei metodi numerici di soluzione dei sistemi lineari, ma si discutono diversi approcci alla soluzione analitica «a manina» di sistemi lineari, utili per il calcolo analitico della soluzione esatta di sistemi lineari di dimensioni sufficientemente ridotte (3, salvo casi eccezionali…).
 
-\item {} 
 \sphinxAtStartPar
-\sphinxstylestrong{Metodo della matrice inversa}:
-\( \mathbf{x} = A^{-1} \mathbf{b} \)
+Come descritto dal {\hyperref[\detokenize{ch/algebra::doc}]{\sphinxcrossref{\DUrole{doc,std,std-doc}{teorema di Rouché\sphinxhyphen{}Capelli}}}}, esistono 3 possibili situazioni: il sistema lineare ha 1. una sola soluzione; 2. un numero infinito di soluzioni; 3. nessuna soluzione.
 
-\end{itemize}
-
-
-\bigskip\hrule\bigskip
-
-
-
-\section{Esercizi}
-\label{\detokenize{ch/algebra/linear-algebra:esercizi}}\begin{enumerate}
-\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
-\item {} 
 \sphinxAtStartPar
-Calcola il determinante:
+I metodi presentati sono tra di loro equivalenti, intendendo che portano alla stessa soluzione. \sphinxstylestrong{todo} \sphinxstyleemphasis{Equivalenti nel caso esista una soluzione unica. Danno le stesse informazioni anche nel caso esistano infinite soluzioni o non esistano soluzioni? Riguardo il rango e/o il nucleo…}
 
-\end{enumerate}
+
+\subsection{Metodo di sostituzione}
+\label{\detokenize{ch/algebra/linear-algebra:metodo-di-sostituzione}}
+\sphinxAtStartPar
+Il metodo di sostituzione consiste nell’usare in successione un’equazione per ricavare un’incognita in funzione delle altre incognite, e sostituire l’espressione ricavata nelle altre successioni, per ottenere un sistema lineare con al dimensione ridotta di 1. Si continua così fino a ottenere un’equazione in un’incognita, immediata da risolvere. Successivamente si trovano i valori delle altre incognite in funzione delle incognite già calcolate. Se esiste una soluzione del problema, l’algoritmo descritto permette di calcolare la soluzione. \sphinxstylestrong{todo} \sphinxstyleemphasis{Altrimenti, in caso di esistenza di infinite soluzioni si arriva a un’identità \(0=0\); in caso di nessuna soluzione si arriva a una contraddizione \(1=0\).} \sphinxstylestrong{todo} \sphinxstyleemphasis{vedi esempi sotto}
+\label{ch/algebra/linear-algebra:example-3}
+\begin{sphinxadmonition}{note}{Example 6.4.1 (Metodo di sostituzione per sistema quadrato determinato)}
+
+
+
+\sphinxAtStartPar
+Si vuole risolvere il sistema
+\begin{equation*}
+\begin{split}\begin{cases}
+      x_1             - x_3 = 1 \\
+                2 x_2 + x_3 =-1 \\
+    3 x_1   +     x_2 - x_3 = 4 \\
+\end{cases}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Applichiamo il metodo di sostituzione, usando la prima equazione per esprimere \(x_1\) in funzione delle altre incognite,
+\begin{equation*}
+\begin{split}\begin{cases}
+  E1: \   x_1             - x_3 = 1  \qquad \rightarrow \qquad x_1 = x_3 + 1 \\
+  E2: \             2 x_2 + x_3 =-1 \\
+  E3: \ 3 x_1   +     x_2 - x_3 = 4 \\
+\end{cases}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+si può sostituire l’espressione trovata nelle altre due equazioni per ottenere un sistema di 2 equazioni nelle due incognite \(x_2. x_3\), e usare l’equazione \(E2\) per esprimere \(x_3\) in funzione di \(x_2\)
 \begin{equation*}
 \begin{split}
-\begin{bmatrix}
-1 & 2 \\
-3 & 4
-\end{bmatrix}
+\begin{cases}
+  E2: \             2 x_2 + x_3 =-1 \\
+  E3: \ 3 (x_3 + 1) + x_2 - x_3 = 4 \\
+\end{cases}
+\qquad
+\begin{cases}
+  E2: \ 2 x_2 +   x_3 =-1 \qquad \rightarrow \qquad x_3 = -1 - 2 x_2 \\
+  E3: \   x_2 + 2 x_3 = 1 \\
+\end{cases}
 \end{split}
-\end{equation*}\begin{enumerate}
+\end{equation*}
+\sphinxAtStartPar
+e ottenere un’unica equazione lineare \(E3\) per l’unica incognita \(x_2\), della quale è possibile calcolare il valore,
+\begin{equation*}
+\begin{split}
+E3: \ x_2 + 2 ( -1 - 2 x_2 ) = 1 \quad \rightarrow \quad x_2 = -1 \ .
+\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Una volta trovato il valore \(x_2 = -1\), si «torna indietro» per calcolare \(x_3 = - 1 - 2 x_2 = 1\) e \(x_1 = x_3 + 1 = 2\). La soluzione del sistema quindi esiste, è unica ed è \(\mathbf{x} = (x_1, x_2, x_3) = (2, -1, 1)\).
+\end{sphinxadmonition}
+
+
+\subsection{Metodo di eliminazione di Gauss}
+\label{\detokenize{ch/algebra/linear-algebra:metodo-di-eliminazione-di-gauss}}
+\sphinxAtStartPar
+Il metodo di eliminazione di Gauss consiste nella combinazione lineare delle equazioni del sistema per ottenere una forma del sistema facilmente risolvibile, tipicamente una matrice dei coefficienti con forma triangolare.
+\label{ch/algebra/linear-algebra:example-4}
+\begin{sphinxadmonition}{note}{Example 6.4.2 (Metodo di sostituzione per sistema quadrato determinato)}
+
+
+
+\sphinxAtStartPar
+Si vuole risolvere il sistema
+\begin{equation*}
+\begin{split}\begin{cases}
+      x_1             - x_3 = 1 \\
+                2 x_2 + x_3 =-1 \\
+    3 x_1   +     x_2 - x_3 = 4 \\
+\end{cases}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+con il metodo di eliminazione di Gauss. E” comune (ma non obbligatorio, ognuno è libero di fare quello che gli pare, purché vengano seguiti procedimenti logici) applicare il metodo dopo aver riscritto il sistema con il fomralismo matriciale,
+\begin{equation*}
+\begin{split}
+\begin{bmatrix} 1 & 0 & -1 \\ 0 & 2 & 1 \\ 3 &  1 & -1 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} =  \begin{bmatrix} 1 \\ -1 \\ 4 \end{bmatrix} \ ,
+\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e, sottintendendo il vettore delle incognite,
+\begin{equation*}
+\begin{split}\left[\begin{array}{ccc|c} 1 & 0 & -1 & 1 \\ 0 & 2 & 1 & -1 \\ 3 & 1 & -1 & 4 \end{array} \right] \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Vogliamo ottenere una forma triangolare della matrice \(\mathbf{A}\). La prima e la seconda riga soddisfano già questa struttura, mentre è necessario combinare le righe per annullare i primi 2 elementi della tera riga. Sottraendo la prima riga moltiplicata per 3, viene annullato il primo elemento
+\begin{equation*}
+\begin{split}\left[\begin{array}{ccc|c} 1 & 0 & -1 & 1 \\ 0 & 2 & 1 & -1 \\ 0 & 1 &  2 & 1 \end{array} \right] \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e successivamente sottraendo la seconda riga moltiplicata per \(\frac{1}{2}\), viene annullato il secondo elemento,
+\begin{equation*}
+\begin{split}\left[\begin{array}{ccc|c} 1 & 0 & -1 & 1 \\ 0 & 2 & 1 & -1 \\ 0 & 0 & \frac{3}{2} & \frac{3}{2} \end{array} \right] \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Ottenuta la forma triangolare desiderata, si fa ricomparire il vettore delle incognite
+\begin{equation*}
+\begin{split}
+\begin{bmatrix} 1 & 0 & -1 \\ 0 & 2 & 1 \\ 0 &  0 & \frac{3}{2} \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} =  \begin{bmatrix} 1 \\ -1 \\ \frac{3}{2} \end{bmatrix} \ ,
+\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e si risolve il sistema triangolare partendo dall’ultima equazione
+\begin{equation*}
+\begin{split}\frac{3}{2} x_3 = \frac{3}{2} \qquad \rightarrow \qquad x_3 = 1 \, \end{split}
+\end{equation*}
+\sphinxAtStartPar
+a ritroso: questo ordine di soluzione permette di risolvere \(n\) equazioni che contengono una sola incognita per volta, dopo aver sostituito il valore delle incognite già trovate,
+\begin{equation*}
+\begin{split}\begin{aligned}
+ 2 x_2 + x_3 = - 1 \qquad & \rightarrow \qquad x_2 = -1 \\
+   x_1 - x_3 =   1 \qquad & \rightarrow \qquad x_1 =  2 \\
+\end{aligned}\end{split}
+\end{equation*}\end{sphinxadmonition}
+
+
+\subsection{Metodo di Cramer}
+\label{\detokenize{ch/algebra/linear-algebra:metodo-di-cramer}}
+\sphinxAtStartPar
+\sphinxstylestrong{todo} \sphinxstyleemphasis{Per quale motivo discuterlo? E” scomodo, non dà grandi informazioni in caso di assenza o numero infinito di soluzioni…}
+
+
+\section{Teorema di Rouché\sphinxhyphen{}Capelli}
+\label{\detokenize{ch/algebra/linear-algebra:teorema-di-rouche-capelli}}\label{\detokenize{ch/algebra/linear-algebra:math-hs-algebra-linear-rouche-capelli}}
+
+\subsection{Interpretazione geometrica}
+\label{\detokenize{ch/algebra/linear-algebra:interpretazione-geometrica}}\label{ch/algebra/linear-algebra:example-5}
+\begin{sphinxadmonition}{note}{Example 6.5.1 (Sistema quadrato determinato)}
+
+
+\end{sphinxadmonition}
+\label{ch/algebra/linear-algebra:example-6}
+\begin{sphinxadmonition}{note}{Example 6.5.2 (Sistema quadrato indeterminato)}
+
+
+\end{sphinxadmonition}
+\label{ch/algebra/linear-algebra:example-7}
+\begin{sphinxadmonition}{note}{Example 6.5.3 (Sistema quadrato sovradeterminato)}
+
+
+\end{sphinxadmonition}
+\label{ch/algebra/linear-algebra:example-8}
+\begin{sphinxadmonition}{note}{Example 6.5.4 (Sistema indeterminato)}
+
+
+\end{sphinxadmonition}
+
+
+\section{Problemi}
+\label{\detokenize{ch/algebra/linear-algebra:problemi}}
+\sphinxAtStartPar
+Viene chiesto di stabilire se i seguenti problemi hanno soluzione, di calcolare le eventuali soluzioni, fornire una rappresentazione grafica del problema algebrico, e \sphinxhyphen{} per sistemi con uguale numero di equazioni ed incognite \sphinxhyphen{} calcolare il determinante delle matrici del sistema lineare.
+\begin{enumerate}
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
-\setcounter{enumi}{1}
+\item {} 
+\sphinxAtStartPar
+Risolvi il sistema:
+\begin{equation*}
+\begin{split}
+   \begin{cases}
+   x + y = 4 \\
+   \frac{3}{2}x + y = 5
+   \end{cases}
+   \end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+Risolvi il sistema:
+\begin{equation*}
+\begin{split}
+    \begin{cases}
+    x - y = 2 \\
+    x + y = -1
+    \end{cases}
+    \end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+Risolvi il sistema:
+\begin{equation*}
+\begin{split}
+   \begin{cases}
+   x + 2y = 5 \\
+   2x + 2y = 11
+   \end{cases}
+   \end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+Risolvi il sistema:
+\begin{equation*}
+\begin{split}
+   \begin{cases}
+   x + y = 3 \\
+   x - y = 1
+   \end{cases}
+   \end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+Risolvi il sistema:
+\begin{equation*}
+\begin{split}
+   \begin{cases}
+   x - y + z = 0 \\
+   2x - 2y + 2z = 0 \\
+   -x + y - z = 0
+   \end{cases}
+   \end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+Risolvi il sistema:
+\begin{equation*}
+\begin{split}
+   \begin{cases}
+   x + y + z = 2 \\
+   x + 2y + z = 4 \\
+   x + y + 2z = 6
+   \end{cases}
+   \end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+Risolvi il sistema:
+\begin{equation*}
+\begin{split}
+   \begin{cases}
+   x + y + z = 3 \\
+   2x + 2y + z = 8 \\
+   \end{cases}
+   \end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+Risolvi il sistema:
+\begin{equation*}
+\begin{split}
+   \begin{cases}
+   x + y + z = 7 \\
+   x + y - z = 3
+   \end{cases}
+   \end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+Risolvi il sistema:
+\begin{equation*}
+\begin{split}
+   \begin{cases}
+   3x + 2y = 6 \\
+   x - y = 1
+   \end{cases}
+   \end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+Risolvi il sistema:
+\begin{equation*}
+\begin{split}
+    \begin{cases}
+    x + y = 2 \\
+    3x + 2y = 6
+    \end{cases}
+    \end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+Risolvi il sistema:
+\begin{equation*}
+\begin{split}
+    \begin{cases}
+    x - y = 1 \\
+    x - 3y + z = 3
+    \end{cases}
+    \end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+Risolvi il sistema:
+\begin{equation*}
+\begin{split}
+    \begin{cases}
+    x + y = 5 \\
+    2x - y = 1
+    \end{cases}
+    \end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+Risolvi il sistema:
+\begin{equation*}
+\begin{split}
+    \begin{cases}
+    x + y = 1 \\
+    x + y + z = 3 \\
+    2x + 2y + z = 4
+    \end{cases}
+    \end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+Risolvi il sistema:
+\begin{equation*}
+\begin{split}
+    \begin{cases}
+    x + y + z = 5 \\
+    2x - 2y + 2z = 10 \\
+    3x - y + 3z = -5
+    \end{cases}
+    \end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+Risolvi il sistema:
+\begin{equation*}
+\begin{split}
+    \begin{cases}
+    x + y = 4 \\
+    2x + 2y = 8
+    \end{cases}
+    \end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+Risolvi il sistema:
+\begin{equation*}
+\begin{split}
+    \begin{cases}
+    x + 2y = 8 \\
+    3x - 4y = -2
+    \end{cases}
+    \end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+Risolvi il sistema:
+\begin{equation*}
+\begin{split}
+    \begin{cases}
+    x + y = 3 \\
+    2x + 2y = 6 \\
+    x + 3y = 4
+    \end{cases}
+    \end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+Risolvi il sistema:
+\begin{equation*}
+\begin{split}
+    \begin{cases}
+    x + y - z = 3 \\
+    2x - y + z = 2 \\
+    -x + y + 2z = 4
+    \end{cases}
+    \end{split}
+\end{equation*}
 \item {} 
 \sphinxAtStartPar
 Risolvi il sistema:
@@ -1543,12 +1945,98 @@ Risolvi il sistema:
 \end{enumerate}
 \begin{equation*}
 \begin{split}
-\begin{cases}
-x + 2y = 5 \\
-3x - y = 4
-\end{cases}
-\end{split}
+   \begin{cases}
+   x + y + z = 6 \\
+   x - y + z = 4 \\
+   2x + y - z = 7
+   \end{cases}
+   \end{split}
+\end{equation*}\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{19}
+\item {} 
+\sphinxAtStartPar
+Risolvi il sistema:
+\begin{equation*}
+\begin{split}
+    \begin{cases}
+    x + y + 3z = 6 \\
+    2x + 4y + 6z = 12 \\
+    -x - 2y - 3z = -6
+    \end{cases}
+    \end{split}
 \end{equation*}
+\end{enumerate}
+
+\sphinxAtStartPar
+Viene chiesto di ripetere la discussione degli esercizi precedenti, al variare dei parametri nel sistemi.
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
+\end{enumerate}
+\begin{equation*}
+\begin{split}
+   \begin{cases}
+   x + ky = 2 \\
+   x - 2y = 1
+   \end{cases}
+   \end{split}
+\end{equation*}\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{1}
+\item {} 
+\end{enumerate}
+\begin{equation*}
+\begin{split}
+   \begin{cases}
+   x + y = b \\
+   ax + y = 2
+   \end{cases}
+   \end{split}
+\end{equation*}\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{2}
+\item {} 
+\end{enumerate}
+\begin{equation*}
+\begin{split}
+   \begin{cases}
+   x - y + mz = 3 \\
+   mx + 2y + z = 4 \\
+   x + y - z = 1
+   \end{cases}
+   \end{split}
+\end{equation*}\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{3}
+\item {} 
+\end{enumerate}
+\begin{equation*}
+\begin{split}
+   \begin{cases}
+   kx + y = 4 \\
+   2x + ky = 3 p
+   \end{cases}
+   \end{split}
+\end{equation*}\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{4}
+\item {} \begin{equation*}
+\begin{split}
+   \begin{cases}
+   px + y      = 1 \\
+   2x + y +  z = 2 \\
+        y + qz = p
+   \end{cases}
+   \end{split}
+\end{equation*}
+\end{enumerate}
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo} \sphinxstyleemphasis{Qualche esercizio con disequazioni}
+
+
+
 \sphinxstepscope
 
 \begin{sphinxuseclass}{sd-container-fluid}
@@ -1589,7 +2077,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-02 dic 2024
+03 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -1703,7 +2191,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-02 dic 2024
+03 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -1977,7 +2465,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-02 dic 2024
+03 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -2185,7 +2673,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-02 dic 2024
+03 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -2627,7 +3115,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-02 dic 2024
+03 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -2825,7 +3313,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-02 dic 2024
+03 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -2974,7 +3462,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-02 dic 2024
+03 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -4331,7 +4819,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-02 dic 2024
+03 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -4472,7 +4960,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-02 dic 2024
+03 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -4574,7 +5062,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-02 dic 2024
+03 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -4737,7 +5225,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-02 dic 2024
+03 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -5619,7 +6107,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-02 dic 2024
+03 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -5706,7 +6194,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-02 dic 2024
+03 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -7431,7 +7919,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-02 dic 2024
+03 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -8007,7 +8495,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-02 dic 2024
+03 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -8111,7 +8599,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-02 dic 2024
+03 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -8541,7 +9029,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-02 dic 2024
+03 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -8660,6 +9148,33 @@ RL: ottimizzazione/controllo
 \renewcommand{\indexname}{Proof Index}
 \begin{sphinxtheindex}
 \let\bigletter\sphinxstyleindexlettergroup
+\bigletter{example\sphinxhyphen{}0}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}0}\sphinxstyleindexextra{ch/algebra/linear\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/linear-algebra:\detokenize{example-0}}
+\indexspace
+\bigletter{example\sphinxhyphen{}1}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}1}\sphinxstyleindexextra{ch/algebra/linear\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/linear-algebra:\detokenize{example-1}}
+\indexspace
+\bigletter{example\sphinxhyphen{}2}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}2}\sphinxstyleindexextra{ch/algebra/linear\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/linear-algebra:\detokenize{example-2}}
+\indexspace
+\bigletter{example\sphinxhyphen{}3}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}3}\sphinxstyleindexextra{ch/algebra/linear\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/linear-algebra:\detokenize{example-3}}
+\indexspace
+\bigletter{example\sphinxhyphen{}4}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}4}\sphinxstyleindexextra{ch/algebra/linear\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/linear-algebra:\detokenize{example-4}}
+\indexspace
+\bigletter{example\sphinxhyphen{}5}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}5}\sphinxstyleindexextra{ch/algebra/linear\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/linear-algebra:\detokenize{example-5}}
+\indexspace
+\bigletter{example\sphinxhyphen{}6}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}6}\sphinxstyleindexextra{ch/algebra/linear\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/linear-algebra:\detokenize{example-6}}
+\indexspace
+\bigletter{example\sphinxhyphen{}7}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}7}\sphinxstyleindexextra{ch/algebra/linear\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/linear-algebra:\detokenize{example-7}}
+\indexspace
+\bigletter{example\sphinxhyphen{}8}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}8}\sphinxstyleindexextra{ch/algebra/linear\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/linear-algebra:\detokenize{example-8}}
+\indexspace
 \bigletter{integrals:thm:avg}
 \item\relax\sphinxstyleindexentry{integrals:thm:avg}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{integrals:thm:avg}}
 \indexspace
