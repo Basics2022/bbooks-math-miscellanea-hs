@@ -5,7 +5,9 @@
 
 Per ora, elenco di concetti linkati
 
-(logic:identity)=
+(logics:identity)=
 ### Identità
-(logic:contradiction)=
+
+
+(logics:contradiction)=
 ### Contraddizione

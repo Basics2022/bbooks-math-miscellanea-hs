@@ -117,8 +117,8 @@ Dopo aver escluso i casi in cui l'equazione degenera in un'uguaglianza tra param
 $$x = - \frac{b}{a} \ .$$
 
 Nel caso degenere in cui $a = 0$, si possono distinguere due casi:
-- se $b \ne 0$ **non esiste** nessuna soluzione, poiché l'equazione si riduce alla [contraddizione]() $0 = b \ne 0$ per $\forall x \in \mathbb{R}$
-- se $b = 0$ **esistono infinite** soluzioni, poiché l'equazione si riduce all'[identità]() $0 = b \ne 0$ per $\forall x \in \mathbb{R}$
+- se $b \ne 0$ **non esiste** nessuna soluzione, poiché l'equazione si riduce alla [contraddizione](logics:identity) $0 = b \ne 0$ per $\forall x \in \mathbb{R}$
+- se $b = 0$ **esistono infinite** soluzioni, poiché l'equazione si riduce all'[identità](logics:contradiction) $0 = b \ne 0$ per $\forall x \in \mathbb{R}$
 
 <!--
 Si possono distinguere i casi:
