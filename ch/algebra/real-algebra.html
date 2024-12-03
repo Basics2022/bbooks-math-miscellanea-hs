@@ -584,11 +584,20 @@ document.write(`
 <div class="example-content section" id="proof-content">
 <p>La frazione <span class="math notranslate nohighlight">\(\frac{x^2-3x+2}{x^2+1} = \frac{(x-2)(x-1)}{x^2+1}\)</span> è in forma ridotta, mentre la frazione <span class="math notranslate nohighlight">\(\frac{x^2-3x+2}{x^2-1} = \frac{(x-2)(x-1)}{(x+1)(x-1)}\)</span> non è in forma ridotta e, <strong>per</strong> <span class="math notranslate nohighlight">\(x \ne 1\)</span> <strong>(!)</strong>, è uguale a <span class="math notranslate nohighlight">\(\frac{x-2}{x+1}\)</span>.</p>
 </div>
-</div><p>Se il denominatore è scomponibile come prodotto di polinomi, allora la frazione algebrica può essere scritta come <strong>somma di frazioni parziali</strong>. In alcune applicazioni, come il calcolo degli integrali, può essere conveniente scrivere una frazione come somma di frazioni parziali, poiché risulta più semplice trattare somme di frazioni con numeratore di grado 1 o 2, di frazioni con numeratore di grado qualsiasi.</p>
+</div><p>Una <strong>frazione propria</strong> ha il grado <span class="math notranslate nohighlight">\(n\)</span> del numeratore inferiore al grado <span class="math notranslate nohighlight">\(m\)</span> del denominatore. Una frazione non propria può essere scritta come un polinomio di grado <span class="math notranslate nohighlight">\(n-m\)</span> e una frazione propria</p>
 <div class="proof example dropdown admonition" id="example-1">
-<p class="admonition-title"><span class="caption-number">Example 4.2 </span> (Somma di frazioni parziali)</p>
+<p class="admonition-title"><span class="caption-number">Example 4.2 </span> (Frazioni non proprie)</p>
 <div class="example-content section" id="proof-content">
-<p>La frazione <span class="math notranslate nohighlight">\(\frac{3x}{x^2-1}\)</span> può essere scritta come somma di frazioni parziali <span class="math notranslate nohighlight">\(\frac{3 x}{x^2-1} = \)</span>.</p>
+<p>La frazione <span class="math notranslate nohighlight">\(\frac{x^2 + 2x + 1}{x - 2}\)</span> può essere scritta «completando il quadrato» come</p>
+<div class="math notranslate nohighlight">
+\[\frac{x^2+2x+1}{x-2} = \frac{x^2-4x+4+4x-4+2x+1}{x-2} = \frac{(x-2)^2+6x-3}{x-2} = x-2 + 3\frac{2x-1}{x-2} \ ,\]</div>
+<p>con la semplificazione possibile per <span class="math notranslate nohighlight">\(x \ne 2\)</span>.</p>
+</div>
+</div><p>Se il denominatore è scomponibile come prodotto di polinomi, allora la frazione algebrica può essere scritta come <strong>somma di frazioni parziali</strong>. In alcune applicazioni, come il calcolo degli integrali, può essere conveniente scrivere una frazione come somma di frazioni parziali, poiché risulta più semplice trattare somme di frazioni con numeratore di grado 1 o 2, di frazioni con numeratore di grado qualsiasi.</p>
+<div class="proof example dropdown admonition" id="example-2">
+<p class="admonition-title"><span class="caption-number">Example 4.3 </span> (Somma di frazioni parziali)</p>
+<div class="example-content section" id="proof-content">
+<p>La frazione <span class="math notranslate nohighlight">\(\frac{3x}{x^2-1}\)</span> può essere scritta come somma di frazioni parziali <span class="math notranslate nohighlight">\(\frac{3 x}{x^2-1} = \frac{3}{2} \frac{1}{x-1} + \frac{3}{2}\frac{1}{x+1}\)</span>, poiché</p>
 <div class="math notranslate nohighlight">
 \[\frac{3x}{x^2-1} = \frac{a}{x+1} + \frac{b}{x-1} = \frac{a(x-1) + b(x+1)}{x^2-1} = \frac{x(a+b)+b-a}{x^2-1}\]</div>
 <div class="math notranslate nohighlight">

@@ -75,12 +75,25 @@ La frazione $\frac{x^2-3x+2}{x^2+1} = \frac{(x-2)(x-1)}{x^2+1}$ è in forma rido
 
 ```
 
+Una **frazione propria** ha il grado $n$ del numeratore inferiore al grado $m$ del denominatore. Una frazione non propria può essere scritta come un polinomio di grado $n-m$ e una frazione propria
+
+```{prf:example} Frazioni non proprie
+:class: dropdown
+
+La frazione $\frac{x^2 + 2x + 1}{x - 2}$ può essere scritta "completando il quadrato" come
+
+$$\frac{x^2+2x+1}{x-2} = \frac{x^2-4x+4+4x-4+2x+1}{x-2} = \frac{(x-2)^2+6x-3}{x-2} = x-2 + 3\frac{2x-1}{x-2} \ ,$$
+
+con la semplificazione possibile per $x \ne 2$.
+
+```
+
 Se il denominatore è scomponibile come prodotto di polinomi, allora la frazione algebrica può essere scritta come **somma di frazioni parziali**. In alcune applicazioni, come il calcolo degli integrali, può essere conveniente scrivere una frazione come somma di frazioni parziali, poiché risulta più semplice trattare somme di frazioni con numeratore di grado 1 o 2, di frazioni con numeratore di grado qualsiasi.
 
 ```{prf:example} Somma di frazioni parziali
 :class: dropdown
 
-La frazione $\frac{3x}{x^2-1}$ può essere scritta come somma di frazioni parziali $\frac{3 x}{x^2-1} = $.
+La frazione $\frac{3x}{x^2-1}$ può essere scritta come somma di frazioni parziali $\frac{3 x}{x^2-1} = \frac{3}{2} \frac{1}{x-1} + \frac{3}{2}\frac{1}{x+1}$, poiché
 
 $$\frac{3x}{x^2-1} = \frac{a}{x+1} + \frac{b}{x-1} = \frac{a(x-1) + b(x+1)}{x^2-1} = \frac{x(a+b)+b-a}{x^2-1}$$
 
