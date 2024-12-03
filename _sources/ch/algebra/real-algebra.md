@@ -119,9 +119,12 @@ Un'equazione con due incognite $x,y$ è una relazione di uguaglianza che può es
 - $y = x$, dipendenza lineare (o proporzionale)
 - $y = x^2$, dipendenza quadratica
 - $y = \frac{1}{x}$, dipendenza inversamente proporzionale
+- ...$y = a^x$, $y = \log_a x$...
+<!--
 - $y = a^x$
 - $y = \log_a x$
 - ...
+-->
 
 e delle equazioni ricavabili da queste con una trasformazione *affine* di incognite, nella forma $u = a_u (x-b_x)$, $v = a_v (y-b_y)$, corrispondenti a traslazioni del grafico e scalatura nelle direzioni dei due assi.
 
