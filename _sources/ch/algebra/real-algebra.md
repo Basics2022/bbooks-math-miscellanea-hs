@@ -113,9 +113,18 @@ Un'equazione è un'uguaglianza che contiene una o più incognite. L'obiettivo è
 
 ### Disequazioni
 
+## Rappresentazione grafica di un'equazione con due incognite
+Un'equazione con due incognite $x,y$ è una relazione di uguaglianza che può essere scritta nella forma generale $f(x,y) = 0$. In generale, a ogni equazione di questa forma può essere associata una curva nel piano, qui descritto dalle coordinate cartesiane $x,y$. Senza nessuna pretesa di completezza - rimandando per quella alla sezione sulla [geometria analitica](geometry:analytic) - qui ci si limita a discutere la rappresentazione grafica nel piano di alcune equazioni elementari
 
+- $y = x$, dipendenza lineare (o proporzionale)
+- $y = x^2$, dipendenza quadratica
+- $y = \frac{1}{x}$, dipendenza inversamente proporzionale
+- $y = a^x$
+- $y = \log_a x$
+- ...
 
-## Rappresentazione grafica 
+e delle equazioni ricavabili da queste con una trasformazione *affine* di incognite, nella forma $u = a_u (x-b_x)$, $v = a_v (y-b_y)$, corrispondenti a traslazioni del grafico e scalatura nelle direzioni dei due assi.
+
 
 ## Problemi con due o più incognite - sistemi di equazioni e disequazioni
 Un sistema di equazioni è un insieme di equazioni da risolvere simultaneamente. I sistemi di equazioni (e di disequazioni) consentono di introdurre l'[algebra su $\mathbb{R}^n$](math-hs:algebra:real-n), descritta nel capitolo successivo. 
