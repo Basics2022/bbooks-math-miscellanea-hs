@@ -103,9 +103,11 @@ $$\begin{cases} a + b = 3 \\ b - a = 0 \end{cases} \qquad \rightarrow \qquad a =
 
 ## Problemi con un'incognita
 
+(math-hs:algebra:real:eq)=
 ### Equazioni
 Un'equazione è una relazione di uguaglianza che contiene una o più incognite. L'obiettivo è trovare i valori delle incognite che rendono vera l'uguaglianza.
 
+(math-hs:algebra:real:eq:first)=
 #### Equazioni di primo grado
 La forma generale di un'equazione di primo grado in un'incognita reale $x \in \mathbb{R}$ è
 
@@ -128,12 +130,13 @@ Si possono distinguere i casi:
   - per $b = 0$ esistono **infinite** soluzioni, poiché si ottiene l'identità $0 = 0$ per $\forall x \in \mathbb{R}$
 -->
 
+(math-hs:algebra:real:eq:second)=
 #### Equazioni di secondo grado
 La forma generale di un'equazione di secondo grado in un'incognita reale $x \in \mathbb{R}$ è
 
 $$a x^2 + b x + c = 0 \qquad a \ne 0 \ ,$$
 
-dove la condizione sul coefficiente $a \ne 0$ esclude i casi in cui l'equazione degenera a un'equazione di primo grado.
+dove la condizione sul coefficiente $a \ne 0$ esclude i casi in cui l'equazione degenera a un'equazione di [primo grado](math-hs:algebra:real:eq:first).
 
 #### Equazioni non lineari generali
 
