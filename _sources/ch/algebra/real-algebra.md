@@ -148,7 +148,7 @@ $$\left( x + \frac{b}{2a} \right)^2 = \frac{b^2}{4 a^2} - \frac{c}{a} \ ,$$
 per mettere in evidenza che l'esistenza delle soluzioni dipende dal valore del **discriminante**, $\frac{\Delta}{(2a)^2} := \frac{b^2 - 4 a c}{(2a)^2}$:
 - se $\Delta > 0$ esistono **due soluzioni reali distinte**, $x_{1,2} = - \frac{b}{2a} \mp \frac{\sqrt{\Delta}}{2a} \in \mathbb{R}$
 - se $\Delta = 0$ esistono **due soluzioni reali coincidenti**, $x_1 = x_2 = - \frac{b}{2a} \in \mathbb{R}$
-- se $\Delta < 0$ **non esistono soluzioni reali**, poiché la radice quadra di un numero negativo non è definita nel campo dei numeri reali, $\notexists x \in \mathbb{R}$
+- se $\Delta < 0$ **non esistono soluzioni reali**, poiché la radice quadra di un numero negativo non è definita nel campo dei numeri reali, $\noexists x \in \mathbb{R}$
 
 #### Equazioni non lineari generali
 
