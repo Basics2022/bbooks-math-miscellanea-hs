@@ -104,14 +104,26 @@ $$\begin{cases} a + b = 3 \\ b - a = 0 \end{cases} \qquad \rightarrow \qquad a =
 ## Problemi con un'incognita
 
 ### Equazioni
-
-Un'equazione è un'uguaglianza che contiene una o più incognite. L'obiettivo è trovare i valori delle incognite che rendono vera l'uguaglianza.
+Un'equazione è una relazione di uguaglianza che contiene una o più incognite. L'obiettivo è trovare i valori delle incognite che rendono vera l'uguaglianza.
 
 #### Equazioni lineari
+La forma generale di un'equazione lineare in un'incognita reale $x \in \mathbb{R}$ è
+
+$$a x + b = 0 \ .$$
+
+Si possono distinguere due casi:
+- per $a \ne 0$, esiste un'unica soluzione $x = -\frac{b}{a}$
+- per $a = 0$:
+  - per $b \ne 0$ non esiste soluzione, poiché si ottiene la contraddizione $0 = b \ne 0$, per ogni valore dell'incognita $x$
+  - per $b = 0$ esistono infinite soluzioni, poiché si ottiene l'identità $0 = 0$ per ogni valore dell'incognita $x$
+
 #### Equazioni quadratiche
+
+
 #### Equazioni non lineari generali
 
 ### Disequazioni
+Un'equazione è una relazione di disuguaglianza che contiene una o più incognite. L'obiettivo è trovare i valori delle incognite che rendono vera la disuguaglianza.
 
 ## Rappresentazione grafica di un'equazione con due incognite
 Un'equazione con due incognite $x,y$ è una relazione di uguaglianza che può essere scritta nella forma generale $f(x,y) = 0$. In generale, a ogni equazione di questa forma può essere associata una curva nel piano, qui descritto dalle coordinate cartesiane $x,y$. Senza nessuna pretesa di completezza - rimandando per quella alla sezione sulla [geometria analitica](geometry:analytic) - qui ci si limita a discutere la rappresentazione grafica nel piano di alcune equazioni elementari
