@@ -101,11 +101,7 @@ $$\begin{cases} a + b = 3 \\ b - a = 0 \end{cases} \qquad \rightarrow \qquad a =
 
 ```
 
-## Rappresentazione grafica
-
-
-## Problemi
-
+## Problemi con un'incognita
 
 ### Equazioni
 
@@ -117,8 +113,15 @@ Un'equazione è un'uguaglianza che contiene una o più incognite. L'obiettivo è
 
 ### Disequazioni
 
-## Sistemi di equazioni
+
+
+## Rappresentazione grafica 
+
+## Problemi con due o più incognite - sistemi di equazioni e disequazioni
 Un sistema di equazioni è un insieme di equazioni da risolvere simultaneamente. I sistemi di equazioni (e di disequazioni) consentono di introdurre l'[algebra su $\mathbb{R}^n$](math-hs:algebra:real-n), descritta nel capitolo successivo. 
+
+
+
 
 
 ---
