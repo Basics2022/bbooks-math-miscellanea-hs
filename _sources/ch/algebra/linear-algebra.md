@@ -147,13 +147,6 @@ $$
 **todo**
 ```
 
-(math-hs:algebra:linear:matrices:det)=
-### Determinante
-Per una matrice quadrata $\mathbf{A} \in \mathbb{R}^{n,n}$ è possibile definire una grandezza scalare, definita **determinante**, il cui nome dovrebbe farne intuire la rilevanza: essa infatti riassume alcune caratteristiche della matrice e, tra le altre, determina un criterio di esistenza della matrice inversa e un criterio di esistenza e di unicità della soluzione di un sistema lineare, $\mathbf{A} \mathbf{x} = \mathbf{b}$.
-
-La definizione e una discussione completa del determinante di una matrice vanno ben oltre (**todo** *probabilmente*) lo scopo di questo materiale.
-
-**todo** *Espressione del determinante per matrici 2x2, 3x3; mettere in evidenza la comparsa del determinante nei metodi di soluzione sotto*
 
 (math-hs:algebra:linear:matrices:range-null)=
 ### Matrice come funzione lineare
@@ -164,10 +157,28 @@ $$\mathbf{y} = f(\mathbf{x}) = \mathbb{A} \mathbf{x} \ .$$
 Si lasciano dimostrare le proprietà di linearità di questa funzione come esercizio (*consiglio: utilizzare le [operazioni matriciali](math-hs:algebra:linear:matrices:operations)*)
 
 (math-hs:algebra:linear:matrices:range-null)=
-### Rango e nucleo
-Rango e nucleo sono due insiemi[^range-null-vspace] che des
+### Immagine e nucleo
+Immagine e nucleo sono due insiemi[^range-null-vspace] sono due insiemi che caratterizzano le funzioni e quindi possono essere definiti anche per una matrice che rappresenta una funzione lineare.
+
+Il nucleo di una matrice $\mathbf{A} \in \mathbb{R}^{m,n}$ è l'insieme dei vettori colonna $\mathbf{x} \in \mathbb{R}^n$ tali che $\mathbf{A} \mathbf{x} = \mathbf{0}_m$,
+
+$\text{N}(\mathbf{A}) = \{ \mathbf{x} \in \mathbb{R}^n \, | \, \mathbf{A} \mathbf{x} = \mathbf{0}_m \} \ .$
+
+L'immagine di una matrice $\mathbf{A} \in \mathbb{R}^{m,n}$ è l'insieme dei vettori colonna $\mathbf{y} \in \mathbb{R}^m$ per i quali esiste un vettore $\mathbf{x} \in \mathbb{R}^n$ tale che $\mathbf{A} \mathbf{x} = \mathbf{y}$,
+
+$\text{I}(\mathbf{A}) = \{ \mathbf{y} \in \mathbb{R}^m \, | \, \exists \mathbf{x} \in \mathbb{R}^n \, |  \, \mathbf{A} \mathbf{x} = \mathbf{0}_m \} \ .$
+
+**todo** fare riferimento alle definizioni per le funzioni, [immagine di una funzione](math-hs:fun:range), [nucleo di una funzione](math-hs:fun:null).
 
 [^range-null-vspace]:Rango e nucleo non sono semplici insiemi, ma hanno qualche proprietà in più che li rende [spazi vettoriali](math-hs:algebra:vector:def). Per quello che ci serve qui, possiamo considerarli insiemi.
+
+(math-hs:algebra:linear:matrices:det)=
+### Determinante
+Per una matrice quadrata $\mathbf{A} \in \mathbb{R}^{n,n}$ è possibile definire una grandezza scalare, definita **determinante**, il cui nome dovrebbe farne intuire la rilevanza: essa infatti riassume alcune caratteristiche della matrice e, tra le altre, determina un criterio di esistenza della matrice inversa e un criterio di esistenza e di unicità della soluzione di un sistema lineare, $\mathbf{A} \mathbf{x} = \mathbf{b}$.
+
+La definizione e una discussione completa del determinante di una matrice vanno ben oltre (**todo** *probabilmente*) lo scopo di questo materiale.
+
+**todo** *Espressione del determinante per matrici 2x2, 3x3; mettere in evidenza la comparsa del determinante nei metodi di soluzione sotto*
 
 (math-hs:algebra:linear:linear-system-sol)=
 ## Risoluzione di Sistemi
@@ -312,7 +323,7 @@ rappresenta una scalatura non isotropa (diversa lungo le diverse direzioni) dell
 - Dimostrare questa frase, calcolando il prodotto $\mathbf{A} \mathbf{r}$ per il vettore colonna generico $\mathbf{r} = \begin{bmatrix} x \\ y \end{bmatrix}$ contenente le componenti cartesiane del vettore $\vec{r}$ nel piano
 - Dare una rappresentazione grafica nel piano
 - Dimostrare che il determinante della matrice è uguale a $ab$, $|\mathbf{A}| = ab$
-- Dimostrare che la trasformazione inversa $\mathbf{A}^-1$ esiste per $a \ne 0 \land b \ne 0$, e vale $\mathbf{A}^{-1} = \begin{bmatrix} \frac{1}{a} & 0 \\ 0 & \frac{1}{b} \end{bmatrix}$
+- Dimostrare che la trasformazione inversa $\mathbf{A}^{-1}$ esiste per $a \ne 0 \land b \ne 0$, e vale $\mathbf{A}^{-1} = \begin{bmatrix} \frac{1}{a} & 0 \\ 0 & \frac{1}{b} \end{bmatrix}$
 - Discutere il caso in cui $a = b$, dove la scalatura è isotropa.
 - Dimostrare che questa trasformazione rappresenta la riflessione rispetto all'origine nel caso in cui $a = b = -1$
 
@@ -327,7 +338,7 @@ rappresenta una riflessione di vettori del piano rispetto a una retta passante p
 - Dimostrare questa frase, calcolando il prodotto $\mathbf{A} \mathbf{r}$ per il vettore colonna generico $\mathbf{r} = \begin{bmatrix} x \\ y \end{bmatrix}$ contenente le componenti cartesiane del vettore $\vec{r}$ nel piano
 - Dare una rappresentazione grafica nel piano
 - Dimostrare che il determinante della matrice è uguale a -1, $|\mathbf{A}| = -1$
-- Dimostrare che la trasformazione inversa $\mathbf{A}^-1$ esiste ed è uguale alla trasformazione originale, $\mathbf{A}^{-1} = \mathbf{A}$
+- Dimostrare che la trasformazione inversa $\mathbf{A}^{-1}$ esiste ed è uguale alla trasformazione originale, $\mathbf{A}^{-1} = \mathbf{A}$
 
 ```
 ```{exercise} Matrici e rotazioni
@@ -346,7 +357,7 @@ con $a^2 + b^2 = 1$ rappresenta una rotazione dei vettori attorno all'origine.
 - Dimostrare questa frase, calcolando il prodotto $\mathbf{A} \mathbf{r}$ per il vettore colonna generico $\mathbf{r} = \begin{bmatrix} x \\ y \end{bmatrix}$ contenente le componenti cartesiane del vettore $\vec{r}$ nel piano
 - Dare una rappresentazione grafica nel piano
 - Dimostrare che il determinante della matrice è uguale a 1, $|\mathbf{A}| = 1$
-- Dimostrare che la trasformazione inversa $\mathbf{A}^-1$ esiste ed è uguale alla trasposta della trasformazione, $\mathbf{A}^{-1} = \mathbf{A}^T$
+- Dimostrare che la trasformazione inversa $\mathbf{A}^{-1}$ esiste ed è uguale alla trasposta della trasformazione, $\mathbf{A}^{-1} = \mathbf{A}^T$
 
 **todo** Si può sostituire $\cos \theta = a$, $\sin \theta = b$ con $a^2 + b^2 = 1$
 

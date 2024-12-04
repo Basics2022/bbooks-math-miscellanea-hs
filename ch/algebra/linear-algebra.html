@@ -490,9 +490,9 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matrici">6.3. Matrici</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inteprepretazione-del-contenuto-di-una-matrice">6.3.1. Inteprepretazione del contenuto di una matrice</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni">6.3.2. Operazioni</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#determinante">6.3.3. Determinante</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matrice-come-funzione-lineare">6.3.4. Matrice come funzione lineare</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rango-e-nucleo">6.3.5. Rango e nucleo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matrice-come-funzione-lineare">6.3.3. Matrice come funzione lineare</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#immagine-e-nucleo">6.3.4. Immagine e nucleo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#determinante">6.3.5. Determinante</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#risoluzione-di-sistemi">6.4. Risoluzione di Sistemi</a><ul class="nav section-nav flex-column">
@@ -661,22 +661,27 @@ a_{m1} &amp; a_{m2} &amp; \dots &amp; a_{mn}
 <p><strong>todo</strong></p>
 </div>
 </div></div>
-<div class="section" id="determinante">
-<span id="math-hs-algebra-linear-matrices-det"></span><h3><span class="section-number">6.3.3. </span>Determinante<a class="headerlink" href="#determinante" title="Permalink to this heading">#</a></h3>
-<p>Per una matrice quadrata <span class="math notranslate nohighlight">\(\mathbf{A} \in \mathbb{R}^{n,n}\)</span> è possibile definire una grandezza scalare, definita <strong>determinante</strong>, il cui nome dovrebbe farne intuire la rilevanza: essa infatti riassume alcune caratteristiche della matrice e, tra le altre, determina un criterio di esistenza della matrice inversa e un criterio di esistenza e di unicità della soluzione di un sistema lineare, <span class="math notranslate nohighlight">\(\mathbf{A} \mathbf{x} = \mathbf{b}\)</span>.</p>
-<p>La definizione e una discussione completa del determinante di una matrice vanno ben oltre (<strong>todo</strong> <em>probabilmente</em>) lo scopo di questo materiale.</p>
-<p><strong>todo</strong> <em>Espressione del determinante per matrici 2x2, 3x3; mettere in evidenza la comparsa del determinante nei metodi di soluzione sotto</em></p>
-</div>
 <div class="section" id="matrice-come-funzione-lineare">
-<span id="math-hs-algebra-linear-matrices-range-null"></span><h3><span class="section-number">6.3.4. </span>Matrice come funzione lineare<a class="headerlink" href="#matrice-come-funzione-lineare" title="Permalink to this heading">#</a></h3>
+<span id="math-hs-algebra-linear-matrices-range-null"></span><h3><span class="section-number">6.3.3. </span>Matrice come funzione lineare<a class="headerlink" href="#matrice-come-funzione-lineare" title="Permalink to this heading">#</a></h3>
 <p>Tramite il prodotto matrice vettore (colonna), una matrice <span class="math notranslate nohighlight">\(\mathbf{R}^{m,n}\)</span> rappresenta la funzione lineare più generale <span class="math notranslate nohighlight">\(f_A: \mathbb{R}^n \rightarrow \mathbb{R}^m\)</span>, che prende un vettore colonna <span class="math notranslate nohighlight">\(\mathbf{x} \in \mathbb{R}^n\)</span> come argomento e restituisce un vettore <span class="math notranslate nohighlight">\(\mathbf{y} \in \mathbb{R}^m\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[\mathbf{y} = f(\mathbf{x}) = \mathbb{A} \mathbf{x} \ .\]</div>
 <p>Si lasciano dimostrare le proprietà di linearità di questa funzione come esercizio (<em>consiglio: utilizzare le <a class="reference internal" href="#math-hs-algebra-linear-matrices-operations"><span class="std std-ref">operazioni matriciali</span></a></em>)</p>
 </div>
-<div class="section" id="rango-e-nucleo">
-<span id="id1"></span><h3><span class="section-number">6.3.5. </span>Rango e nucleo<a class="headerlink" href="#rango-e-nucleo" title="Permalink to this heading">#</a></h3>
-<p>Rango e nucleo sono due insiemi<a class="footnote-reference brackets" href="#range-null-vspace" id="id2">1</a> che des</p>
+<div class="section" id="immagine-e-nucleo">
+<span id="id1"></span><h3><span class="section-number">6.3.4. </span>Immagine e nucleo<a class="headerlink" href="#immagine-e-nucleo" title="Permalink to this heading">#</a></h3>
+<p>Immagine e nucleo sono due insiemi<a class="footnote-reference brackets" href="#range-null-vspace" id="id2">1</a> sono due insiemi che caratterizzano le funzioni e quindi possono essere definiti anche per una matrice che rappresenta una funzione lineare.</p>
+<p>Il nucleo di una matrice <span class="math notranslate nohighlight">\(\mathbf{A} \in \mathbb{R}^{m,n}\)</span> è l’insieme dei vettori colonna <span class="math notranslate nohighlight">\(\mathbf{x} \in \mathbb{R}^n\)</span> tali che <span class="math notranslate nohighlight">\(\mathbf{A} \mathbf{x} = \mathbf{0}_m\)</span>,</p>
+<p><span class="math notranslate nohighlight">\(\text{N}(\mathbf{A}) = \{ \mathbf{x} \in \mathbb{R}^n \, | \, \mathbf{A} \mathbf{x} = \mathbf{0}_m \} \ .\)</span></p>
+<p>L’immagine di una matrice <span class="math notranslate nohighlight">\(\mathbf{A} \in \mathbb{R}^{m,n}\)</span> è l’insieme dei vettori colonna <span class="math notranslate nohighlight">\(\mathbf{y} \in \mathbb{R}^m\)</span> per i quali esiste un vettore <span class="math notranslate nohighlight">\(\mathbf{x} \in \mathbb{R}^n\)</span> tale che <span class="math notranslate nohighlight">\(\mathbf{A} \mathbf{x} = \mathbf{y}\)</span>,</p>
+<p><span class="math notranslate nohighlight">\(\text{I}(\mathbf{A}) = \{ \mathbf{y} \in \mathbb{R}^m \, | \, \exists \mathbf{x} \in \mathbb{R}^n \, |  \, \mathbf{A} \mathbf{x} = \mathbf{0}_m \} \ .\)</span></p>
+<p><strong>todo</strong> fare riferimento alle definizioni per le funzioni, <a class="reference internal" href="../set.html#math-hs-fun-range"><span class="std std-ref">immagine di una funzione</span></a>, <a class="reference internal" href="../set.html#math-hs-fun-null"><span class="std std-ref">nucleo di una funzione</span></a>.</p>
+</div>
+<div class="section" id="determinante">
+<span id="math-hs-algebra-linear-matrices-det"></span><h3><span class="section-number">6.3.5. </span>Determinante<a class="headerlink" href="#determinante" title="Permalink to this heading">#</a></h3>
+<p>Per una matrice quadrata <span class="math notranslate nohighlight">\(\mathbf{A} \in \mathbb{R}^{n,n}\)</span> è possibile definire una grandezza scalare, definita <strong>determinante</strong>, il cui nome dovrebbe farne intuire la rilevanza: essa infatti riassume alcune caratteristiche della matrice e, tra le altre, determina un criterio di esistenza della matrice inversa e un criterio di esistenza e di unicità della soluzione di un sistema lineare, <span class="math notranslate nohighlight">\(\mathbf{A} \mathbf{x} = \mathbf{b}\)</span>.</p>
+<p>La definizione e una discussione completa del determinante di una matrice vanno ben oltre (<strong>todo</strong> <em>probabilmente</em>) lo scopo di questo materiale.</p>
+<p><strong>todo</strong> <em>Espressione del determinante per matrici 2x2, 3x3; mettere in evidenza la comparsa del determinante nei metodi di soluzione sotto</em></p>
 </div>
 </div>
 <div class="section" id="risoluzione-di-sistemi">
@@ -812,7 +817,7 @@ E3: \ x_2 + 2 ( -1 - 2 x_2 ) = 1 \quad \rightarrow \quad x_2 = -1 \ .
 <li><p>Dimostrare questa frase, calcolando il prodotto <span class="math notranslate nohighlight">\(\mathbf{A} \mathbf{r}\)</span> per il vettore colonna generico <span class="math notranslate nohighlight">\(\mathbf{r} = \begin{bmatrix} x \\ y \end{bmatrix}\)</span> contenente le componenti cartesiane del vettore <span class="math notranslate nohighlight">\(\vec{r}\)</span> nel piano</p></li>
 <li><p>Dare una rappresentazione grafica nel piano</p></li>
 <li><p>Dimostrare che il determinante della matrice è uguale a <span class="math notranslate nohighlight">\(ab\)</span>, <span class="math notranslate nohighlight">\(|\mathbf{A}| = ab\)</span></p></li>
-<li><p>Dimostrare che la trasformazione inversa <span class="math notranslate nohighlight">\(\mathbf{A}^-1\)</span> esiste per <span class="math notranslate nohighlight">\(a \ne 0 \land b \ne 0\)</span>, e vale <span class="math notranslate nohighlight">\(\mathbf{A}^{-1} = \begin{bmatrix} \frac{1}{a} &amp; 0 \\ 0 &amp; \frac{1}{b} \end{bmatrix}\)</span></p></li>
+<li><p>Dimostrare che la trasformazione inversa <span class="math notranslate nohighlight">\(\mathbf{A}^{-1}\)</span> esiste per <span class="math notranslate nohighlight">\(a \ne 0 \land b \ne 0\)</span>, e vale <span class="math notranslate nohighlight">\(\mathbf{A}^{-1} = \begin{bmatrix} \frac{1}{a} &amp; 0 \\ 0 &amp; \frac{1}{b} \end{bmatrix}\)</span></p></li>
 <li><p>Discutere il caso in cui <span class="math notranslate nohighlight">\(a = b\)</span>, dove la scalatura è isotropa.</p></li>
 <li><p>Dimostrare che questa trasformazione rappresenta la riflessione rispetto all’origine nel caso in cui <span class="math notranslate nohighlight">\(a = b = -1\)</span></p></li>
 </ul>
@@ -830,7 +835,7 @@ E3: \ x_2 + 2 ( -1 - 2 x_2 ) = 1 \quad \rightarrow \quad x_2 = -1 \ .
 <li><p>Dimostrare questa frase, calcolando il prodotto <span class="math notranslate nohighlight">\(\mathbf{A} \mathbf{r}\)</span> per il vettore colonna generico <span class="math notranslate nohighlight">\(\mathbf{r} = \begin{bmatrix} x \\ y \end{bmatrix}\)</span> contenente le componenti cartesiane del vettore <span class="math notranslate nohighlight">\(\vec{r}\)</span> nel piano</p></li>
 <li><p>Dare una rappresentazione grafica nel piano</p></li>
 <li><p>Dimostrare che il determinante della matrice è uguale a -1, <span class="math notranslate nohighlight">\(|\mathbf{A}| = -1\)</span></p></li>
-<li><p>Dimostrare che la trasformazione inversa <span class="math notranslate nohighlight">\(\mathbf{A}^-1\)</span> esiste ed è uguale alla trasformazione originale, <span class="math notranslate nohighlight">\(\mathbf{A}^{-1} = \mathbf{A}\)</span></p></li>
+<li><p>Dimostrare che la trasformazione inversa <span class="math notranslate nohighlight">\(\mathbf{A}^{-1}\)</span> esiste ed è uguale alla trasformazione originale, <span class="math notranslate nohighlight">\(\mathbf{A}^{-1} = \mathbf{A}\)</span></p></li>
 </ul>
 </div>
 </div>
@@ -851,7 +856,7 @@ con $a^2 + b^2 = 1$ rappresenta una rotazione dei vettori attorno all'origine.
 <li><p>Dimostrare questa frase, calcolando il prodotto <span class="math notranslate nohighlight">\(\mathbf{A} \mathbf{r}\)</span> per il vettore colonna generico <span class="math notranslate nohighlight">\(\mathbf{r} = \begin{bmatrix} x \\ y \end{bmatrix}\)</span> contenente le componenti cartesiane del vettore <span class="math notranslate nohighlight">\(\vec{r}\)</span> nel piano</p></li>
 <li><p>Dare una rappresentazione grafica nel piano</p></li>
 <li><p>Dimostrare che il determinante della matrice è uguale a 1, <span class="math notranslate nohighlight">\(|\mathbf{A}| = 1\)</span></p></li>
-<li><p>Dimostrare che la trasformazione inversa <span class="math notranslate nohighlight">\(\mathbf{A}^-1\)</span> esiste ed è uguale alla trasposta della trasformazione, <span class="math notranslate nohighlight">\(\mathbf{A}^{-1} = \mathbf{A}^T\)</span></p></li>
+<li><p>Dimostrare che la trasformazione inversa <span class="math notranslate nohighlight">\(\mathbf{A}^{-1}\)</span> esiste ed è uguale alla trasposta della trasformazione, <span class="math notranslate nohighlight">\(\mathbf{A}^{-1} = \mathbf{A}^T\)</span></p></li>
 </ul>
 <p><strong>todo</strong> Si può sostituire <span class="math notranslate nohighlight">\(\cos \theta = a\)</span>, <span class="math notranslate nohighlight">\(\sin \theta = b\)</span> con <span class="math notranslate nohighlight">\(a^2 + b^2 = 1\)</span></p>
 <p><strong>todo</strong> Dipendenza logica di questo esercizio dalle basi di <a class="reference internal" href="../trigonometry.html#math-hs-trigonometry"><span class="std std-ref">trigonometria</span></a>. Stabilire un ordine consigliato di accesso a questo <span class="math notranslate nohighlight">\(\texttt{bbook}\)</span></p>
@@ -1216,9 +1221,9 @@ $$
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matrici">6.3. Matrici</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inteprepretazione-del-contenuto-di-una-matrice">6.3.1. Inteprepretazione del contenuto di una matrice</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni">6.3.2. Operazioni</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#determinante">6.3.3. Determinante</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matrice-come-funzione-lineare">6.3.4. Matrice come funzione lineare</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rango-e-nucleo">6.3.5. Rango e nucleo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matrice-come-funzione-lineare">6.3.3. Matrice come funzione lineare</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#immagine-e-nucleo">6.3.4. Immagine e nucleo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#determinante">6.3.5. Determinante</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#risoluzione-di-sistemi">6.4. Risoluzione di Sistemi</a><ul class="nav section-nav flex-column">
