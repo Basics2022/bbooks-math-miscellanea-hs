@@ -505,7 +505,10 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretazione-geometrica">6.5.1. Interpretazione geometrica</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi">6.6. Problemi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi">6.6. Problemi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matrici-come-funzione-lineare">6.6.1. Matrici come funzione lineare</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -795,6 +798,78 @@ E3: \ x_2 + 2 ( -1 - 2 x_2 ) = 1 \quad \rightarrow \quad x_2 = -1 \ .
 </div>
 <div class="section" id="problemi">
 <span id="math-hs-algebra-linear-problems"></span><h2><span class="section-number">6.6. </span>Problemi<a class="headerlink" href="#problemi" title="Permalink to this heading">#</a></h2>
+<div class="section" id="matrici-come-funzione-lineare">
+<h3><span class="section-number">6.6.1. </span>Matrici come funzione lineare<a class="headerlink" href="#matrici-come-funzione-lineare" title="Permalink to this heading">#</a></h3>
+<div class="exercise admonition" id="ch/algebra/linear-algebra-exercise-9">
+
+<p class="admonition-title"><span class="caption-number">Exercise 6.1 </span> (Matrici e scalatura)</p>
+<div class="section" id="exercise-content">
+<p>Interpretando gli elementi di un vettore colonna <span class="math notranslate nohighlight">\(\mathbf{x} \in \mathbb{R}^2\)</span> come le componenti cartesiane del vettore <span class="math notranslate nohighlight">\(\vec{x}\)</span> in un piano, la matrice <span class="math notranslate nohighlight">\(\mathbf{A} \in \mathbb{R}^{2,2}\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\mathbf{A} = \begin{bmatrix} a &amp; 0 \\ 0 &amp; b \end{bmatrix} \ ,\end{split}\]</div>
+<p>rappresenta una scalatura non isotropa (diversa lungo le diverse direzioni) delle componenti dei vettori di un fattore <span class="math notranslate nohighlight">\(a\)</span> in direzione <span class="math notranslate nohighlight">\(x\)</span> e di un fattore <span class="math notranslate nohighlight">\(b\)</span> in direzione <span class="math notranslate nohighlight">\(y\)</span>.</p>
+<ul class="simple">
+<li><p>Dimostrare questa frase, calcolando il prodotto <span class="math notranslate nohighlight">\(\mathbf{A} \mathbf{r}\)</span> per il vettore colonna generico <span class="math notranslate nohighlight">\(\mathbf{r} = \begin{bmatrix} x \\ y \end{bmatrix}\)</span> contenente le componenti cartesiane del vettore <span class="math notranslate nohighlight">\(\vec{r}\)</span> nel piano</p></li>
+<li><p>Dare una rappresentazione grafica nel piano</p></li>
+<li><p>Dimostrare che il determinante della matrice è uguale a <span class="math notranslate nohighlight">\(ab\)</span>, <span class="math notranslate nohighlight">\(|\mathbf{A}| = ab\)</span></p></li>
+<li><p>Dimostrare che la trasformazione inversa <span class="math notranslate nohighlight">\(\mathbf{A}^-1\)</span> esiste per <span class="math notranslate nohighlight">\(a \ne 0 \land b \ne 0\)</span>, e vale <span class="math notranslate nohighlight">\(\mathbf{A}^{-1} = \begin{bmatrix} \frac{1}{a} &amp; 0 \\ 0 &amp; \frac{1}{b} \end{bmatrix}\)</span></p></li>
+<li><p>Discutere il caso in cui <span class="math notranslate nohighlight">\(a = b\)</span>, dove la scalatura è isotropa.</p></li>
+<li><p>Dimostrare che questa trasformazione rappresenta la riflessione rispetto all’origine nel caso in cui <span class="math notranslate nohighlight">\(a = b = -1\)</span></p></li>
+</ul>
+</div>
+</div>
+<div class="exercise admonition" id="ch/algebra/linear-algebra-exercise-10">
+
+<p class="admonition-title"><span class="caption-number">Exercise 6.2 </span> (Matrici e riflessioni)</p>
+<div class="section" id="exercise-content">
+<p>Interpretando gli elementi di un vettore colonna <span class="math notranslate nohighlight">\(\mathbf{x} \in \mathbb{R}^2\)</span> come le componenti cartesiane del vettore <span class="math notranslate nohighlight">\(\vec{x}\)</span> in un piano, la matrice <span class="math notranslate nohighlight">\(\mathbf{A} \in \mathbb{R}^{2,2}\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\mathbf{A} = \begin{bmatrix} 1 - 2 n_x^2 &amp; - 2 n_x n_y \\  - 2 n_x n_y &amp; 1 - 2 n_y^2 \end{bmatrix} \ ,\end{split}\]</div>
+<p>rappresenta una riflessione di vettori del piano rispetto a una retta passante per l’origine e perpendicolare al vettore <span class="math notranslate nohighlight">\(\vec{n}\)</span> con componenti <span class="math notranslate nohighlight">\(n_x\)</span>, <span class="math notranslate nohighlight">\(n_y\)</span>.</p>
+<ul class="simple">
+<li><p>Dimostrare questa frase, calcolando il prodotto <span class="math notranslate nohighlight">\(\mathbf{A} \mathbf{r}\)</span> per il vettore colonna generico <span class="math notranslate nohighlight">\(\mathbf{r} = \begin{bmatrix} x \\ y \end{bmatrix}\)</span> contenente le componenti cartesiane del vettore <span class="math notranslate nohighlight">\(\vec{r}\)</span> nel piano</p></li>
+<li><p>Dare una rappresentazione grafica nel piano</p></li>
+<li><p>Dimostrare che il determinante della matrice è uguale a -1, <span class="math notranslate nohighlight">\(|\mathbf{A}| = -1\)</span></p></li>
+<li><p>Dimostrare che la trasformazione inversa <span class="math notranslate nohighlight">\(\mathbf{A}^-1\)</span> esiste ed è uguale alla trasformazione originale, <span class="math notranslate nohighlight">\(\mathbf{A}^{-1} = \mathbf{A}\)</span></p></li>
+</ul>
+</div>
+</div>
+<div class="exercise admonition" id="ch/algebra/linear-algebra-exercise-11">
+
+<p class="admonition-title"><span class="caption-number">Exercise 6.3 </span> (Matrici e rotazioni)</p>
+<div class="section" id="exercise-content">
+<p>Interpretando gli elementi di un vettore colonna <span class="math notranslate nohighlight">\(\mathbf{x} \in \mathbb{R}^2\)</span> come le componenti cartesiane del vettore <span class="math notranslate nohighlight">\(\vec{x}\)</span> in un piano, la matrice <span class="math notranslate nohighlight">\(\mathbf{A} \in \mathbb{R}^{2,2}\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\mathbf{A} = \begin{bmatrix} \cos\theta &amp; \sin \theta \\ -\sin\theta &amp; \cos\theta \end{bmatrix} \ ,\end{split}\]</div>
+<p>rappresenta una rotazione dei vettori attorno all’origine di un angolo <span class="math notranslate nohighlight">\(\theta\)</span>.</p>
+<!--
+$$\mathbf{A} = \begin{bmatrix} \cos\theta & \sin \theta \\ -\sin\theta & \cos\theta \end{bmatrix} \ ,$$
+
+con $a^2 + b^2 = 1$ rappresenta una rotazione dei vettori attorno all'origine.
+-->
+<ul class="simple">
+<li><p>Dimostrare questa frase, calcolando il prodotto <span class="math notranslate nohighlight">\(\mathbf{A} \mathbf{r}\)</span> per il vettore colonna generico <span class="math notranslate nohighlight">\(\mathbf{r} = \begin{bmatrix} x \\ y \end{bmatrix}\)</span> contenente le componenti cartesiane del vettore <span class="math notranslate nohighlight">\(\vec{r}\)</span> nel piano</p></li>
+<li><p>Dare una rappresentazione grafica nel piano</p></li>
+<li><p>Dimostrare che il determinante della matrice è uguale a 1, <span class="math notranslate nohighlight">\(|\mathbf{A}| = 1\)</span></p></li>
+<li><p>Dimostrare che la trasformazione inversa <span class="math notranslate nohighlight">\(\mathbf{A}^-1\)</span> esiste ed è uguale alla trasposta della trasformazione, <span class="math notranslate nohighlight">\(\mathbf{A}^{-1} = \mathbf{A}^T\)</span></p></li>
+</ul>
+<p><strong>todo</strong> Si può sostituire <span class="math notranslate nohighlight">\(\cos \theta = a\)</span>, <span class="math notranslate nohighlight">\(\sin \theta = b\)</span> con <span class="math notranslate nohighlight">\(a^2 + b^2 = 1\)</span></p>
+<p><strong>todo</strong> Dipendenza logica di questo esercizio dalle basi di <a class="reference internal" href="../trigonometry.html#math-hs-trigonometry"><span class="std std-ref">trigonometria</span></a>. Stabilire un ordine consigliato di accesso a questo <span class="math notranslate nohighlight">\(\texttt{bbook}\)</span></p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/algebra/linear-algebra-exercise-12">
+
+<p class="admonition-title"><span class="caption-number">Exercise 6.4 </span> (Scomposizione di una matrice - somma di parte simmetrica e antisimmetrica)</p>
+<div class="section" id="exercise-content">
+<p>Ogni matrice può essere scritta come la somma di una parte simmetrica e una parte antisimmetrica.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/algebra/linear-algebra-exercise-13">
+
+<p class="admonition-title"><span class="caption-number">Exercise 6.5 </span> (Scomposizione di una matrice - …)</p>
+<div class="section" id="exercise-content">
+</div>
+</div>
 <p>Viene chiesto di stabilire se i seguenti problemi hanno soluzione, di calcolare le eventuali soluzioni, fornire una rappresentazione grafica del problema algebrico, e - per sistemi con uguale numero di equazioni ed incognite - calcolare il determinante delle matrici del sistema lineare.</p>
 <ol class="arabic">
 <li><p>Risolvi il sistema:</p>
@@ -1071,6 +1146,7 @@ $$
 </dl>
 </div>
 </div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1155,7 +1231,10 @@ $$
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretazione-geometrica">6.5.1. Interpretazione geometrica</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi">6.6. Problemi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi">6.6. Problemi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matrici-come-funzione-lineare">6.6.1. Matrici come funzione lineare</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

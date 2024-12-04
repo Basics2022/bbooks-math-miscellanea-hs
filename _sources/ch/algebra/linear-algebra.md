@@ -300,6 +300,67 @@ $$\begin{aligned}
 
 (math-hs:algebra:linear:problems)=
 ## Problemi
+
+### Matrici come funzione lineare
+```{exercise} Matrici e scalatura
+Interpretando gli elementi di un vettore colonna $\mathbf{x} \in \mathbb{R}^2$ come le componenti cartesiane del vettore $\vec{x}$ in un piano, la matrice $\mathbf{A} \in \mathbb{R}^{2,2}$ 
+
+$$\mathbf{A} = \begin{bmatrix} a & 0 \\ 0 & b \end{bmatrix} \ ,$$
+
+rappresenta una scalatura non isotropa (diversa lungo le diverse direzioni) delle componenti dei vettori di un fattore $a$ in direzione $x$ e di un fattore $b$ in direzione $y$.
+
+- Dimostrare questa frase, calcolando il prodotto $\mathbf{A} \mathbf{r}$ per il vettore colonna generico $\mathbf{r} = \begin{bmatrix} x \\ y \end{bmatrix}$ contenente le componenti cartesiane del vettore $\vec{r}$ nel piano
+- Dare una rappresentazione grafica nel piano
+- Dimostrare che il determinante della matrice è uguale a $ab$, $|\mathbf{A}| = ab$
+- Dimostrare che la trasformazione inversa $\mathbf{A}^-1$ esiste per $a \ne 0 \land b \ne 0$, e vale $\mathbf{A}^{-1} = \begin{bmatrix} \frac{1}{a} & 0 \\ 0 & \frac{1}{b} \end{bmatrix}$
+- Discutere il caso in cui $a = b$, dove la scalatura è isotropa.
+- Dimostrare che questa trasformazione rappresenta la riflessione rispetto all'origine nel caso in cui $a = b = -1$
+
+```
+```{exercise} Matrici e riflessioni
+Interpretando gli elementi di un vettore colonna $\mathbf{x} \in \mathbb{R}^2$ come le componenti cartesiane del vettore $\vec{x}$ in un piano, la matrice $\mathbf{A} \in \mathbb{R}^{2,2}$ 
+
+$$\mathbf{A} = \begin{bmatrix} 1 - 2 n_x^2 & - 2 n_x n_y \\  - 2 n_x n_y & 1 - 2 n_y^2 \end{bmatrix} \ ,$$
+
+rappresenta una riflessione di vettori del piano rispetto a una retta passante per l'origine e perpendicolare al vettore $\vec{n}$ con componenti $n_x$, $n_y$.
+
+- Dimostrare questa frase, calcolando il prodotto $\mathbf{A} \mathbf{r}$ per il vettore colonna generico $\mathbf{r} = \begin{bmatrix} x \\ y \end{bmatrix}$ contenente le componenti cartesiane del vettore $\vec{r}$ nel piano
+- Dare una rappresentazione grafica nel piano
+- Dimostrare che il determinante della matrice è uguale a -1, $|\mathbf{A}| = -1$
+- Dimostrare che la trasformazione inversa $\mathbf{A}^-1$ esiste ed è uguale alla trasformazione originale, $\mathbf{A}^{-1} = \mathbf{A}$
+
+```
+```{exercise} Matrici e rotazioni
+Interpretando gli elementi di un vettore colonna $\mathbf{x} \in \mathbb{R}^2$ come le componenti cartesiane del vettore $\vec{x}$ in un piano, la matrice $\mathbf{A} \in \mathbb{R}^{2,2}$ 
+
+$$\mathbf{A} = \begin{bmatrix} \cos\theta & \sin \theta \\ -\sin\theta & \cos\theta \end{bmatrix} \ ,$$
+
+rappresenta una rotazione dei vettori attorno all'origine di un angolo $\theta$.
+
+<!--
+$$\mathbf{A} = \begin{bmatrix} \cos\theta & \sin \theta \\ -\sin\theta & \cos\theta \end{bmatrix} \ ,$$
+
+con $a^2 + b^2 = 1$ rappresenta una rotazione dei vettori attorno all'origine.
+-->
+
+- Dimostrare questa frase, calcolando il prodotto $\mathbf{A} \mathbf{r}$ per il vettore colonna generico $\mathbf{r} = \begin{bmatrix} x \\ y \end{bmatrix}$ contenente le componenti cartesiane del vettore $\vec{r}$ nel piano
+- Dare una rappresentazione grafica nel piano
+- Dimostrare che il determinante della matrice è uguale a 1, $|\mathbf{A}| = 1$
+- Dimostrare che la trasformazione inversa $\mathbf{A}^-1$ esiste ed è uguale alla trasposta della trasformazione, $\mathbf{A}^{-1} = \mathbf{A}^T$
+
+**todo** Si può sostituire $\cos \theta = a$, $\sin \theta = b$ con $a^2 + b^2 = 1$
+
+**todo** Dipendenza logica di questo esercizio dalle basi di [trigonometria](math-hs:trigonometry). Stabilire un ordine consigliato di accesso a questo $\texttt{bbook}$
+```
+```{exercise} Scomposizione di una matrice - somma di parte simmetrica e antisimmetrica
+Ogni matrice può essere scritta come la somma di una parte simmetrica e una parte antisimmetrica.
+
+```
+```{exercise} Scomposizione di una matrice - ...
+```
+
+
+
 Viene chiesto di stabilire se i seguenti problemi hanno soluzione, di calcolare le eventuali soluzioni, fornire una rappresentazione grafica del problema algebrico, e - per sistemi con uguale numero di equazioni ed incognite - calcolare il determinante delle matrici del sistema lineare.
 
 1. Risolvi il sistema:
