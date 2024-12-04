@@ -177,6 +177,13 @@ Un'equazione con due incognite $x,y$ è una relazione di uguaglianza che può es
 
 e delle equazioni ricavabili da queste con una trasformazione *affine* di incognite, nella forma $u = a_u (x-b_x)$, $v = a_v (y-b_y)$, corrispondenti a traslazioni del grafico e scalatura nelle direzioni dei due assi.
 
+```{list-table}
+:header-rows: 0
+* - ![](../media/ggb-line.png)
+  - ![](../media/ggb-par.png)
+  - ![](../media/ggb-inverse.png)
+  - ![](../media/ggb-circle.png)
+```
 
 ## Problemi con due o più incognite - sistemi di equazioni e disequazioni
 Un sistema di equazioni è un insieme di equazioni da risolvere simultaneamente. I sistemi di equazioni (e di disequazioni) consentono di introdurre l'[algebra su $\mathbb{R}^n$](math-hs:algebra:real-n), descritta nel capitolo successivo. 
