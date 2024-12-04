@@ -48,7 +48,7 @@ a_{11} & a_{12} & \dots & a_{1n} \\
 a_{m1} & a_{m2} & \dots & a_{mn}
 \end{bmatrix} = 
 \begin{bmatrix} \mathbf{a}_{col,1} | \mathbf{a}^{col,2} | \dots | \mathbf{a}_{col,n} \end{bmatrix} = 
-\begin{bmatrix} \mathbf{a}^T_{row,1} \\ \hline \\ \dots \\ \hline \mathbf{a}^T_{row,m} \end{matrix}
+\begin{bmatrix} \mathbf{a}^T_{row,1} \\ \hline \\ \dots \\ \hline \mathbf{a}^T_{row,m} \end{bmatrix}
 $$
 
 
