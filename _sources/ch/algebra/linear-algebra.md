@@ -155,17 +155,25 @@ La definizione e una discussione completa del determinante di una matrice vanno 
 
 **todo** *Espressione del determinante per matrici 2x2, 3x3; mettere in evidenza la comparsa del determinante nei metodi di soluzione sotto*
 
+(math-hs:algebra:linear:matrices:range-null)=
+### Matrice come funzione lineare
+Tramite il prodotto matrice vettore (colonna), una matrice $\mathbf{R}^{m,n}$ rappresenta la funzione lineare più generale $f_A: \mathbb{R}^n \rightarrow \mathbb{R}^m$, che prende un vettore colonna $\mathbf{x} \in \mathbb{R}^n$ come argomento e restituisce un vettore $\mathbf{y} \in \mathbb{R}^m$,
+
+$\mathbf{y} = f(\mathbf{x}) = \mathbb{A} \mathbf{x} \ .$
+
+Si lasciano dimostrare le proprietà di linearità di questa funzione come esercizio (*consiglio: utilizzare le [operazioni matriciali*](math-hs:algebra:linear:matrices:operations))
 
 (math-hs:algebra:linear:matrices:range-null)=
 ### Rango e nucleo
-**todo** ...
+Rango e nucleo sono due insiemi[^range-null-vspace] che des
 
+[^range-null-vspace]:Rango e nucleo non sono semplici insiemi, ma hanno qualche proprietà in più che li rende [spazi vettoriali](math-hs:algebra:vector:def). Per quello che ci serve qui, possiamo considerarli insiemi.
 
 (math-hs:algebra:linear:linear-system-sol)=
 ## Risoluzione di Sistemi
 La soluzione dei sistemi lineari è una delle attività più frequenti nelle applicazioni di matematica, soprattutto negli algoritmi di calcolo numerico; non ci occuperemo qui dei metodi numerici di soluzione dei sistemi lineari, ma si discutono diversi approcci alla soluzione analitica "a manina" di sistemi lineari, utili per il calcolo analitico della soluzione esatta di sistemi lineari di dimensioni sufficientemente ridotte (3, salvo casi eccezionali...).
 
-Come descritto dal [teorema di Rouché-Capelli](), esistono 3 possibili situazioni: il sistema lineare ha 1. una sola soluzione; 2. un numero infinito di soluzioni; 3. nessuna soluzione.
+Come descritto dal [teorema di Rouché-Capelli](math-hs:algebra:linear:rouche-capelli), esistono 3 possibili situazioni: il sistema lineare ha 1. una sola soluzione; 2. un numero infinito di soluzioni; 3. nessuna soluzione.
 
 I metodi presentati sono tra di loro equivalenti, intendendo che portano alla stessa soluzione. **todo** *Equivalenti nel caso esista una soluzione unica. Danno le stesse informazioni anche nel caso esistano infinite soluzioni o non esistano soluzioni? Riguardo il rango e/o il nucleo...*
 

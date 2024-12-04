@@ -491,7 +491,8 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inteprepretazione-del-contenuto-di-una-matrice">6.3.1. Inteprepretazione del contenuto di una matrice</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni">6.3.2. Operazioni</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#determinante">6.3.3. Determinante</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rango-e-nucleo">6.3.4. Rango e nucleo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matrice-come-funzione-lineare">6.3.4. Matrice come funzione lineare</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rango-e-nucleo">6.3.5. Rango e nucleo</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#risoluzione-di-sistemi">6.4. Risoluzione di Sistemi</a><ul class="nav section-nav flex-column">
@@ -663,15 +664,21 @@ a_{m1} &amp; a_{m2} &amp; \dots &amp; a_{mn}
 <p>La definizione e una discussione completa del determinante di una matrice vanno ben oltre (<strong>todo</strong> <em>probabilmente</em>) lo scopo di questo materiale.</p>
 <p><strong>todo</strong> <em>Espressione del determinante per matrici 2x2, 3x3; mettere in evidenza la comparsa del determinante nei metodi di soluzione sotto</em></p>
 </div>
+<div class="section" id="matrice-come-funzione-lineare">
+<span id="math-hs-algebra-linear-matrices-range-null"></span><h3><span class="section-number">6.3.4. </span>Matrice come funzione lineare<a class="headerlink" href="#matrice-come-funzione-lineare" title="Permalink to this heading">#</a></h3>
+<p>Tramite il prodotto matrice vettore (colonna), una matrice <span class="math notranslate nohighlight">\(\mathbf{R}^{m,n}\)</span> rappresenta la funzione lineare più generale <span class="math notranslate nohighlight">\(f_A: \mathbb{R}^n \rightarrow \mathbb{R}^m\)</span>, che prende un vettore colonna <span class="math notranslate nohighlight">\(\mathbf{x} \in \mathbb{R}^n\)</span> come argomento e restituisce un vettore <span class="math notranslate nohighlight">\(\mathbf{y} \in \mathbb{R}^m\)</span>,</p>
+<p><span class="math notranslate nohighlight">\(\mathbf{y} = f(\mathbf{x}) = \mathbb{A} \mathbf{x} \ .\)</span></p>
+<p>Si lasciano dimostrare le proprietà di linearità di questa funzione come esercizio (*consiglio: utilizzare le <a class="reference internal" href="#math-hs-algebra-linear-matrices-operations"><span class="std std-ref">operazioni matriciali*</span></a>)</p>
+</div>
 <div class="section" id="rango-e-nucleo">
-<span id="math-hs-algebra-linear-matrices-range-null"></span><h3><span class="section-number">6.3.4. </span>Rango e nucleo<a class="headerlink" href="#rango-e-nucleo" title="Permalink to this heading">#</a></h3>
-<p><strong>todo</strong> …</p>
+<span id="id1"></span><h3><span class="section-number">6.3.5. </span>Rango e nucleo<a class="headerlink" href="#rango-e-nucleo" title="Permalink to this heading">#</a></h3>
+<p>Rango e nucleo sono due insiemi<a class="footnote-reference brackets" href="#range-null-vspace" id="id2">1</a> che des</p>
 </div>
 </div>
 <div class="section" id="risoluzione-di-sistemi">
 <span id="math-hs-algebra-linear-linear-system-sol"></span><h2><span class="section-number">6.4. </span>Risoluzione di Sistemi<a class="headerlink" href="#risoluzione-di-sistemi" title="Permalink to this heading">#</a></h2>
 <p>La soluzione dei sistemi lineari è una delle attività più frequenti nelle applicazioni di matematica, soprattutto negli algoritmi di calcolo numerico; non ci occuperemo qui dei metodi numerici di soluzione dei sistemi lineari, ma si discutono diversi approcci alla soluzione analitica «a manina» di sistemi lineari, utili per il calcolo analitico della soluzione esatta di sistemi lineari di dimensioni sufficientemente ridotte (3, salvo casi eccezionali…).</p>
-<p>Come descritto dal <a class="reference internal" href="../algebra.html"><span class="doc std std-doc">teorema di Rouché-Capelli</span></a>, esistono 3 possibili situazioni: il sistema lineare ha 1. una sola soluzione; 2. un numero infinito di soluzioni; 3. nessuna soluzione.</p>
+<p>Come descritto dal <a class="reference internal" href="#math-hs-algebra-linear-rouche-capelli"><span class="std std-ref">teorema di Rouché-Capelli</span></a>, esistono 3 possibili situazioni: il sistema lineare ha 1. una sola soluzione; 2. un numero infinito di soluzioni; 3. nessuna soluzione.</p>
 <p>I metodi presentati sono tra di loro equivalenti, intendendo che portano alla stessa soluzione. <strong>todo</strong> <em>Equivalenti nel caso esista una soluzione unica. Danno le stesse informazioni anche nel caso esistano infinite soluzioni o non esistano soluzioni? Riguardo il rango e/o il nucleo…</em></p>
 <div class="section" id="metodo-di-sostituzione">
 <span id="math-hs-algebra-linear-linear-system-sol-substitution"></span><h3><span class="section-number">6.4.1. </span>Metodo di sostituzione<a class="headerlink" href="#metodo-di-sostituzione" title="Permalink to this heading">#</a></h3>
@@ -1054,6 +1061,12 @@ x + 2y = 5 \\
 $$
 
 -->
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="range-null-vspace"><span class="brackets"><a class="fn-backref" href="#id2">1</a></span></dt>
+<dd><p>Rango e nucleo non sono semplici insiemi, ma hanno qualche proprietà in più che li rende <a class="reference internal" href="vector-algebra-def.html#math-hs-algebra-vector-def"><span class="std std-ref">spazi vettoriali</span></a>. Per quello che ci serve qui, possiamo considerarli insiemi.</p>
+</dd>
+</dl>
 </div>
 </div>
 
@@ -1126,7 +1139,8 @@ $$
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inteprepretazione-del-contenuto-di-una-matrice">6.3.1. Inteprepretazione del contenuto di una matrice</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni">6.3.2. Operazioni</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#determinante">6.3.3. Determinante</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rango-e-nucleo">6.3.4. Rango e nucleo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matrice-come-funzione-lineare">6.3.4. Matrice come funzione lineare</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rango-e-nucleo">6.3.5. Rango e nucleo</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#risoluzione-di-sistemi">6.4. Risoluzione di Sistemi</a><ul class="nav section-nav flex-column">
