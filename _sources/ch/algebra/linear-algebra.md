@@ -49,11 +49,11 @@ a_{m1} & a_{m2} & \dots & a_{mn}
 \end{bmatrix} = 
 \left[ \begin{array}{c|c|c|c}
                    &                    &       &                    \\
-\mathbf{a}_{col,1} & \mathbf{a}^{col,2} & \dots & \mathbf{a}_{col,n} \\
+\mathbf{a}_{col,1} & \mathbf{a}_{col,2} & \dots & \mathbf{a}_{col,n} \\
                    &                    &       &                    \\
 \end{array}
 \right] = 
-\begin{bmatrix} \mathbf{a}^T_{row,1} \\ \hline \\ \dots \\ \hline \mathbf{a}^T_{row,m} \end{bmatrix}
+\begin{bmatrix} \quad \mathbf{a}^T_{row,1} \quad  \\ \hline \quad \dots \quad  \\ \hline \quad \mathbf{a}^T_{row,m} \quad \end{bmatrix}
 $$
 
 
