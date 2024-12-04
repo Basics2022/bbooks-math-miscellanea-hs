@@ -316,7 +316,7 @@ $$\begin{aligned}
 
 ### Matrici come funzione lineare
 ```{exercise} Matrici e scalatura
-:class: drodpown
+:class: dropdown
 
 Interpretando gli elementi di un vettore colonna $\mathbf{x} \in \mathbb{R}^2$ come le componenti cartesiane del vettore $\vec{x}$ in un piano, la matrice $\mathbf{A} \in \mathbb{R}^{2,2}$ 
 
@@ -333,7 +333,7 @@ rappresenta una scalatura non isotropa (diversa lungo le diverse direzioni) dell
 
 ```
 ```{exercise} Matrici e riflessioni
-:class: drodpown
+:class: dropdown
 
 Interpretando gli elementi di un vettore colonna $\mathbf{x} \in \mathbb{R}^2$ come le componenti cartesiane del vettore $\vec{x}$ in un piano, la matrice $\mathbf{A} \in \mathbb{R}^{2,2}$ 
 
@@ -348,7 +348,7 @@ rappresenta una riflessione di vettori del piano rispetto a una retta passante p
 
 ```
 ```{exercise} Matrici e rotazioni
-:class: drodpown
+:class: dropdown
 
 Interpretando gli elementi di un vettore colonna $\mathbf{x} \in \mathbb{R}^2$ come le componenti cartesiane del vettore $\vec{x}$ in un piano, la matrice $\mathbf{A} \in \mathbb{R}^{2,2}$ 
 
@@ -373,7 +373,7 @@ con $a^2 + b^2 = 1$ rappresenta una rotazione dei vettori attorno all'origine.
 ```
 
 ```{exercise} Proiezione ortogonale lungo una direzione data
-:class: drodpown
+:class: dropdown
 
 Interpretando gli elementi di un vettore colonna $\mathbf{x} \in \mathbb{R}^2$ come le componenti cartesiane del vettore $\vec{x}$ in un piano, la matrice $\mathbf{A} \in \mathbb{R}^{2,2}$ 
 
@@ -390,7 +390,7 @@ rappresenta una proiezione ortogonale dei punti del piano sulla retta passante p
 ```
 
 ```{exercise} Proiezione ortogonale nella direzione perpendicolare a una direzione data
-:class: drodpown
+:class: dropdown
 
 Interpretando gli elementi di un vettore colonna $\mathbf{x} \in \mathbb{R}^2$ come le componenti cartesiane del vettore $\vec{x}$ in un piano, la matrice $\mathbf{A} \in \mathbb{R}^{2,2}$ 
 
@@ -406,13 +406,13 @@ rappresenta una proiezione ortogonale dei punti del piano sulla retta passante p
 ```
 
 ```{exercise} Scomposizione di una matrice - somma di parte simmetrica e antisimmetrica
-:class: drodpown
+:class: dropdown
 
 Ogni matrice può essere scritta come la somma di una parte simmetrica e una parte antisimmetrica.
 
 ```
 ```{exercise} Scomposizione di una matrice - ...
-:class: drodpown
+:class: dropdown
 
 ```
 
