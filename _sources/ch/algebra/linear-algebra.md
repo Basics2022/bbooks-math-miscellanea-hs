@@ -51,6 +51,7 @@ a_{m1} & a_{m2} & \dots & a_{mn}
                    &                    &       &                    \\
 \mathbf{a}_{col,1} & \mathbf{a}^{col,2} & \dots & \mathbf{a}_{col,n} \\
                    &                    &       &                    \\
+\end{array}
 \right] = 
 \begin{bmatrix} \mathbf{a}^T_{row,1} \\ \hline \\ \dots \\ \hline \mathbf{a}^T_{row,m} \end{bmatrix}
 $$
