@@ -552,7 +552,17 @@ a_{11} &amp; a_{12} &amp; \dots &amp; a_{1n} \\
 a_{m1} &amp; a_{m2} &amp; \dots &amp; a_{mn}
 \end{bmatrix}
 \end{split}\]</div>
-<p><strong>Interpretazione del contenuto della matrice.</strong> Una matrice <span class="math notranslate nohighlight">\(\mathbf{A} \in \mathbb{R}^{m,n}\)</span> può essere interpretata come <span class="math notranslate nohighlight">\(n\)</span> <span class="math notranslate nohighlight">\(m\)</span>-uple <span class="math notranslate nohighlight">\(\mathbf{a}_i\)</span></p>
+<p><strong>Interpretazione del contenuto della matrice.</strong> Spesso risulta utile intepretare una matrice <span class="math notranslate nohighlight">\(\mathbf{A} \in \mathbb{R}^{m,n}\)</span> come una tabella di <span class="math notranslate nohighlight">\(n\)</span> colonne di <span class="math notranslate nohighlight">\(m\)</span>-tuple o <em>vettori colonna</em>, o come una tabella di <span class="math notranslate nohighlight">\(m\)</span> righe di <span class="math notranslate nohighlight">\(n\)</span>-tuple o <em>vettori riga</em>,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\mathbf{A} =
+\begin{bmatrix}
+a_{11} &amp; a_{12} &amp; \dots &amp; a_{1n} \\
+\dots  &amp; \dots  &amp; \dots &amp; \dots  \\
+a_{m1} &amp; a_{m2} &amp; \dots &amp; a_{mn}
+\end{bmatrix} = 
+\begin{bmatrix} \mathbf{a}_{col,1} | \mathbf{a}^{col,2} | \dots | \mathbf{a}_{col,n} \end{bmatrix} = 
+\begin{bmatrix} \mathbf{a}^T_{row,1} \\ \hline \\ \dots \\ \hline \mathbf{a}^T_{row,m}
+\end{split}\]</div>
 <div class="section" id="operazioni">
 <h3><span class="section-number">6.3.1. </span>Operazioni<a class="headerlink" href="#operazioni" title="Permalink to this heading">#</a></h3>
 <ul>

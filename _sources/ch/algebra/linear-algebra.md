@@ -39,7 +39,18 @@ a_{m1} & a_{m2} & \dots & a_{mn}
 \end{bmatrix}
 $$
 
-**Interpretazione del contenuto della matrice.** Una matrice $\mathbf{A} \in \mathbb{R}^{m,n}$ può essere interpretata come $n$ $m$-uple $\mathbf{a}_i$
+**Interpretazione del contenuto della matrice.** Spesso risulta utile intepretare una matrice $\mathbf{A} \in \mathbb{R}^{m,n}$ come una tabella di $n$ colonne di $m$-tuple o *vettori colonna*, o come una tabella di $m$ righe di $n$-tuple o *vettori riga*,
+
+$$\mathbf{A} =
+\begin{bmatrix}
+a_{11} & a_{12} & \dots & a_{1n} \\
+\dots  & \dots  & \dots & \dots  \\
+a_{m1} & a_{m2} & \dots & a_{mn}
+\end{bmatrix} = 
+\begin{bmatrix} \mathbf{a}_{col,1} | \mathbf{a}^{col,2} | \dots | \mathbf{a}_{col,n} \end{bmatrix} = 
+\begin{bmatrix} \mathbf{a}^T_{row,1} \\ \hline \\ \dots \\ \hline \mathbf{a}^T_{row,m}
+$$
+
 
 ### Operazioni
 - **Somma.** La somma è possibile tra due matrici con le stesse dimensioni $\mathbf{A},\, \mathbf{B} \in \mathbb{R}^{m,n}$. La somma di due matrici $\mathbf{A}$, $\mathbf{B}$ è la matrice $\mathbf{A} + \mathbf{B} \in \mathbb{R}^{m,n}$ con componenti
