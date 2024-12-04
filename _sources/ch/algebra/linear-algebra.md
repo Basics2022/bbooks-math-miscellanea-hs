@@ -124,7 +124,7 @@ $$
  1 \cdot 1 + 2 \cdot 1 & 1 \cdot (-1) + 2 \cdot 2 \\
  0 \cdot 1 + 1 \cdot 1 & 0 \cdot (-1) + 1 \cdot 2 \\
  \end{bmatrix} =
- \begin{bmatrix} -3 & 5 \\ -2 & 2 \end{bmatrix}
+ \begin{bmatrix}  3 & 3 \\  1 & 2 \end{bmatrix}
 $$
 
 $$
