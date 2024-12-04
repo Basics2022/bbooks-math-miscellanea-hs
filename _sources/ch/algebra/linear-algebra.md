@@ -159,9 +159,9 @@ La definizione e una discussione completa del determinante di una matrice vanno 
 ### Matrice come funzione lineare
 Tramite il prodotto matrice vettore (colonna), una matrice $\mathbf{R}^{m,n}$ rappresenta la funzione lineare più generale $f_A: \mathbb{R}^n \rightarrow \mathbb{R}^m$, che prende un vettore colonna $\mathbf{x} \in \mathbb{R}^n$ come argomento e restituisce un vettore $\mathbf{y} \in \mathbb{R}^m$,
 
-$\mathbf{y} = f(\mathbf{x}) = \mathbb{A} \mathbf{x} \ .$
+$$\mathbf{y} = f(\mathbf{x}) = \mathbb{A} \mathbf{x} \ .$$
 
-Si lasciano dimostrare le proprietà di linearità di questa funzione come esercizio (*consiglio: utilizzare le [operazioni matriciali*](math-hs:algebra:linear:matrices:operations))
+Si lasciano dimostrare le proprietà di linearità di questa funzione come esercizio (*consiglio: utilizzare le [operazioni matriciali](math-hs:algebra:linear:matrices:operations)*)
 
 (math-hs:algebra:linear:matrices:range-null)=
 ### Rango e nucleo
