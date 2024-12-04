@@ -316,6 +316,8 @@ $$\begin{aligned}
 
 ### Matrici come funzione lineare
 ```{exercise} Matrici e scalatura
+:class: drodpown
+
 Interpretando gli elementi di un vettore colonna $\mathbf{x} \in \mathbb{R}^2$ come le componenti cartesiane del vettore $\vec{x}$ in un piano, la matrice $\mathbf{A} \in \mathbb{R}^{2,2}$ 
 
 $$\mathbf{A} = \begin{bmatrix} a & 0 \\ 0 & b \end{bmatrix} \ ,$$
@@ -331,6 +333,8 @@ rappresenta una scalatura non isotropa (diversa lungo le diverse direzioni) dell
 
 ```
 ```{exercise} Matrici e riflessioni
+:class: drodpown
+
 Interpretando gli elementi di un vettore colonna $\mathbf{x} \in \mathbb{R}^2$ come le componenti cartesiane del vettore $\vec{x}$ in un piano, la matrice $\mathbf{A} \in \mathbb{R}^{2,2}$ 
 
 $$\mathbf{A} = \begin{bmatrix} 1 - 2 n_x^2 & - 2 n_x n_y \\  - 2 n_x n_y & 1 - 2 n_y^2 \end{bmatrix} \ ,$$
@@ -344,6 +348,8 @@ rappresenta una riflessione di vettori del piano rispetto a una retta passante p
 
 ```
 ```{exercise} Matrici e rotazioni
+:class: drodpown
+
 Interpretando gli elementi di un vettore colonna $\mathbf{x} \in \mathbb{R}^2$ come le componenti cartesiane del vettore $\vec{x}$ in un piano, la matrice $\mathbf{A} \in \mathbb{R}^{2,2}$ 
 
 $$\mathbf{A} = \begin{bmatrix} \cos\theta & \sin \theta \\ -\sin\theta & \cos\theta \end{bmatrix} \ ,$$
@@ -367,6 +373,8 @@ con $a^2 + b^2 = 1$ rappresenta una rotazione dei vettori attorno all'origine.
 ```
 
 ```{exercise} Proiezione ortogonale lungo una direzione data
+:class: drodpown
+
 Interpretando gli elementi di un vettore colonna $\mathbf{x} \in \mathbb{R}^2$ come le componenti cartesiane del vettore $\vec{x}$ in un piano, la matrice $\mathbf{A} \in \mathbb{R}^{2,2}$ 
 
 $$\mathbf{A} = \mathbf{n}^T \mathbf{n} = \begin{bmatrix} n_x^2 & n_x n_y \\  n_x n_y & n_y^2 \end{bmatrix} \ ,$$
@@ -382,6 +390,8 @@ rappresenta una proiezione ortogonale dei punti del piano sulla retta passante p
 ```
 
 ```{exercise} Proiezione ortogonale nella direzione perpendicolare a una direzione data
+:class: drodpown
+
 Interpretando gli elementi di un vettore colonna $\mathbf{x} \in \mathbb{R}^2$ come le componenti cartesiane del vettore $\vec{x}$ in un piano, la matrice $\mathbf{A} \in \mathbb{R}^{2,2}$ 
 
 $$\mathbf{A} = \mathbf{I} - \mathbf{n}^T \mathbf{n} = \begin{bmatrix} 1- n_x^2 & -n_x n_y \\ - n_x n_y & 1 - n_y^2 \end{bmatrix} \ ,$$
@@ -396,10 +406,14 @@ rappresenta una proiezione ortogonale dei punti del piano sulla retta passante p
 ```
 
 ```{exercise} Scomposizione di una matrice - somma di parte simmetrica e antisimmetrica
+:class: drodpown
+
 Ogni matrice può essere scritta come la somma di una parte simmetrica e una parte antisimmetrica.
 
 ```
 ```{exercise} Scomposizione di una matrice - ...
+:class: drodpown
+
 ```
 
 
