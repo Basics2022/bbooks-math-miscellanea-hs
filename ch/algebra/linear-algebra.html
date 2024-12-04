@@ -542,7 +542,7 @@ document.write(`
 <p>avendo raccolto i coefficienti <span class="math notranslate nohighlight">\(a_{ij}\)</span> nella matrice <span class="math notranslate nohighlight">\(\mathbf{A} \in \mathbb{R}^{m,n}\)</span>, una tabela di <span class="math notranslate nohighlight">\(m\)</span> righe e <span class="math notranslate nohighlight">\(n\)</span> colonne, le incognite <span class="math notranslate nohighlight">\(x_j\)</span> nella <span class="math notranslate nohighlight">\(n\)</span>-upla <span class="math notranslate nohighlight">\(\mathbf{x} \in \mathbb{R}^n\)</span> e i coefficienti <span class="math notranslate nohighlight">\(b_i\)</span> nella <span class="math notranslate nohighlight">\(m\)</span>-upla <span class="math notranslate nohighlight">\(\mathbf{b} \in \mathbb{R}^m\)</span>, organizzate in un <em>vettore colonna</em>. Il prodotto matrice-vettore colonna <span class="math notranslate nohighlight">\(\mathbf{A} \mathbf{x}\)</span> rimane definito dall’equivalenza delle diverse espressioni dello stesso sistema lineare.</p>
 </div>
 <div class="section" id="matrici">
-<span id="math-hs-algebra-linear-intro-matrices"></span><h2><span class="section-number">6.3. </span>Matrici<a class="headerlink" href="#matrici" title="Permalink to this heading">#</a></h2>
+<span id="math-hs-algebra-linear-matrices"></span><h2><span class="section-number">6.3. </span>Matrici<a class="headerlink" href="#matrici" title="Permalink to this heading">#</a></h2>
 <p><strong>Definizione.</strong> Una matrice <span class="math notranslate nohighlight">\(\mathbf{A} \in \mathbb{R}^{m,n}\)</span> è una tabella 2-dimensionale di numeri reali con <span class="math notranslate nohighlight">\(m\)</span> righe e <span class="math notranslate nohighlight">\(n\)</span> colonne,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -554,7 +554,7 @@ a_{m1} &amp; a_{m2} &amp; \dots &amp; a_{mn}
 \end{bmatrix}
 \end{split}\]</div>
 <div class="section" id="inteprepretazione-del-contenuto-di-una-matrice">
-<span id="math-hs-algebra-linear-intro-matrices-content"></span><h3><span class="section-number">6.3.1. </span>Inteprepretazione del contenuto di una matrice<a class="headerlink" href="#inteprepretazione-del-contenuto-di-una-matrice" title="Permalink to this heading">#</a></h3>
+<span id="math-hs-algebra-linear-matrices-content"></span><h3><span class="section-number">6.3.1. </span>Inteprepretazione del contenuto di una matrice<a class="headerlink" href="#inteprepretazione-del-contenuto-di-una-matrice" title="Permalink to this heading">#</a></h3>
 <p>Spesso risulta utile intepretare una matrice <span class="math notranslate nohighlight">\(\mathbf{A} \in \mathbb{R}^{m,n}\)</span> come una tabella di <span class="math notranslate nohighlight">\(n\)</span> colonne di <span class="math notranslate nohighlight">\(m\)</span>-tuple o <em>vettori colonna</em>, o come una tabella di <span class="math notranslate nohighlight">\(m\)</span> righe di <span class="math notranslate nohighlight">\(n\)</span>-tuple o <em>vettori riga</em>,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\mathbf{A} =
@@ -574,7 +574,7 @@ a_{m1} &amp; a_{m2} &amp; \dots &amp; a_{mn}
 <p>In seguito si faranno cadere i pedici <span class="math notranslate nohighlight">\(col\)</span> e <span class="math notranslate nohighlight">\(row\)</span> per motivi di sintesi, usando il simbolo <span class="math notranslate nohighlight">\(^T\)</span> per intendere un <em>vettore riga</em>, come vettore <strong>trasposto</strong> di un vettore colonna. Nel formalismo matriciale, un vettore colonna con <span class="math notranslate nohighlight">\(m\)</span> elementi viene quindi intepretato come una matrice <span class="math notranslate nohighlight">\(\in \mathbb{R}^{m,1}\)</span> di <span class="math notranslate nohighlight">\(m\)</span> righe e una colonna; viceversa un vettore riga con <span class="math notranslate nohighlight">\(n\)</span> elementi una matrice <span class="math notranslate nohighlight">\(\in \mathbb{R}^{1,n}\)</span> di una riga e <span class="math notranslate nohighlight">\(n\)</span> colonne.</p>
 </div>
 <div class="section" id="operazioni">
-<span id="math-hs-algebra-linear-intro-matrices-operations"></span><h3><span class="section-number">6.3.2. </span>Operazioni<a class="headerlink" href="#operazioni" title="Permalink to this heading">#</a></h3>
+<span id="math-hs-algebra-linear-matrices-operations"></span><h3><span class="section-number">6.3.2. </span>Operazioni<a class="headerlink" href="#operazioni" title="Permalink to this heading">#</a></h3>
 <ul>
 <li><p><strong>Somma.</strong> La somma è possibile tra due matrici con le stesse dimensioni <span class="math notranslate nohighlight">\(\mathbf{A},\, \mathbf{B} \in \mathbb{R}^{m,n}\)</span>. La somma di due matrici <span class="math notranslate nohighlight">\(\mathbf{A}\)</span>, <span class="math notranslate nohighlight">\(\mathbf{B}\)</span> è la matrice <span class="math notranslate nohighlight">\(\mathbf{A} + \mathbf{B} \in \mathbb{R}^{m,n}\)</span> con componenti</p>
 <div class="math notranslate nohighlight">
@@ -611,12 +611,12 @@ a_{m1} &amp; a_{m2} &amp; \dots &amp; a_{mn}
 <li><p><strong>Prodotto di matrici.</strong> Il prodotto <span class="math notranslate nohighlight">\(\mathbf{A} \mathbf{B}\)</span> tra matrici è possibile tra due matrici <span class="math notranslate nohighlight">\(\mathbf{A} \in \mathbb{R}^{m,p}\)</span>, <span class="math notranslate nohighlight">\(\mathbf{B} \in \mathbb{R}^{p,n}\)</span>, ed è la matrice <span class="math notranslate nohighlight">\(\mathbf{A} \mathbf{B} \in \mathbb{R}^{m,n}\)</span> con le componenti</p>
 <div class="math notranslate nohighlight">
 \[(\mathbf{A}\mathbf{B})_{ij} = \sum_{k=1}^{n} a_{in} b_{nj} = \mathbf{a}_i^T \mathbf{b}_j \ .\]</div>
-<p>avendo usanto l”<a class="reference internal" href="#math-hs-algebra-linear-intro-matrices-content"><span class="std std-ref">intepretazione dei componenti di una matrice in vettori riga e colonna</span></a>, per esprimere l’elemento <span class="math notranslate nohighlight">\(ij\)</span> della matrice <span class="math notranslate nohighlight">\(\mathbf{A} \mathbf{B}\)</span> come prodotto matriciale della <span class="math notranslate nohighlight">\(i\)</span>-esima riga di <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> con la <span class="math notranslate nohighlight">\(j\)</span>-esima colonna di <span class="math notranslate nohighlight">\(\mathbf{B}\)</span>.</p>
+<p>avendo usanto l”<a class="reference internal" href="#math-hs-algebra-linear-matrices-content"><span class="std std-ref">intepretazione dei componenti di una matrice in vettori riga e colonna</span></a>, per esprimere l’elemento <span class="math notranslate nohighlight">\(ij\)</span> della matrice <span class="math notranslate nohighlight">\(\mathbf{A} \mathbf{B}\)</span> come prodotto matriciale della <span class="math notranslate nohighlight">\(i\)</span>-esima riga di <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> con la <span class="math notranslate nohighlight">\(j\)</span>-esima colonna di <span class="math notranslate nohighlight">\(\mathbf{B}\)</span>.</p>
 <p><strong>Osservazione.</strong> <strong>Non</strong> vale la <strong>proprietà commutativa</strong> per il prodotto di matrici. Per di più, in generale non è possibile formare il prodotto <span class="math notranslate nohighlight">\(\mathbf{B} \mathbf{A}\)</span>, se <span class="math notranslate nohighlight">\(m \ne n\)</span>.</p>
 </li>
 </ul>
-<div class="proof example admonition" id="example-0">
-<p class="admonition-title"><span class="caption-number">Example 6.1 </span></p>
+<div class="proof example dropdown admonition" id="example-0">
+<p class="admonition-title"><span class="caption-number">Example 6.1 </span> (Non-commutatività del prodotto matriciale)</p>
 <div class="example-content section" id="proof-content">
 <p>Date le matrici <span class="math notranslate nohighlight">\(\in \mathbf{R}^{2,2}\)</span>,</p>
 <div class="math notranslate nohighlight">
@@ -649,30 +649,32 @@ a_{m1} &amp; a_{m2} &amp; \dots &amp; a_{mn}
 </div><div class="proof example admonition" id="example-1">
 <p class="admonition-title"><span class="caption-number">Example 6.2 </span></p>
 <div class="example-content section" id="proof-content">
+<p><strong>todo</strong></p>
 </div>
 </div><div class="proof example admonition" id="example-2">
 <p class="admonition-title"><span class="caption-number">Example 6.3 </span></p>
 <div class="example-content section" id="proof-content">
+<p><strong>todo</strong></p>
 </div>
 </div></div>
 <div class="section" id="determinante">
-<h3><span class="section-number">6.3.3. </span>Determinante<a class="headerlink" href="#determinante" title="Permalink to this heading">#</a></h3>
+<span id="math-hs-algebra-linear-matrices-det"></span><h3><span class="section-number">6.3.3. </span>Determinante<a class="headerlink" href="#determinante" title="Permalink to this heading">#</a></h3>
 <p>Per una matrice quadrata <span class="math notranslate nohighlight">\(\mathbf{A} \in \mathbb{R}^{n,n}\)</span> è possibile definire una grandezza scalare, definita <strong>determinante</strong>, il cui nome dovrebbe farne intuire la rilevanza: essa infatti riassume alcune caratteristiche della matrice e, tra le altre, determina un criterio di esistenza della matrice inversa e un criterio di esistenza e di unicità della soluzione di un sistema lineare, <span class="math notranslate nohighlight">\(\mathbf{A} \mathbf{x} = \mathbf{b}\)</span>.</p>
 <p>La definizione e una discussione completa del determinante di una matrice vanno ben oltre (<strong>todo</strong> <em>probabilmente</em>) lo scopo di questo materiale.</p>
 <p><strong>todo</strong> <em>Espressione del determinante per matrici 2x2, 3x3; mettere in evidenza la comparsa del determinante nei metodi di soluzione sotto</em></p>
 </div>
 <div class="section" id="rango-e-nucleo">
-<h3><span class="section-number">6.3.4. </span>Rango e nucleo<a class="headerlink" href="#rango-e-nucleo" title="Permalink to this heading">#</a></h3>
+<span id="math-hs-algebra-linear-matrices-range-null"></span><h3><span class="section-number">6.3.4. </span>Rango e nucleo<a class="headerlink" href="#rango-e-nucleo" title="Permalink to this heading">#</a></h3>
 <p><strong>todo</strong> …</p>
 </div>
 </div>
 <div class="section" id="risoluzione-di-sistemi">
-<h2><span class="section-number">6.4. </span>Risoluzione di Sistemi<a class="headerlink" href="#risoluzione-di-sistemi" title="Permalink to this heading">#</a></h2>
+<span id="math-hs-algebra-linear-linear-system-sol"></span><h2><span class="section-number">6.4. </span>Risoluzione di Sistemi<a class="headerlink" href="#risoluzione-di-sistemi" title="Permalink to this heading">#</a></h2>
 <p>La soluzione dei sistemi lineari è una delle attività più frequenti nelle applicazioni di matematica, soprattutto negli algoritmi di calcolo numerico; non ci occuperemo qui dei metodi numerici di soluzione dei sistemi lineari, ma si discutono diversi approcci alla soluzione analitica «a manina» di sistemi lineari, utili per il calcolo analitico della soluzione esatta di sistemi lineari di dimensioni sufficientemente ridotte (3, salvo casi eccezionali…).</p>
 <p>Come descritto dal <a class="reference internal" href="../algebra.html"><span class="doc std std-doc">teorema di Rouché-Capelli</span></a>, esistono 3 possibili situazioni: il sistema lineare ha 1. una sola soluzione; 2. un numero infinito di soluzioni; 3. nessuna soluzione.</p>
 <p>I metodi presentati sono tra di loro equivalenti, intendendo che portano alla stessa soluzione. <strong>todo</strong> <em>Equivalenti nel caso esista una soluzione unica. Danno le stesse informazioni anche nel caso esistano infinite soluzioni o non esistano soluzioni? Riguardo il rango e/o il nucleo…</em></p>
 <div class="section" id="metodo-di-sostituzione">
-<h3><span class="section-number">6.4.1. </span>Metodo di sostituzione<a class="headerlink" href="#metodo-di-sostituzione" title="Permalink to this heading">#</a></h3>
+<span id="math-hs-algebra-linear-linear-system-sol-substitution"></span><h3><span class="section-number">6.4.1. </span>Metodo di sostituzione<a class="headerlink" href="#metodo-di-sostituzione" title="Permalink to this heading">#</a></h3>
 <p>Il metodo di sostituzione consiste nell’usare in successione un’equazione per ricavare un’incognita in funzione delle altre incognite, e sostituire l’espressione ricavata nelle altre successioni, per ottenere un sistema lineare con al dimensione ridotta di 1. Si continua così fino a ottenere un’equazione in un’incognita, immediata da risolvere. Successivamente si trovano i valori delle altre incognite in funzione delle incognite già calcolate. Se esiste una soluzione del problema, l’algoritmo descritto permette di calcolare la soluzione. <strong>todo</strong> <em>Altrimenti, in caso di esistenza di infinite soluzioni si arriva a un’identità <span class="math notranslate nohighlight">\(0=0\)</span>; in caso di nessuna soluzione si arriva a una contraddizione <span class="math notranslate nohighlight">\(1=0\)</span>.</em> <strong>todo</strong> <em>vedi esempi sotto</em></p>
 <div class="proof example dropdown admonition" id="example-3">
 <p class="admonition-title"><span class="caption-number">Example 6.4 </span> (Metodo di sostituzione per sistema quadrato determinato)</p>
@@ -713,7 +715,7 @@ E3: \ x_2 + 2 ( -1 - 2 x_2 ) = 1 \quad \rightarrow \quad x_2 = -1 \ .
 </div>
 </div></div>
 <div class="section" id="metodo-di-eliminazione-di-gauss">
-<h3><span class="section-number">6.4.2. </span>Metodo di eliminazione di Gauss<a class="headerlink" href="#metodo-di-eliminazione-di-gauss" title="Permalink to this heading">#</a></h3>
+<span id="math-hs-algebra-linear-linear-system-sol-gauss"></span><h3><span class="section-number">6.4.2. </span>Metodo di eliminazione di Gauss<a class="headerlink" href="#metodo-di-eliminazione-di-gauss" title="Permalink to this heading">#</a></h3>
 <p>Il metodo di eliminazione di Gauss consiste nella combinazione lineare delle equazioni del sistema per ottenere una forma del sistema facilmente risolvibile, tipicamente una matrice dei coefficienti con forma triangolare.</p>
 <div class="proof example dropdown admonition" id="example-4">
 <p class="admonition-title"><span class="caption-number">Example 6.5 </span> (Metodo di sostituzione per sistema quadrato determinato)</p>
@@ -756,14 +758,14 @@ E3: \ x_2 + 2 ( -1 - 2 x_2 ) = 1 \quad \rightarrow \quad x_2 = -1 \ .
 </div>
 </div></div>
 <div class="section" id="metodo-di-cramer">
-<h3><span class="section-number">6.4.3. </span>Metodo di Cramer<a class="headerlink" href="#metodo-di-cramer" title="Permalink to this heading">#</a></h3>
+<span id="math-hs-algebra-linear-linear-system-sol-cramer"></span><h3><span class="section-number">6.4.3. </span>Metodo di Cramer<a class="headerlink" href="#metodo-di-cramer" title="Permalink to this heading">#</a></h3>
 <p><strong>todo</strong> <em>Per quale motivo discuterlo? E” scomodo, non dà grandi informazioni in caso di assenza o numero infinito di soluzioni…</em></p>
 </div>
 </div>
 <div class="section" id="teorema-di-rouche-capelli">
 <span id="math-hs-algebra-linear-rouche-capelli"></span><h2><span class="section-number">6.5. </span>Teorema di Rouché-Capelli<a class="headerlink" href="#teorema-di-rouche-capelli" title="Permalink to this heading">#</a></h2>
 <div class="section" id="interpretazione-geometrica">
-<h3><span class="section-number">6.5.1. </span>Interpretazione geometrica<a class="headerlink" href="#interpretazione-geometrica" title="Permalink to this heading">#</a></h3>
+<span id="math-hs-algebra-linear-rouche-capelli-geometry"></span><h3><span class="section-number">6.5.1. </span>Interpretazione geometrica<a class="headerlink" href="#interpretazione-geometrica" title="Permalink to this heading">#</a></h3>
 <div class="proof example admonition" id="example-5">
 <p class="admonition-title"><span class="caption-number">Example 6.6 </span> (Sistema quadrato determinato)</p>
 <div class="example-content section" id="proof-content">
@@ -783,7 +785,7 @@ E3: \ x_2 + 2 ( -1 - 2 x_2 ) = 1 \quad \rightarrow \quad x_2 = -1 \ .
 </div></div>
 </div>
 <div class="section" id="problemi">
-<h2><span class="section-number">6.6. </span>Problemi<a class="headerlink" href="#problemi" title="Permalink to this heading">#</a></h2>
+<span id="math-hs-algebra-linear-problems"></span><h2><span class="section-number">6.6. </span>Problemi<a class="headerlink" href="#problemi" title="Permalink to this heading">#</a></h2>
 <p>Viene chiesto di stabilire se i seguenti problemi hanno soluzione, di calcolare le eventuali soluzioni, fornire una rappresentazione grafica del problema algebrico, e - per sistemi con uguale numero di equazioni ed incognite - calcolare il determinante delle matrici del sistema lineare.</p>
 <ol class="arabic">
 <li><p>Risolvi il sistema:</p>

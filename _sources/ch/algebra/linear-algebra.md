@@ -27,7 +27,7 @@ $$
 
 avendo raccolto i coefficienti $a_{ij}$ nella matrice $\mathbf{A} \in \mathbb{R}^{m,n}$, una tabela di $m$ righe e $n$ colonne, le incognite $x_j$ nella $n$-upla $\mathbf{x} \in \mathbb{R}^n$ e i coefficienti $b_i$ nella $m$-upla $\mathbf{b} \in \mathbb{R}^m$, organizzate in un *vettore colonna*. Il prodotto matrice-vettore colonna $\mathbf{A} \mathbf{x}$ rimane definito dall'equivalenza delle diverse espressioni dello stesso sistema lineare.
 
-(math-hs:algebra:linear:intro:matrices)=
+(math-hs:algebra:linear:matrices)=
 ## Matrici
 
 **Definizione.** Una matrice $\mathbf{A} \in \mathbb{R}^{m,n}$ è una tabella 2-dimensionale di numeri reali con $m$ righe e $n$ colonne,
@@ -41,7 +41,7 @@ a_{m1} & a_{m2} & \dots & a_{mn}
 \end{bmatrix}
 $$
 
-(math-hs:algebra:linear:intro:matrices:content)=
+(math-hs:algebra:linear:matrices:content)=
 ### Inteprepretazione del contenuto di una matrice
  Spesso risulta utile intepretare una matrice $\mathbf{A} \in \mathbb{R}^{m,n}$ come una tabella di $n$ colonne di $m$-tuple o *vettori colonna*, o come una tabella di $m$ righe di $n$-tuple o *vettori riga*,
 
@@ -62,7 +62,7 @@ $$
 
 In seguito si faranno cadere i pedici $col$ e $row$ per motivi di sintesi, usando il simbolo $^T$ per intendere un *vettore riga*, come vettore **trasposto** di un vettore colonna. Nel formalismo matriciale, un vettore colonna con $m$ elementi viene quindi intepretato come una matrice $\in \mathbb{R}^{m,1}$ di $m$ righe e una colonna; viceversa un vettore riga con $n$ elementi una matrice $\in \mathbb{R}^{1,n}$ di una riga e $n$ colonne.
 
-(math-hs:algebra:linear:intro:matrices:operations)=
+(math-hs:algebra:linear:matrices:operations)=
 ### Operazioni
 - **Somma.** La somma è possibile tra due matrici con le stesse dimensioni $\mathbf{A},\, \mathbf{B} \in \mathbb{R}^{m,n}$. La somma di due matrici $\mathbf{A}$, $\mathbf{B}$ è la matrice $\mathbf{A} + \mathbf{B} \in \mathbb{R}^{m,n}$ con componenti
 
@@ -102,12 +102,14 @@ $$
 
   $$(\mathbf{A}\mathbf{B})_{ij} = \sum_{k=1}^{n} a_{in} b_{nj} = \mathbf{a}_i^T \mathbf{b}_j \ .$$
 
-  avendo usanto l'[intepretazione dei componenti di una matrice in vettori riga e colonna](math-hs:algebra:linear:intro:matrices:content), per esprimere l'elemento $ij$ della matrice $\mathbf{A} \mathbf{B}$ come prodotto matriciale della $i$-esima riga di $\mathbf{A}$ con la $j$-esima colonna di $\mathbf{B}$.
+  avendo usanto l'[intepretazione dei componenti di una matrice in vettori riga e colonna](math-hs:algebra:linear:matrices:content), per esprimere l'elemento $ij$ della matrice $\mathbf{A} \mathbf{B}$ come prodotto matriciale della $i$-esima riga di $\mathbf{A}$ con la $j$-esima colonna di $\mathbf{B}$.
 
   **Osservazione.** **Non** vale la **proprietà commutativa** per il prodotto di matrici. Per di più, in generale non è possibile formare il prodotto $\mathbf{B} \mathbf{A}$, se $m \ne n$.
 
 
-```{prf:example}
+```{prf:example} Non-commutatività del prodotto matriciale
+:class: dropdown
+
 Date le matrici $\in \mathbf{R}^{2,2}$,
 
 $$
@@ -139,10 +141,13 @@ $$
 
 ```
 ```{prf:example}
+**todo**
 ```
 ```{prf:example}
+**todo**
 ```
 
+(math-hs:algebra:linear:matrices:det)=
 ### Determinante
 Per una matrice quadrata $\mathbf{A} \in \mathbb{R}^{n,n}$ è possibile definire una grandezza scalare, definita **determinante**, il cui nome dovrebbe farne intuire la rilevanza: essa infatti riassume alcune caratteristiche della matrice e, tra le altre, determina un criterio di esistenza della matrice inversa e un criterio di esistenza e di unicità della soluzione di un sistema lineare, $\mathbf{A} \mathbf{x} = \mathbf{b}$.
 
@@ -151,10 +156,12 @@ La definizione e una discussione completa del determinante di una matrice vanno 
 **todo** *Espressione del determinante per matrici 2x2, 3x3; mettere in evidenza la comparsa del determinante nei metodi di soluzione sotto*
 
 
+(math-hs:algebra:linear:matrices:range-null)=
 ### Rango e nucleo
 **todo** ...
 
 
+(math-hs:algebra:linear:linear-system-sol)=
 ## Risoluzione di Sistemi
 La soluzione dei sistemi lineari è una delle attività più frequenti nelle applicazioni di matematica, soprattutto negli algoritmi di calcolo numerico; non ci occuperemo qui dei metodi numerici di soluzione dei sistemi lineari, ma si discutono diversi approcci alla soluzione analitica "a manina" di sistemi lineari, utili per il calcolo analitico della soluzione esatta di sistemi lineari di dimensioni sufficientemente ridotte (3, salvo casi eccezionali...).
 
@@ -162,6 +169,7 @@ Come descritto dal [teorema di Rouché-Capelli](), esistono 3 possibili situazio
 
 I metodi presentati sono tra di loro equivalenti, intendendo che portano alla stessa soluzione. **todo** *Equivalenti nel caso esista una soluzione unica. Danno le stesse informazioni anche nel caso esistano infinite soluzioni o non esistano soluzioni? Riguardo il rango e/o il nucleo...*
 
+(math-hs:algebra:linear:linear-system-sol:substitution)=
 ### Metodo di sostituzione
 Il metodo di sostituzione consiste nell'usare in successione un'equazione per ricavare un'incognita in funzione delle altre incognite, e sostituire l'espressione ricavata nelle altre successioni, per ottenere un sistema lineare con al dimensione ridotta di 1. Si continua così fino a ottenere un'equazione in un'incognita, immediata da risolvere. Successivamente si trovano i valori delle altre incognite in funzione delle incognite già calcolate. Se esiste una soluzione del problema, l'algoritmo descritto permette di calcolare la soluzione. **todo** *Altrimenti, in caso di esistenza di infinite soluzioni si arriva a un'identità $0=0$; in caso di nessuna soluzione si arriva a una contraddizione $1=0$.* **todo** *vedi esempi sotto*
 
@@ -208,6 +216,7 @@ Una volta trovato il valore $x_2 = -1$, si "torna indietro" per calcolare $x_3 =
 
 ```
 
+(math-hs:algebra:linear:linear-system-sol:gauss)=
 ### Metodo di eliminazione di Gauss
 Il metodo di eliminazione di Gauss consiste nella combinazione lineare delle equazioni del sistema per ottenere una forma del sistema facilmente risolvibile, tipicamente una matrice dei coefficienti con forma triangolare.
 
@@ -260,15 +269,15 @@ $$\begin{aligned}
 
 ```
 
+(math-hs:algebra:linear:linear-system-sol:cramer)=
 ### Metodo di Cramer
 **todo** *Per quale motivo discuterlo? E' scomodo, non dà grandi informazioni in caso di assenza o numero infinito di soluzioni...*
 
 (math-hs:algebra:linear:rouche-capelli)=
 ## Teorema di Rouché-Capelli
 
+(math-hs:algebra:linear:rouche-capelli:geometry)=
 ### Interpretazione geometrica
-
-
 
 ```{prf:example} Sistema quadrato determinato
 ```
@@ -279,7 +288,7 @@ $$\begin{aligned}
 ```{prf:example} Sistema indeterminato
 ```
 
-
+(math-hs:algebra:linear:problems)=
 ## Problemi
 Viene chiesto di stabilire se i seguenti problemi hanno soluzione, di calcolare le eventuali soluzioni, fornire una rappresentazione grafica del problema algebrico, e - per sistemi con uguale numero di equazioni ed incognite - calcolare il determinante delle matrici del sistema lineare.
 
