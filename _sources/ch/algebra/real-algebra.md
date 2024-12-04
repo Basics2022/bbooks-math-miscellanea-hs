@@ -192,11 +192,16 @@ $$ x = \alpha_x u + x_0  \quad , \quad y = \alpha_y v + y_0 \ ,$$
 1. la scalatura di un fattore $a_x$ in direzione $x$ e di un fattore $a_y$ in direzione $y$
 2. una traslazione $x_0$ in direzione $x$ e di $y_0$ in direzione $y$
 
+**todo**
+- *Aggiungere un'imamgine con il procedimento di trasformazione di variabili/incognite (e coordinate)*
+- *Aggiungere un'immagine su alcune famiglie di curve, al variare dei parametri*
+
+```{example} ...
+```
+
 
 ## Problemi con due o più incognite - sistemi di equazioni e disequazioni
 Un sistema di equazioni è un insieme di equazioni da risolvere simultaneamente. I sistemi di equazioni (e di disequazioni) consentono di introdurre l'[algebra su $\mathbb{R}^n$](math-hs:algebra:real-n), descritta nel capitolo successivo. 
-
-
 
 
 
