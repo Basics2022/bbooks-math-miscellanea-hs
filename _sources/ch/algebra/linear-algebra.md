@@ -148,7 +148,7 @@ $$
 ```
 
 
-(math-hs:algebra:linear:matrices:range-null)=
+(math-hs:algebra:linear:matrices:linear-function)=
 ### Matrice come funzione lineare
 Tramite il prodotto matrice vettore (colonna), una matrice $\mathbf{R}^{m,n}$ rappresenta la funzione lineare più generale $f_A: \mathbb{R}^n \rightarrow \mathbb{R}^m$, che prende un vettore colonna $\mathbf{x} \in \mathbb{R}^n$ come argomento e restituisce un vettore $\mathbf{y} \in \mathbb{R}^m$,
 
@@ -335,7 +335,7 @@ Interpretando gli elementi di un vettore colonna $\mathbf{x} \in \mathbb{R}^2$ c
 
 $$\mathbf{A} = \begin{bmatrix} 1 - 2 n_x^2 & - 2 n_x n_y \\  - 2 n_x n_y & 1 - 2 n_y^2 \end{bmatrix} \ ,$$
 
-rappresenta una riflessione di vettori del piano rispetto a una retta passante per l'origine e perpendicolare al vettore $\vec{n}$ con componenti $n_x$, $n_y$.
+rappresenta una riflessione di vettori del piano rispetto a una retta passante per l'origine e perpendicolare al vettore $\vec{n}$ con componenti $n_x$, $n_y$, $n_x^2 + n_y^2 = 1$.
 
 - Dimostrare questa frase, calcolando il prodotto $\mathbf{A} \mathbf{r}$ per il vettore colonna generico $\mathbf{r} = \begin{bmatrix} x \\ y \end{bmatrix}$ contenente le componenti cartesiane del vettore $\vec{r}$ nel piano
 - Dare una rappresentazione grafica nel piano
@@ -365,6 +365,36 @@ con $a^2 + b^2 = 1$ rappresenta una rotazione dei vettori attorno all'origine.
 
 **todo** Dipendenza logica di questo esercizio dalle basi di [trigonometria](math-hs:trigonometry). Stabilire un ordine consigliato di accesso a questo $\texttt{bbook}$
 ```
+
+```{exercise} Proiezione ortogonale lungo una direzione data
+Interpretando gli elementi di un vettore colonna $\mathbf{x} \in \mathbb{R}^2$ come le componenti cartesiane del vettore $\vec{x}$ in un piano, la matrice $\mathbf{A} \in \mathbb{R}^{2,2}$ 
+
+$$\mathbf{A} = \mathbf{n}^T \mathbf{n} = \begin{bmatrix} n_x^2 & n_x n_y \\  n_x n_y & n_y^2 \end{bmatrix} \ ,$$
+
+rappresenta una proiezione ortogonale dei punti del piano sulla retta passante per l'origine con direzione determinata dal vettore $\vec{n}$ con componenti $n_x$, $n_y$, $n_x^2 + n_y^2 = 1$.
+
+- Dimostrare questa frase, calcolando il prodotto $\mathbf{A} \mathbf{r}$ per il vettore colonna generico $\mathbf{r} = \begin{bmatrix} x \\ y \end{bmatrix}$ contenente le componenti cartesiane del vettore $\vec{r}$ nel piano
+- Dare una rappresentazione grafica nel piano
+- Dimostrare che il determinante della matrice è uguale a 0, $|\mathbf{A}| = 0$
+- Dimostrare che l'immagine della trasformazione è formato dai vettori colonna $a \mathbf{n}$
+- Dimostrare che il nucleo della trasformazione è formato dai vettori colonna $\mathbf{x}$ per i quali vale $\mathbf{x}^T \mathbf{a}=0$
+
+```
+
+```{exercise} Proiezione ortogonale nella direzione perpendicolare a una direzione data
+Interpretando gli elementi di un vettore colonna $\mathbf{x} \in \mathbb{R}^2$ come le componenti cartesiane del vettore $\vec{x}$ in un piano, la matrice $\mathbf{A} \in \mathbb{R}^{2,2}$ 
+
+$$\mathbf{A} = \mathbf{I} - \mathbf{n}^T \mathbf{n} = \begin{bmatrix} 1- n_x^2 & -n_x n_y \\ - n_x n_y & 1 - n_y^2 \end{bmatrix} \ ,$$
+
+rappresenta una proiezione ortogonale dei punti del piano sulla retta passante per l'origine e perpendicolare al vettore $\vec{n}$ con componenti $n_x$, $n_y$, $n_x^2 + n_y^2 = 1$.
+
+- Dimostrare questa frase, calcolando il prodotto $\mathbf{A} \mathbf{r}$ per il vettore colonna generico $\mathbf{r} = \begin{bmatrix} x \\ y \end{bmatrix}$ contenente le componenti cartesiane del vettore $\vec{r}$ nel piano
+- Dare una rappresentazione grafica nel piano
+- Dimostrare che il determinante della matrice è uguale a 0, $|\mathbf{A}| = 0$
+- Dimostrare che l'immagine della trasformazione è formato dai vettori colonna $\mathbf{x}$ per i quali vale $\mathbf{x}^T \mathbf{a}=0$
+- Dimostrare che il nucleo della trasformazione è formato dai vettori colonna $a \mathbf{n}$
+```
+
 ```{exercise} Scomposizione di una matrice - somma di parte simmetrica e antisimmetrica
 Ogni matrice può essere scritta come la somma di una parte simmetrica e una parte antisimmetrica.
 
