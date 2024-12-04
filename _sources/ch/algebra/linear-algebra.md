@@ -162,11 +162,11 @@ Immagine e nucleo sono due insiemi[^range-null-vspace] sono due insiemi che cara
 
 Il nucleo di una matrice $\mathbf{A} \in \mathbb{R}^{m,n}$ è l'insieme dei vettori colonna $\mathbf{x} \in \mathbb{R}^n$ tali che $\mathbf{A} \mathbf{x} = \mathbf{0}_m$,
 
-$\text{N}(\mathbf{A}) = \{ \mathbf{x} \in \mathbb{R}^n \, | \, \mathbf{A} \mathbf{x} = \mathbf{0}_m \} \ .$
+$$\text{N}(\mathbf{A}) = \{ \mathbf{x} \in \mathbb{R}^n \, | \, \mathbf{A} \mathbf{x} = \mathbf{0}_m \} \ .$$
 
 L'immagine di una matrice $\mathbf{A} \in \mathbb{R}^{m,n}$ è l'insieme dei vettori colonna $\mathbf{y} \in \mathbb{R}^m$ per i quali esiste un vettore $\mathbf{x} \in \mathbb{R}^n$ tale che $\mathbf{A} \mathbf{x} = \mathbf{y}$,
 
-$\text{I}(\mathbf{A}) = \{ \mathbf{y} \in \mathbb{R}^m \, | \, \exists \mathbf{x} \in \mathbb{R}^n \, |  \, \mathbf{A} \mathbf{x} = \mathbf{0}_m \} \ .$
+$$\text{I}(\mathbf{A}) = \{ \mathbf{y} \in \mathbb{R}^m \, | \, \exists \mathbf{x} \in \mathbb{R}^n \, |  \, \mathbf{A} \mathbf{x} = \mathbf{0}_m \} \ .$$
 
 **todo** fare riferimento alle definizioni per le funzioni, [immagine di una funzione](math-hs:fun:range), [nucleo di una funzione](math-hs:fun:null).
 
