@@ -108,6 +108,16 @@ $$
 
 
 ```{prf:example}
+Date le matrici $\in \mathbf{R}^{2,2}$,
+
+$$
+\mathbf{A} = \begin{bmatrix} 1 & 2 \\ 0 & 1 \end{bmatrix} \qquad , \qquad
+\mathbf{B} = \begin{bmatrix} 1 &-1 \\ 1 & 2 \end{bmatrix} \qquad , \qquad
+$$
+
+i prodotti $\mathbf{A}\mathbf{B}$ e $\mathbf{B} \mathbf{A}$ valgono
+
+
 ```
 ```{prf:example}
 ```
