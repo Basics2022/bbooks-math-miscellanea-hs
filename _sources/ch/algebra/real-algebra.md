@@ -186,6 +186,7 @@ Un'equazione con due incognite $x,y$ è una relazione di uguaglianza che può es
 e delle equazioni ricavabili da queste con una trasformazione *affine* di incognite, nella forma 
 
 $$ u = \frac{x-x_0}{a_x} \quad , \quad v = \frac{y-y_0}{a_y} \ ,$$
+$$ x = \alpha_x u + x_0  \quad , \quad y = \alpha_y v + y_0 \ ,$$
 
  corrispondenti alla compsizione di due trasformazioni, in questo ordine:
 1. la scalatura di un fattore $a_x$ in direzione $x$ e di un fattore $a_y$ in direzione $y$
