@@ -179,10 +179,10 @@ e delle equazioni ricavabili da queste con una trasformazione *affine* di incogn
 
 ```{list-table}
 :header-rows: 0
-* - ![](../media/ggb-line.png)
-  - ![](../media/ggb-par.png)
-  - ![](../media/ggb-inverse.png)
-  - ![](../media/ggb-circle.png)
+* - ![](../../media/ggb-line.png)
+  - ![](../../media/ggb-par.png)
+  - ![](../../media/ggb-inverse.png)
+  - ![](../../media/ggb-circle.png)
 ```
 
 ## Problemi con due o più incognite - sistemi di equazioni e disequazioni
