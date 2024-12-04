@@ -560,7 +560,11 @@ a_{11} &amp; a_{12} &amp; \dots &amp; a_{1n} \\
 \dots  &amp; \dots  &amp; \dots &amp; \dots  \\
 a_{m1} &amp; a_{m2} &amp; \dots &amp; a_{mn}
 \end{bmatrix} = 
-\begin{bmatrix} \mathbf{a}_{col,1} | \mathbf{a}^{col,2} | \dots | \mathbf{a}_{col,n} \end{bmatrix} = 
+\left[ \begin{array}{c|c|c|c}
+                   &amp;                    &amp;       &amp;                    \\
+\mathbf{a}_{col,1} &amp; \mathbf{a}^{col,2} &amp; \dots &amp; \mathbf{a}_{col,n} \\
+                   &amp;                    &amp;       &amp;                    \\
+\right] = 
 \begin{bmatrix} \mathbf{a}^T_{row,1} \\ \hline \\ \dots \\ \hline \mathbf{a}^T_{row,m} \end{bmatrix}
 \end{split}\]</div>
 <div class="section" id="operazioni">

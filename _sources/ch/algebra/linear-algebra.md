@@ -47,7 +47,11 @@ a_{11} & a_{12} & \dots & a_{1n} \\
 \dots  & \dots  & \dots & \dots  \\
 a_{m1} & a_{m2} & \dots & a_{mn}
 \end{bmatrix} = 
-\begin{bmatrix} \mathbf{a}_{col,1} | \mathbf{a}^{col,2} | \dots | \mathbf{a}_{col,n} \end{bmatrix} = 
+\left[ \begin{array}{c|c|c|c}
+                   &                    &       &                    \\
+\mathbf{a}_{col,1} & \mathbf{a}^{col,2} & \dots & \mathbf{a}_{col,n} \\
+                   &                    &       &                    \\
+\right] = 
 \begin{bmatrix} \mathbf{a}^T_{row,1} \\ \hline \\ \dots \\ \hline \mathbf{a}^T_{row,m} \end{bmatrix}
 $$
 
