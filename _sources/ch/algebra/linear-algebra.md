@@ -135,6 +135,7 @@ $$
  1 \cdot 1 + 2 \cdot 0 & 1 \cdot 2 + 2 \cdot 1 \\
  \end{bmatrix} =
  \begin{bmatrix} -3 & 5 \\ -2 & 2 \end{bmatrix}
+$$
 
 ```
 ```{prf:example}
