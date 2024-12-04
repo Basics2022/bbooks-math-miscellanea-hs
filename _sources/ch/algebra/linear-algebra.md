@@ -178,6 +178,8 @@ Per una matrice quadrata $\mathbf{A} \in \mathbb{R}^{n,n}$ è possibile definire
 
 La definizione e una discussione completa del determinante di una matrice vanno ben oltre (**todo** *probabilmente*) lo scopo di questo materiale.
 
+**todo** *Rapporto con immagine e nucleo*
+
 **todo** *Espressione del determinante per matrici 2x2, 3x3; mettere in evidenza la comparsa del determinante nei metodi di soluzione sotto*
 
 (math-hs:algebra:linear:linear-system-sol)=
