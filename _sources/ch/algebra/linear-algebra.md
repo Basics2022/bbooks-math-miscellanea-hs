@@ -177,6 +177,8 @@ Come descritto dal [teorema di Rouché-Capelli](math-hs:algebra:linear:rouche-ca
 
 I metodi presentati sono tra di loro equivalenti, intendendo che portano alla stessa soluzione. **todo** *Equivalenti nel caso esista una soluzione unica. Danno le stesse informazioni anche nel caso esistano infinite soluzioni o non esistano soluzioni? Riguardo il rango e/o il nucleo...*
 
+**todo** Collegamento a [soluzione numerica di sistemi lineari](https://basics2022.github.io/bbooks-programming-hs/ch/numerics/linear.html), nel $$\texttt{bbook}$$ sull'[introduzione alla programmazione e al calcolo numerico](https://basics2022.github.io/bbooks-programming-hs)
+
 (math-hs:algebra:linear:linear-system-sol:substitution)=
 ### Metodo di sostituzione
 Il metodo di sostituzione consiste nell'usare in successione un'equazione per ricavare un'incognita in funzione delle altre incognite, e sostituire l'espressione ricavata nelle altre successioni, per ottenere un sistema lineare con al dimensione ridotta di 1. Si continua così fino a ottenere un'equazione in un'incognita, immediata da risolvere. Successivamente si trovano i valori delle altre incognite in funzione delle incognite già calcolate. Se esiste una soluzione del problema, l'algoritmo descritto permette di calcolare la soluzione. **todo** *Altrimenti, in caso di esistenza di infinite soluzioni si arriva a un'identità $0=0$; in caso di nessuna soluzione si arriva a una contraddizione $1=0$.* **todo** *vedi esempi sotto*
