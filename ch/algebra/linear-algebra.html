@@ -488,9 +488,10 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduzione">6.1. Introduzione</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-lineari-e-formalismo-matriciale">6.2. Sistemi lineari e formalismo matriciale</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matrici">6.3. Matrici</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni">6.3.1. Operazioni</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#determinante">6.3.2. Determinante</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rango-e-nucleo">6.3.3. Rango e nucleo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inteprepretazione-del-contenuto-di-una-matrice">6.3.1. Inteprepretazione del contenuto di una matrice</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni">6.3.2. Operazioni</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#determinante">6.3.3. Determinante</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rango-e-nucleo">6.3.4. Rango e nucleo</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#risoluzione-di-sistemi">6.4. Risoluzione di Sistemi</a><ul class="nav section-nav flex-column">
@@ -519,7 +520,7 @@ document.write(`
 <span id="math-hs-algebra-linear"></span><h1><span class="section-number">6. </span>Algebra lineare<a class="headerlink" href="#algebra-lineare" title="Permalink to this heading">#</a></h1>
 <p>In questa sezione vengono presentati gli argomenti dell’algebra lineare che riguardano la soluzione di sistemi di equazioni lineari, per i quali si discutono le condizioni di esistenza e unicità della soluzione e dei quali viene fornita una rappresentazione grafica. Viene introdotto il formalismo matriciale, e le operazioni algebriche elementari sulle matrici; vengono date le definizioni  le matrici vengono interpretate come funzioni lineari (applicazioni lineari), e utilizzate per formulare le condizioni di esistenza e unicità delle soluzioni di sistemi lineari (teorema di Rouché-Capelli).</p>
 <div class="section" id="introduzione">
-<h2><span class="section-number">6.1. </span>Introduzione<a class="headerlink" href="#introduzione" title="Permalink to this heading">#</a></h2>
+<span id="math-hs-algebra-linear-intro"></span><h2><span class="section-number">6.1. </span>Introduzione<a class="headerlink" href="#introduzione" title="Permalink to this heading">#</a></h2>
 <p><span style="color:red">L’algebra lineare è fondamentale per studiare matrici, sistemi lineari e trasformazioni geometriche. Questo capitolo esplora le matrici, i determinanti e la risoluzione dei sistemi.</span></p>
 </div>
 <div class="section" id="sistemi-lineari-e-formalismo-matriciale">
@@ -541,7 +542,7 @@ document.write(`
 <p>avendo raccolto i coefficienti <span class="math notranslate nohighlight">\(a_{ij}\)</span> nella matrice <span class="math notranslate nohighlight">\(\mathbf{A} \in \mathbb{R}^{m,n}\)</span>, una tabela di <span class="math notranslate nohighlight">\(m\)</span> righe e <span class="math notranslate nohighlight">\(n\)</span> colonne, le incognite <span class="math notranslate nohighlight">\(x_j\)</span> nella <span class="math notranslate nohighlight">\(n\)</span>-upla <span class="math notranslate nohighlight">\(\mathbf{x} \in \mathbb{R}^n\)</span> e i coefficienti <span class="math notranslate nohighlight">\(b_i\)</span> nella <span class="math notranslate nohighlight">\(m\)</span>-upla <span class="math notranslate nohighlight">\(\mathbf{b} \in \mathbb{R}^m\)</span>, organizzate in un <em>vettore colonna</em>. Il prodotto matrice-vettore colonna <span class="math notranslate nohighlight">\(\mathbf{A} \mathbf{x}\)</span> rimane definito dall’equivalenza delle diverse espressioni dello stesso sistema lineare.</p>
 </div>
 <div class="section" id="matrici">
-<h2><span class="section-number">6.3. </span>Matrici<a class="headerlink" href="#matrici" title="Permalink to this heading">#</a></h2>
+<span id="math-hs-algebra-linear-intro-matrices"></span><h2><span class="section-number">6.3. </span>Matrici<a class="headerlink" href="#matrici" title="Permalink to this heading">#</a></h2>
 <p><strong>Definizione.</strong> Una matrice <span class="math notranslate nohighlight">\(\mathbf{A} \in \mathbb{R}^{m,n}\)</span> è una tabella 2-dimensionale di numeri reali con <span class="math notranslate nohighlight">\(m\)</span> righe e <span class="math notranslate nohighlight">\(n\)</span> colonne,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -552,7 +553,9 @@ a_{11} &amp; a_{12} &amp; \dots &amp; a_{1n} \\
 a_{m1} &amp; a_{m2} &amp; \dots &amp; a_{mn}
 \end{bmatrix}
 \end{split}\]</div>
-<p><strong>Interpretazione del contenuto della matrice.</strong> Spesso risulta utile intepretare una matrice <span class="math notranslate nohighlight">\(\mathbf{A} \in \mathbb{R}^{m,n}\)</span> come una tabella di <span class="math notranslate nohighlight">\(n\)</span> colonne di <span class="math notranslate nohighlight">\(m\)</span>-tuple o <em>vettori colonna</em>, o come una tabella di <span class="math notranslate nohighlight">\(m\)</span> righe di <span class="math notranslate nohighlight">\(n\)</span>-tuple o <em>vettori riga</em>,</p>
+<div class="section" id="inteprepretazione-del-contenuto-di-una-matrice">
+<span id="math-hs-algebra-linear-intro-matrices-content"></span><h3><span class="section-number">6.3.1. </span>Inteprepretazione del contenuto di una matrice<a class="headerlink" href="#inteprepretazione-del-contenuto-di-una-matrice" title="Permalink to this heading">#</a></h3>
+<p>Spesso risulta utile intepretare una matrice <span class="math notranslate nohighlight">\(\mathbf{A} \in \mathbb{R}^{m,n}\)</span> come una tabella di <span class="math notranslate nohighlight">\(n\)</span> colonne di <span class="math notranslate nohighlight">\(m\)</span>-tuple o <em>vettori colonna</em>, o come una tabella di <span class="math notranslate nohighlight">\(m\)</span> righe di <span class="math notranslate nohighlight">\(n\)</span>-tuple o <em>vettori riga</em>,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\mathbf{A} =
 \begin{bmatrix}
@@ -566,10 +569,12 @@ a_{m1} &amp; a_{m2} &amp; \dots &amp; a_{mn}
                    &amp;                    &amp;       &amp;                    \\
 \end{array}
 \right] = 
-\begin{bmatrix} \quad \mathbf{a}^T_{row,1} \quad  \\ \hline \quad \dots \quad  \\ \hline \quad \mathbf{a}^T_{row,m} \quad \end{bmatrix}
+\begin{bmatrix} \quad \mathbf{a}^T_{row,1} \quad  \\ \hline \quad \dots \quad  \\ \hline \quad \mathbf{a}^T_{row,m} \quad \end{bmatrix} \ .
 \end{split}\]</div>
+<p>In seguito si faranno cadere i pedici <span class="math notranslate nohighlight">\(col\)</span> e <span class="math notranslate nohighlight">\(row\)</span> per motivi di sintesi, usando il simbolo <span class="math notranslate nohighlight">\(^T\)</span> per intendere un <em>vettore riga</em>, come vettore <strong>trasposto</strong> di un vettore colonna. Nel formalismo matriciale, un vettore colonna con <span class="math notranslate nohighlight">\(m\)</span> elementi viene quindi intepretato come una matrice <span class="math notranslate nohighlight">\(\in \mathbb{R}^{m,1}\)</span> di <span class="math notranslate nohighlight">\(m\)</span> righe e una colonna; viceversa un vettore riga con <span class="math notranslate nohighlight">\(n\)</span> elementi una matrice <span class="math notranslate nohighlight">\(\in \mathbb{R}^{1,n}\)</span> di una riga e <span class="math notranslate nohighlight">\(n\)</span> colonne.</p>
+</div>
 <div class="section" id="operazioni">
-<h3><span class="section-number">6.3.1. </span>Operazioni<a class="headerlink" href="#operazioni" title="Permalink to this heading">#</a></h3>
+<span id="math-hs-algebra-linear-intro-matrices-operations"></span><h3><span class="section-number">6.3.2. </span>Operazioni<a class="headerlink" href="#operazioni" title="Permalink to this heading">#</a></h3>
 <ul>
 <li><p><strong>Somma.</strong> La somma è possibile tra due matrici con le stesse dimensioni <span class="math notranslate nohighlight">\(\mathbf{A},\, \mathbf{B} \in \mathbb{R}^{m,n}\)</span>. La somma di due matrici <span class="math notranslate nohighlight">\(\mathbf{A}\)</span>, <span class="math notranslate nohighlight">\(\mathbf{B}\)</span> è la matrice <span class="math notranslate nohighlight">\(\mathbf{A} + \mathbf{B} \in \mathbb{R}^{m,n}\)</span> con componenti</p>
 <div class="math notranslate nohighlight">
@@ -605,7 +610,8 @@ a_{m1} &amp; a_{m2} &amp; \dots &amp; a_{mn}
 </li>
 <li><p><strong>Prodotto di matrici.</strong> Il prodotto <span class="math notranslate nohighlight">\(\mathbf{A} \mathbf{B}\)</span> tra matrici è possibile tra due matrici <span class="math notranslate nohighlight">\(\mathbf{A} \in \mathbb{R}^{m,p}\)</span>, <span class="math notranslate nohighlight">\(\mathbf{B} \in \mathbb{R}^{p,n}\)</span>, ed è la matrice <span class="math notranslate nohighlight">\(\mathbf{A} \mathbf{B} \in \mathbb{R}^{m,n}\)</span> con le componenti</p>
 <div class="math notranslate nohighlight">
-\[(\mathbf{A}\mathbf{B})_{ij} = \sum_{k=1}^{n} a_{in} b_{nj} \ .\]</div>
+\[(\mathbf{A}\mathbf{B})_{ij} = \sum_{k=1}^{n} a_{in} b_{nj} = \mathbf{a}_i^T \mathbf{b}_j \ .\]</div>
+<p>avendo usanto l”<a class="reference internal" href="#math-hs-algebra-linear-intro-matrices-content"><span class="std std-ref">intepretazione dei componenti di una matrice in vettori riga e colonna</span></a>, per esprimere l’elemento <span class="math notranslate nohighlight">\(ij\)</span> della matrice <span class="math notranslate nohighlight">\(\mathbf{A} \mathbf{B}\)</span> come prodotto matriciale della <span class="math notranslate nohighlight">\(i\)</span>-esima riga di <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> con la <span class="math notranslate nohighlight">\(j\)</span>-esima colonna di <span class="math notranslate nohighlight">\(\mathbf{B}\)</span>.</p>
 <p><strong>Osservazione.</strong> <strong>Non</strong> vale la <strong>proprietà commutativa</strong> per il prodotto di matrici. Per di più, in generale non è possibile formare il prodotto <span class="math notranslate nohighlight">\(\mathbf{B} \mathbf{A}\)</span>, se <span class="math notranslate nohighlight">\(m \ne n\)</span>.</p>
 </li>
 </ul>
@@ -623,13 +629,13 @@ a_{m1} &amp; a_{m2} &amp; \dots &amp; a_{mn}
 </div>
 </div></div>
 <div class="section" id="determinante">
-<h3><span class="section-number">6.3.2. </span>Determinante<a class="headerlink" href="#determinante" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">6.3.3. </span>Determinante<a class="headerlink" href="#determinante" title="Permalink to this heading">#</a></h3>
 <p>Per una matrice quadrata <span class="math notranslate nohighlight">\(\mathbf{A} \in \mathbb{R}^{n,n}\)</span> è possibile definire una grandezza scalare, definita <strong>determinante</strong>, il cui nome dovrebbe farne intuire la rilevanza: essa infatti riassume alcune caratteristiche della matrice e, tra le altre, determina un criterio di esistenza della matrice inversa e un criterio di esistenza e di unicità della soluzione di un sistema lineare, <span class="math notranslate nohighlight">\(\mathbf{A} \mathbf{x} = \mathbf{b}\)</span>.</p>
 <p>La definizione e una discussione completa del determinante di una matrice vanno ben oltre (<strong>todo</strong> <em>probabilmente</em>) lo scopo di questo materiale.</p>
 <p><strong>todo</strong> <em>Espressione del determinante per matrici 2x2, 3x3; mettere in evidenza la comparsa del determinante nei metodi di soluzione sotto</em></p>
 </div>
 <div class="section" id="rango-e-nucleo">
-<h3><span class="section-number">6.3.3. </span>Rango e nucleo<a class="headerlink" href="#rango-e-nucleo" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">6.3.4. </span>Rango e nucleo<a class="headerlink" href="#rango-e-nucleo" title="Permalink to this heading">#</a></h3>
 <p><strong>todo</strong> …</p>
 </div>
 </div>
@@ -1088,9 +1094,10 @@ $$
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduzione">6.1. Introduzione</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-lineari-e-formalismo-matriciale">6.2. Sistemi lineari e formalismo matriciale</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matrici">6.3. Matrici</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni">6.3.1. Operazioni</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#determinante">6.3.2. Determinante</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rango-e-nucleo">6.3.3. Rango e nucleo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inteprepretazione-del-contenuto-di-una-matrice">6.3.1. Inteprepretazione del contenuto di una matrice</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni">6.3.2. Operazioni</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#determinante">6.3.3. Determinante</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rango-e-nucleo">6.3.4. Rango e nucleo</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#risoluzione-di-sistemi">6.4. Risoluzione di Sistemi</a><ul class="nav section-nav flex-column">

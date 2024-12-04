@@ -4,6 +4,7 @@
 
 In questa sezione vengono presentati gli argomenti dell'algebra lineare che riguardano la soluzione di sistemi di equazioni lineari, per i quali si discutono le condizioni di esistenza e unicità della soluzione e dei quali viene fornita una rappresentazione grafica. Viene introdotto il formalismo matriciale, e le operazioni algebriche elementari sulle matrici; vengono date le definizioni  le matrici vengono interpretate come funzioni lineari (applicazioni lineari), e utilizzate per formulare le condizioni di esistenza e unicità delle soluzioni di sistemi lineari (teorema di Rouché-Capelli).
 
+(math-hs:algebra:linear:intro)=
 ## Introduzione
 <span style="color:red">L'algebra lineare è fondamentale per studiare matrici, sistemi lineari e trasformazioni geometriche. Questo capitolo esplora le matrici, i determinanti e la risoluzione dei sistemi.</span>
 
@@ -26,6 +27,7 @@ $$
 
 avendo raccolto i coefficienti $a_{ij}$ nella matrice $\mathbf{A} \in \mathbb{R}^{m,n}$, una tabela di $m$ righe e $n$ colonne, le incognite $x_j$ nella $n$-upla $\mathbf{x} \in \mathbb{R}^n$ e i coefficienti $b_i$ nella $m$-upla $\mathbf{b} \in \mathbb{R}^m$, organizzate in un *vettore colonna*. Il prodotto matrice-vettore colonna $\mathbf{A} \mathbf{x}$ rimane definito dall'equivalenza delle diverse espressioni dello stesso sistema lineare.
 
+(math-hs:algebra:linear:intro:matrices)=
 ## Matrici
 
 **Definizione.** Una matrice $\mathbf{A} \in \mathbb{R}^{m,n}$ è una tabella 2-dimensionale di numeri reali con $m$ righe e $n$ colonne,
@@ -39,7 +41,9 @@ a_{m1} & a_{m2} & \dots & a_{mn}
 \end{bmatrix}
 $$
 
-**Interpretazione del contenuto della matrice.** Spesso risulta utile intepretare una matrice $\mathbf{A} \in \mathbb{R}^{m,n}$ come una tabella di $n$ colonne di $m$-tuple o *vettori colonna*, o come una tabella di $m$ righe di $n$-tuple o *vettori riga*,
+(math-hs:algebra:linear:intro:matrices:content)=
+### Inteprepretazione del contenuto di una matrice
+ Spesso risulta utile intepretare una matrice $\mathbf{A} \in \mathbb{R}^{m,n}$ come una tabella di $n$ colonne di $m$-tuple o *vettori colonna*, o come una tabella di $m$ righe di $n$-tuple o *vettori riga*,
 
 $$\mathbf{A} =
 \begin{bmatrix}
@@ -53,10 +57,12 @@ a_{m1} & a_{m2} & \dots & a_{mn}
                    &                    &       &                    \\
 \end{array}
 \right] = 
-\begin{bmatrix} \quad \mathbf{a}^T_{row,1} \quad  \\ \hline \quad \dots \quad  \\ \hline \quad \mathbf{a}^T_{row,m} \quad \end{bmatrix}
+\begin{bmatrix} \quad \mathbf{a}^T_{row,1} \quad  \\ \hline \quad \dots \quad  \\ \hline \quad \mathbf{a}^T_{row,m} \quad \end{bmatrix} \ .
 $$
 
+In seguito si faranno cadere i pedici $col$ e $row$ per motivi di sintesi, usando il simbolo $^T$ per intendere un *vettore riga*, come vettore **trasposto** di un vettore colonna. Nel formalismo matriciale, un vettore colonna con $m$ elementi viene quindi intepretato come una matrice $\in \mathbb{R}^{m,1}$ di $m$ righe e una colonna; viceversa un vettore riga con $n$ elementi una matrice $\in \mathbb{R}^{1,n}$ di una riga e $n$ colonne.
 
+(math-hs:algebra:linear:intro:matrices:operations)=
 ### Operazioni
 - **Somma.** La somma è possibile tra due matrici con le stesse dimensioni $\mathbf{A},\, \mathbf{B} \in \mathbb{R}^{m,n}$. La somma di due matrici $\mathbf{A}$, $\mathbf{B}$ è la matrice $\mathbf{A} + \mathbf{B} \in \mathbb{R}^{m,n}$ con componenti
 
@@ -94,7 +100,9 @@ $$
 
 - **Prodotto di matrici.** Il prodotto $\mathbf{A} \mathbf{B}$ tra matrici è possibile tra due matrici $\mathbf{A} \in \mathbb{R}^{m,p}$, $\mathbf{B} \in \mathbb{R}^{p,n}$, ed è la matrice $\mathbf{A} \mathbf{B} \in \mathbb{R}^{m,n}$ con le componenti
 
-  $$(\mathbf{A}\mathbf{B})_{ij} = \sum_{k=1}^{n} a_{in} b_{nj} \ .$$
+  $$(\mathbf{A}\mathbf{B})_{ij} = \sum_{k=1}^{n} a_{in} b_{nj} = \mathbf{a}_i^T \mathbf{b}_j \ .$$
+
+  avendo usanto l'[intepretazione dei componenti di una matrice in vettori riga e colonna](math-hs:algebra:linear:intro:matrices:content), per esprimere l'elemento $ij$ della matrice $\mathbf{A} \mathbf{B}$ come prodotto matriciale della $i$-esima riga di $\mathbf{A}$ con la $j$-esima colonna di $\mathbf{B}$.
 
   **Osservazione.** **Non** vale la **proprietà commutativa** per il prodotto di matrici. Per di più, in generale non è possibile formare il prodotto $\mathbf{B} \mathbf{A}$, se $m \ne n$.
 
