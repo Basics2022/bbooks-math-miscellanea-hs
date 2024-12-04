@@ -70,7 +70,7 @@ In seguito si faranno cadere i pedici $col$ e $row$ per motivi di sintesi, usand
 
   o più esplicitamente,
 
-   $$ \mathbf{A} + \mathbf{B} = 
+$$ \mathbf{A} + \mathbf{B} = 
 \begin{bmatrix}
   a_{11} & a_{12} & \dots & a_{1n} \\ \dots  & \dots  & \dots & \dots  \\ a_{m1} & a_{m2} & \dots & a_{mn}
 \end{bmatrix}
@@ -92,7 +92,7 @@ $$
 
   o più esplicitamente,
 
-   $$ c A = \begin{bmatrix}
+$$ c A = \begin{bmatrix}
    c \cdot a_{11} & \dots & c \cdot a_{1n} \\
    \dots          & \dots & \dots          \\
    c \cdot a_{m1} & \dots & c \cdot a_{mn}
@@ -424,244 +424,244 @@ Viene chiesto di stabilire se i seguenti problemi hanno soluzione, di calcolare 
 
 1. 
 
-   $$
+$$
    \begin{cases}
    x + y = 4 \\
    \frac{3}{2}x + y = 5
    \end{cases}
-   $$
+$$
 
 
 2. 
 
-    $$
+$$
     \begin{cases}
     x - y = 2 \\
     x + y = -1
     \end{cases}
-    $$
+$$
 
 3. 
 
-   $$
+$$
    \begin{cases}
    x + 2y = 5 \\
    2x + 2y = 11
    \end{cases}
-   $$
+$$
 
 4. 
 
-   $$
+$$
    \begin{cases}
    x + y = 3 \\
    x - y = 1
    \end{cases}
-   $$
+$$
 
 5. 
 
-   $$
+$$
    \begin{cases}
    x - y + z = 0 \\
    2x - 2y + 2z = 0 \\
    -x + y - z = 0
    \end{cases}
-   $$
+$$
 
 
 6. 
 
-   $$
+$$
    \begin{cases}
    x + y + z = 2 \\
    x + 2y + z = 4 \\
    x + y + 2z = 6
    \end{cases}
-   $$
+$$
 
 7. 
 
-   $$
+$$
    \begin{cases}
    x + y + z = 3 \\
    2x + 2y + z = 8 \\
    \end{cases}
-   $$
+$$
 
 8. 
 
-   $$
+$$
    \begin{cases}
    x + y + z = 7 \\
    x + y - z = 3
    \end{cases}
-   $$
+$$
 
 9. 
 
-   $$
+$$
    \begin{cases}
    3x + 2y = 6 \\
    x - y = 1
    \end{cases}
-   $$
+$$
 
 10. 
 
-    $$
+$$
     \begin{cases}
     x + y = 2 \\
     3x + 2y = 6
     \end{cases}
-    $$
+$$
 
 11. 
 
-    $$
+$$
     \begin{cases}
     x - y = 1 \\
     x - 3y + z = 3
     \end{cases}
-    $$
+$$
 
 12. 
 
-    $$
+$$
     \begin{cases}
     x + y = 5 \\
     2x - y = 1
     \end{cases}
-    $$
+$$
 
 13. 
 
-    $$
+$$
     \begin{cases}
     x + y = 1 \\
     x + y + z = 3 \\
     2x + 2y + z = 4
     \end{cases}
-    $$
+$$
 
 14. 
 
-    $$
+$$
     \begin{cases}
     x + y + z = 5 \\
     2x - 2y + 2z = 10 \\
     3x - y + 3z = -5
     \end{cases}
-    $$
+$$
 
 15. 
 
-    $$
+$$
     \begin{cases}
     x + y = 4 \\
     2x + 2y = 8
     \end{cases}
-    $$
+$$
 
 16. 
 
-    $$
+$$
     \begin{cases}
     x + 2y = 8 \\
     3x - 4y = -2
     \end{cases}
-    $$
+$$
 
 17. 
 
-    $$
+$$
     \begin{cases}
     x + y = 3 \\
     2x + 2y = 6 \\
     x + 3y = 4
     \end{cases}
-    $$
+$$
 
 18. 
 
-    $$
+$$
     \begin{cases}
     x + y - z = 3 \\
     2x - y + z = 2 \\
     -x + y + 2z = 4
     \end{cases}
-    $$
+$$
 
 
 19. 
 
-   $$
+$$
    \begin{cases}
    x + y + z = 6 \\
    x - y + z = 4 \\
    2x + y - z = 7
    \end{cases}
-   $$
+$$
 
 
 20. 
 
-    $$
+$$
     \begin{cases}
     x + y + 3z = 6 \\
     2x + 4y + 6z = 12 \\
     -x - 2y - 3z = -6
     \end{cases}
-    $$
+$$
 
 Viene chiesto di ripetere la discussione degli esercizi precedenti, al variare dei parametri nel sistemi.
 
 1. 
 
-   $$
+$$
    \begin{cases}
    x + ky = 2 \\
    x - 2y = 1
    \end{cases}
-   $$
+$$
 
 
 2. 
 
-   $$
+$$
    \begin{cases}
    x + y = b \\
    ax + y = 2
    \end{cases}
-   $$
+$$
 
 3. 
 
-   $$
+$$
    \begin{cases}
    x - y + mz = 3 \\
    mx + 2y + z = 4 \\
    x + y - z = 1
    \end{cases}
-   $$
+$$
 
 4. 
 
-   $$
+$$
    \begin{cases}
    kx + y = 4 \\
    2x + ky = 3 p
    \end{cases}
-   $$
+$$
 
 5. 
-   $$
+$$
    \begin{cases}
    px + y      = 1 \\
    2x + y +  z = 2 \\
         y + qz = p
    \end{cases}
-   $$
+$$
 
 **todo** *Qualche esercizio con disequazioni*
 

@@ -585,6 +585,8 @@ a_{m1} &amp; a_{m2} &amp; \dots &amp; a_{mn}
 <div class="math notranslate nohighlight">
 \[(\mathbf{A} + \mathbf{B})_{ij} = a_{ij} + b_{ij} \ ,\]</div>
 <p>o più esplicitamente,</p>
+</li>
+</ul>
 <div class="math notranslate nohighlight">
 \[\begin{split} \mathbf{A} + \mathbf{B} = 
 \begin{bmatrix}
@@ -601,18 +603,20 @@ a_{m1} &amp; a_{m2} &amp; \dots &amp; a_{mn}
   a_{m1}+b_{m1} &amp; a_{m2}+b_{m2} &amp; \dots &amp; a_{mn}+b_{mn} \\
 \end{bmatrix}
 \end{split}\]</div>
-</li>
+<ul>
 <li><p><strong>Moltiplicazione per uno scalare.</strong> La moltiplicazione di una matrice <span class="math notranslate nohighlight">\(\mathbf{A} \in \mathbb{R}^{m,n}\)</span> per un numero reale <span class="math notranslate nohighlight">\(c \in \mathbf{R}\)</span> è la matrice <span class="math notranslate nohighlight">\(c \mathbf{A} \in \mathbb{R}^{m,n}\)</span> con componenti</p>
 <div class="math notranslate nohighlight">
 \[(c \mathbf{A})_{ij} = c \, a_{ij} \ ,\]</div>
 <p>o più esplicitamente,</p>
+</li>
+</ul>
 <div class="math notranslate nohighlight">
 \[\begin{split} c A = \begin{bmatrix}
    c \cdot a_{11} &amp; \dots &amp; c \cdot a_{1n} \\
    \dots          &amp; \dots &amp; \dots          \\
    c \cdot a_{m1} &amp; \dots &amp; c \cdot a_{mn}
    \end{bmatrix} \end{split}\]</div>
-</li>
+<ul>
 <li><p><strong>Prodotto di matrici.</strong> Il prodotto <span class="math notranslate nohighlight">\(\mathbf{A} \mathbf{B}\)</span> tra matrici è possibile tra due matrici <span class="math notranslate nohighlight">\(\mathbf{A} \in \mathbb{R}^{m,p}\)</span>, <span class="math notranslate nohighlight">\(\mathbf{B} \in \mathbb{R}^{p,n}\)</span>, ed è la matrice <span class="math notranslate nohighlight">\(\mathbf{A} \mathbf{B} \in \mathbb{R}^{m,n}\)</span> con le componenti</p>
 <div class="math notranslate nohighlight">
 \[(\mathbf{A}\mathbf{B})_{ij} = \sum_{k=1}^{n} a_{in} b_{nj} = \mathbf{a}_i^T \mathbf{b}_j \ .\]</div>
@@ -926,18 +930,17 @@ con $a^2 + b^2 = 1$ rappresenta una rotazione dei vettori attorno all'origine.
    x + y = 4 \\
    \frac{3}{2}x + y = 5
    \end{cases}
-   \end{split}\]</div>
+\end{split}\]</div>
 <ol class="arabic simple" start="2">
 <li></li>
 </ol>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$$
-\begin{cases}
-x - y = 2 \\
-x + y = -1
-\end{cases}
-$$
-</pre></div>
-</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x - y = 2 \\
+    x + y = -1
+    \end{cases}
+\end{split}\]</div>
 <ol class="arabic simple" start="3">
 <li></li>
 </ol>
@@ -947,7 +950,7 @@ $$
    x + 2y = 5 \\
    2x + 2y = 11
    \end{cases}
-   \end{split}\]</div>
+\end{split}\]</div>
 <ol class="arabic simple" start="4">
 <li></li>
 </ol>
@@ -957,7 +960,7 @@ $$
    x + y = 3 \\
    x - y = 1
    \end{cases}
-   \end{split}\]</div>
+\end{split}\]</div>
 <ol class="arabic simple" start="5">
 <li></li>
 </ol>
@@ -968,7 +971,7 @@ $$
    2x - 2y + 2z = 0 \\
    -x + y - z = 0
    \end{cases}
-   \end{split}\]</div>
+\end{split}\]</div>
 <ol class="arabic simple" start="6">
 <li></li>
 </ol>
@@ -979,7 +982,7 @@ $$
    x + 2y + z = 4 \\
    x + y + 2z = 6
    \end{cases}
-   \end{split}\]</div>
+\end{split}\]</div>
 <ol class="arabic simple" start="7">
 <li></li>
 </ol>
@@ -989,7 +992,7 @@ $$
    x + y + z = 3 \\
    2x + 2y + z = 8 \\
    \end{cases}
-   \end{split}\]</div>
+\end{split}\]</div>
 <ol class="arabic simple" start="8">
 <li></li>
 </ol>
@@ -999,7 +1002,7 @@ $$
    x + y + z = 7 \\
    x + y - z = 3
    \end{cases}
-   \end{split}\]</div>
+\end{split}\]</div>
 <ol class="arabic simple" start="9">
 <li></li>
 </ol>
@@ -1009,110 +1012,101 @@ $$
    3x + 2y = 6 \\
    x - y = 1
    \end{cases}
-   \end{split}\]</div>
+\end{split}\]</div>
 <ol class="arabic simple" start="10">
 <li></li>
 </ol>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$$
-\begin{cases}
-x + y = 2 \\
-3x + 2y = 6
-\end{cases}
-$$
-</pre></div>
-</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x + y = 2 \\
+    3x + 2y = 6
+    \end{cases}
+\end{split}\]</div>
 <ol class="arabic simple" start="11">
 <li></li>
 </ol>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$$
-\begin{cases}
-x - y = 1 \\
-x - 3y + z = 3
-\end{cases}
-$$
-</pre></div>
-</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x - y = 1 \\
+    x - 3y + z = 3
+    \end{cases}
+\end{split}\]</div>
 <ol class="arabic simple" start="12">
 <li></li>
 </ol>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$$
-\begin{cases}
-x + y = 5 \\
-2x - y = 1
-\end{cases}
-$$
-</pre></div>
-</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x + y = 5 \\
+    2x - y = 1
+    \end{cases}
+\end{split}\]</div>
 <ol class="arabic simple" start="13">
 <li></li>
 </ol>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$$
-\begin{cases}
-x + y = 1 \\
-x + y + z = 3 \\
-2x + 2y + z = 4
-\end{cases}
-$$
-</pre></div>
-</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x + y = 1 \\
+    x + y + z = 3 \\
+    2x + 2y + z = 4
+    \end{cases}
+\end{split}\]</div>
 <ol class="arabic simple" start="14">
 <li></li>
 </ol>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$$
-\begin{cases}
-x + y + z = 5 \\
-2x - 2y + 2z = 10 \\
-3x - y + 3z = -5
-\end{cases}
-$$
-</pre></div>
-</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x + y + z = 5 \\
+    2x - 2y + 2z = 10 \\
+    3x - y + 3z = -5
+    \end{cases}
+\end{split}\]</div>
 <ol class="arabic simple" start="15">
 <li></li>
 </ol>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$$
-\begin{cases}
-x + y = 4 \\
-2x + 2y = 8
-\end{cases}
-$$
-</pre></div>
-</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x + y = 4 \\
+    2x + 2y = 8
+    \end{cases}
+\end{split}\]</div>
 <ol class="arabic simple" start="16">
 <li></li>
 </ol>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$$
-\begin{cases}
-x + 2y = 8 \\
-3x - 4y = -2
-\end{cases}
-$$
-</pre></div>
-</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x + 2y = 8 \\
+    3x - 4y = -2
+    \end{cases}
+\end{split}\]</div>
 <ol class="arabic simple" start="17">
 <li></li>
 </ol>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$$
-\begin{cases}
-x + y = 3 \\
-2x + 2y = 6 \\
-x + 3y = 4
-\end{cases}
-$$
-</pre></div>
-</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x + y = 3 \\
+    2x + 2y = 6 \\
+    x + 3y = 4
+    \end{cases}
+\end{split}\]</div>
 <ol class="arabic simple" start="18">
 <li></li>
 </ol>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$$
-\begin{cases}
-x + y - z = 3 \\
-2x - y + z = 2 \\
--x + y + 2z = 4
-\end{cases}
-$$
-</pre></div>
-</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x + y - z = 3 \\
+    2x - y + z = 2 \\
+    -x + y + 2z = 4
+    \end{cases}
+\end{split}\]</div>
 <ol class="arabic simple" start="19">
 <li></li>
 </ol>
@@ -1123,19 +1117,18 @@ $$
    x - y + z = 4 \\
    2x + y - z = 7
    \end{cases}
-   \end{split}\]</div>
+\end{split}\]</div>
 <ol class="arabic simple" start="20">
 <li></li>
 </ol>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$$
-\begin{cases}
-x + y + 3z = 6 \\
-2x + 4y + 6z = 12 \\
--x - 2y - 3z = -6
-\end{cases}
-$$
-</pre></div>
-</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+    x + y + 3z = 6 \\
+    2x + 4y + 6z = 12 \\
+    -x - 2y - 3z = -6
+    \end{cases}
+\end{split}\]</div>
 <p>Viene chiesto di ripetere la discussione degli esercizi precedenti, al variare dei parametri nel sistemi.</p>
 <ol class="arabic simple">
 <li></li>
@@ -1146,7 +1139,7 @@ $$
    x + ky = 2 \\
    x - 2y = 1
    \end{cases}
-   \end{split}\]</div>
+\end{split}\]</div>
 <ol class="arabic simple" start="2">
 <li></li>
 </ol>
@@ -1156,7 +1149,7 @@ $$
    x + y = b \\
    ax + y = 2
    \end{cases}
-   \end{split}\]</div>
+\end{split}\]</div>
 <ol class="arabic simple" start="3">
 <li></li>
 </ol>
@@ -1167,7 +1160,7 @@ $$
    mx + 2y + z = 4 \\
    x + y - z = 1
    \end{cases}
-   \end{split}\]</div>
+\end{split}\]</div>
 <ol class="arabic simple" start="4">
 <li></li>
 </ol>
@@ -1177,18 +1170,18 @@ $$
    kx + y = 4 \\
    2x + ky = 3 p
    \end{cases}
-   \end{split}\]</div>
-<ol class="arabic" start="5">
-<li><div class="math notranslate nohighlight">
+\end{split}\]</div>
+<ol class="arabic simple" start="5">
+<li></li>
+</ol>
+<div class="math notranslate nohighlight">
 \[\begin{split}
    \begin{cases}
    px + y      = 1 \\
    2x + y +  z = 2 \\
         y + qz = p
    \end{cases}
-   \end{split}\]</div>
-</li>
-</ol>
+\end{split}\]</div>
 <p><strong>todo</strong> <em>Qualche esercizio con disequazioni</em></p>
 <!--
 
