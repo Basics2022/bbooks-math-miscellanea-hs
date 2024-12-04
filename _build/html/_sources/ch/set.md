@@ -1,6 +1,18 @@
 (math-hs:set)=
 # Insiemistica
 
+##
+
+(math-hs:fun)=
+## Funzioni
+
+(math-hs:fun:range)=
+### Immagine di una funzione
+
+(math-hs:fun:null)=
+### Nucleo di una funzione
+
+
 (math-hs:set:numbers)=
 ## Insiemi numerici
 

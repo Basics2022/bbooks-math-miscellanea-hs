@@ -87,7 +87,7 @@
         
 
 \title{Matematica per le scuole superiori}
-\date{03 dic 2024}
+\date{04 dic 2024}
 \release{}
 \author{basics}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -448,6 +448,18 @@ Per ora, elenco di concetti linkati
 
 \chapter{Insiemistica}
 \label{\detokenize{ch/set:insiemistica}}\label{\detokenize{ch/set:math-hs-set}}\label{\detokenize{ch/set::doc}}
+
+\section{}
+\label{\detokenize{ch/set:id1}}
+
+\section{Funzioni}
+\label{\detokenize{ch/set:funzioni}}\label{\detokenize{ch/set:math-hs-fun}}
+
+\subsection{Immagine di una funzione}
+\label{\detokenize{ch/set:immagine-di-una-funzione}}\label{\detokenize{ch/set:math-hs-fun-range}}
+
+\subsection{Nucleo di una funzione}
+\label{\detokenize{ch/set:nucleo-di-una-funzione}}\label{\detokenize{ch/set:math-hs-fun-null}}
 
 \section{Insiemi numerici}
 \label{\detokenize{ch/set:insiemi-numerici}}\label{\detokenize{ch/set:math-hs-set-numbers}}
@@ -1594,7 +1606,7 @@ In questa sezione vengono presentati gli argomenti dell’algebra lineare che ri
 
 
 \section{Introduzione}
-\label{\detokenize{ch/algebra/linear-algebra:introduzione}}
+\label{\detokenize{ch/algebra/linear-algebra:introduzione}}\label{\detokenize{ch/algebra/linear-algebra:math-hs-algebra-linear-intro}}
 \sphinxAtStartPar
 L’algebra lineare è fondamentale per studiare matrici, sistemi lineari e trasformazioni geometriche. Questo capitolo esplora le matrici, i determinanti e la risoluzione dei sistemi.
 
@@ -1624,7 +1636,7 @@ avendo raccolto i coefficienti \(a_{ij}\) nella matrice \(\mathbf{A} \in \mathbb
 
 
 \section{Matrici}
-\label{\detokenize{ch/algebra/linear-algebra:matrici}}
+\label{\detokenize{ch/algebra/linear-algebra:matrici}}\label{\detokenize{ch/algebra/linear-algebra:math-hs-algebra-linear-matrices}}
 \sphinxAtStartPar
 \sphinxstylestrong{Definizione.} Una matrice \(\mathbf{A} \in \mathbb{R}^{m,n}\) è una tabella 2\sphinxhyphen{}dimensionale di numeri reali con \(m\) righe e \(n\) colonne,
 \begin{equation*}
@@ -1637,12 +1649,33 @@ a_{m1} & a_{m2} & \dots & a_{mn}
 \end{bmatrix}
 \end{split}
 \end{equation*}
+
+\subsection{Inteprepretazione del contenuto di una matrice}
+\label{\detokenize{ch/algebra/linear-algebra:inteprepretazione-del-contenuto-di-una-matrice}}\label{\detokenize{ch/algebra/linear-algebra:math-hs-algebra-linear-matrices-content}}
 \sphinxAtStartPar
-\sphinxstylestrong{Interpretazione del contenuto della matrice.} Una matrice \(\mathbf{A} \in \mathbb{R}^{m,n}\) può essere interpretata come \(n\) \(m\)\sphinxhyphen{}uple \(\mathbf{a}_i\)
+Spesso risulta utile intepretare una matrice \(\mathbf{A} \in \mathbb{R}^{m,n}\) come una tabella di \(n\) colonne di \(m\)\sphinxhyphen{}tuple o \sphinxstyleemphasis{vettori colonna}, o come una tabella di \(m\) righe di \(n\)\sphinxhyphen{}tuple o \sphinxstyleemphasis{vettori riga},
+\begin{equation*}
+\begin{split}\mathbf{A} =
+\begin{bmatrix}
+a_{11} & a_{12} & \dots & a_{1n} \\
+\dots  & \dots  & \dots & \dots  \\
+a_{m1} & a_{m2} & \dots & a_{mn}
+\end{bmatrix} = 
+\left[ \begin{array}{c|c|c|c}
+                   &                    &       &                    \\
+\mathbf{a}_{col,1} & \mathbf{a}_{col,2} & \dots & \mathbf{a}_{col,n} \\
+                   &                    &       &                    \\
+\end{array}
+\right] = 
+\begin{bmatrix} \quad \mathbf{a}^T_{row,1} \quad  \\ \hline \quad \dots \quad  \\ \hline \quad \mathbf{a}^T_{row,m} \quad \end{bmatrix} \ .
+\end{split}
+\end{equation*}
+\sphinxAtStartPar
+In seguito si faranno cadere i pedici \(col\) e \(row\) per motivi di sintesi, usando il simbolo \(^T\) per intendere un \sphinxstyleemphasis{vettore riga}, come vettore \sphinxstylestrong{trasposto} di un vettore colonna. Nel formalismo matriciale, un vettore colonna con \(m\) elementi viene quindi intepretato come una matrice \(\in \mathbb{R}^{m,1}\) di \(m\) righe e una colonna; viceversa un vettore riga con \(n\) elementi una matrice \(\in \mathbb{R}^{1,n}\) di una riga e \(n\) colonne.
 
 
 \subsection{Operazioni}
-\label{\detokenize{ch/algebra/linear-algebra:operazioni}}\begin{itemize}
+\label{\detokenize{ch/algebra/linear-algebra:operazioni}}\label{\detokenize{ch/algebra/linear-algebra:math-hs-algebra-linear-matrices-operations}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 \sphinxstylestrong{Somma.} La somma è possibile tra due matrici con le stesse dimensioni \(\mathbf{A},\, \mathbf{B} \in \mathbb{R}^{m,n}\). La somma di due matrici \(\mathbf{A}\), \(\mathbf{B}\) è la matrice \(\mathbf{A} + \mathbf{B} \in \mathbb{R}^{m,n}\) con componenti
@@ -1687,31 +1720,105 @@ o più esplicitamente,
 \sphinxAtStartPar
 \sphinxstylestrong{Prodotto di matrici.} Il prodotto \(\mathbf{A} \mathbf{B}\) tra matrici è possibile tra due matrici \(\mathbf{A} \in \mathbb{R}^{m,p}\), \(\mathbf{B} \in \mathbb{R}^{p,n}\), ed è la matrice \(\mathbf{A} \mathbf{B} \in \mathbb{R}^{m,n}\) con le componenti
 \begin{equation*}
-\begin{split}(\mathbf{A}\mathbf{B})_{ij} = \sum_{k=1}^{n} a_{in} b_{nj} \ .\end{split}
+\begin{split}(\mathbf{A}\mathbf{B})_{ij} = \sum_{k=1}^{n} a_{in} b_{nj} = \mathbf{a}_i^T \mathbf{b}_j \ .\end{split}
 \end{equation*}
+\sphinxAtStartPar
+avendo usanto l”{\hyperref[\detokenize{ch/algebra/linear-algebra:math-hs-algebra-linear-matrices-content}]{\sphinxcrossref{\DUrole{std,std-ref}{intepretazione dei componenti di una matrice in vettori riga e colonna}}}}, per esprimere l’elemento \(ij\) della matrice \(\mathbf{A} \mathbf{B}\) come prodotto matriciale della \(i\)\sphinxhyphen{}esima riga di \(\mathbf{A}\) con la \(j\)\sphinxhyphen{}esima colonna di \(\mathbf{B}\).
+
 \sphinxAtStartPar
 \sphinxstylestrong{Osservazione.} \sphinxstylestrong{Non} vale la \sphinxstylestrong{proprietà commutativa} per il prodotto di matrici. Per di più, in generale non è possibile formare il prodotto \(\mathbf{B} \mathbf{A}\), se \(m \ne n\).
 
 \end{itemize}
 \label{ch/algebra/linear-algebra:example-0}
-\begin{sphinxadmonition}{note}{Example 6.3.1}
+\begin{sphinxadmonition}{note}{Example 6.3.1 (Non\sphinxhyphen{}commutatività del prodotto matriciale)}
 
 
-\end{sphinxadmonition}
+
+\sphinxAtStartPar
+Date le matrici \(\in \mathbf{R}^{2,2}\),
+\begin{equation*}
+\begin{split}
+\mathbf{A} = \begin{bmatrix} 1 & 2 \\ 0 & 1 \end{bmatrix} \qquad , \qquad
+\mathbf{B} = \begin{bmatrix} 1 &-1 \\ 1 & 2 \end{bmatrix} 
+\end{split}
+\end{equation*}
+\sphinxAtStartPar
+i prodotti \(\mathbf{A}\mathbf{B}\) e \(\mathbf{B} \mathbf{A}\) valgono
+\begin{equation*}
+\begin{split}
+\mathbf{A} \mathbf{B}
+ = \begin{bmatrix} 1 & 2 \\ 0 & 1 \end{bmatrix} \begin{bmatrix} 1 &-1 \\ 1 & 2 \end{bmatrix} 
+ = \begin{bmatrix}
+ 1 \cdot 1 + 2 \cdot 1 & 1 \cdot (-1) + 2 \cdot 2 \\
+ 0 \cdot 1 + 1 \cdot 1 & 0 \cdot (-1) + 1 \cdot 2 \\
+ \end{bmatrix} =
+ \begin{bmatrix}  3 & 3 \\  1 & 2 \end{bmatrix}
+\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}
+\mathbf{B}\mathbf{A} 
+ = \begin{bmatrix} 1 &-1 \\ 1 & 2 \end{bmatrix}  \begin{bmatrix} 1 & 2 \\ 0 & 1 \end{bmatrix}
+ = \begin{bmatrix}
+ 1 \cdot 1 - 1 \cdot 0 & 1 \cdot 2 - 1 \cdot 1 \\
+ 1 \cdot 1 + 2 \cdot 0 & 1 \cdot 2 + 2 \cdot 1 \\
+ \end{bmatrix} =
+ \begin{bmatrix}  1 & 1 \\  1 & 4 \end{bmatrix}
+\end{split}
+\end{equation*}\end{sphinxadmonition}
 \label{ch/algebra/linear-algebra:example-1}
 \begin{sphinxadmonition}{note}{Example 6.3.2}
 
 
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo}
 \end{sphinxadmonition}
 \label{ch/algebra/linear-algebra:example-2}
 \begin{sphinxadmonition}{note}{Example 6.3.3}
 
 
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo}
 \end{sphinxadmonition}
 
 
+\subsection{Matrice come funzione lineare}
+\label{\detokenize{ch/algebra/linear-algebra:matrice-come-funzione-lineare}}\label{\detokenize{ch/algebra/linear-algebra:math-hs-algebra-linear-matrices-linear-function}}
+\sphinxAtStartPar
+Tramite il prodotto matrice vettore (colonna), una matrice \(\mathbf{R}^{m,n}\) rappresenta la funzione lineare più generale \(f_A: \mathbb{R}^n \rightarrow \mathbb{R}^m\), che prende un vettore colonna \(\mathbf{x} \in \mathbb{R}^n\) come argomento e restituisce un vettore \(\mathbf{y} \in \mathbb{R}^m\),
+\begin{equation*}
+\begin{split}\mathbf{y} = f(\mathbf{x}) = \mathbb{A} \mathbf{x} \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Si lasciano dimostrare le proprietà di linearità di questa funzione come esercizio (\sphinxstyleemphasis{consiglio: utilizzare le {\hyperref[\detokenize{ch/algebra/linear-algebra:math-hs-algebra-linear-matrices-operations}]{\sphinxcrossref{\DUrole{std,std-ref}{operazioni matriciali}}}}})
+
+
+\subsection{Immagine e nucleo}
+\label{\detokenize{ch/algebra/linear-algebra:immagine-e-nucleo}}\label{\detokenize{ch/algebra/linear-algebra:math-hs-algebra-linear-matrices-range-null}}
+\sphinxAtStartPar
+Immagine e nucleo sono due insiemi%
+\begin{footnote}[1]\sphinxAtStartFootnote
+Rango e nucleo non sono semplici insiemi, ma hanno qualche proprietà in più che li rende {\hyperref[\detokenize{ch/algebra/vector-algebra-def:math-hs-algebra-vector-def}]{\sphinxcrossref{\DUrole{std,std-ref}{spazi vettoriali}}}}. Per quello che ci serve qui, possiamo considerarli insiemi.
+%
+\end{footnote} sono due insiemi che caratterizzano le funzioni e quindi possono essere definiti anche per una matrice che rappresenta una funzione lineare.
+
+\sphinxAtStartPar
+Il \sphinxstylestrong{nucleo} di una matrice \(\mathbf{A} \in \mathbb{R}^{m,n}\) è l’insieme dei vettori colonna \(\mathbf{x} \in \mathbb{R}^n\) tali che \(\mathbf{A} \mathbf{x} = \mathbf{0}_m\),
+\begin{equation*}
+\begin{split}\text{N}(\mathbf{A}) = \{ \mathbf{x} \in \mathbb{R}^n \, | \, \mathbf{A} \mathbf{x} = \mathbf{0}_m \} \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+L”\sphinxstylestrong{immagine} di una matrice \(\mathbf{A} \in \mathbb{R}^{m,n}\) è l’insieme dei vettori colonna \(\mathbf{y} \in \mathbb{R}^m\) per i quali esiste un vettore \(\mathbf{x} \in \mathbb{R}^n\) tale che \(\mathbf{A} \mathbf{x} = \mathbf{y}\),
+\begin{equation*}
+\begin{split}\text{I}(\mathbf{A}) = \{ \mathbf{y} \in \mathbb{R}^m \, | \, \exists \mathbf{x} \in \mathbb{R}^n \, |  \, \mathbf{A} \mathbf{x} = \mathbf{y} \} \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{todo} fare riferimento alle definizioni per le funzioni, {\hyperref[\detokenize{ch/set:math-hs-fun-range}]{\sphinxcrossref{\DUrole{std,std-ref}{immagine di una funzione}}}}, {\hyperref[\detokenize{ch/set:math-hs-fun-null}]{\sphinxcrossref{\DUrole{std,std-ref}{nucleo di una funzione}}}}.
+
+
 \subsection{Determinante}
-\label{\detokenize{ch/algebra/linear-algebra:determinante}}
+\label{\detokenize{ch/algebra/linear-algebra:determinante}}\label{\detokenize{ch/algebra/linear-algebra:math-hs-algebra-linear-matrices-det}}
 \sphinxAtStartPar
 Per una matrice quadrata \(\mathbf{A} \in \mathbb{R}^{n,n}\) è possibile definire una grandezza scalare, definita \sphinxstylestrong{determinante}, il cui nome dovrebbe farne intuire la rilevanza: essa infatti riassume alcune caratteristiche della matrice e, tra le altre, determina un criterio di esistenza della matrice inversa e un criterio di esistenza e di unicità della soluzione di un sistema lineare, \(\mathbf{A} \mathbf{x} = \mathbf{b}\).
 
@@ -1719,29 +1826,29 @@ Per una matrice quadrata \(\mathbf{A} \in \mathbb{R}^{n,n}\) è possibile defini
 La definizione e una discussione completa del determinante di una matrice vanno ben oltre (\sphinxstylestrong{todo} \sphinxstyleemphasis{probabilmente}) lo scopo di questo materiale.
 
 \sphinxAtStartPar
+\sphinxstylestrong{todo} \sphinxstyleemphasis{Rapporto con immagine e nucleo}
+
+\sphinxAtStartPar
 \sphinxstylestrong{todo} \sphinxstyleemphasis{Espressione del determinante per matrici 2x2, 3x3; mettere in evidenza la comparsa del determinante nei metodi di soluzione sotto}
 
 
-\subsection{Rango e nucleo}
-\label{\detokenize{ch/algebra/linear-algebra:rango-e-nucleo}}
-\sphinxAtStartPar
-\sphinxstylestrong{todo} …
-
-
 \section{Risoluzione di Sistemi}
-\label{\detokenize{ch/algebra/linear-algebra:risoluzione-di-sistemi}}
+\label{\detokenize{ch/algebra/linear-algebra:risoluzione-di-sistemi}}\label{\detokenize{ch/algebra/linear-algebra:math-hs-algebra-linear-linear-system-sol}}
 \sphinxAtStartPar
 La soluzione dei sistemi lineari è una delle attività più frequenti nelle applicazioni di matematica, soprattutto negli algoritmi di calcolo numerico; non ci occuperemo qui dei metodi numerici di soluzione dei sistemi lineari, ma si discutono diversi approcci alla soluzione analitica «a manina» di sistemi lineari, utili per il calcolo analitico della soluzione esatta di sistemi lineari di dimensioni sufficientemente ridotte (3, salvo casi eccezionali…).
 
 \sphinxAtStartPar
-Come descritto dal {\hyperref[\detokenize{ch/algebra::doc}]{\sphinxcrossref{\DUrole{doc,std,std-doc}{teorema di Rouché\sphinxhyphen{}Capelli}}}}, esistono 3 possibili situazioni: il sistema lineare ha 1. una sola soluzione; 2. un numero infinito di soluzioni; 3. nessuna soluzione.
+Come descritto dal {\hyperref[\detokenize{ch/algebra/linear-algebra:math-hs-algebra-linear-rouche-capelli}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema di Rouché\sphinxhyphen{}Capelli}}}}, esistono 3 possibili situazioni: il sistema lineare ha 1. una sola soluzione; 2. un numero infinito di soluzioni; 3. nessuna soluzione.
 
 \sphinxAtStartPar
 I metodi presentati sono tra di loro equivalenti, intendendo che portano alla stessa soluzione. \sphinxstylestrong{todo} \sphinxstyleemphasis{Equivalenti nel caso esista una soluzione unica. Danno le stesse informazioni anche nel caso esistano infinite soluzioni o non esistano soluzioni? Riguardo il rango e/o il nucleo…}
 
+\sphinxAtStartPar
+\sphinxstylestrong{todo} Collegamento a \sphinxhref{https://basics2022.github.io/bbooks-programming-hs/ch/numerics/linear.html}{soluzione numerica di sistemi lineari}, nel \$\(\texttt{bbook}\)\$ sull”\sphinxhref{https://basics2022.github.io/bbooks-programming-hs}{introduzione alla programmazione e al calcolo numerico}
+
 
 \subsection{Metodo di sostituzione}
-\label{\detokenize{ch/algebra/linear-algebra:metodo-di-sostituzione}}
+\label{\detokenize{ch/algebra/linear-algebra:metodo-di-sostituzione}}\label{\detokenize{ch/algebra/linear-algebra:math-hs-algebra-linear-linear-system-sol-substitution}}
 \sphinxAtStartPar
 Il metodo di sostituzione consiste nell’usare in successione un’equazione per ricavare un’incognita in funzione delle altre incognite, e sostituire l’espressione ricavata nelle altre successioni, per ottenere un sistema lineare con al dimensione ridotta di 1. Si continua così fino a ottenere un’equazione in un’incognita, immediata da risolvere. Successivamente si trovano i valori delle altre incognite in funzione delle incognite già calcolate. Se esiste una soluzione del problema, l’algoritmo descritto permette di calcolare la soluzione. \sphinxstylestrong{todo} \sphinxstyleemphasis{Altrimenti, in caso di esistenza di infinite soluzioni si arriva a un’identità \(0=0\); in caso di nessuna soluzione si arriva a una contraddizione \(1=0\).} \sphinxstylestrong{todo} \sphinxstyleemphasis{vedi esempi sotto}
 \label{ch/algebra/linear-algebra:example-3}
@@ -1795,7 +1902,7 @@ Una volta trovato il valore \(x_2 = -1\), si «torna indietro» per calcolare \(
 
 
 \subsection{Metodo di eliminazione di Gauss}
-\label{\detokenize{ch/algebra/linear-algebra:metodo-di-eliminazione-di-gauss}}
+\label{\detokenize{ch/algebra/linear-algebra:metodo-di-eliminazione-di-gauss}}\label{\detokenize{ch/algebra/linear-algebra:math-hs-algebra-linear-linear-system-sol-gauss}}
 \sphinxAtStartPar
 Il metodo di eliminazione di Gauss consiste nella combinazione lineare delle equazioni del sistema per ottenere una forma del sistema facilmente risolvibile, tipicamente una matrice dei coefficienti con forma triangolare.
 \label{ch/algebra/linear-algebra:example-4}
@@ -1857,7 +1964,7 @@ a ritroso: questo ordine di soluzione permette di risolvere \(n\) equazioni che 
 
 
 \subsection{Metodo di Cramer}
-\label{\detokenize{ch/algebra/linear-algebra:metodo-di-cramer}}
+\label{\detokenize{ch/algebra/linear-algebra:metodo-di-cramer}}\label{\detokenize{ch/algebra/linear-algebra:math-hs-algebra-linear-linear-system-sol-cramer}}
 \sphinxAtStartPar
 \sphinxstylestrong{todo} \sphinxstyleemphasis{Per quale motivo discuterlo? E” scomodo, non dà grandi informazioni in caso di assenza o numero infinito di soluzioni…}
 
@@ -1866,7 +1973,7 @@ a ritroso: questo ordine di soluzione permette di risolvere \(n\) equazioni che 
 \label{\detokenize{ch/algebra/linear-algebra:teorema-di-rouche-capelli}}\label{\detokenize{ch/algebra/linear-algebra:math-hs-algebra-linear-rouche-capelli}}
 
 \subsection{Interpretazione geometrica}
-\label{\detokenize{ch/algebra/linear-algebra:interpretazione-geometrica}}\label{ch/algebra/linear-algebra:example-5}
+\label{\detokenize{ch/algebra/linear-algebra:interpretazione-geometrica}}\label{\detokenize{ch/algebra/linear-algebra:math-hs-algebra-linear-rouche-capelli-geometry}}\label{ch/algebra/linear-algebra:example-5}
 \begin{sphinxadmonition}{note}{Example 6.5.1 (Sistema quadrato determinato)}
 
 
@@ -1889,7 +1996,209 @@ a ritroso: questo ordine di soluzione permette di risolvere \(n\) equazioni che 
 
 
 \section{Problemi}
-\label{\detokenize{ch/algebra/linear-algebra:problemi}}
+\label{\detokenize{ch/algebra/linear-algebra:problemi}}\label{\detokenize{ch/algebra/linear-algebra:math-hs-algebra-linear-problems}}
+
+\subsection{Matrici come funzione lineare}
+\label{\detokenize{ch/algebra/linear-algebra:matrici-come-funzione-lineare}}\phantomsection \label{exercise:ch/algebra/linear-algebra-exercise-9}
+
+\begin{sphinxadmonition}{note}{Exercise 6.6.1 (Matrici e scalatura)}
+
+
+
+\sphinxAtStartPar
+Interpretando gli elementi di un vettore colonna \(\mathbf{x} \in \mathbb{R}^2\) come le componenti cartesiane del vettore \(\vec{x}\) in un piano, la matrice \(\mathbf{A} \in \mathbb{R}^{2,2}\)
+\begin{equation*}
+\begin{split}\mathbf{A} = \begin{bmatrix} a & 0 \\ 0 & b \end{bmatrix} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+rappresenta una scalatura non isotropa (diversa lungo le diverse direzioni) delle componenti dei vettori di un fattore \(a\) in direzione \(x\) e di un fattore \(b\) in direzione \(y\).
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Dimostrare questa frase, calcolando il prodotto \(\mathbf{A} \mathbf{r}\) per il vettore colonna generico \(\mathbf{r} = \begin{bmatrix} x \\ y \end{bmatrix}\) contenente le componenti cartesiane del vettore \(\vec{r}\) nel piano
+
+\item {} 
+\sphinxAtStartPar
+Dare una rappresentazione grafica nel piano
+
+\item {} 
+\sphinxAtStartPar
+Dimostrare che il determinante della matrice è uguale a \(ab\), \(|\mathbf{A}| = ab\)
+
+\item {} 
+\sphinxAtStartPar
+Dimostrare che la trasformazione inversa \(\mathbf{A}^{-1}\) esiste per \(a \ne 0 \land b \ne 0\), e vale \(\mathbf{A}^{-1} = \begin{bmatrix} \frac{1}{a} & 0 \\ 0 & \frac{1}{b} \end{bmatrix}\)
+
+\item {} 
+\sphinxAtStartPar
+Discutere il caso in cui \(a = b\), dove la scalatura è isotropa.
+
+\item {} 
+\sphinxAtStartPar
+Dimostrare che questa trasformazione rappresenta la riflessione rispetto all’origine nel caso in cui \(a = b = -1\)
+
+\end{itemize}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/algebra/linear-algebra-exercise-10}
+
+\begin{sphinxadmonition}{note}{Exercise 6.6.2 (Matrici e riflessioni)}
+
+
+
+\sphinxAtStartPar
+Interpretando gli elementi di un vettore colonna \(\mathbf{x} \in \mathbb{R}^2\) come le componenti cartesiane del vettore \(\vec{x}\) in un piano, la matrice \(\mathbf{A} \in \mathbb{R}^{2,2}\)
+\begin{equation*}
+\begin{split}\mathbf{A} = \begin{bmatrix} 1 - 2 n_x^2 & - 2 n_x n_y \\  - 2 n_x n_y & 1 - 2 n_y^2 \end{bmatrix} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+rappresenta una riflessione di vettori del piano rispetto a una retta passante per l’origine e perpendicolare al vettore \(\vec{n}\) con componenti \(n_x\), \(n_y\), \(n_x^2 + n_y^2 = 1\).
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Dimostrare questa frase, calcolando il prodotto \(\mathbf{A} \mathbf{r}\) per il vettore colonna generico \(\mathbf{r} = \begin{bmatrix} x \\ y \end{bmatrix}\) contenente le componenti cartesiane del vettore \(\vec{r}\) nel piano
+
+\item {} 
+\sphinxAtStartPar
+Dare una rappresentazione grafica nel piano
+
+\item {} 
+\sphinxAtStartPar
+Dimostrare che il determinante della matrice è uguale a \sphinxhyphen{}1, \(|\mathbf{A}| = -1\)
+
+\item {} 
+\sphinxAtStartPar
+Dimostrare che la trasformazione inversa \(\mathbf{A}^{-1}\) esiste ed è uguale alla trasformazione originale, \(\mathbf{A}^{-1} = \mathbf{A}\)
+
+\end{itemize}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/algebra/linear-algebra-exercise-11}
+
+\begin{sphinxadmonition}{note}{Exercise 6.6.3 (Matrici e rotazioni)}
+
+
+
+\sphinxAtStartPar
+Interpretando gli elementi di un vettore colonna \(\mathbf{x} \in \mathbb{R}^2\) come le componenti cartesiane del vettore \(\vec{x}\) in un piano, la matrice \(\mathbf{A} \in \mathbb{R}^{2,2}\)
+\begin{equation*}
+\begin{split}\mathbf{A} = \begin{bmatrix} \cos\theta & \sin \theta \\ -\sin\theta & \cos\theta \end{bmatrix} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+rappresenta una rotazione dei vettori attorno all’origine di un angolo \(\theta\).
+
+
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Dimostrare questa frase, calcolando il prodotto \(\mathbf{A} \mathbf{r}\) per il vettore colonna generico \(\mathbf{r} = \begin{bmatrix} x \\ y \end{bmatrix}\) contenente le componenti cartesiane del vettore \(\vec{r}\) nel piano
+
+\item {} 
+\sphinxAtStartPar
+Dare una rappresentazione grafica nel piano
+
+\item {} 
+\sphinxAtStartPar
+Dimostrare che il determinante della matrice è uguale a 1, \(|\mathbf{A}| = 1\)
+
+\item {} 
+\sphinxAtStartPar
+Dimostrare che la trasformazione inversa \(\mathbf{A}^{-1}\) esiste ed è uguale alla trasposta della trasformazione, \(\mathbf{A}^{-1} = \mathbf{A}^T\)
+
+\end{itemize}
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo} Si può sostituire \(\cos \theta = a\), \(\sin \theta = b\) con \(a^2 + b^2 = 1\)
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo} Dipendenza logica di questo esercizio dalle basi di {\hyperref[\detokenize{ch/trigonometry:math-hs-trigonometry}]{\sphinxcrossref{\DUrole{std,std-ref}{trigonometria}}}}. Stabilire un ordine consigliato di accesso a questo \(\texttt{bbook}\)
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/algebra/linear-algebra-exercise-12}
+
+\begin{sphinxadmonition}{note}{Exercise 6.6.4 (Proiezione ortogonale lungo una direzione data)}
+
+
+
+\sphinxAtStartPar
+Interpretando gli elementi di un vettore colonna \(\mathbf{x} \in \mathbb{R}^2\) come le componenti cartesiane del vettore \(\vec{x}\) in un piano, la matrice \(\mathbf{A} \in \mathbb{R}^{2,2}\)
+\begin{equation*}
+\begin{split}\mathbf{A} = \mathbf{n}^T \mathbf{n} = \begin{bmatrix} n_x^2 & n_x n_y \\  n_x n_y & n_y^2 \end{bmatrix} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+rappresenta una proiezione ortogonale dei punti del piano sulla retta passante per l’origine con direzione determinata dal vettore \(\vec{n}\) con componenti \(n_x\), \(n_y\), \(n_x^2 + n_y^2 = 1\).
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Dimostrare questa frase, calcolando il prodotto \(\mathbf{A} \mathbf{r}\) per il vettore colonna generico \(\mathbf{r} = \begin{bmatrix} x \\ y \end{bmatrix}\) contenente le componenti cartesiane del vettore \(\vec{r}\) nel piano
+
+\item {} 
+\sphinxAtStartPar
+Dare una rappresentazione grafica nel piano
+
+\item {} 
+\sphinxAtStartPar
+Dimostrare che il determinante della matrice è uguale a 0, \(|\mathbf{A}| = 0\)
+
+\item {} 
+\sphinxAtStartPar
+Dimostrare che l’immagine della trasformazione è formato dai vettori colonna \(a \mathbf{n}\)
+
+\item {} 
+\sphinxAtStartPar
+Dimostrare che il nucleo della trasformazione è formato dai vettori colonna \(\mathbf{x}\) per i quali vale \(\mathbf{x}^T \mathbf{a}=0\)
+
+\end{itemize}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/algebra/linear-algebra-exercise-13}
+
+\begin{sphinxadmonition}{note}{Exercise 6.6.5 (Proiezione ortogonale nella direzione perpendicolare a una direzione data)}
+
+
+
+\sphinxAtStartPar
+Interpretando gli elementi di un vettore colonna \(\mathbf{x} \in \mathbb{R}^2\) come le componenti cartesiane del vettore \(\vec{x}\) in un piano, la matrice \(\mathbf{A} \in \mathbb{R}^{2,2}\)
+\begin{equation*}
+\begin{split}\mathbf{A} = \mathbf{I} - \mathbf{n}^T \mathbf{n} = \begin{bmatrix} 1- n_x^2 & -n_x n_y \\ - n_x n_y & 1 - n_y^2 \end{bmatrix} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+rappresenta una proiezione ortogonale dei punti del piano sulla retta passante per l’origine e perpendicolare al vettore \(\vec{n}\) con componenti \(n_x\), \(n_y\), \(n_x^2 + n_y^2 = 1\).
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Dimostrare questa frase, calcolando il prodotto \(\mathbf{A} \mathbf{r}\) per il vettore colonna generico \(\mathbf{r} = \begin{bmatrix} x \\ y \end{bmatrix}\) contenente le componenti cartesiane del vettore \(\vec{r}\) nel piano
+
+\item {} 
+\sphinxAtStartPar
+Dare una rappresentazione grafica nel piano
+
+\item {} 
+\sphinxAtStartPar
+Dimostrare che il determinante della matrice è uguale a 0, \(|\mathbf{A}| = 0\)
+
+\item {} 
+\sphinxAtStartPar
+Dimostrare che l’immagine della trasformazione è formato dai vettori colonna \(\mathbf{x}\) per i quali vale \(\mathbf{x}^T \mathbf{a}=0\)
+
+\item {} 
+\sphinxAtStartPar
+Dimostrare che il nucleo della trasformazione è formato dai vettori colonna \(a \mathbf{n}\)
+
+\end{itemize}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/algebra/linear-algebra-exercise-14}
+
+\begin{sphinxadmonition}{note}{Exercise 6.6.6 (Scomposizione di una matrice \sphinxhyphen{} somma di parte simmetrica e antisimmetrica)}
+
+
+
+\sphinxAtStartPar
+Ogni matrice può essere scritta come la somma di una parte simmetrica e una parte antisimmetrica.
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/algebra/linear-algebra-exercise-15}
+
+\begin{sphinxadmonition}{note}{Exercise 6.6.7 (Scomposizione di una matrice \sphinxhyphen{} …)}
+
+
+\end{sphinxadmonition}
+
 \sphinxAtStartPar
 Viene chiesto di stabilire se i seguenti problemi hanno soluzione, di calcolare le eventuali soluzioni, fornire una rappresentazione grafica del problema algebrico, e \sphinxhyphen{} per sistemi con uguale numero di equazioni ed incognite \sphinxhyphen{} calcolare il determinante delle matrici del sistema lineare.
 \begin{enumerate}
@@ -2197,6 +2506,10 @@ Viene chiesto di ripetere la discussione degli esercizi precedenti, al variare d
 
 
 
+
+\bigskip\hrule\bigskip
+
+
 \sphinxstepscope
 
 \begin{sphinxuseclass}{sd-container-fluid}
@@ -2237,7 +2550,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-03 dic 2024
+04 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -2351,7 +2664,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-03 dic 2024
+04 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -2625,7 +2938,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-03 dic 2024
+04 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -2833,7 +3146,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-03 dic 2024
+04 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3275,7 +3588,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-03 dic 2024
+04 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3473,7 +3786,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-03 dic 2024
+04 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3622,7 +3935,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-03 dic 2024
+04 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -4979,7 +5292,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-03 dic 2024
+04 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -5120,7 +5433,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-03 dic 2024
+04 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -5222,7 +5535,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-03 dic 2024
+04 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -5385,7 +5698,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-03 dic 2024
+04 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -6267,7 +6580,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-03 dic 2024
+04 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -6354,7 +6667,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-03 dic 2024
+04 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -8079,7 +8392,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-03 dic 2024
+04 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -8655,7 +8968,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-03 dic 2024
+04 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -8759,7 +9072,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-03 dic 2024
+04 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -9189,7 +9502,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-03 dic 2024
+04 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
