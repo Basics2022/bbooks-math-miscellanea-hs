@@ -314,6 +314,7 @@ $$\begin{aligned}
 (math-hs:algebra:linear:problems)=
 ## Problemi
 
+(math-hs:algebra:linear:problems:linear-fun)=
 ### Matrici come funzione lineare
 ```{exercise} Matrici e scalatura
 :class: dropdown
@@ -416,11 +417,12 @@ Ogni matrice può essere scritta come la somma di una parte simmetrica e una par
 
 ```
 
-
+(math-hs:algebra:linear:problems:linear-sys)=
+### Soluzione di sistemi lineari
 
 Viene chiesto di stabilire se i seguenti problemi hanno soluzione, di calcolare le eventuali soluzioni, fornire una rappresentazione grafica del problema algebrico, e - per sistemi con uguale numero di equazioni ed incognite - calcolare il determinante delle matrici del sistema lineare.
 
-1. Risolvi il sistema:
+1. 
 
    $$
    \begin{cases}
@@ -430,7 +432,7 @@ Viene chiesto di stabilire se i seguenti problemi hanno soluzione, di calcolare 
    $$
 
 
-2. Risolvi il sistema:
+2. 
 
     $$
     \begin{cases}
@@ -439,7 +441,7 @@ Viene chiesto di stabilire se i seguenti problemi hanno soluzione, di calcolare 
     \end{cases}
     $$
 
-3. Risolvi il sistema:
+3. 
 
    $$
    \begin{cases}
@@ -448,7 +450,7 @@ Viene chiesto di stabilire se i seguenti problemi hanno soluzione, di calcolare 
    \end{cases}
    $$
 
-4. Risolvi il sistema:
+4. 
 
    $$
    \begin{cases}
@@ -457,7 +459,7 @@ Viene chiesto di stabilire se i seguenti problemi hanno soluzione, di calcolare 
    \end{cases}
    $$
 
-5. Risolvi il sistema:
+5. 
 
    $$
    \begin{cases}
@@ -468,7 +470,7 @@ Viene chiesto di stabilire se i seguenti problemi hanno soluzione, di calcolare 
    $$
 
 
-6. Risolvi il sistema:
+6. 
 
    $$
    \begin{cases}
@@ -478,7 +480,7 @@ Viene chiesto di stabilire se i seguenti problemi hanno soluzione, di calcolare 
    \end{cases}
    $$
 
-7. Risolvi il sistema:
+7. 
 
    $$
    \begin{cases}
@@ -487,7 +489,7 @@ Viene chiesto di stabilire se i seguenti problemi hanno soluzione, di calcolare 
    \end{cases}
    $$
 
-8. Risolvi il sistema:
+8. 
 
    $$
    \begin{cases}
@@ -496,7 +498,7 @@ Viene chiesto di stabilire se i seguenti problemi hanno soluzione, di calcolare 
    \end{cases}
    $$
 
-9. Risolvi il sistema:
+9. 
 
    $$
    \begin{cases}
@@ -505,7 +507,7 @@ Viene chiesto di stabilire se i seguenti problemi hanno soluzione, di calcolare 
    \end{cases}
    $$
 
-10. Risolvi il sistema:
+10. 
 
     $$
     \begin{cases}
@@ -514,7 +516,7 @@ Viene chiesto di stabilire se i seguenti problemi hanno soluzione, di calcolare 
     \end{cases}
     $$
 
-11. Risolvi il sistema:
+11. 
 
     $$
     \begin{cases}
@@ -523,7 +525,7 @@ Viene chiesto di stabilire se i seguenti problemi hanno soluzione, di calcolare 
     \end{cases}
     $$
 
-12. Risolvi il sistema:
+12. 
 
     $$
     \begin{cases}
@@ -532,7 +534,7 @@ Viene chiesto di stabilire se i seguenti problemi hanno soluzione, di calcolare 
     \end{cases}
     $$
 
-13. Risolvi il sistema:
+13. 
 
     $$
     \begin{cases}
@@ -542,7 +544,7 @@ Viene chiesto di stabilire se i seguenti problemi hanno soluzione, di calcolare 
     \end{cases}
     $$
 
-14. Risolvi il sistema:
+14. 
 
     $$
     \begin{cases}
@@ -552,7 +554,7 @@ Viene chiesto di stabilire se i seguenti problemi hanno soluzione, di calcolare 
     \end{cases}
     $$
 
-15. Risolvi il sistema:
+15. 
 
     $$
     \begin{cases}
@@ -561,7 +563,7 @@ Viene chiesto di stabilire se i seguenti problemi hanno soluzione, di calcolare 
     \end{cases}
     $$
 
-16. Risolvi il sistema:
+16. 
 
     $$
     \begin{cases}
@@ -570,7 +572,7 @@ Viene chiesto di stabilire se i seguenti problemi hanno soluzione, di calcolare 
     \end{cases}
     $$
 
-17. Risolvi il sistema:
+17. 
 
     $$
     \begin{cases}
@@ -580,7 +582,7 @@ Viene chiesto di stabilire se i seguenti problemi hanno soluzione, di calcolare 
     \end{cases}
     $$
 
-18. Risolvi il sistema:
+18. 
 
     $$
     \begin{cases}
@@ -591,7 +593,7 @@ Viene chiesto di stabilire se i seguenti problemi hanno soluzione, di calcolare 
     $$
 
 
-19. Risolvi il sistema:
+19. 
 
    $$
    \begin{cases}
@@ -602,7 +604,7 @@ Viene chiesto di stabilire se i seguenti problemi hanno soluzione, di calcolare 
    $$
 
 
-20. Risolvi il sistema:
+20. 
 
     $$
     \begin{cases}
@@ -676,7 +678,7 @@ $$
 \end{bmatrix}
 $$
 
-2. Risolvi il sistema:
+2. 
 
 $$
 \begin{cases}
