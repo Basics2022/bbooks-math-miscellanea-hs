@@ -377,7 +377,7 @@ La soluzione del problema è quindi
 
 $$\begin{aligned}
   T(t) 
-  & = T_a + b \cos(\Omega t) + c \sin(\Omega t) + (T_0 - T_a - b) e^{-frac{ht}{mc}} = \\
+  & = T_a + b \cos(\Omega t) + c \sin(\Omega t) + (T_0 - T_a - b) e^{-\frac{ht}{mc}} = \\
 \end{aligned}$$
 
 
