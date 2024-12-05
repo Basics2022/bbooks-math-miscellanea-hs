@@ -399,7 +399,7 @@ L'equazione
 
 $$m\ddot{x} + c \dot{x} + k x = f^e(t) \ ,$$
 
-può essere riscritta introducendo la **frequenza naturale** $\omega_n := \sqrt{\frac{k}{m}}$ e il **coefficiente di smorzamento** $\xi:= \frac{c}{2 m}\frac{1}{\omega_n} = \frac{c}{2 \sqrt{m k}}$,
+compare in molte applicazioni con coefficienti $m$, $c$, $k$ associati a grandezze positive: in questo caso, l'equazione può essere riscritta introducendo la **frequenza naturale** $\omega_n := \sqrt{\frac{k}{m}}$ e il **coefficiente di smorzamento** $\xi:= \frac{c}{2 m}\frac{1}{\omega_n} = \frac{c}{2 \sqrt{m k}}$,
 
 $$\ddot{x} + 2 \xi \omega_n \dot{x} + \omega_n^2 x = \frac{f^e(t)}{m} \ ,$$
 
