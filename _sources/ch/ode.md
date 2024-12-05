@@ -378,6 +378,8 @@ La soluzione del problema è quindi
 $$\begin{aligned}
   T(t) 
   & = T_a + b \cos(\Omega t) + c \sin(\Omega t) + (T_0 - T_a - b) e^{-\frac{ht}{mc}} = \\
+  & = T_a -\frac{mc\Omega}{(m c \Omega)^2 + h^2} h \Delta T \cos(\Omega t) + 
+           \frac{ h      }{(m c \Omega)^2 + h^2} h \Delta T\sin(\Omega t) + (T_0 - T_a - b) e^{-\frac{ht}{mc}} = \\
 \end{aligned}$$
 
 
