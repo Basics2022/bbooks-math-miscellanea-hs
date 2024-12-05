@@ -322,9 +322,21 @@ t: \ h b = h G            \\
 \qquad \rightarrow \qquad
 \begin{cases}
  b = G \\
- a = T_a - \frac{mc G}{h}
+ a = T_a - \frac{mc}{h} G \ .
 \end{cases}
 $$
+
+La soluzione generale assume la forma
+
+$$T(t) = T_a - \frac{mc}{h}G + G t + C e^{-\frac{h t}{m c}} \ ,$$
+
+e la costante di integrazione $C$ viene calcolata con la condizione iniziale
+
+$$T_0 = T(0) = T_a - \frac{mc}{h} G + C \qquad \rightarrow \qquad C = T_0 - T_a + \frac{mc}{h} G \ .$$
+
+La soluzione del problema è quindi
+
+$$T(t) = T_a - \frac{mc}{h}G + G t + \left( T_0 - T_a + \frac{mc}{h} G \right) e^{-\frac{h t}{m c}} \ .$$
 
 **Temperatura con andamento periodico, $T^e(t) = T_0 + \Delta T \sin(\Omega t) \, t$.**
 
