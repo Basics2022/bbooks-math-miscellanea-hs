@@ -309,7 +309,9 @@ La soluzione del problema è quindi
 
 $$T(t) = T_e + ( T_0 - T_e ) \left( 1 - e^{-\frac{ht}{mc}} \right) \ .$$
 
-**Temperatura crescente linearmente, $T^e(t) = T_0 + G \, t$.**
+**Temperatura crescente linearmente, $T^e(t) = T_a + G \, t$.** Con una forzante polinomiale di grado 1 nella variabile indipendente $t$, si cerca una soluzione particolare polinomiale dello stesso ordine, $T_p(t) = a + b t$. Inserendo questa espressione nell'equazione differenziale, si ottiene
+
+$$m c b + h (a+bt) = h(T_a + Gt )$$
 
 **Temperatura con andamento periodico, $T^e(t) = T_0 + \Delta T \sin(\Omega t) \, t$.**
 
