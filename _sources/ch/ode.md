@@ -305,6 +305,10 @@ e la costante di integrazione $C$ viene determinata con la condizione iniziale
 
 $$T_0 = T(0) = T_e + C e^{-\frac{h}{mc}t} \big|_{t=0} = T_e + C \qquad \rightarrow \qquad C = T_0 - T_e \ .$$
 
+La soluzione del problema è quindi
+
+$$T(t) = T_e + ( T_0 - T_e ) \left( 1 - e^{-\frac{ht}{mc} \right) \ .$$
+
 **Temperatura crescente linearmente, $T^e(t) = T_0 + G \, t$.**
 
 **Temperatura con andamento periodico, $T^e(t) = T_0 + \Delta T \sin(\Omega t) \, t$.**
