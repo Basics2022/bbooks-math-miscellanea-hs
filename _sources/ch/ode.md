@@ -348,12 +348,12 @@ $$
 
 **Temperatura con andamento periodico, $T^e(t) = T_0 + \Delta T \sin(\Omega t)$.** Data una forzante somma di un termine costante e di un termine armonico, si cerca una soluzione particolare come somma di un termine costante e delle funzioni armoniche di seno e coseno, $T_p(t) = a + b \cos(\Omega t) + c \sin(\Omega t)$. I coefficienti $a$, $b$, $c$ vengono calcolati inserendo questa espressione nell'equazione differenziale,
 
-$$ m c \Omega \left( - a \sin(\Omega t) + b \sin(\Omega t) \right) + h \left( a + b \cos(\Omega t) + c \sin(\Omega t) \right) = h \left(  T_0 + \Delta T \sin(\Omega t) \right) \ ,$$
+$$ m c \Omega \left( - b \sin(\Omega t) + c \cos(\Omega t) \right) + h \left( a + b \cos(\Omega t) + c \sin(\Omega t) \right) = h \left(  T_0 + \Delta T \sin(\Omega t) \right) \ ,$$
 
 e uguagliando i termini omogenei nella variabile indipendente $t$,
 
 $$begin{cases}
-\cos \Omega t: \ \\
+\cos \Omega t: \ m c \Omega c + h b = 0 \\
 \sin \Omega t: \ \\
             1: \ \\
 \end{cases}$$
