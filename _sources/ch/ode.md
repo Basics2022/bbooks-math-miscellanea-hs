@@ -444,7 +444,6 @@ $$\tilde{x}'' + \frac{c T}{m} \tilde{x}' + \frac{k T^2}{m} \tilde{x} = \frac{F T
 ```
 
 ```{dropdown} Sistema del secondo ordine sotto-smorzato, con forzante armonica
-:open:
 
 Si vuole studiare la soluzione dell'equazione del secondo ordine
 
