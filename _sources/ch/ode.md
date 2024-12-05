@@ -353,9 +353,9 @@ $$ m c \Omega \left( - b \sin(\Omega t) + c \cos(\Omega t) \right) + h \left( a 
 e uguagliando i termini omogenei nella variabile indipendente $t$,
 
 $$begin{cases}
-\cos \Omega t: \ m c \Omega c + h b = 0 \\
-\sin \Omega t: \ \\
-            1: \ \\
+\cos \Omega t: \   m c \Omega c + h b = 0 \\
+\sin \Omega t: \ - m c \Omega b + h c = h \Delta T \\
+            1: \ h a = h T_0 \\
 \end{cases}$$
 
 ```
