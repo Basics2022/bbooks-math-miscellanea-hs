@@ -467,7 +467,7 @@ $$\begin{cases}
 \end{cases} 
 $$
 
-I coefficienti $a$, $b$ possono essere riscritti in funzione di un **ritardo di fase** $\varphi(\Omega)$ e diun **guadagno** $G(\Omega) = \frac{1}{\sqrt{(-\Omega^2+\omega_n^2) + (2 \xi \omega_n \Omega)^2}}$
+I coefficienti $a$, $b$ possono essere riscritti in funzione di un **ritardo di fase** $\varphi(\Omega)$ e diun **guadagno** $G(\Omega) = \frac{1}{\sqrt{(-\Omega^2+\omega_n^2)^2 + (2 \xi \omega_n \Omega)^2}}$
 
 $$
 \begin{cases}
@@ -484,6 +484,9 @@ $$x_p(t)
 $$
 
 Sia il guadagno sia il ritardo di fase dipendono dalla frequenza della forzante, $\Omega$.
+
+$$G'(\Omega) = -\frac{1}{2} \frac{-2\Omega(-\Omega^2 + \omega_n^2) + 2(2\xi\omega_n)^2 \Omega}{\sqrt[3]{(-\Omega^2+\omega_n^2)^2 + (2 \xi \omega_n \Omega)^2}}$$
+
 
 ```
 
