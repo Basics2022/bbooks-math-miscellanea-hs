@@ -495,10 +495,11 @@ $$\Omega_f^2 = \omega_n^2 - 4 (\xi \omega_n)^2 = \omega_n^2 \left( 1 - 4 \xi^2 \
 
 Nel caso in cui esista una risonanza, la massima ampiezza della risposta è
 
-$$G(\Omega_f) 
-  = \frac{1}{\sqrt{(-\Omega_f^2+\omega_n^2)^2 + (2\xi \omega_n \Omega_f)^2}} 
-  = \frac{1}{\sqrt{  }}
-$$
+$$\begin{aligned}
+G(\Omega_f) 
+  & = \frac{1}{\sqrt{(-\Omega_f^2+\omega_n^2)^2 + (2\xi \omega_n \Omega_f)^2}} = \\
+  & = \frac{1}{\sqrt{(4 \xi^2 \omega_n^2)^2 + 4 \xi^2 \omega_n^4 (1-4 \xi^2)  }} = \\
+\end{aligned}$$
 
 ```
 
