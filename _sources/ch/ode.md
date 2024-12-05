@@ -411,7 +411,7 @@ $$s^2 + 2 \xi \omega_n + \omega_n^2 = 0 \qquad \rightarrow \qquad s_{1,2} = -\xi
 
 1. soluzione sotto-smorzata, $0 \le \xi < 1$: la soluzione è oscillante, smorzata se $\xi > 0$,
   
-   $$s_{1,2} = - \xi \omega_n \mp j \omega_n \sqrt{1 - \xi^2} = \sigma \mp j \omega
+   $$s_{1,2} = - \xi \omega_n \mp j \omega_n \sqrt{1 - \xi^2} = - \sigma \mp j \omega
    \qquad \rightarrow \qquad
    x(t) = e^{-\sigma t} \left[ A \cos(\omega t) + B \sin(\omega t) \right]$$
 
