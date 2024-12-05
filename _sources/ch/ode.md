@@ -307,7 +307,9 @@ $$T_0 = T(0) = T_e + C e^{-\frac{h}{mc}t} \big|_{t=0} = T_e + C \qquad \rightarr
 
 La soluzione del problema è quindi
 
-$$T(t) = T_e + ( T_0 - T_e )  e^{-\frac{ht}{mc}} \ .$$
+$$
+  T(t) = T_e + ( T_0 - T_e )  e^{-\frac{ht}{mc}} \ .
+$$
 
 **Temperatura crescente linearmente, $T^e(t) = T_a + G \, t$.** Con una forzante polinomiale di grado 1 nella variabile indipendente $t$, si cerca una soluzione particolare polinomiale dello stesso ordine, $T_p(t) = a + b t$. I coefficienti $a$, $b$ vengono calcolati inserendo questa espressione nell'equazione differenziale, 
 
@@ -336,7 +338,9 @@ $$T_0 = T(0) = T_a - \frac{mc}{h} G + C \qquad \rightarrow \qquad C = T_0 - T_a 
 
 La soluzione del problema è quindi
 
-$$T(t) = T_a - \frac{mc}{h}G + G t + \left( T_0 - T_a + \frac{mc}{h} G \right) e^{-\frac{h t}{m c}} \ .$$
+$$
+  T(t) = T_a + G t - \frac{mc}{h}G + \left( T_0 - T_a + \frac{mc}{h} G \right) e^{-\frac{h t}{m c}}
+$$
 
 **Temperatura con andamento periodico, $T^e(t) = T_0 + \Delta T \sin(\Omega t) \, t$.**
 
