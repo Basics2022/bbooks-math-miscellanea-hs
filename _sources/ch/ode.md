@@ -380,8 +380,12 @@ $$\begin{aligned}
   & = T_a + b \cos(\Omega t) + c \sin(\Omega t) + (T_0 - T_a - b) e^{-\frac{ht}{mc}} = \\
   & = T_a -\frac{\frac{mc\Omega}{h}}{\left(\frac{m c \Omega}{h}\right)^2 + 1} \Delta T \cos(\Omega t) + 
            \frac{ 1      }{\left(\frac{m c \Omega}{h}\right)^2 + 1} \Delta T\sin(\Omega t) + \left(T_0 - T_a + \frac{\frac{mc\Omega}{h}}{\left(\frac{m c \Omega}{h}\right)^2 + 1} \right) e^{-\frac{ht}{mc}} = \\
-  & = T_a + \Delta T \sin\left( \Omega t - \varphi \right) + (T_0 - T_a + \frac{}{}) e^{-\frac{ht}{mc}}
+  & = T_a + \Delta T \sin\left( \Omega t - \varphi \right) + (T_0 - T_a + \frac{}{}) e^{-\frac{ht}{mc}} \ ,
 \end{aligned}$$
+
+e può essere espressa in termini di un ritardo di fase $\varphi$ tale che 
+
+$$\cos \varphi = \frac{1}{\left(\frac{m c \Omega}{h}\right)^2 + 1} \qquad , \qquad \sin \varphi = \frac{\frac{mc\Omega}{h}}{\left(\frac{m c \Omega}{h}\right)^2 + 1}$$
 
 
 
