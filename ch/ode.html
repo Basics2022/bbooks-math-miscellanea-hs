@@ -941,8 +941,13 @@ Esempio - Sistema massa-molla-smorzatore<div class="sd-summary-down docutils">
 \[\ddot{x} + 2 \xi \omega_n \dot{x} + \omega_n^2 x = 0 \ ,\]</div>
 <div class="math notranslate nohighlight">
 \[s^2 + 2 \xi \omega_n + \omega_n^2 = 0 \qquad \rightarrow \qquad s_{1,2} = -\xi \omega_n \mp \omega_n \sqrt{\xi^2 - 1}\]</div>
-<ol class="arabic simple">
-<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(0 \le \xi &lt; 1\)</span>:</p></li>
+<ol class="arabic">
+<li><p class="sd-card-text">soluzione sotto-smorzata, <span class="math notranslate nohighlight">\(0 \le \xi &lt; 1\)</span>: la soluziona è oscillante, smorzata se <span class="math notranslate nohighlight">\(\xi &gt; 0\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[s_{1,2} = - \xi \omega_n \mp j \omega_n \sqrt{1 - \xi^2} = \sigma \mp j \omega
+   \qquad \rightarrow \qquad
+   x(t) = e^{-\sigma t} \left[ A \cos(\omega t) + B \sin(\omega t) \right]\]</div>
+</li>
 <li><p class="sd-card-text"><span class="math notranslate nohighlight">\(\xi = 1\)</span>:</p></li>
 <li><p class="sd-card-text"><span class="math notranslate nohighlight">\(\xi &gt; 1\)</span>:</p></li>
 </ol>

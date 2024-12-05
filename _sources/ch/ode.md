@@ -409,7 +409,12 @@ $$\ddot{x} + 2 \xi \omega_n \dot{x} + \omega_n^2 x = 0 \ ,$$
 
 $$s^2 + 2 \xi \omega_n + \omega_n^2 = 0 \qquad \rightarrow \qquad s_{1,2} = -\xi \omega_n \mp \omega_n \sqrt{\xi^2 - 1}$$
 
-1. $0 \le \xi < 1$:
+1. soluzione sotto-smorzata, $0 \le \xi < 1$: la soluziona è oscillante, smorzata se $\xi > 0$,
+  
+   $$s_{1,2} = - \xi \omega_n \mp j \omega_n \sqrt{1 - \xi^2} = \sigma \mp j \omega
+   \qquad \rightarrow \qquad
+   x(t) = e^{-\sigma t} \left[ A \cos(\omega t) + B \sin(\omega t) \right]$$
+
 2. $\xi = 1$:
 3. $\xi > 1$:
 
