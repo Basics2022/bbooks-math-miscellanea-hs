@@ -834,18 +834,23 @@ Esempio - Temperatura di un corpo, soggetto a convezione.<div class="sd-summary-
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">L’equazione ordinaria del primo ordine</p>
 <div class="math notranslate nohighlight">
-\[m x \dot{T}(t) + h T(t) = h T_e(t) \qquad , \qquad t \ge 0\]</div>
-<p class="sd-card-text">rappresenta un bilancio di energia interna e governa la temperatura <span class="math notranslate nohighlight">\(T(t)\)</span> di un corpo di massa <span class="math notranslate nohighlight">\(m\)</span>, e capacità termica <span class="math notranslate nohighlight">\(c\)</span> soggetto a convezione con coefficiente <span class="math notranslate nohighlight">\(h\)</span> con un ambiente a temperatura <span class="math notranslate nohighlight">\(T_e(t)\)</span>. Tutti i parametri del sistema e la temperatura iniziale del corpo <span class="math notranslate nohighlight">\(T(0) = T_0\)</span> sono noti. Si vuole determinare l’evoluzione della temperatura <span class="math notranslate nohighlight">\(T(t)\)</span> del corpo, in risposta a diversi andamenti della temperatura dell’ambiente esterno.</p>
-<p class="sd-card-text">L’equazione è un’equazione ordinaria lineare del primo ordine a coefficienti costanti. La soluzione ha la forma</p>
+\[m x \dot{T}(t) + h T(t) = h T^e(t) \qquad , \qquad t \ge 0\]</div>
+<p class="sd-card-text">rappresenta un bilancio di energia interna e governa la temperatura <span class="math notranslate nohighlight">\(T(t)\)</span> di un corpo di massa <span class="math notranslate nohighlight">\(m\)</span>, e capacità termica <span class="math notranslate nohighlight">\(c\)</span> soggetto a convezione con coefficiente <span class="math notranslate nohighlight">\(h\)</span> con un ambiente a temperatura <span class="math notranslate nohighlight">\(T^e(t)\)</span>. Tutti i parametri del sistema e la temperatura iniziale del corpo <span class="math notranslate nohighlight">\(T(0) = T_0\)</span> sono noti. Si vuole determinare l’evoluzione della temperatura <span class="math notranslate nohighlight">\(T(t)\)</span> del corpo, in risposta a diversi andamenti della temperatura dell’ambiente esterno.
+L’equazione è un’equazione ordinaria lineare del primo ordine a coefficienti costanti. La soluzione dell’equazione può essere scritta come somma della soluzione generale dell’equazione omogenea <span class="math notranslate nohighlight">\(T_o(t)\)</span> e di una soluzione particolare dell’equazione completa, <span class="math notranslate nohighlight">\(T_p(t)\)</span></p>
 <div class="math notranslate nohighlight">
-\[T(t) = T_{o}(t) + T_p(t) \ ,\]</div>
-<p class="sd-card-text">essendo <span class="math notranslate nohighlight">\(T_o(t)\)</span> la soluzione dell’equazione omogenea, <span class="math notranslate nohighlight">\(T_p(t)\)</span> una soluzione particolare indipendente dell’equazione completa. L’equazione omogenea,</p>
+\[T(t) = T_{o}(t) + T_p(t) \ .\]</div>
+<p class="sd-card-text"><strong>Equazione omogenea.</strong> L’equazione omogenea,</p>
 <div class="math notranslate nohighlight">
 \[m c \dot{T}_o + h T_o = 0 \qquad \rightarrow \qquad T_o(t) = C e^{-\frac{h}{mc}t} \ ,\]</div>
 <p class="sd-card-text">è indipendente dalla forzante esterna, qui rappresentata dalla temperatura dell’ambiente <span class="math notranslate nohighlight">\(T_e(t)\)</span>.</p>
-<p class="sd-card-text"><strong>Temperatura costante, <span class="math notranslate nohighlight">\(T^e\)</span></strong></p>
-<p class="sd-card-text"><strong>Temperatura crescente linearmente, <span class="math notranslate nohighlight">\(T^e(t) = T_0 + G \, t\)</span></strong></p>
-<p class="sd-card-text"><strong>Temperatura con andamento periodico, <span class="math notranslate nohighlight">\(T^e(t) = T_0 + \Delta T \sin(\Omega t) \, t\)</span></strong></p>
+<p class="sd-card-text"><strong>Temperatura costante, <span class="math notranslate nohighlight">\(T^e\)</span>.</strong> La soluzione particolare dell’equazione con una forzante costante è una soluzione costante, <span class="math notranslate nohighlight">\(T_p(t) = T_e\)</span>. La soluzione generale ha quindi l’espressione</p>
+<div class="math notranslate nohighlight">
+\[ T(t) = T_e + C e^{-\frac{h}{mc}t} \ ,\]</div>
+<p class="sd-card-text">e la costante di integrazione <span class="math notranslate nohighlight">\(C\)</span> viene determinata con la condizione iniziale</p>
+<div class="math notranslate nohighlight">
+\[T_0 = T(0) = T_e + C e^{-\frac{h}{mc}t} \big_{t=0} = T_e + C \qquad \rightarrow \qquad C = T_0 - T_e \ .\]</div>
+<p class="sd-card-text"><strong>Temperatura crescente linearmente, <span class="math notranslate nohighlight">\(T^e(t) = T_0 + G \, t\)</span>.</strong></p>
+<p class="sd-card-text"><strong>Temperatura con andamento periodico, <span class="math notranslate nohighlight">\(T^e(t) = T_0 + \Delta T \sin(\Omega t) \, t\)</span>.</strong></p>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">

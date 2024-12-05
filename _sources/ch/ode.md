@@ -282,25 +282,30 @@ In questa sezione vengono risolti alcuni problemi governati dalle equazioni diff
 ```{dropdown} Esempio - Temperatura di un corpo, soggetto a convezione.
 L'equazione ordinaria del primo ordine
 
-$$m x \dot{T}(t) + h T(t) = h T_e(t) \qquad , \qquad t \ge 0$$
+$$m x \dot{T}(t) + h T(t) = h T^e(t) \qquad , \qquad t \ge 0$$
 
-rappresenta un bilancio di energia interna e governa la temperatura $T(t)$ di un corpo di massa $m$, e capacità termica $c$ soggetto a convezione con coefficiente $h$ con un ambiente a temperatura $T_e(t)$. Tutti i parametri del sistema e la temperatura iniziale del corpo $T(0) = T_0$ sono noti. Si vuole determinare l'evoluzione della temperatura $T(t)$ del corpo, in risposta a diversi andamenti della temperatura dell'ambiente esterno.
+rappresenta un bilancio di energia interna e governa la temperatura $T(t)$ di un corpo di massa $m$, e capacità termica $c$ soggetto a convezione con coefficiente $h$ con un ambiente a temperatura $T^e(t)$. Tutti i parametri del sistema e la temperatura iniziale del corpo $T(0) = T_0$ sono noti. Si vuole determinare l'evoluzione della temperatura $T(t)$ del corpo, in risposta a diversi andamenti della temperatura dell'ambiente esterno.
+L'equazione è un'equazione ordinaria lineare del primo ordine a coefficienti costanti. La soluzione dell'equazione può essere scritta come somma della soluzione generale dell'equazione omogenea $T_o(t)$ e di una soluzione particolare dell'equazione completa, $T_p(t)$
 
-L'equazione è un'equazione ordinaria lineare del primo ordine a coefficienti costanti. La soluzione ha la forma
+  $$T(t) = T_{o}(t) + T_p(t) \ .$$
 
-  $$T(t) = T_{o}(t) + T_p(t) \ ,$$
-
-essendo $T_o(t)$ la soluzione dell'equazione omogenea, $T_p(t)$ una soluzione particolare indipendente dell'equazione completa. L'equazione omogenea,
+**Equazione omogenea.** L'equazione omogenea,
 
 $$m c \dot{T}_o + h T_o = 0 \qquad \rightarrow \qquad T_o(t) = C e^{-\frac{h}{mc}t} \ ,$$
 
 è indipendente dalla forzante esterna, qui rappresentata dalla temperatura dell'ambiente $T_e(t)$.
 
-**Temperatura costante, $T^e$**
+**Temperatura costante, $T^e$.** La soluzione particolare dell'equazione con una forzante costante è una soluzione costante, $T_p(t) = T_e$. La soluzione generale ha quindi l'espressione
 
-**Temperatura crescente linearmente, $T^e(t) = T_0 + G \, t$**
+$$ T(t) = T_e + C e^{-\frac{h}{mc}t} \ ,$$
 
-**Temperatura con andamento periodico, $T^e(t) = T_0 + \Delta T \sin(\Omega t) \, t$**
+e la costante di integrazione $C$ viene determinata con la condizione iniziale
+
+$$T_0 = T(0) = T_e + C e^{-\frac{h}{mc}t} \big_{t=0} = T_e + C \qquad \rightarrow \qquad C = T_0 - T_e \ .$$
+
+**Temperatura crescente linearmente, $T^e(t) = T_0 + G \, t$.**
+
+**Temperatura con andamento periodico, $T^e(t) = T_0 + \Delta T \sin(\Omega t) \, t$.**
 
 ```
 
