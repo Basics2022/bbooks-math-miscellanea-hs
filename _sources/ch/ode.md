@@ -365,6 +365,23 @@ $$\begin{cases}
 \end{cases}
 $$
 
+La soluzione generale assume la forma
+
+$$T(t) = T_a + b \cos(\Omega t) + c \sin(\Omega t) + C e^{-\frac{ht}{mc}} \ ,$$
+
+e la costante di integrazione $C$ viene calcolata con la condizione iniziale
+
+$$T_0 = T(0) = T_a + b + C \qquad \rightarrow \qquad C = T_0 - T_a - b \ . $$
+
+La soluzione del problema è quindi
+
+$$\begin{aligned}
+  T(t) 
+  & = T_a + b \cos(\Omega t) + c \sin(\Omega t) + (T_0 - T_a - b) e^{-frac{ht}{mc}} = \\
+\end{aligned}$$
+
+
+
 ```
 
 ```{dropdown} Esempio - Sistema massa-molla-smorzatore
