@@ -400,7 +400,7 @@ L'equazione
 
 $$m\ddot{x} + c \dot{x} + k x = f^e(t) \ ,$$
 
-può essere riscritta introducendo la frequenza naturale $\omega_n := \sqrt{\frac{k}{m}}$ e il coefficiente di smorzamento $\xi:= \frac{c}{2 m}\frac{\omega_n}$
+può essere riscritta introducendo la frequenza naturale $\omega_n := \sqrt{\frac{k}{m}}$ e il coefficiente di smorzamento $\xi:= \frac{c}{2 m}\frac{1}{\omega_n}$
 
 $$\ddot{x} + 2 \xi \omega_n \dot{x} + \omega_n^2 x = \frac{f^e(t)}{m} \ ,$$
 
