@@ -999,19 +999,19 @@ Sistema del secondo ordine sotto-smorzato, con forzante armonica<div class="sd-s
  b = \frac{-\Omega^2 + \omega_n^2}{(-\Omega^2 + \omega_n^2)^2 + (2\xi \omega_n \Omega)^2} \frac{F}{m} \ .\\
 \end{cases} 
 \end{split}\]</div>
-<p class="sd-card-text">I coefficienti <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span> possono essere riscritti in funzione di un <strong>ritardo di fase</strong> <span class="math notranslate nohighlight">\(\varphi(\Omega)\)</span> e il coefficiente <span class="math notranslate nohighlight">\(D(\Omega) = \sqrt{(-\Omega^2+\omega_n^2) + (2 \xi \omega_n \Omega)^2}\)</span> <strong>todo</strong> <em>definizioni</em></p>
+<p class="sd-card-text">I coefficienti <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span> possono essere riscritti in funzione di un <strong>ritardo di fase</strong> <span class="math notranslate nohighlight">\(\varphi(\Omega)\)</span> e diun <strong>guadagno</strong> <span class="math notranslate nohighlight">\(G(\Omega) = \frac{1}{\sqrt{(-\Omega^2+\omega_n^2) + (2 \xi \omega_n \Omega)^2}}\)</span></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{cases}
- a = - \frac{\sin \varphi(\Omega)}{D(\Omega)} \frac{F}{m} \\
- b =   \frac{\cos \varphi(\Omega)}{D(\Omega)} \frac{F}{m} \ .\\
+ a = - \sin \varphi(\Omega) \, G(\Omega) \, \frac{F}{m} \\
+ b =   \cos \varphi(\Omega) \, G(\Omega) \, \frac{F}{m} \ .\\
 \end{cases} 
 \end{split}\]</div>
 <p class="sd-card-text">così da ricavare la soluzione</p>
 <div class="math notranslate nohighlight">
 \[x_p(t)
-  = \frac{F}{m} \, \frac{1}{ D(\Omega)} \left[ \sin(\Omega t) \cos \varphi - \cos(\Omega t) \sin \varphi(\Omega) \right] 
-  = \frac{F}{m} \, \frac{1}{ D(\Omega)} \sin(\Omega t - \varphi(\Omega)) \ .
+  = \frac{F}{m} \, G(\Omega) \, \left[ \sin(\Omega t) \cos \varphi - \cos(\Omega t) \sin \varphi(\Omega) \right] 
+  = \frac{F}{m} \, G(\Omega) \, \sin(\Omega t - \varphi(\Omega)) \ .
 \]</div>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">

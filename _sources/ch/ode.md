@@ -467,20 +467,20 @@ $$\begin{cases}
 \end{cases} 
 $$
 
-I coefficienti $a$, $b$ possono essere riscritti in funzione di un **ritardo di fase** $\varphi(\Omega)$ e il coefficiente $D(\Omega) = \sqrt{(-\Omega^2+\omega_n^2) + (2 \xi \omega_n \Omega)^2}$ **todo** *definizioni*
+I coefficienti $a$, $b$ possono essere riscritti in funzione di un **ritardo di fase** $\varphi(\Omega)$ e diun **guadagno** $G(\Omega) = \frac{1}{\sqrt{(-\Omega^2+\omega_n^2) + (2 \xi \omega_n \Omega)^2}}$
 
 $$
 \begin{cases}
- a = - \frac{\sin \varphi(\Omega)}{D(\Omega)} \frac{F}{m} \\
- b =   \frac{\cos \varphi(\Omega)}{D(\Omega)} \frac{F}{m} \ .\\
+ a = - \sin \varphi(\Omega) \, G(\Omega) \, \frac{F}{m} \\
+ b =   \cos \varphi(\Omega) \, G(\Omega) \, \frac{F}{m} \ .\\
 \end{cases} 
 $$
 
 così da ricavare la soluzione
 
 $$x_p(t)
-  = \frac{F}{m} \, \frac{1}{ D(\Omega)} \left[ \sin(\Omega t) \cos \varphi - \cos(\Omega t) \sin \varphi(\Omega) \right] 
-  = \frac{F}{m} \, \frac{1}{ D(\Omega)} \sin(\Omega t - \varphi(\Omega)) \ .
+  = \frac{F}{m} \, G(\Omega) \, \left[ \sin(\Omega t) \cos \varphi - \cos(\Omega t) \sin \varphi(\Omega) \right] 
+  = \frac{F}{m} \, G(\Omega) \, \sin(\Omega t - \varphi(\Omega)) \ .
 $$
 
 ```
