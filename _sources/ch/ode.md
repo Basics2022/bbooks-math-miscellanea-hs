@@ -339,8 +339,10 @@ $$T_0 = T(0) = T_a - \frac{mc}{h} G + C \qquad \rightarrow \qquad C = T_0 - T_a 
 La soluzione del problema è quindi
 
 $$
-  T(t) = T_a + G t - \frac{mc}{h}G + \left( T_0 - T_a + \frac{mc}{h} G \right) e^{-\frac{h t}{m c}}
+  T(t) = T_a + G t - \frac{mc}{h}G + \left( T_0 - T_a + \frac{mc}{h} G \right) e^{-\frac{h t}{m c}} \ .
 $$
+
+La somma dei primi 3 termini è la soluzione della particolare, l'ultimo termine è la soluzione dell'equazione omogenea e tende a zero per $t \rightarrow \infty$. Per $t \rightarrow \infty$, c'è una differenza costante tra la temperatura dell'ambiente $T^e(t) = T_a + Gt$ e la temperatura $T(t)$ del corpo, $T(t) - T^e(t) = -\frac{mc}{h} G$.
 
 **Temperatura con andamento periodico, $T^e(t) = T_0 + \Delta T \sin(\Omega t) \, t$.**
 
