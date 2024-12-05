@@ -392,7 +392,25 @@ $$\cos \varphi = \frac{1}{\left(\frac{m c \Omega}{h}\right)^2 + 1} \qquad , \qqu
 ```
 
 ```{dropdown} Esempio - Sistema massa-molla-smorzatore
+:open:
+
 **todo** *definire il sistema adimensionale e verificare la risposta in funzione del coefficiente di smorzamento del sistema; definire smorzamento critico, e sistemi sovra- e sotto-smorzati; indagare il fenomeno della* **risonanza**
+
+L'equazione
+
+$$m\ddot{x} + c \dot{x} + k x = f^e(t) \ ,$$
+
+può essere riscritta introducendo la frequenza naturale $\omega_n := \sqrt{\frac{k}{m}}$ e il coefficiente di smorzamento $\xi:= \frac{c}{2 m}\frac{\omega_n}$
+
+$$\ddot{x} + 2 \xi \omega_n \dot{x} + \omega_n^2 x = \frac{f^e(t)}{m} \ ,$$
+
+<!--
+può essere scritta in forma adimensionale, mettendo in evidenza una lunghezza di riferimento $x(t) = X \tilde{x}(t)$, e un tempo di riferimento $t = T \tau$,
+
+$$X \left[ \frac{m}{T^2} \tilde{x}'' + \frac{c}{T} \tilde{x}' + k \tilde{x} \right] = f^{e}(t)$$
+
+$$\tilde{x}'' + \frac{c T}{m} \tilde{x}' + \frac{k T^2}{m} \tilde{x} = \frac{F T^2}{m X} \tilde{f}^{e}(t)$$
+-->
 
 **Moto libero - forzante nulla, $f^e = 0$**
 
