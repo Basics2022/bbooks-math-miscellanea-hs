@@ -527,7 +527,7 @@ document.write(`
 <p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-calendar" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path></svg></span>05 dic 2024</p>
 </div>
 <div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
-<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>12 min read</p>
+<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>13 min read</p>
 </div>
 </div>
 </div>
@@ -942,14 +942,26 @@ Esempio - Sistema massa-molla-smorzatore<div class="sd-summary-down docutils">
 <div class="math notranslate nohighlight">
 \[s^2 + 2 \xi \omega_n + \omega_n^2 = 0 \qquad \rightarrow \qquad s_{1,2} = -\xi \omega_n \mp \omega_n \sqrt{\xi^2 - 1}\]</div>
 <ol class="arabic">
-<li><p class="sd-card-text">soluzione sotto-smorzata, <span class="math notranslate nohighlight">\(0 \le \xi &lt; 1\)</span>: la soluziona è oscillante, smorzata se <span class="math notranslate nohighlight">\(\xi &gt; 0\)</span>,</p>
+<li><p class="sd-card-text">soluzione sotto-smorzata, <span class="math notranslate nohighlight">\(0 \le \xi &lt; 1\)</span>: la soluzione è oscillante, smorzata se <span class="math notranslate nohighlight">\(\xi &gt; 0\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[s_{1,2} = - \xi \omega_n \mp j \omega_n \sqrt{1 - \xi^2} = \sigma \mp j \omega
    \qquad \rightarrow \qquad
    x(t) = e^{-\sigma t} \left[ A \cos(\omega t) + B \sin(\omega t) \right]\]</div>
 </li>
-<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(\xi = 1\)</span>:</p></li>
-<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(\xi &gt; 1\)</span>:</p></li>
+<li><p class="sd-card-text">soluzione con smorzamento critico, <span class="math notranslate nohighlight">\(\xi = 1\)</span>: è il caso limite tra le soluzioni oscillanti sotto-smorzate e le soluzioni oscillanti sovra-smorzate.</p>
+<div class="math notranslate nohighlight">
+\[s_1 = s_2 = - \omega_n
+   \qquad \rightarrow \qquad
+   x(t) = A e^{-\omega_n t} + B t e^{-\omega_n t}
+   \]</div>
+</li>
+<li><p class="sd-card-text">soluzione sovra-smorzata, <span class="math notranslate nohighlight">\(\xi &gt; 1\)</span>: la soluzione decade senza oscillazioni,</p>
+<div class="math notranslate nohighlight">
+\[0 &gt; s_{1,2} = - \xi \omega \mp \omega_n \sqrt{\xi^2 - 1} \in \mathbb{R}
+   \qquad \rightarrow \qquad
+   x(t) = A e^{s_1 t} + B e^{s_2 t}
+   \]</div>
+</li>
 </ol>
 <!--
 può essere scritta in forma adimensionale, mettendo in evidenza una lunghezza di riferimento $x(t) = X \tilde{x}(t)$, e un tempo di riferimento $t = T \tau$,

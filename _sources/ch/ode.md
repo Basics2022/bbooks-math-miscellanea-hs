@@ -409,14 +409,26 @@ $$\ddot{x} + 2 \xi \omega_n \dot{x} + \omega_n^2 x = 0 \ ,$$
 
 $$s^2 + 2 \xi \omega_n + \omega_n^2 = 0 \qquad \rightarrow \qquad s_{1,2} = -\xi \omega_n \mp \omega_n \sqrt{\xi^2 - 1}$$
 
-1. soluzione sotto-smorzata, $0 \le \xi < 1$: la soluziona è oscillante, smorzata se $\xi > 0$,
+1. soluzione sotto-smorzata, $0 \le \xi < 1$: la soluzione è oscillante, smorzata se $\xi > 0$,
   
    $$s_{1,2} = - \xi \omega_n \mp j \omega_n \sqrt{1 - \xi^2} = \sigma \mp j \omega
    \qquad \rightarrow \qquad
    x(t) = e^{-\sigma t} \left[ A \cos(\omega t) + B \sin(\omega t) \right]$$
 
-2. $\xi = 1$:
-3. $\xi > 1$:
+2. soluzione con smorzamento critico, $\xi = 1$: è il caso limite tra le soluzioni oscillanti sotto-smorzate e le soluzioni oscillanti sovra-smorzate.
+
+   $$s_1 = s_2 = - \omega_n
+   \qquad \rightarrow \qquad
+   x(t) = A e^{-\omega_n t} + B t e^{-\omega_n t}
+   $$
+
+
+3. soluzione sovra-smorzata, $\xi > 1$: la soluzione decade senza oscillazioni,
+
+   $$0 > s_{1,2} = - \xi \omega \mp \omega_n \sqrt{\xi^2 - 1} \in \mathbb{R}
+   \qquad \rightarrow \qquad
+   x(t) = A e^{s_1 t} + B e^{s_2 t}
+   $$
 
 <!--
 può essere scritta in forma adimensionale, mettendo in evidenza una lunghezza di riferimento $x(t) = X \tilde{x}(t)$, e un tempo di riferimento $t = T \tau$,
