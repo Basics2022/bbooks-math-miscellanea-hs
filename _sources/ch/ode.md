@@ -214,7 +214,6 @@ poiché la funzione esponenziale non è mai nulla. Il [teorema fondamentale dell
 -->
 
 ```{dropdown} Radici multiple - "Dimostrazione"
-:open:
 
 Un'equazione differenziale lineare a coefficienti costanti omogenea può essere riscritta come
 
