@@ -303,7 +303,7 @@ $$ T(t) = T_e + C e^{-\frac{h}{mc}t} \ ,$$
 
 e la costante di integrazione $C$ viene determinata con la condizione iniziale
 
-$$T_0 = T(0) = T_e + C e^{-\frac{h}{mc}t} \big_{t=0} = T_e + C \qquad \rightarrow \qquad C = T_0 - T_e \ .$$
+$$T_0 = T(0) = T_e + C e^{-\frac{h}{mc}t} \big|_{t=0} = T_e + C \qquad \rightarrow \qquad C = T_0 - T_e \ .$$
 
 **Temperatura crescente linearmente, $T^e(t) = T_0 + G \, t$.**
 
