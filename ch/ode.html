@@ -999,18 +999,19 @@ Sistema del secondo ordine sotto-smorzato, con forzante armonica<div class="sd-s
  b = \frac{-\Omega^2 + \omega_n^2}{(-\Omega^2 + \omega_n^2)^2 + (2\xi \omega_n \Omega)^2} \frac{F}{m} \ .\\
 \end{cases} 
 \end{split}\]</div>
-<p class="sd-card-text">I coefficienti <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span> possono essere riscritti
-$<span class="math notranslate nohighlight">\(
+<p class="sd-card-text">I coefficienti <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span> possono essere riscritti in funzione di un <strong>ritardo di fase</strong> <span class="math notranslate nohighlight">\(\varphi\)</span> e il coefficiente <span class="math notranslate nohighlight">\(D(\Omega) = \sqrt{(-\Omega^2+\omega_n^2) + (2 \xi \omega_n \Omega)^2}\)</span> <strong>todo</strong> <em>definizioni</em></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \begin{cases}
  a = - \frac{\sin \varphi}{D(\Omega)} \frac{F}{m} \\
  b =   \frac{\cos \varphi}{D(\Omega)} \frac{F}{m} \ .\\
 \end{cases} 
-\)</span>$</p>
-<p class="sd-card-text">e la soluzione può essere riscritta come</p>
+\end{split}\]</div>
+<p class="sd-card-text">e la soluzione può essere riscritta in termini</p>
 <div class="math notranslate nohighlight">
 \[x_p(t)
-  = \frac{F}{m D(\Omega)} \left( sin(\Omega t) \cos \varphi - \cos(\Omega t) \sin \varphi \right) 
-  = \frac{F}{m D(\Omega)} \sin(\Omega t - \varphi) 
+  = \frac{F}{m} \, \frac{1}{ D(\Omega)} \left[ \sin(\Omega t) \cos \varphi - \cos(\Omega t) \sin \varphi \right] 
+  = \frac{F}{m} \, \frac{1}{ D(\Omega)} \sin(\Omega t - \varphi) 
 \]</div>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">

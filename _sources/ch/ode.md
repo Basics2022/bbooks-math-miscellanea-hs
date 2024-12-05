@@ -467,7 +467,8 @@ $$\begin{cases}
 \end{cases} 
 $$
 
-I coefficienti $a$, $b$ possono essere riscritti
+I coefficienti $a$, $b$ possono essere riscritti in funzione di un **ritardo di fase** $\varphi$ e il coefficiente $D(\Omega) = \sqrt{(-\Omega^2+\omega_n^2) + (2 \xi \omega_n \Omega)^2}$ **todo** *definizioni*
+
 $$
 \begin{cases}
  a = - \frac{\sin \varphi}{D(\Omega)} \frac{F}{m} \\
@@ -475,11 +476,11 @@ $$
 \end{cases} 
 $$
 
-e la soluzione può essere riscritta come
+e la soluzione può essere riscritta in termini
 
 $$x_p(t)
-  = \frac{F}{m D(\Omega)} \left( sin(\Omega t) \cos \varphi - \cos(\Omega t) \sin \varphi \right) 
-  = \frac{F}{m D(\Omega)} \sin(\Omega t - \varphi) 
+  = \frac{F}{m} \, \frac{1}{ D(\Omega)} \left[ \sin(\Omega t) \cos \varphi - \cos(\Omega t) \sin \varphi \right] 
+  = \frac{F}{m} \, \frac{1}{ D(\Omega)} \sin(\Omega t - \varphi) 
 $$
 
 ```
