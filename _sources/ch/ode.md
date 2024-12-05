@@ -462,8 +462,8 @@ $$\begin{cases}
 \end{cases}
 \qquad \rightarrow \qquad
 \begin{cases}
- a = \frac{}{((-\Omega^2 + \omega_n^2))^2 + (2\xi \omega_n \Omega)^2} \frac{F}{m} \\
- b = \frac{}{((-\Omega^2 + \omega_n^2))^2 + (2\xi \omega_n \Omega)^2} \frac{F}{m} \\
+ a = \frac{- 2 \xi \omega_n \Omega}{(-\Omega^2 + \omega_n^2)^2 + (2\xi \omega_n \Omega)^2} \frac{F}{m} \\
+ b = \frac{-\Omega^2 + \omega_n^2}{(-\Omega^2 + \omega_n^2)^2 + (2\xi \omega_n \Omega)^2} \frac{F}{m} \\
 \end{cases}
 $$
 
