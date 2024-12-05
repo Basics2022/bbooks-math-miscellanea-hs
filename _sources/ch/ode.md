@@ -353,15 +353,15 @@ $$ m c \Omega \left( - b \sin(\Omega t) + c \cos(\Omega t) \right) + h \left( a 
 e uguagliando i termini omogenei nella variabile indipendente $t$,
 
 $$\begin{cases}
-\cos \Omega t & : \ \qquad  m c \Omega c + h b = 0 \\
+\cos \Omega t & : \ \quad  m c \Omega c + h b = 0 \\
 \sin \Omega t & : \ - m c \Omega b + h c = h \Delta T \\
-            1 & : \ \qquad h a = h T_a \\
+            1 & : \ \quad h a = h T_a \\
 \end{cases}
 \qquad \rightarrow \qquad
 \begin{cases}
  a = T_a \\
  b = -\frac{mc\Omega}{(m c \Omega)^2 + h^2} h \Delta T\\
- c =  \frac{c}{(m c \Omega)^2 + h^2} h \Delta T \\
+ c =  \frac{h}{(m c \Omega)^2 + h^2} h \Delta T \\
 \end{cases}
 $$
 
