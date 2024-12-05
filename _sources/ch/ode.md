@@ -458,15 +458,29 @@ si calcolano i coefficienti $a$, $b$ uguagliando i termini omogenei
 
 $$\begin{cases}
 \cos (\Omega t) & : \  (-\Omega^2 + \omega_n^2) a + 2 \xi \omega_n \Omega b = 0 \\
-\sin (\Omega t) & : \ -2 \xi \omega_n \Omega b + (-\Omega^2 + \omega_n^2) a = \frac{F}{m} \\
+\sin (\Omega t) & : \ -2 \xi \omega_n \Omega a + (-\Omega^2 + \omega_n^2) b = \frac{F}{m} \\
 \end{cases}
 \qquad \rightarrow \qquad
 \begin{cases}
  a = \frac{- 2 \xi \omega_n \Omega}{(-\Omega^2 + \omega_n^2)^2 + (2\xi \omega_n \Omega)^2} \frac{F}{m} \\
- b = \frac{-\Omega^2 + \omega_n^2}{(-\Omega^2 + \omega_n^2)^2 + (2\xi \omega_n \Omega)^2} \frac{F}{m} \\
-\end{cases}
+ b = \frac{-\Omega^2 + \omega_n^2}{(-\Omega^2 + \omega_n^2)^2 + (2\xi \omega_n \Omega)^2} \frac{F}{m} \ .\\
+\end{cases} 
 $$
 
+I coefficienti $a$, $b$ possono essere riscritti
+$$
+\begin{cases}
+ a = - \frac{\sin \varphi}{D(\Omega)} \frac{F}{m} \\
+ b =   \frac{\cos \varphi}{D(\Omega)} \frac{F}{m} \ .\\
+\end{cases} 
+$$
+
+e la soluzione può essere riscritta come
+
+$$x_p(t)
+  = \frac{F}{m D(\Omega)} \left( sin(\Omega t) \cos \varphi - \cos(\Omega t) \sin \varphi \right) 
+  = \frac{F}{m D(\Omega)} \sin(\Omega t - \varphi) 
+$$
 
 ```
 

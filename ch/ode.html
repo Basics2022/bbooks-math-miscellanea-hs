@@ -991,14 +991,27 @@ Sistema del secondo ordine sotto-smorzato, con forzante armonica<div class="sd-s
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{cases}
 \cos (\Omega t) &amp; : \  (-\Omega^2 + \omega_n^2) a + 2 \xi \omega_n \Omega b = 0 \\
-\sin (\Omega t) &amp; : \ -2 \xi \omega_n \Omega b + (-\Omega^2 + \omega_n^2) a = \frac{F}{m} \\
+\sin (\Omega t) &amp; : \ -2 \xi \omega_n \Omega a + (-\Omega^2 + \omega_n^2) b = \frac{F}{m} \\
 \end{cases}
 \qquad \rightarrow \qquad
 \begin{cases}
  a = \frac{- 2 \xi \omega_n \Omega}{(-\Omega^2 + \omega_n^2)^2 + (2\xi \omega_n \Omega)^2} \frac{F}{m} \\
- b = \frac{-\Omega^2 + \omega_n^2}{(-\Omega^2 + \omega_n^2)^2 + (2\xi \omega_n \Omega)^2} \frac{F}{m} \\
-\end{cases}
+ b = \frac{-\Omega^2 + \omega_n^2}{(-\Omega^2 + \omega_n^2)^2 + (2\xi \omega_n \Omega)^2} \frac{F}{m} \ .\\
+\end{cases} 
 \end{split}\]</div>
+<p class="sd-card-text">I coefficienti <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span> possono essere riscritti
+$<span class="math notranslate nohighlight">\(
+\begin{cases}
+ a = - \frac{\sin \varphi}{D(\Omega)} \frac{F}{m} \\
+ b =   \frac{\cos \varphi}{D(\Omega)} \frac{F}{m} \ .\\
+\end{cases} 
+\)</span>$</p>
+<p class="sd-card-text">e la soluzione può essere riscritta come</p>
+<div class="math notranslate nohighlight">
+\[x_p(t)
+  = \frac{F}{m D(\Omega)} \left( sin(\Omega t) \cos \varphi - \cos(\Omega t) \sin \varphi \right) 
+  = \frac{F}{m D(\Omega)} \sin(\Omega t - \varphi) 
+\]</div>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
