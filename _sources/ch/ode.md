@@ -452,7 +452,14 @@ $$\ddot{x} + 2 \xi \omega_n \dot{x} + \omega_n^2 x = \frac{f^e(t)}{m} \ ,$$
 
 soggetta alla forzante armonica $f^e(t) = F \sin \Omega t$, al variare della frequenza $\Omega$ della forzante. Si cerca una soluzione particolare dell'equazione completa nella forma $x(t) = a \cos(\Omega t) + b \sin(\Omega t)$. Inserendo questa espressione nell'equazione,
 
-$$-\Omega^2 ( a \cos \Omega t + b \sin \Omega t) + 2 \xi \omega_n \Omega ( -a \sin \Omega t + b \cos \Omega t) + \omega_n^2 (a \cos \Omega t + b \sin \Omegaa t) = \frac{F}{m} \sin \Omega t$$
+$$-\Omega^2 ( a \cos \Omega t + b \sin \Omega t) + 2 \xi \omega_n \Omega ( -a \sin \Omega t + b \cos \Omega t) + \omega_n^2 (a \cos \Omega t + b \sin \Omega t) = \frac{F}{m} \sin \Omega t \ ,$$
+
+si calcolano i coefficienti $a$, $b$ uguagliando i termini omogenei
+
+$$\begin{cases}
+\cos (\Omega t) & : \  (-\Omega^2 + \omega_n^2) a + 2 \xi \omega_n \Omega b = 0 \\
+\sin (\Omega t) & : \ -2 \xi \omega_n \Omega b + (-\Omega^2 + \omega_n^2) a = \frac{F}{m} \\
+\end{cases}$$
 
 
 ```

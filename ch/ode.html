@@ -986,7 +986,13 @@ Sistema del secondo ordine sotto-smorzato, con forzante armonica<div class="sd-s
 \[\ddot{x} + 2 \xi \omega_n \dot{x} + \omega_n^2 x = \frac{f^e(t)}{m} \ ,\]</div>
 <p class="sd-card-text">soggetta alla forzante armonica <span class="math notranslate nohighlight">\(f^e(t) = F \sin \Omega t\)</span>, al variare della frequenza <span class="math notranslate nohighlight">\(\Omega\)</span> della forzante. Si cerca una soluzione particolare dell’equazione completa nella forma <span class="math notranslate nohighlight">\(x(t) = a \cos(\Omega t) + b \sin(\Omega t)\)</span>. Inserendo questa espressione nell’equazione,</p>
 <div class="math notranslate nohighlight">
-\[-\Omega^2 ( a \cos \Omega t + b \sin \Omega t) + 2 \xi \omega_n \Omega ( -a \sin \Omega t + b \cos \Omega t) + \omega_n^2 (a \cos \Omega t + b \sin \Omegaa t) = \frac{F}{m} \sin \Omega t\]</div>
+\[-\Omega^2 ( a \cos \Omega t + b \sin \Omega t) + 2 \xi \omega_n \Omega ( -a \sin \Omega t + b \cos \Omega t) + \omega_n^2 (a \cos \Omega t + b \sin \Omega t) = \frac{F}{m} \sin \Omega t \ ,\]</div>
+<p class="sd-card-text">si calcolano i coefficienti <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span> uguagliando i termini omogenei</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+\cos (\Omega t) &amp; : (-\Omega^2 + \omega_n^2) a + 2 \xi \omega_n \Omega b = 0 \\
+\sin (\Omega t) &amp; :-2 \xi \omega_n \Omega b + (-\Omega^2 + \omega_n^2) a = \frac{F}{m} \\
+\end{cases}\end{split}\]</div>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
