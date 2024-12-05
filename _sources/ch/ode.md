@@ -342,9 +342,21 @@ $$
   T(t) = T_a + G t - \frac{mc}{h}G + \left( T_0 - T_a + \frac{mc}{h} G \right) e^{-\frac{h t}{m c}} \ .
 $$
 
-La somma dei primi 3 termini è la soluzione della particolare, l'ultimo termine è la soluzione dell'equazione omogenea e tende a zero per $t \rightarrow \infty$. Per $t \rightarrow \infty$, c'è una differenza costante tra la temperatura dell'ambiente $T^e(t) = T_a + Gt$ e la temperatura $T(t)$ del corpo, $T(t) - T^e(t) = -\frac{mc}{h} G$.
+- La somma dei primi 3 termini è la soluzione della particolare, l'ultimo termine è la soluzione dell'equazione omogenea;
+- la soluzione dell'equazione omogenea tende a zero per $t \rightarrow \infty$. 
+- per $t \rightarrow \infty$, c'è una differenza costante tra la temperatura dell'ambiente $T^e(t) = T_a + Gt$ e la temperatura $T(t)$ del corpo, $T(t) - T^e(t) = -\frac{mc}{h} G$.
 
-**Temperatura con andamento periodico, $T^e(t) = T_0 + \Delta T \sin(\Omega t) \, t$.**
+**Temperatura con andamento periodico, $T^e(t) = T_0 + \Delta T \sin(\Omega t)$.** Data una forzante somma di un termine costante e di un termine armonico, si cerca una soluzione particolare come somma di un termine costante e delle funzioni armoniche di seno e coseno, $T_p(t) = a + b \cos(\Omega t) + c \sin(\Omega t)$. I coefficienti $a$, $b$, $c$ vengono calcolati inserendo questa espressione nell'equazione differenziale,
+
+$$ m c \Omega \left( - a \sin(\Omega t) + b \sin(\Omega t) \right) + h \left( a + b \cos(\Omega t) + c \sin(\Omega t) \right) = h \left(  T_0 + \Delta T \sin(\Omega t) \right) \ ,$$
+
+e uguagliando i termini omogenei nella variabile indipendente $t$,
+
+$$begin{cases}
+\cos \Omega t: \ \\
+\sin \Omega t: \ \\
+            1: \ \\
+\end{cases}$$
 
 ```
 
