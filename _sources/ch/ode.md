@@ -307,7 +307,7 @@ $$T_0 = T(0) = T_e + C e^{-\frac{h}{mc}t} \big|_{t=0} = T_e + C \qquad \rightarr
 
 La soluzione del problema è quindi
 
-$$T(t) = T_e + ( T_0 - T_e ) \left( 1 - e^{-\frac{ht}{mc}} \right) \ .$$
+$$T(t) = T_e + ( T_0 - T_e )  e^{-\frac{ht}{mc}} \ .$$
 
 **Temperatura crescente linearmente, $T^e(t) = T_a + G \, t$.** Con una forzante polinomiale di grado 1 nella variabile indipendente $t$, si cerca una soluzione particolare polinomiale dello stesso ordine, $T_p(t) = a + b t$. I coefficienti $a$, $b$ vengono calcolati inserendo questa espressione nell'equazione differenziale, 
 
