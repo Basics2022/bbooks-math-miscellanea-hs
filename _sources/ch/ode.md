@@ -459,7 +459,13 @@ si calcolano i coefficienti $a$, $b$ uguagliando i termini omogenei
 $$\begin{cases}
 \cos (\Omega t) & : \  (-\Omega^2 + \omega_n^2) a + 2 \xi \omega_n \Omega b = 0 \\
 \sin (\Omega t) & : \ -2 \xi \omega_n \Omega b + (-\Omega^2 + \omega_n^2) a = \frac{F}{m} \\
-\end{cases}$$
+\end{cases}
+\qquad \rightarrow \qquad
+\begin{cases}
+ a = \frac{}{((-\Omega^2 + \omega_n^2))^2 + (2\xi \omega_n \Omega)^2} \frac{F}{m} \\
+ b = \frac{}{((-\Omega^2 + \omega_n^2))^2 + (2\xi \omega_n \Omega)^2} \frac{F}{m} \\
+\end{cases}
+$$
 
 
 ```
