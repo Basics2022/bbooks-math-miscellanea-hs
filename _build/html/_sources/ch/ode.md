@@ -214,7 +214,6 @@ poiché la funzione esponenziale non è mai nulla. Il [teorema fondamentale dell
 -->
 
 ```{dropdown} Radici multiple - "Dimostrazione"
-:open:
 
 Un'equazione differenziale lineare a coefficienti costanti omogenea può essere riscritta come
 
@@ -281,16 +280,163 @@ Nel caso in cui la soluzione particolare abbia la forma di una delle soluzioni d
 In questa sezione vengono risolti alcuni problemi governati dalle equazioni differenziali presentate in precedenza come [esempi](ode-hs:types:linear-const:ex) di equazioni differenziali ordinarie lineari a coefficienti costanti, applicando il [metodo di soluzione generale](ode-hs:types:linear-const:sol) per questo tipo di equazioni.
 
 ```{dropdown} Esempio - Temperatura di un corpo, soggetto a convezione.
-**Temperatura costante, $T^e$**
 
-**Temperatura crescente linearmente, $T^e(t) = T_0 + G \, t$**
+L'equazione ordinaria del primo ordine
 
-**Temperatura con andamento periodico, $T^e(t) = T_0 + \Delta T \sin(\Omega t) \, t$**
+$$m x \dot{T}(t) + h T(t) = h T^e(t) \qquad , \qquad t \ge 0$$
+
+rappresenta un bilancio di energia interna e governa la temperatura $T(t)$ di un corpo di massa $m$, e capacità termica $c$ soggetto a convezione con coefficiente $h$ con un ambiente a temperatura $T^e(t)$. Tutti i parametri del sistema e la temperatura iniziale del corpo $T(0) = T_0$ sono noti. Si vuole determinare l'evoluzione della temperatura $T(t)$ del corpo, in risposta a diversi andamenti della temperatura dell'ambiente esterno.
+L'equazione è un'equazione ordinaria lineare del primo ordine a coefficienti costanti. La soluzione dell'equazione può essere scritta come somma della soluzione generale dell'equazione omogenea $T_o(t)$ e di una soluzione particolare dell'equazione completa, $T_p(t)$
+
+  $$T(t) = T_{o}(t) + T_p(t) \ .$$
+
+**Equazione omogenea.** L'equazione omogenea,
+
+$$m c \dot{T}_o + h T_o = 0 \qquad \rightarrow \qquad T_o(t) = C e^{-\frac{h}{mc}t} \ ,$$
+
+è indipendente dalla forzante esterna, qui rappresentata dalla temperatura dell'ambiente $T_e(t)$.
+
+**Temperatura costante, $T^e$.** La soluzione particolare dell'equazione con una forzante costante è una soluzione costante, $T_p(t) = T_e$. La soluzione generale ha quindi l'espressione
+
+$$ T(t) = T_e + C e^{-\frac{h}{mc}t} \ ,$$
+
+e la costante di integrazione $C$ viene determinata con la condizione iniziale
+
+$$T_0 = T(0) = T_e + C e^{-\frac{h}{mc}t} \big|_{t=0} = T_e + C \qquad \rightarrow \qquad C = T_0 - T_e \ .$$
+
+La soluzione del problema è quindi
+
+$$
+  T(t) = T_e + ( T_0 - T_e )  e^{-\frac{ht}{mc}} \ .
+$$
+
+**Temperatura crescente linearmente, $T^e(t) = T_a + G \, t$.** Con una forzante polinomiale di grado 1 nella variabile indipendente $t$, si cerca una soluzione particolare polinomiale dello stesso ordine, $T_p(t) = a + b t$. I coefficienti $a$, $b$ vengono calcolati inserendo questa espressione nell'equazione differenziale, 
+
+$$m c b + h (a+bt) = h(T_a + Gt ) \ ,$$
+
+e uguagliando i termini dello stesso ordine nella variabile indipendente,
+
+$$\begin{cases}
+t: \ h b = h G            \\
+1: \ m c b + h a = h T_a
+\end{cases}
+\qquad \rightarrow \qquad
+\begin{cases}
+ b = G \\
+ a = T_a - \frac{mc}{h} G \ .
+\end{cases}
+$$
+
+La soluzione generale assume la forma
+
+$$T(t) = T_a - \frac{mc}{h}G + G t + C e^{-\frac{h t}{m c}} \ ,$$
+
+e la costante di integrazione $C$ viene calcolata con la condizione iniziale
+
+$$T_0 = T(0) = T_a - \frac{mc}{h} G + C \qquad \rightarrow \qquad C = T_0 - T_a + \frac{mc}{h} G \ .$$
+
+La soluzione del problema è quindi
+
+$$
+  T(t) = T_a + G t - \frac{mc}{h}G + \left( T_0 - T_a + \frac{mc}{h} G \right) e^{-\frac{h t}{m c}} \ .
+$$
+
+- La somma dei primi 3 termini è la soluzione della particolare, l'ultimo termine è la soluzione dell'equazione omogenea;
+- la soluzione dell'equazione omogenea tende a zero per $t \rightarrow \infty$. 
+- per $t \rightarrow \infty$, c'è una differenza costante tra la temperatura dell'ambiente $T^e(t) = T_a + Gt$ e la temperatura $T(t)$ del corpo, $T(t) - T^e(t) = -\frac{mc}{h} G$.
+
+**Temperatura con andamento periodico, $T^e(t) = T_a + \Delta T \sin(\Omega t)$.** Data una forzante somma di un termine costante e di un termine armonico, si cerca una soluzione particolare come somma di un termine costante e delle funzioni armoniche di seno e coseno, $T_p(t) = a + b \cos(\Omega t) + c \sin(\Omega t)$. I coefficienti $a$, $b$, $c$ vengono calcolati inserendo questa espressione nell'equazione differenziale,
+
+$$ m c \Omega \left( - b \sin(\Omega t) + c \cos(\Omega t) \right) + h \left( a + b \cos(\Omega t) + c \sin(\Omega t) \right) = h \left(  T_a + \Delta T \sin(\Omega t) \right) \ ,$$
+
+e uguagliando i termini omogenei nella variabile indipendente $t$,
+
+$$\begin{cases}
+\cos \Omega t & : \ \quad  m c \Omega c + h b = 0 \\
+\sin \Omega t & : \ - m c \Omega b + h c = h \Delta T \\
+            1 & : \ \quad h a = h T_a \\
+\end{cases}
+\qquad \rightarrow \qquad
+\begin{cases}
+ a = T_a \\
+ b = -\frac{mc\Omega}{(m c \Omega)^2 + h^2} h \Delta T\\
+ c =  \frac{h}{(m c \Omega)^2 + h^2} h \Delta T \\
+\end{cases}
+$$
+
+La soluzione generale assume la forma
+
+$$T(t) = T_a + b \cos(\Omega t) + c \sin(\Omega t) + C e^{-\frac{ht}{mc}} \ ,$$
+
+e la costante di integrazione $C$ viene calcolata con la condizione iniziale
+
+$$T_0 = T(0) = T_a + b + C \qquad \rightarrow \qquad C = T_0 - T_a - b \ . $$
+
+La soluzione del problema è quindi
+
+$$\begin{aligned}
+  T(t) 
+  & = T_a + b \cos(\Omega t) + c \sin(\Omega t) + (T_0 - T_a - b) e^{-\frac{ht}{mc}} = \\
+  & = T_a -\frac{\frac{mc\Omega}{h}}{\left(\frac{m c \Omega}{h}\right)^2 + 1} \Delta T \cos(\Omega t) + 
+           \frac{ 1      }{\left(\frac{m c \Omega}{h}\right)^2 + 1} \Delta T\sin(\Omega t) + \left(T_0 - T_a + \frac{\frac{mc\Omega}{h}}{\left(\frac{m c \Omega}{h}\right)^2 + 1} \right) e^{-\frac{ht}{mc}} = \\
+  & = T_a + \Delta T \sin\left( \Omega t - \varphi \right) + \left( T_0 - T_a + \frac{\frac{mc\Omega}{h}}{\left(\frac{m c \Omega}{h}\right)^2 + 1} \right) e^{-\frac{ht}{mc}} \ ,
+\end{aligned}$$
+
+e può essere espressa in termini di un ritardo di fase $\varphi$, rispetto alla temperatura dell'ambiente esterno $T_e$
+
+$$\cos \varphi = \frac{1}{\left(\frac{m c \Omega}{h}\right)^2 + 1} \qquad , \qquad \sin \varphi = \frac{\frac{mc\Omega}{h}}{\left(\frac{m c \Omega}{h}\right)^2 + 1}$$
+
+L'equazione 
 
 ```
 
 ```{dropdown} Esempio - Sistema massa-molla-smorzatore
+:open:
+
 **todo** *definire il sistema adimensionale e verificare la risposta in funzione del coefficiente di smorzamento del sistema; definire smorzamento critico, e sistemi sovra- e sotto-smorzati; indagare il fenomeno della* **risonanza**
+
+L'equazione
+
+$$m\ddot{x} + c \dot{x} + k x = f^e(t) \ ,$$
+
+compare in molte applicazioni con coefficienti $m$, $c$, $k$ associati a grandezze positive: in questo caso, l'equazione può essere riscritta introducendo la **frequenza naturale** $\omega_n := \sqrt{\frac{k}{m}}$ e il **coefficiente di smorzamento** $\xi:= \frac{c}{2 m}\frac{1}{\omega_n} = \frac{c}{2 \sqrt{m k}}$,
+
+$$\ddot{x} + 2 \xi \omega_n \dot{x} + \omega_n^2 x = \frac{f^e(t)}{m} \ .$$
+
+**Equazione omogenea.** Si distinguono quindi 3 possibili casi per la soluzione dell'equazione omogenea,
+
+$$\ddot{x} + 2 \xi \omega_n \dot{x} + \omega_n^2 x = 0 \ ,$$
+
+$$s^2 + 2 \xi \omega_n + \omega_n^2 = 0 \qquad \rightarrow \qquad s_{1,2} = -\xi \omega_n \mp \omega_n \sqrt{\xi^2 - 1}$$
+
+1. soluzione sotto-smorzata, $0 \le \xi < 1$: la soluzione è oscillante, smorzata se $\xi > 0$,
+  
+   $$s_{1,2} = - \xi \omega_n \mp j \omega_n \sqrt{1 - \xi^2} = - \sigma \mp j \omega
+   \qquad \rightarrow \qquad
+   x(t) = e^{-\sigma t} \left[ A \cos(\omega t) + B \sin(\omega t) \right]$$
+
+2. soluzione con smorzamento critico, $\xi = 1$: è il caso limite tra le soluzioni oscillanti sotto-smorzate e le soluzioni oscillanti sovra-smorzate.
+
+   $$s_1 = s_2 = - \omega_n
+   \qquad \rightarrow \qquad
+   x(t) = A e^{-\omega_n t} + B \, t \, e^{-\omega_n t}
+   $$
+
+
+3. soluzione sovra-smorzata, $\xi > 1$: la soluzione decade senza oscillazioni,
+
+   $$0 > s_{1,2} = - \xi \omega \mp \omega_n \sqrt{\xi^2 - 1} \in \mathbb{R}
+   \qquad \rightarrow \qquad
+   x(t) = A e^{s_1 t} + B e^{s_2 t}
+   $$
+
+<!--
+può essere scritta in forma adimensionale, mettendo in evidenza una lunghezza di riferimento $x(t) = X \tilde{x}(t)$, e un tempo di riferimento $t = T \tau$,
+
+$$X \left[ \frac{m}{T^2} \tilde{x}'' + \frac{c}{T} \tilde{x}' + k \tilde{x} \right] = f^{e}(t)$$
+
+$$\tilde{x}'' + \frac{c T}{m} \tilde{x}' + \frac{k T^2}{m} \tilde{x} = \frac{F T^2}{m X} \tilde{f}^{e}(t)$$
+-->
 
 **Moto libero - forzante nulla, $f^e = 0$**
 

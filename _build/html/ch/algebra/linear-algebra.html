@@ -507,6 +507,7 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi">6.6. Problemi</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matrici-come-funzione-lineare">6.6.1. Matrici come funzione lineare</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#soluzione-di-sistemi-lineari">6.6.2. Soluzione di sistemi lineari</a></li>
 </ul>
 </li>
 </ul>
@@ -584,6 +585,8 @@ a_{m1} &amp; a_{m2} &amp; \dots &amp; a_{mn}
 <div class="math notranslate nohighlight">
 \[(\mathbf{A} + \mathbf{B})_{ij} = a_{ij} + b_{ij} \ ,\]</div>
 <p>o più esplicitamente,</p>
+</li>
+</ul>
 <div class="math notranslate nohighlight">
 \[\begin{split} \mathbf{A} + \mathbf{B} = 
 \begin{bmatrix}
@@ -600,18 +603,20 @@ a_{m1} &amp; a_{m2} &amp; \dots &amp; a_{mn}
   a_{m1}+b_{m1} &amp; a_{m2}+b_{m2} &amp; \dots &amp; a_{mn}+b_{mn} \\
 \end{bmatrix}
 \end{split}\]</div>
-</li>
+<ul>
 <li><p><strong>Moltiplicazione per uno scalare.</strong> La moltiplicazione di una matrice <span class="math notranslate nohighlight">\(\mathbf{A} \in \mathbb{R}^{m,n}\)</span> per un numero reale <span class="math notranslate nohighlight">\(c \in \mathbf{R}\)</span> è la matrice <span class="math notranslate nohighlight">\(c \mathbf{A} \in \mathbb{R}^{m,n}\)</span> con componenti</p>
 <div class="math notranslate nohighlight">
 \[(c \mathbf{A})_{ij} = c \, a_{ij} \ ,\]</div>
 <p>o più esplicitamente,</p>
+</li>
+</ul>
 <div class="math notranslate nohighlight">
 \[\begin{split} c A = \begin{bmatrix}
    c \cdot a_{11} &amp; \dots &amp; c \cdot a_{1n} \\
    \dots          &amp; \dots &amp; \dots          \\
    c \cdot a_{m1} &amp; \dots &amp; c \cdot a_{mn}
    \end{bmatrix} \end{split}\]</div>
-</li>
+<ul>
 <li><p><strong>Prodotto di matrici.</strong> Il prodotto <span class="math notranslate nohighlight">\(\mathbf{A} \mathbf{B}\)</span> tra matrici è possibile tra due matrici <span class="math notranslate nohighlight">\(\mathbf{A} \in \mathbb{R}^{m,p}\)</span>, <span class="math notranslate nohighlight">\(\mathbf{B} \in \mathbb{R}^{p,n}\)</span>, ed è la matrice <span class="math notranslate nohighlight">\(\mathbf{A} \mathbf{B} \in \mathbb{R}^{m,n}\)</span> con le componenti</p>
 <div class="math notranslate nohighlight">
 \[(\mathbf{A}\mathbf{B})_{ij} = \sum_{k=1}^{n} a_{in} b_{nj} = \mathbf{a}_i^T \mathbf{b}_j \ .\]</div>
@@ -807,8 +812,8 @@ E3: \ x_2 + 2 ( -1 - 2 x_2 ) = 1 \quad \rightarrow \quad x_2 = -1 \ .
 <div class="section" id="problemi">
 <span id="math-hs-algebra-linear-problems"></span><h2><span class="section-number">6.6. </span>Problemi<a class="headerlink" href="#problemi" title="Permalink to this heading">#</a></h2>
 <div class="section" id="matrici-come-funzione-lineare">
-<h3><span class="section-number">6.6.1. </span>Matrici come funzione lineare<a class="headerlink" href="#matrici-come-funzione-lineare" title="Permalink to this heading">#</a></h3>
-<div class="exercise admonition" id="ch/algebra/linear-algebra-exercise-9">
+<span id="math-hs-algebra-linear-problems-linear-fun"></span><h3><span class="section-number">6.6.1. </span>Matrici come funzione lineare<a class="headerlink" href="#matrici-come-funzione-lineare" title="Permalink to this heading">#</a></h3>
+<div class="exercise dropdown admonition" id="ch/algebra/linear-algebra-exercise-9">
 
 <p class="admonition-title"><span class="caption-number">Exercise 6.1 </span> (Matrici e scalatura)</p>
 <div class="section" id="exercise-content">
@@ -826,7 +831,7 @@ E3: \ x_2 + 2 ( -1 - 2 x_2 ) = 1 \quad \rightarrow \quad x_2 = -1 \ .
 </ul>
 </div>
 </div>
-<div class="exercise admonition" id="ch/algebra/linear-algebra-exercise-10">
+<div class="exercise dropdown admonition" id="ch/algebra/linear-algebra-exercise-10">
 
 <p class="admonition-title"><span class="caption-number">Exercise 6.2 </span> (Matrici e riflessioni)</p>
 <div class="section" id="exercise-content">
@@ -842,7 +847,7 @@ E3: \ x_2 + 2 ( -1 - 2 x_2 ) = 1 \quad \rightarrow \quad x_2 = -1 \ .
 </ul>
 </div>
 </div>
-<div class="exercise admonition" id="ch/algebra/linear-algebra-exercise-11">
+<div class="exercise dropdown admonition" id="ch/algebra/linear-algebra-exercise-11">
 
 <p class="admonition-title"><span class="caption-number">Exercise 6.3 </span> (Matrici e rotazioni)</p>
 <div class="section" id="exercise-content">
@@ -865,7 +870,7 @@ con $a^2 + b^2 = 1$ rappresenta una rotazione dei vettori attorno all'origine.
 <p><strong>todo</strong> Dipendenza logica di questo esercizio dalle basi di <a class="reference internal" href="../trigonometry.html#math-hs-trigonometry"><span class="std std-ref">trigonometria</span></a>. Stabilire un ordine consigliato di accesso a questo <span class="math notranslate nohighlight">\(\texttt{bbook}\)</span></p>
 </div>
 </div>
-<div class="exercise admonition" id="ch/algebra/linear-algebra-exercise-12">
+<div class="exercise dropdown admonition" id="ch/algebra/linear-algebra-exercise-12">
 
 <p class="admonition-title"><span class="caption-number">Exercise 6.4 </span> (Proiezione ortogonale lungo una direzione data)</p>
 <div class="section" id="exercise-content">
@@ -882,7 +887,7 @@ con $a^2 + b^2 = 1$ rappresenta una rotazione dei vettori attorno all'origine.
 </ul>
 </div>
 </div>
-<div class="exercise admonition" id="ch/algebra/linear-algebra-exercise-13">
+<div class="exercise dropdown admonition" id="ch/algebra/linear-algebra-exercise-13">
 
 <p class="admonition-title"><span class="caption-number">Exercise 6.5 </span> (Proiezione ortogonale nella direzione perpendicolare a una direzione data)</p>
 <div class="section" id="exercise-content">
@@ -899,58 +904,66 @@ con $a^2 + b^2 = 1$ rappresenta una rotazione dei vettori attorno all'origine.
 </ul>
 </div>
 </div>
-<div class="exercise admonition" id="ch/algebra/linear-algebra-exercise-14">
+<div class="exercise dropdown admonition" id="ch/algebra/linear-algebra-exercise-14">
 
 <p class="admonition-title"><span class="caption-number">Exercise 6.6 </span> (Scomposizione di una matrice - somma di parte simmetrica e antisimmetrica)</p>
 <div class="section" id="exercise-content">
 <p>Ogni matrice può essere scritta come la somma di una parte simmetrica e una parte antisimmetrica.</p>
 </div>
 </div>
-<div class="exercise admonition" id="ch/algebra/linear-algebra-exercise-15">
+<div class="exercise dropdown admonition" id="ch/algebra/linear-algebra-exercise-15">
 
 <p class="admonition-title"><span class="caption-number">Exercise 6.7 </span> (Scomposizione di una matrice - …)</p>
 <div class="section" id="exercise-content">
 </div>
 </div>
+</div>
+<div class="section" id="soluzione-di-sistemi-lineari">
+<span id="math-hs-algebra-linear-problems-linear-sys"></span><h3><span class="section-number">6.6.2. </span>Soluzione di sistemi lineari<a class="headerlink" href="#soluzione-di-sistemi-lineari" title="Permalink to this heading">#</a></h3>
 <p>Viene chiesto di stabilire se i seguenti problemi hanno soluzione, di calcolare le eventuali soluzioni, fornire una rappresentazione grafica del problema algebrico, e - per sistemi con uguale numero di equazioni ed incognite - calcolare il determinante delle matrici del sistema lineare.</p>
-<ol class="arabic">
-<li><p>Risolvi il sistema:</p>
+<ol class="arabic simple">
+<li></li>
+</ol>
 <div class="math notranslate nohighlight">
 \[\begin{split}
    \begin{cases}
    x + y = 4 \\
    \frac{3}{2}x + y = 5
    \end{cases}
-   \end{split}\]</div>
-</li>
-<li><p>Risolvi il sistema:</p>
+\end{split}\]</div>
+<ol class="arabic simple" start="2">
+<li></li>
+</ol>
 <div class="math notranslate nohighlight">
 \[\begin{split}
     \begin{cases}
     x - y = 2 \\
     x + y = -1
     \end{cases}
-    \end{split}\]</div>
-</li>
-<li><p>Risolvi il sistema:</p>
+\end{split}\]</div>
+<ol class="arabic simple" start="3">
+<li></li>
+</ol>
 <div class="math notranslate nohighlight">
 \[\begin{split}
    \begin{cases}
    x + 2y = 5 \\
    2x + 2y = 11
    \end{cases}
-   \end{split}\]</div>
-</li>
-<li><p>Risolvi il sistema:</p>
+\end{split}\]</div>
+<ol class="arabic simple" start="4">
+<li></li>
+</ol>
 <div class="math notranslate nohighlight">
 \[\begin{split}
    \begin{cases}
    x + y = 3 \\
    x - y = 1
    \end{cases}
-   \end{split}\]</div>
-</li>
-<li><p>Risolvi il sistema:</p>
+\end{split}\]</div>
+<ol class="arabic simple" start="5">
+<li></li>
+</ol>
 <div class="math notranslate nohighlight">
 \[\begin{split}
    \begin{cases}
@@ -958,9 +971,10 @@ con $a^2 + b^2 = 1$ rappresenta una rotazione dei vettori attorno all'origine.
    2x - 2y + 2z = 0 \\
    -x + y - z = 0
    \end{cases}
-   \end{split}\]</div>
-</li>
-<li><p>Risolvi il sistema:</p>
+\end{split}\]</div>
+<ol class="arabic simple" start="6">
+<li></li>
+</ol>
 <div class="math notranslate nohighlight">
 \[\begin{split}
    \begin{cases}
@@ -968,63 +982,70 @@ con $a^2 + b^2 = 1$ rappresenta una rotazione dei vettori attorno all'origine.
    x + 2y + z = 4 \\
    x + y + 2z = 6
    \end{cases}
-   \end{split}\]</div>
-</li>
-<li><p>Risolvi il sistema:</p>
+\end{split}\]</div>
+<ol class="arabic simple" start="7">
+<li></li>
+</ol>
 <div class="math notranslate nohighlight">
 \[\begin{split}
    \begin{cases}
    x + y + z = 3 \\
    2x + 2y + z = 8 \\
    \end{cases}
-   \end{split}\]</div>
-</li>
-<li><p>Risolvi il sistema:</p>
+\end{split}\]</div>
+<ol class="arabic simple" start="8">
+<li></li>
+</ol>
 <div class="math notranslate nohighlight">
 \[\begin{split}
    \begin{cases}
    x + y + z = 7 \\
    x + y - z = 3
    \end{cases}
-   \end{split}\]</div>
-</li>
-<li><p>Risolvi il sistema:</p>
+\end{split}\]</div>
+<ol class="arabic simple" start="9">
+<li></li>
+</ol>
 <div class="math notranslate nohighlight">
 \[\begin{split}
    \begin{cases}
    3x + 2y = 6 \\
    x - y = 1
    \end{cases}
-   \end{split}\]</div>
-</li>
-<li><p>Risolvi il sistema:</p>
+\end{split}\]</div>
+<ol class="arabic simple" start="10">
+<li></li>
+</ol>
 <div class="math notranslate nohighlight">
 \[\begin{split}
     \begin{cases}
     x + y = 2 \\
     3x + 2y = 6
     \end{cases}
-    \end{split}\]</div>
-</li>
-<li><p>Risolvi il sistema:</p>
+\end{split}\]</div>
+<ol class="arabic simple" start="11">
+<li></li>
+</ol>
 <div class="math notranslate nohighlight">
 \[\begin{split}
     \begin{cases}
     x - y = 1 \\
     x - 3y + z = 3
     \end{cases}
-    \end{split}\]</div>
-</li>
-<li><p>Risolvi il sistema:</p>
+\end{split}\]</div>
+<ol class="arabic simple" start="12">
+<li></li>
+</ol>
 <div class="math notranslate nohighlight">
 \[\begin{split}
     \begin{cases}
     x + y = 5 \\
     2x - y = 1
     \end{cases}
-    \end{split}\]</div>
-</li>
-<li><p>Risolvi il sistema:</p>
+\end{split}\]</div>
+<ol class="arabic simple" start="13">
+<li></li>
+</ol>
 <div class="math notranslate nohighlight">
 \[\begin{split}
     \begin{cases}
@@ -1032,9 +1053,10 @@ con $a^2 + b^2 = 1$ rappresenta una rotazione dei vettori attorno all'origine.
     x + y + z = 3 \\
     2x + 2y + z = 4
     \end{cases}
-    \end{split}\]</div>
-</li>
-<li><p>Risolvi il sistema:</p>
+\end{split}\]</div>
+<ol class="arabic simple" start="14">
+<li></li>
+</ol>
 <div class="math notranslate nohighlight">
 \[\begin{split}
     \begin{cases}
@@ -1042,27 +1064,30 @@ con $a^2 + b^2 = 1$ rappresenta una rotazione dei vettori attorno all'origine.
     2x - 2y + 2z = 10 \\
     3x - y + 3z = -5
     \end{cases}
-    \end{split}\]</div>
-</li>
-<li><p>Risolvi il sistema:</p>
+\end{split}\]</div>
+<ol class="arabic simple" start="15">
+<li></li>
+</ol>
 <div class="math notranslate nohighlight">
 \[\begin{split}
     \begin{cases}
     x + y = 4 \\
     2x + 2y = 8
     \end{cases}
-    \end{split}\]</div>
-</li>
-<li><p>Risolvi il sistema:</p>
+\end{split}\]</div>
+<ol class="arabic simple" start="16">
+<li></li>
+</ol>
 <div class="math notranslate nohighlight">
 \[\begin{split}
     \begin{cases}
     x + 2y = 8 \\
     3x - 4y = -2
     \end{cases}
-    \end{split}\]</div>
-</li>
-<li><p>Risolvi il sistema:</p>
+\end{split}\]</div>
+<ol class="arabic simple" start="17">
+<li></li>
+</ol>
 <div class="math notranslate nohighlight">
 \[\begin{split}
     \begin{cases}
@@ -1070,9 +1095,10 @@ con $a^2 + b^2 = 1$ rappresenta una rotazione dei vettori attorno all'origine.
     2x + 2y = 6 \\
     x + 3y = 4
     \end{cases}
-    \end{split}\]</div>
-</li>
-<li><p>Risolvi il sistema:</p>
+\end{split}\]</div>
+<ol class="arabic simple" start="18">
+<li></li>
+</ol>
 <div class="math notranslate nohighlight">
 \[\begin{split}
     \begin{cases}
@@ -1080,9 +1106,9 @@ con $a^2 + b^2 = 1$ rappresenta una rotazione dei vettori attorno all'origine.
     2x - y + z = 2 \\
     -x + y + 2z = 4
     \end{cases}
-    \end{split}\]</div>
-</li>
-<li><p>Risolvi il sistema:</p></li>
+\end{split}\]</div>
+<ol class="arabic simple" start="19">
+<li></li>
 </ol>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -1091,9 +1117,10 @@ con $a^2 + b^2 = 1$ rappresenta una rotazione dei vettori attorno all'origine.
    x - y + z = 4 \\
    2x + y - z = 7
    \end{cases}
-   \end{split}\]</div>
-<ol class="arabic" start="20">
-<li><p>Risolvi il sistema:</p>
+\end{split}\]</div>
+<ol class="arabic simple" start="20">
+<li></li>
+</ol>
 <div class="math notranslate nohighlight">
 \[\begin{split}
     \begin{cases}
@@ -1101,9 +1128,7 @@ con $a^2 + b^2 = 1$ rappresenta una rotazione dei vettori attorno all'origine.
     2x + 4y + 6z = 12 \\
     -x - 2y - 3z = -6
     \end{cases}
-    \end{split}\]</div>
-</li>
-</ol>
+\end{split}\]</div>
 <p>Viene chiesto di ripetere la discussione degli esercizi precedenti, al variare dei parametri nel sistemi.</p>
 <ol class="arabic simple">
 <li></li>
@@ -1114,7 +1139,7 @@ con $a^2 + b^2 = 1$ rappresenta una rotazione dei vettori attorno all'origine.
    x + ky = 2 \\
    x - 2y = 1
    \end{cases}
-   \end{split}\]</div>
+\end{split}\]</div>
 <ol class="arabic simple" start="2">
 <li></li>
 </ol>
@@ -1124,7 +1149,7 @@ con $a^2 + b^2 = 1$ rappresenta una rotazione dei vettori attorno all'origine.
    x + y = b \\
    ax + y = 2
    \end{cases}
-   \end{split}\]</div>
+\end{split}\]</div>
 <ol class="arabic simple" start="3">
 <li></li>
 </ol>
@@ -1135,7 +1160,7 @@ con $a^2 + b^2 = 1$ rappresenta una rotazione dei vettori attorno all'origine.
    mx + 2y + z = 4 \\
    x + y - z = 1
    \end{cases}
-   \end{split}\]</div>
+\end{split}\]</div>
 <ol class="arabic simple" start="4">
 <li></li>
 </ol>
@@ -1145,18 +1170,18 @@ con $a^2 + b^2 = 1$ rappresenta una rotazione dei vettori attorno all'origine.
    kx + y = 4 \\
    2x + ky = 3 p
    \end{cases}
-   \end{split}\]</div>
-<ol class="arabic" start="5">
-<li><div class="math notranslate nohighlight">
+\end{split}\]</div>
+<ol class="arabic simple" start="5">
+<li></li>
+</ol>
+<div class="math notranslate nohighlight">
 \[\begin{split}
    \begin{cases}
    px + y      = 1 \\
    2x + y +  z = 2 \\
         y + qz = p
    \end{cases}
-   \end{split}\]</div>
-</li>
-</ol>
+\end{split}\]</div>
 <p><strong>todo</strong> <em>Qualche esercizio con disequazioni</em></p>
 <!--
 
@@ -1170,7 +1195,7 @@ $$
 \end{bmatrix}
 $$
 
-2. Risolvi il sistema:
+2. 
 
 $$
 \begin{cases}
@@ -1275,6 +1300,7 @@ $$
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi">6.6. Problemi</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matrici-come-funzione-lineare">6.6.1. Matrici come funzione lineare</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#soluzione-di-sistemi-lineari">6.6.2. Soluzione di sistemi lineari</a></li>
 </ul>
 </li>
 </ul>

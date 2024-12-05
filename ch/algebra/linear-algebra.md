@@ -70,7 +70,7 @@ In seguito si faranno cadere i pedici $col$ e $row$ per motivi di sintesi, usand
 
   o più esplicitamente,
 
-   $$ \mathbf{A} + \mathbf{B} = 
+$$ \mathbf{A} + \mathbf{B} = 
 \begin{bmatrix}
   a_{11} & a_{12} & \dots & a_{1n} \\ \dots  & \dots  & \dots & \dots  \\ a_{m1} & a_{m2} & \dots & a_{mn}
 \end{bmatrix}
@@ -92,7 +92,7 @@ $$
 
   o più esplicitamente,
 
-   $$ c A = \begin{bmatrix}
+$$ c A = \begin{bmatrix}
    c \cdot a_{11} & \dots & c \cdot a_{1n} \\
    \dots          & \dots & \dots          \\
    c \cdot a_{m1} & \dots & c \cdot a_{mn}
@@ -314,8 +314,11 @@ $$\begin{aligned}
 (math-hs:algebra:linear:problems)=
 ## Problemi
 
+(math-hs:algebra:linear:problems:linear-fun)=
 ### Matrici come funzione lineare
 ```{exercise} Matrici e scalatura
+:class: dropdown
+
 Interpretando gli elementi di un vettore colonna $\mathbf{x} \in \mathbb{R}^2$ come le componenti cartesiane del vettore $\vec{x}$ in un piano, la matrice $\mathbf{A} \in \mathbb{R}^{2,2}$ 
 
 $$\mathbf{A} = \begin{bmatrix} a & 0 \\ 0 & b \end{bmatrix} \ ,$$
@@ -331,6 +334,8 @@ rappresenta una scalatura non isotropa (diversa lungo le diverse direzioni) dell
 
 ```
 ```{exercise} Matrici e riflessioni
+:class: dropdown
+
 Interpretando gli elementi di un vettore colonna $\mathbf{x} \in \mathbb{R}^2$ come le componenti cartesiane del vettore $\vec{x}$ in un piano, la matrice $\mathbf{A} \in \mathbb{R}^{2,2}$ 
 
 $$\mathbf{A} = \begin{bmatrix} 1 - 2 n_x^2 & - 2 n_x n_y \\  - 2 n_x n_y & 1 - 2 n_y^2 \end{bmatrix} \ ,$$
@@ -344,6 +349,8 @@ rappresenta una riflessione di vettori del piano rispetto a una retta passante p
 
 ```
 ```{exercise} Matrici e rotazioni
+:class: dropdown
+
 Interpretando gli elementi di un vettore colonna $\mathbf{x} \in \mathbb{R}^2$ come le componenti cartesiane del vettore $\vec{x}$ in un piano, la matrice $\mathbf{A} \in \mathbb{R}^{2,2}$ 
 
 $$\mathbf{A} = \begin{bmatrix} \cos\theta & \sin \theta \\ -\sin\theta & \cos\theta \end{bmatrix} \ ,$$
@@ -367,6 +374,8 @@ con $a^2 + b^2 = 1$ rappresenta una rotazione dei vettori attorno all'origine.
 ```
 
 ```{exercise} Proiezione ortogonale lungo una direzione data
+:class: dropdown
+
 Interpretando gli elementi di un vettore colonna $\mathbf{x} \in \mathbb{R}^2$ come le componenti cartesiane del vettore $\vec{x}$ in un piano, la matrice $\mathbf{A} \in \mathbb{R}^{2,2}$ 
 
 $$\mathbf{A} = \mathbf{n}^T \mathbf{n} = \begin{bmatrix} n_x^2 & n_x n_y \\  n_x n_y & n_y^2 \end{bmatrix} \ ,$$
@@ -382,6 +391,8 @@ rappresenta una proiezione ortogonale dei punti del piano sulla retta passante p
 ```
 
 ```{exercise} Proiezione ortogonale nella direzione perpendicolare a una direzione data
+:class: dropdown
+
 Interpretando gli elementi di un vettore colonna $\mathbf{x} \in \mathbb{R}^2$ come le componenti cartesiane del vettore $\vec{x}$ in un piano, la matrice $\mathbf{A} \in \mathbb{R}^{2,2}$ 
 
 $$\mathbf{A} = \mathbf{I} - \mathbf{n}^T \mathbf{n} = \begin{bmatrix} 1- n_x^2 & -n_x n_y \\ - n_x n_y & 1 - n_y^2 \end{bmatrix} \ ,$$
@@ -396,256 +407,261 @@ rappresenta una proiezione ortogonale dei punti del piano sulla retta passante p
 ```
 
 ```{exercise} Scomposizione di una matrice - somma di parte simmetrica e antisimmetrica
+:class: dropdown
+
 Ogni matrice può essere scritta come la somma di una parte simmetrica e una parte antisimmetrica.
 
 ```
 ```{exercise} Scomposizione di una matrice - ...
+:class: dropdown
+
 ```
 
-
+(math-hs:algebra:linear:problems:linear-sys)=
+### Soluzione di sistemi lineari
 
 Viene chiesto di stabilire se i seguenti problemi hanno soluzione, di calcolare le eventuali soluzioni, fornire una rappresentazione grafica del problema algebrico, e - per sistemi con uguale numero di equazioni ed incognite - calcolare il determinante delle matrici del sistema lineare.
 
-1. Risolvi il sistema:
+1. 
 
-   $$
+$$
    \begin{cases}
    x + y = 4 \\
    \frac{3}{2}x + y = 5
    \end{cases}
-   $$
+$$
 
 
-2. Risolvi il sistema:
+2. 
 
-    $$
+$$
     \begin{cases}
     x - y = 2 \\
     x + y = -1
     \end{cases}
-    $$
+$$
 
-3. Risolvi il sistema:
+3. 
 
-   $$
+$$
    \begin{cases}
    x + 2y = 5 \\
    2x + 2y = 11
    \end{cases}
-   $$
+$$
 
-4. Risolvi il sistema:
+4. 
 
-   $$
+$$
    \begin{cases}
    x + y = 3 \\
    x - y = 1
    \end{cases}
-   $$
+$$
 
-5. Risolvi il sistema:
+5. 
 
-   $$
+$$
    \begin{cases}
    x - y + z = 0 \\
    2x - 2y + 2z = 0 \\
    -x + y - z = 0
    \end{cases}
-   $$
+$$
 
 
-6. Risolvi il sistema:
+6. 
 
-   $$
+$$
    \begin{cases}
    x + y + z = 2 \\
    x + 2y + z = 4 \\
    x + y + 2z = 6
    \end{cases}
-   $$
+$$
 
-7. Risolvi il sistema:
+7. 
 
-   $$
+$$
    \begin{cases}
    x + y + z = 3 \\
    2x + 2y + z = 8 \\
    \end{cases}
-   $$
+$$
 
-8. Risolvi il sistema:
+8. 
 
-   $$
+$$
    \begin{cases}
    x + y + z = 7 \\
    x + y - z = 3
    \end{cases}
-   $$
+$$
 
-9. Risolvi il sistema:
+9. 
 
-   $$
+$$
    \begin{cases}
    3x + 2y = 6 \\
    x - y = 1
    \end{cases}
-   $$
+$$
 
-10. Risolvi il sistema:
+10. 
 
-    $$
+$$
     \begin{cases}
     x + y = 2 \\
     3x + 2y = 6
     \end{cases}
-    $$
+$$
 
-11. Risolvi il sistema:
+11. 
 
-    $$
+$$
     \begin{cases}
     x - y = 1 \\
     x - 3y + z = 3
     \end{cases}
-    $$
+$$
 
-12. Risolvi il sistema:
+12. 
 
-    $$
+$$
     \begin{cases}
     x + y = 5 \\
     2x - y = 1
     \end{cases}
-    $$
+$$
 
-13. Risolvi il sistema:
+13. 
 
-    $$
+$$
     \begin{cases}
     x + y = 1 \\
     x + y + z = 3 \\
     2x + 2y + z = 4
     \end{cases}
-    $$
+$$
 
-14. Risolvi il sistema:
+14. 
 
-    $$
+$$
     \begin{cases}
     x + y + z = 5 \\
     2x - 2y + 2z = 10 \\
     3x - y + 3z = -5
     \end{cases}
-    $$
+$$
 
-15. Risolvi il sistema:
+15. 
 
-    $$
+$$
     \begin{cases}
     x + y = 4 \\
     2x + 2y = 8
     \end{cases}
-    $$
+$$
 
-16. Risolvi il sistema:
+16. 
 
-    $$
+$$
     \begin{cases}
     x + 2y = 8 \\
     3x - 4y = -2
     \end{cases}
-    $$
+$$
 
-17. Risolvi il sistema:
+17. 
 
-    $$
+$$
     \begin{cases}
     x + y = 3 \\
     2x + 2y = 6 \\
     x + 3y = 4
     \end{cases}
-    $$
+$$
 
-18. Risolvi il sistema:
+18. 
 
-    $$
+$$
     \begin{cases}
     x + y - z = 3 \\
     2x - y + z = 2 \\
     -x + y + 2z = 4
     \end{cases}
-    $$
+$$
 
 
-19. Risolvi il sistema:
+19. 
 
-   $$
+$$
    \begin{cases}
    x + y + z = 6 \\
    x - y + z = 4 \\
    2x + y - z = 7
    \end{cases}
-   $$
+$$
 
 
-20. Risolvi il sistema:
+20. 
 
-    $$
+$$
     \begin{cases}
     x + y + 3z = 6 \\
     2x + 4y + 6z = 12 \\
     -x - 2y - 3z = -6
     \end{cases}
-    $$
+$$
 
 Viene chiesto di ripetere la discussione degli esercizi precedenti, al variare dei parametri nel sistemi.
 
 1. 
 
-   $$
+$$
    \begin{cases}
    x + ky = 2 \\
    x - 2y = 1
    \end{cases}
-   $$
+$$
 
 
 2. 
 
-   $$
+$$
    \begin{cases}
    x + y = b \\
    ax + y = 2
    \end{cases}
-   $$
+$$
 
 3. 
 
-   $$
+$$
    \begin{cases}
    x - y + mz = 3 \\
    mx + 2y + z = 4 \\
    x + y - z = 1
    \end{cases}
-   $$
+$$
 
 4. 
 
-   $$
+$$
    \begin{cases}
    kx + y = 4 \\
    2x + ky = 3 p
    \end{cases}
-   $$
+$$
 
 5. 
-   $$
+$$
    \begin{cases}
    px + y      = 1 \\
    2x + y +  z = 2 \\
         y + qz = p
    \end{cases}
-   $$
+$$
 
 **todo** *Qualche esercizio con disequazioni*
 
@@ -662,7 +678,7 @@ $$
 \end{bmatrix}
 $$
 
-2. Risolvi il sistema:
+2. 
 
 $$
 \begin{cases}

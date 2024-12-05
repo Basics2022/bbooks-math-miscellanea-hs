@@ -175,13 +175,33 @@ Un'equazione con due incognite $x,y$ è una relazione di uguaglianza che può es
 - ...
 -->
 
-e delle equazioni ricavabili da queste con una trasformazione *affine* di incognite, nella forma $u = a_u (x-b_x)$, $v = a_v (y-b_y)$, corrispondenti a traslazioni del grafico e scalatura nelle direzioni dei due assi.
+```{list-table}
+:header-rows: 0
+* - ![](../../media/ggb-line.png)
+  - ![](../../media/ggb-par.png)
+  - ![](../../media/ggb-inverse.png)
+  - ![](../../media/ggb-circle.png)
+```
+
+e delle equazioni ricavabili da queste con una trasformazione *affine* di incognite, nella forma 
+
+$$ u = \frac{x-x_0}{a_x} \quad , \quad v = \frac{y-y_0}{a_y} \ ,$$
+$$ x = \alpha_x u + x_0  \quad , \quad y = \alpha_y v + y_0 \ ,$$
+
+ corrispondenti alla compsizione di due trasformazioni, in questo ordine:
+1. la scalatura di un fattore $a_x$ in direzione $x$ e di un fattore $a_y$ in direzione $y$
+2. una traslazione $x_0$ in direzione $x$ e di $y_0$ in direzione $y$
+
+**todo**
+- *Aggiungere un'imamgine con il procedimento di trasformazione di variabili/incognite (e coordinate)*
+- *Aggiungere un'immagine su alcune famiglie di curve, al variare dei parametri*
+
+```{example} ...
+```
 
 
 ## Problemi con due o più incognite - sistemi di equazioni e disequazioni
 Un sistema di equazioni è un insieme di equazioni da risolvere simultaneamente. I sistemi di equazioni (e di disequazioni) consentono di introdurre l'[algebra su $\mathbb{R}^n$](math-hs:algebra:real-n), descritta nel capitolo successivo. 
-
-
 
 
 

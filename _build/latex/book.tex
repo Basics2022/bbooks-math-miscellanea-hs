@@ -87,7 +87,7 @@
         
 
 \title{Matematica per le scuole superiori}
-\date{04 dic 2024}
+\date{05 dic 2024}
 \release{}
 \author{basics}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -877,8 +877,62 @@ Un’equazione con due incognite \(x,y\) è una relazione di uguaglianza che pu�
 
 
 
+
+\begin{savenotes}\sphinxattablestart
+\centering
+\begin{tabulary}{\linewidth}[t]{|T|T|T|T|}
+\hline
+
 \sphinxAtStartPar
-e delle equazioni ricavabili da queste con una trasformazione \sphinxstyleemphasis{affine} di incognite, nella forma \(u = a_u (x-b_x)\), \(v = a_v (y-b_y)\), corrispondenti a traslazioni del grafico e scalatura nelle direzioni dei due assi.
+\sphinxincludegraphics{{ggb-line}.png}
+&
+\sphinxAtStartPar
+\sphinxincludegraphics{{ggb-par}.png}
+&
+\sphinxAtStartPar
+\sphinxincludegraphics{{ggb-inverse}.png}
+&
+\sphinxAtStartPar
+\sphinxincludegraphics{{ggb-circle}.png}
+\\
+\hline
+\end{tabulary}
+\par
+\sphinxattableend\end{savenotes}
+
+\sphinxAtStartPar
+e delle equazioni ricavabili da queste con una trasformazione \sphinxstyleemphasis{affine} di incognite, nella forma
+\begin{equation*}
+\begin{split} u = \frac{x-x_0}{a_x} \quad , \quad v = \frac{y-y_0}{a_y} \ ,\end{split}
+\end{equation*}\begin{equation*}
+\begin{split} x = \alpha_x u + x_0  \quad , \quad y = \alpha_y v + y_0 \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+corrispondenti alla compsizione di due trasformazioni, in questo ordine:
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
+\sphinxAtStartPar
+la scalatura di un fattore \(a_x\) in direzione \(x\) e di un fattore \(a_y\) in direzione \(y\)
+
+\item {} 
+\sphinxAtStartPar
+una traslazione \(x_0\) in direzione \(x\) e di \(y_0\) in direzione \(y\)
+
+\end{enumerate}
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleemphasis{Aggiungere un’imamgine con il procedimento di trasformazione di variabili/incognite (e coordinate)}
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleemphasis{Aggiungere un’immagine su alcune famiglie di curve, al variare dei parametri}
+
+\end{itemize}
 
 
 \section{Problemi con due o più incognite \sphinxhyphen{} sistemi di equazioni e disequazioni}
@@ -1684,6 +1738,8 @@ In seguito si faranno cadere i pedici \(col\) e \(row\) per motivi di sintesi, u
 \end{equation*}
 \sphinxAtStartPar
 o più esplicitamente,
+
+\end{itemize}
 \begin{equation*}
 \begin{split} \mathbf{A} + \mathbf{B} = 
 \begin{bmatrix}
@@ -1700,7 +1756,7 @@ o più esplicitamente,
   a_{m1}+b_{m1} & a_{m2}+b_{m2} & \dots & a_{mn}+b_{mn} \\
 \end{bmatrix}
 \end{split}
-\end{equation*}
+\end{equation*}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 \sphinxstylestrong{Moltiplicazione per uno scalare.} La moltiplicazione di una matrice \(\mathbf{A} \in \mathbb{R}^{m,n}\) per un numero reale \(c \in \mathbf{R}\) è la matrice \(c \mathbf{A} \in \mathbb{R}^{m,n}\) con componenti
@@ -1709,13 +1765,15 @@ o più esplicitamente,
 \end{equation*}
 \sphinxAtStartPar
 o più esplicitamente,
+
+\end{itemize}
 \begin{equation*}
 \begin{split} c A = \begin{bmatrix}
    c \cdot a_{11} & \dots & c \cdot a_{1n} \\
    \dots          & \dots & \dots          \\
    c \cdot a_{m1} & \dots & c \cdot a_{mn}
    \end{bmatrix} \end{split}
-\end{equation*}
+\end{equation*}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 \sphinxstylestrong{Prodotto di matrici.} Il prodotto \(\mathbf{A} \mathbf{B}\) tra matrici è possibile tra due matrici \(\mathbf{A} \in \mathbb{R}^{m,p}\), \(\mathbf{B} \in \mathbb{R}^{p,n}\), ed è la matrice \(\mathbf{A} \mathbf{B} \in \mathbb{R}^{m,n}\) con le componenti
@@ -1999,7 +2057,7 @@ a ritroso: questo ordine di soluzione permette di risolvere \(n\) equazioni che 
 \label{\detokenize{ch/algebra/linear-algebra:problemi}}\label{\detokenize{ch/algebra/linear-algebra:math-hs-algebra-linear-problems}}
 
 \subsection{Matrici come funzione lineare}
-\label{\detokenize{ch/algebra/linear-algebra:matrici-come-funzione-lineare}}\phantomsection \label{exercise:ch/algebra/linear-algebra-exercise-9}
+\label{\detokenize{ch/algebra/linear-algebra:matrici-come-funzione-lineare}}\label{\detokenize{ch/algebra/linear-algebra:math-hs-algebra-linear-problems-linear-fun}}\phantomsection \label{exercise:ch/algebra/linear-algebra-exercise-9}
 
 \begin{sphinxadmonition}{note}{Exercise 6.6.1 (Matrici e scalatura)}
 
@@ -2199,57 +2257,63 @@ Ogni matrice può essere scritta come la somma di una parte simmetrica e una par
 
 \end{sphinxadmonition}
 
+
+\subsection{Soluzione di sistemi lineari}
+\label{\detokenize{ch/algebra/linear-algebra:soluzione-di-sistemi-lineari}}\label{\detokenize{ch/algebra/linear-algebra:math-hs-algebra-linear-problems-linear-sys}}
 \sphinxAtStartPar
 Viene chiesto di stabilire se i seguenti problemi hanno soluzione, di calcolare le eventuali soluzioni, fornire una rappresentazione grafica del problema algebrico, e \sphinxhyphen{} per sistemi con uguale numero di equazioni ed incognite \sphinxhyphen{} calcolare il determinante delle matrici del sistema lineare.
 \begin{enumerate}
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \item {} 
-\sphinxAtStartPar
-Risolvi il sistema:
+\end{enumerate}
 \begin{equation*}
 \begin{split}
    \begin{cases}
    x + y = 4 \\
    \frac{3}{2}x + y = 5
    \end{cases}
-   \end{split}
-\end{equation*}
+\end{split}
+\end{equation*}\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{1}
 \item {} 
-\sphinxAtStartPar
-Risolvi il sistema:
+\end{enumerate}
 \begin{equation*}
 \begin{split}
     \begin{cases}
     x - y = 2 \\
     x + y = -1
     \end{cases}
-    \end{split}
-\end{equation*}
+\end{split}
+\end{equation*}\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{2}
 \item {} 
-\sphinxAtStartPar
-Risolvi il sistema:
+\end{enumerate}
 \begin{equation*}
 \begin{split}
    \begin{cases}
    x + 2y = 5 \\
    2x + 2y = 11
    \end{cases}
-   \end{split}
-\end{equation*}
+\end{split}
+\end{equation*}\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{3}
 \item {} 
-\sphinxAtStartPar
-Risolvi il sistema:
+\end{enumerate}
 \begin{equation*}
 \begin{split}
    \begin{cases}
    x + y = 3 \\
    x - y = 1
    \end{cases}
-   \end{split}
-\end{equation*}
+\end{split}
+\end{equation*}\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{4}
 \item {} 
-\sphinxAtStartPar
-Risolvi il sistema:
+\end{enumerate}
 \begin{equation*}
 \begin{split}
    \begin{cases}
@@ -2257,11 +2321,12 @@ Risolvi il sistema:
    2x - 2y + 2z = 0 \\
    -x + y - z = 0
    \end{cases}
-   \end{split}
-\end{equation*}
+\end{split}
+\end{equation*}\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{5}
 \item {} 
-\sphinxAtStartPar
-Risolvi il sistema:
+\end{enumerate}
 \begin{equation*}
 \begin{split}
    \begin{cases}
@@ -2269,77 +2334,84 @@ Risolvi il sistema:
    x + 2y + z = 4 \\
    x + y + 2z = 6
    \end{cases}
-   \end{split}
-\end{equation*}
+\end{split}
+\end{equation*}\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{6}
 \item {} 
-\sphinxAtStartPar
-Risolvi il sistema:
+\end{enumerate}
 \begin{equation*}
 \begin{split}
    \begin{cases}
    x + y + z = 3 \\
    2x + 2y + z = 8 \\
    \end{cases}
-   \end{split}
-\end{equation*}
+\end{split}
+\end{equation*}\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{7}
 \item {} 
-\sphinxAtStartPar
-Risolvi il sistema:
+\end{enumerate}
 \begin{equation*}
 \begin{split}
    \begin{cases}
    x + y + z = 7 \\
    x + y - z = 3
    \end{cases}
-   \end{split}
-\end{equation*}
+\end{split}
+\end{equation*}\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{8}
 \item {} 
-\sphinxAtStartPar
-Risolvi il sistema:
+\end{enumerate}
 \begin{equation*}
 \begin{split}
    \begin{cases}
    3x + 2y = 6 \\
    x - y = 1
    \end{cases}
-   \end{split}
-\end{equation*}
+\end{split}
+\end{equation*}\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{9}
 \item {} 
-\sphinxAtStartPar
-Risolvi il sistema:
+\end{enumerate}
 \begin{equation*}
 \begin{split}
     \begin{cases}
     x + y = 2 \\
     3x + 2y = 6
     \end{cases}
-    \end{split}
-\end{equation*}
+\end{split}
+\end{equation*}\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{10}
 \item {} 
-\sphinxAtStartPar
-Risolvi il sistema:
+\end{enumerate}
 \begin{equation*}
 \begin{split}
     \begin{cases}
     x - y = 1 \\
     x - 3y + z = 3
     \end{cases}
-    \end{split}
-\end{equation*}
+\end{split}
+\end{equation*}\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{11}
 \item {} 
-\sphinxAtStartPar
-Risolvi il sistema:
+\end{enumerate}
 \begin{equation*}
 \begin{split}
     \begin{cases}
     x + y = 5 \\
     2x - y = 1
     \end{cases}
-    \end{split}
-\end{equation*}
+\end{split}
+\end{equation*}\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{12}
 \item {} 
-\sphinxAtStartPar
-Risolvi il sistema:
+\end{enumerate}
 \begin{equation*}
 \begin{split}
     \begin{cases}
@@ -2347,11 +2419,12 @@ Risolvi il sistema:
     x + y + z = 3 \\
     2x + 2y + z = 4
     \end{cases}
-    \end{split}
-\end{equation*}
+\end{split}
+\end{equation*}\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{13}
 \item {} 
-\sphinxAtStartPar
-Risolvi il sistema:
+\end{enumerate}
 \begin{equation*}
 \begin{split}
     \begin{cases}
@@ -2359,33 +2432,36 @@ Risolvi il sistema:
     2x - 2y + 2z = 10 \\
     3x - y + 3z = -5
     \end{cases}
-    \end{split}
-\end{equation*}
+\end{split}
+\end{equation*}\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{14}
 \item {} 
-\sphinxAtStartPar
-Risolvi il sistema:
+\end{enumerate}
 \begin{equation*}
 \begin{split}
     \begin{cases}
     x + y = 4 \\
     2x + 2y = 8
     \end{cases}
-    \end{split}
-\end{equation*}
+\end{split}
+\end{equation*}\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{15}
 \item {} 
-\sphinxAtStartPar
-Risolvi il sistema:
+\end{enumerate}
 \begin{equation*}
 \begin{split}
     \begin{cases}
     x + 2y = 8 \\
     3x - 4y = -2
     \end{cases}
-    \end{split}
-\end{equation*}
+\end{split}
+\end{equation*}\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{16}
 \item {} 
-\sphinxAtStartPar
-Risolvi il sistema:
+\end{enumerate}
 \begin{equation*}
 \begin{split}
     \begin{cases}
@@ -2393,11 +2469,12 @@ Risolvi il sistema:
     2x + 2y = 6 \\
     x + 3y = 4
     \end{cases}
-    \end{split}
-\end{equation*}
+\end{split}
+\end{equation*}\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{17}
 \item {} 
-\sphinxAtStartPar
-Risolvi il sistema:
+\end{enumerate}
 \begin{equation*}
 \begin{split}
     \begin{cases}
@@ -2405,12 +2482,11 @@ Risolvi il sistema:
     2x - y + z = 2 \\
     -x + y + 2z = 4
     \end{cases}
-    \end{split}
-\end{equation*}
+\end{split}
+\end{equation*}\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{18}
 \item {} 
-\sphinxAtStartPar
-Risolvi il sistema:
-
 \end{enumerate}
 \begin{equation*}
 \begin{split}
@@ -2419,13 +2495,12 @@ Risolvi il sistema:
    x - y + z = 4 \\
    2x + y - z = 7
    \end{cases}
-   \end{split}
+\end{split}
 \end{equation*}\begin{enumerate}
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \setcounter{enumi}{19}
 \item {} 
-\sphinxAtStartPar
-Risolvi il sistema:
+\end{enumerate}
 \begin{equation*}
 \begin{split}
     \begin{cases}
@@ -2433,10 +2508,8 @@ Risolvi il sistema:
     2x + 4y + 6z = 12 \\
     -x - 2y - 3z = -6
     \end{cases}
-    \end{split}
+\end{split}
 \end{equation*}
-\end{enumerate}
-
 \sphinxAtStartPar
 Viene chiesto di ripetere la discussione degli esercizi precedenti, al variare dei parametri nel sistemi.
 \begin{enumerate}
@@ -2449,7 +2522,7 @@ Viene chiesto di ripetere la discussione degli esercizi precedenti, al variare d
    x + ky = 2 \\
    x - 2y = 1
    \end{cases}
-   \end{split}
+\end{split}
 \end{equation*}\begin{enumerate}
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \setcounter{enumi}{1}
@@ -2461,7 +2534,7 @@ Viene chiesto di ripetere la discussione degli esercizi precedenti, al variare d
    x + y = b \\
    ax + y = 2
    \end{cases}
-   \end{split}
+\end{split}
 \end{equation*}\begin{enumerate}
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \setcounter{enumi}{2}
@@ -2474,7 +2547,7 @@ Viene chiesto di ripetere la discussione degli esercizi precedenti, al variare d
    mx + 2y + z = 4 \\
    x + y - z = 1
    \end{cases}
-   \end{split}
+\end{split}
 \end{equation*}\begin{enumerate}
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \setcounter{enumi}{3}
@@ -2486,21 +2559,21 @@ Viene chiesto di ripetere la discussione degli esercizi precedenti, al variare d
    kx + y = 4 \\
    2x + ky = 3 p
    \end{cases}
-   \end{split}
+\end{split}
 \end{equation*}\begin{enumerate}
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \setcounter{enumi}{4}
-\item {} \begin{equation*}
+\item {} 
+\end{enumerate}
+\begin{equation*}
 \begin{split}
    \begin{cases}
    px + y      = 1 \\
    2x + y +  z = 2 \\
         y + qz = p
    \end{cases}
-   \end{split}
+\end{split}
 \end{equation*}
-\end{enumerate}
-
 \sphinxAtStartPar
 \sphinxstylestrong{todo} \sphinxstyleemphasis{Qualche esercizio con disequazioni}
 
@@ -2550,7 +2623,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-04 dic 2024
+05 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -2664,7 +2737,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-04 dic 2024
+05 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -2938,7 +3011,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-04 dic 2024
+05 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3146,7 +3219,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-04 dic 2024
+05 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3588,7 +3661,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-04 dic 2024
+05 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3786,7 +3859,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-04 dic 2024
+05 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3935,7 +4008,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-04 dic 2024
+05 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -5292,7 +5365,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-04 dic 2024
+05 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -5433,7 +5506,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-04 dic 2024
+05 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -5535,7 +5608,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-04 dic 2024
+05 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -5698,7 +5771,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-04 dic 2024
+05 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -6580,7 +6653,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-04 dic 2024
+05 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -6667,7 +6740,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-04 dic 2024
+05 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -8392,7 +8465,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-04 dic 2024
+05 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -8403,7 +8476,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-11 min read
+12 min read
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -8785,17 +8858,153 @@ In questa sezione vengono risolti alcuni problemi governati dalle equazioni diff
 \subsubsection*{Esempio \sphinxhyphen{} Temperatura di un corpo, soggetto a convezione.}
 
 \sphinxAtStartPar
-\sphinxstylestrong{Temperatura costante, \(T^e\)}
+L’equazione ordinaria del primo ordine
+\begin{equation*}
+\begin{split}m x \dot{T}(t) + h T(t) = h T^e(t) \qquad , \qquad t \ge 0\end{split}
+\end{equation*}
+\sphinxAtStartPar
+rappresenta un bilancio di energia interna e governa la temperatura \(T(t)\) di un corpo di massa \(m\), e capacità termica \(c\) soggetto a convezione con coefficiente \(h\) con un ambiente a temperatura \(T^e(t)\). Tutti i parametri del sistema e la temperatura iniziale del corpo \(T(0) = T_0\) sono noti. Si vuole determinare l’evoluzione della temperatura \(T(t)\) del corpo, in risposta a diversi andamenti della temperatura dell’ambiente esterno.
+L’equazione è un’equazione ordinaria lineare del primo ordine a coefficienti costanti. La soluzione dell’equazione può essere scritta come somma della soluzione generale dell’equazione omogenea \(T_o(t)\) e di una soluzione particolare dell’equazione completa, \(T_p(t)\)
+\begin{equation*}
+\begin{split}T(t) = T_{o}(t) + T_p(t) \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{Equazione omogenea.} L’equazione omogenea,
+\begin{equation*}
+\begin{split}m c \dot{T}_o + h T_o = 0 \qquad \rightarrow \qquad T_o(t) = C e^{-\frac{h}{mc}t} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+è indipendente dalla forzante esterna, qui rappresentata dalla temperatura dell’ambiente \(T_e(t)\).
 
 \sphinxAtStartPar
-\sphinxstylestrong{Temperatura crescente linearmente, \(T^e(t) = T_0 + G \, t\)}
+\sphinxstylestrong{Temperatura costante, \(T^e\).} La soluzione particolare dell’equazione con una forzante costante è una soluzione costante, \(T_p(t) = T_e\). La soluzione generale ha quindi l’espressione
+\begin{equation*}
+\begin{split} T(t) = T_e + C e^{-\frac{h}{mc}t} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e la costante di integrazione \(C\) viene determinata con la condizione iniziale
+\begin{equation*}
+\begin{split}T_0 = T(0) = T_e + C e^{-\frac{h}{mc}t} \big|_{t=0} = T_e + C \qquad \rightarrow \qquad C = T_0 - T_e \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+La soluzione del problema è quindi
+\begin{equation*}
+\begin{split}
+  T(t) = T_e + ( T_0 - T_e )  e^{-\frac{ht}{mc}} \ .
+\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{Temperatura crescente linearmente, \(T^e(t) = T_a + G \, t\).} Con una forzante polinomiale di grado 1 nella variabile indipendente \(t\), si cerca una soluzione particolare polinomiale dello stesso ordine, \(T_p(t) = a + b t\). I coefficienti \(a\), \(b\) vengono calcolati inserendo questa espressione nell’equazione differenziale,
+\begin{equation*}
+\begin{split}m c b + h (a+bt) = h(T_a + Gt ) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e uguagliando i termini dello stesso ordine nella variabile indipendente,
+\begin{equation*}
+\begin{split}\begin{cases}
+t: \ h b = h G            \\
+1: \ m c b + h a = h T_a
+\end{cases}
+\qquad \rightarrow \qquad
+\begin{cases}
+ b = G \\
+ a = T_a - \frac{mc}{h} G \ .
+\end{cases}
+\end{split}
+\end{equation*}
+\sphinxAtStartPar
+La soluzione generale assume la forma
+\begin{equation*}
+\begin{split}T(t) = T_a - \frac{mc}{h}G + G t + C e^{-\frac{h t}{m c}} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e la costante di integrazione \(C\) viene calcolata con la condizione iniziale
+\begin{equation*}
+\begin{split}T_0 = T(0) = T_a - \frac{mc}{h} G + C \qquad \rightarrow \qquad C = T_0 - T_a + \frac{mc}{h} G \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+La soluzione del problema è quindi
+\begin{equation*}
+\begin{split}
+  T(t) = T_a + G t - \frac{mc}{h}G + \left( T_0 - T_a + \frac{mc}{h} G \right) e^{-\frac{h t}{m c}} \ .
+\end{split}
+\end{equation*}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+La somma dei primi 3 termini è la soluzione della particolare, l’ultimo termine è la soluzione dell’equazione omogenea;
+
+\item {} 
+\sphinxAtStartPar
+la soluzione dell’equazione omogenea tende a zero per \(t \rightarrow \infty\).
+
+\item {} 
+\sphinxAtStartPar
+per \(t \rightarrow \infty\), c’è una differenza costante tra la temperatura dell’ambiente \(T^e(t) = T_a + Gt\) e la temperatura \(T(t)\) del corpo, \(T(t) - T^e(t) = -\frac{mc}{h} G\).
+
+\end{itemize}
 
 \sphinxAtStartPar
-\sphinxstylestrong{Temperatura con andamento periodico, \(T^e(t) = T_0 + \Delta T \sin(\Omega t) \, t\)}
-\subsubsection*{Esempio \sphinxhyphen{} Sistema massa\sphinxhyphen{}molla\sphinxhyphen{}smorzatore}
+\sphinxstylestrong{Temperatura con andamento periodico, \(T^e(t) = T_a + \Delta T \sin(\Omega t)\).} Data una forzante somma di un termine costante e di un termine armonico, si cerca una soluzione particolare come somma di un termine costante e delle funzioni armoniche di seno e coseno, \(T_p(t) = a + b \cos(\Omega t) + c \sin(\Omega t)\). I coefficienti \(a\), \(b\), \(c\) vengono calcolati inserendo questa espressione nell’equazione differenziale,
+\begin{equation*}
+\begin{split} m c \Omega \left( - b \sin(\Omega t) + c \cos(\Omega t) \right) + h \left( a + b \cos(\Omega t) + c \sin(\Omega t) \right) = h \left(  T_a + \Delta T \sin(\Omega t) \right) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e uguagliando i termini omogenei nella variabile indipendente \(t\),
+\begin{equation*}
+\begin{split}\begin{cases}
+\cos \Omega t & : \ \quad  m c \Omega c + h b = 0 \\
+\sin \Omega t & : \ - m c \Omega b + h c = h \Delta T \\
+            1 & : \ \quad h a = h T_a \\
+\end{cases}
+\qquad \rightarrow \qquad
+\begin{cases}
+ a = T_a \\
+ b = -\frac{mc\Omega}{(m c \Omega)^2 + h^2} h \Delta T\\
+ c =  \frac{h}{(m c \Omega)^2 + h^2} h \Delta T \\
+\end{cases}
+\end{split}
+\end{equation*}
+\sphinxAtStartPar
+La soluzione generale assume la forma
+\begin{equation*}
+\begin{split}T(t) = T_a + b \cos(\Omega t) + c \sin(\Omega t) + C e^{-\frac{ht}{mc}} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e la costante di integrazione \(C\) viene calcolata con la condizione iniziale
+\begin{equation*}
+\begin{split}T_0 = T(0) = T_a + b + C \qquad \rightarrow \qquad C = T_0 - T_a - b \ . \end{split}
+\end{equation*}
+\sphinxAtStartPar
+La soluzione del problema è quindi
+\begin{equation*}
+\begin{split}\begin{aligned}
+  T(t) 
+  & = T_a + b \cos(\Omega t) + c \sin(\Omega t) + (T_0 - T_a - b) e^{-\frac{ht}{mc}} = \\
+  & = T_a -\frac{\frac{mc\Omega}{h}}{\left(\frac{m c \Omega}{h}\right)^2 + 1} \Delta T \cos(\Omega t) + 
+           \frac{ 1      }{\left(\frac{m c \Omega}{h}\right)^2 + 1} \Delta T\sin(\Omega t) + \left(T_0 - T_a + \frac{\frac{mc\Omega}{h}}{\left(\frac{m c \Omega}{h}\right)^2 + 1} \right) e^{-\frac{ht}{mc}} = \\
+  & = T_a + \Delta T \sin\left( \Omega t - \varphi \right) + \left( T_0 - T_a + \frac{\frac{mc\Omega}{h}}{\left(\frac{m c \Omega}{h}\right)^2 + 1} \right) e^{-\frac{ht}{mc}} \ ,
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e può essere espressa in termini di un ritardo di fase \(\varphi\), rispetto alla temperatura dell’ambiente esterno \(T_e\)
+\begin{equation*}
+\begin{split}\cos \varphi = \frac{1}{\left(\frac{m c \Omega}{h}\right)^2 + 1} \qquad , \qquad \sin \varphi = \frac{\frac{mc\Omega}{h}}{\left(\frac{m c \Omega}{h}\right)^2 + 1}\end{split}
+\end{equation*}\subsubsection*{Esempio \sphinxhyphen{} Sistema massa\sphinxhyphen{}molla\sphinxhyphen{}smorzatore}
 
 \sphinxAtStartPar
 \sphinxstylestrong{todo} \sphinxstyleemphasis{definire il sistema adimensionale e verificare la risposta in funzione del coefficiente di smorzamento del sistema; definire smorzamento critico, e sistemi sovra\sphinxhyphen{} e sotto\sphinxhyphen{}smorzati; indagare il fenomeno della} \sphinxstylestrong{risonanza}
+
+\sphinxAtStartPar
+L’equazione
+\begin{equation*}
+\begin{split}m\ddot{x} + c \dot{x} + k x = f^e(t) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+può essere riscritta introducendo la frequenza naturale \(\omega_n := \sqrt{\frac{k}{m}}\) e il coefficiente di smorzamento \(\xi:= \frac{c}{2 m}\frac{\omega_n}\)
+\begin{equation*}
+\begin{split}\ddot{x} + 2 \xi \omega_n \dot{x} + \omega_n^2 x = \frac{f^e(t)}{m} \ ,\end{split}
+\end{equation*}
+
 
 \sphinxAtStartPar
 \sphinxstylestrong{Moto libero \sphinxhyphen{} forzante nulla, \(f^e = 0\)}
@@ -8968,7 +9177,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-04 dic 2024
+05 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -9072,7 +9281,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-04 dic 2024
+05 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -9502,7 +9711,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-04 dic 2024
+05 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
