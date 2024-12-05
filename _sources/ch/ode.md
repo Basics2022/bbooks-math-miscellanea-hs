@@ -280,6 +280,22 @@ Nel caso in cui la soluzione particolare abbia la forma di una delle soluzioni d
 In questa sezione vengono risolti alcuni problemi governati dalle equazioni differenziali presentate in precedenza come [esempi](ode-hs:types:linear-const:ex) di equazioni differenziali ordinarie lineari a coefficienti costanti, applicando il [metodo di soluzione generale](ode-hs:types:linear-const:sol) per questo tipo di equazioni.
 
 ```{dropdown} Esempio - Temperatura di un corpo, soggetto a convezione.
+L'equazione ordinaria del primo ordine
+
+$$m x \dot{T}(t) + h T(t) = h T_e(t) \qquad , \qquad t \ge 0$$
+
+rappresenta un bilancio di energia interna e governa la temperatura $T(t)$ di un corpo di massa $m$, e capacità termica $c$ soggetto a convezione con coefficiente $h$ con un ambiente a temperatura $T_e(t)$. Tutti i parametri del sistema e la temperatura iniziale del corpo $T(0) = T_0$ sono noti. Si vuole determinare l'evoluzione della temperatura $T(t)$ del corpo, in risposta a diversi andamenti della temperatura dell'ambiente esterno.
+
+L'equazione è un'equazione ordinaria lineare del primo ordine a coefficienti costanti. La soluzione ha la forma
+
+  $$T(t) = T_{o}(t) + T_p(t) \ ,$$
+
+essendo $T_o(t)$ la soluzione dell'equazione omogenea, $T_p(t)$ una soluzione particolare indipendente dell'equazione completa. L'equazione omogenea,
+
+$$m c \dot{T}_o + h T_o = 0 \qquad \rightarrow \qquad T_o(t) = C e^{-\frac{h}{mc}t} \ ,$$
+
+è indipendente dalla forzante esterna, qui rappresentata dalla temperatura dell'ambiente $T_e(t)$.
+
 **Temperatura costante, $T^e$**
 
 **Temperatura crescente linearmente, $T^e(t) = T_0 + G \, t$**
