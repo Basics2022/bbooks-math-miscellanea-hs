@@ -391,8 +391,6 @@ L'equazione
 ```
 
 ```{dropdown} Esempio - Sistema massa-molla-smorzatore
-:open:
-
 **todo** *definire il sistema adimensionale e verificare la risposta in funzione del coefficiente di smorzamento del sistema; definire smorzamento critico, e sistemi sovra- e sotto-smorzati; indagare il fenomeno della* **risonanza**
 
 L'equazione
@@ -444,6 +442,66 @@ $$\tilde{x}'' + \frac{c T}{m} \tilde{x}' + \frac{k T^2}{m} \tilde{x} = \frac{F T
 
 **Forzante armonica, $f^e(t) = f_0 + \Delta f \sin(\Omega t)$**
 ```
+
+```{dropdown} Sistema del secondo ordine sotto-smorzato, con forzante armonica
+
+Si vuole studiare la soluzione dell'equazione del secondo ordine
+
+$$\ddot{x} + 2 \xi \omega_n \dot{x} + \omega_n^2 x = \frac{f^e(t)}{m} \ ,$$
+
+soggetta alla forzante armonica $f^e(t) = F \sin \Omega t$, al variare della frequenza $\Omega$ della forzante. Si cerca una soluzione particolare dell'equazione completa nella forma $x(t) = a \cos(\Omega t) + b \sin(\Omega t)$. Inserendo questa espressione nell'equazione,
+
+$$-\Omega^2 ( a \cos \Omega t + b \sin \Omega t) + 2 \xi \omega_n \Omega ( -a \sin \Omega t + b \cos \Omega t) + \omega_n^2 (a \cos \Omega t + b \sin \Omega t) = \frac{F}{m} \sin \Omega t \ ,$$
+
+si calcolano i coefficienti $a$, $b$ uguagliando i termini omogenei
+
+$$\begin{cases}
+\cos (\Omega t) & : \  (-\Omega^2 + \omega_n^2) a + 2 \xi \omega_n \Omega b = 0 \\
+\sin (\Omega t) & : \ -2 \xi \omega_n \Omega a + (-\Omega^2 + \omega_n^2) b = \frac{F}{m} \\
+\end{cases}
+\qquad \rightarrow \qquad
+\begin{cases}
+ a = \frac{- 2 \xi \omega_n \Omega}{(-\Omega^2 + \omega_n^2)^2 + (2\xi \omega_n \Omega)^2} \frac{F}{m} \\
+ b = \frac{-\Omega^2 + \omega_n^2}{(-\Omega^2 + \omega_n^2)^2 + (2\xi \omega_n \Omega)^2} \frac{F}{m} \ .\\
+\end{cases} 
+$$
+
+I coefficienti $a$, $b$ possono essere riscritti in funzione di un **ritardo di fase** $\varphi(\Omega)$ e diun **guadagno** $G(\Omega) = \frac{1}{\sqrt{(-\Omega^2+\omega_n^2)^2 + (2 \xi \omega_n \Omega)^2}}$
+
+$$
+\begin{cases}
+ a =       - \sin \varphi(\Omega) \, G(\Omega) \, \frac{F}{m} \\
+ b = \quad   \cos \varphi(\Omega) \, G(\Omega) \, \frac{F}{m} \ .\\
+\end{cases} 
+$$
+
+così da ricavare la soluzione
+
+$$x_p(t)
+  = \frac{F}{m} \, G(\Omega) \, \left[ \sin(\Omega t) \cos \varphi - \cos(\Omega t) \sin \varphi(\Omega) \right] 
+  = \frac{F}{m} \, G(\Omega) \, \sin(\Omega t - \varphi(\Omega)) \ .
+$$
+
+Sia il guadagno sia il ritardo di fase dipendono dalla frequenza della forzante, $\Omega$.
+
+**Studio di funzione di $G(\Omega)$.** La derivata del guadagno rispetto alla frequenza della forzante vale,
+
+$$G'(\Omega) = -\frac{1}{2} \frac{-2\Omega(-\Omega^2 + \omega_n^2) + 2(2\xi\omega_n)^2 \Omega}{\left[ (-\Omega^2+\omega_n^2)^2 + (2 \xi \omega_n \Omega)^2 \right]^{\frac{3}{2}} } \ .$$
+
+La derivata si annulla per $\Omega = 0$ e - quando esiste, cioè per valori di smorzamento "sufficientemente ridotti", $\xi \le \frac{1}{2}$ - per la frequenza di *risonanza* $\Omega = \Omega_f$,
+
+$$\Omega_f^2 = \omega_n^2 - 4 (\xi \omega_n)^2 = \omega_n^2 \left( 1 - 4 \xi^2 \right) \ .$$
+
+Nel caso in cui esista una risonanza, la massima ampiezza della risposta è
+
+$$\begin{aligned}
+G(\Omega_f) 
+  & = \frac{1}{\sqrt{(-\Omega_f^2+\omega_n^2)^2 + (2\xi \omega_n \Omega_f)^2}} = \\
+  & = \frac{1}{\sqrt{(4 \xi^2 \omega_n^2)^2 + 4 \xi^2 \omega_n^4 (1-4 \xi^2)  }} = \frac{1}{2 \xi \omega_n^2} \ .
+\end{aligned}$$
+
+```
+
 
 ```{dropdown} Esempio - Circuito RLC. **todo**
 ```
