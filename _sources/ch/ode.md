@@ -391,8 +391,6 @@ L'equazione
 ```
 
 ```{dropdown} Esempio - Sistema massa-molla-smorzatore
-:open:
-
 **todo** *definire il sistema adimensionale e verificare la risposta in funzione del coefficiente di smorzamento del sistema; definire smorzamento critico, e sistemi sovra- e sotto-smorzati; indagare il fenomeno della* **risonanza**
 
 L'equazione
@@ -444,6 +442,21 @@ $$\tilde{x}'' + \frac{c T}{m} \tilde{x}' + \frac{k T^2}{m} \tilde{x} = \frac{F T
 
 **Forzante armonica, $f^e(t) = f_0 + \Delta f \sin(\Omega t)$**
 ```
+
+```{dropdown} Sistema del secondo ordine sotto-smorzato, con forzante armonica
+:open:
+
+Si vuole studiare la soluzione dell'equazione del secondo ordine
+
+$$\ddot{x} + 2 \xi \omega_n \dot{x} + \omega_n^2 x = \frac{f^e(t)}{m} \ ,$$
+
+soggetta alla forzante armonica $f^e(t) = F \sin \Omega t$, al variare della frequenza $\Omega$ della forzante. Si cerca una soluzione particolare dell'equazione completa nella forma $x(t) = a \cos(\Omega t) + b \sin(\Omega t)$. Inserendo questa espressione nell'equazione,
+
+$$-\Omega^2 ( a \cos \Omega t + b \sin \Omega t) + 2 \xi \omega_n \Omega ( -a \sin \Omega t + b \cos \Omega t) + \omega_n^2 (a \cos \Omega t + b \sin \Omegaa t) = \frac{F}{m} \sin \Omega t$$
+
+
+```
+
 
 ```{dropdown} Esempio - Circuito RLC. **todo**
 ```
