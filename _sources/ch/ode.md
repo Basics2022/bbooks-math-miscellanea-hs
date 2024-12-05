@@ -280,6 +280,8 @@ Nel caso in cui la soluzione particolare abbia la forma di una delle soluzioni d
 In questa sezione vengono risolti alcuni problemi governati dalle equazioni differenziali presentate in precedenza come [esempi](ode-hs:types:linear-const:ex) di equazioni differenziali ordinarie lineari a coefficienti costanti, applicando il [metodo di soluzione generale](ode-hs:types:linear-const:sol) per questo tipo di equazioni.
 
 ```{dropdown} Esempio - Temperatura di un corpo, soggetto a convezione.
+:open:
+
 L'equazione ordinaria del primo ordine
 
 $$m x \dot{T}(t) + h T(t) = h T^e(t) \qquad , \qquad t \ge 0$$
