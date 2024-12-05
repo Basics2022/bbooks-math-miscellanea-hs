@@ -419,7 +419,7 @@ $$s^2 + 2 \xi \omega_n + \omega_n^2 = 0 \qquad \rightarrow \qquad s_{1,2} = -\xi
 
    $$s_1 = s_2 = - \omega_n
    \qquad \rightarrow \qquad
-   x(t) = A e^{-\omega_n t} + B t e^{-\omega_n t}
+   x(t) = A e^{-\omega_n t} + B \, t \, e^{-\omega_n t}
    $$
 
 
