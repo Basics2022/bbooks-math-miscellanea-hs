@@ -471,8 +471,8 @@ I coefficienti $a$, $b$ possono essere riscritti in funzione di un **ritardo di 
 
 $$
 \begin{cases}
- a = - \sin \varphi(\Omega) \, G(\Omega) \, \frac{F}{m} \\
- b =   \cos \varphi(\Omega) \, G(\Omega) \, \frac{F}{m} \ .\\
+ a =       - \sin \varphi(\Omega) \, G(\Omega) \, \frac{F}{m} \\
+ b = \quad   \cos \varphi(\Omega) \, G(\Omega) \, \frac{F}{m} \ .\\
 \end{cases} 
 $$
 
@@ -482,6 +482,8 @@ $$x_p(t)
   = \frac{F}{m} \, G(\Omega) \, \left[ \sin(\Omega t) \cos \varphi - \cos(\Omega t) \sin \varphi(\Omega) \right] 
   = \frac{F}{m} \, G(\Omega) \, \sin(\Omega t - \varphi(\Omega)) \ .
 $$
+
+Sia il guadagno sia il ritardo di fase dipendono dalla frequenza della forzante, $\Omega$.
 
 ```
 
