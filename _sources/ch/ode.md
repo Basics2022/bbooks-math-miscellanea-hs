@@ -346,17 +346,24 @@ $$
 - la soluzione dell'equazione omogenea tende a zero per $t \rightarrow \infty$. 
 - per $t \rightarrow \infty$, c'è una differenza costante tra la temperatura dell'ambiente $T^e(t) = T_a + Gt$ e la temperatura $T(t)$ del corpo, $T(t) - T^e(t) = -\frac{mc}{h} G$.
 
-**Temperatura con andamento periodico, $T^e(t) = T_0 + \Delta T \sin(\Omega t)$.** Data una forzante somma di un termine costante e di un termine armonico, si cerca una soluzione particolare come somma di un termine costante e delle funzioni armoniche di seno e coseno, $T_p(t) = a + b \cos(\Omega t) + c \sin(\Omega t)$. I coefficienti $a$, $b$, $c$ vengono calcolati inserendo questa espressione nell'equazione differenziale,
+**Temperatura con andamento periodico, $T^e(t) = T_a + \Delta T \sin(\Omega t)$.** Data una forzante somma di un termine costante e di un termine armonico, si cerca una soluzione particolare come somma di un termine costante e delle funzioni armoniche di seno e coseno, $T_p(t) = a + b \cos(\Omega t) + c \sin(\Omega t)$. I coefficienti $a$, $b$, $c$ vengono calcolati inserendo questa espressione nell'equazione differenziale,
 
-$$ m c \Omega \left( - b \sin(\Omega t) + c \cos(\Omega t) \right) + h \left( a + b \cos(\Omega t) + c \sin(\Omega t) \right) = h \left(  T_0 + \Delta T \sin(\Omega t) \right) \ ,$$
+$$ m c \Omega \left( - b \sin(\Omega t) + c \cos(\Omega t) \right) + h \left( a + b \cos(\Omega t) + c \sin(\Omega t) \right) = h \left(  T_a + \Delta T \sin(\Omega t) \right) \ ,$$
 
 e uguagliando i termini omogenei nella variabile indipendente $t$,
 
 $$\begin{cases}
-\cos \Omega t & : \   m c \Omega c + h b = 0 \\
+\cos \Omega t & : \ \qquad  m c \Omega c + h b = 0 \\
 \sin \Omega t & : \ - m c \Omega b + h c = h \Delta T \\
-            1 & : \ h a = h T_0 \\
-\end{cases}$$
+            1 & : \ \qquad h a = h T_a \\
+\end{cases}
+\qquad \rightarrow \qquad
+\begin{cases}
+ a = T_a \\
+ b = -\frac{mc\Omega}{(m c \Omega)^2 + h^2} h \Delta T\\
+ c =  \frac{c}{(m c \Omega)^2 + h^2} h \Delta T \\
+\end{cases}
+$$
 
 ```
 
