@@ -307,7 +307,7 @@ $$T_0 = T(0) = T_e + C e^{-\frac{h}{mc}t} \big|_{t=0} = T_e + C \qquad \rightarr
 
 La soluzione del problema è quindi
 
-$$T(t) = T_e + ( T_0 - T_e ) \left( 1 - e^{-\frac{ht}{mc} \right) \ .$$
+$$T(t) = T_e + ( T_0 - T_e ) \left( 1 - e^{-\frac{ht}{mc}} \right) \ .$$
 
 **Temperatura crescente linearmente, $T^e(t) = T_0 + G \, t$.**
 
