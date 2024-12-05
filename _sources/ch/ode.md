@@ -280,7 +280,6 @@ Nel caso in cui la soluzione particolare abbia la forma di una delle soluzioni d
 In questa sezione vengono risolti alcuni problemi governati dalle equazioni differenziali presentate in precedenza come [esempi](ode-hs:types:linear-const:ex) di equazioni differenziali ordinarie lineari a coefficienti costanti, applicando il [metodo di soluzione generale](ode-hs:types:linear-const:sol) per questo tipo di equazioni.
 
 ```{dropdown} Esempio - Temperatura di un corpo, soggetto a convezione.
-:open:
 
 L'equazione ordinaria del primo ordine
 
@@ -387,7 +386,7 @@ e può essere espressa in termini di un ritardo di fase $\varphi$, rispetto alla
 
 $$\cos \varphi = \frac{1}{\left(\frac{m c \Omega}{h}\right)^2 + 1} \qquad , \qquad \sin \varphi = \frac{\frac{mc\Omega}{h}}{\left(\frac{m c \Omega}{h}\right)^2 + 1}$$
 
-
+L'equazione 
 
 ```
 
@@ -400,7 +399,7 @@ L'equazione
 
 $$m\ddot{x} + c \dot{x} + k x = f^e(t) \ ,$$
 
-può essere riscritta introducendo la frequenza naturale $\omega_n := \sqrt{\frac{k}{m}}$ e il coefficiente di smorzamento $\xi:= \frac{c}{2 m}\frac{1}{\omega_n} = \frac{c}{2 \sqrt{m k}}$,
+può essere riscritta introducendo la **frequenza naturale** $\omega_n := \sqrt{\frac{k}{m}}$ e il **coefficiente di smorzamento** $\xi:= \frac{c}{2 m}\frac{1}{\omega_n} = \frac{c}{2 \sqrt{m k}}$,
 
 $$\ddot{x} + 2 \xi \omega_n \dot{x} + \omega_n^2 x = \frac{f^e(t)}{m} \ ,$$
 
