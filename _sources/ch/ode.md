@@ -487,11 +487,11 @@ Sia il guadagno sia il ritardo di fase dipendono dalla frequenza della forzante,
 
 **Studio di funzione di $G(\Omega)$.** La derivata del guadagno rispetto alla frequenza della forzante vale,
 
-$$G'(\Omega) = -\frac{1}{2} \frac{-2\Omega(-\Omega^2 + \omega_n^2) + 2(2\xi\omega_n)^2 \Omega}{\sqrt[3]{(-\Omega^2+\omega_n^2)^2 + (2 \xi \omega_n \Omega)^2}} \ .$$
+$$G'(\Omega) = -\frac{1}{2} \frac{-2\Omega(-\Omega^2 + \omega_n^2) + 2(2\xi\omega_n)^2 \Omega}{\left[ (-\Omega^2+\omega_n^2)^2 + (2 \xi \omega_n \Omega)^2]^{\frac{3}{2}} } \ .$$
 
-La derivata si annulla per $\Omega = 0$ e, quando esiste, nel valore
+La derivata si annulla per $\Omega = 0$ e - quando esiste, cioè per $\xi \le \frac{1}{2}$ - per la frequenza di *risonanza* $\Omega = \Omega_f$,
 
-$$\Omega^2 = \omega_n^2 - 4 (\xi \omega_n)^2 = \omega_n^2 \left( 1 - 4 \xi^2 \right)$$
+$$\Omega_f^2 = \omega_n^2 - 4 (\xi \omega_n)^2 = \omega_n^2 \left( 1 - 4 \xi^2 \right) \ .$$
 
 
 ```
