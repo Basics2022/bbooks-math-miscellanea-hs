@@ -489,10 +489,16 @@ Sia il guadagno sia il ritardo di fase dipendono dalla frequenza della forzante,
 
 $$G'(\Omega) = -\frac{1}{2} \frac{-2\Omega(-\Omega^2 + \omega_n^2) + 2(2\xi\omega_n)^2 \Omega}{\left[ (-\Omega^2+\omega_n^2)^2 + (2 \xi \omega_n \Omega)^2 \right]^{\frac{3}{2}} } \ .$$
 
-La derivata si annulla per $\Omega = 0$ e - quando esiste, cioè per $\xi \le \frac{1}{2}$ - per la frequenza di *risonanza* $\Omega = \Omega_f$,
+La derivata si annulla per $\Omega = 0$ e - quando esiste, cioè per valori di smorzamento "sufficientemente ridotti", $\xi \le \frac{1}{2}$ - per la frequenza di *risonanza* $\Omega = \Omega_f$,
 
 $$\Omega_f^2 = \omega_n^2 - 4 (\xi \omega_n)^2 = \omega_n^2 \left( 1 - 4 \xi^2 \right) \ .$$
 
+Nel caso in cui esista una risonanza, la massima ampiezza della risposta è
+
+$$G(\Omega_f) 
+  = \frac{1}{\sqrt{(-\Omega_f^2+\omega_n^2) + (2\xi \omega_n \Omega_f)^2}} 
+  =
+$$
 
 ```
 
