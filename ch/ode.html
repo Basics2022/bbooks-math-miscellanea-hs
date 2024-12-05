@@ -935,7 +935,17 @@ Esempio - Sistema massa-molla-smorzatore<div class="sd-summary-down docutils">
 \[m\ddot{x} + c \dot{x} + k x = f^e(t) \ ,\]</div>
 <p class="sd-card-text">compare in molte applicazioni con coefficienti <span class="math notranslate nohighlight">\(m\)</span>, <span class="math notranslate nohighlight">\(c\)</span>, <span class="math notranslate nohighlight">\(k\)</span> associati a grandezze positive: in questo caso, l’equazione può essere riscritta introducendo la <strong>frequenza naturale</strong> <span class="math notranslate nohighlight">\(\omega_n := \sqrt{\frac{k}{m}}\)</span> e il <strong>coefficiente di smorzamento</strong> <span class="math notranslate nohighlight">\(\xi:= \frac{c}{2 m}\frac{1}{\omega_n} = \frac{c}{2 \sqrt{m k}}\)</span>,</p>
 <div class="math notranslate nohighlight">
-\[\ddot{x} + 2 \xi \omega_n \dot{x} + \omega_n^2 x = \frac{f^e(t)}{m} \ ,\]</div>
+\[\ddot{x} + 2 \xi \omega_n \dot{x} + \omega_n^2 x = \frac{f^e(t)}{m} \ .\]</div>
+<p class="sd-card-text"><strong>Equazione omogenea.</strong> Si distinguono quindi 3 possibili casi per la soluzione dell’equazione omogenea,</p>
+<div class="math notranslate nohighlight">
+\[\ddot{x} + 2 \xi \omega_n \dot{x} + \omega_n^2 x = 0 \ ,\]</div>
+<div class="math notranslate nohighlight">
+\[s^2 + 2 \xi \omega_n + \omega_n^2 = 0 \qquad \rightarrow \qquad s_{1,2} = -\xi \omega_n \mp \omega_n \sqrt{\xi^2 - 1}\]</div>
+<ol class="arabic simple">
+<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(0 \le \xi &lt; 1\)</span>:</p></li>
+<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(\xi = 1\)</span>:</p></li>
+<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(\xi &gt; 1\)</span>:</p></li>
+</ol>
 <!--
 può essere scritta in forma adimensionale, mettendo in evidenza una lunghezza di riferimento $x(t) = X \tilde{x}(t)$, e un tempo di riferimento $t = T \tau$,
 

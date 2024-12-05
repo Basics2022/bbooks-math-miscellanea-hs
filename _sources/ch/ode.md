@@ -401,7 +401,17 @@ $$m\ddot{x} + c \dot{x} + k x = f^e(t) \ ,$$
 
 compare in molte applicazioni con coefficienti $m$, $c$, $k$ associati a grandezze positive: in questo caso, l'equazione può essere riscritta introducendo la **frequenza naturale** $\omega_n := \sqrt{\frac{k}{m}}$ e il **coefficiente di smorzamento** $\xi:= \frac{c}{2 m}\frac{1}{\omega_n} = \frac{c}{2 \sqrt{m k}}$,
 
-$$\ddot{x} + 2 \xi \omega_n \dot{x} + \omega_n^2 x = \frac{f^e(t)}{m} \ ,$$
+$$\ddot{x} + 2 \xi \omega_n \dot{x} + \omega_n^2 x = \frac{f^e(t)}{m} \ .$$
+
+**Equazione omogenea.** Si distinguono quindi 3 possibili casi per la soluzione dell'equazione omogenea,
+
+$$\ddot{x} + 2 \xi \omega_n \dot{x} + \omega_n^2 x = 0 \ ,$$
+
+$$s^2 + 2 \xi \omega_n + \omega_n^2 = 0 \qquad \rightarrow \qquad s_{1,2} = -\xi \omega_n \mp \omega_n \sqrt{\xi^2 - 1}$$
+
+1. $0 \le \xi < 1$:
+2. $\xi = 1$:
+3. $\xi > 1$:
 
 <!--
 può essere scritta in forma adimensionale, mettendo in evidenza una lunghezza di riferimento $x(t) = X \tilde{x}(t)$, e un tempo di riferimento $t = T \tau$,
