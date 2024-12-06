@@ -29,9 +29,9 @@ Senza fare uso di nessun concetto di calcolo differenziale o integrale, nel prim
 
 [**Funzioni trigonometriche**](math-hs:trigonometry), *Introductio  vol.1 cap.8*.
 
-[**Fattorizzazione di polinomi**](math-hs:precalculus:polynomials), **todo**
+[**Fattorizzazione di polinomi**](math-hs:precalculus:polynomials)
 
-[**Algebra sui numeri complessi**] **todo** *riferimento all'algebra dei numeri complessi*
+[**Algebra sui numeri complessi**](math-hs:algebra:complex) 
 
 ```
 
