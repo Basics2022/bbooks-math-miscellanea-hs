@@ -7,4 +7,4 @@
 (math-hs:algebra:set:link)=
 # Algebra di insiemi
 
-La discussione dell'[algebra di insiemi](math-hs:algebra:set) viene rimandata alla sezione dell'[insiemistica](math-hs:set).
+La discussione dell'[algebra di insiemi](math-hs:set:algebra) viene rimandata alla sezione dell'[insiemistica](math-hs:set).
