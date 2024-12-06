@@ -196,7 +196,7 @@ $$ x = \alpha_x u + x_0  \quad , \quad y = \alpha_y v + y_0 \ ,$$
 - *Aggiungere un'imamgine con il procedimento di trasformazione di variabili/incognite (e coordinate)*
 - *Aggiungere un'immagine su alcune famiglie di curve, al variare dei parametri*
 
-```{example} ...
+```{prf:example} ...
 ```
 
 
