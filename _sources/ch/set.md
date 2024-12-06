@@ -6,6 +6,9 @@
 (math-hs:fun)=
 ## Funzioni
 
+(math-hs:set:algebra)=
+## Algebra di insiemi
+
 (math-hs:fun:range)=
 ### Immagine di una funzione
 

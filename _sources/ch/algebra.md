@@ -26,17 +26,17 @@ Non vengono approfonditi gli aspetti più astratti della teoria, concentrandosi 
 ```{dropdown} Argomenti del capitolo
 :open:
 
-[**Algebra sui numeri reali, $\mathbb{R}$**]()
+[**Algebra sui numeri reali, $\mathbb{R}$**](math-hs:algebra:real)
 
-[**Algebra sulle $n$-uple di numeri reali, $\mathbb{R}^n$**]()
+[**Algebra sulle $n$-uple di numeri reali, $\mathbb{R}^n$**](math-hs:algebra:real-n)
 
-[**Algebra lineare**]()
+[**Algebra lineare**](math-hs:algebra:linear)
 
-[**Algebra vettoriale**]()
+[**Algebra vettoriale**](math-hs:algebra:vector)
 
-[**Algebra sui numeri complessi, $\mathbb{C}$**]()
+[**Algebra sui numeri complessi, $\mathbb{C}$**](math-hs:algebra:complex)
 
-[**Algebra di insiemi**]()
+[**Algebra di insiemi**](math-hs:set:algebra)
 ```
 
 In questo materiale non vengono approfonditi gli aspetti più astratti della teoria riguardanti le strutture algebriche, ma vengono introdotti e usati solamente i concetti utili a definirne le basi utili a un'applicazione consapevole degli strumenti. In particolare, vengono presentati:
