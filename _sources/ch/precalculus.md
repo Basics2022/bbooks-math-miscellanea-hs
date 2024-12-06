@@ -25,7 +25,7 @@ Senza fare uso di nessun concetto di calcolo differenziale o integrale, nel prim
 
 [**Funzioni a più variabili**](math-hs:precalculus:multivariable-real-fun), *Introductio vol.1 cap.5*. **todo**
 
-[**Funzioni esponenziale con base $e$ e logaritmo naturale**](math-hs:exp-log), *Introductio vol.1 cap.6-7*. Viene introdotta la funzione esponenziale $e^x$. che ricopre un ruolo fondamentale nel calcolo, come apprezzabile nei capitoli su [*derivate*](infinitesimal-calculus:derivatives), [*integrali*](infinitesimal-calculus:integrals) e [*equazioni differenziali*](ode-hs). 
+[**Funzioni esponenziale con base $e$ e logaritmo naturale**](math-hs:exp-log), *Introductio vol.1 cap.6-7*. Viene introdotta la funzione esponenziale $e^x$. che ricopre un ruolo **fondamentale** nel calcolo, come apprezzabile nei capitoli su [*derivate*](infinitesimal-calculus:derivatives), [*integrali*](infinitesimal-calculus:integrals) e [*equazioni differenziali*](ode-hs). 
 Viene introdotta anche la sua funzione inversa $\ln x$, definita come il logaritmo con base $e$.
 
 [**Funzioni trigonometriche**](math-hs:trigonometry), *Introductio  vol.1 cap.8*. Vengono introdotte le funzioni trigonometriche, nell'ambito della geometria dove l'argomento di tali funzioni sono angoli. Viene presentata la relazione fondamentale della trigonometria e le regole per la somma e la differenza, e regole ricavate da queste.
@@ -45,7 +45,7 @@ Viene introdotta anche la sua funzione inversa $\ln x$, definita come il logarit
 
 ...funzioni a più variabili: compaiono in molti ambiti, come geometria, ottimizzazione,...
 
-...esponenziale: sezione utile a capire da dove arrivano tutte le proprietà magiche della funzione $e^x$
+...esponenziale: sezione utile a capire da dove arrivano tutte le **"proprietà magiche"** della funzione $e^x$
 
 ...funzioni trigonometriche: funzioni che compaiono in geometria e in molti altri ambiti (ODE**(!)**,...), essendo intimamente collegate alla funzione esponenziale, come mostrato nella sezione sull'algebra dei numeri complessi con l'identità di Eulero, $e^{i x} = \cos x + i \, \sin x$.
 
