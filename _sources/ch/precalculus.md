@@ -25,13 +25,13 @@ Senza fare uso di nessun concetto di calcolo differenziale o integrale, nel prim
 
 [**Funzioni a più variabili**](math-hs:precalculus:multivariable-real-fun), *Introductio vol.1 cap.5*.
 
-[**Funzioni logaritmo ed esponenziale**](math-hs:exp-log) con base $e$, *Introductio vol.1 cap.6-7*.
+[**Funzioni logaritmo ed esponenziale con base $e$**](math-hs:exp-log), *Introductio vol.1 cap.6-7*.
 
 [**Funzioni trigonometriche**](math-hs:trigonometry), *Introductio  vol.1 cap.8*.
 
-[**Fattorizzazione di polinomi**](math-hs:precalculus:polynomials)
+[**Fattorizzazione di polinomi**](math-hs:precalculus:polynomials).
 
-[**Algebra sui numeri complessi**](math-hs:algebra:complex) 
+[**Algebra sui numeri complessi**](math-hs:algebra:complex).
 
 ```
 

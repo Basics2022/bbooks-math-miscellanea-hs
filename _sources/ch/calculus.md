@@ -11,6 +11,8 @@ Il calcolo si occupa della variazione continua di grandezze matematiche che poss
 
 ```{dropdown} Argomenti del capitolo
 :open:
+In questa sezione vengono inizialmente introdotti i concetti fondamentali dell'analisi per le funzioni reali di una variabile reale, $f: \mathbb{R} \rightarrow \mathbb{R}$ e successivamente vengono estesi al calcolo per funzioni reali di più variabili $f: \mathbb{R}^n \rightarrow \mathbb{R}$ e al calcolo vettoriale su spazi euclidei per campi $f: E^n \rightarrow V$.
+
 [**Introduzione all'analisi**](infinitesimal-calculus:analysis). Viene richiamato il concetto di **funzione** di variabile reale a valore reale, $f: D \in \mathbb{R} \rightarrow \mathbb{R}$, e la sua rappresentazione grafica in un piano cartesiano. <br>
 Viene introdotto il concetto di **limite** per funzioni reali e viene usato per definire le **funzioni continue**. Vengono quindi presentati alcuni teoremi sulle funzioni continue e sui limiti che ne permettono il calcolo. Vengono presentate le forme indeterminate al finito e all'infinito, e calcolati i *limiti fondamentali*.
 
@@ -19,6 +21,12 @@ Viene introdotto il concetto di **limite** per funzioni reali e viene usato per 
 [**Calcolo integrale**](infinitesimal-calculus:integrals). Viene data la definizione di **integrale di Riemann** e una sua interpretazione geometrica, legata all'area sottesa dal grafico della funzione. Seguono alcune proprietà degli integrali che permettono di definire l'integrale definito e indefinito, e la primitiva di una funzione. Viene presentato il **teorema fondamentale del calcolo infinitesimale**, che permette di riconoscere l'operazione di integrazione come inversa dell'integrazione. Usando questo risultato, vengono valutati gli *integrali fondamentali*; poche regole di integrazione permettono poi di calcolare l'integrale di funzioni generiche. Infine vengono mostrate alcune applicazioni: ... **todo**
 
 [**Equazioni differenziali ordinarie**](ode-hs). **todo**
+
+[**Introduzione al calcolo multi-variabile**].
+
+[**Introduzione al calcolo vettoriale su spazi euclidei**].
+
+
 ```
 
 ```{dropdown} Dipendenze
