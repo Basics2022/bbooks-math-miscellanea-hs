@@ -22,9 +22,9 @@ Viene introdotto il concetto di **limite** per funzioni reali e viene usato per 
 
 [**Equazioni differenziali ordinarie**](ode-hs). **todo**
 
-[**Introduzione al calcolo multi-variabile**].
+[**Introduzione al calcolo multi-variabile**](multivariable-calculus).
 
-[**Introduzione al calcolo vettoriale su spazi euclidei**].
+[**Introduzione al calcolo vettoriale su spazi euclidei**](vector-calculus).
 
 
 ```
