@@ -21,11 +21,13 @@ Senza fare uso di nessun concetto di calcolo differenziale o integrale, nel prim
 
 [**Funzioni reali a variabile reale**, $f: \mathbb{R} \rightarrow \mathbb{R}$](math-hs:precalculus:real-functions), *Introductio vol.1 cap.1-3*. 
 
-[**Serie infinite**](math-hs:series), *Introductio vol.1 cap.4*.
+[**Successioni e serie infinite**](math-hs:series), *Introductio vol.1 cap.4*. Vengono presentati alcuni risultati di convergenza sulle successioni e le serie infinite. Questi risultati sono utili nella formulazione dei fondamenti dell'analisi, nella definizione della funzione esponenziale, e in matematica discreta (come ad esempio nei metodi numerici).
 
 [**Funzioni a più variabili**](math-hs:precalculus:multivariable-real-fun), *Introductio vol.1 cap.5*.
 
-[**Funzioni logaritmo ed esponenziale con base $e$**](math-hs:exp-log), *Introductio vol.1 cap.6-7*.
+[**Funzioni esponenziale con base $e$ e logaritmo naturale**](math-hs:exp-log), *Introductio vol.1 cap.6-7*. Viene introdotta la funzione esponenziale $e^x$. che ricoprono un ruolo fondamentale nel calcolo, come apprezzabile nei capitoli su *derivate*, *integrali* e *equazioni differenziali*. 
+
+e la sua inversa $\ln x$
 
 [**Funzioni trigonometriche**](math-hs:trigonometry), *Introductio  vol.1 cap.8*.
 
