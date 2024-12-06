@@ -9,6 +9,7 @@ $$a = b^c \qquad \leftrightarrow \qquad c = \log_{b} a $$
 
 ## Funzione esponenziale e logaritmo di variabile reale
 
+(math-hs:exp:def)=
 ### Funzione esponenziale, $e^x$
 
 **Definizione.** Per ogni $x \in \mathbb{R}$, è possibile dare due definizioni equivalenti della $e^x$, che può essere intesa come l'elevamento a potenza della [$e$ di Eulero](math-hs:series:e-euler) con la variabile indipendente $x$ come esponente.

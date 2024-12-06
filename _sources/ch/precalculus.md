@@ -21,13 +21,12 @@ Senza fare uso di nessun concetto di calcolo differenziale o integrale, nel prim
 
 [**Funzioni reali a variabile reale**, $f: \mathbb{R} \rightarrow \mathbb{R}$](math-hs:precalculus:real-functions), *Introductio vol.1 cap.1-3*. 
 
-[**Successioni e serie infinite**](math-hs:series), *Introductio vol.1 cap.4*. Vengono presentati alcuni risultati di convergenza sulle successioni e le serie infinite. Questi risultati sono utili nella formulazione dei fondamenti dell'analisi, nella definizione della funzione esponenziale, e in matematica discreta (come ad esempio nei metodi numerici).
+[**Successioni e serie infinite**](math-hs:series), *Introductio vol.1 cap.4*. Vengono presentati alcuni risultati di convergenza sulle successioni e le serie infinite. Questi risultati sono utili nella formulazione dei fondamenti dell'analisi (*saranno trattati qui? Probabilmente no*), nella [definizione della funzione esponenziale](math-hs:exp:def), e in matematica discreta (come ad esempio nei metodi numerici).
 
 [**Funzioni a più variabili**](math-hs:precalculus:multivariable-real-fun), *Introductio vol.1 cap.5*.
 
-[**Funzioni esponenziale con base $e$ e logaritmo naturale**](math-hs:exp-log), *Introductio vol.1 cap.6-7*. Viene introdotta la funzione esponenziale $e^x$. che ricoprono un ruolo fondamentale nel calcolo, come apprezzabile nei capitoli su *derivate*, *integrali* e *equazioni differenziali*. 
-
-e la sua inversa $\ln x$
+[**Funzioni esponenziale con base $e$ e logaritmo naturale**](math-hs:exp-log), *Introductio vol.1 cap.6-7*. Viene introdotta la funzione esponenziale $e^x$. che ricopre un ruolo fondamentale nel calcolo, come apprezzabile nei capitoli su [*derivate*](infinitesimal-calculus:derivatives), [*integrali*](infinitesimal-calculus:integrals) e [*equazioni differenziali*](ode-hs). 
+Viene la sua inversa $\ln x$
 
 [**Funzioni trigonometriche**](math-hs:trigonometry), *Introductio  vol.1 cap.8*.
 
@@ -37,7 +36,21 @@ e la sua inversa $\ln x$
 
 ```
 
-```{dropdown} ...
+```{dropdown} Approccio
+:open:
+
+...funzioni reali, invertibili,...
+
+...serie e successioni...*non perderci troppo tempo*
+
+...funzioni a più variabili: compaiono in molti ambiti, come geometria, ottimizzazione,...
+
+...esponenziale: sezione utile a capire da dove arrivano tutte le proprietà magiche della funzione $e^x$
+
+...funzioni trigonometriche: funzioni che compaiono in geometria e in molti altri ambiti (ODE**(!)**,...), essendo intimamente collegate alla funzione esponenziale, come mostrato nella sezione sull'algebra dei numeri complessi con l'identità di Eulero, $e^{i x} = \cos x + i \, \sin x$.
+
+...algebra complessa: i numeri complessi risultano uno strumento matematico fondamentale in molti ambiti; l'uso dei numeri complessi invece della controparte reale, può semplificare spesso gli sviluppi algebrici, fornendo una trattazione sintetica e più omogenea
+
 ```
 
 
