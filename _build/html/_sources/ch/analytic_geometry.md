@@ -7,6 +7,30 @@
 (geometry:analytic)=
 # Introduzione alla geometria analitica
 
+La geometria analitica...
+
+```{dropdown} Argomenti del capitolo
+:open:
+
+[**Spazi euclidei**](geometry:analytic:euclidean-space). Viene data una formalizzazione del concetto di spazio euclideo $E^d$, un modello dello spazio come percepito da noi nella nostra esperienza quotidiana. Negli spazi euclidei è possibile applicare senza troppe complicazioni - e non diremo altro - gli strumenti dell'[algebra vettoriale](math-hs:algebra:vector), usati qui per introdurre le coordinate cartesiane, e la misura di distanzee angoli in spazi euclidei.
+
+[**Geometria nel piano - spazio euclideo 2D, $E^2$**](geometry:analytic:2d).
+- [Sistemi di coordinate](geometry:analytic:2d:coordinates)
+- [Curve nel piano](geometry:analytic:2d:curves)
+  - [Rette](geometry:analytic:2d:lines)
+  - [Coniche](geometry:analytic:2d:conics)
+
+[**Geometria nello spazio euclideo 3D, $E^3$**](geometry:analytic:3d).
+- [Sistemi di coordinate](geometry:analytic:3d:coordinates)
+- [Piani nello spazio](geometry:analytic:3d:planes)
+- [Curve nello spazio](geometry:analytic:3d:curves)
+  - [Rette](geometry:analytic:3d:lines)
+- [Coniche come sezione di un cono](geometry:analytic:3d:cone)
+
+```
+
+```{dropdown} ...
+```
 
 - Nel 1637 Cartesio formalizzò le basi della geometria analitica, o geometria cartesiana, nel libro *Geometria*, introdotto dal suo più famoso *Discorso sul metodo*.
 - Il lavoro di Cartesio fornisce strumenti fondamentali usati nella seconda metà del XVII secolo da Newton e Leibniz per sviluppare il [calcolo infinitesimale](math-hs:calculus), e contemporanemente la [meccanica razionale](https://basics2022.github.io/bbooks-physics-hs/ch/mechanics) di Newton.
@@ -16,6 +40,7 @@
   - da un lato, le entità geometriche possono essere rappresentate con funzioni, equazioni e/o disequazioni che coinvolgono le coordinate;
   - dall'altro, ai problemi algebrici si può dare un'interpretazione geometrica;
 
+<!--
 ```{list-table}
 :header-rows: 0
 * - ![](../media/analytic-geometry-graphical-sln-equation.png)
@@ -25,10 +50,10 @@
   - Soluzione grafica del sistema di equazioni $\begin{cases} F(x,y) = 0 \\ G(x,y)=0 \end{cases}$
   - Soluzione grafica del sistema di disequazioni $\begin{cases} y > f(x) \\ y > g(x) \end{cases}$
 ```
+-->
 
+<!--
 **Argomenti.**
-
-**Spazi euclidei**
 
 **Geometria nel piano - spazio euclideo 2D, $E^2$**
 
@@ -48,7 +73,7 @@
   -  Piani
   -  Cono e rivisitazione delle coniche
   -  Superfici quadratiche
-
+-->
 
 <!--
 ## Geometria

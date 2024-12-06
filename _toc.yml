@@ -13,11 +13,11 @@ parts:
     sections:
     - file: ch/program/current-guidelines-italy
     - file: ch/program/delta
-- caption: Logica e insiemistica
+- caption: Insiemistica e logica
   numbered: True
   chapters:
-  - file: ch/logics.md
   - file: ch/set.md
+  - file: ch/logics.md
 - caption: Algebra
   numbered: True
   chapters:
@@ -29,13 +29,14 @@ parts:
     sections:
     - file: ch/algebra/vector-algebra-def
     - file: ch/algebra/vector-algebra-euclidean-space
-  - file: ch/algebra/complex-algebra
+  - file: ch/algebra/complex-algebra-link
+  - file: ch/algebra/set-algebra-link
 - caption: Geometria analitica
   numbered: True
   chapters:
   - file: ch/analytic_geometry
-    sections:
-    - file: ch/analytic_geometry/euclidean_space
+#   sections:
+  - file: ch/analytic_geometry/euclidean_space
   - file: ch/analytic_geometry/analytic_geometry_2d
     sections:
     - file: ch/analytic_geometry/analytic_geometry_2d/coordinates
@@ -65,25 +66,26 @@ parts:
   - file: ch/exponential_logarithm
     sections:
     - file: ch/exponential_logarithm-proof
+  - file: ch/algebra/complex-algebra
   - file: ch/precalculus/multivariable-real-fun
 - caption: Calcolo
   numbered: True
   chapters:
   - file: ch/calculus
-  - file: ch/infinitesimal_calculus
+# - file: ch/infinitesimal_calculus
+#   sections:
+  - file: ch/infinitesimal_calculus/analysis
     sections:
-    - file: ch/infinitesimal_calculus/analysis
-      sections:
-      - file: ch/infinitesimal_calculus/analysis-problems
-    - file: ch/infinitesimal_calculus/derivatives
-      sections:
-      - file: ch/infinitesimal_calculus/derivatives-problems
-    - file: ch/infinitesimal_calculus/integrals
-      sections:
-      - file: ch/infinitesimal_calculus/integrals-table
-      - file: ch/infinitesimal_calculus/integrals-problems
-    - file: ch/ode
-    - file: ch/infinitesimal_calculus/problems
+    - file: ch/infinitesimal_calculus/analysis-problems
+  - file: ch/infinitesimal_calculus/derivatives
+    sections:
+    - file: ch/infinitesimal_calculus/derivatives-problems
+  - file: ch/infinitesimal_calculus/integrals
+    sections:
+    - file: ch/infinitesimal_calculus/integrals-table
+    - file: ch/infinitesimal_calculus/integrals-problems
+  - file: ch/ode
+  - file: ch/infinitesimal_calculus/problems
   - file: ch/multivariable-calculus
     sections:
     - file: ch/multivariable-calculus/limits

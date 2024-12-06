@@ -87,7 +87,7 @@
         
 
 \title{Matematica per le scuole superiori}
-\date{05 dic 2024}
+\date{06 dic 2024}
 \release{}
 \author{basics}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -420,29 +420,34 @@ esempi di distribuzione: binomiale, normale, Poisson
 
 
 \section{\protect\(\Delta\protect\)}
-\label{\detokenize{ch/program/delta:delta}}\label{\detokenize{ch/program/delta::doc}}
-\sphinxstepscope
+\label{\detokenize{ch/program/delta:delta}}\label{\detokenize{ch/program/delta:math-hs-program-delta}}\label{\detokenize{ch/program/delta::doc}}
 
-
-\part{Logica e insiemistica}
-
-\sphinxstepscope
-
-
-\chapter{Logica}
-\label{\detokenize{ch/logics:logica}}\label{\detokenize{ch/logics:math-hs-logics}}\label{\detokenize{ch/logics::doc}}
-
-\section{Argomenti …}
-\label{\detokenize{ch/logics:argomenti}}
+\subsection{Impostazione e soluzione dei problemi e calcolo letterale}
+\label{\detokenize{ch/program/delta:impostazione-e-soluzione-dei-problemi-e-calcolo-letterale}}\label{\detokenize{ch/program/delta:math-hs-program-delta-setup}}
 \sphinxAtStartPar
-Per ora, elenco di concetti linkati
+L’algebra fornisce gli strumenti fondametali del caloclo letterale per un corretto approccio ai problemi. Prima di iniziare a risolvere un problema, questo deve essere impostato correttamente.
+
+\sphinxAtStartPar
+L’impostazione ideale di un problema dovrebbe:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+non richiedere altre fasi di impostazione durante la soluzione
+
+\item {} 
+\sphinxAtStartPar
+non fare affidamento su valori particolari non necesari
+
+\end{itemize}
+
+\sphinxAtStartPar
+Questo tipo di approccio è pensato per formare la mente all’utilizzo degli strumenti attualmente disponibili. \sphinxstylestrong{todo}
+
+\sphinxstepscope
 
 
-\subsection{Identità}
-\label{\detokenize{ch/logics:logics-identity}}\label{\detokenize{ch/logics:identita}}
+\part{Insiemistica e logica}
 
-\subsection{Contraddizione}
-\label{\detokenize{ch/logics:contraddizione}}\label{\detokenize{ch/logics:logics-contradiction}}
 \sphinxstepscope
 
 
@@ -454,6 +459,9 @@ Per ora, elenco di concetti linkati
 
 \section{Funzioni}
 \label{\detokenize{ch/set:funzioni}}\label{\detokenize{ch/set:math-hs-fun}}
+
+\section{Algebra di insiemi}
+\label{\detokenize{ch/set:algebra-di-insiemi}}\label{\detokenize{ch/set:math-hs-set-algebra}}
 
 \subsection{Immagine di una funzione}
 \label{\detokenize{ch/set:immagine-di-una-funzione}}\label{\detokenize{ch/set:math-hs-fun-range}}
@@ -571,6 +579,23 @@ Per ora, elenco di concetti linkati
 \sphinxstepscope
 
 
+\chapter{Logica}
+\label{\detokenize{ch/logics:logica}}\label{\detokenize{ch/logics:math-hs-logics}}\label{\detokenize{ch/logics::doc}}
+
+\section{Argomenti …}
+\label{\detokenize{ch/logics:argomenti}}
+\sphinxAtStartPar
+Per ora, elenco di concetti linkati
+
+
+\subsection{Identità}
+\label{\detokenize{ch/logics:logics-identity}}\label{\detokenize{ch/logics:identita}}
+
+\subsection{Contraddizione}
+\label{\detokenize{ch/logics:contraddizione}}\label{\detokenize{ch/logics:logics-contradiction}}
+\sphinxstepscope
+
+
 \part{Algebra}
 
 \sphinxstepscope
@@ -585,36 +610,56 @@ L’algebra si occupa dello studio di:
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
-quantità matematiche,
+\sphinxstylestrong{quantità}/oggetti matematici
 
 \item {} 
 \sphinxAtStartPar
-operazioni, espressioni e relazioni tra le quantità matematiche,
+\sphinxstylestrong{operazioni}, espressioni e relazioni tra questi quantità/oggetti matematici,
 
 \item {} 
 \sphinxAtStartPar
-strutture algebriche, definite come insiemi di quantità matematiche dotati di operazioni che soddisfano delle proprietà fondamentali, dette assiomi.
+\sphinxstylestrong{strutture} algebriche, definite come insiemi di quantità matematiche dotati di operazioni che soddisfano delle proprietà fondamentali, dette assiomi.
 
 \end{itemize}
+\subsubsection*{Argomenti del capitolo}
 
 \sphinxAtStartPar
-In questo materiale non vengono approfonditi gli aspetti più astratti della teoria riguardanti le strutture algebriche, ma vengono introdotti e usati solamente i concetti utili a definirne le basi utili a un’applicazione consapevole degli strumenti. In particolare, vengono presentati:
+{\hyperref[\detokenize{ch/algebra/real-algebra:math-hs-algebra-real}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Algebra sui numeri reali, \(\mathbb{R}\)}}}}}.
+
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/algebra/real-n-algebra:math-hs-algebra-real-n}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Algebra sulle \(n\)\sphinxhyphen{}uple di numeri reali, \(\mathbb{R}^n\)}}}}}.
+
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/algebra/linear-algebra:math-hs-algebra-linear}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Algebra lineare}}}}}.
+
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/algebra/vector-algebra:math-hs-algebra-vector}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Algebra vettoriale}}}}}.
+
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/algebra/complex-algebra:math-hs-algebra-complex}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Algebra sui numeri complessi, \(\mathbb{C}\)}}}}}.
+
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/set:math-hs-set-algebra}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Algebra di insiemi}}}}}.
+\subsubsection*{Approccio}
+
+\sphinxAtStartPar
+Non vengono approfonditi gli aspetti più astratti della teoria, concentrandosi su un approccio più applicativo. In particolare, ci si concentra:
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
-gli \sphinxstylestrong{oggetti matematici} appartenenti a insiemi numerici (come l’insieme dei numeri reali \(\mathbb{R}\), o dei numeri complessi \(\mathbb{C}\)), o insiemi non numerici (come ad esempio insiemi di vettori \(V\), o di insiemi) che richiederanno la definizione di \sphinxstyleemphasis{spazio vettoriale} e \sphinxstyleemphasis{algebra di insiemi}
+gli \sphinxstylestrong{oggetti matematici} appartenenti a insiemi numerici (\(\mathbb{R}\), \(\mathbb{C}\),…) o non numerici, come insiemi, matrici; l’introduzione all’algebra vettoriale richiederà la definizione di una struttura algebrica fondamentale, lo \sphinxstyleemphasis{spazio vettoriale}
 
 \item {} 
 \sphinxAtStartPar
-le \sphinxstylestrong{operazioni} su questi oggetti matematici e le loro proprietà
+le \sphinxstylestrong{operazioni} e le relazioni su questi oggetti matematici e le loro proprietà
 
 \item {} 
 \sphinxAtStartPar
-il \sphinxstylestrong{calcolo letterale} e le relazioni, che permettono di impostare problemi nella forma di \sphinxstylestrong{equazioni}, \sphinxstylestrong{disequazioni}, \sphinxstylestrong{sistemi}
+il \sphinxstylestrong{calcolo letterale} che permette di {\hyperref[\detokenize{ch/program/delta:math-hs-program-delta}]{\sphinxcrossref{\DUrole{std,std-ref}{impostare i problemi}}}} nella forma di \sphinxstylestrong{equazioni}, \sphinxstylestrong{disequazioni}, \sphinxstylestrong{sistemi}, senza dover fare affidamento a particolari valori numerici
 
 \item {} 
 \sphinxAtStartPar
-la \sphinxstylestrong{soluzione} di questi probelmi algebrici.
+i metodi di \sphinxstylestrong{soluzione} di questi probelmi algebrici.
 
 \end{itemize}
 
@@ -933,6 +978,11 @@ una traslazione \(x_0\) in direzione \(x\) e di \(y_0\) in direzione \(y\)
 \sphinxstyleemphasis{Aggiungere un’immagine su alcune famiglie di curve, al variare dei parametri}
 
 \end{itemize}
+\label{ch/algebra/real-algebra:example-3}
+\begin{sphinxadmonition}{note}{Example 4.4.1 (…)}
+
+
+\end{sphinxadmonition}
 
 
 \section{Problemi con due o più incognite \sphinxhyphen{} sistemi di equazioni e disequazioni}
@@ -2623,7 +2673,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-05 dic 2024
+06 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -2737,7 +2787,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-05 dic 2024
+06 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3011,7 +3061,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-05 dic 2024
+06 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3219,7 +3269,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-05 dic 2024
+06 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3230,7 +3280,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-3 min read
+0 min read
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3260,361 +3310,94 @@ basics
 \end{sphinxuseclass}
 
 \chapter{Algebra complessa}
-\label{\detokenize{ch/algebra/complex-algebra:algebra-complessa}}\label{\detokenize{ch/algebra/complex-algebra:math-hs-algebra-complex}}\label{\detokenize{ch/algebra/complex-algebra::doc}}
+\label{\detokenize{ch/algebra/complex-algebra-link:algebra-complessa}}\label{\detokenize{ch/algebra/complex-algebra-link:math-hs-algebra-complex-link}}\label{\detokenize{ch/algebra/complex-algebra-link::doc}}
 \sphinxAtStartPar
-In questa sezione viene introdotto l’insieme dei numeri complessi e le operazioni su di essi che permettono di definire l’algebra complessa.
+La discussione dell”{\hyperref[\detokenize{ch/algebra/complex-algebra:math-hs-algebra-complex}]{\sphinxcrossref{\DUrole{std,std-ref}{algebra complessa}}}} viene rimandata alla sezione del {\hyperref[\detokenize{ch/precalculus:math-hs-precalculus}]{\sphinxcrossref{\DUrole{std,std-ref}{pre\sphinxhyphen{}calcolo}}}}.
 
-\sphinxAtStartPar
-I numeri reali sono sottoinsieme dei numeri complessi, \(\mathbb{R} \subset \mathbb{C}\). La definizione di operazioni e funzioni, come l’esponenziale, sui numeri complessi viene data come \sphinxstylestrong{estensione ai numeri complessi} delle definizioni note sui numeri reali.
+\sphinxstepscope
 
+\begin{sphinxuseclass}{sd-container-fluid}
+\begin{sphinxuseclass}{sd-sphinx-override}
+\begin{sphinxuseclass}{sd-p-0}
+\begin{sphinxuseclass}{sd-mt-2}
+\begin{sphinxuseclass}{sd-mb-4}
+\begin{sphinxuseclass}{sd-row}
+\begin{sphinxuseclass}{sd-row-cols-2}
+\begin{sphinxuseclass}{sd-gx-2}
+\begin{sphinxuseclass}{sd-gy-1}
+\begin{sphinxuseclass}{sd-col}
+\begin{sphinxuseclass}{sd-d-flex-row}
+\begin{sphinxuseclass}{sd-align-minor-center}
+\begin{sphinxuseclass}{sd-container-fluid}
+\begin{sphinxuseclass}{sd-sphinx-override}
+\begin{sphinxuseclass}{sd-row}
+\begin{sphinxuseclass}{sd-row-cols-2}
+\begin{sphinxuseclass}{sd-row-cols-xs-2}
+\begin{sphinxuseclass}{sd-row-cols-sm-3}
+\begin{sphinxuseclass}{sd-row-cols-md-3}
+\begin{sphinxuseclass}{sd-row-cols-lg-3}
+\begin{sphinxuseclass}{sd-gx-3}
+\begin{sphinxuseclass}{sd-gy-1}
+\begin{sphinxuseclass}{sd-col}
+\begin{sphinxuseclass}{sd-col-auto}
+\begin{sphinxuseclass}{sd-d-flex-row}
+\begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-I numeri complessi risultano utili in molti ambiti della matematica e della scienza, dalla fisica all’ingegneria:
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-teorema fondamentale dell’algebra
+basics
 
-\item {} 
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{sd-col}
+\begin{sphinxuseclass}{sd-col-auto}
+\begin{sphinxuseclass}{sd-d-flex-row}
+\begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-rappresentazione efficace delle funzioni trigonometriche, grazie all’identità di Eulero
+06 dic 2024
 
-\item {} 
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{sd-col}
+\begin{sphinxuseclass}{sd-col-auto}
+\begin{sphinxuseclass}{sd-d-flex-row}
+\begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-soluzione di equazioni differenziali
+0 min read
 
-\item {} 
-\sphinxAtStartPar
-…
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
 
-\end{itemize}
-
-
-
-
-\section{Definizioni}
-\label{\detokenize{ch/algebra/complex-algebra:definizioni}}
+\chapter{Algebra di insiemi}
+\label{\detokenize{ch/algebra/set-algebra-link:algebra-di-insiemi}}\label{\detokenize{ch/algebra/set-algebra-link:math-hs-algebra-set-link}}\label{\detokenize{ch/algebra/set-algebra-link::doc}}
 \sphinxAtStartPar
-I numeri complessi estendono il campo dei numeri reali, \(\mathbb{R} \subset \mathbb{C}\). Viene inizialmente definita l”\sphinxstylestrong{unità immaginaria}, \(i\), come la radice quadra di \(-1\),
-\begin{equation*}
-\begin{split}i := \sqrt{-1} \ .\end{split}
-\end{equation*}
-\sphinxAtStartPar
-L’insieme dei numeri complessi, indicato con \(\mathbb{C}\), è l’insieme di quei numeri che possono essere scritti come
-\begin{equation*}
-\begin{split}z = x + i y \ ,\end{split}
-\end{equation*}
-\sphinxAtStartPar
-con \(x, \ y \in \mathbb{R}\).
-
-
-\subsection{Operazioni: somma e moltiplicazione}
-\label{\detokenize{ch/algebra/complex-algebra:operazioni-somma-e-moltiplicazione}}
-\sphinxAtStartPar
-I numeri complessi formano la struttura algebrica di \sphinxstylestrong{campo} con le operazioni di somma e prodotto. Dati due numeri complessi \(z_1 = x_1 + i y_1\), \(z_2 = x_2 + i y_2\), vengono definiti
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-la somma
-\begin{equation*}
-\begin{split}z_1 + z_2 = (x_1 + x_2) + i (y_1 + y_2) \ \end{split}
-\end{equation*}
-\item {} 
-\sphinxAtStartPar
-il prodotto,
-\begin{equation*}
-\begin{split}\begin{aligned}
-    z_1 \, z_2 & = (x_1 + i y_1) (x_2 + i y_2) = \\
-    & = x_1 \, x_2 - y_1 \, y_2 + i ( x_1 \, y_2 + x_2 \, y_1 )
-   \end{aligned}\end{split}
-\end{equation*}
-\item {} 
-\sphinxAtStartPar
-elevamento a potenza con esponente intero, \(n \in \mathbb{N}\),
-\begin{equation*}
-\begin{split}z^n = \underbrace{z \cdot z \cdot \dots \cdot z}_{n \text{volte}}\end{split}
-\end{equation*}
-\item {} 
-\sphinxAtStartPar
-elevamento a potenza con esponente reale \sphinxstylestrong{todo} …
-
-\end{itemize}
-
-
-\subsection{Esponenziale complesso e formula di Eulero}
-\label{\detokenize{ch/algebra/complex-algebra:esponenziale-complesso-e-formula-di-eulero}}
-\sphinxAtStartPar
-Estendendo la definizione di funzione esponenziale \(e^x\) ai numeri complessi, si può scrivere
-\begin{equation*}
-\begin{split}e^z = \sum_{n = 0}^{+\infty} \frac{z^n}{n!} = \lim_{n \rightarrow +\infty} \left( 1 + \frac{z}{n} \right)^n\end{split}
-\end{equation*}\subsubsection*{Dimostrazione dell’equivalenza delle due definizioni}
-
-
-\subsubsection{Formula di Eulero}
-\label{\detokenize{ch/algebra/complex-algebra:formula-di-eulero}}
-\sphinxAtStartPar
-Per esponenti reali, vale
-\begin{equation*}
-\begin{split}e^{i x} = \cos x + i \sin x\end{split}
-\end{equation*}\subsubsection*{Dimostrazione usando la definizione come serie}
-
-\sphinxAtStartPar
-L’identità di Eulero può essere dimostrata (\sphinxstylestrong{todo} \sphinxstyleemphasis{bisogna verificare la convergenza (uniforme) delle serie?}) confrontando le serie polinomiali (di Taylor) delle funzioni \(\cos x\), \(\sin x\) definite sui numeri reali, \(x \in \mathbb{R}\)
-\begin{equation*}
-\begin{split}\begin{aligned}
-  \cos x & = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} + \dots \\
-  \sin x & = x - \frac{x^3}{3!} + \frac{x^5}{5!} + \dots \\
-\end{aligned}\end{split}
-\end{equation*}
-\sphinxAtStartPar
-con la serie che definisce l’esponenziale complesso,
-\begin{equation*}
-\begin{split}
-  e^z & = 1 + z + \frac{z^2}{2!} + \frac{z^3}{3!} + \frac{z^4}{4!} + \frac{z^5}{5!} + \dots \\
-\end{split}
-\end{equation*}
-\sphinxAtStartPar
-valutata in \(z = i x \in \mathbb{C}\)
-\begin{equation*}
-\begin{split}\begin{aligned}
-  e^{i x} 
-      & = 1 + i x + \frac{(i x)^2}{2!} + \frac{(i x)^3}{3!} + \frac{(i x)^4}{4!} + \frac{(i x)^5}{5!} + \dots = \\
-      & = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} \dots + i \left[ x - \frac{x^3}{3!} + \frac{x^5}{5!}  + \dots \right] = \\
-      & = \cos x + i \sin x \ .
-\end{aligned}\end{split}
-\end{equation*}\subsubsection*{Dimostrazione usando la definizione come limite della successione}
-
-\sphinxAtStartPar
-\sphinxstylestrong{todo}
-\begin{equation*}
-\begin{split}a_n = \left( 1 + \frac{z}{n} \right)^n = \left( 1 + \frac{x}{n} + i \frac{y}{n} \right)^n\end{split}
-\end{equation*}
-\sphinxAtStartPar
-Il modulo di \(a_n\) tende a \(e^x\)
-\begin{equation*}
-\begin{split}r_n = \sqrt{\left(1+ \frac{x}{n}\right)^2 + \left(\frac{y}{n}\right)^2}\end{split}
-\end{equation*}\begin{equation*}
-\begin{split}n r_n = \sqrt{( n + x )^2 + y^2}\end{split}
-\end{equation*}
-\sphinxAtStartPar
-l’argomento tende a \(\theta\)
-\begin{equation*}
-\begin{split}\tan \theta_n = \frac{\frac{y}{n}}{1 + \frac{x}{n}} = \frac{y}{x + n}\end{split}
-\end{equation*}\begin{equation*}
-\begin{split}\begin{aligned}
-\sin \theta_n & = \frac{y}{n \, r_n} \\
-\cos \theta_n & = \frac{x+n}{n \, r_n}
-\end{aligned}\end{split}
-\end{equation*}
-\sphinxAtStartPar
-Usando la \sphinxstylestrong{formula di de Moivre}
-\begin{equation*}
-\begin{split}( \cos x + i \sin x)^n = \cos( n x ) + i \sin ( n x )\end{split}
-\end{equation*}
-\sphinxAtStartPar
-si può scrivere
-\begin{equation*}
-\begin{split}\begin{aligned}
-  a_n & = \left( 1 + \frac{x}{n} + i \frac{y}{n} \right)^n = \\
-      & = \left( r_n \cos \theta_n + i r_n \sin \theta \right)^n = \\
-      & = r_n^n \cdot \left[ \cos ( n \theta_n ) + i \sin (n \theta_n) \right]
-\end{aligned}\end{split}
-\end{equation*}
-\sphinxAtStartPar
-Per \(n \rightarrow \infty\)
-\begin{equation*}
-\begin{split}\theta_n \sim \tan \theta_n = \frac{y}{x+n} \sim \frac{y}{n}\end{split}
-\end{equation*}\begin{equation*}
-\begin{split}n \theta_n \sim y\end{split}
-\end{equation*}\begin{equation*}
-\begin{split}\begin{aligned}
-  r_n^n & = \left[ \left( 1 + \frac{x}{n} \right)^2 + \left( \frac{y}{n} \right)^2 \right]^{\frac{n}{2}} = \\
-        & = \left( 1 + \frac{x}{n} \right)^{n} \left[ 1 + \left(\frac{y}{n+x}\right)^2 \right]^{\frac{n}{2}} = \\
-\end{aligned}\end{split}
-\end{equation*}
-\sphinxAtStartPar
-Il primo fattore è asintotico a \(e^x\),
-\begin{equation*}
-\begin{split}\left( 1 + \frac{x}{n} \right)^n \sim e^x \ .\end{split}
-\end{equation*}
-\sphinxAtStartPar
-Il secondo fattore, con il «completamento della definizione di esponenziale», può essere riscritto come
-\begin{equation*}
-\begin{split}\left[ 1 + \left(\frac{y}{n+x}\right)^2 \right]^{\frac{n}{2}} = \left\{ \left[ 1 + \left(\frac{y}{n+x}\right)^2 \right]^{\left(\frac{n+x}{y}\right)^2} \right\}^{\frac{n y^2}{2(n+x)^2}} \sim e^0 = 1 \ .\end{split}
-\end{equation*}
-\sphinxAtStartPar
-Il termine \(r_n^n\) tende quindi a \(e^x\).
-
-\sphinxAtStartPar
-Il limite dei termini \(a_n\) della successione che definisce l’esponenziale complesso può quindi essere scritto come
-\begin{equation*}
-\begin{split}e^z = e^x \left( \cos y + i \sin y \right) \ ,\end{split}
-\end{equation*}
-\sphinxAtStartPar
-Si trova quindi l’identità di Eulero usando la proprietà delle potenze estesa ai numeri complessi,
-\begin{equation*}
-\begin{split}e^z = e^{x + iy} = e^x \, e^{i y} =  e^x \left( \cos y + i \sin y \right)
-\rightarrow
-e^{iy} = \cos y + i \sin y \ .
-\end{split}
-\end{equation*}
-\sphinxAtStartPar
-\sphinxstylestrong{todo} …
-
-
-\subsection{Rappresentazione nel piano complesso}
-\label{\detokenize{ch/algebra/complex-algebra:rappresentazione-nel-piano-complesso}}
-\sphinxAtStartPar
-Ogni numero complesso \(z \subset \mathbb{C}\) può essere associato a un punto del piano complesso \(\mathbb{C}\); l’uso di coordinate cartesiane o polari per la descrizione dei punti del piano \(\mathbb{R}^2\) suggerisce due tipi di rappresentazioni per un numero complesso:
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-la \sphinxstylestrong{rappresentazione cartesiana} associa l’asse delle ascisse alla parte reale \(x\) e l’asse delle ordinate alla parte immaginaria \(y\),
-\begin{equation*}
-\begin{split}z = x + i y\end{split}
-\end{equation*}
-\item {} 
-\sphinxAtStartPar
-la \sphinxstylestrong{rappresentazione polare}; usando la legge di trasformazione tra coordinate polari \((r, \theta)\) e coordinate cartesiante \((x,y)\)
-\begin{equation*}
-\begin{split}\begin{cases}
-    x = r \cos \theta \\
-    y = r \sin \theta
-  \end{cases}\end{split}
-\end{equation*}
-\sphinxAtStartPar
-e la formula di Eulero, \(e^{i \theta} = \cos \theta + i \theta\), è possibile scrivere un numero complesso in forma polare,
-\begin{equation*}
-\begin{split}z = x + i y = r \cos \theta + i r \sin \theta = r \left( \cos \theta + i \sin \theta \right) = r e^{i \theta} \ .\end{split}
-\end{equation*}
-\end{itemize}
-
-\begin{sphinxadmonition}{note}{Nota:}
-\sphinxAtStartPar
-Le due rappresentazioni non sono equivalenti. Mentre la rappresentazione cartesiana permette di creare una relazione biunivoca tra i numeri complessi \(z = x + i \ y\) e i punti nel piano \((x, \ y)\), la rappresentazione polare assegna infiniti numeri complessi, seppur di uguale valore \(r \, e^{i \theta} = r \, e^{i (\theta + n \, 2 \pi)}\), con \(n \in \mathbb{Z}\) allo stesso punto nello spazio.
-\end{sphinxadmonition}
-
-
-\section{Operazioni con i numeri complessi}
-\label{\detokenize{ch/algebra/complex-algebra:operazioni-con-i-numeri-complessi}}\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-somma
-\begin{equation*}
-\begin{split}z_1 + z_2 = (x_1 + x_2) + i(y_1 + y_2)\end{split}
-\end{equation*}
-\item {} 
-\sphinxAtStartPar
-prodotto
-\begin{equation*}
-\begin{split}z_1 \ z_2 = r_1 \, r_2 e^{i(\theta_1 + \theta_2)}\end{split}
-\end{equation*}
-\item {} 
-\sphinxAtStartPar
-complesso coniugato
-\begin{equation*}
-\begin{split}z^* = x - i y = r e^{-i\theta} \end{split}
-\end{equation*}
-\item {} 
-\sphinxAtStartPar
-valore assoluto
-\begin{equation*}
-\begin{split}|z| = \sqrt{x^2 + y^2} = r = \sqrt{z^* z}\end{split}
-\end{equation*}
-\item {} 
-\sphinxAtStartPar
-potenza ed esponenziale
-\begin{equation*}
-\begin{split}z^a = \left(r e^{i\theta} \right)^a = r^a e^{i a \theta}\end{split}
-\end{equation*}\begin{equation*}
-\begin{split}a^{i y} = \left(e^{\ln a} \right)^{iy} = e^{i y \ln a} = \cos ( y \ln a ) + i \sin ( y \ln a )\end{split}
-\end{equation*}\begin{equation*}
-\begin{split}a^z = a^{x+iy} = a^x a^{iy} = a^x \left( \cos ( y \ln a ) + i \sin ( y \ln a ) \right)\end{split}
-\end{equation*}\begin{equation*}
-\begin{split}z^w = \left(r e^{i \theta}\right)^{( u + i v )} = r^{u+iv} e^{i \theta (u+iv)} = r^u e^{-\theta v} e^{i \left( v \ln r + \theta u \right)} \end{split}
-\end{equation*}
-\sphinxAtStartPar
-\sphinxstylestrong{todo} discutere il caso di potenze intere, potenze razionali, potenze irrazionali,… \sphinxstyleemphasis{con grafico}
-
-\item {} 
-\sphinxAtStartPar
-logaritmo, con base reale positiva, \(a > 0\)
-\begin{equation*}
-\begin{split}\log_a z = \log_a \left( r \, e^{i ( \theta + n \, 2 \pi )} \right) = \log_a r + \log_a e^{i (\theta + n \, 2 \pi )} = \log_a r + i \, \frac{1}{\ln a} \, \left( \theta + n \, 2 \pi \right)\end{split}
-\end{equation*}
-\sphinxAtStartPar
-avendo usato le proprietà dei logaritmi
-\begin{equation*}
-\begin{split}\begin{aligned}
-     \log ( a b ) & = \log a + \log b \\
-     \log_a b & = \frac{\log_c b}{\log_c a}
-   \end{aligned}\end{split}
-\end{equation*}
-\end{itemize}
-
-
-
-
-\section{Altri argomenti/proprietà}
-\label{\detokenize{ch/algebra/complex-algebra:altri-argomenti-proprieta}}\begin{equation*}
-\begin{split}\begin{aligned}
-  \text{re} \{ z \} & = \frac{1}{2} \left( z + z^* \right) \\
-  \text{im} \{ z \} & = \frac{1}{2} \left( z - z^* \right) \\
-\end{aligned}\end{split}
-\end{equation*}\begin{equation*}
-\begin{split}e^{i \alpha} e^{i \beta} = e^{i (\alpha + \beta)}\end{split}
-\end{equation*}\begin{equation*}
-\begin{split}\left( e^{i \alpha} \right)^n = e^{i n \alpha}\end{split}
-\end{equation*}
-
-\subsection{Formula di de Moivre}
-\label{\detokenize{ch/algebra/complex-algebra:formula-di-de-moivre}}\begin{equation*}
-\begin{split}(\cos x + i \sin x)^n = \cos(nx) + i \sin(nx) \ , \quad n \in \mathbb{Z}\end{split}
-\end{equation*}\subsubsection*{Dimostrazione per induzione}
-
-\sphinxAtStartPar
-Per \(n \in \mathbb{N}\), si procede per induzione \sphinxstylestrong{todo} \sphinxstyleemphasis{aggiungere i capitoli sulla logica? E un riferimento ad essi?} Per \(n = 1\) la formula di de Moivre si riduce a un’identità. Supponiamo quindi che sia valida per un intero \(n > 1\) e verifichiamo se questo implica che sia valida anche per \(n+1\)
-\begin{equation*}
-\begin{split}\begin{aligned}
-  (\cos x + i \sin x)^{n+1} & = (\cos x + i \sin x)^n \, (\cos x + i \sin x) = \\
-                            & = \left(\cos (nx)+ i \sin (nx) \right) \, (\cos x + i \sin x) = \\
-                            & = \cos(nx) \cos x - \sin(nx) \sin x + i \left( \cos(nx) \sin x + \sin(nx) \cos x \right) = \\
-                            & = \cos( (n+1)x ) + i \sin( (n+1) x ) \ .
-\end{aligned}\end{split}
-\end{equation*}
-\sphinxAtStartPar
-Per \(n = 0\), la formula di de Moivre si riduce all’identità \(1 \equiv 1\).
-
-\sphinxAtStartPar
-Per \(m := -n \in \mathbb{N}\), la formula di de Moivre può essere verificata usando la formula di de Moivre per \(m > 0\) e razionalizzando la frazione,
-\begin{equation*}
-\begin{split}\begin{aligned}
-  \left( \cos x + i \sin x \right)^{n} & = \frac{1}{\left( \cos x + i \sin x \right)^m} = \\
-   & = \frac{1}{\left( \cos (m x) + i \sin (m x) \right)} = \\
-   & = \frac{\cos( m x) - i \sin (m x)}{\underbrace{\cos^2(mx) + \sin^2(mx)}_{=1}} = \cos(mx) - i \sin(mx) = \cos(nx) + i \sin(nx) \ .
-\end{aligned}\end{split}
-\end{equation*}
-
-\subsection{Teorema fondamentale dell’algebra}
-\label{\detokenize{ch/algebra/complex-algebra:teorema-fondamentale-dell-algebra}}
-\sphinxAtStartPar
-Ogni polinomio a coefficienti reali (\sphinxstylestrong{todo} o anche complessi) di grado \(n\), \(p_n(x) = a_n x^n + a_{n-1} x^{n-1} + \dots a_1 x + a_0\) può essere fattorizzato come prodotto di \(n\) binomi
-\begin{equation*}
-\begin{split}p_n(x) = a_n ( x - z_1 )( x - z_2 )\dots( x - z_n) \ ,\end{split}
-\end{equation*}
-\sphinxAtStartPar
-e i numeri \(z_k \in \mathbb{C}\), \(k = 1:n\), sono chiamati \sphinxstylestrong{zeri} del polinomio.
-
-\sphinxAtStartPar
-Come diretta conseguenza, ogni equazione polinomiale di grado \(n\), \(p_n(x) = 0\), ammette \(n\) soluzioni complesse coincidenti con gli zeri \(z_k\) del polinomio \(p_n(x)\).
-
-
-\section{Equazioni e disequazioni con i numeri complessi}
-\label{\detokenize{ch/algebra/complex-algebra:equazioni-e-disequazioni-con-i-numeri-complessi}}
-\sphinxAtStartPar
-Le equazioni e le disequazioni con i numeri complessi possono essere ricondotti a problemi che coinvolgono una coppia di variabili reali, tipicamente le componenti reale e immaginaria, o il modulo e l’argomento, che descrivono il piano dei numeri complessi.
-
-\sphinxAtStartPar
-\sphinxstylestrong{todo}
+La discussione dell”{\hyperref[\detokenize{ch/set:math-hs-set-algebra}]{\sphinxcrossref{\DUrole{std,std-ref}{algebra di insiemi}}}} viene rimandata alla sezione dell”{\hyperref[\detokenize{ch/set:math-hs-set}]{\sphinxcrossref{\DUrole{std,std-ref}{insiemistica}}}}.
 
 \sphinxstepscope
 
@@ -3661,7 +3444,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-05 dic 2024
+06 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3702,7 +3485,65 @@ basics
 \end{sphinxuseclass}
 
 \chapter{Introduzione alla geometria analitica}
-\label{\detokenize{ch/analytic_geometry:introduzione-alla-geometria-analitica}}\label{\detokenize{ch/analytic_geometry:geometry-analytic}}\label{\detokenize{ch/analytic_geometry::doc}}\begin{itemize}
+\label{\detokenize{ch/analytic_geometry:introduzione-alla-geometria-analitica}}\label{\detokenize{ch/analytic_geometry:geometry-analytic}}\label{\detokenize{ch/analytic_geometry::doc}}
+\sphinxAtStartPar
+La geometria analitica…
+\subsubsection*{Argomenti del capitolo}
+
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/analytic_geometry/euclidean_space:geometry-analytic-euclidean-space}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Spazi euclidei}}}}}. Viene data una formalizzazione del concetto di spazio euclideo \(E^d\), un modello dello spazio come percepito da noi nella nostra esperienza quotidiana. Negli spazi euclidei è possibile applicare senza troppe complicazioni \sphinxhyphen{} e non diremo altro \sphinxhyphen{} gli strumenti dell”{\hyperref[\detokenize{ch/algebra/vector-algebra:math-hs-algebra-vector}]{\sphinxcrossref{\DUrole{std,std-ref}{algebra vettoriale}}}}, usati qui per introdurre le coordinate cartesiane, e la misura di distanzee angoli in spazi euclidei.
+
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/analytic_geometry/analytic_geometry_2d:geometry-analytic-2d}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Geometria nel piano \sphinxhyphen{} spazio euclideo 2D, \(E^2\)}}}}}.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/analytic_geometry/analytic_geometry_2d/coordinates:geometry-analytic-2d-coordinates}]{\sphinxcrossref{\DUrole{std,std-ref}{Sistemi di coordinate}}}}
+
+\item {} 
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/analytic_geometry/analytic_geometry_2d/curves:geometry-analytic-2d-curves}]{\sphinxcrossref{\DUrole{std,std-ref}{Curve nel piano}}}}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/analytic_geometry/analytic_geometry_2d/lines:geometry-analytic-2d-lines}]{\sphinxcrossref{\DUrole{std,std-ref}{Rette}}}}
+
+\item {} 
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/analytic_geometry/analytic_geometry_2d/conics:geometry-analytic-2d-conics}]{\sphinxcrossref{\DUrole{std,std-ref}{Coniche}}}}
+
+\end{itemize}
+
+\end{itemize}
+
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/analytic_geometry/analytic_geometry_3d:geometry-analytic-3d}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Geometria nello spazio euclideo 3D, \(E^3\)}}}}}.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\DUrole{xref,myst}{Sistemi di coordinate}
+
+\item {} 
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/analytic_geometry/analytic_geometry_3d/planes:geometry-analytic-3d-planes}]{\sphinxcrossref{\DUrole{std,std-ref}{Piani nello spazio}}}}
+
+\item {} 
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/analytic_geometry/analytic_geometry_3d/curves:geometry-analytic-3d-curves}]{\sphinxcrossref{\DUrole{std,std-ref}{Curve nello spazio}}}}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/analytic_geometry/analytic_geometry_3d/lines:geometry-analytic-3d-lines}]{\sphinxcrossref{\DUrole{std,std-ref}{Rette}}}}
+
+\end{itemize}
+
+\item {} 
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/analytic_geometry/analytic_geometry_3d/cone:geometry-analytic-3d-cone}]{\sphinxcrossref{\DUrole{std,std-ref}{Coniche come sezione di un cono}}}}
+
+\end{itemize}
+\subsubsection*{…}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Nel 1637 Cartesio formalizzò le basi della geometria analitica, o geometria cartesiana, nel libro \sphinxstyleemphasis{Geometria}, introdotto dal suo più famoso \sphinxstyleemphasis{Discorso sul metodo}.
@@ -3732,90 +3573,8 @@ dall’altro, ai problemi algebrici si può dare un’interpretazione geometrica
 \end{itemize}
 
 
-\begin{savenotes}\sphinxattablestart
-\centering
-\begin{tabulary}{\linewidth}[t]{|T|T|T|}
-\hline
 
-\sphinxAtStartPar
-\sphinxincludegraphics{{analytic-geometry-graphical-sln-equation}.png}
-&
-\sphinxAtStartPar
-\sphinxincludegraphics{{analytic-geometry-graphical-sln-system-eqn}.png}
-&
-\sphinxAtStartPar
-\sphinxincludegraphics{{analytic-geometry-graphical-sln-system-ineq}.png}
-\\
-\hline
-\sphinxAtStartPar
-Soluzione grafica dell’equazione \(f(x) = 0\)
-&
-\sphinxAtStartPar
-Soluzione grafica del sistema di equazioni \(\begin{cases} F(x,y) = 0 \\ G(x,y)=0 \end{cases}\)
-&
-\sphinxAtStartPar
-Soluzione grafica del sistema di disequazioni \(\begin{cases} y > f(x) \\ y > g(x) \end{cases}\)
-\\
-\hline
-\end{tabulary}
-\par
-\sphinxattableend\end{savenotes}
 
-\sphinxAtStartPar
-\sphinxstylestrong{Argomenti.}
-
-\sphinxAtStartPar
-\sphinxstylestrong{Spazi euclidei}
-
-\sphinxAtStartPar
-\sphinxstylestrong{Geometria nel piano \sphinxhyphen{} spazio euclideo 2D, \(E^2\)}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-{\hyperref[\detokenize{ch/analytic_geometry/analytic_geometry_2d/coordinates:geometry-analytic-2d-coordinates}]{\sphinxcrossref{\DUrole{std,std-ref}{Sistemi di coordinate}}}} \sphinxstyleemphasis{Cartesiane e polari; trasformazione tra sistemi di coordinate: polari e cartesiane; cartesiano\sphinxhyphen{}cartesiano: traslazione e rotazione}
-
-\item {} 
-\sphinxAtStartPar
-{\hyperref[\detokenize{ch/analytic_geometry/analytic_geometry_2d/points:geometry-analytic-2d-points}]{\sphinxcrossref{\DUrole{std,std-ref}{Punti}}}}
-
-\item {} 
-\sphinxAtStartPar
-{\hyperref[\detokenize{ch/analytic_geometry/analytic_geometry_2d/lines:geometry-analytic-2d-lines}]{\sphinxcrossref{\DUrole{std,std-ref}{Rette}}}}
-
-\item {} 
-\sphinxAtStartPar
-{\hyperref[\detokenize{ch/analytic_geometry/analytic_geometry_2d/conics:geometry-analytic-2d-conics}]{\sphinxcrossref{\DUrole{std,std-ref}{Coniche}}}} \sphinxstylestrong{todo} \sphinxstyleemphasis{parabola, ellisse, iperbole: def, caratteristiche, descrizione in coord. cartesiane e polari; riferimento a gravitazione in meccanica classica}
-
-\end{itemize}
-
-\sphinxAtStartPar
-\sphinxstylestrong{Geometria nello spazio euclideo 3D, \(E^3\)}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-Sistemi di coordinate
-
-\item {} 
-\sphinxAtStartPar
-Punti
-
-\item {} 
-\sphinxAtStartPar
-Rette
-
-\item {} 
-\sphinxAtStartPar
-Piani
-
-\item {} 
-\sphinxAtStartPar
-Cono e rivisitazione delle coniche
-
-\item {} 
-\sphinxAtStartPar
-Superfici quadratiche
-
-\end{itemize}
 
 
 
@@ -3859,7 +3618,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-05 dic 2024
+06 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3899,7 +3658,7 @@ basics
 \end{sphinxuseclass}
 \end{sphinxuseclass}
 
-\section{Spazio euclideo}
+\chapter{Spazio euclideo}
 \label{\detokenize{ch/analytic_geometry/euclidean_space:spazio-euclideo}}\label{\detokenize{ch/analytic_geometry/euclidean_space:geometry-analytic-euclidean-space}}\label{\detokenize{ch/analytic_geometry/euclidean_space::doc}}
 \sphinxAtStartPar
 \sphinxstylestrong{Approccio storico\sphinxhyphen{}applicativo}
@@ -4008,7 +3767,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-05 dic 2024
+06 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -5365,7 +5124,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-05 dic 2024
+06 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -5376,7 +5135,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-1 min read
+2 min read
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -5429,42 +5188,54 @@ Nel gran calderone del pre\sphinxhyphen{}calcolo finiscono qui tutti gli argomen
 \end{tabulary}
 \par
 \sphinxattableend\end{savenotes}
+\subsubsection*{Argomenti del capitolo}
 
 \sphinxAtStartPar
-Senza fare uso di nessun concetto di calcolo differenziale o integrale, nel primo volume dell’opera Eulero fornisce alcuni \sphinxstylestrong{fondamenti dell’analisi} e delle \sphinxstylestrong{serie infinite}:
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-il concetto di variabile e {\hyperref[\detokenize{ch/precalculus/real-functions:math-hs-precalculus-real-functions}]{\sphinxcrossref{\DUrole{std,std-ref}{funzione di variabile e valore reale}}}}, \(f: \mathbb{R} \rightarrow \mathbb{R}\), vol.1 cap.1\sphinxhyphen{}3
-
-\item {} 
-\sphinxAtStartPar
-le {\hyperref[\detokenize{ch/series:math-hs-series}]{\sphinxcrossref{\DUrole{std,std-ref}{serie infinite}}}}, vol.1 cap.4
-
-\item {} 
-\sphinxAtStartPar
-il concetto di {\hyperref[\detokenize{ch/precalculus/multivariable-real-fun:math-hs-precalculus-multivariable-real-fun}]{\sphinxcrossref{\DUrole{std,std-ref}{funzioni a più variabili}}}}, vol.1 cap.5
-
-\item {} 
-\sphinxAtStartPar
-le {\hyperref[\detokenize{ch/exponential_logarithm:math-hs-exp-log}]{\sphinxcrossref{\DUrole{std,std-ref}{funzioni logaritmo ed esponenziale}}}} con base \(e\), vol.1 cap.6\sphinxhyphen{}7
-
-\item {} 
-\sphinxAtStartPar
-le {\hyperref[\detokenize{ch/trigonometry:math-hs-trigonometry}]{\sphinxcrossref{\DUrole{std,std-ref}{funzioni trigonometriche}}}}, vol.1 cap.8
-
-\item {} 
-\sphinxAtStartPar
-risultati sulla {\hyperref[\detokenize{ch/precalculus/polynomials:math-hs-precalculus-polynomials}]{\sphinxcrossref{\DUrole{std,std-ref}{fattorizzazione di polinomi}}}}, \sphinxstylestrong{todo}
-
-\item {} 
-\sphinxAtStartPar
-\sphinxstylestrong{numeri complessi} \sphinxstylestrong{todo} \sphinxstyleemphasis{riferimento all’algebra dei numeri complessi}
-
-\end{itemize}
+Senza fare uso di nessun concetto di calcolo differenziale o integrale, nel primo volume dell’opera Eulero fornisce alcuni \sphinxstylestrong{fondamenti dell’analisi} e delle \sphinxstylestrong{serie infinite}; nel secondo volume Eulero applica i risultati del primo volume allo studio delle \sphinxstylestrong{curve} e delle \sphinxstylestrong{superfici} nel piano e nello spazio.
 
 \sphinxAtStartPar
-Nel secondo volume, Eulero applica i risultati del primo volume allo studio delle \sphinxstylestrong{curve} e delle \sphinxstylestrong{superfici} nel piano e nello spazio.
+{\hyperref[\detokenize{ch/precalculus/real-functions:math-hs-precalculus-real-functions}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Funzioni reali a variabile reale}, \(f: \mathbb{R} \rightarrow \mathbb{R}\)}}}}, \sphinxstyleemphasis{Introductio vol.1 cap.1\sphinxhyphen{}3}. \sphinxstylestrong{todo}
+
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/series:math-hs-series}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Successioni e serie infinite}}}}}, \sphinxstyleemphasis{Introductio vol.1 cap.4}. Vengono presentati alcuni risultati di convergenza sulle successioni e le serie infinite. Questi risultati sono utili nella formulazione dei fondamenti dell’analisi (\sphinxstyleemphasis{saranno trattati qui? Probabilmente no}), nella {\hyperref[\detokenize{ch/exponential_logarithm:math-hs-exp-def}]{\sphinxcrossref{\DUrole{std,std-ref}{definizione della funzione esponenziale}}}}, e in matematica discreta (come ad esempio nei metodi numerici).
+
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/precalculus/multivariable-real-fun:math-hs-precalculus-multivariable-real-fun}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Funzioni a più variabili}}}}}, \sphinxstyleemphasis{Introductio vol.1 cap.5}. \sphinxstylestrong{todo}
+
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/exponential_logarithm:math-hs-exp-log}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Funzioni esponenziale con base \(e\) e logaritmo naturale}}}}}, \sphinxstyleemphasis{Introductio vol.1 cap.6\sphinxhyphen{}7}. Viene introdotta la funzione esponenziale \(e^x\). che ricopre un ruolo \sphinxstylestrong{fondamentale} nel calcolo, come apprezzabile nei capitoli su {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstyleemphasis{derivate}}}}}, {\hyperref[\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstyleemphasis{integrali}}}}} e {\hyperref[\detokenize{ch/ode:ode-hs}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstyleemphasis{equazioni differenziali}}}}}.
+Viene introdotta anche la sua funzione inversa \(\ln x\), definita come il logaritmo con base \(e\).
+
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/trigonometry:math-hs-trigonometry}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Funzioni trigonometriche}}}}}, \sphinxstyleemphasis{Introductio  vol.1 cap.8}. Vengono introdotte le funzioni trigonometriche, nell’ambito della geometria dove l’argomento di tali funzioni sono angoli. Viene presentata la relazione fondamentale della trigonometria e le regole per la somma e la differenza, e regole ricavate da queste.
+
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/precalculus/polynomials:math-hs-precalculus-polynomials}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Fattorizzazione di polinomi}}}}}. \sphinxstylestrong{todo}
+
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/algebra/complex-algebra:math-hs-algebra-complex}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Algebra sui numeri complessi}}}}}. \sphinxstylestrong{todo}
+\subsubsection*{Approccio}
+
+\sphinxAtStartPar
+…funzioni reali, invertibili,…
+
+\sphinxAtStartPar
+…serie e successioni…\sphinxstyleemphasis{non perderci troppo tempo}
+
+\sphinxAtStartPar
+…funzioni a più variabili: compaiono in molti ambiti, come geometria, ottimizzazione,…
+
+\sphinxAtStartPar
+…esponenziale: sezione utile a capire da dove arrivano tutte le \sphinxstylestrong{«proprietà magiche»} della funzione \(e^x\)
+
+\sphinxAtStartPar
+…funzioni trigonometriche: funzioni che compaiono in geometria e in molti altri ambiti (ODE**(!)**,…), essendo intimamente collegate alla funzione esponenziale, come mostrato nella sezione sull’algebra dei numeri complessi con l’identità di Eulero, \(e^{i x} = \cos x + i \, \sin x\).
+
+\sphinxAtStartPar
+…algebra complessa: i numeri complessi risultano uno strumento matematico fondamentale in molti ambiti; l’uso dei numeri complessi invece della controparte reale, può semplificare spesso gli sviluppi algebrici, fornendo una trattazione sintetica e più omogenea
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo}
 
 \sphinxstepscope
 
@@ -5506,7 +5277,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-05 dic 2024
+06 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -5608,7 +5379,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-05 dic 2024
+06 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -5771,7 +5542,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-05 dic 2024
+06 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -6470,7 +6241,7 @@ Nel campo reale, per ogni \(b > 0\),
 \label{\detokenize{ch/exponential_logarithm:funzione-esponenziale-e-logaritmo-di-variabile-reale}}
 
 \subsection{Funzione esponenziale, \protect\(e^x\protect\)}
-\label{\detokenize{ch/exponential_logarithm:funzione-esponenziale-e-x}}
+\label{\detokenize{ch/exponential_logarithm:funzione-esponenziale-e-x}}\label{\detokenize{ch/exponential_logarithm:math-hs-exp-def}}
 \sphinxAtStartPar
 \sphinxstylestrong{Definizione.} Per ogni \(x \in \mathbb{R}\), è possibile dare due definizioni equivalenti della \(e^x\), che può essere intesa come l’elevamento a potenza della {\hyperref[\detokenize{ch/series:math-hs-series-e-euler}]{\sphinxcrossref{\DUrole{std,std-ref}{\(e\) di Eulero}}}} con la variabile indipendente \(x\) come esponente.
 \begin{itemize}
@@ -6653,7 +6424,444 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-05 dic 2024
+06 dic 2024
+
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{sd-col}
+\begin{sphinxuseclass}{sd-col-auto}
+\begin{sphinxuseclass}{sd-d-flex-row}
+\begin{sphinxuseclass}{sd-align-minor-center}
+\sphinxAtStartPar
+3 min read
+
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+
+\chapter{Algebra complessa}
+\label{\detokenize{ch/algebra/complex-algebra:algebra-complessa}}\label{\detokenize{ch/algebra/complex-algebra:math-hs-algebra-complex}}\label{\detokenize{ch/algebra/complex-algebra::doc}}
+\sphinxAtStartPar
+In questa sezione viene introdotto l’insieme dei numeri complessi e le operazioni su di essi che permettono di definire l’algebra complessa.
+
+\sphinxAtStartPar
+I numeri reali sono sottoinsieme dei numeri complessi, \(\mathbb{R} \subset \mathbb{C}\). La definizione di operazioni e funzioni, come l’esponenziale, sui numeri complessi viene data come \sphinxstylestrong{estensione ai numeri complessi} delle definizioni note sui numeri reali.
+
+\sphinxAtStartPar
+I numeri complessi risultano utili in molti ambiti della matematica e della scienza, dalla fisica all’ingegneria:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+teorema fondamentale dell’algebra
+
+\item {} 
+\sphinxAtStartPar
+rappresentazione efficace delle funzioni trigonometriche, grazie all’identità di Eulero
+
+\item {} 
+\sphinxAtStartPar
+soluzione di equazioni differenziali
+
+\item {} 
+\sphinxAtStartPar
+…
+
+\end{itemize}
+
+
+
+
+\section{Definizioni}
+\label{\detokenize{ch/algebra/complex-algebra:definizioni}}
+\sphinxAtStartPar
+I numeri complessi estendono il campo dei numeri reali, \(\mathbb{R} \subset \mathbb{C}\). Viene inizialmente definita l”\sphinxstylestrong{unità immaginaria}, \(i\), come la radice quadra di \(-1\),
+\begin{equation*}
+\begin{split}i := \sqrt{-1} \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+L’insieme dei numeri complessi, indicato con \(\mathbb{C}\), è l’insieme di quei numeri che possono essere scritti come
+\begin{equation*}
+\begin{split}z = x + i y \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+con \(x, \ y \in \mathbb{R}\).
+
+
+\subsection{Operazioni: somma e moltiplicazione}
+\label{\detokenize{ch/algebra/complex-algebra:operazioni-somma-e-moltiplicazione}}
+\sphinxAtStartPar
+I numeri complessi formano la struttura algebrica di \sphinxstylestrong{campo} con le operazioni di somma e prodotto. Dati due numeri complessi \(z_1 = x_1 + i y_1\), \(z_2 = x_2 + i y_2\), vengono definiti
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+la somma
+\begin{equation*}
+\begin{split}z_1 + z_2 = (x_1 + x_2) + i (y_1 + y_2) \ \end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+il prodotto,
+\begin{equation*}
+\begin{split}\begin{aligned}
+    z_1 \, z_2 & = (x_1 + i y_1) (x_2 + i y_2) = \\
+    & = x_1 \, x_2 - y_1 \, y_2 + i ( x_1 \, y_2 + x_2 \, y_1 )
+   \end{aligned}\end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+elevamento a potenza con esponente intero, \(n \in \mathbb{N}\),
+\begin{equation*}
+\begin{split}z^n = \underbrace{z \cdot z \cdot \dots \cdot z}_{n \text{volte}}\end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+elevamento a potenza con esponente reale \sphinxstylestrong{todo} …
+
+\end{itemize}
+
+
+\subsection{Esponenziale complesso e formula di Eulero}
+\label{\detokenize{ch/algebra/complex-algebra:esponenziale-complesso-e-formula-di-eulero}}
+\sphinxAtStartPar
+Estendendo la definizione di funzione esponenziale \(e^x\) ai numeri complessi, si può scrivere
+\begin{equation*}
+\begin{split}e^z = \sum_{n = 0}^{+\infty} \frac{z^n}{n!} = \lim_{n \rightarrow +\infty} \left( 1 + \frac{z}{n} \right)^n\end{split}
+\end{equation*}\subsubsection*{Dimostrazione dell’equivalenza delle due definizioni}
+
+
+\subsubsection{Formula di Eulero}
+\label{\detokenize{ch/algebra/complex-algebra:formula-di-eulero}}
+\sphinxAtStartPar
+Per esponenti reali, vale
+\begin{equation*}
+\begin{split}e^{i x} = \cos x + i \sin x\end{split}
+\end{equation*}\subsubsection*{Dimostrazione usando la definizione come serie}
+
+\sphinxAtStartPar
+L’identità di Eulero può essere dimostrata (\sphinxstylestrong{todo} \sphinxstyleemphasis{bisogna verificare la convergenza (uniforme) delle serie?}) confrontando le serie polinomiali (di Taylor) delle funzioni \(\cos x\), \(\sin x\) definite sui numeri reali, \(x \in \mathbb{R}\)
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \cos x & = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} + \dots \\
+  \sin x & = x - \frac{x^3}{3!} + \frac{x^5}{5!} + \dots \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+con la serie che definisce l’esponenziale complesso,
+\begin{equation*}
+\begin{split}
+  e^z & = 1 + z + \frac{z^2}{2!} + \frac{z^3}{3!} + \frac{z^4}{4!} + \frac{z^5}{5!} + \dots \\
+\end{split}
+\end{equation*}
+\sphinxAtStartPar
+valutata in \(z = i x \in \mathbb{C}\)
+\begin{equation*}
+\begin{split}\begin{aligned}
+  e^{i x} 
+      & = 1 + i x + \frac{(i x)^2}{2!} + \frac{(i x)^3}{3!} + \frac{(i x)^4}{4!} + \frac{(i x)^5}{5!} + \dots = \\
+      & = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} \dots + i \left[ x - \frac{x^3}{3!} + \frac{x^5}{5!}  + \dots \right] = \\
+      & = \cos x + i \sin x \ .
+\end{aligned}\end{split}
+\end{equation*}\subsubsection*{Dimostrazione usando la definizione come limite della successione}
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo}
+\begin{equation*}
+\begin{split}a_n = \left( 1 + \frac{z}{n} \right)^n = \left( 1 + \frac{x}{n} + i \frac{y}{n} \right)^n\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Il modulo di \(a_n\) tende a \(e^x\)
+\begin{equation*}
+\begin{split}r_n = \sqrt{\left(1+ \frac{x}{n}\right)^2 + \left(\frac{y}{n}\right)^2}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}n r_n = \sqrt{( n + x )^2 + y^2}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+l’argomento tende a \(\theta\)
+\begin{equation*}
+\begin{split}\tan \theta_n = \frac{\frac{y}{n}}{1 + \frac{x}{n}} = \frac{y}{x + n}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\begin{aligned}
+\sin \theta_n & = \frac{y}{n \, r_n} \\
+\cos \theta_n & = \frac{x+n}{n \, r_n}
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Usando la \sphinxstylestrong{formula di de Moivre}
+\begin{equation*}
+\begin{split}( \cos x + i \sin x)^n = \cos( n x ) + i \sin ( n x )\end{split}
+\end{equation*}
+\sphinxAtStartPar
+si può scrivere
+\begin{equation*}
+\begin{split}\begin{aligned}
+  a_n & = \left( 1 + \frac{x}{n} + i \frac{y}{n} \right)^n = \\
+      & = \left( r_n \cos \theta_n + i r_n \sin \theta \right)^n = \\
+      & = r_n^n \cdot \left[ \cos ( n \theta_n ) + i \sin (n \theta_n) \right]
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Per \(n \rightarrow \infty\)
+\begin{equation*}
+\begin{split}\theta_n \sim \tan \theta_n = \frac{y}{x+n} \sim \frac{y}{n}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}n \theta_n \sim y\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\begin{aligned}
+  r_n^n & = \left[ \left( 1 + \frac{x}{n} \right)^2 + \left( \frac{y}{n} \right)^2 \right]^{\frac{n}{2}} = \\
+        & = \left( 1 + \frac{x}{n} \right)^{n} \left[ 1 + \left(\frac{y}{n+x}\right)^2 \right]^{\frac{n}{2}} = \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Il primo fattore è asintotico a \(e^x\),
+\begin{equation*}
+\begin{split}\left( 1 + \frac{x}{n} \right)^n \sim e^x \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Il secondo fattore, con il «completamento della definizione di esponenziale», può essere riscritto come
+\begin{equation*}
+\begin{split}\left[ 1 + \left(\frac{y}{n+x}\right)^2 \right]^{\frac{n}{2}} = \left\{ \left[ 1 + \left(\frac{y}{n+x}\right)^2 \right]^{\left(\frac{n+x}{y}\right)^2} \right\}^{\frac{n y^2}{2(n+x)^2}} \sim e^0 = 1 \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Il termine \(r_n^n\) tende quindi a \(e^x\).
+
+\sphinxAtStartPar
+Il limite dei termini \(a_n\) della successione che definisce l’esponenziale complesso può quindi essere scritto come
+\begin{equation*}
+\begin{split}e^z = e^x \left( \cos y + i \sin y \right) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Si trova quindi l’identità di Eulero usando la proprietà delle potenze estesa ai numeri complessi,
+\begin{equation*}
+\begin{split}e^z = e^{x + iy} = e^x \, e^{i y} =  e^x \left( \cos y + i \sin y \right)
+\rightarrow
+e^{iy} = \cos y + i \sin y \ .
+\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{todo} …
+
+
+\subsection{Rappresentazione nel piano complesso}
+\label{\detokenize{ch/algebra/complex-algebra:rappresentazione-nel-piano-complesso}}
+\sphinxAtStartPar
+Ogni numero complesso \(z \subset \mathbb{C}\) può essere associato a un punto del piano complesso \(\mathbb{C}\); l’uso di coordinate cartesiane o polari per la descrizione dei punti del piano \(\mathbb{R}^2\) suggerisce due tipi di rappresentazioni per un numero complesso:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+la \sphinxstylestrong{rappresentazione cartesiana} associa l’asse delle ascisse alla parte reale \(x\) e l’asse delle ordinate alla parte immaginaria \(y\),
+\begin{equation*}
+\begin{split}z = x + i y\end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+la \sphinxstylestrong{rappresentazione polare}; usando la legge di trasformazione tra coordinate polari \((r, \theta)\) e coordinate cartesiante \((x,y)\)
+\begin{equation*}
+\begin{split}\begin{cases}
+    x = r \cos \theta \\
+    y = r \sin \theta
+  \end{cases}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e la formula di Eulero, \(e^{i \theta} = \cos \theta + i \theta\), è possibile scrivere un numero complesso in forma polare,
+\begin{equation*}
+\begin{split}z = x + i y = r \cos \theta + i r \sin \theta = r \left( \cos \theta + i \sin \theta \right) = r e^{i \theta} \ .\end{split}
+\end{equation*}
+\end{itemize}
+
+\begin{sphinxadmonition}{note}{Nota:}
+\sphinxAtStartPar
+Le due rappresentazioni non sono equivalenti. Mentre la rappresentazione cartesiana permette di creare una relazione biunivoca tra i numeri complessi \(z = x + i \ y\) e i punti nel piano \((x, \ y)\), la rappresentazione polare assegna infiniti numeri complessi, seppur di uguale valore \(r \, e^{i \theta} = r \, e^{i (\theta + n \, 2 \pi)}\), con \(n \in \mathbb{Z}\) allo stesso punto nello spazio.
+\end{sphinxadmonition}
+
+
+\section{Operazioni con i numeri complessi}
+\label{\detokenize{ch/algebra/complex-algebra:operazioni-con-i-numeri-complessi}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+somma
+\begin{equation*}
+\begin{split}z_1 + z_2 = (x_1 + x_2) + i(y_1 + y_2)\end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+prodotto
+\begin{equation*}
+\begin{split}z_1 \ z_2 = r_1 \, r_2 e^{i(\theta_1 + \theta_2)}\end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+complesso coniugato
+\begin{equation*}
+\begin{split}z^* = x - i y = r e^{-i\theta} \end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+valore assoluto
+\begin{equation*}
+\begin{split}|z| = \sqrt{x^2 + y^2} = r = \sqrt{z^* z}\end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+potenza ed esponenziale
+\begin{equation*}
+\begin{split}z^a = \left(r e^{i\theta} \right)^a = r^a e^{i a \theta}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}a^{i y} = \left(e^{\ln a} \right)^{iy} = e^{i y \ln a} = \cos ( y \ln a ) + i \sin ( y \ln a )\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}a^z = a^{x+iy} = a^x a^{iy} = a^x \left( \cos ( y \ln a ) + i \sin ( y \ln a ) \right)\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}z^w = \left(r e^{i \theta}\right)^{( u + i v )} = r^{u+iv} e^{i \theta (u+iv)} = r^u e^{-\theta v} e^{i \left( v \ln r + \theta u \right)} \end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{todo} discutere il caso di potenze intere, potenze razionali, potenze irrazionali,… \sphinxstyleemphasis{con grafico}
+
+\item {} 
+\sphinxAtStartPar
+logaritmo, con base reale positiva, \(a > 0\)
+\begin{equation*}
+\begin{split}\log_a z = \log_a \left( r \, e^{i ( \theta + n \, 2 \pi )} \right) = \log_a r + \log_a e^{i (\theta + n \, 2 \pi )} = \log_a r + i \, \frac{1}{\ln a} \, \left( \theta + n \, 2 \pi \right)\end{split}
+\end{equation*}
+\sphinxAtStartPar
+avendo usato le proprietà dei logaritmi
+\begin{equation*}
+\begin{split}\begin{aligned}
+     \log ( a b ) & = \log a + \log b \\
+     \log_a b & = \frac{\log_c b}{\log_c a}
+   \end{aligned}\end{split}
+\end{equation*}
+\end{itemize}
+
+
+
+
+\section{Altri argomenti/proprietà}
+\label{\detokenize{ch/algebra/complex-algebra:altri-argomenti-proprieta}}\begin{equation*}
+\begin{split}\begin{aligned}
+  \text{re} \{ z \} & = \frac{1}{2} \left( z + z^* \right) \\
+  \text{im} \{ z \} & = \frac{1}{2} \left( z - z^* \right) \\
+\end{aligned}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}e^{i \alpha} e^{i \beta} = e^{i (\alpha + \beta)}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\left( e^{i \alpha} \right)^n = e^{i n \alpha}\end{split}
+\end{equation*}
+
+\subsection{Formula di de Moivre}
+\label{\detokenize{ch/algebra/complex-algebra:formula-di-de-moivre}}\begin{equation*}
+\begin{split}(\cos x + i \sin x)^n = \cos(nx) + i \sin(nx) \ , \quad n \in \mathbb{Z}\end{split}
+\end{equation*}\subsubsection*{Dimostrazione per induzione}
+
+\sphinxAtStartPar
+Per \(n \in \mathbb{N}\), si procede per induzione \sphinxstylestrong{todo} \sphinxstyleemphasis{aggiungere i capitoli sulla logica? E un riferimento ad essi?} Per \(n = 1\) la formula di de Moivre si riduce a un’identità. Supponiamo quindi che sia valida per un intero \(n > 1\) e verifichiamo se questo implica che sia valida anche per \(n+1\)
+\begin{equation*}
+\begin{split}\begin{aligned}
+  (\cos x + i \sin x)^{n+1} & = (\cos x + i \sin x)^n \, (\cos x + i \sin x) = \\
+                            & = \left(\cos (nx)+ i \sin (nx) \right) \, (\cos x + i \sin x) = \\
+                            & = \cos(nx) \cos x - \sin(nx) \sin x + i \left( \cos(nx) \sin x + \sin(nx) \cos x \right) = \\
+                            & = \cos( (n+1)x ) + i \sin( (n+1) x ) \ .
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Per \(n = 0\), la formula di de Moivre si riduce all’identità \(1 \equiv 1\).
+
+\sphinxAtStartPar
+Per \(m := -n \in \mathbb{N}\), la formula di de Moivre può essere verificata usando la formula di de Moivre per \(m > 0\) e razionalizzando la frazione,
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \left( \cos x + i \sin x \right)^{n} & = \frac{1}{\left( \cos x + i \sin x \right)^m} = \\
+   & = \frac{1}{\left( \cos (m x) + i \sin (m x) \right)} = \\
+   & = \frac{\cos( m x) - i \sin (m x)}{\underbrace{\cos^2(mx) + \sin^2(mx)}_{=1}} = \cos(mx) - i \sin(mx) = \cos(nx) + i \sin(nx) \ .
+\end{aligned}\end{split}
+\end{equation*}
+
+\subsection{Teorema fondamentale dell’algebra}
+\label{\detokenize{ch/algebra/complex-algebra:teorema-fondamentale-dell-algebra}}
+\sphinxAtStartPar
+Ogni polinomio a coefficienti reali (\sphinxstylestrong{todo} o anche complessi) di grado \(n\), \(p_n(x) = a_n x^n + a_{n-1} x^{n-1} + \dots a_1 x + a_0\) può essere fattorizzato come prodotto di \(n\) binomi
+\begin{equation*}
+\begin{split}p_n(x) = a_n ( x - z_1 )( x - z_2 )\dots( x - z_n) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e i numeri \(z_k \in \mathbb{C}\), \(k = 1:n\), sono chiamati \sphinxstylestrong{zeri} del polinomio.
+
+\sphinxAtStartPar
+Come diretta conseguenza, ogni equazione polinomiale di grado \(n\), \(p_n(x) = 0\), ammette \(n\) soluzioni complesse coincidenti con gli zeri \(z_k\) del polinomio \(p_n(x)\).
+
+
+\section{Equazioni e disequazioni con i numeri complessi}
+\label{\detokenize{ch/algebra/complex-algebra:equazioni-e-disequazioni-con-i-numeri-complessi}}
+\sphinxAtStartPar
+Le equazioni e le disequazioni con i numeri complessi possono essere ricondotti a problemi che coinvolgono una coppia di variabili reali, tipicamente le componenti reale e immaginaria, o il modulo e l’argomento, che descrivono il piano dei numeri complessi.
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo}
+
+\sphinxstepscope
+
+\begin{sphinxuseclass}{sd-container-fluid}
+\begin{sphinxuseclass}{sd-sphinx-override}
+\begin{sphinxuseclass}{sd-p-0}
+\begin{sphinxuseclass}{sd-mt-2}
+\begin{sphinxuseclass}{sd-mb-4}
+\begin{sphinxuseclass}{sd-row}
+\begin{sphinxuseclass}{sd-row-cols-2}
+\begin{sphinxuseclass}{sd-gx-2}
+\begin{sphinxuseclass}{sd-gy-1}
+\begin{sphinxuseclass}{sd-col}
+\begin{sphinxuseclass}{sd-d-flex-row}
+\begin{sphinxuseclass}{sd-align-minor-center}
+\begin{sphinxuseclass}{sd-container-fluid}
+\begin{sphinxuseclass}{sd-sphinx-override}
+\begin{sphinxuseclass}{sd-row}
+\begin{sphinxuseclass}{sd-row-cols-2}
+\begin{sphinxuseclass}{sd-row-cols-xs-2}
+\begin{sphinxuseclass}{sd-row-cols-sm-3}
+\begin{sphinxuseclass}{sd-row-cols-md-3}
+\begin{sphinxuseclass}{sd-row-cols-lg-3}
+\begin{sphinxuseclass}{sd-gx-3}
+\begin{sphinxuseclass}{sd-gy-1}
+\begin{sphinxuseclass}{sd-col}
+\begin{sphinxuseclass}{sd-col-auto}
+\begin{sphinxuseclass}{sd-d-flex-row}
+\begin{sphinxuseclass}{sd-align-minor-center}
+\sphinxAtStartPar
+basics
+
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{sd-col}
+\begin{sphinxuseclass}{sd-col-auto}
+\begin{sphinxuseclass}{sd-d-flex-row}
+\begin{sphinxuseclass}{sd-align-minor-center}
+\sphinxAtStartPar
+06 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -6740,7 +6948,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-05 dic 2024
+06 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -6751,7 +6959,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-2 min read
+4 min read
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -6784,12 +6992,37 @@ basics
 \label{\detokenize{ch/calculus:introduzione-al-calcolo}}\label{\detokenize{ch/calculus:math-hs-calculus}}\label{\detokenize{ch/calculus::doc}}
 \sphinxAtStartPar
 Il calcolo si occupa della variazione continua di grandezze matematiche che possono essere rappresentate come funzioni di variabili indipendenti.
+\subsubsection*{Argomenti del capitolo}
+
+\sphinxAtStartPar
+In questa sezione vengono inizialmente introdotti i concetti fondamentali dell’analisi per le funzioni reali di una variabile reale, \(f: \mathbb{R} \rightarrow \mathbb{R}\) e successivamente vengono estesi al calcolo per funzioni reali di più variabili \(f: \mathbb{R}^n \rightarrow \mathbb{R}\) e al calcolo vettoriale su spazi euclidei per campi \(f: E^n \rightarrow V\).
+
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-analysis}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Introduzione all’analisi}}}}}. Viene richiamato il concetto di \sphinxstylestrong{funzione} di variabile reale a valore reale, \(f: D \in \mathbb{R} \rightarrow \mathbb{R}\), e la sua rappresentazione grafica in un piano cartesiano. 
+Viene introdotto il concetto di \sphinxstylestrong{limite} per funzioni reali e viene usato per definire le \sphinxstylestrong{funzioni continue}. Vengono quindi presentati alcuni teoremi sulle funzioni continue e sui limiti che ne permettono il calcolo. Vengono presentate le forme indeterminate al finito e all’infinito, e calcolati i \sphinxstyleemphasis{limiti fondamentali}.
+
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Calcolo differenziale}}}}}. Usando i concetti di limite della sezione precedente, viene introdotto il concetto di \sphinxstylestrong{derivata} di una funzione reale, e viene data una sua interpretazione geometrica, legata alla retta tangente al grafico della funzione. Seguono alcune proprietà e teoremi sulle derivate che permettono di valutare le \sphinxstyleemphasis{derivate fondamentali} e combinare questi risultati per il calcolo della derivata di una funzione qualsiasi. Infine viene introdotto il concetto di derivate di ordine superiore, e vengono mostrate alcune applicazioni: ricerca di punti di estremo locale e di flesso nello studio di funzione, ottimizzazione, approssimazione locale tramite sviluppi in serie polinomiali
+
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Calcolo integrale}}}}}. Viene data la definizione di \sphinxstylestrong{integrale di Riemann} e una sua interpretazione geometrica, legata all’area sottesa dal grafico della funzione. Seguono alcune proprietà degli integrali che permettono di definire l’integrale definito e indefinito, e la primitiva di una funzione. Viene presentato il \sphinxstylestrong{teorema fondamentale del calcolo infinitesimale}, che permette di riconoscere l’operazione di integrazione come inversa dell’integrazione. Usando questo risultato, vengono valutati gli \sphinxstyleemphasis{integrali fondamentali}; poche regole di integrazione permettono poi di calcolare l’integrale di funzioni generiche. Infine vengono mostrate alcune applicazioni: … \sphinxstylestrong{todo}
+
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/ode:ode-hs}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Equazioni differenziali ordinarie}}}}}. \sphinxstylestrong{todo}
+
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/multivariable-calculus:multivariable-calculus}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Introduzione al calcolo multi\sphinxhyphen{}variabile}}}}}.
+
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/vector-calculus:vector-calculus}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Introduzione al calcolo vettoriale su spazi euclidei}}}}}.
+\subsubsection*{Dipendenze}
+\subsubsection*{Breve storia dello sviluppo del calcolo}
 
 \sphinxAtStartPar
 Gli strumenti matematici del calcolo vengono sviluppati e formalizzati tra la fine del XVII secolo e il XIX secolo, come strumenti necessari alla costruzione delle teorie fisiche della meccanica razionale di Newton prima, e della meccanica dei mezzi continui (fluidi e solidi) poi.
 
 \sphinxAtStartPar
-Newton introduce i concetti fondamentali calcolo differenziale e integrale delle funzioni di una variabile, qui chiamato {\hyperref[\detokenize{ch/infinitesimal_calculus:infinitesimal-calculus}]{\sphinxcrossref{\DUrole{std,std-ref}{calcolo infinitesimale}}}}, necessari allo sviluppo della meccanica: nella meccanica di Newton, il moto di un sistema meccanico è descritto dai suoi gradi di libertà in funzione della variabile tempo, e le equazioni che ne governano il moto sono equazioni differenziali ordinarie. Il lavoro di Newton, e il lavoro contemporaneo di Leibniz, parte dalla {\hyperref[\detokenize{ch/analytic_geometry:geometry-analytic}]{\sphinxcrossref{\DUrole{std,std-ref}{geometria analitica}}}}, che permette di associare una curva a una funzione, e sviluppa la risposta ad alcuni problemi riguardanti la geometria delle curve, come il calcolo della tangente a una curva, la ricerca dei minimi e dei massimi di una funzione o il calcolo delle aree.
+Newton introduce i concetti fondamentali calcolo differenziale e integrale delle funzioni di una variabile, qui chiamato \DUrole{xref,myst}{calcolo infinitesimale}, necessari allo sviluppo della meccanica: nella meccanica di Newton, il moto di un sistema meccanico è descritto dai suoi gradi di libertà in funzione della variabile tempo, e le equazioni che ne governano il moto sono equazioni differenziali ordinarie. Il lavoro di Newton, e il lavoro contemporaneo di Leibniz, parte dalla {\hyperref[\detokenize{ch/analytic_geometry:geometry-analytic}]{\sphinxcrossref{\DUrole{std,std-ref}{geometria analitica}}}}, che permette di associare una curva a una funzione, e sviluppa la risposta ad alcuni problemi riguardanti la geometria delle curve, come il calcolo della tangente a una curva, la ricerca dei minimi e dei massimi di una funzione o il calcolo delle aree.
 
 \sphinxAtStartPar
 I risultati del calcolo differenziale e integrale vengono connessi tra di loro dal \sphinxstylestrong{teorema fondamentale del calcolo} (\sphinxstylestrong{todo} aggiungere riferimento).
@@ -6834,77 +7067,35 @@ Cauchy contribuì inoltre alla definizione rigorosa dei fondamenti del calcolo, 
 \sphinxstepscope
 
 
-\chapter{Calcolo infinitesimale}
-\label{\detokenize{ch/infinitesimal_calculus:calcolo-infinitesimale}}\label{\detokenize{ch/infinitesimal_calculus:infinitesimal-calculus}}\label{\detokenize{ch/infinitesimal_calculus::doc}}
-\sphinxAtStartPar
-Il calcolo infinitesimale si occupa dello studio \sphinxstyleemphasis{delle variazioni con continuità delle grandezze} \sphinxstylestrong{todo}.
-
-\sphinxAtStartPar
-Questo capitolo presenta il calcolo infinitesimale per le funzioni reali di una variabile reale, \(f: D \in \mathbb{R} \rightarrow \mathbb{R}\), come inizialmente formulate da Newton e Lebniz alla fine del XVII secolo nell’ambito dello sviluppo della \sphinxhref{https://basics2022.github.io/bbooks-physics-hs/ch/mechanics.html}{meccanica classica}, e successivamente formalizzate nel XIX secolo grazie all’opera, tra gli altri, di Cauchy e Weierstrass. Infine vengono introdotte le equazioni differenziali ordinarie. \sphinxstylestrong{todo} \sphinxstyleemphasis{due parole sull’importanza delle equazioni differenziali?}
-
-\sphinxAtStartPar
-La presentazione degli argomenti è invertita rispetto a questo ordine cronologico per rispettare un ordine logico: prima vengono presentati alcuni fondamenti dell”\sphinxstylestrong{analisi}, come sviluppati da Cauchy e Weierstrass nel XIX secolo; successivamente, questi concetti vengono utilizzati per definire e dare fondamento teorico ai concetti del \sphinxstylestrong{calcolo differenziale} e \sphinxstylestrong{integrale}, introdotti più di un secolo prima da Newton e Leibniz partendo da risultati di geometria analitica.
-
-
-
-\sphinxAtStartPar
-\sphinxstylestrong{Argomenti del capitolo.}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-{\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-analysis}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Introduzione all’analisi}}}}}. Viene richiamato il concetto di \sphinxstylestrong{funzione} di variabile reale a valore reale, \(f: D \in \mathbb{R} \rightarrow \mathbb{R}\), e la sua rappresentazione grafica in un piano cartesiano.
-
-\sphinxAtStartPar
-Viene introdotto il concetto di \sphinxstylestrong{limite} per funzioni reali e viene usato per definire le \sphinxstylestrong{funzioni continue}. Vengono quindi presentati alcuni teoremi sulle funzioni continue e sui limiti che ne permettono il calcolo. Vengono presentate le forme indeterminate al finito e all’infinito, e calcolati i \sphinxstyleemphasis{limiti fondamentali}.
-
-\item {} 
-\sphinxAtStartPar
-{\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Calcolo differenziale}}}}}. Usando i concetti di limite della sezione precedente, viene introdotto il concetto di \sphinxstylestrong{derivata} di una funzione reale, e viene data una sua interpretazione geometrica, legata alla retta tangente al grafico della funzione. Seguono alcune proprietà e teoremi sulle derivate che permettono di valutare le \sphinxstyleemphasis{derivate fondamentali} e combinare questi risultati per il calcolo della derivata di una funzione qualsiasi. Infine viene introdotto il concetto di derivate di ordine superiore, e vengono mostrate alcune applicazioni: ricerca di punti di estremo locale e di flesso nello studio di funzione, ottimizzazione, approssimazione locale tramite sviluppi in serie polinomiali
-
-\item {} 
-\sphinxAtStartPar
-{\hyperref[\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Calcolo integrale}}}}}. Viene data la definizione di \sphinxstylestrong{integrale di Riemann} e una sua interpretazione geometrica, legata all’area sottesa dal grafico della funzione. Seguono alcune proprietà degli integrali che permettono di definire l’integrale definito e indefinito, e la primitiva di una funzione. Viene presentato il \sphinxstylestrong{teorema fondamentale del calcolo infinitesimale}, che permette di riconoscere l’operazione di integrazione come inversa dell’integrazione. Usando questo risultato, vengono valutati gli \sphinxstyleemphasis{integrali fondamentali}; poche regole di integrazione permettono poi di calcolare l’integrale di funzioni generiche. Infine vengono mostrate alcune applicazioni: … \sphinxstylestrong{todo}
-
-\item {} 
-\sphinxAtStartPar
-{\hyperref[\detokenize{ch/ode:ode-hs}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Equazioni differenziali ordinarie}}}}}. \sphinxstylestrong{todo}
-
-\end{itemize}
-
-
-
-\sphinxstepscope
-
-
-\section{Introduzione all’analisi}
+\chapter{Introduzione all’analisi}
 \label{\detokenize{ch/infinitesimal_calculus/analysis:introduzione-all-analisi}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-analysis}}\label{\detokenize{ch/infinitesimal_calculus/analysis::doc}}
 \sphinxAtStartPar
-In questa sezione viene richiamato il concetto di funzione introdotto nella sezione {\hyperref[\detokenize{ch/precalculus:math-hs-precalculus}]{\sphinxcrossref{\DUrole{std,std-ref}{Precalcolo}}}}. Viene introdotto il concetto di {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits}]{\sphinxcrossref{\DUrole{std,std-ref}{limite}}}} e definito in termini topologici (intervalli, punti di accumulazione, insiemi aperti e chiusi,…). Il concetto di limite viene utilizzato per dare una definizione di {\hyperref[\detokenize{ch/infinitesimal_calculus::doc}]{\sphinxcrossref{\DUrole{doc,std,std-doc}{funzione continua}}}}. Vengono poi presentati alcuni teoremi e proprietà di limiti e funzioni continue.
+In questa sezione viene richiamato il concetto di funzione introdotto nella sezione {\hyperref[\detokenize{ch/precalculus:math-hs-precalculus}]{\sphinxcrossref{\DUrole{std,std-ref}{Precalcolo}}}}. Viene introdotto il concetto di {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits}]{\sphinxcrossref{\DUrole{std,std-ref}{limite}}}} e definito in termini topologici (intervalli, punti di accumulazione, insiemi aperti e chiusi,…). Il concetto di limite viene utilizzato per dare una definizione di \DUrole{xref,myst}{funzione continua}. Vengono poi presentati alcuni teoremi e proprietà di limiti e funzioni continue.
 
 
 
 
-\subsection{Funzioni reali a variabile reale, \protect\(f: \mathbb{R} \rightarrow \mathbb{R}\protect\)}
+\section{Funzioni reali a variabile reale, \protect\(f: \mathbb{R} \rightarrow \mathbb{R}\protect\)}
 \label{\detokenize{ch/infinitesimal_calculus/analysis:funzioni-reali-a-variabile-reale-f-mathbb-r-rightarrow-mathbb-r}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-analysis-real-functions}}
 
-\subsubsection{Definizione}
+\subsection{Definizione}
 \label{\detokenize{ch/infinitesimal_calculus/analysis:definizione}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-analysis-real-functions-def}}
 
-\subsubsection{Rappresentazione grafica}
+\subsection{Rappresentazione grafica}
 \label{\detokenize{ch/infinitesimal_calculus/analysis:rappresentazione-grafica}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-analysis-real-functions-graph}}
 
 
 
-\subsection{Limiti}
+\section{Limiti}
 \label{\detokenize{ch/infinitesimal_calculus/analysis:limiti}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits}}
 
-\subsubsection{Cenni di topologia per il calcolo}
+\subsection{Cenni di topologia per il calcolo}
 \label{\detokenize{ch/infinitesimal_calculus/analysis:cenni-di-topologia-per-il-calcolo}}
 \sphinxAtStartPar
 \sphinxstylestrong{todo} \sphinxstyleemphasis{Punto di accumulazione e punto isolato, intorno, insiemi aperti e chiusi, limsup/liminf, max/min,… E” necessario? Il minimo indispensabile}
 
 
-\subsubsection{Definizione di limite}
+\subsection{Definizione di limite}
 \label{\detokenize{ch/infinitesimal_calculus/analysis:definizione-di-limite}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-def}}
 
 
@@ -6941,10 +7132,10 @@ dove la condizione sull’intorno di un punto all’infinito per funzioni reali 
 dove la condizione sull’intorno di un punto all’infinito per funzioni reali può essere riscritta come \(x < R\) per un intorno di \(-\infty\) o \(x > R\) per un intorno di \(+\infty\). Se \(f(x) > M\) allora il limite tende a \(+\infty\), se \(f(x) < -M\) allora il limite tende a \(-\infty\).
 
 
-\subsection{Funzioni continue}
+\section{Funzioni continue}
 \label{\detokenize{ch/infinitesimal_calculus/analysis:funzioni-continue}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-continuous-fun}}
 
-\subsubsection{Definizione}
+\subsection{Definizione}
 \label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-continuous-fun-def}}\label{\detokenize{ch/infinitesimal_calculus/analysis:id1}}
 \sphinxAtStartPar
 Una funzione reale \(f: D \in \mathbb{R} \rightarrow \mathbb{R}\) è continua in un punto \(x_0 \in D\) se la funzione è definita nel punto, se esiste il limite della fuzione e coincide con il valore della funzione
@@ -6955,10 +7146,10 @@ Una funzione reale \(f: D \in \mathbb{R} \rightarrow \mathbb{R}\) è continua in
 Una funzione reale è continua in un dominio \sphinxstylestrong{todo o insieme?} se è continua in ogni punto del dominio.
 
 
-\subsubsection{Teoremi}
+\subsection{Teoremi}
 \label{\detokenize{ch/infinitesimal_calculus/analysis:teoremi}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-continuous-fun-thms}}
 
-\paragraph{Teorema di Weierstrass}
+\subsubsection{Teorema di Weierstrass}
 \label{\detokenize{ch/infinitesimal_calculus/analysis:teorema-di-weierstrass}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-continuous-fun-thms-weierstrass}}\label{None:thm:infinitesimal-calculus:continuous-fun:thms:weierstrass}
 \begin{sphinxadmonition}{note}{Theorem  (Teorema di Weierstrass)}
 
@@ -6972,7 +7163,7 @@ Data una funzione reale continua \(f: [a,b] \rightarrow \mathbb{R}\) definita su
 \sphinxstylestrong{todo} \sphinxstyleemphasis{Dimostrazione? Discussione più intuitiva? Figura?}
 
 
-\paragraph{Teorema della permanenza del segno}
+\subsubsection{Teorema della permanenza del segno}
 \label{\detokenize{ch/infinitesimal_calculus/analysis:teorema-della-permanenza-del-segno}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-continuous-fun-thms-sign}}\label{None:thm:infinitesimal-calculus:continuous-fun:thms:sign}
 \begin{sphinxadmonition}{note}{Theorem  (Teorema della permanenza del segno)}
 
@@ -6998,7 +7189,7 @@ Scegliendo \(\varepsilon = \ell\), si ottiene \(|f(x) - \ell| < \ell\) per i val
 \(0 < f(x) < 2 \ell \ .\)
 
 
-\paragraph{Teorema degli zeri}
+\subsubsection{Teorema degli zeri}
 \label{\detokenize{ch/infinitesimal_calculus/analysis:teorema-degli-zeri}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-continuous-fun-thms-zeros}}\label{None:thm:infinitesimal-calculus:continuous-fun:thms:zeros}
 \begin{sphinxadmonition}{note}{Theorem  (Teorema degli zeri)}
 
@@ -7025,7 +7216,7 @@ con metodo di bisezione? \sphinxstyleemphasis{serve teorema di conservazione del
 \end{itemize}
 
 
-\paragraph{Teorema dei valori intermedi}
+\subsubsection{Teorema dei valori intermedi}
 \label{\detokenize{ch/infinitesimal_calculus/analysis:teorema-dei-valori-intermedi}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-continuous-fun-thms-intermediate}}\label{None:thm:infinitesimal-calculus:continuous-fun:thms:intermediate}
 \begin{sphinxadmonition}{note}{Theorem  (Teorema dei valori intermedi)}
 
@@ -7048,10 +7239,10 @@ Sia \(f(a) < f(b)\) e \(y_0\) un valore compreso \(f(a) < y_0 < f(b)\). Si defin
 e che quindi \(\exists x_0 \in (a,b)\) t.c \(g(x_0) = 0\) o equivalentemente \(f(x_0) = y_0\). Da qui dimostrata la tesi che per ogni \(y_0 \in (a,b)\) esiste un \(x_0\) che sia l’argomento della funzione \(f\), che dia \(f(x_0) = y_0\).
 
 
-\subsection{Teoremi sui limiti}
+\section{Teoremi sui limiti}
 \label{\detokenize{ch/infinitesimal_calculus/analysis:teoremi-sui-limiti}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-thms}}
 
-\subsubsection{Operazioni coi limiti}
+\subsection{Operazioni coi limiti}
 \label{\detokenize{ch/infinitesimal_calculus/analysis:operazioni-coi-limiti}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-thms-operations}}
 \sphinxAtStartPar
 Dato un numero reale \(c \in \mathbb{R}\) e i limiti \(\lim_{x \rightarrow x_0} f(x) = L_1\), \(\lim_{x \rightarrow x_0} g(x) = L_2\)
@@ -7064,7 +7255,7 @@ Dato un numero reale \(c \in \mathbb{R}\) e i limiti \(\lim_{x \rightarrow x_0} 
 \end{aligned}\end{split}
 \end{equation*}
 
-\paragraph{Limiti infiniti e infinitesimi}
+\subsubsection{Limiti infiniti e infinitesimi}
 \label{\detokenize{ch/infinitesimal_calculus/analysis:limiti-infiniti-e-infinitesimi}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-thms-infinite-simal}}\begin{equation*}
 \begin{split}\begin{aligned}
  &  \lim_{x \rightarrow x_0}f(x) \rightarrow \mp \infty \ , c > 0 \quad : \qquad \lim_{x \rightarrow x_0} c \cdot f(x) = \mp \infty \\
@@ -7072,7 +7263,7 @@ Dato un numero reale \(c \in \mathbb{R}\) e i limiti \(\lim_{x \rightarrow x_0} 
 \end{aligned}\end{split}
 \end{equation*}
 
-\paragraph{Forme indeterminate}
+\subsubsection{Forme indeterminate}
 \label{\detokenize{ch/infinitesimal_calculus/analysis:forme-indeterminate}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-thms-infinite-simal-undetermined}}\begin{equation*}
 \begin{split}+\infty-\infty \quad , \quad 0 \cdot \mp \infty \quad , \quad \frac{\mp \infty}{\mp \infty} \quad , \quad \frac{0}{0} \quad , \quad 1^{\infty} \quad , \quad 0^0 \quad , \quad \infty^0\end{split}
 \end{equation*}
@@ -7080,7 +7271,7 @@ Dato un numero reale \(c \in \mathbb{R}\) e i limiti \(\lim_{x \rightarrow x_0} 
 \sphinxstylestrong{oss.} Invece non sono forme indeterminate \(0^{+\infty} \rightarrow 0\) e \(0^{-\infty} \rightarrow \infty\).
 
 
-\subsubsection{Teorema del confronto}
+\subsection{Teorema del confronto}
 \label{\detokenize{ch/infinitesimal_calculus/analysis:teorema-del-confronto}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-thms-comparison}}\label{None:thm:infinitesimal-calculus:continuous-fun:thms:comparison}
 \begin{sphinxadmonition}{note}{Theorem  (Teorema del confronto)}
 
@@ -7125,13 +7316,13 @@ e quindi per  \(\forall \varepsilon_g > 0\), \(\exists U_{x_0,\delta}\) tale che
 \sphinxstylestrong{todo} \sphinxstyleemphasis{Dimostrazione? Discussione più intuitiva? Figura?}
 
 
-\subsubsection{Teorema di de l’Hopital}
+\subsection{Teorema di de l’Hopital}
 \label{\detokenize{ch/infinitesimal_calculus/analysis:teorema-di-de-l-hopital}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-thms-hopital}}
 \sphinxAtStartPar
 Il teorema di de l’Hopital (o di Bernoulli, \sphinxstylestrong{todo} \sphinxstyleemphasis{dire due parole sulla storia? Bernoulli precettore di de l’Hopital, ricava il risultato…}) è un teorema utile per il calcolo dei limiti delle forme indeterminate \(\frac{0}{0}\) e \(\frac{\infty}{\infty}\). Poiché il teorema coinvolge il concetto di derivata, si rimanda alla sezione del {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm-hopital}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema di de l’Hopital}}}} nel capitolo sulle {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives}]{\sphinxcrossref{\DUrole{std,std-ref}{derivate}}}}.
 
 
-\subsection{Confronto di infiniti e infinitesimi}
+\section{Confronto di infiniti e infinitesimi}
 \label{\detokenize{ch/infinitesimal_calculus/analysis:confronto-di-infiniti-e-infinitesimi}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-infinite-simal}}
 \sphinxAtStartPar
 Il confronto di funzioni che tendono a zero \(f(x), g(x) \rightarrow 0\), o di funzioni che tendono all’infinito \(f(x), g(x) \rightarrow \infty\) permette di definire degli \sphinxstyleemphasis{ordini di infinitesimi o di infiniti} \sphinxstylestrong{todo} \sphinxstyleemphasis{definire meglio}, a seconda del valore del limite \(\frac{f(x)}{g(x)} = \ell\),
@@ -7155,7 +7346,7 @@ se \(\ell = 1\), si dice che \(f(x)\) e \(g(x)\) sono \sphinxstylestrong{asintot
 \end{itemize}
 
 
-\subsubsection{Calcolo dei limiti con sostituzione degli infinitesimi o degli infiniti}
+\subsection{Calcolo dei limiti con sostituzione degli infinitesimi o degli infiniti}
 \label{\detokenize{ch/infinitesimal_calculus/analysis:calcolo-dei-limiti-con-sostituzione-degli-infinitesimi-o-degli-infiniti}}
 \sphinxAtStartPar
 Se \(h(x) \sim a f(x)\), \(k(x) \sim b g(x)\) per \(x \rightarrow x_0\), e il rapporto \(\frac{a}{b}\) non è indeterminato, allora
@@ -7204,7 +7395,7 @@ che viene utilizzato nel calcolo dei limiti desiderati
 \end{itemize}
 
 
-\subsection{Limiti fondamentali}
+\section{Limiti fondamentali}
 \label{\detokenize{ch/infinitesimal_calculus/analysis:limiti-fondamentali}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-fund}}
 \sphinxAtStartPar
 In questa sezione vengono calcolati alcuni limiti fondamentali. Questi limiti possono essere considerati fondamentali come sinonimo di \sphinxstyleemphasis{«minimo da ricordare»} per poter calcolare limiti più generali utilizzando le {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-thms-operations}]{\sphinxcrossref{\DUrole{std,std-ref}{operazioni}}}} e i {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-thms}]{\sphinxcrossref{\DUrole{std,std-ref}{teoremi}}}} sui limiti, e calcolare le {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-fund}]{\sphinxcrossref{\DUrole{std,std-ref}{derivate fondamentali}}}}. Un elenco minimo di limiti fondamentali è:
@@ -7294,10 +7485,10 @@ o
 \sphinxstepscope
 
 
-\subsection{Introduzione all’analisi \sphinxhyphen{} Problemi}
+\section{Introduzione all’analisi \sphinxhyphen{} Problemi}
 \label{\detokenize{ch/infinitesimal_calculus/analysis-problems:introduzione-all-analisi-problemi}}\label{\detokenize{ch/infinitesimal_calculus/analysis-problems:infinitesimal-calculus-analysis-problems}}\label{\detokenize{ch/infinitesimal_calculus/analysis-problems::doc}}
 
-\subsubsection{Funzioni}
+\subsection{Funzioni}
 \label{\detokenize{ch/infinitesimal_calculus/analysis-problems:funzioni}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
@@ -7306,7 +7497,7 @@ dominio, grafico, dalla geometria
 \end{itemize}
 
 
-\subsubsection{Limiti}
+\subsection{Limiti}
 \label{\detokenize{ch/infinitesimal_calculus/analysis-problems:limiti}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
@@ -7323,7 +7514,7 @@ calcolo limiti con forme indeterminate fondamentali
 \end{itemize}
 
 
-\subsubsection{Funzioni continue}
+\subsection{Funzioni continue}
 \label{\detokenize{ch/infinitesimal_calculus/analysis-problems:funzioni-continue}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
@@ -7334,10 +7525,10 @@ continuità e discontinuità
 \sphinxstepscope
 
 
-\section{Derivate}
+\chapter{Derivate}
 \label{\detokenize{ch/infinitesimal_calculus/derivatives:derivate}}\label{\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives}}\label{\detokenize{ch/infinitesimal_calculus/derivatives::doc}}
 
-\subsection{Definizione}
+\section{Definizione}
 \label{\detokenize{ch/infinitesimal_calculus/derivatives:definizione}}\label{\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-def}}
 \sphinxAtStartPar
 \sphinxstylestrong{Rapporto incrementale.} Il rapporto incrementale di una funzione reale nel punto \(x\) viene definito come il rapporto tra la differenza dei valori della funzione e la differenza del valore della variabile indipendente
@@ -7353,7 +7544,7 @@ continuità e discontinuità
 \sphinxstylestrong{todo} \sphinxstyleemphasis{In generale, la derivata di una funzione reale è un’altra funzione reale.}
 
 
-\subsection{Regole di derivazione}
+\section{Regole di derivazione}
 \label{\detokenize{ch/infinitesimal_calculus/derivatives:regole-di-derivazione}}\label{\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-rules}}
 \sphinxAtStartPar
 Usando la definizione \eqref{equation:ch/infinitesimal_calculus/derivatives:eq:infinitesimal-calculus:derivatives:def} di derivata e le proprietà dei limiti, è possibile dimostrare le seguenti proprietà
@@ -7431,9 +7622,9 @@ dalla quale segue immediatamente la regola di derivazione della funzione inversa
 \begin{split} \dfrac{d f^{-1}}{d y}\bigg|_{y = f(x)} = \dfrac{1}{ \dfrac{d y}{d x}\bigg|_{x}} \ .\end{split}
 \end{equation*}
 
-\subsection{Teoremi}
+\section{Teoremi}
 \label{\detokenize{ch/infinitesimal_calculus/derivatives:teoremi}}\label{\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm}}\label{ch/infinitesimal_calculus/derivatives:thm:infinitesimal-calculus:derivatives:thm:fermat}
-\begin{sphinxadmonition}{note}{Theorem 20.2.1 (Teorema di Fermat)}
+\begin{sphinxadmonition}{note}{Theorem 24.3.1 (Teorema di Fermat)}
 
 
 
@@ -7467,7 +7658,7 @@ e da queste la dimostrazione della tesi del problema, \(f'(x_0)\).
 
 
 \label{ch/infinitesimal_calculus/derivatives:thm:infinitesimal-calculus:derivatives:thm:rolle}
-\begin{sphinxadmonition}{note}{Theorem 20.2.2 (Teorema di Rolle)}
+\begin{sphinxadmonition}{note}{Theorem 24.3.2 (Teorema di Rolle)}
 
 
 
@@ -7489,7 +7680,7 @@ i punti di massimo e di minimo sono interni all’intervallo. In questo caso, pe
 
 \end{itemize}
 \label{ch/infinitesimal_calculus/derivatives:thm:infinitesimal-calculus:derivatives:thm:cauchy}
-\begin{sphinxadmonition}{note}{Theorem 20.2.3 (Teorema di Cauchy)}
+\begin{sphinxadmonition}{note}{Theorem 24.3.3 (Teorema di Cauchy)}
 
 
 
@@ -7508,7 +7699,7 @@ Si applica il {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infin
 \sphinxAtStartPar
 continua in \([a,b]\), derivabile in \((a,b)\) e con \(h(a) = g(b) \, f(a) - f(b) \, g(a) = h(b)\).
 \label{ch/infinitesimal_calculus/derivatives:thm:infinitesimal-calculus:derivatives:thm:lagrange}
-\begin{sphinxadmonition}{note}{Theorem 20.2.4 (Theorema di Lagrange)}
+\begin{sphinxadmonition}{note}{Theorem 24.3.4 (Theorema di Lagrange)}
 
 
 
@@ -7522,7 +7713,7 @@ Data la funzione \(f, g: [a,b] \rightarrow \mathbb{R}\) continua in \([a,b]\) e 
 \sphinxAtStartPar
 Si applica il {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm-lagrange}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema di Cauhcy}}}} scegliendo la funzione \(g(x) = x\).
 \label{ch/infinitesimal_calculus/derivatives:thm:infinitesimal-calculus:derivatives:thm:hopital}
-\begin{sphinxadmonition}{note}{Theorem 20.2.5 (Teorema di de l’Hopital )}
+\begin{sphinxadmonition}{note}{Theorem 24.3.5 (Teorema di de l’Hopital )}
 
 
 
@@ -7559,7 +7750,7 @@ allora
 \sphinxstylestrong{Oss.} Il teorema di de l’Hopital può essere applicato anche in successione, più di una volta, fermandosi al primo rapporto di derivate dello stesso ordine che non produce una forma indeterminata.
 
 
-\subsection{Derivate fondamentali}
+\section{Derivate fondamentali}
 \label{\detokenize{ch/infinitesimal_calculus/derivatives:derivate-fondamentali}}\label{\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-fund}}
 \sphinxAtStartPar
 Usando i {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-fund}]{\sphinxcrossref{\DUrole{std,std-ref}{limiti fondamentali}}}}, vengono calcolate le derivate fondamentali, che a loro volta permettono il calcolo degli {\hyperref[\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-fund}]{\sphinxcrossref{\DUrole{std,std-ref}{integrali fondamentali}}}}. Le derivate fondamentali e la loro combinazione con le {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-rules}]{\sphinxcrossref{\DUrole{std,std-ref}{regole di derivazione}}}} permettono la derivazione di funzioni generiche. Le derivate fondamentali sono:
@@ -7637,16 +7828,16 @@ Usando le formule di somma delle funzioni armoniche, \sphinxstylestrong{todo} re
 \end{aligned}\end{split}
 \end{equation*}
 
-\subsection{Derivate di ordine superiore}
+\section{Derivate di ordine superiore}
 \label{\detokenize{ch/infinitesimal_calculus/derivatives:derivate-di-ordine-superiore}}\label{\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-higher}}
 \sphinxAtStartPar
 Nel calcolo delle derivate di ordine superiore non c’è nulla di speciale: una volta che si è in grado di calcolare la derivata di una funzione reale, la derivata di ordine \(n\) viene calcolata applicando \(n\) volte l’operatore derivata alla funzione.
 
 
-\subsection{Applicazioni}
+\section{Applicazioni}
 \label{\detokenize{ch/infinitesimal_calculus/derivatives:applicazioni}}\label{\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-applications}}
 
-\subsubsection{Espansioni in serie di Taylor e MacLaurin}
+\subsection{Espansioni in serie di Taylor e MacLaurin}
 \label{\detokenize{ch/infinitesimal_calculus/derivatives:espansioni-in-serie-di-taylor-e-maclaurin}}\label{\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-taylor}}
 \sphinxAtStartPar
 Le espansioni in serie di Taylor e di MacLaurin sono serie polinomiali che forniscono un”\sphinxstylestrong{approssimazione locale} di una funzione, \sphinxstyleemphasis{valida nell’intorno} (\sphinxstylestrong{todo} valutare questa espressione) di un punto.
@@ -7665,7 +7856,7 @@ La serie di MacLaurin è la serie di Taylor centrata in \(x_0 = 0\).
 \sphinxAtStartPar
 La serie di Taylor troncata al \(n\)\sphinxhyphen{}esimo termine fornisce un’approssimazione locale della funzione \(f(x)\) di ordine \(n\), nel senso definito dal seguente teorema.
 \label{ch/infinitesimal_calculus/derivatives:thm:infinitesimal-calculus:derivatives:taylor}
-\begin{sphinxadmonition}{note}{Theorem 20.2.6 (Approssimazione locale)}
+\begin{sphinxadmonition}{note}{Theorem 24.6.1 (Approssimazione locale)}
 
 
 \begin{equation*}
@@ -7697,7 +7888,7 @@ o in maniera equivalente
 \$\(f(x) = T[f(x), x_0] + o\left((x-x_0)^n\right) \ .\)\$
 
 
-\paragraph{Esempi}
+\subsubsection{Esempi}
 \label{\detokenize{ch/infinitesimal_calculus/derivatives:esempi}}
 \sphinxAtStartPar
 La serie di MacLaurin per le funzioni interessate nei {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-fund}]{\sphinxcrossref{\DUrole{std,std-ref}{limiti notevoli}}}} forniscono approssimazioni locali di ordine maggiore per \(x \rightarrow 0\),
@@ -7735,18 +7926,18 @@ e^{ix} & = 1 + ix + \frac{(ix)^2}{2!} + \frac{(ix)^3}{3!} + \frac{(ix)^4}{4!} + 
 \end{aligned}\end{split}
 \end{equation*}
 
-\subsubsection{Studio di funzione}
+\subsection{Studio di funzione}
 \label{\detokenize{ch/infinitesimal_calculus/derivatives:studio-di-funzione}}
 
-\subsubsection{Ottimizzazione}
+\subsection{Ottimizzazione}
 \label{\detokenize{ch/infinitesimal_calculus/derivatives:ottimizzazione}}
 \sphinxstepscope
 
 
-\subsection{Derivate \sphinxhyphen{} Problemi}
+\section{Derivate \sphinxhyphen{} Problemi}
 \label{\detokenize{ch/infinitesimal_calculus/derivatives-problems:derivate-problemi}}\label{\detokenize{ch/infinitesimal_calculus/derivatives-problems:infinitesimal-calculus-derivatives-problems}}\label{\detokenize{ch/infinitesimal_calculus/derivatives-problems::doc}}
 
-\subsubsection{Calcolo derivate}
+\subsection{Calcolo derivate}
 \label{\detokenize{ch/infinitesimal_calculus/derivatives-problems:calcolo-derivate}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
@@ -7755,13 +7946,13 @@ derivate fondamentali, regole di derivazione
 \end{itemize}
 \phantomsection \label{exercise:ch/infinitesimal_calculus/derivatives-problems-exercise-0}
 
-\begin{sphinxadmonition}{note}{Exercise 20.2.1}
+\begin{sphinxadmonition}{note}{Exercise 24.7.1}
 
 
 \end{sphinxadmonition}
 
 
-\subsubsection{Calcolo di limiti con la regola di de l’Hopital}
+\subsection{Calcolo di limiti con la regola di de l’Hopital}
 \label{\detokenize{ch/infinitesimal_calculus/derivatives-problems:calcolo-di-limiti-con-la-regola-di-de-l-hopital}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
@@ -7770,7 +7961,7 @@ forme indeterminate \(\frac{f(x)}{g(x)}\)
 \end{itemize}
 
 
-\subsubsection{Problemi di geometria}
+\subsection{Problemi di geometria}
 \label{\detokenize{ch/infinitesimal_calculus/derivatives-problems:problemi-di-geometria}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
@@ -7779,7 +7970,7 @@ rette tangenti alle curve
 \end{itemize}
 
 
-\subsubsection{Studio di funzione}
+\subsection{Studio di funzione}
 \label{\detokenize{ch/infinitesimal_calculus/derivatives-problems:studio-di-funzione}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
@@ -7788,10 +7979,10 @@ dominio, limiti, massimi e minimi di una funzione, punti di flesso
 \end{itemize}
 
 
-\subsubsection{Problemi di ottimizzazione}
+\subsection{Problemi di ottimizzazione}
 \label{\detokenize{ch/infinitesimal_calculus/derivatives-problems:problemi-di-ottimizzazione}}\phantomsection \label{exercise:ch/infinitesimal_calculus/derivatives-problems-exercise-1}
 
-\begin{sphinxadmonition}{note}{Exercise 20.2.2}
+\begin{sphinxadmonition}{note}{Exercise 24.7.2}
 
 
 
@@ -7807,7 +7998,7 @@ Si chiede di trovare i punti di minimo e massimo, locali e assoluti, e disegnare
 \end{equation*}\end{sphinxadmonition}
 \phantomsection \label{exercise:ch/infinitesimal_calculus/derivatives-problems-exercise-2}
 
-\begin{sphinxadmonition}{note}{Exercise 20.2.3 (Problemi di geometria)}
+\begin{sphinxadmonition}{note}{Exercise 24.7.3 (Problemi di geometria)}
 
 
 
@@ -7839,7 +8030,7 @@ Data una sfera di raggio \(R\), si chiede di studiare il volume e la superficie 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/infinitesimal_calculus/derivatives-problems-exercise-3}
 
-\begin{sphinxadmonition}{note}{Exercise 20.2.4 (Problemi di economia)}
+\begin{sphinxadmonition}{note}{Exercise 24.7.4 (Problemi di economia)}
 
 
 
@@ -7848,7 +8039,7 @@ Data una sfera di raggio \(R\), si chiede di studiare il volume e la superficie 
 \end{sphinxadmonition}
 
 
-\subsubsection{Approssimazioni locali di funzioni}
+\subsection{Approssimazioni locali di funzioni}
 \label{\detokenize{ch/infinitesimal_calculus/derivatives-problems:approssimazioni-locali-di-funzioni}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
@@ -7857,15 +8048,15 @@ serie di Taylor? Esercizi su formule di errore di metodi numerici?
 \end{itemize}
 
 
-\subsubsection{Metodo di Newton}
+\subsection{Metodo di Newton}
 \label{\detokenize{ch/infinitesimal_calculus/derivatives-problems:metodo-di-newton}}
 \sphinxstepscope
 
 
-\section{Integrali}
+\chapter{Integrali}
 \label{\detokenize{ch/infinitesimal_calculus/integrals:integrali}}\label{\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals}}\label{\detokenize{ch/infinitesimal_calculus/integrals::doc}}
 
-\subsection{Definizioni}
+\section{Definizioni}
 \label{\detokenize{ch/infinitesimal_calculus/integrals:definizioni}}\label{\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-def}}
 \sphinxAtStartPar
 \sphinxstylestrong{Somma di Riemann.} Data una funzione continua \(f: [a,b] \rightarrow \mathbb{R}\) e \(P = \{ x_0, x_1, \dots x_n | a = x_0 < x_1 < \dots < x_n = b \}\) partizione dell’intervallo \([a,b]\), la somma di Riemann viene definita come
@@ -7884,7 +8075,7 @@ con \(\xi_k \in [x_{k-1}, x_k]\).
 \sphinxstylestrong{Osservazione.} Dato l’intervallo \([a,b]\), per \(\Delta x \rightarrow 0\) il numero di intervalli della partizione tende all’infinito, \(n \rightarrow \infty\).
 
 
-\subsubsection{Interpretazione geometrica}
+\subsection{Interpretazione geometrica}
 \label{\detokenize{ch/infinitesimal_calculus/integrals:interpretazione-geometrica}}
 \sphinxAtStartPar
 L’integrale definito
@@ -7895,10 +8086,10 @@ L’integrale definito
 corrisponde al valore dell”\sphinxstylestrong{area con segno} tra il grafico della funzione \(y=f(x)\) e l’asse \(x\), per valori di \(x \in [a,b]\). Se la funzione è positiva in un intervallo, il contributo dell’integrale sull’intervallo è positivo; se la funzione è negativa in un intervallo, il contributo dell’integrale sull’intervallo è negativo.
 
 
-\subsubsection{Integrale definito}
+\subsection{Integrale definito}
 \label{\detokenize{ch/infinitesimal_calculus/integrals:integrale-definito}}\label{\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-def-definite}}
 
-\paragraph{Proprietà dell’integrale definito}
+\subsubsection{Proprietà dell’integrale definito}
 \label{\detokenize{ch/infinitesimal_calculus/integrals:proprieta-dell-integrale-definito}}\label{\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-def-definite-prop}}\phantomsection\label{\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-def-indefinite}}
 \sphinxAtStartPar
 Dalla definizione \eqref{equation:ch/infinitesimal_calculus/integrals:infinitesimal-calculus:integrals:riemann:def} dell’integrale di Riemann seguono immediatamente le seguenti proprietà:
@@ -7936,7 +8127,7 @@ scambio degli estremi di integrazione
 \begin{split}\int_{x=a}^{b} f(x) dx = - \int_{x=b}^{a} f(x) \, dx\end{split}
 \end{equation}
 
-\subsubsection{Integrale indefinito}
+\subsection{Integrale indefinito}
 \label{\detokenize{ch/infinitesimal_calculus/integrals:integrale-indefinito}}
 \sphinxAtStartPar
 Usando la proprietà \eqref{equation:ch/infinitesimal_calculus/integrals:infinitesimal-calculus:integrals:prop:add} di additività sull’intervallo dell’integrale definito,
@@ -7972,11 +8163,11 @@ L”\sphinxstylestrong{integrale indefinito} di una funzione \(f(x)\) viene defi
 dove la costante additiva \(C\) tiene conto dell’arbitrarietà appena discussa.
 
 
-\subsection{Teoremi}
+\section{Teoremi}
 \label{\detokenize{ch/infinitesimal_calculus/integrals:teoremi}}\label{\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-thm}}
 
 \label{ch/infinitesimal_calculus/integrals:integrals:thm:avg}
-\begin{sphinxadmonition}{note}{Theorem 20.3.1 (Teorema della media)}
+\begin{sphinxadmonition}{note}{Theorem 25.2.1 (Teorema della media)}
 
 
 
@@ -7992,7 +8183,7 @@ Sia \(f: [a,b] \in \mathbb{R} \rightarrow \mathbb{R}\) una funzione continua su 
 
 
 \label{ch/infinitesimal_calculus/integrals:integrals:thm:fund}
-\begin{sphinxadmonition}{note}{Theorem 20.3.2 (Teorema fondamentale del calcolo infinitesimale)}
+\begin{sphinxadmonition}{note}{Theorem 25.2.2 (Teorema fondamentale del calcolo infinitesimale)}
 
 
 \begin{equation*}
@@ -8010,7 +8201,7 @@ Sia \(f: [a,b] \in \mathbb{R} \rightarrow \mathbb{R}\) una funzione continua su 
 & = \lim_{\varepsilon \rightarrow 0 } f(\xi) = f(x) . \\
 \end{aligned}\end{split}
 \end{equation*}\label{ch/infinitesimal_calculus/integrals:integrals:thm:fund:reynolds}
-\begin{sphinxadmonition}{note}{Theorem 20.3.3 (Derivata su dominio dipendente dalla variabile indipendente)}
+\begin{sphinxadmonition}{note}{Theorem 25.2.3 (Derivata su dominio dipendente dalla variabile indipendente)}
 
 
 
@@ -8033,7 +8224,7 @@ Sia \(x \in D\), e gli estremi di integrazione \(a(x)\), \(b(x)\) \sphinxstylest
 \end{aligned}\end{split}
 \end{equation*}
 
-\subsection{Integrali fondamentali}
+\section{Integrali fondamentali}
 \label{\detokenize{ch/infinitesimal_calculus/integrals:integrali-fondamentali}}\label{\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-fund}}
 \sphinxAtStartPar
 Una volta dimostrato il {\hyperref[\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-thm-fund}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema fondamentale del calcolo infinitesimale}}}}, questo risultato può essere usato per valutare gli integrali fondamentali come l’operazione inversa alla derivazione applicata alle {\hyperref[\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-fund}]{\sphinxcrossref{\DUrole{std,std-ref}{derivate fondamentali}}}}
@@ -8047,10 +8238,10 @@ Una volta dimostrato il {\hyperref[\detokenize{ch/infinitesimal_calculus/integra
 \end{aligned}\end{split}
 \end{equation*}
 
-\subsection{Regole di integrazione}
+\section{Regole di integrazione}
 \label{\detokenize{ch/infinitesimal_calculus/integrals:regole-di-integrazione}}
 
-\subsubsection{Integrazione per parti}
+\subsection{Integrazione per parti}
 \label{\detokenize{ch/infinitesimal_calculus/integrals:integrazione-per-parti}}\label{\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-by-parts}}
 \sphinxAtStartPar
 La regola di integrazione per parti viene ottenuta integrando la regola di derivazione del prodotto \eqref{equation:ch/infinitesimal_calculus/derivatives:infinitesimal-calculus:derivatives:rules:product}. Siano \(F(x)\), \(G(x)\) le primitive delle funzioni \(f(x)\), \(g(x)\), e quindi vale \(F'(x) = f(x)\), \(G'(x) = g(x)\).
@@ -8070,13 +8261,13 @@ Isolando il termine \(f(x)G(x)\) e integrando, si ottiene
 \end{aligned}\end{split}
 \end{equation*}
 
-\subsubsection{Frazioni parziali}
+\subsection{Frazioni parziali}
 \label{\detokenize{ch/infinitesimal_calculus/integrals:frazioni-parziali}}
 \sphinxAtStartPar
 \sphinxstylestrong{todo} E” una regola valida per funzioni integrande che possono essere scritte come il rapporto di due polinomi, \(f(x) = \frac{N(x)}{D(x)}\), e segue direttamente dalla possibilità di scomporre il polinomio a denominatore in polinomi di primo e secondo grado, grazie al {\hyperref[\detokenize{ch/precalculus/polynomials:math-hs-precalculus-polynomials-alg-fund-thm}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema fondamentale dell’algebra}}}}, e scrivere il rapporto come somma di frazioni.
 
 
-\subsubsection{Integrazione con sostituzione}
+\subsection{Integrazione con sostituzione}
 \label{\detokenize{ch/infinitesimal_calculus/integrals:integrazione-con-sostituzione}}\label{\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-substitution}}
 \sphinxAtStartPar
 La regola di integrazione per parti viene ottenuta dalla regola di derivazione della funzione composta \eqref{equation:ch/infinitesimal_calculus/derivatives:infinitesimal-calculus:derivatives:rules:composite}. Sia \(\widetilde{F}(x)\) la funzione composta \(\widetilde{F}(x) = F( y(x) )\) e siano definite le derivate
@@ -8150,7 +8341,7 @@ e \sphinxstylestrong{todo} …
 \sphinxstepscope
 
 
-\subsection{Tavola degli integrali indefiniti più comuni}
+\section{Tavola degli integrali indefiniti più comuni}
 \label{\detokenize{ch/infinitesimal_calculus/integrals-table:tavola-degli-integrali-indefiniti-piu-comuni}}\label{\detokenize{ch/infinitesimal_calculus/integrals-table:infinitesimal-calculus-integrals-table}}\label{\detokenize{ch/infinitesimal_calculus/integrals-table::doc}}
 \sphinxAtStartPar
 In questa sezione vengono elencati alcuni tra gli integrali più comuni, la cui valutazione viene lasciata come esercizio, a volte svolto
@@ -8186,13 +8377,13 @@ In questa sezione vengono elencati alcuni tra gli integrali più comuni, la cui 
 \sphinxstepscope
 
 
-\subsection{Integrali \sphinxhyphen{} Problemi}
+\section{Integrali \sphinxhyphen{} Problemi}
 \label{\detokenize{ch/infinitesimal_calculus/integrals-problems:integrali-problemi}}\label{\detokenize{ch/infinitesimal_calculus/integrals-problems:infinitesimal-calculus-integrals-problems}}\label{\detokenize{ch/infinitesimal_calculus/integrals-problems::doc}}
 
-\subsubsection{Calcolo integrali indefiniti}
+\subsection{Calcolo integrali indefiniti}
 \label{\detokenize{ch/infinitesimal_calculus/integrals-problems:calcolo-integrali-indefiniti}}\phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-0}
 
-\begin{sphinxadmonition}{note}{Exercise 20.3.1}
+\begin{sphinxadmonition}{note}{Exercise 25.6.1}
 
 
 
@@ -8234,10 +8425,10 @@ Si chiede di calcolare i seguenti integrali indefiniti
 \end{equation*}\end{sphinxadmonition}
 
 
-\subsubsection{Integrali definiti}
+\subsection{Integrali definiti}
 \label{\detokenize{ch/infinitesimal_calculus/integrals-problems:integrali-definiti}}\phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-1}
 
-\begin{sphinxadmonition}{note}{Exercise 20.3.2}
+\begin{sphinxadmonition}{note}{Exercise 25.6.2}
 
 
 
@@ -8246,10 +8437,10 @@ Si chiede di calcolare i seguenti integrali indefiniti
 \end{sphinxadmonition}
 
 
-\paragraph{Integrali impropri}
+\subsubsection{Integrali impropri}
 \label{\detokenize{ch/infinitesimal_calculus/integrals-problems:integrali-impropri}}\phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-2}
 
-\begin{sphinxadmonition}{note}{Exercise 20.3.3}
+\begin{sphinxadmonition}{note}{Exercise 25.6.3}
 
 
 
@@ -8279,7 +8470,7 @@ dimostrare che \(\int_{t}^{1} e^{a x} \, dx\) converge per \(a \dots\) e diverge
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-3}
 
-\begin{sphinxadmonition}{note}{Exercise 20.3.4}
+\begin{sphinxadmonition}{note}{Exercise 25.6.4}
 
 
 
@@ -8300,13 +8491,13 @@ Si chiede di discutere e valutare i seguenti integrali impropri
 \end{equation*}\end{sphinxadmonition}
 
 
-\subsubsection{Problemi di geometria}
+\subsection{Problemi di geometria}
 \label{\detokenize{ch/infinitesimal_calculus/integrals-problems:problemi-di-geometria}}
 
-\paragraph{Area di superfici e lunghezza di curve}
+\subsubsection{Area di superfici e lunghezza di curve}
 \label{\detokenize{ch/infinitesimal_calculus/integrals-problems:area-di-superfici-e-lunghezza-di-curve}}\phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-4}
 
-\begin{sphinxadmonition}{note}{Exercise 20.3.5}
+\begin{sphinxadmonition}{note}{Exercise 25.6.5}
 
 
 
@@ -8315,7 +8506,7 @@ Calcolare l’area della superficie chiusa tra la parabola \(y = - x^2 + 1\) e l
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-5}
 
-\begin{sphinxadmonition}{note}{Exercise 20.3.6}
+\begin{sphinxadmonition}{note}{Exercise 25.6.6}
 
 
 
@@ -8324,7 +8515,7 @@ Calcolare l’area della superficie chiusa tra la parabola \(y = - x^2 + 1\) e l
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-6}
 
-\begin{sphinxadmonition}{note}{Exercise 20.3.7}
+\begin{sphinxadmonition}{note}{Exercise 25.6.7}
 
 
 
@@ -8333,10 +8524,10 @@ Calcolare la lunghezza del ramo di parabola \(y = x^2 - 2x + 1\) tra \(x \in [0,
 \end{sphinxadmonition}
 
 
-\paragraph{Volumi e superficie di solidi di rotazione}
+\subsubsection{Volumi e superficie di solidi di rotazione}
 \label{\detokenize{ch/infinitesimal_calculus/integrals-problems:volumi-e-superficie-di-solidi-di-rotazione}}\phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-7}
 
-\begin{sphinxadmonition}{note}{Exercise 20.3.8}
+\begin{sphinxadmonition}{note}{Exercise 25.6.8}
 
 
 
@@ -8347,7 +8538,7 @@ Calcolare il volume e la superficie del solido generato dalla rotazione del ramo
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-8}
 
-\begin{sphinxadmonition}{note}{Exercise 20.3.9}
+\begin{sphinxadmonition}{note}{Exercise 25.6.9}
 
 
 
@@ -8358,7 +8549,7 @@ Calcolare il volume e la superficie del solido generato dalla rotazione del ramo
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-9}
 
-\begin{sphinxadmonition}{note}{Exercise 20.3.10}
+\begin{sphinxadmonition}{note}{Exercise 25.6.10}
 
 
 
@@ -8369,7 +8560,7 @@ Calcolare il volume e la superficie di un cilindro di altezza \(h\) e base di ra
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-10}
 
-\begin{sphinxadmonition}{note}{Exercise 20.3.11}
+\begin{sphinxadmonition}{note}{Exercise 25.6.11}
 
 
 
@@ -8380,7 +8571,7 @@ Calcolare il volume e la superficie di un cono retto di altezza \(h\) e base di 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-11}
 
-\begin{sphinxadmonition}{note}{Exercise 20.3.12}
+\begin{sphinxadmonition}{note}{Exercise 25.6.12}
 
 
 
@@ -8391,7 +8582,7 @@ Calcolare il volume e la superficie di un tronco di cono retto ottenuto dalla ri
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-12}
 
-\begin{sphinxadmonition}{note}{Exercise 20.3.13}
+\begin{sphinxadmonition}{note}{Exercise 25.6.13}
 
 
 
@@ -8402,7 +8593,7 @@ Calcolare il volume e la superficie della sfera generata dalla rivoluzione della
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-13}
 
-\begin{sphinxadmonition}{note}{Exercise 20.3.14}
+\begin{sphinxadmonition}{note}{Exercise 25.6.14}
 
 
 
@@ -8413,7 +8604,7 @@ Calcolare il volume e la superficie della calotta sferica sfera generata dalla r
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-14}
 
-\begin{sphinxadmonition}{note}{Exercise 20.3.15}
+\begin{sphinxadmonition}{note}{Exercise 25.6.15}
 
 
 
@@ -8465,7 +8656,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-05 dic 2024
+06 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -8505,7 +8696,7 @@ basics
 \end{sphinxuseclass}
 \end{sphinxuseclass}
 
-\section{Equazioni differenziali ordinarie}
+\chapter{Equazioni differenziali ordinarie}
 \label{\detokenize{ch/ode:equazioni-differenziali-ordinarie}}\label{\detokenize{ch/ode:ode-hs}}\label{\detokenize{ch/ode::doc}}
 \sphinxAtStartPar
 Le equazioni differenziali ordinarie, spesso abbreviate con l’acronimo \sphinxstylestrong{ODE} dall’inglese \sphinxstyleemphasis{Ordinary Differential Equations}, sono equazioni che coinvolgono una funzione di una variabile e le sue derivate.
@@ -8544,7 +8735,7 @@ Si cercherà quindi di trattare l’argomento nella maniera più rigorosa possib
 Il capitolo è diviso come segue: dopo aver fornito le {\hyperref[\detokenize{ch/ode:ode-hs-def}]{\sphinxcrossref{\DUrole{std,std-ref}{prime definizioni}}}}, si introduce una {\hyperref[\detokenize{ch/ode:ode-hs-types}]{\sphinxcrossref{\DUrole{std,std-ref}{classificazione}}}} delle equazioni differenziali ordinarie, prestando massima attenzione alle {\hyperref[\detokenize{ch/ode:ode-hs-types-linear-const}]{\sphinxcrossref{\DUrole{std,std-ref}{equazioni differenziali lineari a coefficienti costanti}}}}: per questo particolare tipo di ODE, è possibile trovare un metodo generale di soluzione. Dopo aver mostrato {\hyperref[\detokenize{ch/ode:ode-hs-types-linear-const-ex}]{\sphinxcrossref{\DUrole{std,std-ref}{alcuni esempi}}}}, viene presentato il {\hyperref[\detokenize{ch/ode:ode-hs-types-linear-const-sol}]{\sphinxcrossref{\DUrole{std,std-ref}{metodo di soluzione}}}}, e applicato successivamente alla {\hyperref[\detokenize{ch/ode:ode-hs-types-linear-const-ex-sol}]{\sphinxcrossref{\DUrole{std,std-ref}{risoluzione degli esempi}}}} dati: la soluzione degli esempi è pensata per fare pratica con la tecnica risolutiva e permette di indagare alcuni fenomeni fisici come quello della \sphinxstylestrong{risonanza} \sphinxstylestrong{todo} \sphinxstyleemphasis{aggiungere riferimento alla soluzione del sistema massa\sphinxhyphen{}molla\sphinxhyphen{}smorzatore}. Infine, viene presentata un’altra categoria di ODE, per la quale esiste \sphinxhyphen{} almeno formalmente \sphinxhyphen{} una tecnica risolutiva: la tecnica di separazione delle variabili per le {\hyperref[\detokenize{ch/ode:ode-hs-types-separable}]{\sphinxcrossref{\DUrole{std,std-ref}{equazioni differenziali a variabili separabili}}}}.
 
 
-\subsection{Prime definizioni}
+\section{Prime definizioni}
 \label{\detokenize{ch/ode:prime-definizioni}}\label{\detokenize{ch/ode:ode-hs-def}}
 \sphinxAtStartPar
 Un”\sphinxstylestrong{equazione differenziale ordinaria} è un’equazione che coinvolge una funzione reale, incognita, di una variabile reale e le sue derivate. Formalmente una ODE può essere scritta come
@@ -8568,13 +8759,13 @@ problemi differenziali con \sphinxstylestrong{condizioni al contorno}
 Il \sphinxstylestrong{grado} di una ODE è l’ordine massimo della derivata che compare nell’equazione. In generale, la soluzione di una ODE di grado \(n\) è il risultato di \(n\) operazioni di integrazione che producono \(n\) costanti arbitrarie.
 
 
-\subsection{Classificazione, esempi e tecniche risolutive}
+\section{Classificazione, esempi e tecniche risolutive}
 \label{\detokenize{ch/ode:classificazione-esempi-e-tecniche-risolutive}}\label{\detokenize{ch/ode:ode-hs-types}}
 
-\subsubsection{Equazioni lineari a coefficienti costanti}
+\subsection{Equazioni lineari a coefficienti costanti}
 \label{\detokenize{ch/ode:equazioni-lineari-a-coefficienti-costanti}}\label{\detokenize{ch/ode:ode-hs-types-linear-const}}
 
-\paragraph{Definizione}
+\subsubsection{Definizione}
 \label{\detokenize{ch/ode:definizione}}\label{\detokenize{ch/ode:ode-hs-types-linear-const-def}}
 \sphinxAtStartPar
 Una ODE lineare a coefficienti costanti di ordine \(n\) è un’equazione differenziale che mette in relazione la combinazione lineare della funzione incognita \(y(x)\) e delle sue prime \(n\) derivate con una funzione nota \(f(x)\),
@@ -8585,7 +8776,7 @@ Una ODE lineare a coefficienti costanti di ordine \(n\) è un’equazione differ
 Se la funzione \(f(x)\) è la funzione identicamente nulla \(f(x) \equiv 0\), l’equazione è un’equazione omogenea.
 
 
-\paragraph{Esempi}
+\subsubsection{Esempi}
 \label{\detokenize{ch/ode:esempi}}\label{\detokenize{ch/ode:ode-hs-types-linear-const-ex}}
 \sphinxAtStartPar
 In questa sezione vengono presentati alcuni esempi di equazioni differenziali ordinarie, ottenute partendo da alcune leggi della fisica. Successivamente nel capitolo verrà presentata la {\hyperref[\detokenize{ch/ode:ode-hs-types-linear-const-ex-sol}]{\sphinxcrossref{\DUrole{std,std-ref}{soluzione}}}} di alcuni problemi differenziali descritti in questi esempi.
@@ -8722,7 +8913,7 @@ GJ \theta'(L) = M^e \\
 \sphinxstylestrong{Deformazione a flessione di una trave.} La deformazione a flessione di una trave elastica lineare è governata dall’equazione \$\(w''''(z) = f(z)\)\$… \sphinxstylestrong{todo}
 
 
-\paragraph{Soluzione generale}
+\subsubsection{Soluzione generale}
 \label{\detokenize{ch/ode:soluzione-generale}}\label{\detokenize{ch/ode:ode-hs-types-linear-const-sol}}
 \sphinxAtStartPar
 La soluzione di un’equazione differenziale lineare a coefficienti costanti può essere scritta come somma di una soluzione \(y_o(x)\) dell’equazione omogenea associata e di una soluzione particolare \(y_p(x)\) dell’equazione,
@@ -8730,7 +8921,7 @@ La soluzione di un’equazione differenziale lineare a coefficienti costanti pu�
 \begin{split}y(x) = y_o(x) + y_p(x)\end{split}
 \end{equation*}
 
-\subparagraph{Soluzione dell’equazione omogenea}
+\paragraph{Soluzione dell’equazione omogenea}
 \label{\detokenize{ch/ode:soluzione-dell-equazione-omogenea}}\label{\detokenize{ch/ode:ode-hs-types-linear-const-sol-homo}}
 \sphinxAtStartPar
 Un’equazione differenziale omogenea è un problema lineare, e quindi la somma di due soluzioni è anch’essa una soluzione. La soluzione generale dell’equazione omogenea di ordine \(n\) può essere scritta come combinazione lineare di \(n\) sue soluzioni particolari \sphinxstyleemphasis{indipendenti} (qualitativamente, cioè che non contengono le stesse informazioni ripetute).
@@ -8828,7 +9019,7 @@ avendo inizialmente moltiplicato entrambi lati dell’equazione per il termine m
 \sphinxstylestrong{Molteplicità \(p\).} Il caso di radici mulitple con molteplicità generale può essere ricavato ricorsivamente, seguendo quanto fatto per il caso \(p=2\). Questa dimostrazione viene lasciata come esercizio.
 
 
-\subparagraph{Soluzione particolare dell’equazione completa}
+\paragraph{Soluzione particolare dell’equazione completa}
 \label{\detokenize{ch/ode:soluzione-particolare-dell-equazione-completa}}\label{\detokenize{ch/ode:ode-hs-types-linear-const-sol-part}}
 \sphinxAtStartPar
 Come regola generale, la ricerca della soluzione particolare dell’equazione completa è guidata dall’espressione della forzante. Ad esempio:
@@ -8851,7 +9042,7 @@ con \sphinxstylestrong{forzanti armoniche} si cerca una soluzione particolare ar
 Nel caso in cui la soluzione particolare abbia la forma di una delle soluzioni della soluzione particolare, si adotta la stessa tecnica adottata nel caso di zeri multipli.
 
 
-\paragraph{Soluzione degli esempi}
+\subsubsection{Soluzione degli esempi}
 \label{\detokenize{ch/ode:soluzione-degli-esempi}}\label{\detokenize{ch/ode:ode-hs-types-linear-const-ex-sol}}
 \sphinxAtStartPar
 In questa sezione vengono risolti alcuni problemi governati dalle equazioni differenziali presentate in precedenza come {\hyperref[\detokenize{ch/ode:ode-hs-types-linear-const-ex}]{\sphinxcrossref{\DUrole{std,std-ref}{esempi}}}} di equazioni differenziali ordinarie lineari a coefficienti costanti, applicando il {\hyperref[\detokenize{ch/ode:ode-hs-types-linear-const-sol}]{\sphinxcrossref{\DUrole{std,std-ref}{metodo di soluzione generale}}}} per questo tipo di equazioni.
@@ -9146,7 +9337,7 @@ G(\Omega_f)
 \sphinxstylestrong{Trave incastrata in un estremo e vincolata con un pattino all’altro estremo}
 
 
-\subsubsection{Equazioni differenziali a variabili separabili: tecnica di soluzione di separazione delle variabili}
+\subsection{Equazioni differenziali a variabili separabili: tecnica di soluzione di separazione delle variabili}
 \label{\detokenize{ch/ode:equazioni-differenziali-a-variabili-separabili-tecnica-di-soluzione-di-separazione-delle-variabili}}\label{\detokenize{ch/ode:ode-hs-types-separable}}\begin{equation*}
 \begin{split}\frac{d y}{d x} = f(y(x)) \ g(x) \end{split}
 \end{equation*}
@@ -9161,7 +9352,7 @@ e integrata con le opportune condizioni
 \begin{split}\tilde{F}(y(x)) - \tilde{F}(y(x_0)) = G(x) - G(x_0)\end{split}
 \end{equation*}
 
-\paragraph{Esempi}
+\subsubsection{Esempi}
 \label{\detokenize{ch/ode:ode-hs-types-separable-ex}}\label{\detokenize{ch/ode:id1}}\subsubsection*{Equazione logistica}
 \begin{equation*}
 \begin{split}\frac{d p}{d t} =  a p \left( 1 - \frac{p}{b} \right)\end{split}
@@ -9194,7 +9385,7 @@ e integrata con le opportune condizioni
 \sphinxstepscope
 
 
-\section{Calcolo infinitesimale \sphinxhyphen{} Problemi}
+\chapter{Calcolo infinitesimale \sphinxhyphen{} Problemi}
 \label{\detokenize{ch/infinitesimal_calculus/problems:calcolo-infinitesimale-problemi}}\label{\detokenize{ch/infinitesimal_calculus/problems:infinitesimal-calculus-problems}}\label{\detokenize{ch/infinitesimal_calculus/problems::doc}}
 \sphinxAtStartPar
 \sphinxstylestrong{todo} \sphinxstyleemphasis{Raccogliere qualche esercizio della maturità}
@@ -9281,7 +9472,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-05 dic 2024
+06 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -9385,7 +9576,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-05 dic 2024
+06 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -9815,7 +10006,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-05 dic 2024
+06 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -9944,7 +10135,7 @@ RL: ottimizzazione/controllo
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}2}\sphinxstyleindexextra{ch/algebra/real\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/real-algebra:\detokenize{example-2}}
 \indexspace
 \bigletter{example\sphinxhyphen{}3}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}3}\sphinxstyleindexextra{ch/algebra/linear\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/linear-algebra:\detokenize{example-3}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}3}\sphinxstyleindexextra{ch/algebra/real\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/real-algebra:\detokenize{example-3}}
 \indexspace
 \bigletter{example\sphinxhyphen{}4}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}4}\sphinxstyleindexextra{ch/algebra/linear\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/linear-algebra:\detokenize{example-4}}

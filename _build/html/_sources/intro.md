@@ -7,51 +7,17 @@ Questo libro fa parte del materiale pensato per [le scuole superiori](https://ba
 `````{only} html
 **Contenuti.**
 
-````{dropdown} Algebra
-<!-- :open: -->
-```{dropdown} Numeri reali
-```
-```{dropdown} Numeri complessi
-```
-```{dropdown} Vettori
-```
+````{dropdown} [Insiemistica e logica](math-hs:set)
 ````
-
-````{dropdown} Geometria analitica
-<!-- :open: -->
-```{dropdown} Geometrica analitica nel piano $E^2$
-```
-```{dropdown} Geometrica analitica nello spazio $E^3$
-```
+````{dropdown} [Algebra](math-hs:algebra)
 ````
-
-````{dropdown} Pre-calcolo
-<!-- :open: -->
-```{dropdown} Serie e successioni
-```
-```{dropdown} Funzioni notevoli
-  - Funzioni trigonometriche
-  - Esponenziale e logaritmo
-  - Funzioni iperboliche
-```
+````{dropdown} [Geometria analitica](geometry:analytic)
 ````
-
-````{dropdown} Calcolo
-<!-- :open: -->
-```{dropdown} Reale, $ f: D \subset \mathbb{R} \rightarrow \mathbb{R}$
-  - Limiti
-  - Derivate
-  - Integrali
-  - Equazioni differenziali
-```
-```{dropdown} Reale multi-variabile, $$
-```
-```{dropdown} Vettoriale in spazi euclidei, $ f: D \subset E^n \rightarrow V$
-```
+````{dropdown} [Pre-calcolo](math-hs:precalculus)
 ````
-
-````{dropdown} Statistica
-<!-- :open: -->
+````{dropdown} [Calcolo](math-hs:calculus)
+````
+````{dropdown} [Statistica](math-hs:statistics)
 ````
 
 `````
