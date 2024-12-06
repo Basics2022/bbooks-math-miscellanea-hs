@@ -16,9 +16,10 @@ Nel gran calderone del pre-calcolo finiscono qui tutti gli argomenti propedeutic
 ```
 
 ```{dropdown} Argomenti del capitolo
+:open:
 Senza fare uso di nessun concetto di calcolo differenziale o integrale, nel primo volume dell'opera Eulero fornisce alcuni **fondamenti dell'analisi** e delle **serie infinite**; nel secondo volume Eulero applica i risultati del primo volume allo studio delle **curve** e delle **superfici** nel piano e nello spazio.
 
-[**Funzioni reali a variabile reale, $f: \mathbb{R} \rightarrow \mathbb{R}$](math-hs:precalculus:real-functions), *Introductio vol.1 cap.1-3*. 
+[**Funzioni reali a variabile reale**, $f: \mathbb{R} \rightarrow \mathbb{R}$](math-hs:precalculus:real-functions), *Introductio vol.1 cap.1-3*. 
 
 [**Serie infinite**](math-hs:series), *Introductio vol.1 cap.4*.
 

@@ -10,6 +10,7 @@
 Il calcolo si occupa della variazione continua di grandezze matematiche che possono essere rappresentate come funzioni di variabili indipendenti.
 
 ```{dropdown} Argomenti del capitolo
+:open:
 [**Introduzione all'analisi**](infinitesimal-calculus:analysis). Viene richiamato il concetto di **funzione** di variabile reale a valore reale, $f: D \in \mathbb{R} \rightarrow \mathbb{R}$, e la sua rappresentazione grafica in un piano cartesiano. <br>
 Viene introdotto il concetto di **limite** per funzioni reali e viene usato per definire le **funzioni continue**. Vengono quindi presentati alcuni teoremi sulle funzioni continue e sui limiti che ne permettono il calcolo. Vengono presentate le forme indeterminate al finito e all'infinito, e calcolati i *limiti fondamentali*.
 
