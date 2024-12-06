@@ -9,6 +9,22 @@
 
 Il calcolo si occupa della variazione continua di grandezze matematiche che possono essere rappresentate come funzioni di variabili indipendenti.
 
+```{dropdown} Argomenti del capitolo
+- [**Introduzione all'analisi**](infinitesimal-calculus:analysis). Viene richiamato il concetto di **funzione** di variabile reale a valore reale, $f: D \in \mathbb{R} \rightarrow \mathbb{R}$, e la sua rappresentazione grafica in un piano cartesiano.
+
+  Viene introdotto il concetto di **limite** per funzioni reali e viene usato per definire le **funzioni continue**. Vengono quindi presentati alcuni teoremi sulle funzioni continue e sui limiti che ne permettono il calcolo. Vengono presentate le forme indeterminate al finito e all'infinito, e calcolati i *limiti fondamentali*.
+- [**Calcolo differenziale**](infinitesimal-calculus:derivatives). Usando i concetti di limite della sezione precedente, viene introdotto il concetto di **derivata** di una funzione reale, e viene data una sua interpretazione geometrica, legata alla retta tangente al grafico della funzione. Seguono alcune proprietà e teoremi sulle derivate che permettono di valutare le *derivate fondamentali* e combinare questi risultati per il calcolo della derivata di una funzione qualsiasi. Infine viene introdotto il concetto di derivate di ordine superiore, e vengono mostrate alcune applicazioni: ricerca di punti di estremo locale e di flesso nello studio di funzione, ottimizzazione, approssimazione locale tramite sviluppi in serie polinomiali
+- [**Calcolo integrale**](infinitesimal-calculus:integrals). Viene data la definizione di **integrale di Riemann** e una sua interpretazione geometrica, legata all'area sottesa dal grafico della funzione. Seguono alcune proprietà degli integrali che permettono di definire l'integrale definito e indefinito, e la primitiva di una funzione. Viene presentato il **teorema fondamentale del calcolo infinitesimale**, che permette di riconoscere l'operazione di integrazione come inversa dell'integrazione. Usando questo risultato, vengono valutati gli *integrali fondamentali*; poche regole di integrazione permettono poi di calcolare l'integrale di funzioni generiche. Infine vengono mostrate alcune applicazioni: ... **todo**
+- [**Equazioni differenziali ordinarie**](ode-hs). **todo**
+```
+
+```{dropdown} Dipendenze
+```
+
+```{dropdown}
+```
+
+```{dropdown} Breve storia dello sviluppo del calcolo
 Gli strumenti matematici del calcolo vengono sviluppati e formalizzati tra la fine del XVII secolo e il XIX secolo, come strumenti necessari alla costruzione delle teorie fisiche della meccanica razionale di Newton prima, e della meccanica dei mezzi continui (fluidi e solidi) poi.
 
 Newton introduce i concetti fondamentali calcolo differenziale e integrale delle funzioni di una variabile, qui chiamato [calcolo infinitesimale](infinitesimal-calculus), necessari allo sviluppo della meccanica: nella meccanica di Newton, il moto di un sistema meccanico è descritto dai suoi gradi di libertà in funzione della variabile tempo, e le equazioni che ne governano il moto sono equazioni differenziali ordinarie. Il lavoro di Newton, e il lavoro contemporaneo di Leibniz, parte dalla [geometria analitica](geometry:analytic), che permette di associare una curva a una funzione, e sviluppa la risposta ad alcuni problemi riguardanti la geometria delle curve, come il calcolo della tangente a una curva, la ricerca dei minimi e dei massimi di una funzione o il calcolo delle aree.
@@ -31,7 +47,7 @@ Nel XIX secolo il calcolo infinitesimale si impose come strumento matematico fon
 Cauchy diede importanti contributi allo sviluppo del calcolo complesso, successivamente sviluppato da Riemann.
 
 Cauchy contribuì inoltre alla definizione rigorosa dei fondamenti del calcolo, portata avanti da Weierstrass nella seconda metà del XIX secolo con la definizione di limite e continuità di una funzione.
-
+```
 
 
 <!--
