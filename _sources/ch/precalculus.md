@@ -15,14 +15,26 @@ Nel gran calderone del pre-calcolo finiscono qui tutti gli argomenti propedeutic
   - ![](../media/euler-introductio-3.png)
 ```
 
-Senza fare uso di nessun concetto di calcolo differenziale o integrale, nel primo volume dell'opera Eulero fornisce alcuni **fondamenti dell'analisi** e delle **serie infinite**:
-- il concetto di variabile e [funzione di variabile e valore reale](math-hs:precalculus:real-functions), $f: \mathbb{R} \rightarrow \mathbb{R}$, vol.1 cap.1-3
-- le [serie infinite](math-hs:series), vol.1 cap.4
-- il concetto di [funzioni a più variabili](math-hs:precalculus:multivariable-real-fun), vol.1 cap.5
-- le [funzioni logaritmo ed esponenziale](math-hs:exp-log) con base $e$, vol.1 cap.6-7
-- le [funzioni trigonometriche](math-hs:trigonometry), vol.1 cap.8
-- risultati sulla [fattorizzazione di polinomi](math-hs:precalculus:polynomials), **todo**
-- **numeri complessi** **todo** *riferimento all'algebra dei numeri complessi*
+```{dropdown} Argomenti del capitolo
+Senza fare uso di nessun concetto di calcolo differenziale o integrale, nel primo volume dell'opera Eulero fornisce alcuni **fondamenti dell'analisi** e delle **serie infinite**; nel secondo volume Eulero applica i risultati del primo volume allo studio delle **curve** e delle **superfici** nel piano e nello spazio.
 
-Nel secondo volume, Eulero applica i risultati del primo volume allo studio delle **curve** e delle **superfici** nel piano e nello spazio.
+[**Funzioni reali a variabile reale, $f: \mathbb{R} \rightarrow \mathbb{R}$](math-hs:precalculus:real-functions), *Introductio vol.1 cap.1-3*. 
+
+[**Serie infinite**](math-hs:series), *Introductio vol.1 cap.4*.
+
+[**Funzioni a più variabili**](math-hs:precalculus:multivariable-real-fun), *Introductio vol.1 cap.5*.
+
+[**Funzioni logaritmo ed esponenziale**](math-hs:exp-log) con base $e$, *Introductio vol.1 cap.6-7*.
+
+[**Funzioni trigonometriche**](math-hs:trigonometry), *Introductio  vol.1 cap.8*.
+
+[**Fattorizzazione di polinomi**](math-hs:precalculus:polynomials), **todo**
+
+[**Algebra sui numeri complessi**] **todo** *riferimento all'algebra dei numeri complessi*
+
+```
+
+```{dropdown} ...
+```
+
 
