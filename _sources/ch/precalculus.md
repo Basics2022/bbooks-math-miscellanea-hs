@@ -26,9 +26,9 @@ Senza fare uso di nessun concetto di calcolo differenziale o integrale, nel prim
 [**Funzioni a più variabili**](math-hs:precalculus:multivariable-real-fun), *Introductio vol.1 cap.5*.
 
 [**Funzioni esponenziale con base $e$ e logaritmo naturale**](math-hs:exp-log), *Introductio vol.1 cap.6-7*. Viene introdotta la funzione esponenziale $e^x$. che ricopre un ruolo fondamentale nel calcolo, come apprezzabile nei capitoli su [*derivate*](infinitesimal-calculus:derivatives), [*integrali*](infinitesimal-calculus:integrals) e [*equazioni differenziali*](ode-hs). 
-Viene la sua inversa $\ln x$
+Viene introdotta anche la sua funzione inversa $\ln x$, definita come il logaritmo con base $e$.
 
-[**Funzioni trigonometriche**](math-hs:trigonometry), *Introductio  vol.1 cap.8*.
+[**Funzioni trigonometriche**](math-hs:trigonometry), *Introductio  vol.1 cap.8*. Vengono introdotte le funzioni trigonometriche, nell'ambito della geometria dove l'argomento di tali funzioni sono angoli. Viene presentata la relazione fondamentale della trigonometria e le regole per la somma e la differenza, e regole ricavate da queste.
 
 [**Fattorizzazione di polinomi**](math-hs:precalculus:polynomials).
 
