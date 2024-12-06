@@ -1,5 +1,5 @@
 # Math for high-school
-This is a [JupyterBook](https://jupyterbook.org) book dealing with topics in mathematics at high-school level. This book is part of the main [**basics-books** project](https://basics2022.github.io/bbooks).
+This is a [JupyterBook](https://jupyterbook.org) book dealing with topics in mathematics at high-school level. This book is part of the main [**basics-books** project](https://basics2022.github.io/bboks)
 
 ## Contact
 If you encounter any issue you can either report it by clicking the lightbulb icon on the top right corner of this page, or create a merge request in the repositoy.
