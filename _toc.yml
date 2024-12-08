@@ -77,9 +77,11 @@ parts:
   - file: ch/infinitesimal_calculus/analysis
     sections:
     - file: ch/infinitesimal_calculus/analysis-problems
+    - file: ch/infinitesimal_calculus/analysis-notes
   - file: ch/infinitesimal_calculus/derivatives
     sections:
     - file: ch/infinitesimal_calculus/derivatives-problems
+    - file: ch/infinitesimal_calculus/derivatives-notes
   - file: ch/infinitesimal_calculus/integrals
     sections:
     - file: ch/infinitesimal_calculus/integrals-table

@@ -87,7 +87,7 @@
         
 
 \title{Matematica per le scuole superiori}
-\date{06 dic 2024}
+\date{08 dic 2024}
 \release{}
 \author{basics}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -104,7 +104,9 @@
 
 
 \sphinxAtStartPar
-Questo libro fa parte del materiale pensato per \sphinxhref{https://basics2022.github.io/bbooks-hs}{le scuole superiori}. E” disponibile la \sphinxhref{https://www.github.com/Basics2022/bbooks-math-miscellanea-hs/blob/master/\_build/latex/book.pdf}{versione in .pdf} scaricabile.
+Questo libro fa parte del materiale pensato per \sphinxhref{https://basics2022.github.io/bbooks-hs}{le scuole superiori}, nell’ambito del progetto \sphinxhref{https://basics2022.github.io/bbooks}{\sphinxstylestrong{basics\sphinxhyphen{}books}}. E” disponibile in \DUrole{xref,download,myst}{versione in .pdf}.
+
+
 
 
 
@@ -458,7 +460,32 @@ Questo tipo di approccio è pensato per formare la mente all’utilizzo degli st
 \label{\detokenize{ch/set:id1}}
 
 \section{Funzioni}
-\label{\detokenize{ch/set:funzioni}}\label{\detokenize{ch/set:math-hs-fun}}
+\label{\detokenize{ch/set:funzioni}}\label{\detokenize{ch/set:math-hs-fun}}\label{ch/set:set-fun-def}
+\begin{sphinxadmonition}{note}{Definition 1.2.1 (Funzione)}
+
+
+
+\sphinxAtStartPar
+Una funzione \(f: A \rightarrow B\) tra due insiemi \(A\), \(B\) è una relazione che associa a ogni elemento dell’insieme \(A\) uno e un solo elemento dell’insieme \(B\), cioè
+\begin{equation*}
+\begin{split}\forall a \in A \quad \exists! b = f(a) \in B \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+L’insieme \(A\) è definito \sphinxstylestrong{dominio}; l’insieme \(B\) è definito \sphinxstylestrong{codominio}; il sottoinsieme degli elementi \(b \in B\) per i quali esiste un \(a \in A\) t.c. \(b = f(a)\) è definito \sphinxstylestrong{immagine} della funzione.
+\end{sphinxadmonition}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Funzione suriettiva.} Una funzione è suriettiva se \(B = \text{Im}(A)\), cioè per ogni elemento \(b \in B\) esiste almeno un elemento \(a \in A\) tale che \(f(a) = b\).
+
+\sphinxAtStartPar
+\sphinxstylestrong{Funzione iniettiva.} Una funzione è iniettiva se per ogni coppia \(a_1, a_2 \in A\), con \(a_1 \ne a_2\), segue che \(f(a_1) \ne f(a_2)\).
+
+\sphinxAtStartPar
+\sphinxstylestrong{Funzione biunivoca.} Una funzione sia suriettiva sia iniettiva è una funzione biunivoca. Una funzione biunivoca associa a ogni elemento \(a \in A\) uno e un solo elemento \(b \in B\) e \sphinxstyleemphasis{viceversa}(!).
+
+\sphinxAtStartPar
+Una funzione \sphinxstylestrong{biunivoca} è anche \sphinxstylestrong{invertibile}. Data la funzione biunivoca \(f(a) = b\), la funzione inversa è \(a = f^{-1}(b)\).
+
 
 \section{Algebra di insiemi}
 \label{\detokenize{ch/set:algebra-di-insiemi}}\label{\detokenize{ch/set:math-hs-set-algebra}}
@@ -593,6 +620,9 @@ Per ora, elenco di concetti linkati
 
 \subsection{Contraddizione}
 \label{\detokenize{ch/logics:contraddizione}}\label{\detokenize{ch/logics:logics-contradiction}}
+
+\subsection{Sillogismo}
+\label{\detokenize{ch/logics:sillogismo}}\label{\detokenize{ch/logics:logics-syllogism}}
 \sphinxstepscope
 
 
@@ -2673,7 +2703,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-06 dic 2024
+08 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -2787,7 +2817,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-06 dic 2024
+08 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3061,7 +3091,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-06 dic 2024
+08 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3269,7 +3299,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-06 dic 2024
+08 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3354,7 +3384,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-06 dic 2024
+08 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3444,7 +3474,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-06 dic 2024
+08 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3618,7 +3648,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-06 dic 2024
+08 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3767,7 +3797,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-06 dic 2024
+08 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -5124,7 +5154,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-06 dic 2024
+08 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -5277,7 +5307,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-06 dic 2024
+08 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -5288,7 +5318,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-0 min read
+2 min read
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -5320,10 +5350,112 @@ basics
 \chapter{Funzioni reali a variabile reale, \protect\(f: \mathbb{R} \rightarrow \mathbb{R}\protect\)}
 \label{\detokenize{ch/precalculus/real-functions:funzioni-reali-a-variabile-reale-f-mathbb-r-rightarrow-mathbb-r}}\label{\detokenize{ch/precalculus/real-functions:math-hs-precalculus-real-functions}}\label{\detokenize{ch/precalculus/real-functions::doc}}
 \sphinxAtStartPar
-\sphinxstylestrong{Definizione.} \sphinxstyleemphasis{funzione, dominio, immagine,…}
+Le funzioni reali a variabile reale saranno oggetto di studio dettagliato del \DUrole{xref,myst}{calcolo infinitesimale}.
+\label{ch/precalculus/real-functions:definition-0}
+\begin{sphinxadmonition}{note}{Definition 15.1 (Funzione a valore reale di variabile reale)}
+
+
 
 \sphinxAtStartPar
-\sphinxstylestrong{Funzioni monotone}
+Una funzione a valore reale di una variabile reale è una {\hyperref[\detokenize{ch/set:math-hs-fun}]{\sphinxcrossref{\DUrole{std,std-ref}{funzione}}}} \(f: A \in \mathbb{R} \rightarrow \mathbb{R}\) è una funzione che ha come dominio un sottoinsieme \(A\) dei numeri reali e condominio \(\mathbb{R}\),
+\begin{equation*}
+\begin{split}y = f(x) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+con \(x \in A \in \mathbb{R}\) e \(y \in \mathbb{R}\). E” comune chiamare \(x\) \sphinxstyleemphasis{argomento} della funzione, o la \sphinxstyleemphasis{variabile indipendente}, e \(y\) \sphinxstyleemphasis{valore} della funzione o \sphinxstyleemphasis{variabile dipendente}
+\end{sphinxadmonition}
+
+
+\section{Grafico di una funzione}
+\label{\detokenize{ch/precalculus/real-functions:grafico-di-una-funzione}}\label{\detokenize{ch/precalculus/real-functions:math-hs-precalculus-real-functions-inverse-plot}}
+\sphinxAtStartPar
+A una funzione \(y = f(x)\) può essere associata una rappresentazione grafica, interpretando le variabili \(x\), \(y\) come coordinate che descrivono il piano. La rappresentazione comune le interpreta come \sphinxstyleemphasis{coordinate cartesiane}. Una funzione impone una relazione tra le due coordinate e in generale può essere rappresentato come una curva nel piano.
+
+\sphinxAtStartPar
+Ricordando che una funzione associa a ogni elemento del dominio uno e un solo elemento del codominio, il grafico di una funzione non può interesecare una retta parallela all’asse \(y\) in due punti, cioè non possono esistere due valori \(y_1\), \(y_2\) della funzione per lo stesso valore della variabile indipendente \(x\).
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo} esempi
+
+
+\section{Classificazione di funzioni}
+\label{\detokenize{ch/precalculus/real-functions:classificazione-di-funzioni}}\label{\detokenize{ch/precalculus/real-functions:math-hs-precalculus-real-functions-types}}
+\sphinxAtStartPar
+Appoggiandoci alla rappresentazione grafica (\sphinxstylestrong{todo}), vengono definite alcune caratteristiche che può avere una funzione. Una funzione \(f: A \in  \mathbb{R} \rightarrow mathbb{R}\) è definita e ha valori su \sphinxstylestrong{insiemi ordinabili}, cioè sui quali si possono stabilire delle relazioni di ordine tra gli elementi, ad esempio tramite le relazioni \(<\), \(>\), \(\le\), \(ge\). Grazie a questa caratteristica, si possono definire funzioni crescenti/decrescenti, monotone, limitate/illimitate; poiché dominio e codominio sono insiemi numerici, allora si possono definire funzioni pari/dispari e periodiche. Infine si discutono le definizioni di funzione reali a valori reali suriettiva, iniettiva e biunivoca, definizioni già introdotte per {\hyperref[\detokenize{ch/set:math-hs-fun}]{\sphinxcrossref{\DUrole{std,std-ref}{funzioni tra insiemi qualsiasi}}}}.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{Crescente, decrescente.} Una funzione è:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+crescente se \(f(x_2) > f(x_1)\) per  \(x_2 > x_1\)
+
+\item {} 
+\sphinxAtStartPar
+decrescente se \(f(x_2) < f(x_1)\) per  \(x_2 > x_1\)
+
+\end{itemize}
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{Monotona.} Una funzione è monotona crescente/decrescente nell’intervallo \(I\), se è crescente/decrescente per ogni coppia \(x_1\), \(x_2 \in I\)
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{Limitata, illimitata} Una funzione è:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+limitata superiormente se \(\exists M\) t.c. \(f(x) \le M \, \ \forall x \in A\)
+
+\item {} 
+\sphinxAtStartPar
+limitata inferiormente se \(\exists M\) t.c. \(f(x) \ge M \, \ \forall x \in A\)
+
+\item {} 
+\sphinxAtStartPar
+illimitata altrimenti
+
+\end{itemize}
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{Pari, dispari} Una funzione è definita
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+pari se \(f(x) = f(-x) \ \forall x \in A\), e il suo grafico in un piano \(x\)\sphinxhyphen{}\(y\) è simmetrico rispetto all’asse \(y\)
+
+\item {} 
+\sphinxAtStartPar
+dispari se \(f(x) =-f(-x) \ \forall x \in A\), e il suo grafico in un piano \(x\)\sphinxhyphen{}\(y\) è simmetrico rispetto all’origine
+
+\end{itemize}
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{Periodica.} Una funzione è definita periodica di periodo \(T\) se \(f(x) = f(x+T), \ \forall x \in A\).
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{Suriettiva, iniettiva, biunivoca.} Una funzione è:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+suriettiva \sphinxstylestrong{todo}
+
+\item {} 
+\sphinxAtStartPar
+iniettiva \sphinxstylestrong{todo}
+
+\item {} 
+\sphinxAtStartPar
+biunivoca \sphinxstylestrong{todo}
+
+\end{itemize}
+
+\end{itemize}
 
 
 \section{Funzioni invertibili e inverse}
@@ -5332,12 +5464,29 @@ basics
 Una funzione \(f: X \rightarrow Y\) è \sphinxstylestrong{invertibile} se esiste una funzione \(g: Y \rightarrow X\) tale che
 \begin{equation*}
 \begin{split}\begin{aligned}
-  g\left( f(x) \right) & = x \ , \quad \forall x \in X \\
-  f\left( g(y) \right) & = y \ , \quad \forall y \in Y \\
+  g\left( f(x) \right) & = x , \ \forall x \in X \\
+  f\left( g(y) \right) & = y , \ \forall y \in Y \\
 \end{aligned}\end{split}
-\end{equation*}
+\end{equation*}\begin{itemize}
+\item {} 
 \sphinxAtStartPar
-Una funzione \(f: X \rightarrow Y\) monotona è invertibile
+\sphinxstyleemphasis{Una funzione biunivoca è invertibile}
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleemphasis{Una funzione monotona è biunivoca}
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleemphasis{Una funzione monotona è invertibile} (Va” che {\hyperref[\detokenize{ch/logics:logics-syllogism}]{\sphinxcrossref{\DUrole{std,std-ref}{sillogismo}}}}!)
+
+\end{itemize}
+
+
+\section{Problemi}
+\label{\detokenize{ch/precalculus/real-functions:problemi}}\label{\detokenize{ch/precalculus/real-functions:math-hs-precalculus-real-functions-problems}}
+\sphinxAtStartPar
+\sphinxstylestrong{todo}
 
 \sphinxstepscope
 
@@ -5379,7 +5528,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-06 dic 2024
+08 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -5542,7 +5691,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-06 dic 2024
+08 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -6424,7 +6573,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-06 dic 2024
+08 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -6861,7 +7010,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-06 dic 2024
+08 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -6948,7 +7097,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-06 dic 2024
+08 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -7070,19 +7219,16 @@ Cauchy contribuì inoltre alla definizione rigorosa dei fondamenti del calcolo, 
 \chapter{Introduzione all’analisi}
 \label{\detokenize{ch/infinitesimal_calculus/analysis:introduzione-all-analisi}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-analysis}}\label{\detokenize{ch/infinitesimal_calculus/analysis::doc}}
 \sphinxAtStartPar
-In questa sezione viene richiamato il concetto di funzione introdotto nella sezione {\hyperref[\detokenize{ch/precalculus:math-hs-precalculus}]{\sphinxcrossref{\DUrole{std,std-ref}{Precalcolo}}}}. Viene introdotto il concetto di {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits}]{\sphinxcrossref{\DUrole{std,std-ref}{limite}}}} e definito in termini topologici (intervalli, punti di accumulazione, insiemi aperti e chiusi,…). Il concetto di limite viene utilizzato per dare una definizione di \DUrole{xref,myst}{funzione continua}. Vengono poi presentati alcuni teoremi e proprietà di limiti e funzioni continue.
+In questa sezione viene richiamato il concetto di funzione introdotto nella sezione {\hyperref[\detokenize{ch/precalculus:math-hs-precalculus}]{\sphinxcrossref{\DUrole{std,std-ref}{precalcolo}}}}. Viene introdotto il concetto di {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits}]{\sphinxcrossref{\DUrole{std,std-ref}{limite}}}} e definito in termini topologici (intervalli, punti di accumulazione, insiemi aperti e chiusi,…). Il concetto di limite viene utilizzato per dare una definizione di \DUrole{xref,myst}{funzione continua}. Vengono poi presentati alcuni teoremi e proprietà di limiti e funzioni continue.
 
 
 
 
 \section{Funzioni reali a variabile reale, \protect\(f: \mathbb{R} \rightarrow \mathbb{R}\protect\)}
 \label{\detokenize{ch/infinitesimal_calculus/analysis:funzioni-reali-a-variabile-reale-f-mathbb-r-rightarrow-mathbb-r}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-analysis-real-functions}}
+\sphinxAtStartPar
+Per un’introduzione alle funzioni reali fa variabili reali si rimanda al {\hyperref[\detokenize{ch/precalculus/real-functions:math-hs-precalculus-real-functions}]{\sphinxcrossref{\DUrole{std,std-ref}{capitolo dedicato}}}} nella sezione {\hyperref[\detokenize{ch/precalculus:math-hs-precalculus}]{\sphinxcrossref{\DUrole{std,std-ref}{precalcolo}}}}.
 
-\subsection{Definizione}
-\label{\detokenize{ch/infinitesimal_calculus/analysis:definizione}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-analysis-real-functions-def}}
-
-\subsection{Rappresentazione grafica}
-\label{\detokenize{ch/infinitesimal_calculus/analysis:rappresentazione-grafica}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-analysis-real-functions-graph}}
 
 
 
@@ -7136,7 +7282,7 @@ dove la condizione sull’intorno di un punto all’infinito per funzioni reali 
 \label{\detokenize{ch/infinitesimal_calculus/analysis:funzioni-continue}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-continuous-fun}}
 
 \subsection{Definizione}
-\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-continuous-fun-def}}\label{\detokenize{ch/infinitesimal_calculus/analysis:id1}}
+\label{\detokenize{ch/infinitesimal_calculus/analysis:definizione}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-continuous-fun-def}}
 \sphinxAtStartPar
 Una funzione reale \(f: D \in \mathbb{R} \rightarrow \mathbb{R}\) è continua in un punto \(x_0 \in D\) se la funzione è definita nel punto, se esiste il limite della fuzione e coincide con il valore della funzione
 \begin{equation*}
@@ -7239,36 +7385,88 @@ Sia \(f(a) < f(b)\) e \(y_0\) un valore compreso \(f(a) < y_0 < f(b)\). Si defin
 e che quindi \(\exists x_0 \in (a,b)\) t.c \(g(x_0) = 0\) o equivalentemente \(f(x_0) = y_0\). Da qui dimostrata la tesi che per ogni \(y_0 \in (a,b)\) esiste un \(x_0\) che sia l’argomento della funzione \(f\), che dia \(f(x_0) = y_0\).
 
 
-\section{Teoremi sui limiti}
-\label{\detokenize{ch/infinitesimal_calculus/analysis:teoremi-sui-limiti}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-thms}}
+\section{Operazioni e teoremi sui limiti}
+\label{\detokenize{ch/infinitesimal_calculus/analysis:operazioni-e-teoremi-sui-limiti}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-thms}}
+\sphinxAtStartPar
+Vengono elencate alcune regole per compiere operazioni con i limiti. La {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis-notes:infinitesimal-calculus-limits-thms-notes}]{\sphinxcrossref{\DUrole{std,std-ref}{dimostrazione}}}} delle regole è disponibile a fine capitolo.
+
 
 \subsection{Operazioni coi limiti}
 \label{\detokenize{ch/infinitesimal_calculus/analysis:operazioni-coi-limiti}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-thms-operations}}
 \sphinxAtStartPar
-Dato un numero reale \(c \in \mathbb{R}\) e i limiti \(\lim_{x \rightarrow x_0} f(x) = L_1\), \(\lim_{x \rightarrow x_0} g(x) = L_2\)
+Dato un numero reale \(c \in \mathbb{R}\) e i limiti \sphinxstylestrong{finiti} \(\lim_{x \rightarrow x_0} f(x) = F\), \(\lim_{x \rightarrow x_0} g(x) = G\) allora valgono le seguenti regole
 \begin{equation*}
 \begin{split}\begin{aligned}
- & \lim_{x \rightarrow x_0} \big( c \cdot f(x) \big) = c \, L_1 \\
- & \lim_{x \rightarrow x_0} \big( f(x) \mp g(x) \big) = L_1 \mp L_2 \\
- & \lim_{x \rightarrow x_0} \big( f(x) \cdot g(x) \big) = L_1 \cdot L_2 \\
- & \lim_{x \rightarrow x_0} \frac{ f(x) }{ g(x) } = \frac{L_1}{L_2} \quad , \quad \text{se $L_2 \ne 0$}  \\
+ & \lim_{x \rightarrow x_0} \big( c \cdot f(x) \big) = c \, F  \\
+ & \lim_{x \rightarrow x_0} \big( f(x) \mp g(x) \big) = F \mp G \\
+ & \lim_{x \rightarrow x_0} \big( f(x) \cdot g(x) \big) = F \cdot G \\
+ & \lim_{x \rightarrow x_0} \frac{ f(x) }{ g(x) } = \frac{F}{G} \quad , \quad \text{se $G \ne 0$}  \\
+ & \dots \text{**todo** *regole con esponenti*} \\
 \end{aligned}\end{split}
 \end{equation*}
+\sphinxAtStartPar
+Alcune delle operazioni elencate qui sopra per limiti finiti possono essere {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-thms-infinite-simal}]{\sphinxcrossref{\DUrole{std,std-ref}{estese al caso di limiti infiniti}}}}; in altri casi, nascono delle forme {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-thms-infinite-simal-undetermined}]{\sphinxcrossref{\DUrole{std,std-ref}{indeterminate}}}}.
+
 
 \subsubsection{Limiti infiniti e infinitesimi}
-\label{\detokenize{ch/infinitesimal_calculus/analysis:limiti-infiniti-e-infinitesimi}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-thms-infinite-simal}}\begin{equation*}
+\label{\detokenize{ch/infinitesimal_calculus/analysis:limiti-infiniti-e-infinitesimi}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-thms-infinite-simal}}
+\sphinxAtStartPar
+Valgono le seguenti regole
+\begin{equation*}
+\begin{split}\begin{array}{ll}
+  f(x) \rightarrow \mp \infty \ , \ c > 0             & : \ \lim_{x \rightarrow x_0} c \cdot f(x) = \mp \infty \\
+  f(x) \rightarrow \mp \infty \ , \ c < 0             & : \ \lim_{x \rightarrow x_0} c \cdot f(x) = \pm \infty \\
+  f(x) \rightarrow \mp \infty \ , \ G \text{ finito}  & : \ \lim_{x \rightarrow x_0} ( f(x) + g(x) ) = \mp \infty \\
+  f(x) \rightarrow \mp \infty \ , \ G \text{ finito}, g(x) \ne 0  & : \ \lim_{x \rightarrow x_0} \frac{g(x)}{f(x)} = 0^{ \mp \text{sign}\{G\}} \\
+  f(x) \rightarrow 0^{\mp}    \ , \ G \text{ finito}, g(x) \ne 0  & : \ \lim_{x \rightarrow x_0} \frac{g(x)}{f(x)} = \mp \text{sign}\{G\} \cdot \infty \\
+  f(x) \rightarrow \mp \infty \ , \ g(x) \ne 0 & : \ \lim_{x \rightarrow x_0} g(x) \cdot f(x) = \mp \text{sign}\{G\} \cdot \infty \\
+  \dots \text{**todo** *regole con esponenti*} & \\
+\end{array}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+riassumibili con un po” di libertà nella notazione come
+\begin{equation*}
 \begin{split}\begin{aligned}
- &  \lim_{x \rightarrow x_0}f(x) \rightarrow \mp \infty \ , c > 0 \quad : \qquad \lim_{x \rightarrow x_0} c \cdot f(x) = \mp \infty \\
- & \dots \\
+  & c \cdot \mp \infty = \mp \text{sign}\{c\} \cdot \infty \ , \quad \text{se } c \ne 0 \\
+  & c \mp \infty = \mp \infty \\
+  & + \infty + \infty = +\infty \\
+  & - \infty - \infty = -\infty \\
+  & + \infty \cdot \mp \infty = \mp \infty \\
+  & \frac{c}{\mp \infty} = 0^{\mp \text{sign}\{c\}} \ , \quad \text{se } c \ne 0 \\
+  & \dots \text{**todo** *regole con esponenti*} \\
 \end{aligned}\end{split}
 \end{equation*}
+\begin{sphinxadmonition}{note}{Nota:}
+\sphinxAtStartPar
+Si prega di notare come sono stati esclusi alcuni casi riguardanti valori o funzioni identicamente uguali a \(0\). Nel caso in cui \(g(x) = 0\), ad esempio
+\begin{equation*}
+\begin{split}g(x) f(x) \equiv 0 \qquad \rightarrow \qquad \lim g(x) f(x) = 0 \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+poiché la funzione \(g(x) f(x)\) è identicamente uguale a zero: \sphinxstyleemphasis{non c’è nulla da variare per studiarne il limite: il valore è zero per ogni \(x\) e basta}.
+\end{sphinxadmonition}
+
 
 \subsubsection{Forme indeterminate}
-\label{\detokenize{ch/infinitesimal_calculus/analysis:forme-indeterminate}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-thms-infinite-simal-undetermined}}\begin{equation*}
+\label{\detokenize{ch/infinitesimal_calculus/analysis:forme-indeterminate}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-thms-infinite-simal-undetermined}}
+\sphinxAtStartPar
+Risultano indeterminate le seguenti 7 forme,
+\begin{equation*}
 \begin{split}+\infty-\infty \quad , \quad 0 \cdot \mp \infty \quad , \quad \frac{\mp \infty}{\mp \infty} \quad , \quad \frac{0}{0} \quad , \quad 1^{\infty} \quad , \quad 0^0 \quad , \quad \infty^0\end{split}
 \end{equation*}
 \sphinxAtStartPar
-\sphinxstylestrong{oss.} Invece non sono forme indeterminate \(0^{+\infty} \rightarrow 0\) e \(0^{-\infty} \rightarrow \infty\).
+avendo interpretato gli \sphinxstyleemphasis{infiniti}, gli \sphinxstyleemphasis{zeri} e gli \sphinxstyleemphasis{uni} come funzioni che tendono a quei valori,
+\begin{equation*}
+\begin{split}0 \sim \lim f(x) = 0 \qquad , \qquad  1 \sim \lim f(x) = 1  \qquad , \qquad \infty \sim \lim f(x) = \infty \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+senza esserne identicamente uguali.
+
+\sphinxAtStartPar
+\sphinxstylestrong{Oss.} Invece non sono forme indeterminate \(0^{+\infty} \rightarrow 0\) e \(0^{-\infty} \rightarrow \infty\).
+
+\sphinxAtStartPar
+Vengono ora introdotti alcuni risultati necessari per manipolare le forme indeterminate, e poter confrontare infiniti e infinitesimi.
 
 
 \subsection{Teorema del confronto}
@@ -7398,7 +7596,7 @@ che viene utilizzato nel calcolo dei limiti desiderati
 \section{Limiti fondamentali}
 \label{\detokenize{ch/infinitesimal_calculus/analysis:limiti-fondamentali}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-fund}}
 \sphinxAtStartPar
-In questa sezione vengono calcolati alcuni limiti fondamentali. Questi limiti possono essere considerati fondamentali come sinonimo di \sphinxstyleemphasis{«minimo da ricordare»} per poter calcolare limiti più generali utilizzando le {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-thms-operations}]{\sphinxcrossref{\DUrole{std,std-ref}{operazioni}}}} e i {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-thms}]{\sphinxcrossref{\DUrole{std,std-ref}{teoremi}}}} sui limiti, e calcolare le {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-fund}]{\sphinxcrossref{\DUrole{std,std-ref}{derivate fondamentali}}}}. Un elenco minimo di limiti fondamentali è:
+Questa sezione contiene alcuni limiti fondamentali. Questi limiti possono essere considerati fondamentali come sinonimo di \sphinxstyleemphasis{«minimo da ricordare»} per poter calcolare limiti più generali utilizzando le {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-thms-operations}]{\sphinxcrossref{\DUrole{std,std-ref}{operazioni}}}} e i {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-thms}]{\sphinxcrossref{\DUrole{std,std-ref}{teoremi}}}} sui limiti, e calcolare le {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-fund}]{\sphinxcrossref{\DUrole{std,std-ref}{derivate fondamentali}}}}. Un elenco minimo di limiti fondamentali è:
 \begin{equation*}
 \begin{split} \lim_{x \rightarrow 0} \frac{\sin x}{x} = 1 \end{split}
 \end{equation*}\begin{equation*}
@@ -7413,7 +7611,187 @@ In questa sezione vengono calcolati alcuni limiti fondamentali. Questi limiti po
 \begin{split} \lim_{x \rightarrow 0} \frac{\ln (1+x)}{x} = 1 \end{split}
 \end{equation*}\begin{equation*}
 \begin{split} \lim_{x \rightarrow 0} \frac{(1+x)^a - 1}{x} = a \end{split}
-\end{equation*}\subsubsection*{Dimostrazione di \protect\(\ \lim_{x \rightarrow 0} \frac{\sin x}{x} = 1 \protect\)}
+\end{equation*}
+\sphinxAtStartPar
+La {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis-notes:infinitesimal-calculus-limits-fund-notes}]{\sphinxcrossref{\DUrole{std,std-ref}{dimostrazione dei limiti fondamentali}}}} è disponibilie a fine capitolo.
+
+
+
+\sphinxstepscope
+
+
+\section{Introduzione all’analisi \sphinxhyphen{} Problemi}
+\label{\detokenize{ch/infinitesimal_calculus/analysis-problems:introduzione-all-analisi-problemi}}\label{\detokenize{ch/infinitesimal_calculus/analysis-problems:infinitesimal-calculus-analysis-problems}}\label{\detokenize{ch/infinitesimal_calculus/analysis-problems::doc}}
+
+\subsection{Funzioni}
+\label{\detokenize{ch/infinitesimal_calculus/analysis-problems:funzioni}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+dominio, grafico, dalla geometria
+
+\end{itemize}
+
+
+\subsection{Limiti}
+\label{\detokenize{ch/infinitesimal_calculus/analysis-problems:limiti}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+calcolo limiti con definizione
+
+\item {} 
+\sphinxAtStartPar
+calcolo limiti
+
+\item {} 
+\sphinxAtStartPar
+calcolo limiti con forme indeterminate fondamentali
+
+\end{itemize}
+
+
+\subsection{Funzioni continue}
+\label{\detokenize{ch/infinitesimal_calculus/analysis-problems:funzioni-continue}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+continuità e discontinuità
+
+\end{itemize}
+
+\sphinxstepscope
+
+
+\section{Note e dimiostrazioni}
+\label{\detokenize{ch/infinitesimal_calculus/analysis-notes:note-e-dimiostrazioni}}\label{\detokenize{ch/infinitesimal_calculus/analysis-notes:infinitesimal-calculus-analysis-notes}}\label{\detokenize{ch/infinitesimal_calculus/analysis-notes::doc}}
+
+\subsection{Funzioni reali a variabile reale, \protect\(f: \mathbb{R} \rightarrow \mathbb{R}\protect\)}
+\label{\detokenize{ch/infinitesimal_calculus/analysis-notes:funzioni-reali-a-variabile-reale-f-mathbb-r-rightarrow-mathbb-r}}
+
+\subsection{Limiti}
+\label{\detokenize{ch/infinitesimal_calculus/analysis-notes:limiti}}
+
+\subsection{Funzioni continue, \protect\(f \in C^0\protect\)}
+\label{\detokenize{ch/infinitesimal_calculus/analysis-notes:funzioni-continue-f-in-c-0}}
+
+\subsection{Operazioni e teoremi sui limiti}
+\label{\detokenize{ch/infinitesimal_calculus/analysis-notes:operazioni-e-teoremi-sui-limiti}}\label{\detokenize{ch/infinitesimal_calculus/analysis-notes:infinitesimal-calculus-limits-thms-notes}}\subsubsection*{\protect\(\lim_{x \rightarrow x_0} c f(x)\protect\)}
+\begin{equation*}
+\begin{split}L = \lim_{x \rightarrow x_0} f(x)\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\forall \varepsilon > 0 \quad \exists U_{x_0,\delta} \quad t.c. \quad |f(x) - L| < \varepsilon \quad \forall U_{x_0,\delta} \backslash \{x_0\} \end{split}
+\end{equation*}\begin{equation*}
+\begin{split}|f(x) - L| < \varepsilon \qquad \rightarrow \qquad L - \varepsilon < f(x) < L + \varepsilon\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\begin{aligned}
+c \ge 0: & \quad  c L - c \varepsilon \le c f(x) \le c L + c \varepsilon \\
+c  <  0: & \quad  c L - c \varepsilon   > c f(x)   > c L + c \varepsilon \\
+\end{aligned}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\begin{aligned}
+c \ge 0: & \quad \forall \tilde{\varepsilon} =  c \varepsilon > 0 \quad & \exists U_{x_0,\delta} \quad t.c. \quad |c f(x) - c L| < \tilde{\varepsilon} \quad \forall U_{x_0,\delta} \backslash \{x_0\} \\
+c <   0: & \quad \forall \tilde{\varepsilon} = -c \varepsilon > 0 \quad & \exists U_{x_0,\delta} \quad t.c. \quad |c f(x) - c L| < \tilde{\varepsilon} \quad \forall U_{x_0,\delta} \backslash \{x_0\} \\
+\end{aligned}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\begin{aligned}
+ \lim_{x\rightarrow x_0} c f(x) = c L
+\end{aligned}\end{split}
+\end{equation*}\subsubsection*{\protect\(\lim_{x \rightarrow x_0} f(x) \pm g(x)\protect\)}
+\begin{equation*}
+\begin{split}\begin{aligned}
+  & |f(x) - F| < \varepsilon \qquad \rightarrow \qquad F - \varepsilon_f < f(x) < F + \varepsilon_f \\
+  & |g(x) - G| < \varepsilon \qquad \rightarrow \qquad G - \varepsilon_g < g(x) < G + \varepsilon_g \\
+\end{aligned}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\begin{aligned}
+   F + G - \varepsilon_f - \varepsilon_g < f(x) + g(x)  < F + G + \varepsilon_f + \varepsilon_g \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Con il segno meno, giocare con i modulli per avere \(\tilde{\varepsilon} > 0\).
+\subsubsection*{\protect\(\lim_{x \rightarrow x_0} f(x) \cdot g(x)\protect\)}
+\begin{equation*}
+\begin{split}\begin{aligned}
+  & |f(x) - F| < \varepsilon_f \qquad \rightarrow \qquad F - \varepsilon_f < f(x) < F + \varepsilon_f \\
+  & |g(x) - G| < \varepsilon_g \qquad \rightarrow \qquad G - \varepsilon_g < g(x) < G + \varepsilon_g \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Nell’ipotesi che \(f(x) \cdot g(x) > 0\) (concordi, serve teorema permanenza segno?)
+\begin{equation*}
+\begin{split}\begin{aligned}
+   |f(x) g(x) - F G|
+   &   = |f(x) g(x) - f(x) G + f(x) G - F G| = \\
+   &   = |f(x) ( g(x) - G ) + ( f(x) - F ) G| = \\
+   & \le |f(x)|| g(x) - G | + | f(x) - F || G| = \\
+   & \le (|F|+\varepsilon_f)\varepsilon_g + \varepsilon_f|G| = \\
+   & = \underbrace{|F|\varepsilon_g + |G|\varepsilon_f + \varepsilon_f \varepsilon_g}_{\tilde{\varepsilon}} \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+avendo usato \(|g(x)-G| < \varepsilon\), e la disuguaglianza triangolare
+\begin{equation*}
+\begin{split}|f(x)| = |f(x) - F + F| \le |f(x) - F| + |F| \le \varepsilon_f + |F| \end{split}
+\end{equation*}\subsubsection*{\protect\(|g(x)| > \frac{|\lim_{x\rightarrow x_0} g(x)|}{2} = \frac{|G|}{2} \ \protect\) for \protect\(\  x \in U_{x_0, \delta}\protect\)}
+
+\sphinxAtStartPar
+Si vuole dimostrare che esiste un intorno per il quale \(|g| > \frac{|G|}{2}\)
+\begin{equation*}
+\begin{split}|g - G| < \varepsilon\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Se esiste il limite \(G\), allora per \(\forall \varepsilon > 0 \quad \exists \delta > 0 \quad |g(x) - G|<\varepsilon \dots\). Tra tutti i valori di \(\varepsilon\), si sceglie \(\frac{|G|}{2} > 0\)
+\begin{equation*}
+\begin{split}-\frac{|G|}{2} < g - G < \frac{|G|}{2} \end{split}
+\end{equation*}
+\sphinxAtStartPar
+Si distinguono i due casi:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\(0 \le G = |G|\) implica \(\frac{|G|}{2} < g < \frac{3}{2}|G|\); prendendo il modulo di quantità positive \(\frac{|G|}{2} < |g| < \frac{3}{2}|G|\)
+
+\item {} 
+\sphinxAtStartPar
+\(0 > G = - |G|\) implica \(-\frac{3}{2}|G| < g < -\frac{1}{2}|G| \); prendendo il modulo di quantità positive \(\frac{|G|}{2} < |g| < \frac{3}{2}|G|\)
+
+\end{itemize}
+
+\sphinxAtStartPar
+Si è quindi dimostrato che se esiste il limite \(G\), scegliendo \(\varepsilon = \frac{|G|}{2}\), allora esiste un intorno di \(x_0\) nel quale il valore assoluto della funzione è limitato,
+\begin{equation*}
+\begin{split}\frac{|G|}{2} < |g(x)| < \frac{3}{2}|G| \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+per tutti i valori di \(x \in U_{x_0, \delta}\).
+\subsubsection*{\protect\(\lim_{x \rightarrow x_0} f(x) / g(x)\protect\)}
+\begin{equation*}
+\begin{split}\begin{aligned}
+  & |f(x) - F| < \varepsilon_f \qquad \rightarrow \qquad F - \varepsilon_f < f(x) < F + \varepsilon_f \\
+  & |g(x) - G| < \varepsilon_g \qquad \rightarrow \qquad G - \varepsilon_g < g(x) < G + \varepsilon_g \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Nell’ipotesi che \(f(x) \cdot g(x) > 0\) (concordi, serve teorema permanenza segno?)
+\begin{equation*}
+\begin{split}\begin{aligned}
+   |f(x) / g(x) - F / G|
+   &   =   \left| \frac{f}{g} - \frac{F}{g} + \frac{F}{g} - \frac{F}{G} \right| = \\
+   &   =   \left| \frac{f}{g} - \frac{F}{g} + \frac{F}{G}\frac{g}{G} - \frac{F}{G} \right| = \\
+   &   =   \left| \frac{f}{g} - \frac{F}{g} + \frac{F}{G} \left( \frac{g}{G} - 1 \right) \right| = \\
+   & \le   \left| \frac{1}{g} \right| |f - F| + \left|\frac{1}{G}\right|\left|\frac{F}{G}\right|\left| g - G \right| = \\
+   & \le   \left| \frac{1}{g} \right| \varepsilon_f + \left|\frac{1}{G}\right|\left|\frac{F}{G}\right| \varepsilon_g = \\
+   & \le \underbrace{2 \left| \frac{1}{G} \right| \varepsilon_f + \left|\frac{1}{G}\right|\left|\frac{F}{G}\right| \varepsilon_g}_{\tilde{\varepsilon}} 
+   & 
+\end{aligned}\end{split}
+\end{equation*}
+
+\subsection{Contronto di infiniti e infinitesimi}
+\label{\detokenize{ch/infinitesimal_calculus/analysis-notes:contronto-di-infiniti-e-infinitesimi}}
+
+\subsection{Limiti fondamentali}
+\label{\detokenize{ch/infinitesimal_calculus/analysis-notes:limiti-fondamentali}}\label{\detokenize{ch/infinitesimal_calculus/analysis-notes:infinitesimal-calculus-limits-fund-notes}}
+\sphinxAtStartPar
+Vengono qui dimostrati i \DUrole{xref,myst}{limiti fondamentali}.
+\subsubsection*{Dimostrazione di \protect\(\ \lim_{x \rightarrow 0} \frac{\sin x}{x} = 1 \protect\)}
 
 \sphinxAtStartPar
 Usando il teorema del confronto per le funzioni \(\sin x \le x \le \tan x\) (\sphinxstylestrong{todo} *dimostrare con l’area delle figure geometriche \(\frac{1}{2}\sin x \le \frac{1}{2} \, x \le \frac{1}{2} \tan x\)), si può scrivere per \(x \ne 0\)
@@ -7470,57 +7848,6 @@ Usando i risultati che coinvolgono l’esponenziale, dopo aver riscritto \((1+x)
 \end{equation*}
 \sphinxAtStartPar
 avendo definito la variabile \(y = a \ln (1+x)\), che tende a zero quando \(x \rightarrow 0\). \sphinxstylestrong{todo} \sphinxstyleemphasis{prestare attenzione alle operazioni fatte, e fare riferimento alle operazioni con i limiti, e successivamente all’uso di infinitesimi e asintotici nel calcolo dei limiti.}
-
-\sphinxAtStartPar
-\sphinxstylestrong{todo} \sphinxstyleemphasis{Spostare nella sezione di precalcolo sulle successioni}
-Limiti di successioni. \sphinxstylestrong{Formula di Sterling}
-\begin{equation*}
-\begin{split}n! \sim \left(\frac{n}{e} \right)^n \qquad \text{per $n \in \mathbb{N} \rightarrow +\infty$}\end{split}
-\end{equation*}
-\sphinxAtStartPar
-o
-\begin{equation*}
-\begin{split}\ln n! \sim n \ln n - n  \qquad \text{per $n \in \mathbb{N} \rightarrow +\infty$}\end{split}
-\end{equation*}
-\sphinxstepscope
-
-
-\section{Introduzione all’analisi \sphinxhyphen{} Problemi}
-\label{\detokenize{ch/infinitesimal_calculus/analysis-problems:introduzione-all-analisi-problemi}}\label{\detokenize{ch/infinitesimal_calculus/analysis-problems:infinitesimal-calculus-analysis-problems}}\label{\detokenize{ch/infinitesimal_calculus/analysis-problems::doc}}
-
-\subsection{Funzioni}
-\label{\detokenize{ch/infinitesimal_calculus/analysis-problems:funzioni}}\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-dominio, grafico, dalla geometria
-
-\end{itemize}
-
-
-\subsection{Limiti}
-\label{\detokenize{ch/infinitesimal_calculus/analysis-problems:limiti}}\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-calcolo limiti con definizione
-
-\item {} 
-\sphinxAtStartPar
-calcolo limiti
-
-\item {} 
-\sphinxAtStartPar
-calcolo limiti con forme indeterminate fondamentali
-
-\end{itemize}
-
-
-\subsection{Funzioni continue}
-\label{\detokenize{ch/infinitesimal_calculus/analysis-problems:funzioni-continue}}\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-continuità e discontinuità
-
-\end{itemize}
 
 \sphinxstepscope
 
@@ -8050,6 +8377,11 @@ serie di Taylor? Esercizi su formule di errore di metodi numerici?
 
 \subsection{Metodo di Newton}
 \label{\detokenize{ch/infinitesimal_calculus/derivatives-problems:metodo-di-newton}}
+\sphinxstepscope
+
+
+\section{Dimostrazioni}
+\label{\detokenize{ch/infinitesimal_calculus/derivatives-notes:dimostrazioni}}\label{\detokenize{ch/infinitesimal_calculus/derivatives-notes:infinitesimal-calculus-derivatives-notes}}\label{\detokenize{ch/infinitesimal_calculus/derivatives-notes::doc}}
 \sphinxstepscope
 
 
@@ -8656,7 +8988,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-06 dic 2024
+08 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -9472,7 +9804,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-06 dic 2024
+08 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -9576,7 +9908,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-06 dic 2024
+08 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -10006,7 +10338,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-06 dic 2024
+08 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -10125,6 +10457,9 @@ RL: ottimizzazione/controllo
 \renewcommand{\indexname}{Proof Index}
 \begin{sphinxtheindex}
 \let\bigletter\sphinxstyleindexlettergroup
+\bigletter{definition\sphinxhyphen{}0}
+\item\relax\sphinxstyleindexentry{definition\sphinxhyphen{}0}\sphinxstyleindexextra{ch/precalculus/real\sphinxhyphen{}functions}\sphinxstyleindexpageref{ch/precalculus/real-functions:\detokenize{definition-0}}
+\indexspace
 \bigletter{example\sphinxhyphen{}0}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}0}\sphinxstyleindexextra{ch/algebra/real\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/real-algebra:\detokenize{example-0}}
 \indexspace
@@ -10160,6 +10495,9 @@ RL: ottimizzazione/controllo
 \indexspace
 \bigletter{integrals:thm:fund:reynolds}
 \item\relax\sphinxstyleindexentry{integrals:thm:fund:reynolds}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{integrals:thm:fund:reynolds}}
+\indexspace
+\bigletter{set\sphinxhyphen{}fun\sphinxhyphen{}def}
+\item\relax\sphinxstyleindexentry{set\sphinxhyphen{}fun\sphinxhyphen{}def}\sphinxstyleindexextra{ch/set}\sphinxstyleindexpageref{ch/set:\detokenize{set-fun-def}}
 \indexspace
 \bigletter{thm:infinitesimal\sphinxhyphen{}calculus:continuous\sphinxhyphen{}fun:thms:comparison}
 \item\relax\sphinxstyleindexentry{thm:infinitesimal\sphinxhyphen{}calculus:continuous\sphinxhyphen{}fun:thms:comparison}\sphinxstyleindexextra{ch/infinitesimal\_calculus/analysis}\sphinxstyleindexpageref{ch/infinitesimal_calculus/analysis:\detokenize{thm:infinitesimal-calculus:continuous-fun:thms:comparison}}

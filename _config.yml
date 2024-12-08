@@ -14,6 +14,13 @@ execute:
 latex:
   latex_documents:
     targetname: book.tex
+# latex_elements:
+#   preamble: |
+#       % Set section numbering
+#       \setcounter{secnumdepth}{4}
+#       % Set TOC depth
+#       \setcounter{tocdepth}{4}
+     
 
 # Add a bibtex file so that we can create citations
 bibtex_bibfiles:

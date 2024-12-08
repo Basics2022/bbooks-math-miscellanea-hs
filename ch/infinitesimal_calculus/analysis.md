@@ -1,17 +1,12 @@
 (infinitesimal-calculus:analysis)=
 # Introduzione all'analisi
 
-In questa sezione viene richiamato il concetto di funzione introdotto nella sezione [Precalcolo](math-hs:precalculus). Viene introdotto il concetto di [limite](infinitesimal-calculus:limits) e definito in termini topologici (intervalli, punti di accumulazione, insiemi aperti e chiusi,...). Il concetto di limite viene utilizzato per dare una definizione di [funzione continua](). Vengono poi presentati alcuni teoremi e proprietà di limiti e funzioni continue.
+In questa sezione viene richiamato il concetto di funzione introdotto nella sezione [precalcolo](math-hs:precalculus). Viene introdotto il concetto di [limite](infinitesimal-calculus:limits) e definito in termini topologici (intervalli, punti di accumulazione, insiemi aperti e chiusi,...). Il concetto di limite viene utilizzato per dare una definizione di [funzione continua](). Vengono poi presentati alcuni teoremi e proprietà di limiti e funzioni continue.
 
 <!-- Real functions: f: R -> R -->
 (infinitesimal-calculus:analysis:real-functions)=
 ## Funzioni reali a variabile reale, $f: \mathbb{R} \rightarrow \mathbb{R}$
-
-(infinitesimal-calculus:analysis:real-functions:def)=
-### Definizione
-
-(infinitesimal-calculus:analysis:real-functions:graph)=
-### Rappresentazione grafica
+Per un'introduzione alle funzioni reali fa variabili reali si rimanda al [capitolo dedicato](math-hs:precalculus:real-functions) nella sezione [precalcolo](math-hs:precalculus).
 
 
 <!-- Limits and continuous functions -->
@@ -130,32 +125,72 @@ e che quindi $\exists x_0 \in (a,b)$ t.c $g(x_0) = 0$ o equivalentemente $f(x_0)
 ```
 
 (infinitesimal-calculus:limits:thms)=
-## Teoremi sui limiti
+## Operazioni e teoremi sui limiti
+Vengono elencate alcune regole per compiere operazioni con i limiti. La [dimostrazione](infinitesimal-calculus:limits:thms:notes) delle regole è disponibile a fine capitolo.
 
 (infinitesimal-calculus:limits:thms:operations)=
 ### Operazioni coi limiti
-Dato un numero reale $c \in \mathbb{R}$ e i limiti $\lim_{x \rightarrow x_0} f(x) = L_1$, $\lim_{x \rightarrow x_0} g(x) = L_2$
+Dato un numero reale $c \in \mathbb{R}$ e i limiti **finiti** $\lim_{x \rightarrow x_0} f(x) = F$, $\lim_{x \rightarrow x_0} g(x) = G$ allora valgono le seguenti regole
 
 $$\begin{aligned}
- & \lim_{x \rightarrow x_0} \big( c \cdot f(x) \big) = c \, L_1 \\
- & \lim_{x \rightarrow x_0} \big( f(x) \mp g(x) \big) = L_1 \mp L_2 \\
- & \lim_{x \rightarrow x_0} \big( f(x) \cdot g(x) \big) = L_1 \cdot L_2 \\
- & \lim_{x \rightarrow x_0} \frac{ f(x) }{ g(x) } = \frac{L_1}{L_2} \quad , \quad \text{se $L_2 \ne 0$}  \\
+ & \lim_{x \rightarrow x_0} \big( c \cdot f(x) \big) = c \, F  \\
+ & \lim_{x \rightarrow x_0} \big( f(x) \mp g(x) \big) = F \mp G \\
+ & \lim_{x \rightarrow x_0} \big( f(x) \cdot g(x) \big) = F \cdot G \\
+ & \lim_{x \rightarrow x_0} \frac{ f(x) }{ g(x) } = \frac{F}{G} \quad , \quad \text{se $G \ne 0$}  \\
+ & \dots \text{**todo** *regole con esponenti*} \\
 \end{aligned}$$
+
+Alcune delle operazioni elencate qui sopra per limiti finiti possono essere [estese al caso di limiti infiniti](infinitesimal-calculus:limits:thms:infinite-simal); in altri casi, nascono delle forme [indeterminate](infinitesimal-calculus:limits:thms:infinite-simal:undetermined).
 
 (infinitesimal-calculus:limits:thms:infinite-simal)=
 #### Limiti infiniti e infinitesimi
+Valgono le seguenti regole
+
+$$\begin{array}{ll}
+  f(x) \rightarrow \mp \infty \ , \ c > 0             & : \ \lim_{x \rightarrow x_0} c \cdot f(x) = \mp \infty \\
+  f(x) \rightarrow \mp \infty \ , \ c < 0             & : \ \lim_{x \rightarrow x_0} c \cdot f(x) = \pm \infty \\
+  f(x) \rightarrow \mp \infty \ , \ G \text{ finito}  & : \ \lim_{x \rightarrow x_0} ( f(x) + g(x) ) = \mp \infty \\
+  f(x) \rightarrow \mp \infty \ , \ G \text{ finito}, g(x) \ne 0  & : \ \lim_{x \rightarrow x_0} \frac{g(x)}{f(x)} = 0^{ \mp \text{sign}\{G\}} \\
+  f(x) \rightarrow 0^{\mp}    \ , \ G \text{ finito}, g(x) \ne 0  & : \ \lim_{x \rightarrow x_0} \frac{g(x)}{f(x)} = \mp \text{sign}\{G\} \cdot \infty \\
+  f(x) \rightarrow \mp \infty \ , \ g(x) \ne 0 & : \ \lim_{x \rightarrow x_0} g(x) \cdot f(x) = \mp \text{sign}\{G\} \cdot \infty \\
+  \dots \text{**todo** *regole con esponenti*} & \\
+\end{array}$$
+
+riassumibili con un po' di libertà nella notazione come
+
 $$\begin{aligned}
- &  \lim_{x \rightarrow x_0}f(x) \rightarrow \mp \infty \ , c > 0 \quad : \qquad \lim_{x \rightarrow x_0} c \cdot f(x) = \mp \infty \\
- & \dots \\
+  & c \cdot \mp \infty = \mp \text{sign}\{c\} \cdot \infty \ , \quad \text{se } c \ne 0 \\
+  & c \mp \infty = \mp \infty \\
+  & + \infty + \infty = +\infty \\
+  & - \infty - \infty = -\infty \\
+  & + \infty \cdot \mp \infty = \mp \infty \\
+  & \frac{c}{\mp \infty} = 0^{\mp \text{sign}\{c\}} \ , \quad \text{se } c \ne 0 \\
+  & \dots \text{**todo** *regole con esponenti*} \\
 \end{aligned}$$
 
 
+```{note} Si prega di notare come sono stati esclusi alcuni casi riguardanti valori o funzioni identicamente uguali a $0$. Nel caso in cui $g(x) = 0$, ad esempio
+
+$$g(x) f(x) \equiv 0 \qquad \rightarrow \qquad \lim g(x) f(x) = 0 \ ,$$
+
+poiché la funzione $g(x) f(x)$ è identicamente uguale a zero: *non c'è nulla da variare per studiarne il limite: il valore è zero per ogni $x$ e basta*.
+
+```
 (infinitesimal-calculus:limits:thms:infinite-simal:undetermined)=
 #### Forme indeterminate
+Risultano indeterminate le seguenti 7 forme,
+
 $$+\infty-\infty \quad , \quad 0 \cdot \mp \infty \quad , \quad \frac{\mp \infty}{\mp \infty} \quad , \quad \frac{0}{0} \quad , \quad 1^{\infty} \quad , \quad 0^0 \quad , \quad \infty^0$$
 
-**oss.** Invece non sono forme indeterminate $0^{+\infty} \rightarrow 0$ e $0^{-\infty} \rightarrow \infty$.
+avendo interpretato gli *infiniti*, gli *zeri* e gli *uni* come funzioni che tendono a quei valori,
+
+$$0 \sim \lim f(x) = 0 \qquad , \qquad  1 \sim \lim f(x) = 1  \qquad , \qquad \infty \sim \lim f(x) = \infty \ ,$$
+
+senza esserne identicamente uguali.
+
+**Oss.** Invece non sono forme indeterminate $0^{+\infty} \rightarrow 0$ e $0^{-\infty} \rightarrow \infty$.
+
+Vengono ora introdotti alcuni risultati necessari per manipolare le forme indeterminate, e poter confrontare infiniti e infinitesimi.
 
 (infinitesimal-calculus:limits:thms:comparison)=
 ### Teorema del confronto
@@ -190,7 +225,6 @@ $$\ell - \varepsilon_g \le \ell - \varepsilon_f < f(x) \le g(x) \le h(x) < \ell 
 e quindi per  $\forall \varepsilon_g > 0$, $\exists U_{x_0,\delta}$ tale che $|g(x) - \ell|<\varepsilon_g$ per $\forall x \in U_{x_0,\delta} \backslash \{ x_0 \}$, cioè $\lim_{x \rightarrow x_0} g(x) = \ell$
 
 ```
-
 **todo** *Dimostrazione? Discussione più intuitiva? Figura?*
 
 (infinitesimal-calculus:limits:thms:hopital)=
@@ -236,7 +270,7 @@ $$\lim_{x \rightarrow x_0} \frac{h(x)}{k(x)} = \frac{a}{b} \lim_{x \rightarrow x
 
 (infinitesimal-calculus:limits:fund)=
 ## Limiti fondamentali
-In questa sezione vengono calcolati alcuni limiti fondamentali. Questi limiti possono essere considerati fondamentali come sinonimo di *"minimo da ricordare"* per poter calcolare limiti più generali utilizzando le [operazioni](infinitesimal-calculus:limits:thms:operations) e i [teoremi](infinitesimal-calculus:limits:thms) sui limiti, e calcolare le [derivate fondamentali](infinitesimal-calculus:derivatives:fund). Un elenco minimo di limiti fondamentali è:
+Questa sezione contiene alcuni limiti fondamentali. Questi limiti possono essere considerati fondamentali come sinonimo di *"minimo da ricordare"* per poter calcolare limiti più generali utilizzando le [operazioni](infinitesimal-calculus:limits:thms:operations) e i [teoremi](infinitesimal-calculus:limits:thms) sui limiti, e calcolare le [derivate fondamentali](infinitesimal-calculus:derivatives:fund). Un elenco minimo di limiti fondamentali è:
 
 $$ \lim_{x \rightarrow 0} \frac{\sin x}{x} = 1 $$
 $$ \lim_{x \rightarrow 0} \frac{1 - \cos x}{x^2} = \frac{1}{2} $$
@@ -246,8 +280,13 @@ $$ \lim_{x \rightarrow 0} \frac{e^x}{1+x}= 1 $$
 $$ \lim_{x \rightarrow 0} \frac{\ln (1+x)}{x} = 1 $$
 $$ \lim_{x \rightarrow 0} \frac{(1+x)^a - 1}{x} = a $$
 
+````{only} latex
+La [dimostrazione dei limiti fondamentali](infinitesimal-calculus:limits:fund:notes) è disponibilie a fine capitolo.
+````
+
+````{only} html
 ```{dropdown} Dimostrazione di $\ \lim_{x \rightarrow 0} \frac{\sin x}{x} = 1 $
-Usando il teorema del confronto per le funzioni $\sin x \le x \le \tan x$ (**todo** *dimostrare con l'area delle figure geometriche $\frac{1}{2}\sin x \le \frac{1}{2} \, x \le \frac{1}{2} \tan x$), si può scrivere per $x \ne 0$
+Usando il [teorema del confronto](infinitesimal-calculus:limits:thms:comparison) per le funzioni $\sin x \le x \le \tan x$ (**todo** *dimostrare con l'area delle figure geometriche $\frac{1}{2}\sin x \le \frac{1}{2} \, x \le \frac{1}{2} \tan x$), si può scrivere per $x \ne 0$
 
 $$1 \le \frac{x}{\sin x} \le \frac{\tan x}{\sin x} = \frac{1}{\cos x} .$$
 
@@ -304,7 +343,9 @@ Usando i risultati che coinvolgono l'esponenziale, dopo aver riscritto $(1+x)^a 
   avendo definito la variabile $y = a \ln (1+x)$, che tende a zero quando $x \rightarrow 0$. **todo** *prestare attenzione alle operazioni fatte, e fare riferimento alle operazioni con i limiti, e successivamente all'uso di infinitesimi e asintotici nel calcolo dei limiti.*
 
 ```
+````
 
+<!--
 **todo** *Spostare nella sezione di precalcolo sulle successioni*
 Limiti di successioni. **Formula di Sterling**
 
@@ -313,5 +354,5 @@ $$n! \sim \left(\frac{n}{e} \right)^n \qquad \text{per $n \in \mathbb{N} \righta
 o
 
 $$\ln n! \sim n \ln n - n  \qquad \text{per $n \in \mathbb{N} \rightarrow +\infty$}$$
-
+-->
 
