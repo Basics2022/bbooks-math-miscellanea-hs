@@ -105,7 +105,7 @@ $$\int_{a}^{b} f(x) dx = (b-a) f(c) $$
 -->
 (infinitesimal-calculus:integrals:thm:fund)=
 ### Teorema fondamentale del calcolo infinitesimale
-(Teorema fondamentale del calcolo infinitesimale)
+(Teorema fondamentale del calcolo infinitesimale)=
 ```{prf:theorem} Teorema fondamentale del calcolo infinitesimale
 :label: integrals:thm:fund
 
