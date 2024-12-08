@@ -223,32 +223,36 @@
 \contentsline {section}{\numberline {24.5}Confronto di infiniti e infinitesimi}{134}{section.24.5}%
 \contentsline {subsection}{\numberline {24.5.1}Calcolo dei limiti con sostituzione degli infinitesimi o degli infiniti}{134}{subsection.24.5.1}%
 \contentsline {section}{\numberline {24.6}Limiti fondamentali}{135}{section.24.6}%
-\contentsline {section}{\numberline {24.7}Introduzione all’analisi \sphinxhyphen {} Problemi}{135}{section.24.7}%
-\contentsline {subsection}{\numberline {24.7.1}Funzioni}{135}{subsection.24.7.1}%
-\contentsline {subsection}{\numberline {24.7.2}Limiti}{135}{subsection.24.7.2}%
-\contentsline {subsection}{\numberline {24.7.3}Funzioni continue}{135}{subsection.24.7.3}%
-\contentsline {section}{\numberline {24.8}Note e dimiostrazioni}{136}{section.24.8}%
-\contentsline {subsection}{\numberline {24.8.1}Funzioni reali a variabile reale, \(f: \symbb {R} \rightarrow \symbb {R}\)}{136}{subsection.24.8.1}%
-\contentsline {subsection}{\numberline {24.8.2}Limiti}{136}{subsection.24.8.2}%
-\contentsline {subsection}{\numberline {24.8.3}Funzioni continue, \(f \in C^0\)}{136}{subsection.24.8.3}%
-\contentsline {subsection}{\numberline {24.8.4}Operazioni e teoremi sui limiti}{136}{subsection.24.8.4}%
-\contentsline {subsection}{\numberline {24.8.5}Contronto di infiniti e infinitesimi}{138}{subsection.24.8.5}%
-\contentsline {subsection}{\numberline {24.8.6}Limiti fondamentali}{138}{subsection.24.8.6}%
+\contentsline {section}{\numberline {24.7}Problemi}{136}{section.24.7}%
+\contentsline {subsection}{\numberline {24.7.1}Funzioni}{136}{subsection.24.7.1}%
+\contentsline {subsection}{\numberline {24.7.2}Limiti e funzoni continue}{137}{subsection.24.7.2}%
+\contentsline {section}{\numberline {24.8}Note e dimiostrazioni}{137}{section.24.8}%
+\contentsline {subsection}{\numberline {24.8.1}Funzioni reali a variabile reale, \(f: \symbb {R} \rightarrow \symbb {R}\)}{137}{subsection.24.8.1}%
+\contentsline {subsection}{\numberline {24.8.2}Limiti}{137}{subsection.24.8.2}%
+\contentsline {subsection}{\numberline {24.8.3}Funzioni continue, \(f \in C^0\)}{137}{subsection.24.8.3}%
+\contentsline {subsection}{\numberline {24.8.4}Operazioni e teoremi sui limiti}{137}{subsection.24.8.4}%
+\contentsline {subsection}{\numberline {24.8.5}Contronto di infiniti e infinitesimi}{139}{subsection.24.8.5}%
+\contentsline {subsection}{\numberline {24.8.6}Limiti fondamentali}{139}{subsection.24.8.6}%
 \contentsline {chapter}{\numberline {25}Derivate}{141}{chapter.25}%
 \contentsline {section}{\numberline {25.1}Definizione}{141}{section.25.1}%
 \contentsline {section}{\numberline {25.2}Regole di derivazione}{141}{section.25.2}%
 \contentsline {section}{\numberline {25.3}Teoremi}{143}{section.25.3}%
-\contentsline {section}{\numberline {25.4}Derivate fondamentali}{144}{section.25.4}%
-\contentsline {section}{\numberline {25.5}Derivate di ordine superiore}{146}{section.25.5}%
-\contentsline {section}{\numberline {25.6}Applicazioni}{146}{section.25.6}%
-\contentsline {subsection}{\numberline {25.6.1}Espansioni in serie di Taylor e MacLaurin}{146}{subsection.25.6.1}%
-\contentsline {subsubsection}{Esempi}{147}{subsubsection*.53}%
+\contentsline {subsection}{\numberline {25.3.1}Teorema di Fermat}{143}{subsection.25.3.1}%
+\contentsline {subsection}{\numberline {25.3.2}Teorema di Rolle}{143}{subsection.25.3.2}%
+\contentsline {subsection}{\numberline {25.3.3}Teorema di Cauchy}{144}{subsection.25.3.3}%
+\contentsline {subsection}{\numberline {25.3.4}Teorema di Lagrange}{144}{subsection.25.3.4}%
+\contentsline {subsection}{\numberline {25.3.5}Teorema di de l’Hopital}{144}{subsection.25.3.5}%
+\contentsline {section}{\numberline {25.4}Derivate fondamentali}{145}{section.25.4}%
+\contentsline {section}{\numberline {25.5}Derivate di ordine superiore}{147}{section.25.5}%
+\contentsline {section}{\numberline {25.6}Applicazioni}{147}{section.25.6}%
+\contentsline {subsection}{\numberline {25.6.1}Espansioni in serie di Taylor e MacLaurin}{147}{subsection.25.6.1}%
+\contentsline {subsubsection}{Esempi}{148}{subsubsection*.53}%
 \contentsline {subsection}{\numberline {25.6.2}Studio di funzione}{148}{subsection.25.6.2}%
 \contentsline {subsection}{\numberline {25.6.3}Ottimizzazione}{148}{subsection.25.6.3}%
 \contentsline {section}{\numberline {25.7}Derivate \sphinxhyphen {} Problemi}{148}{section.25.7}%
 \contentsline {subsection}{\numberline {25.7.1}Calcolo derivate}{148}{subsection.25.7.1}%
-\contentsline {subsection}{\numberline {25.7.2}Calcolo di limiti con la regola di de l’Hopital}{148}{subsection.25.7.2}%
-\contentsline {subsection}{\numberline {25.7.3}Problemi di geometria}{148}{subsection.25.7.3}%
+\contentsline {subsection}{\numberline {25.7.2}Calcolo di limiti con la regola di de l’Hopital}{149}{subsection.25.7.2}%
+\contentsline {subsection}{\numberline {25.7.3}Problemi di geometria}{149}{subsection.25.7.3}%
 \contentsline {subsection}{\numberline {25.7.4}Studio di funzione}{149}{subsection.25.7.4}%
 \contentsline {subsection}{\numberline {25.7.5}Problemi di ottimizzazione}{149}{subsection.25.7.5}%
 \contentsline {subsection}{\numberline {25.7.6}Approssimazioni locali di funzioni}{150}{subsection.25.7.6}%
@@ -261,6 +265,9 @@
 \contentsline {subsubsection}{Proprietà dell’integrale definito}{152}{subsubsection*.58}%
 \contentsline {subsection}{\numberline {26.1.3}Integrale indefinito}{152}{subsection.26.1.3}%
 \contentsline {section}{\numberline {26.2}Teoremi}{153}{section.26.2}%
+\contentsline {subsection}{\numberline {26.2.1}Teorema della media}{153}{subsection.26.2.1}%
+\contentsline {subsection}{\numberline {26.2.2}Teorema fondamentale del calcolo infinitesimale}{153}{subsection.26.2.2}%
+\contentsline {subsection}{\numberline {26.2.3}Derivata su dominio dipendente dalla variabile indipendente}{153}{subsection.26.2.3}%
 \contentsline {section}{\numberline {26.3}Integrali fondamentali}{154}{section.26.3}%
 \contentsline {section}{\numberline {26.4}Regole di integrazione}{154}{section.26.4}%
 \contentsline {subsection}{\numberline {26.4.1}Integrazione per parti}{154}{subsection.26.4.1}%

@@ -1,14 +1,12 @@
 (infinitesimal-calculus:analysis:problems)=
-# Introduzione all'analisi - Problemi
+# Problemi
 
 ## Funzioni
 - dominio, grafico, dalla geometria
 
-## Limiti
-- calcolo limiti con definizione
+## Limiti e funzoni continue
+- *calcolo limiti con definizione*
+- continuità e discontinuità di funzioni
 - calcolo limiti
-- calcolo limiti con forme indeterminate fondamentali
 
-## Funzioni continue
-- continuità e discontinuità
 

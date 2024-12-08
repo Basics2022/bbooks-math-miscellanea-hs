@@ -7616,12 +7616,73 @@ Questa sezione contiene alcuni limiti fondamentali. Questi limiti possono essere
 La {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis-notes:infinitesimal-calculus-limits-fund-notes}]{\sphinxcrossref{\DUrole{std,std-ref}{dimostrazione dei limiti fondamentali}}}} è disponibilie a fine capitolo.
 
 
+\subsubsection*{Dimostrazione di \protect\(\ \lim_{x \rightarrow 0} \frac{\sin x}{x} = 1 \protect\)}
+
+\sphinxAtStartPar
+Usando il {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-thms-comparison}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema del confronto}}}} per le funzioni \(\sin x \le x \le \tan x\) (\sphinxstylestrong{todo} *dimostrare con l’area delle figure geometriche \(\frac{1}{2}\sin x \le \frac{1}{2} \, x \le \frac{1}{2} \tan x\)), si può scrivere per \(x \ne 0\)
+\begin{equation*}
+\begin{split}1 \le \frac{x}{\sin x} \le \frac{\tan x}{\sin x} = \frac{1}{\cos x} .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Il limite per \(x \rightarrow 0\) delle due funzioni estreme vale \(1\), quindi
+\begin{equation*}
+\begin{split}\lim_{x \rightarrow 0} \frac{x}{\sin x} = 1 \ .\end{split}
+\end{equation*}\subsubsection*{Dimostrazione di \protect\(\ \lim_{x \rightarrow 0} \frac{1 - \cos x}{x^2} = \frac{1}{2} \protect\)}
+
+\sphinxAtStartPar
+Usando la formula \(\cos 2 \alpha = \cos^2 \alpha - \sin^2 \alpha = 2 \cos^2 \alpha - 1 = 1 - 2 \sin^2 \alpha\), si può scrivere \(1 - \cos x = 2 \sin^2 \frac{x}{2}\). Si può quindi riscrivere il limite cercato come
+\begin{equation*}
+\begin{split}\lim_{x \rightarrow 0} \frac{1 - \cos x}{x^2} = \lim_{x \rightarrow 0} \frac{ 2 \sin^2 \frac{x}{2} }{x^2} = \lim_{x \rightarrow 0} \frac{1}{2} \frac{\sin^2 \frac{x}{2}}{\left( \frac{x}{2} \right)^2} = \frac{1}{2} \underbrace{\lim_{x \rightarrow 0} \left( \frac{\sin \frac{x}{2}}{\frac{x}{2}} \right)^2}_{=1} = \frac{1}{2} \ .\end{split}
+\end{equation*}\subsubsection*{Dimostrazione di \protect\(\ \lim_{x \rightarrow 0} \frac{e^x - 1}{x}= 1 \protect\)}
+
+\sphinxAtStartPar
+Usando le notazioni di «o piccolo» e «o grande» per {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-infinite-simal}]{\sphinxcrossref{\DUrole{std,std-ref}{il confronto tra infinitesimi}}}}, si dimostra il limite desiderato,
+\begin{equation*}
+\begin{split}\lim_{x \rightarrow 0} \frac{e^x - 1}{x} = \lim_{x \rightarrow 0} \frac{\sum_{k=0}^{+\infty} \frac{x^k}{k!} - 1}{x} = \lim_{x \rightarrow 0} \frac{1 + x + o(x) - 1}{x} = \lim_{x \rightarrow 0} \left( 1 + O(x) \right) = 1 \ .\end{split}
+\end{equation*}\subsubsection*{Dimostrazione di \protect\(\ \lim_{x \rightarrow 0} \frac{e^x}{1 + x} = 1 \protect\)}
+
+\sphinxAtStartPar
+Usando le notazioni di «o piccolo» e «o grande» per {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-infinite-simal}]{\sphinxcrossref{\DUrole{std,std-ref}{il confronto tra infinitesimi}}}}, si dimostra il limite desiderato,
+\begin{equation*}
+\begin{split}\lim_{x \rightarrow 0} \frac{e^x}{1 + x} = \lim_{x \rightarrow 0} \frac{\sum_{k=0}^{+\infty} \frac{x^k}{k!}}{1+x} = \lim_{x \rightarrow 0} \frac{1 + x + o(x)}{1+x} = \lim_{x \rightarrow 0} \left( 1 + \frac{o(x)}{1+x} \right) = 1 \ .\end{split}
+\end{equation*}\subsubsection*{Dimostrazione di \protect\(\ \lim_{x \rightarrow 0} \frac{\ln (1+x)}{x} = 1\protect\)}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Dimostrazione 1.} Usando i risultati sui limiti che coinvolgono l’esponenziale, e definendo una nuova variabile \(y = e^x - 1\), così da avere \(x = \ln (y+1)\), con \(y \rightarrow 0\) quando \(x \rightarrow 0\), segue la dimostrazione,
+\begin{equation*}
+\begin{split}\lim_{y \rightarrow 0} \frac{\ln(1+y)}{y} = \lim_{x \rightarrow 0} \frac{x}{e^x-1} = 1 \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{Dimostrazione 2.} Usando il {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-thms-comparison}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema del confronto}}}} con la relazione (\sphinxstylestrong{todo} \sphinxstyleemphasis{dimostrare!})
+\begin{equation*}
+\begin{split}\frac{x-1}{x} \le \ln x \le x - 1 \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+che può essere riscritta, usando il cambio di variabile \(x \rightarrow x+1\) e dividendo per \(x\) (ipotizzata positiva; se negativa cambia il verso delle disuguaglianze, ma non il risultato) tutti e 3 i termini, come
+\begin{equation*}
+\begin{split}\frac{1}{x+1} \le \frac{\ln (x + 1)}{x} \le 1 \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Per \(x \rightarrow 0\) le due funzioni estremanti tendono a \(1\) e di conseguenza \(\lim_{x \rightarrow 0} \frac{\ln (x+1)}{x} = 1\).
+\subsubsection*{Dimostrazione di \protect\(\ \lim_{x \rightarrow 0} \frac{(1+x)^a - 1}{x} = a \protect\)}
+
+\sphinxAtStartPar
+Usando i risultati che coinvolgono l’esponenziale, dopo aver riscritto \((1+x)^a = e^{a \ln(1+x)}\),
+\begin{equation*}
+\begin{split} \lim_{x \rightarrow 0} \frac{(1+x)^a - 1}{x} = \lim_{x \rightarrow 0} \frac{e^{a \ln(1+x)} - 1}{a \ln (1+x)} \frac{a \ln(1+x)}{x} = a \, \underbrace{\lim_{y \rightarrow 0} \frac{e^y - 1}{y}}_{=1} \ \underbrace{\lim_{x \rightarrow 0} \frac{\ln(1+x)}{x}}_{=1} = a \ , \end{split}
+\end{equation*}
+\sphinxAtStartPar
+avendo definito la variabile \(y = a \ln (1+x)\), che tende a zero quando \(x \rightarrow 0\). \sphinxstylestrong{todo} \sphinxstyleemphasis{prestare attenzione alle operazioni fatte, e fare riferimento alle operazioni con i limiti, e successivamente all’uso di infinitesimi e asintotici nel calcolo dei limiti.}
+
+
+
+
 
 \sphinxstepscope
 
 
-\section{Introduzione all’analisi \sphinxhyphen{} Problemi}
-\label{\detokenize{ch/infinitesimal_calculus/analysis-problems:introduzione-all-analisi-problemi}}\label{\detokenize{ch/infinitesimal_calculus/analysis-problems:infinitesimal-calculus-analysis-problems}}\label{\detokenize{ch/infinitesimal_calculus/analysis-problems::doc}}
+\section{Problemi}
+\label{\detokenize{ch/infinitesimal_calculus/analysis-problems:problemi}}\label{\detokenize{ch/infinitesimal_calculus/analysis-problems:infinitesimal-calculus-analysis-problems}}\label{\detokenize{ch/infinitesimal_calculus/analysis-problems::doc}}
 
 \subsection{Funzioni}
 \label{\detokenize{ch/infinitesimal_calculus/analysis-problems:funzioni}}\begin{itemize}
@@ -7632,28 +7693,19 @@ dominio, grafico, dalla geometria
 \end{itemize}
 
 
-\subsection{Limiti}
-\label{\detokenize{ch/infinitesimal_calculus/analysis-problems:limiti}}\begin{itemize}
+\subsection{Limiti e funzoni continue}
+\label{\detokenize{ch/infinitesimal_calculus/analysis-problems:limiti-e-funzoni-continue}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
-calcolo limiti con definizione
+\sphinxstyleemphasis{calcolo limiti con definizione}
+
+\item {} 
+\sphinxAtStartPar
+continuità e discontinuità di funzioni
 
 \item {} 
 \sphinxAtStartPar
 calcolo limiti
-
-\item {} 
-\sphinxAtStartPar
-calcolo limiti con forme indeterminate fondamentali
-
-\end{itemize}
-
-
-\subsection{Funzioni continue}
-\label{\detokenize{ch/infinitesimal_calculus/analysis-problems:funzioni-continue}}\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-continuità e discontinuità
 
 \end{itemize}
 
@@ -7794,7 +7846,7 @@ Vengono qui dimostrati i \DUrole{xref,myst}{limiti fondamentali}.
 \subsubsection*{Dimostrazione di \protect\(\ \lim_{x \rightarrow 0} \frac{\sin x}{x} = 1 \protect\)}
 
 \sphinxAtStartPar
-Usando il teorema del confronto per le funzioni \(\sin x \le x \le \tan x\) (\sphinxstylestrong{todo} *dimostrare con l’area delle figure geometriche \(\frac{1}{2}\sin x \le \frac{1}{2} \, x \le \frac{1}{2} \tan x\)), si può scrivere per \(x \ne 0\)
+Usando il {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-thms-comparison}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema del confronto}}}} per le funzioni \(\sin x \le x \le \tan x\) (\sphinxstylestrong{todo} *dimostrare con l’area delle figure geometriche \(\frac{1}{2}\sin x \le \frac{1}{2} \, x \le \frac{1}{2} \tan x\)), si può scrivere per \(x \ne 0\)
 \begin{equation*}
 \begin{split}1 \le \frac{x}{\sin x} \le \frac{\tan x}{\sin x} = \frac{1}{\cos x} .\end{split}
 \end{equation*}
@@ -7950,7 +8002,10 @@ dalla quale segue immediatamente la regola di derivazione della funzione inversa
 \end{equation*}
 
 \section{Teoremi}
-\label{\detokenize{ch/infinitesimal_calculus/derivatives:teoremi}}\label{\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm}}\label{ch/infinitesimal_calculus/derivatives:thm:infinitesimal-calculus:derivatives:thm:fermat}
+\label{\detokenize{ch/infinitesimal_calculus/derivatives:teoremi}}\label{\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm}}
+
+\subsection{Teorema di Fermat}
+\label{\detokenize{ch/infinitesimal_calculus/derivatives:teorema-di-fermat}}\label{\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm-fermat}}\label{ch/infinitesimal_calculus/derivatives:thm:infinitesimal-calculus:derivatives:thm:fermat}
 \begin{sphinxadmonition}{note}{Theorem 24.3.1 (Teorema di Fermat)}
 
 
@@ -7984,7 +8039,10 @@ Il limite per \(h \rightarrow 0\) di queste due relazioni esiste ed è \(f'(x_0)
 e da queste la dimostrazione della tesi del problema, \(f'(x_0)\).
 
 
-\label{ch/infinitesimal_calculus/derivatives:thm:infinitesimal-calculus:derivatives:thm:rolle}
+
+
+\subsection{Teorema di Rolle}
+\label{\detokenize{ch/infinitesimal_calculus/derivatives:teorema-di-rolle}}\label{\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm-rolle}}\label{ch/infinitesimal_calculus/derivatives:thm:infinitesimal-calculus:derivatives:thm:rolle}
 \begin{sphinxadmonition}{note}{Theorem 24.3.2 (Teorema di Rolle)}
 
 
@@ -8006,7 +8064,10 @@ massimo e minimo sono nei punti estremi dell’intervallo. Allora la funzione è
 i punti di massimo e di minimo sono interni all’intervallo. In questo caso, per il {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm-rolle}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema di Fermat}}}} i punti \(c\) di minimo o massimo verificano la condizione \(f'(c) = 0\).
 
 \end{itemize}
-\label{ch/infinitesimal_calculus/derivatives:thm:infinitesimal-calculus:derivatives:thm:cauchy}
+
+
+\subsection{Teorema di Cauchy}
+\label{\detokenize{ch/infinitesimal_calculus/derivatives:teorema-di-cauchy}}\label{\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm-cauchy}}\label{ch/infinitesimal_calculus/derivatives:thm:infinitesimal-calculus:derivatives:thm:cauchy}
 \begin{sphinxadmonition}{note}{Theorem 24.3.3 (Teorema di Cauchy)}
 
 
@@ -8025,7 +8086,10 @@ Si applica il {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infin
 \end{equation*}
 \sphinxAtStartPar
 continua in \([a,b]\), derivabile in \((a,b)\) e con \(h(a) = g(b) \, f(a) - f(b) \, g(a) = h(b)\).
-\label{ch/infinitesimal_calculus/derivatives:thm:infinitesimal-calculus:derivatives:thm:lagrange}
+
+
+\subsection{Teorema di Lagrange}
+\label{\detokenize{ch/infinitesimal_calculus/derivatives:teorema-di-lagrange}}\label{\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm-lagrange}}\label{ch/infinitesimal_calculus/derivatives:thm:infinitesimal-calculus:derivatives:thm:lagrange}
 \begin{sphinxadmonition}{note}{Theorem 24.3.4 (Theorema di Lagrange)}
 
 
@@ -8039,7 +8103,10 @@ Data la funzione \(f, g: [a,b] \rightarrow \mathbb{R}\) continua in \([a,b]\) e 
 
 \sphinxAtStartPar
 Si applica il {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm-lagrange}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema di Cauhcy}}}} scegliendo la funzione \(g(x) = x\).
-\label{ch/infinitesimal_calculus/derivatives:thm:infinitesimal-calculus:derivatives:thm:hopital}
+
+
+\subsection{Teorema di de l’Hopital}
+\label{\detokenize{ch/infinitesimal_calculus/derivatives:teorema-di-de-l-hopital}}\label{\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm-hopital}}\label{ch/infinitesimal_calculus/derivatives:thm:infinitesimal-calculus:derivatives:thm:hopital}
 \begin{sphinxadmonition}{note}{Theorem 24.3.5 (Teorema di de l’Hopital )}
 
 
@@ -8498,7 +8565,10 @@ dove la costante additiva \(C\) tiene conto dell’arbitrarietà appena discussa
 \section{Teoremi}
 \label{\detokenize{ch/infinitesimal_calculus/integrals:teoremi}}\label{\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-thm}}
 
-\label{ch/infinitesimal_calculus/integrals:integrals:thm:avg}
+
+
+\subsection{Teorema della media}
+\label{\detokenize{ch/infinitesimal_calculus/integrals:teorema-della-media}}\label{\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-thm-avg}}\label{ch/infinitesimal_calculus/integrals:integrals:thm:avg}
 \begin{sphinxadmonition}{note}{Theorem 25.2.1 (Teorema della media)}
 
 
@@ -8514,7 +8584,10 @@ Sia \(f: [a,b] \in \mathbb{R} \rightarrow \mathbb{R}\) una funzione continua su 
 \sphinxstylestrong{todo}
 
 
-\label{ch/infinitesimal_calculus/integrals:integrals:thm:fund}
+
+
+\subsection{Teorema fondamentale del calcolo infinitesimale}
+\label{\detokenize{ch/infinitesimal_calculus/integrals:teorema-fondamentale-del-calcolo-infinitesimale}}\label{\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-thm-fund}}\label{ch/infinitesimal_calculus/integrals:integrals:thm:fund}
 \begin{sphinxadmonition}{note}{Theorem 25.2.2 (Teorema fondamentale del calcolo infinitesimale)}
 
 
@@ -8532,8 +8605,11 @@ Sia \(f: [a,b] \in \mathbb{R} \rightarrow \mathbb{R}\) una funzione continua su 
 & = \lim_{\varepsilon \rightarrow 0 } \frac{1}{\varepsilon} \varepsilon f(\xi) = \qquad \xi \in [x,x+\varepsilon] \\
 & = \lim_{\varepsilon \rightarrow 0 } f(\xi) = f(x) . \\
 \end{aligned}\end{split}
-\end{equation*}\label{ch/infinitesimal_calculus/integrals:integrals:thm:fund:reynolds}
-\begin{sphinxadmonition}{note}{Theorem 25.2.3 (Derivata su dominio dipendente dalla variabile indipendente)}
+\end{equation*}
+
+\subsection{Derivata su dominio dipendente dalla variabile indipendente}
+\label{\detokenize{ch/infinitesimal_calculus/integrals:derivata-su-dominio-dipendente-dalla-variabile-indipendente}}\label{\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-thm-fund-reynolds}}\label{ch/infinitesimal_calculus/integrals:integrals:thm:fund:reynolds}
+\begin{sphinxadmonition}{note}{Theorem 25.2.3 (Derivata su dominio dipendente dalla variabile indipendente \sphinxhyphen{} Reynolds)}
 
 
 
