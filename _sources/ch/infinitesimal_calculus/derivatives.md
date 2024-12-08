@@ -70,6 +70,8 @@ $$ \dfrac{d f^{-1}}{d y}\bigg|_{y = f(x)} = \dfrac{1}{ \dfrac{d y}{d x}\bigg|_{x
 ## Teoremi
 
 (infinitesimal-calculus:derivatives:thm:fermat)=
+### Teorema di Fermat
+# (infinitesimal-calculus:derivatives:thm:fermat)=
 ```{prf:theorem} Teorema di Fermat
 :label: thm:infinitesimal-calculus:derivatives:thm:fermat
 
@@ -104,6 +106,8 @@ La dimostrazione del teorema di Fermat...
 -->
 
 (infinitesimal-calculus:derivatives:thm:rolle)=
+### Teorema di Rolle
+# (infinitesimal-calculus:derivatives:thm:rolle)=
 ```{prf:theorem} Teorema di Rolle
 :label: thm:infinitesimal-calculus:derivatives:thm:rolle
 
