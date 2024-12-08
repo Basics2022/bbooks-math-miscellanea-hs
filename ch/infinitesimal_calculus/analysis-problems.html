@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>23.7. Introduzione all’analisi - Problemi &#8212; Matematica per le scuole superiori</title>
+    <title>23.7. Problemi &#8212; Matematica per le scuole superiori</title>
   
   
   
@@ -69,7 +69,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="24. Derivate" href="derivatives.html" />
+    <link rel="next" title="23.8. Note e dimiostrazioni" href="analysis-notes.html" />
     <link rel="prev" title="23. Introduzione all’analisi" href="analysis.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
@@ -235,11 +235,13 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../calculus.html">22. Introduzione al calcolo</a></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="analysis.html">23. Introduzione all’analisi</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">23.7. Introduzione all’analisi - Problemi</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">23.7. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analysis-notes.html">23.8. Note e dimiostrazioni</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="derivatives.html">24. Derivate</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="derivatives-problems.html">24.7. Derivate - Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="derivatives-notes.html">24.8. Dimostrazioni</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="integrals.html">25. Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -470,7 +472,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Introduzione all’analisi - Problemi</h1>
+    <h1>Problemi</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -481,8 +483,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funzioni">23.7.1. Funzioni</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limiti">23.7.2. Limiti</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funzioni-continue">23.7.3. Funzioni continue</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limiti-e-funzoni-continue">23.7.2. Limiti e funzoni continue</a></li>
 </ul>
             </nav>
         </div>
@@ -494,26 +495,20 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="introduzione-all-analisi-problemi">
-<span id="infinitesimal-calculus-analysis-problems"></span><h1><span class="section-number">23.7. </span>Introduzione all’analisi - Problemi<a class="headerlink" href="#introduzione-all-analisi-problemi" title="Permalink to this heading">#</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="problemi">
+<span id="infinitesimal-calculus-analysis-problems"></span><h1><span class="section-number">23.7. </span>Problemi<a class="headerlink" href="#problemi" title="Permalink to this heading">#</a></h1>
 <div class="section" id="funzioni">
 <h2><span class="section-number">23.7.1. </span>Funzioni<a class="headerlink" href="#funzioni" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>dominio, grafico, dalla geometria</p></li>
 </ul>
 </div>
-<div class="section" id="limiti">
-<h2><span class="section-number">23.7.2. </span>Limiti<a class="headerlink" href="#limiti" title="Permalink to this heading">#</a></h2>
+<div class="section" id="limiti-e-funzoni-continue">
+<h2><span class="section-number">23.7.2. </span>Limiti e funzoni continue<a class="headerlink" href="#limiti-e-funzoni-continue" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
-<li><p>calcolo limiti con definizione</p></li>
+<li><p><em>calcolo limiti con definizione</em></p></li>
+<li><p>continuità e discontinuità di funzioni</p></li>
 <li><p>calcolo limiti</p></li>
-<li><p>calcolo limiti con forme indeterminate fondamentali</p></li>
-</ul>
-</div>
-<div class="section" id="funzioni-continue">
-<h2><span class="section-number">23.7.3. </span>Funzioni continue<a class="headerlink" href="#funzioni-continue" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>continuità e discontinuità</p></li>
 </ul>
 </div>
 </div>
@@ -558,11 +553,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="derivatives.html"
+       href="analysis-notes.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">24. </span>Derivate</p>
+        <p class="prev-next-title"><span class="section-number">23.8. </span>Note e dimiostrazioni</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -582,8 +577,7 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funzioni">23.7.1. Funzioni</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limiti">23.7.2. Limiti</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funzioni-continue">23.7.3. Funzioni continue</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limiti-e-funzoni-continue">23.7.2. Limiti e funzoni continue</a></li>
 </ul>
   </nav></div>
 

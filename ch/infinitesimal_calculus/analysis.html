@@ -71,7 +71,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="23.7. Introduzione all’analisi - Problemi" href="analysis-problems.html" />
+    <link rel="next" title="23.7. Problemi" href="analysis-problems.html" />
     <link rel="prev" title="22. Introduzione al calcolo" href="../calculus.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
@@ -237,11 +237,13 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../calculus.html">22. Introduzione al calcolo</a></li>
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">23. Introduzione all’analisi</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="analysis-problems.html">23.7. Introduzione all’analisi - Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analysis-problems.html">23.7. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analysis-notes.html">23.8. Note e dimiostrazioni</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="derivatives.html">24. Derivate</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="derivatives-problems.html">24.7. Derivate - Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="derivatives-notes.html">24.8. Dimostrazioni</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="integrals.html">25. Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -482,18 +484,14 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funzioni-reali-a-variabile-reale-f-mathbb-r-rightarrow-mathbb-r">23.1. Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\(f: \mathbb{R} \rightarrow \mathbb{R}\)</span></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definizione">23.1.1. Definizione</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rappresentazione-grafica">23.1.2. Rappresentazione grafica</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funzioni-reali-a-variabile-reale-f-mathbb-r-rightarrow-mathbb-r">23.1. Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\(f: \mathbb{R} \rightarrow \mathbb{R}\)</span></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limiti">23.2. Limiti</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cenni-di-topologia-per-il-calcolo">23.2.1. Cenni di topologia per il calcolo</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definizione-di-limite">23.2.2. Definizione di limite</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funzioni-continue">23.3. Funzioni continue</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#infinitesimal-calculus-continuous-fun-def">23.3.1. Definizione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definizione">23.3.1. Definizione</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teoremi">23.3.2. Teoremi</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-weierstrass">23.3.2.1. Teorema di Weierstrass</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-della-permanenza-del-segno">23.3.2.2. Teorema della permanenza del segno</a></li>
@@ -503,7 +501,7 @@ document.write(`
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoremi-sui-limiti">23.4. Teoremi sui limiti</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni-e-teoremi-sui-limiti">23.4. Operazioni e teoremi sui limiti</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni-coi-limiti">23.4.1. Operazioni coi limiti</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#limiti-infiniti-e-infinitesimi">23.4.1.1. Limiti infiniti e infinitesimi</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#forme-indeterminate">23.4.1.2. Forme indeterminate</a></li>
@@ -531,17 +529,12 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="introduzione-all-analisi">
 <span id="infinitesimal-calculus-analysis"></span><h1><span class="section-number">23. </span>Introduzione all’analisi<a class="headerlink" href="#introduzione-all-analisi" title="Permalink to this heading">#</a></h1>
-<p>In questa sezione viene richiamato il concetto di funzione introdotto nella sezione <a class="reference internal" href="../precalculus.html#math-hs-precalculus"><span class="std std-ref">Precalcolo</span></a>. Viene introdotto il concetto di <a class="reference internal" href="#infinitesimal-calculus-limits"><span class="std std-ref">limite</span></a> e definito in termini topologici (intervalli, punti di accumulazione, insiemi aperti e chiusi,…). Il concetto di limite viene utilizzato per dare una definizione di <a class="reference internal" href="../infinitesimal_calculus.html"><span class="doc std std-doc">funzione continua</span></a>. Vengono poi presentati alcuni teoremi e proprietà di limiti e funzioni continue.</p>
+<p>In questa sezione viene richiamato il concetto di funzione introdotto nella sezione <a class="reference internal" href="../precalculus.html#math-hs-precalculus"><span class="std std-ref">precalcolo</span></a>. Viene introdotto il concetto di <a class="reference internal" href="#infinitesimal-calculus-limits"><span class="std std-ref">limite</span></a> e definito in termini topologici (intervalli, punti di accumulazione, insiemi aperti e chiusi,…). Il concetto di limite viene utilizzato per dare una definizione di <a class="reference internal" href="../infinitesimal_calculus.html"><span class="doc std std-doc">funzione continua</span></a>. Vengono poi presentati alcuni teoremi e proprietà di limiti e funzioni continue.</p>
 <!-- Real functions: f: R -> R -->
 <div class="section" id="funzioni-reali-a-variabile-reale-f-mathbb-r-rightarrow-mathbb-r">
 <span id="infinitesimal-calculus-analysis-real-functions"></span><h2><span class="section-number">23.1. </span>Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\(f: \mathbb{R} \rightarrow \mathbb{R}\)</span><a class="headerlink" href="#funzioni-reali-a-variabile-reale-f-mathbb-r-rightarrow-mathbb-r" title="Permalink to this heading">#</a></h2>
-<div class="section" id="definizione">
-<span id="infinitesimal-calculus-analysis-real-functions-def"></span><h3><span class="section-number">23.1.1. </span>Definizione<a class="headerlink" href="#definizione" title="Permalink to this heading">#</a></h3>
-</div>
-<div class="section" id="rappresentazione-grafica">
-<span id="infinitesimal-calculus-analysis-real-functions-graph"></span><h3><span class="section-number">23.1.2. </span>Rappresentazione grafica<a class="headerlink" href="#rappresentazione-grafica" title="Permalink to this heading">#</a></h3>
+<p>Per un’introduzione alle funzioni reali fa variabili reali si rimanda al <a class="reference internal" href="../precalculus/real-functions.html#math-hs-precalculus-real-functions"><span class="std std-ref">capitolo dedicato</span></a> nella sezione <a class="reference internal" href="../precalculus.html#math-hs-precalculus"><span class="std std-ref">precalcolo</span></a>.</p>
 <!-- Limits and continuous functions -->
-</div>
 </div>
 <div class="section" id="limiti">
 <span id="infinitesimal-calculus-limits"></span><h2><span class="section-number">23.2. </span>Limiti<a class="headerlink" href="#limiti" title="Permalink to this heading">#</a></h2>
@@ -572,8 +565,8 @@ document.write(`
 </div>
 <div class="section" id="funzioni-continue">
 <span id="infinitesimal-calculus-continuous-fun"></span><h2><span class="section-number">23.3. </span>Funzioni continue<a class="headerlink" href="#funzioni-continue" title="Permalink to this heading">#</a></h2>
-<div class="section" id="infinitesimal-calculus-continuous-fun-def">
-<span id="id1"></span><h3><span class="section-number">23.3.1. </span>Definizione<a class="headerlink" href="#infinitesimal-calculus-continuous-fun-def" title="Permalink to this heading">#</a></h3>
+<div class="section" id="definizione">
+<span id="infinitesimal-calculus-continuous-fun-def"></span><h3><span class="section-number">23.3.1. </span>Definizione<a class="headerlink" href="#definizione" title="Permalink to this heading">#</a></h3>
 <p>Una funzione reale <span class="math notranslate nohighlight">\(f: D \in \mathbb{R} \rightarrow \mathbb{R}\)</span> è continua in un punto <span class="math notranslate nohighlight">\(x_0 \in D\)</span> se la funzione è definita nel punto, se esiste il limite della fuzione e coincide con il valore della funzione</p>
 <div class="math notranslate nohighlight">
 \[\lim_{x \rightarrow x_0} f(x) = f(x_0) \ .\]</div>
@@ -661,31 +654,64 @@ Dimostrazione<div class="sd-summary-down docutils">
 </details></div>
 </div>
 </div>
-<div class="section" id="teoremi-sui-limiti">
-<span id="infinitesimal-calculus-limits-thms"></span><h2><span class="section-number">23.4. </span>Teoremi sui limiti<a class="headerlink" href="#teoremi-sui-limiti" title="Permalink to this heading">#</a></h2>
+<div class="section" id="operazioni-e-teoremi-sui-limiti">
+<span id="infinitesimal-calculus-limits-thms"></span><h2><span class="section-number">23.4. </span>Operazioni e teoremi sui limiti<a class="headerlink" href="#operazioni-e-teoremi-sui-limiti" title="Permalink to this heading">#</a></h2>
+<p>Vengono elencate alcune regole per compiere operazioni con i limiti. La <a class="reference internal" href="analysis-notes.html#infinitesimal-calculus-limits-thms-notes"><span class="std std-ref">dimostrazione</span></a> delle regole è disponibile a fine capitolo.</p>
 <div class="section" id="operazioni-coi-limiti">
 <span id="infinitesimal-calculus-limits-thms-operations"></span><h3><span class="section-number">23.4.1. </span>Operazioni coi limiti<a class="headerlink" href="#operazioni-coi-limiti" title="Permalink to this heading">#</a></h3>
-<p>Dato un numero reale <span class="math notranslate nohighlight">\(c \in \mathbb{R}\)</span> e i limiti <span class="math notranslate nohighlight">\(\lim_{x \rightarrow x_0} f(x) = L_1\)</span>, <span class="math notranslate nohighlight">\(\lim_{x \rightarrow x_0} g(x) = L_2\)</span></p>
+<p>Dato un numero reale <span class="math notranslate nohighlight">\(c \in \mathbb{R}\)</span> e i limiti <strong>finiti</strong> <span class="math notranslate nohighlight">\(\lim_{x \rightarrow x_0} f(x) = F\)</span>, <span class="math notranslate nohighlight">\(\lim_{x \rightarrow x_0} g(x) = G\)</span> allora valgono le seguenti regole</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
- &amp; \lim_{x \rightarrow x_0} \big( c \cdot f(x) \big) = c \, L_1 \\
- &amp; \lim_{x \rightarrow x_0} \big( f(x) \mp g(x) \big) = L_1 \mp L_2 \\
- &amp; \lim_{x \rightarrow x_0} \big( f(x) \cdot g(x) \big) = L_1 \cdot L_2 \\
- &amp; \lim_{x \rightarrow x_0} \frac{ f(x) }{ g(x) } = \frac{L_1}{L_2} \quad , \quad \text{se $L_2 \ne 0$}  \\
+ &amp; \lim_{x \rightarrow x_0} \big( c \cdot f(x) \big) = c \, F  \\
+ &amp; \lim_{x \rightarrow x_0} \big( f(x) \mp g(x) \big) = F \mp G \\
+ &amp; \lim_{x \rightarrow x_0} \big( f(x) \cdot g(x) \big) = F \cdot G \\
+ &amp; \lim_{x \rightarrow x_0} \frac{ f(x) }{ g(x) } = \frac{F}{G} \quad , \quad \text{se $G \ne 0$}  \\
+ &amp; \dots \text{**todo** *regole con esponenti*} \\
 \end{aligned}\end{split}\]</div>
+<p>Alcune delle operazioni elencate qui sopra per limiti finiti possono essere <a class="reference internal" href="#infinitesimal-calculus-limits-thms-infinite-simal"><span class="std std-ref">estese al caso di limiti infiniti</span></a>; in altri casi, nascono delle forme <a class="reference internal" href="#infinitesimal-calculus-limits-thms-infinite-simal-undetermined"><span class="std std-ref">indeterminate</span></a>.</p>
 <div class="section" id="limiti-infiniti-e-infinitesimi">
 <span id="infinitesimal-calculus-limits-thms-infinite-simal"></span><h4><span class="section-number">23.4.1.1. </span>Limiti infiniti e infinitesimi<a class="headerlink" href="#limiti-infiniti-e-infinitesimi" title="Permalink to this heading">#</a></h4>
+<p>Valgono le seguenti regole</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{array}{ll}
+  f(x) \rightarrow \mp \infty \ , \ c &gt; 0             &amp; : \ \lim_{x \rightarrow x_0} c \cdot f(x) = \mp \infty \\
+  f(x) \rightarrow \mp \infty \ , \ c &lt; 0             &amp; : \ \lim_{x \rightarrow x_0} c \cdot f(x) = \pm \infty \\
+  f(x) \rightarrow \mp \infty \ , \ G \text{ finito}  &amp; : \ \lim_{x \rightarrow x_0} ( f(x) + g(x) ) = \mp \infty \\
+  f(x) \rightarrow \mp \infty \ , \ G \text{ finito}, g(x) \ne 0  &amp; : \ \lim_{x \rightarrow x_0} \frac{g(x)}{f(x)} = 0^{ \mp \text{sign}\{G\}} \\
+  f(x) \rightarrow 0^{\mp}    \ , \ G \text{ finito}, g(x) \ne 0  &amp; : \ \lim_{x \rightarrow x_0} \frac{g(x)}{f(x)} = \mp \text{sign}\{G\} \cdot \infty \\
+  f(x) \rightarrow \mp \infty \ , \ g(x) \ne 0 &amp; : \ \lim_{x \rightarrow x_0} g(x) \cdot f(x) = \mp \text{sign}\{G\} \cdot \infty \\
+  \dots \text{**todo** *regole con esponenti*} &amp; \\
+\end{array}\end{split}\]</div>
+<p>riassumibili con un po” di libertà nella notazione come</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
- &amp;  \lim_{x \rightarrow x_0}f(x) \rightarrow \mp \infty \ , c &gt; 0 \quad : \qquad \lim_{x \rightarrow x_0} c \cdot f(x) = \mp \infty \\
- &amp; \dots \\
+  &amp; c \cdot \mp \infty = \mp \text{sign}\{c\} \cdot \infty \ , \quad \text{se } c \ne 0 \\
+  &amp; c \mp \infty = \mp \infty \\
+  &amp; + \infty + \infty = +\infty \\
+  &amp; - \infty - \infty = -\infty \\
+  &amp; + \infty \cdot \mp \infty = \mp \infty \\
+  &amp; \frac{c}{\mp \infty} = 0^{\mp \text{sign}\{c\}} \ , \quad \text{se } c \ne 0 \\
+  &amp; \dots \text{**todo** *regole con esponenti*} \\
 \end{aligned}\end{split}\]</div>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Si prega di notare come sono stati esclusi alcuni casi riguardanti valori o funzioni identicamente uguali a <span class="math notranslate nohighlight">\(0\)</span>. Nel caso in cui <span class="math notranslate nohighlight">\(g(x) = 0\)</span>, ad esempio</p>
+<div class="math notranslate nohighlight">
+\[g(x) f(x) \equiv 0 \qquad \rightarrow \qquad \lim g(x) f(x) = 0 \ ,\]</div>
+<p>poiché la funzione <span class="math notranslate nohighlight">\(g(x) f(x)\)</span> è identicamente uguale a zero: <em>non c’è nulla da variare per studiarne il limite: il valore è zero per ogni <span class="math notranslate nohighlight">\(x\)</span> e basta</em>.</p>
+</div>
 </div>
 <div class="section" id="forme-indeterminate">
 <span id="infinitesimal-calculus-limits-thms-infinite-simal-undetermined"></span><h4><span class="section-number">23.4.1.2. </span>Forme indeterminate<a class="headerlink" href="#forme-indeterminate" title="Permalink to this heading">#</a></h4>
+<p>Risultano indeterminate le seguenti 7 forme,</p>
 <div class="math notranslate nohighlight">
 \[+\infty-\infty \quad , \quad 0 \cdot \mp \infty \quad , \quad \frac{\mp \infty}{\mp \infty} \quad , \quad \frac{0}{0} \quad , \quad 1^{\infty} \quad , \quad 0^0 \quad , \quad \infty^0\]</div>
-<p><strong>oss.</strong> Invece non sono forme indeterminate <span class="math notranslate nohighlight">\(0^{+\infty} \rightarrow 0\)</span> e <span class="math notranslate nohighlight">\(0^{-\infty} \rightarrow \infty\)</span>.</p>
+<p>avendo interpretato gli <em>infiniti</em>, gli <em>zeri</em> e gli <em>uni</em> come funzioni che tendono a quei valori,</p>
+<div class="math notranslate nohighlight">
+\[0 \sim \lim f(x) = 0 \qquad , \qquad  1 \sim \lim f(x) = 1  \qquad , \qquad \infty \sim \lim f(x) = \infty \ ,\]</div>
+<p>senza esserne identicamente uguali.</p>
+<p><strong>Oss.</strong> Invece non sono forme indeterminate <span class="math notranslate nohighlight">\(0^{+\infty} \rightarrow 0\)</span> e <span class="math notranslate nohighlight">\(0^{-\infty} \rightarrow \infty\)</span>.</p>
+<p>Vengono ora introdotti alcuni risultati necessari per manipolare le forme indeterminate, e poter confrontare infiniti e infinitesimi.</p>
 </div>
 </div>
 <div class="section" id="teorema-del-confronto">
@@ -768,7 +794,7 @@ Dimostrazione<div class="sd-summary-down docutils">
 </div>
 <div class="section" id="limiti-fondamentali">
 <span id="infinitesimal-calculus-limits-fund"></span><h2><span class="section-number">23.6. </span>Limiti fondamentali<a class="headerlink" href="#limiti-fondamentali" title="Permalink to this heading">#</a></h2>
-<p>In questa sezione vengono calcolati alcuni limiti fondamentali. Questi limiti possono essere considerati fondamentali come sinonimo di <em>«minimo da ricordare»</em> per poter calcolare limiti più generali utilizzando le <a class="reference internal" href="#infinitesimal-calculus-limits-thms-operations"><span class="std std-ref">operazioni</span></a> e i <a class="reference internal" href="#infinitesimal-calculus-limits-thms"><span class="std std-ref">teoremi</span></a> sui limiti, e calcolare le <a class="reference internal" href="derivatives.html#infinitesimal-calculus-derivatives-fund"><span class="std std-ref">derivate fondamentali</span></a>. Un elenco minimo di limiti fondamentali è:</p>
+<p>Questa sezione contiene alcuni limiti fondamentali. Questi limiti possono essere considerati fondamentali come sinonimo di <em>«minimo da ricordare»</em> per poter calcolare limiti più generali utilizzando le <a class="reference internal" href="#infinitesimal-calculus-limits-thms-operations"><span class="std std-ref">operazioni</span></a> e i <a class="reference internal" href="#infinitesimal-calculus-limits-thms"><span class="std std-ref">teoremi</span></a> sui limiti, e calcolare le <a class="reference internal" href="derivatives.html#infinitesimal-calculus-derivatives-fund"><span class="std std-ref">derivate fondamentali</span></a>. Un elenco minimo di limiti fondamentali è:</p>
 <div class="math notranslate nohighlight">
 \[ \lim_{x \rightarrow 0} \frac{\sin x}{x} = 1 \]</div>
 <div class="math notranslate nohighlight">
@@ -790,7 +816,7 @@ Dimostrazione di <span class="math notranslate nohighlight">\(\ \lim_{x \rightar
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Usando il teorema del confronto per le funzioni <span class="math notranslate nohighlight">\(\sin x \le x \le \tan x\)</span> (<strong>todo</strong> *dimostrare con l’area delle figure geometriche <span class="math notranslate nohighlight">\(\frac{1}{2}\sin x \le \frac{1}{2} \, x \le \frac{1}{2} \tan x\)</span>), si può scrivere per <span class="math notranslate nohighlight">\(x \ne 0\)</span></p>
+<p class="sd-card-text">Usando il <a class="reference internal" href="#infinitesimal-calculus-limits-thms-comparison"><span class="std std-ref">teorema del confronto</span></a> per le funzioni <span class="math notranslate nohighlight">\(\sin x \le x \le \tan x\)</span> (<strong>todo</strong> *dimostrare con l’area delle figure geometriche <span class="math notranslate nohighlight">\(\frac{1}{2}\sin x \le \frac{1}{2} \, x \le \frac{1}{2} \tan x\)</span>), si può scrivere per <span class="math notranslate nohighlight">\(x \ne 0\)</span></p>
 <div class="math notranslate nohighlight">
 \[1 \le \frac{x}{\sin x} \le \frac{\tan x}{\sin x} = \frac{1}{\cos x} .\]</div>
 <p class="sd-card-text">Il limite per <span class="math notranslate nohighlight">\(x \rightarrow 0\)</span> delle due funzioni estreme vale <span class="math notranslate nohighlight">\(1\)</span>, quindi</p>
@@ -860,13 +886,16 @@ Dimostrazione di <span class="math notranslate nohighlight">\(\ \lim_{x \rightar
 \[ \lim_{x \rightarrow 0} \frac{(1+x)^a - 1}{x} = \lim_{x \rightarrow 0} \frac{e^{a \ln(1+x)} - 1}{a \ln (1+x)} \frac{a \ln(1+x)}{x} = a \, \underbrace{\lim_{y \rightarrow 0} \frac{e^y - 1}{y}}_{=1} \ \underbrace{\lim_{x \rightarrow 0} \frac{\ln(1+x)}{x}}_{=1} = a \ , \]</div>
 <p class="sd-card-text">avendo definito la variabile <span class="math notranslate nohighlight">\(y = a \ln (1+x)\)</span>, che tende a zero quando <span class="math notranslate nohighlight">\(x \rightarrow 0\)</span>. <strong>todo</strong> <em>prestare attenzione alle operazioni fatte, e fare riferimento alle operazioni con i limiti, e successivamente all’uso di infinitesimi e asintotici nel calcolo dei limiti.</em></p>
 </div>
-</details><p><strong>todo</strong> <em>Spostare nella sezione di precalcolo sulle successioni</em>
-Limiti di successioni. <strong>Formula di Sterling</strong></p>
-<div class="math notranslate nohighlight">
-\[n! \sim \left(\frac{n}{e} \right)^n \qquad \text{per $n \in \mathbb{N} \rightarrow +\infty$}\]</div>
-<p>o</p>
-<div class="math notranslate nohighlight">
-\[\ln n! \sim n \ln n - n  \qquad \text{per $n \in \mathbb{N} \rightarrow +\infty$}\]</div>
+</details><!--
+**todo** *Spostare nella sezione di precalcolo sulle successioni*
+Limiti di successioni. **Formula di Sterling**
+
+$$n! \sim \left(\frac{n}{e} \right)^n \qquad \text{per $n \in \mathbb{N} \rightarrow +\infty$}$$
+
+o
+
+$$\ln n! \sim n \ln n - n  \qquad \text{per $n \in \mathbb{N} \rightarrow +\infty$}$$
+-->
 </div>
 <div class="toctree-wrapper compound">
 </div>
@@ -916,7 +945,7 @@ Limiti di successioni. <strong>Formula di Sterling</strong></p>
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">23.7. </span>Introduzione all’analisi - Problemi</p>
+        <p class="prev-next-title"><span class="section-number">23.7. </span>Problemi</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -935,18 +964,14 @@ Limiti di successioni. <strong>Formula di Sterling</strong></p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funzioni-reali-a-variabile-reale-f-mathbb-r-rightarrow-mathbb-r">23.1. Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\(f: \mathbb{R} \rightarrow \mathbb{R}\)</span></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definizione">23.1.1. Definizione</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rappresentazione-grafica">23.1.2. Rappresentazione grafica</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funzioni-reali-a-variabile-reale-f-mathbb-r-rightarrow-mathbb-r">23.1. Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\(f: \mathbb{R} \rightarrow \mathbb{R}\)</span></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limiti">23.2. Limiti</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cenni-di-topologia-per-il-calcolo">23.2.1. Cenni di topologia per il calcolo</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definizione-di-limite">23.2.2. Definizione di limite</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funzioni-continue">23.3. Funzioni continue</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#infinitesimal-calculus-continuous-fun-def">23.3.1. Definizione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definizione">23.3.1. Definizione</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teoremi">23.3.2. Teoremi</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-weierstrass">23.3.2.1. Teorema di Weierstrass</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-della-permanenza-del-segno">23.3.2.2. Teorema della permanenza del segno</a></li>
@@ -956,7 +981,7 @@ Limiti di successioni. <strong>Formula di Sterling</strong></p>
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoremi-sui-limiti">23.4. Teoremi sui limiti</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni-e-teoremi-sui-limiti">23.4. Operazioni e teoremi sui limiti</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni-coi-limiti">23.4.1. Operazioni coi limiti</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#limiti-infiniti-e-infinitesimi">23.4.1.1. Limiti infiniti e infinitesimi</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#forme-indeterminate">23.4.1.2. Forme indeterminate</a></li>

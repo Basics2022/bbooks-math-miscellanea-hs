@@ -238,10 +238,12 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../calculus.html">22. Introduzione al calcolo</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../infinitesimal_calculus/analysis.html">23. Introduzione all’analisi</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/analysis-problems.html">23.7. Introduzione all’analisi - Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/analysis-notes.html">23.8. Note e dimiostrazioni</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../infinitesimal_calculus/derivatives.html">24. Derivate</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/derivatives-problems.html">24.7. Derivate - Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/derivatives-notes.html">24.8. Dimostrazioni</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../infinitesimal_calculus/integrals.html">25. Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -482,7 +484,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funzioni-invertibili-e-inverse">15.1. Funzioni invertibili e inverse</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grafico-di-una-funzione">15.1. Grafico di una funzione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classificazione-di-funzioni">15.2. Classificazione di funzioni</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funzioni-invertibili-e-inverse">15.3. Funzioni invertibili e inverse</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi">15.4. Problemi</a></li>
 </ul>
             </nav>
         </div>
@@ -503,10 +508,10 @@ document.write(`
 <p class="sd-p-0 sd-m-0">basics</p>
 </div>
 <div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
-<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-calendar" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path></svg></span>06 dic 2024</p>
+<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-calendar" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path></svg></span>08 dic 2024</p>
 </div>
 <div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
-<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>0 min read</p>
+<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>2 min read</p>
 </div>
 </div>
 </div>
@@ -515,17 +520,72 @@ document.write(`
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="funzioni-reali-a-variabile-reale-f-mathbb-r-rightarrow-mathbb-r">
 <span id="math-hs-precalculus-real-functions"></span><h1><span class="section-number">15. </span>Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\(f: \mathbb{R} \rightarrow \mathbb{R}\)</span><a class="headerlink" href="#funzioni-reali-a-variabile-reale-f-mathbb-r-rightarrow-mathbb-r" title="Permalink to this heading">#</a></h1>
-<p><strong>Definizione.</strong> <em>funzione, dominio, immagine,…</em></p>
-<p><strong>Funzioni monotone</strong></p>
+<p>Le funzioni reali a variabile reale saranno oggetto di studio dettagliato del <a class="reference internal" href="../infinitesimal_calculus.html#infinitesimal-calculus"><span class="std std-ref">calcolo infinitesimale</span></a>.</p>
+<div class="proof definition admonition" id="definition-0">
+<p class="admonition-title"><span class="caption-number">Definition 15.1 </span> (Funzione a valore reale di variabile reale)</p>
+<div class="definition-content section" id="proof-content">
+<p>Una funzione a valore reale di una variabile reale è una <a class="reference internal" href="../set.html#math-hs-fun"><span class="std std-ref">funzione</span></a> <span class="math notranslate nohighlight">\(f: A \in \mathbb{R} \rightarrow \mathbb{R}\)</span> è una funzione che ha come dominio un sottoinsieme <span class="math notranslate nohighlight">\(A\)</span> dei numeri reali e condominio <span class="math notranslate nohighlight">\(\mathbb{R}\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[y = f(x) \ ,\]</div>
+<p>con <span class="math notranslate nohighlight">\(x \in A \in \mathbb{R}\)</span> e <span class="math notranslate nohighlight">\(y \in \mathbb{R}\)</span>. E” comune chiamare <span class="math notranslate nohighlight">\(x\)</span> <em>argomento</em> della funzione, o la <em>variabile indipendente</em>, e <span class="math notranslate nohighlight">\(y\)</span> <em>valore</em> della funzione o <em>variabile dipendente</em></p>
+</div>
+</div><div class="section" id="grafico-di-una-funzione">
+<span id="math-hs-precalculus-real-functions-inverse-plot"></span><h2><span class="section-number">15.1. </span>Grafico di una funzione<a class="headerlink" href="#grafico-di-una-funzione" title="Permalink to this heading">#</a></h2>
+<p>A una funzione <span class="math notranslate nohighlight">\(y = f(x)\)</span> può essere associata una rappresentazione grafica, interpretando le variabili <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span> come coordinate che descrivono il piano. La rappresentazione comune le interpreta come <em>coordinate cartesiane</em>. Una funzione impone una relazione tra le due coordinate e in generale può essere rappresentato come una curva nel piano.</p>
+<p>Ricordando che una funzione associa a ogni elemento del dominio uno e un solo elemento del codominio, il grafico di una funzione non può interesecare una retta parallela all’asse <span class="math notranslate nohighlight">\(y\)</span> in due punti, cioè non possono esistere due valori <span class="math notranslate nohighlight">\(y_1\)</span>, <span class="math notranslate nohighlight">\(y_2\)</span> della funzione per lo stesso valore della variabile indipendente <span class="math notranslate nohighlight">\(x\)</span>.</p>
+<p><strong>todo</strong> esempi</p>
+</div>
+<div class="section" id="classificazione-di-funzioni">
+<span id="math-hs-precalculus-real-functions-types"></span><h2><span class="section-number">15.2. </span>Classificazione di funzioni<a class="headerlink" href="#classificazione-di-funzioni" title="Permalink to this heading">#</a></h2>
+<p>Appoggiandoci alla rappresentazione grafica (<strong>todo</strong>), vengono definite alcune caratteristiche che può avere una funzione. Una funzione <span class="math notranslate nohighlight">\(f: A \in  \mathbb{R} \rightarrow mathbb{R}\)</span> è definita e ha valori su <strong>insiemi ordinabili</strong>, cioè sui quali si possono stabilire delle relazioni di ordine tra gli elementi, ad esempio tramite le relazioni <span class="math notranslate nohighlight">\(&lt;\)</span>, <span class="math notranslate nohighlight">\(&gt;\)</span>, <span class="math notranslate nohighlight">\(\le\)</span>, <span class="math notranslate nohighlight">\(ge\)</span>. Grazie a questa caratteristica, si possono definire funzioni crescenti/decrescenti, monotone, limitate/illimitate; poiché dominio e codominio sono insiemi numerici, allora si possono definire funzioni pari/dispari e periodiche. Infine si discutono le definizioni di funzione reali a valori reali suriettiva, iniettiva e biunivoca, definizioni già introdotte per <a class="reference internal" href="../set.html#math-hs-fun"><span class="std std-ref">funzioni tra insiemi qualsiasi</span></a>.</p>
+<ul class="simple">
+<li><p><strong>Crescente, decrescente.</strong> Una funzione è:</p>
+<ul>
+<li><p>crescente se <span class="math notranslate nohighlight">\(f(x_2) &gt; f(x_1)\)</span> per  <span class="math notranslate nohighlight">\(x_2 &gt; x_1\)</span></p></li>
+<li><p>decrescente se <span class="math notranslate nohighlight">\(f(x_2) &lt; f(x_1)\)</span> per  <span class="math notranslate nohighlight">\(x_2 &gt; x_1\)</span></p></li>
+</ul>
+</li>
+<li><p><strong>Monotona.</strong> Una funzione è monotona crescente/decrescente nell’intervallo <span class="math notranslate nohighlight">\(I\)</span>, se è crescente/decrescente per ogni coppia <span class="math notranslate nohighlight">\(x_1\)</span>, <span class="math notranslate nohighlight">\(x_2 \in I\)</span></p></li>
+<li><p><strong>Limitata, illimitata</strong> Una funzione è:</p>
+<ul>
+<li><p>limitata superiormente se <span class="math notranslate nohighlight">\(\exists M\)</span> t.c. <span class="math notranslate nohighlight">\(f(x) \le M \, \ \forall x \in A\)</span></p></li>
+<li><p>limitata inferiormente se <span class="math notranslate nohighlight">\(\exists M\)</span> t.c. <span class="math notranslate nohighlight">\(f(x) \ge M \, \ \forall x \in A\)</span></p></li>
+<li><p>illimitata altrimenti</p></li>
+</ul>
+</li>
+<li><p><strong>Pari, dispari</strong> Una funzione è definita</p>
+<ul>
+<li><p>pari se <span class="math notranslate nohighlight">\(f(x) = f(-x) \ \forall x \in A\)</span>, e il suo grafico in un piano <span class="math notranslate nohighlight">\(x\)</span>-<span class="math notranslate nohighlight">\(y\)</span> è simmetrico rispetto all’asse <span class="math notranslate nohighlight">\(y\)</span></p></li>
+<li><p>dispari se <span class="math notranslate nohighlight">\(f(x) =-f(-x) \ \forall x \in A\)</span>, e il suo grafico in un piano <span class="math notranslate nohighlight">\(x\)</span>-<span class="math notranslate nohighlight">\(y\)</span> è simmetrico rispetto all’origine</p></li>
+</ul>
+</li>
+<li><p><strong>Periodica.</strong> Una funzione è definita periodica di periodo <span class="math notranslate nohighlight">\(T\)</span> se <span class="math notranslate nohighlight">\(f(x) = f(x+T), \ \forall x \in A\)</span>.</p></li>
+<li><p><strong>Suriettiva, iniettiva, biunivoca.</strong> Una funzione è:</p>
+<ul>
+<li><p>suriettiva <strong>todo</strong></p></li>
+<li><p>iniettiva <strong>todo</strong></p></li>
+<li><p>biunivoca <strong>todo</strong></p></li>
+</ul>
+</li>
+</ul>
+</div>
 <div class="section" id="funzioni-invertibili-e-inverse">
-<span id="math-hs-precalculus-real-functions-inverse"></span><h2><span class="section-number">15.1. </span>Funzioni invertibili e inverse<a class="headerlink" href="#funzioni-invertibili-e-inverse" title="Permalink to this heading">#</a></h2>
+<span id="math-hs-precalculus-real-functions-inverse"></span><h2><span class="section-number">15.3. </span>Funzioni invertibili e inverse<a class="headerlink" href="#funzioni-invertibili-e-inverse" title="Permalink to this heading">#</a></h2>
 <p>Una funzione <span class="math notranslate nohighlight">\(f: X \rightarrow Y\)</span> è <strong>invertibile</strong> se esiste una funzione <span class="math notranslate nohighlight">\(g: Y \rightarrow X\)</span> tale che</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
-  g\left( f(x) \right) &amp; = x \ , \quad \forall x \in X \\
-  f\left( g(y) \right) &amp; = y \ , \quad \forall y \in Y \\
+  g\left( f(x) \right) &amp; = x , \ \forall x \in X \\
+  f\left( g(y) \right) &amp; = y , \ \forall y \in Y \\
 \end{aligned}\end{split}\]</div>
-<p>Una funzione <span class="math notranslate nohighlight">\(f: X \rightarrow Y\)</span> monotona è invertibile</p>
+<ul class="simple">
+<li><p><em>Una funzione biunivoca è invertibile</em></p></li>
+<li><p><em>Una funzione monotona è biunivoca</em></p></li>
+<li><p><em>Una funzione monotona è invertibile</em> (Va” che <a class="reference internal" href="../logics.html#logics-syllogism"><span class="std std-ref">sillogismo</span></a>!)</p></li>
+</ul>
+</div>
+<div class="section" id="problemi">
+<span id="math-hs-precalculus-real-functions-problems"></span><h2><span class="section-number">15.4. </span>Problemi<a class="headerlink" href="#problemi" title="Permalink to this heading">#</a></h2>
+<p><strong>todo</strong></p>
 </div>
 </div>
 
@@ -592,7 +652,10 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funzioni-invertibili-e-inverse">15.1. Funzioni invertibili e inverse</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grafico-di-una-funzione">15.1. Grafico di una funzione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classificazione-di-funzioni">15.2. Classificazione di funzioni</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funzioni-invertibili-e-inverse">15.3. Funzioni invertibili e inverse</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi">15.4. Problemi</a></li>
 </ul>
   </nav></div>
 

@@ -11,3 +11,6 @@ Per ora, elenco di concetti linkati
 
 (logics:contradiction)=
 ### Contraddizione
+
+(logics:syllogism)=
+### Sillogismo
