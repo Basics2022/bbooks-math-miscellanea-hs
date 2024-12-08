@@ -85,6 +85,7 @@ dove la costante additiva $C$ tiene conto dell'arbitrarietà appena discussa.
 :label: infinitesimal-calculus:derivatives:thm:avg
 -->
 (infinitesimal-calculus:integrals:thm:avg)=
+### Teorema della media
 ```{prf:theorem} Teorema della media
 :label: integrals:thm:avg
 
@@ -103,6 +104,8 @@ $$\int_{a}^{b} f(x) dx = (b-a) f(c) $$
 :label: infinitesimal-calculus:derivatives:thm:fund
 -->
 (infinitesimal-calculus:integrals:thm:fund)=
+### Teorema fondamentale del calcolo infinitesimale
+(Teorema fondamentale del calcolo infinitesimale)
 ```{prf:theorem} Teorema fondamentale del calcolo infinitesimale
 :label: integrals:thm:fund
 
@@ -123,7 +126,8 @@ $$\begin{aligned}
 ```
 
 (infinitesimal-calculus:integrals:thm:fund:reynolds)=
-```{prf:theorem} Derivata su dominio dipendente dalla variabile indipendente
+### Derivata su dominio dipendente dalla variabile indipendente
+```{prf:theorem} Derivata su dominio dipendente dalla variabile indipendente - Reynolds
 :label: integrals:thm:fund:reynolds
 
 Sia $x \in D$, e gli estremi di integrazione $a(x)$, $b(x)$ **todo** *Caratteristiche?*

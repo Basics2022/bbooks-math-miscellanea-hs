@@ -493,7 +493,12 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integrale-indefinito">25.1.3. Integrale indefinito</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoremi">25.2. Teoremi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoremi">25.2. Teoremi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-della-media">25.2.1. Teorema della media</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-fondamentale-del-calcolo-infinitesimale">25.2.2. Teorema fondamentale del calcolo infinitesimale</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#derivata-su-dominio-dipendente-dalla-variabile-indipendente">25.2.3. Derivata su dominio dipendente dalla variabile indipendente</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-fondamentali">25.3. Integrali fondamentali</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regole-di-integrazione">25.4. Regole di integrazione</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integrazione-per-parti">25.4.1. Integrazione per parti</a></li>
@@ -588,8 +593,10 @@ document.write(`
 ### Teorema della media
 :label: infinitesimal-calculus:derivatives:thm:avg
 -->
+<div class="section" id="teorema-della-media">
+<span id="infinitesimal-calculus-integrals-thm-avg"></span><h3><span class="section-number">25.2.1. </span>Teorema della media<a class="headerlink" href="#teorema-della-media" title="Permalink to this heading">#</a></h3>
 <div class="proof theorem admonition" id="integrals:thm:avg">
-<span id="infinitesimal-calculus-integrals-thm-avg"></span><p class="admonition-title"><span class="caption-number">Theorem 25.1 </span> (Teorema della media)</p>
+<p class="admonition-title"><span class="caption-number">Theorem 25.1 </span> (Teorema della media)</p>
 <div class="theorem-content section" id="proof-content">
 <p>Sia <span class="math notranslate nohighlight">\(f: [a,b] \in \mathbb{R} \rightarrow \mathbb{R}\)</span> una funzione continua su <span class="math notranslate nohighlight">\([a,b]\)</span>, allora esiste <span class="math notranslate nohighlight">\(c \in [a,b]\)</span> tale che</p>
 <div class="math notranslate nohighlight">
@@ -609,8 +616,12 @@ Dimostrazione<div class="sd-summary-down docutils">
 ### Teorema fondamentale del calcolo integrale
 :label: infinitesimal-calculus:derivatives:thm:fund
 -->
+</div>
+<div class="section" id="teorema-fondamentale-del-calcolo-infinitesimale">
+<span id="infinitesimal-calculus-integrals-thm-fund"></span><h3><span class="section-number">25.2.2. </span>Teorema fondamentale del calcolo infinitesimale<a class="headerlink" href="#teorema-fondamentale-del-calcolo-infinitesimale" title="Permalink to this heading">#</a></h3>
+<p>(Teorema fondamentale del calcolo infinitesimale)</p>
 <div class="proof theorem admonition" id="integrals:thm:fund">
-<span id="infinitesimal-calculus-integrals-thm-fund"></span><p class="admonition-title"><span class="caption-number">Theorem 25.2 </span> (Teorema fondamentale del calcolo infinitesimale)</p>
+<p class="admonition-title"><span class="caption-number">Theorem 25.2 </span> (Teorema fondamentale del calcolo infinitesimale)</p>
 <div class="theorem-content section" id="proof-content">
 <div class="math notranslate nohighlight">
 \[\dfrac{d}{dx} \int_{a}^{x} f(y) dy = f(x) \]</div>
@@ -631,8 +642,11 @@ Dimostrazione<div class="sd-summary-down docutils">
 &amp; = \lim_{\varepsilon \rightarrow 0 } f(\xi) = f(x) . \\
 \end{aligned}\end{split}\]</div>
 </div>
-</details><div class="proof theorem admonition" id="integrals:thm:fund:reynolds">
-<span id="infinitesimal-calculus-integrals-thm-fund-reynolds"></span><p class="admonition-title"><span class="caption-number">Theorem 25.3 </span> (Derivata su dominio dipendente dalla variabile indipendente)</p>
+</details></div>
+<div class="section" id="derivata-su-dominio-dipendente-dalla-variabile-indipendente">
+<span id="infinitesimal-calculus-integrals-thm-fund-reynolds"></span><h3><span class="section-number">25.2.3. </span>Derivata su dominio dipendente dalla variabile indipendente<a class="headerlink" href="#derivata-su-dominio-dipendente-dalla-variabile-indipendente" title="Permalink to this heading">#</a></h3>
+<div class="proof theorem admonition" id="integrals:thm:fund:reynolds">
+<p class="admonition-title"><span class="caption-number">Theorem 25.3 </span> (Derivata su dominio dipendente dalla variabile indipendente - Reynolds)</p>
 <div class="theorem-content section" id="proof-content">
 <p>Sia <span class="math notranslate nohighlight">\(x \in D\)</span>, e gli estremi di integrazione <span class="math notranslate nohighlight">\(a(x)\)</span>, <span class="math notranslate nohighlight">\(b(x)\)</span> <strong>todo</strong> <em>Caratteristiche?</em></p>
 <div class="math notranslate nohighlight">
@@ -658,6 +672,7 @@ Dimostrazione<div class="sd-summary-down docutils">
 \end{aligned}\end{split}\]</div>
 </div>
 </details></div>
+</div>
 <div class="section" id="integrali-fondamentali">
 <span id="infinitesimal-calculus-integrals-fund"></span><h2><span class="section-number">25.3. </span>Integrali fondamentali<a class="headerlink" href="#integrali-fondamentali" title="Permalink to this heading">#</a></h2>
 <p>Una volta dimostrato il <a class="reference internal" href="#infinitesimal-calculus-integrals-thm-fund"><span class="std std-ref">teorema fondamentale del calcolo infinitesimale</span></a>, questo risultato può essere usato per valutare gli integrali fondamentali come l’operazione inversa alla derivazione applicata alle <a class="reference internal" href="#infinitesimal-calculus-integrals-fund"><span class="std std-ref">derivate fondamentali</span></a></p>
@@ -841,7 +856,12 @@ La regola di derivazione del prodotto <span class="math notranslate nohighlight"
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integrale-indefinito">25.1.3. Integrale indefinito</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoremi">25.2. Teoremi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoremi">25.2. Teoremi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-della-media">25.2.1. Teorema della media</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-fondamentale-del-calcolo-infinitesimale">25.2.2. Teorema fondamentale del calcolo infinitesimale</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#derivata-su-dominio-dipendente-dalla-variabile-indipendente">25.2.3. Derivata su dominio dipendente dalla variabile indipendente</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-fondamentali">25.3. Integrali fondamentali</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regole-di-integrazione">25.4. Regole di integrazione</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integrazione-per-parti">25.4.1. Integrazione per parti</a></li>
