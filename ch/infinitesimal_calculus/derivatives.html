@@ -489,6 +489,9 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoremi">24.3. Teoremi</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-fermat">24.3.1. Teorema di Fermat</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-rolle">24.3.2. Teorema di Rolle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-cauchy">24.3.3. Teorema di Cauchy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-lagrange">24.3.4. Teorema di Lagrange</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-de-l-hopital">24.3.5. Teorema di de l’Hopital</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#derivate-fondamentali">24.4. Derivate fondamentali</a></li>
@@ -666,8 +669,11 @@ Dimostrazione<div class="sd-summary-down docutils">
 <li><p class="sd-card-text">i punti di massimo e di minimo sono interni all’intervallo. In questo caso, per il <a class="reference internal" href="#infinitesimal-calculus-derivatives-thm-rolle"><span class="std std-ref">teorema di Fermat</span></a> i punti <span class="math notranslate nohighlight">\(c\)</span> di minimo o massimo verificano la condizione <span class="math notranslate nohighlight">\(f'(c) = 0\)</span>.</p></li>
 </ul>
 </div>
-</details><div class="proof theorem admonition" id="thm:infinitesimal-calculus:derivatives:thm:cauchy">
-<span id="infinitesimal-calculus-derivatives-thm-cauchy"></span><p class="admonition-title"><span class="caption-number">Theorem 24.3 </span> (Teorema di Cauchy)</p>
+</details></div>
+<div class="section" id="teorema-di-cauchy">
+<span id="infinitesimal-calculus-derivatives-thm-cauchy"></span><h3><span class="section-number">24.3.3. </span>Teorema di Cauchy<a class="headerlink" href="#teorema-di-cauchy" title="Permalink to this heading">#</a></h3>
+<div class="proof theorem admonition" id="thm:infinitesimal-calculus:derivatives:thm:cauchy">
+<p class="admonition-title"><span class="caption-number">Theorem 24.3 </span> (Teorema di Cauchy)</p>
 <div class="theorem-content section" id="proof-content">
 <p>Date le funzioni <span class="math notranslate nohighlight">\(f, g: [a,b] \rightarrow \mathbb{R}\)</span> continue in <span class="math notranslate nohighlight">\([a,b]\)</span> e derivabili in <span class="math notranslate nohighlight">\((a,b)\)</span>, allora esiste almeno un punto <span class="math notranslate nohighlight">\(c \in (a,b)\)</span> tale che</p>
 <div class="math notranslate nohighlight">
@@ -685,8 +691,11 @@ Dimostrazione<div class="sd-summary-down docutils">
 \[h(x) = \left[ g(b) - g(a) \right] \, f(x) - \left[ f(b) - f(a) \right] \, g(x)\]</div>
 <p class="sd-card-text">continua in <span class="math notranslate nohighlight">\([a,b]\)</span>, derivabile in <span class="math notranslate nohighlight">\((a,b)\)</span> e con <span class="math notranslate nohighlight">\(h(a) = g(b) \, f(a) - f(b) \, g(a) = h(b)\)</span>.</p>
 </div>
-</details><div class="proof theorem admonition" id="thm:infinitesimal-calculus:derivatives:thm:lagrange">
-<span id="infinitesimal-calculus-derivatives-thm-lagrange"></span><p class="admonition-title"><span class="caption-number">Theorem 24.4 </span> (Theorema di Lagrange)</p>
+</details></div>
+<div class="section" id="teorema-di-lagrange">
+<span id="infinitesimal-calculus-derivatives-thm-lagrange"></span><h3><span class="section-number">24.3.4. </span>Teorema di Lagrange<a class="headerlink" href="#teorema-di-lagrange" title="Permalink to this heading">#</a></h3>
+<div class="proof theorem admonition" id="thm:infinitesimal-calculus:derivatives:thm:lagrange">
+<p class="admonition-title"><span class="caption-number">Theorem 24.4 </span> (Theorema di Lagrange)</p>
 <div class="theorem-content section" id="proof-content">
 <p>Data la funzione <span class="math notranslate nohighlight">\(f, g: [a,b] \rightarrow \mathbb{R}\)</span> continua in <span class="math notranslate nohighlight">\([a,b]\)</span> e derivabile in <span class="math notranslate nohighlight">\((a,b)\)</span>, allora esiste un valore <span class="math notranslate nohighlight">\(c \in (a,b)\)</span> tale che</p>
 <div class="math notranslate nohighlight">
@@ -701,8 +710,11 @@ Dimostrazione<div class="sd-summary-down docutils">
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Si applica il <a class="reference internal" href="#infinitesimal-calculus-derivatives-thm-lagrange"><span class="std std-ref">teorema di Cauhcy</span></a> scegliendo la funzione <span class="math notranslate nohighlight">\(g(x) = x\)</span>.</p>
 </div>
-</details><div class="proof theorem admonition" id="thm:infinitesimal-calculus:derivatives:thm:hopital">
-<span id="infinitesimal-calculus-derivatives-thm-hopital"></span><p class="admonition-title"><span class="caption-number">Theorem 24.5 </span> (Teorema di de l’Hopital )</p>
+</details></div>
+<div class="section" id="teorema-di-de-l-hopital">
+<span id="infinitesimal-calculus-derivatives-thm-hopital"></span><h3><span class="section-number">24.3.5. </span>Teorema di de l’Hopital<a class="headerlink" href="#teorema-di-de-l-hopital" title="Permalink to this heading">#</a></h3>
+<div class="proof theorem admonition" id="thm:infinitesimal-calculus:derivatives:thm:hopital">
+<p class="admonition-title"><span class="caption-number">Theorem 24.5 </span> (Teorema di de l’Hopital )</p>
 <div class="theorem-content section" id="proof-content">
 <p>Siano <span class="math notranslate nohighlight">\(f(x), g(x): [a,b] \rightarrow \mathbb{R}\)</span> funzioni reali di variabile reale continue in <span class="math notranslate nohighlight">\([a,b]\)</span> e derivabili in <span class="math notranslate nohighlight">\((a,b) \backslash \{ x_0 \}\)</span>.</p>
 <div class="math notranslate nohighlight">
@@ -990,6 +1002,9 @@ e^{ix} &amp; = 1 + ix + \frac{(ix)^2}{2!} + \frac{(ix)^3}{3!} + \frac{(ix)^4}{4!
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoremi">24.3. Teoremi</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-fermat">24.3.1. Teorema di Fermat</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-rolle">24.3.2. Teorema di Rolle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-cauchy">24.3.3. Teorema di Cauchy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-lagrange">24.3.4. Teorema di Lagrange</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-de-l-hopital">24.3.5. Teorema di de l’Hopital</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#derivate-fondamentali">24.4. Derivate fondamentali</a></li>

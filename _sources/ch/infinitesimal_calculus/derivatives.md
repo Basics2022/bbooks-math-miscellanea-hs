@@ -119,6 +119,7 @@ Per il [teorema di Weierstrass](infinitesimal-calculus:continuous-fun:thms:weier
 ```
 
 (infinitesimal-calculus:derivatives:thm:cauchy)=
+### Teorema di Cauchy
 ```{prf:theorem} Teorema di Cauchy
 :label: thm:infinitesimal-calculus:derivatives:thm:cauchy
 
@@ -137,6 +138,7 @@ continua in $[a,b]$, derivabile in $(a,b)$ e con $h(a) = g(b) \, f(a) - f(b) \, 
 ```
 
 (infinitesimal-calculus:derivatives:thm:lagrange)=
+### Teorema di Lagrange
 ```{prf:theorem} Theorema di Lagrange
 :label: thm:infinitesimal-calculus:derivatives:thm:lagrange
 
@@ -150,6 +152,7 @@ Si applica il [teorema di Cauhcy](infinitesimal-calculus:derivatives:thm:lagrang
 ```
 
 (infinitesimal-calculus:derivatives:thm:hopital)=
+### Teorema di de l'Hopital
 ```{prf:theorem} Teorema di de l'Hopital 
 :label: thm:infinitesimal-calculus:derivatives:thm:hopital
 
