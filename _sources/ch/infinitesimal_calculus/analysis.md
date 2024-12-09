@@ -279,14 +279,14 @@ $$\lim_{x \rightarrow x_0} \frac{h(x)}{k(x)} = \frac{a}{b} \lim_{x \rightarrow x
 Questa sezione contiene alcuni limiti fondamentali. Questi limiti possono essere considerati fondamentali come sinonimo di *"minimo da ricordare"* per poter calcolare limiti più generali utilizzando le [operazioni](infinitesimal-calculus:limits:thms:operations) e i [teoremi](infinitesimal-calculus:limits:thms) sui limiti, e calcolare le [derivate fondamentali](infinitesimal-calculus:derivatives:fund). Un elenco minimo di limiti fondamentali è:
 
 $$\begin{align}
-  \lim_{x \rightarrow 0} \frac{\sin x}{x} = 1                       \label{eq:1}\\ 
-  \lim_{x \rightarrow 0} \frac{1 - \cos x}{x^2} = \frac{1}{2}       \label{eq:2}\\ 
-  \lim_{x \rightarrow +\infty} \left( 1 + \frac{1}{x} \right)^x = e \label{eq:4}\\ 
-  \lim_{x \rightarrow 0} \frac{e^x - 1}{x}= 1                                   \\ 
-  \lim_{x \rightarrow 0} \frac{e^x}{1+x}= 1                                     \\ 
-  \lim_{x \rightarrow 0} \frac{\ln (1+x)}{x} = 1                                \\ 
-  \lim_{x \rightarrow 0} \frac{(1+x)^a - 1}{x} = a                              \\ 
-\end{align}
+ & \lim_{x \rightarrow 0} \frac{\sin x}{x} = 1                       \label{eq:1}\\ 
+ & \lim_{x \rightarrow 0} \frac{1 - \cos x}{x^2} = \frac{1}{2}       \label{eq:2}\\ 
+ & \lim_{x \rightarrow +\infty} \left( 1 + \frac{1}{x} \right)^x = e \label{eq:4}\\ 
+ & \lim_{x \rightarrow 0} \frac{e^x - 1}{x}= 1                                   \\ 
+ & \lim_{x \rightarrow 0} \frac{e^x}{1+x}= 1                                     \\ 
+ & \lim_{x \rightarrow 0} \frac{\ln (1+x)}{x} = 1                                \\ 
+ & \lim_{x \rightarrow 0} \frac{(1+x)^a - 1}{x} = a                              \\ 
+\end{align}$$
 
 equation \eqref{eq:1}
 
