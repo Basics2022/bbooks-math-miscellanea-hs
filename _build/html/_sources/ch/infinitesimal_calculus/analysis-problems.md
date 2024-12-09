@@ -106,6 +106,7 @@ Risolvere i seguenti limiti, con le tecniche studiate nel capitolo. Inutile qui 
 10. Prova che $\lim_{x \to 0} \frac{x \cos(x)}{1 + x^2} = 0$ 
 ```
 
+(infinitesimal-calculus:analysis:problems:funs)=
 ## Studio di funzione: dominio, continuità e limiti
 (infinitesimal-calculus:analysis:problems:continuity)=
 ```{exercise} Continuità e limiti
@@ -136,7 +137,7 @@ Risolvere i seguenti limiti, con le tecniche studiate nel capitolo. Inutile qui 
 ```
 
 (infinitesimal-calculus:analysis:problems:asynptotics)=
-```{exercise} Asintoti Verticali e Orizzontali
+```{exercise} Asintoti verticali e orizzontali
 :class: dropdown
 1. Trova gli asintoti orizzontali della funzione $f(x) = \frac{3x}{x^2 + 1}$.  
 2. Trova gli asintoti verticali della funzione $f(x) = \frac{1}{x - 2}$.  
@@ -150,7 +151,7 @@ Risolvere i seguenti limiti, con le tecniche studiate nel capitolo. Inutile qui 
 10. Trova gli asintoti verticali della funzione $f(x) = \frac{1}{x^3 - x}$.  
 ```
 
-(infinitesimal-calculus:analysis:problems:funs)=
+<!-- (infinitesimal-calculus:analysis:problems:funs)= -->
 ```{exercise} Studio funzione - dominio, continuità, grafico
 :class: dropdown
 Delle seguenti funzioni viene chiesto di:
