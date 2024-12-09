@@ -492,11 +492,12 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funzioni-continue">23.3. Funzioni continue</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definizione">23.3.1. Definizione</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teoremi">23.3.2. Teoremi</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-weierstrass">23.3.2.1. Teorema di Weierstrass</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-della-permanenza-del-segno">23.3.2.2. Teorema della permanenza del segno</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-degli-zeri">23.3.2.3. Teorema degli zeri</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-dei-valori-intermedi">23.3.2.4. Teorema dei valori intermedi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#punti-di-discontinuita">23.3.2. Punti di discontinuità</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teoremi">23.3.3. Teoremi</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-weierstrass">23.3.3.1. Teorema di Weierstrass</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-della-permanenza-del-segno">23.3.3.2. Teorema della permanenza del segno</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-degli-zeri">23.3.3.3. Teorema degli zeri</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-dei-valori-intermedi">23.3.3.4. Teorema dei valori intermedi</a></li>
 </ul>
 </li>
 </ul>
@@ -572,10 +573,18 @@ document.write(`
 \[\lim_{x \rightarrow x_0} f(x) = f(x_0) \ .\]</div>
 <p>Una funzione reale è continua in un dominio <strong>todo o insieme?</strong> se è continua in ogni punto del dominio.</p>
 </div>
+<div class="section" id="punti-di-discontinuita">
+<span id="infinitesimal-calculus-continuous-fun-disc"></span><h3><span class="section-number">23.3.2. </span>Punti di discontinuità<a class="headerlink" href="#punti-di-discontinuita" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Tipo 1 - salto: limite destro e sinistro esistono finiti, ma non sono uguali</p></li>
+<li><p>Tipo 2 - essenziale: limite destro o sinistro non esistono o sono infiniti</p></li>
+<li><p>Tipo 3 - eliminabile: limite destro e sinistro esistono finiti, sono uguali, ma non sono uguali all valore della funzione nel punto</p></li>
+</ul>
+</div>
 <div class="section" id="teoremi">
-<span id="infinitesimal-calculus-continuous-fun-thms"></span><h3><span class="section-number">23.3.2. </span>Teoremi<a class="headerlink" href="#teoremi" title="Permalink to this heading">#</a></h3>
+<span id="infinitesimal-calculus-continuous-fun-thms"></span><h3><span class="section-number">23.3.3. </span>Teoremi<a class="headerlink" href="#teoremi" title="Permalink to this heading">#</a></h3>
 <div class="section" id="teorema-di-weierstrass">
-<span id="infinitesimal-calculus-continuous-fun-thms-weierstrass"></span><h4><span class="section-number">23.3.2.1. </span>Teorema di Weierstrass<a class="headerlink" href="#teorema-di-weierstrass" title="Permalink to this heading">#</a></h4>
+<span id="infinitesimal-calculus-continuous-fun-thms-weierstrass"></span><h4><span class="section-number">23.3.3.1. </span>Teorema di Weierstrass<a class="headerlink" href="#teorema-di-weierstrass" title="Permalink to this heading">#</a></h4>
 <div class="proof theorem admonition" id="thm:infinitesimal-calculus:continuous-fun:thms:weierstrass">
 <p class="admonition-title"><span class="caption-number">Theorem 23.1 </span> (Teorema di Weierstrass)</p>
 <div class="theorem-content section" id="proof-content">
@@ -584,7 +593,7 @@ document.write(`
 </div><p><strong>todo</strong> <em>Dimostrazione? Discussione più intuitiva? Figura?</em></p>
 </div>
 <div class="section" id="teorema-della-permanenza-del-segno">
-<span id="infinitesimal-calculus-continuous-fun-thms-sign"></span><h4><span class="section-number">23.3.2.2. </span>Teorema della permanenza del segno<a class="headerlink" href="#teorema-della-permanenza-del-segno" title="Permalink to this heading">#</a></h4>
+<span id="infinitesimal-calculus-continuous-fun-thms-sign"></span><h4><span class="section-number">23.3.3.2. </span>Teorema della permanenza del segno<a class="headerlink" href="#teorema-della-permanenza-del-segno" title="Permalink to this heading">#</a></h4>
 <div class="proof theorem admonition" id="thm:infinitesimal-calculus:continuous-fun:thms:sign">
 <p class="admonition-title"><span class="caption-number">Theorem 23.2 </span> (Teorema della permanenza del segno)</p>
 <div class="theorem-content section" id="proof-content">
@@ -606,7 +615,7 @@ Dimostrazione<div class="sd-summary-down docutils">
 </div>
 </details></div>
 <div class="section" id="teorema-degli-zeri">
-<span id="infinitesimal-calculus-continuous-fun-thms-zeros"></span><h4><span class="section-number">23.3.2.3. </span>Teorema degli zeri<a class="headerlink" href="#teorema-degli-zeri" title="Permalink to this heading">#</a></h4>
+<span id="infinitesimal-calculus-continuous-fun-thms-zeros"></span><h4><span class="section-number">23.3.3.3. </span>Teorema degli zeri<a class="headerlink" href="#teorema-degli-zeri" title="Permalink to this heading">#</a></h4>
 <div class="proof theorem admonition" id="thm:infinitesimal-calculus:continuous-fun:thms:zeros">
 <p class="admonition-title"><span class="caption-number">Theorem 23.3 </span> (Teorema degli zeri)</p>
 <div class="theorem-content section" id="proof-content">
@@ -630,7 +639,7 @@ Dimostrazione<div class="sd-summary-down docutils">
 </div>
 </details></div>
 <div class="section" id="teorema-dei-valori-intermedi">
-<span id="infinitesimal-calculus-continuous-fun-thms-intermediate"></span><h4><span class="section-number">23.3.2.4. </span>Teorema dei valori intermedi<a class="headerlink" href="#teorema-dei-valori-intermedi" title="Permalink to this heading">#</a></h4>
+<span id="infinitesimal-calculus-continuous-fun-thms-intermediate"></span><h4><span class="section-number">23.3.3.4. </span>Teorema dei valori intermedi<a class="headerlink" href="#teorema-dei-valori-intermedi" title="Permalink to this heading">#</a></h4>
 <div class="proof theorem admonition" id="thm:infinitesimal-calculus:continuous-fun:thms:intermediate">
 <p class="admonition-title"><span class="caption-number">Theorem 23.4 </span> (Teorema dei valori intermedi)</p>
 <div class="theorem-content section" id="proof-content">
@@ -974,11 +983,12 @@ $$\ln n! \sim n \ln n - n  \qquad \text{per $n \in \mathbb{N} \rightarrow +\inft
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funzioni-continue">23.3. Funzioni continue</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definizione">23.3.1. Definizione</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teoremi">23.3.2. Teoremi</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-weierstrass">23.3.2.1. Teorema di Weierstrass</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-della-permanenza-del-segno">23.3.2.2. Teorema della permanenza del segno</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-degli-zeri">23.3.2.3. Teorema degli zeri</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-dei-valori-intermedi">23.3.2.4. Teorema dei valori intermedi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#punti-di-discontinuita">23.3.2. Punti di discontinuità</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teoremi">23.3.3. Teoremi</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-weierstrass">23.3.3.1. Teorema di Weierstrass</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-della-permanenza-del-segno">23.3.3.2. Teorema della permanenza del segno</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-degli-zeri">23.3.3.3. Teorema degli zeri</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-dei-valori-intermedi">23.3.3.4. Teorema dei valori intermedi</a></li>
 </ul>
 </li>
 </ul>

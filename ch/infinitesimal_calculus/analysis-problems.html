@@ -485,8 +485,13 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limiti">23.7.1. Limiti</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funzioni">23.7.2. Funzioni</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#riferimenti">23.7.3. Riferimenti</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calcolo-di-limiti-base">23.7.2. 1. Calcolo di Limiti Base</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limiti-laterali">23.7.3. 2. Limiti Laterali</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limiti-allinfinito">23.7.4. 3. Limiti all’Infinito</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forme-indeterminate-e-regola-di-lhopital">23.7.5. 4. Forme Indeterminate e Regola di L’Hôpital</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limiti-e-funzioni-speciali">23.7.6. 5. Limiti e Funzioni Speciali</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-del-squeeze">23.7.7. 6. Teorema del Squeeze</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#riferimenti">23.7.8. Riferimenti</a></li>
 </ul>
             </nav>
         </div>
@@ -504,27 +509,120 @@ document.write(`
 <h2><span class="section-number">23.7.1. </span>Limiti<a class="headerlink" href="#limiti" title="Permalink to this heading">#</a></h2>
 <div class="exercise admonition" id="ch/infinitesimal_calculus/analysis-problems-exercise-0">
 
-<p class="admonition-title"><span class="caption-number">Exercise 23.1 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 23.1 </span> (Verifica/calcolo con definizione)</p>
 <div class="section" id="exercise-content">
+<p><strong>todo</strong></p>
 </div>
 </div>
 </div>
-<div class="section" id="funzioni">
-<h2><span class="section-number">23.7.2. </span>Funzioni<a class="headerlink" href="#funzioni" title="Permalink to this heading">#</a></h2>
+<div class="section" id="calcolo-di-limiti-base">
+<h2><span class="section-number">23.7.2. </span>1. Calcolo di Limiti Base<a class="headerlink" href="#calcolo-di-limiti-base" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to 1} (x^2 + 3x - 4)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to -2} (x^3 + 2x^2 - 1)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to 0} \frac{x + 1}{2x + 3}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to 2} \frac{x^2 - 4}{x - 2}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to -1} \frac{x^3 + 1}{x + 1}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to 0} \frac{x^2 - 1}{x}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to 1} \frac{1 - x}{\sqrt{x} - 1}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to 3} \frac{2x - 6}{x^2 - 9}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to 0} \frac{x + \sin(x)}{x^2}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to 0} e^x - 1\)</span></p></li>
+</ol>
+</div>
+<div class="section" id="limiti-laterali">
+<h2><span class="section-number">23.7.3. </span>2. Limiti Laterali<a class="headerlink" href="#limiti-laterali" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to 0^+} \frac{1}{x}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to 0^-} \frac{1}{x}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to 1^+} \frac{x^2 - 1}{x - 1}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to 1^-} \frac{x^2 - 1}{x - 1}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to 0^+} \ln(x)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to 0^-} |x| \cdot \ln(|x|)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to 0^+} x \sin\left(\frac{1}{x}\right)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to 0^-} x \cos\left(\frac{1}{x}\right)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to \pi^+} \tan(x)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to 0^-} e^{\frac{1}{x}}\)</span></p></li>
+</ol>
+</div>
+<div class="section" id="limiti-allinfinito">
+<h2><span class="section-number">23.7.4. </span>3. Limiti all’Infinito<a class="headerlink" href="#limiti-allinfinito" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to \infty} \frac{3x + 1}{2x - 4}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to -\infty} \frac{x^2 - x + 1}{2x^2 + x}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to \infty} \frac{\sqrt{x^2 + 1}}{x + 3}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to -\infty} (x^3 - 2x + 5)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to \infty} e^x\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to -\infty} e^x\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to \infty} \ln(x)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to \infty} x \sin\left(\frac{1}{x}\right)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to \infty} \frac{\sin(x)}{x}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to \infty} e^{-x}\)</span></p></li>
+</ol>
+</div>
+<div class="section" id="forme-indeterminate-e-regola-di-lhopital">
+<h2><span class="section-number">23.7.5. </span>4. Forme Indeterminate e Regola di L’Hôpital<a class="headerlink" href="#forme-indeterminate-e-regola-di-lhopital" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to 0} \frac{\sin(x)}{x}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to \infty} \frac{\ln(x)}{x}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to 0} \frac{e^x - 1}{x}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to 1} \frac{x^2 - 1}{x - 1}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to 0} \frac{x}{e^x - 1}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to \infty} \frac{e^x}{x^2}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to 0} \frac{\tan(x)}{x}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to \infty} \frac{x^2}{e^x}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to 0^+} x \ln(x)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to \infty} \frac{\ln(x)}{x^2}\)</span></p></li>
+</ol>
+</div>
+<div class="section" id="limiti-e-funzioni-speciali">
+<h2><span class="section-number">23.7.6. </span>5. Limiti e Funzioni Speciali<a class="headerlink" href="#limiti-e-funzioni-speciali" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to 0^+} x \ln(x)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to \infty} e^{-x}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to 0^+} \frac{1}{x^2}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to \infty} \sqrt{x^2 + x} - x\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to \infty} \frac{\ln(x)}{x}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to 0} \sin\left(\frac{1}{x}\right)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to \pi^-} \tan(x)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to \infty} \cos(x)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to 0^+} \ln(1 + x)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to \infty} e^{-x^2}\)</span></p></li>
+</ol>
+</div>
+<div class="section" id="teorema-del-squeeze">
+<h2><span class="section-number">23.7.7. </span>6. Teorema del Squeeze<a class="headerlink" href="#teorema-del-squeeze" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Prova che <span class="math notranslate nohighlight">\(\lim_{x \to 0} x^2 \sin\left(\frac{1}{x}\right) = 0\)</span></p></li>
+<li><p>Prova che <span class="math notranslate nohighlight">\(\lim_{x \to 0} \frac{\sin(x)}{x^2} = 0\)</span></p></li>
+<li><p>Mostra che <span class="math notranslate nohighlight">\(\lim_{x \to 0} x \cos\left(\frac{1}{x}\right) = 0\)</span></p></li>
+<li><p>Dimostra che <span class="math notranslate nohighlight">\(\lim_{x \to 0} x^2 \ln(x) = 0\)</span></p></li>
+<li><p>Prova che <span class="math notranslate nohighlight">\(\lim_{x \to 0} \frac{x^2}{\sin(x)} = 0\)</span></p></li>
+<li><p>Dimostra che <span class="math notranslate nohighlight">\(\lim_{x \to 0} x \sin\left(\frac{1}{x}\right) = 0\)</span></p></li>
+<li><p>Mostra che <span class="math notranslate nohighlight">\(\lim_{x \to 0} x^2 \cos\left(\frac{1}{x}\right) = 0\)</span></p></li>
+<li><p>Prova che <span class="math notranslate nohighlight">\(\lim_{x \to 0} x \ln(x) = 0\)</span></p></li>
+<li><p>Mostra che <span class="math notranslate nohighlight">\(\lim_{x \to 0} \frac{\sin(x)}{x} = 1\)</span></p></li>
+<li><p>Prova che <span class="math notranslate nohighlight">\(\lim_{x \to 0} \frac{x \cos(x)}{1 + x^2} = 0\)</span></p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+## Funzioni
+```{exercise} Verifica continuità
+Studiare la continuità delle seguenti funzioni con la definizione di continuità
+
+1. $y = x$
+2. $y = \frac{1}{x}$
+3. ...
+
+</pre></div>
+</div>
 <div class="exercise admonition" id="ch/infinitesimal_calculus/analysis-problems-exercise-1">
 
-<p class="admonition-title"><span class="caption-number">Exercise 23.2 </span> (Verifica continuità)</p>
-<div class="section" id="exercise-content">
-</div>
-</div>
-<div class="exercise admonition" id="ch/infinitesimal_calculus/analysis-problems-exercise-2">
-
-<p class="admonition-title"><span class="caption-number">Exercise 23.3 </span> (Studio funzione - dominio, continuità, grafico)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 23.2 </span> (Studio funzione - dominio, continuità, grafico)</p>
 <div class="section" id="exercise-content">
 <p>Delle seguenti funzioni viene chiesto di:</p>
 <ul class="simple">
 <li><p>determinare se sono definite e continue in tutti i punti dei domini indicati; dove non è indicato esplicitamente il dominio, determinare il dominio</p></li>
-<li><p>calcolare i limiti al finito in eventuali punti di discontinuità, e i limiti agli estremi del dominio</p></li>
+<li><p>calcolare i limiti al finito in eventuali <a class="reference internal" href="../infinitesimal_calculus.html"><span class="doc std std-doc">punti di discontinuità</span></a>, e i limiti agli estremi del dominio</p></li>
 <li><p>fornire una stima asintotica dei limiti nel caso di infiniti o infinitesimi</p></li>
 <li><p>rappresentare il grafico della funzione in un piano descritto dalle coordinate cartesiane <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span>, tenendo in considerazione i risultati dei punti precedenti (prima rappresentare i punti di discontinuità e gli asintoti per aiutarsi nel disegno del grafico)</p></li>
 <li><p>stabilire se le funzioni sono pari, dispari, periodiche, o se esistono rette o punti di simmetria</p></li>
@@ -543,16 +641,16 @@ document.write(`
 </ol>
 </div>
 </div>
-<div class="exercise admonition" id="ch/infinitesimal_calculus/analysis-problems-exercise-3">
+<div class="exercise admonition" id="ch/infinitesimal_calculus/analysis-problems-exercise-2">
 
-<p class="admonition-title"><span class="caption-number">Exercise 23.4 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 23.3 </span></p>
 <div class="section" id="exercise-content">
 <p>Esercizi con parametro <strong>todo</strong></p>
 </div>
 </div>
 </div>
 <div class="section" id="riferimenti">
-<h2><span class="section-number">23.7.3. </span>Riferimenti<a class="headerlink" href="#riferimenti" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">23.7.8. </span>Riferimenti<a class="headerlink" href="#riferimenti" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>(md) Matematica Dolce</p></li>
 <li><p>(ym) YouMath</p></li>
@@ -624,8 +722,13 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limiti">23.7.1. Limiti</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funzioni">23.7.2. Funzioni</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#riferimenti">23.7.3. Riferimenti</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calcolo-di-limiti-base">23.7.2. 1. Calcolo di Limiti Base</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limiti-laterali">23.7.3. 2. Limiti Laterali</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limiti-allinfinito">23.7.4. 3. Limiti all’Infinito</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forme-indeterminate-e-regola-di-lhopital">23.7.5. 4. Forme Indeterminate e Regola di L’Hôpital</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limiti-e-funzioni-speciali">23.7.6. 5. Limiti e Funzioni Speciali</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-del-squeeze">23.7.7. 6. Teorema del Squeeze</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#riferimenti">23.7.8. Riferimenti</a></li>
 </ul>
   </nav></div>
 

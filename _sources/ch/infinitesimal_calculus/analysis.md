@@ -54,6 +54,12 @@ $$\lim_{x \rightarrow x_0} f(x) = f(x_0) \ .$$
 
 Una funzione reale è continua in un dominio **todo o insieme?** se è continua in ogni punto del dominio.
 
+(infinitesimal-calculus:continuous-fun:disc)=
+### Punti di discontinuità
+- Tipo 1 - salto: limite destro e sinistro esistono finiti, ma non sono uguali
+- Tipo 2 - essenziale: limite destro o sinistro non esistono o sono infiniti 
+- Tipo 3 - eliminabile: limite destro e sinistro esistono finiti, sono uguali, ma non sono uguali all valore della funzione nel punto
+
 (infinitesimal-calculus:continuous-fun:thms)=
 ### Teoremi
 
