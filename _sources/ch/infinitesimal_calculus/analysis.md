@@ -60,6 +60,8 @@ Una funzione reale è continua in un dominio **todo o insieme?** se è continua 
 - Tipo 2 - essenziale: limite destro o sinistro non esistono o sono infiniti 
 - Tipo 3 - eliminabile: limite destro e sinistro esistono finiti, sono uguali, ma non sono uguali all valore della funzione nel punto
 
+**todo** *aggiungere immagini*
+
 (infinitesimal-calculus:continuous-fun:thms)=
 ### Teoremi
 
@@ -143,8 +145,9 @@ $$\begin{aligned}
  & \lim_{x \rightarrow x_0} \big( f(x) \mp g(x) \big) = F \mp G \\
  & \lim_{x \rightarrow x_0} \big( f(x) \cdot g(x) \big) = F \cdot G \\
  & \lim_{x \rightarrow x_0} \frac{ f(x) }{ g(x) } = \frac{F}{G} \quad , \quad \text{se $G \ne 0$}  \\
- & \dots \text{**todo** *regole con esponenti*} \\
 \end{aligned}$$
+
+(**todo** *regole con esponenti*)
 
 Alcune delle operazioni elencate qui sopra per limiti finiti possono essere [estese al caso di limiti infiniti](infinitesimal-calculus:limits:thms:infinite-simal); in altri casi, nascono delle forme [indeterminate](infinitesimal-calculus:limits:thms:infinite-simal:undetermined).
 
@@ -159,8 +162,10 @@ $$\begin{array}{ll}
   f(x) \rightarrow \mp \infty \ , \ G \text{ finito}, g(x) \ne 0  & : \ \lim_{x \rightarrow x_0} \frac{g(x)}{f(x)} = 0^{ \mp \text{sign}\{G\}} \\
   f(x) \rightarrow 0^{\mp}    \ , \ G \text{ finito}, g(x) \ne 0  & : \ \lim_{x \rightarrow x_0} \frac{g(x)}{f(x)} = \mp \text{sign}\{G\} \cdot \infty \\
   f(x) \rightarrow \mp \infty \ , \ g(x) \ne 0 & : \ \lim_{x \rightarrow x_0} g(x) \cdot f(x) = \mp \text{sign}\{G\} \cdot \infty \\
-  \dots \text{**todo** *regole con esponenti*} & \\
+  \dots & \\
 \end{array}$$
+
+(**todo** *regole con esponenti*)
 
 riassumibili con un po' di libertà nella notazione come
 
@@ -171,9 +176,9 @@ $$\begin{aligned}
   & - \infty - \infty = -\infty \\
   & + \infty \cdot \mp \infty = \mp \infty \\
   & \frac{c}{\mp \infty} = 0^{\mp \text{sign}\{c\}} \ , \quad \text{se } c \ne 0 \\
-  & \dots \text{**todo** *regole con esponenti*} \\
 \end{aligned}$$
 
+(**todo** *regole con esponenti*)
 
 ```{note} Si prega di notare come sono stati esclusi alcuni casi riguardanti valori o funzioni identicamente uguali a $0$. Nel caso in cui $g(x) = 0$, ad esempio
 
@@ -237,58 +242,20 @@ e quindi per  $\forall \varepsilon_g > 0$, $\exists U_{x_0,\delta}$ tale che $|g
 ### Teorema di de l'Hopital
 Il teorema di de l'Hopital (o di Bernoulli, **todo** *dire due parole sulla storia? Bernoulli precettore di de l'Hopital, ricava il risultato...*) è un teorema utile per il calcolo dei limiti delle forme indeterminate $\frac{0}{0}$ e $\frac{\infty}{\infty}$. Poiché il teorema coinvolge il concetto di derivata, si rimanda alla sezione del [teorema di de l'Hopital](infinitesimal-calculus:derivatives:thm:hopital) nel capitolo sulle [derivate](infinitesimal-calculus:derivatives).
 
-(infinitesimal-calculus:limits:infinite-simal)=
-## Confronto di infiniti e infinitesimi
-Il confronto di funzioni che tendono a zero $f(x), g(x) \rightarrow 0$, o di funzioni che tendono all'infinito $f(x), g(x) \rightarrow \infty$ permette di definire degli *ordini di infinitesimi o di infiniti* **todo** *definire meglio*, a seconda del valore del limite $\frac{f(x)}{g(x)} = \ell$,
-
-- se $\ell = 0$, si può dire che $f(x)$ è un infinitesimo di ordine superiore, o un infinito di ordine inferiore, rispetto a $g(x)$ e si può indicare con la notazione di *o piccolo* $f(x) = o \left(g(x) \right)$
-
-- se $\ell$ finito diverso da zero, si può dire che $f(x)$ è un infinitesimo, o un infinito,  dello stesso ordine di $g(x)$ e si può indicare con la notazione di *o grande* $f(x) = O \left(g(x) \right)$
-
-- se $\ell$ è infinito, si può dire che $f(x)$ è un infinitesimo di ordine inferiore, o un infinito di ordine superiore, rispetto a $g(x)$; viceversa $g(x)$ è un infinitesimo di ordine superiore, o un infinito di ordine inferiore, rispetto a $f(x)$ e si può indicare con la notazione di *o piccolo* $g(x) = o \left(f(x) \right)$
-
-- se $\ell = 1$, si dice che $f(x)$ e $g(x)$ sono **asintoticamente equivalenti**, o in breve **asintotici**, $f(x) \sim g(x)$in un intorno del punto dove viene calcolato il limite.
-
-### Calcolo dei limiti con sostituzione degli infinitesimi o degli infiniti
-
-Se $h(x) \sim a f(x)$, $k(x) \sim b g(x)$ per $x \rightarrow x_0$, e il rapporto $\frac{a}{b}$ non è indeterminato, allora
-
-$$\lim_{x \rightarrow x_0} \frac{h(x)}{k(x)} = \frac{a}{b} \lim_{x \rightarrow x_0} \frac{f(x)}{g(x)}$$
-
-**todo** esempi
-- confronto di polinomi
-  - per $x \rightarrow 0$, $\frac{a_n x^n + \dots + a_0}{b_m x^m + \dots + b_0} = \frac{a_0}{b_0}$
-  - per $x \rightarrow \infty$, $\frac{a_n x^n + \dots + a_0}{b_m x^m + \dots + b_0} \sim \frac{a_n}{b_m} x^{n-m}$
-- per $x \rightarrow 0$, $x \sim \sin x \sim \tan x$; esempi...
-- molto comodo, ma bisogna prestare attenzione che non avvengano semplificazioni dei termini dominanti in occasione di addizioni e sottrazioni, come ad esempio nel calcolo di 
-
-  $$\lim_{x \rightarrow 0} \frac{x - \sin x}{x^2} \quad \text{oppure} \quad \lim_{x \rightarrow 0} \frac{x - \sin x}{x^3} $$
-
-  Come mostrato nel capitolo sulle derivate, nella sezione sulle espansioni in [serie polinomali di Taylor e MacLaurin](infinitesimal-calculus:derivatives:taylor), la serie polinomiale {eq}`eq:infinitesimal-calculus:derivatives:taylor:fund-limits` della funzione seno produce un'approssimazione $\sin x = x - \frac{x^3}{3!} + O(x^5)$; quindi il numeratore delle due frazioni ha un termine dominante di terzo grado,
-
-  $$x - \sin x = x - \left( x - \frac{x}{3!} + O(x^5) \right) = \frac{x}{3!} + O(x^5) \sim \frac{1}{6} x^3 \ ,$$
-
-  che viene utilizzato nel calcolo dei limiti desiderati
-
-  $$\lim_{x \rightarrow 0} \frac{x - \sin x}{x^2} = \lim_{x \rightarrow 0} \frac{\frac{1}{6} x^3 + O(x^5)}{x^2} = 0 $$
-  $$\lim_{x \rightarrow 0} \frac{x - \sin x}{x^3} = \lim_{x \rightarrow 0} \frac{\frac{1}{6} x^3 + O(x^5)}{x^3} = \frac{1}{6} $$
-
-
 (infinitesimal-calculus:limits:fund)=
 ## Limiti fondamentali
 Questa sezione contiene alcuni limiti fondamentali. Questi limiti possono essere considerati fondamentali come sinonimo di *"minimo da ricordare"* per poter calcolare limiti più generali utilizzando le [operazioni](infinitesimal-calculus:limits:thms:operations) e i [teoremi](infinitesimal-calculus:limits:thms) sui limiti, e calcolare le [derivate fondamentali](infinitesimal-calculus:derivatives:fund). Un elenco minimo di limiti fondamentali è:
 
-$$\begin{align}
- & \lim_{x \rightarrow 0} \frac{\sin x}{x} = 1                       \label{eq:1}\\ 
- & \lim_{x \rightarrow 0} \frac{1 - \cos x}{x^2} = \frac{1}{2}       \label{eq:2}\\ 
- & \lim_{x \rightarrow +\infty} \left( 1 + \frac{1}{x} \right)^x = e \label{eq:4}\\ 
- & \lim_{x \rightarrow 0} \frac{e^x - 1}{x}= 1                                   \\ 
- & \lim_{x \rightarrow 0} \frac{e^x}{1+x}= 1                                     \\ 
- & \lim_{x \rightarrow 0} \frac{\ln (1+x)}{x} = 1                                \\ 
- & \lim_{x \rightarrow 0} \frac{(1+x)^a - 1}{x} = a                              \\ 
-\end{align}$$
+$$\begin{aligned}
+ & \lim_{x \rightarrow 0} \frac{\sin x}{x} = 1                       \\ 
+ & \lim_{x \rightarrow 0} \frac{1 - \cos x}{x^2} = \frac{1}{2}       \\ 
+ & \lim_{x \rightarrow +\infty} \left( 1 + \frac{1}{x} \right)^x = e \\ 
+ & \lim_{x \rightarrow 0} \frac{e^x - 1}{x}= 1                       \\ 
+ & \lim_{x \rightarrow 0} \frac{e^x}{1+x}= 1                         \\ 
+ & \lim_{x \rightarrow 0} \frac{\ln (1+x)}{x} = 1                    \\ 
+ & \lim_{x \rightarrow 0} \frac{(1+x)^a - 1}{x} = a                  \\ 
+\end{aligned}$$
 
-equation \eqref{eq:1}
 
 ````{only} latex
 La [dimostrazione dei limiti fondamentali](infinitesimal-calculus:limits:fund:notes) è disponibilie a fine capitolo.
@@ -355,6 +322,56 @@ Usando i risultati che coinvolgono l'esponenziale, dopo aver riscritto $(1+x)^a 
 ```
 ````
 
+(infinitesimal-calculus:limits:infinite-simal)=
+## Confronto di infiniti e infinitesimi
+Il confronto di funzioni che tendono a zero $f(x), g(x) \rightarrow 0$, o di funzioni che tendono all'infinito $f(x), g(x) \rightarrow \infty$ permette di definire degli *ordini di infinitesimi o di infiniti* **todo** *definire meglio*, a seconda del valore del limite $\frac{f(x)}{g(x)} = \ell$,
+
+- se $\ell = 0$, si può dire che $f(x)$ è un infinitesimo di ordine superiore, o un infinito di ordine inferiore, rispetto a $g(x)$ e si può indicare con la notazione di *o piccolo* $f(x) = o \left(g(x) \right)$
+
+- se $\ell$ finito diverso da zero, si può dire che $f(x)$ è un infinitesimo, o un infinito,  dello stesso ordine di $g(x)$ e si può indicare con la notazione di *o grande* $f(x) = O \left(g(x) \right)$
+
+- se $\ell$ è infinito, si può dire che $f(x)$ è un infinitesimo di ordine inferiore, o un infinito di ordine superiore, rispetto a $g(x)$; viceversa $g(x)$ è un infinitesimo di ordine superiore, o un infinito di ordine inferiore, rispetto a $f(x)$ e si può indicare con la notazione di *o piccolo* $g(x) = o \left(f(x) \right)$
+
+- se $\ell = 1$, si dice che $f(x)$ e $g(x)$ sono **asintoticamente equivalenti**, o in breve **asintotici**, $f(x) \sim g(x)$in un intorno del punto dove viene calcolato il limite.
+
+### Calcolo dei limiti con sostituzione degli infinitesimi o degli infiniti
+
+Se $h(x) \sim a f(x)$, $k(x) \sim b g(x)$ per $x \rightarrow x_0$, e il rapporto $\frac{a}{b}$ non è indeterminato, allora
+
+$$\lim_{x \rightarrow x_0} \frac{h(x)}{k(x)} = \frac{a}{b} \lim_{x \rightarrow x_0} \frac{f(x)}{g(x)}$$
+
+- confronto di polinomi
+  - per $x \rightarrow 0$, $\frac{a_n x^n + \dots + a_0}{b_m x^m + \dots + b_0} = \frac{a_0}{b_0}$
+  - per $x \rightarrow \infty$, $\frac{a_n x^n + \dots + a_0}{b_m x^m + \dots + b_0} \sim \frac{a_n}{b_m} x^{n-m}$
+- per $x \rightarrow 0$, $x \sim \sin x \sim \tan x$. Ad esempio, il limite $\lim_{x\rightarrow 0} \frac{\sin \frac{x}{2}}{3 x}$ può essere calcolato moltiplicando e dividendo esplicitamente per il termine $\frac{x}{2}$ per far comparire un limite fondamentale,
+
+  $$\lim_{x \rightarrow 0} \frac{\sin \frac{x}{2}}{3x} = \lim_{x \rightarrow 0} \underbrace{\frac{\sin \frac{x}{2}}{\frac{x}{2}}}_{\rightarrow 1} \frac{\frac{x}{2}}{3x} = \frac{1}{6} \ ,$$
+
+  oppure più velocemente, quando si ha acquisito un po' di dimestichezza in queste operazioni, sostituendo l'asintotico $\sin \frac{x}{2} \sim \frac{x}{2}$ nel limite,
+
+  $$\lim_{x \rightarrow 0} \frac{\sin \frac{x}{2}}{3x} = \lim_{x \rightarrow 0} \frac{x}{2} \frac{1}{3x} = \frac{1}{6} \ ,$$
+
+- molto comodo, ma bisogna prestare attenzione che non avvengano **semplificazioni dei termini dominanti in occasione di addizioni e sottrazioni**), come ad esempio nel calcolo di 
+
+  $$\lim_{x \rightarrow 0} \frac{x - \sin x}{x^2} \quad \text{oppure} \quad \lim_{x \rightarrow 0} \frac{x - \sin x}{x^3} $$
+
+  Come mostrato nel capitolo sulle derivate, nella sezione sulle espansioni in [serie polinomali di Taylor e MacLaurin](infinitesimal-calculus:derivatives:taylor), la serie polinomiale {eq}`eq:infinitesimal-calculus:derivatives:taylor:fund-limits` della funzione seno produce un'approssimazione $\sin x = x - \frac{x^3}{3!} + O(x^5)$; quindi il numeratore delle due frazioni ha un termine dominante di terzo grado,
+
+  $$x - \sin x = x - \left( x - \frac{x}{3!} + O(x^5) \right) = \frac{x}{3!} + O(x^5) \sim \frac{1}{6} x^3 \ ,$$
+
+  che viene utilizzato nel calcolo dei limiti desiderati
+
+  $$\lim_{x \rightarrow 0} \frac{x - \sin x}{x^2} = \lim_{x \rightarrow 0} \frac{\frac{1}{6} x^3 + O(x^5)}{x^2} = 0 $$
+  $$\lim_{x \rightarrow 0} \frac{x - \sin x}{x^3} = \lim_{x \rightarrow 0} \frac{\frac{1}{6} x^3 + O(x^5)}{x^3} = \frac{1}{6} $$
+
+**todo** esempi
+
+## Calcolo dei limiti
+**todo** Riassumere alcune tecniche per il calcolo dei limiti...*niente di speciale; mettere insieme i metodi presentati nel capitolo e mostrare qualche esempio del calcolo di limiti*
+
+
+
+
 <!--
 **todo** *Spostare nella sezione di precalcolo sulle successioni*
 Limiti di successioni. **Formula di Sterling**
@@ -365,4 +382,3 @@ o
 
 $$\ln n! \sim n \ln n - n  \qquad \text{per $n \in \mathbb{N} \rightarrow +\infty$}$$
 -->
-

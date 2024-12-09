@@ -108,6 +108,7 @@ $$ c A = \begin{bmatrix}
 
 
 ```{prf:example} Non-commutatività del prodotto matriciale
+:label: matrix-prod-noncomm
 :class: dropdown
 
 Date le matrici $\in \mathbf{R}^{2,2}$,
@@ -140,12 +141,14 @@ $$
 $$
 
 ```
+<!--
 ```{prf:example}
 **todo**
 ```
 ```{prf:example}
 **todo**
 ```
+-->
 
 
 (math-hs:algebra:linear:matrices:linear-function)=
@@ -197,6 +200,7 @@ I metodi presentati sono tra di loro equivalenti, intendendo che portano alla st
 Il metodo di sostituzione consiste nell'usare in successione un'equazione per ricavare un'incognita in funzione delle altre incognite, e sostituire l'espressione ricavata nelle altre successioni, per ottenere un sistema lineare con al dimensione ridotta di 1. Si continua così fino a ottenere un'equazione in un'incognita, immediata da risolvere. Successivamente si trovano i valori delle altre incognite in funzione delle incognite già calcolate. Se esiste una soluzione del problema, l'algoritmo descritto permette di calcolare la soluzione. **todo** *Altrimenti, in caso di esistenza di infinite soluzioni si arriva a un'identità $0=0$; in caso di nessuna soluzione si arriva a una contraddizione $1=0$.* **todo** *vedi esempi sotto*
 
 ```{prf:example} Metodo di sostituzione per sistema quadrato determinato
+:label: linsys-subs
 :class: dropdown
 
 Si vuole risolvere il sistema 
@@ -243,7 +247,8 @@ Una volta trovato il valore $x_2 = -1$, si "torna indietro" per calcolare $x_3 =
 ### Metodo di eliminazione di Gauss
 Il metodo di eliminazione di Gauss consiste nella combinazione lineare delle equazioni del sistema per ottenere una forma del sistema facilmente risolvibile, tipicamente una matrice dei coefficienti con forma triangolare.
 
-```{prf:example} Metodo di sostituzione per sistema quadrato determinato
+```{prf:example} Metodo di eliminazione di Gauss per sistema quadrato
+:label: linsys-gauss
 :class: dropdown
 
 Si vuole risolvere il sistema 
@@ -303,12 +308,16 @@ $$\begin{aligned}
 ### Interpretazione geometrica
 
 ```{prf:example} Sistema quadrato determinato
+:label: linsys-geo-1
 ```
 ```{prf:example} Sistema quadrato indeterminato
+:label: linsys-geo-2
 ```
 ```{prf:example} Sistema quadrato sovradeterminato
+:label: linsys-geo-3
 ```
 ```{prf:example} Sistema indeterminato
+:label: linsys-geo-4
 ```
 
 (math-hs:algebra:linear:problems)=

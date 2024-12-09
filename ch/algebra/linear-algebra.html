@@ -237,13 +237,13 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../calculus.html">22. Introduzione al calcolo</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../infinitesimal_calculus/analysis.html">23. Introduzione all’analisi</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/analysis-problems.html">23.7. Problemi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/analysis-notes.html">23.8. Note e dimostrazioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/analysis-problems.html">23.8. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/analysis-notes.html">23.9. Note e dimostrazioni</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../infinitesimal_calculus/derivatives.html">24. Derivate</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/derivatives-problems.html">24.7. Derivate - Problemi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/derivatives-notes.html">24.8. Dimostrazioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/derivatives-problems.html">24.8. Derivate - Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/derivatives-notes.html">24.9. Note e dimostrazioni</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../infinitesimal_calculus/integrals.html">25. Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -623,7 +623,7 @@ a_{m1} &amp; a_{m2} &amp; \dots &amp; a_{mn}
 <p><strong>Osservazione.</strong> <strong>Non</strong> vale la <strong>proprietà commutativa</strong> per il prodotto di matrici. Per di più, in generale non è possibile formare il prodotto <span class="math notranslate nohighlight">\(\mathbf{B} \mathbf{A}\)</span>, se <span class="math notranslate nohighlight">\(m \ne n\)</span>.</p>
 </li>
 </ul>
-<div class="proof example dropdown admonition" id="example-0">
+<div class="proof example dropdown admonition" id="matrix-prod-noncomm">
 <p class="admonition-title"><span class="caption-number">Example 6.1 </span> (Non-commutatività del prodotto matriciale)</p>
 <div class="example-content section" id="proof-content">
 <p>Date le matrici <span class="math notranslate nohighlight">\(\in \mathbf{R}^{2,2}\)</span>,</p>
@@ -654,17 +654,15 @@ a_{m1} &amp; a_{m2} &amp; \dots &amp; a_{mn}
  \begin{bmatrix}  1 &amp; 1 \\  1 &amp; 4 \end{bmatrix}
 \end{split}\]</div>
 </div>
-</div><div class="proof example admonition" id="example-1">
-<p class="admonition-title"><span class="caption-number">Example 6.2 </span></p>
-<div class="example-content section" id="proof-content">
-<p><strong>todo</strong></p>
+</div><!--
+```{prf:example}
+**todo**
+```
+```{prf:example}
+**todo**
+```
+-->
 </div>
-</div><div class="proof example admonition" id="example-2">
-<p class="admonition-title"><span class="caption-number">Example 6.3 </span></p>
-<div class="example-content section" id="proof-content">
-<p><strong>todo</strong></p>
-</div>
-</div></div>
 <div class="section" id="matrice-come-funzione-lineare">
 <span id="math-hs-algebra-linear-matrices-linear-function"></span><h3><span class="section-number">6.3.3. </span>Matrice come funzione lineare<a class="headerlink" href="#matrice-come-funzione-lineare" title="Permalink to this heading">#</a></h3>
 <p>Tramite il prodotto matrice vettore (colonna), una matrice <span class="math notranslate nohighlight">\(\mathbf{R}^{m,n}\)</span> rappresenta la funzione lineare più generale <span class="math notranslate nohighlight">\(f_A: \mathbb{R}^n \rightarrow \mathbb{R}^m\)</span>, che prende un vettore colonna <span class="math notranslate nohighlight">\(\mathbf{x} \in \mathbb{R}^n\)</span> come argomento e restituisce un vettore <span class="math notranslate nohighlight">\(\mathbf{y} \in \mathbb{R}^m\)</span>,</p>
@@ -700,8 +698,8 @@ a_{m1} &amp; a_{m2} &amp; \dots &amp; a_{mn}
 <div class="section" id="metodo-di-sostituzione">
 <span id="math-hs-algebra-linear-linear-system-sol-substitution"></span><h3><span class="section-number">6.4.1. </span>Metodo di sostituzione<a class="headerlink" href="#metodo-di-sostituzione" title="Permalink to this heading">#</a></h3>
 <p>Il metodo di sostituzione consiste nell’usare in successione un’equazione per ricavare un’incognita in funzione delle altre incognite, e sostituire l’espressione ricavata nelle altre successioni, per ottenere un sistema lineare con al dimensione ridotta di 1. Si continua così fino a ottenere un’equazione in un’incognita, immediata da risolvere. Successivamente si trovano i valori delle altre incognite in funzione delle incognite già calcolate. Se esiste una soluzione del problema, l’algoritmo descritto permette di calcolare la soluzione. <strong>todo</strong> <em>Altrimenti, in caso di esistenza di infinite soluzioni si arriva a un’identità <span class="math notranslate nohighlight">\(0=0\)</span>; in caso di nessuna soluzione si arriva a una contraddizione <span class="math notranslate nohighlight">\(1=0\)</span>.</em> <strong>todo</strong> <em>vedi esempi sotto</em></p>
-<div class="proof example dropdown admonition" id="example-3">
-<p class="admonition-title"><span class="caption-number">Example 6.4 </span> (Metodo di sostituzione per sistema quadrato determinato)</p>
+<div class="proof example dropdown admonition" id="linsys-subs">
+<p class="admonition-title"><span class="caption-number">Example 6.2 </span> (Metodo di sostituzione per sistema quadrato determinato)</p>
 <div class="example-content section" id="proof-content">
 <p>Si vuole risolvere il sistema</p>
 <div class="math notranslate nohighlight">
@@ -741,8 +739,8 @@ E3: \ x_2 + 2 ( -1 - 2 x_2 ) = 1 \quad \rightarrow \quad x_2 = -1 \ .
 <div class="section" id="metodo-di-eliminazione-di-gauss">
 <span id="math-hs-algebra-linear-linear-system-sol-gauss"></span><h3><span class="section-number">6.4.2. </span>Metodo di eliminazione di Gauss<a class="headerlink" href="#metodo-di-eliminazione-di-gauss" title="Permalink to this heading">#</a></h3>
 <p>Il metodo di eliminazione di Gauss consiste nella combinazione lineare delle equazioni del sistema per ottenere una forma del sistema facilmente risolvibile, tipicamente una matrice dei coefficienti con forma triangolare.</p>
-<div class="proof example dropdown admonition" id="example-4">
-<p class="admonition-title"><span class="caption-number">Example 6.5 </span> (Metodo di sostituzione per sistema quadrato determinato)</p>
+<div class="proof example dropdown admonition" id="linsys-gauss">
+<p class="admonition-title"><span class="caption-number">Example 6.3 </span> (Metodo di eliminazione di Gauss per sistema quadrato)</p>
 <div class="example-content section" id="proof-content">
 <p>Si vuole risolvere il sistema</p>
 <div class="math notranslate nohighlight">
@@ -790,20 +788,20 @@ E3: \ x_2 + 2 ( -1 - 2 x_2 ) = 1 \quad \rightarrow \quad x_2 = -1 \ .
 <span id="math-hs-algebra-linear-rouche-capelli"></span><h2><span class="section-number">6.5. </span>Teorema di Rouché-Capelli<a class="headerlink" href="#teorema-di-rouche-capelli" title="Permalink to this heading">#</a></h2>
 <div class="section" id="interpretazione-geometrica">
 <span id="math-hs-algebra-linear-rouche-capelli-geometry"></span><h3><span class="section-number">6.5.1. </span>Interpretazione geometrica<a class="headerlink" href="#interpretazione-geometrica" title="Permalink to this heading">#</a></h3>
-<div class="proof example admonition" id="example-5">
-<p class="admonition-title"><span class="caption-number">Example 6.6 </span> (Sistema quadrato determinato)</p>
+<div class="proof example admonition" id="linsys-geo-1">
+<p class="admonition-title"><span class="caption-number">Example 6.4 </span> (Sistema quadrato determinato)</p>
 <div class="example-content section" id="proof-content">
 </div>
-</div><div class="proof example admonition" id="example-6">
-<p class="admonition-title"><span class="caption-number">Example 6.7 </span> (Sistema quadrato indeterminato)</p>
+</div><div class="proof example admonition" id="linsys-geo-2">
+<p class="admonition-title"><span class="caption-number">Example 6.5 </span> (Sistema quadrato indeterminato)</p>
 <div class="example-content section" id="proof-content">
 </div>
-</div><div class="proof example admonition" id="example-7">
-<p class="admonition-title"><span class="caption-number">Example 6.8 </span> (Sistema quadrato sovradeterminato)</p>
+</div><div class="proof example admonition" id="linsys-geo-3">
+<p class="admonition-title"><span class="caption-number">Example 6.6 </span> (Sistema quadrato sovradeterminato)</p>
 <div class="example-content section" id="proof-content">
 </div>
-</div><div class="proof example admonition" id="example-8">
-<p class="admonition-title"><span class="caption-number">Example 6.9 </span> (Sistema indeterminato)</p>
+</div><div class="proof example admonition" id="linsys-geo-4">
+<p class="admonition-title"><span class="caption-number">Example 6.7 </span> (Sistema indeterminato)</p>
 <div class="example-content section" id="proof-content">
 </div>
 </div></div>
@@ -812,7 +810,7 @@ E3: \ x_2 + 2 ( -1 - 2 x_2 ) = 1 \quad \rightarrow \quad x_2 = -1 \ .
 <span id="math-hs-algebra-linear-problems"></span><h2><span class="section-number">6.6. </span>Problemi<a class="headerlink" href="#problemi" title="Permalink to this heading">#</a></h2>
 <div class="section" id="matrici-come-funzione-lineare">
 <span id="math-hs-algebra-linear-problems-linear-fun"></span><h3><span class="section-number">6.6.1. </span>Matrici come funzione lineare<a class="headerlink" href="#matrici-come-funzione-lineare" title="Permalink to this heading">#</a></h3>
-<div class="exercise dropdown admonition" id="ch/algebra/linear-algebra-exercise-9">
+<div class="exercise dropdown admonition" id="ch/algebra/linear-algebra-exercise-7">
 
 <p class="admonition-title"><span class="caption-number">Exercise 6.1 </span> (Matrici e scalatura)</p>
 <div class="section" id="exercise-content">
@@ -830,7 +828,7 @@ E3: \ x_2 + 2 ( -1 - 2 x_2 ) = 1 \quad \rightarrow \quad x_2 = -1 \ .
 </ul>
 </div>
 </div>
-<div class="exercise dropdown admonition" id="ch/algebra/linear-algebra-exercise-10">
+<div class="exercise dropdown admonition" id="ch/algebra/linear-algebra-exercise-8">
 
 <p class="admonition-title"><span class="caption-number">Exercise 6.2 </span> (Matrici e riflessioni)</p>
 <div class="section" id="exercise-content">
@@ -846,7 +844,7 @@ E3: \ x_2 + 2 ( -1 - 2 x_2 ) = 1 \quad \rightarrow \quad x_2 = -1 \ .
 </ul>
 </div>
 </div>
-<div class="exercise dropdown admonition" id="ch/algebra/linear-algebra-exercise-11">
+<div class="exercise dropdown admonition" id="ch/algebra/linear-algebra-exercise-9">
 
 <p class="admonition-title"><span class="caption-number">Exercise 6.3 </span> (Matrici e rotazioni)</p>
 <div class="section" id="exercise-content">
@@ -869,7 +867,7 @@ con $a^2 + b^2 = 1$ rappresenta una rotazione dei vettori attorno all'origine.
 <p><strong>todo</strong> Dipendenza logica di questo esercizio dalle basi di <a class="reference internal" href="../trigonometry.html#math-hs-trigonometry"><span class="std std-ref">trigonometria</span></a>. Stabilire un ordine consigliato di accesso a questo <span class="math notranslate nohighlight">\(\texttt{bbook}\)</span></p>
 </div>
 </div>
-<div class="exercise dropdown admonition" id="ch/algebra/linear-algebra-exercise-12">
+<div class="exercise dropdown admonition" id="ch/algebra/linear-algebra-exercise-10">
 
 <p class="admonition-title"><span class="caption-number">Exercise 6.4 </span> (Proiezione ortogonale lungo una direzione data)</p>
 <div class="section" id="exercise-content">
@@ -886,7 +884,7 @@ con $a^2 + b^2 = 1$ rappresenta una rotazione dei vettori attorno all'origine.
 </ul>
 </div>
 </div>
-<div class="exercise dropdown admonition" id="ch/algebra/linear-algebra-exercise-13">
+<div class="exercise dropdown admonition" id="ch/algebra/linear-algebra-exercise-11">
 
 <p class="admonition-title"><span class="caption-number">Exercise 6.5 </span> (Proiezione ortogonale nella direzione perpendicolare a una direzione data)</p>
 <div class="section" id="exercise-content">
@@ -903,14 +901,14 @@ con $a^2 + b^2 = 1$ rappresenta una rotazione dei vettori attorno all'origine.
 </ul>
 </div>
 </div>
-<div class="exercise dropdown admonition" id="ch/algebra/linear-algebra-exercise-14">
+<div class="exercise dropdown admonition" id="ch/algebra/linear-algebra-exercise-12">
 
 <p class="admonition-title"><span class="caption-number">Exercise 6.6 </span> (Scomposizione di una matrice - somma di parte simmetrica e antisimmetrica)</p>
 <div class="section" id="exercise-content">
 <p>Ogni matrice può essere scritta come la somma di una parte simmetrica e una parte antisimmetrica.</p>
 </div>
 </div>
-<div class="exercise dropdown admonition" id="ch/algebra/linear-algebra-exercise-15">
+<div class="exercise dropdown admonition" id="ch/algebra/linear-algebra-exercise-13">
 
 <p class="admonition-title"><span class="caption-number">Exercise 6.7 </span> (Scomposizione di una matrice - …)</p>
 <div class="section" id="exercise-content">

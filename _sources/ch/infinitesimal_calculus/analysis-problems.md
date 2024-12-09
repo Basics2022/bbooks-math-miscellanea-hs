@@ -65,7 +65,7 @@
 (infinitesimal-calculus:analysis:problems:limits-indeterminate)=
 ```{exercise} Forme indeterminate
 :class: dropdown
-Risolvere i seguenti limiti. Alcuni esercizi potrebbero non essere di immediata soluzione con gli strumenti introdotti in questo capitolo, ma saranno di soluzione immediata una volta introdotto il [teorema di de l'Hopital](infinitesimal-calculus:derivatives:thm:hopital) nel capitolo sulle [derivate](infinitesial-calculus:derivatives).
+Risolvere i seguenti limiti. Alcuni esercizi potrebbero non essere di immediata soluzione con gli strumenti introdotti in questo capitolo, ma saranno di soluzione immediata una volta introdotto il [teorema di de l'Hopital](infinitesimal-calculus:derivatives:thm:hopital) nel capitolo sulle [derivate](infinitesimal-calculus:derivatives).
 1. $\lim_{x \to 0} \frac{\sin(x)}{x}$  
 2. $\lim_{x \to \infty} \frac{\ln(x)}{x}$  
 3. $\lim_{x \to 0} \frac{e^x - 1}{x}$  

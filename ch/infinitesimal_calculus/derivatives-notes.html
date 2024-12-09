@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>24.8. Dimostrazioni &#8212; Matematica per le scuole superiori</title>
+    <title>24.9. Note e dimostrazioni &#8212; Matematica per le scuole superiori</title>
   
   
   
@@ -65,12 +65,14 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/infinitesimal_calculus/derivatives-notes';</script>
     <link rel="shortcut icon" href="../../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
     <link rel="next" title="25. Integrali" href="integrals.html" />
-    <link rel="prev" title="24.7. Derivate - Problemi" href="derivatives-problems.html" />
+    <link rel="prev" title="24.8. Derivate - Problemi" href="derivatives-problems.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
@@ -235,13 +237,13 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../calculus.html">22. Introduzione al calcolo</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="analysis.html">23. Introduzione all’analisi</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="analysis-problems.html">23.7. Problemi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="analysis-notes.html">23.8. Note e dimostrazioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analysis-problems.html">23.8. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analysis-notes.html">23.9. Note e dimostrazioni</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="derivatives.html">24. Derivate</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="derivatives-problems.html">24.7. Derivate - Problemi</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">24.8. Dimostrazioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="derivatives-problems.html">24.8. Derivate - Problemi</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">24.9. Note e dimostrazioni</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="integrals.html">25. Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -459,7 +461,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -470,11 +474,24 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Dimostrazioni</h1>
+    <h1>Note e dimostrazioni</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contenuti </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definizione">24.9.1. Definizione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regole-di-derivazione">24.9.2. Regole di derivazione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoremi">24.9.3. Teoremi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#derivate-fondamentali">24.9.4. Derivate fondamentali</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#derivate-di-ordine-superiore">24.9.5. Derivate di ordine superiore</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#serie-di-taylor-e-maclaurin">24.9.6. Serie di Taylor e MacLaurin</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -484,8 +501,298 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="dimostrazioni">
-<span id="infinitesimal-calculus-derivatives-notes"></span><h1><span class="section-number">24.8. </span>Dimostrazioni<a class="headerlink" href="#dimostrazioni" title="Permalink to this heading">#</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="note-e-dimostrazioni">
+<span id="infinitesimal-calculus-derivatives-notes"></span><h1><span class="section-number">24.9. </span>Note e dimostrazioni<a class="headerlink" href="#note-e-dimostrazioni" title="Permalink to this heading">#</a></h1>
+<div class="section" id="definizione">
+<span id="infinitesimal-calculus-derivatives-def-notes"></span><h2><span class="section-number">24.9.1. </span>Definizione<a class="headerlink" href="#definizione" title="Permalink to this heading">#</a></h2>
+</div>
+<div class="section" id="regole-di-derivazione">
+<span id="infinitesimal-calculus-derivatives-rules-notes"></span><h2><span class="section-number">24.9.2. </span>Regole di derivazione<a class="headerlink" href="#regole-di-derivazione" title="Permalink to this heading">#</a></h2>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Linearità<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">La derivata in <span class="math notranslate nohighlight">\(x\)</span> della funzione <span class="math notranslate nohighlight">\(a f(x) + b g(x)\)</span> viene calcolata con la definizione di limite di rapporto incrementale, a <span class="math notranslate nohighlight">\(x\)</span> costante per <span class="math notranslate nohighlight">\(h \rightarrow 0\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \left( a f(x) + b g(x) \right)' 
+  &amp; = \lim_{h \rightarrow 0} \frac{( a f(x+h) + b g(x+h) ) - ( a f(x) + b g(x) ) }{h} = \\
+  &amp; = \lim_{h \rightarrow 0} \frac{a ( f(x+h) + f(x) ) + b ( g(x+h) -  b g(x) )}{h} = \\
+  &amp; = a \lim_{h \rightarrow 0} \frac{f(x+h) + f(x)}{h} + b \lim_{h \rightarrow 0} \frac{ g(x+h) -  b g(x) }{h} = \\
+  &amp; = a f'(x) + b g'(x) \ .
+\end{aligned}\end{split}\]</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Prodotto<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">La derivata in <span class="math notranslate nohighlight">\(x\)</span> della funzione <span class="math notranslate nohighlight">\(f(x) g(x)\)</span> viene calcolata con la definizione di limite di rapporto incrementale, a <span class="math notranslate nohighlight">\(x\)</span> costante per <span class="math notranslate nohighlight">\(h \rightarrow 0\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \left( f(x) g(x) \right)' 
+  &amp; = \lim_{h \rightarrow 0} \frac{f(x+h) g(x+h) - f(x) g(x)}{h} = \\
+  &amp; = \lim_{h \rightarrow 0} \frac{f(x+h) g(x+h) - f(x)g(x+h) + f(x)g(x+h) - f(x) g(x)}{h} = \\
+  &amp; = \lim_{h \rightarrow 0} \frac{f(x+h) g(x+h) - f(x)g(x+h)}{h} + \lim_{h\rightarrow 0} \frac{f(x)g(x+h) - f(x) g(x)}{h} = \\
+  &amp; = \lim_{h \rightarrow 0} \underbrace{\frac{f(x+h) - f(x)}{h}}_{\rightarrow f'(x)} \underbrace{g(x+h)}_{\rightarrow g(x)} + f(x) \underbrace{\lim_{h\rightarrow 0} \frac{g(x+h) - g(x)}{h}}{\rightarrow g'(x)} = \\
+  &amp; = f'(x) g(x) + f(x) g'(x) \ .
+\end{aligned}\end{split}\]</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Quoziente<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">La derivata in <span class="math notranslate nohighlight">\(x\)</span> della funzione <span class="math notranslate nohighlight">\(\frac{f(x)}{g(x)}\)</span> viene calcolata con la definizione di limite di rapporto incrementale, a <span class="math notranslate nohighlight">\(x\)</span> costante per <span class="math notranslate nohighlight">\(h \rightarrow 0\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \left( \frac{f(x)}{ g(x)} \right)' 
+  &amp; = \lim_{h \rightarrow 0} \frac{ \frac{f(x+h)}{g(x+h)} - \frac{f(x)}{g(x)}}{h} = \\
+  &amp; = \lim_{h \rightarrow 0} \frac{\frac{f(x+h) g(x) - f(x) g(x+h)}{g(x) g(x+h)}}{h} = \\
+  &amp; = \lim_{h \rightarrow 0} \frac{f(x+h) g(x) - f(x) g(x) + f(x) g(x) - f(x) g(x+h)}{h g(x) g(x+h)} = \\
+  &amp; = \dots \\
+  &amp; = \frac{f'(x) g(x) - f(x) g'(x)}{g^2(x)} \ .
+\end{aligned}\end{split}\]</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Funzione composta<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">La derivata in <span class="math notranslate nohighlight">\(x\)</span> della funzione <span class="math notranslate nohighlight">\(f(g(x))\)</span> viene calcolata con la definizione di limite di rapporto incrementale, a <span class="math notranslate nohighlight">\(x\)</span> costante per <span class="math notranslate nohighlight">\(h \rightarrow 0\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \left( f(g(x)) \right)' 
+  &amp; = \lim_{h \rightarrow 0} \frac{ f(g(x+h)) - f(g(x)) }{h} = \\
+  &amp; = \lim_{h \rightarrow 0} \frac{ f(g(x+h)) - f(g(x)) }{h} \frac{g(x+h) - g(x)}{g(x+h)-g(x)} = \\
+  &amp; = \lim_{h \rightarrow 0} \frac{ f(g(x+h)) - f(g(x)) }{g(x+h) - g(x)} \frac{g(x+h)-g(x)}{h} = \\
+  &amp; = \dots = \\
+  &amp; = f'\left( g(x) \right) g'(x) \ .
+\end{aligned}\end{split}\]</div>
+<ul class="simple">
+<li><p class="sd-card-text"><strong>todo</strong> <em>discutere la validità dell’operazione di moltiplicare per <span class="math notranslate nohighlight">\(\frac{g(x+h) - g(x)}{g(x+h) - g(x)}\)</span></em></p></li>
+<li><p class="sd-card-text"><strong>todo</strong> <span class="math notranslate nohighlight">\(g(x+h) - g(x)) \rightarrow 0\)</span> per <span class="math notranslate nohighlight">\(h \rightarrow 0\)</span> poiché <span class="math notranslate nohighlight">\(g(x)\)</span> è continua se derivabile</p></li>
+</ul>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Derivata della funzione inversa<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Si usa la regola <a class="reference internal" href="derivatives.html#equation-infinitesimal-calculus-derivatives-rules-composite">(24.6)</a> di derivazione della funzione composta applicata alla relazione</p>
+<div class="math notranslate nohighlight">
+\[x = f^{-1} \left( f(x) \right)\]</div>
+<p class="sd-card-text">che caratterizza la funzione inversa <span class="math notranslate nohighlight">\(f^{-1}\)</span>. Derivando entrambi i termini della relazione rispetto alla variabile indipendente <span class="math notranslate nohighlight">\(x\)</span> si ottiene</p>
+<div class="math notranslate nohighlight">
+\[1 = \dfrac{d f^{-1}}{d y}\bigg|_{y = f(x)} \, \dfrac{d f(x)}{d x} \ ,\]</div>
+<p class="sd-card-text">dalla quale segue immediatamente la regola di derivazione della funzione inversa</p>
+<div class="math notranslate nohighlight">
+\[ \dfrac{d f^{-1}}{d y}\bigg|_{y = f(x)} = \dfrac{1}{ \dfrac{d y}{d x}\bigg|_{x}} \ .\]</div>
+</div>
+</details></div>
+<div class="section" id="teoremi">
+<span id="infinitesimal-calculus-derivatives-thm-notes"></span><h2><span class="section-number">24.9.3. </span>Teoremi<a class="headerlink" href="#teoremi" title="Permalink to this heading">#</a></h2>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" id="infinitesimal-calculus-derivatives-thm-fermat-notes">
+<summary class="sd-summary-title sd-card-header">
+Dimostrazione del teorema di Fermat<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Sia <span class="math notranslate nohighlight">\(x_0\)</span> un punto di minimo locale della funzione <span class="math notranslate nohighlight">\(f(x)\)</span> derivabile in <span class="math notranslate nohighlight">\(x_0\)</span>. La definizione di minimo locale permette di scrivere</p>
+<div class="math notranslate nohighlight">
+\[\exists \delta &gt; 0: \ x in (x_0 - \delta, x_0 + \delta) \cap (a,b) \quad \rightarrow \quad f(x_0) \le f(x) \ .\]</div>
+<p class="sd-card-text">Quindi si possono scrivere le seguenti relazioni</p>
+<div class="math notranslate nohighlight">
+\[\frac{f(x_0 + h) - f(x_0)}{h} \ge 0 \qquad \forall h \in (0, \delta)\]</div>
+<div class="math notranslate nohighlight">
+\[\frac{f(x_0 + h) - f(x_0)}{h} \le 0 \qquad \forall h \in (-\delta,0)\]</div>
+<p class="sd-card-text">Il limite per <span class="math notranslate nohighlight">\(h \rightarrow 0\)</span> di queste due relazioni esiste ed è <span class="math notranslate nohighlight">\(f'(x_0)\)</span> in entrambi i casi, essendo la derivata il limite del rapporto incrementale. Le due espressioni a sinistra dei segni di disuguaglianza possono essere considerate funzioni continue della variabile <span class="math notranslate nohighlight">\(h\)</span>, il cui limite esiste per <span class="math notranslate nohighlight">\(h \rightarrow 0\)</span>. Usando il <a class="reference internal" href="analysis.html#infinitesimal-calculus-continuous-fun-thms-sign"><span class="std std-ref">teorema della permanenza del segno</span></a>, si può concludere che</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+  f'(x_0) \ge 0 \\
+  f'(x_0) \le 0 \\
+\end{cases}\end{split}\]</div>
+<p class="sd-card-text">e da queste la dimostrazione della tesi del problema, <span class="math notranslate nohighlight">\(f'(x_0)\)</span>.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" id="infinitesimal-calculus-derivatives-thm-rolle-notes">
+<summary class="sd-summary-title sd-card-header">
+Dimostrazione del teorema di Rolle<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Per il <a class="reference internal" href="analysis.html#infinitesimal-calculus-continuous-fun-thms-weierstrass"><span class="std std-ref">teorema di Weierstrass</span></a>, la funzione <span class="math notranslate nohighlight">\(f\)</span> ha un massimo <span class="math notranslate nohighlight">\(M\)</span> e un minimo <span class="math notranslate nohighlight">\(m\)</span> assoluti nell’intervallo <span class="math notranslate nohighlight">\([a,b]\)</span>. Si distinguono due casi:</p>
+<ul class="simple">
+<li><p class="sd-card-text">massimo e minimo sono nei punti estremi dell’intervallo. Allora la funzione è costante, e la derivata è nulla in ogni punto <span class="math notranslate nohighlight">\(c \in (a,b)\)</span></p></li>
+<li><p class="sd-card-text">i punti di massimo e di minimo sono interni all’intervallo. In questo caso, per il <a class="reference internal" href="derivatives.html#infinitesimal-calculus-derivatives-thm-rolle"><span class="std std-ref">teorema di Fermat</span></a> i punti <span class="math notranslate nohighlight">\(c\)</span> di minimo o massimo verificano la condizione <span class="math notranslate nohighlight">\(f'(c) = 0\)</span>.</p></li>
+</ul>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" id="infinitesimal-calculus-derivatives-thm-cauchy-notes">
+<summary class="sd-summary-title sd-card-header">
+Dimostrazione del teorema di Cauchy<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Si applica il <a class="reference internal" href="derivatives.html#infinitesimal-calculus-derivatives-thm-rolle"><span class="std std-ref">teorema di Rolle</span></a> alla funzione</p>
+<div class="math notranslate nohighlight">
+\[h(x) = \left[ g(b) - g(a) \right] \, f(x) - \left[ f(b) - f(a) \right] \, g(x)\]</div>
+<p class="sd-card-text">continua in <span class="math notranslate nohighlight">\([a,b]\)</span>, derivabile in <span class="math notranslate nohighlight">\((a,b)\)</span> e con <span class="math notranslate nohighlight">\(h(a) = g(b) \, f(a) - f(b) \, g(a) = h(b)\)</span>.</p>
+</div>
+</details><!--
+```{dropdown} Dimostrazione del teorema di Lagrange
+```
+-->
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" id="infinitesimal-calculus-derivatives-thm-hopital-notes">
+<summary class="sd-summary-title sd-card-header">
+Dimostrazione del teorema di de l’Hopital<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>Forma indeterminata <span class="math notranslate nohighlight">\(\frac{0}{0}\)</span>.</strong> Usando il <a class="reference internal" href="derivatives.html#infinitesimal-calculus-derivatives-thm-cauchy"><span class="std std-ref">teorema di Cauchy</span></a> e il <a class="reference internal" href="derivatives.html#infinitesimal-calculus-derivatives-thm-rolle"><span class="std std-ref">teorema di Rolle</span></a> <strong>todo</strong></p>
+<p class="sd-card-text"><strong>Forma indeterminata <span class="math notranslate nohighlight">\(\frac{\infty}{\infty}\)</span>.</strong> Usando il <a class="reference internal" href="derivatives.html#infinitesimal-calculus-derivatives-thm-cauchy"><span class="std std-ref">teorema di Cauchy</span></a> e il <a class="reference internal" href="derivatives.html#infinitesimal-calculus-derivatives-thm-lagrange"><span class="std std-ref">teorema di Lagrange</span></a> <strong>todo</strong></p>
+</div>
+</details></div>
+<div class="section" id="derivate-fondamentali">
+<span id="infinitesimal-calculus-derivatives-fund-notes"></span><h2><span class="section-number">24.9.4. </span>Derivate fondamentali<a class="headerlink" href="#derivate-fondamentali" title="Permalink to this heading">#</a></h2>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Dimostrazione di <span class="math notranslate nohighlight">\(\ (x^n)'\)</span><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Usando la <a class="reference internal" href="../precalculus/polynomials.html#math-hs-precalculus-polynomials-binomial-thm"><span class="std std-ref">formula binomiale</span></a> <span class="math notranslate nohighlight">\((x + \varepsilon)^n = x^n + n x^{n-1} \varepsilon + f(\varepsilon^2, \varepsilon^3, \dots)\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \dfrac{d}{dx} x^n
+  &amp; = \lim_{\varepsilon \rightarrow 0}  \dfrac{(x+\varepsilon)^{n} - x^n}{\varepsilon} = \\
+  &amp; = \lim_{\varepsilon \rightarrow 0}  \dfrac{x^n + n x^{n-1} \varepsilon + o(\varepsilon) - x^n}{\varepsilon} = \\
+  &amp; = \lim_{\varepsilon \rightarrow 0}  \left( n x^{n-1} + O(\varepsilon) \right) = \\
+  &amp; = n x^{n-1} \ .
+\end{aligned}\end{split}\]</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Dimostrazione di <span class="math notranslate nohighlight">\(\ (e^x)'\)</span><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Usando le proprietà della funzione esponenziale e il limite <span class="math notranslate nohighlight">\(e^{\varepsilon} - 1 \sim \varepsilon\)</span> per <span class="math notranslate nohighlight">\(\varepsilon \rightarrow 0\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \dfrac{d}{dx} e^x       
+  &amp; = \lim_{\varepsilon \rightarrow 0}  \dfrac{e^{x+\varepsilon} - e^x}{\varepsilon} = \\
+  &amp; = \lim_{\varepsilon \rightarrow 0}  \dfrac{e^x \left( e^{\varepsilon} - 1 \right)}{\varepsilon} = \\
+  &amp; = e^x \lim_{\varepsilon \rightarrow 0}  \dfrac{\varepsilon + o(\varepsilon)}{\varepsilon} = \\
+  &amp; = e^x \lim_{\varepsilon \rightarrow 0}  \left( 1 + O(\varepsilon) \right) = \\
+  &amp; = e^x \ .
+\end{aligned}\end{split}\]</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Dimostrazione di <span class="math notranslate nohighlight">\(\ (\ln x)'\)</span><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Usando le proprietà della funzione logaritmo naturale e il limite <span class="math notranslate nohighlight">\(\ln(1 + \varepsilon) \sim \varepsilon\)</span> per <span class="math notranslate nohighlight">\(\varepsilon \rightarrow 0\)</span>, per <span class="math notranslate nohighlight">\(x &gt; 0\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \dfrac{d}{dx} \ln x       
+  &amp; = \lim_{\varepsilon \rightarrow 0}  \dfrac{\ln(x+\varepsilon) - \ln x}{\varepsilon} = \\
+  &amp; = \lim_{\varepsilon \rightarrow 0}  \dfrac{\ln \left(1 + \frac{\varepsilon}{x} \right)}{\varepsilon} = \\
+  &amp; = \lim_{\varepsilon \rightarrow 0}  \dfrac{\frac{\varepsilon}{x} + o(\varepsilon)}{\varepsilon} = \\
+  &amp; = \lim_{\varepsilon \rightarrow 0}  \left( \frac{1}{x} + O(\varepsilon) \right) = \\
+  &amp; = \frac{1}{x} \ .
+\end{aligned}\end{split}\]</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Dimostrazione di <span class="math notranslate nohighlight">\(\ (\sin x)'\)</span><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Usando le formule di somma delle funzioni armoniche, <strong>todo</strong> ref, e gli infinitesimi delle funzioni <span class="math notranslate nohighlight">\(\sin \varepsilon \sim \varepsilon\)</span>, <span class="math notranslate nohighlight">\(\cos \varepsilon \sim 1 - \frac{\varepsilon^2}{2}\)</span> per <span class="math notranslate nohighlight">\(\varepsilon \rightarrow 0\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \dfrac{d}{dx} \sin(x) 
+  &amp; = \lim_{\varepsilon \rightarrow 0}  \dfrac{\sin(x+\varepsilon) - \sin x}{\varepsilon} = \\
+  &amp; = \lim_{\varepsilon \rightarrow 0} \dfrac{\sin x \cos \varepsilon + \cos x \sin \varepsilon - \sin x}{\varepsilon} = \\
+  &amp; = \lim_{\varepsilon \rightarrow 0} \dfrac{\sin x \left( 1 - \frac{\varepsilon^2}{2} \right) + \varepsilon \, \cos x - \sin x}{\varepsilon} = \\
+  &amp; = \lim_{\varepsilon \rightarrow 0} \left( \cos x + O(\varepsilon) \right) = \\
+  &amp; = \cos x \ .
+\end{aligned}\end{split}\]</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Dimostrazione di <span class="math notranslate nohighlight">\(\ (\cos x)'\)</span><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Usando le formule di somma delle funzioni armoniche, <strong>todo</strong> ref, e gli infinitesimi delle funzioni <span class="math notranslate nohighlight">\(\sin \varepsilon \sim \varepsilon\)</span>, <span class="math notranslate nohighlight">\(\cos \varepsilon \sim 1 - \frac{\varepsilon^2}{2}\)</span> per <span class="math notranslate nohighlight">\(\varepsilon \rightarrow 0\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \dfrac{d}{dx} \cos(x) 
+  &amp; = \lim_{\varepsilon \rightarrow 0}  \dfrac{\cos(x+\varepsilon) - \cos x}{\varepsilon} = \\
+  &amp; = \lim_{\varepsilon \rightarrow 0} \dfrac{\cos x \cos \varepsilon - \sin x \sin \varepsilon - \sin x}{\varepsilon} = \\
+  &amp; = \lim_{\varepsilon \rightarrow 0} \dfrac{\cos x \left( 1 - \frac{\varepsilon^2}{2} \right) - \varepsilon \, \sin x - \cos x}{\varepsilon} = \\
+  &amp; = \lim_{\varepsilon \rightarrow 0} \left( - \sin x + O(\varepsilon) \right) = \\
+  &amp; = - \sin x \ .
+\end{aligned}\end{split}\]</div>
+</div>
+</details></div>
+<div class="section" id="derivate-di-ordine-superiore">
+<span id="infinitesimal-calculus-derivatives-higher-notes"></span><h2><span class="section-number">24.9.5. </span>Derivate di ordine superiore<a class="headerlink" href="#derivate-di-ordine-superiore" title="Permalink to this heading">#</a></h2>
+</div>
+<div class="section" id="serie-di-taylor-e-maclaurin">
+<span id="infinitesimal-calculus-derivatives-taylor-notes"></span><h2><span class="section-number">24.9.6. </span>Serie di Taylor e MacLaurin<a class="headerlink" href="#serie-di-taylor-e-maclaurin" title="Permalink to this heading">#</a></h2>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Dimostrazione delle proprietà di approssimazione locale della serie di Taylor<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Usando il teorema di de l’Hopital, fino a quando il rapporto non è una forma indeterminata</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \lim_{x \rightarrow x_0} \frac{f(x) - T_N[f(x); x_0]}{(x-x_0)^N}
+  &amp; = \lim_{x \rightarrow x_0} \dfrac{f(x) - f(x_0) + f'(x_0) (x-x_0) + \frac{f''(x_0)}{2!} (x-x_0)^2 + \dots \frac{f^{(N)}(x_0)}{N!}(x-x_0)^N}{(x-x_0)^N} = \text{(H)} = \\
+  &amp; = \lim_{x \rightarrow x_0} \dfrac{f'(x) - f'(x_0) + \frac{f''(x_0)}{1!} (x-x_0) + \dots \frac{f^{(N)}(x_0)}{(N-1)!}(x-x_0)^{N-1}}{N \, (x-x_0)^{N-1}} = \text{(H)} = \\
+  &amp; = \lim_{x \rightarrow x_0} \dfrac{f''(x) - f''(x_0) + \dots \frac{f^{(N)}(x_0)}{(N-2)!}(x-x_0)^{N-2}}{N \, (N-1) \, (x-x_0)^{n-1}} = \text{(H)} =\\
+  &amp; = \dots \\
+  &amp; = \lim_{x \rightarrow x_0} \dfrac{f^{(N)}(x) - f^{(N)}(x_0)}{N!} =  0 \ ,
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">si dimostra che il numeratore è un infinitesimo dello stesso ordine del denominatore. Usando la notazione dell”<em>»o piccolo»</em> per gli infinitesimi si può quindi scrivere l’approssimazione locale come:</p>
+<div class="math notranslate nohighlight">
+\[f(x) - T_N[f(x), x_0] = o\left((x-x_0)^N\right) \ ,\]</div>
+<p class="sd-card-text">o in maniera equivalente</p>
+<div class="math notranslate nohighlight">
+\[f(x) = T_N[f(x), x_0] + o\left((x-x_0)^N\right) \ .\]</div>
+<p class="sd-card-text">Ripetendo lo stesso procedimento, confrontando la differenza <span class="math notranslate nohighlight">\(f(x) - T_N[f(x);x_0]\)</span> con il termine <span class="math notranslate nohighlight">\((x-x_0)^{N+1}\)</span> si ottiene</p>
+<div class="math notranslate nohighlight">
+\[
+  \lim_{x \rightarrow x_0} \frac{f(x) - T_N[f(x); x_0]}{(x-x_0)^N} = \dots = \lim_{x \rightarrow x_0} \frac{f^{(N+1)}(x)}{(N+1)!} = \frac{f^{(N+1)}(x_0)}{(N+1)!} \ .
+\]</div>
+</div>
+</details></div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -524,7 +831,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">precedente</p>
-        <p class="prev-next-title"><span class="section-number">24.7. </span>Derivate - Problemi</p>
+        <p class="prev-next-title"><span class="section-number">24.8. </span>Derivate - Problemi</p>
       </div>
     </a>
     <a class="right-next"
@@ -542,6 +849,25 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenuti
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definizione">24.9.1. Definizione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regole-di-derivazione">24.9.2. Regole di derivazione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoremi">24.9.3. Teoremi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#derivate-fondamentali">24.9.4. Derivate fondamentali</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#derivate-di-ordine-superiore">24.9.5. Derivate di ordine superiore</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#serie-di-taylor-e-maclaurin">24.9.6. Serie di Taylor e MacLaurin</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

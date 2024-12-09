@@ -39,17 +39,61 @@ $$\frac{d}{dx} f\big( g(x) \big) = \frac{d f}{dy}\Big|_{y=g(x)} \dfrac{d g}{d x}
 
 $$ \dfrac{d f^{-1}}{d y}\bigg|_{y = f(x)} = \dfrac{1}{ \dfrac{d y}{d x}\bigg|_{x}} \ .$$ (infinitesimal-calculus:derivatives:rules:inverse)
 
+````{only} latex
+La [dimostrazione delle regole di derivazione](infinitesimal-calculus:derivatives:rules:notes) è disponibilie a fine capitolo.
+````
+
+````{only} html
 ```{dropdown} Dimostrazione della linearità dell'operazione di derivazione
-**todo**
+La derivata in $x$ della funzione $a f(x) + b g(x)$ viene calcolata con la definizione di limite di rapporto incrementale, a $x$ costante per $h \rightarrow 0$
+
+$$\begin{aligned}
+  \left( a f(x) + b g(x) \right)' 
+  & = \lim_{h \rightarrow 0} \frac{( a f(x+h) + b g(x+h) ) - ( a f(x) + b g(x) ) }{h} = \\
+  & = \lim_{h \rightarrow 0} \frac{a ( f(x+h) + f(x) ) + b ( g(x+h) -  b g(x) )}{h} = \\
+  & = a \lim_{h \rightarrow 0} \frac{f(x+h) + f(x)}{h} + b \lim_{h \rightarrow 0} \frac{ g(x+h) -  b g(x) }{h} = \\
+  & = a f'(x) + b g'(x) \ .
+\end{aligned}$$
 ```
 ```{dropdown} Dimostrazione della regola del prodotto
+La derivata in $x$ della funzione $f(x) g(x)$ viene calcolata con la definizione di limite di rapporto incrementale, a $x$ costante per $h \rightarrow 0$
+
+$$\begin{aligned}
+  \left( f(x) g(x) \right)' 
+  & = \lim_{h \rightarrow 0} \frac{f(x+h) g(x+h) - f(x) g(x)}{h} = \\
+  & = \lim_{h \rightarrow 0} \frac{f(x+h) g(x+h) - f(x)g(x+h) + f(x)g(x+h) - f(x) g(x)}{h} = \\
+  & = \lim_{h \rightarrow 0} \frac{f(x+h) g(x+h) - f(x)g(x+h)}{h} + \lim_{h\rightarrow 0} \frac{f(x)g(x+h) - f(x) g(x)}{h} = \\
+  & = \lim_{h \rightarrow 0} \underbrace{\frac{f(x+h) - f(x)}{h}}_{\rightarrow f'(x)} \underbrace{g(x+h)}_{\rightarrow g(x)} + f(x) \underbrace{\lim_{h\rightarrow 0} \frac{g(x+h) - g(x)}{h}}{\rightarrow g'(x)} = \\
+  & = f'(x) g(x) + f(x) g'(x) \ .
+\end{aligned}$$
 **todo**
 ```
 ```{dropdown} Dimostrazione della regola del quoziente
-**todo**
+La derivata in $x$ della funzione $\frac{f(x)}{g(x)}$ viene calcolata con la definizione di limite di rapporto incrementale, a $x$ costante per $h \rightarrow 0$
+
+$$\begin{aligned}
+  \left( \frac{f(x)}{ g(x)} \right)' 
+  & = \lim_{h \rightarrow 0} \frac{ \frac{f(x+h)}{g(x+h)} - \frac{f(x)}{g(x)}}{h} = \\
+  & = \lim_{h \rightarrow 0} \frac{\frac{f(x+h) g(x) - f(x) g(x+h)}{g(x) g(x+h)}}{h} = \\
+  & = \lim_{h \rightarrow 0} \frac{f(x+h) g(x) - f(x) g(x) + f(x) g(x) - f(x) g(x+h)}{h g(x) g(x+h)} = \\
+  & = \dots \\
+  & = \frac{f'(x) g(x) - f(x) g'(x)}{g^2(x)} \ .
+\end{aligned}$$
 ```
 ```{dropdown} Dimostrazione della regola della funzione composta
-**todo**
+La derivata in $x$ della funzione $f(g(x))$ viene calcolata con la definizione di limite di rapporto incrementale, a $x$ costante per $h \rightarrow 0$
+
+$$\begin{aligned}
+  \left( f(g(x)) \right)' 
+  & = \lim_{h \rightarrow 0} \frac{ f(g(x+h)) - f(g(x)) }{h} = \\
+  & = \lim_{h \rightarrow 0} \frac{ f(g(x+h)) - f(g(x)) }{h} \frac{g(x+h) - g(x)}{g(x+h)-g(x)} = \\
+  & = \lim_{h \rightarrow 0} \frac{ f(g(x+h)) - f(g(x)) }{g(x+h) - g(x)} \frac{g(x+h)-g(x)}{h} = \\
+  & = \dots = \\
+  & = f'\left( g(x) \right) g'(x) \ .
+\end{aligned}$$
+
+- **todo** *discutere la validità dell'operazione di moltiplicare per $\frac{g(x+h) - g(x)}{g(x+h) - g(x)}$*
+- **todo** $g(x+h) - g(x)) \rightarrow 0$ per $h \rightarrow 0$ poiché $g(x)$ è continua se derivabile
 ```
 ```{dropdown} Dimostrazione della regola della funzione inversa
 Si usa la regola {eq}`infinitesimal-calculus:derivatives:rules:composite` di derivazione della funzione composta applicata alla relazione 
@@ -65,6 +109,7 @@ dalla quale segue immediatamente la regola di derivazione della funzione inversa
 $$ \dfrac{d f^{-1}}{d y}\bigg|_{y = f(x)} = \dfrac{1}{ \dfrac{d y}{d x}\bigg|_{x}} \ .$$
 
 ```
+````
 
 (infinitesimal-calculus:derivatives:thm)=
 ## Teoremi
@@ -76,6 +121,10 @@ $$ \dfrac{d f^{-1}}{d y}\bigg|_{y = f(x)} = \dfrac{1}{ \dfrac{d y}{d x}\bigg|_{x
 
 Data la funzione $f: (a,b) \rightarrow \mathbb{R}$ derivabile nel punto di estremo locale $x_0 \in (a,b)$, allora $f'(x_0) = 0$.
 ```
+```{only} latex
+[Dimostrazione a fine capitolo](infinitesimal-calculus:derivatives:thm:fermat:notes).
+```
+````{only} html
 ```{dropdown} Dimostrazione
 Sia $x_0$ un punto di minimo locale della funzione $f(x)$ derivabile in $x_0$. La definizione di minimo locale permette di scrivere
 
@@ -96,6 +145,7 @@ $$\begin{cases}
 e da queste la dimostrazione della tesi del problema, $f'(x_0)$.
 
 ```
+````
 
 <!-- **todo** why was this block here? Was it a test? What are the drawbacks of {dropdown}? Maybe something with .pdf build?
 ```{toggle} Dim.
@@ -111,12 +161,17 @@ La dimostrazione del teorema di Fermat...
 
 Data la funzione $f: [a,b] \rightarrow \mathbb{R}$ continua e derivabile in ogni punto dell'intervallo $(a,b)$ con $f(a) = f(b)$, allora esiste un valore $c \in (a,b)$ in cui $f'(c) = 0$.
 ```
+````{only} latex
+[Dimostrazione a fine capitolo](infinitesimal-calculus:derivatives:thm:rolle:notes).
+````
+````{only} html
 ```{dropdown} Dimostrazione
 Per il [teorema di Weierstrass](infinitesimal-calculus:continuous-fun:thms:weierstrass), la funzione $f$ ha un massimo $M$ e un minimo $m$ assoluti nell'intervallo $[a,b]$. Si distinguono due casi:
 - massimo e minimo sono nei punti estremi dell'intervallo. Allora la funzione è costante, e la derivata è nulla in ogni punto $c \in (a,b)$
 - i punti di massimo e di minimo sono interni all'intervallo. In questo caso, per il [teorema di Fermat](infinitesimal-calculus:derivatives:thm:rolle) i punti $c$ di minimo o massimo verificano la condizione $f'(c) = 0$.
 
 ```
+````
 
 (infinitesimal-calculus:derivatives:thm:cauchy)=
 ### Teorema di Cauchy
@@ -128,6 +183,10 @@ Date le funzioni $f, g: [a,b] \rightarrow \mathbb{R}$ continue in $[a,b]$ e deri
 $$\left[ g(b) - g(a) \right] \, f'(c) = \left[ f(b) - f(a) \right] \, g'(c) \ .$$
 
 ```
+````{only} latex
+[Dimostrazione a fine capitolo](infinitesimal-calculus:derivatives:thm:cauchy:notes).
+````
+````{only} html
 ```{dropdown} Dimostrazione
 Si applica il [teorema di Rolle](infinitesimal-calculus:derivatives:thm:rolle) alla funzione
 
@@ -136,6 +195,7 @@ $$h(x) = \left[ g(b) - g(a) \right] \, f(x) - \left[ f(b) - f(a) \right] \, g(x)
 continua in $[a,b]$, derivabile in $(a,b)$ e con $h(a) = g(b) \, f(a) - f(b) \, g(a) = h(b)$.
 
 ```
+````
 
 (infinitesimal-calculus:derivatives:thm:lagrange)=
 ### Teorema di Lagrange
@@ -150,7 +210,6 @@ $$f(b) - f(a) = (b -  a) f'(c) \ .$$
 ```{dropdown} Dimostrazione
 Si applica il [teorema di Cauhcy](infinitesimal-calculus:derivatives:thm:lagrange) scegliendo la funzione $g(x) = x$.
 ```
-
 (infinitesimal-calculus:derivatives:thm:hopital)=
 ### Teorema di de l'Hopital
 ```{prf:theorem} Teorema di de l'Hopital 
@@ -174,12 +233,19 @@ $$ \lim_{x \rightarrow x_0} \frac{f(x)}{g(x)} = \ell \ . $$
 **todo** Controllare l'enunciato
 ```
 
+````{only} latex
+[Dimostrazione a fine capitolo](infinitesimal-calculus:derivatives:thm:hopital:notes).
+````
+
+````{only} html
 ```{dropdown} Dimostrazione
 **Forma indeterminata $\frac{0}{0}$.** Usando il [teorema di Cauchy](infinitesimal-calculus:derivatives:thm:cauchy) e il [teorema di Rolle](infinitesimal-calculus:derivatives:thm:rolle) **todo**
 
 **Forma indeterminata $\frac{\infty}{\infty}$.** Usando il [teorema di Cauchy](infinitesimal-calculus:derivatives:thm:cauchy) e il [teorema di Lagrange](infinitesimal-calculus:derivatives:thm:lagrange) **todo**
 
 ```
+````
+
 **Oss.** Il teorema di de l'Hopital può essere applicato anche in successione, più di una volta, fermandosi al primo rapporto di derivate dello stesso ordine che non produce una forma indeterminata.
 
 
@@ -195,6 +261,11 @@ f(x) & = \sin x \qquad & \qquad f'(x) & = \cos x      \\
 f(x) & = \cos x \qquad & \qquad f'(x) & =-\sin x         
 \end{aligned}$$ (eq:infinitesimal-calculus:derivatives:fund)
 
+````{only} latex
+Le [dimostrazioni](infinitesimal-calculus:derivatives:fund:notes) sono raccolte alla fine del capitolo.
+````
+
+````{only} html
 ```{dropdown} Dimostrazione di $\ (x^n)'$
 Usando la [formula binomiale](math-hs:precalculus:polynomials:binomial-thm) $(x + \varepsilon)^n = x^n + n x^{n-1} \varepsilon + f(\varepsilon^2, \varepsilon^3, \dots)$,
 
@@ -256,59 +327,76 @@ $$\begin{aligned}
   & = - \sin x \ .
 \end{aligned}$$
 ```
+````
 
 
 (infinitesimal-calculus:derivatives:higher)=
 ## Derivate di ordine superiore
 Nel calcolo delle derivate di ordine superiore non c'è nulla di speciale: una volta che si è in grado di calcolare la derivata di una funzione reale, la derivata di ordine $n$ viene calcolata applicando $n$ volte l'operatore derivata alla funzione.
 
-(infinitesimal-calculus:derivatives:applications)=
-## Applicazioni
-
 (infinitesimal-calculus:derivatives:taylor)=
-### Espansioni in serie di Taylor e MacLaurin
+## Serie di Taylor e MacLaurin
 Le espansioni in serie di Taylor e di MacLaurin sono serie polinomiali che forniscono un'**approssimazione locale** di una funzione, *valida nell'intorno* (**todo** valutare questa espressione) di un punto.
 
 La **serie di Taylor** della funzione $f(x)$ in un intervallo centrato in $x_0$ è la serie
 
 $$\begin{aligned}
-  T[f(x); x_0] & = \sum_{n=0}^{\infty} \dfrac{f^{(n)(x_0)}}{n!} (x-x_0)^n = \\
+  T[f(x); x_0] & = \sum_{n=0}^{\infty} \dfrac{f^{(n)}(x_0)}{n!} (x-x_0)^n = \\
        & = f(x_0) + f'(x_0) (x-x_0) + \dfrac{f''(x_0)^2}{2!} (x-x_0)^2 + \dots \ .
 \end{aligned}$$
 
-La serie di MacLaurin è la serie di Taylor centrata in $x_0 = 0$.
+La serie di MacLaurin è la serie di Taylor centrata in $x_0 = 0$. La serie di Taylor troncata al grado $N$ è il polinomio di grado $N$ formato dalla sommatoria dei primi $N+1$ termini della serie di Taylor,
 
-La serie di Taylor troncata al $n$-esimo termine fornisce un'approssimazione locale della funzione $f(x)$ di ordine $n$, nel senso definito dal seguente teorema.
-```{prf:theorem} Approssimazione locale
+$$T_N[f(x); x_0] = \sum_{n=0}^{N} \dfrac{f^{(n)}(x_0)}{n!} (x-x_0)^n \ .$$
+
+La serie di Taylor troncata al $N$-esimo termine fornisce un'approssimazione locale della funzione $f(x)$ di ordine $n$, nel senso definito dal seguente teorema.
+```{prf:theorem} Approssimazione locale - 1
 :label: thm:infinitesimal-calculus:derivatives:taylor
+**todo** *Ipotesi del teorema*. Valgono i seguenti risultati:
 
-$$\lim_{x \rightarrow x_0} \frac{f(x) - T[f(x); x_0]}{x^n} = f^{(n)}(x_0) \ , $$
+- $$\lim_{x \rightarrow x_0} \frac{f(x) - T_N[f(x); x_0]}{x^N} = 0 \ , $$
 
-$$f(x) = T[f(x); x_0] + o(x^n) \quad \text{ per } \quad x \rightarrow x_0$$
+  o usando la notazione di "o piccolo" per il [confronto di infinitesimi](infinitesimal-calculus:limits:infinite-simal),
 
-``` 
+  $$f(x) = T_N[f(x); x_0] + o\left((x-x_0)^N\right) \quad \text{ per } \quad x \rightarrow x_0 \ .$$
+
+- $$f(x) - T_N[f(x); x_0] \sim \frac{f^{(N+1)}}{(N+1)!} (x - x_0)^{N+1} \quad x \rightarrow x_0 \ $$
+
+```
+````{only} latex
+[Dimostrazione a fine capitolo](infinitesimal-calculus:derivatives:taylor:notes).
+````
+````{only} html
 ```{dropdown} Dimostrazione
 Usando il teorema di de l'Hopital, fino a quando il rapporto non è una forma indeterminata
 
 $$\begin{aligned}
-  \lim_{x \rightarrow x_0} \frac{f(x) - T[f(x); x_0]}{x^n}
-  & = \lim_{x \rightarrow x_0} \dfrac{f(x) - f(x_0) + f'(x_0) (x-x_0) + \frac{f''(x_0)}{2!} (x-x_0)^2 + \dots \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n}{x^n} = \text{(H)} = \\
-  & = \lim_{x \rightarrow x_0} \dfrac{f'(x) - f'(x_0) + \frac{f''(x_0)}{1!} (x-x_0) + \dots \frac{f^{(n)}(x_0)}{(n-1)!}(x-x_0)^{n-1}}{n \, x^{n-1}} = \text{(H)} = \\
-  & = \lim_{x \rightarrow x_0} \dfrac{f''(x) - f''(x_0) + \dots \frac{f^{(n)}(x_0)}{(n-2)!}(x-x_0)^{n-2}}{n \, (n-1) \, x^{n-1}} = \text{(H)} =\\
+  \lim_{x \rightarrow x_0} \frac{f(x) - T_N[f(x); x_0]}{(x-x_0)^N}
+  & = \lim_{x \rightarrow x_0} \dfrac{f(x) - f(x_0) + f'(x_0) (x-x_0) + \frac{f''(x_0)}{2!} (x-x_0)^2 + \dots \frac{f^{(N)}(x_0)}{N!}(x-x_0)^N}{(x-x_0)^N} = \text{(H)} = \\
+  & = \lim_{x \rightarrow x_0} \dfrac{f'(x) - f'(x_0) + \frac{f''(x_0)}{1!} (x-x_0) + \dots \frac{f^{(N)}(x_0)}{(N-1)!}(x-x_0)^{N-1}}{N \, (x-x_0)^{N-1}} = \text{(H)} = \\
+  & = \lim_{x \rightarrow x_0} \dfrac{f''(x) - f''(x_0) + \dots \frac{f^{(N)}(x_0)}{(N-2)!}(x-x_0)^{N-2}}{N \, (N-1) \, (x-x_0)^{n-1}} = \text{(H)} =\\
   & = \dots \\
-  & = \lim_{x \rightarrow x_0} \dfrac{f^{(n)}(x) - f^{(n)}(x_0)}{n!} =  0 \ ,
+  & = \lim_{x \rightarrow x_0} \dfrac{f^{(N)}(x) - f^{(N)}(x_0)}{N!} =  0 \ ,
 \end{aligned}$$
 
-si dimostra che il numeratore è un infinitesimo del denominatore. Usando la notazione dell'*"o piccolo"* per gli infinitesimi si può quindi scrivere l'approssimazione locale come:
+si dimostra che il numeratore è un infinitesimo dello stesso ordine del denominatore. Usando la notazione dell'*"o piccolo"* per gli infinitesimi si può quindi scrivere l'approssimazione locale come:
 
-$$f(x) - T[f(x), x_0] = o\left((x-x_0)^n\right) \ ,$$
+$$f(x) - T_N[f(x), x_0] = o\left((x-x_0)^N\right) \ ,$$
 
 o in maniera equivalente
-$$f(x) = T[f(x), x_0] + o\left((x-x_0)^n\right) \ .$$
+
+$$f(x) = T_N[f(x), x_0] + o\left((x-x_0)^N\right) \ .$$
+
+Ripetendo lo stesso procedimento, confrontando la differenza $f(x) - T_N[f(x);x_0]$ con il termine $(x-x_0)^{N+1}$ si ottiene 
+
+$$
+  \lim_{x \rightarrow x_0} \frac{f(x) - T_N[f(x); x_0]}{(x-x_0)^N} = \dots = \lim_{x \rightarrow x_0} \frac{f^{(N+1)}(x)}{(N+1)!} = \frac{f^{(N+1)}(x_0)}{(N+1)!} \ .
+$$
 
 ```
+````
 
-#### Esempi
+### Esempi
 La serie di MacLaurin per le funzioni interessate nei [limiti notevoli](infinitesimal-calculus:limits:fund) forniscono approssimazioni locali di ordine maggiore per $x \rightarrow 0$,
 
 $$\begin{aligned}
@@ -340,6 +428,11 @@ e^{ix} & = 1 + ix + \frac{(ix)^2}{2!} + \frac{(ix)^3}{3!} + \frac{(ix)^4}{4!} + 
 & = \cos x + i \sin x \ .
 \end{aligned}$$
 
+
+(infinitesimal-calculus:derivatives:applications)=
+## Applicazioni
+
+### Approssimazioni locali
 
 ### Studio di funzione
 

@@ -71,7 +71,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="23.7. Problemi" href="analysis-problems.html" />
+    <link rel="next" title="23.8. Problemi" href="analysis-problems.html" />
     <link rel="prev" title="22. Introduzione al calcolo" href="../calculus.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
@@ -237,13 +237,13 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../calculus.html">22. Introduzione al calcolo</a></li>
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">23. Introduzione all’analisi</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="analysis-problems.html">23.7. Problemi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="analysis-notes.html">23.8. Note e dimostrazioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analysis-problems.html">23.8. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analysis-notes.html">23.9. Note e dimostrazioni</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="derivatives.html">24. Derivate</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="derivatives-problems.html">24.7. Derivate - Problemi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="derivatives-notes.html">24.8. Dimostrazioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="derivatives-problems.html">24.8. Derivate - Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="derivatives-notes.html">24.9. Note e dimostrazioni</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="integrals.html">25. Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -512,11 +512,12 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-de-l-hopital">23.4.3. Teorema di de l’Hopital</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#confronto-di-infiniti-e-infinitesimi">23.5. Confronto di infiniti e infinitesimi</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calcolo-dei-limiti-con-sostituzione-degli-infinitesimi-o-degli-infiniti">23.5.1. Calcolo dei limiti con sostituzione degli infinitesimi o degli infiniti</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limiti-fondamentali">23.5. Limiti fondamentali</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#confronto-di-infiniti-e-infinitesimi">23.6. Confronto di infiniti e infinitesimi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calcolo-dei-limiti-con-sostituzione-degli-infinitesimi-o-degli-infiniti">23.6.1. Calcolo dei limiti con sostituzione degli infinitesimi o degli infiniti</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limiti-fondamentali">23.6. Limiti fondamentali</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calcolo-dei-limiti">23.7. Calcolo dei limiti</a></li>
 </ul>
             </nav>
         </div>
@@ -580,6 +581,7 @@ document.write(`
 <li><p>Tipo 2 - essenziale: limite destro o sinistro non esistono o sono infiniti</p></li>
 <li><p>Tipo 3 - eliminabile: limite destro e sinistro esistono finiti, sono uguali, ma non sono uguali all valore della funzione nel punto</p></li>
 </ul>
+<p><strong>todo</strong> <em>aggiungere immagini</em></p>
 </div>
 <div class="section" id="teoremi">
 <span id="infinitesimal-calculus-continuous-fun-thms"></span><h3><span class="section-number">23.3.3. </span>Teoremi<a class="headerlink" href="#teoremi" title="Permalink to this heading">#</a></h3>
@@ -675,8 +677,8 @@ Dimostrazione<div class="sd-summary-down docutils">
  &amp; \lim_{x \rightarrow x_0} \big( f(x) \mp g(x) \big) = F \mp G \\
  &amp; \lim_{x \rightarrow x_0} \big( f(x) \cdot g(x) \big) = F \cdot G \\
  &amp; \lim_{x \rightarrow x_0} \frac{ f(x) }{ g(x) } = \frac{F}{G} \quad , \quad \text{se $G \ne 0$}  \\
- &amp; \dots \text{**todo** *regole con esponenti*} \\
 \end{aligned}\end{split}\]</div>
+<p>(<strong>todo</strong> <em>regole con esponenti</em>)</p>
 <p>Alcune delle operazioni elencate qui sopra per limiti finiti possono essere <a class="reference internal" href="#infinitesimal-calculus-limits-thms-infinite-simal"><span class="std std-ref">estese al caso di limiti infiniti</span></a>; in altri casi, nascono delle forme <a class="reference internal" href="#infinitesimal-calculus-limits-thms-infinite-simal-undetermined"><span class="std std-ref">indeterminate</span></a>.</p>
 <div class="section" id="limiti-infiniti-e-infinitesimi">
 <span id="infinitesimal-calculus-limits-thms-infinite-simal"></span><h4><span class="section-number">23.4.1.1. </span>Limiti infiniti e infinitesimi<a class="headerlink" href="#limiti-infiniti-e-infinitesimi" title="Permalink to this heading">#</a></h4>
@@ -689,8 +691,9 @@ Dimostrazione<div class="sd-summary-down docutils">
   f(x) \rightarrow \mp \infty \ , \ G \text{ finito}, g(x) \ne 0  &amp; : \ \lim_{x \rightarrow x_0} \frac{g(x)}{f(x)} = 0^{ \mp \text{sign}\{G\}} \\
   f(x) \rightarrow 0^{\mp}    \ , \ G \text{ finito}, g(x) \ne 0  &amp; : \ \lim_{x \rightarrow x_0} \frac{g(x)}{f(x)} = \mp \text{sign}\{G\} \cdot \infty \\
   f(x) \rightarrow \mp \infty \ , \ g(x) \ne 0 &amp; : \ \lim_{x \rightarrow x_0} g(x) \cdot f(x) = \mp \text{sign}\{G\} \cdot \infty \\
-  \dots \text{**todo** *regole con esponenti*} &amp; \\
+  \dots &amp; \\
 \end{array}\end{split}\]</div>
+<p>(<strong>todo</strong> <em>regole con esponenti</em>)</p>
 <p>riassumibili con un po” di libertà nella notazione come</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
@@ -700,8 +703,8 @@ Dimostrazione<div class="sd-summary-down docutils">
   &amp; - \infty - \infty = -\infty \\
   &amp; + \infty \cdot \mp \infty = \mp \infty \\
   &amp; \frac{c}{\mp \infty} = 0^{\mp \text{sign}\{c\}} \ , \quad \text{se } c \ne 0 \\
-  &amp; \dots \text{**todo** *regole con esponenti*} \\
 \end{aligned}\end{split}\]</div>
+<p>(<strong>todo</strong> <em>regole con esponenti</em>)</p>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
 <p>Si prega di notare come sono stati esclusi alcuni casi riguardanti valori o funzioni identicamente uguali a <span class="math notranslate nohighlight">\(0\)</span>. Nel caso in cui <span class="math notranslate nohighlight">\(g(x) = 0\)</span>, ad esempio</p>
@@ -763,58 +766,19 @@ Dimostrazione<div class="sd-summary-down docutils">
 <p>Il teorema di de l’Hopital (o di Bernoulli, <strong>todo</strong> <em>dire due parole sulla storia? Bernoulli precettore di de l’Hopital, ricava il risultato…</em>) è un teorema utile per il calcolo dei limiti delle forme indeterminate <span class="math notranslate nohighlight">\(\frac{0}{0}\)</span> e <span class="math notranslate nohighlight">\(\frac{\infty}{\infty}\)</span>. Poiché il teorema coinvolge il concetto di derivata, si rimanda alla sezione del <a class="reference internal" href="derivatives.html#infinitesimal-calculus-derivatives-thm-hopital"><span class="std std-ref">teorema di de l’Hopital</span></a> nel capitolo sulle <a class="reference internal" href="derivatives.html#infinitesimal-calculus-derivatives"><span class="std std-ref">derivate</span></a>.</p>
 </div>
 </div>
-<div class="section" id="confronto-di-infiniti-e-infinitesimi">
-<span id="infinitesimal-calculus-limits-infinite-simal"></span><h2><span class="section-number">23.5. </span>Confronto di infiniti e infinitesimi<a class="headerlink" href="#confronto-di-infiniti-e-infinitesimi" title="Permalink to this heading">#</a></h2>
-<p>Il confronto di funzioni che tendono a zero <span class="math notranslate nohighlight">\(f(x), g(x) \rightarrow 0\)</span>, o di funzioni che tendono all’infinito <span class="math notranslate nohighlight">\(f(x), g(x) \rightarrow \infty\)</span> permette di definire degli <em>ordini di infinitesimi o di infiniti</em> <strong>todo</strong> <em>definire meglio</em>, a seconda del valore del limite <span class="math notranslate nohighlight">\(\frac{f(x)}{g(x)} = \ell\)</span>,</p>
-<ul class="simple">
-<li><p>se <span class="math notranslate nohighlight">\(\ell = 0\)</span>, si può dire che <span class="math notranslate nohighlight">\(f(x)\)</span> è un infinitesimo di ordine superiore, o un infinito di ordine inferiore, rispetto a <span class="math notranslate nohighlight">\(g(x)\)</span> e si può indicare con la notazione di <em>o piccolo</em> <span class="math notranslate nohighlight">\(f(x) = o \left(g(x) \right)\)</span></p></li>
-<li><p>se <span class="math notranslate nohighlight">\(\ell\)</span> finito diverso da zero, si può dire che <span class="math notranslate nohighlight">\(f(x)\)</span> è un infinitesimo, o un infinito,  dello stesso ordine di <span class="math notranslate nohighlight">\(g(x)\)</span> e si può indicare con la notazione di <em>o grande</em> <span class="math notranslate nohighlight">\(f(x) = O \left(g(x) \right)\)</span></p></li>
-<li><p>se <span class="math notranslate nohighlight">\(\ell\)</span> è infinito, si può dire che <span class="math notranslate nohighlight">\(f(x)\)</span> è un infinitesimo di ordine inferiore, o un infinito di ordine superiore, rispetto a <span class="math notranslate nohighlight">\(g(x)\)</span>; viceversa <span class="math notranslate nohighlight">\(g(x)\)</span> è un infinitesimo di ordine superiore, o un infinito di ordine inferiore, rispetto a <span class="math notranslate nohighlight">\(f(x)\)</span> e si può indicare con la notazione di <em>o piccolo</em> <span class="math notranslate nohighlight">\(g(x) = o \left(f(x) \right)\)</span></p></li>
-<li><p>se <span class="math notranslate nohighlight">\(\ell = 1\)</span>, si dice che <span class="math notranslate nohighlight">\(f(x)\)</span> e <span class="math notranslate nohighlight">\(g(x)\)</span> sono <strong>asintoticamente equivalenti</strong>, o in breve <strong>asintotici</strong>, <span class="math notranslate nohighlight">\(f(x) \sim g(x)\)</span>in un intorno del punto dove viene calcolato il limite.</p></li>
-</ul>
-<div class="section" id="calcolo-dei-limiti-con-sostituzione-degli-infinitesimi-o-degli-infiniti">
-<h3><span class="section-number">23.5.1. </span>Calcolo dei limiti con sostituzione degli infinitesimi o degli infiniti<a class="headerlink" href="#calcolo-dei-limiti-con-sostituzione-degli-infinitesimi-o-degli-infiniti" title="Permalink to this heading">#</a></h3>
-<p>Se <span class="math notranslate nohighlight">\(h(x) \sim a f(x)\)</span>, <span class="math notranslate nohighlight">\(k(x) \sim b g(x)\)</span> per <span class="math notranslate nohighlight">\(x \rightarrow x_0\)</span>, e il rapporto <span class="math notranslate nohighlight">\(\frac{a}{b}\)</span> non è indeterminato, allora</p>
-<div class="math notranslate nohighlight">
-\[\lim_{x \rightarrow x_0} \frac{h(x)}{k(x)} = \frac{a}{b} \lim_{x \rightarrow x_0} \frac{f(x)}{g(x)}\]</div>
-<p><strong>todo</strong> esempi</p>
-<ul>
-<li><p>confronto di polinomi</p>
-<ul class="simple">
-<li><p>per <span class="math notranslate nohighlight">\(x \rightarrow 0\)</span>, <span class="math notranslate nohighlight">\(\frac{a_n x^n + \dots + a_0}{b_m x^m + \dots + b_0} = \frac{a_0}{b_0}\)</span></p></li>
-<li><p>per <span class="math notranslate nohighlight">\(x \rightarrow \infty\)</span>, <span class="math notranslate nohighlight">\(\frac{a_n x^n + \dots + a_0}{b_m x^m + \dots + b_0} \sim \frac{a_n}{b_m} x^{n-m}\)</span></p></li>
-</ul>
-</li>
-<li><p>per <span class="math notranslate nohighlight">\(x \rightarrow 0\)</span>, <span class="math notranslate nohighlight">\(x \sim \sin x \sim \tan x\)</span>; esempi…</p></li>
-<li><p>molto comodo, ma bisogna prestare attenzione che non avvengano semplificazioni dei termini dominanti in occasione di addizioni e sottrazioni, come ad esempio nel calcolo di</p>
-<div class="math notranslate nohighlight">
-\[\lim_{x \rightarrow 0} \frac{x - \sin x}{x^2} \quad \text{oppure} \quad \lim_{x \rightarrow 0} \frac{x - \sin x}{x^3} \]</div>
-<p>Come mostrato nel capitolo sulle derivate, nella sezione sulle espansioni in <a class="reference internal" href="derivatives.html#infinitesimal-calculus-derivatives-taylor"><span class="std std-ref">serie polinomali di Taylor e MacLaurin</span></a>, la serie polinomiale <a class="reference internal" href="derivatives.html#equation-eq-infinitesimal-calculus-derivatives-taylor-fund-limits">(24.9)</a> della funzione seno produce un’approssimazione <span class="math notranslate nohighlight">\(\sin x = x - \frac{x^3}{3!} + O(x^5)\)</span>; quindi il numeratore delle due frazioni ha un termine dominante di terzo grado,</p>
-<div class="math notranslate nohighlight">
-\[x - \sin x = x - \left( x - \frac{x}{3!} + O(x^5) \right) = \frac{x}{3!} + O(x^5) \sim \frac{1}{6} x^3 \ ,\]</div>
-<p>che viene utilizzato nel calcolo dei limiti desiderati</p>
-<div class="math notranslate nohighlight">
-\[\lim_{x \rightarrow 0} \frac{x - \sin x}{x^2} = \lim_{x \rightarrow 0} \frac{\frac{1}{6} x^3 + O(x^5)}{x^2} = 0 \]</div>
-<div class="math notranslate nohighlight">
-\[\lim_{x \rightarrow 0} \frac{x - \sin x}{x^3} = \lim_{x \rightarrow 0} \frac{\frac{1}{6} x^3 + O(x^5)}{x^3} = \frac{1}{6} \]</div>
-</li>
-</ul>
-</div>
-</div>
 <div class="section" id="limiti-fondamentali">
-<span id="infinitesimal-calculus-limits-fund"></span><h2><span class="section-number">23.6. </span>Limiti fondamentali<a class="headerlink" href="#limiti-fondamentali" title="Permalink to this heading">#</a></h2>
+<span id="infinitesimal-calculus-limits-fund"></span><h2><span class="section-number">23.5. </span>Limiti fondamentali<a class="headerlink" href="#limiti-fondamentali" title="Permalink to this heading">#</a></h2>
 <p>Questa sezione contiene alcuni limiti fondamentali. Questi limiti possono essere considerati fondamentali come sinonimo di <em>«minimo da ricordare»</em> per poter calcolare limiti più generali utilizzando le <a class="reference internal" href="#infinitesimal-calculus-limits-thms-operations"><span class="std std-ref">operazioni</span></a> e i <a class="reference internal" href="#infinitesimal-calculus-limits-thms"><span class="std std-ref">teoremi</span></a> sui limiti, e calcolare le <a class="reference internal" href="derivatives.html#infinitesimal-calculus-derivatives-fund"><span class="std std-ref">derivate fondamentali</span></a>. Un elenco minimo di limiti fondamentali è:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}\begin{align}
- &amp; \lim_{x \rightarrow 0} \frac{\sin x}{x} = 1                       \label{eq:1}\\ 
- &amp; \lim_{x \rightarrow 0} \frac{1 - \cos x}{x^2} = \frac{1}{2}       \label{eq:2}\\ 
- &amp; \lim_{x \rightarrow +\infty} \left( 1 + \frac{1}{x} \right)^x = e \label{eq:4}\\ 
- &amp; \lim_{x \rightarrow 0} \frac{e^x - 1}{x}= 1                                   \\ 
- &amp; \lim_{x \rightarrow 0} \frac{e^x}{1+x}= 1                                     \\ 
- &amp; \lim_{x \rightarrow 0} \frac{\ln (1+x)}{x} = 1                                \\ 
- &amp; \lim_{x \rightarrow 0} \frac{(1+x)^a - 1}{x} = a                              \\ 
-\end{align}\end{split}\]</div>
-<p>equation \eqref{eq:1}</p>
+\[\begin{split}\begin{aligned}
+ &amp; \lim_{x \rightarrow 0} \frac{\sin x}{x} = 1                       \\ 
+ &amp; \lim_{x \rightarrow 0} \frac{1 - \cos x}{x^2} = \frac{1}{2}       \\ 
+ &amp; \lim_{x \rightarrow +\infty} \left( 1 + \frac{1}{x} \right)^x = e \\ 
+ &amp; \lim_{x \rightarrow 0} \frac{e^x - 1}{x}= 1                       \\ 
+ &amp; \lim_{x \rightarrow 0} \frac{e^x}{1+x}= 1                         \\ 
+ &amp; \lim_{x \rightarrow 0} \frac{\ln (1+x)}{x} = 1                    \\ 
+ &amp; \lim_{x \rightarrow 0} \frac{(1+x)^a - 1}{x} = a                  \\ 
+\end{aligned}\end{split}\]</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Dimostrazione di <span class="math notranslate nohighlight">\(\ \lim_{x \rightarrow 0} \frac{\sin x}{x} = 1 \)</span><div class="sd-summary-down docutils">
@@ -892,7 +856,55 @@ Dimostrazione di <span class="math notranslate nohighlight">\(\ \lim_{x \rightar
 \[ \lim_{x \rightarrow 0} \frac{(1+x)^a - 1}{x} = \lim_{x \rightarrow 0} \frac{e^{a \ln(1+x)} - 1}{a \ln (1+x)} \frac{a \ln(1+x)}{x} = a \, \underbrace{\lim_{y \rightarrow 0} \frac{e^y - 1}{y}}_{=1} \ \underbrace{\lim_{x \rightarrow 0} \frac{\ln(1+x)}{x}}_{=1} = a \ , \]</div>
 <p class="sd-card-text">avendo definito la variabile <span class="math notranslate nohighlight">\(y = a \ln (1+x)\)</span>, che tende a zero quando <span class="math notranslate nohighlight">\(x \rightarrow 0\)</span>. <strong>todo</strong> <em>prestare attenzione alle operazioni fatte, e fare riferimento alle operazioni con i limiti, e successivamente all’uso di infinitesimi e asintotici nel calcolo dei limiti.</em></p>
 </div>
-</details><!--
+</details></div>
+<div class="section" id="confronto-di-infiniti-e-infinitesimi">
+<span id="infinitesimal-calculus-limits-infinite-simal"></span><h2><span class="section-number">23.6. </span>Confronto di infiniti e infinitesimi<a class="headerlink" href="#confronto-di-infiniti-e-infinitesimi" title="Permalink to this heading">#</a></h2>
+<p>Il confronto di funzioni che tendono a zero <span class="math notranslate nohighlight">\(f(x), g(x) \rightarrow 0\)</span>, o di funzioni che tendono all’infinito <span class="math notranslate nohighlight">\(f(x), g(x) \rightarrow \infty\)</span> permette di definire degli <em>ordini di infinitesimi o di infiniti</em> <strong>todo</strong> <em>definire meglio</em>, a seconda del valore del limite <span class="math notranslate nohighlight">\(\frac{f(x)}{g(x)} = \ell\)</span>,</p>
+<ul class="simple">
+<li><p>se <span class="math notranslate nohighlight">\(\ell = 0\)</span>, si può dire che <span class="math notranslate nohighlight">\(f(x)\)</span> è un infinitesimo di ordine superiore, o un infinito di ordine inferiore, rispetto a <span class="math notranslate nohighlight">\(g(x)\)</span> e si può indicare con la notazione di <em>o piccolo</em> <span class="math notranslate nohighlight">\(f(x) = o \left(g(x) \right)\)</span></p></li>
+<li><p>se <span class="math notranslate nohighlight">\(\ell\)</span> finito diverso da zero, si può dire che <span class="math notranslate nohighlight">\(f(x)\)</span> è un infinitesimo, o un infinito,  dello stesso ordine di <span class="math notranslate nohighlight">\(g(x)\)</span> e si può indicare con la notazione di <em>o grande</em> <span class="math notranslate nohighlight">\(f(x) = O \left(g(x) \right)\)</span></p></li>
+<li><p>se <span class="math notranslate nohighlight">\(\ell\)</span> è infinito, si può dire che <span class="math notranslate nohighlight">\(f(x)\)</span> è un infinitesimo di ordine inferiore, o un infinito di ordine superiore, rispetto a <span class="math notranslate nohighlight">\(g(x)\)</span>; viceversa <span class="math notranslate nohighlight">\(g(x)\)</span> è un infinitesimo di ordine superiore, o un infinito di ordine inferiore, rispetto a <span class="math notranslate nohighlight">\(f(x)\)</span> e si può indicare con la notazione di <em>o piccolo</em> <span class="math notranslate nohighlight">\(g(x) = o \left(f(x) \right)\)</span></p></li>
+<li><p>se <span class="math notranslate nohighlight">\(\ell = 1\)</span>, si dice che <span class="math notranslate nohighlight">\(f(x)\)</span> e <span class="math notranslate nohighlight">\(g(x)\)</span> sono <strong>asintoticamente equivalenti</strong>, o in breve <strong>asintotici</strong>, <span class="math notranslate nohighlight">\(f(x) \sim g(x)\)</span>in un intorno del punto dove viene calcolato il limite.</p></li>
+</ul>
+<div class="section" id="calcolo-dei-limiti-con-sostituzione-degli-infinitesimi-o-degli-infiniti">
+<h3><span class="section-number">23.6.1. </span>Calcolo dei limiti con sostituzione degli infinitesimi o degli infiniti<a class="headerlink" href="#calcolo-dei-limiti-con-sostituzione-degli-infinitesimi-o-degli-infiniti" title="Permalink to this heading">#</a></h3>
+<p>Se <span class="math notranslate nohighlight">\(h(x) \sim a f(x)\)</span>, <span class="math notranslate nohighlight">\(k(x) \sim b g(x)\)</span> per <span class="math notranslate nohighlight">\(x \rightarrow x_0\)</span>, e il rapporto <span class="math notranslate nohighlight">\(\frac{a}{b}\)</span> non è indeterminato, allora</p>
+<div class="math notranslate nohighlight">
+\[\lim_{x \rightarrow x_0} \frac{h(x)}{k(x)} = \frac{a}{b} \lim_{x \rightarrow x_0} \frac{f(x)}{g(x)}\]</div>
+<ul>
+<li><p>confronto di polinomi</p>
+<ul class="simple">
+<li><p>per <span class="math notranslate nohighlight">\(x \rightarrow 0\)</span>, <span class="math notranslate nohighlight">\(\frac{a_n x^n + \dots + a_0}{b_m x^m + \dots + b_0} = \frac{a_0}{b_0}\)</span></p></li>
+<li><p>per <span class="math notranslate nohighlight">\(x \rightarrow \infty\)</span>, <span class="math notranslate nohighlight">\(\frac{a_n x^n + \dots + a_0}{b_m x^m + \dots + b_0} \sim \frac{a_n}{b_m} x^{n-m}\)</span></p></li>
+</ul>
+</li>
+<li><p>per <span class="math notranslate nohighlight">\(x \rightarrow 0\)</span>, <span class="math notranslate nohighlight">\(x \sim \sin x \sim \tan x\)</span>. Ad esempio, il limite <span class="math notranslate nohighlight">\(\lim_{x\rightarrow 0} \frac{\sin \frac{x}{2}}{3 x}\)</span> può essere calcolato moltiplicando e dividendo esplicitamente per il termine <span class="math notranslate nohighlight">\(\frac{x}{2}\)</span> per far comparire un limite fondamentale,</p>
+<div class="math notranslate nohighlight">
+\[\lim_{x \rightarrow 0} \frac{\sin \frac{x}{2}}{3x} = \lim_{x \rightarrow 0} \underbrace{\frac{\sin \frac{x}{2}}{\frac{x}{2}}}_{\rightarrow 1} \frac{\frac{x}{2}}{3x} = \frac{1}{6} \ ,\]</div>
+<p>oppure più velocemente, quando si ha acquisito un po” di dimestichezza in queste operazioni, sostituendo l’asintotico <span class="math notranslate nohighlight">\(\sin \frac{x}{2} \sim \frac{x}{2}\)</span> nel limite,</p>
+<div class="math notranslate nohighlight">
+\[\lim_{x \rightarrow 0} \frac{\sin \frac{x}{2}}{3x} = \lim_{x \rightarrow 0} \frac{x}{2} \frac{1}{3x} = \frac{1}{6} \ ,\]</div>
+</li>
+<li><p>molto comodo, ma bisogna prestare attenzione che non avvengano <strong>semplificazioni dei termini dominanti in occasione di addizioni e sottrazioni</strong>), come ad esempio nel calcolo di</p>
+<div class="math notranslate nohighlight">
+\[\lim_{x \rightarrow 0} \frac{x - \sin x}{x^2} \quad \text{oppure} \quad \lim_{x \rightarrow 0} \frac{x - \sin x}{x^3} \]</div>
+<p>Come mostrato nel capitolo sulle derivate, nella sezione sulle espansioni in <a class="reference internal" href="derivatives.html#infinitesimal-calculus-derivatives-taylor"><span class="std std-ref">serie polinomali di Taylor e MacLaurin</span></a>, la serie polinomiale <a class="reference internal" href="derivatives.html#equation-eq-infinitesimal-calculus-derivatives-taylor-fund-limits">(24.9)</a> della funzione seno produce un’approssimazione <span class="math notranslate nohighlight">\(\sin x = x - \frac{x^3}{3!} + O(x^5)\)</span>; quindi il numeratore delle due frazioni ha un termine dominante di terzo grado,</p>
+<div class="math notranslate nohighlight">
+\[x - \sin x = x - \left( x - \frac{x}{3!} + O(x^5) \right) = \frac{x}{3!} + O(x^5) \sim \frac{1}{6} x^3 \ ,\]</div>
+<p>che viene utilizzato nel calcolo dei limiti desiderati</p>
+<div class="math notranslate nohighlight">
+\[\lim_{x \rightarrow 0} \frac{x - \sin x}{x^2} = \lim_{x \rightarrow 0} \frac{\frac{1}{6} x^3 + O(x^5)}{x^2} = 0 \]</div>
+<div class="math notranslate nohighlight">
+\[\lim_{x \rightarrow 0} \frac{x - \sin x}{x^3} = \lim_{x \rightarrow 0} \frac{\frac{1}{6} x^3 + O(x^5)}{x^3} = \frac{1}{6} \]</div>
+</li>
+</ul>
+<p><strong>todo</strong> esempi</p>
+</div>
+</div>
+<div class="section" id="calcolo-dei-limiti">
+<h2><span class="section-number">23.7. </span>Calcolo dei limiti<a class="headerlink" href="#calcolo-dei-limiti" title="Permalink to this heading">#</a></h2>
+<p><strong>todo</strong> Riassumere alcune tecniche per il calcolo dei limiti…<em>niente di speciale; mettere insieme i metodi presentati nel capitolo e mostrare qualche esempio del calcolo di limiti</em></p>
+<!--
 **todo** *Spostare nella sezione di precalcolo sulle successioni*
 Limiti di successioni. **Formula di Sterling**
 
@@ -951,7 +963,7 @@ $$\ln n! \sim n \ln n - n  \qquad \text{per $n \in \mathbb{N} \rightarrow +\inft
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">23.7. </span>Problemi</p>
+        <p class="prev-next-title"><span class="section-number">23.8. </span>Problemi</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -998,11 +1010,12 @@ $$\ln n! \sim n \ln n - n  \qquad \text{per $n \in \mathbb{N} \rightarrow +\inft
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-de-l-hopital">23.4.3. Teorema di de l’Hopital</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#confronto-di-infiniti-e-infinitesimi">23.5. Confronto di infiniti e infinitesimi</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calcolo-dei-limiti-con-sostituzione-degli-infinitesimi-o-degli-infiniti">23.5.1. Calcolo dei limiti con sostituzione degli infinitesimi o degli infiniti</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limiti-fondamentali">23.5. Limiti fondamentali</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#confronto-di-infiniti-e-infinitesimi">23.6. Confronto di infiniti e infinitesimi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calcolo-dei-limiti-con-sostituzione-degli-infinitesimi-o-degli-infiniti">23.6.1. Calcolo dei limiti con sostituzione degli infinitesimi o degli infiniti</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limiti-fondamentali">23.6. Limiti fondamentali</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calcolo-dei-limiti">23.7. Calcolo dei limiti</a></li>
 </ul>
   </nav></div>
 
