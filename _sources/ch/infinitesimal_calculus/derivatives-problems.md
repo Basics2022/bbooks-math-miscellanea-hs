@@ -62,7 +62,10 @@ Si chiede di determinare il dominio e la quantità richiesta in funzione della q
 **todo**
 ```
 
-## Approssimazioni locali di funzioni
-- serie di Taylor? Esercizi su formule di errore di metodi numerici?
-
 ## Metodo di Newton
+Si chiede di risolvere le sequenti equazioni nonlineari con il [metodo di Newton](infinitesimal-calculus:derivatives:applications:newton) (è quindi necessario riformulare il problema come la ricerca degli zeri di una funzione), dopo aver impostato la soluzione con un metodo grafico. Il metodo grafico è necessario a farsi un'idea sul numero di soluzioni da cercare, e sui valori con cui iniziare il metodo di Newton. Si chiede di concludere il procedimento a mano dopo 3 iterazioni, o quando si ottiene una soluzione con errore minore della tolleranza, qui scelta come $\tau = 0.01$. Si chiede infine di implementare il metodo con un linguaggio di programmazione a piacimento, per cercare una soluzione con tolleranza $\tau = 10^{-5}$
+```{exercise} Soluzione iterativa di equazioni nonlineari - Newton
+1. $\ln x = - 2$
+2. $e^{-x^2} \cos x = \frac{1}{2}$
+3. $\dots$ 
+```

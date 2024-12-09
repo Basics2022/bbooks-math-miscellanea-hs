@@ -237,8 +237,8 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../calculus.html">22. Introduzione al calcolo</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="analysis.html">23. Introduzione all’analisi</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="analysis-problems.html">23.8. Problemi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="analysis-notes.html">23.9. Note e dimostrazioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analysis-problems.html">23.9. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analysis-notes.html">23.10. Note e dimostrazioni</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="derivatives.html">24. Derivate</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
@@ -489,8 +489,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#studio-di-funzione-massimi-minimi-e-flessi-concavita">24.8.3. Studio di funzione: massimi, minimi e flessi; concavità</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#serie-di-taylor">24.8.4. Serie di Taylor</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-di-ottimizzazione">24.8.5. Problemi di ottimizzazione</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#approssimazioni-locali-di-funzioni">24.8.6. Approssimazioni locali di funzioni</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-di-newton">24.8.7. Metodo di Newton</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-di-newton">24.8.6. Metodo di Newton</a></li>
 </ul>
             </nav>
         </div>
@@ -608,14 +607,20 @@ document.write(`
 </div>
 </div>
 </div>
-<div class="section" id="approssimazioni-locali-di-funzioni">
-<h2><span class="section-number">24.8.6. </span>Approssimazioni locali di funzioni<a class="headerlink" href="#approssimazioni-locali-di-funzioni" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>serie di Taylor? Esercizi su formule di errore di metodi numerici?</p></li>
-</ul>
-</div>
 <div class="section" id="metodo-di-newton">
-<h2><span class="section-number">24.8.7. </span>Metodo di Newton<a class="headerlink" href="#metodo-di-newton" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">24.8.6. </span>Metodo di Newton<a class="headerlink" href="#metodo-di-newton" title="Permalink to this heading">#</a></h2>
+<p>Si chiede di risolvere le sequenti equazioni nonlineari con il <a class="reference internal" href="derivatives.html#infinitesimal-calculus-derivatives-applications-newton"><span class="std std-ref">metodo di Newton</span></a> (è quindi necessario riformulare il problema come la ricerca degli zeri di una funzione), dopo aver impostato la soluzione con un metodo grafico. Il metodo grafico è necessario a farsi un’idea sul numero di soluzioni da cercare, e sui valori con cui iniziare il metodo di Newton. Si chiede di concludere il procedimento a mano dopo 3 iterazioni, o quando si ottiene una soluzione con errore minore della tolleranza, qui scelta come <span class="math notranslate nohighlight">\(\tau = 0.01\)</span>. Si chiede infine di implementare il metodo con un linguaggio di programmazione a piacimento, per cercare una soluzione con tolleranza <span class="math notranslate nohighlight">\(\tau = 10^{-5}\)</span></p>
+<div class="exercise admonition" id="ch/infinitesimal_calculus/derivatives-problems-exercise-10">
+
+<p class="admonition-title"><span class="caption-number">Exercise 24.11 </span> (Soluzione iterativa di equazioni nonlineari - Newton)</p>
+<div class="section" id="exercise-content">
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(\ln x = - 2\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(e^{-x^2} \cos x = \frac{1}{2}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\dots\)</span></p></li>
+</ol>
+</div>
+</div>
 </div>
 </div>
 
@@ -687,8 +692,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#studio-di-funzione-massimi-minimi-e-flessi-concavita">24.8.3. Studio di funzione: massimi, minimi e flessi; concavità</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#serie-di-taylor">24.8.4. Serie di Taylor</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-di-ottimizzazione">24.8.5. Problemi di ottimizzazione</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#approssimazioni-locali-di-funzioni">24.8.6. Approssimazioni locali di funzioni</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-di-newton">24.8.7. Metodo di Newton</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-di-newton">24.8.6. Metodo di Newton</a></li>
 </ul>
   </nav></div>
 

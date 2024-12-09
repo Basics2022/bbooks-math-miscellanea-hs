@@ -366,10 +366,12 @@ $$\lim_{x \rightarrow x_0} \frac{h(x)}{k(x)} = \frac{a}{b} \lim_{x \rightarrow x
 
 **todo** esempi
 
+(infinitesimal-calculus:limits:eval)=
 ## Calcolo dei limiti
 **todo** Riassumere alcune tecniche per il calcolo dei limiti...*niente di speciale; mettere insieme i metodi presentati nel capitolo e mostrare qualche esempio del calcolo di limiti*
 
-
+(infinitesimal-calculus:continuous-fun:bisec)=
+## Metodo di bisezione
 
 
 <!--
