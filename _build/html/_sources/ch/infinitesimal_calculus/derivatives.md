@@ -390,7 +390,7 @@ $$f(x) = T_N[f(x), x_0] + o\left((x-x_0)^N\right) \ .$$
 Ripetendo lo stesso procedimento, confrontando la differenza $f(x) - T_N[f(x);x_0]$ con il termine $(x-x_0)^{N+1}$ si ottiene 
 
 $$
-  \lim_{x \rightarrow x_0} \frac{f(x) - T_N[f(x); x_0]}{(x-x_0)^N} = \dots = \lim_{x \rightarrow x_0} \frac{f^{(N+1)}(x)}{(N+1)!} = \frac{f^{(N+1)(x_0)}}{(N+1)!} \ .
+  \lim_{x \rightarrow x_0} \frac{f(x) - T_N[f(x); x_0]}{(x-x_0)^N} = \dots = \lim_{x \rightarrow x_0} \frac{f^{(N+1)}(x)}{(N+1)!} = \frac{f^{(N+1)}(x_0)}{(N+1)!} \ .
 $$
 
 ```
@@ -437,4 +437,7 @@ e^{ix} & = 1 + ix + \frac{(ix)^2}{2!} + \frac{(ix)^3}{3!} + \frac{(ix)^4}{4!} + 
 ### Studio di funzione
 
 ### Ottimizzazione
+
+(infinitesimal-calculus:derivatives:applications:newton)=
+### Metodo di Netwon
 

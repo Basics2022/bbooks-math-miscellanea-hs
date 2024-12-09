@@ -71,8 +71,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="24.8. Derivate - Problemi" href="derivatives-problems.html" />
-    <link rel="prev" title="23.9. Note e dimostrazioni" href="analysis-notes.html" />
+    <link rel="next" title="24.8. Problemi" href="derivatives-problems.html" />
+    <link rel="prev" title="23.10. Note e dimostrazioni" href="analysis-notes.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
@@ -237,18 +237,18 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../calculus.html">22. Introduzione al calcolo</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="analysis.html">23. Introduzione all’analisi</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="analysis-problems.html">23.8. Problemi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="analysis-notes.html">23.9. Note e dimostrazioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analysis-problems.html">23.9. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analysis-notes.html">23.10. Note e dimostrazioni</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">24. Derivate</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="derivatives-problems.html">24.8. Derivate - Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="derivatives-problems.html">24.8. Problemi</a></li>
 <li class="toctree-l2"><a class="reference internal" href="derivatives-notes.html">24.9. Note e dimostrazioni</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="integrals.html">25. Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="integrals-table.html">25.5. Tavola degli integrali indefiniti più comuni</a></li>
-<li class="toctree-l2"><a class="reference internal" href="integrals-problems.html">25.6. Integrali - Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integrals-problems.html">25.6. Problemi</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../ode.html">26. Equazioni differenziali ordinarie</a></li>
@@ -504,6 +504,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#approssimazioni-locali">24.7.1. Approssimazioni locali</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#studio-di-funzione">24.7.2. Studio di funzione</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ottimizzazione">24.7.3. Ottimizzazione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-di-netwon">24.7.4. Metodo di Netwon</a></li>
 </ul>
 </li>
 </ul>
@@ -944,7 +945,7 @@ Dimostrazione<div class="sd-summary-down docutils">
 <p class="sd-card-text">Ripetendo lo stesso procedimento, confrontando la differenza <span class="math notranslate nohighlight">\(f(x) - T_N[f(x);x_0]\)</span> con il termine <span class="math notranslate nohighlight">\((x-x_0)^{N+1}\)</span> si ottiene</p>
 <div class="math notranslate nohighlight">
 \[
-  \lim_{x \rightarrow x_0} \frac{f(x) - T_N[f(x); x_0]}{(x-x_0)^N} = \dots = \lim_{x \rightarrow x_0} \frac{f^{(N+1)}(x)}{(N+1)!} = \frac{f^{(N+1)(x_0)}}{(N+1)!} \ .
+  \lim_{x \rightarrow x_0} \frac{f(x) - T_N[f(x); x_0]}{(x-x_0)^N} = \dots = \lim_{x \rightarrow x_0} \frac{f^{(N+1)}(x)}{(N+1)!} = \frac{f^{(N+1)}(x_0)}{(N+1)!} \ .
 \]</div>
 </div>
 </details><div class="section" id="esempi">
@@ -989,6 +990,9 @@ e^{ix} &amp; = 1 + ix + \frac{(ix)^2}{2!} + \frac{(ix)^3}{3!} + \frac{(ix)^4}{4!
 <div class="section" id="ottimizzazione">
 <h3><span class="section-number">24.7.3. </span>Ottimizzazione<a class="headerlink" href="#ottimizzazione" title="Permalink to this heading">#</a></h3>
 </div>
+<div class="section" id="metodo-di-netwon">
+<span id="infinitesimal-calculus-derivatives-applications-newton"></span><h3><span class="section-number">24.7.4. </span>Metodo di Netwon<a class="headerlink" href="#metodo-di-netwon" title="Permalink to this heading">#</a></h3>
+</div>
 </div>
 <div class="toctree-wrapper compound">
 </div>
@@ -1030,7 +1034,7 @@ e^{ix} &amp; = 1 + ix + \frac{(ix)^2}{2!} + \frac{(ix)^3}{3!} + \frac{(ix)^4}{4!
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">precedente</p>
-        <p class="prev-next-title"><span class="section-number">23.9. </span>Note e dimostrazioni</p>
+        <p class="prev-next-title"><span class="section-number">23.10. </span>Note e dimostrazioni</p>
       </div>
     </a>
     <a class="right-next"
@@ -1038,7 +1042,7 @@ e^{ix} &amp; = 1 + ix + \frac{(ix)^2}{2!} + \frac{(ix)^3}{3!} + \frac{(ix)^4}{4!
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">24.8. </span>Derivate - Problemi</p>
+        <p class="prev-next-title"><span class="section-number">24.8. </span>Problemi</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1077,6 +1081,7 @@ e^{ix} &amp; = 1 + ix + \frac{(ix)^2}{2!} + \frac{(ix)^3}{3!} + \frac{(ix)^4}{4!
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#approssimazioni-locali">24.7.1. Approssimazioni locali</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#studio-di-funzione">24.7.2. Studio di funzione</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ottimizzazione">24.7.3. Ottimizzazione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-di-netwon">24.7.4. Metodo di Netwon</a></li>
 </ul>
 </li>
 </ul>

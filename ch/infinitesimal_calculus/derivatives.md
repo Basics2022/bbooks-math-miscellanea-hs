@@ -438,3 +438,6 @@ e^{ix} & = 1 + ix + \frac{(ix)^2}{2!} + \frac{(ix)^3}{3!} + \frac{(ix)^4}{4!} + 
 
 ### Ottimizzazione
 
+(infinitesimal-calculus:derivatives:applications:newton)=
+### Metodo di Netwon
+

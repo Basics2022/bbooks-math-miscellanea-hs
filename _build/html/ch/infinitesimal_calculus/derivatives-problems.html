@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>24.8. Derivate - Problemi &#8212; Matematica per le scuole superiori</title>
+    <title>24.8. Problemi &#8212; Matematica per le scuole superiori</title>
   
   
   
@@ -237,18 +237,18 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../calculus.html">22. Introduzione al calcolo</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="analysis.html">23. Introduzione all’analisi</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="analysis-problems.html">23.8. Problemi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="analysis-notes.html">23.9. Note e dimostrazioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analysis-problems.html">23.9. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analysis-notes.html">23.10. Note e dimostrazioni</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="derivatives.html">24. Derivate</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">24.8. Derivate - Problemi</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">24.8. Problemi</a></li>
 <li class="toctree-l2"><a class="reference internal" href="derivatives-notes.html">24.9. Note e dimostrazioni</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="integrals.html">25. Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="integrals-table.html">25.5. Tavola degli integrali indefiniti più comuni</a></li>
-<li class="toctree-l2"><a class="reference internal" href="integrals-problems.html">25.6. Integrali - Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integrals-problems.html">25.6. Problemi</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../ode.html">26. Equazioni differenziali ordinarie</a></li>
@@ -474,7 +474,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Derivate - Problemi</h1>
+    <h1>Problemi</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -485,12 +485,11 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calcolo-derivate">24.8.1. Calcolo derivate</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calcolo-di-limiti-con-la-regola-di-de-l-hopital">24.8.2. Calcolo di limiti con la regola di de l’Hopital</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#serie-di-taylor">24.8.2. Serie di Taylor</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-di-geometria">24.8.3. Problemi di geometria</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#studio-di-funzione">24.8.4. Studio di funzione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#studio-di-funzione-massimi-minimi-e-flessi-concavita">24.8.4. Studio di funzione: massimi, minimi e flessi; concavità</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-di-ottimizzazione">24.8.5. Problemi di ottimizzazione</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#approssimazioni-locali-di-funzioni">24.8.6. Approssimazioni locali di funzioni</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-di-newton">24.8.7. Metodo di Newton</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-di-newton">24.8.6. Metodo di Newton</a></li>
 </ul>
             </nav>
         </div>
@@ -502,43 +501,160 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="derivate-problemi">
-<span id="infinitesimal-calculus-derivatives-problems"></span><h1><span class="section-number">24.8. </span>Derivate - Problemi<a class="headerlink" href="#derivate-problemi" title="Permalink to this heading">#</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="problemi">
+<span id="infinitesimal-calculus-derivatives-problems"></span><h1><span class="section-number">24.8. </span>Problemi<a class="headerlink" href="#problemi" title="Permalink to this heading">#</a></h1>
 <div class="section" id="calcolo-derivate">
-<h2><span class="section-number">24.8.1. </span>Calcolo derivate<a class="headerlink" href="#calcolo-derivate" title="Permalink to this heading">#</a></h2>
+<span id="infinitesimal-calculus-derivatives-problems-eval"></span><h2><span class="section-number">24.8.1. </span>Calcolo derivate<a class="headerlink" href="#calcolo-derivate" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>derivate fondamentali, regole di derivazione</p></li>
 </ul>
 <div class="exercise admonition" id="ch/infinitesimal_calculus/derivatives-problems-exercise-0">
 
-<p class="admonition-title"><span class="caption-number">Exercise 24.1 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 24.1 </span> (Calcolo derivate con definizione)</p>
 <div class="section" id="exercise-content">
+<p>Calcolare le derivate delle seguenti funzioni usando la definizione</p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(f(x) = x^2\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = \sqrt{x}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = e^x\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = \ln(x)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = \sin(x)\)</span></p></li>
+</ol>
+<p><em>Essendo la derivata definita come limite di un rapporto incrementale, questi esercizi possono essere visti come ulteriori esercizi sui limiti.</em></p>
 </div>
 </div>
-</div>
-<div class="section" id="calcolo-di-limiti-con-la-regola-di-de-l-hopital">
-<h2><span class="section-number">24.8.2. </span>Calcolo di limiti con la regola di de l’Hopital<a class="headerlink" href="#calcolo-di-limiti-con-la-regola-di-de-l-hopital" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>forme indeterminate <span class="math notranslate nohighlight">\(\frac{f(x)}{g(x)}\)</span></p></li>
-</ul>
-</div>
-<div class="section" id="problemi-di-geometria">
-<h2><span class="section-number">24.8.3. </span>Problemi di geometria<a class="headerlink" href="#problemi-di-geometria" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>rette tangenti alle curve</p></li>
-</ul>
-</div>
-<div class="section" id="studio-di-funzione">
-<h2><span class="section-number">24.8.4. </span>Studio di funzione<a class="headerlink" href="#studio-di-funzione" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>dominio, limiti, massimi e minimi di una funzione, punti di flesso</p></li>
-</ul>
-</div>
-<div class="section" id="problemi-di-ottimizzazione">
-<h2><span class="section-number">24.8.5. </span>Problemi di ottimizzazione<a class="headerlink" href="#problemi-di-ottimizzazione" title="Permalink to this heading">#</a></h2>
 <div class="exercise admonition" id="ch/infinitesimal_calculus/derivatives-problems-exercise-1">
 
-<p class="admonition-title"><span class="caption-number">Exercise 24.2 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 24.2 </span> (Verifica della derivabilità di funzioni)</p>
+<div class="section" id="exercise-content">
+<p>Verificare che le seguenti funzioni siano derivabili. Dove non indicato esplicitamente, si consideri <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> come dominio.</p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(f(x) = x^2\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = \sqrt{x}, \, x &gt; 0\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = e^x\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = \ln(x), \, x &gt; 0\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = \sin(x)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = \cos(x)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = x^3 + \sqrt{x}, \, x &gt; 0\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = e^{-x^2}\)</span></p></li>
+</ol>
+<p><em>Essendo la derivata definita come limite di un rapporto incrementale, e venendo richiesto di controllare che questo limite esista, anche questi esercizi possono essere visti come ulteriori esercizi sui limiti.</em></p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/infinitesimal_calculus/derivatives-problems-exercise-2">
+
+<p class="admonition-title"><span class="caption-number">Exercise 24.3 </span> (Calcolo delle derivate)</p>
+<div class="section" id="exercise-content">
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(\frac{d}{dx} \left(x^3\right)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{d}{dx} \left(\sqrt{x}\right)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{d}{dx} \left(e^x\right)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{d}{dx} \left(\ln(x)\right)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{d}{dx} \left(\sin(x)\right)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{d}{dx} \left(\cos(x)\right)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{d}{dx} \left(\tan(x)\right)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{d}{dx} \left(x^4 + 2x^2\right)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{d}{dx} \left(\sqrt{x^2 + 1}\right)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{d}{dx} \left(e^{-x}\right)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{d}{dx} \left(\ln(x^2)\right)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{d}{dx} \left(\sin^2(x)\right)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{d}{dx} \left(\cos(x^2)\right)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{d}{dx} \left(\tan(\sqrt{x})\right)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{d}{dx} \left(\sinh(x)\right)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{d}{dx} \left(\cosh(x)\right)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{d}{dx} \left(\tanh(x)\right)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{d}{dx} \left(e^{x^2}\right)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{d}{dx} \left(\ln(x + \sqrt{x^2 + 1})\right)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{d}{dx} \left(\sin(e^x)\right)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{d}{dx} \left(\cos(\ln(x))\right)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{d}{dx} \left(\tan(x^3)\right)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{d}{dx} \left(x e^x\right)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{d}{dx} \left(x^2 \ln(x)\right)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{d}{dx} \left(\frac{\sin(x)}{x}\right)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{d}{dx} \left(\frac{x^2 + 1}{x^3 - 1}\right)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{d}{dx} \left(\frac{\ln(x)}{\sqrt{x}}\right)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{d}{dx} \left(\sinh(x^2)\right)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{d}{dx} \left(\cosh(\sqrt{x})\right)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{d}{dx} \left(\tanh(x + 1)\right)\)</span></p></li>
+</ol>
+</div>
+</div>
+<div class="exercise admonition" id="ch/infinitesimal_calculus/derivatives-problems-exercise-3">
+
+<p class="admonition-title"><span class="caption-number">Exercise 24.4 </span> (Calcolo di limiti con la regola di de l’Hopital)</p>
+<div class="section" id="exercise-content">
+<p>forme indeterminate <span class="math notranslate nohighlight">\(\frac{f(x)}{g(x)}\)</span></p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to 0} \frac{\sin(x)}{x}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to 0} \frac{1 - \cos(x)}{x^2}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to \infty} \frac{\ln(x)}{x}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to 0^+} \frac{\ln(x)}{x}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to 0} \frac{e^x - 1}{x}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to 0} \frac{\sqrt{1 + x} - 1}{x}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to \infty} \frac{x}{e^x}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to \infty} \frac{\ln(x^2)}{\ln(x)}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to 0^+} \frac{\sin(\sqrt{x})}{\sqrt{x}}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim_{x \to \infty} \frac{\sinh(x)}{e^x}\)</span></p></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section" id="serie-di-taylor">
+<span id="infinitesimal-calculus-derivatives-problems-taylor"></span><h2><span class="section-number">24.8.2. </span>Serie di Taylor<a class="headerlink" href="#serie-di-taylor" title="Permalink to this heading">#</a></h2>
+<div class="exercise admonition" id="ch/infinitesimal_calculus/derivatives-problems-exercise-4">
+
+<p class="admonition-title"><span class="caption-number">Exercise 24.5 </span></p>
+<div class="section" id="exercise-content">
+<ol class="arabic simple">
+<li><p>Espandere la funzione <span class="math notranslate nohighlight">\(f(x) = e^x\)</span> in serie di Taylor attorno a <span class="math notranslate nohighlight">\(x = 0\)</span> fino al termine di ordine 4.</p></li>
+<li><p>Espandere la funzione <span class="math notranslate nohighlight">\(f(x) = \sin(x)\)</span> in serie di Taylor attorno a <span class="math notranslate nohighlight">\(x = 0\)</span> fino al termine di ordine 5.</p></li>
+<li><p>Espandere la funzione <span class="math notranslate nohighlight">\(f(x) = \ln(1 + x)\)</span> in serie di Taylor attorno a <span class="math notranslate nohighlight">\(x = 0\)</span> fino al termine di ordine 3.</p></li>
+<li><p>Calcolare l’errore di approssimazione della serie di Taylor di ordine 4 per <span class="math notranslate nohighlight">\(f(x) = \sqrt{x}\)</span> attorno a <span class="math notranslate nohighlight">\(x = 1\)</span>.</p></li>
+<li><p>Determinare l’ordine di accuratezza del metodo numerico basato su una formula di differenze finite centrata di ordine 2, e calcolare il primo errore per il calcolo della derivata prima.</p></li>
+<li><p>Determinare se il punto <span class="math notranslate nohighlight">\(x = 1\)</span> è un massimo, un minimo o un punto di flesso per la funzione <span class="math notranslate nohighlight">\(f(x) = x^4 - 4x^3 + 6x^2\)</span> usando la serie di Taylor attorno a <span class="math notranslate nohighlight">\(x = 1\)</span>.</p></li>
+<li><p>Determinare se il punto <span class="math notranslate nohighlight">\(x = 0\)</span> è un massimo, un minimo o un punto di flesso per la funzione <span class="math notranslate nohighlight">\(f(x) = x^3 - 3x^2 + 2x\)</span> utilizzando la serie di Taylor attorno a <span class="math notranslate nohighlight">\(x = 0\)</span>.</p></li>
+<li><p>Verificare se il punto <span class="math notranslate nohighlight">\(x = 0\)</span> è un punto di flesso per la funzione <span class="math notranslate nohighlight">\(f(x) = x^3 - 3x + 2\)</span> utilizzando la serie di Taylor e analizzando il comportamento di <span class="math notranslate nohighlight">\(f'(x)\)</span>, <span class="math notranslate nohighlight">\(f''(x)\)</span> e <span class="math notranslate nohighlight">\(f'''(x)\)</span>.</p></li>
+<li><p>Determinare se il punto <span class="math notranslate nohighlight">\(x = 1\)</span> è un massimo, un minimo o un punto di flesso per la funzione <span class="math notranslate nohighlight">\(f(x) = x^3 - 6x^2 + 12x - 8\)</span> utilizzando la serie di Taylor attorno a <span class="math notranslate nohighlight">\(x = 1\)</span>.</p></li>
+<li><p>Analizzare la funzione <span class="math notranslate nohighlight">\(f(x) = x^4 - 2x^2 + x\)</span> per determinare la natura del punto critico <span class="math notranslate nohighlight">\(x = 0\)</span> in base alla serie di Taylor di ordine 3, determinando se è un massimo, un minimo o un punto di flesso.</p></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section" id="problemi-di-geometria">
+<span id="infinitesimal-calculus-derivatives-problems-geom"></span><h2><span class="section-number">24.8.3. </span>Problemi di geometria<a class="headerlink" href="#problemi-di-geometria" title="Permalink to this heading">#</a></h2>
+<div class="exercise admonition" id="ch/infinitesimal_calculus/derivatives-problems-exercise-5">
+
+<p class="admonition-title"><span class="caption-number">Exercise 24.6 </span> (Problemi di geometria)</p>
+<div class="section" id="exercise-content">
+<p><strong>todo</strong></p>
+<ul class="simple">
+<li><p><em>rette tangenti a curve</em></p></li>
+<li><p><em>curve tangenti a curve: famiglie parametriche di curve</em></p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="studio-di-funzione-massimi-minimi-e-flessi-concavita">
+<span id="infinitesimal-calculus-derivatives-problems-fun"></span><h2><span class="section-number">24.8.4. </span>Studio di funzione: massimi, minimi e flessi; concavità<a class="headerlink" href="#studio-di-funzione-massimi-minimi-e-flessi-concavita" title="Permalink to this heading">#</a></h2>
+<p>Le derivate permettono di aggiungere dettagli allo studio di funzione, iniziato nel capitolo precedente. Grazie alle derivate, è possibile e studiarne la tendenza e la concavità, identificabili rispettivalemnte con <span class="math notranslate nohighlight">\(f'(x)\)</span> e <span class="math notranslate nohighlight">\(f''(x)\)</span>); le condizioni di derivata prima e/o seconda nulla definiscono poi i punti di minimo e di massimo locali di una funzione (derivabile), i punti di flesso.</p>
+<div class="exercise admonition" id="ch/infinitesimal_calculus/derivatives-problems-exercise-6">
+
+<p class="admonition-title"><span class="caption-number">Exercise 24.7 </span></p>
+<div class="section" id="exercise-content">
+<p>Si completi lo studio di funzione delle funzioni elencate nell”<a class="reference internal" href="analysis-problems.html#infinitesimal-calculus-analysis-problems-funs"><span class="std std-ref">esercizio</span></a> nel capitolo precedente, con:</p>
+<ul class="simple">
+<li><p>lo studio del segno, della tendenza e della concavità della funzione</p></li>
+<li><p>i punti di minimo e massimo locale</p></li>
+<li><p>i punti di flesso</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="problemi-di-ottimizzazione">
+<span id="infinitesimal-calculus-derivatives-problems-opt"></span><h2><span class="section-number">24.8.5. </span>Problemi di ottimizzazione<a class="headerlink" href="#problemi-di-ottimizzazione" title="Permalink to this heading">#</a></h2>
+<div class="exercise admonition" id="ch/infinitesimal_calculus/derivatives-problems-exercise-7">
+<span id="infinitesimal-calculus-derivatives-problems-opt-abstract"></span>
+<p class="admonition-title"><span class="caption-number">Exercise 24.8 </span></p>
 <div class="section" id="exercise-content">
 <p>Si chiede di trovare i punti di minimo e massimo, locali e assoluti, e disegnare il grafico delle funzioni delle seguenti funzioni all’interno del dominio indicato</p>
 <div class="math notranslate nohighlight">
@@ -546,13 +662,14 @@ document.write(`
  &amp; \mathbf{0.} \, f(x) = x^2 - \frac{1}{2} x^3 \quad , \quad x \in [-1,2] &amp; \text{R: } \\
  &amp; \mathbf{1.} \, f(x) = \frac{x}{\cos x + 1}  \quad , \quad x \in \left[ -\frac{\pi}{2}, \frac{\pi}{2} \right]  &amp; \text{R: } \\
  &amp; \mathbf{..} \, f(x) = \sin{x}{x} \quad , \quad x \in \mathbf{R} &amp; \text{R: } \\
- &amp; \text{todo}
+ &amp; \dots 
 \end{aligned}\end{split}\]</div>
+<p><strong>todo</strong> <em>Aggiungere problemi</em></p>
 </div>
 </div>
-<div class="exercise admonition" id="ch/infinitesimal_calculus/derivatives-problems-exercise-2">
-
-<p class="admonition-title"><span class="caption-number">Exercise 24.3 </span> (Problemi di geometria)</p>
+<div class="exercise admonition" id="ch/infinitesimal_calculus/derivatives-problems-exercise-8">
+<span id="infinitesimal-calculus-derivatives-problems-opt-geom"></span>
+<p class="admonition-title"><span class="caption-number">Exercise 24.9 </span> (Problemi di geometria)</p>
 <div class="section" id="exercise-content">
 <p>Si chiede di determinare il dominio e la quantità richiesta in funzione della quantità indipendente; si trovino poi i punti di minimo e massimo, locali e assoluti, e disegnare il grafico delle funzioni delle seguenti funzioni all’interno del loro dominio. In particolare</p>
 <ol class="arabic simple">
@@ -564,22 +681,28 @@ document.write(`
 </ol>
 </div>
 </div>
-<div class="exercise admonition" id="ch/infinitesimal_calculus/derivatives-problems-exercise-3">
-
-<p class="admonition-title"><span class="caption-number">Exercise 24.4 </span> (Problemi di economia)</p>
+<div class="exercise admonition" id="ch/infinitesimal_calculus/derivatives-problems-exercise-9">
+<span id="infinitesimal-calculus-derivatives-problems-opt-econ"></span>
+<p class="admonition-title"><span class="caption-number">Exercise 24.10 </span> (Problemi di economia)</p>
 <div class="section" id="exercise-content">
 <p><strong>todo</strong></p>
 </div>
 </div>
 </div>
-<div class="section" id="approssimazioni-locali-di-funzioni">
-<h2><span class="section-number">24.8.6. </span>Approssimazioni locali di funzioni<a class="headerlink" href="#approssimazioni-locali-di-funzioni" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>serie di Taylor? Esercizi su formule di errore di metodi numerici?</p></li>
-</ul>
-</div>
 <div class="section" id="metodo-di-newton">
-<h2><span class="section-number">24.8.7. </span>Metodo di Newton<a class="headerlink" href="#metodo-di-newton" title="Permalink to this heading">#</a></h2>
+<span id="infinitesimal-calculus-derivatives-problems-newton"></span><h2><span class="section-number">24.8.6. </span>Metodo di Newton<a class="headerlink" href="#metodo-di-newton" title="Permalink to this heading">#</a></h2>
+<p>Si chiede di risolvere le sequenti equazioni nonlineari con il <a class="reference internal" href="derivatives.html#infinitesimal-calculus-derivatives-applications-newton"><span class="std std-ref">metodo di Newton</span></a> (è quindi necessario riformulare il problema come la ricerca degli zeri di una funzione), dopo aver impostato la soluzione con un metodo grafico. Il metodo grafico è necessario a farsi un’idea sul numero di soluzioni da cercare, e sui valori con cui iniziare il metodo di Newton. Si chiede di concludere il procedimento a mano dopo 3 iterazioni, o quando si ottiene una soluzione con errore minore della tolleranza, qui scelta come <span class="math notranslate nohighlight">\(\tau = 0.01\)</span>. Si chiede infine di implementare il metodo con un linguaggio di programmazione a piacimento, per cercare una soluzione con tolleranza <span class="math notranslate nohighlight">\(\tau = 10^{-5}\)</span></p>
+<div class="exercise admonition" id="ch/infinitesimal_calculus/derivatives-problems-exercise-10">
+
+<p class="admonition-title"><span class="caption-number">Exercise 24.11 </span> (Soluzione iterativa di equazioni nonlineari - Newton)</p>
+<div class="section" id="exercise-content">
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(\ln x = - 2\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(e^{-x^2} \cos x = \frac{1}{2}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\dots\)</span></p></li>
+</ol>
+</div>
+</div>
 </div>
 </div>
 
@@ -647,12 +770,11 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calcolo-derivate">24.8.1. Calcolo derivate</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calcolo-di-limiti-con-la-regola-di-de-l-hopital">24.8.2. Calcolo di limiti con la regola di de l’Hopital</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#serie-di-taylor">24.8.2. Serie di Taylor</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-di-geometria">24.8.3. Problemi di geometria</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#studio-di-funzione">24.8.4. Studio di funzione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#studio-di-funzione-massimi-minimi-e-flessi-concavita">24.8.4. Studio di funzione: massimi, minimi e flessi; concavità</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-di-ottimizzazione">24.8.5. Problemi di ottimizzazione</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#approssimazioni-locali-di-funzioni">24.8.6. Approssimazioni locali di funzioni</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-di-newton">24.8.7. Metodo di Newton</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-di-newton">24.8.6. Metodo di Newton</a></li>
 </ul>
   </nav></div>
 

@@ -7633,10 +7633,13 @@ che viene utilizzato nel calcolo dei limiti desiderati
 
 
 \section{Calcolo dei limiti}
-\label{\detokenize{ch/infinitesimal_calculus/analysis:calcolo-dei-limiti}}
+\label{\detokenize{ch/infinitesimal_calculus/analysis:calcolo-dei-limiti}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-eval}}
 \sphinxAtStartPar
 \sphinxstylestrong{todo} Riassumere alcune tecniche per il calcolo dei limiti…\sphinxstyleemphasis{niente di speciale; mettere insieme i metodi presentati nel capitolo e mostrare qualche esempio del calcolo di limiti}
 
+
+\section{Metodo di bisezione}
+\label{\detokenize{ch/infinitesimal_calculus/analysis:metodo-di-bisezione}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-continuous-fun-bisec}}
 
 
 \sphinxstepscope
@@ -7648,7 +7651,7 @@ che viene utilizzato nel calcolo dei limiti desiderati
 \subsection{Limiti}
 \label{\detokenize{ch/infinitesimal_calculus/analysis-problems:limiti}}\phantomsection \label{exercise:ch/infinitesimal_calculus/analysis-problems-exercise-0}
 
-\begin{sphinxadmonition}{note}{Exercise 23.8.1 (Verifica/calcolo con definizione)}
+\begin{sphinxadmonition}{note}{Exercise 23.9.1 (Verifica/calcolo con definizione)}
 
 
 \begin{enumerate}
@@ -7697,7 +7700,7 @@ Usa la definizione di limite per dimostrare che \(\lim_{x \to 0} \ln(1+x) = 0\).
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/infinitesimal_calculus/analysis-problems-exercise-1}
 
-\begin{sphinxadmonition}{note}{Exercise 23.8.2 (Primi limiti)}
+\begin{sphinxadmonition}{note}{Exercise 23.9.2 (Primi limiti)}
 
 
 \begin{enumerate}
@@ -7746,7 +7749,7 @@ Usa la definizione di limite per dimostrare che \(\lim_{x \to 0} \ln(1+x) = 0\).
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/infinitesimal_calculus/analysis-problems-exercise-2}
 
-\begin{sphinxadmonition}{note}{Exercise 23.8.3 (Limiti laterali)}
+\begin{sphinxadmonition}{note}{Exercise 23.9.3 (Limiti laterali)}
 
 
 \begin{enumerate}
@@ -7795,7 +7798,7 @@ Usa la definizione di limite per dimostrare che \(\lim_{x \to 0} \ln(1+x) = 0\).
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/infinitesimal_calculus/analysis-problems-exercise-3}
 
-\begin{sphinxadmonition}{note}{Exercise 23.8.4 (Limiti all’infinito)}
+\begin{sphinxadmonition}{note}{Exercise 23.9.4 (Limiti all’infinito)}
 
 
 \begin{enumerate}
@@ -7844,7 +7847,7 @@ Usa la definizione di limite per dimostrare che \(\lim_{x \to 0} \ln(1+x) = 0\).
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/infinitesimal_calculus/analysis-problems-exercise-4}
 
-\begin{sphinxadmonition}{note}{Exercise 23.8.5 (Forme indeterminate)}
+\begin{sphinxadmonition}{note}{Exercise 23.9.5 (Forme indeterminate)}
 
 
 
@@ -7896,7 +7899,7 @@ Risolvere i seguenti limiti. Alcuni esercizi potrebbero non essere di immediata 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/infinitesimal_calculus/analysis-problems-exercise-5}
 
-\begin{sphinxadmonition}{note}{Exercise 23.8.6 (Esercizi vari)}
+\begin{sphinxadmonition}{note}{Exercise 23.9.6 (Esercizi vari)}
 
 
 
@@ -7991,7 +7994,7 @@ Prova che \(\lim_{x \to 0} \frac{x \cos(x)}{1 + x^2} = 0\)
 \subsection{Studio di funzione: dominio, continuità e limiti}
 \label{\detokenize{ch/infinitesimal_calculus/analysis-problems:studio-di-funzione-dominio-continuita-e-limiti}}\phantomsection \label{exercise:ch/infinitesimal_calculus/analysis-problems-exercise-6}
 
-\begin{sphinxadmonition}{note}{Exercise 23.8.7 (Continuità e limiti)}
+\begin{sphinxadmonition}{note}{Exercise 23.9.7 (Continuità e limiti)}
 
 
 \begin{enumerate}
@@ -8053,7 +8056,7 @@ Determina se la funzione \(f(x) = \frac{\ln(x)}{x}\) è continua in \(x=1\).
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/infinitesimal_calculus/analysis-problems-exercise-7}
 
-\begin{sphinxadmonition}{note}{Exercise 23.8.8 (Asintoti Verticali e Orizzontali)}
+\begin{sphinxadmonition}{note}{Exercise 23.9.8 (Asintoti Verticali e Orizzontali)}
 
 
 \begin{enumerate}
@@ -8102,7 +8105,7 @@ Trova gli asintoti verticali della funzione \(f(x) = \frac{1}{x^3 - x}\).
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/infinitesimal_calculus/analysis-problems-exercise-8}
 
-\begin{sphinxadmonition}{note}{Exercise 23.8.9 (Studio funzione \sphinxhyphen{} dominio, continuità, grafico)}
+\begin{sphinxadmonition}{note}{Exercise 23.9.9 (Studio funzione \sphinxhyphen{} dominio, continuità, grafico)}
 
 
 
@@ -8180,11 +8183,38 @@ discutere l’esistenza degli zeri della funzione e darne una stima, facendo rif
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/infinitesimal_calculus/analysis-problems-exercise-9}
 
-\begin{sphinxadmonition}{note}{Exercise 23.8.10 (Limiti e applicazioni)}
+\begin{sphinxadmonition}{note}{Exercise 23.9.10 (Limiti e applicazioni)}
 
 
 
 
+\end{sphinxadmonition}
+
+
+\subsection{Metodo di bisezione}
+\label{\detokenize{ch/infinitesimal_calculus/analysis-problems:metodo-di-bisezione}}
+\sphinxAtStartPar
+Si chiede di risolvere le sequenti equazioni nonlineari con il {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-continuous-fun-bisec}]{\sphinxcrossref{\DUrole{std,std-ref}{metodo di bisezione}}}} (è quindi necessario riformulare il problema come la ricerca degli zeri di una funzione), dopo aver impostato la soluzione con un metodo grafico. Il metodo grafico è necessario a farsi un’idea sul numero di soluzioni da cercare, e sui valori con cui iniziare il metodo di bisezione. Si chiede di concludere il procedimento a mano dopo 3 iterazioni, o quando si ottiene una soluzione con errore minore della tolleranza, qui scelta come \(\tau = 0.01\). Si chiede infine di implementare il metodo con un linguaggio di programmazione a piacimento, per cercare una soluzione con tolleranza \(\tau = 10^{-5}\)
+\phantomsection \label{exercise:ch/infinitesimal_calculus/analysis-problems-exercise-10}
+
+\begin{sphinxadmonition}{note}{Exercise 23.9.11 (Soluzione iterativa di equazioni nonlineari \sphinxhyphen{} bisezione)}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
+\sphinxAtStartPar
+\(\ln x = - 2\)
+
+\item {} 
+\sphinxAtStartPar
+\(e^{-x^2} \cos x = \frac{1}{2}\)
+
+\item {} 
+\sphinxAtStartPar
+\(\dots\)
+
+\end{enumerate}
 \end{sphinxadmonition}
 
 
@@ -8673,14 +8703,17 @@ e^{ix} & = 1 + ix + \frac{(ix)^2}{2!} + \frac{(ix)^3}{3!} + \frac{(ix)^4}{4!} + 
 
 \subsection{Ottimizzazione}
 \label{\detokenize{ch/infinitesimal_calculus/derivatives:ottimizzazione}}
+
+\subsection{Metodo di Netwon}
+\label{\detokenize{ch/infinitesimal_calculus/derivatives:metodo-di-netwon}}\label{\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-applications-newton}}
 \sphinxstepscope
 
 
-\section{Derivate \sphinxhyphen{} Problemi}
-\label{\detokenize{ch/infinitesimal_calculus/derivatives-problems:derivate-problemi}}\label{\detokenize{ch/infinitesimal_calculus/derivatives-problems:infinitesimal-calculus-derivatives-problems}}\label{\detokenize{ch/infinitesimal_calculus/derivatives-problems::doc}}
+\section{Problemi}
+\label{\detokenize{ch/infinitesimal_calculus/derivatives-problems:problemi}}\label{\detokenize{ch/infinitesimal_calculus/derivatives-problems:infinitesimal-calculus-derivatives-problems}}\label{\detokenize{ch/infinitesimal_calculus/derivatives-problems::doc}}
 
 \subsection{Calcolo derivate}
-\label{\detokenize{ch/infinitesimal_calculus/derivatives-problems:calcolo-derivate}}\begin{itemize}
+\label{\detokenize{ch/infinitesimal_calculus/derivatives-problems:calcolo-derivate}}\label{\detokenize{ch/infinitesimal_calculus/derivatives-problems:infinitesimal-calculus-derivatives-problems-eval}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 derivate fondamentali, regole di derivazione
@@ -8688,43 +8721,376 @@ derivate fondamentali, regole di derivazione
 \end{itemize}
 \phantomsection \label{exercise:ch/infinitesimal_calculus/derivatives-problems-exercise-0}
 
-\begin{sphinxadmonition}{note}{Exercise 24.8.1}
+\begin{sphinxadmonition}{note}{Exercise 24.8.1 (Calcolo derivate con definizione)}
 
 
+
+\sphinxAtStartPar
+Calcolare le derivate delle seguenti funzioni usando la definizione
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
+\sphinxAtStartPar
+\(f(x) = x^2\)
+
+\item {} 
+\sphinxAtStartPar
+\(f(x) = \sqrt{x}\)
+
+\item {} 
+\sphinxAtStartPar
+\(f(x) = e^x\)
+
+\item {} 
+\sphinxAtStartPar
+\(f(x) = \ln(x)\)
+
+\item {} 
+\sphinxAtStartPar
+\(f(x) = \sin(x)\)
+
+\end{enumerate}
+
+\sphinxAtStartPar
+\sphinxstyleemphasis{Essendo la derivata definita come limite di un rapporto incrementale, questi esercizi possono essere visti come ulteriori esercizi sui limiti.}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/infinitesimal_calculus/derivatives-problems-exercise-1}
+
+\begin{sphinxadmonition}{note}{Exercise 24.8.2 (Verifica della derivabilità di funzioni)}
+
+
+
+\sphinxAtStartPar
+Verificare che le seguenti funzioni siano derivabili. Dove non indicato esplicitamente, si consideri \(\mathbb{R}\) come dominio.
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
+\sphinxAtStartPar
+\(f(x) = x^2\)
+
+\item {} 
+\sphinxAtStartPar
+\(f(x) = \sqrt{x}, \, x > 0\)
+
+\item {} 
+\sphinxAtStartPar
+\(f(x) = e^x\)
+
+\item {} 
+\sphinxAtStartPar
+\(f(x) = \ln(x), \, x > 0\)
+
+\item {} 
+\sphinxAtStartPar
+\(f(x) = \sin(x)\)
+
+\item {} 
+\sphinxAtStartPar
+\(f(x) = \cos(x)\)
+
+\item {} 
+\sphinxAtStartPar
+\(f(x) = x^3 + \sqrt{x}, \, x > 0\)
+
+\item {} 
+\sphinxAtStartPar
+\(f(x) = e^{-x^2}\)
+
+\end{enumerate}
+
+\sphinxAtStartPar
+\sphinxstyleemphasis{Essendo la derivata definita come limite di un rapporto incrementale, e venendo richiesto di controllare che questo limite esista, anche questi esercizi possono essere visti come ulteriori esercizi sui limiti.}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/infinitesimal_calculus/derivatives-problems-exercise-2}
+
+\begin{sphinxadmonition}{note}{Exercise 24.8.3 (Calcolo delle derivate)}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
+\sphinxAtStartPar
+\(\frac{d}{dx} \left(x^3\right)\)
+
+\item {} 
+\sphinxAtStartPar
+\(\frac{d}{dx} \left(\sqrt{x}\right)\)
+
+\item {} 
+\sphinxAtStartPar
+\(\frac{d}{dx} \left(e^x\right)\)
+
+\item {} 
+\sphinxAtStartPar
+\(\frac{d}{dx} \left(\ln(x)\right)\)
+
+\item {} 
+\sphinxAtStartPar
+\(\frac{d}{dx} \left(\sin(x)\right)\)
+
+\item {} 
+\sphinxAtStartPar
+\(\frac{d}{dx} \left(\cos(x)\right)\)
+
+\item {} 
+\sphinxAtStartPar
+\(\frac{d}{dx} \left(\tan(x)\right)\)
+
+\item {} 
+\sphinxAtStartPar
+\(\frac{d}{dx} \left(x^4 + 2x^2\right)\)
+
+\item {} 
+\sphinxAtStartPar
+\(\frac{d}{dx} \left(\sqrt{x^2 + 1}\right)\)
+
+\item {} 
+\sphinxAtStartPar
+\(\frac{d}{dx} \left(e^{-x}\right)\)
+
+\item {} 
+\sphinxAtStartPar
+\(\frac{d}{dx} \left(\ln(x^2)\right)\)
+
+\item {} 
+\sphinxAtStartPar
+\(\frac{d}{dx} \left(\sin^2(x)\right)\)
+
+\item {} 
+\sphinxAtStartPar
+\(\frac{d}{dx} \left(\cos(x^2)\right)\)
+
+\item {} 
+\sphinxAtStartPar
+\(\frac{d}{dx} \left(\tan(\sqrt{x})\right)\)
+
+\item {} 
+\sphinxAtStartPar
+\(\frac{d}{dx} \left(\sinh(x)\right)\)
+
+\item {} 
+\sphinxAtStartPar
+\(\frac{d}{dx} \left(\cosh(x)\right)\)
+
+\item {} 
+\sphinxAtStartPar
+\(\frac{d}{dx} \left(\tanh(x)\right)\)
+
+\item {} 
+\sphinxAtStartPar
+\(\frac{d}{dx} \left(e^{x^2}\right)\)
+
+\item {} 
+\sphinxAtStartPar
+\(\frac{d}{dx} \left(\ln(x + \sqrt{x^2 + 1})\right)\)
+
+\item {} 
+\sphinxAtStartPar
+\(\frac{d}{dx} \left(\sin(e^x)\right)\)
+
+\item {} 
+\sphinxAtStartPar
+\(\frac{d}{dx} \left(\cos(\ln(x))\right)\)
+
+\item {} 
+\sphinxAtStartPar
+\(\frac{d}{dx} \left(\tan(x^3)\right)\)
+
+\item {} 
+\sphinxAtStartPar
+\(\frac{d}{dx} \left(x e^x\right)\)
+
+\item {} 
+\sphinxAtStartPar
+\(\frac{d}{dx} \left(x^2 \ln(x)\right)\)
+
+\item {} 
+\sphinxAtStartPar
+\(\frac{d}{dx} \left(\frac{\sin(x)}{x}\right)\)
+
+\item {} 
+\sphinxAtStartPar
+\(\frac{d}{dx} \left(\frac{x^2 + 1}{x^3 - 1}\right)\)
+
+\item {} 
+\sphinxAtStartPar
+\(\frac{d}{dx} \left(\frac{\ln(x)}{\sqrt{x}}\right)\)
+
+\item {} 
+\sphinxAtStartPar
+\(\frac{d}{dx} \left(\sinh(x^2)\right)\)
+
+\item {} 
+\sphinxAtStartPar
+\(\frac{d}{dx} \left(\cosh(\sqrt{x})\right)\)
+
+\item {} 
+\sphinxAtStartPar
+\(\frac{d}{dx} \left(\tanh(x + 1)\right)\)
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/infinitesimal_calculus/derivatives-problems-exercise-3}
+
+\begin{sphinxadmonition}{note}{Exercise 24.8.4 (Calcolo di limiti con la regola di de l’Hopital)}
+
+
+
+\sphinxAtStartPar
+forme indeterminate \(\frac{f(x)}{g(x)}\)
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
+\sphinxAtStartPar
+\(\lim_{x \to 0} \frac{\sin(x)}{x}\)
+
+\item {} 
+\sphinxAtStartPar
+\(\lim_{x \to 0} \frac{1 - \cos(x)}{x^2}\)
+
+\item {} 
+\sphinxAtStartPar
+\(\lim_{x \to \infty} \frac{\ln(x)}{x}\)
+
+\item {} 
+\sphinxAtStartPar
+\(\lim_{x \to 0^+} \frac{\ln(x)}{x}\)
+
+\item {} 
+\sphinxAtStartPar
+\(\lim_{x \to 0} \frac{e^x - 1}{x}\)
+
+\item {} 
+\sphinxAtStartPar
+\(\lim_{x \to 0} \frac{\sqrt{1 + x} - 1}{x}\)
+
+\item {} 
+\sphinxAtStartPar
+\(\lim_{x \to \infty} \frac{x}{e^x}\)
+
+\item {} 
+\sphinxAtStartPar
+\(\lim_{x \to \infty} \frac{\ln(x^2)}{\ln(x)}\)
+
+\item {} 
+\sphinxAtStartPar
+\(\lim_{x \to 0^+} \frac{\sin(\sqrt{x})}{\sqrt{x}}\)
+
+\item {} 
+\sphinxAtStartPar
+\(\lim_{x \to \infty} \frac{\sinh(x)}{e^x}\)
+
+\end{enumerate}
 \end{sphinxadmonition}
 
 
-\subsection{Calcolo di limiti con la regola di de l’Hopital}
-\label{\detokenize{ch/infinitesimal_calculus/derivatives-problems:calcolo-di-limiti-con-la-regola-di-de-l-hopital}}\begin{itemize}
+\subsection{Serie di Taylor}
+\label{\detokenize{ch/infinitesimal_calculus/derivatives-problems:serie-di-taylor}}\label{\detokenize{ch/infinitesimal_calculus/derivatives-problems:infinitesimal-calculus-derivatives-problems-taylor}}\phantomsection \label{exercise:ch/infinitesimal_calculus/derivatives-problems-exercise-4}
+
+\begin{sphinxadmonition}{note}{Exercise 24.8.5}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \item {} 
 \sphinxAtStartPar
-forme indeterminate \(\frac{f(x)}{g(x)}\)
+Espandere la funzione \(f(x) = e^x\) in serie di Taylor attorno a \(x = 0\) fino al termine di ordine 4.
 
-\end{itemize}
+\item {} 
+\sphinxAtStartPar
+Espandere la funzione \(f(x) = \sin(x)\) in serie di Taylor attorno a \(x = 0\) fino al termine di ordine 5.
+
+\item {} 
+\sphinxAtStartPar
+Espandere la funzione \(f(x) = \ln(1 + x)\) in serie di Taylor attorno a \(x = 0\) fino al termine di ordine 3.
+
+\item {} 
+\sphinxAtStartPar
+Calcolare l’errore di approssimazione della serie di Taylor di ordine 4 per \(f(x) = \sqrt{x}\) attorno a \(x = 1\).
+
+\item {} 
+\sphinxAtStartPar
+Determinare l’ordine di accuratezza del metodo numerico basato su una formula di differenze finite centrata di ordine 2, e calcolare il primo errore per il calcolo della derivata prima.
+
+\item {} 
+\sphinxAtStartPar
+Determinare se il punto \(x = 1\) è un massimo, un minimo o un punto di flesso per la funzione \(f(x) = x^4 - 4x^3 + 6x^2\) usando la serie di Taylor attorno a \(x = 1\).
+
+\item {} 
+\sphinxAtStartPar
+Determinare se il punto \(x = 0\) è un massimo, un minimo o un punto di flesso per la funzione \(f(x) = x^3 - 3x^2 + 2x\) utilizzando la serie di Taylor attorno a \(x = 0\).
+
+\item {} 
+\sphinxAtStartPar
+Verificare se il punto \(x = 0\) è un punto di flesso per la funzione \(f(x) = x^3 - 3x + 2\) utilizzando la serie di Taylor e analizzando il comportamento di \(f'(x)\), \(f''(x)\) e \(f'''(x)\).
+
+\item {} 
+\sphinxAtStartPar
+Determinare se il punto \(x = 1\) è un massimo, un minimo o un punto di flesso per la funzione \(f(x) = x^3 - 6x^2 + 12x - 8\) utilizzando la serie di Taylor attorno a \(x = 1\).
+
+\item {} 
+\sphinxAtStartPar
+Analizzare la funzione \(f(x) = x^4 - 2x^2 + x\) per determinare la natura del punto critico \(x = 0\) in base alla serie di Taylor di ordine 3, determinando se è un massimo, un minimo o un punto di flesso.
+
+\end{enumerate}
+\end{sphinxadmonition}
 
 
 \subsection{Problemi di geometria}
-\label{\detokenize{ch/infinitesimal_calculus/derivatives-problems:problemi-di-geometria}}\begin{itemize}
+\label{\detokenize{ch/infinitesimal_calculus/derivatives-problems:problemi-di-geometria}}\label{\detokenize{ch/infinitesimal_calculus/derivatives-problems:infinitesimal-calculus-derivatives-problems-geom}}\phantomsection \label{exercise:ch/infinitesimal_calculus/derivatives-problems-exercise-5}
+
+\begin{sphinxadmonition}{note}{Exercise 24.8.6 (Problemi di geometria)}
+
+
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
-rette tangenti alle curve
+\sphinxstyleemphasis{rette tangenti a curve}
 
-\end{itemize}
-
-
-\subsection{Studio di funzione}
-\label{\detokenize{ch/infinitesimal_calculus/derivatives-problems:studio-di-funzione}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
-dominio, limiti, massimi e minimi di una funzione, punti di flesso
+\sphinxstyleemphasis{curve tangenti a curve: famiglie parametriche di curve}
 
 \end{itemize}
+\end{sphinxadmonition}
+
+
+\subsection{Studio di funzione: massimi, minimi e flessi; concavità}
+\label{\detokenize{ch/infinitesimal_calculus/derivatives-problems:studio-di-funzione-massimi-minimi-e-flessi-concavita}}\label{\detokenize{ch/infinitesimal_calculus/derivatives-problems:infinitesimal-calculus-derivatives-problems-fun}}
+\sphinxAtStartPar
+Le derivate permettono di aggiungere dettagli allo studio di funzione, iniziato nel capitolo precedente. Grazie alle derivate, è possibile e studiarne la tendenza e la concavità, identificabili rispettivalemnte con \(f'(x)\) e \(f''(x)\)); le condizioni di derivata prima e/o seconda nulla definiscono poi i punti di minimo e di massimo locali di una funzione (derivabile), i punti di flesso.
+\phantomsection \label{exercise:ch/infinitesimal_calculus/derivatives-problems-exercise-6}
+
+\begin{sphinxadmonition}{note}{Exercise 24.8.7}
+
+
+
+\sphinxAtStartPar
+Si completi lo studio di funzione delle funzioni elencate nell”{\hyperref[\detokenize{ch/infinitesimal_calculus/analysis-problems:infinitesimal-calculus-analysis-problems-funs}]{\sphinxcrossref{\DUrole{std,std-ref}{esercizio}}}} nel capitolo precedente, con:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+lo studio del segno, della tendenza e della concavità della funzione
+
+\item {} 
+\sphinxAtStartPar
+i punti di minimo e massimo locale
+
+\item {} 
+\sphinxAtStartPar
+i punti di flesso
+
+\end{itemize}
+\end{sphinxadmonition}
 
 
 \subsection{Problemi di ottimizzazione}
-\label{\detokenize{ch/infinitesimal_calculus/derivatives-problems:problemi-di-ottimizzazione}}\phantomsection \label{exercise:ch/infinitesimal_calculus/derivatives-problems-exercise-1}
+\label{\detokenize{ch/infinitesimal_calculus/derivatives-problems:problemi-di-ottimizzazione}}\label{\detokenize{ch/infinitesimal_calculus/derivatives-problems:infinitesimal-calculus-derivatives-problems-opt}}\phantomsection \label{exercise:ch/infinitesimal_calculus/derivatives-problems-exercise-7}
 
-\begin{sphinxadmonition}{note}{Exercise 24.8.2}
+\begin{sphinxadmonition}{note}{Exercise 24.8.8}
 
 
 
@@ -8735,12 +9101,15 @@ Si chiede di trovare i punti di minimo e massimo, locali e assoluti, e disegnare
  & \mathbf{0.} \, f(x) = x^2 - \frac{1}{2} x^3 \quad , \quad x \in [-1,2] & \text{R: } \\
  & \mathbf{1.} \, f(x) = \frac{x}{\cos x + 1}  \quad , \quad x \in \left[ -\frac{\pi}{2}, \frac{\pi}{2} \right]  & \text{R: } \\
  & \mathbf{..} \, f(x) = \sin{x}{x} \quad , \quad x \in \mathbf{R} & \text{R: } \\
- & \text{todo}
+ & \dots 
 \end{aligned}\end{split}
-\end{equation*}\end{sphinxadmonition}
-\phantomsection \label{exercise:ch/infinitesimal_calculus/derivatives-problems-exercise-2}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{todo} \sphinxstyleemphasis{Aggiungere problemi}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/infinitesimal_calculus/derivatives-problems-exercise-8}
 
-\begin{sphinxadmonition}{note}{Exercise 24.8.3 (Problemi di geometria)}
+\begin{sphinxadmonition}{note}{Exercise 24.8.9 (Problemi di geometria)}
 
 
 
@@ -8770,9 +9139,9 @@ Data una sfera di raggio \(R\), si chiede di studiare il volume e la superficie 
 
 \end{enumerate}
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/infinitesimal_calculus/derivatives-problems-exercise-3}
+\phantomsection \label{exercise:ch/infinitesimal_calculus/derivatives-problems-exercise-9}
 
-\begin{sphinxadmonition}{note}{Exercise 24.8.4 (Problemi di economia)}
+\begin{sphinxadmonition}{note}{Exercise 24.8.10 (Problemi di economia)}
 
 
 
@@ -8781,17 +9150,32 @@ Data una sfera di raggio \(R\), si chiede di studiare il volume e la superficie 
 \end{sphinxadmonition}
 
 
-\subsection{Approssimazioni locali di funzioni}
-\label{\detokenize{ch/infinitesimal_calculus/derivatives-problems:approssimazioni-locali-di-funzioni}}\begin{itemize}
+\subsection{Metodo di Newton}
+\label{\detokenize{ch/infinitesimal_calculus/derivatives-problems:metodo-di-newton}}\label{\detokenize{ch/infinitesimal_calculus/derivatives-problems:infinitesimal-calculus-derivatives-problems-newton}}
+\sphinxAtStartPar
+Si chiede di risolvere le sequenti equazioni nonlineari con il {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-applications-newton}]{\sphinxcrossref{\DUrole{std,std-ref}{metodo di Newton}}}} (è quindi necessario riformulare il problema come la ricerca degli zeri di una funzione), dopo aver impostato la soluzione con un metodo grafico. Il metodo grafico è necessario a farsi un’idea sul numero di soluzioni da cercare, e sui valori con cui iniziare il metodo di Newton. Si chiede di concludere il procedimento a mano dopo 3 iterazioni, o quando si ottiene una soluzione con errore minore della tolleranza, qui scelta come \(\tau = 0.01\). Si chiede infine di implementare il metodo con un linguaggio di programmazione a piacimento, per cercare una soluzione con tolleranza \(\tau = 10^{-5}\)
+\phantomsection \label{exercise:ch/infinitesimal_calculus/derivatives-problems-exercise-10}
+
+\begin{sphinxadmonition}{note}{Exercise 24.8.11 (Soluzione iterativa di equazioni nonlineari \sphinxhyphen{} Newton)}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \item {} 
 \sphinxAtStartPar
-serie di Taylor? Esercizi su formule di errore di metodi numerici?
+\(\ln x = - 2\)
 
-\end{itemize}
+\item {} 
+\sphinxAtStartPar
+\(e^{-x^2} \cos x = \frac{1}{2}\)
 
+\item {} 
+\sphinxAtStartPar
+\(\dots\)
 
-\subsection{Metodo di Newton}
-\label{\detokenize{ch/infinitesimal_calculus/derivatives-problems:metodo-di-newton}}
+\end{enumerate}
+\end{sphinxadmonition}
+
 \sphinxstepscope
 
 
@@ -9039,7 +9423,7 @@ o in maniera equivalente
 Ripetendo lo stesso procedimento, confrontando la differenza \(f(x) - T_N[f(x);x_0]\) con il termine \((x-x_0)^{N+1}\) si ottiene
 \begin{equation*}
 \begin{split}
-  \lim_{x \rightarrow x_0} \frac{f(x) - T_N[f(x); x_0]}{(x-x_0)^N} = \dots = \lim_{x \rightarrow x_0} \frac{f^{(N+1)}(x)}{(N+1)!} = \frac{f^{(N+1)(x_0)}}{(N+1)!} \ .
+  \lim_{x \rightarrow x_0} \frac{f(x) - T_N[f(x); x_0]}{(x-x_0)^N} = \dots = \lim_{x \rightarrow x_0} \frac{f^{(N+1)}(x)}{(N+1)!} = \frac{f^{(N+1)}(x_0)}{(N+1)!} \ .
 \end{split}
 \end{equation*}
 \sphinxstepscope
@@ -9378,8 +9762,8 @@ In questa sezione vengono elencati alcuni tra gli integrali più comuni, la cui 
 \sphinxstepscope
 
 
-\section{Integrali \sphinxhyphen{} Problemi}
-\label{\detokenize{ch/infinitesimal_calculus/integrals-problems:integrali-problemi}}\label{\detokenize{ch/infinitesimal_calculus/integrals-problems:infinitesimal-calculus-integrals-problems}}\label{\detokenize{ch/infinitesimal_calculus/integrals-problems::doc}}
+\section{Problemi}
+\label{\detokenize{ch/infinitesimal_calculus/integrals-problems:problemi}}\label{\detokenize{ch/infinitesimal_calculus/integrals-problems:infinitesimal-calculus-integrals-problems}}\label{\detokenize{ch/infinitesimal_calculus/integrals-problems::doc}}
 
 \subsection{Calcolo integrali indefiniti}
 \label{\detokenize{ch/infinitesimal_calculus/integrals-problems:calcolo-integrali-indefiniti}}\phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-0}
