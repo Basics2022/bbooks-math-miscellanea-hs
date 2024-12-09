@@ -3,17 +3,40 @@
 
 ## Calcolo derivate
 - derivate fondamentali, regole di derivazione
-```{exercise}
+```{exercise} Calcolo derivate con definizione
+Essendo la derivata definita come limite di un rapporto incrementale, questi esercizi possono essere visti come ulteriori esercizi sui limiti.
+...
 ```
 
-## Calcolo di limiti con la regola di de l'Hopital
-- forme indeterminate $\frac{f(x)}{g(x)}$
+```{exercise} Verifica della derivabilità di funzioni
+Essendo la derivata definita come limite di un rapporto incrementale, e venendo richiesto di controllare che questo limite esista, anche questi esercizi possono essere visti come ulteriori esercizi sui limiti.
+...
+```
+
+```{exercise} Calcolo delle derivate
+```
+
+```{exercise} Calcolo di limiti con la regola di de l'Hopital
+forme indeterminate $\frac{f(x)}{g(x)}$
+...
+```
 
 ## Problemi di geometria
-- rette tangenti alle curve
+```{exercise} Problemi id geometria
+Rette tangenti a cuve
+```
 
-## Studio di funzione
-- dominio, limiti, massimi e minimi di una funzione, punti di flesso
+## Studio di funzione: massimi, minimi e flessi; concavità
+Le derivate permettono di aggiungere dettagli allo studio di funzione, iniziato nel capitolo precedente. Grazie alle derivate, è possibile e studiarne la tendenza e la concavità, identificabili rispettivalemnte con $f'(x)$ e $f''(x)$); le condizioni di derivata prima e/o seconda nulla definiscono poi i punti di minimo e di massimo locali di una funzione (derivabile), i punti di flesso.
+```{exercise}
+
+```
+
+## Serie di Taylor
+Problemi di approssimazione. Fare qualche esercizio di schemi numerici...
+```{exercise}
+
+```
 
 ## Problemi di ottimizzazione
 ```{exercise}
