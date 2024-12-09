@@ -1,5 +1,5 @@
 (infinitesimal-calculus:derivatives:problems)=
-# Derivate - Problemi
+# Problemi
 
 ## Calcolo derivate
 - derivate fondamentali, regole di derivazione
