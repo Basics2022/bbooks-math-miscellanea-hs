@@ -7,8 +7,8 @@
 **todo**
 ```
 
-
-## Calcolo di limiti base
+(infinitesimal-calculus:analysis:problems:limits-easy)=
+```{exercise} Verifica/calcolo con definizione
 1. $\lim_{x \to 1} (x^2 + 3x - 4)$  
 2. $\lim_{x \to -2} (x^3 + 2x^2 - 1)$  
 3. $\lim_{x \to 0} \frac{x + 1}{2x + 3}$  
@@ -19,6 +19,9 @@
 8. $\lim_{x \to 3} \frac{2x - 6}{x^2 - 9}$  
 9. $\lim_{x \to 0} \frac{x + \sin(x)}{x^2}$  
 10. $\lim_{x \to 0} e^x - 1$  
+```
+
+Nel [box](infinitesimal-calculus:analysis:problems:limits-easy) si vede che
 
 ## 2. Limiti laterali
 1. $\lim_{x \to 0^+} \frac{1}{x}$  
@@ -118,6 +121,7 @@ Risolvere i seguenti limiti. Alcuni esercizi potrebbero non essere di immediata 
 9. Determina gli asintoti orizzontali della funzione $f(x) = \frac{2x}{x^2 + 1}$.  
 10. Trova gli asintoti verticali della funzione $f(x) = \frac{1}{x^3 - x}$.  
 
+()
 ```{exercise} Limiti e applicazioni
 :class: dropdown
 ```
