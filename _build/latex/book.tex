@@ -903,7 +903,7 @@ se \(\Delta < 0\) \sphinxstylestrong{non esistono soluzioni reali}, poiché la r
 
 
 \subsubsection{Equazioni non lineari generali}
-\label{\detokenize{ch/algebra/real-algebra:equazioni-non-lineari-generali}}\label{\detokenize{ch/algebra/real-algebra:id1}}
+\label{\detokenize{ch/algebra/real-algebra:equazioni-non-lineari-generali}}\label{\detokenize{ch/algebra/real-algebra:math-hs-algebra-real-eq-nonlinear}}
 \sphinxAtStartPar
 Mentre esiste una formula generale per le equazioni di terzo grado e di quarto grado, queste risultano spesso di scarsa e scarsissima (nulla?) utilità. Per le equazioni polinomiali, a volte è possibile utilizzare i risultati del {\hyperref[\detokenize{ch/precalculus/polynomials:math-hs-precalculus-polynomials-alg-fund-thm}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema fondamentale dell’algebra}}}} per scrivere il polinomio come prodotto di polinomi di primo e secondo ordine, per i quali è possibile calcolare gli zeri con le formule mostrate nelle sezioni sulle equazioni di primo e secondo grado.
 
@@ -1867,7 +1867,7 @@ avendo usanto l”{\hyperref[\detokenize{ch/algebra/linear-algebra:math-hs-algeb
 \sphinxstylestrong{Osservazione.} \sphinxstylestrong{Non} vale la \sphinxstylestrong{proprietà commutativa} per il prodotto di matrici. Per di più, in generale non è possibile formare il prodotto \(\mathbf{B} \mathbf{A}\), se \(m \ne n\).
 
 \end{itemize}
-\label{ch/algebra/linear-algebra:example-0}
+\label{ch/algebra/linear-algebra:matrix-prod-noncomm}
 \begin{sphinxadmonition}{note}{Example 6.3.1 (Non\sphinxhyphen{}commutatività del prodotto matriciale)}
 
 
@@ -1903,22 +1903,8 @@ i prodotti \(\mathbf{A}\mathbf{B}\) e \(\mathbf{B} \mathbf{A}\) valgono
  \begin{bmatrix}  1 & 1 \\  1 & 4 \end{bmatrix}
 \end{split}
 \end{equation*}\end{sphinxadmonition}
-\label{ch/algebra/linear-algebra:example-1}
-\begin{sphinxadmonition}{note}{Example 6.3.2}
 
 
-
-\sphinxAtStartPar
-\sphinxstylestrong{todo}
-\end{sphinxadmonition}
-\label{ch/algebra/linear-algebra:example-2}
-\begin{sphinxadmonition}{note}{Example 6.3.3}
-
-
-
-\sphinxAtStartPar
-\sphinxstylestrong{todo}
-\end{sphinxadmonition}
 
 
 \subsection{Matrice come funzione lineare}
@@ -1989,7 +1975,7 @@ I metodi presentati sono tra di loro equivalenti, intendendo che portano alla st
 \label{\detokenize{ch/algebra/linear-algebra:metodo-di-sostituzione}}\label{\detokenize{ch/algebra/linear-algebra:math-hs-algebra-linear-linear-system-sol-substitution}}
 \sphinxAtStartPar
 Il metodo di sostituzione consiste nell’usare in successione un’equazione per ricavare un’incognita in funzione delle altre incognite, e sostituire l’espressione ricavata nelle altre successioni, per ottenere un sistema lineare con al dimensione ridotta di 1. Si continua così fino a ottenere un’equazione in un’incognita, immediata da risolvere. Successivamente si trovano i valori delle altre incognite in funzione delle incognite già calcolate. Se esiste una soluzione del problema, l’algoritmo descritto permette di calcolare la soluzione. \sphinxstylestrong{todo} \sphinxstyleemphasis{Altrimenti, in caso di esistenza di infinite soluzioni si arriva a un’identità \(0=0\); in caso di nessuna soluzione si arriva a una contraddizione \(1=0\).} \sphinxstylestrong{todo} \sphinxstyleemphasis{vedi esempi sotto}
-\label{ch/algebra/linear-algebra:example-3}
+\label{ch/algebra/linear-algebra:linsys-subs}
 \begin{sphinxadmonition}{note}{Example 6.4.1 (Metodo di sostituzione per sistema quadrato determinato)}
 
 
@@ -2043,8 +2029,8 @@ Una volta trovato il valore \(x_2 = -1\), si «torna indietro» per calcolare \(
 \label{\detokenize{ch/algebra/linear-algebra:metodo-di-eliminazione-di-gauss}}\label{\detokenize{ch/algebra/linear-algebra:math-hs-algebra-linear-linear-system-sol-gauss}}
 \sphinxAtStartPar
 Il metodo di eliminazione di Gauss consiste nella combinazione lineare delle equazioni del sistema per ottenere una forma del sistema facilmente risolvibile, tipicamente una matrice dei coefficienti con forma triangolare.
-\label{ch/algebra/linear-algebra:example-4}
-\begin{sphinxadmonition}{note}{Example 6.4.2 (Metodo di sostituzione per sistema quadrato determinato)}
+\label{ch/algebra/linear-algebra:linsys-gauss}
+\begin{sphinxadmonition}{note}{Example 6.4.2 (Metodo di eliminazione di Gauss per sistema quadrato)}
 
 
 
@@ -2111,22 +2097,22 @@ a ritroso: questo ordine di soluzione permette di risolvere \(n\) equazioni che 
 \label{\detokenize{ch/algebra/linear-algebra:teorema-di-rouche-capelli}}\label{\detokenize{ch/algebra/linear-algebra:math-hs-algebra-linear-rouche-capelli}}
 
 \subsection{Interpretazione geometrica}
-\label{\detokenize{ch/algebra/linear-algebra:interpretazione-geometrica}}\label{\detokenize{ch/algebra/linear-algebra:math-hs-algebra-linear-rouche-capelli-geometry}}\label{ch/algebra/linear-algebra:example-5}
+\label{\detokenize{ch/algebra/linear-algebra:interpretazione-geometrica}}\label{\detokenize{ch/algebra/linear-algebra:math-hs-algebra-linear-rouche-capelli-geometry}}\label{ch/algebra/linear-algebra:linsys-geo-1}
 \begin{sphinxadmonition}{note}{Example 6.5.1 (Sistema quadrato determinato)}
 
 
 \end{sphinxadmonition}
-\label{ch/algebra/linear-algebra:example-6}
+\label{ch/algebra/linear-algebra:linsys-geo-2}
 \begin{sphinxadmonition}{note}{Example 6.5.2 (Sistema quadrato indeterminato)}
 
 
 \end{sphinxadmonition}
-\label{ch/algebra/linear-algebra:example-7}
+\label{ch/algebra/linear-algebra:linsys-geo-3}
 \begin{sphinxadmonition}{note}{Example 6.5.3 (Sistema quadrato sovradeterminato)}
 
 
 \end{sphinxadmonition}
-\label{ch/algebra/linear-algebra:example-8}
+\label{ch/algebra/linear-algebra:linsys-geo-4}
 \begin{sphinxadmonition}{note}{Example 6.5.4 (Sistema indeterminato)}
 
 
@@ -2137,7 +2123,7 @@ a ritroso: questo ordine di soluzione permette di risolvere \(n\) equazioni che 
 \label{\detokenize{ch/algebra/linear-algebra:problemi}}\label{\detokenize{ch/algebra/linear-algebra:math-hs-algebra-linear-problems}}
 
 \subsection{Matrici come funzione lineare}
-\label{\detokenize{ch/algebra/linear-algebra:matrici-come-funzione-lineare}}\label{\detokenize{ch/algebra/linear-algebra:math-hs-algebra-linear-problems-linear-fun}}\phantomsection \label{exercise:ch/algebra/linear-algebra-exercise-9}
+\label{\detokenize{ch/algebra/linear-algebra:matrici-come-funzione-lineare}}\label{\detokenize{ch/algebra/linear-algebra:math-hs-algebra-linear-problems-linear-fun}}\phantomsection \label{exercise:ch/algebra/linear-algebra-exercise-7}
 
 \begin{sphinxadmonition}{note}{Exercise 6.6.1 (Matrici e scalatura)}
 
@@ -2177,7 +2163,7 @@ Dimostrare che questa trasformazione rappresenta la riflessione rispetto all’o
 
 \end{itemize}
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/algebra/linear-algebra-exercise-10}
+\phantomsection \label{exercise:ch/algebra/linear-algebra-exercise-8}
 
 \begin{sphinxadmonition}{note}{Exercise 6.6.2 (Matrici e riflessioni)}
 
@@ -2209,7 +2195,7 @@ Dimostrare che la trasformazione inversa \(\mathbf{A}^{-1}\) esiste ed è uguale
 
 \end{itemize}
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/algebra/linear-algebra-exercise-11}
+\phantomsection \label{exercise:ch/algebra/linear-algebra-exercise-9}
 
 \begin{sphinxadmonition}{note}{Exercise 6.6.3 (Matrici e rotazioni)}
 
@@ -2249,7 +2235,7 @@ Dimostrare che la trasformazione inversa \(\mathbf{A}^{-1}\) esiste ed è uguale
 \sphinxAtStartPar
 \sphinxstylestrong{todo} Dipendenza logica di questo esercizio dalle basi di {\hyperref[\detokenize{ch/trigonometry:math-hs-trigonometry}]{\sphinxcrossref{\DUrole{std,std-ref}{trigonometria}}}}. Stabilire un ordine consigliato di accesso a questo \(\texttt{bbook}\)
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/algebra/linear-algebra-exercise-12}
+\phantomsection \label{exercise:ch/algebra/linear-algebra-exercise-10}
 
 \begin{sphinxadmonition}{note}{Exercise 6.6.4 (Proiezione ortogonale lungo una direzione data)}
 
@@ -2285,7 +2271,7 @@ Dimostrare che il nucleo della trasformazione è formato dai vettori colonna \(\
 
 \end{itemize}
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/algebra/linear-algebra-exercise-13}
+\phantomsection \label{exercise:ch/algebra/linear-algebra-exercise-11}
 
 \begin{sphinxadmonition}{note}{Exercise 6.6.5 (Proiezione ortogonale nella direzione perpendicolare a una direzione data)}
 
@@ -2321,7 +2307,7 @@ Dimostrare che il nucleo della trasformazione è formato dai vettori colonna \(a
 
 \end{itemize}
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/algebra/linear-algebra-exercise-14}
+\phantomsection \label{exercise:ch/algebra/linear-algebra-exercise-12}
 
 \begin{sphinxadmonition}{note}{Exercise 6.6.6 (Scomposizione di una matrice \sphinxhyphen{} somma di parte simmetrica e antisimmetrica)}
 
@@ -2330,7 +2316,7 @@ Dimostrare che il nucleo della trasformazione è formato dai vettori colonna \(a
 \sphinxAtStartPar
 Ogni matrice può essere scritta come la somma di una parte simmetrica e una parte antisimmetrica.
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/algebra/linear-algebra-exercise-15}
+\phantomsection \label{exercise:ch/algebra/linear-algebra-exercise-13}
 
 \begin{sphinxadmonition}{note}{Exercise 6.6.7 (Scomposizione di una matrice \sphinxhyphen{} …)}
 
@@ -3551,7 +3537,7 @@ La geometria analitica…
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
-\DUrole{xref,myst}{Sistemi di coordinate}
+{\hyperref[\detokenize{ch/analytic_geometry/analytic_geometry_3d/points:geometry-analytic-3d-coordinates}]{\sphinxcrossref{\DUrole{std,std-ref}{Sistemi di coordinate}}}}
 
 \item {} 
 \sphinxAtStartPar
@@ -4755,7 +4741,7 @@ per poi calcolare il discrimminante,
 
 
 \section{Sistemi di coordinate per lo spazio euclideo \protect\(E^3\protect\)}
-\label{\detokenize{ch/analytic_geometry/analytic_geometry_3d/points:sistemi-di-coordinate-per-lo-spazio-euclideo-e-3}}\label{\detokenize{ch/analytic_geometry/analytic_geometry_3d/points:geometry-analytic-3d-points}}\label{\detokenize{ch/analytic_geometry/analytic_geometry_3d/points::doc}}
+\label{\detokenize{ch/analytic_geometry/analytic_geometry_3d/points:sistemi-di-coordinate-per-lo-spazio-euclideo-e-3}}\label{\detokenize{ch/analytic_geometry/analytic_geometry_3d/points:geometry-analytic-3d-coordinates}}\label{\detokenize{ch/analytic_geometry/analytic_geometry_3d/points::doc}}
 
 \subsection{Coordinate cartesiane}
 \label{\detokenize{ch/analytic_geometry/analytic_geometry_3d/points:coordinate-cartesiane}}
@@ -7863,7 +7849,7 @@ Usa la definizione di limite per dimostrare che \(\lim_{x \to 0} \ln(1+x) = 0\).
 
 
 \sphinxAtStartPar
-Risolvere i seguenti limiti. Alcuni esercizi potrebbero non essere di immediata soluzione con gli strumenti introdotti in questo capitolo, ma saranno di soluzione immediata una volta introdotto il {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm-hopital}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema di de l’Hopital}}}} nel capitolo sulle \DUrole{xref,myst}{derivate}.
+Risolvere i seguenti limiti. Alcuni esercizi potrebbero non essere di immediata soluzione con gli strumenti introdotti in questo capitolo, ma saranno di soluzione immediata una volta introdotto il {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm-hopital}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema di de l’Hopital}}}} nel capitolo sulle {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives}]{\sphinxcrossref{\DUrole{std,std-ref}{derivate}}}}.
 \begin{enumerate}
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \item {} 
@@ -8338,7 +8324,7 @@ Nell’ipotesi che \(f(x) \cdot g(x) > 0\) (concordi, serve teorema permanenza s
 \subsection{Limiti fondamentali}
 \label{\detokenize{ch/infinitesimal_calculus/analysis-notes:limiti-fondamentali}}\label{\detokenize{ch/infinitesimal_calculus/analysis-notes:infinitesimal-calculus-limits-fund-notes}}
 \sphinxAtStartPar
-Vengono qui dimostrati i \DUrole{xref,myst}{limiti fondamentali}.
+Vengono qui dimostrati i {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-fund}]{\sphinxcrossref{\DUrole{std,std-ref}{limiti fondamentali}}}}.
 \subsubsection*{Dimostrazione di \protect\(\ \lim_{x \rightarrow 0} \frac{\sin x}{x} = 1 \protect\)}
 
 \sphinxAtStartPar
@@ -8601,46 +8587,41 @@ Le espansioni in serie di Taylor e di MacLaurin sono serie polinomiali che forni
 La \sphinxstylestrong{serie di Taylor} della funzione \(f(x)\) in un intervallo centrato in \(x_0\) è la serie
 \begin{equation*}
 \begin{split}\begin{aligned}
-  T[f(x); x_0] & = \sum_{n=0}^{\infty} \dfrac{f^{(n)(x_0)}}{n!} (x-x_0)^n = \\
+  T[f(x); x_0] & = \sum_{n=0}^{\infty} \dfrac{f^{(n)}(x_0)}{n!} (x-x_0)^n = \\
        & = f(x_0) + f'(x_0) (x-x_0) + \dfrac{f''(x_0)^2}{2!} (x-x_0)^2 + \dots \ .
 \end{aligned}\end{split}
 \end{equation*}
 \sphinxAtStartPar
-La serie di MacLaurin è la serie di Taylor centrata in \(x_0 = 0\).
-
+La serie di MacLaurin è la serie di Taylor centrata in \(x_0 = 0\). La serie di Taylor troncata al grado \(N\) è il polinomio di grado \(N\) formato dalla sommatoria dei primi \(N+1\) termini della serie di Taylor,
+\begin{equation*}
+\begin{split}T_N[f(x); x_0] = \sum_{n=0}^{N} \dfrac{f^{(n)}(x_0)}{n!} (x-x_0)^n \ .\end{split}
+\end{equation*}
 \sphinxAtStartPar
-La serie di Taylor troncata al \(n\)\sphinxhyphen{}esimo termine fornisce un’approssimazione locale della funzione \(f(x)\) di ordine \(n\), nel senso definito dal seguente teorema.
+La serie di Taylor troncata al \(N\)\sphinxhyphen{}esimo termine fornisce un’approssimazione locale della funzione \(f(x)\) di ordine \(n\), nel senso definito dal seguente teorema.
 \label{ch/infinitesimal_calculus/derivatives:thm:infinitesimal-calculus:derivatives:taylor}
-\begin{sphinxadmonition}{note}{Theorem 24.6.1 (Approssimazione locale)}
+\begin{sphinxadmonition}{note}{Theorem 24.6.1 (Approssimazione locale \sphinxhyphen{} 1)}
 
 
-\begin{equation*}
-\begin{split}\lim_{x \rightarrow x_0} \frac{f(x) - T[f(x); x_0]}{x^n} = f^{(n)}(x_0) \ , \end{split}
-\end{equation*}\begin{equation*}
-\begin{split}f(x) = T[f(x); x_0] + o(x^n) \quad \text{ per } \quad x \rightarrow x_0\end{split}
-\end{equation*}\end{sphinxadmonition}
-\subsubsection*{Dimostrazione}
 
 \sphinxAtStartPar
-Usando il teorema di de l’Hopital, fino a quando il rapporto non è una forma indeterminata
-\begin{equation*}
-\begin{split}\begin{aligned}
-  \lim_{x \rightarrow x_0} \frac{f(x) - T[f(x); x_0]}{x^n}
-  & = \lim_{x \rightarrow x_0} \dfrac{f(x) - f(x_0) + f'(x_0) (x-x_0) + \frac{f''(x_0)}{2!} (x-x_0)^2 + \dots \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n}{x^n} = \text{(H)} = \\
-  & = \lim_{x \rightarrow x_0} \dfrac{f'(x) - f'(x_0) + \frac{f''(x_0)}{1!} (x-x_0) + \dots \frac{f^{(n)}(x_0)}{(n-1)!}(x-x_0)^{n-1}}{n \, x^{n-1}} = \text{(H)} = \\
-  & = \lim_{x \rightarrow x_0} \dfrac{f''(x) - f''(x_0) + \dots \frac{f^{(n)}(x_0)}{(n-2)!}(x-x_0)^{n-2}}{n \, (n-1) \, x^{n-1}} = \text{(H)} =\\
-  & = \dots \\
-  & = \lim_{x \rightarrow x_0} \dfrac{f^{(n)}(x) - f^{(n)}(x_0)}{n!} =  0 \ ,
-\end{aligned}\end{split}
+\sphinxstylestrong{todo} \sphinxstyleemphasis{Ipotesi del teorema}. Valgono i seguenti risultati:
+\begin{itemize}
+\item {} \begin{equation*}
+\begin{split}\lim_{x \rightarrow x_0} \frac{f(x) - T_N[f(x); x_0]}{x^N} = 0 \ , \end{split}
 \end{equation*}
 \sphinxAtStartPar
-si dimostra che il numeratore è un infinitesimo del denominatore. Usando la notazione dell”\sphinxstyleemphasis{»o piccolo»} per gli infinitesimi si può quindi scrivere l’approssimazione locale come:
+o usando la notazione di «o piccolo» per il {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-infinite-simal}]{\sphinxcrossref{\DUrole{std,std-ref}{confronto di infinitesimi}}}},
 \begin{equation*}
-\begin{split}f(x) - T[f(x), x_0] = o\left((x-x_0)^n\right) \ ,\end{split}
+\begin{split}f(x) = T_N[f(x); x_0] + o\left((x-x_0)^N\right) \quad \text{ per } \quad x \rightarrow x_0 \ .\end{split}
 \end{equation*}
+\item {} \begin{equation*}
+\begin{split}f(x) - T_N[f(x); x_0] \sim \frac{f^{(N+1)}}{(N+1)!} (x - x_0)^{N+1} \quad x \rightarrow x_0 \ \end{split}
+\end{equation*}
+\end{itemize}
+\end{sphinxadmonition}
+
 \sphinxAtStartPar
-o in maniera equivalente
-\$\(f(x) = T[f(x), x_0] + o\left((x-x_0)^n\right) \ .\)\$
+{\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives-notes:infinitesimal-calculus-derivatives-taylor-notes}]{\sphinxcrossref{\DUrole{std,std-ref}{Dimostrazione a fine capitolo}}}}.
 
 
 \subsection{Esempi}
@@ -9030,7 +9011,37 @@ Usando le formule di somma delle funzioni armoniche, \sphinxstylestrong{todo} re
 \label{\detokenize{ch/infinitesimal_calculus/derivatives-notes:derivate-di-ordine-superiore}}\label{\detokenize{ch/infinitesimal_calculus/derivatives-notes:infinitesimal-calculus-derivatives-higher-notes}}
 
 \subsection{Serie di Taylor e MacLaurin}
-\label{\detokenize{ch/infinitesimal_calculus/derivatives-notes:serie-di-taylor-e-maclaurin}}\label{\detokenize{ch/infinitesimal_calculus/derivatives-notes:infinitesimal-calculus-derivatives-taylor-notes}}
+\label{\detokenize{ch/infinitesimal_calculus/derivatives-notes:serie-di-taylor-e-maclaurin}}\label{\detokenize{ch/infinitesimal_calculus/derivatives-notes:infinitesimal-calculus-derivatives-taylor-notes}}\subsubsection*{Dimostrazione delle proprietà di approssimazione locale della serie di Taylor}
+
+\sphinxAtStartPar
+Usando il teorema di de l’Hopital, fino a quando il rapporto non è una forma indeterminata
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \lim_{x \rightarrow x_0} \frac{f(x) - T_N[f(x); x_0]}{(x-x_0)^N}
+  & = \lim_{x \rightarrow x_0} \dfrac{f(x) - f(x_0) + f'(x_0) (x-x_0) + \frac{f''(x_0)}{2!} (x-x_0)^2 + \dots \frac{f^{(N)}(x_0)}{N!}(x-x_0)^N}{(x-x_0)^N} = \text{(H)} = \\
+  & = \lim_{x \rightarrow x_0} \dfrac{f'(x) - f'(x_0) + \frac{f''(x_0)}{1!} (x-x_0) + \dots \frac{f^{(N)}(x_0)}{(N-1)!}(x-x_0)^{N-1}}{N \, (x-x_0)^{N-1}} = \text{(H)} = \\
+  & = \lim_{x \rightarrow x_0} \dfrac{f''(x) - f''(x_0) + \dots \frac{f^{(N)}(x_0)}{(N-2)!}(x-x_0)^{N-2}}{N \, (N-1) \, (x-x_0)^{n-1}} = \text{(H)} =\\
+  & = \dots \\
+  & = \lim_{x \rightarrow x_0} \dfrac{f^{(N)}(x) - f^{(N)}(x_0)}{N!} =  0 \ ,
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+si dimostra che il numeratore è un infinitesimo dello stesso ordine del denominatore. Usando la notazione dell”\sphinxstyleemphasis{»o piccolo»} per gli infinitesimi si può quindi scrivere l’approssimazione locale come:
+\begin{equation*}
+\begin{split}f(x) - T_N[f(x), x_0] = o\left((x-x_0)^N\right) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+o in maniera equivalente
+\begin{equation*}
+\begin{split}f(x) = T_N[f(x), x_0] + o\left((x-x_0)^N\right) \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Ripetendo lo stesso procedimento, confrontando la differenza \(f(x) - T_N[f(x);x_0]\) con il termine \((x-x_0)^{N+1}\) si ottiene
+\begin{equation*}
+\begin{split}
+  \lim_{x \rightarrow x_0} \frac{f(x) - T_N[f(x); x_0]}{(x-x_0)^N} = \dots = \lim_{x \rightarrow x_0} \frac{f^{(N+1)}(x)}{(N+1)!} = \frac{f^{(N+1)(x_0)}}{(N+1)!} \ .
+\end{split}
+\end{equation*}
 \sphinxstepscope
 
 
@@ -11130,21 +11141,6 @@ RL: ottimizzazione/controllo
 \bigletter{example\sphinxhyphen{}3}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}3}\sphinxstyleindexextra{ch/algebra/real\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/real-algebra:\detokenize{example-3}}
 \indexspace
-\bigletter{example\sphinxhyphen{}4}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}4}\sphinxstyleindexextra{ch/algebra/linear\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/linear-algebra:\detokenize{example-4}}
-\indexspace
-\bigletter{example\sphinxhyphen{}5}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}5}\sphinxstyleindexextra{ch/algebra/linear\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/linear-algebra:\detokenize{example-5}}
-\indexspace
-\bigletter{example\sphinxhyphen{}6}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}6}\sphinxstyleindexextra{ch/algebra/linear\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/linear-algebra:\detokenize{example-6}}
-\indexspace
-\bigletter{example\sphinxhyphen{}7}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}7}\sphinxstyleindexextra{ch/algebra/linear\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/linear-algebra:\detokenize{example-7}}
-\indexspace
-\bigletter{example\sphinxhyphen{}8}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}8}\sphinxstyleindexextra{ch/algebra/linear\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/linear-algebra:\detokenize{example-8}}
-\indexspace
 \bigletter{integrals:thm:avg}
 \item\relax\sphinxstyleindexentry{integrals:thm:avg}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{integrals:thm:avg}}
 \indexspace
@@ -11153,6 +11149,27 @@ RL: ottimizzazione/controllo
 \indexspace
 \bigletter{integrals:thm:fund:reynolds}
 \item\relax\sphinxstyleindexentry{integrals:thm:fund:reynolds}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{integrals:thm:fund:reynolds}}
+\indexspace
+\bigletter{linsys\sphinxhyphen{}gauss}
+\item\relax\sphinxstyleindexentry{linsys\sphinxhyphen{}gauss}\sphinxstyleindexextra{ch/algebra/linear\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/linear-algebra:\detokenize{linsys-gauss}}
+\indexspace
+\bigletter{linsys\sphinxhyphen{}geo\sphinxhyphen{}1}
+\item\relax\sphinxstyleindexentry{linsys\sphinxhyphen{}geo\sphinxhyphen{}1}\sphinxstyleindexextra{ch/algebra/linear\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/linear-algebra:\detokenize{linsys-geo-1}}
+\indexspace
+\bigletter{linsys\sphinxhyphen{}geo\sphinxhyphen{}2}
+\item\relax\sphinxstyleindexentry{linsys\sphinxhyphen{}geo\sphinxhyphen{}2}\sphinxstyleindexextra{ch/algebra/linear\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/linear-algebra:\detokenize{linsys-geo-2}}
+\indexspace
+\bigletter{linsys\sphinxhyphen{}geo\sphinxhyphen{}3}
+\item\relax\sphinxstyleindexentry{linsys\sphinxhyphen{}geo\sphinxhyphen{}3}\sphinxstyleindexextra{ch/algebra/linear\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/linear-algebra:\detokenize{linsys-geo-3}}
+\indexspace
+\bigletter{linsys\sphinxhyphen{}geo\sphinxhyphen{}4}
+\item\relax\sphinxstyleindexentry{linsys\sphinxhyphen{}geo\sphinxhyphen{}4}\sphinxstyleindexextra{ch/algebra/linear\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/linear-algebra:\detokenize{linsys-geo-4}}
+\indexspace
+\bigletter{linsys\sphinxhyphen{}subs}
+\item\relax\sphinxstyleindexentry{linsys\sphinxhyphen{}subs}\sphinxstyleindexextra{ch/algebra/linear\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/linear-algebra:\detokenize{linsys-subs}}
+\indexspace
+\bigletter{matrix\sphinxhyphen{}prod\sphinxhyphen{}noncomm}
+\item\relax\sphinxstyleindexentry{matrix\sphinxhyphen{}prod\sphinxhyphen{}noncomm}\sphinxstyleindexextra{ch/algebra/linear\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/linear-algebra:\detokenize{matrix-prod-noncomm}}
 \indexspace
 \bigletter{set\sphinxhyphen{}fun\sphinxhyphen{}def}
 \item\relax\sphinxstyleindexentry{set\sphinxhyphen{}fun\sphinxhyphen{}def}\sphinxstyleindexextra{ch/set}\sphinxstyleindexpageref{ch/set:\detokenize{set-fun-def}}

@@ -341,43 +341,62 @@ Le espansioni in serie di Taylor e di MacLaurin sono serie polinomiali che forni
 La **serie di Taylor** della funzione $f(x)$ in un intervallo centrato in $x_0$ è la serie
 
 $$\begin{aligned}
-  T[f(x); x_0] & = \sum_{n=0}^{\infty} \dfrac{f^{(n)(x_0)}}{n!} (x-x_0)^n = \\
+  T[f(x); x_0] & = \sum_{n=0}^{\infty} \dfrac{f^{(n)}(x_0)}{n!} (x-x_0)^n = \\
        & = f(x_0) + f'(x_0) (x-x_0) + \dfrac{f''(x_0)^2}{2!} (x-x_0)^2 + \dots \ .
 \end{aligned}$$
 
-La serie di MacLaurin è la serie di Taylor centrata in $x_0 = 0$.
+La serie di MacLaurin è la serie di Taylor centrata in $x_0 = 0$. La serie di Taylor troncata al grado $N$ è il polinomio di grado $N$ formato dalla sommatoria dei primi $N+1$ termini della serie di Taylor,
 
-La serie di Taylor troncata al $n$-esimo termine fornisce un'approssimazione locale della funzione $f(x)$ di ordine $n$, nel senso definito dal seguente teorema.
-```{prf:theorem} Approssimazione locale
+$$T_N[f(x); x_0] = \sum_{n=0}^{N} \dfrac{f^{(n)}(x_0)}{n!} (x-x_0)^n \ .$$
+
+La serie di Taylor troncata al $N$-esimo termine fornisce un'approssimazione locale della funzione $f(x)$ di ordine $n$, nel senso definito dal seguente teorema.
+```{prf:theorem} Approssimazione locale - 1
 :label: thm:infinitesimal-calculus:derivatives:taylor
+**todo** *Ipotesi del teorema*. Valgono i seguenti risultati:
 
-$$\lim_{x \rightarrow x_0} \frac{f(x) - T[f(x); x_0]}{x^n} = f^{(n)}(x_0) \ , $$
+- $$\lim_{x \rightarrow x_0} \frac{f(x) - T_N[f(x); x_0]}{x^N} = 0 \ , $$
 
-$$f(x) = T[f(x); x_0] + o(x^n) \quad \text{ per } \quad x \rightarrow x_0$$
+  o usando la notazione di "o piccolo" per il [confronto di infinitesimi](infinitesimal-calculus:limits:infinite-simal),
 
-``` 
+  $$f(x) = T_N[f(x); x_0] + o\left((x-x_0)^N\right) \quad \text{ per } \quad x \rightarrow x_0 \ .$$
+
+- $$f(x) - T_N[f(x); x_0] \sim \frac{f^{(N+1)}}{(N+1)!} (x - x_0)^{N+1} \quad x \rightarrow x_0 \ $$
+
+```
+````{only} latex
+[Dimostrazione a fine capitolo](infinitesimal-calculus:derivatives:taylor:notes).
+````
+````{only} html
 ```{dropdown} Dimostrazione
 Usando il teorema di de l'Hopital, fino a quando il rapporto non è una forma indeterminata
 
 $$\begin{aligned}
-  \lim_{x \rightarrow x_0} \frac{f(x) - T[f(x); x_0]}{x^n}
-  & = \lim_{x \rightarrow x_0} \dfrac{f(x) - f(x_0) + f'(x_0) (x-x_0) + \frac{f''(x_0)}{2!} (x-x_0)^2 + \dots \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n}{x^n} = \text{(H)} = \\
-  & = \lim_{x \rightarrow x_0} \dfrac{f'(x) - f'(x_0) + \frac{f''(x_0)}{1!} (x-x_0) + \dots \frac{f^{(n)}(x_0)}{(n-1)!}(x-x_0)^{n-1}}{n \, x^{n-1}} = \text{(H)} = \\
-  & = \lim_{x \rightarrow x_0} \dfrac{f''(x) - f''(x_0) + \dots \frac{f^{(n)}(x_0)}{(n-2)!}(x-x_0)^{n-2}}{n \, (n-1) \, x^{n-1}} = \text{(H)} =\\
+  \lim_{x \rightarrow x_0} \frac{f(x) - T_N[f(x); x_0]}{(x-x_0)^N}
+  & = \lim_{x \rightarrow x_0} \dfrac{f(x) - f(x_0) + f'(x_0) (x-x_0) + \frac{f''(x_0)}{2!} (x-x_0)^2 + \dots \frac{f^{(N)}(x_0)}{N!}(x-x_0)^N}{(x-x_0)^N} = \text{(H)} = \\
+  & = \lim_{x \rightarrow x_0} \dfrac{f'(x) - f'(x_0) + \frac{f''(x_0)}{1!} (x-x_0) + \dots \frac{f^{(N)}(x_0)}{(N-1)!}(x-x_0)^{N-1}}{N \, (x-x_0)^{N-1}} = \text{(H)} = \\
+  & = \lim_{x \rightarrow x_0} \dfrac{f''(x) - f''(x_0) + \dots \frac{f^{(N)}(x_0)}{(N-2)!}(x-x_0)^{N-2}}{N \, (N-1) \, (x-x_0)^{n-1}} = \text{(H)} =\\
   & = \dots \\
-  & = \lim_{x \rightarrow x_0} \dfrac{f^{(n)}(x) - f^{(n)}(x_0)}{n!} =  0 \ ,
+  & = \lim_{x \rightarrow x_0} \dfrac{f^{(N)}(x) - f^{(N)}(x_0)}{N!} =  0 \ ,
 \end{aligned}$$
 
-si dimostra che il numeratore è un infinitesimo del denominatore. Usando la notazione dell'*"o piccolo"* per gli infinitesimi si può quindi scrivere l'approssimazione locale come:
+si dimostra che il numeratore è un infinitesimo dello stesso ordine del denominatore. Usando la notazione dell'*"o piccolo"* per gli infinitesimi si può quindi scrivere l'approssimazione locale come:
 
-$$f(x) - T[f(x), x_0] = o\left((x-x_0)^n\right) \ ,$$
+$$f(x) - T_N[f(x), x_0] = o\left((x-x_0)^N\right) \ ,$$
 
 o in maniera equivalente
-$$f(x) = T[f(x), x_0] + o\left((x-x_0)^n\right) \ .$$
+
+$$f(x) = T_N[f(x), x_0] + o\left((x-x_0)^N\right) \ .$$
+
+Ripetendo lo stesso procedimento, confrontando la differenza $f(x) - T_N[f(x);x_0]$ con il termine $(x-x_0)^{N+1}$ si ottiene 
+
+$$
+  \lim_{x \rightarrow x_0} \frac{f(x) - T_N[f(x); x_0]}{(x-x_0)^N} = \dots = \lim_{x \rightarrow x_0} \frac{f^{(N+1)}(x)}{(N+1)!} = \frac{f^{(N+1)}(x_0)}{(N+1)!} \ .
+$$
 
 ```
+````
 
-#### Esempi
+### Esempi
 La serie di MacLaurin per le funzioni interessate nei [limiti notevoli](infinitesimal-calculus:limits:fund) forniscono approssimazioni locali di ordine maggiore per $x \rightarrow 0$,
 
 $$\begin{aligned}

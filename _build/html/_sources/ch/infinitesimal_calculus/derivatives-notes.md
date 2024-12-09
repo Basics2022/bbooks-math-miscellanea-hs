@@ -81,6 +81,7 @@ $$ \dfrac{d f^{-1}}{d y}\bigg|_{y = f(x)} = \dfrac{1}{ \dfrac{d y}{d x}\bigg|_{x
 (infinitesimal-calculus:derivatives:thm:notes)=
 ## Teoremi
 
+(infinitesimal-calculus:derivatives:thm:fermat:notes)=
 ```{dropdown} Dimostrazione del teorema di Fermat
 Sia $x_0$ un punto di minimo locale della funzione $f(x)$ derivabile in $x_0$. La definizione di minimo locale permette di scrivere
 
@@ -197,3 +198,31 @@ $$\begin{aligned}
 
 (infinitesimal-calculus:derivatives:taylor:notes)=
 ## Serie di Taylor e MacLaurin
+```{dropdown} Dimostrazione delle proprietà di approssimazione locale della serie di Taylor
+Usando il teorema di de l'Hopital, fino a quando il rapporto non è una forma indeterminata
+
+$$\begin{aligned}
+  \lim_{x \rightarrow x_0} \frac{f(x) - T_N[f(x); x_0]}{(x-x_0)^N}
+  & = \lim_{x \rightarrow x_0} \dfrac{f(x) - f(x_0) + f'(x_0) (x-x_0) + \frac{f''(x_0)}{2!} (x-x_0)^2 + \dots \frac{f^{(N)}(x_0)}{N!}(x-x_0)^N}{(x-x_0)^N} = \text{(H)} = \\
+  & = \lim_{x \rightarrow x_0} \dfrac{f'(x) - f'(x_0) + \frac{f''(x_0)}{1!} (x-x_0) + \dots \frac{f^{(N)}(x_0)}{(N-1)!}(x-x_0)^{N-1}}{N \, (x-x_0)^{N-1}} = \text{(H)} = \\
+  & = \lim_{x \rightarrow x_0} \dfrac{f''(x) - f''(x_0) + \dots \frac{f^{(N)}(x_0)}{(N-2)!}(x-x_0)^{N-2}}{N \, (N-1) \, (x-x_0)^{n-1}} = \text{(H)} =\\
+  & = \dots \\
+  & = \lim_{x \rightarrow x_0} \dfrac{f^{(N)}(x) - f^{(N)}(x_0)}{N!} =  0 \ ,
+\end{aligned}$$
+
+si dimostra che il numeratore è un infinitesimo dello stesso ordine del denominatore. Usando la notazione dell'*"o piccolo"* per gli infinitesimi si può quindi scrivere l'approssimazione locale come:
+
+$$f(x) - T_N[f(x), x_0] = o\left((x-x_0)^N\right) \ ,$$
+
+o in maniera equivalente
+
+$$f(x) = T_N[f(x), x_0] + o\left((x-x_0)^N\right) \ .$$
+
+Ripetendo lo stesso procedimento, confrontando la differenza $f(x) - T_N[f(x);x_0]$ con il termine $(x-x_0)^{N+1}$ si ottiene 
+
+$$
+  \lim_{x \rightarrow x_0} \frac{f(x) - T_N[f(x); x_0]}{(x-x_0)^N} = \dots = \lim_{x \rightarrow x_0} \frac{f^{(N+1)}(x)}{(N+1)!} = \frac{f^{(N+1)(x_0)}}{(N+1)!} \ .
+$$
+
+```
+

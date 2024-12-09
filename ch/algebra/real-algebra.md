@@ -150,7 +150,7 @@ per mettere in evidenza che l'esistenza delle soluzioni dipende dal valore del *
 - se $\Delta = 0$ esistono **due soluzioni reali coincidenti**, $x_1 = x_2 = - \frac{b}{2a} \in \mathbb{R}$
 - se $\Delta < 0$ **non esistono soluzioni reali**, poiché la radice quadra di un numero negativo non è definita nel campo dei numeri reali, $\nexists x \in \mathbb{R}$
 
-(math-hs:algebra:real:eq:second)=
+(math-hs:algebra:real:eq:nonlinear)=
 #### Equazioni non lineari generali
 Mentre esiste una formula generale per le equazioni di terzo grado e di quarto grado, queste risultano spesso di scarsa e scarsissima (nulla?) utilità. Per le equazioni polinomiali, a volte è possibile utilizzare i risultati del [teorema fondamentale dell'algebra](math-hs:precalculus:polynomials:alg-fund-thm) per scrivere il polinomio come prodotto di polinomi di primo e secondo ordine, per i quali è possibile calcolare gli zeri con le formule mostrate nelle sezioni sulle equazioni di primo e secondo grado.
 

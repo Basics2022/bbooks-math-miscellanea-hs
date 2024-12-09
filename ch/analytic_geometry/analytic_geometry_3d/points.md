@@ -1,4 +1,4 @@
-(geometry:analytic:3d:points)=
+(geometry:analytic:3d:coordinates)=
 # Sistemi di coordinate per lo spazio euclideo $E^3$
 
 ## Coordinate cartesiane

@@ -895,18 +895,28 @@ Dimostrazione di <span class="math notranslate nohighlight">\(\ (\cos x)'\)</spa
 <p>La <strong>serie di Taylor</strong> della funzione <span class="math notranslate nohighlight">\(f(x)\)</span> in un intervallo centrato in <span class="math notranslate nohighlight">\(x_0\)</span> è la serie</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
-  T[f(x); x_0] &amp; = \sum_{n=0}^{\infty} \dfrac{f^{(n)(x_0)}}{n!} (x-x_0)^n = \\
+  T[f(x); x_0] &amp; = \sum_{n=0}^{\infty} \dfrac{f^{(n)}(x_0)}{n!} (x-x_0)^n = \\
        &amp; = f(x_0) + f'(x_0) (x-x_0) + \dfrac{f''(x_0)^2}{2!} (x-x_0)^2 + \dots \ .
 \end{aligned}\end{split}\]</div>
-<p>La serie di MacLaurin è la serie di Taylor centrata in <span class="math notranslate nohighlight">\(x_0 = 0\)</span>.</p>
-<p>La serie di Taylor troncata al <span class="math notranslate nohighlight">\(n\)</span>-esimo termine fornisce un’approssimazione locale della funzione <span class="math notranslate nohighlight">\(f(x)\)</span> di ordine <span class="math notranslate nohighlight">\(n\)</span>, nel senso definito dal seguente teorema.</p>
+<p>La serie di MacLaurin è la serie di Taylor centrata in <span class="math notranslate nohighlight">\(x_0 = 0\)</span>. La serie di Taylor troncata al grado <span class="math notranslate nohighlight">\(N\)</span> è il polinomio di grado <span class="math notranslate nohighlight">\(N\)</span> formato dalla sommatoria dei primi <span class="math notranslate nohighlight">\(N+1\)</span> termini della serie di Taylor,</p>
+<div class="math notranslate nohighlight">
+\[T_N[f(x); x_0] = \sum_{n=0}^{N} \dfrac{f^{(n)}(x_0)}{n!} (x-x_0)^n \ .\]</div>
+<p>La serie di Taylor troncata al <span class="math notranslate nohighlight">\(N\)</span>-esimo termine fornisce un’approssimazione locale della funzione <span class="math notranslate nohighlight">\(f(x)\)</span> di ordine <span class="math notranslate nohighlight">\(n\)</span>, nel senso definito dal seguente teorema.</p>
 <div class="proof theorem admonition" id="thm:infinitesimal-calculus:derivatives:taylor">
-<p class="admonition-title"><span class="caption-number">Theorem 24.6 </span> (Approssimazione locale)</p>
+<p class="admonition-title"><span class="caption-number">Theorem 24.6 </span> (Approssimazione locale - 1)</p>
 <div class="theorem-content section" id="proof-content">
+<p><strong>todo</strong> <em>Ipotesi del teorema</em>. Valgono i seguenti risultati:</p>
+<ul>
+<li><div class="math notranslate nohighlight">
+\[\lim_{x \rightarrow x_0} \frac{f(x) - T_N[f(x); x_0]}{x^N} = 0 \ , \]</div>
+<p>o usando la notazione di «o piccolo» per il <a class="reference internal" href="analysis.html#infinitesimal-calculus-limits-infinite-simal"><span class="std std-ref">confronto di infinitesimi</span></a>,</p>
 <div class="math notranslate nohighlight">
-\[\lim_{x \rightarrow x_0} \frac{f(x) - T[f(x); x_0]}{x^n} = f^{(n)}(x_0) \ , \]</div>
-<div class="math notranslate nohighlight">
-\[f(x) = T[f(x); x_0] + o(x^n) \quad \text{ per } \quad x \rightarrow x_0\]</div>
+\[f(x) = T_N[f(x); x_0] + o\left((x-x_0)^N\right) \quad \text{ per } \quad x \rightarrow x_0 \ .\]</div>
+</li>
+<li><div class="math notranslate nohighlight">
+\[f(x) - T_N[f(x); x_0] \sim \frac{f^{(N+1)}}{(N+1)!} (x - x_0)^{N+1} \quad x \rightarrow x_0 \ \]</div>
+</li>
+</ul>
 </div>
 </div><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -918,18 +928,24 @@ Dimostrazione<div class="sd-summary-down docutils">
 <p class="sd-card-text">Usando il teorema di de l’Hopital, fino a quando il rapporto non è una forma indeterminata</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
-  \lim_{x \rightarrow x_0} \frac{f(x) - T[f(x); x_0]}{x^n}
-  &amp; = \lim_{x \rightarrow x_0} \dfrac{f(x) - f(x_0) + f'(x_0) (x-x_0) + \frac{f''(x_0)}{2!} (x-x_0)^2 + \dots \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n}{x^n} = \text{(H)} = \\
-  &amp; = \lim_{x \rightarrow x_0} \dfrac{f'(x) - f'(x_0) + \frac{f''(x_0)}{1!} (x-x_0) + \dots \frac{f^{(n)}(x_0)}{(n-1)!}(x-x_0)^{n-1}}{n \, x^{n-1}} = \text{(H)} = \\
-  &amp; = \lim_{x \rightarrow x_0} \dfrac{f''(x) - f''(x_0) + \dots \frac{f^{(n)}(x_0)}{(n-2)!}(x-x_0)^{n-2}}{n \, (n-1) \, x^{n-1}} = \text{(H)} =\\
+  \lim_{x \rightarrow x_0} \frac{f(x) - T_N[f(x); x_0]}{(x-x_0)^N}
+  &amp; = \lim_{x \rightarrow x_0} \dfrac{f(x) - f(x_0) + f'(x_0) (x-x_0) + \frac{f''(x_0)}{2!} (x-x_0)^2 + \dots \frac{f^{(N)}(x_0)}{N!}(x-x_0)^N}{(x-x_0)^N} = \text{(H)} = \\
+  &amp; = \lim_{x \rightarrow x_0} \dfrac{f'(x) - f'(x_0) + \frac{f''(x_0)}{1!} (x-x_0) + \dots \frac{f^{(N)}(x_0)}{(N-1)!}(x-x_0)^{N-1}}{N \, (x-x_0)^{N-1}} = \text{(H)} = \\
+  &amp; = \lim_{x \rightarrow x_0} \dfrac{f''(x) - f''(x_0) + \dots \frac{f^{(N)}(x_0)}{(N-2)!}(x-x_0)^{N-2}}{N \, (N-1) \, (x-x_0)^{n-1}} = \text{(H)} =\\
   &amp; = \dots \\
-  &amp; = \lim_{x \rightarrow x_0} \dfrac{f^{(n)}(x) - f^{(n)}(x_0)}{n!} =  0 \ ,
+  &amp; = \lim_{x \rightarrow x_0} \dfrac{f^{(N)}(x) - f^{(N)}(x_0)}{N!} =  0 \ ,
 \end{aligned}\end{split}\]</div>
-<p class="sd-card-text">si dimostra che il numeratore è un infinitesimo del denominatore. Usando la notazione dell”<em>»o piccolo»</em> per gli infinitesimi si può quindi scrivere l’approssimazione locale come:</p>
+<p class="sd-card-text">si dimostra che il numeratore è un infinitesimo dello stesso ordine del denominatore. Usando la notazione dell”<em>»o piccolo»</em> per gli infinitesimi si può quindi scrivere l’approssimazione locale come:</p>
 <div class="math notranslate nohighlight">
-\[f(x) - T[f(x), x_0] = o\left((x-x_0)^n\right) \ ,\]</div>
-<p class="sd-card-text">o in maniera equivalente
-$<span class="math notranslate nohighlight">\(f(x) = T[f(x), x_0] + o\left((x-x_0)^n\right) \ .\)</span>$</p>
+\[f(x) - T_N[f(x), x_0] = o\left((x-x_0)^N\right) \ ,\]</div>
+<p class="sd-card-text">o in maniera equivalente</p>
+<div class="math notranslate nohighlight">
+\[f(x) = T_N[f(x), x_0] + o\left((x-x_0)^N\right) \ .\]</div>
+<p class="sd-card-text">Ripetendo lo stesso procedimento, confrontando la differenza <span class="math notranslate nohighlight">\(f(x) - T_N[f(x);x_0]\)</span> con il termine <span class="math notranslate nohighlight">\((x-x_0)^{N+1}\)</span> si ottiene</p>
+<div class="math notranslate nohighlight">
+\[
+  \lim_{x \rightarrow x_0} \frac{f(x) - T_N[f(x); x_0]}{(x-x_0)^N} = \dots = \lim_{x \rightarrow x_0} \frac{f^{(N+1)}(x)}{(N+1)!} = \frac{f^{(N+1)(x_0)}}{(N+1)!} \ .
+\]</div>
 </div>
 </details><div class="section" id="esempi">
 <h3><span class="section-number">24.6.1. </span>Esempi<a class="headerlink" href="#esempi" title="Permalink to this heading">#</a></h3>
