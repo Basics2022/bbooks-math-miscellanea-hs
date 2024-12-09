@@ -71,7 +71,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="23.8. Note e dimiostrazioni" href="analysis-notes.html" />
+    <link rel="next" title="23.8. Note e dimostrazioni" href="analysis-notes.html" />
     <link rel="prev" title="23. Introduzione all’analisi" href="analysis.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
@@ -238,7 +238,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../calculus.html">22. Introduzione al calcolo</a></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="analysis.html">23. Introduzione all’analisi</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">23.7. Problemi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="analysis-notes.html">23.8. Note e dimiostrazioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analysis-notes.html">23.8. Note e dimostrazioni</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="derivatives.html">24. Derivate</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -680,23 +680,26 @@ d - x, &amp; x &gt; 1.
 <p>Delle seguenti funzioni viene chiesto di:</p>
 <ul class="simple">
 <li><p>determinare se sono definite e continue in tutti i punti dei domini indicati; dove non è indicato esplicitamente il dominio, determinare il dominio</p></li>
-<li><p>calcolare i limiti al finito in eventuali <a class="reference internal" href="../infinitesimal_calculus.html"><span class="doc std std-doc">punti di discontinuità</span></a>, e i limiti agli estremi del dominio</p></li>
+<li><p>calcolare i limiti al finito in eventuali <a class="reference internal" href="analysis.html#infinitesimal-calculus-continuous-fun-disc"><span class="std std-ref">punti di discontinuità</span></a>, e i limiti agli estremi del dominio</p></li>
 <li><p>fornire una stima asintotica dei limiti nel caso di infiniti o infinitesimi</p></li>
-<li><p>rappresentare il grafico della funzione in un piano descritto dalle coordinate cartesiane <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span>, tenendo in considerazione i risultati dei punti precedenti (prima rappresentare i punti di discontinuità e gli asintoti per aiutarsi nel disegno del grafico)</p></li>
+<li><p>rappresentare il grafico <span class="math notranslate nohighlight">\(y = f(x)\)</span> della funzione in un piano descritto dalle coordinate cartesiane <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span>, tenendo in considerazione i risultati dei punti precedenti (prima rappresentare i punti di discontinuità e gli asintoti per aiutarsi nel disegno del grafico)</p></li>
 <li><p>stabilire se le funzioni sono pari, dispari, periodiche, o se esistono rette o punti di simmetria</p></li>
+<li><p>discutere l’esistenza degli zeri della funzione e darne una stima, facendo riferimento al <a class="reference internal" href="analysis.html#infinitesimal-calculus-continuous-fun-thms-zeros"><span class="std std-ref">teorema degli zeri</span></a></p></li>
 </ul>
 <ol class="arabic simple">
-<li><p><span class="math notranslate nohighlight">\(y = x^4-4x^2+3 \qquad , \qquad x \in \mathbb{R}\)</span> (md.8)</p></li>
-<li><p><span class="math notranslate nohighlight">\(y = \frac{x^2+12 x +20}{x+1} \qquad , \qquad x \in \mathbb{R}\)</span> (md)</p></li>
-<li><p><span class="math notranslate nohighlight">\(y = \frac{x^2+2x-4}{x^2-4x+3} \qquad , \qquad x \in [0,2]\)</span> (md)</p></li>
-<li><p><span class="math notranslate nohighlight">\(y = \ln \left[(x-1)(x-3)\right] \)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(y = \frac{|x-2|}{x-2}\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(y = \frac{\sin x}{x}\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(y = \frac{\sin x}{x}\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(y = \frac{x^2 - 2}{e^x-1}\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(y = \begin{cases} e^x &amp; x &lt; 0 \\ 1 + x  &amp; x \ge 0 \end{cases}\)</span></p></li>
-<li><p>…</p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = x^4-4x^2+3 \qquad , \qquad x \in \mathbb{R}\)</span> (md.8)</p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = \frac{x^2+12 x +20}{x+1} \qquad , \qquad x \in \mathbb{R}\)</span> (md)</p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = \frac{x^2+2x-4}{x^2-4x+3} \qquad , \qquad x \in [0,2]\)</span> (md)</p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = \ln \left[(x-1)(x-3)\right] \)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = \frac{|x-2|}{x-2}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = \frac{\sin x}{x}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = \frac{\sin x}{x}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = \frac{x^2 - 2}{e^x-1}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = \begin{cases} e^x &amp; x &lt; 0 \\ 1 + x  &amp; x \ge 0 \end{cases}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = \frac{x^2 - 1}{x^2 + 1}\)</span></p></li>
 </ol>
+</div>
+</div>
 <div class="exercise dropdown admonition" id="ch/infinitesimal_calculus/analysis-problems-exercise-9">
 <span id="infinitesimal-calculus-analysis-problems-applications"></span>
 <p class="admonition-title"><span class="caption-number">Exercise 23.10 </span> (Limiti e applicazioni)</p>
@@ -715,8 +718,6 @@ d - x, &amp; x &gt; 1.
 9. Trova la velocità istantanea della funzione $f(t) = 2t^2 + 3$ in $t = 1$.  
 10. Calcola $\lim_{x \to 0} \frac{\cos(x) - 1}{x}$ come limite del tasso di cambiamento.  
 -->
-</div>
-</div>
 </div>
 </div>
 <!--
@@ -800,7 +801,7 @@ Esercizi con parametro **todo**
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">23.8. </span>Note e dimiostrazioni</p>
+        <p class="prev-next-title"><span class="section-number">23.8. </span>Note e dimostrazioni</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

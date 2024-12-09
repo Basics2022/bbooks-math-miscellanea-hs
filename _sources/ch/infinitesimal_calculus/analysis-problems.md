@@ -155,21 +155,23 @@ Risolvere i seguenti limiti, con le tecniche studiate nel capitolo. Inutile qui 
 :class: dropdown
 Delle seguenti funzioni viene chiesto di:
 - determinare se sono definite e continue in tutti i punti dei domini indicati; dove non è indicato esplicitamente il dominio, determinare il dominio
-- calcolare i limiti al finito in eventuali [punti di discontinuità](), e i limiti agli estremi del dominio
+- calcolare i limiti al finito in eventuali [punti di discontinuità](infinitesimal-calculus:continuous-fun:disc), e i limiti agli estremi del dominio
 - fornire una stima asintotica dei limiti nel caso di infiniti o infinitesimi
-- rappresentare il grafico della funzione in un piano descritto dalle coordinate cartesiane $x$, $y$, tenendo in considerazione i risultati dei punti precedenti (prima rappresentare i punti di discontinuità e gli asintoti per aiutarsi nel disegno del grafico)
+- rappresentare il grafico $y = f(x)$ della funzione in un piano descritto dalle coordinate cartesiane $x$, $y$, tenendo in considerazione i risultati dei punti precedenti (prima rappresentare i punti di discontinuità e gli asintoti per aiutarsi nel disegno del grafico)
 - stabilire se le funzioni sono pari, dispari, periodiche, o se esistono rette o punti di simmetria
+- discutere l'esistenza degli zeri della funzione e darne una stima, facendo riferimento al [teorema degli zeri](infinitesimal-calculus:continuous-fun:thms:zeros) 
 
-1. $y = x^4-4x^2+3 \qquad , \qquad x \in \mathbb{R}$ (md.8)
-2. $y = \frac{x^2+12 x +20}{x+1} \qquad , \qquad x \in \mathbb{R}$ (md)
-3. $y = \frac{x^2+2x-4}{x^2-4x+3} \qquad , \qquad x \in [0,2]$ (md)
-4. $y = \ln \left[(x-1)(x-3)\right] $
-5. $y = \frac{|x-2|}{x-2}$
-6. $y = \frac{\sin x}{x}$
-7. $y = \frac{\sin x}{x}$
-8. $y = \frac{x^2 - 2}{e^x-1}$
-9. $y = \begin{cases} e^x & x < 0 \\ 1 + x  & x \ge 0 \end{cases}$
-10. ...
+1.  $f(x) = x^4-4x^2+3 \qquad , \qquad x \in \mathbb{R}$ (md.8)
+2.  $f(x) = \frac{x^2+12 x +20}{x+1} \qquad , \qquad x \in \mathbb{R}$ (md)
+3.  $f(x) = \frac{x^2+2x-4}{x^2-4x+3} \qquad , \qquad x \in [0,2]$ (md)
+4.  $f(x) = \ln \left[(x-1)(x-3)\right] $
+5.  $f(x) = \frac{|x-2|}{x-2}$
+6.  $f(x) = \frac{\sin x}{x}$
+7.  $f(x) = \frac{\sin x}{x}$
+8.  $f(x) = \frac{x^2 - 2}{e^x-1}$
+9.  $f(x) = \begin{cases} e^x & x < 0 \\ 1 + x  & x \ge 0 \end{cases}$
+10. $f(x) = \frac{x^2 - 1}{x^2 + 1}$
+```
 
 (infinitesimal-calculus:analysis:problems:applications)=
 ```{exercise} Limiti e applicazioni
