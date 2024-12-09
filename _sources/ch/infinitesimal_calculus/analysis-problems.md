@@ -135,7 +135,7 @@ Risolvere i seguenti limiti, con le tecniche studiate nel capitolo. Inutile qui 
 10. Determina se la funzione $f(x) = \frac{\ln(x)}{x}$ è continua in $x=1$.  
 ```
 
-(infinitesimal-calculus:analysis:problems:continuity)=
+(infinitesimal-calculus:analysis:problems:asynptotics)=
 ```{exercise} Asintoti Verticali e Orizzontali
 :class: dropdown
 1. Trova gli asintoti orizzontali della funzione $f(x) = \frac{3x}{x^2 + 1}$.  
