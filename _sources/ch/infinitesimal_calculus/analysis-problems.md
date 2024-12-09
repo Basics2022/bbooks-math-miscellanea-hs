@@ -4,11 +4,22 @@
 ## Limiti
 
 ```{exercise} Verifica/calcolo con definizione
-**todo**
+:class: dropdown
+1. Usa la definizione di limite $\varepsilon$-$\delta$ per provare che $\lim_{x \to 2} (3x - 4) = 2$.  
+2. Usa la definizione di limite per provare che $\lim_{x \to 0} \frac{1}{x^2}$ non esiste.  
+3. Usa la definizione di limite per provare che $\lim_{x \to 1} \frac{1}{x} = 1$.  
+4. Usa la definizione di limite per provare che $\lim_{x \to 0} \sin(x) = 0$.  
+5. Usa la definizione di limite per dimostrare che $\lim_{x \to 0} \frac{e^x - 1}{x} = 1$.  
+6. Usa la definizione di limite per provare che $\lim_{x \to 2} \frac{x^2 - 4}{x - 2} = 4$.  
+7. Prova che $\lim_{x \to 1} \frac{x^3 - 1}{x - 1} = 3$ utilizzando la definizione di limite.  
+8. Usa la definizione di limite per provare che $\lim_{x \to 0} x^2 = 0$.  
+9. Usa la definizione di limite per provare che $\lim_{x \to 3} \frac{1}{x} = \frac{1}{3}$.  
+10. Usa la definizione di limite per dimostrare che $\lim_{x \to 0} \ln(1+x) = 0$.  
 ```
 
 (infinitesimal-calculus:analysis:problems:limits-easy)=
-```{exercise} Verifica/calcolo con definizione
+```{exercise} Primi limiti
+:class: dropdown
 1. $\lim_{x \to 1} (x^2 + 3x - 4)$  
 2. $\lim_{x \to -2} (x^3 + 2x^2 - 1)$  
 3. $\lim_{x \to 0} \frac{x + 1}{2x + 3}$  
@@ -21,9 +32,9 @@
 10. $\lim_{x \to 0} e^x - 1$  
 ```
 
-Nel [box](infinitesimal-calculus:analysis:problems:limits-easy) si vede che
-
-## 2. Limiti laterali
+(infinitesimal-calculus:analysis:problems:limits-lateral)=
+```{exercise} Limiti laterali
+:class: dropdown
 1. $\lim_{x \to 0^+} \frac{1}{x}$  
 2. $\lim_{x \to 0^-} \frac{1}{x}$  
 3. $\lim_{x \to 1^+} \frac{x^2 - 1}{x - 1}$  
@@ -34,8 +45,11 @@ Nel [box](infinitesimal-calculus:analysis:problems:limits-easy) si vede che
 8. $\lim_{x \to 0^-} x \cos\left(\frac{1}{x}\right)$  
 9. $\lim_{x \to \pi^+} \tan(x)$  
 10. $\lim_{x \to 0^-} e^{\frac{1}{x}}$  
+```
 
-## 3. Limiti all’infinito
+(infinitesimal-calculus:analysis:problems:limits-infinite)=
+```{exercise} Limiti all'infinito
+:class: dropdown
 1. $\lim_{x \to \infty} \frac{3x + 1}{2x - 4}$  
 2. $\lim_{x \to -\infty} \frac{x^2 - x + 1}{2x^2 + x}$  
 3. $\lim_{x \to \infty} \frac{\sqrt{x^2 + 1}}{x + 3}$  
@@ -46,8 +60,11 @@ Nel [box](infinitesimal-calculus:analysis:problems:limits-easy) si vede che
 8. $\lim_{x \to \infty} x \sin\left(\frac{1}{x}\right)$  
 9. $\lim_{x \to \infty} \frac{\sin(x)}{x}$  
 10. $\lim_{x \to \infty} e^{-x}$  
+```
 
-## 4. Forme indeterminate e regola di de l’Hôpital
+(infinitesimal-calculus:analysis:problems:limits-indeterminate)=
+```{exercise} Forme indeterminate
+:class: dropdown
 Risolvere i seguenti limiti. Alcuni esercizi potrebbero non essere di immediata soluzione con gli strumenti introdotti in questo capitolo, ma saranno di soluzione immediata una volta introdotto il [teorema di de l'Hôpital]() nel capitolo sulle [derivate]().
 1. $\lim_{x \to 0} \frac{\sin(x)}{x}$  
 2. $\lim_{x \to \infty} \frac{\ln(x)}{x}$  
@@ -59,8 +76,13 @@ Risolvere i seguenti limiti. Alcuni esercizi potrebbero non essere di immediata 
 8. $\lim_{x \to \infty} \frac{x^2}{e^x}$  
 9. $\lim_{x \to 0^+} x \ln(x)$  
 10. $\lim_{x \to \infty} \frac{\ln(x)}{x^2}$  
+```
 
-## Limiti e funzioni speciali
+(infinitesimal-calculus:analysis:problems:limits-miscellanea)=
+```{exercise} Esercizi vari
+:class: dropdown
+Risolvere i seguenti limiti, con le tecniche studiate nel capitolo. Inutile qui fare la divisione degli esercizi per tecniche (razionalizzazione, confronto, limiti notevoli,...) e "tipo di limite", quando sono possibili diversi approcci portano allo stesso risultato. Che ognuno scelga l'approccio più conveniente. In linea generale, la tecnica risolutiva si riassume nella semplificazione del limite per ricondursi a casi più semplici di cui è noto il limite o facilmente calcolabile.
+
 1. $\lim_{x \to 0^+} x \ln(x)$  
 2. $\lim_{x \to \infty} e^{-x}$  
 3. $\lim_{x \to 0^+} \frac{1}{x^2}$  
@@ -72,7 +94,6 @@ Risolvere i seguenti limiti. Alcuni esercizi potrebbero non essere di immediata 
 9. $\lim_{x \to 0^+} \ln(1 + x)$  
 10. $\lim_{x \to \infty} e^{-x^2}$  
 
-## Teorema del confronto
 1. Prova che $\lim_{x \to 0} x^2 \sin\left(\frac{1}{x}\right) = 0$  
 2. Prova che $\lim_{x \to 0} \frac{\sin(x)}{x^2} = 0$  
 3. Mostra che $\lim_{x \to 0} x \cos\left(\frac{1}{x}\right) = 0$  
@@ -83,8 +104,12 @@ Risolvere i seguenti limiti. Alcuni esercizi potrebbero non essere di immediata 
 8. Prova che $\lim_{x \to 0} x \ln(x) = 0$  
 9. Mostra che $\lim_{x \to 0} \frac{\sin(x)}{x} = 1$  
 10. Prova che $\lim_{x \to 0} \frac{x \cos(x)}{1 + x^2} = 0$ 
+```
 
-## 7. Continuità e Limiti
+## Studio di funzione: dominio, continuità e limiti
+(infinitesimal-calculus:analysis:problems:continuity)=
+```{exercise} Continuità e limiti
+:class: dropdown
 1. Determina il valore di $c$ per cui $f(x)$ è continua in $x=1$, con  
    $f(x) = \begin{cases} 
    x^2 + c, & x \leq 1, \\
@@ -108,8 +133,11 @@ Risolvere i seguenti limiti. Alcuni esercizi potrebbero non essere di immediata 
    \end{cases}$  
 9. Verifica se la funzione $f(x) = \cos(x)$ è continua in $x=0$.  
 10. Determina se la funzione $f(x) = \frac{\ln(x)}{x}$ è continua in $x=1$.  
+```
 
-## 8. Asintoti Verticali e Orizzontali
+(infinitesimal-calculus:analysis:problems:continuity)=
+```{exercise} Asintoti Verticali e Orizzontali
+:class: dropdown
 1. Trova gli asintoti orizzontali della funzione $f(x) = \frac{3x}{x^2 + 1}$.  
 2. Trova gli asintoti verticali della funzione $f(x) = \frac{1}{x - 2}$.  
 3. Determina gli asintoti orizzontali della funzione $f(x) = \frac{x^2 - 1}{x^2 + 1}$.  
@@ -120,51 +148,11 @@ Risolvere i seguenti limiti. Alcuni esercizi potrebbero non essere di immediata 
 8. Trova gli asintoti verticali della funzione $f(x) = \frac{1}{x^2 - 4}$.  
 9. Determina gli asintoti orizzontali della funzione $f(x) = \frac{2x}{x^2 + 1}$.  
 10. Trova gli asintoti verticali della funzione $f(x) = \frac{1}{x^3 - x}$.  
-
-()
-```{exercise} Limiti e applicazioni
-:class: dropdown
 ```
 
-<!--
-## Limiti e applicazioni
-1. La posizione di una particella nel tempo è data da $s(t) = t^2 + 3t - 2$. Trova la velocità istantanea nel punto $t = 2$.  
-2. Trova il tasso di cambiamento di $f(x) = e^x$ in $x = 0$.  
-3. Calcola il limite che rappresenta la velocità istantanea di una particella al tempo $t=0$ se la sua posizione è data da $s(t) = \sin(t)$.  
-4. Determina la derivata di $f(x) = \ln(x)$ nel punto $x = 1$.  
-5. Trova la velocità istantanea della particella al tempo $t=1$ se la sua posizione è data da $s(t) = t^3$.  
-6. Calcola $\lim_{x \to 0} \frac{\sin(x)}{x}$ per determinare la velocità istantanea di una particella.  
-7. Trova la velocità istantanea di $f(x) = x^2 + 5x - 3$ in $x = 2$.  
-8. Calcola $\lim_{x \to 0} \frac{e^x - 1}{x}$ per determinare il tasso di crescita di una funzione esponenziale.  
-9. Trova la velocità istantanea della funzione $f(t) = 2t^2 + 3$ in $t = 1$.  
-10. Calcola $\lim_{x \to 0} \frac{\cos(x) - 1}{x}$ come limite del tasso di cambiamento.  
--->
-
-## Limiti e definizione di continuità (Definizione $\varepsilon$-$\delta$)
-1. Usa la definizione di limite $\varepsilon$-$\delta$ per provare che $\lim_{x \to 2} (3x - 4) = 2$.  
-2. Usa la definizione di limite per provare che $\lim_{x \to 0} \frac{1}{x^2}$ non esiste.  
-3. Usa la definizione di limite per provare che $\lim_{x \to 1} \frac{1}{x} = 1$.  
-4. Usa la definizione di limite per provare che $\lim_{x \to 0} \sin(x) = 0$.  
-5. Usa la definizione di limite per dimostrare che $\lim_{x \to 0} \frac{e^x - 1}{x} = 1$.  
-6. Usa la definizione di limite per provare che $\lim_{x \to 2} \frac{x^2 - 4}{x - 2} = 4$.  
-7. Prova che $\lim_{x \to 1} \frac{x^3 - 1}{x - 1} = 3$ utilizzando la definizione di limite.  
-8. Usa la definizione di limite per provare che $\lim_{x \to 0} x^2 = 0$.  
-9. Usa la definizione di limite per provare che $\lim_{x \to 3} \frac{1}{x} = \frac{1}{3}$.  
-10. Usa la definizione di limite per dimostrare che $\lim_{x \to 0} \ln(1+x) = 0$.  
-
-
-
-## Funzioni
-```{exercise} Verifica continuità
-Studiare la continuità delle seguenti funzioni con la definizione di continuità
-
-1. $y = x$
-2. $y = \frac{1}{x}$
-3. ...
-
-```
-
+(infinitesimal-calculus:analysis:problems:funs)=
 ```{exercise} Studio funzione - dominio, continuità, grafico
+:class: dropdown
 Delle seguenti funzioni viene chiesto di:
 - determinare se sono definite e continue in tutti i punti dei domini indicati; dove non è indicato esplicitamente il dominio, determinare il dominio
 - calcolare i limiti al finito in eventuali [punti di discontinuità](), e i limiti agli estremi del dominio
@@ -183,7 +171,51 @@ Delle seguenti funzioni viene chiesto di:
 9. $y = \begin{cases} e^x & x < 0 \\ 1 + x  & x \ge 0 \end{cases}$
 10. ...
 
+(infinitesimal-calculus:analysis:problems:applications)=
+```{exercise} Limiti e applicazioni
+:class: dropdown
+<!--
+**todo**
+## Limiti e applicazioni
+1. La posizione di una particella nel tempo è data da $s(t) = t^2 + 3t - 2$. Trova la velocità istantanea nel punto $t = 2$.  
+2. Trova il tasso di cambiamento di $f(x) = e^x$ in $x = 0$.  
+3. Calcola il limite che rappresenta la velocità istantanea di una particella al tempo $t=0$ se la sua posizione è data da $s(t) = \sin(t)$.  
+4. Determina la derivata di $f(x) = \ln(x)$ nel punto $x = 1$.  
+5. Trova la velocità istantanea della particella al tempo $t=1$ se la sua posizione è data da $s(t) = t^3$.  
+6. Calcola $\lim_{x \to 0} \frac{\sin(x)}{x}$ per determinare la velocità istantanea di una particella.  
+7. Trova la velocità istantanea di $f(x) = x^2 + 5x - 3$ in $x = 2$.  
+8. Calcola $\lim_{x \to 0} \frac{e^x - 1}{x}$ per determinare il tasso di crescita di una funzione esponenziale.  
+9. Trova la velocità istantanea della funzione $f(t) = 2t^2 + 3$ in $t = 1$.  
+10. Calcola $\lim_{x \to 0} \frac{\cos(x) - 1}{x}$ come limite del tasso di cambiamento.  
+-->
 ```
+
+
+<!--
+## Limiti e definizione di continuità (Definizione $\varepsilon$-$\delta$)
+1. Usa la definizione di limite $\varepsilon$-$\delta$ per provare che $\lim_{x \to 2} (3x - 4) = 2$.  
+2. Usa la definizione di limite per provare che $\lim_{x \to 0} \frac{1}{x^2}$ non esiste.  
+3. Usa la definizione di limite per provare che $\lim_{x \to 1} \frac{1}{x} = 1$.  
+4. Usa la definizione di limite per provare che $\lim_{x \to 0} \sin(x) = 0$.  
+5. Usa la definizione di limite per dimostrare che $\lim_{x \to 0} \frac{e^x - 1}{x} = 1$.  
+6. Usa la definizione di limite per provare che $\lim_{x \to 2} \frac{x^2 - 4}{x - 2} = 4$.  
+7. Prova che $\lim_{x \to 1} \frac{x^3 - 1}{x - 1} = 3$ utilizzando la definizione di limite.  
+8. Usa la definizione di limite per provare che $\lim_{x \to 0} x^2 = 0$.  
+9. Usa la definizione di limite per provare che $\lim_{x \to 3} \frac{1}{x} = \frac{1}{3}$.  
+10. Usa la definizione di limite per dimostrare che $\lim_{x \to 0} \ln(1+x) = 0$.  
+-->
+
+<!--
+## Funzioni
+```{exercise} Verifica continuità
+Studiare la continuità delle seguenti funzioni con la definizione di continuità
+
+1. $y = x$
+2. $y = \frac{1}{x}$
+3. ...
+
+```
+
 
 ```{exercise}
 Esercizi con parametro **todo**
@@ -193,3 +225,4 @@ Esercizi con parametro **todo**
 - (md) Matematica Dolce
 - (ym) YouMath
 
+-->
