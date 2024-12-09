@@ -1,5 +1,5 @@
 (infinitesimal-calculus:analysis:notes)=
-# Note e dimiostrazioni
+# Note e dimostrazioni
 
 ## Funzioni reali a variabile reale, $f: \mathbb{R} \rightarrow \mathbb{R}$
 

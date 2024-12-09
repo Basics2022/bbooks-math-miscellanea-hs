@@ -208,113 +208,122 @@
 \BOOKMARK [2][-]{subsection.24.2.2}{Definizione\040di\040limite}{section.24.2}% 208
 \BOOKMARK [1][-]{section.24.3}{Funzioni\040continue}{chapter.24}% 209
 \BOOKMARK [2][-]{subsection.24.3.1}{Definizione}{section.24.3}% 210
-\BOOKMARK [2][-]{subsection.24.3.2}{Teoremi}{section.24.3}% 211
-\BOOKMARK [3][-]{subsubsection*.47}{Teorema\040di\040Weierstrass}{subsection.24.3.2}% 212
-\BOOKMARK [3][-]{subsubsection*.48}{Teorema\040della\040permanenza\040del\040segno}{subsection.24.3.2}% 213
-\BOOKMARK [3][-]{subsubsection*.49}{Teorema\040degli\040zeri}{subsection.24.3.2}% 214
-\BOOKMARK [3][-]{subsubsection*.50}{Teorema\040dei\040valori\040intermedi}{subsection.24.3.2}% 215
-\BOOKMARK [1][-]{section.24.4}{Operazioni\040e\040teoremi\040sui\040limiti}{chapter.24}% 216
-\BOOKMARK [2][-]{subsection.24.4.1}{Operazioni\040coi\040limiti}{section.24.4}% 217
-\BOOKMARK [3][-]{subsubsection*.51}{Limiti\040infiniti\040e\040infinitesimi}{subsection.24.4.1}% 218
-\BOOKMARK [3][-]{subsubsection*.52}{Forme\040indeterminate}{subsection.24.4.1}% 219
-\BOOKMARK [2][-]{subsection.24.4.2}{Teorema\040del\040confronto}{section.24.4}% 220
-\BOOKMARK [2][-]{subsection.24.4.3}{Teorema di de l’Hopital}{section.24.4}% 221
-\BOOKMARK [1][-]{section.24.5}{Confronto\040di\040infiniti\040e\040infinitesimi}{chapter.24}% 222
-\BOOKMARK [2][-]{subsection.24.5.1}{Calcolo\040dei\040limiti\040con\040sostituzione\040degli\040infinitesimi\040o\040degli\040infiniti}{section.24.5}% 223
-\BOOKMARK [1][-]{section.24.6}{Limiti\040fondamentali}{chapter.24}% 224
-\BOOKMARK [1][-]{section.24.7}{Problemi}{chapter.24}% 225
-\BOOKMARK [2][-]{subsection.24.7.1}{Funzioni}{section.24.7}% 226
-\BOOKMARK [2][-]{subsection.24.7.2}{Limiti\040e\040funzoni\040continue}{section.24.7}% 227
-\BOOKMARK [1][-]{section.24.8}{Note\040e\040dimiostrazioni}{chapter.24}% 228
-\BOOKMARK [2][-]{subsection.24.8.1}{Funzioni reali a variabile reale, f: R →R}{section.24.8}% 229
-\BOOKMARK [2][-]{subsection.24.8.2}{Limiti}{section.24.8}% 230
-\BOOKMARK [2][-]{subsection.24.8.3}{Funzioni continue, f ∈C0}{section.24.8}% 231
-\BOOKMARK [2][-]{subsection.24.8.4}{Operazioni\040e\040teoremi\040sui\040limiti}{section.24.8}% 232
-\BOOKMARK [2][-]{subsection.24.8.5}{Contronto\040di\040infiniti\040e\040infinitesimi}{section.24.8}% 233
-\BOOKMARK [2][-]{subsection.24.8.6}{Limiti\040fondamentali}{section.24.8}% 234
-\BOOKMARK [0][-]{chapter.25}{Derivate}{part.6}% 235
-\BOOKMARK [1][-]{section.25.1}{Definizione}{chapter.25}% 236
-\BOOKMARK [1][-]{section.25.2}{Regole\040di\040derivazione}{chapter.25}% 237
-\BOOKMARK [1][-]{section.25.3}{Teoremi}{chapter.25}% 238
-\BOOKMARK [2][-]{subsection.25.3.1}{Teorema\040di\040Fermat}{section.25.3}% 239
-\BOOKMARK [2][-]{subsection.25.3.2}{Teorema\040di\040Rolle}{section.25.3}% 240
-\BOOKMARK [2][-]{subsection.25.3.3}{Teorema\040di\040Cauchy}{section.25.3}% 241
-\BOOKMARK [2][-]{subsection.25.3.4}{Teorema\040di\040Lagrange}{section.25.3}% 242
-\BOOKMARK [2][-]{subsection.25.3.5}{Teorema di de l’Hopital}{section.25.3}% 243
-\BOOKMARK [1][-]{section.25.4}{Derivate\040fondamentali}{chapter.25}% 244
-\BOOKMARK [1][-]{section.25.5}{Derivate\040di\040ordine\040superiore}{chapter.25}% 245
-\BOOKMARK [1][-]{section.25.6}{Applicazioni}{chapter.25}% 246
-\BOOKMARK [2][-]{subsection.25.6.1}{Espansioni\040in\040serie\040di\040Taylor\040e\040MacLaurin}{section.25.6}% 247
-\BOOKMARK [3][-]{subsubsection*.53}{Esempi}{subsection.25.6.1}% 248
-\BOOKMARK [2][-]{subsection.25.6.2}{Studio\040di\040funzione}{section.25.6}% 249
-\BOOKMARK [2][-]{subsection.25.6.3}{Ottimizzazione}{section.25.6}% 250
-\BOOKMARK [1][-]{section.25.7}{Derivate\040-\040Problemi}{chapter.25}% 251
-\BOOKMARK [2][-]{subsection.25.7.1}{Calcolo\040derivate}{section.25.7}% 252
-\BOOKMARK [2][-]{subsection.25.7.2}{Calcolo di limiti con la regola di de l’Hopital}{section.25.7}% 253
-\BOOKMARK [2][-]{subsection.25.7.3}{Problemi\040di\040geometria}{section.25.7}% 254
-\BOOKMARK [2][-]{subsection.25.7.4}{Studio\040di\040funzione}{section.25.7}% 255
-\BOOKMARK [2][-]{subsection.25.7.5}{Problemi\040di\040ottimizzazione}{section.25.7}% 256
-\BOOKMARK [2][-]{subsection.25.7.6}{Approssimazioni\040locali\040di\040funzioni}{section.25.7}% 257
-\BOOKMARK [2][-]{subsection.25.7.7}{Metodo\040di\040Newton}{section.25.7}% 258
-\BOOKMARK [1][-]{section.25.8}{Dimostrazioni}{chapter.25}% 259
-\BOOKMARK [0][-]{chapter.26}{Integrali}{part.6}% 260
-\BOOKMARK [1][-]{section.26.1}{Definizioni}{chapter.26}% 261
-\BOOKMARK [2][-]{subsection.26.1.1}{Interpretazione\040geometrica}{section.26.1}% 262
-\BOOKMARK [2][-]{subsection.26.1.2}{Integrale\040definito}{section.26.1}% 263
-\BOOKMARK [3][-]{subsubsection*.58}{Proprietà dell’integrale definito}{subsection.26.1.2}% 264
-\BOOKMARK [2][-]{subsection.26.1.3}{Integrale\040indefinito}{section.26.1}% 265
-\BOOKMARK [1][-]{section.26.2}{Teoremi}{chapter.26}% 266
-\BOOKMARK [2][-]{subsection.26.2.1}{Teorema\040della\040media}{section.26.2}% 267
-\BOOKMARK [2][-]{subsection.26.2.2}{Teorema\040fondamentale\040del\040calcolo\040infinitesimale}{section.26.2}% 268
-\BOOKMARK [2][-]{subsection.26.2.3}{Derivata\040su\040dominio\040dipendente\040dalla\040variabile\040indipendente}{section.26.2}% 269
-\BOOKMARK [1][-]{section.26.3}{Integrali\040fondamentali}{chapter.26}% 270
-\BOOKMARK [1][-]{section.26.4}{Regole\040di\040integrazione}{chapter.26}% 271
-\BOOKMARK [2][-]{subsection.26.4.1}{Integrazione\040per\040parti}{section.26.4}% 272
-\BOOKMARK [2][-]{subsection.26.4.2}{Frazioni\040parziali}{section.26.4}% 273
-\BOOKMARK [2][-]{subsection.26.4.3}{Integrazione\040con\040sostituzione}{section.26.4}% 274
-\BOOKMARK [1][-]{section.26.5}{Tavola degli integrali indefiniti più comuni}{chapter.26}% 275
-\BOOKMARK [1][-]{section.26.6}{Integrali\040-\040Problemi}{chapter.26}% 276
-\BOOKMARK [2][-]{subsection.26.6.1}{Calcolo\040integrali\040indefiniti}{section.26.6}% 277
-\BOOKMARK [2][-]{subsection.26.6.2}{Integrali\040definiti}{section.26.6}% 278
-\BOOKMARK [3][-]{subsubsection*.62}{Integrali\040impropri}{subsection.26.6.2}% 279
-\BOOKMARK [2][-]{subsection.26.6.3}{Problemi\040di\040geometria}{section.26.6}% 280
-\BOOKMARK [3][-]{subsubsection*.65}{Area\040di\040superfici\040e\040lunghezza\040di\040curve}{subsection.26.6.3}% 281
-\BOOKMARK [3][-]{subsubsection*.69}{Volumi\040e\040superficie\040di\040solidi\040di\040rotazione}{subsection.26.6.3}% 282
-\BOOKMARK [0][-]{chapter.27}{Equazioni\040differenziali\040ordinarie}{part.6}% 283
-\BOOKMARK [1][-]{section.27.1}{Prime\040definizioni}{chapter.27}% 284
-\BOOKMARK [1][-]{section.27.2}{Classificazione,\040esempi\040e\040tecniche\040risolutive}{chapter.27}% 285
-\BOOKMARK [2][-]{subsection.27.2.1}{Equazioni\040lineari\040a\040coefficienti\040costanti}{section.27.2}% 286
-\BOOKMARK [3][-]{subsubsection*.78}{Definizione}{subsection.27.2.1}% 287
-\BOOKMARK [3][-]{subsubsection*.79}{Esempi}{subsection.27.2.1}% 288
-\BOOKMARK [3][-]{subsubsection*.80}{Soluzione\040generale}{subsection.27.2.1}% 289
-\BOOKMARK [4][-]{paragraph*.81}{Soluzione dell’equazione omogenea}{subsubsection*.80}% 290
-\BOOKMARK [4][-]{paragraph*.82}{Soluzione particolare dell’equazione completa}{subsubsection*.80}% 291
-\BOOKMARK [3][-]{subsubsection*.83}{Soluzione\040degli\040esempi}{subsection.27.2.1}% 292
-\BOOKMARK [2][-]{subsection.27.2.2}{Equazioni\040differenziali\040a\040variabili\040separabili:\040tecnica\040di\040soluzione\040di\040separazione\040delle\040variabili}{section.27.2}% 293
-\BOOKMARK [3][-]{subsubsection*.84}{Esempi}{subsection.27.2.2}% 294
-\BOOKMARK [0][-]{chapter.28}{Calcolo\040infinitesimale\040-\040Problemi}{part.6}% 295
-\BOOKMARK [0][-]{chapter.29}{Introduzione\040al\040calcolo\040multi-variabile}{part.6}% 296
-\BOOKMARK [1][-]{section.29.1}{Limite di una funzione di più variabili}{chapter.29}% 297
-\BOOKMARK [1][-]{section.29.2}{Derivate di funzioni di più variabili}{chapter.29}% 298
-\BOOKMARK [2][-]{subsection.29.2.1}{Derivate\040parziali}{section.29.2}% 299
-\BOOKMARK [2][-]{subsection.29.2.2}{Incremento\040di\040una\040funzione}{section.29.2}% 300
-\BOOKMARK [2][-]{subsection.29.2.3}{Differenziale}{section.29.2}% 301
-\BOOKMARK [1][-]{section.29.3}{Integrali\040su\040domini\040multi-dimensionali}{chapter.29}% 302
-\BOOKMARK [2][-]{subsection.29.3.1}{Definizioni}{section.29.3}% 303
-\BOOKMARK [3][-]{subsubsection*.85}{Interpretazione\040geometrica}{subsection.29.3.1}% 304
-\BOOKMARK [3][-]{subsubsection*.86}{Proprietà dell’integrale definito}{subsection.29.3.1}% 305
-\BOOKMARK [2][-]{subsection.29.3.2}{Teoremi}{section.29.3}% 306
-\BOOKMARK [2][-]{subsection.29.3.3}{Regole\040di\040integrazione}{section.29.3}% 307
-\BOOKMARK [2][-]{subsection.29.3.4}{Esempi}{section.29.3}% 308
-\BOOKMARK [0][-]{chapter.30}{Introduzione\040al\040calcolo\040vettoriale\040su\040spazi\040euclidei}{part.6}% 309
-\BOOKMARK [1][-]{section.30.1}{Operatori\040differenziali\040in\040spazi\040euclidei}{chapter.30}% 310
-\BOOKMARK [2][-]{subsection.30.1.1}{Derivata\040direzionale}{section.30.1}% 311
-\BOOKMARK [2][-]{subsection.30.1.2}{Gradiente}{section.30.1}% 312
-\BOOKMARK [2][-]{subsection.30.1.3}{Divergenza}{section.30.1}% 313
-\BOOKMARK [2][-]{subsection.30.1.4}{Rotore}{section.30.1}% 314
-\BOOKMARK [1][-]{section.30.2}{Integrali\040in\040spazi\040euclidei}{chapter.30}% 315
-\BOOKMARK [-1][-]{part.7}{VII\040Statistica}{}% 316
-\BOOKMARK [0][-]{chapter.31}{Introduzione\040alla\040statistica}{part.7}% 317
-\BOOKMARK [-1][-]{part.8}{VIII\040Indice}{}% 318
-\BOOKMARK [0][-]{chapter.32}{Indice}{part.8}% 319
-\BOOKMARK [0][-]{section*.87}{Proof\040Index}{part.8}% 320
+\BOOKMARK [2][-]{subsection.24.3.2}{Punti di discontinuità}{section.24.3}% 211
+\BOOKMARK [2][-]{subsection.24.3.3}{Teoremi}{section.24.3}% 212
+\BOOKMARK [3][-]{subsubsection*.47}{Teorema\040di\040Weierstrass}{subsection.24.3.3}% 213
+\BOOKMARK [3][-]{subsubsection*.48}{Teorema\040della\040permanenza\040del\040segno}{subsection.24.3.3}% 214
+\BOOKMARK [3][-]{subsubsection*.49}{Teorema\040degli\040zeri}{subsection.24.3.3}% 215
+\BOOKMARK [3][-]{subsubsection*.50}{Teorema\040dei\040valori\040intermedi}{subsection.24.3.3}% 216
+\BOOKMARK [1][-]{section.24.4}{Operazioni\040e\040teoremi\040sui\040limiti}{chapter.24}% 217
+\BOOKMARK [2][-]{subsection.24.4.1}{Operazioni\040coi\040limiti}{section.24.4}% 218
+\BOOKMARK [3][-]{subsubsection*.51}{Limiti\040infiniti\040e\040infinitesimi}{subsection.24.4.1}% 219
+\BOOKMARK [3][-]{subsubsection*.52}{Forme\040indeterminate}{subsection.24.4.1}% 220
+\BOOKMARK [2][-]{subsection.24.4.2}{Teorema\040del\040confronto}{section.24.4}% 221
+\BOOKMARK [2][-]{subsection.24.4.3}{Teorema di de l’Hopital}{section.24.4}% 222
+\BOOKMARK [1][-]{section.24.5}{Limiti\040fondamentali}{chapter.24}% 223
+\BOOKMARK [1][-]{section.24.6}{Confronto\040di\040infiniti\040e\040infinitesimi}{chapter.24}% 224
+\BOOKMARK [2][-]{subsection.24.6.1}{Calcolo\040dei\040limiti\040con\040sostituzione\040degli\040infinitesimi\040o\040degli\040infiniti}{section.24.6}% 225
+\BOOKMARK [1][-]{section.24.7}{Calcolo\040dei\040limiti}{chapter.24}% 226
+\BOOKMARK [1][-]{section.24.8}{Problemi}{chapter.24}% 227
+\BOOKMARK [2][-]{subsection.24.8.1}{Limiti}{section.24.8}% 228
+\BOOKMARK [2][-]{subsection.24.8.2}{Studio di funzione: dominio, continuità e limiti}{section.24.8}% 229
+\BOOKMARK [1][-]{section.24.9}{Note\040e\040dimostrazioni}{chapter.24}% 230
+\BOOKMARK [2][-]{subsection.24.9.1}{Funzioni reali a variabile reale, f: R →R}{section.24.9}% 231
+\BOOKMARK [2][-]{subsection.24.9.2}{Limiti}{section.24.9}% 232
+\BOOKMARK [2][-]{subsection.24.9.3}{Funzioni continue, f ∈C0}{section.24.9}% 233
+\BOOKMARK [2][-]{subsection.24.9.4}{Operazioni\040e\040teoremi\040sui\040limiti}{section.24.9}% 234
+\BOOKMARK [2][-]{subsection.24.9.5}{Contronto\040di\040infiniti\040e\040infinitesimi}{section.24.9}% 235
+\BOOKMARK [2][-]{subsection.24.9.6}{Limiti\040fondamentali}{section.24.9}% 236
+\BOOKMARK [0][-]{chapter.25}{Derivate}{part.6}% 237
+\BOOKMARK [1][-]{section.25.1}{Definizione}{chapter.25}% 238
+\BOOKMARK [1][-]{section.25.2}{Regole\040di\040derivazione}{chapter.25}% 239
+\BOOKMARK [1][-]{section.25.3}{Teoremi}{chapter.25}% 240
+\BOOKMARK [2][-]{subsection.25.3.1}{Teorema\040di\040Fermat}{section.25.3}% 241
+\BOOKMARK [2][-]{subsection.25.3.2}{Teorema\040di\040Rolle}{section.25.3}% 242
+\BOOKMARK [2][-]{subsection.25.3.3}{Teorema\040di\040Cauchy}{section.25.3}% 243
+\BOOKMARK [2][-]{subsection.25.3.4}{Teorema\040di\040Lagrange}{section.25.3}% 244
+\BOOKMARK [2][-]{subsection.25.3.5}{Teorema di de l’Hopital}{section.25.3}% 245
+\BOOKMARK [1][-]{section.25.4}{Derivate\040fondamentali}{chapter.25}% 246
+\BOOKMARK [1][-]{section.25.5}{Derivate\040di\040ordine\040superiore}{chapter.25}% 247
+\BOOKMARK [1][-]{section.25.6}{Serie\040di\040Taylor\040e\040MacLaurin}{chapter.25}% 248
+\BOOKMARK [2][-]{subsection.25.6.1}{Esempi}{section.25.6}% 249
+\BOOKMARK [1][-]{section.25.7}{Applicazioni}{chapter.25}% 250
+\BOOKMARK [2][-]{subsection.25.7.1}{Approssimazioni\040locali}{section.25.7}% 251
+\BOOKMARK [2][-]{subsection.25.7.2}{Studio\040di\040funzione}{section.25.7}% 252
+\BOOKMARK [2][-]{subsection.25.7.3}{Ottimizzazione}{section.25.7}% 253
+\BOOKMARK [1][-]{section.25.8}{Derivate\040-\040Problemi}{chapter.25}% 254
+\BOOKMARK [2][-]{subsection.25.8.1}{Calcolo\040derivate}{section.25.8}% 255
+\BOOKMARK [2][-]{subsection.25.8.2}{Calcolo di limiti con la regola di de l’Hopital}{section.25.8}% 256
+\BOOKMARK [2][-]{subsection.25.8.3}{Problemi\040di\040geometria}{section.25.8}% 257
+\BOOKMARK [2][-]{subsection.25.8.4}{Studio\040di\040funzione}{section.25.8}% 258
+\BOOKMARK [2][-]{subsection.25.8.5}{Problemi\040di\040ottimizzazione}{section.25.8}% 259
+\BOOKMARK [2][-]{subsection.25.8.6}{Approssimazioni\040locali\040di\040funzioni}{section.25.8}% 260
+\BOOKMARK [2][-]{subsection.25.8.7}{Metodo\040di\040Newton}{section.25.8}% 261
+\BOOKMARK [1][-]{section.25.9}{Note\040e\040dimostrazioni}{chapter.25}% 262
+\BOOKMARK [2][-]{subsection.25.9.1}{Definizione}{section.25.9}% 263
+\BOOKMARK [2][-]{subsection.25.9.2}{Regole\040di\040derivazione}{section.25.9}% 264
+\BOOKMARK [2][-]{subsection.25.9.3}{Teoremi}{section.25.9}% 265
+\BOOKMARK [2][-]{subsection.25.9.4}{Derivate\040fondamentali}{section.25.9}% 266
+\BOOKMARK [2][-]{subsection.25.9.5}{Derivate\040di\040ordine\040superiore}{section.25.9}% 267
+\BOOKMARK [2][-]{subsection.25.9.6}{Serie\040di\040Taylor\040e\040MacLaurin}{section.25.9}% 268
+\BOOKMARK [0][-]{chapter.26}{Integrali}{part.6}% 269
+\BOOKMARK [1][-]{section.26.1}{Definizioni}{chapter.26}% 270
+\BOOKMARK [2][-]{subsection.26.1.1}{Interpretazione\040geometrica}{section.26.1}% 271
+\BOOKMARK [2][-]{subsection.26.1.2}{Integrale\040definito}{section.26.1}% 272
+\BOOKMARK [3][-]{subsubsection*.71}{Proprietà dell’integrale definito}{subsection.26.1.2}% 273
+\BOOKMARK [2][-]{subsection.26.1.3}{Integrale\040indefinito}{section.26.1}% 274
+\BOOKMARK [1][-]{section.26.2}{Teoremi}{chapter.26}% 275
+\BOOKMARK [2][-]{subsection.26.2.1}{Teorema\040della\040media}{section.26.2}% 276
+\BOOKMARK [2][-]{subsection.26.2.2}{Teorema\040fondamentale\040del\040calcolo\040infinitesimale}{section.26.2}% 277
+\BOOKMARK [2][-]{subsection.26.2.3}{Derivata\040su\040dominio\040dipendente\040dalla\040variabile\040indipendente}{section.26.2}% 278
+\BOOKMARK [1][-]{section.26.3}{Integrali\040fondamentali}{chapter.26}% 279
+\BOOKMARK [1][-]{section.26.4}{Regole\040di\040integrazione}{chapter.26}% 280
+\BOOKMARK [2][-]{subsection.26.4.1}{Integrazione\040per\040parti}{section.26.4}% 281
+\BOOKMARK [2][-]{subsection.26.4.2}{Frazioni\040parziali}{section.26.4}% 282
+\BOOKMARK [2][-]{subsection.26.4.3}{Integrazione\040con\040sostituzione}{section.26.4}% 283
+\BOOKMARK [1][-]{section.26.5}{Tavola degli integrali indefiniti più comuni}{chapter.26}% 284
+\BOOKMARK [1][-]{section.26.6}{Integrali\040-\040Problemi}{chapter.26}% 285
+\BOOKMARK [2][-]{subsection.26.6.1}{Calcolo\040integrali\040indefiniti}{section.26.6}% 286
+\BOOKMARK [2][-]{subsection.26.6.2}{Integrali\040definiti}{section.26.6}% 287
+\BOOKMARK [3][-]{subsubsection*.75}{Integrali\040impropri}{subsection.26.6.2}% 288
+\BOOKMARK [2][-]{subsection.26.6.3}{Problemi\040di\040geometria}{section.26.6}% 289
+\BOOKMARK [3][-]{subsubsection*.78}{Area\040di\040superfici\040e\040lunghezza\040di\040curve}{subsection.26.6.3}% 290
+\BOOKMARK [3][-]{subsubsection*.82}{Volumi\040e\040superficie\040di\040solidi\040di\040rotazione}{subsection.26.6.3}% 291
+\BOOKMARK [0][-]{chapter.27}{Equazioni\040differenziali\040ordinarie}{part.6}% 292
+\BOOKMARK [1][-]{section.27.1}{Prime\040definizioni}{chapter.27}% 293
+\BOOKMARK [1][-]{section.27.2}{Classificazione,\040esempi\040e\040tecniche\040risolutive}{chapter.27}% 294
+\BOOKMARK [2][-]{subsection.27.2.1}{Equazioni\040lineari\040a\040coefficienti\040costanti}{section.27.2}% 295
+\BOOKMARK [3][-]{subsubsection*.91}{Definizione}{subsection.27.2.1}% 296
+\BOOKMARK [3][-]{subsubsection*.92}{Esempi}{subsection.27.2.1}% 297
+\BOOKMARK [3][-]{subsubsection*.93}{Soluzione\040generale}{subsection.27.2.1}% 298
+\BOOKMARK [4][-]{paragraph*.94}{Soluzione dell’equazione omogenea}{subsubsection*.93}% 299
+\BOOKMARK [4][-]{paragraph*.95}{Soluzione particolare dell’equazione completa}{subsubsection*.93}% 300
+\BOOKMARK [3][-]{subsubsection*.96}{Soluzione\040degli\040esempi}{subsection.27.2.1}% 301
+\BOOKMARK [2][-]{subsection.27.2.2}{Equazioni\040differenziali\040a\040variabili\040separabili:\040tecnica\040di\040soluzione\040di\040separazione\040delle\040variabili}{section.27.2}% 302
+\BOOKMARK [3][-]{subsubsection*.97}{Esempi}{subsection.27.2.2}% 303
+\BOOKMARK [0][-]{chapter.28}{Calcolo\040infinitesimale\040-\040Problemi}{part.6}% 304
+\BOOKMARK [0][-]{chapter.29}{Introduzione\040al\040calcolo\040multi-variabile}{part.6}% 305
+\BOOKMARK [1][-]{section.29.1}{Limite di una funzione di più variabili}{chapter.29}% 306
+\BOOKMARK [1][-]{section.29.2}{Derivate di funzioni di più variabili}{chapter.29}% 307
+\BOOKMARK [2][-]{subsection.29.2.1}{Derivate\040parziali}{section.29.2}% 308
+\BOOKMARK [2][-]{subsection.29.2.2}{Incremento\040di\040una\040funzione}{section.29.2}% 309
+\BOOKMARK [2][-]{subsection.29.2.3}{Differenziale}{section.29.2}% 310
+\BOOKMARK [1][-]{section.29.3}{Integrali\040su\040domini\040multi-dimensionali}{chapter.29}% 311
+\BOOKMARK [2][-]{subsection.29.3.1}{Definizioni}{section.29.3}% 312
+\BOOKMARK [3][-]{subsubsection*.98}{Interpretazione\040geometrica}{subsection.29.3.1}% 313
+\BOOKMARK [3][-]{subsubsection*.99}{Proprietà dell’integrale definito}{subsection.29.3.1}% 314
+\BOOKMARK [2][-]{subsection.29.3.2}{Teoremi}{section.29.3}% 315
+\BOOKMARK [2][-]{subsection.29.3.3}{Regole\040di\040integrazione}{section.29.3}% 316
+\BOOKMARK [2][-]{subsection.29.3.4}{Esempi}{section.29.3}% 317
+\BOOKMARK [0][-]{chapter.30}{Introduzione\040al\040calcolo\040vettoriale\040su\040spazi\040euclidei}{part.6}% 318
+\BOOKMARK [1][-]{section.30.1}{Operatori\040differenziali\040in\040spazi\040euclidei}{chapter.30}% 319
+\BOOKMARK [2][-]{subsection.30.1.1}{Derivata\040direzionale}{section.30.1}% 320
+\BOOKMARK [2][-]{subsection.30.1.2}{Gradiente}{section.30.1}% 321
+\BOOKMARK [2][-]{subsection.30.1.3}{Divergenza}{section.30.1}% 322
+\BOOKMARK [2][-]{subsection.30.1.4}{Rotore}{section.30.1}% 323
+\BOOKMARK [1][-]{section.30.2}{Integrali\040in\040spazi\040euclidei}{chapter.30}% 324
+\BOOKMARK [-1][-]{part.7}{VII\040Statistica}{}% 325
+\BOOKMARK [0][-]{chapter.31}{Introduzione\040alla\040statistica}{part.7}% 326
+\BOOKMARK [-1][-]{part.8}{VIII\040Indice}{}% 327
+\BOOKMARK [0][-]{chapter.32}{Indice}{part.8}% 328
+\BOOKMARK [0][-]{section*.100}{Proof\040Index}{part.8}% 329

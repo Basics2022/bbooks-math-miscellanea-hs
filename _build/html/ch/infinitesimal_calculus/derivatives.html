@@ -71,8 +71,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="24.7. Derivate - Problemi" href="derivatives-problems.html" />
-    <link rel="prev" title="23.8. Note e dimiostrazioni" href="analysis-notes.html" />
+    <link rel="next" title="24.8. Derivate - Problemi" href="derivatives-problems.html" />
+    <link rel="prev" title="23.9. Note e dimostrazioni" href="analysis-notes.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
@@ -237,13 +237,13 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../calculus.html">22. Introduzione al calcolo</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="analysis.html">23. Introduzione all’analisi</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="analysis-problems.html">23.7. Problemi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="analysis-notes.html">23.8. Note e dimiostrazioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analysis-problems.html">23.8. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analysis-notes.html">23.9. Note e dimostrazioni</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">24. Derivate</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="derivatives-problems.html">24.7. Derivate - Problemi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="derivatives-notes.html">24.8. Dimostrazioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="derivatives-problems.html">24.8. Derivate - Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="derivatives-notes.html">24.9. Note e dimostrazioni</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="integrals.html">25. Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -496,13 +496,14 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#derivate-fondamentali">24.4. Derivate fondamentali</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#derivate-di-ordine-superiore">24.5. Derivate di ordine superiore</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applicazioni">24.6. Applicazioni</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#espansioni-in-serie-di-taylor-e-maclaurin">24.6.1. Espansioni in serie di Taylor e MacLaurin</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">24.6.1.1. Esempi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#serie-di-taylor-e-maclaurin">24.6. Serie di Taylor e MacLaurin</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">24.6.1. Esempi</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#studio-di-funzione">24.6.2. Studio di funzione</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ottimizzazione">24.6.3. Ottimizzazione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applicazioni">24.7. Applicazioni</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#approssimazioni-locali">24.7.1. Approssimazioni locali</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#studio-di-funzione">24.7.2. Studio di funzione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ottimizzazione">24.7.3. Ottimizzazione</a></li>
 </ul>
 </li>
 </ul>
@@ -563,7 +564,15 @@ Dimostrazione della linearità dell’operazione di derivazione<div class="sd-su
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><strong>todo</strong></p>
+<p class="sd-card-text">La derivata in <span class="math notranslate nohighlight">\(x\)</span> della funzione <span class="math notranslate nohighlight">\(a f(x) + b g(x)\)</span> viene calcolata con la definizione di limite di rapporto incrementale, a <span class="math notranslate nohighlight">\(x\)</span> costante per <span class="math notranslate nohighlight">\(h \rightarrow 0\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \left( a f(x) + b g(x) \right)' 
+  &amp; = \lim_{h \rightarrow 0} \frac{( a f(x+h) + b g(x+h) ) - ( a f(x) + b g(x) ) }{h} = \\
+  &amp; = \lim_{h \rightarrow 0} \frac{a ( f(x+h) + f(x) ) + b ( g(x+h) -  b g(x) )}{h} = \\
+  &amp; = a \lim_{h \rightarrow 0} \frac{f(x+h) + f(x)}{h} + b \lim_{h \rightarrow 0} \frac{ g(x+h) -  b g(x) }{h} = \\
+  &amp; = a f'(x) + b g'(x) \ .
+\end{aligned}\end{split}\]</div>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -572,6 +581,16 @@ Dimostrazione della regola del prodotto<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">La derivata in <span class="math notranslate nohighlight">\(x\)</span> della funzione <span class="math notranslate nohighlight">\(f(x) g(x)\)</span> viene calcolata con la definizione di limite di rapporto incrementale, a <span class="math notranslate nohighlight">\(x\)</span> costante per <span class="math notranslate nohighlight">\(h \rightarrow 0\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \left( f(x) g(x) \right)' 
+  &amp; = \lim_{h \rightarrow 0} \frac{f(x+h) g(x+h) - f(x) g(x)}{h} = \\
+  &amp; = \lim_{h \rightarrow 0} \frac{f(x+h) g(x+h) - f(x)g(x+h) + f(x)g(x+h) - f(x) g(x)}{h} = \\
+  &amp; = \lim_{h \rightarrow 0} \frac{f(x+h) g(x+h) - f(x)g(x+h)}{h} + \lim_{h\rightarrow 0} \frac{f(x)g(x+h) - f(x) g(x)}{h} = \\
+  &amp; = \lim_{h \rightarrow 0} \underbrace{\frac{f(x+h) - f(x)}{h}}_{\rightarrow f'(x)} \underbrace{g(x+h)}_{\rightarrow g(x)} + f(x) \underbrace{\lim_{h\rightarrow 0} \frac{g(x+h) - g(x)}{h}}{\rightarrow g'(x)} = \\
+  &amp; = f'(x) g(x) + f(x) g'(x) \ .
+\end{aligned}\end{split}\]</div>
 <p class="sd-card-text"><strong>todo</strong></p>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -581,7 +600,16 @@ Dimostrazione della regola del quoziente<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><strong>todo</strong></p>
+<p class="sd-card-text">La derivata in <span class="math notranslate nohighlight">\(x\)</span> della funzione <span class="math notranslate nohighlight">\(\frac{f(x)}{g(x)}\)</span> viene calcolata con la definizione di limite di rapporto incrementale, a <span class="math notranslate nohighlight">\(x\)</span> costante per <span class="math notranslate nohighlight">\(h \rightarrow 0\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \left( \frac{f(x)}{ g(x)} \right)' 
+  &amp; = \lim_{h \rightarrow 0} \frac{ \frac{f(x+h)}{g(x+h)} - \frac{f(x)}{g(x)}}{h} = \\
+  &amp; = \lim_{h \rightarrow 0} \frac{\frac{f(x+h) g(x) - f(x) g(x+h)}{g(x) g(x+h)}}{h} = \\
+  &amp; = \lim_{h \rightarrow 0} \frac{f(x+h) g(x) - f(x) g(x) + f(x) g(x) - f(x) g(x+h)}{h g(x) g(x+h)} = \\
+  &amp; = \dots \\
+  &amp; = \frac{f'(x) g(x) - f(x) g'(x)}{g^2(x)} \ .
+\end{aligned}\end{split}\]</div>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -590,7 +618,20 @@ Dimostrazione della regola della funzione composta<div class="sd-summary-down do
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><strong>todo</strong></p>
+<p class="sd-card-text">La derivata in <span class="math notranslate nohighlight">\(x\)</span> della funzione <span class="math notranslate nohighlight">\(f(g(x))\)</span> viene calcolata con la definizione di limite di rapporto incrementale, a <span class="math notranslate nohighlight">\(x\)</span> costante per <span class="math notranslate nohighlight">\(h \rightarrow 0\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \left( f(g(x)) \right)' 
+  &amp; = \lim_{h \rightarrow 0} \frac{ f(g(x+h)) - f(g(x)) }{h} = \\
+  &amp; = \lim_{h \rightarrow 0} \frac{ f(g(x+h)) - f(g(x)) }{h} \frac{g(x+h) - g(x)}{g(x+h)-g(x)} = \\
+  &amp; = \lim_{h \rightarrow 0} \frac{ f(g(x+h)) - f(g(x)) }{g(x+h) - g(x)} \frac{g(x+h)-g(x)}{h} = \\
+  &amp; = \dots = \\
+  &amp; = f'\left( g(x) \right) g'(x) \ .
+\end{aligned}\end{split}\]</div>
+<ul class="simple">
+<li><p class="sd-card-text"><strong>todo</strong> <em>discutere la validità dell’operazione di moltiplicare per <span class="math notranslate nohighlight">\(\frac{g(x+h) - g(x)}{g(x+h) - g(x)}\)</span></em></p></li>
+<li><p class="sd-card-text"><strong>todo</strong> <span class="math notranslate nohighlight">\(g(x+h) - g(x)) \rightarrow 0\)</span> per <span class="math notranslate nohighlight">\(h \rightarrow 0\)</span> poiché <span class="math notranslate nohighlight">\(g(x)\)</span> è continua se derivabile</p></li>
+</ul>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -848,10 +889,8 @@ Dimostrazione di <span class="math notranslate nohighlight">\(\ (\cos x)'\)</spa
 <span id="infinitesimal-calculus-derivatives-higher"></span><h2><span class="section-number">24.5. </span>Derivate di ordine superiore<a class="headerlink" href="#derivate-di-ordine-superiore" title="Permalink to this heading">#</a></h2>
 <p>Nel calcolo delle derivate di ordine superiore non c’è nulla di speciale: una volta che si è in grado di calcolare la derivata di una funzione reale, la derivata di ordine <span class="math notranslate nohighlight">\(n\)</span> viene calcolata applicando <span class="math notranslate nohighlight">\(n\)</span> volte l’operatore derivata alla funzione.</p>
 </div>
-<div class="section" id="applicazioni">
-<span id="infinitesimal-calculus-derivatives-applications"></span><h2><span class="section-number">24.6. </span>Applicazioni<a class="headerlink" href="#applicazioni" title="Permalink to this heading">#</a></h2>
-<div class="section" id="espansioni-in-serie-di-taylor-e-maclaurin">
-<span id="infinitesimal-calculus-derivatives-taylor"></span><h3><span class="section-number">24.6.1. </span>Espansioni in serie di Taylor e MacLaurin<a class="headerlink" href="#espansioni-in-serie-di-taylor-e-maclaurin" title="Permalink to this heading">#</a></h3>
+<div class="section" id="serie-di-taylor-e-maclaurin">
+<span id="infinitesimal-calculus-derivatives-taylor"></span><h2><span class="section-number">24.6. </span>Serie di Taylor e MacLaurin<a class="headerlink" href="#serie-di-taylor-e-maclaurin" title="Permalink to this heading">#</a></h2>
 <p>Le espansioni in serie di Taylor e di MacLaurin sono serie polinomiali che forniscono un”<strong>approssimazione locale</strong> di una funzione, <em>valida nell’intorno</em> (<strong>todo</strong> valutare questa espressione) di un punto.</p>
 <p>La <strong>serie di Taylor</strong> della funzione <span class="math notranslate nohighlight">\(f(x)\)</span> in un intervallo centrato in <span class="math notranslate nohighlight">\(x_0\)</span> è la serie</p>
 <div class="math notranslate nohighlight">
@@ -893,7 +932,7 @@ Dimostrazione<div class="sd-summary-down docutils">
 $<span class="math notranslate nohighlight">\(f(x) = T[f(x), x_0] + o\left((x-x_0)^n\right) \ .\)</span>$</p>
 </div>
 </details><div class="section" id="esempi">
-<h4><span class="section-number">24.6.1.1. </span>Esempi<a class="headerlink" href="#esempi" title="Permalink to this heading">#</a></h4>
+<h3><span class="section-number">24.6.1. </span>Esempi<a class="headerlink" href="#esempi" title="Permalink to this heading">#</a></h3>
 <p>La serie di MacLaurin per le funzioni interessate nei <a class="reference internal" href="analysis.html#infinitesimal-calculus-limits-fund"><span class="std std-ref">limiti notevoli</span></a> forniscono approssimazioni locali di ordine maggiore per <span class="math notranslate nohighlight">\(x \rightarrow 0\)</span>,</p>
 <div class="math notranslate nohighlight" id="equation-eq-infinitesimal-calculus-derivatives-taylor-fund-limits">
 <span class="eqno">(24.9)<a class="headerlink" href="#equation-eq-infinitesimal-calculus-derivatives-taylor-fund-limits" title="Permalink a questa equazione">#</a></span>\[\begin{split}\begin{aligned}
@@ -923,11 +962,16 @@ e^{ix} &amp; = 1 + ix + \frac{(ix)^2}{2!} + \frac{(ix)^3}{3!} + \frac{(ix)^4}{4!
 \end{aligned}\end{split}\]</div>
 </div>
 </div>
+<div class="section" id="applicazioni">
+<span id="infinitesimal-calculus-derivatives-applications"></span><h2><span class="section-number">24.7. </span>Applicazioni<a class="headerlink" href="#applicazioni" title="Permalink to this heading">#</a></h2>
+<div class="section" id="approssimazioni-locali">
+<h3><span class="section-number">24.7.1. </span>Approssimazioni locali<a class="headerlink" href="#approssimazioni-locali" title="Permalink to this heading">#</a></h3>
+</div>
 <div class="section" id="studio-di-funzione">
-<h3><span class="section-number">24.6.2. </span>Studio di funzione<a class="headerlink" href="#studio-di-funzione" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">24.7.2. </span>Studio di funzione<a class="headerlink" href="#studio-di-funzione" title="Permalink to this heading">#</a></h3>
 </div>
 <div class="section" id="ottimizzazione">
-<h3><span class="section-number">24.6.3. </span>Ottimizzazione<a class="headerlink" href="#ottimizzazione" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">24.7.3. </span>Ottimizzazione<a class="headerlink" href="#ottimizzazione" title="Permalink to this heading">#</a></h3>
 </div>
 </div>
 <div class="toctree-wrapper compound">
@@ -970,7 +1014,7 @@ e^{ix} &amp; = 1 + ix + \frac{(ix)^2}{2!} + \frac{(ix)^3}{3!} + \frac{(ix)^4}{4!
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">precedente</p>
-        <p class="prev-next-title"><span class="section-number">23.8. </span>Note e dimiostrazioni</p>
+        <p class="prev-next-title"><span class="section-number">23.9. </span>Note e dimostrazioni</p>
       </div>
     </a>
     <a class="right-next"
@@ -978,7 +1022,7 @@ e^{ix} &amp; = 1 + ix + \frac{(ix)^2}{2!} + \frac{(ix)^3}{3!} + \frac{(ix)^4}{4!
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">24.7. </span>Derivate - Problemi</p>
+        <p class="prev-next-title"><span class="section-number">24.8. </span>Derivate - Problemi</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1009,13 +1053,14 @@ e^{ix} &amp; = 1 + ix + \frac{(ix)^2}{2!} + \frac{(ix)^3}{3!} + \frac{(ix)^4}{4!
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#derivate-fondamentali">24.4. Derivate fondamentali</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#derivate-di-ordine-superiore">24.5. Derivate di ordine superiore</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applicazioni">24.6. Applicazioni</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#espansioni-in-serie-di-taylor-e-maclaurin">24.6.1. Espansioni in serie di Taylor e MacLaurin</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">24.6.1.1. Esempi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#serie-di-taylor-e-maclaurin">24.6. Serie di Taylor e MacLaurin</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">24.6.1. Esempi</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#studio-di-funzione">24.6.2. Studio di funzione</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ottimizzazione">24.6.3. Ottimizzazione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applicazioni">24.7. Applicazioni</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#approssimazioni-locali">24.7.1. Approssimazioni locali</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#studio-di-funzione">24.7.2. Studio di funzione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ottimizzazione">24.7.3. Ottimizzazione</a></li>
 </ul>
 </li>
 </ul>

@@ -14,6 +14,10 @@ execute:
 latex:
   latex_documents:
     targetname: book.tex
+  mathjax:
+    inlineMath: [["$", "$"], ["\\(", "\\)"]]
+    displayMath: [["$", "$"], ["\\(", "\\)"]]
+    equationNumbers: {"autoNumber": "all"}
 # latex_elements:
 #   preamble: |
 #       % Set section numbering
@@ -21,6 +25,11 @@ latex:
 #       % Set TOC depth
 #       \setcounter{tocdepth}{4}
      
+# parse:
+#     myst_enable_extensions:
+#         # use amsmath for math rendering. Not compatible with .md syntax.
+#         # Need to update $$$$ with \begin{equation}\end{equation}
+#         - amsmath
 
 # Add a bibtex file so that we can create citations
 bibtex_bibfiles:
