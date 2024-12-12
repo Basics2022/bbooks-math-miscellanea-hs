@@ -23,7 +23,12 @@ Esistono casi in cui:
 
 (multivariable-calculus:continuity)=
 # Funzioni continue
+```{prf:definition} Funzione continua
+In analogia con la [definizione di funzione di una variabile continua](infinitesimal-calculus:limits:def), una funzione di più variabili $f: D \in \mathbb{R}^n \rightarrow \mathbb{R}$ è continua in un punto $\mathbf{x}_0 \in D$ se esiste il limite della funzione e coincide con il valore della funzione nel punto,
 
+$$\lim_{\mathbf{x} \rightarrow \mathbf{x}_0} f(\mathbf{x}) = f(\mathbf{x}_0) \ .$$
+
+```
 
 
 <!--
