@@ -538,11 +538,11 @@ document.write(`
   \sigma 
  &amp; = \sum_k f(\mathbf{x}_k) \Delta x_k \Delta y_k = \\
  &amp; = \sum_i \sum_j f(x_i, y_j) \Delta y_j \Delta x_i 
-  \rightarrow \sum_i \int_{y=Y_1(x)}^{Y_2(x)} f(x_i, y) dy \, \Delta x_i 
-  \rightarrow \int_{x=x_1}^{x_2} \int_{y=Y_1(x)}^{Y_2(x)} f(x_i, y) dy \, dx  \\
+  \ \rightarrow \ \sum_i \int_{y=Y_1(x)}^{Y_2(x)} f(x_i, y) dy \, \Delta x_i 
+  \ \rightarrow \ \int_{x=x_1}^{x_2} \int_{y=Y_1(x)}^{Y_2(x)} f(x, y) dy \, dx  \\
  &amp; = \sum_j \sum_i f(x_i, y_j) \Delta x_i \Delta y_j 
-  \rightarrow \sum_j \int_{x=X_1(y)}^{X_2(y)} f(x, y) dx \, \Delta y_j 
-  \rightarrow \int_{y=y_1}^{y_2} \int_{x=X_1(y)}^{X_2(y)} f(x, y) dx \, dy \\
+  \ \rightarrow \ \sum_j \int_{x=X_1(y)}^{X_2(y)} f(x, y_j) dx \, \Delta y_j 
+  \ \rightarrow \ \int_{y=y_1}^{y_2} \int_{x=X_1(y)}^{X_2(y)} f(x, y) dx \, dy \\
 \end{aligned}\end{split}\]</div>
 <div class="proof example dropdown admonition" id="multivariable-calculus:integral:example">
 <p class="admonition-title"><span class="caption-number">Example 28.3 </span></p>
