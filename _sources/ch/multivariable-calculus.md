@@ -31,7 +31,7 @@ Il calcolo multi-variabile consente di introdurre il [calcolo vettoriale](vector
 - collegamento a calcolo per funzioni a una variabile
 
 
-
+<!--
 I concetti di limite, derivata e integrale introdotti per le funzioni reali di variabile reale, $f: D \subset \mathbb{R} \rightarrow \mathbb{R}$ nella sezione del calcolo infinitesimale, vengono qui estesi alle funzoni a valore reale di più variabili, $f: D \subset \mathbb{R}^n \rightarrow \mathbb{R}$.
 
 Gli strumenti del calcolo multi-variabile vengono successivamente utilizzati per il calcolo vettoriale.
@@ -43,3 +43,5 @@ Le funzioni e il calcolo multi-variabile trovano la loro applicazione in molti a
   - la programmazione ottima
   - il controllo ottimo
   - ...
+-->
+
