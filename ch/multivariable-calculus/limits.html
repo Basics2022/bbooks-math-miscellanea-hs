@@ -520,19 +520,35 @@ document.write(`
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="limite-di-una-funzione-di-piu-variabili">
 <span id="multivariable-calculus-limit"></span><h1><span class="section-number">28.1. </span>Limite di una funzione di più variabili<a class="headerlink" href="#limite-di-una-funzione-di-piu-variabili" title="Permalink to this heading">#</a></h1>
-<p>Si considera una funzione <span class="math notranslate nohighlight">\(f\)</span> a valori reali di due variabili reali <span class="math notranslate nohighlight">\(x,y\)</span>, <span class="math notranslate nohighlight">\(\mathbf{x} := (x,y) \in \mathbb{R}^2\)</span>, <span class="math notranslate nohighlight">\(f(x,y): \ D \in \mathbb{R}^2 \rightarrow \mathbb{R}\)</span>.</p>
-<p>Il limite al finito per <span class="math notranslate nohighlight">\((x,y) \rightarrow (x_0, y_0)\)</span> della funzione a più variabili <span class="math notranslate nohighlight">\(f(x,y)\)</span>, se esiste ed è unico, è il valore al quale tende la funzione <span class="math notranslate nohighlight">\(f(x,y)\)</span> all’avvicinarsi di <span class="math notranslate nohighlight">\((x,y) \rightarrow (x_0, y_0)\)</span>, in maniera indipendente dal modo di avvicinarvisi.</p>
-<p>Più precisamente, il limite finito al finito di una funzione di più variabili</p>
+<p>Il limite <span class="math notranslate nohighlight">\(\ell\)</span> finito al finito <span class="math notranslate nohighlight">\(\mathbf{x}_0 \in D\)</span> di una funzione di più variabili <span class="math notranslate nohighlight">\(f(\mathbf{x})\)</span>,</p>
 <div class="math notranslate nohighlight">
-\[\ell = \lim_{(x,y) \rightarrow (x_0,y_0)} f(x,y) = \lim_{\mathbf{x} \rightarrow \mathbf{x}_0} f(x,y)\]</div>
+\[\ell = \lim_{\mathbf{x} \rightarrow \mathbf{x}_0} f(x,y)\]</div>
 <p>viene definito come quel valore <span class="math notranslate nohighlight">\(\ell\)</span> che soddisfa la seguente condizione</p>
 <div class="math notranslate nohighlight">
 \[\text{per } \forall \varepsilon &gt; 0 \quad \exists \delta_{\varepsilon} \quad \text{t.c.} \quad |f(x,y) - \ell| &lt; \varepsilon \quad \text{per } \forall (x,y) \quad 0 &lt; || \mathbf{x} - \mathbf{x}_0|| &lt; \delta_\varepsilon \ ,\]</div>
 <p>avendo usato una norma per le <span class="math notranslate nohighlight">\(n\)</span>-uple di numeri reali appartenenti a <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span>, per definire un’intorno di <span class="math notranslate nohighlight">\(\mathbb{x}_0\)</span>.</p>
+<p>La definizione può essere descritta qualitativamente: il limite <span class="math notranslate nohighlight">\(\ell\)</span> della funzione per <span class="math notranslate nohighlight">\(\mathbf{x} \rightarrow \mathbf{x}_0\)</span> è il valore al quale tende il valore <span class="math notranslate nohighlight">\(f(\mathbf{x})\)</span> all’avvicinarsi di <span class="math notranslate nohighlight">\(\mathbf{x}\)</span> al punto <span class="math notranslate nohighlight">\(\mathbf{x}_0\)</span>, in maniera indipendente dalla direzione di avvicinamento.</p>
+<p>Data la definzione di limite, se il limite esiste esso è unico.</p>
+<p>Esistono casi in cui:</p>
+<ul class="simple">
+<li><p>avvicinandosi al punto <span class="math notranslate nohighlight">\(\mathbf{x}_0\)</span> lungo direzioni differeti, si ottengono diversi valori; <em>fare esempio</em></p></li>
+<li><p>…</p></li>
+</ul>
 <p><strong>todo</strong> Esempi in cui il limite esiste e il limite non esiste</p>
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="funzioni-continue">
 <span id="multivariable-calculus-continuity"></span><h1><span class="section-number">28.2. </span>Funzioni continue<a class="headerlink" href="#funzioni-continue" title="Permalink to this heading">#</a></h1>
+<!--
+Il limite di una funzione $f$ a valori reali di due variabili reali $x,y$, $\mathbf{x} := (x,y) \in \mathbb{R}^2$ 
+
+ $$f(x,y): \ D \in \mathbb{R}^2 \rightarrow \mathbb{R} \ ,$$
+
+essa ha limite $\ell$ per $\mathbf{x} \rightarrow \mathbf{x}_0$,
+
+  $$\ell = \lim_{(x,y) \rightarrow (x_0,y_0)} f(x,y) = \lim_{\mathbf{x} \rightarrow \mathbf{x}_0} f(x,y)$$
+
+se 
+-->
 </div>
 
     <script type="text/x-thebe-config">
