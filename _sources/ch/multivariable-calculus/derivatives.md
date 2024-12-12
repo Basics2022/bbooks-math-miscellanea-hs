@@ -21,6 +21,12 @@ $$ (multivariable-calculus:derivatives:partial:differential)
 Verificare la validità dell'espressione {eq}`multivariable-calculus:derivatives:partial:differential`, inserendola nella definizione di derivata parziale e calcolando il limite.
 
 ```{dropdown} Soluzione
+$$\begin{aligned}
+  \lim_{h_1 \rightarrow 0} \frac{f(x_1+h_1, x_2, \dots, x_n) - f(x_1, x_2, \dots, x_n)}{h_1} & = 
+  \lim_{h_1 \rightarrow 0} \frac{1}{h_1} \left[ h_1 \frac{\partial f}{\partial x_1}(x_1, \dots, x_n) + o(h_1) \right] = \\
+  & = \lim_{h_1 \rightarrow 0} \left( \frac{\partial f}{\partial x_1}(x_1, \dots, x_n) + O(h_1) \right) = \frac{\partial f}{\partial x_1}(x_1, \dots, x_n) \ .
+\end{aligned}$$
+
 ```
 
 ````
