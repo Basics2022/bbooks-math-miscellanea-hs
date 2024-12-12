@@ -22,3 +22,6 @@ $$\text{per } \forall \varepsilon > 0 \quad \exists \delta_{\varepsilon} \quad \
 avendo usato una norma per le $n$-uple di numeri reali appartenenti a $\mathbb{R}^n$, per definire un'intorno di $\mathbb{x}_0$.
 
 **todo** Esempi in cui il limite esiste e il limite non esiste
+
+(multivariable-calculus:continuity)=
+# Funzioni continue
