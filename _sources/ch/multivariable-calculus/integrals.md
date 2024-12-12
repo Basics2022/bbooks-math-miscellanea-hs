@@ -35,7 +35,13 @@ $$\int_{\mathbf{x} \in \Omega} f(\mathbf{x}) d \mathbf{x} := \lim_{\Delta \Omega
 ## Regole di integrazione
 ...
 
-*esempio nel caso di due variabili, con partizione dell'insieme in elementi $\Delta x \Delta y$*
+*esempio nel caso di due variabili, con partizione dell'insieme in elementi $\Delta x_i \Delta y_j$*
+
+$$\begin{aligned}
+  \sigma 
+  & = \sum_k f(\mathbf{x}_k) \Delta x_k \Delta y_k = \\
+  & = \sum_i \sum_j f(x_i, y_j) \Delta x_i \Delta y_j = \\
+\end{aligned}$$
 
 
 <!--
