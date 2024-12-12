@@ -60,13 +60,29 @@ Calcolare la massa della superficie delimitata dall'asse $x$ e dalla parabola co
 
 $$\begin{aligned}
 I_1 
+& = \int_{x=-1}^{1} \int_{y=0}^{1-x^2} \left( 1 + y \right) dy \, dx = \\
+& = \int_{x=-1}^{1} \left( 1-x^2 + \frac{1}{2} (1-x^2)^2 \right) \, dx = \\ 
+& = \int_{x=-1}^{1} \left( \frac{3}{2} - 2 x^2 + \frac{1}{2} x^4 \right) \, dx = \\ 
+& = 3 - \frac{4}{3} + \frac{1}{5} = 
+\end{aligned}$$
+
+<!--
+$$\begin{aligned}
+I_1 
 & = \int_{x=-1}^{1} \int_{y=0}^{1-x^2} \left( 1 + x \right) dy \, dx 
   = \int_{x=-1}^{1} ( 1 + x )(1-x^2) \, dx = \\ 
 & = \int_{x=-1}^{1} ( 1 + x - x^2 - x^3 ) \, dx = 2 - \frac{2}{3} = \frac{4}{3} \ .
 \end{aligned}$$
+-->
 
 2.
 
+$$
+I_2 = \int_{y=0}^{1} \int_{x=-\sqrt{1-y}}^{\sqrt{1-y}} \left( 1 + y \right) dy \, dx 
+= \int_{y=0}^{1} 2 ( 1 + y )\sqrt{1-y} \, dy 
+$$
+
+<!--
 $$
 I_2 = \int_{y=0}^{1} \int_{x=-\sqrt{1-y}}^{\sqrt{1-y}} \left( 1 + x \right) dy \, dx 
 = \int_{y=0}^{1} 2 \sqrt{1-y} \, dy 
@@ -81,7 +97,7 @@ I_2
 & = - 4 \int_{\theta=0}^{\frac{\pi}{2}} d \frac{\cos^3 \theta}{3}
   = - \frac{4}{3} \left[ -\cos^3 \theta \right]\bigg|_{\theta=0}^{\frac{\pi}{2}} = \frac{4}{3} \ .
 \end{aligned}$$
-
+-->
 
 ```
 
