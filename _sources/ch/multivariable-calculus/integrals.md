@@ -34,6 +34,7 @@ $$\int_{\mathbf{x} \in \Omega} f(\mathbf{x}) d \mathbf{x} := \lim_{\Delta \Omega
 (multivariable-calculus:integrals:rules)=
 ## Regole di integrazione
 ...
+Il valore di un integrale su un dominio multi-dimensionale è indipendente dal metodo/ordine di integrazione.
 
 *esempio nel caso di due variabili, con partizione dell'insieme in elementi $\Delta x_i \Delta y_j$ con dominio semplice*
 
@@ -48,7 +49,9 @@ $$\begin{aligned}
   \ \rightarrow \ \int_{y=y_1}^{y_2} \int_{x=X_1(y)}^{X_2(y)} f(x, y) dx \, dy \\
 \end{aligned}$$
 
-```{prf:example}
+
+
+```{prf:example} Indipendenza dell'integrale multiplo dal metodo di integrazione
 :label: multivariable-calculus:integral:example
 :class: dropdown
 
