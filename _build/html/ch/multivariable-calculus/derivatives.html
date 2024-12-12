@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>28.2. Derivate di funzioni di più variabili &#8212; Matematica per le scuole superiori</title>
+    <title>28.3. Derivate di funzioni di più variabili &#8212; Matematica per le scuole superiori</title>
   
   
   
@@ -71,7 +71,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="28.3. Integrali su domini multi-dimensionali" href="integrals.html" />
+    <link rel="next" title="28.4. Integrali su domini multi-dimensionali" href="integrals.html" />
     <link rel="prev" title="28.1. Limite di una funzione di più variabili" href="limits.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
@@ -255,8 +255,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../infinitesimal_calculus/problems.html">27. Calcolo infinitesimale - Problemi</a></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../multivariable-calculus.html">28. Introduzione al calcolo multi-variabile</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="limits.html">28.1. Limite di una funzione di più variabili</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">28.2. Derivate di funzioni di più variabili</a></li>
-<li class="toctree-l2"><a class="reference internal" href="integrals.html">28.3. Integrali su domini multi-dimensionali</a></li>
+
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">28.3. Derivate di funzioni di più variabili</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integrals.html">28.4. Integrali su domini multi-dimensionali</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../vector-calculus.html">29. Introduzione al calcolo vettoriale su spazi euclidei</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -484,9 +485,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#derivate-parziali">28.2.1. Derivate parziali</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#incremento-di-una-funzione">28.2.2. Incremento di una funzione</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#differenziale">28.2.3. Differenziale</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#derivate-parziali">28.3.1. Derivate parziali</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#incremento-di-una-funzione">28.3.2. Incremento di una funzione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#differenziale">28.3.3. Differenziale</a></li>
 </ul>
             </nav>
         </div>
@@ -507,7 +508,7 @@ document.write(`
 <p class="sd-p-0 sd-m-0">basics</p>
 </div>
 <div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
-<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-calendar" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path></svg></span>09 dic 2024</p>
+<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-calendar" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path></svg></span>12 dic 2024</p>
 </div>
 <div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
 <p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>1 min read</p>
@@ -518,9 +519,9 @@ document.write(`
 </div>
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="derivate-di-funzioni-di-piu-variabili">
-<span id="multivariable-calculus-derivatives"></span><h1><span class="section-number">28.2. </span>Derivate di funzioni di più variabili<a class="headerlink" href="#derivate-di-funzioni-di-piu-variabili" title="Permalink to this heading">#</a></h1>
+<span id="multivariable-calculus-derivatives"></span><h1><span class="section-number">28.3. </span>Derivate di funzioni di più variabili<a class="headerlink" href="#derivate-di-funzioni-di-piu-variabili" title="Permalink to this heading">#</a></h1>
 <div class="section" id="derivate-parziali">
-<h2><span class="section-number">28.2.1. </span>Derivate parziali<a class="headerlink" href="#derivate-parziali" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">28.3.1. </span>Derivate parziali<a class="headerlink" href="#derivate-parziali" title="Permalink to this heading">#</a></h2>
 <p>Data una funzione di più variabili <span class="math notranslate nohighlight">\((x_1, x_2, \dots, x_n) \in \mathbb{R}^n\)</span>, la derivata parziale rispetto alla variabile <span class="math notranslate nohighlight">\(x_1\)</span>, se esiste, è la derivata della funzione calcolata tenendo costanti tutte le altre variabili,</p>
 <div class="math notranslate nohighlight">
 \[\frac{\partial f}{\partial x_1}(x_1, x_2, \dots, x_n) := \lim_{h_1 \rightarrow 0} \frac{f(x_1+h_1, x_2, \dots, x_n) - f(x_1, x_2, \dots, x_n)}{h_1}\]</div>
@@ -533,13 +534,13 @@ document.write(`
 <p>Si può «verificare» questa relazione inserendola nella definizione di derivata parziale e verificando che si ottiene un’identità.</p>
 </div>
 <div class="section" id="incremento-di-una-funzione">
-<h2><span class="section-number">28.2.2. </span>Incremento di una funzione<a class="headerlink" href="#incremento-di-una-funzione" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">28.3.2. </span>Incremento di una funzione<a class="headerlink" href="#incremento-di-una-funzione" title="Permalink to this heading">#</a></h2>
 <p>Dati gli incrementi <span class="math notranslate nohighlight">\(h_i\)</span> delle variabili indipendenti <span class="math notranslate nohighlight">\(x_i\)</span>, l’incremento della funzione partendo dalla <span class="math notranslate nohighlight">\(n\)</span>-pla <span class="math notranslate nohighlight">\(\mathbb{x}\)</span> dopo l’incremento delle variabili è</p>
 <div class="math notranslate nohighlight">
 \[\Delta f(\mathbf{x}, \mathbf{h}) = f(\mathbf{x} + \mathbf{h}) - f(\mathbf{x}) \ .\]</div>
 </div>
 <div class="section" id="differenziale">
-<h2><span class="section-number">28.2.3. </span>Differenziale<a class="headerlink" href="#differenziale" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">28.3.3. </span>Differenziale<a class="headerlink" href="#differenziale" title="Permalink to this heading">#</a></h2>
 <p>Il differenziale <span class="math notranslate nohighlight">\(d f\)</span> di una funzione di più variabili a valore reale in corrispondenza della <span class="math notranslate nohighlight">\(n\)</span>-pla <span class="math notranslate nohighlight">\(\mathbf{x} = (x_1, x_2, \dots, x_n)\)</span> e dell’incremento delle variabili indipendenti <span class="math notranslate nohighlight">\(\mathbf{h} = (h_1, h_2, \dots, h_n)\)</span> può essere definito come</p>
 <div class="math notranslate nohighlight">
 \[d f (\mathbf{x}, \mathbf{h}) = \frac{\partial f}{\partial x_1}(\mathbf{x}) \,  h_1 +   
@@ -638,7 +639,7 @@ La norma-2 di una <span class="math notranslate nohighlight">\(n\)</span>-pla ap
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">28.3. </span>Integrali su domini multi-dimensionali</p>
+        <p class="prev-next-title"><span class="section-number">28.4. </span>Integrali su domini multi-dimensionali</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -657,9 +658,9 @@ La norma-2 di una <span class="math notranslate nohighlight">\(n\)</span>-pla ap
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#derivate-parziali">28.2.1. Derivate parziali</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#incremento-di-una-funzione">28.2.2. Incremento di una funzione</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#differenziale">28.2.3. Differenziale</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#derivate-parziali">28.3.1. Derivate parziali</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#incremento-di-una-funzione">28.3.2. Incremento di una funzione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#differenziale">28.3.3. Differenziale</a></li>
 </ul>
   </nav></div>
 
