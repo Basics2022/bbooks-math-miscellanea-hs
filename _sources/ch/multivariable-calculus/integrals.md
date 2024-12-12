@@ -56,7 +56,7 @@ Calcolare la massa della superficie delimitata dall'asse $x$ e dalla parabola co
 
 **todo** *dominio...*
 
-1.
+1. Si valuta l'integrale integrando prima sulla variabile $y$ e poi sulla variabile $x$
 
 $$\begin{aligned}
 I_1 
@@ -75,7 +75,7 @@ I_1
 \end{aligned}$$
 -->
 
-2.
+2. Si valuta l'integrale integrando prima sulla variabile $x$ e poi sulla variabile $y$
 
 $$\begin{aligned}
 I_2
@@ -96,6 +96,7 @@ I_2
   = \frac{8}{3} - \frac{4}{5} = \frac{28}{15} \ .
 \end{aligned}$$
 
+Si osservi come il risultato dell'integrale è indipendente dall'ordine di integrazione.
 
 <!--
 $$

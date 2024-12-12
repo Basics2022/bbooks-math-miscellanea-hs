@@ -550,7 +550,7 @@ document.write(`
 <p>Calcolare la massa della superficie delimitata dall’asse <span class="math notranslate nohighlight">\(x\)</span> e dalla parabola con equazione <span class="math notranslate nohighlight">\(y = 1 - x^2\)</span>, e densità <span class="math notranslate nohighlight">\(\rho(x,y) = 1 + y\)</span>. Dopo aver verificato che il dominio di integrazione è semplice in entrambe le direzioni, come esercizio si chiede di svolgere il calcolo due volte: 1. una volta integrando prima in <span class="math notranslate nohighlight">\(y\)</span> e poi in <span class="math notranslate nohighlight">\(x\)</span>, 2. una volta integrando prima in <span class="math notranslate nohighlight">\(x\)</span> e poi in <span class="math notranslate nohighlight">\(y\)</span>.</p>
 <p><strong>todo</strong> <em>dominio…</em></p>
 <ol class="arabic simple">
-<li></li>
+<li><p>Si valuta l’integrale integrando prima sulla variabile <span class="math notranslate nohighlight">\(y\)</span> e poi sulla variabile <span class="math notranslate nohighlight">\(x\)</span></p></li>
 </ol>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
@@ -569,7 +569,7 @@ I_1
 \end{aligned}$$
 -->
 <ol class="arabic simple" start="2">
-<li></li>
+<li><p>Si valuta l’integrale integrando prima sulla variabile <span class="math notranslate nohighlight">\(x\)</span> e poi sulla variabile <span class="math notranslate nohighlight">\(y\)</span></p></li>
 </ol>
 <div class="math notranslate nohighlight">
 \[\begin{aligned}
@@ -589,6 +589,7 @@ I_2
    + 4 \int_{\theta=0}^{\frac{\pi}{2}} d \frac{\cos^5 \theta}{5} 
   = \frac{8}{3} - \frac{4}{5} = \frac{28}{15} \ .
 \end{aligned}\end{split}\]</div>
+<p>Si osservi come il risultato dell’integrale è indipendente dall’ordine di integrazione.</p>
 <!--
 $$
 I_2 = \int_{y=0}^{1} \int_{x=-\sqrt{1-y}}^{\sqrt{1-y}} \left( 1 + x \right) dx \, dy 
