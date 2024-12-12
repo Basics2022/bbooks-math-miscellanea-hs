@@ -35,7 +35,7 @@ $$\int_{\mathbf{x} \in \Omega} f(\mathbf{x}) d \mathbf{x} := \lim_{\Delta \Omega
 ## Regole di integrazione
 ...
 
-*esempio nel caso di due variabili, con partizione dell'insieme in elementi $\delta x \delta y$*
+*esempio nel caso di due variabili, con partizione dell'insieme in elementi $\Delta x \Delta y$*
 
 
 <!--
