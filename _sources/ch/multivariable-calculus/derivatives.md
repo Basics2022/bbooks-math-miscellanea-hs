@@ -1,13 +1,7 @@
-```{article-info}
-:author: basics
-:date: "{sub-ref}`today`"
-:read-time: "{sub-ref}`wordcount-minutes` min read"
-```
-
 (multivariable-calculus:derivatives)=
 # Derivate di funzioni di più variabili
 ## Derivate parziali
-Data una funzione di più variabili $(x_1, x_2, \dots, x_n) \in \mathbb{R}^n$, la derivata parziale rispetto alla variabile $x_1$, se esiste, è la derivata della funzione calcolata tenendo costanti tutte le altre variabili,
+Data una funzione di più variabili $(x_1, x_2, \dots, x_n) \in \mathbb{R}^n$, la **derivata parziale** rispetto alla variabile $x_1$, se esiste, è la derivata della funzione calcolata tenendo costanti tutte le altre variabili,
 
 $$\frac{\partial f}{\partial x_1}(x_1, x_2, \dots, x_n) := \lim_{h_1 \rightarrow 0} \frac{f(x_1+h_1, x_2, \dots, x_n) - f(x_1, x_2, \dots, x_n)}{h_1}$$
 
@@ -19,8 +13,9 @@ $$
   f(x_1+h_1, \dots, x_n) - f(x_1, \dots, x_n) = h_1 \frac{\partial f}{\partial x_1}(x_1, \dots, x_n) + o(h_1) \ .
 $$ (multivariable-calculus:derivatives:partial:differential)
 
-Si può "verificare" questa relazione inserendola nella definizione di derivata parziale e verificando che si ottiene un'identità.
-
+```{exercise} Verifica dell'incremento della funzione dovuto all'incremento di una variabile
+Verificare la validità dell'espressione {eq}`multivariable-calculus:derivatives:partial:differential`, inserendola nella definizione di derivata parziale e calcolando il limite
+```
 
 ## Incremento di una funzione
 Dati gli incrementi $h_i$ delle variabili indipendenti $x_i$, l'incremento della funzione partendo dalla $n$-pla $\mathbb{x}$ dopo l'incremento delle variabili è
