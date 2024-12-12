@@ -31,12 +31,17 @@ $$\int_{\mathbf{x} \in \Omega} f(\mathbf{x}) d \mathbf{x} := \lim_{\Delta \Omega
 (multivariable-calculus:integrals:properties)=
 ### Proprietà dell'integrale definito
 
+(multivariable-calculus:integrals:rules)=
+## Regole di integrazione
+...
+
+*esempio nel caso di due variabili, con partizione dell'insieme in elementi $\delta x \delta y$*
+
+
+<!--
 (multivariable-calculus:integrals:thms)=
 ## Teoremi
 
-(multivariable-calculus:integrals:rules)=
-## Regole di integrazione
-
 (multivariable-calculus:integrals:examples)=
 ## Esempi
-
+-->
