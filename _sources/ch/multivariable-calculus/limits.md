@@ -1,9 +1,3 @@
-```{article-info}
-:author: basics
-:date: "{sub-ref}`today`"
-:read-time: "{sub-ref}`wordcount-minutes` min read"
-```
-
 (multivariable-calculus:limit)=
 # Limite di una funzione di più variabili
 
