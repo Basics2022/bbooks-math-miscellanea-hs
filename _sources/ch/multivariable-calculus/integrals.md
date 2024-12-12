@@ -87,12 +87,13 @@ e introducendo il cambio di variabile $y = \sin^2 \theta$, con differenziale $dy
 
 $$\begin{aligned}
 I_2 
-& = 2 \int_{\theta=0}^{\frac{\pi}{2}} (1 + \sin^2 \theta) \, \cos \theta \, ( 2 \sin \theta \, \cos \theta ) \, d \theta \\
-& = 4 \int_{\theta=0}^{\frac{\pi}{2}} (2 - \cos^2 \theta) \, \cos \theta \, \sin \theta \, \cos \theta )  d \theta \\
-& = 8 \int_{\theta=0}^{\frac{\pi}{2}} \cos^2 \theta \, \sin \theta \,  d \theta
-  - 4 \int_{\theta=0}^{\frac{\pi}{2}} \cos^4 \theta \, \sin \theta \,  d \theta \\
-& = 8 \int_{\theta=0}^{\frac{\pi}{2}} \cos^2 \theta \, \sin \theta \,  d \theta
-  - 4 \int_{\theta=0}^{\frac{\pi}{2}} \cos^4 \theta \, \sin \theta \,  d \theta \\
+& =  2 \int_{\theta=0}^{\frac{\pi}{2}} (1 + \sin^2 \theta) \, \cos \theta \, ( 2 \sin \theta \, \cos \theta ) \, d \theta \\
+& =  4 \int_{\theta=0}^{\frac{\pi}{2}} (2 - \cos^2 \theta) \, \cos \theta \, \sin \theta \, \cos \theta )  d \theta \\
+& =  8 \int_{\theta=0}^{\frac{\pi}{2}} \cos^2 \theta \, \sin \theta \,  d \theta
+   - 4 \int_{\theta=0}^{\frac{\pi}{2}} \cos^4 \theta \, \sin \theta \,  d \theta \\
+& =- 8 \int_{\theta=0}^{\frac{\pi}{2}} d \frac{\cos^3 \theta}{3}
+   + 4 \int_{\theta=0}^{\frac{\pi}{2}} d \frac{\cos^5 \theta}{5} = \\
+& = \frac{8}{3} - \frac{4}{5} = \frac{28}{15} \ .
 \end{aligned}$$
 
 
