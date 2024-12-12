@@ -60,18 +60,18 @@ Calcolare la massa della superficie delimitata dall'asse $x$ e dalla parabola co
 
 $$\begin{aligned}
 I_1 
-& = \int_{x=-1}^{1} \int_{y=0}^{1-x^2} \left( 1 + y \right) dy \, dx = \\
-& = \int_{x=-1}^{1} \left( 1-x^2 + \frac{1}{2} (1-x^2)^2 \right) \, dx = \\ 
-& = \int_{x=-1}^{1} \left( \frac{3}{2} - 2 x^2 + \frac{1}{2} x^4 \right) \, dx = \\ 
-& = 3 - \frac{4}{3} + \frac{1}{5} = \frac{28}{15} \ . 
+& = \int_{x=-1}^{1} \int_{y=0}^{1-x^2} \left( 1 + y \right) dy \, dx 
+  = \int_{x=-1}^{1} \left( 1-x^2 + \frac{1}{2} (1-x^2)^2 \right) \, dx = \\ 
+& = \int_{x=-1}^{1} \left( \frac{3}{2} - 2 x^2 + \frac{1}{2} x^4 \right) \, dx      
+  = 3 - \frac{4}{3} + \frac{1}{5} = \frac{28}{15} \ . 
 \end{aligned}$$
 
 <!--
 $$\begin{aligned}
 I_1 
 & = \int_{x=-1}^{1} \int_{y=0}^{1-x^2} \left( 1 + x \right) dy \, dx 
-  = \int_{x=-1}^{1} ( 1 + x )(1-x^2) \, dx = \\ 
-& = \int_{x=-1}^{1} ( 1 + x - x^2 - x^3 ) \, dx = 2 - \frac{2}{3} = \frac{4}{3} \ .
+  = \int_{x=-1}^{1} ( 1 + x )(1-x^2) \, dx      
+  = \int_{x=-1}^{1} ( 1 + x - x^2 - x^3 ) \, dx = 2 - \frac{2}{3} = \frac{4}{3} \ .
 \end{aligned}$$
 -->
 
