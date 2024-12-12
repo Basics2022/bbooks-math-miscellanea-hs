@@ -66,7 +66,10 @@ $$
 
 2.
 
-$$\int_{y=0}^{1} \int_{x=-\sqrt{1-y}}^{\sqrt{1-y}} \left( 1 + x \right) dy \, dx = $$
+$$
+\int_{y=0}^{1} \int_{x=-\sqrt{1-y}}^{\sqrt{1-y}} \left( 1 + x \right) dy \, dx 
+= \int_{y=0}^{1} 2 \sqrt{1-y} \, dy = 
+$$
 
 
 ```
