@@ -48,7 +48,7 @@ dove la condizione sull'intorno di un punto all'infinito per funzioni reali può
 ## Funzioni continue
 (infinitesimal-calculus:continuous-fun:def)=
 ### Definizione
-```{pdf:definition} Funzione continua
+```{prf:definition} Funzione continua
 Una funzione reale $f: D \in \mathbb{R} \rightarrow \mathbb{R}$ è continua in un punto $x_0 \in D$ <!--se la funzione è definita nel punto,--> se esiste il limite della funzione e coincide con il valore della funzione
 
 $$\lim_{x \rightarrow x_0} f(x) = f(x_0) \ .$$
