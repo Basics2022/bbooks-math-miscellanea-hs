@@ -15,8 +15,7 @@ con $\xi_k \in [x_{k-1}, x_k]$.
 ```
 
 ```{prf:definition} Integrale di Riemann
-:label: infinitesimal-calculus:integrals:def:riemann-integral
-
+:label: infinitesimal-calculus:integrals:def:riemann-sum
 Sia $\Delta x = \max_k (x_{k} - x_{k-1})$, l'integrale definito di Riemann è  il limite per $\Delta x \rightarrow 0$ della somma di Riemann $\sigma$
 
 $$\int_a^b f(x) \ dx = \lim_{\Delta x \rightarrow 0} \sigma_P \ .$$ (infinitesimal-calculus:integrals:riemann:def)
@@ -34,10 +33,9 @@ corrisponde al valore dell'**area con segno** tra il grafico della funzione $y=f
 
 (infinitesimal-calculus:integrals:def:definite)=
 ### Integrale definito
-(infinitesimal-calculus:integrals:def:definite:prop)=
 
+(infinitesimal-calculus:integrals:def:definite:prop)=
 #### Proprietà dell'integrale definito
-(infinitesimal-calculus:integrals:def:indefinite)=
 
 Dalla definizione {eq}`infinitesimal-calculus:integrals:riemann:def` dell'integrale di Riemann seguono immediatamente le seguenti proprietà:
 
@@ -57,6 +55,7 @@ $$\left| \int_a^b f(x) \ dx \right| \le \int_a^b | f(x) | \ dx \ ,$$ (infinitesi
 
 $$\int_{x=a}^{b} f(x) dx = - \int_{x=b}^{a} f(x) \, dx$$ (infinitesimal-calculus:integrals:prop:swap)
 
+(infinitesimal-calculus:integrals:def:indefinite)=
 ### Integrale indefinito
 Usando la proprietà {eq}`infinitesimal-calculus:integrals:prop:add` di additività sull'intervallo dell'integrale definito,
 
