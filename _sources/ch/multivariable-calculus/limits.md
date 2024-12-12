@@ -13,14 +13,7 @@ avendo usato una norma per le $n$-uple di numeri reali appartenenti a $\mathbb{R
 
 La definizione può essere descritta qualitativamente: il limite $\ell$ della funzione per $\mathbf{x} \rightarrow \mathbf{x}_0$ è il valore al quale tende il valore $f(\mathbf{x})$ all'avvicinarsi di $\mathbf{x}$ al punto $\mathbf{x}_0$, in maniera indipendente dalla direzione di avvicinamento. 
 
-Data la definzione di limite, se il limite esiste esso è unico.
-
-Esistono casi in cui:
-- avvicinandosi al punto $\mathbf{x}_0$ lungo direzioni differeti, si ottengono diversi valori; *fare esempio*
-- ...
-per i quali si rimanda alla sezione nella quale si descrivono le condizioni di [discontinuità](multivariable-calculus:discontinuity).
-
-**todo** Esempi in cui il limite esiste e il limite non esiste
+Data la definzione di limite, se il limite esiste esso è unico. Alcuni casi in cui i limite non esiste vengono discussi nella sezione sulle [discontinuità](multivariable-calculus:discontinuity).
 
 (multivariable-calculus:continuity)=
 ## Funzioni continue
@@ -35,7 +28,11 @@ $$\lim_{\mathbf{x} \rightarrow \mathbf{x}_0} f(\mathbf{x}) = f(\mathbf{x}_0) \ .
 
 (multivariable-calculus:discontinuity)=
 ### Discontinuità
-**todo**
+Esistono casi in cui:
+- avvicinandosi al punto $\mathbf{x}_0$ lungo direzioni differeti, si ottengono diversi valori; *fare esempio*
+- ...
+
+**todo** Esempi in cui il limite esiste e il limite non esiste,...
 
 <!--
 Il limite di una funzione $f$ a valori reali di due variabili reali $x,y$, $\mathbf{x} := (x,y) \in \mathbb{R}^2$ 
