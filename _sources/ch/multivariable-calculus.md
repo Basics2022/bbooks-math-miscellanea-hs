@@ -1,6 +1,27 @@
 (multivariable-calculus)=
 # Introduzione al calcolo multi-variabile
 
+Questo capitolo è un'introduzione al calcolo per funzioni di più variabili reali a valore reale, $f: A \subset \mathbb{R}^n \rightarrow \mathbb{R}$, estendendo gli strumenti del calcolo introdotti per funzioni a una variabile a funzioni di più variabili,
+
+$$f(x_1, x_2, \dots, x_n) \ .$$
+
+Il calcolo multivariabile è uno strumento indispensabile in molti ambiti...
+
+**Contenuti.** Questo capitolo introduce il calcolo multivariabile, seguendo lo stesso approccio adottato per l'introduzione al calcolo infinitesimale, ma ponendo l'attenzione alla discussione sulla maggior complessità dei casi e delle condizioni che emergono in un contesto multidimensionale.
+Inizialmente, viene definito il concetto di [limite](multivariable-calculus:limit) per funzioni di più variabili, viene utilizzato per definire le [funzioni continue](multivarible-calculus:continuity) e caratterizzare i casi "patologici" di discontinuità.
+Successivamente, l'operazione di limite viene utilizzata per introdurre l'operazione di [derivazione](multivariable-calculus:derivatives), che consente di ottenere informazioni sul comportamento locale di una funzione: vengono introdotte le derivate parziali e il concetto di differenziale. Vengono poi discusse le derivate di ordine superiore, e presentata l'approssimazione in serie polinomiale di una funzione nell'intorno di un punto.
+Infine viene introdotta l'operazione di [integrazione](mutlivariable-calculus:integrals) su domini di dimensione diversa, da $1$ a $n$.
+
+Senza nessuna pretesa di una discussione completa nei dettagli, questo capitolo ha come obiettivo quello di fornire gli strumenti fondamentali per esplorare gli ambiti in cui compaiono le funzioni di più variabili. **todo** *in maniera autonoma, matura, con il dettaglio necessario per una comprensione più intima della materia, "sblocccando" la possibilità di comprendere esempi e lanciarsi in semplici applicazioni, che aiutino l'apprendimento*
+
+Il calcolo multi-variabile consente di introdurre il [calcolo vettoriale](vector-calculus), presentato nel capitolo successivo per spazi euclidei.
+
+**todo**
+- collegamento a funzioni a più variabili
+- collegamento a calcolo per funzioni a una variabile
+
+
+
 I concetti di limite, derivata e integrale introdotti per le funzioni reali di variabile reale, $f: D \subset \mathbb{R} \rightarrow \mathbb{R}$ nella sezione del calcolo infinitesimale, vengono qui estesi alle funzoni a valore reale di più variabili, $f: D \subset \mathbb{R}^n \rightarrow \mathbb{R}$.
 
 Gli strumenti del calcolo multi-variabile vengono successivamente utilizzati per il calcolo vettoriale.
