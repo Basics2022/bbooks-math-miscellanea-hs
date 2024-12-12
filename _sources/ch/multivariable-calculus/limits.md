@@ -7,7 +7,7 @@
 (multivariable-calculus:limit)=
 # Limite di una funzione di più variabili
 
-Il limite $\ell$ finito al finito $\mathbf{x}_0 \in D$ di una funzione di più variabili $f(\mathbf{x})$,
+In analogia con la [definizione di limite per le funzioni di una variabile](infinitesimal-calculus:limits:def), il limite $\ell$ finito al finito $\mathbf{x}_0 \in D$ di una funzione di più variabili $f(\mathbf{x})$,
 
 $$\ell = \lim_{\mathbf{x} \rightarrow \mathbf{x}_0} f(x,y)$$
 
