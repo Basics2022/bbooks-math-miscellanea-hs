@@ -77,14 +77,15 @@ I_1
 
 2.
 
-$$
-I_2 = \int_{y=0}^{1} \int_{x=-\sqrt{1-y}}^{\sqrt{1-y}} \left( 1 + y \right) dy \, dx 
-= \int_{y=0}^{1} 2 ( 1 + y )\sqrt{1-y} \, dy 
-$$
+$$\begin{aligned}
+I_2
+& = \int_{y=0}^{1} \int_{x=-\sqrt{1-y}}^{\sqrt{1-y}} \left( 1 + y \right) dx \, dy  = \\
+& = \int_{y=0}^{1} 2 ( 1 + y )\sqrt{1-y} \, dy 
+\end{aligned}$$
 
 <!--
 $$
-I_2 = \int_{y=0}^{1} \int_{x=-\sqrt{1-y}}^{\sqrt{1-y}} \left( 1 + x \right) dy \, dx 
+I_2 = \int_{y=0}^{1} \int_{x=-\sqrt{1-y}}^{\sqrt{1-y}} \left( 1 + x \right) dx \, dy 
 = \int_{y=0}^{1} 2 \sqrt{1-y} \, dy 
 $$
 
