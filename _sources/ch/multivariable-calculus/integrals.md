@@ -53,11 +53,11 @@ Calcolare la massa della superficie delimitata dall'asse $x$ e dalla parabola co
 
 1.
 
-$$\int_{x=-1}^{1} \int_{y=0}^{1-x^2} \left( 1 + x ) dy \, dx = $$
+$$\int_{x=-1}^{1} \int_{y=0}^{1-x^2} \left( 1 + x \right) dy \, dx = $$
 
 2.
 
-$$\int_{y=0}^{1} \int_{x=-\sqrt{1-y}}^{\sqrt{1-y}} \left( 1 + x ) dy \, dx = $$
+$$\int_{y=0}^{1} \int_{x=-\sqrt{1-y}}^{\sqrt{1-y}} \left( 1 + x \right) dy \, dx = $$
 
 
 ```
