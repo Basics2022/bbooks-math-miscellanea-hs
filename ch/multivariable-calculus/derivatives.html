@@ -515,14 +515,20 @@ document.write(`
 <span class="eqno">(28.1)<a class="headerlink" href="#equation-multivariable-calculus-derivatives-partial-differential" title="Permalink a questa equazione">#</a></span>\[
   f(x_1+h_1, \dots, x_n) - f(x_1, \dots, x_n) = h_1 \frac{\partial f}{\partial x_1}(x_1, \dots, x_n) + o(h_1) \ .
 \]</div>
-<div class="exercise admonition" id="ch/multivariable-calculus/derivatives-exercise-1">
-
-<p class="admonition-title"><span class="caption-number">Exercise 28.1 </span> (Verifica dell’incremento della funzione dovuto all’incremento di una variabile)</p>
-<div class="section" id="exercise-content">
-<p>Verificare la validità dell’espressione <a class="reference internal" href="#equation-multivariable-calculus-derivatives-partial-differential">(28.1)</a>, inserendola nella definizione di derivata parziale e calcolando il limite</p>
+<div class="proof example admonition" id="multivariable-calculus:increment-1">
+<p class="admonition-title"><span class="caption-number">Example 28.1 </span> (Verifica dell’incremento della funzione dovuto all’incremento di una variabile)</p>
+<div class="example-content section" id="proof-content">
+<p>Verificare la validità dell’espressione <a class="reference internal" href="#equation-multivariable-calculus-derivatives-partial-differential">(28.1)</a>, inserendola nella definizione di derivata parziale e calcolando il limite.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Soluzione<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
 </div>
-</div>
-</div>
+</details></div>
+</div></div>
 <div class="section" id="incremento-di-una-funzione">
 <h2><span class="section-number">28.2.2. </span>Incremento di una funzione<a class="headerlink" href="#incremento-di-una-funzione" title="Permalink to this heading">#</a></h2>
 <p>Dati gli incrementi <span class="math notranslate nohighlight">\(h_i\)</span> delle variabili indipendenti <span class="math notranslate nohighlight">\(x_i\)</span>, l’incremento della funzione partendo dalla <span class="math notranslate nohighlight">\(n\)</span>-pla <span class="math notranslate nohighlight">\(\mathbb{x}\)</span> dopo l’incremento delle variabili è</p>
@@ -543,9 +549,13 @@ document.write(`
 </div><p>Il differenziale di una funzione rappresenta al primo ordine l’incremento della funzione rispetto all’incremento delle variabili indipendenti,</p>
 <div class="math notranslate nohighlight">
 \[ \Delta f(\mathbf{x}, \mathbf{h}) = df(\mathbf{x}, \mathbf{h}) + o(||\mathbf{h}||)\ .\]</div>
+<div class="proof example admonition" id="multivariable-calculus:differential">
+<p class="admonition-title"><span class="caption-number">Example 28.2 </span> (Differenziale per una funzione di due variabili, <span class="math notranslate nohighlight">\(\ f(x_1, x_2) \)</span>)</p>
+<div class="example-content section" id="proof-content">
+<p>Verificare la relazione tra incremento e differenziale per una funzione di due variabili.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-Dimostrazione per una funzione di due variabili, <span class="math notranslate nohighlight">\(\ f(x_1, x_2) \)</span><div class="sd-summary-down docutils">
+Soluzione<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
@@ -572,7 +582,8 @@ f(x_1 + h_1, x_2 + h_2) = f(x_1, x_2) + h_1 \, \partial_{1} f(x_1, x_2) + h_2 \,
                                  &amp; = d f(\mathbf{x}, \mathbf{h}) + o(||\mathbf{h}||) \ .
 \end{aligned}\end{split}\]</div>
 </div>
-</details><div class="admonition note">
+</details></div>
+</div><div class="admonition note">
 <p class="admonition-title">Nota</p>
 <p><strong>Norma infinito</strong>
 La norma infinito di una <span class="math notranslate nohighlight">\(n\)</span>-pla apprtenente a <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span> è definita come il valore assoluto del valore massimo</p>

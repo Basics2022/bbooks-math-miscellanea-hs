@@ -15,9 +15,15 @@ $$
   f(x_1+h_1, \dots, x_n) - f(x_1, \dots, x_n) = h_1 \frac{\partial f}{\partial x_1}(x_1, \dots, x_n) + o(h_1) \ .
 $$ (multivariable-calculus:derivatives:partial:differential)
 
-```{exercise} Verifica dell'incremento della funzione dovuto all'incremento di una variabile
-Verificare la validità dell'espressione {eq}`multivariable-calculus:derivatives:partial:differential`, inserendola nella definizione di derivata parziale e calcolando il limite
+````{prf:example} Verifica dell'incremento della funzione dovuto all'incremento di una variabile
+:label: multivariable-calculus:increment-1
+
+Verificare la validità dell'espressione {eq}`multivariable-calculus:derivatives:partial:differential`, inserendola nella definizione di derivata parziale e calcolando il limite.
+
+```{dropdown} Soluzione
 ```
+
+````
 
 ## Incremento di una funzione
 Dati gli incrementi $h_i$ delle variabili indipendenti $x_i$, l'incremento della funzione partendo dalla $n$-pla $\mathbb{x}$ dopo l'incremento delle variabili è
@@ -37,8 +43,12 @@ Il differenziale di una funzione rappresenta al primo ordine l'incremento della 
 
 $$ \Delta f(\mathbf{x}, \mathbf{h}) = df(\mathbf{x}, \mathbf{h}) + o(||\mathbf{h}||)\ .$$
 
-```{dropdown} Dimostrazione per una funzione di due variabili, $\ f(x_1, x_2) $
+````{prf:example} Differenziale per una funzione di due variabili, $\ f(x_1, x_2) $
+:label: multivariable-calculus:differential
 
+Verificare la relazione tra incremento e differenziale per una funzione di due variabili.
+
+```{dropdown} Soluzione
 Usando la relazione {eq}`multivariable-calculus:derivatives:partial:differential` si può scrivere
 
 $$\begin{aligned}
@@ -62,8 +72,8 @@ $$\begin{aligned}
                                  & = h_1 \, \partial_{1} f(x_1, x_2) + h_2 \, \partial_{2} f(x_1, x_2) + o(||\mathbf{h}||) = \\
                                  & = d f(\mathbf{x}, \mathbf{h}) + o(||\mathbf{h}||) \ .
 \end{aligned}$$
-
 ```
+````
 
 ```{note} **Norma infinito**
 La norma infinito di una $n$-pla apprtenente a $\mathbb{R}^n$ è definita come il valore assoluto del valore massimo
