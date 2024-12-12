@@ -58,11 +58,12 @@ Calcolare la massa della superficie delimitata dall'asse $x$ e dalla parabola co
 
 1.
 
-$$
-I_1 = \int_{x=-1}^{1} \int_{y=0}^{1-x^2} \left( 1 + x \right) dy \, dx 
-= \int_{x=-1}^{1} ( 1 + x )(1-x^2) \, dx = 
-= \int_{x=-1}^{1} ( 1 + x - x^2 - x^3 ) \, dx = 2 - \frac{2}{3} = \frac{4}{3} \ .
-$$
+$$\begin{aligned}
+I_1 
+& = \int_{x=-1}^{1} \int_{y=0}^{1-x^2} \left( 1 + x \right) dy \, dx 
+  = \int_{x=-1}^{1} ( 1 + x )(1-x^2) \, dx = \\ 
+& = \int_{x=-1}^{1} ( 1 + x - x^2 - x^3 ) \, dx = 2 - \frac{2}{3} = \frac{4}{3} \ .
+\end{aligned}$$
 
 2.
 
