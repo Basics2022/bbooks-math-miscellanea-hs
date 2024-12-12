@@ -7268,12 +7268,17 @@ dove la condizione sull’intorno di un punto all’infinito per funzioni reali 
 \label{\detokenize{ch/infinitesimal_calculus/analysis:funzioni-continue}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-continuous-fun}}
 
 \subsection{Definizione}
-\label{\detokenize{ch/infinitesimal_calculus/analysis:definizione}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-continuous-fun-def}}
+\label{\detokenize{ch/infinitesimal_calculus/analysis:definizione}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-continuous-fun-def}}\label{None:definition-0}
+\begin{sphinxadmonition}{note}{Definition  (Funzione continua)}
+
+
+
 \sphinxAtStartPar
-Una funzione reale \(f: D \in \mathbb{R} \rightarrow \mathbb{R}\) è continua in un punto \(x_0 \in D\) se la funzione è definita nel punto, se esiste il limite della fuzione e coincide con il valore della funzione
+Una funzione reale \(f: D \in \mathbb{R} \rightarrow \mathbb{R}\) è continua in un punto \(x_0 \in D\)  se esiste il limite della funzione e coincide con il valore della funzione
 \begin{equation*}
 \begin{split}\lim_{x \rightarrow x_0} f(x) = f(x_0) \ .\end{split}
-\end{equation*}
+\end{equation*}\end{sphinxadmonition}
+
 \sphinxAtStartPar
 Una funzione reale è continua in un dominio \sphinxstylestrong{todo o insieme?} se è continua in ogni punto del dominio.
 
@@ -9435,20 +9440,30 @@ Ripetendo lo stesso procedimento, confrontando la differenza \(f(x) - T_N[f(x);x
 \label{\detokenize{ch/infinitesimal_calculus/integrals:integrali}}\label{\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals}}\label{\detokenize{ch/infinitesimal_calculus/integrals::doc}}
 
 \section{Definizioni}
-\label{\detokenize{ch/infinitesimal_calculus/integrals:definizioni}}\label{\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-def}}
+\label{\detokenize{ch/infinitesimal_calculus/integrals:definizioni}}\label{\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-def}}\label{ch/infinitesimal_calculus/integrals:infinitesimal-calculus:integrals:def:riemann-sum}
+\begin{sphinxadmonition}{note}{Definition 25.1.1 (Somma di Riemann)}
+
+
+
 \sphinxAtStartPar
-\sphinxstylestrong{Somma di Riemann.} Data una funzione continua \(f: [a,b] \rightarrow \mathbb{R}\) e \(P = \{ x_0, x_1, \dots x_n | a = x_0 < x_1 < \dots < x_n = b \}\) partizione dell’intervallo \([a,b]\), la somma di Riemann viene definita come
+Data una funzione continua \(f: [a,b] \rightarrow \mathbb{R}\) e \(P = \{ x_0, x_1, \dots x_n | a = x_0 < x_1 < \dots < x_n = b \}\) partizione dell’intervallo \([a,b]\), la somma di Riemann viene definita come
 \begin{equation}\label{equation:ch/infinitesimal_calculus/integrals:infinitesimal-calculus:integrals:riemann:sum}
 \begin{split}\sigma_P = \sum_{k=1}^{n} f(\xi_k) (x_{k} - x_{k-1}) \ ,\end{split}
 \end{equation}
 \sphinxAtStartPar
 con \(\xi_k \in [x_{k-1}, x_k]\).
+\end{sphinxadmonition}
+\label{ch/infinitesimal_calculus/integrals:infinitesimal-calculus:integrals:def:riemann-integral}
+\begin{sphinxadmonition}{note}{Definition 25.1.2 (Integrale di Riemann)}
+
+
 
 \sphinxAtStartPar
-\sphinxstylestrong{Integrale di Riemann.} Sia \(\Delta x = \max_k (x_{k} - x_{k-1})\), l’integrale definito di Riemann è  il limite per \(\Delta x \rightarrow 0\) della somma di Riemann \(\sigma\)
+Sia \(\Delta x = \max_k (x_{k} - x_{k-1})\), l’integrale definito di Riemann è  il limite per \(\Delta x \rightarrow 0\) della somma di Riemann \(\sigma\)
 \begin{equation}\label{equation:ch/infinitesimal_calculus/integrals:infinitesimal-calculus:integrals:riemann:def}
 \begin{split}\int_a^b f(x) \ dx = \lim_{\Delta x \rightarrow 0} \sigma_P \ .\end{split}
-\end{equation}
+\end{equation}\end{sphinxadmonition}
+
 \sphinxAtStartPar
 \sphinxstylestrong{Osservazione.} Dato l’intervallo \([a,b]\), per \(\Delta x \rightarrow 0\) il numero di intervalli della partizione tende all’infinito, \(n \rightarrow \infty\).
 
@@ -10788,6 +10803,31 @@ Questo capitolo è un’introduzione al calcolo per funzioni di più variabili r
 \begin{split}f(x_1, x_2, \dots, x_n) \ .\end{split}
 \end{equation*}
 \sphinxAtStartPar
+\sphinxstylestrong{Contenuti.} Questo capitolo introduce il calcolo multivariabile, seguendo lo stesso approccio adottato per l’introduzione al calcolo infinitesimale, ma ponendo l’attenzione alla discussione sulla maggior complessità dei casi e delle condizioni che emergono in un contesto multidimensionale.
+Inizialmente, viene definito il concetto di {\hyperref[\detokenize{ch/multivariable-calculus/limits:multivariable-calculus-limit}]{\sphinxcrossref{\DUrole{std,std-ref}{limite}}}} per funzioni di più variabili, viene utilizzato per definire le {\hyperref[\detokenize{ch/multivariable-calculus/limits:multivariable-calculus-continuity}]{\sphinxcrossref{\DUrole{std,std-ref}{funzioni continue}}}} e caratterizzare i casi «patologici» di discontinuità.
+Successivamente, l’operazione di limite viene utilizzata per introdurre l’operazione di {\hyperref[\detokenize{ch/multivariable-calculus/derivatives:multivariable-calculus-derivatives}]{\sphinxcrossref{\DUrole{std,std-ref}{derivazione}}}}, che consente di ottenere informazioni sul comportamento locale di una funzione: vengono introdotte le derivate parziali e il concetto di differenziale. Vengono poi discusse le derivate di ordine superiore, e presentata l’approssimazione in serie polinomiale di una funzione nell’intorno di un punto.
+Infine viene introdotta l’operazione di {\hyperref[\detokenize{ch/multivariable-calculus/integrals:multivariable-calculus-integrals}]{\sphinxcrossref{\DUrole{std,std-ref}{integrazione}}}} su domini di dimensione diversa, da \(1\) a \(n\).
+
+\sphinxAtStartPar
+Senza nessuna pretesa di una discussione completa nei dettagli, questo capitolo ha come obiettivo quello di fornire gli strumenti fondamentali per esplorare gli ambiti in cui compaiono le funzioni di più variabili. \sphinxstylestrong{todo} \sphinxstyleemphasis{in maniera autonoma, matura, con il dettaglio necessario per una comprensione più intima della materia, «sblocccando» la possibilità di comprendere esempi e lanciarsi in semplici applicazioni, che aiutino l’apprendimento}
+
+\sphinxAtStartPar
+Il calcolo multi\sphinxhyphen{}variabile consente di introdurre il {\hyperref[\detokenize{ch/vector-calculus:vector-calculus}]{\sphinxcrossref{\DUrole{std,std-ref}{calcolo vettoriale}}}}, presentato nel capitolo successivo per spazi euclidei.
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+collegamento a funzioni a più variabili
+
+\item {} 
+\sphinxAtStartPar
+collegamento a calcolo per funzioni a una variabile
+
+\end{itemize}
+
+\sphinxAtStartPar
 \sphinxstylestrong{Esempi e applicazioni.} Il calcolo multivariabile è uno strumento indispensabile in molti ambiti. Così, ad esempio:
 \begin{itemize}
 \item {} 
@@ -10820,10 +10860,6 @@ controllo ottimo: ricerca dei parametri di un controllore che rendono minimo l�
 
 \item {} 
 \sphinxAtStartPar
-…
-
-\item {} 
-\sphinxAtStartPar
 attività di apprendimento di un sistema di AI: ricerca dei parametri di un modello che rendono minimo l’errore (\sphinxstyleemphasis{come attività di approssimazione, per regressione e/o classificazione})
 
 \item {} 
@@ -10834,125 +10870,17 @@ attività di apprendimento di un sistema di AI: ricerca dei parametri di un mode
 
 \end{itemize}
 
-\sphinxAtStartPar
-\sphinxstylestrong{Contenuti.} Questo capitolo introduce il calcolo multivariabile, seguendo lo stesso approccio adottato per l’introduzione al calcolo infinitesimale, ma ponendo l’attenzione alla discussione sulla maggior complessità dei casi e delle condizioni che emergono in un contesto multidimensionale.
-Inizialmente, viene definito il concetto di {\hyperref[\detokenize{ch/multivariable-calculus/limits:multivariable-calculus-limit}]{\sphinxcrossref{\DUrole{std,std-ref}{limite}}}} per funzioni di più variabili, viene utilizzato per definire le {\hyperref[\detokenize{ch/multivariable-calculus/limits:multivariable-calculus-continuity}]{\sphinxcrossref{\DUrole{std,std-ref}{funzioni continue}}}} e caratterizzare i casi «patologici» di discontinuità.
-Successivamente, l’operazione di limite viene utilizzata per introdurre l’operazione di {\hyperref[\detokenize{ch/multivariable-calculus/derivatives:multivariable-calculus-derivatives}]{\sphinxcrossref{\DUrole{std,std-ref}{derivazione}}}}, che consente di ottenere informazioni sul comportamento locale di una funzione: vengono introdotte le derivate parziali e il concetto di differenziale. Vengono poi discusse le derivate di ordine superiore, e presentata l’approssimazione in serie polinomiale di una funzione nell’intorno di un punto.
-Infine viene introdotta l’operazione di {\hyperref[\detokenize{ch/multivariable-calculus/integrals:multivariable-calculus-integrals}]{\sphinxcrossref{\DUrole{std,std-ref}{integrazione}}}} su domini di dimensione diversa, da \(1\) a \(n\).
-
-\sphinxAtStartPar
-Senza nessuna pretesa di una discussione completa nei dettagli, questo capitolo ha come obiettivo quello di fornire gli strumenti fondamentali per esplorare gli ambiti in cui compaiono le funzioni di più variabili. \sphinxstylestrong{todo} \sphinxstyleemphasis{in maniera autonoma, matura, con il dettaglio necessario per una comprensione più intima della materia, «sblocccando» la possibilità di comprendere esempi e lanciarsi in semplici applicazioni, che aiutino l’apprendimento}
-
-\sphinxAtStartPar
-Il calcolo multi\sphinxhyphen{}variabile consente di introdurre il {\hyperref[\detokenize{ch/vector-calculus:vector-calculus}]{\sphinxcrossref{\DUrole{std,std-ref}{calcolo vettoriale}}}}, presentato nel capitolo successivo per spazi euclidei.
-
-\sphinxAtStartPar
-\sphinxstylestrong{todo}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-collegamento a funzioni a più variabili
-
-\item {} 
-\sphinxAtStartPar
-collegamento a calcolo per funzioni a una variabile
-
-\end{itemize}
-
 
 
 \sphinxstepscope
 
-\begin{sphinxuseclass}{sd-container-fluid}
-\begin{sphinxuseclass}{sd-sphinx-override}
-\begin{sphinxuseclass}{sd-p-0}
-\begin{sphinxuseclass}{sd-mt-2}
-\begin{sphinxuseclass}{sd-mb-4}
-\begin{sphinxuseclass}{sd-row}
-\begin{sphinxuseclass}{sd-row-cols-2}
-\begin{sphinxuseclass}{sd-gx-2}
-\begin{sphinxuseclass}{sd-gy-1}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\begin{sphinxuseclass}{sd-container-fluid}
-\begin{sphinxuseclass}{sd-sphinx-override}
-\begin{sphinxuseclass}{sd-row}
-\begin{sphinxuseclass}{sd-row-cols-2}
-\begin{sphinxuseclass}{sd-row-cols-xs-2}
-\begin{sphinxuseclass}{sd-row-cols-sm-3}
-\begin{sphinxuseclass}{sd-row-cols-md-3}
-\begin{sphinxuseclass}{sd-row-cols-lg-3}
-\begin{sphinxuseclass}{sd-gx-3}
-\begin{sphinxuseclass}{sd-gy-1}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-col-auto}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\sphinxAtStartPar
-basics
-
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-col-auto}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\sphinxAtStartPar
-12 dic 2024
-
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-col-auto}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\sphinxAtStartPar
-1 min read
-
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
 
 \section{Limite di una funzione di più variabili}
 \label{\detokenize{ch/multivariable-calculus/limits:limite-di-una-funzione-di-piu-variabili}}\label{\detokenize{ch/multivariable-calculus/limits:multivariable-calculus-limit}}\label{\detokenize{ch/multivariable-calculus/limits::doc}}
 \sphinxAtStartPar
-Si considera una funzione \(f\) a valori reali di due variabili reali \(x,y\), \(\mathbf{x} := (x,y) \in \mathbb{R}^2\), \(f(x,y): \ D \in \mathbb{R}^2 \rightarrow \mathbb{R}\).
-
-\sphinxAtStartPar
-Il limite al finito per \((x,y) \rightarrow (x_0, y_0)\) della funzione a più variabili \(f(x,y)\), se esiste ed è unico, è il valore al quale tende la funzione \(f(x,y)\) all’avvicinarsi di \((x,y) \rightarrow (x_0, y_0)\), in maniera indipendente dal modo di avvicinarvisi.
-
-\sphinxAtStartPar
-Più precisamente, il limite finito al finito di una funzione di più variabili
+In analogia con la {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-def}]{\sphinxcrossref{\DUrole{std,std-ref}{definizione di limite per le funzioni di una variabile}}}}, il limite \(\ell\) finito al finito \(\mathbf{x}_0 \in D\) di una funzione di più variabili \(f(\mathbf{x})\),
 \begin{equation*}
-\begin{split}\ell = \lim_{(x,y) \rightarrow (x_0,y_0)} f(x,y) = \lim_{\mathbf{x} \rightarrow \mathbf{x}_0} f(x,y)\end{split}
+\begin{split}\ell = \lim_{\mathbf{x} \rightarrow \mathbf{x}_0} f(x,y)\end{split}
 \end{equation*}
 \sphinxAtStartPar
 viene definito come quel valore \(\ell\) che soddisfa la seguente condizione
@@ -10963,101 +10891,66 @@ viene definito come quel valore \(\ell\) che soddisfa la seguente condizione
 avendo usato una norma per le \(n\)\sphinxhyphen{}uple di numeri reali appartenenti a \(\mathbb{R}^n\), per definire un’intorno di \(\mathbb{x}_0\).
 
 \sphinxAtStartPar
-\sphinxstylestrong{todo} Esempi in cui il limite esiste e il limite non esiste
+La definizione può essere descritta qualitativamente: il limite \(\ell\) della funzione per \(\mathbf{x} \rightarrow \mathbf{x}_0\) è il valore al quale tende il valore \(f(\mathbf{x})\) all’avvicinarsi di \(\mathbf{x}\) al punto \(\mathbf{x}_0\), in maniera indipendente dalla direzione di avvicinamento.
+
+\sphinxAtStartPar
+Data la definzione di limite, se il limite esiste esso è unico. Alcuni casi in cui i limite non esiste vengono discussi nella sezione sulle {\hyperref[\detokenize{ch/multivariable-calculus/limits:multivariable-calculus-discontinuity}]{\sphinxcrossref{\DUrole{std,std-ref}{discontinuità}}}}.
 
 
-\section{Funzioni continue}
+\subsection{Funzioni continue}
 \label{\detokenize{ch/multivariable-calculus/limits:funzioni-continue}}\label{\detokenize{ch/multivariable-calculus/limits:multivariable-calculus-continuity}}
+
+\subsubsection{Definizione}
+\label{\detokenize{ch/multivariable-calculus/limits:definizione}}\label{\detokenize{ch/multivariable-calculus/limits:multivariable-calculus-continuity-def}}\label{ch/multivariable-calculus/limits:definition-0}
+\begin{sphinxadmonition}{note}{Definition 28.1.1 (Funzione continua)}
+
+
+
+\sphinxAtStartPar
+In analogia con la {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-def}]{\sphinxcrossref{\DUrole{std,std-ref}{definizione di funzione di una variabile continua}}}}, una funzione di più variabili \(f: D \in \mathbb{R}^n \rightarrow \mathbb{R}\) è continua in un punto \(\mathbf{x}_0 \in D\) se esiste il limite della funzione e coincide con il valore della funzione nel punto,
+\begin{equation*}
+\begin{split}\lim_{\mathbf{x} \rightarrow \mathbf{x}_0} f(\mathbf{x}) = f(\mathbf{x}_0) \ .\end{split}
+\end{equation*}\end{sphinxadmonition}
+
+
+\subsubsection{Discontinuità}
+\label{\detokenize{ch/multivariable-calculus/limits:discontinuita}}\label{\detokenize{ch/multivariable-calculus/limits:multivariable-calculus-discontinuity}}
+\sphinxAtStartPar
+Esistono casi in cui:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+avvicinandosi al punto \(\mathbf{x}_0\) lungo direzioni differeti, si ottengono diversi valori; \sphinxstyleemphasis{fare esempio}
+
+\item {} 
+\sphinxAtStartPar
+…
+
+\end{itemize}
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo} Esempi in cui il limite esiste e il limite non esiste,…
+
+
+
 \sphinxstepscope
 
-\begin{sphinxuseclass}{sd-container-fluid}
-\begin{sphinxuseclass}{sd-sphinx-override}
-\begin{sphinxuseclass}{sd-p-0}
-\begin{sphinxuseclass}{sd-mt-2}
-\begin{sphinxuseclass}{sd-mb-4}
-\begin{sphinxuseclass}{sd-row}
-\begin{sphinxuseclass}{sd-row-cols-2}
-\begin{sphinxuseclass}{sd-gx-2}
-\begin{sphinxuseclass}{sd-gy-1}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\begin{sphinxuseclass}{sd-container-fluid}
-\begin{sphinxuseclass}{sd-sphinx-override}
-\begin{sphinxuseclass}{sd-row}
-\begin{sphinxuseclass}{sd-row-cols-2}
-\begin{sphinxuseclass}{sd-row-cols-xs-2}
-\begin{sphinxuseclass}{sd-row-cols-sm-3}
-\begin{sphinxuseclass}{sd-row-cols-md-3}
-\begin{sphinxuseclass}{sd-row-cols-lg-3}
-\begin{sphinxuseclass}{sd-gx-3}
-\begin{sphinxuseclass}{sd-gy-1}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-col-auto}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\sphinxAtStartPar
-basics
-
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-col-auto}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\sphinxAtStartPar
-12 dic 2024
-
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-col-auto}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\sphinxAtStartPar
-1 min read
-
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
 
 \section{Derivate di funzioni di più variabili}
 \label{\detokenize{ch/multivariable-calculus/derivatives:derivate-di-funzioni-di-piu-variabili}}\label{\detokenize{ch/multivariable-calculus/derivatives:multivariable-calculus-derivatives}}\label{\detokenize{ch/multivariable-calculus/derivatives::doc}}
 
 \subsection{Derivate parziali}
-\label{\detokenize{ch/multivariable-calculus/derivatives:derivate-parziali}}
+\label{\detokenize{ch/multivariable-calculus/derivatives:derivate-parziali}}\label{ch/multivariable-calculus/derivatives:definition-0}
+\begin{sphinxadmonition}{note}{Definition 28.2.1 (Derivata parziale)}
+
+
+
 \sphinxAtStartPar
-Data una funzione di più variabili \((x_1, x_2, \dots, x_n) \in \mathbb{R}^n\), la derivata parziale rispetto alla variabile \(x_1\), se esiste, è la derivata della funzione calcolata tenendo costanti tutte le altre variabili,
+Data una funzione di più variabili \((x_1, x_2, \dots, x_n) \in \mathbb{R}^n\), la \sphinxstylestrong{derivata parziale} rispetto alla variabile \(x_1\), se esiste, è la derivata della funzione calcolata tenendo costanti tutte le altre variabili,
 \begin{equation*}
 \begin{split}\frac{\partial f}{\partial x_1}(x_1, x_2, \dots, x_n) := \lim_{h_1 \rightarrow 0} \frac{f(x_1+h_1, x_2, \dots, x_n) - f(x_1, x_2, \dots, x_n)}{h_1}\end{split}
-\end{equation*}
+\end{equation*}\end{sphinxadmonition}
+
 \sphinxAtStartPar
 La definizione analoga vale per la derivata parziale rispetto a qualsiasi altra variabile indipendente.
 
@@ -11067,33 +10960,62 @@ Ricordando il significato di infinitesimo \(o(h_1)\), \(\lim_{h_1 \rightarrow 0}
 \begin{split}
   f(x_1+h_1, \dots, x_n) - f(x_1, \dots, x_n) = h_1 \frac{\partial f}{\partial x_1}(x_1, \dots, x_n) + o(h_1) \ .
 \end{split}
-\end{equation}
+\end{equation}\label{ch/multivariable-calculus/derivatives:multivariable-calculus:increment-1}
+\begin{sphinxadmonition}{note}{Example 28.2.1 (Verifica dell’incremento della funzione dovuto all’incremento di una variabile)}
+
+
+
 \sphinxAtStartPar
-Si può «verificare» questa relazione inserendola nella definizione di derivata parziale e verificando che si ottiene un’identità.
+Verificare la validità dell’espressione \eqref{equation:ch/multivariable-calculus/derivatives:multivariable-calculus:derivatives:partial:differential}, inserendola nella definizione di derivata parziale e calcolando il limite.
+\subsubsection*{Soluzione}
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \lim_{h_1 \rightarrow 0} \frac{f(x_1+h_1, x_2, \dots, x_n) - f(x_1, x_2, \dots, x_n)}{h_1} & = 
+  \lim_{h_1 \rightarrow 0} \frac{1}{h_1} \left[ h_1 \frac{\partial f}{\partial x_1}(x_1, \dots, x_n) + o(h_1) \right] = \\
+  & = \lim_{h_1 \rightarrow 0} \left[ \frac{\partial f}{\partial x_1}(x_1, \dots, x_n) + O(h_1) \right] = \frac{\partial f}{\partial x_1}(x_1, \dots, x_n) \ .
+\end{aligned}\end{split}
+\end{equation*}\end{sphinxadmonition}
 
 
 \subsection{Incremento di una funzione}
-\label{\detokenize{ch/multivariable-calculus/derivatives:incremento-di-una-funzione}}
+\label{\detokenize{ch/multivariable-calculus/derivatives:incremento-di-una-funzione}}\label{\detokenize{ch/multivariable-calculus/derivatives:multivariable-calculus-derivatives-increment}}\label{ch/multivariable-calculus/derivatives:definition-2}
+\begin{sphinxadmonition}{note}{Definition 28.2.2 (Incremento di una funzione)}
+
+
+
 \sphinxAtStartPar
 Dati gli incrementi \(h_i\) delle variabili indipendenti \(x_i\), l’incremento della funzione partendo dalla \(n\)\sphinxhyphen{}pla \(\mathbb{x}\) dopo l’incremento delle variabili è
 \begin{equation*}
-\begin{split}\Delta f(\mathbf{x}, \mathbf{h}) = f(\mathbf{x} + \mathbf{h}) - f(\mathbf{x}) \ .\end{split}
-\end{equation*}
+\begin{split}\Delta f(\mathbf{x}, \mathbf{h}) := f(\mathbf{x} + \mathbf{h}) - f(\mathbf{x}) \ .\end{split}
+\end{equation*}\end{sphinxadmonition}
+
 
 \subsection{Differenziale}
-\label{\detokenize{ch/multivariable-calculus/derivatives:differenziale}}
+\label{\detokenize{ch/multivariable-calculus/derivatives:differenziale}}\label{\detokenize{ch/multivariable-calculus/derivatives:multivariable-calculus-derivatives-differential}}\label{ch/multivariable-calculus/derivatives:definition-3}
+\begin{sphinxadmonition}{note}{Definition 28.2.3 (Differenziale)}
+
+
+
 \sphinxAtStartPar
 Il differenziale \(d f\) di una funzione di più variabili a valore reale in corrispondenza della \(n\)\sphinxhyphen{}pla \(\mathbf{x} = (x_1, x_2, \dots, x_n)\) e dell’incremento delle variabili indipendenti \(\mathbf{h} = (h_1, h_2, \dots, h_n)\) può essere definito come
 \begin{equation*}
 \begin{split}d f (\mathbf{x}, \mathbf{h}) = \frac{\partial f}{\partial x_1}(\mathbf{x}) \,  h_1 +   
                                  \frac{\partial f}{\partial x_2}(\mathbf{x}) \,  h_2 + \dots
                                  \frac{\partial f}{\partial x_n}(\mathbf{x}) \,  h_n \ .  \end{split}
-\end{equation*}
+\end{equation*}\end{sphinxadmonition}
+
 \sphinxAtStartPar
 Il differenziale di una funzione rappresenta al primo ordine l’incremento della funzione rispetto all’incremento delle variabili indipendenti,
 \begin{equation*}
 \begin{split} \Delta f(\mathbf{x}, \mathbf{h}) = df(\mathbf{x}, \mathbf{h}) + o(||\mathbf{h}||)\ .\end{split}
-\end{equation*}\subsubsection*{Dimostrazione per una funzione di due variabili, \protect\(\ f(x_1, x_2) \protect\)}
+\end{equation*}\label{ch/multivariable-calculus/derivatives:multivariable-calculus:differential}
+\begin{sphinxadmonition}{note}{Example 28.2.2 (Differenziale per una funzione di due variabili, \protect\(\ f(x_1, x_2) \protect\))}
+
+
+
+\sphinxAtStartPar
+Verificare la relazione tra incremento e differenziale per una funzione di due variabili.
+\subsubsection*{Soluzione}
 
 \sphinxAtStartPar
 Usando la relazione \eqref{equation:ch/multivariable-calculus/derivatives:multivariable-calculus:derivatives:partial:differential} si può scrivere
@@ -11121,7 +11043,8 @@ e quindi ottenere la relazione desiderata
                                  & = h_1 \, \partial_{1} f(x_1, x_2) + h_2 \, \partial_{2} f(x_1, x_2) + o(||\mathbf{h}||) = \\
                                  & = d f(\mathbf{x}, \mathbf{h}) + o(||\mathbf{h}||) \ .
 \end{aligned}\end{split}
-\end{equation*}
+\end{equation*}\end{sphinxadmonition}
+
 \begin{sphinxadmonition}{note}{Nota:}
 \sphinxAtStartPar
 \sphinxstylestrong{Norma infinito}
@@ -11145,35 +11068,125 @@ La norma\sphinxhyphen{}2 di una \(n\)\sphinxhyphen{}pla appartenente a \(\mathbb
 \label{\detokenize{ch/multivariable-calculus/integrals:integrali-su-domini-multi-dimensionali}}\label{\detokenize{ch/multivariable-calculus/integrals:multivariable-calculus-integrals}}\label{\detokenize{ch/multivariable-calculus/integrals::doc}}
 
 \subsection{Definizioni}
-\label{\detokenize{ch/multivariable-calculus/integrals:definizioni}}
+\label{\detokenize{ch/multivariable-calculus/integrals:definizioni}}\label{\detokenize{ch/multivariable-calculus/integrals:multivariable-calculus-integrals-def}}
 \sphinxAtStartPar
-\sphinxstylestrong{Somma di Riemann.} Data una funzione continua e limitata \(f: \Omega \subset \mathbb{R}^n \rightarrow \mathbb{R}\) e \(\{ \Omega_k \}\) una partizione del dominio \(\Omega\), una somma di Riemann viene definita come
+La definizione di somma di Riemann e di integrale di Riemann per funzioni di più variabili è una estensione naturale della {\hyperref[\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-def}]{\sphinxcrossref{\DUrole{std,std-ref}{definizione per funzioni di una variabile}}}}.
+\label{ch/multivariable-calculus/integrals:multivariable-calculus:integrals:def:riemann-sum}
+\begin{sphinxadmonition}{note}{Definition 28.3.1 (Somma di Riemann)}
+
+
+
+\sphinxAtStartPar
+Data una funzione continua e limitata \(f: \Omega \subset \mathbb{R}^n \rightarrow \mathbb{R}\) e \(\{ \Omega_k \}\) una partizione del dominio \(\Omega\), una somma di Riemann viene definita come
 \begin{equation*}
 \begin{split}\sigma = \sum_{k} f(\mathbf{x}_k) \mu(\Omega_k) \ ,\end{split}
 \end{equation*}
 \sphinxAtStartPar
 essendo \(\mathbf{x}_k \in \Omega_k\) e \(\mu(\cdot)\) una misura dei sottoinsiemi di \(\mathbb{R}^n\).
+\end{sphinxadmonition}
+\label{ch/multivariable-calculus/integrals:multivariable-calculus:integrals:def:riemann-integral}
+\begin{sphinxadmonition}{note}{Definition 28.3.2 (Integrale di Riemann)}
+
+
 
 \sphinxAtStartPar
-\sphinxstylestrong{Integrale di Riemann.} Sia \(\Delta \Omega := \max_k \mu(\Omega_k)\), l’integrale definito di Riemann è definito come il limite per \(\Delta \Omega \rightarrow 0\) della somma di Riemann \(\sigma\),
+Sia \(\Delta \Omega := \max_k \mu(\Omega_k)\), l’integrale definito di Riemann è definito come il limite per \(\Delta \Omega \rightarrow 0\) della somma di Riemann \(\sigma\),
 \begin{equation*}
 \begin{split}\int_{\mathbf{x} \in \Omega} f(\mathbf{x}) d \mathbf{x} := \lim_{\Delta \Omega \rightarrow 0} \sigma \ .\end{split}
-\end{equation*}
+\end{equation*}\end{sphinxadmonition}
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo} \sphinxstyleemphasis{Tipi di integrale: a seconda del dominio e della funzione integranda. Qui o nel calcolo vettoriale? Integrali: linea, lavoro; superficie, flusso; volume}
+
 
 \subsubsection{Interpretazione geometrica}
-\label{\detokenize{ch/multivariable-calculus/integrals:interpretazione-geometrica}}
+\label{\detokenize{ch/multivariable-calculus/integrals:interpretazione-geometrica}}\label{\detokenize{ch/multivariable-calculus/integrals:multivariable-calculus-integrals-geom}}
 
 \subsubsection{Proprietà dell’integrale definito}
-\label{\detokenize{ch/multivariable-calculus/integrals:proprieta-dell-integrale-definito}}
-
-\subsection{Teoremi}
-\label{\detokenize{ch/multivariable-calculus/integrals:teoremi}}
+\label{\detokenize{ch/multivariable-calculus/integrals:proprieta-dell-integrale-definito}}\label{\detokenize{ch/multivariable-calculus/integrals:multivariable-calculus-integrals-properties}}
 
 \subsection{Regole di integrazione}
-\label{\detokenize{ch/multivariable-calculus/integrals:regole-di-integrazione}}
+\label{\detokenize{ch/multivariable-calculus/integrals:regole-di-integrazione}}\label{\detokenize{ch/multivariable-calculus/integrals:multivariable-calculus-integrals-rules}}
+\sphinxAtStartPar
+…
 
-\subsection{Esempi}
-\label{\detokenize{ch/multivariable-calculus/integrals:esempi}}
+\sphinxAtStartPar
+\sphinxstyleemphasis{esempio nel caso di due variabili, con partizione dell’insieme in elementi \(\Delta x_i \Delta y_j\) con dominio semplice}
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \sigma 
+ & = \sum_k f(\mathbf{x}_k) \Delta x_k \Delta y_k = \\
+ & = \sum_i \sum_j f(x_i, y_j) \Delta y_j \Delta x_i 
+  \rightarrow \sum_i \int_{y=Y_1(x)}^{Y_2(x)} f(x_i, y) dy \, \Delta x_i 
+  \rightarrow \int_{x=x_1}^{x_2} \int_{y=Y_1(x)}^{Y_2(x)} f(x_i, y) dy \, dx  \\
+ & = \sum_j \sum_i f(x_i, y_j) \Delta x_i \Delta y_j 
+  \rightarrow \sum_j \int_{x=X_1(y)}^{X_2(y)} f(x, y) dx \, \Delta y_j 
+  \rightarrow \int_{y=y_1}^{y_2} \int_{x=X_1(y)}^{X_2(y)} f(x, y) dx \, dy \\
+\end{aligned}\end{split}
+\end{equation*}\label{ch/multivariable-calculus/integrals:multivariable-calculus:integral:example}
+\begin{sphinxadmonition}{note}{Example 28.3.1}
+
+
+
+\sphinxAtStartPar
+Calcolare la massa della superficie delimitata dall’asse \(x\) e dalla parabola con equazione \(y = 1 - x^2\), e densità \(\rho(x,y) = 1 + y\). Dopo aver verificato che il dominio di integrazione è semplice in entrambe le direzioni, come esercizio si chiede di svolgere il calcolo due volte: 1. una volta integrando prima in \(y\) e poi in \(x\), 2. una volta integrando prima in \(x\) e poi in \(y\).
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo} \sphinxstyleemphasis{dominio…}
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
+\sphinxAtStartPar
+Si valuta l’integrale integrando prima sulla variabile \(y\) e poi sulla variabile \(x\)
+
+\end{enumerate}
+\begin{equation*}
+\begin{split}\begin{aligned}
+I_1 
+& = \int_{x=-1}^{1} \int_{y=0}^{1-x^2} \left( 1 + y \right) dy \, dx 
+  = \int_{x=-1}^{1} \left( 1-x^2 + \frac{1}{2} (1-x^2)^2 \right) \, dx = \\ 
+& = \int_{x=-1}^{1} \left( \frac{3}{2} - 2 x^2 + \frac{1}{2} x^4 \right) \, dx      
+  = 3 - \frac{4}{3} + \frac{1}{5} = \frac{28}{15} \ . 
+\end{aligned}\end{split}
+\end{equation*}
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{1}
+\item {} 
+\sphinxAtStartPar
+Si valuta l’integrale integrando prima sulla variabile \(x\) e poi sulla variabile \(y\)
+
+\end{enumerate}
+\begin{equation*}
+\begin{split}\begin{aligned}
+I_2
+& = \int_{y=0}^{1} \int_{x=-\sqrt{1-y}}^{\sqrt{1-y}} \left( 1 + y \right) dx \, dy 
+  = \int_{y=0}^{1} 2 ( 1 + y )\sqrt{1-y} \, dy 
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e introducendo il cambio di variabile \(y = \sin^2 \theta\), con differenziale \(dy = 2 \sin \theta \, \cos \theta \, d \theta\), \(x=0 \rightarrow \theta = 0\), \(x = 1 \rightarrow \theta = \frac{\pi}{2}\),
+\begin{equation*}
+\begin{split}\begin{aligned}
+I_2 
+& =  2 \int_{\theta=0}^{\frac{\pi}{2}} (1 + \sin^2 \theta) \, \cos \theta \, ( 2 \sin \theta \, \cos \theta ) \, d \theta
+  =  4 \int_{\theta=0}^{\frac{\pi}{2}} (2 - \cos^2 \theta) \, \cos \theta \, \sin \theta \, \cos \theta )  d \theta = \\
+& =  8 \int_{\theta=0}^{\frac{\pi}{2}} \cos^2 \theta \, \sin \theta \,  d \theta
+   - 4 \int_{\theta=0}^{\frac{\pi}{2}} \cos^4 \theta \, \sin \theta \,  d \theta 
+  =- 8 \int_{\theta=0}^{\frac{\pi}{2}} d \frac{\cos^3 \theta}{3}
+   + 4 \int_{\theta=0}^{\frac{\pi}{2}} d \frac{\cos^5 \theta}{5} 
+  = \frac{8}{3} - \frac{4}{5} = \frac{28}{15} \ .
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Si osservi come il risultato dell’integrale è indipendente dall’ordine di integrazione.
+
+
+\end{sphinxadmonition}
+
+
+
 \sphinxstepscope
 
 
@@ -11560,6 +11573,12 @@ RL: ottimizzazione/controllo
 \bigletter{definition\sphinxhyphen{}0}
 \item\relax\sphinxstyleindexentry{definition\sphinxhyphen{}0}\sphinxstyleindexextra{ch/precalculus/real\sphinxhyphen{}functions}\sphinxstyleindexpageref{ch/precalculus/real-functions:\detokenize{definition-0}}
 \indexspace
+\bigletter{definition\sphinxhyphen{}2}
+\item\relax\sphinxstyleindexentry{definition\sphinxhyphen{}2}\sphinxstyleindexextra{ch/multivariable\sphinxhyphen{}calculus/derivatives}\sphinxstyleindexpageref{ch/multivariable-calculus/derivatives:\detokenize{definition-2}}
+\indexspace
+\bigletter{definition\sphinxhyphen{}3}
+\item\relax\sphinxstyleindexentry{definition\sphinxhyphen{}3}\sphinxstyleindexextra{ch/multivariable\sphinxhyphen{}calculus/derivatives}\sphinxstyleindexpageref{ch/multivariable-calculus/derivatives:\detokenize{definition-3}}
+\indexspace
 \bigletter{example\sphinxhyphen{}0}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}0}\sphinxstyleindexextra{ch/algebra/real\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/real-algebra:\detokenize{example-0}}
 \indexspace
@@ -11571,6 +11590,12 @@ RL: ottimizzazione/controllo
 \indexspace
 \bigletter{example\sphinxhyphen{}3}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}3}\sphinxstyleindexextra{ch/algebra/real\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/real-algebra:\detokenize{example-3}}
+\indexspace
+\bigletter{infinitesimal\sphinxhyphen{}calculus:integrals:def:riemann\sphinxhyphen{}integral}
+\item\relax\sphinxstyleindexentry{infinitesimal\sphinxhyphen{}calculus:integrals:def:riemann\sphinxhyphen{}integral}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{infinitesimal-calculus:integrals:def:riemann-integral}}
+\indexspace
+\bigletter{infinitesimal\sphinxhyphen{}calculus:integrals:def:riemann\sphinxhyphen{}sum}
+\item\relax\sphinxstyleindexentry{infinitesimal\sphinxhyphen{}calculus:integrals:def:riemann\sphinxhyphen{}sum}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{infinitesimal-calculus:integrals:def:riemann-sum}}
 \indexspace
 \bigletter{integrals:thm:avg}
 \item\relax\sphinxstyleindexentry{integrals:thm:avg}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{integrals:thm:avg}}
@@ -11601,6 +11626,21 @@ RL: ottimizzazione/controllo
 \indexspace
 \bigletter{matrix\sphinxhyphen{}prod\sphinxhyphen{}noncomm}
 \item\relax\sphinxstyleindexentry{matrix\sphinxhyphen{}prod\sphinxhyphen{}noncomm}\sphinxstyleindexextra{ch/algebra/linear\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/linear-algebra:\detokenize{matrix-prod-noncomm}}
+\indexspace
+\bigletter{multivariable\sphinxhyphen{}calculus:differential}
+\item\relax\sphinxstyleindexentry{multivariable\sphinxhyphen{}calculus:differential}\sphinxstyleindexextra{ch/multivariable\sphinxhyphen{}calculus/derivatives}\sphinxstyleindexpageref{ch/multivariable-calculus/derivatives:\detokenize{multivariable-calculus:differential}}
+\indexspace
+\bigletter{multivariable\sphinxhyphen{}calculus:increment\sphinxhyphen{}1}
+\item\relax\sphinxstyleindexentry{multivariable\sphinxhyphen{}calculus:increment\sphinxhyphen{}1}\sphinxstyleindexextra{ch/multivariable\sphinxhyphen{}calculus/derivatives}\sphinxstyleindexpageref{ch/multivariable-calculus/derivatives:\detokenize{multivariable-calculus:increment-1}}
+\indexspace
+\bigletter{multivariable\sphinxhyphen{}calculus:integral:example}
+\item\relax\sphinxstyleindexentry{multivariable\sphinxhyphen{}calculus:integral:example}\sphinxstyleindexextra{ch/multivariable\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/multivariable-calculus/integrals:\detokenize{multivariable-calculus:integral:example}}
+\indexspace
+\bigletter{multivariable\sphinxhyphen{}calculus:integrals:def:riemann\sphinxhyphen{}integral}
+\item\relax\sphinxstyleindexentry{multivariable\sphinxhyphen{}calculus:integrals:def:riemann\sphinxhyphen{}integral}\sphinxstyleindexextra{ch/multivariable\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/multivariable-calculus/integrals:\detokenize{multivariable-calculus:integrals:def:riemann-integral}}
+\indexspace
+\bigletter{multivariable\sphinxhyphen{}calculus:integrals:def:riemann\sphinxhyphen{}sum}
+\item\relax\sphinxstyleindexentry{multivariable\sphinxhyphen{}calculus:integrals:def:riemann\sphinxhyphen{}sum}\sphinxstyleindexextra{ch/multivariable\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/multivariable-calculus/integrals:\detokenize{multivariable-calculus:integrals:def:riemann-sum}}
 \indexspace
 \bigletter{set\sphinxhyphen{}fun\sphinxhyphen{}def}
 \item\relax\sphinxstyleindexentry{set\sphinxhyphen{}fun\sphinxhyphen{}def}\sphinxstyleindexextra{ch/set}\sphinxstyleindexpageref{ch/set:\detokenize{set-fun-def}}

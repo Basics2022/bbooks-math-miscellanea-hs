@@ -306,18 +306,18 @@
 \BOOKMARK [0][-]{chapter.28}{Calcolo\040infinitesimale\040-\040Problemi}{part.6}% 306
 \BOOKMARK [0][-]{chapter.29}{Introduzione\040al\040calcolo\040multi-variabile}{part.6}% 307
 \BOOKMARK [1][-]{section.29.1}{Limite di una funzione di più variabili}{chapter.29}% 308
-\BOOKMARK [1][-]{section.29.2}{Funzioni\040continue}{chapter.29}% 309
-\BOOKMARK [1][-]{section.29.3}{Derivate di funzioni di più variabili}{chapter.29}% 310
-\BOOKMARK [2][-]{subsection.29.3.1}{Derivate\040parziali}{section.29.3}% 311
-\BOOKMARK [2][-]{subsection.29.3.2}{Incremento\040di\040una\040funzione}{section.29.3}% 312
-\BOOKMARK [2][-]{subsection.29.3.3}{Differenziale}{section.29.3}% 313
-\BOOKMARK [1][-]{section.29.4}{Integrali\040su\040domini\040multi-dimensionali}{chapter.29}% 314
-\BOOKMARK [2][-]{subsection.29.4.1}{Definizioni}{section.29.4}% 315
-\BOOKMARK [3][-]{subsubsection*.106}{Interpretazione\040geometrica}{subsection.29.4.1}% 316
-\BOOKMARK [3][-]{subsubsection*.107}{Proprietà dell’integrale definito}{subsection.29.4.1}% 317
-\BOOKMARK [2][-]{subsection.29.4.2}{Teoremi}{section.29.4}% 318
-\BOOKMARK [2][-]{subsection.29.4.3}{Regole\040di\040integrazione}{section.29.4}% 319
-\BOOKMARK [2][-]{subsection.29.4.4}{Esempi}{section.29.4}% 320
+\BOOKMARK [2][-]{subsection.29.1.1}{Funzioni\040continue}{section.29.1}% 309
+\BOOKMARK [3][-]{subsubsection*.106}{Definizione}{subsection.29.1.1}% 310
+\BOOKMARK [3][-]{subsubsection*.107}{Discontinuità}{subsection.29.1.1}% 311
+\BOOKMARK [1][-]{section.29.2}{Derivate di funzioni di più variabili}{chapter.29}% 312
+\BOOKMARK [2][-]{subsection.29.2.1}{Derivate\040parziali}{section.29.2}% 313
+\BOOKMARK [2][-]{subsection.29.2.2}{Incremento\040di\040una\040funzione}{section.29.2}% 314
+\BOOKMARK [2][-]{subsection.29.2.3}{Differenziale}{section.29.2}% 315
+\BOOKMARK [1][-]{section.29.3}{Integrali\040su\040domini\040multi-dimensionali}{chapter.29}% 316
+\BOOKMARK [2][-]{subsection.29.3.1}{Definizioni}{section.29.3}% 317
+\BOOKMARK [3][-]{subsubsection*.108}{Interpretazione\040geometrica}{subsection.29.3.1}% 318
+\BOOKMARK [3][-]{subsubsection*.109}{Proprietà dell’integrale definito}{subsection.29.3.1}% 319
+\BOOKMARK [2][-]{subsection.29.3.2}{Regole\040di\040integrazione}{section.29.3}% 320
 \BOOKMARK [0][-]{chapter.30}{Introduzione\040al\040calcolo\040vettoriale\040su\040spazi\040euclidei}{part.6}% 321
 \BOOKMARK [1][-]{section.30.1}{Operatori\040differenziali\040in\040spazi\040euclidei}{chapter.30}% 322
 \BOOKMARK [2][-]{subsection.30.1.1}{Derivata\040direzionale}{section.30.1}% 323
@@ -329,4 +329,4 @@
 \BOOKMARK [0][-]{chapter.31}{Introduzione\040alla\040statistica}{part.7}% 329
 \BOOKMARK [-1][-]{part.8}{VIII\040Indice}{}% 330
 \BOOKMARK [0][-]{chapter.32}{Indice}{part.8}% 331
-\BOOKMARK [0][-]{section*.108}{Proof\040Index}{part.8}% 332
+\BOOKMARK [0][-]{section*.110}{Proof\040Index}{part.8}% 332
