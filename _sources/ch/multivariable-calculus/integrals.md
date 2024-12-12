@@ -40,8 +40,12 @@ $$\int_{\mathbf{x} \in \Omega} f(\mathbf{x}) d \mathbf{x} := \lim_{\Delta \Omega
 $$\begin{aligned}
   \sigma 
  & = \sum_k f(\mathbf{x}_k) \Delta x_k \Delta y_k = \\
- & = \sum_i \sum_j f(x_i, y_j) \Delta y_j \Delta x_i \rightarrow \sum_i \int_{y=Y_1(x)}^{Y_2(x)} f(x_i, y) dy \, \Delta x_i \\
- & = \sum_j \sum_i f(x_i, y_j) \Delta x_i \Delta y_j \rightarrow \sum_j \int_{x=X_1(y)}^{X_2(y)} f(x, y_j) dx \, \Delta y_j \\
+ & = \sum_i \sum_j f(x_i, y_j) \Delta y_j \Delta x_i 
+  \rightarrow \sum_i \int_{y=Y_1(x)}^{Y_2(x)} f(x_i, y) dy \, \Delta x_i 
+  \rightarrow \int_{x=x_1}^{x_2} \int_{y=Y_1(x)}^{Y_2(x)} f(x_i, y) dy \, dx  \\
+ & = \sum_j \sum_i f(x_i, y_j) \Delta x_i \Delta y_j 
+  \rightarrow \sum_j \int_{x=X_1(y)}^{X_2(y)} f(x, y_j) dx \, \Delta y_j 
+  \rightarrow \int_{y=y_1}^{y_2} \int_{x=X_1(y)}^{X_2(y)} f(x, y_j) dx \, dy \\
 \end{aligned}$$
 
 
