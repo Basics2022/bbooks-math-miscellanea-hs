@@ -71,7 +71,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="28.3. Derivate di funzioni di più variabili" href="derivatives.html" />
+    <link rel="next" title="28.2. Derivate di funzioni di più variabili" href="derivatives.html" />
     <link rel="prev" title="28. Introduzione al calcolo multi-variabile" href="../multivariable-calculus.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
@@ -255,9 +255,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../infinitesimal_calculus/problems.html">27. Calcolo infinitesimale - Problemi</a></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../multivariable-calculus.html">28. Introduzione al calcolo multi-variabile</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">28.1. Limite di una funzione di più variabili</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="derivatives.html">28.3. Derivate di funzioni di più variabili</a></li>
-<li class="toctree-l2"><a class="reference internal" href="integrals.html">28.4. Integrali su domini multi-dimensionali</a></li>
+<li class="toctree-l2"><a class="reference internal" href="derivatives.html">28.2. Derivate di funzioni di più variabili</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integrals.html">28.3. Integrali su domini multi-dimensionali</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../vector-calculus.html">29. Introduzione al calcolo vettoriale su spazi euclidei</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -485,10 +484,12 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">28.1. Limite di una funzione di più variabili</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#funzioni-continue">28.2. Funzioni continue</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funzioni-continue">28.1.1. Funzioni continue</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definizione">28.1.1.1. Definizione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#discontinuita">28.1.1.2. Discontinuità</a></li>
 </ul>
-
+</li>
+</ul>
             </nav>
         </div>
     </div>
@@ -513,12 +514,14 @@ document.write(`
 <p>Esistono casi in cui:</p>
 <ul class="simple">
 <li><p>avvicinandosi al punto <span class="math notranslate nohighlight">\(\mathbf{x}_0\)</span> lungo direzioni differeti, si ottengono diversi valori; <em>fare esempio</em></p></li>
-<li><p>…</p></li>
+<li><p>…
+per i quali si rimanda alla sezione nella quale si descrivono le condizioni di <a class="reference internal" href="#multivariable-calculus-discontinuity"><span class="std std-ref">discontinuità</span></a>.</p></li>
 </ul>
 <p><strong>todo</strong> Esempi in cui il limite esiste e il limite non esiste</p>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="funzioni-continue">
-<span id="multivariable-calculus-continuity"></span><h1><span class="section-number">28.2. </span>Funzioni continue<a class="headerlink" href="#funzioni-continue" title="Permalink to this heading">#</a></h1>
+<div class="section" id="funzioni-continue">
+<span id="multivariable-calculus-continuity"></span><h2><span class="section-number">28.1.1. </span>Funzioni continue<a class="headerlink" href="#funzioni-continue" title="Permalink to this heading">#</a></h2>
+<div class="section" id="definizione">
+<span id="multivariable-calculus-continuity-def"></span><h3><span class="section-number">28.1.1.1. </span>Definizione<a class="headerlink" href="#definizione" title="Permalink to this heading">#</a></h3>
 <div class="proof definition admonition" id="definition-0">
 <p class="admonition-title"><span class="caption-number">Definition 28.1 </span> (Funzione continua)</p>
 <div class="definition-content section" id="proof-content">
@@ -526,7 +529,11 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[\lim_{\mathbf{x} \rightarrow \mathbf{x}_0} f(\mathbf{x}) = f(\mathbf{x}_0) \ .\]</div>
 </div>
-</div><!--
+</div></div>
+<div class="section" id="discontinuita">
+<span id="multivariable-calculus-discontinuity"></span><h3><span class="section-number">28.1.1.2. </span>Discontinuità<a class="headerlink" href="#discontinuita" title="Permalink to this heading">#</a></h3>
+<p><strong>todo</strong></p>
+<!--
 Il limite di una funzione $f$ a valori reali di due variabili reali $x,y$, $\mathbf{x} := (x,y) \in \mathbb{R}^2$ 
 
  $$f(x,y): \ D \in \mathbb{R}^2 \rightarrow \mathbb{R} \ ,$$
@@ -537,6 +544,8 @@ essa ha limite $\ell$ per $\mathbf{x} \rightarrow \mathbf{x}_0$,
 
 se 
 -->
+</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -583,7 +592,7 @@ se
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">28.3. </span>Derivate di funzioni di più variabili</p>
+        <p class="prev-next-title"><span class="section-number">28.2. </span>Derivate di funzioni di più variabili</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -602,10 +611,12 @@ se
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">28.1. Limite di una funzione di più variabili</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#funzioni-continue">28.2. Funzioni continue</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funzioni-continue">28.1.1. Funzioni continue</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definizione">28.1.1.1. Definizione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#discontinuita">28.1.1.2. Discontinuità</a></li>
 </ul>
-
+</li>
+</ul>
   </nav></div>
 
 </div></div>

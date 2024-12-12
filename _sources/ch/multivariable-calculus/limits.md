@@ -18,11 +18,14 @@ Data la definzione di limite, se il limite esiste esso è unico.
 Esistono casi in cui:
 - avvicinandosi al punto $\mathbf{x}_0$ lungo direzioni differeti, si ottengono diversi valori; *fare esempio*
 - ...
+per i quali si rimanda alla sezione nella quale si descrivono le condizioni di [discontinuità](multivariable-calculus:discontinuity).
 
 **todo** Esempi in cui il limite esiste e il limite non esiste
 
 (multivariable-calculus:continuity)=
-# Funzioni continue
+## Funzioni continue
+(multivariable-calculus:continuity:def)=
+### Definizione
 ```{prf:definition} Funzione continua
 In analogia con la [definizione di funzione di una variabile continua](infinitesimal-calculus:limits:def), una funzione di più variabili $f: D \in \mathbb{R}^n \rightarrow \mathbb{R}$ è continua in un punto $\mathbf{x}_0 \in D$ se esiste il limite della funzione e coincide con il valore della funzione nel punto,
 
@@ -30,6 +33,9 @@ $$\lim_{\mathbf{x} \rightarrow \mathbf{x}_0} f(\mathbf{x}) = f(\mathbf{x}_0) \ .
 
 ```
 
+(multivariable-calculus:discontinuity)=
+### Discontinuità
+**todo**
 
 <!--
 Il limite di una funzione $f$ a valori reali di due variabili reali $x,y$, $\mathbf{x} := (x,y) \in \mathbb{R}^2$ 
