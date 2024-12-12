@@ -6,7 +6,7 @@ Questo capitolo è un'introduzione al calcolo per funzioni di più variabili rea
 $$f(x_1, x_2, \dots, x_n) \ .$$
 
 **Esempi e applicazioni.** Il calcolo multivariabile è uno strumento indispensabile in molti ambiti. Così, ad esempio:
-- in [**meccanica**](https://basics2022.github.io/bbooks-physics-hs/ch/mechanics.html) la distribuzione di alcune grandezze fisiche nello spazio fisico può essere rappresentata come funzione delle coordinate che descrivono lo spazio; es. la distribuzione di massa continua in un corpo può essere rappresentata dalla densità $\rho(x,y,z)$, la temperatura in una stanza $T(x,y,z)$, la quota del terreno in una regione $z(x,y)$,...; così, gli strumenti del calcolo multivariabile consento di calcolare le proprietà di [inerzia](https://basics2022.github.io/bbooks-physics-hs/ch/mechanics.html/inertia) di un corpo con distribuzione di massa nota
+- in [**meccanica**](https://basics2022.github.io/bbooks-physics-hs/ch/mechanics.html) la distribuzione di alcune grandezze fisiche nello spazio fisico può essere rappresentata come funzione delle coordinate che descrivono lo spazio; es. la distribuzione di massa continua in un corpo può essere rappresentata dalla densità $\rho(x,y,z)$, la temperatura in una stanza $T(x,y,z)$, la quota del terreno in una regione $z(x,y)$,...; così, gli strumenti del calcolo multivariabile consento di calcolare le proprietà di [inerzia](https://basics2022.github.io/bbooks-physics-hs/ch/mechanics.html/inertia.html) di un corpo con distribuzione di massa nota
 - la [formulazione di Gibbs](https://basics2022.github.io/bbooks-physics-hs/ch/thermodynamics/principles-gibbs-phase-rule.html) della [**termodinamica classica**](https://basics2022.github.io/bbooks-physics-hs/ch/thermodynamics/foundation.html), consiste in un modello matematico costruito con gli strumenti del calcolo multivariabile, nel quale lo stato termodinamico di un sistema può essere espresso in funzione di un numero limitato di variabili indipendenti;
 - in **economia** **todo** ...
 - in ogni ambito in cui viene svolta un'attività di **ottimizzazione** su grandezze che possono essere rappresentate da funzioni algebriche di più variabili:
@@ -31,7 +31,7 @@ Il calcolo multi-variabile consente di introdurre il [calcolo vettoriale](vector
 - collegamento a calcolo per funzioni a una variabile
 
 
-
+<!--
 I concetti di limite, derivata e integrale introdotti per le funzioni reali di variabile reale, $f: D \subset \mathbb{R} \rightarrow \mathbb{R}$ nella sezione del calcolo infinitesimale, vengono qui estesi alle funzoni a valore reale di più variabili, $f: D \subset \mathbb{R}^n \rightarrow \mathbb{R}$.
 
 Gli strumenti del calcolo multi-variabile vengono successivamente utilizzati per il calcolo vettoriale.
@@ -43,3 +43,5 @@ Le funzioni e il calcolo multi-variabile trovano la loro applicazione in molti a
   - la programmazione ottima
   - il controllo ottimo
   - ...
+-->
+
