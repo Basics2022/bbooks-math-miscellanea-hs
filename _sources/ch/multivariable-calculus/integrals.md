@@ -63,7 +63,7 @@ I_1
 & = \int_{x=-1}^{1} \int_{y=0}^{1-x^2} \left( 1 + y \right) dy \, dx = \\
 & = \int_{x=-1}^{1} \left( 1-x^2 + \frac{1}{2} (1-x^2)^2 \right) \, dx = \\ 
 & = \int_{x=-1}^{1} \left( \frac{3}{2} - 2 x^2 + \frac{1}{2} x^4 \right) \, dx = \\ 
-& = 3 - \frac{4}{3} + \frac{1}{5} = \frac{28}}{15} \ . 
+& = 3 - \frac{4}{3} + \frac{1}{5} = \frac{28}{15} \ . 
 \end{aligned}$$
 
 <!--
@@ -87,10 +87,12 @@ e introducendo il cambio di variabile $y = \sin^2 \theta$, con differenziale $dy
 
 $$\begin{aligned}
 I_2 
-& = 2 \int_{\theta=0}^{\frac{\pi}{2}} (1 + \sin^2 \theta) \, \cos \theta \, ( 2 \sin \theta \, \cos \theta ) \, d \theta 
-  = 4 \int_{\theta=0}^{\frac{\pi}{2}} \cos^2 \theta \, \sin \theta \, d \theta = \\
-& = - 4 \int_{\theta=0}^{\frac{\pi}{2}} d \frac{\cos^3 \theta}{3}
-  = - \frac{4}{3} \left[ -\cos^3 \theta \right]\bigg|_{\theta=0}^{\frac{\pi}{2}} = \frac{4}{3} \ .
+& = 2 \int_{\theta=0}^{\frac{\pi}{2}} (1 + \sin^2 \theta) \, \cos \theta \, ( 2 \sin \theta \, \cos \theta ) \, d \theta \\
+& = 4 \int_{\theta=0}^{\frac{\pi}{2}} (2 - \cos^2 \theta) \, \cos \theta \, \sin \theta \, \cos \theta )  d \theta \\
+& = 8 \int_{\theta=0}^{\frac{\pi}{2}} \cos^2 \theta \, \sin \theta \,  d \theta
+  - 4 \int_{\theta=0}^{\frac{\pi}{2}} \cos^4 \theta \, \sin \theta \,  d \theta \\
+& = 8 \int_{\theta=0}^{\frac{\pi}{2}} \cos^2 \theta \, \sin \theta \,  d \theta
+  - 4 \int_{\theta=0}^{\frac{\pi}{2}} \cos^4 \theta \, \sin \theta \,  d \theta \\
 \end{aligned}$$
 
 
