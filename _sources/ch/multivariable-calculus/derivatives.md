@@ -24,13 +24,14 @@ Verificare la validità dell'espressione {eq}`multivariable-calculus:derivatives
 $$\begin{aligned}
   \lim_{h_1 \rightarrow 0} \frac{f(x_1+h_1, x_2, \dots, x_n) - f(x_1, x_2, \dots, x_n)}{h_1} & = 
   \lim_{h_1 \rightarrow 0} \frac{1}{h_1} \left[ h_1 \frac{\partial f}{\partial x_1}(x_1, \dots, x_n) + o(h_1) \right] = \\
-  & = \lim_{h_1 \rightarrow 0} \left( \frac{\partial f}{\partial x_1}(x_1, \dots, x_n) + O(h_1) \right) = \frac{\partial f}{\partial x_1}(x_1, \dots, x_n) \ .
+  & = \lim_{h_1 \rightarrow 0} \left[ \frac{\partial f}{\partial x_1}(x_1, \dots, x_n) + O(h_1) \right] = \frac{\partial f}{\partial x_1}(x_1, \dots, x_n) \ .
 \end{aligned}$$
 
 ```
 
 ````
 
+(multivariable-calculus:derivatives:increment)=
 ## Incremento di una funzione
 ```{prf:definition} Incremento di una funzione
 Dati gli incrementi $h_i$ delle variabili indipendenti $x_i$, l'incremento della funzione partendo dalla $n$-pla $\mathbb{x}$ dopo l'incremento delle variabili è
@@ -38,6 +39,7 @@ Dati gli incrementi $h_i$ delle variabili indipendenti $x_i$, l'incremento della
 $$\Delta f(\mathbf{x}, \mathbf{h}) := f(\mathbf{x} + \mathbf{h}) - f(\mathbf{x}) \ .$$
 ```
 
+(multivariable-calculus:derivatives:differential)=
 ## Differenziale
 ```{prf:definition} Differenziale
 Il differenziale $d f$ di una funzione di più variabili a valore reale in corrispondenza della $n$-pla $\mathbf{x} = (x_1, x_2, \dots, x_n)$ e dell'incremento delle variabili indipendenti $\mathbf{h} = (h_1, h_2, \dots, h_n)$ può essere definito come

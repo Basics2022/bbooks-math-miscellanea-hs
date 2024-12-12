@@ -1,6 +1,7 @@
 (multivariable-calculus:integrals)=
 # Integrali su domini multi-dimensionali
 
+(multivariable-calculus:integrals:def)=
 ## Definizioni
 **Somma di Riemann.** Data una funzione continua e limitata $f: \Omega \subset \mathbb{R}^n \rightarrow \mathbb{R}$ e $\{ \Omega_k \}$ una partizione del dominio $\Omega$, una somma di Riemann viene definita come
 
@@ -12,13 +13,18 @@ essendo $\mathbf{x}_k \in \Omega_k$ e $\mu(\cdot)$ una misura dei sottoinsiemi d
 
 $$\int_{\mathbf{x} \in \Omega} f(\mathbf{x}) d \mathbf{x} := \lim_{\Delta \Omega \rightarrow 0} \sigma \ .$$
 
+(multivariable-calculus:integrals:geom)=
 ### Interpretazione geometrica
 
+(multivariable-calculus:integrals:properties)=
 ### Proprietà dell'integrale definito
 
+(multivariable-calculus:integrals:thms)=
 ## Teoremi
 
+(multivariable-calculus:integrals:rules)=
 ## Regole di integrazione
 
+(multivariable-calculus:integrals:examples)=
 ## Esempi
 
