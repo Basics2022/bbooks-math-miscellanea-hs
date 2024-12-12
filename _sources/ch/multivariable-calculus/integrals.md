@@ -44,9 +44,24 @@ $$\begin{aligned}
   \rightarrow \sum_i \int_{y=Y_1(x)}^{Y_2(x)} f(x_i, y) dy \, \Delta x_i 
   \rightarrow \int_{x=x_1}^{x_2} \int_{y=Y_1(x)}^{Y_2(x)} f(x_i, y) dy \, dx  \\
  & = \sum_j \sum_i f(x_i, y_j) \Delta x_i \Delta y_j 
-  \rightarrow \sum_j \int_{x=X_1(y)}^{X_2(y)} f(x, y_j) dx \, \Delta y_j 
-  \rightarrow \int_{y=y_1}^{y_2} \int_{x=X_1(y)}^{X_2(y)} f(x, y_j) dx \, dy \\
+  \rightarrow \sum_j \int_{x=X_1(y)}^{X_2(y)} f(x, y) dx \, \Delta y_j 
+  \rightarrow \int_{y=y_1}^{y_2} \int_{x=X_1(y)}^{X_2(y)} f(x, y) dx \, dy \\
 \end{aligned}$$
+
+```{prf:example}
+Calcolare la massa della superficie delimitata dall'asse $x$ e dalla parabola con equazione $y = 1 - x^2$, e densità $\rho(x,y) = 1 + y$. Dopo aver verificato che il dominio di integrazione è semplice in entrambe le direzioni, come esercizio si chiede di svolgere il calcolo due volte: 1. una volta integrando prima in $y$ e poi in $x$, 2. una volta integrando prima in $x$ e poi in $y$.
+
+1.
+
+$$\int_{x=-1}^{1} \int_{y=0}^{1-x^2} \left( 1 + x ) dy \, dx = $$
+
+2.
+
+$$\int_{y=0}^{1} \int_{x=-\sqrt{1-y}}^{\sqrt{1-y}} \left( 1 + x ) dy \, dx = $$
+
+
+```
+
 
 
 <!--
