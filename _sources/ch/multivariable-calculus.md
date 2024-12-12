@@ -8,7 +8,7 @@ $$f(x_1, x_2, \dots, x_n) \ .$$
 Il calcolo multivariabile è uno strumento indispensabile in molti ambiti...
 
 **Contenuti.** Questo capitolo introduce il calcolo multivariabile, seguendo lo stesso approccio adottato per l'introduzione al calcolo infinitesimale, ma ponendo l'attenzione alla discussione sulla maggior complessità dei casi e delle condizioni che emergono in un contesto multidimensionale.
-Inizialmente, viene definito il concetto di [limite](multivariable-calculus:limit) per funzioni di più variabili, viene utilizzato per definire le [funzioni continue](multivarible-calculus:continuity) e caratterizzare i casi "patologici" di discontinuità.
+Inizialmente, viene definito il concetto di [limite](multivariable-calculus:limit) per funzioni di più variabili, viene utilizzato per definire le [funzioni continue](multivariable-calculus:continuity) e caratterizzare i casi "patologici" di discontinuità.
 Successivamente, l'operazione di limite viene utilizzata per introdurre l'operazione di [derivazione](multivariable-calculus:derivatives), che consente di ottenere informazioni sul comportamento locale di una funzione: vengono introdotte le derivate parziali e il concetto di differenziale. Vengono poi discusse le derivate di ordine superiore, e presentata l'approssimazione in serie polinomiale di una funzione nell'intorno di un punto.
 Infine viene introdotta l'operazione di [integrazione](multivariable-calculus:integrals) su domini di dimensione diversa, da $1$ a $n$.
 
