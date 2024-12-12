@@ -507,13 +507,23 @@ document.write(`
 <span id="multivariable-calculus-integrals"></span><h1><span class="section-number">28.3. </span>Integrali su domini multi-dimensionali<a class="headerlink" href="#integrali-su-domini-multi-dimensionali" title="Permalink to this heading">#</a></h1>
 <div class="section" id="definizioni">
 <span id="multivariable-calculus-integrals-def"></span><h2><span class="section-number">28.3.1. </span>Definizioni<a class="headerlink" href="#definizioni" title="Permalink to this heading">#</a></h2>
-<p><strong>Somma di Riemann.</strong> Data una funzione continua e limitata <span class="math notranslate nohighlight">\(f: \Omega \subset \mathbb{R}^n \rightarrow \mathbb{R}\)</span> e <span class="math notranslate nohighlight">\(\{ \Omega_k \}\)</span> una partizione del dominio <span class="math notranslate nohighlight">\(\Omega\)</span>, una somma di Riemann viene definita come</p>
+<p>La definizione di somma di Riemann e di integrale di Riemann per funzioni di più variabili è una estensione naturale della <a class="reference internal" href="../infinitesimal_calculus/integrals.html#infinitesimal-calculus-integrals-def"><span class="std std-ref">definizione per funzioni di una variabile</span></a>.</p>
+<div class="proof definition admonition" id="multivariable-calculus:integrals:def:riemann-sum">
+<p class="admonition-title"><span class="caption-number">Definition 28.5 </span> (Somma di Riemann)</p>
+<div class="definition-content section" id="proof-content">
+<p>Data una funzione continua e limitata <span class="math notranslate nohighlight">\(f: \Omega \subset \mathbb{R}^n \rightarrow \mathbb{R}\)</span> e <span class="math notranslate nohighlight">\(\{ \Omega_k \}\)</span> una partizione del dominio <span class="math notranslate nohighlight">\(\Omega\)</span>, una somma di Riemann viene definita come</p>
 <div class="math notranslate nohighlight">
 \[\sigma = \sum_{k} f(\mathbf{x}_k) \mu(\Omega_k) \ ,\]</div>
 <p>essendo <span class="math notranslate nohighlight">\(\mathbf{x}_k \in \Omega_k\)</span> e <span class="math notranslate nohighlight">\(\mu(\cdot)\)</span> una misura dei sottoinsiemi di <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span>.</p>
-<p><strong>Integrale di Riemann.</strong> Sia <span class="math notranslate nohighlight">\(\Delta \Omega := \max_k \mu(\Omega_k)\)</span>, l’integrale definito di Riemann è definito come il limite per <span class="math notranslate nohighlight">\(\Delta \Omega \rightarrow 0\)</span> della somma di Riemann <span class="math notranslate nohighlight">\(\sigma\)</span>,</p>
+</div>
+</div><div class="proof definition admonition" id="multivariable-calculus:integrals:def:riemann-integral">
+<p class="admonition-title"><span class="caption-number">Definition 28.6 </span> (Integrale di Riemann)</p>
+<div class="definition-content section" id="proof-content">
+<p>Sia <span class="math notranslate nohighlight">\(\Delta \Omega := \max_k \mu(\Omega_k)\)</span>, l’integrale definito di Riemann è definito come il limite per <span class="math notranslate nohighlight">\(\Delta \Omega \rightarrow 0\)</span> della somma di Riemann <span class="math notranslate nohighlight">\(\sigma\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[\int_{\mathbf{x} \in \Omega} f(\mathbf{x}) d \mathbf{x} := \lim_{\Delta \Omega \rightarrow 0} \sigma \ .\]</div>
+</div>
+</div><p><strong>todo</strong> <em>Tipi di integrale: a seconda del dominio e della funzione integranda. Qui o nel calcolo vettoriale? Integrali: linea, lavoro; superficie, flusso; volume</em></p>
 <div class="section" id="interpretazione-geometrica">
 <span id="multivariable-calculus-integrals-geom"></span><h3><span class="section-number">28.3.1.1. </span>Interpretazione geometrica<a class="headerlink" href="#interpretazione-geometrica" title="Permalink to this heading">#</a></h3>
 </div>

@@ -521,14 +521,22 @@ document.write(`
 <span id="infinitesimal-calculus-integrals"></span><h1><span class="section-number">25. </span>Integrali<a class="headerlink" href="#integrali" title="Permalink to this heading">#</a></h1>
 <div class="section" id="definizioni">
 <span id="infinitesimal-calculus-integrals-def"></span><h2><span class="section-number">25.1. </span>Definizioni<a class="headerlink" href="#definizioni" title="Permalink to this heading">#</a></h2>
-<p><strong>Somma di Riemann.</strong> Data una funzione continua <span class="math notranslate nohighlight">\(f: [a,b] \rightarrow \mathbb{R}\)</span> e <span class="math notranslate nohighlight">\(P = \{ x_0, x_1, \dots x_n | a = x_0 &lt; x_1 &lt; \dots &lt; x_n = b \}\)</span> partizione dell’intervallo <span class="math notranslate nohighlight">\([a,b]\)</span>, la somma di Riemann viene definita come</p>
+<div class="proof definition admonition" id="infinitesimal-calculus:integrals:def:riemann-sum">
+<p class="admonition-title"><span class="caption-number">Definition 25.1 </span> (Somma di Riemann)</p>
+<div class="definition-content section" id="proof-content">
+<p>Data una funzione continua <span class="math notranslate nohighlight">\(f: [a,b] \rightarrow \mathbb{R}\)</span> e <span class="math notranslate nohighlight">\(P = \{ x_0, x_1, \dots x_n | a = x_0 &lt; x_1 &lt; \dots &lt; x_n = b \}\)</span> partizione dell’intervallo <span class="math notranslate nohighlight">\([a,b]\)</span>, la somma di Riemann viene definita come</p>
 <div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-integrals-riemann-sum">
 <span class="eqno">(25.1)<a class="headerlink" href="#equation-infinitesimal-calculus-integrals-riemann-sum" title="Permalink a questa equazione">#</a></span>\[\sigma_P = \sum_{k=1}^{n} f(\xi_k) (x_{k} - x_{k-1}) \ ,\]</div>
 <p>con <span class="math notranslate nohighlight">\(\xi_k \in [x_{k-1}, x_k]\)</span>.</p>
-<p><strong>Integrale di Riemann.</strong> Sia <span class="math notranslate nohighlight">\(\Delta x = \max_k (x_{k} - x_{k-1})\)</span>, l’integrale definito di Riemann è  il limite per <span class="math notranslate nohighlight">\(\Delta x \rightarrow 0\)</span> della somma di Riemann <span class="math notranslate nohighlight">\(\sigma\)</span></p>
+</div>
+</div><div class="proof definition admonition" id="infinitesimal-calculus:integrals:def:riemann-integral">
+<p class="admonition-title"><span class="caption-number">Definition 25.2 </span> (Integrale di Riemann)</p>
+<div class="definition-content section" id="proof-content">
+<p>Sia <span class="math notranslate nohighlight">\(\Delta x = \max_k (x_{k} - x_{k-1})\)</span>, l’integrale definito di Riemann è  il limite per <span class="math notranslate nohighlight">\(\Delta x \rightarrow 0\)</span> della somma di Riemann <span class="math notranslate nohighlight">\(\sigma\)</span></p>
 <div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-integrals-riemann-def">
 <span class="eqno">(25.2)<a class="headerlink" href="#equation-infinitesimal-calculus-integrals-riemann-def" title="Permalink a questa equazione">#</a></span>\[\int_a^b f(x) \ dx = \lim_{\Delta x \rightarrow 0} \sigma_P \ .\]</div>
-<p><strong>Osservazione.</strong> Dato l’intervallo <span class="math notranslate nohighlight">\([a,b]\)</span>, per <span class="math notranslate nohighlight">\(\Delta x \rightarrow 0\)</span> il numero di intervalli della partizione tende all’infinito, <span class="math notranslate nohighlight">\(n \rightarrow \infty\)</span>.</p>
+</div>
+</div><p><strong>Osservazione.</strong> Dato l’intervallo <span class="math notranslate nohighlight">\([a,b]\)</span>, per <span class="math notranslate nohighlight">\(\Delta x \rightarrow 0\)</span> il numero di intervalli della partizione tende all’infinito, <span class="math notranslate nohighlight">\(n \rightarrow \infty\)</span>.</p>
 <div class="section" id="interpretazione-geometrica">
 <h3><span class="section-number">25.1.1. </span>Interpretazione geometrica<a class="headerlink" href="#interpretazione-geometrica" title="Permalink to this heading">#</a></h3>
 <p>L’integrale definito</p>
