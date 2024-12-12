@@ -5,7 +5,9 @@ Questo capitolo è un'introduzione al calcolo per funzioni di più variabili rea
 
 $$f(x_1, x_2, \dots, x_n) \ .$$
 
-Il calcolo multivariabile è uno strumento indispensabile in molti ambiti...
+**Esempi e applicazioni.** Il calcolo multivariabile è uno strumento indispensabile in molti ambiti. Così, ad esempio:
+- la distribuzione di alcune grandezze fisiche nello spazio fisico può essere rappresentata come funzione delle coordinate che descrivono lo spazio; es. temperatura in una stanza $T(x,y,z)$, quota del terreno in una regione $z(x,y)$,...
+- lo stato termodinamico di un sistema può essere espresso in funzione di un numero limitato di variabili indipendenti; es. $e(s,T)$, $P(s,T)$,...
 
 **Contenuti.** Questo capitolo introduce il calcolo multivariabile, seguendo lo stesso approccio adottato per l'introduzione al calcolo infinitesimale, ma ponendo l'attenzione alla discussione sulla maggior complessità dei casi e delle condizioni che emergono in un contesto multidimensionale.
 Inizialmente, viene definito il concetto di [limite](multivariable-calculus:limit) per funzioni di più variabili, viene utilizzato per definire le [funzioni continue](multivariable-calculus:continuity) e caratterizzare i casi "patologici" di discontinuità.
