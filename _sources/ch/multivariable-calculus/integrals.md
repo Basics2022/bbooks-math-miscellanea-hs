@@ -59,7 +59,7 @@ Calcolare la massa della superficie delimitata dall'asse $x$ e dalla parabola co
 1.
 
 $$
-\int_{x=-1}^{1} \int_{y=0}^{1-x^2} \left( 1 + x \right) dy \, dx 
+I_1 = \int_{x=-1}^{1} \int_{y=0}^{1-x^2} \left( 1 + x \right) dy \, dx 
 = \int_{x=-1}^{1} ( 1 + x )(1-x^2) \, dx = 
 = \int_{x=-1}^{1} ( 1 + x - x^2 - x^3 ) \, dx = 2 - \frac{2}{3} = \frac{4}{3} \ .
 $$
@@ -67,8 +67,18 @@ $$
 2.
 
 $$
-\int_{y=0}^{1} \int_{x=-\sqrt{1-y}}^{\sqrt{1-y}} \left( 1 + x \right) dy \, dx 
-= \int_{y=0}^{1} 2 \sqrt{1-y} \, dy = 
+I_2 = \int_{y=0}^{1} \int_{x=-\sqrt{1-y}}^{\sqrt{1-y}} \left( 1 + x \right) dy \, dx 
+= \int_{y=0}^{1} 2 \sqrt{1-y} \, dy 
+$$
+
+e introducendo il cambio di variabile $y = \sin^2 \theta$, con differenziale $dy = 2 \sin \theta \, \cos \theta \, d \theta$, $x=0 \rightarrow \theta = 0$, $x = 1 \rightarrow \theta = \frac{\pi}{2}$,
+
+$$
+I_2 
+= 2 \int_{\theta=0}^{\frac{\pi}{2}} \cos \theta ( 2 \sin \theta \, \cos \theta ) \, d \theta 
+= 4 \int_{\theta=0}^{\frac{\pi}{2}} \cos^2 \theta \, \sin \theta \, d \theta
+= - 4 \int_{\theta=0}^{\frac{\pi}{2}} d \frac{\cos^3 \theta}{3}
+= - \frac{4}{3} \left[ -\cos^3 \theta \right]\|_{\theta=0}^{\frac{\pi}{2}} = \frac{4}{3} \ .
 $$
 
 
