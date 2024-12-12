@@ -32,9 +32,11 @@ $$\begin{aligned}
 ````
 
 ## Incremento di una funzione
+```{prf:definition} Incremento di una funzione
 Dati gli incrementi $h_i$ delle variabili indipendenti $x_i$, l'incremento della funzione partendo dalla $n$-pla $\mathbb{x}$ dopo l'incremento delle variabili è
 
-$$\Delta f(\mathbf{x}, \mathbf{h}) = f(\mathbf{x} + \mathbf{h}) - f(\mathbf{x}) \ .$$
+$$\Delta f(\mathbf{x}, \mathbf{h}) := f(\mathbf{x} + \mathbf{h}) - f(\mathbf{x}) \ .$$
+```
 
 ## Differenziale
 ```{prf:definition} Differenziale
