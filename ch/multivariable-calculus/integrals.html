@@ -569,13 +569,13 @@ I_2 = \int_{y=0}^{1} \int_{x=-\sqrt{1-y}}^{\sqrt{1-y}} \left( 1 + x \right) dy \
 \]</div>
 <p>e introducendo il cambio di variabile <span class="math notranslate nohighlight">\(y = \sin^2 \theta\)</span>, con differenziale <span class="math notranslate nohighlight">\(dy = 2 \sin \theta \, \cos \theta \, d \theta\)</span>, <span class="math notranslate nohighlight">\(x=0 \rightarrow \theta = 0\)</span>, <span class="math notranslate nohighlight">\(x = 1 \rightarrow \theta = \frac{\pi}{2}\)</span>,</p>
 <div class="math notranslate nohighlight">
-\[
+\[\begin{split}\begin{aligned}
 I_2 
-= 2 \int_{\theta=0}^{\frac{\pi}{2}} \cos \theta ( 2 \sin \theta \, \cos \theta ) \, d \theta 
-= 4 \int_{\theta=0}^{\frac{\pi}{2}} \cos^2 \theta \, \sin \theta \, d \theta
-= - 4 \int_{\theta=0}^{\frac{\pi}{2}} d \frac{\cos^3 \theta}{3}
-= - \frac{4}{3} \left[ -\cos^3 \theta \right]\bigg|_{\theta=0}^{\frac{\pi}{2}} = \frac{4}{3} \ .
-\]</div>
+&amp; = 2 \int_{\theta=0}^{\frac{\pi}{2}} \cos \theta ( 2 \sin \theta \, \cos \theta ) \, d \theta 
+  = 4 \int_{\theta=0}^{\frac{\pi}{2}} \cos^2 \theta \, \sin \theta \, d \theta = \\
+&amp; = - 4 \int_{\theta=0}^{\frac{\pi}{2}} d \frac{\cos^3 \theta}{3}
+  = - \frac{4}{3} \left[ -\cos^3 \theta \right]\bigg|_{\theta=0}^{\frac{\pi}{2}} = \frac{4}{3} \ .
+\end{aligned}\end{split}\]</div>
 </div>
 </div><!--
 (multivariable-calculus:integrals:thms)=
