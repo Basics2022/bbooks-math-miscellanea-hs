@@ -50,13 +50,19 @@ $$\begin{aligned}
 
 ```{prf:example}
 :label: multivariable-calculus:integral:example
-:class: dropdown
+<!-- :class: dropdown -->
 
 Calcolare la massa della superficie delimitata dall'asse $x$ e dalla parabola con equazione $y = 1 - x^2$, e densità $\rho(x,y) = 1 + y$. Dopo aver verificato che il dominio di integrazione è semplice in entrambe le direzioni, come esercizio si chiede di svolgere il calcolo due volte: 1. una volta integrando prima in $y$ e poi in $x$, 2. una volta integrando prima in $x$ e poi in $y$.
 
+**todo** *dominio...*
+
 1.
 
-$$\int_{x=-1}^{1} \int_{y=0}^{1-x^2} \left( 1 + x \right) dy \, dx = $$
+$$
+\int_{x=-1}^{1} \int_{y=0}^{1-x^2} \left( 1 + x \right) dy \, dx 
+= \int_{x=-1}^{1} ( 1 + x )(1-x^2) \, dx = 
+= \int_{x=-1}^{1} ( 1 + x - x^2 - x^3 ) \, dx = 2 - \frac{2}{3} = \frac{4}{3} \ .
+$$
 
 2.
 
