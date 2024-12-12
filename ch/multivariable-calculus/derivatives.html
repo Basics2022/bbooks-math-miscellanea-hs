@@ -502,16 +502,20 @@ document.write(`
 <span id="multivariable-calculus-derivatives"></span><h1><span class="section-number">28.2. </span>Derivate di funzioni di più variabili<a class="headerlink" href="#derivate-di-funzioni-di-piu-variabili" title="Permalink to this heading">#</a></h1>
 <div class="section" id="derivate-parziali">
 <h2><span class="section-number">28.2.1. </span>Derivate parziali<a class="headerlink" href="#derivate-parziali" title="Permalink to this heading">#</a></h2>
+<div class="proof definition admonition" id="definition-0">
+<p class="admonition-title"><span class="caption-number">Definition 28.2 </span> (Derivata parziale)</p>
+<div class="definition-content section" id="proof-content">
 <p>Data una funzione di più variabili <span class="math notranslate nohighlight">\((x_1, x_2, \dots, x_n) \in \mathbb{R}^n\)</span>, la <strong>derivata parziale</strong> rispetto alla variabile <span class="math notranslate nohighlight">\(x_1\)</span>, se esiste, è la derivata della funzione calcolata tenendo costanti tutte le altre variabili,</p>
 <div class="math notranslate nohighlight">
 \[\frac{\partial f}{\partial x_1}(x_1, x_2, \dots, x_n) := \lim_{h_1 \rightarrow 0} \frac{f(x_1+h_1, x_2, \dots, x_n) - f(x_1, x_2, \dots, x_n)}{h_1}\]</div>
-<p>La definizione analoga vale per la derivata parziale rispetto a qualsiasi altra variabile indipendente.</p>
+</div>
+</div><p>La definizione analoga vale per la derivata parziale rispetto a qualsiasi altra variabile indipendente.</p>
 <p>Ricordando il significato di infinitesimo <span class="math notranslate nohighlight">\(o(h_1)\)</span>, <span class="math notranslate nohighlight">\(\lim_{h_1 \rightarrow 0} \frac{o(h_1)}{h_1} = 0\)</span>, dovrebbe essere semplice convincersi che la definizione di derivata parziale rispetto a <span class="math notranslate nohighlight">\(x_1\)</span> implica</p>
 <div class="math notranslate nohighlight" id="equation-multivariable-calculus-derivatives-partial-differential">
 <span class="eqno">(28.1)<a class="headerlink" href="#equation-multivariable-calculus-derivatives-partial-differential" title="Permalink a questa equazione">#</a></span>\[
   f(x_1+h_1, \dots, x_n) - f(x_1, \dots, x_n) = h_1 \frac{\partial f}{\partial x_1}(x_1, \dots, x_n) + o(h_1) \ .
 \]</div>
-<div class="exercise admonition" id="ch/multivariable-calculus/derivatives-exercise-0">
+<div class="exercise admonition" id="ch/multivariable-calculus/derivatives-exercise-1">
 
 <p class="admonition-title"><span class="caption-number">Exercise 28.1 </span> (Verifica dell’incremento della funzione dovuto all’incremento di una variabile)</p>
 <div class="section" id="exercise-content">
@@ -527,12 +531,16 @@ document.write(`
 </div>
 <div class="section" id="differenziale">
 <h2><span class="section-number">28.2.3. </span>Differenziale<a class="headerlink" href="#differenziale" title="Permalink to this heading">#</a></h2>
+<div class="proof definition admonition" id="definition-2">
+<p class="admonition-title"><span class="caption-number">Definition 28.3 </span> (Differenziale)</p>
+<div class="definition-content section" id="proof-content">
 <p>Il differenziale <span class="math notranslate nohighlight">\(d f\)</span> di una funzione di più variabili a valore reale in corrispondenza della <span class="math notranslate nohighlight">\(n\)</span>-pla <span class="math notranslate nohighlight">\(\mathbf{x} = (x_1, x_2, \dots, x_n)\)</span> e dell’incremento delle variabili indipendenti <span class="math notranslate nohighlight">\(\mathbf{h} = (h_1, h_2, \dots, h_n)\)</span> può essere definito come</p>
 <div class="math notranslate nohighlight">
 \[d f (\mathbf{x}, \mathbf{h}) = \frac{\partial f}{\partial x_1}(\mathbf{x}) \,  h_1 +   
                                  \frac{\partial f}{\partial x_2}(\mathbf{x}) \,  h_2 + \dots
                                  \frac{\partial f}{\partial x_n}(\mathbf{x}) \,  h_n \ .  \]</div>
-<p>Il differenziale di una funzione rappresenta al primo ordine l’incremento della funzione rispetto all’incremento delle variabili indipendenti,</p>
+</div>
+</div><p>Il differenziale di una funzione rappresenta al primo ordine l’incremento della funzione rispetto all’incremento delle variabili indipendenti,</p>
 <div class="math notranslate nohighlight">
 \[ \Delta f(\mathbf{x}, \mathbf{h}) = df(\mathbf{x}, \mathbf{h}) + o(||\mathbf{h}||)\ .\]</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">

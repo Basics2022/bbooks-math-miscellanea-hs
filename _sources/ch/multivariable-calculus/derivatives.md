@@ -1,9 +1,11 @@
 (multivariable-calculus:derivatives)=
 # Derivate di funzioni di più variabili
 ## Derivate parziali
+```{prf:definition} Derivata parziale
 Data una funzione di più variabili $(x_1, x_2, \dots, x_n) \in \mathbb{R}^n$, la **derivata parziale** rispetto alla variabile $x_1$, se esiste, è la derivata della funzione calcolata tenendo costanti tutte le altre variabili,
 
 $$\frac{\partial f}{\partial x_1}(x_1, x_2, \dots, x_n) := \lim_{h_1 \rightarrow 0} \frac{f(x_1+h_1, x_2, \dots, x_n) - f(x_1, x_2, \dots, x_n)}{h_1}$$
+```
 
 La definizione analoga vale per la derivata parziale rispetto a qualsiasi altra variabile indipendente.
 
@@ -23,11 +25,13 @@ Dati gli incrementi $h_i$ delle variabili indipendenti $x_i$, l'incremento della
 $$\Delta f(\mathbf{x}, \mathbf{h}) = f(\mathbf{x} + \mathbf{h}) - f(\mathbf{x}) \ .$$
 
 ## Differenziale
+```{prf:definition} Differenziale
 Il differenziale $d f$ di una funzione di più variabili a valore reale in corrispondenza della $n$-pla $\mathbf{x} = (x_1, x_2, \dots, x_n)$ e dell'incremento delle variabili indipendenti $\mathbf{h} = (h_1, h_2, \dots, h_n)$ può essere definito come
 
 $$d f (\mathbf{x}, \mathbf{h}) = \frac{\partial f}{\partial x_1}(\mathbf{x}) \,  h_1 +   
                                  \frac{\partial f}{\partial x_2}(\mathbf{x}) \,  h_2 + \dots
                                  \frac{\partial f}{\partial x_n}(\mathbf{x}) \,  h_n \ .  $$
+```
 
 Il differenziale di una funzione rappresenta al primo ordine l'incremento della funzione rispetto all'incremento delle variabili indipendenti,
 
