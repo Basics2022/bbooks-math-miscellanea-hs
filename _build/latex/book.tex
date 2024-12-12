@@ -9441,7 +9441,7 @@ Ripetendo lo stesso procedimento, confrontando la differenza \(f(x) - T_N[f(x);x
 
 \section{Definizioni}
 \label{\detokenize{ch/infinitesimal_calculus/integrals:definizioni}}\label{\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-def}}\label{ch/infinitesimal_calculus/integrals:infinitesimal-calculus:integrals:def:riemann-sum}
-\begin{sphinxadmonition}{note}{Definition 25.1.1 (Somma di Riemann)}
+\begin{sphinxadmonition}{note}{Definition 25.1.2 (Somma di Riemann)}
 
 
 
@@ -9453,7 +9453,7 @@ Data una funzione continua \(f: [a,b] \rightarrow \mathbb{R}\) e \(P = \{ x_0, x
 \sphinxAtStartPar
 con \(\xi_k \in [x_{k-1}, x_k]\).
 \end{sphinxadmonition}
-\label{ch/infinitesimal_calculus/integrals:infinitesimal-calculus:integrals:def:riemann-integral}
+\label{ch/infinitesimal_calculus/integrals:infinitesimal-calculus:integrals:def:riemann-sum}
 \begin{sphinxadmonition}{note}{Definition 25.1.2 (Integrale di Riemann)}
 
 
@@ -9483,7 +9483,7 @@ corrisponde al valore dell”\sphinxstylestrong{area con segno} tra il grafico d
 \label{\detokenize{ch/infinitesimal_calculus/integrals:integrale-definito}}\label{\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-def-definite}}
 
 \subsubsection{Proprietà dell’integrale definito}
-\label{\detokenize{ch/infinitesimal_calculus/integrals:proprieta-dell-integrale-definito}}\label{\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-def-definite-prop}}\phantomsection\label{\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-def-indefinite}}
+\label{\detokenize{ch/infinitesimal_calculus/integrals:proprieta-dell-integrale-definito}}\label{\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-def-definite-prop}}
 \sphinxAtStartPar
 Dalla definizione \eqref{equation:ch/infinitesimal_calculus/integrals:infinitesimal-calculus:integrals:riemann:def} dell’integrale di Riemann seguono immediatamente le seguenti proprietà:
 \begin{itemize}
@@ -9521,7 +9521,7 @@ scambio degli estremi di integrazione
 \end{equation}
 
 \subsection{Integrale indefinito}
-\label{\detokenize{ch/infinitesimal_calculus/integrals:integrale-indefinito}}
+\label{\detokenize{ch/infinitesimal_calculus/integrals:integrale-indefinito}}\label{\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-def-indefinite}}
 \sphinxAtStartPar
 Usando la proprietà \eqref{equation:ch/infinitesimal_calculus/integrals:infinitesimal-calculus:integrals:prop:add} di additività sull’intervallo dell’integrale definito,
 \begin{equation*}
@@ -11101,17 +11101,32 @@ Sia \(\Delta \Omega := \max_k \mu(\Omega_k)\), l’integrale definito di Riemann
 
 \subsubsection{Interpretazione geometrica}
 \label{\detokenize{ch/multivariable-calculus/integrals:interpretazione-geometrica}}\label{\detokenize{ch/multivariable-calculus/integrals:multivariable-calculus-integrals-geom}}
+\sphinxAtStartPar
+\sphinxstylestrong{todo} \sphinxstyleemphasis{…volume, massa, totale carica… corrisponenti rispettivamente a funzioni di densità \(1\), densità di massa, densità di carica}
+
 
 \subsubsection{Proprietà dell’integrale definito}
 \label{\detokenize{ch/multivariable-calculus/integrals:proprieta-dell-integrale-definito}}\label{\detokenize{ch/multivariable-calculus/integrals:multivariable-calculus-integrals-properties}}
+\sphinxAtStartPar
+\sphinxstylestrong{todo} \sphinxstyleemphasis{additività sui domini di integrazione, linearità sulla funzione integranda; ricordarsi che è una somma; fare riferimento alle {\hyperref[\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-def-definite-prop}]{\sphinxcrossref{\DUrole{std,std-ref}{proprietà dell’integrale di funzioni a una variabile}}}}}
+
 
 \subsection{Regole di integrazione}
 \label{\detokenize{ch/multivariable-calculus/integrals:regole-di-integrazione}}\label{\detokenize{ch/multivariable-calculus/integrals:multivariable-calculus-integrals-rules}}
 \sphinxAtStartPar
-…
+Il calcolo di un integrale di una funzione di più variabili su un dominio \(m\)\sphinxhyphen{}dimensionale può essere svolto con il calcolo di \(m\) integrali di funzioni di una variabile.
 
 \sphinxAtStartPar
-\sphinxstyleemphasis{esempio nel caso di due variabili, con partizione dell’insieme in elementi \(\Delta x_i \Delta y_j\) con dominio semplice}
+\sphinxstylestrong{todo} …
+
+\sphinxAtStartPar
+Il valore di un integrale su un dominio multi\sphinxhyphen{}dimensionale è indipendente dal metodo/ordine di integrazione.
+
+\sphinxAtStartPar
+\sphinxstylestrong{Osservazione.} Il metodo/ordine di integrazione può quindi essere scelto volta per volta in base a criteri di convenienza, con l’obiettivo di fare il numero minore di calcoli, i calcoli più semplici possibile. Anche qualora non si facesse la scelta «migliore», l’indipendenza del valore dal metodo di integrazione ci assicura di ottenere il risultato desiderato, al netto di errori, al costo/punizione di fare qualche calcolo in più o più complicato.
+
+\sphinxAtStartPar
+\sphinxstyleemphasis{esempio nel caso di due variabili, con partizione dell’insieme in elementi \(\Delta x_i \Delta y_j\) con} \sphinxstylestrong{dominio semplice} \sphinxstylestrong{todo} \sphinxstyleemphasis{def di dominio semplice}
 \begin{equation*}
 \begin{split}\begin{aligned}
   \sigma 
@@ -11124,7 +11139,7 @@ Sia \(\Delta \Omega := \max_k \mu(\Omega_k)\), l’integrale definito di Riemann
   \ \rightarrow \ \int_{y=y_1}^{y_2} \int_{x=X_1(y)}^{X_2(y)} f(x, y) dx \, dy \\
 \end{aligned}\end{split}
 \end{equation*}\label{ch/multivariable-calculus/integrals:multivariable-calculus:integral:example}
-\begin{sphinxadmonition}{note}{Example 28.3.1}
+\begin{sphinxadmonition}{note}{Example 28.3.1 (Indipendenza dell’integrale multiplo dal metodo di integrazione)}
 
 
 
@@ -11590,9 +11605,6 @@ RL: ottimizzazione/controllo
 \indexspace
 \bigletter{example\sphinxhyphen{}3}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}3}\sphinxstyleindexextra{ch/algebra/real\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/real-algebra:\detokenize{example-3}}
-\indexspace
-\bigletter{infinitesimal\sphinxhyphen{}calculus:integrals:def:riemann\sphinxhyphen{}integral}
-\item\relax\sphinxstyleindexentry{infinitesimal\sphinxhyphen{}calculus:integrals:def:riemann\sphinxhyphen{}integral}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{infinitesimal-calculus:integrals:def:riemann-integral}}
 \indexspace
 \bigletter{infinitesimal\sphinxhyphen{}calculus:integrals:def:riemann\sphinxhyphen{}sum}
 \item\relax\sphinxstyleindexentry{infinitesimal\sphinxhyphen{}calculus:integrals:def:riemann\sphinxhyphen{}sum}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{infinitesimal-calculus:integrals:def:riemann-sum}}

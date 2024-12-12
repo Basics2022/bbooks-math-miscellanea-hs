@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2024.9.16)  12 DEC 2024 19:48
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2024.9.16)  12 DEC 2024 20:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1303,6 +1303,11 @@ Writing index file book.idx
 LaTeX Info: Redefining \rmfamily on input line 20.
 LaTeX Info: Redefining \sffamily on input line 20.
 LaTeX Info: Redefining \ttfamily on input line 20.
+
+
+LaTeX Warning: Label `ch/infinitesimal_calculus/integrals:infinitesimal-calculu
+s:integrals:def:riemann-sum' multiply defined.
+
 )
 \openout1 = `book.aux'.
 
@@ -2649,269 +2654,173 @@ LaTeX Info: Redefining \rmfamily on input line 11102.
 LaTeX Info: Redefining \sffamily on input line 11102.
 LaTeX Info: Redefining \ttfamily on input line 11102.
  [189]
-LaTeX Info: Redefining \rmfamily on input line 11193.
-LaTeX Info: Redefining \sffamily on input line 11193.
-LaTeX Info: Redefining \ttfamily on input line 11193.
+LaTeX Info: Redefining \rmfamily on input line 11185.
+LaTeX Info: Redefining \sffamily on input line 11185.
+LaTeX Info: Redefining \ttfamily on input line 11185.
  [190]
-Capitolo 30.
-[191
+LaTeX Info: Redefining \rmfamily on input line 11208.
+LaTeX Info: Redefining \sffamily on input line 11208.
+LaTeX Info: Redefining \ttfamily on input line 11208.
+ [191]
+LaTeX Info: Redefining \rmfamily on input line 11208.
+LaTeX Info: Redefining \sffamily on input line 11208.
+LaTeX Info: Redefining \ttfamily on input line 11208.
+ [192
 
 ]
-LaTeX Info: Redefining \rmfamily on input line 11319.
-LaTeX Info: Redefining \sffamily on input line 11319.
-LaTeX Info: Redefining \ttfamily on input line 11319.
- [192]
-Overfull \hbox (237.04324pt too wide) detected at line 11359
+Capitolo 30.
+[193]
+LaTeX Info: Redefining \rmfamily on input line 11334.
+LaTeX Info: Redefining \sffamily on input line 11334.
+LaTeX Info: Redefining \ttfamily on input line 11334.
+ [194]
+Overfull \hbox (237.04324pt too wide) detected at line 11374
 []
  []
 
-LaTeX Info: Redefining \rmfamily on input line 11372.
-LaTeX Info: Redefining \sffamily on input line 11372.
-LaTeX Info: Redefining \ttfamily on input line 11372.
-[193]
-LaTeX Info: Redefining \rmfamily on input line 11412.
-LaTeX Info: Redefining \sffamily on input line 11412.
-LaTeX Info: Redefining \ttfamily on input line 11412.
- [194] [195
+LaTeX Info: Redefining \rmfamily on input line 11387.
+LaTeX Info: Redefining \sffamily on input line 11387.
+LaTeX Info: Redefining \ttfamily on input line 11387.
+[195]
+LaTeX Info: Redefining \rmfamily on input line 11427.
+LaTeX Info: Redefining \sffamily on input line 11427.
+LaTeX Info: Redefining \ttfamily on input line 11427.
+ [196] [197
 
-] [196]
-LaTeX Info: Redefining \rmfamily on input line 11494.
-LaTeX Info: Redefining \sffamily on input line 11494.
-LaTeX Info: Redefining \ttfamily on input line 11494.
- [197]
-LaTeX Info: Redefining \rmfamily on input line 11494.
-LaTeX Info: Redefining \sffamily on input line 11494.
-LaTeX Info: Redefining \ttfamily on input line 11494.
- [198
+] [198]
+LaTeX Info: Redefining \rmfamily on input line 11509.
+LaTeX Info: Redefining \sffamily on input line 11509.
+LaTeX Info: Redefining \ttfamily on input line 11509.
+ [199]
+LaTeX Info: Redefining \rmfamily on input line 11509.
+LaTeX Info: Redefining \sffamily on input line 11509.
+LaTeX Info: Redefining \ttfamily on input line 11509.
+ [200
 
 ]
 Capitolo 31.
-[199]
-LaTeX Info: Redefining \rmfamily on input line 11558.
-LaTeX Info: Redefining \sffamily on input line 11558.
-LaTeX Info: Redefining \ttfamily on input line 11558.
- [200
+[201]
+LaTeX Info: Redefining \rmfamily on input line 11573.
+LaTeX Info: Redefining \sffamily on input line 11573.
+LaTeX Info: Redefining \ttfamily on input line 11573.
+ [202
 
-] [201] [202]
+] [203] [204]
 Capitolo 32.
-[203
+[205
 
 ]
-LaTeX Info: Redefining \rmfamily on input line 11571.
-LaTeX Info: Redefining \sffamily on input line 11571.
-LaTeX Info: Redefining \ttfamily on input line 11571.
- [204
+LaTeX Info: Redefining \rmfamily on input line 11586.
+LaTeX Info: Redefining \sffamily on input line 11586.
+LaTeX Info: Redefining \ttfamily on input line 11586.
+ [206
 
 ]
-Underfull \hbox (badness 5533) in paragraph at lines 11577--11578
+Underfull \hbox (badness 5533) in paragraph at lines 11592--11593
 []\TU/FreeMono(0)/m/n/10 definition-2 \TU/FreeSerif(0)/m/n/10 (\TU/FreeSerif(0)
 /m/it/10 ch/multivariable-calculus/derivatives\TU/FreeSerif(0)/m/n/10 ),
  []
 
 
-Underfull \hbox (badness 5533) in paragraph at lines 11580--11581
+Underfull \hbox (badness 5533) in paragraph at lines 11595--11596
 []\TU/FreeMono(0)/m/n/10 definition-3 \TU/FreeSerif(0)/m/n/10 (\TU/FreeSerif(0)
 /m/it/10 ch/multivariable-calculus/derivatives\TU/FreeSerif(0)/m/n/10 ),
  []
 
 
-Overfull \hbox (38.43759pt too wide) in paragraph at lines 11594--11595
+Overfull \hbox (38.43759pt too wide) in paragraph at lines 11609--11610
 []\TU/FreeSans(0)/m/n/14.4 infinitesimal-calculus:integrals:def:riemann-
  []
 
 
-Overfull \hbox (40.1225pt too wide) in paragraph at lines 11595--11596
+Overfull \hbox (40.1225pt too wide) in paragraph at lines 11610--11611
 []\TU/FreeMono(0)/m/n/10 infinitesimal-calculus:integrals:def:riemann-
  []
 
 
-Overfull \hbox (38.43759pt too wide) in paragraph at lines 11597--11598
-[]\TU/FreeSans(0)/m/n/14.4 infinitesimal-calculus:integrals:def:riemann-
- []
-
-
-Overfull \hbox (40.1225pt too wide) in paragraph at lines 11598--11599
-[]\TU/FreeMono(0)/m/n/10 infinitesimal-calculus:integrals:def:riemann-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11598--11599
+Underfull \hbox (badness 10000) in paragraph at lines 11610--11611
 \TU/FreeMono(0)/m/n/10 sum \TU/FreeSerif(0)/m/n/10 (\TU/FreeSerif(0)/m/it/10 ch
 /infinitesimal_calculus/integrals\TU/FreeSerif(0)/m/n/10 ),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11601--11602
+Underfull \hbox (badness 10000) in paragraph at lines 11613--11614
 []\TU/FreeMono(0)/m/n/10 integrals:thm:avg
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11604--11605
+Underfull \hbox (badness 10000) in paragraph at lines 11616--11617
 []\TU/FreeMono(0)/m/n/10 integrals:thm:fund
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11607--11608
+Underfull \hbox (badness 10000) in paragraph at lines 11619--11620
 []\TU/FreeMono(0)/m/n/10 integrals:thm:fund:reynolds
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11628--11629
+Underfull \hbox (badness 10000) in paragraph at lines 11640--11641
 []\TU/FreeMono(0)/m/n/10 matrix-prod-noncomm \TU/FreeSerif(0)/m/n/10 (\TU/FreeS
 erif(0)/m/it/10 ch/algebra/linear-algebra\TU/FreeSerif(0)/m/n/10 ),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11631--11632
+Underfull \hbox (badness 10000) in paragraph at lines 11643--11644
 []\TU/FreeMono(0)/m/n/10 multivariable-calculus:differential
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11634--11635
+Underfull \hbox (badness 10000) in paragraph at lines 11646--11647
 []\TU/FreeMono(0)/m/n/10 multivariable-calculus:increment-1
  []
 
 
-Overfull \hbox (11.62479pt too wide) in paragraph at lines 11636--11637
+Overfull \hbox (11.62479pt too wide) in paragraph at lines 11648--11649
 []\TU/FreeSans(0)/m/n/14.4 multivariable-calculus:integral:example 
  []
 
 
-Overfull \hbox (4.1225pt too wide) in paragraph at lines 11637--11638
+Overfull \hbox (4.1225pt too wide) in paragraph at lines 11649--11650
 []\TU/FreeMono(0)/m/n/10 multivariable-calculus:integral:example
  []
 
-[205
 
-]
-Overfull \hbox (44.65839pt too wide) in paragraph at lines 11639--11640
+Overfull \hbox (44.65839pt too wide) in paragraph at lines 11651--11652
 []\TU/FreeSans(0)/m/n/14.4 multivariable-calculus:integrals:def:riemann-
  []
 
 
-Overfull \hbox (40.1225pt too wide) in paragraph at lines 11640--11641
+Overfull \hbox (40.1225pt too wide) in paragraph at lines 11652--11653
 []\TU/FreeMono(0)/m/n/10 multivariable-calculus:integrals:def:riemann-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11640--11641
+Underfull \hbox (badness 10000) in paragraph at lines 11652--11653
 \TU/FreeMono(0)/m/n/10 integral \TU/FreeSerif(0)/m/n/10 (\TU/FreeSerif(0)/m/it/
 10 ch/multivariable-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11640--11641
+Underfull \hbox (badness 10000) in paragraph at lines 11652--11653
 \TU/FreeSerif(0)/m/it/10 calculus/integrals\TU/FreeSerif(0)/m/n/10 ),
  []
 
+[207
 
-Overfull \hbox (44.65839pt too wide) in paragraph at lines 11642--11643
+]
+Overfull \hbox (44.65839pt too wide) in paragraph at lines 11654--11655
 []\TU/FreeSans(0)/m/n/14.4 multivariable-calculus:integrals:def:riemann-
  []
 
 
-Overfull \hbox (40.1225pt too wide) in paragraph at lines 11643--11644
+Overfull \hbox (40.1225pt too wide) in paragraph at lines 11655--11656
 []\TU/FreeMono(0)/m/n/10 multivariable-calculus:integrals:def:riemann-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11643--11644
+Underfull \hbox (badness 10000) in paragraph at lines 11655--11656
 \TU/FreeMono(0)/m/n/10 sum \TU/FreeSerif(0)/m/n/10 (\TU/FreeSerif(0)/m/it/10 ch
 /multivariable-calculus/integrals\TU/FreeSerif(0)/m/n/10 ),
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11648--11649
-[]\TU/FreeSans(0)/m/n/14.4 thm:infinitesimal-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11648--11649
-\TU/FreeSans(0)/m/n/14.4 calculus:continuous-
- []
-
-
-LaTeX Warning: Reference `ch/infinitesimal_calculus/analysis:thm:infinitesimal-
-calculus:continuous-fun:thms:comparison' on page 206 undefined on input line 11
-649.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11649--11650
-[]\TU/FreeMono(0)/m/n/10 thm:infinitesimal-calculus:continuous-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11649--11650
-\TU/FreeMono(0)/m/n/10 fun:thms:comparison
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11651--11652
-[]\TU/FreeSans(0)/m/n/14.4 thm:infinitesimal-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11651--11652
-\TU/FreeSans(0)/m/n/14.4 calculus:continuous-
- []
-
-
-LaTeX Warning: Reference `ch/infinitesimal_calculus/analysis:thm:infinitesimal-
-calculus:continuous-fun:thms:intermediate' on page 206 undefined on input line 
-11652.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11652--11653
-[]\TU/FreeMono(0)/m/n/10 thm:infinitesimal-calculus:continuous-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11652--11653
-\TU/FreeMono(0)/m/n/10 fun:thms:intermediate
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11654--11655
-[]\TU/FreeSans(0)/m/n/14.4 thm:infinitesimal-
- []
-
-
-LaTeX Warning: Reference `ch/infinitesimal_calculus/analysis:thm:infinitesimal-
-calculus:continuous-fun:thms:sign' on page 206 undefined on input line 11655.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11655--11656
-[]\TU/FreeMono(0)/m/n/10 thm:infinitesimal-calculus:continuous-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11655--11656
-\TU/FreeMono(0)/m/n/10 fun:thms:sign
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11657--11658
-[]\TU/FreeSans(0)/m/n/14.4 thm:infinitesimal-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11657--11658
-\TU/FreeSans(0)/m/n/14.4 calculus:continuous-
- []
-
-
-LaTeX Warning: Reference `ch/infinitesimal_calculus/analysis:thm:infinitesimal-
-calculus:continuous-fun:thms:weierstrass' on page 206 undefined on input line 1
-1658.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11658--11659
-[]\TU/FreeMono(0)/m/n/10 thm:infinitesimal-calculus:continuous-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11658--11659
-\TU/FreeMono(0)/m/n/10 fun:thms:weierstrass
  []
 
 
@@ -2920,8 +2829,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 11660--11661
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 11660--11661
+\TU/FreeSans(0)/m/n/14.4 calculus:continuous-
+ []
+
+
 LaTeX Warning: Reference `ch/infinitesimal_calculus/analysis:thm:infinitesimal-
-calculus:continuous-fun:thms:zeros' on page 206 undefined on input line 11661.
+calculus:continuous-fun:thms:comparison' on page 208 undefined on input line 11
+661.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 11661--11662
@@ -2930,7 +2845,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 11661--11662
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 11661--11662
-\TU/FreeMono(0)/m/n/10 fun:thms:zeros
+\TU/FreeMono(0)/m/n/10 fun:thms:comparison
  []
 
 
@@ -2939,13 +2854,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 11663--11664
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 11663--11664
+\TU/FreeSans(0)/m/n/14.4 calculus:continuous-
+ []
+
+
+LaTeX Warning: Reference `ch/infinitesimal_calculus/analysis:thm:infinitesimal-
+calculus:continuous-fun:thms:intermediate' on page 208 undefined on input line 
+11664.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 11664--11665
-[]\TU/FreeMono(0)/m/n/10 thm:infinitesimal-
+[]\TU/FreeMono(0)/m/n/10 thm:infinitesimal-calculus:continuous-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 11664--11665
-\TU/FreeMono(0)/m/n/10 calculus:derivatives:taylor
+\TU/FreeMono(0)/m/n/10 fun:thms:intermediate
  []
 
 
@@ -2954,13 +2879,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 11666--11667
  []
 
 
+LaTeX Warning: Reference `ch/infinitesimal_calculus/analysis:thm:infinitesimal-
+calculus:continuous-fun:thms:sign' on page 208 undefined on input line 11667.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 11667--11668
-[]\TU/FreeMono(0)/m/n/10 thm:infinitesimal-
+[]\TU/FreeMono(0)/m/n/10 thm:infinitesimal-calculus:continuous-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 11667--11668
-\TU/FreeMono(0)/m/n/10 calculus:derivatives:thm:cauchy
+\TU/FreeMono(0)/m/n/10 fun:thms:sign
  []
 
 
@@ -2969,13 +2898,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 11669--11670
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 11669--11670
+\TU/FreeSans(0)/m/n/14.4 calculus:continuous-
+ []
+
+
+LaTeX Warning: Reference `ch/infinitesimal_calculus/analysis:thm:infinitesimal-
+calculus:continuous-fun:thms:weierstrass' on page 208 undefined on input line 1
+1670.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 11670--11671
-[]\TU/FreeMono(0)/m/n/10 thm:infinitesimal-
+[]\TU/FreeMono(0)/m/n/10 thm:infinitesimal-calculus:continuous-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 11670--11671
-\TU/FreeMono(0)/m/n/10 calculus:derivatives:thm:fermat
+\TU/FreeMono(0)/m/n/10 fun:thms:weierstrass
  []
 
 
@@ -2984,13 +2923,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 11672--11673
  []
 
 
+LaTeX Warning: Reference `ch/infinitesimal_calculus/analysis:thm:infinitesimal-
+calculus:continuous-fun:thms:zeros' on page 208 undefined on input line 11673.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 11673--11674
-[]\TU/FreeMono(0)/m/n/10 thm:infinitesimal-
+[]\TU/FreeMono(0)/m/n/10 thm:infinitesimal-calculus:continuous-
  []
 
 
-Overfull \hbox (2.1225pt too wide) in paragraph at lines 11673--11674
-\TU/FreeMono(0)/m/n/10 calculus:derivatives:thm:hopital
+Underfull \hbox (badness 10000) in paragraph at lines 11673--11674
+\TU/FreeMono(0)/m/n/10 fun:thms:zeros
  []
 
 
@@ -3004,8 +2947,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 11676--11677
  []
 
 
-Overfull \hbox (8.1225pt too wide) in paragraph at lines 11676--11677
-\TU/FreeMono(0)/m/n/10 calculus:derivatives:thm:lagrange
+Underfull \hbox (badness 10000) in paragraph at lines 11676--11677
+\TU/FreeMono(0)/m/n/10 calculus:derivatives:taylor
  []
 
 
@@ -3020,13 +2963,73 @@ Underfull \hbox (badness 10000) in paragraph at lines 11679--11680
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 11679--11680
+\TU/FreeMono(0)/m/n/10 calculus:derivatives:thm:cauchy
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11681--11682
+[]\TU/FreeSans(0)/m/n/14.4 thm:infinitesimal-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11682--11683
+[]\TU/FreeMono(0)/m/n/10 thm:infinitesimal-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11682--11683
+\TU/FreeMono(0)/m/n/10 calculus:derivatives:thm:fermat
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11684--11685
+[]\TU/FreeSans(0)/m/n/14.4 thm:infinitesimal-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11685--11686
+[]\TU/FreeMono(0)/m/n/10 thm:infinitesimal-
+ []
+
+
+Overfull \hbox (2.1225pt too wide) in paragraph at lines 11685--11686
+\TU/FreeMono(0)/m/n/10 calculus:derivatives:thm:hopital
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11687--11688
+[]\TU/FreeSans(0)/m/n/14.4 thm:infinitesimal-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11688--11689
+[]\TU/FreeMono(0)/m/n/10 thm:infinitesimal-
+ []
+
+
+Overfull \hbox (8.1225pt too wide) in paragraph at lines 11688--11689
+\TU/FreeMono(0)/m/n/10 calculus:derivatives:thm:lagrange
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11690--11691
+[]\TU/FreeSans(0)/m/n/14.4 thm:infinitesimal-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11691--11692
+[]\TU/FreeMono(0)/m/n/10 thm:infinitesimal-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11691--11692
 \TU/FreeMono(0)/m/n/10 calculus:derivatives:thm:rolle
  []
 
-LaTeX Info: Redefining \rmfamily on input line 11680.
-LaTeX Info: Redefining \sffamily on input line 11680.
-LaTeX Info: Redefining \ttfamily on input line 11680.
-[206] (./book.ind)
+LaTeX Info: Redefining \rmfamily on input line 11692.
+LaTeX Info: Redefining \sffamily on input line 11692.
+LaTeX Info: Redefining \ttfamily on input line 11692.
+[208] (./book.ind)
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -3061,30 +3064,33 @@ braces):
 >  {italian/babelname}  =>  {italian}
 >  {italian/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {italian/Localnumeral}  =>  {polyglossia@C@localnumeral}.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 11684.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 11684.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 11696.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 11696.
  (./book.aux
 LaTeX Info: Redefining \rmfamily on input line 20.
 LaTeX Info: Redefining \sffamily on input line 20.
 LaTeX Info: Redefining \ttfamily on input line 20.
 )
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 11684.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 11684
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 11696.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 11696
 .
 Package rerunfilecheck Info: File `book.out' has not changed.
-(rerunfilecheck)             Checksum: 107DD698EBD756367CFC194428B39487;27159.
+(rerunfilecheck)             Checksum: 06C73C315F36E32F5B1C573916E46ED4;27158.
 
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 43094 strings out of 481789
- 995051 string characters out of 5937152
+ 43093 strings out of 481789
+ 994960 string characters out of 5937152
  1671687 words of memory out of 5000000
- 59234 multiletter control sequences out of 15000+600000
+ 59233 multiletter control sequences out of 15000+600000
  541302 words of font info for 137 fonts, out of 8000000 for 9000
  15 hyphenation exceptions out of 8191
  71i,27n,109p,1760b,2278s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on book.pdf (212 pages).
+Output written on book.pdf (214 pages).

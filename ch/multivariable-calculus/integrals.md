@@ -27,16 +27,24 @@ $$\int_{\mathbf{x} \in \Omega} f(\mathbf{x}) d \mathbf{x} := \lim_{\Delta \Omega
 
 (multivariable-calculus:integrals:geom)=
 ### Interpretazione geometrica
+**todo** *...volume, massa, totale carica... corrisponenti rispettivamente a funzioni di densità $1$, densità di massa, densità di carica*
 
 (multivariable-calculus:integrals:properties)=
 ### Proprietà dell'integrale definito
+**todo** *additività sui domini di integrazione, linearità sulla funzione integranda; ricordarsi che è una somma; fare riferimento alle [proprietà dell'integrale di funzioni a una variabile](infinitesimal-calculus:integrals:def:definite:prop)*
 
 (multivariable-calculus:integrals:rules)=
 ## Regole di integrazione
-...
+
+Il calcolo di un integrale di una funzione di più variabili su un dominio $m$-dimensionale può essere svolto con il calcolo di $m$ integrali di funzioni di una variabile.
+
+**todo** ...
+
 Il valore di un integrale su un dominio multi-dimensionale è indipendente dal metodo/ordine di integrazione.
 
-*esempio nel caso di due variabili, con partizione dell'insieme in elementi $\Delta x_i \Delta y_j$ con dominio semplice*
+**Osservazione.** Il metodo/ordine di integrazione può quindi essere scelto volta per volta in base a criteri di convenienza, con l'obiettivo di fare il numero minore di calcoli, i calcoli più semplici possibile. Anche qualora non si facesse la scelta "migliore", l'indipendenza del valore dal metodo di integrazione ci assicura di ottenere il risultato desiderato, al netto di errori, al costo/punizione di fare qualche calcolo in più o più complicato.
+
+*esempio nel caso di due variabili, con partizione dell'insieme in elementi $\Delta x_i \Delta y_j$ con* **dominio semplice** **todo** *def di dominio semplice*
 
 $$\begin{aligned}
   \sigma 
