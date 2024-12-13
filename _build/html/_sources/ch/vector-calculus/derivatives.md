@@ -34,6 +34,7 @@ $$\nabla f(P) = \hat{x} \, \partial_x f(P) + \hat{y} \, \partial_y f(P) + \hat{z
 **Definizione.** **todo**
 
 **Proprietà.** Il gradiente di un campo scalare indica la direzione **locale** di massima crescita del campo.
+
 ```{dropdown} Dimostrazione.
 La derivata direzionale della funzione $f$ nel punto $P$ in direzione $\hat{t}$ è definita come il prodotto scalare tra il versore $\hat{t}$ e il gradiente della funzione calcolato nel punto $P$
 

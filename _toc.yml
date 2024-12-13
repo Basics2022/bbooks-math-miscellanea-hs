@@ -97,6 +97,7 @@ parts:
     sections:
     - file: ch/vector-calculus/derivatives
     - file: ch/vector-calculus/integrals
+    - file: ch/vector-calculus/problems
 - caption: Statistica
   numbered: True
   chapters:

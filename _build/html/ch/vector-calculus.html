@@ -65,6 +65,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/vector-calculus';</script>
     <link rel="shortcut icon" href="../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../genindex.html" />
@@ -260,6 +262,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">29. Introduzione al calcolo vettoriale su spazi euclidei</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="vector-calculus/derivatives.html">29.1. Operatori differenziali in spazi euclidei</a></li>
 <li class="toctree-l2"><a class="reference internal" href="vector-calculus/integrals.html">29.2. Integrali in spazi euclidei</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vector-calculus/problems.html">29.3. Problemi</a></li>
 </ul>
 </li>
 </ul>
@@ -486,6 +489,12 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="introduzione-al-calcolo-vettoriale-su-spazi-euclidei">
 <span id="vector-calculus"></span><h1><span class="section-number">29. </span>Introduzione al calcolo vettoriale su spazi euclidei<a class="headerlink" href="#introduzione-al-calcolo-vettoriale-su-spazi-euclidei" title="Permalink to this heading">#</a></h1>
+<p>Questo capitolo è un’introduzione al calcolo vettoriale in spazi euclidei, estendendo gli strumenti del calcolo alle funzioni (scalari o vettoriali) definite in uno spazio euclideo, limitandosi al caso di <span class="math notranslate nohighlight">\(E^2\)</span> ed <span class="math notranslate nohighlight">\(E^3\)</span>.</p>
+<p>Viene definito <strong>campo scalare</strong> una funzione <span class="math notranslate nohighlight">\(f(P)\)</span> a valori reale definita sui punti <span class="math notranslate nohighlight">\(P\)</span> di uno spazio euclideo <span class="math notranslate nohighlight">\(E^n\)</span>, <span class="math notranslate nohighlight">\(f: E^n \rightarrow \mathbb{R}\)</span>.
+Viene definito <strong>campo vettoriale</strong> una funzione <span class="math notranslate nohighlight">\(\vec{f}(P)\)</span> a valori vettoriali definita sui punti <span class="math notranslate nohighlight">\(P\)</span> di uno spazio euclideo <span class="math notranslate nohighlight">\(E^n\)</span>, <span class="math notranslate nohighlight">\(\vec{f}: E^n \rightarrow V\)</span>.
+<strong>todo</strong> <em>esistono anche i tensori…lo diciamo?</em></p>
+<p>Il calcolo vettoriale è lo strumento naturale per la descrizione di problemi di geometria e fisica, garantendo l’invarianza del problema affrontato dalla descrizione adottata.</p>
+<p>Una volta introdotta una parametrizzazione dello spazio con un insieme di coordinate <span class="math notranslate nohighlight">\(P(q^1,...,q^n)\)</span>, il calcolo vettoriale può essere ricondotto al calcolo multi-variabile.</p>
 <p>Integrali:</p>
 <ul class="simple">
 <li><p>calcolo di lunghezze, aree e volumi</p></li>
