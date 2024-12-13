@@ -9,7 +9,13 @@
 
 (vector-calculus:problems:integrals:geometery)=
 ### Geometria
-```{exercise} Volumi e superfici di solidi
+```{exercise} Superfici piane - 2D
+```
+
+```{exercise} Curve nello spazio
+```
+
+```{exercise} Volumi e superfici di solidi - 3D
 1. Calcolare il volume e la superficie di una **sfera** di raggio $R$. *Hint: usare le coordinate sferiche. Come esercizio sugli integrali, ripetere l'esercizio usando le coordinate cilindriche*
 
 2. Calcolare il volume e la superficie laterale di un **cilindro** con base circolare di raggio $R$ e di altezza $H$.
@@ -24,7 +30,14 @@
 
 7. Generalizzare i risultati trovati in precedenza a 1. piramidi con un poligono regolare di $n$ lati come base, 2. base qualsiasi.
 ```
-**todo** *problemi di minimo e massimo*
+
+```{exercise} Problemi di minimo e massimo
+```
 
 ### Fisica
+```{exercise} Proprietà inerziali - massa, centro di massa, momenti
+```
+
+```{exercise} Flussi e circuitazioni
+```
 
