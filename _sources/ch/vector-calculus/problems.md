@@ -38,6 +38,6 @@
 ```{exercise} Proprietà inerziali - massa, centro di massa, momenti
 ```
 
-```{exercise} Flussi e circuitazioni
+```{exercise} Flusso e circuitazione
 ```
 
