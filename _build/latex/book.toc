@@ -226,109 +226,113 @@
 \contentsline {subsection}{\numberline {24.6.1}Calcolo dei limiti con sostituzione degli infinitesimi o degli infiniti}{135}{subsection.24.6.1}%
 \contentsline {section}{\numberline {24.7}Calcolo dei limiti}{136}{section.24.7}%
 \contentsline {section}{\numberline {24.8}Metodo di bisezione}{136}{section.24.8}%
-\contentsline {section}{\numberline {24.9}Note e dimostrazioni}{136}{section.24.9}%
-\contentsline {subsection}{\numberline {24.9.1}Funzioni reali a variabile reale, \(f: \symbb {R} \rightarrow \symbb {R}\)}{136}{subsection.24.9.1}%
-\contentsline {subsection}{\numberline {24.9.2}Limiti}{136}{subsection.24.9.2}%
-\contentsline {subsection}{\numberline {24.9.3}Funzioni continue, \(f \in C^0\)}{136}{subsection.24.9.3}%
-\contentsline {subsection}{\numberline {24.9.4}Operazioni e teoremi sui limiti}{136}{subsection.24.9.4}%
-\contentsline {subsection}{\numberline {24.9.5}Contronto di infiniti e infinitesimi}{138}{subsection.24.9.5}%
-\contentsline {subsection}{\numberline {24.9.6}Limiti fondamentali}{138}{subsection.24.9.6}%
-\contentsline {chapter}{\numberline {25}Derivate}{141}{chapter.25}%
-\contentsline {section}{\numberline {25.1}Definizione}{141}{section.25.1}%
-\contentsline {section}{\numberline {25.2}Regole di derivazione}{141}{section.25.2}%
-\contentsline {section}{\numberline {25.3}Teoremi}{142}{section.25.3}%
-\contentsline {subsection}{\numberline {25.3.1}Teorema di Fermat}{142}{subsection.25.3.1}%
-\contentsline {subsection}{\numberline {25.3.2}Teorema di Rolle}{142}{subsection.25.3.2}%
-\contentsline {subsection}{\numberline {25.3.3}Teorema di Cauchy}{142}{subsection.25.3.3}%
-\contentsline {subsection}{\numberline {25.3.4}Teorema di Lagrange}{143}{subsection.25.3.4}%
-\contentsline {subsection}{\numberline {25.3.5}Teorema di de l’Hopital}{143}{subsection.25.3.5}%
-\contentsline {section}{\numberline {25.4}Derivate fondamentali}{143}{section.25.4}%
-\contentsline {section}{\numberline {25.5}Derivate di ordine superiore}{144}{section.25.5}%
-\contentsline {section}{\numberline {25.6}Serie di Taylor e MacLaurin}{144}{section.25.6}%
-\contentsline {subsection}{\numberline {25.6.1}Esempi}{145}{subsection.25.6.1}%
-\contentsline {section}{\numberline {25.7}Applicazioni}{145}{section.25.7}%
-\contentsline {subsection}{\numberline {25.7.1}Approssimazioni locali}{145}{subsection.25.7.1}%
-\contentsline {subsection}{\numberline {25.7.2}Studio di funzione}{145}{subsection.25.7.2}%
-\contentsline {subsection}{\numberline {25.7.3}Ottimizzazione}{145}{subsection.25.7.3}%
-\contentsline {subsection}{\numberline {25.7.4}Metodo di Netwon}{145}{subsection.25.7.4}%
-\contentsline {section}{\numberline {25.8}Problemi}{145}{section.25.8}%
-\contentsline {subsection}{\numberline {25.8.1}Calcolo derivate}{145}{subsection.25.8.1}%
-\contentsline {subsection}{\numberline {25.8.2}Serie di Taylor}{148}{subsection.25.8.2}%
-\contentsline {subsection}{\numberline {25.8.3}Problemi di geometria}{148}{subsection.25.8.3}%
-\contentsline {subsection}{\numberline {25.8.4}Studio di funzione: massimi, minimi e flessi; concavità}{148}{subsection.25.8.4}%
-\contentsline {subsection}{\numberline {25.8.5}Problemi di ottimizzazione}{149}{subsection.25.8.5}%
-\contentsline {subsection}{\numberline {25.8.6}Metodo di Newton}{150}{subsection.25.8.6}%
-\contentsline {section}{\numberline {25.9}Note e dimostrazioni}{150}{section.25.9}%
-\contentsline {subsection}{\numberline {25.9.1}Definizione}{150}{subsection.25.9.1}%
-\contentsline {subsection}{\numberline {25.9.2}Regole di derivazione}{150}{subsection.25.9.2}%
-\contentsline {subsection}{\numberline {25.9.3}Teoremi}{152}{subsection.25.9.3}%
-\contentsline {subsection}{\numberline {25.9.4}Derivate fondamentali}{153}{subsection.25.9.4}%
-\contentsline {subsection}{\numberline {25.9.5}Derivate di ordine superiore}{154}{subsection.25.9.5}%
-\contentsline {subsection}{\numberline {25.9.6}Serie di Taylor e MacLaurin}{154}{subsection.25.9.6}%
-\contentsline {chapter}{\numberline {26}Integrali}{157}{chapter.26}%
-\contentsline {section}{\numberline {26.1}Definizioni}{157}{section.26.1}%
-\contentsline {subsection}{\numberline {26.1.1}Interpretazione geometrica}{158}{subsection.26.1.1}%
-\contentsline {subsection}{\numberline {26.1.2}Integrale definito}{158}{subsection.26.1.2}%
-\contentsline {subsubsection}{Proprietà dell’integrale definito}{158}{subsubsection*.68}%
-\contentsline {subsection}{\numberline {26.1.3}Integrale indefinito}{158}{subsection.26.1.3}%
-\contentsline {section}{\numberline {26.2}Teoremi}{159}{section.26.2}%
-\contentsline {subsection}{\numberline {26.2.1}Teorema della media}{159}{subsection.26.2.1}%
-\contentsline {subsection}{\numberline {26.2.2}Teorema fondamentale del calcolo infinitesimale}{159}{subsection.26.2.2}%
-\contentsline {subsection}{\numberline {26.2.3}Derivata su dominio dipendente dalla variabile indipendente}{160}{subsection.26.2.3}%
-\contentsline {section}{\numberline {26.3}Integrali fondamentali}{160}{section.26.3}%
-\contentsline {section}{\numberline {26.4}Regole di integrazione}{161}{section.26.4}%
-\contentsline {subsection}{\numberline {26.4.1}Integrazione per parti}{161}{subsection.26.4.1}%
-\contentsline {subsection}{\numberline {26.4.2}Frazioni parziali}{161}{subsection.26.4.2}%
-\contentsline {subsection}{\numberline {26.4.3}Integrazione con sostituzione}{161}{subsection.26.4.3}%
-\contentsline {section}{\numberline {26.5}Tavola degli integrali indefiniti più comuni}{162}{section.26.5}%
-\contentsline {section}{\numberline {26.6}Problemi}{163}{section.26.6}%
-\contentsline {subsection}{\numberline {26.6.1}Calcolo integrali indefiniti}{163}{subsection.26.6.1}%
-\contentsline {subsection}{\numberline {26.6.2}Integrali definiti}{164}{subsection.26.6.2}%
-\contentsline {subsubsection}{Integrali impropri}{164}{subsubsection*.71}%
-\contentsline {subsection}{\numberline {26.6.3}Problemi di geometria}{165}{subsection.26.6.3}%
-\contentsline {subsubsection}{Area di superfici e lunghezza di curve}{165}{subsubsection*.74}%
-\contentsline {subsubsection}{Volumi e superficie di solidi di rotazione}{166}{subsubsection*.78}%
-\contentsline {chapter}{\numberline {27}Equazioni differenziali ordinarie}{167}{chapter.27}%
-\contentsline {section}{\numberline {27.1}Prime definizioni}{168}{section.27.1}%
-\contentsline {section}{\numberline {27.2}Classificazione, esempi e tecniche risolutive}{168}{section.27.2}%
-\contentsline {subsection}{\numberline {27.2.1}Equazioni lineari a coefficienti costanti}{168}{subsection.27.2.1}%
-\contentsline {subsubsection}{Definizione}{168}{subsubsection*.87}%
-\contentsline {subsubsection}{Esempi}{168}{subsubsection*.88}%
-\contentsline {subsubsection}{Soluzione generale}{171}{subsubsection*.89}%
-\contentsline {paragraph}{Soluzione dell’equazione omogenea}{171}{paragraph*.90}%
-\contentsline {paragraph}{Soluzione particolare dell’equazione completa}{173}{paragraph*.91}%
-\contentsline {subsubsection}{Soluzione degli esempi}{173}{subsubsection*.92}%
-\contentsline {subsection}{\numberline {27.2.2}Equazioni differenziali a variabili separabili: tecnica di soluzione di separazione delle variabili}{177}{subsection.27.2.2}%
-\contentsline {subsubsection}{Esempi}{177}{subsubsection*.93}%
-\contentsline {chapter}{\numberline {28}Calcolo infinitesimale \sphinxhyphen {} Problemi}{179}{chapter.28}%
-\contentsline {chapter}{\numberline {29}Introduzione al calcolo multi\sphinxhyphen {}variabile}{181}{chapter.29}%
-\contentsline {section}{\numberline {29.1}Limite di una funzione di più variabili}{182}{section.29.1}%
-\contentsline {subsection}{\numberline {29.1.1}Funzioni continue}{182}{subsection.29.1.1}%
-\contentsline {subsubsection}{Definizione}{182}{subsubsection*.94}%
-\contentsline {subsubsection}{Discontinuità}{183}{subsubsection*.95}%
-\contentsline {section}{\numberline {29.2}Derivate di funzioni di più variabili}{183}{section.29.2}%
-\contentsline {subsection}{\numberline {29.2.1}Derivate parziali}{183}{subsection.29.2.1}%
-\contentsline {subsection}{\numberline {29.2.2}Incremento di una funzione}{184}{subsection.29.2.2}%
-\contentsline {subsection}{\numberline {29.2.3}Differenziale}{184}{subsection.29.2.3}%
-\contentsline {section}{\numberline {29.3}Integrali su domini multi\sphinxhyphen {}dimensionali}{185}{section.29.3}%
-\contentsline {subsection}{\numberline {29.3.1}Definizioni}{185}{subsection.29.3.1}%
-\contentsline {subsubsection}{Interpretazione geometrica}{186}{subsubsection*.96}%
-\contentsline {subsubsection}{Proprietà dell’integrale definito}{186}{subsubsection*.97}%
-\contentsline {subsection}{\numberline {29.3.2}Regole di integrazione}{186}{subsection.29.3.2}%
-\contentsline {chapter}{\numberline {30}Introduzione al calcolo vettoriale su spazi euclidei}{189}{chapter.30}%
-\contentsline {section}{\numberline {30.1}Operatori differenziali in spazi euclidei}{190}{section.30.1}%
-\contentsline {subsection}{\numberline {30.1.1}Derivata direzionale}{190}{subsection.30.1.1}%
-\contentsline {subsection}{\numberline {30.1.2}Gradiente}{190}{subsection.30.1.2}%
-\contentsline {subsection}{\numberline {30.1.3}Divergenza}{191}{subsection.30.1.3}%
-\contentsline {subsection}{\numberline {30.1.4}Rotore}{192}{subsection.30.1.4}%
-\contentsline {section}{\numberline {30.2}Integrali in spazi euclidei}{192}{section.30.2}%
-\contentsline {section}{\numberline {30.3}Problemi}{192}{section.30.3}%
-\contentsline {subsection}{\numberline {30.3.1}Operatori differenziali}{192}{subsection.30.3.1}%
-\contentsline {subsection}{\numberline {30.3.2}Integrali}{192}{subsection.30.3.2}%
-\contentsline {subsubsection}{Geometria}{193}{subsubsection*.98}%
-\contentsline {subsubsection}{Fisica}{193}{subsubsection*.103}%
-\contentsline {part}{VII\hspace {1em}Statistica}{195}{part.7}%
-\contentsline {chapter}{\numberline {31}Introduzione alla statistica}{199}{chapter.31}%
-\contentsline {part}{VIII\hspace {1em}Indice}{201}{part.8}%
-\contentsline {chapter}{\numberline {32}Indice}{203}{chapter.32}%
-\contentsline {chapter}{Proof Index}{205}{section*.106}%
+\contentsline {section}{\numberline {24.9}Problemi}{136}{section.24.9}%
+\contentsline {subsection}{\numberline {24.9.1}Limiti}{136}{subsection.24.9.1}%
+\contentsline {subsection}{\numberline {24.9.2}Studio di funzione: dominio, continuità e limiti}{139}{subsection.24.9.2}%
+\contentsline {subsection}{\numberline {24.9.3}Metodo di bisezione}{141}{subsection.24.9.3}%
+\contentsline {section}{\numberline {24.10}Note e dimostrazioni}{141}{section.24.10}%
+\contentsline {subsection}{\numberline {24.10.1}Funzioni reali a variabile reale, \(f: \symbb {R} \rightarrow \symbb {R}\)}{141}{subsection.24.10.1}%
+\contentsline {subsection}{\numberline {24.10.2}Limiti}{141}{subsection.24.10.2}%
+\contentsline {subsection}{\numberline {24.10.3}Funzioni continue, \(f \in C^0\)}{141}{subsection.24.10.3}%
+\contentsline {subsection}{\numberline {24.10.4}Operazioni e teoremi sui limiti}{141}{subsection.24.10.4}%
+\contentsline {subsection}{\numberline {24.10.5}Contronto di infiniti e infinitesimi}{143}{subsection.24.10.5}%
+\contentsline {subsection}{\numberline {24.10.6}Limiti fondamentali}{143}{subsection.24.10.6}%
+\contentsline {chapter}{\numberline {25}Derivate}{145}{chapter.25}%
+\contentsline {section}{\numberline {25.1}Definizione}{145}{section.25.1}%
+\contentsline {section}{\numberline {25.2}Regole di derivazione}{145}{section.25.2}%
+\contentsline {section}{\numberline {25.3}Teoremi}{146}{section.25.3}%
+\contentsline {subsection}{\numberline {25.3.1}Teorema di Fermat}{146}{subsection.25.3.1}%
+\contentsline {subsection}{\numberline {25.3.2}Teorema di Rolle}{146}{subsection.25.3.2}%
+\contentsline {subsection}{\numberline {25.3.3}Teorema di Cauchy}{146}{subsection.25.3.3}%
+\contentsline {subsection}{\numberline {25.3.4}Teorema di Lagrange}{147}{subsection.25.3.4}%
+\contentsline {subsection}{\numberline {25.3.5}Teorema di de l’Hopital}{147}{subsection.25.3.5}%
+\contentsline {section}{\numberline {25.4}Derivate fondamentali}{147}{section.25.4}%
+\contentsline {section}{\numberline {25.5}Derivate di ordine superiore}{148}{section.25.5}%
+\contentsline {section}{\numberline {25.6}Serie di Taylor e MacLaurin}{148}{section.25.6}%
+\contentsline {subsection}{\numberline {25.6.1}Esempi}{149}{subsection.25.6.1}%
+\contentsline {section}{\numberline {25.7}Applicazioni}{149}{section.25.7}%
+\contentsline {subsection}{\numberline {25.7.1}Approssimazioni locali}{149}{subsection.25.7.1}%
+\contentsline {subsection}{\numberline {25.7.2}Studio di funzione}{149}{subsection.25.7.2}%
+\contentsline {subsection}{\numberline {25.7.3}Ottimizzazione}{149}{subsection.25.7.3}%
+\contentsline {subsection}{\numberline {25.7.4}Metodo di Netwon}{149}{subsection.25.7.4}%
+\contentsline {section}{\numberline {25.8}Problemi}{149}{section.25.8}%
+\contentsline {subsection}{\numberline {25.8.1}Calcolo derivate}{149}{subsection.25.8.1}%
+\contentsline {subsection}{\numberline {25.8.2}Serie di Taylor}{152}{subsection.25.8.2}%
+\contentsline {subsection}{\numberline {25.8.3}Problemi di geometria}{152}{subsection.25.8.3}%
+\contentsline {subsection}{\numberline {25.8.4}Studio di funzione: massimi, minimi e flessi; concavità}{152}{subsection.25.8.4}%
+\contentsline {subsection}{\numberline {25.8.5}Problemi di ottimizzazione}{153}{subsection.25.8.5}%
+\contentsline {subsection}{\numberline {25.8.6}Metodo di Newton}{154}{subsection.25.8.6}%
+\contentsline {section}{\numberline {25.9}Note e dimostrazioni}{154}{section.25.9}%
+\contentsline {subsection}{\numberline {25.9.1}Definizione}{154}{subsection.25.9.1}%
+\contentsline {subsection}{\numberline {25.9.2}Regole di derivazione}{154}{subsection.25.9.2}%
+\contentsline {subsection}{\numberline {25.9.3}Teoremi}{156}{subsection.25.9.3}%
+\contentsline {subsection}{\numberline {25.9.4}Derivate fondamentali}{157}{subsection.25.9.4}%
+\contentsline {subsection}{\numberline {25.9.5}Derivate di ordine superiore}{158}{subsection.25.9.5}%
+\contentsline {subsection}{\numberline {25.9.6}Serie di Taylor e MacLaurin}{158}{subsection.25.9.6}%
+\contentsline {chapter}{\numberline {26}Integrali}{161}{chapter.26}%
+\contentsline {section}{\numberline {26.1}Definizioni}{161}{section.26.1}%
+\contentsline {subsection}{\numberline {26.1.1}Interpretazione geometrica}{162}{subsection.26.1.1}%
+\contentsline {subsection}{\numberline {26.1.2}Integrale definito}{162}{subsection.26.1.2}%
+\contentsline {subsubsection}{Proprietà dell’integrale definito}{162}{subsubsection*.79}%
+\contentsline {subsection}{\numberline {26.1.3}Integrale indefinito}{162}{subsection.26.1.3}%
+\contentsline {section}{\numberline {26.2}Teoremi}{163}{section.26.2}%
+\contentsline {subsection}{\numberline {26.2.1}Teorema della media}{163}{subsection.26.2.1}%
+\contentsline {subsection}{\numberline {26.2.2}Teorema fondamentale del calcolo infinitesimale}{163}{subsection.26.2.2}%
+\contentsline {subsection}{\numberline {26.2.3}Derivata su dominio dipendente dalla variabile indipendente}{164}{subsection.26.2.3}%
+\contentsline {section}{\numberline {26.3}Integrali fondamentali}{164}{section.26.3}%
+\contentsline {section}{\numberline {26.4}Regole di integrazione}{165}{section.26.4}%
+\contentsline {subsection}{\numberline {26.4.1}Integrazione per parti}{165}{subsection.26.4.1}%
+\contentsline {subsection}{\numberline {26.4.2}Frazioni parziali}{165}{subsection.26.4.2}%
+\contentsline {subsection}{\numberline {26.4.3}Integrazione con sostituzione}{165}{subsection.26.4.3}%
+\contentsline {section}{\numberline {26.5}Tavola degli integrali indefiniti più comuni}{166}{section.26.5}%
+\contentsline {section}{\numberline {26.6}Problemi}{167}{section.26.6}%
+\contentsline {subsection}{\numberline {26.6.1}Calcolo integrali indefiniti}{167}{subsection.26.6.1}%
+\contentsline {subsection}{\numberline {26.6.2}Integrali definiti}{168}{subsection.26.6.2}%
+\contentsline {subsubsection}{Integrali impropri}{168}{subsubsection*.82}%
+\contentsline {subsection}{\numberline {26.6.3}Problemi di geometria}{169}{subsection.26.6.3}%
+\contentsline {subsubsection}{Area di superfici e lunghezza di curve}{169}{subsubsection*.85}%
+\contentsline {subsubsection}{Volumi e superficie di solidi di rotazione}{170}{subsubsection*.89}%
+\contentsline {chapter}{\numberline {27}Equazioni differenziali ordinarie}{171}{chapter.27}%
+\contentsline {section}{\numberline {27.1}Prime definizioni}{172}{section.27.1}%
+\contentsline {section}{\numberline {27.2}Classificazione, esempi e tecniche risolutive}{172}{section.27.2}%
+\contentsline {subsection}{\numberline {27.2.1}Equazioni lineari a coefficienti costanti}{172}{subsection.27.2.1}%
+\contentsline {subsubsection}{Definizione}{172}{subsubsection*.98}%
+\contentsline {subsubsection}{Esempi}{172}{subsubsection*.99}%
+\contentsline {subsubsection}{Soluzione generale}{175}{subsubsection*.100}%
+\contentsline {paragraph}{Soluzione dell’equazione omogenea}{175}{paragraph*.101}%
+\contentsline {paragraph}{Soluzione particolare dell’equazione completa}{177}{paragraph*.102}%
+\contentsline {subsubsection}{Soluzione degli esempi}{177}{subsubsection*.103}%
+\contentsline {subsection}{\numberline {27.2.2}Equazioni differenziali a variabili separabili: tecnica di soluzione di separazione delle variabili}{181}{subsection.27.2.2}%
+\contentsline {subsubsection}{Esempi}{181}{subsubsection*.104}%
+\contentsline {chapter}{\numberline {28}Calcolo infinitesimale \sphinxhyphen {} Problemi}{183}{chapter.28}%
+\contentsline {chapter}{\numberline {29}Introduzione al calcolo multi\sphinxhyphen {}variabile}{185}{chapter.29}%
+\contentsline {section}{\numberline {29.1}Limite di una funzione di più variabili}{186}{section.29.1}%
+\contentsline {subsection}{\numberline {29.1.1}Funzioni continue}{186}{subsection.29.1.1}%
+\contentsline {subsubsection}{Definizione}{186}{subsubsection*.105}%
+\contentsline {subsubsection}{Discontinuità}{187}{subsubsection*.106}%
+\contentsline {section}{\numberline {29.2}Derivate di funzioni di più variabili}{187}{section.29.2}%
+\contentsline {subsection}{\numberline {29.2.1}Derivate parziali}{187}{subsection.29.2.1}%
+\contentsline {subsection}{\numberline {29.2.2}Incremento di una funzione}{188}{subsection.29.2.2}%
+\contentsline {subsection}{\numberline {29.2.3}Differenziale}{188}{subsection.29.2.3}%
+\contentsline {section}{\numberline {29.3}Integrali su domini multi\sphinxhyphen {}dimensionali}{189}{section.29.3}%
+\contentsline {subsection}{\numberline {29.3.1}Definizioni}{189}{subsection.29.3.1}%
+\contentsline {subsubsection}{Interpretazione geometrica}{190}{subsubsection*.107}%
+\contentsline {subsubsection}{Proprietà dell’integrale definito}{190}{subsubsection*.108}%
+\contentsline {subsection}{\numberline {29.3.2}Regole di integrazione}{190}{subsection.29.3.2}%
+\contentsline {chapter}{\numberline {30}Introduzione al calcolo vettoriale su spazi euclidei}{193}{chapter.30}%
+\contentsline {section}{\numberline {30.1}Operatori differenziali in spazi euclidei}{194}{section.30.1}%
+\contentsline {subsection}{\numberline {30.1.1}Derivata direzionale}{194}{subsection.30.1.1}%
+\contentsline {subsection}{\numberline {30.1.2}Gradiente}{194}{subsection.30.1.2}%
+\contentsline {subsection}{\numberline {30.1.3}Divergenza}{195}{subsection.30.1.3}%
+\contentsline {subsection}{\numberline {30.1.4}Rotore}{196}{subsection.30.1.4}%
+\contentsline {section}{\numberline {30.2}Integrali in spazi euclidei}{196}{section.30.2}%
+\contentsline {section}{\numberline {30.3}Problemi}{196}{section.30.3}%
+\contentsline {subsection}{\numberline {30.3.1}Operatori differenziali}{196}{subsection.30.3.1}%
+\contentsline {subsection}{\numberline {30.3.2}Integrali}{196}{subsection.30.3.2}%
+\contentsline {subsubsection}{Geometria}{197}{subsubsection*.109}%
+\contentsline {subsubsection}{Fisica}{197}{subsubsection*.114}%
+\contentsline {part}{VII\hspace {1em}Statistica}{199}{part.7}%
+\contentsline {chapter}{\numberline {31}Introduzione alla statistica}{203}{chapter.31}%
+\contentsline {part}{VIII\hspace {1em}Indice}{205}{part.8}%
+\contentsline {chapter}{\numberline {32}Indice}{207}{chapter.32}%
+\contentsline {chapter}{Proof Index}{209}{section*.117}%
