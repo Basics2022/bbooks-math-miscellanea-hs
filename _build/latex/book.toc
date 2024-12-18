@@ -17,322 +17,356 @@
 \contentsline {subsection}{\numberline {2.4.1}Numeri naturali, \(\symbb {N}\)}{12}{subsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.4.2}Numeri interi, \(\symbb {Z}\)}{12}{subsection.2.4.2}%
 \contentsline {subsection}{\numberline {2.4.3}Numeri razionali, \(\symbb {Q}\)}{12}{subsection.2.4.3}%
-\contentsline {subsection}{\numberline {2.4.4}Numeri reali, \(\symbb {R}\)}{12}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.4}Numeri reali, \(\symbb {R}\)}{13}{subsection.2.4.4}%
 \contentsline {subsection}{\numberline {2.4.5}Numeri complessi, \(\symbb {C}\)}{13}{subsection.2.4.5}%
-\contentsline {chapter}{\numberline {3}Logica}{15}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Argomenti …}{15}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Identità}{15}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Contraddizione}{15}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Sillogismo}{15}{subsection.3.1.3}%
-\contentsline {part}{III\hspace {1em}Algebra}{17}{part.3}%
-\contentsline {chapter}{\numberline {4}Introduzione all’algebra}{19}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Algebra sui numeri reali}{21}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Operazioni}{21}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Potenze}{21}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Radice}{22}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}Logaritmo}{22}{subsection.5.1.3}%
-\contentsline {section}{\numberline {5.2}Polinomi}{22}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Frazioni algebriche}{22}{subsection.5.2.1}%
-\contentsline {section}{\numberline {5.3}Problemi con un’incognita}{23}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Equazioni}{23}{subsection.5.3.1}%
-\contentsline {subsubsection}{Equazioni di primo grado}{23}{subsubsection*.3}%
-\contentsline {subsubsection}{Equazioni di secondo grado}{24}{subsubsection*.4}%
-\contentsline {subsubsection}{Equazioni non lineari generali}{24}{subsubsection*.5}%
-\contentsline {subsection}{\numberline {5.3.2}Disequazioni}{24}{subsection.5.3.2}%
-\contentsline {section}{\numberline {5.4}Rappresentazione grafica di un’equazione con due incognite}{24}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Problemi con due o più incognite \sphinxhyphen {} sistemi di equazioni e disequazioni}{25}{section.5.5}%
-\contentsline {chapter}{\numberline {6}Algebra su \(\symbb {R}^n\)}{27}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Problemi}{27}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Forma generale}{27}{subsection.6.1.1}%
-\contentsline {section}{\numberline {6.2}Problemi}{28}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Sistemi lineari di equazioni}{28}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Sistemi lineari di disequazioni}{29}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Sistemi di equazioni e disequazioni}{30}{subsection.6.2.3}%
-\contentsline {subsection}{\numberline {6.2.4}Equazioni Quadratiche}{30}{subsection.6.2.4}%
-\contentsline {subsection}{\numberline {6.2.5}Disequazioni Quadratiche}{31}{subsection.6.2.5}%
-\contentsline {subsection}{\numberline {6.2.6}Problemi vari}{31}{subsection.6.2.6}%
-\contentsline {chapter}{\numberline {7}Algebra lineare}{35}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Introduzione}{35}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Sistemi lineari e formalismo matriciale}{35}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Matrici}{36}{section.7.3}%
-\contentsline {subsection}{\numberline {7.3.1}Inteprepretazione del contenuto di una matrice}{36}{subsection.7.3.1}%
-\contentsline {subsection}{\numberline {7.3.2}Operazioni}{36}{subsection.7.3.2}%
-\contentsline {subsection}{\numberline {7.3.3}Matrice come funzione lineare}{37}{subsection.7.3.3}%
-\contentsline {subsection}{\numberline {7.3.4}Immagine e nucleo}{37}{subsection.7.3.4}%
-\contentsline {subsection}{\numberline {7.3.5}Determinante}{37}{subsection.7.3.5}%
-\contentsline {section}{\numberline {7.4}Risoluzione di Sistemi}{38}{section.7.4}%
-\contentsline {subsection}{\numberline {7.4.1}Metodo di sostituzione}{38}{subsection.7.4.1}%
-\contentsline {subsection}{\numberline {7.4.2}Metodo di eliminazione di Gauss}{39}{subsection.7.4.2}%
-\contentsline {subsection}{\numberline {7.4.3}Metodo di Cramer}{40}{subsection.7.4.3}%
-\contentsline {section}{\numberline {7.5}Teorema di Rouché\sphinxhyphen {}Capelli}{40}{section.7.5}%
-\contentsline {subsection}{\numberline {7.5.1}Interpretazione geometrica}{40}{subsection.7.5.1}%
-\contentsline {section}{\numberline {7.6}Problemi}{40}{section.7.6}%
-\contentsline {subsection}{\numberline {7.6.1}Matrici come funzione lineare}{40}{subsection.7.6.1}%
-\contentsline {subsection}{\numberline {7.6.2}Soluzione di sistemi lineari}{42}{subsection.7.6.2}%
-\contentsline {chapter}{\numberline {8}Algebra vettoriale}{47}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Prime definizioni}{47}{section.8.1}%
-\contentsline {subsection}{\numberline {8.1.1}Definizione di spazio vettoriale}{47}{subsection.8.1.1}%
-\contentsline {subsubsection}{Operazioni sui vettori: definizione di spazio vettoriale}{48}{subsubsection*.14}%
-\contentsline {subsubsection}{Esempi}{48}{subsubsection*.15}%
-\contentsline {subsection}{\numberline {8.1.2}Base di uno spazio vettoriale}{49}{subsection.8.1.2}%
-\contentsline {section}{\numberline {8.2}Spazio vettoriale euclideo}{49}{section.8.2}%
-\contentsline {subsection}{\numberline {8.2.1}Prodotto interno e distanza}{50}{subsection.8.2.1}%
-\contentsline {subsection}{\numberline {8.2.2}Prodotto vettoriale}{50}{subsection.8.2.2}%
-\contentsline {subsection}{\numberline {8.2.3}Base cartesiana}{50}{subsection.8.2.3}%
-\contentsline {chapter}{\numberline {9}Algebra complessa}{53}{chapter.9}%
-\contentsline {chapter}{\numberline {10}Algebra di insiemi}{55}{chapter.10}%
-\contentsline {part}{IV\hspace {1em}Geometria analitica}{57}{part.4}%
-\contentsline {chapter}{\numberline {11}Introduzione alla geometria analitica}{61}{chapter.11}%
-\contentsline {chapter}{\numberline {12}Spazio euclideo}{63}{chapter.12}%
-\contentsline {chapter}{\numberline {13}Geometria analitica nel piano}{65}{chapter.13}%
-\contentsline {section}{\numberline {13.1}Sistemi di coordinate}{66}{section.13.1}%
-\contentsline {subsection}{\numberline {13.1.1}Esempi}{66}{subsection.13.1.1}%
-\contentsline {subsection}{\numberline {13.1.2}Trasformazione di coordinate}{66}{subsection.13.1.2}%
-\contentsline {section}{\numberline {13.2}Distanze e angoli}{67}{section.13.2}%
-\contentsline {subsection}{\numberline {13.2.1}Distanza tra punti}{67}{subsection.13.2.1}%
-\contentsline {section}{\numberline {13.3}Curve nel piano}{67}{section.13.3}%
-\contentsline {subsection}{\numberline {13.3.1}Rappresentazioni di una curva}{67}{subsection.13.3.1}%
-\contentsline {subsection}{\numberline {13.3.2}Appartenenza di un punto a una curva}{67}{subsection.13.3.2}%
-\contentsline {subsection}{\numberline {13.3.3}Interesezione di curve}{68}{subsection.13.3.3}%
-\contentsline {subsection}{\numberline {13.3.4}Interpretazione grafica di equazioni, sistemi di equazioni e disequazioni}{68}{subsection.13.3.4}%
-\contentsline {section}{\numberline {13.4}Rette nel piano}{68}{section.13.4}%
-\contentsline {subsection}{\numberline {13.4.1}Definizioni ed equazione}{68}{subsection.13.4.1}%
-\contentsline {subsection}{\numberline {13.4.2}Posizioni reciproche}{69}{subsection.13.4.2}%
-\contentsline {subsubsection}{Posizione reciproca di punto e retta}{69}{subsubsection*.17}%
-\contentsline {subsubsection}{Posizione reciproca di rette}{69}{subsubsection*.18}%
-\contentsline {paragraph}{Rette coincidenti}{70}{paragraph*.19}%
-\contentsline {paragraph}{Rette parallele nel piano}{70}{paragraph*.20}%
-\contentsline {paragraph}{Rette incidenti}{70}{paragraph*.21}%
-\contentsline {paragraph}{Rette incidenti perpendicolari}{71}{paragraph*.22}%
-\contentsline {subsection}{\numberline {13.4.3}Distanza punto\sphinxhyphen {}retta}{71}{subsection.13.4.3}%
-\contentsline {section}{\numberline {13.5}Coniche}{71}{section.13.5}%
-\contentsline {subsection}{\numberline {13.5.1}Forma canonica in coordinate cartesiane}{73}{subsection.13.5.1}%
-\contentsline {subsubsection}{Circonferenza}{73}{subsubsection*.23}%
-\contentsline {subsubsection}{Parabola}{73}{subsubsection*.24}%
-\contentsline {subsubsection}{Ellisse}{74}{subsubsection*.25}%
-\contentsline {subsubsection}{Iperbole}{75}{subsubsection*.26}%
-\contentsline {subsection}{\numberline {13.5.2}Forma canonica in coordinate polari}{76}{subsection.13.5.2}%
-\contentsline {subsection}{\numberline {13.5.3}Equazione generale delle coniche}{76}{subsection.13.5.3}%
-\contentsline {subsubsection}{}{77}{subsubsection*.27}%
-\contentsline {subsubsection}{Esercizi}{77}{subsubsection*.28}%
-\contentsline {chapter}{\numberline {14}Geometria analitica nello spazio}{79}{chapter.14}%
-\contentsline {section}{\numberline {14.1}Sistemi di coordinate per lo spazio euclideo \(E^3\)}{79}{section.14.1}%
-\contentsline {subsection}{\numberline {14.1.1}Coordinate cartesiane}{79}{subsection.14.1.1}%
-\contentsline {subsubsection}{Distanza punto\sphinxhyphen {}punto}{79}{subsubsection*.29}%
-\contentsline {subsection}{\numberline {14.1.2}Coordinate cilindriche}{79}{subsection.14.1.2}%
-\contentsline {subsection}{\numberline {14.1.3}Coordinate sferiche}{80}{subsection.14.1.3}%
-\contentsline {section}{\numberline {14.2}Piani nello spazio}{80}{section.14.2}%
-\contentsline {subsection}{\numberline {14.2.1}Definizioni ed equazione}{80}{subsection.14.2.1}%
-\contentsline {subsection}{\numberline {14.2.2}Posizioni reciproche}{81}{subsection.14.2.2}%
-\contentsline {subsubsection}{Posizione reciproca di punto e piano}{81}{subsubsection*.30}%
-\contentsline {subsubsection}{Posizione reciproca di piani}{81}{subsubsection*.31}%
-\contentsline {section}{\numberline {14.3}Curve nello spazio}{82}{section.14.3}%
-\contentsline {section}{\numberline {14.4}Rette nello spazio}{82}{section.14.4}%
-\contentsline {subsection}{\numberline {14.4.1}Definizione ed equazione}{82}{subsection.14.4.1}%
-\contentsline {subsection}{\numberline {14.4.2}Posizioni reciproche}{83}{subsection.14.4.2}%
-\contentsline {subsubsection}{Posizione reciproca di punto e retta}{83}{subsubsection*.32}%
-\contentsline {paragraph}{Distanza punto\sphinxhyphen {}retta}{83}{paragraph*.33}%
-\contentsline {subsubsection}{Posizione reciproca retta e piano}{83}{subsubsection*.34}%
-\contentsline {subsubsection}{Posizione reciproca tra rette}{83}{subsubsection*.35}%
-\contentsline {section}{\numberline {14.5}Cono circolare retto e coniche}{84}{section.14.5}%
-\contentsline {subsection}{\numberline {14.5.1}Equazione del cono}{84}{subsection.14.5.1}%
-\contentsline {subsection}{\numberline {14.5.2}Coniche: intersezione tra cono e piano}{84}{subsection.14.5.2}%
-\contentsline {part}{V\hspace {1em}Precalcolo}{85}{part.5}%
-\contentsline {chapter}{\numberline {15}Introduzione al pre\sphinxhyphen {}calcolo}{89}{chapter.15}%
-\contentsline {chapter}{\numberline {16}Funzioni reali a variabile reale, \(f: \symbb {R} \rightarrow \symbb {R}\)}{91}{chapter.16}%
-\contentsline {section}{\numberline {16.1}Grafico di una funzione}{91}{section.16.1}%
-\contentsline {section}{\numberline {16.2}Classificazione di funzioni}{92}{section.16.2}%
-\contentsline {section}{\numberline {16.3}Funzioni invertibili e inverse}{92}{section.16.3}%
-\contentsline {section}{\numberline {16.4}Problemi}{93}{section.16.4}%
-\contentsline {chapter}{\numberline {17}Polinomi}{95}{chapter.17}%
-\contentsline {section}{\numberline {17.1}Fattorizzazione}{95}{section.17.1}%
-\contentsline {subsection}{\numberline {17.1.1}Teorema fondamentale dell’algebra}{95}{subsection.17.1.1}%
-\contentsline {subsection}{\numberline {17.1.2}In campo reale}{95}{subsection.17.1.2}%
-\contentsline {subsection}{\numberline {17.1.3}In campo complesso}{96}{subsection.17.1.3}%
-\contentsline {subsubsection}{Esempio}{96}{subsubsection*.36}%
-\contentsline {section}{\numberline {17.2}Teorema binomiale}{96}{section.17.2}%
-\contentsline {chapter}{\numberline {18}Serie e successioni}{97}{chapter.18}%
-\contentsline {section}{\numberline {18.1}Successioni di numeri reali}{97}{section.18.1}%
-\contentsline {subsection}{\numberline {18.1.1}Proprietà}{98}{subsection.18.1.1}%
-\contentsline {subsection}{\numberline {18.1.2}Operazioni con successioni}{98}{subsection.18.1.2}%
-\contentsline {subsection}{\numberline {18.1.3}Confronto tra successioni}{98}{subsection.18.1.3}%
-\contentsline {subsection}{\numberline {18.1.4}Criteri di convergenza}{98}{subsection.18.1.4}%
-\contentsline {section}{\numberline {18.2}Serie di numeri reali}{98}{section.18.2}%
-\contentsline {subsection}{\numberline {18.2.1}Criteri di convergenza}{99}{subsection.18.2.1}%
-\contentsline {subsubsection}{Serie a termini concordi}{99}{subsubsection*.37}%
-\contentsline {subsubsection}{Serie a termini discordi}{100}{subsubsection*.38}%
-\contentsline {subsection}{\numberline {18.2.2}Esempi}{100}{subsection.18.2.2}%
-\contentsline {section}{\numberline {18.3}Successioni di funzioni reali}{102}{section.18.3}%
-\contentsline {subsection}{\numberline {18.3.1}Convergenza}{102}{subsection.18.3.1}%
-\contentsline {subsubsection}{Convergenza puntuale}{102}{subsubsection*.40}%
-\contentsline {subsubsection}{Convergenza uniforme}{102}{subsubsection*.41}%
-\contentsline {section}{\numberline {18.4}Serie di funzioni reali}{102}{section.18.4}%
-\contentsline {subsection}{\numberline {18.4.1}Serie polinomiali}{102}{subsection.18.4.1}%
-\contentsline {section}{\numberline {18.5}Successioni di numeri complessi}{103}{section.18.5}%
-\contentsline {section}{\numberline {18.6}Serie di numeri complessi}{103}{section.18.6}%
-\contentsline {section}{\numberline {18.7}Successioni di funzioni complesse}{103}{section.18.7}%
-\contentsline {section}{\numberline {18.8}Serie di funzioni complesse}{103}{section.18.8}%
-\contentsline {chapter}{\numberline {19}Trigonometria}{105}{chapter.19}%
-\contentsline {section}{\numberline {19.1}Definizione delle funzioni trigonometriche e relazione fondamentale}{105}{section.19.1}%
-\contentsline {subsection}{\numberline {19.1.1}Seno e coseno}{105}{subsection.19.1.1}%
-\contentsline {subsection}{\numberline {19.1.2}Relazione fondamentale della trignometria}{106}{subsection.19.1.2}%
-\contentsline {subsection}{\numberline {19.1.3}Altre funzioni trigonometriche}{106}{subsection.19.1.3}%
-\contentsline {section}{\numberline {19.2}Angoli particolari e proprietà}{106}{section.19.2}%
-\contentsline {section}{\numberline {19.3}Formule di somma e sottrazione}{107}{section.19.3}%
-\contentsline {section}{\numberline {19.4}Werner}{108}{section.19.4}%
-\contentsline {section}{\numberline {19.5}Prostaferesi}{108}{section.19.5}%
-\contentsline {chapter}{\numberline {20}Esponenziale e logaritmo}{111}{chapter.20}%
-\contentsline {section}{\numberline {20.1}Definizioni e proprietà}{111}{section.20.1}%
-\contentsline {section}{\numberline {20.2}Funzione esponenziale e logaritmo di variabile reale}{111}{section.20.2}%
-\contentsline {subsection}{\numberline {20.2.1}Funzione esponenziale, \(e^x\)}{111}{subsection.20.2.1}%
-\contentsline {subsection}{\numberline {20.2.2}Funzione logaritmo naturale, \(\text {ln} \tmspace +\thinmuskip {.1667em} x\)}{112}{subsection.20.2.2}%
-\contentsline {section}{\numberline {20.3}Funzione esponenziale e logaritmo di variabile complessa}{112}{section.20.3}%
-\contentsline {section}{\numberline {20.4}Esponenziale e logaritmo \sphinxhyphen {} dimostrazioni}{112}{section.20.4}%
-\contentsline {chapter}{\numberline {21}Algebra complessa}{115}{chapter.21}%
-\contentsline {section}{\numberline {21.1}Definizioni}{115}{section.21.1}%
-\contentsline {subsection}{\numberline {21.1.1}Operazioni: somma e moltiplicazione}{116}{subsection.21.1.1}%
-\contentsline {subsection}{\numberline {21.1.2}Esponenziale complesso e formula di Eulero}{116}{subsection.21.1.2}%
-\contentsline {subsubsection}{Formula di Eulero}{116}{subsubsection*.46}%
-\contentsline {subsection}{\numberline {21.1.3}Rappresentazione nel piano complesso}{118}{subsection.21.1.3}%
-\contentsline {section}{\numberline {21.2}Operazioni con i numeri complessi}{118}{section.21.2}%
-\contentsline {section}{\numberline {21.3}Altri argomenti/proprietà}{119}{section.21.3}%
-\contentsline {subsection}{\numberline {21.3.1}Formula di de Moivre}{119}{subsection.21.3.1}%
-\contentsline {subsection}{\numberline {21.3.2}Teorema fondamentale dell’algebra}{120}{subsection.21.3.2}%
-\contentsline {section}{\numberline {21.4}Equazioni e disequazioni con i numeri complessi}{120}{section.21.4}%
-\contentsline {chapter}{\numberline {22}Funzioni multi\sphinxhyphen {}variabile}{121}{chapter.22}%
-\contentsline {part}{VI\hspace {1em}Calcolo}{123}{part.6}%
-\contentsline {chapter}{\numberline {23}Introduzione al calcolo}{127}{chapter.23}%
-\contentsline {chapter}{\numberline {24}Introduzione all’analisi}{129}{chapter.24}%
-\contentsline {section}{\numberline {24.1}Funzioni reali a variabile reale, \(f: \symbb {R} \rightarrow \symbb {R}\)}{129}{section.24.1}%
-\contentsline {section}{\numberline {24.2}Limiti}{129}{section.24.2}%
-\contentsline {subsection}{\numberline {24.2.1}Cenni di topologia per il calcolo}{129}{subsection.24.2.1}%
-\contentsline {subsection}{\numberline {24.2.2}Definizione di limite}{129}{subsection.24.2.2}%
-\contentsline {section}{\numberline {24.3}Funzioni continue}{130}{section.24.3}%
-\contentsline {subsection}{\numberline {24.3.1}Definizione}{130}{subsection.24.3.1}%
-\contentsline {subsection}{\numberline {24.3.2}Punti di discontinuità}{130}{subsection.24.3.2}%
-\contentsline {subsection}{\numberline {24.3.3}Teoremi}{130}{subsection.24.3.3}%
-\contentsline {subsubsection}{Teorema di Weierstrass}{130}{subsubsection*.47}%
-\contentsline {subsubsection}{Teorema della permanenza del segno}{131}{subsubsection*.48}%
-\contentsline {subsubsection}{Teorema degli zeri}{131}{subsubsection*.49}%
-\contentsline {subsubsection}{Teorema dei valori intermedi}{132}{subsubsection*.50}%
-\contentsline {section}{\numberline {24.4}Operazioni e teoremi sui limiti}{132}{section.24.4}%
-\contentsline {subsection}{\numberline {24.4.1}Operazioni coi limiti}{132}{subsection.24.4.1}%
-\contentsline {subsubsection}{Limiti infiniti e infinitesimi}{133}{subsubsection*.51}%
-\contentsline {subsubsection}{Forme indeterminate}{133}{subsubsection*.52}%
-\contentsline {subsection}{\numberline {24.4.2}Teorema del confronto}{134}{subsection.24.4.2}%
-\contentsline {subsection}{\numberline {24.4.3}Teorema di de l’Hopital}{134}{subsection.24.4.3}%
-\contentsline {section}{\numberline {24.5}Limiti fondamentali}{134}{section.24.5}%
-\contentsline {section}{\numberline {24.6}Confronto di infiniti e infinitesimi}{135}{section.24.6}%
-\contentsline {subsection}{\numberline {24.6.1}Calcolo dei limiti con sostituzione degli infinitesimi o degli infiniti}{135}{subsection.24.6.1}%
-\contentsline {section}{\numberline {24.7}Calcolo dei limiti}{136}{section.24.7}%
-\contentsline {section}{\numberline {24.8}Metodo di bisezione}{136}{section.24.8}%
-\contentsline {section}{\numberline {24.9}Problemi}{136}{section.24.9}%
-\contentsline {subsection}{\numberline {24.9.1}Limiti}{136}{subsection.24.9.1}%
-\contentsline {subsection}{\numberline {24.9.2}Studio di funzione: dominio, continuità e limiti}{139}{subsection.24.9.2}%
-\contentsline {subsection}{\numberline {24.9.3}Metodo di bisezione}{141}{subsection.24.9.3}%
-\contentsline {section}{\numberline {24.10}Note e dimostrazioni}{141}{section.24.10}%
-\contentsline {subsection}{\numberline {24.10.1}Funzioni reali a variabile reale, \(f: \symbb {R} \rightarrow \symbb {R}\)}{141}{subsection.24.10.1}%
-\contentsline {subsection}{\numberline {24.10.2}Limiti}{141}{subsection.24.10.2}%
-\contentsline {subsection}{\numberline {24.10.3}Funzioni continue, \(f \in C^0\)}{141}{subsection.24.10.3}%
-\contentsline {subsection}{\numberline {24.10.4}Operazioni e teoremi sui limiti}{141}{subsection.24.10.4}%
-\contentsline {subsection}{\numberline {24.10.5}Contronto di infiniti e infinitesimi}{143}{subsection.24.10.5}%
-\contentsline {subsection}{\numberline {24.10.6}Limiti fondamentali}{143}{subsection.24.10.6}%
-\contentsline {chapter}{\numberline {25}Derivate}{145}{chapter.25}%
-\contentsline {section}{\numberline {25.1}Definizione}{145}{section.25.1}%
-\contentsline {section}{\numberline {25.2}Regole di derivazione}{145}{section.25.2}%
-\contentsline {section}{\numberline {25.3}Teoremi}{146}{section.25.3}%
-\contentsline {subsection}{\numberline {25.3.1}Teorema di Fermat}{146}{subsection.25.3.1}%
-\contentsline {subsection}{\numberline {25.3.2}Teorema di Rolle}{146}{subsection.25.3.2}%
-\contentsline {subsection}{\numberline {25.3.3}Teorema di Cauchy}{146}{subsection.25.3.3}%
-\contentsline {subsection}{\numberline {25.3.4}Teorema di Lagrange}{147}{subsection.25.3.4}%
-\contentsline {subsection}{\numberline {25.3.5}Teorema di de l’Hopital}{147}{subsection.25.3.5}%
-\contentsline {section}{\numberline {25.4}Derivate fondamentali}{147}{section.25.4}%
-\contentsline {section}{\numberline {25.5}Derivate di ordine superiore}{148}{section.25.5}%
-\contentsline {section}{\numberline {25.6}Serie di Taylor e MacLaurin}{148}{section.25.6}%
-\contentsline {subsection}{\numberline {25.6.1}Esempi}{149}{subsection.25.6.1}%
-\contentsline {section}{\numberline {25.7}Applicazioni}{149}{section.25.7}%
-\contentsline {subsection}{\numberline {25.7.1}Approssimazioni locali}{149}{subsection.25.7.1}%
-\contentsline {subsection}{\numberline {25.7.2}Studio di funzione}{149}{subsection.25.7.2}%
-\contentsline {subsection}{\numberline {25.7.3}Ottimizzazione}{149}{subsection.25.7.3}%
-\contentsline {subsection}{\numberline {25.7.4}Metodo di Netwon}{149}{subsection.25.7.4}%
-\contentsline {section}{\numberline {25.8}Problemi}{149}{section.25.8}%
-\contentsline {subsection}{\numberline {25.8.1}Calcolo derivate}{149}{subsection.25.8.1}%
-\contentsline {subsection}{\numberline {25.8.2}Serie di Taylor}{152}{subsection.25.8.2}%
-\contentsline {subsection}{\numberline {25.8.3}Problemi di geometria}{152}{subsection.25.8.3}%
-\contentsline {subsection}{\numberline {25.8.4}Studio di funzione: massimi, minimi e flessi; concavità}{152}{subsection.25.8.4}%
-\contentsline {subsection}{\numberline {25.8.5}Problemi di ottimizzazione}{153}{subsection.25.8.5}%
-\contentsline {subsection}{\numberline {25.8.6}Metodo di Newton}{154}{subsection.25.8.6}%
-\contentsline {section}{\numberline {25.9}Note e dimostrazioni}{154}{section.25.9}%
-\contentsline {subsection}{\numberline {25.9.1}Definizione}{154}{subsection.25.9.1}%
-\contentsline {subsection}{\numberline {25.9.2}Regole di derivazione}{154}{subsection.25.9.2}%
-\contentsline {subsection}{\numberline {25.9.3}Teoremi}{156}{subsection.25.9.3}%
-\contentsline {subsection}{\numberline {25.9.4}Derivate fondamentali}{157}{subsection.25.9.4}%
-\contentsline {subsection}{\numberline {25.9.5}Derivate di ordine superiore}{158}{subsection.25.9.5}%
-\contentsline {subsection}{\numberline {25.9.6}Serie di Taylor e MacLaurin}{158}{subsection.25.9.6}%
-\contentsline {chapter}{\numberline {26}Integrali}{161}{chapter.26}%
-\contentsline {section}{\numberline {26.1}Definizioni}{161}{section.26.1}%
-\contentsline {subsection}{\numberline {26.1.1}Interpretazione geometrica}{162}{subsection.26.1.1}%
-\contentsline {subsection}{\numberline {26.1.2}Integrale definito}{162}{subsection.26.1.2}%
-\contentsline {subsubsection}{Proprietà dell’integrale definito}{162}{subsubsection*.79}%
-\contentsline {subsection}{\numberline {26.1.3}Integrale indefinito}{162}{subsection.26.1.3}%
-\contentsline {section}{\numberline {26.2}Teoremi}{163}{section.26.2}%
-\contentsline {subsection}{\numberline {26.2.1}Teorema della media}{163}{subsection.26.2.1}%
-\contentsline {subsection}{\numberline {26.2.2}Teorema fondamentale del calcolo infinitesimale}{163}{subsection.26.2.2}%
-\contentsline {subsection}{\numberline {26.2.3}Derivata su dominio dipendente dalla variabile indipendente}{164}{subsection.26.2.3}%
-\contentsline {section}{\numberline {26.3}Integrali fondamentali}{164}{section.26.3}%
-\contentsline {section}{\numberline {26.4}Regole di integrazione}{165}{section.26.4}%
-\contentsline {subsection}{\numberline {26.4.1}Integrazione per parti}{165}{subsection.26.4.1}%
-\contentsline {subsection}{\numberline {26.4.2}Frazioni parziali}{165}{subsection.26.4.2}%
-\contentsline {subsection}{\numberline {26.4.3}Integrazione con sostituzione}{165}{subsection.26.4.3}%
-\contentsline {section}{\numberline {26.5}Tavola degli integrali indefiniti più comuni}{166}{section.26.5}%
-\contentsline {section}{\numberline {26.6}Problemi}{167}{section.26.6}%
-\contentsline {subsection}{\numberline {26.6.1}Calcolo integrali indefiniti}{167}{subsection.26.6.1}%
-\contentsline {subsection}{\numberline {26.6.2}Integrali definiti}{168}{subsection.26.6.2}%
-\contentsline {subsubsection}{Integrali impropri}{168}{subsubsection*.82}%
-\contentsline {subsection}{\numberline {26.6.3}Problemi di geometria}{169}{subsection.26.6.3}%
-\contentsline {subsubsection}{Area di superfici e lunghezza di curve}{169}{subsubsection*.85}%
-\contentsline {subsubsection}{Volumi e superficie di solidi di rotazione}{170}{subsubsection*.89}%
-\contentsline {chapter}{\numberline {27}Equazioni differenziali ordinarie}{171}{chapter.27}%
-\contentsline {section}{\numberline {27.1}Prime definizioni}{172}{section.27.1}%
-\contentsline {section}{\numberline {27.2}Classificazione, esempi e tecniche risolutive}{172}{section.27.2}%
-\contentsline {subsection}{\numberline {27.2.1}Equazioni lineari a coefficienti costanti}{172}{subsection.27.2.1}%
-\contentsline {subsubsection}{Definizione}{172}{subsubsection*.98}%
-\contentsline {subsubsection}{Esempi}{172}{subsubsection*.99}%
-\contentsline {subsubsection}{Soluzione generale}{175}{subsubsection*.100}%
-\contentsline {paragraph}{Soluzione dell’equazione omogenea}{175}{paragraph*.101}%
-\contentsline {paragraph}{Soluzione particolare dell’equazione completa}{177}{paragraph*.102}%
-\contentsline {subsubsection}{Soluzione degli esempi}{177}{subsubsection*.103}%
-\contentsline {subsection}{\numberline {27.2.2}Equazioni differenziali a variabili separabili: tecnica di soluzione di separazione delle variabili}{181}{subsection.27.2.2}%
-\contentsline {subsubsection}{Esempi}{181}{subsubsection*.104}%
-\contentsline {chapter}{\numberline {28}Calcolo infinitesimale \sphinxhyphen {} Problemi}{183}{chapter.28}%
-\contentsline {chapter}{\numberline {29}Introduzione al calcolo multi\sphinxhyphen {}variabile}{185}{chapter.29}%
-\contentsline {section}{\numberline {29.1}Limite di una funzione di più variabili}{186}{section.29.1}%
-\contentsline {subsection}{\numberline {29.1.1}Funzioni continue}{186}{subsection.29.1.1}%
-\contentsline {subsubsection}{Definizione}{186}{subsubsection*.105}%
-\contentsline {subsubsection}{Discontinuità}{187}{subsubsection*.106}%
-\contentsline {section}{\numberline {29.2}Derivate di funzioni di più variabili}{187}{section.29.2}%
-\contentsline {subsection}{\numberline {29.2.1}Derivate parziali}{187}{subsection.29.2.1}%
-\contentsline {subsection}{\numberline {29.2.2}Incremento di una funzione}{188}{subsection.29.2.2}%
-\contentsline {subsection}{\numberline {29.2.3}Differenziale}{188}{subsection.29.2.3}%
-\contentsline {section}{\numberline {29.3}Integrali su domini multi\sphinxhyphen {}dimensionali}{189}{section.29.3}%
-\contentsline {subsection}{\numberline {29.3.1}Definizioni}{189}{subsection.29.3.1}%
-\contentsline {subsubsection}{Interpretazione geometrica}{190}{subsubsection*.107}%
-\contentsline {subsubsection}{Proprietà dell’integrale definito}{190}{subsubsection*.108}%
-\contentsline {subsection}{\numberline {29.3.2}Regole di integrazione}{190}{subsection.29.3.2}%
-\contentsline {chapter}{\numberline {30}Introduzione al calcolo vettoriale su spazi euclidei}{193}{chapter.30}%
-\contentsline {section}{\numberline {30.1}Operatori differenziali in spazi euclidei}{194}{section.30.1}%
-\contentsline {subsection}{\numberline {30.1.1}Derivata direzionale}{194}{subsection.30.1.1}%
-\contentsline {subsection}{\numberline {30.1.2}Gradiente}{194}{subsection.30.1.2}%
-\contentsline {subsection}{\numberline {30.1.3}Divergenza}{195}{subsection.30.1.3}%
-\contentsline {subsection}{\numberline {30.1.4}Rotore}{196}{subsection.30.1.4}%
-\contentsline {section}{\numberline {30.2}Integrali in spazi euclidei}{196}{section.30.2}%
-\contentsline {section}{\numberline {30.3}Problemi}{196}{section.30.3}%
-\contentsline {subsection}{\numberline {30.3.1}Operatori differenziali}{196}{subsection.30.3.1}%
-\contentsline {subsection}{\numberline {30.3.2}Integrali}{196}{subsection.30.3.2}%
-\contentsline {subsubsection}{Geometria}{197}{subsubsection*.109}%
-\contentsline {subsubsection}{Fisica}{197}{subsubsection*.114}%
-\contentsline {part}{VII\hspace {1em}Statistica}{199}{part.7}%
-\contentsline {chapter}{\numberline {31}Introduzione alla statistica}{203}{chapter.31}%
-\contentsline {part}{VIII\hspace {1em}Indice}{205}{part.8}%
-\contentsline {chapter}{\numberline {32}Indice}{207}{chapter.32}%
-\contentsline {chapter}{Proof Index}{209}{section*.117}%
+\contentsline {section}{\numberline {2.5}Insiemi numerici}{13}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Numeri naturali \(\symbb {N}\)}{13}{subsection.2.5.1}%
+\contentsline {subsubsection}{Altre operazioni}{14}{subsubsection*.3}%
+\contentsline {paragraph}{Sottrazione}{14}{paragraph*.4}%
+\contentsline {paragraph}{Divisione}{14}{paragraph*.5}%
+\contentsline {paragraph}{Potenza}{14}{paragraph*.6}%
+\contentsline {subsection}{\numberline {2.5.2}Numeri interi \(\symbb {Z}\)}{14}{subsection.2.5.2}%
+\contentsline {subsubsection}{Altre operazioni}{15}{subsubsection*.7}%
+\contentsline {paragraph}{Divisione}{15}{paragraph*.8}%
+\contentsline {paragraph}{Potenza}{15}{paragraph*.9}%
+\contentsline {subsection}{\numberline {2.5.3}Numeri razionali \(\symbb {Q}\)}{15}{subsection.2.5.3}%
+\contentsline {subsubsection}{Rappresentazione decimale}{16}{subsubsection*.10}%
+\contentsline {subsubsection}{Operazioni}{16}{subsubsection*.11}%
+\contentsline {paragraph}{Potenza}{16}{paragraph*.12}%
+\contentsline {subsection}{\numberline {2.5.4}Numeri reali \(\symbb {R}\)}{16}{subsection.2.5.4}%
+\contentsline {subsubsection}{Operazioni}{16}{subsubsection*.13}%
+\contentsline {subsection}{\numberline {2.5.5}Numeri complessi \(\symbb {C}\)}{17}{subsection.2.5.5}%
+\contentsline {chapter}{\numberline {3}Logica}{19}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Argomenti …}{19}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Identità}{19}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Contraddizione}{19}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Sillogismo}{19}{subsection.3.1.3}%
+\contentsline {part}{III\hspace {1em}Algebra}{21}{part.3}%
+\contentsline {chapter}{\numberline {4}Introduzione all’algebra}{23}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Algebra sui numeri reali}{25}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Operazioni}{25}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Potenze}{25}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Radice}{26}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Logaritmo}{26}{subsection.5.1.3}%
+\contentsline {section}{\numberline {5.2}Polinomi}{26}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Frazioni algebriche}{26}{subsection.5.2.1}%
+\contentsline {section}{\numberline {5.3}Problemi con un’incognita}{27}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Equazioni}{27}{subsection.5.3.1}%
+\contentsline {subsubsection}{Equazioni di primo grado}{27}{subsubsection*.14}%
+\contentsline {subsubsection}{Equazioni di secondo grado}{28}{subsubsection*.15}%
+\contentsline {subsubsection}{Equazioni non lineari generali}{28}{subsubsection*.16}%
+\contentsline {subsection}{\numberline {5.3.2}Disequazioni}{28}{subsection.5.3.2}%
+\contentsline {section}{\numberline {5.4}Rappresentazione grafica di un’equazione con due incognite}{28}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Problemi con due o più incognite \sphinxhyphen {} sistemi di equazioni e disequazioni}{29}{section.5.5}%
+\contentsline {chapter}{\numberline {6}Algebra su \(\symbb {R}^n\)}{31}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Problemi}{31}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Forma generale}{31}{subsection.6.1.1}%
+\contentsline {section}{\numberline {6.2}Problemi}{32}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Sistemi lineari di equazioni}{32}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Sistemi lineari di disequazioni}{33}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Sistemi di equazioni e disequazioni}{34}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.4}Equazioni Quadratiche}{34}{subsection.6.2.4}%
+\contentsline {subsection}{\numberline {6.2.5}Disequazioni Quadratiche}{35}{subsection.6.2.5}%
+\contentsline {subsection}{\numberline {6.2.6}Problemi vari}{35}{subsection.6.2.6}%
+\contentsline {chapter}{\numberline {7}Algebra lineare}{39}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Introduzione}{39}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Sistemi lineari e formalismo matriciale}{39}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Matrici}{40}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Inteprepretazione del contenuto di una matrice}{40}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Operazioni}{40}{subsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.3.3}Matrice come funzione lineare}{41}{subsection.7.3.3}%
+\contentsline {subsection}{\numberline {7.3.4}Immagine e nucleo}{41}{subsection.7.3.4}%
+\contentsline {subsection}{\numberline {7.3.5}Determinante}{41}{subsection.7.3.5}%
+\contentsline {section}{\numberline {7.4}Risoluzione di Sistemi}{42}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Metodo di sostituzione}{42}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}Metodo di eliminazione di Gauss}{43}{subsection.7.4.2}%
+\contentsline {subsection}{\numberline {7.4.3}Metodo di Cramer}{44}{subsection.7.4.3}%
+\contentsline {section}{\numberline {7.5}Teorema di Rouché\sphinxhyphen {}Capelli}{44}{section.7.5}%
+\contentsline {subsection}{\numberline {7.5.1}Interpretazione geometrica}{44}{subsection.7.5.1}%
+\contentsline {section}{\numberline {7.6}Problemi}{44}{section.7.6}%
+\contentsline {subsection}{\numberline {7.6.1}Matrici come funzione lineare}{44}{subsection.7.6.1}%
+\contentsline {subsection}{\numberline {7.6.2}Soluzione di sistemi lineari}{46}{subsection.7.6.2}%
+\contentsline {chapter}{\numberline {8}Algebra vettoriale}{51}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Prime definizioni}{51}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}Definizione di spazio vettoriale}{51}{subsection.8.1.1}%
+\contentsline {subsubsection}{Operazioni sui vettori: definizione di spazio vettoriale}{52}{subsubsection*.25}%
+\contentsline {subsubsection}{Esempi}{52}{subsubsection*.26}%
+\contentsline {subsection}{\numberline {8.1.2}Base di uno spazio vettoriale}{53}{subsection.8.1.2}%
+\contentsline {section}{\numberline {8.2}Spazio vettoriale euclideo}{53}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Prodotto interno e distanza}{54}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Prodotto vettoriale}{54}{subsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.2.3}Base cartesiana}{54}{subsection.8.2.3}%
+\contentsline {chapter}{\numberline {9}Algebra complessa}{57}{chapter.9}%
+\contentsline {chapter}{\numberline {10}Algebra di insiemi}{59}{chapter.10}%
+\contentsline {part}{IV\hspace {1em}Geometria analitica}{61}{part.4}%
+\contentsline {chapter}{\numberline {11}Introduzione alla geometria analitica}{65}{chapter.11}%
+\contentsline {chapter}{\numberline {12}Spazio euclideo}{67}{chapter.12}%
+\contentsline {chapter}{\numberline {13}Geometria analitica nel piano}{69}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Sistemi di coordinate}{70}{section.13.1}%
+\contentsline {subsection}{\numberline {13.1.1}Esempi}{70}{subsection.13.1.1}%
+\contentsline {subsection}{\numberline {13.1.2}Trasformazione di coordinate}{70}{subsection.13.1.2}%
+\contentsline {section}{\numberline {13.2}Distanze e angoli}{71}{section.13.2}%
+\contentsline {subsection}{\numberline {13.2.1}Distanza tra punti}{71}{subsection.13.2.1}%
+\contentsline {section}{\numberline {13.3}Curve nel piano}{71}{section.13.3}%
+\contentsline {subsection}{\numberline {13.3.1}Rappresentazioni di una curva}{71}{subsection.13.3.1}%
+\contentsline {subsection}{\numberline {13.3.2}Appartenenza di un punto a una curva}{71}{subsection.13.3.2}%
+\contentsline {subsection}{\numberline {13.3.3}Interesezione di curve}{72}{subsection.13.3.3}%
+\contentsline {subsection}{\numberline {13.3.4}Interpretazione grafica di equazioni, sistemi di equazioni e disequazioni}{72}{subsection.13.3.4}%
+\contentsline {section}{\numberline {13.4}Rette nel piano}{72}{section.13.4}%
+\contentsline {subsection}{\numberline {13.4.1}Definizioni ed equazione}{72}{subsection.13.4.1}%
+\contentsline {subsection}{\numberline {13.4.2}Posizioni reciproche}{73}{subsection.13.4.2}%
+\contentsline {subsubsection}{Posizione reciproca di punto e retta}{73}{subsubsection*.28}%
+\contentsline {subsubsection}{Posizione reciproca di rette}{73}{subsubsection*.29}%
+\contentsline {paragraph}{Rette coincidenti}{74}{paragraph*.30}%
+\contentsline {paragraph}{Rette parallele nel piano}{74}{paragraph*.31}%
+\contentsline {paragraph}{Rette incidenti}{74}{paragraph*.32}%
+\contentsline {paragraph}{Rette incidenti perpendicolari}{75}{paragraph*.33}%
+\contentsline {subsection}{\numberline {13.4.3}Distanza punto\sphinxhyphen {}retta}{75}{subsection.13.4.3}%
+\contentsline {section}{\numberline {13.5}Coniche}{75}{section.13.5}%
+\contentsline {subsection}{\numberline {13.5.1}Forma canonica in coordinate cartesiane}{77}{subsection.13.5.1}%
+\contentsline {subsubsection}{Circonferenza}{77}{subsubsection*.34}%
+\contentsline {subsubsection}{Parabola}{77}{subsubsection*.35}%
+\contentsline {subsubsection}{Ellisse}{78}{subsubsection*.36}%
+\contentsline {subsubsection}{Iperbole}{79}{subsubsection*.37}%
+\contentsline {subsection}{\numberline {13.5.2}Forma canonica in coordinate polari}{80}{subsection.13.5.2}%
+\contentsline {subsection}{\numberline {13.5.3}Equazione generale delle coniche}{80}{subsection.13.5.3}%
+\contentsline {subsubsection}{}{81}{subsubsection*.38}%
+\contentsline {subsubsection}{Esercizi}{81}{subsubsection*.39}%
+\contentsline {chapter}{\numberline {14}Geometria analitica nello spazio}{83}{chapter.14}%
+\contentsline {section}{\numberline {14.1}Sistemi di coordinate per lo spazio euclideo \(E^3\)}{83}{section.14.1}%
+\contentsline {subsection}{\numberline {14.1.1}Coordinate cartesiane}{83}{subsection.14.1.1}%
+\contentsline {subsubsection}{Distanza punto\sphinxhyphen {}punto}{83}{subsubsection*.40}%
+\contentsline {subsection}{\numberline {14.1.2}Coordinate cilindriche}{83}{subsection.14.1.2}%
+\contentsline {subsection}{\numberline {14.1.3}Coordinate sferiche}{84}{subsection.14.1.3}%
+\contentsline {section}{\numberline {14.2}Piani nello spazio}{84}{section.14.2}%
+\contentsline {subsection}{\numberline {14.2.1}Definizioni ed equazione}{84}{subsection.14.2.1}%
+\contentsline {subsection}{\numberline {14.2.2}Posizioni reciproche}{85}{subsection.14.2.2}%
+\contentsline {subsubsection}{Posizione reciproca di punto e piano}{85}{subsubsection*.41}%
+\contentsline {subsubsection}{Posizione reciproca di piani}{85}{subsubsection*.42}%
+\contentsline {section}{\numberline {14.3}Curve nello spazio}{86}{section.14.3}%
+\contentsline {section}{\numberline {14.4}Rette nello spazio}{86}{section.14.4}%
+\contentsline {subsection}{\numberline {14.4.1}Definizione ed equazione}{86}{subsection.14.4.1}%
+\contentsline {subsection}{\numberline {14.4.2}Posizioni reciproche}{87}{subsection.14.4.2}%
+\contentsline {subsubsection}{Posizione reciproca di punto e retta}{87}{subsubsection*.43}%
+\contentsline {paragraph}{Distanza punto\sphinxhyphen {}retta}{87}{paragraph*.44}%
+\contentsline {subsubsection}{Posizione reciproca retta e piano}{87}{subsubsection*.45}%
+\contentsline {subsubsection}{Posizione reciproca tra rette}{87}{subsubsection*.46}%
+\contentsline {section}{\numberline {14.5}Cono circolare retto e coniche}{88}{section.14.5}%
+\contentsline {subsection}{\numberline {14.5.1}Equazione del cono}{88}{subsection.14.5.1}%
+\contentsline {subsection}{\numberline {14.5.2}Coniche: intersezione tra cono e piano}{88}{subsection.14.5.2}%
+\contentsline {part}{V\hspace {1em}Precalcolo}{89}{part.5}%
+\contentsline {chapter}{\numberline {15}Introduzione al pre\sphinxhyphen {}calcolo}{91}{chapter.15}%
+\contentsline {chapter}{\numberline {16}Funzioni reali a variabile reale, \(f: \symbb {R} \rightarrow \symbb {R}\)}{93}{chapter.16}%
+\contentsline {section}{\numberline {16.1}Grafico di una funzione}{93}{section.16.1}%
+\contentsline {section}{\numberline {16.2}Classificazione di funzioni}{94}{section.16.2}%
+\contentsline {section}{\numberline {16.3}Funzioni invertibili e inverse}{94}{section.16.3}%
+\contentsline {section}{\numberline {16.4}Problemi}{95}{section.16.4}%
+\contentsline {chapter}{\numberline {17}Polinomi}{97}{chapter.17}%
+\contentsline {section}{\numberline {17.1}Fattorizzazione}{97}{section.17.1}%
+\contentsline {subsection}{\numberline {17.1.1}Teorema fondamentale dell’algebra}{97}{subsection.17.1.1}%
+\contentsline {subsection}{\numberline {17.1.2}In campo reale}{97}{subsection.17.1.2}%
+\contentsline {subsection}{\numberline {17.1.3}In campo complesso}{98}{subsection.17.1.3}%
+\contentsline {subsubsection}{Esempio}{98}{subsubsection*.47}%
+\contentsline {section}{\numberline {17.2}Teorema binomiale}{98}{section.17.2}%
+\contentsline {chapter}{\numberline {18}Serie e successioni}{99}{chapter.18}%
+\contentsline {section}{\numberline {18.1}Successioni di numeri reali}{99}{section.18.1}%
+\contentsline {subsection}{\numberline {18.1.1}Proprietà}{100}{subsection.18.1.1}%
+\contentsline {subsection}{\numberline {18.1.2}Operazioni con successioni}{100}{subsection.18.1.2}%
+\contentsline {subsection}{\numberline {18.1.3}Confronto tra successioni}{100}{subsection.18.1.3}%
+\contentsline {subsection}{\numberline {18.1.4}Criteri di convergenza}{100}{subsection.18.1.4}%
+\contentsline {section}{\numberline {18.2}Serie di numeri reali}{100}{section.18.2}%
+\contentsline {subsection}{\numberline {18.2.1}Criteri di convergenza}{101}{subsection.18.2.1}%
+\contentsline {subsubsection}{Serie a termini concordi}{101}{subsubsection*.48}%
+\contentsline {subsubsection}{Serie a termini discordi}{102}{subsubsection*.49}%
+\contentsline {subsection}{\numberline {18.2.2}Esempi}{102}{subsection.18.2.2}%
+\contentsline {section}{\numberline {18.3}Successioni di funzioni reali}{104}{section.18.3}%
+\contentsline {subsection}{\numberline {18.3.1}Convergenza}{104}{subsection.18.3.1}%
+\contentsline {subsubsection}{Convergenza puntuale}{104}{subsubsection*.51}%
+\contentsline {subsubsection}{Convergenza uniforme}{104}{subsubsection*.52}%
+\contentsline {section}{\numberline {18.4}Serie di funzioni reali}{104}{section.18.4}%
+\contentsline {subsection}{\numberline {18.4.1}Serie polinomiali}{104}{subsection.18.4.1}%
+\contentsline {section}{\numberline {18.5}Successioni di numeri complessi}{105}{section.18.5}%
+\contentsline {section}{\numberline {18.6}Serie di numeri complessi}{105}{section.18.6}%
+\contentsline {section}{\numberline {18.7}Successioni di funzioni complesse}{105}{section.18.7}%
+\contentsline {section}{\numberline {18.8}Serie di funzioni complesse}{105}{section.18.8}%
+\contentsline {chapter}{\numberline {19}Trigonometria}{107}{chapter.19}%
+\contentsline {section}{\numberline {19.1}Definizione delle funzioni trigonometriche e relazione fondamentale}{107}{section.19.1}%
+\contentsline {subsection}{\numberline {19.1.1}Seno e coseno}{107}{subsection.19.1.1}%
+\contentsline {subsection}{\numberline {19.1.2}Relazione fondamentale della trignometria}{108}{subsection.19.1.2}%
+\contentsline {subsection}{\numberline {19.1.3}Altre funzioni trigonometriche}{108}{subsection.19.1.3}%
+\contentsline {section}{\numberline {19.2}Angoli particolari e proprietà}{108}{section.19.2}%
+\contentsline {section}{\numberline {19.3}Formule di somma e sottrazione}{109}{section.19.3}%
+\contentsline {section}{\numberline {19.4}Werner}{110}{section.19.4}%
+\contentsline {section}{\numberline {19.5}Prostaferesi}{110}{section.19.5}%
+\contentsline {chapter}{\numberline {20}Esponenziale e logaritmo}{113}{chapter.20}%
+\contentsline {section}{\numberline {20.1}Definizioni e proprietà}{113}{section.20.1}%
+\contentsline {section}{\numberline {20.2}Funzione esponenziale e logaritmo di variabile reale}{113}{section.20.2}%
+\contentsline {subsection}{\numberline {20.2.1}Funzione esponenziale, \(e^x\)}{113}{subsection.20.2.1}%
+\contentsline {subsection}{\numberline {20.2.2}Funzione logaritmo naturale, \(\text {ln} \tmspace +\thinmuskip {.1667em} x\)}{114}{subsection.20.2.2}%
+\contentsline {section}{\numberline {20.3}Funzione esponenziale e logaritmo di variabile complessa}{114}{section.20.3}%
+\contentsline {section}{\numberline {20.4}Esponenziale e logaritmo \sphinxhyphen {} dimostrazioni}{114}{section.20.4}%
+\contentsline {chapter}{\numberline {21}Algebra complessa}{117}{chapter.21}%
+\contentsline {section}{\numberline {21.1}Definizioni}{117}{section.21.1}%
+\contentsline {section}{\numberline {21.2}Rappresentazione dei numeri complessi nel piano complesso (Argand\sphinxhyphen {}Gauss)}{118}{section.21.2}%
+\contentsline {section}{\numberline {21.3}Operazioni con i numeri complessi}{118}{section.21.3}%
+\contentsline {section}{\numberline {21.4}Teorema fondamentale dell’algebra}{119}{section.21.4}%
+\contentsline {section}{\numberline {21.5}Numeri complessi e geometria nel piano euclideo}{120}{section.21.5}%
+\contentsline {subsection}{\numberline {21.5.1}Posizione di un punto nel piano}{120}{subsection.21.5.1}%
+\contentsline {subsection}{\numberline {21.5.2}Distanza tra punti}{120}{subsection.21.5.2}%
+\contentsline {subsection}{\numberline {21.5.3}Curva nel piano}{120}{subsection.21.5.3}%
+\contentsline {subsection}{\numberline {21.5.4}Intersezioni di curve}{120}{subsection.21.5.4}%
+\contentsline {subsection}{\numberline {21.5.5}Retta nel piano}{121}{subsection.21.5.5}%
+\contentsline {subsection}{\numberline {21.5.6}Posizioni reciproche rette, distanza punto\sphinxhyphen {}retta, coniche ed altro}{121}{subsection.21.5.6}%
+\contentsline {section}{\numberline {21.6}Equazioni e disequazioni con i numeri complessi}{121}{section.21.6}%
+\contentsline {section}{\numberline {21.7}Problemi}{122}{section.21.7}%
+\contentsline {subsection}{\numberline {21.7.1}Definizioni}{122}{subsection.21.7.1}%
+\contentsline {subsection}{\numberline {21.7.2}Rappresentazione dei numeri complessi nel piano complesso (Argand\sphinxhyphen {}Gauss)}{122}{subsection.21.7.2}%
+\contentsline {subsection}{\numberline {21.7.3}Operazioni con i numeri complessi}{122}{subsection.21.7.3}%
+\contentsline {subsection}{\numberline {21.7.4}Teorema fondamentale dell’algebra}{123}{subsection.21.7.4}%
+\contentsline {subsection}{\numberline {21.7.5}Numeri complessi e geometria nel piano euclideo}{123}{subsection.21.7.5}%
+\contentsline {subsection}{\numberline {21.7.6}Equazioni e disequazioni con i numeri complessi}{123}{subsection.21.7.6}%
+\contentsline {section}{\numberline {21.8}Note e dimostrazioni}{125}{section.21.8}%
+\contentsline {subsection}{\numberline {21.8.1}Altre operazioni e funzioni a variabile complessa}{125}{subsection.21.8.1}%
+\contentsline {subsubsection}{Potenza}{125}{subsubsection*.64}%
+\contentsline {subsubsection}{Esponenziale}{125}{subsubsection*.65}%
+\contentsline {subsubsection}{Logaritmo}{125}{subsubsection*.66}%
+\contentsline {subsection}{\numberline {21.8.2}Esponenziale complesso e formula di Eulero}{125}{subsection.21.8.2}%
+\contentsline {subsubsection}{Formula di Eulero}{126}{subsubsection*.67}%
+\contentsline {subsection}{\numberline {21.8.3}Formula di de Moivre}{127}{subsection.21.8.3}%
+\contentsline {chapter}{\numberline {22}Funzioni multi\sphinxhyphen {}variabile}{129}{chapter.22}%
+\contentsline {part}{VI\hspace {1em}Calcolo}{131}{part.6}%
+\contentsline {chapter}{\numberline {23}Introduzione al calcolo}{135}{chapter.23}%
+\contentsline {chapter}{\numberline {24}Introduzione all’analisi}{137}{chapter.24}%
+\contentsline {section}{\numberline {24.1}Funzioni reali a variabile reale, \(f: \symbb {R} \rightarrow \symbb {R}\)}{137}{section.24.1}%
+\contentsline {section}{\numberline {24.2}Limiti}{137}{section.24.2}%
+\contentsline {subsection}{\numberline {24.2.1}Cenni di topologia per il calcolo}{137}{subsection.24.2.1}%
+\contentsline {subsection}{\numberline {24.2.2}Definizione di limite}{137}{subsection.24.2.2}%
+\contentsline {section}{\numberline {24.3}Funzioni continue}{138}{section.24.3}%
+\contentsline {subsection}{\numberline {24.3.1}Definizione}{138}{subsection.24.3.1}%
+\contentsline {subsection}{\numberline {24.3.2}Punti di discontinuità}{138}{subsection.24.3.2}%
+\contentsline {subsection}{\numberline {24.3.3}Teoremi}{138}{subsection.24.3.3}%
+\contentsline {subsubsection}{Teorema di Weierstrass}{138}{subsubsection*.68}%
+\contentsline {subsubsection}{Teorema della permanenza del segno}{139}{subsubsection*.69}%
+\contentsline {subsubsection}{Teorema degli zeri}{139}{subsubsection*.70}%
+\contentsline {subsubsection}{Teorema dei valori intermedi}{140}{subsubsection*.71}%
+\contentsline {section}{\numberline {24.4}Operazioni e teoremi sui limiti}{140}{section.24.4}%
+\contentsline {subsection}{\numberline {24.4.1}Operazioni coi limiti}{140}{subsection.24.4.1}%
+\contentsline {subsubsection}{Limiti infiniti e infinitesimi}{141}{subsubsection*.72}%
+\contentsline {subsubsection}{Forme indeterminate}{141}{subsubsection*.73}%
+\contentsline {subsection}{\numberline {24.4.2}Teorema del confronto}{142}{subsection.24.4.2}%
+\contentsline {subsection}{\numberline {24.4.3}Teorema di de l’Hopital}{142}{subsection.24.4.3}%
+\contentsline {section}{\numberline {24.5}Limiti fondamentali}{142}{section.24.5}%
+\contentsline {section}{\numberline {24.6}Confronto di infiniti e infinitesimi}{143}{section.24.6}%
+\contentsline {subsection}{\numberline {24.6.1}Calcolo dei limiti con sostituzione degli infinitesimi o degli infiniti}{143}{subsection.24.6.1}%
+\contentsline {section}{\numberline {24.7}Calcolo dei limiti}{144}{section.24.7}%
+\contentsline {section}{\numberline {24.8}Metodo di bisezione}{144}{section.24.8}%
+\contentsline {section}{\numberline {24.9}Problemi}{144}{section.24.9}%
+\contentsline {subsection}{\numberline {24.9.1}Limiti}{144}{subsection.24.9.1}%
+\contentsline {subsection}{\numberline {24.9.2}Studio di funzione: dominio, continuità e limiti}{147}{subsection.24.9.2}%
+\contentsline {subsection}{\numberline {24.9.3}Metodo di bisezione}{149}{subsection.24.9.3}%
+\contentsline {section}{\numberline {24.10}Note e dimostrazioni}{149}{section.24.10}%
+\contentsline {subsection}{\numberline {24.10.1}Funzioni reali a variabile reale, \(f: \symbb {R} \rightarrow \symbb {R}\)}{149}{subsection.24.10.1}%
+\contentsline {subsection}{\numberline {24.10.2}Limiti}{149}{subsection.24.10.2}%
+\contentsline {subsection}{\numberline {24.10.3}Funzioni continue, \(f \in C^0\)}{149}{subsection.24.10.3}%
+\contentsline {subsection}{\numberline {24.10.4}Operazioni e teoremi sui limiti}{149}{subsection.24.10.4}%
+\contentsline {subsection}{\numberline {24.10.5}Contronto di infiniti e infinitesimi}{151}{subsection.24.10.5}%
+\contentsline {subsection}{\numberline {24.10.6}Limiti fondamentali}{151}{subsection.24.10.6}%
+\contentsline {chapter}{\numberline {25}Derivate}{153}{chapter.25}%
+\contentsline {section}{\numberline {25.1}Definizione}{153}{section.25.1}%
+\contentsline {section}{\numberline {25.2}Regole di derivazione}{153}{section.25.2}%
+\contentsline {section}{\numberline {25.3}Teoremi}{154}{section.25.3}%
+\contentsline {subsection}{\numberline {25.3.1}Teorema di Fermat}{154}{subsection.25.3.1}%
+\contentsline {subsection}{\numberline {25.3.2}Teorema di Rolle}{154}{subsection.25.3.2}%
+\contentsline {subsection}{\numberline {25.3.3}Teorema di Cauchy}{154}{subsection.25.3.3}%
+\contentsline {subsection}{\numberline {25.3.4}Teorema di Lagrange}{155}{subsection.25.3.4}%
+\contentsline {subsection}{\numberline {25.3.5}Teorema di de l’Hopital}{155}{subsection.25.3.5}%
+\contentsline {section}{\numberline {25.4}Derivate fondamentali}{155}{section.25.4}%
+\contentsline {section}{\numberline {25.5}Derivate di ordine superiore}{156}{section.25.5}%
+\contentsline {section}{\numberline {25.6}Serie di Taylor e MacLaurin}{156}{section.25.6}%
+\contentsline {subsection}{\numberline {25.6.1}Esempi}{157}{subsection.25.6.1}%
+\contentsline {section}{\numberline {25.7}Applicazioni}{157}{section.25.7}%
+\contentsline {subsection}{\numberline {25.7.1}Approssimazioni locali}{157}{subsection.25.7.1}%
+\contentsline {subsection}{\numberline {25.7.2}Studio di funzione}{157}{subsection.25.7.2}%
+\contentsline {subsection}{\numberline {25.7.3}Ottimizzazione}{157}{subsection.25.7.3}%
+\contentsline {subsection}{\numberline {25.7.4}Metodo di Netwon}{157}{subsection.25.7.4}%
+\contentsline {section}{\numberline {25.8}Problemi}{157}{section.25.8}%
+\contentsline {subsection}{\numberline {25.8.1}Calcolo derivate}{157}{subsection.25.8.1}%
+\contentsline {subsection}{\numberline {25.8.2}Serie di Taylor}{160}{subsection.25.8.2}%
+\contentsline {subsection}{\numberline {25.8.3}Problemi di geometria}{160}{subsection.25.8.3}%
+\contentsline {subsection}{\numberline {25.8.4}Studio di funzione: massimi, minimi e flessi; concavità}{160}{subsection.25.8.4}%
+\contentsline {subsection}{\numberline {25.8.5}Problemi di ottimizzazione}{161}{subsection.25.8.5}%
+\contentsline {subsection}{\numberline {25.8.6}Metodo di Newton}{162}{subsection.25.8.6}%
+\contentsline {section}{\numberline {25.9}Note e dimostrazioni}{162}{section.25.9}%
+\contentsline {subsection}{\numberline {25.9.1}Definizione}{162}{subsection.25.9.1}%
+\contentsline {subsection}{\numberline {25.9.2}Regole di derivazione}{162}{subsection.25.9.2}%
+\contentsline {subsection}{\numberline {25.9.3}Teoremi}{164}{subsection.25.9.3}%
+\contentsline {subsection}{\numberline {25.9.4}Derivate fondamentali}{165}{subsection.25.9.4}%
+\contentsline {subsection}{\numberline {25.9.5}Derivate di ordine superiore}{166}{subsection.25.9.5}%
+\contentsline {subsection}{\numberline {25.9.6}Serie di Taylor e MacLaurin}{166}{subsection.25.9.6}%
+\contentsline {chapter}{\numberline {26}Integrali}{169}{chapter.26}%
+\contentsline {section}{\numberline {26.1}Definizioni}{169}{section.26.1}%
+\contentsline {subsection}{\numberline {26.1.1}Interpretazione geometrica}{170}{subsection.26.1.1}%
+\contentsline {subsection}{\numberline {26.1.2}Integrale definito}{170}{subsection.26.1.2}%
+\contentsline {subsubsection}{Proprietà dell’integrale definito}{170}{subsubsection*.100}%
+\contentsline {subsection}{\numberline {26.1.3}Integrale indefinito}{170}{subsection.26.1.3}%
+\contentsline {section}{\numberline {26.2}Teoremi}{171}{section.26.2}%
+\contentsline {subsection}{\numberline {26.2.1}Teorema della media}{171}{subsection.26.2.1}%
+\contentsline {subsection}{\numberline {26.2.2}Teorema fondamentale del calcolo infinitesimale}{171}{subsection.26.2.2}%
+\contentsline {subsection}{\numberline {26.2.3}Derivata su dominio dipendente dalla variabile indipendente}{172}{subsection.26.2.3}%
+\contentsline {section}{\numberline {26.3}Integrali fondamentali}{172}{section.26.3}%
+\contentsline {section}{\numberline {26.4}Regole di integrazione}{173}{section.26.4}%
+\contentsline {subsection}{\numberline {26.4.1}Integrazione per parti}{173}{subsection.26.4.1}%
+\contentsline {subsection}{\numberline {26.4.2}Frazioni parziali}{173}{subsection.26.4.2}%
+\contentsline {subsection}{\numberline {26.4.3}Integrazione con sostituzione}{173}{subsection.26.4.3}%
+\contentsline {section}{\numberline {26.5}Tavola degli integrali indefiniti più comuni}{174}{section.26.5}%
+\contentsline {section}{\numberline {26.6}Problemi}{175}{section.26.6}%
+\contentsline {subsection}{\numberline {26.6.1}Calcolo integrali indefiniti}{175}{subsection.26.6.1}%
+\contentsline {subsection}{\numberline {26.6.2}Integrali definiti}{176}{subsection.26.6.2}%
+\contentsline {subsubsection}{Integrali impropri}{176}{subsubsection*.103}%
+\contentsline {subsection}{\numberline {26.6.3}Problemi di geometria}{177}{subsection.26.6.3}%
+\contentsline {subsubsection}{Area di superfici e lunghezza di curve}{177}{subsubsection*.106}%
+\contentsline {subsubsection}{Volumi e superficie di solidi di rotazione}{178}{subsubsection*.110}%
+\contentsline {chapter}{\numberline {27}Equazioni differenziali ordinarie}{179}{chapter.27}%
+\contentsline {section}{\numberline {27.1}Prime definizioni}{180}{section.27.1}%
+\contentsline {section}{\numberline {27.2}Classificazione, esempi e tecniche risolutive}{180}{section.27.2}%
+\contentsline {subsection}{\numberline {27.2.1}Equazioni lineari a coefficienti costanti}{180}{subsection.27.2.1}%
+\contentsline {subsubsection}{Definizione}{180}{subsubsection*.119}%
+\contentsline {subsubsection}{Esempi}{180}{subsubsection*.120}%
+\contentsline {subsubsection}{Soluzione generale}{183}{subsubsection*.121}%
+\contentsline {paragraph}{Soluzione dell’equazione omogenea}{183}{paragraph*.122}%
+\contentsline {paragraph}{Soluzione particolare dell’equazione completa}{185}{paragraph*.123}%
+\contentsline {subsubsection}{Soluzione degli esempi}{185}{subsubsection*.124}%
+\contentsline {subsection}{\numberline {27.2.2}Equazioni differenziali a variabili separabili: tecnica di soluzione di separazione delle variabili}{189}{subsection.27.2.2}%
+\contentsline {subsubsection}{Esempi}{189}{subsubsection*.125}%
+\contentsline {chapter}{\numberline {28}Calcolo infinitesimale \sphinxhyphen {} Problemi}{191}{chapter.28}%
+\contentsline {chapter}{\numberline {29}Introduzione al calcolo multi\sphinxhyphen {}variabile}{193}{chapter.29}%
+\contentsline {section}{\numberline {29.1}Limite di una funzione di più variabili}{194}{section.29.1}%
+\contentsline {subsection}{\numberline {29.1.1}Funzioni continue}{194}{subsection.29.1.1}%
+\contentsline {subsubsection}{Definizione}{194}{subsubsection*.126}%
+\contentsline {subsubsection}{Discontinuità}{195}{subsubsection*.127}%
+\contentsline {section}{\numberline {29.2}Derivate di funzioni di più variabili}{195}{section.29.2}%
+\contentsline {subsection}{\numberline {29.2.1}Derivate parziali}{195}{subsection.29.2.1}%
+\contentsline {subsection}{\numberline {29.2.2}Incremento di una funzione}{196}{subsection.29.2.2}%
+\contentsline {subsection}{\numberline {29.2.3}Differenziale}{196}{subsection.29.2.3}%
+\contentsline {section}{\numberline {29.3}Integrali su domini multi\sphinxhyphen {}dimensionali}{197}{section.29.3}%
+\contentsline {subsection}{\numberline {29.3.1}Definizioni}{197}{subsection.29.3.1}%
+\contentsline {subsubsection}{Interpretazione geometrica}{198}{subsubsection*.128}%
+\contentsline {subsubsection}{Proprietà dell’integrale definito}{198}{subsubsection*.129}%
+\contentsline {subsection}{\numberline {29.3.2}Regole di integrazione}{198}{subsection.29.3.2}%
+\contentsline {chapter}{\numberline {30}Introduzione al calcolo vettoriale su spazi euclidei}{201}{chapter.30}%
+\contentsline {section}{\numberline {30.1}Operatori differenziali in spazi euclidei}{202}{section.30.1}%
+\contentsline {subsection}{\numberline {30.1.1}Derivata direzionale}{202}{subsection.30.1.1}%
+\contentsline {subsection}{\numberline {30.1.2}Gradiente}{202}{subsection.30.1.2}%
+\contentsline {subsection}{\numberline {30.1.3}Divergenza}{203}{subsection.30.1.3}%
+\contentsline {subsection}{\numberline {30.1.4}Rotore}{204}{subsection.30.1.4}%
+\contentsline {section}{\numberline {30.2}Integrali in spazi euclidei}{204}{section.30.2}%
+\contentsline {section}{\numberline {30.3}Problemi}{204}{section.30.3}%
+\contentsline {subsection}{\numberline {30.3.1}Operatori differenziali}{204}{subsection.30.3.1}%
+\contentsline {subsection}{\numberline {30.3.2}Integrali}{204}{subsection.30.3.2}%
+\contentsline {subsubsection}{Geometria}{205}{subsubsection*.130}%
+\contentsline {subsubsection}{Fisica}{205}{subsubsection*.135}%
+\contentsline {part}{VII\hspace {1em}Statistica}{207}{part.7}%
+\contentsline {chapter}{\numberline {31}Introduzione alla statistica}{211}{chapter.31}%
+\contentsline {part}{VIII\hspace {1em}Indice}{213}{part.8}%
+\contentsline {chapter}{\numberline {32}Indice}{215}{chapter.32}%
+\contentsline {chapter}{Proof Index}{217}{section*.138}%

@@ -17,6 +17,8 @@ parts:
   numbered: True
   chapters:
   - file: ch/set.md
+    sections:
+    - file: ch/set/numeric-sets.md
   - file: ch/logics.md
 - caption: Algebra
   numbered: True
@@ -67,6 +69,9 @@ parts:
     sections:
     - file: ch/exponential_logarithm-proof
   - file: ch/algebra/complex-algebra
+    sections:
+    - file: ch/algebra/complex-algebra-problems
+    - file: ch/algebra/complex-algebra-notes
   - file: ch/precalculus/multivariable-real-fun
 - caption: Calcolo
   numbered: True

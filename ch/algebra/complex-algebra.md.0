@@ -1,0 +1,189 @@
+<!--
+```{article-info}
+:author: basics
+:date: "{sub-ref}`today`"
+:read-time: "{sub-ref}`wordcount-minutes` min read"
+```
+-->
+
+(math-hs:algebra:complex)=
+# Algebra complessa
+
+Esistono collegamenti a questo capitolo da:
+- la sezione sui [numeri complessi](sets:numeric:c) nel capitolo sugli [insiemi numerici](sets:numeric)
+- la sezione sull'[algebra sui numeri complessi](math-hs:algebra:complex:link) nel capitolo sull'[algebra](math-hs:algebra)
+
+
+<span style="color:red">In questa sezione viene introdotto l'insieme dei numeri complessi e le operazioni su di essi che permettono di definire l'algebra complessa.
+
+I numeri reali sono sottoinsieme dei numeri complessi, $\mathbb{R} \subset \mathbb{C}$. La definizione di operazioni e funzioni, come l'esponenziale, sui numeri complessi viene data come **estensione ai numeri complessi** delle definizioni note sui numeri reali.</span>
+
+I numeri complessi risultano utili in molti ambiti della matematica e della scienza, dalla fisica all'ingegneria:
+- teorema fondamentale dell'algebra
+- rappresentazione efficace delle funzioni trigonometriche, grazie all'identità di Eulero
+- soluzione di equazioni differenziali
+- ...
+
+<!--
+**Argomenti**
+- Definizioni e rappresentazioni
+- Algebra:
+  - operazioni
+  - equazioni e disequazioni
+  - teorema fondamentale dell'algebra
+-->
+
+(math-hs:algebra:complex:def)=
+## Definizioni
+I numeri complessi estendono il campo dei numeri reali, $\mathbb{R} \subset \mathbb{C}$. Viene inizialmente definita l'**unità immaginaria**, $i$, come la radice quadra di $-1$,
+
+$$i := \sqrt{-1} \ ,$$
+
+**todo** *discutere la definizione, facendo riferimento alle* **potenze**
+
+```{prf:definition} Numeri complessi - rappresentazione cartesiana
+L'insieme dei numeri complessi, indicato con $\mathbb{C}$, è l'insieme di quei numeri che possono essere scritti come 
+
+$$z = x + i y \ ,$$
+
+con $x, \ y \in \mathbb{R}$.
+```
+
+(math-hs:algebra:complex:complex-plane)=
+## Rappresentazione nel piano complesso
+Ogni numero complesso $z \subset \mathbb{C}$ può essere associato a un punto del piano complesso $\mathbb{C}$; l'uso di coordinate cartesiane o polari per la descrizione dei punti del piano $\mathbb{R}^2$ suggerisce due tipi di rappresentazioni per un numero complesso:
+
+- la **rappresentazione cartesiana** associa l'asse delle ascisse alla parte reale $x$ e l'asse delle ordinate alla parte immaginaria $y$,
+
+  $$z = x + i y$$
+
+- la **rappresentazione polare**; usando la legge di trasformazione tra coordinate polari $(r, \theta)$ e coordinate cartesiante $(x,y)$
+
+  $$\begin{cases}
+    x = r \cos \theta \\
+    y = r \sin \theta
+  \end{cases}$$
+
+  e la [formula di Eulero](math-hs:algebra:complex:notes:euler), $e^{i \theta} = \cos \theta + i \sin \theta$, è possibile scrivere un numero complesso in forma polare,
+
+  $$z = x + i y = r \cos \theta + i r \sin \theta = r \left( \cos \theta + i \sin \theta \right) = r e^{i \theta} \ .$$
+
+
+```{note}
+Le due rappresentazioni non sono equivalenti. Mentre la rappresentazione cartesiana permette di creare una relazione biunivoca tra i numeri complessi $z = x + i \, y$ e i punti nel piano $(x, \ y)$, la rappresentazione polare assegna infiniti numeri complessi, seppur di uguale valore $r \, e^{i \theta} = r \, e^{i (\theta + n \, 2 \pi)}$, con $n \in \mathbb{Z}$ allo stesso punto nello spazio.
+```
+
+<!--
+### Operazioni: somma e moltiplicazione
+I numeri complessi formano la struttura algebrica di **campo** con le operazioni di somma e prodotto. Dati due numeri complessi $z_1 = x_1 + i y_1$, $z_2 = x_2 + i y_2$, vengono definiti
+
+- la somma
+
+   $$z_1 + z_2 = (x_1 + x_2) + i (y_1 + y_2) \ $$
+
+- il prodotto,
+
+  $$\begin{aligned}
+    z_1 \, z_2 & = (x_1 + i y_1) (x_2 + i y_2) = \\
+    & = x_1 \, x_2 - y_1 \, y_2 + i ( x_1 \, y_2 + x_2 \, y_1 )
+   \end{aligned}$$
+
+### Altre operazioni
+
+- complesso coniugato
+
+  $$z^* = (x + i y)^* := x - i y$$
+
+- modulo o valore assoluto
+
+  $$|z| = \sqrt{x^2 + y^2} = \sqrt{z^* z}$$ (eqn:complex:module:ztz)
+
+```{exercise} Relazione tra modulo e complesso coniugato
+Dimostrazione della relazione {eq}`eqn:complex:module:ztz`
+
+$$z^* z = ( x - i y )( x + i y) = x^2 + i x y - i y x - i^2 y^2 = x^2 + y^2$$
+
+```
+
+- elevamento a potenza con esponente intero, $n \in \mathbb{N}$,
+  
+  $$z^n = \underbrace{z \cdot z \cdot \dots \cdot z}_{n \text{volte}}$$
+
+- elevamento a potenza con esponente reale **todo** ...
+-->
+
+
+## Operazioni con i numeri complessi
+- somma
+
+  $$z_1 + z_2 = (x_1 + x_2) + i(y_1 + y_2)$$
+
+- prodotto
+
+  $$\begin{aligned}
+    z_1 \, z_2 
+    & = r_1 \, r_2 e^{i(\theta_1 + \theta_2)} = \\
+    & = (x_1 + i y_1 ) (x_2 + i y_2) = (x_1 x_2 - y_1 y_2)+i(x_1 y_2 + y_1 x_2) \\
+  \end{aligned}$$
+
+- complesso coniugato
+
+  $$z^* = x - i y = r e^{-i\theta} $$
+
+- valore assoluto
+  
+  $$|z| = \sqrt{x^2 + y^2} = r = \sqrt{z^* z}$$
+
+- potenza ed esponenziale
+
+  $$z^a = \left(r e^{i\theta} \right)^a = r^a e^{i a \theta}$$
+
+  $$a^{i y} = \left(e^{\ln a} \right)^{iy} = e^{i y \ln a} = \cos ( y \ln a ) + i \sin ( y \ln a )$$
+
+  $$a^z = a^{x+iy} = a^x a^{iy} = a^x \left( \cos ( y \ln a ) + i \sin ( y \ln a ) \right)$$
+
+  $$z^w = \left(r e^{i \theta}\right)^{( u + i v )} = r^{u+iv} e^{i \theta (u+iv)} = r^u e^{-\theta v} e^{i \left( v \ln r + \theta u \right)} $$
+
+  **todo** discutere il caso di potenze intere, potenze razionali, potenze irrazionali,... *con grafico*
+
+- logaritmo, con base reale positiva, $a > 0$
+  
+  $$\log_a z = \log_a \left( r \, e^{i ( \theta + n \, 2 \pi )} \right) = \log_a r + \log_a e^{i (\theta + n \, 2 \pi )} = \log_a r + i \, \frac{1}{\ln a} \, \left( \theta + n \, 2 \pi \right)$$
+
+  avendo usato le proprietà dei logaritmi 
+
+   $$\begin{aligned}
+     \log ( a b ) & = \log a + \log b \\
+     \log_a b & = \frac{\log_c b}{\log_c a}
+   \end{aligned}$$
+<!--
+Osservando la relazione $w = a^{z} e^{i n 2\pi}$, si può definire l'operazione inversa come il logaritmo di $w$ in base $a$, $
+
+  $$z + i n 2 \pi = \log_a w = \log_a \left( a^x \left( \cos ( y \ln a ) + i \sin ( y \ln a ) \right) \right)$$
+-->
+  
+## Altri argomenti/proprietà
+
+$$\begin{aligned}
+  \text{re} \{ z \} & = \frac{1}{2} \left( z + z^* \right) \\
+  \text{im} \{ z \} & = \frac{1}{2} \left( z - z^* \right) \\
+\end{aligned}$$
+
+$$e^{i \alpha} e^{i \beta} = e^{i (\alpha + \beta)}$$
+$$\left( e^{i \alpha} \right)^n = e^{i n \alpha}$$
+
+### Teorema fondamentale dell'algebra
+Ogni polinomio a coefficienti reali (**todo** o anche complessi) di grado $n$, $p_n(x) = a_n x^n + a_{n-1} x^{n-1} + \dots a_1 x + a_0$ può essere fattorizzato come prodotto di $n$ binomi
+
+$$p_n(x) = a_n ( x - z_1 )( x - z_2 )\dots( x - z_n) \ ,$$
+
+e i numeri $z_k \in \mathbb{C}$, $k = 1:n$, sono chiamati **zeri** del polinomio.
+
+Come diretta conseguenza, ogni equazione polinomiale di grado $n$, $p_n(x) = 0$, ammette $n$ soluzioni complesse coincidenti con gli zeri $z_k$ del polinomio $p_n(x)$.
+
+
+## Equazioni e disequazioni con i numeri complessi
+Le equazioni e le disequazioni con i numeri complessi possono essere ricondotti a problemi che coinvolgono una coppia di variabili reali, tipicamente le componenti reale e immaginaria, o il modulo e l'argomento, che descrivono il piano dei numeri complessi.
+
+**todo**
+

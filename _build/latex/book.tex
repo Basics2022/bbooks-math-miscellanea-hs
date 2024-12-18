@@ -87,7 +87,7 @@
         
 
 \title{Matematica per le scuole superiori}
-\date{13 dic 2024}
+\date{19 dic 2024}
 \release{}
 \author{basics}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -489,6 +489,9 @@ Una funzione \sphinxstylestrong{biunivoca} è anche \sphinxstylestrong{invertibi
 
 \section{Algebra di insiemi}
 \label{\detokenize{ch/set:algebra-di-insiemi}}\label{\detokenize{ch/set:math-hs-set-algebra}}
+\sphinxAtStartPar
+\sphinxstylestrong{todo} Qui o in un capitolo su {\hyperref[\detokenize{ch/algebra/set-algebra-link:math-hs-algebra-set-link}]{\sphinxcrossref{\DUrole{std,std-ref}{algebra di insiemi}}}} nella parte di {\hyperref[\detokenize{ch/algebra:math-hs-algebra}]{\sphinxcrossref{\DUrole{std,std-ref}{algebra}}}}?
+
 
 \subsection{Immagine di una funzione}
 \label{\detokenize{ch/set:immagine-di-una-funzione}}\label{\detokenize{ch/set:math-hs-fun-range}}
@@ -606,6 +609,261 @@ Una funzione \sphinxstylestrong{biunivoca} è anche \sphinxstylestrong{invertibi
 \sphinxstepscope
 
 
+\section{Insiemi numerici}
+\label{\detokenize{ch/set/numeric-sets:insiemi-numerici}}\label{\detokenize{ch/set/numeric-sets:sets-numeric}}\label{\detokenize{ch/set/numeric-sets::doc}}
+\sphinxAtStartPar
+Partendo dai {\hyperref[\detokenize{ch/set/numeric-sets:sets-numeric-n}]{\sphinxcrossref{\DUrole{std,std-ref}{numeri naturali}}}}, si introducono gli insiemi numerici {\hyperref[\detokenize{ch/set/numeric-sets:sets-numeric-z}]{\sphinxcrossref{\DUrole{std,std-ref}{interi}}}} e {\hyperref[\detokenize{ch/set/numeric-sets:sets-numeric-q}]{\sphinxcrossref{\DUrole{std,std-ref}{razionali}}}} come chiusura dei numeri naturali rispetto alle operazioni inverse di addizione e moltiplicazione. L’insieme dei {\hyperref[\detokenize{ch/set/numeric-sets:sets-numeric-r}]{\sphinxcrossref{\DUrole{std,std-ref}{numeri reali}}}} costituisce un insieme continuo che «chiude i buchi» ancora presenti nell’insieme dei numeri razionali. Infine si introduce la necessità dei {\hyperref[\detokenize{ch/set/numeric-sets:sets-numeric-c}]{\sphinxcrossref{\DUrole{std,std-ref}{numeri complessi}}}} come chiusura algebrica dei numeri reali…
+\sphinxstylestrong{todo} \sphinxstyleemphasis{controllare definizione di chiusura, che non ha questo significato}
+
+
+\subsection{Numeri naturali \protect\(\mathbb{N}\protect\)}
+\label{\detokenize{ch/set/numeric-sets:numeri-naturali-mathbb-n}}\label{\detokenize{ch/set/numeric-sets:sets-numeric-n}}
+\sphinxAtStartPar
+L’insieme dei numeri naturali,
+\begin{equation*}
+\begin{split}\mathbb{N} = \{ 0, 1, 2, 3, \dots \} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+contiene i numeri che intuitivamente vengono usati per contare (o ordinare), risultato del processo di astrazione che associa a un gruppo di oggetti la sua quantità. Dal punto di vista storico, il processo di astrazione che ha condotto al concetto di unità \sphinxhyphen{} il numero \(1\) \sphinxhyphen{} e i suoi multipli \sphinxhyphen{} i numeri naturali maggiori di \(1\) \sphinxhyphen{} viene fatto risalire all’epoca presitorica, ed esistono diversi reperti storici che testimoniano il loro uso in Mesopotamia e in Egitto nel III millennio a.C. L’introduzione del \sphinxstylestrong{numero \(0\)} avviene inizialmente nelle civiltà mediterranee come segnaposto, e successivamente in India tra il VI se il VII secolo d.C. come numero nel \sphinxstylestrong{sistema decimale posizionale} formulato in India e diffusosi tra le popolazioni persiane e arabe, prima di arrivare in Europa.
+
+\sphinxAtStartPar
+Sull’insieme dei numeri naturali si possono definire alcune \sphinxstyleemphasis{operazioni chiuse}{[}\textasciicircum{}closed\sphinxhyphen{}operation{]} sull’insieme dei numeri naturali:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+addizione, \(+\)
+
+\item {} 
+\sphinxAtStartPar
+moltiplicazione, \(\times\) o \(\cdot\)
+
+\end{itemize}
+
+\sphinxAtStartPar
+che hanno le seguenti proprietà:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+commutatività
+\begin{equation*}
+\begin{split}\begin{aligned}
+    a + b & = b + a \\
+    a \times b & = b \times a \\
+  \end{aligned}\end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+associatività
+\begin{equation*}
+\begin{split}\begin{aligned}
+    (a + b) + c & = a + (b+c) \\
+    (a \times b) \times c & = a \times ( b \times c ) \\
+  \end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e quindi si può evitare l’uso di parentesi inutili nella somma o nella moltiplicazione di tre numeri \(a+b+c+\) o \(a \times b \times c\)
+
+\item {} 
+\sphinxAtStartPar
+esistenza dell’elemento identità, il numero \(0\) per l’addizione, il numero \(1\) per la moltiplicazione
+\begin{equation*}
+\begin{split}\begin{aligned}
+    a + 0 & = a \\
+    a \times 1 & = a \\
+  \end{aligned}\end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+distribuitività della moltiplicazione sull’addizione
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleemphasis{fattorizzazione dello zero: se \(a \times b = 0\) allora almeno uno dei due fattori è uguale a zero}
+
+\end{itemize}
+
+\sphinxAtStartPar
+Mentre le operazioni di addizione e moltiplicazione sono chiuse, le operazioni di sottrazione e divisione non sono chiuse sui numeri naturali. In generale, la sottrazione di due numeri naturali, \(a, b \in \mathbb{N}\) è un {\hyperref[\detokenize{ch/set/numeric-sets:sets-numeric-z}]{\sphinxcrossref{\DUrole{std,std-ref}{numero intero}}}}, \(a - b \in \mathbb{Z}\); la divisione tra due numeri naturali \(a, b \in \mathbb{N}\) è un {\hyperref[\detokenize{ch/set/numeric-sets:sets-numeric-q}]{\sphinxcrossref{\DUrole{std,std-ref}{numero razionale}}}} \(\frac{a}{b} \in \mathbb{Q}\) positivo.
+
+
+\subsubsection{Altre operazioni}
+\label{\detokenize{ch/set/numeric-sets:altre-operazioni}}
+
+\paragraph{Sottrazione}
+\label{\detokenize{ch/set/numeric-sets:sottrazione}}
+
+\paragraph{Divisione}
+\label{\detokenize{ch/set/numeric-sets:divisione}}
+
+\paragraph{Potenza}
+\label{\detokenize{ch/set/numeric-sets:potenza}}
+\sphinxAtStartPar
+La potenza \(n\)\sphinxhyphen{}esima, \(n \in \mathbb{N}^+\) è definita come
+\begin{equation*}
+\begin{split}a^n = \underbrace{a \cdot \dots \cdot a}_{n \text{ volte}} \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{Prodotto delle potenze, \(a^n \, a^m = a^{m+n}\).}
+\begin{equation*}
+\begin{split}a^n \, a^m = \underbrace{a \cdot \dots \cdot a}_{n \text{ volte}} \underbrace{a \cdot \dots \cdot a}_{m \text{ volte}} = 
+ \underbrace{a \cdot \dots \cdot a}_{m+n \text{ volte}} = a^{m+n} \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{Potenza \(a^0\).} La potenza \(a^0\) viene definita osservando che \(\frac{a^n}{a} = a^{n-1}\),
+\begin{equation*}
+\begin{split}\begin{aligned}
+& \dots \\
+a^3 & = a \cdot a \cdot a \\
+a^2 & = a \cdot a \\
+a^1 & = a  \\
+a^0 & = 1  \\
+\end{aligned}\end{split}
+\end{equation*}
+
+\subsection{Numeri interi \protect\(\mathbb{Z}\protect\)}
+\label{\detokenize{ch/set/numeric-sets:numeri-interi-mathbb-z}}\label{\detokenize{ch/set/numeric-sets:sets-numeric-z}}
+\sphinxAtStartPar
+L’insieme dei numeri interi,
+\begin{equation*}
+\begin{split}\mathbb{Z} = \{ \dots, -2, -1, 0, 1, 2, \dots \} \,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+…\sphinxstylestrong{todo} Sull’insieme dei numeri interi si possono definire alcune operazioni chiuse:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+addizione,
+
+\item {} 
+\sphinxAtStartPar
+sottrazione,
+
+\item {} 
+\sphinxAtStartPar
+prodotto,
+
+\end{itemize}
+
+
+\subsubsection{Altre operazioni}
+\label{\detokenize{ch/set/numeric-sets:id1}}
+
+\paragraph{Divisione}
+\label{\detokenize{ch/set/numeric-sets:id2}}
+
+\paragraph{Potenza}
+\label{\detokenize{ch/set/numeric-sets:id3}}
+\sphinxAtStartPar
+\sphinxstylestrong{Regola dei segni \sphinxhyphen{} I \sphinxhyphen{} moltiplicazione.}
+\begin{equation*}
+\begin{split}\begin{aligned}
+& \dots \\
+ 2   \cdot a & = a + a \\
+ 1   \cdot a & = a  \\
+ 0   \cdot a & = 0  \\
+ (-1)\cdot a & = -a  \\
+ (-2)\cdot a & = -a-a  \\
+& \dots \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Se \(a > 0\) è positivo, il suo prodotto per un numero positivo \(b > 0\) è un numero positivo, \(a \cdot b > 0\); il suo prodotto per un numero negativo \(b < 0 \), \(b = -1 \cdot |b|\) è il numero negativo \(a \cdot b = - 1 \cdot a \cdot |b|\). Se \(a < 0\) è un numero negativo, vale il viceversa. La regola può essere riassunta scrivendo i due numeri
+\begin{equation*}
+\begin{split}a = \text{sign}(a) \cdot |a| \qquad , \qquad b = \text{sign}(b) \cdot |b|\end{split}
+\end{equation*}
+\sphinxAtStartPar
+interpretando \(\text{sign}(a) = -1\) se \(a < 0\) e \(\text{sign}(a) = 1\) se \(a > 0\), come
+\begin{equation*}
+\begin{split}a \cdot b = \text{sign}(a) \cdot \text{sign}(b) \cdot |a| \, |b| \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{Regola dei segni \sphinxhyphen{} II \sphinxhyphen{} potenze naturali.} Scrivendo il numero \(a\) come prodotto del suo segno e del suo valore assoluto, \(a = \text{sign}(a) |a|\), la sua potenza \(p\)\sphinxhyphen{}esima, con \(p \in \mathbb{N}\) è il numero
+\begin{equation*}
+\begin{split}a^p = (\text{sign}(a))^p \, |a|^p \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+positivo se \(a\) è positivo per qualsiasi esponente naturale \(p\), o se \(a\) è negativo per esponenti \(p\) pari, negativo solo se \(a\) negativo e \(p\) dispari.
+
+\sphinxAtStartPar
+\sphinxstylestrong{Potenze con esponenti negativi, \(a^{-n} = \frac{1}{a^n}\)} La potenza di un numero reale con esponente negativo è un numero razionale,
+\begin{equation*}
+\begin{split}a^0 = a^{n-n} = a^{n} \, a^{-n} \qquad \rightarrow \qquad a^{-n} = \frac{1}{a^n}\end{split}
+\end{equation*}
+
+\subsection{Numeri razionali \protect\(\mathbb{Q}\protect\)}
+\label{\detokenize{ch/set/numeric-sets:numeri-razionali-mathbb-q}}\label{\detokenize{ch/set/numeric-sets:sets-numeric-q}}
+\sphinxAtStartPar
+I numeri razionali sono i numeri che possono essere scritti come frazione (divisione) di due numeri interi,
+\begin{equation*}
+\begin{split}\mathbb{Q} = \left\{ q \ \bigg| \ q = \frac{m}{n}, \ m, n \in \mathbb{Z}, n \ne 0 \right\} \ ,\end{split}
+\end{equation*}
+
+\subsubsection{Rappresentazione decimale}
+\label{\detokenize{ch/set/numeric-sets:rappresentazione-decimale}}\label{\detokenize{ch/set/numeric-sets:sets-numeric-q-decimals}}
+\sphinxAtStartPar
+I numeri razionali sono i numeri e solo quelli che hanno una rappresentazione decimale con una parte decimale finita o periodica.
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo} \sphinxstyleemphasis{vedi il pdf open\_school\_book}
+
+
+\subsubsection{Operazioni}
+\label{\detokenize{ch/set/numeric-sets:operazioni}}\label{\detokenize{ch/set/numeric-sets:sets-numeric-q-operations}}
+
+\paragraph{Potenza}
+\label{\detokenize{ch/set/numeric-sets:id4}}
+\sphinxAtStartPar
+\sphinxstylestrong{Potenza con base razionale ed esponente intero.}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Potenza con esponente razionale.} Una potenza \(a^{\frac{p}{q}}\) con esponente razionale non intero, \(p, q \in \mathbb{Z}\), \(\frac{p}{q} \notin \mathbb{Z}\), è ben definita solo se la base è non\sphinxhyphen{}negativa.
+
+\sphinxAtStartPar
+In questo caso, per \(a > 0\), le seguenti interpretazioni sono equivalenti
+\begin{equation*}
+\begin{split}a^{\frac{p}{q}} = {\sqrt[q]{a}}^p = \sqrt[q]{a^p} \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+In caso \(a < 0\), l’operazione non è ben definita nell’ambito dei numeri razionali e nemmeno nell’ambito dei numeri reali,
+\begin{equation*}
+\begin{split}a^{\frac{p}{q}} = ? =
+\begin{cases}
+  {\sqrt[q]{a}}^p & \text{radice non definita se $a<0$ e $q$ pari} \\
+  \sqrt[q]{a^p}   & \text{radice non definita se $a<0$, $p$ dispari e $q$ pari} \\
+  a^{\frac{2p}{2q}} = \sqrt[2q]{{a}^{2p}} ={\sqrt[2q]{a}^{2p}} & \text{operazione definita, ma è lecita?} \\
+  \dots
+\end{cases}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+L’operazione risulta ben definita nell’ambito dei numeri complessi, \sphinxstylestrong{todo} \sphinxstyleemphasis{link}
+
+
+\subsection{Numeri reali \protect\(\mathbb{R}\protect\)}
+\label{\detokenize{ch/set/numeric-sets:numeri-reali-mathbb-r}}\label{\detokenize{ch/set/numeric-sets:sets-numeric-r}}
+\sphinxAtStartPar
+In maniera non formale, e per quello che ci serve basta e avanza, l’insieme dei numeri reali \(\mathbb{R}\) è l’insieme dei numeri che possono essere scritti nel sistema decimale posizionale \sphinxhyphen{} quello che usiamo correntemente oggi \sphinxhyphen{} come numeri con una parte decimale finita o infinita.
+
+\sphinxAtStartPar
+I numeri reali possono essere banalmente definiti come unione dei numeri razionali e irrazionali: i {\hyperref[\detokenize{ch/set/numeric-sets:sets-numeric-q-decimals}]{\sphinxcrossref{\DUrole{std,std-ref}{numeri razionali possono essere definiti}}}} come i numeri che hanno una rappresentazione decimale con parte decimale finita o periodica; i numeri irrazionali possono quindi essere definiti come i numeri che non hanno una tale definizione. Date le definizioni mutuamente esclusive, i due insiemi hanno intersezione nulla e la loro unione è l’insieme di tutti i numeri che possono avere rappresentazione decimale, cioè i numeri reali.
+
+
+\subsubsection{Operazioni}
+\label{\detokenize{ch/set/numeric-sets:id5}}
+\sphinxAtStartPar
+Le operazioni per i numeri reali sono già state definite per quanto riguarda i numeri reali razionali; queste operazioni possono essere estese ai numeri reali irrazionali considerando un loro limite razionale, cioè applicandole a numeri razionali che approssimano (con accuratezza qualsiasi) i numeri irrazionali.
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo} \sphinxstyleemphasis{esempi}
+
+
+\subsection{Numeri complessi \protect\(\mathbb{C}\protect\)}
+\label{\detokenize{ch/set/numeric-sets:numeri-complessi-mathbb-c}}\label{\detokenize{ch/set/numeric-sets:sets-numeric-c}}
+\sphinxAtStartPar
+Per la discussione dei numeri complessi si rimanda al capitolo di {\hyperref[\detokenize{ch/algebra/complex-algebra:math-hs-algebra-complex}]{\sphinxcrossref{\DUrole{std,std-ref}{algebra sui numeri complessi}}}} nella parte di {\hyperref[\detokenize{ch/precalculus:math-hs-precalculus}]{\sphinxcrossref{\DUrole{std,std-ref}{precalcolo}}}}.
+
+\sphinxstepscope
+
+
 \chapter{Logica}
 \label{\detokenize{ch/logics:logica}}\label{\detokenize{ch/logics:math-hs-logics}}\label{\detokenize{ch/logics::doc}}
 
@@ -654,22 +912,22 @@ L’algebra si occupa dello studio di:
 \subsubsection*{Argomenti del capitolo}
 
 \sphinxAtStartPar
-{\hyperref[\detokenize{ch/algebra/real-algebra:math-hs-algebra-real}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Algebra sui numeri reali, \(\mathbb{R}\)}}}}}.
+{\hyperref[\detokenize{ch/algebra/real-algebra:math-hs-algebra-real}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Algebra sui numeri reali, \(\mathbb{R}\)}}}}}. Vengono richiamate le proprietà e le operazioni elementari sui numeri reali. Viene
 
 \sphinxAtStartPar
-{\hyperref[\detokenize{ch/algebra/real-n-algebra:math-hs-algebra-real-n}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Algebra sulle \(n\)\sphinxhyphen{}uple di numeri reali, \(\mathbb{R}^n\)}}}}}.
+{\hyperref[\detokenize{ch/algebra/real-n-algebra:math-hs-algebra-real-n}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Algebra sulle \(n\)\sphinxhyphen{}uple di numeri reali, \(\mathbb{R}^n\)}}}}}. Vengono affrontati sistemi di equazioni e disequazioni a più incognite.
 
 \sphinxAtStartPar
-{\hyperref[\detokenize{ch/algebra/linear-algebra:math-hs-algebra-linear}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Algebra lineare}}}}}.
+{\hyperref[\detokenize{ch/algebra/linear-algebra:math-hs-algebra-linear}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Algebra lineare}}}}}. Il capitolo si concentra sui sistemi di equazioni \sphinxstylestrong{lineari} a più incognite. Viene introdotto il \DUrole{xref,myst}{formalismo matriciale}, e discusse le operazioni e alcune proprietà delle matrici; le matrici vengono poi interpretate come funzioni lineari, come mostrato con esempi ed esercizi. Vengono mostrati diversi approcci alla \DUrole{xref,myst}{soluzione di sistemi lineari} e presentato il \DUrole{xref,myst}{teorema di Rouché\sphinxhyphen{}Capelli} che descrive le condizioni per l’esistenza e l’unicità di tali soluzioni.
 
 \sphinxAtStartPar
-{\hyperref[\detokenize{ch/algebra/vector-algebra:math-hs-algebra-vector}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Algebra vettoriale}}}}}.
+{\hyperref[\detokenize{ch/algebra/vector-algebra:math-hs-algebra-vector}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Algebra vettoriale}}}}}. Viene definita la struttura algebrica dello \DUrole{xref,myst}{spazio vettoriale}, elencandone proprietà e presentandone alcuni esempi. Tra questi esempi, viene discusso in dettaglio uno spazio vettoriale euclideo, modello dello della «concezione quotidiana» dello spazio: vengono presentate le operazioni che permettono di
 
 \sphinxAtStartPar
 {\hyperref[\detokenize{ch/algebra/complex-algebra:math-hs-algebra-complex}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Algebra sui numeri complessi, \(\mathbb{C}\)}}}}}.
 
 \sphinxAtStartPar
-{\hyperref[\detokenize{ch/set:math-hs-set-algebra}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Algebra di insiemi}}}}}.
+\DUrole{xref,myst}{\sphinxstylestrong{Algebra di insiemi}}.
 \subsubsection*{Approccio}
 
 \sphinxAtStartPar
@@ -2689,7 +2947,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-13 dic 2024
+19 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -2803,7 +3061,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-13 dic 2024
+19 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3077,7 +3335,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-13 dic 2024
+19 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3247,83 +3505,8 @@ il \sphinxstylestrong{prodotto vettoriale}, in termini del determinante formale
 \end{equation*}
 \sphinxstepscope
 
-\begin{sphinxuseclass}{sd-container-fluid}
-\begin{sphinxuseclass}{sd-sphinx-override}
-\begin{sphinxuseclass}{sd-p-0}
-\begin{sphinxuseclass}{sd-mt-2}
-\begin{sphinxuseclass}{sd-mb-4}
-\begin{sphinxuseclass}{sd-row}
-\begin{sphinxuseclass}{sd-row-cols-2}
-\begin{sphinxuseclass}{sd-gx-2}
-\begin{sphinxuseclass}{sd-gy-1}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\begin{sphinxuseclass}{sd-container-fluid}
-\begin{sphinxuseclass}{sd-sphinx-override}
-\begin{sphinxuseclass}{sd-row}
-\begin{sphinxuseclass}{sd-row-cols-2}
-\begin{sphinxuseclass}{sd-row-cols-xs-2}
-\begin{sphinxuseclass}{sd-row-cols-sm-3}
-\begin{sphinxuseclass}{sd-row-cols-md-3}
-\begin{sphinxuseclass}{sd-row-cols-lg-3}
-\begin{sphinxuseclass}{sd-gx-3}
-\begin{sphinxuseclass}{sd-gy-1}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-col-auto}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\sphinxAtStartPar
-basics
 
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-col-auto}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\sphinxAtStartPar
-13 dic 2024
 
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-col-auto}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\sphinxAtStartPar
-0 min read
-
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
 
 \chapter{Algebra complessa}
 \label{\detokenize{ch/algebra/complex-algebra-link:algebra-complessa}}\label{\detokenize{ch/algebra/complex-algebra-link:math-hs-algebra-complex-link}}\label{\detokenize{ch/algebra/complex-algebra-link::doc}}
@@ -3332,83 +3515,8 @@ La discussione dell”{\hyperref[\detokenize{ch/algebra/complex-algebra:math-hs-
 
 \sphinxstepscope
 
-\begin{sphinxuseclass}{sd-container-fluid}
-\begin{sphinxuseclass}{sd-sphinx-override}
-\begin{sphinxuseclass}{sd-p-0}
-\begin{sphinxuseclass}{sd-mt-2}
-\begin{sphinxuseclass}{sd-mb-4}
-\begin{sphinxuseclass}{sd-row}
-\begin{sphinxuseclass}{sd-row-cols-2}
-\begin{sphinxuseclass}{sd-gx-2}
-\begin{sphinxuseclass}{sd-gy-1}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\begin{sphinxuseclass}{sd-container-fluid}
-\begin{sphinxuseclass}{sd-sphinx-override}
-\begin{sphinxuseclass}{sd-row}
-\begin{sphinxuseclass}{sd-row-cols-2}
-\begin{sphinxuseclass}{sd-row-cols-xs-2}
-\begin{sphinxuseclass}{sd-row-cols-sm-3}
-\begin{sphinxuseclass}{sd-row-cols-md-3}
-\begin{sphinxuseclass}{sd-row-cols-lg-3}
-\begin{sphinxuseclass}{sd-gx-3}
-\begin{sphinxuseclass}{sd-gy-1}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-col-auto}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\sphinxAtStartPar
-basics
 
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-col-auto}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\sphinxAtStartPar
-13 dic 2024
 
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-col-auto}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\sphinxAtStartPar
-0 min read
-
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
 
 \chapter{Algebra di insiemi}
 \label{\detokenize{ch/algebra/set-algebra-link:algebra-di-insiemi}}\label{\detokenize{ch/algebra/set-algebra-link:math-hs-algebra-set-link}}\label{\detokenize{ch/algebra/set-algebra-link::doc}}
@@ -3460,7 +3568,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-13 dic 2024
+19 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3634,7 +3742,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-13 dic 2024
+19 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3783,7 +3891,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-13 dic 2024
+19 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -5102,83 +5210,8 @@ per \(z \in (-\infty, +\infty)\), \(\theta \in (0, 2 \pi)\).
 
 \sphinxstepscope
 
-\begin{sphinxuseclass}{sd-container-fluid}
-\begin{sphinxuseclass}{sd-sphinx-override}
-\begin{sphinxuseclass}{sd-p-0}
-\begin{sphinxuseclass}{sd-mt-2}
-\begin{sphinxuseclass}{sd-mb-4}
-\begin{sphinxuseclass}{sd-row}
-\begin{sphinxuseclass}{sd-row-cols-2}
-\begin{sphinxuseclass}{sd-gx-2}
-\begin{sphinxuseclass}{sd-gy-1}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\begin{sphinxuseclass}{sd-container-fluid}
-\begin{sphinxuseclass}{sd-sphinx-override}
-\begin{sphinxuseclass}{sd-row}
-\begin{sphinxuseclass}{sd-row-cols-2}
-\begin{sphinxuseclass}{sd-row-cols-xs-2}
-\begin{sphinxuseclass}{sd-row-cols-sm-3}
-\begin{sphinxuseclass}{sd-row-cols-md-3}
-\begin{sphinxuseclass}{sd-row-cols-lg-3}
-\begin{sphinxuseclass}{sd-gx-3}
-\begin{sphinxuseclass}{sd-gy-1}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-col-auto}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\sphinxAtStartPar
-basics
 
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-col-auto}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\sphinxAtStartPar
-13 dic 2024
 
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-col-auto}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\sphinxAtStartPar
-2 min read
-
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
 
 \chapter{Introduzione al pre\sphinxhyphen{}calcolo}
 \label{\detokenize{ch/precalculus:introduzione-al-pre-calcolo}}\label{\detokenize{ch/precalculus:math-hs-precalculus}}\label{\detokenize{ch/precalculus::doc}}
@@ -5293,7 +5326,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-13 dic 2024
+19 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -5514,7 +5547,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-13 dic 2024
+19 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -5677,7 +5710,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-13 dic 2024
+19 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -6521,86 +6554,24 @@ avendo usato il {\hyperref[\detokenize{ch/precalculus/polynomials:math-hs-precal
 
 \sphinxstepscope
 
-\begin{sphinxuseclass}{sd-container-fluid}
-\begin{sphinxuseclass}{sd-sphinx-override}
-\begin{sphinxuseclass}{sd-p-0}
-\begin{sphinxuseclass}{sd-mt-2}
-\begin{sphinxuseclass}{sd-mb-4}
-\begin{sphinxuseclass}{sd-row}
-\begin{sphinxuseclass}{sd-row-cols-2}
-\begin{sphinxuseclass}{sd-gx-2}
-\begin{sphinxuseclass}{sd-gy-1}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\begin{sphinxuseclass}{sd-container-fluid}
-\begin{sphinxuseclass}{sd-sphinx-override}
-\begin{sphinxuseclass}{sd-row}
-\begin{sphinxuseclass}{sd-row-cols-2}
-\begin{sphinxuseclass}{sd-row-cols-xs-2}
-\begin{sphinxuseclass}{sd-row-cols-sm-3}
-\begin{sphinxuseclass}{sd-row-cols-md-3}
-\begin{sphinxuseclass}{sd-row-cols-lg-3}
-\begin{sphinxuseclass}{sd-gx-3}
-\begin{sphinxuseclass}{sd-gy-1}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-col-auto}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\sphinxAtStartPar
-basics
 
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-col-auto}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\sphinxAtStartPar
-13 dic 2024
 
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-col-auto}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\sphinxAtStartPar
-3 min read
-
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
 
 \chapter{Algebra complessa}
 \label{\detokenize{ch/algebra/complex-algebra:algebra-complessa}}\label{\detokenize{ch/algebra/complex-algebra:math-hs-algebra-complex}}\label{\detokenize{ch/algebra/complex-algebra::doc}}
+\sphinxAtStartPar
+Esistono collegamenti a questo capitolo da:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+la sezione sui {\hyperref[\detokenize{ch/set/numeric-sets:sets-numeric-c}]{\sphinxcrossref{\DUrole{std,std-ref}{numeri complessi}}}} nel capitolo sugli {\hyperref[\detokenize{ch/set/numeric-sets:sets-numeric}]{\sphinxcrossref{\DUrole{std,std-ref}{insiemi numerici}}}}
+
+\item {} 
+\sphinxAtStartPar
+la sezione sull”{\hyperref[\detokenize{ch/algebra/complex-algebra-link:math-hs-algebra-complex-link}]{\sphinxcrossref{\DUrole{std,std-ref}{algebra sui numeri complessi}}}} nel capitolo sull”{\hyperref[\detokenize{ch/algebra:math-hs-algebra}]{\sphinxcrossref{\DUrole{std,std-ref}{algebra}}}}
+
+\end{itemize}
+
 \sphinxAtStartPar
 In questa sezione viene introdotto l’insieme dei numeri complessi e le operazioni su di essi che permettono di definire l’algebra complessa.
 
@@ -6632,12 +6603,19 @@ soluzione di equazioni differenziali
 
 
 \section{Definizioni}
-\label{\detokenize{ch/algebra/complex-algebra:definizioni}}
+\label{\detokenize{ch/algebra/complex-algebra:definizioni}}\label{\detokenize{ch/algebra/complex-algebra:math-hs-algebra-complex-def}}
 \sphinxAtStartPar
 I numeri complessi estendono il campo dei numeri reali, \(\mathbb{R} \subset \mathbb{C}\). Viene inizialmente definita l”\sphinxstylestrong{unità immaginaria}, \(i\), come la radice quadra di \(-1\),
 \begin{equation*}
-\begin{split}i := \sqrt{-1} \ .\end{split}
+\begin{split}i := \sqrt{-1} \ ,\end{split}
 \end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{todo} \sphinxstyleemphasis{discutere la definizione, facendo riferimento alle} \sphinxstylestrong{potenze}
+\label{ch/algebra/complex-algebra:definition-0}
+\begin{sphinxadmonition}{note}{Definition 20.1.1 (Numeri complessi \sphinxhyphen{} rappresentazione cartesiana)}
+
+
+
 \sphinxAtStartPar
 L’insieme dei numeri complessi, indicato con \(\mathbb{C}\), è l’insieme di quei numeri che possono essere scritti come
 \begin{equation*}
@@ -6645,52 +6623,680 @@ L’insieme dei numeri complessi, indicato con \(\mathbb{C}\), è l’insieme di
 \end{equation*}
 \sphinxAtStartPar
 con \(x, \ y \in \mathbb{R}\).
+\end{sphinxadmonition}
 
 
-\subsection{Operazioni: somma e moltiplicazione}
-\label{\detokenize{ch/algebra/complex-algebra:operazioni-somma-e-moltiplicazione}}
+\section{Rappresentazione dei numeri complessi nel piano complesso (Argand\sphinxhyphen{}Gauss)}
+\label{\detokenize{ch/algebra/complex-algebra:rappresentazione-dei-numeri-complessi-nel-piano-complesso-argand-gauss}}\label{\detokenize{ch/algebra/complex-algebra:math-hs-algebra-complex-complex-plane}}
 \sphinxAtStartPar
-I numeri complessi formano la struttura algebrica di \sphinxstylestrong{campo} con le operazioni di somma e prodotto. Dati due numeri complessi \(z_1 = x_1 + i y_1\), \(z_2 = x_2 + i y_2\), vengono definiti
+Ogni numero complesso \(z \subset \mathbb{C}\) può essere associato a un punto del piano complesso \(\mathbb{C}\); l’uso di coordinate cartesiane o polari per la descrizione dei punti del piano \(\mathbb{R}^2\) suggerisce due tipi di rappresentazioni per un numero complesso:
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
-la somma
+la \sphinxstylestrong{rappresentazione cartesiana} associa l’asse delle ascisse alla parte reale \(x\) e l’asse delle ordinate alla parte immaginaria \(y\),
 \begin{equation*}
-\begin{split}z_1 + z_2 = (x_1 + x_2) + i (y_1 + y_2) \ \end{split}
+\begin{split}z = x + i y\end{split}
 \end{equation*}
 \item {} 
 \sphinxAtStartPar
-il prodotto,
+la \sphinxstylestrong{rappresentazione polare}; usando la legge di trasformazione tra coordinate polari \((r, \theta)\) e coordinate cartesiante \((x,y)\)
+\begin{equation*}
+\begin{split}\begin{cases}
+    x = r \cos \theta \\
+    y = r \sin \theta
+  \end{cases}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e la {\hyperref[\detokenize{ch/algebra/complex-algebra-notes:math-hs-algebra-complex-notes-euler}]{\sphinxcrossref{\DUrole{std,std-ref}{formula di Eulero}}}}, \(e^{i \theta} = \cos \theta + i \sin \theta\), è possibile scrivere un numero complesso in forma polare,
+\begin{equation*}
+\begin{split}z = x + i y = r \cos \theta + i r \sin \theta = r \left( \cos \theta + i \sin \theta \right) = r e^{i \theta} \ .\end{split}
+\end{equation*}
+\end{itemize}
+
+\begin{sphinxadmonition}{note}{Nota:}
+\sphinxAtStartPar
+Le due rappresentazioni non sono equivalenti. Mentre la rappresentazione cartesiana permette di creare una relazione biunivoca tra i numeri complessi \(z = x + i \, y\) e i punti nel piano \((x, \ y)\), la rappresentazione polare assegna infiniti numeri complessi, seppur di uguale valore \(r \, e^{i \theta} = r \, e^{i (\theta + n \, 2 \pi)}\), con \(n \in \mathbb{Z}\) allo stesso punto nello spazio.
+\end{sphinxadmonition}
+
+
+\section{Operazioni con i numeri complessi}
+\label{\detokenize{ch/algebra/complex-algebra:operazioni-con-i-numeri-complessi}}\label{\detokenize{ch/algebra/complex-algebra:math-hs-algebra-complex-operations}}
+\sphinxAtStartPar
+Si presentano alcune opearazioni sui numeri complessi.
+
+\sphinxAtStartPar
+\sphinxstylestrong{Somma.} La somma di due numeri complessi è il numero complesso
+\begin{equation*}
+\begin{split}z_1 + z_2 = (x_1 + x_2) + i(y_1 + y_2)\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{Prodotto.} Il prodotto tra due numeri complessi \(z_1 = x_1 + i y_1 = r_1 e^{i \theta_1}\), \(z_2 = x_2 + i y_2 = r_2 e^{i \theta_2}\), è il numero complesso \(z_1 \cdot z_2 \in \mathbb{C}\) che può essere calcolato usando la proprietà distributiva tra somma e prodotto e la proprietà degli esponenti,
 \begin{equation*}
 \begin{split}\begin{aligned}
-    z_1 \, z_2 & = (x_1 + i y_1) (x_2 + i y_2) = \\
-    & = x_1 \, x_2 - y_1 \, y_2 + i ( x_1 \, y_2 + x_2 \, y_1 )
-   \end{aligned}\end{split}
+    z_1 \, z_2 
+    & = r_1 \, r_2 e^{i(\theta_1 + \theta_2)} = \\
+    & = (x_1 + i y_1 ) (x_2 + i y_2) = (x_1 x_2 - y_1 y_2)+i(x_1 y_2 + y_1 x_2) \\
+  \end{aligned}\end{split}
 \end{equation*}
-\item {} 
 \sphinxAtStartPar
-elevamento a potenza con esponente intero, \(n \in \mathbb{N}\),
+\sphinxstylestrong{Complesso coniugato.} Il complesso coniugato \(z^*\) di un numero compless \(z \in \mathbb{C}\) è il numero complesso con stessa parte reale e parte immaginaria opposta. Analogamente ha stesso modulo e argomento (definito tra \(-\pi\) e \(\pi\)) opposto
 \begin{equation*}
-\begin{split}z^n = \underbrace{z \cdot z \cdot \dots \cdot z}_{n \text{volte}}\end{split}
+\begin{split}z^* := x - i y = r e^{-i\theta} \end{split}
+\end{equation*}
+\sphinxAtStartPar
+E” immediato {\hyperref[\detokenize{ch/algebra/complex-algebra-problems:math-hs-algebra-complex-problems-operations-cc-re-im}]{\sphinxcrossref{\DUrole{std,std-ref}{verificare}}}} le seguenti identità
+\begin{equation}\label{equation:ch/algebra/complex-algebra:complex:cc:re-im}
+\begin{split}\begin{aligned}
+  \text{re}\{ z \} & = x = \frac{z + z^*}{2} \\
+  \text{im}\{ z \} & = y = \frac{z - z^*}{2i} \\
+\end{aligned}\end{split}
+\end{equation}
+\sphinxAtStartPar
+\sphinxstylestrong{Valore assoluto.} Il valore assoluto di un numero complesso è uguale a
+\begin{equation*}
+\begin{split}\begin{aligned}
+    |z| & := \sqrt{z^* z} = \\
+    & = \sqrt{(x-iy)(x+iy)} =  \sqrt{x^2 + y^2} = \\
+    & = \sqrt{r e^{-i\theta} r e^{i\theta}} = r
+  \end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{Potenza.} Si presenta l’elevamento a potenza di un numero complesso,
+\begin{equation*}
+\begin{split}z = A e^{i (\alpha + 2 \pi n)} \ , \quad n \in \mathbb{Z} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+ricordando l’arbitrarietà nella rappresentazione in forma polare. Si rimanda all’appendice per il caso generale, mentre qui si presentano i casi con:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+potenza intera, \(p \in \mathbb{Z}\).
+\begin{equation*}
+\begin{split}z^p = A^p e^{i ( p \alpha + 2 \pi n p )} = A^{p} e^{i ( p \alpha + 2 \pi m )} \ , \quad m \in \mathbb{Z}\end{split}
 \end{equation*}
 \item {} 
 \sphinxAtStartPar
-elevamento a potenza con esponente reale \sphinxstylestrong{todo} …
+potenza razionale, \(p, q \in \mathbb{Z}\), \(q \ne 0\), \(\frac{p}{q} = r + \frac{p'}{q}\), con \(p' < q\) e \(\frac{p'}{q}\) irriducibile,
+\begin{equation*}
+\begin{split}z^{\frac{p}{q}} = A^{\frac{p}{q}} e^{i \frac{p}{q} (\alpha + 2 \pi n)} = A^{\frac{p}{q}} e^{i (\frac{p}{q} \alpha + \frac{p'}{q} 2 \pi n)}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Esistono quindi \(q\) risultati distinti per \(n \in \{ 0, 1, 2, \dots, q-1 \}\).
+
+\item {} 
+\sphinxAtStartPar
+potenza con esponente irrazionale: il numero \(z^p\) rappresenta infiniti numeri \sphinxstylestrong{todo}
+
+\end{itemize}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Potenza qualsiasi.} Per la discussione di una {\hyperref[\detokenize{ch/algebra/complex-algebra-notes:math-hs-algebra-complex-notes-fun-power}]{\sphinxcrossref{\DUrole{std,std-ref}{potenza qualsiasi}}}} di un numero complesso si rimanda alla sezione sulle funzioni di variabile complessa in appendice.
+
+\sphinxAtStartPar
+\sphinxstylestrong{Esponenziale.} Per la discussione dell”{\hyperref[\detokenize{ch/algebra/complex-algebra-notes:math-hs-algebra-complex-notes-fun-exp}]{\sphinxcrossref{\DUrole{std,std-ref}{esponenziale complesso}}}} si rimanda alla sezione sulle funzioni di variabile complessa in appendice.
+
+\sphinxAtStartPar
+\sphinxstylestrong{Logaritmo.} Per la discussione del {\hyperref[\detokenize{ch/algebra/complex-algebra-notes:math-hs-algebra-complex-notes-fun-log}]{\sphinxcrossref{\DUrole{std,std-ref}{logaritmo complesso}}}} si rimanda alla sezione sulle funzioni di variabile complessa in appendice.
+
+
+\section{Teorema fondamentale dell’algebra}
+\label{\detokenize{ch/algebra/complex-algebra:teorema-fondamentale-dell-algebra}}\label{\detokenize{ch/algebra/complex-algebra:math-hs-algebra-complex-fund-thm}}
+\sphinxAtStartPar
+Ogni polinomio a coefficienti reali (\sphinxstylestrong{todo} o anche complessi) di grado \(n\), \(p_n(x) = a_n x^n + a_{n-1} x^{n-1} + \dots a_1 x + a_0\) può essere fattorizzato come prodotto di \(n\) binomi
+\begin{equation*}
+\begin{split}p_n(x) = a_n ( x - z_1 )( x - z_2 )\dots( x - z_n) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e i numeri \(z_k \in \mathbb{C}\), \(k = 1:n\), sono chiamati \sphinxstylestrong{zeri} del polinomio.
+
+\sphinxAtStartPar
+Come diretta conseguenza, ogni equazione polinomiale di grado \(n\), \(p_n(x) = 0\), ammette \(n\) soluzioni complesse coincidenti con gli zeri \(z_k\) del polinomio \(p_n(x)\).
+
+
+\section{Numeri complessi e geometria nel piano euclideo}
+\label{\detokenize{ch/algebra/complex-algebra:numeri-complessi-e-geometria-nel-piano-euclideo}}\label{\detokenize{ch/algebra/complex-algebra:math-hs-algebra-complex-geometry-2d}}
+\sphinxAtStartPar
+La {\hyperref[\detokenize{ch/algebra::doc}]{\sphinxcrossref{\DUrole{doc,std,std-doc}{rappresentazione cartesiana}}}} dei numeri complessi \(z = x + i y\) crea un legame biunivoco tra i numeri complessi e i punti di un piano. Quindi è possibile affrontare la geometria analitica nel piano usando i numeri complessi:
+
+
+\subsection{Posizione di un punto nel piano}
+\label{\detokenize{ch/algebra/complex-algebra:posizione-di-un-punto-nel-piano}}
+\sphinxAtStartPar
+Una volta scelto un sistema di coordinate regolari, la posizione di un punto \(P\) nel piano è identificata dai valori delle sue coordinate. Utilizzando un sistema di coordinate cartsiane o polari il punto \(P\) è identificato dalle coppie di valori \(x_P, y_P\) o \(r_P, \theta_P\) rispettivamente. Associando l’asse \(x\) all’asse dei numeri reali e l’asse \(y\) all’asse dei numeri immaginari, si può associare il punto \(P \equiv (x_P, y_P)\) in maniera biunivoca al numero complesso \(z_P = x_P + i y_P\), mentre alle coordinate polari corrisponde la rappresentazione polare,
+\begin{equation*}
+\begin{split}z_P = x_P + i y_P = r e^{i \theta} \ .\end{split}
+\end{equation*}
+
+\subsection{Distanza tra punti}
+\label{\detokenize{ch/algebra/complex-algebra:distanza-tra-punti}}
+\sphinxAtStartPar
+La distanza tra due punti nel piano può essere facilmente calcolata usando le coordiante cartesiane dei punti, tramite il teorema di Pitagora,
+\begin{equation*}
+\begin{split}|P_2 - P_1|^2 = (x_2 - x_1)^2 + (y_2 - y_1)^2 \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+ed equivale al valore del numero complesso \(z_2 - z_1\),
+\begin{equation*}
+\begin{split}|z_2 - z_1|^2 = ((x_2-x_1) + i(y_2-y_1))^*((x_2-x_1) + i(y_2-y_1)) = (x_2 - x_1)^2 + (y_2 - y_1)^2 \end{split}
+\end{equation*}
+
+\subsection{Curva nel piano}
+\label{\detokenize{ch/algebra/complex-algebra:curva-nel-piano}}
+\sphinxAtStartPar
+Una curva nel piano può essere rappresentata in forma esplicita, implicita o parametrica. Usando i numeri complessi,
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+la forma implicita dell’equazione di una curva è una relazione della forma \(F(z)=0\), \(F_c(x, y) = 0\) o \(F_p(r, \theta) = 0\), ossia una funzione che lega i due parametri che definiscono un numero complesso, come per esempio parte reale e immaginaria o modulo e argomento; in alcuni casi, è possibile esprimere uno di questi parametri in funzione dell’altro nella forma esplicita
+
+\item {} 
+\sphinxAtStartPar
+la forma parametrica dell’equazione di una curva può essere espressa come un numero complesso funzione di un parametro, come ad esempio
+\begin{equation*}
+\begin{split}z(s) = x(s) + i y(s) =  r(s) e^{i \theta(s)} \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Questo equivale a fornire l’espressione parametrica della curva in termini delle coordinate cartesiane o polari.
 
 \end{itemize}
 
 
+\subsection{Intersezioni di curve}
+\label{\detokenize{ch/algebra/complex-algebra:intersezioni-di-curve}}
+\sphinxAtStartPar
+Date due curve espresse in forma parametrica, \(\gamma_1: z_1(s)\), \(\gamma_2: z_2(r)\), gli eventuali punti di intersezione soddisfano la condizione \(z_1(\bar{s}) = z_2(\bar{r})\), cioè si ricerca il valore dei parametri \(s\), \(r\) per i quali i punti delle curve hanno le stesse coordinate.
+
+\sphinxAtStartPar
+Se le curve sono espresse in forma implicita, \(\gamma_1: F_1(z) = 0\), \(\gamma_2: F_2(z) = 0\), il problema della ricerca delle intersezioni si riduce alla soluzione del sistema di due equazioni in due incognite (due incognite poiché un numero complesso \(z\) è identificato da due parametri) per trovare il valore dei numeri complessi \(\bar{z}\) tali che
+\begin{equation*}
+\begin{split}\begin{cases} F_1(\bar{z}) & = 0 \\ F_2(\bar{z}) & = 0 \end{cases}\end{split}
+\end{equation*}
+
+\subsection{Retta nel piano}
+\label{\detokenize{ch/algebra/complex-algebra:retta-nel-piano}}
+\sphinxAtStartPar
+\sphinxstylestrong{Definizione 1 \sphinxhyphen{} Passaggio per un punto e una direzione.} E” facile definire la retta passante per un punto con una direzione data in forma parametrica,
+\begin{equation*}
+\begin{split}z(s) = z_0 + s v \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+con \(z_0 = x_0 + i y_0\) nummero complesso che identifica il punto \(P_0\) e \(v = v_x + i v_y\) numero complesso che identifica la direzione della retta \(\vec{v} = v_x \hat{x} + v_y \hat{y}\).
+
+\sphinxAtStartPar
+\sphinxstylestrong{Definizione 2 \sphinxhyphen{} Luogo dei punti equidistante da due punti distinti.} La definizione può essere tradotta nell’equazione in forma implicita,
+\begin{equation*}
+\begin{split}|z - z_1| = |z - z_2| \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+l’uguaglianza della distanza dei punti della retta identificati dai numeri complessi \(z\) dai due punti scelti, identificati dai numeri complessi \(z_1\), \(z_2\).
+
+
+\subsection{Posizioni reciproche rette, distanza punto\sphinxhyphen{}retta, coniche ed altro}
+\label{\detokenize{ch/algebra/complex-algebra:posizioni-reciproche-rette-distanza-punto-retta-coniche-ed-altro}}
+\sphinxAtStartPar
+In questo capitolo non si continua lo studio in maniera sistematica della geometria nel piano usando i numeri complessi.
+
+\sphinxAtStartPar
+Ci si limita a:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+ricordare che le coordinate cartesiane e polari possono essere ricondotte a un numero complesso
+\begin{equation*}
+\begin{split}
+  \begin{cases} x = r \cos \theta = \text{re}\{z\} \\ y = r \sin \theta = \text{im}\{z\} \end{cases}
+  \quad , \quad
+  \begin{cases} r = |z|            \\ \theta = \text{arg}\{z\} \end{cases}
+  \end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+osservare che, dati i due numeri complessi \(z_1 = x_1 + i y_1\), \(z_2 = x_2 + i y_2\), il prodotto \(z_1^* z_2\) contiene sia l’espressione del prodotto interno sia del prodotto vettore dei due vettori \(\vec{v}_1 = x_1 \hat{x}_1 + y_1 \hat{y}_1\), \(\vec{v}_2\),
+\begin{equation*}
+\begin{split}\begin{aligned}
+    z_1^* z_2 & = (x_1 - i y_1) (x_2 + i y_2) = \\
+              & = (x_1 x_2 + y_1 y_2) + i(x_1 y_2 - x_2 y_1) = \\
+              & = \vec{v}_1 \cdot \vec{v}_2 + i \hat{z} \cdot \vec{v}_1 \times \vec{v}_2
+  \end{aligned}\end{split}
+\end{equation*}
+\end{itemize}
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo} \sphinxstyleemphasis{rimandare a esercizi}
+
+
+\section{Equazioni e disequazioni con i numeri complessi}
+\label{\detokenize{ch/algebra/complex-algebra:equazioni-e-disequazioni-con-i-numeri-complessi}}\label{\detokenize{ch/algebra/complex-algebra:math-hs-algebra-complex-equations}}
+\sphinxAtStartPar
+Le equazioni e le disequazioni con i numeri complessi possono essere ricondotti a problemi che coinvolgono una coppia di variabili reali, tipicamente le componenti reale e immaginaria, o il modulo e l’argomento, che descrivono il piano dei numeri complessi.
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo}
+
+\sphinxstepscope
+
+
+\section{Problemi}
+\label{\detokenize{ch/algebra/complex-algebra-problems:problemi}}\label{\detokenize{ch/algebra/complex-algebra-problems:math-hs-algebra-complex-problems}}\label{\detokenize{ch/algebra/complex-algebra-problems::doc}}
+
+\subsection{Definizioni}
+\label{\detokenize{ch/algebra/complex-algebra-problems:definizioni}}\label{\detokenize{ch/algebra/complex-algebra-problems:math-hs-algebra-complex-problems-def}}
+\sphinxAtStartPar
+\sphinxstylestrong{todo}
+
+
+\subsection{Rappresentazione dei numeri complessi nel piano complesso (Argand\sphinxhyphen{}Gauss)}
+\label{\detokenize{ch/algebra/complex-algebra-problems:rappresentazione-dei-numeri-complessi-nel-piano-complesso-argand-gauss}}\label{\detokenize{ch/algebra/complex-algebra-problems:math-hs-algebra-complex-problems-complex-plane}}\phantomsection \label{exercise:ch/algebra/complex-algebra-problems-exercise-0}
+
+\begin{sphinxadmonition}{note}{Exercise 20.7.1}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
+\sphinxAtStartPar
+Rappresenta il numero complesso \( z = 3 + 4i \) nel piano complesso e calcola il modulo e l’argomento.
+
+\item {} 
+\sphinxAtStartPar
+Converti il numero complesso \( z = 1 - i \) in forma polare.
+
+\item {} 
+\sphinxAtStartPar
+Determina la forma cartesiana di \( z = 4 \text{cis}\frac{\pi}{3} \).
+
+\item {} 
+\sphinxAtStartPar
+Calcola il prodotto di \( z_1 = 2 \text{cis}\frac{\pi}{4} \) e \( z_2 = 3 \text{cis}\frac{\pi}{6} \), e rappresenta il risultato in forma polare.
+
+\item {} 
+\sphinxAtStartPar
+Trova le radici cubiche di \( z = 8 \) e rappresentale nel piano complesso.
+
+\end{enumerate}
+\end{sphinxadmonition}
+
+
+
+
+\subsection{Operazioni con i numeri complessi}
+\label{\detokenize{ch/algebra/complex-algebra-problems:operazioni-con-i-numeri-complessi}}\label{\detokenize{ch/algebra/complex-algebra-problems:math-hs-algebra-complex-problems-operations}}\phantomsection \label{exercise:ch/algebra/complex-algebra-problems-exercise-1}
+
+\begin{sphinxadmonition}{note}{Exercise 20.7.2 (Parte reale e parte immaginaria)}
+
+
+
+\sphinxAtStartPar
+Dimostrare le relazioni \eqref{equation:ch/algebra/complex-algebra:complex:cc:re-im}
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \text{re}\{z\} & = \frac{z + z^*}{2} \\
+  \text{im}\{z\} & = \frac{z - z^*}{2i} \\
+\end{aligned}\end{split}
+\end{equation*}\subsubsection*{Soluzione}
+
+\sphinxAtStartPar
+Dato il numero \(z = \text{re}\{z\} + i \text{im}\{z\} = x + i y\),
+\begin{equation*}
+\begin{split}\begin{aligned}
+ \frac{z + z^*}{2}  & = \frac{x+iy+x-iy}{2}  = \frac{2x}{2} = x = \text{re}\{z\} \\
+ \frac{z - z^*}{2i} & = \frac{x+iy-x+iy}{2i} = \frac{i2y}{2i} = y = \text{im}\{z\}
+\end{aligned}\end{split}
+\end{equation*}\end{sphinxadmonition}
+
+
+\subsection{Teorema fondamentale dell’algebra}
+\label{\detokenize{ch/algebra/complex-algebra-problems:teorema-fondamentale-dell-algebra}}\label{\detokenize{ch/algebra/complex-algebra-problems:math-hs-algebra-complex-fund-thm}}\phantomsection \label{exercise:ch/algebra/complex-algebra-problems-exercise-2}
+
+\begin{sphinxadmonition}{note}{Exercise 20.7.3}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
+\sphinxAtStartPar
+Dimostra che \(z^2 + 1 = 0\) ha due soluzioni complesse e determinane i valori.
+
+\item {} 
+\sphinxAtStartPar
+Risolvi \(z^3 - 8 = 0\) e rappresenta le radici nel piano complesso.
+
+\item {} 
+\sphinxAtStartPar
+Determina tutte le radici quarte di \(z = 16\) in forma polare.
+
+\item {} 
+\sphinxAtStartPar
+Trova i valori di \(z\) tali che \(z^4 = 81 \text{cis}\frac{\pi}{2}\).
+
+\item {} 
+\sphinxAtStartPar
+Verifica che il prodotto delle radici di \(z^3 + 27 = 0\) è uguale a \(-27\).
+
+\item {} 
+\sphinxAtStartPar
+Risolvi \(z^5 + z^3 - z + 1 = 0\) per \(z \in \mathbb{C}\).
+
+\item {} 
+\sphinxAtStartPar
+Dimostra che \(z = i\) è una radice di \(z^3 + z^2 + z + 1 = 0\) e trova le altre radici.
+
+\item {} 
+\sphinxAtStartPar
+Calcola le soluzioni di \(z^6 - 64 = 0\) in forma esponenziale.
+
+\item {} 
+\sphinxAtStartPar
+Trova le radici di \(z^4 + 4z^2 + 16 = 0\) e verifica che soddisfano l’equazione.
+
+\item {} 
+\sphinxAtStartPar
+Determina la radice principale di \(z = \sqrt[3]{-8}\) in forma polare.
+
+\end{enumerate}
+\end{sphinxadmonition}
+
+
+\subsection{Numeri complessi e geometria nel piano euclideo}
+\label{\detokenize{ch/algebra/complex-algebra-problems:numeri-complessi-e-geometria-nel-piano-euclideo}}\label{\detokenize{ch/algebra/complex-algebra-problems:math-hs-algebra-complex-problems-geometry-2d}}\phantomsection \label{exercise:ch/algebra/complex-algebra-problems-exercise-3}
+
+\begin{sphinxadmonition}{note}{Exercise 20.7.4}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
+\sphinxAtStartPar
+Disegna il punto \(z = 2 + 3i\) e calcola la distanza dall’origine.
+
+\item {} 
+\sphinxAtStartPar
+Trova il punto medio del segmento che collega \(z_1 = 1 + 2i\) e \(z_2 = 3 + 4i\).
+
+\item {} 
+\sphinxAtStartPar
+Verifica che i punti \(z_1 = 0\), \(z_2 = 3 + 4i\), e \(z_3 = 6 + 0i\) formano un triangolo rettangolo.
+
+\item {} 
+\sphinxAtStartPar
+Trova l’equazione del cerchio con centro \(z = 2 + i\) e raggio \(3\).
+
+\item {} 
+\sphinxAtStartPar
+Dimostra che la distanza tra \(z_1 = 2 + i\) e \(z_2 = -1 + 2i\) è \(\sqrt{10}\).
+
+\item {} 
+\sphinxAtStartPar
+Rappresenta graficamente la regione definita da \(|z - 1| < 2\).
+
+\item {} 
+\sphinxAtStartPar
+Determina il luogo geometrico di \(z\) per cui \(|z - 2i| = |z + 2i|\).
+
+\item {} 
+\sphinxAtStartPar
+Disegna e descrivi il luogo geometrico definito da \(\text{Re}(z) = 2\).
+
+\item {} 
+\sphinxAtStartPar
+Trova il punto \(z\) nel piano complesso che soddisfa \(|z - 1| = 3\) e \(\text{Im}(z) > 0\).
+
+\item {} 
+\sphinxAtStartPar
+Dimostra che i punti \(z_1 = 1 + i\), \(z_2 = -1 - i\), e \(z_3 = 0\) sono collineari.
+
+\end{enumerate}
+\end{sphinxadmonition}
+
+
+\subsection{Equazioni e disequazioni con i numeri complessi}
+\label{\detokenize{ch/algebra/complex-algebra-problems:equazioni-e-disequazioni-con-i-numeri-complessi}}\label{\detokenize{ch/algebra/complex-algebra-problems:math-hs-algebra-complex-problems-equations}}\phantomsection \label{exercise:ch/algebra/complex-algebra-problems-exercise-4}
+
+\begin{sphinxadmonition}{note}{Exercise 20.7.5 (Equazioni)}
+
+
+
+\sphinxAtStartPar
+Risolvere le seguenti equazioni
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
+\sphinxAtStartPar
+Risolvi \(|z| = 2\) e rappresenta graficamente le soluzioni.
+
+\item {} 
+\sphinxAtStartPar
+Trova i numeri complessi \(z\) che soddisfano \(z + \overline{z} = 6\) e \(|z| = 5\).
+
+\item {} 
+\sphinxAtStartPar
+Risolvi \(z^2 - 2z + 5 = 0\) e calcola il modulo delle soluzioni.
+
+\item {} 
+\sphinxAtStartPar
+Risolvi \(|z - 3| = 5\) e rappresenta graficamente le soluzioni.
+
+\item {} 
+\sphinxAtStartPar
+Trova i valori di \(z\) per cui \(z^3 = 27\).
+
+\item {} 
+\sphinxAtStartPar
+Risolvi \(z^4 + 16 = 0\) e rappresenta graficamente le soluzioni nel piano complesso.
+
+\item {} 
+\sphinxAtStartPar
+Risolvi \(|z - 1| = |z + 1|\) e descrivi il luogo geometrico delle soluzioni.
+
+\item {} 
+\sphinxAtStartPar
+Trova le soluzioni di \(z^5 - 32 = 0\) e rappresentale in forma polare.
+
+\item {} 
+\sphinxAtStartPar
+Determina i numeri complessi \(z\) per cui \(|z|^2 + |z - 2|^2 = 8\).
+
+\item {} 
+\sphinxAtStartPar
+Risolvi \(|z + i| = 3\) per \(z \in \mathbb{C}\).
+
+\item {} 
+\sphinxAtStartPar
+\(z^2 + 4 = 0\)
+
+\item {} 
+\sphinxAtStartPar
+\(z^2 - 2z + 5 = 0\)
+
+\item {} 
+\sphinxAtStartPar
+\(z^3 + 8 = 0\)
+
+\item {} 
+\sphinxAtStartPar
+\(|z-2-i| = 2\)
+
+\item {} 
+\sphinxAtStartPar
+\(|z-2-i| = |z-1|\)
+
+\item {} 
+\sphinxAtStartPar
+\(z + \bar{z} = 1\)
+
+\end{enumerate}
+
+
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/algebra/complex-algebra-problems-exercise-5}
+
+\begin{sphinxadmonition}{note}{Exercise 20.7.6 (Sistemi di equazioni)}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
+\sphinxAtStartPar
+Risolvi il sistema:\\
+\$\(\begin{cases} 
+z + \overline{z} = 4 \\
+|z| = 5 
+\end{cases}\)
+
+\item {} 
+\sphinxAtStartPar
+Trova \(z_1\) e \(z_2\) che soddisfano il sistema:\\
+\(\begin{cases} 
+|z_1| = 3 \\
+z_1 z_2 = 9 
+\end{cases}\)
+
+\item {} 
+\sphinxAtStartPar
+Risolvi il sistema:\\
+\(\begin{cases} 
+z^2 + w^2 = 5 \\
+z w = 4 
+\end{cases}\)
+
+\item {} 
+\sphinxAtStartPar
+Determina le soluzioni del sistema:\\
+\(\begin{cases} 
+|z| = 4 \\
+z + \overline{z} = 6 
+\end{cases}\)
+
+\item {} 
+\sphinxAtStartPar
+Risolvi il sistema:\\
+\(\begin{cases} 
+z^3 + w = 1 \\
+z w^3 = -1 
+\end{cases}\)
+
+\item {} 
+\sphinxAtStartPar
+Trova \(z\) e \(w\) per il sistema:\\
+\(\begin{cases} 
+z^2 + w^2 = 7 \\
+z + w = 3 
+\end{cases}\)
+
+\item {} 
+\sphinxAtStartPar
+Risolvi il sistema:\\
+\(\begin{cases} 
+|z| = 2 \\
+z + w = 0 
+\end{cases}\)
+
+\item {} 
+\sphinxAtStartPar
+Trova \(z\) e \(w\) che soddisfano il sistema:\\
+\(\begin{cases} 
+z w = 1 \\
+z - w = i 
+\end{cases}\)
+
+\item {} 
+\sphinxAtStartPar
+Determina le soluzioni del sistema:\\
+\(\begin{cases} 
+z^2 + \overline{z}^2 = 8 \\
+z \cdot \overline{z} = 9 
+\end{cases}\)
+
+\item {} 
+\sphinxAtStartPar
+Risolvi il sistema:\\
+\(\begin{cases} 
+z + w = 5 + i \\
+z \cdot w = 6 - i 
+\end{cases}\)
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/algebra/complex-algebra-problems-exercise-6}
+
+\begin{sphinxadmonition}{note}{Exercise 20.7.7 (Disequazioni)}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
+\sphinxAtStartPar
+Trova i numeri complessi \(z\) che soddisfano \(|z| < 3\).
+
+\item {} 
+\sphinxAtStartPar
+Determina \(z\) per cui \(|z - 2| \geq 4\).
+
+\item {} 
+\sphinxAtStartPar
+Risolvi \(|z + i| \leq 2\).
+
+\item {} 
+\sphinxAtStartPar
+Trova \(z\) tali che \(\text{Re}(z) > \text{Im}(z)\).
+
+\item {} 
+\sphinxAtStartPar
+Risolvi \(|z - 1| > |z + 1|\).
+
+\item {} 
+\sphinxAtStartPar
+Determina il luogo geometrico di \(z\) per cui \(|z - 1| \leq 3\).
+
+\item {} 
+\sphinxAtStartPar
+Risolvi \(\text{Re}(z) + \text{Im}(z) \leq 2\).
+
+\item {} 
+\sphinxAtStartPar
+Trova \(z\) tali che \(|z| + |z - 1| \leq 5\).
+
+\item {} 
+\sphinxAtStartPar
+Determina \(z\) per cui \(|z|^2 < 9\).
+
+\item {} 
+\sphinxAtStartPar
+Risolvi \(|z - 2| \geq |z + 2|\).
+
+\end{enumerate}
+\end{sphinxadmonition}
+
+\sphinxstepscope
+
+
+\section{Note e dimostrazioni}
+\label{\detokenize{ch/algebra/complex-algebra-notes:note-e-dimostrazioni}}\label{\detokenize{ch/algebra/complex-algebra-notes:math-hs-algebra-complex-notes}}\label{\detokenize{ch/algebra/complex-algebra-notes::doc}}
+
+\subsection{Altre operazioni e funzioni a variabile complessa}
+\label{\detokenize{ch/algebra/complex-algebra-notes:altre-operazioni-e-funzioni-a-variabile-complessa}}\label{\detokenize{ch/algebra/complex-algebra-notes:math-hs-algebra-complex-notes-fun}}
+
+\subsubsection{Potenza}
+\label{\detokenize{ch/algebra/complex-algebra-notes:potenza}}\label{\detokenize{ch/algebra/complex-algebra-notes:math-hs-algebra-complex-notes-fun-power}}
+
+\subsubsection{Esponenziale}
+\label{\detokenize{ch/algebra/complex-algebra-notes:esponenziale}}\label{\detokenize{ch/algebra/complex-algebra-notes:math-hs-algebra-complex-notes-fun-exp}}
+
+\subsubsection{Logaritmo}
+\label{\detokenize{ch/algebra/complex-algebra-notes:logaritmo}}\label{\detokenize{ch/algebra/complex-algebra-notes:math-hs-algebra-complex-notes-fun-log}}
+
 \subsection{Esponenziale complesso e formula di Eulero}
-\label{\detokenize{ch/algebra/complex-algebra:esponenziale-complesso-e-formula-di-eulero}}
+\label{\detokenize{ch/algebra/complex-algebra-notes:esponenziale-complesso-e-formula-di-eulero}}\label{\detokenize{ch/algebra/complex-algebra-notes:math-hs-algebra-complex-notes-euler}}
 \sphinxAtStartPar
 Estendendo la definizione di funzione esponenziale \(e^x\) ai numeri complessi, si può scrivere
 \begin{equation*}
 \begin{split}e^z = \sum_{n = 0}^{+\infty} \frac{z^n}{n!} = \lim_{n \rightarrow +\infty} \left( 1 + \frac{z}{n} \right)^n\end{split}
-\end{equation*}\subsubsection*{Dimostrazione dell’equivalenza delle due definizioni}
+\end{equation*}
+
 
 
 \subsubsection{Formula di Eulero}
-\label{\detokenize{ch/algebra/complex-algebra:formula-di-eulero}}
+\label{\detokenize{ch/algebra/complex-algebra-notes:formula-di-eulero}}
 \sphinxAtStartPar
 Per esponenti reali, vale
 \begin{equation*}
@@ -6746,7 +7352,7 @@ l’argomento tende a \(\theta\)
 \end{aligned}\end{split}
 \end{equation*}
 \sphinxAtStartPar
-Usando la \sphinxstylestrong{formula di de Moivre}
+Usando la {\hyperref[\detokenize{ch/algebra/complex-algebra-notes:math-hs-algebra-complex-notes-demoivre}]{\sphinxcrossref{\DUrole{std,std-ref}{formula di de Moivre}}}},
 \begin{equation*}
 \begin{split}( \cos x + i \sin x)^n = \cos( n x ) + i \sin ( n x )\end{split}
 \end{equation*}
@@ -6801,113 +7407,8 @@ e^{iy} = \cos y + i \sin y \ .
 \sphinxstylestrong{todo} …
 
 
-\subsection{Rappresentazione nel piano complesso}
-\label{\detokenize{ch/algebra/complex-algebra:rappresentazione-nel-piano-complesso}}
-\sphinxAtStartPar
-Ogni numero complesso \(z \subset \mathbb{C}\) può essere associato a un punto del piano complesso \(\mathbb{C}\); l’uso di coordinate cartesiane o polari per la descrizione dei punti del piano \(\mathbb{R}^2\) suggerisce due tipi di rappresentazioni per un numero complesso:
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-la \sphinxstylestrong{rappresentazione cartesiana} associa l’asse delle ascisse alla parte reale \(x\) e l’asse delle ordinate alla parte immaginaria \(y\),
-\begin{equation*}
-\begin{split}z = x + i y\end{split}
-\end{equation*}
-\item {} 
-\sphinxAtStartPar
-la \sphinxstylestrong{rappresentazione polare}; usando la legge di trasformazione tra coordinate polari \((r, \theta)\) e coordinate cartesiante \((x,y)\)
-\begin{equation*}
-\begin{split}\begin{cases}
-    x = r \cos \theta \\
-    y = r \sin \theta
-  \end{cases}\end{split}
-\end{equation*}
-\sphinxAtStartPar
-e la formula di Eulero, \(e^{i \theta} = \cos \theta + i \theta\), è possibile scrivere un numero complesso in forma polare,
-\begin{equation*}
-\begin{split}z = x + i y = r \cos \theta + i r \sin \theta = r \left( \cos \theta + i \sin \theta \right) = r e^{i \theta} \ .\end{split}
-\end{equation*}
-\end{itemize}
-
-\begin{sphinxadmonition}{note}{Nota:}
-\sphinxAtStartPar
-Le due rappresentazioni non sono equivalenti. Mentre la rappresentazione cartesiana permette di creare una relazione biunivoca tra i numeri complessi \(z = x + i \ y\) e i punti nel piano \((x, \ y)\), la rappresentazione polare assegna infiniti numeri complessi, seppur di uguale valore \(r \, e^{i \theta} = r \, e^{i (\theta + n \, 2 \pi)}\), con \(n \in \mathbb{Z}\) allo stesso punto nello spazio.
-\end{sphinxadmonition}
-
-
-\section{Operazioni con i numeri complessi}
-\label{\detokenize{ch/algebra/complex-algebra:operazioni-con-i-numeri-complessi}}\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-somma
-\begin{equation*}
-\begin{split}z_1 + z_2 = (x_1 + x_2) + i(y_1 + y_2)\end{split}
-\end{equation*}
-\item {} 
-\sphinxAtStartPar
-prodotto
-\begin{equation*}
-\begin{split}z_1 \ z_2 = r_1 \, r_2 e^{i(\theta_1 + \theta_2)}\end{split}
-\end{equation*}
-\item {} 
-\sphinxAtStartPar
-complesso coniugato
-\begin{equation*}
-\begin{split}z^* = x - i y = r e^{-i\theta} \end{split}
-\end{equation*}
-\item {} 
-\sphinxAtStartPar
-valore assoluto
-\begin{equation*}
-\begin{split}|z| = \sqrt{x^2 + y^2} = r = \sqrt{z^* z}\end{split}
-\end{equation*}
-\item {} 
-\sphinxAtStartPar
-potenza ed esponenziale
-\begin{equation*}
-\begin{split}z^a = \left(r e^{i\theta} \right)^a = r^a e^{i a \theta}\end{split}
-\end{equation*}\begin{equation*}
-\begin{split}a^{i y} = \left(e^{\ln a} \right)^{iy} = e^{i y \ln a} = \cos ( y \ln a ) + i \sin ( y \ln a )\end{split}
-\end{equation*}\begin{equation*}
-\begin{split}a^z = a^{x+iy} = a^x a^{iy} = a^x \left( \cos ( y \ln a ) + i \sin ( y \ln a ) \right)\end{split}
-\end{equation*}\begin{equation*}
-\begin{split}z^w = \left(r e^{i \theta}\right)^{( u + i v )} = r^{u+iv} e^{i \theta (u+iv)} = r^u e^{-\theta v} e^{i \left( v \ln r + \theta u \right)} \end{split}
-\end{equation*}
-\sphinxAtStartPar
-\sphinxstylestrong{todo} discutere il caso di potenze intere, potenze razionali, potenze irrazionali,… \sphinxstyleemphasis{con grafico}
-
-\item {} 
-\sphinxAtStartPar
-logaritmo, con base reale positiva, \(a > 0\)
-\begin{equation*}
-\begin{split}\log_a z = \log_a \left( r \, e^{i ( \theta + n \, 2 \pi )} \right) = \log_a r + \log_a e^{i (\theta + n \, 2 \pi )} = \log_a r + i \, \frac{1}{\ln a} \, \left( \theta + n \, 2 \pi \right)\end{split}
-\end{equation*}
-\sphinxAtStartPar
-avendo usato le proprietà dei logaritmi
-\begin{equation*}
-\begin{split}\begin{aligned}
-     \log ( a b ) & = \log a + \log b \\
-     \log_a b & = \frac{\log_c b}{\log_c a}
-   \end{aligned}\end{split}
-\end{equation*}
-\end{itemize}
-
-
-
-
-\section{Altri argomenti/proprietà}
-\label{\detokenize{ch/algebra/complex-algebra:altri-argomenti-proprieta}}\begin{equation*}
-\begin{split}\begin{aligned}
-  \text{re} \{ z \} & = \frac{1}{2} \left( z + z^* \right) \\
-  \text{im} \{ z \} & = \frac{1}{2} \left( z - z^* \right) \\
-\end{aligned}\end{split}
-\end{equation*}\begin{equation*}
-\begin{split}e^{i \alpha} e^{i \beta} = e^{i (\alpha + \beta)}\end{split}
-\end{equation*}\begin{equation*}
-\begin{split}\left( e^{i \alpha} \right)^n = e^{i n \alpha}\end{split}
-\end{equation*}
-
 \subsection{Formula di de Moivre}
-\label{\detokenize{ch/algebra/complex-algebra:formula-di-de-moivre}}\begin{equation*}
+\label{\detokenize{ch/algebra/complex-algebra-notes:formula-di-de-moivre}}\label{\detokenize{ch/algebra/complex-algebra-notes:math-hs-algebra-complex-notes-demoivre}}\begin{equation*}
 \begin{split}(\cos x + i \sin x)^n = \cos(nx) + i \sin(nx) \ , \quad n \in \mathbb{Z}\end{split}
 \end{equation*}\subsubsection*{Dimostrazione per induzione}
 
@@ -6933,29 +7434,6 @@ Per \(m := -n \in \mathbb{N}\), la formula di de Moivre può essere verificata u
    & = \frac{\cos( m x) - i \sin (m x)}{\underbrace{\cos^2(mx) + \sin^2(mx)}_{=1}} = \cos(mx) - i \sin(mx) = \cos(nx) + i \sin(nx) \ .
 \end{aligned}\end{split}
 \end{equation*}
-
-\subsection{Teorema fondamentale dell’algebra}
-\label{\detokenize{ch/algebra/complex-algebra:teorema-fondamentale-dell-algebra}}
-\sphinxAtStartPar
-Ogni polinomio a coefficienti reali (\sphinxstylestrong{todo} o anche complessi) di grado \(n\), \(p_n(x) = a_n x^n + a_{n-1} x^{n-1} + \dots a_1 x + a_0\) può essere fattorizzato come prodotto di \(n\) binomi
-\begin{equation*}
-\begin{split}p_n(x) = a_n ( x - z_1 )( x - z_2 )\dots( x - z_n) \ ,\end{split}
-\end{equation*}
-\sphinxAtStartPar
-e i numeri \(z_k \in \mathbb{C}\), \(k = 1:n\), sono chiamati \sphinxstylestrong{zeri} del polinomio.
-
-\sphinxAtStartPar
-Come diretta conseguenza, ogni equazione polinomiale di grado \(n\), \(p_n(x) = 0\), ammette \(n\) soluzioni complesse coincidenti con gli zeri \(z_k\) del polinomio \(p_n(x)\).
-
-
-\section{Equazioni e disequazioni con i numeri complessi}
-\label{\detokenize{ch/algebra/complex-algebra:equazioni-e-disequazioni-con-i-numeri-complessi}}
-\sphinxAtStartPar
-Le equazioni e le disequazioni con i numeri complessi possono essere ricondotti a problemi che coinvolgono una coppia di variabili reali, tipicamente le componenti reale e immaginaria, o il modulo e l’argomento, che descrivono il piano dei numeri complessi.
-
-\sphinxAtStartPar
-\sphinxstylestrong{todo}
-
 \sphinxstepscope
 
 \begin{sphinxuseclass}{sd-container-fluid}
@@ -6996,7 +7474,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-13 dic 2024
+19 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -7083,7 +7561,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-13 dic 2024
+19 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -10058,7 +10536,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-13 dic 2024
+19 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -11567,7 +12045,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-13 dic 2024
+19 dic 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
