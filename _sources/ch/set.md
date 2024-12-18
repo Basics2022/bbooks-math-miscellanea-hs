@@ -26,6 +26,8 @@ Una funzione **biunivoca** è anche **invertibile**. Data la funzione biunivoca 
 (math-hs:set:algebra)=
 ## Algebra di insiemi
 
+**todo** Qui o in un capitolo su [algebra di insiemi](math-hs:algebra:set:link) nella parte di [algebra](math-hs:algebra)?
+
 (math-hs:fun:range)=
 ### Immagine di una funzione
 
