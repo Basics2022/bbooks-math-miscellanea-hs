@@ -58,6 +58,7 @@ $$a_n = \left( 1 + \frac{z}{n} \right)^n = \left( 1 + \frac{x}{n} + i \frac{y}{n
 
 per $n \rightarrow +\infty$.
 
+<!--
 Il modulo di $a_n$ tende a $e^x$
 
 $$r_n = \sqrt{\left(1+ \frac{x}{n}\right)^2 + \left(\frac{y}{n}\right)^2}$$
@@ -72,6 +73,7 @@ $$\begin{aligned}
 \sin \theta_n & = \frac{y}{n \, r_n} \\
 \cos \theta_n & = \frac{x+n}{n \, r_n}
 \end{aligned}$$
+-->
 
 Usando la [formula di de Moivre](math-hs:algebra:complex:notes:demoivre),
 

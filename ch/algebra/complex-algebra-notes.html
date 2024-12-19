@@ -575,19 +575,22 @@ Dimostrazione usando la definizione come limite della successione<div class="sd-
 <div class="math notranslate nohighlight">
 \[a_n = \left( 1 + \frac{z}{n} \right)^n = \left( 1 + \frac{x}{n} + i \frac{y}{n} \right)^n\]</div>
 <p class="sd-card-text">per <span class="math notranslate nohighlight">\(n \rightarrow +\infty\)</span>.</p>
-<p class="sd-card-text">Il modulo di <span class="math notranslate nohighlight">\(a_n\)</span> tende a <span class="math notranslate nohighlight">\(e^x\)</span></p>
-<div class="math notranslate nohighlight">
-\[r_n = \sqrt{\left(1+ \frac{x}{n}\right)^2 + \left(\frac{y}{n}\right)^2}\]</div>
-<div class="math notranslate nohighlight">
-\[n r_n = \sqrt{( n + x )^2 + y^2}\]</div>
-<p class="sd-card-text">l’argomento tende a <span class="math notranslate nohighlight">\(\theta\)</span></p>
-<div class="math notranslate nohighlight">
-\[\tan \theta_n = \frac{\frac{y}{n}}{1 + \frac{x}{n}} = \frac{y}{x + n}\]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-\sin \theta_n &amp; = \frac{y}{n \, r_n} \\
-\cos \theta_n &amp; = \frac{x+n}{n \, r_n}
-\end{aligned}\end{split}\]</div>
+<!--
+Il modulo di $a_n$ tende a $e^x$
+
+$$r_n = \sqrt{\left(1+ \frac{x}{n}\right)^2 + \left(\frac{y}{n}\right)^2}$$
+
+$$n r_n = \sqrt{( n + x )^2 + y^2}$$
+
+l'argomento tende a $\theta$ 
+
+$$\tan \theta_n = \frac{\frac{y}{n}}{1 + \frac{x}{n}} = \frac{y}{x + n}$$
+
+$$\begin{aligned}
+\sin \theta_n & = \frac{y}{n \, r_n} \\
+\cos \theta_n & = \frac{x+n}{n \, r_n}
+\end{aligned}$$
+-->
 <p class="sd-card-text">Usando la <a class="reference internal" href="#math-hs-algebra-complex-notes-demoivre"><span class="std std-ref">formula di de Moivre</span></a>,</p>
 <div class="math notranslate nohighlight">
 \[( \cos x + i \sin x)^n = \cos( n x ) + i \sin ( n x )\]</div>
