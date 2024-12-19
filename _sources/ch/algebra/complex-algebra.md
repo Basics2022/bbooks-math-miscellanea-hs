@@ -52,6 +52,12 @@ con $x, \ y \in \mathbb{R}$.
 (math-hs:algebra:complex:operations-0)=
 ## Operazioni con i numeri complessi - in forma cartesiana
 
+- somma: $z_1 + z_2 = (x_1 + i y_1) + (x_2 + i y_2) = (x_1 + x_2) + i (y_1 + y_2)$
+- prodotto: $z_1 z_2 = (x_1 + i y_1)(x_2 + i y_2) = x_1 x_2 - y_1 y_2 + i (x_1 y_2 + x_2 y_1)$
+- potenza con esponente naturale, $n \in \mathbb{N}$: $z^n = (x + i y)^n = \underbrace{(x+iy) \dots (x+iy)}_{n \text{ volte}}$
+- complesso coniugato: $z^* = (x+iy)^* = x - i y$
+- modulo: $|z| := \sqrt{z^* z} = \sqrt{x^2 + y^2}$
+
 (math-hs:algebra:complex:demoivre-euler)=
 ## Formula di de Moivre, esponenziale complesso e formula di Eulero
 
@@ -69,7 +75,7 @@ Data questa definizione di esponenziale complesso, si può dimostrare la **formu
 
 $$e^{i \theta} = \cos \theta + i \sin \theta \ ,$$ (complex:euler)
 
-con $\theta \in \mathbb{R}$.
+con $\theta \in \mathbb{R}$. Vengono riportate in appendice due [dimostrazioni della formula di Eulero](math-hs:algebra:complex:notes:euler), una usando la definizione di esponenziale complesso e la formula di de Moivre, l'altra usando le serie di Taylor.
 
 
 (math-hs:algebra:complex:complex-plane)=
