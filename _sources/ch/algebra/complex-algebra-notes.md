@@ -1,20 +1,12 @@
 (math-hs:algebra:complex:notes)=
 # Note e dimostrazioni
 
-(math-hs:algebra:complex:notes:fun)=
-## Altre operazioni e funzioni a variabile complessa
 
-(math-hs:algebra:complex:notes:fun:power)=
-### Potenza
-
-(math-hs:algebra:complex:notes:fun:exp)=
-### Esponenziale
-
-(math-hs:algebra:complex:notes:fun:log)=
-### Logaritmo
+(math-hs:algebra:complex:notes:demoivre-euler)=
+## Formula di de Moivre, esponenziale complesso e formula di Eulero
 
 (math-hs:algebra:complex:notes:demoivre)=
-## Formula di de Moivre
+### Formula di de Moivre
 Qui si dimostra la formula di de Moivre {eq}`complex:demoivre`.
 
 $$(\cos x + i \sin x)^n = \cos(nx) + i \sin(nx) \ , \quad n \in \mathbb{Z}$$
@@ -41,8 +33,8 @@ $$\begin{aligned}
 
 ```
 
-(math-hs:algebra:complex:notes:euler)=
-## Esponenziale complesso e formula di Eulero
+(math-hs:algebra:complex:notes:complex-exp)=
+### Esponenziale complesso
 Estendendo la definizione di funzione esponenziale $e^x$ ai numeri complessi, si può scrivere
 
 $$e^z = \sum_{n = 0}^{+\infty} \frac{z^n}{n!} = \lim_{n \rightarrow +\infty} \left( 1 + \frac{z}{n} \right)^n$$
@@ -52,6 +44,7 @@ $$e^z = \sum_{n = 0}^{+\infty} \frac{z^n}{n!} = \lim_{n \rightarrow +\infty} \le
 ```
 -->
 
+(math-hs:algebra:complex:notes:euler)=
 ### Formula di Eulero
 Per esponenti reali, vale
 
@@ -150,4 +143,15 @@ $$
 
 ```
 
+(math-hs:algebra:complex:notes:fun)=
+## Altre operazioni e funzioni a variabile complessa
+
+(math-hs:algebra:complex:notes:fun:power)=
+### Potenza
+
+(math-hs:algebra:complex:notes:fun:exp)=
+### Esponenziale
+
+(math-hs:algebra:complex:notes:fun:log)=
+### Logaritmo
 
