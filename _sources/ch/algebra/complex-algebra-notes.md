@@ -123,20 +123,21 @@ $$\begin{aligned}
       & = e^x \left( \cos y + i \sin y \right) \ .
 \end{aligned}$$
 
-Si trova quindi l'identità di Eulero usando la proprietà delle potenze estesa ai numeri complessi,
+Usando la proprietà delle potenze estesa ai numeri complessi,
 
-$$e^z = e^{x + iy} = e^x \, e^{i y} =  e^x \left( \cos y + i \sin y \right)
-\rightarrow
-e^{iy} = \cos y + i \sin y \ .
+$$e^x \left( \cos y + i \sin y \right) = e^z = e^{x + iy} = e^x \, e^{i y} \ ,
 $$
 
+dall'arbitrarietà del valore $x$, risulta dimostrata la formula di Eulero,
 
-**todo** ...
+$$e^{iy} = \cos y + i \sin y \ .$$
+
+per esponenti reali $y \in \mathbb{R}$.
 
 ```
 
 ```{dropdown} Dimostrazione usando la definizione come serie
-L'identità di Eulero può essere dimostrata (**todo** *bisogna verificare la convergenza (uniforme) delle serie?*) confrontando le serie polinomiali (di Taylor) delle funzioni $\cos x$, $\sin x$ definite sui numeri reali, $x \in \mathbb{R}$
+L'identità di Eulero può essere dimostrata (**todo** *bisogna verificare la convergenza (uniforme) delle serie?*) confrontando le [serie polinomiali di Taylor](infinitesimal-calculus:derivatives:taylor) delle funzioni $\cos x$, $\sin x$ definite sui numeri reali, $x \in \mathbb{R}$
 
 $$\begin{aligned}
   \cos x & = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} + \dots \\

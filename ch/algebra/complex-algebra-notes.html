@@ -632,13 +632,14 @@ $$\begin{aligned}
       &amp; = \lim_{n \rightarrow +\infty} r_n (\cos(n\theta) + i \sin(n\theta)) =  &amp; (\lim_{n\rightarrow +\infty} r_n = e^x, \lim_{n \rightarrow + \infty} n \theta = y)\\
       &amp; = e^x \left( \cos y + i \sin y \right) \ .
 \end{aligned}\end{split}\]</div>
-<p class="sd-card-text">Si trova quindi l’identità di Eulero usando la proprietà delle potenze estesa ai numeri complessi,</p>
+<p class="sd-card-text">Usando la proprietà delle potenze estesa ai numeri complessi,</p>
 <div class="math notranslate nohighlight">
-\[e^z = e^{x + iy} = e^x \, e^{i y} =  e^x \left( \cos y + i \sin y \right)
-\rightarrow
-e^{iy} = \cos y + i \sin y \ .
+\[e^x \left( \cos y + i \sin y \right) = e^z = e^{x + iy} = e^x \, e^{i y} \ ,
 \]</div>
-<p class="sd-card-text"><strong>todo</strong> …</p>
+<p class="sd-card-text">dall’arbitrarietà del valore <span class="math notranslate nohighlight">\(x\)</span>, risulta dimostrata la formula di Eulero,</p>
+<div class="math notranslate nohighlight">
+\[e^{iy} = \cos y + i \sin y \ .\]</div>
+<p class="sd-card-text">per esponenti reali <span class="math notranslate nohighlight">\(y \in \mathbb{R}\)</span>.</p>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -647,7 +648,7 @@ Dimostrazione usando la definizione come serie<div class="sd-summary-down docuti
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">L’identità di Eulero può essere dimostrata (<strong>todo</strong> <em>bisogna verificare la convergenza (uniforme) delle serie?</em>) confrontando le serie polinomiali (di Taylor) delle funzioni <span class="math notranslate nohighlight">\(\cos x\)</span>, <span class="math notranslate nohighlight">\(\sin x\)</span> definite sui numeri reali, <span class="math notranslate nohighlight">\(x \in \mathbb{R}\)</span></p>
+<p class="sd-card-text">L’identità di Eulero può essere dimostrata (<strong>todo</strong> <em>bisogna verificare la convergenza (uniforme) delle serie?</em>) confrontando le <a class="reference internal" href="../infinitesimal_calculus/derivatives.html#infinitesimal-calculus-derivatives-taylor"><span class="std std-ref">serie polinomiali di Taylor</span></a> delle funzioni <span class="math notranslate nohighlight">\(\cos x\)</span>, <span class="math notranslate nohighlight">\(\sin x\)</span> definite sui numeri reali, <span class="math notranslate nohighlight">\(x \in \mathbb{R}\)</span></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
   \cos x &amp; = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} + \dots \\
