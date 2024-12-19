@@ -50,3 +50,11 @@ Si può dimostrare che
 
 ## Funzione esponenziale e logaritmo di variabile complessa
 **todo** *Fare riferimento ad algebra complessa. La funzione $e^{z}$ è necessaria a introdurre la rappresentazione polare dei numeri complessi.*
+
+## Funzioni iperboliche
+Vengono definite le funzioni iperboliche
+
+$$\begin{aligned}
+  \cosh x & := \frac{e^x + e^{-x}}{2} \\
+  \cosh y & := \frac{e^x - e^{-x}}{2}
+\end{aligned}$$
