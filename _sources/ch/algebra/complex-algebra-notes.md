@@ -117,7 +117,10 @@ Il termine $r_n^n$ tende quindi a $e^x$.
 
 Il limite dei termini $a_n$ della successione che definisce l'esponenziale complesso può quindi essere scritto come
 
-$$e^z = e^x \left( \cos y + i \sin y \right) \ ,$$
+$$\begin{aligned}
+  e^z & = \lim_{n \rightarrow +\infty} a_n = \\
+      & = \lim_{n \rightarrow +\infty} r_n (\cos(n\theta) + i \sin(n\theta)) =  & (\lim_{n\rightarrow +\infty} r_n = e^x, \lim_{n \rightarrow + \infty} n \theta = y)\\
+      & = e^x \left( \cos y + i \sin y \right) \ .$$
 
 Si trova quindi l'identità di Eulero usando la proprietà delle potenze estesa ai numeri complessi,
 
