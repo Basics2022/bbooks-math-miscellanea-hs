@@ -64,7 +64,7 @@ $$\begin{cases}
 \end{cases}$$
 
 $$\begin{cases}
-  r_n = \sqrt{ \left(\text{re}\{a_n\}\right)^2 + \left(\text{im}\{a_n\}\right)^2 } =  \sqrt{\left(1+ \frac{x}{n}\right)^2 + \left(\frac{y}{n}\right)^2}
+  r_n = \sqrt{ \left(\text{re}\{a_n\}\right)^2 + \left(\text{im}\{a_n\}\right)^2 } =  \sqrt{\left(1+ \frac{x}{n}\right)^2 + \left(\frac{y}{n}\right)^2} \\
   \tan \theta_n = \frac{\text{im}\{a_n\}}{\text{re}\{a_n\}} = \frac{\frac{y}{n}}{1 + \frac{x}{n}} = \frac{y}{x + n}_n
 \end{cases}$$
 
