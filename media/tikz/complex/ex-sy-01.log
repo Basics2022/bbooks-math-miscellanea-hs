@@ -2,8 +2,8 @@ This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**ex-eq-01.tex
-(./ex-eq-01.tex
+**ex-sy-01.tex
+(./ex-sy-01.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14>
 (/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cls
@@ -428,8 +428,8 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count277
 \l__pdf_internal_box=\box59
 )
-(./ex-eq-01.aux)
-\openout1 = `ex-eq-01.aux'.
+(./ex-sy-01.aux)
+\openout1 = `ex-sy-01.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
@@ -500,24 +500,25 @@ e
 ))
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./ex-eq-01.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./ex-sy-01.aux) ) 
 Here is how much of TeX's memory you used:
- 13036 strings out of 483172
- 260175 string characters out of 5965816
- 475500 words of memory out of 5000000
- 27807 multiletter control sequences out of 15000+600000
+ 13062 strings out of 483172
+ 260577 string characters out of 5965816
+ 480500 words of memory out of 5000000
+ 27833 multiletter control sequences out of 15000+600000
  535067 words of font info for 34 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 60i,7n,60p,409b,637s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,7n,60p,409b,652s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on ex-eq-01.pdf (1 page, 36019 bytes).
+t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy9.pfb>
+Output written on ex-sy-01.pdf (1 page, 44499 bytes).
 PDF statistics:
- 27 PDF objects out of 1000 (max. 8388607)
- 19 compressed objects within 1 object stream
+ 31 PDF objects out of 1000 (max. 8388607)
+ 22 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

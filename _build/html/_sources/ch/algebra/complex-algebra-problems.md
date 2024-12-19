@@ -88,7 +88,7 @@ $$\begin{aligned}
 Risolvere le seguenti equazioni
 
 1. Risolvi $|z| = 2$ e rappresenta graficamente le soluzioni.
-2. Trova i numeri complessi $z$ che soddisfano $z + \overline{z} = 6$ e $|z| = 5$.
+2. Trova i numeri complessi $z$ che soddisfano $z + \overline{z} = 2$.
 3. Risolvi $z^2 - 2z + 5 = 0$ e calcola il modulo delle soluzioni.
 4. Risolvi $|z - 3| = 5$ e rappresenta graficamente le soluzioni.
 5. Trova i valori di $z$ per cui $z^3 = 27$.
@@ -115,7 +115,7 @@ Risolvere le seguenti equazioni
 
 1. Risolvi il sistema:  
    $\begin{cases} 
-   z + \overline{z} = 4 \\
+   z + \overline{z} = 6 \\
    |z| = 5 
    \end{cases}$
 
