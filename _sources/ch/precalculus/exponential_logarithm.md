@@ -30,7 +30,7 @@ che è definita per $x \in \mathbb{R}$ e ha immagine $(0, +\infty)$.
 - la [funzione è continua](infinitesimal-calculus:continuous-fun), come si vedrà nel capitolo sull'[introduzione all'analisi](infinitesimal-calculus:analysis)
 
 Tra tutte le basi, la funzione esponenziale con base $e$ di Eulero (o di Nepero) svolte un ruolo fondamentale in matematica e nelle scienze in generale, come ci sarà l'occasione di iniziare ad apprezzare nelle parti sul:
-- [calcolo](infinitesimal-calculus): [limiti](infinitesimal-calculus:limits), [derivate](infinitesimal-calculus:derivatives), [integrali](infinitesimal-calculus:integrals), [equazioni differenziali](ode-hs)
+- [calcolo](math-hs:calculus): [limiti](infinitesimal-calculus:limits), [derivate](infinitesimal-calculus:derivatives), [integrali](infinitesimal-calculus:integrals), [equazioni differenziali](ode-hs)
 - [numeri complessi](math-hs:algebra:complex)
 
 Vale dunque la pena introdurre la funzione esponenziale $e^x$, e discuterne alcune definizioni equivalenti e proprietà fondamentali che permettono di comprendere l'origine della centralità di questa funzione in (quasi) tutti gli ambiti della matematica e delle scienze.
