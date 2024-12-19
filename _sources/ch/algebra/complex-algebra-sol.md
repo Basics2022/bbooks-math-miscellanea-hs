@@ -46,11 +46,65 @@ $$z = 2 e^{i \theta} \quad \forall \theta \in \mathbb{R} \ .$$
 ```
 
 2. Trova i numeri complessi $z$ che soddisfano $z + \overline{z} = 2$.
+
+```{dropdown} Soluzione
+...
+
+![](../../media/tikz/complex/ex-eq-02.svg)
+<!-- *Didascalia, se necessaria* -->
+
+```
+
 3. Risolvi $z^2 - 2z + 5 = 0$ e calcola il modulo delle soluzioni.
+
+```{dropdown} Soluzione
+...
+
+![](../../media/tikz/complex/ex-eq-03.svg)
+<!-- *Didascalia, se necessaria* -->
+
+```
+
 4. Risolvi $|z - 3| = 5$ e rappresenta graficamente le soluzioni.
+
+```{dropdown} Soluzione
+...
+
+![](../../media/tikz/complex/ex-eq-04.svg)
+<!-- *Didascalia, se necessaria* -->
+
+```
+
 5. Trova i valori di $z$ per cui $z^3 = 27$.
+
+```{dropdown} Soluzione
+...
+
+![](../../media/tikz/complex/ex-eq-05.svg)
+<!-- *Didascalia, se necessaria* -->
+
+```
+
 6. Risolvi $z^4 + 16 = 0$ e rappresenta graficamente le soluzioni nel piano complesso.
+
+```{dropdown} Soluzione
+...
+
+![](../../media/tikz/complex/ex-eq-06.svg)
+<!-- *Didascalia, se necessaria* -->
+
+```
+
 7. Risolvi $|z - 1| = |z + 1|$ e descrivi il luogo geometrico delle soluzioni.
+
+```{dropdown} Soluzione
+...
+
+![](../../media/tikz/complex/ex-eq-07.svg)
+<!-- *Didascalia, se necessaria* -->
+
+```
+
 8. Trova le soluzioni di $z^5 - 32 = 0$ e rappresentale in forma polare.
 9. Determina i numeri complessi $z$ per cui $|z|^2 + |z - 2|^2 = 8$.
 10. Risolvi $|z + i| = 3$ per $z \in \mathbb{C}$.
@@ -112,7 +166,7 @@ z^2  & = (1 \mp i 2)^2 = -3 \mp i 4 \\
 -2 z & = -2 ( 1 \mp i 2 ) \\
 + 5  & = 5 \\
 \hline 
-& = &  ( -3-2+5 ) + i(\mp 4 \pm 4) = 0 
+& =  ( -3-2+5 ) + i(\mp 4 \pm 4) = 0 
 \end{aligned}\end{equation}
 %
 \begin{equation}\text{re}{z}   = 1\end{equation}
@@ -201,6 +255,117 @@ $$
 Soluzione degli [esercizi su disequazioni con i numeri complessi](math-hs:algebra:complex:problems:equations:ineq)
 
 ```` {only} html
+**1.** Trova i numeri complessi $z$ che soddisfano $|z| < 3$.
+
+```{dropdown} Soluzione
+...
+
+![](../../media/tikz/complex/ex-in-01.svg)
+<!-- *Didascalia, se necessaria* -->
+
+```
+
+**2.** Determina $z$ per cui $|z - 2| \geq 4$.
+
+```{dropdown} Soluzione
+...
+
+![](../../media/tikz/complex/ex-in-02.svg)
+<!-- *Didascalia, se necessaria* -->
+
+```
+
+**3.** Risolvi $|z + i| \leq 2$.
+
+```{dropdown} Soluzione
+...
+
+![](../../media/tikz/complex/ex-in-03.svg)
+<!-- *Didascalia, se necessaria* -->
+
+```
+
+**4.** Trova $z$ tali che $\text{Re}(z) > \text{Im}(z)$.
+
+```{dropdown} Soluzione
+...
+
+![](../../media/tikz/complex/ex-in-04.svg)
+<!-- *Didascalia, se necessaria* -->
+
+```
+
+**5.** Risolvi $|z - 1| > |z + 1|$.
+
+```{dropdown} Soluzione
+...
+
+![](../../media/tikz/complex/ex-in-05.svg)
+<!-- *Didascalia, se necessaria* -->
+
+```
+
+**6.** Determina il luogo geometrico di $z$ per cui $|z| - |z-2| \leq 1$.
+
+```{dropdown} Soluzione
+...
+
+![](../../media/tikz/complex/ex-in-06.svg)
+<!-- *Didascalia, se necessaria* -->
+
+```
+
+**7.** Risolvi $\text{Re}(z) + \text{Im}(z) \leq 2$.
+
+```{dropdown} Soluzione
+...
+
+![](../../media/tikz/complex/ex-in-07.svg)
+<!-- *Didascalia, se necessaria* -->
+
+```
+
+**8.** Trova $z$ tali che $|z| + |z - 1| \leq 5$.
+
+```{dropdown} Soluzione
+...
+
+![](../../media/tikz/complex/ex-in-08.svg)
+<!-- *Didascalia, se necessaria* -->
+
+```
+
+**9.** Trova $z$ tali che $|z+i| + |z - 1| \leq 5$.
+
+```{dropdown} Soluzione
+...
+
+![](../../media/tikz/complex/ex-in-09.svg)
+<!-- *Didascalia, se necessaria* -->
+
+```
+
+**10.** Risolvi $|z - i| \geq |z + 2|$.
+
+```{dropdown} Soluzione
+...
+
+![](../../media/tikz/complex/ex-in-10.svg)
+<!-- *Didascalia, se necessaria* -->
+
+```
+
+**11.** Determina il luogo geometrico di $z$ per cui $|z| - |z-2| \leq 3$.
+
+```{dropdown} Soluzione
+...
+
+![](../../media/tikz/complex/ex-in-11.svg)
+![](../../media/tikz/complex/ex-in-11-a.svg)
+<!-- *Didascalia, se necessaria* -->
+
+```
+
 ````
 
 ```` {only} latex
@@ -269,11 +434,26 @@ $$
 \end{minipage}
 $$
 
-**6.** Determina il luogo geometrico di $z$ per cui $|z| - |z-2| \leq 3$.
+**6.** Determina il luogo geometrico di $z$ per cui $|z| - |z-2| \leq 1$.
 
 $$
 \begin{minipage}[t]{.55\textwidth}
-...
+La condizione corrisponde alla ricerca dei punti del piano in una zona del piano delimitata da un ramo dell'iperbole con fuochi $F_1 \equiv (0,0)$, $F_2(2,0)$ e con differenza delle distanze $2 a = 1$. La distanza dei due fuochi è $2c = 2$. I coefficienti che definiscono l'iperbole sono quindi
+%
+\begin{equation}
+  a = \frac{1}{2} \ , \quad c = 1 \ , \quad b = \sqrt{c^2-a^2} = \frac{\sqrt{3}}{2} \ ,
+\end{equation}
+%
+il centro è $C \equiv \left(1,0 \right)$ e l'eccentricità $e = \frac{c}{a} = 2 > 1$.
+%
+Le coordinate dei punti dell'iperbole possono essere scritte in forma parametrica come
+%
+\begin{equation} P - C = \hat{x} a \cosh \theta + \hat{y} b \sinh \theta \end{equation}
+%
+o usando i numeri complessi,
+%
+\begin{equation} z(\theta) = 1 + a \cosh \theta + i b \sinh \theta \end{equation}
+%
 \end{minipage}
 \hspace{.05\textwidth}
 \begin{minipage}[t]{.40\textwidth}
@@ -299,7 +479,22 @@ $$
 
 $$
 \begin{minipage}[t]{.55\textwidth}
-...
+La condizione corrisponde alla ricerca dei punti del piano contenuti nella regione delimitata dall'ellisse con fuochi $F_1 \equiv (0,0)$, $F_2(1,0)$ e con somma delle distanze $2 a = 5$. La distanza dei due fuochi è $2c = 1$. I coefficienti che definiscono l'ellisse sono quindi
+%
+\begin{equation}
+  a = \frac{5}{2} \ , \quad c = \frac{1}{2} \ , \quad b = \sqrt{a^2-c^2} = \frac{\sqrt{24}}{2} = \sqrt{6}
+\end{equation}
+%
+il centro è $C \equiv \left(\frac{1}{2},0 \right)$ e l'eccentricità $e = \frac{c}{a} = \frac{1}{5}$.
+%
+Le coordinate dei punti dell'ellisse possono essere scritte in forma parametrica come
+%
+\begin{equation} P - C = \hat{x} a \cos \theta + \hat{y} b \sin \theta \end{equation}
+%
+o usando i numeri complessi,
+%
+\begin{equation} z(\theta) = \frac{1}{2} + a \cos \theta + i b \sin \theta \end{equation}
+%
 \end{minipage}
 \hspace{.05\textwidth}
 \begin{minipage}[t]{.40\textwidth}
@@ -312,7 +507,23 @@ $$
 
 $$
 \begin{minipage}[t]{.55\textwidth}
-...
+La condizione corrisponde alla ricerca dei punti del piano contenuti nella regione delimitata dall'ellisse con fuochi $F_1 \equiv (0,-1)$, $F_2(1,0)$ e con somma delle distanze $2 a = 5$. La distanza dei due fuochi è $2c = \sqrt{2}$. I coefficienti che definiscono l'ellisse sono quindi
+%
+\begin{equation}
+  a = \frac{5}{2} \ , \quad c = \frac{\sqrt{2}}{2} \ , \quad b = \sqrt{a^2-c^2} = \frac{\sqrt{23}}{2} 
+\end{equation}
+%
+il centro è $C \equiv \left(\frac{1}{2}, -\frac{1}{2} \right)$ e l'eccentricità $e = \frac{c}{a} = \frac{\sqrt{2}}{5}$.
+%
+Le coordinate dei punti dell'ellisse possono essere scritte in forma parametrica come
+%
+\begin{equation} P - C = \hat{x} a \cos \theta + \hat{y} b \sin \theta \end{equation}
+%
+o usando i numeri complessi,
+%
+\begin{equation} z(\theta) = \frac{1}{2} + a \cos \theta + i \left[ - \frac{1}{2} + b \sin \theta \right] \end{equation}
+%
+%
 \end{minipage}
 \hspace{.05\textwidth}
 \begin{minipage}[t]{.40\textwidth}
@@ -331,6 +542,56 @@ $$
 \begin{minipage}[t]{.40\textwidth}
   \vspace{0pt}
   \includegraphics[width=.95\textwidth]{../../media/tikz/complex/ex-in-10.pdf}
+\end{minipage}
+$$
+
+**11.** Determina il luogo geometrico di $z$ per cui $|z| - |z-2| \leq 3$.
+
+Si riorganizza l'equazione per confrontare due termini non-negativi,
+
+$$
+  |z| \leq 3 + |z-2| \ .
+$$
+
+Usando una rappresentazione cartesiana, $z = x + i y$,
+
+$$\begin{aligned}
+  & x^2 + y^2 \leq 9 + (x-2)^2 + y^2 + 6\sqrt{(x-2)^2+y^2} \\
+  & x^2 + y^2 \leq 9 + x^2 - 4x + 4 + y^2 + 6\sqrt{(x-2)^2+y^2} \\
+  & 4x - 13   \leq 6\sqrt{(x-2)^2+y^2} \\
+\end{aligned}$$
+
+Ora, si osserva che il termine di destra è non-negativo per ogni valore di $x$, $y$. Il termine di sinistra può avere segno positivo o negativo. Si discutono quindi i due casi:
+- $4x - 13 \leq 0$: la disequazione è sempre soddisfatta poiché il termine di sinistra è non-positivo, il termine di destra è non-negativo e deve essere maggiore *o uguale* al termine di sinitra. Questo è quindi sempre vero, nel caso in cui $4 x - 13 \leq 0$
+- $4x - 13 > 0$: in questo caso entrambi i termini sono non negativi, e quindi si può elevare al quadrato per "eliminare" la radice quadrata.
+
+  $$\begin{aligned}
+    & 16x^2 - 104 x + 169 \leq 36 x^2 - 144 x + 144 + 36 y^2 \\
+    & 0 \leq 20 x^2 - 40 x - 25 + 36 y^2 \\
+    & 0 \leq 20 ( x^2 - 2 x + 1 ) - 45 + 36 y^2 \\
+    &  \frac{(x-1)^2}{\frac{45}{20}} + \frac{y^2}{\frac{45}{36}} \geq 1 \ ,
+  \end{aligned}$$
+  
+  e questa disequazione è soddisfatta per tutti i punti esterni all'ellisse con centro $(1,0)$ e semi-assi 
+
+  $$\begin{aligned}
+    a & = \sqrt{\frac{45}{20}} = \sqrt{\frac{9}{4}} = \frac{3}{2} \\
+    b & = \sqrt{\frac{45}{36}} = \sqrt{\frac{5}{4}} = \frac{\sqrt{5}}{2} \\
+  \end{aligned}$$
+
+  Il punto con parte reale minima per la quale la disequazione smette di essere soddisfatta è il punto estremo sul semiasse maggiore, $z = z_c + a = 1 + \frac{3}{2} = \frac{5}{2}$. Questo numero è minore di $\frac{13}{4}$, valore limite di $x$ di questo secondo caso. Quindi la disequazione è sempre soddisfatta per tutti gli $x > \frac{13}{4}$.
+
+La disequazione risulta quindi soddisfatta sempre in entrambi i casi, e quindi risulta sempre soddisfatta in tutto il piano complesso, cioè vale $\forall z \in \mathbb{C}$.
+
+$$
+\begin{minipage}[t]{.45\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/tikz/complex/ex-in-11.pdf}
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.45\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/tikz/complex/ex-in-11-a.pdf}
 \end{minipage}
 $$
 
