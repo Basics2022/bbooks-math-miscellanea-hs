@@ -55,6 +55,7 @@ con $x, \ y \in \mathbb{R}$.
 (math-hs:algebra:complex:demoivre-euler)=
 ## Formula di de Moivre e di Eulero
 
+### Formula di de Moivre
 La formula di **de Moivre** è la relazione
 
 $$(\cos x + i \sin x)^n = \cos(nx) + i \sin(nx) \ , \quad n \in \mathbb{Z} \ ,$$ (complex:demoivre)

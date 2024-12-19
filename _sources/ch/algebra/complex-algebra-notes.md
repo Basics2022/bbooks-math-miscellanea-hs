@@ -15,7 +15,7 @@
 
 (math-hs:algebra:complex:notes:demoivre)=
 ## Formula di de Moivre
-Qui si dimostra la formula di de Moivre {ref}`complex:demoivre`.
+Qui si dimostra la formula di de Moivre {eq}`complex:demoivre`.
 
 $$(\cos x + i \sin x)^n = \cos(nx) + i \sin(nx) \ , \quad n \in \mathbb{Z}$$
 
