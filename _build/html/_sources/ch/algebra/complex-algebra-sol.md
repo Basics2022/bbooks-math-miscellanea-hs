@@ -65,7 +65,7 @@ $$z = 2 e^{i \theta} \quad \forall \theta \in \mathbb{R} \ .$$
 
 ```
 
-4. Risolvi $|z - 3| = 5$ e rappresenta graficamente le soluzioni.
+4. Risolvi $|z - 3 + i| = 2$ e rappresenta graficamente le soluzioni.
 
 ```{dropdown} Soluzione
 ...
@@ -85,7 +85,7 @@ $$z = 2 e^{i \theta} \quad \forall \theta \in \mathbb{R} \ .$$
 
 ```
 
-6. Risolvi $z^4 + 16 = 0$ e rappresenta graficamente le soluzioni nel piano complesso.
+6. Risolvi $(z-1)^4 + 16 = 0$ e rappresenta graficamente le soluzioni nel piano complesso.
 
 ```{dropdown} Soluzione
 ...
@@ -95,7 +95,7 @@ $$z = 2 e^{i \theta} \quad \forall \theta \in \mathbb{R} \ .$$
 
 ```
 
-7. Risolvi $|z - 1| = |z + 1|$ e descrivi il luogo geometrico delle soluzioni.
+7. Risolvi $|z - 2| = |z + 1|$ e descrivi il luogo geometrico delle soluzioni.
 
 ```{dropdown} Soluzione
 ...
