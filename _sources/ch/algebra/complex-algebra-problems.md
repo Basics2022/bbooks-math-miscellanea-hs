@@ -83,6 +83,8 @@ $$\begin{aligned}
 
 (math-hs:algebra:complex:problems:equations:eq)=
 ### Equazioni
+[Soluzioni](math-hs:algebra:complex:problems:equations:eq:sol).
+
 ```{exercise} Equazioni
 
 Risolvere le seguenti equazioni
@@ -110,6 +112,8 @@ Risolvere le seguenti equazioni
 
 (math-hs:algebra:complex:problems:equations:ineq)=
 ### Disequazioni
+
+[Soluzioni](math-hs:algebra:complex:problems:equations:ineq:sol).
 
 ```{exercise} Disequazioni
 
@@ -140,6 +144,8 @@ Risolvere le seguenti equazioni
 
 (math-hs:algebra:complex:problems:equations:sys)=
 ### Sistemi di equazioni
+
+[Soluzioni](math-hs:algebra:complex:problems:equations:sys:sol).
 
 ```{exercise} Sistemi di equazioni
 

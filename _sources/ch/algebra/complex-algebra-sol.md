@@ -25,6 +25,7 @@ Soluzione degli [esercizi sui numeri complessi e la geometria nel piano euclideo
 (math-hs:algebra:complex:problems:equations:sol)=
 ## Equazioni e disequazioni con i numeri complessi
 
+(math-hs:algebra:complex:problems:equations:eq:sol)=
 ### Equazioni
 Soluzione degli [esercizi su equazioni con i numeri complessi](math-hs:algebra:complex:problems:equations:sys)
 
@@ -251,6 +252,7 @@ $$
 
 ````
 
+(math-hs:algebra:complex:problems:equations:ineq:sol)=
 ### Disequazioni
 Soluzione degli [esercizi su disequazioni con i numeri complessi](math-hs:algebra:complex:problems:equations:ineq)
 
@@ -597,6 +599,7 @@ $$
 
 ````
 
+(math-hs:algebra:complex:problems:equations:sys:sol)=
 ### Sistemi
 Soluzione degli [esercizi su sistemi di equazioni con i numeri complessi](math-hs:algebra:complex:problems:equations:sys)
 
