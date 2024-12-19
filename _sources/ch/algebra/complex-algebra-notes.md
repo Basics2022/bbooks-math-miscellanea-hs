@@ -93,7 +93,7 @@ $$\begin{aligned}
       & = r_n^n \cdot \left[ \cos ( n \theta_n ) + i \sin (n \theta_n) \right]
 \end{aligned}$$
 
-Per $n \rightarrow \infty$
+Per $n \rightarrow \infty$, $\tan \theta_n \rightarrow 0$ e quindi vale l'approssimazione asintotica $\tan \theta_n \sim \theta_n$
 
 $$\theta_n \sim \tan \theta_n = \frac{y}{x+n} \sim \frac{y}{n}$$
 $$n \theta_n \sim y$$
