@@ -37,13 +37,13 @@ $$\left| \sum_{k=n+1}^{\infty} \frac{x^k}{k!} \right| <  \frac{(2 \tilde{M})^{2 
 ```
 
 
-(math-hs:exp-log:proof:equivalence)=
+(math-hs:exp-log:notes:equivalence)=
 ### Equivalenza delle due definizioni
 ```{dropdown} Equivalenza delle due definizioni
 **todo**
 ```
 
-(math-hs:exp-log:proof:powers)=
+(math-hs:exp-log:notes:powers)=
 ### Giustificazione della notazione $\ e^x$
 ```{dropdown} Giustificazione della notazione $\ e^x$ 
 Per evitare la forma indeterminata nel termine $0^0$, si calcola qui il limite per $x \rightarrow 0$ (**todo** *motivare la validità di questa operazione/interpretazione della funzione $e^x$*)

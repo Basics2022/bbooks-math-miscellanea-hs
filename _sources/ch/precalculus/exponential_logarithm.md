@@ -56,8 +56,8 @@ $$
 
 Si può dimostrare che (seguire i link per le dimostrazioni in appendice): 
 - la [serie è convergente](math-hs:exp-log:notes:convergence) per ogni $x \in \mathbb{R}$ finito 
-- le due [definizioni sono equivalenti](math-hs:exp-log:proof:equivalence)
-- le definizioni della funzione $e^x$ giustificano la notazione $e^x$ questa funznione poiché soddisfa le [proprietà delle potenze (*con stessa base, $e$*)](math-hs:exp-log:proof:powers):
+- le due [definizioni sono equivalenti](math-hs:exp-log:notes:equivalence)
+- le definizioni della funzione $e^x$ giustificano la notazione $e^x$ questa funznione poiché soddisfa le [proprietà delle potenze (*con stessa base, $e$*)](math-hs:exp-log:notes:powers):
   
   $$\begin{aligned}
     e^0 & = 1 \\
