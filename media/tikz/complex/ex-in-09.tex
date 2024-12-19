@@ -17,15 +17,28 @@
     \def\xmaxb{\xmax+\dx}
     \def\yminb{\ymin-\dy}
     \def\ymaxb{\ymax+\dy}
-    \coordinate (center) at (0., 0.);
-    \def\radius{2.}
+    \def\xa{0.}
+    \def\ya{-1}
+    \def\xb{1.}
+    \def\yb{0.}
+    \def\a{2.5};
+    \coordinate (fa) at (\xa, \ya);
+    \coordinate (fb) at (\xb, \yb);
+    \def\c{sqrt((\xa-\xb)^2+(\ya-\yb)^2)};
+    \def\xc{{0.5*(\xa+\xb)}};
+    \def\yc{{0.5*(\ya+\yb)}};
+    \coordinate (center) at (\xc, \yc);
+    \def\b{{sqrt(\a^2-\c^2)}};
+    \def\alpha{{atan2(\yb-\ya,\xb-\xa)}};
 
-    % Fill outside region
-    \begin{scope}
-        % \clip (\xminb, \yminb) rectangle (\xmaxb, \ymaxb);
-        % \fill[gray!30] (\xmin, \ymin) rectangle (\xmax, \ymax);
-        \fill[gray!30] (center) circle (3);
-    \end{scope}
+    \draw[rotate=\alpha, fill=gray!30] (center) ellipse ({\a} and {\b});
+
+%   % Fill outside region
+%   \begin{scope}
+%       % \clip (\xminb, \yminb) rectangle (\xmaxb, \ymaxb);
+%       % \fill[gray!30] (\xmin, \ymin) rectangle (\xmax, \ymax);
+%       \fill[gray!30] (center) circle (3);
+%   \end{scope}
 
     % Draw grid
     \draw[step=1., gray!60, ultra thin] (\xmin, \ymin) grid (\xmax, \ymax); % Visible grid with lighter color
@@ -44,8 +57,8 @@
     \node[below left] at (0, 0) {$0$};
 
     % Foci
-    \filldraw[blue] ( 0,0) circle (2pt) node[above right] {$0$};
-    \filldraw[blue] ( 2,0) circle (2pt) node[above right] {$2$};
+    \filldraw[blue] (\xa,\ya) circle (2pt) node[above right] {$-i$};
+    \filldraw[blue] (\xb,\yb) circle (2pt) node[above right] {$1$};
     
         
 \end{tikzpicture}

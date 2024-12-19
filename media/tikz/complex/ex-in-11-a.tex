@@ -1,16 +1,17 @@
 \documentclass{standalone}
 \usepackage{tikz}
 \usepackage{amsmath}
+\usetikzlibrary{patterns}
 
 \begin{document}
 
 \begin{tikzpicture}
     
     % Center of the circle
-    \def\xmin{-4}
-    \def\xmax{4}
-    \def\ymin{-4}
-    \def\ymax{4}
+    \def\xmin{-6}
+    \def\xmax{6}
+    \def\ymin{-6}
+    \def\ymax{6}
     \def\dx{.5}
     \def\dy{.5}
     \def\xminb{\xmin-\dx}
@@ -31,7 +32,6 @@
     \def\b{{sqrt(\a^2-\c^2)}};
     \def\alpha{{atan2(\yb-\ya,\xb-\xa)}};
 
-    \draw[rotate=\alpha, fill=gray!30] (center) ellipse ({\a} and {\b});
 
 %   % Fill outside region
 %   \begin{scope}
@@ -39,6 +39,10 @@
 %       % \fill[gray!30] (\xmin, \ymin) rectangle (\xmax, \ymax);
 %       \fill[gray!30] (center) circle (3);
 %   \end{scope}
+
+    \draw[color=gray!30, fill=gray!30] (\xmin, \ymin) rectangle (\xmax, \ymax);
+    \draw[rotate=\alpha, fill=white] (center) ellipse ({\a} and {\b});
+    \draw[pattern=north west lines, pattern color=blue] (\xmin, \ymin) rectangle (13/4, \ymax);
 
     % Draw grid
     \draw[step=1., gray!60, ultra thin] (\xmin, \ymin) grid (\xmax, \ymax); % Visible grid with lighter color
@@ -56,9 +60,11 @@
     % Labels for axes
     \node[below left] at (0, 0) {$0$};
 
-    % Foci
-    \filldraw[blue] ( 0,0) circle (2pt) node[above right] {$0$};
-    \filldraw[blue] ( 1,0) circle (2pt) node[above right] {$1$};
+    \draw[thick] (13/4, \ymin) -- (13/4, \ymax);
+
+    %   % Foci
+%   \filldraw[blue] ( 0,0) circle (2pt) node[above right] {$0$};
+%   \filldraw[blue] ( 1,0) circle (2pt) node[above right] {$1$};
     
         
 \end{tikzpicture}
