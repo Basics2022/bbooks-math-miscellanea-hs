@@ -206,23 +206,133 @@ Soluzione degli [esercizi su disequazioni con i numeri complessi](math-hs:algebr
 ```` {only} latex
 **1.** Trova i numeri complessi $z$ che soddisfano $|z| < 3$.
 
+$$
+\begin{minipage}[t]{.55\textwidth}
+...
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/tikz/complex/ex-in-01.pdf}
+\end{minipage}
+$$
+
 **2.** Determina $z$ per cui $|z - 2| \geq 4$.
+
+$$
+\begin{minipage}[t]{.55\textwidth}
+...
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/tikz/complex/ex-in-02.pdf}
+\end{minipage}
+$$
 
 **3.** Risolvi $|z + i| \leq 2$.
 
+$$
+\begin{minipage}[t]{.55\textwidth}
+...
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/tikz/complex/ex-in-03.pdf}
+\end{minipage}
+$$
+
 **4.** Trova $z$ tali che $\text{Re}(z) > \text{Im}(z)$.
+
+$$
+\begin{minipage}[t]{.55\textwidth}
+...
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/tikz/complex/ex-in-04.pdf}
+\end{minipage}
+$$
 
 **5.** Risolvi $|z - 1| > |z + 1|$.
 
+$$
+\begin{minipage}[t]{.55\textwidth}
+...
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/tikz/complex/ex-in-05.pdf}
+\end{minipage}
+$$
+
 **6.** Determina il luogo geometrico di $z$ per cui $|z| - |z-2| \leq 3$.
+
+$$
+\begin{minipage}[t]{.55\textwidth}
+...
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/tikz/complex/ex-in-06.pdf}
+\end{minipage}
+$$
 
 **7.** Risolvi $\text{Re}(z) + \text{Im}(z) \leq 2$.
 
+$$
+\begin{minipage}[t]{.55\textwidth}
+...
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/tikz/complex/ex-in-07.pdf}
+\end{minipage}
+$$
+
 **8.** Trova $z$ tali che $|z| + |z - 1| \leq 5$.
+
+$$
+\begin{minipage}[t]{.55\textwidth}
+...
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/tikz/complex/ex-in-08.pdf}
+\end{minipage}
+$$
 
 **9.** Trova $z$ tali che $|z+i| + |z - 1| \leq 5$.
 
+$$
+\begin{minipage}[t]{.55\textwidth}
+...
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/tikz/complex/ex-in-09.pdf}
+\end{minipage}
+$$
+
 **10.** Risolvi $|z - i| \geq |z + 2|$.
+
+$$
+\begin{minipage}[t]{.55\textwidth}
+...
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/tikz/complex/ex-in-10.pdf}
+\end{minipage}
+$$
 
 ````
 
