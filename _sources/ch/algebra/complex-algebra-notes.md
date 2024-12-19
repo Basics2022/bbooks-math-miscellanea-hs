@@ -56,7 +56,13 @@ L'esponenziale complesso può essere scritto come limite della successione con t
 
 $$a_n = \left( 1 + \frac{z}{n} \right)^n = \left( 1 + \frac{x}{n} + i \frac{y}{n} \right)^n$$
 
-per $n \rightarrow +\infty$.
+per $n \rightarrow +\infty$. Si scrive il termine $a_n$ in forma polare, $a_n = r_n e^{i \theta_n}$ con le espressioni di $r_n$, $\theta_n$
+
+$$r_n = \sqrt{\left(1+ \frac{x}{n}\right)^2 + \left(\frac{y}{n}\right)^2}$$
+
+$$n r_n = \sqrt{( n + x )^2 + y^2}$$
+
+$$\tan \theta_n = \frac{\frac{y}{n}}{1 + \frac{x}{n}} = \frac{y}{x + n}$$
 
 <!--
 Il modulo di $a_n$ tende a $e^x$
