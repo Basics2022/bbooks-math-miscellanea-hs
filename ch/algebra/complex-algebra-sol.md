@@ -46,11 +46,65 @@ $$z = 2 e^{i \theta} \quad \forall \theta \in \mathbb{R} \ .$$
 ```
 
 2. Trova i numeri complessi $z$ che soddisfano $z + \overline{z} = 2$.
+
+```{dropdown} Soluzione
+...
+
+![](../../media/tikz/complex/ex-eq-02.svg)
+<!-- *Didascalia, se necessaria* -->
+
+```
+
 3. Risolvi $z^2 - 2z + 5 = 0$ e calcola il modulo delle soluzioni.
+
+```{dropdown} Soluzione
+...
+
+![](../../media/tikz/complex/ex-eq-03.svg)
+<!-- *Didascalia, se necessaria* -->
+
+```
+
 4. Risolvi $|z - 3| = 5$ e rappresenta graficamente le soluzioni.
+
+```{dropdown} Soluzione
+...
+
+![](../../media/tikz/complex/ex-eq-04.svg)
+<!-- *Didascalia, se necessaria* -->
+
+```
+
 5. Trova i valori di $z$ per cui $z^3 = 27$.
+
+```{dropdown} Soluzione
+...
+
+![](../../media/tikz/complex/ex-eq-05.svg)
+<!-- *Didascalia, se necessaria* -->
+
+```
+
 6. Risolvi $z^4 + 16 = 0$ e rappresenta graficamente le soluzioni nel piano complesso.
+
+```{dropdown} Soluzione
+...
+
+![](../../media/tikz/complex/ex-eq-06.svg)
+<!-- *Didascalia, se necessaria* -->
+
+```
+
 7. Risolvi $|z - 1| = |z + 1|$ e descrivi il luogo geometrico delle soluzioni.
+
+```{dropdown} Soluzione
+...
+
+![](../../media/tikz/complex/ex-eq-07.svg)
+<!-- *Didascalia, se necessaria* -->
+
+```
+
 8. Trova le soluzioni di $z^5 - 32 = 0$ e rappresentale in forma polare.
 9. Determina i numeri complessi $z$ per cui $|z|^2 + |z - 2|^2 = 8$.
 10. Risolvi $|z + i| = 3$ per $z \in \mathbb{C}$.
@@ -112,7 +166,7 @@ z^2  & = (1 \mp i 2)^2 = -3 \mp i 4 \\
 -2 z & = -2 ( 1 \mp i 2 ) \\
 + 5  & = 5 \\
 \hline 
-& = &  ( -3-2+5 ) + i(\mp 4 \pm 4) = 0 
+& =  ( -3-2+5 ) + i(\mp 4 \pm 4) = 0 
 \end{aligned}\end{equation}
 %
 \begin{equation}\text{re}{z}   = 1\end{equation}
@@ -201,6 +255,117 @@ $$
 Soluzione degli [esercizi su disequazioni con i numeri complessi](math-hs:algebra:complex:problems:equations:ineq)
 
 ```` {only} html
+**1.** Trova i numeri complessi $z$ che soddisfano $|z| < 3$.
+
+```{dropdown} Soluzione
+...
+
+![](../../media/tikz/complex/ex-in-01.svg)
+<!-- *Didascalia, se necessaria* -->
+
+```
+
+**2.** Determina $z$ per cui $|z - 2| \geq 4$.
+
+```{dropdown} Soluzione
+...
+
+![](../../media/tikz/complex/ex-in-02.svg)
+<!-- *Didascalia, se necessaria* -->
+
+```
+
+**3.** Risolvi $|z + i| \leq 2$.
+
+```{dropdown} Soluzione
+...
+
+![](../../media/tikz/complex/ex-in-03.svg)
+<!-- *Didascalia, se necessaria* -->
+
+```
+
+**4.** Trova $z$ tali che $\text{Re}(z) > \text{Im}(z)$.
+
+```{dropdown} Soluzione
+...
+
+![](../../media/tikz/complex/ex-in-04.svg)
+<!-- *Didascalia, se necessaria* -->
+
+```
+
+**5.** Risolvi $|z - 1| > |z + 1|$.
+
+```{dropdown} Soluzione
+...
+
+![](../../media/tikz/complex/ex-in-05.svg)
+<!-- *Didascalia, se necessaria* -->
+
+```
+
+**6.** Determina il luogo geometrico di $z$ per cui $|z| - |z-2| \leq 1$.
+
+```{dropdown} Soluzione
+...
+
+![](../../media/tikz/complex/ex-in-06.svg)
+<!-- *Didascalia, se necessaria* -->
+
+```
+
+**7.** Risolvi $\text{Re}(z) + \text{Im}(z) \leq 2$.
+
+```{dropdown} Soluzione
+...
+
+![](../../media/tikz/complex/ex-in-07.svg)
+<!-- *Didascalia, se necessaria* -->
+
+```
+
+**8.** Trova $z$ tali che $|z| + |z - 1| \leq 5$.
+
+```{dropdown} Soluzione
+...
+
+![](../../media/tikz/complex/ex-in-08.svg)
+<!-- *Didascalia, se necessaria* -->
+
+```
+
+**9.** Trova $z$ tali che $|z+i| + |z - 1| \leq 5$.
+
+```{dropdown} Soluzione
+...
+
+![](../../media/tikz/complex/ex-in-09.svg)
+<!-- *Didascalia, se necessaria* -->
+
+```
+
+**10.** Risolvi $|z - i| \geq |z + 2|$.
+
+```{dropdown} Soluzione
+...
+
+![](../../media/tikz/complex/ex-in-10.svg)
+<!-- *Didascalia, se necessaria* -->
+
+```
+
+**11.** Determina il luogo geometrico di $z$ per cui $|z| - |z-2| \leq 3$.
+
+```{dropdown} Soluzione
+...
+
+![](../../media/tikz/complex/ex-in-11.svg)
+![](../../media/tikz/complex/ex-in-11-a.svg)
+<!-- *Didascalia, se necessaria* -->
+
+```
+
 ````
 
 ```` {only} latex

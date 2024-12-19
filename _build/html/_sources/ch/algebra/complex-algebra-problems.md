@@ -123,7 +123,7 @@ Risolvere le seguenti equazioni
 
 **5.** Risolvi $|z - 1| > |z + 1|$.
 
-**6.** Determina il luogo geometrico di $z$ per cui $|z| - |z-2| \leq 3$.
+**6.** Determina il luogo geometrico di $z$ per cui $|z| - |z-2| \leq 1$.
 
 **7.** Risolvi $\text{Re}(z) + \text{Im}(z) \leq 2$.
 
@@ -132,6 +132,8 @@ Risolvere le seguenti equazioni
 **9.** Trova $z$ tali che $|z+i| + |z - 1| \leq 5$.
 
 **10.** Risolvi $|z - i| \geq |z + 2|$.
+
+**11.** Determina il luogo geometrico di $z$ per cui $|z| - |z-2| \leq 3$.
 ```
 
 
