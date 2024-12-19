@@ -70,3 +70,31 @@ avendo usato il [teorema binomiale](math-hs:precalculus:polynomials:binomial-thm
 
 ```
 
+(math-hs:exp-log:notes:hyp)=
+## Funzioni iperboliche
+
+```{dropdown} Relazione fondamentale
+
+$$\cosh^2 x - \sinh^2 x = 1$$
+
+infatti
+
+$$\begin{aligned}
+\cosh^2 x - \sinh^2 x & = \left(\frac{e^x + e^{-x}}{2}\right) - \left(\frac{e^x - e^{-x}}{2}\right) = \\
+& = \frac{e^{2x} + 2 + e^{-2x} - \left( e^{2x} - 2 + e^{-2x}\right)}{4} = 1 \\
+\end{aligned}$$
+
+```
+
+```{dropdown} Somma e differenza
+
+$$\begin{aligned}
+  \cosh(x+y) & = \frac{e^{x+y} + e^{-x-y}}{2} = \\
+   & = \frac{e^{x+y} + e^{x-y} - e^{x-y} + e^{-x-y}}{2} = \\
+   & = \frac{e^{x}(e^{y} + e^{-y}) - ( e^{x} - e^{-x})e^{-y}}{2} = \\
+\end{aligned}$$
+
+
+```
+
+

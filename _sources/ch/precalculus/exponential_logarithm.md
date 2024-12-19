@@ -102,8 +102,18 @@ Vengono definite le funzioni iperboliche
 
 $$\begin{aligned}
   \cosh x & := \frac{e^x + e^{-x}}{2} \\
-  \cosh y & := \frac{e^x - e^{-x}}{2}
+  \sinh y & := \frac{e^x - e^{-x}}{2} \ 
 \end{aligned}$$
+
+**Proprietà.** Le funzioni iperboliche hanno regole analoghe - ma non identiche - alle funzioni trigonometriche, [dimostrabili](math-hs:exp-log:notes:hyp) grazie alle proprietà delle potenze
+
+- Relazione fondamentale
+
+  $$\cosh^2 x - \sinh^2 x = 1$$
+
+- Somma e sottrazione
+
+  $$$$
 
 <!--
 ## Funzione esponenziale e logaritmo di variabile complessa
