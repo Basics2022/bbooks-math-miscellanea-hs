@@ -552,8 +552,8 @@ Dimostrazione per induzione<div class="sd-summary-down docutils">
 <div class="section" id="esponenziale-complesso">
 <span id="math-hs-algebra-complex-notes-complex-exp"></span><h2><span class="section-number">20.11.2. </span>Esponenziale complesso<a class="headerlink" href="#esponenziale-complesso" title="Permalink to this heading">#</a></h2>
 <p>Estendendo la definizione di funzione esponenziale <span class="math notranslate nohighlight">\(e^x\)</span> ai numeri complessi, si può scrivere</p>
-<div class="math notranslate nohighlight">
-\[e^z = \sum_{n = 0}^{+\infty} \frac{z^n}{n!} = \lim_{n \rightarrow +\infty} \left( 1 + \frac{z}{n} \right)^n\]</div>
+<div class="math notranslate nohighlight" id="equation-complex-complex-exp-notes">
+<span class="eqno">(20.5)<a class="headerlink" href="#equation-complex-complex-exp-notes" title="Permalink a questa equazione">#</a></span>\[e^z = \sum_{n = 0}^{+\infty} \frac{z^n}{n!} = \lim_{n \rightarrow +\infty} \left( 1 + \frac{z}{n} \right)^n\]</div>
 <!--
 ```{dropdown} Dimostrazione dell'equivalenza delle due definizioni
 ```
@@ -566,41 +566,15 @@ Dimostrazione per induzione<div class="sd-summary-down docutils">
 \[e^{i x} = \cos x + i \sin x\]</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-Dimostrazione usando la definizione come serie<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">L’identità di Eulero può essere dimostrata (<strong>todo</strong> <em>bisogna verificare la convergenza (uniforme) delle serie?</em>) confrontando le serie polinomiali (di Taylor) delle funzioni <span class="math notranslate nohighlight">\(\cos x\)</span>, <span class="math notranslate nohighlight">\(\sin x\)</span> definite sui numeri reali, <span class="math notranslate nohighlight">\(x \in \mathbb{R}\)</span></p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-  \cos x &amp; = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} + \dots \\
-  \sin x &amp; = x - \frac{x^3}{3!} + \frac{x^5}{5!} + \dots \\
-\end{aligned}\end{split}\]</div>
-<p class="sd-card-text">con la serie che definisce l’esponenziale complesso,</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-  e^z &amp; = 1 + z + \frac{z^2}{2!} + \frac{z^3}{3!} + \frac{z^4}{4!} + \frac{z^5}{5!} + \dots \\
-\end{split}\]</div>
-<p class="sd-card-text">valutata in <span class="math notranslate nohighlight">\(z = i x \in \mathbb{C}\)</span></p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-  e^{i x} 
-      &amp; = 1 + i x + \frac{(i x)^2}{2!} + \frac{(i x)^3}{3!} + \frac{(i x)^4}{4!} + \frac{(i x)^5}{5!} + \dots = \\
-      &amp; = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} \dots + i \left[ x - \frac{x^3}{3!} + \frac{x^5}{5!}  + \dots \right] = \\
-      &amp; = \cos x + i \sin x \ .
-\end{aligned}\end{split}\]</div>
-</div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
 Dimostrazione usando la definizione come limite della successione<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><strong>todo</strong></p>
+<p class="sd-card-text">L’esponenziale complesso può essere scritto come limite della successione con termini,</p>
 <div class="math notranslate nohighlight">
 \[a_n = \left( 1 + \frac{z}{n} \right)^n = \left( 1 + \frac{x}{n} + i \frac{y}{n} \right)^n\]</div>
+<p class="sd-card-text">per <span class="math notranslate nohighlight">\(n \rightarrow +\infty\)</span>.</p>
 <p class="sd-card-text">Il modulo di <span class="math notranslate nohighlight">\(a_n\)</span> tende a <span class="math notranslate nohighlight">\(e^x\)</span></p>
 <div class="math notranslate nohighlight">
 \[r_n = \sqrt{\left(1+ \frac{x}{n}\right)^2 + \left(\frac{y}{n}\right)^2}\]</div>
@@ -651,6 +625,33 @@ Dimostrazione usando la definizione come limite della successione<div class="sd-
 e^{iy} = \cos y + i \sin y \ .
 \]</div>
 <p class="sd-card-text"><strong>todo</strong> …</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Dimostrazione usando la definizione come serie<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">L’identità di Eulero può essere dimostrata (<strong>todo</strong> <em>bisogna verificare la convergenza (uniforme) delle serie?</em>) confrontando le serie polinomiali (di Taylor) delle funzioni <span class="math notranslate nohighlight">\(\cos x\)</span>, <span class="math notranslate nohighlight">\(\sin x\)</span> definite sui numeri reali, <span class="math notranslate nohighlight">\(x \in \mathbb{R}\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \cos x &amp; = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} + \dots \\
+  \sin x &amp; = x - \frac{x^3}{3!} + \frac{x^5}{5!} + \dots \\
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">con la serie che definisce l’esponenziale complesso,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+  e^z &amp; = 1 + z + \frac{z^2}{2!} + \frac{z^3}{3!} + \frac{z^4}{4!} + \frac{z^5}{5!} + \dots \\
+\end{split}\]</div>
+<p class="sd-card-text">valutata in <span class="math notranslate nohighlight">\(z = i x \in \mathbb{C}\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  e^{i x} 
+      &amp; = 1 + i x + \frac{(i x)^2}{2!} + \frac{(i x)^3}{3!} + \frac{(i x)^4}{4!} + \frac{(i x)^5}{5!} + \dots = \\
+      &amp; = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} \dots + i \left[ x - \frac{x^3}{3!} + \frac{x^5}{5!}  + \dots \right] = \\
+      &amp; = \cos x + i \sin x \ .
+\end{aligned}\end{split}\]</div>
 </div>
 </details></div>
 <div class="section" id="altre-operazioni-e-funzioni-a-variabile-complessa">
