@@ -582,16 +582,16 @@ document.write(`
 </div>
 <div class="section" id="formula-di-de-moivre-e-di-eulero">
 <span id="math-hs-algebra-complex-demoivre-euler"></span><h2><span class="section-number">20.3. </span>Formula di de Moivre e di Eulero<a class="headerlink" href="#formula-di-de-moivre-e-di-eulero" title="Permalink to this heading">#</a></h2>
-<p>La formula di <strong>de Moivre</strong></p>
-<div class="math notranslate nohighlight">
-\[(\cos x + i \sin x)^n = \cos(nx) + i \sin(nx) \ , \quad n \in \mathbb{Z} \ ,\]</div>
-<p>per <span class="math notranslate nohighlight">\(x \in \mathbb{R}\)</span> e <span class="math notranslate nohighlight">\(n \in \mathbb{Z}\)</span>.</p>
+<p>La formula di <strong>de Moivre</strong> è la relazione</p>
+<div class="math notranslate nohighlight" id="equation-complex-demoivre">
+<span class="eqno">(20.1)<a class="headerlink" href="#equation-complex-demoivre" title="Permalink a questa equazione">#</a></span>\[(\cos x + i \sin x)^n = \cos(nx) + i \sin(nx) \ , \quad n \in \mathbb{Z} \ ,\]</div>
+<p>per <span class="math notranslate nohighlight">\(x \in \mathbb{R}\)</span> e <span class="math notranslate nohighlight">\(n \in \mathbb{Z}\)</span>. In appendice la <a class="reference internal" href="../algebra.html"><span class="doc std std-doc">dimostrazione della formula di de Moivre</span></a>.</p>
 <p>L”<strong>esponenziale di un numero complesso</strong>, <span class="math notranslate nohighlight">\(z \in \mathbb{C}\)</span>, è definito estendendo la definizione di esponenziale per i numeri reali ai numeri complessi</p>
 <div class="math notranslate nohighlight" id="equation-complex-complex-exp">
-<span class="eqno">(20.1)<a class="headerlink" href="#equation-complex-complex-exp" title="Permalink a questa equazione">#</a></span>\[e^z = \sum_{n = 0}^{+\infty} \frac{z^n}{n!} = \lim_{n \rightarrow +\infty} \left( 1 + \frac{z}{n} \right)^n\]</div>
+<span class="eqno">(20.2)<a class="headerlink" href="#equation-complex-complex-exp" title="Permalink a questa equazione">#</a></span>\[e^z = \sum_{n = 0}^{+\infty} \frac{z^n}{n!} = \lim_{n \rightarrow +\infty} \left( 1 + \frac{z}{n} \right)^n\]</div>
 <p>Data questa definizione di esponenziale complesso, si può dimostrare la <strong>formula di Eulero</strong></p>
-<div class="math notranslate nohighlight">
-\[e^{i \theta} = \cos \theta + i \sin \theta \ ,\]</div>
+<div class="math notranslate nohighlight" id="equation-complex-euler">
+<span class="eqno">(20.3)<a class="headerlink" href="#equation-complex-euler" title="Permalink a questa equazione">#</a></span>\[e^{i \theta} = \cos \theta + i \sin \theta \ ,\]</div>
 <p>con <span class="math notranslate nohighlight">\(\theta \in \mathbb{R}\)</span>.</p>
 </div>
 <div class="section" id="rappresentazione-dei-numeri-complessi-nel-piano-complesso-argand-gauss">
@@ -641,7 +641,7 @@ document.write(`
 \[z^* := x - i y = r e^{-i\theta} \]</div>
 <p>E” immediato <a class="reference internal" href="complex-algebra-problems.html#math-hs-algebra-complex-problems-operations-cc-re-im"><span class="std std-ref">verificare</span></a> le seguenti identità</p>
 <div class="math notranslate nohighlight" id="equation-complex-cc-re-im">
-<span class="eqno">(20.2)<a class="headerlink" href="#equation-complex-cc-re-im" title="Permalink a questa equazione">#</a></span>\[\begin{split}\begin{aligned}
+<span class="eqno">(20.4)<a class="headerlink" href="#equation-complex-cc-re-im" title="Permalink a questa equazione">#</a></span>\[\begin{split}\begin{aligned}
   \text{re}\{ z \} &amp; = x = \frac{z + z^*}{2} \\
   \text{im}\{ z \} &amp; = y = \frac{z - z^*}{2i} \\
 \end{aligned}\end{split}\]</div>

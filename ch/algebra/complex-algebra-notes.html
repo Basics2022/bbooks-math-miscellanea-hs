@@ -499,11 +499,11 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#logaritmo">20.11.1.3. Logaritmo</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esponenziale-complesso-e-formula-di-eulero">20.11.2. Esponenziale complesso e formula di Eulero</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#formula-di-eulero">20.11.2.1. Formula di Eulero</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formula-di-de-moivre">20.11.2. Formula di de Moivre</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esponenziale-complesso-e-formula-di-eulero">20.11.3. Esponenziale complesso e formula di Eulero</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#formula-di-eulero">20.11.3.1. Formula di Eulero</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formula-di-de-moivre">20.11.3. Formula di de Moivre</a></li>
 </ul>
             </nav>
         </div>
@@ -529,8 +529,38 @@ document.write(`
 <span id="math-hs-algebra-complex-notes-fun-log"></span><h3><span class="section-number">20.11.1.3. </span>Logaritmo<a class="headerlink" href="#logaritmo" title="Permalink to this heading">#</a></h3>
 </div>
 </div>
+<div class="section" id="formula-di-de-moivre">
+<span id="math-hs-algebra-complex-notes-demoivre"></span><h2><span class="section-number">20.11.2. </span>Formula di de Moivre<a class="headerlink" href="#formula-di-de-moivre" title="Permalink to this heading">#</a></h2>
+<p>Qui si dimostra la formula di de Moivre <span class="xref std std-ref">complex:demoivre</span>.</p>
+<div class="math notranslate nohighlight">
+\[(\cos x + i \sin x)^n = \cos(nx) + i \sin(nx) \ , \quad n \in \mathbb{Z}\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Dimostrazione per induzione<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Per <span class="math notranslate nohighlight">\(n \in \mathbb{N}\)</span>, si procede per induzione <strong>todo</strong> <em>aggiungere i capitoli sulla logica? E un riferimento ad essi?</em> Per <span class="math notranslate nohighlight">\(n = 1\)</span> la formula di de Moivre si riduce a un’identità. Supponiamo quindi che sia valida per un intero <span class="math notranslate nohighlight">\(n &gt; 1\)</span> e verifichiamo se questo implica che sia valida anche per <span class="math notranslate nohighlight">\(n+1\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  (\cos x + i \sin x)^{n+1} &amp; = (\cos x + i \sin x)^n \, (\cos x + i \sin x) = \\
+                            &amp; = \left(\cos (nx)+ i \sin (nx) \right) \, (\cos x + i \sin x) = \\
+                            &amp; = \cos(nx) \cos x - \sin(nx) \sin x + i \left( \cos(nx) \sin x + \sin(nx) \cos x \right) = \\
+                            &amp; = \cos( (n+1)x ) + i \sin( (n+1) x ) \ .
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">Per <span class="math notranslate nohighlight">\(n = 0\)</span>, la formula di de Moivre si riduce all’identità <span class="math notranslate nohighlight">\(1 \equiv 1\)</span>.</p>
+<p class="sd-card-text">Per <span class="math notranslate nohighlight">\(m := -n \in \mathbb{N}\)</span>, la formula di de Moivre può essere verificata usando la formula di de Moivre per <span class="math notranslate nohighlight">\(m &gt; 0\)</span> e razionalizzando la frazione,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \left( \cos x + i \sin x \right)^{n} &amp; = \frac{1}{\left( \cos x + i \sin x \right)^m} = \\
+   &amp; = \frac{1}{\left( \cos (m x) + i \sin (m x) \right)} = \\
+   &amp; = \frac{\cos( m x) - i \sin (m x)}{\underbrace{\cos^2(mx) + \sin^2(mx)}_{=1}} = \cos(mx) - i \sin(mx) = \cos(nx) + i \sin(nx) \ .
+\end{aligned}\end{split}\]</div>
+</div>
+</details></div>
 <div class="section" id="esponenziale-complesso-e-formula-di-eulero">
-<span id="math-hs-algebra-complex-notes-euler"></span><h2><span class="section-number">20.11.2. </span>Esponenziale complesso e formula di Eulero<a class="headerlink" href="#esponenziale-complesso-e-formula-di-eulero" title="Permalink to this heading">#</a></h2>
+<span id="math-hs-algebra-complex-notes-euler"></span><h2><span class="section-number">20.11.3. </span>Esponenziale complesso e formula di Eulero<a class="headerlink" href="#esponenziale-complesso-e-formula-di-eulero" title="Permalink to this heading">#</a></h2>
 <p>Estendendo la definizione di funzione esponenziale <span class="math notranslate nohighlight">\(e^x\)</span> ai numeri complessi, si può scrivere</p>
 <div class="math notranslate nohighlight">
 \[e^z = \sum_{n = 0}^{+\infty} \frac{z^n}{n!} = \lim_{n \rightarrow +\infty} \left( 1 + \frac{z}{n} \right)^n\]</div>
@@ -539,7 +569,7 @@ document.write(`
 ```
 -->
 <div class="section" id="formula-di-eulero">
-<h3><span class="section-number">20.11.2.1. </span>Formula di Eulero<a class="headerlink" href="#formula-di-eulero" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">20.11.3.1. </span>Formula di Eulero<a class="headerlink" href="#formula-di-eulero" title="Permalink to this heading">#</a></h3>
 <p>Per esponenti reali, vale</p>
 <div class="math notranslate nohighlight">
 \[e^{i x} = \cos x + i \sin x\]</div>
@@ -633,35 +663,6 @@ e^{iy} = \cos y + i \sin y \ .
 </div>
 </details></div>
 </div>
-<div class="section" id="formula-di-de-moivre">
-<span id="math-hs-algebra-complex-notes-demoivre"></span><h2><span class="section-number">20.11.3. </span>Formula di de Moivre<a class="headerlink" href="#formula-di-de-moivre" title="Permalink to this heading">#</a></h2>
-<div class="math notranslate nohighlight">
-\[(\cos x + i \sin x)^n = \cos(nx) + i \sin(nx) \ , \quad n \in \mathbb{Z}\]</div>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Dimostrazione per induzione<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Per <span class="math notranslate nohighlight">\(n \in \mathbb{N}\)</span>, si procede per induzione <strong>todo</strong> <em>aggiungere i capitoli sulla logica? E un riferimento ad essi?</em> Per <span class="math notranslate nohighlight">\(n = 1\)</span> la formula di de Moivre si riduce a un’identità. Supponiamo quindi che sia valida per un intero <span class="math notranslate nohighlight">\(n &gt; 1\)</span> e verifichiamo se questo implica che sia valida anche per <span class="math notranslate nohighlight">\(n+1\)</span></p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-  (\cos x + i \sin x)^{n+1} &amp; = (\cos x + i \sin x)^n \, (\cos x + i \sin x) = \\
-                            &amp; = \left(\cos (nx)+ i \sin (nx) \right) \, (\cos x + i \sin x) = \\
-                            &amp; = \cos(nx) \cos x - \sin(nx) \sin x + i \left( \cos(nx) \sin x + \sin(nx) \cos x \right) = \\
-                            &amp; = \cos( (n+1)x ) + i \sin( (n+1) x ) \ .
-\end{aligned}\end{split}\]</div>
-<p class="sd-card-text">Per <span class="math notranslate nohighlight">\(n = 0\)</span>, la formula di de Moivre si riduce all’identità <span class="math notranslate nohighlight">\(1 \equiv 1\)</span>.</p>
-<p class="sd-card-text">Per <span class="math notranslate nohighlight">\(m := -n \in \mathbb{N}\)</span>, la formula di de Moivre può essere verificata usando la formula di de Moivre per <span class="math notranslate nohighlight">\(m &gt; 0\)</span> e razionalizzando la frazione,</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-  \left( \cos x + i \sin x \right)^{n} &amp; = \frac{1}{\left( \cos x + i \sin x \right)^m} = \\
-   &amp; = \frac{1}{\left( \cos (m x) + i \sin (m x) \right)} = \\
-   &amp; = \frac{\cos( m x) - i \sin (m x)}{\underbrace{\cos^2(mx) + \sin^2(mx)}_{=1}} = \cos(mx) - i \sin(mx) = \cos(nx) + i \sin(nx) \ .
-\end{aligned}\end{split}\]</div>
-</div>
-</details></div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -733,11 +734,11 @@ Dimostrazione per induzione<div class="sd-summary-down docutils">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#logaritmo">20.11.1.3. Logaritmo</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esponenziale-complesso-e-formula-di-eulero">20.11.2. Esponenziale complesso e formula di Eulero</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#formula-di-eulero">20.11.2.1. Formula di Eulero</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formula-di-de-moivre">20.11.2. Formula di de Moivre</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esponenziale-complesso-e-formula-di-eulero">20.11.3. Esponenziale complesso e formula di Eulero</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#formula-di-eulero">20.11.3.1. Formula di Eulero</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formula-di-de-moivre">20.11.3. Formula di de Moivre</a></li>
 </ul>
   </nav></div>
 

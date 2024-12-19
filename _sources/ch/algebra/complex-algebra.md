@@ -55,11 +55,11 @@ con $x, \ y \in \mathbb{R}$.
 (math-hs:algebra:complex:demoivre-euler)=
 ## Formula di de Moivre e di Eulero
 
-La formula di **de Moivre**
+La formula di **de Moivre** è la relazione
 
-$$(\cos x + i \sin x)^n = \cos(nx) + i \sin(nx) \ , \quad n \in \mathbb{Z} \ ,$$
+$$(\cos x + i \sin x)^n = \cos(nx) + i \sin(nx) \ , \quad n \in \mathbb{Z} \ ,$$ (complex:demoivre)
 
-per $x \in \mathbb{R}$ e $n \in \mathbb{Z}$.
+per $x \in \mathbb{R}$ e $n \in \mathbb{Z}$. In appendice la [dimostrazione della formula di de Moivre]().
 
 L'**esponenziale di un numero complesso**, $z \in \mathbb{C}$, è definito estendendo la definizione di esponenziale per i numeri reali ai numeri complessi
 
@@ -67,7 +67,7 @@ $$e^z = \sum_{n = 0}^{+\infty} \frac{z^n}{n!} = \lim_{n \rightarrow +\infty} \le
 
 Data questa definizione di esponenziale complesso, si può dimostrare la **formula di Eulero**
 
-$$e^{i \theta} = \cos \theta + i \sin \theta \ ,$$
+$$e^{i \theta} = \cos \theta + i \sin \theta \ ,$$ (complex:euler)
 
 con $\theta \in \mathbb{R}$.
 

@@ -13,6 +13,34 @@
 (math-hs:algebra:complex:notes:fun:log)=
 ### Logaritmo
 
+(math-hs:algebra:complex:notes:demoivre)=
+## Formula di de Moivre
+Qui si dimostra la formula di de Moivre {ref}`complex:demoivre`.
+
+$$(\cos x + i \sin x)^n = \cos(nx) + i \sin(nx) \ , \quad n \in \mathbb{Z}$$
+
+```{dropdown} Dimostrazione per induzione
+Per $n \in \mathbb{N}$, si procede per induzione **todo** *aggiungere i capitoli sulla logica? E un riferimento ad essi?* Per $n = 1$ la formula di de Moivre si riduce a un'identità. Supponiamo quindi che sia valida per un intero $n > 1$ e verifichiamo se questo implica che sia valida anche per $n+1$
+
+$$\begin{aligned}
+  (\cos x + i \sin x)^{n+1} & = (\cos x + i \sin x)^n \, (\cos x + i \sin x) = \\
+                            & = \left(\cos (nx)+ i \sin (nx) \right) \, (\cos x + i \sin x) = \\
+                            & = \cos(nx) \cos x - \sin(nx) \sin x + i \left( \cos(nx) \sin x + \sin(nx) \cos x \right) = \\
+                            & = \cos( (n+1)x ) + i \sin( (n+1) x ) \ .
+\end{aligned}$$
+
+Per $n = 0$, la formula di de Moivre si riduce all'identità $1 \equiv 1$.
+
+Per $m := -n \in \mathbb{N}$, la formula di de Moivre può essere verificata usando la formula di de Moivre per $m > 0$ e razionalizzando la frazione,
+
+$$\begin{aligned}
+  \left( \cos x + i \sin x \right)^{n} & = \frac{1}{\left( \cos x + i \sin x \right)^m} = \\
+   & = \frac{1}{\left( \cos (m x) + i \sin (m x) \right)} = \\
+   & = \frac{\cos( m x) - i \sin (m x)}{\underbrace{\cos^2(mx) + \sin^2(mx)}_{=1}} = \cos(mx) - i \sin(mx) = \cos(nx) + i \sin(nx) \ .
+\end{aligned}$$
+
+```
+
 (math-hs:algebra:complex:notes:euler)=
 ## Esponenziale complesso e formula di Eulero
 Estendendo la definizione di funzione esponenziale $e^x$ ai numeri complessi, si può scrivere
@@ -122,30 +150,4 @@ $$
 
 ```
 
-(math-hs:algebra:complex:notes:demoivre)=
-## Formula di de Moivre
-
-$$(\cos x + i \sin x)^n = \cos(nx) + i \sin(nx) \ , \quad n \in \mathbb{Z}$$
-
-```{dropdown} Dimostrazione per induzione
-Per $n \in \mathbb{N}$, si procede per induzione **todo** *aggiungere i capitoli sulla logica? E un riferimento ad essi?* Per $n = 1$ la formula di de Moivre si riduce a un'identità. Supponiamo quindi che sia valida per un intero $n > 1$ e verifichiamo se questo implica che sia valida anche per $n+1$
-
-$$\begin{aligned}
-  (\cos x + i \sin x)^{n+1} & = (\cos x + i \sin x)^n \, (\cos x + i \sin x) = \\
-                            & = \left(\cos (nx)+ i \sin (nx) \right) \, (\cos x + i \sin x) = \\
-                            & = \cos(nx) \cos x - \sin(nx) \sin x + i \left( \cos(nx) \sin x + \sin(nx) \cos x \right) = \\
-                            & = \cos( (n+1)x ) + i \sin( (n+1) x ) \ .
-\end{aligned}$$
-
-Per $n = 0$, la formula di de Moivre si riduce all'identità $1 \equiv 1$.
-
-Per $m := -n \in \mathbb{N}$, la formula di de Moivre può essere verificata usando la formula di de Moivre per $m > 0$ e razionalizzando la frazione,
-
-$$\begin{aligned}
-  \left( \cos x + i \sin x \right)^{n} & = \frac{1}{\left( \cos x + i \sin x \right)^m} = \\
-   & = \frac{1}{\left( \cos (m x) + i \sin (m x) \right)} = \\
-   & = \frac{\cos( m x) - i \sin (m x)}{\underbrace{\cos^2(mx) + \sin^2(mx)}_{=1}} = \cos(mx) - i \sin(mx) = \cos(nx) + i \sin(nx) \ .
-\end{aligned}$$
-
-```
 
