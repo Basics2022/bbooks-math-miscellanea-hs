@@ -552,22 +552,23 @@ document.write(`
 </div>
 <div class="section" id="funzione-esponenziale-e-x">
 <span id="math-hs-exp-def-ex"></span><h3><span class="section-number">19.1.2. </span>Funzione esponenziale, <span class="math notranslate nohighlight">\(e^x\)</span><a class="headerlink" href="#funzione-esponenziale-e-x" title="Permalink to this heading">#</a></h3>
-<p><strong>Definizione.</strong> Per ogni <span class="math notranslate nohighlight">\(x \in \mathbb{R}\)</span>, è possibile dare due definizioni equivalenti della <span class="math notranslate nohighlight">\(e^x\)</span>, che può essere intesa come l’elevamento a potenza della <a class="reference internal" href="../series.html#math-hs-series-e-euler"><span class="std std-ref"><span class="math notranslate nohighlight">\(e\)</span> di Eulero</span></a> con la variabile indipendente <span class="math notranslate nohighlight">\(x\)</span> come esponente.</p>
-<ul class="simple">
-<li><p>definizione come limite della successione di funzioni <span class="math notranslate nohighlight">\(\left( 1 + \frac{x}{n} \right)^n\)</span></p></li>
-</ul>
+<p><strong>Definizione.</strong> Per ogni <span class="math notranslate nohighlight">\(x \in \mathbb{R}\)</span>, è possibile dare diverse definizioni equivalenti della funzione esponenziale <span class="math notranslate nohighlight">\(f(x) = e^x\)</span>, che può:</p>
+<ol class="arabic simple">
+<li><p>essere intesa come l’elevamento a potenza della <a class="reference internal" href="../series.html#math-hs-series-e-euler"><span class="std std-ref"><span class="math notranslate nohighlight">\(e\)</span> di Eulero</span></a> con la variabile indipendente <span class="math notranslate nohighlight">\(x\)</span> come esponente.</p></li>
+<li><p>essere definita come limite della successione di funzioni <span class="math notranslate nohighlight">\(\left( 1 + \frac{x}{n} \right)^n\)</span></p></li>
+</ol>
 <div class="math notranslate nohighlight">
 \[
   e^x := \lim_{n \rightarrow \infty} \left( 1 + \frac{x}{n}\right)^n
 \]</div>
-<ul class="simple">
-<li><p>definizione come limite della serie di funzioni con elementi <span class="math notranslate nohighlight">\(\frac{x^n}{n!}\)</span>,</p></li>
-</ul>
+<ol class="arabic simple" start="3">
+<li><p>essere definita come limite della serie di funzioni con elementi <span class="math notranslate nohighlight">\(\frac{x^n}{n!}\)</span>,</p></li>
+</ol>
 <div class="math notranslate nohighlight">
 \[\begin{split}
   e^x := \lim_{n \rightarrow \infty} \sum_{k=0}^{n} \frac{x^n}{n!} \\
 \end{split}\]</div>
-<p>Si può dimostrare che</p>
+<p>Si può dimostrare che (seguire i link per le dimostrazioni in appendice):</p>
 <ul>
 <li><p>la <a class="reference internal" href="exponential_logarithm-proof.html#math-hs-exp-log-proof-convergence"><span class="std std-ref">serie è convergente</span></a> per ogni <span class="math notranslate nohighlight">\(x \in \mathbb{R}\)</span> finito</p></li>
 <li><p>le due <a class="reference internal" href="exponential_logarithm-proof.html#math-hs-exp-log-proof-equivalence"><span class="std std-ref">definizioni sono equivalenti</span></a></p></li>

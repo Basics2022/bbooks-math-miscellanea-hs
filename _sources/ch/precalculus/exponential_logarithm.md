@@ -38,20 +38,23 @@ Vale dunque la pena introdurre la funzione esponenziale $e^x$, e discuterne alcu
 (math-hs:exp:def:ex)=
 ### Funzione esponenziale, $e^x$
 
-**Definizione.** Per ogni $x \in \mathbb{R}$, è possibile dare due definizioni equivalenti della $e^x$, che può essere intesa come l'elevamento a potenza della [$e$ di Eulero](math-hs:series:e-euler) con la variabile indipendente $x$ come esponente.
-- definizione come limite della successione di funzioni $\left( 1 + \frac{x}{n} \right)^n$
+**Definizione.** Per ogni $x \in \mathbb{R}$, è possibile dare diverse definizioni equivalenti della funzione esponenziale $f(x) = e^x$, che può:
+
+1. essere intesa come l'elevamento a potenza della [$e$ di Eulero](math-hs:series:e-euler) con la variabile indipendente $x$ come esponente.
+
+2. essere definita come limite della successione di funzioni $\left( 1 + \frac{x}{n} \right)^n$
 
 $$
   e^x := \lim_{n \rightarrow \infty} \left( 1 + \frac{x}{n}\right)^n
 $$
 
-- definizione come limite della serie di funzioni con elementi $\frac{x^n}{n!}$,
+3. essere definita come limite della serie di funzioni con elementi $\frac{x^n}{n!}$,
 
 $$
   e^x := \lim_{n \rightarrow \infty} \sum_{k=0}^{n} \frac{x^n}{n!} \\
 $$
 
-Si può dimostrare che 
+Si può dimostrare che (seguire i link per le dimostrazioni in appendice): 
 - la [serie è convergente](math-hs:exp-log:proof:convergence) per ogni $x \in \mathbb{R}$ finito 
 - le due [definizioni sono equivalenti](math-hs:exp-log:proof:equivalence)
 - le definizioni della funzione $e^x$ giustificano la notazione $e^x$ questa funznione poiché soddisfa le [proprietà delle potenze (*con stessa base, $e$*)](math-hs:exp-log:proof:powers):

@@ -1,8 +1,11 @@
 (math-hs:exp-log:notes)=
 # Note e dimostrazioni
 
+(math-hs:exp-log:notes:exp)=
+## Funzione esponenziale
+
 (math-hs:exp-log:proof:convergence)=
-<!-- ## Convergenza della serie di funzioni $\sum_{n=0}^{\infty} \frac{x^n}{n!}$ in ogni intervallo limitato -->
+### Convergenza della serie di funzioni $\sum_{n=0}^{\infty} \frac{x^n}{n!}$ in ogni intervallo limitato
 ```{dropdown} Convergenza della serie di funzioni $\sum_{n=0}^{\infty} \frac{x^n}{n!}$ in ogni intervallo limitato
 
 Per dimostrare la convergenza uniforme di $\sum_{k=0}^{\infty} \frac{x^k}{k!}$ a $e^x$ in ogni intervallo limitato $|x| < M$, è richiesto di dimostrare che per ogni $\varepsilon > 0$ esiste $N \in \mathbb{N}$ tale che 
@@ -35,13 +38,13 @@ $$\left| \sum_{k=n+1}^{\infty} \frac{x^k}{k!} \right| <  \frac{(2 \tilde{M})^{2 
 
 
 (math-hs:exp-log:proof:equivalence)=
-<!-- ## Equivalenza delle due definizioni -->
+### Equivalenza delle due definizioni
 ```{dropdown} Equivalenza delle due definizioni
 **todo**
 ```
 
 (math-hs:exp-log:proof:powers)=
-<!-- ## Giustificazione della notazione $\ e^x$ -->
+### Giustificazione della notazione $\ e^x$
 ```{dropdown} Giustificazione della notazione $\ e^x$ 
 Per evitare la forma indeterminata nel termine $0^0$, si calcola qui il limite per $x \rightarrow 0$ (**todo** *motivare la validità di questa operazione/interpretazione della funzione $e^x$*)
 
