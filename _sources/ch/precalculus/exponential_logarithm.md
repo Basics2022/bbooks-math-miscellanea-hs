@@ -87,7 +87,14 @@ Tra le conseguenze principali di questa definizione
 (math-hs:exp:def:ln)=
 ### Funzione logaritmo naturale, $\text{ln} \, x$
 
-**Definizione.** Poiché la funzione $e^x$ è monotona crescente, $e^x: \mathbb{R} \rightarrow (0, +\infty)$, esiste la sua [funzione inversa](math-hs:precalculus:real-functions:inverse) con dominio $(0,+\infty)$ e immagine $\mathbb{R}$. La funzione inversa della funzione esponenziale con base $e$ viene definita **logaritmo naturale**.
+**Definizione.** Poiché la base $e > 1$, la funzione $e^x$ è monotona crescente, $e^x: \mathbb{R} \rightarrow (0, +\infty)$, e quindi esiste la sua [funzione inversa](math-hs:precalculus:real-functions:inverse) con dominio $(0,+\infty)$ e immagine $\mathbb{R}$. La funzione inversa della funzione esponenziale con base $e$ viene definita **logaritmo naturale**, $\ln x$. Cioè
+
+$$x = e^y \qquad \leftrightarrow \qquad y = \ln x$$
+
+o altrimenti, la definizione di logaritmo $\ln ( e^x ) = x$, può essere reinterpretata come $f(x) = e^x$, $f^{-1} \circ f(x) = x $, cioè
+
+$$f(x) = e^x \qquad \rightarrow f^{-1}(x) = \ln x \ .$$
+
 
 (math-hs:exp:def:hyp)=
 ### Funzioni iperboliche
