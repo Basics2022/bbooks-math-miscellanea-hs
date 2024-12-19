@@ -1,15 +1,24 @@
 (math-hs:exp-log)=
 # Esponenziale e logaritmo
 
-## Definizioni e proprietà
+In questo capitolo si presentano le funzioni a variabile reale, $f(x): D \in \mathbb{R} \rightarrow \mathbb{R}$:
+- esponenziale, $f(x) = a^x$
+- logaritmo, $f(x) = \log_a x$
 
-Nel campo reale, per ogni $b > 0$,
-
-$$a = b^c \qquad \leftrightarrow \qquad c = \log_{b} a $$
+e successivamente le [funzioni iperboliche]()
 
 ## Funzione esponenziale e logaritmo di variabile reale
 
-(math-hs:exp:def)=
+(math-hs:exp:ax:def)=
+### Funzione esponenziale, $a^x$
+
+Nell'ambito dei numeri reali, l'elevamento alla potenza reale $x \in \mathbb{R}$ di un numero reale $a \in \mathbb{R}$,
+
+$$a^x$$
+
+è un'operazione ben definita per ogni valore dell'esponente $x$ solo per base $a \geq 0$.
+
+(math-hs:exp:def:ex)=
 ### Funzione esponenziale, $e^x$
 
 **Definizione.** Per ogni $x \in \mathbb{R}$, è possibile dare due definizioni equivalenti della $e^x$, che può essere intesa come l'elevamento a potenza della [$e$ di Eulero](math-hs:series:e-euler) con la variabile indipendente $x$ come esponente.
@@ -44,17 +53,21 @@ Si può dimostrare che
 - la base della potenza, $e$, viene definita $e$ **di Nepero**, ed è un numero reale irrazionale, il cui valore approssimato è $e \approx 2.718281828\text{"e poi la magia finisce"}$: nonostante le prime cifre decimali facciano pensare che possa essere periodico, se si scrivono le cifre successive, l'approssimazione diventa $e \approx 2.71828182845904523\dots$
 -->
 
+(math-hs:exp:def:ln)=
 ### Funzione logaritmo naturale, $\text{ln} \, x$
 
 **Definizione.** Poiché la funzione $e^x$ è monotona crescente, $e^x: \mathbb{R} \rightarrow (0, +\infty)$, esiste la sua [funzione inversa](math-hs:precalculus:real-functions:inverse) con dominio $(0,+\infty)$ e immagine $\mathbb{R}$. La funzione inversa della funzione esponenziale con base $e$ viene definita **logaritmo naturale**.
 
-## Funzione esponenziale e logaritmo di variabile complessa
-**todo** *Fare riferimento ad algebra complessa. La funzione $e^{z}$ è necessaria a introdurre la rappresentazione polare dei numeri complessi.*
-
-## Funzioni iperboliche
+(math-hs:exp:def:hyp)=
+### Funzioni iperboliche
 Vengono definite le funzioni iperboliche
 
 $$\begin{aligned}
   \cosh x & := \frac{e^x + e^{-x}}{2} \\
   \cosh y & := \frac{e^x - e^{-x}}{2}
 \end{aligned}$$
+
+<!--
+## Funzione esponenziale e logaritmo di variabile complessa
+**todo** *Fare riferimento ad algebra complessa. La funzione $e^{z}$ è necessaria a introdurre la rappresentazione polare dei numeri complessi.*
+-->
