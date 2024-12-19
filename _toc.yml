@@ -71,8 +71,8 @@ parts:
   - file: ch/algebra/complex-algebra
     sections:
     - file: ch/algebra/complex-algebra-problems
-    - file: ch/algebra/complex-algebra-notes
     - file: ch/algebra/complex-algebra-sol
+    - file: ch/algebra/complex-algebra-notes
   - file: ch/precalculus/multivariable-real-fun
 - caption: Calcolo
   numbered: True

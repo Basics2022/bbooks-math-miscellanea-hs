@@ -160,7 +160,7 @@ Usando la formula risolutiva per le equazioni di secondo grado,
 \begin{equation} 
 z = 1 \mp \sqrt{1-5} = 1 \mp i 2 \end{equation}
 %
-**Verifica.**
+\textbf{Verifica.}
 %
 \begin{equation}\begin{aligned}
 z^2  & = (1 \mp i 2)^2 = -3 \mp i 4 \\

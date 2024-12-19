@@ -6627,17 +6627,39 @@ con \(x, \ y \in \mathbb{R}\).
 
 
 \section{Operazioni con i numeri complessi \sphinxhyphen{} in forma cartesiana}
-\label{\detokenize{ch/algebra/complex-algebra:operazioni-con-i-numeri-complessi-in-forma-cartesiana}}\label{\detokenize{ch/algebra/complex-algebra:math-hs-algebra-complex-operations-0}}
+\label{\detokenize{ch/algebra/complex-algebra:operazioni-con-i-numeri-complessi-in-forma-cartesiana}}\label{\detokenize{ch/algebra/complex-algebra:math-hs-algebra-complex-operations-0}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+somma: \(z_1 + z_2 = (x_1 + i y_1) + (x_2 + i y_2) = (x_1 + x_2) + i (y_1 + y_2)\)
 
-\section{Formula di de Moivre e di Eulero}
-\label{\detokenize{ch/algebra/complex-algebra:formula-di-de-moivre-e-di-eulero}}\label{\detokenize{ch/algebra/complex-algebra:math-hs-algebra-complex-demoivre-euler}}
+\item {} 
 \sphinxAtStartPar
-La formula di \sphinxstylestrong{de Moivre}
-\begin{equation*}
+prodotto: \(z_1 z_2 = (x_1 + i y_1)(x_2 + i y_2) = x_1 x_2 - y_1 y_2 + i (x_1 y_2 + x_2 y_1)\)
+
+\item {} 
+\sphinxAtStartPar
+potenza con esponente naturale, \(n \in \mathbb{N}\): \(z^n = (x + i y)^n = \underbrace{(x+iy) \dots (x+iy)}_{n \text{ volte}}\)
+
+\item {} 
+\sphinxAtStartPar
+complesso coniugato: \(z^* := (x+iy)^* = x - i y\)
+
+\item {} 
+\sphinxAtStartPar
+modulo: \(|z| := \sqrt{z^* z} = \sqrt{x^2 + y^2}\)
+
+\end{itemize}
+
+
+\section{Formula di de Moivre, esponenziale complesso e formula di Eulero}
+\label{\detokenize{ch/algebra/complex-algebra:formula-di-de-moivre-esponenziale-complesso-e-formula-di-eulero}}\label{\detokenize{ch/algebra/complex-algebra:math-hs-algebra-complex-demoivre-euler}}
+\sphinxAtStartPar
+La formula di \sphinxstylestrong{de Moivre} è la relazione
+\begin{equation}\label{equation:ch/algebra/complex-algebra:complex:demoivre}
 \begin{split}(\cos x + i \sin x)^n = \cos(nx) + i \sin(nx) \ , \quad n \in \mathbb{Z} \ ,\end{split}
-\end{equation*}
+\end{equation}
 \sphinxAtStartPar
-per \(x \in \mathbb{R}\) e \(n \in \mathbb{Z}\).
+per \(x \in \mathbb{R}\) e \(n \in \mathbb{Z}\). In appendice la {\hyperref[\detokenize{ch/algebra/complex-algebra-notes:math-hs-algebra-complex-notes-demoivre}]{\sphinxcrossref{\DUrole{std,std-ref}{dimostrazione della formula di de Moivre}}}}.
 
 \sphinxAtStartPar
 L”\sphinxstylestrong{esponenziale di un numero complesso}, \(z \in \mathbb{C}\), è definito estendendo la definizione di esponenziale per i numeri reali ai numeri complessi
@@ -6646,11 +6668,11 @@ L”\sphinxstylestrong{esponenziale di un numero complesso}, \(z \in \mathbb{C}\
 \end{equation}
 \sphinxAtStartPar
 Data questa definizione di esponenziale complesso, si può dimostrare la \sphinxstylestrong{formula di Eulero}
-\begin{equation*}
+\begin{equation}\label{equation:ch/algebra/complex-algebra:complex:euler}
 \begin{split}e^{i \theta} = \cos \theta + i \sin \theta \ ,\end{split}
-\end{equation*}
+\end{equation}
 \sphinxAtStartPar
-con \(\theta \in \mathbb{R}\).
+con \(\theta \in \mathbb{R}\). Vengono riportate in appendice due {\hyperref[\detokenize{ch/algebra/complex-algebra-notes:math-hs-algebra-complex-notes-euler}]{\sphinxcrossref{\DUrole{std,std-ref}{dimostrazioni della formula di Eulero}}}}, una usando la definizione di esponenziale complesso e la formula di de Moivre, l’altra usando le serie di Taylor.
 
 
 \section{Rappresentazione dei numeri complessi nel piano complesso (Argand\sphinxhyphen{}Gauss)}
@@ -6689,7 +6711,7 @@ Le due rappresentazioni non sono equivalenti. Mentre la rappresentazione cartesi
 \section{Operazioni con i numeri complessi}
 \label{\detokenize{ch/algebra/complex-algebra:operazioni-con-i-numeri-complessi}}\label{\detokenize{ch/algebra/complex-algebra:math-hs-algebra-complex-operations}}
 \sphinxAtStartPar
-Si presentano alcune opearazioni sui numeri complessi.
+Si rivisitano ora le operazioni già presentate, mostrando la convenienza della rappresentazione polare per prodotti e potenze.
 
 
 \subsection{Somma e prodotto}
@@ -7363,173 +7385,6 @@ z \cdot w = 6 - i
 \sphinxstepscope
 
 
-\section{Note e dimostrazioni}
-\label{\detokenize{ch/algebra/complex-algebra-notes:note-e-dimostrazioni}}\label{\detokenize{ch/algebra/complex-algebra-notes:math-hs-algebra-complex-notes}}\label{\detokenize{ch/algebra/complex-algebra-notes::doc}}
-
-\subsection{Altre operazioni e funzioni a variabile complessa}
-\label{\detokenize{ch/algebra/complex-algebra-notes:altre-operazioni-e-funzioni-a-variabile-complessa}}\label{\detokenize{ch/algebra/complex-algebra-notes:math-hs-algebra-complex-notes-fun}}
-
-\subsubsection{Potenza}
-\label{\detokenize{ch/algebra/complex-algebra-notes:potenza}}\label{\detokenize{ch/algebra/complex-algebra-notes:math-hs-algebra-complex-notes-fun-power}}
-
-\subsubsection{Esponenziale}
-\label{\detokenize{ch/algebra/complex-algebra-notes:esponenziale}}\label{\detokenize{ch/algebra/complex-algebra-notes:math-hs-algebra-complex-notes-fun-exp}}
-
-\subsubsection{Logaritmo}
-\label{\detokenize{ch/algebra/complex-algebra-notes:logaritmo}}\label{\detokenize{ch/algebra/complex-algebra-notes:math-hs-algebra-complex-notes-fun-log}}
-
-\subsection{Esponenziale complesso e formula di Eulero}
-\label{\detokenize{ch/algebra/complex-algebra-notes:esponenziale-complesso-e-formula-di-eulero}}\label{\detokenize{ch/algebra/complex-algebra-notes:math-hs-algebra-complex-notes-euler}}
-\sphinxAtStartPar
-Estendendo la definizione di funzione esponenziale \(e^x\) ai numeri complessi, si può scrivere
-\begin{equation*}
-\begin{split}e^z = \sum_{n = 0}^{+\infty} \frac{z^n}{n!} = \lim_{n \rightarrow +\infty} \left( 1 + \frac{z}{n} \right)^n\end{split}
-\end{equation*}
-
-
-
-\subsubsection{Formula di Eulero}
-\label{\detokenize{ch/algebra/complex-algebra-notes:formula-di-eulero}}
-\sphinxAtStartPar
-Per esponenti reali, vale
-\begin{equation*}
-\begin{split}e^{i x} = \cos x + i \sin x\end{split}
-\end{equation*}\subsubsection*{Dimostrazione usando la definizione come serie}
-
-\sphinxAtStartPar
-L’identità di Eulero può essere dimostrata (\sphinxstylestrong{todo} \sphinxstyleemphasis{bisogna verificare la convergenza (uniforme) delle serie?}) confrontando le serie polinomiali (di Taylor) delle funzioni \(\cos x\), \(\sin x\) definite sui numeri reali, \(x \in \mathbb{R}\)
-\begin{equation*}
-\begin{split}\begin{aligned}
-  \cos x & = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} + \dots \\
-  \sin x & = x - \frac{x^3}{3!} + \frac{x^5}{5!} + \dots \\
-\end{aligned}\end{split}
-\end{equation*}
-\sphinxAtStartPar
-con la serie che definisce l’esponenziale complesso,
-\begin{equation*}
-\begin{split}
-  e^z & = 1 + z + \frac{z^2}{2!} + \frac{z^3}{3!} + \frac{z^4}{4!} + \frac{z^5}{5!} + \dots \\
-\end{split}
-\end{equation*}
-\sphinxAtStartPar
-valutata in \(z = i x \in \mathbb{C}\)
-\begin{equation*}
-\begin{split}\begin{aligned}
-  e^{i x} 
-      & = 1 + i x + \frac{(i x)^2}{2!} + \frac{(i x)^3}{3!} + \frac{(i x)^4}{4!} + \frac{(i x)^5}{5!} + \dots = \\
-      & = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} \dots + i \left[ x - \frac{x^3}{3!} + \frac{x^5}{5!}  + \dots \right] = \\
-      & = \cos x + i \sin x \ .
-\end{aligned}\end{split}
-\end{equation*}\subsubsection*{Dimostrazione usando la definizione come limite della successione}
-
-\sphinxAtStartPar
-\sphinxstylestrong{todo}
-\begin{equation*}
-\begin{split}a_n = \left( 1 + \frac{z}{n} \right)^n = \left( 1 + \frac{x}{n} + i \frac{y}{n} \right)^n\end{split}
-\end{equation*}
-\sphinxAtStartPar
-Il modulo di \(a_n\) tende a \(e^x\)
-\begin{equation*}
-\begin{split}r_n = \sqrt{\left(1+ \frac{x}{n}\right)^2 + \left(\frac{y}{n}\right)^2}\end{split}
-\end{equation*}\begin{equation*}
-\begin{split}n r_n = \sqrt{( n + x )^2 + y^2}\end{split}
-\end{equation*}
-\sphinxAtStartPar
-l’argomento tende a \(\theta\)
-\begin{equation*}
-\begin{split}\tan \theta_n = \frac{\frac{y}{n}}{1 + \frac{x}{n}} = \frac{y}{x + n}\end{split}
-\end{equation*}\begin{equation*}
-\begin{split}\begin{aligned}
-\sin \theta_n & = \frac{y}{n \, r_n} \\
-\cos \theta_n & = \frac{x+n}{n \, r_n}
-\end{aligned}\end{split}
-\end{equation*}
-\sphinxAtStartPar
-Usando la {\hyperref[\detokenize{ch/algebra/complex-algebra-notes:math-hs-algebra-complex-notes-demoivre}]{\sphinxcrossref{\DUrole{std,std-ref}{formula di de Moivre}}}},
-\begin{equation*}
-\begin{split}( \cos x + i \sin x)^n = \cos( n x ) + i \sin ( n x )\end{split}
-\end{equation*}
-\sphinxAtStartPar
-si può scrivere
-\begin{equation*}
-\begin{split}\begin{aligned}
-  a_n & = \left( 1 + \frac{x}{n} + i \frac{y}{n} \right)^n = \\
-      & = \left( r_n \cos \theta_n + i r_n \sin \theta \right)^n = \\
-      & = r_n^n \cdot \left[ \cos ( n \theta_n ) + i \sin (n \theta_n) \right]
-\end{aligned}\end{split}
-\end{equation*}
-\sphinxAtStartPar
-Per \(n \rightarrow \infty\)
-\begin{equation*}
-\begin{split}\theta_n \sim \tan \theta_n = \frac{y}{x+n} \sim \frac{y}{n}\end{split}
-\end{equation*}\begin{equation*}
-\begin{split}n \theta_n \sim y\end{split}
-\end{equation*}\begin{equation*}
-\begin{split}\begin{aligned}
-  r_n^n & = \left[ \left( 1 + \frac{x}{n} \right)^2 + \left( \frac{y}{n} \right)^2 \right]^{\frac{n}{2}} = \\
-        & = \left( 1 + \frac{x}{n} \right)^{n} \left[ 1 + \left(\frac{y}{n+x}\right)^2 \right]^{\frac{n}{2}} = \\
-\end{aligned}\end{split}
-\end{equation*}
-\sphinxAtStartPar
-Il primo fattore è asintotico a \(e^x\),
-\begin{equation*}
-\begin{split}\left( 1 + \frac{x}{n} \right)^n \sim e^x \ .\end{split}
-\end{equation*}
-\sphinxAtStartPar
-Il secondo fattore, con il «completamento della definizione di esponenziale», può essere riscritto come
-\begin{equation*}
-\begin{split}\left[ 1 + \left(\frac{y}{n+x}\right)^2 \right]^{\frac{n}{2}} = \left\{ \left[ 1 + \left(\frac{y}{n+x}\right)^2 \right]^{\left(\frac{n+x}{y}\right)^2} \right\}^{\frac{n y^2}{2(n+x)^2}} \sim e^0 = 1 \ .\end{split}
-\end{equation*}
-\sphinxAtStartPar
-Il termine \(r_n^n\) tende quindi a \(e^x\).
-
-\sphinxAtStartPar
-Il limite dei termini \(a_n\) della successione che definisce l’esponenziale complesso può quindi essere scritto come
-\begin{equation*}
-\begin{split}e^z = e^x \left( \cos y + i \sin y \right) \ ,\end{split}
-\end{equation*}
-\sphinxAtStartPar
-Si trova quindi l’identità di Eulero usando la proprietà delle potenze estesa ai numeri complessi,
-\begin{equation*}
-\begin{split}e^z = e^{x + iy} = e^x \, e^{i y} =  e^x \left( \cos y + i \sin y \right)
-\rightarrow
-e^{iy} = \cos y + i \sin y \ .
-\end{split}
-\end{equation*}
-\sphinxAtStartPar
-\sphinxstylestrong{todo} …
-
-
-\subsection{Formula di de Moivre}
-\label{\detokenize{ch/algebra/complex-algebra-notes:formula-di-de-moivre}}\label{\detokenize{ch/algebra/complex-algebra-notes:math-hs-algebra-complex-notes-demoivre}}\begin{equation*}
-\begin{split}(\cos x + i \sin x)^n = \cos(nx) + i \sin(nx) \ , \quad n \in \mathbb{Z}\end{split}
-\end{equation*}\subsubsection*{Dimostrazione per induzione}
-
-\sphinxAtStartPar
-Per \(n \in \mathbb{N}\), si procede per induzione \sphinxstylestrong{todo} \sphinxstyleemphasis{aggiungere i capitoli sulla logica? E un riferimento ad essi?} Per \(n = 1\) la formula di de Moivre si riduce a un’identità. Supponiamo quindi che sia valida per un intero \(n > 1\) e verifichiamo se questo implica che sia valida anche per \(n+1\)
-\begin{equation*}
-\begin{split}\begin{aligned}
-  (\cos x + i \sin x)^{n+1} & = (\cos x + i \sin x)^n \, (\cos x + i \sin x) = \\
-                            & = \left(\cos (nx)+ i \sin (nx) \right) \, (\cos x + i \sin x) = \\
-                            & = \cos(nx) \cos x - \sin(nx) \sin x + i \left( \cos(nx) \sin x + \sin(nx) \cos x \right) = \\
-                            & = \cos( (n+1)x ) + i \sin( (n+1) x ) \ .
-\end{aligned}\end{split}
-\end{equation*}
-\sphinxAtStartPar
-Per \(n = 0\), la formula di de Moivre si riduce all’identità \(1 \equiv 1\).
-
-\sphinxAtStartPar
-Per \(m := -n \in \mathbb{N}\), la formula di de Moivre può essere verificata usando la formula di de Moivre per \(m > 0\) e razionalizzando la frazione,
-\begin{equation*}
-\begin{split}\begin{aligned}
-  \left( \cos x + i \sin x \right)^{n} & = \frac{1}{\left( \cos x + i \sin x \right)^m} = \\
-   & = \frac{1}{\left( \cos (m x) + i \sin (m x) \right)} = \\
-   & = \frac{\cos( m x) - i \sin (m x)}{\underbrace{\cos^2(mx) + \sin^2(mx)}_{=1}} = \cos(mx) - i \sin(mx) = \cos(nx) + i \sin(nx) \ .
-\end{aligned}\end{split}
-\end{equation*}
-\sphinxstepscope
-
-
 \section{Problemi \sphinxhyphen{} soluzioni}
 \label{\detokenize{ch/algebra/complex-algebra-sol:problemi-soluzioni}}\label{\detokenize{ch/algebra/complex-algebra-sol:math-hs-algebra-complex-problems}}\label{\detokenize{ch/algebra/complex-algebra-sol::doc}}
 
@@ -7608,7 +7463,7 @@ Usando la formula risolutiva per le equazioni di secondo grado,
 \begin{equation} 
 z = 1 \mp \sqrt{1-5} = 1 \mp i 2 \end{equation}
 %
-**Verifica.**
+\textbf{Verifica.}
 %
 \begin{equation}\begin{aligned}
 z^2  & = (1 \mp i 2)^2 = -3 \mp i 4 \\
@@ -8066,6 +7921,186 @@ Sostituendo la prima nella seconda si trova $\sqrt{9 + y^2} = 5$; elevando al qu
     z \cdot w = 6 - i 
     \end{cases}\)
 
+\sphinxstepscope
+
+
+\section{Note e dimostrazioni}
+\label{\detokenize{ch/algebra/complex-algebra-notes:note-e-dimostrazioni}}\label{\detokenize{ch/algebra/complex-algebra-notes:math-hs-algebra-complex-notes}}\label{\detokenize{ch/algebra/complex-algebra-notes::doc}}
+
+
+
+\subsection{Formula di de Moivre}
+\label{\detokenize{ch/algebra/complex-algebra-notes:formula-di-de-moivre}}\label{\detokenize{ch/algebra/complex-algebra-notes:math-hs-algebra-complex-notes-demoivre}}
+\sphinxAtStartPar
+Qui si dimostra la formula di de Moivre \eqref{equation:ch/algebra/complex-algebra:complex:demoivre}.
+\begin{equation*}
+\begin{split}(\cos x + i \sin x)^n = \cos(nx) + i \sin(nx) \ , \quad n \in \mathbb{Z}\end{split}
+\end{equation*}\subsubsection*{Dimostrazione per induzione}
+
+\sphinxAtStartPar
+Per \(n \in \mathbb{N}\), si procede per induzione \sphinxstylestrong{todo} \sphinxstyleemphasis{aggiungere i capitoli sulla logica? E un riferimento ad essi?} Per \(n = 1\) la formula di de Moivre si riduce a un’identità. Supponiamo quindi che sia valida per un intero \(n > 1\) e verifichiamo se questo implica che sia valida anche per \(n+1\)
+\begin{equation*}
+\begin{split}\begin{aligned}
+  (\cos x + i \sin x)^{n+1} & = (\cos x + i \sin x)^n \, (\cos x + i \sin x) = \\
+                            & = \left(\cos (nx)+ i \sin (nx) \right) \, (\cos x + i \sin x) = \\
+                            & = \cos(nx) \cos x - \sin(nx) \sin x + i \left( \cos(nx) \sin x + \sin(nx) \cos x \right) = \\
+                            & = \cos( (n+1)x ) + i \sin( (n+1) x ) \ .
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Per \(n = 0\), la formula di de Moivre si riduce all’identità \(1 \equiv 1\).
+
+\sphinxAtStartPar
+Per \(m := -n \in \mathbb{N}\), la formula di de Moivre può essere verificata usando la formula di de Moivre per \(m > 0\) e razionalizzando la frazione,
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \left( \cos x + i \sin x \right)^{n} & = \frac{1}{\left( \cos x + i \sin x \right)^m} = \\
+   & = \frac{1}{\left( \cos (m x) + i \sin (m x) \right)} = \\
+   & = \frac{\cos( m x) - i \sin (m x)}{\underbrace{\cos^2(mx) + \sin^2(mx)}_{=1}} = \cos(mx) - i \sin(mx) = \cos(nx) + i \sin(nx) \ .
+\end{aligned}\end{split}
+\end{equation*}
+
+\subsection{Esponenziale complesso}
+\label{\detokenize{ch/algebra/complex-algebra-notes:esponenziale-complesso}}\label{\detokenize{ch/algebra/complex-algebra-notes:math-hs-algebra-complex-notes-complex-exp}}
+\sphinxAtStartPar
+Estendendo la definizione di funzione esponenziale \(e^x\) ai numeri complessi, si può scrivere
+\begin{equation}\label{equation:ch/algebra/complex-algebra-notes:complex:complex-exp:notes}
+\begin{split}e^z = \sum_{n = 0}^{+\infty} \frac{z^n}{n!} = \lim_{n \rightarrow +\infty} \left( 1 + \frac{z}{n} \right)^n\end{split}
+\end{equation}
+
+
+
+\subsection{Formula di Eulero}
+\label{\detokenize{ch/algebra/complex-algebra-notes:formula-di-eulero}}\label{\detokenize{ch/algebra/complex-algebra-notes:math-hs-algebra-complex-notes-euler}}
+\sphinxAtStartPar
+Per esponenti reali, vale
+\begin{equation*}
+\begin{split}e^{i x} = \cos x + i \sin x\end{split}
+\end{equation*}\subsubsection*{Dimostrazione usando la definizione come limite della successione}
+
+\sphinxAtStartPar
+L’esponenziale complesso può essere scritto come limite della successione con termini,
+\begin{equation*}
+\begin{split}a_n = \left( 1 + \frac{z}{n} \right)^n = \left( 1 + \frac{x}{n} + i \frac{y}{n} \right)^n\end{split}
+\end{equation*}
+\sphinxAtStartPar
+per \(n \rightarrow +\infty\). Usando le trasformazioni tra la rappresentazione cartesiana e la rappresentazione polare
+\begin{equation*}
+\begin{split}\begin{cases}
+  \text{re}\{a_n\} = 1 + \frac{x}{n} = r_n \cos \theta_n \\
+  \text{im}\{a_n\} = \frac{y}{n} = r_n \sin \theta_n
+\end{cases}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\begin{cases}
+  r_n = \sqrt{ \left(\text{re}\{a_n\}\right)^2 + \left(\text{im}\{a_n\}\right)^2 } =  \sqrt{\left(1+ \frac{x}{n}\right)^2 + \left(\frac{y}{n}\right)^2} \\
+  \tan \theta_n = \frac{\text{im}\{a_n\}}{\text{re}\{a_n\}} = \frac{\frac{y}{n}}{1 + \frac{x}{n}} = \frac{y}{x + n}_n
+\end{cases}\end{split}
+\end{equation*}
+
+
+\sphinxAtStartPar
+e la {\hyperref[\detokenize{ch/algebra/complex-algebra-notes:math-hs-algebra-complex-notes-demoivre}]{\sphinxcrossref{\DUrole{std,std-ref}{formula di de Moivre}}}},
+\begin{equation*}
+\begin{split}( \cos x + i \sin x)^n = \cos( n x ) + i \sin ( n x )\end{split}
+\end{equation*}
+\sphinxAtStartPar
+si può scrivere il termine \(a_n\)
+\begin{equation*}
+\begin{split}\begin{aligned}
+  a_n & = \left( 1 + \frac{x}{n} + i \frac{y}{n} \right)^n = \\
+      & = \left( r_n \cos \theta_n + i r_n \sin \theta \right)^n = \\
+      & = r_n^n \cdot \left[ \cos ( n \theta_n ) + i \sin (n \theta_n) \right]
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Per \(n \rightarrow \infty\), \(\tan \theta_n \rightarrow 0\) e quindi vale l’approssimazione asintotica \(\tan \theta_n \sim \theta_n\)
+\begin{equation*}
+\begin{split}\theta_n \sim \tan \theta_n = \frac{y}{x+n} \sim \frac{y}{n}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}n \theta_n \sim y\end{split}
+\end{equation*}
+\sphinxAtStartPar
+mentre è possibile studiare il limite del modulo, riscrivendolo come
+\begin{equation*}
+\begin{split}\begin{aligned}
+  r_n^n & = \left[ \left( 1 + \frac{x}{n} \right)^2 + \left( \frac{y}{n} \right)^2 \right]^{\frac{n}{2}} = \\
+        & = \left( 1 + \frac{x}{n} \right)^{n} \left[ 1 + \left(\frac{y}{n+x}\right)^2 \right]^{\frac{n}{2}} = \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Il primo fattore è asintotico a \(e^x\),
+\begin{equation*}
+\begin{split}\left( 1 + \frac{x}{n} \right)^n \sim e^x \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Il secondo fattore, con il «completamento della definizione di esponenziale», può essere riscritto come
+\begin{equation*}
+\begin{split}\left[ 1 + \left(\frac{y}{n+x}\right)^2 \right]^{\frac{n}{2}} = \left\{ \left[ 1 + \left(\frac{y}{n+x}\right)^2 \right]^{\left(\frac{n+x}{y}\right)^2} \right\}^{\frac{n y^2}{2(n+x)^2}} \sim e^0 = 1 \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Il termine \(r_n^n\) tende quindi a \(e^x\).
+
+\sphinxAtStartPar
+Il limite dei termini \(a_n\) della successione che definisce l’esponenziale complesso può quindi essere scritto come
+\begin{equation*}
+\begin{split}\begin{aligned}
+  e^z & = \lim_{n \rightarrow +\infty} a_n = \\
+      & = \lim_{n \rightarrow +\infty} r_n (\cos(n\theta) + i \sin(n\theta)) =  & (\lim_{n\rightarrow +\infty} r_n = e^x, \lim_{n \rightarrow + \infty} n \theta = y)\\
+      & = e^x \left( \cos y + i \sin y \right) \ .
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Usando la proprietà delle potenze estesa ai numeri complessi,
+\begin{equation*}
+\begin{split}e^x \left( \cos y + i \sin y \right) = e^z = e^{x + iy} = e^x \, e^{i y} \ ,
+\end{split}
+\end{equation*}
+\sphinxAtStartPar
+dall’arbitrarietà del valore \(x\), risulta dimostrata la formula di Eulero,
+\begin{equation*}
+\begin{split}e^{iy} = \cos y + i \sin y \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+per esponenti reali \(y \in \mathbb{R}\).
+\subsubsection*{Dimostrazione usando la definizione come serie}
+
+\sphinxAtStartPar
+L’identità di Eulero può essere dimostrata (\sphinxstylestrong{todo} \sphinxstyleemphasis{bisogna verificare la convergenza (uniforme) delle serie?}) confrontando le {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-taylor}]{\sphinxcrossref{\DUrole{std,std-ref}{serie polinomiali di Taylor}}}} delle funzioni \(\cos x\), \(\sin x\) definite sui numeri reali, \(x \in \mathbb{R}\)
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \cos x & = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} + \dots \\
+  \sin x & = x - \frac{x^3}{3!} + \frac{x^5}{5!} + \dots \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+con la serie che definisce l’esponenziale complesso,
+\begin{equation*}
+\begin{split}
+  e^z & = 1 + z + \frac{z^2}{2!} + \frac{z^3}{3!} + \frac{z^4}{4!} + \frac{z^5}{5!} + \dots \\
+\end{split}
+\end{equation*}
+\sphinxAtStartPar
+valutata in \(z = i x \in \mathbb{C}\)
+\begin{equation*}
+\begin{split}\begin{aligned}
+  e^{i x} 
+      & = 1 + i x + \frac{(i x)^2}{2!} + \frac{(i x)^3}{3!} + \frac{(i x)^4}{4!} + \frac{(i x)^5}{5!} + \dots = \\
+      & = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} \dots + i \left[ x - \frac{x^3}{3!} + \frac{x^5}{5!}  + \dots \right] = \\
+      & = \cos x + i \sin x \ .
+\end{aligned}\end{split}
+\end{equation*}
+
+\subsection{Altre operazioni e funzioni a variabile complessa}
+\label{\detokenize{ch/algebra/complex-algebra-notes:altre-operazioni-e-funzioni-a-variabile-complessa}}\label{\detokenize{ch/algebra/complex-algebra-notes:math-hs-algebra-complex-notes-fun}}
+
+\subsubsection{Potenza}
+\label{\detokenize{ch/algebra/complex-algebra-notes:potenza}}\label{\detokenize{ch/algebra/complex-algebra-notes:math-hs-algebra-complex-notes-fun-power}}
+
+\subsubsection{Esponenziale}
+\label{\detokenize{ch/algebra/complex-algebra-notes:esponenziale}}\label{\detokenize{ch/algebra/complex-algebra-notes:math-hs-algebra-complex-notes-fun-exp}}
+
+\subsubsection{Logaritmo}
+\label{\detokenize{ch/algebra/complex-algebra-notes:logaritmo}}\label{\detokenize{ch/algebra/complex-algebra-notes:math-hs-algebra-complex-notes-fun-log}}
 \sphinxstepscope
 
 \begin{sphinxuseclass}{sd-container-fluid}

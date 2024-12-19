@@ -52,14 +52,20 @@ con $x, \ y \in \mathbb{R}$.
 (math-hs:algebra:complex:operations-0)=
 ## Operazioni con i numeri complessi - in forma cartesiana
 
+- somma: $z_1 + z_2 = (x_1 + i y_1) + (x_2 + i y_2) = (x_1 + x_2) + i (y_1 + y_2)$
+- prodotto: $z_1 z_2 = (x_1 + i y_1)(x_2 + i y_2) = x_1 x_2 - y_1 y_2 + i (x_1 y_2 + x_2 y_1)$
+- potenza con esponente naturale, $n \in \mathbb{N}$: $z^n = (x + i y)^n = \underbrace{(x+iy) \dots (x+iy)}_{n \text{ volte}}$
+- complesso coniugato: $z^* := (x+iy)^* = x - i y$
+- modulo: $|z| := \sqrt{z^* z} = \sqrt{x^2 + y^2}$
+
 (math-hs:algebra:complex:demoivre-euler)=
-## Formula di de Moivre e di Eulero
+## Formula di de Moivre, esponenziale complesso e formula di Eulero
 
-La formula di **de Moivre**
+La formula di **de Moivre** è la relazione
 
-$$(\cos x + i \sin x)^n = \cos(nx) + i \sin(nx) \ , \quad n \in \mathbb{Z} \ ,$$
+$$(\cos x + i \sin x)^n = \cos(nx) + i \sin(nx) \ , \quad n \in \mathbb{Z} \ ,$$ (complex:demoivre)
 
-per $x \in \mathbb{R}$ e $n \in \mathbb{Z}$.
+per $x \in \mathbb{R}$ e $n \in \mathbb{Z}$. In appendice la [dimostrazione della formula di de Moivre](math-hs:algebra:complex:notes:demoivre).
 
 L'**esponenziale di un numero complesso**, $z \in \mathbb{C}$, è definito estendendo la definizione di esponenziale per i numeri reali ai numeri complessi
 
@@ -67,9 +73,9 @@ $$e^z = \sum_{n = 0}^{+\infty} \frac{z^n}{n!} = \lim_{n \rightarrow +\infty} \le
 
 Data questa definizione di esponenziale complesso, si può dimostrare la **formula di Eulero**
 
-$$e^{i \theta} = \cos \theta + i \sin \theta \ ,$$
+$$e^{i \theta} = \cos \theta + i \sin \theta \ ,$$ (complex:euler)
 
-con $\theta \in \mathbb{R}$.
+con $\theta \in \mathbb{R}$. Vengono riportate in appendice due [dimostrazioni della formula di Eulero](math-hs:algebra:complex:notes:euler), una usando la definizione di esponenziale complesso e la formula di de Moivre, l'altra usando le serie di Taylor.
 
 
 (math-hs:algebra:complex:complex-plane)=
@@ -98,7 +104,7 @@ Le due rappresentazioni non sono equivalenti. Mentre la rappresentazione cartesi
 
 (math-hs:algebra:complex:operations)=
 ## Operazioni con i numeri complessi
-Si presentano alcune opearazioni sui numeri complessi.
+Si rivisitano ora le operazioni già presentate, mostrando la convenienza della rappresentazione polare per prodotti e potenze.
 
 ### Somma e prodotto
 **Somma.** La somma di due numeri complessi è il numero complesso

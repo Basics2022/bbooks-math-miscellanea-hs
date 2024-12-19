@@ -27,7 +27,7 @@ Soluzione degli [esercizi sui numeri complessi e la geometria nel piano euclideo
 
 (math-hs:algebra:complex:problems:equations:eq:sol)=
 ### Equazioni
-Soluzione degli [esercizi su equazioni con i numeri complessi](math-hs:algebra:complex:problems:equations:sys)
+Soluzione degli [esercizi su equazioni con i numeri complessi](math-hs:algebra:complex:problems:equations:eq)
 
 ````{only} html
 
@@ -160,7 +160,7 @@ Usando la formula risolutiva per le equazioni di secondo grado,
 \begin{equation} 
 z = 1 \mp \sqrt{1-5} = 1 \mp i 2 \end{equation}
 %
-**Verifica.**
+\textbf{Verifica.}
 %
 \begin{equation}\begin{aligned}
 z^2  & = (1 \mp i 2)^2 = -3 \mp i 4 \\

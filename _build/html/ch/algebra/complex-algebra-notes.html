@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>20.10. Note e dimostrazioni &#8212; Matematica per le scuole superiori</title>
+    <title>20.11. Note e dimostrazioni &#8212; Matematica per le scuole superiori</title>
   
   
   
@@ -71,8 +71,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="20.11. Problemi - soluzioni" href="complex-algebra-sol.html" />
-    <link rel="prev" title="20.9. Problemi" href="complex-algebra-problems.html" />
+    <link rel="next" title="21. Funzioni multi-variabile" href="../precalculus/multivariable-real-fun.html" />
+    <link rel="prev" title="20.10. Problemi - soluzioni" href="complex-algebra-sol.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
@@ -235,8 +235,8 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="complex-algebra.html">20. Algebra complessa</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="complex-algebra-problems.html">20.9. Problemi</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">20.10. Note e dimostrazioni</a></li>
-<li class="toctree-l2"><a class="reference internal" href="complex-algebra-sol.html">20.11. Problemi - soluzioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="complex-algebra-sol.html">20.10. Problemi - soluzioni</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">20.11. Note e dimostrazioni</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../precalculus/multivariable-real-fun.html">21. Funzioni multi-variabile</a></li>
@@ -493,17 +493,15 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#altre-operazioni-e-funzioni-a-variabile-complessa">20.10.1. Altre operazioni e funzioni a variabile complessa</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#potenza">20.10.1.1. Potenza</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esponenziale">20.10.1.2. Esponenziale</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#logaritmo">20.10.1.3. Logaritmo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formula-di-de-moivre">20.11.1. Formula di de Moivre</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esponenziale-complesso">20.11.2. Esponenziale complesso</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formula-di-eulero">20.11.3. Formula di Eulero</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#altre-operazioni-e-funzioni-a-variabile-complessa">20.11.4. Altre operazioni e funzioni a variabile complessa</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#potenza">20.11.4.1. Potenza</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esponenziale">20.11.4.2. Esponenziale</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#logaritmo">20.11.4.3. Logaritmo</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esponenziale-complesso-e-formula-di-eulero">20.10.2. Esponenziale complesso e formula di Eulero</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#formula-di-eulero">20.10.2.1. Formula di Eulero</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formula-di-de-moivre">20.10.3. Formula di de Moivre</a></li>
 </ul>
             </nav>
         </div>
@@ -516,125 +514,14 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="note-e-dimostrazioni">
-<span id="math-hs-algebra-complex-notes"></span><h1><span class="section-number">20.10. </span>Note e dimostrazioni<a class="headerlink" href="#note-e-dimostrazioni" title="Permalink to this heading">#</a></h1>
-<div class="section" id="altre-operazioni-e-funzioni-a-variabile-complessa">
-<span id="math-hs-algebra-complex-notes-fun"></span><h2><span class="section-number">20.10.1. </span>Altre operazioni e funzioni a variabile complessa<a class="headerlink" href="#altre-operazioni-e-funzioni-a-variabile-complessa" title="Permalink to this heading">#</a></h2>
-<div class="section" id="potenza">
-<span id="math-hs-algebra-complex-notes-fun-power"></span><h3><span class="section-number">20.10.1.1. </span>Potenza<a class="headerlink" href="#potenza" title="Permalink to this heading">#</a></h3>
-</div>
-<div class="section" id="esponenziale">
-<span id="math-hs-algebra-complex-notes-fun-exp"></span><h3><span class="section-number">20.10.1.2. </span>Esponenziale<a class="headerlink" href="#esponenziale" title="Permalink to this heading">#</a></h3>
-</div>
-<div class="section" id="logaritmo">
-<span id="math-hs-algebra-complex-notes-fun-log"></span><h3><span class="section-number">20.10.1.3. </span>Logaritmo<a class="headerlink" href="#logaritmo" title="Permalink to this heading">#</a></h3>
-</div>
-</div>
-<div class="section" id="esponenziale-complesso-e-formula-di-eulero">
-<span id="math-hs-algebra-complex-notes-euler"></span><h2><span class="section-number">20.10.2. </span>Esponenziale complesso e formula di Eulero<a class="headerlink" href="#esponenziale-complesso-e-formula-di-eulero" title="Permalink to this heading">#</a></h2>
-<p>Estendendo la definizione di funzione esponenziale <span class="math notranslate nohighlight">\(e^x\)</span> ai numeri complessi, si può scrivere</p>
-<div class="math notranslate nohighlight">
-\[e^z = \sum_{n = 0}^{+\infty} \frac{z^n}{n!} = \lim_{n \rightarrow +\infty} \left( 1 + \frac{z}{n} \right)^n\]</div>
+<span id="math-hs-algebra-complex-notes"></span><h1><span class="section-number">20.11. </span>Note e dimostrazioni<a class="headerlink" href="#note-e-dimostrazioni" title="Permalink to this heading">#</a></h1>
 <!--
-```{dropdown} Dimostrazione dell'equivalenza delle due definizioni
-```
+(math-hs:algebra:complex:notes:demoivre-euler)=
+## Formula di de Moivre, esponenziale complesso e formula di Eulero
 -->
-<div class="section" id="formula-di-eulero">
-<h3><span class="section-number">20.10.2.1. </span>Formula di Eulero<a class="headerlink" href="#formula-di-eulero" title="Permalink to this heading">#</a></h3>
-<p>Per esponenti reali, vale</p>
-<div class="math notranslate nohighlight">
-\[e^{i x} = \cos x + i \sin x\]</div>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Dimostrazione usando la definizione come serie<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">L’identità di Eulero può essere dimostrata (<strong>todo</strong> <em>bisogna verificare la convergenza (uniforme) delle serie?</em>) confrontando le serie polinomiali (di Taylor) delle funzioni <span class="math notranslate nohighlight">\(\cos x\)</span>, <span class="math notranslate nohighlight">\(\sin x\)</span> definite sui numeri reali, <span class="math notranslate nohighlight">\(x \in \mathbb{R}\)</span></p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-  \cos x &amp; = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} + \dots \\
-  \sin x &amp; = x - \frac{x^3}{3!} + \frac{x^5}{5!} + \dots \\
-\end{aligned}\end{split}\]</div>
-<p class="sd-card-text">con la serie che definisce l’esponenziale complesso,</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-  e^z &amp; = 1 + z + \frac{z^2}{2!} + \frac{z^3}{3!} + \frac{z^4}{4!} + \frac{z^5}{5!} + \dots \\
-\end{split}\]</div>
-<p class="sd-card-text">valutata in <span class="math notranslate nohighlight">\(z = i x \in \mathbb{C}\)</span></p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-  e^{i x} 
-      &amp; = 1 + i x + \frac{(i x)^2}{2!} + \frac{(i x)^3}{3!} + \frac{(i x)^4}{4!} + \frac{(i x)^5}{5!} + \dots = \\
-      &amp; = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} \dots + i \left[ x - \frac{x^3}{3!} + \frac{x^5}{5!}  + \dots \right] = \\
-      &amp; = \cos x + i \sin x \ .
-\end{aligned}\end{split}\]</div>
-</div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Dimostrazione usando la definizione come limite della successione<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><strong>todo</strong></p>
-<div class="math notranslate nohighlight">
-\[a_n = \left( 1 + \frac{z}{n} \right)^n = \left( 1 + \frac{x}{n} + i \frac{y}{n} \right)^n\]</div>
-<p class="sd-card-text">Il modulo di <span class="math notranslate nohighlight">\(a_n\)</span> tende a <span class="math notranslate nohighlight">\(e^x\)</span></p>
-<div class="math notranslate nohighlight">
-\[r_n = \sqrt{\left(1+ \frac{x}{n}\right)^2 + \left(\frac{y}{n}\right)^2}\]</div>
-<div class="math notranslate nohighlight">
-\[n r_n = \sqrt{( n + x )^2 + y^2}\]</div>
-<p class="sd-card-text">l’argomento tende a <span class="math notranslate nohighlight">\(\theta\)</span></p>
-<div class="math notranslate nohighlight">
-\[\tan \theta_n = \frac{\frac{y}{n}}{1 + \frac{x}{n}} = \frac{y}{x + n}\]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-\sin \theta_n &amp; = \frac{y}{n \, r_n} \\
-\cos \theta_n &amp; = \frac{x+n}{n \, r_n}
-\end{aligned}\end{split}\]</div>
-<p class="sd-card-text">Usando la <a class="reference internal" href="#math-hs-algebra-complex-notes-demoivre"><span class="std std-ref">formula di de Moivre</span></a>,</p>
-<div class="math notranslate nohighlight">
-\[( \cos x + i \sin x)^n = \cos( n x ) + i \sin ( n x )\]</div>
-<p class="sd-card-text">si può scrivere</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-  a_n &amp; = \left( 1 + \frac{x}{n} + i \frac{y}{n} \right)^n = \\
-      &amp; = \left( r_n \cos \theta_n + i r_n \sin \theta \right)^n = \\
-      &amp; = r_n^n \cdot \left[ \cos ( n \theta_n ) + i \sin (n \theta_n) \right]
-\end{aligned}\end{split}\]</div>
-<p class="sd-card-text">Per <span class="math notranslate nohighlight">\(n \rightarrow \infty\)</span></p>
-<div class="math notranslate nohighlight">
-\[\theta_n \sim \tan \theta_n = \frac{y}{x+n} \sim \frac{y}{n}\]</div>
-<div class="math notranslate nohighlight">
-\[n \theta_n \sim y\]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-  r_n^n &amp; = \left[ \left( 1 + \frac{x}{n} \right)^2 + \left( \frac{y}{n} \right)^2 \right]^{\frac{n}{2}} = \\
-        &amp; = \left( 1 + \frac{x}{n} \right)^{n} \left[ 1 + \left(\frac{y}{n+x}\right)^2 \right]^{\frac{n}{2}} = \\
-\end{aligned}\end{split}\]</div>
-<p class="sd-card-text">Il primo fattore è asintotico a <span class="math notranslate nohighlight">\(e^x\)</span>,</p>
-<div class="math notranslate nohighlight">
-\[\left( 1 + \frac{x}{n} \right)^n \sim e^x \ .\]</div>
-<p class="sd-card-text">Il secondo fattore, con il «completamento della definizione di esponenziale», può essere riscritto come</p>
-<div class="math notranslate nohighlight">
-\[\left[ 1 + \left(\frac{y}{n+x}\right)^2 \right]^{\frac{n}{2}} = \left\{ \left[ 1 + \left(\frac{y}{n+x}\right)^2 \right]^{\left(\frac{n+x}{y}\right)^2} \right\}^{\frac{n y^2}{2(n+x)^2}} \sim e^0 = 1 \ .\]</div>
-<p class="sd-card-text">Il termine <span class="math notranslate nohighlight">\(r_n^n\)</span> tende quindi a <span class="math notranslate nohighlight">\(e^x\)</span>.</p>
-<p class="sd-card-text">Il limite dei termini <span class="math notranslate nohighlight">\(a_n\)</span> della successione che definisce l’esponenziale complesso può quindi essere scritto come</p>
-<div class="math notranslate nohighlight">
-\[e^z = e^x \left( \cos y + i \sin y \right) \ ,\]</div>
-<p class="sd-card-text">Si trova quindi l’identità di Eulero usando la proprietà delle potenze estesa ai numeri complessi,</p>
-<div class="math notranslate nohighlight">
-\[e^z = e^{x + iy} = e^x \, e^{i y} =  e^x \left( \cos y + i \sin y \right)
-\rightarrow
-e^{iy} = \cos y + i \sin y \ .
-\]</div>
-<p class="sd-card-text"><strong>todo</strong> …</p>
-</div>
-</details></div>
-</div>
 <div class="section" id="formula-di-de-moivre">
-<span id="math-hs-algebra-complex-notes-demoivre"></span><h2><span class="section-number">20.10.3. </span>Formula di de Moivre<a class="headerlink" href="#formula-di-de-moivre" title="Permalink to this heading">#</a></h2>
+<span id="math-hs-algebra-complex-notes-demoivre"></span><h2><span class="section-number">20.11.1. </span>Formula di de Moivre<a class="headerlink" href="#formula-di-de-moivre" title="Permalink to this heading">#</a></h2>
+<p>Qui si dimostra la formula di de Moivre <a class="reference internal" href="complex-algebra.html#equation-complex-demoivre">(20.1)</a>.</p>
 <div class="math notranslate nohighlight">
 \[(\cos x + i \sin x)^n = \cos(nx) + i \sin(nx) \ , \quad n \in \mathbb{Z}\]</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -662,6 +549,142 @@ Dimostrazione per induzione<div class="sd-summary-down docutils">
 \end{aligned}\end{split}\]</div>
 </div>
 </details></div>
+<div class="section" id="esponenziale-complesso">
+<span id="math-hs-algebra-complex-notes-complex-exp"></span><h2><span class="section-number">20.11.2. </span>Esponenziale complesso<a class="headerlink" href="#esponenziale-complesso" title="Permalink to this heading">#</a></h2>
+<p>Estendendo la definizione di funzione esponenziale <span class="math notranslate nohighlight">\(e^x\)</span> ai numeri complessi, si può scrivere</p>
+<div class="math notranslate nohighlight" id="equation-complex-complex-exp-notes">
+<span class="eqno">(20.5)<a class="headerlink" href="#equation-complex-complex-exp-notes" title="Permalink a questa equazione">#</a></span>\[e^z = \sum_{n = 0}^{+\infty} \frac{z^n}{n!} = \lim_{n \rightarrow +\infty} \left( 1 + \frac{z}{n} \right)^n\]</div>
+<!--
+```{dropdown} Dimostrazione dell'equivalenza delle due definizioni
+```
+-->
+</div>
+<div class="section" id="formula-di-eulero">
+<span id="math-hs-algebra-complex-notes-euler"></span><h2><span class="section-number">20.11.3. </span>Formula di Eulero<a class="headerlink" href="#formula-di-eulero" title="Permalink to this heading">#</a></h2>
+<p>Per esponenti reali, vale</p>
+<div class="math notranslate nohighlight">
+\[e^{i x} = \cos x + i \sin x\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Dimostrazione usando la definizione come limite della successione<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">L’esponenziale complesso può essere scritto come limite della successione con termini,</p>
+<div class="math notranslate nohighlight">
+\[a_n = \left( 1 + \frac{z}{n} \right)^n = \left( 1 + \frac{x}{n} + i \frac{y}{n} \right)^n\]</div>
+<p class="sd-card-text">per <span class="math notranslate nohighlight">\(n \rightarrow +\infty\)</span>. Usando le trasformazioni tra la rappresentazione cartesiana e la rappresentazione polare</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+  \text{re}\{a_n\} = 1 + \frac{x}{n} = r_n \cos \theta_n \\
+  \text{im}\{a_n\} = \frac{y}{n} = r_n \sin \theta_n
+\end{cases}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+  r_n = \sqrt{ \left(\text{re}\{a_n\}\right)^2 + \left(\text{im}\{a_n\}\right)^2 } =  \sqrt{\left(1+ \frac{x}{n}\right)^2 + \left(\frac{y}{n}\right)^2} \\
+  \tan \theta_n = \frac{\text{im}\{a_n\}}{\text{re}\{a_n\}} = \frac{\frac{y}{n}}{1 + \frac{x}{n}} = \frac{y}{x + n}_n
+\end{cases}\end{split}\]</div>
+<!--
+Il modulo di $a_n$ tende a $e^x$
+
+$$r_n = \sqrt{\left(1+ \frac{x}{n}\right)^2 + \left(\frac{y}{n}\right)^2}$$
+
+$$n r_n = \sqrt{( n + x )^2 + y^2}$$
+
+l'argomento tende a $\theta$ 
+
+$$\tan \theta_n = \frac{\frac{y}{n}}{1 + \frac{x}{n}} = \frac{y}{x + n}$$
+
+$$\begin{aligned}
+\sin \theta_n & = \frac{y}{n \, r_n} \\
+\cos \theta_n & = \frac{x+n}{n \, r_n}
+\end{aligned}$$
+-->
+<p class="sd-card-text">e la <a class="reference internal" href="#math-hs-algebra-complex-notes-demoivre"><span class="std std-ref">formula di de Moivre</span></a>,</p>
+<div class="math notranslate nohighlight">
+\[( \cos x + i \sin x)^n = \cos( n x ) + i \sin ( n x )\]</div>
+<p class="sd-card-text">si può scrivere il termine <span class="math notranslate nohighlight">\(a_n\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  a_n &amp; = \left( 1 + \frac{x}{n} + i \frac{y}{n} \right)^n = \\
+      &amp; = \left( r_n \cos \theta_n + i r_n \sin \theta \right)^n = \\
+      &amp; = r_n^n \cdot \left[ \cos ( n \theta_n ) + i \sin (n \theta_n) \right]
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">Per <span class="math notranslate nohighlight">\(n \rightarrow \infty\)</span>, <span class="math notranslate nohighlight">\(\tan \theta_n \rightarrow 0\)</span> e quindi vale l’approssimazione asintotica <span class="math notranslate nohighlight">\(\tan \theta_n \sim \theta_n\)</span></p>
+<div class="math notranslate nohighlight">
+\[\theta_n \sim \tan \theta_n = \frac{y}{x+n} \sim \frac{y}{n}\]</div>
+<div class="math notranslate nohighlight">
+\[n \theta_n \sim y\]</div>
+<p class="sd-card-text">mentre è possibile studiare il limite del modulo, riscrivendolo come</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  r_n^n &amp; = \left[ \left( 1 + \frac{x}{n} \right)^2 + \left( \frac{y}{n} \right)^2 \right]^{\frac{n}{2}} = \\
+        &amp; = \left( 1 + \frac{x}{n} \right)^{n} \left[ 1 + \left(\frac{y}{n+x}\right)^2 \right]^{\frac{n}{2}} = \\
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">Il primo fattore è asintotico a <span class="math notranslate nohighlight">\(e^x\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\left( 1 + \frac{x}{n} \right)^n \sim e^x \ .\]</div>
+<p class="sd-card-text">Il secondo fattore, con il «completamento della definizione di esponenziale», può essere riscritto come</p>
+<div class="math notranslate nohighlight">
+\[\left[ 1 + \left(\frac{y}{n+x}\right)^2 \right]^{\frac{n}{2}} = \left\{ \left[ 1 + \left(\frac{y}{n+x}\right)^2 \right]^{\left(\frac{n+x}{y}\right)^2} \right\}^{\frac{n y^2}{2(n+x)^2}} \sim e^0 = 1 \ .\]</div>
+<p class="sd-card-text">Il termine <span class="math notranslate nohighlight">\(r_n^n\)</span> tende quindi a <span class="math notranslate nohighlight">\(e^x\)</span>.</p>
+<p class="sd-card-text">Il limite dei termini <span class="math notranslate nohighlight">\(a_n\)</span> della successione che definisce l’esponenziale complesso può quindi essere scritto come</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  e^z &amp; = \lim_{n \rightarrow +\infty} a_n = \\
+      &amp; = \lim_{n \rightarrow +\infty} r_n (\cos(n\theta) + i \sin(n\theta)) =  &amp; (\lim_{n\rightarrow +\infty} r_n = e^x, \lim_{n \rightarrow + \infty} n \theta = y)\\
+      &amp; = e^x \left( \cos y + i \sin y \right) \ .
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">Usando la proprietà delle potenze estesa ai numeri complessi,</p>
+<div class="math notranslate nohighlight">
+\[e^x \left( \cos y + i \sin y \right) = e^z = e^{x + iy} = e^x \, e^{i y} \ ,
+\]</div>
+<p class="sd-card-text">dall’arbitrarietà del valore <span class="math notranslate nohighlight">\(x\)</span>, risulta dimostrata la formula di Eulero,</p>
+<div class="math notranslate nohighlight">
+\[e^{iy} = \cos y + i \sin y \ .\]</div>
+<p class="sd-card-text">per esponenti reali <span class="math notranslate nohighlight">\(y \in \mathbb{R}\)</span>.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Dimostrazione usando la definizione come serie<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">L’identità di Eulero può essere dimostrata (<strong>todo</strong> <em>bisogna verificare la convergenza (uniforme) delle serie?</em>) confrontando le <a class="reference internal" href="../infinitesimal_calculus/derivatives.html#infinitesimal-calculus-derivatives-taylor"><span class="std std-ref">serie polinomiali di Taylor</span></a> delle funzioni <span class="math notranslate nohighlight">\(\cos x\)</span>, <span class="math notranslate nohighlight">\(\sin x\)</span> definite sui numeri reali, <span class="math notranslate nohighlight">\(x \in \mathbb{R}\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \cos x &amp; = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} + \dots \\
+  \sin x &amp; = x - \frac{x^3}{3!} + \frac{x^5}{5!} + \dots \\
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">con la serie che definisce l’esponenziale complesso,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+  e^z &amp; = 1 + z + \frac{z^2}{2!} + \frac{z^3}{3!} + \frac{z^4}{4!} + \frac{z^5}{5!} + \dots \\
+\end{split}\]</div>
+<p class="sd-card-text">valutata in <span class="math notranslate nohighlight">\(z = i x \in \mathbb{C}\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  e^{i x} 
+      &amp; = 1 + i x + \frac{(i x)^2}{2!} + \frac{(i x)^3}{3!} + \frac{(i x)^4}{4!} + \frac{(i x)^5}{5!} + \dots = \\
+      &amp; = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} \dots + i \left[ x - \frac{x^3}{3!} + \frac{x^5}{5!}  + \dots \right] = \\
+      &amp; = \cos x + i \sin x \ .
+\end{aligned}\end{split}\]</div>
+</div>
+</details></div>
+<div class="section" id="altre-operazioni-e-funzioni-a-variabile-complessa">
+<span id="math-hs-algebra-complex-notes-fun"></span><h2><span class="section-number">20.11.4. </span>Altre operazioni e funzioni a variabile complessa<a class="headerlink" href="#altre-operazioni-e-funzioni-a-variabile-complessa" title="Permalink to this heading">#</a></h2>
+<div class="section" id="potenza">
+<span id="math-hs-algebra-complex-notes-fun-power"></span><h3><span class="section-number">20.11.4.1. </span>Potenza<a class="headerlink" href="#potenza" title="Permalink to this heading">#</a></h3>
+</div>
+<div class="section" id="esponenziale">
+<span id="math-hs-algebra-complex-notes-fun-exp"></span><h3><span class="section-number">20.11.4.2. </span>Esponenziale<a class="headerlink" href="#esponenziale" title="Permalink to this heading">#</a></h3>
+</div>
+<div class="section" id="logaritmo">
+<span id="math-hs-algebra-complex-notes-fun-log"></span><h3><span class="section-number">20.11.4.3. </span>Logaritmo<a class="headerlink" href="#logaritmo" title="Permalink to this heading">#</a></h3>
+</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -695,20 +718,20 @@ Dimostrazione per induzione<div class="sd-summary-down docutils">
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="complex-algebra-problems.html"
+       href="complex-algebra-sol.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">precedente</p>
-        <p class="prev-next-title"><span class="section-number">20.9. </span>Problemi</p>
+        <p class="prev-next-title"><span class="section-number">20.10. </span>Problemi - soluzioni</p>
       </div>
     </a>
     <a class="right-next"
-       href="complex-algebra-sol.html"
+       href="../precalculus/multivariable-real-fun.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">20.11. </span>Problemi - soluzioni</p>
+        <p class="prev-next-title"><span class="section-number">21. </span>Funzioni multi-variabile</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -727,17 +750,15 @@ Dimostrazione per induzione<div class="sd-summary-down docutils">
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#altre-operazioni-e-funzioni-a-variabile-complessa">20.10.1. Altre operazioni e funzioni a variabile complessa</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#potenza">20.10.1.1. Potenza</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esponenziale">20.10.1.2. Esponenziale</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#logaritmo">20.10.1.3. Logaritmo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formula-di-de-moivre">20.11.1. Formula di de Moivre</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esponenziale-complesso">20.11.2. Esponenziale complesso</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formula-di-eulero">20.11.3. Formula di Eulero</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#altre-operazioni-e-funzioni-a-variabile-complessa">20.11.4. Altre operazioni e funzioni a variabile complessa</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#potenza">20.11.4.1. Potenza</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esponenziale">20.11.4.2. Esponenziale</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#logaritmo">20.11.4.3. Logaritmo</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esponenziale-complesso-e-formula-di-eulero">20.10.2. Esponenziale complesso e formula di Eulero</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#formula-di-eulero">20.10.2.1. Formula di Eulero</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formula-di-de-moivre">20.10.3. Formula di de Moivre</a></li>
 </ul>
   </nav></div>
 
