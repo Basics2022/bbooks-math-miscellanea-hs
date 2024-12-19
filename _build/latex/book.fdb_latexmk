@@ -1,10 +1,10 @@
 # Fdb version 3
-["makeindex book.idx"] 1733756371 "book.idx" "book.ind" "book" 1734638919
-  "book.idx" 1734638914 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex book.idx"] 1733756371 "book.idx" "book.ind" "book" 1734639892
+  "book.idx" 1734639888 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "book.ilg"
   "book.ind"
-["pdflatex"] 1734638913 "book.tex" "book.pdf" "book" 1734638919
+["pdflatex"] 1734639887 "book.tex" "book.pdf" "book" 1734639892
   "../../media/tikz/complex/ex-eq-01.pdf" 1734619178 36019 e1380ff7fb621b8e59d863237ddc398c ""
   "../../media/tikz/complex/ex-eq-02.pdf" 1734621647 42896 557ab932fffb4a50cebad5c02f635bf5 ""
   "../../media/tikz/complex/ex-eq-03.pdf" 1734622459 43233 79c80937c3ded589367293d5c038b968 ""
@@ -278,11 +278,11 @@
   "analytic-geometry-line-explicit.png" 1730803511 10608 102cc800346f4b12a9559d205d35b3c6 ""
   "analytic-geometry-line-implicit.png" 1730803532 9448 74725f6e166c548a0cbe332c1e4b0b50 ""
   "analytic-geometry-line-parametric.png" 1730802750 9991 076a57744671b0f2215a4624700c007f ""
-  "book.aux" 1734638919 160298 0bc28fd36bd472d3287ba73e696b0166 "pdflatex"
+  "book.aux" 1734639892 160722 442cd10af45fc70cbcccd20f356b9f2e "pdflatex"
   "book.ind" 1733756371 0 d41d8cd98f00b204e9800998ecf8427e "makeindex book.idx"
-  "book.out" 1734638919 32430 974cc04e71be33fe0a5722630f49d27d "pdflatex"
-  "book.tex" 1734638913 563921 3cb8274f3d4d1ddc6aa598bc170fe1b5 ""
-  "book.toc" 1734638919 35412 7ebcd1dfe9e658ed80f72af73fcc7a7b "pdflatex"
+  "book.out" 1734639892 32430 974cc04e71be33fe0a5722630f49d27d "pdflatex"
+  "book.tex" 1734639881 564760 300c742fd024efde6b549372dc11ae31 ""
+  "book.toc" 1734639892 35412 7ebcd1dfe9e658ed80f72af73fcc7a7b "pdflatex"
   "euler-introductio-1.png" 1730750596 430901 0d08e6604b315b8c1f0dc82561c79c20 ""
   "euler-introductio-2.png" 1730750642 403462 c14859c93559f1b155b1f0c6a53f38ce ""
   "euler-introductio-3.png" 1730750683 229719 00b5cf423c0bc89c3d806fc247bde3d6 ""
@@ -292,7 +292,7 @@
   "ggb-par.png" 1733321733 166785 88862b2266a60ec41fd4e4c500ad9fde ""
   "jupyterBook.cls" 1725023435 2881 d7be52eb557699167c5a8617d29c1b64 ""
   "sphinx.sty" 1726477050 12780 919e6ba449302e2597e7722681a087c6 ""
-  "sphinxhighlight.sty" 1734638912 6742 ef996596562a9a2908d62b245f9fe7bd ""
+  "sphinxhighlight.sty" 1734639880 6742 ef996596562a9a2908d62b245f9fe7bd ""
   "sphinxlatexadmonitions.sty" 1726477050 6238 2d867d769abf3f72abc17ef52adff78b ""
   "sphinxlatexcontainers.sty" 1726477050 901 d3a3a1b7b2547f47ade2499350b5c420 ""
   "sphinxlatexgraphics.sty" 1726477050 4840 a9578332b6f3b35e198751fb632c9b79 ""
@@ -307,15 +307,15 @@
   "sphinxlatexstyletext.sty" 1726477050 6177 c18841ce3fafc366cd3b145f8faa4c37 ""
   "sphinxlatextables.sty" 1726477050 21848 2827eb0b11b99b185a8b77317d3e131c ""
   "sphinxmanual.cls" 1726477050 4241 7b0d7a37df7b5715fb0dbd585c52ecdb ""
-  "sphinxmessages.sty" 1734638913 753 75d0749f958f57e1a3673a79afa21553 ""
+  "sphinxmessages.sty" 1734639881 753 75d0749f958f57e1a3673a79afa21553 ""
   "sphinxoptionsgeometry.sty" 1726477050 2061 47bb34b8ed8a78823eb0c886abfb9f4d ""
   "sphinxoptionshyperref.sty" 1726477050 1094 79beb8b8a3f10784f8cce804e0f9d3aa ""
   "sphinxpackagefootnote.sty" 1726477050 15217 dd26fe418b6fb1b26b18f042a7f43d40 ""
   "trigonometry-sum.png" 1730730869 16429 2da9917623f76e31a60f97a0fdaa2700 ""
   (generated)
   "book.aux"
-  "book.log"
-  "book.idx"
+  "book.toc"
   "book.out"
   "book.pdf"
-  "book.toc"
+  "book.idx"
+  "book.log"

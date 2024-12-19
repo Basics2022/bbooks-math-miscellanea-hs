@@ -27,7 +27,7 @@ Soluzione degli [esercizi sui numeri complessi e la geometria nel piano euclideo
 
 (math-hs:algebra:complex:problems:equations:eq:sol)=
 ### Equazioni
-Soluzione degli [esercizi su equazioni con i numeri complessi](math-hs:algebra:complex:problems:equations:sys)
+Soluzione degli [esercizi su equazioni con i numeri complessi](math-hs:algebra:complex:problems:equations:eq)
 
 ````{only} html
 
