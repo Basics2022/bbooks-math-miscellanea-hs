@@ -499,7 +499,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rappresentazione-dei-numeri-complessi-nel-piano-complesso-argand-gauss">20.4. Rappresentazione dei numeri complessi nel piano complesso (Argand-Gauss)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni-con-i-numeri-complessi">20.5. Operazioni con i numeri complessi</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#somma-e-prodotto">20.5.1. Somma e prodotto</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#complesso-coniugato-e">20.5.2. Complesso coniugato e</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#complesso-coniugato-e-modulo">20.5.2. Complesso coniugato e modulo</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#potenze-e-radici">20.5.3. Potenze e radici</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#potenza-intera-p-in-mathbb-z">20.5.3.1. Potenza intera, <span class="math notranslate nohighlight">\(p \in \mathbb{Z}\)</span>.</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#radici-o-potenza-frac-1-p-p-in-mathbb-z">20.5.3.2. Radici o potenza <span class="math notranslate nohighlight">\(\frac{1}{p}, \ p \in \mathbb{Z}\)</span></a></li>
@@ -600,6 +600,12 @@ document.write(`
 <div class="math notranslate nohighlight" id="equation-complex-euler">
 <span class="eqno">(20.3)<a class="headerlink" href="#equation-complex-euler" title="Permalink a questa equazione">#</a></span>\[e^{i \theta} = \cos \theta + i \sin \theta \ ,\]</div>
 <p>con <span class="math notranslate nohighlight">\(\theta \in \mathbb{R}\)</span>. Vengono riportate in appendice due <a class="reference internal" href="complex-algebra-notes.html#math-hs-algebra-complex-notes-euler"><span class="std std-ref">dimostrazioni della formula di Eulero</span></a>, una usando la definizione di esponenziale complesso e la formula di de Moivre, l’altra usando le serie di Taylor.</p>
+<p>Grazie alla formula di Eulero e alle proprietà elementari delle funzioni trigonometriche, <span class="math notranslate nohighlight">\(\cos(-\theta) = \cos \theta\)</span>, <span class="math notranslate nohighlight">\(\sin(-\theta) = -\sin \theta\)</span>, con <span class="math notranslate nohighlight">\(\theta \in \mathbb{R}\)</span>, segue</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+ \cos \theta &amp; = \frac{e^{i\theta} + e^{-i\theta}}{2} \\
+ \sin \theta &amp; = \frac{e^{i\theta} - e^{-i\theta}}{2i} \\
+\end{aligned}\end{split}\]</div>
 </div>
 <div class="section" id="rappresentazione-dei-numeri-complessi-nel-piano-complesso-argand-gauss">
 <span id="math-hs-algebra-complex-complex-plane"></span><h2><span class="section-number">20.4. </span>Rappresentazione dei numeri complessi nel piano complesso (Argand-Gauss)<a class="headerlink" href="#rappresentazione-dei-numeri-complessi-nel-piano-complesso-argand-gauss" title="Permalink to this heading">#</a></h2>
@@ -641,8 +647,8 @@ document.write(`
     &amp; = (x_1 + i y_1 ) (x_2 + i y_2) = (x_1 x_2 - y_1 y_2)+i(x_1 y_2 + y_1 x_2) \\
   \end{aligned}\end{split}\]</div>
 </div>
-<div class="section" id="complesso-coniugato-e">
-<h3><span class="section-number">20.5.2. </span>Complesso coniugato e<a class="headerlink" href="#complesso-coniugato-e" title="Permalink to this heading">#</a></h3>
+<div class="section" id="complesso-coniugato-e-modulo">
+<h3><span class="section-number">20.5.2. </span>Complesso coniugato e modulo<a class="headerlink" href="#complesso-coniugato-e-modulo" title="Permalink to this heading">#</a></h3>
 <p><strong>Complesso coniugato.</strong> Il complesso coniugato <span class="math notranslate nohighlight">\(z^*\)</span> di un numero compless <span class="math notranslate nohighlight">\(z \in \mathbb{C}\)</span> è il numero complesso con stessa parte reale e parte immaginaria opposta. Analogamente ha stesso modulo e argomento (definito tra <span class="math notranslate nohighlight">\(-\pi\)</span> e <span class="math notranslate nohighlight">\(\pi\)</span>) opposto</p>
 <div class="math notranslate nohighlight">
 \[z^* := x - i y = r e^{-i\theta} \]</div>
@@ -870,7 +876,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rappresentazione-dei-numeri-complessi-nel-piano-complesso-argand-gauss">20.4. Rappresentazione dei numeri complessi nel piano complesso (Argand-Gauss)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni-con-i-numeri-complessi">20.5. Operazioni con i numeri complessi</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#somma-e-prodotto">20.5.1. Somma e prodotto</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#complesso-coniugato-e">20.5.2. Complesso coniugato e</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#complesso-coniugato-e-modulo">20.5.2. Complesso coniugato e modulo</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#potenze-e-radici">20.5.3. Potenze e radici</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#potenza-intera-p-in-mathbb-z">20.5.3.1. Potenza intera, <span class="math notranslate nohighlight">\(p \in \mathbb{Z}\)</span>.</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#radici-o-potenza-frac-1-p-p-in-mathbb-z">20.5.3.2. Radici o potenza <span class="math notranslate nohighlight">\(\frac{1}{p}, \ p \in \mathbb{Z}\)</span></a></li>
