@@ -494,7 +494,18 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definizioni">20.1. Definizioni</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rappresentazione-dei-numeri-complessi-nel-piano-complesso-argand-gauss">20.2. Rappresentazione dei numeri complessi nel piano complesso (Argand-Gauss)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni-con-i-numeri-complessi">20.3. Operazioni con i numeri complessi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni-con-i-numeri-complessi">20.3. Operazioni con i numeri complessi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#somma-e-prodotto">20.3.1. Somma e prodotto</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#complesso-coniugato-e">20.3.2. Complesso coniugato e</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#potenze-e-radici">20.3.3. Potenze e radici</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#potenza-intera-p-in-mathbb-z">20.3.3.1. Potenza intera, <span class="math notranslate nohighlight">\(p \in \mathbb{Z}\)</span>.</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#radici-o-potenza-frac-1-p-p-in-mathbb-z">20.3.3.2. Radici o potenza <span class="math notranslate nohighlight">\(\frac{1}{p}, \ p \in \mathbb{Z}\)</span></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#potenza-razionale">20.3.3.3. Potenza razionale</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#altre-operazioni">20.3.4. Altre operazioni</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-fondamentale-dell-algebra">20.4. Teorema fondamentale dell’algebra</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#numeri-complessi-e-geometria-nel-piano-euclideo">20.5. Numeri complessi e geometria nel piano euclideo</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#posizione-di-un-punto-nel-piano">20.5.1. Posizione di un punto nel piano</a></li>
@@ -590,6 +601,8 @@ document.write(`
 <div class="section" id="operazioni-con-i-numeri-complessi">
 <span id="math-hs-algebra-complex-operations"></span><h2><span class="section-number">20.3. </span>Operazioni con i numeri complessi<a class="headerlink" href="#operazioni-con-i-numeri-complessi" title="Permalink to this heading">#</a></h2>
 <p>Si presentano alcune opearazioni sui numeri complessi.</p>
+<div class="section" id="somma-e-prodotto">
+<h3><span class="section-number">20.3.1. </span>Somma e prodotto<a class="headerlink" href="#somma-e-prodotto" title="Permalink to this heading">#</a></h3>
 <p><strong>Somma.</strong> La somma di due numeri complessi è il numero complesso</p>
 <div class="math notranslate nohighlight">
 \[z_1 + z_2 = (x_1 + x_2) + i(y_1 + y_2)\]</div>
@@ -600,6 +613,9 @@ document.write(`
     &amp; = r_1 \, r_2 e^{i(\theta_1 + \theta_2)} = \\
     &amp; = (x_1 + i y_1 ) (x_2 + i y_2) = (x_1 x_2 - y_1 y_2)+i(x_1 y_2 + y_1 x_2) \\
   \end{aligned}\end{split}\]</div>
+</div>
+<div class="section" id="complesso-coniugato-e">
+<h3><span class="section-number">20.3.2. </span>Complesso coniugato e<a class="headerlink" href="#complesso-coniugato-e" title="Permalink to this heading">#</a></h3>
 <p><strong>Complesso coniugato.</strong> Il complesso coniugato <span class="math notranslate nohighlight">\(z^*\)</span> di un numero compless <span class="math notranslate nohighlight">\(z \in \mathbb{C}\)</span> è il numero complesso con stessa parte reale e parte immaginaria opposta. Analogamente ha stesso modulo e argomento (definito tra <span class="math notranslate nohighlight">\(-\pi\)</span> e <span class="math notranslate nohighlight">\(\pi\)</span>) opposto</p>
 <div class="math notranslate nohighlight">
 \[z^* := x - i y = r e^{-i\theta} \]</div>
@@ -616,15 +632,24 @@ document.write(`
     &amp; = \sqrt{(x-iy)(x+iy)} =  \sqrt{x^2 + y^2} = \\
     &amp; = \sqrt{r e^{-i\theta} r e^{i\theta}} = r
   \end{aligned}\end{split}\]</div>
+</div>
+<div class="section" id="potenze-e-radici">
+<h3><span class="section-number">20.3.3. </span>Potenze e radici<a class="headerlink" href="#potenze-e-radici" title="Permalink to this heading">#</a></h3>
 <p><strong>Potenza.</strong> Si presenta l’elevamento a potenza di un numero complesso,</p>
 <div class="math notranslate nohighlight">
 \[z = A e^{i (\alpha + 2 \pi n)} \ , \quad n \in \mathbb{Z} \ ,\]</div>
 <p>ricordando l’arbitrarietà nella rappresentazione in forma polare. Si rimanda all’appendice per il caso generale, mentre qui si presentano i casi con:</p>
-<ul>
-<li><p>potenza intera, <span class="math notranslate nohighlight">\(p \in \mathbb{Z}\)</span>.</p>
+<div class="section" id="potenza-intera-p-in-mathbb-z">
+<h4><span class="section-number">20.3.3.1. </span>Potenza intera, <span class="math notranslate nohighlight">\(p \in \mathbb{Z}\)</span>.<a class="headerlink" href="#potenza-intera-p-in-mathbb-z" title="Permalink to this heading">#</a></h4>
 <div class="math notranslate nohighlight">
 \[z^p = A^p e^{i ( p \alpha + 2 \pi n p )} = A^{p} e^{i ( p \alpha + 2 \pi m )} \ , \quad m \in \mathbb{Z}\]</div>
-</li>
+</div>
+<div class="section" id="radici-o-potenza-frac-1-p-p-in-mathbb-z">
+<h4><span class="section-number">20.3.3.2. </span>Radici o potenza <span class="math notranslate nohighlight">\(\frac{1}{p}, \ p \in \mathbb{Z}\)</span><a class="headerlink" href="#radici-o-potenza-frac-1-p-p-in-mathbb-z" title="Permalink to this heading">#</a></h4>
+</div>
+<div class="section" id="potenza-razionale">
+<h4><span class="section-number">20.3.3.3. </span>Potenza razionale<a class="headerlink" href="#potenza-razionale" title="Permalink to this heading">#</a></h4>
+<ul>
 <li><p>potenza razionale, <span class="math notranslate nohighlight">\(p, q \in \mathbb{Z}\)</span>, <span class="math notranslate nohighlight">\(q \ne 0\)</span>, <span class="math notranslate nohighlight">\(\frac{p}{q} = r + \frac{p'}{q}\)</span>, con <span class="math notranslate nohighlight">\(p' &lt; q\)</span> e <span class="math notranslate nohighlight">\(\frac{p'}{q}\)</span> irriducibile,</p>
 <div class="math notranslate nohighlight">
 \[z^{\frac{p}{q}} = A^{\frac{p}{q}} e^{i \frac{p}{q} (\alpha + 2 \pi n)} = A^{\frac{p}{q}} e^{i (\frac{p}{q} \alpha + \frac{p'}{q} 2 \pi n)}\]</div>
@@ -632,9 +657,14 @@ document.write(`
 </li>
 <li><p>potenza con esponente irrazionale: il numero <span class="math notranslate nohighlight">\(z^p\)</span> rappresenta infiniti numeri <strong>todo</strong></p></li>
 </ul>
+</div>
+</div>
+<div class="section" id="altre-operazioni">
+<h3><span class="section-number">20.3.4. </span>Altre operazioni<a class="headerlink" href="#altre-operazioni" title="Permalink to this heading">#</a></h3>
 <p><strong>Potenza qualsiasi.</strong> Per la discussione di una <a class="reference internal" href="complex-algebra-notes.html#math-hs-algebra-complex-notes-fun-power"><span class="std std-ref">potenza qualsiasi</span></a> di un numero complesso si rimanda alla sezione sulle funzioni di variabile complessa in appendice.</p>
 <p><strong>Esponenziale.</strong> Per la discussione dell”<a class="reference internal" href="complex-algebra-notes.html#math-hs-algebra-complex-notes-fun-exp"><span class="std std-ref">esponenziale complesso</span></a> si rimanda alla sezione sulle funzioni di variabile complessa in appendice.</p>
 <p><strong>Logaritmo.</strong> Per la discussione del <a class="reference internal" href="complex-algebra-notes.html#math-hs-algebra-complex-notes-fun-log"><span class="std std-ref">logaritmo complesso</span></a> si rimanda alla sezione sulle funzioni di variabile complessa in appendice.</p>
+</div>
 </div>
 <div class="section" id="teorema-fondamentale-dell-algebra">
 <span id="math-hs-algebra-complex-fund-thm"></span><h2><span class="section-number">20.4. </span>Teorema fondamentale dell’algebra<a class="headerlink" href="#teorema-fondamentale-dell-algebra" title="Permalink to this heading">#</a></h2>
@@ -791,7 +821,18 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definizioni">20.1. Definizioni</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rappresentazione-dei-numeri-complessi-nel-piano-complesso-argand-gauss">20.2. Rappresentazione dei numeri complessi nel piano complesso (Argand-Gauss)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni-con-i-numeri-complessi">20.3. Operazioni con i numeri complessi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni-con-i-numeri-complessi">20.3. Operazioni con i numeri complessi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#somma-e-prodotto">20.3.1. Somma e prodotto</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#complesso-coniugato-e">20.3.2. Complesso coniugato e</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#potenze-e-radici">20.3.3. Potenze e radici</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#potenza-intera-p-in-mathbb-z">20.3.3.1. Potenza intera, <span class="math notranslate nohighlight">\(p \in \mathbb{Z}\)</span>.</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#radici-o-potenza-frac-1-p-p-in-mathbb-z">20.3.3.2. Radici o potenza <span class="math notranslate nohighlight">\(\frac{1}{p}, \ p \in \mathbb{Z}\)</span></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#potenza-razionale">20.3.3.3. Potenza razionale</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#altre-operazioni">20.3.4. Altre operazioni</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-fondamentale-dell-algebra">20.4. Teorema fondamentale dell’algebra</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#numeri-complessi-e-geometria-nel-piano-euclideo">20.5. Numeri complessi e geometria nel piano euclideo</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#posizione-di-un-punto-nel-piano">20.5.1. Posizione di un punto nel piano</a></li>

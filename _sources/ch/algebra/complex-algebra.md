@@ -77,6 +77,7 @@ Le due rappresentazioni non sono equivalenti. Mentre la rappresentazione cartesi
 ## Operazioni con i numeri complessi
 Si presentano alcune opearazioni sui numeri complessi.
 
+### Somma e prodotto
 **Somma.** La somma di due numeri complessi è il numero complesso
 
   $$z_1 + z_2 = (x_1 + x_2) + i(y_1 + y_2)$$
@@ -89,6 +90,7 @@ Si presentano alcune opearazioni sui numeri complessi.
     & = (x_1 + i y_1 ) (x_2 + i y_2) = (x_1 x_2 - y_1 y_2)+i(x_1 y_2 + y_1 x_2) \\
   \end{aligned}$$
 
+### Complesso coniugato e 
 **Complesso coniugato.** Il complesso coniugato $z^*$ di un numero compless $z \in \mathbb{C}$ è il numero complesso con stessa parte reale e parte immaginaria opposta. Analogamente ha stesso modulo e argomento (definito tra $-\pi$ e $\pi$) opposto
 
   $$z^* := x - i y = r e^{-i\theta} $$
@@ -108,16 +110,20 @@ $$\begin{aligned}
     & = \sqrt{r e^{-i\theta} r e^{i\theta}} = r
   \end{aligned}$$
 
+### Potenze e radici
 **Potenza.** Si presenta l'elevamento a potenza di un numero complesso,
 
 $$z = A e^{i (\alpha + 2 \pi n)} \ , \quad n \in \mathbb{Z} \ ,$$
 
 ricordando l'arbitrarietà nella rappresentazione in forma polare. Si rimanda all'appendice per il caso generale, mentre qui si presentano i casi con:
 
-- potenza intera, $p \in \mathbb{Z}$.
+#### Potenza intera, $p \in \mathbb{Z}$.
 
   $$z^p = A^p e^{i ( p \alpha + 2 \pi n p )} = A^{p} e^{i ( p \alpha + 2 \pi m )} \ , \quad m \in \mathbb{Z}$$
 
+#### Radici o potenza $\frac{1}{p}, \ p \in \mathbb{Z}$
+
+#### Potenza razionale
 - potenza razionale, $p, q \in \mathbb{Z}$, $q \ne 0$, $\frac{p}{q} = r + \frac{p'}{q}$, con $p' < q$ e $\frac{p'}{q}$ irriducibile,
 
   $$z^{\frac{p}{q}} = A^{\frac{p}{q}} e^{i \frac{p}{q} (\alpha + 2 \pi n)} = A^{\frac{p}{q}} e^{i (\frac{p}{q} \alpha + \frac{p'}{q} 2 \pi n)}$$
@@ -126,6 +132,7 @@ ricordando l'arbitrarietà nella rappresentazione in forma polare. Si rimanda al
 
 - potenza con esponente irrazionale: il numero $z^p$ rappresenta infiniti numeri **todo**
 
+### Altre operazioni
 **Potenza qualsiasi.** Per la discussione di una [potenza qualsiasi](math-hs:algebra:complex:notes:fun:power) di un numero complesso si rimanda alla sezione sulle funzioni di variabile complessa in appendice.
 
 **Esponenziale.** Per la discussione dell'[esponenziale complesso](math-hs:algebra:complex:notes:fun:exp) si rimanda alla sezione sulle funzioni di variabile complessa in appendice.
