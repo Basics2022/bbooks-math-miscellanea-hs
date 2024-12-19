@@ -104,7 +104,7 @@ Le due rappresentazioni non sono equivalenti. Mentre la rappresentazione cartesi
 
 (math-hs:algebra:complex:operations)=
 ## Operazioni con i numeri complessi
-Si presentano alcune opearazioni sui numeri complessi.
+Si rivisitano ora le operazioni già presentate, mostrando la convenienza della rappresentazione polare per prodotti e potenze.
 
 ### Somma e prodotto
 **Somma.** La somma di due numeri complessi è il numero complesso
