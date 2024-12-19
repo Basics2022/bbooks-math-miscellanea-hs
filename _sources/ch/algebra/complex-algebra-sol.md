@@ -93,7 +93,7 @@ $\begin{aligned}
 
 **Interpretazione grafica.** Le due equazioni corrispondono all'equazione della retta di equazione $x = 3$ e della circonferenza centrata nell'origine di raggio $5$. La soluzione del sistema coincide con la ricerca dei punti di intersezione di queste due curve.
 
-![](../../media/tikz/complex/ex-eq-01.svg)
+![](../../media/tikz/complex/ex-sy-01.svg)
 <!-- *Didascalia, se necessaria* -->
 
 ```
@@ -108,7 +108,7 @@ $$
 \hspace{.05\textwidth} %
 \begin{minipage}[t]{.40\textwidth}
   \vspace{0pt}
-  \includegraphics[width=.95\textwidth]{../../media/tikz/complex/ex-eq-01.pdf}
+  \includegraphics[width=.95\textwidth]{../../media/tikz/complex/ex-sy-01.pdf}
 \end{minipage}
 $$
 
