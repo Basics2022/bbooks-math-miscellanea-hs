@@ -56,13 +56,17 @@ L'esponenziale complesso può essere scritto come limite della successione con t
 
 $$a_n = \left( 1 + \frac{z}{n} \right)^n = \left( 1 + \frac{x}{n} + i \frac{y}{n} \right)^n$$
 
-per $n \rightarrow +\infty$. Si scrive il termine $a_n$ in forma polare, $a_n = r_n e^{i \theta_n}$ con le espressioni di $r_n$, $\theta_n$
+per $n \rightarrow +\infty$. Usando le trasformazioni tra la rappresentazione cartesiana e la rappresentazione polare
 
-$$r_n = \sqrt{\left(1+ \frac{x}{n}\right)^2 + \left(\frac{y}{n}\right)^2}$$
+$$\begin{cases}
+  \text{re}\{a_n\} = 1 + \frac{x}{n} = r_n \cos \theta_n \\
+  \text{im}\{a_n\} = \frac{y}{n} = r_n \sin \theta_n
+\end{cases}$$
 
-$$n r_n = \sqrt{( n + x )^2 + y^2}$$
-
-$$\tan \theta_n = \frac{\frac{y}{n}}{1 + \frac{x}{n}} = \frac{y}{x + n}$$
+$$\begin{cases}
+  r_n = \sqrt{ \left(\text{re}\{a_n\}\right)^2 + \left(\text{im}\{a_n\}\right)^2 } =  \sqrt{\left(1+ \frac{x}{n}\right)^2 + \left(\frac{y}{n}\right)^2}
+  \tan \theta_n = \frac{\text{im}\{a_n\}}{\text{re}\{a_n\}} = \frac{\frac{y}{n}}{1 + \frac{x}{n}} = \frac{y}{x + n}_n
+\end{cases}$$
 
 <!--
 Il modulo di $a_n$ tende a $e^x$
@@ -132,7 +136,7 @@ dall'arbitrarietà del valore $x$, risulta dimostrata la formula di Eulero,
 
 $$e^{iy} = \cos y + i \sin y \ .$$
 
-per esponenti reali $y \in \mathbb{R}$.
+per esponenti reali $y \in \mathbb{R}$. 
 
 ```
 
