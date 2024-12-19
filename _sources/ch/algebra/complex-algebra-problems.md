@@ -90,10 +90,10 @@ Risolvere le seguenti equazioni
 1. Risolvi $|z| = 2$ e rappresenta graficamente le soluzioni.
 2. Trova i numeri complessi $z$ che soddisfano $z + \overline{z} = 2$.
 3. Risolvi $z^2 - 2z + 5 = 0$ e calcola il modulo delle soluzioni.
-4. Risolvi $|z - 3| = 5$ e rappresenta graficamente le soluzioni.
+4. Risolvi $|z - 3 + 1| = 2$ e rappresenta graficamente le soluzioni.
 5. Trova i valori di $z$ per cui $z^3 = 27$.
-6. Risolvi $z^4 + 16 = 0$ e rappresenta graficamente le soluzioni nel piano complesso.
-7. Risolvi $|z - 1| = |z + 1|$ e descrivi il luogo geometrico delle soluzioni.
+6. Risolvi $(z-1)^4 + 16 = 0$ e rappresenta graficamente le soluzioni nel piano complesso.
+7. Risolvi $|z - 2| = |z + 1|$ e descrivi il luogo geometrico delle soluzioni.
 8. Trova le soluzioni di $z^5 - 32 = 0$ e rappresentale in forma polare.
 9. Determina i numeri complessi $z$ per cui $|z|^2 + |z - 2|^2 = 8$.
 10. Risolvi $|z + i| = 3$ per $z \in \mathbb{C}$.
