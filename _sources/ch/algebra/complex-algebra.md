@@ -55,7 +55,7 @@ con $x, \ y \in \mathbb{R}$.
 - somma: $z_1 + z_2 = (x_1 + i y_1) + (x_2 + i y_2) = (x_1 + x_2) + i (y_1 + y_2)$
 - prodotto: $z_1 z_2 = (x_1 + i y_1)(x_2 + i y_2) = x_1 x_2 - y_1 y_2 + i (x_1 y_2 + x_2 y_1)$
 - potenza con esponente naturale, $n \in \mathbb{N}$: $z^n = (x + i y)^n = \underbrace{(x+iy) \dots (x+iy)}_{n \text{ volte}}$
-- complesso coniugato: $z^* = (x+iy)^* = x - i y$
+- complesso coniugato: $z^* := (x+iy)^* = x - i y$
 - modulo: $|z| := \sqrt{z^* z} = \sqrt{x^2 + y^2}$
 
 (math-hs:algebra:complex:demoivre-euler)=
