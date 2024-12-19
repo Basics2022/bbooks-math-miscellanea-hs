@@ -114,16 +114,27 @@ Risolvere le seguenti equazioni
 ```{exercise} Disequazioni
 
 **1.** Trova i numeri complessi $z$ che soddisfano $|z| < 3$.
+
 **2.** Determina $z$ per cui $|z - 2| \geq 4$.
+
 **3.** Risolvi $|z + i| \leq 2$.
+
 **4.** Trova $z$ tali che $\text{Re}(z) > \text{Im}(z)$.
+
 **5.** Risolvi $|z - 1| > |z + 1|$.
+
 **6.** Determina il luogo geometrico di $z$ per cui $|z| - |z-2| \leq 3$.
+
 **7.** Risolvi $\text{Re}(z) + \text{Im}(z) \leq 2$.
+
 **8.** Trova $z$ tali che $|z| + |z - 1| \leq 5$.
+
 **9.** Trova $z$ tali che $|z+i| + |z - 1| \leq 5$.
-**10.** Risolvi $|z - 2i| \geq |z + 2|$.
+
+**10.** Risolvi $|z - i| \geq |z + 2|$.
 ```
+
+
 
 (math-hs:algebra:complex:problems:equations:sys)=
 ### Sistemi di equazioni
@@ -190,5 +201,4 @@ Risolvere le seguenti equazioni
     z \cdot w = 6 - i 
     \end{cases}$
 ```
-
 

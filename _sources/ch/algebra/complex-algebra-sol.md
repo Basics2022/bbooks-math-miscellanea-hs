@@ -139,7 +139,7 @@ Soluzione degli [esercizi su disequazioni con i numeri complessi](math-hs:algebr
 
 **9.** Trova $z$ tali che $|z+i| + |z - 1| \leq 5$.
 
-**10.** Risolvi $|z - 2i| \geq |z + 2|$.
+**10.** Risolvi $|z - i| \geq |z + 2|$.
 
 ````
 
