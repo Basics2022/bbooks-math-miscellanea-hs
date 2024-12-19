@@ -98,6 +98,8 @@ Per $n \rightarrow \infty$, $\tan \theta_n \rightarrow 0$ e quindi vale l'appros
 $$\theta_n \sim \tan \theta_n = \frac{y}{x+n} \sim \frac{y}{n}$$
 $$n \theta_n \sim y$$
 
+mentre è possibile studiare il limite del modulo, riscrivendolo come
+
 $$\begin{aligned}
   r_n^n & = \left[ \left( 1 + \frac{x}{n} \right)^2 + \left( \frac{y}{n} \right)^2 \right]^{\frac{n}{2}} = \\
         & = \left( 1 + \frac{x}{n} \right)^{n} \left[ 1 + \left(\frac{y}{n+x}\right)^2 \right]^{\frac{n}{2}} = \\
