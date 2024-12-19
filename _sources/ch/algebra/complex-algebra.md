@@ -82,7 +82,7 @@ Grazie alla formula di Eulero e alle proprietà elementari delle funzioni trigon
 $$\begin{aligned}
  \cos \theta & = \frac{e^{i\theta} + e^{-i\theta}}{2} \\
  \sin \theta & = \frac{e^{i\theta} - e^{-i\theta}}{2i} \\
-\end{aligned}$$
+\end{aligned}$$ (complex:cos-sin)
 
 
 (math-hs:algebra:complex:complex-plane)=
