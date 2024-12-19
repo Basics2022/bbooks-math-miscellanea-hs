@@ -1,0 +1,52 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{amsmath}
+
+\begin{document}
+
+\begin{tikzpicture}
+    
+    % Center of the circle
+    \def\xmin{-4}
+    \def\xmax{4}
+    \def\ymin{-4}
+    \def\ymax{4}
+    \def\dx{.5}
+    \def\dy{.5}
+    \def\xminb{\xmin-\dx}
+    \def\xmaxb{\xmax+\dx}
+    \def\yminb{\ymin-\dy}
+    \def\ymaxb{\ymax+\dy}
+    \coordinate (center) at (0., 0.);
+    \def\radius{2.}
+
+    % Fill outside region
+    \begin{scope}
+        % \clip (\xminb, \yminb) rectangle (\xmaxb, \ymaxb);
+        % \fill[gray!30] (\xmin, \ymin) rectangle (\xmax, \ymax);
+        \draw[color=gray!30, fill=gray!30] (\xmin,\ymin) -- (\xmax,\ymin) -- (\xmax, 2-\xmax) -- (2-\ymax,\ymax) -- (\xmin, \ymax) -- cycle;
+    \end{scope}
+
+    % Draw grid
+    \draw[step=1., gray!60, ultra thin] (\xmin, \ymin) grid (\xmax, \ymax); % Visible grid with lighter color
+    
+    % Axes
+    \draw[->, thick] (\xmin, 0) -- (\xmax, 0) node[right] {$\text{Re}(z)$};
+    \draw[->, thick] (0, \ymin) -- (0, \ymax) node[above] {$\text{Im}(z)$};
+
+    % Axis ticks
+    \foreach \x in {\xmin,..., \xmax}
+        \draw (\x, -0.1) -- (\x, 0.1) node[below=8pt] {\small $\x$};
+    \foreach \y in {\ymin,..., \ymax}
+        \draw (-0.1, \y) -- (0.1, \y) node[left=8pt] {\small $\y$};
+
+    % Labels for axes
+    \node[below left] at (0, 0) {$0$};
+
+    \draw[thick]  (2-\ymax, \ymax) -- (\xmax,2-\xmax)node[right] {$\text{re}\{z\} + \text{im}\{z\} = 2$}; 
+    
+    
+        
+\end{tikzpicture}
+
+\end{document}

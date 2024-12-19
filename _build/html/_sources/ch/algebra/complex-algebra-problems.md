@@ -90,10 +90,10 @@ Risolvere le seguenti equazioni
 1. Risolvi $|z| = 2$ e rappresenta graficamente le soluzioni.
 2. Trova i numeri complessi $z$ che soddisfano $z + \overline{z} = 2$.
 3. Risolvi $z^2 - 2z + 5 = 0$ e calcola il modulo delle soluzioni.
-4. Risolvi $|z - 3| = 5$ e rappresenta graficamente le soluzioni.
+4. Risolvi $|z - 3 + 1| = 2$ e rappresenta graficamente le soluzioni.
 5. Trova i valori di $z$ per cui $z^3 = 27$.
-6. Risolvi $z^4 + 16 = 0$ e rappresenta graficamente le soluzioni nel piano complesso.
-7. Risolvi $|z - 1| = |z + 1|$ e descrivi il luogo geometrico delle soluzioni.
+6. Risolvi $(z-1)^4 + 16 = 0$ e rappresenta graficamente le soluzioni nel piano complesso.
+7. Risolvi $|z - 2| = |z + 1|$ e descrivi il luogo geometrico delle soluzioni.
 8. Trova le soluzioni di $z^5 - 32 = 0$ e rappresentale in forma polare.
 9. Determina i numeri complessi $z$ per cui $|z|^2 + |z - 2|^2 = 8$.
 10. Risolvi $|z + i| = 3$ per $z \in \mathbb{C}$.
@@ -107,6 +107,34 @@ Risolvere le seguenti equazioni
 17. $\begin{cases} z + \bar{z} = 6 \\ |z| = 5 \end{cases}$
 -->
 ```
+
+(math-hs:algebra:complex:problems:equations:ineq)=
+### Disequazioni
+
+```{exercise} Disequazioni
+
+**1.** Trova i numeri complessi $z$ che soddisfano $|z| < 3$.
+
+**2.** Determina $z$ per cui $|z - 2| \geq 4$.
+
+**3.** Risolvi $|z + i| \leq 2$.
+
+**4.** Trova $z$ tali che $\text{Re}(z) > \text{Im}(z)$.
+
+**5.** Risolvi $|z - 1| > |z + 1|$.
+
+**6.** Determina il luogo geometrico di $z$ per cui $|z| - |z-2| \leq 3$.
+
+**7.** Risolvi $\text{Re}(z) + \text{Im}(z) \leq 2$.
+
+**8.** Trova $z$ tali che $|z| + |z - 1| \leq 5$.
+
+**9.** Trova $z$ tali che $|z+i| + |z - 1| \leq 5$.
+
+**10.** Risolvi $|z - i| \geq |z + 2|$.
+```
+
+
 
 (math-hs:algebra:complex:problems:equations:sys)=
 ### Sistemi di equazioni
@@ -173,22 +201,4 @@ Risolvere le seguenti equazioni
     z \cdot w = 6 - i 
     \end{cases}$
 ```
-
-(math-hs:algebra:complex:problems:equations:ineq)=
-### Disequazioni
-
-```{exercise} Disequazioni
-
-1. Trova i numeri complessi $z$ che soddisfano $|z| < 3$.
-2. Determina $z$ per cui $|z - 2| \geq 4$.
-3. Risolvi $|z + i| \leq 2$.
-4. Trova $z$ tali che $\text{Re}(z) > \text{Im}(z)$.
-5. Risolvi $|z - 1| > |z + 1|$.
-6. Determina il luogo geometrico di $z$ per cui $|z - 1| \leq 3$.
-7. Risolvi $\text{Re}(z) + \text{Im}(z) \leq 2$.
-8. Trova $z$ tali che $|z| + |z - 1| \leq 5$.
-9. Determina $z$ per cui $|z|^2 < 9$.
-10. Risolvi $|z - 2| \geq |z + 2|$.
-```
-
 

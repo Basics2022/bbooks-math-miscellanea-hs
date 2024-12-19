@@ -25,7 +25,7 @@ Soluzione degli [esercizi sui numeri complessi e la geometria nel piano euclideo
 (math-hs:algebra:complex:problems:equations:sol)=
 ## Equazioni e disequazioni con i numeri complessi
 
-
+### Equazioni
 Soluzione degli [esercizi su equazioni con i numeri complessi](math-hs:algebra:complex:problems:equations:sys)
 
 ````{only} html
@@ -84,15 +84,98 @@ $$
 
 **2.** Trova i numeri complessi $z$ che soddisfano $z + \overline{z} = 2$.
 
+$$
+\begin{minipage}[t]{.55\textwidth}
+\begin{equation}2 \text{re}{z} = 2\end{equation}
+\begin{equation}\text{re}{z}   = 1\end{equation}
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/tikz/complex/ex-eq-02.pdf}
+\end{minipage}
+$$
+
 **3.** Risolvi $z^2 - 2z + 5 = 0$ e calcola il modulo delle soluzioni.
 
-**4.** Risolvi $|z - 3| = 5$ e rappresenta graficamente le soluzioni.
+$$
+\begin{minipage}[t]{.55\textwidth}
+%
+Usando la formula risolutiva per le equazioni di secondo grado,
+\begin{equation} 
+z = 1 \mp \sqrt{1-5} = 1 \mp i 2 \end{equation}
+%
+**Verifica.**
+%
+\begin{equation}\begin{aligned}
+z^2  & = (1 \mp i 2)^2 = -3 \mp i 4 \\
+-2 z & = -2 ( 1 \mp i 2 ) \\
++ 5  & = 5 \\
+\hline 
+& = &  ( -3-2+5 ) + i(\mp 4 \pm 4) = 0 
+\end{aligned}\end{equation}
+%
+\begin{equation}\text{re}{z}   = 1\end{equation}
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/tikz/complex/ex-eq-03.pdf}
+\end{minipage}
+$$
+
+
+**4.** Risolvi $|z - 3 + i| = 2$ e rappresenta graficamente le soluzioni.
+
+$$
+\begin{minipage}[t]{.55\textwidth}
+...
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/tikz/complex/ex-eq-04.pdf}
+\end{minipage}
+$$
 
 **5.** Trova i valori di $z$ per cui $z^3 = 27$.
 
-**6.** Risolvi $z^4 + 16 = 0$ e rappresenta graficamente le soluzioni nel piano complesso.
+$$
+\begin{minipage}[t]{.55\textwidth}
+...
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/tikz/complex/ex-eq-05.pdf}
+\end{minipage}
+$$
 
-**7.** Risolvi $|z - 1| = |z + 1|$ e descrivi il luogo geometrico delle soluzioni.
+**6.** Risolvi $(z-1)^4 + 16 = 0$ e rappresenta graficamente le soluzioni nel piano complesso.
+
+$$
+\begin{minipage}[t]{.55\textwidth}
+...
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/tikz/complex/ex-eq-06.pdf}
+\end{minipage}
+$$
+
+**7.** Risolvi $|z - 2| = |z + 1|$ e descrivi il luogo geometrico delle soluzioni.
+
+$$
+\begin{minipage}[t]{.55\textwidth}
+...
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/tikz/complex/ex-eq-07.pdf}
+\end{minipage}
+$$
 
 **8.** Trova le soluzioni di $z^5 - 32 = 0$ e rappresentale in forma polare.
 
@@ -114,6 +197,36 @@ $$
 
 ````
 
+### Disequazioni
+Soluzione degli [esercizi su disequazioni con i numeri complessi](math-hs:algebra:complex:problems:equations:ineq)
+
+```` {only} html
+````
+
+```` {only} latex
+**1.** Trova i numeri complessi $z$ che soddisfano $|z| < 3$.
+
+**2.** Determina $z$ per cui $|z - 2| \geq 4$.
+
+**3.** Risolvi $|z + i| \leq 2$.
+
+**4.** Trova $z$ tali che $\text{Re}(z) > \text{Im}(z)$.
+
+**5.** Risolvi $|z - 1| > |z + 1|$.
+
+**6.** Determina il luogo geometrico di $z$ per cui $|z| - |z-2| \leq 3$.
+
+**7.** Risolvi $\text{Re}(z) + \text{Im}(z) \leq 2$.
+
+**8.** Trova $z$ tali che $|z| + |z - 1| \leq 5$.
+
+**9.** Trova $z$ tali che $|z+i| + |z - 1| \leq 5$.
+
+**10.** Risolvi $|z - i| \geq |z + 2|$.
+
+````
+
+### Sistemi
 Soluzione degli [esercizi su sistemi di equazioni con i numeri complessi](math-hs:algebra:complex:problems:equations:sys)
 
 ````{only} html
@@ -310,12 +423,4 @@ $$
     z \cdot w = 6 - i 
     \end{cases}$
 
-````
-
-Soluzione degli [esercizi su disequazioni con i numeri complessi](math-hs:algebra:complex:problems:equations:ineq)
-
-```` {only} html
-````
-
-```` {only} latex
 ````
