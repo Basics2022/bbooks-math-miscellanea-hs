@@ -49,6 +49,29 @@ $$z = x + i y \ ,$$
 con $x, \ y \in \mathbb{R}$.
 ```
 
+(math-hs:algebra:complex:operations-0)=
+## Operazioni con i numeri complessi - in forma cartesiana
+
+(math-hs:algebra:complex:demoivre-euler)=
+## Formula di de Moivre e di Eulero
+
+La formula di **de Moivre**
+
+$$(\cos x + i \sin x)^n = \cos(nx) + i \sin(nx) \ , \quad n \in \mathbb{Z} \ ,$$
+
+per $x \in \mathbb{R}$ e $n \in \mathbb{Z}$.
+
+L'**esponenziale di un numero complesso**, $z \in \mathbb{C}$, è definito estendendo la definizione di esponenziale per i numeri reali ai numeri complessi
+
+$$e^z = \sum_{n = 0}^{+\infty} \frac{z^n}{n!} = \lim_{n \rightarrow +\infty} \left( 1 + \frac{z}{n} \right)^n$$ (complex:complex-exp)
+
+Data questa definizione di esponenziale complesso, si può dimostrare la **formula di Eulero**
+
+$$e^{i \theta} = \cos \theta + i \sin \theta \ ,$$
+
+con $\theta \in \mathbb{R}$.
+
+
 (math-hs:algebra:complex:complex-plane)=
 ## Rappresentazione dei numeri complessi nel piano complesso (Argand-Gauss)
 Ogni numero complesso $z \subset \mathbb{C}$ può essere associato a un punto del piano complesso $\mathbb{C}$; l'uso di coordinate cartesiane o polari per la descrizione dei punti del piano $\mathbb{R}^2$ suggerisce due tipi di rappresentazioni per un numero complesso:
@@ -122,17 +145,24 @@ ricordando l'arbitrarietà nella rappresentazione in forma polare. Si rimanda al
   $$z^p = A^p e^{i ( p \alpha + 2 \pi n p )} = A^{p} e^{i ( p \alpha + 2 \pi m )} \ , \quad m \in \mathbb{Z}$$
 
 #### Radici o potenza $\frac{1}{p}, \ p \in \mathbb{Z}$
+La radice $p$-esima intera, $p \in \mathbb{Z}$, di un numero complesso può essere interpretata come la potenza con esponente $\frac{1}{p}, \ p \in \mathbb{Z}$,
+
+$$z^{\frac{1}{p}} = \left( r e^{i ( \theta + n 2 \pi ) } \right)^\frac{1}{p} = r^{\frac{1}{p}} e^{i \left(\frac{\theta}{p} + 2 \pi \frac{n}{p} \right)} \ , \quad n = \{ 0, 1, \dots, p-1\}$$
+
+e quindi corrisponde ai $p$ numeri complessi con modulo $r^{\frac{1}{p}}$ e argomenti $\frac{\theta}{p} + 2 \pi \frac{n}{p}$.
 
 #### Potenza razionale
-- potenza razionale, $p, q \in \mathbb{Z}$, $q \ne 0$, $\frac{p}{q} = r + \frac{p'}{q}$, con $p' < q$ e $\frac{p'}{q}$ irriducibile,
+La potenza con esponente razionale, $p, q \in \mathbb{Z}$, $q \ne 0$, $\frac{p}{q} = r + \frac{p'}{q}$, con $p' < q$ e $\frac{p'}{q}$ irriducibile, è ben definita per ogni numero complesso a differenza di quanto accade sui numeri reali.
+
+
 
   $$z^{\frac{p}{q}} = A^{\frac{p}{q}} e^{i \frac{p}{q} (\alpha + 2 \pi n)} = A^{\frac{p}{q}} e^{i (\frac{p}{q} \alpha + \frac{p'}{q} 2 \pi n)}$$
 
   Esistono quindi $q$ risultati distinti per $n \in \{ 0, 1, 2, \dots, q-1 \}$.
 
-- potenza con esponente irrazionale: il numero $z^p$ rappresenta infiniti numeri **todo**
-
 ### Altre operazioni
+**Potenza con esponente irrazinoale.** La potenza di un numero complesso $z^p$ con esponente reale irrazionale $p \in \mathbb{R} \backslash \mathbb{Q}$ produce gli infiniti numeri complessi con modulo $r^p$ e *argomento $p \theta + 2 \pi n p$ qualsiasi, per $n \in \mathbb{Z}$*
+
 **Potenza qualsiasi.** Per la discussione di una [potenza qualsiasi](math-hs:algebra:complex:notes:fun:power) di un numero complesso si rimanda alla sezione sulle funzioni di variabile complessa in appendice.
 
 **Esponenziale.** Per la discussione dell'[esponenziale complesso](math-hs:algebra:complex:notes:fun:exp) si rimanda alla sezione sulle funzioni di variabile complessa in appendice.
@@ -216,6 +246,19 @@ Ci si limita a:
               & = (x_1 x_2 + y_1 y_2) + i(x_1 y_2 - x_2 y_1) = \\
               & = \vec{v}_1 \cdot \vec{v}_2 + i \hat{z} \cdot \vec{v}_1 \times \vec{v}_2
   \end{aligned}$$
+
+- le equazioni delle coniche possono essere ricavate:
+  - dalle definizioni in termini di distanza di punti dai fuochi
+    - circonferenza: $|z-z_0| = R$
+    - parabola:      $|z-z_0| = | \text{im}\{z\} - y_d|$, con direttrice parallela ad asse $x$, $z_d = i y_d$
+    - ellisse:       $|z-z_1| + |z-z_2| = 2a$
+    - iperbole:      $||z-z_1| - |z-z_2|| = 2a$
+
+  - in termini di eccentricità, $\frac{\text{dist}(P,F)}{\text{dist}(P,d)} = e$
+
+    $$\frac{|z - z_F|}{|\text{re}(z) - x_d|} = e \ ,$$
+
+    con fuoco in $F$ e direttrice parallela all'asse $y$, $d: x = x_d$.
 
 **todo** *rimandare a esercizi*
 
