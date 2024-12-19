@@ -25,7 +25,7 @@ Soluzione degli [esercizi sui numeri complessi e la geometria nel piano euclideo
 (math-hs:algebra:complex:problems:equations:sol)=
 ## Equazioni e disequazioni con i numeri complessi
 
-
+### Equazioni
 Soluzione degli [esercizi su equazioni con i numeri complessi](math-hs:algebra:complex:problems:equations:sys)
 
 ````{only} html
@@ -114,6 +114,36 @@ $$
 
 ````
 
+### Disequazioni
+Soluzione degli [esercizi su disequazioni con i numeri complessi](math-hs:algebra:complex:problems:equations:ineq)
+
+```` {only} html
+````
+
+```` {only} latex
+**1.** Trova i numeri complessi $z$ che soddisfano $|z| < 3$.
+
+**2.** Determina $z$ per cui $|z - 2| \geq 4$.
+
+**3.** Risolvi $|z + i| \leq 2$.
+
+**4.** Trova $z$ tali che $\text{Re}(z) > \text{Im}(z)$.
+
+**5.** Risolvi $|z - 1| > |z + 1|$.
+
+**6.** Determina il luogo geometrico di $z$ per cui $|z| - |z-2| \leq 3$.
+
+**7.** Risolvi $\text{Re}(z) + \text{Im}(z) \leq 2$.
+
+**8.** Trova $z$ tali che $|z| + |z - 1| \leq 5$.
+
+**9.** Trova $z$ tali che $|z+i| + |z - 1| \leq 5$.
+
+**10.** Risolvi $|z - 2i| \geq |z + 2|$.
+
+````
+
+### Sistemi
 Soluzione degli [esercizi su sistemi di equazioni con i numeri complessi](math-hs:algebra:complex:problems:equations:sys)
 
 ````{only} html
@@ -310,12 +340,4 @@ $$
     z \cdot w = 6 - i 
     \end{cases}$
 
-````
-
-Soluzione degli [esercizi su disequazioni con i numeri complessi](math-hs:algebra:complex:problems:equations:ineq)
-
-```` {only} html
-````
-
-```` {only} latex
 ````
