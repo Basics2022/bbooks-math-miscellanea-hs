@@ -91,9 +91,9 @@ Tra le conseguenze principali di questa definizione
 
 $$x = e^y \qquad \leftrightarrow \qquad y = \ln x$$
 
-o altrimenti, la definizione di logaritmo $\ln ( e^x ) = x$, può essere reinterpretata come $f(x) = e^x$, $f^{-1} \circ f(x) = x $, cioè
+o altrimenti, la definizione di logaritmo $\ln ( e^x ) = x$, può essere reinterpretata come, $f^{-1} \circ f(x) = x $, con
 
-$$f(x) = e^x \qquad \rightarrow f^{-1}(x) = \ln x \ .$$
+$$f(x) = e^x \qquad \rightarrow \qquad f^{-1}(x) = \ln x \ .$$
 
 
 (math-hs:exp:def:hyp)=
