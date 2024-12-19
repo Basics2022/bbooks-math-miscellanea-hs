@@ -76,7 +76,7 @@ Tra le conseguenze principali di questa definizione
 
 - l'integrale della funzione $e^x$ è la stessa funzione
 
-  $$\int e^x \dx = e^x + C \ ,$$
+  $$\int e^x \, dx = e^x + C \ ,$$
 
   all'origine della battuta che non fa ridere **(!)** che spiega la tristezza della funzione $e^x$ alla festa delle funzioni, con il fatto che la funzione $e^x$ non si integra.
 
