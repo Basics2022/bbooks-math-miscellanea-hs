@@ -59,7 +59,7 @@ La formula di **de Moivre** è la relazione
 
 $$(\cos x + i \sin x)^n = \cos(nx) + i \sin(nx) \ , \quad n \in \mathbb{Z} \ ,$$ (complex:demoivre)
 
-per $x \in \mathbb{R}$ e $n \in \mathbb{Z}$. In appendice la [dimostrazione della formula di de Moivre]().
+per $x \in \mathbb{R}$ e $n \in \mathbb{Z}$. In appendice la [dimostrazione della formula di de Moivre](math-hs:algebra:complex:notes:demoivre).
 
 L'**esponenziale di un numero complesso**, $z \in \mathbb{C}$, è definito estendendo la definizione di esponenziale per i numeri reali ai numeri complessi
 
