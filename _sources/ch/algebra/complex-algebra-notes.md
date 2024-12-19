@@ -85,11 +85,11 @@ $$\begin{aligned}
 \end{aligned}$$
 -->
 
-Usando la [formula di de Moivre](math-hs:algebra:complex:notes:demoivre),
+e la [formula di de Moivre](math-hs:algebra:complex:notes:demoivre),
 
 $$( \cos x + i \sin x)^n = \cos( n x ) + i \sin ( n x )$$
 
-si può scrivere
+si può scrivere il termine $a_n$
 
 $$\begin{aligned}
   a_n & = \left( 1 + \frac{x}{n} + i \frac{y}{n} \right)^n = \\
