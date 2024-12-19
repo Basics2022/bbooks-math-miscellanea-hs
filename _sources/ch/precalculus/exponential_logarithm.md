@@ -16,7 +16,20 @@ Nell'ambito dei numeri reali, l'elevamento alla potenza reale $x \in \mathbb{R}$
 
 $$a^x$$
 
-è un'operazione ben definita per ogni valore dell'esponente $x$ solo per base $a \geq 0$.
+è un'operazione ben definita per ogni valore dell'esponente $x$ solo per base $a \geq 0$. Per ogni valore di $a \geq 0$ si può definire quindi la funzione esponenziale con base $a$
+
+$$f(x) = a^x \ ,$$
+
+che è definita per $x \in \mathbb{R}$ e ha immagine $(0, +\infty)$.
+
+**Proprietà.**
+- la [funzione è monotona](math-hs:precalculus:real-functions:types):
+  - se $a > 1$, la funzione è monotona crescente
+  - se $a = 1$, la funzione è costante e uguale a $1$
+  - se $a < 1$, la funzione è monotona decrescente
+- la [funzione è continua](infinitesimal-calculus:continuous-fun), come si vedrà nel capitolo sull'[introduzione all'analisi](infinitesimal-calculus:analysis)
+
+
 
 (math-hs:exp:def:ex)=
 ### Funzione esponenziale, $e^x$
