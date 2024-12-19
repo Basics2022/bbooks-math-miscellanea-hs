@@ -4,7 +4,7 @@
 (math-hs:exp-log:notes:exp)=
 ## Funzione esponenziale
 
-(math-hs:exp-log:proof:convergence)=
+(math-hs:exp-log:notes:convergence)=
 ### Convergenza della serie di funzioni $\sum_{n=0}^{\infty} \frac{x^n}{n!}$ in ogni intervallo limitato
 ```{dropdown} Convergenza della serie di funzioni $\sum_{n=0}^{\infty} \frac{x^n}{n!}$ in ogni intervallo limitato
 
