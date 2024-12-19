@@ -6626,6 +6626,33 @@ con \(x, \ y \in \mathbb{R}\).
 \end{sphinxadmonition}
 
 
+\section{Operazioni con i numeri complessi \sphinxhyphen{} in forma cartesiana}
+\label{\detokenize{ch/algebra/complex-algebra:operazioni-con-i-numeri-complessi-in-forma-cartesiana}}\label{\detokenize{ch/algebra/complex-algebra:math-hs-algebra-complex-operations-0}}
+
+\section{Formula di de Moivre e di Eulero}
+\label{\detokenize{ch/algebra/complex-algebra:formula-di-de-moivre-e-di-eulero}}\label{\detokenize{ch/algebra/complex-algebra:math-hs-algebra-complex-demoivre-euler}}
+\sphinxAtStartPar
+La formula di \sphinxstylestrong{de Moivre}
+\begin{equation*}
+\begin{split}(\cos x + i \sin x)^n = \cos(nx) + i \sin(nx) \ , \quad n \in \mathbb{Z} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+per \(x \in \mathbb{R}\) e \(n \in \mathbb{Z}\).
+
+\sphinxAtStartPar
+L”\sphinxstylestrong{esponenziale di un numero complesso}, \(z \in \mathbb{C}\), è definito estendendo la definizione di esponenziale per i numeri reali ai numeri complessi
+\begin{equation}\label{equation:ch/algebra/complex-algebra:complex:complex-exp}
+\begin{split}e^z = \sum_{n = 0}^{+\infty} \frac{z^n}{n!} = \lim_{n \rightarrow +\infty} \left( 1 + \frac{z}{n} \right)^n\end{split}
+\end{equation}
+\sphinxAtStartPar
+Data questa definizione di esponenziale complesso, si può dimostrare la \sphinxstylestrong{formula di Eulero}
+\begin{equation*}
+\begin{split}e^{i \theta} = \cos \theta + i \sin \theta \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+con \(\theta \in \mathbb{R}\).
+
+
 \section{Rappresentazione dei numeri complessi nel piano complesso (Argand\sphinxhyphen{}Gauss)}
 \label{\detokenize{ch/algebra/complex-algebra:rappresentazione-dei-numeri-complessi-nel-piano-complesso-argand-gauss}}\label{\detokenize{ch/algebra/complex-algebra:math-hs-algebra-complex-complex-plane}}
 \sphinxAtStartPar
@@ -6664,6 +6691,9 @@ Le due rappresentazioni non sono equivalenti. Mentre la rappresentazione cartesi
 \sphinxAtStartPar
 Si presentano alcune opearazioni sui numeri complessi.
 
+
+\subsection{Somma e prodotto}
+\label{\detokenize{ch/algebra/complex-algebra:somma-e-prodotto}}
 \sphinxAtStartPar
 \sphinxstylestrong{Somma.} La somma di due numeri complessi è il numero complesso
 \begin{equation*}
@@ -6678,6 +6708,9 @@ Si presentano alcune opearazioni sui numeri complessi.
     & = (x_1 + i y_1 ) (x_2 + i y_2) = (x_1 x_2 - y_1 y_2)+i(x_1 y_2 + y_1 x_2) \\
   \end{aligned}\end{split}
 \end{equation*}
+
+\subsection{Complesso coniugato e}
+\label{\detokenize{ch/algebra/complex-algebra:complesso-coniugato-e}}
 \sphinxAtStartPar
 \sphinxstylestrong{Complesso coniugato.} Il complesso coniugato \(z^*\) di un numero compless \(z \in \mathbb{C}\) è il numero complesso con stessa parte reale e parte immaginaria opposta. Analogamente ha stesso modulo e argomento (definito tra \(-\pi\) e \(\pi\)) opposto
 \begin{equation*}
@@ -6700,6 +6733,9 @@ E” immediato {\hyperref[\detokenize{ch/algebra/complex-algebra-problems:math-h
     & = \sqrt{r e^{-i\theta} r e^{i\theta}} = r
   \end{aligned}\end{split}
 \end{equation*}
+
+\subsection{Potenze e radici}
+\label{\detokenize{ch/algebra/complex-algebra:potenze-e-radici}}
 \sphinxAtStartPar
 \sphinxstylestrong{Potenza.} Si presenta l’elevamento a potenza di un numero complesso,
 \begin{equation*}
@@ -6707,27 +6743,39 @@ E” immediato {\hyperref[\detokenize{ch/algebra/complex-algebra-problems:math-h
 \end{equation*}
 \sphinxAtStartPar
 ricordando l’arbitrarietà nella rappresentazione in forma polare. Si rimanda all’appendice per il caso generale, mentre qui si presentano i casi con:
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-potenza intera, \(p \in \mathbb{Z}\).
-\begin{equation*}
+
+
+\subsubsection{Potenza intera, \protect\(p \in \mathbb{Z}\protect\).}
+\label{\detokenize{ch/algebra/complex-algebra:potenza-intera-p-in-mathbb-z}}\begin{equation*}
 \begin{split}z^p = A^p e^{i ( p \alpha + 2 \pi n p )} = A^{p} e^{i ( p \alpha + 2 \pi m )} \ , \quad m \in \mathbb{Z}\end{split}
 \end{equation*}
-\item {} 
+
+\subsubsection{Radici o potenza \protect\(\frac{1}{p}, \ p \in \mathbb{Z}\protect\)}
+\label{\detokenize{ch/algebra/complex-algebra:radici-o-potenza-frac-1-p-p-in-mathbb-z}}
 \sphinxAtStartPar
-potenza razionale, \(p, q \in \mathbb{Z}\), \(q \ne 0\), \(\frac{p}{q} = r + \frac{p'}{q}\), con \(p' < q\) e \(\frac{p'}{q}\) irriducibile,
+La radice \(p\)\sphinxhyphen{}esima intera, \(p \in \mathbb{Z}\), di un numero complesso può essere interpretata come la potenza con esponente \(\frac{1}{p}, \ p \in \mathbb{Z}\),
+\begin{equation*}
+\begin{split}z^{\frac{1}{p}} = \left( r e^{i ( \theta + n 2 \pi ) } \right)^\frac{1}{p} = r^{\frac{1}{p}} e^{i \left(\frac{\theta}{p} + 2 \pi \frac{n}{p} \right)} \ , \quad n = \{ 0, 1, \dots, p-1\}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e quindi corrisponde ai \(p\) numeri complessi con modulo \(r^{\frac{1}{p}}\) e argomenti \(\frac{\theta}{p} + 2 \pi \frac{n}{p}\).
+
+
+\subsubsection{Potenza razionale}
+\label{\detokenize{ch/algebra/complex-algebra:potenza-razionale}}
+\sphinxAtStartPar
+La potenza con esponente razionale, \(p, q \in \mathbb{Z}\), \(q \ne 0\), \(\frac{p}{q} = r + \frac{p'}{q}\), con \(p' < q\) e \(\frac{p'}{q}\) irriducibile, è ben definita per ogni numero complesso a differenza di quanto accade sui numeri reali.
 \begin{equation*}
 \begin{split}z^{\frac{p}{q}} = A^{\frac{p}{q}} e^{i \frac{p}{q} (\alpha + 2 \pi n)} = A^{\frac{p}{q}} e^{i (\frac{p}{q} \alpha + \frac{p'}{q} 2 \pi n)}\end{split}
 \end{equation*}
 \sphinxAtStartPar
 Esistono quindi \(q\) risultati distinti per \(n \in \{ 0, 1, 2, \dots, q-1 \}\).
 
-\item {} 
-\sphinxAtStartPar
-potenza con esponente irrazionale: il numero \(z^p\) rappresenta infiniti numeri \sphinxstylestrong{todo}
 
-\end{itemize}
+\subsection{Altre operazioni}
+\label{\detokenize{ch/algebra/complex-algebra:altre-operazioni}}
+\sphinxAtStartPar
+\sphinxstylestrong{Potenza con esponente irrazinoale.} La potenza di un numero complesso \(z^p\) con esponente reale irrazionale \(p \in \mathbb{R} \backslash \mathbb{Q}\) produce gli infiniti numeri complessi con modulo \(r^p\) e \sphinxstyleemphasis{argomento \(p \theta + 2 \pi n p\) qualsiasi, per \(n \in \mathbb{Z}\)}
 
 \sphinxAtStartPar
 \sphinxstylestrong{Potenza qualsiasi.} Per la discussione di una {\hyperref[\detokenize{ch/algebra/complex-algebra-notes:math-hs-algebra-complex-notes-fun-power}]{\sphinxcrossref{\DUrole{std,std-ref}{potenza qualsiasi}}}} di un numero complesso si rimanda alla sezione sulle funzioni di variabile complessa in appendice.
@@ -6859,6 +6907,43 @@ osservare che, dati i due numeri complessi \(z_1 = x_1 + i y_1\), \(z_2 = x_2 + 
               & = \vec{v}_1 \cdot \vec{v}_2 + i \hat{z} \cdot \vec{v}_1 \times \vec{v}_2
   \end{aligned}\end{split}
 \end{equation*}
+\item {} 
+\sphinxAtStartPar
+le equazioni delle coniche possono essere ricavate:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+dalle definizioni in termini di distanza di punti dai fuochi
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+circonferenza: \(|z-z_0| = R\)
+
+\item {} 
+\sphinxAtStartPar
+parabola:      \(|z-z_0| = | \text{im}\{z\} - y_d|\), con direttrice parallela ad asse \(x\), \(z_d = i y_d\)
+
+\item {} 
+\sphinxAtStartPar
+ellisse:       \(|z-z_1| + |z-z_2| = 2a\)
+
+\item {} 
+\sphinxAtStartPar
+iperbole:      \(||z-z_1| - |z-z_2|| = 2a\)
+
+\end{itemize}
+
+\item {} 
+\sphinxAtStartPar
+in termini di eccentricità, \(\frac{\text{dist}(P,F)}{\text{dist}(P,d)} = e\)
+\begin{equation*}
+\begin{split}\frac{|z - z_F|}{|\text{re}(z) - x_d|} = e \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+con fuoco in \(F\) e direttrice parallela all’asse \(y\), \(d: x = x_d\).
+
+\end{itemize}
+
 \end{itemize}
 
 \sphinxAtStartPar
@@ -6888,7 +6973,7 @@ Le equazioni e le disequazioni con i numeri complessi possono essere ricondotti 
 \subsection{Rappresentazione dei numeri complessi nel piano complesso (Argand\sphinxhyphen{}Gauss)}
 \label{\detokenize{ch/algebra/complex-algebra-problems:rappresentazione-dei-numeri-complessi-nel-piano-complesso-argand-gauss}}\label{\detokenize{ch/algebra/complex-algebra-problems:math-hs-algebra-complex-problems-complex-plane}}\phantomsection \label{exercise:ch/algebra/complex-algebra-problems-exercise-0}
 
-\begin{sphinxadmonition}{note}{Exercise 20.7.1}
+\begin{sphinxadmonition}{note}{Exercise 20.9.1}
 
 
 \begin{enumerate}
@@ -6922,7 +7007,7 @@ Trova le radici cubiche di \( z = 8 \) e rappresentale nel piano complesso.
 \subsection{Operazioni con i numeri complessi}
 \label{\detokenize{ch/algebra/complex-algebra-problems:operazioni-con-i-numeri-complessi}}\label{\detokenize{ch/algebra/complex-algebra-problems:math-hs-algebra-complex-problems-operations}}\phantomsection \label{exercise:ch/algebra/complex-algebra-problems-exercise-1}
 
-\begin{sphinxadmonition}{note}{Exercise 20.7.2 (Parte reale e parte immaginaria)}
+\begin{sphinxadmonition}{note}{Exercise 20.9.2 (Parte reale e parte immaginaria)}
 
 
 
@@ -6948,7 +7033,7 @@ Dato il numero \(z = \text{re}\{z\} + i \text{im}\{z\} = x + i y\),
 \subsection{Teorema fondamentale dell’algebra}
 \label{\detokenize{ch/algebra/complex-algebra-problems:teorema-fondamentale-dell-algebra}}\label{\detokenize{ch/algebra/complex-algebra-problems:math-hs-algebra-complex-fund-thm}}\phantomsection \label{exercise:ch/algebra/complex-algebra-problems-exercise-2}
 
-\begin{sphinxadmonition}{note}{Exercise 20.7.3}
+\begin{sphinxadmonition}{note}{Exercise 20.9.3}
 
 
 \begin{enumerate}
@@ -6998,9 +7083,9 @@ Determina la radice principale di \(z = \sqrt[3]{-8}\) in forma polare.
 
 
 \subsection{Numeri complessi e geometria nel piano euclideo}
-\label{\detokenize{ch/algebra/complex-algebra-problems:numeri-complessi-e-geometria-nel-piano-euclideo}}\label{\detokenize{ch/algebra/complex-algebra-problems:math-hs-algebra-complex-problems-geometry-2d}}\phantomsection \label{exercise:ch/algebra/complex-algebra-problems-exercise-3}
+\label{\detokenize{ch/algebra/complex-algebra-problems:numeri-complessi-e-geometria-nel-piano-euclideo}}\label{\detokenize{ch/algebra/complex-algebra-problems:math-hs-algebra-complex-problems-geometry-2d}}\phantomsection \label{exercise:math-hs:algebra:complex:problems:geometry-2d:ex}
 
-\begin{sphinxadmonition}{note}{Exercise 20.7.4}
+\begin{sphinxadmonition}{note}{Exercise 20.9.4}
 
 
 \begin{enumerate}
@@ -7050,9 +7135,12 @@ Dimostra che i punti \(z_1 = 1 + i\), \(z_2 = -1 - i\), e \(z_3 = 0\) sono colli
 
 
 \subsection{Equazioni e disequazioni con i numeri complessi}
-\label{\detokenize{ch/algebra/complex-algebra-problems:equazioni-e-disequazioni-con-i-numeri-complessi}}\label{\detokenize{ch/algebra/complex-algebra-problems:math-hs-algebra-complex-problems-equations}}\phantomsection \label{exercise:ch/algebra/complex-algebra-problems-exercise-4}
+\label{\detokenize{ch/algebra/complex-algebra-problems:equazioni-e-disequazioni-con-i-numeri-complessi}}\label{\detokenize{ch/algebra/complex-algebra-problems:math-hs-algebra-complex-problems-equations}}
 
-\begin{sphinxadmonition}{note}{Exercise 20.7.5 (Equazioni)}
+\subsubsection{Equazioni}
+\label{\detokenize{ch/algebra/complex-algebra-problems:equazioni}}\label{\detokenize{ch/algebra/complex-algebra-problems:math-hs-algebra-complex-problems-equations-eq}}\phantomsection \label{exercise:ch/algebra/complex-algebra-problems-exercise-4}
+
+\begin{sphinxadmonition}{note}{Exercise 20.9.5 (Equazioni)}
 
 
 
@@ -7128,9 +7216,12 @@ Risolvi \(|z + i| = 3\) per \(z \in \mathbb{C}\).
 
 
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/algebra/complex-algebra-problems-exercise-5}
 
-\begin{sphinxadmonition}{note}{Exercise 20.7.6 (Sistemi di equazioni)}
+
+\subsubsection{Sistemi di equazioni}
+\label{\detokenize{ch/algebra/complex-algebra-problems:sistemi-di-equazioni}}\label{\detokenize{ch/algebra/complex-algebra-problems:math-hs-algebra-complex-problems-equations-sys}}\phantomsection \label{exercise:ch/algebra/complex-algebra-problems-exercise-5}
+
+\begin{sphinxadmonition}{note}{Exercise 20.9.6 (Sistemi di equazioni)}
 
 
 \begin{enumerate}
@@ -7138,7 +7229,7 @@ Risolvi \(|z + i| = 3\) per \(z \in \mathbb{C}\).
 \item {} 
 \sphinxAtStartPar
 Risolvi il sistema:\\
-\$\(\begin{cases} 
+\(\begin{cases} 
 z + \overline{z} = 4 \\
 |z| = 5 
 \end{cases}\)
@@ -7217,9 +7308,12 @@ z \cdot w = 6 - i
 
 \end{enumerate}
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/algebra/complex-algebra-problems-exercise-6}
 
-\begin{sphinxadmonition}{note}{Exercise 20.7.7 (Disequazioni)}
+
+\subsubsection{Disequazioni}
+\label{\detokenize{ch/algebra/complex-algebra-problems:disequazioni}}\label{\detokenize{ch/algebra/complex-algebra-problems:math-hs-algebra-complex-problems-equations-ineq}}\phantomsection \label{exercise:ch/algebra/complex-algebra-problems-exercise-6}
+
+\begin{sphinxadmonition}{note}{Exercise 20.9.7 (Disequazioni)}
 
 
 \begin{enumerate}
@@ -7434,6 +7528,77 @@ Per \(m := -n \in \mathbb{N}\), la formula di de Moivre può essere verificata u
    & = \frac{\cos( m x) - i \sin (m x)}{\underbrace{\cos^2(mx) + \sin^2(mx)}_{=1}} = \cos(mx) - i \sin(mx) = \cos(nx) + i \sin(nx) \ .
 \end{aligned}\end{split}
 \end{equation*}
+\sphinxstepscope
+
+
+\section{Problemi \sphinxhyphen{} soluzioni}
+\label{\detokenize{ch/algebra/complex-algebra-sol:problemi-soluzioni}}\label{\detokenize{ch/algebra/complex-algebra-sol:math-hs-algebra-complex-problems}}\label{\detokenize{ch/algebra/complex-algebra-sol::doc}}
+
+\subsection{Definizioni}
+\label{\detokenize{ch/algebra/complex-algebra-sol:definizioni}}\label{\detokenize{ch/algebra/complex-algebra-sol:math-hs-algebra-complex-problems-def}}
+
+\subsection{Rappresentazione dei numeri complessi nel piano complesso (Argand\sphinxhyphen{}Gauss)}
+\label{\detokenize{ch/algebra/complex-algebra-sol:rappresentazione-dei-numeri-complessi-nel-piano-complesso-argand-gauss}}\label{\detokenize{ch/algebra/complex-algebra-sol:math-hs-algebra-complex-problems-complex-plane-sol}}
+
+\subsection{Operazioni con i numeri complessi}
+\label{\detokenize{ch/algebra/complex-algebra-sol:operazioni-con-i-numeri-complessi}}\label{\detokenize{ch/algebra/complex-algebra-sol:math-hs-algebra-complex-problems-operations-sol}}
+\sphinxAtStartPar
+Soluzione degli {\hyperref[\detokenize{ch/algebra/complex-algebra-problems:math-hs-algebra-complex-problems-operations-cc-re-im}]{\sphinxcrossref{\DUrole{std,std-ref}{esercizi sulle operazioni con i numeri complessi}}}}.
+
+
+\subsection{Teorema fondamentale dell’algebra}
+\label{\detokenize{ch/algebra/complex-algebra-sol:teorema-fondamentale-dell-algebra}}\label{\detokenize{ch/algebra/complex-algebra-sol:math-hs-algebra-complex-fund-thm-sol}}
+\sphinxAtStartPar
+Soluzione degli {\hyperref[\detokenize{ch/algebra/complex-algebra-problems:math-hs-algebra-complex-fund-thm-ex}]{\sphinxcrossref{\DUrole{std,std-ref}{esercizi sul teorema fondmaentale dell’algebra}}}}.
+
+
+\subsection{Numeri complessi e geometria nel piano euclideo}
+\label{\detokenize{ch/algebra/complex-algebra-sol:numeri-complessi-e-geometria-nel-piano-euclideo}}\label{\detokenize{ch/algebra/complex-algebra-sol:math-hs-algebra-complex-problems-geometry-2d-sol}}
+\sphinxAtStartPar
+Soluzione degli {\hyperref[\detokenize{ch/algebra/complex-algebra-problems:math-hs:algebra:complex:problems:geometry-2d:ex}]{\sphinxcrossref{\DUrole{std,std-ref}{esercizi sui numeri complessi e la geometria nel piano euclideo}}}}.
+
+
+\subsection{Equazioni e disequazioni con i numeri complessi}
+\label{\detokenize{ch/algebra/complex-algebra-sol:equazioni-e-disequazioni-con-i-numeri-complessi}}\label{\detokenize{ch/algebra/complex-algebra-sol:math-hs-algebra-complex-problems-equations-sol}}
+\sphinxAtStartPar
+Soluzione degli {\hyperref[\detokenize{ch/algebra/complex-algebra-problems:math-hs-algebra-complex-problems-equations-sys}]{\sphinxcrossref{\DUrole{std,std-ref}{esercizi su equazioni con i numeri complessi}}}}
+\begin{equation*}
+\begin{split}
+\begin{minipage}[t]{.55\textwidth}
+  \vspace{0pt}
+La prima equazione si riduce a $2 \text{re}\{z\} = 6$. Usando la rappresentazione cartesiana, $z = x + i y$, il sistema può essere riscritto come
+\begin{equation}\begin{cases}
+  x = 3 \\
+  \sqrt{x^2 +y^2} = 5
+\end{cases}\end{equation}
+Sostituendo la prima nella seconda si trova $\sqrt{9 + y^2} = 5$; elevando al quadrato i due numeri positivi, $y^2 = 25-9=16$ e quindi $y = \mp 4$. Il problema ha quindi due soluzioni
+\newline
+\textbf{Interpretazione grafica.} Le due equazioni corrispondono all'equazione della retta di equazione $x = 3$ e della circonferenza centrata nell'origine di raggio $5$. La soluzione del sistema coincide con la ricerca dei punti di intersezione di queste due curve.
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/tikz/complex/ex-eq-01.pdf}
+\end{minipage}
+\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Soluzione degli {\hyperref[\detokenize{ch/algebra/complex-algebra-problems:math-hs-algebra-complex-problems-equations-sys}]{\sphinxcrossref{\DUrole{std,std-ref}{esercizi su sistemi di equazioni con i numeri complessi}}}}
+\begin{equation*}
+\begin{split}
+\begin{minipage}[t]{.55\textwidth}
+  \vspace{0pt}
+\end{minipage}
+\hspace{.05\textwidth} %
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/tikz/complex/ex-eq-01.pdf}
+\end{minipage}
+\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Soluzione degli {\hyperref[\detokenize{ch/algebra/complex-algebra-problems:math-hs-algebra-complex-problems-equations-ineq}]{\sphinxcrossref{\DUrole{std,std-ref}{esercizi su disequazioni con i numeri complessi}}}}
+
 \sphinxstepscope
 
 \begin{sphinxuseclass}{sd-container-fluid}

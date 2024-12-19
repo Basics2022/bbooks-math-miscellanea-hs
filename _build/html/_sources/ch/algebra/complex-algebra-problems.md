@@ -46,6 +46,8 @@ $$\begin{aligned}
 
 (math-hs:algebra:complex:fund-thm)=
 ## Teorema fondamentale dell'algebra
+
+(math-hs:algebra:complex:fund-thm:ex)=
 ```{exercise}
 1. Dimostra che $z^2 + 1 = 0$ ha due soluzioni complesse e determinane i valori.
 2. Risolvi $z^3 - 8 = 0$ e rappresenta le radici nel piano complesso.
@@ -62,6 +64,8 @@ $$\begin{aligned}
 (math-hs:algebra:complex:problems:geometry-2d)=
 ## Numeri complessi e geometria nel piano euclideo
 ```{exercise}
+:label: math-hs:algebra:complex:problems:geometry-2d:ex
+
 1. Disegna il punto $z = 2 + 3i$ e calcola la distanza dall'origine.
 2. Trova il punto medio del segmento che collega $z_1 = 1 + 2i$ e $z_2 = 3 + 4i$.
 3. Verifica che i punti $z_1 = 0$, $z_2 = 3 + 4i$, e $z_3 = 6 + 0i$ formano un triangolo rettangolo.
@@ -74,10 +78,13 @@ $$\begin{aligned}
 10. Dimostra che i punti $z_1 = 1 + i$, $z_2 = -1 - i$, e $z_3 = 0$ sono collineari.
 ```
 
-
 (math-hs:algebra:complex:problems:equations)=
 ## Equazioni e disequazioni con i numeri complessi
+
+(math-hs:algebra:complex:problems:equations:eq)=
+### Equazioni
 ```{exercise} Equazioni
+
 Risolvere le seguenti equazioni
 
 1. Risolvi $|z| = 2$ e rappresenta graficamente le soluzioni.
@@ -101,9 +108,13 @@ Risolvere le seguenti equazioni
 -->
 ```
 
+(math-hs:algebra:complex:problems:equations:sys)=
+### Sistemi di equazioni
+
 ```{exercise} Sistemi di equazioni
+
 1. Risolvi il sistema:  
-   $$\begin{cases} 
+   $\begin{cases} 
    z + \overline{z} = 4 \\
    |z| = 5 
    \end{cases}$
@@ -163,7 +174,11 @@ Risolvere le seguenti equazioni
     \end{cases}$
 ```
 
+(math-hs:algebra:complex:problems:equations:ineq)=
+### Disequazioni
+
 ```{exercise} Disequazioni
+
 1. Trova i numeri complessi $z$ che soddisfano $|z| < 3$.
 2. Determina $z$ per cui $|z - 2| \geq 4$.
 3. Risolvi $|z + i| \leq 2$.
