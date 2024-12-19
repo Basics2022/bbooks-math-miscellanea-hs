@@ -543,18 +543,19 @@ document.write(`
 </li>
 <li><p>la <a class="reference internal" href="../infinitesimal_calculus/analysis.html#infinitesimal-calculus-continuous-fun"><span class="std std-ref">funzione è continua</span></a>, come si vedrà nel capitolo sull”<a class="reference internal" href="../infinitesimal_calculus/analysis.html#infinitesimal-calculus-analysis"><span class="std std-ref">introduzione all’analisi</span></a></p></li>
 </ul>
-<p>Tra tutte le basi, la funzione esponenziale con base <span class="math notranslate nohighlight">\(e\)</span> di Eulero (o di Nepero) svolte un ruolo fondamentale in matematica e nelle scienze in generale, come ci sarà l’occasione di iniziare ad apprezzare nelle parti sul:</p>
+<p>Tra tutte le basi, la funzione esponenziale con base <span class="math notranslate nohighlight">\(e\)</span> di Eulero (o di Nepero) svolge un ruolo fondamentale in matematica e nelle scienze in generale, sia nell’ambito dei numeri reali sia nell’ambito dei numeri complessi, come ci sarà l’occasione di iniziare ad apprezzare nelle parti sul:</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="../calculus.html#math-hs-calculus"><span class="std std-ref">calcolo</span></a>: <a class="reference internal" href="../infinitesimal_calculus/analysis.html#infinitesimal-calculus-limits"><span class="std std-ref">limiti</span></a>, <a class="reference internal" href="../infinitesimal_calculus/derivatives.html#infinitesimal-calculus-derivatives"><span class="std std-ref">derivate</span></a>, <a class="reference internal" href="../infinitesimal_calculus/integrals.html#infinitesimal-calculus-integrals"><span class="std std-ref">integrali</span></a>, <a class="reference internal" href="../ode.html#ode-hs"><span class="std std-ref">equazioni differenziali</span></a></p></li>
 <li><p><a class="reference internal" href="../algebra/complex-algebra.html#math-hs-algebra-complex"><span class="std std-ref">numeri complessi</span></a></p></li>
 </ul>
 <p>Vale dunque la pena introdurre la funzione esponenziale <span class="math notranslate nohighlight">\(e^x\)</span>, e discuterne alcune definizioni equivalenti e proprietà fondamentali che permettono di comprendere l’origine della centralità di questa funzione in (quasi) tutti gli ambiti della matematica e delle scienze.</p>
+<p>In questo capitolo ci si concentra sulla funzione esponenziale sul campo dei numeri reali, mentre si rimanda al capitolo sui <a class="reference internal" href="../algebra/complex-algebra.html#math-hs-algebra-complex"><span class="std std-ref">numeri complessi</span></a> per la definizione dell’esponenziale complesso, e al capitolo sulle <a class="reference internal" href="../ode.html#ode-hs"><span class="std std-ref">equazioni differenziali ordinarie</span></a> per le prime applicazioni fondamentali dell’esponenziale, con esponenti reali o complessi.</p>
 </div>
 <div class="section" id="funzione-esponenziale-e-x">
 <span id="math-hs-exp-def-ex"></span><h3><span class="section-number">19.1.2. </span>Funzione esponenziale, <span class="math notranslate nohighlight">\(e^x\)</span><a class="headerlink" href="#funzione-esponenziale-e-x" title="Permalink to this heading">#</a></h3>
 <p><strong>Definizione.</strong> Per ogni <span class="math notranslate nohighlight">\(x \in \mathbb{R}\)</span>, è possibile dare diverse definizioni equivalenti della funzione esponenziale <span class="math notranslate nohighlight">\(f(x) = e^x\)</span>, che può:</p>
 <ol class="arabic simple">
-<li><p>essere intesa come l’elevamento a potenza della <a class="reference internal" href="../series.html#math-hs-series-e-euler"><span class="std std-ref"><span class="math notranslate nohighlight">\(e\)</span> di Eulero</span></a> con la variabile indipendente <span class="math notranslate nohighlight">\(x\)</span> come esponente.</p></li>
+<li><p>essere intesa come l’elevamento a potenza della <a class="reference internal" href="../series.html#math-hs-series-e-euler"><span class="std std-ref"><span class="math notranslate nohighlight">\(e\)</span> di Eulero</span></a> con la variabile indipendente <span class="math notranslate nohighlight">\(x\)</span> come esponente. Questa definizione «agnostica» considera <span class="math notranslate nohighlight">\(e\)</span> un numero con un determinato valore, approssimato <span class="math notranslate nohighlight">\(2.718281828\text{e poi la magia finisce}\)</span>, tale da soddisfare le proprietà che si incontreranno nel percorso; queste proprietà sono diretta conseguenza e possono essere dimostrate grazie alle altre due definizioni equivalenti:</p></li>
 <li><p>essere definita come limite della successione di funzioni <span class="math notranslate nohighlight">\(\left( 1 + \frac{x}{n} \right)^n\)</span></p></li>
 </ol>
 <div class="math notranslate nohighlight">
@@ -577,12 +578,21 @@ document.write(`
 \[\begin{split}\begin{aligned}
     e^0 &amp; = 1 \\
     e^1 &amp; = e \\
-  e^{x+y} &amp; = e^x \, e^y \ .
+    e^{x+y} &amp; = e^x \, e^y \ .
   \end{aligned}\end{split}\]</div>
+<p>Una conseguenza indiretta è l’equivalenza della definizione «agnostica» 1. e delle altre due.</p>
 </li>
+</ul>
+<p>Tra le conseguenze principali di questa definizione</p>
+<ul>
 <li><p>la derivata della funzione <span class="math notranslate nohighlight">\(e^x\)</span> è <span class="math notranslate nohighlight">\(e^x\)</span>, ed è una delle <a class="reference internal" href="../infinitesimal_calculus/derivatives.html#infinitesimal-calculus-derivatives-fund"><span class="std std-ref">derivate fondamentali</span></a> del <a class="reference internal" href="../infinitesimal_calculus/derivatives.html#infinitesimal-calculus-derivatives"><span class="std std-ref">calcolo differenziale</span></a>,</p>
 <div class="math notranslate nohighlight">
 \[\frac{d}{dx} e^x = e^x \ .\]</div>
+</li>
+<li><p>l’integrale della funzione <span class="math notranslate nohighlight">\(e^x\)</span> è la stessa funzione</p>
+<div class="math notranslate nohighlight">
+\[\int e^x \dx = e^x + C \ ,\]</div>
+<p>all’origine della battuta che non fa ridere <strong>(!)</strong> che spiega la tristezza della funzione <span class="math notranslate nohighlight">\(e^x\)</span> alla festa delle funzioni, con il fatto che la funzione <span class="math notranslate nohighlight">\(e^x\)</span> non si integra.</p>
 </li>
 </ul>
 <!--
