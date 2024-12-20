@@ -118,7 +118,10 @@ Le funzioni iperboliche hanno regole analoghe - ma non identiche - alle funzioni
 
 - Somma e sottrazione
 
-  $$$$
+  $$\begin{aligned}
+    \cosh(x \mp y) & = \cosh x \cosh y \mp \sinh x \sinh y \\
+    \sinh(x \mp y) & = \sinh x \cosh y \mp \cosh x \sinh y 
+  \end{aligned}$$
 
 <!--
 ## Funzione esponenziale e logaritmo di variabile complessa
