@@ -35,9 +35,34 @@ avendo usato $\sum_{k=n+1}^{\infty} 2^{-k} = 2^{-n-1} \sum_{k=0}^{\infty} 2^{-k}
 Scegliendo $N > \log_2 \left( \frac{1}{\varepsilon} \frac{(2\tilde{M})^{2 \tilde{M}}}{(2 \tilde{M})!)} \right)$, per ogni $n > N$ si ha 
 
 $$\left| \sum_{k=n+1}^{\infty} \frac{x^k}{k!} \right| <  \frac{(2 \tilde{M})^{2 \tilde{M}}}{(2\tilde{M})!} 2^{-n} <  \frac{(2 \tilde{M})^{2 \tilde{M}}}{(2\tilde{M})!} 2^{-N} < \varepsilon \ .$$
-
-````{only} html
 ```
+
+````{only} latex
+Per dimostrare la convergenza uniforme di $\sum_{k=0}^{\infty} \frac{x^k}{k!}$ a $e^x$ in ogni intervallo limitato $|x| < M$, è richiesto di dimostrare che per ogni $\varepsilon > 0$ esiste $N \in \mathbb{N}$ tale che 
+
+$$|e^x - S_n(x)| < \varepsilon \ , \qquad \forall |x| < M $$
+
+per tutti gli $n > N$. Bisogna quindi dimostrare che 
+
+$$\left| \sum_{k=n+1}^{\infty} \frac{x^k}{k!} \right| < \varepsilon \ .$$
+
+Definendo $\tilde{M} = \max\{ 1, M \}$
+
+$$\left| \sum_{k=n+1}^{\infty} \frac{x^k}{k!} \right| < \sum_{k=n+1}^{\infty} \frac{\tilde{M}^k}{k!}$$
+
+e scegliendo $k > 2 \tilde{M}$, in maniera da poter scrivere 
+
+$$\frac{\tilde{M}^k}{k!} = \frac{\tilde{M}^{2 \tilde{M}}}{( 2 \tilde{M})!} \frac{\tilde{M}}{2\tilde{M}+1} \dots \frac{\tilde{M}}{k} <  \frac{\tilde{M}^{2 \tilde{M}}}{( 2 \tilde{M})!} 2^{-(k - \tilde{M})} = \frac{(2 \tilde{M})^{2 \tilde{M}}}{(2 \tilde{M})!} 2^{-k}$$
+
+e quindi
+
+$$\sum_{k=n+1}^{\infty} \frac{\tilde{M}}{k!} < \sum_{k=n+1}^{\infty} \frac{(2 \tilde{M})^{2 \tilde{M}}}{(2\tilde{M})!} 2^{-k} =  \frac{(2 \tilde{M})^{2 \tilde{M}}}{(2\tilde{M})!} 2^{-n}$$
+
+avendo usato $\sum_{k=n+1}^{\infty} 2^{-k} = 2^{-n-1} \sum_{k=0}^{\infty} 2^{-k} = 2^{-n-1} \cdot 2 = 2^{-n}$.
+
+Scegliendo $N > \log_2 \left( \frac{1}{\varepsilon} \frac{(2\tilde{M})^{2 \tilde{M}}}{(2 \tilde{M})!)} \right)$, per ogni $n > N$ si ha 
+
+$$\left| \sum_{k=n+1}^{\infty} \frac{x^k}{k!} \right| <  \frac{(2 \tilde{M})^{2 \tilde{M}}}{(2\tilde{M})!} 2^{-n} <  \frac{(2 \tilde{M})^{2 \tilde{M}}}{(2\tilde{M})!} 2^{-N} < \varepsilon \ .$$
 ````
 
 

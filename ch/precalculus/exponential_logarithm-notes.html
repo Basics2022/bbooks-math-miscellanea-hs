@@ -547,6 +547,32 @@ Convergenza della serie di funzioni <span class="math notranslate nohighlight">\
 <div class="math notranslate nohighlight">
 \[\left| \sum_{k=n+1}^{\infty} \frac{x^k}{k!} \right| &lt;  \frac{(2 \tilde{M})^{2 \tilde{M}}}{(2\tilde{M})!} 2^{-n} &lt;  \frac{(2 \tilde{M})^{2 \tilde{M}}}{(2\tilde{M})!} 2^{-N} &lt; \varepsilon \ .\]</div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+````{only} latex
+Per dimostrare la convergenza uniforme di $\sum_{k=0}^{\infty} \frac{x^k}{k!}$ a $e^x$ in ogni intervallo limitato $|x| &lt; M$, è richiesto di dimostrare che per ogni $\varepsilon &gt; 0$ esiste $N \in \mathbb{N}$ tale che 
+
+$$|e^x - S_n(x)| &lt; \varepsilon \ , \qquad \forall |x| &lt; M $$
+
+per tutti gli $n &gt; N$. Bisogna quindi dimostrare che 
+
+$$\left| \sum_{k=n+1}^{\infty} \frac{x^k}{k!} \right| &lt; \varepsilon \ .$$
+
+Definendo $\tilde{M} = \max\{ 1, M \}$
+
+$$\left| \sum_{k=n+1}^{\infty} \frac{x^k}{k!} \right| &lt; \sum_{k=n+1}^{\infty} \frac{\tilde{M}^k}{k!}$$
+
+e scegliendo $k &gt; 2 \tilde{M}$, in maniera da poter scrivere 
+
+$$\frac{\tilde{M}^k}{k!} = \frac{\tilde{M}^{2 \tilde{M}}}{( 2 \tilde{M})!} \frac{\tilde{M}}{2\tilde{M}+1} \dots \frac{\tilde{M}}{k} &lt;  \frac{\tilde{M}^{2 \tilde{M}}}{( 2 \tilde{M})!} 2^{-(k - \tilde{M})} = \frac{(2 \tilde{M})^{2 \tilde{M}}}{(2 \tilde{M})!} 2^{-k}$$
+
+e quindi
+
+$$\sum_{k=n+1}^{\infty} \frac{\tilde{M}}{k!} &lt; \sum_{k=n+1}^{\infty} \frac{(2 \tilde{M})^{2 \tilde{M}}}{(2\tilde{M})!} 2^{-k} =  \frac{(2 \tilde{M})^{2 \tilde{M}}}{(2\tilde{M})!} 2^{-n}$$
+
+avendo usato $\sum_{k=n+1}^{\infty} 2^{-k} = 2^{-n-1} \sum_{k=0}^{\infty} 2^{-k} = 2^{-n-1} \cdot 2 = 2^{-n}$.
+
+Scegliendo $N &gt; \log_2 \left( \frac{1}{\varepsilon} \frac{(2\tilde{M})^{2 \tilde{M}}}{(2 \tilde{M})!)} \right)$, per ogni $n &gt; N$ si ha 
+
+$$\left| \sum_{k=n+1}^{\infty} \frac{x^k}{k!} \right| &lt;  \frac{(2 \tilde{M})^{2 \tilde{M}}}{(2\tilde{M})!} 2^{-n} &lt;  \frac{(2 \tilde{M})^{2 \tilde{M}}}{(2\tilde{M})!} 2^{-N} &lt; \varepsilon \ .$$
 </pre></div>
 </div>
 </div>
