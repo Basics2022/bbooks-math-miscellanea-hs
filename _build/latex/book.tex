@@ -108,6 +108,9 @@ Questo libro fa parte del materiale pensato per \sphinxhref{https://basics2022.g
 
 
 
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/program:math-hs-intro-how-to}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Come usare questo materiale.}}}}}
+
 
 
 
@@ -141,6 +144,62 @@ In particolare, le parti sulla geometria analitica, il precalcolo e il calcolo v
 \item {} 
 \sphinxAtStartPar
 \sphinxstylestrong{calcolo}, come inizialmente formulato da Newton e Leibniz e formalizzato nel secolo successivo
+
+\end{itemize}
+
+
+\section{Come usare questo materiale}
+\label{\detokenize{ch/program:come-usare-questo-materiale}}\label{\detokenize{ch/program:math-hs-intro-how-to}}
+\sphinxAtStartPar
+L’obiettivo principale è l’acquisizione di familiarità e dimestichezza con gli argomenti di:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+calcolo
+
+\item {} 
+\sphinxAtStartPar
+statistica
+
+\end{itemize}
+
+\sphinxAtStartPar
+Per raggiungere gli obiettivi…
+
+\sphinxAtStartPar
+Ordine degli argomenti (sostituire con un grafico delle dipendenze?)
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+trigonometria
+
+\item {} 
+\sphinxAtStartPar
+geometria analitica
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+prerequisiti:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+trigonometria: trasformazione coordinate (rotazione), rappresentazione in coordinate non cartesiane (polari, cilindriche, sferiche,…)
+
+\end{itemize}
+
+\end{itemize}
+
+\item {} 
+\sphinxAtStartPar
+calcolo
+
+\item {} 
+\sphinxAtStartPar
+numeri complessi
+
+\item {} 
+\sphinxAtStartPar
+equazioni differenziali
 
 \end{itemize}
 
@@ -4017,8 +4076,28 @@ def, equazioni e caratteristiche con un’oppportuna scelta del sistema di coord
   y = r \sin \theta \ .
 \end{cases}\end{split}
 \end{equation*}
+
+\begin{savenotes}\sphinxattablestart
+\centering
+\begin{tabulary}{\linewidth}[t]{|T|T|T|}
+\hline
+
 \sphinxAtStartPar
-\sphinxstylestrong{todo.} Aggiungere immagine
+\sphinxincludegraphics{{coordinates-cartesian}.png}
+&
+\sphinxAtStartPar
+\sphinxincludegraphics{{coordinates-polar}.png}
+&
+\sphinxAtStartPar
+\sphinxincludegraphics{{coordinates-cartesian-polar}.png}
+\\
+\hline
+\end{tabulary}
+\par
+\sphinxattableend\end{savenotes}
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo.} Descrivere immagine
 
 
 \subsection{Trasformazione di coordinate}
@@ -4048,9 +4127,6 @@ Vengono discusse alcune leggi di trasformazione tra le coordinate di diversi sis
 \end{equation*}
 \sphinxAtStartPar
 \sphinxstylestrong{Traslazione dell’origine e rotazione degli assi di due sistemi di coordinate cartesiane.}
-
-\sphinxAtStartPar
-\sphinxstylestrong{todo} \sphinxstyleemphasis{L’ordine delle trasformazioni è importante}
 \begin{equation*}
 \begin{split} x \rightarrow T \rightarrow x' \rightarrow R \rightarrow x''\end{split}
 \end{equation*}\begin{equation*}
@@ -4066,7 +4142,28 @@ Vengono discusse alcune leggi di trasformazione tra le coordinate di diversi sis
 \underline{x}'' & = \underline{x}' - \underline{x}'_{O''} = R \, \underline{x} - \underline{x}'_{O''} \\ 
 \end{aligned}\end{split}
 \end{equation*}
+
+\begin{savenotes}\sphinxattablestart
+\centering
+\begin{tabulary}{\linewidth}[t]{|T|T|T|}
+\hline
+
 \sphinxAtStartPar
+\sphinxincludegraphics{{plane-coord-transf-transl}.png}
+&
+\sphinxAtStartPar
+\sphinxincludegraphics{{plane-coord-transf-rot}.png}
+&
+\sphinxAtStartPar
+\sphinxincludegraphics{{plane-coord-transf-transl-rot}.png}
+\\
+\hline
+\end{tabulary}
+\par
+\sphinxattableend\end{savenotes}
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo.} Descrivere immagine
 \sphinxstylestrong{Altri esempi di coordinate e trasformazioni di coordinate.} \sphinxstylestrong{todo.} come esercizio?
 
 \sphinxstepscope
@@ -4087,6 +4184,23 @@ In maniera equivalente viene il modulo (o lunghezza) di un vettore \(\vec{v} = v
 \begin{equation*}
 \begin{split}|\vec{v}| = \sqrt{v_x^2 + v_y^2} \ .\end{split}
 \end{equation*}
+
+\begin{savenotes}\sphinxattablestart
+\centering
+\begin{tabulary}{\linewidth}[t]{|T|T|}
+\hline
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{distance-cartesian}.png}
+&
+\sphinxAtStartPar
+\sphinxincludegraphics{{distance-cartesian-vector}.png}
+\\
+\hline
+\end{tabulary}
+\par
+\sphinxattableend\end{savenotes}
+
 
 
 \sphinxstepscope
@@ -4372,27 +4486,45 @@ o usando l’equazione in forma esplicita (nel caso le due rette non siano paral
 \subsection{Distanza punto\sphinxhyphen{}retta}
 \label{\detokenize{ch/analytic_geometry/analytic_geometry_2d/lines:distanza-punto-retta}}\label{\detokenize{ch/analytic_geometry/analytic_geometry_2d/lines:geometry-analytic-2d-lines-distance-point-line}}
 \sphinxAtStartPar
-La distanza di un punto \(Q\) da una retta \(r: \, P(\lambda) =  P_0 + \lambda \vec{v}\) può essere calcolato in diverse maniere:
+La distanza di un punto \(A\) da una retta \(r: \, P(\lambda) =  P_0 + \lambda \vec{v}\) può essere calcolato in diverse maniere:
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
-calcolando il valore minimo della distanza tra il punto \(Q\) dato e i punti \(P(\lambda)\) della retta
+calcolando il valore minimo della distanza tra il punto \(A\) dato e i punti \(P(\lambda)\) della retta
 \begin{equation*}
-\begin{split}\min_{P \in r} |Q - P|\end{split}
+\begin{split}\min_{P \in r} |A - P|\end{split}
 \end{equation*}
 \item {} 
 \sphinxAtStartPar
-trovando la retta \(r_{\perp}\) perpendicolare a \(r\) e passante per \(Q\); trovando il punto \(P^*\) intersezione tra le due rette \(r\), \(r_{\perp}\), \(P^* = r \cap r_{\perp}\); calcolando la distanza punto\sphinxhyphen{}punto tra \(Q\) e \(P^*\)
-\begin{equation*}
-\begin{split} \dots \text{**todo** o lasciare come esercizio}\end{split}
-\end{equation*}
+trovando la retta \(r_{\perp}\) perpendicolare a \(r\) e passante per \(Q\); trovando il punto \(P^*\) intersezione tra le due rette \(r\), \(r_{\perp}\), \(P^* = r \cap r_{\perp}\); calcolando la distanza punto\sphinxhyphen{}punto tra \(A\) e \(P^*\)
+
+\sphinxAtStartPar
+… \sphinxstylestrong{todo} \sphinxstyleemphasis{o lasciare come esercizio}
+
 \item {} 
 \sphinxAtStartPar
-usando il {\hyperref[\detokenize{ch/algebra/vector-algebra-euclidean-space:math-hs-algebra-vector-euclidean-space-inner-product}]{\sphinxcrossref{\DUrole{std,std-ref}{prodotto vettoriale}}}} tra il vettore \(\vec{v}\) e il vettore \(Q-P_0\)
+usando il {\hyperref[\detokenize{ch/algebra/vector-algebra-euclidean-space:math-hs-algebra-vector-euclidean-space-inner-product}]{\sphinxcrossref{\DUrole{std,std-ref}{prodotto vettoriale}}}} tra il vettore \(\vec{v}\) e il vettore \(A-P_0\)
 \begin{equation*}
-\begin{split}d = \frac{|\vec{v} \times (Q-P)|}{|\vec{v}|} = |Q - P| \sin \theta \ .\end{split}
+\begin{split}d = \frac{|\vec{v} \times (A-P)|}{|\vec{v}|} = |\hat{v} \times (A-P)| = |A - P| \sin \theta \ .\end{split}
 \end{equation*}
 \end{itemize}
+
+
+\begin{savenotes}\sphinxattablestart
+\centering
+\begin{tabulary}{\linewidth}[t]{|T|T|}
+\hline
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{distance-point-line}.png}
+&
+\sphinxAtStartPar
+\sphinxincludegraphics{{distance-point-line-vector}.png}
+\\
+\hline
+\end{tabulary}
+\par
+\sphinxattableend\end{savenotes}
 
 \sphinxstepscope
 
@@ -4840,6 +4972,901 @@ per poi calcolare il discrimminante,
 
 \subsubsection{Esercizi}
 \label{\detokenize{ch/analytic_geometry/analytic_geometry_2d/conics-general:esercizi}}
+\sphinxstepscope
+
+
+\section{Problemi}
+\label{\detokenize{ch/analytic_geometry/analytic_geometry_2d/problems:problemi}}\label{\detokenize{ch/analytic_geometry/analytic_geometry_2d/problems:geometry-analytic-2d-problems}}\label{\detokenize{ch/analytic_geometry/analytic_geometry_2d/problems::doc}}
+
+\subsection{Punti e Distanze}
+\label{\detokenize{ch/analytic_geometry/analytic_geometry_2d/problems:punti-e-distanze}}\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/problems-exercise-0}
+
+\begin{sphinxadmonition}{note}{Exercise 12.6.1}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
+\sphinxAtStartPar
+Calcola la distanza tra i punti \( A(2, 3) \) e \( B(-1, 7) \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/problems-exercise-1}
+
+\begin{sphinxadmonition}{note}{Exercise 12.6.2}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{1}
+\item {} 
+\sphinxAtStartPar
+Determina le coordinate del punto che divide il segmento che unisce \( A(4, -2) \) e \( B(-6, 8) \) nel rapporto \( 3:2 \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/problems-exercise-2}
+
+\begin{sphinxadmonition}{note}{Exercise 12.6.3}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{2}
+\item {} 
+\sphinxAtStartPar
+Mostra che i punti \( P(1, 2) \), \( Q(3, 6) \) e \( R(-1, -4) \) sono allineati.
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/problems-exercise-3}
+
+\begin{sphinxadmonition}{note}{Exercise 12.6.4}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{3}
+\item {} 
+\sphinxAtStartPar
+Trova il baricentro del triangolo con vertici \( A(2, -1) \), \( B(4, 3) \), e \( C(-2, 5) \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/problems-exercise-4}
+
+\begin{sphinxadmonition}{note}{Exercise 12.6.5}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{4}
+\item {} 
+\sphinxAtStartPar
+Determina la distanza minima tra il punto \( P(5, -2) \) e la retta \( y = -\frac{1}{2}x + 3 \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+
+
+\subsection{Retta}
+\label{\detokenize{ch/analytic_geometry/analytic_geometry_2d/problems:retta}}\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/problems-exercise-5}
+
+\begin{sphinxadmonition}{note}{Exercise 12.6.6}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{5}
+\item {} 
+\sphinxAtStartPar
+Trova l’equazione della retta passante per i punti \( A(1, -1) \) e \( B(4, 5) \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/problems-exercise-6}
+
+\begin{sphinxadmonition}{note}{Exercise 12.6.7}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{6}
+\item {} 
+\sphinxAtStartPar
+Determina il punto di intersezione tra le rette \( y = 2x - 3 \) e \( y = -x + 1 \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/problems-exercise-7}
+
+\begin{sphinxadmonition}{note}{Exercise 12.6.8}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{7}
+\item {} 
+\sphinxAtStartPar
+Scrivi l’equazione della retta parallela a \( y = 3x + 2 \) che passa per il punto \( (1, -4) \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/problems-exercise-8}
+
+\begin{sphinxadmonition}{note}{Exercise 12.6.9}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{8}
+\item {} 
+\sphinxAtStartPar
+Scrivi l’equazione della retta perpendicolare a \( 2x - y + 5 = 0 \) che passa per \( (2, 3) \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/problems-exercise-9}
+
+\begin{sphinxadmonition}{note}{Exercise 12.6.10}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{9}
+\item {} 
+\sphinxAtStartPar
+Determina l’area del triangolo formato dalle rette \( y = x + 1 \), \( y = -x + 5 \) e \( x = 2 \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+
+
+\subsection{Coniche}
+\label{\detokenize{ch/analytic_geometry/analytic_geometry_2d/problems:coniche}}\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/problems-exercise-10}
+
+\begin{sphinxadmonition}{note}{Exercise 12.6.11}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{10}
+\item {} 
+\sphinxAtStartPar
+Trova il centro e i semiassi dell’ellisse \( \frac{x^2}{16} + \frac{y^2}{9} = 1 \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/problems-exercise-11}
+
+\begin{sphinxadmonition}{note}{Exercise 12.6.12}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{11}
+\item {} 
+\sphinxAtStartPar
+Determina il fuoco e la direttrice della parabola \( y^2 = 8x \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/problems-exercise-12}
+
+\begin{sphinxadmonition}{note}{Exercise 12.6.13}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{12}
+\item {} 
+\sphinxAtStartPar
+Calcola i vertici e il centro dell’iperbole \( \frac{x^2}{25} - \frac{y^2}{16} = 1 \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/problems-exercise-13}
+
+\begin{sphinxadmonition}{note}{Exercise 12.6.14}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{13}
+\item {} 
+\sphinxAtStartPar
+Verifica se il punto \( (3, 4) \) appartiene all’ellisse \( 9x^2 + 16y^2 = 144 \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/problems-exercise-14}
+
+\begin{sphinxadmonition}{note}{Exercise 12.6.15}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{14}
+\item {} 
+\sphinxAtStartPar
+Determina l’equazione della parabola con vertice in \( (0, 0) \) e fuoco in \( (2, 0) \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+
+
+\subsection{Posizioni Relative}
+\label{\detokenize{ch/analytic_geometry/analytic_geometry_2d/problems:posizioni-relative}}\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/problems-exercise-15}
+
+\begin{sphinxadmonition}{note}{Exercise 12.6.16}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{15}
+\item {} 
+\sphinxAtStartPar
+Determina la posizione reciproca tra le rette \( 2x - 3y + 4 = 0 \) e \( 4x - 6y - 5 = 0 \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/problems-exercise-16}
+
+\begin{sphinxadmonition}{note}{Exercise 12.6.17}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{16}
+\item {} 
+\sphinxAtStartPar
+Trova la distanza tra i punti \( P(1, 3) \) e \( Q(-2, 7) \), e verifica se sono equidistanti dalla retta \( x - y + 1 = 0 \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/problems-exercise-17}
+
+\begin{sphinxadmonition}{note}{Exercise 12.6.18}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{17}
+\item {} 
+\sphinxAtStartPar
+Determina se la retta \( y = -\frac{1}{3}x + 4 \) è tangente alla circonferenza \( x^2 + y^2 = 16 \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/problems-exercise-18}
+
+\begin{sphinxadmonition}{note}{Exercise 12.6.19}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{18}
+\item {} 
+\sphinxAtStartPar
+Trova il punto di intersezione delle coniche \( x^2 + y^2 = 25 \) e \( x^2 - y^2 = 9 \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/problems-exercise-19}
+
+\begin{sphinxadmonition}{note}{Exercise 12.6.20}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{19}
+\item {} 
+\sphinxAtStartPar
+Calcola la posizione reciproca tra l’ellisse \( \frac{x^2}{9} + \frac{y^2}{16} = 1 \) e la retta \( y = 2x + 1 \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+
+
+\subsection{Problemi Parametrici}
+\label{\detokenize{ch/analytic_geometry/analytic_geometry_2d/problems:problemi-parametrici}}\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/problems-exercise-20}
+
+\begin{sphinxadmonition}{note}{Exercise 12.6.21}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{20}
+\item {} 
+\sphinxAtStartPar
+Determina i valori di \( k \) per cui la retta \( y = kx + 3 \) è tangente alla parabola \( y^2 = 4x \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/problems-exercise-21}
+
+\begin{sphinxadmonition}{note}{Exercise 12.6.22}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{21}
+\item {} 
+\sphinxAtStartPar
+Trova i valori di \( a \) e \( b \) per cui la retta \( ax + by + c = 0 \) passa per i punti \( (1, 2) \) e \( (3, -4) \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/problems-exercise-22}
+
+\begin{sphinxadmonition}{note}{Exercise 12.6.23}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{22}
+\item {} 
+\sphinxAtStartPar
+Scrivi l’equazione della famiglia di rette parallele a \( y = 2x + 1 \) e determina quale retta passa per \( (0, -3) \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/problems-exercise-23}
+
+\begin{sphinxadmonition}{note}{Exercise 12.6.24}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{23}
+\item {} 
+\sphinxAtStartPar
+Determina l’equazione della famiglia di circonferenze con centro sull’asse \( x \) e passanti per il punto \( (2, 3) \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/problems-exercise-24}
+
+\begin{sphinxadmonition}{note}{Exercise 12.6.25}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{24}
+\item {} 
+\sphinxAtStartPar
+Trova il punto comune a tutte le rette della famiglia \( y = mx + 2m - 1 \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+
+
+\subsection{Altri Problemi}
+\label{\detokenize{ch/analytic_geometry/analytic_geometry_2d/problems:altri-problemi}}\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/problems-exercise-25}
+
+\begin{sphinxadmonition}{note}{Exercise 12.6.26}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{25}
+\item {} 
+\sphinxAtStartPar
+Trova le coordinate dei vertici del triangolo formato dalla retta \( y = 2x - 3 \) e dai due assi coordinati.
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/problems-exercise-26}
+
+\begin{sphinxadmonition}{note}{Exercise 12.6.27}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{26}
+\item {} 
+\sphinxAtStartPar
+Determina l’equazione della tangente alla parabola \( y^2 = 8x \) nel punto \( (2, 4) \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/problems-exercise-27}
+
+\begin{sphinxadmonition}{note}{Exercise 12.6.28}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{27}
+\item {} 
+\sphinxAtStartPar
+Scrivi l’equazione della circonferenza con centro in \( (1, -2) \) e raggio \( 5 \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/problems-exercise-28}
+
+\begin{sphinxadmonition}{note}{Exercise 12.6.29}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{28}
+\item {} 
+\sphinxAtStartPar
+Verifica se la retta \( y = -x + 6 \) è tangente all’iperbole \( \frac{x^2}{9} - \frac{y^2}{16} = 1 \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/problems-exercise-29}
+
+\begin{sphinxadmonition}{note}{Exercise 12.6.30}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{29}
+\item {} 
+\sphinxAtStartPar
+Trova il punto di massimo o minimo della funzione \( f(x, y) = x^2 + y^2 \) sulla circonferenza \( x^2 + y^2 = 25 \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+
+\sphinxAtStartPar
+`
+
+\sphinxstepscope
+
+
+\section{Soluzioni}
+\label{\detokenize{ch/analytic_geometry/analytic_geometry_2d/sol:soluzioni}}\label{\detokenize{ch/analytic_geometry/analytic_geometry_2d/sol:geometry-analytic-2d-sol}}\label{\detokenize{ch/analytic_geometry/analytic_geometry_2d/sol::doc}}
+
+\subsection{Punti e Distanze}
+\label{\detokenize{ch/analytic_geometry/analytic_geometry_2d/sol:punti-e-distanze}}\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/sol-exercise-0}
+
+\begin{sphinxadmonition}{note}{Exercise 12.7.1}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
+\sphinxAtStartPar
+Calcola la distanza tra i punti \( A(2, 3) \) e \( B(-1, 7) \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/sol-exercise-1}
+
+\begin{sphinxadmonition}{note}{Exercise 12.7.2}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{1}
+\item {} 
+\sphinxAtStartPar
+Determina le coordinate del punto che divide il segmento che unisce \( A(4, -2) \) e \( B(-6, 8) \) nel rapporto \( 3:2 \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/sol-exercise-2}
+
+\begin{sphinxadmonition}{note}{Exercise 12.7.3}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{2}
+\item {} 
+\sphinxAtStartPar
+Mostra che i punti \( P(1, 2) \), \( Q(3, 6) \) e \( R(-1, -4) \) sono allineati.
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/sol-exercise-3}
+
+\begin{sphinxadmonition}{note}{Exercise 12.7.4}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{3}
+\item {} 
+\sphinxAtStartPar
+Trova il baricentro del triangolo con vertici \( A(2, -1) \), \( B(4, 3) \), e \( C(-2, 5) \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/sol-exercise-4}
+
+\begin{sphinxadmonition}{note}{Exercise 12.7.5}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{4}
+\item {} 
+\sphinxAtStartPar
+Determina la distanza minima tra il punto \( P(5, -2) \) e la retta \( y = -\frac{1}{2}x + 3 \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+
+
+\subsection{Retta}
+\label{\detokenize{ch/analytic_geometry/analytic_geometry_2d/sol:retta}}\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/sol-exercise-5}
+
+\begin{sphinxadmonition}{note}{Exercise 12.7.6}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{5}
+\item {} 
+\sphinxAtStartPar
+Trova l’equazione della retta passante per i punti \( A(1, -1) \) e \( B(4, 5) \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/sol-exercise-6}
+
+\begin{sphinxadmonition}{note}{Exercise 12.7.7}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{6}
+\item {} 
+\sphinxAtStartPar
+Determina il punto di intersezione tra le rette \( y = 2x - 3 \) e \( y = -x + 1 \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/sol-exercise-7}
+
+\begin{sphinxadmonition}{note}{Exercise 12.7.8}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{7}
+\item {} 
+\sphinxAtStartPar
+Scrivi l’equazione della retta parallela a \( y = 3x + 2 \) che passa per il punto \( (1, -4) \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/sol-exercise-8}
+
+\begin{sphinxadmonition}{note}{Exercise 12.7.9}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{8}
+\item {} 
+\sphinxAtStartPar
+Scrivi l’equazione della retta perpendicolare a \( 2x - y + 5 = 0 \) che passa per \( (2, 3) \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/sol-exercise-9}
+
+\begin{sphinxadmonition}{note}{Exercise 12.7.10}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{9}
+\item {} 
+\sphinxAtStartPar
+Determina l’area del triangolo formato dalle rette \( y = x + 1 \), \( y = -x + 5 \) e \( x = 2 \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+
+
+\subsection{Coniche}
+\label{\detokenize{ch/analytic_geometry/analytic_geometry_2d/sol:coniche}}\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/sol-exercise-10}
+
+\begin{sphinxadmonition}{note}{Exercise 12.7.11}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{10}
+\item {} 
+\sphinxAtStartPar
+Trova il centro e i semiassi dell’ellisse \( \frac{x^2}{16} + \frac{y^2}{9} = 1 \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/sol-exercise-11}
+
+\begin{sphinxadmonition}{note}{Exercise 12.7.12}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{11}
+\item {} 
+\sphinxAtStartPar
+Determina il fuoco e la direttrice della parabola \( y^2 = 8x \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/sol-exercise-12}
+
+\begin{sphinxadmonition}{note}{Exercise 12.7.13}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{12}
+\item {} 
+\sphinxAtStartPar
+Calcola i vertici e il centro dell’iperbole \( \frac{x^2}{25} - \frac{y^2}{16} = 1 \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/sol-exercise-13}
+
+\begin{sphinxadmonition}{note}{Exercise 12.7.14}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{13}
+\item {} 
+\sphinxAtStartPar
+Verifica se il punto \( (3, 4) \) appartiene all’ellisse \( 9x^2 + 16y^2 = 144 \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/sol-exercise-14}
+
+\begin{sphinxadmonition}{note}{Exercise 12.7.15}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{14}
+\item {} 
+\sphinxAtStartPar
+Determina l’equazione della parabola con vertice in \( (0, 0) \) e fuoco in \( (2, 0) \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+
+
+\subsection{Posizioni Relative}
+\label{\detokenize{ch/analytic_geometry/analytic_geometry_2d/sol:posizioni-relative}}\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/sol-exercise-15}
+
+\begin{sphinxadmonition}{note}{Exercise 12.7.16}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{15}
+\item {} 
+\sphinxAtStartPar
+Determina la posizione reciproca tra le rette \( 2x - 3y + 4 = 0 \) e \( 4x - 6y - 5 = 0 \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/sol-exercise-16}
+
+\begin{sphinxadmonition}{note}{Exercise 12.7.17}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{16}
+\item {} 
+\sphinxAtStartPar
+Trova la distanza tra i punti \( P(1, 3) \) e \( Q(-2, 7) \), e verifica se sono equidistanti dalla retta \( x - y + 1 = 0 \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/sol-exercise-17}
+
+\begin{sphinxadmonition}{note}{Exercise 12.7.18}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{17}
+\item {} 
+\sphinxAtStartPar
+Determina se la retta \( y = -\frac{1}{3}x + 4 \) è tangente alla circonferenza \( x^2 + y^2 = 16 \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/sol-exercise-18}
+
+\begin{sphinxadmonition}{note}{Exercise 12.7.19}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{18}
+\item {} 
+\sphinxAtStartPar
+Trova il punto di intersezione delle coniche \( x^2 + y^2 = 25 \) e \( x^2 - y^2 = 9 \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/sol-exercise-19}
+
+\begin{sphinxadmonition}{note}{Exercise 12.7.20}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{19}
+\item {} 
+\sphinxAtStartPar
+Calcola la posizione reciproca tra l’ellisse \( \frac{x^2}{9} + \frac{y^2}{16} = 1 \) e la retta \( y = 2x + 1 \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+
+
+\subsection{Problemi Parametrici}
+\label{\detokenize{ch/analytic_geometry/analytic_geometry_2d/sol:problemi-parametrici}}\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/sol-exercise-20}
+
+\begin{sphinxadmonition}{note}{Exercise 12.7.21}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{20}
+\item {} 
+\sphinxAtStartPar
+Determina i valori di \( k \) per cui la retta \( y = kx + 3 \) è tangente alla parabola \( y^2 = 4x \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/sol-exercise-21}
+
+\begin{sphinxadmonition}{note}{Exercise 12.7.22}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{21}
+\item {} 
+\sphinxAtStartPar
+Trova i valori di \( a \) e \( b \) per cui la retta \( ax + by + c = 0 \) passa per i punti \( (1, 2) \) e \( (3, -4) \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/sol-exercise-22}
+
+\begin{sphinxadmonition}{note}{Exercise 12.7.23}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{22}
+\item {} 
+\sphinxAtStartPar
+Scrivi l’equazione della famiglia di rette parallele a \( y = 2x + 1 \) e determina quale retta passa per \( (0, -3) \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/sol-exercise-23}
+
+\begin{sphinxadmonition}{note}{Exercise 12.7.24}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{23}
+\item {} 
+\sphinxAtStartPar
+Determina l’equazione della famiglia di circonferenze con centro sull’asse \( x \) e passanti per il punto \( (2, 3) \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/sol-exercise-24}
+
+\begin{sphinxadmonition}{note}{Exercise 12.7.25}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{24}
+\item {} 
+\sphinxAtStartPar
+Trova il punto comune a tutte le rette della famiglia \( y = mx + 2m - 1 \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+
+
+\subsection{Altri Problemi}
+\label{\detokenize{ch/analytic_geometry/analytic_geometry_2d/sol:altri-problemi}}\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/sol-exercise-25}
+
+\begin{sphinxadmonition}{note}{Exercise 12.7.26}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{25}
+\item {} 
+\sphinxAtStartPar
+Trova le coordinate dei vertici del triangolo formato dalla retta \( y = 2x - 3 \) e dai due assi coordinati.
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/sol-exercise-26}
+
+\begin{sphinxadmonition}{note}{Exercise 12.7.27}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{26}
+\item {} 
+\sphinxAtStartPar
+Determina l’equazione della tangente alla parabola \( y^2 = 8x \) nel punto \( (2, 4) \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/sol-exercise-27}
+
+\begin{sphinxadmonition}{note}{Exercise 12.7.28}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{27}
+\item {} 
+\sphinxAtStartPar
+Scrivi l’equazione della circonferenza con centro in \( (1, -2) \) e raggio \( 5 \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/sol-exercise-28}
+
+\begin{sphinxadmonition}{note}{Exercise 12.7.29}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{28}
+\item {} 
+\sphinxAtStartPar
+Verifica se la retta \( y = -x + 6 \) è tangente all’iperbole \( \frac{x^2}{9} - \frac{y^2}{16} = 1 \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/analytic_geometry/analytic_geometry_2d/sol-exercise-29}
+
+\begin{sphinxadmonition}{note}{Exercise 12.7.30}
+
+
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{29}
+\item {} 
+\sphinxAtStartPar
+Trova il punto di massimo o minimo della funzione \( f(x, y) = x^2 + y^2 \) sulla circonferenza \( x^2 + y^2 = 25 \).
+
+\end{enumerate}
+\end{sphinxadmonition}
+
+\sphinxAtStartPar
+`
+
+\sphinxstepscope
+
+
+\section{Note e dimostrazioni}
+\label{\detokenize{ch/analytic_geometry/analytic_geometry_2d/notes:note-e-dimostrazioni}}\label{\detokenize{ch/analytic_geometry/analytic_geometry_2d/notes:geometry-analytic-2d-notes}}\label{\detokenize{ch/analytic_geometry/analytic_geometry_2d/notes::doc}}
 \sphinxstepscope
 
 

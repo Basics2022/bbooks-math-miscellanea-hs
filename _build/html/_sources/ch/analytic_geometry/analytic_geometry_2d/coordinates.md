@@ -11,7 +11,14 @@ $$\begin{cases}
   y = r \sin \theta \ .
 \end{cases}$$
 
-**todo.** Aggiungere immagine
+```{list-table}
+:header-rows: 0
+* - ![](../../../media/tikz/geometry/coordinates-cartesian.svg)
+  - ![](../../../media/tikz/geometry/coordinates-polar.svg)
+  - ![](../../../media/tikz/geometry/coordinates-cartesian-polar.svg)
+```
+
+**todo.** Descrivere immagine
 
 ## Trasformazione di coordinate
 
@@ -38,7 +45,6 @@ $$\underline{x}' = R \underline{x}$$
 
 **Traslazione dell'origine e rotazione degli assi di due sistemi di coordinate cartesiane.**
 
-**todo** *L'ordine delle trasformazioni è importante*
 
 $$ x \rightarrow T \rightarrow x' \rightarrow R \rightarrow x''$$
 $$\begin{aligned}
@@ -52,4 +58,12 @@ $$\begin{aligned}
 \underline{x}'' & = \underline{x}' - \underline{x}'_{O''} = R \, \underline{x} - \underline{x}'_{O''} \\ 
 \end{aligned}$$
 
+```{list-table}
+:header-rows: 0
+* - ![](../../../media/tikz/geometry/plane-coord-transf-transl.svg)
+  - ![](../../../media/tikz/geometry/plane-coord-transf-rot.svg)
+  - ![](../../../media/tikz/geometry/plane-coord-transf-transl-rot.svg)
+```
+
+**todo.** Descrivere immagine
 **Altri esempi di coordinate e trasformazioni di coordinate.** **todo.** come esercizio?

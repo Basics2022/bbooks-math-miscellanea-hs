@@ -211,6 +211,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l3"><a class="reference internal" href="conics-general.html">12.5.3. Equazione generale delle coniche</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="problems.html">12.6. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sol.html">12.7. Soluzioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notes.html">12.8. Note e dimostrazioni</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../analytic_geometry_3d.html">13. Geometria analitica nello spazio</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -646,21 +649,31 @@ Usando l’equazione in forma implicita,</p>
 </div>
 <div class="section" id="distanza-punto-retta">
 <span id="geometry-analytic-2d-lines-distance-point-line"></span><h2><span class="section-number">12.4.3. </span>Distanza punto-retta<a class="headerlink" href="#distanza-punto-retta" title="Permalink to this heading">#</a></h2>
-<p>La distanza di un punto <span class="math notranslate nohighlight">\(Q\)</span> da una retta <span class="math notranslate nohighlight">\(r: \, P(\lambda) =  P_0 + \lambda \vec{v}\)</span> può essere calcolato in diverse maniere:</p>
+<p>La distanza di un punto <span class="math notranslate nohighlight">\(A\)</span> da una retta <span class="math notranslate nohighlight">\(r: \, P(\lambda) =  P_0 + \lambda \vec{v}\)</span> può essere calcolato in diverse maniere:</p>
 <ul>
-<li><p>calcolando il valore minimo della distanza tra il punto <span class="math notranslate nohighlight">\(Q\)</span> dato e i punti <span class="math notranslate nohighlight">\(P(\lambda)\)</span> della retta</p>
+<li><p>calcolando il valore minimo della distanza tra il punto <span class="math notranslate nohighlight">\(A\)</span> dato e i punti <span class="math notranslate nohighlight">\(P(\lambda)\)</span> della retta</p>
 <div class="math notranslate nohighlight">
-\[\min_{P \in r} |Q - P|\]</div>
+\[\min_{P \in r} |A - P|\]</div>
 </li>
-<li><p>trovando la retta <span class="math notranslate nohighlight">\(r_{\perp}\)</span> perpendicolare a <span class="math notranslate nohighlight">\(r\)</span> e passante per <span class="math notranslate nohighlight">\(Q\)</span>; trovando il punto <span class="math notranslate nohighlight">\(P^*\)</span> intersezione tra le due rette <span class="math notranslate nohighlight">\(r\)</span>, <span class="math notranslate nohighlight">\(r_{\perp}\)</span>, <span class="math notranslate nohighlight">\(P^* = r \cap r_{\perp}\)</span>; calcolando la distanza punto-punto tra <span class="math notranslate nohighlight">\(Q\)</span> e <span class="math notranslate nohighlight">\(P^*\)</span></p>
-<div class="math notranslate nohighlight">
-\[ \dots \text{**todo** o lasciare come esercizio}\]</div>
+<li><p>trovando la retta <span class="math notranslate nohighlight">\(r_{\perp}\)</span> perpendicolare a <span class="math notranslate nohighlight">\(r\)</span> e passante per <span class="math notranslate nohighlight">\(Q\)</span>; trovando il punto <span class="math notranslate nohighlight">\(P^*\)</span> intersezione tra le due rette <span class="math notranslate nohighlight">\(r\)</span>, <span class="math notranslate nohighlight">\(r_{\perp}\)</span>, <span class="math notranslate nohighlight">\(P^* = r \cap r_{\perp}\)</span>; calcolando la distanza punto-punto tra <span class="math notranslate nohighlight">\(A\)</span> e <span class="math notranslate nohighlight">\(P^*\)</span></p>
+<p>… <strong>todo</strong> <em>o lasciare come esercizio</em></p>
 </li>
-<li><p>usando il <a class="reference internal" href="../../algebra/vector-algebra-euclidean-space.html#math-hs-algebra-vector-euclidean-space-inner-product"><span class="std std-ref">prodotto vettoriale</span></a> tra il vettore <span class="math notranslate nohighlight">\(\vec{v}\)</span> e il vettore <span class="math notranslate nohighlight">\(Q-P_0\)</span></p>
+<li><p>usando il <a class="reference internal" href="../../algebra/vector-algebra-euclidean-space.html#math-hs-algebra-vector-euclidean-space-inner-product"><span class="std std-ref">prodotto vettoriale</span></a> tra il vettore <span class="math notranslate nohighlight">\(\vec{v}\)</span> e il vettore <span class="math notranslate nohighlight">\(A-P_0\)</span></p>
 <div class="math notranslate nohighlight">
-\[d = \frac{|\vec{v} \times (Q-P)|}{|\vec{v}|} = |Q - P| \sin \theta \ .\]</div>
+\[d = \frac{|\vec{v} \times (A-P)|}{|\vec{v}|} = |\hat{v} \times (A-P)| = |A - P| \sin \theta \ .\]</div>
 </li>
 </ul>
+<table class="table">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><img alt="" src="../../../_images/distance-point-line.svg" /></p></td>
+<td><p><img alt="" src="../../../_images/distance-point-line-vector.svg" /></p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 

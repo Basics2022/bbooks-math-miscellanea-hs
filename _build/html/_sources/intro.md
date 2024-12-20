@@ -7,6 +7,8 @@ Questo libro fa parte del materiale pensato per [le scuole superiori](https://ba
 E' disponibile la [versione in .pdf](https://www.github.com/Basics2022/bbooks-math-miscellanea-hs/blob/master/_build/latex/book.pdf) scaricabile.
 -->
 
+[**Come usare questo materiale.**](math-hs:intro:how-to)
+
 `````{only} html
 **Contenuti.**
 

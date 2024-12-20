@@ -136,16 +136,21 @@ $$m_2 = -\frac{1}{m_1}$$
 
 (geometry:analytic:2d:lines:distance-point-line)=
 ## Distanza punto-retta
-La distanza di un punto $Q$ da una retta $r: \, P(\lambda) =  P_0 + \lambda \vec{v}$ può essere calcolato in diverse maniere:
-- calcolando il valore minimo della distanza tra il punto $Q$ dato e i punti $P(\lambda)$ della retta
+La distanza di un punto $A$ da una retta $r: \, P(\lambda) =  P_0 + \lambda \vec{v}$ può essere calcolato in diverse maniere:
+- calcolando il valore minimo della distanza tra il punto $A$ dato e i punti $P(\lambda)$ della retta
 
-  $$\min_{P \in r} |Q - P|$$
+  $$\min_{P \in r} |A - P|$$
 
-- trovando la retta $r_{\perp}$ perpendicolare a $r$ e passante per $Q$; trovando il punto $P^*$ intersezione tra le due rette $r$, $r_{\perp}$, $P^* = r \cap r_{\perp}$; calcolando la distanza punto-punto tra $Q$ e $P^*$
+- trovando la retta $r_{\perp}$ perpendicolare a $r$ e passante per $Q$; trovando il punto $P^*$ intersezione tra le due rette $r$, $r_{\perp}$, $P^* = r \cap r_{\perp}$; calcolando la distanza punto-punto tra $A$ e $P^*$
 
-  $$ \dots \text{**todo** o lasciare come esercizio}$$
+  ... **todo** *o lasciare come esercizio*
 
-- usando il [prodotto vettoriale](math-hs:algebra:vector:euclidean-space:inner-product) tra il vettore $\vec{v}$ e il vettore $Q-P_0$
+- usando il [prodotto vettoriale](math-hs:algebra:vector:euclidean-space:inner-product) tra il vettore $\vec{v}$ e il vettore $A-P_0$
 
-  $$d = \frac{|\vec{v} \times (Q-P)|}{|\vec{v}|} = |Q - P| \sin \theta \ .$$
+  $$d = \frac{|\vec{v} \times (A-P)|}{|\vec{v}|} = |\hat{v} \times (A-P)| = |A - P| \sin \theta \ .$$
 
+```{list-table}
+:header-rows: 0
+* - ![](../../../media/tikz/geometry/distance-point-line.svg)
+  - ![](../../../media/tikz/geometry/distance-point-line-vector.svg)
+```
