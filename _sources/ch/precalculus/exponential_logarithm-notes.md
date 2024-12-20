@@ -108,10 +108,16 @@ $$\begin{aligned}
 
 $$\begin{aligned}
   \sinh(x+y) & = \frac{e^{x+y} - e^{-x-y}}{2} = \\
-   & = \sinh x \cosh y + \sinh x \sinh y
+   & = \sinh x \cosh y + \cosh x \sinh y
 \end{aligned}$$
 
+$$\begin{aligned}
+  \sinh(x-y) & = \frac{e^{x-y} - e^{-x+y}}{2} = \\
+   & = \sinh x \cosh y - \cosh x \sinh y
+\end{aligned}$$
 
 ```
 
+```{dropdown} ...
+```
 
