@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Esponenziale e logaritmo - dimostrazioni &#8212; Matematica per le scuole superiori</title>
+    <title>&lt;no title&gt; &#8212; Matematica per le scuole superiori</title>
   
   
   
@@ -65,8 +65,6 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/precalculus/exponential_logarithm-proof';</script>
     <link rel="shortcut icon" href="../../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
@@ -209,6 +207,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l3"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/conics-general.html">12.5.3. Equazione generale delle coniche</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/problems.html">12.6. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/sol.html">12.7. Soluzioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/notes.html">12.8. Note e dimostrazioni</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../analytic_geometry/analytic_geometry_3d.html">13. Geometria analitica nello spazio</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -470,7 +471,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -481,11 +484,19 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Esponenziale e logaritmo - dimostrazioni</h1>
+    <h1><no title></h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contenuti </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -495,75 +506,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="esponenziale-e-logaritmo-dimostrazioni">
-<span id="math-hs-exp-log-proof"></span><h1>Esponenziale e logaritmo - dimostrazioni<a class="headerlink" href="#esponenziale-e-logaritmo-dimostrazioni" title="Permalink to this heading">#</a></h1>
-<!-- ## Convergenza della serie di funzioni $\sum_{n=0}^{\infty} \frac{x^n}{n!}$ in ogni intervallo limitato -->
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Convergenza della serie di funzioni <span class="math notranslate nohighlight">\(\sum_{n=0}^{\infty} \frac{x^n}{n!}\)</span> in ogni intervallo limitato<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Per dimostrare la convergenza uniforme di <span class="math notranslate nohighlight">\(\sum_{k=0}^{\infty} \frac{x^k}{k!}\)</span> a <span class="math notranslate nohighlight">\(e^x\)</span> in ogni intervallo limitato <span class="math notranslate nohighlight">\(|x| &lt; M\)</span>, è richiesto di dimostrare che per ogni <span class="math notranslate nohighlight">\(\varepsilon &gt; 0\)</span> esiste <span class="math notranslate nohighlight">\(N \in \mathbb{N}\)</span> tale che</p>
-<div class="math notranslate nohighlight">
-\[|e^x - S_n(x)| &lt; \varepsilon \ , \qquad \forall |x| &lt; M \]</div>
-<p class="sd-card-text">per tutti gli <span class="math notranslate nohighlight">\(n &gt; N\)</span>. Bisogna quindi dimostrare che</p>
-<div class="math notranslate nohighlight">
-\[\left| \sum_{k=n+1}^{\infty} \frac{x^k}{k!} \right| &lt; \varepsilon \ .\]</div>
-<p class="sd-card-text">Definendo <span class="math notranslate nohighlight">\(\tilde{M} = \max\{ 1, M \}\)</span></p>
-<div class="math notranslate nohighlight">
-\[\left| \sum_{k=n+1}^{\infty} \frac{x^k}{k!} \right| &lt; \sum_{k=n+1}^{\infty} \frac{\tilde{M}^k}{k!}\]</div>
-<p class="sd-card-text">e scegliendo <span class="math notranslate nohighlight">\(k &gt; 2 \tilde{M}\)</span>, in maniera da poter scrivere</p>
-<div class="math notranslate nohighlight">
-\[\frac{\tilde{M}^k}{k!} = \frac{\tilde{M}^{2 \tilde{M}}}{( 2 \tilde{M})!} \frac{\tilde{M}}{2\tilde{M}+1} \dots \frac{\tilde{M}}{k} &lt;  \frac{\tilde{M}^{2 \tilde{M}}}{( 2 \tilde{M})!} 2^{-(k - \tilde{M})} = \frac{(2 \tilde{M})^{2 \tilde{M}}}{(2 \tilde{M})!} 2^{-k}\]</div>
-<p class="sd-card-text">e quindi</p>
-<div class="math notranslate nohighlight">
-\[\sum_{k=n+1}^{\infty} \frac{\tilde{M}}{k!} &lt; \sum_{k=n+1}^{\infty} \frac{(2 \tilde{M})^{2 \tilde{M}}}{(2\tilde{M})!} 2^{-k} =  \frac{(2 \tilde{M})^{2 \tilde{M}}}{(2\tilde{M})!} 2^{-n}\]</div>
-<p class="sd-card-text">avendo usato <span class="math notranslate nohighlight">\(\sum_{k=n+1}^{\infty} 2^{-k} = 2^{-n-1} \sum_{k=0}^{\infty} 2^{-k} = 2^{-n-1} \cdot 2 = 2^{-n}\)</span>.</p>
-<p class="sd-card-text">Scegliendo <span class="math notranslate nohighlight">\(N &gt; \log_2 \left( \frac{1}{\varepsilon} \frac{(2\tilde{M})^{2 \tilde{M}}}{(2 \tilde{M})!)} \right)\)</span>, per ogni <span class="math notranslate nohighlight">\(n &gt; N\)</span> si ha</p>
-<div class="math notranslate nohighlight">
-\[\left| \sum_{k=n+1}^{\infty} \frac{x^k}{k!} \right| &lt;  \frac{(2 \tilde{M})^{2 \tilde{M}}}{(2\tilde{M})!} 2^{-n} &lt;  \frac{(2 \tilde{M})^{2 \tilde{M}}}{(2\tilde{M})!} 2^{-N} &lt; \varepsilon \ .\]</div>
-</div>
-</details><!-- ## Equivalenza delle due definizioni -->
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Equivalenza delle due definizioni<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><strong>todo</strong></p>
-</div>
-</details><!-- ## Giustificazione della notazione $\ e^x$ -->
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Giustificazione della notazione <span class="math notranslate nohighlight">\(\ e^x\)</span> <div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Per evitare la forma indeterminata nel termine <span class="math notranslate nohighlight">\(0^0\)</span>, si calcola qui il limite per <span class="math notranslate nohighlight">\(x \rightarrow 0\)</span> (<strong>todo</strong> <em>motivare la validità di questa operazione/interpretazione della funzione <span class="math notranslate nohighlight">\(e^x\)</span></em>)</p>
-<div class="math notranslate nohighlight">
-\[e^0 := \lim_{x \rightarrow 0} e^x = \lim_{x \rightarrow 0} \sum_{n = 0}^{\infty} \frac{x^n}{n!} = 1 + \lim_{x \rightarrow 0} \sum_{n=1}^{\infty} \frac{x^n}{n!} = 1 \ .\]</div>
-<p class="sd-card-text">Ricordando la definizione della <a class="reference internal" href="../series.html#math-hs-series-e-euler"><span class="std std-ref"><span class="math notranslate nohighlight">\(e\)</span> di Eulero</span></a>, è immediato verificare che il valore della serie di funzioni per <span class="math notranslate nohighlight">\(x = 1\)</span> coincide con il valore di <span class="math notranslate nohighlight">\(e\)</span></p>
-<div class="math notranslate nohighlight">
-\[e^1 = \sum_{n=0}^{\infty} \frac{x^n}{n!} \bigg|_{x=1} = \sum_{n=0}^{\infty} \frac{1}{n!} = e \ .\]</div>
-<p class="sd-card-text">La serie che definisce la esponenziale soddisfa la proprietà delle potenze <span class="math notranslate nohighlight">\(e^x \, e^y = e^{x+y}\)</span>,</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-  e^x \, e^y 
-  &amp; = \sum_{n=0}^{\infty} \frac{x^n}{n!} \sum_{m = 0}^{\infty} \frac{y^m}{m!} = \\
-  &amp; = \sum_{n=0}^{\infty} \sum_{m=0}^{\infty} \frac{y^m}{m!} \frac{x^n}{n!} =  &amp; \text{($m,n \  \rightarrow \ m,p=m+n$)}\\
-  &amp; = \sum_{p=0}^{\infty} \sum_{m=0}^{p} \frac{y^m \, x^{p-m}}{m! (p-m!)} = \\
-  &amp; = \sum_{p=0}^{\infty} \frac{1}{p!} \underbrace{\sum_{m=0}^{p} \frac{p!}{m! (p-m)!} y^m \, x^{p-m}}_{(x+y)^p} = \\
-  &amp; = \sum_{p=0}^{\infty} \frac{(x+y)^p}{p!} = \\
-  &amp; = e^{x+y} \ ,
-\end{aligned}\end{split}\]</div>
-<p class="sd-card-text">avendo usato il <a class="reference internal" href="polynomials.html#math-hs-precalculus-polynomials-binomial-thm"><span class="std std-ref">teorema binomiale</span></a>.</p>
-</div>
-</details></div>
-
+  <span class="target" id="math-hs-exp-log-proof"></span>
     <script type="text/x-thebe-config">
     {
         requestKernel: true,
@@ -600,6 +543,20 @@ Giustificazione della notazione <span class="math notranslate nohighlight">\(\ e
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenuti
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+  </nav></div>
+
+</div></div>
               
             
           </div>

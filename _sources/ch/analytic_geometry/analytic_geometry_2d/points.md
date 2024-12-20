@@ -10,6 +10,11 @@ In maniera equivalente viene il modulo (o lunghezza) di un vettore $\vec{v} = v_
 
 $$|\vec{v}| = \sqrt{v_x^2 + v_y^2} \ .$$
 
+```{list-table}
+:header-rows: 0
+* - ![](../../../media/tikz/geometry/distance-cartesian.svg)
+  - ![](../../../media/tikz/geometry/distance-cartesian-vector.svg)
+```
 <!--
 ## Angoli tra direzioni
 Nello spazio euclideo, una direzione con verso può essere identificata da un vettore $\vec{v}$. Date due direzioni con verso identificate dai vettori $\vec{u}$, $\vec{v}$, l'angolo formato tra i due vettori può essere identificato dalla proiezione di un vettore sull'altro tramite il prodotto interno
