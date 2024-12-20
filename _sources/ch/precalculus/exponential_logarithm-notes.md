@@ -6,7 +6,9 @@
 
 (math-hs:exp-log:notes:convergence)=
 ### Convergenza della serie di funzioni $\sum_{n=0}^{\infty} \frac{x^n}{n!}$ in ogni intervallo limitato
+````{only} html
 ```{dropdown} Convergenza della serie di funzioni $\sum_{n=0}^{\infty} \frac{x^n}{n!}$ in ogni intervallo limitato
+````
 
 Per dimostrare la convergenza uniforme di $\sum_{k=0}^{\infty} \frac{x^k}{k!}$ a $e^x$ in ogni intervallo limitato $|x| < M$, è richiesto di dimostrare che per ogni $\varepsilon > 0$ esiste $N \in \mathbb{N}$ tale che 
 
@@ -34,17 +36,25 @@ Scegliendo $N > \log_2 \left( \frac{1}{\varepsilon} \frac{(2\tilde{M})^{2 \tilde
 
 $$\left| \sum_{k=n+1}^{\infty} \frac{x^k}{k!} \right| <  \frac{(2 \tilde{M})^{2 \tilde{M}}}{(2\tilde{M})!} 2^{-n} <  \frac{(2 \tilde{M})^{2 \tilde{M}}}{(2\tilde{M})!} 2^{-N} < \varepsilon \ .$$
 
+````{only} html
 ```
+````
 
 
 (math-hs:exp-log:notes:equivalence)=
 ### Equivalenza delle due definizioni
+````{only} html
 ```{dropdown} Equivalenza delle due definizioni
 **todo**
 ```
+````
+````{only} latex
+````
 
 (math-hs:exp-log:notes:powers)=
 ### Giustificazione della notazione $\ e^x$
+
+````{only} html
 ```{dropdown} Giustificazione della notazione $\ e^x$ 
 Per evitare la forma indeterminata nel termine $0^0$, si calcola qui il limite per $x \rightarrow 0$ (**todo** *motivare la validità di questa operazione/interpretazione della funzione $e^x$*)
 
@@ -69,6 +79,30 @@ $$\begin{aligned}
 avendo usato il [teorema binomiale](math-hs:precalculus:polynomials:binomial-thm).
 
 ```
+````
+````{only} latex
+Per evitare la forma indeterminata nel termine $0^0$, si calcola qui il limite per $x \rightarrow 0$ (**todo** *motivare la validità di questa operazione/interpretazione della funzione $e^x$*)
+
+$$e^0 := \lim_{x \rightarrow 0} e^x = \lim_{x \rightarrow 0} \sum_{n = 0}^{\infty} \frac{x^n}{n!} = 1 + \lim_{x \rightarrow 0} \sum_{n=1}^{\infty} \frac{x^n}{n!} = 1 \ .$$
+
+Ricordando la definizione della [$e$ di Eulero](math-hs:series:e-euler), è immediato verificare che il valore della serie di funzioni per $x = 1$ coincide con il valore di $e$
+
+$$e^1 = \sum_{n=0}^{\infty} \frac{x^n}{n!} \bigg|_{x=1} = \sum_{n=0}^{\infty} \frac{1}{n!} = e \ .$$
+
+La serie che definisce la esponenziale soddisfa la proprietà delle potenze $e^x \, e^y = e^{x+y}$,
+
+$$\begin{aligned}
+  e^x \, e^y 
+  & = \sum_{n=0}^{\infty} \frac{x^n}{n!} \sum_{m = 0}^{\infty} \frac{y^m}{m!} = \\
+  & = \sum_{n=0}^{\infty} \sum_{m=0}^{\infty} \frac{y^m}{m!} \frac{x^n}{n!} =  & \text{($m,n \  \rightarrow \ m,p=m+n$)}\\
+  & = \sum_{p=0}^{\infty} \sum_{m=0}^{p} \frac{y^m \, x^{p-m}}{m! (p-m!)} = \\
+  & = \sum_{p=0}^{\infty} \frac{1}{p!} \underbrace{\sum_{m=0}^{p} \frac{p!}{m! (p-m)!} y^m \, x^{p-m}}_{(x+y)^p} = \\
+  & = \sum_{p=0}^{\infty} \frac{(x+y)^p}{p!} = \\
+  & = e^{x+y} \ ,
+\end{aligned}$$
+
+avendo usato il [teorema binomiale](math-hs:precalculus:polynomials:binomial-thm).
+````
 
 (math-hs:exp-log:notes:hyp)=
 ## Funzioni iperboliche
