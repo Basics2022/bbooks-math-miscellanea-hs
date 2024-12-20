@@ -526,56 +526,27 @@ Convergenza della serie di funzioni <span class="math notranslate nohighlight">\
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-</div>
-</details><p>Per dimostrare la convergenza uniforme di <span class="math notranslate nohighlight">\(\sum_{k=0}^{\infty} \frac{x^k}{k!}\)</span> a <span class="math notranslate nohighlight">\(e^x\)</span> in ogni intervallo limitato <span class="math notranslate nohighlight">\(|x| &lt; M\)</span>, è richiesto di dimostrare che per ogni <span class="math notranslate nohighlight">\(\varepsilon &gt; 0\)</span> esiste <span class="math notranslate nohighlight">\(N \in \mathbb{N}\)</span> tale che</p>
+<p class="sd-card-text">Per dimostrare la convergenza uniforme di <span class="math notranslate nohighlight">\(\sum_{k=0}^{\infty} \frac{x^k}{k!}\)</span> a <span class="math notranslate nohighlight">\(e^x\)</span> in ogni intervallo limitato <span class="math notranslate nohighlight">\(|x| &lt; M\)</span>, è richiesto di dimostrare che per ogni <span class="math notranslate nohighlight">\(\varepsilon &gt; 0\)</span> esiste <span class="math notranslate nohighlight">\(N \in \mathbb{N}\)</span> tale che</p>
 <div class="math notranslate nohighlight">
 \[|e^x - S_n(x)| &lt; \varepsilon \ , \qquad \forall |x| &lt; M \]</div>
-<p>per tutti gli <span class="math notranslate nohighlight">\(n &gt; N\)</span>. Bisogna quindi dimostrare che</p>
+<p class="sd-card-text">per tutti gli <span class="math notranslate nohighlight">\(n &gt; N\)</span>. Bisogna quindi dimostrare che</p>
 <div class="math notranslate nohighlight">
 \[\left| \sum_{k=n+1}^{\infty} \frac{x^k}{k!} \right| &lt; \varepsilon \ .\]</div>
-<p>Definendo <span class="math notranslate nohighlight">\(\tilde{M} = \max\{ 1, M \}\)</span></p>
+<p class="sd-card-text">Definendo <span class="math notranslate nohighlight">\(\tilde{M} = \max\{ 1, M \}\)</span></p>
 <div class="math notranslate nohighlight">
 \[\left| \sum_{k=n+1}^{\infty} \frac{x^k}{k!} \right| &lt; \sum_{k=n+1}^{\infty} \frac{\tilde{M}^k}{k!}\]</div>
-<p>e scegliendo <span class="math notranslate nohighlight">\(k &gt; 2 \tilde{M}\)</span>, in maniera da poter scrivere</p>
+<p class="sd-card-text">e scegliendo <span class="math notranslate nohighlight">\(k &gt; 2 \tilde{M}\)</span>, in maniera da poter scrivere</p>
 <div class="math notranslate nohighlight">
 \[\frac{\tilde{M}^k}{k!} = \frac{\tilde{M}^{2 \tilde{M}}}{( 2 \tilde{M})!} \frac{\tilde{M}}{2\tilde{M}+1} \dots \frac{\tilde{M}}{k} &lt;  \frac{\tilde{M}^{2 \tilde{M}}}{( 2 \tilde{M})!} 2^{-(k - \tilde{M})} = \frac{(2 \tilde{M})^{2 \tilde{M}}}{(2 \tilde{M})!} 2^{-k}\]</div>
-<p>e quindi</p>
+<p class="sd-card-text">e quindi</p>
 <div class="math notranslate nohighlight">
 \[\sum_{k=n+1}^{\infty} \frac{\tilde{M}}{k!} &lt; \sum_{k=n+1}^{\infty} \frac{(2 \tilde{M})^{2 \tilde{M}}}{(2\tilde{M})!} 2^{-k} =  \frac{(2 \tilde{M})^{2 \tilde{M}}}{(2\tilde{M})!} 2^{-n}\]</div>
-<p>avendo usato <span class="math notranslate nohighlight">\(\sum_{k=n+1}^{\infty} 2^{-k} = 2^{-n-1} \sum_{k=0}^{\infty} 2^{-k} = 2^{-n-1} \cdot 2 = 2^{-n}\)</span>.</p>
-<p>Scegliendo <span class="math notranslate nohighlight">\(N &gt; \log_2 \left( \frac{1}{\varepsilon} \frac{(2\tilde{M})^{2 \tilde{M}}}{(2 \tilde{M})!)} \right)\)</span>, per ogni <span class="math notranslate nohighlight">\(n &gt; N\)</span> si ha</p>
+<p class="sd-card-text">avendo usato <span class="math notranslate nohighlight">\(\sum_{k=n+1}^{\infty} 2^{-k} = 2^{-n-1} \sum_{k=0}^{\infty} 2^{-k} = 2^{-n-1} \cdot 2 = 2^{-n}\)</span>.</p>
+<p class="sd-card-text">Scegliendo <span class="math notranslate nohighlight">\(N &gt; \log_2 \left( \frac{1}{\varepsilon} \frac{(2\tilde{M})^{2 \tilde{M}}}{(2 \tilde{M})!)} \right)\)</span>, per ogni <span class="math notranslate nohighlight">\(n &gt; N\)</span> si ha</p>
 <div class="math notranslate nohighlight">
 \[\left| \sum_{k=n+1}^{\infty} \frac{x^k}{k!} \right| &lt;  \frac{(2 \tilde{M})^{2 \tilde{M}}}{(2\tilde{M})!} 2^{-n} &lt;  \frac{(2 \tilde{M})^{2 \tilde{M}}}{(2\tilde{M})!} 2^{-N} &lt; \varepsilon \ .\]</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
-````{only} latex
-Per dimostrare la convergenza uniforme di $\sum_{k=0}^{\infty} \frac{x^k}{k!}$ a $e^x$ in ogni intervallo limitato $|x| &lt; M$, è richiesto di dimostrare che per ogni $\varepsilon &gt; 0$ esiste $N \in \mathbb{N}$ tale che 
-
-$$|e^x - S_n(x)| &lt; \varepsilon \ , \qquad \forall |x| &lt; M $$
-
-per tutti gli $n &gt; N$. Bisogna quindi dimostrare che 
-
-$$\left| \sum_{k=n+1}^{\infty} \frac{x^k}{k!} \right| &lt; \varepsilon \ .$$
-
-Definendo $\tilde{M} = \max\{ 1, M \}$
-
-$$\left| \sum_{k=n+1}^{\infty} \frac{x^k}{k!} \right| &lt; \sum_{k=n+1}^{\infty} \frac{\tilde{M}^k}{k!}$$
-
-e scegliendo $k &gt; 2 \tilde{M}$, in maniera da poter scrivere 
-
-$$\frac{\tilde{M}^k}{k!} = \frac{\tilde{M}^{2 \tilde{M}}}{( 2 \tilde{M})!} \frac{\tilde{M}}{2\tilde{M}+1} \dots \frac{\tilde{M}}{k} &lt;  \frac{\tilde{M}^{2 \tilde{M}}}{( 2 \tilde{M})!} 2^{-(k - \tilde{M})} = \frac{(2 \tilde{M})^{2 \tilde{M}}}{(2 \tilde{M})!} 2^{-k}$$
-
-e quindi
-
-$$\sum_{k=n+1}^{\infty} \frac{\tilde{M}}{k!} &lt; \sum_{k=n+1}^{\infty} \frac{(2 \tilde{M})^{2 \tilde{M}}}{(2\tilde{M})!} 2^{-k} =  \frac{(2 \tilde{M})^{2 \tilde{M}}}{(2\tilde{M})!} 2^{-n}$$
-
-avendo usato $\sum_{k=n+1}^{\infty} 2^{-k} = 2^{-n-1} \sum_{k=0}^{\infty} 2^{-k} = 2^{-n-1} \cdot 2 = 2^{-n}$.
-
-Scegliendo $N &gt; \log_2 \left( \frac{1}{\varepsilon} \frac{(2\tilde{M})^{2 \tilde{M}}}{(2 \tilde{M})!)} \right)$, per ogni $n &gt; N$ si ha 
-
-$$\left| \sum_{k=n+1}^{\infty} \frac{x^k}{k!} \right| &lt;  \frac{(2 \tilde{M})^{2 \tilde{M}}}{(2\tilde{M})!} 2^{-n} &lt;  \frac{(2 \tilde{M})^{2 \tilde{M}}}{(2\tilde{M})!} 2^{-N} &lt; \varepsilon \ .$$
-</pre></div>
 </div>
-</div>
+</details></div>
 <div class="section" id="equivalenza-delle-due-definizioni">
 <span id="math-hs-exp-log-notes-equivalence"></span><h3><span class="section-number">19.4.1.2. </span>Equivalenza delle due definizioni<a class="headerlink" href="#equivalenza-delle-due-definizioni" title="Permalink to this heading">#</a></h3>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">

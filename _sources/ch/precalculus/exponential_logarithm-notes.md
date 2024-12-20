@@ -8,7 +8,6 @@
 ### Convergenza della serie di funzioni $\sum_{n=0}^{\infty} \frac{x^n}{n!}$ in ogni intervallo limitato
 ````{only} html
 ```{dropdown} Convergenza della serie di funzioni $\sum_{n=0}^{\infty} \frac{x^n}{n!}$ in ogni intervallo limitato
-````
 
 Per dimostrare la convergenza uniforme di $\sum_{k=0}^{\infty} \frac{x^k}{k!}$ a $e^x$ in ogni intervallo limitato $|x| < M$, è richiesto di dimostrare che per ogni $\varepsilon > 0$ esiste $N \in \mathbb{N}$ tale che 
 
@@ -36,6 +35,7 @@ Scegliendo $N > \log_2 \left( \frac{1}{\varepsilon} \frac{(2\tilde{M})^{2 \tilde
 
 $$\left| \sum_{k=n+1}^{\infty} \frac{x^k}{k!} \right| <  \frac{(2 \tilde{M})^{2 \tilde{M}}}{(2\tilde{M})!} 2^{-n} <  \frac{(2 \tilde{M})^{2 \tilde{M}}}{(2\tilde{M})!} 2^{-N} < \varepsilon \ .$$
 ```
+````
 
 ````{only} latex
 Per dimostrare la convergenza uniforme di $\sum_{k=0}^{\infty} \frac{x^k}{k!}$ a $e^x$ in ogni intervallo limitato $|x| < M$, è richiesto di dimostrare che per ogni $\varepsilon > 0$ esiste $N \in \mathbb{N}$ tale che 
