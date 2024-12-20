@@ -86,10 +86,11 @@ $$\begin{aligned}
 
 ```
 
-```{dropdown}
+```{dropdown} Prodotti
 
-$$\cosh x \cosh y = \frac{e^x+e^{-x}}{2} \frac{e^y+e^{-y}}{2} = \frac{e^{x+y} + e^{-x+y} + e^{-x+y} + e^{-x-y}}{4}$$
-$$\sinh x \sinh y = \frac{e^x-e^{-x}}{2} \frac{e^y-e^{-y}}{2} = \frac{e^{x+y} - e^{-x+y} - e^{-x+y} + e^{-x-y}}{4}$$
+$$\cosh x \cosh y = \frac{e^x+e^{-x}}{2} \frac{e^y+e^{-y}}{2} = \frac{e^{x+y} + e^{x-y} + e^{-x+y} + e^{-x-y}}{4}$$
+$$\sinh x \sinh y = \frac{e^x-e^{-x}}{2} \frac{e^y-e^{-y}}{2} = \frac{e^{x+y} - e^{x-y} - e^{-x+y} + e^{-x-y}}{4}$$
+$$\sinh x \cosh y = \frac{e^x-e^{-x}}{2} \frac{e^y+e^{-y}}{2} = \frac{e^{x+y} + e^{x-y} - e^{-x+y} - e^{-x-y}}{4}$$
 
 ```
 
