@@ -98,8 +98,7 @@ $$\sinh x \cosh y = \frac{e^x-e^{-x}}{2} \frac{e^y+e^{-y}}{2} = \frac{e^{x+y} + 
 
 $$\begin{aligned}
   \cosh(x+y) & = \frac{e^{x+y} + e^{-x-y}}{2} = \\
-   & = \frac{e^{x+y} + e^{x-y} - e^{x-y} + e^{-x-y}}{2} = \\
-   & = \frac{e^{x}(e^{y} + e^{-y}) - ( e^{x} - e^{-x})e^{-y}}{2} = \\
+   & = \cosh x \cosh y 
 \end{aligned}$$
 
 
