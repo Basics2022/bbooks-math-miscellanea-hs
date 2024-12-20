@@ -72,7 +72,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
     <link rel="next" title="20.9. Problemi" href="complex-algebra-problems.html" />
-    <link rel="prev" title="19.4. Esponenziale e logaritmo - dimostrazioni" href="../exponential_logarithm-proof.html" />
+    <link rel="prev" title="19.4. Note e dimostrazioni" href="../precalculus/exponential_logarithm-notes.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
@@ -229,8 +229,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../precalculus/polynomials.html">16. Polinomi</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../series.html">17. Serie e successioni</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../trigonometry.html">18. Trigonometria</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../exponential_logarithm.html">19. Esponenziale e logaritmo</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../exponential_logarithm-proof.html">19.4. Esponenziale e logaritmo - dimostrazioni</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../precalculus/exponential_logarithm.html">19. Esponenziale e logaritmo</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../precalculus/exponential_logarithm-problems.html">19.2. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../precalculus/exponential_logarithm-sol.html">19.3. Soluzioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../precalculus/exponential_logarithm-notes.html">19.4. Note e dimostrazioni</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">20. Algebra complessa</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -499,7 +501,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rappresentazione-dei-numeri-complessi-nel-piano-complesso-argand-gauss">20.4. Rappresentazione dei numeri complessi nel piano complesso (Argand-Gauss)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni-con-i-numeri-complessi">20.5. Operazioni con i numeri complessi</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#somma-e-prodotto">20.5.1. Somma e prodotto</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#complesso-coniugato-e">20.5.2. Complesso coniugato e</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#complesso-coniugato-e-modulo">20.5.2. Complesso coniugato e modulo</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#potenze-e-radici">20.5.3. Potenze e radici</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#potenza-intera-p-in-mathbb-z">20.5.3.1. Potenza intera, <span class="math notranslate nohighlight">\(p \in \mathbb{Z}\)</span>.</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#radici-o-potenza-frac-1-p-p-in-mathbb-z">20.5.3.2. Radici o potenza <span class="math notranslate nohighlight">\(\frac{1}{p}, \ p \in \mathbb{Z}\)</span></a></li>
@@ -600,6 +602,12 @@ document.write(`
 <div class="math notranslate nohighlight" id="equation-complex-euler">
 <span class="eqno">(20.3)<a class="headerlink" href="#equation-complex-euler" title="Permalink a questa equazione">#</a></span>\[e^{i \theta} = \cos \theta + i \sin \theta \ ,\]</div>
 <p>con <span class="math notranslate nohighlight">\(\theta \in \mathbb{R}\)</span>. Vengono riportate in appendice due <a class="reference internal" href="complex-algebra-notes.html#math-hs-algebra-complex-notes-euler"><span class="std std-ref">dimostrazioni della formula di Eulero</span></a>, una usando la definizione di esponenziale complesso e la formula di de Moivre, l’altra usando le serie di Taylor.</p>
+<p>Grazie alla formula di Eulero e alle proprietà elementari delle funzioni trigonometriche, <span class="math notranslate nohighlight">\(\cos(-\theta) = \cos \theta\)</span>, <span class="math notranslate nohighlight">\(\sin(-\theta) = -\sin \theta\)</span>, con <span class="math notranslate nohighlight">\(\theta \in \mathbb{R}\)</span>, segue</p>
+<div class="math notranslate nohighlight" id="equation-complex-cos-sin">
+<span class="eqno">(20.4)<a class="headerlink" href="#equation-complex-cos-sin" title="Permalink a questa equazione">#</a></span>\[\begin{split}\begin{aligned}
+ \cos \theta &amp; = \frac{e^{i\theta} + e^{-i\theta}}{2} \\
+ \sin \theta &amp; = \frac{e^{i\theta} - e^{-i\theta}}{2i} \\
+\end{aligned}\end{split}\]</div>
 </div>
 <div class="section" id="rappresentazione-dei-numeri-complessi-nel-piano-complesso-argand-gauss">
 <span id="math-hs-algebra-complex-complex-plane"></span><h2><span class="section-number">20.4. </span>Rappresentazione dei numeri complessi nel piano complesso (Argand-Gauss)<a class="headerlink" href="#rappresentazione-dei-numeri-complessi-nel-piano-complesso-argand-gauss" title="Permalink to this heading">#</a></h2>
@@ -641,14 +649,14 @@ document.write(`
     &amp; = (x_1 + i y_1 ) (x_2 + i y_2) = (x_1 x_2 - y_1 y_2)+i(x_1 y_2 + y_1 x_2) \\
   \end{aligned}\end{split}\]</div>
 </div>
-<div class="section" id="complesso-coniugato-e">
-<h3><span class="section-number">20.5.2. </span>Complesso coniugato e<a class="headerlink" href="#complesso-coniugato-e" title="Permalink to this heading">#</a></h3>
+<div class="section" id="complesso-coniugato-e-modulo">
+<h3><span class="section-number">20.5.2. </span>Complesso coniugato e modulo<a class="headerlink" href="#complesso-coniugato-e-modulo" title="Permalink to this heading">#</a></h3>
 <p><strong>Complesso coniugato.</strong> Il complesso coniugato <span class="math notranslate nohighlight">\(z^*\)</span> di un numero compless <span class="math notranslate nohighlight">\(z \in \mathbb{C}\)</span> è il numero complesso con stessa parte reale e parte immaginaria opposta. Analogamente ha stesso modulo e argomento (definito tra <span class="math notranslate nohighlight">\(-\pi\)</span> e <span class="math notranslate nohighlight">\(\pi\)</span>) opposto</p>
 <div class="math notranslate nohighlight">
 \[z^* := x - i y = r e^{-i\theta} \]</div>
 <p>E” immediato <a class="reference internal" href="complex-algebra-problems.html#math-hs-algebra-complex-problems-operations-cc-re-im"><span class="std std-ref">verificare</span></a> le seguenti identità</p>
 <div class="math notranslate nohighlight" id="equation-complex-cc-re-im">
-<span class="eqno">(20.4)<a class="headerlink" href="#equation-complex-cc-re-im" title="Permalink a questa equazione">#</a></span>\[\begin{split}\begin{aligned}
+<span class="eqno">(20.5)<a class="headerlink" href="#equation-complex-cc-re-im" title="Permalink a questa equazione">#</a></span>\[\begin{split}\begin{aligned}
   \text{re}\{ z \} &amp; = x = \frac{z + z^*}{2} \\
   \text{im}\{ z \} &amp; = y = \frac{z - z^*}{2i} \\
 \end{aligned}\end{split}\]</div>
@@ -832,12 +840,12 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../exponential_logarithm-proof.html"
+       href="../precalculus/exponential_logarithm-notes.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">precedente</p>
-        <p class="prev-next-title"><span class="section-number">19.4. </span>Esponenziale e logaritmo - dimostrazioni</p>
+        <p class="prev-next-title"><span class="section-number">19.4. </span>Note e dimostrazioni</p>
       </div>
     </a>
     <a class="right-next"
@@ -870,7 +878,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rappresentazione-dei-numeri-complessi-nel-piano-complesso-argand-gauss">20.4. Rappresentazione dei numeri complessi nel piano complesso (Argand-Gauss)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni-con-i-numeri-complessi">20.5. Operazioni con i numeri complessi</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#somma-e-prodotto">20.5.1. Somma e prodotto</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#complesso-coniugato-e">20.5.2. Complesso coniugato e</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#complesso-coniugato-e-modulo">20.5.2. Complesso coniugato e modulo</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#potenze-e-radici">20.5.3. Potenze e radici</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#potenza-intera-p-in-mathbb-z">20.5.3.1. Potenza intera, <span class="math notranslate nohighlight">\(p \in \mathbb{Z}\)</span>.</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#radici-o-potenza-frac-1-p-p-in-mathbb-z">20.5.3.2. Radici o potenza <span class="math notranslate nohighlight">\(\frac{1}{p}, \ p \in \mathbb{Z}\)</span></a></li>

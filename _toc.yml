@@ -65,9 +65,11 @@ parts:
   - file: ch/precalculus/polynomials
   - file: ch/series
   - file: ch/trigonometry
-  - file: ch/exponential_logarithm
+  - file: ch/precalculus/exponential_logarithm
     sections:
-    - file: ch/exponential_logarithm-proof
+    - file: ch/precalculus/exponential_logarithm-problems
+    - file: ch/precalculus/exponential_logarithm-sol
+    - file: ch/precalculus/exponential_logarithm-notes
   - file: ch/algebra/complex-algebra
     sections:
     - file: ch/algebra/complex-algebra-problems

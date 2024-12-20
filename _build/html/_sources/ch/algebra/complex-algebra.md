@@ -77,6 +77,13 @@ $$e^{i \theta} = \cos \theta + i \sin \theta \ ,$$ (complex:euler)
 
 con $\theta \in \mathbb{R}$. Vengono riportate in appendice due [dimostrazioni della formula di Eulero](math-hs:algebra:complex:notes:euler), una usando la definizione di esponenziale complesso e la formula di de Moivre, l'altra usando le serie di Taylor.
 
+Grazie alla formula di Eulero e alle proprietà elementari delle funzioni trigonometriche, $\cos(-\theta) = \cos \theta$, $\sin(-\theta) = -\sin \theta$, con $\theta \in \mathbb{R}$, segue
+
+$$\begin{aligned}
+ \cos \theta & = \frac{e^{i\theta} + e^{-i\theta}}{2} \\
+ \sin \theta & = \frac{e^{i\theta} - e^{-i\theta}}{2i} \\
+\end{aligned}$$ (complex:cos-sin)
+
 
 (math-hs:algebra:complex:complex-plane)=
 ## Rappresentazione dei numeri complessi nel piano complesso (Argand-Gauss)
@@ -119,7 +126,7 @@ Si rivisitano ora le operazioni già presentate, mostrando la convenienza della 
     & = (x_1 + i y_1 ) (x_2 + i y_2) = (x_1 x_2 - y_1 y_2)+i(x_1 y_2 + y_1 x_2) \\
   \end{aligned}$$
 
-### Complesso coniugato e 
+### Complesso coniugato e modulo
 **Complesso coniugato.** Il complesso coniugato $z^*$ di un numero compless $z \in \mathbb{C}$ è il numero complesso con stessa parte reale e parte immaginaria opposta. Analogamente ha stesso modulo e argomento (definito tra $-\pi$ e $\pi$) opposto
 
   $$z^* := x - i y = r e^{-i\theta} $$
