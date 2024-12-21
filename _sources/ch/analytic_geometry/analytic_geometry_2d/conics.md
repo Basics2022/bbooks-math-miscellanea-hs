@@ -7,8 +7,8 @@ Queste curve compaiono in diversi ambiti della matematica e della fisica. Ad ese
 - in **geometria**: le coniche sono le intersezioni tra un piano e un doppio cono circolare retto; l'inclinazione del piano rispetto all'asse del cono determina il tipo di conica: cerchio, ellisse, parabola o iperbole.
 - in **ottica**: le coniche hanno proprietà geometriche che risultano utili in **ottica**, e nella trasmissione delle informazioni (le antenne paraboliche si chiamano così, poiché hanno la forma di un paraboloide)
 - in **meccanica**: le traiettorie di due corpi isolati soggetti alla mutua interazione con intensità inversamente proprozionale al quadrato della loro distanza sono coniche; sono coniche quindi le orbite
-- di due corpi soggetti a mutua gravitazione in astronomia
-- di due corpi soggetti a mutua interazione elettrica
+  - di due corpi soggetti a mutua gravitazione in astronomia
+  - di due corpi soggetti a mutua interazione elettrica
 
 <!--
 ```{list-table}
