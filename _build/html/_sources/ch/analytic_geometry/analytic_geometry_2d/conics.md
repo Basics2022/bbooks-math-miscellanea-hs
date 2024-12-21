@@ -1,18 +1,76 @@
 (geometry:analytic:2d:conics)=
 # Coniche
 
-Le coniche sono curve che possono essere ottenute come [intersezione tra un piano e un (doppio) cono circolare retto](geometry:analytic:3d:cone:conics).
+Le coniche sono curve che possono essere ottenute come intersezione tra un piano e un (doppio) cono circolare retto, come [dimostrabile con gli strumenti della geometria nello spazio](geometry:analytic:3d:cone:conics).
 
 Queste curve compaiono in diversi ambiti della matematica e della fisica. Ad esempio,
+- in **geometria**: le coniche sono le intersezioni tra un piano e un doppio cono circolare retto; l'inclinazione del piano rispetto all'asse del cono determina il tipo di conica: cerchio, ellisse, parabola o iperbole.
 - in **ottica**: le coniche hanno proprietà geometriche che risultano utili in **ottica**, e nella trasmissione delle informazioni (le antenne paraboliche si chiamano così, poiché hanno la forma di un paraboloide)
-- in **astronomia**: le traiettorie di due corpi isolati soggetti alla mutua interazione gravitazionale sono delle coniche, come mostrato nell'analisi del problema dei due corpi in meccanica classica.
+- in **meccanica**: le traiettorie di due corpi isolati soggetti alla mutua interazione con intensità inversamente proprozionale al quadrato della loro distanza sono coniche; sono coniche quindi le orbite
+  - di due corpi soggetti a mutua gravitazione in astronomia
+  - di due corpi soggetti a mutua interazione elettrica
 
+<!--
 ```{list-table}
 :header-rows: 0
 * - ![](../../../media/analytic-geometry-conics-optics-ellipses.png)
   - ![](../../../media/analytic-geometry-conics-optics-parabola.png)
   - ![](../../../media/analytic-geometry-conics-optics-hyperbola.png)
 ```
+-->
+
+`````{only} latex
+**Rappresentazione grafica delle coniche come intersezione tra cono e piano.** ([Zoom in appendice](geometry:analytic:2d:notes:conics:cone))
+```{list-table}
+:header-rows: 0
+* - ![](../../../media/geometry/cone-circumference.png)
+  - ![](../../../media/geometry/cone-ellipse.png)
+  - ![](../../../media/geometry/cone-parabola.png)
+  - ![](../../../media/geometry/cone-hyperbola.png)
+```
+**Rappresentazione grafica delle proprietà ottiche.** ([Zoom in appendice](geometry:analytic:2d:notes:conics:optics))
+```{list-table}
+:header-rows: 0
+* - ![](../../../media/tikz/geometry/circumference-ray.svg)
+  - ![](../../../media/tikz/geometry/ellipses-ray.svg)
+  - ![](../../../media/tikz/geometry/parabola-ray.svg)
+  - ![](../../../media/tikz/geometry/hyperbola-ray.svg)
+```
+
+`````
+
+`````{only} html
+
+````{dropdown} Sezioni di cono
+
+```{list-table}
+:header-rows: 0
+* - ![](../../../media/geometry/cone-circumference.png)
+  - ![](../../../media/geometry/cone-ellipse.png)
+```
+
+```{list-table}
+:header-rows: 0
+* - ![](../../../media/geometry/cone-parabola.png)
+  - ![](../../../media/geometry/cone-hyperbola.png)
+```
+````
+
+````{dropdown} Proprietà ottiche
+```{list-table}
+:header-rows: 0
+* - ![](../../../media/tikz/geometry/circumference-ray.svg)
+  - ![](../../../media/tikz/geometry/ellipses-ray.svg)
+```
+```{list-table}
+:header-rows: 0
+* - ![](../../../media/tikz/geometry/parabola-ray.svg)
+  - ![](../../../media/tikz/geometry/hyperbola-ray.svg)
+```
+
+````
+
+`````
 
 Le coniche possono essere definite in maniera implicita, senza fare uso di sistemi di coordinate. Partendo da definizioni implicite equivalenti, e sfruttando l'arbitrarietà nel definire il sistema di coordinate più comodo, vengono ricavate 
 - prima, le equazioni delle coniche in **forma canonica** con un'opportuna scelta di sistemi di coordinate 
