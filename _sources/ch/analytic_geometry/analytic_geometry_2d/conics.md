@@ -4,7 +4,7 @@
 Le coniche sono curve che possono essere ottenute come intersezione tra un piano e un (doppio) cono circolare retto, come [dimostrabile con gli strumenti della geometria nello spazio](geometry:analytic:3d:cone:conics).
 
 Queste curve compaiono in diversi ambiti della matematica e della fisica. Ad esempio,
-- in **geometria**: 
+- in **geometria**: le coniche sono le intersezioni tra un piano e un doppio cono circolare retto; l'inclinazione del piano rispetto all'asse del cono determina il tipo di conica: cerchio, ellisse, parabola o iperbole.
 - in **ottica**: le coniche hanno proprietà geometriche che risultano utili in **ottica**, e nella trasmissione delle informazioni (le antenne paraboliche si chiamano così, poiché hanno la forma di un paraboloide)
 - in **meccanica**: le traiettorie di due corpi isolati soggetti alla mutua interazione con intensità inversamente proprozionale al quadrato della loro distanza sono coniche; sono coniche quindi le orbite
 - di due corpi soggetti a mutua gravitazione in astronomia
@@ -18,6 +18,27 @@ Queste curve compaiono in diversi ambiti della matematica e della fisica. Ad ese
   - ![](../../../media/analytic-geometry-conics-optics-hyperbola.png)
 ```
 -->
+
+`````{only} latex
+**Rappresentazione grafica delle coniche come intersezione tra cono e piano.** ([Zoom in appendice](geometry:analytic:2d:notes:conics:cone))
+```{list-table}
+:header-rows: 0
+* - ![](../../../media/geometry/cone-circumference.png)
+  - ![](../../../media/geometry/cone-ellipse.png)
+  - ![](../../../media/geometry/cone-parabola.png)
+  - ![](../../../media/geometry/cone-hyperbola.png)
+```
+**Rappresentazione grafica delle proprietà ottiche.** ([Zoom in appendice](geometry:analytic:2d:notes:conics:optics))
+```{list-table}
+:header-rows: 0
+* - ![](../../../media/tikz/geometry/circumference-ray.svg)
+  - ![](../../../media/tikz/geometry/ellipses-ray.svg)
+  - ![](../../../media/tikz/geometry/parabola-ray.svg)
+  - ![](../../../media/tikz/geometry/hyperbola-ray.svg)
+```
+
+`````
+
 `````{only} html
 
 ````{dropdown} Proprietà ottiche
