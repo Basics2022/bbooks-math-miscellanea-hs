@@ -1,11 +1,14 @@
 (geometry:analytic:2d:conics)=
 # Coniche
 
-Le coniche sono curve che possono essere ottenute come [intersezione tra un piano e un (doppio) cono circolare retto](geometry:analytic:3d:cone:conics).
+Le coniche sono curve che possono essere ottenute come intersezione tra un piano e un (doppio) cono circolare retto, come [dimostrabile con gli strumenti della geometria nello spazio](geometry:analytic:3d:cone:conics).
 
 Queste curve compaiono in diversi ambiti della matematica e della fisica. Ad esempio,
+- in **geometria**: 
 - in **ottica**: le coniche hanno proprietà geometriche che risultano utili in **ottica**, e nella trasmissione delle informazioni (le antenne paraboliche si chiamano così, poiché hanno la forma di un paraboloide)
-- in **astronomia**: le traiettorie di due corpi isolati soggetti alla mutua interazione gravitazionale sono delle coniche, come mostrato nell'analisi del problema dei due corpi in meccanica classica.
+- in **meccanica**: le traiettorie di due corpi isolati soggetti alla mutua interazione con intensità inversamente proprozionale al quadrato della loro distanza sono coniche; sono coniche quindi le orbite
+- di due corpi soggetti a mutua gravitazione in astronomia
+- di due corpi soggetti a mutua interazione elettrica
 
 <!--
 ```{list-table}
