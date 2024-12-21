@@ -41,20 +41,6 @@ Queste curve compaiono in diversi ambiti della matematica e della fisica. Ad ese
 
 `````{only} html
 
-````{dropdown} Proprietà ottiche
-```{list-table}
-:header-rows: 0
-* - ![](../../../media/tikz/geometry/circumference-ray.svg)
-  - ![](../../../media/tikz/geometry/ellipses-ray.svg)
-```
-```{list-table}
-:header-rows: 0
-* - ![](../../../media/tikz/geometry/parabola-ray.svg)
-  - ![](../../../media/tikz/geometry/hyperbola-ray.svg)
-```
-
-````
-
 ````{dropdown} Sezioni di cono
 
 ```{list-table}
@@ -69,6 +55,21 @@ Queste curve compaiono in diversi ambiti della matematica e della fisica. Ad ese
   - ![](../../../media/geometry/cone-hyperbola.png)
 ```
 ````
+
+````{dropdown} Proprietà ottiche
+```{list-table}
+:header-rows: 0
+* - ![](../../../media/tikz/geometry/circumference-ray.svg)
+  - ![](../../../media/tikz/geometry/ellipses-ray.svg)
+```
+```{list-table}
+:header-rows: 0
+* - ![](../../../media/tikz/geometry/parabola-ray.svg)
+  - ![](../../../media/tikz/geometry/hyperbola-ray.svg)
+```
+
+````
+
 `````
 
 Le coniche possono essere definite in maniera implicita, senza fare uso di sistemi di coordinate. Partendo da definizioni implicite equivalenti, e sfruttando l'arbitrarietà nel definire il sistema di coordinate più comodo, vengono ricavate 
