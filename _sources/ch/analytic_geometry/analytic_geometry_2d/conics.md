@@ -19,7 +19,10 @@ Queste curve compaiono in diversi ambiti della matematica e della fisica. Ad ese
 :header-rows: 0
 * - ![](../../../media/tikz/geometry/circumference-ray.svg)
   - ![](../../../media/tikz/geometry/ellipses-ray.svg)
-  - ![](../../../media/tikz/geometry/parabola-ray.svg)
+```
+```{list-table}
+:header-rows: 0
+* - ![](../../../media/tikz/geometry/parabola-ray.svg)
   - ![](../../../media/tikz/geometry/hyperbola-ray.svg)
 ```
 
@@ -27,7 +30,11 @@ Queste curve compaiono in diversi ambiti della matematica e della fisica. Ad ese
 :header-rows: 0
 * - ![](../../../media/geometry/cone-circumference.png)
   - ![](../../../media/geometry/cone-ellipse.png)
-  - ![](../../../media/geometry/cone-parabola.png)
+```
+
+```{list-table}
+:header-rows: 0
+* - ![](../../../media/geometry/cone-parabola.png)
   - ![](../../../media/geometry/cone-hyperbola.png)
 ```
 
