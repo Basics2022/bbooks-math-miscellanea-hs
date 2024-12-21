@@ -17,10 +17,10 @@ Queste curve compaiono in diversi ambiti della matematica e della fisica. Ad ese
 -->
 ```{list-table}
 :header-rows: 0
-* - ![](../../../media/tikz/circumference-ray.svg)
-  - ![](../../../media/tikz/ellipse-ray.svg)
-  - ![](../../../media/tikz/parabola-ray.svg)
-  - ![](../../../media/tikz/hyperbola-ray.svg)
+* - ![](../../../media/tikz/geometry/circumference-ray.svg)
+  - ![](../../../media/tikz/geometry/ellipse-ray.svg)
+  - ![](../../../media/tikz/geometry/parabola-ray.svg)
+  - ![](../../../media/tikz/geometry/hyperbola-ray.svg)
 ```
 
 ```{list-table}
