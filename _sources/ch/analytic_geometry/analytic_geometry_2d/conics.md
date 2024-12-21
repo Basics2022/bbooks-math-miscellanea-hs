@@ -7,11 +7,20 @@ Queste curve compaiono in diversi ambiti della matematica e della fisica. Ad ese
 - in **ottica**: le coniche hanno proprietà geometriche che risultano utili in **ottica**, e nella trasmissione delle informazioni (le antenne paraboliche si chiamano così, poiché hanno la forma di un paraboloide)
 - in **astronomia**: le traiettorie di due corpi isolati soggetti alla mutua interazione gravitazionale sono delle coniche, come mostrato nell'analisi del problema dei due corpi in meccanica classica.
 
+<!--
 ```{list-table}
 :header-rows: 0
 * - ![](../../../media/analytic-geometry-conics-optics-ellipses.png)
   - ![](../../../media/analytic-geometry-conics-optics-parabola.png)
   - ![](../../../media/analytic-geometry-conics-optics-hyperbola.png)
+```
+-->
+```{list-table}
+:header-rows: 0
+* - ![](../../../media/tikz/circumference-ray.svg)
+  - ![](../../../media/tikz/ellipse-ray.svg)
+  - ![](../../../media/tikz/parabola-ray.svg)
+  - ![](../../../media/tikz/hyperbola-ray.svg)
 ```
 
 ```{list-table}
