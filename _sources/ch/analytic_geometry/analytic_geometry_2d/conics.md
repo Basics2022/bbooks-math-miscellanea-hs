@@ -14,6 +14,14 @@ Queste curve compaiono in diversi ambiti della matematica e della fisica. Ad ese
   - ![](../../../media/analytic-geometry-conics-optics-hyperbola.png)
 ```
 
+```{list-table}
+:header-rows: 0
+* - ![](../../../media/geometry/cone-circumference.png)
+  - ![](../../../media/geometry/cone-ellipse.png)
+  - ![](../../../media/geometry/cone-parabola.png)
+  - ![](../../../media/geometry/cone-hyperbola.png)
+```
+
 Le coniche possono essere definite in maniera implicita, senza fare uso di sistemi di coordinate. Partendo da definizioni implicite equivalenti, e sfruttando l'arbitrarietà nel definire il sistema di coordinate più comodo, vengono ricavate 
 - prima, le equazioni delle coniche in **forma canonica** con un'opportuna scelta di sistemi di coordinate 
 - poi, l'equazione in forma generale di una conica nel piano, ottenuta tramite una trasformazione rigida - roto-traslazione - della curva o, viceversa, delle coordinate.
