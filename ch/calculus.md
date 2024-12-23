@@ -28,7 +28,6 @@ Viene introdotto il concetto di **limite** per funzioni reali e viene usato per 
 
 [**Introduzione al calcolo vettoriale su spazi euclidei**](vector-calculus).
 
-
 ```
 
 ```{dropdown} Dipendenze
