@@ -44,10 +44,10 @@ $$\begin{aligned}
 
 ````
 
-(math-hs:algebra:complex:fund-thm)=
+(math-hs:algebra:complex:problems:fund-thm)=
 ## Teorema fondamentale dell'algebra
 
-(math-hs:algebra:complex:fund-thm:ex)=
+(math-hs:algebra:complex:problems:fund-thm:ex)=
 ```{exercise}
 1. Dimostra che $z^2 + 1 = 0$ ha due soluzioni complesse e determinane i valori.
 2. Risolvi $z^3 - 8 = 0$ e rappresenta le radici nel piano complesso.
@@ -83,7 +83,7 @@ $$\begin{aligned}
 
 (math-hs:algebra:complex:problems:equations:eq)=
 ### Equazioni
-[Soluzioni](math-hs:algebra:complex:problems:equations:eq:sol).
+[Soluzioni](math-hs:algebra:complex:sol:equations:eq:sol).
 
 ```{exercise} Equazioni
 
@@ -113,7 +113,7 @@ Risolvere le seguenti equazioni
 (math-hs:algebra:complex:problems:equations:ineq)=
 ### Disequazioni
 
-[Soluzioni](math-hs:algebra:complex:problems:equations:ineq:sol).
+[Soluzioni](math-hs:algebra:complex:sol:equations:ineq:sol).
 
 ```{exercise} Disequazioni
 
@@ -145,7 +145,7 @@ Risolvere le seguenti equazioni
 (math-hs:algebra:complex:problems:equations:sys)=
 ### Sistemi di equazioni
 
-[Soluzioni](math-hs:algebra:complex:problems:equations:sys:sol).
+[Soluzioni](math-hs:algebra:complex:sol:equations:sys:sol).
 
 ```{exercise} Sistemi di equazioni
 

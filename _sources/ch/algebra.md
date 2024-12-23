@@ -27,7 +27,7 @@ L'algebra si occupa dello studio di:
 
 [**Algebra sui numeri complessi, $\mathbb{C}$**](math-hs:algebra:complex).
 
-[**Algebra di insiemi**](math-hs:set:algebra:link).
+[**Algebra di insiemi**](math-hs:algebra:set:link).
 
 ```
 
