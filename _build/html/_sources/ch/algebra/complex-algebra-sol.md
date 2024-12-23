@@ -1,31 +1,31 @@
-(math-hs:algebra:complex:problems)=
+(math-hs:algebra:complex:sol)=
 # Problemi - soluzioni
 
-(math-hs:algebra:complex:problems:def)=
+(math-hs:algebra:complex:sol:def)=
 ## Definizioni
 
-(math-hs:algebra:complex:problems:complex-plane:sol)=
+(math-hs:algebra:complex:sol:complex-plane:sol)=
 ## Rappresentazione dei numeri complessi nel piano complesso (Argand-Gauss)
 
-(math-hs:algebra:complex:problems:operations:sol)=
+(math-hs:algebra:complex:sol:operations:sol)=
 ## Operazioni con i numeri complessi
 
 Soluzione degli [esercizi sulle operazioni con i numeri complessi](math-hs:algebra:complex:problems:operations:cc:re-im).
 
-(math-hs:algebra:complex:fund-thm:sol)=
+(math-hs:algebra:complex:sol:fund-thm:sol)=
 ## Teorema fondamentale dell'algebra
 
-Soluzione degli [esercizi sul teorema fondmaentale dell'algebra](math-hs:algebra:complex:fund-thm:ex).
+Soluzione degli [esercizi sul teorema fondmaentale dell'algebra](math-hs:algebra:complex:problems:fund-thm).
 
-(math-hs:algebra:complex:problems:geometry-2d:sol)=
+(math-hs:algebra:complex:sol:geometry-2d:sol)=
 ## Numeri complessi e geometria nel piano euclideo
 Soluzione degli [esercizi sui numeri complessi e la geometria nel piano euclideo](math-hs:algebra:complex:problems:geometry-2d:ex).
 
 
-(math-hs:algebra:complex:problems:equations:sol)=
+(math-hs:algebra:complex:sol:equations:sol)=
 ## Equazioni e disequazioni con i numeri complessi
 
-(math-hs:algebra:complex:problems:equations:eq:sol)=
+(math-hs:algebra:complex:sol:equations:eq:sol)=
 ### Equazioni
 Soluzione degli [esercizi su equazioni con i numeri complessi](math-hs:algebra:complex:problems:equations:eq)
 
@@ -252,7 +252,7 @@ $$
 
 ````
 
-(math-hs:algebra:complex:problems:equations:ineq:sol)=
+(math-hs:algebra:complex:sol:equations:ineq:sol)=
 ### Disequazioni
 Soluzione degli [esercizi su disequazioni con i numeri complessi](math-hs:algebra:complex:problems:equations:ineq)
 
@@ -599,7 +599,7 @@ $$
 
 ````
 
-(math-hs:algebra:complex:problems:equations:sys:sol)=
+(math-hs:algebra:complex:sol:equations:sys:sol)=
 ### Sistemi
 Soluzione degli [esercizi su sistemi di equazioni con i numeri complessi](math-hs:algebra:complex:problems:equations:sys)
 

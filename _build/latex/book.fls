@@ -449,10 +449,6 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/rsfs/rsfs7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/rsfs/rsfs5.tfm
 OUTPUT book.toc
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
@@ -477,6 +473,10 @@ INPUT ggb-inverse.png
 INPUT ggb-inverse.png
 INPUT ggb-circle.png
 INPUT ggb-circle.png
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
 INPUT coordinates-cartesian.png
 INPUT coordinates-cartesian.png
 INPUT coordinates-polar.png
@@ -687,6 +687,14 @@ INPUT ../../media/tikz/complex/ex-in-11.pdf
 INPUT ../../media/tikz/complex/ex-in-11-a.pdf
 INPUT ../../media/tikz/complex/ex-sy-01.pdf
 INPUT ../../media/tikz/complex/ex-sy-01.pdf
+INPUT limit-finite-finite-0.png
+INPUT limit-finite-finite-0.png
+INPUT limit-finite-infinite-0.png
+INPUT limit-finite-infinite-0.png
+INPUT limit-finite-finite-0.png
+INPUT limit-finite-finite-0.png
+INPUT limit-finite-infinite-0.png
+INPUT limit-finite-infinite-0.png
 INPUT book.ind
 INPUT book.ind
 INPUT book.aux

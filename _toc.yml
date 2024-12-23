@@ -10,9 +10,9 @@ parts:
   numbered: false
   chapters:
   - file: ch/program
-    sections:
-    - file: ch/program/current-guidelines-italy
-    - file: ch/program/delta
+#   sections:
+#   - file: ch/program/current-guidelines-italy
+#   - file: ch/program/delta
 - caption: Insiemistica e logica
   numbered: True
   chapters:

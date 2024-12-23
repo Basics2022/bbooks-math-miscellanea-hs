@@ -6,9 +6,11 @@
 (math-hs:precalculus:real-functions)=
 # Funzioni reali a variabile reale, $f: \mathbb{R} \rightarrow \mathbb{R}$
 
-Le funzioni reali a variabile reale saranno oggetto di studio dettagliato del [calcolo infinitesimale](infinitesimal-calculus).
+Le funzioni reali a variabile reale saranno oggetto di studio dettagliato del [calcolo infinitesimale](infinitesimal-calculus:analysis).
 
 ```{prf:definition} Funzione a valore reale di variabile reale
+:label: precalculus-real-fun
+
 Una funzione a valore reale di una variabile reale è una [funzione](math-hs:fun) $f: A \in \mathbb{R} \rightarrow \mathbb{R}$ è una funzione che ha come dominio un sottoinsieme $A$ dei numeri reali e condominio $\mathbb{R}$,
 
 $$y = f(x) \ ,$$

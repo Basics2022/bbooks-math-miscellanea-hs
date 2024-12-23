@@ -37,7 +37,7 @@ Vale dunque la pena introdurre la funzione esponenziale $e^x$, e discuterne alcu
 
 In questo capitolo ci si concentra sulla funzione esponenziale sul campo dei numeri reali, mentre si rimanda al capitolo sui [numeri complessi](math-hs:algebra:complex) per la definizione dell'esponenziale complesso, e al capitolo sulle [equazioni differenziali ordinarie](ode-hs) per le prime applicazioni fondamentali dell'esponenziale, con esponenti reali o complessi.
 
-(math-hs:exp:def:ex)=
+(math-hs:exp:def)=
 ### Funzione esponenziale, $e^x$
 
 **Definizione.** Per ogni $x \in \mathbb{R}$, è possibile dare diverse definizioni equivalenti della funzione esponenziale $f(x) = e^x$, che può:

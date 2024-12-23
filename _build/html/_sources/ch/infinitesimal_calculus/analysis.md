@@ -1,7 +1,7 @@
 (infinitesimal-calculus:analysis)=
 # Introduzione all'analisi
 
-In questa sezione viene richiamato il concetto di funzione introdotto nella sezione [precalcolo](math-hs:precalculus). Viene introdotto il concetto di [limite](infinitesimal-calculus:limits) e definito in termini topologici (intervalli, punti di accumulazione, insiemi aperti e chiusi,...). Il concetto di limite viene utilizzato per dare una definizione di [funzione continua](). Vengono poi presentati alcuni teoremi e proprietà di limiti e funzioni continue.
+In questa sezione viene richiamato il concetto di funzione introdotto nella sezione [precalcolo](math-hs:precalculus). Viene introdotto il concetto di [limite](infinitesimal-calculus:limits) e definito in termini topologici (intervalli, punti di accumulazione, insiemi aperti e chiusi,...). Il concetto di limite viene utilizzato per dare una definizione di [funzione continua](infinitesimal-calculus:continuous-fun). Vengono poi presentati alcuni teoremi e proprietà di limiti e funzioni continue.
 
 <!-- Real functions: f: R -> R -->
 (infinitesimal-calculus:analysis:real-functions)=
@@ -26,6 +26,12 @@ $$\forall \varepsilon > 0 \quad \exists U_{x_0,\delta} \quad {t.c.} \quad |f(x) 
 
 dove la condizione sull'intorno di un punto $x_0$ al finito per funzioni reali può essere riscritta come $0 < | x - x_0 | <  \delta$ per un intorno simmetrico del punto $x_0$.
 
+```{list-table}
+:header-rows: 0
+* - ![](../../media/tikz/analysis/limit-finite-finite-0.svg)
+  - ![](../../media/tikz/analysis/limit-finite-infinite-0.svg)
+```
+
 **Limite infinito al finito**
 
 $$\forall M > 0 \quad \exists U_{x_0,\delta} \quad {t.c.} \quad |f(x)| > M \quad \forall x \in U_{x_0, \delta} \backslash \{x_0\}$$
@@ -49,6 +55,8 @@ dove la condizione sull'intorno di un punto all'infinito per funzioni reali può
 (infinitesimal-calculus:continuous-fun:def)=
 ### Definizione
 ```{prf:definition} Funzione continua
+:label: analysis-continuous-fun
+
 Una funzione reale $f: D \in \mathbb{R} \rightarrow \mathbb{R}$ è continua in un punto $x_0 \in D$ <!--se la funzione è definita nel punto,--> se esiste il limite della funzione e coincide con il valore della funzione
 
 $$\lim_{x \rightarrow x_0} f(x) = f(x_0) \ .$$

@@ -15,7 +15,7 @@ con $\xi_k \in [x_{k-1}, x_k]$.
 ```
 
 ```{prf:definition} Integrale di Riemann
-:label: infinitesimal-calculus:integrals:def:riemann-sum
+:label: infinitesimal-calculus:integrals:def:riemann-integral
 Sia $\Delta x = \max_k (x_{k} - x_{k-1})$, l'integrale definito di Riemann è  il limite per $\Delta x \rightarrow 0$ della somma di Riemann $\sigma$
 
 $$\int_a^b f(x) \ dx = \lim_{\Delta x \rightarrow 0} \sigma_P \ .$$ (infinitesimal-calculus:integrals:riemann:def)

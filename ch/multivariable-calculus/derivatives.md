@@ -2,6 +2,8 @@
 # Derivate di funzioni di più variabili
 ## Derivate parziali
 ```{prf:definition} Derivata parziale
+:label: multivariable-calculus-partial-derivative
+
 Data una funzione di più variabili $(x_1, x_2, \dots, x_n) \in \mathbb{R}^n$, la **derivata parziale** rispetto alla variabile $x_1$, se esiste, è la derivata della funzione calcolata tenendo costanti tutte le altre variabili,
 
 $$\frac{\partial f}{\partial x_1}(x_1, x_2, \dots, x_n) := \lim_{h_1 \rightarrow 0} \frac{f(x_1+h_1, x_2, \dots, x_n) - f(x_1, x_2, \dots, x_n)}{h_1}$$
