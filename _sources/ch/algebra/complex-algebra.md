@@ -14,9 +14,13 @@ Esistono collegamenti a questo capitolo da:
 - la sezione sull'[algebra sui numeri complessi](math-hs:algebra:complex:link) nel capitolo sull'[algebra](math-hs:algebra)
 
 
-<span style="color:red">In questa sezione viene introdotto l'insieme dei numeri complessi e le operazioni su di essi che permettono di definire l'algebra complessa.
+In questa sezione viene definito l'insieme dei numeri complessi e alcune operazioni su di essi che permettono di introdurre l'algebra complessa. L'insieme dei numeri complessi $\mathbb{C}$ è l'insieme di quei numeri che possono essere scritti come 
 
-I numeri reali sono sottoinsieme dei numeri complessi, $\mathbb{R} \subset \mathbb{C}$. La definizione di operazioni e funzioni, come l'esponenziale, sui numeri complessi viene data come **estensione ai numeri complessi** delle definizioni note sui numeri reali.</span>
+$$z = x + i y \ ,$$
+
+dove $x, y \in \mathbb{R}$ e $i$ è l'unità immaginaria definita come $i = \sqrt{-1}$.
+
+I numeri reali sono sottoinsieme dei numeri complessi, $\mathbb{R} \subset \mathbb{C}$, composto da quei numeri complessi con parte immaginaria nulla. La definizione di operazioni e funzioni - come l'esponenziale - sui numeri complessi viene costruita come **estensione ai numeri complessi** delle definizioni di tali operazioni e funzioni sui numeri reali. Quando le funzioni e le operazioni vengono definite per i numeri complessi vengono applicate a numeri reali, si ritrovano le definizioni e i risultati già noti sull'insieme dei numeri reali.
 
 I numeri complessi risultano utili in molti ambiti della matematica e della scienza, dalla fisica all'ingegneria:
 - teorema fondamentale dell'algebra
@@ -46,7 +50,7 @@ L'insieme dei numeri complessi, indicato con $\mathbb{C}$, è l'insieme di quei 
 
 $$z = x + i y \ ,$$
 
-con $x, \ y \in \mathbb{R}$.
+con $x, \ y \in \mathbb{R}$. Il numero $x$ viene definito *parte reale*, il numero $y$ *parte immaginaria*.
 ```
 
 (math-hs:algebra:complex:operations-0)=
