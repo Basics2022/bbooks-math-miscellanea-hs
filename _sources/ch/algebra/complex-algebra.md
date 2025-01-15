@@ -53,6 +53,7 @@ $$z = x + i y \ ,$$
 con $x, \ y \in \mathbb{R}$. Il numero $x$ viene definito *parte reale*, il numero $y$ *parte immaginaria*.
 ```
 
+
 (math-hs:algebra:complex:operations-0)=
 ## Operazioni con i numeri complessi - in forma cartesiana
 
@@ -61,6 +62,21 @@ con $x, \ y \in \mathbb{R}$. Il numero $x$ viene definito *parte reale*, il nume
 - potenza con esponente naturale, $n \in \mathbb{N}$: $z^n = (x + i y)^n = \underbrace{(x+iy) \dots (x+iy)}_{n \text{ volte}}$
 - complesso coniugato: $z^* := (x+iy)^* = x - i y$
 - modulo: $|z| := \sqrt{z^* z} = \sqrt{x^2 + y^2}$
+
+
+```{example} Prime operazioni con i numeri complessi
+Dati i due numeri complessi $z_1 = 3 - 2 i$, $z_2 = -1 + 3 i$,
+
+- la loro somma è
+
+   $$z_1 + z_2 = (3 - 2i) + (-1 + 3 i) = (3-1) +(-2+3)i = 2 + i$$
+
+- il loro prodotto è
+
+   $$z_1 \, z_2 = (3-2i)(-1+3i) = ( 3 \cdot (-1) + 3 \cdot (3i) - 2i \cdot (-1) - 2i \cdot (3i) ) = 
+    (-3 + i ( 9 + 2 ) - 2 \cdot 3 \underbrace{i^2}_{-1} ) = 3 + 11 i$$
+
+```
 
 (math-hs:algebra:complex:demoivre-euler)=
 ## Formula di de Moivre, esponenziale complesso e formula di Eulero
