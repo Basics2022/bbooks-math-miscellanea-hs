@@ -53,7 +53,6 @@ $$z = x + i y \ ,$$
 con $x, \ y \in \mathbb{R}$. Il numero $x$ viene definito *parte reale*, il numero $y$ *parte immaginaria*.
 ```
 
-
 (math-hs:algebra:complex:operations-0)=
 ## Operazioni con i numeri complessi - in forma cartesiana
 
@@ -64,7 +63,9 @@ con $x, \ y \in \mathbb{R}$. Il numero $x$ viene definito *parte reale*, il nume
 - modulo: $|z| := \sqrt{z^* z} = \sqrt{x^2 + y^2}$
 
 
-```{example} Prime operazioni con i numeri complessi
+```{prf:example} Prime operazioni con i numeri complessi
+:class: dropdown
+
 Dati i due numeri complessi $z_1 = 3 - 2 i$, $z_2 = -1 + 3 i$,
 
 - la loro somma è
@@ -73,8 +74,22 @@ Dati i due numeri complessi $z_1 = 3 - 2 i$, $z_2 = -1 + 3 i$,
 
 - il loro prodotto è
 
-   $$z_1 \, z_2 = (3-2i)(-1+3i) = ( 3 \cdot (-1) + 3 \cdot (3i) - 2i \cdot (-1) - 2i \cdot (3i) ) = 
-    (-3 + i ( 9 + 2 ) - 2 \cdot 3 \underbrace{i^2}_{-1} ) = 3 + 11 i$$
+   $$\begin{aligned}
+    z_1 \, z_2 = (3-2i)(-1+3i) & = ( 3 \cdot (-1) + 3 \cdot (3i) - 2i \cdot (-1) - 2i \cdot (3i) ) = \\
+    & = (-3 + i ( 9 + 2 ) - 2 \cdot 3 \underbrace{i^2}_{-1} ) = 3 + 11 i
+   \end{aligned}$$
+
+- la potenza cubica di $z_1$ è
+
+   $$z_1^3 = z_1 \, z_1 \, z_1 = (3-2i)(3-2i)(3-2i) = (5-12 i)(3-2i) = -9 - 46 i$$
+
+- il complesso coniugato di $z_1$ è
+
+   $$z_1^* = 3 + 2 i$$
+
+- il modulo di $z_1$ è
+   
+   $$|z_1| = \sqrt{z_1^* z_1} = \sqrt{(3+2 i)(3-2i)} = \sqrt{9+4} = \sqrt{13} \ .$$
 
 ```
 
@@ -194,7 +209,7 @@ La potenza con esponente razionale, $p, q \in \mathbb{Z}$, $q \ne 0$, $\frac{p}{
   Esistono quindi $q$ risultati distinti per $n \in \{ 0, 1, 2, \dots, q-1 \}$.
 
 ### Altre operazioni
-**Potenza con esponente irrazinoale.** La potenza di un numero complesso $z^p$ con esponente reale irrazionale $p \in \mathbb{R} \backslash \mathbb{Q}$ produce gli infiniti numeri complessi con modulo $r^p$ e *argomento $p \theta + 2 \pi n p$ qualsiasi, per $n \in \mathbb{Z}$*
+**Potenza con esponente irrazionale.** La potenza di un numero complesso $z^p$ con esponente reale irrazionale $p \in \mathbb{R} \backslash \mathbb{Q}$ produce gli infiniti numeri complessi con modulo $r^p$ e *argomento $p \theta + 2 \pi n p$ qualsiasi, per $n \in \mathbb{Z}$*
 
 **Potenza qualsiasi.** Per la discussione di una [potenza qualsiasi](math-hs:algebra:complex:notes:fun:power) di un numero complesso si rimanda alla sezione sulle funzioni di variabile complessa in appendice.
 

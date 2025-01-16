@@ -1,7 +1,7 @@
 (multivariable-calculus)=
 # Introduzione al calcolo multi-variabile
 
-Questo capitolo è un'introduzione al calcolo per funzioni di più variabili reali a valore reale, $f: A \subset \mathbb{R}^n \rightarrow \mathbb{R}$, estendendo gli strumenti del calcolo introdotti per funzioni a una variabile a funzioni di più variabili,
+Questo capitolo è un'introduzione al calcolo per funzioni di più variabili reali a valore reale, $f: A \subset \mathbb{R}^n \rightarrow \mathbb{R}$, estendendo gli strumenti del calcolo introdotti per funzioni a una variabile a [funzioni di più variabili di più variabili reali a valore reale](math-hs:precalculus:multivariable-real-fun),
 
 $$f(x_1, x_2, \dots, x_n) \ .$$
 

@@ -22,19 +22,21 @@ Viene introdotto il concetto di **limite** per funzioni reali e viene usato per 
 
 [**Calcolo integrale**](infinitesimal-calculus:integrals). Viene data la definizione di **integrale di Riemann** e una sua interpretazione geometrica, legata all'area sottesa dal grafico della funzione. Seguono alcune proprietà degli integrali che permettono di definire l'integrale definito e indefinito, e la primitiva di una funzione. Viene presentato il **teorema fondamentale del calcolo infinitesimale**, che permette di riconoscere l'operazione di integrazione come inversa dell'integrazione. Usando questo risultato, vengono valutati gli *integrali fondamentali*; poche regole di integrazione permettono poi di calcolare l'integrale di funzioni generiche. Infine vengono mostrate alcune applicazioni: ... **todo**
 
-[**Equazioni differenziali ordinarie**](ode-hs). **todo**
+[**Equazioni differenziali ordinarie**](ode-hs). Vengono introdotte le equazioni differenziali ordinarie, e si cerca di trasmettere la rilevanza di queste in molti ambiti scientifici. Vengono definiti i principali problemi che coinvolgono le equazioni differenziali, e vengono presentati i metodi risolutivi di alcuni tipi particolari di ODE: le equazioni differenziali lineari a coefficienti costanti le equazioni differenziali separabili.
 
-[**Introduzione al calcolo multi-variabile**](multivariable-calculus).
+[**Introduzione al calcolo multi-variabile**](multivariable-calculus). Gli strumenti del calcolo introdotti nelle sezioni precedenti per funzioni di variabile reale a valore reale $f: \mathbb{R} \rightarrow \mathbb{R}$ vengono qui estesi alle funzioni di più variabili reali a variabile reale, $g: \mathbb{R}^n \rightarrow \mathbb{R}$.
 
-[**Introduzione al calcolo vettoriale su spazi euclidei**](vector-calculus).
+[**Introduzione al calcolo vettoriale su spazi euclidei**](vector-calculus). Gli strumenti del calcolo sviluppati per le funzioni di più variabili vengono qui estesi per le funzioni scalari e vettoriali definite su spazi euclidei.
 
 ```
 
+<!--
 ```{dropdown} Dipendenze
 ```
 
 ```{dropdown}
 ```
+-->
 
 ```{dropdown} Breve storia dello sviluppo del calcolo
 Gli strumenti matematici del calcolo vengono sviluppati e formalizzati tra la fine del XVII secolo e il XIX secolo, come strumenti necessari alla costruzione delle teorie fisiche della meccanica razionale di Newton prima, e della meccanica dei mezzi continui (fluidi e solidi) poi.

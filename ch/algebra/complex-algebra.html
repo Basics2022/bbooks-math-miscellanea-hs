@@ -261,23 +261,22 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../ode.html">26. Equazioni differenziali ordinarie</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../infinitesimal_calculus/problems.html">27. Calcolo infinitesimale - Problemi</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../multivariable-calculus.html">28. Introduzione al calcolo multi-variabile</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../multivariable-calculus/limits.html">28.1. Limite di una funzione di più variabili</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../multivariable-calculus/derivatives.html">28.2. Derivate di funzioni di più variabili</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../multivariable-calculus/integrals.html">28.3. Integrali su domini multi-dimensionali</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../multivariable-calculus.html">27. Introduzione al calcolo multi-variabile</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../multivariable-calculus/limits.html">27.1. Limite di una funzione di più variabili</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../multivariable-calculus/derivatives.html">27.2. Derivate di funzioni di più variabili</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../multivariable-calculus/integrals.html">27.3. Integrali su domini multi-dimensionali</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../vector-calculus.html">29. Introduzione al calcolo vettoriale su spazi euclidei</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../vector-calculus/derivatives.html">29.1. Operatori differenziali in spazi euclidei</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../vector-calculus/integrals.html">29.2. Integrali in spazi euclidei</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../vector-calculus/problems.html">29.3. Problemi</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../vector-calculus.html">28. Introduzione al calcolo vettoriale su spazi euclidei</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../vector-calculus/derivatives.html">28.1. Operatori differenziali in spazi euclidei</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../vector-calculus/integrals.html">28.2. Integrali in spazi euclidei</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../vector-calculus/problems.html">28.3. Problemi</a></li>
 </ul>
 </li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Statistica</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../statistics.html">30. Introduzione alla statistica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../statistics.html">29. Introduzione alla statistica</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Indice</span></p>
 <ul class="nav bd-sidenav">
@@ -590,7 +589,37 @@ document.write(`
 <li><p>complesso coniugato: <span class="math notranslate nohighlight">\(z^* := (x+iy)^* = x - i y\)</span></p></li>
 <li><p>modulo: <span class="math notranslate nohighlight">\(|z| := \sqrt{z^* z} = \sqrt{x^2 + y^2}\)</span></p></li>
 </ul>
+<div class="proof example dropdown admonition" id="example-1">
+<p class="admonition-title"><span class="caption-number">Example 20.1 </span> (Prime operazioni con i numeri complessi)</p>
+<div class="example-content section" id="proof-content">
+<p>Dati i due numeri complessi <span class="math notranslate nohighlight">\(z_1 = 3 - 2 i\)</span>, <span class="math notranslate nohighlight">\(z_2 = -1 + 3 i\)</span>,</p>
+<ul>
+<li><p>la loro somma è</p>
+<div class="math notranslate nohighlight">
+\[z_1 + z_2 = (3 - 2i) + (-1 + 3 i) = (3-1) +(-2+3)i = 2 + i\]</div>
+</li>
+<li><p>il loro prodotto è</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+    z_1 \, z_2 = (3-2i)(-1+3i) &amp; = ( 3 \cdot (-1) + 3 \cdot (3i) - 2i \cdot (-1) - 2i \cdot (3i) ) = \\
+    &amp; = (-3 + i ( 9 + 2 ) - 2 \cdot 3 \underbrace{i^2}_{-1} ) = 3 + 11 i
+   \end{aligned}\end{split}\]</div>
+</li>
+<li><p>la potenza cubica di <span class="math notranslate nohighlight">\(z_1\)</span> è</p>
+<div class="math notranslate nohighlight">
+\[z_1^3 = z_1 \, z_1 \, z_1 = (3-2i)(3-2i)(3-2i) = (5-12 i)(3-2i) = -9 - 46 i\]</div>
+</li>
+<li><p>il complesso coniugato di <span class="math notranslate nohighlight">\(z_1\)</span> è</p>
+<div class="math notranslate nohighlight">
+\[z_1^* = 3 + 2 i\]</div>
+</li>
+<li><p>il modulo di <span class="math notranslate nohighlight">\(z_1\)</span> è</p>
+<div class="math notranslate nohighlight">
+\[|z_1| = \sqrt{z_1^* z_1} = \sqrt{(3+2 i)(3-2i)} = \sqrt{9+4} = \sqrt{13} \ .\]</div>
+</li>
+</ul>
 </div>
+</div></div>
 <div class="section" id="formula-di-de-moivre-esponenziale-complesso-e-formula-di-eulero">
 <span id="math-hs-algebra-complex-demoivre-euler"></span><h2><span class="section-number">20.3. </span>Formula di de Moivre, esponenziale complesso e formula di Eulero<a class="headerlink" href="#formula-di-de-moivre-esponenziale-complesso-e-formula-di-eulero" title="Permalink to this heading">#</a></h2>
 <p>La formula di <strong>de Moivre</strong> è la relazione</p>
@@ -698,7 +727,7 @@ document.write(`
 </div>
 <div class="section" id="altre-operazioni">
 <h3><span class="section-number">20.5.4. </span>Altre operazioni<a class="headerlink" href="#altre-operazioni" title="Permalink to this heading">#</a></h3>
-<p><strong>Potenza con esponente irrazinoale.</strong> La potenza di un numero complesso <span class="math notranslate nohighlight">\(z^p\)</span> con esponente reale irrazionale <span class="math notranslate nohighlight">\(p \in \mathbb{R} \backslash \mathbb{Q}\)</span> produce gli infiniti numeri complessi con modulo <span class="math notranslate nohighlight">\(r^p\)</span> e <em>argomento <span class="math notranslate nohighlight">\(p \theta + 2 \pi n p\)</span> qualsiasi, per <span class="math notranslate nohighlight">\(n \in \mathbb{Z}\)</span></em></p>
+<p><strong>Potenza con esponente irrazionale.</strong> La potenza di un numero complesso <span class="math notranslate nohighlight">\(z^p\)</span> con esponente reale irrazionale <span class="math notranslate nohighlight">\(p \in \mathbb{R} \backslash \mathbb{Q}\)</span> produce gli infiniti numeri complessi con modulo <span class="math notranslate nohighlight">\(r^p\)</span> e <em>argomento <span class="math notranslate nohighlight">\(p \theta + 2 \pi n p\)</span> qualsiasi, per <span class="math notranslate nohighlight">\(n \in \mathbb{Z}\)</span></em></p>
 <p><strong>Potenza qualsiasi.</strong> Per la discussione di una <a class="reference internal" href="complex-algebra-notes.html#math-hs-algebra-complex-notes-fun-power"><span class="std std-ref">potenza qualsiasi</span></a> di un numero complesso si rimanda alla sezione sulle funzioni di variabile complessa in appendice.</p>
 <p><strong>Esponenziale.</strong> Per la discussione dell”<a class="reference internal" href="complex-algebra-notes.html#math-hs-algebra-complex-notes-fun-exp"><span class="std std-ref">esponenziale complesso</span></a> si rimanda alla sezione sulle funzioni di variabile complessa in appendice.</p>
 <p><strong>Logaritmo.</strong> Per la discussione del <a class="reference internal" href="complex-algebra-notes.html#math-hs-algebra-complex-notes-fun-log"><span class="std std-ref">logaritmo complesso</span></a> si rimanda alla sezione sulle funzioni di variabile complessa in appendice.</p>

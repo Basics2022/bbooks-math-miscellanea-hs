@@ -7,10 +7,11 @@
 (math-hs:series)=
 # Serie e successioni
 
-- successioni numeriche
-- successioni di funzioni
-- serie numeriche
-- serie di funzioni
+Questa sezione è una sezione hard-core e nella sua completezza va ben oltre gli scopi di un corso di matematica a livello di scuola superiore e di molti corsi universitari, ad eccezione delle sole facoltà di matematica e fisica probabilmente.
+
+Di solito, [successioni numeriche](math-hs:series:real:sequences) e le [serie numeriche](math-hs:series:real:series) vengono trattate senza dedicarvi troppo tempo, mostrando alcuni esempi come le serie geometriche; le [successioni di funzioni](math-hs:series:fun:sequences) e [serie di funzioni](math-hs:series:fun:series) vengono trattate in occasione della presentazione della funzione esponenziale sul campo reale e quando vengono introdotte le serie polinomiali di Taylor dopo aver affrontato le derivate; infine possono essere utilizzate sul campo complesso per fornire un'intuizione veloce della formula di Eulero dell'esponenziale di numeri immaginari, senza prestare eccessiva - o nessuna - attenzione ai risultati di convergenza e al soddisfacimento di alcune ipotesi necessarie affinché alcune operazioni siano lecite/valide.<span style="color:red">!!!</span>
+
+<span style="color:red">Per questi motivi, a questo capitolo viene per ora riservata una priorità relativamente bassa nello svolgimento del lavoro.</span>
 
 (math-hs:series:real:sequences)=
 ## Successioni di numeri reali
@@ -190,7 +191,6 @@ si può trovare la relazione $e < 3$.
 
 **todo** *come trovare stime di maggiorazione più restrittive? come trovare approssimazioni di $e$? Cenni al calcolo del valore numerico? Sì, ma anche no...*
 
-
 ```
 
 (math-hs:series:fun:sequences)=
@@ -204,27 +204,40 @@ si può trovare la relazione $e < 3$.
 ### Convergenza
 (math-hs:series:fun:sequences:convergence:point)=
 #### Convergenza puntuale
+```{prf:definition} Convergenza puntuale
 
-**todo** *definizione*
+```
 
 (math-hs:series:fun:sequences:convergence:uniform)=
 #### Convergenza uniforme
 
+```{prf:definition} Convergenza uniforme
 Sia $\{ f_n \}_{n \in \mathbb{N}}$ una successione di funzioni $f_n:  X \rightarrow \mathbb{R}$. La serie converge uniformemente alla funzione $f$ se per ogni $\varepsilon > 0$ esiste $N \in \mathbb{N}$ tale che
 
-$$|f_n(x) - f(x)| < e \ , \qquad \forall x \in X \ ,$$
+$$|f_n(x) - f(x)| < \varepsilon \ , \qquad \forall x \in X \ ,$$
 
 per tutti gli $n > N$.
+```
 
-**Proprietà.**
+**Proprietà.** Sotto opportune ulteriori ipotesi (vedi W.Rudin Principles of Mathematial Analysis[^rudin]), la convergenza uniforme permette di invertire l'ordine delle operazioni di limite, derivata e integrale con la sommatoria nelle serie di funzioni:
 
-- La convergenza uniforme permette di invertire l'ordine delle operazioni di limite, derivata e integrale con la sommatoria nelle serie di funzioni:
-  - data una successione di funzioni derivatbili $f_n(x)$, che convergono uniformemente a $f(x)$ e le cui derivate convergono uniformemente a $g(x)$, allora
+[^rudin]: W.Rudin, *Principles of Mathematial Analysis*, Third Edition
 
-     $$f'(x) = g(x)$$
-  - ...
+```{admonition} Convergenza uniforme e il limite
+Data una successione di funzioni derivatbili $f_n(x)$, ...
 
-- ...
+```
+
+```{admonition} Convergenza uniforme e la derivata
+Data una successione di funzioni derivatbili $f_n(x)$, ...
+
+$$f'(x) = g(x)$$
+
+```
+```{admonition} Convergenza uniforme e l'integrale
+Data una successione di funzioni derivatbili $f_n(x)$, ...
+
+```
 
 **todo** discutere differenze tra i due tipi di convergenza; discutere i limiti della convergenza puntuale; discutere le proprietà
 

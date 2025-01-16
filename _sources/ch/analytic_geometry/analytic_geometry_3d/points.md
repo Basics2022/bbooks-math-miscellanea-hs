@@ -1,6 +1,7 @@
 (geometry:analytic:3d:coordinates)=
 # Sistemi di coordinate per lo spazio euclideo $E^3$
 
+(geometry:analytic:3d:coordinates:cartesian)=
 ## Coordinate cartesiane
 Le coordinate cartesiane $(x,y,z)$ di un punto $P$ dello spazio euclideo $E^3$ permettono di definire il vettore euclideo tra l'origine $O \equiv (0,0,0)$ e il punto $P$
 
@@ -13,6 +14,7 @@ Usando le coordinate cartesiane, la distanza tra due punti $P \equiv(x_P, y_P, z
 
 $$|P-Q|^2 = (x_P - x_Q)^2 + (y_P - y_Q)^2 + (z_P - z_Q)^2 \ .$$
 
+(geometry:analytic:3d:coordinates:cylindrical)=
 ## Coordinate cilindriche
 Dato un sistema di coordinate cartesiane, si può definire un sistema di coordinate cilindriche $(R, \theta, z)$ con la stessa origine, asse $z$ coincidente e usando il piano $x$-$y$ come origine per misurare l'angolo $\theta$ attorno all'asse $z$, tramite la legge di trasformazione delle coordinate
 
@@ -22,6 +24,7 @@ y = R \sin \theta \\
 z = z
 \end{cases}$$
 
+(geometry:analytic:3d:coordinates:spherical)=
 ## Coordinate sferiche
 Dato un sistema cartesiano e scelto un sistema di coordinate cilindriche come appena descritto, si può definire un sistema di coordinate sferiche $(r, \theta, \phi)$ tramite le leggi di trasformazione di coordinate
 

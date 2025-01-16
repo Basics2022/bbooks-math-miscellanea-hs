@@ -6,16 +6,21 @@ Usando un sistema di coordinate cartesiane, un punto $P$ nello spazio può esser
 $$P - O = \vec{r}_P = x \, \hat{x} + y \, \hat{y} + z \, \hat{z}  = P(x,y,z) \ .$$
 
 ## Derivata direzionale
+Dato il campo scalare $f(P)$ rappresentato usando le coordinate cartesiane,
 
 $$
-f(P) = f\left(P(x,y,z)\right) = F(x,y,z)
+f(P) = f\left(P(x,y,z)\right) = F(x,y,z) \ ,
 $$
+
+il valore del campo nel punto $P + \alpha \vec{v}$ vale
 
 $$
 f(P + \alpha \vec{v}) 
 = f\left( (x+\alpha v_x)\hat{x} + (y+\alpha v_y) \hat{y} + (z + \alpha v_z)\hat{z} \right) 
 = F(x+\alpha v_x, y+\alpha v_y, z + \alpha v_z)
 $$
+
+e la derivata direzionale è definita come il limite per $\alpha \rightarrow 0$ del rapporto incrementale, definito come il rapporto tra
 
 $$\begin{aligned}
   f(P + \alpha \vec{v}) - f(P)
@@ -25,13 +30,19 @@ $$\begin{aligned}
   & = \alpha \vec{v} \cdot \nabla f(P) + o(|\alpha|) \ ,
 \end{aligned}$$
 
-avendo introdotto il vettore formale **nabla**, $\nabla $, per definire l'operatore **gradiente** usando il sistema di coordinate carteisane,
+e $\alpha$, cioè 
+
+$$\lim_{\alpha \rightarrow 0} \frac{f(P + \alpha \vec{v}) - f(P)}{\alpha} = \vec{v} \cdot \nabla f(P) \ .$$
+
+avendo introdotto il vettore formale **nabla**, $\nabla $, per definire l'operatore **gradiente** usando il sistema di coordinate cartesiane,
 
 $$\nabla f(P) = \hat{x} \, \partial_x f(P) + \hat{y} \, \partial_y f(P) + \hat{z} \, \partial_z f(P) \ . $$
 
 ## Gradiente
 
-**Definizione.** **todo**
+**Definizione.** Il gradiente di un campo scalare $f(P)$ nello spazio 3-dimensionale è un campo vettoriale che ha la direzione locale di massima crescita della funzione e il modulo come massima derivata direzionale,
+
+$$\nabla f(P) = \hat{x} \, \partial_x f(P) + \hat{y} \, \partial_y f(P) + \hat{z} \, \partial_z f(P) \ . $$
 
 **Proprietà.** Il gradiente di un campo scalare indica la direzione **locale** di massima crescita del campo.
 

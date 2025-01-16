@@ -4,18 +4,18 @@
 :read-time: "{sub-ref}`wordcount-minutes` min read"
 ```
 (math-hs:precalculus:real-functions)=
-# Funzioni reali a variabile reale, $f: \mathbb{R} \rightarrow \mathbb{R}$
+# Funzioni reali a variabile reale, $f: A \subseteq \mathbb{R} \rightarrow \mathbb{R}$
 
 Le funzioni reali a variabile reale saranno oggetto di studio dettagliato del [calcolo infinitesimale](infinitesimal-calculus:analysis).
 
 ```{prf:definition} Funzione a valore reale di variabile reale
 :label: precalculus-real-fun
 
-Una funzione a valore reale di una variabile reale è una [funzione](math-hs:fun) $f: A \in \mathbb{R} \rightarrow \mathbb{R}$ è una funzione che ha come dominio un sottoinsieme $A$ dei numeri reali e condominio $\mathbb{R}$,
+Una funzione a valore reale di una variabile reale è una [funzione](math-hs:fun) $f: A \subseteq \mathbb{R} \rightarrow \mathbb{R}$ è una funzione che ha come dominio un sottoinsieme $A$ dei numeri reali e codominio $\mathbb{R}$, cioè una relazione che associa a ogni elemento $x \in A$ uno e un solo elemento
 
-$$y = f(x) \ ,$$
+$$y = f(x) \in \mathbb{R} \ .$$
 
-con $x \in A \in \mathbb{R}$ e $y \in \mathbb{R}$. E' comune chiamare $x$ *argomento* della funzione, o la *variabile indipendente*, e $y$ *valore* della funzione o *variabile dipendente*
+E' comune chiamare $x$ *argomento* della funzione, o la *variabile indipendente*, e $y$ *valore* della funzione o *variabile dipendente*
 
 ```
 

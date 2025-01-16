@@ -129,11 +129,13 @@ I_2
 ```
 
 
-
-<!--
 (multivariable-calculus:integrals:thms)=
 ## Teoremi
+```{prf:theorem} Lemma di Green
 
+```
+
+<!--
 (multivariable-calculus:integrals:examples)=
 ## Esempi
 -->
