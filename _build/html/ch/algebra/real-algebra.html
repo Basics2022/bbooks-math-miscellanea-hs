@@ -1,0 +1,892 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="it" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4. Algebra sui numeri reali &#8212; Matematica per le scuole superiori</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/exercise.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/style.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/algebra/real-algebra';</script>
+    <link rel="shortcut icon" href="../../_static/favicon.svg"/>
+    <link rel="index" title="Indice" href="../../genindex.html" />
+    <link rel="search" title="Cerca" href="../../search.html" />
+    <link rel="next" title="5. Algebra su \(\mathbb{R}^n\)" href="real-n-algebra.html" />
+    <link rel="prev" title="3. Introduzione all’algebra" href="../algebra.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="it"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.svg" class="logo__image only-light" alt="Matematica per le scuole superiori - Home"/>
+    <script>document.write(`<img src="../../_static/logo-dark.svg" class="logo__image only-dark" alt="Matematica per le scuole superiori - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduzione</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../program.html">Programma</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Insiemistica e logica</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../set.html">1. Insiemistica</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../set/numeric-sets.html">1.5. Insiemi numerici</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../logics.html">2. Logica</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Algebra</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../algebra.html">3. Introduzione all’algebra</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">4. Algebra sui numeri reali</a></li>
+<li class="toctree-l1"><a class="reference internal" href="real-n-algebra.html">5. Algebra su <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span></a></li>
+<li class="toctree-l1"><a class="reference internal" href="linear-algebra.html">6. Algebra lineare</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="vector-algebra.html">7. Algebra vettoriale</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="vector-algebra-def.html">7.1. Prime definizioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vector-algebra-euclidean-space.html">7.2. Spazio vettoriale euclideo</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="complex-algebra-link.html">8. Algebra complessa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="set-algebra-link.html">9. Algebra di insiemi</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Geometria analitica</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../analytic_geometry.html">10. Introduzione alla geometria analitica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analytic_geometry/euclidean_space.html">11. Spazio euclideo</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d.html">12. Geometria analitica nel piano</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/coordinates.html">12.1. Sistemi di coordinate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/points.html">12.2. Distanze e angoli</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/curves.html">12.3. Curve nel piano</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/lines.html">12.4. Rette nel piano</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/conics.html">12.5. Coniche</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/conics-cartesian.html">12.5.1. Forma canonica in coordinate cartesiane</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/conics-polar.html">12.5.2. Forma canonica in coordinate polari</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/conics-general.html">12.5.3. Equazione generale delle coniche</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/problems.html">12.6. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/sol.html">12.7. Soluzioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/notes.html">12.8. Note e dimostrazioni</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../analytic_geometry/analytic_geometry_3d.html">13. Geometria analitica nello spazio</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_3d/points.html">13.1. Sistemi di coordinate per lo spazio euclideo <span class="math notranslate nohighlight">\(E^3\)</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_3d/planes.html">13.2. Piani nello spazio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_3d/curves.html">13.3. Curve nello spazio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_3d/lines.html">13.4. Rette nello spazio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_3d/cone.html">13.5. Cono circolare retto e coniche</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Precalcolo</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../precalculus.html">14. Introduzione al pre-calcolo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../precalculus/real-functions.html">15. Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\(f: \mathbb{R} \rightarrow \mathbb{R}\)</span></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../precalculus/polynomials.html">16. Polinomi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../series.html">17. Serie e successioni</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../trigonometry.html">18. Trigonometria</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../precalculus/exponential_logarithm.html">19. Esponenziale e logaritmo</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../precalculus/exponential_logarithm-problems.html">19.2. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../precalculus/exponential_logarithm-sol.html">19.3. Soluzioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../precalculus/exponential_logarithm-notes.html">19.4. Note e dimostrazioni</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="complex-algebra.html">20. Algebra complessa</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="complex-algebra-problems.html">20.9. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="complex-algebra-sol.html">20.10. Problemi - soluzioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="complex-algebra-notes.html">20.11. Note e dimostrazioni</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../precalculus/multivariable-real-fun.html">21. Funzioni multi-variabile</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Calcolo</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../calculus.html">22. Introduzione al calcolo</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../infinitesimal_calculus/analysis.html">23. Introduzione all’analisi</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/analysis-problems.html">23.9. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/analysis-notes.html">23.10. Note e dimostrazioni</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../infinitesimal_calculus/derivatives.html">24. Derivate</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/derivatives-problems.html">24.8. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/derivatives-notes.html">24.9. Note e dimostrazioni</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../infinitesimal_calculus/integrals.html">25. Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/integrals-table.html">25.5. Tavola degli integrali indefiniti più comuni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/integrals-problems.html">25.6. Problemi</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../ode.html">26. Equazioni differenziali ordinarie</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../multivariable-calculus.html">27. Introduzione al calcolo multi-variabile</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../multivariable-calculus/limits.html">27.1. Limite di una funzione di più variabili</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../multivariable-calculus/derivatives.html">27.2. Derivate di funzioni di più variabili</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../multivariable-calculus/integrals.html">27.3. Integrali su domini multi-dimensionali</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../vector-calculus.html">28. Introduzione al calcolo vettoriale su spazi euclidei</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../vector-calculus/derivatives.html">28.1. Operatori differenziali in spazi euclidei</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../vector-calculus/integrals.html">28.2. Integrali in spazi euclidei</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../vector-calculus/problems.html">28.3. Problemi</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Statistica</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../statistics.html">29. Introduzione alla statistica</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Indice</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../genindex.html">Indice</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Repository di origine"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs/edit/master/ch/algebra/real-algebra.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs/issues/new?title=Issue%20on%20page%20%2Fch/algebra/real-algebra.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Apri un problema"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Scarica questa pagina">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/ch/algebra/real-algebra.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Scarica il file sorgente"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Stampa in PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Modalità schermo intero"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Cerca" aria-label="Cerca" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Algebra sui numeri reali</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenuti </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni">4.1. Operazioni</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#potenze">4.1.1. Potenze</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#radice">4.1.2. Radice</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#logaritmo">4.1.3. Logaritmo</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#polinomi">4.2. Polinomi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#frazioni-algebriche">4.2.1. Frazioni algebriche</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-con-un-incognita">4.3. Problemi con un’incognita</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni">4.3.1. Equazioni</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-di-primo-grado">4.3.1.1. Equazioni di primo grado</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-di-secondo-grado">4.3.1.2. Equazioni di secondo grado</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-non-lineari-generali">4.3.1.3. Equazioni non lineari generali</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disequazioni">4.3.2. Disequazioni</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rappresentazione-grafica-di-un-equazione-con-due-incognite">4.4. Rappresentazione grafica di un’equazione con due incognite</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-con-due-o-piu-incognite-sistemi-di-equazioni-e-disequazioni">4.5. Problemi con due o più incognite - sistemi di equazioni e disequazioni</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <!--
+```{article-info}
+:author: basics
+:date: "{sub-ref}`today`"
+:read-time: "{sub-ref}`wordcount-minutes` min read"
+```
+-->
+<div class="tex2jax_ignore mathjax_ignore section" id="algebra-sui-numeri-reali">
+<span id="math-hs-algebra-real"></span><h1><span class="section-number">4. </span>Algebra sui numeri reali<a class="headerlink" href="#algebra-sui-numeri-reali" title="Permalink to this heading">#</a></h1>
+<p>L’algebra sui numeri reali si occupa delle operazioni fondamentali e delle proprietà dei numeri reali, il cui insieme viene indicato con la lettera <span class="math notranslate nohighlight">\(\mathbb{R}\)</span>, come anche della risoluzione di equazioni e disequazioni. Dopo la logica e l’insiemistica, l’algebra sui numeri reali è il primo passo in un corso di matematica <strong>todo</strong> <em>di quale livello?</em></p>
+<p>Questo capitolo ricorda velocmente le operazioni elementari sui numeri reali introdotte nel capitolo sugli insiemi numerici, per poi introdurre con queste le operazioni di potenza, radice e logaritmo. Si fa affidamento sul calcolo letterale, per introdurre i polinomi e alcune loro proprietà che verranno utilizzate per risolvere i problemi algebrici che coinvolgono gli oggetti matematici introdotti: equazioni e disequazioni di un’incognita.</p>
+<div class="section" id="operazioni">
+<h2><span class="section-number">4.1. </span>Operazioni<a class="headerlink" href="#operazioni" title="Permalink to this heading">#</a></h2>
+<p>Le operazioni elementari sui numeri reali e le loro proprietà sono state introdotte nel capitolo sugli insiemi numerici. Si ricordano le proprietà dell’elevamento a potenza,</p>
+<div class="math notranslate nohighlight">
+\[a^b = c\]</div>
+<p>e le condizioni di esistenza di questa operazione sui numeri reali. Dall’operazione di potenza si introducono le operazioni di radice e di logaritmo chei, <strong>sotto le necessarie condizioni</strong>, consentono di scrivere</p>
+<div class="math notranslate nohighlight">
+\[a = \sqrt[b]{c} \qquad , \qquad b = \log_{a} c \ .\]</div>
+<div class="section" id="potenze">
+<h3><span class="section-number">4.1.1. </span>Potenze<a class="headerlink" href="#potenze" title="Permalink to this heading">#</a></h3>
+<p>Nel campo dei numeri reali, l’operazione di potenza, <span class="math notranslate nohighlight">\(a^b = c\)</span>, è ben definita:</p>
+<ul class="simple">
+<li><p>per <span class="math notranslate nohighlight">\(a \ge 0\)</span> per ogni <span class="math notranslate nohighlight">\(b \in \mathbb{R}\)</span></p></li>
+<li><p>per <span class="math notranslate nohighlight">\(a &lt; 0\)</span> solo per <span class="math notranslate nohighlight">\(b \in \mathbb{N}\)</span></p></li>
+</ul>
+<p><strong>todo</strong> <em>controllare, rimandare al capitolo sugli insiemi numerici; spostare nel capitolo sugli insiemi numerici?</em></p>
+</div>
+<div class="section" id="radice">
+<h3><span class="section-number">4.1.2. </span>Radice<a class="headerlink" href="#radice" title="Permalink to this heading">#</a></h3>
+<p><strong>Definizione e condizioni.</strong></p>
+<p><strong>Proprietà.</strong></p>
+</div>
+<div class="section" id="logaritmo">
+<h3><span class="section-number">4.1.3. </span>Logaritmo<a class="headerlink" href="#logaritmo" title="Permalink to this heading">#</a></h3>
+<p><strong>Definizione e condizioni.</strong></p>
+<p><strong>Proprietà.</strong></p>
+</div>
+</div>
+<div class="section" id="polinomi">
+<h2><span class="section-number">4.2. </span>Polinomi<a class="headerlink" href="#polinomi" title="Permalink to this heading">#</a></h2>
+<p><strong>Scomposizioni elementari.</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+ &amp; (a+b)^2 = a^2 + 2ab + b^2                           &amp; \text{Quadrato di binomio} \\
+ &amp; (a+b)^3 = a^3 + 3a^2 b + 3 a b^2 + b^3              &amp; \text{Cubo di binomio} \\
+ &amp; (a+b)^N = \sum_{n=1}^{N} \left( \begin{matrix} N \\ n \end{matrix} \right) a^{N-n} b^n
+ &amp; \text{Potenza di binomio} \\
+ &amp; a^2 - b^2 = (a-b)(a+b)                              &amp; \text{Differenza di quadrati} \\
+ &amp; a^3 - b^3 = (a-b)(a^2+ab+b^2)                       &amp; \text{Differenza di cubi} \\
+ &amp; a^3 + b^3 = (a+b)(a^2-ab+b^2)                       &amp; \text{Somma di cubi} \\
+ &amp; a^N - b^N = (a-b)(a^{N-1}+a^{N-2}b+\dots+b^{N-1})   &amp; \text{Differenza di potenze} \\
+ &amp; a^N + b^N = (a+b)(a^{N-1}-a^{N-2}b+\dots+b^{N-1})   &amp; \text{Somma di potenze dispari} \\
+\end{aligned}\end{split}\]</div>
+<p><strong>todo</strong> <em>altre regole? Ruffini?…</em></p>
+<div class="section" id="frazioni-algebriche">
+<h3><span class="section-number">4.2.1. </span>Frazioni algebriche<a class="headerlink" href="#frazioni-algebriche" title="Permalink to this heading">#</a></h3>
+<p>Una frazione algebrica è il quoziente di due polinomi,</p>
+<div class="math notranslate nohighlight">
+\[\frac{a_n x^n + a_{n-1} x^{n-1} + \dots a_0}{b_m x^m + b_{m-1} x^{m-1} + \dots b_0} \ .\]</div>
+<p>Per il <a class="reference internal" href="../precalculus/polynomials.html#math-hs-precalculus-polynomials-alg-fund-thm"><span class="std std-ref">teorema fondamentale dell’algebra</span></a>, ogni polinomio può essere scritto come prodotto di polinomi di primo o secondo ordine. Se i polinomi al numeratore e al denominatore della frazione algebrica non hanno fattori in comune, la frazione algebrica viene definita <strong>in forma semplice</strong>.</p>
+<div class="proof example dropdown admonition" id="example-0">
+<p class="admonition-title"><span class="caption-number">Example 4.1 </span> (Frazioni algebriche semplici e non semplici)</p>
+<div class="example-content section" id="proof-content">
+<p>La frazione <span class="math notranslate nohighlight">\(\frac{x^2-3x+2}{x^2+1} = \frac{(x-2)(x-1)}{x^2+1}\)</span> è in forma ridotta, mentre la frazione <span class="math notranslate nohighlight">\(\frac{x^2-3x+2}{x^2-1} = \frac{(x-2)(x-1)}{(x+1)(x-1)}\)</span> non è in forma ridotta e, <strong>per</strong> <span class="math notranslate nohighlight">\(x \ne 1\)</span> <strong>(!)</strong>, è uguale a <span class="math notranslate nohighlight">\(\frac{x-2}{x+1}\)</span>.</p>
+</div>
+</div><p>Una <strong>frazione propria</strong> ha il grado <span class="math notranslate nohighlight">\(n\)</span> del numeratore inferiore al grado <span class="math notranslate nohighlight">\(m\)</span> del denominatore. Una frazione non propria può essere scritta come un polinomio di grado <span class="math notranslate nohighlight">\(n-m\)</span> e una frazione propria</p>
+<div class="proof example dropdown admonition" id="example-1">
+<p class="admonition-title"><span class="caption-number">Example 4.2 </span> (Frazioni non proprie)</p>
+<div class="example-content section" id="proof-content">
+<p>La frazione <span class="math notranslate nohighlight">\(\frac{x^2 + 2x + 1}{x - 2}\)</span> può essere scritta «completando il quadrato» come</p>
+<div class="math notranslate nohighlight">
+\[\frac{x^2+2x+1}{x-2} = \frac{x^2-4x+4+4x-4+2x+1}{x-2} = \frac{(x-2)^2+6x-3}{x-2} = x-2 + 3\frac{2x-1}{x-2} \ ,\]</div>
+<p>con la semplificazione possibile per <span class="math notranslate nohighlight">\(x \ne 2\)</span>.</p>
+</div>
+</div><p>Se il denominatore è scomponibile come prodotto di polinomi, allora la frazione algebrica può essere scritta come <strong>somma di frazioni parziali</strong>. In alcune applicazioni, come il calcolo degli integrali, può essere conveniente scrivere una frazione come somma di frazioni parziali, poiché risulta più semplice trattare somme di frazioni con numeratore di grado 1 o 2, di frazioni con numeratore di grado qualsiasi.</p>
+<div class="proof example dropdown admonition" id="example-2">
+<p class="admonition-title"><span class="caption-number">Example 4.3 </span> (Somma di frazioni parziali)</p>
+<div class="example-content section" id="proof-content">
+<p>La frazione <span class="math notranslate nohighlight">\(\frac{3x}{x^2-1}\)</span> può essere scritta come somma di frazioni parziali <span class="math notranslate nohighlight">\(\frac{3 x}{x^2-1} = \frac{3}{2} \frac{1}{x-1} + \frac{3}{2}\frac{1}{x+1}\)</span>, poiché</p>
+<div class="math notranslate nohighlight">
+\[\frac{3x}{x^2-1} = \frac{a}{x+1} + \frac{b}{x-1} = \frac{a(x-1) + b(x+1)}{x^2-1} = \frac{x(a+b)+b-a}{x^2-1}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases} a + b = 3 \\ b - a = 0 \end{cases} \qquad \rightarrow \qquad a = b = \frac{3}{2} \ .\end{split}\]</div>
+</div>
+</div></div>
+</div>
+<div class="section" id="problemi-con-un-incognita">
+<h2><span class="section-number">4.3. </span>Problemi con un’incognita<a class="headerlink" href="#problemi-con-un-incognita" title="Permalink to this heading">#</a></h2>
+<div class="section" id="equazioni">
+<span id="math-hs-algebra-real-eq"></span><h3><span class="section-number">4.3.1. </span>Equazioni<a class="headerlink" href="#equazioni" title="Permalink to this heading">#</a></h3>
+<p>Un’equazione è una relazione di uguaglianza che contiene una o più incognite. L’obiettivo è trovare i valori delle incognite che rendono vera l’uguaglianza.</p>
+<div class="section" id="equazioni-di-primo-grado">
+<span id="math-hs-algebra-real-eq-first"></span><h4><span class="section-number">4.3.1.1. </span>Equazioni di primo grado<a class="headerlink" href="#equazioni-di-primo-grado" title="Permalink to this heading">#</a></h4>
+<p>La forma generale di un’equazione di primo grado in un’incognita reale <span class="math notranslate nohighlight">\(x \in \mathbb{R}\)</span> è</p>
+<div class="math notranslate nohighlight">
+\[a x + b = 0 \qquad a \ne 0 \]</div>
+<p>dove la condizione sul coefficiente <span class="math notranslate nohighlight">\(a \ne 0\)</span> esclude i casi in cui l’equazione degenera a un’uguaglianza tra parametri.
+Dopo aver escluso i casi in cui l’equazione degenera in un’uguaglianza tra paramteri, con la condizione <span class="math notranslate nohighlight">\(a \ne 0\)</span>, la soluzione generale dell’equazione lineare esiste, è <strong>unica</strong> ed è</p>
+<div class="math notranslate nohighlight">
+\[x = - \frac{b}{a} \ .\]</div>
+<p>Nel caso degenere in cui <span class="math notranslate nohighlight">\(a = 0\)</span>, si possono distinguere due casi:</p>
+<ul class="simple">
+<li><p>se <span class="math notranslate nohighlight">\(b \ne 0\)</span> <strong>non esiste</strong> nessuna soluzione, poiché l’equazione si riduce alla <a class="reference internal" href="../logics.html#logics-identity"><span class="std std-ref">contraddizione</span></a> <span class="math notranslate nohighlight">\(0 = b \ne 0\)</span> per <span class="math notranslate nohighlight">\(\forall x \in \mathbb{R}\)</span></p></li>
+<li><p>se <span class="math notranslate nohighlight">\(b = 0\)</span> <strong>esistono infinite</strong> soluzioni, poiché l’equazione si riduce all”<a class="reference internal" href="../logics.html#logics-contradiction"><span class="std std-ref">identità</span></a> <span class="math notranslate nohighlight">\(0 = b \ne 0\)</span> per <span class="math notranslate nohighlight">\(\forall x \in \mathbb{R}\)</span></p></li>
+</ul>
+<!--
+Si possono distinguere i casi:
+- per $a \ne 0$, esiste un'**unica** soluzione $x = -\frac{b}{a}$
+- per $a = 0$:
+  - per $b \ne 0$ **non esiste** soluzione, poiché si ottiene la contraddizione $0 = b \ne 0$, per $\forall x \in \mathbb{R}$
+  - per $b = 0$ esistono **infinite** soluzioni, poiché si ottiene l'identità $0 = 0$ per $\forall x \in \mathbb{R}$
+-->
+</div>
+<div class="section" id="equazioni-di-secondo-grado">
+<span id="math-hs-algebra-real-eq-second"></span><h4><span class="section-number">4.3.1.2. </span>Equazioni di secondo grado<a class="headerlink" href="#equazioni-di-secondo-grado" title="Permalink to this heading">#</a></h4>
+<p>La forma generale di un’equazione di secondo grado in un’incognita reale <span class="math notranslate nohighlight">\(x \in \mathbb{R}\)</span> è</p>
+<div class="math notranslate nohighlight">
+\[a x^2 + b x + c = 0 \qquad a \ne 0 \ ,\]</div>
+<p>dove la condizione sul coefficiente <span class="math notranslate nohighlight">\(a \ne 0\)</span> esclude i casi in cui l’equazione degenera a un’equazione di <a class="reference internal" href="#math-hs-algebra-real-eq-first"><span class="std std-ref">primo grado</span></a>.
+Le soluzioni dell’equazione vengono cercate completando il quadrato,</p>
+<div class="math notranslate nohighlight">
+\[0 = x^2 + \frac{b}{a} x + \frac{b^2}{4 a^2} - \frac{b^2}{4 a^2} + \frac{c}{a} = \left( x + \frac{b}{2a} \right)^2 - \left( \frac{b^2}{4 a^2} - \frac{c}{a} \right) . \]</div>
+<p>L’equazione viene riscritta come</p>
+<div class="math notranslate nohighlight">
+\[\left( x + \frac{b}{2a} \right)^2 = \frac{b^2}{4 a^2} - \frac{c}{a} \ ,\]</div>
+<p>per mettere in evidenza che l’esistenza delle soluzioni dipende dal valore del <strong>discriminante</strong>, <span class="math notranslate nohighlight">\(\frac{\Delta}{(2a)^2} := \frac{b^2 - 4 a c}{(2a)^2}\)</span>:</p>
+<ul class="simple">
+<li><p>se <span class="math notranslate nohighlight">\(\Delta &gt; 0\)</span> esistono <strong>due soluzioni reali distinte</strong>, <span class="math notranslate nohighlight">\(x_{1,2} = - \frac{b}{2a} \mp \frac{\sqrt{\Delta}}{2a} \in \mathbb{R}\)</span></p></li>
+<li><p>se <span class="math notranslate nohighlight">\(\Delta = 0\)</span> esistono <strong>due soluzioni reali coincidenti</strong>, <span class="math notranslate nohighlight">\(x_1 = x_2 = - \frac{b}{2a} \in \mathbb{R}\)</span></p></li>
+<li><p>se <span class="math notranslate nohighlight">\(\Delta &lt; 0\)</span> <strong>non esistono soluzioni reali</strong>, poiché la radice quadra di un numero negativo non è definita nel campo dei numeri reali, <span class="math notranslate nohighlight">\(\nexists x \in \mathbb{R}\)</span></p></li>
+</ul>
+</div>
+<div class="section" id="equazioni-non-lineari-generali">
+<span id="math-hs-algebra-real-eq-nonlinear"></span><h4><span class="section-number">4.3.1.3. </span>Equazioni non lineari generali<a class="headerlink" href="#equazioni-non-lineari-generali" title="Permalink to this heading">#</a></h4>
+<p>Mentre esiste una formula generale per le equazioni di terzo grado e di quarto grado, queste risultano spesso di scarsa e scarsissima (nulla?) utilità. Per le equazioni polinomiali, a volte è possibile utilizzare i risultati del <a class="reference internal" href="../precalculus/polynomials.html#math-hs-precalculus-polynomials-alg-fund-thm"><span class="std std-ref">teorema fondamentale dell’algebra</span></a> per scrivere il polinomio come prodotto di polinomi di primo e secondo ordine, per i quali è possibile calcolare gli zeri con le formule mostrate nelle sezioni sulle equazioni di primo e secondo grado.</p>
+<p>Per equazioni algebriche non lineari che coinvolgono potenze, logaritmi, esponenziali, a parte alcuni casi particolari risolvibili in forma chiusa utilizzando le proprietà di queste operazioni e le soluzioni delle equazioni polinomiali, è necessario affidarsi a metodi di soluzione grafici e/o numerici: <strong>todo</strong></p>
+<ul class="simple">
+<li><p>m.grafici: soluzione a mano, per guess iniziale di m.numerici</p></li>
+<li><p>m.numerici: …</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="disequazioni">
+<h3><span class="section-number">4.3.2. </span>Disequazioni<a class="headerlink" href="#disequazioni" title="Permalink to this heading">#</a></h3>
+<p>Un’equazione è una relazione di disuguaglianza che contiene una o più incognite. L’obiettivo è trovare i valori delle incognite che rendono vera la disuguaglianza.</p>
+</div>
+</div>
+<div class="section" id="rappresentazione-grafica-di-un-equazione-con-due-incognite">
+<h2><span class="section-number">4.4. </span>Rappresentazione grafica di un’equazione con due incognite<a class="headerlink" href="#rappresentazione-grafica-di-un-equazione-con-due-incognite" title="Permalink to this heading">#</a></h2>
+<p>Un’equazione con due incognite <span class="math notranslate nohighlight">\(x,y\)</span> è una relazione di uguaglianza che può essere scritta nella forma generale <span class="math notranslate nohighlight">\(f(x,y) = 0\)</span>. In generale, a ogni equazione di questa forma può essere associata una curva nel piano, qui descritto dalle coordinate cartesiane <span class="math notranslate nohighlight">\(x,y\)</span>. Senza nessuna pretesa di completezza - rimandando per quella alla sezione sulla <a class="reference internal" href="../analytic_geometry.html#geometry-analytic"><span class="std std-ref">geometria analitica</span></a> - qui ci si limita a discutere la rappresentazione grafica nel piano di alcune equazioni elementari</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(y = x\)</span>, dipendenza lineare (o proporzionale)</p></li>
+<li><p><span class="math notranslate nohighlight">\(y = x^2\)</span>, dipendenza quadratica</p></li>
+<li><p><span class="math notranslate nohighlight">\(y = \frac{1}{x}\)</span>, dipendenza inversamente proporzionale</p></li>
+<li><p>… <span class="math notranslate nohighlight">\(y = a^x\)</span>, <span class="math notranslate nohighlight">\(y = \log_a x\)</span> …</p></li>
+</ul>
+<!--
+- $y = a^x$
+- $y = \log_a x$
+- ...
+-->
+<table class="table">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><img alt="" src="../../_images/ggb-line.png" /></p></td>
+<td><p><img alt="" src="../../_images/ggb-par.png" /></p></td>
+<td><p><img alt="" src="../../_images/ggb-inverse.png" /></p></td>
+<td><p><img alt="" src="../../_images/ggb-circle.png" /></p></td>
+</tr>
+</tbody>
+</table>
+<p>e delle equazioni ricavabili da queste con una trasformazione <em>affine</em> di incognite, nella forma</p>
+<div class="math notranslate nohighlight">
+\[ u = \frac{x-x_0}{a_x} \quad , \quad v = \frac{y-y_0}{a_y} \ ,\]</div>
+<div class="math notranslate nohighlight">
+\[ x = \alpha_x u + x_0  \quad , \quad y = \alpha_y v + y_0 \ ,\]</div>
+<p>corrispondenti alla compsizione di due trasformazioni, in questo ordine:</p>
+<ol class="arabic simple">
+<li><p>la scalatura di un fattore <span class="math notranslate nohighlight">\(a_x\)</span> in direzione <span class="math notranslate nohighlight">\(x\)</span> e di un fattore <span class="math notranslate nohighlight">\(a_y\)</span> in direzione <span class="math notranslate nohighlight">\(y\)</span></p></li>
+<li><p>una traslazione <span class="math notranslate nohighlight">\(x_0\)</span> in direzione <span class="math notranslate nohighlight">\(x\)</span> e di <span class="math notranslate nohighlight">\(y_0\)</span> in direzione <span class="math notranslate nohighlight">\(y\)</span></p></li>
+</ol>
+<p><strong>todo</strong></p>
+<ul class="simple">
+<li><p><em>Aggiungere un’imamgine con il procedimento di trasformazione di variabili/incognite (e coordinate)</em></p></li>
+<li><p><em>Aggiungere un’immagine su alcune famiglie di curve, al variare dei parametri</em></p></li>
+</ul>
+<div class="proof example admonition" id="example-3">
+<p class="admonition-title"><span class="caption-number">Example 4.4 </span> (…)</p>
+<div class="example-content section" id="proof-content">
+</div>
+</div></div>
+<div class="section" id="problemi-con-due-o-piu-incognite-sistemi-di-equazioni-e-disequazioni">
+<h2><span class="section-number">4.5. </span>Problemi con due o più incognite - sistemi di equazioni e disequazioni<a class="headerlink" href="#problemi-con-due-o-piu-incognite-sistemi-di-equazioni-e-disequazioni" title="Permalink to this heading">#</a></h2>
+<p>Un sistema di equazioni è un insieme di equazioni da risolvere simultaneamente. I sistemi di equazioni (e di disequazioni) consentono di introdurre l”<a class="reference internal" href="real-n-algebra.html#math-hs-algebra-real-n"><span class="std std-ref">algebra su <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span></span></a>, descritta nel capitolo successivo.</p>
+<hr class="docutils" />
+<!--
+## Esercizi
+1. Risolvi $ 4x + 2 = 14 $.
+2. Trova l'intervallo di soluzioni per $ 3x - 7 \leq 11 $.
+3. Risolvi il sistema:
+
+$$
+\begin{cases}
+x - y = 3 \\
+2x + y = 7
+\end{cases}
+$$
+-->
+<!--
+**Numeri reali, $\mathbb{R}$**
+
+**Operazioni con i numeri reali.**
+- Somma e sottrazione
+- Moltiplicazione e divisione
+- Potenza
+- Esponenziale e logaritmo
+
+**Equazioni, disequazioni e sistemi di equazioni**
+-->
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./ch/algebra"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../algebra.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">precedente</p>
+        <p class="prev-next-title"><span class="section-number">3. </span>Introduzione all’algebra</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="real-n-algebra.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">successivo</p>
+        <p class="prev-next-title"><span class="section-number">5. </span>Algebra su <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span></p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenuti
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni">4.1. Operazioni</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#potenze">4.1.1. Potenze</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#radice">4.1.2. Radice</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#logaritmo">4.1.3. Logaritmo</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#polinomi">4.2. Polinomi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#frazioni-algebriche">4.2.1. Frazioni algebriche</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-con-un-incognita">4.3. Problemi con un’incognita</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni">4.3.1. Equazioni</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-di-primo-grado">4.3.1.1. Equazioni di primo grado</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-di-secondo-grado">4.3.1.2. Equazioni di secondo grado</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-non-lineari-generali">4.3.1.3. Equazioni non lineari generali</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disequazioni">4.3.2. Disequazioni</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rappresentazione-grafica-di-un-equazione-con-due-incognite">4.4. Rappresentazione grafica di un’equazione con due incognite</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-con-due-o-piu-incognite-sistemi-di-equazioni-e-disequazioni">4.5. Problemi con due o più incognite - sistemi di equazioni e disequazioni</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Di basics
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

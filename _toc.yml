@@ -98,7 +98,7 @@ parts:
     - file: ch/infinitesimal_calculus/integrals-table
     - file: ch/infinitesimal_calculus/integrals-problems
   - file: ch/ode
-  - file: ch/infinitesimal_calculus/problems
+# - file: ch/infinitesimal_calculus/problems
   - file: ch/multivariable-calculus
     sections:
     - file: ch/multivariable-calculus/limits

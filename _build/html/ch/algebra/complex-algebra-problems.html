@@ -1,0 +1,860 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="it" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>20.9. Problemi &#8212; Matematica per le scuole superiori</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/exercise.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/style.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/algebra/complex-algebra-problems';</script>
+    <link rel="shortcut icon" href="../../_static/favicon.svg"/>
+    <link rel="index" title="Indice" href="../../genindex.html" />
+    <link rel="search" title="Cerca" href="../../search.html" />
+    <link rel="next" title="20.10. Problemi - soluzioni" href="complex-algebra-sol.html" />
+    <link rel="prev" title="20. Algebra complessa" href="complex-algebra.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="it"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.svg" class="logo__image only-light" alt="Matematica per le scuole superiori - Home"/>
+    <script>document.write(`<img src="../../_static/logo-dark.svg" class="logo__image only-dark" alt="Matematica per le scuole superiori - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduzione</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../program.html">Programma</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Insiemistica e logica</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../set.html">1. Insiemistica</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../set/numeric-sets.html">1.5. Insiemi numerici</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../logics.html">2. Logica</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Algebra</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../algebra.html">3. Introduzione all’algebra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="real-algebra.html">4. Algebra sui numeri reali</a></li>
+<li class="toctree-l1"><a class="reference internal" href="real-n-algebra.html">5. Algebra su <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span></a></li>
+<li class="toctree-l1"><a class="reference internal" href="linear-algebra.html">6. Algebra lineare</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="vector-algebra.html">7. Algebra vettoriale</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="vector-algebra-def.html">7.1. Prime definizioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vector-algebra-euclidean-space.html">7.2. Spazio vettoriale euclideo</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="complex-algebra-link.html">8. Algebra complessa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="set-algebra-link.html">9. Algebra di insiemi</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Geometria analitica</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../analytic_geometry.html">10. Introduzione alla geometria analitica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analytic_geometry/euclidean_space.html">11. Spazio euclideo</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d.html">12. Geometria analitica nel piano</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/coordinates.html">12.1. Sistemi di coordinate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/points.html">12.2. Distanze e angoli</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/curves.html">12.3. Curve nel piano</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/lines.html">12.4. Rette nel piano</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/conics.html">12.5. Coniche</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/conics-cartesian.html">12.5.1. Forma canonica in coordinate cartesiane</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/conics-polar.html">12.5.2. Forma canonica in coordinate polari</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/conics-general.html">12.5.3. Equazione generale delle coniche</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/problems.html">12.6. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/sol.html">12.7. Soluzioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/notes.html">12.8. Note e dimostrazioni</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../analytic_geometry/analytic_geometry_3d.html">13. Geometria analitica nello spazio</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_3d/points.html">13.1. Sistemi di coordinate per lo spazio euclideo <span class="math notranslate nohighlight">\(E^3\)</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_3d/planes.html">13.2. Piani nello spazio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_3d/curves.html">13.3. Curve nello spazio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_3d/lines.html">13.4. Rette nello spazio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_3d/cone.html">13.5. Cono circolare retto e coniche</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Precalcolo</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../precalculus.html">14. Introduzione al pre-calcolo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../precalculus/real-functions.html">15. Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\(f: \mathbb{R} \rightarrow \mathbb{R}\)</span></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../precalculus/polynomials.html">16. Polinomi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../series.html">17. Serie e successioni</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../trigonometry.html">18. Trigonometria</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../precalculus/exponential_logarithm.html">19. Esponenziale e logaritmo</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../precalculus/exponential_logarithm-problems.html">19.2. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../precalculus/exponential_logarithm-sol.html">19.3. Soluzioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../precalculus/exponential_logarithm-notes.html">19.4. Note e dimostrazioni</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="complex-algebra.html">20. Algebra complessa</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">20.9. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="complex-algebra-sol.html">20.10. Problemi - soluzioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="complex-algebra-notes.html">20.11. Note e dimostrazioni</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../precalculus/multivariable-real-fun.html">21. Funzioni multi-variabile</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Calcolo</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../calculus.html">22. Introduzione al calcolo</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../infinitesimal_calculus/analysis.html">23. Introduzione all’analisi</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/analysis-problems.html">23.9. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/analysis-notes.html">23.10. Note e dimostrazioni</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../infinitesimal_calculus/derivatives.html">24. Derivate</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/derivatives-problems.html">24.8. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/derivatives-notes.html">24.9. Note e dimostrazioni</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../infinitesimal_calculus/integrals.html">25. Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/integrals-table.html">25.5. Tavola degli integrali indefiniti più comuni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/integrals-problems.html">25.6. Problemi</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../ode.html">26. Equazioni differenziali ordinarie</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../multivariable-calculus.html">27. Introduzione al calcolo multi-variabile</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../multivariable-calculus/limits.html">27.1. Limite di una funzione di più variabili</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../multivariable-calculus/derivatives.html">27.2. Derivate di funzioni di più variabili</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../multivariable-calculus/integrals.html">27.3. Integrali su domini multi-dimensionali</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../vector-calculus.html">28. Introduzione al calcolo vettoriale su spazi euclidei</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../vector-calculus/derivatives.html">28.1. Operatori differenziali in spazi euclidei</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../vector-calculus/integrals.html">28.2. Integrali in spazi euclidei</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../vector-calculus/problems.html">28.3. Problemi</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Statistica</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../statistics.html">29. Introduzione alla statistica</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Indice</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../genindex.html">Indice</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Repository di origine"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs/edit/master/ch/algebra/complex-algebra-problems.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs/issues/new?title=Issue%20on%20page%20%2Fch/algebra/complex-algebra-problems.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Apri un problema"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Scarica questa pagina">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/ch/algebra/complex-algebra-problems.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Scarica il file sorgente"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Stampa in PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Modalità schermo intero"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Cerca" aria-label="Cerca" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Problemi</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenuti </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definizioni">20.9.1. Definizioni</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rappresentazione-dei-numeri-complessi-nel-piano-complesso-argand-gauss">20.9.2. Rappresentazione dei numeri complessi nel piano complesso (Argand-Gauss)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni-con-i-numeri-complessi">20.9.3. Operazioni con i numeri complessi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-fondamentale-dell-algebra">20.9.4. Teorema fondamentale dell’algebra</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#numeri-complessi-e-geometria-nel-piano-euclideo">20.9.5. Numeri complessi e geometria nel piano euclideo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-e-disequazioni-con-i-numeri-complessi">20.9.6. Equazioni e disequazioni con i numeri complessi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni">20.9.6.1. Equazioni</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disequazioni">20.9.6.2. Disequazioni</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-di-equazioni">20.9.6.3. Sistemi di equazioni</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <div class="tex2jax_ignore mathjax_ignore section" id="problemi">
+<span id="math-hs-algebra-complex-problems"></span><h1><span class="section-number">20.9. </span>Problemi<a class="headerlink" href="#problemi" title="Permalink to this heading">#</a></h1>
+<div class="section" id="definizioni">
+<span id="math-hs-algebra-complex-problems-def"></span><h2><span class="section-number">20.9.1. </span>Definizioni<a class="headerlink" href="#definizioni" title="Permalink to this heading">#</a></h2>
+<p><strong>todo</strong></p>
+</div>
+<div class="section" id="rappresentazione-dei-numeri-complessi-nel-piano-complesso-argand-gauss">
+<span id="math-hs-algebra-complex-problems-complex-plane"></span><h2><span class="section-number">20.9.2. </span>Rappresentazione dei numeri complessi nel piano complesso (Argand-Gauss)<a class="headerlink" href="#rappresentazione-dei-numeri-complessi-nel-piano-complesso-argand-gauss" title="Permalink to this heading">#</a></h2>
+<div class="exercise admonition" id="ch/algebra/complex-algebra-problems-exercise-0">
+
+<p class="admonition-title"><span class="caption-number">Exercise 20.1 </span></p>
+<div class="section" id="exercise-content">
+<ol class="arabic simple">
+<li><p>Rappresenta il numero complesso <span class="math notranslate nohighlight">\( z = 3 + 4i \)</span> nel piano complesso e calcola il modulo e l’argomento.</p></li>
+<li><p>Converti il numero complesso <span class="math notranslate nohighlight">\( z = 1 - i \)</span> in forma polare.</p></li>
+<li><p>Determina la forma cartesiana di <span class="math notranslate nohighlight">\( z = 4 \text{cis}\frac{\pi}{3} \)</span>.</p></li>
+<li><p>Calcola il prodotto di <span class="math notranslate nohighlight">\( z_1 = 2 \text{cis}\frac{\pi}{4} \)</span> e <span class="math notranslate nohighlight">\( z_2 = 3 \text{cis}\frac{\pi}{6} \)</span>, e rappresenta il risultato in forma polare.</p></li>
+<li><p>Trova le radici cubiche di <span class="math notranslate nohighlight">\( z = 8 \)</span> e rappresentale nel piano complesso.</p></li>
+</ol>
+</div>
+</div>
+<!--
+**todo**
+Enti geometrici nel piano complesso...
+- rette, semipiano,..., circonferenze,...
+-->
+</div>
+<div class="section" id="operazioni-con-i-numeri-complessi">
+<span id="math-hs-algebra-complex-problems-operations"></span><h2><span class="section-number">20.9.3. </span>Operazioni con i numeri complessi<a class="headerlink" href="#operazioni-con-i-numeri-complessi" title="Permalink to this heading">#</a></h2>
+<div class="exercise admonition" id="ch/algebra/complex-algebra-problems-exercise-1">
+<span id="math-hs-algebra-complex-problems-operations-cc-re-im"></span>
+<p class="admonition-title"><span class="caption-number">Exercise 20.2 </span> (Parte reale e parte immaginaria)</p>
+<div class="section" id="exercise-content">
+<p>Dimostrare le relazioni <a class="reference internal" href="complex-algebra.html#equation-complex-cc-re-im">(20.5)</a></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \text{re}\{z\} &amp; = \frac{z + z^*}{2} \\
+  \text{im}\{z\} &amp; = \frac{z - z^*}{2i} \\
+\end{aligned}\end{split}\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Soluzione<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Dato il numero <span class="math notranslate nohighlight">\(z = \text{re}\{z\} + i \text{im}\{z\} = x + i y\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+ \frac{z + z^*}{2}  &amp; = \frac{x+iy+x-iy}{2}  = \frac{2x}{2} = x = \text{re}\{z\} \\
+ \frac{z - z^*}{2i} &amp; = \frac{x+iy-x+iy}{2i} = \frac{i2y}{2i} = y = \text{im}\{z\}
+\end{aligned}\end{split}\]</div>
+</div>
+</details></div>
+</div>
+</div>
+<div class="section" id="teorema-fondamentale-dell-algebra">
+<span id="math-hs-algebra-complex-problems-fund-thm"></span><h2><span class="section-number">20.9.4. </span>Teorema fondamentale dell’algebra<a class="headerlink" href="#teorema-fondamentale-dell-algebra" title="Permalink to this heading">#</a></h2>
+<div class="exercise admonition" id="ch/algebra/complex-algebra-problems-exercise-2">
+<span id="math-hs-algebra-complex-problems-fund-thm-ex"></span>
+<p class="admonition-title"><span class="caption-number">Exercise 20.3 </span></p>
+<div class="section" id="exercise-content">
+<ol class="arabic simple">
+<li><p>Dimostra che <span class="math notranslate nohighlight">\(z^2 + 1 = 0\)</span> ha due soluzioni complesse e determinane i valori.</p></li>
+<li><p>Risolvi <span class="math notranslate nohighlight">\(z^3 - 8 = 0\)</span> e rappresenta le radici nel piano complesso.</p></li>
+<li><p>Determina tutte le radici quarte di <span class="math notranslate nohighlight">\(z = 16\)</span> in forma polare.</p></li>
+<li><p>Trova i valori di <span class="math notranslate nohighlight">\(z\)</span> tali che <span class="math notranslate nohighlight">\(z^4 = 81 \text{cis}\frac{\pi}{2}\)</span>.</p></li>
+<li><p>Verifica che il prodotto delle radici di <span class="math notranslate nohighlight">\(z^3 + 27 = 0\)</span> è uguale a <span class="math notranslate nohighlight">\(-27\)</span>.</p></li>
+<li><p>Risolvi <span class="math notranslate nohighlight">\(z^5 + z^3 - z + 1 = 0\)</span> per <span class="math notranslate nohighlight">\(z \in \mathbb{C}\)</span>.</p></li>
+<li><p>Dimostra che <span class="math notranslate nohighlight">\(z = i\)</span> è una radice di <span class="math notranslate nohighlight">\(z^3 + z^2 + z + 1 = 0\)</span> e trova le altre radici.</p></li>
+<li><p>Calcola le soluzioni di <span class="math notranslate nohighlight">\(z^6 - 64 = 0\)</span> in forma esponenziale.</p></li>
+<li><p>Trova le radici di <span class="math notranslate nohighlight">\(z^4 + 4z^2 + 16 = 0\)</span> e verifica che soddisfano l’equazione.</p></li>
+<li><p>Determina la radice principale di <span class="math notranslate nohighlight">\(z = \sqrt[3]{-8}\)</span> in forma polare.</p></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section" id="numeri-complessi-e-geometria-nel-piano-euclideo">
+<span id="math-hs-algebra-complex-problems-geometry-2d"></span><h2><span class="section-number">20.9.5. </span>Numeri complessi e geometria nel piano euclideo<a class="headerlink" href="#numeri-complessi-e-geometria-nel-piano-euclideo" title="Permalink to this heading">#</a></h2>
+<div class="exercise admonition" id="math-hs:algebra:complex:problems:geometry-2d:ex">
+
+<p class="admonition-title"><span class="caption-number">Exercise 20.4 </span></p>
+<div class="section" id="exercise-content">
+<ol class="arabic simple">
+<li><p>Disegna il punto <span class="math notranslate nohighlight">\(z = 2 + 3i\)</span> e calcola la distanza dall’origine.</p></li>
+<li><p>Trova il punto medio del segmento che collega <span class="math notranslate nohighlight">\(z_1 = 1 + 2i\)</span> e <span class="math notranslate nohighlight">\(z_2 = 3 + 4i\)</span>.</p></li>
+<li><p>Verifica che i punti <span class="math notranslate nohighlight">\(z_1 = 0\)</span>, <span class="math notranslate nohighlight">\(z_2 = 3 + 4i\)</span>, e <span class="math notranslate nohighlight">\(z_3 = 6 + 0i\)</span> formano un triangolo rettangolo.</p></li>
+<li><p>Trova l’equazione del cerchio con centro <span class="math notranslate nohighlight">\(z = 2 + i\)</span> e raggio <span class="math notranslate nohighlight">\(3\)</span>.</p></li>
+<li><p>Dimostra che la distanza tra <span class="math notranslate nohighlight">\(z_1 = 2 + i\)</span> e <span class="math notranslate nohighlight">\(z_2 = -1 + 2i\)</span> è <span class="math notranslate nohighlight">\(\sqrt{10}\)</span>.</p></li>
+<li><p>Rappresenta graficamente la regione definita da <span class="math notranslate nohighlight">\(|z - 1| &lt; 2\)</span>.</p></li>
+<li><p>Determina il luogo geometrico di <span class="math notranslate nohighlight">\(z\)</span> per cui <span class="math notranslate nohighlight">\(|z - 2i| = |z + 2i|\)</span>.</p></li>
+<li><p>Disegna e descrivi il luogo geometrico definito da <span class="math notranslate nohighlight">\(\text{Re}(z) = 2\)</span>.</p></li>
+<li><p>Trova il punto <span class="math notranslate nohighlight">\(z\)</span> nel piano complesso che soddisfa <span class="math notranslate nohighlight">\(|z - 1| = 3\)</span> e <span class="math notranslate nohighlight">\(\text{Im}(z) &gt; 0\)</span>.</p></li>
+<li><p>Dimostra che i punti <span class="math notranslate nohighlight">\(z_1 = 1 + i\)</span>, <span class="math notranslate nohighlight">\(z_2 = -1 - i\)</span>, e <span class="math notranslate nohighlight">\(z_3 = 0\)</span> sono collineari.</p></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section" id="equazioni-e-disequazioni-con-i-numeri-complessi">
+<span id="math-hs-algebra-complex-problems-equations"></span><h2><span class="section-number">20.9.6. </span>Equazioni e disequazioni con i numeri complessi<a class="headerlink" href="#equazioni-e-disequazioni-con-i-numeri-complessi" title="Permalink to this heading">#</a></h2>
+<div class="section" id="equazioni">
+<span id="math-hs-algebra-complex-problems-equations-eq"></span><h3><span class="section-number">20.9.6.1. </span>Equazioni<a class="headerlink" href="#equazioni" title="Permalink to this heading">#</a></h3>
+<p><a class="reference internal" href="complex-algebra-sol.html#math-hs-algebra-complex-sol-equations-eq-sol"><span class="std std-ref">Soluzioni</span></a>.</p>
+<div class="exercise admonition" id="ch/algebra/complex-algebra-problems-exercise-4">
+
+<p class="admonition-title"><span class="caption-number">Exercise 20.5 </span> (Equazioni)</p>
+<div class="section" id="exercise-content">
+<p>Risolvere le seguenti equazioni</p>
+<ol class="arabic simple">
+<li><p>Risolvi <span class="math notranslate nohighlight">\(|z| = 2\)</span> e rappresenta graficamente le soluzioni.</p></li>
+<li><p>Trova i numeri complessi <span class="math notranslate nohighlight">\(z\)</span> che soddisfano <span class="math notranslate nohighlight">\(z + \overline{z} = 2\)</span>.</p></li>
+<li><p>Risolvi <span class="math notranslate nohighlight">\(z^2 - 2z + 5 = 0\)</span> e calcola il modulo delle soluzioni.</p></li>
+<li><p>Risolvi <span class="math notranslate nohighlight">\(|z - 3 + 1| = 2\)</span> e rappresenta graficamente le soluzioni.</p></li>
+<li><p>Trova i valori di <span class="math notranslate nohighlight">\(z\)</span> per cui <span class="math notranslate nohighlight">\(z^3 = 27\)</span>.</p></li>
+<li><p>Risolvi <span class="math notranslate nohighlight">\((z-1)^4 + 16 = 0\)</span> e rappresenta graficamente le soluzioni nel piano complesso.</p></li>
+<li><p>Risolvi <span class="math notranslate nohighlight">\(|z - 2| = |z + 1|\)</span> e descrivi il luogo geometrico delle soluzioni.</p></li>
+<li><p>Trova le soluzioni di <span class="math notranslate nohighlight">\(z^5 - 32 = 0\)</span> e rappresentale in forma polare.</p></li>
+<li><p>Determina i numeri complessi <span class="math notranslate nohighlight">\(z\)</span> per cui <span class="math notranslate nohighlight">\(|z|^2 + |z - 2|^2 = 8\)</span>.</p></li>
+<li><p>Risolvi <span class="math notranslate nohighlight">\(|z + i| = 3\)</span> per <span class="math notranslate nohighlight">\(z \in \mathbb{C}\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(z^2 + 4 = 0\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(z^2 - 2z + 5 = 0\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(z^3 + 8 = 0\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(|z-2-i| = 2\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(|z-2-i| = |z-1|\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(z + \bar{z} = 1\)</span></p></li>
+</ol>
+<!--
+17. $\begin{cases} z + \bar{z} = 6 \\ |z| = 5 \end{cases}$
+-->
+</div>
+</div>
+</div>
+<div class="section" id="disequazioni">
+<span id="math-hs-algebra-complex-problems-equations-ineq"></span><h3><span class="section-number">20.9.6.2. </span>Disequazioni<a class="headerlink" href="#disequazioni" title="Permalink to this heading">#</a></h3>
+<p><a class="reference internal" href="complex-algebra-sol.html#math-hs-algebra-complex-sol-equations-ineq-sol"><span class="std std-ref">Soluzioni</span></a>.</p>
+<div class="exercise admonition" id="ch/algebra/complex-algebra-problems-exercise-5">
+
+<p class="admonition-title"><span class="caption-number">Exercise 20.6 </span> (Disequazioni)</p>
+<div class="section" id="exercise-content">
+<p><strong>1.</strong> Trova i numeri complessi <span class="math notranslate nohighlight">\(z\)</span> che soddisfano <span class="math notranslate nohighlight">\(|z| &lt; 3\)</span>.</p>
+<p><strong>2.</strong> Determina <span class="math notranslate nohighlight">\(z\)</span> per cui <span class="math notranslate nohighlight">\(|z - 2| \geq 4\)</span>.</p>
+<p><strong>3.</strong> Risolvi <span class="math notranslate nohighlight">\(|z + i| \leq 2\)</span>.</p>
+<p><strong>4.</strong> Trova <span class="math notranslate nohighlight">\(z\)</span> tali che <span class="math notranslate nohighlight">\(\text{Re}(z) &gt; \text{Im}(z)\)</span>.</p>
+<p><strong>5.</strong> Risolvi <span class="math notranslate nohighlight">\(|z - 1| &gt; |z + 1|\)</span>.</p>
+<p><strong>6.</strong> Determina il luogo geometrico di <span class="math notranslate nohighlight">\(z\)</span> per cui <span class="math notranslate nohighlight">\(|z| - |z-2| \leq 1\)</span>.</p>
+<p><strong>7.</strong> Risolvi <span class="math notranslate nohighlight">\(\text{Re}(z) + \text{Im}(z) \leq 2\)</span>.</p>
+<p><strong>8.</strong> Trova <span class="math notranslate nohighlight">\(z\)</span> tali che <span class="math notranslate nohighlight">\(|z| + |z - 1| \leq 5\)</span>.</p>
+<p><strong>9.</strong> Trova <span class="math notranslate nohighlight">\(z\)</span> tali che <span class="math notranslate nohighlight">\(|z+i| + |z - 1| \leq 5\)</span>.</p>
+<p><strong>10.</strong> Risolvi <span class="math notranslate nohighlight">\(|z - i| \geq |z + 2|\)</span>.</p>
+<p><strong>11.</strong> Determina il luogo geometrico di <span class="math notranslate nohighlight">\(z\)</span> per cui <span class="math notranslate nohighlight">\(|z| - |z-2| \leq 3\)</span>.</p>
+</div>
+</div>
+</div>
+<div class="section" id="sistemi-di-equazioni">
+<span id="math-hs-algebra-complex-problems-equations-sys"></span><h3><span class="section-number">20.9.6.3. </span>Sistemi di equazioni<a class="headerlink" href="#sistemi-di-equazioni" title="Permalink to this heading">#</a></h3>
+<p><a class="reference internal" href="complex-algebra-sol.html#math-hs-algebra-complex-sol-equations-sys-sol"><span class="std std-ref">Soluzioni</span></a>.</p>
+<div class="exercise admonition" id="ch/algebra/complex-algebra-problems-exercise-6">
+
+<p class="admonition-title"><span class="caption-number">Exercise 20.7 </span> (Sistemi di equazioni)</p>
+<div class="section" id="exercise-content">
+<ol class="arabic simple">
+<li><p>Risolvi il sistema:<br />
+<span class="math notranslate nohighlight">\(\begin{cases} 
+z + \overline{z} = 6 \\
+|z| = 5 
+\end{cases}\)</span></p></li>
+<li><p>Trova <span class="math notranslate nohighlight">\(z_1\)</span> e <span class="math notranslate nohighlight">\(z_2\)</span> che soddisfano il sistema:<br />
+<span class="math notranslate nohighlight">\(\begin{cases} 
+|z_1| = 3 \\
+z_1 z_2 = 9 
+\end{cases}\)</span></p></li>
+<li><p>Risolvi il sistema:<br />
+<span class="math notranslate nohighlight">\(\begin{cases} 
+z^2 + w^2 = 5 \\
+z w = 4 
+\end{cases}\)</span></p></li>
+<li><p>Determina le soluzioni del sistema:<br />
+<span class="math notranslate nohighlight">\(\begin{cases} 
+|z| = 4 \\
+z + \overline{z} = 6 
+\end{cases}\)</span></p></li>
+<li><p>Risolvi il sistema:<br />
+<span class="math notranslate nohighlight">\(\begin{cases} 
+z^3 + w = 1 \\
+z w^3 = -1 
+\end{cases}\)</span></p></li>
+<li><p>Trova <span class="math notranslate nohighlight">\(z\)</span> e <span class="math notranslate nohighlight">\(w\)</span> per il sistema:<br />
+<span class="math notranslate nohighlight">\(\begin{cases} 
+z^2 + w^2 = 7 \\
+z + w = 3 
+\end{cases}\)</span></p></li>
+<li><p>Risolvi il sistema:<br />
+<span class="math notranslate nohighlight">\(\begin{cases} 
+|z| = 2 \\
+z + w = 0 
+\end{cases}\)</span></p></li>
+<li><p>Trova <span class="math notranslate nohighlight">\(z\)</span> e <span class="math notranslate nohighlight">\(w\)</span> che soddisfano il sistema:<br />
+<span class="math notranslate nohighlight">\(\begin{cases} 
+z w = 1 \\
+z - w = i 
+\end{cases}\)</span></p></li>
+<li><p>Determina le soluzioni del sistema:<br />
+<span class="math notranslate nohighlight">\(\begin{cases} 
+z^2 + \overline{z}^2 = 8 \\
+z \cdot \overline{z} = 9 
+\end{cases}\)</span></p></li>
+<li><p>Risolvi il sistema:<br />
+<span class="math notranslate nohighlight">\(\begin{cases} 
+z + w = 5 + i \\
+z \cdot w = 6 - i 
+\end{cases}\)</span></p></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./ch/algebra"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="complex-algebra.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">precedente</p>
+        <p class="prev-next-title"><span class="section-number">20. </span>Algebra complessa</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="complex-algebra-sol.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">successivo</p>
+        <p class="prev-next-title"><span class="section-number">20.10. </span>Problemi - soluzioni</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenuti
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definizioni">20.9.1. Definizioni</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rappresentazione-dei-numeri-complessi-nel-piano-complesso-argand-gauss">20.9.2. Rappresentazione dei numeri complessi nel piano complesso (Argand-Gauss)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni-con-i-numeri-complessi">20.9.3. Operazioni con i numeri complessi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-fondamentale-dell-algebra">20.9.4. Teorema fondamentale dell’algebra</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#numeri-complessi-e-geometria-nel-piano-euclideo">20.9.5. Numeri complessi e geometria nel piano euclideo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-e-disequazioni-con-i-numeri-complessi">20.9.6. Equazioni e disequazioni con i numeri complessi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni">20.9.6.1. Equazioni</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disequazioni">20.9.6.2. Disequazioni</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-di-equazioni">20.9.6.3. Sistemi di equazioni</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Di basics
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

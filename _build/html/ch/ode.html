@@ -1,0 +1,1292 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="it" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>26. Equazioni differenziali ordinarie &#8212; Matematica per le scuole superiori</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/exercise.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/style.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/ode';</script>
+    <link rel="shortcut icon" href="../_static/favicon.svg"/>
+    <link rel="index" title="Indice" href="../genindex.html" />
+    <link rel="search" title="Cerca" href="../search.html" />
+    <link rel="next" title="27. Introduzione al calcolo multi-variabile" href="multivariable-calculus.html" />
+    <link rel="prev" title="25.6. Problemi" href="infinitesimal_calculus/integrals-problems.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="it"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.svg" class="logo__image only-light" alt="Matematica per le scuole superiori - Home"/>
+    <script>document.write(`<img src="../_static/logo-dark.svg" class="logo__image only-dark" alt="Matematica per le scuole superiori - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduzione</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="program.html">Programma</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Insiemistica e logica</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="set.html">1. Insiemistica</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="set/numeric-sets.html">1.5. Insiemi numerici</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="logics.html">2. Logica</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Algebra</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="algebra.html">3. Introduzione all’algebra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="algebra/real-algebra.html">4. Algebra sui numeri reali</a></li>
+<li class="toctree-l1"><a class="reference internal" href="algebra/real-n-algebra.html">5. Algebra su <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span></a></li>
+<li class="toctree-l1"><a class="reference internal" href="algebra/linear-algebra.html">6. Algebra lineare</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="algebra/vector-algebra.html">7. Algebra vettoriale</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="algebra/vector-algebra-def.html">7.1. Prime definizioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="algebra/vector-algebra-euclidean-space.html">7.2. Spazio vettoriale euclideo</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="algebra/complex-algebra-link.html">8. Algebra complessa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="algebra/set-algebra-link.html">9. Algebra di insiemi</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Geometria analitica</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="analytic_geometry.html">10. Introduzione alla geometria analitica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analytic_geometry/euclidean_space.html">11. Spazio euclideo</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="analytic_geometry/analytic_geometry_2d.html">12. Geometria analitica nel piano</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/coordinates.html">12.1. Sistemi di coordinate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/points.html">12.2. Distanze e angoli</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/curves.html">12.3. Curve nel piano</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/lines.html">12.4. Rette nel piano</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/conics.html">12.5. Coniche</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/conics-cartesian.html">12.5.1. Forma canonica in coordinate cartesiane</a></li>
+<li class="toctree-l3"><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/conics-polar.html">12.5.2. Forma canonica in coordinate polari</a></li>
+<li class="toctree-l3"><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/conics-general.html">12.5.3. Equazione generale delle coniche</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/problems.html">12.6. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/sol.html">12.7. Soluzioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analytic_geometry/analytic_geometry_2d/notes.html">12.8. Note e dimostrazioni</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="analytic_geometry/analytic_geometry_3d.html">13. Geometria analitica nello spazio</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="analytic_geometry/analytic_geometry_3d/points.html">13.1. Sistemi di coordinate per lo spazio euclideo <span class="math notranslate nohighlight">\(E^3\)</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="analytic_geometry/analytic_geometry_3d/planes.html">13.2. Piani nello spazio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analytic_geometry/analytic_geometry_3d/curves.html">13.3. Curve nello spazio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analytic_geometry/analytic_geometry_3d/lines.html">13.4. Rette nello spazio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analytic_geometry/analytic_geometry_3d/cone.html">13.5. Cono circolare retto e coniche</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Precalcolo</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="precalculus.html">14. Introduzione al pre-calcolo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="precalculus/real-functions.html">15. Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\(f: \mathbb{R} \rightarrow \mathbb{R}\)</span></a></li>
+<li class="toctree-l1"><a class="reference internal" href="precalculus/polynomials.html">16. Polinomi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="series.html">17. Serie e successioni</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trigonometry.html">18. Trigonometria</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="precalculus/exponential_logarithm.html">19. Esponenziale e logaritmo</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="precalculus/exponential_logarithm-problems.html">19.2. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="precalculus/exponential_logarithm-sol.html">19.3. Soluzioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="precalculus/exponential_logarithm-notes.html">19.4. Note e dimostrazioni</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="algebra/complex-algebra.html">20. Algebra complessa</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="algebra/complex-algebra-problems.html">20.9. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="algebra/complex-algebra-sol.html">20.10. Problemi - soluzioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="algebra/complex-algebra-notes.html">20.11. Note e dimostrazioni</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="precalculus/multivariable-real-fun.html">21. Funzioni multi-variabile</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Calcolo</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="calculus.html">22. Introduzione al calcolo</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="infinitesimal_calculus/analysis.html">23. Introduzione all’analisi</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="infinitesimal_calculus/analysis-problems.html">23.9. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="infinitesimal_calculus/analysis-notes.html">23.10. Note e dimostrazioni</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="infinitesimal_calculus/derivatives.html">24. Derivate</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="infinitesimal_calculus/derivatives-problems.html">24.8. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="infinitesimal_calculus/derivatives-notes.html">24.9. Note e dimostrazioni</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="infinitesimal_calculus/integrals.html">25. Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="infinitesimal_calculus/integrals-table.html">25.5. Tavola degli integrali indefiniti più comuni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="infinitesimal_calculus/integrals-problems.html">25.6. Problemi</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">26. Equazioni differenziali ordinarie</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="multivariable-calculus.html">27. Introduzione al calcolo multi-variabile</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="multivariable-calculus/limits.html">27.1. Limite di una funzione di più variabili</a></li>
+<li class="toctree-l2"><a class="reference internal" href="multivariable-calculus/derivatives.html">27.2. Derivate di funzioni di più variabili</a></li>
+<li class="toctree-l2"><a class="reference internal" href="multivariable-calculus/integrals.html">27.3. Integrali su domini multi-dimensionali</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="vector-calculus.html">28. Introduzione al calcolo vettoriale su spazi euclidei</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="vector-calculus/derivatives.html">28.1. Operatori differenziali in spazi euclidei</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vector-calculus/integrals.html">28.2. Integrali in spazi euclidei</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vector-calculus/problems.html">28.3. Problemi</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Statistica</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="statistics.html">29. Introduzione alla statistica</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Indice</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Indice</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Repository di origine"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs/edit/master/ch/ode.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs/issues/new?title=Issue%20on%20page%20%2Fch/ode.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Apri un problema"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Scarica questa pagina">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/ch/ode.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Scarica il file sorgente"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Stampa in PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Modalità schermo intero"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Cerca" aria-label="Cerca" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Equazioni differenziali ordinarie</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenuti </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prime-definizioni">26.1. Prime definizioni</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classificazione-esempi-e-tecniche-risolutive">26.2. Classificazione, esempi e tecniche risolutive</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-lineari-a-coefficienti-costanti">26.2.1. Equazioni lineari a coefficienti costanti</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#definizione">26.2.1.1. Definizione</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">26.2.1.2. Esempi</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#soluzione-generale">26.2.1.3. Soluzione generale</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#soluzione-dell-equazione-omogenea">26.2.1.3.1. Soluzione dell’equazione omogenea</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#soluzione-particolare-dell-equazione-completa">26.2.1.3.2. Soluzione particolare dell’equazione completa</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#soluzione-degli-esempi">26.2.1.4. Soluzione degli esempi</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-differenziali-a-variabili-separabili-tecnica-di-soluzione-di-separazione-delle-variabili">26.2.2. Equazioni differenziali a variabili separabili: tecnica di soluzione di separazione delle variabili</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ode-hs-types-separable-ex">26.2.2.1. Esempi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <!--
+```{article-info}
+:author: basics
+:date: "{sub-ref}`today`"
+:read-time: "{sub-ref}`wordcount-minutes` min read"
+```
+-->
+<div class="tex2jax_ignore mathjax_ignore section" id="equazioni-differenziali-ordinarie">
+<span id="ode-hs"></span><h1><span class="section-number">26. </span>Equazioni differenziali ordinarie<a class="headerlink" href="#equazioni-differenziali-ordinarie" title="Permalink to this heading">#</a></h1>
+<p>Le equazioni differenziali ordinarie, spesso abbreviate con l’acronimo <strong>ODE</strong> dall’inglese <em>Ordinary Differential Equations</em>, sono equazioni che coinvolgono una funzione di una variabile e le sue derivate.</p>
+<p><strong>Motivazione.</strong> Le ODE sono un argomento fondamentale da comprendere, poiché esse compaiono e governano la risposta di molti sistemi in vari ambiti della matematica, della fisica e delle scienze in generale, dell’ingegneria e dell’economia. Così, ad esempio sono ODE:</p>
+<ul class="simple">
+<li><p>le equazioni del moto in dinamica</p></li>
+<li><p>le equazioni della statica in meccanica delle strutture</p></li>
+<li><p>le equazioni che descrivono l’andamento della temperatura attraverso un mezzo, in condizioni stazionarie</p></li>
+<li><p>le equazioni che descrivono l’evoluzione di una popolazione di prede e di predatori (es. modello di Lotka-Volterra)</p></li>
+</ul>
+<p>e in generale, in tutti le equazioni che governano processi in cui il valore di una funzione incognita in un istante di tempo o in un punto dello spazio spazio dipende dal suo valore negli istanti di tempo o nei punti dello spazio «vicini».</p>
+<p><strong>Approccio.</strong>
+Mentre le motivazioni date dovrebbero essere sufficienti a convincere dell’importanza e della necessità di un’introduzione alle ODE, una trattazione completa dell’argomento richiede strumenti matematici più avanzati di quelli disponibili a uno studente delle scuole superiori (e spesso anche di molti studenti universitari).
+Si cercherà quindi di trattare l’argomento nella maniera più rigorosa possibile per fornire gli strumenti necessari per (semplici) applicazioni nelle quali compaiono le ODE, mentre si chiederà qualche atto di fede nell’accettare alcuni risultati. <span style="color:red">Per completezza, in corrispondenza di questi atti di fede, verrà messo a disposizione un collegamento a una trattazione più completa dell’argomento.</span></p>
+<p><strong>Contenuti.</strong>
+Il capitolo è diviso come segue: dopo aver fornito le <a class="reference internal" href="#ode-hs-def"><span class="std std-ref">prime definizioni</span></a>, si introduce una <a class="reference internal" href="#ode-hs-types"><span class="std std-ref">classificazione</span></a> delle equazioni differenziali ordinarie, prestando massima attenzione alle <a class="reference internal" href="#ode-hs-types-linear-const"><span class="std std-ref">equazioni differenziali lineari a coefficienti costanti</span></a>: per questo particolare tipo di ODE, è possibile trovare un metodo generale di soluzione. Dopo aver mostrato <a class="reference internal" href="#ode-hs-types-linear-const-ex"><span class="std std-ref">alcuni esempi</span></a>, viene presentato il <a class="reference internal" href="#ode-hs-types-linear-const-sol"><span class="std std-ref">metodo di soluzione</span></a>, e applicato successivamente alla <a class="reference internal" href="#ode-hs-types-linear-const-ex-sol"><span class="std std-ref">risoluzione degli esempi</span></a> dati: la soluzione degli esempi è pensata per fare pratica con la tecnica risolutiva e permette di indagare alcuni fenomeni fisici come quello della <strong>risonanza</strong> <strong>todo</strong> <em>aggiungere riferimento alla soluzione del sistema massa-molla-smorzatore</em>. Infine, viene presentata un’altra categoria di ODE, per la quale esiste - almeno formalmente - una tecnica risolutiva: la tecnica di separazione delle variabili per le <a class="reference internal" href="#ode-hs-types-separable"><span class="std std-ref">equazioni differenziali a variabili separabili</span></a>.</p>
+<div class="section" id="prime-definizioni">
+<span id="ode-hs-def"></span><h2><span class="section-number">26.1. </span>Prime definizioni<a class="headerlink" href="#prime-definizioni" title="Permalink to this heading">#</a></h2>
+<p>Un”<strong>equazione differenziale ordinaria</strong> è un’equazione che coinvolge una funzione reale, incognita, di una variabile reale e le sue derivate. Formalmente una ODE può essere scritta come</p>
+<div class="math notranslate nohighlight">
+\[F\left(y^{(n)}(x), \dots y'(x), y(x), x \right) = 0 \quad , \qquad x \in D = [x_0, x_1]\]</div>
+<p>Un problema differenziale <strong>ben definito</strong>, in generale è definito da una <strong>ODE</strong>, per valori della variabile indipendente <span class="math notranslate nohighlight">\(x\)</span> all’interno di un dominio dato, <span class="math notranslate nohighlight">\(x \in D\)</span>, e da alcune <strong>condizioni al contorno</strong> del dominio che consentano di determinare una soluzione del problema senza arbitrarietà. Come regola generale, affinché un problema sia definito sono necessarie <span class="math notranslate nohighlight">\(n\)</span> condizioni sulla funzione incognita o sulle sue derivate. Si possono definire alcuni problemi:</p>
+<ul class="simple">
+<li><p>problemi differenziali <strong>ai valori iniziali</strong> (o di <strong>Cauchy</strong>), se le <span class="math notranslate nohighlight">\(n\)</span> condizioni coinvolgono il valore della funzione e delle sue prime <span class="math notranslate nohighlight">\(n-1\)</span> derivate all’estremo inferiore del dominio; un esempio tipico di problemi di Cauchy sono i problemi diretti in meccanica classica, dove l’evoluzione di un sistema è governata da equazioni differenziali del secondo ordine nella posizione, e può essere determinata dalle forze agenti su di esso, una volta nota la posizione (valore della funzione incognita) e della velocità (valore della derivata prima della funzione incognita) all’istante iniziale dell’intervallo di interesse</p></li>
+<li><p>problemi differenziali con <strong>condizioni al contorno</strong></p></li>
+</ul>
+<p>Il <strong>grado</strong> di una ODE è l’ordine massimo della derivata che compare nell’equazione. In generale, la soluzione di una ODE di grado <span class="math notranslate nohighlight">\(n\)</span> è il risultato di <span class="math notranslate nohighlight">\(n\)</span> operazioni di integrazione che producono <span class="math notranslate nohighlight">\(n\)</span> costanti arbitrarie.</p>
+</div>
+<div class="section" id="classificazione-esempi-e-tecniche-risolutive">
+<span id="ode-hs-types"></span><h2><span class="section-number">26.2. </span>Classificazione, esempi e tecniche risolutive<a class="headerlink" href="#classificazione-esempi-e-tecniche-risolutive" title="Permalink to this heading">#</a></h2>
+<div class="section" id="equazioni-lineari-a-coefficienti-costanti">
+<span id="ode-hs-types-linear-const"></span><h3><span class="section-number">26.2.1. </span>Equazioni lineari a coefficienti costanti<a class="headerlink" href="#equazioni-lineari-a-coefficienti-costanti" title="Permalink to this heading">#</a></h3>
+<div class="section" id="definizione">
+<span id="ode-hs-types-linear-const-def"></span><h4><span class="section-number">26.2.1.1. </span>Definizione<a class="headerlink" href="#definizione" title="Permalink to this heading">#</a></h4>
+<p>Una ODE lineare a coefficienti costanti di ordine <span class="math notranslate nohighlight">\(n\)</span> è un’equazione differenziale che mette in relazione la combinazione lineare della funzione incognita <span class="math notranslate nohighlight">\(y(x)\)</span> e delle sue prime <span class="math notranslate nohighlight">\(n\)</span> derivate con una funzione nota <span class="math notranslate nohighlight">\(f(x)\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[a_n y^{(n)}(x) + \dots a_1 y'(x) + a_0 y(x) = f(x) \ .\]</div>
+<p>Se la funzione <span class="math notranslate nohighlight">\(f(x)\)</span> è la funzione identicamente nulla <span class="math notranslate nohighlight">\(f(x) \equiv 0\)</span>, l’equazione è un’equazione omogenea.</p>
+</div>
+<div class="section" id="esempi">
+<span id="ode-hs-types-linear-const-ex"></span><h4><span class="section-number">26.2.1.2. </span>Esempi<a class="headerlink" href="#esempi" title="Permalink to this heading">#</a></h4>
+<p>In questa sezione vengono presentati alcuni esempi di equazioni differenziali ordinarie, ottenute partendo da alcune leggi della fisica. Successivamente nel capitolo verrà presentata la <a class="reference internal" href="#ode-hs-types-linear-const-ex-sol"><span class="std std-ref">soluzione</span></a> di alcuni problemi differenziali descritti in questi esempi.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Temperatura di un corpo, soggetto a convezione<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>Temperatura di un corpo, soggetto a convezione.</strong> L’equazione che governa l’evoluzione della temperatura <span class="math notranslate nohighlight">\(T(t)\)</span> di un sistema, sufficientemente piccolo da poter essere considerato a temperatura uniforme nello spazio, soggetto alla trasmissione del calore per convezione sulla sua superficie in un ambiente a temperatura <span class="math notranslate nohighlight">\(T^e(t)\)</span> nota è l’equazione differenziale ordinaria del primo ordine,</p>
+<div class="math notranslate nohighlight">
+\[m \, C \, \dot{T}(t) + h \, T(t) = h \, T_e(t) \ ,\]</div>
+<p class="sd-card-text">con le opportune condizioni iniziali.
+Questa equazione può essere ricavata dal principio della termodinamica, per il quale la variazione di energia termica <span class="math notranslate nohighlight">\(E\)</span> di un sistema non sottoposta a lavoro delle forze è uguale al flusso di calore «entrante» nel sistema, <span class="math notranslate nohighlight">\(\dot{Q}^e\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\dot{E} = \dot{Q}^e \ ,\]</div>
+<p class="sd-card-text">scrivendo l’energia termica come il prodotto della massa <span class="math notranslate nohighlight">\(m\)</span>, del calore specifico <span class="math notranslate nohighlight">\(c\)</span> e della temperatura <span class="math notranslate nohighlight">\(T\)</span> del sistema, e il flusso di calore per convezione con la <em>formula di Newton</em>, <span class="math notranslate nohighlight">\(\dot{Q} = h (T_e - T)\)</span>.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Sistema massa-molla-smorzatore<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>Sistema massa-molla-smorzatore.</strong> L’equazione che governa la dinamica di un sistema massa-molla-smorzatore con un corpo di massa <span class="math notranslate nohighlight">\(m\)</span> che si muove lungo una direzione <span class="math notranslate nohighlight">\(x\)</span>, vincolato a terra da una molla di costante elastica <span class="math notranslate nohighlight">\(k\)</span> e da uno smorzatore lineare con coefficiente <span class="math notranslate nohighlight">\(c\)</span>, soggetto a una forzante esterna <span class="math notranslate nohighlight">\(f^e(t)\)</span> nota è l’equazione differenziale ordinaria del secondo ordine,</p>
+<div class="math notranslate nohighlight">
+\[m \, \ddot{x}(t) + c \, \dot{x}(t) + k \, x(t) = f^e(t) \ ,\]</div>
+<p class="sd-card-text">con le opportune condizioni iniziali.
+Questa equazione può essere ricavata dal secondo principio della dinamica di Newton lungo la direzione <span class="math notranslate nohighlight">\(x\)</span></p>
+<div class="math notranslate nohighlight">
+\[\dot{\vec{Q}} = \vec{R}^e = \vec{F}^k + \vec{f}^c + \vec{f}^e(t) \ ,\]</div>
+<p class="sd-card-text">scrivendo la quantità di moto del sistema lungo <span class="math notranslate nohighlight">\(x\)</span> come <span class="math notranslate nohighlight">\(Q_x = m \dot{x}(t)\)</span> e assumendo che la molla e lo smorzatore esercitino una forza sul corpo <span class="math notranslate nohighlight">\(f^{k} = - k \, x\)</span>, <span class="math notranslate nohighlight">\(f^c = - c \, \dot{x}\)</span> rispettivamente.</p>
+<p class="sd-card-text"><strong>Distribuzione stazionaria di temperatura.</strong> La distribuzione stazionaria di temperatura in un corpo, senza sorgenti di calore al suo interno, è governata dall’equazione differenziale ordinaria del secondo ordine,</p>
+<div class="math notranslate nohighlight">
+\[( k T'(x) )' = 0 \ ,\]</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Circuito RLC. <strong>todo</strong><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>Circuito RLC.</strong> <strong>todo</strong></p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Caduta di un grave - 1: senza resistenza<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>Caduta di un grave - 1: senza resistenza.</strong> L’equazione che governa la caduta di un corpo di massa <span class="math notranslate nohighlight">\(m\)</span> soggetto alla gravità <span class="math notranslate nohighlight">\(g\)</span> lungo la verticale nei pressi della superficie terrestre è l’equazione differenziale ordinaria del secondo ordine</p>
+<div class="math notranslate nohighlight">
+\[m \ddot{z} = - m \, g \ ,\]</div>
+<p class="sd-card-text">con le opportune condizioni iniziali.
+Questa equazione può essere ricavata dal secondo principio della dinamica di Newton per un corpo di massa <span class="math notranslate nohighlight">\(m\)</span> soggetto unicamente al suo peso <span class="math notranslate nohighlight">\(\vec{F}^{peso} = - m \, g \hat{z}\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\dot{\vec{Q}} = \vec{F}^{peso} \ ,\]</div>
+<p class="sd-card-text">e scegliendo la coordinata <span class="math notranslate nohighlight">\(z\)</span> allineata alla verticale e diretta verso l’alto.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Caduta di un grave - 2: con resistenza lineare nella velocità<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>Caduta di un grave - 2: con resistenza lineare nella velocità.</strong> Se la caduta del grave è influenzata dalla resistenza aerodinamica dovuta all’interazione con l’aria rispetto alla quale si muove, e se questa interazione può essere rappresentata da una forza lineare rispetto alla velocità, <span class="math notranslate nohighlight">\(\vec{D} = - c \dot{\vec{r}}\)</span>, il secondo principio della dinamica fornisce l’equazione del moto,</p>
+<div class="math notranslate nohighlight">
+\[\dot{\vec{Q}} = \vec{F}^{peso} + \vec{D} \ ,\]</div>
+<p class="sd-card-text">che può essere proiettata lungo la verticale per dare l’equazione differenziale ordinaria del secondo ordine,</p>
+<div class="math notranslate nohighlight">
+\[m \ddot{z} + c \dot{z} = m \, g \ .\]</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Caduta di un grave - 3: con resistenza quadratica nella velocità<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>Caduta di un grave - 3: con resistenza quadratica nella velocità</strong> Se la caduta del grave è influenzata dalla resistenza aerodinamica dovuta all’interazione con l’aria rispetto alla quale si muove, e se questa interazione può essere rappresentata da una forza lineare rispetto alla velocità, <span class="math notranslate nohighlight">\(\vec{D} = - \frac{1}{2} \rho S c_D |\dot{\vec{r}}| \dot{\vec{r}}\)</span>, il secondo principio della dinamica fornisce l’equazione del moto,</p>
+<div class="math notranslate nohighlight">
+\[\dot{\vec{Q}} = \vec{F}^{peso} + \vec{D} \ ,\]</div>
+<p class="sd-card-text">che può essere proiettata lungo la verticale per dare l’equazione differenziale ordinaria del secondo ordine,</p>
+<div class="math notranslate nohighlight">
+\[m \ddot{z} + \frac{1}{2} \rho S c_D |\dot{z}| \dot{z} = m \, g \ .\]</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Moto parabolico di un grave - 1: senza resistenza<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>Moto parabolico di un grave - 1: senza resistenza.</strong> Il moto parabolico nei pressi della superficie terrestre è un moto piano governato da un’equazione del moto ricavata dal secondo principio della dinamica,</p>
+<div class="math notranslate nohighlight">
+\[\dot{\vec{Q}} = \vec{R}^e \ .\]</div>
+<p class="sd-card-text">Una scelta conveniente del sistema di coordinate per descrivere il moto piano consiste nella scelta di coordinate cartesiane <span class="math notranslate nohighlight">\((x,y)\)</span>, con l’asse <span class="math notranslate nohighlight">\(y\)</span> rivolto verso l’alto e l’asse <span class="math notranslate nohighlight">\(x\)</span> orizzontale e nel piano del moto. Scegliendo un sistema di coordinate cartesiane, la posizione di un punto può essere scritta usando i due vettori unitari (<em>uniformi nello spazio, e quindi costanti</em> <strong>todo</strong> <em>spiegarsi peggio</em>)</p>
+<div class="math notranslate nohighlight">
+\[P(t) - O = x_P(t) \hat{x} + y_P(t) \hat{y} \ .\]</div>
+<p class="sd-card-text">Calcolando le derivate nel tempo della posizione si trovano le espressioni della velocità e dell’accelerazione del punto <span class="math notranslate nohighlight">\(P\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \vec{v}_P(t) = v_{x,P}(t) \hat{x} + v_{y,P}(t) \hat{y} &amp; =  \dot{\vec{r}}_P(t) = \dot{x}_{P}(t) \hat{x} + \dot{y}_{P}(t) \hat{y} \\
+  \vec{a}_P(t) = a_{x,P}(t) \hat{x} + a_{y,P}(t) \hat{y} &amp; = \ddot{\vec{r}}_P(t) =\ddot{x}_{P}(t) \hat{x} +\ddot{y}_{P}(t) \hat{y} \\
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">Il secondo principio della dinamica diventa quindi</p>
+<div class="math notranslate nohighlight">
+\[m ( \ddot{x}_P(t) \hat{x} + \ddot{y}_P(t) \hat{y}) = - m \, g \hat{y} \ ,\]</div>
+<p class="sd-card-text">avendo usato l’espressione della forza peso <span class="math notranslate nohighlight">\(\vec{F}^{peso} = - m \, g \hat{y}\)</span>. Proiettando l’equazione vettoriale lungo le due direzioni cartesiane, si ottiene un sistema di due equazioni differenziali del secondo ordine</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+  m \ddot{x}_P = 0 \\
+  m \ddot{y}_P = - m \, g
+\end{cases}\end{split}\]</div>
+<p class="sd-card-text">In questo caso, le due equazioni differenziali del sistema sono indipendenti tra di loro e il problema differenziale può essere risolto senza difficoltà aggiuntive, una volta che vengono date le condizioni (iniziali, per problema diretto) necessarie.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Moto parabolico di un grave - 2: con resistenza lineare nella velocità<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Deformazione a torsione di una trave<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>Deformazione a torsione di una trave.</strong> La rotazione delle sezioni di una trave di lunghezza <span class="math notranslate nohighlight">\(L\)</span> soggetta a torsione con un momento torcente distribuito <span class="math notranslate nohighlight">\(m(x)\)</span> è governata dall’equazione di equilibrio indefinito,</p>
+<div class="math notranslate nohighlight">
+\[M_z'(z) = m(x) \ ,\]</div>
+<p class="sd-card-text">con una legge costitutiva che leghi la rotazione <span class="math notranslate nohighlight">\(\theta(z)\)</span> di una sezione al momento torcente interno <span class="math notranslate nohighlight">\(M_z(z)\)</span>, e le opportune condizioni al contorno. Nel caso di trave elastica lineare, la legge costitutiva stabilisce la relazione <span class="math notranslate nohighlight">\(M_z(z) = GJ \theta'(z)\)</span>. Nel caso di trave incastrata nell’estremo identificato dalla coordinata <span class="math notranslate nohighlight">\(z=0\)</span> e di momento torcente <span class="math notranslate nohighlight">\(M^e\)</span> applicato nell’estremo identificato dalla coordinata <span class="math notranslate nohighlight">\(z = L\)</span>, la deformazione a torsione della trave è determinata dal problema differenziale</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+(GJ \theta'(z))' = m(z) \qquad z \in [0,L] \\
+\theta(0) = 0 \\
+GJ \theta'(L) = M^e \\
+\end{cases}\end{split}\]</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Deformazione a flessione di una trave<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>Deformazione a flessione di una trave.</strong> La deformazione a flessione di una trave elastica lineare è governata dall’equazione $<span class="math notranslate nohighlight">\(w''''(z) = f(z)\)</span>$… <strong>todo</strong></p>
+</div>
+</details></div>
+<div class="section" id="soluzione-generale">
+<span id="ode-hs-types-linear-const-sol"></span><h4><span class="section-number">26.2.1.3. </span>Soluzione generale<a class="headerlink" href="#soluzione-generale" title="Permalink to this heading">#</a></h4>
+<p>La soluzione di un’equazione differenziale lineare a coefficienti costanti può essere scritta come somma di una soluzione <span class="math notranslate nohighlight">\(y_o(x)\)</span> dell’equazione omogenea associata e di una soluzione particolare <span class="math notranslate nohighlight">\(y_p(x)\)</span> dell’equazione,</p>
+<div class="math notranslate nohighlight">
+\[y(x) = y_o(x) + y_p(x)\]</div>
+<div class="section" id="soluzione-dell-equazione-omogenea">
+<span id="ode-hs-types-linear-const-sol-homo"></span><h5><span class="section-number">26.2.1.3.1. </span>Soluzione dell’equazione omogenea<a class="headerlink" href="#soluzione-dell-equazione-omogenea" title="Permalink to this heading">#</a></h5>
+<p>Un’equazione differenziale omogenea è un problema lineare, e quindi la somma di due soluzioni è anch’essa una soluzione. La soluzione generale dell’equazione omogenea di ordine <span class="math notranslate nohighlight">\(n\)</span> può essere scritta come combinazione lineare di <span class="math notranslate nohighlight">\(n\)</span> sue soluzioni particolari <em>indipendenti</em> (qualitativamente, cioè che non contengono le stesse informazioni ripetute).</p>
+<p>Sfruttando le proprietà dell’esponenziale, la soluzione generale dell’equazione omogenea viene cercata come combinazione lineare di soluzioni che hanno un’espressione <span class="math notranslate nohighlight">\(y_o(x) = e^{s x}\)</span>. Sostituendo nell’equazione differenziale omogenea, si ottiene un’equazione algebrica polinomiale in <span class="math notranslate nohighlight">\(s\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  0 &amp; = a_n y^{(n)}(x) + \dots a_1 y'(x) + a_0 y(x) = \\
+    &amp; = \left( a_n \, s^n + \dots a_1 \, s + a_0 \right) \underbrace{e^{s x}}_{\ne 0} \ , \\
+\end{aligned}\end{split}\]</div>
+<p>poiché la funzione esponenziale non è mai nulla. Il <a class="reference internal" href="precalculus/polynomials.html#math-hs-precalculus-polynomials-alg-fund-thm-real-coeffs"><span class="std std-ref">teorema fondamentale dell’algebra</span></a> garantisce che il polinomio con coefficienti reali <span class="math notranslate nohighlight">\(a_n x^n + \dots a_1 x + a_0\)</span> ha <span class="math notranslate nohighlight">\(n\)</span> zeri reali o complessi coniugati.</p>
+<ul>
+<li><p>Se il polinomio <span class="math notranslate nohighlight">\(a_n \, s^n + \dots a_1 s + a_0\)</span> <strong>non ha zeri <span class="math notranslate nohighlight">\(s_k\)</span> multipli</strong>, allora la soluzione generale dell’equazione omogenea è</p>
+<div class="math notranslate nohighlight">
+\[y_o(x) = C_1 \, e^{s_1 x} + \dots + C_n \, e^{s_n x}\]</div>
+<p>Nel caso di zeri complessi coniugati, anche le rispettive costanti di integrazione saranno complesse coniugate, <span class="math notranslate nohighlight">\(C_{-} = C^*_{+}\)</span>, per avere come soluzione una funzione reale</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  C_{+} e^{s x} + C_{-} e^{s^* x}
+    &amp; = ( A + i B ) e^{(\sigma + i \omega) x} + ( A - i B ) e^{(\sigma - i \omega )x} = \\
+    &amp; = ( A + i B ) e^{\sigma x} \left( \cos(\omega x) + i \sin (\omega x) \right) 
+      + ( A - i B ) e^{\sigma x} \left( \cos(\omega x) - i \sin (\omega x) \right) = \\
+    &amp; = 2 \left( A \cos (\omega x) - B \sin (\omega x) \right) \, e^{\sigma x}
+  \end{aligned}\end{split}\]</div>
+</li>
+<li><p>Se il polinomio ha <strong>zeri multipli</strong>, le soluzioni esponenziali in corrispondenza degli zeri multipli non sarebbero linearmente indipendenti. In generale, in corrispondenza di uno zero <span class="math notranslate nohighlight">\(s_p\)</span> con molteplicità <span class="math notranslate nohighlight">\(p\)</span> le soluzioni indipendenti sono</p>
+<div class="math notranslate nohighlight">
+\[e^{s_p x} \ , \quad x \, e^{s_p x} \ , \quad \dots \ , \quad x^{p-1} \, e^{s_p x} \ .\]</div>
+</li>
+</ul>
+<!--
+**todo** *Trattare il caso con radici multiple. Anche se non è una dimostrazione, dare una giustificazione della forma delle soluzioni indipendenti*
+-->
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Radici multiple - «Dimostrazione»<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Un’equazione differenziale lineare a coefficienti costanti omogenea può essere riscritta come</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  0 &amp; = a_n y^{(n)}(x) + \dots a_1 y'(x) + a_0 y(x) = \\
+    &amp; = a_n \left( - s_1 + \frac{d}{dx} \right) \dots \left( - s_n + \frac{d}{dx} \right) y(x) \ ,
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">dove i fattori possono essere commutabili, per la linearità. Nel caso di radici non multiple, l’unico modo affinché l’equazione sia soddisfatta è che l’azione di uno degli <em>operatori</em> <span class="math notranslate nohighlight">\(\left( - s_k + \frac{d}{dx} \right)\)</span> su <span class="math notranslate nohighlight">\(y(x)\)</span> dia risultato nullo, cioè</p>
+<div class="math notranslate nohighlight">
+\[0 = \left(  - s_k + \frac{d}{dx} \right) y(x) = - s_k \, y(x) + y'(x) \ .\]</div>
+<p class="sd-card-text">Nel caso in cui una radice sia multipla e abbia molteplicità <span class="math notranslate nohighlight">\(p\)</span>, le <span class="math notranslate nohighlight">\(p\)</span> soluzioni indipendenti associate a questa radice sono quelle per le quali</p>
+<div class="math notranslate nohighlight">
+\[0 = \left(  - s_k + \frac{d}{dx} \right)^p y(x) \ .\]</div>
+<p class="sd-card-text"><strong>Esempio con <span class="math notranslate nohighlight">\(p=2\)</span></strong>. Ad esempio esiste una radice <span class="math notranslate nohighlight">\(s\)</span> con molteplicità <span class="math notranslate nohighlight">\(p=2\)</span> i due «binomi» relativi a questa radice producono l’equazione differenziale,</p>
+<div class="math notranslate nohighlight">
+\[0 = \left( - s + \frac{d}{dx} \right) \left( -s + \frac{d}{dx} \right) y(x) \ .\]</div>
+<p class="sd-card-text">Affinché questa equazione sia soddisfatta, la funzione <span class="math notranslate nohighlight">\(y(x)\)</span> deve essere tale da soddisfare una delle due condizioni</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  - s y(x) + y'(x) &amp; = 0 \\
+  - s y(x) + y'(x) &amp; = A \, e^{s x} \\
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">La prima condizione ha una soluzione generale</p>
+<div class="math notranslate nohighlight">
+\[- s y(x) + y'(x) = 0 \qquad \rightarrow \qquad y(t) = C e^{s x}\]</div>
+<p class="sd-card-text">mentre la seconda condizione permette di trovare la soluzione desiderata come combinazione lineare delle <span class="math notranslate nohighlight">\(p=2\)</span> desiderate,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  - s y(x) + y'(x) &amp; = A \, e^{sx}  \\
+  e^{-sx} \left( - s y(x) + y'(x) \right) &amp; = A  \\
+  \dfrac{d}{dx} \left( e^{-sx} \, y(x) \right) &amp; = A  \\
+  \int \frac{d}{dx} \left( e^{-sx} y(x) \right) &amp; = A \, x + B \\
+   e^{-sx} y(x) &amp; = A \, x + C \qquad \rightarrow \qquad  y(x) = A \, x \, e^{sx} + B \, e^{sx}  \ ,
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">avendo inizialmente moltiplicato entrambi lati dell’equazione per il termine mai nullo <span class="math notranslate nohighlight">\(e^{sx} \ne 0\)</span>, successivamente riconoscito con la formula del prodotto la derivata <span class="math notranslate nohighlight">\(\frac{d}{dx}\left( e^{-s x} y(x) \right) = - s e^{sx} y(x) + s^{sx} y'(x)\)</span>, e integrato ricordandosi delle costanti di integrazione necessarie a ottenere l’espressione più generale possibile, senza perdere pezzi in giro.</p>
+<p class="sd-card-text"><strong>Molteplicità <span class="math notranslate nohighlight">\(p\)</span>.</strong> Il caso di radici mulitple con molteplicità generale può essere ricavato ricorsivamente, seguendo quanto fatto per il caso <span class="math notranslate nohighlight">\(p=2\)</span>. Questa dimostrazione viene lasciata come esercizio.</p>
+</div>
+</details></div>
+<div class="section" id="soluzione-particolare-dell-equazione-completa">
+<span id="ode-hs-types-linear-const-sol-part"></span><h5><span class="section-number">26.2.1.3.2. </span>Soluzione particolare dell’equazione completa<a class="headerlink" href="#soluzione-particolare-dell-equazione-completa" title="Permalink to this heading">#</a></h5>
+<p>Come regola generale, la ricerca della soluzione particolare dell’equazione completa è guidata dall’espressione della forzante. Ad esempio:</p>
+<ul class="simple">
+<li><p>con <strong>forzanti polinomiali</strong> si cerca una soluzione particolare polinomiale</p></li>
+<li><p>con <strong>forzanti esponenziali</strong> si cerca una soluzione particolare esponenziale</p></li>
+<li><p>con <strong>forzanti armoniche</strong> si cerca una soluzione particolare armonica</p></li>
+</ul>
+<p>Nel caso in cui la soluzione particolare abbia la forma di una delle soluzioni della soluzione particolare, si adotta la stessa tecnica adottata nel caso di zeri multipli.</p>
+</div>
+</div>
+<div class="section" id="soluzione-degli-esempi">
+<span id="ode-hs-types-linear-const-ex-sol"></span><h4><span class="section-number">26.2.1.4. </span>Soluzione degli esempi<a class="headerlink" href="#soluzione-degli-esempi" title="Permalink to this heading">#</a></h4>
+<p>In questa sezione vengono risolti alcuni problemi governati dalle equazioni differenziali presentate in precedenza come <a class="reference internal" href="#ode-hs-types-linear-const-ex"><span class="std std-ref">esempi</span></a> di equazioni differenziali ordinarie lineari a coefficienti costanti, applicando il <a class="reference internal" href="#ode-hs-types-linear-const-sol"><span class="std std-ref">metodo di soluzione generale</span></a> per questo tipo di equazioni.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Esempio - Temperatura di un corpo, soggetto a convezione.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">L’equazione ordinaria del primo ordine</p>
+<div class="math notranslate nohighlight">
+\[m x \dot{T}(t) + h T(t) = h T^e(t) \qquad , \qquad t \ge 0\]</div>
+<p class="sd-card-text">rappresenta un bilancio di energia interna e governa la temperatura <span class="math notranslate nohighlight">\(T(t)\)</span> di un corpo di massa <span class="math notranslate nohighlight">\(m\)</span>, e capacità termica <span class="math notranslate nohighlight">\(c\)</span> soggetto a convezione con coefficiente <span class="math notranslate nohighlight">\(h\)</span> con un ambiente a temperatura <span class="math notranslate nohighlight">\(T^e(t)\)</span>. Tutti i parametri del sistema e la temperatura iniziale del corpo <span class="math notranslate nohighlight">\(T(0) = T_0\)</span> sono noti. Si vuole determinare l’evoluzione della temperatura <span class="math notranslate nohighlight">\(T(t)\)</span> del corpo, in risposta a diversi andamenti della temperatura dell’ambiente esterno.
+L’equazione è un’equazione ordinaria lineare del primo ordine a coefficienti costanti. La soluzione dell’equazione può essere scritta come somma della soluzione generale dell’equazione omogenea <span class="math notranslate nohighlight">\(T_o(t)\)</span> e di una soluzione particolare dell’equazione completa, <span class="math notranslate nohighlight">\(T_p(t)\)</span></p>
+<div class="math notranslate nohighlight">
+\[T(t) = T_{o}(t) + T_p(t) \ .\]</div>
+<p class="sd-card-text"><strong>Equazione omogenea.</strong> L’equazione omogenea,</p>
+<div class="math notranslate nohighlight">
+\[m c \dot{T}_o + h T_o = 0 \qquad \rightarrow \qquad T_o(t) = C e^{-\frac{h}{mc}t} \ ,\]</div>
+<p class="sd-card-text">è indipendente dalla forzante esterna, qui rappresentata dalla temperatura dell’ambiente <span class="math notranslate nohighlight">\(T_e(t)\)</span>.</p>
+<p class="sd-card-text"><strong>Temperatura costante, <span class="math notranslate nohighlight">\(T^e\)</span>.</strong> La soluzione particolare dell’equazione con una forzante costante è una soluzione costante, <span class="math notranslate nohighlight">\(T_p(t) = T_e\)</span>. La soluzione generale ha quindi l’espressione</p>
+<div class="math notranslate nohighlight">
+\[ T(t) = T_e + C e^{-\frac{h}{mc}t} \ ,\]</div>
+<p class="sd-card-text">e la costante di integrazione <span class="math notranslate nohighlight">\(C\)</span> viene determinata con la condizione iniziale</p>
+<div class="math notranslate nohighlight">
+\[T_0 = T(0) = T_e + C e^{-\frac{h}{mc}t} \big|_{t=0} = T_e + C \qquad \rightarrow \qquad C = T_0 - T_e \ .\]</div>
+<p class="sd-card-text">La soluzione del problema è quindi</p>
+<div class="math notranslate nohighlight">
+\[
+  T(t) = T_e + ( T_0 - T_e )  e^{-\frac{ht}{mc}} \ .
+\]</div>
+<p class="sd-card-text"><strong>Temperatura crescente linearmente, <span class="math notranslate nohighlight">\(T^e(t) = T_a + G \, t\)</span>.</strong> Con una forzante polinomiale di grado 1 nella variabile indipendente <span class="math notranslate nohighlight">\(t\)</span>, si cerca una soluzione particolare polinomiale dello stesso ordine, <span class="math notranslate nohighlight">\(T_p(t) = a + b t\)</span>. I coefficienti <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span> vengono calcolati inserendo questa espressione nell’equazione differenziale,</p>
+<div class="math notranslate nohighlight">
+\[m c b + h (a+bt) = h(T_a + Gt ) \ ,\]</div>
+<p class="sd-card-text">e uguagliando i termini dello stesso ordine nella variabile indipendente,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+t: \ h b = h G            \\
+1: \ m c b + h a = h T_a
+\end{cases}
+\qquad \rightarrow \qquad
+\begin{cases}
+ b = G \\
+ a = T_a - \frac{mc}{h} G \ .
+\end{cases}
+\end{split}\]</div>
+<p class="sd-card-text">La soluzione generale assume la forma</p>
+<div class="math notranslate nohighlight">
+\[T(t) = T_a - \frac{mc}{h}G + G t + C e^{-\frac{h t}{m c}} \ ,\]</div>
+<p class="sd-card-text">e la costante di integrazione <span class="math notranslate nohighlight">\(C\)</span> viene calcolata con la condizione iniziale</p>
+<div class="math notranslate nohighlight">
+\[T_0 = T(0) = T_a - \frac{mc}{h} G + C \qquad \rightarrow \qquad C = T_0 - T_a + \frac{mc}{h} G \ .\]</div>
+<p class="sd-card-text">La soluzione del problema è quindi</p>
+<div class="math notranslate nohighlight">
+\[
+  T(t) = T_a + G t - \frac{mc}{h}G + \left( T_0 - T_a + \frac{mc}{h} G \right) e^{-\frac{h t}{m c}} \ .
+\]</div>
+<ul class="simple">
+<li><p class="sd-card-text">La somma dei primi 3 termini è la soluzione della particolare, l’ultimo termine è la soluzione dell’equazione omogenea;</p></li>
+<li><p class="sd-card-text">la soluzione dell’equazione omogenea tende a zero per <span class="math notranslate nohighlight">\(t \rightarrow \infty\)</span>.</p></li>
+<li><p class="sd-card-text">per <span class="math notranslate nohighlight">\(t \rightarrow \infty\)</span>, c’è una differenza costante tra la temperatura dell’ambiente <span class="math notranslate nohighlight">\(T^e(t) = T_a + Gt\)</span> e la temperatura <span class="math notranslate nohighlight">\(T(t)\)</span> del corpo, <span class="math notranslate nohighlight">\(T(t) - T^e(t) = -\frac{mc}{h} G\)</span>.</p></li>
+</ul>
+<p class="sd-card-text"><strong>Temperatura con andamento periodico, <span class="math notranslate nohighlight">\(T^e(t) = T_a + \Delta T \sin(\Omega t)\)</span>.</strong> Data una forzante somma di un termine costante e di un termine armonico, si cerca una soluzione particolare come somma di un termine costante e delle funzioni armoniche di seno e coseno, <span class="math notranslate nohighlight">\(T_p(t) = a + b \cos(\Omega t) + c \sin(\Omega t)\)</span>. I coefficienti <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span>, <span class="math notranslate nohighlight">\(c\)</span> vengono calcolati inserendo questa espressione nell’equazione differenziale,</p>
+<div class="math notranslate nohighlight">
+\[ m c \Omega \left( - b \sin(\Omega t) + c \cos(\Omega t) \right) + h \left( a + b \cos(\Omega t) + c \sin(\Omega t) \right) = h \left(  T_a + \Delta T \sin(\Omega t) \right) \ ,\]</div>
+<p class="sd-card-text">e uguagliando i termini omogenei nella variabile indipendente <span class="math notranslate nohighlight">\(t\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+\cos \Omega t &amp; : \ \quad  m c \Omega c + h b = 0 \\
+\sin \Omega t &amp; : \ - m c \Omega b + h c = h \Delta T \\
+            1 &amp; : \ \quad h a = h T_a \\
+\end{cases}
+\qquad \rightarrow \qquad
+\begin{cases}
+ a = T_a \\
+ b = -\frac{mc\Omega}{(m c \Omega)^2 + h^2} h \Delta T\\
+ c =  \frac{h}{(m c \Omega)^2 + h^2} h \Delta T \\
+\end{cases}
+\end{split}\]</div>
+<p class="sd-card-text">La soluzione generale assume la forma</p>
+<div class="math notranslate nohighlight">
+\[T(t) = T_a + b \cos(\Omega t) + c \sin(\Omega t) + C e^{-\frac{ht}{mc}} \ ,\]</div>
+<p class="sd-card-text">e la costante di integrazione <span class="math notranslate nohighlight">\(C\)</span> viene calcolata con la condizione iniziale</p>
+<div class="math notranslate nohighlight">
+\[T_0 = T(0) = T_a + b + C \qquad \rightarrow \qquad C = T_0 - T_a - b \ . \]</div>
+<p class="sd-card-text">La soluzione del problema è quindi</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  T(t) 
+  &amp; = T_a + b \cos(\Omega t) + c \sin(\Omega t) + (T_0 - T_a - b) e^{-\frac{ht}{mc}} = \\
+  &amp; = T_a -\frac{\frac{mc\Omega}{h}}{\left(\frac{m c \Omega}{h}\right)^2 + 1} \Delta T \cos(\Omega t) + 
+           \frac{ 1      }{\left(\frac{m c \Omega}{h}\right)^2 + 1} \Delta T\sin(\Omega t) + \left(T_0 - T_a + \frac{\frac{mc\Omega}{h}}{\left(\frac{m c \Omega}{h}\right)^2 + 1} \right) e^{-\frac{ht}{mc}} = \\
+  &amp; = T_a + \Delta T \sin\left( \Omega t - \varphi \right) + \left( T_0 - T_a + \frac{\frac{mc\Omega}{h}}{\left(\frac{m c \Omega}{h}\right)^2 + 1} \right) e^{-\frac{ht}{mc}} \ ,
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">e può essere espressa in termini di un ritardo di fase <span class="math notranslate nohighlight">\(\varphi\)</span>, rispetto alla temperatura dell’ambiente esterno <span class="math notranslate nohighlight">\(T_e\)</span></p>
+<div class="math notranslate nohighlight">
+\[\cos \varphi = \frac{1}{\left(\frac{m c \Omega}{h}\right)^2 + 1} \qquad , \qquad \sin \varphi = \frac{\frac{mc\Omega}{h}}{\left(\frac{m c \Omega}{h}\right)^2 + 1}\]</div>
+<p class="sd-card-text">L’equazione</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Esempio - Sistema massa-molla-smorzatore<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>todo</strong> <em>definire il sistema adimensionale e verificare la risposta in funzione del coefficiente di smorzamento del sistema; definire smorzamento critico, e sistemi sovra- e sotto-smorzati; indagare il fenomeno della</em> <strong>risonanza</strong></p>
+<p class="sd-card-text">L’equazione</p>
+<div class="math notranslate nohighlight">
+\[m\ddot{x} + c \dot{x} + k x = f^e(t) \ ,\]</div>
+<p class="sd-card-text">compare in molte applicazioni con coefficienti <span class="math notranslate nohighlight">\(m\)</span>, <span class="math notranslate nohighlight">\(c\)</span>, <span class="math notranslate nohighlight">\(k\)</span> associati a grandezze positive: in questo caso, l’equazione può essere riscritta introducendo la <strong>frequenza naturale</strong> <span class="math notranslate nohighlight">\(\omega_n := \sqrt{\frac{k}{m}}\)</span> e il <strong>coefficiente di smorzamento</strong> <span class="math notranslate nohighlight">\(\xi:= \frac{c}{2 m}\frac{1}{\omega_n} = \frac{c}{2 \sqrt{m k}}\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\ddot{x} + 2 \xi \omega_n \dot{x} + \omega_n^2 x = \frac{f^e(t)}{m} \ .\]</div>
+<p class="sd-card-text"><strong>Equazione omogenea.</strong> Si distinguono quindi 3 possibili casi per la soluzione dell’equazione omogenea,</p>
+<div class="math notranslate nohighlight">
+\[\ddot{x} + 2 \xi \omega_n \dot{x} + \omega_n^2 x = 0 \ ,\]</div>
+<div class="math notranslate nohighlight">
+\[s^2 + 2 \xi \omega_n + \omega_n^2 = 0 \qquad \rightarrow \qquad s_{1,2} = -\xi \omega_n \mp \omega_n \sqrt{\xi^2 - 1}\]</div>
+<ol class="arabic">
+<li><p class="sd-card-text">soluzione sotto-smorzata, <span class="math notranslate nohighlight">\(0 \le \xi &lt; 1\)</span>: la soluzione è oscillante, smorzata se <span class="math notranslate nohighlight">\(\xi &gt; 0\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[s_{1,2} = - \xi \omega_n \mp j \omega_n \sqrt{1 - \xi^2} = - \sigma \mp j \omega
+   \qquad \rightarrow \qquad
+   x(t) = e^{-\sigma t} \left[ A \cos(\omega t) + B \sin(\omega t) \right]\]</div>
+</li>
+<li><p class="sd-card-text">soluzione con smorzamento critico, <span class="math notranslate nohighlight">\(\xi = 1\)</span>: è il caso limite tra le soluzioni oscillanti sotto-smorzate e le soluzioni oscillanti sovra-smorzate.</p>
+<div class="math notranslate nohighlight">
+\[s_1 = s_2 = - \omega_n
+   \qquad \rightarrow \qquad
+   x(t) = A e^{-\omega_n t} + B \, t \, e^{-\omega_n t}
+   \]</div>
+</li>
+<li><p class="sd-card-text">soluzione sovra-smorzata, <span class="math notranslate nohighlight">\(\xi &gt; 1\)</span>: la soluzione decade senza oscillazioni,</p>
+<div class="math notranslate nohighlight">
+\[0 &gt; s_{1,2} = - \xi \omega \mp \omega_n \sqrt{\xi^2 - 1} \in \mathbb{R}
+   \qquad \rightarrow \qquad
+   x(t) = A e^{s_1 t} + B e^{s_2 t}
+   \]</div>
+</li>
+</ol>
+<!--
+può essere scritta in forma adimensionale, mettendo in evidenza una lunghezza di riferimento $x(t) = X \tilde{x}(t)$, e un tempo di riferimento $t = T \tau$,
+
+$$X \left[ \frac{m}{T^2} \tilde{x}'' + \frac{c}{T} \tilde{x}' + k \tilde{x} \right] = f^{e}(t)$$
+
+$$\tilde{x}'' + \frac{c T}{m} \tilde{x}' + \frac{k T^2}{m} \tilde{x} = \frac{F T^2}{m X} \tilde{f}^{e}(t)$$
+-->
+<p class="sd-card-text"><strong>Moto libero - forzante nulla, <span class="math notranslate nohighlight">\(f^e = 0\)</span></strong></p>
+<p class="sd-card-text"><strong>Forzante costante, <span class="math notranslate nohighlight">\(f^e\)</span></strong></p>
+<p class="sd-card-text"><strong>Forzante armonica, <span class="math notranslate nohighlight">\(f^e(t) = f_0 + \Delta f \sin(\Omega t)\)</span></strong></p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Sistema del secondo ordine sotto-smorzato, con forzante armonica<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Si vuole studiare la soluzione dell’equazione del secondo ordine</p>
+<div class="math notranslate nohighlight">
+\[\ddot{x} + 2 \xi \omega_n \dot{x} + \omega_n^2 x = \frac{f^e(t)}{m} \ ,\]</div>
+<p class="sd-card-text">soggetta alla forzante armonica <span class="math notranslate nohighlight">\(f^e(t) = F \sin \Omega t\)</span>, al variare della frequenza <span class="math notranslate nohighlight">\(\Omega\)</span> della forzante. Si cerca una soluzione particolare dell’equazione completa nella forma <span class="math notranslate nohighlight">\(x(t) = a \cos(\Omega t) + b \sin(\Omega t)\)</span>. Inserendo questa espressione nell’equazione,</p>
+<div class="math notranslate nohighlight">
+\[-\Omega^2 ( a \cos \Omega t + b \sin \Omega t) + 2 \xi \omega_n \Omega ( -a \sin \Omega t + b \cos \Omega t) + \omega_n^2 (a \cos \Omega t + b \sin \Omega t) = \frac{F}{m} \sin \Omega t \ ,\]</div>
+<p class="sd-card-text">si calcolano i coefficienti <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span> uguagliando i termini omogenei</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+\cos (\Omega t) &amp; : \  (-\Omega^2 + \omega_n^2) a + 2 \xi \omega_n \Omega b = 0 \\
+\sin (\Omega t) &amp; : \ -2 \xi \omega_n \Omega a + (-\Omega^2 + \omega_n^2) b = \frac{F}{m} \\
+\end{cases}
+\qquad \rightarrow \qquad
+\begin{cases}
+ a = \frac{- 2 \xi \omega_n \Omega}{(-\Omega^2 + \omega_n^2)^2 + (2\xi \omega_n \Omega)^2} \frac{F}{m} \\
+ b = \frac{-\Omega^2 + \omega_n^2}{(-\Omega^2 + \omega_n^2)^2 + (2\xi \omega_n \Omega)^2} \frac{F}{m} \ .\\
+\end{cases} 
+\end{split}\]</div>
+<p class="sd-card-text">I coefficienti <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span> possono essere riscritti in funzione di un <strong>ritardo di fase</strong> <span class="math notranslate nohighlight">\(\varphi(\Omega)\)</span> e diun <strong>guadagno</strong> <span class="math notranslate nohighlight">\(G(\Omega) = \frac{1}{\sqrt{(-\Omega^2+\omega_n^2)^2 + (2 \xi \omega_n \Omega)^2}}\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+ a =       - \sin \varphi(\Omega) \, G(\Omega) \, \frac{F}{m} \\
+ b = \quad   \cos \varphi(\Omega) \, G(\Omega) \, \frac{F}{m} \ .\\
+\end{cases} 
+\end{split}\]</div>
+<p class="sd-card-text">così da ricavare la soluzione</p>
+<div class="math notranslate nohighlight">
+\[x_p(t)
+  = \frac{F}{m} \, G(\Omega) \, \left[ \sin(\Omega t) \cos \varphi - \cos(\Omega t) \sin \varphi(\Omega) \right] 
+  = \frac{F}{m} \, G(\Omega) \, \sin(\Omega t - \varphi(\Omega)) \ .
+\]</div>
+<p class="sd-card-text">Sia il guadagno sia il ritardo di fase dipendono dalla frequenza della forzante, <span class="math notranslate nohighlight">\(\Omega\)</span>.</p>
+<p class="sd-card-text"><strong>Studio di funzione di <span class="math notranslate nohighlight">\(G(\Omega)\)</span>.</strong> La derivata del guadagno rispetto alla frequenza della forzante vale,</p>
+<div class="math notranslate nohighlight">
+\[G'(\Omega) = -\frac{1}{2} \frac{-2\Omega(-\Omega^2 + \omega_n^2) + 2(2\xi\omega_n)^2 \Omega}{\left[ (-\Omega^2+\omega_n^2)^2 + (2 \xi \omega_n \Omega)^2 \right]^{\frac{3}{2}} } \ .\]</div>
+<p class="sd-card-text">La derivata si annulla per <span class="math notranslate nohighlight">\(\Omega = 0\)</span> e - quando esiste, cioè per valori di smorzamento «sufficientemente ridotti», <span class="math notranslate nohighlight">\(\xi \le \frac{1}{2}\)</span> - per la frequenza di <em>risonanza</em> <span class="math notranslate nohighlight">\(\Omega = \Omega_f\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\Omega_f^2 = \omega_n^2 - 4 (\xi \omega_n)^2 = \omega_n^2 \left( 1 - 4 \xi^2 \right) \ .\]</div>
+<p class="sd-card-text">Nel caso in cui esista una risonanza, la massima ampiezza della risposta è</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+G(\Omega_f) 
+  &amp; = \frac{1}{\sqrt{(-\Omega_f^2+\omega_n^2)^2 + (2\xi \omega_n \Omega_f)^2}} = \\
+  &amp; = \frac{1}{\sqrt{(4 \xi^2 \omega_n^2)^2 + 4 \xi^2 \omega_n^4 (1-4 \xi^2)  }} = \frac{1}{2 \xi \omega_n^2} \ .
+\end{aligned}\end{split}\]</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Esempio - Circuito RLC. <strong>todo</strong><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Esempio - Caduta di un grave - 1: senza resistenza<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Esempio - Caduta di un grave - 2: con resistenza lineare nella velocità<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Esempio - Caduta di un grave - 3: con resistenza quadratica nella velocità<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Esempio - Moto parabolico di un grave - 1: senza resistenza<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Esempio - Moto parabolico di un grave - 2: con resistenza lineare nella velocità<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Esempio - Deformazione a torsione di una trave<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>Trave incastrata a un estremo, carico distribuito uniforme in apertura e concentrato all’altro estremo</strong></p>
+<p class="sd-card-text"><strong>Trave incastrata in entrambi gli estremi e con carico distribuito uniforme in apertura</strong></p>
+<p class="sd-card-text"><strong>Trave incastrata in un estremo e con carico distribuito triangolare in apertura</strong></p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Esempio - Deformazione a flessione di una trave<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>Trave incastrata a un estremo, carico distribuito uniforme in apertura e all’altro estremo, sia con forza sia con momento flettente concentrato</strong></p>
+<p class="sd-card-text"><strong>Trave incastrata in entrambi gli estremi e con carico distribuito uniforme in apertura</strong></p>
+<p class="sd-card-text"><strong>Trave incastrata in un estremo e vincolata con un pattino all’altro estremo</strong></p>
+</div>
+</details></div>
+</div>
+<div class="section" id="equazioni-differenziali-a-variabili-separabili-tecnica-di-soluzione-di-separazione-delle-variabili">
+<span id="ode-hs-types-separable"></span><h3><span class="section-number">26.2.2. </span>Equazioni differenziali a variabili separabili: tecnica di soluzione di separazione delle variabili<a class="headerlink" href="#equazioni-differenziali-a-variabili-separabili-tecnica-di-soluzione-di-separazione-delle-variabili" title="Permalink to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\frac{d y}{d x} = f(y(x)) \ g(x) \]</div>
+<p>può essere riscritta formalmente come</p>
+<div class="math notranslate nohighlight">
+\[\dfrac{dy}{f(y)} = g(x) \ d x \]</div>
+<p>e integrata con le opportune condizioni</p>
+<div class="math notranslate nohighlight">
+\[\tilde{F}(y(x)) - \tilde{F}(y(x_0)) = G(x) - G(x_0)\]</div>
+<div class="section" id="ode-hs-types-separable-ex">
+<span id="id1"></span><h4><span class="section-number">26.2.2.1. </span>Esempi<a class="headerlink" href="#ode-hs-types-separable-ex" title="Permalink to this heading">#</a></h4>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Equazione logistica<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="math notranslate nohighlight">
+\[\frac{d p}{d t} =  a p \left( 1 - \frac{p}{b} \right)\]</div>
+<div class="math notranslate nohighlight">
+\[\frac{d p}{p \left(1 - \frac{p}{b}\right)} = a dt\]</div>
+<div class="math notranslate nohighlight">
+\[\left( \frac{1}{p} - \frac{1}{p - b} \right) dp = a dt\]</div>
+<div class="math notranslate nohighlight">
+\[\int_{p_0}^{p(t)} \left( \frac{1}{p} - \frac{1}{p - b} \right) dp = \int_{t_0}^{t} a \, dt\]</div>
+<div class="math notranslate nohighlight">
+\[\ln \left|\frac{p(t)}{p(t)-b}\right| = a t + C\]</div>
+<div class="math notranslate nohighlight">
+\[\left|\frac{p(t)}{p(t)-b}\right| = e^{a \, t + C} = K \, e^{a t}\]</div>
+<div class="math notranslate nohighlight">
+\[p(t) = - \frac{b \, e^{at}}{1 - K \, e^{a t}} = \frac{b}{K - e^{-at}} \]</div>
+<!--
+$$\ln \left. \left|\frac{p}{p-b}\right| \right|_{p_0}^{p(t)} = a \left( t - t_0 \right)$$
+$$\ln \left| \frac{p(t)}{p(t)-b} \right| - \ln \left| \frac{p_0}{p_0-b} \right| = a \left( t - t_0 \right)$$
+-->
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Equazioni nella forma <span class="math notranslate nohighlight">\(\ y'(x) = y^n(x)\)</span><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="math notranslate nohighlight">
+\[y'(x) = y^n\]</div>
+<div class="math notranslate nohighlight">
+\[y^{-n} \, dy = dx\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+ n = 0: &amp; \quad  y(x) = x + C \\
+ n = 1: &amp; \quad  \ln y(x) = x + C \\
+ \dots: &amp; \quad  \frac{1}{1-n} y^{-n+1}(x) = x + C  \\
+\end{aligned}\end{split}\]</div>
+</div>
+</details></div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./ch"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="infinitesimal_calculus/integrals-problems.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">precedente</p>
+        <p class="prev-next-title"><span class="section-number">25.6. </span>Problemi</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="multivariable-calculus.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">successivo</p>
+        <p class="prev-next-title"><span class="section-number">27. </span>Introduzione al calcolo multi-variabile</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenuti
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prime-definizioni">26.1. Prime definizioni</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classificazione-esempi-e-tecniche-risolutive">26.2. Classificazione, esempi e tecniche risolutive</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-lineari-a-coefficienti-costanti">26.2.1. Equazioni lineari a coefficienti costanti</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#definizione">26.2.1.1. Definizione</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">26.2.1.2. Esempi</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#soluzione-generale">26.2.1.3. Soluzione generale</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#soluzione-dell-equazione-omogenea">26.2.1.3.1. Soluzione dell’equazione omogenea</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#soluzione-particolare-dell-equazione-completa">26.2.1.3.2. Soluzione particolare dell’equazione completa</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#soluzione-degli-esempi">26.2.1.4. Soluzione degli esempi</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-differenziali-a-variabili-separabili-tecnica-di-soluzione-di-separazione-delle-variabili">26.2.2. Equazioni differenziali a variabili separabili: tecnica di soluzione di separazione delle variabili</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ode-hs-types-separable-ex">26.2.2.1. Esempi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Di basics
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
