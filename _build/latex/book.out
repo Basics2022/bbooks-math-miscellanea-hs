@@ -170,7 +170,7 @@
 \BOOKMARK [2][-]{subsection.14.5.2}{Coniche:\040intersezione\040tra\040cono\040e\040piano}{section.14.5}% 170
 \BOOKMARK [-1][-]{part.5}{V\040Precalcolo}{}% 171
 \BOOKMARK [0][-]{chapter.15}{Introduzione\040al\040pre-calcolo}{part.5}% 172
-\BOOKMARK [0][-]{chapter.16}{Funzioni reali a variabile reale, f: R →R}{part.5}% 173
+\BOOKMARK [0][-]{chapter.16}{Funzioni reali a variabile reale, f: A ⊆R →R}{part.5}% 173
 \BOOKMARK [1][-]{section.16.1}{Grafico\040di\040una\040funzione}{chapter.16}% 174
 \BOOKMARK [1][-]{section.16.2}{Classificazione\040di\040funzioni}{chapter.16}% 175
 \BOOKMARK [1][-]{section.16.3}{Funzioni\040invertibili\040e\040inverse}{chapter.16}% 176
@@ -222,9 +222,9 @@
 \BOOKMARK [1][-]{section.20.3}{Soluzioni}{chapter.20}% 222
 \BOOKMARK [1][-]{section.20.4}{Note\040e\040dimostrazioni}{chapter.20}% 223
 \BOOKMARK [2][-]{subsection.20.4.1}{Funzione\040esponenziale}{section.20.4}% 224
-\BOOKMARK [3][-]{subsubsection*.116}{Convergenza della serie di funzioni ∑n=0∞ xnn! in ogni intervallo limitato}{subsection.20.4.1}% 225
-\BOOKMARK [3][-]{subsubsection*.117}{Equivalenza\040delle\040due\040definizioni}{subsection.20.4.1}% 226
-\BOOKMARK [3][-]{subsubsection*.118}{Giustificazione\040della\040notazione\040\040ex}{subsection.20.4.1}% 227
+\BOOKMARK [3][-]{subsubsection*.117}{Convergenza della serie di funzioni ∑n=0∞ xnn! in ogni intervallo limitato}{subsection.20.4.1}% 225
+\BOOKMARK [3][-]{subsubsection*.118}{Equivalenza\040delle\040due\040definizioni}{subsection.20.4.1}% 226
+\BOOKMARK [3][-]{subsubsection*.119}{Giustificazione\040della\040notazione\040\040ex}{subsection.20.4.1}% 227
 \BOOKMARK [2][-]{subsection.20.4.2}{Funzioni\040iperboliche}{section.20.4}% 228
 \BOOKMARK [0][-]{chapter.21}{Algebra\040complessa}{part.5}% 229
 \BOOKMARK [1][-]{section.21.1}{Definizioni}{chapter.21}% 230
@@ -235,9 +235,9 @@
 \BOOKMARK [2][-]{subsection.21.5.1}{Somma\040e\040prodotto}{section.21.5}% 235
 \BOOKMARK [2][-]{subsection.21.5.2}{Complesso\040coniugato\040e\040modulo}{section.21.5}% 236
 \BOOKMARK [2][-]{subsection.21.5.3}{Potenze\040e\040radici}{section.21.5}% 237
-\BOOKMARK [3][-]{subsubsection*.119}{Potenza intera, p ∈Z.}{subsection.21.5.3}% 238
-\BOOKMARK [3][-]{subsubsection*.120}{Radici o potenza 1p,  p ∈Z}{subsection.21.5.3}% 239
-\BOOKMARK [3][-]{subsubsection*.121}{Potenza\040razionale}{subsection.21.5.3}% 240
+\BOOKMARK [3][-]{subsubsection*.120}{Potenza intera, p ∈Z.}{subsection.21.5.3}% 238
+\BOOKMARK [3][-]{subsubsection*.121}{Radici o potenza 1p,  p ∈Z}{subsection.21.5.3}% 239
+\BOOKMARK [3][-]{subsubsection*.122}{Potenza\040razionale}{subsection.21.5.3}% 240
 \BOOKMARK [2][-]{subsection.21.5.4}{Altre\040operazioni}{section.21.5}% 241
 \BOOKMARK [1][-]{section.21.6}{Teorema fondamentale dell’algebra}{chapter.21}% 242
 \BOOKMARK [1][-]{section.21.7}{Numeri\040complessi\040e\040geometria\040nel\040piano\040euclideo}{chapter.21}% 243
@@ -255,9 +255,9 @@
 \BOOKMARK [2][-]{subsection.21.9.4}{Teorema fondamentale dell’algebra}{section.21.9}% 255
 \BOOKMARK [2][-]{subsection.21.9.5}{Numeri\040complessi\040e\040geometria\040nel\040piano\040euclideo}{section.21.9}% 256
 \BOOKMARK [2][-]{subsection.21.9.6}{Equazioni\040e\040disequazioni\040con\040i\040numeri\040complessi}{section.21.9}% 257
-\BOOKMARK [3][-]{subsubsection*.126}{Equazioni}{subsection.21.9.6}% 258
-\BOOKMARK [3][-]{subsubsection*.128}{Disequazioni}{subsection.21.9.6}% 259
-\BOOKMARK [3][-]{subsubsection*.130}{Sistemi\040di\040equazioni}{subsection.21.9.6}% 260
+\BOOKMARK [3][-]{subsubsection*.127}{Equazioni}{subsection.21.9.6}% 258
+\BOOKMARK [3][-]{subsubsection*.129}{Disequazioni}{subsection.21.9.6}% 259
+\BOOKMARK [3][-]{subsubsection*.131}{Sistemi\040di\040equazioni}{subsection.21.9.6}% 260
 \BOOKMARK [1][-]{section.21.10}{Problemi\040-\040soluzioni}{chapter.21}% 261
 \BOOKMARK [2][-]{subsection.21.10.1}{Definizioni}{section.21.10}% 262
 \BOOKMARK [2][-]{subsection.21.10.2}{Rappresentazione\040dei\040numeri\040complessi\040nel\040piano\040complesso\040\(Argand-Gauss\)}{section.21.10}% 263
@@ -265,17 +265,17 @@
 \BOOKMARK [2][-]{subsection.21.10.4}{Teorema fondamentale dell’algebra}{section.21.10}% 265
 \BOOKMARK [2][-]{subsection.21.10.5}{Numeri\040complessi\040e\040geometria\040nel\040piano\040euclideo}{section.21.10}% 266
 \BOOKMARK [2][-]{subsection.21.10.6}{Equazioni\040e\040disequazioni\040con\040i\040numeri\040complessi}{section.21.10}% 267
-\BOOKMARK [3][-]{subsubsection*.132}{Equazioni}{subsection.21.10.6}% 268
-\BOOKMARK [3][-]{subsubsection*.133}{Disequazioni}{subsection.21.10.6}% 269
-\BOOKMARK [3][-]{subsubsection*.134}{Sistemi}{subsection.21.10.6}% 270
+\BOOKMARK [3][-]{subsubsection*.133}{Equazioni}{subsection.21.10.6}% 268
+\BOOKMARK [3][-]{subsubsection*.134}{Disequazioni}{subsection.21.10.6}% 269
+\BOOKMARK [3][-]{subsubsection*.135}{Sistemi}{subsection.21.10.6}% 270
 \BOOKMARK [1][-]{section.21.11}{Note\040e\040dimostrazioni}{chapter.21}% 271
 \BOOKMARK [2][-]{subsection.21.11.1}{Formula\040di\040de\040Moivre}{section.21.11}% 272
 \BOOKMARK [2][-]{subsection.21.11.2}{Esponenziale\040complesso}{section.21.11}% 273
 \BOOKMARK [2][-]{subsection.21.11.3}{Formula\040di\040Eulero}{section.21.11}% 274
 \BOOKMARK [2][-]{subsection.21.11.4}{Altre\040operazioni\040e\040funzioni\040a\040variabile\040complessa}{section.21.11}% 275
-\BOOKMARK [3][-]{subsubsection*.135}{Potenza}{subsection.21.11.4}% 276
-\BOOKMARK [3][-]{subsubsection*.136}{Esponenziale}{subsection.21.11.4}% 277
-\BOOKMARK [3][-]{subsubsection*.137}{Logaritmo}{subsection.21.11.4}% 278
+\BOOKMARK [3][-]{subsubsection*.136}{Potenza}{subsection.21.11.4}% 276
+\BOOKMARK [3][-]{subsubsection*.137}{Esponenziale}{subsection.21.11.4}% 277
+\BOOKMARK [3][-]{subsubsection*.138}{Logaritmo}{subsection.21.11.4}% 278
 \BOOKMARK [0][-]{chapter.22}{Funzioni\040multi-variabile}{part.5}% 279
 \BOOKMARK [-1][-]{part.6}{VI\040Calcolo}{}% 280
 \BOOKMARK [0][-]{chapter.23}{Introduzione\040al\040calcolo}{part.6}% 281
@@ -288,14 +288,14 @@
 \BOOKMARK [2][-]{subsection.24.3.1}{Definizione}{section.24.3}% 288
 \BOOKMARK [2][-]{subsection.24.3.2}{Punti di discontinuità}{section.24.3}% 289
 \BOOKMARK [2][-]{subsection.24.3.3}{Teoremi}{section.24.3}% 290
-\BOOKMARK [3][-]{subsubsection*.138}{Teorema\040di\040Weierstrass}{subsection.24.3.3}% 291
-\BOOKMARK [3][-]{subsubsection*.139}{Teorema\040della\040permanenza\040del\040segno}{subsection.24.3.3}% 292
-\BOOKMARK [3][-]{subsubsection*.140}{Teorema\040degli\040zeri}{subsection.24.3.3}% 293
-\BOOKMARK [3][-]{subsubsection*.141}{Teorema\040dei\040valori\040intermedi}{subsection.24.3.3}% 294
+\BOOKMARK [3][-]{subsubsection*.139}{Teorema\040di\040Weierstrass}{subsection.24.3.3}% 291
+\BOOKMARK [3][-]{subsubsection*.140}{Teorema\040della\040permanenza\040del\040segno}{subsection.24.3.3}% 292
+\BOOKMARK [3][-]{subsubsection*.141}{Teorema\040degli\040zeri}{subsection.24.3.3}% 293
+\BOOKMARK [3][-]{subsubsection*.142}{Teorema\040dei\040valori\040intermedi}{subsection.24.3.3}% 294
 \BOOKMARK [1][-]{section.24.4}{Operazioni\040e\040teoremi\040sui\040limiti}{chapter.24}% 295
 \BOOKMARK [2][-]{subsection.24.4.1}{Operazioni\040coi\040limiti}{section.24.4}% 296
-\BOOKMARK [3][-]{subsubsection*.142}{Limiti\040infiniti\040e\040infinitesimi}{subsection.24.4.1}% 297
-\BOOKMARK [3][-]{subsubsection*.143}{Forme\040indeterminate}{subsection.24.4.1}% 298
+\BOOKMARK [3][-]{subsubsection*.143}{Limiti\040infiniti\040e\040infinitesimi}{subsection.24.4.1}% 297
+\BOOKMARK [3][-]{subsubsection*.144}{Forme\040indeterminate}{subsection.24.4.1}% 298
 \BOOKMARK [2][-]{subsection.24.4.2}{Teorema\040del\040confronto}{section.24.4}% 299
 \BOOKMARK [2][-]{subsection.24.4.3}{Teorema di de l’Hopital}{section.24.4}% 300
 \BOOKMARK [1][-]{section.24.5}{Limiti\040fondamentali}{chapter.24}% 301
@@ -350,7 +350,7 @@
 \BOOKMARK [1][-]{section.26.1}{Definizioni}{chapter.26}% 350
 \BOOKMARK [2][-]{subsection.26.1.1}{Interpretazione\040geometrica}{section.26.1}% 351
 \BOOKMARK [2][-]{subsection.26.1.2}{Integrale\040definito}{section.26.1}% 352
-\BOOKMARK [3][-]{subsubsection*.170}{Proprietà dell’integrale definito}{subsection.26.1.2}% 353
+\BOOKMARK [3][-]{subsubsection*.171}{Proprietà dell’integrale definito}{subsection.26.1.2}% 353
 \BOOKMARK [2][-]{subsection.26.1.3}{Integrale\040indefinito}{section.26.1}% 354
 \BOOKMARK [1][-]{section.26.2}{Teoremi}{chapter.26}% 355
 \BOOKMARK [2][-]{subsection.26.2.1}{Teorema\040della\040media}{section.26.2}% 356
@@ -365,35 +365,35 @@
 \BOOKMARK [1][-]{section.26.6}{Problemi}{chapter.26}% 365
 \BOOKMARK [2][-]{subsection.26.6.1}{Calcolo\040integrali\040indefiniti}{section.26.6}% 366
 \BOOKMARK [2][-]{subsection.26.6.2}{Integrali\040definiti}{section.26.6}% 367
-\BOOKMARK [3][-]{subsubsection*.173}{Integrali\040impropri}{subsection.26.6.2}% 368
+\BOOKMARK [3][-]{subsubsection*.174}{Integrali\040impropri}{subsection.26.6.2}% 368
 \BOOKMARK [2][-]{subsection.26.6.3}{Problemi\040di\040geometria}{section.26.6}% 369
-\BOOKMARK [3][-]{subsubsection*.176}{Area\040di\040superfici\040e\040lunghezza\040di\040curve}{subsection.26.6.3}% 370
-\BOOKMARK [3][-]{subsubsection*.180}{Volumi\040e\040superficie\040di\040solidi\040di\040rotazione}{subsection.26.6.3}% 371
+\BOOKMARK [3][-]{subsubsection*.177}{Area\040di\040superfici\040e\040lunghezza\040di\040curve}{subsection.26.6.3}% 370
+\BOOKMARK [3][-]{subsubsection*.181}{Volumi\040e\040superficie\040di\040solidi\040di\040rotazione}{subsection.26.6.3}% 371
 \BOOKMARK [0][-]{chapter.27}{Equazioni\040differenziali\040ordinarie}{part.6}% 372
 \BOOKMARK [1][-]{section.27.1}{Prime\040definizioni}{chapter.27}% 373
 \BOOKMARK [1][-]{section.27.2}{Classificazione,\040esempi\040e\040tecniche\040risolutive}{chapter.27}% 374
 \BOOKMARK [2][-]{subsection.27.2.1}{Equazioni\040lineari\040a\040coefficienti\040costanti}{section.27.2}% 375
-\BOOKMARK [3][-]{subsubsection*.189}{Definizione}{subsection.27.2.1}% 376
-\BOOKMARK [3][-]{subsubsection*.190}{Esempi}{subsection.27.2.1}% 377
-\BOOKMARK [3][-]{subsubsection*.191}{Soluzione\040generale}{subsection.27.2.1}% 378
-\BOOKMARK [4][-]{paragraph*.192}{Soluzione dell’equazione omogenea}{subsubsection*.191}% 379
-\BOOKMARK [4][-]{paragraph*.193}{Soluzione particolare dell’equazione completa}{subsubsection*.191}% 380
-\BOOKMARK [3][-]{subsubsection*.194}{Soluzione\040degli\040esempi}{subsection.27.2.1}% 381
+\BOOKMARK [3][-]{subsubsection*.190}{Definizione}{subsection.27.2.1}% 376
+\BOOKMARK [3][-]{subsubsection*.191}{Esempi}{subsection.27.2.1}% 377
+\BOOKMARK [3][-]{subsubsection*.192}{Soluzione\040generale}{subsection.27.2.1}% 378
+\BOOKMARK [4][-]{paragraph*.193}{Soluzione dell’equazione omogenea}{subsubsection*.192}% 379
+\BOOKMARK [4][-]{paragraph*.194}{Soluzione particolare dell’equazione completa}{subsubsection*.192}% 380
+\BOOKMARK [3][-]{subsubsection*.195}{Soluzione\040degli\040esempi}{subsection.27.2.1}% 381
 \BOOKMARK [2][-]{subsection.27.2.2}{Equazioni\040differenziali\040a\040variabili\040separabili:\040tecnica\040di\040soluzione\040di\040separazione\040delle\040variabili}{section.27.2}% 382
-\BOOKMARK [3][-]{subsubsection*.195}{Esempi}{subsection.27.2.2}% 383
+\BOOKMARK [3][-]{subsubsection*.196}{Esempi}{subsection.27.2.2}% 383
 \BOOKMARK [0][-]{chapter.28}{Introduzione\040al\040calcolo\040multi-variabile}{part.6}% 384
 \BOOKMARK [1][-]{section.28.1}{Limite di una funzione di più variabili}{chapter.28}% 385
 \BOOKMARK [2][-]{subsection.28.1.1}{Funzioni\040continue}{section.28.1}% 386
-\BOOKMARK [3][-]{subsubsection*.196}{Definizione}{subsection.28.1.1}% 387
-\BOOKMARK [3][-]{subsubsection*.197}{Discontinuità}{subsection.28.1.1}% 388
+\BOOKMARK [3][-]{subsubsection*.197}{Definizione}{subsection.28.1.1}% 387
+\BOOKMARK [3][-]{subsubsection*.198}{Discontinuità}{subsection.28.1.1}% 388
 \BOOKMARK [1][-]{section.28.2}{Derivate di funzioni di più variabili}{chapter.28}% 389
 \BOOKMARK [2][-]{subsection.28.2.1}{Derivate\040parziali}{section.28.2}% 390
 \BOOKMARK [2][-]{subsection.28.2.2}{Incremento\040di\040una\040funzione}{section.28.2}% 391
 \BOOKMARK [2][-]{subsection.28.2.3}{Differenziale}{section.28.2}% 392
 \BOOKMARK [1][-]{section.28.3}{Integrali\040su\040domini\040multi-dimensionali}{chapter.28}% 393
 \BOOKMARK [2][-]{subsection.28.3.1}{Definizioni}{section.28.3}% 394
-\BOOKMARK [3][-]{subsubsection*.198}{Interpretazione\040geometrica}{subsection.28.3.1}% 395
-\BOOKMARK [3][-]{subsubsection*.199}{Proprietà dell’integrale definito}{subsection.28.3.1}% 396
+\BOOKMARK [3][-]{subsubsection*.199}{Interpretazione\040geometrica}{subsection.28.3.1}% 395
+\BOOKMARK [3][-]{subsubsection*.200}{Proprietà dell’integrale definito}{subsection.28.3.1}% 396
 \BOOKMARK [2][-]{subsection.28.3.2}{Regole\040di\040integrazione}{section.28.3}% 397
 \BOOKMARK [2][-]{subsection.28.3.3}{Teoremi}{section.28.3}% 398
 \BOOKMARK [0][-]{chapter.29}{Introduzione\040al\040calcolo\040vettoriale\040su\040spazi\040euclidei}{part.6}% 399
@@ -410,10 +410,10 @@
 \BOOKMARK [1][-]{section.29.3}{Problemi}{chapter.29}% 410
 \BOOKMARK [2][-]{subsection.29.3.1}{Operatori\040differenziali}{section.29.3}% 411
 \BOOKMARK [2][-]{subsection.29.3.2}{Integrali}{section.29.3}% 412
-\BOOKMARK [3][-]{subsubsection*.200}{Geometria}{subsection.29.3.2}% 413
-\BOOKMARK [3][-]{subsubsection*.205}{Fisica}{subsection.29.3.2}% 414
+\BOOKMARK [3][-]{subsubsection*.201}{Geometria}{subsection.29.3.2}% 413
+\BOOKMARK [3][-]{subsubsection*.206}{Fisica}{subsection.29.3.2}% 414
 \BOOKMARK [-1][-]{part.7}{VII\040Statistica}{}% 415
 \BOOKMARK [0][-]{chapter.30}{Introduzione\040alla\040statistica}{part.7}% 416
 \BOOKMARK [-1][-]{part.8}{VIII\040Indice}{}% 417
 \BOOKMARK [0][-]{chapter.31}{Indice}{part.8}% 418
-\BOOKMARK [0][-]{section*.208}{Proof\040Index}{part.8}% 419
+\BOOKMARK [0][-]{section*.209}{Proof\040Index}{part.8}% 419

@@ -87,7 +87,7 @@
         
 
 \title{Matematica per le scuole superiori}
-\date{15 gen 2025}
+\date{27 gen 2025}
 \release{}
 \author{basics}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -5627,7 +5627,7 @@ Vengono qui mostrate alcune proprietà delle {\hyperref[\detokenize{ch/analytic_
 \label{\detokenize{ch/analytic_geometry/analytic_geometry_3d/points:sistemi-di-coordinate-per-lo-spazio-euclideo-e-3}}\label{\detokenize{ch/analytic_geometry/analytic_geometry_3d/points:geometry-analytic-3d-coordinates}}\label{\detokenize{ch/analytic_geometry/analytic_geometry_3d/points::doc}}
 
 \subsection{Coordinate cartesiane}
-\label{\detokenize{ch/analytic_geometry/analytic_geometry_3d/points:coordinate-cartesiane}}
+\label{\detokenize{ch/analytic_geometry/analytic_geometry_3d/points:coordinate-cartesiane}}\label{\detokenize{ch/analytic_geometry/analytic_geometry_3d/points:geometry-analytic-3d-coordinates-cartesian}}
 \sphinxAtStartPar
 Le coordinate cartesiane \((x,y,z)\) di un punto \(P\) dello spazio euclideo \(E^3\) permettono di definire il vettore euclideo tra l’origine \(O \equiv (0,0,0)\) e il punto \(P\)
 \begin{equation*}
@@ -5646,7 +5646,7 @@ Usando le coordinate cartesiane, la distanza tra due punti \(P \equiv(x_P, y_P, 
 \end{equation*}
 
 \subsection{Coordinate cilindriche}
-\label{\detokenize{ch/analytic_geometry/analytic_geometry_3d/points:coordinate-cilindriche}}
+\label{\detokenize{ch/analytic_geometry/analytic_geometry_3d/points:coordinate-cilindriche}}\label{\detokenize{ch/analytic_geometry/analytic_geometry_3d/points:geometry-analytic-3d-coordinates-cylindrical}}
 \sphinxAtStartPar
 Dato un sistema di coordinate cartesiane, si può definire un sistema di coordinate cilindriche \((R, \theta, z)\) con la stessa origine, asse \(z\) coincidente e usando il piano \(x\)\sphinxhyphen{}\(y\) come origine per misurare l’angolo \(\theta\) attorno all’asse \(z\), tramite la legge di trasformazione delle coordinate
 \begin{equation*}
@@ -5658,7 +5658,7 @@ z = z
 \end{equation*}
 
 \subsection{Coordinate sferiche}
-\label{\detokenize{ch/analytic_geometry/analytic_geometry_3d/points:coordinate-sferiche}}
+\label{\detokenize{ch/analytic_geometry/analytic_geometry_3d/points:coordinate-sferiche}}\label{\detokenize{ch/analytic_geometry/analytic_geometry_3d/points:geometry-analytic-3d-coordinates-spherical}}
 \sphinxAtStartPar
 Dato un sistema cartesiano e scelto un sistema di coordinate cilindriche come appena descritto, si può definire un sistema di coordinate sferiche \((r, \theta, \phi)\) tramite le leggi di trasformazione di coordinate
 \begin{equation*}
@@ -6081,7 +6081,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-15 gen 2025
+16 gen 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -6121,8 +6121,8 @@ basics
 \end{sphinxuseclass}
 \end{sphinxuseclass}
 
-\chapter{Funzioni reali a variabile reale, \protect\(f: \mathbb{R} \rightarrow \mathbb{R}\protect\)}
-\label{\detokenize{ch/precalculus/real-functions:funzioni-reali-a-variabile-reale-f-mathbb-r-rightarrow-mathbb-r}}\label{\detokenize{ch/precalculus/real-functions:math-hs-precalculus-real-functions}}\label{\detokenize{ch/precalculus/real-functions::doc}}
+\chapter{Funzioni reali a variabile reale, \protect\(f: A \subseteq \mathbb{R} \rightarrow \mathbb{R}\protect\)}
+\label{\detokenize{ch/precalculus/real-functions:funzioni-reali-a-variabile-reale-f-a-subseteq-mathbb-r-rightarrow-mathbb-r}}\label{\detokenize{ch/precalculus/real-functions:math-hs-precalculus-real-functions}}\label{\detokenize{ch/precalculus/real-functions::doc}}
 \sphinxAtStartPar
 Le funzioni reali a variabile reale saranno oggetto di studio dettagliato del {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-analysis}]{\sphinxcrossref{\DUrole{std,std-ref}{calcolo infinitesimale}}}}.
 \label{ch/precalculus/real-functions:precalculus-real-fun}
@@ -6131,12 +6131,12 @@ Le funzioni reali a variabile reale saranno oggetto di studio dettagliato del {\
 
 
 \sphinxAtStartPar
-Una funzione a valore reale di una variabile reale è una {\hyperref[\detokenize{ch/set:math-hs-fun}]{\sphinxcrossref{\DUrole{std,std-ref}{funzione}}}} \(f: A \in \mathbb{R} \rightarrow \mathbb{R}\) è una funzione che ha come dominio un sottoinsieme \(A\) dei numeri reali e condominio \(\mathbb{R}\),
+Una funzione a valore reale di una variabile reale è una {\hyperref[\detokenize{ch/set:math-hs-fun}]{\sphinxcrossref{\DUrole{std,std-ref}{funzione}}}} \(f: A \subseteq \mathbb{R} \rightarrow \mathbb{R}\) è una funzione che ha come dominio un sottoinsieme \(A\) dei numeri reali e codominio \(\mathbb{R}\), cioè una relazione che associa a ogni elemento \(x \in A\) uno e un solo elemento
 \begin{equation*}
-\begin{split}y = f(x) \ ,\end{split}
+\begin{split}y = f(x) \in \mathbb{R} \ .\end{split}
 \end{equation*}
 \sphinxAtStartPar
-con \(x \in A \in \mathbb{R}\) e \(y \in \mathbb{R}\). E” comune chiamare \(x\) \sphinxstyleemphasis{argomento} della funzione, o la \sphinxstyleemphasis{variabile indipendente}, e \(y\) \sphinxstyleemphasis{valore} della funzione o \sphinxstyleemphasis{variabile dipendente}
+E” comune chiamare \(x\) \sphinxstyleemphasis{argomento} della funzione, o la \sphinxstyleemphasis{variabile indipendente}, e \(y\) \sphinxstyleemphasis{valore} della funzione o \sphinxstyleemphasis{variabile dipendente}
 \end{sphinxadmonition}
 
 
@@ -6476,7 +6476,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-4 min read
+5 min read
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -6506,24 +6506,15 @@ basics
 \end{sphinxuseclass}
 
 \chapter{Serie e successioni}
-\label{\detokenize{ch/series:serie-e-successioni}}\label{\detokenize{ch/series:math-hs-series}}\label{\detokenize{ch/series::doc}}\begin{itemize}
-\item {} 
+\label{\detokenize{ch/series:serie-e-successioni}}\label{\detokenize{ch/series:math-hs-series}}\label{\detokenize{ch/series::doc}}
 \sphinxAtStartPar
-successioni numeriche
+Questa sezione è una sezione hard\sphinxhyphen{}core e nella sua completezza va ben oltre gli scopi di un corso di matematica a livello di scuola superiore e di molti corsi universitari, ad eccezione delle sole facoltà di matematica e fisica probabilmente.
 
-\item {} 
 \sphinxAtStartPar
-successioni di funzioni
+Di solito, {\hyperref[\detokenize{ch/series:math-hs-series-real-sequences}]{\sphinxcrossref{\DUrole{std,std-ref}{successioni numeriche}}}} e le {\hyperref[\detokenize{ch/series:math-hs-series-real-series}]{\sphinxcrossref{\DUrole{std,std-ref}{serie numeriche}}}} vengono trattate senza dedicarvi troppo tempo, mostrando alcuni esempi come le serie geometriche; le {\hyperref[\detokenize{ch/series:math-hs-series-fun-sequences}]{\sphinxcrossref{\DUrole{std,std-ref}{successioni di funzioni}}}} e {\hyperref[\detokenize{ch/series:math-hs-series-fun-series}]{\sphinxcrossref{\DUrole{std,std-ref}{serie di funzioni}}}} vengono trattate in occasione della presentazione della funzione esponenziale sul campo reale e quando vengono introdotte le serie polinomiali di Taylor dopo aver affrontato le derivate; infine possono essere utilizzate sul campo complesso per fornire un’intuizione veloce della formula di Eulero dell’esponenziale di numeri immaginari, senza prestare eccessiva \sphinxhyphen{} o nessuna \sphinxhyphen{} attenzione ai risultati di convergenza e al soddisfacimento di alcune ipotesi necessarie affinché alcune operazioni siano lecite/valide.!!!
 
-\item {} 
 \sphinxAtStartPar
-serie numeriche
-
-\item {} 
-\sphinxAtStartPar
-serie di funzioni
-
-\end{itemize}
+Per questi motivi, a questo capitolo viene per ora riservata una priorità relativamente bassa nello svolgimento del lavoro.
 
 
 \section{Successioni di numeri reali}
@@ -6850,45 +6841,54 @@ si può trovare la relazione \(e < 3\).
 \label{\detokenize{ch/series:convergenza}}\label{\detokenize{ch/series:math-hs-series-fun-sequences-convergence}}
 
 \subsubsection{Convergenza puntuale}
-\label{\detokenize{ch/series:convergenza-puntuale}}\label{\detokenize{ch/series:math-hs-series-fun-sequences-convergence-point}}
-\sphinxAtStartPar
-\sphinxstylestrong{todo} \sphinxstyleemphasis{definizione}
+\label{\detokenize{ch/series:convergenza-puntuale}}\label{\detokenize{ch/series:math-hs-series-fun-sequences-convergence-point}}\label{ch/series:definition-0}
+\begin{sphinxadmonition}{note}{Definition 17.3.1 (Convergenza puntuale)}
+
+
+\end{sphinxadmonition}
 
 
 \subsubsection{Convergenza uniforme}
-\label{\detokenize{ch/series:convergenza-uniforme}}\label{\detokenize{ch/series:math-hs-series-fun-sequences-convergence-uniform}}
+\label{\detokenize{ch/series:convergenza-uniforme}}\label{\detokenize{ch/series:math-hs-series-fun-sequences-convergence-uniform}}\label{ch/series:definition-1}
+\begin{sphinxadmonition}{note}{Definition 17.3.2 (Convergenza uniforme)}
+
+
+
 \sphinxAtStartPar
 Sia \(\{ f_n \}_{n \in \mathbb{N}}\) una successione di funzioni \(f_n:  X \rightarrow \mathbb{R}\). La serie converge uniformemente alla funzione \(f\) se per ogni \(\varepsilon > 0\) esiste \(N \in \mathbb{N}\) tale che
 \begin{equation*}
-\begin{split}|f_n(x) - f(x)| < e \ , \qquad \forall x \in X \ ,\end{split}
+\begin{split}|f_n(x) - f(x)| < \varepsilon \ , \qquad \forall x \in X \ ,\end{split}
 \end{equation*}
 \sphinxAtStartPar
 per tutti gli \(n > N\).
+\end{sphinxadmonition}
 
 \sphinxAtStartPar
-\sphinxstylestrong{Proprietà.}
-\begin{itemize}
-\item {} 
+\sphinxstylestrong{Proprietà.} Sotto opportune ulteriori ipotesi (vedi W.Rudin Principles of Mathematial Analysis%
+\begin{footnote}[1]\sphinxAtStartFootnote
+W.Rudin, \sphinxstyleemphasis{Principles of Mathematial Analysis}, Third Edition
+%
+\end{footnote}), la convergenza uniforme permette di invertire l’ordine delle operazioni di limite, derivata e integrale con la sommatoria nelle serie di funzioni:
+
+\begin{sphinxadmonition}{note}{Convergenza uniforme e il limite}
+
 \sphinxAtStartPar
-La convergenza uniforme permette di invertire l’ordine delle operazioni di limite, derivata e integrale con la sommatoria nelle serie di funzioni:
-\begin{itemize}
-\item {} 
+Data una successione di funzioni derivatbili \(f_n(x)\), …
+\end{sphinxadmonition}
+
+\begin{sphinxadmonition}{note}{Convergenza uniforme e la derivata}
+
 \sphinxAtStartPar
-data una successione di funzioni derivatbili \(f_n(x)\), che convergono uniformemente a \(f(x)\) e le cui derivate convergono uniformemente a \(g(x)\), allora
+Data una successione di funzioni derivatbili \(f_n(x)\), …
 \begin{equation*}
 \begin{split}f'(x) = g(x)\end{split}
-\end{equation*}
-\item {} 
+\end{equation*}\end{sphinxadmonition}
+
+\begin{sphinxadmonition}{note}{Convergenza uniforme e l’integrale}
+
 \sphinxAtStartPar
-…
-
-\end{itemize}
-
-\item {} 
-\sphinxAtStartPar
-…
-
-\end{itemize}
+Data una successione di funzioni derivatbili \(f_n(x)\), …
+\end{sphinxadmonition}
 
 \sphinxAtStartPar
 \sphinxstylestrong{todo} discutere differenze tra i due tipi di convergenza; discutere i limiti della convergenza puntuale; discutere le proprietà
@@ -6929,6 +6929,10 @@ data una successione di funzioni derivatbili \(f_n(x)\), che convergono uniforme
 
 \section{Serie di funzioni complesse}
 \label{\detokenize{ch/series:serie-di-funzioni-complesse}}\label{\detokenize{ch/series:math-hs-series-fun-complex-series}}
+
+\bigskip\hrule\bigskip
+
+
 \sphinxstepscope
 
 
@@ -9139,7 +9143,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-15 gen 2025
+16 gen 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -9180,7 +9184,17 @@ basics
 \end{sphinxuseclass}
 
 \chapter{Funzioni multi\sphinxhyphen{}variabile}
-\label{\detokenize{ch/precalculus/multivariable-real-fun:funzioni-multi-variabile}}\label{\detokenize{ch/precalculus/multivariable-real-fun:math-hs-precalculus-multivariable-real-fun}}\label{\detokenize{ch/precalculus/multivariable-real-fun::doc}}
+\label{\detokenize{ch/precalculus/multivariable-real-fun:funzioni-multi-variabile}}\label{\detokenize{ch/precalculus/multivariable-real-fun:math-hs-precalculus-multivariable-real-fun}}\label{\detokenize{ch/precalculus/multivariable-real-fun::doc}}\label{ch/precalculus/multivariable-real-fun:definition-0}
+\begin{sphinxadmonition}{note}{Definition 21.1 (Funzione \protect\(f: A \subseteq \mathbb{R}^n \rightarrow \mathbb{R}\protect\))}
+
+
+
+\sphinxAtStartPar
+Una fanzione a valore reale di una variabile reale è una funzione \(f: A \subseteq \mathbb{R}^n \rightarrow \mathbb{R}\) che ha come dominio un sottoinsieme \(A\) delle \(n\)\sphinxhyphen{}uple di numeri reali e codominio \(\mathbb{R}\), cioè una relazione che associa a ogni elemento \((x_1, x_2, \dots, x_n) \in A\) uno e un solo elemento
+\begin{equation*}
+\begin{split}y = f(x_1, x_2, \dots, x_n) \in \mathbb{R} \ .\end{split}
+\end{equation*}\end{sphinxadmonition}
+
 \sphinxstepscope
 
 
@@ -12801,7 +12815,7 @@ e integrata con le opportune condizioni
 \chapter{Introduzione al calcolo multi\sphinxhyphen{}variabile}
 \label{\detokenize{ch/multivariable-calculus:introduzione-al-calcolo-multi-variabile}}\label{\detokenize{ch/multivariable-calculus:multivariable-calculus}}\label{\detokenize{ch/multivariable-calculus::doc}}
 \sphinxAtStartPar
-Questo capitolo è un’introduzione al calcolo per funzioni di più variabili reali a valore reale, \(f: A \subset \mathbb{R}^n \rightarrow \mathbb{R}\), estendendo gli strumenti del calcolo introdotti per funzioni a una variabile a funzioni di più variabili,
+Questo capitolo è un’introduzione al calcolo per funzioni di più variabili reali a valore reale, \(f: A \subset \mathbb{R}^n \rightarrow \mathbb{R}\), estendendo gli strumenti del calcolo introdotti per funzioni a una variabile a {\hyperref[\detokenize{ch/precalculus/multivariable-real-fun:math-hs-precalculus-multivariable-real-fun}]{\sphinxcrossref{\DUrole{std,std-ref}{funzioni di più variabili di più variabili reali a valore reale}}}},
 \begin{equation*}
 \begin{split}f(x_1, x_2, \dots, x_n) \ .\end{split}
 \end{equation*}
@@ -13471,15 +13485,101 @@ In questa sezione vengono presentati alcuni integrali comuni di campi scalari e 
 
 \subsection{Integrali di linea}
 \label{\detokenize{ch/vector-calculus/integrals:integrali-di-linea}}\label{\detokenize{ch/vector-calculus/integrals:vector-calculus-integrals-line}}
+\sphinxAtStartPar
+Il vettore elementare di una curva nello spazio, descritta in forma parametrica \(\vec{r}(q^1)\) è il vettore
+\begin{equation*}
+\begin{split}d \vec{r}(q^1) = \vec{r}'(q^1) \, dq^1 \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{Lunghezza di arco.} Tra le possibili parametrizzazioni regolari della curva, esiste una parametrizzazione particolare, generalmente indicata con \(s\), e definita dalla condizione
+\begin{equation*}
+\begin{split}d  s = |d \vec{r}(s)| \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+cioè la variazione del parametro \(s\) è uguale alla lunghezza dell’elemento di curva. Il parametro \(s\) viene definito \sphinxstyleemphasis{lunghezza d’arco} e dalla sua definizione segue immediatamente che la derivata della posizione della curva rispetto a \(s\) è il versore tangente \(\hat{t}\),
+\begin{equation*}
+\begin{split}\vec{r}'(s) = \hat{t}(s) \ .\end{split}
+\end{equation*}
 
 \subsection{Integrali di superficie}
 \label{\detokenize{ch/vector-calculus/integrals:integrali-di-superficie}}\label{\detokenize{ch/vector-calculus/integrals:vector-calculus-integrals-surface}}
+\sphinxAtStartPar
+Nello spazio 3\sphinxhyphen{}dimensionale, la superficie elementare con versore normale \(\hat{n} \, dS\) di una superficie descritta dalle due coordinate \(\{ q^i \}_{i=1:2}\), \(\vec{r}(q^1, q^2)\), può essere espressa in funzione degli incrementi delle coordinate e del prodotto vettoriale delle derivate parziali,
+\begin{equation*}
+\begin{split}\hat{n} \, d S = \partial_1 \vec{r} \times \partial_2 \vec{r} \, dq^1 \, dq^2 \ .\end{split}
+\end{equation*}
 
 \subsection{Integrali di volume}
 \label{\detokenize{ch/vector-calculus/integrals:integrali-di-volume}}\label{\detokenize{ch/vector-calculus/integrals:vector-calculus-integrals-volume}}
+\sphinxAtStartPar
+Nello spazio 3\sphinxhyphen{}dimensionale i cui punti sono descritti dalle coordinate \(\{ q^i \}_{i=1:3}\), \(\vec{r}(q^1, q^2, q^3)\), il volume elementare \(dV\) può essere espresso in funzione delle variazioni delle coordinate \(d q^1\), \(d q^2\), \(d q^3\) e del prodotto misto delle derivate parziali,
+\begin{equation*}
+\begin{split}dV = \left| \partial_1 \vec{r} \cdot \partial_2 \vec{r} \times \partial_3 \vec{r} \right| \, d q^1 \, d q^2 \, d q^3 \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Ricordando le definizioni di {\hyperref[\detokenize{ch/analytic_geometry/analytic_geometry_3d/points:geometry-analytic-3d-coordinates-cartesian}]{\sphinxcrossref{\DUrole{std,std-ref}{coordiante cartesiane}}}}, {\hyperref[\detokenize{ch/analytic_geometry/analytic_geometry_3d/points:geometry-analytic-3d-coordinates-cylindrical}]{\sphinxcrossref{\DUrole{std,std-ref}{coordinate cilindriche}}}} e {\hyperref[\detokenize{ch/analytic_geometry/analytic_geometry_3d/points:geometry-analytic-3d-coordinates-spherical}]{\sphinxcrossref{\DUrole{std,std-ref}{coordiante sferiche}}}}, è possibile dimostrare che l’espressione dell’elemento di volume in queste coordinate è
+\begin{equation*}
+\begin{split}\begin{aligned}
+  d V & = dx \, dy \, dz                          & \qquad \text{(coordinate cartesiane)}  \\
+  d V & = R dR \, d\theta \, dz                   & \qquad \text{(coordinate cilindriche)} \\
+  d V & = r^2 \sin \phi \, dr \, d\phi \, d\theta & \qquad \text{(coordinate sferiche)}
+\end{aligned}\end{split}
+\end{equation*}\label{ch/vector-calculus/integrals:example-0}
+\begin{sphinxadmonition}{note}{Example 28.2.1 (Elemento di volume in coordinate cartesiane)}
+
+
+\begin{equation*}
+\begin{split}\vec{r} = x \hat{x} + y \hat{y} + z \hat{z}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\begin{aligned}
+  d V
+  & = \partial_x \vec{r} \cdot \partial_y \vec{r} \times \partial_z \vec{r} \, dx \, dy \, dz = \\
+  & = \vec{x} \cdot \vec{y} \times \vec{z} \, dx \, dy \, dz = \\
+  & = \vec{x} \cdot \vec{x} \, dx \, dy \, dz = \\
+  & = dx \, dy \, dz \ .
+\end{aligned}\end{split}
+\end{equation*}\end{sphinxadmonition}
+\label{ch/vector-calculus/integrals:example-1}
+\begin{sphinxadmonition}{note}{Example 28.2.2 (Elemento di volume in coordinate cilindriche)}
+
+
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \vec{r}
+  & = R \, \cos \theta \, \hat{x} + R \, \sin \theta \, \hat{y} + z \, \hat{z} 
+\end{aligned}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\begin{aligned}
+  d V
+  & = \partial_R \vec{R} \cdot \partial_{\theta} \vec{r} \times \partial_{z} \vec{r} \, dR \, d\theta \, d z = \\
+  & = (\cos \theta \, \hat{x} + \sin \theta \, \hat{y}) \cdot (-R \sin \theta \, \hat{x} + R \cos \theta \, \hat{y}) \times \hat{z}  \, dR \, d\theta \, d z = \\
+  & = (\cos \theta \, \hat{x} + \sin \theta \, \hat{y}) \cdot ( R \sin \theta \, \hat{y} + R \cos \theta \, \hat{x}) \, dR \, d\theta \, d z = \\
+  & = R (\cos^2 \theta + \sin^2 \theta) \, dR \, d\theta \, d z = \\
+  & = R \, dR \, d \theta \, dz 
+\end{aligned}\end{split}
+\end{equation*}\end{sphinxadmonition}
+\label{ch/vector-calculus/integrals:example-2}
+\begin{sphinxadmonition}{note}{Example 28.2.3 (Elemento di volume in coordinate sferiche)}
+
+
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \vec{r}
+  & = r \sin \phi \, \cos \theta \, \hat{x} + r \sin \phi \, \sin \theta \, \hat{y} + r \cos \phi \, \hat{z} 
+\end{aligned}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\begin{aligned}
+  d V
+  & = \partial_r \vec{r} \cdot \partial_{\phi} \vec{r} \times \partial_{\theta} \vec{r} \, dr \, d\phi \, d\theta = \\
+  & = (\sin \phi \, \cos \theta \, \hat{x} + \sin \phi \, \sin \theta \, \hat{y} + \cos \phi \, \hat{z} ) \cdot ( r \cos \phi \, \cos \theta \, \hat{x} + r \cos \phi \, \sin \theta \, \hat{y} - r \sin \phi \, \hat{z} ) \times (-r \sin \phi \sin \theta \hat{x} + r \sin \phi \cos \theta \hat{y}) \, dr \, d\phi \, d\theta = \\
+  & = \dots = \\
+  & = r^2 \sin \phi \, dr \, d\phi \, d\theta \ .
+\end{aligned}\end{split}
+\end{equation*}\end{sphinxadmonition}
+
 
 \subsection{Teoremi}
-\label{\detokenize{ch/vector-calculus/integrals:teoremi}}\label{\detokenize{ch/vector-calculus/integrals:vector-calculus-integrals-theorems}}\label{ch/vector-calculus/integrals:theorem-0}
+\label{\detokenize{ch/vector-calculus/integrals:teoremi}}\label{\detokenize{ch/vector-calculus/integrals:vector-calculus-integrals-theorems}}\label{ch/vector-calculus/integrals:theorem-3}
 \begin{sphinxadmonition}{note}{Theorem 28.2.1 (Teorema del gradiente)}
 
 
@@ -13490,7 +13590,7 @@ Per campi scalari \(f(\vec{r})\) sufficientemente regolari nel dominio \(V \subs
 \begin{split}\int_{V} \nabla f = \oint_{\partial V} f \hat{n} \ .\end{split}
 \end{equation}\end{sphinxadmonition}
 \label{ch/vector-calculus/integrals:thm-gradient-1}
-\begin{sphinxadmonition}{note}{Example 28.2.1 (Teorema del gradiente)}
+\begin{sphinxadmonition}{note}{Example 28.2.4 (Teorema del gradiente)}
 
 
 
@@ -13539,7 +13639,12 @@ e
     = 16 \hat{x} \ .
 \end{aligned}\end{split}
 \end{equation*}\end{sphinxadmonition}
-\label{ch/vector-calculus/integrals:theorem-2}
+\label{ch/vector-calculus/integrals:thm-gradient-2}
+\begin{sphinxadmonition}{note}{Example 28.2.5 (Teorema del gradiente)}
+
+
+\end{sphinxadmonition}
+\label{ch/vector-calculus/integrals:theorem-6}
 \begin{sphinxadmonition}{note}{Theorem 28.2.2 (Teorema della divergenza)}
 
 
@@ -13550,16 +13655,16 @@ Per campi vettoriali \(\vec{f}(\vec{r})\) sufficientemente regolari nel dominio 
 \begin{split}\int_{V} \nabla \cdot \vec{f} = \oint_{\partial V} \vec{f} \cdot \hat{n} \ .\end{split}
 \end{equation}\end{sphinxadmonition}
 \label{ch/vector-calculus/integrals:thm-divergence-1}
-\begin{sphinxadmonition}{note}{Example 28.2.2 (Teorema della divergenza)}
+\begin{sphinxadmonition}{note}{Example 28.2.6 (Teorema della divergenza)}
 
 
 \end{sphinxadmonition}
 \label{ch/vector-calculus/integrals:thm-divergence-2}
-\begin{sphinxadmonition}{note}{Example 28.2.3 (Teorema della divergenza)}
+\begin{sphinxadmonition}{note}{Example 28.2.7 (Teorema della divergenza)}
 
 
 \end{sphinxadmonition}
-\label{ch/vector-calculus/integrals:theorem-5}
+\label{ch/vector-calculus/integrals:theorem-9}
 \begin{sphinxadmonition}{note}{Theorem 28.2.3 (Teorema del rotore)}
 
 
@@ -13570,12 +13675,12 @@ Per campi vettoriali \(\vec{f}(\vec{r})\) sufficientemente regolari sulla superf
 \begin{split}\int_{S} \nabla \times \vec{f} \cdot \hat{n} = \oint_{\partial S} \vec{f} \cdot \hat{t} \ .\end{split}
 \end{equation}\end{sphinxadmonition}
 \label{ch/vector-calculus/integrals:thm-curl-1}
-\begin{sphinxadmonition}{note}{Example 28.2.4 (Teorema del rotore)}
+\begin{sphinxadmonition}{note}{Example 28.2.8 (Teorema del rotore)}
 
 
 \end{sphinxadmonition}
 \label{ch/vector-calculus/integrals:thm-curl-2}
-\begin{sphinxadmonition}{note}{Example 28.2.5 (Teorema della rotore)}
+\begin{sphinxadmonition}{note}{Example 28.2.9 (Teorema della rotore)}
 
 
 \end{sphinxadmonition}
@@ -13832,7 +13937,10 @@ RL: ottimizzazione/controllo
 \item\relax\sphinxstyleindexentry{analysis\sphinxhyphen{}continuous\sphinxhyphen{}fun}\sphinxstyleindexextra{ch/infinitesimal\_calculus/analysis}\sphinxstyleindexpageref{ch/infinitesimal_calculus/analysis:\detokenize{analysis-continuous-fun}}
 \indexspace
 \bigletter{definition\sphinxhyphen{}0}
-\item\relax\sphinxstyleindexentry{definition\sphinxhyphen{}0}\sphinxstyleindexextra{ch/algebra/complex\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/complex-algebra:\detokenize{definition-0}}
+\item\relax\sphinxstyleindexentry{definition\sphinxhyphen{}0}\sphinxstyleindexextra{ch/precalculus/multivariable\sphinxhyphen{}real\sphinxhyphen{}fun}\sphinxstyleindexpageref{ch/precalculus/multivariable-real-fun:\detokenize{definition-0}}
+\indexspace
+\bigletter{definition\sphinxhyphen{}1}
+\item\relax\sphinxstyleindexentry{definition\sphinxhyphen{}1}\sphinxstyleindexextra{ch/series}\sphinxstyleindexpageref{ch/series:\detokenize{definition-1}}
 \indexspace
 \bigletter{definition\sphinxhyphen{}2}
 \item\relax\sphinxstyleindexentry{definition\sphinxhyphen{}2}\sphinxstyleindexextra{ch/multivariable\sphinxhyphen{}calculus/derivatives}\sphinxstyleindexpageref{ch/multivariable-calculus/derivatives:\detokenize{definition-2}}
@@ -13841,13 +13949,13 @@ RL: ottimizzazione/controllo
 \item\relax\sphinxstyleindexentry{definition\sphinxhyphen{}3}\sphinxstyleindexextra{ch/multivariable\sphinxhyphen{}calculus/derivatives}\sphinxstyleindexpageref{ch/multivariable-calculus/derivatives:\detokenize{definition-3}}
 \indexspace
 \bigletter{example\sphinxhyphen{}0}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}0}\sphinxstyleindexextra{ch/algebra/real\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/real-algebra:\detokenize{example-0}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}0}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/vector-calculus/integrals:\detokenize{example-0}}
 \indexspace
 \bigletter{example\sphinxhyphen{}1}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}1}\sphinxstyleindexextra{ch/algebra/real\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/real-algebra:\detokenize{example-1}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}1}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/vector-calculus/integrals:\detokenize{example-1}}
 \indexspace
 \bigletter{example\sphinxhyphen{}2}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}2}\sphinxstyleindexextra{ch/algebra/real\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/real-algebra:\detokenize{example-2}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}2}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/vector-calculus/integrals:\detokenize{example-2}}
 \indexspace
 \bigletter{example\sphinxhyphen{}3}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}3}\sphinxstyleindexextra{ch/algebra/real\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/real-algebra:\detokenize{example-3}}
@@ -13915,17 +14023,14 @@ RL: ottimizzazione/controllo
 \bigletter{set\sphinxhyphen{}fun\sphinxhyphen{}def}
 \item\relax\sphinxstyleindexentry{set\sphinxhyphen{}fun\sphinxhyphen{}def}\sphinxstyleindexextra{ch/set}\sphinxstyleindexpageref{ch/set:\detokenize{set-fun-def}}
 \indexspace
-\bigletter{theorem\sphinxhyphen{}0}
-\item\relax\sphinxstyleindexentry{theorem\sphinxhyphen{}0}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/vector-calculus/integrals:\detokenize{theorem-0}}
-\indexspace
-\bigletter{theorem\sphinxhyphen{}2}
-\item\relax\sphinxstyleindexentry{theorem\sphinxhyphen{}2}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/vector-calculus/integrals:\detokenize{theorem-2}}
-\indexspace
 \bigletter{theorem\sphinxhyphen{}3}
-\item\relax\sphinxstyleindexentry{theorem\sphinxhyphen{}3}\sphinxstyleindexextra{ch/multivariable\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/multivariable-calculus/integrals:\detokenize{theorem-3}}
+\item\relax\sphinxstyleindexentry{theorem\sphinxhyphen{}3}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/vector-calculus/integrals:\detokenize{theorem-3}}
 \indexspace
-\bigletter{theorem\sphinxhyphen{}5}
-\item\relax\sphinxstyleindexentry{theorem\sphinxhyphen{}5}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/vector-calculus/integrals:\detokenize{theorem-5}}
+\bigletter{theorem\sphinxhyphen{}6}
+\item\relax\sphinxstyleindexentry{theorem\sphinxhyphen{}6}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/vector-calculus/integrals:\detokenize{theorem-6}}
+\indexspace
+\bigletter{theorem\sphinxhyphen{}9}
+\item\relax\sphinxstyleindexentry{theorem\sphinxhyphen{}9}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/vector-calculus/integrals:\detokenize{theorem-9}}
 \indexspace
 \bigletter{thm\sphinxhyphen{}curl\sphinxhyphen{}1}
 \item\relax\sphinxstyleindexentry{thm\sphinxhyphen{}curl\sphinxhyphen{}1}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/vector-calculus/integrals:\detokenize{thm-curl-1}}
@@ -13941,6 +14046,9 @@ RL: ottimizzazione/controllo
 \indexspace
 \bigletter{thm\sphinxhyphen{}gradient\sphinxhyphen{}1}
 \item\relax\sphinxstyleindexentry{thm\sphinxhyphen{}gradient\sphinxhyphen{}1}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/vector-calculus/integrals:\detokenize{thm-gradient-1}}
+\indexspace
+\bigletter{thm\sphinxhyphen{}gradient\sphinxhyphen{}2}
+\item\relax\sphinxstyleindexentry{thm\sphinxhyphen{}gradient\sphinxhyphen{}2}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/vector-calculus/integrals:\detokenize{thm-gradient-2}}
 \indexspace
 \bigletter{thm:infinitesimal\sphinxhyphen{}calculus:continuous\sphinxhyphen{}fun:thms:comparison}
 \item\relax\sphinxstyleindexentry{thm:infinitesimal\sphinxhyphen{}calculus:continuous\sphinxhyphen{}fun:thms:comparison}\sphinxstyleindexextra{ch/infinitesimal\_calculus/analysis}\sphinxstyleindexpageref{ch/infinitesimal_calculus/analysis:\detokenize{thm:infinitesimal-calculus:continuous-fun:thms:comparison}}
