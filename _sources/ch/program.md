@@ -16,9 +16,28 @@ In particolare, le parti sulla geometria analitica, il precalcolo e il calcolo v
 
 (math-hs:intro:how-to)=
 ## Come usare questo materiale
+
+Gli obiettivi principali sono quelli di raggiungere la familiarità e la dimestichezza necessaria per essere operativi - anche se con qualche aiuto non si nega a nessuno - con gli strumenti di:
+
+- **algebra**, inclusa l'introduzione all'**algebra lineare** e **vettoriale in spazi Euclidei**
+- **geometria analitica**, come legame tra algebra e geometria: figure geometriche possono essere parametrizzate e rappresentate come equazioni che legano questi parametri; le incognite di un'equazione possono essere interpretati come **coordinate** utilizzate per descrivere figure geometriche; la geometria analitica in spazi di piccola dimensione - raffigurabili dalla mente umana - può risultare utile a dare un'interpretazione geometrica di risultati più astratti dell'algebra; l'algebra vettoriale in spazie Euclidei risulta uno strumento utile per un approccio maturo alla geomteria analitica - e spesso per evitare una manica di conti
+- **calcolo**: il calcolo è uno degli strumenti più potenti della matematica per lo studio di fenomeni che variano con continuità. Alcuni argomenti utili e propedeutici nello sviluppo del calcolo vengono presentati nel capitolo riservato al precalcolo e nelle prime sezioni dell'introduzione all'analisi. Al costo di rinunciare a qualche dettaglio e a un severo rigore, l'obiettivo è quello di introdurre l'analisi per funzioni a una variabile reale, utilizzando il concetto di limite per introdurre l'operazione di derivata e la sua operazione inversa di integrale, e prendere dimestichezza con questi grazie allo svolgimento di esercizi. Successivamente, si sente la necessità di introdurre le equazioni differenziali ordinarie (data la loro rilevanza in molti ambiti delle scienze), e il calcolo per funzioni multi-variabile e spazi euclidei (considerata la loro rilevanza nelle scienze, come in fisica, e in tutti gli ambiti in cui i fenomeni di interesse dipendono da più di una variabile - cioè quasi tutti, inclusi l'ottimizzazione, argomento che risulta fondamentale per le moderne applicazioni di approssimazione di dati, di controllo e di intelligenza artificiale).
+- **statistica** <span style="color:red">todo</span>
+
+Argomenti secondari, che non possono essere considerati obiettivi finali dello studio della matematica ma al massimo utili strumenti per raggiungere obiettivi superiori - per non esagerare dicendo che costituiscono un livello minimo di decenza - sono:
+- algebra sui numeri reali e la soluzioni di problemi algebrici di una o più variabili, che coinvolgono equazioni e/o disequazioni
+- gli argomenti raccolti nel precalcolo che includono:
+  - le funzioni trigonometriche, presentate a partire dalla geometria della circonferenza
+  - la funzione esponenziale, protagonista fondamentale del calcolo - uno dei nostri obiettivi principali, forse il principale -, e la sua funzione inversa, il logaritmo; l'esponenziale viene introdotto come serie di funzioni;
+  - considerando un bilancio difficoltà/utilità pratica per i nostri obiettivi, l'argomento serie non verrà trattato in dettaglio - o se verrà trattato potrebbe essere un argomento di cui prendere le briciole necessarie
+  - l'algebra sui numeri complessi, che risulta utile nella trattazione delle equazioni differenziali ordinarie e che fornisce un legame tra la funzione esponenziale e le funzioni trigonometriche.
+
+
+<!--
 L'obiettivo principale è l'acquisizione di familiarità e dimestichezza con gli argomenti di:
 - calcolo
 - statistica
+-->
 
 <!--
 Per raggiungere gli obiettivi...
