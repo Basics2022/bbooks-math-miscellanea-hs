@@ -17,7 +17,7 @@ In particolare, le parti sulla geometria analitica, il precalcolo e il calcolo v
 (math-hs:intro:how-to)=
 ## Come usare questo materiale
 
-Gli obiettivi principali sono quelli di raggiungere la familiarità e la dimestichezza necessaria per essere operativi - anche se con qualche aiuto non si nega a nessuno - con gli strumenti di:
+A cominciare dalla [prima pagina](book:math-hs-miscellanea) di questo materiale, è bene chiarire quali sono gli obiettivi principali. Gli obiettivi principali sono quelli di raggiungere la familiarità e la dimestichezza necessaria per essere operativi - anche se con qualche aiuto non si nega a nessuno - con gli strumenti di:
 
 - **algebra**, inclusa l'introduzione all'**algebra lineare** e **vettoriale in spazi Euclidei**
 - **geometria analitica**, come legame tra algebra e geometria: figure geometriche possono essere parametrizzate e rappresentate come equazioni che legano questi parametri; le incognite di un'equazione possono essere interpretati come **coordinate** utilizzate per descrivere figure geometriche; la geometria analitica in spazi di piccola dimensione - raffigurabili dalla mente umana - può risultare utile a dare un'interpretazione geometrica di risultati più astratti dell'algebra; l'algebra vettoriale in spazie Euclidei risulta uno strumento utile per un approccio maturo alla geomteria analitica - e spesso per evitare una manica di conti
