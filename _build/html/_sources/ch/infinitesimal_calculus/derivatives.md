@@ -14,6 +14,15 @@ $$f'(x) = \dfrac{d f}{d x}(x) := \lim_{a \rightarrow 0} \dfrac{f(x+a)-f(x)}{a} \
 
 **todo** *In generale, la derivata di una funzione reale è un'altra funzione reale.*
 
+(infinitesimal-calculus:derivatives:geom)=
+## Significato geometrico
+Il valore della derivata di una funzione $f(x)$ in un punto $x$ corrisponde al coefficiente angolare della retta tangente alla curva che rappresenta piano cartesiano il [grafico della funzione](math-hs:precalculus:real-functions:inverse:plot) $y=f(x)$ nel punto di coordinate $(x,f(x))$.
+
+```{list-table}
+:header-rows: 0
+* - ![](../../media/derivative-geom.png)
+```
+
 (infinitesimal-calculus:derivatives:rules)=
 ## Regole di derivazione
 
@@ -121,6 +130,12 @@ $$ \dfrac{d f^{-1}}{d y}\bigg|_{y = f(x)} = \dfrac{1}{ \dfrac{d y}{d x}\bigg|_{x
 
 Data la funzione $f: (a,b) \rightarrow \mathbb{R}$ derivabile nel punto di estremo locale $x_0 \in (a,b)$, allora $f'(x_0) = 0$.
 ```
+
+```{list-table}
+:header-rows: 0
+* - ![](../../media/derivative-fermat.png)
+```
+
 ```{only} latex
 [Dimostrazione a fine capitolo](infinitesimal-calculus:derivatives:thm:fermat:notes).
 ```
@@ -147,6 +162,8 @@ e da queste la dimostrazione della tesi del problema, $f'(x_0)$.
 ```
 ````
 
+
+
 <!-- **todo** why was this block here? Was it a test? What are the drawbacks of {dropdown}? Maybe something with .pdf build?
 ```{toggle} Dim.
 :show:
@@ -161,6 +178,14 @@ La dimostrazione del teorema di Fermat...
 
 Data la funzione $f: [a,b] \rightarrow \mathbb{R}$ continua e derivabile in ogni punto dell'intervallo $(a,b)$ con $f(a) = f(b)$, allora esiste un valore $c \in (a,b)$ in cui $f'(c) = 0$.
 ```
+
+```{list-table}
+:header-rows: 0
+* - ![](../../media/derivative-rolle-max.png)
+  - ![](../../media/derivative-rolle-min.png)
+  - ![](../../media/derivative-rolle-const.png)
+```
+
 ````{only} latex
 [Dimostrazione a fine capitolo](infinitesimal-calculus:derivatives:thm:rolle:notes).
 ````
@@ -207,6 +232,12 @@ Data la funzione $f, g: [a,b] \rightarrow \mathbb{R}$ continua in $[a,b]$ e deri
 $$f(b) - f(a) = (b -  a) f'(c) \ .$$
 
 ```
+
+```{list-table}
+:header-rows: 0
+* - ![](../../media/derivative-lagrange.png)
+```
+
 ```{dropdown} Dimostrazione
 Si applica il [teorema di Cauhcy](infinitesimal-calculus:derivatives:thm:lagrange) scegliendo la funzione $g(x) = x$.
 ```
