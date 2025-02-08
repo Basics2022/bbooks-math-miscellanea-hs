@@ -65,6 +65,9 @@ $$\int_{x=a}^{b} f(x) dx = - \int_{x=b}^{a} f(x) \, dx$$ (infinitesimal-calculus
 ```{list-table}
 :header-rows: 0
 * - ![](../../media/integral-union.png)
+  - ![](../../media/integral-union.png)
+* - ![](../../media/integral-abs.png)
+  - ![](../../media/integral-reverse.png)
 ```
 
 (infinitesimal-calculus:integrals:def:indefinite)=
