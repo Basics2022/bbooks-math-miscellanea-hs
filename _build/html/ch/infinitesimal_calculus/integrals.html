@@ -593,10 +593,15 @@ document.write(`
 <span class="eqno">(25.6)<a class="headerlink" href="#equation-infinitesimal-calculus-integrals-prop-swap" title="Permalink a questa equazione">#</a></span>\[\int_{x=a}^{b} f(x) dx = - \int_{x=b}^{a} f(x) \, dx\]</div>
 <table class="table">
 <colgroup>
-<col style="width: 100%" />
+<col style="width: 50%" />
+<col style="width: 50%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p><img alt="" src="../../_images/integral-union.png" /></p></td>
+<td><p><img alt="" src="../../_images/integral-union.png" /></p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="" src="../../_images/integral-abs.png" /></p></td>
+<td><p><img alt="" src="../../_images/integral-reverse.png" /></p></td>
 </tr>
 </tbody>
 </table>
@@ -724,18 +729,19 @@ Dimostrazione<div class="sd-summary-down docutils">
 </div>
 <div class="section" id="integrali-fondamentali">
 <span id="infinitesimal-calculus-integrals-fund"></span><h2><span class="section-number">25.3. </span>Integrali fondamentali<a class="headerlink" href="#integrali-fondamentali" title="Permalink to this heading">#</a></h2>
-<p>Una volta dimostrato il <a class="reference internal" href="#infinitesimal-calculus-integrals-thm-fund"><span class="std std-ref">teorema fondamentale del calcolo infinitesimale</span></a>, questo risultato può essere usato per valutare gli integrali fondamentali come l’operazione inversa alla derivazione applicata alle <a class="reference internal" href="#infinitesimal-calculus-integrals-fund"><span class="std std-ref">derivate fondamentali</span></a></p>
+<p>Una volta dimostrato il <a class="reference internal" href="#infinitesimal-calculus-integrals-thm-fund"><span class="std std-ref">teorema fondamentale del calcolo infinitesimale</span></a>, questo risultato può essere usato per valutare gli integrali fondamentali come l’operazione inversa alla derivazione applicata alle <a class="reference internal" href="derivatives.html#infinitesimal-calculus-derivatives-fund"><span class="std std-ref">derivate fondamentali</span></a></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
- \int x^n         \ dx &amp; = \frac{1}{n} x^{n+1} + C  \qquad (n \neq 0, \ n \neq -1) \\ 
- \int e^x         \ dx &amp; = e^x                 + C \\ 
- \int \frac{1}{x} \ dx &amp; = \ln x               + C \\ 
- \int \cos x      \ dx &amp; = \sin x              + C \\ 
- \int \sin x      \ dx &amp; =-\cos x              + C    
+ \int x^n         \ dx &amp; = \frac{1}{n+1} x^{n+1} + C  \qquad (\text{if } n \neq -1) \\ 
+ \int e^x         \ dx &amp; = e^x                   + C \\ 
+ \int \frac{1}{x} \ dx &amp; = \ln x                 + C \\ 
+ \int \cos x      \ dx &amp; = \sin x                + C \\ 
+ \int \sin x      \ dx &amp; =-\cos x                + C    
 \end{aligned}\end{split}\]</div>
+<p>Per un’ulteriore lista si rimanda alla <a class="reference internal" href="integrals-table.html#infinitesimal-calculus-integrals-table"><span class="std std-ref">tabella a fine sezione</span></a>.</p>
 </div>
 <div class="section" id="regole-di-integrazione">
-<h2><span class="section-number">25.4. </span>Regole di integrazione<a class="headerlink" href="#regole-di-integrazione" title="Permalink to this heading">#</a></h2>
+<span id="infinitesimal-calculus-integrals-rules"></span><h2><span class="section-number">25.4. </span>Regole di integrazione<a class="headerlink" href="#regole-di-integrazione" title="Permalink to this heading">#</a></h2>
 <div class="section" id="integrazione-per-parti">
 <span id="infinitesimal-calculus-integrals-by-parts"></span><h3><span class="section-number">25.4.1. </span>Integrazione per parti<a class="headerlink" href="#integrazione-per-parti" title="Permalink to this heading">#</a></h3>
 <p>La regola di integrazione per parti viene ottenuta integrando la regola di derivazione del prodotto <a class="reference internal" href="derivatives.html#equation-infinitesimal-calculus-derivatives-rules-product">(24.4)</a>. Siano <span class="math notranslate nohighlight">\(F(x)\)</span>, <span class="math notranslate nohighlight">\(G(x)\)</span> le primitive delle funzioni <span class="math notranslate nohighlight">\(f(x)\)</span>, <span class="math notranslate nohighlight">\(g(x)\)</span>, e quindi vale <span class="math notranslate nohighlight">\(F'(x) = f(x)\)</span>, <span class="math notranslate nohighlight">\(G'(x) = g(x)\)</span>.
@@ -769,65 +775,217 @@ La regola di derivazione del prodotto <span class="math notranslate nohighlight"
 <p>Usando il <a class="reference internal" href="#infinitesimal-calculus-integrals-thm-fund"><span class="std std-ref">teorema del calcolo infinitesimale</span></a></p>
 <p><strong>todo…</strong></p>
 <p><strong>Sostituzioni utili.</strong></p>
-<ul>
-<li><p>funzioni trigonometriche <strong>todo</strong> <em>quando le funzioni iperboliche?</em></p>
+<p><strong>Funzioni trigonometriche e iperboliche.</strong></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
-    &amp; \sqrt{a^2 + x^2} \qquad \rightarrow \qquad x = a \tan \theta \\
-    &amp; \sqrt{a^2 - x^2} \qquad \rightarrow \qquad x = a \sin \theta \\
-    &amp; \sqrt{x^2 - a^2} \qquad \rightarrow \qquad x = a \sec \theta \\
-  \end{aligned}\end{split}\]</div>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-kebab-horizontal" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M6 12a2 2 0 11-4 0 2 2 0 014 0zm8 0a2 2 0 11-4 0 2 2 0 014 0zm6 2a2 2 0 100-4 2 2 0 000 4z"></path></svg><div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-</div>
-</details></li>
-<li><p>radici</p>
+  &amp; \sqrt{a^2 - x^2} &amp;&amp; \rightarrow &amp;&amp; x = a \sin  \theta \text{ or } x = a \cos \theta  \\
+  &amp; \sqrt{a^2 + x^2} &amp;&amp; \rightarrow &amp;&amp; x = a \sinh \theta \\
+  &amp; \sqrt{x^2 - a^2} &amp;&amp; \rightarrow &amp;&amp; x = a \cosh \theta \\
+\end{aligned}\end{split}\]</div>
+<div class="proof example dropdown admonition" id="example-5">
+<p class="admonition-title"><span class="caption-number">Example 25.1 </span> (<span class="math notranslate nohighlight">\(\displaystyle \int \sqrt{a^2 - x^2} \,  dx\)</span>)</p>
+<div class="example-content section" id="proof-content">
+<p>L’integrale</p>
+<div class="math notranslate nohighlight">
+\[\int \sqrt{a^2 - x^2} \,  dx\]</div>
+<p>ha senso per intervalli di integrazioni tali che <span class="math notranslate nohighlight">\(|x| \le |a|\)</span>. In questi casi, usando la sostituzione <span class="math notranslate nohighlight">\(x = a \, \sin \theta\)</span>, e il suo differenziale <span class="math notranslate nohighlight">\(dx = a \, \cos \theta \, d \theta\)</span>, si può riscrivere l’integrale come</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
-    &amp; \sqrt[n]{ax + b} \qquad \rightarrow \qquad ax + b = z^n \\
-    &amp; \sqrt{a + bx + x^2} \qquad \rightarrow \qquad a + bx + x^2 = ( z - x )^2 \\
-    &amp; \sqrt{a + bx - x^2} = \sqrt{(\alpha + x)(\beta - x)} \qquad \rightarrow \qquad a + bx - x^2 = ( \alpha + x )^2 z^2 \\
-  \end{aligned}\end{split}\]</div>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-kebab-horizontal" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M6 12a2 2 0 11-4 0 2 2 0 014 0zm8 0a2 2 0 11-4 0 2 2 0 014 0zm6 2a2 2 0 100-4 2 2 0 000 4z"></path></svg><div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
+  \int \sqrt{a^2 - x^2} \, dx
+   &amp; = a^2 \int \sqrt{1- \sin^2 \theta} \cos \theta \, d \theta = \\
+   &amp; = a^2 \int \cos^2 \theta \, d \theta = \\
+   &amp; = a^2 \int \frac{1}{2} \left[ 1 + \cos \left( 2 \theta \right) \right] \, d \theta = \\
+   &amp; = \frac{a^2}{2} \left[ \theta + \frac{1}{2} \sin \left( 2 \theta \right) \right] + C \ ,
+\end{aligned}\end{split}\]</div>
+<p>e riportandosi alla variabile originale <span class="math notranslate nohighlight">\(x\)</span> con la trasformazione inversa</p>
+<div class="math notranslate nohighlight">
+\[ \theta = \text{arcsin} \left(\frac{x}{a}\right) \]</div>
+<p>e usando la formula <span class="math notranslate nohighlight">\(\sin( 2 \theta ) = 2 \sin \theta \cos \theta = 2 \dfrac{x}{a} \sqrt{1 - \left( \frac{x}{a} \right)^2}\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\int \sqrt{a^2 - x^2} \, dx = \frac{a^2}{2} \left[ \text{arcsin}\left( \frac{x}{a} \right) + \frac{x}{a}\sqrt{1 - \left( \frac{x}{a} \right)^2 }\right] + C .\]</div>
 </div>
-</details></li>
-<li><p><span class="math notranslate nohighlight">\(z = \tan\left( \frac{x}{2} \right)\)</span>, quando compaiono funzioni trigonometriche per trasformare l’integranda in una funzione razionale.</p>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-kebab-horizontal" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M6 12a2 2 0 11-4 0 2 2 0 014 0zm8 0a2 2 0 11-4 0 2 2 0 014 0zm6 2a2 2 0 100-4 2 2 0 000 4z"></path></svg><div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Usando la definizione della tangente</p>
+</div><div class="proof example dropdown admonition" id="example-6">
+<p class="admonition-title"><span class="caption-number">Example 25.2 </span> (<span class="math notranslate nohighlight">\( \displaystyle \int \sqrt{a^2 + x^2} \,  dx\)</span>)</p>
+<div class="example-content section" id="proof-content">
+<p>L’integrale</p>
+<div class="math notranslate nohighlight">
+\[\int \sqrt{a^2 + x^2} \,  dx\]</div>
+<p>ha senso per ogni intervallo di numeri reali. Si può usare la sostituzione</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+   x &amp; = a \, \sinh \theta \\
+  dx &amp; = a \, \cosh \theta \, d \theta \\
+  \sqrt{a^2 + x^2} &amp; = a \sqrt{1 + \sinh^2 \theta} = a \cosh \theta
+\end{aligned}\end{split}\]</div>
+<p>per utilizzare le proprietà delle funzioni iperboliche e scrivere</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \int \sqrt{a^2 + x^2} \, dx
+   &amp; = a^2 \int \cosh^2 \theta \, d \theta = \\
+   &amp; = a^2 \int \left( \frac{e^\theta + e^{-\theta}}{2} \right)^2 \, d \theta = \\
+   &amp; = a^2 \int \frac{1}{4} \left( e^{2 \theta} + 2 + e^{-2 \theta} \right) \, d \theta = \\
+   &amp; = \frac{a^2}{4} \left( \frac{1}{2} e^{2 \theta} + 2 \theta - \frac{1}{2} e^{-2 \theta} \right) + C = \\
+   &amp; = \frac{a^2}{4} \left( 2 \theta + \frac{e^{2 \theta} - e^{-2 \theta}}{2} \right) + C = \\
+   &amp; = \frac{a^2}{4} \left[ 2 \theta + \sinh \left( 2 \theta \right) \right] + C \ .
+\end{aligned}\end{split}\]</div>
+<p>Si può tornare alla variabile indipendente di partenza <span class="math notranslate nohighlight">\(x\)</span> con la trasformazione inversa</p>
+<div class="math notranslate nohighlight">
+\[\frac{x}{a} = \sinh \theta = \frac{e^{\theta} - e^{-\theta}}{2}\]</div>
+<div class="math notranslate nohighlight">
+\[e^{2 \theta} - \frac{x}{a} e^{\theta} - 1 = 0\]</div>
+<div class="math notranslate nohighlight">
+\[e^{\theta} 
+  = \frac{x}{a} \pm \sqrt{\left( \frac{x}{a} \right)^2 + 1}
+  = \frac{x}{a}  +  \sqrt{\left( \frac{x}{a} \right)^2 + 1}
+\]</div>
+<div class="math notranslate nohighlight">
+\[\theta = \ln \left[ \frac{x}{a}  +  \sqrt{\left( \frac{x}{a} \right)^2 + 1} \right]\]</div>
+<div class="math notranslate nohighlight">
+\[\sinh (2 \theta) = 2 \sinh \theta \cosh \theta = 2 \frac{x}{a} \sqrt{1 + \left(\frac{x}{a}\right)^2}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \int \sqrt{a^2 + x^2} \, dx
+   &amp; = \frac{a^2}{4} \left[ 2 \theta + \sinh \left( 2 \theta \right) \right] + C \\
+   &amp; = \frac{a^2}{2} \left\{ \ln \left[ \frac{x}{a}  +  \sqrt{1 + \left( \frac{x}{a} \right)^2} \right] + \frac{x}{a} \sqrt{1 + \left(\frac{x}{a}\right)^2} \right\} + C
+\end{aligned}\end{split}\]</div>
+</div>
+</div><div class="proof example dropdown admonition" id="example-7">
+<p class="admonition-title"><span class="caption-number">Example 25.3 </span> (<span class="math notranslate nohighlight">\(\displaystyle \int \sqrt{x^2 - a^2} \,  dx\)</span>)</p>
+<div class="example-content section" id="proof-content">
+<p>L’integrale</p>
+<div class="math notranslate nohighlight">
+\[\int \sqrt{x^2 - a^2} \,  dx\]</div>
+<p>ha senso per intervalli di integrazioni tali che <span class="math notranslate nohighlight">\(|x| \ge |a|\)</span>. In questi casi, si può usare la sostituzione</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+   x &amp; = a \, \cosh \theta \\
+  dx &amp; = a \, \sinh \theta \, d \theta \\
+  \sqrt{x^2 - a^2} &amp; = a \sqrt{\cosh^2 \theta - 1} = a \sinh \theta
+\end{aligned}\end{split}\]</div>
+<p>per utilizzare le proprietà delle funzioni iperboliche e scrivere</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \int \sqrt{x^2 - a^2} \, dx
+   &amp; = a^2 \int \sinh^2 \theta \, d \theta = \\
+   &amp; = a^2 \int \left( \frac{e^\theta - e^{-\theta}}{2} \right)^2 \, d \theta = \\
+   &amp; = a^2 \int \frac{1}{4} \left( e^{2 \theta} - 2 + e^{-2 \theta} \right) \, d \theta = \\
+   &amp; = \frac{a^2}{4} \left( \frac{1}{2} e^{2 \theta} - 2 \theta - \frac{1}{2} e^{-2 \theta} \right) + C = \\
+   &amp; = \frac{a^2}{4} \left[ -2 \theta + \sinh \left( 2 \theta \right) \right] + C \ .
+\end{aligned}\end{split}\]</div>
+<p>Si può tornare alla variabile indipendente di partenza <span class="math notranslate nohighlight">\(x\)</span> con la trasformazione inversa</p>
+<div class="math notranslate nohighlight">
+\[\frac{x}{a} = \cosh \theta = \frac{e^{\theta} + e^{-\theta}}{2}\]</div>
+<div class="math notranslate nohighlight">
+\[e^{2 \theta} - \frac{x}{a} e^{\theta} + 1 = 0\]</div>
+<div class="math notranslate nohighlight">
+\[e^{\theta} 
+  = \frac{x}{a} \pm \sqrt{\left( \frac{x}{a} \right)^2 - 1}
+\]</div>
+<p><strong>Osservazione.</strong> Quale segno? Discussione… <strong>todo</strong></p>
+<div class="math notranslate nohighlight">
+\[\theta = \ln \left[ \frac{x}{a} \pm \sqrt{\left( \frac{x}{a} \right)^2 - 1} \right]\]</div>
+<div class="math notranslate nohighlight">
+\[\sinh (2 \theta) = 2 \sinh \theta \cosh \theta = 2 \, \sqrt{\left(\frac{x}{a}\right)^2 - 1} \, \frac{x}{a}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \int \sqrt{x^2 - a^2} \, dx
+   &amp; = \frac{a^2}{4} \left[ -2 \theta + \sinh \left( 2 \theta \right) \right] + C \\
+   &amp; = \frac{a^2}{2} \left\{ -\ln \left[ \frac{x}{a}  \pm  \sqrt{\left( \frac{x}{a} \right)^2 - 1} \right] + \frac{x}{a} \sqrt{ \left(\frac{x}{a}\right)^2 - 1} \right\} + C
+\end{aligned}\end{split}\]</div>
+</div>
+</div><div class="proof example dropdown admonition" id="example-8">
+<p class="admonition-title"><span class="caption-number">Example 25.4 </span> (<span class="math notranslate nohighlight">\(\displaystyle \int \frac{1}{\sqrt{a^2 - x^2}} \,  dx\)</span>)</p>
+<div class="example-content section" id="proof-content">
+</div>
+</div><div class="proof example dropdown admonition" id="example-9">
+<p class="admonition-title"><span class="caption-number">Example 25.5 </span> (<span class="math notranslate nohighlight">\(\displaystyle \int \frac{1}{\sqrt{a^2 + x^2}} \,  dx\)</span>)</p>
+<div class="example-content section" id="proof-content">
+</div>
+</div><div class="proof example dropdown admonition" id="example-10">
+<p class="admonition-title"><span class="caption-number">Example 25.6 </span> (<span class="math notranslate nohighlight">\(\displaystyle \int \frac{1}{\sqrt{x^2 - a^2}} \,  dx\)</span>)</p>
+<div class="example-content section" id="proof-content">
+</div>
+</div><p><strong>Radici.</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  &amp; \sqrt[n]{ax + b}                                     &amp;&amp; \rightarrow &amp;&amp; ax + b = z^n \\
+  &amp; \sqrt{a + bx + x^2}                                  &amp;&amp; \rightarrow &amp;&amp; a + bx + x^2 = ( z - x )^2 \\
+  &amp; \sqrt{a + bx - x^2} = \sqrt{(\alpha + x)(\beta - x)} &amp;&amp; \rightarrow &amp;&amp; a + bx - x^2 = ( \alpha + x )^2 z^2 \\
+\end{aligned}\end{split}\]</div>
+<div class="proof example dropdown admonition" id="example-11">
+<p class="admonition-title"><span class="caption-number">Example 25.7 </span> (<span class="math notranslate nohighlight">\(\displaystyle \int \sqrt[n]{ax+b} \, dx \)</span>)</p>
+<div class="example-content section" id="proof-content">
+<p><strong>Metodo 0.</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \int \sqrt[n]{ax+ b} \, dx
+ &amp; =  \int \left( ax+ b \right)^{\frac{1}{n}} \, dx = \\
+ &amp; = \frac{1}{a} \frac{1}{1+ \frac{1}{n}} (a x + b)^{\frac{1}{n}+1} + C \ .
+\end{aligned}\end{split}\]</div>
+<p><strong>Metodo 1.</strong> Con sostituzione</p>
+<div class="math notranslate nohighlight">
+\[a x + b = z^n\]</div>
+<div class="math notranslate nohighlight">
+\[a dx = n z^{n-1} dz\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \int \sqrt[n]{ax+b} \, dx
+  &amp; = \int z \, \frac{n}{a} z^{n-1} \, dz = \\
+  &amp; = \frac{1}{a} z^{n} + C = \\
+  &amp; = \frac{1}{a} \frac{n}{n+1} z^{n+1} + C = \\
+  &amp; = \frac{1}{a} \frac{n}{n+1} (ax+b)^{\frac{n+1}{n}} + C  \ .
+\end{aligned}\end{split}\]</div>
+</div>
+</div><div class="proof example dropdown admonition" id="example-12">
+<p class="admonition-title"><span class="caption-number">Example 25.8 </span> (<span class="math notranslate nohighlight">\(\displaystyle \int \sqrt{a + bx + x^2} \, dx \)</span>)</p>
+<div class="example-content section" id="proof-content">
+<p><strong>Metodo 0.</strong> Con completamento del quadrato</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \int \sqrt{a + bx + x^2} \, dx 
+  &amp; = \int \sqrt{ \left( x^2 + b x + \frac{b^2}{4} \right) + a - \frac{b^2}{4}} \, dx = \\
+  &amp; = \int \sqrt{ \left( x + \frac{b}{2} \right)^2 + a - \frac{b^2}{4}} \, dx \ .
+\end{aligned}\end{split}\]</div>
+<p>ci si può riportare agli integrali della forma <span class="math notranslate nohighlight">\(\displaystyle \int \sqrt{y^2 - A^2} \, dy\)</span> o <span class="math notranslate nohighlight">\(\displaystyle \int \sqrt{y^2 + A^2} \, dy\)</span> a seconda del valore di <span class="math notranslate nohighlight">\(a - \frac{b^2}{4}\)</span>, con <span class="math notranslate nohighlight">\(y = x+ \frac{b}{2}\)</span>.</p>
+<p><strong>Metodo 1.</strong> Con cambio di variabili</p>
+</div>
+</div><div class="proof example dropdown admonition" id="example-13">
+<p class="admonition-title"><span class="caption-number">Example 25.9 </span> (<span class="math notranslate nohighlight">\(\displaystyle \int \sqrt{a + bx - x^2} \, dx \)</span>)</p>
+<div class="example-content section" id="proof-content">
+<p><strong>Metodo 0.</strong> Con completamento del quadrato</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \int \sqrt{a + bx - x^2} \, dx 
+  &amp; = \int \sqrt{ \left( - x^2 + b x - \frac{b^2}{4} \right) + a + \frac{b^2}{4}} \, dx = \\
+  &amp; = \int \sqrt{-\left( x - \frac{b}{2} \right)^2 + a + \frac{b^2}{4}} \, dx \ .
+\end{aligned}\end{split}\]</div>
+<p>ci si può riportare agli integrali della forma <span class="math notranslate nohighlight">\(\displaystyle \int \sqrt{-y^2 + A^2} \, dy\)</span> con <span class="math notranslate nohighlight">\(y = x+ \frac{b}{2}\)</span>.</p>
+<p><strong>Osservazione.</strong> Nel caso in cui <span class="math notranslate nohighlight">\(a + \frac{b^2}{4}\)</span> sia negativo, allora non esiste alcun intervallo reale nel quale l’integranda sia definita, e di conseguenza l’integrale non ha senso.</p>
+<p><strong>Metodo 1.</strong> Con cambio di variabili</p>
+</div>
+</div><p><strong>Tangente <span class="math notranslate nohighlight">\(\frac{x}{2}\)</span></strong> La trasformazione di coordinate</p>
+<div class="math notranslate nohighlight">
+\[z = \tan\left( \frac{x}{2} \right) \ ,\]</div>
+<p>risulta utile a trasformare un’integranda dove compaiono funzioni trigonometriche in un’integranda razionale.</p>
+<div class="proof example admonition" id="example-14">
+<p class="admonition-title"><span class="caption-number">Example 25.10 </span> (Razionalizzazione con cambio di variabili <span class="math notranslate nohighlight">\(z = \tan\left( \frac{x}{2} \right)\)</span>.)</p>
+<div class="example-content section" id="proof-content">
+<p>Usando la definizione della tangente</p>
 <div class="math notranslate nohighlight">
 \[z = \tan \left(\frac{x}{2}\right) = \frac{\sin \left(\frac{x}{2}\right)}{\cos \left(\frac{x}{2}\right)}\]</div>
-<p class="sd-card-text">si può riscrivere la relazione fondamentale della trigonometria</p>
+<p>si può riscrivere la relazione fondamentale della trigonometria</p>
 <div class="math notranslate nohighlight">
 \[1 = \cos^2 \frac{x}{2} + \sin^2 \frac{x}{2} = (1 + z^2) \cos^2 \frac{x}{2}\ .\]</div>
-<p class="sd-card-text">Usando le regole per valutare le funzioni trigonometriche di una somma, si può riscrivere <span class="math notranslate nohighlight">\(\cos x\)</span> in termini di <span class="math notranslate nohighlight">\(z\)</span></p>
+<p>Usando le regole per valutare le funzioni trigonometriche di una somma, si può riscrivere <span class="math notranslate nohighlight">\(\cos x\)</span> in termini di <span class="math notranslate nohighlight">\(z\)</span></p>
 <div class="math notranslate nohighlight">
 \[\cos x = \cos \left( \frac{x}{2} + \frac{x}{2} \right) = 2 \cos^2 \frac{x}{2} - 1 = 2 \frac{1}{1+z^2} - 1 = \frac{1-z^2}{1+z^2} \ ,\]</div>
-<p class="sd-card-text">e <strong>todo</strong> …</p>
+<p>e (usando la relazione fondamentale della trignometria <span class="math notranslate nohighlight">\(\sin^2 x + \cos^2 x = 1\)</span>, e la definizione di tangente),</p>
 <div class="math notranslate nohighlight">
 \[\sin x = \frac{2 z}{1 + z^2}\]</div>
 <div class="math notranslate nohighlight">
 \[\tan x = \frac{2 z}{1 - z^2}\]</div>
 </div>
-</details></li>
-</ul>
-</div>
+</div></div>
 </div>
 <div class="toctree-wrapper compound">
 </div>

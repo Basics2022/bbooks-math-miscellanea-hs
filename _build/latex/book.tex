@@ -11676,11 +11676,21 @@ scambio degli estremi di integrazione
 
 \begin{savenotes}\sphinxattablestart
 \centering
-\begin{tabulary}{\linewidth}[t]{|T|}
+\begin{tabulary}{\linewidth}[t]{|T|T|}
 \hline
 
 \sphinxAtStartPar
 \sphinxincludegraphics{{integral-union}.png}
+&
+\sphinxAtStartPar
+\sphinxincludegraphics{{integral-union}.png}
+\\
+\hline
+\sphinxAtStartPar
+\sphinxincludegraphics{{integral-abs}.png}
+&
+\sphinxAtStartPar
+\sphinxincludegraphics{{integral-reverse}.png}
 \\
 \hline
 \end{tabulary}
@@ -11814,19 +11824,22 @@ Sia \(x \in D\), e gli estremi di integrazione \(a(x)\), \(b(x)\) \sphinxstylest
 \section{Integrali fondamentali}
 \label{\detokenize{ch/infinitesimal_calculus/integrals:integrali-fondamentali}}\label{\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-fund}}
 \sphinxAtStartPar
-Una volta dimostrato il {\hyperref[\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-thm-fund}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema fondamentale del calcolo infinitesimale}}}}, questo risultato può essere usato per valutare gli integrali fondamentali come l’operazione inversa alla derivazione applicata alle {\hyperref[\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-fund}]{\sphinxcrossref{\DUrole{std,std-ref}{derivate fondamentali}}}}
+Una volta dimostrato il {\hyperref[\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-thm-fund}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema fondamentale del calcolo infinitesimale}}}}, questo risultato può essere usato per valutare gli integrali fondamentali come l’operazione inversa alla derivazione applicata alle {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-fund}]{\sphinxcrossref{\DUrole{std,std-ref}{derivate fondamentali}}}}
 \begin{equation*}
 \begin{split}\begin{aligned}
- \int x^n         \ dx & = \frac{1}{n} x^{n+1} + C  \qquad (n \neq 0, \ n \neq -1) \\ 
- \int e^x         \ dx & = e^x                 + C \\ 
- \int \frac{1}{x} \ dx & = \ln x               + C \\ 
- \int \cos x      \ dx & = \sin x              + C \\ 
- \int \sin x      \ dx & =-\cos x              + C    
+ \int x^n         \ dx & = \frac{1}{n+1} x^{n+1} + C  \qquad (\text{if } n \neq -1) \\ 
+ \int e^x         \ dx & = e^x                   + C \\ 
+ \int \frac{1}{x} \ dx & = \ln x                 + C \\ 
+ \int \cos x      \ dx & = \sin x                + C \\ 
+ \int \sin x      \ dx & =-\cos x                + C    
 \end{aligned}\end{split}
 \end{equation*}
+\sphinxAtStartPar
+Per un’ulteriore lista si rimanda alla {\hyperref[\detokenize{ch/infinitesimal_calculus/integrals-table:infinitesimal-calculus-integrals-table}]{\sphinxcrossref{\DUrole{std,std-ref}{tabella a fine sezione}}}}.
+
 
 \section{Regole di integrazione}
-\label{\detokenize{ch/infinitesimal_calculus/integrals:regole-di-integrazione}}
+\label{\detokenize{ch/infinitesimal_calculus/integrals:regole-di-integrazione}}\label{\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-rules}}
 
 \subsection{Integrazione per parti}
 \label{\detokenize{ch/infinitesimal_calculus/integrals:integrazione-per-parti}}\label{\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-by-parts}}
@@ -11876,30 +11889,263 @@ Usando il {\hyperref[\detokenize{ch/infinitesimal_calculus/integrals:infinitesim
 
 \sphinxAtStartPar
 \sphinxstylestrong{Sostituzioni utili.}
-\begin{itemize}
-\item {} 
+
 \sphinxAtStartPar
-funzioni trigonometriche \sphinxstylestrong{todo} \sphinxstyleemphasis{quando le funzioni iperboliche?}
+\sphinxstylestrong{Funzioni trigonometriche e iperboliche.}
 \begin{equation*}
 \begin{split}\begin{aligned}
-    & \sqrt{a^2 + x^2} \qquad \rightarrow \qquad x = a \tan \theta \\
-    & \sqrt{a^2 - x^2} \qquad \rightarrow \qquad x = a \sin \theta \\
-    & \sqrt{x^2 - a^2} \qquad \rightarrow \qquad x = a \sec \theta \\
-  \end{aligned}\end{split}
-\end{equation*}
-\item {} 
+  & \sqrt{a^2 - x^2} && \rightarrow && x = a \sin  \theta \text{ or } x = a \cos \theta  \\
+  & \sqrt{a^2 + x^2} && \rightarrow && x = a \sinh \theta \\
+  & \sqrt{x^2 - a^2} && \rightarrow && x = a \cosh \theta \\
+\end{aligned}\end{split}
+\end{equation*}\label{ch/infinitesimal_calculus/integrals:example-5}
+\begin{sphinxadmonition}{note}{Example 25.4.1 (\protect\(\displaystyle \int \sqrt{a^2 - x^2} \,  dx\protect\))}
+
+
+
 \sphinxAtStartPar
-radici
+L’integrale
+\begin{equation*}
+\begin{split}\int \sqrt{a^2 - x^2} \,  dx\end{split}
+\end{equation*}
+\sphinxAtStartPar
+ha senso per intervalli di integrazioni tali che \(|x| \le |a|\). In questi casi, usando la sostituzione \(x = a \, \sin \theta\), e il suo differenziale \(dx = a \, \cos \theta \, d \theta\), si può riscrivere l’integrale come
 \begin{equation*}
 \begin{split}\begin{aligned}
-    & \sqrt[n]{ax + b} \qquad \rightarrow \qquad ax + b = z^n \\
-    & \sqrt{a + bx + x^2} \qquad \rightarrow \qquad a + bx + x^2 = ( z - x )^2 \\
-    & \sqrt{a + bx - x^2} = \sqrt{(\alpha + x)(\beta - x)} \qquad \rightarrow \qquad a + bx - x^2 = ( \alpha + x )^2 z^2 \\
-  \end{aligned}\end{split}
+  \int \sqrt{a^2 - x^2} \, dx
+   & = a^2 \int \sqrt{1- \sin^2 \theta} \cos \theta \, d \theta = \\
+   & = a^2 \int \cos^2 \theta \, d \theta = \\
+   & = a^2 \int \frac{1}{2} \left[ 1 + \cos \left( 2 \theta \right) \right] \, d \theta = \\
+   & = \frac{a^2}{2} \left[ \theta + \frac{1}{2} \sin \left( 2 \theta \right) \right] + C \ ,
+\end{aligned}\end{split}
 \end{equation*}
-\item {} 
 \sphinxAtStartPar
-\(z = \tan\left( \frac{x}{2} \right)\), quando compaiono funzioni trigonometriche per trasformare l’integranda in una funzione razionale.
+e riportandosi alla variabile originale \(x\) con la trasformazione inversa
+\begin{equation*}
+\begin{split} \theta = \text{arcsin} \left(\frac{x}{a}\right) \end{split}
+\end{equation*}
+\sphinxAtStartPar
+e usando la formula \(\sin( 2 \theta ) = 2 \sin \theta \cos \theta = 2 \dfrac{x}{a} \sqrt{1 - \left( \frac{x}{a} \right)^2}\),
+\begin{equation*}
+\begin{split}\int \sqrt{a^2 - x^2} \, dx = \frac{a^2}{2} \left[ \text{arcsin}\left( \frac{x}{a} \right) + \frac{x}{a}\sqrt{1 - \left( \frac{x}{a} \right)^2 }\right] + C .\end{split}
+\end{equation*}\end{sphinxadmonition}
+\label{ch/infinitesimal_calculus/integrals:example-6}
+\begin{sphinxadmonition}{note}{Example 25.4.2 (\protect\( \displaystyle \int \sqrt{a^2 + x^2} \,  dx\protect\))}
+
+
+
+\sphinxAtStartPar
+L’integrale
+\begin{equation*}
+\begin{split}\int \sqrt{a^2 + x^2} \,  dx\end{split}
+\end{equation*}
+\sphinxAtStartPar
+ha senso per ogni intervallo di numeri reali. Si può usare la sostituzione
+\begin{equation*}
+\begin{split}\begin{aligned}
+   x & = a \, \sinh \theta \\
+  dx & = a \, \cosh \theta \, d \theta \\
+  \sqrt{a^2 + x^2} & = a \sqrt{1 + \sinh^2 \theta} = a \cosh \theta
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+per utilizzare le proprietà delle funzioni iperboliche e scrivere
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \int \sqrt{a^2 + x^2} \, dx
+   & = a^2 \int \cosh^2 \theta \, d \theta = \\
+   & = a^2 \int \left( \frac{e^\theta + e^{-\theta}}{2} \right)^2 \, d \theta = \\
+   & = a^2 \int \frac{1}{4} \left( e^{2 \theta} + 2 + e^{-2 \theta} \right) \, d \theta = \\
+   & = \frac{a^2}{4} \left( \frac{1}{2} e^{2 \theta} + 2 \theta - \frac{1}{2} e^{-2 \theta} \right) + C = \\
+   & = \frac{a^2}{4} \left( 2 \theta + \frac{e^{2 \theta} - e^{-2 \theta}}{2} \right) + C = \\
+   & = \frac{a^2}{4} \left[ 2 \theta + \sinh \left( 2 \theta \right) \right] + C \ .
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Si può tornare alla variabile indipendente di partenza \(x\) con la trasformazione inversa
+\begin{equation*}
+\begin{split}\frac{x}{a} = \sinh \theta = \frac{e^{\theta} - e^{-\theta}}{2}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}e^{2 \theta} - \frac{x}{a} e^{\theta} - 1 = 0\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}e^{\theta} 
+  = \frac{x}{a} \pm \sqrt{\left( \frac{x}{a} \right)^2 + 1}
+  = \frac{x}{a}  +  \sqrt{\left( \frac{x}{a} \right)^2 + 1}
+\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\theta = \ln \left[ \frac{x}{a}  +  \sqrt{\left( \frac{x}{a} \right)^2 + 1} \right]\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\sinh (2 \theta) = 2 \sinh \theta \cosh \theta = 2 \frac{x}{a} \sqrt{1 + \left(\frac{x}{a}\right)^2}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\begin{aligned}
+  \int \sqrt{a^2 + x^2} \, dx
+   & = \frac{a^2}{4} \left[ 2 \theta + \sinh \left( 2 \theta \right) \right] + C \\
+   & = \frac{a^2}{2} \left\{ \ln \left[ \frac{x}{a}  +  \sqrt{1 + \left( \frac{x}{a} \right)^2} \right] + \frac{x}{a} \sqrt{1 + \left(\frac{x}{a}\right)^2} \right\} + C
+\end{aligned}\end{split}
+\end{equation*}\end{sphinxadmonition}
+\label{ch/infinitesimal_calculus/integrals:example-7}
+\begin{sphinxadmonition}{note}{Example 25.4.3 (\protect\(\displaystyle \int \sqrt{x^2 - a^2} \,  dx\protect\))}
+
+
+
+\sphinxAtStartPar
+L’integrale
+\begin{equation*}
+\begin{split}\int \sqrt{x^2 - a^2} \,  dx\end{split}
+\end{equation*}
+\sphinxAtStartPar
+ha senso per intervalli di integrazioni tali che \(|x| \ge |a|\). In questi casi, si può usare la sostituzione
+\begin{equation*}
+\begin{split}\begin{aligned}
+   x & = a \, \cosh \theta \\
+  dx & = a \, \sinh \theta \, d \theta \\
+  \sqrt{x^2 - a^2} & = a \sqrt{\cosh^2 \theta - 1} = a \sinh \theta
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+per utilizzare le proprietà delle funzioni iperboliche e scrivere
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \int \sqrt{x^2 - a^2} \, dx
+   & = a^2 \int \sinh^2 \theta \, d \theta = \\
+   & = a^2 \int \left( \frac{e^\theta - e^{-\theta}}{2} \right)^2 \, d \theta = \\
+   & = a^2 \int \frac{1}{4} \left( e^{2 \theta} - 2 + e^{-2 \theta} \right) \, d \theta = \\
+   & = \frac{a^2}{4} \left( \frac{1}{2} e^{2 \theta} - 2 \theta - \frac{1}{2} e^{-2 \theta} \right) + C = \\
+   & = \frac{a^2}{4} \left[ -2 \theta + \sinh \left( 2 \theta \right) \right] + C \ .
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Si può tornare alla variabile indipendente di partenza \(x\) con la trasformazione inversa
+\begin{equation*}
+\begin{split}\frac{x}{a} = \cosh \theta = \frac{e^{\theta} + e^{-\theta}}{2}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}e^{2 \theta} - \frac{x}{a} e^{\theta} + 1 = 0\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}e^{\theta} 
+  = \frac{x}{a} \pm \sqrt{\left( \frac{x}{a} \right)^2 - 1}
+\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{Osservazione.} Quale segno? Discussione… \sphinxstylestrong{todo}
+\begin{equation*}
+\begin{split}\theta = \ln \left[ \frac{x}{a} \pm \sqrt{\left( \frac{x}{a} \right)^2 - 1} \right]\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\sinh (2 \theta) = 2 \sinh \theta \cosh \theta = 2 \, \sqrt{\left(\frac{x}{a}\right)^2 - 1} \, \frac{x}{a}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\begin{aligned}
+  \int \sqrt{x^2 - a^2} \, dx
+   & = \frac{a^2}{4} \left[ -2 \theta + \sinh \left( 2 \theta \right) \right] + C \\
+   & = \frac{a^2}{2} \left\{ -\ln \left[ \frac{x}{a}  \pm  \sqrt{\left( \frac{x}{a} \right)^2 - 1} \right] + \frac{x}{a} \sqrt{ \left(\frac{x}{a}\right)^2 - 1} \right\} + C
+\end{aligned}\end{split}
+\end{equation*}\end{sphinxadmonition}
+\label{ch/infinitesimal_calculus/integrals:example-8}
+\begin{sphinxadmonition}{note}{Example 25.4.4 (\protect\(\displaystyle \int \frac{1}{\sqrt{a^2 - x^2}} \,  dx\protect\))}
+
+
+\end{sphinxadmonition}
+\label{ch/infinitesimal_calculus/integrals:example-9}
+\begin{sphinxadmonition}{note}{Example 25.4.5 (\protect\(\displaystyle \int \frac{1}{\sqrt{a^2 + x^2}} \,  dx\protect\))}
+
+
+\end{sphinxadmonition}
+\label{ch/infinitesimal_calculus/integrals:example-10}
+\begin{sphinxadmonition}{note}{Example 25.4.6 (\protect\(\displaystyle \int \frac{1}{\sqrt{x^2 - a^2}} \,  dx\protect\))}
+
+
+\end{sphinxadmonition}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Radici.}
+\begin{equation*}
+\begin{split}\begin{aligned}
+  & \sqrt[n]{ax + b}                                     && \rightarrow && ax + b = z^n \\
+  & \sqrt{a + bx + x^2}                                  && \rightarrow && a + bx + x^2 = ( z - x )^2 \\
+  & \sqrt{a + bx - x^2} = \sqrt{(\alpha + x)(\beta - x)} && \rightarrow && a + bx - x^2 = ( \alpha + x )^2 z^2 \\
+\end{aligned}\end{split}
+\end{equation*}\label{ch/infinitesimal_calculus/integrals:example-11}
+\begin{sphinxadmonition}{note}{Example 25.4.7 (\protect\(\displaystyle \int \sqrt[n]{ax+b} \, dx \protect\))}
+
+
+
+\sphinxAtStartPar
+\sphinxstylestrong{Metodo 0.}
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \int \sqrt[n]{ax+ b} \, dx
+ & =  \int \left( ax+ b \right)^{\frac{1}{n}} \, dx = \\
+ & = \frac{1}{a} \frac{1}{1+ \frac{1}{n}} (a x + b)^{\frac{1}{n}+1} + C \ .
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{Metodo 1.} Con sostituzione
+\begin{equation*}
+\begin{split}a x + b = z^n\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}a dx = n z^{n-1} dz\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\begin{aligned}
+  \int \sqrt[n]{ax+b} \, dx
+  & = \int z \, \frac{n}{a} z^{n-1} \, dz = \\
+  & = \frac{1}{a} z^{n} + C = \\
+  & = \frac{1}{a} \frac{n}{n+1} z^{n+1} + C = \\
+  & = \frac{1}{a} \frac{n}{n+1} (ax+b)^{\frac{n+1}{n}} + C  \ .
+\end{aligned}\end{split}
+\end{equation*}\end{sphinxadmonition}
+\label{ch/infinitesimal_calculus/integrals:example-12}
+\begin{sphinxadmonition}{note}{Example 25.4.8 (\protect\(\displaystyle \int \sqrt{a + bx + x^2} \, dx \protect\))}
+
+
+
+\sphinxAtStartPar
+\sphinxstylestrong{Metodo 0.} Con completamento del quadrato
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \int \sqrt{a + bx + x^2} \, dx 
+  & = \int \sqrt{ \left( x^2 + b x + \frac{b^2}{4} \right) + a - \frac{b^2}{4}} \, dx = \\
+  & = \int \sqrt{ \left( x + \frac{b}{2} \right)^2 + a - \frac{b^2}{4}} \, dx \ .
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+ci si può riportare agli integrali della forma \(\displaystyle \int \sqrt{y^2 - A^2} \, dy\) o \(\displaystyle \int \sqrt{y^2 + A^2} \, dy\) a seconda del valore di \(a - \frac{b^2}{4}\), con \(y = x+ \frac{b}{2}\).
+
+\sphinxAtStartPar
+\sphinxstylestrong{Metodo 1.} Con cambio di variabili
+\end{sphinxadmonition}
+\label{ch/infinitesimal_calculus/integrals:example-13}
+\begin{sphinxadmonition}{note}{Example 25.4.9 (\protect\(\displaystyle \int \sqrt{a + bx - x^2} \, dx \protect\))}
+
+
+
+\sphinxAtStartPar
+\sphinxstylestrong{Metodo 0.} Con completamento del quadrato
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \int \sqrt{a + bx - x^2} \, dx 
+  & = \int \sqrt{ \left( - x^2 + b x - \frac{b^2}{4} \right) + a + \frac{b^2}{4}} \, dx = \\
+  & = \int \sqrt{-\left( x - \frac{b}{2} \right)^2 + a + \frac{b^2}{4}} \, dx \ .
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+ci si può riportare agli integrali della forma \(\displaystyle \int \sqrt{-y^2 + A^2} \, dy\) con \(y = x+ \frac{b}{2}\).
+
+\sphinxAtStartPar
+\sphinxstylestrong{Osservazione.} Nel caso in cui \(a + \frac{b^2}{4}\) sia negativo, allora non esiste alcun intervallo reale nel quale l’integranda sia definita, e di conseguenza l’integrale non ha senso.
+
+\sphinxAtStartPar
+\sphinxstylestrong{Metodo 1.} Con cambio di variabili
+\end{sphinxadmonition}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Tangente \(\frac{x}{2}\)} La trasformazione di coordinate
+\begin{equation*}
+\begin{split}z = \tan\left( \frac{x}{2} \right) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+risulta utile a trasformare un’integranda dove compaiono funzioni trigonometriche in un’integranda razionale.
+\label{ch/infinitesimal_calculus/integrals:example-14}
+\begin{sphinxadmonition}{note}{Example 25.4.10 (Razionalizzazione con cambio di variabili \protect\(z = \tan\left( \frac{x}{2} \right)\protect\).)}
+
+
 
 \sphinxAtStartPar
 Usando la definizione della tangente
@@ -11917,13 +12163,12 @@ Usando le regole per valutare le funzioni trigonometriche di una somma, si può 
 \begin{split}\cos x = \cos \left( \frac{x}{2} + \frac{x}{2} \right) = 2 \cos^2 \frac{x}{2} - 1 = 2 \frac{1}{1+z^2} - 1 = \frac{1-z^2}{1+z^2} \ ,\end{split}
 \end{equation*}
 \sphinxAtStartPar
-e \sphinxstylestrong{todo} …
+e (usando la relazione fondamentale della trignometria \(\sin^2 x + \cos^2 x = 1\), e la definizione di tangente),
 \begin{equation*}
 \begin{split}\sin x = \frac{2 z}{1 + z^2}\end{split}
 \end{equation*}\begin{equation*}
 \begin{split}\tan x = \frac{2 z}{1 - z^2}\end{split}
-\end{equation*}
-\end{itemize}
+\end{equation*}\end{sphinxadmonition}
 
 \sphinxstepscope
 
@@ -11933,33 +12178,20 @@ e \sphinxstylestrong{todo} …
 \sphinxAtStartPar
 In questa sezione vengono elencati alcuni tra gli integrali più comuni, la cui valutazione viene lasciata come esercizio, a volte svolto
 \begin{equation*}
-\begin{split}\int dx             = x + C\end{split}
-\end{equation*}\begin{equation*}
-\begin{split}\int x^a dx         = \frac{1}{a+1} x^{a+1} + C  \qquad \text{ per } a \ne -1\end{split}
-\end{equation*}\begin{equation*}
-\begin{split}\int \frac{1}{x} dx = \ln |x| + C  \qquad \text{ per } a \ne -1\end{split}
-\end{equation*}\begin{equation*}
-\begin{split}\int \frac{1}{1+x^2} dx = \text{atan} x + C\end{split}
-\end{equation*}\begin{equation*}
-\begin{split}\int \ln x \, dx    = x \, \ln x - x + C\end{split}
-\end{equation*}\begin{equation*}
-\begin{split}\int \log_b x \, dx    = x \, \log_b x - x \log_b e + C\end{split}
-\end{equation*}\begin{equation*}
-\begin{split}\int e^{a x} \, dx  = \frac{e^{ax}}{a} + C\end{split}
-\end{equation*}\begin{equation*}
-\begin{split}\int a^x \, dx  = \frac{a^x}{\ln a} + C\end{split}
-\end{equation*}\begin{equation*}
-\begin{split}\int \cos x \, dx = \sin x + C\end{split}
-\end{equation*}\begin{equation*}
-\begin{split}\int \sin x \, dx =-\cos x + C\end{split}
-\end{equation*}\begin{equation*}
-\begin{split}\int \tan x \, dx = \dots + C\end{split}
-\end{equation*}\begin{equation*}
-\begin{split}\int \cosh x \, dx = \sinh x + C\end{split}
-\end{equation*}\begin{equation*}
-\begin{split}\int \sinh x \, dx = \cosh x + C\end{split}
-\end{equation*}\begin{equation*}
-\begin{split}\int \tanh x \, dx = \dots + C\end{split}
+\begin{split}\begin{aligned}
+ &  \int dx                 && = &&  x + C                                                     \\
+ &  \int x^a dx             && = &&  \frac{1}{a+1} x^{a+1} + C       &   \text{ per } a \ne -1 \\
+ &  \int \frac{1}{x} dx     && = &&  \ln |x| + C                                               \\
+ &  \int \frac{1}{1+x^2} dx && = &&  \text{atan} x + C                                         \\
+ &  \int \ln x \, dx        && = &&  x \, \ln x - x + C                                        \\
+ &  \int \log_b x \, dx     && = &&  x \, \log_b x - x \log_b e + C                            \\
+ &  \int e^{a x} \, dx      && = &&  \frac{e^{ax}}{a} + C                                      \\
+ &  \int a^x \, dx          && = &&  \frac{a^x}{\ln a} + C                                     \\
+ &  \int \cos x \, dx       && = &&  \sin x + C                                                \\
+ &  \int \sin x \, dx       && = && -\cos x + C                                                \\
+ &  \int \cosh x \, dx      && = &&  \sinh x + C                                               \\
+ &  \int \sinh x \, dx      && = &&  \cosh x + C                                               \\
+\end{aligned}\end{split}
 \end{equation*}
 \sphinxstepscope
 
@@ -14039,11 +14271,41 @@ RL: ottimizzazione/controllo
 \bigletter{example\sphinxhyphen{}1}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}1}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/vector-calculus/integrals:\detokenize{example-1}}
 \indexspace
+\bigletter{example\sphinxhyphen{}10}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}10}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{example-10}}
+\indexspace
+\bigletter{example\sphinxhyphen{}11}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}11}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{example-11}}
+\indexspace
+\bigletter{example\sphinxhyphen{}12}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}12}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{example-12}}
+\indexspace
+\bigletter{example\sphinxhyphen{}13}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}13}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{example-13}}
+\indexspace
+\bigletter{example\sphinxhyphen{}14}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}14}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{example-14}}
+\indexspace
 \bigletter{example\sphinxhyphen{}2}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}2}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/vector-calculus/integrals:\detokenize{example-2}}
 \indexspace
 \bigletter{example\sphinxhyphen{}3}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}3}\sphinxstyleindexextra{ch/algebra/real\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/real-algebra:\detokenize{example-3}}
+\indexspace
+\bigletter{example\sphinxhyphen{}5}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}5}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{example-5}}
+\indexspace
+\bigletter{example\sphinxhyphen{}6}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}6}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{example-6}}
+\indexspace
+\bigletter{example\sphinxhyphen{}7}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}7}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{example-7}}
+\indexspace
+\bigletter{example\sphinxhyphen{}8}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}8}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{example-8}}
+\indexspace
+\bigletter{example\sphinxhyphen{}9}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}9}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{example-9}}
 \indexspace
 \bigletter{infinitesimal\sphinxhyphen{}calculus:integrals:def:riemann\sphinxhyphen{}integral}
 \item\relax\sphinxstyleindexentry{infinitesimal\sphinxhyphen{}calculus:integrals:def:riemann\sphinxhyphen{}integral}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{infinitesimal-calculus:integrals:def:riemann-integral}}
