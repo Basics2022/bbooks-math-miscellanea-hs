@@ -546,6 +546,19 @@ document.write(`
 <span class="eqno">(25.2)<a class="headerlink" href="#equation-infinitesimal-calculus-integrals-riemann-def" title="Permalink a questa equazione">#</a></span>\[\int_a^b f(x) \ dx = \lim_{\Delta x \rightarrow 0} \sigma_P \ .\]</div>
 </div>
 </div><p><strong>Osservazione.</strong> Dato l’intervallo <span class="math notranslate nohighlight">\([a,b]\)</span>, per <span class="math notranslate nohighlight">\(\Delta x \rightarrow 0\)</span> il numero di intervalli della partizione tende all’infinito, <span class="math notranslate nohighlight">\(n \rightarrow \infty\)</span>.</p>
+<table class="table">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><img alt="" src="../../_images/integral-geom-1.png" /></p></td>
+<td><p><img alt="" src="../../_images/integral-geom-2.png" /></p></td>
+<td><p><img alt="" src="../../_images/integral-geom-3.png" /></p></td>
+</tr>
+</tbody>
+</table>
 <div class="section" id="interpretazione-geometrica">
 <h3><span class="section-number">25.1.1. </span>Interpretazione geometrica<a class="headerlink" href="#interpretazione-geometrica" title="Permalink to this heading">#</a></h3>
 <p>L’integrale definito</p>
@@ -578,6 +591,15 @@ document.write(`
 </ul>
 <div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-integrals-prop-swap">
 <span class="eqno">(25.6)<a class="headerlink" href="#equation-infinitesimal-calculus-integrals-prop-swap" title="Permalink a questa equazione">#</a></span>\[\int_{x=a}^{b} f(x) dx = - \int_{x=b}^{a} f(x) \, dx\]</div>
+<table class="table">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><img alt="" src="../../_images/integral-union.png" /></p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 <div class="section" id="integrale-indefinito">
@@ -633,6 +655,17 @@ Dimostrazione<div class="sd-summary-down docutils">
 ### Teorema fondamentale del calcolo integrale
 :label: infinitesimal-calculus:derivatives:thm:fund
 -->
+<table class="table">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><img alt="" src="../../_images/integral-mean.png" /></p></td>
+<td><p><img alt="" src="../../_images/integral-fundamental.png" /></p></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="teorema-fondamentale-del-calcolo-infinitesimale">
 <span id="infinitesimal-calculus-integrals-thm-fund"></span><h3><span class="section-number">25.2.2. </span>Teorema fondamentale del calcolo infinitesimale<a class="headerlink" href="#teorema-fondamentale-del-calcolo-infinitesimale" title="Permalink to this heading">#</a></h3>
@@ -640,7 +673,7 @@ Dimostrazione<div class="sd-summary-down docutils">
 <span id="id1"></span><p class="admonition-title"><span class="caption-number">Theorem 25.2 </span> (Teorema fondamentale del calcolo infinitesimale)</p>
 <div class="theorem-content section" id="proof-content">
 <div class="math notranslate nohighlight">
-\[\dfrac{d}{dx} \int_{a}^{x} f(y) dy = f(x) \]</div>
+\[\dfrac{d}{dx} \int_{a}^{x} f(t) dt = f(x) \]</div>
 </div>
 </div><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -666,7 +699,7 @@ Dimostrazione<div class="sd-summary-down docutils">
 <div class="theorem-content section" id="proof-content">
 <p>Sia <span class="math notranslate nohighlight">\(x \in D\)</span>, e gli estremi di integrazione <span class="math notranslate nohighlight">\(a(x)\)</span>, <span class="math notranslate nohighlight">\(b(x)\)</span> <strong>todo</strong> <em>Caratteristiche?</em></p>
 <div class="math notranslate nohighlight">
-\[\dfrac{d}{dx} \int_{a(x)}^{b(x)} f(y) \, dy = - a'(x) \, f(a(x)) + b'(x) f(b(x)) \]</div>
+\[\dfrac{d}{dx} \int_{a(x)}^{b(x)} f(t) \, dt = - a'(x) \, f(a(x)) + b'(x) f(b(x)) \]</div>
 </div>
 </div><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
