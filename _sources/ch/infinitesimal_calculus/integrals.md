@@ -182,16 +182,19 @@ $$\begin{aligned}
 
 (infinitesimal-calculus:integrals:fund)=
 ## Integrali fondamentali
-Una volta dimostrato il [teorema fondamentale del calcolo infinitesimale](infinitesimal-calculus:integrals:thm:fund), questo risultato può essere usato per valutare gli integrali fondamentali come l'operazione inversa alla derivazione applicata alle [derivate fondamentali](infinitesimal-calculus:integrals:fund) 
+Una volta dimostrato il [teorema fondamentale del calcolo infinitesimale](infinitesimal-calculus:integrals:thm:fund), questo risultato può essere usato per valutare gli integrali fondamentali come l'operazione inversa alla derivazione applicata alle [derivate fondamentali](infinitesimal-calculus:derivatives:fund) 
 
 $$\begin{aligned}
- \int x^n         \ dx & = \frac{1}{n} x^{n+1} + C  \qquad (n \neq 0, \ n \neq -1) \\ 
- \int e^x         \ dx & = e^x                 + C \\ 
- \int \frac{1}{x} \ dx & = \ln x               + C \\ 
- \int \cos x      \ dx & = \sin x              + C \\ 
- \int \sin x      \ dx & =-\cos x              + C    
+ \int x^n         \ dx & = \frac{1}{n+1} x^{n+1} + C  \qquad (\text{if } n \neq -1) \\ 
+ \int e^x         \ dx & = e^x                   + C \\ 
+ \int \frac{1}{x} \ dx & = \ln x                 + C \\ 
+ \int \cos x      \ dx & = \sin x                + C \\ 
+ \int \sin x      \ dx & =-\cos x                + C    
 \end{aligned}$$
 
+Per un'ulteriore lista si rimanda alla [tabella a fine sezione](infinitesimal-calculus:integrals:table).
+
+(infinitesimal-calculus:integrals:rules)=
 ## Regole di integrazione
 (infinitesimal-calculus:integrals:by-parts)=
 ### Integrazione per parti
@@ -231,31 +234,235 @@ Usando il [teorema del calcolo infinitesimale](infinitesimal-calculus:integrals:
 
 **Sostituzioni utili.**
 
-- funzioni trigonometriche **todo** *quando le funzioni iperboliche?*
+**Funzioni trigonometriche e iperboliche.**
 
-  $$\begin{aligned}
-    & \sqrt{a^2 + x^2} \qquad \rightarrow \qquad x = a \tan \theta \\
-    & \sqrt{a^2 - x^2} \qquad \rightarrow \qquad x = a \sin \theta \\
-    & \sqrt{x^2 - a^2} \qquad \rightarrow \qquad x = a \sec \theta \\
-  \end{aligned}$$
+$$\begin{aligned}
+  & \sqrt{a^2 - x^2} && \rightarrow && x = a \sin  \theta \text{ or } x = a \cos \theta  \\
+  & \sqrt{a^2 + x^2} && \rightarrow && x = a \sinh \theta \\
+  & \sqrt{x^2 - a^2} && \rightarrow && x = a \cosh \theta \\
+\end{aligned}$$
 
-  ```{dropdown}
-  ```
+```{prf:example} $\displaystyle \int \sqrt{a^2 - x^2} \,  dx$
+:class: dropdown
 
-- radici
+L'integrale
 
-  $$\begin{aligned}
-    & \sqrt[n]{ax + b} \qquad \rightarrow \qquad ax + b = z^n \\
-    & \sqrt{a + bx + x^2} \qquad \rightarrow \qquad a + bx + x^2 = ( z - x )^2 \\
-    & \sqrt{a + bx - x^2} = \sqrt{(\alpha + x)(\beta - x)} \qquad \rightarrow \qquad a + bx - x^2 = ( \alpha + x )^2 z^2 \\
-  \end{aligned}$$
+$$\int \sqrt{a^2 - x^2} \,  dx$$
 
-  ```{dropdown}
-  ```
+ha senso per intervalli di integrazioni tali che $|x| \le |a|$. In questi casi, usando la sostituzione $x = a \, \sin \theta$, e il suo differenziale $dx = a \, \cos \theta \, d \theta$, si può riscrivere l'integrale come
 
-- $z = \tan\left( \frac{x}{2} \right)$, quando compaiono funzioni trigonometriche per trasformare l'integranda in una funzione razionale.
+$$\begin{aligned}
+  \int \sqrt{a^2 - x^2} \, dx
+   & = a^2 \int \sqrt{1- \sin^2 \theta} \cos \theta \, d \theta = \\
+   & = a^2 \int \cos^2 \theta \, d \theta = \\
+   & = a^2 \int \frac{1}{2} \left[ 1 + \cos \left( 2 \theta \right) \right] \, d \theta = \\
+   & = \frac{a^2}{2} \left[ \theta + \frac{1}{2} \sin \left( 2 \theta \right) \right] + C \ ,
+\end{aligned}$$
 
-  ```{dropdown}
+e riportandosi alla variabile originale $x$ con la trasformazione inversa
+
+$$ \theta = \text{arcsin} \left(\frac{x}{a}\right) $$
+
+e usando la formula $\sin( 2 \theta ) = 2 \sin \theta \cos \theta = 2 \dfrac{x}{a} \sqrt{1 - \left( \frac{x}{a} \right)^2}$,
+
+$$\int \sqrt{a^2 - x^2} \, dx = \frac{a^2}{2} \left[ \text{arcsin}\left( \frac{x}{a} \right) + \frac{x}{a}\sqrt{1 - \left( \frac{x}{a} \right)^2 }\right] + C .$$
+
+```
+
+```{prf:example} $ \displaystyle \int \sqrt{a^2 + x^2} \,  dx$
+:class: dropdown
+
+L'integrale
+
+$$\int \sqrt{a^2 + x^2} \,  dx$$
+
+ha senso per ogni intervallo di numeri reali. Si può usare la sostituzione 
+
+$$\begin{aligned}
+   x & = a \, \sinh \theta \\
+  dx & = a \, \cosh \theta \, d \theta \\
+  \sqrt{a^2 + x^2} & = a \sqrt{1 + \sinh^2 \theta} = a \cosh \theta
+\end{aligned}$$
+
+per utilizzare le proprietà delle funzioni iperboliche e scrivere
+
+$$\begin{aligned}
+  \int \sqrt{a^2 + x^2} \, dx
+   & = a^2 \int \cosh^2 \theta \, d \theta = \\
+   & = a^2 \int \left( \frac{e^\theta + e^{-\theta}}{2} \right)^2 \, d \theta = \\
+   & = a^2 \int \frac{1}{4} \left( e^{2 \theta} + 2 + e^{-2 \theta} \right) \, d \theta = \\
+   & = \frac{a^2}{4} \left( \frac{1}{2} e^{2 \theta} + 2 \theta - \frac{1}{2} e^{-2 \theta} \right) + C = \\
+   & = \frac{a^2}{4} \left( 2 \theta + \frac{e^{2 \theta} - e^{-2 \theta}}{2} \right) + C = \\
+   & = \frac{a^2}{4} \left[ 2 \theta + \sinh \left( 2 \theta \right) \right] + C \ .
+\end{aligned}$$
+
+Si può tornare alla variabile indipendente di partenza $x$ con la trasformazione inversa
+
+$$\frac{x}{a} = \sinh \theta = \frac{e^{\theta} - e^{-\theta}}{2}$$
+
+$$e^{2 \theta} - \frac{x}{a} e^{\theta} - 1 = 0$$
+
+$$e^{\theta} 
+  = \frac{x}{a} \pm \sqrt{\left( \frac{x}{a} \right)^2 + 1}
+  = \frac{x}{a}  +  \sqrt{\left( \frac{x}{a} \right)^2 + 1}
+$$
+
+$$\theta = \ln \left[ \frac{x}{a}  +  \sqrt{\left( \frac{x}{a} \right)^2 + 1} \right]$$
+
+$$\sinh (2 \theta) = 2 \sinh \theta \cosh \theta = 2 \frac{x}{a} \sqrt{1 + \left(\frac{x}{a}\right)^2}$$
+
+$$\begin{aligned}
+  \int \sqrt{a^2 + x^2} \, dx
+   & = \frac{a^2}{4} \left[ 2 \theta + \sinh \left( 2 \theta \right) \right] + C \\
+   & = \frac{a^2}{2} \left\{ \ln \left[ \frac{x}{a}  +  \sqrt{1 + \left( \frac{x}{a} \right)^2} \right] + \frac{x}{a} \sqrt{1 + \left(\frac{x}{a}\right)^2} \right\} + C
+\end{aligned}$$
+
+```
+
+```{prf:example} $\displaystyle \int \sqrt{x^2 - a^2} \,  dx$
+:class: dropdown
+
+L'integrale
+
+$$\int \sqrt{x^2 - a^2} \,  dx$$
+
+ha senso per intervalli di integrazioni tali che $|x| \ge |a|$. In questi casi, si può usare la sostituzione
+
+$$\begin{aligned}
+   x & = a \, \cosh \theta \\
+  dx & = a \, \sinh \theta \, d \theta \\
+  \sqrt{x^2 - a^2} & = a \sqrt{\cosh^2 \theta - 1} = a \sinh \theta
+\end{aligned}$$
+
+per utilizzare le proprietà delle funzioni iperboliche e scrivere
+
+$$\begin{aligned}
+  \int \sqrt{x^2 - a^2} \, dx
+   & = a^2 \int \sinh^2 \theta \, d \theta = \\
+   & = a^2 \int \left( \frac{e^\theta - e^{-\theta}}{2} \right)^2 \, d \theta = \\
+   & = a^2 \int \frac{1}{4} \left( e^{2 \theta} - 2 + e^{-2 \theta} \right) \, d \theta = \\
+   & = \frac{a^2}{4} \left( \frac{1}{2} e^{2 \theta} - 2 \theta - \frac{1}{2} e^{-2 \theta} \right) + C = \\
+   & = \frac{a^2}{4} \left[ -2 \theta + \sinh \left( 2 \theta \right) \right] + C \ .
+\end{aligned}$$
+
+Si può tornare alla variabile indipendente di partenza $x$ con la trasformazione inversa
+
+$$\frac{x}{a} = \cosh \theta = \frac{e^{\theta} + e^{-\theta}}{2}$$
+
+$$e^{2 \theta} - \frac{x}{a} e^{\theta} + 1 = 0$$
+
+$$e^{\theta} 
+  = \frac{x}{a} \pm \sqrt{\left( \frac{x}{a} \right)^2 - 1}
+$$
+
+**Osservazione.** Quale segno? Discussione... **todo**
+
+$$\theta = \ln \left[ \frac{x}{a} \pm \sqrt{\left( \frac{x}{a} \right)^2 - 1} \right]$$
+
+$$\sinh (2 \theta) = 2 \sinh \theta \cosh \theta = 2 \, \sqrt{\left(\frac{x}{a}\right)^2 - 1} \, \frac{x}{a}$$
+
+
+$$\begin{aligned}
+  \int \sqrt{x^2 - a^2} \, dx
+   & = \frac{a^2}{4} \left[ -2 \theta + \sinh \left( 2 \theta \right) \right] + C \\
+   & = \frac{a^2}{2} \left\{ -\ln \left[ \frac{x}{a}  \pm  \sqrt{\left( \frac{x}{a} \right)^2 - 1} \right] + \frac{x}{a} \sqrt{ \left(\frac{x}{a}\right)^2 - 1} \right\} + C
+\end{aligned}$$
+
+```
+
+```{prf:example} $\displaystyle \int \frac{1}{\sqrt{a^2 - x^2}} \,  dx$
+:class: dropdown
+```
+
+```{prf:example} $\displaystyle \int \frac{1}{\sqrt{a^2 + x^2}} \,  dx$
+:class: dropdown
+```
+
+```{prf:example} $\displaystyle \int \frac{1}{\sqrt{x^2 - a^2}} \,  dx$
+:class: dropdown
+```
+
+**Radici.**
+
+$$\begin{aligned}
+  & \sqrt[n]{ax + b}                                     && \rightarrow && ax + b = z^n \\
+  & \sqrt{a + bx + x^2}                                  && \rightarrow && a + bx + x^2 = ( z - x )^2 \\
+  & \sqrt{a + bx - x^2} = \sqrt{(\alpha + x)(\beta - x)} && \rightarrow && a + bx - x^2 = ( \alpha + x )^2 z^2 \\
+\end{aligned}$$
+
+```{prf:example} $\displaystyle \int \sqrt[n]{ax+b} \, dx $
+:class: dropdown
+
+**Metodo 0.**
+
+$$\begin{aligned}
+  \int \sqrt[n]{ax+ b} \, dx
+ & =  \int \left( ax+ b \right)^{\frac{1}{n}} \, dx = \\
+ & = \frac{1}{a} \frac{1}{1+ \frac{1}{n}} (a x + b)^{\frac{1}{n}+1} + C \ .
+\end{aligned}$$
+
+**Metodo 1.** Con sostituzione
+
+$$a x + b = z^n$$
+
+$$a dx = n z^{n-1} dz$$
+
+$$\begin{aligned}
+  \int \sqrt[n]{ax+b} \, dx
+  & = \int z \, \frac{n}{a} z^{n-1} \, dz = \\
+  & = \frac{1}{a} z^{n} + C = \\
+  & = \frac{1}{a} \frac{n}{n+1} z^{n+1} + C = \\
+  & = \frac{1}{a} \frac{n}{n+1} (ax+b)^{\frac{n+1}{n}} + C  \ .
+\end{aligned}$$
+
+
+
+```
+
+```{prf:example} $\displaystyle \int \sqrt{a + bx + x^2} \, dx $
+:class: dropdown
+
+**Metodo 0.** Con completamento del quadrato
+
+$$\begin{aligned}
+  \int \sqrt{a + bx + x^2} \, dx 
+  & = \int \sqrt{ \left( x^2 + b x + \frac{b^2}{4} \right) + a - \frac{b^2}{4}} \, dx = \\
+  & = \int \sqrt{ \left( x + \frac{b}{2} \right)^2 + a - \frac{b^2}{4}} \, dx \ .
+\end{aligned}$$
+
+ci si può riportare agli integrali della forma $\displaystyle \int \sqrt{y^2 - A^2} \, dy$ o $\displaystyle \int \sqrt{y^2 + A^2} \, dy$ a seconda del valore di $a - \frac{b^2}{4}$, con $y = x+ \frac{b}{2}$.
+
+
+**Metodo 1.** Con cambio di variabili
+
+```
+
+```{prf:example} $\displaystyle \int \sqrt{a + bx - x^2} \, dx $
+:class: dropdown
+
+**Metodo 0.** Con completamento del quadrato
+
+$$\begin{aligned}
+  \int \sqrt{a + bx - x^2} \, dx 
+  & = \int \sqrt{ \left( - x^2 + b x - \frac{b^2}{4} \right) + a + \frac{b^2}{4}} \, dx = \\
+  & = \int \sqrt{-\left( x - \frac{b}{2} \right)^2 + a + \frac{b^2}{4}} \, dx \ .
+\end{aligned}$$
+
+ci si può riportare agli integrali della forma $\displaystyle \int \sqrt{-y^2 + A^2} \, dy$ con $y = x+ \frac{b}{2}$.
+
+**Osservazione.** Nel caso in cui $a + \frac{b^2}{4}$ sia negativo, allora non esiste alcun intervallo reale nel quale l'integranda sia definita, e di conseguenza l'integrale non ha senso.
+
+**Metodo 1.** Con cambio di variabili
+
+```
+
+**Tangente $\frac{x}{2}$** La trasformazione di coordinate
+
+$$z = \tan\left( \frac{x}{2} \right) \ ,$$
+
+risulta utile a trasformare un'integranda dove compaiono funzioni trigonometriche in un'integranda razionale.
+
+```{prf:example} Razionalizzazione con cambio di variabili $z = \tan\left( \frac{x}{2} \right)$.
   Usando la definizione della tangente 
 
   $$z = \tan \left(\frac{x}{2}\right) = \frac{\sin \left(\frac{x}{2}\right)}{\cos \left(\frac{x}{2}\right)}$$
@@ -268,11 +475,11 @@ Usando il [teorema del calcolo infinitesimale](infinitesimal-calculus:integrals:
 
   $$\cos x = \cos \left( \frac{x}{2} + \frac{x}{2} \right) = 2 \cos^2 \frac{x}{2} - 1 = 2 \frac{1}{1+z^2} - 1 = \frac{1-z^2}{1+z^2} \ ,$$
 
-  e **todo** ...
+  e (usando la relazione fondamentale della trignometria $\sin^2 x + \cos^2 x = 1$, e la definizione di tangente),
 
   $$\sin x = \frac{2 z}{1 + z^2}$$
   $$\tan x = \frac{2 z}{1 - z^2}$$
 
-  ```
+```
 
 
