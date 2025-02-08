@@ -24,6 +24,13 @@ $$\int_a^b f(x) \ dx = \lim_{\Delta x \rightarrow 0} \sigma_P \ .$$ (infinitesim
 
 **Osservazione.** Dato l'intervallo $[a,b]$, per $\Delta x \rightarrow 0$ il numero di intervalli della partizione tende all'infinito, $n \rightarrow \infty$.
 
+```{list-table}
+:header-rows: 0
+* - ![](../../media/integral-geom-1.png)
+  - ![](../../media/integral-geom-2.png)
+  - ![](../../media/integral-geom-3.png)
+```
+
 ### Interpretazione geometrica
 L'integrale definito 
 
@@ -54,6 +61,11 @@ $$\left| \int_a^b f(x) \ dx \right| \le \int_a^b | f(x) | \ dx \ ,$$ (infinitesi
 - scambio degli estremi di integrazione
 
 $$\int_{x=a}^{b} f(x) dx = - \int_{x=b}^{a} f(x) \, dx$$ (infinitesimal-calculus:integrals:prop:swap)
+
+```{list-table}
+:header-rows: 0
+* - ![](../../media/integral-union.png)
+```
 
 (infinitesimal-calculus:integrals:def:indefinite)=
 ### Integrale indefinito
@@ -111,13 +123,20 @@ $$\int_{a}^{b} f(x) dx = (b-a) f(c) $$
 ### Teorema fondamentale del calcolo integrale
 :label: infinitesimal-calculus:derivatives:thm:fund
 -->
+
+```{list-table}
+:header-rows: 0
+* - ![](../../media/integral-mean.png)
+  - ![](../../media/integral-fundamental.png)
+```
+
 (infinitesimal-calculus:integrals:thm:fund)=
 ### Teorema fondamentale del calcolo infinitesimale
 (Teorema fondamentale del calcolo infinitesimale)=
 ```{prf:theorem} Teorema fondamentale del calcolo infinitesimale
 :label: integrals:thm:fund
 
-$$\dfrac{d}{dx} \int_{a}^{x} f(y) dy = f(x) $$
+$$\dfrac{d}{dx} \int_{a}^{x} f(t) dt = f(x) $$
 
 ```
 
@@ -140,7 +159,7 @@ $$\begin{aligned}
 
 Sia $x \in D$, e gli estremi di integrazione $a(x)$, $b(x)$ **todo** *Caratteristiche?*
 
-$$\dfrac{d}{dx} \int_{a(x)}^{b(x)} f(y) \, dy = - a'(x) \, f(a(x)) + b'(x) f(b(x)) $$
+$$\dfrac{d}{dx} \int_{a(x)}^{b(x)} f(t) \, dt = - a'(x) \, f(a(x)) + b'(x) f(b(x)) $$
 ```
 
 ```{dropdown} Dimostrazione

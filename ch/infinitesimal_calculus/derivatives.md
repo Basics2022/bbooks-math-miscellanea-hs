@@ -15,7 +15,7 @@ $$f'(x) = \dfrac{d f}{d x}(x) := \lim_{a \rightarrow 0} \dfrac{f(x+a)-f(x)}{a} \
 **todo** *In generale, la derivata di una funzione reale è un'altra funzione reale.*
 
 (infinitesimal-calculus:derivatives:geom)=
-## Significato geometrico
+## Interpretazione geometrica
 Il valore della derivata di una funzione $f(x)$ in un punto $x$ corrisponde al coefficiente angolare della retta tangente alla curva che rappresenta piano cartesiano il [grafico della funzione](math-hs:precalculus:real-functions:inverse:plot) $y=f(x)$ nel punto di coordinate $(x,f(x))$.
 
 ```{list-table}
