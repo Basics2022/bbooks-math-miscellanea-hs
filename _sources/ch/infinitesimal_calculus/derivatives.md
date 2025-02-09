@@ -4,15 +4,27 @@
 (infinitesimal-calculus:derivatives:def)=
 ## Definizione
 
-**Rapporto incrementale.** Il rapporto incrementale di una funzione reale nel punto $x$ viene definito come il rapporto tra la differenza dei valori della funzione e la differenza del valore della variabile indipendente
+```{prf:definition} Rapporto incrementale
 
-$$R[f(\cdot), x, a] := \dfrac{f(x+a)-f(x)}{a} \ .$$ (eq:infinitesimal-calculus:derivatives:def_delta)
+Il rapporto incrementale di una funzione reale nel punto $x$ viene definito come il rapporto tra la differenza dei valori della funzione e la differenza del valore della variabile indipendente
 
-**Derivata.** La derivata di una funzione reale in un punto $x$ viene definita come il limite del rapporto incrementale, per l'incremento della variabile indipendente che tende a zero,
+$$R[f(\cdot), x, h] := \dfrac{f(x+h)-f(x)}{h} \ .$$ (eq:infinitesimal-calculus:derivatives:def_delta)
+```
 
-$$f'(x) = \dfrac{d f}{d x}(x) := \lim_{a \rightarrow 0} \dfrac{f(x+a)-f(x)}{a} \ .$$ (eq:infinitesimal-calculus:derivatives:def)
+```{prf:definition} Derivata
+
+La derivata di una funzione reale in un punto $x$ viene definita come il limite del rapporto incrementale, per l'incremento della variabile indipendente che tende a zero,
+
+$$f'(x) = \dfrac{d f}{d x}(x) := \lim_{h \rightarrow 0} \dfrac{f(x+h)-f(x)}{h} \ .$$ (eq:infinitesimal-calculus:derivatives:def)
+```
 
 **todo** *In generale, la derivata di una funzione reale è un'altra funzione reale.*
+
+Il limite nella definizione {eq}`eq:infinitesimal-calculus:derivatives:def` della derivata ha la diretta conseguenza di poter scrivere
+
+$$f(x+h) = f(x) + h \, f'(x) + o(h) \ ,$$ (eq:infinitesimal-calculus:derivative:def_expansion)
+
+cioè un'approssimazione al primo grado in $h$ di $f(x+h)$ centrata in $x$. Per una trattazione più completa delle approssimazioni polinomiali di funzioni, e al ruolo delle derivate in queste, si rimanda alla sezione sulle [serie di Taylor e MacLaurin](infinitesimal-calculus:derivatives:taylor).
 
 (infinitesimal-calculus:derivatives:geom)=
 ## Interpretazione geometrica
@@ -21,6 +33,49 @@ Il valore della derivata di una funzione $f(x)$ in un punto $x$ corrisponde al c
 ```{list-table}
 :header-rows: 0
 * - ![](../../media/derivative-geom.png)
+```
+
+(infinitesimal-calculus:derivatives:differential)=
+## Incremento di una funzione e differenziale
+```{prf:definition} Incremento di una funzione
+L'incremento di una funzione $f$ in seguito all'incremento $h$ della variabile indipendente $x$ è
+
+$$\Delta f (x, h) := f(x+h) - f(x) \ .$$
+
+```
+
+```{prf:definition} Differenziale di una funzione
+
+Il differenziale di una funzione $f$ può essere definito come il termine di primo ordine in $h$ dell'incremento $\Delta f(x,h)$,
+
+$$\Delta f(x,h) = d f(x,h) + o(h) \ ,$$
+
+e risulta uguale a 
+
+$$d f(x, h) = f'(x) \, h \, .$$ (eq:infinitesimal-calculus:derivative:differential)
+
+```
+
+Il confronto con la relazione {eq}`eq:infinitesimal-calculus:derivative:def_expansion` permette di scrivere
+
+$$\Delta f(x,h) = f(x+h) - f(x) = h f'(x) + o(h) \ ,$$
+
+e quindi dimostrare la relazione {eq}`eq:infinitesimal-calculus:derivative:differential` usata per introdurre il concetto di differenziale.
+
+
+```{nota}
+il differenziale della funzione $f(x) = x$ è uguale a
+
+$$d x(x,h) = \dfrac{d}{dx} x \, h = h \ ,$$
+
+e quindi si può scrivere nella definizione di differenziale
+
+$$h = dx$$
+
+e quindi
+
+$$d f = f'(x) \, dx \ .$$
+
 ```
 
 (infinitesimal-calculus:derivatives:rules)=
@@ -381,17 +436,23 @@ La serie di MacLaurin è la serie di Taylor centrata in $x_0 = 0$. La serie di T
 $$T_N[f(x); x_0] = \sum_{n=0}^{N} \dfrac{f^{(n)}(x_0)}{n!} (x-x_0)^n \ .$$
 
 La serie di Taylor troncata al $N$-esimo termine fornisce un'approssimazione locale della funzione $f(x)$ di ordine $n$, nel senso definito dal seguente teorema.
-```{prf:theorem} Approssimazione locale - 1
+```{prf:theorem} Approssimazione locale
 :label: thm:infinitesimal-calculus:derivatives:taylor
-**todo** *Ipotesi del teorema*. Valgono i seguenti risultati:
+**todo** *Ipotesi del teorema*.
 
-- $$\lim_{x \rightarrow x_0} \frac{f(x) - T_N[f(x); x_0]}{x^N} = 0 \ , $$
+Valgono i seguenti risultati di approssimazione locale
+
+- La serie di Taylor di ordine $N$ è un'approssimazione locale di ordine $N$ della funzione 
+
+  $$\lim_{x \rightarrow x_0} \frac{f(x) - T_N[f(x); x_0]}{(x-x_0)^N} = 0 \ , $$
 
   o usando la notazione di "o piccolo" per il [confronto di infinitesimi](infinitesimal-calculus:limits:infinite-simal),
 
   $$f(x) = T_N[f(x); x_0] + o\left((x-x_0)^N\right) \quad \text{ per } \quad x \rightarrow x_0 \ .$$
 
-- $$f(x) - T_N[f(x); x_0] \sim \frac{f^{(N+1)}}{(N+1)!} (x - x_0)^{N+1} \quad x \rightarrow x_0 \ $$
+- L'errore di approssimazione di ordine $N+1$ è asintotico a
+
+  $$f(x) - T_N[f(x); x_0] \sim \frac{f^{(N+1)}}{(N+1)!} (x - x_0)^{N+1} \quad x \rightarrow x_0 \ $$
 
 ```
 ````{only} latex

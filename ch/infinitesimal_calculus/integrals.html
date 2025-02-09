@@ -72,7 +72,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
     <link rel="next" title="25.5. Tavola degli integrali indefiniti più comuni" href="integrals-table.html" />
-    <link rel="prev" title="24.10. Note e dimostrazioni" href="derivatives-notes.html" />
+    <link rel="prev" title="24.11. Note e dimostrazioni" href="derivatives-notes.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
@@ -251,8 +251,8 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="derivatives.html">24. Derivate</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="derivatives-problems.html">24.9. Problemi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="derivatives-notes.html">24.10. Note e dimostrazioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="derivatives-problems.html">24.10. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="derivatives-notes.html">24.11. Note e dimostrazioni</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">25. Integrali</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -511,8 +511,11 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-fondamentali">25.3. Integrali fondamentali</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regole-di-integrazione">25.4. Regole di integrazione</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integrazione-per-parti">25.4.1. Integrazione per parti</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#frazioni-parziali">25.4.2. Frazioni parziali</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integrazione-con-sostituzione">25.4.3. Integrazione con sostituzione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integrazione-con-sostituzione">25.4.2. Integrazione con sostituzione</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sostituzioni-utili">25.4.2.1. Sostituzioni utili</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#frazioni-parziali">25.4.3. Frazioni parziali</a></li>
 </ul>
 </li>
 </ul>
@@ -744,27 +747,48 @@ Dimostrazione<div class="sd-summary-down docutils">
 <span id="infinitesimal-calculus-integrals-rules"></span><h2><span class="section-number">25.4. </span>Regole di integrazione<a class="headerlink" href="#regole-di-integrazione" title="Permalink to this heading">#</a></h2>
 <div class="section" id="integrazione-per-parti">
 <span id="infinitesimal-calculus-integrals-by-parts"></span><h3><span class="section-number">25.4.1. </span>Integrazione per parti<a class="headerlink" href="#integrazione-per-parti" title="Permalink to this heading">#</a></h3>
-<p>La regola di integrazione per parti viene ottenuta integrando la regola di derivazione del prodotto <a class="reference internal" href="derivatives.html#equation-infinitesimal-calculus-derivatives-rules-product">(24.4)</a>. Siano <span class="math notranslate nohighlight">\(F(x)\)</span>, <span class="math notranslate nohighlight">\(G(x)\)</span> le primitive delle funzioni <span class="math notranslate nohighlight">\(f(x)\)</span>, <span class="math notranslate nohighlight">\(g(x)\)</span>, e quindi vale <span class="math notranslate nohighlight">\(F'(x) = f(x)\)</span>, <span class="math notranslate nohighlight">\(G'(x) = g(x)\)</span>.
+<p>La regola di integrazione per parti viene ottenuta integrando la regola di derivazione del prodotto <a class="reference internal" href="derivatives.html#equation-infinitesimal-calculus-derivatives-rules-product">(24.6)</a>. Siano <span class="math notranslate nohighlight">\(F(x)\)</span>, <span class="math notranslate nohighlight">\(G(x)\)</span> le primitive delle funzioni <span class="math notranslate nohighlight">\(f(x)\)</span>, <span class="math notranslate nohighlight">\(g(x)\)</span>, e quindi vale <span class="math notranslate nohighlight">\(F'(x) = f(x)\)</span>, <span class="math notranslate nohighlight">\(G'(x) = g(x)\)</span>.
 La regola di derivazione del prodotto <span class="math notranslate nohighlight">\(F(x)G(x)\)</span> viene scritta come</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
   (F(x) G(x))' &amp; = F'(x) G(x) + F(x) G'(x) = \\
   &amp; = f(x) G(x) + F(x) g(x)
 \end{aligned}\end{split}\]</div>
-<p>Isolando il termine <span class="math notranslate nohighlight">\(f(x)G(x)\)</span> e integrando, si ottiene</p>
+<p>Isolando il termine <span class="math notranslate nohighlight">\(f(x)G(x)\)</span> e integrando il primo termine grazie al <a class="reference internal" href="#infinitesimal-calculus-integrals-thm-fund"><span class="std std-ref">teorema fondamentale del calcolo infinitesimale</span></a>, si ottiene</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
-\int f(x) G(x) dx &amp; = \int (F(x) G(x))' dx - \int F(x) g(x) dx = \\
+\int f(x) G(x) dx &amp; = \int \left( F(x) G(x) \right)' dx - \int F(x) g(x) dx = \\
 &amp; = F(x) G(x) - \int F(x) g(x) dx  \ .
 \end{aligned}\end{split}\]</div>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Consigli:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(f(x)\)</span> facile da integrare,…</p></li>
+<li><p>Derivazione che riporti a integrali più semplici: esempio, può ridurre di <span class="math notranslate nohighlight">\(1\)</span> la potenza della funzione <span class="math notranslate nohighlight">\(G(x) = x^n\)</span> a ogni applicazione dell’integrazione per parti</p></li>
+<li><p>…</p></li>
+</ul>
 </div>
-<div class="section" id="frazioni-parziali">
-<h3><span class="section-number">25.4.2. </span>Frazioni parziali<a class="headerlink" href="#frazioni-parziali" title="Permalink to this heading">#</a></h3>
-<p><strong>todo</strong> E” una regola valida per funzioni integrande che possono essere scritte come il rapporto di due polinomi, <span class="math notranslate nohighlight">\(f(x) = \frac{N(x)}{D(x)}\)</span>, e segue direttamente dalla possibilità di scomporre il polinomio a denominatore in polinomi di primo e secondo grado, grazie al <a class="reference internal" href="../precalculus/polynomials.html#math-hs-precalculus-polynomials-alg-fund-thm"><span class="std std-ref">teorema fondamentale dell’algebra</span></a>, e scrivere il rapporto come somma di frazioni.</p>
+<div class="proof example dropdown admonition" id="example-5">
+<p class="admonition-title"><span class="caption-number">Example 25.1 </span> (Esempio di integrazione per parti)</p>
+<div class="example-content section" id="proof-content">
+<p>Si vuole calcolare l’integrale</p>
+<div class="math notranslate nohighlight">
+\[\int x \, e^x \, dx \ ,\]</div>
+<p>usando la regola di integrazione per parti. Utilizzando il fato che la funzione <span class="math notranslate nohighlight">\(e^x\)</span> ha primitiva <span class="math notranslate nohighlight">\(e^x\)</span>, si sceglie come funzione da integrare, mentre la funzione <span class="math notranslate nohighlight">\(x\)</span> viene derivata,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  f(x) &amp; = e^x  &amp;&amp; F(x) = e^x \\
+  G(x) &amp; =   x  &amp;&amp; g(x) = 1   \\
+\end{aligned}\end{split}\]</div>
+<p>Con questa scelta, si risolve l’integrale,</p>
+<div class="math notranslate nohighlight">
+\[\int x \, e^x \, dx = x \, e^x - \int e^x \, dx = x \, e^x - e^x + C = e^x (x - 1) + C \ .\]</div>
 </div>
+</div></div>
 <div class="section" id="integrazione-con-sostituzione">
-<span id="infinitesimal-calculus-integrals-substitution"></span><h3><span class="section-number">25.4.3. </span>Integrazione con sostituzione<a class="headerlink" href="#integrazione-con-sostituzione" title="Permalink to this heading">#</a></h3>
-<p>La regola di integrazione per parti viene ottenuta dalla regola di derivazione della funzione composta <a class="reference internal" href="derivatives.html#equation-infinitesimal-calculus-derivatives-rules-composite">(24.6)</a>. Sia <span class="math notranslate nohighlight">\(\widetilde{F}(x)\)</span> la funzione composta <span class="math notranslate nohighlight">\(\widetilde{F}(x) = F( y(x) )\)</span> e siano definite le derivate</p>
+<span id="infinitesimal-calculus-integrals-substitution"></span><h3><span class="section-number">25.4.2. </span>Integrazione con sostituzione<a class="headerlink" href="#integrazione-con-sostituzione" title="Permalink to this heading">#</a></h3>
+<p>La regola di integrazione con sostituzione viene ottenuta dalla regola di derivazione della funzione composta <a class="reference internal" href="derivatives.html#equation-infinitesimal-calculus-derivatives-rules-composite">(24.8)</a>. Sia <span class="math notranslate nohighlight">\(\widetilde{F}(x)\)</span> la funzione composta <span class="math notranslate nohighlight">\(\widetilde{F}(x) = F( y(x) )\)</span> e siano definite le derivate</p>
 <div class="math notranslate nohighlight">
 \[\widetilde{f}(x) = \dfrac{d}{dx} \widetilde{F}(x)  \qquad , \qquad
              f (y) = \dfrac{d}{dy}            F (y)\]</div>
@@ -772,18 +796,24 @@ La regola di derivazione del prodotto <span class="math notranslate nohighlight"
 <div class="math notranslate nohighlight">
 \[\widetilde{f}(x) := \dfrac{d}{dx} \widetilde{F}(x) = \dfrac{d}{dx} F(y(x)) = 
 \dfrac{d F}{d y}(y(x)) \frac{d y}{d x}(x) =: f(y(x)) y'(x) \ .\]</div>
-<p>Usando il <a class="reference internal" href="#infinitesimal-calculus-integrals-thm-fund"><span class="std std-ref">teorema del calcolo infinitesimale</span></a></p>
-<p><strong>todo…</strong></p>
-<p><strong>Sostituzioni utili.</strong></p>
+<p>Usando il <a class="reference internal" href="#infinitesimal-calculus-integrals-thm-fund"><span class="std std-ref">teorema del calcolo infinitesimale</span></a>, <strong>todo</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \widetilde{F}(x) &amp; = \int \widetilde{f}(x) \, dx + C = \\
+                   &amp; = \int f(y(x)) \, \underbrace{ y'(x) \, dx}_{= d y} + C = \\
+                   &amp; = \int f(y) \, dy + C = F(y) \ .
+\end{aligned}\end{split}\]</div>
+<div class="section" id="sostituzioni-utili">
+<h4><span class="section-number">25.4.2.1. </span>Sostituzioni utili<a class="headerlink" href="#sostituzioni-utili" title="Permalink to this heading">#</a></h4>
 <p><strong>Funzioni trigonometriche e iperboliche.</strong></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
-  &amp; \sqrt{a^2 - x^2} &amp;&amp; \rightarrow &amp;&amp; x = a \sin  \theta \text{ or } x = a \cos \theta  \\
+  &amp; \sqrt{a^2 - x^2} &amp;&amp; \rightarrow &amp;&amp; x = a \sin  \theta \quad \text{ or } \quad x = a \cos \theta  \\
   &amp; \sqrt{a^2 + x^2} &amp;&amp; \rightarrow &amp;&amp; x = a \sinh \theta \\
   &amp; \sqrt{x^2 - a^2} &amp;&amp; \rightarrow &amp;&amp; x = a \cosh \theta \\
 \end{aligned}\end{split}\]</div>
-<div class="proof example dropdown admonition" id="example-5">
-<p class="admonition-title"><span class="caption-number">Example 25.1 </span> (<span class="math notranslate nohighlight">\(\displaystyle \int \sqrt{a^2 - x^2} \,  dx\)</span>)</p>
+<div class="proof example dropdown admonition" id="example-6">
+<p class="admonition-title"><span class="caption-number">Example 25.2 </span> (<span class="math notranslate nohighlight">\(\displaystyle \int \sqrt{a^2 - x^2} \,  dx\)</span>)</p>
 <div class="example-content section" id="proof-content">
 <p>L’integrale</p>
 <div class="math notranslate nohighlight">
@@ -804,8 +834,8 @@ La regola di derivazione del prodotto <span class="math notranslate nohighlight"
 <div class="math notranslate nohighlight">
 \[\int \sqrt{a^2 - x^2} \, dx = \frac{a^2}{2} \left[ \text{arcsin}\left( \frac{x}{a} \right) + \frac{x}{a}\sqrt{1 - \left( \frac{x}{a} \right)^2 }\right] + C .\]</div>
 </div>
-</div><div class="proof example dropdown admonition" id="example-6">
-<p class="admonition-title"><span class="caption-number">Example 25.2 </span> (<span class="math notranslate nohighlight">\( \displaystyle \int \sqrt{a^2 + x^2} \,  dx\)</span>)</p>
+</div><div class="proof example dropdown admonition" id="example-7">
+<p class="admonition-title"><span class="caption-number">Example 25.3 </span> (<span class="math notranslate nohighlight">\( \displaystyle \int \sqrt{a^2 + x^2} \,  dx\)</span>)</p>
 <div class="example-content section" id="proof-content">
 <p>L’integrale</p>
 <div class="math notranslate nohighlight">
@@ -849,8 +879,8 @@ La regola di derivazione del prodotto <span class="math notranslate nohighlight"
    &amp; = \frac{a^2}{2} \left\{ \ln \left[ \frac{x}{a}  +  \sqrt{1 + \left( \frac{x}{a} \right)^2} \right] + \frac{x}{a} \sqrt{1 + \left(\frac{x}{a}\right)^2} \right\} + C
 \end{aligned}\end{split}\]</div>
 </div>
-</div><div class="proof example dropdown admonition" id="example-7">
-<p class="admonition-title"><span class="caption-number">Example 25.3 </span> (<span class="math notranslate nohighlight">\(\displaystyle \int \sqrt{x^2 - a^2} \,  dx\)</span>)</p>
+</div><div class="proof example dropdown admonition" id="example-8">
+<p class="admonition-title"><span class="caption-number">Example 25.4 </span> (<span class="math notranslate nohighlight">\(\displaystyle \int \sqrt{x^2 - a^2} \,  dx\)</span>)</p>
 <div class="example-content section" id="proof-content">
 <p>L’integrale</p>
 <div class="math notranslate nohighlight">
@@ -893,17 +923,68 @@ La regola di derivazione del prodotto <span class="math notranslate nohighlight"
    &amp; = \frac{a^2}{2} \left\{ -\ln \left[ \frac{x}{a}  \pm  \sqrt{\left( \frac{x}{a} \right)^2 - 1} \right] + \frac{x}{a} \sqrt{ \left(\frac{x}{a}\right)^2 - 1} \right\} + C
 \end{aligned}\end{split}\]</div>
 </div>
-</div><div class="proof example dropdown admonition" id="example-8">
-<p class="admonition-title"><span class="caption-number">Example 25.4 </span> (<span class="math notranslate nohighlight">\(\displaystyle \int \frac{1}{\sqrt{a^2 - x^2}} \,  dx\)</span>)</p>
-<div class="example-content section" id="proof-content">
-</div>
 </div><div class="proof example dropdown admonition" id="example-9">
-<p class="admonition-title"><span class="caption-number">Example 25.5 </span> (<span class="math notranslate nohighlight">\(\displaystyle \int \frac{1}{\sqrt{a^2 + x^2}} \,  dx\)</span>)</p>
+<p class="admonition-title"><span class="caption-number">Example 25.5 </span> (<span class="math notranslate nohighlight">\(\displaystyle \int \frac{1}{\sqrt{a^2 - x^2}} \,  dx\)</span>)</p>
 <div class="example-content section" id="proof-content">
+<p>L’integrale</p>
+<div class="math notranslate nohighlight">
+\[\int \frac{1}{\sqrt{a^2 - x^2}} \,  dx\]</div>
+<p>ha senso per intervalli di integrazioni tali che <span class="math notranslate nohighlight">\(|x| \le |a|\)</span>. In questi casi, usando la sostituzione <span class="math notranslate nohighlight">\(x = a \, \sin \theta\)</span>, e il suo differenziale <span class="math notranslate nohighlight">\(dx = a \, \cos \theta \, d \theta\)</span>, si può riscrivere l’integrale come</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \int \frac{1}{\sqrt{a^2 - x^2}} \, dx
+   &amp; = \int \frac{1}{\sqrt{1- \sin^2 \theta}} \cos \theta \, d \theta = \\
+   &amp; = \int \, d \theta = \\
+   &amp; = \theta + C
+   &amp; = \text{arcsin} x + C \ .
+\end{aligned}\end{split}\]</div>
 </div>
 </div><div class="proof example dropdown admonition" id="example-10">
-<p class="admonition-title"><span class="caption-number">Example 25.6 </span> (<span class="math notranslate nohighlight">\(\displaystyle \int \frac{1}{\sqrt{x^2 - a^2}} \,  dx\)</span>)</p>
+<p class="admonition-title"><span class="caption-number">Example 25.6 </span> (<span class="math notranslate nohighlight">\(\displaystyle \int \frac{1}{\sqrt{a^2 + x^2}} \,  dx\)</span>)</p>
 <div class="example-content section" id="proof-content">
+<p>L’integrale</p>
+<div class="math notranslate nohighlight">
+\[\int \frac{1}{\sqrt{a^2 + x^2}} \,  dx\]</div>
+<p>ha senso per ogni intervallo di numeri reali. Si può usare la sostituzione</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+   x &amp; = a \, \sinh \theta \\
+  dx &amp; = a \, \cosh \theta \, d \theta \\
+  \sqrt{a^2 + x^2} &amp; = a \sqrt{1 + \sinh^2 \theta} = a \cosh \theta
+\end{aligned}\end{split}\]</div>
+<p>per utilizzare le proprietà delle funzioni iperboliche e scrivere</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \int \frac{1}{\sqrt{a^2 + x^2}} \, dx
+   &amp; = \int \frac{1}{a \cosh \theta} \, a \cosh \theta \, d \theta = \\
+   &amp; = \int \theta \, d \theta = \\
+   &amp; = \theta + C = \\
+   &amp; = \ln \left[ \frac{x}{a}  +  \sqrt{\left( \frac{x}{a} \right)^2 + 1} \right] \ .
+\end{aligned}\end{split}\]</div>
+</div>
+</div><div class="proof example dropdown admonition" id="example-11">
+<p class="admonition-title"><span class="caption-number">Example 25.7 </span> (<span class="math notranslate nohighlight">\(\displaystyle \int \frac{1}{\sqrt{x^2 - a^2}} \,  dx\)</span>)</p>
+<div class="example-content section" id="proof-content">
+<p>L’integrale</p>
+<div class="math notranslate nohighlight">
+\[\int \frac{1}{\sqrt{x^2 - a^2}} \,  dx\]</div>
+<p>ha senso per intervalli di integrazioni tali che <span class="math notranslate nohighlight">\(|x| \ge |a|\)</span>. In questi casi, si può usare la sostituzione</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+   x &amp; = a \, \cosh \theta \\
+  dx &amp; = a \, \sinh \theta \, d \theta \\
+  \sqrt{x^2 - a^2} &amp; = a \sqrt{\cosh^2 \theta - 1} = a \sinh \theta
+\end{aligned}\end{split}\]</div>
+<p>per utilizzare le proprietà delle funzioni iperboliche e scrivere</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \int \frac{1}{\sqrt{x^2 - a^2}} \, dx
+   &amp; = \int \frac{1}{a \sinh \theta} a \sinh \theta \, d \theta = \\
+   &amp; = \int  d \theta = \\
+   &amp; = \theta + C = \\
+   &amp; = \ln \left[ \frac{x}{a} \pm \sqrt{\left( \frac{x}{a} \right)^2 - 1} \right] + C
+\end{aligned}\end{split}\]</div>
+<p><strong>Osservazione.</strong> Quale segno? Discussione… <strong>todo</strong></p>
 </div>
 </div><p><strong>Radici.</strong></p>
 <div class="math notranslate nohighlight">
@@ -912,8 +993,8 @@ La regola di derivazione del prodotto <span class="math notranslate nohighlight"
   &amp; \sqrt{a + bx + x^2}                                  &amp;&amp; \rightarrow &amp;&amp; a + bx + x^2 = ( z - x )^2 \\
   &amp; \sqrt{a + bx - x^2} = \sqrt{(\alpha + x)(\beta - x)} &amp;&amp; \rightarrow &amp;&amp; a + bx - x^2 = ( \alpha + x )^2 z^2 \\
 \end{aligned}\end{split}\]</div>
-<div class="proof example dropdown admonition" id="example-11">
-<p class="admonition-title"><span class="caption-number">Example 25.7 </span> (<span class="math notranslate nohighlight">\(\displaystyle \int \sqrt[n]{ax+b} \, dx \)</span>)</p>
+<div class="proof example dropdown admonition" id="example-12">
+<p class="admonition-title"><span class="caption-number">Example 25.8 </span> (<span class="math notranslate nohighlight">\(\displaystyle \int \sqrt[n]{ax+b} \, dx \)</span>)</p>
 <div class="example-content section" id="proof-content">
 <p><strong>Metodo 0.</strong></p>
 <div class="math notranslate nohighlight">
@@ -936,8 +1017,8 @@ La regola di derivazione del prodotto <span class="math notranslate nohighlight"
   &amp; = \frac{1}{a} \frac{n}{n+1} (ax+b)^{\frac{n+1}{n}} + C  \ .
 \end{aligned}\end{split}\]</div>
 </div>
-</div><div class="proof example dropdown admonition" id="example-12">
-<p class="admonition-title"><span class="caption-number">Example 25.8 </span> (<span class="math notranslate nohighlight">\(\displaystyle \int \sqrt{a + bx + x^2} \, dx \)</span>)</p>
+</div><div class="proof example dropdown admonition" id="example-13">
+<p class="admonition-title"><span class="caption-number">Example 25.9 </span> (<span class="math notranslate nohighlight">\(\displaystyle \int \sqrt{a + bx + x^2} \, dx \)</span>)</p>
 <div class="example-content section" id="proof-content">
 <p><strong>Metodo 0.</strong> Con completamento del quadrato</p>
 <div class="math notranslate nohighlight">
@@ -949,8 +1030,8 @@ La regola di derivazione del prodotto <span class="math notranslate nohighlight"
 <p>ci si può riportare agli integrali della forma <span class="math notranslate nohighlight">\(\displaystyle \int \sqrt{y^2 - A^2} \, dy\)</span> o <span class="math notranslate nohighlight">\(\displaystyle \int \sqrt{y^2 + A^2} \, dy\)</span> a seconda del valore di <span class="math notranslate nohighlight">\(a - \frac{b^2}{4}\)</span>, con <span class="math notranslate nohighlight">\(y = x+ \frac{b}{2}\)</span>.</p>
 <p><strong>Metodo 1.</strong> Con cambio di variabili</p>
 </div>
-</div><div class="proof example dropdown admonition" id="example-13">
-<p class="admonition-title"><span class="caption-number">Example 25.9 </span> (<span class="math notranslate nohighlight">\(\displaystyle \int \sqrt{a + bx - x^2} \, dx \)</span>)</p>
+</div><div class="proof example dropdown admonition" id="example-14">
+<p class="admonition-title"><span class="caption-number">Example 25.10 </span> (<span class="math notranslate nohighlight">\(\displaystyle \int \sqrt{a + bx - x^2} \, dx \)</span>)</p>
 <div class="example-content section" id="proof-content">
 <p><strong>Metodo 0.</strong> Con completamento del quadrato</p>
 <div class="math notranslate nohighlight">
@@ -967,8 +1048,8 @@ La regola di derivazione del prodotto <span class="math notranslate nohighlight"
 <div class="math notranslate nohighlight">
 \[z = \tan\left( \frac{x}{2} \right) \ ,\]</div>
 <p>risulta utile a trasformare un’integranda dove compaiono funzioni trigonometriche in un’integranda razionale.</p>
-<div class="proof example admonition" id="example-14">
-<p class="admonition-title"><span class="caption-number">Example 25.10 </span> (Razionalizzazione con cambio di variabili <span class="math notranslate nohighlight">\(z = \tan\left( \frac{x}{2} \right)\)</span>.)</p>
+<div class="proof example dropdown admonition" id="example-15">
+<p class="admonition-title"><span class="caption-number">Example 25.11 </span> (Razionalizzazione con cambio di variabili <span class="math notranslate nohighlight">\(z = \tan\left( \frac{x}{2} \right)\)</span>.)</p>
 <div class="example-content section" id="proof-content">
 <p>Usando la definizione della tangente</p>
 <div class="math notranslate nohighlight">
@@ -984,6 +1065,46 @@ La regola di derivazione del prodotto <span class="math notranslate nohighlight"
 \[\sin x = \frac{2 z}{1 + z^2}\]</div>
 <div class="math notranslate nohighlight">
 \[\tan x = \frac{2 z}{1 - z^2}\]</div>
+</div>
+</div></div>
+</div>
+<div class="section" id="frazioni-parziali">
+<h3><span class="section-number">25.4.3. </span>Frazioni parziali<a class="headerlink" href="#frazioni-parziali" title="Permalink to this heading">#</a></h3>
+<p><strong>todo</strong> E” una regola valida per funzioni integrande che possono essere scritte come il rapporto di due polinomi, <span class="math notranslate nohighlight">\(f(x) = \frac{N(x)}{D(x)}\)</span>, e segue direttamente dalla possibilità di scomporre il polinomio a denominatore in polinomi di primo e secondo grado, grazie al <a class="reference internal" href="../precalculus/polynomials.html#math-hs-precalculus-polynomials-alg-fund-thm"><span class="std std-ref">teorema fondamentale dell’algebra</span></a>, e scrivere il rapporto come somma di frazioni.</p>
+<p><strong>todo</strong> <em>descrivere meglio il metodo</em></p>
+<div class="proof example dropdown admonition" id="example-16">
+<p class="admonition-title"><span class="caption-number">Example 25.12 </span> (Integrazione con frazioni parziali)</p>
+<div class="example-content section" id="proof-content">
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \int \frac{3 x^2 + 1}{ x + 2} \, dx
+  &amp; = \int \frac{3 x^2 + 6x - 6x + 1}{x+2} \,dx = \\
+  &amp; = \int \left[ 3 x + \frac{-6 x - 12 + 12 +1 }{x + 2} \right] \, dx = \\
+  &amp; = \int \left[ 3 x - 6 + 13 \, \frac{1}{x + 2} \right] \, dx = \\
+  &amp; = \frac{3}{2} x^2 - 6 x + 13 \ln |x+2| + C \ .
+\end{aligned}\end{split}\]</div>
+</div>
+</div><div class="proof example dropdown admonition" id="example-17">
+<p class="admonition-title"><span class="caption-number">Example 25.13 </span> (Integrazione con frazioni parziali)</p>
+<div class="example-content section" id="proof-content">
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \int \frac{2x + 1}{x^2 + 4x + 3} \, dx 
+  &amp; = \int \frac{2x + 1}{(x+1)(x+3)} \, dx= \\
+  &amp; = \int \left[ \frac{A}{x+1} + \frac{B}{x+3} \right] \, dx \ .
+\end{aligned}\end{split}\]</div>
+<p>I valori dei coefficienti <span class="math notranslate nohighlight">\(A\)</span> e <span class="math notranslate nohighlight">\(B\)</span> vengono calcolati imponendo che la somma di frazioni sia uguale alla frazione di partenza. RIportando a fattore comune la somma delle due frazioni, e uguagliando il numeratore della frazione ottenuta con il numeratore della frazione di partenza si ottiene</p>
+<div class="math notranslate nohighlight">
+\[A (x+3) + B(x+1) = 2x + 1 \ ,\]</div>
+<p>che, dovendo essere vera per ogni valore di <span class="math notranslate nohighlight">\(x\)</span>, eqivale al sistema di due equazioni in due incognite (una per ogni potenza di <span class="math notranslate nohighlight">\(x\)</span> che compare nella condizione),</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+  3 A + B = 1 \\
+  A + B = 2
+\end{cases}\end{split}\]</div>
+<p>la cui soluzione è <span class="math notranslate nohighlight">\(A = -\frac{1}{2}\)</span>, <span class="math notranslate nohighlight">\(B = \frac{5}{2}\)</span>. L’integrale quindi diventa</p>
+<div class="math notranslate nohighlight">
+\[\int \frac{2x + 1}{x^2 + 4x + 3} \, dx= -\frac{1}{2} \ln |x+1| + \frac{5}{2} \ln |x + 3| + C \ .\]</div>
 </div>
 </div></div>
 </div>
@@ -1027,7 +1148,7 @@ La regola di derivazione del prodotto <span class="math notranslate nohighlight"
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">precedente</p>
-        <p class="prev-next-title"><span class="section-number">24.10. </span>Note e dimostrazioni</p>
+        <p class="prev-next-title"><span class="section-number">24.11. </span>Note e dimostrazioni</p>
       </div>
     </a>
     <a class="right-next"
@@ -1072,8 +1193,11 @@ La regola di derivazione del prodotto <span class="math notranslate nohighlight"
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-fondamentali">25.3. Integrali fondamentali</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regole-di-integrazione">25.4. Regole di integrazione</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integrazione-per-parti">25.4.1. Integrazione per parti</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#frazioni-parziali">25.4.2. Frazioni parziali</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integrazione-con-sostituzione">25.4.3. Integrazione con sostituzione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integrazione-con-sostituzione">25.4.2. Integrazione con sostituzione</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sostituzioni-utili">25.4.2.1. Sostituzioni utili</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#frazioni-parziali">25.4.3. Frazioni parziali</a></li>
 </ul>
 </li>
 </ul>
