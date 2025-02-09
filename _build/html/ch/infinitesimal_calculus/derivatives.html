@@ -71,7 +71,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="24.9. Problemi" href="derivatives-problems.html" />
+    <link rel="next" title="24.10. Problemi" href="derivatives-problems.html" />
     <link rel="prev" title="23.10. Note e dimostrazioni" href="analysis-notes.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
@@ -251,8 +251,8 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">24. Derivate</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="derivatives-problems.html">24.9. Problemi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="derivatives-notes.html">24.10. Note e dimostrazioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="derivatives-problems.html">24.10. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="derivatives-notes.html">24.11. Note e dimostrazioni</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="integrals.html">25. Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -495,26 +495,27 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definizione">24.1. Definizione</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretazione-geometrica">24.2. Interpretazione geometrica</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regole-di-derivazione">24.3. Regole di derivazione</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoremi">24.4. Teoremi</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-fermat">24.4.1. Teorema di Fermat</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-rolle">24.4.2. Teorema di Rolle</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-cauchy">24.4.3. Teorema di Cauchy</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-lagrange">24.4.4. Teorema di Lagrange</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-de-l-hopital">24.4.5. Teorema di de l’Hopital</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#incremento-di-una-funzione-e-differenziale">24.3. Incremento di una funzione e differenziale</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regole-di-derivazione">24.4. Regole di derivazione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoremi">24.5. Teoremi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-fermat">24.5.1. Teorema di Fermat</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-rolle">24.5.2. Teorema di Rolle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-cauchy">24.5.3. Teorema di Cauchy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-lagrange">24.5.4. Teorema di Lagrange</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-de-l-hopital">24.5.5. Teorema di de l’Hopital</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#derivate-fondamentali">24.5. Derivate fondamentali</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#derivate-di-ordine-superiore">24.6. Derivate di ordine superiore</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#serie-di-taylor-e-maclaurin">24.7. Serie di Taylor e MacLaurin</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">24.7.1. Esempi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#derivate-fondamentali">24.6. Derivate fondamentali</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#derivate-di-ordine-superiore">24.7. Derivate di ordine superiore</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#serie-di-taylor-e-maclaurin">24.8. Serie di Taylor e MacLaurin</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">24.8.1. Esempi</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applicazioni">24.8. Applicazioni</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#approssimazioni-locali">24.8.1. Approssimazioni locali</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#studio-di-funzione">24.8.2. Studio di funzione</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ottimizzazione">24.8.3. Ottimizzazione</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-di-netwon">24.8.4. Metodo di Netwon</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applicazioni">24.9. Applicazioni</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#approssimazioni-locali">24.9.1. Approssimazioni locali</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#studio-di-funzione">24.9.2. Studio di funzione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ottimizzazione">24.9.3. Ottimizzazione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-di-netwon">24.9.4. Metodo di Netwon</a></li>
 </ul>
 </li>
 </ul>
@@ -532,13 +533,25 @@ document.write(`
 <span id="infinitesimal-calculus-derivatives"></span><h1><span class="section-number">24. </span>Derivate<a class="headerlink" href="#derivate" title="Permalink to this heading">#</a></h1>
 <div class="section" id="definizione">
 <span id="infinitesimal-calculus-derivatives-def"></span><h2><span class="section-number">24.1. </span>Definizione<a class="headerlink" href="#definizione" title="Permalink to this heading">#</a></h2>
-<p><strong>Rapporto incrementale.</strong> Il rapporto incrementale di una funzione reale nel punto <span class="math notranslate nohighlight">\(x\)</span> viene definito come il rapporto tra la differenza dei valori della funzione e la differenza del valore della variabile indipendente</p>
+<div class="proof definition admonition" id="definition-0">
+<p class="admonition-title"><span class="caption-number">Definition 24.1 </span> (Rapporto incrementale)</p>
+<div class="definition-content section" id="proof-content">
+<p>Il rapporto incrementale di una funzione reale nel punto <span class="math notranslate nohighlight">\(x\)</span> viene definito come il rapporto tra la differenza dei valori della funzione e la differenza del valore della variabile indipendente</p>
 <div class="math notranslate nohighlight" id="equation-eq-infinitesimal-calculus-derivatives-def-delta">
-<span class="eqno">(24.1)<a class="headerlink" href="#equation-eq-infinitesimal-calculus-derivatives-def-delta" title="Permalink a questa equazione">#</a></span>\[R[f(\cdot), x, a] := \dfrac{f(x+a)-f(x)}{a} \ .\]</div>
-<p><strong>Derivata.</strong> La derivata di una funzione reale in un punto <span class="math notranslate nohighlight">\(x\)</span> viene definita come il limite del rapporto incrementale, per l’incremento della variabile indipendente che tende a zero,</p>
+<span class="eqno">(24.1)<a class="headerlink" href="#equation-eq-infinitesimal-calculus-derivatives-def-delta" title="Permalink a questa equazione">#</a></span>\[R[f(\cdot), x, h] := \dfrac{f(x+h)-f(x)}{h} \ .\]</div>
+</div>
+</div><div class="proof definition admonition" id="definition-1">
+<p class="admonition-title"><span class="caption-number">Definition 24.2 </span> (Derivata)</p>
+<div class="definition-content section" id="proof-content">
+<p>La derivata di una funzione reale in un punto <span class="math notranslate nohighlight">\(x\)</span> viene definita come il limite del rapporto incrementale, per l’incremento della variabile indipendente che tende a zero,</p>
 <div class="math notranslate nohighlight" id="equation-eq-infinitesimal-calculus-derivatives-def">
-<span class="eqno">(24.2)<a class="headerlink" href="#equation-eq-infinitesimal-calculus-derivatives-def" title="Permalink a questa equazione">#</a></span>\[f'(x) = \dfrac{d f}{d x}(x) := \lim_{a \rightarrow 0} \dfrac{f(x+a)-f(x)}{a} \ .\]</div>
-<p><strong>todo</strong> <em>In generale, la derivata di una funzione reale è un’altra funzione reale.</em></p>
+<span class="eqno">(24.2)<a class="headerlink" href="#equation-eq-infinitesimal-calculus-derivatives-def" title="Permalink a questa equazione">#</a></span>\[f'(x) = \dfrac{d f}{d x}(x) := \lim_{h \rightarrow 0} \dfrac{f(x+h)-f(x)}{h} \ .\]</div>
+</div>
+</div><p><strong>todo</strong> <em>In generale, la derivata di una funzione reale è un’altra funzione reale.</em></p>
+<p>Il limite nella definizione <a class="reference internal" href="#equation-eq-infinitesimal-calculus-derivatives-def">(24.2)</a> della derivata ha la diretta conseguenza di poter scrivere</p>
+<div class="math notranslate nohighlight" id="equation-eq-infinitesimal-calculus-derivative-def-expansion">
+<span class="eqno">(24.3)<a class="headerlink" href="#equation-eq-infinitesimal-calculus-derivative-def-expansion" title="Permalink a questa equazione">#</a></span>\[f(x+h) = f(x) + h \, f'(x) + o(h) \ ,\]</div>
+<p>cioè un’approssimazione al primo grado in <span class="math notranslate nohighlight">\(h\)</span> di <span class="math notranslate nohighlight">\(f(x+h)\)</span> centrata in <span class="math notranslate nohighlight">\(x\)</span>. Per una trattazione più completa delle approssimazioni polinomiali di funzioni, e al ruolo delle derivate in queste, si rimanda alla sezione sulle <a class="reference internal" href="#infinitesimal-calculus-derivatives-taylor"><span class="std std-ref">serie di Taylor e MacLaurin</span></a>.</p>
 </div>
 <div class="section" id="interpretazione-geometrica">
 <span id="infinitesimal-calculus-derivatives-geom"></span><h2><span class="section-number">24.2. </span>Interpretazione geometrica<a class="headerlink" href="#interpretazione-geometrica" title="Permalink to this heading">#</a></h2>
@@ -553,34 +566,70 @@ document.write(`
 </tbody>
 </table>
 </div>
+<div class="section" id="incremento-di-una-funzione-e-differenziale">
+<span id="infinitesimal-calculus-derivatives-differential"></span><h2><span class="section-number">24.3. </span>Incremento di una funzione e differenziale<a class="headerlink" href="#incremento-di-una-funzione-e-differenziale" title="Permalink to this heading">#</a></h2>
+<div class="proof definition admonition" id="definition-2">
+<p class="admonition-title"><span class="caption-number">Definition 24.3 </span> (Incremento di una funzione)</p>
+<div class="definition-content section" id="proof-content">
+<p>L’incremento di una funzione <span class="math notranslate nohighlight">\(f\)</span> in seguito all’incremento <span class="math notranslate nohighlight">\(h\)</span> della variabile indipendente <span class="math notranslate nohighlight">\(x\)</span> è</p>
+<div class="math notranslate nohighlight">
+\[\Delta f (x, h) := f(x+h) - f(x) \ .\]</div>
+</div>
+</div><div class="proof definition admonition" id="definition-3">
+<p class="admonition-title"><span class="caption-number">Definition 24.4 </span> (Differenziale di una funzione)</p>
+<div class="definition-content section" id="proof-content">
+<p>Il differenziale di una funzione <span class="math notranslate nohighlight">\(f\)</span> può essere definito come il termine di primo ordine in <span class="math notranslate nohighlight">\(h\)</span> dell’incremento <span class="math notranslate nohighlight">\(\Delta f(x,h)\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\Delta f(x,h) = d f(x,h) + o(h) \ ,\]</div>
+<p>e risulta uguale a</p>
+<div class="math notranslate nohighlight" id="equation-eq-infinitesimal-calculus-derivative-differential">
+<span class="eqno">(24.4)<a class="headerlink" href="#equation-eq-infinitesimal-calculus-derivative-differential" title="Permalink a questa equazione">#</a></span>\[d f(x, h) = f'(x) \, h \, .\]</div>
+</div>
+</div><p>Il confronto con la relazione <a class="reference internal" href="#equation-eq-infinitesimal-calculus-derivative-def-expansion">(24.3)</a> permette di scrivere</p>
+<div class="math notranslate nohighlight">
+\[\Delta f(x,h) = f(x+h) - f(x) = h f'(x) + o(h) \ ,\]</div>
+<p>e quindi dimostrare la relazione <a class="reference internal" href="#equation-eq-infinitesimal-calculus-derivative-differential">(24.4)</a> usata per introdurre il concetto di differenziale.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>il differenziale della funzione <span class="math notranslate nohighlight">\(f(x) = x\)</span> è uguale a</p>
+<div class="math notranslate nohighlight">
+\[d x(x,h) = \dfrac{d}{dx} x \, h = h \ ,\]</div>
+<p>e quindi si può scrivere nella definizione di differenziale</p>
+<div class="math notranslate nohighlight">
+\[h = dx\]</div>
+<p>e quindi</p>
+<div class="math notranslate nohighlight">
+\[d f = f'(x) \, dx \ .\]</div>
+</div>
+</div>
 <div class="section" id="regole-di-derivazione">
-<span id="infinitesimal-calculus-derivatives-rules"></span><h2><span class="section-number">24.3. </span>Regole di derivazione<a class="headerlink" href="#regole-di-derivazione" title="Permalink to this heading">#</a></h2>
+<span id="infinitesimal-calculus-derivatives-rules"></span><h2><span class="section-number">24.4. </span>Regole di derivazione<a class="headerlink" href="#regole-di-derivazione" title="Permalink to this heading">#</a></h2>
 <p>Usando la definizione <a class="reference internal" href="#equation-eq-infinitesimal-calculus-derivatives-def">(24.2)</a> di derivata e le proprietà dei limiti, è possibile dimostrare le seguenti proprietà</p>
 <ul class="simple">
 <li><p>linearità</p></li>
 </ul>
 <div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-derivatives-rules-linearity">
-<span class="eqno">(24.3)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-rules-linearity" title="Permalink a questa equazione">#</a></span>\[\big( a \, f(x) + b \, g(x) \big)' = a \, f'(x) + b \, g'(x)\]</div>
+<span class="eqno">(24.5)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-rules-linearity" title="Permalink a questa equazione">#</a></span>\[\big( a \, f(x) + b \, g(x) \big)' = a \, f'(x) + b \, g'(x)\]</div>
 <ul class="simple">
 <li><p>derivata del prodotto di funzioni</p></li>
 </ul>
 <div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-derivatives-rules-product">
-<span class="eqno">(24.4)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-rules-product" title="Permalink a questa equazione">#</a></span>\[\Bigl( f(x) g(x) \Bigr)' = f'(x) g(x) + f(x) g'(x)\]</div>
+<span class="eqno">(24.6)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-rules-product" title="Permalink a questa equazione">#</a></span>\[\Bigl( f(x) g(x) \Bigr)' = f'(x) g(x) + f(x) g'(x)\]</div>
 <ul class="simple">
 <li><p>derivata del rapporto di funzioni</p></li>
 </ul>
 <div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-derivatives-rules-division">
-<span class="eqno">(24.5)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-rules-division" title="Permalink a questa equazione">#</a></span>\[\left( \frac{f(x)}{g(x)} \right)' = \frac{f'(x) g(x) - f(x) g'(x)}{g^2(x)}\]</div>
+<span class="eqno">(24.7)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-rules-division" title="Permalink a questa equazione">#</a></span>\[\left( \frac{f(x)}{g(x)} \right)' = \frac{f'(x) g(x) - f(x) g'(x)}{g^2(x)}\]</div>
 <ul class="simple">
 <li><p>derivata della funzione composta</p></li>
 </ul>
 <div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-derivatives-rules-composite">
-<span class="eqno">(24.6)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-rules-composite" title="Permalink a questa equazione">#</a></span>\[\frac{d}{dx} f\big( g(x) \big) = \frac{d f}{dy}\Big|_{y=g(x)} \dfrac{d g}{d x}\Big|_{x}\]</div>
+<span class="eqno">(24.8)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-rules-composite" title="Permalink a questa equazione">#</a></span>\[\frac{d}{dx} f\big( g(x) \big) = \frac{d f}{dy}\Big|_{y=g(x)} \dfrac{d g}{d x}\Big|_{x}\]</div>
 <ul class="simple">
 <li><p>derivata della funzione inversa, <span class="math notranslate nohighlight">\(y = f(x)\)</span>, <span class="math notranslate nohighlight">\(x = f^{-1}(y)\)</span></p></li>
 </ul>
 <div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-derivatives-rules-inverse">
-<span class="eqno">(24.7)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-rules-inverse" title="Permalink a questa equazione">#</a></span>\[ \dfrac{d f^{-1}}{d y}\bigg|_{y = f(x)} = \dfrac{1}{ \dfrac{d y}{d x}\bigg|_{x}} \ .\]</div>
+<span class="eqno">(24.9)<a class="headerlink" href="#equation-infinitesimal-calculus-derivatives-rules-inverse" title="Permalink a questa equazione">#</a></span>\[ \dfrac{d f^{-1}}{d y}\bigg|_{y = f(x)} = \dfrac{1}{ \dfrac{d y}{d x}\bigg|_{x}} \ .\]</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Dimostrazione della linearità dell’operazione di derivazione<div class="sd-summary-down docutils">
@@ -664,7 +713,7 @@ Dimostrazione della regola della funzione inversa<div class="sd-summary-down doc
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Si usa la regola <a class="reference internal" href="#equation-infinitesimal-calculus-derivatives-rules-composite">(24.6)</a> di derivazione della funzione composta applicata alla relazione</p>
+<p class="sd-card-text">Si usa la regola <a class="reference internal" href="#equation-infinitesimal-calculus-derivatives-rules-composite">(24.8)</a> di derivazione della funzione composta applicata alla relazione</p>
 <div class="math notranslate nohighlight">
 \[x = f^{-1} \left( f(x) \right)\]</div>
 <p class="sd-card-text">che caratterizza la funzione inversa <span class="math notranslate nohighlight">\(f^{-1}\)</span>. Derivando entrambi i termini della relazione rispetto alla variabile indipendente <span class="math notranslate nohighlight">\(x\)</span> si ottiene</p>
@@ -676,9 +725,9 @@ Dimostrazione della regola della funzione inversa<div class="sd-summary-down doc
 </div>
 </details></div>
 <div class="section" id="teoremi">
-<span id="infinitesimal-calculus-derivatives-thm"></span><h2><span class="section-number">24.4. </span>Teoremi<a class="headerlink" href="#teoremi" title="Permalink to this heading">#</a></h2>
+<span id="infinitesimal-calculus-derivatives-thm"></span><h2><span class="section-number">24.5. </span>Teoremi<a class="headerlink" href="#teoremi" title="Permalink to this heading">#</a></h2>
 <div class="section" id="teorema-di-fermat">
-<span id="infinitesimal-calculus-derivatives-thm-fermat"></span><h3><span class="section-number">24.4.1. </span>Teorema di Fermat<a class="headerlink" href="#teorema-di-fermat" title="Permalink to this heading">#</a></h3>
+<span id="infinitesimal-calculus-derivatives-thm-fermat"></span><h3><span class="section-number">24.5.1. </span>Teorema di Fermat<a class="headerlink" href="#teorema-di-fermat" title="Permalink to this heading">#</a></h3>
 <div class="proof theorem admonition" id="thm:infinitesimal-calculus:derivatives:thm:fermat">
 <p class="admonition-title"><span class="caption-number">Theorem 24.1 </span> (Teorema di Fermat)</p>
 <div class="theorem-content section" id="proof-content">
@@ -724,7 +773,7 @@ La dimostrazione del teorema di Fermat...
 -->
 </div>
 <div class="section" id="teorema-di-rolle">
-<span id="infinitesimal-calculus-derivatives-thm-rolle"></span><h3><span class="section-number">24.4.2. </span>Teorema di Rolle<a class="headerlink" href="#teorema-di-rolle" title="Permalink to this heading">#</a></h3>
+<span id="infinitesimal-calculus-derivatives-thm-rolle"></span><h3><span class="section-number">24.5.2. </span>Teorema di Rolle<a class="headerlink" href="#teorema-di-rolle" title="Permalink to this heading">#</a></h3>
 <div class="proof theorem admonition" id="thm:infinitesimal-calculus:derivatives:thm:rolle">
 <p class="admonition-title"><span class="caption-number">Theorem 24.2 </span> (Teorema di Rolle)</p>
 <div class="theorem-content section" id="proof-content">
@@ -758,7 +807,7 @@ Dimostrazione<div class="sd-summary-down docutils">
 </div>
 </details></div>
 <div class="section" id="teorema-di-cauchy">
-<span id="infinitesimal-calculus-derivatives-thm-cauchy"></span><h3><span class="section-number">24.4.3. </span>Teorema di Cauchy<a class="headerlink" href="#teorema-di-cauchy" title="Permalink to this heading">#</a></h3>
+<span id="infinitesimal-calculus-derivatives-thm-cauchy"></span><h3><span class="section-number">24.5.3. </span>Teorema di Cauchy<a class="headerlink" href="#teorema-di-cauchy" title="Permalink to this heading">#</a></h3>
 <div class="proof theorem admonition" id="thm:infinitesimal-calculus:derivatives:thm:cauchy">
 <p class="admonition-title"><span class="caption-number">Theorem 24.3 </span> (Teorema di Cauchy)</p>
 <div class="theorem-content section" id="proof-content">
@@ -780,7 +829,7 @@ Dimostrazione<div class="sd-summary-down docutils">
 </div>
 </details></div>
 <div class="section" id="teorema-di-lagrange">
-<span id="infinitesimal-calculus-derivatives-thm-lagrange"></span><h3><span class="section-number">24.4.4. </span>Teorema di Lagrange<a class="headerlink" href="#teorema-di-lagrange" title="Permalink to this heading">#</a></h3>
+<span id="infinitesimal-calculus-derivatives-thm-lagrange"></span><h3><span class="section-number">24.5.4. </span>Teorema di Lagrange<a class="headerlink" href="#teorema-di-lagrange" title="Permalink to this heading">#</a></h3>
 <div class="proof theorem admonition" id="thm:infinitesimal-calculus:derivatives:thm:lagrange">
 <p class="admonition-title"><span class="caption-number">Theorem 24.4 </span> (Theorema di Lagrange)</p>
 <div class="theorem-content section" id="proof-content">
@@ -808,7 +857,7 @@ Dimostrazione<div class="sd-summary-down docutils">
 </div>
 </details></div>
 <div class="section" id="teorema-di-de-l-hopital">
-<span id="infinitesimal-calculus-derivatives-thm-hopital"></span><h3><span class="section-number">24.4.5. </span>Teorema di de l’Hopital<a class="headerlink" href="#teorema-di-de-l-hopital" title="Permalink to this heading">#</a></h3>
+<span id="infinitesimal-calculus-derivatives-thm-hopital"></span><h3><span class="section-number">24.5.5. </span>Teorema di de l’Hopital<a class="headerlink" href="#teorema-di-de-l-hopital" title="Permalink to this heading">#</a></h3>
 <div class="proof theorem admonition" id="thm:infinitesimal-calculus:derivatives:thm:hopital">
 <p class="admonition-title"><span class="caption-number">Theorem 24.5 </span> (Teorema di de l’Hopital )</p>
 <div class="theorem-content section" id="proof-content">
@@ -840,10 +889,10 @@ Dimostrazione<div class="sd-summary-down docutils">
 </div>
 </div>
 <div class="section" id="derivate-fondamentali">
-<span id="infinitesimal-calculus-derivatives-fund"></span><h2><span class="section-number">24.5. </span>Derivate fondamentali<a class="headerlink" href="#derivate-fondamentali" title="Permalink to this heading">#</a></h2>
+<span id="infinitesimal-calculus-derivatives-fund"></span><h2><span class="section-number">24.6. </span>Derivate fondamentali<a class="headerlink" href="#derivate-fondamentali" title="Permalink to this heading">#</a></h2>
 <p>Usando i <a class="reference internal" href="analysis.html#infinitesimal-calculus-limits-fund"><span class="std std-ref">limiti fondamentali</span></a>, vengono calcolate le derivate fondamentali, che a loro volta permettono il calcolo degli <a class="reference internal" href="integrals.html#infinitesimal-calculus-integrals-fund"><span class="std std-ref">integrali fondamentali</span></a>. Le derivate fondamentali e la loro combinazione con le <a class="reference internal" href="#infinitesimal-calculus-derivatives-rules"><span class="std std-ref">regole di derivazione</span></a> permettono la derivazione di funzioni generiche. Le derivate fondamentali sono:</p>
 <div class="math notranslate nohighlight" id="equation-eq-infinitesimal-calculus-derivatives-fund">
-<span class="eqno">(24.8)<a class="headerlink" href="#equation-eq-infinitesimal-calculus-derivatives-fund" title="Permalink a questa equazione">#</a></span>\[\begin{split}\begin{aligned}
+<span class="eqno">(24.10)<a class="headerlink" href="#equation-eq-infinitesimal-calculus-derivatives-fund" title="Permalink a questa equazione">#</a></span>\[\begin{split}\begin{aligned}
 f(x) &amp; = x^n    \qquad &amp; \qquad f'(x) &amp; = n x^{n-1}   \\ 
 f(x) &amp; = e^x    \qquad &amp; \qquad f'(x) &amp; = e^x         \\ 
 f(x) &amp; = \ln x  \qquad &amp; \qquad f'(x) &amp; = \frac{1}{x} \\ 
@@ -941,11 +990,11 @@ Dimostrazione di <span class="math notranslate nohighlight">\(\ (\cos x)'\)</spa
 </div>
 </details></div>
 <div class="section" id="derivate-di-ordine-superiore">
-<span id="infinitesimal-calculus-derivatives-higher"></span><h2><span class="section-number">24.6. </span>Derivate di ordine superiore<a class="headerlink" href="#derivate-di-ordine-superiore" title="Permalink to this heading">#</a></h2>
+<span id="infinitesimal-calculus-derivatives-higher"></span><h2><span class="section-number">24.7. </span>Derivate di ordine superiore<a class="headerlink" href="#derivate-di-ordine-superiore" title="Permalink to this heading">#</a></h2>
 <p>Nel calcolo delle derivate di ordine superiore non c’è nulla di speciale: una volta che si è in grado di calcolare la derivata di una funzione reale, la derivata di ordine <span class="math notranslate nohighlight">\(n\)</span> viene calcolata applicando <span class="math notranslate nohighlight">\(n\)</span> volte l’operatore derivata alla funzione.</p>
 </div>
 <div class="section" id="serie-di-taylor-e-maclaurin">
-<span id="infinitesimal-calculus-derivatives-taylor"></span><h2><span class="section-number">24.7. </span>Serie di Taylor e MacLaurin<a class="headerlink" href="#serie-di-taylor-e-maclaurin" title="Permalink to this heading">#</a></h2>
+<span id="infinitesimal-calculus-derivatives-taylor"></span><h2><span class="section-number">24.8. </span>Serie di Taylor e MacLaurin<a class="headerlink" href="#serie-di-taylor-e-maclaurin" title="Permalink to this heading">#</a></h2>
 <p>Le espansioni in serie di Taylor e di MacLaurin sono serie polinomiali che forniscono un”<strong>approssimazione locale</strong> di una funzione, <em>valida nell’intorno</em> (<strong>todo</strong> valutare questa espressione) di un punto.</p>
 <p>La <strong>serie di Taylor</strong> della funzione <span class="math notranslate nohighlight">\(f(x)\)</span> in un intervallo centrato in <span class="math notranslate nohighlight">\(x_0\)</span> è la serie</p>
 <div class="math notranslate nohighlight">
@@ -958,17 +1007,20 @@ Dimostrazione di <span class="math notranslate nohighlight">\(\ (\cos x)'\)</spa
 \[T_N[f(x); x_0] = \sum_{n=0}^{N} \dfrac{f^{(n)}(x_0)}{n!} (x-x_0)^n \ .\]</div>
 <p>La serie di Taylor troncata al <span class="math notranslate nohighlight">\(N\)</span>-esimo termine fornisce un’approssimazione locale della funzione <span class="math notranslate nohighlight">\(f(x)\)</span> di ordine <span class="math notranslate nohighlight">\(n\)</span>, nel senso definito dal seguente teorema.</p>
 <div class="proof theorem admonition" id="thm:infinitesimal-calculus:derivatives:taylor">
-<p class="admonition-title"><span class="caption-number">Theorem 24.6 </span> (Approssimazione locale - 1)</p>
+<p class="admonition-title"><span class="caption-number">Theorem 24.6 </span> (Approssimazione locale)</p>
 <div class="theorem-content section" id="proof-content">
-<p><strong>todo</strong> <em>Ipotesi del teorema</em>. Valgono i seguenti risultati:</p>
+<p><strong>todo</strong> <em>Ipotesi del teorema</em>.</p>
+<p>Valgono i seguenti risultati di approssimazione locale</p>
 <ul>
-<li><div class="math notranslate nohighlight">
-\[\lim_{x \rightarrow x_0} \frac{f(x) - T_N[f(x); x_0]}{x^N} = 0 \ , \]</div>
+<li><p>La serie di Taylor di ordine <span class="math notranslate nohighlight">\(N\)</span> è un’approssimazione locale di ordine <span class="math notranslate nohighlight">\(N\)</span> della funzione</p>
+<div class="math notranslate nohighlight">
+\[\lim_{x \rightarrow x_0} \frac{f(x) - T_N[f(x); x_0]}{(x-x_0)^N} = 0 \ , \]</div>
 <p>o usando la notazione di «o piccolo» per il <a class="reference internal" href="analysis.html#infinitesimal-calculus-limits-infinite-simal"><span class="std std-ref">confronto di infinitesimi</span></a>,</p>
 <div class="math notranslate nohighlight">
 \[f(x) = T_N[f(x); x_0] + o\left((x-x_0)^N\right) \quad \text{ per } \quad x \rightarrow x_0 \ .\]</div>
 </li>
-<li><div class="math notranslate nohighlight">
+<li><p>L’errore di approssimazione di ordine <span class="math notranslate nohighlight">\(N+1\)</span> è asintotico a</p>
+<div class="math notranslate nohighlight">
 \[f(x) - T_N[f(x); x_0] \sim \frac{f^{(N+1)}}{(N+1)!} (x - x_0)^{N+1} \quad x \rightarrow x_0 \ \]</div>
 </li>
 </ul>
@@ -1003,10 +1055,10 @@ Dimostrazione<div class="sd-summary-down docutils">
 \]</div>
 </div>
 </details><div class="section" id="esempi">
-<h3><span class="section-number">24.7.1. </span>Esempi<a class="headerlink" href="#esempi" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">24.8.1. </span>Esempi<a class="headerlink" href="#esempi" title="Permalink to this heading">#</a></h3>
 <p>La serie di MacLaurin per le funzioni interessate nei <a class="reference internal" href="analysis.html#infinitesimal-calculus-limits-fund"><span class="std std-ref">limiti notevoli</span></a> forniscono approssimazioni locali di ordine maggiore per <span class="math notranslate nohighlight">\(x \rightarrow 0\)</span>,</p>
 <div class="math notranslate nohighlight" id="equation-eq-infinitesimal-calculus-derivatives-taylor-fund-limits">
-<span class="eqno">(24.9)<a class="headerlink" href="#equation-eq-infinitesimal-calculus-derivatives-taylor-fund-limits" title="Permalink a questa equazione">#</a></span>\[\begin{split}\begin{aligned}
+<span class="eqno">(24.11)<a class="headerlink" href="#equation-eq-infinitesimal-calculus-derivatives-taylor-fund-limits" title="Permalink a questa equazione">#</a></span>\[\begin{split}\begin{aligned}
  \cos(x) &amp; = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} + o(x^5) \\
  \sin(x) &amp; = x - \frac{x^3}{3!} + \frac{x^5}{5!} + o(x^6) \\
  \ln (1+x) &amp; = x - \frac{x^2}{2} + \frac{x^3}{3} + o(x^3) \\
@@ -1034,18 +1086,18 @@ e^{ix} &amp; = 1 + ix + \frac{(ix)^2}{2!} + \frac{(ix)^3}{3!} + \frac{(ix)^4}{4!
 </div>
 </div>
 <div class="section" id="applicazioni">
-<span id="infinitesimal-calculus-derivatives-applications"></span><h2><span class="section-number">24.8. </span>Applicazioni<a class="headerlink" href="#applicazioni" title="Permalink to this heading">#</a></h2>
+<span id="infinitesimal-calculus-derivatives-applications"></span><h2><span class="section-number">24.9. </span>Applicazioni<a class="headerlink" href="#applicazioni" title="Permalink to this heading">#</a></h2>
 <div class="section" id="approssimazioni-locali">
-<h3><span class="section-number">24.8.1. </span>Approssimazioni locali<a class="headerlink" href="#approssimazioni-locali" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">24.9.1. </span>Approssimazioni locali<a class="headerlink" href="#approssimazioni-locali" title="Permalink to this heading">#</a></h3>
 </div>
 <div class="section" id="studio-di-funzione">
-<h3><span class="section-number">24.8.2. </span>Studio di funzione<a class="headerlink" href="#studio-di-funzione" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">24.9.2. </span>Studio di funzione<a class="headerlink" href="#studio-di-funzione" title="Permalink to this heading">#</a></h3>
 </div>
 <div class="section" id="ottimizzazione">
-<h3><span class="section-number">24.8.3. </span>Ottimizzazione<a class="headerlink" href="#ottimizzazione" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">24.9.3. </span>Ottimizzazione<a class="headerlink" href="#ottimizzazione" title="Permalink to this heading">#</a></h3>
 </div>
 <div class="section" id="metodo-di-netwon">
-<span id="infinitesimal-calculus-derivatives-applications-newton"></span><h3><span class="section-number">24.8.4. </span>Metodo di Netwon<a class="headerlink" href="#metodo-di-netwon" title="Permalink to this heading">#</a></h3>
+<span id="infinitesimal-calculus-derivatives-applications-newton"></span><h3><span class="section-number">24.9.4. </span>Metodo di Netwon<a class="headerlink" href="#metodo-di-netwon" title="Permalink to this heading">#</a></h3>
 </div>
 </div>
 <div class="toctree-wrapper compound">
@@ -1096,7 +1148,7 @@ e^{ix} &amp; = 1 + ix + \frac{(ix)^2}{2!} + \frac{(ix)^3}{3!} + \frac{(ix)^4}{4!
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">24.9. </span>Problemi</p>
+        <p class="prev-next-title"><span class="section-number">24.10. </span>Problemi</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1117,26 +1169,27 @@ e^{ix} &amp; = 1 + ix + \frac{(ix)^2}{2!} + \frac{(ix)^3}{3!} + \frac{(ix)^4}{4!
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definizione">24.1. Definizione</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretazione-geometrica">24.2. Interpretazione geometrica</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regole-di-derivazione">24.3. Regole di derivazione</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoremi">24.4. Teoremi</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-fermat">24.4.1. Teorema di Fermat</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-rolle">24.4.2. Teorema di Rolle</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-cauchy">24.4.3. Teorema di Cauchy</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-lagrange">24.4.4. Teorema di Lagrange</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-de-l-hopital">24.4.5. Teorema di de l’Hopital</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#incremento-di-una-funzione-e-differenziale">24.3. Incremento di una funzione e differenziale</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regole-di-derivazione">24.4. Regole di derivazione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoremi">24.5. Teoremi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-fermat">24.5.1. Teorema di Fermat</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-rolle">24.5.2. Teorema di Rolle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-cauchy">24.5.3. Teorema di Cauchy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-lagrange">24.5.4. Teorema di Lagrange</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-de-l-hopital">24.5.5. Teorema di de l’Hopital</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#derivate-fondamentali">24.5. Derivate fondamentali</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#derivate-di-ordine-superiore">24.6. Derivate di ordine superiore</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#serie-di-taylor-e-maclaurin">24.7. Serie di Taylor e MacLaurin</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">24.7.1. Esempi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#derivate-fondamentali">24.6. Derivate fondamentali</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#derivate-di-ordine-superiore">24.7. Derivate di ordine superiore</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#serie-di-taylor-e-maclaurin">24.8. Serie di Taylor e MacLaurin</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">24.8.1. Esempi</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applicazioni">24.8. Applicazioni</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#approssimazioni-locali">24.8.1. Approssimazioni locali</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#studio-di-funzione">24.8.2. Studio di funzione</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ottimizzazione">24.8.3. Ottimizzazione</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-di-netwon">24.8.4. Metodo di Netwon</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applicazioni">24.9. Applicazioni</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#approssimazioni-locali">24.9.1. Approssimazioni locali</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#studio-di-funzione">24.9.2. Studio di funzione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ottimizzazione">24.9.3. Ottimizzazione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-di-netwon">24.9.4. Metodo di Netwon</a></li>
 </ul>
 </li>
 </ul>

@@ -87,7 +87,7 @@
         
 
 \title{Matematica per le scuole superiori}
-\date{08 feb 2025}
+\date{09 feb 2025}
 \release{}
 \author{basics}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -2687,7 +2687,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-08 feb 2025
+09 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -2801,7 +2801,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-08 feb 2025
+09 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3075,7 +3075,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-08 feb 2025
+09 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3308,7 +3308,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-08 feb 2025
+09 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3482,7 +3482,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-08 feb 2025
+09 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3631,7 +3631,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-08 feb 2025
+09 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -6268,7 +6268,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-08 feb 2025
+09 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -6431,7 +6431,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-08 feb 2025
+09 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -9109,7 +9109,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-08 feb 2025
+09 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -10493,19 +10493,37 @@ avendo definito la variabile \(y = a \ln (1+x)\), che tende a zero quando \(x \r
 \label{\detokenize{ch/infinitesimal_calculus/derivatives:derivate}}\label{\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives}}\label{\detokenize{ch/infinitesimal_calculus/derivatives::doc}}
 
 \section{Definizione}
-\label{\detokenize{ch/infinitesimal_calculus/derivatives:definizione}}\label{\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-def}}
+\label{\detokenize{ch/infinitesimal_calculus/derivatives:definizione}}\label{\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-def}}\label{ch/infinitesimal_calculus/derivatives:definition-0}
+\begin{sphinxadmonition}{note}{Definition 24.1.1 (Rapporto incrementale)}
+
+
+
 \sphinxAtStartPar
-\sphinxstylestrong{Rapporto incrementale.} Il rapporto incrementale di una funzione reale nel punto \(x\) viene definito come il rapporto tra la differenza dei valori della funzione e la differenza del valore della variabile indipendente
+Il rapporto incrementale di una funzione reale nel punto \(x\) viene definito come il rapporto tra la differenza dei valori della funzione e la differenza del valore della variabile indipendente
 \begin{equation}\label{equation:ch/infinitesimal_calculus/derivatives:eq:infinitesimal-calculus:derivatives:def_delta}
-\begin{split}R[f(\cdot), x, a] := \dfrac{f(x+a)-f(x)}{a} \ .\end{split}
-\end{equation}
+\begin{split}R[f(\cdot), x, h] := \dfrac{f(x+h)-f(x)}{h} \ .\end{split}
+\end{equation}\end{sphinxadmonition}
+\label{ch/infinitesimal_calculus/derivatives:definition-1}
+\begin{sphinxadmonition}{note}{Definition 24.1.2 (Derivata)}
+
+
+
 \sphinxAtStartPar
-\sphinxstylestrong{Derivata.} La derivata di una funzione reale in un punto \(x\) viene definita come il limite del rapporto incrementale, per l’incremento della variabile indipendente che tende a zero,
+La derivata di una funzione reale in un punto \(x\) viene definita come il limite del rapporto incrementale, per l’incremento della variabile indipendente che tende a zero,
 \begin{equation}\label{equation:ch/infinitesimal_calculus/derivatives:eq:infinitesimal-calculus:derivatives:def}
-\begin{split}f'(x) = \dfrac{d f}{d x}(x) := \lim_{a \rightarrow 0} \dfrac{f(x+a)-f(x)}{a} \ .\end{split}
-\end{equation}
+\begin{split}f'(x) = \dfrac{d f}{d x}(x) := \lim_{h \rightarrow 0} \dfrac{f(x+h)-f(x)}{h} \ .\end{split}
+\end{equation}\end{sphinxadmonition}
+
 \sphinxAtStartPar
 \sphinxstylestrong{todo} \sphinxstyleemphasis{In generale, la derivata di una funzione reale è un’altra funzione reale.}
+
+\sphinxAtStartPar
+Il limite nella definizione \eqref{equation:ch/infinitesimal_calculus/derivatives:eq:infinitesimal-calculus:derivatives:def} della derivata ha la diretta conseguenza di poter scrivere
+\begin{equation}\label{equation:ch/infinitesimal_calculus/derivatives:eq:infinitesimal-calculus:derivative:def_expansion}
+\begin{split}f(x+h) = f(x) + h \, f'(x) + o(h) \ ,\end{split}
+\end{equation}
+\sphinxAtStartPar
+cioè un’approssimazione al primo grado in \(h\) di \(f(x+h)\) centrata in \(x\). Per una trattazione più completa delle approssimazioni polinomiali di funzioni, e al ruolo delle derivate in queste, si rimanda alla sezione sulle {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-taylor}]{\sphinxcrossref{\DUrole{std,std-ref}{serie di Taylor e MacLaurin}}}}.
 
 
 \section{Interpretazione geometrica}
@@ -10526,6 +10544,59 @@ Il valore della derivata di una funzione \(f(x)\) in un punto \(x\) corrisponde 
 \end{tabulary}
 \par
 \sphinxattableend\end{savenotes}
+
+
+\section{Incremento di una funzione e differenziale}
+\label{\detokenize{ch/infinitesimal_calculus/derivatives:incremento-di-una-funzione-e-differenziale}}\label{\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-differential}}\label{ch/infinitesimal_calculus/derivatives:definition-2}
+\begin{sphinxadmonition}{note}{Definition 24.3.1 (Incremento di una funzione)}
+
+
+
+\sphinxAtStartPar
+L’incremento di una funzione \(f\) in seguito all’incremento \(h\) della variabile indipendente \(x\) è
+\begin{equation*}
+\begin{split}\Delta f (x, h) := f(x+h) - f(x) \ .\end{split}
+\end{equation*}\end{sphinxadmonition}
+\label{ch/infinitesimal_calculus/derivatives:definition-3}
+\begin{sphinxadmonition}{note}{Definition 24.3.2 (Differenziale di una funzione)}
+
+
+
+\sphinxAtStartPar
+Il differenziale di una funzione \(f\) può essere definito come il termine di primo ordine in \(h\) dell’incremento \(\Delta f(x,h)\),
+\begin{equation*}
+\begin{split}\Delta f(x,h) = d f(x,h) + o(h) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e risulta uguale a
+\begin{equation}\label{equation:ch/infinitesimal_calculus/derivatives:eq:infinitesimal-calculus:derivative:differential}
+\begin{split}d f(x, h) = f'(x) \, h \, .\end{split}
+\end{equation}\end{sphinxadmonition}
+
+\sphinxAtStartPar
+Il confronto con la relazione \eqref{equation:ch/infinitesimal_calculus/derivatives:eq:infinitesimal-calculus:derivative:def_expansion} permette di scrivere
+\begin{equation*}
+\begin{split}\Delta f(x,h) = f(x+h) - f(x) = h f'(x) + o(h) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e quindi dimostrare la relazione \eqref{equation:ch/infinitesimal_calculus/derivatives:eq:infinitesimal-calculus:derivative:differential} usata per introdurre il concetto di differenziale.
+
+\begin{sphinxadmonition}{note}{Nota:}
+\sphinxAtStartPar
+il differenziale della funzione \(f(x) = x\) è uguale a
+\begin{equation*}
+\begin{split}d x(x,h) = \dfrac{d}{dx} x \, h = h \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e quindi si può scrivere nella definizione di differenziale
+\begin{equation*}
+\begin{split}h = dx\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e quindi
+\begin{equation*}
+\begin{split}d f = f'(x) \, dx \ .\end{split}
+\end{equation*}\end{sphinxadmonition}
 
 
 \section{Regole di derivazione}
@@ -10582,7 +10653,7 @@ La {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives-notes:infinitesi
 
 \subsection{Teorema di Fermat}
 \label{\detokenize{ch/infinitesimal_calculus/derivatives:teorema-di-fermat}}\label{\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm-fermat}}\label{ch/infinitesimal_calculus/derivatives:thm:infinitesimal-calculus:derivatives:thm:fermat}
-\begin{sphinxadmonition}{note}{Theorem 24.4.1 (Teorema di Fermat)}
+\begin{sphinxadmonition}{note}{Theorem 24.5.1 (Teorema di Fermat)}
 
 
 
@@ -10612,7 +10683,7 @@ Data la funzione \(f: (a,b) \rightarrow \mathbb{R}\) derivabile nel punto di est
 
 \subsection{Teorema di Rolle}
 \label{\detokenize{ch/infinitesimal_calculus/derivatives:teorema-di-rolle}}\label{\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm-rolle}}\label{ch/infinitesimal_calculus/derivatives:thm:infinitesimal-calculus:derivatives:thm:rolle}
-\begin{sphinxadmonition}{note}{Theorem 24.4.2 (Teorema di Rolle)}
+\begin{sphinxadmonition}{note}{Theorem 24.5.2 (Teorema di Rolle)}
 
 
 
@@ -10646,7 +10717,7 @@ Data la funzione \(f: [a,b] \rightarrow \mathbb{R}\) continua e derivabile in og
 
 \subsection{Teorema di Cauchy}
 \label{\detokenize{ch/infinitesimal_calculus/derivatives:teorema-di-cauchy}}\label{\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm-cauchy}}\label{ch/infinitesimal_calculus/derivatives:thm:infinitesimal-calculus:derivatives:thm:cauchy}
-\begin{sphinxadmonition}{note}{Theorem 24.4.3 (Teorema di Cauchy)}
+\begin{sphinxadmonition}{note}{Theorem 24.5.3 (Teorema di Cauchy)}
 
 
 
@@ -10662,7 +10733,7 @@ Date le funzioni \(f, g: [a,b] \rightarrow \mathbb{R}\) continue in \([a,b]\) e 
 
 \subsection{Teorema di Lagrange}
 \label{\detokenize{ch/infinitesimal_calculus/derivatives:teorema-di-lagrange}}\label{\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm-lagrange}}\label{ch/infinitesimal_calculus/derivatives:thm:infinitesimal-calculus:derivatives:thm:lagrange}
-\begin{sphinxadmonition}{note}{Theorem 24.4.4 (Theorema di Lagrange)}
+\begin{sphinxadmonition}{note}{Theorem 24.5.4 (Theorema di Lagrange)}
 
 
 
@@ -10693,7 +10764,7 @@ Si applica il {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infin
 
 \subsection{Teorema di de l’Hopital}
 \label{\detokenize{ch/infinitesimal_calculus/derivatives:teorema-di-de-l-hopital}}\label{\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm-hopital}}\label{ch/infinitesimal_calculus/derivatives:thm:infinitesimal-calculus:derivatives:thm:hopital}
-\begin{sphinxadmonition}{note}{Theorem 24.4.5 (Teorema di de l’Hopital )}
+\begin{sphinxadmonition}{note}{Theorem 24.5.5 (Teorema di de l’Hopital )}
 
 
 
@@ -10770,22 +10841,31 @@ La serie di MacLaurin è la serie di Taylor centrata in \(x_0 = 0\). La serie di
 \sphinxAtStartPar
 La serie di Taylor troncata al \(N\)\sphinxhyphen{}esimo termine fornisce un’approssimazione locale della funzione \(f(x)\) di ordine \(n\), nel senso definito dal seguente teorema.
 \label{ch/infinitesimal_calculus/derivatives:thm:infinitesimal-calculus:derivatives:taylor}
-\begin{sphinxadmonition}{note}{Theorem 24.7.1 (Approssimazione locale \sphinxhyphen{} 1)}
+\begin{sphinxadmonition}{note}{Theorem 24.8.1 (Approssimazione locale)}
 
 
 
 \sphinxAtStartPar
-\sphinxstylestrong{todo} \sphinxstyleemphasis{Ipotesi del teorema}. Valgono i seguenti risultati:
+\sphinxstylestrong{todo} \sphinxstyleemphasis{Ipotesi del teorema}.
+
+\sphinxAtStartPar
+Valgono i seguenti risultati di approssimazione locale
 \begin{itemize}
-\item {} \begin{equation*}
-\begin{split}\lim_{x \rightarrow x_0} \frac{f(x) - T_N[f(x); x_0]}{x^N} = 0 \ , \end{split}
+\item {} 
+\sphinxAtStartPar
+La serie di Taylor di ordine \(N\) è un’approssimazione locale di ordine \(N\) della funzione
+\begin{equation*}
+\begin{split}\lim_{x \rightarrow x_0} \frac{f(x) - T_N[f(x); x_0]}{(x-x_0)^N} = 0 \ , \end{split}
 \end{equation*}
 \sphinxAtStartPar
 o usando la notazione di «o piccolo» per il {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-infinite-simal}]{\sphinxcrossref{\DUrole{std,std-ref}{confronto di infinitesimi}}}},
 \begin{equation*}
 \begin{split}f(x) = T_N[f(x); x_0] + o\left((x-x_0)^N\right) \quad \text{ per } \quad x \rightarrow x_0 \ .\end{split}
 \end{equation*}
-\item {} \begin{equation*}
+\item {} 
+\sphinxAtStartPar
+L’errore di approssimazione di ordine \(N+1\) è asintotico a
+\begin{equation*}
 \begin{split}f(x) - T_N[f(x); x_0] \sim \frac{f^{(N+1)}}{(N+1)!} (x - x_0)^{N+1} \quad x \rightarrow x_0 \ \end{split}
 \end{equation*}
 \end{itemize}
@@ -10862,7 +10942,7 @@ derivate fondamentali, regole di derivazione
 \end{itemize}
 \phantomsection \label{exercise:ch/infinitesimal_calculus/derivatives-problems-exercise-0}
 
-\begin{sphinxadmonition}{note}{Exercise 24.9.1 (Calcolo derivate con definizione)}
+\begin{sphinxadmonition}{note}{Exercise 24.10.1 (Calcolo derivate con definizione)}
 
 
 
@@ -10897,7 +10977,7 @@ Calcolare le derivate delle seguenti funzioni usando la definizione
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/infinitesimal_calculus/derivatives-problems-exercise-1}
 
-\begin{sphinxadmonition}{note}{Exercise 24.9.2 (Verifica della derivabilità di funzioni)}
+\begin{sphinxadmonition}{note}{Exercise 24.10.2 (Verifica della derivabilità di funzioni)}
 
 
 
@@ -10944,7 +11024,7 @@ Verificare che le seguenti funzioni siano derivabili. Dove non indicato esplicit
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/infinitesimal_calculus/derivatives-problems-exercise-2}
 
-\begin{sphinxadmonition}{note}{Exercise 24.9.3 (Calcolo delle derivate)}
+\begin{sphinxadmonition}{note}{Exercise 24.10.3 (Calcolo delle derivate)}
 
 
 \begin{enumerate}
@@ -11073,7 +11153,7 @@ Verificare che le seguenti funzioni siano derivabili. Dove non indicato esplicit
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/infinitesimal_calculus/derivatives-problems-exercise-3}
 
-\begin{sphinxadmonition}{note}{Exercise 24.9.4 (Calcolo di limiti con la regola di de l’Hopital)}
+\begin{sphinxadmonition}{note}{Exercise 24.10.4 (Calcolo di limiti con la regola di de l’Hopital)}
 
 
 
@@ -11128,7 +11208,7 @@ forme indeterminate \(\frac{f(x)}{g(x)}\)
 \subsection{Serie di Taylor}
 \label{\detokenize{ch/infinitesimal_calculus/derivatives-problems:serie-di-taylor}}\label{\detokenize{ch/infinitesimal_calculus/derivatives-problems:infinitesimal-calculus-derivatives-problems-taylor}}\phantomsection \label{exercise:ch/infinitesimal_calculus/derivatives-problems-exercise-4}
 
-\begin{sphinxadmonition}{note}{Exercise 24.9.5}
+\begin{sphinxadmonition}{note}{Exercise 24.10.5}
 
 
 \begin{enumerate}
@@ -11180,7 +11260,7 @@ Analizzare la funzione \(f(x) = x^4 - 2x^2 + x\) per determinare la natura del p
 \subsection{Problemi di geometria}
 \label{\detokenize{ch/infinitesimal_calculus/derivatives-problems:problemi-di-geometria}}\label{\detokenize{ch/infinitesimal_calculus/derivatives-problems:infinitesimal-calculus-derivatives-problems-geom}}\phantomsection \label{exercise:ch/infinitesimal_calculus/derivatives-problems-exercise-5}
 
-\begin{sphinxadmonition}{note}{Exercise 24.9.6 (Problemi di geometria)}
+\begin{sphinxadmonition}{note}{Exercise 24.10.6 (Problemi di geometria)}
 
 
 
@@ -11205,7 +11285,7 @@ Analizzare la funzione \(f(x) = x^4 - 2x^2 + x\) per determinare la natura del p
 Le derivate permettono di aggiungere dettagli allo studio di funzione, iniziato nel capitolo precedente. Grazie alle derivate, è possibile e studiarne la tendenza e la concavità, identificabili rispettivalemnte con \(f'(x)\) e \(f''(x)\)); le condizioni di derivata prima e/o seconda nulla definiscono poi i punti di minimo e di massimo locali di una funzione (derivabile), i punti di flesso.
 \phantomsection \label{exercise:ch/infinitesimal_calculus/derivatives-problems-exercise-6}
 
-\begin{sphinxadmonition}{note}{Exercise 24.9.7}
+\begin{sphinxadmonition}{note}{Exercise 24.10.7}
 
 
 
@@ -11231,7 +11311,7 @@ i punti di flesso
 \subsection{Problemi di ottimizzazione}
 \label{\detokenize{ch/infinitesimal_calculus/derivatives-problems:problemi-di-ottimizzazione}}\label{\detokenize{ch/infinitesimal_calculus/derivatives-problems:infinitesimal-calculus-derivatives-problems-opt}}\phantomsection \label{exercise:ch/infinitesimal_calculus/derivatives-problems-exercise-7}
 
-\begin{sphinxadmonition}{note}{Exercise 24.9.8}
+\begin{sphinxadmonition}{note}{Exercise 24.10.8}
 
 
 
@@ -11241,7 +11321,7 @@ Si chiede di trovare i punti di minimo e massimo, locali e assoluti, e disegnare
 \begin{split}\begin{aligned}
  & \mathbf{0.} \, f(x) = x^2 - \frac{1}{2} x^3 \quad , \quad x \in [-1,2] & \text{R: } \\
  & \mathbf{1.} \, f(x) = \frac{x}{\cos x + 1}  \quad , \quad x \in \left[ -\frac{\pi}{2}, \frac{\pi}{2} \right]  & \text{R: } \\
- & \mathbf{2.} \, f(x) = \frac{sin{x}}{x} \quad , \quad x \in \mathbf{R} & \text{R: } \\
+ & \mathbf{2.} \, f(x) = \frac{sin{x}}{x} \quad , \quad x \in \mathbb{R} & \text{R: } \\
  & \dots 
 \end{aligned}\end{split}
 \end{equation*}
@@ -11250,7 +11330,7 @@ Si chiede di trovare i punti di minimo e massimo, locali e assoluti, e disegnare
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/infinitesimal_calculus/derivatives-problems-exercise-8}
 
-\begin{sphinxadmonition}{note}{Exercise 24.9.9 (Problemi di geometria)}
+\begin{sphinxadmonition}{note}{Exercise 24.10.9 (Problemi di geometria)}
 
 
 
@@ -11282,7 +11362,7 @@ Data una sfera di raggio \(R\), si chiede di studiare il volume e la superficie 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/infinitesimal_calculus/derivatives-problems-exercise-9}
 
-\begin{sphinxadmonition}{note}{Exercise 24.9.10 (Problemi di economia)}
+\begin{sphinxadmonition}{note}{Exercise 24.10.10 (Problemi di economia)}
 
 
 
@@ -11297,7 +11377,7 @@ Data una sfera di raggio \(R\), si chiede di studiare il volume e la superficie 
 Si chiede di risolvere le sequenti equazioni nonlineari con il {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-applications-newton}]{\sphinxcrossref{\DUrole{std,std-ref}{metodo di Newton}}}} (è quindi necessario riformulare il problema come la ricerca degli zeri di una funzione), dopo aver impostato la soluzione con un metodo grafico. Il metodo grafico è necessario a farsi un’idea sul numero di soluzioni da cercare, e sui valori con cui iniziare il metodo di Newton. Si chiede di concludere il procedimento a mano dopo 3 iterazioni, o quando si ottiene una soluzione con errore minore della tolleranza, qui scelta come \(\tau = 0.01\). Si chiede infine di implementare il metodo con un linguaggio di programmazione a piacimento, per cercare una soluzione con tolleranza \(\tau = 10^{-5}\)
 \phantomsection \label{exercise:ch/infinitesimal_calculus/derivatives-problems-exercise-10}
 
-\begin{sphinxadmonition}{note}{Exercise 24.9.11 (Soluzione iterativa di equazioni nonlineari \sphinxhyphen{} Newton)}
+\begin{sphinxadmonition}{note}{Exercise 24.10.11 (Soluzione iterativa di equazioni nonlineari \sphinxhyphen{} Newton)}
 
 
 \begin{enumerate}
@@ -11853,24 +11933,60 @@ La regola di derivazione del prodotto \(F(x)G(x)\) viene scritta come
 \end{aligned}\end{split}
 \end{equation*}
 \sphinxAtStartPar
-Isolando il termine \(f(x)G(x)\) e integrando, si ottiene
+Isolando il termine \(f(x)G(x)\) e integrando il primo termine grazie al {\hyperref[\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-thm-fund}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema fondamentale del calcolo infinitesimale}}}}, si ottiene
 \begin{equation*}
 \begin{split}\begin{aligned}
-\int f(x) G(x) dx & = \int (F(x) G(x))' dx - \int F(x) g(x) dx = \\
+\int f(x) G(x) dx & = \int \left( F(x) G(x) \right)' dx - \int F(x) g(x) dx = \\
 & = F(x) G(x) - \int F(x) g(x) dx  \ .
 \end{aligned}\end{split}
 \end{equation*}
-
-\subsection{Frazioni parziali}
-\label{\detokenize{ch/infinitesimal_calculus/integrals:frazioni-parziali}}
+\begin{sphinxadmonition}{note}{Nota:}
 \sphinxAtStartPar
-\sphinxstylestrong{todo} E” una regola valida per funzioni integrande che possono essere scritte come il rapporto di due polinomi, \(f(x) = \frac{N(x)}{D(x)}\), e segue direttamente dalla possibilità di scomporre il polinomio a denominatore in polinomi di primo e secondo grado, grazie al {\hyperref[\detokenize{ch/precalculus/polynomials:math-hs-precalculus-polynomials-alg-fund-thm}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema fondamentale dell’algebra}}}}, e scrivere il rapporto come somma di frazioni.
+Consigli:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\(f(x)\) facile da integrare,…
+
+\item {} 
+\sphinxAtStartPar
+Derivazione che riporti a integrali più semplici: esempio, può ridurre di \(1\) la potenza della funzione \(G(x) = x^n\) a ogni applicazione dell’integrazione per parti
+
+\item {} 
+\sphinxAtStartPar
+…
+
+\end{itemize}
+\end{sphinxadmonition}
+\label{ch/infinitesimal_calculus/integrals:example-5}
+\begin{sphinxadmonition}{note}{Example 25.4.1 (Esempio di integrazione per parti)}
+
+
+
+\sphinxAtStartPar
+Si vuole calcolare l’integrale
+\begin{equation*}
+\begin{split}\int x \, e^x \, dx \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+usando la regola di integrazione per parti. Utilizzando il fato che la funzione \(e^x\) ha primitiva \(e^x\), si sceglie come funzione da integrare, mentre la funzione \(x\) viene derivata,
+\begin{equation*}
+\begin{split}\begin{aligned}
+  f(x) & = e^x  && F(x) = e^x \\
+  G(x) & =   x  && g(x) = 1   \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Con questa scelta, si risolve l’integrale,
+\begin{equation*}
+\begin{split}\int x \, e^x \, dx = x \, e^x - \int e^x \, dx = x \, e^x - e^x + C = e^x (x - 1) + C \ .\end{split}
+\end{equation*}\end{sphinxadmonition}
 
 
 \subsection{Integrazione con sostituzione}
 \label{\detokenize{ch/infinitesimal_calculus/integrals:integrazione-con-sostituzione}}\label{\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-substitution}}
 \sphinxAtStartPar
-La regola di integrazione per parti viene ottenuta dalla regola di derivazione della funzione composta \eqref{equation:ch/infinitesimal_calculus/derivatives:infinitesimal-calculus:derivatives:rules:composite}. Sia \(\widetilde{F}(x)\) la funzione composta \(\widetilde{F}(x) = F( y(x) )\) e siano definite le derivate
+La regola di integrazione con sostituzione viene ottenuta dalla regola di derivazione della funzione composta \eqref{equation:ch/infinitesimal_calculus/derivatives:infinitesimal-calculus:derivatives:rules:composite}. Sia \(\widetilde{F}(x)\) la funzione composta \(\widetilde{F}(x) = F( y(x) )\) e siano definite le derivate
 \begin{equation*}
 \begin{split}\widetilde{f}(x) = \dfrac{d}{dx} \widetilde{F}(x)  \qquad , \qquad
              f (y) = \dfrac{d}{dy}            F (y)\end{split}
@@ -11882,24 +11998,27 @@ per la regola di derivazione della funzione composta,
 \dfrac{d F}{d y}(y(x)) \frac{d y}{d x}(x) =: f(y(x)) y'(x) \ .\end{split}
 \end{equation*}
 \sphinxAtStartPar
-Usando il {\hyperref[\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-thm-fund}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema del calcolo infinitesimale}}}}
+Usando il {\hyperref[\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-thm-fund}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema del calcolo infinitesimale}}}}, \sphinxstylestrong{todo}
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \widetilde{F}(x) & = \int \widetilde{f}(x) \, dx + C = \\
+                   & = \int f(y(x)) \, \underbrace{ y'(x) \, dx}_{= d y} + C = \\
+                   & = \int f(y) \, dy + C = F(y) \ .
+\end{aligned}\end{split}
+\end{equation*}
 
-\sphinxAtStartPar
-\sphinxstylestrong{todo…}
-
-\sphinxAtStartPar
-\sphinxstylestrong{Sostituzioni utili.}
-
+\subsubsection{Sostituzioni utili}
+\label{\detokenize{ch/infinitesimal_calculus/integrals:sostituzioni-utili}}
 \sphinxAtStartPar
 \sphinxstylestrong{Funzioni trigonometriche e iperboliche.}
 \begin{equation*}
 \begin{split}\begin{aligned}
-  & \sqrt{a^2 - x^2} && \rightarrow && x = a \sin  \theta \text{ or } x = a \cos \theta  \\
+  & \sqrt{a^2 - x^2} && \rightarrow && x = a \sin  \theta \quad \text{ or } \quad x = a \cos \theta  \\
   & \sqrt{a^2 + x^2} && \rightarrow && x = a \sinh \theta \\
   & \sqrt{x^2 - a^2} && \rightarrow && x = a \cosh \theta \\
 \end{aligned}\end{split}
-\end{equation*}\label{ch/infinitesimal_calculus/integrals:example-5}
-\begin{sphinxadmonition}{note}{Example 25.4.1 (\protect\(\displaystyle \int \sqrt{a^2 - x^2} \,  dx\protect\))}
+\end{equation*}\label{ch/infinitesimal_calculus/integrals:example-6}
+\begin{sphinxadmonition}{note}{Example 25.4.2 (\protect\(\displaystyle \int \sqrt{a^2 - x^2} \,  dx\protect\))}
 
 
 
@@ -11929,8 +12048,8 @@ e usando la formula \(\sin( 2 \theta ) = 2 \sin \theta \cos \theta = 2 \dfrac{x}
 \begin{equation*}
 \begin{split}\int \sqrt{a^2 - x^2} \, dx = \frac{a^2}{2} \left[ \text{arcsin}\left( \frac{x}{a} \right) + \frac{x}{a}\sqrt{1 - \left( \frac{x}{a} \right)^2 }\right] + C .\end{split}
 \end{equation*}\end{sphinxadmonition}
-\label{ch/infinitesimal_calculus/integrals:example-6}
-\begin{sphinxadmonition}{note}{Example 25.4.2 (\protect\( \displaystyle \int \sqrt{a^2 + x^2} \,  dx\protect\))}
+\label{ch/infinitesimal_calculus/integrals:example-7}
+\begin{sphinxadmonition}{note}{Example 25.4.3 (\protect\( \displaystyle \int \sqrt{a^2 + x^2} \,  dx\protect\))}
 
 
 
@@ -11983,8 +12102,8 @@ Si può tornare alla variabile indipendente di partenza \(x\) con la trasformazi
    & = \frac{a^2}{2} \left\{ \ln \left[ \frac{x}{a}  +  \sqrt{1 + \left( \frac{x}{a} \right)^2} \right] + \frac{x}{a} \sqrt{1 + \left(\frac{x}{a}\right)^2} \right\} + C
 \end{aligned}\end{split}
 \end{equation*}\end{sphinxadmonition}
-\label{ch/infinitesimal_calculus/integrals:example-7}
-\begin{sphinxadmonition}{note}{Example 25.4.3 (\protect\(\displaystyle \int \sqrt{x^2 - a^2} \,  dx\protect\))}
+\label{ch/infinitesimal_calculus/integrals:example-8}
+\begin{sphinxadmonition}{note}{Example 25.4.4 (\protect\(\displaystyle \int \sqrt{x^2 - a^2} \,  dx\protect\))}
 
 
 
@@ -12038,20 +12157,89 @@ Si può tornare alla variabile indipendente di partenza \(x\) con la trasformazi
    & = \frac{a^2}{2} \left\{ -\ln \left[ \frac{x}{a}  \pm  \sqrt{\left( \frac{x}{a} \right)^2 - 1} \right] + \frac{x}{a} \sqrt{ \left(\frac{x}{a}\right)^2 - 1} \right\} + C
 \end{aligned}\end{split}
 \end{equation*}\end{sphinxadmonition}
-\label{ch/infinitesimal_calculus/integrals:example-8}
-\begin{sphinxadmonition}{note}{Example 25.4.4 (\protect\(\displaystyle \int \frac{1}{\sqrt{a^2 - x^2}} \,  dx\protect\))}
-
-
-\end{sphinxadmonition}
 \label{ch/infinitesimal_calculus/integrals:example-9}
-\begin{sphinxadmonition}{note}{Example 25.4.5 (\protect\(\displaystyle \int \frac{1}{\sqrt{a^2 + x^2}} \,  dx\protect\))}
+\begin{sphinxadmonition}{note}{Example 25.4.5 (\protect\(\displaystyle \int \frac{1}{\sqrt{a^2 - x^2}} \,  dx\protect\))}
 
 
-\end{sphinxadmonition}
+
+\sphinxAtStartPar
+L’integrale
+\begin{equation*}
+\begin{split}\int \frac{1}{\sqrt{a^2 - x^2}} \,  dx\end{split}
+\end{equation*}
+\sphinxAtStartPar
+ha senso per intervalli di integrazioni tali che \(|x| \le |a|\). In questi casi, usando la sostituzione \(x = a \, \sin \theta\), e il suo differenziale \(dx = a \, \cos \theta \, d \theta\), si può riscrivere l’integrale come
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \int \frac{1}{\sqrt{a^2 - x^2}} \, dx
+   & = \int \frac{1}{\sqrt{1- \sin^2 \theta}} \cos \theta \, d \theta = \\
+   & = \int \, d \theta = \\
+   & = \theta + C
+   & = \text{arcsin} x + C \ .
+\end{aligned}\end{split}
+\end{equation*}\end{sphinxadmonition}
 \label{ch/infinitesimal_calculus/integrals:example-10}
-\begin{sphinxadmonition}{note}{Example 25.4.6 (\protect\(\displaystyle \int \frac{1}{\sqrt{x^2 - a^2}} \,  dx\protect\))}
+\begin{sphinxadmonition}{note}{Example 25.4.6 (\protect\(\displaystyle \int \frac{1}{\sqrt{a^2 + x^2}} \,  dx\protect\))}
 
 
+
+\sphinxAtStartPar
+L’integrale
+\begin{equation*}
+\begin{split}\int \frac{1}{\sqrt{a^2 + x^2}} \,  dx\end{split}
+\end{equation*}
+\sphinxAtStartPar
+ha senso per ogni intervallo di numeri reali. Si può usare la sostituzione
+\begin{equation*}
+\begin{split}\begin{aligned}
+   x & = a \, \sinh \theta \\
+  dx & = a \, \cosh \theta \, d \theta \\
+  \sqrt{a^2 + x^2} & = a \sqrt{1 + \sinh^2 \theta} = a \cosh \theta
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+per utilizzare le proprietà delle funzioni iperboliche e scrivere
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \int \frac{1}{\sqrt{a^2 + x^2}} \, dx
+   & = \int \frac{1}{a \cosh \theta} \, a \cosh \theta \, d \theta = \\
+   & = \int \theta \, d \theta = \\
+   & = \theta + C = \\
+   & = \ln \left[ \frac{x}{a}  +  \sqrt{\left( \frac{x}{a} \right)^2 + 1} \right] \ .
+\end{aligned}\end{split}
+\end{equation*}\end{sphinxadmonition}
+\label{ch/infinitesimal_calculus/integrals:example-11}
+\begin{sphinxadmonition}{note}{Example 25.4.7 (\protect\(\displaystyle \int \frac{1}{\sqrt{x^2 - a^2}} \,  dx\protect\))}
+
+
+
+\sphinxAtStartPar
+L’integrale
+\begin{equation*}
+\begin{split}\int \frac{1}{\sqrt{x^2 - a^2}} \,  dx\end{split}
+\end{equation*}
+\sphinxAtStartPar
+ha senso per intervalli di integrazioni tali che \(|x| \ge |a|\). In questi casi, si può usare la sostituzione
+\begin{equation*}
+\begin{split}\begin{aligned}
+   x & = a \, \cosh \theta \\
+  dx & = a \, \sinh \theta \, d \theta \\
+  \sqrt{x^2 - a^2} & = a \sqrt{\cosh^2 \theta - 1} = a \sinh \theta
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+per utilizzare le proprietà delle funzioni iperboliche e scrivere
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \int \frac{1}{\sqrt{x^2 - a^2}} \, dx
+   & = \int \frac{1}{a \sinh \theta} a \sinh \theta \, d \theta = \\
+   & = \int  d \theta = \\
+   & = \theta + C = \\
+   & = \ln \left[ \frac{x}{a} \pm \sqrt{\left( \frac{x}{a} \right)^2 - 1} \right] + C
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{Osservazione.} Quale segno? Discussione… \sphinxstylestrong{todo}
 \end{sphinxadmonition}
 
 \sphinxAtStartPar
@@ -12062,8 +12250,8 @@ Si può tornare alla variabile indipendente di partenza \(x\) con la trasformazi
   & \sqrt{a + bx + x^2}                                  && \rightarrow && a + bx + x^2 = ( z - x )^2 \\
   & \sqrt{a + bx - x^2} = \sqrt{(\alpha + x)(\beta - x)} && \rightarrow && a + bx - x^2 = ( \alpha + x )^2 z^2 \\
 \end{aligned}\end{split}
-\end{equation*}\label{ch/infinitesimal_calculus/integrals:example-11}
-\begin{sphinxadmonition}{note}{Example 25.4.7 (\protect\(\displaystyle \int \sqrt[n]{ax+b} \, dx \protect\))}
+\end{equation*}\label{ch/infinitesimal_calculus/integrals:example-12}
+\begin{sphinxadmonition}{note}{Example 25.4.8 (\protect\(\displaystyle \int \sqrt[n]{ax+b} \, dx \protect\))}
 
 
 
@@ -12091,8 +12279,8 @@ Si può tornare alla variabile indipendente di partenza \(x\) con la trasformazi
   & = \frac{1}{a} \frac{n}{n+1} (ax+b)^{\frac{n+1}{n}} + C  \ .
 \end{aligned}\end{split}
 \end{equation*}\end{sphinxadmonition}
-\label{ch/infinitesimal_calculus/integrals:example-12}
-\begin{sphinxadmonition}{note}{Example 25.4.8 (\protect\(\displaystyle \int \sqrt{a + bx + x^2} \, dx \protect\))}
+\label{ch/infinitesimal_calculus/integrals:example-13}
+\begin{sphinxadmonition}{note}{Example 25.4.9 (\protect\(\displaystyle \int \sqrt{a + bx + x^2} \, dx \protect\))}
 
 
 
@@ -12111,8 +12299,8 @@ ci si può riportare agli integrali della forma \(\displaystyle \int \sqrt{y^2 -
 \sphinxAtStartPar
 \sphinxstylestrong{Metodo 1.} Con cambio di variabili
 \end{sphinxadmonition}
-\label{ch/infinitesimal_calculus/integrals:example-13}
-\begin{sphinxadmonition}{note}{Example 25.4.9 (\protect\(\displaystyle \int \sqrt{a + bx - x^2} \, dx \protect\))}
+\label{ch/infinitesimal_calculus/integrals:example-14}
+\begin{sphinxadmonition}{note}{Example 25.4.10 (\protect\(\displaystyle \int \sqrt{a + bx - x^2} \, dx \protect\))}
 
 
 
@@ -12142,8 +12330,8 @@ ci si può riportare agli integrali della forma \(\displaystyle \int \sqrt{-y^2 
 \end{equation*}
 \sphinxAtStartPar
 risulta utile a trasformare un’integranda dove compaiono funzioni trigonometriche in un’integranda razionale.
-\label{ch/infinitesimal_calculus/integrals:example-14}
-\begin{sphinxadmonition}{note}{Example 25.4.10 (Razionalizzazione con cambio di variabili \protect\(z = \tan\left( \frac{x}{2} \right)\protect\).)}
+\label{ch/infinitesimal_calculus/integrals:example-15}
+\begin{sphinxadmonition}{note}{Example 25.4.11 (Razionalizzazione con cambio di variabili \protect\(z = \tan\left( \frac{x}{2} \right)\protect\).)}
 
 
 
@@ -12168,6 +12356,57 @@ e (usando la relazione fondamentale della trignometria \(\sin^2 x + \cos^2 x = 1
 \begin{split}\sin x = \frac{2 z}{1 + z^2}\end{split}
 \end{equation*}\begin{equation*}
 \begin{split}\tan x = \frac{2 z}{1 - z^2}\end{split}
+\end{equation*}\end{sphinxadmonition}
+
+
+\subsection{Frazioni parziali}
+\label{\detokenize{ch/infinitesimal_calculus/integrals:frazioni-parziali}}
+\sphinxAtStartPar
+\sphinxstylestrong{todo} E” una regola valida per funzioni integrande che possono essere scritte come il rapporto di due polinomi, \(f(x) = \frac{N(x)}{D(x)}\), e segue direttamente dalla possibilità di scomporre il polinomio a denominatore in polinomi di primo e secondo grado, grazie al {\hyperref[\detokenize{ch/precalculus/polynomials:math-hs-precalculus-polynomials-alg-fund-thm}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema fondamentale dell’algebra}}}}, e scrivere il rapporto come somma di frazioni.
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo} \sphinxstyleemphasis{descrivere meglio il metodo}
+\label{ch/infinitesimal_calculus/integrals:example-16}
+\begin{sphinxadmonition}{note}{Example 25.4.12 (Integrazione con frazioni parziali)}
+
+
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \int \frac{3 x^2 + 1}{ x + 2} \, dx
+  & = \int \frac{3 x^2 + 6x - 6x + 1}{x+2} \,dx = \\
+  & = \int \left[ 3 x + \frac{-6 x - 12 + 12 +1 }{x + 2} \right] \, dx = \\
+  & = \int \left[ 3 x - 6 + 13 \, \frac{1}{x + 2} \right] \, dx = \\
+  & = \frac{3}{2} x^2 - 6 x + 13 \ln |x+2| + C \ .
+\end{aligned}\end{split}
+\end{equation*}\end{sphinxadmonition}
+\label{ch/infinitesimal_calculus/integrals:example-17}
+\begin{sphinxadmonition}{note}{Example 25.4.13 (Integrazione con frazioni parziali)}
+
+
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \int \frac{2x + 1}{x^2 + 4x + 3} \, dx 
+  & = \int \frac{2x + 1}{(x+1)(x+3)} \, dx= \\
+  & = \int \left[ \frac{A}{x+1} + \frac{B}{x+3} \right] \, dx \ .
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+I valori dei coefficienti \(A\) e \(B\) vengono calcolati imponendo che la somma di frazioni sia uguale alla frazione di partenza. RIportando a fattore comune la somma delle due frazioni, e uguagliando il numeratore della frazione ottenuta con il numeratore della frazione di partenza si ottiene
+\begin{equation*}
+\begin{split}A (x+3) + B(x+1) = 2x + 1 \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+che, dovendo essere vera per ogni valore di \(x\), eqivale al sistema di due equazioni in due incognite (una per ogni potenza di \(x\) che compare nella condizione),
+\begin{equation*}
+\begin{split}\begin{cases}
+  3 A + B = 1 \\
+  A + B = 2
+\end{cases}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+la cui soluzione è \(A = -\frac{1}{2}\), \(B = \frac{5}{2}\). L’integrale quindi diventa
+\begin{equation*}
+\begin{split}\int \frac{2x + 1}{x^2 + 4x + 3} \, dx= -\frac{1}{2} \ln |x+1| + \frac{5}{2} \ln |x + 3| + C \ .\end{split}
 \end{equation*}\end{sphinxadmonition}
 
 \sphinxstepscope
@@ -14131,7 +14370,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-08 feb 2025
+09 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -14254,16 +14493,16 @@ RL: ottimizzazione/controllo
 \item\relax\sphinxstyleindexentry{analysis\sphinxhyphen{}continuous\sphinxhyphen{}fun}\sphinxstyleindexextra{ch/infinitesimal\_calculus/analysis}\sphinxstyleindexpageref{ch/infinitesimal_calculus/analysis:\detokenize{analysis-continuous-fun}}
 \indexspace
 \bigletter{definition\sphinxhyphen{}0}
-\item\relax\sphinxstyleindexentry{definition\sphinxhyphen{}0}\sphinxstyleindexextra{ch/series}\sphinxstyleindexpageref{ch/series:\detokenize{definition-0}}
+\item\relax\sphinxstyleindexentry{definition\sphinxhyphen{}0}\sphinxstyleindexextra{ch/infinitesimal\_calculus/derivatives}\sphinxstyleindexpageref{ch/infinitesimal_calculus/derivatives:\detokenize{definition-0}}
 \indexspace
 \bigletter{definition\sphinxhyphen{}1}
-\item\relax\sphinxstyleindexentry{definition\sphinxhyphen{}1}\sphinxstyleindexextra{ch/series}\sphinxstyleindexpageref{ch/series:\detokenize{definition-1}}
+\item\relax\sphinxstyleindexentry{definition\sphinxhyphen{}1}\sphinxstyleindexextra{ch/infinitesimal\_calculus/derivatives}\sphinxstyleindexpageref{ch/infinitesimal_calculus/derivatives:\detokenize{definition-1}}
 \indexspace
 \bigletter{definition\sphinxhyphen{}2}
-\item\relax\sphinxstyleindexentry{definition\sphinxhyphen{}2}\sphinxstyleindexextra{ch/multivariable\sphinxhyphen{}calculus/derivatives}\sphinxstyleindexpageref{ch/multivariable-calculus/derivatives:\detokenize{definition-2}}
+\item\relax\sphinxstyleindexentry{definition\sphinxhyphen{}2}\sphinxstyleindexextra{ch/infinitesimal\_calculus/derivatives}\sphinxstyleindexpageref{ch/infinitesimal_calculus/derivatives:\detokenize{definition-2}}
 \indexspace
 \bigletter{definition\sphinxhyphen{}3}
-\item\relax\sphinxstyleindexentry{definition\sphinxhyphen{}3}\sphinxstyleindexextra{ch/multivariable\sphinxhyphen{}calculus/derivatives}\sphinxstyleindexpageref{ch/multivariable-calculus/derivatives:\detokenize{definition-3}}
+\item\relax\sphinxstyleindexentry{definition\sphinxhyphen{}3}\sphinxstyleindexextra{ch/infinitesimal\_calculus/derivatives}\sphinxstyleindexpageref{ch/infinitesimal_calculus/derivatives:\detokenize{definition-3}}
 \indexspace
 \bigletter{example\sphinxhyphen{}0}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}0}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/vector-calculus/integrals:\detokenize{example-0}}
@@ -14285,6 +14524,15 @@ RL: ottimizzazione/controllo
 \indexspace
 \bigletter{example\sphinxhyphen{}14}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}14}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{example-14}}
+\indexspace
+\bigletter{example\sphinxhyphen{}15}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}15}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{example-15}}
+\indexspace
+\bigletter{example\sphinxhyphen{}16}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}16}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{example-16}}
+\indexspace
+\bigletter{example\sphinxhyphen{}17}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}17}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{example-17}}
 \indexspace
 \bigletter{example\sphinxhyphen{}2}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}2}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/vector-calculus/integrals:\detokenize{example-2}}

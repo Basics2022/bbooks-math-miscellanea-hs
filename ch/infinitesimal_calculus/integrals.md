@@ -206,19 +206,43 @@ $$\begin{aligned}
   & = f(x) G(x) + F(x) g(x)
 \end{aligned}$$
 
-Isolando il termine $f(x)G(x)$ e integrando, si ottiene
+Isolando il termine $f(x)G(x)$ e integrando il primo termine grazie al [teorema fondamentale del calcolo infinitesimale](infinitesimal-calculus:integrals:thm:fund), si ottiene
 
 $$\begin{aligned}
-\int f(x) G(x) dx & = \int (F(x) G(x))' dx - \int F(x) g(x) dx = \\
+\int f(x) G(x) dx & = \int \left( F(x) G(x) \right)' dx - \int F(x) g(x) dx = \\
 & = F(x) G(x) - \int F(x) g(x) dx  \ .
 \end{aligned}$$
 
-### Frazioni parziali
-**todo** E' una regola valida per funzioni integrande che possono essere scritte come il rapporto di due polinomi, $f(x) = \frac{N(x)}{D(x)}$, e segue direttamente dalla possibilità di scomporre il polinomio a denominatore in polinomi di primo e secondo grado, grazie al [teorema fondamentale dell'algebra](math-hs:precalculus:polynomials:alg-fund-thm), e scrivere il rapporto come somma di frazioni.
+```{note}
+Consigli:
+- $f(x)$ facile da integrare,...
+- Derivazione che riporti a integrali più semplici: esempio, può ridurre di $1$ la potenza della funzione $G(x) = x^n$ a ogni applicazione dell'integrazione per parti
+- ...
+```
+
+```{prf:example} Esempio di integrazione per parti
+:class: dropdown
+
+Si vuole calcolare l'integrale 
+
+$$\int x \, e^x \, dx \ ,$$
+
+usando la regola di integrazione per parti. Utilizzando il fato che la funzione $e^x$ ha primitiva $e^x$, si sceglie come funzione da integrare, mentre la funzione $x$ viene derivata,
+
+$$\begin{aligned}
+  f(x) & = e^x  && F(x) = e^x \\
+  G(x) & =   x  && g(x) = 1   \\
+\end{aligned}$$
+
+Con questa scelta, si risolve l'integrale,
+
+$$\int x \, e^x \, dx = x \, e^x - \int e^x \, dx = x \, e^x - e^x + C = e^x (x - 1) + C \ .$$
+
+```
 
 (infinitesimal-calculus:integrals:substitution)=
 ### Integrazione con sostituzione
-La regola di integrazione per parti viene ottenuta dalla regola di derivazione della funzione composta {eq}`infinitesimal-calculus:derivatives:rules:composite`. Sia $\widetilde{F}(x)$ la funzione composta $\widetilde{F}(x) = F( y(x) )$ e siano definite le derivate
+La regola di integrazione con sostituzione viene ottenuta dalla regola di derivazione della funzione composta {eq}`infinitesimal-calculus:derivatives:rules:composite`. Sia $\widetilde{F}(x)$ la funzione composta $\widetilde{F}(x) = F( y(x) )$ e siano definite le derivate
 
 $$\widetilde{f}(x) = \dfrac{d}{dx} \widetilde{F}(x)  \qquad , \qquad
              f (y) = \dfrac{d}{dy}            F (y)$$
@@ -228,16 +252,21 @@ per la regola di derivazione della funzione composta,
 $$\widetilde{f}(x) := \dfrac{d}{dx} \widetilde{F}(x) = \dfrac{d}{dx} F(y(x)) = 
 \dfrac{d F}{d y}(y(x)) \frac{d y}{d x}(x) =: f(y(x)) y'(x) \ .$$
 
-Usando il [teorema del calcolo infinitesimale](infinitesimal-calculus:integrals:thm:fund)
+Usando il [teorema del calcolo infinitesimale](infinitesimal-calculus:integrals:thm:fund), **todo**
 
-**todo...**
+$$\begin{aligned}
+  \widetilde{F}(x) & = \int \widetilde{f}(x) \, dx + C = \\
+                   & = \int f(y(x)) \, \underbrace{ y'(x) \, dx}_{= d y} + C = \\
+                   & = \int f(y) \, dy + C = F(y) \ .
+\end{aligned}$$
 
-**Sostituzioni utili.**
+
+#### Sostituzioni utili
 
 **Funzioni trigonometriche e iperboliche.**
 
 $$\begin{aligned}
-  & \sqrt{a^2 - x^2} && \rightarrow && x = a \sin  \theta \text{ or } x = a \cos \theta  \\
+  & \sqrt{a^2 - x^2} && \rightarrow && x = a \sin  \theta \quad \text{ or } \quad x = a \cos \theta  \\
   & \sqrt{a^2 + x^2} && \rightarrow && x = a \sinh \theta \\
   & \sqrt{x^2 - a^2} && \rightarrow && x = a \cosh \theta \\
 \end{aligned}$$
@@ -372,14 +401,77 @@ $$\begin{aligned}
 
 ```{prf:example} $\displaystyle \int \frac{1}{\sqrt{a^2 - x^2}} \,  dx$
 :class: dropdown
+
+L'integrale
+
+$$\int \frac{1}{\sqrt{a^2 - x^2}} \,  dx$$
+
+ha senso per intervalli di integrazioni tali che $|x| \le |a|$. In questi casi, usando la sostituzione $x = a \, \sin \theta$, e il suo differenziale $dx = a \, \cos \theta \, d \theta$, si può riscrivere l'integrale come
+
+$$\begin{aligned}
+  \int \frac{1}{\sqrt{a^2 - x^2}} \, dx
+   & = \int \frac{1}{\sqrt{1- \sin^2 \theta}} \cos \theta \, d \theta = \\
+   & = \int \, d \theta = \\
+   & = \theta + C
+   & = \text{arcsin} x + C \ .
+\end{aligned}$$
+
 ```
 
 ```{prf:example} $\displaystyle \int \frac{1}{\sqrt{a^2 + x^2}} \,  dx$
 :class: dropdown
+
+L'integrale
+
+$$\int \frac{1}{\sqrt{a^2 + x^2}} \,  dx$$
+
+ha senso per ogni intervallo di numeri reali. Si può usare la sostituzione 
+
+$$\begin{aligned}
+   x & = a \, \sinh \theta \\
+  dx & = a \, \cosh \theta \, d \theta \\
+  \sqrt{a^2 + x^2} & = a \sqrt{1 + \sinh^2 \theta} = a \cosh \theta
+\end{aligned}$$
+
+per utilizzare le proprietà delle funzioni iperboliche e scrivere
+
+$$\begin{aligned}
+  \int \frac{1}{\sqrt{a^2 + x^2}} \, dx
+   & = \int \frac{1}{a \cosh \theta} \, a \cosh \theta \, d \theta = \\
+   & = \int \theta \, d \theta = \\
+   & = \theta + C = \\
+   & = \ln \left[ \frac{x}{a}  +  \sqrt{\left( \frac{x}{a} \right)^2 + 1} \right] \ .
+\end{aligned}$$
+
 ```
 
 ```{prf:example} $\displaystyle \int \frac{1}{\sqrt{x^2 - a^2}} \,  dx$
 :class: dropdown
+
+L'integrale
+
+$$\int \frac{1}{\sqrt{x^2 - a^2}} \,  dx$$
+
+ha senso per intervalli di integrazioni tali che $|x| \ge |a|$. In questi casi, si può usare la sostituzione
+
+$$\begin{aligned}
+   x & = a \, \cosh \theta \\
+  dx & = a \, \sinh \theta \, d \theta \\
+  \sqrt{x^2 - a^2} & = a \sqrt{\cosh^2 \theta - 1} = a \sinh \theta
+\end{aligned}$$
+
+per utilizzare le proprietà delle funzioni iperboliche e scrivere
+
+$$\begin{aligned}
+  \int \frac{1}{\sqrt{x^2 - a^2}} \, dx
+   & = \int \frac{1}{a \sinh \theta} a \sinh \theta \, d \theta = \\
+   & = \int  d \theta = \\
+   & = \theta + C = \\
+   & = \ln \left[ \frac{x}{a} \pm \sqrt{\left( \frac{x}{a} \right)^2 - 1} \right] + C
+\end{aligned}$$
+
+**Osservazione.** Quale segno? Discussione... **todo**
+
 ```
 
 **Radici.**
@@ -463,23 +555,67 @@ $$z = \tan\left( \frac{x}{2} \right) \ ,$$
 risulta utile a trasformare un'integranda dove compaiono funzioni trigonometriche in un'integranda razionale.
 
 ```{prf:example} Razionalizzazione con cambio di variabili $z = \tan\left( \frac{x}{2} \right)$.
-  Usando la definizione della tangente 
+:class: dropdown
 
-  $$z = \tan \left(\frac{x}{2}\right) = \frac{\sin \left(\frac{x}{2}\right)}{\cos \left(\frac{x}{2}\right)}$$
+Usando la definizione della tangente 
 
-  si può riscrivere la relazione fondamentale della trigonometria
+$$z = \tan \left(\frac{x}{2}\right) = \frac{\sin \left(\frac{x}{2}\right)}{\cos \left(\frac{x}{2}\right)}$$
 
-  $$1 = \cos^2 \frac{x}{2} + \sin^2 \frac{x}{2} = (1 + z^2) \cos^2 \frac{x}{2}\ .$$
+si può riscrivere la relazione fondamentale della trigonometria
 
-  Usando le regole per valutare le funzioni trigonometriche di una somma, si può riscrivere $\cos x$ in termini di $z$
+$$1 = \cos^2 \frac{x}{2} + \sin^2 \frac{x}{2} = (1 + z^2) \cos^2 \frac{x}{2}\ .$$
 
-  $$\cos x = \cos \left( \frac{x}{2} + \frac{x}{2} \right) = 2 \cos^2 \frac{x}{2} - 1 = 2 \frac{1}{1+z^2} - 1 = \frac{1-z^2}{1+z^2} \ ,$$
+Usando le regole per valutare le funzioni trigonometriche di una somma, si può riscrivere $\cos x$ in termini di $z$
 
-  e (usando la relazione fondamentale della trignometria $\sin^2 x + \cos^2 x = 1$, e la definizione di tangente),
+$$\cos x = \cos \left( \frac{x}{2} + \frac{x}{2} \right) = 2 \cos^2 \frac{x}{2} - 1 = 2 \frac{1}{1+z^2} - 1 = \frac{1-z^2}{1+z^2} \ ,$$
 
-  $$\sin x = \frac{2 z}{1 + z^2}$$
-  $$\tan x = \frac{2 z}{1 - z^2}$$
+e (usando la relazione fondamentale della trignometria $\sin^2 x + \cos^2 x = 1$, e la definizione di tangente),
+
+$$\sin x = \frac{2 z}{1 + z^2}$$
+$$\tan x = \frac{2 z}{1 - z^2}$$
 
 ```
 
+### Frazioni parziali
+**todo** E' una regola valida per funzioni integrande che possono essere scritte come il rapporto di due polinomi, $f(x) = \frac{N(x)}{D(x)}$, e segue direttamente dalla possibilità di scomporre il polinomio a denominatore in polinomi di primo e secondo grado, grazie al [teorema fondamentale dell'algebra](math-hs:precalculus:polynomials:alg-fund-thm), e scrivere il rapporto come somma di frazioni.
 
+**todo** *descrivere meglio il metodo*
+
+```{prf:example} Integrazione con frazioni parziali
+:class: dropdown
+
+$$\begin{aligned}
+  \int \frac{3 x^2 + 1}{ x + 2} \, dx
+  & = \int \frac{3 x^2 + 6x - 6x + 1}{x+2} \,dx = \\
+  & = \int \left[ 3 x + \frac{-6 x - 12 + 12 +1 }{x + 2} \right] \, dx = \\
+  & = \int \left[ 3 x - 6 + 13 \, \frac{1}{x + 2} \right] \, dx = \\
+  & = \frac{3}{2} x^2 - 6 x + 13 \ln |x+2| + C \ .
+\end{aligned}$$
+
+```
+
+```{prf:example} Integrazione con frazioni parziali
+:class: dropdown
+
+$$\begin{aligned}
+  \int \frac{2x + 1}{x^2 + 4x + 3} \, dx 
+  & = \int \frac{2x + 1}{(x+1)(x+3)} \, dx= \\
+  & = \int \left[ \frac{A}{x+1} + \frac{B}{x+3} \right] \, dx \ .
+\end{aligned}$$
+
+I valori dei coefficienti $A$ e $B$ vengono calcolati imponendo che la somma di frazioni sia uguale alla frazione di partenza. RIportando a fattore comune la somma delle due frazioni, e uguagliando il numeratore della frazione ottenuta con il numeratore della frazione di partenza si ottiene
+
+$$A (x+3) + B(x+1) = 2x + 1 \ ,$$
+
+che, dovendo essere vera per ogni valore di $x$, eqivale al sistema di due equazioni in due incognite (una per ogni potenza di $x$ che compare nella condizione),
+
+$$\begin{cases}
+  3 A + B = 1 \\
+  A + B = 2
+\end{cases}$$
+
+la cui soluzione è $A = -\frac{1}{2}$, $B = \frac{5}{2}$. L'integrale quindi diventa
+
+$$\int \frac{2x + 1}{x^2 + 4x + 3} \, dx= -\frac{1}{2} \ln |x+1| + \frac{5}{2} \ln |x + 3| + C \ .$$
+
+```
