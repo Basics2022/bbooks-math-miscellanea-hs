@@ -127,7 +127,7 @@ $$\begin{aligned}
   & = \lim_{h \rightarrow 0} \frac{f(x+h) g(x+h) - f(x) g(x)}{h} = \\
   & = \lim_{h \rightarrow 0} \frac{f(x+h) g(x+h) - f(x)g(x+h) + f(x)g(x+h) - f(x) g(x)}{h} = \\
   & = \lim_{h \rightarrow 0} \frac{f(x+h) g(x+h) - f(x)g(x+h)}{h} + \lim_{h\rightarrow 0} \frac{f(x)g(x+h) - f(x) g(x)}{h} = \\
-  & = \lim_{h \rightarrow 0} \underbrace{\frac{f(x+h) - f(x)}{h}}_{\rightarrow f'(x)} \underbrace{g(x+h)}_{\rightarrow g(x)} + f(x) \underbrace{\lim_{h\rightarrow 0} \frac{g(x+h) - g(x)}{h}}{\rightarrow g'(x)} = \\
+  & = \lim_{h \rightarrow 0} \underbrace{\frac{f(x+h) - f(x)}{h}}_{\rightarrow f'(x)} \underbrace{g(x+h)}_{\rightarrow g(x)} + f(x) \underbrace{\lim_{h\rightarrow 0} \frac{g(x+h) - g(x)}{h}}_{\rightarrow g'(x)} = \\
   & = f'(x) g(x) + f(x) g'(x) \ .
 \end{aligned}$$
 **todo**
