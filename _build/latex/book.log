@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2024.9.16)  9 FEB 2025 19:30
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2024.9.16)  9 FEB 2025 19:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3289,27 +3289,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 14493--14494
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14496--14497
-[]\TU/FreeMono(0)/m/n/10 definition-0 \TU/FreeSerif(0)/m/n/10 (\TU/FreeSerif(0)
-/m/it/10 ch/infinitesimal_calculus/derivatives\TU/FreeSerif(0)/m/n/10 ),
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 14499--14500
-[]\TU/FreeMono(0)/m/n/10 definition-1 \TU/FreeSerif(0)/m/n/10 (\TU/FreeSerif(0)
-/m/it/10 ch/infinitesimal_calculus/derivatives\TU/FreeSerif(0)/m/n/10 ),
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 14502--14503
+Underfull \hbox (badness 5533) in paragraph at lines 14502--14503
 []\TU/FreeMono(0)/m/n/10 definition-2 \TU/FreeSerif(0)/m/n/10 (\TU/FreeSerif(0)
-/m/it/10 ch/infinitesimal_calculus/derivatives\TU/FreeSerif(0)/m/n/10 ),
+/m/it/10 ch/multivariable-calculus/derivatives\TU/FreeSerif(0)/m/n/10 ),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14505--14506
+Underfull \hbox (badness 5533) in paragraph at lines 14505--14506
 []\TU/FreeMono(0)/m/n/10 definition-3 \TU/FreeSerif(0)/m/n/10 (\TU/FreeSerif(0)
-/m/it/10 ch/infinitesimal_calculus/derivatives\TU/FreeSerif(0)/m/n/10 ),
+/m/it/10 ch/multivariable-calculus/derivatives\TU/FreeSerif(0)/m/n/10 ),
  []
 
 
