@@ -1,5 +1,6 @@
 (multivariable-calculus:derivatives)=
 # Derivate di funzioni di più variabili
+(multivariable-calculus:derivatives:partial)=
 ## Derivate parziali
 ```{prf:definition} Derivata parziale
 :label: multivariable-calculus-partial-derivative

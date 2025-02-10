@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>19.2. Problemi &#8212; Matematica per le scuole superiori</title>
+    <title>28.1. Geometria todo cambiare titolo &#8212; Matematica per le scuole superiori</title>
   
   
   
@@ -65,12 +65,14 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/precalculus/exponential_logarithm-problems';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/vector-calculus/geometry';</script>
     <link rel="shortcut icon" href="../../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="19.3. Soluzioni" href="exponential_logarithm-sol.html" />
-    <link rel="prev" title="19. Esponenziale e logaritmo" href="exponential_logarithm.html" />
+    <link rel="next" title="28.2. Operatori differenziali in spazi euclidei" href="derivatives.html" />
+    <link rel="prev" title="28. Introduzione al calcolo vettoriale su spazi euclidei" href="../vector-calculus.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
@@ -220,16 +222,16 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Precalcolo</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../precalculus.html">14. Introduzione al pre-calcolo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="real-functions.html">15. Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\(f: A \subseteq \mathbb{R} \rightarrow \mathbb{R}\)</span></a></li>
-<li class="toctree-l1"><a class="reference internal" href="polynomials.html">16. Polinomi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../precalculus/real-functions.html">15. Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\(f: A \subseteq \mathbb{R} \rightarrow \mathbb{R}\)</span></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../precalculus/polynomials.html">16. Polinomi</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../series.html">17. Serie e successioni</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../trigonometry.html">18. Trigonometria</a></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="exponential_logarithm.html">19. Esponenziale e logaritmo</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">19.2. Problemi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="exponential_logarithm-sol.html">19.3. Soluzioni</a></li>
-<li class="toctree-l2"><a class="reference internal" href="exponential_logarithm-notes.html">19.4. Note e dimostrazioni</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../precalculus/exponential_logarithm.html">19. Esponenziale e logaritmo</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../precalculus/exponential_logarithm-problems.html">19.2. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../precalculus/exponential_logarithm-sol.html">19.3. Soluzioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../precalculus/exponential_logarithm-notes.html">19.4. Note e dimostrazioni</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../algebra/complex-algebra.html">20. Algebra complessa</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -238,10 +240,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../algebra/complex-algebra-notes.html">20.11. Note e dimostrazioni</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="multivariable-real-fun.html">21. Funzioni multi-variabile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../precalculus/multivariable-real-fun.html">21. Funzioni multi-variabile</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Calcolo</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../calculus.html">22. Introduzione al calcolo</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../infinitesimal_calculus/analysis.html">23. Introduzione all’analisi</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/analysis-problems.html">23.9. Problemi</a></li>
@@ -265,11 +267,11 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../multivariable-calculus/integrals.html">27.3. Integrali su domini multi-dimensionali</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../vector-calculus.html">28. Introduzione al calcolo vettoriale su spazi euclidei</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../vector-calculus/geometry.html">28.1. Geometria <strong>todo</strong> <em>cambiare titolo</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../vector-calculus/derivatives.html">28.2. Operatori differenziali in spazi euclidei</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../vector-calculus/integrals.html">28.3. Integrali in spazi euclidei</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../vector-calculus/problems.html">28.4. Problemi</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../vector-calculus.html">28. Introduzione al calcolo vettoriale su spazi euclidei</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">28.1. Geometria <strong>todo</strong> <em>cambiare titolo</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="derivatives.html">28.2. Operatori differenziali in spazi euclidei</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integrals.html">28.3. Integrali in spazi euclidei</a></li>
+<li class="toctree-l2"><a class="reference internal" href="problems.html">28.4. Problemi</a></li>
 </ul>
 </li>
 </ul>
@@ -351,7 +353,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs/edit/master/ch/precalculus/exponential_logarithm-problems.md" target="_blank"
+      <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs/edit/master/ch/vector-calculus/geometry.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -368,7 +370,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs/issues/new?title=Issue%20on%20page%20%2Fch/precalculus/exponential_logarithm-problems.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs/issues/new?title=Issue%20on%20page%20%2Fch/vector-calculus/geometry.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Apri un problema"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -398,7 +400,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/ch/precalculus/exponential_logarithm-problems.md" target="_blank"
+      <li><a href="../../_sources/ch/vector-calculus/geometry.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Scarica il file sorgente"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -469,7 +471,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -480,11 +484,24 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Problemi</h1>
+    <h1>Geometria todo cambiare titolo</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contenuti </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parametrizzazione-dello-spazio">28.1.1. Parametrizzazione dello spazio</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#base-naturale">28.1.2. Base naturale</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#curve-coordinate">28.1.2.1. Curve coordinate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#superfici-coordiante">28.1.2.2. Superfici coordiante</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -494,8 +511,104 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="problemi">
-<span id="math-hs-exp-log-problems"></span><h1><span class="section-number">19.2. </span>Problemi<a class="headerlink" href="#problemi" title="Permalink to this heading">#</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="geometria-todo-cambiare-titolo">
+<span id="vector-calculus-geometry"></span><h1><span class="section-number">28.1. </span>Geometria <strong>todo</strong> <em>cambiare titolo</em><a class="headerlink" href="#geometria-todo-cambiare-titolo" title="Permalink to this heading">#</a></h1>
+<div class="section" id="parametrizzazione-dello-spazio">
+<span id="vector-calculus-geometry-coordinates"></span><h2><span class="section-number">28.1.1. </span>Parametrizzazione dello spazio<a class="headerlink" href="#parametrizzazione-dello-spazio" title="Permalink to this heading">#</a></h2>
+<p>Uno spazio può essere descritto tramite l’uso di un sistema di coordinate, composto da una <span class="math notranslate nohighlight">\(n\)</span>-upla di coordinate indipendenti <span class="math notranslate nohighlight">\(\left( q^i \right)_{i = 1:n}\)</span>.</p>
+<div class="proof definition admonition" id="definition-0">
+<p class="admonition-title"><span class="caption-number">Definition 28.1 </span> (Parametrizzazione regolare)</p>
+<div class="definition-content section" id="proof-content">
+<p>Una parametrizzazione di una regione dello spazio spazio è <strong>regolare</strong> se è una funzione biunivoca,</p>
+<div class="math notranslate nohighlight">
+\[P\left(q^i \right)\]</div>
+<p>tra i punti <span class="math notranslate nohighlight">\(P\)</span> dello spazio e i valori delle coordinate <span class="math notranslate nohighlight">\(\left( q^i \right)\)</span>. In altre parole, a ogni <span class="math notranslate nohighlight">\(n\)</span>-upla <span class="math notranslate nohighlight">\(\left( q^i \right)_{i=1:n}\)</span> corrisponde uno e un punto <span class="math notranslate nohighlight">\(P\)</span> e viceversa.</p>
+</div>
+</div><p><strong>todo</strong></p>
+<ul class="simple">
+<li><p><em>Conseguenze sulle funzioni delle coordiante dei punti in funzione delle coordiante: derivata non si annulla nel dominio…</em></p></li>
+<li><p><em>Può essere necessario/utile definire più parametrizzazioni che coprono diverse zone del dominio…</em></p></li>
+</ul>
+<div class="proof example dropdown admonition" id="example-1">
+<p class="admonition-title"><span class="caption-number">Example 28.1 </span> (Spazio <span class="math notranslate nohighlight">\(E^2\)</span>: coordinate cartesiane)</p>
+<div class="example-content section" id="proof-content">
+<p>Dopo aver scelto il punto <span class="math notranslate nohighlight">\(O\)</span> come origine, è possibile utilizzare un sistema di coordinate cartesiane <span class="math notranslate nohighlight">\((q^1, q^2) = (x,y)\)</span> e rappresentare un generico punto <span class="math notranslate nohighlight">\(P\)</span> dello spazio come</p>
+<div class="math notranslate nohighlight">
+\[\vec{r} = P - O = x \, \hat{x} + y \, \hat{y} \ .\]</div>
+</div>
+</div><div class="proof example dropdown admonition" id="example-2">
+<p class="admonition-title"><span class="caption-number">Example 28.2 </span> (Spazio <span class="math notranslate nohighlight">\(E^2\)</span>: coordinate polari)</p>
+<div class="example-content section" id="proof-content">
+<p>Utilizzando un sistema di coordinate polari con la stessa origine <span class="math notranslate nohighlight">\(O\)</span> di un sistema di coordinate cartesiane, e l’asse di riferimento per l’angolo <span class="math notranslate nohighlight">\(\theta\)</span> coincidente con l’asse <span class="math notranslate nohighlight">\(x\)</span> del sistema di coordinate cartesiane, è possibile rappresentare le coordinate cartesiane in funzione delle coordinate polari <span class="math notranslate nohighlight">\((q^1, q^2) = (r, \theta)\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+  x = r \, \cos \theta \\
+  y = r \, \sin \theta \\
+\end{cases}\end{split}\]</div>
+<p>e un punto generico nello spazio - con una rappresentazione «mista» che usa le coordinate polari e i vettori <span class="math notranslate nohighlight">\(\hat{x}\)</span>, <span class="math notranslate nohighlight">\(\hat{y}\)</span> ddella base cartesiana<a class="footnote-reference brackets" href="#mixed-cartesian-polar" id="id1">1</a> - come</p>
+<div class="math notranslate nohighlight">
+\[\vec{r} = r \, \cos \theta \, \hat{x} + r \, \sin \theta \, \hat{y} \ .\]</div>
+</div>
+</div><div class="proof example dropdown admonition" id="example-3">
+<p class="admonition-title"><span class="caption-number">Example 28.3 </span> (Spazio <span class="math notranslate nohighlight">\(E^3\)</span>: coordinate cartesiane)</p>
+<div class="example-content section" id="proof-content">
+<p>Dopo aver scelto il punto <span class="math notranslate nohighlight">\(O\)</span> come origine, è possibile utilizzare un sistema di coordinate cartesiane <span class="math notranslate nohighlight">\((q^1, q^2, q^3) = (x,y,z)\)</span> e rappresentare un generico punto <span class="math notranslate nohighlight">\(P\)</span> dello spazio come</p>
+<div class="math notranslate nohighlight">
+\[\vec{r} = P - O = x \, \hat{x} + y \, \hat{y} + z \, \hat{z} \ .\]</div>
+</div>
+</div><div class="proof example dropdown admonition" id="example-4">
+<p class="admonition-title"><span class="caption-number">Example 28.4 </span> (Spazio <span class="math notranslate nohighlight">\(E^3\)</span>: coordinate cilindriche)</p>
+<div class="example-content section" id="proof-content">
+<p>Utilizzando un sistema di coordinate polari con la stessa origine <span class="math notranslate nohighlight">\(O\)</span> di un sistema di coordinate cartesiane, gli assi <span class="math notranslate nohighlight">\(z\)</span> coincidenti, e l’asse di riferimento per l’angolo <span class="math notranslate nohighlight">\(\theta\)</span> coincidente con l’asse <span class="math notranslate nohighlight">\(x\)</span> del sistema di coordinate cartesiane, è possibile rappresentare le coordinate cartesiane in funzione delle coordinate polari <span class="math notranslate nohighlight">\((q^1, q^2, q^3) = (r, \theta, z)\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+  x = r \, \cos \theta \\
+  y = r \, \sin \theta \\
+  z = z 
+\end{cases}\end{split}\]</div>
+<p>e un punto generico nello spazio - con una rappresentazione «mista» che usa le coordinate polari e i vettori <span class="math notranslate nohighlight">\(\hat{x}\)</span>, <span class="math notranslate nohighlight">\(\hat{y}\)</span>, <span class="math notranslate nohighlight">\(\hat{z}\)</span> della base cartesiana<a class="footnote-reference brackets" href="#mixed-cartesian-polar" id="id2">1</a> - come</p>
+<div class="math notranslate nohighlight">
+\[\vec{r} = r \, \cos \theta \, \hat{x} + r \, \sin \theta \, \hat{y} + z \, \hat{z} \ .\]</div>
+</div>
+</div><div class="proof example dropdown admonition" id="example-5">
+<p class="admonition-title"><span class="caption-number">Example 28.5 </span> (Spazio <span class="math notranslate nohighlight">\(E^3\)</span>: coordinate sferiche)</p>
+<div class="example-content section" id="proof-content">
+<p>Utilizzando un sistema di coordinate polari con la stessa origine <span class="math notranslate nohighlight">\(O\)</span> di un sistema di coordinate cartesiane, gli assi <span class="math notranslate nohighlight">\(z\)</span> coincidenti, e l’asse di riferimento per l’angolo <span class="math notranslate nohighlight">\(\theta\)</span> coincidente con l’asse <span class="math notranslate nohighlight">\(x\)</span> del sistema di coordinate cartesiane, è possibile rappresentare le coordinate cartesiane in funzione delle coordinate polari <span class="math notranslate nohighlight">\((q^1, q^2, q^3) = (R, \phi, \theta)\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+  x = R \, \sin \phi \, \sin \theta \\
+  y = R \, \sin \phi \, \cos \theta \\
+  z = R \, \cos \phi
+\end{cases}\end{split}\]</div>
+<p>e un punto generico nello spazio - con una rappresentazione «mista» che usa le coordinate polari e i vettori <span class="math notranslate nohighlight">\(\hat{x}\)</span>, <span class="math notranslate nohighlight">\(\hat{y}\)</span>, <span class="math notranslate nohighlight">\(\hat{z}\)</span> della base cartesiana<a class="footnote-reference brackets" href="#mixed-cartesian-polar" id="id3">1</a> - come</p>
+<div class="math notranslate nohighlight">
+\[\vec{r} = R \, \sin \phi \, \cos \theta \, \hat{x} + r \, \sin \phi \, \sin \theta \, \hat{y} + R \, \cos \phi \hat{z} \ .\]</div>
+</div>
+</div></div>
+<div class="section" id="base-naturale">
+<span id="vector-calculus-geometry-natural-basis"></span><h2><span class="section-number">28.1.2. </span>Base naturale<a class="headerlink" href="#base-naturale" title="Permalink to this heading">#</a></h2>
+<p>La paramterizzazione dello spazio permette di associare a ogni punto dello spazio una <span class="math notranslate nohighlight">\(n\)</span>-upla di coordiante. Usando una rappresentazione mista - scegliendo dei vettori di una base cartesiana con origine in <span class="math notranslate nohighlight">\(O\)</span>, e coordiante generiche <span class="math notranslate nohighlight">\(q^i\)</span> - si può quindi rappresentare i punti dello spazio come</p>
+<div class="math notranslate nohighlight">
+\[\vec{r} = P - O = x^k \left(q^i\right) \hat{x}_k \ ,\]</div>
+<p>o più esplicitamente per spazi 2-dimensionali</p>
+<div class="math notranslate nohighlight">
+\[\vec{r} = P - O = x \left(q^1, q^2\right) \hat{x} + y\left(q^1, q^2\right) \hat{y} \ ,\]</div>
+<p>e per spazi 3-dimensionali</p>
+<div class="math notranslate nohighlight">
+\[\vec{r} = P - O = x \left(q^1, q^2, q^3\right) \hat{x} + y\left(q^1, q^2, q^3 \right) \hat{y} + z\left( q^1, q^2, q^3 \right) \hat{z} \ .\]</div>
+<div class="section" id="curve-coordinate">
+<span id="vector-calculus-geometry-coordinate-lines"></span><h3><span class="section-number">28.1.2.1. </span>Curve coordinate<a class="headerlink" href="#curve-coordinate" title="Permalink to this heading">#</a></h3>
+</div>
+<div class="section" id="superfici-coordiante">
+<span id="vector-calculus-geometry-coordiante-sufraces"></span><h3><span class="section-number">28.1.2.2. </span>Superfici coordiante<a class="headerlink" href="#superfici-coordiante" title="Permalink to this heading">#</a></h3>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="mixed-cartesian-polar"><span class="brackets">1</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id2">2</a>,<a href="#id3">3</a>)</span></dt>
+<dd><p>Questa rappresentazione può risultare utile quando è necessario svolgere derivate della posizione, poiché i vettori della base cartesiana sono costanti in tutto lo spazio e quindi la loro derivata è nulla. <strong>todo</strong> <em>Aggiungere collegamenti a sezione derivate (esempi?) e alla cinematica in meccanica classica.</em></p>
+</dd>
+</dl>
+</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -511,7 +624,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./ch/precalculus"
+            path: "./ch/vector-calculus"
         },
         predefinedOutput: true
     }
@@ -529,20 +642,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="exponential_logarithm.html"
+       href="../vector-calculus.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">precedente</p>
-        <p class="prev-next-title"><span class="section-number">19. </span>Esponenziale e logaritmo</p>
+        <p class="prev-next-title"><span class="section-number">28. </span>Introduzione al calcolo vettoriale su spazi euclidei</p>
       </div>
     </a>
     <a class="right-next"
-       href="exponential_logarithm-sol.html"
+       href="derivatives.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">19.3. </span>Soluzioni</p>
+        <p class="prev-next-title"><span class="section-number">28.2. </span>Operatori differenziali in spazi euclidei</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -552,6 +665,25 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenuti
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parametrizzazione-dello-spazio">28.1.1. Parametrizzazione dello spazio</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#base-naturale">28.1.2. Base naturale</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#curve-coordinate">28.1.2.1. Curve coordinate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#superfici-coordiante">28.1.2.2. Superfici coordiante</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
