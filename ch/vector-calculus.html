@@ -500,40 +500,44 @@ document.write(`
 <span id="vector-calculus"></span><h1><span class="section-number">28. </span>Introduzione al calcolo vettoriale su spazi euclidei<a class="headerlink" href="#introduzione-al-calcolo-vettoriale-su-spazi-euclidei" title="Permalink to this heading">#</a></h1>
 <p>Questo capitolo è un’introduzione al calcolo vettoriale in spazi euclidei, estendendo gli strumenti del calcolo alle funzioni (scalari o vettoriali) definite in uno <a class="reference internal" href="analytic_geometry/euclidean_space.html#geometry-analytic-euclidean-space"><span class="std std-ref">spazio euclideo</span></a>, limitandosi al caso di <span class="math notranslate nohighlight">\(E^2\)</span> ed <span class="math notranslate nohighlight">\(E^3\)</span>.</p>
 <p>Il capitolo è suddiviso nelle seguenti sezioni:</p>
-<p><a class="reference internal" href="vector-calculus/geometry.html#vector-calculus-geometry"><span class="std std-ref"><strong>Descrizione dello spazio con coordinate.</strong></span></a> Lo spazio e le entità geometriche in esso possono essere rappresentate tramite l’uso di un <strong>sistema di coordinate</strong>. Vengono presentati alcuni sistemi di coordinate comuni (cartesiane e polari in <span class="math notranslate nohighlight">\(E^2\)</span>, cartesiane, cilindriche, sferiche in <span class="math notranslate nohighlight">\(E^3\)</span>) apppoggiandosi ai sistemi di coordinate cartesiane. Vengono introdotti concetti geometrici indotti dalla scelta del sistema di coordinate: i vettori di una base locale naturale, le curve coordinate e le superfici coordinate. Infine, anche i campi - funzioni definite nello spazio - possono essere rappresentati come funzioni delle coordinate.</p>
+<p><a class="reference internal" href="vector-calculus/geometry.html#vector-calculus-geometry"><span class="std std-ref"><strong>Descrizione dello spazio con coordinate.</strong></span></a> Lo spazio e le entità geometriche in esso possono essere rappresentate tramite l’uso di un <strong>sistema di coordinate</strong>. Vengono presentati alcuni sistemi di coordinate comuni (cartesiane e polari in <span class="math notranslate nohighlight">\(E^2\)</span>, cartesiane, cilindriche, sferiche in <span class="math notranslate nohighlight">\(E^3\)</span>) apppoggiandosi ai sistemi di coordinate cartesiane. Vengono introdotti concetti geometrici indotti dalla scelta del sistema di coordinate: i vettori di una base locale naturale, le curve coordinate e le superfici coordinate. Infine, anche i <strong>campi</strong> - funzioni definite nello spazio - possono essere rappresentati come funzioni delle coordinate.</p>
 <p>Dal punto di vista concettuale, si mette in evidenza da una parte un «criterio di semplicità» per la scelta di un sistema di coordinate per rappresentare un fenomeno o risolvere un problema, e dall’altra il concetto di <strong>invarianza rispetto alla scelta del sistema di coordinate</strong> dello spazio e delle funzioni definite in esso.</p>
 <p><strong>todo</strong> <em>Tenendo bene in mente la definizione dei sistemi di coordiante utilizzati per la rappresentazione parametrica dello spazio e degli elementi geometrici in esso, il calcolo vettoriale può essere ricondotto al calcolo multi-variabile</em></p>
 <p><a class="reference internal" href="vector-calculus/derivatives.html#vector-calculus-derivatives"><span class="std std-ref"><strong>Operatori differenziali in spazi euclidei.</strong></span></a> Viene esteso il concetto di derivata (<strong>todo</strong> <em>introdotto inizialmente per fuunzioni reali, e poi per funzioni di più variabili</em>), presentando alcuni operatori che compaiono frequentemente nell’ambito delle scienze e dal chiaro significato fisico.</p>
-<p><a class="reference internal" href="vector-calculus/integrals.html#vector-calculus-integrals"><span class="std std-ref"><strong>Integrali su spazi euclidei.</strong></span></a> Viene esteso il concetto di integrale a funzioni definite su domini - luoghi geometrici - contenuti nello spazio euclideo. Vengono introdotti alcuni integrali che compaiono frequentemente nell’ambito delle scienze - integrali di linea (densità e lavoro), integrali di superficie (densità e flusso), integrali di volume (densità). Viene mostrato il procedimento pratico per calcolare tali integrali grazie all’uso di coordinate, tramite esempi. <em>Infine teorema gradiente, divergenza, rotore</em>.</p>
-<p>Viene definito <strong>campo scalare</strong> una funzione <span class="math notranslate nohighlight">\(f(P)\)</span> a valori reale definita sui punti <span class="math notranslate nohighlight">\(P\)</span> di uno spazio euclideo <span class="math notranslate nohighlight">\(E^n\)</span>, <span class="math notranslate nohighlight">\(f: E^n \rightarrow \mathbb{R}\)</span>.
-Viene definito <strong>campo vettoriale</strong> una funzione <span class="math notranslate nohighlight">\(\vec{f}(P)\)</span> a valori vettoriali definita sui punti <span class="math notranslate nohighlight">\(P\)</span> di uno spazio euclideo <span class="math notranslate nohighlight">\(E^n\)</span>, <span class="math notranslate nohighlight">\(\vec{f}: E^n \rightarrow V\)</span>.
-<strong>todo</strong> <em>esistono anche i tensori…lo diciamo?</em></p>
-<p>Il calcolo vettoriale è lo strumento naturale per la descrizione di problemi di geometria e fisica, garantendo l”<strong>invarianza</strong> del problema affrontato dalla descrizione adottata. <em>esempi: proprietà geometriche, inerziali, flussi e circuitazioni,…</em></p>
-<p>Una volta introdotta una parametrizzazione dello spazio con un insieme di coordinate <span class="math notranslate nohighlight">\(P(q^1,...,q^n)\)</span>, il calcolo vettoriale può essere ricondotto al calcolo multi-variabile.</p>
-<p><strong>todo</strong> <em>Contenuti.</em></p>
-<p>Operatori differenziali:</p>
+<p><a class="reference internal" href="vector-calculus/integrals.html#vector-calculus-integrals"><span class="std std-ref"><strong>Integrali su spazi euclidei.</strong></span></a> Viene esteso il concetto di integrale a funzioni definite su domini - luoghi geometrici - contenuti nello spazio euclideo. Vengono introdotti alcuni integrali che compaiono frequentemente nell’ambito delle scienze - integrali di linea (densità e lavoro), integrali di superficie (densità e flusso), integrali di volume (densità). Viene mostrato il procedimento pratico per calcolare tali integrali grazie all’uso di coordinate, tramite esempi. Questi integrali rappresentano lo strumento matematico necessario per alcune applicazioni che riguardano problemi continui, come ad esempio:</p>
 <ul class="simple">
-<li><p>derivata direzionale</p></li>
-<li><p>gradiente</p></li>
-<li><p>divergenza</p></li>
-<li><p>rotore</p></li>
+<li><p>calcolo di lunghezza di curve, area di superfici e volumi di solidi</p></li>
+<li><p>calcolo di proprietà meccaniche di un sistema, ad esempio le proprietà inerziali di un sistema legate alla sua distribuzione di massa <span class="math notranslate nohighlight">\(\rho(P)\)</span>: massa, centro di massa, momenti di inerzia</p></li>
+<li><p>calcolo di integrali ricorrenti in fisica: lavoro di una forza, circuitazione di un campo lungo una linea chiusa, flusso di un campo attraverso una superficie.</p></li>
 </ul>
-<p>Integrali:</p>
-<ul class="simple">
-<li><p>calcolo di lunghezze, aree e volumi</p></li>
-<li><p>calcolo di proprietà fisiche di un sistema:</p>
-<ul>
-<li><p>massa, centro di massa, momenti di inerzia</p></li>
-</ul>
-</li>
-<li><p>calcolo di integrali particolari:</p>
-<ul>
-<li><p>integrale di volume</p></li>
-<li><p>flusso attraverso una superficie</p></li>
-<li><p>integrale lungo una curva e circuitazione</p></li>
-</ul>
-</li>
-</ul>
+<p><em>Infine teorema gradiente, divergenza, rotore</em>.</p>
+<!--
+Viene definito **campo scalare** una funzione $f(P)$ a valori reale definita sui punti $P$ di uno spazio euclideo $E^n$, $f: E^n \rightarrow \mathbb{R}$.
+Viene definito **campo vettoriale** una funzione $\vec{f}(P)$ a valori vettoriali definita sui punti $P$ di uno spazio euclideo $E^n$, $\vec{f}: E^n \rightarrow V$.
+**todo** *esistono anche i tensori...lo diciamo?*
+
+Il calcolo vettoriale è lo strumento naturale per la descrizione di problemi di geometria e fisica, garantendo l'**invarianza** del problema affrontato dalla descrizione adottata. *esempi: proprietà geometriche, inerziali, flussi e circuitazioni,...*
+
+Una volta introdotta una parametrizzazione dello spazio con un insieme di coordinate $P(q^1,...,q^n)$, il calcolo vettoriale può essere ricondotto al calcolo multi-variabile.
+
+
+**todo** *Contenuti.*
+
+Operatori differenziali:
+- derivata direzionale
+- gradiente
+- divergenza
+- rotore
+
+Integrali:
+- calcolo di lunghezze, aree e volumi
+- calcolo di proprietà fisiche di un sistema:
+  - massa, centro di massa, momenti di inerzia
+- calcolo di integrali particolari:
+  - integrale di volume
+  - flusso attraverso una superficie
+  - integrale lungo una curva e circuitazione
+-->
 <div class="toctree-wrapper compound">
 </div>
 </div>

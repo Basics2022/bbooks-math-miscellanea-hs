@@ -495,6 +495,11 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parametrizzazione-dello-spazio">28.1.1. Parametrizzazione dello spazio</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#base-naturale">28.1.2. Base naturale</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#curve-coordinate">28.1.2.1. Curve coordinate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#superfici-coordiante">28.1.2.2. Superfici coordiante</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -511,6 +516,99 @@ document.write(`
 <div class="section" id="parametrizzazione-dello-spazio">
 <span id="vector-calculus-geometry-coordinates"></span><h2><span class="section-number">28.1.1. </span>Parametrizzazione dello spazio<a class="headerlink" href="#parametrizzazione-dello-spazio" title="Permalink to this heading">#</a></h2>
 <p>Uno spazio può essere descritto tramite l’uso di un sistema di coordinate, composto da una <span class="math notranslate nohighlight">\(n\)</span>-upla di coordinate indipendenti <span class="math notranslate nohighlight">\(\left( q^i \right)_{i = 1:n}\)</span>.</p>
+<div class="proof definition admonition" id="definition-0">
+<p class="admonition-title"><span class="caption-number">Definition 28.1 </span> (Parametrizzazione regolare)</p>
+<div class="definition-content section" id="proof-content">
+<p>Una parametrizzazione di una regione dello spazio spazio è <strong>regolare</strong> se è una funzione biunivoca,</p>
+<div class="math notranslate nohighlight">
+\[P\left(q^i \right)\]</div>
+<p>tra i punti <span class="math notranslate nohighlight">\(P\)</span> dello spazio e i valori delle coordinate <span class="math notranslate nohighlight">\(\left( q^i \right)\)</span>. In altre parole, a ogni <span class="math notranslate nohighlight">\(n\)</span>-upla <span class="math notranslate nohighlight">\(\left( q^i \right)_{i=1:n}\)</span> corrisponde uno e un punto <span class="math notranslate nohighlight">\(P\)</span> e viceversa.</p>
+</div>
+</div><p><strong>todo</strong></p>
+<ul class="simple">
+<li><p><em>Conseguenze sulle funzioni delle coordiante dei punti in funzione delle coordiante: derivata non si annulla nel dominio…</em></p></li>
+<li><p><em>Può essere necessario/utile definire più parametrizzazioni che coprono diverse zone del dominio…</em></p></li>
+</ul>
+<div class="proof example dropdown admonition" id="example-1">
+<p class="admonition-title"><span class="caption-number">Example 28.1 </span> (Spazio <span class="math notranslate nohighlight">\(E^2\)</span>: coordinate cartesiane)</p>
+<div class="example-content section" id="proof-content">
+<p>Dopo aver scelto il punto <span class="math notranslate nohighlight">\(O\)</span> come origine, è possibile utilizzare un sistema di coordinate cartesiane <span class="math notranslate nohighlight">\((q^1, q^2) = (x,y)\)</span> e rappresentare un generico punto <span class="math notranslate nohighlight">\(P\)</span> dello spazio come</p>
+<div class="math notranslate nohighlight">
+\[\vec{r} = P - O = x \, \hat{x} + y \, \hat{y} \ .\]</div>
+</div>
+</div><div class="proof example dropdown admonition" id="example-2">
+<p class="admonition-title"><span class="caption-number">Example 28.2 </span> (Spazio <span class="math notranslate nohighlight">\(E^2\)</span>: coordinate polari)</p>
+<div class="example-content section" id="proof-content">
+<p>Utilizzando un sistema di coordinate polari con la stessa origine <span class="math notranslate nohighlight">\(O\)</span> di un sistema di coordinate cartesiane, e l’asse di riferimento per l’angolo <span class="math notranslate nohighlight">\(\theta\)</span> coincidente con l’asse <span class="math notranslate nohighlight">\(x\)</span> del sistema di coordinate cartesiane, è possibile rappresentare le coordinate cartesiane in funzione delle coordinate polari <span class="math notranslate nohighlight">\((q^1, q^2) = (r, \theta)\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+  x = r \, \cos \theta \\
+  y = r \, \sin \theta \\
+\end{cases}\end{split}\]</div>
+<p>e un punto generico nello spazio - con una rappresentazione «mista» che usa le coordinate polari e i vettori <span class="math notranslate nohighlight">\(\hat{x}\)</span>, <span class="math notranslate nohighlight">\(\hat{y}\)</span> ddella base cartesiana<a class="footnote-reference brackets" href="#mixed-cartesian-polar" id="id1">1</a> - come</p>
+<div class="math notranslate nohighlight">
+\[\vec{r} = r \, \cos \theta \, \hat{x} + r \, \sin \theta \, \hat{y} \ .\]</div>
+</div>
+</div><div class="proof example dropdown admonition" id="example-3">
+<p class="admonition-title"><span class="caption-number">Example 28.3 </span> (Spazio <span class="math notranslate nohighlight">\(E^3\)</span>: coordinate cartesiane)</p>
+<div class="example-content section" id="proof-content">
+<p>Dopo aver scelto il punto <span class="math notranslate nohighlight">\(O\)</span> come origine, è possibile utilizzare un sistema di coordinate cartesiane <span class="math notranslate nohighlight">\((q^1, q^2, q^3) = (x,y,z)\)</span> e rappresentare un generico punto <span class="math notranslate nohighlight">\(P\)</span> dello spazio come</p>
+<div class="math notranslate nohighlight">
+\[\vec{r} = P - O = x \, \hat{x} + y \, \hat{y} + z \, \hat{z} \ .\]</div>
+</div>
+</div><div class="proof example dropdown admonition" id="example-4">
+<p class="admonition-title"><span class="caption-number">Example 28.4 </span> (Spazio <span class="math notranslate nohighlight">\(E^3\)</span>: coordinate cilindriche)</p>
+<div class="example-content section" id="proof-content">
+<p>Utilizzando un sistema di coordinate polari con la stessa origine <span class="math notranslate nohighlight">\(O\)</span> di un sistema di coordinate cartesiane, gli assi <span class="math notranslate nohighlight">\(z\)</span> coincidenti, e l’asse di riferimento per l’angolo <span class="math notranslate nohighlight">\(\theta\)</span> coincidente con l’asse <span class="math notranslate nohighlight">\(x\)</span> del sistema di coordinate cartesiane, è possibile rappresentare le coordinate cartesiane in funzione delle coordinate polari <span class="math notranslate nohighlight">\((q^1, q^2, q^3) = (r, \theta, z)\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+  x = r \, \cos \theta \\
+  y = r \, \sin \theta \\
+  z = z 
+\end{cases}\end{split}\]</div>
+<p>e un punto generico nello spazio - con una rappresentazione «mista» che usa le coordinate polari e i vettori <span class="math notranslate nohighlight">\(\hat{x}\)</span>, <span class="math notranslate nohighlight">\(\hat{y}\)</span>, <span class="math notranslate nohighlight">\(\hat{z}\)</span> della base cartesiana<a class="footnote-reference brackets" href="#mixed-cartesian-polar" id="id2">1</a> - come</p>
+<div class="math notranslate nohighlight">
+\[\vec{r} = r \, \cos \theta \, \hat{x} + r \, \sin \theta \, \hat{y} + z \, \hat{z} \ .\]</div>
+</div>
+</div><div class="proof example dropdown admonition" id="example-5">
+<p class="admonition-title"><span class="caption-number">Example 28.5 </span> (Spazio <span class="math notranslate nohighlight">\(E^3\)</span>: coordinate sferiche)</p>
+<div class="example-content section" id="proof-content">
+<p>Utilizzando un sistema di coordinate polari con la stessa origine <span class="math notranslate nohighlight">\(O\)</span> di un sistema di coordinate cartesiane, gli assi <span class="math notranslate nohighlight">\(z\)</span> coincidenti, e l’asse di riferimento per l’angolo <span class="math notranslate nohighlight">\(\theta\)</span> coincidente con l’asse <span class="math notranslate nohighlight">\(x\)</span> del sistema di coordinate cartesiane, è possibile rappresentare le coordinate cartesiane in funzione delle coordinate polari <span class="math notranslate nohighlight">\((q^1, q^2, q^3) = (R, \phi, \theta)\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+  x = R \, \sin \phi \, \sin \theta \\
+  y = R \, \sin \phi \, \cos \theta \\
+  z = R \, \cos \phi
+\end{cases}\end{split}\]</div>
+<p>e un punto generico nello spazio - con una rappresentazione «mista» che usa le coordinate polari e i vettori <span class="math notranslate nohighlight">\(\hat{x}\)</span>, <span class="math notranslate nohighlight">\(\hat{y}\)</span>, <span class="math notranslate nohighlight">\(\hat{z}\)</span> della base cartesiana<a class="footnote-reference brackets" href="#mixed-cartesian-polar" id="id3">1</a> - come</p>
+<div class="math notranslate nohighlight">
+\[\vec{r} = R \, \sin \phi \, \cos \theta \, \hat{x} + r \, \sin \phi \, \sin \theta \, \hat{y} + R \, \cos \phi \hat{z} \ .\]</div>
+</div>
+</div></div>
+<div class="section" id="base-naturale">
+<span id="vector-calculus-geometry-natural-basis"></span><h2><span class="section-number">28.1.2. </span>Base naturale<a class="headerlink" href="#base-naturale" title="Permalink to this heading">#</a></h2>
+<p>La paramterizzazione dello spazio permette di associare a ogni punto dello spazio una <span class="math notranslate nohighlight">\(n\)</span>-upla di coordiante. Usando una rappresentazione mista - scegliendo dei vettori di una base cartesiana con origine in <span class="math notranslate nohighlight">\(O\)</span>, e coordiante generiche <span class="math notranslate nohighlight">\(q^i\)</span> - si può quindi rappresentare i punti dello spazio utilizzando le coordinate <span class="math notranslate nohighlight">\(q^i\)</span> desiderate e i vettori della base cartesiana,</p>
+<div class="math notranslate nohighlight">
+\[\vec{r} = P - O = x^k \left(q^i\right) \hat{x}_k \ ,\]</div>
+<p>o più esplicitamente per spazi 2-dimensionali</p>
+<div class="math notranslate nohighlight">
+\[\vec{r} = P - O = x \left(q^1, q^2\right) \hat{x} + y\left(q^1, q^2\right) \hat{y} \ ,\]</div>
+<p>e per spazi 3-dimensionali</p>
+<div class="math notranslate nohighlight">
+\[\vec{r} = P - O = x \left(q^1, q^2, q^3\right) \hat{x} + y\left(q^1, q^2, q^3 \right) \hat{y} + z\left( q^1, q^2, q^3 \right) \hat{z} \ .\]</div>
+<p>In ogni punto dello spazio, è possibile definire i vettori della base naturale indotta da una particolare scelta del sistema di coordinate <span class="math notranslate nohighlight">\(\left( q^i \right)_{i:n}\)</span> come le <a class="reference internal" href="../multivariable-calculus/derivatives.html#multivariable-calculus-derivatives-partial"><span class="std std-ref">derivata parziale</span></a> del punto <span class="math notranslate nohighlight">\(P\)</span>.</p>
+<div class="section" id="curve-coordinate">
+<span id="vector-calculus-geometry-coordinate-lines"></span><h3><span class="section-number">28.1.2.1. </span>Curve coordinate<a class="headerlink" href="#curve-coordinate" title="Permalink to this heading">#</a></h3>
+</div>
+<div class="section" id="superfici-coordiante">
+<span id="vector-calculus-geometry-coordiante-sufraces"></span><h3><span class="section-number">28.1.2.2. </span>Superfici coordiante<a class="headerlink" href="#superfici-coordiante" title="Permalink to this heading">#</a></h3>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="mixed-cartesian-polar"><span class="brackets">1</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id2">2</a>,<a href="#id3">3</a>)</span></dt>
+<dd><p>Questa rappresentazione può risultare utile quando è necessario svolgere derivate della posizione, poiché i vettori della base cartesiana sono costanti in tutto lo spazio e quindi la loro derivata è nulla. <strong>todo</strong> <em>Aggiungere collegamenti a sezione derivate (esempi?) e alla cinematica in meccanica classica.</em></p>
+</dd>
+</dl>
+</div>
 </div>
 </div>
 
@@ -578,6 +676,11 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parametrizzazione-dello-spazio">28.1.1. Parametrizzazione dello spazio</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#base-naturale">28.1.2. Base naturale</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#curve-coordinate">28.1.2.1. Curve coordinate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#superfici-coordiante">28.1.2.2. Superfici coordiante</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
