@@ -95,7 +95,7 @@ $$\vec{r} = R \, \sin \phi \, \cos \theta \, \hat{x} + r \, \sin \phi \, \sin \t
 (vector-calculus:geometry:natural-basis)=
 ## Base naturale
 
-La paramterizzazione dello spazio permette di associare a ogni punto dello spazio una $n$-upla di coordiante. Usando una rappresentazione mista - scegliendo dei vettori di una base cartesiana con origine in $O$, e coordiante generiche $q^i$ - si può quindi rappresentare i punti dello spazio come
+La paramterizzazione dello spazio permette di associare a ogni punto dello spazio una $n$-upla di coordiante. Usando una rappresentazione mista - scegliendo dei vettori di una base cartesiana con origine in $O$, e coordiante generiche $q^i$ - si può quindi rappresentare i punti dello spazio utilizzando le coordinate $q^i$ desiderate e i vettori della base cartesiana,
 
 $$\vec{r} = P - O = x^k \left(q^i\right) \hat{x}_k \ ,$$
 
@@ -106,6 +106,11 @@ $$\vec{r} = P - O = x \left(q^1, q^2\right) \hat{x} + y\left(q^1, q^2\right) \ha
 e per spazi 3-dimensionali
 
 $$\vec{r} = P - O = x \left(q^1, q^2, q^3\right) \hat{x} + y\left(q^1, q^2, q^3 \right) \hat{y} + z\left( q^1, q^2, q^3 \right) \hat{z} \ .$$
+
+In ogni punto dello spazio, è possibile definire i vettori della base naturale indotta da una particolare scelta del sistema di coordinate $\left( q^i \right)_{i:n}$ come le [derivata parziale](multivariable-calculus:derivatives:partial) del punto $P$.
+
+
+
 
 (vector-calculus:geometry:coordinate-lines)=
 ### Curve coordinate
