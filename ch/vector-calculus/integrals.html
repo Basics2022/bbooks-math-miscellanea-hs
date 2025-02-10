@@ -494,7 +494,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-di-linea">28.3.1. Integrali di linea</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-di-linea">28.3.1. Integrali di linea</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#densita">28.3.1.1. Densità</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lavoro">28.3.1.2. Lavoro</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-di-superficie">28.3.2. Integrali di superficie</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-di-volume">28.3.3. Integrali di volume</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoremi">28.3.4. Teoremi</a></li>
@@ -517,12 +521,24 @@ document.write(`
 <p>Il vettore elementare di una curva nello spazio, descritta in forma parametrica <span class="math notranslate nohighlight">\(\vec{r}(q^1)\)</span> è il vettore</p>
 <div class="math notranslate nohighlight">
 \[d \vec{r}(q^1) = \vec{r}'(q^1) \, dq^1 \ .\]</div>
+<div class="section" id="densita">
+<span id="vector-calculus-integrals-density"></span><h3><span class="section-number">28.3.1.1. </span>Densità<a class="headerlink" href="#densita" title="Permalink to this heading">#</a></h3>
+<p>Data una curva <span class="math notranslate nohighlight">\(\gamma\)</span> nello spazio euclideo descritta dall’equazione parametrica</p>
+<div class="math notranslate nohighlight">
+\[\gamma: \vec{r} = \vec{r}_{\gamma}(t) \qquad  , \qquad t \in [t_0, t_1] \ ,\]</div>
+<p>e una funzione scalare <span class="math notranslate nohighlight">\(m(\vec{r})\)</span> definita sui punti della curva, <span class="math notranslate nohighlight">\(\vec{r} \in \gamma\)</span>, densità lineare di una proprietà <span class="math notranslate nohighlight">\(M\)</span> additivà, si può calcolare la proprietà <span class="math notranslate nohighlight">\(M\)</span> associata alla linea <span class="math notranslate nohighlight">\(\gamma\)</span> come l’integrale</p>
+<div class="math notranslate nohighlight">
+\[\int_{\vec{r} \in \gamma} m(\vec{r})\]</div>
+</div>
+<div class="section" id="lavoro">
+<span id="vector-calculus-integrals-work"></span><h3><span class="section-number">28.3.1.2. </span>Lavoro<a class="headerlink" href="#lavoro" title="Permalink to this heading">#</a></h3>
 <p><strong>Lunghezza di arco.</strong> Tra le possibili parametrizzazioni regolari della curva, esiste una parametrizzazione particolare, generalmente indicata con <span class="math notranslate nohighlight">\(s\)</span>, e definita dalla condizione</p>
 <div class="math notranslate nohighlight">
 \[d  s = |d \vec{r}(s)| \ ,\]</div>
 <p>cioè la variazione del parametro <span class="math notranslate nohighlight">\(s\)</span> è uguale alla lunghezza dell’elemento di curva. Il parametro <span class="math notranslate nohighlight">\(s\)</span> viene definito <em>lunghezza d’arco</em> e dalla sua definizione segue immediatamente che la derivata della posizione della curva rispetto a <span class="math notranslate nohighlight">\(s\)</span> è il versore tangente <span class="math notranslate nohighlight">\(\hat{t}\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[\vec{r}'(s) = \hat{t}(s) \ .\]</div>
+</div>
 </div>
 <div class="section" id="integrali-di-superficie">
 <span id="vector-calculus-integrals-surface"></span><h2><span class="section-number">28.3.2. </span>Integrali di superficie<a class="headerlink" href="#integrali-di-superficie" title="Permalink to this heading">#</a></h2>
@@ -738,7 +754,11 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-di-linea">28.3.1. Integrali di linea</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-di-linea">28.3.1. Integrali di linea</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#densita">28.3.1.1. Densità</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lavoro">28.3.1.2. Lavoro</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-di-superficie">28.3.2. Integrali di superficie</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-di-volume">28.3.3. Integrali di volume</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoremi">28.3.4. Teoremi</a></li>

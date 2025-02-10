@@ -9,6 +9,22 @@ Il vettore elementare di una curva nello spazio, descritta in forma parametrica 
 
 $$d \vec{r}(q^1) = \vec{r}'(q^1) \, dq^1 \ .$$
 
+(vector-calculus:integrals:density)=
+### Densità
+Data una curva $\gamma$ nello spazio euclideo descritta dall'equazione parametrica
+
+$$\gamma: \vec{r} = \vec{r}_{\gamma}(t) \qquad  , \qquad t \in [t_0, t_1] \ ,$$
+
+e una funzione scalare $m(\vec{r})$ definita sui punti della curva, $\vec{r} \in \gamma$, densità lineare di una proprietà $M$ additivà, si può calcolare la proprietà $M$ associata alla linea $\gamma$ come l'integrale
+
+$$\int_{\vec{r} \in \gamma} m(\vec{r})$$
+
+
+
+(vector-calculus:integrals:work)=
+### Lavoro
+
+
 **Lunghezza di arco.** Tra le possibili parametrizzazioni regolari della curva, esiste una parametrizzazione particolare, generalmente indicata con $s$, e definita dalla condizione
 
 $$d  s = |d \vec{r}(s)| \ ,$$
