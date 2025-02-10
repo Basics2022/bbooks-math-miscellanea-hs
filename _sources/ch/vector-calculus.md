@@ -1,7 +1,16 @@
 (vector-calculus)=
 # Introduzione al calcolo vettoriale su spazi euclidei
 
-Questo capitolo è un'introduzione al calcolo vettoriale in spazi euclidei, estendendo gli strumenti del calcolo alle funzioni (scalari o vettoriali) definite in uno spazio euclideo, limitandosi al caso di $E^2$ ed $E^3$.
+Questo capitolo è un'introduzione al calcolo vettoriale in spazi euclidei, estendendo gli strumenti del calcolo alle funzioni (scalari o vettoriali) definite in uno [spazio euclideo](geometry:analytic:euclidean-space), limitandosi al caso di $E^2$ ed $E^3$.
+
+Il capitolo è suddiviso nelle seguenti sezioni:
+
+[**Descrizione dello spazio con coordinate.**](vector-calculus:geometry)
+
+[**Operatori differenziali su spazi euclidei.**](vector-calculus:derivatives)
+
+[**Integrali su spazi euclidei.**](vector-calculus:integrals)
+
 
 Viene definito **campo scalare** una funzione $f(P)$ a valori reale definita sui punti $P$ di uno spazio euclideo $E^n$, $f: E^n \rightarrow \mathbb{R}$.
 Viene definito **campo vettoriale** una funzione $\vec{f}(P)$ a valori vettoriali definita sui punti $P$ di uno spazio euclideo $E^n$, $\vec{f}: E^n \rightarrow V$.
