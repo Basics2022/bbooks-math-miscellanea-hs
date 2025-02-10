@@ -1,8 +1,10 @@
+<!--
 ```{article-info}
 :author: basics
 :date: "{sub-ref}`today`"
 :read-time: "{sub-ref}`wordcount-minutes` min read"
 ```
+-->
 
 (math-hs:algebra:vector:euclidean-space)=
 # Spazio vettoriale euclideo
@@ -41,6 +43,20 @@ con il vettore $\hat{k}$ ortogonale a entrambi i vettori $\vec{u}$, $\vec{v}$ ne
 
 - **todo.** E in $E^2$? A volte è comodo assumere che esista una dimensione aggiuntiva, e che quindi ci si trovi in $E^3$. In questo caso, il prodotto vettore di due vettori di $E^2$ è sempre ortogonale ad esso.
 - **todo.** Il prodotto vettoriale può essere visto come un caso particolare di un'operazione "strana" chiamata prodotto esterno
+
+(math-hs:algebra:vector:euclidean-space:mixed-product)=
+## Prodotto misto
+Nello spazio euclideo $E^3$ si può definire il prodotto misto tra 3 vettori, come il prodotto scalare di uno di questi e il prodotto vettore degli altri due
+
+$$\vec{u} \cdot \vec{v} \times \vec{w} \ .$$
+
+
+Il prodotto misto ha un significato geometrico evidente: il valore del proodotto misto di tre vettori è uguale al volume del parallelepipedo costruito con i tre vettori come spigolo.
+
+
+
+
+
 
 ## Base cartesiana
 In uno spazio vettoriale euclideo, $E^3$, è possibile definire una base carteisana, $\{ \hat{x}, \hat{y}, \hat{z} \}$, come un'insieme di vettori di norma unitaria e reciprocamente ortogonali,

@@ -223,14 +223,12 @@ $$\begin{cases}
 
 
 
-
-
-
 (vector-calculus:geometry:coordinate-lines)=
 ### Curve coordinate
 
 (vector-calculus:geometry:coordiante-sufraces)=
-### Superfici coordiante
+### Superfici coordinate
+
 
 
 
