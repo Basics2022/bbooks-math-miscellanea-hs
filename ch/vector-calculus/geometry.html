@@ -582,7 +582,7 @@ document.write(`
 \end{cases}\end{split}\]</div>
 <p>e un punto generico nello spazio - con una rappresentazione «mista» che usa le coordinate polari e i vettori <span class="math notranslate nohighlight">\(\hat{x}\)</span>, <span class="math notranslate nohighlight">\(\hat{y}\)</span>, <span class="math notranslate nohighlight">\(\hat{z}\)</span> della base cartesiana<a class="footnote-reference brackets" href="#mixed-cartesian-polar" id="id3">1</a> - come</p>
 <div class="math notranslate nohighlight">
-\[\vec{r} = R \, \sin \phi \, \cos \theta \, \hat{x} + r \, \sin \phi \, \sin \theta \, \hat{y} + R \, \cos \phi \hat{z} \ .\]</div>
+\[\vec{r} = R \, \sin \phi \, \cos \theta \, \hat{x} + R \, \sin \phi \, \sin \theta \, \hat{y} + R \, \cos \phi \hat{z} \ .\]</div>
 </div>
 </div></div>
 <div class="section" id="base-naturale">
@@ -596,10 +596,104 @@ document.write(`
 <p>e per spazi 3-dimensionali</p>
 <div class="math notranslate nohighlight">
 \[\vec{r} = P - O = x \left(q^1, q^2, q^3\right) \hat{x} + y\left(q^1, q^2, q^3 \right) \hat{y} + z\left( q^1, q^2, q^3 \right) \hat{z} \ .\]</div>
-<p>In ogni punto dello spazio, è possibile definire i vettori della base naturale indotta da una particolare scelta del sistema di coordinate <span class="math notranslate nohighlight">\(\left( q^i \right)_{i:n}\)</span> come le <a class="reference internal" href="../multivariable-calculus/derivatives.html#multivariable-calculus-derivatives-partial"><span class="std std-ref">derivata parziali</span></a> del punto <span class="math notranslate nohighlight">\(P\)</span> rispetto alle coordinate <span class="math notranslate nohighlight">\(q^i\)</span>. I vettori della base naturale <span class="math notranslate nohighlight">\(\{\vec{b}_i \}_{i=1:n}\)</span> indotta dalle coordinate <span class="math notranslate nohighlight">\(\left( q^i \right)_{i=1:n}\)</span> sono quindi</p>
+<div class="proof definition admonition" id="definition-6">
+<p class="admonition-title"><span class="caption-number">Definition 28.2 </span> (Base naturale)</p>
+<div class="definition-content section" id="proof-content">
+<p>In ogni punto dello spazio, è possibile definire i vettori della base naturale indotta da una particolare scelta del sistema di coordinate <span class="math notranslate nohighlight">\(\left( q^i \right)_{i:n}\)</span> come le <a class="reference internal" href="../multivariable-calculus/derivatives.html#multivariable-calculus-derivatives-partial"><span class="std std-ref">derivata parziali</span></a> del punto <span class="math notranslate nohighlight">\(P\)</span> rispetto alle coordinate <span class="math notranslate nohighlight">\(q^i\)</span>. I vettori della base naturale <span class="math notranslate nohighlight">\(\left\{\vec{b}_i \right\}_{i=1:n}\)</span> indotta dalle coordinate <span class="math notranslate nohighlight">\(\left( q^i \right)_{i=1:n}\)</span> sono quindi i vettori</p>
 <div class="math notranslate nohighlight">
 \[\vec{b}_i = \frac{\partial \vec{r}}{\partial q^i} \ .\]</div>
-<div class="section" id="curve-coordinate">
+</div>
+</div><p>In generale, come sarà chiaro dagli esempi, i vettori di una base naturale:</p>
+<ul class="simple">
+<li><p>dipendono dal punto nello spazio nel quale vengono calcolati - o in altre parole sono funzioni delle coordinate <span class="math notranslate nohighlight">\(q^i\)</span></p></li>
+<li><p>non formano una base orto-normale</p></li>
+<li><p>non hanno lunghezza unitaria</p></li>
+<li><p>non sono omogenei nelle dimensioni, né adimensionali.</p></li>
+</ul>
+<div class="proof definition admonition" id="definition-7">
+<p class="admonition-title"><span class="caption-number">Definition 28.3 </span> (Base fisica)</p>
+<div class="definition-content section" id="proof-content">
+<p>Nel caso in cui la base naturale sia ortogonale, è possibile definire una <strong>base fisica</strong> - orto-normale con vettori unitari e adimensionali - tramite un semplice processo di normalizzazione dei vettori della base,</p>
+<div class="math notranslate nohighlight">
+\[\hat{b}_i := \frac{\vec{b}_i}{|\vec{b}_i|} \ .\]</div>
+</div>
+</div><p>La definizione di una base fisica, quando possibile, può rendere la rappresentazione di un vettore o di un campo vettoriale più «ordinata», avendo le componenti del vettore le stesse dimensioni fisiche della grandezza che viene rappresentata, poiché i vettori della base fisica sono adimensionali e di lunghezza unitaria -  e quindi contenenti unicamente l’informazione vettoriale sulla direzione.</p>
+<div class="proof example dropdown admonition" id="example-8">
+<p class="admonition-title"><span class="caption-number">Example 28.6 </span> (Spazio <span class="math notranslate nohighlight">\(E^2\)</span>: coordinate cartesiane)</p>
+<div class="example-content section" id="proof-content">
+<p>I vettori della base naturale sono</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+  \vec{b}_1 = \frac{\partial \vec{r}}{\partial x} = \frac{\partial }{\partial x} \left( x \hat{x} + y \hat{y} \right) = \hat{x} \\
+  \vec{b}_2 = \frac{\partial \vec{r}}{\partial y} = \frac{\partial }{\partial y} \left( x \hat{x} + y \hat{y} \right) = \hat{y} \\
+\end{cases}\end{split}\]</div>
+<p>Ricordando le proprietà dei vettori di una base cartesiana <strong>todo</strong> <em>link</em>, è immediato verificare che la base naturale di un sistema di coordinate cartesiane è anche la sua base fisica (adimensionale non-dimensionale).</p>
+</div>
+</div><div class="proof example dropdown admonition" id="example-9">
+<p class="admonition-title"><span class="caption-number">Example 28.7 </span> (Spazio <span class="math notranslate nohighlight">\(E^2\)</span>: coordinate polari)</p>
+<div class="example-content section" id="proof-content">
+<p>I vettori della base naturale sono</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+  \vec{b}_1 = \frac{\partial \vec{r}}{\partial r     } = \frac{\partial }{\partial r     } \left( r \cos \theta \hat{x} + r \sin \theta \hat{y} \right) = \cos \theta \hat{x} + \sin \theta \hat{y} \\
+  \vec{b}_2 = \frac{\partial \vec{r}}{\partial \theta} = \frac{\partial }{\partial \theta} \left( r \cos \theta \hat{x} + r \sin \theta \hat{y} \right) = -r\sin \theta \hat{x} + r \cos \theta\hat{y} \\
+\end{cases}\end{split}\]</div>
+<p>E” semplice dimostrare che i due vettori sono ortogonali, ma il vettore <span class="math notranslate nohighlight">\(\vec{b}_2\)</span> non è adimenisonale, e ha modulo <span class="math notranslate nohighlight">\(|\vec{b}_2| = r\)</span>. La base fisica - già introdotto nel capitolo sulla geometrica analitica <strong>todo</strong> <em>link</em> - è quindi</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+  \hat{r}      = \hat{b}_1 = \cos \theta \hat{x} + \sin \theta \hat{y} \\
+  \hat{\theta} = \frac{\hat{b}_2}{|\vec{b}_2|} = - \sin \theta \hat{x} + \cos \theta \hat{y} \\
+\end{cases}\end{split}\]</div>
+</div>
+</div><div class="proof example dropdown admonition" id="example-10">
+<p class="admonition-title"><span class="caption-number">Example 28.8 </span> (Spazio <span class="math notranslate nohighlight">\(E^3\)</span>: coordinate cartesiane)</p>
+<div class="example-content section" id="proof-content">
+<p>I vettori della base naturale sono</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+  \vec{b}_1 = \frac{\partial \vec{r}}{\partial x} = \frac{\partial }{\partial x} \left( x \hat{x} + y \hat{y} + z \hat{z} \right) = \hat{x} \\
+  \vec{b}_2 = \frac{\partial \vec{r}}{\partial y} = \frac{\partial }{\partial y} \left( x \hat{x} + y \hat{y} + z \hat{z} \right) = \hat{y} \\
+  \vec{b}_3 = \frac{\partial \vec{r}}{\partial z} = \frac{\partial }{\partial z} \left( x \hat{x} + y \hat{y} + z \hat{z} \right) = \hat{z} \\
+\end{cases}\end{split}\]</div>
+<p>Ricordando le proprietà dei vettori di una base cartesiana <strong>todo</strong> <em>link</em>, è immediato verificare che la base naturale di un sistema di coordinate cartesiane è anche la sua base fisica (adimensionale non-dimensionale).</p>
+</div>
+</div><div class="proof example dropdown admonition" id="example-11">
+<p class="admonition-title"><span class="caption-number">Example 28.9 </span> (Spazio <span class="math notranslate nohighlight">\(E^3\)</span>: coordinate cilindriche)</p>
+<div class="example-content section" id="proof-content">
+<p>I vettori della base naturale sono</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+  \vec{b}_1 = \frac{\partial \vec{r}}{\partial r     } = \frac{\partial }{\partial r     } \left( r \cos \theta \hat{x} + r \sin \theta \hat{y} + z \hat{z} \right) = \cos \theta \hat{x} + \sin \theta \hat{y} \\
+  \vec{b}_2 = \frac{\partial \vec{r}}{\partial \theta} = \frac{\partial }{\partial \theta} \left( r \cos \theta \hat{x} + r \sin \theta \hat{y} + z \hat{z} \right) = -r\sin \theta \hat{x} + r \cos \theta\hat{y} \\
+  \vec{b}_3 = \frac{\partial \vec{r}}{\partial z     } = \frac{\partial }{\partial z     } \left( r \cos \theta \hat{x} + r \sin \theta \hat{y} + z \hat{z} \right) = \hat{z} \\
+\end{cases}\end{split}\]</div>
+<p>E” semplice dimostrare che i tre vettori sono ortogonali, ma il vettore <span class="math notranslate nohighlight">\(\vec{b}_2\)</span> non è adimenisonale, e ha modulo <span class="math notranslate nohighlight">\(|\vec{b}_2| = r\)</span>. La base fisica - già introdotto nel capitolo sulla geometrica analitica <strong>todo</strong> <em>link</em> - è quindi</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+  \hat{r}      = \hat{b}_1 = \cos \theta \hat{x} + \sin \theta \hat{y} \\
+  \hat{\theta} = \frac{\hat{b}_2}{|\vec{b}_2|} = - \sin \theta \hat{x} + \cos \theta \hat{y} \\
+  \hat{z}      = \hat{b}_3 = \hat{z} \\
+\end{cases}\end{split}\]</div>
+</div>
+</div><div class="proof example dropdown admonition" id="example-12">
+<p class="admonition-title"><span class="caption-number">Example 28.10 </span> (Spazio <span class="math notranslate nohighlight">\(E^3\)</span>: coordinate sferiche)</p>
+<div class="example-content section" id="proof-content">
+<p>I vettori della base naturale sono</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+  \vec{b}_1 = \frac{\partial \vec{r}}{\partial R     } = \frac{\partial }{\partial R     } \left( R \, \sin \phi \, \cos \theta \, \hat{x} + R \, \sin \phi \, \sin \theta \, \hat{y} + R \, \cos \phi \hat{z} \right) = \sin \phi \, \cos \theta \, \hat{x} + \sin \phi \, \sin \theta \, \hat{y} +  \cos \phi \hat{z} \\
+  \vec{b}_2 = \frac{\partial \vec{r}}{\partial \phi  } = \frac{\partial }{\partial \phi  } \left( R \, \sin \phi \, \cos \theta \, \hat{x} + R \, \sin \phi \, \sin \theta \, \hat{y} + R \, \cos \phi \hat{z} \right) = R \, \cos \phi \, \cos \theta \, \hat{x} + R \, \cos \phi \, \sin \theta \, \hat{y} - R \, \sin \phi \hat{z} \\
+  \vec{b}_3 = \frac{\partial \vec{r}}{\partial \theta} = \frac{\partial }{\partial \theta} \left( R \, \sin \phi \, \cos \theta \, \hat{x} + R \, \sin \phi \, \sin \theta \, \hat{y} + R \, \cos \phi \hat{z} \right) = - R \, \sin \phi \, \sin \theta \, \hat{x} + R \, \sin \phi \, \cos \theta \, \hat{y}
+\end{cases}\end{split}\]</div>
+<p>E” semplice dimostrare che i tre vettori sono ortogonali, ma i vettori <span class="math notranslate nohighlight">\(\vec{b}_2\)</span>, <span class="math notranslate nohighlight">\(\vec{b}_3\)</span> non sono adimenisonale, e hanno modulo <span class="math notranslate nohighlight">\(|\vec{b}_2| = R\)</span> e <span class="math notranslate nohighlight">\(|\vec{b}_3| = R |\sin \phi|\)</span>. La base fisica - già introdotto nel capitolo sulla geometrica analitica <strong>todo</strong> <em>link</em> - è quindi</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+  \hat{r}      = \hat{b}_1                     = \sin \phi \, \cos \theta \, \hat{x} + \sin \phi \, \sin \theta \, \hat{y} + \cos \phi \hat{z} \\
+  \hat{\phi  } = \frac{\hat{b}_2}{|\vec{b}_2|} = \cos \phi \, \cos \theta \, \hat{x} + \cos \phi \, \sin \theta \, \hat{y} - \sin \phi \hat{z} \\
+  \hat{\theta} = \frac{\hat{b}_3}{|\vec{b}_3|} =-\sin \theta \, \hat{x} + \cos \theta \, \hat{y}
+\end{cases}\end{split}\]</div>
+</div>
+</div><div class="section" id="curve-coordinate">
 <span id="vector-calculus-geometry-coordinate-lines"></span><h3><span class="section-number">28.1.2.1. </span>Curve coordinate<a class="headerlink" href="#curve-coordinate" title="Permalink to this heading">#</a></h3>
 </div>
 <div class="section" id="superfici-coordiante">
