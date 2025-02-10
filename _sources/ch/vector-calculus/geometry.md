@@ -107,8 +107,9 @@ e per spazi 3-dimensionali
 
 $$\vec{r} = P - O = x \left(q^1, q^2, q^3\right) \hat{x} + y\left(q^1, q^2, q^3 \right) \hat{y} + z\left( q^1, q^2, q^3 \right) \hat{z} \ .$$
 
-In ogni punto dello spazio, è possibile definire i vettori della base naturale indotta da una particolare scelta del sistema di coordinate $\left( q^i \right)_{i:n}$ come le [derivata parziale](multivariable-calculus:derivatives:partial) del punto $P$.
+In ogni punto dello spazio, è possibile definire i vettori della base naturale indotta da una particolare scelta del sistema di coordinate $\left( q^i \right)_{i:n}$ come le [derivata parziali](multivariable-calculus:derivatives:partial) del punto $P$ rispetto alle coordinate $q^i$. I vettori della base naturale $\{\vec{b}_i \}_{i=1:n}$ indotta dalle coordinate $\left( q^i \right)_{i=1:n}$ sono quindi
 
+$$\vec{b}_i = \frac{\partial \vec{r}}{\partial q^i} \ .$$
 
 
 
