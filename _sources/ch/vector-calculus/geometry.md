@@ -1,5 +1,5 @@
 (vector-calculus:geometry)=
-# Geometria **todo** *cambiare titolo*
+# Cenni di geometria differenziale
 
 (vector-calculus:geometry:coordinates)=
 ## Parametrizzazione dello spazio
@@ -236,18 +236,166 @@ Una curva $\gamma$ nello spazio può essere rappresentata con la sua equazione p
 
 $$\gamma: \ \vec{r} = \vec{r}_{\gamma}(q^1) \quad , \quad q^1 \in Q = [q^1_a, q^1_b] \ ,$$
 
-cioè una funzione di un parametro $q^1$, che associa a ogni valore del parametro $q^1 \in Q$ un punto appartenente alla curva, $\vec{r}_\gamma(q^1)$.
+cioè una funzione di una variabile $q^1$, che associa a ogni valore del parametro $q^1 \in Q$ il punto $\vec{r}_\gamma(q^1)$ dello spazio euclideo $E^n$ appartenente alla curva $\gamma$.
 
-Una **parametrizzazione regolare** rappresenta una funzione biunivoca tra i valori del parametro $q^1$ e i punti nello spazio $\vec{r}_{\gamma}(q^1)$. Questa condizione si riduce alla condizione che la derivata dei punti della curva rispetto al parametro non sia mai nulla, $\vec{r}'(q_1) \ne 0$, $\forall q^{1} \in Q$.
+Una **parametrizzazione regolare** rappresenta una funzione biunivoca tra i valori della variabile $q^1$ e i punti nello spazio $\vec{r}_{\gamma}(q^1)$. Questa condizione si riduce alla condizione che la derivata dei punti della curva rispetto al parametro non sia mai nulla, $\vec{r}'(q_1) \ne 0$, $\forall q^{1} \in Q$.
+
+```{prf:definition} Lunghezza d'arco
+:label: arc-length
+Si definisce **lunghezza d'arco** il parametro $s$ che permette la parametrizzazione $\vec{r}_{\gamma,s}(s)$, $s \in [s_a, s_b]$ della curva $\gamma$ tale da avere
+
+$$|\vec{r}'_{\gamma,s}(s)| = 1 \quad , \qquad \forall s \in [s_a, s_b] \ .$$
+
+```
+
+(vector-calculus:geometry:lines:infinitesimal)=
+### Elemento di curva
+La variazione del parametro $q^1$ produce l'elemento infinitesimo di curva
+
+$$d \vec{r}_{\gamma}(q^1) = \vec{r}'_\gamma(q^1) \, d q^1 \, $$
+
+tangente alla curva e di dimensione (lunghezza)
+
+$$d \ell(q^1) := \left|d \vec{r}_{\gamma}(q^1)\right| = |\vec{r}'_{\gamma}(q^1)| d q^1 \ ,$$
+
+avendo ipotizzato una variazione positiva del parametro $|d q^1| = d q^1 > 0$ per rimuovere il valore assoluto dalla variazione del parametro. Nel caso si utilizzi il parametro lunghezza d'arco $s$ {ref}`arc-length`, vale 
+
+$$d \ell(s) = |d \vec{r}_{\gamma,s}(s)| = d s \ ,$$
+
+cioè la lunghezza dell'elemento di curva è uguale alla variazione del parametro lunghezza d'arco $s$. Il vettore $\vec{r}'_\gamma(s)$ di lunghezza unitaria corrisponde al versore tangente alla curva, 
+
+$$\vec{r}'_{\gamma,s}(s) = \hat{t}(s) \ .$$
+
+```{list-table}
+:header-rows: 0
+* - ![](../../media/vectors/integral-line.png)
+  - ![](../../media/vectors/integral-line-infinitesimal.png)
+```
 
 (vector-calculus:geometry:surfaces)=
 ## Superfici nello spazio
 
+Una superficie $S$ nello spazio può essere rappresentata con la sua equazione parametrica,
+
+$$S: \ \vec{r} = \vec{r}_{S}(q^1,q^2) \quad , \quad (q^1,q^2) \in Q \ ,$$
+
+cioè una funzione di due variabili $q^1$, $q^2$, che associa a ogni coppia di valori $(q^1, q^2) \in Q$ il punto $\vec{r}_S(q^1, q^2)$ dello spazio euclideo $E^n$ appartenente alla superficie $S$
+
+Una **parametrizzazione regolare** rappresenta una funzione biunivoca la coppia di variabili $(q^1, q^2)$ e i punti nello spazio $\vec{r}_{S}(q^1, q^2)$. <span style="color:red">Questa condizione equivale alla condizione che...</span>
+
+(vector-calculus:geometry:surfaces:infinitesimal)=
+### Elemento di superficie
+La variazione dei parametri $q^1$ e $q^2$ produce i vettori infintesimi 
+
+$$\begin{aligned}
+  d \vec{r}_1 (q^1,q^2) & = \frac{\partial \vec{r}_S}{\partial q^1}(q^1, q^2) d q^1 \\
+  d \vec{r}_2 (q^1,q^2) & = \frac{\partial \vec{r}_S}{\partial q^2}(q^1, q^2) d q^2 \\
+\end{aligned}$$
+
+tangenti alla superficie $S$. Ricordando il significato geometrico del [prodotto vettoriale tra due vettori in spazi euclidei](math-hs:algebra:vector:euclidean-space:vector-product), il prodotto vettoriale $d \vec{r}_1 \times d \vec{r}_2$ produce un vettore normale alla superficie il cui modulo è uguale all'area $d S$ del parallelogramma elementare con lati $d \vec{r}_1$ e $d \vec{r}_2$,
+
+$$\hat{n} \, dS = d \vec{r}_1 \times d \vec{r}_2 = \frac{\partial \vec{r}_S}{\partial q^1} \times \frac{\partial \vec{r}_S}{\partial q^2} d q^1 d q^2 , $$
+
+avendo ipotizzato una parametrizzazione $q^1$, $q^2$ della superficie con la direzione desiderata (orientazione della superficie) del vettore normale $\hat{n} \, dS$, e sottinteso la dipendenza delle derivate parziali dalle variabili $q^1$, $q^2$ per non appesantire la notazione più del dovuto.
+
+```{list-table}
+:header-rows: 0
+* - ![](../../media/vectors/integral-surface.png)
+  - ![](../../media/vectors/integral-surface-infinitesimal.png)
+```
+
 (vector-calculus:geometry:volumes)=
 ## Volumi nello spazio
 
+Un volume nello spazio $E^3$ si può essere rappresentato con una rappresentazione parametrica di $E^3$,
 
+$$V: \ \vec{r} = \vec{r}_V(q^1, q^2, q^3) \quad , \quad (q^1, q^2, q^3) \in Q \ ,$$
 
+cioè una funzione di tre variabili $q^1, q^2, q^3$, che associa a ogni triple di valori $(q^1, q^2, q^3) \in Q$ il punto $\vec{r}_V(q^1, q^2, q^3)$ dello spazio euclideo $E^n$ appartenente al volume $V$.
+
+Una **parametrizzazione regolare** rappresenta una funzione biunivoca la tripla di variabili $(q^1, q^2, q^3)$ e i punti nello spazio $\vec{r}_{V}(q^1, q^2, q^3)$. <span style="color:red">Questa condizione equivale alla condizione che...</span>
+
+(vector-calculus:geometry:volumes:infinitesimal)=
+### Elemento di volume
+La variazione dei parametri $q^1$, $q^2$ e $q^3$ produce i vettori infintesimi 
+
+$$\begin{aligned}
+  d \vec{r}_1 (q^1,q^2,q^3) & = \frac{\partial \vec{r}_V}{\partial q^1}(q^1, q^2, q^3) d q^1 \\
+  d \vec{r}_2 (q^1,q^2,q^3) & = \frac{\partial \vec{r}_V}{\partial q^2}(q^1, q^2, q^3) d q^2 \\
+  d \vec{r}_3 (q^1,q^2,q^3) & = \frac{\partial \vec{r}_V}{\partial q^3}(q^1, q^2, q^3) d q^3 \ .
+\end{aligned}$$
+
+Ricordando il significato geometrico del [prodotto misto tra tre vettori in spazi euclidei](math-hs:algebra:vector:euclidean-space:mixed-product), il prodotto vettoriale $d \vec{r}_1 \times d \vec{r}_2 \cdot d \vec{r}_3$ produce uno scalare uguale al volume (con segno) del parallelepipedo elementare con spigoli $d \vec{r}_1$, $d \vec{r}_2$, $d \vec{r}_3$,
+
+$$d V = d \vec{r}_1 \times d \vec{r}_2 \cdot d \vec{r}_3 = \frac{\partial \vec{r}_V}{\partial q^1} \times \frac{\partial \vec{r}_V}{\partial q^2} \cdot \frac{\partial \vec{r}_V}{\partial q^3} d q^1 d q^2 d q^3 , $$
+
+avendo sottinteso la dipendenza delle derivate parziali dalle variabili $q^1$, $q^2, q^3$ per non appesantire la notazione più del dovuto.
+
+```{list-table}
+:header-rows: 0
+* - ![](../../media/vectors/integral-volume.png)
+  - ![](../../media/vectors/integral-volume-infinitesimal.png)
+```
+
+<!--
+Ricordando le definizioni di [coordiante cartesiane](geometry:analytic:3d:coordinates:cartesian), [coordinate cilindriche](geometry:analytic:3d:coordinates:cylindrical) e [coordiante sferiche](geometry:analytic:3d:coordinates:spherical), è possibile dimostrare che l'espressione dell'elemento di volume in queste coordinate è
+
+$$\begin{aligned}
+  d V & = dx \, dy \, dz                          & \qquad \text{(coordinate cartesiane)}  \\
+  d V & = R dR \, d\theta \, dz                   & \qquad \text{(coordinate cilindriche)} \\
+  d V & = r^2 \sin \phi \, dr \, d\phi \, d\theta & \qquad \text{(coordinate sferiche)}
+\end{aligned}$$
+-->
+
+```{prf:example} Elemento di volume in coordinate cartesiane
+:class: dropdown
+
+$$\vec{r} = x \hat{x} + y \hat{y} + z \hat{z}$$
+
+$$\begin{aligned}
+  d V
+  & = \partial_x \vec{r} \cdot \partial_y \vec{r} \times \partial_z \vec{r} \, dx \, dy \, dz = \\
+  & = \vec{x} \cdot \vec{y} \times \vec{z} \, dx \, dy \, dz = \\
+  & = \vec{x} \cdot \vec{x} \, dx \, dy \, dz = \\
+  & = dx \, dy \, dz \ .
+\end{aligned}$$
+
+```
+```{prf:example} Elemento di volume in coordinate cilindriche
+:class: dropdown
+
+$$\begin{aligned}
+  \vec{r}
+  & = R \, \cos \theta \, \hat{x} + R \, \sin \theta \, \hat{y} + z \, \hat{z} 
+\end{aligned}$$
+
+$$\begin{aligned}
+  d V
+  & = \partial_R \vec{r} \cdot \partial_{\theta} \vec{r} \times \partial_{z} \vec{r} \, dR \, d\theta \, d z = \\
+  & = (\cos \theta \, \hat{x} + \sin \theta \, \hat{y}) \cdot (-R \sin \theta \, \hat{x} + R \cos \theta \, \hat{y}) \times \hat{z}  \, dR \, d\theta \, d z = \\
+  & = (\cos \theta \, \hat{x} + \sin \theta \, \hat{y}) \cdot ( R \sin \theta \, \hat{y} + R \cos \theta \, \hat{x}) \, dR \, d\theta \, d z = \\
+  & = R (\cos^2 \theta + \sin^2 \theta) \, dR \, d\theta \, d z = \\
+  & = R \, dR \, d \theta \, dz 
+\end{aligned}$$
+
+```
+```{prf:example} Elemento di volume in coordinate sferiche
+:class: dropdown
+
+$$\begin{aligned}
+  \vec{r}
+  & = r \sin \phi \, \cos \theta \, \hat{x} + r \sin \phi \, \sin \theta \, \hat{y} + r \cos \phi \, \hat{z} 
+\end{aligned}$$
+
+$$\begin{aligned}
+  d V
+  & = \partial_r \vec{r} \cdot \partial_{\phi} \vec{r} \times \partial_{\theta} \vec{r} \, dr \, d\phi \, d\theta = \\
+  & = (\sin \phi \, \cos \theta \, \hat{x} + \sin \phi \, \sin \theta \, \hat{y} + \cos \phi \, \hat{z} ) \cdot ( r \cos \phi \, \cos \theta \, \hat{x} + r \cos \phi \, \sin \theta \, \hat{y} - r \sin \phi \, \hat{z} ) \times (-r \sin \phi \sin \theta \hat{x} + r \sin \phi \cos \theta \hat{y}) \, dr \, d\phi \, d\theta = \\
+  & = \dots = \\
+  & = r^2 \sin \phi \, dr \, d\phi \, d\theta \ .
+\end{aligned}$$
+
+```
 
 
 

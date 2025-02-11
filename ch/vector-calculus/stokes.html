@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>20.11. Note e dimostrazioni &#8212; Matematica per le scuole superiori</title>
+    <title>28.4. Teorema di Stokes &#8212; Matematica per le scuole superiori</title>
   
   
   
@@ -67,12 +67,12 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/algebra/complex-algebra-notes';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/vector-calculus/stokes';</script>
     <link rel="shortcut icon" href="../../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="21. Funzioni multi-variabile" href="../precalculus/multivariable-real-fun.html" />
-    <link rel="prev" title="20.10. Problemi - soluzioni" href="complex-algebra-sol.html" />
+    <link rel="next" title="28.5. Problemi" href="problems.html" />
+    <link rel="prev" title="28.3. Operatori differenziali in spazi euclidei" href="derivatives.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
@@ -181,16 +181,16 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Algebra</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../algebra.html">3. Introduzione all’algebra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="real-algebra.html">4. Algebra sui numeri reali</a></li>
-<li class="toctree-l1"><a class="reference internal" href="real-n-algebra.html">5. Algebra su <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span></a></li>
-<li class="toctree-l1"><a class="reference internal" href="linear-algebra.html">6. Algebra lineare</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="vector-algebra.html">7. Algebra vettoriale</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="vector-algebra-def.html">7.1. Prime definizioni</a></li>
-<li class="toctree-l2"><a class="reference internal" href="vector-algebra-euclidean-space.html">7.2. Spazio vettoriale euclideo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../algebra/real-algebra.html">4. Algebra sui numeri reali</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../algebra/real-n-algebra.html">5. Algebra su <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../algebra/linear-algebra.html">6. Algebra lineare</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../algebra/vector-algebra.html">7. Algebra vettoriale</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../algebra/vector-algebra-def.html">7.1. Prime definizioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../algebra/vector-algebra-euclidean-space.html">7.2. Spazio vettoriale euclideo</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="complex-algebra-link.html">8. Algebra complessa</a></li>
-<li class="toctree-l1"><a class="reference internal" href="set-algebra-link.html">9. Algebra di insiemi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../algebra/complex-algebra-link.html">8. Algebra complessa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../algebra/set-algebra-link.html">9. Algebra di insiemi</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Geometria analitica</span></p>
 <ul class="nav bd-sidenav">
@@ -222,7 +222,7 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Precalcolo</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../precalculus.html">14. Introduzione al pre-calcolo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../precalculus/real-functions.html">15. Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\(f: A \subseteq \mathbb{R} \rightarrow \mathbb{R}\)</span></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../precalculus/polynomials.html">16. Polinomi</a></li>
@@ -234,16 +234,16 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../precalculus/exponential_logarithm-notes.html">19.4. Note e dimostrazioni</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="complex-algebra.html">20. Algebra complessa</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="complex-algebra-problems.html">20.9. Problemi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="complex-algebra-sol.html">20.10. Problemi - soluzioni</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">20.11. Note e dimostrazioni</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../algebra/complex-algebra.html">20. Algebra complessa</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../algebra/complex-algebra-problems.html">20.9. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../algebra/complex-algebra-sol.html">20.10. Problemi - soluzioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../algebra/complex-algebra-notes.html">20.11. Note e dimostrazioni</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../precalculus/multivariable-real-fun.html">21. Funzioni multi-variabile</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Calcolo</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../calculus.html">22. Introduzione al calcolo</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../infinitesimal_calculus/analysis.html">23. Introduzione all’analisi</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/analysis-problems.html">23.9. Problemi</a></li>
@@ -267,12 +267,12 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../multivariable-calculus/integrals.html">27.3. Integrali su domini multi-dimensionali</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../vector-calculus.html">28. Introduzione al calcolo vettoriale su spazi euclidei</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../vector-calculus/geometry.html">28.1. Cenni di geometria differenziale</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../vector-calculus/integrals.html">28.2. Integrali in spazi euclidei</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../vector-calculus/derivatives.html">28.3. Operatori differenziali in spazi euclidei</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../vector-calculus/stokes.html">28.4. Teorema di Stokes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../vector-calculus/problems.html">28.5. Problemi</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../vector-calculus.html">28. Introduzione al calcolo vettoriale su spazi euclidei</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="geometry.html">28.1. Cenni di geometria differenziale</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integrals.html">28.2. Integrali in spazi euclidei</a></li>
+<li class="toctree-l2"><a class="reference internal" href="derivatives.html">28.3. Operatori differenziali in spazi euclidei</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">28.4. Teorema di Stokes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="problems.html">28.5. Problemi</a></li>
 </ul>
 </li>
 </ul>
@@ -354,7 +354,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs/edit/master/ch/algebra/complex-algebra-notes.md" target="_blank"
+      <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs/edit/master/ch/vector-calculus/stokes.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -371,7 +371,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs/issues/new?title=Issue%20on%20page%20%2Fch/algebra/complex-algebra-notes.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs/issues/new?title=Issue%20on%20page%20%2Fch/vector-calculus/stokes.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Apri un problema"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -401,7 +401,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/ch/algebra/complex-algebra-notes.md" target="_blank"
+      <li><a href="../../_sources/ch/vector-calculus/stokes.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Scarica il file sorgente"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -472,9 +472,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -485,27 +483,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Note e dimostrazioni</h1>
+    <h1>Teorema di Stokes</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contenuti </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formula-di-de-moivre">20.11.1. Formula di de Moivre</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esponenziale-complesso">20.11.2. Esponenziale complesso</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formula-di-eulero">20.11.3. Formula di Eulero</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#altre-operazioni-e-funzioni-a-variabile-complessa">20.11.4. Altre operazioni e funzioni a variabile complessa</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#potenza">20.11.4.1. Potenza</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esponenziale">20.11.4.2. Esponenziale</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#logaritmo">20.11.4.3. Logaritmo</a></li>
-</ul>
-</li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -515,179 +497,87 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="note-e-dimostrazioni">
-<span id="math-hs-algebra-complex-notes"></span><h1><span class="section-number">20.11. </span>Note e dimostrazioni<a class="headerlink" href="#note-e-dimostrazioni" title="Permalink to this heading">#</a></h1>
-<!--
-(math-hs:algebra:complex:notes:demoivre-euler)=
-## Formula di de Moivre, esponenziale complesso e formula di Eulero
--->
-<div class="section" id="formula-di-de-moivre">
-<span id="math-hs-algebra-complex-notes-demoivre"></span><h2><span class="section-number">20.11.1. </span>Formula di de Moivre<a class="headerlink" href="#formula-di-de-moivre" title="Permalink to this heading">#</a></h2>
-<p>Qui si dimostra la formula di de Moivre <a class="reference internal" href="complex-algebra.html#equation-complex-demoivre">(20.1)</a>.</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="teorema-di-stokes">
+<span id="vector-calculus-stokes"></span><h1><span class="section-number">28.4. </span>Teorema di Stokes<a class="headerlink" href="#teorema-di-stokes" title="Permalink to this heading">#</a></h1>
+<div class="proof theorem admonition" id="theorem-0">
+<p class="admonition-title"><span class="caption-number">Theorem 28.1 </span> (Teorema del gradiente)</p>
+<div class="theorem-content section" id="proof-content">
+<p>Per campi scalari <span class="math notranslate nohighlight">\(f(\vec{r})\)</span> sufficientemente regolari nel dominio <span class="math notranslate nohighlight">\(V \subseteq E^d\)</span>, <span class="math notranslate nohighlight">\(d=2:3\)</span>, vale</p>
+<div class="math notranslate nohighlight" id="equation-eq-thm-gradient">
+<span class="eqno">(28.4)<a class="headerlink" href="#equation-eq-thm-gradient" title="Permalink a questa equazione">#</a></span>\[\int_{V} \nabla f = \oint_{\partial V} f \hat{n} \ .\]</div>
+</div>
+</div><div class="proof example dropdown admonition" id="thm-gradient-1">
+<p class="admonition-title"><span class="caption-number">Example 28.20 </span> (Teorema del gradiente)</p>
+<div class="example-content section" id="proof-content">
+<p>Dato il dominio quadrato descritto dai valori delle coordinate cartesiane dei punti <span class="math notranslate nohighlight">\(\vec{r} = x \hat{x} + y \hat{y} \in E^2\)</span>, <span class="math notranslate nohighlight">\((x, y) \in [-1, 1] \times [-1,1]\)</span>, e il campo scalare</p>
 <div class="math notranslate nohighlight">
-\[(\cos x + i \sin x)^n = \cos(nx) + i \sin(nx) \ , \quad n \in \mathbb{Z}\]</div>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Dimostrazione per induzione<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Per <span class="math notranslate nohighlight">\(n \in \mathbb{N}\)</span>, si procede per induzione <strong>todo</strong> <em>aggiungere i capitoli sulla logica? E un riferimento ad essi?</em> Per <span class="math notranslate nohighlight">\(n = 1\)</span> la formula di de Moivre si riduce a un’identità. Supponiamo quindi che sia valida per un intero <span class="math notranslate nohighlight">\(n &gt; 1\)</span> e verifichiamo se questo implica che sia valida anche per <span class="math notranslate nohighlight">\(n+1\)</span></p>
+\[f(\vec{r}) = 4 x + 3 x y\]</div>
+<p>viene chiesto di determinare se la funzione <span class="math notranslate nohighlight">\(f(\vec{r})\)</span> è regolare nel dominio, di calcolare i due integrali coinvolti nel teorema del gradiente <a class="reference internal" href="#equation-eq-thm-gradient">(28.4)</a> e verificare se il teorema del gradiente è soddisfatto.</p>
+<p>La funzione <span class="math notranslate nohighlight">\(f(\vec{r})\)</span> è continua…Il gradiente di <span class="math notranslate nohighlight">\(f(\vec{r})\)</span> può essere espresso usando le coordinate cartesiane come</p>
+<div class="math notranslate nohighlight">
+\[\nabla f = \hat{x} \partial_x f + \hat{y} \partial_y f = (4 + 3 y) \hat{x} + 3 x \hat{y} \ ,\]</div>
+<p>dove i versori <span class="math notranslate nohighlight">\(\hat{x}\)</span> e <span class="math notranslate nohighlight">\(\hat{y}\)</span> sono uniformi nello spazio, e quindi indipendenti dalle coordinate.</p>
+<p>Gli integrali valgono</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
-  (\cos x + i \sin x)^{n+1} &amp; = (\cos x + i \sin x)^n \, (\cos x + i \sin x) = \\
-                            &amp; = \left(\cos (nx)+ i \sin (nx) \right) \, (\cos x + i \sin x) = \\
-                            &amp; = \cos(nx) \cos x - \sin(nx) \sin x + i \left( \cos(nx) \sin x + \sin(nx) \cos x \right) = \\
-                            &amp; = \cos( (n+1)x ) + i \sin( (n+1) x ) \ .
+  \int_V \nabla f
+  &amp; = \int_{x=-1}^{1} \int_{y=-1}^{1} \left[ (4 + 3 y) \hat{x} + 3 x \hat{y} \right] \, dx \, dy = \\
+  &amp; = \hat{x} \int_{x=-1}^{1} \int_{y=-1}^{1} (4 + 3 y) \, dx \, dy +  \int_{x=-1}^{1} \int_{y=-1}^{1} 3 x \, dx \, dy = \\
+  &amp; = \hat{x} \int_{x=-1}^{1} \left.\left[ 4 \, y + \frac{3}{2} \, y^2 \right]\right|_{y=-1}^{1} \, dx
+    + \hat{y} \int_{y=-1}^{1} \left.\left[ \frac{3}{2} \, x^2 \right]\right|_{y=-1}^{1} \, dy = \\
+  &amp; = 16 \hat{x} + 0 \hat{y} \ .
 \end{aligned}\end{split}\]</div>
-<p class="sd-card-text">Per <span class="math notranslate nohighlight">\(n = 0\)</span>, la formula di de Moivre si riduce all’identità <span class="math notranslate nohighlight">\(1 \equiv 1\)</span>.</p>
-<p class="sd-card-text">Per <span class="math notranslate nohighlight">\(m := -n \in \mathbb{N}\)</span>, la formula di de Moivre può essere verificata usando la formula di de Moivre per <span class="math notranslate nohighlight">\(m &gt; 0\)</span> e razionalizzando la frazione,</p>
+<p>e</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
-  \left( \cos x + i \sin x \right)^{n} &amp; = \frac{1}{\left( \cos x + i \sin x \right)^m} = \\
-   &amp; = \frac{1}{\left( \cos (m x) + i \sin (m x) \right)} = \\
-   &amp; = \frac{\cos( m x) - i \sin (m x)}{\underbrace{\cos^2(mx) + \sin^2(mx)}_{=1}} = \cos(mx) - i \sin(mx) = \cos(nx) + i \sin(nx) \ .
+  \oint_{\partial V} f \hat{n}
+  &amp; = \int_{y = -1}^{ 1} f(x= 1, y   ) \hat{x} \, dy 
+    + \int_{x =  1}^{-1} f(x   , y= 1) \hat{y} \, dx + \\ 
+  &amp; + \int_{y =  1}^{-1} f(x=-1, y   ) (- \hat{x} ) \, dy 
+    + \int_{x = -1}^{ 1} f(x   , y=-1) (- \hat{y} ) \, dx = \\
+  &amp; = \int_{y = -1}^{ 1} ( 4     + 3     y )  \hat{x} \, dy 
+    + \int_{x =  1}^{-1} ( 4  x  + 3  x    )  \hat{y} \, dx + \\ 
+  &amp; + \int_{y =  1}^{-1} (-4     - 3     y )  (- \hat{x} ) \, dy 
+    + \int_{x = -1}^{ 1} ( 4  x  - 3  x   ))  (- \hat{y} ) \, dx = \\
+  &amp; = 8 \hat{x} + 0 \hat{y} + 8 \hat{x} + 0 \hat{y}
+    = 16 \hat{x} \ .
 \end{aligned}\end{split}\]</div>
 </div>
-</details></div>
-<div class="section" id="esponenziale-complesso">
-<span id="math-hs-algebra-complex-notes-complex-exp"></span><h2><span class="section-number">20.11.2. </span>Esponenziale complesso<a class="headerlink" href="#esponenziale-complesso" title="Permalink to this heading">#</a></h2>
-<p>Estendendo la definizione di funzione esponenziale <span class="math notranslate nohighlight">\(e^x\)</span> ai numeri complessi, si può scrivere</p>
-<div class="math notranslate nohighlight" id="equation-complex-complex-exp-notes">
-<span class="eqno">(20.6)<a class="headerlink" href="#equation-complex-complex-exp-notes" title="Permalink a questa equazione">#</a></span>\[e^z = \sum_{n = 0}^{+\infty} \frac{z^n}{n!} = \lim_{n \rightarrow +\infty} \left( 1 + \frac{z}{n} \right)^n\]</div>
-<!--
-```{dropdown} Dimostrazione dell'equivalenza delle due definizioni
-```
--->
+</div><div class="proof example dropdown admonition" id="thm-gradient-2">
+<p class="admonition-title"><span class="caption-number">Example 28.21 </span> (Teorema del gradiente)</p>
+<div class="example-content section" id="proof-content">
 </div>
-<div class="section" id="formula-di-eulero">
-<span id="math-hs-algebra-complex-notes-euler"></span><h2><span class="section-number">20.11.3. </span>Formula di Eulero<a class="headerlink" href="#formula-di-eulero" title="Permalink to this heading">#</a></h2>
-<p>Per esponenti reali, vale</p>
-<div class="math notranslate nohighlight">
-\[e^{i x} = \cos x + i \sin x\]</div>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Dimostrazione usando la definizione come limite della successione<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">L’esponenziale complesso può essere scritto come limite della successione con termini,</p>
-<div class="math notranslate nohighlight">
-\[a_n = \left( 1 + \frac{z}{n} \right)^n = \left( 1 + \frac{x}{n} + i \frac{y}{n} \right)^n\]</div>
-<p class="sd-card-text">per <span class="math notranslate nohighlight">\(n \rightarrow +\infty\)</span>. Usando le trasformazioni tra la rappresentazione cartesiana e la rappresentazione polare</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{cases}
-  \text{re}\{a_n\} = 1 + \frac{x}{n} = r_n \cos \theta_n \\
-  \text{im}\{a_n\} = \frac{y}{n} = r_n \sin \theta_n
-\end{cases}\end{split}\]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{cases}
-  r_n = \sqrt{ \left(\text{re}\{a_n\}\right)^2 + \left(\text{im}\{a_n\}\right)^2 } =  \sqrt{\left(1+ \frac{x}{n}\right)^2 + \left(\frac{y}{n}\right)^2} \\
-  \tan \theta_n = \frac{\text{im}\{a_n\}}{\text{re}\{a_n\}} = \frac{\frac{y}{n}}{1 + \frac{x}{n}} = \frac{y}{x + n}_n
-\end{cases}\end{split}\]</div>
-<!--
-Il modulo di $a_n$ tende a $e^x$
-
-$$r_n = \sqrt{\left(1+ \frac{x}{n}\right)^2 + \left(\frac{y}{n}\right)^2}$$
-
-$$n r_n = \sqrt{( n + x )^2 + y^2}$$
-
-l'argomento tende a $\theta$ 
-
-$$\tan \theta_n = \frac{\frac{y}{n}}{1 + \frac{x}{n}} = \frac{y}{x + n}$$
-
-$$\begin{aligned}
-\sin \theta_n & = \frac{y}{n \, r_n} \\
-\cos \theta_n & = \frac{x+n}{n \, r_n}
-\end{aligned}$$
--->
-<p class="sd-card-text">e la <a class="reference internal" href="#math-hs-algebra-complex-notes-demoivre"><span class="std std-ref">formula di de Moivre</span></a>,</p>
-<div class="math notranslate nohighlight">
-\[( \cos x + i \sin x)^n = \cos( n x ) + i \sin ( n x )\]</div>
-<p class="sd-card-text">si può scrivere il termine <span class="math notranslate nohighlight">\(a_n\)</span></p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-  a_n &amp; = \left( 1 + \frac{x}{n} + i \frac{y}{n} \right)^n = \\
-      &amp; = \left( r_n \cos \theta_n + i r_n \sin \theta \right)^n = \\
-      &amp; = r_n^n \cdot \left[ \cos ( n \theta_n ) + i \sin (n \theta_n) \right]
-\end{aligned}\end{split}\]</div>
-<p class="sd-card-text">Per <span class="math notranslate nohighlight">\(n \rightarrow \infty\)</span>, <span class="math notranslate nohighlight">\(\tan \theta_n \rightarrow 0\)</span> e quindi vale l’approssimazione asintotica <span class="math notranslate nohighlight">\(\tan \theta_n \sim \theta_n\)</span></p>
-<div class="math notranslate nohighlight">
-\[\theta_n \sim \tan \theta_n = \frac{y}{x+n} \sim \frac{y}{n}\]</div>
-<div class="math notranslate nohighlight">
-\[n \theta_n \sim y\]</div>
-<p class="sd-card-text">mentre è possibile studiare il limite del modulo, riscrivendolo come</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-  r_n^n &amp; = \left[ \left( 1 + \frac{x}{n} \right)^2 + \left( \frac{y}{n} \right)^2 \right]^{\frac{n}{2}} = \\
-        &amp; = \left( 1 + \frac{x}{n} \right)^{n} \left[ 1 + \left(\frac{y}{n+x}\right)^2 \right]^{\frac{n}{2}} = \\
-\end{aligned}\end{split}\]</div>
-<p class="sd-card-text">Il primo fattore è asintotico a <span class="math notranslate nohighlight">\(e^x\)</span>,</p>
-<div class="math notranslate nohighlight">
-\[\left( 1 + \frac{x}{n} \right)^n \sim e^x \ .\]</div>
-<p class="sd-card-text">Il secondo fattore, con il «completamento della definizione di esponenziale», può essere riscritto come</p>
-<div class="math notranslate nohighlight">
-\[\left[ 1 + \left(\frac{y}{n+x}\right)^2 \right]^{\frac{n}{2}} = \left\{ \left[ 1 + \left(\frac{y}{n+x}\right)^2 \right]^{\left(\frac{n+x}{y}\right)^2} \right\}^{\frac{n y^2}{2(n+x)^2}} \sim e^0 = 1 \ .\]</div>
-<p class="sd-card-text">Il termine <span class="math notranslate nohighlight">\(r_n^n\)</span> tende quindi a <span class="math notranslate nohighlight">\(e^x\)</span>.</p>
-<p class="sd-card-text">Il limite dei termini <span class="math notranslate nohighlight">\(a_n\)</span> della successione che definisce l’esponenziale complesso può quindi essere scritto come</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-  e^z &amp; = \lim_{n \rightarrow +\infty} a_n = \\
-      &amp; = \lim_{n \rightarrow +\infty} r_n (\cos(n\theta) + i \sin(n\theta)) =  &amp; (\lim_{n\rightarrow +\infty} r_n = e^x, \lim_{n \rightarrow + \infty} n \theta = y)\\
-      &amp; = e^x \left( \cos y + i \sin y \right) \ .
-\end{aligned}\end{split}\]</div>
-<p class="sd-card-text">Usando la proprietà delle potenze estesa ai numeri complessi,</p>
-<div class="math notranslate nohighlight">
-\[e^x \left( \cos y + i \sin y \right) = e^z = e^{x + iy} = e^x \, e^{i y} \ ,
-\]</div>
-<p class="sd-card-text">dall’arbitrarietà del valore <span class="math notranslate nohighlight">\(x\)</span>, risulta dimostrata la formula di Eulero,</p>
-<div class="math notranslate nohighlight">
-\[e^{iy} = \cos y + i \sin y \ .\]</div>
-<p class="sd-card-text">per esponenti reali <span class="math notranslate nohighlight">\(y \in \mathbb{R}\)</span>.</p>
+</div><div class="proof theorem admonition" id="theorem-3">
+<p class="admonition-title"><span class="caption-number">Theorem 28.2 </span> (Teorema della divergenza)</p>
+<div class="theorem-content section" id="proof-content">
+<p>Per campi vettoriali <span class="math notranslate nohighlight">\(\vec{f}(\vec{r})\)</span> sufficientemente regolari nel dominio <span class="math notranslate nohighlight">\(V \subseteq E^d\)</span>, <span class="math notranslate nohighlight">\(d=2:3\)</span>, vale</p>
+<div class="math notranslate nohighlight" id="equation-eq-thm-divergence">
+<span class="eqno">(28.5)<a class="headerlink" href="#equation-eq-thm-divergence" title="Permalink a questa equazione">#</a></span>\[\int_{V} \nabla \cdot \vec{f} = \oint_{\partial V} \vec{f} \cdot \hat{n} \ .\]</div>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Dimostrazione usando la definizione come serie<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">L’identità di Eulero può essere dimostrata (<strong>todo</strong> <em>bisogna verificare la convergenza (uniforme) delle serie?</em>) confrontando le <a class="reference internal" href="../infinitesimal_calculus/derivatives.html#infinitesimal-calculus-derivatives-taylor"><span class="std std-ref">serie polinomiali di Taylor</span></a> delle funzioni <span class="math notranslate nohighlight">\(\cos x\)</span>, <span class="math notranslate nohighlight">\(\sin x\)</span> definite sui numeri reali, <span class="math notranslate nohighlight">\(x \in \mathbb{R}\)</span></p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-  \cos x &amp; = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} + \dots \\
-  \sin x &amp; = x - \frac{x^3}{3!} + \frac{x^5}{5!} + \dots \\
-\end{aligned}\end{split}\]</div>
-<p class="sd-card-text">con la serie che definisce l’esponenziale complesso,</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-  e^z &amp; = 1 + z + \frac{z^2}{2!} + \frac{z^3}{3!} + \frac{z^4}{4!} + \frac{z^5}{5!} + \dots \\
-\end{split}\]</div>
-<p class="sd-card-text">valutata in <span class="math notranslate nohighlight">\(z = i x \in \mathbb{C}\)</span></p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-  e^{i x} 
-      &amp; = 1 + i x + \frac{(i x)^2}{2!} + \frac{(i x)^3}{3!} + \frac{(i x)^4}{4!} + \frac{(i x)^5}{5!} + \dots = \\
-      &amp; = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} \dots + i \left[ x - \frac{x^3}{3!} + \frac{x^5}{5!}  + \dots \right] = \\
-      &amp; = \cos x + i \sin x \ .
-\end{aligned}\end{split}\]</div>
+</div><div class="proof example dropdown admonition" id="thm-divergence-1">
+<p class="admonition-title"><span class="caption-number">Example 28.22 </span> (Teorema della divergenza)</p>
+<div class="example-content section" id="proof-content">
 </div>
-</details></div>
-<div class="section" id="altre-operazioni-e-funzioni-a-variabile-complessa">
-<span id="math-hs-algebra-complex-notes-fun"></span><h2><span class="section-number">20.11.4. </span>Altre operazioni e funzioni a variabile complessa<a class="headerlink" href="#altre-operazioni-e-funzioni-a-variabile-complessa" title="Permalink to this heading">#</a></h2>
-<div class="section" id="potenza">
-<span id="math-hs-algebra-complex-notes-fun-power"></span><h3><span class="section-number">20.11.4.1. </span>Potenza<a class="headerlink" href="#potenza" title="Permalink to this heading">#</a></h3>
+</div><div class="proof example dropdown admonition" id="thm-divergence-2">
+<p class="admonition-title"><span class="caption-number">Example 28.23 </span> (Teorema della divergenza)</p>
+<div class="example-content section" id="proof-content">
 </div>
-<div class="section" id="esponenziale">
-<span id="math-hs-algebra-complex-notes-fun-exp"></span><h3><span class="section-number">20.11.4.2. </span>Esponenziale<a class="headerlink" href="#esponenziale" title="Permalink to this heading">#</a></h3>
+</div><div class="proof theorem admonition" id="theorem-6">
+<p class="admonition-title"><span class="caption-number">Theorem 28.3 </span> (Teorema del rotore)</p>
+<div class="theorem-content section" id="proof-content">
+<p>Per campi vettoriali <span class="math notranslate nohighlight">\(\vec{f}(\vec{r})\)</span> sufficientemente regolari sulla superficie <span class="math notranslate nohighlight">\(S \subseteq E^3\)</span>, vale</p>
+<div class="math notranslate nohighlight" id="equation-eq-thm-curl">
+<span class="eqno">(28.6)<a class="headerlink" href="#equation-eq-thm-curl" title="Permalink a questa equazione">#</a></span>\[\int_{S} \nabla \times \vec{f} \cdot \hat{n} = \oint_{\partial S} \vec{f} \cdot \hat{t} \ .\]</div>
 </div>
-<div class="section" id="logaritmo">
-<span id="math-hs-algebra-complex-notes-fun-log"></span><h3><span class="section-number">20.11.4.3. </span>Logaritmo<a class="headerlink" href="#logaritmo" title="Permalink to this heading">#</a></h3>
+</div><div class="proof example dropdown admonition" id="thm-curl-1">
+<p class="admonition-title"><span class="caption-number">Example 28.24 </span> (Teorema del rotore)</p>
+<div class="example-content section" id="proof-content">
 </div>
+</div><div class="proof example dropdown admonition" id="thm-curl-2">
+<p class="admonition-title"><span class="caption-number">Example 28.25 </span> (Teorema della rotore)</p>
+<div class="example-content section" id="proof-content">
 </div>
-</div>
+</div></div>
 
     <script type="text/x-thebe-config">
     {
@@ -702,7 +592,7 @@ Dimostrazione usando la definizione come serie<div class="sd-summary-down docuti
         },
         kernelOptions: {
             name: "python3",
-            path: "./ch/algebra"
+            path: "./ch/vector-calculus"
         },
         predefinedOutput: true
     }
@@ -720,20 +610,20 @@ Dimostrazione usando la definizione come serie<div class="sd-summary-down docuti
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="complex-algebra-sol.html"
+       href="derivatives.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">precedente</p>
-        <p class="prev-next-title"><span class="section-number">20.10. </span>Problemi - soluzioni</p>
+        <p class="prev-next-title"><span class="section-number">28.3. </span>Operatori differenziali in spazi euclidei</p>
       </div>
     </a>
     <a class="right-next"
-       href="../precalculus/multivariable-real-fun.html"
+       href="problems.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">21. </span>Funzioni multi-variabile</p>
+        <p class="prev-next-title"><span class="section-number">28.5. </span>Problemi</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -743,28 +633,6 @@ Dimostrazione usando la definizione come serie<div class="sd-summary-down docuti
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contenuti
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formula-di-de-moivre">20.11.1. Formula di de Moivre</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esponenziale-complesso">20.11.2. Esponenziale complesso</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formula-di-eulero">20.11.3. Formula di Eulero</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#altre-operazioni-e-funzioni-a-variabile-complessa">20.11.4. Altre operazioni e funzioni a variabile complessa</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#potenza">20.11.4.1. Potenza</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esponenziale">20.11.4.2. Esponenziale</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#logaritmo">20.11.4.3. Logaritmo</a></li>
-</ul>
-</li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>
