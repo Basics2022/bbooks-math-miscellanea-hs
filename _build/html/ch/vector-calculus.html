@@ -71,7 +71,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../genindex.html" />
     <link rel="search" title="Cerca" href="../search.html" />
-    <link rel="next" title="28.1. Geometria todo cambiare titolo" href="vector-calculus/geometry.html" />
+    <link rel="next" title="28.1. Cenni di geometria differenziale" href="vector-calculus/geometry.html" />
     <link rel="prev" title="27.3. Integrali su domini multi-dimensionali" href="multivariable-calculus/integrals.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
@@ -268,10 +268,11 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">28. Introduzione al calcolo vettoriale su spazi euclidei</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="vector-calculus/geometry.html">28.1. Geometria <strong>todo</strong> <em>cambiare titolo</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="vector-calculus/derivatives.html">28.2. Operatori differenziali in spazi euclidei</a></li>
-<li class="toctree-l2"><a class="reference internal" href="vector-calculus/integrals.html">28.3. Integrali in spazi euclidei</a></li>
-<li class="toctree-l2"><a class="reference internal" href="vector-calculus/problems.html">28.4. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vector-calculus/geometry.html">28.1. Cenni di geometria differenziale</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vector-calculus/integrals.html">28.2. Integrali in spazi euclidei</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vector-calculus/derivatives.html">28.3. Operatori differenziali in spazi euclidei</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vector-calculus/stokes.html">28.4. Teorema di Stokes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vector-calculus/problems.html">28.5. Problemi</a></li>
 </ul>
 </li>
 </ul>
@@ -500,10 +501,12 @@ document.write(`
 <span id="vector-calculus"></span><h1><span class="section-number">28. </span>Introduzione al calcolo vettoriale su spazi euclidei<a class="headerlink" href="#introduzione-al-calcolo-vettoriale-su-spazi-euclidei" title="Permalink to this heading">#</a></h1>
 <p>Questo capitolo è un’introduzione al calcolo vettoriale in spazi euclidei, estendendo gli strumenti del calcolo alle funzioni (scalari o vettoriali) definite in uno <a class="reference internal" href="analytic_geometry/euclidean_space.html#geometry-analytic-euclidean-space"><span class="std std-ref">spazio euclideo</span></a>, limitandosi al caso di <span class="math notranslate nohighlight">\(E^2\)</span> ed <span class="math notranslate nohighlight">\(E^3\)</span>.</p>
 <p>Il capitolo è suddiviso nelle seguenti sezioni:</p>
-<p><a class="reference internal" href="vector-calculus/geometry.html#vector-calculus-geometry"><span class="std std-ref"><strong>Descrizione dello spazio con coordinate.</strong></span></a> Lo spazio e le entità geometriche in esso possono essere rappresentate tramite l’uso di un <strong>sistema di coordinate</strong>. Vengono presentati alcuni sistemi di coordinate comuni (cartesiane e polari in <span class="math notranslate nohighlight">\(E^2\)</span>, cartesiane, cilindriche, sferiche in <span class="math notranslate nohighlight">\(E^3\)</span>) apppoggiandosi ai sistemi di coordinate cartesiane. Vengono introdotti concetti geometrici indotti dalla scelta del sistema di coordinate: i vettori di una base locale naturale, le curve coordinate e le superfici coordinate. Infine, anche i <strong>campi</strong> - funzioni definite nello spazio - possono essere rappresentati come funzioni delle coordinate.</p>
-<p>Dal punto di vista concettuale, si mette in evidenza da una parte un «criterio di semplicità» per la scelta di un sistema di coordinate per rappresentare un fenomeno o risolvere un problema, e dall’altra il concetto di <strong>invarianza rispetto alla scelta del sistema di coordinate</strong> dello spazio e delle funzioni definite in esso.</p>
-<p><strong>todo</strong> <em>Tenendo bene in mente la definizione dei sistemi di coordiante utilizzati per la rappresentazione parametrica dello spazio e degli elementi geometrici in esso, il calcolo vettoriale può essere ricondotto al calcolo multi-variabile</em></p>
-<p><a class="reference internal" href="vector-calculus/derivatives.html#vector-calculus-derivatives"><span class="std std-ref"><strong>Operatori differenziali in spazi euclidei.</strong></span></a> Viene esteso il concetto di derivata (<strong>todo</strong> <em>introdotto inizialmente per fuunzioni reali, e poi per funzioni di più variabili</em>), presentando alcuni operatori che compaiono frequentemente nell’ambito delle scienze e dal chiaro significato fisico.</p>
+<p><a class="reference internal" href="vector-calculus/geometry.html#vector-calculus-geometry"><span class="std std-ref"><strong>Descrizione dello spazio con coordinate.</strong></span></a> Lo spazio e le entità geometriche in esso possono essere rappresentate tramite l’uso di un <strong>sistema di coordinate</strong>. Vengono presentati alcuni sistemi di coordinate comuni (cartesiane e polari in <span class="math notranslate nohighlight">\(E^2\)</span>, cartesiane, cilindriche, sferiche in <span class="math notranslate nohighlight">\(E^3\)</span>) apppoggiandosi ai sistemi di coordinate cartesiane. Vengono introdotti concetti geometrici indotti dalla scelta del sistema di coordinate: i vettori di una base locale naturale, le curve coordinate e le superfici coordinate.</p>
+<p>Vengono dati dei fondamenti di geometria differenziale, limitandosi ai concetti che risulteranno utili in seguito nella rappresentazione di curve, superfici e volumi negli spazi euclidei: vengono fornite le espressioni degli elementi infinitesimi di curva, superficie e volume rispetto a sistemi di coordinate generiche; vengono fornite le espressioni dei versori tangenti alle curve e normali alle superfici; questi enti geometrici risultano utili nel calcolo degli integrali che coninvolgono densità o negli integrali di lavoro o di flusso, che verranno discussi nella sezione sugli <a class="reference internal" href="vector-calculus/integrals.html#vector-calculus-integrals"><span class="std std-ref">integrali su spazi euclidei</span></a>.</p>
+<p>Infine, viene introdotto il concetto di <strong>campo</strong> - funzioni definite nello spazio - e la loro rappresentazione come funzione delle coordinate usate per dscrivere lo spazio.</p>
+<p><span style="color:red">Dal punto di vista concettuale, si mette in evidenza da una parte un «criterio di semplicità» per la scelta di un sistema di coordinate per rappresentare un fenomeno o risolvere un problema, e dall’altra il concetto di <strong>invarianza rispetto alla scelta del sistema di coordinate</strong> dello spazio e delle funzioni definite in esso.</span></p>
+<p><span style="color:red"> <strong>todo</strong> <em>Tenendo bene in mente la definizione dei sistemi di coordiante utilizzati per la rappresentazione parametrica dello spazio e degli elementi geometrici in esso, il calcolo vettoriale può essere ricondotto al calcolo multi-variabile</em></span></p>
+<p><a class="reference internal" href="vector-calculus/derivatives.html#vector-calculus-derivatives"><span class="std std-ref"><strong>Operatori differenziali in spazi euclidei.</strong></span></a> Viene esteso il concetto di derivata (<strong>todo</strong> <em>introdotto inizialmente per funzioni reali, e poi per funzioni di più variabili</em>) e applicato ai campi; vengono presentati alcuni operatori che compaiono frequentemente nell’ambito delle scienze e dal chiaro significato fisico, riconducibili alla derivata direzionale, circuitazione e flusso.</p>
 <p><a class="reference internal" href="vector-calculus/integrals.html#vector-calculus-integrals"><span class="std std-ref"><strong>Integrali su spazi euclidei.</strong></span></a> Viene esteso il concetto di integrale a funzioni definite su domini - luoghi geometrici - contenuti nello spazio euclideo. Vengono introdotti alcuni integrali che compaiono frequentemente nell’ambito delle scienze - integrali di linea (densità e lavoro), integrali di superficie (densità e flusso), integrali di volume (densità). Viene mostrato il procedimento pratico per calcolare tali integrali grazie all’uso di coordinate, tramite esempi. Questi integrali rappresentano lo strumento matematico necessario per alcune applicazioni che riguardano problemi continui, come ad esempio:</p>
 <ul class="simple">
 <li><p>calcolo di lunghezza di curve, area di superfici e volumi di solidi</p></li>
@@ -586,7 +589,7 @@ Integrali:
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">28.1. </span>Geometria <strong>todo</strong> <em>cambiare titolo</em></p>
+        <p class="prev-next-title"><span class="section-number">28.1. </span>Cenni di geometria differenziale</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

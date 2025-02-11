@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>28.1. Geometria todo cambiare titolo &#8212; Matematica per le scuole superiori</title>
+    <title>28.1. Cenni di geometria differenziale &#8212; Matematica per le scuole superiori</title>
   
   
   
@@ -71,7 +71,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="28.2. Operatori differenziali in spazi euclidei" href="derivatives.html" />
+    <link rel="next" title="28.2. Integrali in spazi euclidei" href="integrals.html" />
     <link rel="prev" title="28. Introduzione al calcolo vettoriale su spazi euclidei" href="../vector-calculus.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
@@ -268,10 +268,11 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../vector-calculus.html">28. Introduzione al calcolo vettoriale su spazi euclidei</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">28.1. Geometria <strong>todo</strong> <em>cambiare titolo</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="derivatives.html">28.2. Operatori differenziali in spazi euclidei</a></li>
-<li class="toctree-l2"><a class="reference internal" href="integrals.html">28.3. Integrali in spazi euclidei</a></li>
-<li class="toctree-l2"><a class="reference internal" href="problems.html">28.4. Problemi</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">28.1. Cenni di geometria differenziale</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integrals.html">28.2. Integrali in spazi euclidei</a></li>
+<li class="toctree-l2"><a class="reference internal" href="derivatives.html">28.3. Operatori differenziali in spazi euclidei</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stokes.html">28.4. Teorema di Stokes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="problems.html">28.5. Problemi</a></li>
 </ul>
 </li>
 </ul>
@@ -484,7 +485,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Geometria todo cambiare titolo</h1>
+    <h1>Cenni di geometria differenziale</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -494,10 +495,22 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parametrizzazione-dello-spazio">28.1.1. Parametrizzazione dello spazio</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#base-naturale">28.1.2. Base naturale</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#curve-coordinate">28.1.2.1. Curve coordinate</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#superfici-coordinate">28.1.2.2. Superfici coordinate</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parametrizzazione-dello-spazio">28.1.1. Parametrizzazione dello spazio</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#base-naturale">28.1.1.1. Base naturale</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#curve-coordinate">28.1.1.2. Curve coordinate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#superfici-coordinate">28.1.1.3. Superfici coordinate</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#curve-nello-spazio">28.1.2. Curve nello spazio</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#elemento-di-curva">28.1.2.1. Elemento di curva</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#superfici-nello-spazio">28.1.3. Superfici nello spazio</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#elemento-di-superficie">28.1.3.1. Elemento di superficie</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#volumi-nello-spazio">28.1.4. Volumi nello spazio</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#elemento-di-volume">28.1.4.1. Elemento di volume</a></li>
 </ul>
 </li>
 </ul>
@@ -511,8 +524,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="geometria-todo-cambiare-titolo">
-<span id="vector-calculus-geometry"></span><h1><span class="section-number">28.1. </span>Geometria <strong>todo</strong> <em>cambiare titolo</em><a class="headerlink" href="#geometria-todo-cambiare-titolo" title="Permalink to this heading">#</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="cenni-di-geometria-differenziale">
+<span id="vector-calculus-geometry"></span><h1><span class="section-number">28.1. </span>Cenni di geometria differenziale<a class="headerlink" href="#cenni-di-geometria-differenziale" title="Permalink to this heading">#</a></h1>
 <div class="section" id="parametrizzazione-dello-spazio">
 <span id="vector-calculus-geometry-coordinates"></span><h2><span class="section-number">28.1.1. </span>Parametrizzazione dello spazio<a class="headerlink" href="#parametrizzazione-dello-spazio" title="Permalink to this heading">#</a></h2>
 <p>Uno spazio può essere descritto tramite l’uso di un sistema di coordinate, composto da una <span class="math notranslate nohighlight">\(n\)</span>-upla di coordinate indipendenti <span class="math notranslate nohighlight">\(\left( q^i \right)_{i = 1:n}\)</span>.</p>
@@ -584,9 +597,8 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[\vec{r} = R \, \sin \phi \, \cos \theta \, \hat{x} + R \, \sin \phi \, \sin \theta \, \hat{y} + R \, \cos \phi \hat{z} \ .\]</div>
 </div>
-</div></div>
-<div class="section" id="base-naturale">
-<span id="vector-calculus-geometry-natural-basis"></span><h2><span class="section-number">28.1.2. </span>Base naturale<a class="headerlink" href="#base-naturale" title="Permalink to this heading">#</a></h2>
+</div><div class="section" id="base-naturale">
+<span id="vector-calculus-geometry-natural-basis"></span><h3><span class="section-number">28.1.1.1. </span>Base naturale<a class="headerlink" href="#base-naturale" title="Permalink to this heading">#</a></h3>
 <p>La paramterizzazione dello spazio permette di associare a ogni punto dello spazio una <span class="math notranslate nohighlight">\(n\)</span>-upla di coordiante. Usando una rappresentazione mista - scegliendo dei vettori di una base cartesiana con origine in <span class="math notranslate nohighlight">\(O\)</span>, e coordiante generiche <span class="math notranslate nohighlight">\(q^i\)</span> - si può quindi rappresentare i punti dello spazio utilizzando le coordinate <span class="math notranslate nohighlight">\(q^i\)</span> desiderate e i vettori della base cartesiana,</p>
 <div class="math notranslate nohighlight">
 \[\vec{r} = P - O = x^k \left(q^i\right) \hat{x}_k \ ,\]</div>
@@ -693,12 +705,177 @@ document.write(`
   \hat{\theta} = \frac{\hat{b}_3}{|\vec{b}_3|} =-\sin \theta \, \hat{x} + \cos \theta \, \hat{y}
 \end{cases}\end{split}\]</div>
 </div>
-</div><div class="section" id="curve-coordinate">
-<span id="vector-calculus-geometry-coordinate-lines"></span><h3><span class="section-number">28.1.2.1. </span>Curve coordinate<a class="headerlink" href="#curve-coordinate" title="Permalink to this heading">#</a></h3>
+</div></div>
+<div class="section" id="curve-coordinate">
+<span id="vector-calculus-geometry-coordinate-lines"></span><h3><span class="section-number">28.1.1.2. </span>Curve coordinate<a class="headerlink" href="#curve-coordinate" title="Permalink to this heading">#</a></h3>
 </div>
 <div class="section" id="superfici-coordinate">
-<span id="vector-calculus-geometry-coordiante-sufraces"></span><h3><span class="section-number">28.1.2.2. </span>Superfici coordinate<a class="headerlink" href="#superfici-coordinate" title="Permalink to this heading">#</a></h3>
-<hr class="footnotes docutils" />
+<span id="vector-calculus-geometry-coordiante-sufraces"></span><h3><span class="section-number">28.1.1.3. </span>Superfici coordinate<a class="headerlink" href="#superfici-coordinate" title="Permalink to this heading">#</a></h3>
+</div>
+</div>
+<div class="section" id="curve-nello-spazio">
+<span id="vector-calculus-geometry-lines"></span><h2><span class="section-number">28.1.2. </span>Curve nello spazio<a class="headerlink" href="#curve-nello-spazio" title="Permalink to this heading">#</a></h2>
+<p>Una curva <span class="math notranslate nohighlight">\(\gamma\)</span> nello spazio può essere rappresentata con la sua equazione parametrica,</p>
+<div class="math notranslate nohighlight">
+\[\gamma: \ \vec{r} = \vec{r}_{\gamma}(q^1) \quad , \quad q^1 \in Q = [q^1_a, q^1_b] \ ,\]</div>
+<p>cioè una funzione di una variabile <span class="math notranslate nohighlight">\(q^1\)</span>, che associa a ogni valore del parametro <span class="math notranslate nohighlight">\(q^1 \in Q\)</span> il punto <span class="math notranslate nohighlight">\(\vec{r}_\gamma(q^1)\)</span> dello spazio euclideo <span class="math notranslate nohighlight">\(E^n\)</span> appartenente alla curva <span class="math notranslate nohighlight">\(\gamma\)</span>.</p>
+<p>Una <strong>parametrizzazione regolare</strong> rappresenta una funzione biunivoca tra i valori della variabile <span class="math notranslate nohighlight">\(q^1\)</span> e i punti nello spazio <span class="math notranslate nohighlight">\(\vec{r}_{\gamma}(q^1)\)</span>. Questa condizione si riduce alla condizione che la derivata dei punti della curva rispetto al parametro non sia mai nulla, <span class="math notranslate nohighlight">\(\vec{r}'(q_1) \ne 0\)</span>, <span class="math notranslate nohighlight">\(\forall q^{1} \in Q\)</span>.</p>
+<div class="proof definition admonition" id="arc-length">
+<p class="admonition-title"><span class="caption-number">Definition 28.4 </span> (Lunghezza d’arco)</p>
+<div class="definition-content section" id="proof-content">
+<p>Si definisce <strong>lunghezza d’arco</strong> il parametro <span class="math notranslate nohighlight">\(s\)</span> che permette la parametrizzazione <span class="math notranslate nohighlight">\(\vec{r}_{\gamma,s}(s)\)</span>, <span class="math notranslate nohighlight">\(s \in [s_a, s_b]\)</span> della curva <span class="math notranslate nohighlight">\(\gamma\)</span> tale da avere</p>
+<div class="math notranslate nohighlight">
+\[|\vec{r}'_{\gamma,s}(s)| = 1 \quad , \qquad \forall s \in [s_a, s_b] \ .\]</div>
+</div>
+</div><div class="section" id="elemento-di-curva">
+<span id="vector-calculus-geometry-lines-infinitesimal"></span><h3><span class="section-number">28.1.2.1. </span>Elemento di curva<a class="headerlink" href="#elemento-di-curva" title="Permalink to this heading">#</a></h3>
+<p>La variazione del parametro <span class="math notranslate nohighlight">\(q^1\)</span> produce l’elemento infinitesimo di curva</p>
+<div class="math notranslate nohighlight">
+\[d \vec{r}_{\gamma}(q^1) = \vec{r}'_\gamma(q^1) \, d q^1 \, \]</div>
+<p>tangente alla curva e di dimensione (lunghezza)</p>
+<div class="math notranslate nohighlight">
+\[d \ell(q^1) := \left|d \vec{r}_{\gamma}(q^1)\right| = |\vec{r}'_{\gamma}(q^1)| d q^1 \ ,\]</div>
+<p>avendo ipotizzato una variazione positiva del parametro <span class="math notranslate nohighlight">\(|d q^1| = d q^1 &gt; 0\)</span> per rimuovere il valore assoluto dalla variazione del parametro. Nel caso si utilizzi il parametro lunghezza d’arco <span class="math notranslate nohighlight">\(s\)</span> <span class="xref std std-ref">arc-length</span>, vale</p>
+<div class="math notranslate nohighlight">
+\[d \ell(s) = |d \vec{r}_{\gamma,s}(s)| = d s \ ,\]</div>
+<p>cioè la lunghezza dell’elemento di curva è uguale alla variazione del parametro lunghezza d’arco <span class="math notranslate nohighlight">\(s\)</span>. Il vettore <span class="math notranslate nohighlight">\(\vec{r}'_\gamma(s)\)</span> di lunghezza unitaria corrisponde al versore tangente alla curva,</p>
+<div class="math notranslate nohighlight">
+\[\vec{r}'_{\gamma,s}(s) = \hat{t}(s) \ .\]</div>
+<table class="table">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><img alt="" src="../../_images/integral-line.png" /></p></td>
+<td><p><img alt="" src="../../_images/integral-line-infinitesimal.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="superfici-nello-spazio">
+<span id="vector-calculus-geometry-surfaces"></span><h2><span class="section-number">28.1.3. </span>Superfici nello spazio<a class="headerlink" href="#superfici-nello-spazio" title="Permalink to this heading">#</a></h2>
+<p>Una superficie <span class="math notranslate nohighlight">\(S\)</span> nello spazio può essere rappresentata con la sua equazione parametrica,</p>
+<div class="math notranslate nohighlight">
+\[S: \ \vec{r} = \vec{r}_{S}(q^1,q^2) \quad , \quad (q^1,q^2) \in Q \ ,\]</div>
+<p>cioè una funzione di due variabili <span class="math notranslate nohighlight">\(q^1\)</span>, <span class="math notranslate nohighlight">\(q^2\)</span>, che associa a ogni coppia di valori <span class="math notranslate nohighlight">\((q^1, q^2) \in Q\)</span> il punto <span class="math notranslate nohighlight">\(\vec{r}_S(q^1, q^2)\)</span> dello spazio euclideo <span class="math notranslate nohighlight">\(E^n\)</span> appartenente alla superficie <span class="math notranslate nohighlight">\(S\)</span></p>
+<p>Una <strong>parametrizzazione regolare</strong> rappresenta una funzione biunivoca la coppia di variabili <span class="math notranslate nohighlight">\((q^1, q^2)\)</span> e i punti nello spazio <span class="math notranslate nohighlight">\(\vec{r}_{S}(q^1, q^2)\)</span>. <span style="color:red">Questa condizione equivale alla condizione che…</span></p>
+<div class="section" id="elemento-di-superficie">
+<span id="vector-calculus-geometry-surfaces-infinitesimal"></span><h3><span class="section-number">28.1.3.1. </span>Elemento di superficie<a class="headerlink" href="#elemento-di-superficie" title="Permalink to this heading">#</a></h3>
+<p>La variazione dei parametri <span class="math notranslate nohighlight">\(q^1\)</span> e <span class="math notranslate nohighlight">\(q^2\)</span> produce i vettori infintesimi</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  d \vec{r}_1 (q^1,q^2) &amp; = \frac{\partial \vec{r}_S}{\partial q^1}(q^1, q^2) d q^1 \\
+  d \vec{r}_2 (q^1,q^2) &amp; = \frac{\partial \vec{r}_S}{\partial q^2}(q^1, q^2) d q^2 \\
+\end{aligned}\end{split}\]</div>
+<p>tangenti alla superficie <span class="math notranslate nohighlight">\(S\)</span>. Ricordando il significato geometrico del <a class="reference internal" href="../algebra/vector-algebra-euclidean-space.html#math-hs-algebra-vector-euclidean-space-vector-product"><span class="std std-ref">prodotto vettoriale tra due vettori in spazi euclidei</span></a>, il prodotto vettoriale <span class="math notranslate nohighlight">\(d \vec{r}_1 \times d \vec{r}_2\)</span> produce un vettore normale alla superficie il cui modulo è uguale all’area <span class="math notranslate nohighlight">\(d S\)</span> del parallelogramma elementare con lati <span class="math notranslate nohighlight">\(d \vec{r}_1\)</span> e <span class="math notranslate nohighlight">\(d \vec{r}_2\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\hat{n} \, dS = d \vec{r}_1 \times d \vec{r}_2 = \frac{\partial \vec{r}_S}{\partial q^1} \times \frac{\partial \vec{r}_S}{\partial q^2} d q^1 d q^2 , \]</div>
+<p>avendo ipotizzato una parametrizzazione <span class="math notranslate nohighlight">\(q^1\)</span>, <span class="math notranslate nohighlight">\(q^2\)</span> della superficie con la direzione desiderata (orientazione della superficie) del vettore normale <span class="math notranslate nohighlight">\(\hat{n} \, dS\)</span>, e sottinteso la dipendenza delle derivate parziali dalle variabili <span class="math notranslate nohighlight">\(q^1\)</span>, <span class="math notranslate nohighlight">\(q^2\)</span> per non appesantire la notazione più del dovuto.</p>
+<table class="table">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><img alt="" src="../../_images/integral-surface.png" /></p></td>
+<td><p><img alt="" src="../../_images/integral-surface-infinitesimal.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="volumi-nello-spazio">
+<span id="vector-calculus-geometry-volumes"></span><h2><span class="section-number">28.1.4. </span>Volumi nello spazio<a class="headerlink" href="#volumi-nello-spazio" title="Permalink to this heading">#</a></h2>
+<p>Un volume nello spazio <span class="math notranslate nohighlight">\(E^3\)</span> si può essere rappresentato con una rappresentazione parametrica di <span class="math notranslate nohighlight">\(E^3\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[V: \ \vec{r} = \vec{r}_V(q^1, q^2, q^3) \quad , \quad (q^1, q^2, q^3) \in Q \ ,\]</div>
+<p>cioè una funzione di tre variabili <span class="math notranslate nohighlight">\(q^1, q^2, q^3\)</span>, che associa a ogni triple di valori <span class="math notranslate nohighlight">\((q^1, q^2, q^3) \in Q\)</span> il punto <span class="math notranslate nohighlight">\(\vec{r}_V(q^1, q^2, q^3)\)</span> dello spazio euclideo <span class="math notranslate nohighlight">\(E^n\)</span> appartenente al volume <span class="math notranslate nohighlight">\(V\)</span>.</p>
+<p>Una <strong>parametrizzazione regolare</strong> rappresenta una funzione biunivoca la tripla di variabili <span class="math notranslate nohighlight">\((q^1, q^2, q^3)\)</span> e i punti nello spazio <span class="math notranslate nohighlight">\(\vec{r}_{V}(q^1, q^2, q^3)\)</span>. <span style="color:red">Questa condizione equivale alla condizione che…</span></p>
+<div class="section" id="elemento-di-volume">
+<span id="vector-calculus-geometry-volumes-infinitesimal"></span><h3><span class="section-number">28.1.4.1. </span>Elemento di volume<a class="headerlink" href="#elemento-di-volume" title="Permalink to this heading">#</a></h3>
+<p>La variazione dei parametri <span class="math notranslate nohighlight">\(q^1\)</span>, <span class="math notranslate nohighlight">\(q^2\)</span> e <span class="math notranslate nohighlight">\(q^3\)</span> produce i vettori infintesimi</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  d \vec{r}_1 (q^1,q^2,q^3) &amp; = \frac{\partial \vec{r}_V}{\partial q^1}(q^1, q^2, q^3) d q^1 \\
+  d \vec{r}_2 (q^1,q^2,q^3) &amp; = \frac{\partial \vec{r}_V}{\partial q^2}(q^1, q^2, q^3) d q^2 \\
+  d \vec{r}_3 (q^1,q^2,q^3) &amp; = \frac{\partial \vec{r}_V}{\partial q^3}(q^1, q^2, q^3) d q^3 \ .
+\end{aligned}\end{split}\]</div>
+<p>Ricordando il significato geometrico del <a class="reference internal" href="../algebra/vector-algebra-euclidean-space.html#math-hs-algebra-vector-euclidean-space-mixed-product"><span class="std std-ref">prodotto misto tra tre vettori in spazi euclidei</span></a>, il prodotto vettoriale <span class="math notranslate nohighlight">\(d \vec{r}_1 \times d \vec{r}_2 \cdot d \vec{r}_3\)</span> produce uno scalare uguale al volume (con segno) del parallelepipedo elementare con spigoli <span class="math notranslate nohighlight">\(d \vec{r}_1\)</span>, <span class="math notranslate nohighlight">\(d \vec{r}_2\)</span>, <span class="math notranslate nohighlight">\(d \vec{r}_3\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[d V = d \vec{r}_1 \times d \vec{r}_2 \cdot d \vec{r}_3 = \frac{\partial \vec{r}_V}{\partial q^1} \times \frac{\partial \vec{r}_V}{\partial q^2} \cdot \frac{\partial \vec{r}_V}{\partial q^3} d q^1 d q^2 d q^3 , \]</div>
+<p>avendo sottinteso la dipendenza delle derivate parziali dalle variabili <span class="math notranslate nohighlight">\(q^1\)</span>, <span class="math notranslate nohighlight">\(q^2, q^3\)</span> per non appesantire la notazione più del dovuto.</p>
+<table class="table">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><img alt="" src="../../_images/integral-volume.png" /></p></td>
+<td><p><img alt="" src="../../_images/integral-volume-infinitesimal.png" /></p></td>
+</tr>
+</tbody>
+</table>
+<!--
+Ricordando le definizioni di [coordiante cartesiane](geometry:analytic:3d:coordinates:cartesian), [coordinate cilindriche](geometry:analytic:3d:coordinates:cylindrical) e [coordiante sferiche](geometry:analytic:3d:coordinates:spherical), è possibile dimostrare che l'espressione dell'elemento di volume in queste coordinate è
+
+$$\begin{aligned}
+  d V & = dx \, dy \, dz                          & \qquad \text{(coordinate cartesiane)}  \\
+  d V & = R dR \, d\theta \, dz                   & \qquad \text{(coordinate cilindriche)} \\
+  d V & = r^2 \sin \phi \, dr \, d\phi \, d\theta & \qquad \text{(coordinate sferiche)}
+\end{aligned}$$
+-->
+<div class="proof example dropdown admonition" id="example-14">
+<p class="admonition-title"><span class="caption-number">Example 28.11 </span> (Elemento di volume in coordinate cartesiane)</p>
+<div class="example-content section" id="proof-content">
+<div class="math notranslate nohighlight">
+\[\vec{r} = x \hat{x} + y \hat{y} + z \hat{z}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  d V
+  &amp; = \partial_x \vec{r} \cdot \partial_y \vec{r} \times \partial_z \vec{r} \, dx \, dy \, dz = \\
+  &amp; = \vec{x} \cdot \vec{y} \times \vec{z} \, dx \, dy \, dz = \\
+  &amp; = \vec{x} \cdot \vec{x} \, dx \, dy \, dz = \\
+  &amp; = dx \, dy \, dz \ .
+\end{aligned}\end{split}\]</div>
+</div>
+</div><div class="proof example dropdown admonition" id="example-15">
+<p class="admonition-title"><span class="caption-number">Example 28.12 </span> (Elemento di volume in coordinate cilindriche)</p>
+<div class="example-content section" id="proof-content">
+<div class="math notranslate nohighlight">
+\[\begin{aligned}
+  \vec{r}
+  &amp; = R \, \cos \theta \, \hat{x} + R \, \sin \theta \, \hat{y} + z \, \hat{z} 
+\end{aligned}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  d V
+  &amp; = \partial_R \vec{r} \cdot \partial_{\theta} \vec{r} \times \partial_{z} \vec{r} \, dR \, d\theta \, d z = \\
+  &amp; = (\cos \theta \, \hat{x} + \sin \theta \, \hat{y}) \cdot (-R \sin \theta \, \hat{x} + R \cos \theta \, \hat{y}) \times \hat{z}  \, dR \, d\theta \, d z = \\
+  &amp; = (\cos \theta \, \hat{x} + \sin \theta \, \hat{y}) \cdot ( R \sin \theta \, \hat{y} + R \cos \theta \, \hat{x}) \, dR \, d\theta \, d z = \\
+  &amp; = R (\cos^2 \theta + \sin^2 \theta) \, dR \, d\theta \, d z = \\
+  &amp; = R \, dR \, d \theta \, dz 
+\end{aligned}\end{split}\]</div>
+</div>
+</div><div class="proof example dropdown admonition" id="example-16">
+<p class="admonition-title"><span class="caption-number">Example 28.13 </span> (Elemento di volume in coordinate sferiche)</p>
+<div class="example-content section" id="proof-content">
+<div class="math notranslate nohighlight">
+\[\begin{aligned}
+  \vec{r}
+  &amp; = r \sin \phi \, \cos \theta \, \hat{x} + r \sin \phi \, \sin \theta \, \hat{y} + r \cos \phi \, \hat{z} 
+\end{aligned}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  d V
+  &amp; = \partial_r \vec{r} \cdot \partial_{\phi} \vec{r} \times \partial_{\theta} \vec{r} \, dr \, d\phi \, d\theta = \\
+  &amp; = (\sin \phi \, \cos \theta \, \hat{x} + \sin \phi \, \sin \theta \, \hat{y} + \cos \phi \, \hat{z} ) \cdot ( r \cos \phi \, \cos \theta \, \hat{x} + r \cos \phi \, \sin \theta \, \hat{y} - r \sin \phi \, \hat{z} ) \times (-r \sin \phi \sin \theta \hat{x} + r \sin \phi \cos \theta \hat{y}) \, dr \, d\phi \, d\theta = \\
+  &amp; = \dots = \\
+  &amp; = r^2 \sin \phi \, dr \, d\phi \, d\theta \ .
+\end{aligned}\end{split}\]</div>
+</div>
+</div><hr class="footnotes docutils" />
 <dl class="footnote brackets">
 <dt class="label" id="mixed-cartesian-polar"><span class="brackets">1</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id2">2</a>,<a href="#id3">3</a>)</span></dt>
 <dd><p>Questa rappresentazione può risultare utile quando è necessario svolgere derivate della posizione, poiché i vettori della base cartesiana sono costanti in tutto lo spazio e quindi la loro derivata è nulla. <strong>todo</strong> <em>Aggiungere collegamenti a sezione derivate (esempi?) e alla cinematica in meccanica classica.</em></p>
@@ -748,11 +925,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="derivatives.html"
+       href="integrals.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">28.2. </span>Operatori differenziali in spazi euclidei</p>
+        <p class="prev-next-title"><span class="section-number">28.2. </span>Integrali in spazi euclidei</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -771,10 +948,22 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parametrizzazione-dello-spazio">28.1.1. Parametrizzazione dello spazio</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#base-naturale">28.1.2. Base naturale</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#curve-coordinate">28.1.2.1. Curve coordinate</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#superfici-coordinate">28.1.2.2. Superfici coordinate</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parametrizzazione-dello-spazio">28.1.1. Parametrizzazione dello spazio</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#base-naturale">28.1.1.1. Base naturale</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#curve-coordinate">28.1.1.2. Curve coordinate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#superfici-coordinate">28.1.1.3. Superfici coordinate</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#curve-nello-spazio">28.1.2. Curve nello spazio</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#elemento-di-curva">28.1.2.1. Elemento di curva</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#superfici-nello-spazio">28.1.3. Superfici nello spazio</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#elemento-di-superficie">28.1.3.1. Elemento di superficie</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#volumi-nello-spazio">28.1.4. Volumi nello spazio</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#elemento-di-volume">28.1.4.1. Elemento di volume</a></li>
 </ul>
 </li>
 </ul>

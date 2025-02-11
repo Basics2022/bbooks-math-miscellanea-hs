@@ -402,33 +402,39 @@
 \contentsline {subsection}{\numberline {28.3.2}Regole di integrazione}{230}{subsection.28.3.2}%
 \contentsline {subsection}{\numberline {28.3.3}Teoremi}{231}{subsection.28.3.3}%
 \contentsline {chapter}{\numberline {29}Introduzione al calcolo vettoriale su spazi euclidei}{233}{chapter.29}%
-\contentsline {section}{\numberline {29.1}Geometria \sphinxstylestrong {todo} \sphinxstyleemphasis {cambiare titolo}}{234}{section.29.1}%
+\contentsline {section}{\numberline {29.1}Cenni di geometria differenziale}{234}{section.29.1}%
 \contentsline {subsection}{\numberline {29.1.1}Parametrizzazione dello spazio}{234}{subsection.29.1.1}%
-\contentsline {subsection}{\numberline {29.1.2}Base naturale}{235}{subsection.29.1.2}%
-\contentsline {subsubsection}{Curve coordinate}{238}{subsubsection*.203}%
-\contentsline {subsubsection}{Superfici coordinate}{238}{subsubsection*.204}%
-\contentsline {section}{\numberline {29.2}Operatori differenziali in spazi euclidei}{238}{section.29.2}%
-\contentsline {subsection}{\numberline {29.2.1}Derivata direzionale}{238}{subsection.29.2.1}%
-\contentsline {subsection}{\numberline {29.2.2}Gradiente}{238}{subsection.29.2.2}%
-\contentsline {subsection}{\numberline {29.2.3}Divergenza}{239}{subsection.29.2.3}%
-\contentsline {subsection}{\numberline {29.2.4}Rotore}{240}{subsection.29.2.4}%
-\contentsline {section}{\numberline {29.3}Integrali in spazi euclidei}{241}{section.29.3}%
-\contentsline {subsection}{\numberline {29.3.1}Integrali di linea}{241}{subsection.29.3.1}%
-\contentsline {subsubsection}{Densità}{242}{subsubsection*.205}%
-\contentsline {subsubsection}{Lavoro e circuitazione}{243}{subsubsection*.206}%
-\contentsline {paragraph}{Campi conservativi}{244}{paragraph*.207}%
-\contentsline {subsection}{\numberline {29.3.2}Integrali di superficie}{244}{subsection.29.3.2}%
-\contentsline {subsubsection}{Densità}{244}{subsubsection*.208}%
-\contentsline {subsubsection}{Flusso}{245}{subsubsection*.209}%
-\contentsline {subsection}{\numberline {29.3.3}Integrali di volume}{245}{subsection.29.3.3}%
-\contentsline {subsection}{\numberline {29.3.4}Teoremi}{246}{subsection.29.3.4}%
-\contentsline {section}{\numberline {29.4}Problemi}{248}{section.29.4}%
-\contentsline {subsection}{\numberline {29.4.1}Operatori differenziali}{248}{subsection.29.4.1}%
-\contentsline {subsection}{\numberline {29.4.2}Integrali}{248}{subsection.29.4.2}%
-\contentsline {subsubsection}{Geometria}{248}{subsubsection*.210}%
-\contentsline {subsubsection}{Fisica}{248}{subsubsection*.215}%
-\contentsline {part}{VII\hspace {1em}Statistica}{249}{part.7}%
-\contentsline {chapter}{\numberline {30}Introduzione alla statistica}{253}{chapter.30}%
-\contentsline {part}{VIII\hspace {1em}Indice}{255}{part.8}%
-\contentsline {chapter}{\numberline {31}Indice}{257}{chapter.31}%
-\contentsline {chapter}{Proof Index}{259}{section*.218}%
+\contentsline {subsubsection}{Base naturale}{236}{subsubsection*.203}%
+\contentsline {subsubsection}{Curve coordinate}{238}{subsubsection*.204}%
+\contentsline {subsubsection}{Superfici coordinate}{238}{subsubsection*.205}%
+\contentsline {subsection}{\numberline {29.1.2}Curve nello spazio}{238}{subsection.29.1.2}%
+\contentsline {subsubsection}{Elemento di curva}{238}{subsubsection*.206}%
+\contentsline {subsection}{\numberline {29.1.3}Superfici nello spazio}{239}{subsection.29.1.3}%
+\contentsline {subsubsection}{Elemento di superficie}{239}{subsubsection*.207}%
+\contentsline {subsection}{\numberline {29.1.4}Volumi nello spazio}{240}{subsection.29.1.4}%
+\contentsline {subsubsection}{Elemento di volume}{240}{subsubsection*.208}%
+\contentsline {section}{\numberline {29.2}Integrali in spazi euclidei}{242}{section.29.2}%
+\contentsline {subsection}{\numberline {29.2.1}Integrali di linea}{242}{subsection.29.2.1}%
+\contentsline {subsubsection}{Densità}{242}{subsubsection*.209}%
+\contentsline {subsubsection}{Lavoro e circuitazione}{244}{subsubsection*.210}%
+\contentsline {paragraph}{Campi conservativi}{244}{paragraph*.211}%
+\contentsline {subsection}{\numberline {29.2.2}Integrali di superficie}{245}{subsection.29.2.2}%
+\contentsline {subsubsection}{Densità}{245}{subsubsection*.212}%
+\contentsline {subsubsection}{Flusso}{245}{subsubsection*.213}%
+\contentsline {subsection}{\numberline {29.2.3}Integrali di volume}{245}{subsection.29.2.3}%
+\contentsline {section}{\numberline {29.3}Operatori differenziali in spazi euclidei}{245}{section.29.3}%
+\contentsline {subsection}{\numberline {29.3.1}Derivata direzionale}{246}{subsection.29.3.1}%
+\contentsline {subsection}{\numberline {29.3.2}Gradiente}{246}{subsection.29.3.2}%
+\contentsline {subsection}{\numberline {29.3.3}Divergenza}{247}{subsection.29.3.3}%
+\contentsline {subsection}{\numberline {29.3.4}Rotore}{248}{subsection.29.3.4}%
+\contentsline {section}{\numberline {29.4}Teorema di Stokes}{248}{section.29.4}%
+\contentsline {section}{\numberline {29.5}Problemi}{250}{section.29.5}%
+\contentsline {subsection}{\numberline {29.5.1}Operatori differenziali}{250}{subsection.29.5.1}%
+\contentsline {subsection}{\numberline {29.5.2}Integrali}{250}{subsection.29.5.2}%
+\contentsline {subsubsection}{Geometria}{250}{subsubsection*.214}%
+\contentsline {subsubsection}{Fisica}{251}{subsubsection*.219}%
+\contentsline {part}{VII\hspace {1em}Statistica}{253}{part.7}%
+\contentsline {chapter}{\numberline {30}Introduzione alla statistica}{257}{chapter.30}%
+\contentsline {part}{VIII\hspace {1em}Indice}{259}{part.8}%
+\contentsline {chapter}{\numberline {31}Indice}{261}{chapter.31}%
+\contentsline {chapter}{Proof Index}{263}{section*.222}%

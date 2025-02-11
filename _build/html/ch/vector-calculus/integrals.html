@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>28.3. Integrali in spazi euclidei &#8212; Matematica per le scuole superiori</title>
+    <title>28.2. Integrali in spazi euclidei &#8212; Matematica per le scuole superiori</title>
   
   
   
@@ -71,8 +71,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="28.4. Problemi" href="problems.html" />
-    <link rel="prev" title="28.2. Operatori differenziali in spazi euclidei" href="derivatives.html" />
+    <link rel="next" title="28.3. Operatori differenziali in spazi euclidei" href="derivatives.html" />
+    <link rel="prev" title="28.1. Cenni di geometria differenziale" href="geometry.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
@@ -268,10 +268,11 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../vector-calculus.html">28. Introduzione al calcolo vettoriale su spazi euclidei</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="geometry.html">28.1. Geometria <strong>todo</strong> <em>cambiare titolo</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="derivatives.html">28.2. Operatori differenziali in spazi euclidei</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">28.3. Integrali in spazi euclidei</a></li>
-<li class="toctree-l2"><a class="reference internal" href="problems.html">28.4. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="geometry.html">28.1. Cenni di geometria differenziale</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">28.2. Integrali in spazi euclidei</a></li>
+<li class="toctree-l2"><a class="reference internal" href="derivatives.html">28.3. Operatori differenziali in spazi euclidei</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stokes.html">28.4. Teorema di Stokes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="problems.html">28.5. Problemi</a></li>
 </ul>
 </li>
 </ul>
@@ -494,21 +495,20 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-di-linea">28.3.1. Integrali di linea</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#densita">28.3.1.1. Densità</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lavoro-e-circuitazione">28.3.1.2. Lavoro e circuitazione</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#campi-conservativi">28.3.1.2.1. Campi conservativi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-di-linea">28.2.1. Integrali di linea</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#densita">28.2.1.1. Densità</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lavoro-e-circuitazione">28.2.1.2. Lavoro e circuitazione</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#campi-conservativi">28.2.1.2.1. Campi conservativi</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-di-superficie">28.3.2. Integrali di superficie</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vector-calculus-integrals-surface-density">28.3.2.1. Densità</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flusso">28.3.2.2. Flusso</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-di-superficie">28.2.2. Integrali di superficie</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vector-calculus-integrals-surface-density">28.2.2.1. Densità</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flusso">28.2.2.2. Flusso</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-di-volume">28.3.3. Integrali di volume</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoremi">28.3.4. Teoremi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-di-volume">28.2.3. Integrali di volume</a></li>
 </ul>
             </nav>
         </div>
@@ -521,34 +521,12 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="integrali-in-spazi-euclidei">
-<span id="vector-calculus-integrals"></span><h1><span class="section-number">28.3. </span>Integrali in spazi euclidei<a class="headerlink" href="#integrali-in-spazi-euclidei" title="Permalink to this heading">#</a></h1>
-<p>In questa sezione vengono presentati alcuni integrali comuni di campi scalari e vettoriali, che compaiono frequentemente in fisica e in altri ambiti scientifici. Il calcolo degli integrali in spazi euclidei viene svolto sfruttando una parametrizzazione del dominio con un insieme di coordinate per ricondurre questi integrali a <a class="reference internal" href="../multivariable-calculus/integrals.html#multivariable-calculus-integrals"><span class="std std-ref">integrali su domini multi-dimensionali</span></a>, dopo aver valutato correttamente l’espressione dei domini elementari in funzione delle variazioni elementari delle coordinate usate nella parametrizzazione.</p>
+<span id="vector-calculus-integrals"></span><h1><span class="section-number">28.2. </span>Integrali in spazi euclidei<a class="headerlink" href="#integrali-in-spazi-euclidei" title="Permalink to this heading">#</a></h1>
+<p>In questa sezione vengono presentati alcuni integrali comuni di campi scalari e vettoriali, che compaiono frequentemente in fisica e in altri ambiti scientifici. Il calcolo degli integrali in spazi euclidei viene svolto sfruttando una parametrizzazione del dominio con un insieme di coordinate per ricondurre questi integrali a <a class="reference internal" href="../multivariable-calculus/integrals.html#multivariable-calculus-integrals"><span class="std std-ref">integrali su domini multi-dimensionali</span></a>, dopo aver valutato correttamente l’espressione dei domini elementari in funzione delle variazioni elementari delle coordinate usate nella parametrizzazione: le espressione dell”<a class="reference internal" href="geometry.html#vector-calculus-geometry-lines-infinitesimal"><span class="std std-ref">elemento di linea</span></a>, dell”<a class="reference internal" href="geometry.html#vector-calculus-geometry-surfaces-infinitesimal"><span class="std std-ref">elemento di superficie</span></a>, e dell”<a class="reference internal" href="geometry.html#vector-calculus-geometry-volumes-infinitesimal"><span class="std std-ref">elemento di volume</span></a> indotti da una parametrizzazione dello spazio sono stati discussi nella prima sezione di questo capitolo, sull’uso delle <a class="reference internal" href="geometry.html#vector-calculus-geometry"><span class="std std-ref">coordinate per la rappresentazione parametrica dello spazio euclideo</span></a>.</p>
 <div class="section" id="integrali-di-linea">
-<span id="vector-calculus-integrals-line"></span><h2><span class="section-number">28.3.1. </span>Integrali di linea<a class="headerlink" href="#integrali-di-linea" title="Permalink to this heading">#</a></h2>
-<p>Il vettore elementare di una curva nello spazio, descritta in forma parametrica <span class="math notranslate nohighlight">\(\vec{r}(q^1)\)</span> è il vettore</p>
-<div class="math notranslate nohighlight">
-\[d \vec{r}(q^1) = \vec{r}'(q^1) \, dq^1 \ .\]</div>
-<p><strong>Lunghezza di arco.</strong> Tra le possibili parametrizzazioni regolari della curva, esiste una parametrizzazione particolare, generalmente indicata con <span class="math notranslate nohighlight">\(s\)</span>, e definita dalla condizione</p>
-<div class="math notranslate nohighlight">
-\[d  s = |d \vec{r}(s)| \ ,\]</div>
-<p>cioè la variazione del parametro <span class="math notranslate nohighlight">\(s\)</span> è uguale alla lunghezza dell’elemento di curva. Il parametro <span class="math notranslate nohighlight">\(s\)</span> viene definito <em>lunghezza d’arco</em> e dalla sua definizione segue immediatamente che la derivata della posizione della curva rispetto a <span class="math notranslate nohighlight">\(s\)</span> è il versore tangente <span class="math notranslate nohighlight">\(\hat{t}\)</span>,</p>
-<div class="math notranslate nohighlight">
-\[\vec{r}'(s) = \hat{t}(s) \ .\]</div>
-<table class="table">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><img alt="" src="../../_images/integral-line.png" /></p></td>
-<td><p><img alt="" src="../../_images/integral-line-infinitesimal.png" /></p></td>
-<td><p><img alt="" src="../../_images/integral-line-infinitesimal-s.png" /></p></td>
-</tr>
-</tbody>
-</table>
+<span id="vector-calculus-integrals-line"></span><h2><span class="section-number">28.2.1. </span>Integrali di linea<a class="headerlink" href="#integrali-di-linea" title="Permalink to this heading">#</a></h2>
 <div class="section" id="densita">
-<span id="vector-calculus-integrals-density"></span><h3><span class="section-number">28.3.1.1. </span>Densità<a class="headerlink" href="#densita" title="Permalink to this heading">#</a></h3>
+<span id="vector-calculus-integrals-density"></span><h3><span class="section-number">28.2.1.1. </span>Densità<a class="headerlink" href="#densita" title="Permalink to this heading">#</a></h3>
 <p>Data una curva <span class="math notranslate nohighlight">\(\gamma\)</span> nello spazio euclideo descritta dall’equazione parametrica</p>
 <div class="math notranslate nohighlight">
 \[\gamma: \vec{r} = \vec{r}_{\gamma}(t) \qquad  , \qquad t \in [t_0, t_1] \ ,\]</div>
@@ -560,7 +538,7 @@ document.write(`
 \[M = \int_{\vec{r} \in \gamma} m (\vec{r}) \, |d \vec{r}| = \int_{t = t_0}^{t_1} m (\vec{r}_{\gamma}(t)) \, |\vec{r}'_{\gamma}(t)| \, dt\]</div>
 <p>Questo tipo di integrale può essere utilizzato per calcolare la lunghezza di una curva o alcune proprietà additive della curva, di cui la funzione integranda è una densità lineare.</p>
 <div class="proof example dropdown admonition" id="example-0">
-<p class="admonition-title"><span class="caption-number">Example 28.11 </span> (Lunghezza di un quarto di cerchio)</p>
+<p class="admonition-title"><span class="caption-number">Example 28.14 </span> (Lunghezza di un quarto di cerchio)</p>
 <div class="example-content section" id="proof-content">
 <p>Un arco di circonferenza corrispondente a un quarto di essa può essere rappresentato in forma parametrica come,</p>
 <div class="math notranslate nohighlight">
@@ -576,11 +554,11 @@ document.write(`
 \[L = \int{\vec{r}\in \gamma} |d \vec{r}| =\int_{t = 0}^{\frac{\pi}{2}} \left|\vec{r}'(t)\right| \, dt =  \int_{t = 0}^{\frac{\pi}{2}} R \, dt = \frac{\pi}{2} \, R \ .\]</div>
 </div>
 </div><div class="proof example dropdown admonition" id="example-1">
-<p class="admonition-title"><span class="caption-number">Example 28.12 </span> (Massa di un quarto di cerchio di densità non uniforme)</p>
+<p class="admonition-title"><span class="caption-number">Example 28.15 </span> (Massa di un quarto di cerchio di densità non uniforme)</p>
 <div class="example-content section" id="proof-content">
 </div>
 </div><div class="proof example dropdown admonition" id="example-2">
-<p class="admonition-title"><span class="caption-number">Example 28.13 </span> (Lunghezza di un’elica)</p>
+<p class="admonition-title"><span class="caption-number">Example 28.16 </span> (Lunghezza di un’elica)</p>
 <div class="example-content section" id="proof-content">
 <p>Un’elica di raggio <span class="math notranslate nohighlight">\(R\)</span> e passo <span class="math notranslate nohighlight">\(L\)</span> composta da 2 avvolgimenti può essere rappresentata in forma parametrica come</p>
 <div class="math notranslate nohighlight">
@@ -596,7 +574,7 @@ document.write(`
 \[L = \int{\vec{r}\in \gamma} |d \vec{r}| =\int_{t = 0}^{4 \pi} \left|\vec{r}'(t)\right| \, dt =  \int_{t = 0}^{4 \pi}  \sqrt{ R^2 + \left(\frac{L}{2 \pi}\right)^2 } \,  dt = 4 \pi R^2 \sqrt{1 + \left( \frac{L}{2 \pi R}\right)^2}  \ . \]</div>
 </div>
 </div><div class="proof example dropdown admonition" id="example-3">
-<p class="admonition-title"><span class="caption-number">Example 28.14 </span> (Massa di un’elica con densità non uniforme)</p>
+<p class="admonition-title"><span class="caption-number">Example 28.17 </span> (Massa di un’elica con densità non uniforme)</p>
 <div class="example-content section" id="proof-content">
 <p>Si vuole calcolare la massa dell’elica dell’esempio precedente, conoscendo che la sua densità lineare di massa ha una dipendenza di primo grado dal parametro <span class="math notranslate nohighlight">\(t\)</span> nota,</p>
 <div class="math notranslate nohighlight">
@@ -614,11 +592,11 @@ document.write(`
 </div>
 </div></div>
 <div class="section" id="lavoro-e-circuitazione">
-<span id="vector-calculus-integrals-work"></span><h3><span class="section-number">28.3.1.2. </span>Lavoro e circuitazione<a class="headerlink" href="#lavoro-e-circuitazione" title="Permalink to this heading">#</a></h3>
-<p>L’integrale del prodotto scalare tra un campo vettoriale <span class="math notranslate nohighlight">\(\vec{f}(\vec{r})\)</span> definito su una curva e il versore tangente <span class="math notranslate nohighlight">\(\hat{t}(\vec{r})\)</span> (l’elemento <span class="math notranslate nohighlight">\(d \vec{r} = \hat{t} \, ds\)</span> <strong>todo</strong> <em>link a lunghezza d’arco</em>) della curva stessa</p>
+<span id="vector-calculus-integrals-work"></span><h3><span class="section-number">28.2.1.2. </span>Lavoro e circuitazione<a class="headerlink" href="#lavoro-e-circuitazione" title="Permalink to this heading">#</a></h3>
+<p>L’integrale del prodotto scalare tra un campo vettoriale <span class="math notranslate nohighlight">\(\vec{f}(\vec{r})\)</span> definito su una curva e il versore tangente <span class="math notranslate nohighlight">\(\hat{t}(\vec{r})\)</span> alla curva stessa,</p>
 <div class="math notranslate nohighlight" id="equation-eq-integral-work">
 <span class="eqno">(28.1)<a class="headerlink" href="#equation-eq-integral-work" title="Permalink a questa equazione">#</a></span>\[L_{\gamma}(\vec{f}) = \int_{\vec{r} \in \gamma} \vec{f}(\vec{r}) \cdot \hat{t}(\vec{r}) \ ,\]</div>
-<p>compare in molti ambiti della fisica, o delle scienze in generale, ed è spesso associato al concetto di lavoro compiuto dalla forza o dal campo di forze <span class="math notranslate nohighlight">\(\vec{f}(\vec{r})\)</span> lungo il percorso rappresentato dalla curva <span class="math notranslate nohighlight">\(\gamma\)</span>. Esplicitando l’elemento di curva e ipotizzando una parametrizzazinoe regolare</p>
+<p>compare in molti ambiti della fisica, o delle scienze in generale, ed è spesso associato al concetto di lavoro compiuto dalla forza o dal campo di forze <span class="math notranslate nohighlight">\(\vec{f}(\vec{r})\)</span> lungo il percorso rappresentato dalla curva <span class="math notranslate nohighlight">\(\gamma\)</span>. Esplicitando l’elemento di curva e ipotizzando una parametrizzazione regolare</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
   L_{\gamma}(\vec{f})
@@ -627,52 +605,32 @@ document.write(`
 \end{aligned}\end{split}\]</div>
 <p><strong>todo</strong> <em>indipendente dalla parametrizzazione della curva</em></p>
 <div class="proof definition admonition" id="definition-4">
-<p class="admonition-title"><span class="caption-number">Definition 28.4 </span> (Circuitazione)</p>
+<p class="admonition-title"><span class="caption-number">Definition 28.5 </span> (Circuitazione)</p>
 <div class="definition-content section" id="proof-content">
 <p>L’integrale del lavoro <a class="reference internal" href="#equation-eq-integral-work">(28.1)</a> lungo una curva chiusa <span class="math notranslate nohighlight">\(\gamma\)</span> viene definito circuitazione del campo <span class="math notranslate nohighlight">\(\vec{f}\)</span> lungo la linea <span class="math notranslate nohighlight">\(\gamma\)</span>.</p>
 </div>
 </div><div class="proof example admonition" id="example-5">
-<p class="admonition-title"><span class="caption-number">Example 28.15 </span></p>
+<p class="admonition-title"><span class="caption-number">Example 28.18 </span></p>
 <div class="example-content section" id="proof-content">
 </div>
 </div><div class="section" id="campi-conservativi">
-<span id="vector-calculus-integrals-work-conservative"></span><h4><span class="section-number">28.3.1.2.1. </span>Campi conservativi<a class="headerlink" href="#campi-conservativi" title="Permalink to this heading">#</a></h4>
+<span id="vector-calculus-integrals-work-conservative"></span><h4><span class="section-number">28.2.1.2.1. </span>Campi conservativi<a class="headerlink" href="#campi-conservativi" title="Permalink to this heading">#</a></h4>
 <p>In alcuni casi particolari, il valore di questo integrale non dipende dalla curva <span class="math notranslate nohighlight">\(\gamma\)</span>, ma solo dai suoi punti estremi. Campi di questo <span class="math notranslate nohighlight">\(\vec{f}(\vec{r})\)</span> di questo tipo compaiono in fisica nella definizione di campi di forze conservative, che ammettono potenziale.</p>
 <p><strong>todo</strong> <em>legare bene con il resto; discutere qui? In altre parti? Ragionare sui domini?</em></p>
 <ul class="simple">
 <li><p>campi conservativi in un dominio hanno circuitazione nulla lungo ogni percorso appartenente al dominio</p></li>
 </ul>
 <div class="proof example admonition" id="example-6">
-<p class="admonition-title"><span class="caption-number">Example 28.16 </span></p>
+<p class="admonition-title"><span class="caption-number">Example 28.19 </span></p>
 <div class="example-content section" id="proof-content">
 </div>
 </div></div>
 </div>
 </div>
 <div class="section" id="integrali-di-superficie">
-<span id="vector-calculus-integrals-surface"></span><h2><span class="section-number">28.3.2. </span>Integrali di superficie<a class="headerlink" href="#integrali-di-superficie" title="Permalink to this heading">#</a></h2>
-<p>Nello spazio 3-dimensionale, una superficie può essere parametrizzata con due coordinate <span class="math notranslate nohighlight">\((q^1, q^2)\)</span> e i suoi punti possono essere rappresentati da una funzione di queste due coordinate,</p>
-<div class="math notranslate nohighlight">
-\[S: \, \vec{r} = \vec{r}_S(q^1, q^2) \qquad , \qquad \left(q^1, q^2 \right) \in Q \ .\]</div>
-<p>Ricordando il significato geometrico del <a class="reference internal" href="../algebra/vector-algebra-euclidean-space.html#math-hs-algebra-vector-euclidean-space-vector-product"><span class="std std-ref">prodotto vettoriale tra due vettori in spazi euclidei</span></a>, l’elemento infinitesimo di questa superficie con versore normale, <span class="math notranslate nohighlight">\(\hat{n} \, dS\)</span>, di una superficie descritta dalle due coordinate <span class="math notranslate nohighlight">\(\{ q^i \}_{i=1:2}\)</span>, <span class="math notranslate nohighlight">\(\vec{r}(q^1, q^2)\)</span> e costruita con gli incrementi parziali,</p>
-<div class="math notranslate nohighlight">
-\[\hat{n} \, d S = \frac{\partial \vec{r}}{\partial q^1} \times \frac{\partial \vec{r}}{\partial q^2} \, dq^1 \, dq^2 \ .\]</div>
-<p>L’area dell’elemento infinitesimo di superficie è quindi</p>
-<div class="math notranslate nohighlight">
-\[d S := \left| \hat{n} d S \right| = \left| \frac{\partial \vec{r}}{\partial q^1} \times \frac{\partial \vec{r}}{\partial q^2} \, dq^1 \, dq^2  \right| \ .\]</div>
-<table class="table">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><img alt="" src="../../_images/integral-surface.png" /></p></td>
-<td><p><img alt="" src="../../_images/integral-surface-infinitesimal.png" /></p></td>
-</tr>
-</tbody>
-</table>
+<span id="vector-calculus-integrals-surface"></span><h2><span class="section-number">28.2.2. </span>Integrali di superficie<a class="headerlink" href="#integrali-di-superficie" title="Permalink to this heading">#</a></h2>
 <div class="section" id="vector-calculus-integrals-surface-density">
-<span id="id1"></span><h3><span class="section-number">28.3.2.1. </span>Densità<a class="headerlink" href="#vector-calculus-integrals-surface-density" title="Permalink to this heading">#</a></h3>
+<span id="id1"></span><h3><span class="section-number">28.2.2.1. </span>Densità<a class="headerlink" href="#vector-calculus-integrals-surface-density" title="Permalink to this heading">#</a></h3>
 <p>Data una superficie <span class="math notranslate nohighlight">\(S: \, \vec{r} = \vec{r}_S(q^1, q^2)\)</span> e una funzione <span class="math notranslate nohighlight">\(\sigma(\vec{r})\)</span> definita sui punti della superficie <span class="math notranslate nohighlight">\(S\)</span>, questa può essere interpretata come densità di superficie di una proprietà <span class="math notranslate nohighlight">\(M\)</span> additiva associata alla superficie <span class="math notranslate nohighlight">\(S\)</span> definita come l’integrale</p>
 <div class="math notranslate nohighlight">
 \[M = \int_{\vec{r} \in S} \sigma(\vec{r}) \ ,\]</div>
@@ -681,7 +639,7 @@ document.write(`
 \[M = \int_{\vec{r} \in S} \sigma(\vec{r}) d S = \int_{(q^1,q^2) \in Q} \sigma\left( \vec{r}_S(q^1, q^2) \right) \left|\frac{\partial \vec{r}_S}{\partial q^1}(q^1,q^2) \times \frac{\partial \vec{r}_S}{\partial q^2}(q^1,q^2) \right| \, dq^1 \, dq^2\]</div>
 </div>
 <div class="section" id="flusso">
-<span id="vector-calculus-integrals-surface-flux"></span><h3><span class="section-number">28.3.2.2. </span>Flusso<a class="headerlink" href="#flusso" title="Permalink to this heading">#</a></h3>
+<span id="vector-calculus-integrals-surface-flux"></span><h3><span class="section-number">28.2.2.2. </span>Flusso<a class="headerlink" href="#flusso" title="Permalink to this heading">#</a></h3>
 <p>L’integrale del prodotto scalare tra un campo vettoriale <span class="math notranslate nohighlight">\(\vec{f}(\vec{r})\)</span> definito su una superficice <span class="math notranslate nohighlight">\(S\)</span> e il versore normale <span class="math notranslate nohighlight">\(\hat{n}\)</span> alla superficie</p>
 <div class="math notranslate nohighlight" id="equation-eq-integral-flux">
 <span class="eqno">(28.2)<a class="headerlink" href="#equation-eq-integral-flux" title="Permalink a questa equazione">#</a></span>\[\Phi_{S}(\vec{f}) = \int_{\vec{r} \in S} \vec{f}(\vec{r}) \cdot \hat{n}(\vec{r}) \ ,\]</div>
@@ -691,160 +649,12 @@ document.write(`
 </div>
 </div>
 <div class="section" id="integrali-di-volume">
-<span id="vector-calculus-integrals-volume"></span><h2><span class="section-number">28.3.3. </span>Integrali di volume<a class="headerlink" href="#integrali-di-volume" title="Permalink to this heading">#</a></h2>
+<span id="vector-calculus-integrals-volume"></span><h2><span class="section-number">28.2.3. </span>Integrali di volume<a class="headerlink" href="#integrali-di-volume" title="Permalink to this heading">#</a></h2>
 <p>Nello spazio 3-dimensionale i cui punti sono descritti dalle coordinate <span class="math notranslate nohighlight">\(\{ q^i \}_{i=1:3}\)</span>, <span class="math notranslate nohighlight">\(\vec{r}(q^1, q^2, q^3)\)</span>, il volume elementare <span class="math notranslate nohighlight">\(dV\)</span> costruito con i vettori degli incrementi parziali, può essere espresso in funzione delle variazioni delle coordinate <span class="math notranslate nohighlight">\(d q^1\)</span>, <span class="math notranslate nohighlight">\(d q^2\)</span>, <span class="math notranslate nohighlight">\(d q^3\)</span> e del prodotto misto delle derivate parziali,</p>
 <p>Ricordando il significato geometrico del <a class="reference internal" href="../algebra/vector-algebra-euclidean-space.html#math-hs-algebra-vector-euclidean-space-mixed-product"><span class="std std-ref">prodotto misto tra tre vettori in spazi euclidei</span></a>, l’elemento infinitesimo di un volume descritto dalle coordinate <span class="math notranslate nohighlight">\(\left( q^i \right)_{i=1:n}\)</span> è</p>
 <div class="math notranslate nohighlight">
 \[dV = \left| \frac{\partial \vec{r}}{\partial q^1} \cdot \frac{\partial \vec{r}}{\partial q^2} \times \frac{\partial \vec{r}}{\partial q^3} \right| \, d q^1 \, d q^2 \, d q^3 \ .\]</div>
-<table class="table">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><img alt="" src="../../_images/integral-volume.png" /></p></td>
-<td><p><img alt="" src="../../_images/integral-volume-infinitesimal.png" /></p></td>
-</tr>
-</tbody>
-</table>
-<p>Ricordando le definizioni di <a class="reference internal" href="../analytic_geometry/analytic_geometry_3d/points.html#geometry-analytic-3d-coordinates-cartesian"><span class="std std-ref">coordiante cartesiane</span></a>, <a class="reference internal" href="../analytic_geometry/analytic_geometry_3d/points.html#geometry-analytic-3d-coordinates-cylindrical"><span class="std std-ref">coordinate cilindriche</span></a> e <a class="reference internal" href="../analytic_geometry/analytic_geometry_3d/points.html#geometry-analytic-3d-coordinates-spherical"><span class="std std-ref">coordiante sferiche</span></a>, è possibile dimostrare che l’espressione dell’elemento di volume in queste coordinate è</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-  d V &amp; = dx \, dy \, dz                          &amp; \qquad \text{(coordinate cartesiane)}  \\
-  d V &amp; = R dR \, d\theta \, dz                   &amp; \qquad \text{(coordinate cilindriche)} \\
-  d V &amp; = r^2 \sin \phi \, dr \, d\phi \, d\theta &amp; \qquad \text{(coordinate sferiche)}
-\end{aligned}\end{split}\]</div>
-<div class="proof example dropdown admonition" id="example-7">
-<p class="admonition-title"><span class="caption-number">Example 28.17 </span> (Elemento di volume in coordinate cartesiane)</p>
-<div class="example-content section" id="proof-content">
-<div class="math notranslate nohighlight">
-\[\vec{r} = x \hat{x} + y \hat{y} + z \hat{z}\]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-  d V
-  &amp; = \partial_x \vec{r} \cdot \partial_y \vec{r} \times \partial_z \vec{r} \, dx \, dy \, dz = \\
-  &amp; = \vec{x} \cdot \vec{y} \times \vec{z} \, dx \, dy \, dz = \\
-  &amp; = \vec{x} \cdot \vec{x} \, dx \, dy \, dz = \\
-  &amp; = dx \, dy \, dz \ .
-\end{aligned}\end{split}\]</div>
 </div>
-</div><div class="proof example dropdown admonition" id="example-8">
-<p class="admonition-title"><span class="caption-number">Example 28.18 </span> (Elemento di volume in coordinate cilindriche)</p>
-<div class="example-content section" id="proof-content">
-<div class="math notranslate nohighlight">
-\[\begin{aligned}
-  \vec{r}
-  &amp; = R \, \cos \theta \, \hat{x} + R \, \sin \theta \, \hat{y} + z \, \hat{z} 
-\end{aligned}\]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-  d V
-  &amp; = \partial_R \vec{R} \cdot \partial_{\theta} \vec{r} \times \partial_{z} \vec{r} \, dR \, d\theta \, d z = \\
-  &amp; = (\cos \theta \, \hat{x} + \sin \theta \, \hat{y}) \cdot (-R \sin \theta \, \hat{x} + R \cos \theta \, \hat{y}) \times \hat{z}  \, dR \, d\theta \, d z = \\
-  &amp; = (\cos \theta \, \hat{x} + \sin \theta \, \hat{y}) \cdot ( R \sin \theta \, \hat{y} + R \cos \theta \, \hat{x}) \, dR \, d\theta \, d z = \\
-  &amp; = R (\cos^2 \theta + \sin^2 \theta) \, dR \, d\theta \, d z = \\
-  &amp; = R \, dR \, d \theta \, dz 
-\end{aligned}\end{split}\]</div>
-</div>
-</div><div class="proof example dropdown admonition" id="example-9">
-<p class="admonition-title"><span class="caption-number">Example 28.19 </span> (Elemento di volume in coordinate sferiche)</p>
-<div class="example-content section" id="proof-content">
-<div class="math notranslate nohighlight">
-\[\begin{aligned}
-  \vec{r}
-  &amp; = r \sin \phi \, \cos \theta \, \hat{x} + r \sin \phi \, \sin \theta \, \hat{y} + r \cos \phi \, \hat{z} 
-\end{aligned}\]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-  d V
-  &amp; = \partial_r \vec{r} \cdot \partial_{\phi} \vec{r} \times \partial_{\theta} \vec{r} \, dr \, d\phi \, d\theta = \\
-  &amp; = (\sin \phi \, \cos \theta \, \hat{x} + \sin \phi \, \sin \theta \, \hat{y} + \cos \phi \, \hat{z} ) \cdot ( r \cos \phi \, \cos \theta \, \hat{x} + r \cos \phi \, \sin \theta \, \hat{y} - r \sin \phi \, \hat{z} ) \times (-r \sin \phi \sin \theta \hat{x} + r \sin \phi \cos \theta \hat{y}) \, dr \, d\phi \, d\theta = \\
-  &amp; = \dots = \\
-  &amp; = r^2 \sin \phi \, dr \, d\phi \, d\theta \ .
-\end{aligned}\end{split}\]</div>
-</div>
-</div></div>
-<div class="section" id="teoremi">
-<span id="vector-calculus-integrals-theorems"></span><h2><span class="section-number">28.3.4. </span>Teoremi<a class="headerlink" href="#teoremi" title="Permalink to this heading">#</a></h2>
-<div class="proof theorem admonition" id="theorem-10">
-<p class="admonition-title"><span class="caption-number">Theorem 28.1 </span> (Teorema del gradiente)</p>
-<div class="theorem-content section" id="proof-content">
-<p>Per campi scalari <span class="math notranslate nohighlight">\(f(\vec{r})\)</span> sufficientemente regolari nel dominio <span class="math notranslate nohighlight">\(V \subseteq E^d\)</span>, <span class="math notranslate nohighlight">\(d=2:3\)</span>, vale</p>
-<div class="math notranslate nohighlight" id="equation-eq-thm-gradient">
-<span class="eqno">(28.4)<a class="headerlink" href="#equation-eq-thm-gradient" title="Permalink a questa equazione">#</a></span>\[\int_{V} \nabla f = \oint_{\partial V} f \hat{n} \ .\]</div>
-</div>
-</div><div class="proof example dropdown admonition" id="thm-gradient-1">
-<p class="admonition-title"><span class="caption-number">Example 28.20 </span> (Teorema del gradiente)</p>
-<div class="example-content section" id="proof-content">
-<p>Dato il dominio quadrato descritto dai valori delle coordinate cartesiane dei punti <span class="math notranslate nohighlight">\(\vec{r} = x \hat{x} + y \hat{y} \in E^2\)</span>, <span class="math notranslate nohighlight">\((x, y) \in [-1, 1] \times [-1,1]\)</span>, e il campo scalare</p>
-<div class="math notranslate nohighlight">
-\[f(\vec{r}) = 4 x + 3 x y\]</div>
-<p>viene chiesto di determinare se la funzione <span class="math notranslate nohighlight">\(f(\vec{r})\)</span> è regolare nel dominio, di calcolare i due integrali coinvolti nel teorema del gradiente <a class="reference internal" href="#equation-eq-thm-gradient">(28.4)</a> e verificare se il teorema del gradiente è soddisfatto.</p>
-<p>La funzione <span class="math notranslate nohighlight">\(f(\vec{r})\)</span> è continua…Il gradiente di <span class="math notranslate nohighlight">\(f(\vec{r})\)</span> può essere espresso usando le coordinate cartesiane come</p>
-<div class="math notranslate nohighlight">
-\[\nabla f = \hat{x} \partial_x f + \hat{y} \partial_y f = (4 + 3 y) \hat{x} + 3 x \hat{y} \ ,\]</div>
-<p>dove i versori <span class="math notranslate nohighlight">\(\hat{x}\)</span> e <span class="math notranslate nohighlight">\(\hat{y}\)</span> sono uniformi nello spazio, e quindi indipendenti dalle coordinate.</p>
-<p>Gli integrali valgono</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-  \int_V \nabla f
-  &amp; = \int_{x=-1}^{1} \int_{y=-1}^{1} \left[ (4 + 3 y) \hat{x} + 3 x \hat{y} \right] \, dx \, dy = \\
-  &amp; = \hat{x} \int_{x=-1}^{1} \int_{y=-1}^{1} (4 + 3 y) \, dx \, dy +  \int_{x=-1}^{1} \int_{y=-1}^{1} 3 x \, dx \, dy = \\
-  &amp; = \hat{x} \int_{x=-1}^{1} \left.\left[ 4 \, y + \frac{3}{2} \, y^2 \right]\right|_{y=-1}^{1} \, dx
-    + \hat{y} \int_{y=-1}^{1} \left.\left[ \frac{3}{2} \, x^2 \right]\right|_{y=-1}^{1} \, dy = \\
-  &amp; = 16 \hat{x} + 0 \hat{y} \ .
-\end{aligned}\end{split}\]</div>
-<p>e</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-  \oint_{\partial V} f \hat{n}
-  &amp; = \int_{y = -1}^{ 1} f(x= 1, y   ) \hat{x} \, dy 
-    + \int_{x =  1}^{-1} f(x   , y= 1) \hat{y} \, dx + \\ 
-  &amp; + \int_{y =  1}^{-1} f(x=-1, y   ) (- \hat{x} ) \, dy 
-    + \int_{x = -1}^{ 1} f(x   , y=-1) (- \hat{y} ) \, dx = \\
-  &amp; = \int_{y = -1}^{ 1} ( 4     + 3     y )  \hat{x} \, dy 
-    + \int_{x =  1}^{-1} ( 4  x  + 3  x    )  \hat{y} \, dx + \\ 
-  &amp; + \int_{y =  1}^{-1} (-4     - 3     y )  (- \hat{x} ) \, dy 
-    + \int_{x = -1}^{ 1} ( 4  x  - 3  x   ))  (- \hat{y} ) \, dx = \\
-  &amp; = 8 \hat{x} + 0 \hat{y} + 8 \hat{x} + 0 \hat{y}
-    = 16 \hat{x} \ .
-\end{aligned}\end{split}\]</div>
-</div>
-</div><div class="proof example dropdown admonition" id="thm-gradient-2">
-<p class="admonition-title"><span class="caption-number">Example 28.21 </span> (Teorema del gradiente)</p>
-<div class="example-content section" id="proof-content">
-</div>
-</div><div class="proof theorem admonition" id="theorem-13">
-<p class="admonition-title"><span class="caption-number">Theorem 28.2 </span> (Teorema della divergenza)</p>
-<div class="theorem-content section" id="proof-content">
-<p>Per campi vettoriali <span class="math notranslate nohighlight">\(\vec{f}(\vec{r})\)</span> sufficientemente regolari nel dominio <span class="math notranslate nohighlight">\(V \subseteq E^d\)</span>, <span class="math notranslate nohighlight">\(d=2:3\)</span>, vale</p>
-<div class="math notranslate nohighlight" id="equation-eq-thm-divergence">
-<span class="eqno">(28.5)<a class="headerlink" href="#equation-eq-thm-divergence" title="Permalink a questa equazione">#</a></span>\[\int_{V} \nabla \cdot \vec{f} = \oint_{\partial V} \vec{f} \cdot \hat{n} \ .\]</div>
-</div>
-</div><div class="proof example dropdown admonition" id="thm-divergence-1">
-<p class="admonition-title"><span class="caption-number">Example 28.22 </span> (Teorema della divergenza)</p>
-<div class="example-content section" id="proof-content">
-</div>
-</div><div class="proof example dropdown admonition" id="thm-divergence-2">
-<p class="admonition-title"><span class="caption-number">Example 28.23 </span> (Teorema della divergenza)</p>
-<div class="example-content section" id="proof-content">
-</div>
-</div><div class="proof theorem admonition" id="theorem-16">
-<p class="admonition-title"><span class="caption-number">Theorem 28.3 </span> (Teorema del rotore)</p>
-<div class="theorem-content section" id="proof-content">
-<p>Per campi vettoriali <span class="math notranslate nohighlight">\(\vec{f}(\vec{r})\)</span> sufficientemente regolari sulla superficie <span class="math notranslate nohighlight">\(S \subseteq E^3\)</span>, vale</p>
-<div class="math notranslate nohighlight" id="equation-eq-thm-curl">
-<span class="eqno">(28.6)<a class="headerlink" href="#equation-eq-thm-curl" title="Permalink a questa equazione">#</a></span>\[\int_{S} \nabla \times \vec{f} \cdot \hat{n} = \oint_{\partial S} \vec{f} \cdot \hat{t} \ .\]</div>
-</div>
-</div><div class="proof example dropdown admonition" id="thm-curl-1">
-<p class="admonition-title"><span class="caption-number">Example 28.24 </span> (Teorema del rotore)</p>
-<div class="example-content section" id="proof-content">
-</div>
-</div><div class="proof example dropdown admonition" id="thm-curl-2">
-<p class="admonition-title"><span class="caption-number">Example 28.25 </span> (Teorema della rotore)</p>
-<div class="example-content section" id="proof-content">
-</div>
-</div></div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -878,20 +688,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="derivatives.html"
+       href="geometry.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">precedente</p>
-        <p class="prev-next-title"><span class="section-number">28.2. </span>Operatori differenziali in spazi euclidei</p>
+        <p class="prev-next-title"><span class="section-number">28.1. </span>Cenni di geometria differenziale</p>
       </div>
     </a>
     <a class="right-next"
-       href="problems.html"
+       href="derivatives.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">28.4. </span>Problemi</p>
+        <p class="prev-next-title"><span class="section-number">28.3. </span>Operatori differenziali in spazi euclidei</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -910,21 +720,20 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-di-linea">28.3.1. Integrali di linea</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#densita">28.3.1.1. Densità</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lavoro-e-circuitazione">28.3.1.2. Lavoro e circuitazione</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#campi-conservativi">28.3.1.2.1. Campi conservativi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-di-linea">28.2.1. Integrali di linea</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#densita">28.2.1.1. Densità</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lavoro-e-circuitazione">28.2.1.2. Lavoro e circuitazione</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#campi-conservativi">28.2.1.2.1. Campi conservativi</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-di-superficie">28.3.2. Integrali di superficie</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vector-calculus-integrals-surface-density">28.3.2.1. Densità</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flusso">28.3.2.2. Flusso</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-di-superficie">28.2.2. Integrali di superficie</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vector-calculus-integrals-surface-density">28.2.2.1. Densità</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flusso">28.2.2.2. Flusso</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-di-volume">28.3.3. Integrali di volume</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoremi">28.3.4. Teoremi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-di-volume">28.2.3. Integrali di volume</a></li>
 </ul>
   </nav></div>
 

@@ -107,8 +107,9 @@ parts:
   - file: ch/vector-calculus
     sections:
     - file: ch/vector-calculus/geometry
-    - file: ch/vector-calculus/derivatives
     - file: ch/vector-calculus/integrals
+    - file: ch/vector-calculus/derivatives
+    - file: ch/vector-calculus/stokes
     - file: ch/vector-calculus/problems
 - caption: Statistica
   numbered: True

@@ -271,10 +271,11 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="ch/vector-calculus.html">28. Introduzione al calcolo vettoriale su spazi euclidei</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="ch/vector-calculus/geometry.html">28.1. Geometria <strong>todo</strong> <em>cambiare titolo</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="ch/vector-calculus/derivatives.html">28.2. Operatori differenziali in spazi euclidei</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ch/vector-calculus/integrals.html">28.3. Integrali in spazi euclidei</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ch/vector-calculus/problems.html">28.4. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/vector-calculus/geometry.html">28.1. Cenni di geometria differenziale</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/vector-calculus/integrals.html">28.2. Integrali in spazi euclidei</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/vector-calculus/derivatives.html">28.3. Operatori differenziali in spazi euclidei</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/vector-calculus/stokes.html">28.4. Teorema di Stokes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/vector-calculus/problems.html">28.5. Problemi</a></li>
 </ul>
 </li>
 </ul>
@@ -439,6 +440,7 @@ document.write(`
 
    <div class="modindex-jumpbox">
    <a href="#cap-analysis-continuous-fun"><strong>analysis-continuous-fun</strong></a> | 
+   <a href="#cap-arc-length"><strong>arc-length</strong></a> | 
    <a href="#cap-definition-0"><strong>definition-0</strong></a> | 
    <a href="#cap-definition-1"><strong>definition-1</strong></a> | 
    <a href="#cap-definition-2"><strong>definition-2</strong></a> | 
@@ -485,10 +487,9 @@ document.write(`
    <a href="#cap-multivariable-calculus:integrals:def:riemann-sum"><strong>multivariable-calculus:integrals:def:riemann-sum</strong></a> | 
    <a href="#cap-precalculus-real-fun"><strong>precalculus-real-fun</strong></a> | 
    <a href="#cap-set-fun-def"><strong>set-fun-def</strong></a> | 
-   <a href="#cap-theorem-10"><strong>theorem-10</strong></a> | 
-   <a href="#cap-theorem-13"><strong>theorem-13</strong></a> | 
-   <a href="#cap-theorem-16"><strong>theorem-16</strong></a> | 
+   <a href="#cap-theorem-0"><strong>theorem-0</strong></a> | 
    <a href="#cap-theorem-3"><strong>theorem-3</strong></a> | 
+   <a href="#cap-theorem-6"><strong>theorem-6</strong></a> | 
    <a href="#cap-thm-curl-1"><strong>thm-curl-1</strong></a> | 
    <a href="#cap-thm-curl-2"><strong>thm-curl-2</strong></a> | 
    <a href="#cap-thm-divergence-1"><strong>thm-divergence-1</strong></a> | 
@@ -516,6 +517,14 @@ document.write(`
        <td></td>
        <td>
        <a href="ch/infinitesimal_calculus/analysis.html#analysis-continuous-fun"><code class="xref">analysis-continuous-fun</code></a> <em>(ch/infinitesimal_calculus/analysis)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-arc-length"><td></td><td>
+       <strong>arc-length</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/vector-calculus/geometry.html#arc-length"><code class="xref">arc-length</code></a> <em>(ch/vector-calculus/geometry)</em></td><td>
        <em>definition</em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-definition-0"><td></td><td>
@@ -627,7 +636,7 @@ document.write(`
      <tr>
        <td></td>
        <td>
-       <a href="ch/infinitesimal_calculus/integrals.html#example-14"><code class="xref">example-14</code></a> <em>(ch/infinitesimal_calculus/integrals)</em></td><td>
+       <a href="ch/vector-calculus/geometry.html#example-14"><code class="xref">example-14</code></a> <em>(ch/vector-calculus/geometry)</em></td><td>
        <em>example</em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-example-15"><td></td><td>
@@ -635,7 +644,7 @@ document.write(`
      <tr>
        <td></td>
        <td>
-       <a href="ch/infinitesimal_calculus/integrals.html#example-15"><code class="xref">example-15</code></a> <em>(ch/infinitesimal_calculus/integrals)</em></td><td>
+       <a href="ch/vector-calculus/geometry.html#example-15"><code class="xref">example-15</code></a> <em>(ch/vector-calculus/geometry)</em></td><td>
        <em>example</em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-example-16"><td></td><td>
@@ -643,7 +652,7 @@ document.write(`
      <tr>
        <td></td>
        <td>
-       <a href="ch/infinitesimal_calculus/integrals.html#example-16"><code class="xref">example-16</code></a> <em>(ch/infinitesimal_calculus/integrals)</em></td><td>
+       <a href="ch/vector-calculus/geometry.html#example-16"><code class="xref">example-16</code></a> <em>(ch/vector-calculus/geometry)</em></td><td>
        <em>example</em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-example-17"><td></td><td>
@@ -699,7 +708,7 @@ document.write(`
      <tr>
        <td></td>
        <td>
-       <a href="ch/vector-calculus/integrals.html#example-7"><code class="xref">example-7</code></a> <em>(ch/vector-calculus/integrals)</em></td><td>
+       <a href="ch/infinitesimal_calculus/integrals.html#example-7"><code class="xref">example-7</code></a> <em>(ch/infinitesimal_calculus/integrals)</em></td><td>
        <em>example</em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-example-8"><td></td><td>
@@ -707,7 +716,7 @@ document.write(`
      <tr>
        <td></td>
        <td>
-       <a href="ch/vector-calculus/integrals.html#example-8"><code class="xref">example-8</code></a> <em>(ch/vector-calculus/integrals)</em></td><td>
+       <a href="ch/vector-calculus/geometry.html#example-8"><code class="xref">example-8</code></a> <em>(ch/vector-calculus/geometry)</em></td><td>
        <em>example</em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-example-9"><td></td><td>
@@ -715,7 +724,7 @@ document.write(`
      <tr>
        <td></td>
        <td>
-       <a href="ch/vector-calculus/integrals.html#example-9"><code class="xref">example-9</code></a> <em>(ch/vector-calculus/integrals)</em></td><td>
+       <a href="ch/vector-calculus/geometry.html#example-9"><code class="xref">example-9</code></a> <em>(ch/vector-calculus/geometry)</em></td><td>
        <em>example</em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-infinitesimal-calculus:integrals:def:riemann-integral"><td></td><td>
@@ -886,28 +895,12 @@ document.write(`
        <a href="ch/set.html#set-fun-def"><code class="xref">set-fun-def</code></a> <em>(ch/set)</em></td><td>
        <em>definition</em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
-     <tr class="cap" id="cap-theorem-10"><td></td><td>
-       <strong>theorem-10</strong></td><td></td></tr>
+     <tr class="cap" id="cap-theorem-0"><td></td><td>
+       <strong>theorem-0</strong></td><td></td></tr>
      <tr>
        <td></td>
        <td>
-       <a href="ch/vector-calculus/integrals.html#theorem-10"><code class="xref">theorem-10</code></a> <em>(ch/vector-calculus/integrals)</em></td><td>
-       <em>theorem</em></td></tr>
-     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
-     <tr class="cap" id="cap-theorem-13"><td></td><td>
-       <strong>theorem-13</strong></td><td></td></tr>
-     <tr>
-       <td></td>
-       <td>
-       <a href="ch/vector-calculus/integrals.html#theorem-13"><code class="xref">theorem-13</code></a> <em>(ch/vector-calculus/integrals)</em></td><td>
-       <em>theorem</em></td></tr>
-     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
-     <tr class="cap" id="cap-theorem-16"><td></td><td>
-       <strong>theorem-16</strong></td><td></td></tr>
-     <tr>
-       <td></td>
-       <td>
-       <a href="ch/vector-calculus/integrals.html#theorem-16"><code class="xref">theorem-16</code></a> <em>(ch/vector-calculus/integrals)</em></td><td>
+       <a href="ch/vector-calculus/stokes.html#theorem-0"><code class="xref">theorem-0</code></a> <em>(ch/vector-calculus/stokes)</em></td><td>
        <em>theorem</em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-theorem-3"><td></td><td>
@@ -915,7 +908,15 @@ document.write(`
      <tr>
        <td></td>
        <td>
-       <a href="ch/multivariable-calculus/integrals.html#theorem-3"><code class="xref">theorem-3</code></a> <em>(ch/multivariable-calculus/integrals)</em></td><td>
+       <a href="ch/vector-calculus/stokes.html#theorem-3"><code class="xref">theorem-3</code></a> <em>(ch/vector-calculus/stokes)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-theorem-6"><td></td><td>
+       <strong>theorem-6</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/vector-calculus/stokes.html#theorem-6"><code class="xref">theorem-6</code></a> <em>(ch/vector-calculus/stokes)</em></td><td>
        <em>theorem</em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-thm-curl-1"><td></td><td>
@@ -923,7 +924,7 @@ document.write(`
      <tr>
        <td></td>
        <td>
-       <a href="ch/vector-calculus/integrals.html#thm-curl-1"><code class="xref">thm-curl-1</code></a> <em>(ch/vector-calculus/integrals)</em></td><td>
+       <a href="ch/vector-calculus/stokes.html#thm-curl-1"><code class="xref">thm-curl-1</code></a> <em>(ch/vector-calculus/stokes)</em></td><td>
        <em>example</em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-thm-curl-2"><td></td><td>
@@ -931,7 +932,7 @@ document.write(`
      <tr>
        <td></td>
        <td>
-       <a href="ch/vector-calculus/integrals.html#thm-curl-2"><code class="xref">thm-curl-2</code></a> <em>(ch/vector-calculus/integrals)</em></td><td>
+       <a href="ch/vector-calculus/stokes.html#thm-curl-2"><code class="xref">thm-curl-2</code></a> <em>(ch/vector-calculus/stokes)</em></td><td>
        <em>example</em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-thm-divergence-1"><td></td><td>
@@ -939,7 +940,7 @@ document.write(`
      <tr>
        <td></td>
        <td>
-       <a href="ch/vector-calculus/integrals.html#thm-divergence-1"><code class="xref">thm-divergence-1</code></a> <em>(ch/vector-calculus/integrals)</em></td><td>
+       <a href="ch/vector-calculus/stokes.html#thm-divergence-1"><code class="xref">thm-divergence-1</code></a> <em>(ch/vector-calculus/stokes)</em></td><td>
        <em>example</em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-thm-divergence-2"><td></td><td>
@@ -947,7 +948,7 @@ document.write(`
      <tr>
        <td></td>
        <td>
-       <a href="ch/vector-calculus/integrals.html#thm-divergence-2"><code class="xref">thm-divergence-2</code></a> <em>(ch/vector-calculus/integrals)</em></td><td>
+       <a href="ch/vector-calculus/stokes.html#thm-divergence-2"><code class="xref">thm-divergence-2</code></a> <em>(ch/vector-calculus/stokes)</em></td><td>
        <em>example</em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-thm-gradient-1"><td></td><td>
@@ -955,7 +956,7 @@ document.write(`
      <tr>
        <td></td>
        <td>
-       <a href="ch/vector-calculus/integrals.html#thm-gradient-1"><code class="xref">thm-gradient-1</code></a> <em>(ch/vector-calculus/integrals)</em></td><td>
+       <a href="ch/vector-calculus/stokes.html#thm-gradient-1"><code class="xref">thm-gradient-1</code></a> <em>(ch/vector-calculus/stokes)</em></td><td>
        <em>example</em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-thm-gradient-2"><td></td><td>
@@ -963,7 +964,7 @@ document.write(`
      <tr>
        <td></td>
        <td>
-       <a href="ch/vector-calculus/integrals.html#thm-gradient-2"><code class="xref">thm-gradient-2</code></a> <em>(ch/vector-calculus/integrals)</em></td><td>
+       <a href="ch/vector-calculus/stokes.html#thm-gradient-2"><code class="xref">thm-gradient-2</code></a> <em>(ch/vector-calculus/stokes)</em></td><td>
        <em>example</em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-thm:infinitesimal-calculus:continuous-fun:thms:comparison"><td></td><td>
