@@ -93,7 +93,7 @@ $$\vec{r} = R \, \sin \phi \, \cos \theta \, \hat{x} + R \, \sin \phi \, \sin \t
 ```
 
 (vector-calculus:geometry:natural-basis)=
-## Base naturale
+### Base naturale
 
 La paramterizzazione dello spazio permette di associare a ogni punto dello spazio una $n$-upla di coordiante. Usando una rappresentazione mista - scegliendo dei vettori di una base cartesiana con origine in $O$, e coordiante generiche $q^i$ - si può quindi rappresentare i punti dello spazio utilizzando le coordinate $q^i$ desiderate e i vettori della base cartesiana,
 
@@ -229,7 +229,20 @@ $$\begin{cases}
 (vector-calculus:geometry:coordiante-sufraces)=
 ### Superfici coordinate
 
+(vector-calculus:geometry:lines)=
+## Curve nello spazio
 
+Una curva $\gamma$ nello spazio può essere rappresentata con la sua equazione parametrica,
+
+$$\gamma: \ \vec{r} = \vec{r}_{\gamma}(q^1) \quad , \quad q^1 \in [q^1_a, q^1_b] \ ,$$
+
+cioè una funzione di un parametro $q^1$, che associa a ogni valore del parametro $q^1 \in [q^1_a, a^2_b]$ un punto appartenente alla curva, $\vec{r}_\gamma(q^1)$.
+
+(vector-calculus:geometry:surfaces)=
+## Superfici nello spazio
+
+(vector-calculus:geometry:volumes)=
+## Volumi nello spazio
 
 
 
