@@ -531,7 +531,23 @@ document.write(`
   \vec{u} \cdot \vec{v} &amp; := |\vec{u}||\vec{v}| \cos \theta_{\vec{u} \vec{v}}  \\
               |\vec{v}| &amp; = \sqrt{\vec{v} \cdot \vec{v}}  \\
 \end{aligned}\end{split}\]</div>
-<p>E” semplice verificare che la definizione del prodotto interno induce la definizione della norma. Infatti, calcolando il prodotto interno tra un vettore <span class="math notranslate nohighlight">\(\vec{v}\)</span> e se stesso, l’angolo compreso è l’angolo nullo, <span class="math notranslate nohighlight">\(\theta_{\vec{v} \vec{v}} = 0\)</span>, con <span class="math notranslate nohighlight">\(\cos \theta_{\vec{u}\vec{u}} = 0\)</span>.</p>
+<p>E” semplice verificare che la definizione di un prodotto interno induce la definizione di una norma. Infatti, calcolando il prodotto interno tra un vettore <span class="math notranslate nohighlight">\(\vec{v}\)</span> e se stesso, l’angolo compreso è l’angolo nullo, <span class="math notranslate nohighlight">\(\theta_{\vec{v} \vec{v}} = 0\)</span>, con <span class="math notranslate nohighlight">\(\cos \theta_{\vec{u}\vec{u}} = 0\)</span>.</p>
+<p>Il prodotto scalare risulta utile anche nella definizione di operazioni di <strong>proiezione</strong>. Ad esempio, la proiezione ortogonale di un vettore <span class="math notranslate nohighlight">\(\vec{v}\)</span> lungo la direzione identificata dal vettore unitario <span class="math notranslate nohighlight">\(\hat{u}\)</span> è il vettore</p>
+<div class="math notranslate nohighlight">
+\[\vec{v}_{\parallel \hat{u}} = \hat{u} \left( \hat{u} \cdot \vec{v} \right) \ ,\]</div>
+<p>che ha la stessa direzione di <span class="math notranslate nohighlight">\(\hat{u}\)</span> e modulo uguale alla proiezione ortogonale di <span class="math notranslate nohighlight">\(\vec{v}\)</span> su di esso, <span class="math notranslate nohighlight">\(\hat{u} \cdot \vec{v}\)</span>. La proiezione del vettore <span class="math notranslate nohighlight">\(\vec{v}\)</span> in direzione ortogonale a quella indicata da <span class="math notranslate nohighlight">\(\hat{u}\)</span> si può ottenere per differenza e quindi</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \vec{v}_{\perp \hat{u}} 
+  &amp; = \vec{v} - \vec{v}_{\parallel \hat{u}} = \\
+  &amp; = \vec{v} - \hat{u} \left( \hat{u} \cdot \vec{v} \right) = \\
+  &amp; = \left[ \hat{I} - \hat{u} \otimes \hat{u} \right] \cdot \vec{v} \ . \\
+\end{aligned}\end{split}\]</div>
+<p>dove ci si è concessi la licenza poetica di introdurre nell’ultima riga il tensore di proiezione ortogonale in direzione perpendicolare a <span class="math notranslate nohighlight">\(\hat{u}\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\mathbb{P}_{\perp \hat{u}} = \mathbb{I} - \hat{u} \otimes \hat{u} \ ,\]</div>
+<p>rappresentazione astratta (vettoriale/tensoriale, che non dipende dalla scelta di una base vettoriale) della trasformazione già mostrata in algebra lineare <strong>todo</strong> <em>aggiungere riferimento agli esercizi di algebra lineare sulle proiezioni</em></p>
+<p><strong>todo</strong> Discutere rappresentazione intrinseca/astratta/vettoriale e per coordinate.</p>
 </div>
 <div class="section" id="prodotto-vettoriale">
 <span id="math-hs-algebra-vector-euclidean-space-vector-product"></span><h2><span class="section-number">7.2.2. </span>Prodotto vettoriale<a class="headerlink" href="#prodotto-vettoriale" title="Permalink to this heading">#</a></h2>
@@ -553,6 +569,19 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[\vec{u} \cdot \vec{v} \times \vec{w} \ .\]</div>
 <p>Il prodotto misto ha un significato geometrico evidente: il valore del proodotto misto di tre vettori è uguale al volume del parallelepipedo costruito con i tre vettori come spigolo.</p>
+<table class="table">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><img alt="" src="../../_images/product-scalar.png" /></p></td>
+<td><p><img alt="" src="../../_images/product-vector.png" /></p></td>
+<td><p><img alt="" src="../../_images/product-mixed.png" /></p></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="base-cartesiana">
 <h2><span class="section-number">7.2.4. </span>Base cartesiana<a class="headerlink" href="#base-cartesiana" title="Permalink to this heading">#</a></h2>
