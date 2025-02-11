@@ -234,9 +234,11 @@ $$\begin{cases}
 
 Una curva $\gamma$ nello spazio può essere rappresentata con la sua equazione parametrica,
 
-$$\gamma: \ \vec{r} = \vec{r}_{\gamma}(q^1) \quad , \quad q^1 \in [q^1_a, q^1_b] \ ,$$
+$$\gamma: \ \vec{r} = \vec{r}_{\gamma}(q^1) \quad , \quad q^1 \in Q = [q^1_a, q^1_b] \ ,$$
 
-cioè una funzione di un parametro $q^1$, che associa a ogni valore del parametro $q^1 \in [q^1_a, a^2_b]$ un punto appartenente alla curva, $\vec{r}_\gamma(q^1)$.
+cioè una funzione di un parametro $q^1$, che associa a ogni valore del parametro $q^1 \in Q$ un punto appartenente alla curva, $\vec{r}_\gamma(q^1)$.
+
+Una **parametrizzazione regolare** rappresenta una funzione biunivoca tra i valori del parametro $q^1$ e i punti nello spazio $\vec{r}_{\gamma}(q^1)$. Questa condizione si riduce alla condizione che la derivata dei punti della curva rispetto al parametro non sia mai nulla, $\vec{r}'(q_1) \ne 0$, $\forall q^{1} \in Q$.
 
 (vector-calculus:geometry:surfaces)=
 ## Superfici nello spazio
