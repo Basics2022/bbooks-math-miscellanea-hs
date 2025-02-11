@@ -26,8 +26,28 @@ $$\begin{aligned}
               |\vec{v}| & = \sqrt{\vec{v} \cdot \vec{v}}  \\
 \end{aligned}$$
 
-E' semplice verificare che la definizione del prodotto interno induce la definizione della norma. Infatti, calcolando il prodotto interno tra un vettore $\vec{v}$ e se stesso, l'angolo compreso è l'angolo nullo, $\theta_{\vec{v} \vec{v}} = 0$, con $\cos \theta_{\vec{u}\vec{u}} = 0$.
+E' semplice verificare che la definizione di un prodotto interno induce la definizione di una norma. Infatti, calcolando il prodotto interno tra un vettore $\vec{v}$ e se stesso, l'angolo compreso è l'angolo nullo, $\theta_{\vec{v} \vec{v}} = 0$, con $\cos \theta_{\vec{u}\vec{u}} = 0$.
 
+Il prodotto scalare risulta utile anche nella definizione di operazioni di **proiezione**. Ad esempio, la proiezione ortogonale di un vettore $\vec{v}$ lungo la direzione identificata dal vettore unitario $\hat{u}$ è il vettore
+
+$$\vec{v}_{\parallel \hat{u}} = \hat{u} \left( \hat{u} \cdot \vec{v} \right) \ ,$$
+
+che ha la stessa direzione di $\hat{u}$ e modulo uguale alla proiezione ortogonale di $\vec{v}$ su di esso, $\hat{u} \cdot \vec{v}$. La proiezione del vettore $\vec{v}$ in direzione ortogonale a quella indicata da $\hat{u}$ si può ottenere per differenza e quindi
+
+$$\begin{aligned}
+  \vec{v}_{\perp \hat{u}} 
+  & = \vec{v} - \vec{v}_{\parallel \hat{u}} = \\
+  & = \vec{v} - \hat{u} \left( \hat{u} \cdot \vec{v} \right) = \\
+  & = \left[ \hat{I} - \hat{u} \otimes \hat{u} \right] \cdot \vec{v} \ . \\
+\end{aligned}$$
+
+dove ci si è concessi la licenza poetica di introdurre nell'ultima riga il tensore di proiezione ortogonale in direzione perpendicolare a $\hat{u}$,
+
+$$\mathbb{P}_{\perp \hat{u}} = \mathbb{I} - \hat{u} \otimes \hat{u} \ ,$$
+
+rappresentazione astratta (vettoriale/tensoriale, che non dipende dalla scelta di una base vettoriale) della trasformazione già mostrata in algebra lineare **todo** *aggiungere riferimento agli esercizi di algebra lineare sulle proiezioni*
+
+**todo** Discutere rappresentazione intrinseca/astratta/vettoriale e per coordinate.
 
 (math-hs:algebra:vector:euclidean-space:vector-product)=
 ## Prodotto vettoriale
@@ -54,7 +74,12 @@ $$\vec{u} \cdot \vec{v} \times \vec{w} \ .$$
 Il prodotto misto ha un significato geometrico evidente: il valore del proodotto misto di tre vettori è uguale al volume del parallelepipedo costruito con i tre vettori come spigolo.
 
 
-
+```{list-table}
+:header-rows: 0
+* - ![](../../media/vectors/product-scalar.png)
+  - ![](../../media/vectors/product-vector.png)
+  - ![](../../media/vectors/product-mixed.png)
+```
 
 
 

@@ -16,6 +16,14 @@ $$d  s = |d \vec{r}(s)| \ ,$$
 cioè la variazione del parametro $s$ è uguale alla lunghezza dell'elemento di curva. Il parametro $s$ viene definito *lunghezza d'arco* e dalla sua definizione segue immediatamente che la derivata della posizione della curva rispetto a $s$ è il versore tangente $\hat{t}$,
 
 $$\vec{r}'(s) = \hat{t}(s) \ .$$
+
+```{list-table}
+:header-rows: 0
+* - ![](../../media/vectors/integral-line.png)
+  - ![](../../media/vectors/integral-line-infinitesimal.png)
+  - ![](../../media/vectors/integral-line-infinitesimal-s.png)
+```
+
 (vector-calculus:integrals:density)=
 ### Densità
 Data una curva $\gamma$ nello spazio euclideo descritta dall'equazione parametrica
@@ -153,6 +161,12 @@ L'area dell'elemento infinitesimo di superficie è quindi
 
 $$d S := \left| \hat{n} d S \right| = \left| \frac{\partial \vec{r}}{\partial q^1} \times \frac{\partial \vec{r}}{\partial q^2} \, dq^1 \, dq^2  \right| \ .$$
 
+```{list-table}
+:header-rows: 0
+* - ![](../../media/vectors/integral-surface.png)
+  - ![](../../media/vectors/integral-surface-infinitesimal.png)
+```
+
 (vector-calculus:integrals:surface:density)=
 ### Densità
 
@@ -182,6 +196,12 @@ Nello spazio 3-dimensionale i cui punti sono descritti dalle coordinate $\{ q^i 
 Ricordando il significato geometrico del [prodotto misto tra tre vettori in spazi euclidei](math-hs:algebra:vector:euclidean-space:mixed-product), l'elemento infinitesimo di un volume descritto dalle coordinate $\left( q^i \right)_{i=1:n}$ è
 
 $$dV = \left| \frac{\partial \vec{r}}{\partial q^1} \cdot \frac{\partial \vec{r}}{\partial q^2} \times \frac{\partial \vec{r}}{\partial q^3} \right| \, d q^1 \, d q^2 \, d q^3 \ .$$
+
+```{list-table}
+:header-rows: 0
+* - ![](../../media/vectors/integral-volume.png)
+  - ![](../../media/vectors/integral-volume-infinitesimal.png)
+```
 
 Ricordando le definizioni di [coordiante cartesiane](geometry:analytic:3d:coordinates:cartesian), [coordinate cilindriche](geometry:analytic:3d:coordinates:cylindrical) e [coordiante sferiche](geometry:analytic:3d:coordinates:spherical), è possibile dimostrare che l'espressione dell'elemento di volume in queste coordinate è
 

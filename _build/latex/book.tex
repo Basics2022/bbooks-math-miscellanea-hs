@@ -87,7 +87,7 @@
         
 
 \title{Matematica per le scuole superiori}
-\date{10 feb 2025}
+\date{11 feb 2025}
 \release{}
 \author{basics}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -2233,7 +2233,7 @@ Dimostrare che la trasformazione inversa \(\mathbf{A}^{-1}\) esiste ed è uguale
 \sphinxAtStartPar
 \sphinxstylestrong{todo} Dipendenza logica di questo esercizio dalle basi di {\hyperref[\detokenize{ch/trigonometry:math-hs-trigonometry}]{\sphinxcrossref{\DUrole{std,std-ref}{trigonometria}}}}. Stabilire un ordine consigliato di accesso a questo \(\texttt{bbook}\)
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/algebra/linear-algebra-exercise-10}
+\phantomsection \label{exercise:matrix-projection-parallel}
 
 \begin{sphinxadmonition}{note}{Exercise 6.6.4 (Proiezione ortogonale lungo una direzione data)}
 
@@ -2269,7 +2269,7 @@ Dimostrare che il nucleo della trasformazione è formato dai vettori colonna \(\
 
 \end{itemize}
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/algebra/linear-algebra-exercise-11}
+\phantomsection \label{exercise:matrix-projection-perpendicular}
 
 \begin{sphinxadmonition}{note}{Exercise 6.6.5 (Proiezione ortogonale nella direzione perpendicolare a una direzione data)}
 
@@ -2687,7 +2687,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-09 feb 2025
+11 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -2801,7 +2801,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-09 feb 2025
+11 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3037,83 +3037,8 @@ cioè una combinazione lineare di questi vettori è uguale al vettore nullo solo
 
 \sphinxstepscope
 
-\begin{sphinxuseclass}{sd-container-fluid}
-\begin{sphinxuseclass}{sd-sphinx-override}
-\begin{sphinxuseclass}{sd-p-0}
-\begin{sphinxuseclass}{sd-mt-2}
-\begin{sphinxuseclass}{sd-mb-4}
-\begin{sphinxuseclass}{sd-row}
-\begin{sphinxuseclass}{sd-row-cols-2}
-\begin{sphinxuseclass}{sd-gx-2}
-\begin{sphinxuseclass}{sd-gy-1}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\begin{sphinxuseclass}{sd-container-fluid}
-\begin{sphinxuseclass}{sd-sphinx-override}
-\begin{sphinxuseclass}{sd-row}
-\begin{sphinxuseclass}{sd-row-cols-2}
-\begin{sphinxuseclass}{sd-row-cols-xs-2}
-\begin{sphinxuseclass}{sd-row-cols-sm-3}
-\begin{sphinxuseclass}{sd-row-cols-md-3}
-\begin{sphinxuseclass}{sd-row-cols-lg-3}
-\begin{sphinxuseclass}{sd-gx-3}
-\begin{sphinxuseclass}{sd-gy-1}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-col-auto}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\sphinxAtStartPar
-basics
 
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-col-auto}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\sphinxAtStartPar
-09 feb 2025
 
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-col-auto}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\sphinxAtStartPar
-1 min read
-
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
 
 \section{Spazio vettoriale euclideo}
 \label{\detokenize{ch/algebra/vector-algebra-euclidean-space:spazio-vettoriale-euclideo}}\label{\detokenize{ch/algebra/vector-algebra-euclidean-space:math-hs-algebra-vector-euclidean-space}}\label{\detokenize{ch/algebra/vector-algebra-euclidean-space::doc}}
@@ -3140,7 +3065,33 @@ che permette di definire la norma di un vettore e l’angolo tra due vettori
 \end{aligned}\end{split}
 \end{equation*}
 \sphinxAtStartPar
-E” semplice verificare che la definizione del prodotto interno induce la definizione della norma. Infatti, calcolando il prodotto interno tra un vettore \(\vec{v}\) e se stesso, l’angolo compreso è l’angolo nullo, \(\theta_{\vec{v} \vec{v}} = 0\), con \(\cos \theta_{\vec{u}\vec{u}} = 0\).
+E” semplice verificare che la definizione di un prodotto interno induce la definizione di una norma. Infatti, calcolando il prodotto interno tra un vettore \(\vec{v}\) e se stesso, l’angolo compreso è l’angolo nullo, \(\theta_{\vec{v} \vec{v}} = 0\), con \(\cos \theta_{\vec{u}\vec{u}} = 0\).
+
+\sphinxAtStartPar
+Il prodotto scalare risulta utile anche nella definizione di operazioni di \sphinxstylestrong{proiezione}. Ad esempio, la proiezione ortogonale di un vettore \(\vec{v}\) lungo la direzione identificata dal vettore unitario \(\hat{u}\) è il vettore
+\begin{equation*}
+\begin{split}\vec{v}_{\parallel \hat{u}} = \hat{u} \left( \hat{u} \cdot \vec{v} \right) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+che ha la stessa direzione di \(\hat{u}\) e modulo uguale alla proiezione ortogonale di \(\vec{v}\) su di esso, \(\hat{u} \cdot \vec{v}\). La proiezione del vettore \(\vec{v}\) in direzione ortogonale a quella indicata da \(\hat{u}\) si può ottenere per differenza e quindi
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \vec{v}_{\perp \hat{u}} 
+  & = \vec{v} - \vec{v}_{\parallel \hat{u}} = \\
+  & = \vec{v} - \hat{u} \left( \hat{u} \cdot \vec{v} \right) = \\
+  & = \left[ \hat{I} - \hat{u} \otimes \hat{u} \right] \cdot \vec{v} \ . \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+dove ci si è concessi la licenza poetica di introdurre nell’ultima riga il tensore di proiezione ortogonale in direzione perpendicolare a \(\hat{u}\),
+\begin{equation*}
+\begin{split}\mathbb{P}_{\perp \hat{u}} = \mathbb{I} - \hat{u} \otimes \hat{u} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+rappresentazione astratta (vettoriale/tensoriale, che non dipende dalla scelta di una base vettoriale) della trasformazione già mostrata in algebra lineare \hyperref[\detokenize{ch/algebra/linear-algebra:matrix-projection-parallel}]{Exercise \ref{\detokenize{ch/algebra/linear-algebra:matrix-projection-parallel}}}.
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo} Discutere rappresentazione intrinseca/astratta/vettoriale e per coordinate.
 
 
 \subsection{Prodotto vettoriale}
@@ -3167,6 +3118,37 @@ con il vettore \(\hat{k}\) ortogonale a entrambi i vettori \(\vec{u}\), \(\vec{v
 \sphinxstylestrong{todo.} Il prodotto vettoriale può essere visto come un caso particolare di un’operazione «strana» chiamata prodotto esterno
 
 \end{itemize}
+
+
+\subsection{Prodotto misto}
+\label{\detokenize{ch/algebra/vector-algebra-euclidean-space:prodotto-misto}}\label{\detokenize{ch/algebra/vector-algebra-euclidean-space:math-hs-algebra-vector-euclidean-space-mixed-product}}
+\sphinxAtStartPar
+Nello spazio euclideo \(E^3\) si può definire il prodotto misto tra 3 vettori, come il prodotto scalare di uno di questi e il prodotto vettore degli altri due
+\begin{equation*}
+\begin{split}\vec{u} \cdot \vec{v} \times \vec{w} \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Il prodotto misto ha un significato geometrico evidente: il valore del proodotto misto di tre vettori è uguale al volume del parallelepipedo costruito con i tre vettori come spigolo.
+
+
+\begin{savenotes}\sphinxattablestart
+\centering
+\begin{tabulary}{\linewidth}[t]{|T|T|T|}
+\hline
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{product-scalar}.png}
+&
+\sphinxAtStartPar
+\sphinxincludegraphics{{product-vector}.png}
+&
+\sphinxAtStartPar
+\sphinxincludegraphics{{product-mixed}.png}
+\\
+\hline
+\end{tabulary}
+\par
+\sphinxattableend\end{savenotes}
 
 
 \subsection{Base cartesiana}
@@ -3308,7 +3290,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-09 feb 2025
+11 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3556,7 +3538,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-09 feb 2025
+11 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -6193,7 +6175,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-09 feb 2025
+11 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -6356,7 +6338,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-09 feb 2025
+11 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -9034,7 +9016,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-09 feb 2025
+11 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -13438,7 +13420,7 @@ avvicinandosi al punto \(\mathbf{x}_0\) lungo direzioni differeti, si ottengono 
 \label{\detokenize{ch/multivariable-calculus/derivatives:derivate-di-funzioni-di-piu-variabili}}\label{\detokenize{ch/multivariable-calculus/derivatives:multivariable-calculus-derivatives}}\label{\detokenize{ch/multivariable-calculus/derivatives::doc}}
 
 \subsection{Derivate parziali}
-\label{\detokenize{ch/multivariable-calculus/derivatives:derivate-parziali}}\label{ch/multivariable-calculus/derivatives:multivariable-calculus-partial-derivative}
+\label{\detokenize{ch/multivariable-calculus/derivatives:derivate-parziali}}\label{\detokenize{ch/multivariable-calculus/derivatives:multivariable-calculus-derivatives-partial}}\label{ch/multivariable-calculus/derivatives:multivariable-calculus-partial-derivative}
 \begin{sphinxadmonition}{note}{Definition 27.2.1 (Derivata parziale)}
 
 
@@ -13777,9 +13759,271 @@ Una parametrizzazione di una regione dello spazio spazio è \sphinxstylestrong{r
 tra i punti \(P\) dello spazio e i valori delle coordinate \(\left( q^i \right)\). In altre parole, a ogni \(n\)\sphinxhyphen{}upla \(\left( q^i \right)_{i=1:n}\) corrisponde uno e un punto \(P\) e viceversa.
 \end{sphinxadmonition}
 
+\sphinxAtStartPar
+\sphinxstylestrong{todo}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleemphasis{Conseguenze sulle funzioni delle coordiante dei punti in funzione delle coordiante: derivata non si annulla nel dominio…}
 
-\subsubsection{Esempi di sistemi di coordinate}
-\label{\detokenize{ch/vector-calculus/geometry:esempi-di-sistemi-di-coordinate}}\label{\detokenize{ch/vector-calculus/geometry:vector-calculus-geometry-coordinates-examples}}
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleemphasis{Può essere necessario/utile definire più parametrizzazioni che coprono diverse zone del dominio…}
+
+\end{itemize}
+\label{ch/vector-calculus/geometry:example-1}
+\begin{sphinxadmonition}{note}{Example 28.1.1 (Spazio \protect\(E^2\protect\): coordinate cartesiane)}
+
+
+
+\sphinxAtStartPar
+Dopo aver scelto il punto \(O\) come origine, è possibile utilizzare un sistema di coordinate cartesiane \((q^1, q^2) = (x,y)\) e rappresentare un generico punto \(P\) dello spazio come
+\begin{equation*}
+\begin{split}\vec{r} = P - O = x \, \hat{x} + y \, \hat{y} \ .\end{split}
+\end{equation*}\end{sphinxadmonition}
+\label{ch/vector-calculus/geometry:example-2}
+\begin{sphinxadmonition}{note}{Example 28.1.2 (Spazio \protect\(E^2\protect\): coordinate polari)}
+
+
+
+\sphinxAtStartPar
+Utilizzando un sistema di coordinate polari con la stessa origine \(O\) di un sistema di coordinate cartesiane, e l’asse di riferimento per l’angolo \(\theta\) coincidente con l’asse \(x\) del sistema di coordinate cartesiane, è possibile rappresentare le coordinate cartesiane in funzione delle coordinate polari \((q^1, q^2) = (r, \theta)\)
+\begin{equation*}
+\begin{split}\begin{cases}
+  x = r \, \cos \theta \\
+  y = r \, \sin \theta \\
+\end{cases}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e un punto generico nello spazio \sphinxhyphen{} con una rappresentazione «mista» che usa le coordinate polari e i vettori \(\hat{x}\), \(\hat{y}\) ddella base cartesiana%
+\begin{footnote}[1]\sphinxAtStartFootnote
+Questa rappresentazione può risultare utile quando è necessario svolgere derivate della posizione, poiché i vettori della base cartesiana sono costanti in tutto lo spazio e quindi la loro derivata è nulla. \sphinxstylestrong{todo} \sphinxstyleemphasis{Aggiungere collegamenti a sezione derivate (esempi?) e alla cinematica in meccanica classica.}
+%
+\end{footnote} \sphinxhyphen{} come
+\begin{equation*}
+\begin{split}\vec{r} = r \, \cos \theta \, \hat{x} + r \, \sin \theta \, \hat{y} \ .\end{split}
+\end{equation*}\end{sphinxadmonition}
+\label{ch/vector-calculus/geometry:example-3}
+\begin{sphinxadmonition}{note}{Example 28.1.3 (Spazio \protect\(E^3\protect\): coordinate cartesiane)}
+
+
+
+\sphinxAtStartPar
+Dopo aver scelto il punto \(O\) come origine, è possibile utilizzare un sistema di coordinate cartesiane \((q^1, q^2, q^3) = (x,y,z)\) e rappresentare un generico punto \(P\) dello spazio come
+\begin{equation*}
+\begin{split}\vec{r} = P - O = x \, \hat{x} + y \, \hat{y} + z \, \hat{z} \ .\end{split}
+\end{equation*}\end{sphinxadmonition}
+\label{ch/vector-calculus/geometry:example-4}
+\begin{sphinxadmonition}{note}{Example 28.1.4 (Spazio \protect\(E^3\protect\): coordinate cilindriche)}
+
+
+
+\sphinxAtStartPar
+Utilizzando un sistema di coordinate polari con la stessa origine \(O\) di un sistema di coordinate cartesiane, gli assi \(z\) coincidenti, e l’asse di riferimento per l’angolo \(\theta\) coincidente con l’asse \(x\) del sistema di coordinate cartesiane, è possibile rappresentare le coordinate cartesiane in funzione delle coordinate polari \((q^1, q^2, q^3) = (r, \theta, z)\)
+\begin{equation*}
+\begin{split}\begin{cases}
+  x = r \, \cos \theta \\
+  y = r \, \sin \theta \\
+  z = z 
+\end{cases}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e un punto generico nello spazio \sphinxhyphen{} con una rappresentazione «mista» che usa le coordinate polari e i vettori \(\hat{x}\), \(\hat{y}\), \(\hat{z}\) della base cartesiana\sphinxfootnotemark[1] \sphinxhyphen{} come
+\begin{equation*}
+\begin{split}\vec{r} = r \, \cos \theta \, \hat{x} + r \, \sin \theta \, \hat{y} + z \, \hat{z} \ .\end{split}
+\end{equation*}\end{sphinxadmonition}
+\label{ch/vector-calculus/geometry:example-5}
+\begin{sphinxadmonition}{note}{Example 28.1.5 (Spazio \protect\(E^3\protect\): coordinate sferiche)}
+
+
+
+\sphinxAtStartPar
+Utilizzando un sistema di coordinate polari con la stessa origine \(O\) di un sistema di coordinate cartesiane, gli assi \(z\) coincidenti, e l’asse di riferimento per l’angolo \(\theta\) coincidente con l’asse \(x\) del sistema di coordinate cartesiane, è possibile rappresentare le coordinate cartesiane in funzione delle coordinate polari \((q^1, q^2, q^3) = (R, \phi, \theta)\)
+\begin{equation*}
+\begin{split}\begin{cases}
+  x = R \, \sin \phi \, \sin \theta \\
+  y = R \, \sin \phi \, \cos \theta \\
+  z = R \, \cos \phi
+\end{cases}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e un punto generico nello spazio \sphinxhyphen{} con una rappresentazione «mista» che usa le coordinate polari e i vettori \(\hat{x}\), \(\hat{y}\), \(\hat{z}\) della base cartesiana\sphinxfootnotemark[1] \sphinxhyphen{} come
+\begin{equation*}
+\begin{split}\vec{r} = R \, \sin \phi \, \cos \theta \, \hat{x} + R \, \sin \phi \, \sin \theta \, \hat{y} + R \, \cos \phi \hat{z} \ .\end{split}
+\end{equation*}\end{sphinxadmonition}
+
+
+\subsection{Base naturale}
+\label{\detokenize{ch/vector-calculus/geometry:base-naturale}}\label{\detokenize{ch/vector-calculus/geometry:vector-calculus-geometry-natural-basis}}
+\sphinxAtStartPar
+La paramterizzazione dello spazio permette di associare a ogni punto dello spazio una \(n\)\sphinxhyphen{}upla di coordiante. Usando una rappresentazione mista \sphinxhyphen{} scegliendo dei vettori di una base cartesiana con origine in \(O\), e coordiante generiche \(q^i\) \sphinxhyphen{} si può quindi rappresentare i punti dello spazio utilizzando le coordinate \(q^i\) desiderate e i vettori della base cartesiana,
+\begin{equation*}
+\begin{split}\vec{r} = P - O = x^k \left(q^i\right) \hat{x}_k \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+o più esplicitamente per spazi 2\sphinxhyphen{}dimensionali
+\begin{equation*}
+\begin{split}\vec{r} = P - O = x \left(q^1, q^2\right) \hat{x} + y\left(q^1, q^2\right) \hat{y} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e per spazi 3\sphinxhyphen{}dimensionali
+\begin{equation*}
+\begin{split}\vec{r} = P - O = x \left(q^1, q^2, q^3\right) \hat{x} + y\left(q^1, q^2, q^3 \right) \hat{y} + z\left( q^1, q^2, q^3 \right) \hat{z} \ .\end{split}
+\end{equation*}\label{ch/vector-calculus/geometry:definition-6}
+\begin{sphinxadmonition}{note}{Definition 28.1.2 (Base naturale)}
+
+
+
+\sphinxAtStartPar
+In ogni punto dello spazio, è possibile definire i vettori della base naturale indotta da una particolare scelta del sistema di coordinate \(\left( q^i \right)_{i:n}\) come le {\hyperref[\detokenize{ch/multivariable-calculus/derivatives:multivariable-calculus-derivatives-partial}]{\sphinxcrossref{\DUrole{std,std-ref}{derivata parziali}}}} del punto \(P\) rispetto alle coordinate \(q^i\). I vettori della base naturale \(\left\{\vec{b}_i \right\}_{i=1:n}\) indotta dalle coordinate \(\left( q^i \right)_{i=1:n}\) sono quindi i vettori
+\begin{equation*}
+\begin{split}\vec{b}_i = \frac{\partial \vec{r}}{\partial q^i} \ .\end{split}
+\end{equation*}\end{sphinxadmonition}
+
+\sphinxAtStartPar
+In generale, come sarà chiaro dagli esempi, i vettori di una base naturale:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+dipendono dal punto nello spazio nel quale vengono calcolati \sphinxhyphen{} o in altre parole sono funzioni delle coordinate \(q^i\)
+
+\item {} 
+\sphinxAtStartPar
+non formano una base orto\sphinxhyphen{}normale
+
+\item {} 
+\sphinxAtStartPar
+non hanno lunghezza unitaria
+
+\item {} 
+\sphinxAtStartPar
+non sono omogenei nelle dimensioni, né adimensionali.
+
+\end{itemize}
+\label{ch/vector-calculus/geometry:definition-7}
+\begin{sphinxadmonition}{note}{Definition 28.1.3 (Base fisica)}
+
+
+
+\sphinxAtStartPar
+Nel caso in cui la base naturale sia ortogonale, è possibile definire una \sphinxstylestrong{base fisica} \sphinxhyphen{} orto\sphinxhyphen{}normale con vettori unitari e adimensionali \sphinxhyphen{} tramite un semplice processo di normalizzazione dei vettori della base,
+\begin{equation*}
+\begin{split}\hat{b}_i := \frac{\vec{b}_i}{|\vec{b}_i|} \ .\end{split}
+\end{equation*}\end{sphinxadmonition}
+
+\sphinxAtStartPar
+La definizione di una base fisica, quando possibile, può rendere la rappresentazione di un vettore o di un campo vettoriale più «ordinata», avendo le componenti del vettore le stesse dimensioni fisiche della grandezza che viene rappresentata, poiché i vettori della base fisica sono adimensionali e di lunghezza unitaria \sphinxhyphen{}  e quindi contenenti unicamente l’informazione vettoriale sulla direzione.
+\label{ch/vector-calculus/geometry:example-8}
+\begin{sphinxadmonition}{note}{Example 28.1.6 (Spazio \protect\(E^2\protect\): coordinate cartesiane)}
+
+
+
+\sphinxAtStartPar
+I vettori della base naturale sono
+\begin{equation*}
+\begin{split}\begin{cases}
+  \vec{b}_1 = \frac{\partial \vec{r}}{\partial x} = \frac{\partial }{\partial x} \left( x \hat{x} + y \hat{y} \right) = \hat{x} \\
+  \vec{b}_2 = \frac{\partial \vec{r}}{\partial y} = \frac{\partial }{\partial y} \left( x \hat{x} + y \hat{y} \right) = \hat{y} \\
+\end{cases}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Ricordando le proprietà dei vettori di una base cartesiana \sphinxstylestrong{todo} \sphinxstyleemphasis{link}, è immediato verificare che la base naturale di un sistema di coordinate cartesiane è anche la sua base fisica (adimensionale non\sphinxhyphen{}dimensionale).
+\end{sphinxadmonition}
+\label{ch/vector-calculus/geometry:example-9}
+\begin{sphinxadmonition}{note}{Example 28.1.7 (Spazio \protect\(E^2\protect\): coordinate polari)}
+
+
+
+\sphinxAtStartPar
+I vettori della base naturale sono
+\begin{equation*}
+\begin{split}\begin{cases}
+  \vec{b}_1 = \frac{\partial \vec{r}}{\partial r     } = \frac{\partial }{\partial r     } \left( r \cos \theta \hat{x} + r \sin \theta \hat{y} \right) = \cos \theta \hat{x} + \sin \theta \hat{y} \\
+  \vec{b}_2 = \frac{\partial \vec{r}}{\partial \theta} = \frac{\partial }{\partial \theta} \left( r \cos \theta \hat{x} + r \sin \theta \hat{y} \right) = -r\sin \theta \hat{x} + r \cos \theta\hat{y} \\
+\end{cases}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+E” semplice dimostrare che i due vettori sono ortogonali, ma il vettore \(\vec{b}_2\) non è adimenisonale, e ha modulo \(|\vec{b}_2| = r\). La base fisica \sphinxhyphen{} già introdotto nel capitolo sulla geometrica analitica \sphinxstylestrong{todo} \sphinxstyleemphasis{link} \sphinxhyphen{} è quindi
+\begin{equation*}
+\begin{split}\begin{cases}
+  \hat{r}      = \hat{b}_1 = \cos \theta \hat{x} + \sin \theta \hat{y} \\
+  \hat{\theta} = \frac{\hat{b}_2}{|\vec{b}_2|} = - \sin \theta \hat{x} + \cos \theta \hat{y} \\
+\end{cases}\end{split}
+\end{equation*}\end{sphinxadmonition}
+\label{ch/vector-calculus/geometry:example-10}
+\begin{sphinxadmonition}{note}{Example 28.1.8 (Spazio \protect\(E^3\protect\): coordinate cartesiane)}
+
+
+
+\sphinxAtStartPar
+I vettori della base naturale sono
+\begin{equation*}
+\begin{split}\begin{cases}
+  \vec{b}_1 = \frac{\partial \vec{r}}{\partial x} = \frac{\partial }{\partial x} \left( x \hat{x} + y \hat{y} + z \hat{z} \right) = \hat{x} \\
+  \vec{b}_2 = \frac{\partial \vec{r}}{\partial y} = \frac{\partial }{\partial y} \left( x \hat{x} + y \hat{y} + z \hat{z} \right) = \hat{y} \\
+  \vec{b}_3 = \frac{\partial \vec{r}}{\partial z} = \frac{\partial }{\partial z} \left( x \hat{x} + y \hat{y} + z \hat{z} \right) = \hat{z} \\
+\end{cases}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Ricordando le proprietà dei vettori di una base cartesiana \sphinxstylestrong{todo} \sphinxstyleemphasis{link}, è immediato verificare che la base naturale di un sistema di coordinate cartesiane è anche la sua base fisica (adimensionale non\sphinxhyphen{}dimensionale).
+\end{sphinxadmonition}
+\label{ch/vector-calculus/geometry:example-11}
+\begin{sphinxadmonition}{note}{Example 28.1.9 (Spazio \protect\(E^3\protect\): coordinate cilindriche)}
+
+
+
+\sphinxAtStartPar
+I vettori della base naturale sono
+\begin{equation*}
+\begin{split}\begin{cases}
+  \vec{b}_1 = \frac{\partial \vec{r}}{\partial r     } = \frac{\partial }{\partial r     } \left( r \cos \theta \hat{x} + r \sin \theta \hat{y} + z \hat{z} \right) = \cos \theta \hat{x} + \sin \theta \hat{y} \\
+  \vec{b}_2 = \frac{\partial \vec{r}}{\partial \theta} = \frac{\partial }{\partial \theta} \left( r \cos \theta \hat{x} + r \sin \theta \hat{y} + z \hat{z} \right) = -r\sin \theta \hat{x} + r \cos \theta\hat{y} \\
+  \vec{b}_3 = \frac{\partial \vec{r}}{\partial z     } = \frac{\partial }{\partial z     } \left( r \cos \theta \hat{x} + r \sin \theta \hat{y} + z \hat{z} \right) = \hat{z} \\
+\end{cases}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+E” semplice dimostrare che i tre vettori sono ortogonali, ma il vettore \(\vec{b}_2\) non è adimenisonale, e ha modulo \(|\vec{b}_2| = r\). La base fisica \sphinxhyphen{} già introdotto nel capitolo sulla geometrica analitica \sphinxstylestrong{todo} \sphinxstyleemphasis{link} \sphinxhyphen{} è quindi
+\begin{equation*}
+\begin{split}\begin{cases}
+  \hat{r}      = \hat{b}_1 = \cos \theta \hat{x} + \sin \theta \hat{y} \\
+  \hat{\theta} = \frac{\hat{b}_2}{|\vec{b}_2|} = - \sin \theta \hat{x} + \cos \theta \hat{y} \\
+  \hat{z}      = \hat{b}_3 = \hat{z} \\
+\end{cases}\end{split}
+\end{equation*}\end{sphinxadmonition}
+\label{ch/vector-calculus/geometry:example-12}
+\begin{sphinxadmonition}{note}{Example 28.1.10 (Spazio \protect\(E^3\protect\): coordinate sferiche)}
+
+
+
+\sphinxAtStartPar
+I vettori della base naturale sono
+\begin{equation*}
+\begin{split}\begin{cases}
+  \vec{b}_1 = \frac{\partial \vec{r}}{\partial R     } = \frac{\partial }{\partial R     } \left( R \, \sin \phi \, \cos \theta \, \hat{x} + R \, \sin \phi \, \sin \theta \, \hat{y} + R \, \cos \phi \hat{z} \right) = \sin \phi \, \cos \theta \, \hat{x} + \sin \phi \, \sin \theta \, \hat{y} +  \cos \phi \hat{z} \\
+  \vec{b}_2 = \frac{\partial \vec{r}}{\partial \phi  } = \frac{\partial }{\partial \phi  } \left( R \, \sin \phi \, \cos \theta \, \hat{x} + R \, \sin \phi \, \sin \theta \, \hat{y} + R \, \cos \phi \hat{z} \right) = R \, \cos \phi \, \cos \theta \, \hat{x} + R \, \cos \phi \, \sin \theta \, \hat{y} - R \, \sin \phi \hat{z} \\
+  \vec{b}_3 = \frac{\partial \vec{r}}{\partial \theta} = \frac{\partial }{\partial \theta} \left( R \, \sin \phi \, \cos \theta \, \hat{x} + R \, \sin \phi \, \sin \theta \, \hat{y} + R \, \cos \phi \hat{z} \right) = - R \, \sin \phi \, \sin \theta \, \hat{x} + R \, \sin \phi \, \cos \theta \, \hat{y}
+\end{cases}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+E” semplice dimostrare che i tre vettori sono ortogonali, ma i vettori \(\vec{b}_2\), \(\vec{b}_3\) non sono adimenisonale, e hanno modulo \(|\vec{b}_2| = R\) e \(|\vec{b}_3| = R |\sin \phi|\). La base fisica \sphinxhyphen{} già introdotto nel capitolo sulla geometrica analitica \sphinxstylestrong{todo} \sphinxstyleemphasis{link} \sphinxhyphen{} è quindi
+\begin{equation*}
+\begin{split}\begin{cases}
+  \hat{r}      = \hat{b}_1                     = \sin \phi \, \cos \theta \, \hat{x} + \sin \phi \, \sin \theta \, \hat{y} + \cos \phi \hat{z} \\
+  \hat{\phi  } = \frac{\hat{b}_2}{|\vec{b}_2|} = \cos \phi \, \cos \theta \, \hat{x} + \cos \phi \, \sin \theta \, \hat{y} - \sin \phi \hat{z} \\
+  \hat{\theta} = \frac{\hat{b}_3}{|\vec{b}_3|} =-\sin \theta \, \hat{x} + \cos \theta \, \hat{y}
+\end{cases}\end{split}
+\end{equation*}\end{sphinxadmonition}
+
+
+\subsubsection{Curve coordinate}
+\label{\detokenize{ch/vector-calculus/geometry:curve-coordinate}}\label{\detokenize{ch/vector-calculus/geometry:vector-calculus-geometry-coordinate-lines}}
+
+\subsubsection{Superfici coordinate}
+\label{\detokenize{ch/vector-calculus/geometry:superfici-coordinate}}\label{\detokenize{ch/vector-calculus/geometry:vector-calculus-geometry-coordiante-sufraces}}
+
+\bigskip\hrule\bigskip
+
+
 \sphinxstepscope
 
 
@@ -13974,20 +14218,214 @@ cioè la variazione del parametro \(s\) è uguale alla lunghezza dell’elemento
 \begin{split}\vec{r}'(s) = \hat{t}(s) \ .\end{split}
 \end{equation*}
 
+\subsubsection{Densità}
+\label{\detokenize{ch/vector-calculus/integrals:densita}}\label{\detokenize{ch/vector-calculus/integrals:vector-calculus-integrals-density}}
+\sphinxAtStartPar
+Data una curva \(\gamma\) nello spazio euclideo descritta dall’equazione parametrica
+\begin{equation*}
+\begin{split}\gamma: \vec{r} = \vec{r}_{\gamma}(t) \qquad  , \qquad t \in [t_0, t_1] \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e una funzione scalare \(m(\vec{r})\) definita sui punti della curva, \(\vec{r} \in \gamma\), densità lineare di una proprietà \(M\) additivà, si può calcolare la proprietà \(M\) associata alla linea \(\gamma\) come l’integrale
+\begin{equation*}
+\begin{split}M = \int_{\vec{r} \in \gamma} m(\vec{r}) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+o indicando esplicitamente le dimensioni dell’elemento di linea (e indipendenti dal suo verso), e usando il parametro \(\gamma\) come variabile indipendente del problema,
+\begin{equation*}
+\begin{split}M = \int_{\vec{r} \in \gamma} m (\vec{r}) \, |d \vec{r}| = \int_{t = t_0}^{t_1} m (\vec{r}_{\gamma}(t)) \, |\vec{r}'_{\gamma}(t)| \, dt\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Questo tipo di integrale può essere utilizzato per calcolare la lunghezza di una curva o alcune proprietà additive della curva, di cui la funzione integranda è una densità lineare.
+\label{ch/vector-calculus/integrals:example-0}
+\begin{sphinxadmonition}{note}{Example 28.3.1 (Lunghezza di un quarto di cerchio)}
+
+
+
+\sphinxAtStartPar
+Un arco di circonferenza corrispondente a un quarto di essa può essere rappresentato in forma parametrica come,
+\begin{equation*}
+\begin{split}\gamma: \, \vec{r}_{\gamma}(t) = R \cos t \hat{x}  + R \sin t \hat{y} \ , \qquad t \in \left[ 0, \frac{\pi}{2} \right]\end{split}
+\end{equation*}
+\sphinxAtStartPar
+L’elemento di curva è
+\begin{equation*}
+\begin{split}d \vec{r} = \vec{r}'(t) \, dt = \left( - R \sin t \, \hat{x} + R \cos t \, \hat{y} \right) \, dt \end{split}
+\end{equation*}
+\sphinxAtStartPar
+e il suo modulo vale
+\begin{equation*}
+\begin{split}|d \vec{r}| = R \, |dt| \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+La lunghezza della curva si ottiene con densità di proprietà \(m = 1\), \sphinxstylestrong{todo} e, poiché la parametrizzazione è regolare e con \(t\) crescente per scrivere \(|d t| = d t\) e \(R > 0\),
+\begin{equation*}
+\begin{split}L = \int{\vec{r}\in \gamma} |d \vec{r}| =\int_{t = 0}^{\frac{\pi}{2}} \left|\vec{r}'(t)\right| \, dt =  \int_{t = 0}^{\frac{\pi}{2}} R \, dt = \frac{\pi}{2} \, R \ .\end{split}
+\end{equation*}\end{sphinxadmonition}
+\label{ch/vector-calculus/integrals:example-1}
+\begin{sphinxadmonition}{note}{Example 28.3.2 (Massa di un quarto di cerchio di densità non uniforme)}
+
+
+\end{sphinxadmonition}
+\label{ch/vector-calculus/integrals:example-2}
+\begin{sphinxadmonition}{note}{Example 28.3.3 (Lunghezza di un’elica)}
+
+
+
+\sphinxAtStartPar
+Un’elica di raggio \(R\) e passo \(L\) composta da 2 avvolgimenti può essere rappresentata in forma parametrica come
+\begin{equation*}
+\begin{split}\gamma: \, \vec{r}(t) = R \cos t \, \hat{x} + R \sin t \, \hat{y} + \frac{L}{2\pi} \, t \, \hat{z} \ , \qquad t \in \left[ 0, 4 \pi \right]\end{split}
+\end{equation*}
+\sphinxAtStartPar
+L’elemento di curva è
+\begin{equation*}
+\begin{split}d \vec{r} = \vec{r}'(t) \, dt = \left( - R \sin t \, \hat{x} + R \cos t \, \hat{y} + \frac{L}{2\pi} \, \hat{z} \right) \, dt \end{split}
+\end{equation*}
+\sphinxAtStartPar
+e il suo modulo vale
+\begin{equation*}
+\begin{split}|d \vec{r}| = \sqrt{ R^2 + \left(\frac{L}{2 \pi}\right)^2 } \, |dt| \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+La lunghezza della curva si ottiene con densità di proprietà \(m = 1\), \sphinxstylestrong{todo} e, poiché la parametrizzazione è regolare e con \(t\) crescente per scrivere \(|d t| = d t\) e \(R > 0\),
+\begin{equation*}
+\begin{split}L = \int{\vec{r}\in \gamma} |d \vec{r}| =\int_{t = 0}^{4 \pi} \left|\vec{r}'(t)\right| \, dt =  \int_{t = 0}^{4 \pi}  \sqrt{ R^2 + \left(\frac{L}{2 \pi}\right)^2 } \,  dt = 4 \pi R^2 \sqrt{1 + \left( \frac{L}{2 \pi R}\right)^2}  \ . \end{split}
+\end{equation*}\end{sphinxadmonition}
+\label{ch/vector-calculus/integrals:example-3}
+\begin{sphinxadmonition}{note}{Example 28.3.4 (Massa di un’elica con densità non uniforme)}
+
+
+
+\sphinxAtStartPar
+Si vuole calcolare la massa dell’elica dell’esempio precedente, conoscendo che la sua densità lineare di massa ha una dipendenza di primo grado dal parametro \(t\) nota,
+\begin{equation*}
+\begin{split}m(t) = a + b \, t \ , \qquad t \in \left[ 0, 4 \pi \right]\end{split}
+\end{equation*}
+\sphinxAtStartPar
+con \(a > 0\), \(b > -\frac{a}{4 \pi}\) noti. I vincoli sui parametri rappresentano il vincolo fisico di densità di massa non negativa, \(m(t) > 0\), \(\forall t \in [0, 4 \pi]\).
+
+\sphinxAtStartPar
+…
+
+\sphinxAtStartPar
+La massa dell’elica è
+\begin{equation*}
+\begin{split}\begin{aligned}
+  M & = \int_{\vec{r} \in \gamma} m(\vec{r}) = \\
+    & = \int_{t = 0}^{4 \pi} m(\vec{r}_{\gamma}(t)) \, |\vec{r}'_{\gamma}(t)| \, dt = \\
+    & = \int_{t = 0}^{4 \pi} \left( a + b t \right) \, \sqrt{ R^2 + \left(\frac{L}{2 \pi}\right)^2 } \,  dt =\\
+    & = \left( 4 \pi a + \frac{(4 \pi)^2}{2} b \right) \sqrt{ R^2 + \left(\frac{L}{2 \pi}\right)^2 }   \ .
+\end{aligned}\end{split}
+\end{equation*}\end{sphinxadmonition}
+
+
+\subsubsection{Lavoro e circuitazione}
+\label{\detokenize{ch/vector-calculus/integrals:lavoro-e-circuitazione}}\label{\detokenize{ch/vector-calculus/integrals:vector-calculus-integrals-work}}
+\sphinxAtStartPar
+L’integrale del prodotto scalare tra un campo vettoriale \(\vec{f}(\vec{r})\) definito su una curva e il versore tangente \(\hat{t}(\vec{r})\) (l’elemento \(d \vec{r} = \hat{t} \, ds\) \sphinxstylestrong{todo} \sphinxstyleemphasis{link a lunghezza d’arco}) della curva stessa
+\begin{equation}\label{equation:ch/vector-calculus/integrals:eq:integral:work}
+\begin{split}L_{\gamma}(\vec{f}) = \int_{\vec{r} \in \gamma} \vec{f}(\vec{r}) \cdot \hat{t}(\vec{r}) \ ,\end{split}
+\end{equation}
+\sphinxAtStartPar
+compare in molti ambiti della fisica, o delle scienze in generale, ed è spesso associato al concetto di lavoro compiuto dalla forza o dal campo di forze \(\vec{f}(\vec{r})\) lungo il percorso rappresentato dalla curva \(\gamma\). Esplicitando l’elemento di curva e ipotizzando una parametrizzazinoe regolare
+\begin{equation*}
+\begin{split}\begin{aligned}
+  L_{\gamma}(\vec{f})
+  & = \int_{s \in s_0}^{s_1} \vec{f}(\vec{r}(s)) \cdot \vec{r}'(s) \, ds = \\
+  & = \int_{t \in t_0}^{t_1} \vec{f}(\vec{r}(t)) \cdot \vec{r}'(t) \, dt 
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{todo} \sphinxstyleemphasis{indipendente dalla parametrizzazione della curva}
+\label{ch/vector-calculus/integrals:definition-4}
+\begin{sphinxadmonition}{note}{Definition 28.3.1 (Circuitazione)}
+
+
+
+\sphinxAtStartPar
+L’integrale del lavoro \eqref{equation:ch/vector-calculus/integrals:eq:integral:work} lungo una curva chiusa \(\gamma\) viene definito circuitazione del campo \(\vec{f}\) lungo la linea \(\gamma\).
+\end{sphinxadmonition}
+\label{ch/vector-calculus/integrals:example-5}
+\begin{sphinxadmonition}{note}{Example 28.3.5}
+
+
+\end{sphinxadmonition}
+
+
+\paragraph{Campi conservativi}
+\label{\detokenize{ch/vector-calculus/integrals:campi-conservativi}}\label{\detokenize{ch/vector-calculus/integrals:vector-calculus-integrals-work-conservative}}
+\sphinxAtStartPar
+In alcuni casi particolari, il valore di questo integrale non dipende dalla curva \(\gamma\), ma solo dai suoi punti estremi. Campi di questo \(\vec{f}(\vec{r})\) di questo tipo compaiono in fisica nella definizione di campi di forze conservative, che ammettono potenziale.
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo} \sphinxstyleemphasis{legare bene con il resto; discutere qui? In altre parti? Ragionare sui domini?}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+campi conservativi in un dominio hanno circuitazione nulla lungo ogni percorso appartenente al dominio
+
+\end{itemize}
+\label{ch/vector-calculus/integrals:example-6}
+\begin{sphinxadmonition}{note}{Example 28.3.6}
+
+
+\end{sphinxadmonition}
+
+
 \subsection{Integrali di superficie}
 \label{\detokenize{ch/vector-calculus/integrals:integrali-di-superficie}}\label{\detokenize{ch/vector-calculus/integrals:vector-calculus-integrals-surface}}
 \sphinxAtStartPar
-Nello spazio 3\sphinxhyphen{}dimensionale, la superficie elementare con versore normale \(\hat{n} \, dS\) di una superficie descritta dalle due coordinate \(\{ q^i \}_{i=1:2}\), \(\vec{r}(q^1, q^2)\), può essere espressa in funzione degli incrementi delle coordinate e del prodotto vettoriale delle derivate parziali,
+Nello spazio 3\sphinxhyphen{}dimensionale, una superficie può essere parametrizzata con due coordinate \((q^1, q^2)\) e i suoi punti possono essere rappresentati da una funzione di queste due coordinate,
 \begin{equation*}
-\begin{split}\hat{n} \, d S = \partial_1 \vec{r} \times \partial_2 \vec{r} \, dq^1 \, dq^2 \ .\end{split}
+\begin{split}S: \, \vec{r} = \vec{r}_S(q^1, q^2) \qquad , \qquad \left(q^1, q^2 \right) \in Q \ .\end{split}
 \end{equation*}
+\sphinxAtStartPar
+Ricordando il significato geometrico del {\hyperref[\detokenize{ch/algebra/vector-algebra-euclidean-space:math-hs-algebra-vector-euclidean-space-vector-product}]{\sphinxcrossref{\DUrole{std,std-ref}{prodotto vettoriale tra due vettori in spazi euclidei}}}}, l’elemento infinitesimo di questa superficie con versore normale, \(\hat{n} \, dS\), di una superficie descritta dalle due coordinate \(\{ q^i \}_{i=1:2}\), \(\vec{r}(q^1, q^2)\) e costruita con gli incrementi parziali,
+\begin{equation*}
+\begin{split}\hat{n} \, d S = \frac{\partial \vec{r}}{\partial q^1} \times \frac{\partial \vec{r}}{\partial q^2} \, dq^1 \, dq^2 \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+L’area dell’elemento infinitesimo di superficie è quindi
+\begin{equation*}
+\begin{split}d S := \left| \hat{n} d S \right| = \left| \frac{\partial \vec{r}}{\partial q^1} \times \frac{\partial \vec{r}}{\partial q^2} \, dq^1 \, dq^2  \right| \ .\end{split}
+\end{equation*}
+
+\subsubsection{Densità}
+\label{\detokenize{ch/vector-calculus/integrals:vector-calculus-integrals-surface-density}}\label{\detokenize{ch/vector-calculus/integrals:id1}}
+\sphinxAtStartPar
+Data una superficie \(S: \, \vec{r} = \vec{r}_S(q^1, q^2)\) e una funzione \(\sigma(\vec{r})\) definita sui punti della superficie \(S\), questa può essere interpretata come densità di superficie di una proprietà \(M\) additiva associata alla superficie \(S\) definita come l’integrale
+\begin{equation*}
+\begin{split}M = \int_{\vec{r} \in S} \sigma(\vec{r}) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+o indicando esplicitamente l’elemento di superficie, e ipotizzando una parametrizzazione regolare con parametri crescenti \(|d q^i| = d q^i > 0\),
+\begin{equation*}
+\begin{split}M = \int_{\vec{r} \in S} \sigma(\vec{r}) d S = \int_{(q^1,q^2) \in Q} \sigma\left( \vec{r}_S(q^1, q^2) \right) \left|\frac{\partial \vec{r}_S}{\partial q^1}(q^1,q^2) \times \frac{\partial \vec{r}_S}{\partial q^2}(q^1,q^2) \right| \, dq^1 \, dq^2\end{split}
+\end{equation*}
+
+\subsubsection{Flusso}
+\label{\detokenize{ch/vector-calculus/integrals:flusso}}\label{\detokenize{ch/vector-calculus/integrals:vector-calculus-integrals-surface-flux}}
+\sphinxAtStartPar
+L’integrale del prodotto scalare tra un campo vettoriale \(\vec{f}(\vec{r})\) definito su una superficice \(S\) e il versore normale \(\hat{n}\) alla superficie
+\begin{equation}\label{equation:ch/vector-calculus/integrals:eq:integral:flux}
+\begin{split}\Phi_{S}(\vec{f}) = \int_{\vec{r} \in S} \vec{f}(\vec{r}) \cdot \hat{n}(\vec{r}) \ ,\end{split}
+\end{equation}
+\sphinxAtStartPar
+compare in molti ambiti della fisica, o delle scienze in generale, e viene definito \sphinxstylestrong{flusso} del campo vettoriale \(\vec{f}(\vec{r})\) attraverso la superficie \(S\). Esplicitando l’elemento di superficie e ipotizzando una parametrizzazione regolare con parametri crescenti e coerenti con la direzione desiderata del versore normale (orientazione della superficie),
+\begin{equation}\label{equation:ch/vector-calculus/integrals:eq:integral:flux:coords}
+\begin{split}\Phi_{S}(\vec{f}) = \int_{(q^1, q^2) \in Q} \vec{f}(\vec{r}_S(q^1, q^2)) \cdot \frac{\partial \vec{r}}{\partial q^1} \times \frac{\partial \vec{r}}{\partial q^2} \, d q^1 \, d q^2 \ ,\end{split}
+\end{equation}
 
 \subsection{Integrali di volume}
 \label{\detokenize{ch/vector-calculus/integrals:integrali-di-volume}}\label{\detokenize{ch/vector-calculus/integrals:vector-calculus-integrals-volume}}
 \sphinxAtStartPar
-Nello spazio 3\sphinxhyphen{}dimensionale i cui punti sono descritti dalle coordinate \(\{ q^i \}_{i=1:3}\), \(\vec{r}(q^1, q^2, q^3)\), il volume elementare \(dV\) può essere espresso in funzione delle variazioni delle coordinate \(d q^1\), \(d q^2\), \(d q^3\) e del prodotto misto delle derivate parziali,
+Nello spazio 3\sphinxhyphen{}dimensionale i cui punti sono descritti dalle coordinate \(\{ q^i \}_{i=1:3}\), \(\vec{r}(q^1, q^2, q^3)\), il volume elementare \(dV\) costruito con i vettori degli incrementi parziali, può essere espresso in funzione delle variazioni delle coordinate \(d q^1\), \(d q^2\), \(d q^3\) e del prodotto misto delle derivate parziali,
+
+\sphinxAtStartPar
+Ricordando il significato geometrico del {\hyperref[\detokenize{ch/algebra/vector-algebra-euclidean-space:math-hs-algebra-vector-euclidean-space-mixed-product}]{\sphinxcrossref{\DUrole{std,std-ref}{prodotto misto tra tre vettori in spazi euclidei}}}}, l’elemento infinitesimo di un volume descritto dalle coordinate \(\left( q^i \right)_{i=1:n}\) è
 \begin{equation*}
-\begin{split}dV = \left| \partial_1 \vec{r} \cdot \partial_2 \vec{r} \times \partial_3 \vec{r} \right| \, d q^1 \, d q^2 \, d q^3 \ .\end{split}
+\begin{split}dV = \left| \frac{\partial \vec{r}}{\partial q^1} \cdot \frac{\partial \vec{r}}{\partial q^2} \times \frac{\partial \vec{r}}{\partial q^3} \right| \, d q^1 \, d q^2 \, d q^3 \ .\end{split}
 \end{equation*}
 \sphinxAtStartPar
 Ricordando le definizioni di {\hyperref[\detokenize{ch/analytic_geometry/analytic_geometry_3d/points:geometry-analytic-3d-coordinates-cartesian}]{\sphinxcrossref{\DUrole{std,std-ref}{coordiante cartesiane}}}}, {\hyperref[\detokenize{ch/analytic_geometry/analytic_geometry_3d/points:geometry-analytic-3d-coordinates-cylindrical}]{\sphinxcrossref{\DUrole{std,std-ref}{coordinate cilindriche}}}} e {\hyperref[\detokenize{ch/analytic_geometry/analytic_geometry_3d/points:geometry-analytic-3d-coordinates-spherical}]{\sphinxcrossref{\DUrole{std,std-ref}{coordiante sferiche}}}}, è possibile dimostrare che l’espressione dell’elemento di volume in queste coordinate è
@@ -13997,8 +14435,8 @@ Ricordando le definizioni di {\hyperref[\detokenize{ch/analytic_geometry/analyti
   d V & = R dR \, d\theta \, dz                   & \qquad \text{(coordinate cilindriche)} \\
   d V & = r^2 \sin \phi \, dr \, d\phi \, d\theta & \qquad \text{(coordinate sferiche)}
 \end{aligned}\end{split}
-\end{equation*}\label{ch/vector-calculus/integrals:example-0}
-\begin{sphinxadmonition}{note}{Example 28.3.1 (Elemento di volume in coordinate cartesiane)}
+\end{equation*}\label{ch/vector-calculus/integrals:example-7}
+\begin{sphinxadmonition}{note}{Example 28.3.7 (Elemento di volume in coordinate cartesiane)}
 
 
 \begin{equation*}
@@ -14012,8 +14450,8 @@ Ricordando le definizioni di {\hyperref[\detokenize{ch/analytic_geometry/analyti
   & = dx \, dy \, dz \ .
 \end{aligned}\end{split}
 \end{equation*}\end{sphinxadmonition}
-\label{ch/vector-calculus/integrals:example-1}
-\begin{sphinxadmonition}{note}{Example 28.3.2 (Elemento di volume in coordinate cilindriche)}
+\label{ch/vector-calculus/integrals:example-8}
+\begin{sphinxadmonition}{note}{Example 28.3.8 (Elemento di volume in coordinate cilindriche)}
 
 
 \begin{equation*}
@@ -14031,8 +14469,8 @@ Ricordando le definizioni di {\hyperref[\detokenize{ch/analytic_geometry/analyti
   & = R \, dR \, d \theta \, dz 
 \end{aligned}\end{split}
 \end{equation*}\end{sphinxadmonition}
-\label{ch/vector-calculus/integrals:example-2}
-\begin{sphinxadmonition}{note}{Example 28.3.3 (Elemento di volume in coordinate sferiche)}
+\label{ch/vector-calculus/integrals:example-9}
+\begin{sphinxadmonition}{note}{Example 28.3.9 (Elemento di volume in coordinate sferiche)}
 
 
 \begin{equation*}
@@ -14052,7 +14490,7 @@ Ricordando le definizioni di {\hyperref[\detokenize{ch/analytic_geometry/analyti
 
 
 \subsection{Teoremi}
-\label{\detokenize{ch/vector-calculus/integrals:teoremi}}\label{\detokenize{ch/vector-calculus/integrals:vector-calculus-integrals-theorems}}\label{ch/vector-calculus/integrals:theorem-3}
+\label{\detokenize{ch/vector-calculus/integrals:teoremi}}\label{\detokenize{ch/vector-calculus/integrals:vector-calculus-integrals-theorems}}\label{ch/vector-calculus/integrals:theorem-10}
 \begin{sphinxadmonition}{note}{Theorem 28.3.1 (Teorema del gradiente)}
 
 
@@ -14063,7 +14501,7 @@ Per campi scalari \(f(\vec{r})\) sufficientemente regolari nel dominio \(V \subs
 \begin{split}\int_{V} \nabla f = \oint_{\partial V} f \hat{n} \ .\end{split}
 \end{equation}\end{sphinxadmonition}
 \label{ch/vector-calculus/integrals:thm-gradient-1}
-\begin{sphinxadmonition}{note}{Example 28.3.4 (Teorema del gradiente)}
+\begin{sphinxadmonition}{note}{Example 28.3.10 (Teorema del gradiente)}
 
 
 
@@ -14113,11 +14551,11 @@ e
 \end{aligned}\end{split}
 \end{equation*}\end{sphinxadmonition}
 \label{ch/vector-calculus/integrals:thm-gradient-2}
-\begin{sphinxadmonition}{note}{Example 28.3.5 (Teorema del gradiente)}
+\begin{sphinxadmonition}{note}{Example 28.3.11 (Teorema del gradiente)}
 
 
 \end{sphinxadmonition}
-\label{ch/vector-calculus/integrals:theorem-6}
+\label{ch/vector-calculus/integrals:theorem-13}
 \begin{sphinxadmonition}{note}{Theorem 28.3.2 (Teorema della divergenza)}
 
 
@@ -14128,16 +14566,16 @@ Per campi vettoriali \(\vec{f}(\vec{r})\) sufficientemente regolari nel dominio 
 \begin{split}\int_{V} \nabla \cdot \vec{f} = \oint_{\partial V} \vec{f} \cdot \hat{n} \ .\end{split}
 \end{equation}\end{sphinxadmonition}
 \label{ch/vector-calculus/integrals:thm-divergence-1}
-\begin{sphinxadmonition}{note}{Example 28.3.6 (Teorema della divergenza)}
+\begin{sphinxadmonition}{note}{Example 28.3.12 (Teorema della divergenza)}
 
 
 \end{sphinxadmonition}
 \label{ch/vector-calculus/integrals:thm-divergence-2}
-\begin{sphinxadmonition}{note}{Example 28.3.7 (Teorema della divergenza)}
+\begin{sphinxadmonition}{note}{Example 28.3.13 (Teorema della divergenza)}
 
 
 \end{sphinxadmonition}
-\label{ch/vector-calculus/integrals:theorem-9}
+\label{ch/vector-calculus/integrals:theorem-16}
 \begin{sphinxadmonition}{note}{Theorem 28.3.3 (Teorema del rotore)}
 
 
@@ -14148,12 +14586,12 @@ Per campi vettoriali \(\vec{f}(\vec{r})\) sufficientemente regolari sulla superf
 \begin{split}\int_{S} \nabla \times \vec{f} \cdot \hat{n} = \oint_{\partial S} \vec{f} \cdot \hat{t} \ .\end{split}
 \end{equation}\end{sphinxadmonition}
 \label{ch/vector-calculus/integrals:thm-curl-1}
-\begin{sphinxadmonition}{note}{Example 28.3.8 (Teorema del rotore)}
+\begin{sphinxadmonition}{note}{Example 28.3.14 (Teorema del rotore)}
 
 
 \end{sphinxadmonition}
 \label{ch/vector-calculus/integrals:thm-curl-2}
-\begin{sphinxadmonition}{note}{Example 28.3.9 (Teorema della rotore)}
+\begin{sphinxadmonition}{note}{Example 28.3.15 (Teorema della rotore)}
 
 
 \end{sphinxadmonition}
@@ -14287,7 +14725,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-09 feb 2025
+11 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -14421,6 +14859,15 @@ RL: ottimizzazione/controllo
 \bigletter{definition\sphinxhyphen{}3}
 \item\relax\sphinxstyleindexentry{definition\sphinxhyphen{}3}\sphinxstyleindexextra{ch/multivariable\sphinxhyphen{}calculus/derivatives}\sphinxstyleindexpageref{ch/multivariable-calculus/derivatives:\detokenize{definition-3}}
 \indexspace
+\bigletter{definition\sphinxhyphen{}4}
+\item\relax\sphinxstyleindexentry{definition\sphinxhyphen{}4}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/vector-calculus/integrals:\detokenize{definition-4}}
+\indexspace
+\bigletter{definition\sphinxhyphen{}6}
+\item\relax\sphinxstyleindexentry{definition\sphinxhyphen{}6}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/geometry}\sphinxstyleindexpageref{ch/vector-calculus/geometry:\detokenize{definition-6}}
+\indexspace
+\bigletter{definition\sphinxhyphen{}7}
+\item\relax\sphinxstyleindexentry{definition\sphinxhyphen{}7}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/geometry}\sphinxstyleindexpageref{ch/vector-calculus/geometry:\detokenize{definition-7}}
+\indexspace
 \bigletter{example\sphinxhyphen{}0}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}0}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/vector-calculus/integrals:\detokenize{example-0}}
 \indexspace
@@ -14428,13 +14875,13 @@ RL: ottimizzazione/controllo
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}1}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/vector-calculus/integrals:\detokenize{example-1}}
 \indexspace
 \bigletter{example\sphinxhyphen{}10}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}10}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{example-10}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}10}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/geometry}\sphinxstyleindexpageref{ch/vector-calculus/geometry:\detokenize{example-10}}
 \indexspace
 \bigletter{example\sphinxhyphen{}11}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}11}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{example-11}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}11}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/geometry}\sphinxstyleindexpageref{ch/vector-calculus/geometry:\detokenize{example-11}}
 \indexspace
 \bigletter{example\sphinxhyphen{}12}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}12}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{example-12}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}12}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/geometry}\sphinxstyleindexpageref{ch/vector-calculus/geometry:\detokenize{example-12}}
 \indexspace
 \bigletter{example\sphinxhyphen{}13}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}13}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{example-13}}
@@ -14455,22 +14902,25 @@ RL: ottimizzazione/controllo
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}2}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/vector-calculus/integrals:\detokenize{example-2}}
 \indexspace
 \bigletter{example\sphinxhyphen{}3}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}3}\sphinxstyleindexextra{ch/algebra/real\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/real-algebra:\detokenize{example-3}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}3}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/vector-calculus/integrals:\detokenize{example-3}}
+\indexspace
+\bigletter{example\sphinxhyphen{}4}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}4}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/geometry}\sphinxstyleindexpageref{ch/vector-calculus/geometry:\detokenize{example-4}}
 \indexspace
 \bigletter{example\sphinxhyphen{}5}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}5}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{example-5}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}5}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/vector-calculus/integrals:\detokenize{example-5}}
 \indexspace
 \bigletter{example\sphinxhyphen{}6}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}6}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{example-6}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}6}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/vector-calculus/integrals:\detokenize{example-6}}
 \indexspace
 \bigletter{example\sphinxhyphen{}7}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}7}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{example-7}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}7}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/vector-calculus/integrals:\detokenize{example-7}}
 \indexspace
 \bigletter{example\sphinxhyphen{}8}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}8}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{example-8}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}8}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/vector-calculus/integrals:\detokenize{example-8}}
 \indexspace
 \bigletter{example\sphinxhyphen{}9}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}9}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{example-9}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}9}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/vector-calculus/integrals:\detokenize{example-9}}
 \indexspace
 \bigletter{infinitesimal\sphinxhyphen{}calculus:integrals:def:riemann\sphinxhyphen{}integral}
 \item\relax\sphinxstyleindexentry{infinitesimal\sphinxhyphen{}calculus:integrals:def:riemann\sphinxhyphen{}integral}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{infinitesimal-calculus:integrals:def:riemann-integral}}
@@ -14535,14 +14985,17 @@ RL: ottimizzazione/controllo
 \bigletter{set\sphinxhyphen{}fun\sphinxhyphen{}def}
 \item\relax\sphinxstyleindexentry{set\sphinxhyphen{}fun\sphinxhyphen{}def}\sphinxstyleindexextra{ch/set}\sphinxstyleindexpageref{ch/set:\detokenize{set-fun-def}}
 \indexspace
+\bigletter{theorem\sphinxhyphen{}10}
+\item\relax\sphinxstyleindexentry{theorem\sphinxhyphen{}10}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/vector-calculus/integrals:\detokenize{theorem-10}}
+\indexspace
+\bigletter{theorem\sphinxhyphen{}13}
+\item\relax\sphinxstyleindexentry{theorem\sphinxhyphen{}13}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/vector-calculus/integrals:\detokenize{theorem-13}}
+\indexspace
+\bigletter{theorem\sphinxhyphen{}16}
+\item\relax\sphinxstyleindexentry{theorem\sphinxhyphen{}16}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/vector-calculus/integrals:\detokenize{theorem-16}}
+\indexspace
 \bigletter{theorem\sphinxhyphen{}3}
-\item\relax\sphinxstyleindexentry{theorem\sphinxhyphen{}3}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/vector-calculus/integrals:\detokenize{theorem-3}}
-\indexspace
-\bigletter{theorem\sphinxhyphen{}6}
-\item\relax\sphinxstyleindexentry{theorem\sphinxhyphen{}6}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/vector-calculus/integrals:\detokenize{theorem-6}}
-\indexspace
-\bigletter{theorem\sphinxhyphen{}9}
-\item\relax\sphinxstyleindexentry{theorem\sphinxhyphen{}9}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/vector-calculus/integrals:\detokenize{theorem-9}}
+\item\relax\sphinxstyleindexentry{theorem\sphinxhyphen{}3}\sphinxstyleindexextra{ch/multivariable\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/multivariable-calculus/integrals:\detokenize{theorem-3}}
 \indexspace
 \bigletter{thm\sphinxhyphen{}curl\sphinxhyphen{}1}
 \item\relax\sphinxstyleindexentry{thm\sphinxhyphen{}curl\sphinxhyphen{}1}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/vector-calculus/integrals:\detokenize{thm-curl-1}}

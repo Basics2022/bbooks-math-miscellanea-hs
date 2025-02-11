@@ -384,6 +384,7 @@ con $a^2 + b^2 = 1$ rappresenta una rotazione dei vettori attorno all'origine.
 
 ```{exercise} Proiezione ortogonale lungo una direzione data
 :class: dropdown
+:label: matrix-projection-parallel
 
 Interpretando gli elementi di un vettore colonna $\mathbf{x} \in \mathbb{R}^2$ come le componenti cartesiane del vettore $\vec{x}$ in un piano, la matrice $\mathbf{A} \in \mathbb{R}^{2,2}$ 
 
@@ -401,6 +402,7 @@ rappresenta una proiezione ortogonale dei punti del piano sulla retta passante p
 
 ```{exercise} Proiezione ortogonale nella direzione perpendicolare a una direzione data
 :class: dropdown
+:label: matrix-projection-perpendicular
 
 Interpretando gli elementi di un vettore colonna $\mathbf{x} \in \mathbb{R}^2$ come le componenti cartesiane del vettore $\vec{x}$ in un piano, la matrice $\mathbf{A} \in \mathbb{R}^{2,2}$ 
 
