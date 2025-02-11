@@ -13700,9 +13700,10 @@ Questo capitolo è un’introduzione al calcolo vettoriale in spazi euclidei, es
 
 \sphinxAtStartPar
 Il capitolo è suddiviso nelle seguenti sezioni:
+\subsubsection*{\sphinxstylestrong{Cenni di geometria differenziale e descrizione dello spazio con coordinate.}}
 
 \sphinxAtStartPar
-{\hyperref[\detokenize{ch/vector-calculus/geometry:vector-calculus-geometry}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Descrizione dello spazio con coordinate.}}}}} Lo spazio e le entità geometriche in esso possono essere rappresentate tramite l’uso di un \sphinxstylestrong{sistema di coordinate}. Vengono presentati alcuni sistemi di coordinate comuni (cartesiane e polari in \(E^2\), cartesiane, cilindriche, sferiche in \(E^3\)) apppoggiandosi ai sistemi di coordinate cartesiane. Vengono introdotti concetti geometrici indotti dalla scelta del sistema di coordinate: i vettori di una base locale naturale, le curve coordinate e le superfici coordinate.
+Lo spazio e le entità geometriche in esso possono essere rappresentate tramite l’uso di un \sphinxstylestrong{sistema di coordinate}. Vengono presentati alcuni sistemi di coordinate comuni (cartesiane e polari in \(E^2\), cartesiane, cilindriche, sferiche in \(E^3\)) apppoggiandosi ai sistemi di coordinate cartesiane. Vengono introdotti concetti geometrici indotti dalla scelta del sistema di coordinate: i vettori di una base locale naturale, le curve coordinate e le superfici coordinate.
 
 \sphinxAtStartPar
 Vengono dati dei fondamenti di geometria differenziale, limitandosi ai concetti che risulteranno utili in seguito nella rappresentazione di curve, superfici e volumi negli spazi euclidei: vengono fornite le espressioni degli elementi infinitesimi di curva, superficie e volume rispetto a sistemi di coordinate generiche; vengono fornite le espressioni dei versori tangenti alle curve e normali alle superfici; questi enti geometrici risultano utili nel calcolo degli integrali che coninvolgono densità o negli integrali di lavoro o di flusso, che verranno discussi nella sezione sugli {\hyperref[\detokenize{ch/vector-calculus/integrals:vector-calculus-integrals}]{\sphinxcrossref{\DUrole{std,std-ref}{integrali su spazi euclidei}}}}.
@@ -13715,12 +13716,10 @@ Dal punto di vista concettuale, si mette in evidenza da una parte un «criterio 
 
 \sphinxAtStartPar
  \sphinxstylestrong{todo} \sphinxstyleemphasis{Tenendo bene in mente la definizione dei sistemi di coordiante utilizzati per la rappresentazione parametrica dello spazio e degli elementi geometrici in esso, il calcolo vettoriale può essere ricondotto al calcolo multi\sphinxhyphen{}variabile}
+\subsubsection*{\sphinxstylestrong{Integrali su domini in spazi euclidei.}}
 
 \sphinxAtStartPar
-{\hyperref[\detokenize{ch/vector-calculus/derivatives:vector-calculus-derivatives}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Operatori differenziali in spazi euclidei.}}}}} Viene esteso il concetto di derivata (\sphinxstylestrong{todo} \sphinxstyleemphasis{introdotto inizialmente per funzioni reali, e poi per funzioni di più variabili}) e applicato ai campi; vengono presentati alcuni operatori che compaiono frequentemente nell’ambito delle scienze e dal chiaro significato fisico, riconducibili alla derivata direzionale, circuitazione e flusso.
-
-\sphinxAtStartPar
-{\hyperref[\detokenize{ch/vector-calculus/integrals:vector-calculus-integrals}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Integrali su spazi euclidei.}}}}} Viene esteso il concetto di integrale a funzioni definite su domini \sphinxhyphen{} luoghi geometrici \sphinxhyphen{} contenuti nello spazio euclideo. Vengono introdotti alcuni integrali che compaiono frequentemente nell’ambito delle scienze \sphinxhyphen{} integrali di linea (densità e lavoro), integrali di superficie (densità e flusso), integrali di volume (densità). Viene mostrato il procedimento pratico per calcolare tali integrali grazie all’uso di coordinate, tramite esempi. Questi integrali rappresentano lo strumento matematico necessario per alcune applicazioni che riguardano problemi continui, come ad esempio:
+Viene esteso il concetto di integrale a funzioni definite su domini \sphinxhyphen{} luoghi geometrici \sphinxhyphen{} contenuti nello spazio euclideo. Vengono introdotti alcuni integrali che compaiono frequentemente nell’ambito delle scienze \sphinxhyphen{} integrali di linea (densità e lavoro), integrali di superficie (densità e flusso), integrali di volume (densità). Viene mostrato il procedimento pratico per calcolare tali integrali grazie all’uso di coordinate, tramite esempi. Questi integrali rappresentano lo strumento matematico necessario per alcune applicazioni che riguardano problemi continui, come ad esempio:
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
@@ -13735,10 +13734,23 @@ calcolo di proprietà meccaniche di un sistema, ad esempio le proprietà inerzia
 calcolo di integrali ricorrenti in fisica: lavoro di una forza, circuitazione di un campo lungo una linea chiusa, flusso di un campo attraverso una superficie.
 
 \end{itemize}
+\subsubsection*{\sphinxstylestrong{Operatori differenziali in spazi euclidei.}}
 
 \sphinxAtStartPar
-\sphinxstyleemphasis{Infine teorema gradiente, divergenza, rotore}.
+Viene esteso il concetto di derivata (\sphinxstylestrong{todo} \sphinxstyleemphasis{introdotto inizialmente per funzioni reali, e poi per funzioni di più variabili}) e applicato ai campi; vengono presentati alcuni operatori che compaiono frequentemente nell’ambito delle scienze e dal chiaro significato fisico, riconducibili alla derivata direzionale, circuitazione e flusso.
+\subsubsection*{\sphinxstylestrong{Teorema di Stokes.}}
 
+\sphinxAtStartPar
+Vengono presentati dei teoremi che coinvolgono l’integrale di operatori differenziali, e consentono di trasformare particolari integrali di superficie \sphinxhyphen{} tra cui l’integrale di \sphinxstylestrong{flusso} \sphinxhyphen{} in integrali di volume (e viceversa), e particolari integrali di linea \sphinxhyphen{} tra cui l’integrale di \sphinxstylestrong{circuitazione} \sphinxhyphen{} in integrali di superficie (e viceversa). I teoremi del gradiente, della divergenza e del rotore che vengono presentati nell’ultima sezione di questo capitolo  sono diverse manifestazioni di un teorema più generale, il \sphinxstylestrong{teorema di Stokes}, che qui non verrà presentato nella sua forma più generale%
+\begin{footnote}[1]\sphinxAtStartFootnote
+La presentazione della forma generale del teorema di Stokes è ben al di là dello scopo di questo materiale, che si è già spinto in là a sufficienza.
+%
+\end{footnote}.
+
+
+
+
+\bigskip\hrule\bigskip
 
 
 \sphinxstepscope

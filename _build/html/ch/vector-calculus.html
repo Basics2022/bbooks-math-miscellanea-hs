@@ -501,20 +501,52 @@ document.write(`
 <span id="vector-calculus"></span><h1><span class="section-number">28. </span>Introduzione al calcolo vettoriale su spazi euclidei<a class="headerlink" href="#introduzione-al-calcolo-vettoriale-su-spazi-euclidei" title="Permalink to this heading">#</a></h1>
 <p>Questo capitolo è un’introduzione al calcolo vettoriale in spazi euclidei, estendendo gli strumenti del calcolo alle funzioni (scalari o vettoriali) definite in uno <a class="reference internal" href="analytic_geometry/euclidean_space.html#geometry-analytic-euclidean-space"><span class="std std-ref">spazio euclideo</span></a>, limitandosi al caso di <span class="math notranslate nohighlight">\(E^2\)</span> ed <span class="math notranslate nohighlight">\(E^3\)</span>.</p>
 <p>Il capitolo è suddiviso nelle seguenti sezioni:</p>
-<p><a class="reference internal" href="vector-calculus/geometry.html#vector-calculus-geometry"><span class="std std-ref"><strong>Descrizione dello spazio con coordinate.</strong></span></a> Lo spazio e le entità geometriche in esso possono essere rappresentate tramite l’uso di un <strong>sistema di coordinate</strong>. Vengono presentati alcuni sistemi di coordinate comuni (cartesiane e polari in <span class="math notranslate nohighlight">\(E^2\)</span>, cartesiane, cilindriche, sferiche in <span class="math notranslate nohighlight">\(E^3\)</span>) apppoggiandosi ai sistemi di coordinate cartesiane. Vengono introdotti concetti geometrici indotti dalla scelta del sistema di coordinate: i vettori di una base locale naturale, le curve coordinate e le superfici coordinate.</p>
-<p>Vengono dati dei fondamenti di geometria differenziale, limitandosi ai concetti che risulteranno utili in seguito nella rappresentazione di curve, superfici e volumi negli spazi euclidei: vengono fornite le espressioni degli elementi infinitesimi di curva, superficie e volume rispetto a sistemi di coordinate generiche; vengono fornite le espressioni dei versori tangenti alle curve e normali alle superfici; questi enti geometrici risultano utili nel calcolo degli integrali che coninvolgono densità o negli integrali di lavoro o di flusso, che verranno discussi nella sezione sugli <a class="reference internal" href="vector-calculus/integrals.html#vector-calculus-integrals"><span class="std std-ref">integrali su spazi euclidei</span></a>.</p>
-<p>Infine, viene introdotto il concetto di <strong>campo</strong> - funzioni definite nello spazio - e la loro rappresentazione come funzione delle coordinate usate per dscrivere lo spazio.</p>
-<p><span style="color:red">Dal punto di vista concettuale, si mette in evidenza da una parte un «criterio di semplicità» per la scelta di un sistema di coordinate per rappresentare un fenomeno o risolvere un problema, e dall’altra il concetto di <strong>invarianza rispetto alla scelta del sistema di coordinate</strong> dello spazio e delle funzioni definite in esso.</span></p>
-<p><span style="color:red"> <strong>todo</strong> <em>Tenendo bene in mente la definizione dei sistemi di coordiante utilizzati per la rappresentazione parametrica dello spazio e degli elementi geometrici in esso, il calcolo vettoriale può essere ricondotto al calcolo multi-variabile</em></span></p>
-<p><a class="reference internal" href="vector-calculus/derivatives.html#vector-calculus-derivatives"><span class="std std-ref"><strong>Operatori differenziali in spazi euclidei.</strong></span></a> Viene esteso il concetto di derivata (<strong>todo</strong> <em>introdotto inizialmente per funzioni reali, e poi per funzioni di più variabili</em>) e applicato ai campi; vengono presentati alcuni operatori che compaiono frequentemente nell’ambito delle scienze e dal chiaro significato fisico, riconducibili alla derivata direzionale, circuitazione e flusso.</p>
-<p><a class="reference internal" href="vector-calculus/integrals.html#vector-calculus-integrals"><span class="std std-ref"><strong>Integrali su spazi euclidei.</strong></span></a> Viene esteso il concetto di integrale a funzioni definite su domini - luoghi geometrici - contenuti nello spazio euclideo. Vengono introdotti alcuni integrali che compaiono frequentemente nell’ambito delle scienze - integrali di linea (densità e lavoro), integrali di superficie (densità e flusso), integrali di volume (densità). Viene mostrato il procedimento pratico per calcolare tali integrali grazie all’uso di coordinate, tramite esempi. Questi integrali rappresentano lo strumento matematico necessario per alcune applicazioni che riguardano problemi continui, come ad esempio:</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<a class="reference internal" href="vector-calculus/geometry.html#vector-calculus-geometry"><span class="std std-ref"><strong>Cenni di geometria differenziale e descrizione dello spazio con coordinate.</strong></span></a><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Lo spazio e le entità geometriche in esso possono essere rappresentate tramite l’uso di un <strong>sistema di coordinate</strong>. Vengono presentati alcuni sistemi di coordinate comuni (cartesiane e polari in <span class="math notranslate nohighlight">\(E^2\)</span>, cartesiane, cilindriche, sferiche in <span class="math notranslate nohighlight">\(E^3\)</span>) apppoggiandosi ai sistemi di coordinate cartesiane. Vengono introdotti concetti geometrici indotti dalla scelta del sistema di coordinate: i vettori di una base locale naturale, le curve coordinate e le superfici coordinate.</p>
+<p class="sd-card-text">Vengono dati dei fondamenti di geometria differenziale, limitandosi ai concetti che risulteranno utili in seguito nella rappresentazione di curve, superfici e volumi negli spazi euclidei: vengono fornite le espressioni degli elementi infinitesimi di curva, superficie e volume rispetto a sistemi di coordinate generiche; vengono fornite le espressioni dei versori tangenti alle curve e normali alle superfici; questi enti geometrici risultano utili nel calcolo degli integrali che coninvolgono densità o negli integrali di lavoro o di flusso, che verranno discussi nella sezione sugli <a class="reference internal" href="vector-calculus/integrals.html#vector-calculus-integrals"><span class="std std-ref">integrali su spazi euclidei</span></a>.</p>
+<p class="sd-card-text">Infine, viene introdotto il concetto di <strong>campo</strong> - funzioni definite nello spazio - e la loro rappresentazione come funzione delle coordinate usate per dscrivere lo spazio.</p>
+<p class="sd-card-text"><span style="color:red">Dal punto di vista concettuale, si mette in evidenza da una parte un «criterio di semplicità» per la scelta di un sistema di coordinate per rappresentare un fenomeno o risolvere un problema, e dall’altra il concetto di <strong>invarianza rispetto alla scelta del sistema di coordinate</strong> dello spazio e delle funzioni definite in esso.</span></p>
+<p class="sd-card-text"><span style="color:red"> <strong>todo</strong> <em>Tenendo bene in mente la definizione dei sistemi di coordiante utilizzati per la rappresentazione parametrica dello spazio e degli elementi geometrici in esso, il calcolo vettoriale può essere ricondotto al calcolo multi-variabile</em></span></p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<a class="reference internal" href="vector-calculus/integrals.html#vector-calculus-integrals"><span class="std std-ref"><strong>Integrali su domini in spazi euclidei.</strong></span></a><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Viene esteso il concetto di integrale a funzioni definite su domini - luoghi geometrici - contenuti nello spazio euclideo. Vengono introdotti alcuni integrali che compaiono frequentemente nell’ambito delle scienze - integrali di linea (densità e lavoro), integrali di superficie (densità e flusso), integrali di volume (densità). Viene mostrato il procedimento pratico per calcolare tali integrali grazie all’uso di coordinate, tramite esempi. Questi integrali rappresentano lo strumento matematico necessario per alcune applicazioni che riguardano problemi continui, come ad esempio:</p>
 <ul class="simple">
-<li><p>calcolo di lunghezza di curve, area di superfici e volumi di solidi</p></li>
-<li><p>calcolo di proprietà meccaniche di un sistema, ad esempio le proprietà inerziali di un sistema legate alla sua distribuzione di massa <span class="math notranslate nohighlight">\(\rho(P)\)</span>: massa, centro di massa, momenti di inerzia</p></li>
-<li><p>calcolo di integrali ricorrenti in fisica: lavoro di una forza, circuitazione di un campo lungo una linea chiusa, flusso di un campo attraverso una superficie.</p></li>
+<li><p class="sd-card-text">calcolo di lunghezza di curve, area di superfici e volumi di solidi</p></li>
+<li><p class="sd-card-text">calcolo di proprietà meccaniche di un sistema, ad esempio le proprietà inerziali di un sistema legate alla sua distribuzione di massa <span class="math notranslate nohighlight">\(\rho(P)\)</span>: massa, centro di massa, momenti di inerzia</p></li>
+<li><p class="sd-card-text">calcolo di integrali ricorrenti in fisica: lavoro di una forza, circuitazione di un campo lungo una linea chiusa, flusso di un campo attraverso una superficie.</p></li>
 </ul>
-<p><em>Infine teorema gradiente, divergenza, rotore</em>.</p>
-<!--
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<a class="reference internal" href="vector-calculus/derivatives.html#vector-calculus-derivatives"><span class="std std-ref"><strong>Operatori differenziali in spazi euclidei.</strong></span></a><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Viene esteso il concetto di derivata (<strong>todo</strong> <em>introdotto inizialmente per funzioni reali, e poi per funzioni di più variabili</em>) e applicato ai campi; vengono presentati alcuni operatori che compaiono frequentemente nell’ambito delle scienze e dal chiaro significato fisico, riconducibili alla derivata direzionale, circuitazione e flusso.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<a class="reference internal" href="vector-calculus/stokes.html#vector-calculus-stokes"><span class="std std-ref"><strong>Teorema di Stokes.</strong></span></a><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Vengono presentati dei teoremi che coinvolgono l’integrale di operatori differenziali, e consentono di trasformare particolari integrali di superficie - tra cui l’integrale di <strong>flusso</strong> - in integrali di volume (e viceversa), e particolari integrali di linea - tra cui l’integrale di <strong>circuitazione</strong> - in integrali di superficie (e viceversa). I teoremi del gradiente, della divergenza e del rotore che vengono presentati nell’ultima sezione di questo capitolo  sono diverse manifestazioni di un teorema più generale, il <strong>teorema di Stokes</strong>, che qui non verrà presentato nella sua forma più generale<a class="footnote-reference brackets" href="#stokes-thm" id="id1">1</a>.</p>
+</div>
+</details><!--
 Viene definito **campo scalare** una funzione $f(P)$ a valori reale definita sui punti $P$ di uno spazio euclideo $E^n$, $f: E^n \rightarrow \mathbb{R}$.
 Viene definito **campo vettoriale** una funzione $\vec{f}(P)$ a valori vettoriali definita sui punti $P$ di uno spazio euclideo $E^n$, $\vec{f}: E^n \rightarrow V$.
 **todo** *esistono anche i tensori...lo diciamo?*
@@ -541,6 +573,12 @@ Integrali:
   - flusso attraverso una superficie
   - integrale lungo una curva e circuitazione
 -->
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="stokes-thm"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>La presentazione della forma generale del teorema di Stokes è ben al di là dello scopo di questo materiale, che si è già spinto in là a sufficienza.</p>
+</dd>
+</dl>
 <div class="toctree-wrapper compound">
 </div>
 </div>
