@@ -499,6 +499,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gradiente">28.3.2. Gradiente</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#divergenza">28.3.3. Divergenza</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rotore">28.3.4. Rotore</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#laplaciano">28.3.5. Laplaciano</a></li>
 </ul>
             </nav>
         </div>
@@ -516,7 +517,7 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[P - O = \vec{r}_P = x \, \hat{x} + y \, \hat{y} + z \, \hat{z}  = P(x,y,z) \ .\]</div>
 <div class="section" id="derivata-direzionale">
-<h2><span class="section-number">28.3.1. </span>Derivata direzionale<a class="headerlink" href="#derivata-direzionale" title="Permalink to this heading">#</a></h2>
+<span id="vector-calculus-derivatives-directional"></span><h2><span class="section-number">28.3.1. </span>Derivata direzionale<a class="headerlink" href="#derivata-direzionale" title="Permalink to this heading">#</a></h2>
 <p>Dato il campo scalare <span class="math notranslate nohighlight">\(f(P)\)</span> rappresentato usando le coordinate cartesiane,</p>
 <div class="math notranslate nohighlight">
 \[
@@ -546,7 +547,7 @@ f(P + \alpha \vec{v})
 \[\nabla f(P) = \hat{x} \, \partial_x f(P) + \hat{y} \, \partial_y f(P) + \hat{z} \, \partial_z f(P) \ . \]</div>
 </div>
 <div class="section" id="gradiente">
-<h2><span class="section-number">28.3.2. </span>Gradiente<a class="headerlink" href="#gradiente" title="Permalink to this heading">#</a></h2>
+<span id="vector-calculus-derivatives-gradient"></span><h2><span class="section-number">28.3.2. </span>Gradiente<a class="headerlink" href="#gradiente" title="Permalink to this heading">#</a></h2>
 <p><strong>Definizione.</strong> Il gradiente di un campo scalare <span class="math notranslate nohighlight">\(f(P)\)</span> nello spazio 3-dimensionale è un campo vettoriale che ha la direzione locale di massima crescita della funzione e il modulo come massima derivata direzionale,</p>
 <div class="math notranslate nohighlight">
 \[\nabla f(P) = \hat{x} \, \partial_x f(P) + \hat{y} \, \partial_y f(P) + \hat{z} \, \partial_z f(P) \ . \]</div>
@@ -568,8 +569,8 @@ Dimostrazione.<div class="sd-summary-down docutils">
 </div>
 </details></div>
 <div class="section" id="divergenza">
-<h2><span class="section-number">28.3.3. </span>Divergenza<a class="headerlink" href="#divergenza" title="Permalink to this heading">#</a></h2>
-<p>La divergenza di un campo vettoriale <span class="math notranslate nohighlight">\(\vec{f}(P)\)</span> nello spazio 3-dimensionale è un campo scalare che può essere interpretato come la densità volumetrica del flusso del campo vettoriale. Usando un sistema di coordinate cartesiane, la divergenza di un campo vettoriale può essere scritta formalmente come il prodotto interno tra il vettore formale nabla e il campo vettoriale,</p>
+<span id="vector-calculus-derivatives-divergence"></span><h2><span class="section-number">28.3.3. </span>Divergenza<a class="headerlink" href="#divergenza" title="Permalink to this heading">#</a></h2>
+<p>La divergenza di un campo vettoriale <span class="math notranslate nohighlight">\(\vec{f}(P)\)</span> nello spazio 3-dimensionale è un campo scalare che può essere interpretato come la densità volumetrica del <a class="reference internal" href="integrals.html#vector-calculus-integrals-surface-flux"><span class="std std-ref">flusso del campo vettoriale</span></a>. Usando un sistema di coordinate cartesiane, la divergenza di un campo vettoriale può essere scritta formalmente come il prodotto interno tra il vettore formale nabla e il campo vettoriale,</p>
 <div class="math notranslate nohighlight">
 \[\nabla \cdot \vec{f} = \partial_x f_x + \partial_y f_y + \partial_z f_z\]</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -624,8 +625,8 @@ Divergenza come densità volumetrica del flusso. Dimostrazione con un tetraedro 
 </div>
 </details></div>
 <div class="section" id="rotore">
-<h2><span class="section-number">28.3.4. </span>Rotore<a class="headerlink" href="#rotore" title="Permalink to this heading">#</a></h2>
-<p>Il rotore di un campo vettoriale <span class="math notranslate nohighlight">\(\vec{f}(P)\)</span> nello spazio 3-dimensionale è un campo vettoriale che può essere interpretato come la densità di superficie di circuitazione. Usando un sistema di coordinate cartesiane, il rotore di un campo vettoriale può essere scritto formalmente come il prodotto vettoriale tra il vettore formale nabla e il campo vettoriale,</p>
+<span id="vector-calculus-derivatives-curl"></span><h2><span class="section-number">28.3.4. </span>Rotore<a class="headerlink" href="#rotore" title="Permalink to this heading">#</a></h2>
+<p>Il rotore di un campo vettoriale <span class="math notranslate nohighlight">\(\vec{f}(P)\)</span> nello spazio 3-dimensionale è un campo vettoriale che può essere interpretato come la densità di superficie di <a class="reference internal" href="integrals.html#vector-calculus-integrals-line-circuitation"><span class="std std-ref">circuitazione</span></a>. Usando un sistema di coordinate cartesiane, il rotore di un campo vettoriale può essere scritto formalmente come il prodotto vettoriale tra il vettore formale nabla e il campo vettoriale,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
   \nabla \times \vec{f} &amp; = \hat{x} \left( \partial_y f_z - \partial_z f_y \right) + \\ 
@@ -633,7 +634,7 @@ Divergenza come densità volumetrica del flusso. Dimostrazione con un tetraedro 
                         &amp; + \hat{z} \left( \partial_x f_y - \partial_y f_x \right) 
     = \left| \begin{matrix} \hat{x} &amp; \hat{y} &amp; \hat{z} \\ \partial_x &amp; \partial_y &amp; \partial_z \\ f_x &amp; f_y &amp; f_z \end{matrix} \right| \ .
 \end{aligned}\end{split}\]</div>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Rotore come densità di circuitazione. Dimostrazione<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
@@ -697,6 +698,9 @@ $$\begin{aligned}
 \end{aligned}$$
 ```
 -->
+</div>
+<div class="section" id="laplaciano">
+<span id="vector-calculus-derivatives-laplacian"></span><h2><span class="section-number">28.3.5. </span>Laplaciano<a class="headerlink" href="#laplaciano" title="Permalink to this heading">#</a></h2>
 </div>
 </div>
 
@@ -767,6 +771,7 @@ $$\begin{aligned}
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gradiente">28.3.2. Gradiente</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#divergenza">28.3.3. Divergenza</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rotore">28.3.4. Rotore</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#laplaciano">28.3.5. Laplaciano</a></li>
 </ul>
   </nav></div>
 

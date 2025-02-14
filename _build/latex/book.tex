@@ -14393,13 +14393,21 @@ compare in molti ambiti della fisica, o delle scienze in generale, ed è spesso 
 \end{equation*}
 \sphinxAtStartPar
 \sphinxstylestrong{todo} \sphinxstyleemphasis{indipendente dalla parametrizzazione della curva}
-\label{ch/vector-calculus/integrals:definition-4}
+
+
+\paragraph{Circuitazione}
+\label{\detokenize{ch/vector-calculus/integrals:circuitazione}}\label{\detokenize{ch/vector-calculus/integrals:vector-calculus-integrals-line-circuitation}}\label{ch/vector-calculus/integrals:definition-4}
 \begin{sphinxadmonition}{note}{Definition 28.2.1 (Circuitazione)}
 
 
 
 \sphinxAtStartPar
-L’integrale del lavoro \eqref{equation:ch/vector-calculus/integrals:eq:integral:work} lungo una curva chiusa \(\gamma\) viene definito circuitazione del campo \(\vec{f}\) lungo la linea \(\gamma\).
+L’integrale del lavoro \eqref{equation:ch/vector-calculus/integrals:eq:integral:work} lungo una curva chiusa \(\gamma\) viene definito circuitazione del campo \(\vec{f}\) lungo la linea \(\gamma\), e viene indicato comunemente con
+\begin{equation*}
+\begin{split}\Gamma_{\gamma}(\vec{f}) := \oint_{\gamma} \vec{f} \cdot \hat{t} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+dove il circolino sul segno di integrale vuole ricordare che la linea \(\gamma\) è una linea chiusa.
 \end{sphinxadmonition}
 \label{ch/vector-calculus/integrals:example-5}
 \begin{sphinxadmonition}{note}{Example 28.2.5}
@@ -14444,8 +14452,8 @@ o indicando esplicitamente l’elemento di superficie, e ipotizzando una paramet
 \begin{split}M = \int_{\vec{r} \in S} \sigma(\vec{r}) d S = \int_{(q^1,q^2) \in Q} \sigma\left( \vec{r}_S(q^1, q^2) \right) \left|\frac{\partial \vec{r}_S}{\partial q^1}(q^1,q^2) \times \frac{\partial \vec{r}_S}{\partial q^2}(q^1,q^2) \right| \, dq^1 \, dq^2\end{split}
 \end{equation*}
 
-\subsubsection{Flusso}
-\label{\detokenize{ch/vector-calculus/integrals:flusso}}\label{\detokenize{ch/vector-calculus/integrals:vector-calculus-integrals-surface-flux}}
+\subsubsection{Flusso di un campo vettoriale}
+\label{\detokenize{ch/vector-calculus/integrals:flusso-di-un-campo-vettoriale}}\label{\detokenize{ch/vector-calculus/integrals:vector-calculus-integrals-surface-flux}}
 \sphinxAtStartPar
 L’integrale del prodotto scalare tra un campo vettoriale \(\vec{f}(\vec{r})\) definito su una superficice \(S\) e il versore normale \(\hat{n}\) alla superficie
 \begin{equation}\label{equation:ch/vector-calculus/integrals:eq:integral:flux}
@@ -14546,7 +14554,7 @@ quando l’angolo tra il versore \(\hat{t}\) e il gradiente \(\nabla f(P)\) è n
 \subsection{Divergenza}
 \label{\detokenize{ch/vector-calculus/derivatives:divergenza}}
 \sphinxAtStartPar
-La divergenza di un campo vettoriale \(\vec{f}(P)\) nello spazio 3\sphinxhyphen{}dimensionale è un campo scalare che può essere interpretato come la densità volumetrica del flusso del campo vettoriale. Usando un sistema di coordinate cartesiane, la divergenza di un campo vettoriale può essere scritta formalmente come il prodotto interno tra il vettore formale nabla e il campo vettoriale,
+La divergenza di un campo vettoriale \(\vec{f}(P)\) nello spazio 3\sphinxhyphen{}dimensionale è un campo scalare che può essere interpretato come la densità volumetrica del {\hyperref[\detokenize{ch/vector-calculus/integrals:vector-calculus-integrals-surface-flux}]{\sphinxcrossref{\DUrole{std,std-ref}{flusso del campo vettoriale}}}}. Usando un sistema di coordinate cartesiane, la divergenza di un campo vettoriale può essere scritta formalmente come il prodotto interno tra il vettore formale nabla e il campo vettoriale,
 \begin{equation*}
 \begin{split}\nabla \cdot \vec{f} = \partial_x f_x + \partial_y f_y + \partial_z f_z\end{split}
 \end{equation*}\subsubsection*{Divergenza come densità volumetrica del flusso. Dimostrazione con un cubetto elementare}
@@ -14594,7 +14602,7 @@ Usando le coordinate cartesiane si calcola il flusso del campo vettoriale attrav
 \subsection{Rotore}
 \label{\detokenize{ch/vector-calculus/derivatives:rotore}}
 \sphinxAtStartPar
-Il rotore di un campo vettoriale \(\vec{f}(P)\) nello spazio 3\sphinxhyphen{}dimensionale è un campo vettoriale che può essere interpretato come la densità di superficie di circuitazione. Usando un sistema di coordinate cartesiane, il rotore di un campo vettoriale può essere scritto formalmente come il prodotto vettoriale tra il vettore formale nabla e il campo vettoriale,
+Il rotore di un campo vettoriale \(\vec{f}(P)\) nello spazio 3\sphinxhyphen{}dimensionale è un campo vettoriale che può essere interpretato come la densità di superficie di {\hyperref[\detokenize{ch/vector-calculus/integrals:vector-calculus-integrals-line-circuitation}]{\sphinxcrossref{\DUrole{std,std-ref}{circuitazione}}}}. Usando un sistema di coordinate cartesiane, il rotore di un campo vettoriale può essere scritto formalmente come il prodotto vettoriale tra il vettore formale nabla e il campo vettoriale,
 \begin{equation*}
 \begin{split}\begin{aligned}
   \nabla \times \vec{f} & = \hat{x} \left( \partial_y f_z - \partial_z f_y \right) + \\ 
@@ -14638,7 +14646,10 @@ Usando le coordinate cartesiane si calcola la circuitazione del campo vettoriale
 
 
 \section{Teorema di Stokes}
-\label{\detokenize{ch/vector-calculus/stokes:teorema-di-stokes}}\label{\detokenize{ch/vector-calculus/stokes:vector-calculus-stokes}}\label{\detokenize{ch/vector-calculus/stokes::doc}}\label{ch/vector-calculus/stokes:theorem-0}
+\label{\detokenize{ch/vector-calculus/stokes:teorema-di-stokes}}\label{\detokenize{ch/vector-calculus/stokes:vector-calculus-stokes}}\label{\detokenize{ch/vector-calculus/stokes::doc}}
+
+\subsection{Teorema del gradiente}
+\label{\detokenize{ch/vector-calculus/stokes:teorema-del-gradiente}}\label{\detokenize{ch/vector-calculus/stokes:vector-calculus-stokes-gradient}}\label{ch/vector-calculus/stokes:theorem-0}
 \begin{sphinxadmonition}{note}{Theorem 28.4.1 (Teorema del gradiente)}
 
 
@@ -14703,7 +14714,10 @@ e
 
 
 \end{sphinxadmonition}
-\label{ch/vector-calculus/stokes:theorem-3}
+
+
+\subsection{Teorema della divergenza}
+\label{\detokenize{ch/vector-calculus/stokes:teorema-della-divergenza}}\label{\detokenize{ch/vector-calculus/stokes:vector-calculus-stokes-divergence}}\label{ch/vector-calculus/stokes:theorem-3}
 \begin{sphinxadmonition}{note}{Theorem 28.4.2 (Teorema della divergenza)}
 
 
@@ -14723,7 +14737,10 @@ Per campi vettoriali \(\vec{f}(\vec{r})\) sufficientemente regolari nel dominio 
 
 
 \end{sphinxadmonition}
-\label{ch/vector-calculus/stokes:theorem-6}
+
+
+\subsection{Teorema del rotore}
+\label{\detokenize{ch/vector-calculus/stokes:teorema-del-rotore}}\label{\detokenize{ch/vector-calculus/stokes:vector-calculus-stokes-curl}}\label{ch/vector-calculus/stokes:theorem-6}
 \begin{sphinxadmonition}{note}{Theorem 28.4.3 (Teorema del rotore)}
 
 

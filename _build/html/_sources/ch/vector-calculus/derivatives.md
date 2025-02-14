@@ -5,6 +5,7 @@ Usando un sistema di coordinate cartesiane, un punto $P$ nello spazio può esser
 
 $$P - O = \vec{r}_P = x \, \hat{x} + y \, \hat{y} + z \, \hat{z}  = P(x,y,z) \ .$$
 
+(vector-calculus:derivatives:directional)=
 ## Derivata direzionale
 Dato il campo scalare $f(P)$ rappresentato usando le coordinate cartesiane,
 
@@ -38,6 +39,7 @@ avendo introdotto il vettore formale **nabla**, $\nabla $, per definire l'operat
 
 $$\nabla f(P) = \hat{x} \, \partial_x f(P) + \hat{y} \, \partial_y f(P) + \hat{z} \, \partial_z f(P) \ . $$
 
+(vector-calculus:derivatives:gradient)=
 ## Gradiente
 
 **Definizione.** Il gradiente di un campo scalare $f(P)$ nello spazio 3-dimensionale è un campo vettoriale che ha la direzione locale di massima crescita della funzione e il modulo come massima derivata direzionale,
@@ -59,8 +61,9 @@ quando l'angolo tra il versore $\hat{t}$ e il gradiente $\nabla f(P)$ è nullo, 
 
 ```
 
+(vector-calculus:derivatives:divergence)=
 ## Divergenza
-La divergenza di un campo vettoriale $\vec{f}(P)$ nello spazio 3-dimensionale è un campo scalare che può essere interpretato come la densità volumetrica del flusso del campo vettoriale. Usando un sistema di coordinate cartesiane, la divergenza di un campo vettoriale può essere scritta formalmente come il prodotto interno tra il vettore formale nabla e il campo vettoriale,
+La divergenza di un campo vettoriale $\vec{f}(P)$ nello spazio 3-dimensionale è un campo scalare che può essere interpretato come la densità volumetrica del [flusso del campo vettoriale](vector-calculus:integrals:surface:flux). Usando un sistema di coordinate cartesiane, la divergenza di un campo vettoriale può essere scritta formalmente come il prodotto interno tra il vettore formale nabla e il campo vettoriale,
 
 $$\nabla \cdot \vec{f} = \partial_x f_x + \partial_y f_y + \partial_z f_z$$
 
@@ -103,8 +106,9 @@ $$\begin{aligned}
 \end{aligned}$$
 ```
 
+(vector-calculus:derivatives:curl)=
 ## Rotore
-Il rotore di un campo vettoriale $\vec{f}(P)$ nello spazio 3-dimensionale è un campo vettoriale che può essere interpretato come la densità di superficie di circuitazione. Usando un sistema di coordinate cartesiane, il rotore di un campo vettoriale può essere scritto formalmente come il prodotto vettoriale tra il vettore formale nabla e il campo vettoriale,
+Il rotore di un campo vettoriale $\vec{f}(P)$ nello spazio 3-dimensionale è un campo vettoriale che può essere interpretato come la densità di superficie di [circuitazione](vector-calculus:integrals:line:circuitation). Usando un sistema di coordinate cartesiane, il rotore di un campo vettoriale può essere scritto formalmente come il prodotto vettoriale tra il vettore formale nabla e il campo vettoriale,
 
 $$\begin{aligned}
   \nabla \times \vec{f} & = \hat{x} \left( \partial_y f_z - \partial_z f_y \right) + \\ 
@@ -114,7 +118,6 @@ $$\begin{aligned}
 \end{aligned}$$
 
 ```{dropdown} Rotore come densità di circuitazione. Dimostrazione
-:open:
 
 Usando le coordinate cartesiane si calcola la circuitazione del campo vettoriale $\vec{f}$ sui lati della faccia maggiore di un tetraedro con spigoli coincidenti con gli assi e di lunghezza $\Delta x$, $\Delta y$, $\Delta z$,
 
@@ -173,3 +176,6 @@ $$\begin{aligned}
 \end{aligned}$$
 ```
 -->
+
+(vector-calculus:derivatives:laplacian)=
+## Laplaciano
