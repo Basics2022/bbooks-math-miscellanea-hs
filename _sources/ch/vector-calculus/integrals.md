@@ -108,8 +108,15 @@ $$\begin{aligned}
 
 **todo** *indipendente dalla parametrizzazione della curva*
 
+(vector-calculus:integrals:line:circuitation)=
+#### Circuitazione
+
 ```{prf:definition} Circuitazione
-L'integrale del lavoro {eq}`eq:integral:work` lungo una curva chiusa $\gamma$ viene definito circuitazione del campo $\vec{f}$ lungo la linea $\gamma$.
+L'integrale del lavoro {eq}`eq:integral:work` lungo una curva chiusa $\gamma$ viene definito circuitazione del campo $\vec{f}$ lungo la linea $\gamma$, e viene indicato comunemente con
+
+$$\Gamma_{\gamma}(\vec{f}) := \oint_{\gamma} \vec{f} \cdot \hat{t} \ ,$$
+
+dove il circolino sul segno di integrale vuole ricordare che la linea $\gamma$ è una linea chiusa.
 
 ```
 
@@ -144,7 +151,7 @@ o indicando esplicitamente l'elemento di superficie, e ipotizzando una parametri
 $$M = \int_{\vec{r} \in S} \sigma(\vec{r}) d S = \int_{(q^1,q^2) \in Q} \sigma\left( \vec{r}_S(q^1, q^2) \right) \left|\frac{\partial \vec{r}_S}{\partial q^1}(q^1,q^2) \times \frac{\partial \vec{r}_S}{\partial q^2}(q^1,q^2) \right| \, dq^1 \, dq^2$$
 
 (vector-calculus:integrals:surface:flux)=
-### Flusso
+### Flusso di un campo vettoriale
 
 L'integrale del prodotto scalare tra un campo vettoriale $\vec{f}(\vec{r})$ definito su una superficice $S$ e il versore normale $\hat{n}$ alla superficie
 

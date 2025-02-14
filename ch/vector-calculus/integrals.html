@@ -498,14 +498,15 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-di-linea">28.2.1. Integrali di linea</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#densita">28.2.1.1. Densità</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lavoro-e-circuitazione">28.2.1.2. Lavoro e circuitazione</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#campi-conservativi">28.2.1.2.1. Campi conservativi</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#circuitazione">28.2.1.2.1. Circuitazione</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#campi-conservativi">28.2.1.2.2. Campi conservativi</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-di-superficie">28.2.2. Integrali di superficie</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vector-calculus-integrals-surface-density">28.2.2.1. Densità</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flusso">28.2.2.2. Flusso</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flusso-di-un-campo-vettoriale">28.2.2.2. Flusso di un campo vettoriale</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-di-volume">28.2.3. Integrali di volume</a></li>
@@ -604,17 +605,23 @@ document.write(`
   &amp; = \int_{t \in t_0}^{t_1} \vec{f}(\vec{r}(t)) \cdot \vec{r}'(t) \, dt 
 \end{aligned}\end{split}\]</div>
 <p><strong>todo</strong> <em>indipendente dalla parametrizzazione della curva</em></p>
+<div class="section" id="circuitazione">
+<span id="vector-calculus-integrals-line-circuitation"></span><h4><span class="section-number">28.2.1.2.1. </span>Circuitazione<a class="headerlink" href="#circuitazione" title="Permalink to this heading">#</a></h4>
 <div class="proof definition admonition" id="definition-4">
 <p class="admonition-title"><span class="caption-number">Definition 28.5 </span> (Circuitazione)</p>
 <div class="definition-content section" id="proof-content">
-<p>L’integrale del lavoro <a class="reference internal" href="#equation-eq-integral-work">(28.1)</a> lungo una curva chiusa <span class="math notranslate nohighlight">\(\gamma\)</span> viene definito circuitazione del campo <span class="math notranslate nohighlight">\(\vec{f}\)</span> lungo la linea <span class="math notranslate nohighlight">\(\gamma\)</span>.</p>
+<p>L’integrale del lavoro <a class="reference internal" href="#equation-eq-integral-work">(28.1)</a> lungo una curva chiusa <span class="math notranslate nohighlight">\(\gamma\)</span> viene definito circuitazione del campo <span class="math notranslate nohighlight">\(\vec{f}\)</span> lungo la linea <span class="math notranslate nohighlight">\(\gamma\)</span>, e viene indicato comunemente con</p>
+<div class="math notranslate nohighlight">
+\[\Gamma_{\gamma}(\vec{f}) := \oint_{\gamma} \vec{f} \cdot \hat{t} \ ,\]</div>
+<p>dove il circolino sul segno di integrale vuole ricordare che la linea <span class="math notranslate nohighlight">\(\gamma\)</span> è una linea chiusa.</p>
 </div>
 </div><div class="proof example admonition" id="example-5">
 <p class="admonition-title"><span class="caption-number">Example 28.18 </span></p>
 <div class="example-content section" id="proof-content">
 </div>
-</div><div class="section" id="campi-conservativi">
-<span id="vector-calculus-integrals-work-conservative"></span><h4><span class="section-number">28.2.1.2.1. </span>Campi conservativi<a class="headerlink" href="#campi-conservativi" title="Permalink to this heading">#</a></h4>
+</div></div>
+<div class="section" id="campi-conservativi">
+<span id="vector-calculus-integrals-work-conservative"></span><h4><span class="section-number">28.2.1.2.2. </span>Campi conservativi<a class="headerlink" href="#campi-conservativi" title="Permalink to this heading">#</a></h4>
 <p>In alcuni casi particolari, il valore di questo integrale non dipende dalla curva <span class="math notranslate nohighlight">\(\gamma\)</span>, ma solo dai suoi punti estremi. Campi di questo <span class="math notranslate nohighlight">\(\vec{f}(\vec{r})\)</span> di questo tipo compaiono in fisica nella definizione di campi di forze conservative, che ammettono potenziale.</p>
 <p><strong>todo</strong> <em>legare bene con il resto; discutere qui? In altre parti? Ragionare sui domini?</em></p>
 <ul class="simple">
@@ -638,8 +645,8 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[M = \int_{\vec{r} \in S} \sigma(\vec{r}) d S = \int_{(q^1,q^2) \in Q} \sigma\left( \vec{r}_S(q^1, q^2) \right) \left|\frac{\partial \vec{r}_S}{\partial q^1}(q^1,q^2) \times \frac{\partial \vec{r}_S}{\partial q^2}(q^1,q^2) \right| \, dq^1 \, dq^2\]</div>
 </div>
-<div class="section" id="flusso">
-<span id="vector-calculus-integrals-surface-flux"></span><h3><span class="section-number">28.2.2.2. </span>Flusso<a class="headerlink" href="#flusso" title="Permalink to this heading">#</a></h3>
+<div class="section" id="flusso-di-un-campo-vettoriale">
+<span id="vector-calculus-integrals-surface-flux"></span><h3><span class="section-number">28.2.2.2. </span>Flusso di un campo vettoriale<a class="headerlink" href="#flusso-di-un-campo-vettoriale" title="Permalink to this heading">#</a></h3>
 <p>L’integrale del prodotto scalare tra un campo vettoriale <span class="math notranslate nohighlight">\(\vec{f}(\vec{r})\)</span> definito su una superficice <span class="math notranslate nohighlight">\(S\)</span> e il versore normale <span class="math notranslate nohighlight">\(\hat{n}\)</span> alla superficie</p>
 <div class="math notranslate nohighlight" id="equation-eq-integral-flux">
 <span class="eqno">(28.2)<a class="headerlink" href="#equation-eq-integral-flux" title="Permalink a questa equazione">#</a></span>\[\Phi_{S}(\vec{f}) = \int_{\vec{r} \in S} \vec{f}(\vec{r}) \cdot \hat{n}(\vec{r}) \ ,\]</div>
@@ -723,14 +730,15 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-di-linea">28.2.1. Integrali di linea</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#densita">28.2.1.1. Densità</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lavoro-e-circuitazione">28.2.1.2. Lavoro e circuitazione</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#campi-conservativi">28.2.1.2.1. Campi conservativi</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#circuitazione">28.2.1.2.1. Circuitazione</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#campi-conservativi">28.2.1.2.2. Campi conservativi</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-di-superficie">28.2.2. Integrali di superficie</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vector-calculus-integrals-surface-density">28.2.2.1. Densità</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flusso">28.2.2.2. Flusso</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flusso-di-un-campo-vettoriale">28.2.2.2. Flusso di un campo vettoriale</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-di-volume">28.2.3. Integrali di volume</a></li>

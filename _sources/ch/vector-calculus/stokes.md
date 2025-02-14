@@ -1,6 +1,8 @@
 (vector-calculus:stokes)=
 # Teorema di Stokes
 
+(vector-calculus:stokes:gradient)=
+## Teorema del gradiente
 ```{prf:theorem} Teorema del gradiente
 Per campi scalari $f(\vec{r})$ sufficientemente regolari nel dominio $V \subseteq E^d$, $d=2:3$, vale
 
@@ -58,6 +60,8 @@ $$\begin{aligned}
 
 ```
 
+(vector-calculus:stokes:divergence)=
+## Teorema della divergenza
 ```{prf:theorem} Teorema della divergenza
 Per campi vettoriali $\vec{f}(\vec{r})$ sufficientemente regolari nel dominio $V \subseteq E^d$, $d=2:3$, vale
 
@@ -76,6 +80,8 @@ $$\int_{V} \nabla \cdot \vec{f} = \oint_{\partial V} \vec{f} \cdot \hat{n} \ .$$
 
 ```
 
+(vector-calculus:stokes:curl)=
+## Teorema del rotore
 ```{prf:theorem} Teorema del rotore
 Per campi vettoriali $\vec{f}(\vec{r})$ sufficientemente regolari sulla superficie $S \subseteq E^3$, vale
 
