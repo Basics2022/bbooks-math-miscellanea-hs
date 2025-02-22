@@ -383,6 +383,22 @@ $$\lim_{x \rightarrow x_0} \frac{h(x)}{k(x)} = \frac{a}{b} \lim_{x \rightarrow x
 (infinitesimal-calculus:continuous-fun:bisec)=
 ## Metodo di bisezione
 
+Il metodo di bisezione è un metodo iterativo che impiega i risultati del [teorema degli zeri](infinitesimal-calculus:continuous-fun:thms:zeros) per la soluzione di equazioni algebriche nella forma
+
+$$f(x) = 0 \ , \qquad x \in [a,b]$$
+
+con funzioni $f(x)$ continue nell'intervallo $[a,b]$. Infatti, per il teorema degli zeri, se la funzione $f(x)$ è continua ed esistono due numeri $a_0, \, b_0 \in [a,b]$ tali che la funzione valutata nei due punti ha segno opposto,
+
+$$f(a_0) \, f(b_0) < 0 \ ,$$
+
+allora esiste un valore $x_0 \in [a_0, b_0]$ per il quale $f(x_0) = 0$.
+
+Il metodo di bisezione consiste quindi nel seguente algoritmo: **todo**
+
+```{note}
+In generale, un problema non-lineare può avere più di una soluzione. Un'applicazione base del metodo di bisezione non consente di determinare tutte le soluzioni di un problema, ma si rende necessaria una ricerca. L'applicazione del metodo di bisezione può essere guidata dalla soluzione grafica dell'equazione.
+```
+
 
 <!--
 **todo** *Spostare nella sezione di precalcolo sulle successioni*

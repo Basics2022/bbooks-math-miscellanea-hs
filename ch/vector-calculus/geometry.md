@@ -27,7 +27,6 @@ Dopo aver scelto il punto $O$ come origine, è possibile utilizzare un sistema d
 
 $$\vec{r} = P - O = x \, \hat{x} + y \, \hat{y} \ .$$
 
-
 ```
 
 ```{prf:example} Spazio $E^2$: coordinate polari
@@ -258,7 +257,7 @@ tangente alla curva e di dimensione (lunghezza)
 
 $$d \ell(q^1) := \left|d \vec{r}_{\gamma}(q^1)\right| = |\vec{r}'_{\gamma}(q^1)| d q^1 \ ,$$
 
-avendo ipotizzato una variazione positiva del parametro $|d q^1| = d q^1 > 0$ per rimuovere il valore assoluto dalla variazione del parametro. Nel caso si utilizzi il parametro lunghezza d'arco $s$ {ref}`arc-length`, vale 
+avendo ipotizzato una variazione positiva del parametro $|d q^1| = d q^1 > 0$ per rimuovere il valore assoluto dalla variazione del parametro. Nel caso si utilizzi il parametro lunghezza d'arco $s$ {prf:ref}`arc-length`, vale 
 
 $$d \ell(s) = |d \vec{r}_{\gamma,s}(s)| = d s \ ,$$
 

@@ -128,7 +128,7 @@ Si chiede di trovare i punti di minimo e massimo, locali e assoluti, e disegnare
 $$\begin{aligned}
  & \mathbf{0.} \, f(x) = x^2 - \frac{1}{2} x^3 \quad , \quad x \in [-1,2] & \text{R: } \\
  & \mathbf{1.} \, f(x) = \frac{x}{\cos x + 1}  \quad , \quad x \in \left[ -\frac{\pi}{2}, \frac{\pi}{2} \right]  & \text{R: } \\
- & \mathbf{2.} \, f(x) = \frac{sin{x}}{x} \quad , \quad x \in \mathbb{R} & \text{R: } \\
+ & \mathbf{2.} \, f(x) = \frac{\sin{x}}{x} \quad , \quad x \in \mathbb{R} & \text{R: } \\
  & \dots 
 \end{aligned}$$
 
@@ -155,7 +155,59 @@ Si chiede di determinare il dominio e la quantità richiesta in funzione della q
 ## Metodo di Newton
 Si chiede di risolvere le sequenti equazioni nonlineari con il [metodo di Newton](infinitesimal-calculus:derivatives:applications:newton) (è quindi necessario riformulare il problema come la ricerca degli zeri di una funzione), dopo aver impostato la soluzione con un metodo grafico. Il metodo grafico è necessario a farsi un'idea sul numero di soluzioni da cercare, e sui valori con cui iniziare il metodo di Newton. Si chiede di concludere il procedimento a mano dopo 3 iterazioni, o quando si ottiene una soluzione con errore minore della tolleranza, qui scelta come $\tau = 0.01$. Si chiede infine di implementare il metodo con un linguaggio di programmazione a piacimento, per cercare una soluzione con tolleranza $\tau = 10^{-5}$
 ```{exercise} Soluzione iterativa di equazioni nonlineari - Newton
-1. $\ln x = - 2$
-2. $e^{-x^2} \cos x = \frac{1}{2}$
-3. $\dots$ 
+1. $x^2 - 4x + 1 = 0 $
+2. $x^3 - 2x = 1$
+3. $\ln x = - 2 x$
+4. $e^{-x} \cos x = \frac{1}{2}$
+```
+
+```{dropdown} Soluzione 1.
+Si cerca uno zero della funzione $f(x) = x^2 - 4x + 1$ con il metodo di Newton. La derivata della funzione è
+
+$$f'(x) = 2 x - 4 \ .$$
+
+**Inizializzazione del metodo.** 
+
+$$x_0 = 0$$
+
+**Iterazione 0.**
+
+$$\begin{aligned}
+   f(x_0)  & =  1 \\
+  f'(x_0)  & = -4 \\
+\end{aligned}$$
+
+Il valore assoluto della funzione in $x_0$ è maggiore della tolleranza, $|f(x_0)| > \tau$; il numero di iterazioni fatte è inferiore al numero di iterazioni massimo; quindi l'algoritmo procede.
+
+$$\Delta x_0 = - \frac{f(x_0)}{f'(x_0)} = -\frac{1}{-4} = \frac{1}{4}$$
+
+$$x_1 = x_0 + \Delta x_0 = 0 + \frac{1}{4} = \frac{1}{4}$$
+
+**Iterazione 1.**
+
+$$\begin{aligned}
+   f(x_1)  & = \frac{1}{16} - 4 \frac{1}{4} + 1 = \frac{1}{16} \\
+  f'(x_1)  & = 2 \frac{1}{4} - 4 = - \frac{7}{2}  \\
+\end{aligned}$$
+
+Il valore assoluto della funzione in $x_1$ è maggiore della tolleranza, $|f(x_1)| > \tau$; il numero di iterazioni fatte è inferiore al numero di iterazioni massimo; quindi l'algoritmo procede.
+
+$$\Delta x_1 = - \frac{f(x_1)}{f'(x_1)} = -\frac{\frac{1}{16}}{-\frac{7}{2}} = \frac{1}{56}$$
+
+$$x_2 = x_1 + \Delta x_1 = \frac{1}{4} + \frac{1}{56} = \frac{15}{56}$$
+
+**Iterazione 2.**
+
+$$\begin{aligned}
+   f(x_2) 
+     & = \left(\frac{15}{56}\right)^2 - 4 \frac{15}{56} + 1 = \\
+     & = \frac{15^2}{56^2} - \frac{15}{14} + 1 = \\
+     & = \frac{15^2}{56^2} - \frac{1}{14} = 
+     \frac{15^2 - 14 \cdot 16}{14 \cdot 14 \cdot 16} = \frac{1}{3136} = 3.1\overline{8} \cdot 10^{-4} \ .
+\end{aligned}$$
+
+Il valore assoluto della funzione in $x_2$ è minore della tolleranza, $|f(x_2)| < \tau$; l'algoritmo ha raggiunto la convergenza in 2 iterazioni con la tolleranza impostata a $\tau = 0.01$, trovando un valore approssimato di uno zero della funzione in 
+
+$$x_2 = \frac{15}{56} \ .$$
+
 ```

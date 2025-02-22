@@ -672,7 +672,7 @@ document.write(`
 \[\begin{split}\begin{aligned}
  &amp; \mathbf{0.} \, f(x) = x^2 - \frac{1}{2} x^3 \quad , \quad x \in [-1,2] &amp; \text{R: } \\
  &amp; \mathbf{1.} \, f(x) = \frac{x}{\cos x + 1}  \quad , \quad x \in \left[ -\frac{\pi}{2}, \frac{\pi}{2} \right]  &amp; \text{R: } \\
- &amp; \mathbf{2.} \, f(x) = \frac{sin{x}}{x} \quad , \quad x \in \mathbb{R} &amp; \text{R: } \\
+ &amp; \mathbf{2.} \, f(x) = \frac{\sin{x}}{x} \quad , \quad x \in \mathbb{R} &amp; \text{R: } \\
  &amp; \dots 
 \end{aligned}\end{split}\]</div>
 <p><strong>todo</strong> <em>Aggiungere problemi</em></p>
@@ -708,13 +708,62 @@ document.write(`
 <p class="admonition-title"><span class="caption-number">Exercise 24.11 </span> (Soluzione iterativa di equazioni nonlineari - Newton)</p>
 <div class="section" id="exercise-content">
 <ol class="arabic simple">
-<li><p><span class="math notranslate nohighlight">\(\ln x = - 2\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(e^{-x^2} \cos x = \frac{1}{2}\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(\dots\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(x^2 - 4x + 1 = 0 \)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(x^3 - 2x = 1\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\ln x = - 2 x\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(e^{-x} \cos x = \frac{1}{2}\)</span></p></li>
 </ol>
 </div>
 </div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Soluzione 1.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Si cerca uno zero della funzione <span class="math notranslate nohighlight">\(f(x) = x^2 - 4x + 1\)</span> con il metodo di Newton. La derivata della funzione è</p>
+<div class="math notranslate nohighlight">
+\[f'(x) = 2 x - 4 \ .\]</div>
+<p class="sd-card-text"><strong>Inizializzazione del metodo.</strong></p>
+<div class="math notranslate nohighlight">
+\[x_0 = 0\]</div>
+<p class="sd-card-text"><strong>Iterazione 0.</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+   f(x_0)  &amp; =  1 \\
+  f'(x_0)  &amp; = -4 \\
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">Il valore assoluto della funzione in <span class="math notranslate nohighlight">\(x_0\)</span> è maggiore della tolleranza, <span class="math notranslate nohighlight">\(|f(x_0)| &gt; \tau\)</span>; il numero di iterazioni fatte è inferiore al numero di iterazioni massimo; quindi l’algoritmo procede.</p>
+<div class="math notranslate nohighlight">
+\[\Delta x_0 = - \frac{f(x_0)}{f'(x_0)} = -\frac{1}{-4} = \frac{1}{4}\]</div>
+<div class="math notranslate nohighlight">
+\[x_1 = x_0 + \Delta x_0 = 0 + \frac{1}{4} = \frac{1}{4}\]</div>
+<p class="sd-card-text"><strong>Iterazione 1.</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+   f(x_1)  &amp; = \frac{1}{16} - 4 \frac{1}{4} + 1 = \frac{1}{16} \\
+  f'(x_1)  &amp; = 2 \frac{1}{4} - 4 = - \frac{7}{2}  \\
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">Il valore assoluto della funzione in <span class="math notranslate nohighlight">\(x_1\)</span> è maggiore della tolleranza, <span class="math notranslate nohighlight">\(|f(x_1)| &gt; \tau\)</span>; il numero di iterazioni fatte è inferiore al numero di iterazioni massimo; quindi l’algoritmo procede.</p>
+<div class="math notranslate nohighlight">
+\[\Delta x_1 = - \frac{f(x_1)}{f'(x_1)} = -\frac{\frac{1}{16}}{-\frac{7}{2}} = \frac{1}{56}\]</div>
+<div class="math notranslate nohighlight">
+\[x_2 = x_1 + \Delta x_1 = \frac{1}{4} + \frac{1}{56} = \frac{15}{56}\]</div>
+<p class="sd-card-text"><strong>Iterazione 2.</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+   f(x_2) 
+     &amp; = \left(\frac{15}{56}\right)^2 - 4 \frac{15}{56} + 1 = \\
+     &amp; = \frac{15^2}{56^2} - \frac{15}{14} + 1 = \\
+     &amp; = \frac{15^2}{56^2} - \frac{1}{14} = 
+     \frac{15^2 - 14 \cdot 16}{14 \cdot 14 \cdot 16} = \frac{1}{3136} = 3.1\overline{8} \cdot 10^{-4} \ .
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">Il valore assoluto della funzione in <span class="math notranslate nohighlight">\(x_2\)</span> è minore della tolleranza, <span class="math notranslate nohighlight">\(|f(x_2)| &lt; \tau\)</span>; l’algoritmo ha raggiunto la convergenza in 2 iterazioni con la tolleranza impostata a <span class="math notranslate nohighlight">\(\tau = 0.01\)</span>, trovando un valore approssimato di uno zero della funzione in</p>
+<div class="math notranslate nohighlight">
+\[x_2 = \frac{15}{56} \ .\]</div>
 </div>
+</details></div>
 </div>
 
     <script type="text/x-thebe-config">
