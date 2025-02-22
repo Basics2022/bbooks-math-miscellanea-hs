@@ -193,8 +193,12 @@ Delle seguenti funzioni viene chiesto di:
 -->
 ```
 
+(infinitesimal-calculus:analysis:problems:bisection)=
 ## Metodo di bisezione
-Si chiede di risolvere le sequenti equazioni nonlineari con il [metodo di bisezione](infinitesimal-calculus:continuous-fun:bisec) (è quindi necessario riformulare il problema come la ricerca degli zeri di una funzione), dopo aver impostato la soluzione con un metodo grafico. Il metodo grafico è necessario a farsi un'idea sul numero di soluzioni da cercare, e sui valori con cui iniziare il metodo di bisezione. Si chiede di concludere il procedimento a mano dopo 3 iterazioni, o quando si ottiene una soluzione con errore minore della tolleranza, qui scelta come $\tau = 0.01$. Si chiede infine di implementare il metodo con un linguaggio di programmazione a piacimento, per cercare una soluzione con tolleranza $\tau = 10^{-5}$
+Si chiede di risolvere le sequenti equazioni nonlineari con il [metodo di bisezione](infinitesimal-calculus:continuous-fun:bisec) (è quindi necessario riformulare il problema come la ricerca degli zeri di una funzione), dopo aver impostato la soluzione con un metodo grafico. Il metodo grafico è necessario a farsi un'idea sul numero di soluzioni da cercare, e sui valori con cui iniziare il metodo di bisezione. Si chiede di concludere il procedimento a mano dopo 3 iterazioni, o quando si ottiene una soluzione con errore minore della tolleranza, qui scelta come $\tau = 0.01$. Si chiede infine di implementare il metodo con un linguaggio di programmazione a piacimento, per cercare una soluzione con tolleranza $\tau = 10^{-5}$.
+
+Le stesse equazioni vengono affrontate [con il metodo di Newton come esercizio](infinitesimal-calculus:derivatives:problems:newton) nel capitolo sulle derivate.
+
 ```{exercise} Soluzione iterativa di equazioni nonlineari - bisezione
 1. $x^2 - 4x + 1 = 0 $
 2. $x^3 - 2x = 1$

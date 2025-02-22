@@ -399,6 +399,8 @@ Il metodo di bisezione consiste quindi nel seguente algoritmo: **todo**
 In generale, un problema non-lineare può avere più di una soluzione. Un'applicazione base del metodo di bisezione non consente di determinare tutte le soluzioni di un problema, ma si rende necessaria una ricerca. L'applicazione del metodo di bisezione può essere guidata dalla soluzione grafica dell'equazione.
 ```
 
+Il metodo di bisezione è discusso nel [bbook sull'introduzione alla programmazione e al calcolo scientifico](https://basics2022.github.io/bbooks-programming-hs/intro.html), nella sezione di [introduzione al calcolo numerico](https://basics2022.github.io/bbooks-programming-hs/ch/numerics.html). Nella sezione sui metodi numerici per la soluzione di [equazioni algebriche non lineari](https://basics2022.github.io/bbooks-programming-hs/ch/numerics/nonlinear.html#metodo-di-bisezione), il metodo di bisezione viene descritto, implementato e applicato a semplici esempi.
+
 
 <!--
 **todo** *Spostare nella sezione di precalcolo sulle successioni*

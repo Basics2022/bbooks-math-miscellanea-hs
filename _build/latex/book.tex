@@ -87,7 +87,7 @@
         
 
 \title{Matematica per le scuole superiori}
-\date{11 feb 2025}
+\date{22 feb 2025}
 \release{}
 \author{basics}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -2687,7 +2687,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-11 feb 2025
+22 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -2801,7 +2801,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-11 feb 2025
+22 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3290,7 +3290,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-11 feb 2025
+22 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3538,7 +3538,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-11 feb 2025
+22 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -6175,7 +6175,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-11 feb 2025
+22 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -6338,7 +6338,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-11 feb 2025
+22 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -9016,7 +9016,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-11 feb 2025
+22 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -9618,6 +9618,30 @@ che viene utilizzato nel calcolo dei limiti desiderati
 
 \section{Metodo di bisezione}
 \label{\detokenize{ch/infinitesimal_calculus/analysis:metodo-di-bisezione}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-continuous-fun-bisec}}
+\sphinxAtStartPar
+Il metodo di bisezione è un metodo iterativo che impiega i risultati del {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-continuous-fun-thms-zeros}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema degli zeri}}}} per la soluzione di equazioni algebriche nella forma
+\begin{equation*}
+\begin{split}f(x) = 0 \ , \qquad x \in [a,b]\end{split}
+\end{equation*}
+\sphinxAtStartPar
+con funzioni \(f(x)\) continue nell’intervallo \([a,b]\). Infatti, per il teorema degli zeri, se la funzione \(f(x)\) è continua ed esistono due numeri \(a_0, \, b_0 \in [a,b]\) tali che la funzione valutata nei due punti ha segno opposto,
+\begin{equation*}
+\begin{split}f(a_0) \, f(b_0) < 0 \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+allora esiste un valore \(x_0 \in [a_0, b_0]\) per il quale \(f(x_0) = 0\).
+
+\sphinxAtStartPar
+Il metodo di bisezione consiste quindi nel seguente algoritmo: \sphinxstylestrong{todo}
+
+\begin{sphinxadmonition}{note}{Nota:}
+\sphinxAtStartPar
+In generale, un problema non\sphinxhyphen{}lineare può avere più di una soluzione. Un’applicazione base del metodo di bisezione non consente di determinare tutte le soluzioni di un problema, ma si rende necessaria una ricerca. L’applicazione del metodo di bisezione può essere guidata dalla soluzione grafica dell’equazione.
+\end{sphinxadmonition}
+
+\sphinxAtStartPar
+Il metodo di bisezione è discusso nel \sphinxhref{https://basics2022.github.io/bbooks-programming-hs/intro.html}{bbook sull’introduzione alla programmazione e al calcolo scientifico}, nella sezione di \sphinxhref{https://basics2022.github.io/bbooks-programming-hs/ch/numerics.html}{introduzione al calcolo numerico}. Nella sezione sui metodi numerici per la soluzione di \sphinxhref{https://basics2022.github.io/bbooks-programming-hs/ch/numerics/nonlinear.html\#metodo-di-bisezione}{equazioni algebriche non lineari}, il metodo di bisezione viene descritto, implementato e applicato a semplici esempi.
+
 
 
 \sphinxstepscope
@@ -10172,9 +10196,12 @@ discutere l’esistenza degli zeri della funzione e darne una stima, facendo rif
 
 
 \subsection{Metodo di bisezione}
-\label{\detokenize{ch/infinitesimal_calculus/analysis-problems:metodo-di-bisezione}}
+\label{\detokenize{ch/infinitesimal_calculus/analysis-problems:metodo-di-bisezione}}\label{\detokenize{ch/infinitesimal_calculus/analysis-problems:infinitesimal-calculus-analysis-problems-bisection}}
 \sphinxAtStartPar
-Si chiede di risolvere le sequenti equazioni nonlineari con il {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-continuous-fun-bisec}]{\sphinxcrossref{\DUrole{std,std-ref}{metodo di bisezione}}}} (è quindi necessario riformulare il problema come la ricerca degli zeri di una funzione), dopo aver impostato la soluzione con un metodo grafico. Il metodo grafico è necessario a farsi un’idea sul numero di soluzioni da cercare, e sui valori con cui iniziare il metodo di bisezione. Si chiede di concludere il procedimento a mano dopo 3 iterazioni, o quando si ottiene una soluzione con errore minore della tolleranza, qui scelta come \(\tau = 0.01\). Si chiede infine di implementare il metodo con un linguaggio di programmazione a piacimento, per cercare una soluzione con tolleranza \(\tau = 10^{-5}\)
+Si chiede di risolvere le sequenti equazioni nonlineari con il {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-continuous-fun-bisec}]{\sphinxcrossref{\DUrole{std,std-ref}{metodo di bisezione}}}} (è quindi necessario riformulare il problema come la ricerca degli zeri di una funzione), dopo aver impostato la soluzione con un metodo grafico. Il metodo grafico è necessario a farsi un’idea sul numero di soluzioni da cercare, e sui valori con cui iniziare il metodo di bisezione. Si chiede di concludere il procedimento a mano dopo 3 iterazioni, o quando si ottiene una soluzione con errore minore della tolleranza, qui scelta come \(\tau = 0.01\). Si chiede infine di implementare il metodo con un linguaggio di programmazione a piacimento, per cercare una soluzione con tolleranza \(\tau = 10^{-5}\).
+
+\sphinxAtStartPar
+Le stesse equazioni vengono affrontate {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives-problems:infinitesimal-calculus-derivatives-problems-newton}]{\sphinxcrossref{\DUrole{std,std-ref}{con il metodo di Newton come esercizio}}}} nel capitolo sulle derivate.
 \phantomsection \label{exercise:ch/infinitesimal_calculus/analysis-problems-exercise-10}
 
 \begin{sphinxadmonition}{note}{Exercise 23.9.11 (Soluzione iterativa di equazioni nonlineari \sphinxhyphen{} bisezione)}
@@ -10184,18 +10211,60 @@ Si chiede di risolvere le sequenti equazioni nonlineari con il {\hyperref[\detok
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \item {} 
 \sphinxAtStartPar
-\(\ln x = - 2\)
+\(x^2 - 4x + 1 = 0 \)
 
 \item {} 
 \sphinxAtStartPar
-\(e^{-x^2} \cos x = \frac{1}{2}\)
+\(x^3 - 2x = 1\)
 
 \item {} 
 \sphinxAtStartPar
-\(\dots\)
+\(\ln x = - 2 x\)
+
+\item {} 
+\sphinxAtStartPar
+\(e^{-x} \cos x = \frac{1}{2}\)
 
 \end{enumerate}
 \end{sphinxadmonition}
+\subsubsection*{Soluzione 1.}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Inizializzazione del metodo.}
+\begin{equation*}
+\begin{split}\begin{aligned}
+  a_0 & = 0 \quad \rightarrow && f(0) = 0 + 0 + 1 =  1 > 0 \\
+  b_0 & = 2 \quad \rightarrow && f(2) = 4 - 8 + 1 = -3 < 0
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{Iterazione 0.} Il punto medio dell’intervallo e la funzione valutata nel punto sono
+\begin{equation*}
+\begin{split}c_0 = \frac{a_0+b_0}{2} = 1 \quad \rightarrow \quad f(1) = 1 - 4 + 1 = -2\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{Iterazione 1.} Il nuovo intervallo diventa \([a_1, b_1] = [a_0, c_0] = [0, 1]\). Il punto medio e la funzione valutata nel punto sono
+\begin{equation*}
+\begin{split}c_1 = \frac{a_1 + b_1}{2} = \frac{1}{2} \quad \rightarrow \quad f\left(\frac{1}{2}\right) = \frac{1}{4} - 4 \frac{1}{2} + 1 = -\frac{3}{4} \end{split}
+\end{equation*}
+\sphinxAtStartPar
+Il valore assoluto della funzione in \(c_1\) è maggiore della tolleranza, \(|f(c_1)| > \tau\); il numero di iterazioni fatte è inferiore al numero di iterazioni massimo; quindi l’algoritmo procede.
+
+\sphinxAtStartPar
+\sphinxstylestrong{Iterazione 2.} Il nuovo intervallo diventa \([a_2, b_2] = [a_1, c_1] = \left[0, \frac{1}{2}\right]\). Il punto medio e la funzione valutata nel punto sono
+\begin{equation*}
+\begin{split}c_2 = \frac{a_2 + b_2}{2} = \frac{1}{4} \quad \rightarrow \quad f\left(\frac{1}{4}\right) = \frac{1}{16} - 4 \frac{1}{4} + 1 = \frac{1}{16} \end{split}
+\end{equation*}
+\sphinxAtStartPar
+Il valore assoluto della funzione in \(c_2\) è maggiore della tolleranza, \(|f(c_2)| > \tau\); il numero di iterazioni fatte è inferiore al numero di iterazioni massimo; quindi l’algoritmo procede.
+
+\sphinxAtStartPar
+\sphinxstylestrong{Iterazione 3.} Il nuovo intervallo diventa \([a_3, b_3] = [c_2, b_2] = \left[\frac{1}{4}, \frac{1}{2}\right]\). Il punto medio e la funzione valutata nel punto sono
+\begin{equation*}
+\begin{split}c_3 = \frac{a_2 + b_2}{2} = \frac{3}{8} \quad \rightarrow \quad f\left(\frac{3}{8}\right) = \frac{9}{64} - 4 \frac{3}{8} + 1 = \frac{9}{64} - \frac{1}{2} = \frac{9 - 32}{64} = - \frac{23}{64} \end{split}
+\end{equation*}
+\sphinxAtStartPar
+Il valore assoluto della funzione in \(c_1\) è maggiore della tolleranza, \(|f(c_1)| > \tau\); il numero di iterazioni ha raggiunto il numero massimo di iterazioni impostato. Quindi l’esecuzione dell’algoritmo si interrompe, senza aver trovato una soluzione con la tolleranza richiesta.
 
 
 
@@ -10834,6 +10903,9 @@ e^{ix} & = 1 + ix + \frac{(ix)^2}{2!} + \frac{(ix)^3}{3!} + \frac{(ix)^4}{4!} + 
 
 \subsection{Metodo di Netwon}
 \label{\detokenize{ch/infinitesimal_calculus/derivatives:metodo-di-netwon}}\label{\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-applications-newton}}
+\sphinxAtStartPar
+Il metodo di Newton è discusso nel \sphinxhref{https://basics2022.github.io/bbooks-programming-hs/intro.html}{bbook sull’introduzione alla programmazione e al calcolo scientifico}, nella sezione di \sphinxhref{https://basics2022.github.io/bbooks-programming-hs/ch/numerics.html}{introduzione al calcolo numerico}. Nella sezione sui metodi numerici per la soluzione di \sphinxhref{https://basics2022.github.io/bbooks-programming-hs/ch/numerics/nonlinear.html\#metodo-di-newton}{equazioni algebriche non lineari}, il metodo di Newton viene descritto, implementato e applicato a semplici esempi.
+
 \sphinxstepscope
 
 
@@ -11228,7 +11300,7 @@ Si chiede di trovare i punti di minimo e massimo, locali e assoluti, e disegnare
 \begin{split}\begin{aligned}
  & \mathbf{0.} \, f(x) = x^2 - \frac{1}{2} x^3 \quad , \quad x \in [-1,2] & \text{R: } \\
  & \mathbf{1.} \, f(x) = \frac{x}{\cos x + 1}  \quad , \quad x \in \left[ -\frac{\pi}{2}, \frac{\pi}{2} \right]  & \text{R: } \\
- & \mathbf{2.} \, f(x) = \frac{sin{x}}{x} \quad , \quad x \in \mathbb{R} & \text{R: } \\
+ & \mathbf{2.} \, f(x) = \frac{\sin{x}}{x} \quad , \quad x \in \mathbb{R} & \text{R: } \\
  & \dots 
 \end{aligned}\end{split}
 \end{equation*}
@@ -11282,6 +11354,9 @@ Data una sfera di raggio \(R\), si chiede di studiare il volume e la superficie 
 \label{\detokenize{ch/infinitesimal_calculus/derivatives-problems:metodo-di-newton}}\label{\detokenize{ch/infinitesimal_calculus/derivatives-problems:infinitesimal-calculus-derivatives-problems-newton}}
 \sphinxAtStartPar
 Si chiede di risolvere le sequenti equazioni nonlineari con il {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-applications-newton}]{\sphinxcrossref{\DUrole{std,std-ref}{metodo di Newton}}}} (è quindi necessario riformulare il problema come la ricerca degli zeri di una funzione), dopo aver impostato la soluzione con un metodo grafico. Il metodo grafico è necessario a farsi un’idea sul numero di soluzioni da cercare, e sui valori con cui iniziare il metodo di Newton. Si chiede di concludere il procedimento a mano dopo 3 iterazioni, o quando si ottiene una soluzione con errore minore della tolleranza, qui scelta come \(\tau = 0.01\). Si chiede infine di implementare il metodo con un linguaggio di programmazione a piacimento, per cercare una soluzione con tolleranza \(\tau = 10^{-5}\)
+
+\sphinxAtStartPar
+Le stesse equazioni vengono affrontate {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis-problems:infinitesimal-calculus-analysis-problems-bisection}]{\sphinxcrossref{\DUrole{std,std-ref}{con il metodo di bisezione come esercizio}}}} nel capitolo sull’introduzione all’analisi.
 \phantomsection \label{exercise:ch/infinitesimal_calculus/derivatives-problems-exercise-10}
 
 \begin{sphinxadmonition}{note}{Exercise 24.10.11 (Soluzione iterativa di equazioni nonlineari \sphinxhyphen{} Newton)}
@@ -11291,19 +11366,80 @@ Si chiede di risolvere le sequenti equazioni nonlineari con il {\hyperref[\detok
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \item {} 
 \sphinxAtStartPar
-\(\ln x = - 2\)
+\(x^2 - 4x + 1 = 0 \)
 
 \item {} 
 \sphinxAtStartPar
-\(e^{-x^2} \cos x = \frac{1}{2}\)
+\(x^3 - 2x = 1\)
 
 \item {} 
 \sphinxAtStartPar
-\(\dots\)
+\(\ln x = - 2 x\)
+
+\item {} 
+\sphinxAtStartPar
+\(e^{-x} \cos x = \frac{1}{2}\)
 
 \end{enumerate}
 \end{sphinxadmonition}
+\subsubsection*{Soluzione 1.}
 
+\sphinxAtStartPar
+Si cerca uno zero della funzione \(f(x) = x^2 - 4x + 1\) con il metodo di Newton. La derivata della funzione è
+\begin{equation*}
+\begin{split}f'(x) = 2 x - 4 \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{Inizializzazione del metodo.}
+\begin{equation*}
+\begin{split}x_0 = 0\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{Iterazione 0.}
+\begin{equation*}
+\begin{split}\begin{aligned}
+   f(x_0)  & =  1 \\
+  f'(x_0)  & = -4 \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Il valore assoluto della funzione in \(x_0\) è maggiore della tolleranza, \(|f(x_0)| > \tau\); il numero di iterazioni fatte è inferiore al numero di iterazioni massimo; quindi l’algoritmo procede.
+\begin{equation*}
+\begin{split}\Delta x_0 = - \frac{f(x_0)}{f'(x_0)} = -\frac{1}{-4} = \frac{1}{4}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}x_1 = x_0 + \Delta x_0 = 0 + \frac{1}{4} = \frac{1}{4}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{Iterazione 1.}
+\begin{equation*}
+\begin{split}\begin{aligned}
+   f(x_1)  & = \frac{1}{16} - 4 \frac{1}{4} + 1 = \frac{1}{16} \\
+  f'(x_1)  & = 2 \frac{1}{4} - 4 = - \frac{7}{2}  \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Il valore assoluto della funzione in \(x_1\) è maggiore della tolleranza, \(|f(x_1)| > \tau\); il numero di iterazioni fatte è inferiore al numero di iterazioni massimo; quindi l’algoritmo procede.
+\begin{equation*}
+\begin{split}\Delta x_1 = - \frac{f(x_1)}{f'(x_1)} = -\frac{\frac{1}{16}}{-\frac{7}{2}} = \frac{1}{56}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}x_2 = x_1 + \Delta x_1 = \frac{1}{4} + \frac{1}{56} = \frac{15}{56}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{Iterazione 2.}
+\begin{equation*}
+\begin{split}\begin{aligned}
+   f(x_2) 
+     & = \left(\frac{15}{56}\right)^2 - 4 \frac{15}{56} + 1 = \\
+     & = \frac{15^2}{56^2} - \frac{15}{14} + 1 = \\
+     & = \frac{15^2}{56^2} - \frac{1}{14} = 
+     \frac{15^2 - 14 \cdot 16}{14 \cdot 14 \cdot 16} = \frac{1}{3136} = 3.1\overline{8} \cdot 10^{-4} \ .
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Il valore assoluto della funzione in \(x_2\) è minore della tolleranza, \(|f(x_2)| < \tau\); l’algoritmo ha raggiunto la convergenza in 2 iterazioni con la tolleranza impostata a \(\tau = 0.01\), trovando un valore approssimato di uno zero della funzione in
+\begin{equation*}
+\begin{split}x_2 = \frac{15}{56} \ .\end{split}
+\end{equation*}
 \sphinxstepscope
 
 
@@ -14076,7 +14212,7 @@ tangente alla curva e di dimensione (lunghezza)
 \begin{split}d \ell(q^1) := \left|d \vec{r}_{\gamma}(q^1)\right| = |\vec{r}'_{\gamma}(q^1)| d q^1 \ ,\end{split}
 \end{equation*}
 \sphinxAtStartPar
-avendo ipotizzato una variazione positiva del parametro \(|d q^1| = d q^1 > 0\) per rimuovere il valore assoluto dalla variazione del parametro. Nel caso si utilizzi il parametro lunghezza d’arco \(s\) \DUrole{xref,std,std-ref}{arc\sphinxhyphen{}length}, vale
+avendo ipotizzato una variazione positiva del parametro \(|d q^1| = d q^1 > 0\) per rimuovere il valore assoluto dalla variazione del parametro. Nel caso si utilizzi il parametro lunghezza d’arco \(s\) {\hyperref[\detokenize{ch/vector-calculus/geometry:arc-length}]{\sphinxcrossref{Definition 28.1.4}}}, vale
 \begin{equation*}
 \begin{split}d \ell(s) = |d \vec{r}_{\gamma,s}(s)| = d s \ ,\end{split}
 \end{equation*}
@@ -14487,7 +14623,7 @@ Usando un sistema di coordinate cartesiane, un punto \(P\) nello spazio può ess
 \end{equation*}
 
 \subsection{Derivata direzionale}
-\label{\detokenize{ch/vector-calculus/derivatives:derivata-direzionale}}
+\label{\detokenize{ch/vector-calculus/derivatives:derivata-direzionale}}\label{\detokenize{ch/vector-calculus/derivatives:vector-calculus-derivatives-directional}}
 \sphinxAtStartPar
 Dato il campo scalare \(f(P)\) rappresentato usando le coordinate cartesiane,
 \begin{equation*}
@@ -14527,7 +14663,7 @@ avendo introdotto il vettore formale \sphinxstylestrong{nabla}, \(\nabla \), per
 \end{equation*}
 
 \subsection{Gradiente}
-\label{\detokenize{ch/vector-calculus/derivatives:gradiente}}
+\label{\detokenize{ch/vector-calculus/derivatives:gradiente}}\label{\detokenize{ch/vector-calculus/derivatives:vector-calculus-derivatives-gradient}}
 \sphinxAtStartPar
 \sphinxstylestrong{Definizione.} Il gradiente di un campo scalare \(f(P)\) nello spazio 3\sphinxhyphen{}dimensionale è un campo vettoriale che ha la direzione locale di massima crescita della funzione e il modulo come massima derivata direzionale,
 \begin{equation*}
@@ -14552,7 +14688,7 @@ quando l’angolo tra il versore \(\hat{t}\) e il gradiente \(\nabla f(P)\) è n
 
 
 \subsection{Divergenza}
-\label{\detokenize{ch/vector-calculus/derivatives:divergenza}}
+\label{\detokenize{ch/vector-calculus/derivatives:divergenza}}\label{\detokenize{ch/vector-calculus/derivatives:vector-calculus-derivatives-divergence}}
 \sphinxAtStartPar
 La divergenza di un campo vettoriale \(\vec{f}(P)\) nello spazio 3\sphinxhyphen{}dimensionale è un campo scalare che può essere interpretato come la densità volumetrica del {\hyperref[\detokenize{ch/vector-calculus/integrals:vector-calculus-integrals-surface-flux}]{\sphinxcrossref{\DUrole{std,std-ref}{flusso del campo vettoriale}}}}. Usando un sistema di coordinate cartesiane, la divergenza di un campo vettoriale può essere scritta formalmente come il prodotto interno tra il vettore formale nabla e il campo vettoriale,
 \begin{equation*}
@@ -14600,7 +14736,7 @@ Usando le coordinate cartesiane si calcola il flusso del campo vettoriale attrav
 \end{equation*}
 
 \subsection{Rotore}
-\label{\detokenize{ch/vector-calculus/derivatives:rotore}}
+\label{\detokenize{ch/vector-calculus/derivatives:rotore}}\label{\detokenize{ch/vector-calculus/derivatives:vector-calculus-derivatives-curl}}
 \sphinxAtStartPar
 Il rotore di un campo vettoriale \(\vec{f}(P)\) nello spazio 3\sphinxhyphen{}dimensionale è un campo vettoriale che può essere interpretato come la densità di superficie di {\hyperref[\detokenize{ch/vector-calculus/integrals:vector-calculus-integrals-line-circuitation}]{\sphinxcrossref{\DUrole{std,std-ref}{circuitazione}}}}. Usando un sistema di coordinate cartesiane, il rotore di un campo vettoriale può essere scritto formalmente come il prodotto vettoriale tra il vettore formale nabla e il campo vettoriale,
 \begin{equation*}
@@ -14642,6 +14778,9 @@ Usando le coordinate cartesiane si calcola la circuitazione del campo vettoriale
 \end{equation*}
 
 
+
+\subsection{Laplaciano}
+\label{\detokenize{ch/vector-calculus/derivatives:laplaciano}}\label{\detokenize{ch/vector-calculus/derivatives:vector-calculus-derivatives-laplacian}}
 \sphinxstepscope
 
 
@@ -14890,7 +15029,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-11 feb 2025
+22 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
