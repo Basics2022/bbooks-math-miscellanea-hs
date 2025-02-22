@@ -533,3 +533,5 @@ e^{ix} & = 1 + ix + \frac{(ix)^2}{2!} + \frac{(ix)^3}{3!} + \frac{(ix)^4}{4!} + 
 (infinitesimal-calculus:derivatives:applications:newton)=
 ### Metodo di Netwon
 
+Il metodo di Newton è discusso nel [bbook sull'introduzione alla programmazione e al calcolo scientifico](https://basics2022.github.io/bbooks-programming-hs/intro.html), nella sezione di [introduzione al calcolo numerico](https://basics2022.github.io/bbooks-programming-hs/ch/numerics.html). Nella sezione sui metodi numerici per la soluzione di [equazioni algebriche non lineari](https://basics2022.github.io/bbooks-programming-hs/ch/numerics/nonlinear.html#metodo-di-newton), il metodo di Newton viene descritto, implementato e applicato a semplici esempi.
+

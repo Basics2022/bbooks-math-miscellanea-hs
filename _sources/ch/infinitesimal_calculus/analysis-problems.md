@@ -193,12 +193,48 @@ Delle seguenti funzioni viene chiesto di:
 -->
 ```
 
+(infinitesimal-calculus:analysis:problems:bisection)=
 ## Metodo di bisezione
-Si chiede di risolvere le sequenti equazioni nonlineari con il [metodo di bisezione](infinitesimal-calculus:continuous-fun:bisec) (è quindi necessario riformulare il problema come la ricerca degli zeri di una funzione), dopo aver impostato la soluzione con un metodo grafico. Il metodo grafico è necessario a farsi un'idea sul numero di soluzioni da cercare, e sui valori con cui iniziare il metodo di bisezione. Si chiede di concludere il procedimento a mano dopo 3 iterazioni, o quando si ottiene una soluzione con errore minore della tolleranza, qui scelta come $\tau = 0.01$. Si chiede infine di implementare il metodo con un linguaggio di programmazione a piacimento, per cercare una soluzione con tolleranza $\tau = 10^{-5}$
+Si chiede di risolvere le sequenti equazioni nonlineari con il [metodo di bisezione](infinitesimal-calculus:continuous-fun:bisec) (è quindi necessario riformulare il problema come la ricerca degli zeri di una funzione), dopo aver impostato la soluzione con un metodo grafico. Il metodo grafico è necessario a farsi un'idea sul numero di soluzioni da cercare, e sui valori con cui iniziare il metodo di bisezione. Si chiede di concludere il procedimento a mano dopo 3 iterazioni, o quando si ottiene una soluzione con errore minore della tolleranza, qui scelta come $\tau = 0.01$. Si chiede infine di implementare il metodo con un linguaggio di programmazione a piacimento, per cercare una soluzione con tolleranza $\tau = 10^{-5}$.
+
+Le stesse equazioni vengono affrontate [con il metodo di Newton come esercizio](infinitesimal-calculus:derivatives:problems:newton) nel capitolo sulle derivate.
+
 ```{exercise} Soluzione iterativa di equazioni nonlineari - bisezione
-1. $\ln x = - 2$
-2. $e^{-x^2} \cos x = \frac{1}{2}$
-3. $\dots$ 
+1. $x^2 - 4x + 1 = 0 $
+2. $x^3 - 2x = 1$
+3. $\ln x = - 2 x$
+4. $e^{-x} \cos x = \frac{1}{2}$
+```
+```{dropdown} Soluzione 1.
+**Inizializzazione del metodo.**
+
+$$\begin{aligned}
+  a_0 & = 0 \quad \rightarrow && f(0) = 0 + 0 + 1 =  1 > 0 \\
+  b_0 & = 2 \quad \rightarrow && f(2) = 4 - 8 + 1 = -3 < 0
+\end{aligned}$$
+
+**Iterazione 0.** Il punto medio dell'intervallo e la funzione valutata nel punto sono
+
+$$c_0 = \frac{a_0+b_0}{2} = 1 \quad \rightarrow \quad f(1) = 1 - 4 + 1 = -2$$
+
+**Iterazione 1.** Il nuovo intervallo diventa $[a_1, b_1] = [a_0, c_0] = [0, 1]$. Il punto medio e la funzione valutata nel punto sono
+
+$$c_1 = \frac{a_1 + b_1}{2} = \frac{1}{2} \quad \rightarrow \quad f\left(\frac{1}{2}\right) = \frac{1}{4} - 4 \frac{1}{2} + 1 = -\frac{3}{4} $$
+
+Il valore assoluto della funzione in $c_1$ è maggiore della tolleranza, $|f(c_1)| > \tau$; il numero di iterazioni fatte è inferiore al numero di iterazioni massimo; quindi l'algoritmo procede.
+
+**Iterazione 2.** Il nuovo intervallo diventa $[a_2, b_2] = [a_1, c_1] = \left[0, \frac{1}{2}\right]$. Il punto medio e la funzione valutata nel punto sono
+
+$$c_2 = \frac{a_2 + b_2}{2} = \frac{1}{4} \quad \rightarrow \quad f\left(\frac{1}{4}\right) = \frac{1}{16} - 4 \frac{1}{4} + 1 = \frac{1}{16} $$
+
+Il valore assoluto della funzione in $c_2$ è maggiore della tolleranza, $|f(c_2)| > \tau$; il numero di iterazioni fatte è inferiore al numero di iterazioni massimo; quindi l'algoritmo procede.
+
+**Iterazione 3.** Il nuovo intervallo diventa $[a_3, b_3] = [c_2, b_2] = \left[\frac{1}{4}, \frac{1}{2}\right]$. Il punto medio e la funzione valutata nel punto sono
+
+$$c_3 = \frac{a_2 + b_2}{2} = \frac{3}{8} \quad \rightarrow \quad f\left(\frac{3}{8}\right) = \frac{9}{64} - 4 \frac{3}{8} + 1 = \frac{9}{64} - \frac{1}{2} = \frac{9 - 32}{64} = - \frac{23}{64} $$
+
+Il valore assoluto della funzione in $c_1$ è maggiore della tolleranza, $|f(c_1)| > \tau$; il numero di iterazioni ha raggiunto il numero massimo di iterazioni impostato. Quindi l'esecuzione dell'algoritmo si interrompe, senza aver trovato una soluzione con la tolleranza richiesta.
+
 ```
 
 
