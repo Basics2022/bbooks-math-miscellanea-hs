@@ -564,7 +564,14 @@ document.write(`
 </tr>
 </tbody>
 </table>
-<div class="section" id="interpretazione-geometrica">
+<div class="proof definition admonition" id="infinitesimal-calculus:integrals:def:integrable-function">
+<p class="admonition-title"><span class="caption-number">Definition 25.3 </span> (Funzione integrabile (secondo Riemann))</p>
+<div class="definition-content section" id="proof-content">
+<p>Una funzione <span class="math notranslate nohighlight">\(f(x): D \subseteq \mathbb{R} \rightarrow \mathbb{R}\)</span> è integrabile sull’intervallo <span class="math notranslate nohighlight">\([a,b] \subseteq D\)</span> se esiste (finito?) l’integrale di Riemann</p>
+<div class="math notranslate nohighlight">
+\[\int_{a}^{b} f(x) \, dx \ .\]</div>
+</div>
+</div><div class="section" id="interpretazione-geometrica">
 <span id="infinitesimal-calculus-integrals-def-geom"></span><h3><span class="section-number">25.1.1. </span>Interpretazione geometrica<a class="headerlink" href="#interpretazione-geometrica" title="Permalink to this heading">#</a></h3>
 <p>L’integrale definito</p>
 <div class="math notranslate nohighlight">
@@ -596,6 +603,11 @@ document.write(`
 </ul>
 <div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-integrals-prop-swap">
 <span class="eqno">(25.6)<a class="headerlink" href="#equation-infinitesimal-calculus-integrals-prop-swap" title="Permalink a questa equazione">#</a></span>\[\int_{x=a}^{b} f(x) dx = - \int_{x=b}^{a} f(x) \, dx\]</div>
+<ul class="simple">
+<li><p>integrale di una funzione costante</p></li>
+</ul>
+<div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-integrals-prop-const">
+<span class="eqno">(25.7)<a class="headerlink" href="#equation-infinitesimal-calculus-integrals-prop-const" title="Permalink a questa equazione">#</a></span>\[\int_{x=a}^{b} m dx = (b-a) \, m \]</div>
 <table class="table">
 <colgroup>
 <col style="width: 50%" />
@@ -619,7 +631,7 @@ document.write(`
 \[\int_a^x f(t) \ dt = \int_a^b f(t) \ dt + \int_b^x f(t) \ dt \ , \]</div>
 <p>si osserva che i due integrali con estremo superiore <span class="math notranslate nohighlight">\(x\)</span> e diverso estremo inferiore differiscono solo per una quantità indipendente da <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(\int_{a}^{b} f(t) \ dt\)</span>. Data la funzione <span class="math notranslate nohighlight">\(f(x)\)</span> e il valore <span class="math notranslate nohighlight">\(a\)</span> come paramtetro, si definisce una funzione di <span class="math notranslate nohighlight">\(x\)</span></p>
 <div class="math notranslate nohighlight" id="equation-infinitesimal-calculus-integrals-primi">
-<span class="eqno">(25.7)<a class="headerlink" href="#equation-infinitesimal-calculus-integrals-primi" title="Permalink a questa equazione">#</a></span>\[F(x;a) := \int_a^x f(t) \ dt \ .\]</div>
+<span class="eqno">(25.8)<a class="headerlink" href="#equation-infinitesimal-calculus-integrals-primi" title="Permalink a questa equazione">#</a></span>\[F(x;a) := \int_a^x f(t) \ dt \ .\]</div>
 <p>Usando questa definizione, è immediato dimostrare che l’integrale definito <span class="math notranslate nohighlight">\(\int_{a}^{b} f(t) \ dt\)</span> è uguale alla differenza della funzione <span class="math notranslate nohighlight">\(F(\cdot; b)\)</span> calcolata nei due estremi,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
@@ -664,7 +676,7 @@ Dimostrazione<div class="sd-summary-down docutils">
 <p class="sd-card-text">Integrando questa relazione sull’intervallo <span class="math notranslate nohighlight">\([a,b]\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[\int_{a}^{b} m \, dx \le \int_{a}^{b} f(x) \, dx \le \int_{a}^{b} M ,\ dx \ .\]</div>
-<p class="sd-card-text">L”<span class="xref myst">integrale di una funzione costante</span> permette di calcolare gli integrali estremi</p>
+<p class="sd-card-text">La regola di integrazione per una funzione costante <a class="reference internal" href="#equation-infinitesimal-calculus-integrals-prop-const">(25.7)</a> permette di calcolare gli integrali estremi</p>
 <div class="math notranslate nohighlight">
 \[(b-a) m \le \int_{a}^{b} f(x) \, dx \le (b-a) M \ ,\]</div>
 <p class="sd-card-text">e dividendo per <span class="math notranslate nohighlight">\((b-a) \ne 0\)</span>, si ottiene la relazione</p>
@@ -700,8 +712,17 @@ Dimostrazione<div class="sd-summary-down docutils">
 <div class="proof theorem admonition" id="integrals:thm:fund">
 <span id="id1"></span><p class="admonition-title"><span class="caption-number">Theorem 25.2 </span> (Teorema fondamentale del calcolo infinitesimale)</p>
 <div class="theorem-content section" id="proof-content">
+<p>Data una funzione <span class="math notranslate nohighlight">\(f: D \rightarrow \mathbb{R}\)</span> integrabile sull’intervallo <span class="math notranslate nohighlight">\([a,b] \subseteq D\)</span>, <a href="#id2"><span class="problematic" id="id3">infinitesimal-calculus:integrals:def:integrable-function</span></a>, si definisce la funzione</p>
 <div class="math notranslate nohighlight">
-\[\dfrac{d}{dx} \int_{a}^{x} f(t) dt = f(x) \]</div>
+\[F(x) := \int_{a}^{x} f(t) \, dt \ .\]</div>
+<p><strong>Oss.</strong> Qui la variabile di integrazione <span class="math notranslate nohighlight">\(t\)</span> è una variabile <strong>dummy</strong>, non ha un significato particolare che resista all’operazione di integrazione. La funzione <span class="math notranslate nohighlight">\(F\)</span> ha come argomento <span class="math notranslate nohighlight">\(x\)</span> l’estremo di integrazione superiore dell’integrale.</p>
+<ol class="arabic">
+<li><p>Se <span class="math notranslate nohighlight">\(f\)</span> è limitata la funzione <span class="math notranslate nohighlight">\(F(x)\)</span> è continua se <span class="math notranslate nohighlight">\(f\)</span> limitata</p></li>
+<li><p>Se <span class="math notranslate nohighlight">\(f\)</span> è continua in <span class="math notranslate nohighlight">\((a,b)\)</span>, allora <span class="math notranslate nohighlight">\(F(x)\)</span> è differenziabile in <span class="math notranslate nohighlight">\((a,b)\)</span> e la sua derivata vale <span class="math notranslate nohighlight">\(F'(x) = f(x)\)</span>, o più esplicitamente</p>
+<div class="math notranslate nohighlight">
+\[\dfrac{d}{dx} \int_{a}^{x} f(t) dt = f(x) \ .\]</div>
+</li>
+</ol>
 </div>
 </div><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -710,14 +731,33 @@ Dimostrazione<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><strong>Dim.</strong> Usando la <a class="reference internal" href="derivatives.html#infinitesimal-calculus-derivatives-def"><span class="std std-ref">definizione di derivata</span></a>, le <a class="reference internal" href="#infinitesimal-calculus-integrals-def-definite-prop"><span class="std std-ref">proprietà dell’integrale definito</span></a> e il <a class="reference internal" href="#infinitesimal-calculus-integrals-thm-avg"><span class="std std-ref">teorema della media</span></a>,</p>
+<p class="sd-card-text"><strong>Continuità.</strong> Si dimostra la continuità di <span class="math notranslate nohighlight">\(F(x)\)</span>, usando la definizione di <a class="reference internal" href="analysis.html#infinitesimal-calculus-continuous-fun-def"><span class="std std-ref">funzione continua</span></a>, valutando <span class="math notranslate nohighlight">\(\lim_{x \rightarrow x_0} F(x)\)</span>, e verificando che vale <span class="math notranslate nohighlight">\(\lim_{x \rightarrow x_0} F(x) = F(x_0)\)</span></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
-\dfrac{d}{dx} \int_{a}^x f(y) dy &amp; = \lim_{\varepsilon \rightarrow 0 }\frac{1}{\varepsilon} \Big[ \int_{a}^{x+\varepsilon} f(y) dy - \int_{a}^{x} f(y) dy \Big] = \\
-&amp; = \lim_{\varepsilon \rightarrow 0 }\frac{1}{\varepsilon} \Big[ \int_{x}^{x+\varepsilon} f(y) dy \Big] = \\
-&amp; = \lim_{\varepsilon \rightarrow 0 } \frac{1}{\varepsilon} \varepsilon f(\xi) = \qquad \xi \in [x,x+\varepsilon] \\
-&amp; = \lim_{\varepsilon \rightarrow 0 } f(\xi) = f(x) . \\
+  \lim_{x \rightarrow x_0} F(x) 
+  &amp; = \lim_{x \rightarrow x_0} \int_{a}^{x} f(t) \, dt = &amp;&amp; (1) \\
+  &amp; = \lim_{x \rightarrow x_0} \left[ \int_{a}^{x_0} f(t) \, dt + \int_{x_0}^{x} f(t) \, dt \right] = &amp;&amp; (2) \\
+  &amp; = \int_{a}^{x_0} f(t) \, dt + \lim_{x \rightarrow x_0} \int_{x_0}^{x} f(t) \, dt = &amp;&amp; (3) \\
+  &amp; = \int_{a}^{x_0} f(t) \, dt = F(x_0) \ ,
 \end{aligned}\end{split}\]</div>
+<p class="sd-card-text">avendo usato (1) l’additività dell’integrale sull’intervallo <a class="reference internal" href="#equation-infinitesimal-calculus-integrals-prop-add">(25.4)</a>, (2) le <a class="reference internal" href="analysis.html#infinitesimal-calculus-limits-thms-operations"><span class="std std-ref">operazioni con i limiti</span></a> per scrivere il limite della somma di funzione come la somma dei limiti - almeno, quando i limiti esistono finiti, come in questo caso per l’intergabilità della funzione -, e (3) riconoscendo che l’integrale di una funzione limitata su un intervallo di dimensione nulla è nullo esso stesso.</p>
+<p class="sd-card-text"><strong>Derivata di <span class="math notranslate nohighlight">\(F(x)\)</span>.</strong> L’espressione della derivata di <span class="math notranslate nohighlight">\(F(x)\)</span> si ottiene dal calcolo diretto, partendo dalla <a class="reference internal" href="derivatives.html#infinitesimal-calculus-derivatives-def"><span class="std std-ref">definizione di derivata di una funzione reale a variabile reale</span></a></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+F'(x)
+  &amp; := \dfrac{d}{dx} \int_{a}^x f(t) dt = \\
+  &amp; = \lim_{\varepsilon \rightarrow 0 } \frac{1}{\varepsilon} \Big[ \int_{a}^{x+\varepsilon} f(t) dt - \int_{a}^{x} f(t) dt \Big] = &amp;&amp; (1) \\
+  &amp; = \lim_{\varepsilon \rightarrow 0 } \frac{1}{\varepsilon} \Big[ \int_{x}^{x+\varepsilon} f(y) dy \Big] = &amp;&amp; (2) \\
+  &amp; = \lim_{\varepsilon \rightarrow 0 } \frac{1}{\varepsilon} \varepsilon f(\xi_{[x,x+\varepsilon]}) = \qquad x_{[x,x+\varepsilon]} \in [x,x+\varepsilon] &amp;&amp; (3) \\
+  &amp; = \lim_{\varepsilon \rightarrow 0 } f(\xi_{[x,x+\varepsilon]}) = f(x) . \\
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">avendo usato (1) l’additività dell’integrale sull’intervallo <a class="reference internal" href="#equation-infinitesimal-calculus-integrals-prop-add">(25.4)</a>, (2) il <a class="reference internal" href="#infinitesimal-calculus-integrals-thm-avg"><span class="std std-ref">teorema della media</span></a>, e (3) la <a class="reference internal" href="analysis.html#infinitesimal-calculus-continuous-fun-def"><span class="std std-ref">continuità di <span class="math notranslate nohighlight">\(f\)</span></span></a>, che permette di scrivere</p>
+<div class="math notranslate nohighlight">
+\[\lim_{\varepsilon \rightarrow 0} f(\xi_{[x,x+\varepsilon]}) = \lim_{\xi_{[x,x+\varepsilon]} \rightarrow x} f(\xi) =  f(x) \ ,\]</div>
+<p class="sd-card-text">quando <span class="math notranslate nohighlight">\(\xi_{[x,x+\varepsilon]} \rightarrow x\)</span> quando le dimensioni dell’intervallo vengono fatte tendere a zero, e di concludere la dimostrazione del teorema.</p>
+<p class="sd-card-text"><strong>Oss.</strong> Per evitare questioni sull’appartenenza di <span class="math notranslate nohighlight">\(x + \varepsilon \in [a,b]\)</span> si può usare la definizione «all’indietro» della derivata,</p>
+<div class="math notranslate nohighlight">
+\[F'(x) := \lim_{\varepsilon \rightarrow 0} \frac{f(x) - f(x-\varepsilon)}{\varepsilon} \ . \]</div>
 </div>
 </details></div>
 <div class="section" id="derivata-su-dominio-dipendente-dalla-variabile-indipendente">
@@ -789,7 +829,7 @@ La regola di derivazione del prodotto <span class="math notranslate nohighlight"
 <li><p>…</p></li>
 </ul>
 </div>
-<div class="proof example dropdown admonition" id="example-5">
+<div class="proof example dropdown admonition" id="example-6">
 <p class="admonition-title"><span class="caption-number">Example 25.1 </span> (Esempio di integrazione per parti)</p>
 <div class="example-content section" id="proof-content">
 <p>Si vuole calcolare l’integrale</p>
@@ -832,7 +872,7 @@ La regola di derivazione del prodotto <span class="math notranslate nohighlight"
   &amp; \sqrt{a^2 + x^2} &amp;&amp; \rightarrow &amp;&amp; x = a \sinh \theta \\
   &amp; \sqrt{x^2 - a^2} &amp;&amp; \rightarrow &amp;&amp; x = a \cosh \theta \\
 \end{aligned}\end{split}\]</div>
-<div class="proof example dropdown admonition" id="example-6">
+<div class="proof example dropdown admonition" id="example-7">
 <p class="admonition-title"><span class="caption-number">Example 25.2 </span> (<span class="math notranslate nohighlight">\(\displaystyle \int \sqrt{a^2 - x^2} \,  dx\)</span>)</p>
 <div class="example-content section" id="proof-content">
 <p>L’integrale</p>
@@ -854,7 +894,7 @@ La regola di derivazione del prodotto <span class="math notranslate nohighlight"
 <div class="math notranslate nohighlight">
 \[\int \sqrt{a^2 - x^2} \, dx = \frac{a^2}{2} \left[ \text{arcsin}\left( \frac{x}{a} \right) + \frac{x}{a}\sqrt{1 - \left( \frac{x}{a} \right)^2 }\right] + C .\]</div>
 </div>
-</div><div class="proof example dropdown admonition" id="example-7">
+</div><div class="proof example dropdown admonition" id="example-8">
 <p class="admonition-title"><span class="caption-number">Example 25.3 </span> (<span class="math notranslate nohighlight">\( \displaystyle \int \sqrt{a^2 + x^2} \,  dx\)</span>)</p>
 <div class="example-content section" id="proof-content">
 <p>L’integrale</p>
@@ -899,7 +939,7 @@ La regola di derivazione del prodotto <span class="math notranslate nohighlight"
    &amp; = \frac{a^2}{2} \left\{ \ln \left[ \frac{x}{a}  +  \sqrt{1 + \left( \frac{x}{a} \right)^2} \right] + \frac{x}{a} \sqrt{1 + \left(\frac{x}{a}\right)^2} \right\} + C
 \end{aligned}\end{split}\]</div>
 </div>
-</div><div class="proof example dropdown admonition" id="example-8">
+</div><div class="proof example dropdown admonition" id="example-9">
 <p class="admonition-title"><span class="caption-number">Example 25.4 </span> (<span class="math notranslate nohighlight">\(\displaystyle \int \sqrt{x^2 - a^2} \,  dx\)</span>)</p>
 <div class="example-content section" id="proof-content">
 <p>L’integrale</p>
@@ -943,7 +983,7 @@ La regola di derivazione del prodotto <span class="math notranslate nohighlight"
    &amp; = \frac{a^2}{2} \left\{ -\ln \left[ \frac{x}{a}  \pm  \sqrt{\left( \frac{x}{a} \right)^2 - 1} \right] + \frac{x}{a} \sqrt{ \left(\frac{x}{a}\right)^2 - 1} \right\} + C
 \end{aligned}\end{split}\]</div>
 </div>
-</div><div class="proof example dropdown admonition" id="example-9">
+</div><div class="proof example dropdown admonition" id="example-10">
 <p class="admonition-title"><span class="caption-number">Example 25.5 </span> (<span class="math notranslate nohighlight">\(\displaystyle \int \frac{1}{\sqrt{a^2 - x^2}} \,  dx\)</span>)</p>
 <div class="example-content section" id="proof-content">
 <p>L’integrale</p>
@@ -959,7 +999,7 @@ La regola di derivazione del prodotto <span class="math notranslate nohighlight"
    &amp; = \text{arcsin} x + C \ .
 \end{aligned}\end{split}\]</div>
 </div>
-</div><div class="proof example dropdown admonition" id="example-10">
+</div><div class="proof example dropdown admonition" id="example-11">
 <p class="admonition-title"><span class="caption-number">Example 25.6 </span> (<span class="math notranslate nohighlight">\(\displaystyle \int \frac{1}{\sqrt{a^2 + x^2}} \,  dx\)</span>)</p>
 <div class="example-content section" id="proof-content">
 <p>L’integrale</p>
@@ -982,7 +1022,7 @@ La regola di derivazione del prodotto <span class="math notranslate nohighlight"
    &amp; = \ln \left[ \frac{x}{a}  +  \sqrt{\left( \frac{x}{a} \right)^2 + 1} \right] \ .
 \end{aligned}\end{split}\]</div>
 </div>
-</div><div class="proof example dropdown admonition" id="example-11">
+</div><div class="proof example dropdown admonition" id="example-12">
 <p class="admonition-title"><span class="caption-number">Example 25.7 </span> (<span class="math notranslate nohighlight">\(\displaystyle \int \frac{1}{\sqrt{x^2 - a^2}} \,  dx\)</span>)</p>
 <div class="example-content section" id="proof-content">
 <p>L’integrale</p>
@@ -1013,7 +1053,7 @@ La regola di derivazione del prodotto <span class="math notranslate nohighlight"
   &amp; \sqrt{a + bx + x^2}                                  &amp;&amp; \rightarrow &amp;&amp; a + bx + x^2 = ( z - x )^2 \\
   &amp; \sqrt{a + bx - x^2} = \sqrt{(\alpha + x)(\beta - x)} &amp;&amp; \rightarrow &amp;&amp; a + bx - x^2 = ( \alpha + x )^2 z^2 \\
 \end{aligned}\end{split}\]</div>
-<div class="proof example dropdown admonition" id="example-12">
+<div class="proof example dropdown admonition" id="example-13">
 <p class="admonition-title"><span class="caption-number">Example 25.8 </span> (<span class="math notranslate nohighlight">\(\displaystyle \int \sqrt[n]{ax+b} \, dx \)</span>)</p>
 <div class="example-content section" id="proof-content">
 <p><strong>Metodo 0.</strong></p>
@@ -1037,7 +1077,7 @@ La regola di derivazione del prodotto <span class="math notranslate nohighlight"
   &amp; = \frac{1}{a} \frac{n}{n+1} (ax+b)^{\frac{n+1}{n}} + C  \ .
 \end{aligned}\end{split}\]</div>
 </div>
-</div><div class="proof example dropdown admonition" id="example-13">
+</div><div class="proof example dropdown admonition" id="example-14">
 <p class="admonition-title"><span class="caption-number">Example 25.9 </span> (<span class="math notranslate nohighlight">\(\displaystyle \int \sqrt{a + bx + x^2} \, dx \)</span>)</p>
 <div class="example-content section" id="proof-content">
 <p><strong>Metodo 0.</strong> Con completamento del quadrato</p>
@@ -1050,7 +1090,7 @@ La regola di derivazione del prodotto <span class="math notranslate nohighlight"
 <p>ci si può riportare agli integrali della forma <span class="math notranslate nohighlight">\(\displaystyle \int \sqrt{y^2 - A^2} \, dy\)</span> o <span class="math notranslate nohighlight">\(\displaystyle \int \sqrt{y^2 + A^2} \, dy\)</span> a seconda del valore di <span class="math notranslate nohighlight">\(a - \frac{b^2}{4}\)</span>, con <span class="math notranslate nohighlight">\(y = x+ \frac{b}{2}\)</span>.</p>
 <p><strong>Metodo 1.</strong> Con cambio di variabili</p>
 </div>
-</div><div class="proof example dropdown admonition" id="example-14">
+</div><div class="proof example dropdown admonition" id="example-15">
 <p class="admonition-title"><span class="caption-number">Example 25.10 </span> (<span class="math notranslate nohighlight">\(\displaystyle \int \sqrt{a + bx - x^2} \, dx \)</span>)</p>
 <div class="example-content section" id="proof-content">
 <p><strong>Metodo 0.</strong> Con completamento del quadrato</p>
@@ -1068,7 +1108,7 @@ La regola di derivazione del prodotto <span class="math notranslate nohighlight"
 <div class="math notranslate nohighlight">
 \[z = \tan\left( \frac{x}{2} \right) \ ,\]</div>
 <p>risulta utile a trasformare un’integranda dove compaiono funzioni trigonometriche in un’integranda razionale.</p>
-<div class="proof example dropdown admonition" id="example-15">
+<div class="proof example dropdown admonition" id="example-16">
 <p class="admonition-title"><span class="caption-number">Example 25.11 </span> (Razionalizzazione con cambio di variabili <span class="math notranslate nohighlight">\(z = \tan\left( \frac{x}{2} \right)\)</span>.)</p>
 <div class="example-content section" id="proof-content">
 <p>Usando la definizione della tangente</p>
@@ -1092,7 +1132,7 @@ La regola di derivazione del prodotto <span class="math notranslate nohighlight"
 <h3><span class="section-number">25.4.3. </span>Frazioni parziali<a class="headerlink" href="#frazioni-parziali" title="Permalink to this heading">#</a></h3>
 <p><strong>todo</strong> E” una regola valida per funzioni integrande che possono essere scritte come il rapporto di due polinomi, <span class="math notranslate nohighlight">\(f(x) = \frac{N(x)}{D(x)}\)</span>, e segue direttamente dalla possibilità di scomporre il polinomio a denominatore in polinomi di primo e secondo grado, grazie al <a class="reference internal" href="../precalculus/polynomials.html#math-hs-precalculus-polynomials-alg-fund-thm"><span class="std std-ref">teorema fondamentale dell’algebra</span></a>, e scrivere il rapporto come somma di frazioni.</p>
 <p><strong>todo</strong> <em>descrivere meglio il metodo</em></p>
-<div class="proof example dropdown admonition" id="example-16">
+<div class="proof example dropdown admonition" id="example-17">
 <p class="admonition-title"><span class="caption-number">Example 25.12 </span> (Integrazione con frazioni parziali)</p>
 <div class="example-content section" id="proof-content">
 <div class="math notranslate nohighlight">
@@ -1104,7 +1144,7 @@ La regola di derivazione del prodotto <span class="math notranslate nohighlight"
   &amp; = \frac{3}{2} x^2 - 6 x + 13 \ln |x+2| + C \ .
 \end{aligned}\end{split}\]</div>
 </div>
-</div><div class="proof example dropdown admonition" id="example-17">
+</div><div class="proof example dropdown admonition" id="example-18">
 <p class="admonition-title"><span class="caption-number">Example 25.13 </span> (Integrazione con frazioni parziali)</p>
 <div class="example-content section" id="proof-content">
 <div class="math notranslate nohighlight">
