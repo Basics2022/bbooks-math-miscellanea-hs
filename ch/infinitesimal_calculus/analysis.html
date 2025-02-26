@@ -256,8 +256,8 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="integrals.html">25. Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="integrals-table.html">25.5. Tavola degli integrali indefiniti più comuni</a></li>
-<li class="toctree-l2"><a class="reference internal" href="integrals-problems.html">25.6. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integrals-table.html">25.6. Tavola degli integrali indefiniti più comuni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integrals-problems.html">25.7. Problemi</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../ode.html">26. Equazioni differenziali ordinarie</a></li>
@@ -532,7 +532,11 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calcolo-dei-limiti">23.7. Calcolo dei limiti</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-di-bisezione">23.8. Metodo di bisezione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applicazioni">23.8. Applicazioni</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#studio-di-funzione">23.8.1. Studio di funzione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-di-bisezione-per-la-soluzione-di-equazioni-algebriche-f-x-0">23.8.2. Metodo di bisezione per la soluzione di equazioni algebriche <span class="math notranslate nohighlight">\(f(x) = 0\)</span></a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -1025,8 +1029,25 @@ Dimostrazione di <span class="math notranslate nohighlight">\(\ \lim_{x \rightar
 <span id="infinitesimal-calculus-limits-eval"></span><h2><span class="section-number">23.7. </span>Calcolo dei limiti<a class="headerlink" href="#calcolo-dei-limiti" title="Permalink to this heading">#</a></h2>
 <p><strong>todo</strong> Riassumere alcune tecniche per il calcolo dei limiti…<em>niente di speciale; mettere insieme i metodi presentati nel capitolo e mostrare qualche esempio del calcolo di limiti</em></p>
 </div>
-<div class="section" id="metodo-di-bisezione">
-<span id="infinitesimal-calculus-continuous-fun-bisec"></span><h2><span class="section-number">23.8. </span>Metodo di bisezione<a class="headerlink" href="#metodo-di-bisezione" title="Permalink to this heading">#</a></h2>
+<div class="section" id="applicazioni">
+<span id="infinitesimal-calculus-analysis-applications"></span><h2><span class="section-number">23.8. </span>Applicazioni<a class="headerlink" href="#applicazioni" title="Permalink to this heading">#</a></h2>
+<div class="section" id="studio-di-funzione">
+<span id="infinitesimal-calculus-analysis-applications-fun"></span><h3><span class="section-number">23.8.1. </span>Studio di funzione<a class="headerlink" href="#studio-di-funzione" title="Permalink to this heading">#</a></h3>
+<p>Uno studio di funzione completo può richiedere la padronanza di tutti gli strumenti del calcolo infinitesimale: ricerca del dominio, limiti, derivate e integrali.</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#infinitesimal-calculus-analysis-applications-fun"><span class="std std-ref">studio di funzione - capitolo di introduzione all’analisi</span></a> - dominio, limiti ed eventuali asintoti</p>
+<ul>
+<li><p>trovare il dominio di una funzione</p></li>
+<li><p>valutare i limiti della funzione agli estremi del dominio, o in corrispondenza di punti di discontinuità</p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="derivatives.html#infinitesimal-calculus-derivatives-applications-fun"><span class="std std-ref">studio di funzione - capitolo sulle derivate</span></a> - punti di estremi locali, punti di flesso</p></li>
+<li><p><a class="reference internal" href="integrals.html#infinitesimal-calculus-integrals-applications-fun"><span class="std std-ref">studio di funzione - capitolo sugli integrali</span></a> - area sottesa al grafico di una funzione, e altre grandezze integrali</p></li>
+</ul>
+</div>
+<div class="section" id="metodo-di-bisezione-per-la-soluzione-di-equazioni-algebriche-f-x-0">
+<span id="infinitesimal-calculus-analysis-bisec"></span><h3><span class="section-number">23.8.2. </span>Metodo di bisezione per la soluzione di equazioni algebriche <span class="math notranslate nohighlight">\(f(x) = 0\)</span><a class="headerlink" href="#metodo-di-bisezione-per-la-soluzione-di-equazioni-algebriche-f-x-0" title="Permalink to this heading">#</a></h3>
+<p>Due algoritmi iterativi classici usati per la soluzione di equazioni algebriche della forma <span class="math notranslate nohighlight">\(f(x) = 0\)</span> - problema che può essere descritto come ricerca degli zeri della funzione <span class="math notranslate nohighlight">\(f(x)\)</span> - sono il <strong>metodo di bisezione</strong> e il <strong>metodo di Newton</strong>. Il metodo di bisezione viene descritto qui, mentre si rimanda alla sezione sulle derivate per il <a class="reference internal" href="derivatives.html#infinitesimal-calculus-derivatives-applications-newton"><span class="std std-ref">metodo di Newton</span></a>.</p>
 <p>Il metodo di bisezione è un metodo iterativo che impiega i risultati del <a class="reference internal" href="#infinitesimal-calculus-continuous-fun-thms-zeros"><span class="std std-ref">teorema degli zeri</span></a> per la soluzione di equazioni algebriche nella forma</p>
 <div class="math notranslate nohighlight">
 \[f(x) = 0 \ , \qquad x \in [a,b]\]</div>
@@ -1050,6 +1071,7 @@ o
 
 $$\ln n! \sim n \ln n - n  \qquad \text{per $n \in \mathbb{N} \rightarrow +\infty$}$$
 -->
+</div>
 </div>
 <div class="toctree-wrapper compound">
 </div>
@@ -1155,7 +1177,11 @@ $$\ln n! \sim n \ln n - n  \qquad \text{per $n \in \mathbb{N} \rightarrow +\inft
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calcolo-dei-limiti">23.7. Calcolo dei limiti</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-di-bisezione">23.8. Metodo di bisezione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applicazioni">23.8. Applicazioni</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#studio-di-funzione">23.8.1. Studio di funzione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-di-bisezione-per-la-soluzione-di-equazioni-algebriche-f-x-0">23.8.2. Metodo di bisezione per la soluzione di equazioni algebriche <span class="math notranslate nohighlight">\(f(x) = 0\)</span></a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

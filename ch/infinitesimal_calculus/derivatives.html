@@ -256,8 +256,8 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="integrals.html">25. Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="integrals-table.html">25.5. Tavola degli integrali indefiniti più comuni</a></li>
-<li class="toctree-l2"><a class="reference internal" href="integrals-problems.html">25.6. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integrals-table.html">25.6. Tavola degli integrali indefiniti più comuni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integrals-problems.html">25.7. Problemi</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../ode.html">26. Equazioni differenziali ordinarie</a></li>
@@ -517,7 +517,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#approssimazioni-locali">24.9.1. Approssimazioni locali</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#studio-di-funzione">24.9.2. Studio di funzione</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ottimizzazione">24.9.3. Ottimizzazione</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-di-netwon">24.9.4. Metodo di Netwon</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-di-netwon-per-la-soluzione-di-equazioni-algebriche-f-x-0">24.9.4. Metodo di Netwon per la soluzione di equazioni algebriche <span class="math notranslate nohighlight">\(f(x) = 0\)</span></a></li>
 </ul>
 </li>
 </ul>
@@ -1090,16 +1090,31 @@ e^{ix} &amp; = 1 + ix + \frac{(ix)^2}{2!} + \frac{(ix)^3}{3!} + \frac{(ix)^4}{4!
 <div class="section" id="applicazioni">
 <span id="infinitesimal-calculus-derivatives-applications"></span><h2><span class="section-number">24.9. </span>Applicazioni<a class="headerlink" href="#applicazioni" title="Permalink to this heading">#</a></h2>
 <div class="section" id="approssimazioni-locali">
-<h3><span class="section-number">24.9.1. </span>Approssimazioni locali<a class="headerlink" href="#approssimazioni-locali" title="Permalink to this heading">#</a></h3>
+<span id="infinitesimal-calculus-derivatives-applications-approx"></span><h3><span class="section-number">24.9.1. </span>Approssimazioni locali<a class="headerlink" href="#approssimazioni-locali" title="Permalink to this heading">#</a></h3>
+<p>Le <a class="reference internal" href="#infinitesimal-calculus-derivatives-taylor"><span class="std std-ref">serie di Taylor e di MacLaurin</span></a> e le proprietà di approssimazione riassunte nel <a class="reference internal" href="#thm:infinitesimal-calculus:derivatives:taylor">Theorem 24.6</a> permettono di ricavare un’approssimazione locale di una funzione <span class="math notranslate nohighlight">\(f(x)\)</span> nella forma di <strong>serie polinomiali</strong>.</p>
+<p>…</p>
 </div>
 <div class="section" id="studio-di-funzione">
-<h3><span class="section-number">24.9.2. </span>Studio di funzione<a class="headerlink" href="#studio-di-funzione" title="Permalink to this heading">#</a></h3>
+<span id="infinitesimal-calculus-derivatives-applications-fun"></span><h3><span class="section-number">24.9.2. </span>Studio di funzione<a class="headerlink" href="#studio-di-funzione" title="Permalink to this heading">#</a></h3>
+<p>Uno studio di funzione completo può richiedere la padronanza di tutti gli strumenti del calcolo infinitesimale: ricerca del dominio, limiti, derivate e integrali.</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="analysis.html#infinitesimal-calculus-analysis-applications-fun"><span class="std std-ref">studio di funzione - capitolo di introduzione all’analisi</span></a> - dominio, limiti ed eventuali asintoti</p>
+<ul>
+<li><p>trovare il dominio di una funzione</p></li>
+<li><p>valutare i limiti della funzione agli estremi del dominio, o in corrispondenza di punti di discontinuità</p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#infinitesimal-calculus-derivatives-applications-fun"><span class="std std-ref">studio di funzione - capitolo sulle derivate</span></a> - punti di estremi locali, punti di flesso</p></li>
+<li><p><a class="reference internal" href="integrals.html#infinitesimal-calculus-integrals-applications-fun"><span class="std std-ref">studio di funzione - capitolo sugli integrali</span></a> - area sottesa al grafico di una funzione, e altre grandezze integrali</p></li>
+</ul>
 </div>
 <div class="section" id="ottimizzazione">
-<h3><span class="section-number">24.9.3. </span>Ottimizzazione<a class="headerlink" href="#ottimizzazione" title="Permalink to this heading">#</a></h3>
+<span id="infinitesimal-calculus-derivatives-applications-optimization"></span><h3><span class="section-number">24.9.3. </span>Ottimizzazione<a class="headerlink" href="#ottimizzazione" title="Permalink to this heading">#</a></h3>
 </div>
-<div class="section" id="metodo-di-netwon">
-<span id="infinitesimal-calculus-derivatives-applications-newton"></span><h3><span class="section-number">24.9.4. </span>Metodo di Netwon<a class="headerlink" href="#metodo-di-netwon" title="Permalink to this heading">#</a></h3>
+<div class="section" id="metodo-di-netwon-per-la-soluzione-di-equazioni-algebriche-f-x-0">
+<span id="infinitesimal-calculus-derivatives-applications-newton"></span><h3><span class="section-number">24.9.4. </span>Metodo di Netwon per la soluzione di equazioni algebriche <span class="math notranslate nohighlight">\(f(x) = 0\)</span><a class="headerlink" href="#metodo-di-netwon-per-la-soluzione-di-equazioni-algebriche-f-x-0" title="Permalink to this heading">#</a></h3>
+<p>Due algoritmi iterativi classici usati per la soluzione di equazioni algebriche della forma <span class="math notranslate nohighlight">\(f(x) = 0\)</span> - problema che può essere descritto come ricerca degli zeri della funzione <span class="math notranslate nohighlight">\(f(x)\)</span> - sono il <strong>metodo di bisezione</strong> e il <strong>metodo di Newton</strong>. Il <a class="reference internal" href="analysis.html#infinitesimal-calculus-analysis-bisec"><span class="std std-ref">metodo di bisezione</span></a> viene discusso nella sezione sull’introduzione all’analisi, mentre qui viene presentato il meetodo di Newton.</p>
+<p>…</p>
 <p>Il metodo di Newton è discusso nel <a class="reference external" href="https://basics2022.github.io/bbooks-programming-hs/intro.html">bbook sull’introduzione alla programmazione e al calcolo scientifico</a>, nella sezione di <a class="reference external" href="https://basics2022.github.io/bbooks-programming-hs/ch/numerics.html">introduzione al calcolo numerico</a>. Nella sezione sui metodi numerici per la soluzione di <a class="reference external" href="https://basics2022.github.io/bbooks-programming-hs/ch/numerics/nonlinear.html#metodo-di-newton">equazioni algebriche non lineari</a>, il metodo di Newton viene descritto, implementato e applicato a semplici esempi.</p>
 </div>
 </div>
@@ -1192,7 +1207,7 @@ e^{ix} &amp; = 1 + ix + \frac{(ix)^2}{2!} + \frac{(ix)^3}{3!} + \frac{(ix)^4}{4!
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#approssimazioni-locali">24.9.1. Approssimazioni locali</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#studio-di-funzione">24.9.2. Studio di funzione</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ottimizzazione">24.9.3. Ottimizzazione</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-di-netwon">24.9.4. Metodo di Netwon</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-di-netwon-per-la-soluzione-di-equazioni-algebriche-f-x-0">24.9.4. Metodo di Netwon per la soluzione di equazioni algebriche <span class="math notranslate nohighlight">\(f(x) = 0\)</span></a></li>
 </ul>
 </li>
 </ul>
