@@ -565,7 +565,7 @@ document.write(`
 </tbody>
 </table>
 <div class="section" id="interpretazione-geometrica">
-<h3><span class="section-number">25.1.1. </span>Interpretazione geometrica<a class="headerlink" href="#interpretazione-geometrica" title="Permalink to this heading">#</a></h3>
+<span id="infinitesimal-calculus-integrals-def-geom"></span><h3><span class="section-number">25.1.1. </span>Interpretazione geometrica<a class="headerlink" href="#interpretazione-geometrica" title="Permalink to this heading">#</a></h3>
 <p>L’integrale definito</p>
 <div class="math notranslate nohighlight">
 \[\int_{a}^{b} f(x) \, dx \ ,\]</div>
@@ -647,7 +647,7 @@ document.write(`
 <div class="proof theorem admonition" id="integrals:thm:avg">
 <p class="admonition-title"><span class="caption-number">Theorem 25.1 </span> (Teorema della media)</p>
 <div class="theorem-content section" id="proof-content">
-<p>Sia <span class="math notranslate nohighlight">\(f: [a,b] \in \mathbb{R} \rightarrow \mathbb{R}\)</span> una funzione continua su <span class="math notranslate nohighlight">\([a,b]\)</span>, allora esiste <span class="math notranslate nohighlight">\(c \in [a,b]\)</span> tale che</p>
+<p>Sia <span class="math notranslate nohighlight">\(f: [a,b] \in \mathbb{R} \rightarrow \mathbb{R}\)</span> una funzione continua su un intervallo <span class="math notranslate nohighlight">\([a,b]\)</span> chiuso e limitato, allora esiste <span class="math notranslate nohighlight">\(c \in [a,b]\)</span> tale che</p>
 <div class="math notranslate nohighlight">
 \[\int_{a}^{b} f(x) dx = (b-a) f(c) \]</div>
 </div>
@@ -658,7 +658,25 @@ Dimostrazione<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><strong>todo</strong></p>
+<p class="sd-card-text">Poiché <span class="math notranslate nohighlight">\(f(x): [a,b] \rightarrow \mathbb{R}\)</span> è una funzione continua definita su un intervallo chiuso e limitato, allora per il <a class="reference internal" href="analysis.html#infinitesimal-calculus-continuous-fun-thms-weierstrass"><span class="std std-ref">teorema di Weierstrass</span></a> la funzione ammette minimo <span class="math notranslate nohighlight">\(m\)</span> e massimo <span class="math notranslate nohighlight">\(M\)</span> per valori di <span class="math notranslate nohighlight">\(x \in [a,b]\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[m \le f(x) \le M \ .\]</div>
+<p class="sd-card-text">Integrando questa relazione sull’intervallo <span class="math notranslate nohighlight">\([a,b]\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\int_{a}^{b} m \, dx \le \int_{a}^{b} f(x) \, dx \le \int_{a}^{b} M ,\ dx \ .\]</div>
+<p class="sd-card-text">L”<span class="xref myst">integrale di una funzione costante</span> permette di calcolare gli integrali estremi</p>
+<div class="math notranslate nohighlight">
+\[(b-a) m \le \int_{a}^{b} f(x) \, dx \le (b-a) M \ ,\]</div>
+<p class="sd-card-text">e dividendo per <span class="math notranslate nohighlight">\((b-a) \ne 0\)</span>, si ottiene la relazione</p>
+<div class="math notranslate nohighlight">
+\[m \le \frac{1}{b-a} \int_{a}^{b} f(x) \, dx \le M \ .\]</div>
+<p class="sd-card-text">Siano <span class="math notranslate nohighlight">\(x_m\)</span> e <span class="math notranslate nohighlight">\(x_M \in [a,b]\)</span> i punti - i numeri reali - in cui la funzione assume i valori minimo e massimo. Se <span class="math notranslate nohighlight">\(x_m &lt; x_M\)</span>, si applica il teorema dei valori medi sull’intervallo <span class="math notranslate nohighlight">\(I_m = [x_m, x_M]\)</span>, in caso contrario sull’intervallo <span class="math notranslate nohighlight">\(I_m = [x_M, x_m]\)</span>.</p>
+<p class="sd-card-text">Per il <a class="reference internal" href="analysis.html#infinitesimal-calculus-continuous-fun-thms-intermediate"><span class="std std-ref">teorema dei valori intermedi</span></a>, la funzione continua <span class="math notranslate nohighlight">\(f(x)\)</span> definita sull’intervallo chiuso e limitato <span class="math notranslate nohighlight">\(I_m \subseteq [a,b]\)</span>, assume tutti i valori compresi tra i valori nei due estremi, cioè esiste un numero <span class="math notranslate nohighlight">\(c \in I_m\)</span> tale che</p>
+<div class="math notranslate nohighlight">
+\[m = f(x_m) \le f(c) \le f(x_M) = M \ ,\]</div>
+<p class="sd-card-text">e tra tutti i valori compresi tra <span class="math notranslate nohighlight">\(m\)</span> e <span class="math notranslate nohighlight">\(M\)</span> esiste un punto <span class="math notranslate nohighlight">\(c\)</span> in cui la funzione assume il valore particolare definito dalla media <span class="math notranslate nohighlight">\(\frac{1}{b-a}\int_{a}^{b} f(x) \, dx\)</span>, cioè</p>
+<div class="math notranslate nohighlight">
+\[\exits c \in I_m \subseteq [a,b] \ , \text{ t.c.} \ f(c) = \frac{1}{b-a}\int_{a}^{b} f(x) \, dx \ .\]</div>
 </div>
 </details><!--
 (infinitesimal-calculus:derivatives:thm:fund)=

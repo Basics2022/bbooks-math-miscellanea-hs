@@ -518,7 +518,7 @@ document.write(`
 <p class="admonition-title"><span class="caption-number">Exercise 23.1 </span> (Verifica/calcolo con definizione)</p>
 <div class="section" id="exercise-content">
 <ol class="arabic simple">
-<li><p>Usa la definizione di limite <span class="math notranslate nohighlight">\(\varepsilon\)</span>-<span class="math notranslate nohighlight">\(\delta\)</span> per provare che <span class="math notranslate nohighlight">\(\lim_{x \to 2} (3x - 4) = 2\)</span>.</p></li>
+<li><p>Usa la definizione di limite <span class="math notranslate nohighlight">\(\varepsilon\)</span>-<span class="math notranslate nohighlight">\(\delta\)</span> per provare che <span class="math notranslate nohighlight">\(\lim_{x \to 1} (3x - 4) = -1\)</span>.</p></li>
 <li><p>Usa la definizione di limite per provare che <span class="math notranslate nohighlight">\(\lim_{x \to 0} \frac{1}{x^2}\)</span> non esiste.</p></li>
 <li><p>Usa la definizione di limite per provare che <span class="math notranslate nohighlight">\(\lim_{x \to 1} \frac{1}{x} = 1\)</span>.</p></li>
 <li><p>Usa la definizione di limite per provare che <span class="math notranslate nohighlight">\(\lim_{x \to 0} \sin(x) = 0\)</span>.</p></li>
@@ -531,7 +531,96 @@ document.write(`
 </ol>
 </div>
 </div>
-<div class="exercise dropdown admonition" id="ch/infinitesimal_calculus/analysis-problems-exercise-1">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Soluzione 1.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">La definizione di limite finito al finito <span class="math notranslate nohighlight">\(\ell = \lim_{x \rightarrow x_0} f(x)\)</span> è</p>
+<div class="math notranslate nohighlight">
+\[\forall \varepsilon &gt; 0 \, \exists \delta &gt; 0 \ \text{t.c.} \ |f(x) - \ell| &lt; \varepsilon \text{ per } \forall x \in [x_0-\delta,x_0+\delta]\]</div>
+<p class="sd-card-text">Per l’esercizio, bisogna quindi verificare che</p>
+<div class="math notranslate nohighlight">
+\[\forall \varepsilon &gt; 0 \, \exists \delta &gt; 0 \ \text{t.c.} \ |3x-4 + 1| &lt; \varepsilon \text{ per } \forall x \in [x_0-\delta,x_0+\delta]\]</div>
+<div class="math notranslate nohighlight">
+\[|3x - 3| &lt; \varepsilon \text{ per } \varepsilon x \in U_{x_0, \delta}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  &amp; 3|x-1| &lt; \varepsilon \\
+  &amp; |x-1| &lt; \frac{\varepsilon}{3} \\
+  &amp; 1-\frac{\varepsilon}{3} &lt; x &lt; 1 + \frac{\varepsilon}{3} \\
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">Quindi, per ogni <span class="math notranslate nohighlight">\(\varepsilon\)</span> fissato, vale <span class="math notranslate nohighlight">\(|f(x) - (-1)| &lt; \varepsilon\)</span> per ogni <span class="math notranslate nohighlight">\(x \in U_{x_0, \delta}\)</span> con <span class="math notranslate nohighlight">\(x_0 = 1\)</span> e <span class="math notranslate nohighlight">\(\delta_\varepsilon = \frac{\varepsilon}{3}\)</span>.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Soluzione 2.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>Limite finito al finito.</strong> Non esiste <strong>todo</strong></p>
+<p class="sd-card-text"><strong>Limite infinito (qui con segno <span class="math notranslate nohighlight">\(+\infty\)</span>) al finito.</strong></p>
+<p class="sd-card-text">Per ogni <span class="math notranslate nohighlight">\(M\)</span> fissato</p>
+<div class="math notranslate nohighlight">
+\[\forall M &gt; 0 \ \exists U_{x_0, \delta} \ \text{s.t.} \ f(x) &gt; M \ \forall x \in U_{x_0, \delta} \backslash \{ x_0 \}\]</div>
+<p class="sd-card-text">Qui</p>
+<div class="math notranslate nohighlight">
+\[\frac{1}{x^2} &gt; M \quad  \forall x \in \left[ -\frac{1}{\sqrt{|M|}}, \frac{1}{\sqrt{|M|}} \right] \backslash \{ 0 \} \ .\]</div>
+<p class="sd-card-text">…</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
+<summary class="sd-summary-title sd-card-header">
+Soluzione 5.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><em>Risolvere usando il fatto che <span class="math notranslate nohighlight">\(F(x) = e^x-1\)</span> è crescente, con derivata crescente</em></p>
+<p class="sd-card-text">Per <span class="math notranslate nohighlight">\(x = \delta &gt; 0\)</span>, <span class="math notranslate nohighlight">\(F(\delta) = e^{\delta} - 1\)</span>, <span class="math notranslate nohighlight">\(0 &lt; F(x) &lt; \frac{e^{\delta}-1}{\delta} x\)</span> per <span class="math notranslate nohighlight">\(x \in (0,\delta)\)</span></p>
+<p class="sd-card-text">Per <span class="math notranslate nohighlight">\(x = -\delta &lt; 0\)</span>, <span class="math notranslate nohighlight">\(F(-\delta) = e^{-\delta} - 1\)</span>, <span class="math notranslate nohighlight">\(0 &lt; F(x) &lt; \frac{-e^{-\delta}+1}{\delta} x\)</span> per <span class="math notranslate nohighlight">\(x \in (-\delta, 0)\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  &amp; \left| \frac{e^x-1}{x} - 1 \right| &lt; \varepsilon \\
+  &amp; -\varepsilon + 1 &lt; \frac{e^x-1}{x} &lt; \varepsilon + 1 \\
+\end{aligned}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  e^{x} - 1 &amp; = x + \frac{x^2}{2} + \frac{x^3}{3!} + o(x^3) \\
+  \frac{e^{x} - 1}{x} &amp; = 1 + \frac{x}{2} + \frac{x^2}{3!} + o(x^2) \\
+\end{aligned}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[-\varepsilon &lt; \sum_{n=1}^{+\infty} \frac{x^n}{(n+1)!} &lt; \varepsilon\]</div>
+<!--
+e quindi
+
+$$-\varepsilon < \frac{x}{2} + \frac{x^2}{3!} + o(x^2) < \varepsilon$$
+
+valutato in $x = - \delta$, $x = \delta$
+
+$$\frac{x}{2} + \frac{x^2}{3!} - \frac{x^3}{4!} + \frac{x^4}{5!} - \frac{x^5}{6!} + \frac{x^6}{7!}$$
+
+Il termine $-\frac{x^3}{4!} + \frac{x^4}{5!} = \frac{x^3}{5!} \left( -5 + x \right)$ è minore di zero per tutti i valori di $0 < x < 5$
+
+---
+dove
+
+$$\begin{aligned}
+  e^{-\delta} - 1 & =-\delta + \frac{\delta^2}{2} - \frac{\delta^3}{3!} + o(\delta^3) \\
+  e^{ \delta} - 1 & = \delta + \frac{\delta^2}{2} + \frac{\delta^3}{3!} + o(\delta^3) \\
+\end{aligned}$$
+
+$$\begin{aligned}
+  \frac{e^{-\delta} - 1}{\delta} & =-1 + \frac{\delta}{2} - \frac{\delta^2}{3!} + o(\delta^2) \\
+  \frac{e^{ \delta} - 1}{\delta} & = 1 + \frac{\delta}{2} + \frac{\delta^2}{3!} + o(\delta^2) \\
+\end{aligned}$$
+
+...
+-->
+</div>
+</details><div class="exercise dropdown admonition" id="ch/infinitesimal_calculus/analysis-problems-exercise-1">
 <span id="infinitesimal-calculus-analysis-problems-limits-easy"></span>
 <p class="admonition-title"><span class="caption-number">Exercise 23.2 </span> (Primi limiti)</p>
 <div class="section" id="exercise-content">

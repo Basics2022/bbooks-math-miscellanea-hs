@@ -5,7 +5,7 @@
 
 ```{exercise} Verifica/calcolo con definizione
 :class: dropdown
-1. Usa la definizione di limite $\varepsilon$-$\delta$ per provare che $\lim_{x \to 2} (3x - 4) = 2$.  
+1. Usa la definizione di limite $\varepsilon$-$\delta$ per provare che $\lim_{x \to 1} (3x - 4) = -1$.  
 2. Usa la definizione di limite per provare che $\lim_{x \to 0} \frac{1}{x^2}$ non esiste.  
 3. Usa la definizione di limite per provare che $\lim_{x \to 1} \frac{1}{x} = 1$.  
 4. Usa la definizione di limite per provare che $\lim_{x \to 0} \sin(x) = 0$.  
@@ -15,6 +15,95 @@
 8. Usa la definizione di limite per provare che $\lim_{x \to 0} x^2 = 0$.  
 9. Usa la definizione di limite per provare che $\lim_{x \to 3} \frac{1}{x} = \frac{1}{3}$.  
 10. Usa la definizione di limite per dimostrare che $\lim_{x \to 0} \ln(1+x) = 0$.  
+```
+
+```{dropdown} Soluzione 1.
+La definizione di limite finito al finito $\ell = \lim_{x \rightarrow x_0} f(x)$ è
+
+$$\forall \varepsilon > 0 \, \exists \delta > 0 \ \text{t.c.} \ |f(x) - \ell| < \varepsilon \text{ per } \forall x \in [x_0-\delta,x_0+\delta]$$
+
+Per l'esercizio, bisogna quindi verificare che
+
+$$\forall \varepsilon > 0 \, \exists \delta > 0 \ \text{t.c.} \ |3x-4 + 1| < \varepsilon \text{ per } \forall x \in [x_0-\delta,x_0+\delta]$$
+
+$$|3x - 3| < \varepsilon \text{ per } \varepsilon x \in U_{x_0, \delta}$$
+$$\begin{aligned}
+  & 3|x-1| < \varepsilon \\
+  & |x-1| < \frac{\varepsilon}{3} \\
+  & 1-\frac{\varepsilon}{3} < x < 1 + \frac{\varepsilon}{3} \\
+\end{aligned}$$
+
+Quindi, per ogni $\varepsilon$ fissato, vale $|f(x) - (-1)| < \varepsilon$ per ogni $x \in U_{x_0, \delta}$ con $x_0 = 1$ e $\delta_\varepsilon = \frac{\varepsilon}{3}$.
+
+```
+
+```{dropdown} Soluzione 2.
+**Limite finito al finito.** Non esiste **todo**
+
+
+**Limite infinito (qui con segno $+\infty$) al finito.**
+
+Per ogni $M$ fissato
+
+$$\forall M > 0 \ \exists U_{x_0, \delta} \ \text{s.t.} \ f(x) > M \ \forall x \in U_{x_0, \delta} \backslash \{ x_0 \}$$
+
+Qui
+
+$$\frac{1}{x^2} > M \quad  \forall x \in \left[ -\frac{1}{\sqrt{|M|}}, \frac{1}{\sqrt{|M|}} \right] \backslash \{ 0 \} \ .$$
+
+...
+
+
+```
+
+```{dropdown} Soluzione 5.
+:open:
+
+*Risolvere usando il fatto che $F(x) = e^x-1$ è crescente, con derivata crescente*
+
+Per $x = \delta > 0$, $F(\delta) = e^{\delta} - 1$, $0 < F(x) < \frac{e^{\delta}-1}{\delta} x$ per $x \in (0,\delta)$
+
+Per $x = -\delta < 0$, $F(-\delta) = e^{-\delta} - 1$, $0 < F(x) < \frac{-e^{-\delta}+1}{\delta} x$ per $x \in (-\delta, 0)$
+
+$$\begin{aligned}
+  & \left| \frac{e^x-1}{x} - 1 \right| < \varepsilon \\
+  & -\varepsilon + 1 < \frac{e^x-1}{x} < \varepsilon + 1 \\
+\end{aligned}$$
+
+$$\begin{aligned}
+  e^{x} - 1 & = x + \frac{x^2}{2} + \frac{x^3}{3!} + o(x^3) \\
+  \frac{e^{x} - 1}{x} & = 1 + \frac{x}{2} + \frac{x^2}{3!} + o(x^2) \\
+\end{aligned}$$
+
+$$-\varepsilon < \sum_{n=1}^{+\infty} \frac{x^n}{(n+1)!} < \varepsilon$$
+
+<!--
+e quindi
+
+$$-\varepsilon < \frac{x}{2} + \frac{x^2}{3!} + o(x^2) < \varepsilon$$
+
+valutato in $x = - \delta$, $x = \delta$
+
+$$\frac{x}{2} + \frac{x^2}{3!} - \frac{x^3}{4!} + \frac{x^4}{5!} - \frac{x^5}{6!} + \frac{x^6}{7!}$$
+
+Il termine $-\frac{x^3}{4!} + \frac{x^4}{5!} = \frac{x^3}{5!} \left( -5 + x \right)$ è minore di zero per tutti i valori di $0 < x < 5$
+
+---
+dove
+
+$$\begin{aligned}
+  e^{-\delta} - 1 & =-\delta + \frac{\delta^2}{2} - \frac{\delta^3}{3!} + o(\delta^3) \\
+  e^{ \delta} - 1 & = \delta + \frac{\delta^2}{2} + \frac{\delta^3}{3!} + o(\delta^3) \\
+\end{aligned}$$
+
+$$\begin{aligned}
+  \frac{e^{-\delta} - 1}{\delta} & =-1 + \frac{\delta}{2} - \frac{\delta^2}{3!} + o(\delta^2) \\
+  \frac{e^{ \delta} - 1}{\delta} & = 1 + \frac{\delta}{2} + \frac{\delta^2}{3!} + o(\delta^2) \\
+\end{aligned}$$
+
+...
+-->
+
 ```
 
 (infinitesimal-calculus:analysis:problems:limits-easy)=
