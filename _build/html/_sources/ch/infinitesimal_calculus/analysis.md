@@ -59,7 +59,7 @@ $$I_c = \{ x \in \mathbb{R} | a \le x \le b \} =: [a,b] \ .$$
 
 Un intervallo aperto è un intervallo che non comprende gli  estremi dell'insieme,
 
-$$I_a = \{ x \in \mathbb{R} | a \lt x \lt b \} =: (a,b) \ .$$
+$$I_a = \{ x \in \mathbb{R} | a < x < b \} =: (a,b) \ .$$
 
 ```
 
@@ -153,7 +153,7 @@ Data una funzione reale continua $f: [a,b] \rightarrow \mathbb{R}$ definita sull
 Mentre non viene fornita una dimostrazione del teorema, si discute la necessità delle ipotesi fornendo controesempi:
 1. la funzione non continua definita in $I = [-1,1]$
 
-    $$f(x) = \begin{cases} |x| && x \ne = 0 \\ 0.5 && x = 0 \end{cases} \ ,$$
+    $$f(x) = \begin{cases} |x| & x \ne = 0 \\ 0.5 & x = 0 \end{cases} \ ,$$
 
     assume valori massimi in $I$, in corrispondenza degli estremi dell'intervallo, ma non ha minimo. Infatti il limite inferiore della funzione nell'intervallo è $\liminf f(x) = 0$, ma non esiste alcun valore $x \in I$ tale che $f(x) = 0$, proprio per come è stata costruita la funzione con una [discontinuità](infinitesimal-calculus:continuou-fun:disc) di tipo 1 - salto in $x = 0$,
 
@@ -286,6 +286,30 @@ avendo interpretato gli *infiniti*, gli *zeri* e gli *uni* come funzioni che ten
 $$0 \sim \lim f(x) = 0 \qquad , \qquad  1 \sim \lim f(x) = 1  \qquad , \qquad \infty \sim \lim f(x) = \infty \ ,$$
 
 senza esserne identicamente uguali.
+
+```{prf:example} Forme indeterminate $1^{\infty}$ e forme determinate $1^{\infty}$
+:class: dropdown
+
+La funzione - o la famiglia di funzioni, al variare del parametro $n$ -
+
+$$\left( e^{\frac{1}{x}} \right)^{x^n}$$
+
+è un esempio di forma indeterminata $1^{+\infty}$ per $x \rightarrow +\infty$ per $n>0$, poiché 
+
+$$\begin{aligned}
+  & \lim_{x \rightarrow +\infty} e^{\frac{1}{x}} = 1 \\
+  & \lim_{x \rightarrow +\infty} x^n = +\infty \quad n > 0 \\
+\end{aligned}$$ 
+
+La forma indeterminata è facile da risolvere grazie alle proprietà delle potenze
+
+$$\lim_{x \rightarrow +\infty} \left( e^{\frac{1}{x}} \right)^{x^n} = \lim_{x \rightarrow +\infty} e^{x^{n-1}} = \begin{cases} 1 & 0 < n < 1 \\ e & n = 1 \\ +\infty & n > 1 \end{cases}$$
+
+L'espressione $1^{x}$ invece non è indeterminata per $x \rightarrow +\infty$, poiché $1$ "è esattamente $1$ e basta" e moltiplicando anche infinite volte $1$ per se stesso si ottiene sempre $1$
+
+$$\lim_{x \rightarrow +\infty} 1^{x} = 1 \ .$$
+
+```
 
 **Oss.** Invece non sono forme indeterminate $0^{+\infty} \rightarrow 0$ e $0^{-\infty} \rightarrow \infty$.
 

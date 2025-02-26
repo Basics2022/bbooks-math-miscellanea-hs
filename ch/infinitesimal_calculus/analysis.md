@@ -287,6 +287,30 @@ $$0 \sim \lim f(x) = 0 \qquad , \qquad  1 \sim \lim f(x) = 1  \qquad , \qquad \i
 
 senza esserne identicamente uguali.
 
+```{prf:example} Forme indeterminate $1^{\infty}$ e forme determinate $1^{\infty}$
+:class: dropdown
+
+La funzione - o la famiglia di funzioni, al variare del parametro $n$ -
+
+$$\left( e^{\frac{1}{x}} \right)^{x^n}$$
+
+è un esempio di forma indeterminata $1^{+\infty}$ per $x \rightarrow +\infty$ per $n>0$, poiché 
+
+$$\begin{aligned}
+  & \lim_{x \rightarrow +\infty} e^{\frac{1}{x}} = 1 \\
+  & \lim_{x \rightarrow +\infty} x^n = +\infty \quad n > 0 \\
+\end{aligned}$$ 
+
+La forma indeterminata è facile da risolvere grazie alle proprietà delle potenze
+
+$$\lim_{x \rightarrow +\infty} \left( e^{\frac{1}{x}} \right)^{x^n} = \lim_{x \rightarrow +\infty} e^{x^{n-1}} = \begin{cases} 1 & 0 < n < 1 \\ e & n = 1 \\ +\infty & n > 1 \end{cases}$$
+
+L'espressione $1^{x}$ invece non è indeterminata per $x \rightarrow +\infty$, poiché $1$ "è esattamente $1$ e basta" e moltiplicando anche infinite volte $1$ per se stesso si ottiene sempre $1$
+
+$$\lim_{x \rightarrow +\infty} 1^{x} = 1 \ .$$
+
+```
+
 **Oss.** Invece non sono forme indeterminate $0^{+\infty} \rightarrow 0$ e $0^{-\infty} \rightarrow \infty$.
 
 Vengono ora introdotti alcuni risultati necessari per manipolare le forme indeterminate, e poter confrontare infiniti e infinitesimi.
