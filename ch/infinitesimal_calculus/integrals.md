@@ -144,7 +144,7 @@ $$m = f(x_m) \le f(c) \le f(x_M) = M \ ,$$
 
 e tra tutti i valori compresi tra $m$ e $M$ esiste un punto $c$ in cui la funzione assume il valore particolare definito dalla media $\frac{1}{b-a}\int_{a}^{b} f(x) \, dx$, cioè
 
-$$\exits c \in I_m \subseteq [a,b] \ , \text{ t.c.} \ f(c) = \frac{1}{b-a}\int_{a}^{b} f(x) \, dx \ .$$
+$$\exists c \in I_m \subseteq [a,b] \ , \text{ t.c.} \ f(c) = \frac{1}{b-a}\int_{a}^{b} f(x) \, dx \ .$$
 
 ```
 
