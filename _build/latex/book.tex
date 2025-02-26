@@ -87,7 +87,7 @@
         
 
 \title{Matematica per le scuole superiori}
-\date{22 feb 2025}
+\date{26 feb 2025}
 \release{}
 \author{basics}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -2687,7 +2687,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-22 feb 2025
+26 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -2801,7 +2801,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-22 feb 2025
+26 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3290,7 +3290,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-22 feb 2025
+26 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3538,7 +3538,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-22 feb 2025
+26 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -6175,7 +6175,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-22 feb 2025
+26 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -6338,7 +6338,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-22 feb 2025
+26 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -9016,7 +9016,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-22 feb 2025
+26 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -9183,6 +9183,122 @@ Per un’introduzione alle funzioni reali fa variabili reali si rimanda al {\hyp
 \sphinxstylestrong{todo} \sphinxstyleemphasis{Punto di accumulazione e punto isolato, intorno, insiemi aperti e chiusi, limsup/liminf, max/min,… E” necessario? Il minimo indispensabile}
 
 
+\subsubsection{Intervalli}
+\label{\detokenize{ch/infinitesimal_calculus/analysis:intervalli}}\label{None:interval-def}
+\begin{sphinxadmonition}{note}{Definition }
+
+
+
+\sphinxAtStartPar
+Un intervallo \(I\) è un sottoinsieme dei numeri reali \(\mathbb{R}\) «senza buchi», cioè se due numeri \(x\), \(y > x\) appartengono a \(I\), allora tutti i numeri reali \(u\) compresi tra \(x\), \(y\) appartengno a \(I\).
+\end{sphinxadmonition}
+\label{None:interval-example}
+\begin{sphinxadmonition}{note}{Example  (Intervalli e sottoinsiemi che non sono intervalli)}
+
+
+
+\sphinxAtStartPar
+Così ad esempio, l’insieme dei numeri reali compresi tra 2 e 3,
+\begin{equation*}
+\begin{split}I = \{ x | 2 \le x \le 3 \} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+è un sottoinsieme e intervallo di \(\mathbb{R}\). L’unione degli insiemi di numeri reali compresi tra 0 e 1, e tra 2 e 3,
+\begin{equation*}
+\begin{split}S = \{ x | 0 \le x \le 1 \lor 2 \le x \le 3 \} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+è un sottoinsieme di \(\mathbb{R}\) ma non è un intervallo, poiché non è soddisfatta la definizione: ad esempio, il numero \(1.3\) è compreso tra due numeri appartenenti all’insieme \(S\), ad esempio \(0.1\) e \(2.\overline{7}\) ma non appartiene a \(S\).
+\end{sphinxadmonition}
+\label{None:interval-limited}
+\begin{sphinxadmonition}{note}{Definition  (Intervallo limitato)}
+
+
+
+\sphinxAtStartPar
+Un intervallo è \sphinxstylestrong{limitato superiormente} se esiste un numero \(M \in \mathbb{R}\) tale che tutti gli elementi dell’intervallo sono minori di \(M\); un intervallo è \sphinxstylestrong{limitato inferiormente} se esiste un numero \(N \in \mathbb{R}\), tale che tutti gli elementi dell’intarvallo sono maggiori di \(N\).
+
+\sphinxAtStartPar
+In caso contrario, gli intervalli vengono definiti \sphinxstylestrong{illimitati}
+\end{sphinxadmonition}
+\label{None:interval-open-close}
+\begin{sphinxadmonition}{note}{Definition  (Intervalli aperti e chiusi)}
+
+
+
+\sphinxAtStartPar
+Un intervallo chiuso è un intervallo che comprende gli \sphinxstylestrong{estremi} dell’insieme
+\begin{equation*}
+\begin{split}I_c = \{ x \in \mathbb{R} | a \le x \le b \} =: [a,b] \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Un intervallo aperto è un intervallo che non comprende gli  estremi dell’insieme,
+\begin{equation*}
+\begin{split}I_a = \{ x \in \mathbb{R} | a < x < b \} =: (a,b) \ .\end{split}
+\end{equation*}\end{sphinxadmonition}
+
+\sphinxAtStartPar
+Pensando alla rappresentazione dei numeri reali sulla retta reale, orizzontale e orientata con verso positivo verso destra, ci si può riferire all’estremo inferiore come estremo sinistro e all’estremo superiore come estremo destro dell’intervallo.
+
+\sphinxAtStartPar
+I singoli estremi di un intervallo possono essere chiusi o aperti. Ad esempio, i possibili intervalli di numeri reali sono:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\((a,b)\) intervallo limitato aperto sia a sinistra sia a destra
+
+\item {} 
+\sphinxAtStartPar
+\([a,b)\) intervallo limitato chiuso a sinistra e aperto a destra
+
+\item {} 
+\sphinxAtStartPar
+\((a,b]\) intervallo limitato aperto a sinistra e chiuso a destra
+
+\item {} 
+\sphinxAtStartPar
+\([a,b]\) intervallo limitato chiuso sia a sinistra sia a destra
+
+\item {} 
+\sphinxAtStartPar
+\([a,+\infty)\) intervallo illimitato, chiuso a sinistra infinito a destra
+
+\item {} 
+\sphinxAtStartPar
+\((a,+\infty)\) intervallo illimitato, aperto a sinistra infinito a destra
+
+\item {} 
+\sphinxAtStartPar
+\((-\infty,b]\) intervallo illimitato, infinito a sinistra chiuso a destra
+
+\item {} 
+\sphinxAtStartPar
+\((-\infty,b)\) intervallo illimitato, infinito a sinistra aperto a destra
+
+\item {} 
+\sphinxAtStartPar
+\((-\infty,+\infty)\) intervallo illimitato, che coincide con la retta reale
+
+\end{itemize}
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo} *Argomenti «non strettamente necessari», da aggiungere come approfondimenti in appendice?
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleemphasis{discutere estremi, maggiorante/minorante}
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleemphasis{insiemi non limitati sono aperti o chiusi?}
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleemphasis{discussione massimo/minimo, limsup/liminf}
+
+\end{itemize}
+
+
 \subsection{Definizione di limite}
 \label{\detokenize{ch/infinitesimal_calculus/analysis:definizione-di-limite}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-def}}
 
@@ -9286,11 +9402,32 @@ Tipo 3 \sphinxhyphen{} eliminabile: limite destro e sinistro esistono finiti, so
 
 
 \sphinxAtStartPar
-Data una funzione reale continua \(f: [a,b] \rightarrow \mathbb{R}\) definita sull’intervallo chiuso \([a,b]\), la funzione \(f(x)\) ammette un punto di massimo assoluto e un punto di minimo assoluto nell’intevallo \([a,b]\).
+Data una funzione reale continua \(f: [a,b] \rightarrow \mathbb{R}\) definita sull’intervallo limitato chiuso \([a,b]\), la funzione \(f(x)\) ammette un punto di massimo assoluto e un punto di minimo assoluto nell’intevallo \([a,b]\).
 \end{sphinxadmonition}
+\subsubsection*{Necessità delle ipotesi}
 
 \sphinxAtStartPar
-\sphinxstylestrong{todo} \sphinxstyleemphasis{Dimostrazione? Discussione più intuitiva? Figura?}
+Mentre non viene fornita una dimostrazione del teorema, si discute la necessità delle ipotesi fornendo controesempi:
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
+\sphinxAtStartPar
+la funzione non continua definita in \(I = [-1,1]\)
+\begin{equation*}
+\begin{split}f(x) = \begin{cases} |x| & x \ne = 0 \\ 0.5 & x = 0 \end{cases} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+assume valori massimi in \(I\), in corrispondenza degli estremi dell’intervallo, ma non ha minimo. Infatti il limite inferiore della funzione nell’intervallo è \(\liminf f(x) = 0\), ma non esiste alcun valore \(x \in I\) tale che \(f(x) = 0\), proprio per come è stata costruita la funzione con una \DUrole{xref,myst}{discontinuità} di tipo 1 \sphinxhyphen{} salto in \(x = 0\),
+
+\item {} 
+\sphinxAtStartPar
+la funzione continua \(f(x) = e^{-x^2}\) definita sull’intervallo non limitato superiormente \(I = [-2, +\infty)\) ha massimo nell’intervallo in corrispondenza di \(x = 0\), \(\max_{x \in I} f(x) = 1\), ma non ha minimo poiché \(\liminf f(x) = 0\) ma non esiste nessun valore \(x \in I\) tale che \(f(x) = 0\)
+
+\item {} 
+\sphinxAtStartPar
+la funzione continua \(f(x) = x^2\) definita su \(I = (1,2)\) non ammette né massimo, né minimo, poiché il limite inferiore e superiore della funzione si verificano in corrispondenza degli estremi (non inclusi) dell’intervallo aperto. Più esplicitamente, \(\limsup_{x\in I} f(x) = 4\) ma \(\nexists x \in I, \ f(x) = 4\); \(\liminf_{x\in I} f(x) = 1\) ma \(\nexists x \in I, \ f(x) = 1\);
+
+\end{enumerate}
 
 
 \subsubsection{Teorema della permanenza del segno}
@@ -9660,7 +9797,7 @@ Il metodo di bisezione è discusso nel \sphinxhref{https://basics2022.github.io/
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \item {} 
 \sphinxAtStartPar
-Usa la definizione di limite \(\varepsilon\)\sphinxhyphen{}\(\delta\) per provare che \(\lim_{x \to 2} (3x - 4) = 2\).
+Usa la definizione di limite \(\varepsilon\)\sphinxhyphen{}\(\delta\) per provare che \(\lim_{x \to 1} (3x - 4) = -1\).
 
 \item {} 
 \sphinxAtStartPar
@@ -9700,6 +9837,72 @@ Usa la definizione di limite per dimostrare che \(\lim_{x \to 0} \ln(1+x) = 0\).
 
 \end{enumerate}
 \end{sphinxadmonition}
+\subsubsection*{Soluzione 1.}
+
+\sphinxAtStartPar
+La definizione di limite finito al finito \(\ell = \lim_{x \rightarrow x_0} f(x)\) è
+\begin{equation*}
+\begin{split}\forall \varepsilon > 0 \, \exists \delta > 0 \ \text{t.c.} \ |f(x) - \ell| < \varepsilon \text{ per } \forall x \in [x_0-\delta,x_0+\delta]\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Per l’esercizio, bisogna quindi verificare che
+\begin{equation*}
+\begin{split}\forall \varepsilon > 0 \, \exists \delta > 0 \ \text{t.c.} \ |3x-4 + 1| < \varepsilon \text{ per } \forall x \in [x_0-\delta,x_0+\delta]\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}|3x - 3| < \varepsilon \text{ per } \varepsilon x \in U_{x_0, \delta}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\begin{aligned}
+  & 3|x-1| < \varepsilon \\
+  & |x-1| < \frac{\varepsilon}{3} \\
+  & 1-\frac{\varepsilon}{3} < x < 1 + \frac{\varepsilon}{3} \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Quindi, per ogni \(\varepsilon\) fissato, vale \(|f(x) - (-1)| < \varepsilon\) per ogni \(x \in U_{x_0, \delta}\) con \(x_0 = 1\) e \(\delta_\varepsilon = \frac{\varepsilon}{3}\).
+\subsubsection*{Soluzione 2.}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Limite finito al finito.} Non esiste \sphinxstylestrong{todo}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Limite infinito (qui con segno \(+\infty\)) al finito.}
+
+\sphinxAtStartPar
+Per ogni \(M\) fissato
+\begin{equation*}
+\begin{split}\forall M > 0 \ \exists U_{x_0, \delta} \ \text{s.t.} \ f(x) > M \ \forall x \in U_{x_0, \delta} \backslash \{ x_0 \}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Qui
+\begin{equation*}
+\begin{split}\frac{1}{x^2} > M \quad  \forall x \in \left[ -\frac{1}{\sqrt{|M|}}, \frac{1}{\sqrt{|M|}} \right] \backslash \{ 0 \} \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+…
+\subsubsection*{Soluzione 5.}
+
+\sphinxAtStartPar
+\sphinxstyleemphasis{Risolvere usando il fatto che \(F(x) = e^x-1\) è crescente, con derivata crescente}
+
+\sphinxAtStartPar
+Per \(x = \delta > 0\), \(F(\delta) = e^{\delta} - 1\), \(0 < F(x) < \frac{e^{\delta}-1}{\delta} x\) per \(x \in (0,\delta)\)
+
+\sphinxAtStartPar
+Per \(x = -\delta < 0\), \(F(-\delta) = e^{-\delta} - 1\), \(0 < F(x) < \frac{-e^{-\delta}+1}{\delta} x\) per \(x \in (-\delta, 0)\)
+\begin{equation*}
+\begin{split}\begin{aligned}
+  & \left| \frac{e^x-1}{x} - 1 \right| < \varepsilon \\
+  & -\varepsilon + 1 < \frac{e^x-1}{x} < \varepsilon + 1 \\
+\end{aligned}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\begin{aligned}
+  e^{x} - 1 & = x + \frac{x^2}{2} + \frac{x^3}{3!} + o(x^3) \\
+  \frac{e^{x} - 1}{x} & = 1 + \frac{x}{2} + \frac{x^2}{3!} + o(x^2) \\
+\end{aligned}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}-\varepsilon < \sum_{n=1}^{+\infty} \frac{x^n}{(n+1)!} < \varepsilon\end{split}
+\end{equation*}
+
 \phantomsection \label{exercise:ch/infinitesimal_calculus/analysis-problems-exercise-1}
 
 \begin{sphinxadmonition}{note}{Exercise 23.9.2 (Primi limiti)}
@@ -11743,10 +11946,20 @@ Sia \(\Delta x = \max_k (x_{k} - x_{k-1})\), l’integrale definito di Riemann �
 \end{tabulary}
 \par
 \sphinxattableend\end{savenotes}
+\label{ch/infinitesimal_calculus/integrals:infinitesimal-calculus:integrals:def:integrable-function}
+\begin{sphinxadmonition}{note}{Definition 25.1.3 (Funzione integrabile (secondo Riemann))}
+
+
+
+\sphinxAtStartPar
+Una funzione \(f(x): D \subseteq \mathbb{R} \rightarrow \mathbb{R}\) è integrabile sull’intervallo \([a,b] \subseteq D\) se esiste (finito?) l’integrale di Riemann
+\begin{equation*}
+\begin{split}\int_{a}^{b} f(x) \, dx \ .\end{split}
+\end{equation*}\end{sphinxadmonition}
 
 
 \subsection{Interpretazione geometrica}
-\label{\detokenize{ch/infinitesimal_calculus/integrals:interpretazione-geometrica}}
+\label{\detokenize{ch/infinitesimal_calculus/integrals:interpretazione-geometrica}}\label{\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-def-geom}}
 \sphinxAtStartPar
 L’integrale definito
 \begin{equation*}
@@ -11795,6 +12008,14 @@ scambio degli estremi di integrazione
 \end{itemize}
 \begin{equation}\label{equation:ch/infinitesimal_calculus/integrals:infinitesimal-calculus:integrals:prop:swap}
 \begin{split}\int_{x=a}^{b} f(x) dx = - \int_{x=b}^{a} f(x) \, dx\end{split}
+\end{equation}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+integrale di una funzione costante
+
+\end{itemize}
+\begin{equation}\label{equation:ch/infinitesimal_calculus/integrals:infinitesimal-calculus:integrals:prop:const}
+\begin{split}\int_{x=a}^{b} m dx = (b-a) \, m \end{split}
 \end{equation}
 
 \begin{savenotes}\sphinxattablestart
@@ -11869,15 +12090,45 @@ dove la costante additiva \(C\) tiene conto dell’arbitrarietà appena discussa
 
 
 \sphinxAtStartPar
-Sia \(f: [a,b] \in \mathbb{R} \rightarrow \mathbb{R}\) una funzione continua su \([a,b]\), allora esiste \(c \in [a,b]\) tale che
+Sia \(f: [a,b] \in \mathbb{R} \rightarrow \mathbb{R}\) una funzione continua su un intervallo \([a,b]\) chiuso e limitato, allora esiste \(c \in [a,b]\) tale che
 \begin{equation*}
 \begin{split}\int_{a}^{b} f(x) dx = (b-a) f(c) \end{split}
 \end{equation*}\end{sphinxadmonition}
 \subsubsection*{Dimostrazione}
 
 \sphinxAtStartPar
-\sphinxstylestrong{todo}
+Poiché \(f(x): [a,b] \rightarrow \mathbb{R}\) è una funzione continua definita su un intervallo chiuso e limitato, allora per il {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-continuous-fun-thms-weierstrass}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema di Weierstrass}}}} la funzione ammette minimo \(m\) e massimo \(M\) per valori di \(x \in [a,b]\),
+\begin{equation*}
+\begin{split}m \le f(x) \le M \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Integrando questa relazione sull’intervallo \([a,b]\),
+\begin{equation*}
+\begin{split}\int_{a}^{b} m \, dx \le \int_{a}^{b} f(x) \, dx \le \int_{a}^{b} M ,\ dx \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+La regola di integrazione per una funzione costante \eqref{equation:ch/infinitesimal_calculus/integrals:infinitesimal-calculus:integrals:prop:const} permette di calcolare gli integrali estremi
+\begin{equation*}
+\begin{split}(b-a) m \le \int_{a}^{b} f(x) \, dx \le (b-a) M \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e dividendo per \((b-a) \ne 0\), si ottiene la relazione
+\begin{equation*}
+\begin{split}m \le \frac{1}{b-a} \int_{a}^{b} f(x) \, dx \le M \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Siano \(x_m\) e \(x_M \in [a,b]\) i punti \sphinxhyphen{} i numeri reali \sphinxhyphen{} in cui la funzione assume i valori minimo e massimo. Se \(x_m < x_M\), si applica il teorema dei valori medi sull’intervallo \(I_m = [x_m, x_M]\), in caso contrario sull’intervallo \(I_m = [x_M, x_m]\).
 
+\sphinxAtStartPar
+Per il {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-continuous-fun-thms-intermediate}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema dei valori intermedi}}}}, la funzione continua \(f(x)\) definita sull’intervallo chiuso e limitato \(I_m \subseteq [a,b]\), assume tutti i valori compresi tra i valori nei due estremi, cioè esiste un numero \(c \in I_m\) tale che
+\begin{equation*}
+\begin{split}m = f(x_m) \le f(c) \le f(x_M) = M \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e tra tutti i valori compresi tra \(m\) e \(M\) esiste un punto \(c\) in cui la funzione assume il valore particolare definito dalla media \(\frac{1}{b-a}\int_{a}^{b} f(x) \, dx\), cioè
+\begin{equation*}
+\begin{split}\exists c \in I_m \subseteq [a,b] \ , \text{ t.c.} \ f(c) = \frac{1}{b-a}\int_{a}^{b} f(x) \, dx \ .\end{split}
+\end{equation*}
 
 
 
@@ -11903,20 +12154,68 @@ Sia \(f: [a,b] \in \mathbb{R} \rightarrow \mathbb{R}\) una funzione continua su 
 \begin{sphinxadmonition}{note}{Theorem 25.2.2 (Teorema fondamentale del calcolo infinitesimale)}
 
 
+
+\sphinxAtStartPar
+Data una funzione \(f: D \rightarrow \mathbb{R}\) integrabile sull’intervallo \([a,b] \subseteq D\), {\color{red}\bfseries{}infinitesimal\sphinxhyphen{}calculus:integrals:def:integrable\sphinxhyphen{}function}, si definisce la funzione
 \begin{equation*}
-\begin{split}\dfrac{d}{dx} \int_{a}^{x} f(t) dt = f(x) \end{split}
-\end{equation*}\end{sphinxadmonition}
+\begin{split}F(x) := \int_{a}^{x} f(t) \, dt \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{Oss.} Qui la variabile di integrazione \(t\) è una variabile \sphinxstylestrong{dummy}, non ha un significato particolare che resista all’operazione di integrazione. La funzione \(F\) ha come argomento \(x\) l’estremo di integrazione superiore dell’integrale.
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
+\sphinxAtStartPar
+Se \(f\) è limitata la funzione \(F(x)\) è continua se \(f\) limitata
+
+\item {} 
+\sphinxAtStartPar
+Se \(f\) è continua in \((a,b)\), allora \(F(x)\) è differenziabile in \((a,b)\) e la sua derivata vale \(F'(x) = f(x)\), o più esplicitamente
+\begin{equation*}
+\begin{split}\dfrac{d}{dx} \int_{a}^{x} f(t) dt = f(x) \ .\end{split}
+\end{equation*}
+\end{enumerate}
+\end{sphinxadmonition}
 \subsubsection*{Dimostrazione}
 
 \sphinxAtStartPar
-\sphinxstylestrong{Dim.} Usando la {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-def}]{\sphinxcrossref{\DUrole{std,std-ref}{definizione di derivata}}}}, le {\hyperref[\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-def-definite-prop}]{\sphinxcrossref{\DUrole{std,std-ref}{proprietà dell’integrale definito}}}} e il {\hyperref[\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-thm-avg}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema della media}}}},
+\sphinxstylestrong{Continuità.} Si dimostra la continuità di \(F(x)\), usando la definizione di {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-continuous-fun-def}]{\sphinxcrossref{\DUrole{std,std-ref}{funzione continua}}}}, valutando \(\lim_{x \rightarrow x_0} F(x)\), e verificando che vale \(\lim_{x \rightarrow x_0} F(x) = F(x_0)\)
 \begin{equation*}
 \begin{split}\begin{aligned}
-\dfrac{d}{dx} \int_{a}^x f(y) dy & = \lim_{\varepsilon \rightarrow 0 }\frac{1}{\varepsilon} \Big[ \int_{a}^{x+\varepsilon} f(y) dy - \int_{a}^{x} f(y) dy \Big] = \\
-& = \lim_{\varepsilon \rightarrow 0 }\frac{1}{\varepsilon} \Big[ \int_{x}^{x+\varepsilon} f(y) dy \Big] = \\
-& = \lim_{\varepsilon \rightarrow 0 } \frac{1}{\varepsilon} \varepsilon f(\xi) = \qquad \xi \in [x,x+\varepsilon] \\
-& = \lim_{\varepsilon \rightarrow 0 } f(\xi) = f(x) . \\
+  \lim_{x \rightarrow x_0} F(x) 
+  & = \lim_{x \rightarrow x_0} \int_{a}^{x} f(t) \, dt = && (1) \\
+  & = \lim_{x \rightarrow x_0} \left[ \int_{a}^{x_0} f(t) \, dt + \int_{x_0}^{x} f(t) \, dt \right] = && (2) \\
+  & = \int_{a}^{x_0} f(t) \, dt + \lim_{x \rightarrow x_0} \int_{x_0}^{x} f(t) \, dt = && (3) \\
+  & = \int_{a}^{x_0} f(t) \, dt = F(x_0) \ ,
 \end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+avendo usato (1) l’additività dell’integrale sull’intervallo \eqref{equation:ch/infinitesimal_calculus/integrals:infinitesimal-calculus:integrals:prop:add}, (2) le {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-thms-operations}]{\sphinxcrossref{\DUrole{std,std-ref}{operazioni con i limiti}}}} per scrivere il limite della somma di funzione come la somma dei limiti \sphinxhyphen{} almeno, quando i limiti esistono finiti, come in questo caso per l’intergabilità della funzione \sphinxhyphen{}, e (3) riconoscendo che l’integrale di una funzione limitata su un intervallo di dimensione nulla è nullo esso stesso.
+
+\sphinxAtStartPar
+\sphinxstylestrong{Derivata di \(F(x)\).} L’espressione della derivata di \(F(x)\) si ottiene dal calcolo diretto, partendo dalla {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-def}]{\sphinxcrossref{\DUrole{std,std-ref}{definizione di derivata di una funzione reale a variabile reale}}}}
+\begin{equation*}
+\begin{split}\begin{aligned}
+F'(x)
+  & := \dfrac{d}{dx} \int_{a}^x f(t) dt = \\
+  & = \lim_{\varepsilon \rightarrow 0 } \frac{1}{\varepsilon} \Big[ \int_{a}^{x+\varepsilon} f(t) dt - \int_{a}^{x} f(t) dt \Big] = && (1) \\
+  & = \lim_{\varepsilon \rightarrow 0 } \frac{1}{\varepsilon} \Big[ \int_{x}^{x+\varepsilon} f(y) dy \Big] = && (2) \\
+  & = \lim_{\varepsilon \rightarrow 0 } \frac{1}{\varepsilon} \varepsilon f(\xi_{[x,x+\varepsilon]}) = \qquad x_{[x,x+\varepsilon]} \in [x,x+\varepsilon] && (3) \\
+  & = \lim_{\varepsilon \rightarrow 0 } f(\xi_{[x,x+\varepsilon]}) = f(x) . \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+avendo usato (1) l’additività dell’integrale sull’intervallo \eqref{equation:ch/infinitesimal_calculus/integrals:infinitesimal-calculus:integrals:prop:add}, (2) il {\hyperref[\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-thm-avg}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema della media}}}}, e (3) la {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-continuous-fun-def}]{\sphinxcrossref{\DUrole{std,std-ref}{continuità di \(f\)}}}}, che permette di scrivere
+\begin{equation*}
+\begin{split}\lim_{\varepsilon \rightarrow 0} f(\xi_{[x,x+\varepsilon]}) = \lim_{\xi_{[x,x+\varepsilon]} \rightarrow x} f(\xi) =  f(x) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+quando \(\xi_{[x,x+\varepsilon]} \rightarrow x\) quando le dimensioni dell’intervallo vengono fatte tendere a zero, e di concludere la dimostrazione del teorema.
+
+\sphinxAtStartPar
+\sphinxstylestrong{Oss.} Per evitare questioni sull’appartenenza di \(x + \varepsilon \in [a,b]\) si può usare la definizione «all’indietro» della derivata,
+\begin{equation*}
+\begin{split}F'(x) := \lim_{\varepsilon \rightarrow 0} \frac{f(x) - f(x-\varepsilon)}{\varepsilon} \ . \end{split}
 \end{equation*}
 
 \subsection{Derivata su dominio dipendente dalla variabile indipendente}
@@ -12001,7 +12300,7 @@ Derivazione che riporti a integrali più semplici: esempio, può ridurre di \(1\
 
 \end{itemize}
 \end{sphinxadmonition}
-\label{ch/infinitesimal_calculus/integrals:example-5}
+\label{ch/infinitesimal_calculus/integrals:example-6}
 \begin{sphinxadmonition}{note}{Example 25.4.1 (Esempio di integrazione per parti)}
 
 
@@ -12060,7 +12359,7 @@ Usando il {\hyperref[\detokenize{ch/infinitesimal_calculus/integrals:infinitesim
   & \sqrt{a^2 + x^2} && \rightarrow && x = a \sinh \theta \\
   & \sqrt{x^2 - a^2} && \rightarrow && x = a \cosh \theta \\
 \end{aligned}\end{split}
-\end{equation*}\label{ch/infinitesimal_calculus/integrals:example-6}
+\end{equation*}\label{ch/infinitesimal_calculus/integrals:example-7}
 \begin{sphinxadmonition}{note}{Example 25.4.2 (\protect\(\displaystyle \int \sqrt{a^2 - x^2} \,  dx\protect\))}
 
 
@@ -12091,7 +12390,7 @@ e usando la formula \(\sin( 2 \theta ) = 2 \sin \theta \cos \theta = 2 \dfrac{x}
 \begin{equation*}
 \begin{split}\int \sqrt{a^2 - x^2} \, dx = \frac{a^2}{2} \left[ \text{arcsin}\left( \frac{x}{a} \right) + \frac{x}{a}\sqrt{1 - \left( \frac{x}{a} \right)^2 }\right] + C .\end{split}
 \end{equation*}\end{sphinxadmonition}
-\label{ch/infinitesimal_calculus/integrals:example-7}
+\label{ch/infinitesimal_calculus/integrals:example-8}
 \begin{sphinxadmonition}{note}{Example 25.4.3 (\protect\( \displaystyle \int \sqrt{a^2 + x^2} \,  dx\protect\))}
 
 
@@ -12145,7 +12444,7 @@ Si può tornare alla variabile indipendente di partenza \(x\) con la trasformazi
    & = \frac{a^2}{2} \left\{ \ln \left[ \frac{x}{a}  +  \sqrt{1 + \left( \frac{x}{a} \right)^2} \right] + \frac{x}{a} \sqrt{1 + \left(\frac{x}{a}\right)^2} \right\} + C
 \end{aligned}\end{split}
 \end{equation*}\end{sphinxadmonition}
-\label{ch/infinitesimal_calculus/integrals:example-8}
+\label{ch/infinitesimal_calculus/integrals:example-9}
 \begin{sphinxadmonition}{note}{Example 25.4.4 (\protect\(\displaystyle \int \sqrt{x^2 - a^2} \,  dx\protect\))}
 
 
@@ -12200,7 +12499,7 @@ Si può tornare alla variabile indipendente di partenza \(x\) con la trasformazi
    & = \frac{a^2}{2} \left\{ -\ln \left[ \frac{x}{a}  \pm  \sqrt{\left( \frac{x}{a} \right)^2 - 1} \right] + \frac{x}{a} \sqrt{ \left(\frac{x}{a}\right)^2 - 1} \right\} + C
 \end{aligned}\end{split}
 \end{equation*}\end{sphinxadmonition}
-\label{ch/infinitesimal_calculus/integrals:example-9}
+\label{ch/infinitesimal_calculus/integrals:example-10}
 \begin{sphinxadmonition}{note}{Example 25.4.5 (\protect\(\displaystyle \int \frac{1}{\sqrt{a^2 - x^2}} \,  dx\protect\))}
 
 
@@ -12221,7 +12520,7 @@ ha senso per intervalli di integrazioni tali che \(|x| \le |a|\). In questi casi
    & = \text{arcsin} x + C \ .
 \end{aligned}\end{split}
 \end{equation*}\end{sphinxadmonition}
-\label{ch/infinitesimal_calculus/integrals:example-10}
+\label{ch/infinitesimal_calculus/integrals:example-11}
 \begin{sphinxadmonition}{note}{Example 25.4.6 (\protect\(\displaystyle \int \frac{1}{\sqrt{a^2 + x^2}} \,  dx\protect\))}
 
 
@@ -12251,7 +12550,7 @@ per utilizzare le proprietà delle funzioni iperboliche e scrivere
    & = \ln \left[ \frac{x}{a}  +  \sqrt{\left( \frac{x}{a} \right)^2 + 1} \right] \ .
 \end{aligned}\end{split}
 \end{equation*}\end{sphinxadmonition}
-\label{ch/infinitesimal_calculus/integrals:example-11}
+\label{ch/infinitesimal_calculus/integrals:example-12}
 \begin{sphinxadmonition}{note}{Example 25.4.7 (\protect\(\displaystyle \int \frac{1}{\sqrt{x^2 - a^2}} \,  dx\protect\))}
 
 
@@ -12293,7 +12592,7 @@ per utilizzare le proprietà delle funzioni iperboliche e scrivere
   & \sqrt{a + bx + x^2}                                  && \rightarrow && a + bx + x^2 = ( z - x )^2 \\
   & \sqrt{a + bx - x^2} = \sqrt{(\alpha + x)(\beta - x)} && \rightarrow && a + bx - x^2 = ( \alpha + x )^2 z^2 \\
 \end{aligned}\end{split}
-\end{equation*}\label{ch/infinitesimal_calculus/integrals:example-12}
+\end{equation*}\label{ch/infinitesimal_calculus/integrals:example-13}
 \begin{sphinxadmonition}{note}{Example 25.4.8 (\protect\(\displaystyle \int \sqrt[n]{ax+b} \, dx \protect\))}
 
 
@@ -12322,7 +12621,7 @@ per utilizzare le proprietà delle funzioni iperboliche e scrivere
   & = \frac{1}{a} \frac{n}{n+1} (ax+b)^{\frac{n+1}{n}} + C  \ .
 \end{aligned}\end{split}
 \end{equation*}\end{sphinxadmonition}
-\label{ch/infinitesimal_calculus/integrals:example-13}
+\label{ch/infinitesimal_calculus/integrals:example-14}
 \begin{sphinxadmonition}{note}{Example 25.4.9 (\protect\(\displaystyle \int \sqrt{a + bx + x^2} \, dx \protect\))}
 
 
@@ -12342,7 +12641,7 @@ ci si può riportare agli integrali della forma \(\displaystyle \int \sqrt{y^2 -
 \sphinxAtStartPar
 \sphinxstylestrong{Metodo 1.} Con cambio di variabili
 \end{sphinxadmonition}
-\label{ch/infinitesimal_calculus/integrals:example-14}
+\label{ch/infinitesimal_calculus/integrals:example-15}
 \begin{sphinxadmonition}{note}{Example 25.4.10 (\protect\(\displaystyle \int \sqrt{a + bx - x^2} \, dx \protect\))}
 
 
@@ -12373,7 +12672,7 @@ ci si può riportare agli integrali della forma \(\displaystyle \int \sqrt{-y^2 
 \end{equation*}
 \sphinxAtStartPar
 risulta utile a trasformare un’integranda dove compaiono funzioni trigonometriche in un’integranda razionale.
-\label{ch/infinitesimal_calculus/integrals:example-15}
+\label{ch/infinitesimal_calculus/integrals:example-16}
 \begin{sphinxadmonition}{note}{Example 25.4.11 (Razionalizzazione con cambio di variabili \protect\(z = \tan\left( \frac{x}{2} \right)\protect\).)}
 
 
@@ -12409,7 +12708,7 @@ e (usando la relazione fondamentale della trignometria \(\sin^2 x + \cos^2 x = 1
 
 \sphinxAtStartPar
 \sphinxstylestrong{todo} \sphinxstyleemphasis{descrivere meglio il metodo}
-\label{ch/infinitesimal_calculus/integrals:example-16}
+\label{ch/infinitesimal_calculus/integrals:example-17}
 \begin{sphinxadmonition}{note}{Example 25.4.12 (Integrazione con frazioni parziali)}
 
 
@@ -12422,7 +12721,7 @@ e (usando la relazione fondamentale della trignometria \(\sin^2 x + \cos^2 x = 1
   & = \frac{3}{2} x^2 - 6 x + 13 \ln |x+2| + C \ .
 \end{aligned}\end{split}
 \end{equation*}\end{sphinxadmonition}
-\label{ch/infinitesimal_calculus/integrals:example-17}
+\label{ch/infinitesimal_calculus/integrals:example-18}
 \begin{sphinxadmonition}{note}{Example 25.4.13 (Integrazione con frazioni parziali)}
 
 
@@ -15029,7 +15328,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-22 feb 2025
+26 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -15205,6 +15504,9 @@ RL: ottimizzazione/controllo
 \bigletter{example\sphinxhyphen{}17}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}17}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{example-17}}
 \indexspace
+\bigletter{example\sphinxhyphen{}18}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}18}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{example-18}}
+\indexspace
 \bigletter{example\sphinxhyphen{}2}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}2}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/vector-calculus/integrals:\detokenize{example-2}}
 \indexspace
@@ -15229,6 +15531,9 @@ RL: ottimizzazione/controllo
 \bigletter{example\sphinxhyphen{}9}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}9}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/geometry}\sphinxstyleindexpageref{ch/vector-calculus/geometry:\detokenize{example-9}}
 \indexspace
+\bigletter{infinitesimal\sphinxhyphen{}calculus:integrals:def:integrable\sphinxhyphen{}function}
+\item\relax\sphinxstyleindexentry{infinitesimal\sphinxhyphen{}calculus:integrals:def:integrable\sphinxhyphen{}function}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{infinitesimal-calculus:integrals:def:integrable-function}}
+\indexspace
 \bigletter{infinitesimal\sphinxhyphen{}calculus:integrals:def:riemann\sphinxhyphen{}integral}
 \item\relax\sphinxstyleindexentry{infinitesimal\sphinxhyphen{}calculus:integrals:def:riemann\sphinxhyphen{}integral}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{infinitesimal-calculus:integrals:def:riemann-integral}}
 \indexspace
@@ -15243,6 +15548,18 @@ RL: ottimizzazione/controllo
 \indexspace
 \bigletter{integrals:thm:fund:reynolds}
 \item\relax\sphinxstyleindexentry{integrals:thm:fund:reynolds}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{integrals:thm:fund:reynolds}}
+\indexspace
+\bigletter{interval\sphinxhyphen{}def}
+\item\relax\sphinxstyleindexentry{interval\sphinxhyphen{}def}\sphinxstyleindexextra{ch/infinitesimal\_calculus/analysis}\sphinxstyleindexpageref{ch/infinitesimal_calculus/analysis:\detokenize{interval-def}}
+\indexspace
+\bigletter{interval\sphinxhyphen{}example}
+\item\relax\sphinxstyleindexentry{interval\sphinxhyphen{}example}\sphinxstyleindexextra{ch/infinitesimal\_calculus/analysis}\sphinxstyleindexpageref{ch/infinitesimal_calculus/analysis:\detokenize{interval-example}}
+\indexspace
+\bigletter{interval\sphinxhyphen{}limited}
+\item\relax\sphinxstyleindexentry{interval\sphinxhyphen{}limited}\sphinxstyleindexextra{ch/infinitesimal\_calculus/analysis}\sphinxstyleindexpageref{ch/infinitesimal_calculus/analysis:\detokenize{interval-limited}}
+\indexspace
+\bigletter{interval\sphinxhyphen{}open\sphinxhyphen{}close}
+\item\relax\sphinxstyleindexentry{interval\sphinxhyphen{}open\sphinxhyphen{}close}\sphinxstyleindexextra{ch/infinitesimal\_calculus/analysis}\sphinxstyleindexpageref{ch/infinitesimal_calculus/analysis:\detokenize{interval-open-close}}
 \indexspace
 \bigletter{linsys\sphinxhyphen{}gauss}
 \item\relax\sphinxstyleindexentry{linsys\sphinxhyphen{}gauss}\sphinxstyleindexextra{ch/algebra/linear\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/linear-algebra:\detokenize{linsys-gauss}}
