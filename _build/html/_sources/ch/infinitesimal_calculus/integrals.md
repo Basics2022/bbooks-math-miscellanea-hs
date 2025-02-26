@@ -30,6 +30,15 @@ $$\int_a^b f(x) \ dx = \lim_{\Delta x \rightarrow 0} \sigma_P \ .$$ (infinitesim
   - ![](../../media/integral-geom-2.png)
   - ![](../../media/integral-geom-3.png)
 ```
+```{prf:definition} Funzione integrabile (secondo Riemann)
+:label: infinitesimal-calculus:integrals:def:integrable-function
+
+Una funzione $f(x): D \subseteq \mathbb{R} \rightarrow \mathbb{R}$ è integrabile sull'intervallo $[a,b] \subseteq D$ se esiste (finito?) l'integrale di Riemann
+
+$$\int_{a}^{b} f(x) \, dx \ .$$
+
+```
+
 
 (infinitesimal-calculus:integrals:def:geom)=
 ### Interpretazione geometrica
@@ -62,6 +71,10 @@ $$\left| \int_a^b f(x) \ dx \right| \le \int_a^b | f(x) | \ dx \ ,$$ (infinitesi
 - scambio degli estremi di integrazione
 
 $$\int_{x=a}^{b} f(x) dx = - \int_{x=b}^{a} f(x) \, dx$$ (infinitesimal-calculus:integrals:prop:swap)
+
+- integrale di una funzione costante
+
+$$\int_{x=a}^{b} m dx = (b-a) \, m $$ (infinitesimal-calculus:integrals:prop:const)
 
 ```{list-table}
 :header-rows: 0
@@ -128,7 +141,7 @@ Integrando questa relazione sull'intervallo $[a,b]$,
 
 $$\int_{a}^{b} m \, dx \le \int_{a}^{b} f(x) \, dx \le \int_{a}^{b} M ,\ dx \ .$$
 
-L'[integrale di una funzione costante]() permette di calcolare gli integrali estremi
+La regola di integrazione per una funzione costante {eq}`infinitesimal-calculus:integrals:prop:const` permette di calcolare gli integrali estremi
 
 $$(b-a) m \le \int_{a}^{b} f(x) \, dx \le (b-a) M \ ,$$
 
@@ -144,7 +157,7 @@ $$m = f(x_m) \le f(c) \le f(x_M) = M \ ,$$
 
 e tra tutti i valori compresi tra $m$ e $M$ esiste un punto $c$ in cui la funzione assume il valore particolare definito dalla media $\frac{1}{b-a}\int_{a}^{b} f(x) \, dx$, cioè
 
-$$\exits c \in I_m \subseteq [a,b] \ , \text{ t.c.} \ f(c) = \frac{1}{b-a}\int_{a}^{b} f(x) \, dx \ .$$
+$$\exists c \in I_m \subseteq [a,b] \ , \text{ t.c.} \ f(c) = \frac{1}{b-a}\int_{a}^{b} f(x) \, dx \ .$$
 
 ```
 
@@ -163,22 +176,58 @@ $$\exits c \in I_m \subseteq [a,b] \ , \text{ t.c.} \ f(c) = \frac{1}{b-a}\int_{
 (infinitesimal-calculus:integrals:thm:fund)=
 ### Teorema fondamentale del calcolo infinitesimale
 (Teorema fondamentale del calcolo infinitesimale)=
+
 ```{prf:theorem} Teorema fondamentale del calcolo infinitesimale
 :label: integrals:thm:fund
 
-$$\dfrac{d}{dx} \int_{a}^{x} f(t) dt = f(x) $$
+Data una funzione $f: D \rightarrow \mathbb{R}$ integrabile sull'intervallo $[a,b] \subseteq D$, {prf-ref}`infinitesimal-calculus:integrals:def:integrable-function`, si definisce la funzione
+
+$$F(x) := \int_{a}^{x} f(t) \, dt \ .$$
+
+**Oss.** Qui la variabile di integrazione $t$ è una variabile **dummy**, non ha un significato particolare che resista all'operazione di integrazione. La funzione $F$ ha come argomento $x$ l'estremo di integrazione superiore dell'integrale.
+
+1. Se $f$ è limitata la funzione $F(x)$ è continua se $f$ limitata
+
+2. Se $f$ è continua in $(a,b)$, allora $F(x)$ è differenziabile in $(a,b)$ e la sua derivata vale $F'(x) = f(x)$, o più esplicitamente
+
+    $$\dfrac{d}{dx} \int_{a}^{x} f(t) dt = f(x) \ .$$
 
 ```
 
 ```{dropdown} Dimostrazione
-**Dim.** Usando la [definizione di derivata](infinitesimal-calculus:derivatives:def), le [proprietà dell'integrale definito](infinitesimal-calculus:integrals:def:definite:prop) e il [teorema della media](infinitesimal-calculus:integrals:thm:avg),
+
+**Continuità.** Si dimostra la continuità di $F(x)$, usando la definizione di [funzione continua](infinitesimal-calculus:continuous-fun:def), valutando $\lim_{x \rightarrow x_0} F(x)$, e verificando che vale $\lim_{x \rightarrow x_0} F(x) = F(x_0)$
 
 $$\begin{aligned}
-\dfrac{d}{dx} \int_{a}^x f(y) dy & = \lim_{\varepsilon \rightarrow 0 }\frac{1}{\varepsilon} \Big[ \int_{a}^{x+\varepsilon} f(y) dy - \int_{a}^{x} f(y) dy \Big] = \\
-& = \lim_{\varepsilon \rightarrow 0 }\frac{1}{\varepsilon} \Big[ \int_{x}^{x+\varepsilon} f(y) dy \Big] = \\
-& = \lim_{\varepsilon \rightarrow 0 } \frac{1}{\varepsilon} \varepsilon f(\xi) = \qquad \xi \in [x,x+\varepsilon] \\
-& = \lim_{\varepsilon \rightarrow 0 } f(\xi) = f(x) . \\
+  \lim_{x \rightarrow x_0} F(x) 
+  & = \lim_{x \rightarrow x_0} \int_{a}^{x} f(t) \, dt = && (1) \\
+  & = \lim_{x \rightarrow x_0} \left[ \int_{a}^{x_0} f(t) \, dt + \int_{x_0}^{x} f(t) \, dt \right] = && (2) \\
+  & = \int_{a}^{x_0} f(t) \, dt + \lim_{x \rightarrow x_0} \int_{x_0}^{x} f(t) \, dt = && (3) \\
+  & = \int_{a}^{x_0} f(t) \, dt = F(x_0) \ ,
 \end{aligned}$$
+
+avendo usato (1) l'additività dell'integrale sull'intervallo {eq}`infinitesimal-calculus:integrals:prop:add`, (2) le [operazioni con i limiti](infinitesimal-calculus:limits:thms:operations) per scrivere il limite della somma di funzione come la somma dei limiti - almeno, quando i limiti esistono finiti, come in questo caso per l'intergabilità della funzione -, e (3) riconoscendo che l'integrale di una funzione limitata su un intervallo di dimensione nulla è nullo esso stesso.
+
+**Derivata di $F(x)$.** L'espressione della derivata di $F(x)$ si ottiene dal calcolo diretto, partendo dalla [definizione di derivata di una funzione reale a variabile reale](infinitesimal-calculus:derivatives:def)
+
+$$\begin{aligned}
+F'(x)
+  & := \dfrac{d}{dx} \int_{a}^x f(t) dt = \\
+  & = \lim_{\varepsilon \rightarrow 0 } \frac{1}{\varepsilon} \Big[ \int_{a}^{x+\varepsilon} f(t) dt - \int_{a}^{x} f(t) dt \Big] = && (1) \\
+  & = \lim_{\varepsilon \rightarrow 0 } \frac{1}{\varepsilon} \Big[ \int_{x}^{x+\varepsilon} f(y) dy \Big] = && (2) \\
+  & = \lim_{\varepsilon \rightarrow 0 } \frac{1}{\varepsilon} \varepsilon f(\xi_{[x,x+\varepsilon]}) = \qquad x_{[x,x+\varepsilon]} \in [x,x+\varepsilon] && (3) \\
+  & = \lim_{\varepsilon \rightarrow 0 } f(\xi_{[x,x+\varepsilon]}) = f(x) . \\
+\end{aligned}$$
+
+avendo usato (1) l'additività dell'integrale sull'intervallo {eq}`infinitesimal-calculus:integrals:prop:add`, (2) il [teorema della media](infinitesimal-calculus:integrals:thm:avg), e (3) la [continuità di $f$](infinitesimal-calculus:continuous-fun:def), che permette di scrivere 
+
+$$\lim_{\varepsilon \rightarrow 0} f(\xi_{[x,x+\varepsilon]}) = \lim_{\xi_{[x,x+\varepsilon]} \rightarrow x} f(\xi) =  f(x) \ ,$$
+
+quando $\xi_{[x,x+\varepsilon]} \rightarrow x$ quando le dimensioni dell'intervallo vengono fatte tendere a zero, e di concludere la dimostrazione del teorema.
+
+**Oss.** Per evitare questioni sull'appartenenza di $x + \varepsilon \in [a,b]$ si può usare la definizione "all'indietro" della derivata,
+
+$$F'(x) := \lim_{\varepsilon \rightarrow 0} \frac{f(x) - f(x-\varepsilon)}{\varepsilon} \ . $$
 
 ```
 

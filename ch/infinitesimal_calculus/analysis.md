@@ -163,8 +163,6 @@ Mentre non viene fornita una dimostrazione del teorema, si discute la necessità
 
 ```
 
-
-
 (infinitesimal-calculus:continuous-fun:thms:sign)=
 #### Teorema della permanenza del segno
 ```{prf:theorem} Teorema della permanenza del segno
