@@ -16,6 +16,72 @@ Per un'introduzione alle funzioni reali fa variabili reali si rimanda al [capito
 ### Cenni di topologia per il calcolo
 **todo** *Punto di accumulazione e punto isolato, intorno, insiemi aperti e chiusi, limsup/liminf, max/min,... E' necessario? Il minimo indispensabile*
 
+#### Intervalli
+
+```{prf:definition}
+:label: interval-def
+
+Un intervallo $I$ è un sottoinsieme dei numeri reali $\mathbb{R}$ "senza buchi", cioè se due numeri $x$, $y > x$ appartengono a $I$, allora tutti i numeri reali $u$ compresi tra $x$, $y$ appartengno a $I$.
+```
+
+```{prf:example} Intervalli e sottoinsiemi che non sono intervalli
+:class: dropdown
+:label: interval-example
+
+Così ad esempio, l'insieme dei numeri reali compresi tra 2 e 3,
+
+$$I = \{ x | 2 \le x \le 3 \} \ ,$$
+
+è un sottoinsieme e intervallo di $\mathbb{R}$. L'unione degli insiemi di numeri reali compresi tra 0 e 1, e tra 2 e 3,
+
+$$S = \{ x | 0 \le x \le 1 \lor 2 \le x \le 3 \} \ ,$$
+
+è un sottoinsieme di $\mathbb{R}$ ma non è un intervallo, poiché non è soddisfatta la definizione: ad esempio, il numero $1.3$ è compreso tra due numeri appartenenti all'insieme $S$, ad esempio $0.1$ e $2.\overline{7}$ ma non appartiene a $S$.
+
+```
+
+```{prf:definition} Intervallo limitato
+:label: interval-limited
+
+Un intervallo è **limitato superiormente** se esiste un numero $M \in \mathbb{R}$ tale che tutti gli elementi dell'intervallo sono minori di $M$; un intervallo è **limitato inferiormente** se esiste un numero $N \in \mathbb{R}$, tale che tutti gli elementi dell'intarvallo sono maggiori di $N$.
+
+In caso contrario, gli intervalli vengono definiti **illimitati**
+```
+
+
+
+```{prf:definition} Intervalli aperti e chiusi
+:label: interval-open-close
+
+Un intervallo chiuso è un intervallo che comprende gli **estremi** dell'insieme
+
+$$I_c = \{ x \in \mathbb{R} | a \le x \le b \} =: [a,b] \ .$$
+
+Un intervallo aperto è un intervallo che non comprende gli  estremi dell'insieme,
+
+$$I_a = \{ x \in \mathbb{R} | a \lt x \lt b \} =: (a,b) \ .$$
+
+```
+
+Pensando alla rappresentazione dei numeri reali sulla retta reale, orizzontale e orientata con verso positivo verso destra, ci si può riferire all'estremo inferiore come estremo sinistro e all'estremo superiore come estremo destro dell'intervallo.
+
+I singoli estremi di un intervallo possono essere chiusi o aperti. Ad esempio, i possibili intervalli di numeri reali sono:
+- $(a,b)$ intervallo limitato aperto sia a sinistra sia a destra
+- $[a,b)$ intervallo limitato chiuso a sinistra e aperto a destra
+- $(a,b]$ intervallo limitato aperto a sinistra e chiuso a destra
+- $[a,b]$ intervallo limitato chiuso sia a sinistra sia a destra
+- $[a,+\infty)$ intervallo illimitato, chiuso a sinistra infinito a destra
+- $(a,+\infty)$ intervallo illimitato, aperto a sinistra infinito a destra
+- $(-\infty,b]$ intervallo illimitato, infinito a sinistra chiuso a destra
+- $(-\infty,b)$ intervallo illimitato, infinito a sinistra aperto a destra
+- $(-\infty,+\infty)$ intervallo illimitato, che coincide con la retta reale
+
+**todo** *Argomenti "non strettamente necessari", da aggiungere come approfondimenti in appendice? 
+- *discutere estremi, maggiorante/minorante*
+- *insiemi non limitati sono aperti o chiusi?*
+- *discussione massimo/minimo, limsup/liminf*
+
+
 (infinitesimal-calculus:limits:def)=
 ### Definizione di limite
 <!-- **Limite destro e sinistro**<br> -->
@@ -80,10 +146,24 @@ Una funzione reale è continua in un dominio **todo o insieme?** se è continua 
 ```{prf:theorem} Teorema di Weierstrass
 :label: thm:infinitesimal-calculus:continuous-fun:thms:weierstrass
 
-Data una funzione reale continua $f: [a,b] \rightarrow \mathbb{R}$ definita sull'intervallo chiuso $[a,b]$, la funzione $f(x)$ ammette un punto di massimo assoluto e un punto di minimo assoluto nell'intevallo $[a,b]$.
+Data una funzione reale continua $f: [a,b] \rightarrow \mathbb{R}$ definita sull'intervallo limitato chiuso $[a,b]$, la funzione $f(x)$ ammette un punto di massimo assoluto e un punto di minimo assoluto nell'intevallo $[a,b]$.
 ```
 
-**todo** *Dimostrazione? Discussione più intuitiva? Figura?*
+```{dropdown} Necessità delle ipotesi
+Mentre non viene fornita una dimostrazione del teorema, si discute la necessità delle ipotesi fornendo controesempi:
+1. la funzione non continua definita in $I = [-1,1]$
+
+    $$f(x) = \begin{cases} |x| && x \ne = 0 \\ 0.5 && x = 0 \end{cases} \ ,$$
+
+    assume valori massimi in $I$, in corrispondenza degli estremi dell'intervallo, ma non ha minimo. Infatti il limite inferiore della funzione nell'intervallo è $\liminf f(x) = 0$, ma non esiste alcun valore $x \in I$ tale che $f(x) = 0$, proprio per come è stata costruita la funzione con una [discontinuità](infinitesimal-calculus:continuou-fun:disc) di tipo 1 - salto in $x = 0$,
+
+2. la funzione continua $f(x) = e^{-x^2}$ definita sull'intervallo non limitato superiormente $I = [-2, +\infty)$ ha massimo nell'intervallo in corrispondenza di $x = 0$, $\max_{x \in I} f(x) = 1$, ma non ha minimo poiché $\liminf f(x) = 0$ ma non esiste nessun valore $x \in I$ tale che $f(x) = 0$
+
+3. la funzione continua $f(x) = x^2$ definita su $I = (1,2)$ non ammette né massimo, né minimo, poiché il limite inferiore e superiore della funzione si verificano in corrispondenza degli estremi (non inclusi) dell'intervallo aperto. Più esplicitamente, $\limsup_{x\in I} f(x) = 4$ ma $\nexists x \in I, \ f(x) = 4$; $\liminf_{x\in I} f(x) = 1$ ma $\nexists x \in I, \ f(x) = 1$;
+
+```
+
+
 
 (infinitesimal-calculus:continuous-fun:thms:sign)=
 #### Teorema della permanenza del segno

@@ -497,7 +497,10 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funzioni-reali-a-variabile-reale-f-mathbb-r-rightarrow-mathbb-r">23.1. Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\(f: \mathbb{R} \rightarrow \mathbb{R}\)</span></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limiti">23.2. Limiti</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cenni-di-topologia-per-il-calcolo">23.2.1. Cenni di topologia per il calcolo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cenni-di-topologia-per-il-calcolo">23.2.1. Cenni di topologia per il calcolo</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#intervalli">23.2.1.1. Intervalli</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definizione-di-limite">23.2.2. Definizione di limite</a></li>
 </ul>
 </li>
@@ -555,6 +558,60 @@ document.write(`
 <div class="section" id="cenni-di-topologia-per-il-calcolo">
 <h3><span class="section-number">23.2.1. </span>Cenni di topologia per il calcolo<a class="headerlink" href="#cenni-di-topologia-per-il-calcolo" title="Permalink to this heading">#</a></h3>
 <p><strong>todo</strong> <em>Punto di accumulazione e punto isolato, intorno, insiemi aperti e chiusi, limsup/liminf, max/min,… E” necessario? Il minimo indispensabile</em></p>
+<div class="section" id="intervalli">
+<h4><span class="section-number">23.2.1.1. </span>Intervalli<a class="headerlink" href="#intervalli" title="Permalink to this heading">#</a></h4>
+<div class="proof definition admonition" id="interval-def">
+<p class="admonition-title"><span class="caption-number">Definition 23.1 </span></p>
+<div class="definition-content section" id="proof-content">
+<p>Un intervallo <span class="math notranslate nohighlight">\(I\)</span> è un sottoinsieme dei numeri reali <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> «senza buchi», cioè se due numeri <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y &gt; x\)</span> appartengono a <span class="math notranslate nohighlight">\(I\)</span>, allora tutti i numeri reali <span class="math notranslate nohighlight">\(u\)</span> compresi tra <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span> appartengno a <span class="math notranslate nohighlight">\(I\)</span>.</p>
+</div>
+</div><div class="proof example dropdown admonition" id="interval-example">
+<p class="admonition-title"><span class="caption-number">Example 23.1 </span> (Intervalli e sottoinsiemi che non sono intervalli)</p>
+<div class="example-content section" id="proof-content">
+<p>Così ad esempio, l’insieme dei numeri reali compresi tra 2 e 3,</p>
+<div class="math notranslate nohighlight">
+\[I = \{ x | 2 \le x \le 3 \} \ ,\]</div>
+<p>è un sottoinsieme e intervallo di <span class="math notranslate nohighlight">\(\mathbb{R}\)</span>. L’unione degli insiemi di numeri reali compresi tra 0 e 1, e tra 2 e 3,</p>
+<div class="math notranslate nohighlight">
+\[S = \{ x | 0 \le x \le 1 \lor 2 \le x \le 3 \} \ ,\]</div>
+<p>è un sottoinsieme di <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> ma non è un intervallo, poiché non è soddisfatta la definizione: ad esempio, il numero <span class="math notranslate nohighlight">\(1.3\)</span> è compreso tra due numeri appartenenti all’insieme <span class="math notranslate nohighlight">\(S\)</span>, ad esempio <span class="math notranslate nohighlight">\(0.1\)</span> e <span class="math notranslate nohighlight">\(2.\overline{7}\)</span> ma non appartiene a <span class="math notranslate nohighlight">\(S\)</span>.</p>
+</div>
+</div><div class="proof definition admonition" id="interval-limited">
+<p class="admonition-title"><span class="caption-number">Definition 23.2 </span> (Intervallo limitato)</p>
+<div class="definition-content section" id="proof-content">
+<p>Un intervallo è <strong>limitato superiormente</strong> se esiste un numero <span class="math notranslate nohighlight">\(M \in \mathbb{R}\)</span> tale che tutti gli elementi dell’intervallo sono minori di <span class="math notranslate nohighlight">\(M\)</span>; un intervallo è <strong>limitato inferiormente</strong> se esiste un numero <span class="math notranslate nohighlight">\(N \in \mathbb{R}\)</span>, tale che tutti gli elementi dell’intarvallo sono maggiori di <span class="math notranslate nohighlight">\(N\)</span>.</p>
+<p>In caso contrario, gli intervalli vengono definiti <strong>illimitati</strong></p>
+</div>
+</div><div class="proof definition admonition" id="interval-open-close">
+<p class="admonition-title"><span class="caption-number">Definition 23.3 </span> (Intervalli aperti e chiusi)</p>
+<div class="definition-content section" id="proof-content">
+<p>Un intervallo chiuso è un intervallo che comprende gli <strong>estremi</strong> dell’insieme</p>
+<div class="math notranslate nohighlight">
+\[I_c = \{ x \in \mathbb{R} | a \le x \le b \} =: [a,b] \ .\]</div>
+<p>Un intervallo aperto è un intervallo che non comprende gli  estremi dell’insieme,</p>
+<div class="math notranslate nohighlight">
+\[I_a = \{ x \in \mathbb{R} | a \lt x \lt b \} =: (a,b) \ .\]</div>
+</div>
+</div><p>Pensando alla rappresentazione dei numeri reali sulla retta reale, orizzontale e orientata con verso positivo verso destra, ci si può riferire all’estremo inferiore come estremo sinistro e all’estremo superiore come estremo destro dell’intervallo.</p>
+<p>I singoli estremi di un intervallo possono essere chiusi o aperti. Ad esempio, i possibili intervalli di numeri reali sono:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\((a,b)\)</span> intervallo limitato aperto sia a sinistra sia a destra</p></li>
+<li><p><span class="math notranslate nohighlight">\([a,b)\)</span> intervallo limitato chiuso a sinistra e aperto a destra</p></li>
+<li><p><span class="math notranslate nohighlight">\((a,b]\)</span> intervallo limitato aperto a sinistra e chiuso a destra</p></li>
+<li><p><span class="math notranslate nohighlight">\([a,b]\)</span> intervallo limitato chiuso sia a sinistra sia a destra</p></li>
+<li><p><span class="math notranslate nohighlight">\([a,+\infty)\)</span> intervallo illimitato, chiuso a sinistra infinito a destra</p></li>
+<li><p><span class="math notranslate nohighlight">\((a,+\infty)\)</span> intervallo illimitato, aperto a sinistra infinito a destra</p></li>
+<li><p><span class="math notranslate nohighlight">\((-\infty,b]\)</span> intervallo illimitato, infinito a sinistra chiuso a destra</p></li>
+<li><p><span class="math notranslate nohighlight">\((-\infty,b)\)</span> intervallo illimitato, infinito a sinistra aperto a destra</p></li>
+<li><p><span class="math notranslate nohighlight">\((-\infty,+\infty)\)</span> intervallo illimitato, che coincide con la retta reale</p></li>
+</ul>
+<p><strong>todo</strong> *Argomenti «non strettamente necessari», da aggiungere come approfondimenti in appendice?</p>
+<ul class="simple">
+<li><p><em>discutere estremi, maggiorante/minorante</em></p></li>
+<li><p><em>insiemi non limitati sono aperti o chiusi?</em></p></li>
+<li><p><em>discussione massimo/minimo, limsup/liminf</em></p></li>
+</ul>
+</div>
 </div>
 <div class="section" id="definizione-di-limite">
 <span id="infinitesimal-calculus-limits-def"></span><h3><span class="section-number">23.2.2. </span>Definizione di limite<a class="headerlink" href="#definizione-di-limite" title="Permalink to this heading">#</a></h3>
@@ -593,7 +650,7 @@ document.write(`
 <div class="section" id="definizione">
 <span id="infinitesimal-calculus-continuous-fun-def"></span><h3><span class="section-number">23.3.1. </span>Definizione<a class="headerlink" href="#definizione" title="Permalink to this heading">#</a></h3>
 <div class="proof definition admonition" id="analysis-continuous-fun">
-<p class="admonition-title"><span class="caption-number">Definition 23.1 </span> (Funzione continua)</p>
+<p class="admonition-title"><span class="caption-number">Definition 23.4 </span> (Funzione continua)</p>
 <div class="definition-content section" id="proof-content">
 <p>Una funzione reale <span class="math notranslate nohighlight">\(f: D \in \mathbb{R} \rightarrow \mathbb{R}\)</span> è continua in un punto <span class="math notranslate nohighlight">\(x_0 \in D\)</span> <!--se la funzione è definita nel punto,--> se esiste il limite della funzione e coincide con il valore della funzione</p>
 <div class="math notranslate nohighlight">
@@ -617,10 +674,27 @@ document.write(`
 <div class="proof theorem admonition" id="thm:infinitesimal-calculus:continuous-fun:thms:weierstrass">
 <p class="admonition-title"><span class="caption-number">Theorem 23.1 </span> (Teorema di Weierstrass)</p>
 <div class="theorem-content section" id="proof-content">
-<p>Data una funzione reale continua <span class="math notranslate nohighlight">\(f: [a,b] \rightarrow \mathbb{R}\)</span> definita sull’intervallo chiuso <span class="math notranslate nohighlight">\([a,b]\)</span>, la funzione <span class="math notranslate nohighlight">\(f(x)\)</span> ammette un punto di massimo assoluto e un punto di minimo assoluto nell’intevallo <span class="math notranslate nohighlight">\([a,b]\)</span>.</p>
+<p>Data una funzione reale continua <span class="math notranslate nohighlight">\(f: [a,b] \rightarrow \mathbb{R}\)</span> definita sull’intervallo limitato chiuso <span class="math notranslate nohighlight">\([a,b]\)</span>, la funzione <span class="math notranslate nohighlight">\(f(x)\)</span> ammette un punto di massimo assoluto e un punto di minimo assoluto nell’intevallo <span class="math notranslate nohighlight">\([a,b]\)</span>.</p>
 </div>
-</div><p><strong>todo</strong> <em>Dimostrazione? Discussione più intuitiva? Figura?</em></p>
+</div><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Necessità delle ipotesi<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Mentre non viene fornita una dimostrazione del teorema, si discute la necessità delle ipotesi fornendo controesempi:</p>
+<ol class="arabic">
+<li><p class="sd-card-text">la funzione non continua definita in <span class="math notranslate nohighlight">\(I = [-1,1]\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}f(x) = \begin{cases} |x| &amp;&amp; x \ne = 0 \\ 0.5 &amp;&amp; x = 0 \end{cases} \ ,\end{split}\]</div>
+<p class="sd-card-text">assume valori massimi in <span class="math notranslate nohighlight">\(I\)</span>, in corrispondenza degli estremi dell’intervallo, ma non ha minimo. Infatti il limite inferiore della funzione nell’intervallo è <span class="math notranslate nohighlight">\(\liminf f(x) = 0\)</span>, ma non esiste alcun valore <span class="math notranslate nohighlight">\(x \in I\)</span> tale che <span class="math notranslate nohighlight">\(f(x) = 0\)</span>, proprio per come è stata costruita la funzione con una <span class="xref myst">discontinuità</span> di tipo 1 - salto in <span class="math notranslate nohighlight">\(x = 0\)</span>,</p>
+</li>
+<li><p class="sd-card-text">la funzione continua <span class="math notranslate nohighlight">\(f(x) = e^{-x^2}\)</span> definita sull’intervallo non limitato superiormente <span class="math notranslate nohighlight">\(I = [-2, +\infty)\)</span> ha massimo nell’intervallo in corrispondenza di <span class="math notranslate nohighlight">\(x = 0\)</span>, <span class="math notranslate nohighlight">\(\max_{x \in I} f(x) = 1\)</span>, ma non ha minimo poiché <span class="math notranslate nohighlight">\(\liminf f(x) = 0\)</span> ma non esiste nessun valore <span class="math notranslate nohighlight">\(x \in I\)</span> tale che <span class="math notranslate nohighlight">\(f(x) = 0\)</span></p></li>
+<li><p class="sd-card-text">la funzione continua <span class="math notranslate nohighlight">\(f(x) = x^2\)</span> definita su <span class="math notranslate nohighlight">\(I = (1,2)\)</span> non ammette né massimo, né minimo, poiché il limite inferiore e superiore della funzione si verificano in corrispondenza degli estremi (non inclusi) dell’intervallo aperto. Più esplicitamente, <span class="math notranslate nohighlight">\(\limsup_{x\in I} f(x) = 4\)</span> ma <span class="math notranslate nohighlight">\(\nexists x \in I, \ f(x) = 4\)</span>; <span class="math notranslate nohighlight">\(\liminf_{x\in I} f(x) = 1\)</span> ma <span class="math notranslate nohighlight">\(\nexists x \in I, \ f(x) = 1\)</span>;</p></li>
+</ol>
 </div>
+</details></div>
 <div class="section" id="teorema-della-permanenza-del-segno">
 <span id="infinitesimal-calculus-continuous-fun-thms-sign"></span><h4><span class="section-number">23.3.3.2. </span>Teorema della permanenza del segno<a class="headerlink" href="#teorema-della-permanenza-del-segno" title="Permalink to this heading">#</a></h4>
 <div class="proof theorem admonition" id="thm:infinitesimal-calculus:continuous-fun:thms:sign">
@@ -1027,7 +1101,10 @@ $$\ln n! \sim n \ln n - n  \qquad \text{per $n \in \mathbb{N} \rightarrow +\inft
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funzioni-reali-a-variabile-reale-f-mathbb-r-rightarrow-mathbb-r">23.1. Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\(f: \mathbb{R} \rightarrow \mathbb{R}\)</span></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limiti">23.2. Limiti</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cenni-di-topologia-per-il-calcolo">23.2.1. Cenni di topologia per il calcolo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cenni-di-topologia-per-il-calcolo">23.2.1. Cenni di topologia per il calcolo</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#intervalli">23.2.1.1. Intervalli</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definizione-di-limite">23.2.2. Definizione di limite</a></li>
 </ul>
 </li>

@@ -31,6 +31,7 @@ $$\int_a^b f(x) \ dx = \lim_{\Delta x \rightarrow 0} \sigma_P \ .$$ (infinitesim
   - ![](../../media/integral-geom-3.png)
 ```
 
+(infinitesimal-calculus:integrals:def:geom)=
 ### Interpretazione geometrica
 L'integrale definito 
 
@@ -112,13 +113,39 @@ dove la costante additiva $C$ tiene conto dell'arbitrarietà appena discussa.
 ```{prf:theorem} Teorema della media
 :label: integrals:thm:avg
 
-Sia $f: [a,b] \in \mathbb{R} \rightarrow \mathbb{R}$ una funzione continua su $[a,b]$, allora esiste $c \in [a,b]$ tale che
+Sia $f: [a,b] \in \mathbb{R} \rightarrow \mathbb{R}$ una funzione continua su un intervallo $[a,b]$ chiuso e limitato, allora esiste $c \in [a,b]$ tale che
 
 $$\int_{a}^{b} f(x) dx = (b-a) f(c) $$
 ```
 
 ```{dropdown} Dimostrazione
-**todo**
+
+Poiché $f(x): [a,b] \rightarrow \mathbb{R}$ è una funzione continua definita su un intervallo chiuso e limitato, allora per il [teorema di Weierstrass](infinitesimal-calculus:continuous-fun:thms:weierstrass) la funzione ammette minimo $m$ e massimo $M$ per valori di $x \in [a,b]$,
+
+$$m \le f(x) \le M \ .$$
+
+Integrando questa relazione sull'intervallo $[a,b]$,
+
+$$\int_{a}^{b} m \, dx \le \int_{a}^{b} f(x) \, dx \le \int_{a}^{b} M ,\ dx \ .$$
+
+L'[integrale di una funzione costante]() permette di calcolare gli integrali estremi
+
+$$(b-a) m \le \int_{a}^{b} f(x) \, dx \le (b-a) M \ ,$$
+
+e dividendo per $(b-a) \ne 0$, si ottiene la relazione
+
+$$m \le \frac{1}{b-a} \int_{a}^{b} f(x) \, dx \le M \ .$$
+
+Siano $x_m$ e $x_M \in [a,b]$ i punti - i numeri reali - in cui la funzione assume i valori minimo e massimo. Se $x_m < x_M$, si applica il teorema dei valori medi sull'intervallo $I_m = [x_m, x_M]$, in caso contrario sull'intervallo $I_m = [x_M, x_m]$.
+
+Per il [teorema dei valori intermedi](infinitesimal-calculus:continuous-fun:thms:intermediate), la funzione continua $f(x)$ definita sull'intervallo chiuso e limitato $I_m \subseteq [a,b]$, assume tutti i valori compresi tra i valori nei due estremi, cioè esiste un numero $c \in I_m$ tale che
+
+$$m = f(x_m) \le f(c) \le f(x_M) = M \ ,$$
+
+e tra tutti i valori compresi tra $m$ e $M$ esiste un punto $c$ in cui la funzione assume il valore particolare definito dalla media $\frac{1}{b-a}\int_{a}^{b} f(x) \, dx$, cioè
+
+$$\exits c \in I_m \subseteq [a,b] \ , \text{ t.c.} \ f(c) = \frac{1}{b-a}\int_{a}^{b} f(x) \, dx \ .$$
+
 ```
 
 <!--
