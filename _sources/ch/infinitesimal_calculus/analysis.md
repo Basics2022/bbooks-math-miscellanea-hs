@@ -59,7 +59,7 @@ $$I_c = \{ x \in \mathbb{R} | a \le x \le b \} =: [a,b] \ .$$
 
 Un intervallo aperto è un intervallo che non comprende gli  estremi dell'insieme,
 
-$$I_a = \{ x \in \mathbb{R} | a \lt x \lt b \} =: (a,b) \ .$$
+$$I_a = \{ x \in \mathbb{R} | a < x < b \} =: (a,b) \ .$$
 
 ```
 
@@ -153,7 +153,7 @@ Data una funzione reale continua $f: [a,b] \rightarrow \mathbb{R}$ definita sull
 Mentre non viene fornita una dimostrazione del teorema, si discute la necessità delle ipotesi fornendo controesempi:
 1. la funzione non continua definita in $I = [-1,1]$
 
-    $$f(x) = \begin{cases} |x| && x \ne = 0 \\ 0.5 && x = 0 \end{cases} \ ,$$
+    $$f(x) = \begin{cases} |x| & x \ne = 0 \\ 0.5 & x = 0 \end{cases} \ ,$$
 
     assume valori massimi in $I$, in corrispondenza degli estremi dell'intervallo, ma non ha minimo. Infatti il limite inferiore della funzione nell'intervallo è $\liminf f(x) = 0$, ma non esiste alcun valore $x \in I$ tale che $f(x) = 0$, proprio per come è stata costruita la funzione con una [discontinuità](infinitesimal-calculus:continuou-fun:disc) di tipo 1 - salto in $x = 0$,
 
