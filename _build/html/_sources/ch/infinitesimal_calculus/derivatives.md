@@ -524,14 +524,33 @@ e^{ix} & = 1 + ix + \frac{(ix)^2}{2!} + \frac{(ix)^3}{3!} + \frac{(ix)^4}{4!} + 
 (infinitesimal-calculus:derivatives:applications)=
 ## Applicazioni
 
+(infinitesimal-calculus:derivatives:applications:approx)=
 ### Approssimazioni locali
 
-### Studio di funzione
+Le [serie di Taylor e di MacLaurin](infinitesimal-calculus:derivatives:taylor) e le proprietà di approssimazione riassunte nel {prf:ref}`thm:infinitesimal-calculus:derivatives:taylor` permettono di ricavare un'approssimazione locale di una funzione $f(x)$ nella forma di **serie polinomiali**.
 
+...
+
+(infinitesimal-calculus:derivatives:applications:fun)=
+### Studio di funzione
+Uno studio di funzione completo può richiedere la padronanza di tutti gli strumenti del calcolo infinitesimale: ricerca del dominio, limiti, derivate e integrali.
+- [studio di funzione - capitolo di introduzione all'analisi](infinitesimal-calculus:analysis:applications:fun) - dominio, limiti ed eventuali asintoti
+  - trovare il dominio di una funzione
+  - valutare i limiti della funzione agli estremi del dominio, o in corrispondenza di punti di discontinuità
+- [studio di funzione - capitolo sulle derivate](infinitesimal-calculus:derivatives:applications:fun) - punti di estremi locali, punti di flesso
+- [studio di funzione - capitolo sugli integrali](infinitesimal-calculus:integrals:applications:fun) - area sottesa al grafico di una funzione, e altre grandezze integrali
+
+
+
+(infinitesimal-calculus:derivatives:applications:optimization)=
 ### Ottimizzazione
 
 (infinitesimal-calculus:derivatives:applications:newton)=
-### Metodo di Netwon
+### Metodo di Netwon per la soluzione di equazioni algebriche $f(x) = 0$
+
+Due algoritmi iterativi classici usati per la soluzione di equazioni algebriche della forma $f(x) = 0$ - problema che può essere descritto come ricerca degli zeri della funzione $f(x)$ - sono il **metodo di bisezione** e il **metodo di Newton**. Il [metodo di bisezione](infinitesimal-calculus:analysis:bisec) viene discusso nella sezione sull'introduzione all'analisi, mentre qui viene presentato il meetodo di Newton.
+
+...
 
 Il metodo di Newton è discusso nel [bbook sull'introduzione alla programmazione e al calcolo scientifico](https://basics2022.github.io/bbooks-programming-hs/intro.html), nella sezione di [introduzione al calcolo numerico](https://basics2022.github.io/bbooks-programming-hs/ch/numerics.html). Nella sezione sui metodi numerici per la soluzione di [equazioni algebriche non lineari](https://basics2022.github.io/bbooks-programming-hs/ch/numerics/nonlinear.html#metodo-di-newton), il metodo di Newton viene descritto, implementato e applicato a semplici esempi.
 

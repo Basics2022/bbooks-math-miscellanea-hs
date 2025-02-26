@@ -180,7 +180,7 @@ $$\exists c \in I_m \subseteq [a,b] \ , \text{ t.c.} \ f(c) = \frac{1}{b-a}\int_
 ```{prf:theorem} Teorema fondamentale del calcolo infinitesimale
 :label: integrals:thm:fund
 
-Data una funzione $f: D \rightarrow \mathbb{R}$ integrabile sull'intervallo $[a,b] \subseteq D$, {prf-ref}`infinitesimal-calculus:integrals:def:integrable-function`, si definisce la funzione
+Data una funzione $f: D \rightarrow \mathbb{R}$ integrabile sull'intervallo $[a,b] \subseteq D$, {prf:ref}`infinitesimal-calculus:integrals:def:integrable-function`, si definisce la funzione
 
 $$F(x) := \int_{a}^{x} f(t) \, dt \ .$$
 
@@ -215,13 +215,13 @@ F'(x)
   & := \dfrac{d}{dx} \int_{a}^x f(t) dt = \\
   & = \lim_{\varepsilon \rightarrow 0 } \frac{1}{\varepsilon} \Big[ \int_{a}^{x+\varepsilon} f(t) dt - \int_{a}^{x} f(t) dt \Big] = && (1) \\
   & = \lim_{\varepsilon \rightarrow 0 } \frac{1}{\varepsilon} \Big[ \int_{x}^{x+\varepsilon} f(y) dy \Big] = && (2) \\
-  & = \lim_{\varepsilon \rightarrow 0 } \frac{1}{\varepsilon} \varepsilon f(\xi_{[x,x+\varepsilon]}) = \qquad x_{[x,x+\varepsilon]} \in [x,x+\varepsilon] && (3) \\
+  & = \lim_{\varepsilon \rightarrow 0 } \frac{1}{\varepsilon} \varepsilon f(\xi_{[x,x+\varepsilon]}) = \qquad \xi_{[x,x+\varepsilon]} \in [x,x+\varepsilon] && (3) \\
   & = \lim_{\varepsilon \rightarrow 0 } f(\xi_{[x,x+\varepsilon]}) = f(x) . \\
 \end{aligned}$$
 
 avendo usato (1) l'additività dell'integrale sull'intervallo {eq}`infinitesimal-calculus:integrals:prop:add`, (2) il [teorema della media](infinitesimal-calculus:integrals:thm:avg), e (3) la [continuità di $f$](infinitesimal-calculus:continuous-fun:def), che permette di scrivere 
 
-$$\lim_{\varepsilon \rightarrow 0} f(\xi_{[x,x+\varepsilon]}) = \lim_{\xi_{[x,x+\varepsilon]} \rightarrow x} f(\xi) =  f(x) \ ,$$
+$$\lim_{\varepsilon \rightarrow 0} f(\xi_{[x,x+\varepsilon]}) = \lim_{\xi_{[x,x+\varepsilon]} \rightarrow x} f(\xi_{[x,x+\varepsilon]}) =  f(x) \ ,$$
 
 quando $\xi_{[x,x+\varepsilon]} \rightarrow x$ quando le dimensioni dell'intervallo vengono fatte tendere a zero, e di concludere la dimostrazione del teorema.
 
@@ -695,3 +695,15 @@ la cui soluzione è $A = -\frac{1}{2}$, $B = \frac{5}{2}$. L'integrale quindi di
 $$\int \frac{2x + 1}{x^2 + 4x + 3} \, dx= -\frac{1}{2} \ln |x+1| + \frac{5}{2} \ln |x + 3| + C \ .$$
 
 ```
+
+(infinitesimal-calculus:integrals:applications)=
+## Applicazioni
+
+(infinitesimal-calculus:integrals:applications:fun)=
+### Studio di funzione
+Uno studio di funzione completo può richiedere la padronanza di tutti gli strumenti del calcolo infinitesimale: ricerca del dominio, limiti, derivate e integrali.
+- [studio di funzione - capitolo di introduzione all'analisi](infinitesimal-calculus:analysis:applications:fun) - dominio, limiti ed eventuali asintoti
+  - trovare il dominio di una funzione
+  - valutare i limiti della funzione agli estremi del dominio, o in corrispondenza di punti di discontinuità
+- [studio di funzione - capitolo sulle derivate](infinitesimal-calculus:derivatives:applications:fun) - punti di estremi locali, punti di flesso
+- [studio di funzione - capitolo sugli integrali](infinitesimal-calculus:integrals:applications:fun) - area sottesa al grafico di una funzione, e altre grandezze integrali

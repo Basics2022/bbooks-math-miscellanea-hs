@@ -482,8 +482,23 @@ $$\lim_{x \rightarrow x_0} \frac{h(x)}{k(x)} = \frac{a}{b} \lim_{x \rightarrow x
 ## Calcolo dei limiti
 **todo** Riassumere alcune tecniche per il calcolo dei limiti...*niente di speciale; mettere insieme i metodi presentati nel capitolo e mostrare qualche esempio del calcolo di limiti*
 
-(infinitesimal-calculus:continuous-fun:bisec)=
-## Metodo di bisezione
+(infinitesimal-calculus:analysis:applications)=
+## Applicazioni
+
+(infinitesimal-calculus:analysis:applications:fun)=
+### Studio di funzione
+Uno studio di funzione completo può richiedere la padronanza di tutti gli strumenti del calcolo infinitesimale: ricerca del dominio, limiti, derivate e integrali.
+- [studio di funzione - capitolo di introduzione all'analisi](infinitesimal-calculus:analysis:applications:fun) - dominio, limiti ed eventuali asintoti
+  - trovare il dominio di una funzione
+  - valutare i limiti della funzione agli estremi del dominio, o in corrispondenza di punti di discontinuità
+- [studio di funzione - capitolo sulle derivate](infinitesimal-calculus:derivatives:applications:fun) - punti di estremi locali, punti di flesso
+- [studio di funzione - capitolo sugli integrali](infinitesimal-calculus:integrals:applications:fun) - area sottesa al grafico di una funzione, e altre grandezze integrali
+
+
+(infinitesimal-calculus:analysis:bisec)=
+### Metodo di bisezione per la soluzione di equazioni algebriche $f(x) = 0$
+
+Due algoritmi iterativi classici usati per la soluzione di equazioni algebriche della forma $f(x) = 0$ - problema che può essere descritto come ricerca degli zeri della funzione $f(x)$ - sono il **metodo di bisezione** e il **metodo di Newton**. Il metodo di bisezione viene descritto qui, mentre si rimanda alla sezione sulle derivate per il [metodo di Newton](infinitesimal-calculus:derivatives:applications:newton).
 
 Il metodo di bisezione è un metodo iterativo che impiega i risultati del [teorema degli zeri](infinitesimal-calculus:continuous-fun:thms:zeros) per la soluzione di equazioni algebriche nella forma
 

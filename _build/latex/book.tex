@@ -9589,6 +9589,34 @@ avendo interpretato gli \sphinxstyleemphasis{infiniti}, gli \sphinxstyleemphasis
 \end{equation*}
 \sphinxAtStartPar
 senza esserne identicamente uguali.
+\label{None:example-9}
+\begin{sphinxadmonition}{note}{Example  (Forme indeterminate \protect\(1^{\infty}\protect\) e forme determinate \protect\(1^{\infty}\protect\))}
+
+
+
+\sphinxAtStartPar
+La funzione \sphinxhyphen{} o la famiglia di funzioni, al variare del parametro \(n\) \sphinxhyphen{}
+\begin{equation*}
+\begin{split}\left( e^{\frac{1}{x}} \right)^{x^n}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+è un esempio di forma indeterminata \(1^{+\infty}\) per \(x \rightarrow +\infty\) per \(n>0\), poiché
+\begin{equation*}
+\begin{split}\begin{aligned}
+  & \lim_{x \rightarrow +\infty} e^{\frac{1}{x}} = 1 \\
+  & \lim_{x \rightarrow +\infty} x^n = +\infty \quad n > 0 \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+La forma indeterminata è facile da risolvere grazie alle proprietà delle potenze
+\begin{equation*}
+\begin{split}\lim_{x \rightarrow +\infty} \left( e^{\frac{1}{x}} \right)^{x^n} = \lim_{x \rightarrow +\infty} e^{x^{n-1}} = \begin{cases} 1 & 0 < n < 1 \\ e & n = 1 \\ +\infty & n > 1 \end{cases}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+L’espressione \(1^{x}\) invece non è indeterminata per \(x \rightarrow +\infty\), poiché \(1\) «è esattamente \(1\) e basta» e moltiplicando anche infinite volte \(1\) per se stesso si ottiene sempre \(1\)
+\begin{equation*}
+\begin{split}\lim_{x \rightarrow +\infty} 1^{x} = 1 \ .\end{split}
+\end{equation*}\end{sphinxadmonition}
 
 \sphinxAtStartPar
 \sphinxstylestrong{Oss.} Invece non sono forme indeterminate \(0^{+\infty} \rightarrow 0\) e \(0^{-\infty} \rightarrow \infty\).
@@ -9753,8 +9781,44 @@ che viene utilizzato nel calcolo dei limiti desiderati
 \sphinxstylestrong{todo} Riassumere alcune tecniche per il calcolo dei limiti…\sphinxstyleemphasis{niente di speciale; mettere insieme i metodi presentati nel capitolo e mostrare qualche esempio del calcolo di limiti}
 
 
-\section{Metodo di bisezione}
-\label{\detokenize{ch/infinitesimal_calculus/analysis:metodo-di-bisezione}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-continuous-fun-bisec}}
+\section{Applicazioni}
+\label{\detokenize{ch/infinitesimal_calculus/analysis:applicazioni}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-analysis-applications}}
+
+\subsection{Studio di funzione}
+\label{\detokenize{ch/infinitesimal_calculus/analysis:studio-di-funzione}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-analysis-applications-fun}}
+\sphinxAtStartPar
+Uno studio di funzione completo può richiedere la padronanza di tutti gli strumenti del calcolo infinitesimale: ricerca del dominio, limiti, derivate e integrali.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-analysis-applications-fun}]{\sphinxcrossref{\DUrole{std,std-ref}{studio di funzione \sphinxhyphen{} capitolo di introduzione all’analisi}}}} \sphinxhyphen{} dominio, limiti ed eventuali asintoti
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+trovare il dominio di una funzione
+
+\item {} 
+\sphinxAtStartPar
+valutare i limiti della funzione agli estremi del dominio, o in corrispondenza di punti di discontinuità
+
+\end{itemize}
+
+\item {} 
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-applications-fun}]{\sphinxcrossref{\DUrole{std,std-ref}{studio di funzione \sphinxhyphen{} capitolo sulle derivate}}}} \sphinxhyphen{} punti di estremi locali, punti di flesso
+
+\item {} 
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-applications-fun}]{\sphinxcrossref{\DUrole{std,std-ref}{studio di funzione \sphinxhyphen{} capitolo sugli integrali}}}} \sphinxhyphen{} area sottesa al grafico di una funzione, e altre grandezze integrali
+
+\end{itemize}
+
+
+\subsection{Metodo di bisezione per la soluzione di equazioni algebriche \protect\(f(x) = 0\protect\)}
+\label{\detokenize{ch/infinitesimal_calculus/analysis:metodo-di-bisezione-per-la-soluzione-di-equazioni-algebriche-f-x-0}}\label{\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-analysis-bisec}}
+\sphinxAtStartPar
+Due algoritmi iterativi classici usati per la soluzione di equazioni algebriche della forma \(f(x) = 0\) \sphinxhyphen{} problema che può essere descritto come ricerca degli zeri della funzione \(f(x)\) \sphinxhyphen{} sono il \sphinxstylestrong{metodo di bisezione} e il \sphinxstylestrong{metodo di Newton}. Il metodo di bisezione viene descritto qui, mentre si rimanda alla sezione sulle derivate per il {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-applications-newton}]{\sphinxcrossref{\DUrole{std,std-ref}{metodo di Newton}}}}.
+
 \sphinxAtStartPar
 Il metodo di bisezione è un metodo iterativo che impiega i risultati del {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-continuous-fun-thms-zeros}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema degli zeri}}}} per la soluzione di equazioni algebriche nella forma
 \begin{equation*}
@@ -10401,7 +10465,7 @@ discutere l’esistenza degli zeri della funzione e darne una stima, facendo rif
 \subsection{Metodo di bisezione}
 \label{\detokenize{ch/infinitesimal_calculus/analysis-problems:metodo-di-bisezione}}\label{\detokenize{ch/infinitesimal_calculus/analysis-problems:infinitesimal-calculus-analysis-problems-bisection}}
 \sphinxAtStartPar
-Si chiede di risolvere le sequenti equazioni nonlineari con il {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-continuous-fun-bisec}]{\sphinxcrossref{\DUrole{std,std-ref}{metodo di bisezione}}}} (è quindi necessario riformulare il problema come la ricerca degli zeri di una funzione), dopo aver impostato la soluzione con un metodo grafico. Il metodo grafico è necessario a farsi un’idea sul numero di soluzioni da cercare, e sui valori con cui iniziare il metodo di bisezione. Si chiede di concludere il procedimento a mano dopo 3 iterazioni, o quando si ottiene una soluzione con errore minore della tolleranza, qui scelta come \(\tau = 0.01\). Si chiede infine di implementare il metodo con un linguaggio di programmazione a piacimento, per cercare una soluzione con tolleranza \(\tau = 10^{-5}\).
+Si chiede di risolvere le sequenti equazioni nonlineari con il \DUrole{xref,myst}{metodo di bisezione} (è quindi necessario riformulare il problema come la ricerca degli zeri di una funzione), dopo aver impostato la soluzione con un metodo grafico. Il metodo grafico è necessario a farsi un’idea sul numero di soluzioni da cercare, e sui valori con cui iniziare il metodo di bisezione. Si chiede di concludere il procedimento a mano dopo 3 iterazioni, o quando si ottiene una soluzione con errore minore della tolleranza, qui scelta come \(\tau = 0.01\). Si chiede infine di implementare il metodo con un linguaggio di programmazione a piacimento, per cercare una soluzione con tolleranza \(\tau = 10^{-5}\).
 
 \sphinxAtStartPar
 Le stesse equazioni vengono affrontate {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives-problems:infinitesimal-calculus-derivatives-problems-newton}]{\sphinxcrossref{\DUrole{std,std-ref}{con il metodo di Newton come esercizio}}}} nel capitolo sulle derivate.
@@ -11096,16 +11160,55 @@ e^{ix} & = 1 + ix + \frac{(ix)^2}{2!} + \frac{(ix)^3}{3!} + \frac{(ix)^4}{4!} + 
 \label{\detokenize{ch/infinitesimal_calculus/derivatives:applicazioni}}\label{\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-applications}}
 
 \subsection{Approssimazioni locali}
-\label{\detokenize{ch/infinitesimal_calculus/derivatives:approssimazioni-locali}}
+\label{\detokenize{ch/infinitesimal_calculus/derivatives:approssimazioni-locali}}\label{\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-applications-approx}}
+\sphinxAtStartPar
+Le {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-taylor}]{\sphinxcrossref{\DUrole{std,std-ref}{serie di Taylor e di MacLaurin}}}} e le proprietà di approssimazione riassunte nel {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:thm:infinitesimal-calculus:derivatives:taylor}]{\sphinxcrossref{Theorem 24.8.1}}} permettono di ricavare un’approssimazione locale di una funzione \(f(x)\) nella forma di \sphinxstylestrong{serie polinomiali}.
+
+\sphinxAtStartPar
+…
+
 
 \subsection{Studio di funzione}
-\label{\detokenize{ch/infinitesimal_calculus/derivatives:studio-di-funzione}}
+\label{\detokenize{ch/infinitesimal_calculus/derivatives:studio-di-funzione}}\label{\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-applications-fun}}
+\sphinxAtStartPar
+Uno studio di funzione completo può richiedere la padronanza di tutti gli strumenti del calcolo infinitesimale: ricerca del dominio, limiti, derivate e integrali.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-analysis-applications-fun}]{\sphinxcrossref{\DUrole{std,std-ref}{studio di funzione \sphinxhyphen{} capitolo di introduzione all’analisi}}}} \sphinxhyphen{} dominio, limiti ed eventuali asintoti
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+trovare il dominio di una funzione
+
+\item {} 
+\sphinxAtStartPar
+valutare i limiti della funzione agli estremi del dominio, o in corrispondenza di punti di discontinuità
+
+\end{itemize}
+
+\item {} 
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-applications-fun}]{\sphinxcrossref{\DUrole{std,std-ref}{studio di funzione \sphinxhyphen{} capitolo sulle derivate}}}} \sphinxhyphen{} punti di estremi locali, punti di flesso
+
+\item {} 
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-applications-fun}]{\sphinxcrossref{\DUrole{std,std-ref}{studio di funzione \sphinxhyphen{} capitolo sugli integrali}}}} \sphinxhyphen{} area sottesa al grafico di una funzione, e altre grandezze integrali
+
+\end{itemize}
+
 
 \subsection{Ottimizzazione}
-\label{\detokenize{ch/infinitesimal_calculus/derivatives:ottimizzazione}}
+\label{\detokenize{ch/infinitesimal_calculus/derivatives:ottimizzazione}}\label{\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-applications-optimization}}
 
-\subsection{Metodo di Netwon}
-\label{\detokenize{ch/infinitesimal_calculus/derivatives:metodo-di-netwon}}\label{\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-applications-newton}}
+\subsection{Metodo di Netwon per la soluzione di equazioni algebriche \protect\(f(x) = 0\protect\)}
+\label{\detokenize{ch/infinitesimal_calculus/derivatives:metodo-di-netwon-per-la-soluzione-di-equazioni-algebriche-f-x-0}}\label{\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-applications-newton}}
+\sphinxAtStartPar
+Due algoritmi iterativi classici usati per la soluzione di equazioni algebriche della forma \(f(x) = 0\) \sphinxhyphen{} problema che può essere descritto come ricerca degli zeri della funzione \(f(x)\) \sphinxhyphen{} sono il \sphinxstylestrong{metodo di bisezione} e il \sphinxstylestrong{metodo di Newton}. Il {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-analysis-bisec}]{\sphinxcrossref{\DUrole{std,std-ref}{metodo di bisezione}}}} viene discusso nella sezione sull’introduzione all’analisi, mentre qui viene presentato il meetodo di Newton.
+
+\sphinxAtStartPar
+…
+
 \sphinxAtStartPar
 Il metodo di Newton è discusso nel \sphinxhref{https://basics2022.github.io/bbooks-programming-hs/intro.html}{bbook sull’introduzione alla programmazione e al calcolo scientifico}, nella sezione di \sphinxhref{https://basics2022.github.io/bbooks-programming-hs/ch/numerics.html}{introduzione al calcolo numerico}. Nella sezione sui metodi numerici per la soluzione di \sphinxhref{https://basics2022.github.io/bbooks-programming-hs/ch/numerics/nonlinear.html\#metodo-di-newton}{equazioni algebriche non lineari}, il metodo di Newton viene descritto, implementato e applicato a semplici esempi.
 
@@ -12156,7 +12259,7 @@ e tra tutti i valori compresi tra \(m\) e \(M\) esiste un punto \(c\) in cui la 
 
 
 \sphinxAtStartPar
-Data una funzione \(f: D \rightarrow \mathbb{R}\) integrabile sull’intervallo \([a,b] \subseteq D\), {\color{red}\bfseries{}infinitesimal\sphinxhyphen{}calculus:integrals:def:integrable\sphinxhyphen{}function}, si definisce la funzione
+Data una funzione \(f: D \rightarrow \mathbb{R}\) integrabile sull’intervallo \([a,b] \subseteq D\), {\hyperref[\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus:integrals:def:integrable-function}]{\sphinxcrossref{Definition 25.1.3}}}, si definisce la funzione
 \begin{equation*}
 \begin{split}F(x) := \int_{a}^{x} f(t) \, dt \ .\end{split}
 \end{equation*}
@@ -12200,14 +12303,14 @@ F'(x)
   & := \dfrac{d}{dx} \int_{a}^x f(t) dt = \\
   & = \lim_{\varepsilon \rightarrow 0 } \frac{1}{\varepsilon} \Big[ \int_{a}^{x+\varepsilon} f(t) dt - \int_{a}^{x} f(t) dt \Big] = && (1) \\
   & = \lim_{\varepsilon \rightarrow 0 } \frac{1}{\varepsilon} \Big[ \int_{x}^{x+\varepsilon} f(y) dy \Big] = && (2) \\
-  & = \lim_{\varepsilon \rightarrow 0 } \frac{1}{\varepsilon} \varepsilon f(\xi_{[x,x+\varepsilon]}) = \qquad x_{[x,x+\varepsilon]} \in [x,x+\varepsilon] && (3) \\
+  & = \lim_{\varepsilon \rightarrow 0 } \frac{1}{\varepsilon} \varepsilon f(\xi_{[x,x+\varepsilon]}) = \qquad \xi_{[x,x+\varepsilon]} \in [x,x+\varepsilon] && (3) \\
   & = \lim_{\varepsilon \rightarrow 0 } f(\xi_{[x,x+\varepsilon]}) = f(x) . \\
 \end{aligned}\end{split}
 \end{equation*}
 \sphinxAtStartPar
 avendo usato (1) l’additività dell’integrale sull’intervallo \eqref{equation:ch/infinitesimal_calculus/integrals:infinitesimal-calculus:integrals:prop:add}, (2) il {\hyperref[\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-thm-avg}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema della media}}}}, e (3) la {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-continuous-fun-def}]{\sphinxcrossref{\DUrole{std,std-ref}{continuità di \(f\)}}}}, che permette di scrivere
 \begin{equation*}
-\begin{split}\lim_{\varepsilon \rightarrow 0} f(\xi_{[x,x+\varepsilon]}) = \lim_{\xi_{[x,x+\varepsilon]} \rightarrow x} f(\xi) =  f(x) \ ,\end{split}
+\begin{split}\lim_{\varepsilon \rightarrow 0} f(\xi_{[x,x+\varepsilon]}) = \lim_{\xi_{[x,x+\varepsilon]} \rightarrow x} f(\xi_{[x,x+\varepsilon]}) =  f(x) \ ,\end{split}
 \end{equation*}
 \sphinxAtStartPar
 quando \(\xi_{[x,x+\varepsilon]} \rightarrow x\) quando le dimensioni dell’intervallo vengono fatte tendere a zero, e di concludere la dimostrazione del teorema.
@@ -12751,6 +12854,39 @@ la cui soluzione è \(A = -\frac{1}{2}\), \(B = \frac{5}{2}\). L’integrale qui
 \begin{split}\int \frac{2x + 1}{x^2 + 4x + 3} \, dx= -\frac{1}{2} \ln |x+1| + \frac{5}{2} \ln |x + 3| + C \ .\end{split}
 \end{equation*}\end{sphinxadmonition}
 
+
+\section{Applicazioni}
+\label{\detokenize{ch/infinitesimal_calculus/integrals:applicazioni}}\label{\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-applications}}
+
+\subsection{Studio di funzione}
+\label{\detokenize{ch/infinitesimal_calculus/integrals:studio-di-funzione}}\label{\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-applications-fun}}
+\sphinxAtStartPar
+Uno studio di funzione completo può richiedere la padronanza di tutti gli strumenti del calcolo infinitesimale: ricerca del dominio, limiti, derivate e integrali.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-analysis-applications-fun}]{\sphinxcrossref{\DUrole{std,std-ref}{studio di funzione \sphinxhyphen{} capitolo di introduzione all’analisi}}}} \sphinxhyphen{} dominio, limiti ed eventuali asintoti
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+trovare il dominio di una funzione
+
+\item {} 
+\sphinxAtStartPar
+valutare i limiti della funzione agli estremi del dominio, o in corrispondenza di punti di discontinuità
+
+\end{itemize}
+
+\item {} 
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-applications-fun}]{\sphinxcrossref{\DUrole{std,std-ref}{studio di funzione \sphinxhyphen{} capitolo sulle derivate}}}} \sphinxhyphen{} punti di estremi locali, punti di flesso
+
+\item {} 
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-applications-fun}]{\sphinxcrossref{\DUrole{std,std-ref}{studio di funzione \sphinxhyphen{} capitolo sugli integrali}}}} \sphinxhyphen{} area sottesa al grafico di una funzione, e altre grandezze integrali
+
+\end{itemize}
+
 \sphinxstepscope
 
 
@@ -12783,7 +12919,7 @@ In questa sezione vengono elencati alcuni tra gli integrali più comuni, la cui 
 \subsection{Calcolo integrali indefiniti}
 \label{\detokenize{ch/infinitesimal_calculus/integrals-problems:calcolo-integrali-indefiniti}}\phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-0}
 
-\begin{sphinxadmonition}{note}{Exercise 25.6.1}
+\begin{sphinxadmonition}{note}{Exercise 25.7.1}
 
 
 
@@ -12828,7 +12964,7 @@ Si chiede di calcolare i seguenti integrali indefiniti
 \subsection{Integrali definiti}
 \label{\detokenize{ch/infinitesimal_calculus/integrals-problems:integrali-definiti}}\phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-1}
 
-\begin{sphinxadmonition}{note}{Exercise 25.6.2}
+\begin{sphinxadmonition}{note}{Exercise 25.7.2}
 
 
 
@@ -12840,7 +12976,7 @@ Si chiede di calcolare i seguenti integrali indefiniti
 \subsubsection{Integrali impropri}
 \label{\detokenize{ch/infinitesimal_calculus/integrals-problems:integrali-impropri}}\phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-2}
 
-\begin{sphinxadmonition}{note}{Exercise 25.6.3}
+\begin{sphinxadmonition}{note}{Exercise 25.7.3}
 
 
 
@@ -12870,7 +13006,7 @@ dimostrare che \(\int_{t}^{1} e^{a x} \, dx\) converge per \(a \dots\) e diverge
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-3}
 
-\begin{sphinxadmonition}{note}{Exercise 25.6.4}
+\begin{sphinxadmonition}{note}{Exercise 25.7.4}
 
 
 
@@ -12897,7 +13033,7 @@ Si chiede di discutere e valutare i seguenti integrali impropri
 \subsubsection{Area di superfici e lunghezza di curve}
 \label{\detokenize{ch/infinitesimal_calculus/integrals-problems:area-di-superfici-e-lunghezza-di-curve}}\phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-4}
 
-\begin{sphinxadmonition}{note}{Exercise 25.6.5}
+\begin{sphinxadmonition}{note}{Exercise 25.7.5}
 
 
 
@@ -12906,7 +13042,7 @@ Calcolare l’area della superficie chiusa tra la parabola \(y = - x^2 + 1\) e l
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-5}
 
-\begin{sphinxadmonition}{note}{Exercise 25.6.6}
+\begin{sphinxadmonition}{note}{Exercise 25.7.6}
 
 
 
@@ -12915,7 +13051,7 @@ Calcolare l’area della superficie chiusa tra la parabola \(y = - x^2 + 1\) e l
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-6}
 
-\begin{sphinxadmonition}{note}{Exercise 25.6.7}
+\begin{sphinxadmonition}{note}{Exercise 25.7.7}
 
 
 
@@ -12927,7 +13063,7 @@ Calcolare la lunghezza del ramo di parabola \(y = x^2 - 2x + 1\) tra \(x \in [0,
 \subsubsection{Volumi e superficie di solidi di rotazione}
 \label{\detokenize{ch/infinitesimal_calculus/integrals-problems:volumi-e-superficie-di-solidi-di-rotazione}}\phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-7}
 
-\begin{sphinxadmonition}{note}{Exercise 25.6.8}
+\begin{sphinxadmonition}{note}{Exercise 25.7.8}
 
 
 
@@ -12938,7 +13074,7 @@ Calcolare il volume e la superficie del solido generato dalla rotazione del ramo
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-8}
 
-\begin{sphinxadmonition}{note}{Exercise 25.6.9}
+\begin{sphinxadmonition}{note}{Exercise 25.7.9}
 
 
 
@@ -12949,7 +13085,7 @@ Calcolare il volume e la superficie del solido generato dalla rotazione del ramo
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-9}
 
-\begin{sphinxadmonition}{note}{Exercise 25.6.10}
+\begin{sphinxadmonition}{note}{Exercise 25.7.10}
 
 
 
@@ -12960,7 +13096,7 @@ Calcolare il volume e la superficie di un cilindro di altezza \(h\) e base di ra
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-10}
 
-\begin{sphinxadmonition}{note}{Exercise 25.6.11}
+\begin{sphinxadmonition}{note}{Exercise 25.7.11}
 
 
 
@@ -12971,7 +13107,7 @@ Calcolare il volume e la superficie di un cono retto di altezza \(h\) e base di 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-11}
 
-\begin{sphinxadmonition}{note}{Exercise 25.6.12}
+\begin{sphinxadmonition}{note}{Exercise 25.7.12}
 
 
 
@@ -12982,7 +13118,7 @@ Calcolare il volume e la superficie di un tronco di cono retto ottenuto dalla ri
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-12}
 
-\begin{sphinxadmonition}{note}{Exercise 25.6.13}
+\begin{sphinxadmonition}{note}{Exercise 25.7.13}
 
 
 
@@ -12993,7 +13129,7 @@ Calcolare il volume e la superficie della sfera generata dalla rivoluzione della
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-13}
 
-\begin{sphinxadmonition}{note}{Exercise 25.6.14}
+\begin{sphinxadmonition}{note}{Exercise 25.7.14}
 
 
 
@@ -13004,7 +13140,7 @@ Calcolare il volume e la superficie della calotta sferica sfera generata dalla r
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-14}
 
-\begin{sphinxadmonition}{note}{Exercise 25.6.15}
+\begin{sphinxadmonition}{note}{Exercise 25.7.15}
 
 
 
@@ -15454,16 +15590,16 @@ RL: ottimizzazione/controllo
 \item\relax\sphinxstyleindexentry{arc\sphinxhyphen{}length}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/geometry}\sphinxstyleindexpageref{ch/vector-calculus/geometry:\detokenize{arc-length}}
 \indexspace
 \bigletter{definition\sphinxhyphen{}0}
-\item\relax\sphinxstyleindexentry{definition\sphinxhyphen{}0}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/geometry}\sphinxstyleindexpageref{ch/vector-calculus/geometry:\detokenize{definition-0}}
+\item\relax\sphinxstyleindexentry{definition\sphinxhyphen{}0}\sphinxstyleindexextra{ch/infinitesimal\_calculus/derivatives}\sphinxstyleindexpageref{ch/infinitesimal_calculus/derivatives:\detokenize{definition-0}}
 \indexspace
 \bigletter{definition\sphinxhyphen{}1}
-\item\relax\sphinxstyleindexentry{definition\sphinxhyphen{}1}\sphinxstyleindexextra{ch/series}\sphinxstyleindexpageref{ch/series:\detokenize{definition-1}}
+\item\relax\sphinxstyleindexentry{definition\sphinxhyphen{}1}\sphinxstyleindexextra{ch/infinitesimal\_calculus/derivatives}\sphinxstyleindexpageref{ch/infinitesimal_calculus/derivatives:\detokenize{definition-1}}
 \indexspace
 \bigletter{definition\sphinxhyphen{}2}
-\item\relax\sphinxstyleindexentry{definition\sphinxhyphen{}2}\sphinxstyleindexextra{ch/multivariable\sphinxhyphen{}calculus/derivatives}\sphinxstyleindexpageref{ch/multivariable-calculus/derivatives:\detokenize{definition-2}}
+\item\relax\sphinxstyleindexentry{definition\sphinxhyphen{}2}\sphinxstyleindexextra{ch/infinitesimal\_calculus/derivatives}\sphinxstyleindexpageref{ch/infinitesimal_calculus/derivatives:\detokenize{definition-2}}
 \indexspace
 \bigletter{definition\sphinxhyphen{}3}
-\item\relax\sphinxstyleindexentry{definition\sphinxhyphen{}3}\sphinxstyleindexextra{ch/multivariable\sphinxhyphen{}calculus/derivatives}\sphinxstyleindexpageref{ch/multivariable-calculus/derivatives:\detokenize{definition-3}}
+\item\relax\sphinxstyleindexentry{definition\sphinxhyphen{}3}\sphinxstyleindexextra{ch/infinitesimal\_calculus/derivatives}\sphinxstyleindexpageref{ch/infinitesimal_calculus/derivatives:\detokenize{definition-3}}
 \indexspace
 \bigletter{definition\sphinxhyphen{}4}
 \item\relax\sphinxstyleindexentry{definition\sphinxhyphen{}4}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/vector-calculus/integrals:\detokenize{definition-4}}
@@ -15481,25 +15617,25 @@ RL: ottimizzazione/controllo
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}1}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/vector-calculus/integrals:\detokenize{example-1}}
 \indexspace
 \bigletter{example\sphinxhyphen{}10}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}10}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/geometry}\sphinxstyleindexpageref{ch/vector-calculus/geometry:\detokenize{example-10}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}10}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{example-10}}
 \indexspace
 \bigletter{example\sphinxhyphen{}11}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}11}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/geometry}\sphinxstyleindexpageref{ch/vector-calculus/geometry:\detokenize{example-11}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}11}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{example-11}}
 \indexspace
 \bigletter{example\sphinxhyphen{}12}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}12}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/geometry}\sphinxstyleindexpageref{ch/vector-calculus/geometry:\detokenize{example-12}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}12}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{example-12}}
 \indexspace
 \bigletter{example\sphinxhyphen{}13}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}13}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{example-13}}
 \indexspace
 \bigletter{example\sphinxhyphen{}14}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}14}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/geometry}\sphinxstyleindexpageref{ch/vector-calculus/geometry:\detokenize{example-14}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}14}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{example-14}}
 \indexspace
 \bigletter{example\sphinxhyphen{}15}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}15}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/geometry}\sphinxstyleindexpageref{ch/vector-calculus/geometry:\detokenize{example-15}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}15}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{example-15}}
 \indexspace
 \bigletter{example\sphinxhyphen{}16}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}16}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/geometry}\sphinxstyleindexpageref{ch/vector-calculus/geometry:\detokenize{example-16}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}16}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{example-16}}
 \indexspace
 \bigletter{example\sphinxhyphen{}17}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}17}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{example-17}}
@@ -15520,16 +15656,16 @@ RL: ottimizzazione/controllo
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}5}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/vector-calculus/integrals:\detokenize{example-5}}
 \indexspace
 \bigletter{example\sphinxhyphen{}6}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}6}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/vector-calculus/integrals:\detokenize{example-6}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}6}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{example-6}}
 \indexspace
 \bigletter{example\sphinxhyphen{}7}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}7}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{example-7}}
 \indexspace
 \bigletter{example\sphinxhyphen{}8}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}8}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/geometry}\sphinxstyleindexpageref{ch/vector-calculus/geometry:\detokenize{example-8}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}8}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{example-8}}
 \indexspace
 \bigletter{example\sphinxhyphen{}9}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}9}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/geometry}\sphinxstyleindexpageref{ch/vector-calculus/geometry:\detokenize{example-9}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}9}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{example-9}}
 \indexspace
 \bigletter{infinitesimal\sphinxhyphen{}calculus:integrals:def:integrable\sphinxhyphen{}function}
 \item\relax\sphinxstyleindexentry{infinitesimal\sphinxhyphen{}calculus:integrals:def:integrable\sphinxhyphen{}function}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{infinitesimal-calculus:integrals:def:integrable-function}}
