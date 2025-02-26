@@ -287,6 +287,21 @@ $$0 \sim \lim f(x) = 0 \qquad , \qquad  1 \sim \lim f(x) = 1  \qquad , \qquad \i
 
 senza esserne identicamente uguali.
 
+```{prf:example} Forma indeterminata $1^{insfty}$
+
+La funzione - o la famiglia di funzioni, al variare del parametro $n$ -
+
+$$\left( e^{\frac{1}{x}} \right)^{x^n}$$
+
+è un esempio di forma indeterminata $1^{+\infty}$ per $x \rightarrow +\infty$ per $n>0$, poiché 
+
+$$\begin{aligned}
+  & \lim_{x \rightarrow +\infty} e^{\frac{1}{x}} = 1 \\
+  & \lim_{x \rightarrow +\infty} x^n = +\infty \quad n > 0 \\
+\end{aligned}$$ 
+
+```
+
 **Oss.** Invece non sono forme indeterminate $0^{+\infty} \rightarrow 0$ e $0^{-\infty} \rightarrow \infty$.
 
 Vengono ora introdotti alcuni risultati necessari per manipolare le forme indeterminate, e poter confrontare infiniti e infinitesimi.
