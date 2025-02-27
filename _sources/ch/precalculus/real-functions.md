@@ -5,23 +5,24 @@
 :read-time: "{sub-ref}`wordcount-minutes` min read"
 ```
 -->
-(math-hs:precalculus:real-functions)=
-# Funzioni reali a variabile reale, $f: A \subseteq \mathbb{R} \rightarrow \mathbb{R}$
 
-Le funzioni reali a variabile reale saranno oggetto di studio dettagliato del [calcolo infinitesimale](infinitesimal-calculus:analysis).
+(math-hs:precalculus:real-functions)=
+# Funzioni reali a variabile reale, $f: D \subseteq \mathbb{R} \rightarrow \mathbb{R}$
+
+Le funzioni reali a variabile reale saranno oggetto di studio dettagliato del [calcolo infinitesimale](infinitesimal-calculus:analysis). Qui si specializza la definizione di [funzione](math-hs:fun) per funzioni $f: D \subseteq \mathbb{R} \rightarrow \mathbb{R}$ reali a variabile reale, cioè con dominio $D \subseteq \mathbb{R}$ sottoinsieme dei numeri reali, e immagine $f(D) \subseteq \mathbb{R}$ sottoinsieme dei numeri reali. 
 
 ```{prf:definition} Funzione a valore reale di variabile reale
 :label: precalculus-real-fun
 
-Una funzione a valore reale di una variabile reale è una [funzione](math-hs:fun) $f: A \subseteq \mathbb{R} \rightarrow \mathbb{R}$ è una funzione che ha come dominio un sottoinsieme $A$ dei numeri reali e codominio $\mathbb{R}$, cioè una relazione che associa a ogni elemento $x \in A$ uno e un solo elemento
+Una funzione a valore reale di una variabile reale è una [funzione](math-hs:fun) $f: D \subseteq \mathbb{R} \rightarrow \mathbb{R}$ è una funzione che ha come **dominio** un sottoinsieme $D$ dei numeri reali e codominio $\mathbb{R}$, cioè una relazione che associa a ogni elemento $x \in D$ uno e un solo elemento
 
 $$y = f(x) \in \mathbb{R} \ .$$
 
-E' comune chiamare $x$ *argomento* della funzione, o la *variabile indipendente*, e $y$ *valore* della funzione o *variabile dipendente*
+E' comune chiamare $x$ **argomento** della funzione, o **variabile indipendente**, e $y$ **valore** della funzione o **variabile dipendente**, poiché il suo valore dipende dal valore della funzione con argomento $y$.
 
 ```
 
-(math-hs:precalculus:real-functions:inverse:plot)=
+(math-hs:precalculus:real-functions:plot)=
 ## Grafico di una funzione
 A una funzione $y = f(x)$ può essere associata una rappresentazione grafica, interpretando le variabili $x$, $y$ come coordinate che descrivono il piano. La rappresentazione comune le interpreta come *coordinate cartesiane*. Una funzione impone una relazione tra le due coordinate e in generale può essere rappresentato come una curva nel piano.
 
@@ -55,6 +56,24 @@ Appoggiandoci alla rappresentazione grafica (**todo**), vengono definite alcune 
   - iniettiva **todo**
   - biunivoca **todo**
 
+(math-hs:precalculus:real-functions:composite)=
+## Funzioni composte
+
+...**todo** discutere dominio,...
+
+$$f \circ g (x) := f\left( g( x ) \right) \ .$$
+
+...
+
+```{admonition} Notazione
+
+La composizione di una funzione con se stessa $n$ volte può essere indicata come
+
+$$\underbrace{f \circ f \circ \dots \circ f}_{n \text{ volte}} (x) = f^n (x) \ .$$
+
+```
+
+
 (math-hs:precalculus:real-functions:inverse)=
 ## Funzioni invertibili e inverse
 Una funzione $f: X \rightarrow Y$ è **invertibile** se esiste una funzione $g: Y \rightarrow X$ tale che
@@ -71,4 +90,5 @@ $$\begin{aligned}
 (math-hs:precalculus:real-functions:problems)=
 ## Problemi
 **todo**
+
 
