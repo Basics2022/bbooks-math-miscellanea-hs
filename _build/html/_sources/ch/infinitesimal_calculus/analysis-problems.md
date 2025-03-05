@@ -161,7 +161,7 @@ $$\begin{aligned}
 
    $$\lim_{x \to 0} \frac{x + \sin x}{x^2} = \lim_{x \to 0} \frac{x + x}{x^2} = \lim_{x \to 0} \frac{2}{x} = \infty \ .$$
 
-   Se viene specificato il lato del limite, è possibile anche determinare il segno dell'infinito, $\lim_{x \to 0^{\mp} \dot = \mp \infty$.
+   Se viene specificato il lato del limite, è possibile anche determinare il segno dell'infinito, $\lim_{x \to 0^{\mp}} \frac{x + \sin x}{x^2} = \mp \infty$.
 
 10. La funzione è continua, e quindi è sufficiente sostituire il valore $x = 0$ nella funzione
 
