@@ -95,11 +95,11 @@ $$\Bigl( f(x) g(x) \Bigr)' = f'(x) g(x) + f(x) g'(x)$$ (infinitesimal-calculus:d
 
 $$\left( \frac{f(x)}{g(x)} \right)' = \frac{f'(x) g(x) - f(x) g'(x)}{g^2(x)}$$ (infinitesimal-calculus:derivatives:rules:division)
 
-- derivata della funzione composta
+- derivata della [funzione composta](math-hs:precalculus:real-functions:composite), $f \circ g (x)$
 
 $$\frac{d}{dx} f\big( g(x) \big) = \frac{d f}{dy}\Big|_{y=g(x)} \dfrac{d g}{d x}\Big|_{x}$$ (infinitesimal-calculus:derivatives:rules:composite)
 
-- derivata della funzione inversa, $y = f(x)$, $x = f^{-1}(y)$
+- derivata della [funzione inversa](math-hs:precalculus:real-functions:inverse), $y = f(x)$, $x = f^{-1}(y)$
 
 $$ \dfrac{d f^{-1}}{d y}\bigg|_{y = f(x)} = \dfrac{1}{ \dfrac{d y}{d x}\bigg|_{x}} \ .$$ (infinitesimal-calculus:derivatives:rules:inverse)
 
@@ -539,8 +539,6 @@ Uno studio di funzione completo può richiedere la padronanza di tutti gli strum
   - valutare i limiti della funzione agli estremi del dominio, o in corrispondenza di punti di discontinuità
 - [studio di funzione - capitolo sulle derivate](infinitesimal-calculus:derivatives:applications:fun) - punti di estremi locali, punti di flesso
 - [studio di funzione - capitolo sugli integrali](infinitesimal-calculus:integrals:applications:fun) - area sottesa al grafico di una funzione, e altre grandezze integrali
-
-
 
 (infinitesimal-calculus:derivatives:applications:optimization)=
 ### Ottimizzazione

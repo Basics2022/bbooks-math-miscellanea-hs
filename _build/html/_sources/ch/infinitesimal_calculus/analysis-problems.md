@@ -53,11 +53,9 @@ $$\frac{1}{x^2} > M \quad  \forall x \in \left[ -\frac{1}{\sqrt{|M|}}, \frac{1}{
 
 ...
 
-
 ```
 
 ```{dropdown} Soluzione 5.
-:open:
 
 *Risolvere usando il fatto che $F(x) = e^x-1$ è crescente, con derivata crescente*
 
@@ -121,6 +119,58 @@ $$\begin{aligned}
 10. $\lim_{x \to 0} e^x - 1$  
 ```
 
+```{dropdown} Soluzioni
+
+1. E' un limite di una funzione continua al finito. Quindi è sufficiente sostituire il valore al quale tende la variabile nella funzione da valutare
+
+    $$\lim_{x \to 1} (x^2 + 3x - 4) = 1^2 + 3 \cdot 1 - 4 = 0 \ .$$
+
+2. E' un limite di una funzione continua al finito. Quindi è sufficiente sostituire il valore al quale tende la variabile nella funzione da valutare
+
+    $$\lim_{x \to 2} (x^3 + 2x^2 - 1) = 2^3 + 2 \cdot 2^2 - 1 = 15 \ .$$
+
+3. E' il limite di una funzione razionale al finito. Il valore al quale tende la variabile $x$ non è uno zero del denominatore, quindi la funzione razionale è continua in $x = 0$, e per calcolare il limite è sufficiente sostituire il valore $x=0$ nella funzione
+
+   $$\lim_{x \to 0} \frac{x + 1}{2x + 3} = \frac{0+1}{2\cdot 0 + 3} = \frac{1}{3} \ .$$
+
+4. Il valore al quale tende la variabile $x$ è uno zero sia per il numeratore sia per il denominatore. E' quindi una forma indeterminata nella forma $\frac{0}{0}$ che può essere risolta dopo aver fattorizzato il numeratore della frazione
+
+   $$\lim_{x \to 2} \frac{x^2 - 4}{x-2} = \lim_{x \to 2} \frac{(x-2)(x+2)}{x-2} = \lim_{x \to 2} (x+2) \ ,$$
+
+   e, dopo la semplificazione, il limite può essere valutato semplicemente sostituendo il valore $x=2$ nella funzione, per ottenere
+
+   $$\lim_{x \to 2} \frac{x^2-4}{x-2} = 4 \ .$$
+
+5. Come per il limite precedente, il valore al quale tende la variabile $x$ è uno zero sia per il numeratore sia per il denominatore, e il limite può essere affrontato con la fattorizzazione dei polinomi,
+
+   $$\lim_{x \to -1} \frac{x^3+1}{x+1} = \lim_{x \to -1} \frac{(x+1)(x^2-x+1)}{x+1} = \lim_{x \to -1} \left( x^2-x+1 \right) = 3 \ .$$
+
+6. Per $x \to 0$ il denominatore della funzione tende a $0$, mentre il numeratore tende a -1. Di conseguenza il limite è una forma $\frac{c}{0}$. Aggiungendo il dettaglio di limite "da sinistra" $x \to 0^-$ e "da destra" $x \to 0^+$, allora il limite vale
+
+   $$\lim_{x \to 0^{\mp}} \frac{x^2 - 1}{x} = \pm \infty \ .$$
+
+7. Fattorizzando il numeratore come $1 - x = (1-\sqrt{x})(1+\sqrt{x})$, si può risolvere la forma indeterminata $\frac{0}{0}$,
+
+   $$\lim_{x \to 1} \frac{1-x}{\sqrt{x}-1} = \lim_{x \to 1} \frac{(1-\sqrt{x})(1+\sqrt{x})}{\sqrt{x}-1} = - lim_{x \to 1} -(1+\sqrt{x}) = - 2 \ .$$
+
+8. La fattorizzazione del numeratore e del denominatore della funzione razionale permette di risolvere la forma indeterminata $\frac{0}{0}$,
+
+   $$\lim_{x \to 3} \frac{2x - 6}{x^2 - 9} = \lim_{x \to 3} \frac{2(x-3)}{(x-3)(x+3)} = \lim_{x \to 3} \frac{2}{x+3} = \frac{1}{3} \ .$$  
+
+9. Sostituendo $\sin x$ con l'asintotico $x$, facendo attenzione che non avvengano cancellazioni nell'ordine dell'infinitesimo,
+
+   $$\lim_{x \to 0} \frac{x + \sin x}{x^2} = \lim_{x \to 0} \frac{x + x}{x^2} = \lim_{x \to 0} \frac{2}{x} = \infty \ .$$
+
+   Se viene specificato il lato del limite, è possibile anche determinare il segno dell'infinito, $\lim_{x \to 0^{\mp} \dot = \mp \infty$.
+
+10. La funzione è continua, e quindi è sufficiente sostituire il valore $x = 0$ nella funzione
+
+   $$\lim_{x \to 0} e^x - 1 = e^0 - 1 = 1 - 1 = 0 \ .$$
+
+
+```
+
+
 (infinitesimal-calculus:analysis:problems:limits-lateral)=
 ```{exercise} Limiti laterali
 :class: dropdown
@@ -176,24 +226,105 @@ Risolvere i seguenti limiti, con le tecniche studiate nel capitolo. Inutile qui 
 2. $\lim_{x \to \infty} e^{-x}$  
 3. $\lim_{x \to 0^+} \frac{1}{x^2}$  
 4. $\lim_{x \to \infty} \sqrt{x^2 + x} - x$  
-5. $\lim_{x \to \infty} \frac{\ln(x)}{x}$  
+5. $\lim_{x \to +\infty} \frac{\ln(x)}{x}$  
 6. $\lim_{x \to 0} \sin\left(\frac{1}{x}\right)$  
 7. $\lim_{x \to \pi^-} \tan(x)$  
 8. $\lim_{x \to \infty} \cos(x)$  
 9. $\lim_{x \to 0^+} \ln(1 + x)$  
 10. $\lim_{x \to \infty} e^{-x^2}$  
 
-1. Prova che $\lim_{x \to 0} x^2 \sin\left(\frac{1}{x}\right) = 0$  
-2. Prova che $\lim_{x \to 0} \frac{\sin(x)}{x^2} = 0$  
-3. Mostra che $\lim_{x \to 0} x \cos\left(\frac{1}{x}\right) = 0$  
-4. Dimostra che $\lim_{x \to 0} x^2 \ln(x) = 0$  
-5. Prova che $\lim_{x \to 0} \frac{x^2}{\sin(x)} = 0$  
-6. Dimostra che $\lim_{x \to 0} x \sin\left(\frac{1}{x}\right) = 0$  
-7. Mostra che $\lim_{x \to 0} x^2 \cos\left(\frac{1}{x}\right) = 0$  
-8. Prova che $\lim_{x \to 0} x \ln(x) = 0$  
-9. Mostra che $\lim_{x \to 0} \frac{\sin(x)}{x} = 1$  
-10. Prova che $\lim_{x \to 0} \frac{x \cos(x)}{1 + x^2} = 0$ 
+Dimostrare i seguenti limiti:
+1.  $\lim_{x \to 0} x^2 \sin\left(\frac{1}{x}\right) = 0$  
+2.  $\lim_{x \to 0} \frac{\sin(x)}{x^2} = \infty$  
+3.  $\lim_{x \to 0} x \cos\left(\frac{1}{x}\right) = 0$  
+4.  $\lim_{x \to 0} x^2 \ln(x) = 0$
+5.  ...  
+6.  ...
+7.  ...
+8.  ...
+9.  ...
+10. $\lim_{x \to 0} \frac{x \cos(x)}{1 + x^2} = 0$ 
+
 ```
+<!--
+5.  $\lim_{x \to 0} \frac{x^2}{\sin(x)} = 0$  
+6.  $\lim_{x \to 0} x \sin\left(\frac{1}{x}\right) = 0$  
+7.  $\lim_{x \to 0} x^2 \cos\left(\frac{1}{x}\right) = 0$  
+8.  $\lim_{x \to 0} x \ln(x) = 0$  
+9.  $\lim_{x \to 0} \frac{\sin(x)}{x} = 1$
+-->
+
+
+```{dropdown} Soluzioni
+1. Usando il teorema di de l'Hopital dopo aver riscritto la funzione come frazione per confrontare due infiniti,
+
+    $$\lim_{x \to 0^+} \frac{\ln x}{\frac{1}{x}} = (H) = \lim_{x \to 0^+} \frac{\frac{1}{x}}{-\frac{1}{x}^2} = \lim_{x \to 0^+} (-x) = 0^{-} \ .$$
+
+2.
+3.
+4. Il limite si presenta nella forma indeterminata $+\infty - \infty$,
+
+    $$\begin{aligned}
+      \lim_{x \to +\infty} \left( \sqrt{x^2+x} - x \right)
+      & = \lim_{x \to +\infty} x \left( \sqrt{1 + \frac{1}{x}} - 1 \right) \ .
+    \end{aligned}$$
+
+    Si può affrontare questo limite in diversi modi: di seguito viene risolto sostituendo la radice con un suo asintotico, o con il teorema di de l'Hopital. La radice può essere scritta con l'espansione in serie di $\sqrt{1 + y}$ per $y = \frac{1}{x} \to 0^+$,
+
+    $$\begin{aligned}
+      f (y) & = (1+y)^{\frac{1}{2}}             && f(0) = 1 \\
+      f'(y) & = \frac{1}{2}(1+y)^{-\frac{1}{2}} && f'(0) = \frac{1}{2} \\
+    \end{aligned}$$
+
+    $$\sqrt{1 + y} = 1 + \frac{1}{2} y + o(y) \ .$$
+
+    Sostituendo questa espansione al posto della radice nel limite,
+
+    $$\lim_{x \to +\infty} x \left( \sqrt{1+ \frac{1}{x}} - 1 \right) = \lim_{x \to +\infty} x \left( 1 + \frac{1}{2}\frac{1}{x} + o\left(\frac{1}{x}\right) - 1 \right) = \frac{1}{2} \ .$$
+
+    Oppure usando il teorema di de l'Hopital usando la variabile $y = \frac{1}{x} \to 0^+$,
+
+    $$\lim_{y \to 0^+} \dfrac{(1+y)^{\frac{1}{2}} - 1}{y} =(H)= \lim_{y \to 0^+} \frac{\frac{1}{2}(1+y)^{-\frac{1}{2}}}{1} = \frac{1}{2} \ .$$
+
+
+
+5. Il logaritmo cresce all'infinito in maniera più lenta della funzione $x$. E' possibile dimostrare questa affermazione e calcolare l'integrale con il teorema di de l'Hopital
+
+    $$\lim_{x \to +\infty} \frac{\ln x}{x} = \lim_{x \to +\infty} \frac{\frac{1}{x}}{1} = 0^+ \ .$$
+
+6.
+7.
+8.
+9.
+10. Il limite non è una forma indeterminata. La funzione è continua in $x = 0$ e quindi è sufficiente sostituire il valore $x=0$ nella funzione,
+
+    $$\lim_{x \to 0} \frac{x \cos x}{1 + x^2} = \frac{0 \cdot 1}{1 + 0^2} = 0 \ .$$
+
+```
+
+```{dropdown} Soluzioni
+
+1. Il limite è dimostrato osservando che la funzione $\sin y$ è limitata tra $-1$ e $1$ per qualsiasi valore dell'argomento, mentre il fattore $x^2$ tende a zero. Il limite è quindi nella forma $0 \cdot M$, con $M$ finito e limitato, e quindi è uguale a $0$.
+
+2. Usando l'asintotico $\sin x \sim x$, il limite può essere riscritto come 
+
+   $$\lim_{x \to 0} \frac{x}{x^2} = \lim_{x \to 0} \frac{1}{x} = \infty \ .$$
+
+3. Il limite è dimostrato osservando che la funzione $\cos y$ è limitata tra $-1$ e $1$ per qualsiasi valore dell'argomento, mentre il fattore $x^2$ tende a zero. Il limite è quindi nella forma $0 \cdot M$, con $M$ finito e limitato, e quindi è uguale a $0$.
+
+4. Usando il teorema di de l'Hopital,
+
+   $$\lim_{x \to 0^+} x^2 \ln x = \lim_{x \to 0^+} \frac{\ln x}{\frac{1}{x^2}} = (H) = \lim_{x \to 0^+} \frac{\frac{1}{x}}{-\frac{2}{x^3}} = \lim_{x \to 0^+} -\frac{x^2}{2} = 0^- \ .$$
+
+5.
+6. 
+7.
+8.
+9.
+10. 
+
+```
+
 
 (infinitesimal-calculus:analysis:problems:funs)=
 ## Studio di funzione: dominio, continuità e limiti

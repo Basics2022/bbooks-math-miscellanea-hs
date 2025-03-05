@@ -65,7 +65,6 @@ parts:
   chapters:
   - file: ch/precalculus
   - file: ch/precalculus/real-functions
-  - file: ch/precalculus/polynomials
   - file: ch/series
   - file: ch/trigonometry
   - file: ch/precalculus/exponential_logarithm
@@ -73,12 +72,13 @@ parts:
     - file: ch/precalculus/exponential_logarithm-problems
     - file: ch/precalculus/exponential_logarithm-sol
     - file: ch/precalculus/exponential_logarithm-notes
+  - file: ch/precalculus/polynomials
+  - file: ch/precalculus/multivariable-real-fun
   - file: ch/algebra/complex-algebra
     sections:
     - file: ch/algebra/complex-algebra-problems
     - file: ch/algebra/complex-algebra-sol
     - file: ch/algebra/complex-algebra-notes
-  - file: ch/precalculus/multivariable-real-fun
 - caption: Calcolo
   numbered: True
   chapters:

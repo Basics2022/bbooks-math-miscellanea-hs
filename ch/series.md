@@ -1,17 +1,34 @@
+<!--
 ```{article-info}
 :author: basics
 :date: "{sub-ref}`today`"
 :read-time: "{sub-ref}`wordcount-minutes` min read"
 ```
+-->
 
 (math-hs:series)=
 # Serie e successioni
 
-Questa sezione è una sezione hard-core e nella sua completezza va ben oltre gli scopi di un corso di matematica a livello di scuola superiore e di molti corsi universitari, ad eccezione delle sole facoltà di matematica e fisica probabilmente.
 
-Di solito, [successioni numeriche](math-hs:series:real:sequences) e le [serie numeriche](math-hs:series:real:series) vengono trattate senza dedicarvi troppo tempo, mostrando alcuni esempi come le serie geometriche; le [successioni di funzioni](math-hs:series:fun:sequences) e [serie di funzioni](math-hs:series:fun:series) vengono trattate in occasione della presentazione della funzione esponenziale sul campo reale e quando vengono introdotte le serie polinomiali di Taylor dopo aver affrontato le derivate; infine possono essere utilizzate sul campo complesso per fornire un'intuizione veloce della formula di Eulero dell'esponenziale di numeri immaginari, senza prestare eccessiva - o nessuna - attenzione ai risultati di convergenza e al soddisfacimento di alcune ipotesi necessarie affinché alcune operazioni siano lecite/valide.<span style="color:red">!!!</span>
+```{warning}
+:class: dropdown
+
+Questa sezione - per ora in costruzione - rischia di essere una sezione hard-core e nella sua completezza rischia di andare ben oltre gli scopi di un corso di matematica a livello di scuola superiore e di molti corsi universitari, ad eccezione delle sole facoltà di matematica e fisica probabilmente.
 
 <span style="color:red">Per questi motivi, a questo capitolo viene per ora riservata una priorità relativamente bassa nello svolgimento del lavoro.</span>
+
+```
+
+```{admonition} Note sull'uso, o cosa bisogna portare a casa da questa sezione
+
+Da questa sezione è utile portare a casa:
+- la definizione di [serie numerica](), il concetto di concergenza - e i criteri di convergenza, con semplici applicazioni a serie particolari. Esistono poi alcune serie particolari - come la **serie geometrica** - ...; il numero $e$ di Eulero può essere definito come valore di una serie convergente.
+- la definizione di [serie di funzioni](). Alcuni esempi: definizione della funzione esponenziale $e^x$, serie polinomiali di Taylor, serie di Fourier <span "style=color:red">I risultati di convergenza, seppur di importanza non trascurabile, hanno una priorità secondaria nello sviluppo di questo materiale - bilancio complessità-impescindibilità</span>
+
+<!--
+Di solito, [successioni numeriche](math-hs:series:real:sequences) e le [serie numeriche](math-hs:series:real:series) vengono trattate senza dedicarvi troppo tempo, mostrando alcuni esempi come le serie geometriche; le [successioni di funzioni](math-hs:series:fun:sequences) e [serie di funzioni](math-hs:series:fun:series) vengono trattate in occasione della presentazione della funzione esponenziale sul campo reale e quando vengono introdotte le serie polinomiali di Taylor dopo aver affrontato le derivate; infine possono essere utilizzate sul campo complesso per fornire un'intuizione veloce della formula di Eulero dell'esponenziale di numeri immaginari, senza prestare eccessiva - o nessuna - attenzione ai risultati di convergenza e al soddisfacimento di alcune ipotesi necessarie affinché alcune operazioni siano lecite/valide.<span style="color:red">!!!</span>
+-->
+```
 
 (math-hs:series:real:sequences)=
 ## Successioni di numeri reali

@@ -23,20 +23,20 @@ Senza fare uso di nessun concetto di calcolo differenziale o integrale, nel prim
 ```{dropdown} Argomenti del capitolo
 :open:
 
-[**Funzioni reali a variabile reale**, $f: \mathbb{R} \rightarrow \mathbb{R}$](math-hs:precalculus:real-functions), *Introductio vol.1 cap.1-3*. **todo** 
+[**Funzioni reali a variabile reale**, $f: D \subseteq \mathbb{R} \rightarrow \mathbb{R}$](math-hs:precalculus:real-functions) (Introductio vol.1 cap.1-3)*. Riprendendo la [definizione di funzione](math-hs:fun), vengono definite le funzioni reali a valore reale $f: D \subseteq \mathbb{R} \rightarrow \mathbb{R}$ che saranno oggetto di studio del calcolo. Il [grafico](math-hs:precalculus:real-functions:plot) di una funzione in un piano cartesiano viene usato per mostrare alcune [caratteristiche](math-hs:precalculus:real-functions:types) che può avere una funzione (crescente/decrescente, pari/dispari,...). Infine viene discussa l'[invertibilità di funzioni](math-hs:precalculus:real-functions:inverse).
 
-[**Successioni e serie infinite**](math-hs:series), *Introductio vol.1 cap.4*. Vengono presentati alcuni risultati di convergenza sulle successioni e le serie infinite. Questi risultati sono utili nella formulazione dei fondamenti dell'analisi (*saranno trattati qui? Probabilmente no*), nella [definizione della funzione esponenziale](math-hs:exp:def), e in matematica discreta (come ad esempio nei metodi numerici).
+[**Successioni e serie infinite**](math-hs:series) *(Introductio vol.1 cap.4)*. Vengono presentati alcuni risultati di convergenza sulle successioni e le serie infinite. Questi risultati sono utili nella formulazione dei fondamenti dell'analisi (*saranno trattati qui? Probabilmente no*), nella [definizione della funzione esponenziale](math-hs:exp:def), e in matematica discreta (come ad esempio nei metodi numerici).
 
-[**Funzioni a più variabili**](math-hs:precalculus:multivariable-real-fun), *Introductio vol.1 cap.5*. **todo**
-
-[**Funzioni esponenziale con base $e$ e logaritmo naturale**](math-hs:exp-log), *Introductio vol.1 cap.6-7*. Viene introdotta la funzione esponenziale $e^x$. che ricopre un ruolo **fondamentale** nel calcolo, come apprezzabile nei capitoli su [*derivate*](infinitesimal-calculus:derivatives), [*integrali*](infinitesimal-calculus:integrals) e [*equazioni differenziali*](ode-hs). 
+[**Funzioni esponenziale con base $e$ e logaritmo naturale**](math-hs:exp-log) *(Introductio vol.1 cap.6-7)*. Viene introdotta la funzione esponenziale $e^x$. che ricopre un ruolo **fondamentale** nel calcolo, come apprezzabile nei capitoli su [*derivate*](infinitesimal-calculus:derivatives), [*integrali*](infinitesimal-calculus:integrals) e [*equazioni differenziali*](ode-hs). 
 Viene introdotta anche la sua funzione inversa $\ln x$, definita come il logaritmo con base $e$.
 
-[**Funzioni trigonometriche**](math-hs:trigonometry), *Introductio  vol.1 cap.8*. Vengono introdotte le funzioni trigonometriche, nell'ambito della geometria dove l'argomento di tali funzioni sono angoli. Viene presentata la relazione fondamentale della trigonometria e le regole per la somma e la differenza, e regole ricavate da queste.
+[**Funzioni trigonometriche**](math-hs:trigonometry) *(Introductio  vol.1 cap.8)*. Vengono introdotte le funzioni trigonometriche, partendo dalla geometria di una circonferenza, dove l'argomento di tali funzioni sono angoli. Viene presentata la relazione fondamentale della trigonometria e le regole per la somma e la differenza, e regole ricavate da queste.
 
-[**Fattorizzazione di polinomi**](math-hs:precalculus:polynomials). **todo**
+[**Fattorizzazione di polinomi**](math-hs:precalculus:polynomials) *(Introduction vol.* **XXX** *cap.* **todo** *)*. Vengono collezionati alcuni risultati utili sui polinomi che possono essere utili in seguito, come ad esempio il teorema fondamentale dell'algebra per la fattorizzazione dei polinomi, e il teorema binomiale per le potenze di binomi.
 
-[**Algebra sui numeri complessi**](math-hs:algebra:complex). **todo**
+[**Funzioni a più variabili**](math-hs:precalculus:multivariable-real-fun) (*Introductio vol.1 cap.5*). **todo**
+
+[**Algebra sui numeri complessi**](math-hs:algebra:complex) *(Introduction vol.* **XXX** *cap.* **todo** *)*.
 
 ```
 

@@ -95,11 +95,11 @@ $$\Bigl( f(x) g(x) \Bigr)' = f'(x) g(x) + f(x) g'(x)$$ (infinitesimal-calculus:d
 
 $$\left( \frac{f(x)}{g(x)} \right)' = \frac{f'(x) g(x) - f(x) g'(x)}{g^2(x)}$$ (infinitesimal-calculus:derivatives:rules:division)
 
-- derivata della funzione composta
+- derivata della [funzione composta](math-hs:precalculus:real-functions:composite), $f \circ g (x)$
 
 $$\frac{d}{dx} f\big( g(x) \big) = \frac{d f}{dy}\Big|_{y=g(x)} \dfrac{d g}{d x}\Big|_{x}$$ (infinitesimal-calculus:derivatives:rules:composite)
 
-- derivata della funzione inversa, $y = f(x)$, $x = f^{-1}(y)$
+- derivata della [funzione inversa](math-hs:precalculus:real-functions:inverse), $y = f(x)$, $x = f^{-1}(y)$
 
 $$ \dfrac{d f^{-1}}{d y}\bigg|_{y = f(x)} = \dfrac{1}{ \dfrac{d y}{d x}\bigg|_{x}} \ .$$ (infinitesimal-calculus:derivatives:rules:inverse)
 

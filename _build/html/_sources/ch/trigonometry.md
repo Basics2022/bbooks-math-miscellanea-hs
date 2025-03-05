@@ -45,9 +45,11 @@ Usando il teorema di Pitagora è immediato dimostrare la **relazione fondamental
 
 $$\sin^2 \theta + \cos^2 \theta = 1 \ .$$
 
-**Nota sulla notazione.** Nell'uso delle funzioni trigonometriche, $\sin^2 x$ indica il quadrato della funzione e non la composizione della funzione con se stessa,
+```{admonition} Notazione.
+Nell'uso delle funzioni trigonometriche, $\sin^2 x$ indica il quadrato della funzione e non la [composizione della funzione](math-hs:precalculus:real-functions:composite) con se stessa,
 
 $$\sin^2 x = (\sin x)^2 \neq \sin( \sin x) \ .$$
+```
 
 ### Altre funzioni trigonometriche
 **Tangente.** $\tan \theta := \dfrac{\sin \theta}{\cos \theta} = \dfrac{\overline{PH}}{\overline{OH}} \ .$
