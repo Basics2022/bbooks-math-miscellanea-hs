@@ -115,6 +115,8 @@ parts:
   numbered: True
   chapters:
   - file: ch/statistics
+    sections:
+    - file: ch/statistics/combinatorics
 - caption: Indice
   chapters:
   - file: genindex.md
