@@ -109,7 +109,17 @@ $$\begin{aligned}
 \end{aligned}$$
 ```
 
+```{prf:example} Caramelle uguali a bambini diversi
+In quanti modi si possono distribuire $5$ caramelle indistinguibili a $3$ bambini distinguibili? Il numero è uguale al numero di combinazioni con ripetizione di $k=5$ elementi di un gruppo di $n=3$ elementi, e cioè
+
+$$C'_{3,5} = \frac{7!}{2! \cdot 5!} = \frac{6 \cdot 7}{2} = 21 \ .$$
+
+```
+
 ```{prf:example} Bose-Einstein
+...
+
+
 ```
 
 ```{note}

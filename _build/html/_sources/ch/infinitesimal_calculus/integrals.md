@@ -7,7 +7,11 @@
 ```{prf:definition} Somma di Riemann
 :label: infinitesimal-calculus:integrals:def:riemann-sum
 
- Data una funzione continua $f: [a,b] \rightarrow \mathbb{R}$ e $P = \{ x_0, x_1, \dots x_n | a = x_0 < x_1 < \dots < x_n = b \}$ partizione dell'intervallo $[a,b]$, la somma di Riemann viene definita come
+ Data una funzione continua $f: [a,b] \rightarrow \mathbb{R}$ e una partizione $P$ dell'intervallo $[a,b]$,
+
+ $$P = \{ x_0, x_1, \dots x_n | a = x_0 < x_1 < \dots < x_n = b \} \ ,$$
+
+una somma di Riemann $\sigma$ della funzione $f$ sulla partizione $P$ viene definita come
 
 $$\sigma_P = \sum_{k=1}^{n} f(\xi_k) (x_{k} - x_{k-1}) \ ,$$ (infinitesimal-calculus:integrals:riemann:sum)
 
@@ -111,6 +115,10 @@ L'**integrale indefinito** di una funzione $f(x)$ viene definito come,
 $$\int^x f(t) \ dt = F(x) + C \ ,$$
 
 dove la costante additiva $C$ tiene conto dell'arbitrarietà appena discussa.
+
+L'**integrale definito** di una funzione continua $f(x): D \rightarrow \mathbf{R}$ su un'intervallo $[a,b] \subseteq D$ può quindi essere valutato come la differenza della funzione primitiva $F(x)$ valutata nell'estremo superiore e nell'estremo inferiore,
+
+$$\int_{x=a}^{b} f(x) \, dx = F(b) - F(a) \ .$$
 
 
 (infinitesimal-calculus:integrals:thm)=
@@ -263,12 +271,65 @@ Una volta dimostrato il [teorema fondamentale del calcolo infinitesimale](infini
 $$\begin{aligned}
  \int x^n         \ dx & = \frac{1}{n+1} x^{n+1} + C  \qquad (\text{if } n \neq -1) \\ 
  \int e^x         \ dx & = e^x                   + C \\ 
- \int \frac{1}{x} \ dx & = \ln x                 + C \\ 
+ \int \frac{1}{x} \ dx & = \ln | x |             + C \\ 
  \int \cos x      \ dx & = \sin x                + C \\ 
  \int \sin x      \ dx & =-\cos x                + C    
 \end{aligned}$$
 
 Per un'ulteriore lista si rimanda alla [tabella a fine sezione](infinitesimal-calculus:integrals:table).
+
+(infinitesimal-calculus:integrals:improper)=
+## Integrali impropri
+Vengono definiti integrali impropri alcune famiglie di integrali definiti, come ad esempio:
+- gli integrali di funzioni continue definite su domini con almeno un estremo aperto (finito o infinito), $f: D_{a,b} \subseteq \mathbb{R} \rightarrow$, che hanno come estremo di integrazione un estremo dell'intervallo. Questo caso comprende sia i limiti al finito 
+
+
+```{prf:example} $\int_{0}^{b} \frac{1}{x} \, dx$
+:class: dropdown
+
+$$
+\int_{x=0^+}^{b} \frac{1}{x} \, dx = \lim_{a \rightarrow 0^+} \int_{x=a}^{b} \frac{1}{x} \, dx = \lim_{a \rightarrow 0^+} \left[ \left.\ln x \right|_{x=a}^{b} \right] = \lim_{a \rightarrow 0^+} \left[ \ln {b} - \ln a \right] = + \infty \ .
+$$
+
+poiché $\lim_{a \rightarrow 0^+} \ln a = -\infty$.
+
+```
+
+```{prf:example} $\int_{0}^{b} \frac{1}{x^n} \, dx$
+:class: dropdown
+
+Se $n>0$ e $n \ne 1$,
+
+$$\begin{aligned}
+\int_{x=0^+}^{b} \frac{1}{x^n} \, dx
+ & = \lim_{a \rightarrow 0^+} \int_{x=a}^{b} x^{-n} \, dx = \\
+ & = \lim_{a \rightarrow 0^+} \left[ \frac{1}{-n+1} \left. x^{-n+1} \right|_{x=a}^{b} \right] = \\
+ & = \frac{1}{-n+1} \lim_{a \rightarrow 0^+} \left[ b^{-n+1} - a^{-n+1} \right] 
+   = \begin{cases} \frac{1}{1-n} b^{1-n} && \text{$n < 1$} \\ +\infty && \text{$n > 1$} \end{cases} \ ,
+\end{aligned}$$
+
+```
+
+```{prf:example} $\int_{a}^{+\infty} \frac{1}{n^n}$
+...
+```
+
+### Condizioni di integrabilità
+...
+
+### Valore principale di Cauchy
+In alcuni casi è possibile "risolvere" una forma indeterminata della forma $+\infty - \infty$ nel calcolo di un integrale improprio che dà come risultato un valore finito. Questo valore finito viene definito valore principale di Cauchy. E' questo l'esempio dell'integrale della funzione $\frac{1}{x}$ su un intervallo che contiene il punto $x=0$. Questo punto è un punto di discontinuità della funzione, dove questa non è definita. Dati due valori $a$, $b$ tali che $a < 0 < b$, l'integrale $\int_{x=a}^{b} \frac{1}{x} \, dx$ viene quindi interpretato come
+
+$$\int_{x=a}^{b} \frac{1}{x} \, dx = \lim_{c \rightarrow 0^+} \left[ \int_{a}^{-c} \frac{1}{x} + \int_{c}^{b} \frac{1}{x} \, dx \right] \ ,$$
+
+e il suo calcolo produce il risultato
+
+$$\begin{aligned}
+\int_{x=a}^{b} \frac{1}{x} \, dx 
+ & = \lim_{c \rightarrow 0^+} \left[ \int_{a}^{-c} \frac{1}{x} + \int_{c}^{b} \frac{1}{x} \, dx \right] = \\ 
+ & = \lim_{c \rightarrow 0^+} \left[ \ln|-c| - \ln|a| + \ln |b| - \ln|c| \right] = \\ 
+ & = \ln |b| - \ln |a| \ .
+\end{aligned}$$
 
 (infinitesimal-calculus:integrals:rules)=
 ## Regole di integrazione
