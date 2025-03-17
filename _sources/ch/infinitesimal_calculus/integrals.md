@@ -400,7 +400,7 @@ $$\begin{aligned}
 
 #### Sostituzioni utili
 
-**Funzioni trigonometriche e iperboliche.**
+**Funzioni trigonometriche e iperboliche.** 
 
 $$\begin{aligned}
   & \sqrt{a^2 - x^2} && \rightarrow && x = a \sin  \theta \quad \text{ or } \quad x = a \cos \theta  \\
