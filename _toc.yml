@@ -98,6 +98,8 @@ parts:
     - file: ch/infinitesimal_calculus/integrals-table
     - file: ch/infinitesimal_calculus/integrals-problems
   - file: ch/ode
+    sections:
+    - file: ch/ode-lti
 # - file: ch/infinitesimal_calculus/problems
   - file: ch/multivariable-calculus
     sections:
