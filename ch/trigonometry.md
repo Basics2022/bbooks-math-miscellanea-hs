@@ -1,6 +1,8 @@
 (math-hs:trigonometry)=
 # Trigonometria
 
+**todo:list** [**Analisi di Fourier**](math-hs:todo:list)=
+
 ## Definizione delle funzioni trigonometriche e relazione fondamentale
 
 ### Seno e coseno
@@ -40,10 +42,11 @@ $$\cos \theta := \frac{\overline{OH}}{R}$$
 
 ````
 
+(math-hs:trigonometry:fundamental)=
 ### Relazione fondamentale della trignometria
 Usando il teorema di Pitagora è immediato dimostrare la **relazione fondamentale della trigonometria** tra le funzioni seno e coseno di un angolo,
 
-$$\sin^2 \theta + \cos^2 \theta = 1 \ .$$
+$$\sin^2 \theta + \cos^2 \theta = 1 \ .$$ (eq:trigonometry-fundamental)
 
 ```{admonition} Notazione.
 Nell'uso delle funzioni trigonometriche, $\sin^2 x$ indica il quadrato della funzione e non la [composizione della funzione](math-hs:precalculus:real-functions:composite) con se stessa,
@@ -150,9 +153,9 @@ $$\begin{aligned}
 Valgono le seguenti formule per il coseno e il seno della somma e della differenza di angoli,
 
 $$\begin{aligned}
-  \cos ( x \mp y ) & = \cos x \ \cos y \pm \sin x \ \sin y \\
-  \sin ( x \mp y ) & = \sin x \ \cos y \mp \cos x \ \sin y \\
-\end{aligned}$$
+  \cos ( x \mp y ) & = \cos x \ \cos y \pm \sin x \ \sin y \hfill (1) \\
+  \sin ( x \mp y ) & = \sin x \ \cos y \mp \cos x \ \sin y \hfill (2) \\
+\end{aligned}$$ (eq:trigonometry:sum-diff)
 
 
 Per completezza, come utile esercizio di geometria sulla similitudine dei triangoli, e per familiarizzare con le funzioni armoniche, si fornisce la dimostrazione della formula del coseno della somma.
@@ -257,7 +260,36 @@ dalla quale è evidente la relazione desiderata.
 
 ```
 
+## Applicazioni utili e frequenti
 
+(math-hs:trigonometry:linear-combination)=
+### Combinazione lineare di $\ \cos \theta$ e $\ \sin \theta$ 
+
+La combinazione lineare delle funzioni seno e coseno con lo stesso argomento,
+
+$$f(\theta) = A \cos(\theta) + B \sin \theta \ ,$$
+
+può essere riscritta in termini di una sola funzione armonica, rendendone esplicita l'ampiezza $F$ e la differenza di fase $\phi$ rispetto all'argomento $\theta$.
+
+Per fare questo, ci si vuole riportare a una delle formule di somma o sottrazione di funzoni trigonometriche. Dai coefficienti $A$, $B$ si desidera ricavare due coefficienti che possano essere rispettivamente il coseno e il seno di un angolo $\varphi$. La [relazione fondamentale della trigonometria](math-hs:trigonometry:fundamental) {eq}`eq:trigonometry-fundamental` richiede che la somma dei quadrati dei coseno e seno con lo stesso argomento sia uguale a 1. Serve quindi una normalizzazione dei coefficienti, dividendo i coefficienti (e moltiplicando per la stessa quantità diversa da zero per non alterare l'espressione) per la radice quadra della somma dei loro quadrati
+
+$$f(\theta) = \sqrt{A^2+B^2} \left[ \frac{A}{\sqrt{A^2+B^2}} \cos \theta + \frac{B}{\sqrt{A^2+B^2}} \sin \theta \right] \ .$$
+
+E' ora possibile definire un angolo $\varphi$, il cui coseno e seno sono uguali ai coefficienti,
+
+$$\cos \varphi = \frac{A}{\sqrt{A^2+B^2}}  \qquad , \qquad \sin \varphi = \frac{B}{\sqrt{A^2+B^2}} \ , $$
+
+e usare la regola del coseno della differenza {eq}`eq:trigonometry:sum-diff`(1) per poter scrivere
+
+$$\begin{aligned}
+  f(\theta) 
+  & = F \left[ \cos \varphi \cos \theta + \sin \phi \sin \theta \right] = \\ 
+  & = F \cos ( \theta - \phi ) \ ,
+\end{aligned}$$ 
+
+avendo definito l'ampiezza della funzione armonica $F = \sqrt{A^2 + B^2}$.
+
+###
 
 
 
