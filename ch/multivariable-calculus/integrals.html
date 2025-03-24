@@ -265,18 +265,21 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../infinitesimal_calculus/integrals.html">25. Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/integrals-table.html">25.6. Tavola degli integrali indefiniti più comuni</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/integrals-problems.html">25.7. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/integrals-table.html">25.7. Tavola degli integrali indefiniti più comuni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/integrals-problems.html">25.8. Problemi</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../ode.html">26. Equazioni differenziali ordinarie</a></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="../multivariable-calculus.html">27. Introduzione al calcolo multi-variabile</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ode.html">26. Equazioni differenziali ordinarie</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ode-lti.html">26.3. Sistemi lineari tempo invarianti (LTI)</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../multivariable-calculus.html">27. Introduzione al calcolo multi-variabile</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="limits.html">27.1. Limite di una funzione di più variabili</a></li>
 <li class="toctree-l2"><a class="reference internal" href="derivatives.html">27.2. Derivate di funzioni di più variabili</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">27.3. Integrali su domini multi-dimensionali</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../vector-calculus.html">28. Introduzione al calcolo vettoriale su spazi euclidei</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../vector-calculus.html">28. Introduzione al calcolo vettoriale su spazi euclidei</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../vector-calculus/geometry.html">28.1. Cenni di geometria differenziale</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../vector-calculus/integrals.html">28.2. Integrali in spazi euclidei</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../vector-calculus/derivatives.html">28.3. Operatori differenziali in spazi euclidei</a></li>
@@ -287,7 +290,10 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Statistica</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../statistics.html">29. Introduzione alla statistica</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../statistics.html">29. Introduzione alla statistica</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../statistics/combinatorics.html">29.1. Calcolo combinatorio</a></li>
+</ul>
+</li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Indice</span></p>
 <ul class="nav bd-sidenav">
@@ -511,6 +517,10 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regole-di-integrazione">27.3.2. Regole di integrazione</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoremi">27.3.3. Teoremi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">27.3.4. Esempi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integrale-int-x-infty-infty-e-x-2-dx-sqrt-pi">27.3.4.1. Integrale <span class="math notranslate nohighlight">\(\ \int_{x = \infty}^{+\infty} e^{-x^2} \, dx = \sqrt{\pi}\)</span></a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -640,10 +650,23 @@ I_2
 <p class="admonition-title"><span class="caption-number">Theorem 27.1 </span> (Lemma di Green)</p>
 <div class="theorem-content section" id="proof-content">
 </div>
-</div><!--
-(multivariable-calculus:integrals:examples)=
-## Esempi
--->
+</div></div>
+<div class="section" id="esempi">
+<span id="multivariable-calculus-integrals-examples"></span><h2><span class="section-number">27.3.4. </span>Esempi<a class="headerlink" href="#esempi" title="Permalink to this heading">#</a></h2>
+<div class="section" id="integrale-int-x-infty-infty-e-x-2-dx-sqrt-pi">
+<span id="integral-etox2"></span><h3><span class="section-number">27.3.4.1. </span>Integrale <span class="math notranslate nohighlight">\(\ \int_{x = \infty}^{+\infty} e^{-x^2} \, dx = \sqrt{\pi}\)</span><a class="headerlink" href="#integrale-int-x-infty-infty-e-x-2-dx-sqrt-pi" title="Permalink to this heading">#</a></h3>
+<p>L’integrale <span class="math notranslate nohighlight">\(\int_{x} \, e^{-x^2} \, dx\)</span> è un integrale frequente in alcuni ambiti delle scienze. Ad esempio, compare in statistica di frequente quando è conivolta una <em>distribuzione di probabilità</em> normale, con densità di probabilità <span class="math notranslate nohighlight">\(f(x;\mu,\sigma^2) = \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}\)</span>, che a sua volta è una delle distribuzioni di probabilità più frequenti.</p>
+<p>Pur non esistendo una forma analitica semplice di questo integrale, il valore dell’integrale definito può essere calcolato usando gli integrali multidimensionali e un opportuno cambio di coordinate tra coordinate cartesiane e polari. Si calcola il valore del quadrato dell’integrale desiderato,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  I^2 
+  &amp; = \left( \int_{x = \infty}^{+\infty} e^{-x^2} \, dx \right) \, \left( \int_{y = \infty}^{+\infty} e^{-y^2} \, dy \right) = \\
+  &amp; = \int_{x = \infty}^{+\infty} \int_{y = \infty}^{+\infty}  e^{-(x^2+y^2)} \, dx \, dy  = \\
+  &amp; = \int_{\theta = 0}^{2\pi} \int_{r = 0}^{+\infty}  e^{-r^2} \, r \,  dr \, d \theta  = \\
+  &amp; = 2 \pi \, \frac{1}{2} \, \int_{\theta = 0}^{2\pi} \int_{r = 0}^{+\infty}  e^{-r^2} d r^2 = \\
+  &amp; = \pi \, \left. \left( - e^{-r^2} \right)\right|_{r=0}^{+\infty} = \pi \ .
+\end{aligned}\end{split}\]</div>
+</div>
 </div>
 </div>
 
@@ -717,6 +740,10 @@ I_2
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regole-di-integrazione">27.3.2. Regole di integrazione</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoremi">27.3.3. Teoremi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">27.3.4. Esempi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integrale-int-x-infty-infty-e-x-2-dx-sqrt-pi">27.3.4.1. Integrale <span class="math notranslate nohighlight">\(\ \int_{x = \infty}^{+\infty} e^{-x^2} \, dx = \sqrt{\pi}\)</span></a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

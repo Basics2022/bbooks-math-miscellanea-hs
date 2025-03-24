@@ -265,18 +265,21 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="infinitesimal_calculus/integrals.html">25. Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="infinitesimal_calculus/integrals-table.html">25.6. Tavola degli integrali indefiniti più comuni</a></li>
-<li class="toctree-l2"><a class="reference internal" href="infinitesimal_calculus/integrals-problems.html">25.7. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="infinitesimal_calculus/integrals-table.html">25.7. Tavola degli integrali indefiniti più comuni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="infinitesimal_calculus/integrals-problems.html">25.8. Problemi</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="ode.html">26. Equazioni differenziali ordinarie</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="multivariable-calculus.html">27. Introduzione al calcolo multi-variabile</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ode.html">26. Equazioni differenziali ordinarie</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ode-lti.html">26.3. Sistemi lineari tempo invarianti (LTI)</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="multivariable-calculus.html">27. Introduzione al calcolo multi-variabile</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="multivariable-calculus/limits.html">27.1. Limite di una funzione di più variabili</a></li>
 <li class="toctree-l2"><a class="reference internal" href="multivariable-calculus/derivatives.html">27.2. Derivate di funzioni di più variabili</a></li>
 <li class="toctree-l2"><a class="reference internal" href="multivariable-calculus/integrals.html">27.3. Integrali su domini multi-dimensionali</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="vector-calculus.html">28. Introduzione al calcolo vettoriale su spazi euclidei</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="vector-calculus.html">28. Introduzione al calcolo vettoriale su spazi euclidei</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="vector-calculus/geometry.html">28.1. Cenni di geometria differenziale</a></li>
 <li class="toctree-l2"><a class="reference internal" href="vector-calculus/integrals.html">28.2. Integrali in spazi euclidei</a></li>
 <li class="toctree-l2"><a class="reference internal" href="vector-calculus/derivatives.html">28.3. Operatori differenziali in spazi euclidei</a></li>
@@ -287,7 +290,10 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Statistica</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="statistics.html">29. Introduzione alla statistica</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="statistics.html">29. Introduzione alla statistica</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="statistics/combinatorics.html">29.1. Calcolo combinatorio</a></li>
+</ul>
+</li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Indice</span></p>
 <ul class="nav bd-sidenav">
@@ -514,6 +520,11 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formule-di-somma-e-sottrazione">17.3. Formule di somma e sottrazione</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#werner">17.4. Werner</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prostaferesi">17.5. Prostaferesi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applicazioni-utili-e-frequenti">17.6. Applicazioni utili e frequenti</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#combinazione-lineare-di-seno-e-coseno-con-stesso-argomento">17.6.1. Combinazione lineare di seno e coseno con stesso argomento</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">17.6.2. </a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -527,6 +538,7 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="trigonometria">
 <span id="math-hs-trigonometry"></span><h1><span class="section-number">17. </span>Trigonometria<a class="headerlink" href="#trigonometria" title="Permalink to this heading">#</a></h1>
+<p><strong>todo:list</strong> <span class="xref myst"><strong>Analisi di Fourier</strong></span>=</p>
 <div class="section" id="definizione-delle-funzioni-trigonometriche-e-relazione-fondamentale">
 <h2><span class="section-number">17.1. </span>Definizione delle funzioni trigonometriche e relazione fondamentale<a class="headerlink" href="#definizione-delle-funzioni-trigonometriche-e-relazione-fondamentale" title="Permalink to this heading">#</a></h2>
 <div class="section" id="seno-e-coseno">
@@ -541,10 +553,10 @@ document.write(`
 </div>
 </div>
 <div class="section" id="relazione-fondamentale-della-trignometria">
-<h3><span class="section-number">17.1.2. </span>Relazione fondamentale della trignometria<a class="headerlink" href="#relazione-fondamentale-della-trignometria" title="Permalink to this heading">#</a></h3>
+<span id="math-hs-trigonometry-fundamental"></span><h3><span class="section-number">17.1.2. </span>Relazione fondamentale della trignometria<a class="headerlink" href="#relazione-fondamentale-della-trignometria" title="Permalink to this heading">#</a></h3>
 <p>Usando il teorema di Pitagora è immediato dimostrare la <strong>relazione fondamentale della trigonometria</strong> tra le funzioni seno e coseno di un angolo,</p>
-<div class="math notranslate nohighlight">
-\[\sin^2 \theta + \cos^2 \theta = 1 \ .\]</div>
+<div class="math notranslate nohighlight" id="equation-eq-trigonometry-fundamental">
+<span class="eqno">(17.1)<a class="headerlink" href="#equation-eq-trigonometry-fundamental" title="Permalink a questa equazione">#</a></span>\[\sin^2 \theta + \cos^2 \theta = 1 \ .\]</div>
 <div class="admonition-notazione admonition">
 <p class="admonition-title">Notazione.</p>
 <p>Nell’uso delle funzioni trigonometriche, <span class="math notranslate nohighlight">\(\sin^2 x\)</span> indica il quadrato della funzione e non la <a class="reference internal" href="precalculus/real-functions.html#math-hs-precalculus-real-functions-composite"><span class="std std-ref">composizione della funzione</span></a> con se stessa,</p>
@@ -624,10 +636,10 @@ document.write(`
 <div class="section" id="formule-di-somma-e-sottrazione">
 <h2><span class="section-number">17.3. </span>Formule di somma e sottrazione<a class="headerlink" href="#formule-di-somma-e-sottrazione" title="Permalink to this heading">#</a></h2>
 <p>Valgono le seguenti formule per il coseno e il seno della somma e della differenza di angoli,</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-  \cos ( x \mp y ) &amp; = \cos x \ \cos y \pm \sin x \ \sin y \\
-  \sin ( x \mp y ) &amp; = \sin x \ \cos y \mp \cos x \ \sin y \\
+<div class="math notranslate nohighlight" id="equation-eq-trigonometry-sum-diff">
+<span class="eqno">(17.2)<a class="headerlink" href="#equation-eq-trigonometry-sum-diff" title="Permalink a questa equazione">#</a></span>\[\begin{split}\begin{aligned}
+  \cos ( x \mp y ) &amp; = \cos x \ \cos y \pm \sin x \ \sin y &amp;&amp; (1) \\
+  \sin ( x \mp y ) &amp; = \sin x \ \cos y \mp \cos x \ \sin y &amp;&amp; (2) \\
 \end{aligned}\end{split}\]</div>
 <p>Per completezza, come utile esercizio di geometria sulla similitudine dei triangoli, e per familiarizzare con le funzioni armoniche, si fornisce la dimostrazione della formula del coseno della somma.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -661,7 +673,25 @@ Dimostrazione di <span class="math notranslate nohighlight">\(\ \cos ( x + y ) =
 <div class="math notranslate nohighlight">
 \[\cos (\alpha + \beta) = \cos \alpha \cos \beta - \sin \beta \sin \alpha \ .\]</div>
 </div>
-</details></div>
+</details><div class="proof example dropdown admonition" id="trigonometry:cos2x">
+<p class="admonition-title"><span class="caption-number">Example 17.1 </span> (<span class="math notranslate nohighlight">\(\cos(2x) \)</span> e <span class="math notranslate nohighlight">\(\sin(2x)\)</span>)</p>
+<div class="example-content section" id="proof-content">
+<p>L’espressione di <span class="math notranslate nohighlight">\(\cos(2x)\)</span> e <span class="math notranslate nohighlight">\(\sin(2x)\)</span> possono essere calcolate con le formule <a class="reference internal" href="#equation-eq-trigonometry-sum-diff">(17.2)</a> per le funzioni coseno e seno di unargomento che è somma di due elementi uguali, cioè ponendo  <span class="math notranslate nohighlight">\(y = x\)</span>. L’espressione di <span class="math notranslate nohighlight">\(\cos(2x)\)</span> può essere riscritta in diverse espressioni usando la relazione fondamentale della trigonometria <a class="reference internal" href="#equation-eq-trigonometry-fundamental">(17.1)</a>,</p>
+<div class="math notranslate nohighlight" id="equation-eq-trigonometry-cos2x-sin2x">
+<span class="eqno">(17.3)<a class="headerlink" href="#equation-eq-trigonometry-cos2x-sin2x" title="Permalink a questa equazione">#</a></span>\[\begin{split}\begin{aligned}
+  \cos ( 2x ) &amp; = \cos^2 x - \sin^2 x = \\
+              &amp; = 2 \cos^2 x - 1 = \\
+              &amp; = 1 - 2 \sin^2 x 
+  \sin ( 2x ) &amp; = 2 \sin x \cos x \\
+\end{aligned}\end{split}\]</div>
+<p>dato che possono essere utili in parecchie circostanze per riconoscere</p>
+<div class="math notranslate nohighlight" id="equation-eq-trigonometry-costo2x-sinto2x">
+<span class="eqno">(17.4)<a class="headerlink" href="#equation-eq-trigonometry-costo2x-sinto2x" title="Permalink a questa equazione">#</a></span>\[\begin{split}\begin{aligned}
+  \cos^2 x &amp; = \frac{1}{2} \left( 1 + \cos (2x) \right) \\
+  \sin^2 x &amp; = \frac{1}{2} \left( 1 - \cos (2x) \right) \\
+\end{aligned}\end{split}\]</div>
+</div>
+</div></div>
 <div class="section" id="werner">
 <h2><span class="section-number">17.4. </span>Werner<a class="headerlink" href="#werner" title="Permalink to this heading">#</a></h2>
 <div class="math notranslate nohighlight">
@@ -731,6 +761,62 @@ Dimostrazione di <span class="math notranslate nohighlight">\(\ \cos p + \cos q 
 <p class="sd-card-text">dalla quale è evidente la relazione desiderata.</p>
 </div>
 </details></div>
+<div class="section" id="applicazioni-utili-e-frequenti">
+<h2><span class="section-number">17.6. </span>Applicazioni utili e frequenti<a class="headerlink" href="#applicazioni-utili-e-frequenti" title="Permalink to this heading">#</a></h2>
+<div class="section" id="combinazione-lineare-di-seno-e-coseno-con-stesso-argomento">
+<span id="math-hs-trigonometry-linear-combination"></span><h3><span class="section-number">17.6.1. </span>Combinazione lineare di seno e coseno con stesso argomento<a class="headerlink" href="#combinazione-lineare-di-seno-e-coseno-con-stesso-argomento" title="Permalink to this heading">#</a></h3>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Esempi di utilizzo<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text"><a class="reference internal" href="ode-lti.html#ode-lti-frequency-response"><span class="std std-ref">Risposta in frequenza</span></a></p></li>
+<li><p class="sd-card-text">Trasformazione da onde viaggianti a onde stazionarie</p></li>
+<li><p class="sd-card-text">…</p></li>
+</ul>
+</div>
+</details><p>La combinazione lineare delle funzioni seno e coseno con lo stesso argomento,</p>
+<div class="math notranslate nohighlight">
+\[f(\theta) = A \cos \theta + B \sin \theta \ ,\]</div>
+<p>può essere riscritta in termini di una sola funzione armonica, rendendone esplicita l’ampiezza <span class="math notranslate nohighlight">\(F\)</span> e la differenza di fase <span class="math notranslate nohighlight">\(\phi\)</span> rispetto all’argomento <span class="math notranslate nohighlight">\(\theta\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[f(\theta) = A \cos \theta + B \sin \theta = F \cos( \theta - \varphi ) \ ,\]</div>
+<p>con ampiezza <span class="math notranslate nohighlight">\(F\)</span> e fase <span class="math notranslate nohighlight">\(\varphi\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  F &amp; = \sqrt{A^2 + B^2} \\
+  \varphi &amp; \quad \text{ t.c.} \quad \cos \varphi = \frac{A}{F}  \ , \quad \sin \varphi = \frac{B}{F} \ . 
+\end{aligned}\end{split}\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Dimostrazione<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Per fare questo, ci si vuole riportare a una delle formule di somma o sottrazione di funzoni trigonometriche. Dai coefficienti <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span> si desidera ricavare due coefficienti che possano essere rispettivamente il coseno e il seno di un angolo <span class="math notranslate nohighlight">\(\varphi\)</span>. La <a class="reference internal" href="#math-hs-trigonometry-fundamental"><span class="std std-ref">relazione fondamentale della trigonometria</span></a> <a class="reference internal" href="#equation-eq-trigonometry-fundamental">(17.1)</a> richiede che la somma dei quadrati dei coseno e seno con lo stesso argomento sia uguale a 1. Serve quindi una normalizzazione dei coefficienti, dividendo i coefficienti (e moltiplicando per la stessa quantità diversa da zero per non alterare l’espressione) per la radice quadra della somma dei loro quadrati</p>
+<div class="math notranslate nohighlight">
+\[f(\theta) = \sqrt{A^2+B^2} \left[ \frac{A}{\sqrt{A^2+B^2}} \cos \theta + \frac{B}{\sqrt{A^2+B^2}} \sin \theta \right] \ .\]</div>
+<p class="sd-card-text">E” ora possibile definire un angolo <span class="math notranslate nohighlight">\(\varphi\)</span>, il cui coseno e seno sono uguali ai coefficienti,</p>
+<div class="math notranslate nohighlight">
+\[\cos \varphi = \frac{A}{\sqrt{A^2+B^2}}  \qquad , \qquad \sin \varphi = \frac{B}{\sqrt{A^2+B^2}} \ , \]</div>
+<p class="sd-card-text">e usare la regola del coseno della differenza <a class="reference internal" href="#equation-eq-trigonometry-sum-diff">(17.2)</a>(1) per poter scrivere</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  f(\theta) 
+  &amp; = F \left[ \cos \varphi \cos \theta + \sin \phi \sin \theta \right] = \\ 
+  &amp; = F \cos ( \theta - \phi ) \ ,
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">avendo definito l’ampiezza della funzione armonica <span class="math notranslate nohighlight">\(F = \sqrt{A^2 + B^2}\)</span>.</p>
+</div>
+</details></div>
+<div class="section" id="id1">
+<h3><span class="section-number">17.6.2. </span><a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -806,6 +892,11 @@ Dimostrazione di <span class="math notranslate nohighlight">\(\ \cos p + \cos q 
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formule-di-somma-e-sottrazione">17.3. Formule di somma e sottrazione</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#werner">17.4. Werner</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prostaferesi">17.5. Prostaferesi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applicazioni-utili-e-frequenti">17.6. Applicazioni utili e frequenti</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#combinazione-lineare-di-seno-e-coseno-con-stesso-argomento">17.6.1. Combinazione lineare di seno e coseno con stesso argomento</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">17.6.2. </a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

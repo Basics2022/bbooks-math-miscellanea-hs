@@ -135,7 +135,24 @@ I_2
 
 ```
 
-<!--
 (multivariable-calculus:integrals:examples)=
 ## Esempi
--->
+
+(integral-eTox2)=
+### Integrale $\ \int_{x = \infty}^{+\infty} e^{-x^2} \, dx = \sqrt{\pi}$
+
+L'integrale $\int_{x} \, e^{-x^2} \, dx$ è un integrale frequente in alcuni ambiti delle scienze. Ad esempio, compare in statistica di frequente quando è conivolta una *distribuzione di probabilità* normale, con densità di probabilità $f(x;\mu,\sigma^2) = \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}$, che a sua volta è una delle distribuzioni di probabilità più frequenti.
+
+Pur non esistendo una forma analitica semplice di questo integrale, il valore dell'integrale definito può essere calcolato usando gli integrali multidimensionali e un opportuno cambio di coordinate tra coordinate cartesiane e polari. Si calcola il valore del quadrato dell'integrale desiderato,
+
+$$\begin{aligned}
+  I^2 
+  & = \left( \int_{x = \infty}^{+\infty} e^{-x^2} \, dx \right) \, \left( \int_{y = \infty}^{+\infty} e^{-y^2} \, dy \right) = \\
+  & = \int_{x = \infty}^{+\infty} \int_{y = \infty}^{+\infty}  e^{-(x^2+y^2)} \, dx \, dy  = \\
+  & = \int_{\theta = 0}^{2\pi} \int_{r = 0}^{+\infty}  e^{-r^2} \, r \,  dr \, d \theta  = \\
+  & = 2 \pi \, \frac{1}{2} \, \int_{\theta = 0}^{2\pi} \int_{r = 0}^{+\infty}  e^{-r^2} d r^2 = \\
+  & = \pi \, \left. \left( - e^{-r^2} \right)\right|_{r=0}^{+\infty} = \pi \ .
+\end{aligned}$$
+
+
+

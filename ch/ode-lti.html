@@ -65,6 +65,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/ode-lti';</script>
     <link rel="shortcut icon" href="../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../genindex.html" />
@@ -508,7 +510,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#risposta-in-frequenza-di-sistemi-del-primo-e-del-secondo-ordine">26.3.1. Risposta in frequenza di sistemi del primo e del secondo ordine</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#risposta-in-frequenza-di-sistemi-del-primo-e-del-secondo-ordine">26.3.1. Risposta in frequenza di sistemi del primo e del secondo ordine</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-del-primo-ordine">26.3.1.1. Sistemi del primo ordine</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-del-secondo-ordine">26.3.1.2. Sistemi del secondo ordine</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -523,9 +529,117 @@ document.write(`
   <div class="tex2jax_ignore mathjax_ignore section" id="sistemi-lineari-tempo-invarianti-lti">
 <span id="ode-lti"></span><h1><span class="section-number">26.3. </span>Sistemi lineari tempo invarianti (LTI)<a class="headerlink" href="#sistemi-lineari-tempo-invarianti-lti" title="Permalink to this heading">#</a></h1>
 <p>In molti ambiti delle scienze, i sistemi di interesse possono essere descritti come sistemi lineari tempo-invarianti, governati da <a class="reference internal" href="ode.html#ode-hs-types-linear-const"><span class="std std-ref">equazioni differenziali a coefficienti costanti</span></a>.</p>
-<p>Come visto nella sezione sulla <a class="reference internal" href="ode.html#ode-hs-types-linear-const-sol"><span class="std std-ref">soluzione generale</span></a> di queste equazioni, la soluzione può essere scritta come somma di una soluzione dell’equazione omogenea indipendente dalla forzante del sistema e di una soluzione particolare che dipendente dalla forzante del sistema.</p>
+<p>Come visto nella sezione sulla <a class="reference internal" href="ode.html#ode-hs-types-linear-const-sol"><span class="std std-ref">soluzione generale</span></a> di queste equazioni, la soluzione può essere scritta come somma di una soluzione dell’equazione omogenea indipendente dalla forzante del sistema e di una soluzione particolare che dipendente dalla forzante del sistema. <strong>Se il sistema è asintoticamente stabile</strong>, la soluzione dell’equazione omogenea tende a zero dopo un transitorio iniziale e rimane solo la risposta alla forzante.</p>
+<p><strong>todo-list:</strong> <a class="reference internal" href="todo.html#math-hs-todo-fourier"><span class="std std-ref"><strong>Analisi di Fourier</strong></span></a> E” possibile scrivere una funzione come somma di funzioni armoniche; è possibile scrivere una funzione come combinazione di funzioni armoniche. Aggiungere qualcosa a riguardo nel capitolo sulle funzioni trigonometriche e sui numeri complessi - magari nel discreto (DFT, per usare sommatorie ed evitare integrali)</p>
+<p>Nella sezione successiva viene analizzata la risposta dei sistemi di primo e di secondo ordine a <strong>forzanti armoniche</strong>.</p>
 <div class="section" id="risposta-in-frequenza-di-sistemi-del-primo-e-del-secondo-ordine">
 <span id="ode-lti-frequency-response"></span><h2><span class="section-number">26.3.1. </span>Risposta in frequenza di sistemi del primo e del secondo ordine<a class="headerlink" href="#risposta-in-frequenza-di-sistemi-del-primo-e-del-secondo-ordine" title="Permalink to this heading">#</a></h2>
+<div class="section" id="sistemi-del-primo-ordine">
+<h3><span class="section-number">26.3.1.1. </span>Sistemi del primo ordine<a class="headerlink" href="#sistemi-del-primo-ordine" title="Permalink to this heading">#</a></h3>
+<p>La risposta forzata del sistema asintoticamente stabile del primo ordine (con <span class="math notranslate nohighlight">\(c &gt; 0\)</span> e <span class="math notranslate nohighlight">\(k &gt; 0\)</span>)</p>
+<div class="math notranslate nohighlight">
+\[c \dot{x}(t) + k x(t) = F \cos(\Omega t) \ ,\]</div>
+<p>coincide con la sua soluzione particolare,</p>
+<div class="math notranslate nohighlight">
+\[x_p(t) = A \cos(\Omega t) + B \sin(\Omega t) \ .\]</div>
+<p>I coefficienti <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span> vengono calcolati, valutando la derivata dell’espressione generica della soluzione e</p>
+<div class="math notranslate nohighlight">
+\[\dot{x}_p(t) = -\Omega A \sin(\Omega t) + \Omega B \cos(\Omega t) \ ,\]</div>
+<p>inserendola dell’equazione differenziale insieme all’espressione della soluzione,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+ F \cos (\Omega t)
+ &amp; = c \dot{x}_p(t) + k x_p(t) = \\
+ &amp; = c \Omega \left( - A \sin(\Omega t) + B \cos(\Omega t)  \right) + k \left( A \cos(\Omega t) + B \sin(\Omega t) \right) = \\
+ &amp; = \cos(\Omega t) \left[ c \Omega B + k A \right] + \sin(\Omega t) \left[ - c \Omega A + k B \right]
+\end{aligned}\end{split}\]</div>
+<p>Affinché l’espressione proposta sia una soluzione dell’equazione differenziale, l’ultima relazione deve annullarsi per ogni valore della variabile indipendente <span class="math notranslate nohighlight">\(t\)</span>, e quindi devono annullarsi indipendendemente i coefficienti delle funzioni <span class="math notranslate nohighlight">\(\cos(\Omega t)\)</span> e <span class="math notranslate nohighlight">\(\sin (\Omega t)\)</span>. Si ottengono quindi un sistema algebrico di due equazioni nelle due incognite <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+  k A + c \Omega B &amp; = F \\
+ - c \Omega A + k B &amp; = 0 \\
+\end{aligned}
+\qquad \rightarrow \qquad
+\begin{aligned}
+  A = \frac{k}{k^2 + (c \Omega)^2} \, F \\
+  B = \frac{c\Omega}{k^2 + (c \Omega)^2} \, F  \\
+\end{aligned}
+\end{split}\]</div>
+<p>La soluzione è quindi una <a class="reference internal" href="trigonometry.html#math-hs-trigonometry-linear-combination"><span class="std std-ref">combinazione lineare delle funzioni <span class="math notranslate nohighlight">\(\cos\)</span> e <span class="math notranslate nohighlight">\(\sin\)</span> con lo stesso argomento</span></a>,</p>
+<div class="math notranslate nohighlight">
+\[x_p(t) = \left[  \frac{k}{k^2 + (c \Omega)^2} \cos(\Omega t) + \frac{c \Omega}{k^2 + (c \Omega)^2} \sin(\Omega t) \right] F \ ,\]</div>
+<p>che può essere quindi riscritta come</p>
+<div class="math notranslate nohighlight">
+\[x_p(t) = X \cos (\Omega t - \varphi) \ ,\]</div>
+<p>con l’ampiezza e il ritardo di fase</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  X(\Omega) &amp; = \frac{1}{\sqrt{k^2 + (c\Omega)^2}} \\
+  \varphi(\Omega) &amp; \ \text{ s.t.} \ \cos \varphi = \frac{k}{\sqrt{k^2 + (c\Omega)^2}} \quad , \quad \sin \varphi = \frac{c\Omega}{\sqrt{k^2 + (c\Omega)^2}}
+\end{aligned}\end{split}\]</div>
+<p><strong>Discussione.</strong> <strong>todo</strong></p>
+<ul class="simple">
+<li><p>andamenti asintotici per <span class="math notranslate nohighlight">\(\Omega \rightarrow 0, \ +\infty\)</span></p></li>
+<li><p>banda passante</p></li>
+<li><p>coefficienti non-dimensionali…</p></li>
+</ul>
+</div>
+<div class="section" id="sistemi-del-secondo-ordine">
+<h3><span class="section-number">26.3.1.2. </span>Sistemi del secondo ordine<a class="headerlink" href="#sistemi-del-secondo-ordine" title="Permalink to this heading">#</a></h3>
+<p>La risposta forzata del sistema asintoticamente stabile del secondo ordine (con <span class="math notranslate nohighlight">\(m &gt; 0\)</span>, <span class="math notranslate nohighlight">\(c &gt; 0\)</span> e <span class="math notranslate nohighlight">\(k &gt; 0\)</span>)</p>
+<div class="math notranslate nohighlight">
+\[m \ddot{x}(t) + c \dot{x}(t) + k x(t) = F \cos(\Omega t) \ ,\]</div>
+<p>coincide con la sua soluzione particolare,</p>
+<div class="math notranslate nohighlight">
+\[x_p(t) = A \cos(\Omega t) + B \sin(\Omega t) \ .\]</div>
+<p>I coefficienti <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span> vengono calcolati, valutando le derivate prima e seconda dell’espressione generica della soluzione e</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+   \dot{x}_p(t) &amp; = -\Omega A \sin(\Omega t) + \Omega B \cos(\Omega t) \\
+  \ddot{x}_p(t) &amp; = -\Omega^2 A \cos(\Omega t) - \Omega^2 B \sin(\Omega t) \\
+\end{aligned}\end{split}\]</div>
+<p>inserendola dell’equazione differenziale insieme all’espressione della soluzione,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+ F \cos (\Omega t)
+ &amp; = m \ddot{x}(t) + c \dot{x}_p(t) + k x_p(t) = \\
+ &amp; = m \Omega^2 \left( - A \cos(\Omega t) - B \sin(\Omega t)  \right) + c \Omega \left( - A \sin(\Omega t) + B \cos(\Omega t)  \right) + k \left( A \cos(\Omega t) + B \sin(\Omega t) \right) = \\
+ &amp; = \cos(\Omega t) \left[ - m \Omega^2 + A c \Omega B + k A \right] + \sin(\Omega t) \left[ - m \Omega^2 B - c \Omega A + k B \right]
+\end{aligned}\end{split}\]</div>
+<p>Affinché l’espressione proposta sia una soluzione dell’equazione differenziale, l’ultima relazione deve annullarsi per ogni valore della variabile indipendente <span class="math notranslate nohighlight">\(t\)</span>, e quindi devono annullarsi indipendendemente i coefficienti delle funzioni <span class="math notranslate nohighlight">\(\cos(\Omega t)\)</span> e <span class="math notranslate nohighlight">\(\sin (\Omega t)\)</span>. Si ottengono quindi un sistema algebrico di due equazioni nelle due incognite <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span> identico a quello risolto in precedenza per i sistemi del primo ordine (basta chiamare <span class="math notranslate nohighlight">\(\tilde{k} = k - m \Omega^2\)</span>),</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+  (k - m \Omega^2) A + c \Omega B &amp; = F \\
+ - c \Omega A + (k - m \Omega^2) B &amp; = 0 \\
+\end{cases}
+\qquad \rightarrow \qquad
+\begin{aligned}
+  A = \frac{k - m \Omega^2}{(k-m\Omega)^2 + (c \Omega)^2} \, F \\
+  B = \frac{c\Omega}{(k-m\Omega^2)^2 + (c \Omega)^2} \, F  \\
+\end{aligned}
+\end{split}\]</div>
+<p>La soluzione è quindi una <a class="reference internal" href="trigonometry.html#math-hs-trigonometry-linear-combination"><span class="std std-ref">combinazione lineare delle funzioni <span class="math notranslate nohighlight">\(\cos\)</span> e <span class="math notranslate nohighlight">\(\sin\)</span> con lo stesso argomento</span></a>,</p>
+<div class="math notranslate nohighlight">
+\[x_p(t) = \left[  \frac{k-m\Omega^2}{(k-m\Omega^2)^2 + (c \Omega)^2} \cos(\Omega t) + \frac{c \Omega}{(k-m\Omega^2)^2 + (c \Omega)^2} \sin(\Omega t) \right] F \ ,\]</div>
+<p>che può essere quindi riscritta come</p>
+<div class="math notranslate nohighlight">
+\[x_p(t) = X \cos (\Omega t - \varphi) \ ,\]</div>
+<p>con l’ampiezza e il ritardo di fase</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  X(\Omega) &amp; = \frac{1}{\sqrt{(k-m\Omega^2)^2 + (c\Omega)^2}} \\
+  \varphi(\Omega) &amp; \ \text{ s.t.} \ \cos \varphi = \frac{k-m\Omega^2}{\sqrt{(k-m\Omega^2)^2 + (c\Omega)^2}} \quad , \quad \sin \varphi = \frac{c\Omega}{\sqrt{(k-m\Omega^2)^2 + (c\Omega)^2}}
+\end{aligned}\end{split}\]</div>
+<p><strong>Discussione.</strong> <strong>todo</strong></p>
+<ul class="simple">
+<li><p>andamenti asintotici per <span class="math notranslate nohighlight">\(\Omega \rightarrow 0, \ +\infty\)</span></p></li>
+<li><p>banda passante</p></li>
+<li><p>risonanza e ruolo dello smorzamento</p></li>
+<li><p>coefficienti non-dimensionali: frequenza naturale e coefficiente di smorzamento</p></li>
+</ul>
+</div>
 </div>
 </div>
 
@@ -592,7 +706,11 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#risposta-in-frequenza-di-sistemi-del-primo-e-del-secondo-ordine">26.3.1. Risposta in frequenza di sistemi del primo e del secondo ordine</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#risposta-in-frequenza-di-sistemi-del-primo-e-del-secondo-ordine">26.3.1. Risposta in frequenza di sistemi del primo e del secondo ordine</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-del-primo-ordine">26.3.1.1. Sistemi del primo ordine</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-del-secondo-ordine">26.3.1.2. Sistemi del secondo ordine</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

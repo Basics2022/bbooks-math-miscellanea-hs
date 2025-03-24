@@ -265,18 +265,21 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="integrals.html">25. Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="integrals-table.html">25.6. Tavola degli integrali indefiniti più comuni</a></li>
-<li class="toctree-l2"><a class="reference internal" href="integrals-problems.html">25.7. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integrals-table.html">25.7. Tavola degli integrali indefiniti più comuni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integrals-problems.html">25.8. Problemi</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../ode.html">26. Equazioni differenziali ordinarie</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../multivariable-calculus.html">27. Introduzione al calcolo multi-variabile</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ode.html">26. Equazioni differenziali ordinarie</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ode-lti.html">26.3. Sistemi lineari tempo invarianti (LTI)</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../multivariable-calculus.html">27. Introduzione al calcolo multi-variabile</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../multivariable-calculus/limits.html">27.1. Limite di una funzione di più variabili</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../multivariable-calculus/derivatives.html">27.2. Derivate di funzioni di più variabili</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../multivariable-calculus/integrals.html">27.3. Integrali su domini multi-dimensionali</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../vector-calculus.html">28. Introduzione al calcolo vettoriale su spazi euclidei</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../vector-calculus.html">28. Introduzione al calcolo vettoriale su spazi euclidei</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../vector-calculus/geometry.html">28.1. Cenni di geometria differenziale</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../vector-calculus/integrals.html">28.2. Integrali in spazi euclidei</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../vector-calculus/derivatives.html">28.3. Operatori differenziali in spazi euclidei</a></li>
@@ -287,7 +290,10 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Statistica</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../statistics.html">29. Introduzione alla statistica</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../statistics.html">29. Introduzione alla statistica</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../statistics/combinatorics.html">29.1. Calcolo combinatorio</a></li>
+</ul>
+</li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Indice</span></p>
 <ul class="nav bd-sidenav">
@@ -700,7 +706,7 @@ Soluzioni<div class="sd-summary-down docutils">
 <div class="math notranslate nohighlight">
 \[\lim_{x \to 0} e^x - 1 = e^0 - 1 = 1 - 1 = 0 \ .\]</div>
 </div>
-</details><div class="exercise dropdown admonition" id="ch/infinitesimal_calculus/analysis-problems-exercise-2">
+</details><div class="exercise dropdown admonition" id="ex-limits-lateral">
 <span id="infinitesimal-calculus-analysis-problems-limits-lateral"></span>
 <p class="admonition-title"><span class="caption-number">Exercise 23.3 </span> (Limiti laterali)</p>
 <div class="section" id="exercise-content">
@@ -715,10 +721,28 @@ Soluzioni<div class="sd-summary-down docutils">
 <li><p><span class="math notranslate nohighlight">\(\lim_{x \to 0^-} x \cos\left(\frac{1}{x}\right)\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(\lim_{x \to \pi^+} \tan(x)\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(\lim_{x \to 0^-} e^{\frac{1}{x}}\)</span></p></li>
+<li><p>(a) <span class="math notranslate nohighlight">\(\lim_{x \to 0^-} \frac{\cos \theta}{\text{atan} \theta}\)</span>; (b) <span class="math notranslate nohighlight">\(\lim_{x \to 0^+} \frac{\cos \theta}{\text{atan} \theta} \qquad \text{R:}\ \text{(a)}: -\infty\text{; (b):} +\infty\)</span></p></li>
 </ol>
 </div>
 </div>
-<div class="exercise dropdown admonition" id="ch/infinitesimal_calculus/analysis-problems-exercise-3">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Soluzioni<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>11.</strong> I limiti</p>
+<div class="math notranslate nohighlight">
+\[\lim_{x \to 0^\mp} \frac{\cos x}{\text{atan} x} \, dx\]</div>
+<p class="sd-card-text">sono i limiti di un rapporto «<span class="math notranslate nohighlight">\(\frac{1}{0}\)</span>». La funzione arcotangente <span class="math notranslate nohighlight">\(\text{atan}(x)\)</span> è negativa per <span class="math notranslate nohighlight">\(x &lt; 0\)</span> e positiva per <span class="math notranslate nohighlight">\(x &gt; 0\)</span>. Quindi il limite sinistro vale «<span class="math notranslate nohighlight">\(\frac{1}{0^-} = - \infty\)</span>», mentre il limite destro vale «<span class="math notranslate nohighlight">\(\frac{1}{0^+} = + \infty\)</span>», o meno brutalemnte</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \lim_{x \to 0^-} \frac{\cos x}{\text{atan} x} = -\infty \qquad , \qquad
+  \lim_{x \to 0^+} \frac{\cos x}{\text{atan} x} = +\infty \\
+\end{aligned}\end{split}\]</div>
+</div>
+</details><div class="exercise dropdown admonition" id="ch/infinitesimal_calculus/analysis-problems-exercise-3">
 <span id="infinitesimal-calculus-analysis-problems-limits-infinite"></span>
 <p class="admonition-title"><span class="caption-number">Exercise 23.4 </span> (Limiti all’infinito)</p>
 <div class="section" id="exercise-content">
