@@ -1,7 +1,7 @@
 (math-hs:trigonometry)=
 # Trigonometria
 
-**todo:list** [**Analisi di Fourier**](math-hs:todo:list)=
+**todo:list** [**Analisi di Fourier**](math-hs:todo:fourier)
 
 ## Definizione delle funzioni trigonometriche e relazione fondamentale
 

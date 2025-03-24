@@ -76,15 +76,6 @@ const thebe_selector_output = ".output, .cell_output"
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-P4PD40TTJE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-P4PD40TTJE');
-</script>
-
   
   
   <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
@@ -178,6 +169,7 @@ const thebe_selector_output = ".output, .cell_output"
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduzione</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../program.html">Programma</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../todo.html"><span class="math notranslate nohighlight">\(\texttt{todo}\)</span></a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Insiemistica e logica</span></p>
 <ul class="nav bd-sidenav">
@@ -702,9 +694,11 @@ L’integrale viene calcolato usando le proprietà dellle funzioni trigonometric
    &amp; = 2 \sqrt{2} \left[ 0 - (-1) \right] = 1 \ ,
  \end{aligned}\end{split}\]</div>
 <p class="sd-card-text">avendo fatto un fatto un cambio di variabili - senza introdurre un nuovo simbolo, come può essere conveniente per sintesi in questi casi semplici - da <span class="math notranslate nohighlight">\(x\)</span> a <span class="math notranslate nohighlight">\(\frac{x}{2}\)</span>, solo riconoscendo che <span class="math notranslate nohighlight">\(dx = 2 d \frac{x}{2}\)</span>, per avere il differenziabile della stessa variabile che compare ad argomento della funzione coseno.</p>
-<p class="sd-card-text"><strong>6.</strong> Prima di procedere a occhi chiusi nel calcolo dell’integrale, osserviamo che la funzione è ben definita, al contrario di quello che avviene nell’esercizio {prf:ref}`` <strong>2.</strong>. Con il cambio di variabili <span class="math notranslate nohighlight">\(u = (-x)^{\frac{1}{6}}\)</span>, e quindi <span class="math notranslate nohighlight">\(du = \frac{1}{6}(-x)^{-\frac{5}{6}} \, dx\)</span>, <span class="math notranslate nohighlight">\(dx = (-x)^{\frac{5}{6}} \, du = u^5 \, du\)</span></p>
-<div class="math notranslate nohighlight">
-\[\int_{x=-\infty}^{0} \, e^{-\sqrt[6]{-x}} \, dx\]</div>
+<!--
+**6.** Prima di procedere a occhi chiusi nel calcolo dell'integrale, osserviamo che la funzione è ben definita, al contrario di quello che avviene nell'esercizio {prf:ref}`ex:integrals:definite:attention` **3.**. Con il cambio di variabili $u = (-x)^{\frac{1}{6}}$, e quindi $du = - \frac{1}{6}(-x)^{-\frac{5}{6}} \, dx$, $dx = - (-x)^{\frac{5}{6}} \, du = 6 \, u^5 \, du$, $x = \-infty:$ $u = +\infty$, $x = 0:$ $u = 0$,  ci si può ricondurre a un integrale simile a all'integrale **1.** di questo stesso esercizio,
+ 
+ $$\int_{x=-\infty}^{0} \, e^{-\sqrt[6]{-x}} \, dx = - 6 \int_{u=\infty}^{0} e^{-u} \, u^5 \, du $$
+-->
 <p class="sd-card-text"><strong>7.</strong></p>
 <p class="sd-card-text"><strong>8.</strong></p>
 <p class="sd-card-text"><strong>9.</strong></p>

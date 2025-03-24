@@ -76,15 +76,6 @@ const thebe_selector_output = ".output, .cell_output"
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-P4PD40TTJE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-P4PD40TTJE');
-</script>
-
   
   
   <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
@@ -178,6 +169,7 @@ const thebe_selector_output = ".output, .cell_output"
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduzione</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="program.html">Programma</a></li>
+<li class="toctree-l1"><a class="reference internal" href="todo.html"><span class="math notranslate nohighlight">\(\texttt{todo}\)</span></a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Insiemistica e logica</span></p>
 <ul class="nav bd-sidenav">
@@ -536,8 +528,8 @@ Argomenti del capitolo<div class="sd-summary-down docutils">
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><a class="reference internal" href="algebra/real-algebra.html#math-hs-algebra-real"><span class="std std-ref"><strong>Algebra sui numeri reali, <span class="math notranslate nohighlight">\(\mathbb{R}\)</span></strong></span></a>. Vengono richiamate le proprietà e le operazioni elementari sui numeri reali. Viene</p>
 <p class="sd-card-text"><a class="reference internal" href="algebra/real-n-algebra.html#math-hs-algebra-real-n"><span class="std std-ref"><strong>Algebra sulle <span class="math notranslate nohighlight">\(n\)</span>-uple di numeri reali, <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span></strong></span></a>. Vengono affrontati sistemi di equazioni e disequazioni a più incognite.</p>
-<p class="sd-card-text"><a class="reference internal" href="algebra/linear-algebra.html#math-hs-algebra-linear"><span class="std std-ref"><strong>Algebra lineare</strong></span></a>. Il capitolo si concentra sui sistemi di equazioni <strong>lineari</strong> a più incognite. Viene introdotto il <span class="xref myst">formalismo matriciale</span>, e discusse le operazioni e alcune proprietà delle matrici; le matrici vengono poi interpretate come funzioni lineari, come mostrato con esempi ed esercizi. Vengono mostrati diversi approcci alla <span class="xref myst">soluzione di sistemi lineari</span> e presentato il <span class="xref myst">teorema di Rouché-Capelli</span> che descrive le condizioni per l’esistenza e l’unicità di tali soluzioni.</p>
-<p class="sd-card-text"><a class="reference internal" href="algebra/vector-algebra.html#math-hs-algebra-vector"><span class="std std-ref"><strong>Algebra vettoriale</strong></span></a>. Viene definita la struttura algebrica dello <span class="xref myst">spazio vettoriale</span>, elencandone proprietà e presentandone alcuni esempi. Tra questi esempi, viene discusso in dettaglio uno spazio vettoriale euclideo, modello dello della «concezione quotidiana» dello spazio: vengono presentate le operazioni che permettono di</p>
+<p class="sd-card-text"><a class="reference internal" href="algebra/linear-algebra.html#math-hs-algebra-linear"><span class="std std-ref"><strong>Algebra lineare</strong></span></a>. Il capitolo si concentra sui sistemi di equazioni <strong>lineari</strong> a più incognite. Viene introdotto il <strong>formalismo matriciale</strong>, e discusse le operazioni e alcune proprietà delle matrici; le matrici vengono poi interpretate come funzioni lineari, come mostrato con esempi ed esercizi. Vengono mostrati diversi approcci alla <strong>soluzione di sistemi lineari</strong> e presentato il <strong>teorema di Rouché-Capelli</strong> che descrive le condizioni per l’esistenza e l’unicità di tali soluzioni.</p>
+<p class="sd-card-text"><a class="reference internal" href="algebra/vector-algebra.html#math-hs-algebra-vector"><span class="std std-ref"><strong>Algebra vettoriale</strong></span></a>. Viene definita la struttura algebrica dello <strong>spazio vettoriale</strong>, elencandone proprietà e presentandone alcuni esempi. Tra questi esempi, viene discusso in dettaglio uno spazio vettoriale euclideo, modello dello della «concezione quotidiana» dello spazio: vengono presentate le operazioni che permettono di</p>
 <p class="sd-card-text"><a class="reference internal" href="algebra/complex-algebra.html#math-hs-algebra-complex"><span class="std std-ref"><strong>Algebra sui numeri complessi, <span class="math notranslate nohighlight">\(\mathbb{C}\)</span></strong></span></a>.</p>
 <p class="sd-card-text"><a class="reference internal" href="algebra/set-algebra-link.html#math-hs-algebra-set-link"><span class="std std-ref"><strong>Algebra di insiemi</strong></span></a>.</p>
 </div>
@@ -552,7 +544,7 @@ Approccio<div class="sd-summary-down docutils">
 <ul class="simple">
 <li><p class="sd-card-text">gli <strong>oggetti matematici</strong> appartenenti a insiemi numerici (<span class="math notranslate nohighlight">\(\mathbb{R}\)</span>, <span class="math notranslate nohighlight">\(\mathbb{C}\)</span>,…) o non numerici, come insiemi, matrici; l’introduzione all’algebra vettoriale richiederà la definizione di una struttura algebrica fondamentale, lo <em>spazio vettoriale</em></p></li>
 <li><p class="sd-card-text">le <strong>operazioni</strong> e le relazioni su questi oggetti matematici e le loro proprietà</p></li>
-<li><p class="sd-card-text">il <strong>calcolo letterale</strong> che permette di <span class="xref myst">impostare i problemi</span> nella forma di <strong>equazioni</strong>, <strong>disequazioni</strong>, <strong>sistemi</strong>, senza dover fare affidamento a particolari valori numerici</p></li>
+<li><p class="sd-card-text">il <strong>calcolo letterale</strong> che permette di <strong>impostare i problemi</strong> (<strong>todo</strong> <em>aggiungere riferimenti ad approccio generale da seguire</em>) nella forma di <strong>equazioni</strong>, <strong>disequazioni</strong>, <strong>sistemi</strong>, senza dover fare affidamento a particolari valori numerici</p></li>
 <li><p class="sd-card-text">i metodi di <strong>soluzione</strong> di questi probelmi algebrici.</p></li>
 </ul>
 </div>

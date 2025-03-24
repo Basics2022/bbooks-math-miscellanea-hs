@@ -76,15 +76,6 @@ const thebe_selector_output = ".output, .cell_output"
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-P4PD40TTJE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-P4PD40TTJE');
-</script>
-
   
   
   <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
@@ -178,6 +169,7 @@ const thebe_selector_output = ".output, .cell_output"
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduzione</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../program.html">Programma</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../todo.html"><span class="math notranslate nohighlight">\(\texttt{todo}\)</span></a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Insiemistica e logica</span></p>
 <ul class="nav bd-sidenav">
@@ -613,13 +605,13 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[\frac{a_n x^n + a_{n-1} x^{n-1} + \dots a_0}{b_m x^m + b_{m-1} x^{m-1} + \dots b_0} \ .\]</div>
 <p>Per il <a class="reference internal" href="../precalculus/polynomials.html#math-hs-precalculus-polynomials-alg-fund-thm"><span class="std std-ref">teorema fondamentale dell’algebra</span></a>, ogni polinomio può essere scritto come prodotto di polinomi di primo o secondo ordine. Se i polinomi al numeratore e al denominatore della frazione algebrica non hanno fattori in comune, la frazione algebrica viene definita <strong>in forma semplice</strong>.</p>
-<div class="proof example dropdown admonition" id="example-0">
+<div class="proof example dropdown admonition" id="real-algebra-fraction-simple">
 <p class="admonition-title"><span class="caption-number">Example 4.1 </span> (Frazioni algebriche semplici e non semplici)</p>
 <div class="example-content section" id="proof-content">
 <p>La frazione <span class="math notranslate nohighlight">\(\frac{x^2-3x+2}{x^2+1} = \frac{(x-2)(x-1)}{x^2+1}\)</span> è in forma ridotta, mentre la frazione <span class="math notranslate nohighlight">\(\frac{x^2-3x+2}{x^2-1} = \frac{(x-2)(x-1)}{(x+1)(x-1)}\)</span> non è in forma ridotta e, <strong>per</strong> <span class="math notranslate nohighlight">\(x \ne 1\)</span> <strong>(!)</strong>, è uguale a <span class="math notranslate nohighlight">\(\frac{x-2}{x+1}\)</span>.</p>
 </div>
 </div><p>Una <strong>frazione propria</strong> ha il grado <span class="math notranslate nohighlight">\(n\)</span> del numeratore inferiore al grado <span class="math notranslate nohighlight">\(m\)</span> del denominatore. Una frazione non propria può essere scritta come un polinomio di grado <span class="math notranslate nohighlight">\(n-m\)</span> e una frazione propria</p>
-<div class="proof example dropdown admonition" id="example-1">
+<div class="proof example dropdown admonition" id="real-algebra-fraction-improper">
 <p class="admonition-title"><span class="caption-number">Example 4.2 </span> (Frazioni non proprie)</p>
 <div class="example-content section" id="proof-content">
 <p>La frazione <span class="math notranslate nohighlight">\(\frac{x^2 + 2x + 1}{x - 2}\)</span> può essere scritta «completando il quadrato» come</p>
@@ -628,7 +620,7 @@ document.write(`
 <p>con la semplificazione possibile per <span class="math notranslate nohighlight">\(x \ne 2\)</span>.</p>
 </div>
 </div><p>Se il denominatore è scomponibile come prodotto di polinomi, allora la frazione algebrica può essere scritta come <strong>somma di frazioni parziali</strong>. In alcune applicazioni, come il calcolo degli integrali, può essere conveniente scrivere una frazione come somma di frazioni parziali, poiché risulta più semplice trattare somme di frazioni con numeratore di grado 1 o 2, di frazioni con numeratore di grado qualsiasi.</p>
-<div class="proof example dropdown admonition" id="example-2">
+<div class="proof example dropdown admonition" id="real-algebra-fraction-sum-partial">
 <p class="admonition-title"><span class="caption-number">Example 4.3 </span> (Somma di frazioni parziali)</p>
 <div class="example-content section" id="proof-content">
 <p>La frazione <span class="math notranslate nohighlight">\(\frac{3x}{x^2-1}\)</span> può essere scritta come somma di frazioni parziali <span class="math notranslate nohighlight">\(\frac{3 x}{x^2-1} = \frac{3}{2} \frac{1}{x-1} + \frac{3}{2}\frac{1}{x+1}\)</span>, poiché</p>
@@ -744,11 +736,11 @@ Le soluzioni dell’equazione vengono cercate completando il quadrato,</p>
 <li><p><em>Aggiungere un’imamgine con il procedimento di trasformazione di variabili/incognite (e coordinate)</em></p></li>
 <li><p><em>Aggiungere un’immagine su alcune famiglie di curve, al variare dei parametri</em></p></li>
 </ul>
-<div class="proof example admonition" id="example-3">
-<p class="admonition-title"><span class="caption-number">Example 4.4 </span> (…)</p>
-<div class="example-content section" id="proof-content">
+<!--
+```{prf:example} ...
+```
+-->
 </div>
-</div></div>
 <div class="section" id="problemi-con-due-o-piu-incognite-sistemi-di-equazioni-e-disequazioni">
 <h2><span class="section-number">4.5. </span>Problemi con due o più incognite - sistemi di equazioni e disequazioni<a class="headerlink" href="#problemi-con-due-o-piu-incognite-sistemi-di-equazioni-e-disequazioni" title="Permalink to this heading">#</a></h2>
 <p>Un sistema di equazioni è un insieme di equazioni da risolvere simultaneamente. I sistemi di equazioni (e di disequazioni) consentono di introdurre l”<a class="reference internal" href="real-n-algebra.html#math-hs-algebra-real-n"><span class="std std-ref">algebra su <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span></span></a>, descritta nel capitolo successivo.</p>

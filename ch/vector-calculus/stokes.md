@@ -4,6 +4,8 @@
 (vector-calculus:stokes:gradient)=
 ## Teorema del gradiente
 ```{prf:theorem} Teorema del gradiente
+:label: thm-gradient
+
 Per campi scalari $f(\vec{r})$ sufficientemente regolari nel dominio $V \subseteq E^d$, $d=2:3$, vale
 
 $$\int_{V} \nabla f = \oint_{\partial V} f \hat{n} \ .$$ (eq:thm-gradient)
@@ -63,6 +65,8 @@ $$\begin{aligned}
 (vector-calculus:stokes:divergence)=
 ## Teorema della divergenza
 ```{prf:theorem} Teorema della divergenza
+:label: thm-divergence
+
 Per campi vettoriali $\vec{f}(\vec{r})$ sufficientemente regolari nel dominio $V \subseteq E^d$, $d=2:3$, vale
 
 $$\int_{V} \nabla \cdot \vec{f} = \oint_{\partial V} \vec{f} \cdot \hat{n} \ .$$ (eq:thm-divergence)
@@ -83,6 +87,8 @@ $$\int_{V} \nabla \cdot \vec{f} = \oint_{\partial V} \vec{f} \cdot \hat{n} \ .$$
 (vector-calculus:stokes:curl)=
 ## Teorema del rotore
 ```{prf:theorem} Teorema del rotore
+:label: thm-curl
+
 Per campi vettoriali $\vec{f}(\vec{r})$ sufficientemente regolari sulla superficie $S \subseteq E^3$, vale
 
 $$\int_{S} \nabla \times \vec{f} \cdot \hat{n} = \oint_{\partial S} \vec{f} \cdot \hat{t} \ .$$ (eq:thm-curl)

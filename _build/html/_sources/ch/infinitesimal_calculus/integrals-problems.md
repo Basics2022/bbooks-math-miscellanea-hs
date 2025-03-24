@@ -169,10 +169,11 @@ e potendo rimuovere il valore assoluto (necessario per la [definizione di radice
 
 avendo fatto un fatto un cambio di variabili - senza introdurre un nuovo simbolo, come può essere conveniente per sintesi in questi casi semplici - da $x$ a $\frac{x}{2}$, solo riconoscendo che $dx = 2 d \frac{x}{2}$, per avere il differenziabile della stessa variabile che compare ad argomento della funzione coseno.
 
-
-**6.** Prima di procedere a occhi chiusi nel calcolo dell'integrale, osserviamo che la funzione è ben definita, al contrario di quello che avviene nell'esercizio {prf:ref}`` **2.**. Con il cambio di variabili $u = (-x)^{\frac{1}{6}}$, e quindi $du = \frac{1}{6}(-x)^{-\frac{5}{6}} \, dx$, $dx = (-x)^{\frac{5}{6}} \, du = u^5 \, du$
+<!--
+**6.** Prima di procedere a occhi chiusi nel calcolo dell'integrale, osserviamo che la funzione è ben definita, al contrario di quello che avviene nell'esercizio {prf:ref}`ex:integrals:definite:attention` **3.**. Con il cambio di variabili $u = (-x)^{\frac{1}{6}}$, e quindi $du = - \frac{1}{6}(-x)^{-\frac{5}{6}} \, dx$, $dx = - (-x)^{\frac{5}{6}} \, du = 6 \, u^5 \, du$, $x = \-infty:$ $u = +\infty$, $x = 0:$ $u = 0$,  ci si può ricondurre a un integrale simile a all'integrale **1.** di questo stesso esercizio,
  
- $$\int_{x=-\infty}^{0} \, e^{-\sqrt[6]{-x}} \, dx$$
+ $$\int_{x=-\infty}^{0} \, e^{-\sqrt[6]{-x}} \, dx = - 6 \int_{u=\infty}^{0} e^{-u} \, u^5 \, du $$
+-->
 
 **7.**
 

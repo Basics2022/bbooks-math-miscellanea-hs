@@ -1,4 +1,4 @@
-(vector-calculus)=
+(vector-calculus:intro)=
 # Introduzione al calcolo vettoriale su spazi euclidei
 
 Questo capitolo è un'introduzione al calcolo vettoriale in spazi euclidei, estendendo gli strumenti del calcolo alle funzioni (scalari o vettoriali) definite in uno [spazio euclideo](geometry:analytic:euclidean-space), limitandosi al caso di $E^2$ ed $E^3$.

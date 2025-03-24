@@ -46,6 +46,8 @@ $$i := \sqrt{-1} \ ,$$
 **todo** *discutere la definizione, facendo riferimento alle* **potenze**
 
 ```{prf:definition} Numeri complessi - rappresentazione cartesiana
+:label: complex-cartesian
+
 L'insieme dei numeri complessi, indicato con $\mathbb{C}$, è l'insieme di quei numeri che possono essere scritti come 
 
 $$z = x + i y \ ,$$
@@ -64,6 +66,7 @@ con $x, \ y \in \mathbb{R}$. Il numero $x$ viene definito *parte reale*, il nume
 
 
 ```{prf:example} Prime operazioni con i numeri complessi
+:label: complex-first-operations
 :class: dropdown
 
 Dati i due numeri complessi $z_1 = 3 - 2 i$, $z_2 = -1 + 3 i$,

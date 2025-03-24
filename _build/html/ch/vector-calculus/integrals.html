@@ -76,15 +76,6 @@ const thebe_selector_output = ".output, .cell_output"
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-P4PD40TTJE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-P4PD40TTJE');
-</script>
-
   
   
   <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
@@ -178,6 +169,7 @@ const thebe_selector_output = ".output, .cell_output"
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduzione</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../program.html">Programma</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../todo.html"><span class="math notranslate nohighlight">\(\texttt{todo}\)</span></a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Insiemistica e logica</span></p>
 <ul class="nav bd-sidenav">
@@ -553,7 +545,7 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[M = \int_{\vec{r} \in \gamma} m (\vec{r}) \, |d \vec{r}| = \int_{t = t_0}^{t_1} m (\vec{r}_{\gamma}(t)) \, |\vec{r}'_{\gamma}(t)| \, dt\]</div>
 <p>Questo tipo di integrale può essere utilizzato per calcolare la lunghezza di una curva o alcune proprietà additive della curva, di cui la funzione integranda è una densità lineare.</p>
-<div class="proof example dropdown admonition" id="example-0">
+<div class="proof example dropdown admonition" id="vector-integrals-ex-circle-quarter-length">
 <p class="admonition-title"><span class="caption-number">Example 28.14 </span> (Lunghezza di un quarto di cerchio)</p>
 <div class="example-content section" id="proof-content">
 <p>Un arco di circonferenza corrispondente a un quarto di essa può essere rappresentato in forma parametrica come,</p>
@@ -569,11 +561,11 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[L = \int{\vec{r}\in \gamma} |d \vec{r}| =\int_{t = 0}^{\frac{\pi}{2}} \left|\vec{r}'(t)\right| \, dt =  \int_{t = 0}^{\frac{\pi}{2}} R \, dt = \frac{\pi}{2} \, R \ .\]</div>
 </div>
-</div><div class="proof example dropdown admonition" id="example-1">
+</div><div class="proof example dropdown admonition" id="vector-integrals-ex-circle-quarter-mass">
 <p class="admonition-title"><span class="caption-number">Example 28.15 </span> (Massa di un quarto di cerchio di densità non uniforme)</p>
 <div class="example-content section" id="proof-content">
 </div>
-</div><div class="proof example dropdown admonition" id="example-2">
+</div><div class="proof example dropdown admonition" id="vector-integrals-ex-helix-length">
 <p class="admonition-title"><span class="caption-number">Example 28.16 </span> (Lunghezza di un’elica)</p>
 <div class="example-content section" id="proof-content">
 <p>Un’elica di raggio <span class="math notranslate nohighlight">\(R\)</span> e passo <span class="math notranslate nohighlight">\(L\)</span> composta da 2 avvolgimenti può essere rappresentata in forma parametrica come</p>
@@ -589,7 +581,7 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[L = \int{\vec{r}\in \gamma} |d \vec{r}| =\int_{t = 0}^{4 \pi} \left|\vec{r}'(t)\right| \, dt =  \int_{t = 0}^{4 \pi}  \sqrt{ R^2 + \left(\frac{L}{2 \pi}\right)^2 } \,  dt = 4 \pi R^2 \sqrt{1 + \left( \frac{L}{2 \pi R}\right)^2}  \ . \]</div>
 </div>
-</div><div class="proof example dropdown admonition" id="example-3">
+</div><div class="proof example dropdown admonition" id="vector-integrals-ex-helix-mass">
 <p class="admonition-title"><span class="caption-number">Example 28.17 </span> (Massa di un’elica con densità non uniforme)</p>
 <div class="example-content section" id="proof-content">
 <p>Si vuole calcolare la massa dell’elica dell’esempio precedente, conoscendo che la sua densità lineare di massa ha una dipendenza di primo grado dal parametro <span class="math notranslate nohighlight">\(t\)</span> nota,</p>
@@ -622,7 +614,7 @@ document.write(`
 <p><strong>todo</strong> <em>indipendente dalla parametrizzazione della curva</em></p>
 <div class="section" id="circuitazione">
 <span id="vector-calculus-integrals-line-circuitation"></span><h4><span class="section-number">28.2.1.2.1. </span>Circuitazione<a class="headerlink" href="#circuitazione" title="Permalink to this heading">#</a></h4>
-<div class="proof definition admonition" id="definition-4">
+<div class="proof definition admonition" id="vector-calculus:circuitation">
 <p class="admonition-title"><span class="caption-number">Definition 28.5 </span> (Circuitazione)</p>
 <div class="definition-content section" id="proof-content">
 <p>L’integrale del lavoro <a class="reference internal" href="#equation-eq-integral-work">(28.1)</a> lungo una curva chiusa <span class="math notranslate nohighlight">\(\gamma\)</span> viene definito circuitazione del campo <span class="math notranslate nohighlight">\(\vec{f}\)</span> lungo la linea <span class="math notranslate nohighlight">\(\gamma\)</span>, e viene indicato comunemente con</p>
@@ -630,7 +622,7 @@ document.write(`
 \[\Gamma_{\gamma}(\vec{f}) := \oint_{\gamma} \vec{f} \cdot \hat{t} \ ,\]</div>
 <p>dove il circolino sul segno di integrale vuole ricordare che la linea <span class="math notranslate nohighlight">\(\gamma\)</span> è una linea chiusa.</p>
 </div>
-</div><div class="proof example admonition" id="example-5">
+</div><div class="proof example admonition" id="vector-calculus-ex-circuitation">
 <p class="admonition-title"><span class="caption-number">Example 28.18 </span></p>
 <div class="example-content section" id="proof-content">
 </div>
@@ -642,7 +634,7 @@ document.write(`
 <ul class="simple">
 <li><p>campi conservativi in un dominio hanno circuitazione nulla lungo ogni percorso appartenente al dominio</p></li>
 </ul>
-<div class="proof example admonition" id="example-6">
+<div class="proof example admonition" id="vector-calculus-ex-conservative-field">
 <p class="admonition-title"><span class="caption-number">Example 28.19 </span></p>
 <div class="example-content section" id="proof-content">
 </div>

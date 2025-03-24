@@ -24,6 +24,7 @@ Questo tipo di integrale può essere utilizzato per calcolare la lunghezza di un
 
 
 ```{prf:example} Lunghezza di un quarto di cerchio
+:label: vector-integrals-ex-circle-quarter-length
 :class: dropdown
 
 Un arco di circonferenza corrispondente a un quarto di essa può essere rappresentato in forma parametrica come,
@@ -45,10 +46,12 @@ $$L = \int{\vec{r}\in \gamma} |d \vec{r}| =\int_{t = 0}^{\frac{\pi}{2}} \left|\v
 ```
 
 ```{prf:example} Massa di un quarto di cerchio di densità non uniforme
+:label: vector-integrals-ex-circle-quarter-mass
 :class: dropdown
 ```
 
 ```{prf:example} Lunghezza di un'elica
+:label: vector-integrals-ex-helix-length
 :class: dropdown
 
 Un'elica di raggio $R$ e passo $L$ composta da 2 avvolgimenti può essere rappresentata in forma parametrica come
@@ -70,6 +73,7 @@ $$L = \int{\vec{r}\in \gamma} |d \vec{r}| =\int_{t = 0}^{4 \pi} \left|\vec{r}'(t
 ```
 
 ```{prf:example} Massa di un'elica con densità non uniforme
+:label: vector-integrals-ex-helix-mass
 :class: dropdown
 
 Si vuole calcolare la massa dell'elica dell'esempio precedente, conoscendo che la sua densità lineare di massa ha una dipendenza di primo grado dal parametro $t$ nota,
@@ -112,6 +116,8 @@ $$\begin{aligned}
 #### Circuitazione
 
 ```{prf:definition} Circuitazione
+:label: vector-calculus:circuitation
+
 L'integrale del lavoro {eq}`eq:integral:work` lungo una curva chiusa $\gamma$ viene definito circuitazione del campo $\vec{f}$ lungo la linea $\gamma$, e viene indicato comunemente con
 
 $$\Gamma_{\gamma}(\vec{f}) := \oint_{\gamma} \vec{f} \cdot \hat{t} \ ,$$
@@ -122,6 +128,7 @@ dove il circolino sul segno di integrale vuole ricordare che la linea $\gamma$ �
 
 
 ```{prf:example}
+:label: vector-calculus-ex-circuitation
 
 ```
 
@@ -133,8 +140,10 @@ In alcuni casi particolari, il valore di questo integrale non dipende dalla curv
 - campi conservativi in un dominio hanno circuitazione nulla lungo ogni percorso appartenente al dominio
 
 ```{prf:example}
+:label: vector-calculus-ex-conservative-field
 
 ```
+
 
 (vector-calculus:integrals:surface)=
 ## Integrali di superficie

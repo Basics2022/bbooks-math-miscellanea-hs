@@ -155,7 +155,7 @@ Mentre non viene fornita una dimostrazione del teorema, si discute la necessità
 
     $$f(x) = \begin{cases} |x| & x \ne = 0 \\ 0.5 & x = 0 \end{cases} \ ,$$
 
-    assume valori massimi in $I$, in corrispondenza degli estremi dell'intervallo, ma non ha minimo. Infatti il limite inferiore della funzione nell'intervallo è $\liminf f(x) = 0$, ma non esiste alcun valore $x \in I$ tale che $f(x) = 0$, proprio per come è stata costruita la funzione con una [discontinuità](infinitesimal-calculus:continuou-fun:disc) di tipo 1 - salto in $x = 0$,
+    assume valori massimi in $I$, in corrispondenza degli estremi dell'intervallo, ma non ha minimo. Infatti il limite inferiore della funzione nell'intervallo è $\liminf f(x) = 0$, ma non esiste alcun valore $x \in I$ tale che $f(x) = 0$, proprio per come è stata costruita la funzione con una [discontinuità](infinitesimal-calculus:continuous-fun:disc) di tipo 1 - salto in $x = 0$,
 
 2. la funzione continua $f(x) = e^{-x^2}$ definita sull'intervallo non limitato superiormente $I = [-2, +\infty)$ ha massimo nell'intervallo in corrispondenza di $x = 0$, $\max_{x \in I} f(x) = 1$, ma non ha minimo poiché $\liminf f(x) = 0$ ma non esiste nessun valore $x \in I$ tale che $f(x) = 0$
 

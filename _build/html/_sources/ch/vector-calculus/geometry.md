@@ -7,6 +7,7 @@
 Uno spazio può essere descritto tramite l'uso di un sistema di coordinate, composto da una $n$-upla di coordinate indipendenti $\left( q^i \right)_{i = 1:n}$.
 
 ```{prf:definition} Parametrizzazione regolare
+:label: def-parametrization-regular
 
 Una parametrizzazione di una regione dello spazio spazio è **regolare** se è una funzione biunivoca,
 
@@ -21,6 +22,7 @@ tra i punti $P$ dello spazio e i valori delle coordinate $\left( q^i \right)$. I
 - *Può essere necessario/utile definire più parametrizzazioni che coprono diverse zone del dominio...*
 
 ```{prf:example} Spazio $E^2$: coordinate cartesiane
+:label: def-cartesian-coords-e2
 :class: dropdown
 
 Dopo aver scelto il punto $O$ come origine, è possibile utilizzare un sistema di coordinate cartesiane $(q^1, q^2) = (x,y)$ e rappresentare un generico punto $P$ dello spazio come
@@ -30,6 +32,7 @@ $$\vec{r} = P - O = x \, \hat{x} + y \, \hat{y} \ .$$
 ```
 
 ```{prf:example} Spazio $E^2$: coordinate polari
+:label: def-polar-coords-e2
 :class: dropdown
 
 Utilizzando un sistema di coordinate polari con la stessa origine $O$ di un sistema di coordinate cartesiane, e l'asse di riferimento per l'angolo $\theta$ coincidente con l'asse $x$ del sistema di coordinate cartesiane, è possibile rappresentare le coordinate cartesiane in funzione delle coordinate polari $(q^1, q^2) = (r, \theta)$
@@ -49,6 +52,7 @@ $$\vec{r} = r \, \cos \theta \, \hat{x} + r \, \sin \theta \, \hat{y} \ .$$
 
 
 ```{prf:example} Spazio $E^3$: coordinate cartesiane
+:label: def-cartesinan-coords-e3
 :class: dropdown
 
 Dopo aver scelto il punto $O$ come origine, è possibile utilizzare un sistema di coordinate cartesiane $(q^1, q^2, q^3) = (x,y,z)$ e rappresentare un generico punto $P$ dello spazio come
@@ -58,6 +62,7 @@ $$\vec{r} = P - O = x \, \hat{x} + y \, \hat{y} + z \, \hat{z} \ .$$
 ```
 
 ```{prf:example} Spazio $E^3$: coordinate cilindriche
+:label: def-cylindrical-coords-e3
 :class: dropdown
 
 Utilizzando un sistema di coordinate polari con la stessa origine $O$ di un sistema di coordinate cartesiane, gli assi $z$ coincidenti, e l'asse di riferimento per l'angolo $\theta$ coincidente con l'asse $x$ del sistema di coordinate cartesiane, è possibile rappresentare le coordinate cartesiane in funzione delle coordinate polari $(q^1, q^2, q^3) = (r, \theta, z)$
@@ -75,6 +80,7 @@ $$\vec{r} = r \, \cos \theta \, \hat{x} + r \, \sin \theta \, \hat{y} + z \, \ha
 ```
 
 ```{prf:example} Spazio $E^3$: coordinate sferiche
+:label: def-spherical-coords-e3
 :class: dropdown
 
 Utilizzando un sistema di coordinate polari con la stessa origine $O$ di un sistema di coordinate cartesiane, gli assi $z$ coincidenti, e l'asse di riferimento per l'angolo $\theta$ coincidente con l'asse $x$ del sistema di coordinate cartesiane, è possibile rappresentare le coordinate cartesiane in funzione delle coordinate polari $(q^1, q^2, q^3) = (R, \phi, \theta)$
@@ -107,6 +113,7 @@ e per spazi 3-dimensionali
 $$\vec{r} = P - O = x \left(q^1, q^2, q^3\right) \hat{x} + y\left(q^1, q^2, q^3 \right) \hat{y} + z\left( q^1, q^2, q^3 \right) \hat{z} \ .$$
 
 ```{prf:definition} Base naturale
+:label: def-natural-base
 
 In ogni punto dello spazio, è possibile definire i vettori della base naturale indotta da una particolare scelta del sistema di coordinate $\left( q^i \right)_{i:n}$ come le [derivata parziali](multivariable-calculus:derivatives:partial) del punto $P$ rispetto alle coordinate $q^i$. I vettori della base naturale $\left\{\vec{b}_i \right\}_{i=1:n}$ indotta dalle coordinate $\left( q^i \right)_{i=1:n}$ sono quindi i vettori
 
@@ -121,6 +128,7 @@ In generale, come sarà chiaro dagli esempi, i vettori di una base naturale:
 - non sono omogenei nelle dimensioni, né adimensionali.
 
 ```{prf:definition} Base fisica
+:label: def-physical-base
 
 Nel caso in cui la base naturale sia ortogonale, è possibile definire una **base fisica** - orto-normale con vettori unitari e adimensionali - tramite un semplice processo di normalizzazione dei vettori della base,
 
@@ -131,6 +139,7 @@ $$\hat{b}_i := \frac{\vec{b}_i}{|\vec{b}_i|} \ .$$
 La definizione di una base fisica, quando possibile, può rendere la rappresentazione di un vettore o di un campo vettoriale più "ordinata", avendo le componenti del vettore le stesse dimensioni fisiche della grandezza che viene rappresentata, poiché i vettori della base fisica sono adimensionali e di lunghezza unitaria -  e quindi contenenti unicamente l'informazione vettoriale sulla direzione.
 
 ```{prf:example} Spazio $E^2$: coordinate cartesiane
+:label: def-cartesian-coords-e2-base
 :class: dropdown
 
 I vettori della base naturale sono
@@ -145,6 +154,7 @@ Ricordando le proprietà dei vettori di una base cartesiana **todo** *link*, è 
 ```
 
 ```{prf:example} Spazio $E^2$: coordinate polari
+:label: def-polar-coords-e2-base
 :class: dropdown
 
 I vettori della base naturale sono
@@ -164,6 +174,7 @@ $$\begin{cases}
 ```
 
 ```{prf:example} Spazio $E^3$: coordinate cartesiane
+:label: def-cartesian-coords-e3-base
 :class: dropdown
 
 I vettori della base naturale sono
@@ -180,6 +191,7 @@ Ricordando le proprietà dei vettori di una base cartesiana **todo** *link*, è 
 ```
 
 ```{prf:example} Spazio $E^3$: coordinate cilindriche
+:label: def-cylindrical-coords-e3-base
 :class: dropdown
 
 I vettori della base naturale sono
@@ -200,6 +212,7 @@ $$\begin{cases}
 ```
 
 ```{prf:example} Spazio $E^3$: coordinate sferiche
+:label: def-spherical-coords-e3-base
 :class: dropdown
 
 I vettori della base naturale sono
@@ -347,6 +360,7 @@ $$\begin{aligned}
 -->
 
 ```{prf:example} Elemento di volume in coordinate cartesiane
+:label: volume-cartesian-coords
 :class: dropdown
 
 $$\vec{r} = x \hat{x} + y \hat{y} + z \hat{z}$$
@@ -361,6 +375,7 @@ $$\begin{aligned}
 
 ```
 ```{prf:example} Elemento di volume in coordinate cilindriche
+:label: volume-cylindrical-coords
 :class: dropdown
 
 $$\begin{aligned}
@@ -379,6 +394,7 @@ $$\begin{aligned}
 
 ```
 ```{prf:example} Elemento di volume in coordinate sferiche
+:label: volume-spherical-coords
 :class: dropdown
 
 $$\begin{aligned}

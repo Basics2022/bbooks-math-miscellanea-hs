@@ -285,6 +285,7 @@ Vengono definiti integrali impropri alcune famiglie di integrali definiti, come 
 
 
 ```{prf:example} $\int_{0}^{b} \frac{1}{x} \, dx$
+:label: integrals-fundamental-1x
 :class: dropdown
 
 $$
@@ -296,6 +297,7 @@ poiché $\lim_{a \rightarrow 0^+} \ln a = -\infty$.
 ```
 
 ```{prf:example} $\int_{0}^{b} \frac{1}{x^n} \, dx$
+:label: integrals-fundamental-1xn
 :class: dropdown
 
 Se $n>0$ e $n \ne 1$,
@@ -311,6 +313,7 @@ $$\begin{aligned}
 ```
 
 ```{prf:example} $\int_{a}^{+\infty} \frac{1}{n^n}$
+:label: integrals-fundamental-1xn-limit
 ...
 ```
 
@@ -359,6 +362,7 @@ Consigli:
 ```
 
 ```{prf:example} Esempio di integrazione per parti
+:label: integrals-methods-ixp
 :class: dropdown
 
 Si vuole calcolare l'integrale 
@@ -410,6 +414,7 @@ $$\begin{aligned}
 \end{aligned}$$
 
 ```{prf:example} $\displaystyle \int \sqrt{a^2 - x^2} \,  dx$
+:label: integrals-methods-sub-1
 :class: dropdown
 
 L'integrale
@@ -437,6 +442,7 @@ $$\int \sqrt{a^2 - x^2} \, dx = \frac{a^2}{2} \left[ \text{arcsin}\left( \frac{x
 ```
 
 ```{prf:example} $ \displaystyle \int \sqrt{a^2 + x^2} \,  dx$
+:label: integrals-methods-sub-2
 :class: dropdown
 
 L'integrale
@@ -487,6 +493,7 @@ $$\begin{aligned}
 ```
 
 ```{prf:example} $\displaystyle \int \sqrt{x^2 - a^2} \,  dx$
+:label: integrals-methods-3
 :class: dropdown
 
 L'integrale
@@ -538,6 +545,7 @@ $$\begin{aligned}
 ```
 
 ```{prf:example} $\displaystyle \int \frac{1}{\sqrt{a^2 - x^2}} \,  dx$
+:label: integrals-methods-sub-4
 :class: dropdown
 
 L'integrale
@@ -557,6 +565,7 @@ $$\begin{aligned}
 ```
 
 ```{prf:example} $\displaystyle \int \frac{1}{\sqrt{a^2 + x^2}} \,  dx$
+:label: integrals-methods-sub-5
 :class: dropdown
 
 L'integrale
@@ -584,6 +593,7 @@ $$\begin{aligned}
 ```
 
 ```{prf:example} $\displaystyle \int \frac{1}{\sqrt{x^2 - a^2}} \,  dx$
+:label: integrals-methods-sub-6
 :class: dropdown
 
 L'integrale
@@ -621,6 +631,7 @@ $$\begin{aligned}
 \end{aligned}$$
 
 ```{prf:example} $\displaystyle \int \sqrt[n]{ax+b} \, dx $
+:label: integrals-methods-sub-7
 :class: dropdown
 
 **Metodo 0.**
@@ -650,6 +661,7 @@ $$\begin{aligned}
 ```
 
 ```{prf:example} $\displaystyle \int \sqrt{a + bx + x^2} \, dx $
+:label: integrals-methods-sub-8
 :class: dropdown
 
 **Metodo 0.** Con completamento del quadrato
@@ -668,6 +680,7 @@ ci si può riportare agli integrali della forma $\displaystyle \int \sqrt{y^2 - 
 ```
 
 ```{prf:example} $\displaystyle \int \sqrt{a + bx - x^2} \, dx $
+:label: integrals-methods-sub-9
 :class: dropdown
 
 **Metodo 0.** Con completamento del quadrato
@@ -693,6 +706,7 @@ $$z = \tan\left( \frac{x}{2} \right) \ ,$$
 risulta utile a trasformare un'integranda dove compaiono funzioni trigonometriche in un'integranda razionale.
 
 ```{prf:example} Razionalizzazione con cambio di variabili $z = \tan\left( \frac{x}{2} \right)$.
+:label: integrals-methods-sub-10
 :class: dropdown
 
 Usando la definizione della tangente 
@@ -720,6 +734,7 @@ $$\tan x = \frac{2 z}{1 - z^2}$$
 **todo** *descrivere meglio il metodo*
 
 ```{prf:example} Integrazione con frazioni parziali
+:label: integrals-methods-partial-fraction-1
 :class: dropdown
 
 $$\begin{aligned}
@@ -733,6 +748,7 @@ $$\begin{aligned}
 ```
 
 ```{prf:example} Integrazione con frazioni parziali
+:label: integrals-methods-partial-fraction-2
 :class: dropdown
 
 $$\begin{aligned}

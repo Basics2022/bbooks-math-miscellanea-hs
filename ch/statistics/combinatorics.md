@@ -76,6 +76,7 @@ $$\begin{aligned}
 
 
 ```{prf:example} Combinazioni con ripetizione di $k=3$ elementi di un insieme di $n=2$ elementi
+:label: ex-combinations-with-rep-1
 :class: dropdown
 Il numero di combinazioni con ripetizione di $k=3$ elementi dell'insieme $I = \left\{ 1, 2 \right\}$ di $n=2$ elementi è
 
@@ -92,6 +93,7 @@ $$\begin{aligned}
 ```
 
 ```{prf:example} Combinazione con ripetizioni di $k=2$ elementi di un insieme di $n=3$ elementi
+:label: ex-combinations-with-rep-2
 :class: dropdown
 Il numero di combinazioni con ripetizione di $k=2$ elementi dell'insieme $I = \left\{ 1, 2, 3 \right\}$ di $n=3$ elementi è
 
@@ -110,6 +112,7 @@ $$\begin{aligned}
 ```
 
 ```{prf:example} Caramelle uguali a bambini diversi
+:label: ex-combinations-with-rep-3
 In quanti modi si possono distribuire $5$ caramelle indistinguibili a $3$ bambini distinguibili? Il numero è uguale al numero di combinazioni con ripetizione di $k=5$ elementi di un gruppo di $n=3$ elementi, e cioè
 
 $$C'_{3,5} = \frac{7!}{2! \cdot 5!} = \frac{6 \cdot 7}{2} = 21 \ .$$
@@ -117,6 +120,7 @@ $$C'_{3,5} = \frac{7!}{2! \cdot 5!} = \frac{6 \cdot 7}{2} = 21 \ .$$
 ```
 
 ```{prf:example} Bose-Einstein
+:label: ex-combinations-with-rep-bose-einstein
 ...
 
 

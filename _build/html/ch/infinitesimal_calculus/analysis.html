@@ -76,15 +76,6 @@ const thebe_selector_output = ".output, .cell_output"
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-P4PD40TTJE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-P4PD40TTJE');
-</script>
-
   
   
   <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
@@ -178,6 +169,7 @@ const thebe_selector_output = ".output, .cell_output"
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduzione</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../program.html">Programma</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../todo.html"><span class="math notranslate nohighlight">\(\texttt{todo}\)</span></a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Insiemistica e logica</span></p>
 <ul class="nav bd-sidenav">
@@ -707,7 +699,7 @@ Necessità delle ipotesi<div class="sd-summary-down docutils">
 <li><p class="sd-card-text">la funzione non continua definita in <span class="math notranslate nohighlight">\(I = [-1,1]\)</span></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}f(x) = \begin{cases} |x| &amp; x \ne = 0 \\ 0.5 &amp; x = 0 \end{cases} \ ,\end{split}\]</div>
-<p class="sd-card-text">assume valori massimi in <span class="math notranslate nohighlight">\(I\)</span>, in corrispondenza degli estremi dell’intervallo, ma non ha minimo. Infatti il limite inferiore della funzione nell’intervallo è <span class="math notranslate nohighlight">\(\liminf f(x) = 0\)</span>, ma non esiste alcun valore <span class="math notranslate nohighlight">\(x \in I\)</span> tale che <span class="math notranslate nohighlight">\(f(x) = 0\)</span>, proprio per come è stata costruita la funzione con una <span class="xref myst">discontinuità</span> di tipo 1 - salto in <span class="math notranslate nohighlight">\(x = 0\)</span>,</p>
+<p class="sd-card-text">assume valori massimi in <span class="math notranslate nohighlight">\(I\)</span>, in corrispondenza degli estremi dell’intervallo, ma non ha minimo. Infatti il limite inferiore della funzione nell’intervallo è <span class="math notranslate nohighlight">\(\liminf f(x) = 0\)</span>, ma non esiste alcun valore <span class="math notranslate nohighlight">\(x \in I\)</span> tale che <span class="math notranslate nohighlight">\(f(x) = 0\)</span>, proprio per come è stata costruita la funzione con una <a class="reference internal" href="#infinitesimal-calculus-continuous-fun-disc"><span class="std std-ref">discontinuità</span></a> di tipo 1 - salto in <span class="math notranslate nohighlight">\(x = 0\)</span>,</p>
 </li>
 <li><p class="sd-card-text">la funzione continua <span class="math notranslate nohighlight">\(f(x) = e^{-x^2}\)</span> definita sull’intervallo non limitato superiormente <span class="math notranslate nohighlight">\(I = [-2, +\infty)\)</span> ha massimo nell’intervallo in corrispondenza di <span class="math notranslate nohighlight">\(x = 0\)</span>, <span class="math notranslate nohighlight">\(\max_{x \in I} f(x) = 1\)</span>, ma non ha minimo poiché <span class="math notranslate nohighlight">\(\liminf f(x) = 0\)</span> ma non esiste nessun valore <span class="math notranslate nohighlight">\(x \in I\)</span> tale che <span class="math notranslate nohighlight">\(f(x) = 0\)</span></p></li>
 <li><p class="sd-card-text">la funzione continua <span class="math notranslate nohighlight">\(f(x) = x^2\)</span> definita su <span class="math notranslate nohighlight">\(I = (1,2)\)</span> non ammette né massimo, né minimo, poiché il limite inferiore e superiore della funzione si verificano in corrispondenza degli estremi (non inclusi) dell’intervallo aperto. Più esplicitamente, <span class="math notranslate nohighlight">\(\limsup_{x\in I} f(x) = 4\)</span> ma <span class="math notranslate nohighlight">\(\nexists x \in I, \ f(x) = 4\)</span>; <span class="math notranslate nohighlight">\(\liminf_{x\in I} f(x) = 1\)</span> ma <span class="math notranslate nohighlight">\(\nexists x \in I, \ f(x) = 1\)</span>;</p></li>

@@ -10,6 +10,7 @@ parts:
   numbered: false
   chapters:
   - file: ch/program
+  - file: ch/todo
 #   sections:
 #   - file: ch/program/current-guidelines-italy
 #   - file: ch/program/delta

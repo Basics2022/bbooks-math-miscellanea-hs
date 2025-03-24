@@ -76,15 +76,6 @@ const thebe_selector_output = ".output, .cell_output"
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-P4PD40TTJE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-P4PD40TTJE');
-</script>
-
   
   
   <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
@@ -178,6 +169,7 @@ const thebe_selector_output = ".output, .cell_output"
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduzione</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../program.html">Programma</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../todo.html"><span class="math notranslate nohighlight">\(\texttt{todo}\)</span></a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Insiemistica e logica</span></p>
 <ul class="nav bd-sidenav">
@@ -605,7 +597,7 @@ document.write(`
   &amp; \dots \\
   &amp; || \ast    \ast   \ast    \ast    &amp;&amp; \left\{  3,3,3,3 \right\} \\
 \end{aligned}\end{split}\]</div>
-<div class="proof example dropdown admonition" id="example-0">
+<div class="proof example dropdown admonition" id="ex-combinations-with-rep-1">
 <p class="admonition-title"><span class="caption-number">Example 29.1 </span> (Combinazioni con ripetizione di <span class="math notranslate nohighlight">\(k=3\)</span> elementi di un insieme di <span class="math notranslate nohighlight">\(n=2\)</span> elementi)</p>
 <div class="example-content section" id="proof-content">
 <p>Il numero di combinazioni con ripetizione di <span class="math notranslate nohighlight">\(k=3\)</span> elementi dell’insieme <span class="math notranslate nohighlight">\(I = \left\{ 1, 2 \right\}\)</span> di <span class="math notranslate nohighlight">\(n=2\)</span> elementi è</p>
@@ -620,7 +612,7 @@ document.write(`
   &amp; |  \ast   \ast    \ast    &amp;&amp; \left\{  2,2,2 \right\} \\
 \end{aligned}\end{split}\]</div>
 </div>
-</div><div class="proof example dropdown admonition" id="example-1">
+</div><div class="proof example dropdown admonition" id="ex-combinations-with-rep-2">
 <p class="admonition-title"><span class="caption-number">Example 29.2 </span> (Combinazione con ripetizioni di <span class="math notranslate nohighlight">\(k=2\)</span> elementi di un insieme di <span class="math notranslate nohighlight">\(n=3\)</span> elementi)</p>
 <div class="example-content section" id="proof-content">
 <p>Il numero di combinazioni con ripetizione di <span class="math notranslate nohighlight">\(k=2\)</span> elementi dell’insieme <span class="math notranslate nohighlight">\(I = \left\{ 1, 2, 3 \right\}\)</span> di <span class="math notranslate nohighlight">\(n=3\)</span> elementi è</p>
@@ -637,14 +629,14 @@ document.write(`
   &amp; || \ast    \ast     &amp;&amp; \left\{  3,3 \right\} \\
 \end{aligned}\end{split}\]</div>
 </div>
-</div><div class="proof example admonition" id="example-2">
+</div><div class="proof example admonition" id="ex-combinations-with-rep-3">
 <p class="admonition-title"><span class="caption-number">Example 29.3 </span> (Caramelle uguali a bambini diversi)</p>
 <div class="example-content section" id="proof-content">
 <p>In quanti modi si possono distribuire <span class="math notranslate nohighlight">\(5\)</span> caramelle indistinguibili a <span class="math notranslate nohighlight">\(3\)</span> bambini distinguibili? Il numero è uguale al numero di combinazioni con ripetizione di <span class="math notranslate nohighlight">\(k=5\)</span> elementi di un gruppo di <span class="math notranslate nohighlight">\(n=3\)</span> elementi, e cioè</p>
 <div class="math notranslate nohighlight">
 \[C'_{3,5} = \frac{7!}{2! \cdot 5!} = \frac{6 \cdot 7}{2} = 21 \ .\]</div>
 </div>
-</div><div class="proof example admonition" id="example-3">
+</div><div class="proof example admonition" id="ex-combinations-with-rep-bose-einstein">
 <p class="admonition-title"><span class="caption-number">Example 29.4 </span> (Bose-Einstein)</p>
 <div class="example-content section" id="proof-content">
 <p>…</p>
