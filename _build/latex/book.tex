@@ -87,7 +87,7 @@
         
 
 \title{Matematica per le scuole superiori}
-\date{05 mar 2025}
+\date{24 mar 2025}
 \release{}
 \author{basics}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -738,10 +738,23 @@ per \(a < 0\) solo per \(b \in \mathbb{N}\)
 
 
 \subsection{Radice}
-\label{\detokenize{ch/algebra/real-algebra:radice}}
+\label{\detokenize{ch/algebra/real-algebra:radice}}\label{\detokenize{ch/algebra/real-algebra:math-hs-algebra-real-root}}
 \sphinxAtStartPar
 \sphinxstylestrong{Definizione e condizioni.}
 
+\sphinxAtStartPar
+La radice quadrata di un numero reale \(a\) è ben definita solo per i numeri reali non negativi, come la soluzione positiva dell’equazione
+\begin{equation*}
+\begin{split}x^2 = a^2 \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+che in generale ha due soluzioni, \(\mp |a|\), come è immediato verificare con le proprietà delle potenze (o della moltiplicazione),
+\begin{equation*}
+\begin{split}
+(-|a|) \cdot (-|a|) = a^2 \qquad , \qquad
+  |a|  \cdot   |a|  = a^2
+\end{split}
+\end{equation*}
 \sphinxAtStartPar
 \sphinxstylestrong{Proprietà.}
 
@@ -2687,7 +2700,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-05 mar 2025
+24 mar 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -2801,7 +2814,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-05 mar 2025
+24 mar 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3290,7 +3303,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-05 mar 2025
+24 mar 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3538,7 +3551,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-05 mar 2025
+24 mar 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -6609,6 +6622,9 @@ Data una successione di funzioni derivatbili \(f_n(x)\), …
 
 \chapter{Trigonometria}
 \label{\detokenize{ch/trigonometry:trigonometria}}\label{\detokenize{ch/trigonometry:math-hs-trigonometry}}\label{\detokenize{ch/trigonometry::doc}}
+\sphinxAtStartPar
+\sphinxstylestrong{todo:list} \DUrole{xref,myst}{\sphinxstylestrong{Analisi di Fourier}}=
+
 
 \section{Definizione delle funzioni trigonometriche e relazione fondamentale}
 \label{\detokenize{ch/trigonometry:definizione-delle-funzioni-trigonometriche-e-relazione-fondamentale}}
@@ -6633,12 +6649,12 @@ Data una successione di funzioni derivatbili \(f_n(x)\), …
 \end{aligned}\end{align*}
 
 \subsection{Relazione fondamentale della trignometria}
-\label{\detokenize{ch/trigonometry:relazione-fondamentale-della-trignometria}}
+\label{\detokenize{ch/trigonometry:relazione-fondamentale-della-trignometria}}\label{\detokenize{ch/trigonometry:math-hs-trigonometry-fundamental}}
 \sphinxAtStartPar
 Usando il teorema di Pitagora è immediato dimostrare la \sphinxstylestrong{relazione fondamentale della trigonometria} tra le funzioni seno e coseno di un angolo,
-\begin{equation*}
+\begin{equation}\label{equation:ch/trigonometry:eq:trigonometry-fundamental}
 \begin{split}\sin^2 \theta + \cos^2 \theta = 1 \ .\end{split}
-\end{equation*}
+\end{equation}
 \begin{sphinxadmonition}{note}{Notazione.}
 
 \sphinxAtStartPar
@@ -6704,12 +6720,12 @@ Nell’uso delle funzioni trigonometriche, \(\sin^2 x\) indica il quadrato della
 \label{\detokenize{ch/trigonometry:formule-di-somma-e-sottrazione}}
 \sphinxAtStartPar
 Valgono le seguenti formule per il coseno e il seno della somma e della differenza di angoli,
-\begin{equation*}
+\begin{equation}\label{equation:ch/trigonometry:eq:trigonometry:sum-diff}
 \begin{split}\begin{aligned}
-  \cos ( x \mp y ) & = \cos x \ \cos y \pm \sin x \ \sin y \\
-  \sin ( x \mp y ) & = \sin x \ \cos y \mp \cos x \ \sin y \\
+  \cos ( x \mp y ) & = \cos x \ \cos y \pm \sin x \ \sin y && (1) \\
+  \sin ( x \mp y ) & = \sin x \ \cos y \mp \cos x \ \sin y && (2) \\
 \end{aligned}\end{split}
-\end{equation*}
+\end{equation}
 \sphinxAtStartPar
 Per completezza, come utile esercizio di geometria sulla similitudine dei triangoli, e per familiarizzare con le funzioni armoniche, si fornisce la dimostrazione della formula del coseno della somma.
 \subsubsection*{Dimostrazione di \protect\(\ \cos ( x + y ) = \cos x \ \cos y - \sin x \ \sin y\protect\)}
@@ -6752,7 +6768,30 @@ Sostituendo questa espressione di \(\overline{OE}\) nell’espressione di \(\ove
 dalla quale si ottiene la relazione desiderata,
 \begin{equation*}
 \begin{split}\cos (\alpha + \beta) = \cos \alpha \cos \beta - \sin \beta \sin \alpha \ .\end{split}
-\end{equation*}
+\end{equation*}\label{ch/trigonometry:trigonometry:cos2x}
+\begin{sphinxadmonition}{note}{Example 17.3.1 (\protect\(\cos(2x) \protect\) e \protect\(\sin(2x)\protect\))}
+
+
+
+\sphinxAtStartPar
+L’espressione di \(\cos(2x)\) e \(\sin(2x)\) possono essere calcolate con le formule \eqref{equation:ch/trigonometry:eq:trigonometry:sum-diff} per le funzioni coseno e seno di unargomento che è somma di due elementi uguali, cioè ponendo  \(y = x\). L’espressione di \(\cos(2x)\) può essere riscritta in diverse espressioni usando la relazione fondamentale della trigonometria \eqref{equation:ch/trigonometry:eq:trigonometry-fundamental},
+\begin{equation}\label{equation:ch/trigonometry:eq:trigonometry:cos2x-sin2x}
+\begin{split}\begin{aligned}
+  \cos ( 2x ) & = \cos^2 x - \sin^2 x = \\
+              & = 2 \cos^2 x - 1 = \\
+              & = 1 - 2 \sin^2 x 
+  \sin ( 2x ) & = 2 \sin x \cos x \\
+\end{aligned}\end{split}
+\end{equation}
+\sphinxAtStartPar
+dato che possono essere utili in parecchie circostanze per riconoscere
+\begin{equation}\label{equation:ch/trigonometry:eq:trigonometry:cosTo2x-sinTo2x}
+\begin{split}\begin{aligned}
+  \cos^2 x & = \frac{1}{2} \left( 1 + \cos (2x) \right) \\
+  \sin^2 x & = \frac{1}{2} \left( 1 - \cos (2x) \right) \\
+\end{aligned}\end{split}
+\end{equation}\end{sphinxadmonition}
+
 
 \section{Werner}
 \label{\detokenize{ch/trigonometry:werner}}\begin{equation*}
@@ -6824,6 +6863,56 @@ si ottiene
 \sphinxAtStartPar
 dalla quale è evidente la relazione desiderata.
 
+
+\section{Applicazioni utili e frequenti}
+\label{\detokenize{ch/trigonometry:applicazioni-utili-e-frequenti}}
+
+\subsection{Combinazione lineare di seno e coseno con stesso argomento}
+\label{\detokenize{ch/trigonometry:combinazione-lineare-di-seno-e-coseno-con-stesso-argomento}}\label{\detokenize{ch/trigonometry:math-hs-trigonometry-linear-combination}}
+\sphinxAtStartPar
+La combinazione lineare delle funzioni seno e coseno con lo stesso argomento,
+\begin{equation*}
+\begin{split}f(\theta) = A \cos \theta + B \sin \theta \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+può essere riscritta in termini di una sola funzione armonica, rendendone esplicita l’ampiezza \(F\) e la differenza di fase \(\phi\) rispetto all’argomento \(\theta\),
+\begin{equation*}
+\begin{split}f(\theta) = A \cos \theta + B \sin \theta = F \cos( \theta - \varphi ) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+con ampiezza \(F\) e fase \(\varphi\)
+\begin{equation*}
+\begin{split}\begin{aligned}
+  F & = \sqrt{A^2 + B^2} \\
+  \varphi & \quad \text{ t.c.} \quad \cos \varphi = \frac{A}{F}  \ , \quad \sin \varphi = \frac{B}{F} \ . 
+\end{aligned}\end{split}
+\end{equation*}\subsubsection*{Dimostrazione}
+
+\sphinxAtStartPar
+Per fare questo, ci si vuole riportare a una delle formule di somma o sottrazione di funzoni trigonometriche. Dai coefficienti \(A\), \(B\) si desidera ricavare due coefficienti che possano essere rispettivamente il coseno e il seno di un angolo \(\varphi\). La {\hyperref[\detokenize{ch/trigonometry:math-hs-trigonometry-fundamental}]{\sphinxcrossref{\DUrole{std,std-ref}{relazione fondamentale della trigonometria}}}} \eqref{equation:ch/trigonometry:eq:trigonometry-fundamental} richiede che la somma dei quadrati dei coseno e seno con lo stesso argomento sia uguale a 1. Serve quindi una normalizzazione dei coefficienti, dividendo i coefficienti (e moltiplicando per la stessa quantità diversa da zero per non alterare l’espressione) per la radice quadra della somma dei loro quadrati
+\begin{equation*}
+\begin{split}f(\theta) = \sqrt{A^2+B^2} \left[ \frac{A}{\sqrt{A^2+B^2}} \cos \theta + \frac{B}{\sqrt{A^2+B^2}} \sin \theta \right] \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+E” ora possibile definire un angolo \(\varphi\), il cui coseno e seno sono uguali ai coefficienti,
+\begin{equation*}
+\begin{split}\cos \varphi = \frac{A}{\sqrt{A^2+B^2}}  \qquad , \qquad \sin \varphi = \frac{B}{\sqrt{A^2+B^2}} \ , \end{split}
+\end{equation*}
+\sphinxAtStartPar
+e usare la regola del coseno della differenza \eqref{equation:ch/trigonometry:eq:trigonometry:sum-diff}(1) per poter scrivere
+\begin{equation*}
+\begin{split}\begin{aligned}
+  f(\theta) 
+  & = F \left[ \cos \varphi \cos \theta + \sin \phi \sin \theta \right] = \\ 
+  & = F \cos ( \theta - \phi ) \ ,
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+avendo definito l’ampiezza della funzione armonica \(F = \sqrt{A^2 + B^2}\).
+
+
+\subsection{}
+\label{\detokenize{ch/trigonometry:id1}}
 \sphinxstepscope
 
 
@@ -7212,7 +7301,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-05 mar 2025
+24 mar 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -7375,7 +7464,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-05 mar 2025
+24 mar 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -10052,7 +10141,7 @@ La funzione è continua, e quindi è sufficiente sostituire il valore \(x = 0\) 
 \end{enumerate}
 \begin{equation*}
 \begin{split}\lim_{x \to 0} e^x - 1 = e^0 - 1 = 1 - 1 = 0 \ .\end{split}
-\end{equation*}\phantomsection \label{exercise:ch/infinitesimal_calculus/analysis-problems-exercise-2}
+\end{equation*}\phantomsection \label{exercise:ex-limits-lateral}
 
 \begin{sphinxadmonition}{note}{Exercise 23.9.3 (Limiti laterali)}
 
@@ -10099,9 +10188,27 @@ La funzione è continua, e quindi è sufficiente sostituire il valore \(x = 0\) 
 \sphinxAtStartPar
 \(\lim_{x \to 0^-} e^{\frac{1}{x}}\)
 
+\item {} 
+\sphinxAtStartPar
+(a) \(\lim_{x \to 0^-} \frac{\cos \theta}{\text{atan} \theta}\); (b) \(\lim_{x \to 0^+} \frac{\cos \theta}{\text{atan} \theta} \qquad \text{R:}\ \text{(a)}: -\infty\text{; (b):} +\infty\)
+
 \end{enumerate}
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/infinitesimal_calculus/analysis-problems-exercise-3}
+\subsubsection*{Soluzioni}
+
+\sphinxAtStartPar
+\sphinxstylestrong{11.} I limiti
+\begin{equation*}
+\begin{split}\lim_{x \to 0^\mp} \frac{\cos x}{\text{atan} x} \, dx\end{split}
+\end{equation*}
+\sphinxAtStartPar
+sono i limiti di un rapporto «\(\frac{1}{0}\)». La funzione arcotangente \(\text{atan}(x)\) è negativa per \(x < 0\) e positiva per \(x > 0\). Quindi il limite sinistro vale «\(\frac{1}{0^-} = - \infty\)», mentre il limite destro vale «\(\frac{1}{0^+} = + \infty\)», o meno brutalemnte
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \lim_{x \to 0^-} \frac{\cos x}{\text{atan} x} = -\infty \qquad , \qquad
+  \lim_{x \to 0^+} \frac{\cos x}{\text{atan} x} = +\infty \\
+\end{aligned}\end{split}
+\end{equation*}\phantomsection \label{exercise:ch/infinitesimal_calculus/analysis-problems-exercise-3}
 
 \begin{sphinxadmonition}{note}{Exercise 23.9.4 (Limiti all’infinito)}
 
@@ -11169,6 +11276,52 @@ allora
 
 \sphinxAtStartPar
 \sphinxstylestrong{Oss.} Il teorema di de l’Hopital può essere applicato anche in successione, più di una volta, fermandosi al primo rapporto di derivate dello stesso ordine che non produce una forma indeterminata.
+\label{ch/infinitesimal_calculus/derivatives:limit:example:lim-xne-x}
+\begin{sphinxadmonition}{note}{Example 24.5.1 (Limite \protect\(\lim_{x \rightarrow +\infty} x^n \, e^{-x}\protect\))}
+
+
+
+\sphinxAtStartPar
+Il calcolo del limite \(\lim_{x \rightarrow +\infty} x^n \, e^{-x}\) è una forma indeterminata \(\frac{+\infty}{+\infty}\) se \(n > 0\), mentre vale \(0\) se \(n < 0\) poiché prodotto di due funzioni che tendono a zero. Nel caso in cui \(n>0\), la forma indeterminata può essere ricondotta a un {\hyperref[\detokenize{ch/infinitesimal_calculus/analysis:infinitesimal-calculus-limits-infinite-simal}]{\sphinxcrossref{\DUrole{std,std-ref}{confronto di infiniti}}}},
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \lim_{x \rightarrow +\infty} x^n \, e^{-x}
+  & = \lim_{x \rightarrow +\infty} \frac{x^n}{e^x} \ , 
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e calcolato applicando ripetutamente il {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:infinitesimal-calculus-derivatives-thm-hopital}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema di de l’Hopital}}}}
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \lim_{x \rightarrow +\infty} x^n \, e^{-x}
+  & = \lim_{x \rightarrow +\infty} \frac{x^n}{e^x} = && \quad \text{(Hopital)} \\
+  & = \lim_{x \rightarrow +\infty} \frac{n x^{n-1}}{e^x} = && \quad \text{(Hopital)} \\
+  & = \lim_{x \rightarrow +\infty} \frac{n (n-1) x^{n-2}}{e^x} = && \quad \text{(Hopital)} \\
+  & = ... \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Se \(n \in \mathbb{N}\) intero, dopo aver applicato \(n\) volte il teorema di de l’Hopital si arriva alla forma
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \lim_{x \rightarrow +\infty} x^n \, e^{-x}
+  & = \lim_{x \rightarrow +\infty} \frac{n!}{e^x} = 0 \ ,
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+poichè \(n!\), pur quanto grande sia, è una costante di valore finito, mentre \(\lim_{x \rightarrow +\infty} e^{x} = +\infty\), o brutalmente «\(\frac{C}{+\infty} = 0\)».
+
+\sphinxAtStartPar
+Se \(n \in \mathbb{R}\), \(n \notin \mathbb{R}\), reale non intero, dopo aver applicato \(\lceil n \rceil\) volte il teorema di de l’Hopital si arriva alla forma
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \lim_{x \rightarrow +\infty} x^n \, e^{-x}
+  & = \lim_{x \rightarrow +\infty} \frac{n(n-1)(n-2)\dots\{ n \} x^{\{ n \}-1}}{e^x} = 0 \ ,
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+poiché il numeratore è una potenza negativa di \(x\), e quindi tende a zero per \(x \rightarrow +\infty\), e il denominatore tende all’infinito, o brutalmente «\(\frac{0}{+\infty} = 0\)».
+\end{sphinxadmonition}
 
 
 \section{Derivate fondamentali}
@@ -12140,7 +12293,12 @@ Ripetendo lo stesso procedimento, confrontando la differenza \(f(x) - T_N[f(x);x
 
 
 \sphinxAtStartPar
-Data una funzione continua \(f: [a,b] \rightarrow \mathbb{R}\) e \(P = \{ x_0, x_1, \dots x_n | a = x_0 < x_1 < \dots < x_n = b \}\) partizione dell’intervallo \([a,b]\), la somma di Riemann viene definita come
+Data una funzione continua \(f: [a,b] \rightarrow \mathbb{R}\) e una partizione \(P\) dell’intervallo \([a,b]\),
+\begin{equation*}
+\begin{split}P = \{ x_0, x_1, \dots x_n | a = x_0 < x_1 < \dots < x_n = b \} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+una somma di Riemann \(\sigma\) della funzione \(f\) sulla partizione \(P\) viene definita come
 \begin{equation}\label{equation:ch/infinitesimal_calculus/integrals:infinitesimal-calculus:integrals:riemann:sum}
 \begin{split}\sigma_P = \sum_{k=1}^{n} f(\xi_k) (x_{k} - x_{k-1}) \ ,\end{split}
 \end{equation}
@@ -12311,6 +12469,11 @@ L”\sphinxstylestrong{integrale indefinito} di una funzione \(f(x)\) viene defi
 \sphinxAtStartPar
 dove la costante additiva \(C\) tiene conto dell’arbitrarietà appena discussa.
 
+\sphinxAtStartPar
+L”\sphinxstylestrong{integrale definito} di una funzione continua \(f(x): D \rightarrow \mathbf{R}\) su un’intervallo \([a,b] \subseteq D\) può quindi essere valutato come la differenza della funzione primitiva \(F(x)\) valutata nell’estremo superiore e nell’estremo inferiore,
+\begin{equation*}
+\begin{split}\int_{x=a}^{b} f(x) \, dx = F(b) - F(a) \ .\end{split}
+\end{equation*}
 
 \section{Teoremi}
 \label{\detokenize{ch/infinitesimal_calculus/integrals:teoremi}}\label{\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-thm}}
@@ -12485,7 +12648,7 @@ Una volta dimostrato il {\hyperref[\detokenize{ch/infinitesimal_calculus/integra
 \begin{split}\begin{aligned}
  \int x^n         \ dx & = \frac{1}{n+1} x^{n+1} + C  \qquad (\text{if } n \neq -1) \\ 
  \int e^x         \ dx & = e^x                   + C \\ 
- \int \frac{1}{x} \ dx & = \ln x                 + C \\ 
+ \int \frac{1}{x} \ dx & = \ln | x |             + C \\ 
  \int \cos x      \ dx & = \sin x                + C \\ 
  \int \sin x      \ dx & =-\cos x                + C    
 \end{aligned}\end{split}
@@ -12493,6 +12656,78 @@ Una volta dimostrato il {\hyperref[\detokenize{ch/infinitesimal_calculus/integra
 \sphinxAtStartPar
 Per un’ulteriore lista si rimanda alla {\hyperref[\detokenize{ch/infinitesimal_calculus/integrals-table:infinitesimal-calculus-integrals-table}]{\sphinxcrossref{\DUrole{std,std-ref}{tabella a fine sezione}}}}.
 
+
+\section{Integrali impropri}
+\label{\detokenize{ch/infinitesimal_calculus/integrals:integrali-impropri}}\label{\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-improper}}
+\sphinxAtStartPar
+Vengono definiti integrali impropri alcune famiglie di integrali definiti, come ad esempio:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+gli integrali di funzioni continue definite su domini con almeno un estremo aperto (finito o infinito), \(f: D_{a,b} \subseteq \mathbb{R} \rightarrow\), che hanno come estremo di integrazione un estremo dell’intervallo. Questo caso comprende sia i limiti al finito
+
+\end{itemize}
+\label{ch/infinitesimal_calculus/integrals:example-6}
+\begin{sphinxadmonition}{note}{Example 25.4.1 (\protect\(\int_{0}^{b} \frac{1}{x} \, dx\protect\))}
+
+
+\begin{equation*}
+\begin{split}
+\int_{x=0^+}^{b} \frac{1}{x} \, dx = \lim_{a \rightarrow 0^+} \int_{x=a}^{b} \frac{1}{x} \, dx = \lim_{a \rightarrow 0^+} \left[ \left.\ln x \right|_{x=a}^{b} \right] = \lim_{a \rightarrow 0^+} \left[ \ln {b} - \ln a \right] = + \infty \ .
+\end{split}
+\end{equation*}
+\sphinxAtStartPar
+poiché \(\lim_{a \rightarrow 0^+} \ln a = -\infty\).
+\end{sphinxadmonition}
+\label{ch/infinitesimal_calculus/integrals:example-7}
+\begin{sphinxadmonition}{note}{Example 25.4.2 (\protect\(\int_{0}^{b} \frac{1}{x^n} \, dx\protect\))}
+
+
+
+\sphinxAtStartPar
+Se \(n>0\) e \(n \ne 1\),
+\begin{equation*}
+\begin{split}\begin{aligned}
+\int_{x=0^+}^{b} \frac{1}{x^n} \, dx
+ & = \lim_{a \rightarrow 0^+} \int_{x=a}^{b} x^{-n} \, dx = \\
+ & = \lim_{a \rightarrow 0^+} \left[ \frac{1}{-n+1} \left. x^{-n+1} \right|_{x=a}^{b} \right] = \\
+ & = \frac{1}{-n+1} \lim_{a \rightarrow 0^+} \left[ b^{-n+1} - a^{-n+1} \right] 
+   = \begin{cases} \frac{1}{1-n} b^{1-n} \hfill \qquad \text{$n < 1$} \\ +\infty \hfill \qquad \text{$n > 1$} \end{cases} \ ,
+\end{aligned}\end{split}
+\end{equation*}\end{sphinxadmonition}
+\label{ch/infinitesimal_calculus/integrals:example-8}
+\begin{sphinxadmonition}{note}{Example 25.4.3 (\protect\(\int_{a}^{+\infty} \frac{1}{n^n}\protect\))}
+
+
+
+\sphinxAtStartPar
+…
+\end{sphinxadmonition}
+
+
+\subsection{Condizioni di integrabilità}
+\label{\detokenize{ch/infinitesimal_calculus/integrals:condizioni-di-integrabilita}}
+\sphinxAtStartPar
+…
+
+
+\subsection{Valore principale di Cauchy}
+\label{\detokenize{ch/infinitesimal_calculus/integrals:valore-principale-di-cauchy}}\label{\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-improper-cauchy}}
+\sphinxAtStartPar
+In alcuni casi è possibile «risolvere» una forma indeterminata della forma \(+\infty - \infty\) nel calcolo di un integrale improprio che dà come risultato un valore finito. Questo valore finito viene definito valore principale di Cauchy. E” questo l’esempio dell’integrale della funzione \(\frac{1}{x}\) su un intervallo che contiene il punto \(x=0\). Questo punto è un punto di discontinuità della funzione, dove questa non è definita. Dati due valori \(a\), \(b\) tali che \(a < 0 < b\), l’integrale \(\int_{x=a}^{b} \frac{1}{x} \, dx\) viene quindi interpretato come
+\begin{equation*}
+\begin{split}\int_{x=a}^{b} \frac{1}{x} \, dx = \lim_{c \rightarrow 0^+} \left[ \int_{a}^{-c} \frac{1}{x} + \int_{c}^{b} \frac{1}{x} \, dx \right] \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e il suo calcolo produce il risultato
+\begin{equation*}
+\begin{split}\begin{aligned}
+\int_{x=a}^{b} \frac{1}{x} \, dx 
+ & = \lim_{c \rightarrow 0^+} \left[ \int_{a}^{-c} \frac{1}{x} + \int_{c}^{b} \frac{1}{x} \, dx \right] = \\ 
+ & = \lim_{c \rightarrow 0^+} \left[ \ln|-c| - \ln|a| + \ln |b| - \ln|c| \right] = \\ 
+ & = \ln |b| - \ln |a| \ .
+\end{aligned}\end{split}
+\end{equation*}
 
 \section{Regole di integrazione}
 \label{\detokenize{ch/infinitesimal_calculus/integrals:regole-di-integrazione}}\label{\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-rules}}
@@ -12534,8 +12769,8 @@ Derivazione che riporti a integrali più semplici: esempio, può ridurre di \(1\
 
 \end{itemize}
 \end{sphinxadmonition}
-\label{ch/infinitesimal_calculus/integrals:example-6}
-\begin{sphinxadmonition}{note}{Example 25.4.1 (Esempio di integrazione per parti)}
+\label{ch/infinitesimal_calculus/integrals:example-9}
+\begin{sphinxadmonition}{note}{Example 25.5.1 (Esempio di integrazione per parti)}
 
 
 
@@ -12593,8 +12828,8 @@ Usando il {\hyperref[\detokenize{ch/infinitesimal_calculus/integrals:infinitesim
   & \sqrt{a^2 + x^2} && \rightarrow && x = a \sinh \theta \\
   & \sqrt{x^2 - a^2} && \rightarrow && x = a \cosh \theta \\
 \end{aligned}\end{split}
-\end{equation*}\label{ch/infinitesimal_calculus/integrals:example-7}
-\begin{sphinxadmonition}{note}{Example 25.4.2 (\protect\(\displaystyle \int \sqrt{a^2 - x^2} \,  dx\protect\))}
+\end{equation*}\label{ch/infinitesimal_calculus/integrals:example-10}
+\begin{sphinxadmonition}{note}{Example 25.5.2 (\protect\(\displaystyle \int \sqrt{a^2 - x^2} \,  dx\protect\))}
 
 
 
@@ -12624,8 +12859,8 @@ e usando la formula \(\sin( 2 \theta ) = 2 \sin \theta \cos \theta = 2 \dfrac{x}
 \begin{equation*}
 \begin{split}\int \sqrt{a^2 - x^2} \, dx = \frac{a^2}{2} \left[ \text{arcsin}\left( \frac{x}{a} \right) + \frac{x}{a}\sqrt{1 - \left( \frac{x}{a} \right)^2 }\right] + C .\end{split}
 \end{equation*}\end{sphinxadmonition}
-\label{ch/infinitesimal_calculus/integrals:example-8}
-\begin{sphinxadmonition}{note}{Example 25.4.3 (\protect\( \displaystyle \int \sqrt{a^2 + x^2} \,  dx\protect\))}
+\label{ch/infinitesimal_calculus/integrals:example-11}
+\begin{sphinxadmonition}{note}{Example 25.5.3 (\protect\( \displaystyle \int \sqrt{a^2 + x^2} \,  dx\protect\))}
 
 
 
@@ -12678,8 +12913,8 @@ Si può tornare alla variabile indipendente di partenza \(x\) con la trasformazi
    & = \frac{a^2}{2} \left\{ \ln \left[ \frac{x}{a}  +  \sqrt{1 + \left( \frac{x}{a} \right)^2} \right] + \frac{x}{a} \sqrt{1 + \left(\frac{x}{a}\right)^2} \right\} + C
 \end{aligned}\end{split}
 \end{equation*}\end{sphinxadmonition}
-\label{ch/infinitesimal_calculus/integrals:example-9}
-\begin{sphinxadmonition}{note}{Example 25.4.4 (\protect\(\displaystyle \int \sqrt{x^2 - a^2} \,  dx\protect\))}
+\label{ch/infinitesimal_calculus/integrals:example-12}
+\begin{sphinxadmonition}{note}{Example 25.5.4 (\protect\(\displaystyle \int \sqrt{x^2 - a^2} \,  dx\protect\))}
 
 
 
@@ -12733,8 +12968,8 @@ Si può tornare alla variabile indipendente di partenza \(x\) con la trasformazi
    & = \frac{a^2}{2} \left\{ -\ln \left[ \frac{x}{a}  \pm  \sqrt{\left( \frac{x}{a} \right)^2 - 1} \right] + \frac{x}{a} \sqrt{ \left(\frac{x}{a}\right)^2 - 1} \right\} + C
 \end{aligned}\end{split}
 \end{equation*}\end{sphinxadmonition}
-\label{ch/infinitesimal_calculus/integrals:example-10}
-\begin{sphinxadmonition}{note}{Example 25.4.5 (\protect\(\displaystyle \int \frac{1}{\sqrt{a^2 - x^2}} \,  dx\protect\))}
+\label{ch/infinitesimal_calculus/integrals:example-13}
+\begin{sphinxadmonition}{note}{Example 25.5.5 (\protect\(\displaystyle \int \frac{1}{\sqrt{a^2 - x^2}} \,  dx\protect\))}
 
 
 
@@ -12754,8 +12989,8 @@ ha senso per intervalli di integrazioni tali che \(|x| \le |a|\). In questi casi
    & = \text{arcsin} x + C \ .
 \end{aligned}\end{split}
 \end{equation*}\end{sphinxadmonition}
-\label{ch/infinitesimal_calculus/integrals:example-11}
-\begin{sphinxadmonition}{note}{Example 25.4.6 (\protect\(\displaystyle \int \frac{1}{\sqrt{a^2 + x^2}} \,  dx\protect\))}
+\label{ch/infinitesimal_calculus/integrals:example-14}
+\begin{sphinxadmonition}{note}{Example 25.5.6 (\protect\(\displaystyle \int \frac{1}{\sqrt{a^2 + x^2}} \,  dx\protect\))}
 
 
 
@@ -12784,8 +13019,8 @@ per utilizzare le proprietà delle funzioni iperboliche e scrivere
    & = \ln \left[ \frac{x}{a}  +  \sqrt{\left( \frac{x}{a} \right)^2 + 1} \right] \ .
 \end{aligned}\end{split}
 \end{equation*}\end{sphinxadmonition}
-\label{ch/infinitesimal_calculus/integrals:example-12}
-\begin{sphinxadmonition}{note}{Example 25.4.7 (\protect\(\displaystyle \int \frac{1}{\sqrt{x^2 - a^2}} \,  dx\protect\))}
+\label{ch/infinitesimal_calculus/integrals:example-15}
+\begin{sphinxadmonition}{note}{Example 25.5.7 (\protect\(\displaystyle \int \frac{1}{\sqrt{x^2 - a^2}} \,  dx\protect\))}
 
 
 
@@ -12826,8 +13061,8 @@ per utilizzare le proprietà delle funzioni iperboliche e scrivere
   & \sqrt{a + bx + x^2}                                  && \rightarrow && a + bx + x^2 = ( z - x )^2 \\
   & \sqrt{a + bx - x^2} = \sqrt{(\alpha + x)(\beta - x)} && \rightarrow && a + bx - x^2 = ( \alpha + x )^2 z^2 \\
 \end{aligned}\end{split}
-\end{equation*}\label{ch/infinitesimal_calculus/integrals:example-13}
-\begin{sphinxadmonition}{note}{Example 25.4.8 (\protect\(\displaystyle \int \sqrt[n]{ax+b} \, dx \protect\))}
+\end{equation*}\label{ch/infinitesimal_calculus/integrals:example-16}
+\begin{sphinxadmonition}{note}{Example 25.5.8 (\protect\(\displaystyle \int \sqrt[n]{ax+b} \, dx \protect\))}
 
 
 
@@ -12855,8 +13090,8 @@ per utilizzare le proprietà delle funzioni iperboliche e scrivere
   & = \frac{1}{a} \frac{n}{n+1} (ax+b)^{\frac{n+1}{n}} + C  \ .
 \end{aligned}\end{split}
 \end{equation*}\end{sphinxadmonition}
-\label{ch/infinitesimal_calculus/integrals:example-14}
-\begin{sphinxadmonition}{note}{Example 25.4.9 (\protect\(\displaystyle \int \sqrt{a + bx + x^2} \, dx \protect\))}
+\label{ch/infinitesimal_calculus/integrals:example-17}
+\begin{sphinxadmonition}{note}{Example 25.5.9 (\protect\(\displaystyle \int \sqrt{a + bx + x^2} \, dx \protect\))}
 
 
 
@@ -12875,8 +13110,8 @@ ci si può riportare agli integrali della forma \(\displaystyle \int \sqrt{y^2 -
 \sphinxAtStartPar
 \sphinxstylestrong{Metodo 1.} Con cambio di variabili
 \end{sphinxadmonition}
-\label{ch/infinitesimal_calculus/integrals:example-15}
-\begin{sphinxadmonition}{note}{Example 25.4.10 (\protect\(\displaystyle \int \sqrt{a + bx - x^2} \, dx \protect\))}
+\label{ch/infinitesimal_calculus/integrals:example-18}
+\begin{sphinxadmonition}{note}{Example 25.5.10 (\protect\(\displaystyle \int \sqrt{a + bx - x^2} \, dx \protect\))}
 
 
 
@@ -12906,8 +13141,8 @@ ci si può riportare agli integrali della forma \(\displaystyle \int \sqrt{-y^2 
 \end{equation*}
 \sphinxAtStartPar
 risulta utile a trasformare un’integranda dove compaiono funzioni trigonometriche in un’integranda razionale.
-\label{ch/infinitesimal_calculus/integrals:example-16}
-\begin{sphinxadmonition}{note}{Example 25.4.11 (Razionalizzazione con cambio di variabili \protect\(z = \tan\left( \frac{x}{2} \right)\protect\).)}
+\label{ch/infinitesimal_calculus/integrals:example-19}
+\begin{sphinxadmonition}{note}{Example 25.5.11 (Razionalizzazione con cambio di variabili \protect\(z = \tan\left( \frac{x}{2} \right)\protect\).)}
 
 
 
@@ -12942,8 +13177,8 @@ e (usando la relazione fondamentale della trignometria \(\sin^2 x + \cos^2 x = 1
 
 \sphinxAtStartPar
 \sphinxstylestrong{todo} \sphinxstyleemphasis{descrivere meglio il metodo}
-\label{ch/infinitesimal_calculus/integrals:example-17}
-\begin{sphinxadmonition}{note}{Example 25.4.12 (Integrazione con frazioni parziali)}
+\label{ch/infinitesimal_calculus/integrals:example-20}
+\begin{sphinxadmonition}{note}{Example 25.5.12 (Integrazione con frazioni parziali)}
 
 
 \begin{equation*}
@@ -12955,8 +13190,8 @@ e (usando la relazione fondamentale della trignometria \(\sin^2 x + \cos^2 x = 1
   & = \frac{3}{2} x^2 - 6 x + 13 \ln |x+2| + C \ .
 \end{aligned}\end{split}
 \end{equation*}\end{sphinxadmonition}
-\label{ch/infinitesimal_calculus/integrals:example-18}
-\begin{sphinxadmonition}{note}{Example 25.4.13 (Integrazione con frazioni parziali)}
+\label{ch/infinitesimal_calculus/integrals:example-21}
+\begin{sphinxadmonition}{note}{Example 25.5.13 (Integrazione con frazioni parziali)}
 
 
 \begin{equation*}
@@ -13048,9 +13283,9 @@ In questa sezione vengono elencati alcuni tra gli integrali più comuni, la cui 
 \label{\detokenize{ch/infinitesimal_calculus/integrals-problems:problemi}}\label{\detokenize{ch/infinitesimal_calculus/integrals-problems:infinitesimal-calculus-integrals-problems}}\label{\detokenize{ch/infinitesimal_calculus/integrals-problems::doc}}
 
 \subsection{Calcolo integrali indefiniti}
-\label{\detokenize{ch/infinitesimal_calculus/integrals-problems:calcolo-integrali-indefiniti}}\phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-0}
+\label{\detokenize{ch/infinitesimal_calculus/integrals-problems:calcolo-integrali-indefiniti}}\phantomsection \label{exercise:integral-ex-indefinite}
 
-\begin{sphinxadmonition}{note}{Exercise 25.7.1}
+\begin{sphinxadmonition}{note}{Exercise 25.8.1}
 
 
 
@@ -13071,43 +13306,229 @@ Si chiede di calcolare i seguenti integrali indefiniti
 \end{aligned}\end{split}
 \end{equation*}\begin{equation*}
 \begin{split}\begin{aligned}
- & \mathbf{0.} \,  \int \sin 3x \sin 2x \, dx & \text{R: } \\
- & \mathbf{1.} \,  \int \cos x \sin 2x \, dx & \text{R: } \\
- & \mathbf{2.} \,  \int \sqrt{1 - \sin x} \, dx & \text{R: } \\
- & \mathbf{3.} \,  \int \sqrt{x^2 + 1} \, dx & \text{R: } \\
- & \mathbf{4.} \,  \int \sqrt{x^2 - 3} \, dx & \text{R: } \\
- & \mathbf{5.} \,  \int \frac{1}{x^2 \sqrt{9+x^2}} \, dx & \text{R: } \\
- & \mathbf{6.} \,  \int \frac{1}{x^2 \sqrt{9-x^2}} \, dx & \text{R: } \\
- & \mathbf{7.} \,  \int \frac{x}{\sqrt{x^2-4}} \, dx & \text{R: } \\
- & \mathbf{8.} \,  \int \frac{1}{\sqrt{1 - \cos 2 x}} \, dx & \text{R: } \\
- & \mathbf{9.} \,  \int \sqrt{4 - 9 x^2} \, dx & \text{R: } \\
+ & \mathbf{10.} \,  \int \sin 3x \sin 2x \, dx & \text{R: } \\
+ & \mathbf{11.} \,  \int \cos x \sin 2x \, dx & \text{R: } \\
+ & \mathbf{12.} \,  \int \sqrt{1 - \sin x} \, dx & \text{R: } \\
+ & \mathbf{13.} \,  \int \sqrt{x^2 + 1} \, dx & \text{R: } \\
+ & \mathbf{14.} \,  \int \sqrt{x^2 - 3} \, dx & \text{R: } \\
+ & \mathbf{15.} \,  \int \frac{1}{x^2 \sqrt{9+x^2}} \, dx & \text{R: } \\
+ & \mathbf{16.} \,  \int \frac{1}{x^2 \sqrt{9-x^2}} \, dx & \text{R: } \\
+ & \mathbf{17.} \,  \int \frac{x}{\sqrt{x^2-4}} \, dx & \text{R: } \\
+ & \mathbf{18.} \,  \int \frac{1}{\sqrt{1 - \cos 2 x}} \, dx & \text{R: } \\
+ & \mathbf{19.} \,  \int \sqrt{4 - 9 x^2} \, dx & \text{R: } \\
 \end{aligned}\end{split}
 \end{equation*}\begin{equation*}
 \begin{split}\begin{aligned}
- & \mathbf{0.} \,  \int \frac{\cos^2 x}{\sin^3 x} \, dx & \text{R: } \\
- & \mathbf{0.} \,  \int \frac{1}{(4+x^2)^3} \, dx & \text{R: } \\
- & \mathbf{0.} \,  \int \frac{1}{\sqrt{x^2 - 2x + 3}} \, dx & \text{R: } \\
- & \dots
+ & \mathbf{21.} \,  \int \frac{\cos^2 x}{\sin^3 x} \, dx & \text{R: } \\
+ & \mathbf{22.} \,  \int \frac{1}{(4+x^2)^3} \, dx & \text{R: } \\
+ & \mathbf{23.} \,  \int \frac{1}{\sqrt{x^2 - 2x + 3}} \, dx & \text{R: } \\
+ & \mathbf{24.} \,  \int \, e^x \, \sin x \, dx && \text{R: } \frac{1}{2} e^{x} \left( \sin x - \cos x \right) + C \\
+ & \mathbf{25.} \,  \int \, e^x \, \cos x \, dx && \text{R: } \frac{1}{2} e^{x} \left( \sin x + \cos x \right) + C  \\
 \end{aligned}\end{split}
 \end{equation*}\end{sphinxadmonition}
+\subsubsection*{Soluzione}
 
+\sphinxAtStartPar
+\sphinxstylestrong{24.} Usando il metodo di integrazione per parti
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \int \, e^x \, \sin x \, dx 
+  & = e^x \sin x - \int \, e^x \cos x \, dx = \\
+  & = e^x \sin x - \left( e^x \cos x + \int \, e^x \sin x \, dx \right) = \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Riconoscendo che l’integrale desiderato compare da entrambe le parti dell’uguale, si può «portarne» uno dall’altra parte e scrivere
+\begin{equation*}
+\begin{split}\int \, e^x \, \sin \, dx = \frac{1}{2} e^{x} \left( \sin x - \cos x \right) + C \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{25.} Usando il metodo di integrazione per parti
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \int \, e^x \, \cos x \, dx 
+  & = e^x \cos x + \int \, e^x \sin x \, dx = \\
+  & = e^x \cos x + \left( e^x \sin x - \int \, e^x \cos x \, dx \right) = \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Riconoscendo che l’integrale desiderato compare da entrambe le parti dell’uguale, si può «portarne» uno dall’altra parte e scrivere
+\begin{equation*}
+\begin{split}\int \, e^x \, \sin \, dx = \frac{1}{2} e^{x} \left( \sin x - \cos x \right) + C \ .\end{split}
+\end{equation*}
 
 \subsection{Integrali definiti}
-\label{\detokenize{ch/infinitesimal_calculus/integrals-problems:integrali-definiti}}\phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-1}
+\label{\detokenize{ch/infinitesimal_calculus/integrals-problems:integrali-definiti}}\phantomsection \label{exercise:ex:integrals:definite}
 
-\begin{sphinxadmonition}{note}{Exercise 25.7.2}
+\begin{sphinxadmonition}{note}{Exercise 25.8.2}
 
 
 
 \sphinxAtStartPar
-\sphinxstylestrong{todo}
-\end{sphinxadmonition}
+Risolvere i seguenti integrali. Nell’esercizio \hyperref[exercise:ex:integrals:definite:attention]{Exercise 25.8.3} vengono riportati altri esercizi, nei quali si sottolinea l’importanza di prestare attenzione a quello che si fa, prima di farlo: inanzitutto controllare se la funzione è definita sull’intervallo; poi controllare se si possono rimuovere i valori assoluti, se si riconosce il segno dell’integrando nel dominio o in parte di esso.
+
+\sphinxAtStartPar
+\sphinxstylestrong{Obiettivi.} Metodi di integrazione: sostituzione, integrazione per parti,…; manipolazione dell’integranda: usando le proprietà delle funzioni trignonometriche o iperboliche, frazione come somma di frazioni con denominatore di ordine 1, 2, completamento quadrato,…; proprietà dll’integrale: additività sui domini di integrazione,…
+\subsubsection*{Suggerimenti}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+L’operatore \(\lfloor x \rfloor\) rappresenta la parte intera di \(x\); l’operatore \(\{ x \} := x - \lfloor x \rfloor\) ne re rappresenta la farte frazionaria; ad esempio: \(\lfloor 3.2 \rfloor = 3\), \(\{ 3.2 \} = 0.2\). Si consiglia di sfruttare la proprietà di additività sui domini di integrazione per gli integrali in cui compaiono questi operatori.
+
+\item {} 
+\sphinxAtStartPar
+Per il calcolo dell’integrale \sphinxstylestrong{13.} è necessario utilizzare il valore dell”{\hyperref[\detokenize{ch/multivariable-calculus/integrals:integral-etox2}]{\sphinxcrossref{\DUrole{std,std-ref}{integrale \(\int_{x=-\infty}^{+\infty} e^{-x^2} \, dx = \sqrt{\pi}\)}}}}.
+
+\end{itemize}
+\begin{equation*}
+\begin{split}\begin{aligned}
+ & \mathbf{1.} \,  \int_{x=0}^{+\infty} \, x^7 e^{-x^2} \, dx && \text{R: } 3 \\ 
+ & \mathbf{2.} \,  \int_{x=0}^{\pi} \, \sin^5 x \, dx && \text{R: } \frac{16}{15} \\
+ & \mathbf{3.} \,  \int_{x=0}^{1} \, \left( \sin (\ln x) + \cos(\ln x) \right) \, dx && \text{R: } 0 \\
+ & \mathbf{4.} \,  \int_{x=-1}^{1} \, \frac{\cos x}{\text{atan} x} \, dx && \text{R: } 0 \\
+ & \mathbf{5.} \,  \int_{x=\pi/2}^{\pi} \, \sqrt{1 + \cos x} \, dx && \text{R: }  \\
+ & \mathbf{6.} \,  \int_{x=-\infty}^{0} \, e^{-\sqrt[6]{-x}} \, dx && \text{R: }  \\
+ & \mathbf{7.} \,  \int_{x=1}^{+\infty} \, \frac{1}{2025^{\lfloor x \rfloor}} \, dx && \text{R: }  \\
+ & \mathbf{8.} \,  \int_{x=4}^{5} \, \frac{2x+1}{(x-1)(x-2)(x-3)} \, dx && \text{R: }  \\ 
+ & \mathbf{9.} \,  \int_{x=0}^{1} \, x \, e^{x^2 + e^{x^2}} \, dx && \text{R: }  \\
+ & \mathbf{10.}\,  \int_{x=0}^{3/2} \, \lfloor x + \lfloor 2x \rfloor \rfloor \, dx && \text{R: }  \\
+ & \mathbf{11.}\,  \int_{x=2024}^{2025} \, \ln \{ x \} \, dx && \text{R: }  \\
+ & \mathbf{12.}\,  \int_{x=98}^{99} x^{-\frac{2}{\ln x}} \, dx && \text{R: }  \\
+ & \mathbf{13.}\,  \int_{x=-\infty}^{+\infty} e^{-x^2 + 3x} \, dx && \text{R: }  \\
+\end{aligned}\end{split}
+\end{equation*}\end{sphinxadmonition}
+\subsubsection*{Soluzione}
+
+\sphinxAtStartPar
+\sphinxstylestrong{1.}
+L’integrale viene risolto con l’applicazione ripetuta del metodo di integrazione per parti (integrando ripetutamente l’esponenziale \(f(u) = e^{-u})\) che ha primitiva \(F(u) = -e^{-u}\) e derivando la potenza \(u^n\)) e con la sostituzione \(x^2 = u\), che comporta \(2 x dx = du\),
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \int_{x=0}^{+\infty} \, x^7 e^{-x^2} \, dx 
+  & = \int_{x=0}^{+\infty} x^6 \, e^{-x^2} \, x \, dx = \\
+  & = \frac{1}{2} \int_{u=0}^{+\infty} u^3 \, e^{-u} \, du = && \quad \text{IxP} \\
+  & = \frac{1}{2} \left[ \underbrace{\left. - u^3 e^{-u} \right|_{u=0}^{+\infty}}_{=0} + \int_{u=0}^{+\infty} 3u^2 e^{-u} \right] = && \quad \text{IxP} \\
+  & = \frac{3}{2} \left[ \underbrace{\left. - u^2 e^{-u} \right|_{u=0}^{+\infty}}_{=0} + \int_{u=0}^{+\infty} 2u   e^{-u} \right] = && \quad \text{IxP} \\
+  & = 3 \left[ \underbrace{\left. - u e^{-u} \right|_{u=0}^{+\infty}}_{=0} + \int_{u=0}^{+\infty}  e^{-u} \right] = &&  \\
+  & = - \left.3 e^{-u}\right|_{u=0}^{+\infty} = 3 \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+avendo usato il risultato {\hyperref[\detokenize{ch/infinitesimal_calculus/derivatives:limit:example:lim-xne-x}]{\sphinxcrossref{Example 24.5.1}}} \(\lim_{u \rightarrow + \infty} u^n e^{-u} = 0\) per ogni \(n\).
+
+\sphinxAtStartPar
+\sphinxstylestrong{2.}
+L’integrale viene calcolato usando le proprietà dellle funzioni trigonometriche…
+\begin{equation*}
+\begin{split}\begin{aligned}
+  I = \int_{x=0}^{\pi} \, \sin^5 x \, dx 
+  & = \int_{x=0}^{\pi} \sin^2 x \, \underbrace{\sin^2 x}_{1-\cos^2 x} \, \underbrace{\sin x \, dx}_{- d \cos x} = \\
+  & = - \int_{x=0}^{\pi} \left( 1-\cos^2 x \right)^2 \, d \cos x = \\
+  & = - \int_{x=0}^{\pi} \left( 1- 2\cos^2 x + \cos^4 x \right) \, d \cos x = \\
+  & = - \left.\left( \cos x - \frac{2}{3}\cos^3 x + \frac{1}{5}\cos^5 x \right) \right|_{x=0}^{\pi} = \\
+  & = 2 \left( 1-\frac{2}{3}+\frac{1}{5} \right) = \frac{16}{15} \ .
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{3.} Utilizzando la sostituzione \(u = \ln x\), e quindi \(x = e^{u}\), \(du = \frac{1}{|x|} \, dx\), \(dx = |x| \, du = e^{u} \, dx\) (si osservi che il modulo assoluto è ininfluente in questo esercizio, poiché il dominio di integrazione di \(x\) è \([0,1]\), e quindi \(|x| = x\) per ogni \(x \in [0,1]\)), si può riscrivere l’integrale come
+\begin{equation*}
+\begin{split} \int_{x=0}^{1} \, \left( \sin (\ln x) + \cos(\ln x) \right) \, dx  = \int_{u = -\infty}^{0} \left( \sin u + \cos u \right) \, e^{u} \, du\end{split}
+\end{equation*}
+\sphinxAtStartPar
+avendo cambiato gli estremi di integrazione in maniera coerente con il cambio di variabili, \(x \rightarrow 0\): \(u \rightarrow -\infty\), \(x = 1\): \(u = 0\). Questo integrale può essere calcolato come fatto nell’esercizio \hyperref[exercise:integral-ex-indefinite]{Exercise 25.8.1} \sphinxstylestrong{24.}, \sphinxstylestrong{25.}
+\begin{equation*}
+\begin{split}\begin{aligned}
+  I
+  & = \left.\left[ \frac{1}{2} e^{u} ( \sin u - \cos u ) + \frac{1}{2} e^{u} (\sin u + \cos u)  \right]\right|_{u=-\infty}^{0} = \\
+  & = \left.\left[ e^{u} \sin u \right]\right|_{u=-\infty}^{0} = \\
+  & = 0 - \lim_{u \rightarrow -\infty} e^{u} \sin u = 0 \ ,
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+poiché la funzione \(\sin u\) è limitata, mentre \(\lim_{u\rightarrow -\infty} e^{u} = 0\).
+
+\sphinxAtStartPar
+\sphinxstylestrong{4.}
+\sphinxstylestrong{!!!} Questo integrale è un {\hyperref[\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-improper}]{\sphinxcrossref{\DUrole{std,std-ref}{integrale improprio}}}}, poiché l’integranda non è definita nel punto \(x=0\) e tende a \(-\infty\) per \(x \rightarrow 0^-\) e \(+\infty\) per \(x \rightarrow 0^+\) , come facilmente verificabile, e come già calcolato nell’esercizio \hyperref[\detokenize{ch/infinitesimal_calculus/analysis-problems:ex-limits-lateral}]{Exercise \ref{\detokenize{ch/infinitesimal_calculus/analysis-problems:ex-limits-lateral}}} \sphinxstylestrong{11.} Se si intende questo integrale come {\hyperref[\detokenize{ch/infinitesimal_calculus/integrals:infinitesimal-calculus-integrals-improper-cauchy}]{\sphinxcrossref{\DUrole{std,std-ref}{valore principlae di Cauchy}}}}, si può sfruttare le proprietà di simmetria della funzione senza indagare se l’integrale non sia la somma di due integrali divergenti.
+
+\sphinxAtStartPar
+Osservando che l’integranda è una {\hyperref[\detokenize{ch/precalculus/real-functions:math-hs-precalculus-real-functions-types}]{\sphinxcrossref{\DUrole{std,std-ref}{funzione dispari}}}} (poiché prodotto della funzione pari \(\cos x\) e funzione dispari \(\text{atan}(x)\)) e il dominio di integrazione è simmetrico, si può concludere immediatamente che il valore dell’integrale è \(0\).
+
+\sphinxAtStartPar
+\sphinxstylestrong{5.} Osservando l’argomento della radice, è lecito che venga il sospetto che sia utile usare qualche proprietà delle funzioni trigonometriche. In particolare, grazie alla relazione \eqref{equation:ch/trigonometry:eq:trigonometry:cosTo2x-sinTo2x}, si può scrivere per il generico angolo \(1 + \cos (2a) = 2 \cos^2 a\). Questa relazione viene utilizzata per l’angolo \(\frac{x}{2}\) per poter scrivere l’integranda come
+\begin{equation*}
+\begin{split}\sqrt{1 + \cos x} = \sqrt{2 \cos^2 \left( \frac{x}{2} \right) } = \sqrt{2} \left|\cos \frac{x}{2} \right| \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e potendo rimuovere il valore assoluto (necessario per la {\hyperref[\detokenize{ch/algebra/real-algebra:math-hs-algebra-real-root}]{\sphinxcrossref{\DUrole{std,std-ref}{definizione di radice quadrata sui numeri reali}}}}!!! Bene ricordarlo, ogni tanto) poiché \(\cos \frac{x}{2} \ge 0\) per tutti i valori di \(x\) appartenenti al dominio \(x \in \left[\frac{\pi}{2}, \pi\right]\). Per integrali di questa funzione su altri domini nei quali occorre prestare attenzione al segno dell’integranda, si rimanda all’esercizio \hyperref[exercise:ex:integrals:definite:attention]{Exercise 25.8.3} \sphinxstylestrong{1.}, \sphinxstylestrong{2.}.
+\begin{equation*}
+\begin{split}\begin{aligned}
+   \int_{x=\pi/2}^{\pi} \, \sqrt{1 + \cos x} \, dx 
+   & = \int_{x=\pi/2}^{\pi} \sqrt{2} \cos \frac{x}{2} \, dx = \\
+   & = 2 \sqrt{2} \int_{x=\pi/2}^{\pi} \cos \frac{x}{2} \, d \frac{x}{2} = \\
+   & = 2 \sqrt{2} \left. \, \sin \frac{x}{2} \right|_{x={\pi/2}}^{\pi} = \\
+   & = 2 \sqrt{2} \left[ 0 - (-1) \right] = 1 \ ,
+ \end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+avendo fatto un fatto un cambio di variabili \sphinxhyphen{} senza introdurre un nuovo simbolo, come può essere conveniente per sintesi in questi casi semplici \sphinxhyphen{} da \(x\) a \(\frac{x}{2}\), solo riconoscendo che \(dx = 2 d \frac{x}{2}\), per avere il differenziabile della stessa variabile che compare ad argomento della funzione coseno.
+
+\sphinxAtStartPar
+\sphinxstylestrong{6.} Prima di procedere a occhi chiusi nel calcolo dell’integrale, osserviamo che la funzione è ben definita, al contrario di quello che avviene nell’esercizio \{prf:ref\}`` \sphinxstylestrong{2.}. Con il cambio di variabili \(u = (-x)^{\frac{1}{6}}\), e quindi \(du = \frac{1}{6}(-x)^{-\frac{5}{6}} \, dx\), \(dx = (-x)^{\frac{5}{6}} \, du = u^5 \, du\)
+\begin{equation*}
+\begin{split}\int_{x=-\infty}^{0} \, e^{-\sqrt[6]{-x}} \, dx\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{7.}
+
+\sphinxAtStartPar
+\sphinxstylestrong{8.}
+
+\sphinxAtStartPar
+\sphinxstylestrong{9.}
+
+\sphinxAtStartPar
+\sphinxstylestrong{10.}
+
+\sphinxAtStartPar
+\sphinxstylestrong{11.}
+
+\sphinxAtStartPar
+\sphinxstylestrong{12.}
+
+\sphinxAtStartPar
+\sphinxstylestrong{13.}
+\phantomsection \label{exercise:ex:integrals:definite:attention}
+
+\begin{sphinxadmonition}{note}{Exercise 25.8.3 (Esempi di integrali in cui bisogna prestare particolare attenzione)}
+
+
+
+\sphinxAtStartPar
+I seguenti integrali necessitano un po” di attenzione prima di partire a testa bassa nel calcolo.
+\begin{equation*}
+\begin{split}\begin{aligned}
+ & \mathbf{1.} \,  \int_{x=0}^{\pi/2} \, \sqrt{1 + \cos x} \, dx && \text{R: }  \\
+ & \mathbf{2.} \,  \int_{x=0}^{\frac{3}{2}\pi} \, \sqrt{1 + \cos x} \, dx && \text{R: }  \\
+ & \mathbf{3.} \,  \int_{x=0}^{+\infty} \, e^{-\sqrt[6]{-x}} \, dx && \text{R: }  \\
+\end{aligned}\end{split}
+\end{equation*}\end{sphinxadmonition}
+
+\sphinxAtStartPar
+\sphinxstylestrong{1.}
+
+\sphinxAtStartPar
+\sphinxstylestrong{2.}
+
+\sphinxAtStartPar
+\sphinxstylestrong{3.}
+L’integranda non è definita nel dominio di integrazione (ad eccezione del punto \(x=0\)) poiché \(\sqrt{-x}\) non lo è: \(-x\) è non positiva per tutti i valori di \(x\) nell’intervallo di integrazione \([0,+\infty)\).
 
 
 \subsubsection{Integrali impropri}
-\label{\detokenize{ch/infinitesimal_calculus/integrals-problems:integrali-impropri}}\phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-2}
+\label{\detokenize{ch/infinitesimal_calculus/integrals-problems:integrali-impropri}}\phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-3}
 
-\begin{sphinxadmonition}{note}{Exercise 25.7.3}
+\begin{sphinxadmonition}{note}{Exercise 25.8.4}
 
 
 
@@ -13135,9 +13556,9 @@ dimostrare che \(\int_{t}^{1} e^{a x} \, dx\) converge per \(a \dots\) e diverge
 
 \end{enumerate}
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-3}
+\phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-4}
 
-\begin{sphinxadmonition}{note}{Exercise 25.7.4}
+\begin{sphinxadmonition}{note}{Exercise 25.8.5}
 
 
 
@@ -13162,27 +13583,27 @@ Si chiede di discutere e valutare i seguenti integrali impropri
 \label{\detokenize{ch/infinitesimal_calculus/integrals-problems:problemi-di-geometria}}
 
 \subsubsection{Area di superfici e lunghezza di curve}
-\label{\detokenize{ch/infinitesimal_calculus/integrals-problems:area-di-superfici-e-lunghezza-di-curve}}\phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-4}
+\label{\detokenize{ch/infinitesimal_calculus/integrals-problems:area-di-superfici-e-lunghezza-di-curve}}\phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-5}
 
-\begin{sphinxadmonition}{note}{Exercise 25.7.5}
+\begin{sphinxadmonition}{note}{Exercise 25.8.6}
 
 
 
 \sphinxAtStartPar
 Calcolare l’area della superficie chiusa tra la parabola \(y = - x^2 + 1\) e l’asse \(x\).
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-5}
+\phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-6}
 
-\begin{sphinxadmonition}{note}{Exercise 25.7.6}
+\begin{sphinxadmonition}{note}{Exercise 25.8.7}
 
 
 
 \sphinxAtStartPar
 Calcolare l’area della superficie chiusa tra la parabola \(y = - x^2 + 1\) e la parabola \(y = x^2 - 2 x\).
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-6}
+\phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-7}
 
-\begin{sphinxadmonition}{note}{Exercise 25.7.7}
+\begin{sphinxadmonition}{note}{Exercise 25.8.8}
 
 
 
@@ -13192,9 +13613,9 @@ Calcolare la lunghezza del ramo di parabola \(y = x^2 - 2x + 1\) tra \(x \in [0,
 
 
 \subsubsection{Volumi e superficie di solidi di rotazione}
-\label{\detokenize{ch/infinitesimal_calculus/integrals-problems:volumi-e-superficie-di-solidi-di-rotazione}}\phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-7}
+\label{\detokenize{ch/infinitesimal_calculus/integrals-problems:volumi-e-superficie-di-solidi-di-rotazione}}\phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-8}
 
-\begin{sphinxadmonition}{note}{Exercise 25.7.8}
+\begin{sphinxadmonition}{note}{Exercise 25.8.9}
 
 
 
@@ -13203,9 +13624,9 @@ Calcolare la lunghezza del ramo di parabola \(y = x^2 - 2x + 1\) tra \(x \in [0,
 \sphinxAtStartPar
 Calcolare il volume e la superficie del solido generato dalla rotazione del ramo di parabola \(y = 2\, x^2\), \(x \in [0,2]\) attorno all’asse \(y\)
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-8}
+\phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-9}
 
-\begin{sphinxadmonition}{note}{Exercise 25.7.9}
+\begin{sphinxadmonition}{note}{Exercise 25.8.10}
 
 
 
@@ -13214,9 +13635,9 @@ Calcolare il volume e la superficie del solido generato dalla rotazione del ramo
 \sphinxAtStartPar
 Calcolare il volume e la superficie del solido generato dalla rotazione del ramo di parabola \(y = 2\, x^2\), \(x \in [0,2]\) attorno all’asse \(x\).
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-9}
+\phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-10}
 
-\begin{sphinxadmonition}{note}{Exercise 25.7.10}
+\begin{sphinxadmonition}{note}{Exercise 25.8.11}
 
 
 
@@ -13225,9 +13646,9 @@ Calcolare il volume e la superficie del solido generato dalla rotazione del ramo
 \sphinxAtStartPar
 Calcolare il volume e la superficie di un cilindro di altezza \(h\) e base di raggio \(r\).
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-10}
+\phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-11}
 
-\begin{sphinxadmonition}{note}{Exercise 25.7.11}
+\begin{sphinxadmonition}{note}{Exercise 25.8.12}
 
 
 
@@ -13236,9 +13657,9 @@ Calcolare il volume e la superficie di un cilindro di altezza \(h\) e base di ra
 \sphinxAtStartPar
 Calcolare il volume e la superficie di un cono retto di altezza \(h\) e base di raggio \(r\).
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-11}
+\phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-12}
 
-\begin{sphinxadmonition}{note}{Exercise 25.7.12}
+\begin{sphinxadmonition}{note}{Exercise 25.8.13}
 
 
 
@@ -13247,9 +13668,9 @@ Calcolare il volume e la superficie di un cono retto di altezza \(h\) e base di 
 \sphinxAtStartPar
 Calcolare il volume e la superficie di un tronco di cono retto ottenuto dalla rivoluzione attorno all’asse \(x\) del segmento \(y = x + 2\), per \(x = [1,4]\).
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-12}
+\phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-13}
 
-\begin{sphinxadmonition}{note}{Exercise 25.7.13}
+\begin{sphinxadmonition}{note}{Exercise 25.8.14}
 
 
 
@@ -13258,9 +13679,9 @@ Calcolare il volume e la superficie di un tronco di cono retto ottenuto dalla ri
 \sphinxAtStartPar
 Calcolare il volume e la superficie della sfera generata dalla rivoluzione della semicirconferenza centrata nell’origine di raggio \(R\), \(x^2 + y^2 = R^2\).
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-13}
+\phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-14}
 
-\begin{sphinxadmonition}{note}{Exercise 25.7.14}
+\begin{sphinxadmonition}{note}{Exercise 25.8.15}
 
 
 
@@ -13269,9 +13690,9 @@ Calcolare il volume e la superficie della sfera generata dalla rivoluzione della
 \sphinxAtStartPar
 Calcolare il volume e la superficie della calotta sferica sfera generata dalla rivoluzione dell’arco di circonferenza centrata nell’origine di raggio \(R\), \(y = \sqrt{R^2 - x^2}\), con \(x = [-R, a]\), \(a \le R\).
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-14}
+\phantomsection \label{exercise:ch/infinitesimal_calculus/integrals-problems-exercise-15}
 
-\begin{sphinxadmonition}{note}{Exercise 25.7.15}
+\begin{sphinxadmonition}{note}{Exercise 25.8.16}
 
 
 
@@ -13977,6 +14398,189 @@ e integrata con le opportune condizioni
 \sphinxstepscope
 
 
+\section{Sistemi lineari tempo invarianti (LTI)}
+\label{\detokenize{ch/ode-lti:sistemi-lineari-tempo-invarianti-lti}}\label{\detokenize{ch/ode-lti:ode-lti}}\label{\detokenize{ch/ode-lti::doc}}
+\sphinxAtStartPar
+In molti ambiti delle scienze, i sistemi di interesse possono essere descritti come sistemi lineari tempo\sphinxhyphen{}invarianti, governati da {\hyperref[\detokenize{ch/ode:ode-hs-types-linear-const}]{\sphinxcrossref{\DUrole{std,std-ref}{equazioni differenziali a coefficienti costanti}}}}.
+
+\sphinxAtStartPar
+Come visto nella sezione sulla {\hyperref[\detokenize{ch/ode:ode-hs-types-linear-const-sol}]{\sphinxcrossref{\DUrole{std,std-ref}{soluzione generale}}}} di queste equazioni, la soluzione può essere scritta come somma di una soluzione dell’equazione omogenea indipendente dalla forzante del sistema e di una soluzione particolare che dipendente dalla forzante del sistema. \sphinxstylestrong{Se il sistema è asintoticamente stabile}, la soluzione dell’equazione omogenea tende a zero dopo un transitorio iniziale e rimane solo la risposta alla forzante.
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo\sphinxhyphen{}list:} \DUrole{xref,myst}{\sphinxstylestrong{Analisi di Fourier}} E” possibile scrivere una funzione come somma di funzioni armoniche; è possibile scrivere una funzione come combinazione di funzioni armoniche. Aggiungere qualcosa a riguardo nel capitolo sulle funzioni trigonometriche e sui numeri complessi \sphinxhyphen{} magari nel discreto (DFT, per usare sommatorie ed evitare integrali)
+
+\sphinxAtStartPar
+Nella sezione successiva viene analizzata la risposta dei sistemi di primo e di secondo ordine a \sphinxstylestrong{forzanti armoniche}.
+
+
+\subsection{Risposta in frequenza di sistemi del primo e del secondo ordine}
+\label{\detokenize{ch/ode-lti:risposta-in-frequenza-di-sistemi-del-primo-e-del-secondo-ordine}}\label{\detokenize{ch/ode-lti:ode-lti-frequency-response}}
+
+\subsubsection{Sistemi del primo ordine}
+\label{\detokenize{ch/ode-lti:sistemi-del-primo-ordine}}
+\sphinxAtStartPar
+La risposta forzata del sistema asintoticamente stabile del primo ordine (con \(c > 0\) e \(k > 0\))
+\begin{equation*}
+\begin{split}c \dot{x}(t) + k x(t) = F \cos(\Omega t) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+coincide con la sua soluzione particolare,
+\begin{equation*}
+\begin{split}x_p(t) = A \cos(\Omega t) + B \sin(\Omega t) \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+I coefficienti \(A\), \(B\) vengono calcolati, valutando la derivata dell’espressione generica della soluzione e
+\begin{equation*}
+\begin{split}\dot{x}_p(t) = -\Omega A \sin(\Omega t) + \Omega B \cos(\Omega t) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+inserendola dell’equazione differenziale insieme all’espressione della soluzione,
+\begin{equation*}
+\begin{split}\begin{aligned}
+ F \cos (\Omega t)
+ & = c \dot{x}_p(t) + k x_p(t) = \\
+ & = c \Omega \left( - A \sin(\Omega t) + B \cos(\Omega t)  \right) + k \left( A \cos(\Omega t) + B \sin(\Omega t) \right) = \\
+ & = \cos(\Omega t) \left[ c \Omega B + k A \right] + \sin(\Omega t) \left[ - c \Omega A + k B \right]
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Affinché l’espressione proposta sia una soluzione dell’equazione differenziale, l’ultima relazione deve annullarsi per ogni valore della variabile indipendente \(t\), e quindi devono annullarsi indipendendemente i coefficienti delle funzioni \(\cos(\Omega t)\) e \(\sin (\Omega t)\). Si ottengono quindi un sistema algebrico di due equazioni nelle due incognite \(A\), \(B\)
+\begin{equation*}
+\begin{split}
+\begin{aligned}
+  k A + c \Omega B & = F \\
+ - c \Omega A + k B & = 0 \\
+\end{aligned}
+\qquad \rightarrow \qquad
+\begin{aligned}
+  A = \frac{k}{k^2 + (c \Omega)^2} \, F \\
+  B = \frac{c\Omega}{k^2 + (c \Omega)^2} \, F  \\
+\end{aligned}
+\end{split}
+\end{equation*}
+\sphinxAtStartPar
+La soluzione è quindi una {\hyperref[\detokenize{ch/trigonometry:math-hs-trigonometry-linear-combination}]{\sphinxcrossref{\DUrole{std,std-ref}{combinazione lineare delle funzioni \(\cos\) e \(\sin\) con lo stesso argomento}}}},
+\begin{equation*}
+\begin{split}x_p(t) = \left[  \frac{k}{k^2 + (c \Omega)^2} \cos(\Omega t) + \frac{c \Omega}{k^2 + (c \Omega)^2} \sin(\Omega t) \right] F \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+che può essere quindi riscritta come
+\begin{equation*}
+\begin{split}x_p(t) = X \cos (\Omega t - \varphi) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+con l’ampiezza e il ritardo di fase
+\begin{equation*}
+\begin{split}\begin{aligned}
+  X(\Omega) & = \frac{1}{\sqrt{k^2 + (c\Omega)^2}} \\
+  \varphi(\Omega) & \ \text{ s.t.} \ \cos \varphi = \frac{k}{\sqrt{k^2 + (c\Omega)^2}} \quad , \quad \sin \varphi = \frac{c\Omega}{\sqrt{k^2 + (c\Omega)^2}}
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{Discussione.} \sphinxstylestrong{todo}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+andamenti asintotici per \(\Omega \rightarrow 0, \ +\infty\)
+
+\item {} 
+\sphinxAtStartPar
+banda passante
+
+\item {} 
+\sphinxAtStartPar
+coefficienti non\sphinxhyphen{}dimensionali…
+
+\end{itemize}
+
+
+\subsubsection{Sistemi del secondo ordine}
+\label{\detokenize{ch/ode-lti:sistemi-del-secondo-ordine}}
+\sphinxAtStartPar
+La risposta forzata del sistema asintoticamente stabile del secondo ordine (con \(m > 0\), \(c > 0\) e \(k > 0\))
+\begin{equation*}
+\begin{split}m \ddot{x}(t) + c \dot{x}(t) + k x(t) = F \cos(\Omega t) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+coincide con la sua soluzione particolare,
+\begin{equation*}
+\begin{split}x_p(t) = A \cos(\Omega t) + B \sin(\Omega t) \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+I coefficienti \(A\), \(B\) vengono calcolati, valutando le derivate prima e seconda dell’espressione generica della soluzione e
+\begin{equation*}
+\begin{split}\begin{aligned}
+   \dot{x}_p(t) & = -\Omega A \sin(\Omega t) + \Omega B \cos(\Omega t) \\
+  \ddot{x}_p(t) & = -\Omega^2 A \cos(\Omega t) - \Omega^2 B \sin(\Omega t) \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+inserendola dell’equazione differenziale insieme all’espressione della soluzione,
+\begin{equation*}
+\begin{split}\begin{aligned}
+ F \cos (\Omega t)
+ & = m \ddot{x}(t) + c \dot{x}_p(t) + k x_p(t) = \\
+ & = m \Omega^2 \left( - A \cos(\Omega t) - B \sin(\Omega t)  \right) + c \Omega \left( - A \sin(\Omega t) + B \cos(\Omega t)  \right) + k \left( A \cos(\Omega t) + B \sin(\Omega t) \right) = \\
+ & = \cos(\Omega t) \left[ - m \Omega^2 + A c \Omega B + k A \right] + \sin(\Omega t) \left[ - m \Omega^2 B - c \Omega A + k B \right]
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Affinché l’espressione proposta sia una soluzione dell’equazione differenziale, l’ultima relazione deve annullarsi per ogni valore della variabile indipendente \(t\), e quindi devono annullarsi indipendendemente i coefficienti delle funzioni \(\cos(\Omega t)\) e \(\sin (\Omega t)\). Si ottengono quindi un sistema algebrico di due equazioni nelle due incognite \(A\), \(B\) identico a quello risolto in precedenza per i sistemi del primo ordine (basta chiamare \(\tilde{k} = k - m \Omega^2\)),
+\begin{equation*}
+\begin{split}
+\begin{cases}
+  (k - m \Omega^2) A + c \Omega B & = F \\
+ - c \Omega A + (k - m \Omega^2) B & = 0 \\
+\end{cases}
+\qquad \rightarrow \qquad
+\begin{aligned}
+  A = \frac{k - m \Omega^2}{(k-m\Omega)^2 + (c \Omega)^2} \, F \\
+  B = \frac{c\Omega}{(k-m\Omega^2)^2 + (c \Omega)^2} \, F  \\
+\end{aligned}
+\end{split}
+\end{equation*}
+\sphinxAtStartPar
+La soluzione è quindi una {\hyperref[\detokenize{ch/trigonometry:math-hs-trigonometry-linear-combination}]{\sphinxcrossref{\DUrole{std,std-ref}{combinazione lineare delle funzioni \(\cos\) e \(\sin\) con lo stesso argomento}}}},
+\begin{equation*}
+\begin{split}x_p(t) = \left[  \frac{k-m\Omega^2}{(k-m\Omega^2)^2 + (c \Omega)^2} \cos(\Omega t) + \frac{c \Omega}{(k-m\Omega^2)^2 + (c \Omega)^2} \sin(\Omega t) \right] F \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+che può essere quindi riscritta come
+\begin{equation*}
+\begin{split}x_p(t) = X \cos (\Omega t - \varphi) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+con l’ampiezza e il ritardo di fase
+\begin{equation*}
+\begin{split}\begin{aligned}
+  X(\Omega) & = \frac{1}{\sqrt{(k-m\Omega^2)^2 + (c\Omega)^2}} \\
+  \varphi(\Omega) & \ \text{ s.t.} \ \cos \varphi = \frac{k-m\Omega^2}{\sqrt{(k-m\Omega^2)^2 + (c\Omega)^2}} \quad , \quad \sin \varphi = \frac{c\Omega}{\sqrt{(k-m\Omega^2)^2 + (c\Omega)^2}}
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{Discussione.} \sphinxstylestrong{todo}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+andamenti asintotici per \(\Omega \rightarrow 0, \ +\infty\)
+
+\item {} 
+\sphinxAtStartPar
+banda passante
+
+\item {} 
+\sphinxAtStartPar
+risonanza e ruolo dello smorzamento
+
+\item {} 
+\sphinxAtStartPar
+coefficienti non\sphinxhyphen{}dimensionali: frequenza naturale e coefficiente di smorzamento
+
+\end{itemize}
+
+\sphinxstepscope
+
+
 \chapter{Introduzione al calcolo multi\sphinxhyphen{}variabile}
 \label{\detokenize{ch/multivariable-calculus:introduzione-al-calcolo-multi-variabile}}\label{\detokenize{ch/multivariable-calculus:multivariable-calculus}}\label{\detokenize{ch/multivariable-calculus::doc}}
 \sphinxAtStartPar
@@ -14391,7 +14995,26 @@ Si osservi come il risultato dell’integrale è indipendente dall’ordine di i
 \end{sphinxadmonition}
 
 
+\subsection{Esempi}
+\label{\detokenize{ch/multivariable-calculus/integrals:esempi}}\label{\detokenize{ch/multivariable-calculus/integrals:multivariable-calculus-integrals-examples}}
 
+\subsubsection{Integrale \protect\(\ \int_{x = \infty}^{+\infty} e^{-x^2} \, dx = \sqrt{\pi}\protect\)}
+\label{\detokenize{ch/multivariable-calculus/integrals:integrale-int-x-infty-infty-e-x-2-dx-sqrt-pi}}\label{\detokenize{ch/multivariable-calculus/integrals:integral-etox2}}
+\sphinxAtStartPar
+L’integrale \(\int_{x} \, e^{-x^2} \, dx\) è un integrale frequente in alcuni ambiti delle scienze. Ad esempio, compare in statistica di frequente quando è conivolta una \sphinxstyleemphasis{distribuzione di probabilità} normale, con densità di probabilità \(f(x;\mu,\sigma^2) = \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}\), che a sua volta è una delle distribuzioni di probabilità più frequenti.
+
+\sphinxAtStartPar
+Pur non esistendo una forma analitica semplice di questo integrale, il valore dell’integrale definito può essere calcolato usando gli integrali multidimensionali e un opportuno cambio di coordinate tra coordinate cartesiane e polari. Si calcola il valore del quadrato dell’integrale desiderato,
+\begin{equation*}
+\begin{split}\begin{aligned}
+  I^2 
+  & = \left( \int_{x = \infty}^{+\infty} e^{-x^2} \, dx \right) \, \left( \int_{y = \infty}^{+\infty} e^{-y^2} \, dy \right) = \\
+  & = \int_{x = \infty}^{+\infty} \int_{y = \infty}^{+\infty}  e^{-(x^2+y^2)} \, dx \, dy  = \\
+  & = \int_{\theta = 0}^{2\pi} \int_{r = 0}^{+\infty}  e^{-r^2} \, r \,  dr \, d \theta  = \\
+  & = 2 \pi \, \frac{1}{2} \, \int_{\theta = 0}^{2\pi} \int_{r = 0}^{+\infty}  e^{-r^2} d r^2 = \\
+  & = \pi \, \left. \left( - e^{-r^2} \right)\right|_{r=0}^{+\infty} = \pi \ .
+\end{aligned}\end{split}
+\end{equation*}
 \sphinxstepscope
 
 
@@ -15557,83 +16180,8 @@ Generalizzare i risultati trovati in precedenza a 1. piramidi con un poligono re
 
 \sphinxstepscope
 
-\begin{sphinxuseclass}{sd-container-fluid}
-\begin{sphinxuseclass}{sd-sphinx-override}
-\begin{sphinxuseclass}{sd-p-0}
-\begin{sphinxuseclass}{sd-mt-2}
-\begin{sphinxuseclass}{sd-mb-4}
-\begin{sphinxuseclass}{sd-row}
-\begin{sphinxuseclass}{sd-row-cols-2}
-\begin{sphinxuseclass}{sd-gx-2}
-\begin{sphinxuseclass}{sd-gy-1}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\begin{sphinxuseclass}{sd-container-fluid}
-\begin{sphinxuseclass}{sd-sphinx-override}
-\begin{sphinxuseclass}{sd-row}
-\begin{sphinxuseclass}{sd-row-cols-2}
-\begin{sphinxuseclass}{sd-row-cols-xs-2}
-\begin{sphinxuseclass}{sd-row-cols-sm-3}
-\begin{sphinxuseclass}{sd-row-cols-md-3}
-\begin{sphinxuseclass}{sd-row-cols-lg-3}
-\begin{sphinxuseclass}{sd-gx-3}
-\begin{sphinxuseclass}{sd-gy-1}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-col-auto}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\sphinxAtStartPar
-basics
 
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-col-auto}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\sphinxAtStartPar
-05 mar 2025
 
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-col-auto}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\sphinxAtStartPar
-0 min read
-
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
 
 \chapter{Introduzione alla statistica}
 \label{\detokenize{ch/statistics:introduzione-alla-statistica}}\label{\detokenize{ch/statistics:math-hs-statistics}}\label{\detokenize{ch/statistics::doc}}
@@ -15695,6 +16243,186 @@ RL: ottimizzazione/controllo
 …
 
 \end{itemize}
+
+\sphinxstepscope
+
+
+\section{Calcolo combinatorio}
+\label{\detokenize{ch/statistics/combinatorics:calcolo-combinatorio}}\label{\detokenize{ch/statistics/combinatorics:math-hs-statistics-combinatorics}}\label{\detokenize{ch/statistics/combinatorics::doc}}
+\sphinxAtStartPar
+Il calcolo combinatorio si occupa di contare i diversi modi possibili per organizzare un insieme finito di elementi.
+
+
+\subsection{Permutazioni}
+\label{\detokenize{ch/statistics/combinatorics:permutazioni}}
+\sphinxAtStartPar
+Una permutazione di un insieme \(I = \{ a_i \}_{i=1:n}\) di \(n\) elementi è una configurazione ordinata dei suoi elementi
+\begin{equation*}
+\begin{split}\left( a_{p_1}, a_{p_2}, \dots, a_{p_n} \right) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+nella quale ogni elemento viene presentato \sphinxstylestrong{una e una sola volta}. Si definiscono le \sphinxstylestrong{permutazioni semplici}, se l’insieme \(I\) non ha elementi ripetuti, e le \sphinxstylestrong{permutazioni con ripetizioni} se l’insieme \(I\) può avere elementi uguali.
+
+
+\subsubsection{Permutazioni semplici}
+\label{\detokenize{ch/statistics/combinatorics:permutazioni-semplici}}
+\sphinxAtStartPar
+Il numero di permutazioni semplici di un insieme di \(n\) elementi è
+\begin{equation*}
+\begin{split}P_n = n (n-1) \dots 2 \cdot 1 = n! \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+poichè ci sono \(n\) modi di scegliere il primo elemento, \(n-1\) modi di scegliere il secondo elemento una volta scelto il primo, \(n-2\) modi di scegliere il terzo elemento della sequenza una volta scelti i primi due, e così via fino all’ultimo elemento per il quale esiste un solo modo,
+
+
+\subsubsection{Permutazioni con ripetizioni}
+\label{\detokenize{ch/statistics/combinatorics:permutazioni-con-ripetizioni}}
+\sphinxAtStartPar
+Il numero di permutazioni con ripetizione distinte di un insieme di \(n\) elementi è
+\begin{equation*}
+\begin{split}P_{n, \mathbf{r}} = \frac{n!}{n_1! n_2! \dots n_r!} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+essendoci \(r\) elementi distinti nell’insieme \(I\) e l’elemento \(i\) ripetuto \(n_i\) volte, e quindi \(n = \sum_{r} n_r\). Supponendo che tutti gli elementi siano distinguibili, data una permutazione, esistono \(n_1!\) modi di disporre gli \(n_1\) elementi \(a_1\) ripetuti, \(n_2!\) modi di disporre gli \(n_2\) elementi \(a_2\) ripetuti,…e quindi il numero di sequenze distinte nel quale gli elementi uguali non sono distinguibili è uguale al numero di tutte le permutazioni semplici diviso il prodotto degli \(r\) fattoriali \(n_i!\).
+
+
+\subsection{Disposizioni}
+\label{\detokenize{ch/statistics/combinatorics:disposizioni}}
+
+\subsubsection{Disposizioni semplici}
+\label{\detokenize{ch/statistics/combinatorics:disposizioni-semplici}}
+\sphinxAtStartPar
+Dato un insieme \(I\) di \(n\) elementi distinti, una disposizione di \(k\) elementi è una \sphinxstylestrong{configurazione ordinata} di \(k \le n\) elementi nella quale non si possono avere ripetizioni degli elementi di \(I\). Il numero di disposizioni semplici è quindi
+\begin{equation*}
+\begin{split}D_{n,k} = n (n-1) \dots (n-k+1) = \frac{n!}{(n-k)!} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+seguendo lo stesso ragionamento con il quale si è ricavato il numero di permutazioni semplici, ma fermandosi alla scelta di \(k \le n\) elementi.
+
+\sphinxAtStartPar
+\sphinxstylestrong{Osservazione.} Se \(k = n\), le disposizioni semplici corrispondono alle permutazioni semplici.
+
+
+\subsubsection{Disposizioni con ripetizioni}
+\label{\detokenize{ch/statistics/combinatorics:disposizioni-con-ripetizioni}}
+\sphinxAtStartPar
+Dato un insieme \(I\) di \(n\) elementi distinti, una disposizione di \(k\) elementi è una \sphinxstylestrong{configurazione ordinata} di \(k \le n\) elementi nella quale si possono avere ripetizioni degli elementi di \(I\). Ogni elemento distinto dell’insieme \(I\) può essere scelto più volte. Il numero di disposizioni semplici è
+\begin{equation*}
+\begin{split}D'_{n,k} = \underbrace{n \cdot n \cdot \dots \cdot n}_{\text{$k $ volte}} = n^k \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+poiché ognuno degli \(n\) elementi distinti dell’insieme di partenza può essere scelto ogni volta.
+
+
+\subsection{Combinazioni}
+\label{\detokenize{ch/statistics/combinatorics:combinazioni}}
+
+\subsubsection{Combinazioni semplici}
+\label{\detokenize{ch/statistics/combinatorics:combinazioni-semplici}}
+\sphinxAtStartPar
+Dato un insieme \(I\) di \(n\) elementi distinti, una combinazione semplice di \(k\) elementi è una \sphinxstylestrong{configurazione non ordinata} di \(k \le n\) elementi dell’insieme \(I\), nella quale non si possono ripetere gli elementi di \(I\). Il numero di permutazioni semplici di \(k\) elementi è uguale al numero \(D_{n,k}\) delle disposizioni semplici di \(k\) oggetti di un insieme di \(n\) elementi (per le quali l’ordine è importante), diviso il numero di permutazioni semplici di \(k\) elementi (che è uguale al numero di modi di configurazioni ordinate dei \(k\) elementi di una disposizione),
+\begin{equation*}
+\begin{split}C_{n,k} = \frac{D_{n.k}}{P_k} = \frac{n!}{(n-k)! k!} = \left( \begin{matrix} n \\ k \end{matrix} \right) \ .\end{split}
+\end{equation*}
+
+\subsubsection{Combinazioni con ripetizioni}
+\label{\detokenize{ch/statistics/combinatorics:combinazioni-con-ripetizioni}}
+\sphinxAtStartPar
+Dato un insieme \(I\) di \(n\) elementi distinti, una combinazione con ripetizione di \(k\) elementi è una \sphinxstylestrong{configurazione non ordinata} di \(k\) elementi dell’insieme \(I\), nella quale ogni elemento può essere ripetuto \(k\) volte.
+
+\sphinxAtStartPar
+Il numero di combinazioni di \(k\) elementi con ripetizione degli elementi di un insieme \(I\) di \(n\) elementi distinti è uguale al numero di permutazioni con ripetizioni di \(k + n - 1\) elementi di un insieme di partenza con due elementi, uno ripetuto \(n-1\) volte, l’altro \(k\) volte, cioè
+\begin{equation*}
+\begin{split}C'_{n,k} = P_{n+k-1, (n-1,k)} = \frac{(n+k-1)!}{(n-1)! k!} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e quindi \(C'_{n,k} = \left( \begin{matrix} n+k-1 \\ k \end{matrix} \right)\).
+
+\sphinxAtStartPar
+Una dimostrazione può essere svolta rappresentando gli elementi della combinazione come una sequenza \(k\) di \(\ast\), separati da \(n-1\) divisori \(|\): gli \(n-1\) divisori separano la sequenza di \(k\) \(\ast\) in \(n\) regioni (ordinate) associabili con una corrispondenza biunivoca agli elementi (ordinati) dell’insieme di partenza; il numero di \(\ast\) nella \(i\)\sphinxhyphen{}esima regione rappresenta il numero di volte che l’elemento \(a_i\) è ripetuto nella sequenza. Così ad esempio, le combinazioni con ripetizione di \(k=4\) elementi di un insieme \(I = \{ 1,2,3 \}\) di \(n=3\) elementi possono essere rappresentate come
+\begin{equation*}
+\begin{split}\begin{aligned}
+  &    \ast    \ast   \ast    \ast || && \left\{  1,1,1,1 \right\} \\
+  &    \ast    \ast   \ast |  \ast |  && \left\{  1,1,1,2 \right\} \\
+  &    \ast    \ast | \ast    \ast |  && \left\{  1,1,2,2 \right\} \\
+  &    \ast |  \ast   \ast    \ast |  && \left\{  1,2,2,2 \right\} \\
+  & |  \ast    \ast   \ast    \ast |  && \left\{  2,2,2,2 \right\} \\
+  &    \ast    \ast   \ast || \ast    && \left\{  1,1,1,3 \right\} \\
+  & \dots \\
+  & || \ast    \ast   \ast    \ast    && \left\{  3,3,3,3 \right\} \\
+\end{aligned}\end{split}
+\end{equation*}\label{ch/statistics/combinatorics:example-0}
+\begin{sphinxadmonition}{note}{Example 29.1.1 (Combinazioni con ripetizione di \protect\(k=3\protect\) elementi di un insieme di \protect\(n=2\protect\) elementi)}
+
+
+
+\sphinxAtStartPar
+Il numero di combinazioni con ripetizione di \(k=3\) elementi dell’insieme \(I = \left\{ 1, 2 \right\}\) di \(n=2\) elementi è
+\begin{equation*}
+\begin{split}C'_{n,k} = \frac{(n+k-1)!}{(n-1)! k!} = \frac{(3+2-1)!}{1!3!} = 4 \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e le possibili combinazioni sono
+\begin{equation*}
+\begin{split}\begin{aligned}
+  &    \ast   \ast    \ast |  && \left\{  1,1,1 \right\} \\
+  &    \ast   \ast |  \ast    && \left\{  1,1,2 \right\} \\
+  &    \ast | \ast    \ast    && \left\{  1,2,2 \right\} \\
+  & |  \ast   \ast    \ast    && \left\{  2,2,2 \right\} \\
+\end{aligned}\end{split}
+\end{equation*}\end{sphinxadmonition}
+\label{ch/statistics/combinatorics:example-1}
+\begin{sphinxadmonition}{note}{Example 29.1.2 (Combinazione con ripetizioni di \protect\(k=2\protect\) elementi di un insieme di \protect\(n=3\protect\) elementi)}
+
+
+
+\sphinxAtStartPar
+Il numero di combinazioni con ripetizione di \(k=2\) elementi dell’insieme \(I = \left\{ 1, 2, 3 \right\}\) di \(n=3\) elementi è
+\begin{equation*}
+\begin{split}C'_{n,k} = \frac{(n+k-1)!}{(n-1)! k!} = \frac{(2+3-1)!}{2!2!} = 6 \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e le possibili combinazioni sono
+\begin{equation*}
+\begin{split}\begin{aligned}
+  &    \ast    \ast ||  && \left\{  1,1 \right\} \\
+  &    \ast |  \ast |   && \left\{  1,2 \right\} \\
+  &    \ast || \ast     && \left\{  1,3 \right\} \\
+  &  | \ast    \ast |   && \left\{  2,2 \right\} \\
+  &  | \ast |  \ast     && \left\{  2,3 \right\} \\
+  & || \ast    \ast     && \left\{  3,3 \right\} \\
+\end{aligned}\end{split}
+\end{equation*}\end{sphinxadmonition}
+\label{ch/statistics/combinatorics:example-2}
+\begin{sphinxadmonition}{note}{Example 29.1.3 (Caramelle uguali a bambini diversi)}
+
+
+
+\sphinxAtStartPar
+In quanti modi si possono distribuire \(5\) caramelle indistinguibili a \(3\) bambini distinguibili? Il numero è uguale al numero di combinazioni con ripetizione di \(k=5\) elementi di un gruppo di \(n=3\) elementi, e cioè
+\begin{equation*}
+\begin{split}C'_{3,5} = \frac{7!}{2! \cdot 5!} = \frac{6 \cdot 7}{2} = 21 \ .\end{split}
+\end{equation*}\end{sphinxadmonition}
+\label{ch/statistics/combinatorics:example-3}
+\begin{sphinxadmonition}{note}{Example 29.1.4 (Bose\sphinxhyphen{}Einstein)}
+
+
+
+\sphinxAtStartPar
+…
+\end{sphinxadmonition}
+
+\begin{sphinxadmonition}{note}{Nota:}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+esistenza librerie
+
+\item {} 
+\sphinxAtStartPar
+nel calcolo delle configurazioni in problemi di grosse dimensioni si possono incontrare limiti dell’aritmetica finita: \sphinxstylestrong{overflow} con i fattoriali; se compare un rapporto tra fattoriali, meglio non calcolare l’intero numeratore e l’intero denominatore prima di fare il rapporto…
+
+\end{itemize}
+\end{sphinxadmonition}
 
 \sphinxstepscope
 
@@ -15774,8 +16502,17 @@ RL: ottimizzazione/controllo
 \bigletter{example\sphinxhyphen{}18}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}18}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{example-18}}
 \indexspace
+\bigletter{example\sphinxhyphen{}19}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}19}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{example-19}}
+\indexspace
 \bigletter{example\sphinxhyphen{}2}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}2}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/vector-calculus/integrals:\detokenize{example-2}}
+\indexspace
+\bigletter{example\sphinxhyphen{}20}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}20}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{example-20}}
+\indexspace
+\bigletter{example\sphinxhyphen{}21}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}21}\sphinxstyleindexextra{ch/infinitesimal\_calculus/integrals}\sphinxstyleindexpageref{ch/infinitesimal_calculus/integrals:\detokenize{example-21}}
 \indexspace
 \bigletter{example\sphinxhyphen{}3}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}3}\sphinxstyleindexextra{ch/vector\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/vector-calculus/integrals:\detokenize{example-3}}
@@ -15827,6 +16564,9 @@ RL: ottimizzazione/controllo
 \indexspace
 \bigletter{interval\sphinxhyphen{}open\sphinxhyphen{}close}
 \item\relax\sphinxstyleindexentry{interval\sphinxhyphen{}open\sphinxhyphen{}close}\sphinxstyleindexextra{ch/infinitesimal\_calculus/analysis}\sphinxstyleindexpageref{ch/infinitesimal_calculus/analysis:\detokenize{interval-open-close}}
+\indexspace
+\bigletter{limit:example:lim\sphinxhyphen{}xne\sphinxhyphen{}x}
+\item\relax\sphinxstyleindexentry{limit:example:lim\sphinxhyphen{}xne\sphinxhyphen{}x}\sphinxstyleindexextra{ch/infinitesimal\_calculus/derivatives}\sphinxstyleindexpageref{ch/infinitesimal_calculus/derivatives:\detokenize{limit:example:lim-xne-x}}
 \indexspace
 \bigletter{linsys\sphinxhyphen{}gauss}
 \item\relax\sphinxstyleindexentry{linsys\sphinxhyphen{}gauss}\sphinxstyleindexextra{ch/algebra/linear\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/linear-algebra:\detokenize{linsys-gauss}}
@@ -15935,6 +16675,9 @@ RL: ottimizzazione/controllo
 \indexspace
 \bigletter{thm:infinitesimal\sphinxhyphen{}calculus:derivatives:thm:rolle}
 \item\relax\sphinxstyleindexentry{thm:infinitesimal\sphinxhyphen{}calculus:derivatives:thm:rolle}\sphinxstyleindexextra{ch/infinitesimal\_calculus/derivatives}\sphinxstyleindexpageref{ch/infinitesimal_calculus/derivatives:\detokenize{thm:infinitesimal-calculus:derivatives:thm:rolle}}
+\indexspace
+\bigletter{trigonometry:cos2x}
+\item\relax\sphinxstyleindexentry{trigonometry:cos2x}\sphinxstyleindexextra{ch/trigonometry}\sphinxstyleindexpageref{ch/trigonometry:\detokenize{trigonometry:cos2x}}
 \end{sphinxtheindex}
 
 \renewcommand{\indexname}{Indice}

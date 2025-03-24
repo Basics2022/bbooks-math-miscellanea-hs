@@ -334,6 +334,46 @@ $$ \lim_{x \rightarrow x_0} \frac{f(x)}{g(x)} = \ell \ . $$
 
 **Oss.** Il teorema di de l'Hopital può essere applicato anche in successione, più di una volta, fermandosi al primo rapporto di derivate dello stesso ordine che non produce una forma indeterminata.
 
+```{prf:example} Limite $\lim_{x \rightarrow +\infty} x^n \, e^{-x}$
+:label: limit:example:lim-xne-x
+:class: dropdown
+
+Il calcolo del limite $\lim_{x \rightarrow +\infty} x^n \, e^{-x}$ è una forma indeterminata $\frac{+\infty}{+\infty}$ se $n > 0$, mentre vale $0$ se $n < 0$ poiché prodotto di due funzioni che tendono a zero. Nel caso in cui $n>0$, la forma indeterminata può essere ricondotta a un [confronto di infiniti](infinitesimal-calculus:limits:infinite-simal),
+
+$$\begin{aligned}
+  \lim_{x \rightarrow +\infty} x^n \, e^{-x}
+  & = \lim_{x \rightarrow +\infty} \frac{x^n}{e^x} \ , 
+\end{aligned}$$
+
+e calcolato applicando ripetutamente il [teorema di de l'Hopital](infinitesimal-calculus:derivatives:thm:hopital)
+
+$$\begin{aligned}
+  \lim_{x \rightarrow +\infty} x^n \, e^{-x}
+  & = \lim_{x \rightarrow +\infty} \frac{x^n}{e^x} = && \quad \text{(Hopital)} \\
+  & = \lim_{x \rightarrow +\infty} \frac{n x^{n-1}}{e^x} = && \quad \text{(Hopital)} \\
+  & = \lim_{x \rightarrow +\infty} \frac{n (n-1) x^{n-2}}{e^x} = && \quad \text{(Hopital)} \\
+  & = ... \\
+\end{aligned}$$
+
+Se $n \in \mathbb{N}$ intero, dopo aver applicato $n$ volte il teorema di de l'Hopital si arriva alla forma
+
+$$\begin{aligned}
+  \lim_{x \rightarrow +\infty} x^n \, e^{-x}
+  & = \lim_{x \rightarrow +\infty} \frac{n!}{e^x} = 0 \ ,
+\end{aligned}$$
+
+poichè $n!$, pur quanto grande sia, è una costante di valore finito, mentre $\lim_{x \rightarrow +\infty} e^{x} = +\infty$, o brutalmente "$\frac{C}{+\infty} = 0$".
+
+Se $n \in \mathbb{R}$, $n \notin \mathbb{R}$, reale non intero, dopo aver applicato $\lceil n \rceil$ volte il teorema di de l'Hopital si arriva alla forma
+
+$$\begin{aligned}
+  \lim_{x \rightarrow +\infty} x^n \, e^{-x}
+  & = \lim_{x \rightarrow +\infty} \frac{n(n-1)(n-2)\dots\{ n \} x^{\{ n \}-1}}{e^x} = 0 \ ,
+\end{aligned}$$
+
+poiché il numeratore è una potenza negativa di $x$, e quindi tende a zero per $x \rightarrow +\infty$, e il denominatore tende all'infinito, o brutalmente "$\frac{0}{+\infty} = 0$".
+
+```
 
 (infinitesimal-calculus:derivatives:fund)=
 ## Derivate fondamentali

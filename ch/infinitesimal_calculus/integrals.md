@@ -305,7 +305,7 @@ $$\begin{aligned}
  & = \lim_{a \rightarrow 0^+} \int_{x=a}^{b} x^{-n} \, dx = \\
  & = \lim_{a \rightarrow 0^+} \left[ \frac{1}{-n+1} \left. x^{-n+1} \right|_{x=a}^{b} \right] = \\
  & = \frac{1}{-n+1} \lim_{a \rightarrow 0^+} \left[ b^{-n+1} - a^{-n+1} \right] 
-   = \begin{cases} \frac{1}{1-n} b^{1-n} && \text{$n < 1$} \\ +\infty && \text{$n > 1$} \end{cases} \ ,
+   = \begin{cases} \frac{1}{1-n} b^{1-n} \hfill \qquad \text{$n < 1$} \\ +\infty \hfill \qquad \text{$n > 1$} \end{cases} \ ,
 \end{aligned}$$
 
 ```
@@ -317,6 +317,7 @@ $$\begin{aligned}
 ### Condizioni di integrabilità
 ...
 
+(infinitesimal-calculus:integrals:improper:cauchy)=
 ### Valore principale di Cauchy
 In alcuni casi è possibile "risolvere" una forma indeterminata della forma $+\infty - \infty$ nel calcolo di un integrale improprio che dà come risultato un valore finito. Questo valore finito viene definito valore principale di Cauchy. E' questo l'esempio dell'integrale della funzione $\frac{1}{x}$ su un intervallo che contiene il punto $x=0$. Questo punto è un punto di discontinuità della funzione, dove questa non è definita. Dati due valori $a$, $b$ tali che $a < 0 < b$, l'integrale $\int_{x=a}^{b} \frac{1}{x} \, dx$ viene quindi interpretato come
 

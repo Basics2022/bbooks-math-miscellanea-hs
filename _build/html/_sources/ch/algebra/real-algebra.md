@@ -31,8 +31,22 @@ Nel campo dei numeri reali, l'operazione di potenza, $a^b = c$, è ben definita:
 
 **todo** *controllare, rimandare al capitolo sugli insiemi numerici; spostare nel capitolo sugli insiemi numerici?*
 
+(math-hs:algebra:real:root)=
 ### Radice
 **Definizione e condizioni.**
+
+La radice quadrata di un numero reale $a$ è ben definita solo per i numeri reali non negativi, come la soluzione positiva dell'equazione
+
+$$x^2 = a^2 \ ,$$
+
+che in generale ha due soluzioni, $\mp |a|$, come è immediato verificare con le proprietà delle potenze (o della moltiplicazione),
+
+$$
+(-|a|) \cdot (-|a|) = a^2 \qquad , \qquad
+  |a|  \cdot   |a|  = a^2
+$$
+
+
 
 **Proprietà.**
 

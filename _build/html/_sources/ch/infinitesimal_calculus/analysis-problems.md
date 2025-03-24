@@ -173,7 +173,9 @@ $$\begin{aligned}
 
 (infinitesimal-calculus:analysis:problems:limits-lateral)=
 ```{exercise} Limiti laterali
+:label: ex-limits-lateral
 :class: dropdown
+
 1. $\lim_{x \to 0^+} \frac{1}{x}$  
 2. $\lim_{x \to 0^-} \frac{1}{x}$  
 3. $\lim_{x \to 1^+} \frac{x^2 - 1}{x - 1}$  
@@ -183,7 +185,24 @@ $$\begin{aligned}
 7. $\lim_{x \to 0^+} x \sin\left(\frac{1}{x}\right)$  
 8. $\lim_{x \to 0^-} x \cos\left(\frac{1}{x}\right)$  
 9. $\lim_{x \to \pi^+} \tan(x)$  
-10. $\lim_{x \to 0^-} e^{\frac{1}{x}}$  
+10. $\lim_{x \to 0^-} e^{\frac{1}{x}}$ 
+11. (a) $\lim_{x \to 0^-} \frac{\cos \theta}{\text{atan} \theta}$; (b) $\lim_{x \to 0^+} \frac{\cos \theta}{\text{atan} \theta} \qquad \text{R:}\ \text{(a)}: -\infty\text{; (b):} +\infty$
+```
+
+```{dropdown} Soluzioni
+
+**11.** I limiti
+
+$$\lim_{x \to 0^\mp} \frac{\cos x}{\text{atan} x} \, dx$$
+
+sono i limiti di un rapporto "$\frac{1}{0}$". La funzione arcotangente $\text{atan}(x)$ è negativa per $x < 0$ e positiva per $x > 0$. Quindi il limite sinistro vale "$\frac{1}{0^-} = - \infty$", mentre il limite destro vale "$\frac{1}{0^+} = + \infty$", o meno brutalemnte
+
+$$\begin{aligned}
+  \lim_{x \to 0^-} \frac{\cos x}{\text{atan} x} = -\infty \qquad , \qquad
+  \lim_{x \to 0^+} \frac{\cos x}{\text{atan} x} = +\infty \\
+\end{aligned}$$
+
+
 ```
 
 (infinitesimal-calculus:analysis:problems:limits-infinite)=
