@@ -76,15 +76,6 @@ const thebe_selector_output = ".output, .cell_output"
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-P4PD40TTJE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-P4PD40TTJE');
-</script>
-
   
   
   <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
@@ -178,6 +169,7 @@ const thebe_selector_output = ".output, .cell_output"
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduzione</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../program.html">Programma</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../todo.html"><span class="math notranslate nohighlight">\(\texttt{todo}\)</span></a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Insiemistica e logica</span></p>
 <ul class="nav bd-sidenav">
@@ -544,7 +536,7 @@ document.write(`
 <div class="section" id="parametrizzazione-dello-spazio">
 <span id="vector-calculus-geometry-coordinates"></span><h2><span class="section-number">28.1.1. </span>Parametrizzazione dello spazio<a class="headerlink" href="#parametrizzazione-dello-spazio" title="Permalink to this heading">#</a></h2>
 <p>Uno spazio può essere descritto tramite l’uso di un sistema di coordinate, composto da una <span class="math notranslate nohighlight">\(n\)</span>-upla di coordinate indipendenti <span class="math notranslate nohighlight">\(\left( q^i \right)_{i = 1:n}\)</span>.</p>
-<div class="proof definition admonition" id="definition-0">
+<div class="proof definition admonition" id="def-parametrization-regular">
 <p class="admonition-title"><span class="caption-number">Definition 28.1 </span> (Parametrizzazione regolare)</p>
 <div class="definition-content section" id="proof-content">
 <p>Una parametrizzazione di una regione dello spazio spazio è <strong>regolare</strong> se è una funzione biunivoca,</p>
@@ -557,14 +549,14 @@ document.write(`
 <li><p><em>Conseguenze sulle funzioni delle coordiante dei punti in funzione delle coordiante: derivata non si annulla nel dominio…</em></p></li>
 <li><p><em>Può essere necessario/utile definire più parametrizzazioni che coprono diverse zone del dominio…</em></p></li>
 </ul>
-<div class="proof example dropdown admonition" id="example-1">
+<div class="proof example dropdown admonition" id="def-cartesian-coords-e2">
 <p class="admonition-title"><span class="caption-number">Example 28.1 </span> (Spazio <span class="math notranslate nohighlight">\(E^2\)</span>: coordinate cartesiane)</p>
 <div class="example-content section" id="proof-content">
 <p>Dopo aver scelto il punto <span class="math notranslate nohighlight">\(O\)</span> come origine, è possibile utilizzare un sistema di coordinate cartesiane <span class="math notranslate nohighlight">\((q^1, q^2) = (x,y)\)</span> e rappresentare un generico punto <span class="math notranslate nohighlight">\(P\)</span> dello spazio come</p>
 <div class="math notranslate nohighlight">
 \[\vec{r} = P - O = x \, \hat{x} + y \, \hat{y} \ .\]</div>
 </div>
-</div><div class="proof example dropdown admonition" id="example-2">
+</div><div class="proof example dropdown admonition" id="def-polar-coords-e2">
 <p class="admonition-title"><span class="caption-number">Example 28.2 </span> (Spazio <span class="math notranslate nohighlight">\(E^2\)</span>: coordinate polari)</p>
 <div class="example-content section" id="proof-content">
 <p>Utilizzando un sistema di coordinate polari con la stessa origine <span class="math notranslate nohighlight">\(O\)</span> di un sistema di coordinate cartesiane, e l’asse di riferimento per l’angolo <span class="math notranslate nohighlight">\(\theta\)</span> coincidente con l’asse <span class="math notranslate nohighlight">\(x\)</span> del sistema di coordinate cartesiane, è possibile rappresentare le coordinate cartesiane in funzione delle coordinate polari <span class="math notranslate nohighlight">\((q^1, q^2) = (r, \theta)\)</span></p>
@@ -577,14 +569,14 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[\vec{r} = r \, \cos \theta \, \hat{x} + r \, \sin \theta \, \hat{y} \ .\]</div>
 </div>
-</div><div class="proof example dropdown admonition" id="example-3">
+</div><div class="proof example dropdown admonition" id="def-cartesinan-coords-e3">
 <p class="admonition-title"><span class="caption-number">Example 28.3 </span> (Spazio <span class="math notranslate nohighlight">\(E^3\)</span>: coordinate cartesiane)</p>
 <div class="example-content section" id="proof-content">
 <p>Dopo aver scelto il punto <span class="math notranslate nohighlight">\(O\)</span> come origine, è possibile utilizzare un sistema di coordinate cartesiane <span class="math notranslate nohighlight">\((q^1, q^2, q^3) = (x,y,z)\)</span> e rappresentare un generico punto <span class="math notranslate nohighlight">\(P\)</span> dello spazio come</p>
 <div class="math notranslate nohighlight">
 \[\vec{r} = P - O = x \, \hat{x} + y \, \hat{y} + z \, \hat{z} \ .\]</div>
 </div>
-</div><div class="proof example dropdown admonition" id="example-4">
+</div><div class="proof example dropdown admonition" id="def-cylindrical-coords-e3">
 <p class="admonition-title"><span class="caption-number">Example 28.4 </span> (Spazio <span class="math notranslate nohighlight">\(E^3\)</span>: coordinate cilindriche)</p>
 <div class="example-content section" id="proof-content">
 <p>Utilizzando un sistema di coordinate polari con la stessa origine <span class="math notranslate nohighlight">\(O\)</span> di un sistema di coordinate cartesiane, gli assi <span class="math notranslate nohighlight">\(z\)</span> coincidenti, e l’asse di riferimento per l’angolo <span class="math notranslate nohighlight">\(\theta\)</span> coincidente con l’asse <span class="math notranslate nohighlight">\(x\)</span> del sistema di coordinate cartesiane, è possibile rappresentare le coordinate cartesiane in funzione delle coordinate polari <span class="math notranslate nohighlight">\((q^1, q^2, q^3) = (r, \theta, z)\)</span></p>
@@ -598,7 +590,7 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[\vec{r} = r \, \cos \theta \, \hat{x} + r \, \sin \theta \, \hat{y} + z \, \hat{z} \ .\]</div>
 </div>
-</div><div class="proof example dropdown admonition" id="example-5">
+</div><div class="proof example dropdown admonition" id="def-spherical-coords-e3">
 <p class="admonition-title"><span class="caption-number">Example 28.5 </span> (Spazio <span class="math notranslate nohighlight">\(E^3\)</span>: coordinate sferiche)</p>
 <div class="example-content section" id="proof-content">
 <p>Utilizzando un sistema di coordinate polari con la stessa origine <span class="math notranslate nohighlight">\(O\)</span> di un sistema di coordinate cartesiane, gli assi <span class="math notranslate nohighlight">\(z\)</span> coincidenti, e l’asse di riferimento per l’angolo <span class="math notranslate nohighlight">\(\theta\)</span> coincidente con l’asse <span class="math notranslate nohighlight">\(x\)</span> del sistema di coordinate cartesiane, è possibile rappresentare le coordinate cartesiane in funzione delle coordinate polari <span class="math notranslate nohighlight">\((q^1, q^2, q^3) = (R, \phi, \theta)\)</span></p>
@@ -623,7 +615,7 @@ document.write(`
 <p>e per spazi 3-dimensionali</p>
 <div class="math notranslate nohighlight">
 \[\vec{r} = P - O = x \left(q^1, q^2, q^3\right) \hat{x} + y\left(q^1, q^2, q^3 \right) \hat{y} + z\left( q^1, q^2, q^3 \right) \hat{z} \ .\]</div>
-<div class="proof definition admonition" id="definition-6">
+<div class="proof definition admonition" id="def-natural-base">
 <p class="admonition-title"><span class="caption-number">Definition 28.2 </span> (Base naturale)</p>
 <div class="definition-content section" id="proof-content">
 <p>In ogni punto dello spazio, è possibile definire i vettori della base naturale indotta da una particolare scelta del sistema di coordinate <span class="math notranslate nohighlight">\(\left( q^i \right)_{i:n}\)</span> come le <a class="reference internal" href="../multivariable-calculus/derivatives.html#multivariable-calculus-derivatives-partial"><span class="std std-ref">derivata parziali</span></a> del punto <span class="math notranslate nohighlight">\(P\)</span> rispetto alle coordinate <span class="math notranslate nohighlight">\(q^i\)</span>. I vettori della base naturale <span class="math notranslate nohighlight">\(\left\{\vec{b}_i \right\}_{i=1:n}\)</span> indotta dalle coordinate <span class="math notranslate nohighlight">\(\left( q^i \right)_{i=1:n}\)</span> sono quindi i vettori</p>
@@ -637,7 +629,7 @@ document.write(`
 <li><p>non hanno lunghezza unitaria</p></li>
 <li><p>non sono omogenei nelle dimensioni, né adimensionali.</p></li>
 </ul>
-<div class="proof definition admonition" id="definition-7">
+<div class="proof definition admonition" id="def-physical-base">
 <p class="admonition-title"><span class="caption-number">Definition 28.3 </span> (Base fisica)</p>
 <div class="definition-content section" id="proof-content">
 <p>Nel caso in cui la base naturale sia ortogonale, è possibile definire una <strong>base fisica</strong> - orto-normale con vettori unitari e adimensionali - tramite un semplice processo di normalizzazione dei vettori della base,</p>
@@ -645,7 +637,7 @@ document.write(`
 \[\hat{b}_i := \frac{\vec{b}_i}{|\vec{b}_i|} \ .\]</div>
 </div>
 </div><p>La definizione di una base fisica, quando possibile, può rendere la rappresentazione di un vettore o di un campo vettoriale più «ordinata», avendo le componenti del vettore le stesse dimensioni fisiche della grandezza che viene rappresentata, poiché i vettori della base fisica sono adimensionali e di lunghezza unitaria -  e quindi contenenti unicamente l’informazione vettoriale sulla direzione.</p>
-<div class="proof example dropdown admonition" id="example-8">
+<div class="proof example dropdown admonition" id="def-cartesian-coords-e2-base">
 <p class="admonition-title"><span class="caption-number">Example 28.6 </span> (Spazio <span class="math notranslate nohighlight">\(E^2\)</span>: coordinate cartesiane)</p>
 <div class="example-content section" id="proof-content">
 <p>I vettori della base naturale sono</p>
@@ -656,7 +648,7 @@ document.write(`
 \end{cases}\end{split}\]</div>
 <p>Ricordando le proprietà dei vettori di una base cartesiana <strong>todo</strong> <em>link</em>, è immediato verificare che la base naturale di un sistema di coordinate cartesiane è anche la sua base fisica (adimensionale non-dimensionale).</p>
 </div>
-</div><div class="proof example dropdown admonition" id="example-9">
+</div><div class="proof example dropdown admonition" id="def-polar-coords-e2-base">
 <p class="admonition-title"><span class="caption-number">Example 28.7 </span> (Spazio <span class="math notranslate nohighlight">\(E^2\)</span>: coordinate polari)</p>
 <div class="example-content section" id="proof-content">
 <p>I vettori della base naturale sono</p>
@@ -672,7 +664,7 @@ document.write(`
   \hat{\theta} = \frac{\hat{b}_2}{|\vec{b}_2|} = - \sin \theta \hat{x} + \cos \theta \hat{y} \\
 \end{cases}\end{split}\]</div>
 </div>
-</div><div class="proof example dropdown admonition" id="example-10">
+</div><div class="proof example dropdown admonition" id="def-cartesian-coords-e3-base">
 <p class="admonition-title"><span class="caption-number">Example 28.8 </span> (Spazio <span class="math notranslate nohighlight">\(E^3\)</span>: coordinate cartesiane)</p>
 <div class="example-content section" id="proof-content">
 <p>I vettori della base naturale sono</p>
@@ -684,7 +676,7 @@ document.write(`
 \end{cases}\end{split}\]</div>
 <p>Ricordando le proprietà dei vettori di una base cartesiana <strong>todo</strong> <em>link</em>, è immediato verificare che la base naturale di un sistema di coordinate cartesiane è anche la sua base fisica (adimensionale non-dimensionale).</p>
 </div>
-</div><div class="proof example dropdown admonition" id="example-11">
+</div><div class="proof example dropdown admonition" id="def-cylindrical-coords-e3-base">
 <p class="admonition-title"><span class="caption-number">Example 28.9 </span> (Spazio <span class="math notranslate nohighlight">\(E^3\)</span>: coordinate cilindriche)</p>
 <div class="example-content section" id="proof-content">
 <p>I vettori della base naturale sono</p>
@@ -702,7 +694,7 @@ document.write(`
   \hat{z}      = \hat{b}_3 = \hat{z} \\
 \end{cases}\end{split}\]</div>
 </div>
-</div><div class="proof example dropdown admonition" id="example-12">
+</div><div class="proof example dropdown admonition" id="def-spherical-coords-e3-base">
 <p class="admonition-title"><span class="caption-number">Example 28.10 </span> (Spazio <span class="math notranslate nohighlight">\(E^3\)</span>: coordinate sferiche)</p>
 <div class="example-content section" id="proof-content">
 <p>I vettori della base naturale sono</p>
@@ -841,7 +833,7 @@ $$\begin{aligned}
   d V & = r^2 \sin \phi \, dr \, d\phi \, d\theta & \qquad \text{(coordinate sferiche)}
 \end{aligned}$$
 -->
-<div class="proof example dropdown admonition" id="example-14">
+<div class="proof example dropdown admonition" id="volume-cartesian-coords">
 <p class="admonition-title"><span class="caption-number">Example 28.11 </span> (Elemento di volume in coordinate cartesiane)</p>
 <div class="example-content section" id="proof-content">
 <div class="math notranslate nohighlight">
@@ -855,7 +847,7 @@ $$\begin{aligned}
   &amp; = dx \, dy \, dz \ .
 \end{aligned}\end{split}\]</div>
 </div>
-</div><div class="proof example dropdown admonition" id="example-15">
+</div><div class="proof example dropdown admonition" id="volume-cylindrical-coords">
 <p class="admonition-title"><span class="caption-number">Example 28.12 </span> (Elemento di volume in coordinate cilindriche)</p>
 <div class="example-content section" id="proof-content">
 <div class="math notranslate nohighlight">
@@ -873,7 +865,7 @@ $$\begin{aligned}
   &amp; = R \, dR \, d \theta \, dz 
 \end{aligned}\end{split}\]</div>
 </div>
-</div><div class="proof example dropdown admonition" id="example-16">
+</div><div class="proof example dropdown admonition" id="volume-spherical-coords">
 <p class="admonition-title"><span class="caption-number">Example 28.13 </span> (Elemento di volume in coordinate sferiche)</p>
 <div class="example-content section" id="proof-content">
 <div class="math notranslate nohighlight">

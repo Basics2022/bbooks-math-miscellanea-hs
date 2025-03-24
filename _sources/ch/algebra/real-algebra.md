@@ -83,6 +83,7 @@ $$\frac{a_n x^n + a_{n-1} x^{n-1} + \dots a_0}{b_m x^m + b_{m-1} x^{m-1} + \dots
 Per il [teorema fondamentale dell'algebra](math-hs:precalculus:polynomials:alg-fund-thm), ogni polinomio può essere scritto come prodotto di polinomi di primo o secondo ordine. Se i polinomi al numeratore e al denominatore della frazione algebrica non hanno fattori in comune, la frazione algebrica viene definita **in forma semplice**.
 
 ```{prf:example} Frazioni algebriche semplici e non semplici
+:label: real-algebra-fraction-simple
 :class: dropdown
 
 La frazione $\frac{x^2-3x+2}{x^2+1} = \frac{(x-2)(x-1)}{x^2+1}$ è in forma ridotta, mentre la frazione $\frac{x^2-3x+2}{x^2-1} = \frac{(x-2)(x-1)}{(x+1)(x-1)}$ non è in forma ridotta e, **per** $x \ne 1$ **(!)**, è uguale a $\frac{x-2}{x+1}$.
@@ -92,6 +93,7 @@ La frazione $\frac{x^2-3x+2}{x^2+1} = \frac{(x-2)(x-1)}{x^2+1}$ è in forma rido
 Una **frazione propria** ha il grado $n$ del numeratore inferiore al grado $m$ del denominatore. Una frazione non propria può essere scritta come un polinomio di grado $n-m$ e una frazione propria
 
 ```{prf:example} Frazioni non proprie
+:label: real-algebra-fraction-improper
 :class: dropdown
 
 La frazione $\frac{x^2 + 2x + 1}{x - 2}$ può essere scritta "completando il quadrato" come
@@ -105,6 +107,7 @@ con la semplificazione possibile per $x \ne 2$.
 Se il denominatore è scomponibile come prodotto di polinomi, allora la frazione algebrica può essere scritta come **somma di frazioni parziali**. In alcune applicazioni, come il calcolo degli integrali, può essere conveniente scrivere una frazione come somma di frazioni parziali, poiché risulta più semplice trattare somme di frazioni con numeratore di grado 1 o 2, di frazioni con numeratore di grado qualsiasi.
 
 ```{prf:example} Somma di frazioni parziali
+:label: real-algebra-fraction-sum-partial
 :class: dropdown
 
 La frazione $\frac{3x}{x^2-1}$ può essere scritta come somma di frazioni parziali $\frac{3 x}{x^2-1} = \frac{3}{2} \frac{1}{x-1} + \frac{3}{2}\frac{1}{x+1}$, poiché
@@ -210,8 +213,10 @@ $$ x = \alpha_x u + x_0  \quad , \quad y = \alpha_y v + y_0 \ ,$$
 - *Aggiungere un'imamgine con il procedimento di trasformazione di variabili/incognite (e coordinate)*
 - *Aggiungere un'immagine su alcune famiglie di curve, al variare dei parametri*
 
+<!--
 ```{prf:example} ...
 ```
+-->
 
 
 ## Problemi con due o più incognite - sistemi di equazioni e disequazioni

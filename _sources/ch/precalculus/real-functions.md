@@ -87,6 +87,9 @@ $$\begin{aligned}
 - *Una funzione monotona è biunivoca*
 - *Una funzione monotona è invertibile* (Va' che [sillogismo](logics:syllogism)!)
 
+(math-hs:precalculus:real-functions:inverse:plot)=
+##à Grafico della funzione inversa
+
 (math-hs:precalculus:real-functions:problems)=
 ## Problemi
 **todo**

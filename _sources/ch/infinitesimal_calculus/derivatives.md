@@ -5,6 +5,7 @@
 ## Definizione
 
 ```{prf:definition} Rapporto incrementale
+:label: derivatives-incremental-ratio
 
 Il rapporto incrementale di una funzione reale nel punto $x$ viene definito come il rapporto tra la differenza dei valori della funzione e la differenza del valore della variabile indipendente
 
@@ -12,6 +13,7 @@ $$R[f(\cdot), x, h] := \dfrac{f(x+h)-f(x)}{h} \ .$$ (eq:infinitesimal-calculus:d
 ```
 
 ```{prf:definition} Derivata
+:label: derivatives-derivative
 
 La derivata di una funzione reale in un punto $x$ viene definita come il limite del rapporto incrementale, per l'incremento della variabile indipendente che tende a zero,
 
@@ -38,6 +40,8 @@ Il valore della derivata di una funzione $f(x)$ in un punto $x$ corrisponde al c
 (infinitesimal-calculus:derivatives:differential)=
 ## Incremento di una funzione e differenziale
 ```{prf:definition} Incremento di una funzione
+:label: derivatives-increment
+
 L'incremento di una funzione $f$ in seguito all'incremento $h$ della variabile indipendente $x$ è
 
 $$\Delta f (x, h) := f(x+h) - f(x) \ .$$
@@ -45,6 +49,7 @@ $$\Delta f (x, h) := f(x+h) - f(x) \ .$$
 ```
 
 ```{prf:definition} Differenziale di una funzione
+:label: derivatives-differential
 
 Il differenziale di una funzione $f$ può essere definito come il termine di primo ordine in $h$ dell'incremento $\Delta f(x,h)$,
 

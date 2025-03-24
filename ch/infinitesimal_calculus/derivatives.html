@@ -76,15 +76,6 @@ const thebe_selector_output = ".output, .cell_output"
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-P4PD40TTJE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-P4PD40TTJE');
-</script>
-
   
   
   <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
@@ -178,6 +169,7 @@ const thebe_selector_output = ".output, .cell_output"
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduzione</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../program.html">Programma</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../todo.html"><span class="math notranslate nohighlight">\(\texttt{todo}\)</span></a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Insiemistica e logica</span></p>
 <ul class="nav bd-sidenav">
@@ -550,14 +542,14 @@ document.write(`
 <span id="infinitesimal-calculus-derivatives"></span><h1><span class="section-number">24. </span>Derivate<a class="headerlink" href="#derivate" title="Permalink to this heading">#</a></h1>
 <div class="section" id="definizione">
 <span id="infinitesimal-calculus-derivatives-def"></span><h2><span class="section-number">24.1. </span>Definizione<a class="headerlink" href="#definizione" title="Permalink to this heading">#</a></h2>
-<div class="proof definition admonition" id="definition-0">
+<div class="proof definition admonition" id="derivatives-incremental-ratio">
 <p class="admonition-title"><span class="caption-number">Definition 24.1 </span> (Rapporto incrementale)</p>
 <div class="definition-content section" id="proof-content">
 <p>Il rapporto incrementale di una funzione reale nel punto <span class="math notranslate nohighlight">\(x\)</span> viene definito come il rapporto tra la differenza dei valori della funzione e la differenza del valore della variabile indipendente</p>
 <div class="math notranslate nohighlight" id="equation-eq-infinitesimal-calculus-derivatives-def-delta">
 <span class="eqno">(24.1)<a class="headerlink" href="#equation-eq-infinitesimal-calculus-derivatives-def-delta" title="Permalink a questa equazione">#</a></span>\[R[f(\cdot), x, h] := \dfrac{f(x+h)-f(x)}{h} \ .\]</div>
 </div>
-</div><div class="proof definition admonition" id="definition-1">
+</div><div class="proof definition admonition" id="derivatives-derivative">
 <p class="admonition-title"><span class="caption-number">Definition 24.2 </span> (Derivata)</p>
 <div class="definition-content section" id="proof-content">
 <p>La derivata di una funzione reale in un punto <span class="math notranslate nohighlight">\(x\)</span> viene definita come il limite del rapporto incrementale, per l’incremento della variabile indipendente che tende a zero,</p>
@@ -572,7 +564,7 @@ document.write(`
 </div>
 <div class="section" id="interpretazione-geometrica">
 <span id="infinitesimal-calculus-derivatives-geom"></span><h2><span class="section-number">24.2. </span>Interpretazione geometrica<a class="headerlink" href="#interpretazione-geometrica" title="Permalink to this heading">#</a></h2>
-<p>Il valore della derivata di una funzione <span class="math notranslate nohighlight">\(f(x)\)</span> in un punto <span class="math notranslate nohighlight">\(x\)</span> corrisponde al coefficiente angolare della retta tangente alla curva che rappresenta piano cartesiano il <span class="xref myst">grafico della funzione</span> <span class="math notranslate nohighlight">\(y=f(x)\)</span> nel punto di coordinate <span class="math notranslate nohighlight">\((x,f(x))\)</span>.</p>
+<p>Il valore della derivata di una funzione <span class="math notranslate nohighlight">\(f(x)\)</span> in un punto <span class="math notranslate nohighlight">\(x\)</span> corrisponde al coefficiente angolare della retta tangente alla curva che rappresenta piano cartesiano il <a class="reference internal" href="../precalculus/real-functions.html#math-hs-precalculus-real-functions-inverse-plot"><span class="std std-ref">grafico della funzione</span></a> <span class="math notranslate nohighlight">\(y=f(x)\)</span> nel punto di coordinate <span class="math notranslate nohighlight">\((x,f(x))\)</span>.</p>
 <table class="table">
 <colgroup>
 <col style="width: 100%" />
@@ -585,14 +577,14 @@ document.write(`
 </div>
 <div class="section" id="incremento-di-una-funzione-e-differenziale">
 <span id="infinitesimal-calculus-derivatives-differential"></span><h2><span class="section-number">24.3. </span>Incremento di una funzione e differenziale<a class="headerlink" href="#incremento-di-una-funzione-e-differenziale" title="Permalink to this heading">#</a></h2>
-<div class="proof definition admonition" id="definition-2">
+<div class="proof definition admonition" id="derivatives-increment">
 <p class="admonition-title"><span class="caption-number">Definition 24.3 </span> (Incremento di una funzione)</p>
 <div class="definition-content section" id="proof-content">
 <p>L’incremento di una funzione <span class="math notranslate nohighlight">\(f\)</span> in seguito all’incremento <span class="math notranslate nohighlight">\(h\)</span> della variabile indipendente <span class="math notranslate nohighlight">\(x\)</span> è</p>
 <div class="math notranslate nohighlight">
 \[\Delta f (x, h) := f(x+h) - f(x) \ .\]</div>
 </div>
-</div><div class="proof definition admonition" id="definition-3">
+</div><div class="proof definition admonition" id="derivatives-differential">
 <p class="admonition-title"><span class="caption-number">Definition 24.4 </span> (Differenziale di una funzione)</p>
 <div class="definition-content section" id="proof-content">
 <p>Il differenziale di una funzione <span class="math notranslate nohighlight">\(f\)</span> può essere definito come il termine di primo ordine in <span class="math notranslate nohighlight">\(h\)</span> dell’incremento <span class="math notranslate nohighlight">\(\Delta f(x,h)\)</span>,</p>

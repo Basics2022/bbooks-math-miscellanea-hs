@@ -76,15 +76,6 @@ const thebe_selector_output = ".output, .cell_output"
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-P4PD40TTJE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-P4PD40TTJE');
-</script>
-
   
   
   <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
@@ -178,6 +169,7 @@ const thebe_selector_output = ".output, .cell_output"
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduzione</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="program.html">Programma</a></li>
+<li class="toctree-l1"><a class="reference internal" href="todo.html"><span class="math notranslate nohighlight">\(\texttt{todo}\)</span></a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Insiemistica e logica</span></p>
 <ul class="nav bd-sidenav">
@@ -571,8 +563,8 @@ document.write(`
 <p class="admonition-title">Note sull’uso, o cosa bisogna portare a casa da questa sezione</p>
 <p>Da questa sezione è utile portare a casa:</p>
 <ul class="simple">
-<li><p>la definizione di <span class="xref myst">serie numerica</span>, il concetto di concergenza - e i criteri di convergenza, con semplici applicazioni a serie particolari. Esistono poi alcune serie particolari - come la <strong>serie geometrica</strong> - …; il numero <span class="math notranslate nohighlight">\(e\)</span> di Eulero può essere definito come valore di una serie convergente.</p></li>
-<li><p>la definizione di <span class="xref myst">serie di funzioni</span>. Alcuni esempi: definizione della funzione esponenziale <span class="math notranslate nohighlight">\(e^x\)</span>, serie polinomiali di Taylor, serie di Fourier &lt;span «style=color:red»&gt;I risultati di convergenza, seppur di importanza non trascurabile, hanno una priorità secondaria nello sviluppo di questo materiale - bilancio complessità-impescindibilità</span></p></li>
+<li><p>la definizione di <strong>serie numerica</strong>, il concetto di concergenza - e i criteri di convergenza, con semplici applicazioni a serie particolari. Esistono poi alcune serie particolari - come la <strong>serie geometrica</strong> - …; il numero <span class="math notranslate nohighlight">\(e\)</span> di Eulero può essere definito come valore di una serie convergente.</p></li>
+<li><p>la definizione di <strong>[serie di funzioni</strong>. Alcuni esempi: definizione della funzione esponenziale <span class="math notranslate nohighlight">\(e^x\)</span>, serie polinomiali di Taylor, serie di Fourier &lt;span «style=color:red»&gt;I risultati di convergenza, seppur di importanza non trascurabile, hanno una priorità secondaria nello sviluppo di questo materiale - bilancio complessità-impescindibilità</span></p></li>
 </ul>
 <!--
 Di solito, [successioni numeriche](math-hs:series:real:sequences) e le [serie numeriche](math-hs:series:real:series) vengono trattate senza dedicarvi troppo tempo, mostrando alcuni esempi come le serie geometriche; le [successioni di funzioni](math-hs:series:fun:sequences) e [serie di funzioni](math-hs:series:fun:series) vengono trattate in occasione della presentazione della funzione esponenziale sul campo reale e quando vengono introdotte le serie polinomiali di Taylor dopo aver affrontato le derivate; infine possono essere utilizzate sul campo complesso per fornire un'intuizione veloce della formula di Eulero dell'esponenziale di numeri immaginari, senza prestare eccessiva - o nessuna - attenzione ai risultati di convergenza e al soddisfacimento di alcune ipotesi necessarie affinché alcune operazioni siano lecite/valide.<span style="color:red">!!!</span>
@@ -778,14 +770,14 @@ Serie di Mengoli, <span class="math notranslate nohighlight">\(\ \sum_{n=1}^{\in
 <span id="math-hs-series-fun-sequences-convergence"></span><h3><span class="section-number">16.3.1. </span>Convergenza<a class="headerlink" href="#convergenza" title="Permalink to this heading">#</a></h3>
 <div class="section" id="convergenza-puntuale">
 <span id="math-hs-series-fun-sequences-convergence-point"></span><h4><span class="section-number">16.3.1.1. </span>Convergenza puntuale<a class="headerlink" href="#convergenza-puntuale" title="Permalink to this heading">#</a></h4>
-<div class="proof definition admonition" id="definition-0">
+<div class="proof definition admonition" id="series-fun-seq-convergence-point">
 <p class="admonition-title"><span class="caption-number">Definition 16.1 </span> (Convergenza puntuale)</p>
 <div class="definition-content section" id="proof-content">
 </div>
 </div></div>
 <div class="section" id="convergenza-uniforme">
 <span id="math-hs-series-fun-sequences-convergence-uniform"></span><h4><span class="section-number">16.3.1.2. </span>Convergenza uniforme<a class="headerlink" href="#convergenza-uniforme" title="Permalink to this heading">#</a></h4>
-<div class="proof definition admonition" id="definition-1">
+<div class="proof definition admonition" id="series-fun-seq-convergence-uniform">
 <p class="admonition-title"><span class="caption-number">Definition 16.2 </span> (Convergenza uniforme)</p>
 <div class="definition-content section" id="proof-content">
 <p>Sia <span class="math notranslate nohighlight">\(\{ f_n \}_{n \in \mathbb{N}}\)</span> una successione di funzioni <span class="math notranslate nohighlight">\(f_n:  X \rightarrow \mathbb{R}\)</span>. La serie converge uniformemente alla funzione <span class="math notranslate nohighlight">\(f\)</span> se per ogni <span class="math notranslate nohighlight">\(\varepsilon &gt; 0\)</span> esiste <span class="math notranslate nohighlight">\(N \in \mathbb{N}\)</span> tale che</p>
