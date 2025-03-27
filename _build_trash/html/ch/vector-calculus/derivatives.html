@@ -1,0 +1,832 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="it" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>28.3. Operatori differenziali in spazi euclidei &#8212; Matematica per le scuole superiori</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/exercise.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/style.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/vector-calculus/derivatives';</script>
+    <link rel="shortcut icon" href="../../_static/favicon.svg"/>
+    <link rel="index" title="Indice" href="../../genindex.html" />
+    <link rel="search" title="Cerca" href="../../search.html" />
+    <link rel="next" title="28.4. Teorema di Stokes" href="stokes.html" />
+    <link rel="prev" title="28.2. Integrali in spazi euclidei" href="integrals.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="it"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.svg" class="logo__image only-light" alt="Matematica per le scuole superiori - Home"/>
+    <script>document.write(`<img src="../../_static/logo-dark.svg" class="logo__image only-dark" alt="Matematica per le scuole superiori - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduzione</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../program.html">Programma</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../todo.html"><span class="math notranslate nohighlight">\(\texttt{todo}\)</span></a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Insiemistica e logica</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../set.html">1. Insiemistica</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../set/numeric-sets.html">1.5. Insiemi numerici</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../logics.html">2. Logica</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Algebra</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../algebra.html">3. Introduzione all’algebra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../algebra/real-algebra.html">4. Algebra sui numeri reali</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../algebra/real-n-algebra.html">5. Algebra su <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../algebra/linear-algebra.html">6. Algebra lineare</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../algebra/vector-algebra.html">7. Algebra vettoriale</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../algebra/vector-algebra-def.html">7.1. Prime definizioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../algebra/vector-algebra-euclidean-space.html">7.2. Spazio vettoriale euclideo</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../algebra/complex-algebra-link.html">8. Algebra complessa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../algebra/set-algebra-link.html">9. Algebra di insiemi</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Geometria analitica</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../analytic_geometry.html">10. Introduzione alla geometria analitica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analytic_geometry/euclidean_space.html">11. Spazio euclideo</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d.html">12. Geometria analitica nel piano</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/coordinates.html">12.1. Sistemi di coordinate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/points.html">12.2. Distanze e angoli</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/curves.html">12.3. Curve nel piano</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/lines.html">12.4. Rette nel piano</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/conics.html">12.5. Coniche</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/conics-cartesian.html">12.5.1. Forma canonica in coordinate cartesiane</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/conics-polar.html">12.5.2. Forma canonica in coordinate polari</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/conics-general.html">12.5.3. Equazione generale delle coniche</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/problems.html">12.6. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/sol.html">12.7. Soluzioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/notes.html">12.8. Note e dimostrazioni</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../analytic_geometry/analytic_geometry_3d.html">13. Geometria analitica nello spazio</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_3d/points.html">13.1. Sistemi di coordinate per lo spazio euclideo <span class="math notranslate nohighlight">\(E^3\)</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_3d/planes.html">13.2. Piani nello spazio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_3d/curves.html">13.3. Curve nello spazio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_3d/lines.html">13.4. Rette nello spazio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_3d/cone.html">13.5. Cono circolare retto e coniche</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Precalcolo</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../precalculus.html">14. Introduzione al pre-calcolo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../precalculus/real-functions.html">15. Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\(f: D \subseteq \mathbb{R} \rightarrow \mathbb{R}\)</span></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../series.html">16. Serie e successioni</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../trigonometry.html">17. Trigonometria</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../precalculus/exponential_logarithm.html">18. Esponenziale e logaritmo</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../precalculus/exponential_logarithm-problems.html">18.2. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../precalculus/exponential_logarithm-sol.html">18.3. Soluzioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../precalculus/exponential_logarithm-notes.html">18.4. Note e dimostrazioni</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../precalculus/polynomials.html">19. Polinomi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../precalculus/multivariable-real-fun.html">20. Funzioni multi-variabile</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../algebra/complex-algebra.html">21. Algebra complessa</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../algebra/complex-algebra-problems.html">21.9. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../algebra/complex-algebra-sol.html">21.10. Problemi - soluzioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../algebra/complex-algebra-notes.html">21.11. Note e dimostrazioni</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Calcolo</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../calculus.html">22. Introduzione al calcolo</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../infinitesimal_calculus/analysis.html">23. Introduzione all’analisi</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/analysis-problems.html">23.9. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/analysis-notes.html">23.10. Note e dimostrazioni</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../infinitesimal_calculus/derivatives.html">24. Derivate</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/derivatives-problems.html">24.10. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/derivatives-notes.html">24.11. Note e dimostrazioni</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../infinitesimal_calculus/integrals.html">25. Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/integrals-table.html">25.7. Tavola degli integrali indefiniti più comuni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/integrals-problems.html">25.8. Problemi</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ode.html">26. Equazioni differenziali ordinarie</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ode-lti.html">26.3. Sistemi lineari tempo invarianti (LTI)</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../multivariable-calculus.html">27. Introduzione al calcolo multi-variabile</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../multivariable-calculus/limits.html">27.1. Limite di una funzione di più variabili</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../multivariable-calculus/derivatives.html">27.2. Derivate di funzioni di più variabili</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../multivariable-calculus/integrals.html">27.3. Integrali su domini multi-dimensionali</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../vector-calculus.html">28. Introduzione al calcolo vettoriale su spazi euclidei</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="geometry.html">28.1. Cenni di geometria differenziale</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integrals.html">28.2. Integrali in spazi euclidei</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">28.3. Operatori differenziali in spazi euclidei</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stokes.html">28.4. Teorema di Stokes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="problems.html">28.5. Problemi</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Statistica</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../statistics.html">29. Introduzione alla statistica</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../statistics/combinatorics.html">29.1. Calcolo combinatorio</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Indice</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../genindex.html">Indice</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Repository di origine"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs/edit/master/ch/vector-calculus/derivatives.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs/issues/new?title=Issue%20on%20page%20%2Fch/vector-calculus/derivatives.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Apri un problema"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Scarica questa pagina">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/ch/vector-calculus/derivatives.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Scarica il file sorgente"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Stampa in PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Modalità schermo intero"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Cerca" aria-label="Cerca" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Operatori differenziali in spazi euclidei</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenuti </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#derivata-direzionale">28.3.1. Derivata direzionale</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gradiente">28.3.2. Gradiente</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#divergenza">28.3.3. Divergenza</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rotore">28.3.4. Rotore</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#laplaciano">28.3.5. Laplaciano</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <div class="tex2jax_ignore mathjax_ignore section" id="operatori-differenziali-in-spazi-euclidei">
+<span id="vector-calculus-derivatives"></span><h1><span class="section-number">28.3. </span>Operatori differenziali in spazi euclidei<a class="headerlink" href="#operatori-differenziali-in-spazi-euclidei" title="Permalink to this heading">#</a></h1>
+<p>Usando un sistema di coordinate cartesiane, un punto <span class="math notranslate nohighlight">\(P\)</span> nello spazio può essere identificato dal vettore euclideo tra l’origine <span class="math notranslate nohighlight">\(O\)</span> del sistema delle coordinate e il punto <span class="math notranslate nohighlight">\(P\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[P - O = \vec{r}_P = x \, \hat{x} + y \, \hat{y} + z \, \hat{z}  = P(x,y,z) \ .\]</div>
+<div class="section" id="derivata-direzionale">
+<span id="vector-calculus-derivatives-directional"></span><h2><span class="section-number">28.3.1. </span>Derivata direzionale<a class="headerlink" href="#derivata-direzionale" title="Permalink to this heading">#</a></h2>
+<p>Dato il campo scalare <span class="math notranslate nohighlight">\(f(P)\)</span> rappresentato usando le coordinate cartesiane,</p>
+<div class="math notranslate nohighlight">
+\[
+f(P) = f\left(P(x,y,z)\right) = F(x,y,z) \ ,
+\]</div>
+<p>il valore del campo nel punto <span class="math notranslate nohighlight">\(P + \alpha \vec{v}\)</span> vale</p>
+<div class="math notranslate nohighlight">
+\[
+f(P + \alpha \vec{v}) 
+= f\left( (x+\alpha v_x)\hat{x} + (y+\alpha v_y) \hat{y} + (z + \alpha v_z)\hat{z} \right) 
+= F(x+\alpha v_x, y+\alpha v_y, z + \alpha v_z)
+\]</div>
+<p>e la derivata direzionale è definita come il limite per <span class="math notranslate nohighlight">\(\alpha \rightarrow 0\)</span> del rapporto incrementale, definito come il rapporto tra</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  f(P + \alpha \vec{v}) - f(P)
+  &amp; = F(x+\alpha v_x, y+\alpha v_y, z + \alpha v_z) - F(x, y, z) = \\
+  &amp; = \alpha v_x \, \partial_x F(x,y,z) +  \alpha v_y \, \partial_y F(x,y,z) + \alpha v_z \, \partial_z F(x,y,z) + o(|\alpha|) = \\
+  &amp; = \alpha v_x \, \partial_x f(P) +  \alpha v_y \, \partial_y f(P) + \alpha v_z \, \partial_z f(P) + o(|\alpha|) = \\
+  &amp; = \alpha \vec{v} \cdot \nabla f(P) + o(|\alpha|) \ ,
+\end{aligned}\end{split}\]</div>
+<p>e <span class="math notranslate nohighlight">\(\alpha\)</span>, cioè</p>
+<div class="math notranslate nohighlight">
+\[\lim_{\alpha \rightarrow 0} \frac{f(P + \alpha \vec{v}) - f(P)}{\alpha} = \vec{v} \cdot \nabla f(P) \ .\]</div>
+<p>avendo introdotto il vettore formale <strong>nabla</strong>, <span class="math notranslate nohighlight">\(\nabla \)</span>, per definire l’operatore <strong>gradiente</strong> usando il sistema di coordinate cartesiane,</p>
+<div class="math notranslate nohighlight">
+\[\nabla f(P) = \hat{x} \, \partial_x f(P) + \hat{y} \, \partial_y f(P) + \hat{z} \, \partial_z f(P) \ . \]</div>
+</div>
+<div class="section" id="gradiente">
+<span id="vector-calculus-derivatives-gradient"></span><h2><span class="section-number">28.3.2. </span>Gradiente<a class="headerlink" href="#gradiente" title="Permalink to this heading">#</a></h2>
+<p><strong>Definizione.</strong> Il gradiente di un campo scalare <span class="math notranslate nohighlight">\(f(P)\)</span> nello spazio 3-dimensionale è un campo vettoriale che ha la direzione locale di massima crescita della funzione e il modulo come massima derivata direzionale,</p>
+<div class="math notranslate nohighlight">
+\[\nabla f(P) = \hat{x} \, \partial_x f(P) + \hat{y} \, \partial_y f(P) + \hat{z} \, \partial_z f(P) \ . \]</div>
+<p><strong>Proprietà.</strong> Il gradiente di un campo scalare indica la direzione <strong>locale</strong> di massima crescita del campo.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Dimostrazione.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">La derivata direzionale della funzione <span class="math notranslate nohighlight">\(f\)</span> nel punto <span class="math notranslate nohighlight">\(P\)</span> in direzione <span class="math notranslate nohighlight">\(\hat{t}\)</span> è definita come il prodotto scalare tra il versore <span class="math notranslate nohighlight">\(\hat{t}\)</span> e il gradiente della funzione calcolato nel punto <span class="math notranslate nohighlight">\(P\)</span></p>
+<div class="math notranslate nohighlight">
+\[\hat{t} \cdot \nabla f(P) \ .\]</div>
+<p class="sd-card-text">Ricordando la definizione di <a class="reference internal" href="../algebra/vector-algebra-euclidean-space.html#math-hs-algebra-vector-euclidean-space-inner-product"><span class="std std-ref">prodotto interno in uno spazio euclideo</span></a>, è possibile dimostrare che tra tutti i possibili vettori <span class="math notranslate nohighlight">\(\hat{t}\)</span> l’incremento della funzione è massimo in direzione del gradiente,</p>
+<div class="math notranslate nohighlight">
+\[\max_{\hat{t}} \hat{t} \cdot \nabla f(P) = \max_{\hat{t}} \underbrace{|\ \hat{t} \ |}_{=1} |\nabla f(P)| \cos \theta_{\hat{t}} = \max_{\theta_{\hat{t}}} |\nabla f(P)| \cos \theta_{\hat{t}} = |\nabla f(P)| \ ,\]</div>
+<p class="sd-card-text">quando l’angolo tra il versore <span class="math notranslate nohighlight">\(\hat{t}\)</span> e il gradiente <span class="math notranslate nohighlight">\(\nabla f(P)\)</span> è nullo, <span class="math notranslate nohighlight">\(\theta_{\hat{t}} = 0\)</span>.</p>
+</div>
+</details></div>
+<div class="section" id="divergenza">
+<span id="vector-calculus-derivatives-divergence"></span><h2><span class="section-number">28.3.3. </span>Divergenza<a class="headerlink" href="#divergenza" title="Permalink to this heading">#</a></h2>
+<p>La divergenza di un campo vettoriale <span class="math notranslate nohighlight">\(\vec{f}(P)\)</span> nello spazio 3-dimensionale è un campo scalare che può essere interpretato come la densità volumetrica del <a class="reference internal" href="integrals.html#vector-calculus-integrals-surface-flux"><span class="std std-ref">flusso del campo vettoriale</span></a>. Usando un sistema di coordinate cartesiane, la divergenza di un campo vettoriale può essere scritta formalmente come il prodotto interno tra il vettore formale nabla e il campo vettoriale,</p>
+<div class="math notranslate nohighlight">
+\[\nabla \cdot \vec{f} = \partial_x f_x + \partial_y f_y + \partial_z f_z\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Divergenza come densità volumetrica del flusso. Dimostrazione con un cubetto elementare<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Usando le coordinate cartesiane si calcola il flusso del campo vettoriale attraverso la superficie di un cubetto elementare centrato nel punto <span class="math notranslate nohighlight">\(P\)</span>, <strong>todo</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \Phi_{\partial \Delta V(P)}\left(\vec{f}\right) 
+  &amp; = \Delta y \Delta z \hat{x} \cdot \vec{f}\left(P+\hat{x} \frac{\Delta x}{2} \right)
+    - \Delta y \Delta z \hat{x} \cdot \vec{f}\left(P-\hat{x} \frac{\Delta x}{2} \right) + \dots = \\
+  &amp; = \Delta y \Delta z \left[ f_x \, \left(P+\hat{x} \frac{\Delta x}{2} \right)
+                               f_x \, \left(P-\hat{x} \frac{\Delta x}{2} \right) \right] + \dots = \\
+  &amp; = \Delta y \Delta z \left[ f_x(P) + \frac{\Delta x}{2} \,  \partial_x \, f(P) 
+                             - f_x(P) + \frac{\Delta x}{2} \,  \partial_x \, f(P) + o(\Delta x) \right] + \dots  = \\
+  &amp; = \Delta x \Delta y \Delta z \,  \partial_x \, f_x(P) + o(\Delta V) + \dots = \\ \\
+  &amp; = \Delta V \, \left[  \partial_x \, f_x(P) +  \partial_y \, f_y(P) + \partial_z \, f_z(P) \right] + o(\Delta V) = \\ \\
+  &amp; = \Delta V \, \nabla \cdot \vec{f}(P) + o(\Delta V) \ .
+\end{aligned}\end{split}\]</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Divergenza come densità volumetrica del flusso. Dimostrazione con un tetraedro elementare<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Usando le coordinate cartesiane si calcola il flusso del campo vettoriale attraverso la superficie di un cubetto elementare centrato nel punto <span class="math notranslate nohighlight">\(P\)</span>, <strong>todo</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \Phi_{\partial \Delta V(P)}\left(\vec{f}\right) 
+  &amp; =       - \Delta S_x  \hat{x} \cdot \vec{f}\left( P + \hat{y} \frac{\Delta y}{3} + \hat{z} \frac{\Delta z}{3} \right)   
+            - \Delta S_y  \hat{y} \cdot \vec{f}\left( P + \hat{z} \frac{\Delta z}{3} + \hat{x} \frac{\Delta x}{3} \right) \\
+  &amp; \quad \ - \Delta S_z  \hat{z} \cdot \vec{f}\left( P + \hat{x} \frac{\Delta x}{3} + \hat{y} \frac{\Delta y}{3} \right)   
+            + \Delta S    \hat{n} \cdot \vec{f}\left( P + \hat{x} \frac{\Delta x}{3} + \hat{y} \frac{\Delta y}{3} + \hat{z} \frac{\Delta z}{3} \right) + o(\Delta V) = \\
+  &amp; =       - \Delta S_x  \left( f_x + \frac{\Delta y}{3} \partial_y f_x + \frac{\Delta_z}{3} \partial_z f_x \right)     
+            - \Delta S_y  \left( f_y + \frac{\Delta z}{3} \partial_z f_y + \frac{\Delta_x}{3} \partial_x f_y \right) + \\
+  &amp; \quad \ - \Delta S_z  \left( f_z + \frac{\Delta x}{3} \partial_x f_z + \frac{\Delta_y}{3} \partial_y f_z \right)      
+            + \Delta S  \sum_{k \in \{x,y,z\} }   \left[ n_k \, \left( f_k(P) + \frac{\Delta x}{3} \partial_x f_k + n_y \, \frac{\Delta y}{3} \partial_y f_k + n_z \, \frac{\Delta z}{3} \partial_z f_k \right) \right] + \dots + o(\Delta V) = \\ 
+  &amp; =       - \Delta S_x  \left( f_x + \frac{\Delta y}{3} \partial_y f_x + \frac{\Delta_z}{3} \partial_z f_x \right)     
+            - \Delta S_y  \left( f_y + \frac{\Delta z}{3} \partial_z f_y + \frac{\Delta_x}{3} \partial_x f_y \right) + \\
+  &amp; \quad \ - \Delta S_z  \left( f_z + \frac{\Delta x}{3} \partial_x f_z + \frac{\Delta_y}{3} \partial_y f_z \right)      
+            + \sum_{k \in \{x,y,z\} } \Delta S_k  \, \left( f_k(P) + \frac{\Delta x}{3} \partial_x f_k + n_y \, \frac{\Delta y}{3} \partial_y f_k + n_z \, \frac{\Delta_z}{3} \partial_z f_k \right) + \dots + o(\Delta V) = \\ 
+  &amp; = \frac{1}{3} \Delta S_x \, \Delta x \partial_x f_x + \frac{1}{3} \Delta S_y \Delta y \partial_y f_y + \frac{1}{3} \Delta S_z \Delta z \partial_z f_z = \\
+  &amp; = \Delta V \left[ \partial_x \, f_x(P) + \partial_y \, f_y(P) + \partial_z \, f_z(P) \right] + o(\Delta V)\ .
+  &amp; = \Delta V \, \nabla \cdot \vec{f}(P) + o(\Delta V) \ .
+\end{aligned}\end{split}\]</div>
+</div>
+</details></div>
+<div class="section" id="rotore">
+<span id="vector-calculus-derivatives-curl"></span><h2><span class="section-number">28.3.4. </span>Rotore<a class="headerlink" href="#rotore" title="Permalink to this heading">#</a></h2>
+<p>Il rotore di un campo vettoriale <span class="math notranslate nohighlight">\(\vec{f}(P)\)</span> nello spazio 3-dimensionale è un campo vettoriale che può essere interpretato come la densità di superficie di <a class="reference internal" href="integrals.html#vector-calculus-integrals-line-circuitation"><span class="std std-ref">circuitazione</span></a>. Usando un sistema di coordinate cartesiane, il rotore di un campo vettoriale può essere scritto formalmente come il prodotto vettoriale tra il vettore formale nabla e il campo vettoriale,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \nabla \times \vec{f} &amp; = \hat{x} \left( \partial_y f_z - \partial_z f_y \right) + \\ 
+                        &amp; + \hat{y} \left( \partial_z f_x - \partial_x f_z \right) + \\
+                        &amp; + \hat{z} \left( \partial_x f_y - \partial_y f_x \right) 
+    = \left| \begin{matrix} \hat{x} &amp; \hat{y} &amp; \hat{z} \\ \partial_x &amp; \partial_y &amp; \partial_z \\ f_x &amp; f_y &amp; f_z \end{matrix} \right| \ .
+\end{aligned}\end{split}\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Rotore come densità di circuitazione. Dimostrazione<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Usando le coordinate cartesiane si calcola la circuitazione del campo vettoriale <span class="math notranslate nohighlight">\(\vec{f}\)</span> sui lati della faccia maggiore di un tetraedro con spigoli coincidenti con gli assi e di lunghezza <span class="math notranslate nohighlight">\(\Delta x\)</span>, <span class="math notranslate nohighlight">\(\Delta y\)</span>, <span class="math notranslate nohighlight">\(\Delta z\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \Gamma_{\partial \Delta V(P)}\left(\vec{f}\right) 
+  &amp; = \vec{f}\left( P - \frac{\Delta z}{3} \hat{z} + \frac{\Delta y}{6} \hat{y} + \frac{\Delta x}{6} \hat{x} \right) \cdot \left( - \hat{x} \Delta x + \hat{y} \Delta y \right) + \\
+  &amp; + \vec{f}\left( P - \frac{\Delta x}{3} \hat{x} + \frac{\Delta z}{6} \hat{z} + \frac{\Delta y}{6} \hat{y} \right) \cdot \left( - \hat{y} \Delta y + \hat{z} \Delta z \right) + \\
+  &amp; + \vec{f}\left( P - \frac{\Delta y}{3} \hat{y} + \frac{\Delta x}{6} \hat{x} + \frac{\Delta z}{6} \hat{z} \right) \cdot \left( - \hat{z} \Delta z + \hat{x} \Delta x \right) = \\
+  &amp; =       - \Delta x \left( f_x - \frac{\Delta z}{3} \partial_z f_x + \frac{\Delta y}{6} \partial_y f_x + \frac{\Delta x}{6} \partial_x f_x \right)
+            + \Delta y \left( f_y - \frac{\Delta z}{3} \partial_z f_y + \frac{\Delta y}{6} \partial_y f_y + \frac{\Delta x}{6} \partial_x f_y \right) \\
+  &amp; \ \quad - \Delta y \left( f_y - \frac{\Delta x}{3} \partial_x f_y + \frac{\Delta z}{6} \partial_z f_y + \frac{\Delta y}{6} \partial_y f_y \right)
+            + \Delta z \left( f_z - \frac{\Delta x}{3} \partial_x f_z + \frac{\Delta z}{6} \partial_z f_z + \frac{\Delta y}{6} \partial_y f_z \right) \\
+  &amp; \ \quad - \Delta z \left( f_z - \frac{\Delta y}{3} \partial_y f_z + \frac{\Delta x}{6} \partial_x f_z + \frac{\Delta z}{6} \partial_z f_z \right)
+            + \Delta x \left( f_x - \frac{\Delta y}{3} \partial_y f_x + \frac{\Delta x}{6} \partial_x f_x + \frac{\Delta z}{6} \partial_z f_x \right) = \\
+  &amp; = \frac{1}{2} \Delta x \Delta y \left( \partial_x f_y - \partial_y f_x \right)
+    + \frac{1}{2} \Delta y \Delta z \left( \partial_y f_z - \partial_z f_y \right)
+    + \frac{1}{2} \Delta z \Delta x \left( \partial_z f_x - \partial_x f_z \right) = \\
+  &amp; = \Delta S_z \left( \nabla \times \vec{f} \right)_z
+    + \Delta S_x \left( \nabla \times \vec{f} \right)_x
+    + \Delta S_y \left( \nabla \times \vec{f} \right)_y = \\
+  &amp; = \Delta S \left(
+             n_z \left( \nabla \times \vec{f} \right)_z
+             n_x \left( \nabla \times \vec{f} \right)_x
+             n_y \left( \nabla \times \vec{f} \right)_y 
+  \right) = \\
+  &amp; = \Delta S \, \hat{n} \cdot \nabla \times \vec{f}(P) + o(\Delta S) \ .
+\end{aligned}\end{split}\]</div>
+</div>
+</details><!--
+```{dropdown} Rotore come densità di circuitazione. Dimostrazione
+Usando le coordinate cartesiane si calcola la circuitazione del campo vettoriale $\vec{f}$ sui lati della faccia maggiore di un tetraedro con spigoli coincidenti con gli assi e di lunghezza $\Delta x$, $\Delta y$, $\Delta z$,
+
+$$\begin{aligned}
+  \Gamma_{\partial \Delta V(P)}\left(\vec{f}\right) 
+  & = \vec{f}\left( P + \frac{\Delta x}{2} \hat{x} + \frac{\Delta y}{2} \hat{y} \right) \cdot \left( - \hat{x} \Delta x + \hat{y} \Delta y \right) + \\
+  & + \vec{f}\left( P + \frac{\Delta y}{2} \hat{y} + \frac{\Delta z}{2} \hat{z} \right) \cdot \left( - \hat{y} \Delta y + \hat{z} \Delta z \right) + \\
+  & + \vec{f}\left( P + \frac{\Delta z}{2} \hat{z} + \frac{\Delta x}{2} \hat{x} \right) \cdot \left( - \hat{z} \Delta z + \hat{x} \Delta x \right) = \\
+  & =       - \Delta x \left( f_x + \frac{\Delta x}{2} \partial_x f_x + \frac{\Delta y}{2} \partial_y f_x \right)
+            + \Delta y \left( f_y + \frac{\Delta x}{2} \partial_x f_y + \frac{\Delta y}{2} \partial_y f_y \right) \\
+  & \ \quad - \Delta y \left( f_y + \frac{\Delta y}{2} \partial_y f_y + \frac{\Delta z}{2} \partial_z f_y \right)
+            + \Delta z \left( f_z + \frac{\Delta y}{2} \partial_y f_z + \frac{\Delta z}{2} \partial_z f_z \right) \\
+  & \ \quad - \Delta z \left( f_z + \frac{\Delta z}{2} \partial_z f_z + \frac{\Delta x}{2} \partial_x f_z \right)
+            + \Delta x \left( f_x + \frac{\Delta z}{2} \partial_z f_x + \frac{\Delta x}{2} \partial_x f_x \right) = \\
+  & = \frac{1}{2} \Delta x \Delta y \left( \partial_x f_y - \partial_y f_x \right)
+    + \frac{1}{2} \Delta y \Delta z \left( \partial_y f_z - \partial_z f_y \right)
+    + \frac{1}{2} \Delta z \Delta x \left( \partial_z f_x - \partial_x f_z \right) = \\
+  & = \Delta S_z \left( \nabla \times \vec{f} \right)_z
+    + \Delta S_x \left( \nabla \times \vec{f} \right)_x
+    + \Delta S_y \left( \nabla \times \vec{f} \right)_y = \\
+  & = \Delta S \left(
+             n_z \left( \nabla \times \vec{f} \right)_z
+             n_x \left( \nabla \times \vec{f} \right)_x
+             n_y \left( \nabla \times \vec{f} \right)_y 
+  \right) = \\
+  & = \Delta S \, \hat{n} \cdot \nabla \times \vec{f}(P) + o(\Delta S) \ .
+\end{aligned}$$
+```
+-->
+</div>
+<div class="section" id="laplaciano">
+<span id="vector-calculus-derivatives-laplacian"></span><h2><span class="section-number">28.3.5. </span>Laplaciano<a class="headerlink" href="#laplaciano" title="Permalink to this heading">#</a></h2>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./ch/vector-calculus"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="integrals.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">precedente</p>
+        <p class="prev-next-title"><span class="section-number">28.2. </span>Integrali in spazi euclidei</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="stokes.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">successivo</p>
+        <p class="prev-next-title"><span class="section-number">28.4. </span>Teorema di Stokes</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenuti
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#derivata-direzionale">28.3.1. Derivata direzionale</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gradiente">28.3.2. Gradiente</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#divergenza">28.3.3. Divergenza</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rotore">28.3.4. Rotore</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#laplaciano">28.3.5. Laplaciano</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Di basics
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

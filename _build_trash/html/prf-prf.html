@@ -1,0 +1,1498 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="it" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proof Index &#8212; Matematica per le scuole superiori</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="_static/exercise.css" />
+    <link rel="stylesheet" type="text/css" href="_static/style.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'prf-prf';</script>
+    <link rel="shortcut icon" href="_static/favicon.svg"/>
+    <link rel="index" title="Indice" href="genindex.html" />
+    <link rel="search" title="Cerca" href="search.html" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="it"/>
+
+    <script>
+      DOCUMENTATION_OPTIONS.COLLAPSE_INDEX = true;
+    </script>
+
+
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.svg" class="logo__image only-light" alt="Matematica per le scuole superiori - Home"/>
+    <script>document.write(`<img src="_static/logo-dark.svg" class="logo__image only-dark" alt="Matematica per le scuole superiori - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduzione</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="ch/program.html">Programma</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch/todo.html"><span class="math notranslate nohighlight">\(\texttt{todo}\)</span></a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Insiemistica e logica</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="ch/set.html">1. Insiemistica</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch/set/numeric-sets.html">1.5. Insiemi numerici</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ch/logics.html">2. Logica</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Algebra</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="ch/algebra.html">3. Introduzione all’algebra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch/algebra/real-algebra.html">4. Algebra sui numeri reali</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch/algebra/real-n-algebra.html">5. Algebra su <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span></a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch/algebra/linear-algebra.html">6. Algebra lineare</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ch/algebra/vector-algebra.html">7. Algebra vettoriale</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch/algebra/vector-algebra-def.html">7.1. Prime definizioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/algebra/vector-algebra-euclidean-space.html">7.2. Spazio vettoriale euclideo</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ch/algebra/complex-algebra-link.html">8. Algebra complessa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch/algebra/set-algebra-link.html">9. Algebra di insiemi</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Geometria analitica</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="ch/analytic_geometry.html">10. Introduzione alla geometria analitica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch/analytic_geometry/euclidean_space.html">11. Spazio euclideo</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ch/analytic_geometry/analytic_geometry_2d.html">12. Geometria analitica nel piano</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch/analytic_geometry/analytic_geometry_2d/coordinates.html">12.1. Sistemi di coordinate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/analytic_geometry/analytic_geometry_2d/points.html">12.2. Distanze e angoli</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/analytic_geometry/analytic_geometry_2d/curves.html">12.3. Curve nel piano</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/analytic_geometry/analytic_geometry_2d/lines.html">12.4. Rette nel piano</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="ch/analytic_geometry/analytic_geometry_2d/conics.html">12.5. Coniche</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="ch/analytic_geometry/analytic_geometry_2d/conics-cartesian.html">12.5.1. Forma canonica in coordinate cartesiane</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ch/analytic_geometry/analytic_geometry_2d/conics-polar.html">12.5.2. Forma canonica in coordinate polari</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ch/analytic_geometry/analytic_geometry_2d/conics-general.html">12.5.3. Equazione generale delle coniche</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ch/analytic_geometry/analytic_geometry_2d/problems.html">12.6. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/analytic_geometry/analytic_geometry_2d/sol.html">12.7. Soluzioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/analytic_geometry/analytic_geometry_2d/notes.html">12.8. Note e dimostrazioni</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ch/analytic_geometry/analytic_geometry_3d.html">13. Geometria analitica nello spazio</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch/analytic_geometry/analytic_geometry_3d/points.html">13.1. Sistemi di coordinate per lo spazio euclideo <span class="math notranslate nohighlight">\(E^3\)</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/analytic_geometry/analytic_geometry_3d/planes.html">13.2. Piani nello spazio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/analytic_geometry/analytic_geometry_3d/curves.html">13.3. Curve nello spazio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/analytic_geometry/analytic_geometry_3d/lines.html">13.4. Rette nello spazio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/analytic_geometry/analytic_geometry_3d/cone.html">13.5. Cono circolare retto e coniche</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Precalcolo</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="ch/precalculus.html">14. Introduzione al pre-calcolo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch/precalculus/real-functions.html">15. Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\(f: D \subseteq \mathbb{R} \rightarrow \mathbb{R}\)</span></a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch/series.html">16. Serie e successioni</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch/trigonometry.html">17. Trigonometria</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ch/precalculus/exponential_logarithm.html">18. Esponenziale e logaritmo</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch/precalculus/exponential_logarithm-problems.html">18.2. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/precalculus/exponential_logarithm-sol.html">18.3. Soluzioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/precalculus/exponential_logarithm-notes.html">18.4. Note e dimostrazioni</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ch/precalculus/polynomials.html">19. Polinomi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch/precalculus/multivariable-real-fun.html">20. Funzioni multi-variabile</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ch/algebra/complex-algebra.html">21. Algebra complessa</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch/algebra/complex-algebra-problems.html">21.9. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/algebra/complex-algebra-sol.html">21.10. Problemi - soluzioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/algebra/complex-algebra-notes.html">21.11. Note e dimostrazioni</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Calcolo</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="ch/calculus.html">22. Introduzione al calcolo</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ch/infinitesimal_calculus/analysis.html">23. Introduzione all’analisi</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch/infinitesimal_calculus/analysis-problems.html">23.9. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/infinitesimal_calculus/analysis-notes.html">23.10. Note e dimostrazioni</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ch/infinitesimal_calculus/derivatives.html">24. Derivate</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch/infinitesimal_calculus/derivatives-problems.html">24.10. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/infinitesimal_calculus/derivatives-notes.html">24.11. Note e dimostrazioni</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ch/infinitesimal_calculus/integrals.html">25. Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch/infinitesimal_calculus/integrals-table.html">25.7. Tavola degli integrali indefiniti più comuni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/infinitesimal_calculus/integrals-problems.html">25.8. Problemi</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ch/ode.html">26. Equazioni differenziali ordinarie</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch/ode-lti.html">26.3. Sistemi lineari tempo invarianti (LTI)</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ch/multivariable-calculus.html">27. Introduzione al calcolo multi-variabile</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch/multivariable-calculus/limits.html">27.1. Limite di una funzione di più variabili</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/multivariable-calculus/derivatives.html">27.2. Derivate di funzioni di più variabili</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/multivariable-calculus/integrals.html">27.3. Integrali su domini multi-dimensionali</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ch/vector-calculus.html">28. Introduzione al calcolo vettoriale su spazi euclidei</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch/vector-calculus/geometry.html">28.1. Cenni di geometria differenziale</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/vector-calculus/integrals.html">28.2. Integrali in spazi euclidei</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/vector-calculus/derivatives.html">28.3. Operatori differenziali in spazi euclidei</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/vector-calculus/stokes.html">28.4. Teorema di Stokes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/vector-calculus/problems.html">28.5. Problemi</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Statistica</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="ch/statistics.html">29. Introduzione alla statistica</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch/statistics/combinatorics.html">29.1. Calcolo combinatorio</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Indice</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Indice</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Repository di origine"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs/issues/new?title=Issue%20on%20page%20%2Fprf-prf.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Apri un problema"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Modalità schermo intero"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Cerca" aria-label="Cerca" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+
+   <h1>Proof Index</h1>
+
+   <div class="modindex-jumpbox">
+   <a href="#cap-analysis-continuous-fun"><strong>analysis-continuous-fun</strong></a> | 
+   <a href="#cap-arc-length"><strong>arc-length</strong></a> | 
+   <a href="#cap-complex-cartesian"><strong>complex-cartesian</strong></a> | 
+   <a href="#cap-complex-first-operations"><strong>complex-first-operations</strong></a> | 
+   <a href="#cap-def-cartesian-coords-e2"><strong>def-cartesian-coords-e2</strong></a> | 
+   <a href="#cap-def-cartesian-coords-e2-base"><strong>def-cartesian-coords-e2-base</strong></a> | 
+   <a href="#cap-def-cartesian-coords-e3-base"><strong>def-cartesian-coords-e3-base</strong></a> | 
+   <a href="#cap-def-cartesinan-coords-e3"><strong>def-cartesinan-coords-e3</strong></a> | 
+   <a href="#cap-def-cylindrical-coords-e3"><strong>def-cylindrical-coords-e3</strong></a> | 
+   <a href="#cap-def-cylindrical-coords-e3-base"><strong>def-cylindrical-coords-e3-base</strong></a> | 
+   <a href="#cap-def-natural-base"><strong>def-natural-base</strong></a> | 
+   <a href="#cap-def-parametrization-regular"><strong>def-parametrization-regular</strong></a> | 
+   <a href="#cap-def-physical-base"><strong>def-physical-base</strong></a> | 
+   <a href="#cap-def-polar-coords-e2"><strong>def-polar-coords-e2</strong></a> | 
+   <a href="#cap-def-polar-coords-e2-base"><strong>def-polar-coords-e2-base</strong></a> | 
+   <a href="#cap-def-spherical-coords-e3"><strong>def-spherical-coords-e3</strong></a> | 
+   <a href="#cap-def-spherical-coords-e3-base"><strong>def-spherical-coords-e3-base</strong></a> | 
+   <a href="#cap-definition-2"><strong>definition-2</strong></a> | 
+   <a href="#cap-definition-3"><strong>definition-3</strong></a> | 
+   <a href="#cap-derivatives-derivative"><strong>derivatives-derivative</strong></a> | 
+   <a href="#cap-derivatives-differential"><strong>derivatives-differential</strong></a> | 
+   <a href="#cap-derivatives-increment"><strong>derivatives-increment</strong></a> | 
+   <a href="#cap-derivatives-incremental-ratio"><strong>derivatives-incremental-ratio</strong></a> | 
+   <a href="#cap-ex-combinations-with-rep-1"><strong>ex-combinations-with-rep-1</strong></a> | 
+   <a href="#cap-ex-combinations-with-rep-2"><strong>ex-combinations-with-rep-2</strong></a> | 
+   <a href="#cap-ex-combinations-with-rep-3"><strong>ex-combinations-with-rep-3</strong></a> | 
+   <a href="#cap-ex-combinations-with-rep-bose-einstein"><strong>ex-combinations-with-rep-bose-einstein</strong></a> | 
+   <a href="#cap-example-9"><strong>example-9</strong></a> | 
+   <a href="#cap-infinitesimal-calculus:integrals:def:integrable-function"><strong>infinitesimal-calculus:integrals:def:integrable-function</strong></a> | 
+   <a href="#cap-infinitesimal-calculus:integrals:def:riemann-integral"><strong>infinitesimal-calculus:integrals:def:riemann-integral</strong></a> | 
+   <a href="#cap-infinitesimal-calculus:integrals:def:riemann-sum"><strong>infinitesimal-calculus:integrals:def:riemann-sum</strong></a> | 
+   <a href="#cap-integrals-fundamental-1x"><strong>integrals-fundamental-1x</strong></a> | 
+   <a href="#cap-integrals-fundamental-1xn"><strong>integrals-fundamental-1xn</strong></a> | 
+   <a href="#cap-integrals-fundamental-1xn-limit"><strong>integrals-fundamental-1xn-limit</strong></a> | 
+   <a href="#cap-integrals-methods-3"><strong>integrals-methods-3</strong></a> | 
+   <a href="#cap-integrals-methods-ixp"><strong>integrals-methods-ixp</strong></a> | 
+   <a href="#cap-integrals-methods-partial-fraction-1"><strong>integrals-methods-partial-fraction-1</strong></a> | 
+   <a href="#cap-integrals-methods-partial-fraction-2"><strong>integrals-methods-partial-fraction-2</strong></a> | 
+   <a href="#cap-integrals-methods-sub-1"><strong>integrals-methods-sub-1</strong></a> | 
+   <a href="#cap-integrals-methods-sub-10"><strong>integrals-methods-sub-10</strong></a> | 
+   <a href="#cap-integrals-methods-sub-2"><strong>integrals-methods-sub-2</strong></a> | 
+   <a href="#cap-integrals-methods-sub-4"><strong>integrals-methods-sub-4</strong></a> | 
+   <a href="#cap-integrals-methods-sub-5"><strong>integrals-methods-sub-5</strong></a> | 
+   <a href="#cap-integrals-methods-sub-6"><strong>integrals-methods-sub-6</strong></a> | 
+   <a href="#cap-integrals-methods-sub-7"><strong>integrals-methods-sub-7</strong></a> | 
+   <a href="#cap-integrals-methods-sub-8"><strong>integrals-methods-sub-8</strong></a> | 
+   <a href="#cap-integrals-methods-sub-9"><strong>integrals-methods-sub-9</strong></a> | 
+   <a href="#cap-integrals:thm:avg"><strong>integrals:thm:avg</strong></a> | 
+   <a href="#cap-integrals:thm:fund"><strong>integrals:thm:fund</strong></a> | 
+   <a href="#cap-integrals:thm:fund:reynolds"><strong>integrals:thm:fund:reynolds</strong></a> | 
+   <a href="#cap-interval-def"><strong>interval-def</strong></a> | 
+   <a href="#cap-interval-example"><strong>interval-example</strong></a> | 
+   <a href="#cap-interval-limited"><strong>interval-limited</strong></a> | 
+   <a href="#cap-interval-open-close"><strong>interval-open-close</strong></a> | 
+   <a href="#cap-limit:example:lim-xne-x"><strong>limit:example:lim-xne-x</strong></a> | 
+   <a href="#cap-linsys-gauss"><strong>linsys-gauss</strong></a> | 
+   <a href="#cap-linsys-geo-1"><strong>linsys-geo-1</strong></a> | 
+   <a href="#cap-linsys-geo-2"><strong>linsys-geo-2</strong></a> | 
+   <a href="#cap-linsys-geo-3"><strong>linsys-geo-3</strong></a> | 
+   <a href="#cap-linsys-geo-4"><strong>linsys-geo-4</strong></a> | 
+   <a href="#cap-linsys-subs"><strong>linsys-subs</strong></a> | 
+   <a href="#cap-matrix-prod-noncomm"><strong>matrix-prod-noncomm</strong></a> | 
+   <a href="#cap-multivariable-calculus-continuous-fun"><strong>multivariable-calculus-continuous-fun</strong></a> | 
+   <a href="#cap-multivariable-calculus-partial-derivative"><strong>multivariable-calculus-partial-derivative</strong></a> | 
+   <a href="#cap-multivariable-calculus:differential"><strong>multivariable-calculus:differential</strong></a> | 
+   <a href="#cap-multivariable-calculus:increment-1"><strong>multivariable-calculus:increment-1</strong></a> | 
+   <a href="#cap-multivariable-calculus:integral:example"><strong>multivariable-calculus:integral:example</strong></a> | 
+   <a href="#cap-multivariable-calculus:integrals:def:riemann-integral"><strong>multivariable-calculus:integrals:def:riemann-integral</strong></a> | 
+   <a href="#cap-multivariable-calculus:integrals:def:riemann-sum"><strong>multivariable-calculus:integrals:def:riemann-sum</strong></a> | 
+   <a href="#cap-precalculus-multivar-fun"><strong>precalculus-multivar-fun</strong></a> | 
+   <a href="#cap-precalculus-real-fun"><strong>precalculus-real-fun</strong></a> | 
+   <a href="#cap-real-algebra-fraction-improper"><strong>real-algebra-fraction-improper</strong></a> | 
+   <a href="#cap-real-algebra-fraction-simple"><strong>real-algebra-fraction-simple</strong></a> | 
+   <a href="#cap-real-algebra-fraction-sum-partial"><strong>real-algebra-fraction-sum-partial</strong></a> | 
+   <a href="#cap-series-fun-seq-convergence-point"><strong>series-fun-seq-convergence-point</strong></a> | 
+   <a href="#cap-series-fun-seq-convergence-uniform"><strong>series-fun-seq-convergence-uniform</strong></a> | 
+   <a href="#cap-set-fun-def"><strong>set-fun-def</strong></a> | 
+   <a href="#cap-theorem-3"><strong>theorem-3</strong></a> | 
+   <a href="#cap-thm-curl"><strong>thm-curl</strong></a> | 
+   <a href="#cap-thm-curl-1"><strong>thm-curl-1</strong></a> | 
+   <a href="#cap-thm-curl-2"><strong>thm-curl-2</strong></a> | 
+   <a href="#cap-thm-divergence"><strong>thm-divergence</strong></a> | 
+   <a href="#cap-thm-divergence-1"><strong>thm-divergence-1</strong></a> | 
+   <a href="#cap-thm-divergence-2"><strong>thm-divergence-2</strong></a> | 
+   <a href="#cap-thm-gradient"><strong>thm-gradient</strong></a> | 
+   <a href="#cap-thm-gradient-1"><strong>thm-gradient-1</strong></a> | 
+   <a href="#cap-thm-gradient-2"><strong>thm-gradient-2</strong></a> | 
+   <a href="#cap-thm:infinitesimal-calculus:continuous-fun:thms:comparison"><strong>thm:infinitesimal-calculus:continuous-fun:thms:comparison</strong></a> | 
+   <a href="#cap-thm:infinitesimal-calculus:continuous-fun:thms:intermediate"><strong>thm:infinitesimal-calculus:continuous-fun:thms:intermediate</strong></a> | 
+   <a href="#cap-thm:infinitesimal-calculus:continuous-fun:thms:sign"><strong>thm:infinitesimal-calculus:continuous-fun:thms:sign</strong></a> | 
+   <a href="#cap-thm:infinitesimal-calculus:continuous-fun:thms:weierstrass"><strong>thm:infinitesimal-calculus:continuous-fun:thms:weierstrass</strong></a> | 
+   <a href="#cap-thm:infinitesimal-calculus:continuous-fun:thms:zeros"><strong>thm:infinitesimal-calculus:continuous-fun:thms:zeros</strong></a> | 
+   <a href="#cap-thm:infinitesimal-calculus:derivatives:taylor"><strong>thm:infinitesimal-calculus:derivatives:taylor</strong></a> | 
+   <a href="#cap-thm:infinitesimal-calculus:derivatives:thm:cauchy"><strong>thm:infinitesimal-calculus:derivatives:thm:cauchy</strong></a> | 
+   <a href="#cap-thm:infinitesimal-calculus:derivatives:thm:fermat"><strong>thm:infinitesimal-calculus:derivatives:thm:fermat</strong></a> | 
+   <a href="#cap-thm:infinitesimal-calculus:derivatives:thm:hopital"><strong>thm:infinitesimal-calculus:derivatives:thm:hopital</strong></a> | 
+   <a href="#cap-thm:infinitesimal-calculus:derivatives:thm:lagrange"><strong>thm:infinitesimal-calculus:derivatives:thm:lagrange</strong></a> | 
+   <a href="#cap-thm:infinitesimal-calculus:derivatives:thm:rolle"><strong>thm:infinitesimal-calculus:derivatives:thm:rolle</strong></a> | 
+   <a href="#cap-trigonometry:cos2x"><strong>trigonometry:cos2x</strong></a> | 
+   <a href="#cap-vector-calculus-ex-circuitation"><strong>vector-calculus-ex-circuitation</strong></a> | 
+   <a href="#cap-vector-calculus-ex-conservative-field"><strong>vector-calculus-ex-conservative-field</strong></a> | 
+   <a href="#cap-vector-calculus:circuitation"><strong>vector-calculus:circuitation</strong></a> | 
+   <a href="#cap-vector-integrals-ex-circle-quarter-length"><strong>vector-integrals-ex-circle-quarter-length</strong></a> | 
+   <a href="#cap-vector-integrals-ex-circle-quarter-mass"><strong>vector-integrals-ex-circle-quarter-mass</strong></a> | 
+   <a href="#cap-vector-integrals-ex-helix-length"><strong>vector-integrals-ex-helix-length</strong></a> | 
+   <a href="#cap-vector-integrals-ex-helix-mass"><strong>vector-integrals-ex-helix-mass</strong></a> | 
+   <a href="#cap-volume-cartesian-coords"><strong>volume-cartesian-coords</strong></a> | 
+   <a href="#cap-volume-cylindrical-coords"><strong>volume-cylindrical-coords</strong></a> | 
+   <a href="#cap-volume-spherical-coords"><strong>volume-spherical-coords</strong></a>
+   </div>
+
+   <table class="indextable modindextable">
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-analysis-continuous-fun"><td></td><td>
+       <strong>analysis-continuous-fun</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/analysis.html#analysis-continuous-fun"><code class="xref">analysis-continuous-fun</code></a> <em>(ch/infinitesimal_calculus/analysis)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-arc-length"><td></td><td>
+       <strong>arc-length</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/vector-calculus/geometry.html#arc-length"><code class="xref">arc-length</code></a> <em>(ch/vector-calculus/geometry)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-complex-cartesian"><td></td><td>
+       <strong>complex-cartesian</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/algebra/complex-algebra.html#complex-cartesian"><code class="xref">complex-cartesian</code></a> <em>(ch/algebra/complex-algebra)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-complex-first-operations"><td></td><td>
+       <strong>complex-first-operations</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/algebra/complex-algebra.html#complex-first-operations"><code class="xref">complex-first-operations</code></a> <em>(ch/algebra/complex-algebra)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-def-cartesian-coords-e2"><td></td><td>
+       <strong>def-cartesian-coords-e2</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/vector-calculus/geometry.html#def-cartesian-coords-e2"><code class="xref">def-cartesian-coords-e2</code></a> <em>(ch/vector-calculus/geometry)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-def-cartesian-coords-e2-base"><td></td><td>
+       <strong>def-cartesian-coords-e2-base</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/vector-calculus/geometry.html#def-cartesian-coords-e2-base"><code class="xref">def-cartesian-coords-e2-base</code></a> <em>(ch/vector-calculus/geometry)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-def-cartesian-coords-e3-base"><td></td><td>
+       <strong>def-cartesian-coords-e3-base</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/vector-calculus/geometry.html#def-cartesian-coords-e3-base"><code class="xref">def-cartesian-coords-e3-base</code></a> <em>(ch/vector-calculus/geometry)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-def-cartesinan-coords-e3"><td></td><td>
+       <strong>def-cartesinan-coords-e3</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/vector-calculus/geometry.html#def-cartesinan-coords-e3"><code class="xref">def-cartesinan-coords-e3</code></a> <em>(ch/vector-calculus/geometry)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-def-cylindrical-coords-e3"><td></td><td>
+       <strong>def-cylindrical-coords-e3</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/vector-calculus/geometry.html#def-cylindrical-coords-e3"><code class="xref">def-cylindrical-coords-e3</code></a> <em>(ch/vector-calculus/geometry)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-def-cylindrical-coords-e3-base"><td></td><td>
+       <strong>def-cylindrical-coords-e3-base</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/vector-calculus/geometry.html#def-cylindrical-coords-e3-base"><code class="xref">def-cylindrical-coords-e3-base</code></a> <em>(ch/vector-calculus/geometry)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-def-natural-base"><td></td><td>
+       <strong>def-natural-base</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/vector-calculus/geometry.html#def-natural-base"><code class="xref">def-natural-base</code></a> <em>(ch/vector-calculus/geometry)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-def-parametrization-regular"><td></td><td>
+       <strong>def-parametrization-regular</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/vector-calculus/geometry.html#def-parametrization-regular"><code class="xref">def-parametrization-regular</code></a> <em>(ch/vector-calculus/geometry)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-def-physical-base"><td></td><td>
+       <strong>def-physical-base</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/vector-calculus/geometry.html#def-physical-base"><code class="xref">def-physical-base</code></a> <em>(ch/vector-calculus/geometry)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-def-polar-coords-e2"><td></td><td>
+       <strong>def-polar-coords-e2</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/vector-calculus/geometry.html#def-polar-coords-e2"><code class="xref">def-polar-coords-e2</code></a> <em>(ch/vector-calculus/geometry)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-def-polar-coords-e2-base"><td></td><td>
+       <strong>def-polar-coords-e2-base</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/vector-calculus/geometry.html#def-polar-coords-e2-base"><code class="xref">def-polar-coords-e2-base</code></a> <em>(ch/vector-calculus/geometry)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-def-spherical-coords-e3"><td></td><td>
+       <strong>def-spherical-coords-e3</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/vector-calculus/geometry.html#def-spherical-coords-e3"><code class="xref">def-spherical-coords-e3</code></a> <em>(ch/vector-calculus/geometry)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-def-spherical-coords-e3-base"><td></td><td>
+       <strong>def-spherical-coords-e3-base</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/vector-calculus/geometry.html#def-spherical-coords-e3-base"><code class="xref">def-spherical-coords-e3-base</code></a> <em>(ch/vector-calculus/geometry)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-definition-2"><td></td><td>
+       <strong>definition-2</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/multivariable-calculus/derivatives.html#definition-2"><code class="xref">definition-2</code></a> <em>(ch/multivariable-calculus/derivatives)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-definition-3"><td></td><td>
+       <strong>definition-3</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/multivariable-calculus/derivatives.html#definition-3"><code class="xref">definition-3</code></a> <em>(ch/multivariable-calculus/derivatives)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-derivatives-derivative"><td></td><td>
+       <strong>derivatives-derivative</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/derivatives.html#derivatives-derivative"><code class="xref">derivatives-derivative</code></a> <em>(ch/infinitesimal_calculus/derivatives)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-derivatives-differential"><td></td><td>
+       <strong>derivatives-differential</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/derivatives.html#derivatives-differential"><code class="xref">derivatives-differential</code></a> <em>(ch/infinitesimal_calculus/derivatives)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-derivatives-increment"><td></td><td>
+       <strong>derivatives-increment</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/derivatives.html#derivatives-increment"><code class="xref">derivatives-increment</code></a> <em>(ch/infinitesimal_calculus/derivatives)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-derivatives-incremental-ratio"><td></td><td>
+       <strong>derivatives-incremental-ratio</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/derivatives.html#derivatives-incremental-ratio"><code class="xref">derivatives-incremental-ratio</code></a> <em>(ch/infinitesimal_calculus/derivatives)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-ex-combinations-with-rep-1"><td></td><td>
+       <strong>ex-combinations-with-rep-1</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/statistics/combinatorics.html#ex-combinations-with-rep-1"><code class="xref">ex-combinations-with-rep-1</code></a> <em>(ch/statistics/combinatorics)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-ex-combinations-with-rep-2"><td></td><td>
+       <strong>ex-combinations-with-rep-2</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/statistics/combinatorics.html#ex-combinations-with-rep-2"><code class="xref">ex-combinations-with-rep-2</code></a> <em>(ch/statistics/combinatorics)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-ex-combinations-with-rep-3"><td></td><td>
+       <strong>ex-combinations-with-rep-3</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/statistics/combinatorics.html#ex-combinations-with-rep-3"><code class="xref">ex-combinations-with-rep-3</code></a> <em>(ch/statistics/combinatorics)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-ex-combinations-with-rep-bose-einstein"><td></td><td>
+       <strong>ex-combinations-with-rep-bose-einstein</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/statistics/combinatorics.html#ex-combinations-with-rep-bose-einstein"><code class="xref">ex-combinations-with-rep-bose-einstein</code></a> <em>(ch/statistics/combinatorics)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-example-9"><td></td><td>
+       <strong>example-9</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/analysis.html#example-9"><code class="xref">example-9</code></a> <em>(ch/infinitesimal_calculus/analysis)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-infinitesimal-calculus:integrals:def:integrable-function"><td></td><td>
+       <strong>infinitesimal-calculus:integrals:def:integrable-function</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/integrals.html#infinitesimal-calculus:integrals:def:integrable-function"><code class="xref">infinitesimal-calculus:integrals:def:integrable-function</code></a> <em>(ch/infinitesimal_calculus/integrals)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-infinitesimal-calculus:integrals:def:riemann-integral"><td></td><td>
+       <strong>infinitesimal-calculus:integrals:def:riemann-integral</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/integrals.html#infinitesimal-calculus:integrals:def:riemann-integral"><code class="xref">infinitesimal-calculus:integrals:def:riemann-integral</code></a> <em>(ch/infinitesimal_calculus/integrals)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-infinitesimal-calculus:integrals:def:riemann-sum"><td></td><td>
+       <strong>infinitesimal-calculus:integrals:def:riemann-sum</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/integrals.html#infinitesimal-calculus:integrals:def:riemann-sum"><code class="xref">infinitesimal-calculus:integrals:def:riemann-sum</code></a> <em>(ch/infinitesimal_calculus/integrals)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-integrals-fundamental-1x"><td></td><td>
+       <strong>integrals-fundamental-1x</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/integrals.html#integrals-fundamental-1x"><code class="xref">integrals-fundamental-1x</code></a> <em>(ch/infinitesimal_calculus/integrals)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-integrals-fundamental-1xn"><td></td><td>
+       <strong>integrals-fundamental-1xn</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/integrals.html#integrals-fundamental-1xn"><code class="xref">integrals-fundamental-1xn</code></a> <em>(ch/infinitesimal_calculus/integrals)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-integrals-fundamental-1xn-limit"><td></td><td>
+       <strong>integrals-fundamental-1xn-limit</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/integrals.html#integrals-fundamental-1xn-limit"><code class="xref">integrals-fundamental-1xn-limit</code></a> <em>(ch/infinitesimal_calculus/integrals)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-integrals-methods-3"><td></td><td>
+       <strong>integrals-methods-3</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/integrals.html#integrals-methods-3"><code class="xref">integrals-methods-3</code></a> <em>(ch/infinitesimal_calculus/integrals)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-integrals-methods-ixp"><td></td><td>
+       <strong>integrals-methods-ixp</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/integrals.html#integrals-methods-ixp"><code class="xref">integrals-methods-ixp</code></a> <em>(ch/infinitesimal_calculus/integrals)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-integrals-methods-partial-fraction-1"><td></td><td>
+       <strong>integrals-methods-partial-fraction-1</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/integrals.html#integrals-methods-partial-fraction-1"><code class="xref">integrals-methods-partial-fraction-1</code></a> <em>(ch/infinitesimal_calculus/integrals)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-integrals-methods-partial-fraction-2"><td></td><td>
+       <strong>integrals-methods-partial-fraction-2</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/integrals.html#integrals-methods-partial-fraction-2"><code class="xref">integrals-methods-partial-fraction-2</code></a> <em>(ch/infinitesimal_calculus/integrals)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-integrals-methods-sub-1"><td></td><td>
+       <strong>integrals-methods-sub-1</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/integrals.html#integrals-methods-sub-1"><code class="xref">integrals-methods-sub-1</code></a> <em>(ch/infinitesimal_calculus/integrals)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-integrals-methods-sub-10"><td></td><td>
+       <strong>integrals-methods-sub-10</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/integrals.html#integrals-methods-sub-10"><code class="xref">integrals-methods-sub-10</code></a> <em>(ch/infinitesimal_calculus/integrals)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-integrals-methods-sub-2"><td></td><td>
+       <strong>integrals-methods-sub-2</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/integrals.html#integrals-methods-sub-2"><code class="xref">integrals-methods-sub-2</code></a> <em>(ch/infinitesimal_calculus/integrals)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-integrals-methods-sub-4"><td></td><td>
+       <strong>integrals-methods-sub-4</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/integrals.html#integrals-methods-sub-4"><code class="xref">integrals-methods-sub-4</code></a> <em>(ch/infinitesimal_calculus/integrals)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-integrals-methods-sub-5"><td></td><td>
+       <strong>integrals-methods-sub-5</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/integrals.html#integrals-methods-sub-5"><code class="xref">integrals-methods-sub-5</code></a> <em>(ch/infinitesimal_calculus/integrals)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-integrals-methods-sub-6"><td></td><td>
+       <strong>integrals-methods-sub-6</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/integrals.html#integrals-methods-sub-6"><code class="xref">integrals-methods-sub-6</code></a> <em>(ch/infinitesimal_calculus/integrals)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-integrals-methods-sub-7"><td></td><td>
+       <strong>integrals-methods-sub-7</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/integrals.html#integrals-methods-sub-7"><code class="xref">integrals-methods-sub-7</code></a> <em>(ch/infinitesimal_calculus/integrals)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-integrals-methods-sub-8"><td></td><td>
+       <strong>integrals-methods-sub-8</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/integrals.html#integrals-methods-sub-8"><code class="xref">integrals-methods-sub-8</code></a> <em>(ch/infinitesimal_calculus/integrals)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-integrals-methods-sub-9"><td></td><td>
+       <strong>integrals-methods-sub-9</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/integrals.html#integrals-methods-sub-9"><code class="xref">integrals-methods-sub-9</code></a> <em>(ch/infinitesimal_calculus/integrals)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-integrals:thm:avg"><td></td><td>
+       <strong>integrals:thm:avg</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/integrals.html#integrals:thm:avg"><code class="xref">integrals:thm:avg</code></a> <em>(ch/infinitesimal_calculus/integrals)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-integrals:thm:fund"><td></td><td>
+       <strong>integrals:thm:fund</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/integrals.html#integrals:thm:fund"><code class="xref">integrals:thm:fund</code></a> <em>(ch/infinitesimal_calculus/integrals)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-integrals:thm:fund:reynolds"><td></td><td>
+       <strong>integrals:thm:fund:reynolds</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/integrals.html#integrals:thm:fund:reynolds"><code class="xref">integrals:thm:fund:reynolds</code></a> <em>(ch/infinitesimal_calculus/integrals)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-interval-def"><td></td><td>
+       <strong>interval-def</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/analysis.html#interval-def"><code class="xref">interval-def</code></a> <em>(ch/infinitesimal_calculus/analysis)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-interval-example"><td></td><td>
+       <strong>interval-example</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/analysis.html#interval-example"><code class="xref">interval-example</code></a> <em>(ch/infinitesimal_calculus/analysis)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-interval-limited"><td></td><td>
+       <strong>interval-limited</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/analysis.html#interval-limited"><code class="xref">interval-limited</code></a> <em>(ch/infinitesimal_calculus/analysis)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-interval-open-close"><td></td><td>
+       <strong>interval-open-close</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/analysis.html#interval-open-close"><code class="xref">interval-open-close</code></a> <em>(ch/infinitesimal_calculus/analysis)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-limit:example:lim-xne-x"><td></td><td>
+       <strong>limit:example:lim-xne-x</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/derivatives.html#limit:example:lim-xne-x"><code class="xref">limit:example:lim-xne-x</code></a> <em>(ch/infinitesimal_calculus/derivatives)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-linsys-gauss"><td></td><td>
+       <strong>linsys-gauss</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/algebra/linear-algebra.html#linsys-gauss"><code class="xref">linsys-gauss</code></a> <em>(ch/algebra/linear-algebra)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-linsys-geo-1"><td></td><td>
+       <strong>linsys-geo-1</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/algebra/linear-algebra.html#linsys-geo-1"><code class="xref">linsys-geo-1</code></a> <em>(ch/algebra/linear-algebra)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-linsys-geo-2"><td></td><td>
+       <strong>linsys-geo-2</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/algebra/linear-algebra.html#linsys-geo-2"><code class="xref">linsys-geo-2</code></a> <em>(ch/algebra/linear-algebra)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-linsys-geo-3"><td></td><td>
+       <strong>linsys-geo-3</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/algebra/linear-algebra.html#linsys-geo-3"><code class="xref">linsys-geo-3</code></a> <em>(ch/algebra/linear-algebra)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-linsys-geo-4"><td></td><td>
+       <strong>linsys-geo-4</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/algebra/linear-algebra.html#linsys-geo-4"><code class="xref">linsys-geo-4</code></a> <em>(ch/algebra/linear-algebra)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-linsys-subs"><td></td><td>
+       <strong>linsys-subs</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/algebra/linear-algebra.html#linsys-subs"><code class="xref">linsys-subs</code></a> <em>(ch/algebra/linear-algebra)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-matrix-prod-noncomm"><td></td><td>
+       <strong>matrix-prod-noncomm</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/algebra/linear-algebra.html#matrix-prod-noncomm"><code class="xref">matrix-prod-noncomm</code></a> <em>(ch/algebra/linear-algebra)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-multivariable-calculus-continuous-fun"><td></td><td>
+       <strong>multivariable-calculus-continuous-fun</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/multivariable-calculus/limits.html#multivariable-calculus-continuous-fun"><code class="xref">multivariable-calculus-continuous-fun</code></a> <em>(ch/multivariable-calculus/limits)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-multivariable-calculus-partial-derivative"><td></td><td>
+       <strong>multivariable-calculus-partial-derivative</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/multivariable-calculus/derivatives.html#multivariable-calculus-partial-derivative"><code class="xref">multivariable-calculus-partial-derivative</code></a> <em>(ch/multivariable-calculus/derivatives)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-multivariable-calculus:differential"><td></td><td>
+       <strong>multivariable-calculus:differential</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/multivariable-calculus/derivatives.html#multivariable-calculus:differential"><code class="xref">multivariable-calculus:differential</code></a> <em>(ch/multivariable-calculus/derivatives)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-multivariable-calculus:increment-1"><td></td><td>
+       <strong>multivariable-calculus:increment-1</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/multivariable-calculus/derivatives.html#multivariable-calculus:increment-1"><code class="xref">multivariable-calculus:increment-1</code></a> <em>(ch/multivariable-calculus/derivatives)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-multivariable-calculus:integral:example"><td></td><td>
+       <strong>multivariable-calculus:integral:example</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/multivariable-calculus/integrals.html#multivariable-calculus:integral:example"><code class="xref">multivariable-calculus:integral:example</code></a> <em>(ch/multivariable-calculus/integrals)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-multivariable-calculus:integrals:def:riemann-integral"><td></td><td>
+       <strong>multivariable-calculus:integrals:def:riemann-integral</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/multivariable-calculus/integrals.html#multivariable-calculus:integrals:def:riemann-integral"><code class="xref">multivariable-calculus:integrals:def:riemann-integral</code></a> <em>(ch/multivariable-calculus/integrals)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-multivariable-calculus:integrals:def:riemann-sum"><td></td><td>
+       <strong>multivariable-calculus:integrals:def:riemann-sum</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/multivariable-calculus/integrals.html#multivariable-calculus:integrals:def:riemann-sum"><code class="xref">multivariable-calculus:integrals:def:riemann-sum</code></a> <em>(ch/multivariable-calculus/integrals)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-precalculus-multivar-fun"><td></td><td>
+       <strong>precalculus-multivar-fun</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/precalculus/multivariable-real-fun.html#precalculus-multivar-fun"><code class="xref">precalculus-multivar-fun</code></a> <em>(ch/precalculus/multivariable-real-fun)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-precalculus-real-fun"><td></td><td>
+       <strong>precalculus-real-fun</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/precalculus/real-functions.html#precalculus-real-fun"><code class="xref">precalculus-real-fun</code></a> <em>(ch/precalculus/real-functions)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-real-algebra-fraction-improper"><td></td><td>
+       <strong>real-algebra-fraction-improper</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/algebra/real-algebra.html#real-algebra-fraction-improper"><code class="xref">real-algebra-fraction-improper</code></a> <em>(ch/algebra/real-algebra)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-real-algebra-fraction-simple"><td></td><td>
+       <strong>real-algebra-fraction-simple</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/algebra/real-algebra.html#real-algebra-fraction-simple"><code class="xref">real-algebra-fraction-simple</code></a> <em>(ch/algebra/real-algebra)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-real-algebra-fraction-sum-partial"><td></td><td>
+       <strong>real-algebra-fraction-sum-partial</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/algebra/real-algebra.html#real-algebra-fraction-sum-partial"><code class="xref">real-algebra-fraction-sum-partial</code></a> <em>(ch/algebra/real-algebra)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-series-fun-seq-convergence-point"><td></td><td>
+       <strong>series-fun-seq-convergence-point</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/series.html#series-fun-seq-convergence-point"><code class="xref">series-fun-seq-convergence-point</code></a> <em>(ch/series)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-series-fun-seq-convergence-uniform"><td></td><td>
+       <strong>series-fun-seq-convergence-uniform</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/series.html#series-fun-seq-convergence-uniform"><code class="xref">series-fun-seq-convergence-uniform</code></a> <em>(ch/series)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-set-fun-def"><td></td><td>
+       <strong>set-fun-def</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/set.html#set-fun-def"><code class="xref">set-fun-def</code></a> <em>(ch/set)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-theorem-3"><td></td><td>
+       <strong>theorem-3</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/multivariable-calculus/integrals.html#theorem-3"><code class="xref">theorem-3</code></a> <em>(ch/multivariable-calculus/integrals)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-thm-curl"><td></td><td>
+       <strong>thm-curl</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/vector-calculus/stokes.html#thm-curl"><code class="xref">thm-curl</code></a> <em>(ch/vector-calculus/stokes)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-thm-curl-1"><td></td><td>
+       <strong>thm-curl-1</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/vector-calculus/stokes.html#thm-curl-1"><code class="xref">thm-curl-1</code></a> <em>(ch/vector-calculus/stokes)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-thm-curl-2"><td></td><td>
+       <strong>thm-curl-2</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/vector-calculus/stokes.html#thm-curl-2"><code class="xref">thm-curl-2</code></a> <em>(ch/vector-calculus/stokes)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-thm-divergence"><td></td><td>
+       <strong>thm-divergence</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/vector-calculus/stokes.html#thm-divergence"><code class="xref">thm-divergence</code></a> <em>(ch/vector-calculus/stokes)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-thm-divergence-1"><td></td><td>
+       <strong>thm-divergence-1</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/vector-calculus/stokes.html#thm-divergence-1"><code class="xref">thm-divergence-1</code></a> <em>(ch/vector-calculus/stokes)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-thm-divergence-2"><td></td><td>
+       <strong>thm-divergence-2</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/vector-calculus/stokes.html#thm-divergence-2"><code class="xref">thm-divergence-2</code></a> <em>(ch/vector-calculus/stokes)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-thm-gradient"><td></td><td>
+       <strong>thm-gradient</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/vector-calculus/stokes.html#thm-gradient"><code class="xref">thm-gradient</code></a> <em>(ch/vector-calculus/stokes)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-thm-gradient-1"><td></td><td>
+       <strong>thm-gradient-1</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/vector-calculus/stokes.html#thm-gradient-1"><code class="xref">thm-gradient-1</code></a> <em>(ch/vector-calculus/stokes)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-thm-gradient-2"><td></td><td>
+       <strong>thm-gradient-2</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/vector-calculus/stokes.html#thm-gradient-2"><code class="xref">thm-gradient-2</code></a> <em>(ch/vector-calculus/stokes)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-thm:infinitesimal-calculus:continuous-fun:thms:comparison"><td></td><td>
+       <strong>thm:infinitesimal-calculus:continuous-fun:thms:comparison</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/analysis.html#thm:infinitesimal-calculus:continuous-fun:thms:comparison"><code class="xref">thm:infinitesimal-calculus:continuous-fun:thms:comparison</code></a> <em>(ch/infinitesimal_calculus/analysis)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-thm:infinitesimal-calculus:continuous-fun:thms:intermediate"><td></td><td>
+       <strong>thm:infinitesimal-calculus:continuous-fun:thms:intermediate</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/analysis.html#thm:infinitesimal-calculus:continuous-fun:thms:intermediate"><code class="xref">thm:infinitesimal-calculus:continuous-fun:thms:intermediate</code></a> <em>(ch/infinitesimal_calculus/analysis)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-thm:infinitesimal-calculus:continuous-fun:thms:sign"><td></td><td>
+       <strong>thm:infinitesimal-calculus:continuous-fun:thms:sign</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/analysis.html#thm:infinitesimal-calculus:continuous-fun:thms:sign"><code class="xref">thm:infinitesimal-calculus:continuous-fun:thms:sign</code></a> <em>(ch/infinitesimal_calculus/analysis)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-thm:infinitesimal-calculus:continuous-fun:thms:weierstrass"><td></td><td>
+       <strong>thm:infinitesimal-calculus:continuous-fun:thms:weierstrass</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/analysis.html#thm:infinitesimal-calculus:continuous-fun:thms:weierstrass"><code class="xref">thm:infinitesimal-calculus:continuous-fun:thms:weierstrass</code></a> <em>(ch/infinitesimal_calculus/analysis)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-thm:infinitesimal-calculus:continuous-fun:thms:zeros"><td></td><td>
+       <strong>thm:infinitesimal-calculus:continuous-fun:thms:zeros</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/analysis.html#thm:infinitesimal-calculus:continuous-fun:thms:zeros"><code class="xref">thm:infinitesimal-calculus:continuous-fun:thms:zeros</code></a> <em>(ch/infinitesimal_calculus/analysis)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-thm:infinitesimal-calculus:derivatives:taylor"><td></td><td>
+       <strong>thm:infinitesimal-calculus:derivatives:taylor</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/derivatives.html#thm:infinitesimal-calculus:derivatives:taylor"><code class="xref">thm:infinitesimal-calculus:derivatives:taylor</code></a> <em>(ch/infinitesimal_calculus/derivatives)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-thm:infinitesimal-calculus:derivatives:thm:cauchy"><td></td><td>
+       <strong>thm:infinitesimal-calculus:derivatives:thm:cauchy</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/derivatives.html#thm:infinitesimal-calculus:derivatives:thm:cauchy"><code class="xref">thm:infinitesimal-calculus:derivatives:thm:cauchy</code></a> <em>(ch/infinitesimal_calculus/derivatives)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-thm:infinitesimal-calculus:derivatives:thm:fermat"><td></td><td>
+       <strong>thm:infinitesimal-calculus:derivatives:thm:fermat</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/derivatives.html#thm:infinitesimal-calculus:derivatives:thm:fermat"><code class="xref">thm:infinitesimal-calculus:derivatives:thm:fermat</code></a> <em>(ch/infinitesimal_calculus/derivatives)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-thm:infinitesimal-calculus:derivatives:thm:hopital"><td></td><td>
+       <strong>thm:infinitesimal-calculus:derivatives:thm:hopital</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/derivatives.html#thm:infinitesimal-calculus:derivatives:thm:hopital"><code class="xref">thm:infinitesimal-calculus:derivatives:thm:hopital</code></a> <em>(ch/infinitesimal_calculus/derivatives)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-thm:infinitesimal-calculus:derivatives:thm:lagrange"><td></td><td>
+       <strong>thm:infinitesimal-calculus:derivatives:thm:lagrange</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/derivatives.html#thm:infinitesimal-calculus:derivatives:thm:lagrange"><code class="xref">thm:infinitesimal-calculus:derivatives:thm:lagrange</code></a> <em>(ch/infinitesimal_calculus/derivatives)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-thm:infinitesimal-calculus:derivatives:thm:rolle"><td></td><td>
+       <strong>thm:infinitesimal-calculus:derivatives:thm:rolle</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/infinitesimal_calculus/derivatives.html#thm:infinitesimal-calculus:derivatives:thm:rolle"><code class="xref">thm:infinitesimal-calculus:derivatives:thm:rolle</code></a> <em>(ch/infinitesimal_calculus/derivatives)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-trigonometry:cos2x"><td></td><td>
+       <strong>trigonometry:cos2x</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/trigonometry.html#trigonometry:cos2x"><code class="xref">trigonometry:cos2x</code></a> <em>(ch/trigonometry)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-vector-calculus-ex-circuitation"><td></td><td>
+       <strong>vector-calculus-ex-circuitation</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/vector-calculus/integrals.html#vector-calculus-ex-circuitation"><code class="xref">vector-calculus-ex-circuitation</code></a> <em>(ch/vector-calculus/integrals)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-vector-calculus-ex-conservative-field"><td></td><td>
+       <strong>vector-calculus-ex-conservative-field</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/vector-calculus/integrals.html#vector-calculus-ex-conservative-field"><code class="xref">vector-calculus-ex-conservative-field</code></a> <em>(ch/vector-calculus/integrals)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-vector-calculus:circuitation"><td></td><td>
+       <strong>vector-calculus:circuitation</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/vector-calculus/integrals.html#vector-calculus:circuitation"><code class="xref">vector-calculus:circuitation</code></a> <em>(ch/vector-calculus/integrals)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-vector-integrals-ex-circle-quarter-length"><td></td><td>
+       <strong>vector-integrals-ex-circle-quarter-length</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/vector-calculus/integrals.html#vector-integrals-ex-circle-quarter-length"><code class="xref">vector-integrals-ex-circle-quarter-length</code></a> <em>(ch/vector-calculus/integrals)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-vector-integrals-ex-circle-quarter-mass"><td></td><td>
+       <strong>vector-integrals-ex-circle-quarter-mass</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/vector-calculus/integrals.html#vector-integrals-ex-circle-quarter-mass"><code class="xref">vector-integrals-ex-circle-quarter-mass</code></a> <em>(ch/vector-calculus/integrals)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-vector-integrals-ex-helix-length"><td></td><td>
+       <strong>vector-integrals-ex-helix-length</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/vector-calculus/integrals.html#vector-integrals-ex-helix-length"><code class="xref">vector-integrals-ex-helix-length</code></a> <em>(ch/vector-calculus/integrals)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-vector-integrals-ex-helix-mass"><td></td><td>
+       <strong>vector-integrals-ex-helix-mass</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/vector-calculus/integrals.html#vector-integrals-ex-helix-mass"><code class="xref">vector-integrals-ex-helix-mass</code></a> <em>(ch/vector-calculus/integrals)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-volume-cartesian-coords"><td></td><td>
+       <strong>volume-cartesian-coords</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/vector-calculus/geometry.html#volume-cartesian-coords"><code class="xref">volume-cartesian-coords</code></a> <em>(ch/vector-calculus/geometry)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-volume-cylindrical-coords"><td></td><td>
+       <strong>volume-cylindrical-coords</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/vector-calculus/geometry.html#volume-cylindrical-coords"><code class="xref">volume-cylindrical-coords</code></a> <em>(ch/vector-calculus/geometry)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-volume-spherical-coords"><td></td><td>
+       <strong>volume-spherical-coords</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/vector-calculus/geometry.html#volume-spherical-coords"><code class="xref">volume-spherical-coords</code></a> <em>(ch/vector-calculus/geometry)</em></td><td>
+       <em>example</em></td></tr>
+   </table>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Di basics
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

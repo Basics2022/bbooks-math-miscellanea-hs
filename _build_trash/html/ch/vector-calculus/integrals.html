@@ -1,0 +1,802 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="it" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>28.2. Integrali in spazi euclidei &#8212; Matematica per le scuole superiori</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/exercise.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/style.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/vector-calculus/integrals';</script>
+    <link rel="shortcut icon" href="../../_static/favicon.svg"/>
+    <link rel="index" title="Indice" href="../../genindex.html" />
+    <link rel="search" title="Cerca" href="../../search.html" />
+    <link rel="next" title="28.3. Operatori differenziali in spazi euclidei" href="derivatives.html" />
+    <link rel="prev" title="28.1. Cenni di geometria differenziale" href="geometry.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="it"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.svg" class="logo__image only-light" alt="Matematica per le scuole superiori - Home"/>
+    <script>document.write(`<img src="../../_static/logo-dark.svg" class="logo__image only-dark" alt="Matematica per le scuole superiori - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduzione</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../program.html">Programma</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../todo.html"><span class="math notranslate nohighlight">\(\texttt{todo}\)</span></a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Insiemistica e logica</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../set.html">1. Insiemistica</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../set/numeric-sets.html">1.5. Insiemi numerici</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../logics.html">2. Logica</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Algebra</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../algebra.html">3. Introduzione all’algebra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../algebra/real-algebra.html">4. Algebra sui numeri reali</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../algebra/real-n-algebra.html">5. Algebra su <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../algebra/linear-algebra.html">6. Algebra lineare</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../algebra/vector-algebra.html">7. Algebra vettoriale</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../algebra/vector-algebra-def.html">7.1. Prime definizioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../algebra/vector-algebra-euclidean-space.html">7.2. Spazio vettoriale euclideo</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../algebra/complex-algebra-link.html">8. Algebra complessa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../algebra/set-algebra-link.html">9. Algebra di insiemi</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Geometria analitica</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../analytic_geometry.html">10. Introduzione alla geometria analitica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analytic_geometry/euclidean_space.html">11. Spazio euclideo</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d.html">12. Geometria analitica nel piano</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/coordinates.html">12.1. Sistemi di coordinate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/points.html">12.2. Distanze e angoli</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/curves.html">12.3. Curve nel piano</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/lines.html">12.4. Rette nel piano</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/conics.html">12.5. Coniche</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/conics-cartesian.html">12.5.1. Forma canonica in coordinate cartesiane</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/conics-polar.html">12.5.2. Forma canonica in coordinate polari</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/conics-general.html">12.5.3. Equazione generale delle coniche</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/problems.html">12.6. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/sol.html">12.7. Soluzioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/notes.html">12.8. Note e dimostrazioni</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../analytic_geometry/analytic_geometry_3d.html">13. Geometria analitica nello spazio</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_3d/points.html">13.1. Sistemi di coordinate per lo spazio euclideo <span class="math notranslate nohighlight">\(E^3\)</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_3d/planes.html">13.2. Piani nello spazio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_3d/curves.html">13.3. Curve nello spazio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_3d/lines.html">13.4. Rette nello spazio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_3d/cone.html">13.5. Cono circolare retto e coniche</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Precalcolo</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../precalculus.html">14. Introduzione al pre-calcolo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../precalculus/real-functions.html">15. Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\(f: D \subseteq \mathbb{R} \rightarrow \mathbb{R}\)</span></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../series.html">16. Serie e successioni</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../trigonometry.html">17. Trigonometria</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../precalculus/exponential_logarithm.html">18. Esponenziale e logaritmo</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../precalculus/exponential_logarithm-problems.html">18.2. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../precalculus/exponential_logarithm-sol.html">18.3. Soluzioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../precalculus/exponential_logarithm-notes.html">18.4. Note e dimostrazioni</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../precalculus/polynomials.html">19. Polinomi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../precalculus/multivariable-real-fun.html">20. Funzioni multi-variabile</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../algebra/complex-algebra.html">21. Algebra complessa</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../algebra/complex-algebra-problems.html">21.9. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../algebra/complex-algebra-sol.html">21.10. Problemi - soluzioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../algebra/complex-algebra-notes.html">21.11. Note e dimostrazioni</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Calcolo</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../calculus.html">22. Introduzione al calcolo</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../infinitesimal_calculus/analysis.html">23. Introduzione all’analisi</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/analysis-problems.html">23.9. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/analysis-notes.html">23.10. Note e dimostrazioni</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../infinitesimal_calculus/derivatives.html">24. Derivate</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/derivatives-problems.html">24.10. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/derivatives-notes.html">24.11. Note e dimostrazioni</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../infinitesimal_calculus/integrals.html">25. Integrali</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/integrals-table.html">25.7. Tavola degli integrali indefiniti più comuni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../infinitesimal_calculus/integrals-problems.html">25.8. Problemi</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ode.html">26. Equazioni differenziali ordinarie</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ode-lti.html">26.3. Sistemi lineari tempo invarianti (LTI)</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../multivariable-calculus.html">27. Introduzione al calcolo multi-variabile</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../multivariable-calculus/limits.html">27.1. Limite di una funzione di più variabili</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../multivariable-calculus/derivatives.html">27.2. Derivate di funzioni di più variabili</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../multivariable-calculus/integrals.html">27.3. Integrali su domini multi-dimensionali</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../vector-calculus.html">28. Introduzione al calcolo vettoriale su spazi euclidei</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="geometry.html">28.1. Cenni di geometria differenziale</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">28.2. Integrali in spazi euclidei</a></li>
+<li class="toctree-l2"><a class="reference internal" href="derivatives.html">28.3. Operatori differenziali in spazi euclidei</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stokes.html">28.4. Teorema di Stokes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="problems.html">28.5. Problemi</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Statistica</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../statistics.html">29. Introduzione alla statistica</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../statistics/combinatorics.html">29.1. Calcolo combinatorio</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Indice</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../genindex.html">Indice</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Repository di origine"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs/edit/master/ch/vector-calculus/integrals.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/Basics2022/bbooks-math-miscellanea-hs/issues/new?title=Issue%20on%20page%20%2Fch/vector-calculus/integrals.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Apri un problema"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Scarica questa pagina">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/ch/vector-calculus/integrals.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Scarica il file sorgente"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Stampa in PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Modalità schermo intero"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Cerca" aria-label="Cerca" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Integrali in spazi euclidei</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenuti </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-di-linea">28.2.1. Integrali di linea</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#densita">28.2.1.1. Densità</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lavoro-e-circuitazione">28.2.1.2. Lavoro e circuitazione</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#circuitazione">28.2.1.2.1. Circuitazione</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#campi-conservativi">28.2.1.2.2. Campi conservativi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-di-superficie">28.2.2. Integrali di superficie</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vector-calculus-integrals-surface-density">28.2.2.1. Densità</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flusso-di-un-campo-vettoriale">28.2.2.2. Flusso di un campo vettoriale</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-di-volume">28.2.3. Integrali di volume</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <div class="tex2jax_ignore mathjax_ignore section" id="integrali-in-spazi-euclidei">
+<span id="vector-calculus-integrals"></span><h1><span class="section-number">28.2. </span>Integrali in spazi euclidei<a class="headerlink" href="#integrali-in-spazi-euclidei" title="Permalink to this heading">#</a></h1>
+<p>In questa sezione vengono presentati alcuni integrali comuni di campi scalari e vettoriali, che compaiono frequentemente in fisica e in altri ambiti scientifici. Il calcolo degli integrali in spazi euclidei viene svolto sfruttando una parametrizzazione del dominio con un insieme di coordinate per ricondurre questi integrali a <a class="reference internal" href="../multivariable-calculus/integrals.html#multivariable-calculus-integrals"><span class="std std-ref">integrali su domini multi-dimensionali</span></a>, dopo aver valutato correttamente l’espressione dei domini elementari in funzione delle variazioni elementari delle coordinate usate nella parametrizzazione: le espressione dell”<a class="reference internal" href="geometry.html#vector-calculus-geometry-lines-infinitesimal"><span class="std std-ref">elemento di linea</span></a>, dell”<a class="reference internal" href="geometry.html#vector-calculus-geometry-surfaces-infinitesimal"><span class="std std-ref">elemento di superficie</span></a>, e dell”<a class="reference internal" href="geometry.html#vector-calculus-geometry-volumes-infinitesimal"><span class="std std-ref">elemento di volume</span></a> indotti da una parametrizzazione dello spazio sono stati discussi nella prima sezione di questo capitolo, sull’uso delle <a class="reference internal" href="geometry.html#vector-calculus-geometry"><span class="std std-ref">coordinate per la rappresentazione parametrica dello spazio euclideo</span></a>.</p>
+<div class="section" id="integrali-di-linea">
+<span id="vector-calculus-integrals-line"></span><h2><span class="section-number">28.2.1. </span>Integrali di linea<a class="headerlink" href="#integrali-di-linea" title="Permalink to this heading">#</a></h2>
+<div class="section" id="densita">
+<span id="vector-calculus-integrals-density"></span><h3><span class="section-number">28.2.1.1. </span>Densità<a class="headerlink" href="#densita" title="Permalink to this heading">#</a></h3>
+<p>Data una curva <span class="math notranslate nohighlight">\(\gamma\)</span> nello spazio euclideo descritta dall’equazione parametrica</p>
+<div class="math notranslate nohighlight">
+\[\gamma: \vec{r} = \vec{r}_{\gamma}(t) \qquad  , \qquad t \in [t_0, t_1] \ ,\]</div>
+<p>e una funzione scalare <span class="math notranslate nohighlight">\(m(\vec{r})\)</span> definita sui punti della curva, <span class="math notranslate nohighlight">\(\vec{r} \in \gamma\)</span>, densità lineare di una proprietà <span class="math notranslate nohighlight">\(M\)</span> additivà, si può calcolare la proprietà <span class="math notranslate nohighlight">\(M\)</span> associata alla linea <span class="math notranslate nohighlight">\(\gamma\)</span> come l’integrale</p>
+<div class="math notranslate nohighlight">
+\[M = \int_{\vec{r} \in \gamma} m(\vec{r}) \ ,\]</div>
+<p>o indicando esplicitamente le dimensioni dell’elemento di linea (e indipendenti dal suo verso), e usando il parametro <span class="math notranslate nohighlight">\(\gamma\)</span> come variabile indipendente del problema,</p>
+<div class="math notranslate nohighlight">
+\[M = \int_{\vec{r} \in \gamma} m (\vec{r}) \, |d \vec{r}| = \int_{t = t_0}^{t_1} m (\vec{r}_{\gamma}(t)) \, |\vec{r}'_{\gamma}(t)| \, dt\]</div>
+<p>Questo tipo di integrale può essere utilizzato per calcolare la lunghezza di una curva o alcune proprietà additive della curva, di cui la funzione integranda è una densità lineare.</p>
+<div class="proof example dropdown admonition" id="vector-integrals-ex-circle-quarter-length">
+<p class="admonition-title"><span class="caption-number">Example 28.14 </span> (Lunghezza di un quarto di cerchio)</p>
+<div class="example-content section" id="proof-content">
+<p>Un arco di circonferenza corrispondente a un quarto di essa può essere rappresentato in forma parametrica come,</p>
+<div class="math notranslate nohighlight">
+\[\gamma: \, \vec{r}_{\gamma}(t) = R \cos t \hat{x}  + R \sin t \hat{y} \ , \qquad t \in \left[ 0, \frac{\pi}{2} \right]\]</div>
+<p>L’elemento di curva è</p>
+<div class="math notranslate nohighlight">
+\[d \vec{r} = \vec{r}'(t) \, dt = \left( - R \sin t \, \hat{x} + R \cos t \, \hat{y} \right) \, dt \]</div>
+<p>e il suo modulo vale</p>
+<div class="math notranslate nohighlight">
+\[|d \vec{r}| = R \, |dt| \ .\]</div>
+<p>La lunghezza della curva si ottiene con densità di proprietà <span class="math notranslate nohighlight">\(m = 1\)</span>, <strong>todo</strong> e, poiché la parametrizzazione è regolare e con <span class="math notranslate nohighlight">\(t\)</span> crescente per scrivere <span class="math notranslate nohighlight">\(|d t| = d t\)</span> e <span class="math notranslate nohighlight">\(R &gt; 0\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[L = \int{\vec{r}\in \gamma} |d \vec{r}| =\int_{t = 0}^{\frac{\pi}{2}} \left|\vec{r}'(t)\right| \, dt =  \int_{t = 0}^{\frac{\pi}{2}} R \, dt = \frac{\pi}{2} \, R \ .\]</div>
+</div>
+</div><div class="proof example dropdown admonition" id="vector-integrals-ex-circle-quarter-mass">
+<p class="admonition-title"><span class="caption-number">Example 28.15 </span> (Massa di un quarto di cerchio di densità non uniforme)</p>
+<div class="example-content section" id="proof-content">
+</div>
+</div><div class="proof example dropdown admonition" id="vector-integrals-ex-helix-length">
+<p class="admonition-title"><span class="caption-number">Example 28.16 </span> (Lunghezza di un’elica)</p>
+<div class="example-content section" id="proof-content">
+<p>Un’elica di raggio <span class="math notranslate nohighlight">\(R\)</span> e passo <span class="math notranslate nohighlight">\(L\)</span> composta da 2 avvolgimenti può essere rappresentata in forma parametrica come</p>
+<div class="math notranslate nohighlight">
+\[\gamma: \, \vec{r}(t) = R \cos t \, \hat{x} + R \sin t \, \hat{y} + \frac{L}{2\pi} \, t \, \hat{z} \ , \qquad t \in \left[ 0, 4 \pi \right]\]</div>
+<p>L’elemento di curva è</p>
+<div class="math notranslate nohighlight">
+\[d \vec{r} = \vec{r}'(t) \, dt = \left( - R \sin t \, \hat{x} + R \cos t \, \hat{y} + \frac{L}{2\pi} \, \hat{z} \right) \, dt \]</div>
+<p>e il suo modulo vale</p>
+<div class="math notranslate nohighlight">
+\[|d \vec{r}| = \sqrt{ R^2 + \left(\frac{L}{2 \pi}\right)^2 } \, |dt| \ .\]</div>
+<p>La lunghezza della curva si ottiene con densità di proprietà <span class="math notranslate nohighlight">\(m = 1\)</span>, <strong>todo</strong> e, poiché la parametrizzazione è regolare e con <span class="math notranslate nohighlight">\(t\)</span> crescente per scrivere <span class="math notranslate nohighlight">\(|d t| = d t\)</span> e <span class="math notranslate nohighlight">\(R &gt; 0\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[L = \int{\vec{r}\in \gamma} |d \vec{r}| =\int_{t = 0}^{4 \pi} \left|\vec{r}'(t)\right| \, dt =  \int_{t = 0}^{4 \pi}  \sqrt{ R^2 + \left(\frac{L}{2 \pi}\right)^2 } \,  dt = 4 \pi R^2 \sqrt{1 + \left( \frac{L}{2 \pi R}\right)^2}  \ . \]</div>
+</div>
+</div><div class="proof example dropdown admonition" id="vector-integrals-ex-helix-mass">
+<p class="admonition-title"><span class="caption-number">Example 28.17 </span> (Massa di un’elica con densità non uniforme)</p>
+<div class="example-content section" id="proof-content">
+<p>Si vuole calcolare la massa dell’elica dell’esempio precedente, conoscendo che la sua densità lineare di massa ha una dipendenza di primo grado dal parametro <span class="math notranslate nohighlight">\(t\)</span> nota,</p>
+<div class="math notranslate nohighlight">
+\[m(t) = a + b \, t \ , \qquad t \in \left[ 0, 4 \pi \right]\]</div>
+<p>con <span class="math notranslate nohighlight">\(a &gt; 0\)</span>, <span class="math notranslate nohighlight">\(b &gt; -\frac{a}{4 \pi}\)</span> noti. I vincoli sui parametri rappresentano il vincolo fisico di densità di massa non negativa, <span class="math notranslate nohighlight">\(m(t) &gt; 0\)</span>, <span class="math notranslate nohighlight">\(\forall t \in [0, 4 \pi]\)</span>.</p>
+<p>…</p>
+<p>La massa dell’elica è</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  M &amp; = \int_{\vec{r} \in \gamma} m(\vec{r}) = \\
+    &amp; = \int_{t = 0}^{4 \pi} m(\vec{r}_{\gamma}(t)) \, |\vec{r}'_{\gamma}(t)| \, dt = \\
+    &amp; = \int_{t = 0}^{4 \pi} \left( a + b t \right) \, \sqrt{ R^2 + \left(\frac{L}{2 \pi}\right)^2 } \,  dt =\\
+    &amp; = \left( 4 \pi a + \frac{(4 \pi)^2}{2} b \right) \sqrt{ R^2 + \left(\frac{L}{2 \pi}\right)^2 }   \ .
+\end{aligned}\end{split}\]</div>
+</div>
+</div></div>
+<div class="section" id="lavoro-e-circuitazione">
+<span id="vector-calculus-integrals-work"></span><h3><span class="section-number">28.2.1.2. </span>Lavoro e circuitazione<a class="headerlink" href="#lavoro-e-circuitazione" title="Permalink to this heading">#</a></h3>
+<p>L’integrale del prodotto scalare tra un campo vettoriale <span class="math notranslate nohighlight">\(\vec{f}(\vec{r})\)</span> definito su una curva e il versore tangente <span class="math notranslate nohighlight">\(\hat{t}(\vec{r})\)</span> alla curva stessa,</p>
+<div class="math notranslate nohighlight" id="equation-eq-integral-work">
+<span class="eqno">(28.1)<a class="headerlink" href="#equation-eq-integral-work" title="Permalink a questa equazione">#</a></span>\[L_{\gamma}(\vec{f}) = \int_{\vec{r} \in \gamma} \vec{f}(\vec{r}) \cdot \hat{t}(\vec{r}) \ ,\]</div>
+<p>compare in molti ambiti della fisica, o delle scienze in generale, ed è spesso associato al concetto di lavoro compiuto dalla forza o dal campo di forze <span class="math notranslate nohighlight">\(\vec{f}(\vec{r})\)</span> lungo il percorso rappresentato dalla curva <span class="math notranslate nohighlight">\(\gamma\)</span>. Esplicitando l’elemento di curva e ipotizzando una parametrizzazione regolare</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  L_{\gamma}(\vec{f})
+  &amp; = \int_{s \in s_0}^{s_1} \vec{f}(\vec{r}(s)) \cdot \vec{r}'(s) \, ds = \\
+  &amp; = \int_{t \in t_0}^{t_1} \vec{f}(\vec{r}(t)) \cdot \vec{r}'(t) \, dt 
+\end{aligned}\end{split}\]</div>
+<p><strong>todo</strong> <em>indipendente dalla parametrizzazione della curva</em></p>
+<div class="section" id="circuitazione">
+<span id="vector-calculus-integrals-line-circuitation"></span><h4><span class="section-number">28.2.1.2.1. </span>Circuitazione<a class="headerlink" href="#circuitazione" title="Permalink to this heading">#</a></h4>
+<div class="proof definition admonition" id="vector-calculus:circuitation">
+<p class="admonition-title"><span class="caption-number">Definition 28.5 </span> (Circuitazione)</p>
+<div class="definition-content section" id="proof-content">
+<p>L’integrale del lavoro <a class="reference internal" href="#equation-eq-integral-work">(28.1)</a> lungo una curva chiusa <span class="math notranslate nohighlight">\(\gamma\)</span> viene definito circuitazione del campo <span class="math notranslate nohighlight">\(\vec{f}\)</span> lungo la linea <span class="math notranslate nohighlight">\(\gamma\)</span>, e viene indicato comunemente con</p>
+<div class="math notranslate nohighlight">
+\[\Gamma_{\gamma}(\vec{f}) := \oint_{\gamma} \vec{f} \cdot \hat{t} \ ,\]</div>
+<p>dove il circolino sul segno di integrale vuole ricordare che la linea <span class="math notranslate nohighlight">\(\gamma\)</span> è una linea chiusa.</p>
+</div>
+</div><div class="proof example admonition" id="vector-calculus-ex-circuitation">
+<p class="admonition-title"><span class="caption-number">Example 28.18 </span></p>
+<div class="example-content section" id="proof-content">
+</div>
+</div></div>
+<div class="section" id="campi-conservativi">
+<span id="vector-calculus-integrals-work-conservative"></span><h4><span class="section-number">28.2.1.2.2. </span>Campi conservativi<a class="headerlink" href="#campi-conservativi" title="Permalink to this heading">#</a></h4>
+<p>In alcuni casi particolari, il valore di questo integrale non dipende dalla curva <span class="math notranslate nohighlight">\(\gamma\)</span>, ma solo dai suoi punti estremi. Campi di questo <span class="math notranslate nohighlight">\(\vec{f}(\vec{r})\)</span> di questo tipo compaiono in fisica nella definizione di campi di forze conservative, che ammettono potenziale.</p>
+<p><strong>todo</strong> <em>legare bene con il resto; discutere qui? In altre parti? Ragionare sui domini?</em></p>
+<ul class="simple">
+<li><p>campi conservativi in un dominio hanno circuitazione nulla lungo ogni percorso appartenente al dominio</p></li>
+</ul>
+<div class="proof example admonition" id="vector-calculus-ex-conservative-field">
+<p class="admonition-title"><span class="caption-number">Example 28.19 </span></p>
+<div class="example-content section" id="proof-content">
+</div>
+</div></div>
+</div>
+</div>
+<div class="section" id="integrali-di-superficie">
+<span id="vector-calculus-integrals-surface"></span><h2><span class="section-number">28.2.2. </span>Integrali di superficie<a class="headerlink" href="#integrali-di-superficie" title="Permalink to this heading">#</a></h2>
+<div class="section" id="vector-calculus-integrals-surface-density">
+<span id="id1"></span><h3><span class="section-number">28.2.2.1. </span>Densità<a class="headerlink" href="#vector-calculus-integrals-surface-density" title="Permalink to this heading">#</a></h3>
+<p>Data una superficie <span class="math notranslate nohighlight">\(S: \, \vec{r} = \vec{r}_S(q^1, q^2)\)</span> e una funzione <span class="math notranslate nohighlight">\(\sigma(\vec{r})\)</span> definita sui punti della superficie <span class="math notranslate nohighlight">\(S\)</span>, questa può essere interpretata come densità di superficie di una proprietà <span class="math notranslate nohighlight">\(M\)</span> additiva associata alla superficie <span class="math notranslate nohighlight">\(S\)</span> definita come l’integrale</p>
+<div class="math notranslate nohighlight">
+\[M = \int_{\vec{r} \in S} \sigma(\vec{r}) \ ,\]</div>
+<p>o indicando esplicitamente l’elemento di superficie, e ipotizzando una parametrizzazione regolare con parametri crescenti <span class="math notranslate nohighlight">\(|d q^i| = d q^i &gt; 0\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[M = \int_{\vec{r} \in S} \sigma(\vec{r}) d S = \int_{(q^1,q^2) \in Q} \sigma\left( \vec{r}_S(q^1, q^2) \right) \left|\frac{\partial \vec{r}_S}{\partial q^1}(q^1,q^2) \times \frac{\partial \vec{r}_S}{\partial q^2}(q^1,q^2) \right| \, dq^1 \, dq^2\]</div>
+</div>
+<div class="section" id="flusso-di-un-campo-vettoriale">
+<span id="vector-calculus-integrals-surface-flux"></span><h3><span class="section-number">28.2.2.2. </span>Flusso di un campo vettoriale<a class="headerlink" href="#flusso-di-un-campo-vettoriale" title="Permalink to this heading">#</a></h3>
+<p>L’integrale del prodotto scalare tra un campo vettoriale <span class="math notranslate nohighlight">\(\vec{f}(\vec{r})\)</span> definito su una superficice <span class="math notranslate nohighlight">\(S\)</span> e il versore normale <span class="math notranslate nohighlight">\(\hat{n}\)</span> alla superficie</p>
+<div class="math notranslate nohighlight" id="equation-eq-integral-flux">
+<span class="eqno">(28.2)<a class="headerlink" href="#equation-eq-integral-flux" title="Permalink a questa equazione">#</a></span>\[\Phi_{S}(\vec{f}) = \int_{\vec{r} \in S} \vec{f}(\vec{r}) \cdot \hat{n}(\vec{r}) \ ,\]</div>
+<p>compare in molti ambiti della fisica, o delle scienze in generale, e viene definito <strong>flusso</strong> del campo vettoriale <span class="math notranslate nohighlight">\(\vec{f}(\vec{r})\)</span> attraverso la superficie <span class="math notranslate nohighlight">\(S\)</span>. Esplicitando l’elemento di superficie e ipotizzando una parametrizzazione regolare con parametri crescenti e coerenti con la direzione desiderata del versore normale (orientazione della superficie),</p>
+<div class="math notranslate nohighlight" id="equation-eq-integral-flux-coords">
+<span class="eqno">(28.3)<a class="headerlink" href="#equation-eq-integral-flux-coords" title="Permalink a questa equazione">#</a></span>\[\Phi_{S}(\vec{f}) = \int_{(q^1, q^2) \in Q} \vec{f}(\vec{r}_S(q^1, q^2)) \cdot \frac{\partial \vec{r}}{\partial q^1} \times \frac{\partial \vec{r}}{\partial q^2} \, d q^1 \, d q^2 \ ,\]</div>
+</div>
+</div>
+<div class="section" id="integrali-di-volume">
+<span id="vector-calculus-integrals-volume"></span><h2><span class="section-number">28.2.3. </span>Integrali di volume<a class="headerlink" href="#integrali-di-volume" title="Permalink to this heading">#</a></h2>
+<p>Nello spazio 3-dimensionale i cui punti sono descritti dalle coordinate <span class="math notranslate nohighlight">\(\{ q^i \}_{i=1:3}\)</span>, <span class="math notranslate nohighlight">\(\vec{r}(q^1, q^2, q^3)\)</span>, il volume elementare <span class="math notranslate nohighlight">\(dV\)</span> costruito con i vettori degli incrementi parziali, può essere espresso in funzione delle variazioni delle coordinate <span class="math notranslate nohighlight">\(d q^1\)</span>, <span class="math notranslate nohighlight">\(d q^2\)</span>, <span class="math notranslate nohighlight">\(d q^3\)</span> e del prodotto misto delle derivate parziali,</p>
+<p>Ricordando il significato geometrico del <a class="reference internal" href="../algebra/vector-algebra-euclidean-space.html#math-hs-algebra-vector-euclidean-space-mixed-product"><span class="std std-ref">prodotto misto tra tre vettori in spazi euclidei</span></a>, l’elemento infinitesimo di un volume descritto dalle coordinate <span class="math notranslate nohighlight">\(\left( q^i \right)_{i=1:n}\)</span> è</p>
+<div class="math notranslate nohighlight">
+\[dV = \left| \frac{\partial \vec{r}}{\partial q^1} \cdot \frac{\partial \vec{r}}{\partial q^2} \times \frac{\partial \vec{r}}{\partial q^3} \right| \, d q^1 \, d q^2 \, d q^3 \ .\]</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./ch/vector-calculus"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="geometry.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">precedente</p>
+        <p class="prev-next-title"><span class="section-number">28.1. </span>Cenni di geometria differenziale</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="derivatives.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">successivo</p>
+        <p class="prev-next-title"><span class="section-number">28.3. </span>Operatori differenziali in spazi euclidei</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenuti
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-di-linea">28.2.1. Integrali di linea</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#densita">28.2.1.1. Densità</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lavoro-e-circuitazione">28.2.1.2. Lavoro e circuitazione</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#circuitazione">28.2.1.2.1. Circuitazione</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#campi-conservativi">28.2.1.2.2. Campi conservativi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-di-superficie">28.2.2. Integrali di superficie</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vector-calculus-integrals-surface-density">28.2.2.1. Densità</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flusso-di-un-campo-vettoriale">28.2.2.2. Flusso di un campo vettoriale</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrali-di-volume">28.2.3. Integrali di volume</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Di basics
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
