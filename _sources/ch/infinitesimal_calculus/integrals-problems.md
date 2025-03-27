@@ -164,10 +164,14 @@ e potendo rimuovere il valore assoluto (necessario per la [definizione di radice
    & = \int_{x=\pi/2}^{\pi} \sqrt{2} \cos \frac{x}{2} \, dx = \\
    & = 2 \sqrt{2} \int_{x=\pi/2}^{\pi} \cos \frac{x}{2} \, d \frac{x}{2} = \\
    & = 2 \sqrt{2} \left. \, \sin \frac{x}{2} \right|_{x={\pi/2}}^{\pi} = \\
-   & = 2 \sqrt{2} \left[ 0 - (-1) \right] = 1 \ ,
+   & = 2 \sqrt{2} \left[ 0 - (-1) \right] = 2 \sqrt{2} \ ,
  \end{aligned}$$
 
 avendo fatto un fatto un cambio di variabili - senza introdurre un nuovo simbolo, come può essere conveniente per sintesi in questi casi semplici - da $x$ a $\frac{x}{2}$, solo riconoscendo che $dx = 2 d \frac{x}{2}$, per avere il differenziabile della stessa variabile che compare ad argomento della funzione coseno.
+
+**6.** Prima di procedere a occhi chiusi nel calcolo dell'integrale, osserviamo che la funzione è ben definita, al contrario di quello che avviene nell'esercizio {ref}`ex:integrals:definite:attention` **3.**. Con il cambio di variabili $u = (-x)^{\frac{1}{6}}$, e quindi $du = - \frac{1}{6}(-x)^{-\frac{5}{6}} \, dx$, $dx = - (-x)^{\frac{5}{6}} \, du = 6 \, u^5 \, du$, $x \rightarrow -\infty:$ $u \rightarrow +\infty$, $x = 0:$ $u = 0$,  ci si può ricondurre a un integrale simile a all'integrale **1.** di questo stesso esercizio,
+ 
+ $$\int_{x=-\infty}^{0} \, e^{-\sqrt[6]{-x}} \, dx = - 6 \int_{u=\infty}^{0} e^{-u} \, u^5 \, du = 6 \int_{u=0}^{\infty} e^{-u} \, u^5 \, du = 6 \cdot 5! \left. \left[ - e^{-u} \right]\right|_{u=0}^{+\infty} = 6 \cdot 5! = 6!$$
 
 <!--
 **6.** Prima di procedere a occhi chiusi nel calcolo dell'integrale, osserviamo che la funzione è ben definita, al contrario di quello che avviene nell'esercizio {prf:ref}`ex:integrals:definite:attention` **3.**. Con il cambio di variabili $u = (-x)^{\frac{1}{6}}$, e quindi $du = - \frac{1}{6}(-x)^{-\frac{5}{6}} \, dx$, $dx = - (-x)^{\frac{5}{6}} \, du = 6 \, u^5 \, du$, $x = \-infty:$ $u = +\infty$, $x = 0:$ $u = 0$,  ci si può ricondurre a un integrale simile a all'integrale **1.** di questo stesso esercizio,
@@ -177,7 +181,28 @@ avendo fatto un fatto un cambio di variabili - senza introdurre un nuovo simbolo
 
 **7.**
 
-**8.**
+**8.** L'integranda può essere scritta come somma di frazioni parziali nella forma
+
+$$\frac{2x+1}{(x-1)(x-2)(x-3)} = \frac{A}{x-1} + \frac{B}{x-2} + \frac{C}{x-3} \ ,$$
+
+con $A = \frac{3}{2}$, $B = -5$, $C = \frac{7}{2}$
+
+$$\begin{aligned}
+  \int_{x=4}^{5} \frac{2x+1}{(x-1)(x-2)(x-3)} \, dx
+  & = \int_{x=4}^{5} \left( \frac{A}{x-1} + \frac{B}{x-2} + \frac{C}{x-3} \right) \, dx = \\
+  & = \left( A \,\ln(x-1) + B \, \ln(x-2) + C \, \ln(x-3) \right)|_{x=4}^{5}  = \\
+  & = \frac{3}{2} \ln 4 + \left( - \frac{3}{2} - 5  \right) \ln 3 + \left( 5 + \frac{7}{2} \right) \ln 2 - \frac{7}{2} \underbrace{\ln 1}_{=0} = \\
+  & = - \frac{13}{2} \, \ln 3 + \frac{23}{2} \, \ln 2 \ .
+\end{aligned}$$
+
+Calcolo dei coefficienti $A$, $B$, $C$ **todo** *spostare in altro capitolo, usarlo come esercizio e fare riferimento*
+
+$$\begin{aligned}
+  1   & : \ 1 = 6A + 3B+ 2C \\ 
+  x   & : \ 2 = -5A - 4B - 3C \\ 
+  x^2 & : \ 0 = A + B + C \\ 
+\end{aligned}$$
+
 
 **9.**
 

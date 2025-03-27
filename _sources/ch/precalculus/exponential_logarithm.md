@@ -5,7 +5,7 @@ In questo capitolo si presentano le funzioni a variabile reale, $f(x): D \in \ma
 - esponenziale, $f(x) = a^x$
 - logaritmo, $f(x) = \log_a x$
 
-e successivamente le [funzioni iperboliche]()
+e successivamente le [funzioni iperboliche](math-hs:exp:def:hyp).
 
 ## Funzione esponenziale e logaritmo di variabile reale
 
@@ -102,26 +102,78 @@ Vengono definite le funzioni iperboliche
 
 $$\begin{aligned}
   \cosh x & := \frac{e^x + e^{-x}}{2} \\
-  \sinh y & := \frac{e^x - e^{-x}}{2} \ 
-\end{aligned}$$
+  \sinh x & := \frac{e^x - e^{-x}}{2} \ 
+\end{aligned}$$ (eq:hyperbolic:def)
 
 **Proprietà.** 
 Simmetria:
 
-$$\cosh(-x) = \cosh(x) \qquad , \qquad \sinh(-x) = - \sinh(x) \ .$$
+$$\cosh(-x) = \cosh(x) \qquad , \qquad \sinh(-x) = - \sinh(x) \ .$$ (eq:hyperbolic:symmetry)
 
 Le funzioni iperboliche hanno regole analoghe - ma non identiche - alle funzioni trigonometriche, [dimostrabili](math-hs:exp-log:notes:hyp) grazie alle proprietà delle potenze
 
-- Relazione fondamentale
+**Relazione fondamentale.**
 
-  $$\cosh^2 x - \sinh^2 x = 1$$
+$$\cosh^2 x - \sinh^2 x = 1$$ (eq:hyperbolic-fundamental)
 
-- Somma e sottrazione
+```{dropdown} Dimostrazione
 
-  $$\begin{aligned}
-    \cosh(x \mp y) & = \cosh x \cosh y \mp \sinh x \sinh y \\
-    \sinh(x \mp y) & = \sinh x \cosh y \mp \cosh x \sinh y 
-  \end{aligned}$$
+Valutando la differenza tra i quadrati della definizione {eq}`eq:hyperbolic:def` delle funzioni iperboliche,
+
+$$\begin{aligned}
+ \cosh^2 x & = \left(\frac{e^x + e^{-x}}{2}\right)^2 = \frac{1}{4} \left( e^{2x} + 2 + e^{-2x} \right) \\
+ \sinh^2 x & = \left(\frac{e^x + e^{-x}}{2}\right)^2 = \frac{1}{4} \left( e^{2x} - 2 + e^{-2x} \right) \\
+\end{aligned}$$
+
+risulta dimostrata dimostrata la relazione fondamentale {eq}`eq:hyperbolic-fundamental`
+
+$$\cosh^2 x - \sinh^2 x = \frac{1}{4} \left( e^{2x} + 2 + e^{-2x} \right) - \frac{1}{4} \left( e^{2x} - 2 + e^{-2x} \right) = 1 \ .$$
+
+
+```
+
+**Somma e sottrazione.**
+
+$$\begin{aligned}
+  \cosh(x \mp y) & = \cosh x \cosh y \mp \sinh x \sinh y \\
+  \sinh(x \mp y) & = \sinh x \cosh y \mp \cosh x \sinh y 
+\end{aligned}$$ (eq:hyperbolic:sum-diff)
+
+```{dropdown} Dimostrazione
+
+Viene qui dimostrata la formula $\cosh(x+y) = \cosh x \cosh y + \sinh x \sinh y$. La formula per la sottrazione segue immediatamente dalle proprietà di simmetria {eq}`eq:hyperbolic:symmetry` delle funzioni iperboliche, definendo $z = -y$. La dimostrazione delle formule del seno iperbolico di somme e differenze segue gli stessi passaggi e viene lasciata come esercizio.
+
+Valutando i prodotti,
+
+$$\begin{aligned}
+ \cosh x \, \cosh y & = \frac{e^x + e^{-x}}{2} \frac{e^y + e^{-y}}{2} = \frac{e^{x+y} + e^{x-y} + e^{-x+y} + e^{-x-y}}{4} \\
+ \sinh x \, \sinh y & = \frac{e^x - e^{-x}}{2} \frac{e^y - e^{-y}}{2} = \frac{e^{x+y} - e^{x-y} - e^{-x+y} + e^{-x-y}}{4} \\ 
+\end{aligned}$$
+
+e sommando
+
+$$\cosh x \, \cosh y + \sinh x \sinh y = \frac{e^{x+y} + e^{-(x+y)}}{2} = \cosh(x+y) \ .$$
+
+```
+
+**"Werner".**
+Dalle formule del coseno e del seno iperbolico di somme e differenze, si possono derivare facilmente le formule analoghe alle formule di Werner per le funzioni trigonometriche
+
+$$\begin{aligned}
+  \cosh x \, \cosh y & = \frac{1}{2} \left( \cosh(x+y) + \cosh(x-y) \right) \\
+  \sinh x \, \sinh y & = \frac{1}{2} \left( \cosh(x+y) - \cosh(x-y) \right) \\
+  \sinh x \, \cosh y & = \frac{1}{2} \left( \sinh(x+y) + \sinh(x-y) \right) \\
+\end{aligned}$$
+
+
+**"Prostaferesi".**
+
+$$\begin{aligned}
+  \cosh p + \cosh q & = 2 \cosh \left( \frac{p+q}{2} \right) \cosh \left( \frac{p-q}{2} \right) \\
+  \cosh p - \cosh q & = 2 \sinh \left( \frac{p+q}{2} \right) \sinh \left( \frac{p-q}{2} \right) \\
+  \sinh p + \sinh q & = 2 \sinh \left( \frac{p+q}{2} \right) \cosh \left( \frac{p-q}{2} \right) \\
+\end{aligned}$$
+
 
 <!--
 ## Funzione esponenziale e logaritmo di variabile complessa
