@@ -354,7 +354,7 @@ $$
 
 si ottiene la dimostrazione della formula inversa
 
-$$x_m = \frac{1}{N} \sum_{n=0}^{N-1} x_n  \, N \, \delta_{mn} = x_m \ .$$
+$$\frac{1}{N} \sum_{k=0}^{N-1} X_k \ e^{i 2 \pi \frac{k m}{N}}  = \frac{1}{N} \sum_{n=0}^{N-1} x_n  \, N \, \delta_{mn} = x_m \ .$$
 
 ```
 
