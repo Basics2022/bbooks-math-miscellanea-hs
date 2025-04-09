@@ -1,7 +1,23 @@
 (math-hs:trigonometry)=
-# Trigonometria
+# Trigonometria e funzioni trigonometriche - o armoniche
+
+**Non solo triangoli!** La trigonometria e le funzioni trigonometriche rappresentano un filo conduttore che attraversa la storia della matematica e della scienza
+- la trigonometria nasce attorno al II secolo a.C. come "soluzione del triangolo" nell'ambito della geometria, permettendo di risolvere problemi geometrici e pratici legati alla misura di distanze e superfici, all'astronomia, alla geografia, alla navigazione
+- grazie all'opera di Fourier tra il XVII e il XVIII secolo, le funzioni trigonometriche si impongono come elementi fondamentali per l'**analisi di fenomeni periodici**, come.... Un segnale può infatti essere scomposto come somma di contributi periodici elementari, rappresentabili con l'uso di funzioni trigonometriche, o armoniche (uscendo dall'ambito della geometria dei triangoli triangoli e spostandosi nell'ambito dei segnali periodici): ad esempio, le note musicali percepite dall'orecchio umano sono associate a contributi elementari armonici, cioè contributi che hanno una frequenza definita,...; nel caso poi un problema sia lineare, è possibile usare il principio di sovrapposizione di cause ed effettii (PSCE), per studiare gli effetti prodotti dalle singole cause e poi sommarli (composizione, interferenza,...) per ottenere una soluzione generale.
+- il legame con l'esponenziale complesso e le regole di derivazione e integrazione,...rendono le funzioni trigonometriche protagoniste anche nella soluzione di molte **equazioni differenziali ordinarie** (ODE) di interesse
 
 **todo:list** [**Analisi di Fourier**](math-hs:todo:fourier)
+
+```{dropdown} Argomenti e applicazioni
+- prime definizioni e relazione fondamentale:
+  - geometria del triangolo e della circonferenza,...
+- formule di somma e sottrazione:
+  - fenomeni ondulatori: interferenza, trasformazione tra rappresentazione in onde stazionarie o in onde viaggianti,...
+  - ...
+
+```
+
+
 
 ## Definizione delle funzioni trigonometriche e relazione fondamentale
 

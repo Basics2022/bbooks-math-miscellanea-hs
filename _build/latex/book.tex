@@ -87,7 +87,7 @@
         
 
 \title{Matematica per le scuole superiori}
-\date{27 mar 2025}
+\date{08 apr 2025}
 \release{}
 \author{basics}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -2747,7 +2747,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-24 mar 2025
+08 apr 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3236,7 +3236,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-24 mar 2025
+08 apr 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3484,7 +3484,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-24 mar 2025
+08 apr 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -6352,7 +6352,10 @@ se B è  divergente e \(\lim_{n \rightarrow \infty} \frac{a_n}{b_n} > 0\), allor
 
 
 \subsection{Esempi}
-\label{\detokenize{ch/series:esempi}}\subsubsection*{Serie armonica, \protect\(\ \sum_{n=1}^{\infty} \frac{1}{n}\protect\).}
+\label{\detokenize{ch/series:esempi}}\label{ch/series:series-harmonic}
+\begin{sphinxadmonition}{note}{Example 16.2.1 (Serie armonica, \protect\(\ \sum_{n=1}^{\infty} \frac{1}{n}\protect\))}
+
+
 
 \sphinxAtStartPar
 La serie armonica,
@@ -6366,7 +6369,11 @@ La serie armonica,
 \end{equation*}
 \sphinxAtStartPar
 la somma dei primi \(2^N\) termini della serie è maggiore di \(1 + \frac{N}{2}\), \(\sum_{n=1}^{2^N} \frac{1}{n} > 1 + \frac{N}{2}\).
-\subsubsection*{Serie geometrica, \protect\(\ \sum_{n=1}^{\infty} a^n\protect\).}
+\end{sphinxadmonition}
+\label{ch/series:series-geometric}
+\begin{sphinxadmonition}{note}{Example 16.2.2 (Serie geometrica, \protect\(\ \sum_{n=1}^{\infty} a^n\protect\))}
+
+
 \begin{equation*}
 \begin{split}\sum_{n=0}^{\infty} a^n\end{split}
 \end{equation*}
@@ -6390,10 +6397,18 @@ per \(a \ge 1\), \(S = \lim_{N \rightarrow \infty} S_N = +\infty\)
 per \(a<1\), …
 
 \end{itemize}
-\subsubsection*{Serie telescopiche, \protect\(\ \sum_{n=1}^{\infty} \left( A_n - A_{n+1} \right)\protect\).}
+\end{sphinxadmonition}
+\label{ch/series:series-telescopic}
+\begin{sphinxadmonition}{note}{Example 16.2.3 (Serie telescopiche, \protect\(\ \sum_{n=1}^{\infty} \left( A_n - A_{n+1} \right)\protect\))}
+
+
 \begin{equation*}
 \begin{split}\sum_{n=1}^{\infty} a_n = \sum_{n=1}^{\infty} \left( A_{n} - A_{n+1} \right) = A_1 - \lim_{n \rightarrow \infty} A_n \end{split}
-\end{equation*}\subsubsection*{Serie di Mengoli, \protect\(\ \sum_{n=1}^{\infty} \frac{1}{n(n+1)}\protect\).}
+\end{equation*}\end{sphinxadmonition}
+\label{ch/series:series-mengoli}
+\begin{sphinxadmonition}{note}{Example 16.2.4 (Serie di Mengoli, \protect\(\ \sum_{n=1}^{\infty} \frac{1}{n(n+1)}\protect\))}
+
+
 
 \sphinxAtStartPar
 La serie di Mengoli è un esempio di serie telescopica, con
@@ -6404,7 +6419,11 @@ La serie di Mengoli è un esempio di serie telescopica, con
 e quindi la serie risulta convergente,
 \begin{equation*}
 \begin{split}\sum_{n=1}^{\infty} \frac{1}{n(n+1)} = 1 - \lim_{n \rightarrow \infty} \frac{1}{n+1} = 1 \ .\end{split}
-\end{equation*}\phantomsection\label{\detokenize{ch/series:math-hs-series-e-euler}}\subsubsection*{\protect\(e\ \protect\) di Eulero o di Nepero, \protect\(\ e := \sum_{n=0}^{\infty} \frac{1}{n!}\protect\).}
+\end{equation*}\end{sphinxadmonition}
+\label{ch/series:series-e-euler}
+\begin{sphinxadmonition}{note}{Example 16.2.5 (\protect\(e\ \protect\) di Eulero o di Nepero, \protect\(\ e := \sum_{n=0}^{\infty} \frac{1}{n!}\protect\))}
+
+
 
 \sphinxAtStartPar
 La serie
@@ -6446,6 +6465,7 @@ si può trovare la relazione \(e < 3\).
 
 \sphinxAtStartPar
 \sphinxstylestrong{todo} \sphinxstyleemphasis{come trovare stime di maggiorazione più restrittive? come trovare approssimazioni di \(e\)? Cenni al calcolo del valore numerico? Sì, ma anche no…}
+\end{sphinxadmonition}
 
 
 \section{Successioni di funzioni reali}
@@ -6556,10 +6576,54 @@ Data una successione di funzioni derivatbili \(f_n(x)\), …
 \sphinxstepscope
 
 
-\chapter{Trigonometria}
-\label{\detokenize{ch/trigonometry:trigonometria}}\label{\detokenize{ch/trigonometry:math-hs-trigonometry}}\label{\detokenize{ch/trigonometry::doc}}
+\chapter{Trigonometria e funzioni trigonometriche \sphinxhyphen{} o armoniche}
+\label{\detokenize{ch/trigonometry:trigonometria-e-funzioni-trigonometriche-o-armoniche}}\label{\detokenize{ch/trigonometry:math-hs-trigonometry}}\label{\detokenize{ch/trigonometry::doc}}
+\sphinxAtStartPar
+\sphinxstylestrong{Non solo triangoli!} La trigonometria e le funzioni trigonometriche rappresentano un filo conduttore che attraversa la storia della matematica e della scienza
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+la trigonometria nasce attorno al II secolo a.C. come «soluzione del triangolo» nell’ambito della geometria, permettendo di risolvere problemi geometrici e pratici legati alla misura di distanze e superfici, all’astronomia, alla geografia, alla navigazione
+
+\item {} 
+\sphinxAtStartPar
+grazie all’opera di Fourier tra il XVII e il XVIII secolo, le funzioni trigonometriche si impongono come elementi fondamentali per l”\sphinxstylestrong{analisi di fenomeni periodici}, come…. Un segnale può infatti essere scomposto come somma di contributi periodici elementari, rappresentabili con l’uso di funzioni trigonometriche, o armoniche (uscendo dall’ambito della geometria dei triangoli triangoli e spostandosi nell’ambito dei segnali periodici): ad esempio, le note musicali percepite dall’orecchio umano sono associate a contributi elementari armonici, cioè contributi che hanno una frequenza definita,…; nel caso poi un problema sia lineare, è possibile usare il principio di sovrapposizione di cause ed effettii (PSCE), per studiare gli effetti prodotti dalle singole cause e poi sommarli (composizione, interferenza,…) per ottenere una soluzione generale.
+
+\item {} 
+\sphinxAtStartPar
+il legame con l’esponenziale complesso e le regole di derivazione e integrazione,…rendono le funzioni trigonometriche protagoniste anche nella soluzione di molte \sphinxstylestrong{equazioni differenziali ordinarie} (ODE) di interesse
+
+\end{itemize}
+
 \sphinxAtStartPar
 \sphinxstylestrong{todo:list} {\hyperref[\detokenize{ch/todo:math-hs-todo-fourier}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Analisi di Fourier}}}}}
+\subsubsection*{Argomenti e applicazioni}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+prime definizioni e relazione fondamentale:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+geometria del triangolo e della circonferenza,…
+
+\end{itemize}
+
+\item {} 
+\sphinxAtStartPar
+formule di somma e sottrazione:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+fenomeni ondulatori: interferenza, trasformazione tra rappresentazione in onde stazionarie o in onde viaggianti,…
+
+\item {} 
+\sphinxAtStartPar
+…
+
+\end{itemize}
+
+\end{itemize}
 
 
 \section{Definizione delle funzioni trigonometriche e relazione fondamentale}
@@ -7283,7 +7347,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-24 mar 2025
+08 apr 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -7907,6 +7971,71 @@ Le equazioni e le disequazioni con i numeri complessi possono essere ricondotti 
 \sphinxAtStartPar
 \sphinxstylestrong{todo}
 
+
+\section{Cenni di analisi di Fourier}
+\label{\detokenize{ch/algebra/complex-algebra:cenni-di-analisi-di-fourier}}\label{\detokenize{ch/algebra/complex-algebra:math-hs-algebra-complex-fourier}}
+\sphinxAtStartPar
+Dato un insieme di \(N\) numeri reali \(\{x_n\}_{n=0:N-1}\), si possono definire \(N\) numeri complessi coniugati, \(\{ X_k \}_{k=0:N-1}\),
+\begin{equation*}
+\begin{split}X_k := \sum_{n=0}^{N-1} x_n \ e^{-i 2 \pi \frac{k n}{N}} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+che rappresentano la \sphinxstylestrong{trasformata discreta di Fourier} del segnale \(x_n\).
+
+\sphinxAtStartPar
+\sphinxstylestrong{Anti\sphinxhyphen{}trasformata.} Esiste la trasformazione inversa tra le due serie,
+\begin{equation*}
+\begin{split}x_m := \frac{1}{N} \sum_{k=0}^{N-1} X_k \ e^{i 2 \pi \frac{k m}{N}} \ ,\end{split}
+\end{equation*}\subsubsection*{Dimostrazione della trasformazione inversa}
+\begin{equation*}
+\begin{split}\begin{aligned}
+ \frac{1}{N} \sum_{k=0}^{N-1} X_k \ e^{i 2 \pi \frac{k m}{N}} 
+  & = \frac{1}{N} \sum_{k=0}^{N-1} \sum_{n=0}^{N-1} x_n \ e^{-i 2 \pi \frac{k n}{N}}  \ e^{i 2 \pi \frac{k m}{N}} = \\ 
+  & = \frac{1}{N} \sum_{n=0}^{N-1} x_n  \sum_{k=0}^{N-1}  e^{i 2 \pi \frac{k (m-n)}{N}} \ .
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Usando la sommatoria dell’esponenziale complesso {\hyperref[\detokenize{ch/algebra/complex-algebra:sum-complex-exponential-series}]{\sphinxcrossref{Example 21.9.1}}},
+\begin{equation*}
+\begin{split}\sum_{k=0}^{N-1}  e^{i 2 \pi \frac{k (m-n)}{N}} =
+  \left.\begin{cases}
+     N                     & \hfill \qquad m = n \\
+     \frac{1-e^{i 2 \pi \frac{m-n}{N} N}}{1-e^{i 2 \pi \frac{m-n}{N}}} = 0  & \hfill \qquad m \ne n
+  \end{cases}\right\} = N \, \delta_{mn} \ ,
+\end{split}
+\end{equation*}
+\sphinxAtStartPar
+si ottiene la dimostrazione della formula inversa
+\begin{equation*}
+\begin{split}\frac{1}{N} \sum_{k=0}^{N-1} X_k \ e^{i 2 \pi \frac{k m}{N}}  = \frac{1}{N} \sum_{n=0}^{N-1} x_n  \, N \, \delta_{mn} = x_m \ .\end{split}
+\end{equation*}\label{ch/algebra/complex-algebra:sum-complex-exponential-series}
+\begin{sphinxadmonition}{note}{Example 21.9.1 (Somma di esponenziali complessi)}
+
+
+
+\sphinxAtStartPar
+Seguendo quanto fatto per la serie geometrica {\hyperref[\detokenize{ch/series:series-geometric}]{\sphinxcrossref{Example 16.2.2}}}, è possibile calcolare la serie complessa
+\begin{equation*}
+\begin{split}\sum_{k=0}^{N-1} e^{i a k} \ .\end{split}
+\end{equation*}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Se \(a\) è un multiplo intero di \(2 \pi\), \(a = 2 \pi n\), \(n \in \mathbb{Z}\), allora \(e^{i a k} = 1\) per \(\forall k\) e la sommatoria vale \(N\), essendo la somma di \(N\) termini uguali a \(1\).
+
+\item {} 
+\sphinxAtStartPar
+Altrimenti,
+\begin{equation*}
+\begin{split}\sum_{k=0}^{N-1} e^{i a k} = 1 + \sum_{k=1}^{N-1} e^{i a k} = 1 + e^{i a} \sum_{k=0}^{N-1} e^{i a k} - e^{i a N} \end{split}
+\end{equation*}
+\sphinxAtStartPar
+e quindi
+\begin{equation*}
+\begin{split}\sum_{k=0}^{N-1} e^{i a k} = \frac{1 - e^{i a N}}{1 - e^{i a}} \ .\end{split}
+\end{equation*}
+\end{itemize}
+\end{sphinxadmonition}
+
 \sphinxstepscope
 
 
@@ -7922,7 +8051,7 @@ Le equazioni e le disequazioni con i numeri complessi possono essere ricondotti 
 \subsection{Rappresentazione dei numeri complessi nel piano complesso (Argand\sphinxhyphen{}Gauss)}
 \label{\detokenize{ch/algebra/complex-algebra-problems:rappresentazione-dei-numeri-complessi-nel-piano-complesso-argand-gauss}}\label{\detokenize{ch/algebra/complex-algebra-problems:math-hs-algebra-complex-problems-complex-plane}}\phantomsection \label{exercise:ch/algebra/complex-algebra-problems-exercise-0}
 
-\begin{sphinxadmonition}{note}{Exercise 21.9.1}
+\begin{sphinxadmonition}{note}{Exercise 21.10.1}
 
 
 \begin{enumerate}
@@ -7956,7 +8085,7 @@ Trova le radici cubiche di \( z = 8 \) e rappresentale nel piano complesso.
 \subsection{Operazioni con i numeri complessi}
 \label{\detokenize{ch/algebra/complex-algebra-problems:operazioni-con-i-numeri-complessi}}\label{\detokenize{ch/algebra/complex-algebra-problems:math-hs-algebra-complex-problems-operations}}\phantomsection \label{exercise:ch/algebra/complex-algebra-problems-exercise-1}
 
-\begin{sphinxadmonition}{note}{Exercise 21.9.2 (Parte reale e parte immaginaria)}
+\begin{sphinxadmonition}{note}{Exercise 21.10.2 (Parte reale e parte immaginaria)}
 
 
 
@@ -7982,7 +8111,7 @@ Dato il numero \(z = \text{re}\{z\} + i \text{im}\{z\} = x + i y\),
 \subsection{Teorema fondamentale dell’algebra}
 \label{\detokenize{ch/algebra/complex-algebra-problems:teorema-fondamentale-dell-algebra}}\label{\detokenize{ch/algebra/complex-algebra-problems:math-hs-algebra-complex-problems-fund-thm}}\phantomsection \label{exercise:ch/algebra/complex-algebra-problems-exercise-2}
 
-\begin{sphinxadmonition}{note}{Exercise 21.9.3}
+\begin{sphinxadmonition}{note}{Exercise 21.10.3}
 
 
 \begin{enumerate}
@@ -8034,7 +8163,7 @@ Determina la radice principale di \(z = \sqrt[3]{-8}\) in forma polare.
 \subsection{Numeri complessi e geometria nel piano euclideo}
 \label{\detokenize{ch/algebra/complex-algebra-problems:numeri-complessi-e-geometria-nel-piano-euclideo}}\label{\detokenize{ch/algebra/complex-algebra-problems:math-hs-algebra-complex-problems-geometry-2d}}\phantomsection \label{exercise:math-hs:algebra:complex:problems:geometry-2d:ex}
 
-\begin{sphinxadmonition}{note}{Exercise 21.9.4}
+\begin{sphinxadmonition}{note}{Exercise 21.10.4}
 
 
 \begin{enumerate}
@@ -8092,7 +8221,7 @@ Dimostra che i punti \(z_1 = 1 + i\), \(z_2 = -1 - i\), e \(z_3 = 0\) sono colli
 {\hyperref[\detokenize{ch/algebra/complex-algebra-sol:math-hs-algebra-complex-sol-equations-eq-sol}]{\sphinxcrossref{\DUrole{std,std-ref}{Soluzioni}}}}.
 \phantomsection \label{exercise:ch/algebra/complex-algebra-problems-exercise-4}
 
-\begin{sphinxadmonition}{note}{Exercise 21.9.5 (Equazioni)}
+\begin{sphinxadmonition}{note}{Exercise 21.10.5 (Equazioni)}
 
 
 
@@ -8176,7 +8305,7 @@ Risolvi \(|z + i| = 3\) per \(z \in \mathbb{C}\).
 {\hyperref[\detokenize{ch/algebra/complex-algebra-sol:math-hs-algebra-complex-sol-equations-ineq-sol}]{\sphinxcrossref{\DUrole{std,std-ref}{Soluzioni}}}}.
 \phantomsection \label{exercise:ch/algebra/complex-algebra-problems-exercise-5}
 
-\begin{sphinxadmonition}{note}{Exercise 21.9.6 (Disequazioni)}
+\begin{sphinxadmonition}{note}{Exercise 21.10.6 (Disequazioni)}
 
 
 
@@ -8221,7 +8350,7 @@ Risolvi \(|z + i| = 3\) per \(z \in \mathbb{C}\).
 {\hyperref[\detokenize{ch/algebra/complex-algebra-sol:math-hs-algebra-complex-sol-equations-sys-sol}]{\sphinxcrossref{\DUrole{std,std-ref}{Soluzioni}}}}.
 \phantomsection \label{exercise:ch/algebra/complex-algebra-problems-exercise-6}
 
-\begin{sphinxadmonition}{note}{Exercise 21.9.7 (Sistemi di equazioni)}
+\begin{sphinxadmonition}{note}{Exercise 21.10.7 (Sistemi di equazioni)}
 
 
 \begin{enumerate}
@@ -16595,14 +16724,32 @@ nel calcolo delle configurazioni in problemi di grosse dimensioni si possono inc
 \bigletter{real\sphinxhyphen{}algebra\sphinxhyphen{}fraction\sphinxhyphen{}sum\sphinxhyphen{}partial}
 \item\relax\sphinxstyleindexentry{real\sphinxhyphen{}algebra\sphinxhyphen{}fraction\sphinxhyphen{}sum\sphinxhyphen{}partial}\sphinxstyleindexextra{ch/algebra/real\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/real-algebra:\detokenize{real-algebra-fraction-sum-partial}}
 \indexspace
+\bigletter{series\sphinxhyphen{}e\sphinxhyphen{}euler}
+\item\relax\sphinxstyleindexentry{series\sphinxhyphen{}e\sphinxhyphen{}euler}\sphinxstyleindexextra{ch/series}\sphinxstyleindexpageref{ch/series:\detokenize{series-e-euler}}
+\indexspace
 \bigletter{series\sphinxhyphen{}fun\sphinxhyphen{}seq\sphinxhyphen{}convergence\sphinxhyphen{}point}
 \item\relax\sphinxstyleindexentry{series\sphinxhyphen{}fun\sphinxhyphen{}seq\sphinxhyphen{}convergence\sphinxhyphen{}point}\sphinxstyleindexextra{ch/series}\sphinxstyleindexpageref{ch/series:\detokenize{series-fun-seq-convergence-point}}
 \indexspace
 \bigletter{series\sphinxhyphen{}fun\sphinxhyphen{}seq\sphinxhyphen{}convergence\sphinxhyphen{}uniform}
 \item\relax\sphinxstyleindexentry{series\sphinxhyphen{}fun\sphinxhyphen{}seq\sphinxhyphen{}convergence\sphinxhyphen{}uniform}\sphinxstyleindexextra{ch/series}\sphinxstyleindexpageref{ch/series:\detokenize{series-fun-seq-convergence-uniform}}
 \indexspace
+\bigletter{series\sphinxhyphen{}geometric}
+\item\relax\sphinxstyleindexentry{series\sphinxhyphen{}geometric}\sphinxstyleindexextra{ch/series}\sphinxstyleindexpageref{ch/series:\detokenize{series-geometric}}
+\indexspace
+\bigletter{series\sphinxhyphen{}harmonic}
+\item\relax\sphinxstyleindexentry{series\sphinxhyphen{}harmonic}\sphinxstyleindexextra{ch/series}\sphinxstyleindexpageref{ch/series:\detokenize{series-harmonic}}
+\indexspace
+\bigletter{series\sphinxhyphen{}mengoli}
+\item\relax\sphinxstyleindexentry{series\sphinxhyphen{}mengoli}\sphinxstyleindexextra{ch/series}\sphinxstyleindexpageref{ch/series:\detokenize{series-mengoli}}
+\indexspace
+\bigletter{series\sphinxhyphen{}telescopic}
+\item\relax\sphinxstyleindexentry{series\sphinxhyphen{}telescopic}\sphinxstyleindexextra{ch/series}\sphinxstyleindexpageref{ch/series:\detokenize{series-telescopic}}
+\indexspace
 \bigletter{set\sphinxhyphen{}fun\sphinxhyphen{}def}
 \item\relax\sphinxstyleindexentry{set\sphinxhyphen{}fun\sphinxhyphen{}def}\sphinxstyleindexextra{ch/set}\sphinxstyleindexpageref{ch/set:\detokenize{set-fun-def}}
+\indexspace
+\bigletter{sum\sphinxhyphen{}complex\sphinxhyphen{}exponential\sphinxhyphen{}series}
+\item\relax\sphinxstyleindexentry{sum\sphinxhyphen{}complex\sphinxhyphen{}exponential\sphinxhyphen{}series}\sphinxstyleindexextra{ch/algebra/complex\sphinxhyphen{}algebra}\sphinxstyleindexpageref{ch/algebra/complex-algebra:\detokenize{sum-complex-exponential-series}}
 \indexspace
 \bigletter{theorem\sphinxhyphen{}3}
 \item\relax\sphinxstyleindexentry{theorem\sphinxhyphen{}3}\sphinxstyleindexextra{ch/multivariable\sphinxhyphen{}calculus/integrals}\sphinxstyleindexpageref{ch/multivariable-calculus/integrals:\detokenize{theorem-3}}

@@ -127,7 +127,10 @@ Si discutono qui le serie a termini non negativi. E' facile generalizzare i crit
 
 ### Esempi
 
-```{dropdown} Serie armonica, $\ \sum_{n=1}^{\infty} \frac{1}{n}$.
+```{prf:example} Serie armonica, $\ \sum_{n=1}^{\infty} \frac{1}{n}$
+:label: series-harmonic
+:class: dropdown
+
  La serie armonica,
 
 $$\sum_{n=1}^{\infty} \frac{1}{n} \ ,$$
@@ -139,7 +142,9 @@ $$\sum_{n=1}^{\infty} \frac{1}{n} = 1 + \frac{1}{2} + \underbrace{\frac{1}{3} + 
 la somma dei primi $2^N$ termini della serie è maggiore di $1 + \frac{N}{2}$, $\sum_{n=1}^{2^N} \frac{1}{n} > 1 + \frac{N}{2}$.
 ```
 
-```{dropdown} Serie geometrica, $\ \sum_{n=1}^{\infty} a^n$.
+```{prf:example} Serie geometrica, $\ \sum_{n=1}^{\infty} a^n$
+:label: series-geometric
+:class: dropdown
 
 $$\sum_{n=0}^{\infty} a^n$$
 
@@ -155,13 +160,17 @@ $$S_N = \frac{1 - a^{N+1}}{1-a} \ .$$
 
 ```
 
-```{dropdown} Serie telescopiche, $\ \sum_{n=1}^{\infty} \left( A_n - A_{n+1} \right)$.
+```{prf:example} Serie telescopiche, $\ \sum_{n=1}^{\infty} \left( A_n - A_{n+1} \right)$
+:label: series-telescopic
+:class: dropdown
 
 $$\sum_{n=1}^{\infty} a_n = \sum_{n=1}^{\infty} \left( A_{n} - A_{n+1} \right) = A_1 - \lim_{n \rightarrow \infty} A_n $$
 
 ```
 
-```{dropdown} Serie di Mengoli, $\ \sum_{n=1}^{\infty} \frac{1}{n(n+1)}$.
+```{prf:example} Serie di Mengoli, $\ \sum_{n=1}^{\infty} \frac{1}{n(n+1)}$
+:label: series-mengoli
+:class: dropdown
 
 La serie di Mengoli è un esempio di serie telescopica, con 
 
@@ -174,7 +183,10 @@ $$\sum_{n=1}^{\infty} \frac{1}{n(n+1)} = 1 - \lim_{n \rightarrow \infty} \frac{1
 ```
 
 (math-hs:series:e-euler)=
-```{dropdown} $e\ $ di Eulero o di Nepero, $\ e := \sum_{n=0}^{\infty} \frac{1}{n!}$.
+```{prf:example} $e\ $ di Eulero o di Nepero, $\ e := \sum_{n=0}^{\infty} \frac{1}{n!}$
+:label: series-e-euler
+:class: dropdown
+
 La serie
 
 $$\sum_{n=0}^{\infty} \frac{1}{n!}$$
