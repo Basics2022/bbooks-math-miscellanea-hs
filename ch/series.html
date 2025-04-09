@@ -71,7 +71,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../genindex.html" />
     <link rel="search" title="Cerca" href="../search.html" />
-    <link rel="next" title="17. Trigonometria" href="trigonometry.html" />
+    <link rel="next" title="17. Trigonometria e funzioni trigonometriche - o armoniche" href="trigonometry.html" />
     <link rel="prev" title="15. Funzioni reali a variabile reale, \(f: D \subseteq \mathbb{R} \rightarrow \mathbb{R}\)" href="precalculus/real-functions.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
@@ -236,7 +236,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="precalculus.html">14. Introduzione al pre-calcolo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="precalculus/real-functions.html">15. Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\(f: D \subseteq \mathbb{R} \rightarrow \mathbb{R}\)</span></a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">16. Serie e successioni</a></li>
-<li class="toctree-l1"><a class="reference internal" href="trigonometry.html">17. Trigonometria</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trigonometry.html">17. Trigonometria e funzioni trigonometriche - o armoniche</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="precalculus/exponential_logarithm.html">18. Esponenziale e logaritmo</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="precalculus/exponential_logarithm-problems.html">18.2. Problemi</a></li>
 <li class="toctree-l2"><a class="reference internal" href="precalculus/exponential_logarithm-sol.html">18.3. Soluzioni</a></li>
@@ -246,9 +246,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="precalculus/polynomials.html">19. Polinomi</a></li>
 <li class="toctree-l1"><a class="reference internal" href="precalculus/multivariable-real-fun.html">20. Funzioni multi-variabile</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="algebra/complex-algebra.html">21. Algebra complessa</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="algebra/complex-algebra-problems.html">21.9. Problemi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="algebra/complex-algebra-sol.html">21.10. Problemi - soluzioni</a></li>
-<li class="toctree-l2"><a class="reference internal" href="algebra/complex-algebra-notes.html">21.11. Note e dimostrazioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="algebra/complex-algebra-problems.html">21.10. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="algebra/complex-algebra-sol.html">21.11. Problemi - soluzioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="algebra/complex-algebra-notes.html">21.12. Note e dimostrazioni</a></li>
 </ul>
 </li>
 </ul>
@@ -679,97 +679,77 @@ A seconda del limite della successione delle somme parziali <span class="math no
 </div>
 <div class="section" id="esempi">
 <h3><span class="section-number">16.2.2. </span>Esempi<a class="headerlink" href="#esempi" title="Permalink to this heading">#</a></h3>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Serie armonica, <span class="math notranslate nohighlight">\(\ \sum_{n=1}^{\infty} \frac{1}{n}\)</span>.<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">La serie armonica,</p>
+<div class="proof example dropdown admonition" id="series-harmonic">
+<p class="admonition-title"><span class="caption-number">Example 16.1 </span> (Serie armonica, <span class="math notranslate nohighlight">\(\ \sum_{n=1}^{\infty} \frac{1}{n}\)</span>)</p>
+<div class="example-content section" id="proof-content">
+<p>La serie armonica,</p>
 <div class="math notranslate nohighlight">
 \[\sum_{n=1}^{\infty} \frac{1}{n} \ ,\]</div>
-<p class="sd-card-text">è una serie divergente. Non è difficile dimostrare che la serie è sempre crescente e non è limitata superiormente: infatti</p>
+<p>è una serie divergente. Non è difficile dimostrare che la serie è sempre crescente e non è limitata superiormente: infatti</p>
 <div class="math notranslate nohighlight">
 \[\sum_{n=1}^{\infty} \frac{1}{n} = 1 + \frac{1}{2} + \underbrace{\frac{1}{3} + \frac{1}{4}}_{&gt; \frac{1}{2}} + \underbrace{\frac{1}{5} + \frac{1}{6} + \frac{1}{7} + \frac{1}{8}}_{&gt; \frac{1}{2}} + \dots \ ,\]</div>
-<p class="sd-card-text">la somma dei primi <span class="math notranslate nohighlight">\(2^N\)</span> termini della serie è maggiore di <span class="math notranslate nohighlight">\(1 + \frac{N}{2}\)</span>, <span class="math notranslate nohighlight">\(\sum_{n=1}^{2^N} \frac{1}{n} &gt; 1 + \frac{N}{2}\)</span>.</p>
+<p>la somma dei primi <span class="math notranslate nohighlight">\(2^N\)</span> termini della serie è maggiore di <span class="math notranslate nohighlight">\(1 + \frac{N}{2}\)</span>, <span class="math notranslate nohighlight">\(\sum_{n=1}^{2^N} \frac{1}{n} &gt; 1 + \frac{N}{2}\)</span>.</p>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Serie geometrica, <span class="math notranslate nohighlight">\(\ \sum_{n=1}^{\infty} a^n\)</span>.<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
+</div><div class="proof example dropdown admonition" id="series-geometric">
+<p class="admonition-title"><span class="caption-number">Example 16.2 </span> (Serie geometrica, <span class="math notranslate nohighlight">\(\ \sum_{n=1}^{\infty} a^n\)</span>)</p>
+<div class="example-content section" id="proof-content">
 <div class="math notranslate nohighlight">
 \[\sum_{n=0}^{\infty} a^n\]</div>
-<p class="sd-card-text">La serie risulta convergente per <span class="math notranslate nohighlight">\(|a|&lt;1\)</span>. Infatti</p>
+<p>La serie risulta convergente per <span class="math notranslate nohighlight">\(|a|&lt;1\)</span>. Infatti</p>
 <div class="math notranslate nohighlight">
 \[S_N = \sum_{n=0}^{N} a^n = 1 + a \sum_{n=0}^{N} - a^{N+1} = 1 - a^{N+1} + a \, S_N\]</div>
 <div class="math notranslate nohighlight">
 \[S_N = \frac{1 - a^{N+1}}{1-a} \ .\]</div>
 <ul class="simple">
-<li><p class="sd-card-text">per <span class="math notranslate nohighlight">\(|a| &lt; 1\)</span>, <span class="math notranslate nohighlight">\(S = \lim_{N \rightarrow \infty} = \frac{1}{1 - a}\)</span></p></li>
-<li><p class="sd-card-text">per <span class="math notranslate nohighlight">\(a \ge 1\)</span>, <span class="math notranslate nohighlight">\(S = \lim_{N \rightarrow \infty} S_N = +\infty\)</span></p></li>
-<li><p class="sd-card-text">per <span class="math notranslate nohighlight">\(a&lt;1\)</span>, …</p></li>
+<li><p>per <span class="math notranslate nohighlight">\(|a| &lt; 1\)</span>, <span class="math notranslate nohighlight">\(S = \lim_{N \rightarrow \infty} = \frac{1}{1 - a}\)</span></p></li>
+<li><p>per <span class="math notranslate nohighlight">\(a \ge 1\)</span>, <span class="math notranslate nohighlight">\(S = \lim_{N \rightarrow \infty} S_N = +\infty\)</span></p></li>
+<li><p>per <span class="math notranslate nohighlight">\(a&lt;1\)</span>, …</p></li>
 </ul>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Serie telescopiche, <span class="math notranslate nohighlight">\(\ \sum_{n=1}^{\infty} \left( A_n - A_{n+1} \right)\)</span>.<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
+</div><div class="proof example dropdown admonition" id="series-telescopic">
+<p class="admonition-title"><span class="caption-number">Example 16.3 </span> (Serie telescopiche, <span class="math notranslate nohighlight">\(\ \sum_{n=1}^{\infty} \left( A_n - A_{n+1} \right)\)</span>)</p>
+<div class="example-content section" id="proof-content">
 <div class="math notranslate nohighlight">
 \[\sum_{n=1}^{\infty} a_n = \sum_{n=1}^{\infty} \left( A_{n} - A_{n+1} \right) = A_1 - \lim_{n \rightarrow \infty} A_n \]</div>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Serie di Mengoli, <span class="math notranslate nohighlight">\(\ \sum_{n=1}^{\infty} \frac{1}{n(n+1)}\)</span>.<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">La serie di Mengoli è un esempio di serie telescopica, con</p>
+</div><div class="proof example dropdown admonition" id="series-mengoli">
+<p class="admonition-title"><span class="caption-number">Example 16.4 </span> (Serie di Mengoli, <span class="math notranslate nohighlight">\(\ \sum_{n=1}^{\infty} \frac{1}{n(n+1)}\)</span>)</p>
+<div class="example-content section" id="proof-content">
+<p>La serie di Mengoli è un esempio di serie telescopica, con</p>
 <div class="math notranslate nohighlight">
 \[a_n = \frac{1}{n(n+1)} = \frac{1}{n} - \frac{1}{n+1}\]</div>
-<p class="sd-card-text">e quindi la serie risulta convergente,</p>
+<p>e quindi la serie risulta convergente,</p>
 <div class="math notranslate nohighlight">
 \[\sum_{n=1}^{\infty} \frac{1}{n(n+1)} = 1 - \lim_{n \rightarrow \infty} \frac{1}{n+1} = 1 \ .\]</div>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" id="math-hs-series-e-euler">
-<summary class="sd-summary-title sd-card-header">
-<span class="math notranslate nohighlight">\(e\ \)</span> di Eulero o di Nepero, <span class="math notranslate nohighlight">\(\ e := \sum_{n=0}^{\infty} \frac{1}{n!}\)</span>.<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">La serie</p>
+</div><div class="proof example dropdown admonition" id="series-e-euler">
+<span id="math-hs-series-e-euler"></span><p class="admonition-title"><span class="caption-number">Example 16.5 </span> (<span class="math notranslate nohighlight">\(e\ \)</span> di Eulero o di Nepero, <span class="math notranslate nohighlight">\(\ e := \sum_{n=0}^{\infty} \frac{1}{n!}\)</span>)</p>
+<div class="example-content section" id="proof-content">
+<p>La serie</p>
 <div class="math notranslate nohighlight">
 \[\sum_{n=0}^{\infty} \frac{1}{n!}\]</div>
-<p class="sd-card-text">converge a un numero irrazionale <span class="math notranslate nohighlight">\(e\)</span>, che viene definito il <strong>numero di Eulero o di Nepero</strong>, e il cui valore approssimato è</p>
+<p>converge a un numero irrazionale <span class="math notranslate nohighlight">\(e\)</span>, che viene definito il <strong>numero di Eulero o di Nepero</strong>, e il cui valore approssimato è</p>
 <div class="math notranslate nohighlight">
 \[e = 2.718281828\text{&quot;e poi la magia finisce&quot;} \ ,\]</div>
-<p class="sd-card-text">cioè le cifre decimali successive non sono periodiche.</p>
-<p class="sd-card-text">Si può dimostrare la convergenza della serie, ad esempio usando il criterio del rapporto di d’Alembert per le serie a termini concordi, dimostrando che il limite</p>
+<p>cioè le cifre decimali successive non sono periodiche.</p>
+<p>Si può dimostrare la convergenza della serie, ad esempio usando il criterio del rapporto di d’Alembert per le serie a termini concordi, dimostrando che il limite</p>
 <div class="math notranslate nohighlight">
 \[\lim_{n \rightarrow +\infty} \frac{a_{n+1}}{a_n} = \lim_{x \rightarrow +\infty}\frac{n!}{(n+1)!} = \lim_{x \rightarrow +\infty} \frac{1}{n+1} = 0 \ ,\]</div>
-<p class="sd-card-text">è finito e quindi la serie è convergente.</p>
-<p class="sd-card-text">In particolare, usando la serie geometrica con <span class="math notranslate nohighlight">\(a = \frac{1}{2}\)</span>,</p>
+<p>è finito e quindi la serie è convergente.</p>
+<p>In particolare, usando la serie geometrica con <span class="math notranslate nohighlight">\(a = \frac{1}{2}\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[\sum_{n=0}^{+\infty} \left(\frac{1}{2} \right)^n = \dfrac{1}{1 - \frac{1}{2}} = 2\]</div>
-<p class="sd-card-text">e confrontandola termine a termine con la serie di <span class="math notranslate nohighlight">\(e\)</span>,</p>
+<p>e confrontandola termine a termine con la serie di <span class="math notranslate nohighlight">\(e\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
   2  = \sum_{n=0}^{+\infty} \left(\frac{1}{2} \right)^n = &amp; 1 + \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \frac{1}{16} + \dots \\
   e := \sum_{n=0}^{+\infty} \frac{1}{n!} = 1 + &amp; 1 + \frac{1}{2} + \underbrace{\frac{1}{3!}}_{&lt;\frac{1}{4}} + \underbrace{\frac{1}{4!}}_{&lt; \frac{1}{8}} + \underbrace{\frac{1}{5!}}_{&lt; \frac{1}{16}} + \dots &lt;
     1 + \sum_{n=0}^{+\infty} \left( \frac{1}{2} \right)^n = 3
 \end{aligned}\end{split}\]</div>
-<p class="sd-card-text">si può trovare la relazione <span class="math notranslate nohighlight">\(e &lt; 3\)</span>.</p>
-<p class="sd-card-text"><strong>todo</strong> <em>come trovare stime di maggiorazione più restrittive? come trovare approssimazioni di <span class="math notranslate nohighlight">\(e\)</span>? Cenni al calcolo del valore numerico? Sì, ma anche no…</em></p>
+<p>si può trovare la relazione <span class="math notranslate nohighlight">\(e &lt; 3\)</span>.</p>
+<p><strong>todo</strong> <em>come trovare stime di maggiorazione più restrittive? come trovare approssimazioni di <span class="math notranslate nohighlight">\(e\)</span>? Cenni al calcolo del valore numerico? Sì, ma anche no…</em></p>
 </div>
-</details></div>
+</div></div>
 </div>
 <div class="section" id="successioni-di-funzioni-reali">
 <span id="math-hs-series-fun-sequences"></span><h2><span class="section-number">16.3. </span>Successioni di funzioni reali<a class="headerlink" href="#successioni-di-funzioni-reali" title="Permalink to this heading">#</a></h2>
@@ -893,7 +873,7 @@ Serie di Mengoli, <span class="math notranslate nohighlight">\(\ \sum_{n=1}^{\in
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">17. </span>Trigonometria</p>
+        <p class="prev-next-title"><span class="section-number">17. </span>Trigonometria e funzioni trigonometriche - o armoniche</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

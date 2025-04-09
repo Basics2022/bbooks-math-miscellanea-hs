@@ -319,3 +319,68 @@ Le equazioni e le disequazioni con i numeri complessi possono essere ricondotti 
 
 **todo**
 
+
+(math-hs:algebra:complex:fourier)=
+## Cenni di analisi di Fourier
+
+Dato un insieme di $N$ numeri reali $\{x_n\}_{n=0:N-1}$, si possono definire $N$ numeri complessi coniugati, $\{ X_k \}_{k=0:N-1}$,
+
+$$X_k := \sum_{n=0}^{N-1} x_n \ e^{-i 2 \pi \frac{k n}{N}} \ ,$$
+
+che rappresentano la **trasformata discreta di Fourier** del segnale $x_n$.
+
+**Anti-trasformata.** Esiste la trasformazione inversa tra le due serie,
+
+$$x_m := \frac{1}{N} \sum_{k=0}^{N-1} X_k \ e^{i 2 \pi \frac{k m}{N}} \ ,$$
+
+
+```{dropdown} Dimostrazione della trasformazione inversa
+:open:
+
+$$\begin{aligned}
+ \frac{1}{N} \sum_{k=0}^{N-1} X_k \ e^{i 2 \pi \frac{k m}{N}} 
+  & = \frac{1}{N} \sum_{k=0}^{N-1} \sum_{n=0}^{N-1} x_n \ e^{-i 2 \pi \frac{k n}{N}}  \ e^{i 2 \pi \frac{k m}{N}} = \\ 
+  & = \frac{1}{N} \sum_{n=0}^{N-1} x_n  \sum_{k=0}^{N-1}  e^{i 2 \pi \frac{k (m-n)}{N}} \ .
+\end{aligned}$$
+
+Usando la sommatoria dell'esponenziale complesso {prf:ref}`sum-complex-exponential-series`,
+
+$$\sum_{k=0}^{N-1}  e^{i 2 \pi \frac{k (m-n)}{N}} =
+  \left.\begin{cases}
+     N                     & \hfill \qquad m = n \\
+     \frac{1-e^{i 2 \pi \frac{m-n}{N} N}}{1-e^{i 2 \pi \frac{m-n}{N}}} = 0  & \hfill \qquad m \ne n
+  \end{cases}\right\} = N \, \delta_{mn} \ ,
+$$
+
+si ottiene la dimostrazione della formula inversa
+
+$$x_m = \frac{1}{N} \sum_{n=0}^{N-1} x_n  \, N \, \delta_{mn} = x_m \ .$$
+
+```
+
+```{prf:example} Somma di esponenziali complessi
+:label: sum-complex-exponential-series
+
+Seguendo quanto fatto per la serie geometrica {prf:ref}`series-geometric`, è possibile calcolare la serie complessa
+
+$$\sum_{k=0}^{N-1} e^{i a k} \ .$$
+
+- Se $a$ è un multiplo intero di $2 \pi$, $a = 2 \pi n$, $n \in \mathbb{Z}$, allora $e^{i a k} = 1$ per $\forall k$ e la sommatoria vale $N$, essendo la somma di $N$ termini uguali a $1$. 
+- Altrimenti,
+
+  $$\sum_{k=0}^{N-1} e^{i a k} = 1 + \sum_{k=1}^{N-1} e^{i a k} = 1 + e^{i a} \sum_{k=0}^{N-1} e^{i a k} - e^{i a N} $$
+
+  e quindi
+
+  $$\sum_{k=0}^{N-1} e^{i a k} = \frac{1 - e^{i a N}}{1 - e^{i a}} \ .$$
+
+```
+
+
+
+
+
+
+
+
+

@@ -71,7 +71,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="21.9. Problemi" href="complex-algebra-problems.html" />
+    <link rel="next" title="21.10. Problemi" href="complex-algebra-problems.html" />
     <link rel="prev" title="20. Funzioni multi-variabile" href="../precalculus/multivariable-real-fun.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
@@ -236,7 +236,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../precalculus.html">14. Introduzione al pre-calcolo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../precalculus/real-functions.html">15. Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\(f: D \subseteq \mathbb{R} \rightarrow \mathbb{R}\)</span></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../series.html">16. Serie e successioni</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../trigonometry.html">17. Trigonometria</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../trigonometry.html">17. Trigonometria e funzioni trigonometriche - o armoniche</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../precalculus/exponential_logarithm.html">18. Esponenziale e logaritmo</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../precalculus/exponential_logarithm-problems.html">18.2. Problemi</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../precalculus/exponential_logarithm-sol.html">18.3. Soluzioni</a></li>
@@ -246,9 +246,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../precalculus/polynomials.html">19. Polinomi</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../precalculus/multivariable-real-fun.html">20. Funzioni multi-variabile</a></li>
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">21. Algebra complessa</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="complex-algebra-problems.html">21.9. Problemi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="complex-algebra-sol.html">21.10. Problemi - soluzioni</a></li>
-<li class="toctree-l2"><a class="reference internal" href="complex-algebra-notes.html">21.11. Note e dimostrazioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="complex-algebra-problems.html">21.10. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="complex-algebra-sol.html">21.11. Problemi - soluzioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="complex-algebra-notes.html">21.12. Note e dimostrazioni</a></li>
 </ul>
 </li>
 </ul>
@@ -538,6 +538,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-e-disequazioni-con-i-numeri-complessi">21.8. Equazioni e disequazioni con i numeri complessi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cenni-di-analisi-di-fourier">21.9. Cenni di analisi di Fourier</a></li>
 </ul>
             </nav>
         </div>
@@ -854,6 +855,58 @@ document.write(`
 <p>Le equazioni e le disequazioni con i numeri complessi possono essere ricondotti a problemi che coinvolgono una coppia di variabili reali, tipicamente le componenti reale e immaginaria, o il modulo e l’argomento, che descrivono il piano dei numeri complessi.</p>
 <p><strong>todo</strong></p>
 </div>
+<div class="section" id="cenni-di-analisi-di-fourier">
+<span id="math-hs-algebra-complex-fourier"></span><h2><span class="section-number">21.9. </span>Cenni di analisi di Fourier<a class="headerlink" href="#cenni-di-analisi-di-fourier" title="Permalink to this heading">#</a></h2>
+<p>Dato un insieme di <span class="math notranslate nohighlight">\(N\)</span> numeri reali <span class="math notranslate nohighlight">\(\{x_n\}_{n=0:N-1}\)</span>, si possono definire <span class="math notranslate nohighlight">\(N\)</span> numeri complessi coniugati, <span class="math notranslate nohighlight">\(\{ X_k \}_{k=0:N-1}\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[X_k := \sum_{n=0}^{N-1} x_n \ e^{-i 2 \pi \frac{k n}{N}} \ ,\]</div>
+<p>che rappresentano la <strong>trasformata discreta di Fourier</strong> del segnale <span class="math notranslate nohighlight">\(x_n\)</span>.</p>
+<p><strong>Anti-trasformata.</strong> Esiste la trasformazione inversa tra le due serie,</p>
+<div class="math notranslate nohighlight">
+\[x_m := \frac{1}{N} \sum_{k=0}^{N-1} X_k \ e^{i 2 \pi \frac{k m}{N}} \ ,\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
+<summary class="sd-summary-title sd-card-header">
+Dimostrazione della trasformazione inversa<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+ \frac{1}{N} \sum_{k=0}^{N-1} X_k \ e^{i 2 \pi \frac{k m}{N}} 
+  &amp; = \frac{1}{N} \sum_{k=0}^{N-1} \sum_{n=0}^{N-1} x_n \ e^{-i 2 \pi \frac{k n}{N}}  \ e^{i 2 \pi \frac{k m}{N}} = \\ 
+  &amp; = \frac{1}{N} \sum_{n=0}^{N-1} x_n  \sum_{k=0}^{N-1}  e^{i 2 \pi \frac{k (m-n)}{N}} \ .
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">Usando la sommatoria dell’esponenziale complesso <a class="reference internal" href="#sum-complex-exponential-series">Example 21.2</a>,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\sum_{k=0}^{N-1}  e^{i 2 \pi \frac{k (m-n)}{N}} =
+  \left.\begin{cases}
+     N                     &amp; \hfill \qquad m = n \\
+     \frac{1-e^{i 2 \pi \frac{m-n}{N} N}}{1-e^{i 2 \pi \frac{m-n}{N}}} = 0  &amp; \hfill \qquad m \ne n
+  \end{cases}\right\} = N \, \delta_{mn} \ ,
+\end{split}\]</div>
+<p class="sd-card-text">si ottiene la dimostrazione della formula inversa</p>
+<div class="math notranslate nohighlight">
+\[x_m = \frac{1}{N} \sum_{n=0}^{N-1} x_n  \, N \, \delta_{mn} = x_m \ .\]</div>
+</div>
+</details><div class="proof example admonition" id="sum-complex-exponential-series">
+<p class="admonition-title"><span class="caption-number">Example 21.2 </span> (Somma di esponenziali complessi)</p>
+<div class="example-content section" id="proof-content">
+<p>Seguendo quanto fatto per la serie geometrica <a class="reference internal" href="../series.html#series-geometric">Example 16.2</a>, è possibile calcolare la serie complessa</p>
+<div class="math notranslate nohighlight">
+\[\sum_{k=0}^{N-1} e^{i a k} \ .\]</div>
+<ul>
+<li><p>Se <span class="math notranslate nohighlight">\(a\)</span> è un multiplo intero di <span class="math notranslate nohighlight">\(2 \pi\)</span>, <span class="math notranslate nohighlight">\(a = 2 \pi n\)</span>, <span class="math notranslate nohighlight">\(n \in \mathbb{Z}\)</span>, allora <span class="math notranslate nohighlight">\(e^{i a k} = 1\)</span> per <span class="math notranslate nohighlight">\(\forall k\)</span> e la sommatoria vale <span class="math notranslate nohighlight">\(N\)</span>, essendo la somma di <span class="math notranslate nohighlight">\(N\)</span> termini uguali a <span class="math notranslate nohighlight">\(1\)</span>.</p></li>
+<li><p>Altrimenti,</p>
+<div class="math notranslate nohighlight">
+\[\sum_{k=0}^{N-1} e^{i a k} = 1 + \sum_{k=1}^{N-1} e^{i a k} = 1 + e^{i a} \sum_{k=0}^{N-1} e^{i a k} - e^{i a N} \]</div>
+<p>e quindi</p>
+<div class="math notranslate nohighlight">
+\[\sum_{k=0}^{N-1} e^{i a k} = \frac{1 - e^{i a N}}{1 - e^{i a}} \ .\]</div>
+</li>
+</ul>
+</div>
+</div></div>
 <div class="toctree-wrapper compound">
 </div>
 </div>
@@ -902,7 +955,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">21.9. </span>Problemi</p>
+        <p class="prev-next-title"><span class="section-number">21.10. </span>Problemi</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -948,6 +1001,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-e-disequazioni-con-i-numeri-complessi">21.8. Equazioni e disequazioni con i numeri complessi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cenni-di-analisi-di-fourier">21.9. Cenni di analisi di Fourier</a></li>
 </ul>
   </nav></div>
 
