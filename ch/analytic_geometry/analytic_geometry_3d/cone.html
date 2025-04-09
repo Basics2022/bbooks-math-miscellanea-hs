@@ -246,9 +246,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../../precalculus/polynomials.html">19. Polinomi</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../precalculus/multivariable-real-fun.html">20. Funzioni multi-variabile</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../algebra/complex-algebra.html">21. Algebra complessa</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../algebra/complex-algebra-problems.html">21.9. Problemi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../algebra/complex-algebra-sol.html">21.10. Problemi - soluzioni</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../algebra/complex-algebra-notes.html">21.11. Note e dimostrazioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../algebra/complex-algebra-problems.html">21.10. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../algebra/complex-algebra-sol.html">21.11. Problemi - soluzioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../algebra/complex-algebra-notes.html">21.12. Note e dimostrazioni</a></li>
 </ul>
 </li>
 </ul>
@@ -527,14 +527,111 @@ document.write(`
   <div class="tex2jax_ignore mathjax_ignore section" id="cono-circolare-retto-e-coniche">
 <span id="geometry-analytic-3d-cone"></span><h1><span class="section-number">13.5. </span>Cono circolare retto e coniche<a class="headerlink" href="#cono-circolare-retto-e-coniche" title="Permalink to this heading">#</a></h1>
 <div class="section" id="equazione-del-cono">
-<h2><span class="section-number">13.5.1. </span>Equazione del cono<a class="headerlink" href="#equazione-del-cono" title="Permalink to this heading">#</a></h2>
-<p>Equazioni del (doppio) cono circolare retto, usando un sistema di coordinate cilindriche,</p>
+<span id="geometry-analytic-3d-cone-eqn"></span><h2><span class="section-number">13.5.1. </span>Equazione del cono<a class="headerlink" href="#equazione-del-cono" title="Permalink to this heading">#</a></h2>
+<p>Equazioni del (doppio) cono circolare retto, usando un sistema di coordinate cartesiane con origine nel vertice e asse coincidente con l’asse <span class="math notranslate nohighlight">\(z\)</span>,</p>
 <div class="math notranslate nohighlight">
-\[r = a \, z \ ,\]</div>
-<p>per <span class="math notranslate nohighlight">\(z \in (-\infty, +\infty)\)</span>, <span class="math notranslate nohighlight">\(\theta \in (0, 2 \pi)\)</span>.</p>
+\[C: \ x^2 + y^2 = d^2 z^2 \ .\]</div>
 </div>
 <div class="section" id="coniche-intersezione-tra-cono-e-piano">
 <span id="geometry-analytic-3d-cone-conics"></span><h2><span class="section-number">13.5.2. </span>Coniche: intersezione tra cono e piano<a class="headerlink" href="#coniche-intersezione-tra-cono-e-piano" title="Permalink to this heading">#</a></h2>
+<p>Si prende un punto <span class="math notranslate nohighlight">\(P\)</span> nel piano <span class="math notranslate nohighlight">\(y,z\)</span>, <span class="math notranslate nohighlight">\(P-O = y_P \hat{y} + z_P \hat{z}\)</span>, e il piano <span class="math notranslate nohighlight">\(\pi\)</span> passante per il punto <span class="math notranslate nohighlight">\(P\)</span> con versore normale <span class="math notranslate nohighlight">\(\hat{n} = \sin \theta \, \hat{y} - \cos \theta \, \hat{z}\)</span>. Si introduce quindi un altro sistema di coordinate cartesiane <span class="math notranslate nohighlight">\(X,Y,Z\)</span> con origine nel punto <span class="math notranslate nohighlight">\(P\)</span>, con asse <span class="math notranslate nohighlight">\(Z\)</span> allineato con il versore normale <span class="math notranslate nohighlight">\(\hat{n}\)</span> e l’asse <span class="math notranslate nohighlight">\(X\)</span> allineato con l’asse <span class="math notranslate nohighlight">\(x\)</span>, così che le trasformazioni dei versori dei due sistemi di riferimento sono</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+ \hat{X} &amp; = \hat{x} \\
+ \hat{Y} &amp; = \hat{y} \cos \theta + \hat{z} \sin \theta \\
+ \hat{Z} &amp; =-\hat{y} \sin \theta + \hat{z} \cos \theta \\
+\end{aligned}
+\qquad , \qquad
+\begin{aligned}
+ \hat{x} &amp; = \hat{X} \\
+ \hat{y} &amp; = \hat{Y} \cos \theta - \hat{Z} \sin \theta \\
+ \hat{z} &amp; = \hat{Y} \sin \theta + \hat{Z} \cos \theta \\
+\end{aligned}
+\end{split}\]</div>
+<p>e tra le coordinate</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+ X &amp; = \ \ \ x \\
+ Y &amp; = \ \ \ (y-y_P) \cos \theta + \hat{z} (z-zP) \theta \\
+ Z &amp; =     - (y-y_P) \sin \theta + \hat{z} (z-zP) \theta \\
+\end{aligned}
+\qquad , \qquad
+\begin{aligned}
+ x       &amp; = X \\
+ y - y_P &amp; = Y \cos \theta - Z \sin \theta \\
+ z - z_P &amp; = Y \sin \theta + Z \cos \theta \\
+\end{aligned}
+\end{split}\]</div>
+<p>L’equazione del piano  <span class="math notranslate nohighlight">\(\pi\)</span> nel sistema di coordinate <span class="math notranslate nohighlight">\(X,Y,Z\)</span> è semplicemente <span class="math notranslate nohighlight">\(\pi: \ Z = 0\)</span>. I punti di interesezione tra il cono e il piano si trovano mettendo a sistema le equazioni delle due superfici,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+  \pi: &amp; Z = 0 \\
+    C: &amp; \ X^2 + (y_p + Y \cos \theta - Z \sin \theta )^2 = d^2 ( z_P + Y \sin \theta + Z \cos \theta )^2
+\end{cases}\end{split}\]</div>
+<p>e quindi l’equazione dell’intersezione <span class="math notranslate nohighlight">\(\gamma := \pi \cap C\)</span> è</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \gamma: &amp; \ X^2 + (y_P + Y \cos \theta  )^2 = d^2 ( z_P + Y \sin \theta  )^2 \\
+          &amp; \ X^2 + Y^2 ( \cos^2 \theta - d^2 \sin^2 \theta ) + Y ( 2 y_P \cos \theta - 2 d^2 z_P \sin \theta ) + y_P^2 - d^2 z_P^2 = 0 \\
+\end{aligned}\end{split}\]</div>
+<p>o ancora, con il completamento del quadrato, nell’ipotesi che <span class="math notranslate nohighlight">\(\cos^2 \theta - d^2 \sin^2 \theta \ne 0\)</span> (caso della parabola trattato in seguito)</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+ \ X^2 + Y^2 ( \cos^2 \theta - d^2 \sin^2 \theta ) + 2 Y ( y_P \cos \theta - d^2 z_P \sin \theta ) + \frac{( y_P \cos \theta - d^2 z_P \sin \theta )^2}{ \cos^2 \theta - d^2 \sin^2 \theta } &amp; = \frac{( y_P \cos \theta - d^2 z_P \sin \theta )^2}{ \cos^2 \theta - d^2 \sin^2 \theta }- y_P^2 + d^2 z_P^2  \\
+ \ X^2 + ( \cos^2 \theta - d^2 \sin^2 \theta ) \left[ Y + \frac{ y_P \cos \theta - d^2 z_P \sin \theta}{ \cos^2 \theta - d^2 \sin^2 \theta } \right]^2 &amp; = \frac{ y_P^2 \cos^2 \theta - 2 d^2 z_P y_P \cos \theta \sin \theta + d^4 z_P^2 \sin^2 \theta - y_P^2 \cos^2 \theta + y^2 d^2 \sin^2 \theta + d^2 z_P^2 \cos^2 \theta - d^4 z_P^2 \sin^2 \theta}{ \cos^2 \theta - d^2 \sin^2 \theta } \\
+ \ X^2 + ( \cos^2 \theta - d^2 \sin^2 \theta ) \left[ Y + \frac{ y_P \cos \theta - d^2 z_P \sin \theta}{ \cos^2 \theta - d^2 \sin^2 \theta } \right]^2 &amp; = \frac{ - 2 d^2 z_P y_P \cos \theta \sin \theta  + y_P^2 d^2 \sin^2 \theta + d^2 z_P^2 \cos^2 \theta }{ \cos^2 \theta - d^2 \sin^2 \theta }  \\
+ \ X^2 + ( \cos^2 \theta - d^2 \sin^2 \theta ) \left[ Y + \frac{ y_P \cos \theta - d^2 z_P \sin \theta}{ \cos^2 \theta - d^2 \sin^2 \theta } \right]^2 &amp; = d^2 \frac{( y_P \sin \theta - z_P \cos \theta )^2 }{ \cos^2 \theta - d^2 \sin^2 \theta }  \\
+\end{aligned}\end{split}\]</div>
+<p>Questa è l’equazione dell’intersezione generica tra un piano e un doppio cono. Si analizzano ora alcuni casi particolari, in funzione dell’angolo <span class="math notranslate nohighlight">\(\theta\)</span> e della posizione del punto <span class="math notranslate nohighlight">\(P\)</span>.</p>
+<ul>
+<li><p>Se <span class="math notranslate nohighlight">\(\theta = 0\)</span>, il piano è normale all’asse del doppio cono, si ottiene l’equazione</p>
+<div class="math notranslate nohighlight">
+\[X^2 + (Y + y_P)^2 = d^2 z_P^2 \ ,\]</div>
+<p>che rappresenta una circonferenza centrata nel punto di coordinate <span class="math notranslate nohighlight">\((X, Y) = (0, -y_P)\)</span>, che corrisponde al punto di interesezione dell’asse del cono con il piano <span class="math notranslate nohighlight">\(\pi\)</span>. Se <span class="math notranslate nohighlight">\(z_P = 0\)</span> si trova il caso degenere di circonferenza con raggio nullo, o un punto solo in corrispondenza del vertice del doppio cono</p>
+</li>
+<li><p>Se <span class="math notranslate nohighlight">\(\theta = \theta_p\)</span> tale che <span class="math notranslate nohighlight">\(\tan \theta_p = \mp \frac{1}{d}\)</span>, allora il coefficiente di <span class="math notranslate nohighlight">\(Y^2\)</span> è nullo e l’equazione</p>
+<div class="math notranslate nohighlight">
+\[X^2 + 2 \left(y_P \cos \theta_p - z_P \frac{\cos^2 \theta_p}{\sin \theta_p} \right) Y + y_P^2 - \frac{\cos^2 \theta_p}{\sin^2 \theta_p} z_P^2 = 0 \ ,\]</div>
+<p>rappresenta una parabola con <span class="math notranslate nohighlight">\(Y\)</span> come asse di simmetria.</p>
+</li>
+</ul>
+<!--
+Se si annulla il coefficiente di $Y$,
+
+$$z_P = y_P \tan \theta_p \ ,$$
+
+si ottiene il caso degenere di due rette incidenti nel vertice
+
+$$X^2 = \frac{}{}$$
+-->
+<ul>
+<li><p>Per valori di <span class="math notranslate nohighlight">\(\theta\)</span> diversi, l’equazione dell’intersezione diventa</p>
+<div class="math notranslate nohighlight">
+\[ 
+   \frac{\cos^2 \theta - d^2 \sin^2 \theta }{d^2 ( y_P \sin \theta - z_P \cos \theta )^2 } X^2 + \frac{( \cos^2 \theta - d^2 \sin^2 \theta )^2}{d^2 ( y_P \sin \theta - z_P \cos \theta )^2} \left[ Y + \frac{ y_P \cos \theta - d^2 z_P \sin \theta}{ \cos^2 \theta - d^2 \sin^2 \theta } \right]^2 = 1  \ ,
+  \]</div>
+<p>cioè l’equazione di:</p>
+<ul>
+<li><p>un’ellisse, se <span class="math notranslate nohighlight">\(\cos^2 \theta - d^2 \sin^2\theta &gt; 0\)</span>, cioè se <span class="math notranslate nohighlight">\(\theta \in (0, \theta_p)\)</span>, con semi-assi</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+      a &amp; = \frac{| d ( y_P \sin \theta - z_P \cos \theta )| }{\sqrt{\cos^2 \theta - d^2 \sin^2 \theta} } \\
+      b &amp; = \frac{| d ( y_P \sin \theta - z_P \cos \theta )| }{\cos^2 \theta - d^2 \sin^2 \theta} \\
+    \end{aligned}\end{split}\]</div>
+<p>e centro <span class="math notranslate nohighlight">\(X = 0\)</span>, <span class="math notranslate nohighlight">\(Y = - \frac{ y_P \cos \theta - d^2 z_P \sin \theta}{ \cos^2 \theta - d^2 \sin^2 \theta }\)</span></p>
+</li>
+<li><p>un’iperbole, se <span class="math notranslate nohighlight">\(\cos^2 \theta - d^2 \sin^2 \theta &lt;0\)</span>, cioè se <span class="math notranslate nohighlight">\(\theta &gt; \theta_p\)</span>, con semi-asse maggiore <span class="math notranslate nohighlight">\(b\)</span> allineato lungo <span class="math notranslate nohighlight">\(Y\)</span>, e semi-asse minore <span class="math notranslate nohighlight">\(a\)</span> lungo <span class="math notranslate nohighlight">\(X\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+        a &amp; = \frac{| d ( y_P \sin \theta - z_P \cos \theta )| }{\sqrt{ - \cos^2 \theta + d^2 \sin^2 \theta} } \\
+        b &amp; = \frac{| d ( y_P \sin \theta - z_P \cos \theta )| }{- \cos^2 \theta + d^2 \sin^2 \theta} \\
+     \end{aligned}\end{split}\]</div>
+</li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 
