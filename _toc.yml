@@ -122,5 +122,6 @@ parts:
     - file: ch/statistics/combinatorics
 - caption: Indice
   chapters:
+  - file: ppl.md
   - file: genindex.md
 

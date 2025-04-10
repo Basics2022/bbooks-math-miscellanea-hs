@@ -9,7 +9,14 @@
 (math-hs:precalculus)=
 # Introduzione al pre-calcolo
 
-Nel gran calderone del pre-calcolo finiscono qui tutti gli argomenti propedeutici allo studio del [calcolo](math-hs:calculus), seguendo quanto fatto da **Eulero** - ovviamente come Eulero, ma peggio - nel 1748 nel suo **"Introductio in analysin infinitorum"**, pensato come una raccolta di concetti e metodi di analisi e geometria analitica in preparazione al calcolo differenziale e integrale.
+Nel gran calderone del pre-calcolo finiscono qui tutti gli argomenti propedeutici allo studio del [calcolo](math-hs:calculus), seguendo quanto fatto da **Eulero** - ovviamente come Eulero, ma peggio - nel 1748 nel suo **"Introductio in analysin infinitorum"** {cite}`euler1748introductio1,euler1748introductio2`, pensato come una raccolta di concetti e metodi di analisi e geometria analitica in preparazione al calcolo differenziale e integrale.
+
+```{admonition} Leonhard Euler (1707-1783)
+:class: dropdown
+
+Eulero bla bla
+
+```
 
 Senza fare uso di nessun concetto di calcolo differenziale o integrale, nel primo volume dell'opera Eulero fornisce alcuni **fondamenti dell'analisi** e delle **serie infinite**; nel secondo volume Eulero applica i risultati del primo volume allo studio delle **curve** e delle **superfici** nel piano e nello spazio.
 
@@ -60,4 +67,12 @@ Viene introdotta anche la sua funzione inversa $\ln x$, definita come il logarit
 
 ```
 -->
+
+---
+
+```{bibliography}
+:style: unsrt
+:filter: docname in docnames
+```
+
 
