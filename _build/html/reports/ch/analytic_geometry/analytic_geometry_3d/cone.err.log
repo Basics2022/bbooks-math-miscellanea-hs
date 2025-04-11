@@ -1,0 +1,147 @@
+Traceback (most recent call last):
+  File "/home/davide/.local/lib/python3.8/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+    executenb(
+  File "/home/davide/.local/lib/python3.8/site-packages/nbclient/client.py", line 1305, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "/home/davide/.local/lib/python3.8/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 616, in run_until_complete
+    return future.result()
+  File "/home/davide/.local/lib/python3.8/site-packages/nbclient/client.py", line 705, in async_execute
+    await self.async_execute_cell(
+  File "/home/davide/.local/lib/python3.8/site-packages/nbclient/client.py", line 1058, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/home/davide/.local/lib/python3.8/site-packages/nbclient/client.py", line 914, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+# [remove-input]
+
+import numpy as np
+import plotly.graph_objects as go
+from scipy.optimize import fsolve
+
+def f_vdw_doubleprime(rho, a, b):
+    """
+    Calculates the second derivative of the free energy density for a
+    Van der Waals fluid.
+    """
+    return kbt/(rho*(1-b*rho)) + kbt*b/(1-b*rho)**2 - 2*a
+
+range_a = np.arange(27.0/8.0, 5, 0.1)
+
+## Create plot
+fig = go.Figure()
+
+base_traces = 0 # Number of traces that are always visible
+
+# Add traces, one for each slider step
+for a in range_a:
+    rhosol = fsolve(conditions_for_coexistence, x0=[0.05, 0.7], args=(a,b))
+    rho_turningpoints = fsolve(f_vdw_doubleprime, x0=[0.1, 0.5], args=(a,b))
+    fig.add_trace(
+        go.Scatter(
+            visible=False,
+            x=[rhosol[0], rhosol[0], rho_turningpoints[0], rho_turningpoints[0]],
+            y=[0, -1, -1, 0],
+            fill="toself",
+            mode='lines',
+            name='nucleation and growth',
+            line=dict(color=nucleatn_color)))
+    fig.add_trace(
+        go.Scatter(
+            visible=False,
+            x=[rho_turningpoints[1], rho_turningpoints[1], rhosol[1], rhosol[1]],
+            y=[0, -1, -1, 0],
+            fill="toself",
+            mode='lines',
+            name='nucleation and growth',
+            line=dict(color=nucleatn_color),
+            showlegend=False))
+    fig.add_trace(
+        go.Scatter(
+            visible=False,
+            x=[rho_turningpoints[0], rho_turningpoints[0], rho_turningpoints[1], rho_turningpoints[1]],
+            y=[0, -1, -1, 0],
+            fill="toself",
+            mode='lines',
+            name='spinodal decomposition',
+            line=dict(color=spinodal_color)))
+    fig.add_trace(
+        go.Scatter(
+            visible=False,
+            x=rho,
+            y=f_vdw(rho, a, b),
+            line=dict(color=line),
+            mode='lines',
+            name='VdW fluid'))
+    fig.add_trace(
+        go.Scatter(
+            visible=False,
+            x=rho,
+            y=f_mix(rho, a, b),
+            line=dict(color='#000000'),
+            mode='lines',
+            name='phase separated'))
+
+traces_per_step = 5 # Number of traces per value of a
+
+# Show the traces for one value of a when loading the plot (initial setup)
+active_a_index = 5
+for i in range(traces_per_step):
+    curr_idx = int(base_traces + active_a_index*traces_per_step + i)
+    fig.data[curr_idx].visible = True
+
+# Create and add slider
+steps = []
+for i in range(0, range_a.shape[0]):
+    visarray = [False] * len(fig.data)
+    visarray[0:base_traces] = [True] * base_traces
+    curr_idx = int(base_traces + i * traces_per_step)
+    next_idx = int(base_traces + (i+1) * traces_per_step)
+    visarray[curr_idx:next_idx] = [True] * traces_per_step
+    step = dict(
+        method="update",
+        args=[{"visible": visarray}],
+        label=round(range_a[i], 1)
+    )
+    steps.append(step)
+
+sliders = [dict(
+    active=active_a_index,
+    currentvalue={"prefix": "a/b: "},
+    steps=steps
+)]
+
+fig.update_layout(
+    sliders=sliders,
+    legend_title="Legend",
+)
+
+fig.update_xaxes(title_text=r'density $\rho$', range=[rho[0], rho[-1]])
+
+# Update yaxis properties
+fig.update_yaxes(title_text=r'free energy density $f$', range=[-1, 0])
+
+fig
+
+
+------------------
+
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mNameError[0m                                 Traceback (most recent call last)
+Cell [0;32mIn[1], line 23[0m
+[1;32m     21[0m [38;5;66;03m# Add traces, one for each slider step[39;00m
+[1;32m     22[0m [38;5;28;01mfor[39;00m a [38;5;129;01min[39;00m range_a:
+[0;32m---> 23[0m     rhosol [38;5;241m=[39m fsolve([43mconditions_for_coexistence[49m, x0[38;5;241m=[39m[[38;5;241m0.05[39m, [38;5;241m0.7[39m], args[38;5;241m=[39m(a,b))
+[1;32m     24[0m     rho_turningpoints [38;5;241m=[39m fsolve(f_vdw_doubleprime, x0[38;5;241m=[39m[[38;5;241m0.1[39m, [38;5;241m0.5[39m], args[38;5;241m=[39m(a,b))
+[1;32m     25[0m     fig[38;5;241m.[39madd_trace(
+[1;32m     26[0m         go[38;5;241m.[39mScatter(
+[1;32m     27[0m             visible[38;5;241m=[39m[38;5;28;01mFalse[39;00m,
+[0;32m   (...)[0m
+[1;32m     32[0m             name[38;5;241m=[39m[38;5;124m'[39m[38;5;124mnucleation and growth[39m[38;5;124m'[39m,
+[1;32m     33[0m             line[38;5;241m=[39m[38;5;28mdict[39m(color[38;5;241m=[39mnucleatn_color)))
+
+[0;31mNameError[0m: name 'conditions_for_coexistence' is not defined
+

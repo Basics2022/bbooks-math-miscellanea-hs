@@ -99,79 +99,79 @@
 \contentsline {chapter}{\numberline {10}Algebra complessa}{57}{chapter.10}%
 \contentsline {chapter}{\numberline {11}Algebra di insiemi}{59}{chapter.11}%
 \contentsline {part}{IV\hspace {1em}Geometria analitica}{61}{part.4}%
-\contentsline {chapter}{\numberline {12}Introduzione alla geometria analitica}{65}{chapter.12}%
-\contentsline {chapter}{\numberline {13}Spazio euclideo}{67}{chapter.13}%
-\contentsline {chapter}{\numberline {14}Geometria analitica nel piano}{69}{chapter.14}%
-\contentsline {section}{\numberline {14.1}Sistemi di coordinate}{70}{section.14.1}%
-\contentsline {subsection}{\numberline {14.1.1}Esempi}{70}{subsection.14.1.1}%
-\contentsline {subsection}{\numberline {14.1.2}Trasformazione di coordinate}{70}{subsection.14.1.2}%
-\contentsline {section}{\numberline {14.2}Distanze e angoli}{71}{section.14.2}%
-\contentsline {subsection}{\numberline {14.2.1}Distanza tra punti}{71}{subsection.14.2.1}%
-\contentsline {section}{\numberline {14.3}Curve nel piano}{72}{section.14.3}%
-\contentsline {subsection}{\numberline {14.3.1}Rappresentazioni di una curva}{72}{subsection.14.3.1}%
-\contentsline {subsection}{\numberline {14.3.2}Appartenenza di un punto a una curva}{72}{subsection.14.3.2}%
-\contentsline {subsection}{\numberline {14.3.3}Interesezione di curve}{72}{subsection.14.3.3}%
-\contentsline {subsection}{\numberline {14.3.4}Interpretazione grafica di equazioni, sistemi di equazioni e disequazioni}{73}{subsection.14.3.4}%
-\contentsline {section}{\numberline {14.4}Rette nel piano}{73}{section.14.4}%
-\contentsline {subsection}{\numberline {14.4.1}Definizioni ed equazione}{73}{subsection.14.4.1}%
-\contentsline {subsection}{\numberline {14.4.2}Posizioni reciproche}{74}{subsection.14.4.2}%
-\contentsline {subsubsection}{Posizione reciproca di punto e retta}{74}{subsubsection*.28}%
-\contentsline {subsubsection}{Posizione reciproca di rette}{74}{subsubsection*.29}%
-\contentsline {paragraph}{Rette coincidenti}{74}{paragraph*.30}%
-\contentsline {paragraph}{Rette parallele nel piano}{75}{paragraph*.31}%
-\contentsline {paragraph}{Rette incidenti}{75}{paragraph*.32}%
-\contentsline {paragraph}{Rette incidenti perpendicolari}{75}{paragraph*.33}%
-\contentsline {subsection}{\numberline {14.4.3}Distanza punto\sphinxhyphen {}retta}{76}{subsection.14.4.3}%
-\contentsline {section}{\numberline {14.5}Coniche}{76}{section.14.5}%
-\contentsline {subsection}{\numberline {14.5.1}Forma canonica in coordinate cartesiane}{78}{subsection.14.5.1}%
-\contentsline {subsubsection}{Circonferenza}{78}{subsubsection*.34}%
-\contentsline {subsubsection}{Parabola}{79}{subsubsection*.35}%
-\contentsline {subsubsection}{Ellisse}{79}{subsubsection*.36}%
-\contentsline {subsubsection}{Iperbole}{80}{subsubsection*.37}%
-\contentsline {subsection}{\numberline {14.5.2}Forma canonica in coordinate polari}{81}{subsection.14.5.2}%
-\contentsline {subsection}{\numberline {14.5.3}Equazione generale delle coniche}{81}{subsection.14.5.3}%
-\contentsline {subsubsection}{}{83}{subsubsection*.38}%
-\contentsline {subsubsection}{Esercizi}{83}{subsubsection*.39}%
-\contentsline {section}{\numberline {14.6}Problemi}{83}{section.14.6}%
-\contentsline {subsection}{\numberline {14.6.1}Punti e Distanze}{83}{subsection.14.6.1}%
-\contentsline {subsection}{\numberline {14.6.2}Retta}{83}{subsection.14.6.2}%
-\contentsline {subsection}{\numberline {14.6.3}Coniche}{84}{subsection.14.6.3}%
-\contentsline {subsection}{\numberline {14.6.4}Posizioni Relative}{85}{subsection.14.6.4}%
-\contentsline {subsection}{\numberline {14.6.5}Problemi Parametrici}{85}{subsection.14.6.5}%
-\contentsline {subsection}{\numberline {14.6.6}Altri Problemi}{86}{subsection.14.6.6}%
-\contentsline {section}{\numberline {14.7}Soluzioni}{86}{section.14.7}%
-\contentsline {subsection}{\numberline {14.7.1}Punti e Distanze}{86}{subsection.14.7.1}%
-\contentsline {subsection}{\numberline {14.7.2}Retta}{87}{subsection.14.7.2}%
-\contentsline {subsection}{\numberline {14.7.3}Coniche}{87}{subsection.14.7.3}%
-\contentsline {subsection}{\numberline {14.7.4}Posizioni Relative}{88}{subsection.14.7.4}%
-\contentsline {subsection}{\numberline {14.7.5}Problemi Parametrici}{89}{subsection.14.7.5}%
-\contentsline {subsection}{\numberline {14.7.6}Altri Problemi}{89}{subsection.14.7.6}%
-\contentsline {section}{\numberline {14.8}Note e dimostrazioni}{90}{section.14.8}%
-\contentsline {subsection}{\numberline {14.8.1}Coniche}{90}{subsection.14.8.1}%
-\contentsline {subsubsection}{Sezioni di cono}{90}{subsubsection*.100}%
-\contentsline {subsubsection}{Proprietà ottiche}{91}{subsubsection*.101}%
-\contentsline {chapter}{\numberline {15}Geometria analitica nello spazio}{93}{chapter.15}%
-\contentsline {section}{\numberline {15.1}Sistemi di coordinate per lo spazio euclideo \(E^3\)}{93}{section.15.1}%
-\contentsline {subsection}{\numberline {15.1.1}Coordinate cartesiane}{93}{subsection.15.1.1}%
-\contentsline {subsubsection}{Distanza punto\sphinxhyphen {}punto}{93}{subsubsection*.102}%
-\contentsline {subsection}{\numberline {15.1.2}Coordinate cilindriche}{93}{subsection.15.1.2}%
-\contentsline {subsection}{\numberline {15.1.3}Coordinate sferiche}{94}{subsection.15.1.3}%
-\contentsline {section}{\numberline {15.2}Piani nello spazio}{94}{section.15.2}%
-\contentsline {subsection}{\numberline {15.2.1}Definizioni ed equazione}{94}{subsection.15.2.1}%
-\contentsline {subsection}{\numberline {15.2.2}Posizioni reciproche}{95}{subsection.15.2.2}%
-\contentsline {subsubsection}{Posizione reciproca di punto e piano}{95}{subsubsection*.103}%
-\contentsline {subsubsection}{Posizione reciproca di piani}{95}{subsubsection*.104}%
-\contentsline {section}{\numberline {15.3}Curve nello spazio}{96}{section.15.3}%
-\contentsline {section}{\numberline {15.4}Rette nello spazio}{96}{section.15.4}%
-\contentsline {subsection}{\numberline {15.4.1}Definizione ed equazione}{96}{subsection.15.4.1}%
-\contentsline {subsection}{\numberline {15.4.2}Posizioni reciproche}{97}{subsection.15.4.2}%
-\contentsline {subsubsection}{Posizione reciproca di punto e retta}{97}{subsubsection*.105}%
-\contentsline {paragraph}{Distanza punto\sphinxhyphen {}retta}{97}{paragraph*.106}%
-\contentsline {subsubsection}{Posizione reciproca retta e piano}{97}{subsubsection*.107}%
-\contentsline {subsubsection}{Posizione reciproca tra rette}{97}{subsubsection*.108}%
-\contentsline {section}{\numberline {15.5}Cono circolare retto e coniche}{98}{section.15.5}%
-\contentsline {subsection}{\numberline {15.5.1}Equazione del cono}{98}{subsection.15.5.1}%
-\contentsline {subsection}{\numberline {15.5.2}Coniche: intersezione tra cono e piano}{98}{subsection.15.5.2}%
+\contentsline {chapter}{\numberline {12}Introduzione alla geometria analitica}{63}{chapter.12}%
+\contentsline {chapter}{\numberline {13}Spazio euclideo}{65}{chapter.13}%
+\contentsline {chapter}{\numberline {14}Geometria analitica nel piano}{67}{chapter.14}%
+\contentsline {section}{\numberline {14.1}Sistemi di coordinate}{68}{section.14.1}%
+\contentsline {subsection}{\numberline {14.1.1}Esempi}{68}{subsection.14.1.1}%
+\contentsline {subsection}{\numberline {14.1.2}Trasformazione di coordinate}{68}{subsection.14.1.2}%
+\contentsline {section}{\numberline {14.2}Distanze e angoli}{69}{section.14.2}%
+\contentsline {subsection}{\numberline {14.2.1}Distanza tra punti}{69}{subsection.14.2.1}%
+\contentsline {section}{\numberline {14.3}Curve nel piano}{70}{section.14.3}%
+\contentsline {subsection}{\numberline {14.3.1}Rappresentazioni di una curva}{70}{subsection.14.3.1}%
+\contentsline {subsection}{\numberline {14.3.2}Appartenenza di un punto a una curva}{70}{subsection.14.3.2}%
+\contentsline {subsection}{\numberline {14.3.3}Interesezione di curve}{70}{subsection.14.3.3}%
+\contentsline {subsection}{\numberline {14.3.4}Interpretazione grafica di equazioni, sistemi di equazioni e disequazioni}{71}{subsection.14.3.4}%
+\contentsline {section}{\numberline {14.4}Rette nel piano}{71}{section.14.4}%
+\contentsline {subsection}{\numberline {14.4.1}Definizioni ed equazione}{71}{subsection.14.4.1}%
+\contentsline {subsection}{\numberline {14.4.2}Posizioni reciproche}{72}{subsection.14.4.2}%
+\contentsline {subsubsection}{Posizione reciproca di punto e retta}{72}{subsubsection*.28}%
+\contentsline {subsubsection}{Posizione reciproca di rette}{72}{subsubsection*.29}%
+\contentsline {paragraph}{Rette coincidenti}{72}{paragraph*.30}%
+\contentsline {paragraph}{Rette parallele nel piano}{73}{paragraph*.31}%
+\contentsline {paragraph}{Rette incidenti}{73}{paragraph*.32}%
+\contentsline {paragraph}{Rette incidenti perpendicolari}{73}{paragraph*.33}%
+\contentsline {subsection}{\numberline {14.4.3}Distanza punto\sphinxhyphen {}retta}{74}{subsection.14.4.3}%
+\contentsline {section}{\numberline {14.5}Coniche}{74}{section.14.5}%
+\contentsline {subsection}{\numberline {14.5.1}Forma canonica in coordinate cartesiane}{76}{subsection.14.5.1}%
+\contentsline {subsubsection}{Circonferenza}{76}{subsubsection*.34}%
+\contentsline {subsubsection}{Parabola}{77}{subsubsection*.35}%
+\contentsline {subsubsection}{Ellisse}{77}{subsubsection*.36}%
+\contentsline {subsubsection}{Iperbole}{78}{subsubsection*.37}%
+\contentsline {subsection}{\numberline {14.5.2}Forma canonica in coordinate polari}{79}{subsection.14.5.2}%
+\contentsline {subsection}{\numberline {14.5.3}Equazione generale delle coniche}{79}{subsection.14.5.3}%
+\contentsline {subsubsection}{}{81}{subsubsection*.38}%
+\contentsline {subsubsection}{Esercizi}{81}{subsubsection*.39}%
+\contentsline {section}{\numberline {14.6}Problemi}{81}{section.14.6}%
+\contentsline {subsection}{\numberline {14.6.1}Punti e Distanze}{81}{subsection.14.6.1}%
+\contentsline {subsection}{\numberline {14.6.2}Retta}{81}{subsection.14.6.2}%
+\contentsline {subsection}{\numberline {14.6.3}Coniche}{82}{subsection.14.6.3}%
+\contentsline {subsection}{\numberline {14.6.4}Posizioni Relative}{83}{subsection.14.6.4}%
+\contentsline {subsection}{\numberline {14.6.5}Problemi Parametrici}{83}{subsection.14.6.5}%
+\contentsline {subsection}{\numberline {14.6.6}Altri Problemi}{84}{subsection.14.6.6}%
+\contentsline {section}{\numberline {14.7}Soluzioni}{84}{section.14.7}%
+\contentsline {subsection}{\numberline {14.7.1}Punti e Distanze}{84}{subsection.14.7.1}%
+\contentsline {subsection}{\numberline {14.7.2}Retta}{85}{subsection.14.7.2}%
+\contentsline {subsection}{\numberline {14.7.3}Coniche}{85}{subsection.14.7.3}%
+\contentsline {subsection}{\numberline {14.7.4}Posizioni Relative}{86}{subsection.14.7.4}%
+\contentsline {subsection}{\numberline {14.7.5}Problemi Parametrici}{87}{subsection.14.7.5}%
+\contentsline {subsection}{\numberline {14.7.6}Altri Problemi}{87}{subsection.14.7.6}%
+\contentsline {section}{\numberline {14.8}Note e dimostrazioni}{88}{section.14.8}%
+\contentsline {subsection}{\numberline {14.8.1}Coniche}{88}{subsection.14.8.1}%
+\contentsline {subsubsection}{Sezioni di cono}{88}{subsubsection*.100}%
+\contentsline {subsubsection}{Proprietà ottiche}{89}{subsubsection*.101}%
+\contentsline {chapter}{\numberline {15}Geometria analitica nello spazio}{91}{chapter.15}%
+\contentsline {section}{\numberline {15.1}Sistemi di coordinate per lo spazio euclideo \(E^3\)}{91}{section.15.1}%
+\contentsline {subsection}{\numberline {15.1.1}Coordinate cartesiane}{91}{subsection.15.1.1}%
+\contentsline {subsubsection}{Distanza punto\sphinxhyphen {}punto}{91}{subsubsection*.102}%
+\contentsline {subsection}{\numberline {15.1.2}Coordinate cilindriche}{91}{subsection.15.1.2}%
+\contentsline {subsection}{\numberline {15.1.3}Coordinate sferiche}{92}{subsection.15.1.3}%
+\contentsline {section}{\numberline {15.2}Piani nello spazio}{92}{section.15.2}%
+\contentsline {subsection}{\numberline {15.2.1}Definizioni ed equazione}{92}{subsection.15.2.1}%
+\contentsline {subsection}{\numberline {15.2.2}Posizioni reciproche}{93}{subsection.15.2.2}%
+\contentsline {subsubsection}{Posizione reciproca di punto e piano}{93}{subsubsection*.103}%
+\contentsline {subsubsection}{Posizione reciproca di piani}{93}{subsubsection*.104}%
+\contentsline {section}{\numberline {15.3}Curve nello spazio}{94}{section.15.3}%
+\contentsline {section}{\numberline {15.4}Rette nello spazio}{94}{section.15.4}%
+\contentsline {subsection}{\numberline {15.4.1}Definizione ed equazione}{94}{subsection.15.4.1}%
+\contentsline {subsection}{\numberline {15.4.2}Posizioni reciproche}{95}{subsection.15.4.2}%
+\contentsline {subsubsection}{Posizione reciproca di punto e retta}{95}{subsubsection*.105}%
+\contentsline {paragraph}{Distanza punto\sphinxhyphen {}retta}{95}{paragraph*.106}%
+\contentsline {subsubsection}{Posizione reciproca retta e piano}{95}{subsubsection*.107}%
+\contentsline {subsubsection}{Posizione reciproca tra rette}{95}{subsubsection*.108}%
+\contentsline {section}{\numberline {15.5}Cono circolare retto e coniche}{96}{section.15.5}%
+\contentsline {subsection}{\numberline {15.5.1}Equazione del cono}{96}{subsection.15.5.1}%
+\contentsline {subsection}{\numberline {15.5.2}Coniche: intersezione tra cono e piano}{96}{subsection.15.5.2}%
 \contentsline {part}{V\hspace {1em}Precalcolo}{99}{part.5}%
 \contentsline {chapter}{\numberline {16}Introduzione al pre\sphinxhyphen {}calcolo}{101}{chapter.16}%
 \contentsline {chapter}{\numberline {17}Funzioni reali a variabile reale, \(f: D \subseteq \symbb {R} \rightarrow \symbb {R}\)}{103}{chapter.17}%
@@ -472,5 +472,7 @@
 \contentsline {subsubsection}{Combinazioni semplici}{277}{subsubsection*.233}%
 \contentsline {subsubsection}{Combinazioni con ripetizioni}{277}{subsubsection*.234}%
 \contentsline {part}{VIII\hspace {1em}Indice}{279}{part.8}%
-\contentsline {chapter}{\numberline {32}Indice}{281}{chapter.32}%
-\contentsline {chapter}{Proof Index}{283}{section*.235}%
+\contentsline {chapter}{\numberline {32}Persone}{281}{chapter.32}%
+\contentsline {chapter}{\numberline {33}Indice}{283}{chapter.33}%
+\contentsline {chapter}{Bibliografia}{285}{chapter*.235}%
+\contentsline {chapter}{Proof Index}{287}{section*.236}%
