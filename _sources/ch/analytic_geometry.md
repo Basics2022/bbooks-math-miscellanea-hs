@@ -1,13 +1,22 @@
+<!--
 ```{article-info}
 :author: basics
 :date: "{sub-ref}`today`"
 :read-time: "{sub-ref}`wordcount-minutes` min read"
 ```
+-->
 
 (geometry:analytic)=
 # Introduzione alla geometria analitica
 
 La geometria analitica...
+
+```{admonition} René Decartes (1596-1650) 
+:class: dropdown
+Cartesio bla bla
+
+```
+
 
 ```{dropdown} Argomenti del capitolo
 :open:
