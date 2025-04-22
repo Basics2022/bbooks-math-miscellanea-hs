@@ -9,14 +9,43 @@
 (geometry:analytic)=
 # Introduzione alla geometria analitica
 
-La geometria analitica...
+La geometria analitica si occupa dello studio delle figure geometriche nello spazio tramite l'uso di **sistemi di coordinate**: la scelta dei sistemi di coordinate può spesso essere arbitaria, spesso guidata da criteri di "comodità"; i risultati sono indipendenti dalla scelta.
+
+L'uso di sistemi di coordinate per la descrizione dello spazio crea un legame tra la **geometria** e l'**algebra**:
+  - da un lato, le entità geometriche possono essere rappresentate con funzioni, equazioni e/o disequazioni che coinvolgono le coordinate;
+  - dall'altro, ai problemi algebrici si può dare un'interpretazione geometrica.
 
 ```{admonition} René Decartes (1596-1650) 
 :class: dropdown
-Cartesio bla bla
+
+- Razionalismo moderno
+- Nel 1637 Cartesio formalizzò le basi della geometria analitica, o geometria cartesiana, nel libro *Geometria*, introdotto dal suo più famoso *Discorso sul metodo*.
+- Il lavoro di Cartesio fornisce strumenti fondamentali usati nella seconda metà del XVII secolo da Newton e Leibniz per sviluppare il [calcolo infinitesimale](math-hs:calculus), e contemporanemente la [meccanica razionale](https://basics2022.github.io/bbooks-physics-hs/ch/mechanics) di Newton.
 
 ```
 
+<!--
+```{admonition} Pierre de Fermat (1601-1665)
+:class: dropdown
+...
+
+```
+-->
+
+```{admonition} Requisiti
+:class: warning, dropdown
+
+- ...
+
+```
+
+```{admonition} Argomenti derivanti
+:class: tip, dropdown
+
+- [Calcolo infinitesimale]()
+- [Meccanica classica]()
+
+```
 
 ```{dropdown} Argomenti del capitolo
 :open:
@@ -37,17 +66,6 @@ Cartesio bla bla
 - [Coniche come sezione di un cono](geometry:analytic:3d:cone)
 
 ```
-
-```{dropdown} ...
-```
-
-- Nel 1637 Cartesio formalizzò le basi della geometria analitica, o geometria cartesiana, nel libro *Geometria*, introdotto dal suo più famoso *Discorso sul metodo*.
-- Il lavoro di Cartesio fornisce strumenti fondamentali usati nella seconda metà del XVII secolo da Newton e Leibniz per sviluppare il [calcolo infinitesimale](math-hs:calculus), e contemporanemente la [meccanica razionale](https://basics2022.github.io/bbooks-physics-hs/ch/mechanics) di Newton.
-
-- La geometria analitica si occupa dello studio delle figure geometriche nello spazio tramite l'uso di **sistemi di coordinate**: la scelta dei sistemi di coordinate può spesso essere arbitaria, spesso guidata da criteri di "comodità"; i risultati sono indipendenti dalla scelta.
-- L'utilizzo di un sistema di coordinate per la descrizione dello spazio produce un legame tra la **geometria** e l'**algebra**:
-  - da un lato, le entità geometriche possono essere rappresentate con funzioni, equazioni e/o disequazioni che coinvolgono le coordinate;
-  - dall'altro, ai problemi algebrici si può dare un'interpretazione geometrica;
 
 <!--
 ```{list-table}
