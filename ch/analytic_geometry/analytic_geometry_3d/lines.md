@@ -4,7 +4,7 @@
 ## Definizione ed equazione
 **Definizione 1 - Passaggio per un punto e direzione tangente.** I punti $P$ della retta $r$ passante per il punto $P_0$ e con direzione $\vec{v}$ possono essere rappresentati dall'**equazione parametrica**,
 
-$$r: P = P_0 + \lambda \, \vec{v} \ .$$
+$$r: P(\lambda) = P_0 + \lambda \, \vec{v} \ .$$ (eq:analytic-geo:3d:lines:param)
 
 Questa relazione può essere scritta usando un sistema di coordidnate carteisane, con base $\{ \hat{x}, \hat{y}, \hat{z} \}$,
 
