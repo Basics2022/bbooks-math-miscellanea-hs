@@ -514,7 +514,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">12.5.3.1. </a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">12.5.3.1. …</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi">12.5.3.2. Esercizi</a></li>
 </ul>
             </nav>
@@ -532,7 +532,7 @@ document.write(`
 <p>L’equazione di una conica disposta nel piano in maniera arbitraria rispetto a un sistema di coordinate cartesiane ha l’epsressione</p>
 <div class="math notranslate nohighlight">
 \[A x^2 + B x y + C y^2 + D x + E y + F = 0 \ .\]</div>
-<p>E” possibile dimostrare questa affermazione tramite una trasformazione rigida generica di roto-traslazione. In particolare, si applicherà prima una rotazione di un angolo <span class="math notranslate nohighlight">\(theta\)</span> e poi una traslazione <span class="math notranslate nohighlight">\(\vec{v} = x_{1,P} \hat{x}_1 + y_{1,P} \hat{y}_1\)</span>.</p>
+<p>E` possibile dimostrare questa affermazione tramite una trasformazione rigida generica di roto-traslazione. In particolare, si applica prima una rotazione di un angolo <span class="math notranslate nohighlight">\(\theta\)</span> e poi una traslazione <span class="math notranslate nohighlight">\(\vec{v} = x_{1,P} \hat{x}_1 + y_{1,P} \hat{y}_1\)</span>.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{cases}
@@ -560,8 +560,10 @@ Dimostrazione, ellisse e iperbole<div class="sd-summary-down docutils">
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Le equazioni in forma canonica di un’ellisse e un’iperbole possono essere scritte come</p>
 <div class="math notranslate nohighlight">
-\[\frac{x_2^2}{a^2} + \gamma \frac{y^2}{b^2} = 1 \qquad \rightarrow \qquad 0 = b^2 x_2^2 + \gamma a^2 y_2^2 - a^2 b^2 \ ,\]</div>
-<p class="sd-card-text">con <span class="math notranslate nohighlight">\(\gamma = 1\)</span> per l’ellisse e <span class="math notranslate nohighlight">\(\gamma = -1\)</span> per l’iperbole. Introducendo le trasformazioni di coordinate, si può manipolare l’espressione delle coniche</p>
+\[\frac{x_2^2}{a^2} + \gamma \frac{y_2^2}{b^2} = 1 \qquad \rightarrow \qquad 0 = b^2 x_2^2 + \gamma a^2 y_2^2 - a^2 b^2 \ ,\]</div>
+<p class="sd-card-text">con <span class="math notranslate nohighlight">\(\gamma = 1\)</span> per l’ellisse e <span class="math notranslate nohighlight">\(\gamma = -1\)</span> per l’iperbole. Rispetto al sistema di coordinate <span class="math notranslate nohighlight">\((x_2, y_2)\)</span> il centro dell’ellisse e dell’iperbole si trovano in <span class="math notranslate nohighlight">\((x_2, y_2) = (0, 0)\)</span>, e quindi in <span class="math notranslate nohighlight">\((x_1, y_1) = (x_{1,P}, y_{1,P})\)</span>.</p>
+<!--  -->
+<p class="sd-card-text">Introducendo le trasformazioni di coordinate, si può manipolare l’espressione delle coniche</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
   0 
@@ -619,9 +621,109 @@ Dimostrazione, parabola<div class="sd-summary-down docutils">
   &amp; = a^2 \cos^2 \theta \sin^2 \theta - a^2 \cos^2 \theta \sin^2 \theta = 0
 \end{aligned}\end{split}\]</div>
 </div>
-</details><p><strong>todo</strong> significato</p>
-<div class="section" id="id1">
-<h2><span class="section-number">12.5.3.1. </span><a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+</details><p><strong>todo</strong> <em>Commento</em></p>
+<hr class="docutils" />
+<p><strong>todo</strong> <em>Conviene forse invertire le trasformazioni delle coordinate, ad esempio per avere un’interpretazione più immediata delle coordinate del centro e degli altri punti notevoli delle coniche e della direzione degli assi?</em></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+x_1 = x - x_{P}  \\
+y_1 = y - y_{P}  \\
+\end{cases}
+\qquad , \qquad
+\begin{cases}
+x_2 = \ \ \  x_1 \cos \theta + y_1 \sin \theta \\
+y_2 =      - x_1 \sin \theta + y_1 \cos \theta \\
+\end{cases}
+\end{split}\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
+<summary class="sd-summary-title sd-card-header">
+Dimostrazione, ellisse e iperbole<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Le equazioni in forma canonica di un’ellisse e un’iperbole possono essere scritte come</p>
+<div class="math notranslate nohighlight">
+\[\frac{x_2^2}{a^2} + \gamma \frac{y_2^2}{b^2} = 1 \qquad \rightarrow \qquad 0 = b^2 x_2^2 + \gamma a^2 y_2^2 - a^2 b^2 \ ,\]</div>
+<p class="sd-card-text">con <span class="math notranslate nohighlight">\(\gamma = 1\)</span> per l’ellisse e <span class="math notranslate nohighlight">\(\gamma = -1\)</span> per l’iperbole. Rispetto al sistema di coordinate <span class="math notranslate nohighlight">\((x_2, y_2)\)</span> il centro dell’ellisse e dell’iperbole si trovano in <span class="math notranslate nohighlight">\((x_2, y_2)_P = (0, 0)\)</span>, e quindi in <span class="math notranslate nohighlight">\((x_1, y_1)_P = (0,0)\)</span> e <span class="math notranslate nohighlight">\((x, y)_P = (x_{1,P}, y_{1,P})\)</span>.
+Introducendo le trasformazioni di coordinate, si può manipolare l’espressione delle coniche</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  0 
+  &amp; = b^2 ( x_1 \cos \theta + y_1 \sin \theta )^2 + \gamma a^2 ( - x_1 \sin \theta + y_1 \cos \theta )^2 - a^2 b^2 = \\
+  &amp; = b^2 \left[ ( x - x_P ) \cos \theta + ( y - y_P ) \sin \theta \right]^2 + \gamma a^2 \left[ - ( x - x_P ) \sin \theta + ( y - y_P ) \cos \theta \right]^2 - a^2 b^2 = \\
+  &amp; = x^2 \left( b^2 \cos^2 \theta + \gamma a^2 \sin^2 \theta \right) \\
+    &amp; + 2 x y \left( b^2 \cos\theta \sin \theta - \gamma a^2 \cos\theta \sin \theta \right) \\
+    &amp; + y^2 \left( b^2 \sin^2 \theta + \gamma a^2 \cos^2 \theta \right) \\
+    &amp; + x \left(- 2 y_P b^2 \cos \theta \sin \theta  + 2 y_P \gamma a^2 \cos \theta \sin \theta - 2 x_P b^2 \cos^2 \theta + 2 x_P \gamma a^2 \sin^2 \theta  \right) \\
+    &amp; + y \left(- 2 x_P b^2 \cos \theta \sin \theta  + 2 x_P \gamma a^2 \cos \theta \sin \theta - 2 y_P b^2 \sin^2 \theta + 2 y_P \gamma a^2 \cos^2 \theta  \right) \\
+    &amp; + \left( b^2 ( x_P^2 \cos^2 \theta + y_P^2 \sin^2 \theta + 2 x_P y_P \sin \theta \cos \theta )
+      + \gamma a^2 ( x_P^2 \sin^2 \theta + y_P^2 \cos^2 \theta - 2 x_P y_P \sin \theta \cos \theta )  \right) = \\
+  &amp; =
+\end{aligned}\end{split}\]</div>
+<!--
+$$\begin{aligned}
+  0 
+  & = b^2 ( x_1 - x_{1,P} )^2 + \gamma a^2 ( y_1 - y_{1,P} )^2 - a^2 b^2 = \\
+  & = b^2 ( x \cos \theta + y \sin \theta - x_{1,P} )^2 + \gamma a^2 ( - x \sin \theta + y \cos \theta - y_{1,P} )^2 - a^2 b^2 = \\
+  & = x^2   \left( b^2 \cos^2 \theta + \gamma a^2 \sin^2 \theta \right)
+    + 2 x y \left( b^2 - \gamma a^2 \right) \sin \theta \cos \theta 
+    + y^2   \left( b^2 \sin^2 \theta + \gamma a^2 \cos^2 \theta \right) \\
+  & + x     \left( - 2 b^2 x_{1,P} \cos \theta + 2 \gamma a^2 y_{1,P} \sin \theta \right) 
+    + y     \left( - 2 b^2 x_{1,P} \sin \theta - 2 \gamma a^2 y_{1,P} \cos \theta \right) \\
+  & + b^2 x_{1,P}^2 + \gamma a^2 y_{1,P}^2 - a^2 b^2 
+\end{aligned}$$
+
+per calcolare il discriminante, usando la relazione $\gamma^2 = 1$, come
+
+$$\begin{aligned}
+  \frac{\Delta}{4}
+  & = \frac{B^2}{4} - AC = \\
+  & = \left[ \left( b^2 - \gamma a^2 \right) \sin \theta \cos \theta \right]^2 - \left( b^2 \cos^2 \theta + \gamma a^2 \sin^2 \theta \right) \left( b^2 \sin^2 \theta + \gamma a^2 \cos^2 \theta \right) = \\
+  & = b^4 \sin^2 \theta \cos^2 \theta - 2 \gamma a^2 b^2 \sin^2 \theta \cos^2 \theta + a^4 \sin^2 \theta \cos^2 \theta \\
+  & - b^4 \sin^2 \theta \cos^2 \theta - \gamma a^2 b^2 \left( \sin^4 \theta + \cos^4 \theta \right) - a^4 \sin^2 \theta \cos^2 \theta = \\
+  & = - \gamma a^2 b^2 \left(\underbrace{ \sin^2 \theta + \cos^2 \theta}_{=1} \right)^2 = - \gamma a^2 b^2
+\end{aligned}$$
+
+E quindi
+- per un'ellisse, $\gamma = 1$ e $\Delta < 0$
+- per un'iperbole, $\gamma =-1$ e $\Delta > 0$
+-->
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
+<summary class="sd-summary-title sd-card-header">
+Dimostrazione, parabola<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Introducendo le trasformazioni di coordinate, si può manipolare l’espressione dell’equazione in forma canonica delle parabole</p>
+<!--
+$$\begin{aligned}
+  0
+  & = a x_2^2 - y_2 = \\
+  & = a ( x_1 - x_{1,P} )^2 - y_1 + y_{1,P} = \\
+  & = a ( x \cos \theta + y \sin \theta - x_{1,P} )^2 - ( - x \sin \theta + y \cos \theta ) + y_{1,P} = \\
+  & = x^2   \left( a \cos^2 \theta \right)
+    + 2 x y \left( a \cos \theta \sin \theta \right) 
+    + y^2   \left( a \sin^2 \theta \right) \\
+  & + x     \left( - 2 a x_{1,P} \cos \theta + 2 \sin \theta \right) 
+    + y     \left( - 2 a x_{1,P} \sin \theta - 2 \cos \theta \right) \\
+  & + x_{1,P}^2 + y_{1,P}
+\end{aligned}$$
+
+per poi calcolare il discrimminante,
+
+$$\begin{aligned}
+  \frac{\Delta}{4}
+  & = \frac{B^2}{4} - AC = \\
+  & = a^2 \cos^2 \theta \sin^2 \theta - a^2 \cos^2 \theta \sin^2 \theta = 0
+\end{aligned}$$
+-->
+</div>
+</details><div class="section" id="id1">
+<h2><span class="section-number">12.5.3.1. </span>…<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
 </div>
 <div class="section" id="esercizi">
 <h2><span class="section-number">12.5.3.2. </span>Esercizi<a class="headerlink" href="#esercizi" title="Permalink to this heading">#</a></h2>
@@ -691,7 +793,7 @@ Dimostrazione, parabola<div class="sd-summary-down docutils">
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">12.5.3.1. </a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">12.5.3.1. …</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi">12.5.3.2. Esercizi</a></li>
 </ul>
   </nav></div>
@@ -723,9 +825,6 @@ Di basics
   
   <div class="footer-item">
     
-<div class="extra_footer">
-  <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
-</div>
   </div>
   
 </div>
