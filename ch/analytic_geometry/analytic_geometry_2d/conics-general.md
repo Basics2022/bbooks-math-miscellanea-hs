@@ -192,7 +192,52 @@ $$\begin{aligned}
 ```
 
 
-## ...
+## Esempi
+
+```{prf:example} Traslazione di ellisse e iperbole
+
+$$\dfrac{x_1^2}{a^2} + \gamma \dfrac{y_1^2}{b^2} = 1$$
+
+$$\begin{aligned}
+  0
+  & = b^2 x_1^2 + \gamma a^2 y_1^2 - a^2 b^2 = \\
+  & = b^2 ( x - x_P )^2 + \gamma a^2 ( y - y_P )^2 - a^2 b^2 = \\
+  & = b^2 x^2 + \gamma a^2 y^2 - 2 b^2 x_P x - 2 \gamma a^2 y_P y + b^2 x_P^2 + \gamma a^2 y_P^2 - a^2 b^2
+\end{aligned}$$
+
+Thus, the equation (with $\Delta \ne 0$), otherwise it's a parabola)
+
+$$0 = A x^2 + C y^2 + D x + E y + F $$
+
+completing the squares
+
+$$0 = A \left( x + \dfrac{D}{2A} \right)^2 + C \left( y - \dfrac{E}{2C} \right)^2 + F - \dfrac{D^2}{4 A} - \dfrac{E^2}{4 C}$$
+
+$$0 = \dfrac{(x-\dots)^2}{\frac{F-\dots}{A}} + \dfrac{(y-\dots)^2}{\frac{F-\dots}{C}} - 1$$
+
+... depending on the signs of $A$, $C$, $F-\dots$, the latter expression is the equation of an ellipse or a hyperbola.
+
+
+```
+
+```{prf:example} Rotazione assi di ellisse e iperbole
+
+
+$$\dfrac{x_1^2}{a^2} + \gamma \dfrac{y_1^2}{b^2} = 1$$
+
+$$\begin{aligned}
+  0
+  & = b^2 \left( x \cos \theta + y \sin \theta \right)^2 + \gamma a^2 \left( - x \sin \theta + y \cos \theta  \right)^2 - a^2 b^2 = \\
+  & = x^2 \left( b^2 \cos^2 \theta + \gamma a^2 \sin^2 \theta \right) 
+    + y^2 \left( b^2 \sin^2 \theta + \gamma a^2 \cos^2 \theta \right) 
+    + x y \left( 2 b^2 - 2 \gamma a^2 \right) \cos \theta \sin \theta
+    - a^2 b^2
+\end{aligned}$$
+
+...
+
+```
+
 
 ## Esercizi
 

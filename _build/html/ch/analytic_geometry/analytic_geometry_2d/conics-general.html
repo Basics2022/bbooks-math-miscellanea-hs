@@ -514,7 +514,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">12.5.3.1. …</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">12.5.3.1. Esempi</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi">12.5.3.2. Esercizi</a></li>
 </ul>
             </nav>
@@ -722,9 +722,46 @@ $$\begin{aligned}
 \end{aligned}$$
 -->
 </div>
-</details><div class="section" id="id1">
-<h2><span class="section-number">12.5.3.1. </span>…<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+</details><div class="section" id="esempi">
+<h2><span class="section-number">12.5.3.1. </span>Esempi<a class="headerlink" href="#esempi" title="Permalink to this heading">#</a></h2>
+<div class="proof example admonition" id="example-0">
+<p class="admonition-title"><span class="caption-number">Example 12.1 </span> (Traslazione di ellisse e iperbole)</p>
+<div class="example-content section" id="proof-content">
+<div class="math notranslate nohighlight">
+\[\dfrac{x_1^2}{a^2} + \gamma \dfrac{y_1^2}{b^2} = 1\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  0
+  &amp; = b^2 x_1^2 + \gamma a^2 y_1^2 - a^2 b^2 = \\
+  &amp; = b^2 ( x - x_P )^2 + \gamma a^2 ( y - y_P )^2 - a^2 b^2 = \\
+  &amp; = b^2 x^2 + \gamma a^2 y^2 - 2 b^2 x_P x - 2 \gamma a^2 y_P y + b^2 x_P^2 + \gamma a^2 y_P^2 - a^2 b^2
+\end{aligned}\end{split}\]</div>
+<p>Thus, the equation (with <span class="math notranslate nohighlight">\(\Delta \ne 0\)</span>), otherwise it’s a parabola)</p>
+<div class="math notranslate nohighlight">
+\[0 = A x^2 + C y^2 + D x + E y + F \]</div>
+<p>completing the squares</p>
+<div class="math notranslate nohighlight">
+\[0 = A \left( x + \dfrac{D}{2A} \right)^2 + C \left( y - \dfrac{E}{2C} \right)^2 + F - \dfrac{D^2}{4 A} - \dfrac{E^2}{4 C}\]</div>
+<div class="math notranslate nohighlight">
+\[0 = \dfrac{(x-\dots)^2}{\frac{F-\dots}{A}} + \dfrac{(y-\dots)^2}{\frac{F-\dots}{C}} - 1\]</div>
+<p>… depending on the signs of <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(C\)</span>, <span class="math notranslate nohighlight">\(F-\dots\)</span>, the latter expression is the equation of an ellipse or a hyperbola.</p>
 </div>
+</div><div class="proof example admonition" id="example-1">
+<p class="admonition-title"><span class="caption-number">Example 12.2 </span> (Rotazione assi di ellisse e iperbole)</p>
+<div class="example-content section" id="proof-content">
+<div class="math notranslate nohighlight">
+\[\dfrac{x_1^2}{a^2} + \gamma \dfrac{y_1^2}{b^2} = 1\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  0
+  &amp; = b^2 \left( x \cos \theta + y \sin \theta \right)^2 + \gamma a^2 \left( - x \sin \theta + y \cos \theta  \right)^2 - a^2 b^2 = \\
+  &amp; = x^2 \left( b^2 \cos^2 \theta + \gamma a^2 \sin^2 \theta \right) 
+    + y^2 \left( b^2 \sin^2 \theta + \gamma a^2 \cos^2 \theta \right) 
+    + x y \left( 2 b^2 - 2 \gamma a^2 \right) \cos \theta \sin \theta
+    - a^2 b^2
+\end{aligned}\end{split}\]</div>
+</div>
+</div></div>
 <div class="section" id="esercizi">
 <h2><span class="section-number">12.5.3.2. </span>Esercizi<a class="headerlink" href="#esercizi" title="Permalink to this heading">#</a></h2>
 </div>
@@ -793,7 +830,7 @@ $$\begin{aligned}
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">12.5.3.1. …</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">12.5.3.1. Esempi</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi">12.5.3.2. Esercizi</a></li>
 </ul>
   </nav></div>
