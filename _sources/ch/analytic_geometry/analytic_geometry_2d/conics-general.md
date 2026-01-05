@@ -192,7 +192,25 @@ $$\begin{aligned}
 ```
 
 
-## ...
+## Esempi
+
+```{prf:example} Traslazione di ellisse e iperbole
+
+$$\dfrac{x_1^2}{a^2} + \gamma \dfrac{y_1^2}{b^2} = 1$$
+
+$$\begin{aligned}
+  0
+  & = b^2 x_1^2 + \gamma a^2 y_1^2 - a^2 b^2 = \\
+  & = b^2 ( x - x_P )^2 + \gamma a^2 ( y - y_P )^2 - a^2 b^2 = \\
+\end{aligned}$$
+
+```
+
+```{prf:example} Rotazione assi di ellisse e iperbole
+
+
+```
+
 
 ## Esercizi
 
