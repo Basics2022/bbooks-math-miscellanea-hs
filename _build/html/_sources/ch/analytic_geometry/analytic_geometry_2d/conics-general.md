@@ -259,35 +259,67 @@ La matrice diventa diagonale se $\frac{C-A}{2} s_{2\theta} + \frac{B}{2} c_{2\th
     & = \frac{A + C}{2} \mp \frac{\sqrt{(A-C)^2 + B^2}}{2}  \ .
   \end{aligned}$$
 
-<!--
-   Usando le relazioni tra $\tan 2 \theta$ e le funzioni armoniche di $\theta$, gli elementi diagonali della matrice $\widetilde{\mathbf{A}}_1$ diventano
-   
-   $$\begin{aligned}
-     & A c_{\theta}^2 + B c_{\theta} s_{\theta} + C s_{\theta}^2 = \\
-     & = A \left( \dfrac{1}{2} \mp^{(1)} \dfrac{1}{2} \sqrt{\dfrac{1}{t^2 + 1}} \right) 
-       + B \left( \mp^{(2)} \dfrac{1}{2} \dfrac{t}{ \sqrt{t^2 + 1}} \right)
-       + C \left( \dfrac{1}{2} \pm^{(1)} \dfrac{1}{2} \sqrt{\dfrac{1}{t^2 + 1}} \right) = \\
-     & = \dfrac{A + C}{2} + \dfrac{1}{2} \dfrac{1}{\sqrt{t^2 + 1}} \left( \mp^{(1)} \left( A - C \right) \mp^{(2)} t \, B  \right) = \\
-     & = \dfrac{A + C}{2} + \dfrac{1}{2} \dfrac{|A-C|}{\sqrt{B^2 + ( A - C )^2 }} \left( \mp^{(1)} \left( A - C \right) \mp^{(2)} t \, B  \right) = \\
-     & = \dfrac{A + C}{2} + \dfrac{1}{2} \dfrac{|A-C|}{\sqrt{B^2 + ( A - C )^2 }} \left( \mp^{(1)} \left( A - C \right) \mp^{(2)} \dfrac{B^2}{A - C} \right) = \\
-   \end{aligned}$$
+```
 
-   ...
+```{prf:example} Dalla forma generale a ellisse/iperbole con semiassi paralleli agli assi coordinati tramite rotazione
 
-   $$\begin{aligned}
-     & = \frac{1}{2} ( A + C ) + \frac{1}{2} \text{sgn}(A - C) \dfrac{\mp^{(1)} ( A - C )^2 \mp^{(2)} B^2}{\sqrt{B^2 + (A-C)^2}}
-   \end{aligned}$$
+Tramite la rotazione
 
-----
+$$\mathbf{x} = \mathbf{R} \mathbf{x}_1$$
 
-con
+è necessario rendere nullo il coefficiente $B_1$
 
-$$t := \tan 2 \theta = \dfrac{B}{A - C} \ ,$$
+$$\begin{aligned}
+  0
+  & = \mathbf{x}^T \mathbf{A} \mathbf{x} + \mathbf{d}^T \mathbf{x} + F = \\
+  & = \mathbf{x}_1 \mathbf{R}^T \mathbf{A} \mathbf{R} \mathbf{x}_1 + \mathbf{d}^T \mathbf{R} \mathbf{x}_1 + F \ ,
+\end{aligned}$$
 
-$$t^2 = \dfrac{B^2}{( A - C)^2} \ ,$$
+e quindi rendere diagonalizzare la matrice $\mathbf{A}_1 := \mathbf{R}^T \mathbf{A}\mathbf{R}$, risolvendo il problema agli autovalori della matrice simmetrica $\mathbf{A}$,
 
-$$\dfrac{1}{t^2 + 1} = \dfrac{1}{\frac{B^2}{ (A - C)^2 } + 1}$$
--->
+$$\mathbf{A} \mathbf{R} = \mathbf{R} \mathbf{A}_1 \ ,$$
+
+con  $\mathbf{A}_1 = \begin{bmatrix} A_{1} & 0 \\ 0 & C_1 \end{bmatrix}$ matrice diagonale che contiene gli autovalori di $\mathbf{A}$ e $\mathbf{R} = \begin{bmatrix} \ \mathbf{r}_1 \ | \ \mathbf{r}_2 \ \end{bmatrix} $ matrice di rotazione che contiene gli autovettori di $\mathbf{A}$.
+
+La rotazione cercata è quindi rappresentabile con la matrice di rotazione $\mathbf{R}$. L'espressione della conica con le nuove coordinate diventa quindi
+
+$$0 = \mathbf{x}_1^T \mathbf{A}_1 \mathbf{x}_1 + \mathbf{d}^T \mathbf{R} \mathbf{x}_1 + F \ .$$
+
+
+```
+
+```{prf:example} Dalla forma generale a ellisse/iperbole con centro nell'origine degli assi tramite traslazione
+
+Tramite la traslazione
+
+$$\mathbf{x} = \mathbf{x}_1 + \mathbf{x}_c$$
+
+è necessario rendere nulli i coefficienti $\mathbf{d}_1 := \begin{bmatrix} D_1 \\ E_1 \end{bmatrix}$
+
+$$\begin{aligned}
+  0
+  & = \mathbf{x}^T \mathbf{A} \mathbf{x} + \mathbf{d}^T \mathbf{x} + F = \\
+  & = \left( \mathbf{x}_1 + \mathbf{x}_c \right)^T \mathbf{A} \left( \mathbf{x}_1 + \mathbf{x}_c \right) + \mathbf{d}^T \left( \mathbf{x}_1 + \mathbf{x}_c \right) + F = \\
+  & = \mathbf{x}_1^T \mathbf{A} \mathbf{x}_1 + \underbrace{\left( 2 \mathbf{x}_c^T \mathbf{A} + \mathbf{d}^T \right)}_{ =: \mathbf{d}_1^T} \mathbf{x}_1 + \mathbf{x}_c^T \mathbf{A} \mathbf{x}_c + \mathbf{d}^T \mathbf{x}_c + F  \ .
+\end{aligned}$$
+
+La condizione necessaria a portare il centro nell'origine degli assi $O_1(x_1, y_1)$ diventa quindi
+
+$$\mathbf{0} = \mathbf{d}_1 = 2 \mathbf{A} \mathbf{x}_c + \mathbf{d} \ ,$$
+
+avendo sfruttato la simmetria della matrice $\mathbf{A}$ della forma quadratica, $\mathbf{A}^T = \mathbf{A}$. La soluzione di questo sistema lineare &mdash; non singolare, nel caso di ellissi e iperboli &mdash; rappresenta la traslazione necessaria,
+
+$$\mathbf{x}_c = - \frac{1}{2} \mathbf{A}^{-1} \mathbf{d} \ .$$
+
+L'espressione della conica con le nuove coordinate diventa quindi
+
+$$\begin{aligned}
+  0
+  & = \mathbf{x}_1^T \mathbf{A} \mathbf{x}_1 + \frac{1}{4} \mathbf{d}^T \mathbf{A}^{-1} \mathbf{d} - \frac{1}{2} \mathbf{d}^T \mathbf{A}^{-1} \mathbf{d}+ F = \\
+  & = \mathbf{x}_1^T \mathbf{A} \mathbf{x}_1 - \frac{1}{4} \mathbf{d}^T \mathbf{A}^{-1} \mathbf{d} + F \ .
+\end{aligned}$$
+
+
 
 ```
 
