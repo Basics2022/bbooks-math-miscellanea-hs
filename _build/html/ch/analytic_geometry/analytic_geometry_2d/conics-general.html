@@ -514,7 +514,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">12.5.3.1. Esempi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coniche-e-forme-quadratiche-simmetriche">12.5.3.1. Coniche e forme quadratiche simmetriche</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi">12.5.3.2. Esercizi</a></li>
 </ul>
             </nav>
@@ -562,7 +562,6 @@ Dimostrazione, ellisse e iperbole<div class="sd-summary-down docutils">
 <div class="math notranslate nohighlight">
 \[\frac{x_2^2}{a^2} + \gamma \frac{y_2^2}{b^2} = 1 \qquad \rightarrow \qquad 0 = b^2 x_2^2 + \gamma a^2 y_2^2 - a^2 b^2 \ ,\]</div>
 <p class="sd-card-text">con <span class="math notranslate nohighlight">\(\gamma = 1\)</span> per l’ellisse e <span class="math notranslate nohighlight">\(\gamma = -1\)</span> per l’iperbole. Rispetto al sistema di coordinate <span class="math notranslate nohighlight">\((x_2, y_2)\)</span> il centro dell’ellisse e dell’iperbole si trovano in <span class="math notranslate nohighlight">\((x_2, y_2) = (0, 0)\)</span>, e quindi in <span class="math notranslate nohighlight">\((x_1, y_1) = (x_{1,P}, y_{1,P})\)</span>.</p>
-<!--  -->
 <p class="sd-card-text">Introducendo le trasformazioni di coordinate, si può manipolare l’espressione delle coniche</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
@@ -662,34 +661,6 @@ Introducendo le trasformazioni di coordinate, si può manipolare l’espressione
       + \gamma a^2 ( x_P^2 \sin^2 \theta + y_P^2 \cos^2 \theta - 2 x_P y_P \sin \theta \cos \theta )  \right) = \\
   &amp; =
 \end{aligned}\end{split}\]</div>
-<!--
-$$\begin{aligned}
-  0 
-  & = b^2 ( x_1 - x_{1,P} )^2 + \gamma a^2 ( y_1 - y_{1,P} )^2 - a^2 b^2 = \\
-  & = b^2 ( x \cos \theta + y \sin \theta - x_{1,P} )^2 + \gamma a^2 ( - x \sin \theta + y \cos \theta - y_{1,P} )^2 - a^2 b^2 = \\
-  & = x^2   \left( b^2 \cos^2 \theta + \gamma a^2 \sin^2 \theta \right)
-    + 2 x y \left( b^2 - \gamma a^2 \right) \sin \theta \cos \theta 
-    + y^2   \left( b^2 \sin^2 \theta + \gamma a^2 \cos^2 \theta \right) \\
-  & + x     \left( - 2 b^2 x_{1,P} \cos \theta + 2 \gamma a^2 y_{1,P} \sin \theta \right) 
-    + y     \left( - 2 b^2 x_{1,P} \sin \theta - 2 \gamma a^2 y_{1,P} \cos \theta \right) \\
-  & + b^2 x_{1,P}^2 + \gamma a^2 y_{1,P}^2 - a^2 b^2 
-\end{aligned}$$
-
-per calcolare il discriminante, usando la relazione $\gamma^2 = 1$, come
-
-$$\begin{aligned}
-  \frac{\Delta}{4}
-  & = \frac{B^2}{4} - AC = \\
-  & = \left[ \left( b^2 - \gamma a^2 \right) \sin \theta \cos \theta \right]^2 - \left( b^2 \cos^2 \theta + \gamma a^2 \sin^2 \theta \right) \left( b^2 \sin^2 \theta + \gamma a^2 \cos^2 \theta \right) = \\
-  & = b^4 \sin^2 \theta \cos^2 \theta - 2 \gamma a^2 b^2 \sin^2 \theta \cos^2 \theta + a^4 \sin^2 \theta \cos^2 \theta \\
-  & - b^4 \sin^2 \theta \cos^2 \theta - \gamma a^2 b^2 \left( \sin^4 \theta + \cos^4 \theta \right) - a^4 \sin^2 \theta \cos^2 \theta = \\
-  & = - \gamma a^2 b^2 \left(\underbrace{ \sin^2 \theta + \cos^2 \theta}_{=1} \right)^2 = - \gamma a^2 b^2
-\end{aligned}$$
-
-E quindi
-- per un'ellisse, $\gamma = 1$ e $\Delta < 0$
-- per un'iperbole, $\gamma =-1$ e $\Delta > 0$
--->
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
 <summary class="sd-summary-title sd-card-header">
@@ -699,71 +670,190 @@ Dimostrazione, parabola<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Introducendo le trasformazioni di coordinate, si può manipolare l’espressione dell’equazione in forma canonica delle parabole</p>
-<!--
-$$\begin{aligned}
-  0
-  & = a x_2^2 - y_2 = \\
-  & = a ( x_1 - x_{1,P} )^2 - y_1 + y_{1,P} = \\
-  & = a ( x \cos \theta + y \sin \theta - x_{1,P} )^2 - ( - x \sin \theta + y \cos \theta ) + y_{1,P} = \\
-  & = x^2   \left( a \cos^2 \theta \right)
-    + 2 x y \left( a \cos \theta \sin \theta \right) 
-    + y^2   \left( a \sin^2 \theta \right) \\
-  & + x     \left( - 2 a x_{1,P} \cos \theta + 2 \sin \theta \right) 
-    + y     \left( - 2 a x_{1,P} \sin \theta - 2 \cos \theta \right) \\
-  & + x_{1,P}^2 + y_{1,P}
-\end{aligned}$$
-
-per poi calcolare il discrimminante,
-
-$$\begin{aligned}
-  \frac{\Delta}{4}
-  & = \frac{B^2}{4} - AC = \\
-  & = a^2 \cos^2 \theta \sin^2 \theta - a^2 \cos^2 \theta \sin^2 \theta = 0
-\end{aligned}$$
--->
 </div>
-</details><div class="section" id="esempi">
-<h2><span class="section-number">12.5.3.1. </span>Esempi<a class="headerlink" href="#esempi" title="Permalink to this heading">#</a></h2>
+</details><div class="section" id="coniche-e-forme-quadratiche-simmetriche">
+<h2><span class="section-number">12.5.3.1. </span>Coniche e forme quadratiche simmetriche<a class="headerlink" href="#coniche-e-forme-quadratiche-simmetriche" title="Permalink to this heading">#</a></h2>
+<p>La generica forma quadratica in due variabili è</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}Q(\mathbf{x}) = \mathbf{x}^T \mathbf{A} \mathbf{x} = \begin{bmatrix} x &amp; y \end{bmatrix} \begin{bmatrix} A &amp; \frac{B}{2} \\ \frac{B}{2} &amp; C \end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix} \ .\end{split}\]</div>
+<p>La forma generale di un’ellisse o di un’iperbole con centro nell’origine degli assi è</p>
+<div class="math notranslate nohighlight">
+\[0 = Q(\mathbf{x}) + F \ ,\]</div>
+<p>al netto di una costante moltiplicativa arbitraria.<a class="footnote-reference brackets" href="#mult-const" id="id1">1</a></p>
 <div class="proof example admonition" id="example-0">
-<p class="admonition-title"><span class="caption-number">Example 12.1 </span> (Traslazione di ellisse e iperbole)</p>
+<p class="admonition-title"><span class="caption-number">Example 12.1 </span> (Ellisse e iperbole con centro nell’origine e semi-assi coincidenti agli assi <span class="math notranslate nohighlight">\(x, \ y\)</span>)</p>
 <div class="example-content section" id="proof-content">
+<p>In questo caso <span class="math notranslate nohighlight">\(B = 0\)</span>, e quindi</p>
 <div class="math notranslate nohighlight">
-\[\dfrac{x_1^2}{a^2} + \gamma \dfrac{y_1^2}{b^2} = 1\]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-  0
-  &amp; = b^2 x_1^2 + \gamma a^2 y_1^2 - a^2 b^2 = \\
-  &amp; = b^2 ( x - x_P )^2 + \gamma a^2 ( y - y_P )^2 - a^2 b^2 = \\
-  &amp; = b^2 x^2 + \gamma a^2 y^2 - 2 b^2 x_P x - 2 \gamma a^2 y_P y + b^2 x_P^2 + \gamma a^2 y_P^2 - a^2 b^2
-\end{aligned}\end{split}\]</div>
-<p>Thus, the equation (with <span class="math notranslate nohighlight">\(\Delta \ne 0\)</span>), otherwise it’s a parabola)</p>
-<div class="math notranslate nohighlight">
-\[0 = A x^2 + C y^2 + D x + E y + F \]</div>
-<p>completing the squares</p>
-<div class="math notranslate nohighlight">
-\[0 = A \left( x + \dfrac{D}{2A} \right)^2 + C \left( y - \dfrac{E}{2C} \right)^2 + F - \dfrac{D^2}{4 A} - \dfrac{E^2}{4 C}\]</div>
-<div class="math notranslate nohighlight">
-\[0 = \dfrac{(x-\dots)^2}{\frac{F-\dots}{A}} + \dfrac{(y-\dots)^2}{\frac{F-\dots}{C}} - 1\]</div>
-<p>… depending on the signs of <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(C\)</span>, <span class="math notranslate nohighlight">\(F-\dots\)</span>, the latter expression is the equation of an ellipse or a hyperbola.</p>
+\[\begin{split}0 = F + \mathbf{x}^T \begin{bmatrix} A &amp; 0 \\ 0 &amp; C \end{bmatrix} \mathbf{x} = F + A x^2 + C y^2 \ .\end{split}\]</div>
+<p>Questa espressione rappresenta un’ellisse se <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(C\)</span> hanno lo stesso segno e <span class="math notranslate nohighlight">\(F\)</span> ha segno opposto. Nel caso in cui <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(C\)</span> hanno segno opposto,l’espressione rappresenta l’equazione di un’iperbole. Infine se <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(C\)</span>, <span class="math notranslate nohighlight">\(F\)</span> hanno lo stesso segno, non esistono punti <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span> nel piano reale che possano soddisfare l’equazione.</p>
+<p><strong>Ellisse.</strong> La lunghezza dei semiassi è <span class="math notranslate nohighlight">\(a = \sqrt{ - \frac{F}{A}}\)</span>, <span class="math notranslate nohighlight">\(b = \sqrt{-\frac{F}{C}}\)</span>.</p>
+<p><strong>Iperbole con <span class="math notranslate nohighlight">\(A \cdot F &lt; 0\)</span>, <span class="math notranslate nohighlight">\(C \cdot F &gt; 0\)</span>.</strong> La lunghezza dei semiassi è  <span class="math notranslate nohighlight">\(a = \sqrt{-\frac{F}{A}}\)</span>, <span class="math notranslate nohighlight">\(b = \sqrt{\frac{F}{C}}\)</span>.</p>
+<p>…</p>
+<p>La lunghezza degli assi può essere scritta in termini degli autovalori della forma quadratica — gli autovalori della matrice <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> — come <span class="math notranslate nohighlight">\(a_i = \sqrt{\left| \frac{F}{\lambda_i(\mathbf{A})} \right|}\)</span>.</p>
 </div>
 </div><div class="proof example admonition" id="example-1">
-<p class="admonition-title"><span class="caption-number">Example 12.2 </span> (Rotazione assi di ellisse e iperbole)</p>
+<p class="admonition-title"><span class="caption-number">Example 12.2 </span> (Rotazione degli assi)</p>
 <div class="example-content section" id="proof-content">
+<p>Con la trasformazione di coordinate,</p>
 <div class="math notranslate nohighlight">
-\[\dfrac{x_1^2}{a^2} + \gamma \dfrac{y_1^2}{b^2} = 1\]</div>
+\[\begin{split}\mathbf{x}_1 = \mathbf{R}_{\theta} \mathbf{x} = \begin{bmatrix} c_{\theta} &amp; s_{\theta} \\ - s_{\theta} &amp; c_{\theta} \end{bmatrix} \mathbf{x} \ ,\end{split}\]</div>
+<p>e la sua inversa</p>
+<div class="math notranslate nohighlight">
+\[\mathbf{x} = \mathbf{R}^T_{\theta} \mathbf{x}_1 = \mathbf{R}_{-\theta} \mathbf{x}_1 \ ,\]</div>
+<p>l’equazione generica di un’iperbole o un’ellisse con centro nell’origine rispetto alle coordinate <span class="math notranslate nohighlight">\(x, y\)</span>, può essere trasformata nell’equazione di una conica con centro nell’origine e assi paralleli agli assi delle coordinate <span class="math notranslate nohighlight">\(x_1, y_1\)</span>.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
   0
-  &amp; = b^2 \left( x \cos \theta + y \sin \theta \right)^2 + \gamma a^2 \left( - x \sin \theta + y \cos \theta  \right)^2 - a^2 b^2 = \\
-  &amp; = x^2 \left( b^2 \cos^2 \theta + \gamma a^2 \sin^2 \theta \right) 
-    + y^2 \left( b^2 \sin^2 \theta + \gamma a^2 \cos^2 \theta \right) 
-    + x y \left( 2 b^2 - 2 \gamma a^2 \right) \cos \theta \sin \theta
-    - a^2 b^2
+  &amp; = F + \mathbf{x}^T \mathbf{A} \mathbf{x} = \\
+  &amp; = F + \mathbf{x}_1^T \mathbf{R} \mathbf{A} \mathbf{R}^T \mathbf{x}_1 = \\
+  &amp; = F + \mathbf{x}_1^T \mathbf{A}_1 \mathbf{x}_1 \ ,
 \end{aligned}\end{split}\]</div>
+<p>con</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\mathbf{A}_1 
+  &amp; = \mathbf{R} \mathbf{A} \mathbf{R}^T \mathbf{x}_1 = \\
+  &amp; = \begin{bmatrix} c_{\theta} &amp; s_{\theta} \\ -s_{\theta} &amp; c_{\theta} \end{bmatrix} \begin{bmatrix} A &amp; B/2 \\ B/2 &amp; C \end{bmatrix}  \begin{bmatrix} c_{\theta} &amp; -s_{\theta} \\ s_{\theta} &amp; c_{\theta} \end{bmatrix} = \\
+  &amp; = \begin{bmatrix} A c_{\theta} + \frac{B}{2} s_{\theta} &amp; \frac{B}{2} c_{\theta} + C s_{\theta} \\ - A s_{\theta} + \frac{B}{2} c_{\theta} &amp; - \frac{B}{2} s_{\theta} + C c_{\theta} \end{bmatrix} \begin{bmatrix} c_{\theta} &amp; -s_{\theta} \\ s_{\theta} &amp; c_{\theta} \end{bmatrix} = \\
+  &amp; = \begin{bmatrix}
+         A c_{\theta}^2 + B c_{\theta} s_{\theta} + C s_{\theta}^2 &amp;
+        (C-A) c_{\theta} s_{\theta} + \frac{B}{2} ( c^2_{\theta} - s^2_{\theta} ) \\
+        (C-A) c_{\theta} s_{\theta} + \frac{B}{2} ( c^2_{\theta} - s^2_{\theta} ) &amp;
+         A s_{\theta}^2 - B c_{\theta} s_{\theta} + C c_{\theta}^2 
+      \end{bmatrix} = \\
+  &amp; = \begin{bmatrix}
+         A c_{\theta}^2 + B c_{\theta} s_{\theta} + C s_{\theta}^2 &amp;
+        \frac{C-A}{2} s_{2\theta} + \frac{B}{2} c_{2\theta}  \\
+        \frac{C-A}{2} s_{2\theta} + \frac{B}{2} c_{2\theta}  &amp;
+         A s_{\theta}^2 - B c_{\theta} s_{\theta} + C c_{\theta}^2 
+      \end{bmatrix} = \\
+  &amp; = \begin{bmatrix}
+         \frac{A}{2} \left( 1 + c_{2 \theta} \right) + \frac{B}{2} s_{2 \theta} + \frac{C}{2} \left( 1 - c_{2 \theta} \right) &amp;
+        \frac{C-A}{2} s_{2\theta} + \frac{B}{2} c_{2\theta}  \\
+        \frac{C-A}{2} s_{2\theta} + \frac{B}{2} c_{2\theta}  &amp;
+         \frac{A}{2} \left( 1 - c_{2 \theta} \right) - \frac{B}{2} s_{2 \theta} + \frac{C}{2} \left( 1 + c_{2 \theta} \right) 
+      \end{bmatrix}  \ .
+\end{aligned}\end{split}\]</div>
+<p>avendo usato le relazioni</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  c_{2\theta} 
+  &amp; = c^2_\theta - s^2_\theta = \\
+  &amp; = 2 c^2_\theta - 1 = \\
+  &amp; = 1 - 2 s^2_\theta  \ ,
+\end{aligned}\end{split}\]</div>
+<p>e quindi</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  c^2_\theta &amp; = \frac{1}{2} \left( 1 + c_{\theta} \right) \\
+  s^2_\theta &amp; = \frac{1}{2} \left( 1 - c_{\theta} \right) \ .
+\end{aligned}\end{split}\]</div>
+<p>La matrice diventa diagonale se <span class="math notranslate nohighlight">\(\frac{C-A}{2} s_{2\theta} + \frac{B}{2} c_{2\theta} = 0\)</span>.</p>
+<ul>
+<li><p>Se <span class="math notranslate nohighlight">\(C = A\)</span> e <span class="math notranslate nohighlight">\(B \ne 0\)</span>, allora <span class="math notranslate nohighlight">\(\cos 2\theta = 0\)</span>, e quindi <span class="math notranslate nohighlight">\(2\theta = \frac{\pi}{2} + n \pi\)</span>, e <span class="math notranslate nohighlight">\(\theta_n = \frac{\pi}{4} + n \frac{\pi}{2}\)</span>, per <span class="math notranslate nohighlight">\(n = 0:3\)</span>. In questo caso, la matrice <span class="math notranslate nohighlight">\(\mathbf{A}_1\)</span> diventa</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\mathbf{A}_1 = \begin{bmatrix} A \mp \frac{B}{2} &amp; 0 \\ 0 &amp; A \pm \frac{B}{2} \end{bmatrix} \ .\end{split}\]</div>
+</li>
+<li><p>Se <span class="math notranslate nohighlight">\(C = A\)</span> e <span class="math notranslate nohighlight">\(B = 0\)</span>, allora l’elemento fuori dalla diagonale è identicamente nullo, ed è soddisfatta per ogni valore di <span class="math notranslate nohighlight">\(\theta\)</span>. Con questi valori, infatti, l’espressione delle coniche rappresenta una circonferenza.</p></li>
+<li><p>Se <span class="math notranslate nohighlight">\(C \ne A\)</span>, allora <span class="math notranslate nohighlight">\(\tan 2 \theta = \frac{B}{A - C}\)</span>, e quindi <span class="math notranslate nohighlight">\(2 \theta_n = \text{atan}\left( \frac{B}{A - C} \right) + n \pi\)</span>, e <span class="math notranslate nohighlight">\(\theta_n = \frac{1}{2} \text{atan}\left( \frac{B}{A - C} \right) + n \frac{\pi}{2}\)</span>. Usando le relazioni tra funzioni trigonometriche<a class="footnote-reference brackets" href="#tan-sin-cos" id="id2">2</a>,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+     \cos 2 \theta &amp; = \mp \frac{A-C}{\sqrt{(A-C)^2 + B^2}} \\
+     \sin 2 \theta &amp; = \mp \frac{B  }{\sqrt{(A-C)^2 + B^2}} \\
+  \end{cases}\end{split}\]</div>
+<p>gli elementi diagonali della matrice diventano</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+    \frac{A + C}{2} \mp^{(1)} \left[ \frac{A - C}{2} c_{2 \theta} + \frac{B}{2} s_{2 \theta} \right]
+    &amp; = \frac{A + C}{2} \mp^{(1)} \frac{1}{2} \left[ \mp^{(2)} \left( \frac{(A - C)^2 + B^2}{\sqrt{(A-C)^2 + B^2}} \right) \right] = \\
+    &amp; = \frac{A + C}{2} \mp \frac{\sqrt{(A-C)^2 + B^2}}{2}  \ .
+  \end{aligned}\end{split}\]</div>
+</li>
+</ul>
+<!--
+   Usando le relazioni tra $\tan 2 \theta$ e le funzioni armoniche di $\theta$, gli elementi diagonali della matrice $\widetilde{\mathbf{A}}_1$ diventano
+   
+   $$\begin{aligned}
+     & A c_{\theta}^2 + B c_{\theta} s_{\theta} + C s_{\theta}^2 = \\
+     & = A \left( \dfrac{1}{2} \mp^{(1)} \dfrac{1}{2} \sqrt{\dfrac{1}{t^2 + 1}} \right) 
+       + B \left( \mp^{(2)} \dfrac{1}{2} \dfrac{t}{ \sqrt{t^2 + 1}} \right)
+       + C \left( \dfrac{1}{2} \pm^{(1)} \dfrac{1}{2} \sqrt{\dfrac{1}{t^2 + 1}} \right) = \\
+     & = \dfrac{A + C}{2} + \dfrac{1}{2} \dfrac{1}{\sqrt{t^2 + 1}} \left( \mp^{(1)} \left( A - C \right) \mp^{(2)} t \, B  \right) = \\
+     & = \dfrac{A + C}{2} + \dfrac{1}{2} \dfrac{|A-C|}{\sqrt{B^2 + ( A - C )^2 }} \left( \mp^{(1)} \left( A - C \right) \mp^{(2)} t \, B  \right) = \\
+     & = \dfrac{A + C}{2} + \dfrac{1}{2} \dfrac{|A-C|}{\sqrt{B^2 + ( A - C )^2 }} \left( \mp^{(1)} \left( A - C \right) \mp^{(2)} \dfrac{B^2}{A - C} \right) = \\
+   \end{aligned}$$
+
+   ...
+
+   $$\begin{aligned}
+     & = \frac{1}{2} ( A + C ) + \frac{1}{2} \text{sgn}(A - C) \dfrac{\mp^{(1)} ( A - C )^2 \mp^{(2)} B^2}{\sqrt{B^2 + (A-C)^2}}
+   \end{aligned}$$
+
+----
+
+con
+
+$$t := \tan 2 \theta = \dfrac{B}{A - C} \ ,$$
+
+$$t^2 = \dfrac{B^2}{( A - C)^2} \ ,$$
+
+$$\dfrac{1}{t^2 + 1} = \dfrac{1}{\frac{B^2}{ (A - C)^2 } + 1}$$
+-->
 </div>
-</div></div>
+</div><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="math notranslate nohighlight">\(\tan 2 \theta\)</span><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+ \tan 2 \theta
+ &amp; = \dfrac{\sin 2 \theta}{\cos 2 \theta} = \\
+ &amp; = \dfrac{2 \sin \theta \cos \theta}{\cos^2 \theta - \sin^2 \theta} = \\
+ &amp; = \dfrac{2 \sin \theta \cos \theta}{2 \cos^2 \theta - 1} \ ,
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">o elevando al quadrato, dopo aver definito <span class="math notranslate nohighlight">\(t := \tan 2 \theta\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  0
+  &amp; = t^2 \left( 2 \cos^2 \theta - 1 \right)^2 - 4 \sin^2 \theta \cos^2 \theta = \\
+  &amp; = t^2 \left( 4 \cos^4 \theta - 4 \cos^2 \theta + 1 \right) - 4 \cos^2 \theta + 4 \cos^4 \theta = \\
+  &amp; = 4 \left( t^2 + 1 \right) \cos^4 \theta - 4 \left( t^2 + 1 \right) \cos^2 \theta + t^2 \ .
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">Dividendo per <span class="math notranslate nohighlight">\(4 ( t^2 + 1 ) \ne 0\)</span>, allora</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  0
+  &amp; = \cos^4 \theta - \cos^2 \theta + \dfrac{t^2}{4 (t^2 + 1)} = \\
+  &amp; = \cos^4 \theta - \cos^2 \theta + \dfrac{1}{4} - \dfrac{1}{4} + \dfrac{t^2}{4 ( t^2 + 1 )} = \\
+  &amp; = \cos^4 \theta - \cos^2 \theta + \dfrac{1}{4} - \dfrac{ t^2 + 1 - t^2}{4 ( t^2 + 1 ) )} = \\
+  &amp; = \left( \cos^2 \theta - \dfrac{1}{2} \right)^2 - \dfrac{ 1 }{4 ( t^2 + 1 )} = \\
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">e quindi</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \cos^2 \theta &amp; = \dfrac{1}{2} \mp \dfrac{1}{2} \sqrt{ \dfrac{1}{t^2+1} } \\
+  \sin^2 \theta &amp; = 1 - \cos^2 \theta = \dfrac{1}{2} \pm \dfrac{1}{2} \sqrt{ \dfrac{1}{t^2+1} } \ .
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">Il prodotto</p>
+<div class="math notranslate nohighlight">
+\[\sin^2 \theta \cos^2 \theta = \dfrac{1}{4} - \dfrac{1}{4 ( t^2 + 1 )} = \dfrac{t^2}{4( t^2 + 1 )} \ .\]</div>
+</div>
+</details></div>
 <div class="section" id="esercizi">
 <h2><span class="section-number">12.5.3.2. </span>Esercizi<a class="headerlink" href="#esercizi" title="Permalink to this heading">#</a></h2>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="mult-const"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Non cambia la relazione <span class="math notranslate nohighlight">\(0 = Q(\mathbf{x}) + F = \widetilde{Q}(\mathbf{x}) + \widetilde{F}\)</span>, con <span class="math notranslate nohighlight">\(\widetilde{F} = k F\)</span>, and <span class="math notranslate nohighlight">\(\widetilde{\mathbf{A}} = k \mathbf{A}\)</span>.</p>
+</dd>
+<dt class="label" id="tan-sin-cos"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
+<dd><p>Tangente <span class="math notranslate nohighlight">\(t_x := \frac{s_x}{c_x} = \frac{a}{b}\)</span>; identità fondamentale della trigonometria <span class="math notranslate nohighlight">\(c_x^2 + s_x^2 = 1\)</span>…</p>
+</dd>
+</dl>
 </div>
 </div>
 
@@ -830,7 +920,7 @@ $$\begin{aligned}
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">12.5.3.1. Esempi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coniche-e-forme-quadratiche-simmetriche">12.5.3.1. Coniche e forme quadratiche simmetriche</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi">12.5.3.2. Esercizi</a></li>
 </ul>
   </nav></div>
