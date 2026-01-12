@@ -51,6 +51,7 @@ parts:
       - file: ch/analytic_geometry/analytic_geometry_2d/conics-cartesian
       - file: ch/analytic_geometry/analytic_geometry_2d/conics-polar
       - file: ch/analytic_geometry/analytic_geometry_2d/conics-general
+      - file: ch/analytic_geometry/analytic_geometry_2d/conics-and-quadratic-forms
     - file: ch/analytic_geometry/analytic_geometry_2d/problems
     - file: ch/analytic_geometry/analytic_geometry_2d/sol
     - file: ch/analytic_geometry/analytic_geometry_2d/notes
