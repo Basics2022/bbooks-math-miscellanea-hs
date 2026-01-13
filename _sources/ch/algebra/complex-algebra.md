@@ -18,7 +18,32 @@ In questa sezione viene definito l'insieme dei numeri complessi e alcune operazi
 
 $$z = x + i y \ ,$$
 
-dove $x, y \in \mathbb{R}$ e $i$ è l'unità immaginaria definita come $i = \sqrt{-1}$.
+dove $x, y \in \mathbb{R}$ e $i$ è l'**unità immaginaria** definita come una soluzione (non appartenente al campo dei numeri reali, $i \notin \mathbb{R}$) dell'equazione
+
+$$x^2 + 1 = 0 \ .$$
+
+Data la soluzione $i$ dell'equazione, tale che $i^2 + 1 = 0$, anche $-i$ è soluzione dell'equazione.[^i-minus-i]
+
+
+```{dropdown} Radice quadrata principale
+:open:
+
+Nel campo dei numeri reali $\mathbb{R}$, esistono due numeri $x_{12} \in \mathbb{R}$ tali che $x^2 = a$ per ogni **numero positivo** $a \in \mathbb{R}$, $x_{12} = \mp \sqrt{a}$, la radice quadrata (principale) di $a$ viene definita come la soluzione $x_2 = \sqrt{a}$ positiva.
+
+Nel campo dei numeri complessi $\mathbb{C}$, esistono due numeri $z_{12} \in \mathbb{C}$ tali che $z^2 = a$ per ogni **numero complesso** $a \in \mathbb{C}$. Usando la rappresentazione polare $a = A e^{i \left(\alpha + n 2 \pi\right)}$, con $n \in \mathbb{Z}$, $z = Z e^{i \zeta}$, l'equazione diventa
+
+$$Z^2 e^{i 2 \zeta} = A e^{i ( \alpha + n 2 \pi )} \ ,$$
+
+e quindi modulo e argomento delle due soluzioni sono
+
+$$\begin{aligned}
+  Z_{01} & = \sqrt{A}  && \text{(radice di numeri positivi)}  \\
+  \zeta_{01} & = \frac{\alpha}{2} + n \pi \ , \quad n \in \{ 0, 1\} 
+\end{aligned}$$
+
+e le due soluzioni $Z_{k} = \sqrt{A} e^{i\left( \frac{\alpha}{2} + n\pi \right)}$, $n \in \{ 0 , 1 \}$. Alla stessa maniera, l'equazione $z^P = a$ con $P \in \mathbb{N}$, ha $P$ soluzioni complesse della forma $\sqrt[P]{A} e^{i \left( \frac{\alpha}{P} + \frac{n 2 \pi}{P} \right)}$, con $n = 0: P-1$. La radice principale viene definita come la soluzione con $n = 0$, cioè con argomento $\zeta \in \left[ 0, \frac{2 \pi}{P} \right]$.
+
+```
 
 I numeri reali sono sottoinsieme dei numeri complessi, $\mathbb{R} \subset \mathbb{C}$, composto da quei numeri complessi con parte immaginaria nulla. La definizione di operazioni e funzioni - come l'esponenziale - sui numeri complessi viene costruita come **estensione ai numeri complessi** delle definizioni di tali operazioni e funzioni sui numeri reali. Quando le funzioni e le operazioni vengono definite per i numeri complessi vengono applicate a numeri reali, si ritrovano le definizioni e i risultati già noti sull'insieme dei numeri reali.
 
@@ -39,9 +64,13 @@ I numeri complessi risultano utili in molti ambiti della matematica e della scie
 
 (math-hs:algebra:complex:def)=
 ## Definizioni
-I numeri complessi estendono il campo dei numeri reali, $\mathbb{R} \subset \mathbb{C}$. Viene inizialmente definita l'**unità immaginaria**, $i$, come la radice quadra di $-1$,
+I numeri complessi estendono il campo dei numeri reali, $\mathbb{R} \subset \mathbb{C}$. Viene inizialmente definita l'**unità immaginaria**, $i$, come soluzione (non appartenente al campo dei numeri reali) dell'equazione 
 
-$$i := \sqrt{-1} \ ,$$
+$$x^2 + 1 = 0 \ ,$$
+
+cioè come un[^i-minus-i] numero tale che $i^2 = - 1$.
+
+[^i-minus-i]: L'equazione $x^2 + 1 = 0$ ha due soluzioni, $x_{1,2} = \mp i$, poiché $i^2 = -1$ e $(-i)^2 = (-i) (-i) = i^2 = -1$, sfruttando la proprietà del prodotto "meno per meno fa più", che vale anche in campo complesso.
 
 **todo** *discutere la definizione, facendo riferimento alle* **potenze**
 

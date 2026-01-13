@@ -217,6 +217,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l3"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/conics-cartesian.html">12.5.1. Forma canonica in coordinate cartesiane</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/conics-polar.html">12.5.2. Forma canonica in coordinate polari</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/conics-general.html">12.5.3. Equazione generale delle coniche</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/conics-and-quadratic-forms.html">12.5.4. Coniche e forme quadratiche simmetriche</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../analytic_geometry/analytic_geometry_2d/problems.html">12.6. Problemi</a></li>
@@ -570,8 +571,30 @@ document.write(`
 <p>In questa sezione viene definito l’insieme dei numeri complessi e alcune operazioni su di essi che permettono di introdurre l’algebra complessa. L’insieme dei numeri complessi <span class="math notranslate nohighlight">\(\mathbb{C}\)</span> è l’insieme di quei numeri che possono essere scritti come</p>
 <div class="math notranslate nohighlight">
 \[z = x + i y \ ,\]</div>
-<p>dove <span class="math notranslate nohighlight">\(x, y \in \mathbb{R}\)</span> e <span class="math notranslate nohighlight">\(i\)</span> è l’unità immaginaria definita come <span class="math notranslate nohighlight">\(i = \sqrt{-1}\)</span>.</p>
-<p>I numeri reali sono sottoinsieme dei numeri complessi, <span class="math notranslate nohighlight">\(\mathbb{R} \subset \mathbb{C}\)</span>, composto da quei numeri complessi con parte immaginaria nulla. La definizione di operazioni e funzioni - come l’esponenziale - sui numeri complessi viene costruita come <strong>estensione ai numeri complessi</strong> delle definizioni di tali operazioni e funzioni sui numeri reali. Quando le funzioni e le operazioni vengono definite per i numeri complessi vengono applicate a numeri reali, si ritrovano le definizioni e i risultati già noti sull’insieme dei numeri reali.</p>
+<p>dove <span class="math notranslate nohighlight">\(x, y \in \mathbb{R}\)</span> e <span class="math notranslate nohighlight">\(i\)</span> è l”<strong>unità immaginaria</strong> definita come una soluzione (non appartenente al campo dei numeri reali, <span class="math notranslate nohighlight">\(i \notin \mathbb{R}\)</span>) dell’equazione</p>
+<div class="math notranslate nohighlight">
+\[x^2 + 1 = 0 \ .\]</div>
+<p>Data la soluzione <span class="math notranslate nohighlight">\(i\)</span> dell’equazione, tale che <span class="math notranslate nohighlight">\(i^2 + 1 = 0\)</span>, anche <span class="math notranslate nohighlight">\(-i\)</span> è soluzione dell’equazione.<a class="footnote-reference brackets" href="#i-minus-i" id="id1">1</a></p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
+<summary class="sd-summary-title sd-card-header">
+Radice quadrata principale<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Nel campo dei numeri reali <span class="math notranslate nohighlight">\(\mathbb{R}\)</span>, esistono due numeri <span class="math notranslate nohighlight">\(x_{12} \in \mathbb{R}\)</span> tali che <span class="math notranslate nohighlight">\(x^2 = a\)</span> per ogni <strong>numero positivo</strong> <span class="math notranslate nohighlight">\(a \in \mathbb{R}\)</span>, <span class="math notranslate nohighlight">\(x_{12} = \mp \sqrt{a}\)</span>, la radice quadrata (principale) di <span class="math notranslate nohighlight">\(a\)</span> viene definita come la soluzione <span class="math notranslate nohighlight">\(x_2 = \sqrt{a}\)</span> positiva.</p>
+<p class="sd-card-text">Nel campo dei numeri complessi <span class="math notranslate nohighlight">\(\mathbb{C}\)</span>, esistono due numeri <span class="math notranslate nohighlight">\(z_{12} \in \mathbb{C}\)</span> tali che <span class="math notranslate nohighlight">\(z^2 = a\)</span> per ogni <strong>numero complesso</strong> <span class="math notranslate nohighlight">\(a \in \mathbb{C}\)</span>. Usando la rappresentazione polare <span class="math notranslate nohighlight">\(a = A e^{i \left(\alpha + n 2 \pi\right)}\)</span>, con <span class="math notranslate nohighlight">\(n \in \mathbb{Z}\)</span>, <span class="math notranslate nohighlight">\(z = Z e^{i \zeta}\)</span>, l’equazione diventa</p>
+<div class="math notranslate nohighlight">
+\[Z^2 e^{i 2 \zeta} = A e^{i ( \alpha + n 2 \pi )} \ ,\]</div>
+<p class="sd-card-text">e quindi modulo e argomento delle due soluzioni sono</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  Z_{01} &amp; = \sqrt{A}  &amp;&amp; \text{(radice di numeri positivi)}  \\
+  \zeta_{01} &amp; = \frac{\alpha}{2} + n \pi \ , \quad n \in \{ 0, 1\} 
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">e le due soluzioni <span class="math notranslate nohighlight">\(Z_{k} = \sqrt{A} e^{i\left( \frac{\alpha}{2} + n\pi \right)}\)</span>, <span class="math notranslate nohighlight">\(n \in \{ 0 , 1 \}\)</span>. Alla stessa maniera, l’equazione <span class="math notranslate nohighlight">\(z^P = a\)</span> con <span class="math notranslate nohighlight">\(P \in \mathbb{N}\)</span>, ha <span class="math notranslate nohighlight">\(P\)</span> soluzioni complesse della forma <span class="math notranslate nohighlight">\(\sqrt[P]{A} e^{i \left( \frac{\alpha}{P} + \frac{n 2 \pi}{P} \right)}\)</span>, con <span class="math notranslate nohighlight">\(n = 0: P-1\)</span>. La radice principale viene definita come la soluzione con <span class="math notranslate nohighlight">\(n = 0\)</span>, cioè con argomento <span class="math notranslate nohighlight">\(\zeta \in \left[ 0, \frac{2 \pi}{P} \right]\)</span>.</p>
+</div>
+</details><p>I numeri reali sono sottoinsieme dei numeri complessi, <span class="math notranslate nohighlight">\(\mathbb{R} \subset \mathbb{C}\)</span>, composto da quei numeri complessi con parte immaginaria nulla. La definizione di operazioni e funzioni - come l’esponenziale - sui numeri complessi viene costruita come <strong>estensione ai numeri complessi</strong> delle definizioni di tali operazioni e funzioni sui numeri reali. Quando le funzioni e le operazioni vengono definite per i numeri complessi vengono applicate a numeri reali, si ritrovano le definizioni e i risultati già noti sull’insieme dei numeri reali.</p>
 <p>I numeri complessi risultano utili in molti ambiti della matematica e della scienza, dalla fisica all’ingegneria:</p>
 <ul class="simple">
 <li><p>teorema fondamentale dell’algebra</p></li>
@@ -589,9 +612,10 @@ document.write(`
 -->
 <div class="section" id="definizioni">
 <span id="math-hs-algebra-complex-def"></span><h2><span class="section-number">21.1. </span>Definizioni<a class="headerlink" href="#definizioni" title="Permalink to this heading">#</a></h2>
-<p>I numeri complessi estendono il campo dei numeri reali, <span class="math notranslate nohighlight">\(\mathbb{R} \subset \mathbb{C}\)</span>. Viene inizialmente definita l”<strong>unità immaginaria</strong>, <span class="math notranslate nohighlight">\(i\)</span>, come la radice quadra di <span class="math notranslate nohighlight">\(-1\)</span>,</p>
+<p>I numeri complessi estendono il campo dei numeri reali, <span class="math notranslate nohighlight">\(\mathbb{R} \subset \mathbb{C}\)</span>. Viene inizialmente definita l”<strong>unità immaginaria</strong>, <span class="math notranslate nohighlight">\(i\)</span>, come soluzione (non appartenente al campo dei numeri reali) dell’equazione</p>
 <div class="math notranslate nohighlight">
-\[i := \sqrt{-1} \ ,\]</div>
+\[x^2 + 1 = 0 \ ,\]</div>
+<p>cioè come un<a class="footnote-reference brackets" href="#i-minus-i" id="id2">1</a> numero tale che <span class="math notranslate nohighlight">\(i^2 = - 1\)</span>.</p>
 <p><strong>todo</strong> <em>discutere la definizione, facendo riferimento alle</em> <strong>potenze</strong></p>
 <div class="proof definition admonition" id="complex-cartesian">
 <p class="admonition-title"><span class="caption-number">Definition 21.1 </span> (Numeri complessi - rappresentazione cartesiana)</p>
@@ -909,7 +933,13 @@ Dimostrazione della trasformazione inversa<div class="sd-summary-down docutils">
 </li>
 </ul>
 </div>
-</div></div>
+</div><hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="i-minus-i"><span class="brackets">1</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id2">2</a>)</span></dt>
+<dd><p>L’equazione <span class="math notranslate nohighlight">\(x^2 + 1 = 0\)</span> ha due soluzioni, <span class="math notranslate nohighlight">\(x_{1,2} = \mp i\)</span>, poiché <span class="math notranslate nohighlight">\(i^2 = -1\)</span> e <span class="math notranslate nohighlight">\((-i)^2 = (-i) (-i) = i^2 = -1\)</span>, sfruttando la proprietà del prodotto «meno per meno fa più», che vale anche in campo complesso.</p>
+</dd>
+</dl>
+</div>
 <div class="toctree-wrapper compound">
 </div>
 </div>

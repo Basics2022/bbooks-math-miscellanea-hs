@@ -517,8 +517,9 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ellisse-e-iperbole">12.5.4.1. Ellisse e iperbole</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parabola">12.5.4.2. Parabola</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trasformazioni">12.5.4.3. Trasformazioni</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi">12.5.4.4. Esercizi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coniche-degeneri">12.5.4.3. Coniche degeneri</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trasformazioni">12.5.4.4. Trasformazioni</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi">12.5.4.5. Esercizi</a></li>
 </ul>
             </nav>
         </div>
@@ -682,8 +683,9 @@ al netto di una costante moltiplicativa arbitraria.[^mult-const]
   0
   &amp; = \mathbf{x}_1^T \mathbf{A}_1 \mathbf{x}_1 + \mathbf{d}_1^T \mathbf{x}_1 = \\
   &amp; = \mathbf{x}^T \mathbf{A}_1 \mathbf{x} + \left( - 2 \mathbf{x}_C^T \mathbf{A}_1 + \mathbf{d}_1^T \right) \mathbf{x} + \mathbf{x}_C^T \mathbf{A}_1 \mathbf{x}_C - \mathbf{d}_1^T \mathbf{x}_C = \\
-  &amp; = A x^2 - 2 x_C A x + E y + A x_C^2 - E y_C = \\
-  &amp; = A ( x - x_C )^2 + E ( y - y_C ) \ ,
+  &amp; = A_1 x^2 - 2 x_C A_1 x + E_1 y + A_1 x_C^2 - E_1 y_C = \\
+  &amp; = A_1 ( x - x_C )^2 + E_1 ( y - y_C ) \\
+  &amp; = A x^2 + D x + E y + F \ ,
 \end{aligned}\end{split}\]</div>
 <p>cioè…</p>
 <p><span class="math notranslate nohighlight">\((b)\)</span> Con la rotazione</p>
@@ -694,20 +696,63 @@ al netto di una costante moltiplicativa arbitraria.[^mult-const]
 \[\begin{split}\begin{aligned}
   0 
   &amp; = \mathbf{x}_1^T \mathbf{A}_1 \mathbf{x}_1 + \mathbf{d}_1^T \mathbf{x}_1 = \\
+  &amp; = \mathbf{x}^T \begin{bmatrix} c_\theta &amp; -s_\theta \\ s_\theta &amp; c_\theta \end{bmatrix} \begin{bmatrix} A_1 &amp; 0 \\ 0 &amp; 0 \end{bmatrix} \begin{bmatrix} c_\theta &amp; s_\theta \\ -s_\theta &amp; c_\theta \end{bmatrix} \mathbf{x} + \begin{bmatrix} 0 &amp; E_1 \end{bmatrix} \begin{bmatrix} c_\theta &amp; s_\theta \\ -s_\theta &amp; c_\theta \end{bmatrix} \mathbf{x} = \\
+  &amp; = \mathbf{x}^T A_1 \begin{bmatrix} c_\theta &amp; 0 \\ s_\theta &amp; 0 \end{bmatrix} \begin{bmatrix} c_\theta &amp; s_\theta \\ -s_\theta &amp; c_\theta \end{bmatrix} \mathbf{x} + E_1 \begin{bmatrix} -s_\theta &amp; c_\theta \end{bmatrix} \mathbf{x} = \\
+  &amp; = \mathbf{x}^T A_1 \begin{bmatrix} c^2_\theta &amp; c_\theta s_\theta \\ c_\theta s_\theta &amp; s_\theta^2 \end{bmatrix} \mathbf{x} + E_1 \begin{bmatrix} -s_\theta &amp; c_\theta \end{bmatrix} \mathbf{x} = \\
+  &amp; = A x^2 + B xy + C y^2 + D x + E y \ ,
 \end{aligned}\end{split}\]</div>
 <p>cioè…</p>
 </div>
 </div></div>
+<div class="section" id="coniche-degeneri">
+<h2><span class="section-number">12.5.4.3. </span>Coniche degeneri<a class="headerlink" href="#coniche-degeneri" title="Permalink to this heading">#</a></h2>
+<div class="proof example admonition" id="example-4">
+<p class="admonition-title"><span class="caption-number">Example 12.5 </span> (Coppia di rette)</p>
+<div class="example-content section" id="proof-content">
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  0
+  &amp; = ( a_1 + b_1 x + c_1 y )( a_2 + b_2 x + c_2 y ) = \\
+  &amp; = ( a_1 + \mathbf{b}_1^T \mathbf{x} )( a_2 + \mathbf{b}_2^T \mathbf{x} ) = \\
+  &amp; = \mathbf{x}^T \mathbf{b}_1 \mathbf{b}_2^T \mathbf{x} + \left( a_1 \mathbf{b}_2 + a_2 \mathbf{b}_1 \right)^T \mathbf{x} + a_1 a_2 = \\
+  &amp; = \mathbf{x}^T \begin{bmatrix} b_1 b_2 &amp; b_1 c_2 \\ c_1 b_2 &amp; c_1 c_2 \end{bmatrix} \mathbf{x} + \begin{bmatrix} a_1 b_2 + a_2 b_1 &amp; a_1 c_2 + a_2 c_1 \end{bmatrix} \mathbf{x} + a_1 a_2 \ ,
+\end{aligned}\end{split}\]</div>
+<p>Il determinante vale</p>
+<div class="math notranslate nohighlight">
+\[\Delta := (b_1 c_2) (c_1 b_2) - ( b_1 b_2 ) ( c_1 c_2 ) = 0 \ .\]</div>
+<p>Autovalori e autovettori della matrice della forma quadratica sono</p>
+<div class="math notranslate nohighlight">
+\[0 = ( b_1 b_2 - s ) ( c_1 c_2 - s ) - b_1 b_2 c_1 c_2 = s ( s - b_1 b_2 - c_1 c_2 ) \ ,\]</div>
+<p>così che gli autovalori sono</p>
+<div class="math notranslate nohighlight">
+\[s_1 = 0 \quad , \quad s_2 = b_1 b_2 + c_1 c_2 = \mathbf{b}_1^T \mathbf{b}_2 \ ,\]</div>
+<p>e le componenti degli autovettori soddisfano</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  0 &amp; =  b_1 b_2 \widetilde{x}_1 + b_1 c_2 \widetilde{y}_1 &amp;&amp; \text{se $b_1 \ne 0$} \\
+  0 &amp; =  c_1 b_2 \widetilde{x}_1 + c_1 c_2 \widetilde{y}_1 &amp;&amp; \text{se $c_1 \ne 0$} \\
+  0 &amp; = -c_1 c_2 \widetilde{x}_2 + b_1 c_2 \widetilde{y}_2 &amp;&amp; \text{se $c_2 \ne 0$} \\
+  0 &amp; =  c_1 b_2 \widetilde{x}_2 - b_1 b_2 \widetilde{y}_2 &amp;&amp; \text{se $b_2 \ne 0$} \ ,
+\end{aligned}\end{split}\]</div>
+<p>cioè se</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\widetilde{\mathbf{x}}_1 = \begin{bmatrix} c_2 \\ - b_2 \end{bmatrix}
+\quad , \quad
+\widetilde{\mathbf{x}}_2 = \begin{bmatrix} c_1 \\   b_1 \end{bmatrix}
+\end{split}\]</div>
+</div>
+</div></div>
 <div class="section" id="trasformazioni">
-<h2><span class="section-number">12.5.4.3. </span>Trasformazioni<a class="headerlink" href="#trasformazioni" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">12.5.4.4. </span>Trasformazioni<a class="headerlink" href="#trasformazioni" title="Permalink to this heading">#</a></h2>
 <p>… todo:</p>
 <ul class="simple">
 <li><p>organizzare il paragrafo</p></li>
 <li><p>aggiungere qualche esempio/esercizio</p></li>
 <li><p>aggiungere i casi degeneri e impossibili in <span class="math notranslate nohighlight">\(\mathbb{R}\)</span></p></li>
 </ul>
-<div class="proof example admonition" id="example-4">
-<p class="admonition-title"><span class="caption-number">Example 12.5 </span> (Rotazione degli assi)</p>
+<div class="proof example admonition" id="example-5">
+<p class="admonition-title"><span class="caption-number">Example 12.6 </span> (Rotazione degli assi)</p>
 <div class="example-content section" id="proof-content">
 <p>Con la trasformazione di coordinate,</p>
 <div class="math notranslate nohighlight">
@@ -786,8 +831,8 @@ al netto di una costante moltiplicativa arbitraria.[^mult-const]
 </li>
 </ul>
 </div>
-</div><div class="proof example admonition" id="example-5">
-<p class="admonition-title"><span class="caption-number">Example 12.6 </span> (Dalla forma generale a ellisse/iperbole con semiassi paralleli agli assi coordinati tramite rotazione)</p>
+</div><div class="proof example admonition" id="example-6">
+<p class="admonition-title"><span class="caption-number">Example 12.7 </span> (Dalla forma generale a ellisse/iperbole con semiassi paralleli agli assi coordinati tramite rotazione)</p>
 <div class="example-content section" id="proof-content">
 <p>Tramite la rotazione</p>
 <div class="math notranslate nohighlight">
@@ -807,8 +852,8 @@ al netto di una costante moltiplicativa arbitraria.[^mult-const]
 <div class="math notranslate nohighlight">
 \[0 = \mathbf{x}_1^T \mathbf{A}_1 \mathbf{x}_1 + \mathbf{d}^T \mathbf{R} \mathbf{x}_1 + F \ .\]</div>
 </div>
-</div><div class="proof example admonition" id="example-6">
-<p class="admonition-title"><span class="caption-number">Example 12.7 </span> (Dalla forma generale a ellisse/iperbole con centro nell’origine degli assi tramite traslazione)</p>
+</div><div class="proof example admonition" id="example-7">
+<p class="admonition-title"><span class="caption-number">Example 12.8 </span> (Dalla forma generale a ellisse/iperbole con centro nell’origine degli assi tramite traslazione)</p>
 <div class="example-content section" id="proof-content">
 <p>Tramite la traslazione</p>
 <div class="math notranslate nohighlight">
@@ -878,7 +923,7 @@ al netto di una costante moltiplicativa arbitraria.[^mult-const]
 </div>
 </details></div>
 <div class="section" id="esercizi">
-<h2><span class="section-number">12.5.4.4. </span>Esercizi<a class="headerlink" href="#esercizi" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">12.5.4.5. </span>Esercizi<a class="headerlink" href="#esercizi" title="Permalink to this heading">#</a></h2>
 <hr class="footnotes docutils" />
 <dl class="footnote brackets">
 <dt class="label" id="tan-sin-cos"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
@@ -953,8 +998,9 @@ al netto di una costante moltiplicativa arbitraria.[^mult-const]
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ellisse-e-iperbole">12.5.4.1. Ellisse e iperbole</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parabola">12.5.4.2. Parabola</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trasformazioni">12.5.4.3. Trasformazioni</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi">12.5.4.4. Esercizi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coniche-degeneri">12.5.4.3. Coniche degeneri</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trasformazioni">12.5.4.4. Trasformazioni</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi">12.5.4.5. Esercizi</a></li>
 </ul>
   </nav></div>
 
