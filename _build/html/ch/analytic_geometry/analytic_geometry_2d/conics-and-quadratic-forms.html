@@ -519,7 +519,8 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parabola">12.5.4.2. Parabola</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coniche-degeneri">12.5.4.3. Coniche degeneri</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trasformazioni">12.5.4.4. Trasformazioni</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi">12.5.4.5. Esercizi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#discussione-generale-e-classificazione">12.5.4.5. Discussione generale e classificazione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi">12.5.4.6. Esercizi</a></li>
 </ul>
             </nav>
         </div>
@@ -922,12 +923,69 @@ al netto di una costante moltiplicativa arbitraria.[^mult-const]
 \[\sin^2 \theta \cos^2 \theta = \dfrac{1}{4} - \dfrac{1}{4 ( t^2 + 1 )} = \dfrac{t^2}{4( t^2 + 1 )} \ .\]</div>
 </div>
 </details></div>
+<div class="section" id="discussione-generale-e-classificazione">
+<h2><span class="section-number">12.5.4.5. </span>Discussione generale e classificazione<a class="headerlink" href="#discussione-generale-e-classificazione" title="Permalink to this heading">#</a></h2>
+<p><span class="math notranslate nohighlight">\((1)\)</span> <strong>Equazione generale di secondo grado</strong></p>
+<div class="math notranslate nohighlight">
+\[0 = A x^2 + B x y + C y^2 + D x + E y + F = \mathbf{x}^T \mathbf{A} \mathbf{x} + \mathbf{d}^T \mathbf{x} + F \ ,\]</div>
+<p>con</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\mathbf{A} = \begin{bmatrix} A &amp; B/2 \\ B/2 &amp; C \end{bmatrix} \quad , \quad \mathbf{d} = \begin{bmatrix} D \\  E \end{bmatrix} \ .\end{split}\]</div>
+<p><span class="math notranslate nohighlight">\((2)\)</span> <strong>Trasformazione di coordinate - rotazione - e diagonalizzazione.</strong> Una trasformazione di coordinate - una rotazione - che permette di eliminare il termine misto <span class="math notranslate nohighlight">\(x_1 y_1\)</span>. In particolare, la matrice di rotazione<a class="footnote-reference brackets" href="#rot-mat-prop" id="id2">2</a> <span class="math notranslate nohighlight">\(\mathbf{R}\)</span> della trasformazione</p>
+<div class="math notranslate nohighlight">
+\[\mathbf{x} = \mathbf{R} \mathbf{x}_1 \ ,\]</div>
+<p>è la matrice che contiene gli autovettori della matrice di <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> (simmetrica) e può essere calcolata risolvendo il problema agli autovalori <span class="math notranslate nohighlight">\(\mathbf{A} \mathbf{R} = \mathbf{R} \mathbf{A}_d\)</span>. Vale quindi la relazione <span class="math notranslate nohighlight">\(\mathbf{R}^T \mathbf{A} \mathbf{R}^T = \mathbf{A}_d\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
+<summary class="sd-summary-title sd-card-header">
+Decomposizione spettrale di <span class="math notranslate nohighlight">\( \mathbf{A}\)</span>, simmetrica<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="math notranslate nohighlight">
+\[\begin{split}0 = \left| \mathbf{A} - s \mathbf{I} \right| = \left| \begin{bmatrix} A-s &amp; B/2 \\ B/2 &amp; C-s \end{bmatrix} \right| = (s-A)(s-C) - \frac{B^2}{4} = s^2 - (A+C)s + AC- \frac{B^2}{4} \ .\end{split}\]</div>
+<p class="sd-card-text">cosicché gli autovalori valgono</p>
+<div class="math notranslate nohighlight">
+\[s_{1,2} = \frac{A+C}{2} \mp \frac{\sqrt{(A-C)^2 + B^2}}{2} \ ,\]</div>
+<p class="sd-card-text"><strong>Autovalori coincidenti</strong> se <span class="math notranslate nohighlight">\(A = C\)</span> e <span class="math notranslate nohighlight">\(B = 0\)</span>. In questo caso, la matrice <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> è già in forma diagonale. I due autovalori valgono <span class="math notranslate nohighlight">\(s_{1,2} = A\)</span>; la molteplicità geometrica dell’autovalore è uguale alla sua molteplicità algebrica: la matrice è diagonalizzabile (è già diagonale! Che scoperta) e si possono scegliere come autovettori <span class="math notranslate nohighlight">\(\widetilde{\mathbf{x}}_1 = \begin{bmatrix} 1 \\ 0 \end{bmatrix}\)</span>, <span class="math notranslate nohighlight">\(\widetilde{\mathbf{x}}_2 = \begin{bmatrix} 0 \\ 1 \end{bmatrix}\)</span>, a formare la matrice identità come matrice di trasformazione - rotazione nulla.</p>
+<p class="sd-card-text"><strong>Autovalori distinti.</strong> Gli autovettori sono</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\widetilde{\mathbf{x}}_{1,2} \propto \begin{bmatrix} \frac{B}{2} \\ \frac{C-A}{2} \mp \frac{\sqrt{(A-C)^2+B^2}}{2} \end{bmatrix} \ . \end{split}\]</div>
+<ul>
+<li><p class="sd-card-text"><strong>Ortogonalità.</strong></p>
+<div class="math notranslate nohighlight">
+\[\widetilde{\mathbf{x}}_1^T \widetilde{\mathbf{x}}_2 = \frac{B^2}{4} + \frac{(C_A)^2}{4} - \frac{(A-C)^2}{4} - \frac{B^2}{4} = 0 \ .\]</div>
+</li>
+<li><p class="sd-card-text"><strong>Normalizzazione.</strong> La norma dei due autovettori è</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+     |\widetilde{\mathbf{x}}_{1,2}|^2 
+     &amp; = \frac{B^2}{4} + \frac{(C-A)^2}{4} + \frac{(A-C)^2 + B^2}{4} \mp \frac{(C-A)\sqrt{(A-C)^2 + B^2}}{2} = \\
+     &amp; = \frac{1}{2} \left[ (C-A)^2 + B^2 \mp (C-A)\sqrt{(A-C)^2 + B^2} \right] \ ,
+   \end{aligned}\end{split}\]</div>
+<p class="sd-card-text">e può essere uguale a zero solo se <span class="math notranslate nohighlight">\(B = 0\)</span> e <span class="math notranslate nohighlight">\(C-A \mp |C-A| = 0\)</span>: la seconda relazione è verificata per entrambi gli autovalori solo nel caso in cui <span class="math notranslate nohighlight">\(C = A\)</span> (che produce autovalori coincidenti). In ogni caso, se <span class="math notranslate nohighlight">\(B = 0\)</span>, la matrice è già in forma diagonale e i due autovettori possono essere scelti come  <span class="math notranslate nohighlight">\(\widetilde{\mathbf{x}}_1 = \begin{bmatrix} 1 \\ 0 \end{bmatrix}\)</span>, <span class="math notranslate nohighlight">\(\widetilde{\mathbf{x}}_2 = \begin{bmatrix} 0 \\ 1 \end{bmatrix}\)</span></p>
+</li>
+</ul>
+<p class="sd-card-text"><strong>Autovalori distinti e non nulli</strong>, se <span class="math notranslate nohighlight">\(\frac{B^2}{4}-AC \ne 0\)</span>. In questo caso, la trasfomrazione di coordinate consente di ottenere l’espressione</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}0 = \mathbf{x}_1^T \begin{bmatrix} s_1 &amp; 0 \\ 0 &amp; s_2 \end{bmatrix} \mathbf{x}_1 + \mathbf{d}^T \mathbf{R} \mathbf{x}_1 + F\end{split}\]</div>
+<p class="sd-card-text"><strong>Caso in cui un autovalore è nullo</strong>, se <span class="math notranslate nohighlight">\(\frac{B^2}{4} - AC = 0\)</span>, cioè <span class="math notranslate nohighlight">\(B = \mp^{(1)} 2 \sqrt{AC}\)</span>. In questo caso i due autovalori sono</p>
+<div class="math notranslate nohighlight">
+\[s_1 = A+C \quad , \quad s_2 = 0 \ ,\]</div>
+<p class="sd-card-text">e gli autovettori</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\widetilde{\mathbf{x}}_{1,2} \propto \begin{bmatrix} \mp^{(1)} \sqrt{AC} \\ \frac{C-A}{2} \mp^{(2)} \frac{|A+C|}{2} \end{bmatrix}\end{split}\]</div>
+</div>
+</details></div>
 <div class="section" id="esercizi">
-<h2><span class="section-number">12.5.4.5. </span>Esercizi<a class="headerlink" href="#esercizi" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">12.5.4.6. </span>Esercizi<a class="headerlink" href="#esercizi" title="Permalink to this heading">#</a></h2>
 <hr class="footnotes docutils" />
 <dl class="footnote brackets">
 <dt class="label" id="tan-sin-cos"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
 <dd><p>Tangente <span class="math notranslate nohighlight">\(t_x := \frac{s_x}{c_x} = \frac{a}{b}\)</span>; identità fondamentale della trigonometria <span class="math notranslate nohighlight">\(c_x^2 + s_x^2 = 1\)</span>…</p>
+</dd>
+<dt class="label" id="rot-mat-prop"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
+<dd><p>E quindi <span class="math notranslate nohighlight">\(\mathbf{R}^{-1} = \mathbf{R}^T\)</span>.</p>
 </dd>
 </dl>
 </div>
@@ -1000,7 +1058,8 @@ al netto di una costante moltiplicativa arbitraria.[^mult-const]
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parabola">12.5.4.2. Parabola</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coniche-degeneri">12.5.4.3. Coniche degeneri</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trasformazioni">12.5.4.4. Trasformazioni</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi">12.5.4.5. Esercizi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#discussione-generale-e-classificazione">12.5.4.5. Discussione generale e classificazione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi">12.5.4.6. Esercizi</a></li>
 </ul>
   </nav></div>
 

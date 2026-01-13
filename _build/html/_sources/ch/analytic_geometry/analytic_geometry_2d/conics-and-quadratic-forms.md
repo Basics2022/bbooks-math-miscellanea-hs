@@ -440,6 +440,69 @@ $$\sin^2 \theta \cos^2 \theta = \dfrac{1}{4} - \dfrac{1}{4 ( t^2 + 1 )} = \dfrac
 
 ```
 
+## Discussione generale e classificazione
+
+$(1)$ **Equazione generale di secondo grado**
+
+$$0 = A x^2 + B x y + C y^2 + D x + E y + F = \mathbf{x}^T \mathbf{A} \mathbf{x} + \mathbf{d}^T \mathbf{x} + F \ ,$$
+
+con
+
+$$\mathbf{A} = \begin{bmatrix} A & B/2 \\ B/2 & C \end{bmatrix} \quad , \quad \mathbf{d} = \begin{bmatrix} D \\  E \end{bmatrix} \ .$$
+
+$(2)$ **Trasformazione di coordinate - rotazione - e diagonalizzazione.** Una trasformazione di coordinate - una rotazione - che permette di eliminare il termine misto $x_1 y_1$. In particolare, la matrice di rotazione[^rot-mat-prop] $\mathbf{R}$ della trasformazione
+
+[^rot-mat-prop]: E quindi $\mathbf{R}^{-1} = \mathbf{R}^T$.
+
+$$\mathbf{x} = \mathbf{R} \mathbf{x}_1 \ ,$$
+
+è la matrice che contiene gli autovettori della matrice di $\mathbf{A}$ (simmetrica) e può essere calcolata risolvendo il problema agli autovalori $\mathbf{A} \mathbf{R} = \mathbf{R} \mathbf{A}_d$. Vale quindi la relazione $\mathbf{R}^T \mathbf{A} \mathbf{R}^T = \mathbf{A}_d$.
+
+```{dropdown} Decomposizione spettrale di $ \mathbf{A}$, simmetrica
+:open:
+
+$$0 = \left| \mathbf{A} - s \mathbf{I} \right| = \left| \begin{bmatrix} A-s & B/2 \\ B/2 & C-s \end{bmatrix} \right| = (s-A)(s-C) - \frac{B^2}{4} = s^2 - (A+C)s + AC- \frac{B^2}{4} \ .$$
+
+cosicché gli autovalori valgono
+
+$$s_{1,2} = \frac{A+C}{2} \mp \frac{\sqrt{(A-C)^2 + B^2}}{2} \ ,$$
+
+**Autovalori coincidenti** se $A = C$ e $B = 0$. In questo caso, la matrice $\mathbf{A}$ è già in forma diagonale. I due autovalori valgono $s_{1,2} = A$; la molteplicità geometrica dell'autovalore è uguale alla sua molteplicità algebrica: la matrice è diagonalizzabile (è già diagonale! Che scoperta) e si possono scegliere come autovettori $\widetilde{\mathbf{x}}_1 = \begin{bmatrix} 1 \\ 0 \end{bmatrix}$, $\widetilde{\mathbf{x}}_2 = \begin{bmatrix} 0 \\ 1 \end{bmatrix}$, a formare la matrice identità come matrice di trasformazione - rotazione nulla.
+
+**Autovalori distinti.** Gli autovettori sono
+
+$$\widetilde{\mathbf{x}}_{1,2} \propto \begin{bmatrix} \frac{B}{2} \\ \frac{C-A}{2} \mp \frac{\sqrt{(A-C)^2+B^2}}{2} \end{bmatrix} \ . $$
+
+- **Ortogonalità.**
+
+   $$\widetilde{\mathbf{x}}_1^T \widetilde{\mathbf{x}}_2 = \frac{B^2}{4} + \frac{(C_A)^2}{4} - \frac{(A-C)^2}{4} - \frac{B^2}{4} = 0 \ .$$
+
+- **Normalizzazione.** La norma dei due autovettori è
+
+   $$\begin{aligned}
+     |\widetilde{\mathbf{x}}_{1,2}|^2 
+     & = \frac{B^2}{4} + \frac{(C-A)^2}{4} + \frac{(A-C)^2 + B^2}{4} \mp \frac{(C-A)\sqrt{(A-C)^2 + B^2}}{2} = \\
+     & = \frac{1}{2} \left[ (C-A)^2 + B^2 \mp (C-A)\sqrt{(A-C)^2 + B^2} \right] \ ,
+   \end{aligned}$$
+
+   e può essere uguale a zero solo se $B = 0$ e $C-A \mp |C-A| = 0$: la seconda relazione è verificata per entrambi gli autovalori solo nel caso in cui $C = A$ (che produce autovalori coincidenti). In ogni caso, se $B = 0$, la matrice è già in forma diagonale e i due autovettori possono essere scelti come  $\widetilde{\mathbf{x}}_1 = \begin{bmatrix} 1 \\ 0 \end{bmatrix}$, $\widetilde{\mathbf{x}}_2 = \begin{bmatrix} 0 \\ 1 \end{bmatrix}$
+
+**Autovalori distinti e non nulli**, se $\frac{B^2}{4}-AC \ne 0$. In questo caso, la trasfomrazione di coordinate consente di ottenere l'espressione
+
+$$0 = \mathbf{x}_1^T \begin{bmatrix} s_1 & 0 \\ 0 & s_2 \end{bmatrix} \mathbf{x}_1 + \mathbf{d}^T \mathbf{R} \mathbf{x}_1 + F$$
+
+**Caso in cui un autovalore è nullo**, se $\frac{B^2}{4} - AC = 0$, cioè $B = \mp^{(1)} 2 \sqrt{AC}$. In questo caso i due autovalori sono
+
+$$s_1 = A+C \quad , \quad s_2 = 0 \ ,$$
+
+e gli autovettori
+
+$$\widetilde{\mathbf{x}}_{1,2} \propto \begin{bmatrix} \mp^{(1)} \sqrt{AC} \\ \frac{C-A}{2} \mp^{(2)} \frac{|A+C|}{2} \end{bmatrix}$$
+
+
+```
+
+
 ## Esercizi
 
 
