@@ -169,8 +169,9 @@ $$\begin{aligned}
   0
   & = \mathbf{x}_1^T \mathbf{A}_1 \mathbf{x}_1 + \mathbf{d}_1^T \mathbf{x}_1 = \\
   & = \mathbf{x}^T \mathbf{A}_1 \mathbf{x} + \left( - 2 \mathbf{x}_C^T \mathbf{A}_1 + \mathbf{d}_1^T \right) \mathbf{x} + \mathbf{x}_C^T \mathbf{A}_1 \mathbf{x}_C - \mathbf{d}_1^T \mathbf{x}_C = \\
-  & = A x^2 - 2 x_C A x + E y + A x_C^2 - E y_C = \\
-  & = A ( x - x_C )^2 + E ( y - y_C ) \ ,
+  & = A_1 x^2 - 2 x_C A_1 x + E_1 y + A_1 x_C^2 - E_1 y_C = \\
+  & = A_1 ( x - x_C )^2 + E_1 ( y - y_C ) \\
+  & = A x^2 + D x + E y + F \ ,
 \end{aligned}$$
 
 cioè...
@@ -184,11 +185,60 @@ l'equazione della curva diventa
 $$\begin{aligned}
   0 
   & = \mathbf{x}_1^T \mathbf{A}_1 \mathbf{x}_1 + \mathbf{d}_1^T \mathbf{x}_1 = \\
+  & = \mathbf{x}^T \begin{bmatrix} c_\theta & -s_\theta \\ s_\theta & c_\theta \end{bmatrix} \begin{bmatrix} A_1 & 0 \\ 0 & 0 \end{bmatrix} \begin{bmatrix} c_\theta & s_\theta \\ -s_\theta & c_\theta \end{bmatrix} \mathbf{x} + \begin{bmatrix} 0 & E_1 \end{bmatrix} \begin{bmatrix} c_\theta & s_\theta \\ -s_\theta & c_\theta \end{bmatrix} \mathbf{x} = \\
+  & = \mathbf{x}^T A_1 \begin{bmatrix} c_\theta & 0 \\ s_\theta & 0 \end{bmatrix} \begin{bmatrix} c_\theta & s_\theta \\ -s_\theta & c_\theta \end{bmatrix} \mathbf{x} + E_1 \begin{bmatrix} -s_\theta & c_\theta \end{bmatrix} \mathbf{x} = \\
+  & = \mathbf{x}^T A_1 \begin{bmatrix} c^2_\theta & c_\theta s_\theta \\ c_\theta s_\theta & s_\theta^2 \end{bmatrix} \mathbf{x} + E_1 \begin{bmatrix} -s_\theta & c_\theta \end{bmatrix} \mathbf{x} = \\
+  & = A x^2 + B xy + C y^2 + D x + E y \ ,
 \end{aligned}$$
 
 cioè...
 
 ```
+
+## Coniche degeneri
+
+```{prf:example} Coppia di rette
+
+$$\begin{aligned}
+  0
+  & = ( a_1 + b_1 x + c_1 y )( a_2 + b_2 x + c_2 y ) = \\
+  & = ( a_1 + \mathbf{b}_1^T \mathbf{x} )( a_2 + \mathbf{b}_2^T \mathbf{x} ) = \\
+  & = \mathbf{x}^T \mathbf{b}_1 \mathbf{b}_2^T \mathbf{x} + \left( a_1 \mathbf{b}_2 + a_2 \mathbf{b}_1 \right)^T \mathbf{x} + a_1 a_2 = \\
+  & = \mathbf{x}^T \begin{bmatrix} b_1 b_2 & b_1 c_2 \\ c_1 b_2 & c_1 c_2 \end{bmatrix} \mathbf{x} + \begin{bmatrix} a_1 b_2 + a_2 b_1 & a_1 c_2 + a_2 c_1 \end{bmatrix} \mathbf{x} + a_1 a_2 \ ,
+\end{aligned}$$
+
+Il determinante vale
+
+$$\Delta := (b_1 c_2) (c_1 b_2) - ( b_1 b_2 ) ( c_1 c_2 ) = 0 \ .$$
+
+Autovalori e autovettori della matrice della forma quadratica sono
+
+$$0 = ( b_1 b_2 - s ) ( c_1 c_2 - s ) - b_1 b_2 c_1 c_2 = s ( s - b_1 b_2 - c_1 c_2 ) \ ,$$
+
+così che gli autovalori sono
+
+$$s_1 = 0 \quad , \quad s_2 = b_1 b_2 + c_1 c_2 = \mathbf{b}_1^T \mathbf{b}_2 \ ,$$
+
+e le componenti degli autovettori soddisfano
+
+$$\begin{aligned}
+  0 & =  b_1 b_2 \widetilde{x}_1 + b_1 c_2 \widetilde{y}_1 && \text{se $b_1 \ne 0$} \\
+  0 & =  c_1 b_2 \widetilde{x}_1 + c_1 c_2 \widetilde{y}_1 && \text{se $c_1 \ne 0$} \\
+  0 & = -c_1 c_2 \widetilde{x}_2 + b_1 c_2 \widetilde{y}_2 && \text{se $c_2 \ne 0$} \\
+  0 & =  c_1 b_2 \widetilde{x}_2 - b_1 b_2 \widetilde{y}_2 && \text{se $b_2 \ne 0$} \ ,
+\end{aligned}$$
+
+cioè se 
+
+$$
+\widetilde{\mathbf{x}}_1 = \begin{bmatrix} c_2 \\ - b_2 \end{bmatrix}
+\quad , \quad
+\widetilde{\mathbf{x}}_2 = \begin{bmatrix} c_1 \\   b_1 \end{bmatrix}
+$$
+
+
+```
+
 
 ## Trasformazioni
 
