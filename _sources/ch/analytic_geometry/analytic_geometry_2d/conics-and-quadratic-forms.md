@@ -440,8 +440,134 @@ $$\sin^2 \theta \cos^2 \theta = \dfrac{1}{4} - \dfrac{1}{4 ( t^2 + 1 )} = \dfrac
 
 ```
 
+
 ## Discussione generale e classificazione
 
+$(1)$ **Equazione generale di secondo grado**
+
+$$\begin{aligned}
+0 
+  & = A x^2 + B x y + C y^2 + D x + E y + F = \\
+  & = \mathbf{x}^T \mathbf{A} \mathbf{x} + \mathbf{d}^T \mathbf{x} + F = \\
+  & = \begin{bmatrix} \mathbf{x}^T & 1 \end{bmatrix} \begin{bmatrix} \mathbf{A} & \frac{1}{2} \mathbf{d} \\ \frac{1}{2} \mathbf{d}^T & F \end{bmatrix} \begin{bmatrix} \mathbf{x} \\ 1 \end{bmatrix} = \\
+  & = \mathbf{z}^T \mathbf{M} \mathbf{z} \ ,
+\end{aligned}$$
+
+con
+
+$$\mathbf{A} = \begin{bmatrix} A & B/2 \\ B/2 & C \end{bmatrix} \quad , \quad \mathbf{d} = \begin{bmatrix} D \\  E \end{bmatrix} \ .$$
+
+$(2)$ **Rotazione delle coordinate.** In generale, esiste una rotazione delle coordinate $\mathbf{x} = \mathbf{R} \mathbf{x}_1$, the permette di eliminare il termine misto di secondo grado, $x_1 y_1$, dall'equazione diagonalizzando la matrice $\mathbf{A}$, $\mathbf{A}_d := \text{diag}\{ s_1, s_2 \} = \mathbf{R}^T \mathbf{A} \mathbf{R}$, dove $\mathbf{R}$ è una matrice di rotazione.
+
+- La matrice $\mathbf{A}$ è simmetrica, ed è sempre diagonalizzabile (**todo** *aggiungere un box con la dimostrazione/discussione*) con una base di autovettori ortogonali, anche nel caso di autovalori coincidenti.
+
+- In termini del vettore esteso $\mathbf{z} = \begin{bmatrix} \mathbf{x} \\ 1 \end{bmatrix}$, si può scrivere la trasformazione delle coordinate come
+
+   $$\mathbf{z} = \begin{bmatrix} \mathbf{x} \\ 1 \end{bmatrix} = \begin{bmatrix} \mathbf{R} & \mathbf{0} \\ \mathbf{0}^T & 1 \end{bmatrix} \begin{bmatrix} \mathbf{x}_1 \\ 1 \end{bmatrix} = \widetilde{\mathbf{R}} \mathbf{z}_1 \ .$$
+
+   In seguito a questa trasformazione di coordinate, l'equazione diventa
+
+   $$\begin{aligned}
+     0
+     & = \mathbf{z}^T \mathbf{M} \mathbf{z} = \\
+     & = \mathbf{z}^T_1 \widetilde{\mathbf{R}}^T \mathbf{M} \widetilde{\mathbf{R}} \mathbf{z}_1 = \\
+     & = \mathbf{z}^T_1 \begin{bmatrix} \mathbf{A}_d & \frac{1}{2}\mathbf{R}^T \mathbf{d} \\ \frac{1}{2} \mathbf{d}^T \mathbf{R} & F \end{bmatrix}  \mathbf{z}_1 \ .
+   \end{aligned}$$
+
+$(3)$ **Discussione casi a seconda di $\ \mathbf{A}_d$.** La matrice $\mathbf{A}_d = \begin{bmatrix} s_1 & 0 \\ 0 & s_2 \end{bmatrix}$, può avere
+1. entrambi gli autovalori uguali a zero: in questi casi la matrice $\mathbf{A}_d = \mathbf{0}$ e la matrice di partenza $\mathbf{A} = \mathbf{0}$ identicamente: in questo caso l'espressione iniziale è al massimo di primo grado $D x + E y + F = 0$
+2. un autovalore nullo. In questo caso, la matrice $\mathbf{A}_d = \begin{bmatrix} s_1 & 0 \\ 0 & 0 \end{bmatrix}$, è singolare e non invertibile
+3. entrambi gli autovalori diversi da zero. In questo caso, la matrice $\mathbf{A}_d = \begin{bmatrix} s_1 & 0 \\ 0 & 0 \end{bmatrix}$, è non singolare, invertibile e la sua inversa è $\mathbf{A}_d^{-1} = \begin{bmatrix} \frac{1}{s_1} & 0 \\ 0 & \frac{1}{s_2} \end{bmatrix}$
+
+$(3.1)$ ...*banale*...
+
+$(3.2)$ **Parabola e casi degeneri.**  **todo** *Calcolare in maniera esplicita il valore di autovalori e autovettori in questo caso. Questa espressione può essere utilizzata in seguito nella discussione dei risultati.*
+
+**todo** *Se necessario, utilizzare l'espressione della matrice $\overline{\mathbf{R}}^T \mathbf{M} \overline{\mathbf{R}}$*,
+
+$$ \begin{bmatrix} s_1 & 0 & \frac{1}{2} \mathbf{r}_1^T \mathbf{d} \\ 0 & 0 & \frac{1}{2} \mathbf{r}_2^T \mathbf{d} \\ \frac{1}{2} \mathbf{d}^T \mathbf{r}_1 & \frac{1}{2} \mathbf{d}^T \mathbf{r}_2 & F \end{bmatrix} \ ,$$
+
+e del suo determinante, $| \dots | = - \frac{1}{4} \left( \mathbf{d}^T \mathbf{r}_2 \right)^2 s_1$.
+
+Nel caso $(3.2)$ l'espressione diventa
+
+$$\begin{aligned}
+  0 
+  & = s_1 x_1^2 + \mathbf{d}^T \mathbf{R} \mathbf{x}_1 + F = \\
+  & = s_1 x_1^2 + \mathbf{d}^T \begin{bmatrix} \mathbf{r}_1 & \mathbf{r}_2 \end{bmatrix} \mathbf{x}_1 + F = \\
+  & = s_1 x_1^2 + \mathbf{d}^T \mathbf{r}_1 x_1 + \mathbf{d}^T \mathbf{r}_2 y_1 + F \ .
+\end{aligned}$$
+
+1. Se $\mathbf{d}^T \mathbf{r}_2 \ne 0$, si ottiene l'espressione di una parabola
+2. Altrimenti, si ottengono $(a)$ due rette parallele distinte, $(b)$ due rette parallele coincidenti, $(c)$ nessuna soluzione a seconda delle soluzioni dell'equazione 
+
+   $$s_1^2 x_1 + \mathbf{d}^T \mathbf{r}_1 x_1 + F = 0 \ .$$
+
+$(3.3)$ **Ellissi/iperboli e casi degeneri.** In questo caso si può completare il quadrato &mdash; che coincide ad applicare una traslazione come trasformazione delle coordinate &mdash; per eliminare i termini del primo grado. La traslazione $\mathbf{x}_1 = \mathbf{x}_2 + \mathbf{x}_{1,C}$, o equivalentemente sul vettore
+
+$$\mathbf{z}_1 = \begin{bmatrix} \mathbf{x}_1 \\ 1 \end{bmatrix} = \begin{bmatrix} \mathbf{I} & \mathbf{x}_{1,C} \\ \mathbf{0}^T & 1 \end{bmatrix} \begin{bmatrix} \mathbf{x}_2 \\ 1 \end{bmatrix} = \begin{bmatrix} \mathbf{I} & \mathbf{x}_{1,C} \\ \mathbf{0}^T & 1 \end{bmatrix} \mathbf{z}_2  \ .$$
+
+L'equazione diventa
+
+$$
+0 = \mathbf{z}_2^T \begin{bmatrix} \mathbf{A}_d & \mathbf{A}_d \mathbf{x}_{1,C} + \frac{1}{2} \mathbf{R}^T \mathbf{d} \\ \mathbf{x}_{1,C}^T \mathbf{A}_d + \frac{1}{2} \mathbf{d}^T \mathbf{R} & \mathbf{x}_{1,C}^T \mathbf{A}_d \mathbf{x}_{1,C} + \mathbf{x}^T_{1,C} \mathbf{R}^T \mathbf{d} + F \end{bmatrix} \mathbf{z}_2
+$$
+
+La traslazione che rende nulli i termini di primo grado, è la traslazione che rende nulli i coefficienti fuori dalla diagonale a blocchi,
+
+$$\mathbf{A}_d \mathbf{x}_{1,C} + \frac{1}{2} \mathbf{R}^T \mathbf{d} = \mathbf{0} \ ,$$
+
+cioè, poiché la matrice $\mathbf{A}_d$ è invertibile,
+
+$$\mathbf{x}_{1,C} = - \frac{1}{2} \mathbf{A}_d^{-1} \mathbf{R}^T \mathbf{d} \ ,$$
+
+e quindi
+
+$$\begin{aligned}
+  0 
+  & = \mathbf{z}_2^T \begin{bmatrix} \mathbf{A}_d & \mathbf{0} \\ \mathbf{0}^T & F - \frac{1}{4} \mathbf{d}^T \mathbf{R} \mathbf{A}_d^{-1} \mathbf{R}^T \mathbf{d} \end{bmatrix} \mathbf{z}_2 = \\
+  & = \mathbf{z}_2^T \begin{bmatrix} \mathbf{A}_d & \mathbf{0} \\ \mathbf{0}^T & F - \frac{1}{4} \mathbf{d}^T \mathbf{A}^{-1} \mathbf{d} \end{bmatrix} \mathbf{z}_2 = \\
+  & = \mathbf{z}_2^T \begin{bmatrix} \mathbf{A}_d & \mathbf{0} \\ \mathbf{0}^T & f \end{bmatrix} \mathbf{z}_2 = \\
+  & = s_1 x_2^2 + s_2 y_2^2 + f \ .
+\end{aligned}$$
+
+Nel caso in cui:
+- $s_1 > 0$, $s_2 > 0$:
+  - se $f < 0$: ellisse regolare, $\frac{x_2^2}{\left( \sqrt{\frac{-f}{s_1}} \right)^2} + \frac{y_2^2}{\left( \sqrt{\frac{-f}{s_2}} \right)^2} = 1$
+  - se $f = 0$: punto $x_2 = y_2 = 0$
+  - se $f > 0$: nessuna soluzione
+
+- $s_1 \cdot s_2 < 0$, con $s_1 > 0$:
+  - se $f \ne 0$ iperbole regolare, $\frac{x_2^2}{\left( \sqrt{\frac{|f|}{s_1}} \right)^2} - \frac{y_2^2}{\left( \sqrt{\frac{|f|}{-s_2}} \right)^2} = - \text{sgn}(f)$
+  - se $f = 0$, iperbole degenere in due rette coincidenti, 
+
+    $$0 = |s_1| x_2^2 - |s_2| y_2^2 = ( \sqrt{|s_1|} x_2 - \sqrt{|s_2|} y_2 ) ( \sqrt{|s_1|} x_2 + \sqrt{|s_2|} y_2) \ .$$
+
+Quando $f = 0$, allora $| \mathbf{M} | = 0$ (questo segue dall'osservazione che la trasformazione di rototraslazione applicata ha determinante = 1.**todo** *Aggiungere box con dimostrazione*).
+
+```{dropdown} Some algebra
+:open:
+
+$$\begin{aligned}
+ \widetilde{\mathbf{R}}^T \mathbf{M} \widetilde{\mathbf{R}}
+ & = \begin{bmatrix}  \mathbf{R}^T & \mathbf{0} \\ \mathbf{0}^T & 1  \end{bmatrix} \begin{bmatrix} \mathbf{A} & \frac{1}{2} \mathbf{d} \\ \frac{1}{2} \mathbf{d}^T & F \end{bmatrix} \begin{bmatrix} \mathbf{R} & \mathbf{0} \\ \mathbf{0}^T & 1 \end{bmatrix} = \\
+ & = \begin{bmatrix} \mathbf{R}^T \mathbf{A} & \frac{1}{2}\mathbf{R}^T \mathbf{d} \\ \frac{1}{2} \mathbf{d}^T & F \end{bmatrix} \begin{bmatrix} \mathbf{R} & \mathbf{0} \\ \mathbf{0}^T & 1 \end{bmatrix} = \\ 
+ & = \begin{bmatrix} \mathbf{R}^T \mathbf{A} \mathbf{R} & \frac{1}{2}\mathbf{R}^T \mathbf{d} \\ \frac{1}{2} \mathbf{d}^T \mathbf{R} & F \end{bmatrix} = \\ 
+ & = \begin{bmatrix} \mathbf{A}_d & \frac{1}{2}\mathbf{R}^T \mathbf{d} \\ \frac{1}{2} \mathbf{d}^T \mathbf{R} & F \end{bmatrix} \ .
+\end{aligned}$$
+
+$$\begin{aligned}
+ & \begin{bmatrix} \mathbf{I} & \mathbf{0} \\ \mathbf{x}_{1,C}^T & 1 \end{bmatrix} \begin{bmatrix} \mathbf{A}_d & \frac{1}{2} \mathbf{R}^T \mathbf{d} \\ \frac{1}{2} \mathbf{d}^T \mathbf{R} & F \end{bmatrix} \begin{bmatrix} \mathbf{I} & \mathbf{x}_{1,C} \\ \mathbf{0}^T & 1 \end{bmatrix} = \\
+ & = \begin{bmatrix} \mathbf{A}_d & \frac{1}{2} \mathbf{R}^T \mathbf{d} \\ \mathbf{x}_{1,C}^T \mathbf{A}_d + \frac{1}{2} \mathbf{d}^T \mathbf{R} & \frac{1}{2} \mathbf{x}_{1,C}^T \mathbf{R}^T \mathbf{d} + F \end{bmatrix} \begin{bmatrix} \mathbf{I} & \mathbf{x}_{1,C} \\ \mathbf{0}^T & 1 \end{bmatrix} = \\ 
+ & = \begin{bmatrix} \mathbf{A}_d & \mathbf{A}_d \mathbf{x}_{1,C} + \frac{1}{2} \mathbf{R}^T \mathbf{d} \\ \mathbf{x}_{1,C}^T \mathbf{A}_d + \frac{1}{2} \mathbf{d}^T \mathbf{R} & \mathbf{x}_{1,C}^T \mathbf{A}_d \mathbf{x}_{1,C} + \frac{1}{2} \mathbf{d}^T \mathbf{R} \mathbf{x}_{1,C} + \frac{1}{2} \mathbf{x}^T_{1,C} \mathbf{R}^T \mathbf{d} + F \end{bmatrix} \\
+ & = \begin{bmatrix} \mathbf{A}_d & \mathbf{A}_d \mathbf{x}_{1,C} + \frac{1}{2} \mathbf{R}^T \mathbf{d} \\ \mathbf{x}_{1,C}^T \mathbf{A}_d + \frac{1}{2} \mathbf{d}^T \mathbf{R} & \mathbf{x}_{1,C}^T \mathbf{A}_d \mathbf{x}_{1,C} + \mathbf{x}^T_{1,C} \mathbf{R}^T \mathbf{d} + F \end{bmatrix} \ .
+\end{aligned}$$
+
+
+```
+
+
+<!--
 $(1)$ **Equazione generale di secondo grado**
 
 $$0 = A x^2 + B x y + C y^2 + D x + E y + F = \mathbf{x}^T \mathbf{A} \mathbf{x} + \mathbf{d}^T \mathbf{x} + F \ ,$$
@@ -487,20 +613,62 @@ $$\widetilde{\mathbf{x}}_{1,2} \propto \begin{bmatrix} \frac{B}{2} \\ \frac{C-A}
 
    e può essere uguale a zero solo se $B = 0$ e $C-A \mp |C-A| = 0$: la seconda relazione è verificata per entrambi gli autovalori solo nel caso in cui $C = A$ (che produce autovalori coincidenti). In ogni caso, se $B = 0$, la matrice è già in forma diagonale e i due autovettori possono essere scelti come  $\widetilde{\mathbf{x}}_1 = \begin{bmatrix} 1 \\ 0 \end{bmatrix}$, $\widetilde{\mathbf{x}}_2 = \begin{bmatrix} 0 \\ 1 \end{bmatrix}$
 
-**Autovalori distinti e non nulli**, se $\frac{B^2}{4}-AC \ne 0$. In questo caso, la trasfomrazione di coordinate consente di ottenere l'espressione
+**Autovalori distinti e non nulli**, se $\frac{B^2}{4}-AC \ne 0$. In questo caso, la trasformazione di coordinate consente di ottenere l'espressione
 
 $$0 = \mathbf{x}_1^T \begin{bmatrix} s_1 & 0 \\ 0 & s_2 \end{bmatrix} \mathbf{x}_1 + \mathbf{d}^T \mathbf{R} \mathbf{x}_1 + F$$
 
-**Caso in cui un autovalore è nullo**, se $\frac{B^2}{4} - AC = 0$, cioè $B = \mp^{(1)} 2 \sqrt{AC}$. In questo caso i due autovalori sono
+**Caso in cui un autovalore è nullo**, se $\frac{B^2}{4} - AC = 0$, cioè $B = \text{sgn}(B) \sqrt{AC}$. **Osservazione.** Affinché questo avvenga, $A$, $C$ devono essere concordi. Senza perdità di generalità, si può scrivere l'equazione $A x^2 + ... + F = 0$, con la convenzione di segno tale che $A \ge 0$, $C \ge 0$. In questo caso i due autovalori sono
 
 $$s_1 = A+C \quad , \quad s_2 = 0 \ ,$$
 
 e gli autovettori
 
-$$\widetilde{\mathbf{x}}_{1,2} \propto \begin{bmatrix} \mp^{(1)} \sqrt{AC} \\ \frac{C-A}{2} \mp^{(2)} \frac{|A+C|}{2} \end{bmatrix}$$
+$$\widetilde{\mathbf{x}}_{1,2} \propto \begin{bmatrix} \mp^{(B)} \sqrt{AC} \\ \frac{C-A}{2} \mp^{(1,2)} \frac{|A+C|}{2} \end{bmatrix}$$
 
+Con la convenzione di segno adottata, gli autovettori diventano
+
+$$\begin{aligned}
+  \widetilde{\mathbf{x}}_{1} \propto \begin{bmatrix} \text{sgn}(B) \sqrt{AC} \\ -A \end{bmatrix} \quad , \quad
+  \widetilde{\mathbf{x}}_{2} \propto \begin{bmatrix} \text{sgn}(B) \sqrt{AC} \\  C \end{bmatrix} \ , 
+\end{aligned}$$
+
+e la matrice di trasformazione - in seguito alla normalizzazione degli autovettori, $|\widetilde{\mathbf{x}}_1|^2 = A C + A^2 = A(A+C)$, $|\widetilde{\mathbf{x}}_2|^2 = A C + C^2 = C(A+C)$ -
+
+$$\mathbf{R} = \frac{1}{\sqrt{A+C}} \begin{bmatrix} \text{sgn}(B) \sqrt{C} & \text{sgn}(B) \sqrt{A} \\ -\sqrt{A} & \sqrt{C} \end{bmatrix}$$
+
+L'equazione della conica nelle nuove coordinate diventa - usando il calcolo diretto come verifica -
+
+$$\begin{aligned}
+  0
+  & = 
+  \mathbf{x}_1^T \frac{1}{A+C} 
+  \begin{bmatrix} \text{sgn}(B) \sqrt{C} & -\sqrt{A} \\ \text{sgn}(B) \sqrt{A} & \sqrt{C} \end{bmatrix}
+  \begin{bmatrix} A & B/2 \\ B/2 & C \end{bmatrix}
+  \begin{bmatrix} \text{sgn}(B) \sqrt{C} & \text{sgn}(B) \sqrt{A} \\ -\sqrt{A} & \sqrt{C} \end{bmatrix} \mathbf{x}_1 +
+  \frac{1}{\sqrt{A+C}} \begin{bmatrix} D & E \end{bmatrix}
+  \begin{bmatrix} \text{sgn}(B) \sqrt{C} & \text{sgn}(B) \sqrt{A} \\ -\sqrt{A} & \sqrt{C} \end{bmatrix} \mathbf{x}_1 + F = \\
+  & =
+  \mathbf{x}_1^T \frac{1}{A+C} 
+  \begin{bmatrix} \text{sgn}(B) A \sqrt{C} - \frac{B}{2}\sqrt{A} & 
+                  \text{sgn}(B) \frac{B}{2} \sqrt{C} - C\sqrt{A} \\
+                  \text{sgn}(B) A \sqrt{A} - \frac{B}{2}\sqrt{C} & 
+                  \text{sgn}(B) \frac{B}{2} \sqrt{A} - C\sqrt{C}
+  \end{bmatrix}
+  \begin{bmatrix} \text{sgn}(B) \sqrt{C} & \text{sgn}(B) \sqrt{A} \\ -\sqrt{A} & \sqrt{C} \end{bmatrix} \mathbf{x}_1 +
+  \frac{1}{\sqrt{A+C}} \begin{bmatrix} \text{sgn}(B) D \sqrt{C} - E \sqrt{A} & \text{sgn}(B) D \sqrt{A} + E \sqrt{C} \end{bmatrix} \mathbf{x}_1 + F\\
+  & =
+  \mathbf{x}_1^T \frac{1}{A+C} 
+  \begin{bmatrix} - B \text{sgn}(B) \sqrt{A C} + 2 A C & 
+                  A \sqrt{AC} - \text{sgn}(B) \left( \frac{BA}{2} + \frac{BC}{2} \right) - C \sqrt{AC} \\
+                  \text{sgn}(B) A \sqrt{A} - \frac{B}{2}\sqrt{C} & 
+                  \text{sgn}(B) \frac{B}{2} \sqrt{A} - C\sqrt{C}
+  \end{bmatrix}
+  \mathbf{x}_1 +
+  \frac{1}{\sqrt{A+C}} \begin{bmatrix} \text{sgn}(B) D \sqrt{C} - E \sqrt{A} & \text{sgn}(B) D \sqrt{A} + E \sqrt{C} \end{bmatrix} \mathbf{x}_1 + F
+\end{aligned}$$
 
 ```
+-->
 
 
 ## Esercizi
