@@ -927,65 +927,234 @@ al netto di una costante moltiplicativa arbitraria.[^mult-const]
 <h2><span class="section-number">12.5.4.5. </span>Discussione generale e classificazione<a class="headerlink" href="#discussione-generale-e-classificazione" title="Permalink to this heading">#</a></h2>
 <p><span class="math notranslate nohighlight">\((1)\)</span> <strong>Equazione generale di secondo grado</strong></p>
 <div class="math notranslate nohighlight">
-\[0 = A x^2 + B x y + C y^2 + D x + E y + F = \mathbf{x}^T \mathbf{A} \mathbf{x} + \mathbf{d}^T \mathbf{x} + F \ ,\]</div>
+\[\begin{split}\begin{aligned}
+0 
+  &amp; = A x^2 + B x y + C y^2 + D x + E y + F = \\
+  &amp; = \mathbf{x}^T \mathbf{A} \mathbf{x} + \mathbf{d}^T \mathbf{x} + F = \\
+  &amp; = \begin{bmatrix} \mathbf{x}^T &amp; 1 \end{bmatrix} \begin{bmatrix} \mathbf{A} &amp; \frac{1}{2} \mathbf{d} \\ \frac{1}{2} \mathbf{d}^T &amp; F \end{bmatrix} \begin{bmatrix} \mathbf{x} \\ 1 \end{bmatrix} = \\
+  &amp; = \mathbf{z}^T \mathbf{M} \mathbf{z} \ ,
+\end{aligned}\end{split}\]</div>
 <p>con</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\mathbf{A} = \begin{bmatrix} A &amp; B/2 \\ B/2 &amp; C \end{bmatrix} \quad , \quad \mathbf{d} = \begin{bmatrix} D \\  E \end{bmatrix} \ .\end{split}\]</div>
-<p><span class="math notranslate nohighlight">\((2)\)</span> <strong>Trasformazione di coordinate - rotazione - e diagonalizzazione.</strong> Una trasformazione di coordinate - una rotazione - che permette di eliminare il termine misto <span class="math notranslate nohighlight">\(x_1 y_1\)</span>. In particolare, la matrice di rotazione<a class="footnote-reference brackets" href="#rot-mat-prop" id="id2">2</a> <span class="math notranslate nohighlight">\(\mathbf{R}\)</span> della trasformazione</p>
+<p><span class="math notranslate nohighlight">\((2)\)</span> <strong>Rotazione delle coordinate.</strong> In generale, esiste una rotazione delle coordinate <span class="math notranslate nohighlight">\(\mathbf{x} = \mathbf{R} \mathbf{x}_1\)</span>, the permette di eliminare il termine misto di secondo grado, <span class="math notranslate nohighlight">\(x_1 y_1\)</span>, dall’equazione diagonalizzando la matrice <span class="math notranslate nohighlight">\(\mathbf{A}\)</span>, <span class="math notranslate nohighlight">\(\mathbf{A}_d := \text{diag}\{ s_1, s_2 \} = \mathbf{R}^T \mathbf{A} \mathbf{R}\)</span>, dove <span class="math notranslate nohighlight">\(\mathbf{R}\)</span> è una matrice di rotazione.</p>
+<ul>
+<li><p>La matrice <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> è simmetrica, ed è sempre diagonalizzabile (<strong>todo</strong> <em>aggiungere un box con la dimostrazione/discussione</em>) con una base di autovettori ortogonali, anche nel caso di autovalori coincidenti.</p></li>
+<li><p>In termini del vettore esteso <span class="math notranslate nohighlight">\(\mathbf{z} = \begin{bmatrix} \mathbf{x} \\ 1 \end{bmatrix}\)</span>, si può scrivere la trasformazione delle coordinate come</p>
 <div class="math notranslate nohighlight">
-\[\mathbf{x} = \mathbf{R} \mathbf{x}_1 \ ,\]</div>
-<p>è la matrice che contiene gli autovettori della matrice di <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> (simmetrica) e può essere calcolata risolvendo il problema agli autovalori <span class="math notranslate nohighlight">\(\mathbf{A} \mathbf{R} = \mathbf{R} \mathbf{A}_d\)</span>. Vale quindi la relazione <span class="math notranslate nohighlight">\(\mathbf{R}^T \mathbf{A} \mathbf{R}^T = \mathbf{A}_d\)</span>.</p>
+\[\begin{split}\mathbf{z} = \begin{bmatrix} \mathbf{x} \\ 1 \end{bmatrix} = \begin{bmatrix} \mathbf{R} &amp; \mathbf{0} \\ \mathbf{0}^T &amp; 1 \end{bmatrix} \begin{bmatrix} \mathbf{x}_1 \\ 1 \end{bmatrix} = \widetilde{\mathbf{R}} \mathbf{z}_1 \ .\end{split}\]</div>
+<p>In seguito a questa trasformazione di coordinate, l’equazione diventa</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+     0
+     &amp; = \mathbf{z}^T \mathbf{M} \mathbf{z} = \\
+     &amp; = \mathbf{z}^T_1 \widetilde{\mathbf{R}}^T \mathbf{M} \widetilde{\mathbf{R}} \mathbf{z}_1 = \\
+     &amp; = \mathbf{z}^T_1 \begin{bmatrix} \mathbf{A}_d &amp; \frac{1}{2}\mathbf{R}^T \mathbf{d} \\ \frac{1}{2} \mathbf{d}^T \mathbf{R} &amp; F \end{bmatrix}  \mathbf{z}_1 \ .
+   \end{aligned}\end{split}\]</div>
+</li>
+</ul>
+<p><span class="math notranslate nohighlight">\((3)\)</span> <strong>Discussione casi a seconda di <span class="math notranslate nohighlight">\(\ \mathbf{A}_d\)</span>.</strong> La matrice <span class="math notranslate nohighlight">\(\mathbf{A}_d = \begin{bmatrix} s_1 &amp; 0 \\ 0 &amp; s_2 \end{bmatrix}\)</span>, può avere</p>
+<ol class="arabic simple">
+<li><p>entrambi gli autovalori uguali a zero: in questi casi la matrice <span class="math notranslate nohighlight">\(\mathbf{A}_d = \mathbf{0}\)</span> e la matrice di partenza <span class="math notranslate nohighlight">\(\mathbf{A} = \mathbf{0}\)</span> identicamente: in questo caso l’espressione iniziale è al massimo di primo grado <span class="math notranslate nohighlight">\(D x + E y + F = 0\)</span></p></li>
+<li><p>un autovalore nullo. In questo caso, la matrice <span class="math notranslate nohighlight">\(\mathbf{A}_d = \begin{bmatrix} s_1 &amp; 0 \\ 0 &amp; 0 \end{bmatrix}\)</span>, è singolare e non invertibile</p></li>
+<li><p>entrambi gli autovalori diversi da zero. In questo caso, la matrice <span class="math notranslate nohighlight">\(\mathbf{A}_d = \begin{bmatrix} s_1 &amp; 0 \\ 0 &amp; 0 \end{bmatrix}\)</span>, è non singolare, invertibile e la sua inversa è <span class="math notranslate nohighlight">\(\mathbf{A}_d^{-1} = \begin{bmatrix} \frac{1}{s_1} &amp; 0 \\ 0 &amp; \frac{1}{s_2} \end{bmatrix}\)</span></p></li>
+</ol>
+<p><span class="math notranslate nohighlight">\((3.1)\)</span> …<em>banale</em>…</p>
+<p><span class="math notranslate nohighlight">\((3.2)\)</span> <strong>Parabola e casi degeneri.</strong>  <strong>todo</strong> <em>Calcolare in maniera esplicita il valore di autovalori e autovettori in questo caso. Questa espressione può essere utilizzata in seguito nella discussione dei risultati.</em></p>
+<p><strong>todo</strong> <em>Se necessario, utilizzare l’espressione della matrice <span class="math notranslate nohighlight">\(\overline{\mathbf{R}}^T \mathbf{M} \overline{\mathbf{R}}\)</span></em>,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} \begin{bmatrix} s_1 &amp; 0 &amp; \frac{1}{2} \mathbf{r}_1^T \mathbf{d} \\ 0 &amp; 0 &amp; \frac{1}{2} \mathbf{r}_2^T \mathbf{d} \\ \frac{1}{2} \mathbf{d}^T \mathbf{r}_1 &amp; \frac{1}{2} \mathbf{d}^T \mathbf{r}_2 &amp; F \end{bmatrix} \ ,\end{split}\]</div>
+<p>e del suo determinante, <span class="math notranslate nohighlight">\(| \dots | = - \frac{1}{4} \left( \mathbf{d}^T \mathbf{r}_2 \right)^2 s_1\)</span>.</p>
+<p>Nel caso <span class="math notranslate nohighlight">\((3.2)\)</span> l’espressione diventa</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  0 
+  &amp; = s_1 x_1^2 + \mathbf{d}^T \mathbf{R} \mathbf{x}_1 + F = \\
+  &amp; = s_1 x_1^2 + \mathbf{d}^T \begin{bmatrix} \mathbf{r}_1 &amp; \mathbf{r}_2 \end{bmatrix} \mathbf{x}_1 + F = \\
+  &amp; = s_1 x_1^2 + \mathbf{d}^T \mathbf{r}_1 x_1 + \mathbf{d}^T \mathbf{r}_2 y_1 + F \ .
+\end{aligned}\end{split}\]</div>
+<ol class="arabic">
+<li><p>Se <span class="math notranslate nohighlight">\(\mathbf{d}^T \mathbf{r}_2 \ne 0\)</span>, si ottiene l’espressione di una parabola</p></li>
+<li><p>Altrimenti, si ottengono <span class="math notranslate nohighlight">\((a)\)</span> due rette parallele distinte, <span class="math notranslate nohighlight">\((b)\)</span> due rette parallele coincidenti, <span class="math notranslate nohighlight">\((c)\)</span> nessuna soluzione a seconda delle soluzioni dell’equazione</p>
+<div class="math notranslate nohighlight">
+\[s_1^2 x_1 + \mathbf{d}^T \mathbf{r}_1 x_1 + F = 0 \ .\]</div>
+</li>
+</ol>
+<p><span class="math notranslate nohighlight">\((3.3)\)</span> <strong>Ellissi/iperboli e casi degeneri.</strong> In questo caso si può completare il quadrato — che coincide ad applicare una traslazione come trasformazione delle coordinate — per eliminare i termini del primo grado. La traslazione <span class="math notranslate nohighlight">\(\mathbf{x}_1 = \mathbf{x}_2 + \mathbf{x}_{1,C}\)</span>, o equivalentemente sul vettore</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\mathbf{z}_1 = \begin{bmatrix} \mathbf{x}_1 \\ 1 \end{bmatrix} = \begin{bmatrix} \mathbf{I} &amp; \mathbf{x}_{1,C} \\ \mathbf{0}^T &amp; 1 \end{bmatrix} \begin{bmatrix} \mathbf{x}_2 \\ 1 \end{bmatrix} = \begin{bmatrix} \mathbf{I} &amp; \mathbf{x}_{1,C} \\ \mathbf{0}^T &amp; 1 \end{bmatrix} \mathbf{z}_2  \ .\end{split}\]</div>
+<p>L’equazione diventa</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+0 = \mathbf{z}_2^T \begin{bmatrix} \mathbf{A}_d &amp; \mathbf{A}_d \mathbf{x}_{1,C} + \frac{1}{2} \mathbf{R}^T \mathbf{d} \\ \mathbf{x}_{1,C}^T \mathbf{A}_d + \frac{1}{2} \mathbf{d}^T \mathbf{R} &amp; \mathbf{x}_{1,C}^T \mathbf{A}_d \mathbf{x}_{1,C} + \mathbf{x}^T_{1,C} \mathbf{R}^T \mathbf{d} + F \end{bmatrix} \mathbf{z}_2
+\end{split}\]</div>
+<p>La traslazione che rende nulli i termini di primo grado, è la traslazione che rende nulli i coefficienti fuori dalla diagonale a blocchi,</p>
+<div class="math notranslate nohighlight">
+\[\mathbf{A}_d \mathbf{x}_{1,C} + \frac{1}{2} \mathbf{R}^T \mathbf{d} = \mathbf{0} \ ,\]</div>
+<p>cioè, poiché la matrice <span class="math notranslate nohighlight">\(\mathbf{A}_d\)</span> è invertibile,</p>
+<div class="math notranslate nohighlight">
+\[\mathbf{x}_{1,C} = - \frac{1}{2} \mathbf{A}_d^{-1} \mathbf{R}^T \mathbf{d} \ ,\]</div>
+<p>e quindi</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  0 
+  &amp; = \mathbf{z}_2^T \begin{bmatrix} \mathbf{A}_d &amp; \mathbf{0} \\ \mathbf{0}^T &amp; F - \frac{1}{4} \mathbf{d}^T \mathbf{R} \mathbf{A}_d^{-1} \mathbf{R}^T \mathbf{d} \end{bmatrix} \mathbf{z}_2 = \\
+  &amp; = \mathbf{z}_2^T \begin{bmatrix} \mathbf{A}_d &amp; \mathbf{0} \\ \mathbf{0}^T &amp; F - \frac{1}{4} \mathbf{d}^T \mathbf{A}^{-1} \mathbf{d} \end{bmatrix} \mathbf{z}_2 = \\
+  &amp; = \mathbf{z}_2^T \begin{bmatrix} \mathbf{A}_d &amp; \mathbf{0} \\ \mathbf{0}^T &amp; f \end{bmatrix} \mathbf{z}_2 = \\
+  &amp; = s_1 x_2^2 + s_2 y_2^2 + f \ .
+\end{aligned}\end{split}\]</div>
+<p>Nel caso in cui:</p>
+<ul>
+<li><p><span class="math notranslate nohighlight">\(s_1 &gt; 0\)</span>, <span class="math notranslate nohighlight">\(s_2 &gt; 0\)</span>:</p>
+<ul class="simple">
+<li><p>se <span class="math notranslate nohighlight">\(f &lt; 0\)</span>: ellisse regolare, <span class="math notranslate nohighlight">\(\frac{x_2^2}{\left( \sqrt{\frac{-f}{s_1}} \right)^2} + \frac{y_2^2}{\left( \sqrt{\frac{-f}{s_2}} \right)^2} = 1\)</span></p></li>
+<li><p>se <span class="math notranslate nohighlight">\(f = 0\)</span>: punto <span class="math notranslate nohighlight">\(x_2 = y_2 = 0\)</span></p></li>
+<li><p>se <span class="math notranslate nohighlight">\(f &gt; 0\)</span>: nessuna soluzione</p></li>
+</ul>
+</li>
+<li><p><span class="math notranslate nohighlight">\(s_1 \cdot s_2 &lt; 0\)</span>, con <span class="math notranslate nohighlight">\(s_1 &gt; 0\)</span>:</p>
+<ul>
+<li><p>se <span class="math notranslate nohighlight">\(f \ne 0\)</span> iperbole regolare, <span class="math notranslate nohighlight">\(\frac{x_2^2}{\left( \sqrt{\frac{|f|}{s_1}} \right)^2} - \frac{y_2^2}{\left( \sqrt{\frac{|f|}{-s_2}} \right)^2} = - \text{sgn}(f)\)</span></p></li>
+<li><p>se <span class="math notranslate nohighlight">\(f = 0\)</span>, iperbole degenere in due rette coincidenti,</p>
+<div class="math notranslate nohighlight">
+\[0 = |s_1| x_2^2 - |s_2| y_2^2 = ( \sqrt{|s_1|} x_2 - \sqrt{|s_2|} y_2 ) ( \sqrt{|s_1|} x_2 + \sqrt{|s_2|} y_2) \ .\]</div>
+</li>
+</ul>
+</li>
+</ul>
+<p>Quando <span class="math notranslate nohighlight">\(f = 0\)</span>, allora <span class="math notranslate nohighlight">\(| \mathbf{M} | = 0\)</span> (questo segue dall’osservazione che la trasformazione di rototraslazione applicata ha determinante = 1.<strong>todo</strong> <em>Aggiungere box con dimostrazione</em>).</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
 <summary class="sd-summary-title sd-card-header">
-Decomposizione spettrale di <span class="math notranslate nohighlight">\( \mathbf{A}\)</span>, simmetrica<div class="sd-summary-down docutils">
+Some algebra<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
 <div class="math notranslate nohighlight">
-\[\begin{split}0 = \left| \mathbf{A} - s \mathbf{I} \right| = \left| \begin{bmatrix} A-s &amp; B/2 \\ B/2 &amp; C-s \end{bmatrix} \right| = (s-A)(s-C) - \frac{B^2}{4} = s^2 - (A+C)s + AC- \frac{B^2}{4} \ .\end{split}\]</div>
-<p class="sd-card-text">cosicché gli autovalori valgono</p>
-<div class="math notranslate nohighlight">
-\[s_{1,2} = \frac{A+C}{2} \mp \frac{\sqrt{(A-C)^2 + B^2}}{2} \ ,\]</div>
-<p class="sd-card-text"><strong>Autovalori coincidenti</strong> se <span class="math notranslate nohighlight">\(A = C\)</span> e <span class="math notranslate nohighlight">\(B = 0\)</span>. In questo caso, la matrice <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> è già in forma diagonale. I due autovalori valgono <span class="math notranslate nohighlight">\(s_{1,2} = A\)</span>; la molteplicità geometrica dell’autovalore è uguale alla sua molteplicità algebrica: la matrice è diagonalizzabile (è già diagonale! Che scoperta) e si possono scegliere come autovettori <span class="math notranslate nohighlight">\(\widetilde{\mathbf{x}}_1 = \begin{bmatrix} 1 \\ 0 \end{bmatrix}\)</span>, <span class="math notranslate nohighlight">\(\widetilde{\mathbf{x}}_2 = \begin{bmatrix} 0 \\ 1 \end{bmatrix}\)</span>, a formare la matrice identità come matrice di trasformazione - rotazione nulla.</p>
-<p class="sd-card-text"><strong>Autovalori distinti.</strong> Gli autovettori sono</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\widetilde{\mathbf{x}}_{1,2} \propto \begin{bmatrix} \frac{B}{2} \\ \frac{C-A}{2} \mp \frac{\sqrt{(A-C)^2+B^2}}{2} \end{bmatrix} \ . \end{split}\]</div>
-<ul>
-<li><p class="sd-card-text"><strong>Ortogonalità.</strong></p>
-<div class="math notranslate nohighlight">
-\[\widetilde{\mathbf{x}}_1^T \widetilde{\mathbf{x}}_2 = \frac{B^2}{4} + \frac{(C_A)^2}{4} - \frac{(A-C)^2}{4} - \frac{B^2}{4} = 0 \ .\]</div>
-</li>
-<li><p class="sd-card-text"><strong>Normalizzazione.</strong> La norma dei due autovettori è</p>
+\[\begin{split}\begin{aligned}
+ \widetilde{\mathbf{R}}^T \mathbf{M} \widetilde{\mathbf{R}}
+ &amp; = \begin{bmatrix}  \mathbf{R}^T &amp; \mathbf{0} \\ \mathbf{0}^T &amp; 1  \end{bmatrix} \begin{bmatrix} \mathbf{A} &amp; \frac{1}{2} \mathbf{d} \\ \frac{1}{2} \mathbf{d}^T &amp; F \end{bmatrix} \begin{bmatrix} \mathbf{R} &amp; \mathbf{0} \\ \mathbf{0}^T &amp; 1 \end{bmatrix} = \\
+ &amp; = \begin{bmatrix} \mathbf{R}^T \mathbf{A} &amp; \frac{1}{2}\mathbf{R}^T \mathbf{d} \\ \frac{1}{2} \mathbf{d}^T &amp; F \end{bmatrix} \begin{bmatrix} \mathbf{R} &amp; \mathbf{0} \\ \mathbf{0}^T &amp; 1 \end{bmatrix} = \\ 
+ &amp; = \begin{bmatrix} \mathbf{R}^T \mathbf{A} \mathbf{R} &amp; \frac{1}{2}\mathbf{R}^T \mathbf{d} \\ \frac{1}{2} \mathbf{d}^T \mathbf{R} &amp; F \end{bmatrix} = \\ 
+ &amp; = \begin{bmatrix} \mathbf{A}_d &amp; \frac{1}{2}\mathbf{R}^T \mathbf{d} \\ \frac{1}{2} \mathbf{d}^T \mathbf{R} &amp; F \end{bmatrix} \ .
+\end{aligned}\end{split}\]</div>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
-     |\widetilde{\mathbf{x}}_{1,2}|^2 
-     &amp; = \frac{B^2}{4} + \frac{(C-A)^2}{4} + \frac{(A-C)^2 + B^2}{4} \mp \frac{(C-A)\sqrt{(A-C)^2 + B^2}}{2} = \\
-     &amp; = \frac{1}{2} \left[ (C-A)^2 + B^2 \mp (C-A)\sqrt{(A-C)^2 + B^2} \right] \ ,
-   \end{aligned}\end{split}\]</div>
-<p class="sd-card-text">e può essere uguale a zero solo se <span class="math notranslate nohighlight">\(B = 0\)</span> e <span class="math notranslate nohighlight">\(C-A \mp |C-A| = 0\)</span>: la seconda relazione è verificata per entrambi gli autovalori solo nel caso in cui <span class="math notranslate nohighlight">\(C = A\)</span> (che produce autovalori coincidenti). In ogni caso, se <span class="math notranslate nohighlight">\(B = 0\)</span>, la matrice è già in forma diagonale e i due autovettori possono essere scelti come  <span class="math notranslate nohighlight">\(\widetilde{\mathbf{x}}_1 = \begin{bmatrix} 1 \\ 0 \end{bmatrix}\)</span>, <span class="math notranslate nohighlight">\(\widetilde{\mathbf{x}}_2 = \begin{bmatrix} 0 \\ 1 \end{bmatrix}\)</span></p>
-</li>
-</ul>
-<p class="sd-card-text"><strong>Autovalori distinti e non nulli</strong>, se <span class="math notranslate nohighlight">\(\frac{B^2}{4}-AC \ne 0\)</span>. In questo caso, la trasfomrazione di coordinate consente di ottenere l’espressione</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}0 = \mathbf{x}_1^T \begin{bmatrix} s_1 &amp; 0 \\ 0 &amp; s_2 \end{bmatrix} \mathbf{x}_1 + \mathbf{d}^T \mathbf{R} \mathbf{x}_1 + F\end{split}\]</div>
-<p class="sd-card-text"><strong>Caso in cui un autovalore è nullo</strong>, se <span class="math notranslate nohighlight">\(\frac{B^2}{4} - AC = 0\)</span>, cioè <span class="math notranslate nohighlight">\(B = \mp^{(1)} 2 \sqrt{AC}\)</span>. In questo caso i due autovalori sono</p>
-<div class="math notranslate nohighlight">
-\[s_1 = A+C \quad , \quad s_2 = 0 \ ,\]</div>
-<p class="sd-card-text">e gli autovettori</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\widetilde{\mathbf{x}}_{1,2} \propto \begin{bmatrix} \mp^{(1)} \sqrt{AC} \\ \frac{C-A}{2} \mp^{(2)} \frac{|A+C|}{2} \end{bmatrix}\end{split}\]</div>
+ &amp; \begin{bmatrix} \mathbf{I} &amp; \mathbf{0} \\ \mathbf{x}_{1,C}^T &amp; 1 \end{bmatrix} \begin{bmatrix} \mathbf{A}_d &amp; \frac{1}{2} \mathbf{R}^T \mathbf{d} \\ \frac{1}{2} \mathbf{d}^T \mathbf{R} &amp; F \end{bmatrix} \begin{bmatrix} \mathbf{I} &amp; \mathbf{x}_{1,C} \\ \mathbf{0}^T &amp; 1 \end{bmatrix} = \\
+ &amp; = \begin{bmatrix} \mathbf{A}_d &amp; \frac{1}{2} \mathbf{R}^T \mathbf{d} \\ \mathbf{x}_{1,C}^T \mathbf{A}_d + \frac{1}{2} \mathbf{d}^T \mathbf{R} &amp; \frac{1}{2} \mathbf{x}_{1,C}^T \mathbf{R}^T \mathbf{d} + F \end{bmatrix} \begin{bmatrix} \mathbf{I} &amp; \mathbf{x}_{1,C} \\ \mathbf{0}^T &amp; 1 \end{bmatrix} = \\ 
+ &amp; = \begin{bmatrix} \mathbf{A}_d &amp; \mathbf{A}_d \mathbf{x}_{1,C} + \frac{1}{2} \mathbf{R}^T \mathbf{d} \\ \mathbf{x}_{1,C}^T \mathbf{A}_d + \frac{1}{2} \mathbf{d}^T \mathbf{R} &amp; \mathbf{x}_{1,C}^T \mathbf{A}_d \mathbf{x}_{1,C} + \frac{1}{2} \mathbf{d}^T \mathbf{R} \mathbf{x}_{1,C} + \frac{1}{2} \mathbf{x}^T_{1,C} \mathbf{R}^T \mathbf{d} + F \end{bmatrix} \\
+ &amp; = \begin{bmatrix} \mathbf{A}_d &amp; \mathbf{A}_d \mathbf{x}_{1,C} + \frac{1}{2} \mathbf{R}^T \mathbf{d} \\ \mathbf{x}_{1,C}^T \mathbf{A}_d + \frac{1}{2} \mathbf{d}^T \mathbf{R} &amp; \mathbf{x}_{1,C}^T \mathbf{A}_d \mathbf{x}_{1,C} + \mathbf{x}^T_{1,C} \mathbf{R}^T \mathbf{d} + F \end{bmatrix} \ .
+\end{aligned}\end{split}\]</div>
 </div>
-</details></div>
+</details><!--
+$(1)$ **Equazione generale di secondo grado**
+
+$$0 = A x^2 + B x y + C y^2 + D x + E y + F = \mathbf{x}^T \mathbf{A} \mathbf{x} + \mathbf{d}^T \mathbf{x} + F \ ,$$
+
+con
+
+$$\mathbf{A} = \begin{bmatrix} A & B/2 \\ B/2 & C \end{bmatrix} \quad , \quad \mathbf{d} = \begin{bmatrix} D \\  E \end{bmatrix} \ .$$
+
+$(2)$ **Trasformazione di coordinate - rotazione - e diagonalizzazione.** Una trasformazione di coordinate - una rotazione - che permette di eliminare il termine misto $x_1 y_1$. In particolare, la matrice di rotazione[^rot-mat-prop] $\mathbf{R}$ della trasformazione
+
+[^rot-mat-prop]: E quindi $\mathbf{R}^{-1} = \mathbf{R}^T$.
+
+$$\mathbf{x} = \mathbf{R} \mathbf{x}_1 \ ,$$
+
+è la matrice che contiene gli autovettori della matrice di $\mathbf{A}$ (simmetrica) e può essere calcolata risolvendo il problema agli autovalori $\mathbf{A} \mathbf{R} = \mathbf{R} \mathbf{A}_d$. Vale quindi la relazione $\mathbf{R}^T \mathbf{A} \mathbf{R}^T = \mathbf{A}_d$.
+
+```{dropdown} Decomposizione spettrale di $ \mathbf{A}$, simmetrica
+:open:
+
+$$0 = \left| \mathbf{A} - s \mathbf{I} \right| = \left| \begin{bmatrix} A-s & B/2 \\ B/2 & C-s \end{bmatrix} \right| = (s-A)(s-C) - \frac{B^2}{4} = s^2 - (A+C)s + AC- \frac{B^2}{4} \ .$$
+
+cosicché gli autovalori valgono
+
+$$s_{1,2} = \frac{A+C}{2} \mp \frac{\sqrt{(A-C)^2 + B^2}}{2} \ ,$$
+
+**Autovalori coincidenti** se $A = C$ e $B = 0$. In questo caso, la matrice $\mathbf{A}$ è già in forma diagonale. I due autovalori valgono $s_{1,2} = A$; la molteplicità geometrica dell'autovalore è uguale alla sua molteplicità algebrica: la matrice è diagonalizzabile (è già diagonale! Che scoperta) e si possono scegliere come autovettori $\widetilde{\mathbf{x}}_1 = \begin{bmatrix} 1 \\ 0 \end{bmatrix}$, $\widetilde{\mathbf{x}}_2 = \begin{bmatrix} 0 \\ 1 \end{bmatrix}$, a formare la matrice identità come matrice di trasformazione - rotazione nulla.
+
+**Autovalori distinti.** Gli autovettori sono
+
+$$\widetilde{\mathbf{x}}_{1,2} \propto \begin{bmatrix} \frac{B}{2} \\ \frac{C-A}{2} \mp \frac{\sqrt{(A-C)^2+B^2}}{2} \end{bmatrix} \ . $$
+
+- **Ortogonalità.**
+
+   $$\widetilde{\mathbf{x}}_1^T \widetilde{\mathbf{x}}_2 = \frac{B^2}{4} + \frac{(C_A)^2}{4} - \frac{(A-C)^2}{4} - \frac{B^2}{4} = 0 \ .$$
+
+- **Normalizzazione.** La norma dei due autovettori è
+
+   $$\begin{aligned}
+     |\widetilde{\mathbf{x}}_{1,2}|^2 
+     & = \frac{B^2}{4} + \frac{(C-A)^2}{4} + \frac{(A-C)^2 + B^2}{4} \mp \frac{(C-A)\sqrt{(A-C)^2 + B^2}}{2} = \\
+     & = \frac{1}{2} \left[ (C-A)^2 + B^2 \mp (C-A)\sqrt{(A-C)^2 + B^2} \right] \ ,
+   \end{aligned}$$
+
+   e può essere uguale a zero solo se $B = 0$ e $C-A \mp |C-A| = 0$: la seconda relazione è verificata per entrambi gli autovalori solo nel caso in cui $C = A$ (che produce autovalori coincidenti). In ogni caso, se $B = 0$, la matrice è già in forma diagonale e i due autovettori possono essere scelti come  $\widetilde{\mathbf{x}}_1 = \begin{bmatrix} 1 \\ 0 \end{bmatrix}$, $\widetilde{\mathbf{x}}_2 = \begin{bmatrix} 0 \\ 1 \end{bmatrix}$
+
+**Autovalori distinti e non nulli**, se $\frac{B^2}{4}-AC \ne 0$. In questo caso, la trasformazione di coordinate consente di ottenere l'espressione
+
+$$0 = \mathbf{x}_1^T \begin{bmatrix} s_1 & 0 \\ 0 & s_2 \end{bmatrix} \mathbf{x}_1 + \mathbf{d}^T \mathbf{R} \mathbf{x}_1 + F$$
+
+**Caso in cui un autovalore è nullo**, se $\frac{B^2}{4} - AC = 0$, cioè $B = \text{sgn}(B) \sqrt{AC}$. **Osservazione.** Affinché questo avvenga, $A$, $C$ devono essere concordi. Senza perdità di generalità, si può scrivere l'equazione $A x^2 + ... + F = 0$, con la convenzione di segno tale che $A \ge 0$, $C \ge 0$. In questo caso i due autovalori sono
+
+$$s_1 = A+C \quad , \quad s_2 = 0 \ ,$$
+
+e gli autovettori
+
+$$\widetilde{\mathbf{x}}_{1,2} \propto \begin{bmatrix} \mp^{(B)} \sqrt{AC} \\ \frac{C-A}{2} \mp^{(1,2)} \frac{|A+C|}{2} \end{bmatrix}$$
+
+Con la convenzione di segno adottata, gli autovettori diventano
+
+$$\begin{aligned}
+  \widetilde{\mathbf{x}}_{1} \propto \begin{bmatrix} \text{sgn}(B) \sqrt{AC} \\ -A \end{bmatrix} \quad , \quad
+  \widetilde{\mathbf{x}}_{2} \propto \begin{bmatrix} \text{sgn}(B) \sqrt{AC} \\  C \end{bmatrix} \ , 
+\end{aligned}$$
+
+e la matrice di trasformazione - in seguito alla normalizzazione degli autovettori, $|\widetilde{\mathbf{x}}_1|^2 = A C + A^2 = A(A+C)$, $|\widetilde{\mathbf{x}}_2|^2 = A C + C^2 = C(A+C)$ -
+
+$$\mathbf{R} = \frac{1}{\sqrt{A+C}} \begin{bmatrix} \text{sgn}(B) \sqrt{C} & \text{sgn}(B) \sqrt{A} \\ -\sqrt{A} & \sqrt{C} \end{bmatrix}$$
+
+L'equazione della conica nelle nuove coordinate diventa - usando il calcolo diretto come verifica -
+
+$$\begin{aligned}
+  0
+  & = 
+  \mathbf{x}_1^T \frac{1}{A+C} 
+  \begin{bmatrix} \text{sgn}(B) \sqrt{C} & -\sqrt{A} \\ \text{sgn}(B) \sqrt{A} & \sqrt{C} \end{bmatrix}
+  \begin{bmatrix} A & B/2 \\ B/2 & C \end{bmatrix}
+  \begin{bmatrix} \text{sgn}(B) \sqrt{C} & \text{sgn}(B) \sqrt{A} \\ -\sqrt{A} & \sqrt{C} \end{bmatrix} \mathbf{x}_1 +
+  \frac{1}{\sqrt{A+C}} \begin{bmatrix} D & E \end{bmatrix}
+  \begin{bmatrix} \text{sgn}(B) \sqrt{C} & \text{sgn}(B) \sqrt{A} \\ -\sqrt{A} & \sqrt{C} \end{bmatrix} \mathbf{x}_1 + F = \\
+  & =
+  \mathbf{x}_1^T \frac{1}{A+C} 
+  \begin{bmatrix} \text{sgn}(B) A \sqrt{C} - \frac{B}{2}\sqrt{A} & 
+                  \text{sgn}(B) \frac{B}{2} \sqrt{C} - C\sqrt{A} \\
+                  \text{sgn}(B) A \sqrt{A} - \frac{B}{2}\sqrt{C} & 
+                  \text{sgn}(B) \frac{B}{2} \sqrt{A} - C\sqrt{C}
+  \end{bmatrix}
+  \begin{bmatrix} \text{sgn}(B) \sqrt{C} & \text{sgn}(B) \sqrt{A} \\ -\sqrt{A} & \sqrt{C} \end{bmatrix} \mathbf{x}_1 +
+  \frac{1}{\sqrt{A+C}} \begin{bmatrix} \text{sgn}(B) D \sqrt{C} - E \sqrt{A} & \text{sgn}(B) D \sqrt{A} + E \sqrt{C} \end{bmatrix} \mathbf{x}_1 + F\\
+  & =
+  \mathbf{x}_1^T \frac{1}{A+C} 
+  \begin{bmatrix} - B \text{sgn}(B) \sqrt{A C} + 2 A C & 
+                  A \sqrt{AC} - \text{sgn}(B) \left( \frac{BA}{2} + \frac{BC}{2} \right) - C \sqrt{AC} \\
+                  \text{sgn}(B) A \sqrt{A} - \frac{B}{2}\sqrt{C} & 
+                  \text{sgn}(B) \frac{B}{2} \sqrt{A} - C\sqrt{C}
+  \end{bmatrix}
+  \mathbf{x}_1 +
+  \frac{1}{\sqrt{A+C}} \begin{bmatrix} \text{sgn}(B) D \sqrt{C} - E \sqrt{A} & \text{sgn}(B) D \sqrt{A} + E \sqrt{C} \end{bmatrix} \mathbf{x}_1 + F
+\end{aligned}$$
+
+```
+-->
+</div>
 <div class="section" id="esercizi">
 <h2><span class="section-number">12.5.4.6. </span>Esercizi<a class="headerlink" href="#esercizi" title="Permalink to this heading">#</a></h2>
 <hr class="footnotes docutils" />
 <dl class="footnote brackets">
 <dt class="label" id="tan-sin-cos"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
 <dd><p>Tangente <span class="math notranslate nohighlight">\(t_x := \frac{s_x}{c_x} = \frac{a}{b}\)</span>; identità fondamentale della trigonometria <span class="math notranslate nohighlight">\(c_x^2 + s_x^2 = 1\)</span>…</p>
-</dd>
-<dt class="label" id="rot-mat-prop"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
-<dd><p>E quindi <span class="math notranslate nohighlight">\(\mathbf{R}^{-1} = \mathbf{R}^T\)</span>.</p>
 </dd>
 </dl>
 </div>
