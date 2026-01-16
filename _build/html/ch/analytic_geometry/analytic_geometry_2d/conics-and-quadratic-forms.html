@@ -678,37 +678,170 @@ Calcolo di <span class="math notranslate nohighlight">\(\ \mathbf{d}^T \mathbf{r
 \end{aligned}\end{split}\]</div>
 <p class="sd-card-text">cioè si ottiene un’espressione alternativa ed equivalente a quella trovata in precedenza del determinante di <span class="math notranslate nohighlight">\(\mathbf{M}\)</span>.</p>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
+</details><!--
+```{dropdown} Casi degeneri
+
+I casi di parabola degenere si verificano quando sono soddisfatte le condizioni
+
+$$\begin{aligned}
+  0 & = \text{det}(\mathbf{A}) && 0 = A C - \frac{B^2}{4} && B = 2 \text{sgn}(B) \sqrt{AC} \\
+  0 & = \text{det}(\mathbf{M}) && 0 = C D^2 + A E^2 - BDE \\
+\end{aligned}$$
+
+In questo caso $s_1 = A + C$, $\mathbf{r}_1 = \frac{1}{\sqrt{A+C}} \begin{bmatrix} \text{sgn}(B) \sqrt{A} \\ \sqrt{C} \end{bmatrix}$. L'equazione di secondo grado
+
+$$s_1 x_1^2 + \mathbf{d}^T \mathbf{r}_1 x_1 + F = 0 \ ,$$
+
+ha 2 soluzioni reali distinte, 2 soluzioni reali coincidenti, o nessuna soluzione reale, a seconda del valore del discriminante 
+
+$$\begin{aligned}
+  \Delta 
+  & = b^2 - 4 a c = \\
+  & = \left( \mathbf{d}^T \mathbf{r}_1 \right)^2 - 4 s_1 F = \\
+  & = \frac{1}{A+C} \left( \text{sgn}(B) D \sqrt{A} + E \sqrt{C} \right)^2 - 4 (A+C) F = \\
+  & = \frac{1}{A+C} \left( A D^2 + C E^2 + 2 \text{sgn}(B) DE \sqrt{AC} \right) - 4 (A+C) F = \\
+  & = \frac{1}{A+C} \left( A D^2 + C E^2 + BDE \right) - 4 (A+C) F = \\
+  & = \frac{1}{A+C} \left( A D^2 + C E^2 + C D^2 + A E^2 \right) - 4 (A+C) F = \\
+  & = \frac{1}{A+C} ( A + C ) ( D^2 + E^2 ) - 4 (A+C) F = \\
+  & = D^2 + E^2 - 4 ( A + C ) F \ .
+\end{aligned}$$
+
+```
+-->
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
 <summary class="sd-summary-title sd-card-header">
-Casi degeneri<div class="sd-summary-down docutils">
+Rango della matrice nel caso di parabola degenere<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">I casi di parabola degenere si verificano quando sono soddisfatte le condizioni</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-  0 &amp; = \text{det}(\mathbf{A}) &amp;&amp; 0 = A C - \frac{B^2}{4} &amp;&amp; B = 2 \text{sgn}(B) \sqrt{AC} \\
-  0 &amp; = \text{det}(\mathbf{M}) &amp;&amp; 0 = C D^2 + A E^2 - BDE \\
-\end{aligned}\end{split}\]</div>
-<p class="sd-card-text">In questo caso <span class="math notranslate nohighlight">\(s_1 = A + C\)</span>, <span class="math notranslate nohighlight">\(\mathbf{r}_1 = \frac{1}{\sqrt{A+C}} \begin{bmatrix} \text{sgn}(B) \sqrt{A} \\ \sqrt{C} \end{bmatrix}\)</span>. L’equazione di secondo grado</p>
+<p class="sd-card-text">Nel caso di <span class="math notranslate nohighlight">\(\mathbf{d}^T \mathbf{r}_2 = 0\)</span>, la matrice <span class="math notranslate nohighlight">\(\widetilde{\mathbf{M}}\)</span> è singolare e quindi ha rango <span class="math notranslate nohighlight">\(\le 2\)</span>. Facendo riferimento all’equazione</p>
 <div class="math notranslate nohighlight">
 \[s_1 x_1^2 + \mathbf{d}^T \mathbf{r}_1 x_1 + F = 0 \ ,\]</div>
-<p class="sd-card-text">ha 2 soluzioni reali distinte, 2 soluzioni reali coincidenti, o nessuna soluzione reale, a seconda del valore del discriminante</p>
+<p class="sd-card-text">si possono riconoscere diversi casi a seconda del valore del <strong>discriminante</strong> <span class="math notranslate nohighlight">\(\Delta_1 = \left( \mathbf{d}^T \mathbf{r}_1 \mathbf{r}_1 \right)^2 - 4 s_1 F\)</span>.</p>
+<ul class="simple">
+<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(\Delta_1 &gt; 0\)</span>: esistono due soluzioni <span class="math notranslate nohighlight">\(x_{1,a,b} = - \frac{\mathbf{d}^T}{2 s_1} \mp \frac{\sqrt{\Delta_1}}{2 s_1}\)</span> reali distinte, che corrispondono alle due rette parallele di equazione <span class="math notranslate nohighlight">\(x_1 = x_{1,a}\)</span> e <span class="math notranslate nohighlight">\(x_1 = x_{1,b}\)</span></p></li>
+<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(\Delta_1 = 0\)</span>: esistono due soluzioni reali coincidenti, <span class="math notranslate nohighlight">\(x_{1,a} = x_{1,b} = - \frac{\mathbf{d}^T \mathbf{r}_1}{2 s_1}\)</span>, che corrispondono entrambe alla retta di equazione <span class="math notranslate nohighlight">\(x_1 = x_{1,a}\)</span></p></li>
+<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(\Delta_1 &lt; 0\)</span>: non esistono soluzioni reali dell’equazione, cioè l’espressione non rappresenta nessun punto nel piano</p></li>
+</ul>
+<p class="sd-card-text">Si possono ritrovare gli stessi risultati tramite <strong>completamento del quadrato</strong></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
-  \Delta 
-  &amp; = b^2 - 4 a c = \\
-  &amp; = \left( \mathbf{d}^T \mathbf{r}_1 \right)^2 - 4 s_1 F = \\
-  &amp; = \frac{1}{A+C} \left( \text{sgn}(B) D \sqrt{A} + E \sqrt{C} \right)^2 - 4 (A+C) F = \\
-  &amp; = \frac{1}{A+C} \left( A D^2 + C E^2 + 2 \text{sgn}(B) DE \sqrt{AC} \right) - 4 (A+C) F = \\
-  &amp; = \frac{1}{A+C} \left( A D^2 + C E^2 + BDE \right) - 4 (A+C) F = \\
-  &amp; = \frac{1}{A+C} \left( A D^2 + C E^2 + C D^2 + A E^2 \right) - 4 (A+C) F = \\
-  &amp; = \frac{1}{A+C} ( A + C ) ( D^2 + E^2 ) - 4 (A+C) F = \\
-  &amp; = D^2 + E^2 - 4 ( A + C ) F \ .
+  0
+  &amp; = s_1 x_1^2 + \mathbf{d}^T \mathbf{r}_1 x_1 + F = \\
+  &amp; = s_1 \left[ x_1^2 + 2 \frac{\mathbf{d}^T \mathbf{r}_1}{2 s_1} x_1 + \left( \frac{\mathbf{d}^T \mathbf{r}_1}{2 s_1} \right)^2 \right] + F - \frac{\left(\mathbf{d}^T \mathbf{r}_1\right)^2}{4 s_1} = \\
+  &amp; = s_1 \left\{ \left( x_1 + \frac{\mathbf{d}^T \mathbf{r}_1}{2 s_1} \right)^2 + \frac{1}{4 s_1^2} \left( 4 s_1 F - \left(\mathbf{d}^T \mathbf{r}_1\right)^2 \right) \right\} = \\
+  &amp; = s_1 \left\{ \left( x_1 + \frac{\mathbf{d}^T \mathbf{r}_1}{2 s_1} \right)^2 - \frac{\Delta_1}{4 s_1^2} \right\} \ .
 \end{aligned}\end{split}\]</div>
+<p class="sd-card-text">Poiché <span class="math notranslate nohighlight">\(s_1 \ne 0\)</span>, questo è equivalente ad annullare il fattore contenuto nella parentesi graffa. La <strong>fattorizzazione del polinomio</strong> di secondo grado dipende dal valore del discriminante</p>
+<ul>
+<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(\Delta_1 &lt; 0\)</span>, il polinomio di secondo grado può essere fattorizzato come prodotto di due polinomi di primo grado, usando l’identità <span class="math notranslate nohighlight">\(a^2 - b^2 = (a+b)(a-b)\)</span></p>
+<div class="math notranslate nohighlight">
+\[x_1^2 + \frac{\mathbf{d}^T \mathbf{r}_1}{s_1} + \frac{F}{s_1} = \left( x_1 + \frac{\mathbf{d}^T \mathbf{r}_1}{2 s_1} + \frac{\sqrt{\Delta_1}}{2 s_1} \right) \left( x_1 + \frac{\mathbf{d}^T \mathbf{r}_1}{2 s_1} - \frac{\sqrt{\Delta_1}}{2 s_1} \right) \]</div>
+</li>
+<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(\Delta_1 = 0\)</span>, il polinomio di secondo grado può essere fattorizzato come quadrato di un polinomio di primo grado</p>
+<div class="math notranslate nohighlight">
+\[x_1^2 + \frac{\mathbf{d}^T \mathbf{r}_1}{s_1} + \frac{F}{s_1} = \left( x_1 + \frac{\mathbf{d}^T \mathbf{r}_1}{2 s_1} \right)^2 \]</div>
+</li>
+<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(\Delta_1 &lt; 0\)</span>, il polinomio di secondo grado non può essere fattorizzato come prodotto di polinomi a coefficienti reali di primo grado, poiché si otteiene un polinomio nella forma <span class="math notranslate nohighlight">\(a^2 + b^2\)</span></p></li>
+</ul>
+<p class="sd-card-text">Gli stessi risultati possono essere discussi anche in termini di <strong>rango della matrice <span class="math notranslate nohighlight">\(\mathbf{M}\)</span></strong>, o equivalentemente della matrice <span class="math notranslate nohighlight">\(\widetilde{\mathbf{M}} = \widetilde{\mathbf{R}}^T \mathbf{M} \widetilde{\mathbf{R}}\)</span>. Nel caso in analisi con <span class="math notranslate nohighlight">\(\mathbf{d}^T \mathbf{r}_2 = 0\)</span>, la matrice diventa</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\widetilde{\mathbf{M}} = \begin{bmatrix} s_1 &amp; 0 &amp; \frac{1}{2} \mathbf{r}_1^T \mathbf{d} \\ 0 &amp; 0 &amp; 0 \\ \frac{1}{2} \mathbf{d}^T \mathbf{r}_1 &amp; 0 &amp; F \end{bmatrix} \ ,\end{split}\]</div>
+<p class="sd-card-text">e il polinomio <span class="math notranslate nohighlight">\(\mathbf{z}_1^T \widetilde{\mathbf{M}} \mathbf{z}_1\)</span>. La matrice <span class="math notranslate nohighlight">\(\widetilde{\mathbf{M}}\)</span> ha una colonna identicamente nulla, quindi ha al massimo rango di dimensione uguale a <span class="math notranslate nohighlight">\(2\)</span>: ha rango di dimensione uguale a <span class="math notranslate nohighlight">\(2\)</span> se le altre sue colonne sono linearmente indipendenti, rango uguale a <span class="math notranslate nohighlight">\(1\)</span> se sono linearmente indipendenti, rango uguale a <span class="math notranslate nohighlight">\(0\)</span> se tutti i termini sono nulli (ipotesi da escludere, poiché si è ipotizzato che <span class="math notranslate nohighlight">\(s_1 \ne 0\)</span>).</p>
+<p class="sd-card-text">Usando il formalismo matriciale, il completamento del quadrato può essere scritto come</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \mathbf{z}_1^T \frac{\widetilde{\mathbf{M}}}{s_1} \mathbf{z}_1 
+  &amp; = \mathbf{z}_1^T \left( \begin{bmatrix} 1 &amp; \cdot &amp; \frac{\mathbf{r}_1^T \mathbf{d}}{2 s_1} \\ \cdot &amp; \cdot &amp; \cdot \\ \frac{\mathbf{d}^T \mathbf{r}_1}{2 s_1} &amp; \cdot &amp; \left( \frac{\mathbf{d}^T \mathbf{r}_1}{2 s_1} \right)^2 \end{bmatrix} + \begin{bmatrix} \cdot &amp; \cdot &amp; \cdot \\ \cdot &amp; \cdot &amp; \cdot \\ \cdot &amp; \cdot &amp; \frac{F}{s_1} - \frac{\left(\mathbf{d}^T\mathbf{r}_1\right)^2}{4 s_1^2} \end{bmatrix} \right) \mathbf{z}_1 = \\
+  &amp; = \mathbf{z}_1^T \left( \begin{bmatrix} 1 \\ \cdot \\ \frac{\mathbf{r}_1^T \mathbf{d}}{2 s_1} \end{bmatrix} \begin{bmatrix} 1 &amp; \cdot &amp; \frac{\mathbf{r}_1^T \mathbf{d}}{2 s_1} \end{bmatrix} - \text{sgn}(\Delta_1) \begin{bmatrix} \cdot \\ \cdot \\ |\sqrt{|\Delta_1|}| \end{bmatrix} \begin{bmatrix} \cdot &amp; \cdot &amp; \sqrt{|\Delta_1|} \end{bmatrix} \right) \mathbf{z}_1 = \\
+  &amp; = \mathbf{z}_1^T \left( \mathbf{u} \mathbf{u}^T - \text{sgn}(\Delta_1) \mathbf{v} \mathbf{v}^T \right) \mathbf{z}_1 = \\
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">Nel caso in cui</p>
+<ul>
+<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(\Delta_1 &gt; 0\)</span>, il rango della matrice ha dimensione uguale a <span class="math notranslate nohighlight">\(2\)</span> e la fattorizzazione della matrice diventa <span class="math notranslate nohighlight">\(\frac{\widetilde{\mathbf{M}}}{s_1} = ( \mathbf{u} + \mathbf{v})(\mathbf{u} - \mathbf{v})^T\)</span>, poiché</p>
+<div class="math notranslate nohighlight">
+\[\mathbf{z}_1^T ( \mathbf{u} + \mathbf{v})(\mathbf{u} - \mathbf{v})^T \mathbf{z}_1 = \mathbf{z}_1^T \left( \mathbf{u} \mathbf{u} + \mathbf{v}\mathbf{u}^T - \mathbf{u}\mathbf{v}^T - \mathbf{v}\mathbf{v}^T \right) \mathbf{z}_1 = \mathbf{z}_1^T \left( \mathbf{u} \mathbf{u} - \mathbf{v}\mathbf{v}^T \right) \mathbf{z}_1 \ ,\]</div>
+<p class="sd-card-text">poiché <span class="math notranslate nohighlight">\(\mathbf{z}_1^T \mathbf{v} \mathbf{u}^T \mathbf{z}_1 = \mathbf{z}_1^T \mathbf{u} \mathbf{v}^T \mathbf{z}_1\)</span>. La forma quadratica può essere scritta in forma simmetrica e quindi la matrice può essere riscritta come matrice simmetrica, <span class="math notranslate nohighlight">\(\widetilde{\mathbf{M}} = \frac{1}{2} \left( \widetilde{\mathbf{u}} \widetilde{\mathbf{v}}^T + \widetilde{\mathbf{v}} \widetilde{\mathbf{u}}^T  \right)\)</span>, con <span class="math notranslate nohighlight">\(\widetilde{\mathbf{u}} := \mathbf{u} + \mathbf{v}\)</span>, <span class="math notranslate nohighlight">\(\widetilde{\mathbf{v}} := \mathbf{u} - \mathbf{v}\)</span> linearmente indipendenti. Esplicitando le componenti della matrice ridotta a <span class="math notranslate nohighlight">\(2 \times 2\)</span> rimuovendo per ragioni di sintesi la colonna e la riga identicamente nulla, le componenti della matrice <span class="math notranslate nohighlight">\(\widetilde{\mathbf{M}}\)</span> sono</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\frac{\widetilde{\mathbf{M}}}{s_1} = \begin{bmatrix}
+    \frac{1}{2}\left( \widetilde{u}_1 \widetilde{v}_1 + \widetilde{u}_1 \widetilde{v}_1 \right) &amp; 
+    \frac{1}{2}\left( \widetilde{u}_2 \widetilde{v}_1 + \widetilde{u}_1 \widetilde{v}_2 \right) \\
+    \frac{1}{2}\left( \widetilde{u}_1 \widetilde{v}_2 + \widetilde{u}_2 \widetilde{v}_1 \right) &amp; 
+    \frac{1}{2}\left( \widetilde{u}_2 \widetilde{v}_2 + \widetilde{u}_2 \widetilde{v}_2 \right)  
+  \end{bmatrix} =
+  \begin{bmatrix}
+    \frac{1}{2} \left( \widetilde{u}_1 \widetilde{\mathbf{v}} + \widetilde{v}_1 \widetilde{\mathbf{u}} \right) &amp;
+    \frac{1}{2} \left( \widetilde{u}_2 \widetilde{\mathbf{v}} + \widetilde{v}_2 \widetilde{\mathbf{u}} \right) 
+  \end{bmatrix} \ ,
+  \end{split}\]</div>
+<p class="sd-card-text">cioé ha due colonne linearmente indipendenti se <span class="math notranslate nohighlight">\(\widetilde{\mathbf{u}} \ne \lambda \widetilde{\mathbf{v}}\)</span>, cioé se <span class="math notranslate nohighlight">\(\widetilde{\mathbf{u}}\)</span>, <span class="math notranslate nohighlight">\(\widetilde{\mathbf{v}}\)</span> sono linearmente indipendenti, condizione verificata dall’indipendenza di <span class="math notranslate nohighlight">\(\mathbf{u}\)</span>, <span class="math notranslate nohighlight">\(\mathbf{v}\)</span>,</p>
+</li>
+<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(\Delta_1 = 0\)</span>, il rango della matrice ha dimensione uguale a <span class="math notranslate nohighlight">\(1\)</span> e la fattorizzazione diventa</p>
+<div class="math notranslate nohighlight">
+\[\begin{aligned}
+     \mathbf{z}_1^T \frac{\widetilde{\mathbf{M}}}{s_1} \mathbf{z}_1 
+     &amp; = \mathbf{z}_1^T \left( \mathbf{u} \mathbf{u}^T  \right) \mathbf{z}_1  \ .
+   \end{aligned}\]</div>
+</li>
+<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(\Delta_1 &lt; 0\)</span>, il rango della matrice ha dimensione <span class="math notranslate nohighlight">\(2\)</span>. Infatti si può scrivere</p>
+<div class="math notranslate nohighlight">
+\[\begin{aligned}
+     \mathbf{z}_1^T \frac{\widetilde{\mathbf{M}}}{s_1} \mathbf{z}_1 
+     &amp; = \mathbf{z}_1^T \left( \mathbf{u} \mathbf{u}^T + \mathbf{v} \mathbf{v}^T \right) \mathbf{z}_1 \ ,
+   \end{aligned}\]</div>
+<p class="sd-card-text">o esplicitando - sempre in maniera simbolica - le componenti della matrice,</p>
+<div class="math notranslate nohighlight">
+\[\begin{aligned}
+     \frac{\widetilde{\mathbf{M}}}{s_1} 
+     &amp; = \begin{bmatrix} u_1 \mathbf{u} + v_1 \mathbf{v} &amp; u_2 \mathbf{u} + v_2 \mathbf{v} \end{bmatrix} \ .
+   \end{aligned}\]</div>
+<p class="sd-card-text">Poiché <span class="math notranslate nohighlight">\(\Delta_1 \ne 0\)</span>, i vettori <span class="math notranslate nohighlight">\(\mathbf{u}\)</span> e <span class="math notranslate nohighlight">\(\mathbf{v}\)</span> sono linearmente indipendenti. Le colonne della matrice quindi sono linearmente indipendenti. Infatti, per essere linearmente dipendenti devono essere proporzionali, cioè dovrebbe esistere un coefficiente <span class="math notranslate nohighlight">\(\lambda\)</span> tale che</p>
+<div class="math notranslate nohighlight">
+\[\mathbf{c}_1 = \lambda \mathbf{c}_2\]</div>
+<p class="sd-card-text">e quindi</p>
+<div class="math notranslate nohighlight">
+\[\mathbf{0} = \mathbf{u}\left( u_1 - \lambda u_2\right) + \mathbf{v} \left( v_1 - \lambda v_2 \right) \ ,\]</div>
+<p class="sd-card-text">e - per l’indipendenza di <span class="math notranslate nohighlight">\(\mathbf{u}\)</span>, <span class="math notranslate nohighlight">\(\mathbf{v}\)</span> - si devono annullare entrambi i coefficienti, <span class="math notranslate nohighlight">\(u_1 = \lambda u_2\)</span>, <span class="math notranslate nohighlight">\(v_1 = \lambda v_2\)</span> e i due vettori risulterebbero tra di loro proporzionali, o linearmente dipendenti, <span class="math notranslate nohighlight">\(\mathbf{u} = u_2 \begin{bmatrix} \lambda \\ 1 \end{bmatrix}\)</span>, <span class="math notranslate nohighlight">\(\mathbf{v} = v_2 \begin{bmatrix} \lambda \\ 1 \end{bmatrix}\)</span>, condizione esclusa in partenza dalla condizione <span class="math notranslate nohighlight">\(\Delta_1 \ne 0\)</span>.</p>
+</li>
+</ul>
 </div>
-</details><p><span class="math notranslate nohighlight">\((3.3)\)</span> <strong>Ellissi/iperboli e casi degeneri.</strong> In questo caso si può completare il quadrato — che coincide ad applicare una traslazione come trasformazione delle coordinate — per eliminare i termini del primo grado. La traslazione <span class="math notranslate nohighlight">\(\mathbf{x}_1 = \mathbf{x}_2 + \mathbf{x}_{1,C}\)</span>, o equivalentemente sul vettore</p>
+</details><!--
+
+```{dropdown} Rango della matrice $\ \mathbf{M}$
+
+Il rango di una matrice è lo spazio generato dalle sue colonne
+
+```
+-->
+<!--
+   ...
+
+- $\Delta = 0$, esistono due soluzioni reali coincidenti
+
+   $$s_1 F = \frac{1}{4} \left( \mathbf{d}^T \mathbf{r}_1 \right)^2 \ ,$$
+   
+   e quindi, poiché $s_1 \ne 0$,
+   
+   $$F = \frac{1}{4 s_1} \left( \mathbf{d}^T \mathbf{r}_1 \right)^2 \ .$$
+   
+   La matrice $\widetilde{\mathbf{M}}$ ha una colonna - la seconda - identicamente nulla, e la prima e la terza colonna linearmente dipendenti: il rango della matrice ha dimensione uguale a $1$,
+   
+   $$\mathcal{R}(\mathbf{A}) = \left\{ \begin{bmatrix} s_1 \\ 0 \\ \frac{1}{2} \mathbf{d}^T \mathbf{r}_1 \end{bmatrix} \right\} \ ,$$
+   
+   e la matrice diventa
+   
+   $$\widetilde{\mathbf{M}} = \begin{bmatrix} s_1 & 0 & \frac{1}{2} \mathbf{d}^T \mathbf{r}_1 \\ 0 & 0 & 0 \\ \frac{1}{2} \mathbf{d}^T \mathbf{r}_1 & 0 & \frac{1}{4 s_1}\left( \mathbf{d}^T \mathbf{r}_1 \right)^2 \end{bmatrix} = s_1 \begin{bmatrix} 1 \\ 0 \\ \frac{1}{2 s_1} \mathbf{d}^T \mathbf{r}_1 \end{bmatrix} \begin{bmatrix} 1 & 0 & \frac{1}{2 s_1} \mathbf{d}^T \mathbf{r}_1 \end{bmatrix} \ .$$
+
+   L'espressione dell'equazione può quindi essere riscritta dopo aver fattorizzato il polinomio come
+
+   $$0 = s_1 \left( x_1 + \frac{1}{2 s_1} \mathbf{d}^T \mathbf{r}_1 \right)^2 \ .$$
+
+- $\Delta < 0$, non esistono soluzioni
+
+   ...
+-->
+<p><span class="math notranslate nohighlight">\((3.3)\)</span> <strong>Ellissi/iperboli e casi degeneri.</strong> In questo caso si può completare il quadrato — che coincide ad applicare una traslazione come trasformazione delle coordinate — per eliminare i termini del primo grado. La traslazione <span class="math notranslate nohighlight">\(\mathbf{x}_1 = \mathbf{x}_2 + \mathbf{x}_{1,C}\)</span>, o equivalentemente sul vettore</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\mathbf{z}_1 = \begin{bmatrix} \mathbf{x}_1 \\ 1 \end{bmatrix} = \begin{bmatrix} \mathbf{I} &amp; \mathbf{x}_{1,C} \\ \mathbf{0}^T &amp; 1 \end{bmatrix} \begin{bmatrix} \mathbf{x}_2 \\ 1 \end{bmatrix} = \begin{bmatrix} \mathbf{I} &amp; \mathbf{x}_{1,C} \\ \mathbf{0}^T &amp; 1 \end{bmatrix} \mathbf{z}_2  \ .\end{split}\]</div>
 <p>L’equazione diventa</p>

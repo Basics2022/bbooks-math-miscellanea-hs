@@ -142,8 +142,8 @@ cioè si ottiene un'espressione alternativa ed equivalente a quella trovata in p
 
 ```
 
+<!--
 ```{dropdown} Casi degeneri
-:open:
 
 I casi di parabola degenere si verificano quando sono soddisfatte le condizioni
 
@@ -171,6 +171,148 @@ $$\begin{aligned}
 \end{aligned}$$
 
 ```
+-->
+
+```{dropdown} Rango della matrice nel caso di parabola degenere
+:open:
+
+Nel caso di $\mathbf{d}^T \mathbf{r}_2 = 0$, la matrice $\widetilde{\mathbf{M}}$ è singolare e quindi ha rango $\le 2$. Facendo riferimento all'equazione
+
+$$s_1 x_1^2 + \mathbf{d}^T \mathbf{r}_1 x_1 + F = 0 \ ,$$
+
+si possono riconoscere diversi casi a seconda del valore del **discriminante** $\Delta_1 = \left( \mathbf{d}^T \mathbf{r}_1 \mathbf{r}_1 \right)^2 - 4 s_1 F$.
+- $\Delta_1 > 0$: esistono due soluzioni $x_{1,a,b} = - \frac{\mathbf{d}^T}{2 s_1} \mp \frac{\sqrt{\Delta_1}}{2 s_1}$ reali distinte, che corrispondono alle due rette parallele di equazione $x_1 = x_{1,a}$ e $x_1 = x_{1,b}$
+- $\Delta_1 = 0$: esistono due soluzioni reali coincidenti, $x_{1,a} = x_{1,b} = - \frac{\mathbf{d}^T \mathbf{r}_1}{2 s_1}$, che corrispondono entrambe alla retta di equazione $x_1 = x_{1,a}$
+- $\Delta_1 < 0$: non esistono soluzioni reali dell'equazione, cioè l'espressione non rappresenta nessun punto nel piano
+
+Si possono ritrovare gli stessi risultati tramite **completamento del quadrato**
+
+$$\begin{aligned}
+  0
+  & = s_1 x_1^2 + \mathbf{d}^T \mathbf{r}_1 x_1 + F = \\
+  & = s_1 \left[ x_1^2 + 2 \frac{\mathbf{d}^T \mathbf{r}_1}{2 s_1} x_1 + \left( \frac{\mathbf{d}^T \mathbf{r}_1}{2 s_1} \right)^2 \right] + F - \frac{\left(\mathbf{d}^T \mathbf{r}_1\right)^2}{4 s_1} = \\
+  & = s_1 \left\{ \left( x_1 + \frac{\mathbf{d}^T \mathbf{r}_1}{2 s_1} \right)^2 + \frac{1}{4 s_1^2} \left( 4 s_1 F - \left(\mathbf{d}^T \mathbf{r}_1\right)^2 \right) \right\} = \\
+  & = s_1 \left\{ \left( x_1 + \frac{\mathbf{d}^T \mathbf{r}_1}{2 s_1} \right)^2 - \frac{\Delta_1}{4 s_1^2} \right\} \ .
+\end{aligned}$$
+
+Poiché $s_1 \ne 0$, questo è equivalente ad annullare il fattore contenuto nella parentesi graffa. La **fattorizzazione del polinomio** di secondo grado dipende dal valore del discriminante
+- $\Delta_1 < 0$, il polinomio di secondo grado può essere fattorizzato come prodotto di due polinomi di primo grado, usando l'identità $a^2 - b^2 = (a+b)(a-b)$
+
+   $$x_1^2 + \frac{\mathbf{d}^T \mathbf{r}_1}{s_1} + \frac{F}{s_1} = \left( x_1 + \frac{\mathbf{d}^T \mathbf{r}_1}{2 s_1} + \frac{\sqrt{\Delta_1}}{2 s_1} \right) \left( x_1 + \frac{\mathbf{d}^T \mathbf{r}_1}{2 s_1} - \frac{\sqrt{\Delta_1}}{2 s_1} \right) $$
+
+- $\Delta_1 = 0$, il polinomio di secondo grado può essere fattorizzato come quadrato di un polinomio di primo grado
+
+   $$x_1^2 + \frac{\mathbf{d}^T \mathbf{r}_1}{s_1} + \frac{F}{s_1} = \left( x_1 + \frac{\mathbf{d}^T \mathbf{r}_1}{2 s_1} \right)^2 $$
+
+- $\Delta_1 < 0$, il polinomio di secondo grado non può essere fattorizzato come prodotto di polinomi a coefficienti reali di primo grado, poiché si otteiene un polinomio nella forma $a^2 + b^2$
+
+Gli stessi risultati possono essere discussi anche in termini di **rango della matrice $\mathbf{M}$**, o equivalentemente della matrice $\widetilde{\mathbf{M}} = \widetilde{\mathbf{R}}^T \mathbf{M} \widetilde{\mathbf{R}}$. Nel caso in analisi con $\mathbf{d}^T \mathbf{r}_2 = 0$, la matrice diventa
+
+$$\widetilde{\mathbf{M}} = \begin{bmatrix} s_1 & 0 & \frac{1}{2} \mathbf{r}_1^T \mathbf{d} \\ 0 & 0 & 0 \\ \frac{1}{2} \mathbf{d}^T \mathbf{r}_1 & 0 & F \end{bmatrix} \ ,$$
+
+e il polinomio $\mathbf{z}_1^T \widetilde{\mathbf{M}} \mathbf{z}_1$. La matrice $\widetilde{\mathbf{M}}$ ha una colonna identicamente nulla, quindi ha al massimo rango di dimensione uguale a $2$: ha rango di dimensione uguale a $2$ se le altre sue colonne sono linearmente indipendenti, rango uguale a $1$ se sono linearmente indipendenti, rango uguale a $0$ se tutti i termini sono nulli (ipotesi da escludere, poiché si è ipotizzato che $s_1 \ne 0$).
+
+Usando il formalismo matriciale, il completamento del quadrato può essere scritto come
+
+$$\begin{aligned}
+  \mathbf{z}_1^T \frac{\widetilde{\mathbf{M}}}{s_1} \mathbf{z}_1 
+  & = \mathbf{z}_1^T \left( \begin{bmatrix} 1 & \cdot & \frac{\mathbf{r}_1^T \mathbf{d}}{2 s_1} \\ \cdot & \cdot & \cdot \\ \frac{\mathbf{d}^T \mathbf{r}_1}{2 s_1} & \cdot & \left( \frac{\mathbf{d}^T \mathbf{r}_1}{2 s_1} \right)^2 \end{bmatrix} + \begin{bmatrix} \cdot & \cdot & \cdot \\ \cdot & \cdot & \cdot \\ \cdot & \cdot & \frac{F}{s_1} - \frac{\left(\mathbf{d}^T\mathbf{r}_1\right)^2}{4 s_1^2} \end{bmatrix} \right) \mathbf{z}_1 = \\
+  & = \mathbf{z}_1^T \left( \begin{bmatrix} 1 \\ \cdot \\ \frac{\mathbf{r}_1^T \mathbf{d}}{2 s_1} \end{bmatrix} \begin{bmatrix} 1 & \cdot & \frac{\mathbf{r}_1^T \mathbf{d}}{2 s_1} \end{bmatrix} - \text{sgn}(\Delta_1) \begin{bmatrix} \cdot \\ \cdot \\ |\sqrt{|\Delta_1|}| \end{bmatrix} \begin{bmatrix} \cdot & \cdot & \sqrt{|\Delta_1|} \end{bmatrix} \right) \mathbf{z}_1 = \\
+  & = \mathbf{z}_1^T \left( \mathbf{u} \mathbf{u}^T - \text{sgn}(\Delta_1) \mathbf{v} \mathbf{v}^T \right) \mathbf{z}_1 = \\
+\end{aligned}$$
+
+Nel caso in cui 
+
+- $\Delta_1 > 0$, il rango della matrice ha dimensione uguale a $2$ e la fattorizzazione della matrice diventa $\frac{\widetilde{\mathbf{M}}}{s_1} = ( \mathbf{u} + \mathbf{v})(\mathbf{u} - \mathbf{v})^T$, poiché
+
+  $$\mathbf{z}_1^T ( \mathbf{u} + \mathbf{v})(\mathbf{u} - \mathbf{v})^T \mathbf{z}_1 = \mathbf{z}_1^T \left( \mathbf{u} \mathbf{u} + \mathbf{v}\mathbf{u}^T - \mathbf{u}\mathbf{v}^T - \mathbf{v}\mathbf{v}^T \right) \mathbf{z}_1 = \mathbf{z}_1^T \left( \mathbf{u} \mathbf{u} - \mathbf{v}\mathbf{v}^T \right) \mathbf{z}_1 \ ,$$
+
+  poiché $\mathbf{z}_1^T \mathbf{v} \mathbf{u}^T \mathbf{z}_1 = \mathbf{z}_1^T \mathbf{u} \mathbf{v}^T \mathbf{z}_1$. La forma quadratica può essere scritta in forma simmetrica e quindi la matrice può essere riscritta come matrice simmetrica, $\widetilde{\mathbf{M}} = \frac{1}{2} \left( \widetilde{\mathbf{u}} \widetilde{\mathbf{v}}^T + \widetilde{\mathbf{v}} \widetilde{\mathbf{u}}^T  \right)$, con $\widetilde{\mathbf{u}} := \mathbf{u} + \mathbf{v}$, $\widetilde{\mathbf{v}} := \mathbf{u} - \mathbf{v}$ linearmente indipendenti. Esplicitando le componenti della matrice ridotta a $2 \times 2$ rimuovendo per ragioni di sintesi la colonna e la riga identicamente nulla, le componenti della matrice $\widetilde{\mathbf{M}}$ sono
+
+  $$\frac{\widetilde{\mathbf{M}}}{s_1} = \begin{bmatrix}
+    \frac{1}{2}\left( \widetilde{u}_1 \widetilde{v}_1 + \widetilde{u}_1 \widetilde{v}_1 \right) & 
+    \frac{1}{2}\left( \widetilde{u}_2 \widetilde{v}_1 + \widetilde{u}_1 \widetilde{v}_2 \right) \\
+    \frac{1}{2}\left( \widetilde{u}_1 \widetilde{v}_2 + \widetilde{u}_2 \widetilde{v}_1 \right) & 
+    \frac{1}{2}\left( \widetilde{u}_2 \widetilde{v}_2 + \widetilde{u}_2 \widetilde{v}_2 \right)  
+  \end{bmatrix} =
+  \begin{bmatrix}
+    \frac{1}{2} \left( \widetilde{u}_1 \widetilde{\mathbf{v}} + \widetilde{v}_1 \widetilde{\mathbf{u}} \right) &
+    \frac{1}{2} \left( \widetilde{u}_2 \widetilde{\mathbf{v}} + \widetilde{v}_2 \widetilde{\mathbf{u}} \right) 
+  \end{bmatrix} \ ,
+  $$
+
+  cioé ha due colonne linearmente indipendenti se $\widetilde{\mathbf{u}} \ne \lambda \widetilde{\mathbf{v}}$, cioé se $\widetilde{\mathbf{u}}$, $\widetilde{\mathbf{v}}$ sono linearmente indipendenti, condizione verificata dall'indipendenza di $\mathbf{u}$, $\mathbf{v}$,
+
+- $\Delta_1 = 0$, il rango della matrice ha dimensione uguale a $1$ e la fattorizzazione diventa
+
+   $$\begin{aligned}
+     \mathbf{z}_1^T \frac{\widetilde{\mathbf{M}}}{s_1} \mathbf{z}_1 
+     & = \mathbf{z}_1^T \left( \mathbf{u} \mathbf{u}^T  \right) \mathbf{z}_1  \ .
+   \end{aligned}$$
+
+- $\Delta_1 < 0$, il rango della matrice ha dimensione $2$. Infatti si può scrivere
+
+   $$\begin{aligned}
+     \mathbf{z}_1^T \frac{\widetilde{\mathbf{M}}}{s_1} \mathbf{z}_1 
+     & = \mathbf{z}_1^T \left( \mathbf{u} \mathbf{u}^T + \mathbf{v} \mathbf{v}^T \right) \mathbf{z}_1 \ ,
+   \end{aligned}$$
+
+   o esplicitando - sempre in maniera simbolica - le componenti della matrice,
+
+   $$\begin{aligned}
+     \frac{\widetilde{\mathbf{M}}}{s_1} 
+     & = \begin{bmatrix} u_1 \mathbf{u} + v_1 \mathbf{v} & u_2 \mathbf{u} + v_2 \mathbf{v} \end{bmatrix} \ .
+   \end{aligned}$$
+
+   Poiché $\Delta_1 \ne 0$, i vettori $\mathbf{u}$ e $\mathbf{v}$ sono linearmente indipendenti. Le colonne della matrice quindi sono linearmente indipendenti. Infatti, per essere linearmente dipendenti devono essere proporzionali, cioè dovrebbe esistere un coefficiente $\lambda$ tale che 
+
+   $$\mathbf{c}_1 = \lambda \mathbf{c}_2$$
+
+   e quindi
+
+   $$\mathbf{0} = \mathbf{u}\left( u_1 - \lambda u_2\right) + \mathbf{v} \left( v_1 - \lambda v_2 \right) \ ,$$
+
+   e - per l'indipendenza di $\mathbf{u}$, $\mathbf{v}$ - si devono annullare entrambi i coefficienti, $u_1 = \lambda u_2$, $v_1 = \lambda v_2$ e i due vettori risulterebbero tra di loro proporzionali, o linearmente dipendenti, $\mathbf{u} = u_2 \begin{bmatrix} \lambda \\ 1 \end{bmatrix}$, $\mathbf{v} = v_2 \begin{bmatrix} \lambda \\ 1 \end{bmatrix}$, condizione esclusa in partenza dalla condizione $\Delta_1 \ne 0$.
+
+```
+
+<!--
+
+```{dropdown} Rango della matrice $\ \mathbf{M}$
+
+Il rango di una matrice è lo spazio generato dalle sue colonne
+
+```
+-->
+<!--
+   ...
+
+- $\Delta = 0$, esistono due soluzioni reali coincidenti
+
+   $$s_1 F = \frac{1}{4} \left( \mathbf{d}^T \mathbf{r}_1 \right)^2 \ ,$$
+   
+   e quindi, poiché $s_1 \ne 0$,
+   
+   $$F = \frac{1}{4 s_1} \left( \mathbf{d}^T \mathbf{r}_1 \right)^2 \ .$$
+   
+   La matrice $\widetilde{\mathbf{M}}$ ha una colonna - la seconda - identicamente nulla, e la prima e la terza colonna linearmente dipendenti: il rango della matrice ha dimensione uguale a $1$,
+   
+   $$\mathcal{R}(\mathbf{A}) = \left\{ \begin{bmatrix} s_1 \\ 0 \\ \frac{1}{2} \mathbf{d}^T \mathbf{r}_1 \end{bmatrix} \right\} \ ,$$
+   
+   e la matrice diventa
+   
+   $$\widetilde{\mathbf{M}} = \begin{bmatrix} s_1 & 0 & \frac{1}{2} \mathbf{d}^T \mathbf{r}_1 \\ 0 & 0 & 0 \\ \frac{1}{2} \mathbf{d}^T \mathbf{r}_1 & 0 & \frac{1}{4 s_1}\left( \mathbf{d}^T \mathbf{r}_1 \right)^2 \end{bmatrix} = s_1 \begin{bmatrix} 1 \\ 0 \\ \frac{1}{2 s_1} \mathbf{d}^T \mathbf{r}_1 \end{bmatrix} \begin{bmatrix} 1 & 0 & \frac{1}{2 s_1} \mathbf{d}^T \mathbf{r}_1 \end{bmatrix} \ .$$
+
+   L'espressione dell'equazione può quindi essere riscritta dopo aver fattorizzato il polinomio come
+
+   $$0 = s_1 \left( x_1 + \frac{1}{2 s_1} \mathbf{d}^T \mathbf{r}_1 \right)^2 \ .$$
+
+- $\Delta < 0$, non esistono soluzioni
+
+   ...
+-->
+
+
 
 $(3.3)$ **Ellissi/iperboli e casi degeneri.** In questo caso si può completare il quadrato &mdash; che coincide ad applicare una traslazione come trasformazione delle coordinate &mdash; per eliminare i termini del primo grado. La traslazione $\mathbf{x}_1 = \mathbf{x}_2 + \mathbf{x}_{1,C}$, o equivalentemente sul vettore
 
