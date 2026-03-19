@@ -20,3 +20,89 @@
 
 (ode-hs:types:linear-const:ex)=
 #### Examples
+
+La soluzione di equazioni lineari omogenee ha la forma
+
+$$y_n = c \cdot A^n \ .$$
+
+````{dropdown} Equazione lineare omogenea del primo ordine
+:open:
+
+$$\begin{aligned}
+  y_{n+1} & = a y_n \\
+  y_0     & = y^{(0)}
+\end{aligned}$$
+
+```{dropdown} Soluzione
+:open:
+
+**Soluzione.** Inserendo la forma generale della soluzione nell'equazione e nella condizione iniziale, si ottiene il sistema di equazioni
+
+$$\begin{cases}
+  c \cdot A^{n} ( A - a ) = 0 \\
+  c A^0 = y^{(0)} \ .
+\end{cases}$$
+
+Il caso $A = 0$ viene escluso da condizioni iniziali non-nulle: in questi casi $A^0 = 1$ e il sistema si riduce a 
+
+$$\begin{cases}
+  A - a = 0 \\
+  c  = y^{(0)} \ .
+\end{cases}$$
+
+La soluzione del sistema, $c = y^{(0)}$ e $A = a$, porta alla soluzione dell'equazione lineare del primo ordine
+
+$$y_{n} = y^{(0)} a^{n} \ .$$
+
+**Discussione del risultato in base al valore di $a$.**
+
+* Per $|a| > 1$ la soluzione diverge. Per $a > 1$ diverge in maniera monotona verso $\mp \infty$ a seconda che la condizione iniziale sia negativa o positiva rispettivamente. Per $a < 1$ la soluzione diverge con oscillazioni di ampiezza sempre crescente, alternando un valore positivo a uno negativo
+* Per $|a| < 1$ la soluzione converge a $0$. Per $a \in (0,1)$ la convergenza è monotona, per $a \in (-1,0)$ la convergenza alterna valori positivi e negativi, ma con valore assoluto sempre decresente.
+* Per $|a| = 0$ la soluzione diventa $y_n = 0$, per ogni $n \ge 1$, per qualsiasi condizione iniziale $y^{(0)}$
+* Per $ a  = 1$ la soluzione è costante $y_n = y^{(0)}$.
+* Per $ a  =-1$ la soluzione è oscillante, $y_n = (-1)^n y^{(0)}$.
+
+```
+````
+
+````{dropdown} Equazione lineare non-omogenea del primo ordine, con forzante costante
+:open:
+
+$$\begin{aligned}
+  y_{n+1} & = a y_n + f \\
+  y_0     & = y^{(0)}
+\end{aligned}$$
+
+```{dropdown} Soluzione
+:open:
+
+**Soluzione.** La soluzione può essere scritta come somma di una soluzione dell'equazione omogenea e di una soluzione particolare dell'equazione non omogenea.
+
+La soluzione dell'omogenea è stata ricavata in precedenza, $y^o_n = c a^n$. Per analogia con la forzante - tecnica usata anche nella soluzione delle equazioni differenziali - si cerca una soluzione particolare costante: inserendo un valore costante al posto di $y_n$, $y_{n+1}$, si ottiene $y^p_n = \frac{f}{1-a}$, definita per $a \ne 1$. Il caso in cui $a = 1$ viene discusso in seguito. La soluzione dell'equazione non omogenea ha espressione $y_n = c a^n + \frac{f}{1-a}$, che dopo aver inserito le condizioni iniziali, diventa
+
+$$y_n = y^{(0)} a^n + \frac{f}{1-a} \left( 1 -  a^n \right) \ .$$
+
+**Caso in cui $a = 1$.** In questo caso, la soluzione dell'equazione omogenea è costante e quindi la soluzione particolare dell'equazione non-omogenea non è una soluzione linearmente indipendente. In questo caso, si cerca una soluzione particolare dell'equazione non-omogenea nella forma $y_n = A n$[^footnote-magic]. Inserendo questa espressione nell'equazione non omogenea si ottiene
+
+$$A ( n + 1 ) = A n + f \ .$$
+
+Quindi $A = f$, e la soluzione particolare è $y^{p}_n = f n$. La soluzione completa diventa
+
+$$y_{n} = y^{(0)} + f n \ .$$
+
+[^footnote-magic]: Sembra magia, ma non lo è...**todo** toccherà scrivere due parole. Intanto si rimanda al box **Radici multiple - dimostrazione** per la [soluzione dell'equazione omogenea](ode-hs:types:linear-const:sol:homo), per le equazioni differenziali lineari a coefficienti costanti. Il procedimento è simile, con le dovute differenze tra il caso continuo e discreto). 
+
+```
+
+````
+
+```{dropdown} Equazione lineare omogenea del secondo ordine
+:open:
+
+$$\begin{aligned}
+  y_{n+1} & = a_n y_n + a_{n-1} y_{n-1}  \\
+  y_0     & = y^{(0)} \\
+  y_1     & = y^{(1)}
+\end{aligned}$$
+
+```
