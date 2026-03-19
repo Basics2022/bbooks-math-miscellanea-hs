@@ -96,7 +96,7 @@ $$y_{n} = y^{(0)} + f n \ .$$
 
 ````
 
-```{dropdown} Equazione lineare omogenea del secondo ordine
+````{dropdown} Equazione lineare omogenea del secondo ordine
 :open:
 
 $$\begin{aligned}
@@ -105,4 +105,23 @@ $$\begin{aligned}
   y_1     & = y^{(1)}
 \end{aligned}$$
 
+```{dropdown} Soluzione
+:open:
+
+Si cerca la soluzione dell'omogena inserendo l'espressione $y_n = c A^n$ nell'equazione. Scartando la soluzione banale - che deve essere concorde con condizioni iniziali identicamente nulle - si ottiene l'equazione di secondo grado
+
+$$A^{2} - a_n A - a_{n-1} A = 0 \ , $$
+
+Se le radici sono distinte, queste costituiscono la base delle due soluzioni linearmente indipendenti dell'equazione, che diventa
+
+$$y_n = c_1 A_1^n + c_2 A_2^n \ .$$
+
+Se le radici sono uguali,...[^footnote-magic]
+
+
+
+
+
 ```
+
+````
