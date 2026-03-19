@@ -68,6 +68,7 @@ parts:
   - file: ch/precalculus
   - file: ch/precalculus/real-functions
   - file: ch/series
+  - file: ch/difference-equations
   - file: ch/trigonometry
   - file: ch/precalculus/exponential_logarithm
     sections:
