@@ -67,6 +67,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/difference-equations';</script>
     <link rel="shortcut icon" href="../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../genindex.html" />
@@ -556,6 +558,104 @@ Osservazioni<div class="sd-summary-down docutils">
 <span id="ode-hs-types-linear-const"></span><h3><span class="section-number">17.2.1. </span>Equazioni lineari a coefficienti constanti<a class="headerlink" href="#equazioni-lineari-a-coefficienti-constanti" title="Permalink to this heading">#</a></h3>
 <div class="section" id="examples">
 <span id="ode-hs-types-linear-const-ex"></span><h4><span class="section-number">17.2.1.1. </span>Examples<a class="headerlink" href="#examples" title="Permalink to this heading">#</a></h4>
+<p>La soluzione di equazioni lineari omogenee ha la forma</p>
+<div class="math notranslate nohighlight">
+\[y_n = c \cdot A^n \ .\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
+<summary class="sd-summary-title sd-card-header">
+Equazione lineare omogenea del primo ordine<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  y_{n+1} &amp; = a y_n \\
+  y_0     &amp; = y^{(0)}
+\end{aligned}\end{split}\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
+<summary class="sd-summary-title sd-card-header">
+Soluzione<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>Soluzione.</strong> Inserendo la forma generale della soluzione nell’equazione e nella condizione iniziale, si ottiene il sistema di equazioni</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+  c \cdot A^{n} ( A - a ) = 0 \\
+  c A^0 = y^{(0)} \ .
+\end{cases}\end{split}\]</div>
+<p class="sd-card-text">Il caso <span class="math notranslate nohighlight">\(A = 0\)</span> viene escluso da condizioni iniziali non-nulle: in questi casi <span class="math notranslate nohighlight">\(A^0 = 1\)</span> e il sistema si riduce a</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+  A - a = 0 \\
+  c  = y^{(0)} \ .
+\end{cases}\end{split}\]</div>
+<p class="sd-card-text">La soluzione del sistema, <span class="math notranslate nohighlight">\(c = y^{(0)}\)</span> e <span class="math notranslate nohighlight">\(A = a\)</span>, porta alla soluzione dell’equazione lineare del primo ordine</p>
+<div class="math notranslate nohighlight">
+\[y_{n} = y^{(0)} a^{n} \ .\]</div>
+<p class="sd-card-text"><strong>Discussione del risultato in base al valore di <span class="math notranslate nohighlight">\(a\)</span>.</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Per <span class="math notranslate nohighlight">\(|a| &gt; 1\)</span> la soluzione diverge. Per <span class="math notranslate nohighlight">\(a &gt; 1\)</span> diverge in maniera monotona verso <span class="math notranslate nohighlight">\(\mp \infty\)</span> a seconda che la condizione iniziale sia negativa o positiva rispettivamente. Per <span class="math notranslate nohighlight">\(a &lt; 1\)</span> la soluzione diverge con oscillazioni di ampiezza sempre crescente, alternando un valore positivo a uno negativo</p></li>
+<li><p class="sd-card-text">Per <span class="math notranslate nohighlight">\(|a| &lt; 1\)</span> la soluzione converge a <span class="math notranslate nohighlight">\(0\)</span>. Per <span class="math notranslate nohighlight">\(a \in (0,1)\)</span> la convergenza è monotona, per <span class="math notranslate nohighlight">\(a \in (-1,0)\)</span> la convergenza alterna valori positivi e negativi, ma con valore assoluto sempre decresente.</p></li>
+<li><p class="sd-card-text">Per <span class="math notranslate nohighlight">\(|a| = 0\)</span> la soluzione diventa <span class="math notranslate nohighlight">\(y_n = 0\)</span>, per ogni <span class="math notranslate nohighlight">\(n \ge 1\)</span>, per qualsiasi condizione iniziale <span class="math notranslate nohighlight">\(y^{(0)}\)</span></p></li>
+<li><p class="sd-card-text">Per <span class="math notranslate nohighlight">\( a  = 1\)</span> la soluzione è costante <span class="math notranslate nohighlight">\(y_n = y^{(0)}\)</span>.</p></li>
+<li><p class="sd-card-text">Per <span class="math notranslate nohighlight">\( a  =-1\)</span> la soluzione è oscillante, <span class="math notranslate nohighlight">\(y_n = (-1)^n y^{(0)}\)</span>.</p></li>
+</ul>
+</div>
+</details></div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
+<summary class="sd-summary-title sd-card-header">
+Equazione lineare non-omogenea del primo ordine, con forzante costante<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  y_{n+1} &amp; = a y_n + f \\
+  y_0     &amp; = y^{(0)}
+\end{aligned}\end{split}\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
+<summary class="sd-summary-title sd-card-header">
+Soluzione<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>Soluzione.</strong> La soluzione può essere scritta come somma di una soluzione dell’equazione omogenea e di una soluzione particolare dell’equazione non omogenea.</p>
+<p class="sd-card-text">La soluzione dell’omogenea è stata ricavata in precedenza, <span class="math notranslate nohighlight">\(y^o_n = c a^n\)</span>. Per analogia con la forzante - tecnica usata anche nella soluzione delle equazioni differenziali - si cerca una soluzione particolare costante: inserendo un valore costante al posto di <span class="math notranslate nohighlight">\(y_n\)</span>, <span class="math notranslate nohighlight">\(y_{n+1}\)</span>, si ottiene <span class="math notranslate nohighlight">\(y^p_n = \frac{f}{1-a}\)</span>, definita per <span class="math notranslate nohighlight">\(a \ne 1\)</span>. Il caso in cui <span class="math notranslate nohighlight">\(a = 1\)</span> viene discusso in seguito. La soluzione dell’equazione non omogenea ha espressione <span class="math notranslate nohighlight">\(y_n = c a^n + \frac{f}{1-a}\)</span>, che dopo aver inserito le condizioni iniziali, diventa</p>
+<div class="math notranslate nohighlight">
+\[y_n = y^{(0)} a^n + \frac{f}{1-a} \left( 1 -  a^n \right) \ .\]</div>
+<p class="sd-card-text"><strong>Caso in cui <span class="math notranslate nohighlight">\(a = 1\)</span>.</strong> In questo caso, la soluzione dell’equazione omogenea è costante e quindi la soluzione particolare dell’equazione non-omogenea non è una soluzione linearmente indipendente. In questo caso, si cerca una soluzione particolare dell’equazione non-omogenea nella forma <span class="math notranslate nohighlight">\(y_n = A n\)</span><a class="footnote-reference brackets" href="#footnote-magic" id="id1">1</a>. Inserendo questa espressione nell’equazione non omogenea si ottiene</p>
+<div class="math notranslate nohighlight">
+\[A ( n + 1 ) = A n + f \ .\]</div>
+<p class="sd-card-text">Quindi <span class="math notranslate nohighlight">\(A = f\)</span>, e la soluzione particolare è <span class="math notranslate nohighlight">\(y^{p}_n = f n\)</span>. La soluzione completa diventa</p>
+<div class="math notranslate nohighlight">
+\[y_{n} = y^{(0)} + f n \ .\]</div>
+</div>
+</details></div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
+<summary class="sd-summary-title sd-card-header">
+Equazione lineare omogenea del secondo ordine<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  y_{n+1} &amp; = a_n y_n + a_{n-1} y_{n-1}  \\
+  y_0     &amp; = y^{(0)} \\
+  y_1     &amp; = y^{(1)}
+\end{aligned}\end{split}\]</div>
+</div>
+</details><hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="footnote-magic"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Sembra magia, ma non lo è…<strong>todo</strong> toccherà scrivere due parole. Intanto si rimanda al box <strong>Radici multiple - dimostrazione</strong> per la <a class="reference internal" href="ode.html#ode-hs-types-linear-const-sol-homo"><span class="std std-ref">soluzione dell’equazione omogenea</span></a>, per le equazioni differenziali lineari a coefficienti costanti. Il procedimento è simile, con le dovute differenze tra il caso continuo e discreto).</p>
+</dd>
+</dl>
 </div>
 </div>
 </div>
