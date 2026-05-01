@@ -103,6 +103,7 @@ parts:
   - file: ch/ode
     sections:
     - file: ch/ode-lti
+    - file: ch/control-intro
 # - file: ch/infinitesimal_calculus/problems
   - file: ch/multivariable-calculus
     sections:
