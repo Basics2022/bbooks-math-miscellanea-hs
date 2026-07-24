@@ -68,6 +68,9 @@ parts:
   - file: ch/precalculus
   - file: ch/precalculus/real-functions
   - file: ch/series
+    sections:
+    - file: ch/series/sequence-numerical-real
+    - file: ch/series/series-numerical-real
   - file: ch/difference-equations
   - file: ch/trigonometry
   - file: ch/precalculus/exponential_logarithm
@@ -105,6 +108,7 @@ parts:
     - file: ch/ode-lti
     - file: ch/control-intro
 # - file: ch/infinitesimal_calculus/problems
+  - file: ch/series/series-functions-real
   - file: ch/multivariable-calculus
     sections:
     - file: ch/multivariable-calculus/limits
@@ -117,6 +121,10 @@ parts:
     - file: ch/vector-calculus/derivatives
     - file: ch/vector-calculus/stokes
     - file: ch/vector-calculus/problems
+  - file: ch/complex-calculus
+    sections:
+    - file: ch/series/series-numerical-complex
+    - file: ch/series/series-functions-complex
 - caption: Statistica
   numbered: True
   chapters:
