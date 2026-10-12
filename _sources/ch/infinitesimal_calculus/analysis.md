@@ -3,6 +3,32 @@
 
 In questa sezione viene richiamato il concetto di funzione introdotto nella sezione [precalcolo](math-hs:precalculus). Viene introdotto il concetto di [limite](infinitesimal-calculus:limits) e definito in termini topologici (intervalli, punti di accumulazione, insiemi aperti e chiusi,...). Il concetto di limite viene utilizzato per dare una definizione di [funzione continua](infinitesimal-calculus:continuous-fun). Vengono poi presentati alcuni teoremi e proprietà di limiti e funzioni continue.
 
+<!--
+````{dropdown} Contenuti e cosa sarebbe bene portare a casa
+:open:
+
+* Definizioni
+
+  * Definizione di funzione reale a variabile reale. Definizione di grafico di funzione, e rappresentazione in un piano cartesiano.
+  
+  * Definizione di limite nei casi finito/infinito al finito/infinito.
+  
+  * Definizione di funzione continua tramite uso di limite, che supporti la definizione "informale" di *funzione il cui grafico si può disegnare senza staccare la penna dal foglio*
+
+* Teoremi e operazioni:
+  * Teoremi sulle funzioni continue: enunciato e "giustificazione grafica"
+  * Operazioni con i limiti:
+    * limiti finiti: non ci sono troppe stranezze
+    * limiti infiniti, infinitesimi, e forme indeterminate
+  * Teoremi sui limiti:
+    * risultati che permettono il calcolo dei limiti
+
+````
+-->
+
+
+
+
 <!-- Real functions: f: R -> R -->
 (infinitesimal-calculus:analysis:real-functions)=
 ## Funzioni reali a variabile reale, $f: \mathbb{R} \rightarrow \mathbb{R}$
