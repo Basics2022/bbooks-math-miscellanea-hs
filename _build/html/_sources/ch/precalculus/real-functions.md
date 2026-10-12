@@ -24,11 +24,16 @@ E' comune chiamare $x$ **argomento** della funzione, o **variabile indipendente*
 
 (math-hs:precalculus:real-functions:plot)=
 ## Grafico di una funzione
-A una funzione $y = f(x)$ può essere associata una rappresentazione grafica, interpretando le variabili $x$, $y$ come coordinate che descrivono il piano. La rappresentazione comune le interpreta come *coordinate cartesiane*. Una funzione impone una relazione tra le due coordinate e in generale può essere rappresentato come una curva nel piano.
+A una funzione $f: D \subseteq \mathbb{R} \rightarrow \mathbb{R}$, $y = f(x)$, può essere associata una rappresentazione grafica, interpretando le le variabili $x$, $y$ come le coordinate che identificano un punto $P$ nel piano, come fatto in [geometria analitica](geometry:analytic). La rappresentazione più comune interpreta le variabili $x$, $y$ come *coordinate cartesiane* dei punti del piano. Una funzione impone una relazione tra le due coordinate e in generale può essere rappresentato come una [curva nel piano](geometry:analytic:2d:curves), il grafico della funzione, cioè l'insieme dei punti del piano tali che
+
+$$\text{Graph}( f ) = \{ (x, f(x)) \in \mathbb{R}^2 | x \in D \} \ .$$
 
 Ricordando che una funzione associa a ogni elemento del dominio uno e un solo elemento del codominio, il grafico di una funzione non può interesecare una retta parallela all'asse $y$ in due punti, cioè non possono esistere due valori $y_1$, $y_2$ della funzione per lo stesso valore della variabile indipendente $x$.
 
-**todo** esempi
+```{list-table}
+:header-rows: 0
+* - ![](../../media/tikz/analysis/function.svg)
+```
 
 (math-hs:precalculus:real-functions:types)=
 ## Classificazione di funzioni

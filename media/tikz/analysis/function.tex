@@ -1,0 +1,100 @@
+\documentclass[tikz,border=5pt]{standalone}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{arrows.meta}
+
+% \axes{<x-shift>}: draws x/y axes centred at (<x-shift>,0)
+\newcommand{\axes}[1]{%
+  \draw[-{Stealth[length=2mm]}] (#1-2.5,0) -- (#1+2.5,0) node[right] {$x$};
+  \draw[-{Stealth[length=2mm]}] (#1,-2.5) -- (#1,2.5) node[above] {$y$};%
+}
+
+\begin{document}
+\begin{tikzpicture}[scale=0.8,
+  cap/.style={text width=6.5cm, align=center, font=\small}]
+
+  \fill[white] (-5,-5) rectangle (15,5);
+
+  % ---------- Panel (a): graph of a function ----------
+  \axes{0}
+  \draw[thick, blue, domain=-1.8:1.8, samples=100]
+    plot (\x, {0.3*\x*\x*\x - 0.5*\x});
+  \node[blue, below right] at (1.8,0.85) {$y = f(x)$};
+  \draw[dashed, red] (1,-2.2) -- (1,2.2);
+  \filldraw[red] (1,{0.3 - 0.5}) circle (2pt);
+  \node[red, anchor=west] at (1.1,2.0) {1 intersection};
+  \node at (0,-3.4)
+    {\scriptsize{(a) Graph of a function: every vertical line hits at most once.}};
+
+  % ---------- Panel (b): not a function ----------
+  \begin{scope}[shift={(10.,0)}]
+    \axes{0}
+    \draw[thick, red] (0,0) circle (1.7);
+    \draw[dashed, red] (1,-2.2) -- (1,2.2);
+    \filldraw[red] (1, {sqrt(1.7*1.7 - 1)}) circle (2pt);
+    \filldraw[red] (1,{-sqrt(1.7*1.7 - 1)}) circle (2pt);
+    \node[red, anchor=west] at (1.1,2.0) {2 intersections};
+    \node at (0,-3.4)
+      {\scriptsize{(b) Not a function: a vertical line hits two different $y$ values.}};
+  \end{scope}
+
+\end{tikzpicture}
+\end{document}
+
+
+
+% \documentclass{article}
+% \usepackage[utf8]{inputenc}
+% \usepackage{tikz}
+% \usepackage{subcaption}
+% \usepackage{amsmath,amssymb}
+% \usepackage{geometry}
+% \geometry{a4paper, margin=1in}
+% 
+% \begin{document}
+% 
+% \section*{Session 1 Visualizations}
+% 
+% % --- FIGURE 2: Vertical Line Test ---
+% \begin{figure}[htbp]
+% \centering
+% \begin{subfigure}[b]{0.48\textwidth}
+% \centering
+% \begin{tikzpicture}[scale=0.8]
+%     % Axes
+%     \draw[->] (-2.5,0) -- (2.5,0) node[right] {$x$};
+%     \draw[->] (0,-2.5) -- (0,2.5) node[above] {$y$};
+%     
+%     % Function curve (cubic)
+%     \draw[thick, blue, domain=-1.8:1.8, samples=100] plot (\x, {0.3*(\x)*(\x)*(\x) - 0.5*(\x)});
+%     \node[blue] at (1.8, 1.8) {$y = f(x)$};
+%     
+%     % Vertical line test
+%     \draw[dashed, red] (1, -2) -- (1, 2);
+%     \filldraw[red] (1, {0.3*(1)*(1)*(1) - 0.5*(1)}) circle (2pt);
+%     \node[red, above right] at (1, 0) {1 intersection};
+% \end{tikzpicture}
+% \caption{Graph of a function: every vertical line hits at most once.}
+% \end{subfigure}
+% \hfill
+% \begin{subfigure}[b]{0.48\textwidth}
+% \centering
+% \begin{tikzpicture}[scale=0.8]
+%     % Axes
+%     \draw[->] (-2.5,0) -- (2.5,0) node[right] {$x$};
+%     \draw[->] (0,-2.5) -- (0,2.5) node[above] {$y$};
+%     
+%     % Circle radius 1.7
+%     \draw[thick, red] (0,0) circle (1.7cm);
+%     
+%     % Vertical line test (using safe multiplication 1.7*1.7)
+%     \draw[dashed, red] (1, -2.2) -- (1, 2.2);
+%     \filldraw[red] (1, {sqrt(1.7*1.7 - 1)}) circle (2pt);
+%     \filldraw[red] (1, {-sqrt(1.7*1.7 - 1)}) circle (2pt);
+%     \node[red, right] at (1, 1.2) {2 intersections};
+% \end{tikzpicture}
+% \caption{Not a function: a vertical line hits two different $y$ values.}
+% \end{subfigure}
+% \caption{The Vertical Line Test for real functions.}
+% \end{figure}
+% 
+% \end{document}

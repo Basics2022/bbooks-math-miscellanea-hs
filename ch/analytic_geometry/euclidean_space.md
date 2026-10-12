@@ -9,7 +9,22 @@
 (geometry:analytic:euclidean-space)=
 # Spazio euclideo
 
-**Approccio storico-applicativo**
+Qualitativamente, la geometria di Euclide corrisponde alla **concezione comune dello spazio** nel quale viviamo, e formalizzati negli *Elementi di Euclide*.
+
+
+```{prf:example} Geometria euclidea e senso comune 
+
+Alcuni esempi del senso comune formalizzato in una geometria euclidea
+
+- per un punto esterno a una retta $r$ in un piano $\pi$, passa una e una sola retta parallela alla retta data (*quinto postulato*)
+- la lunghezza $c$ dell'ipotenusa di un triangolo rettangolo può essere calcolata con il *teorema di Pitagora*, $c = \sqrt{a^2 + b^2}$, dove $a$, $b$ sono le lunghezze dei due cateti
+
+```
+
+
+```{dropdown} Approccio storico-applicativo
+:open:
+
 - *Elementi di Euclide*: formulazione assiomatica della geometria, partendo dalla definizione di concetti primitivi e postulati (5), viene sviluppata la teoria in teoremi e corollari, tramite un procedimento deduttivo.
 - Qualitativamente, la geometria di Euclide corrisponde alla concezione quotidiana dello spazio nel quale viviamo. Lo spazio euclideo fornisce il modello di spazio per la meccanica di Newton, formulata nel XVII secolo, e che rimane un ottimo modello ampiamente usato tutt'oggi per l'evoluzione di sistemi con dimensioni caratteristiche sufficientemente maggiori della scala atomica, e velocità caratteristiche sufficientemente minori della velocità della luce.
 - Una definizione più moderna di uno spazio euclideo si basa sulle traslazioni (**todo** citare Bowen, *Introduction to tensors and vectors*). Sia $E$ un insieme di elementi, definiti **punti**, e $V$ lo [spazio vettoriale delle traslazioni](math-hs:algebra:vector:def:examples), $E$ viene definito uno spazio euclideo se esiste una funzione $f: E \times E \rightarrow V$ che associa a due punti dell'insieme $E$ uno e un solo vettore traslazione $v \in V$ tale che
@@ -33,3 +48,5 @@
      ossia si può usare il **teorema di Pitagora** per il calcolo delle distanze.
 
 - **todo** cenni a spazi/geometrie non euclidee: esempi, e criteri "avanzati" per la definizione (basati su curvatura, geodesiche,...), e conseguenze,...
+
+```

@@ -15,6 +15,16 @@ $$\forall a \in A \quad \exists! b = f(a) \in B \ .$$
 L'insieme $A$ è definito **dominio**; l'insieme $B$ è definito **codominio**; il sottoinsieme degli elementi $b \in B$ per i quali esiste un $a \in A$ t.c. $b = f(a)$ è definito **immagine** della funzione.
 ```
 
+```{list-table}
+:header-rows: 0
+* - ![](../media/tikz/analysis/function-sets.svg)
+```
+La relazione rappresentata nell'immagine di sinistra è una funzione, poiché a ogni elemento del dominio assegna un solo elemento del codominio. La funzione non è suriettiva, poiché l'elemento $z \in B$ non è immagine di nessun elemento del dominio $A$. La funzione non è nemmeno iniettiva, poiché a due elementi distinti di $A$, $2$, $3$, è associato lo stesso elemento di $B$, $f(2) = f(3) = y$.
+
+La relazione rappresentata nell'immagine di destra non è nemmeno una funzione, poiché all'elemento $1 \in A$ associa due valori distinti di $B$.
+
+
+
 **Funzione suriettiva.** Una funzione è suriettiva se $B = \text{Im}(A)$, cioè per ogni elemento $b \in B$ esiste almeno un elemento $a \in A$ tale che $f(a) = b$.
 
 **Funzione iniettiva.** Una funzione è iniettiva se per ogni coppia $a_1, a_2 \in A$, con $a_1 \ne a_2$, segue che $f(a_1) \ne f(a_2)$.
