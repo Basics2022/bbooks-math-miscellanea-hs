@@ -15,9 +15,9 @@
 
 **Distanze e angoli.**
 
-**Curve nel piano.**
-* Rette
-* Coniche
+[**Curve nel piano**](geometry:analytic:2d:curves)
+* [Rette](geometry:analytic:2d:lines)
+* [Coniche](geometry:analytic:2d:conics)
 
 <!--
 - **Sistemi di coordinate, e punti nello spazio.** 

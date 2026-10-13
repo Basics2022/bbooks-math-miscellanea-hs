@@ -43,7 +43,7 @@ semplificando i termini $x^2$, $y^2$, e raccogliendo mettendo in evidenza le coo
 
 $$  2 ( x_2 - x_1 ) x + 2 ( y_2 - y_1 ) y - x_1^2 - y_1^2 - x_2^2 - y_2^2 = 0 \ ,$$
 
-che può essere riscritta in generale nella **forma esplicita**,
+che può essere riscritta in generale nella **forma implicita**,
 
 $$a \, x + b \, y + c = 0 \ ,$$
 
@@ -126,9 +126,16 @@ In geometria euclidea, due rette sono perpendicolari tra di loro se dividono il 
 $$\vec{v}_1 \cdot \vec{v}_2 = 0 \ ,$$
 
 ricordandosi le proprietà del [prodotto interno in spazi euclidei](math-hs:algebra:vector:euclidean-space:inner-product), e che $\cos \frac{\pi}{2} = 0$.
+
+<!--
+L'equazione in forma implicita $a x + b y + c = 0$, può essere interpretata come prodotto scalare tra il vettore posizione dei punti della retta $\vec{r} = x \hat{x} + y \hat{y}$ e il vettore $a \hat{x} + b \hat{y}$, il cui valore è costante e uguale a $-c$,
+
+$$-c = a x + b y = ( x \hat{x} + y \hat{y} ) \cdot \left(a \hat{x} + b \hat{y})$$
+-->
+
 Usando l'equazione in forma implicita,
 
-$$a_2 \, b_1 = - a_1 \, b_2 \ ,$$
+$$a_1 a_2 + b_1 b_2 = 0 \ ,$$
 
 o usando l'equazione in forma esplicita (nel caso le due rette non siano parallele a un asse),
 
