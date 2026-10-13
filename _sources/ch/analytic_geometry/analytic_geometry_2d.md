@@ -1,15 +1,27 @@
+<!--
 ```{article-info}
 :author: basics
 :date: "{sub-ref}`today`"
 :read-time: "{sub-ref}`wordcount-minutes` min read"
 ```
+-->
 
 (geometry:analytic:2d)=
 # Geometria analitica nel piano
 
-La geometria analitica nel piano si occupa della descrizione dello spazio bidimensionale euclideo e delle entità geometriche in esso, grazie all'uso di sistemi di coordinate $(q^1, q^2)$.
+**Rappresentazione dei punti nello spazio.**
+* [**Coordinate**](geometry:analytic:2d:coordinates). La geometria analitica nel piano si occupa della descrizione dello spazio bidimensionale euclideo e delle entità geometriche in esso, grazie all'uso di sistemi di coordinate $(q^1, q^2)$.
+* [**Vettore posizione**](geometry:analytic:2d:vectors).
 
-- **Sistemi di coordinate, e punti nello spazio.** Vengono presentati:
+**Distanze e angoli.**
+
+**Curve nel piano.**
+* Rette
+* Coniche
+
+<!--
+- **Sistemi di coordinate, e punti nello spazio.** 
+Vengono presentati:
   - alcuni sistemi di coordinate che risulteranno utili nello studio della geometria analitica nel piano, 
   - le regole di trasformazione tra sistemi di coordinate
   - le trasformazioni degli enti geometrici; ad esempio: traslazioni, rotazioni, riflessioni,...
@@ -22,5 +34,5 @@ La geometria analitica nel piano si occupa della descrizione dello spazio bidime
     - introduzione: ...motivazione della loro importanza (gravitazione, ottica,...)
     - def, equazioni e caratteristiche con un'oppportuna scelta del sistema di coordinate; successivamente traslazione e rotazione
     - ...
-
+-->
 

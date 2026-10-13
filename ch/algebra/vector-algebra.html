@@ -71,7 +71,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="7.1. Prime definizioni" href="vector-algebra-def.html" />
+    <link rel="next" title="7.1. Defizioni e operazioni" href="vector-algebra-def.html" />
     <link rel="prev" title="6. Algebra lineare" href="linear-algebra.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
@@ -195,7 +195,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="real-n-algebra.html">5. Algebra su <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span></a></li>
 <li class="toctree-l1"><a class="reference internal" href="linear-algebra.html">6. Algebra lineare</a></li>
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">7. Algebra vettoriale</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="vector-algebra-def.html">7.1. Prime definizioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vector-algebra-def.html">7.1. Defizioni e operazioni</a></li>
 <li class="toctree-l2"><a class="reference internal" href="vector-algebra-euclidean-space.html">7.2. Spazio vettoriale euclideo</a></li>
 </ul>
 </li>
@@ -237,7 +237,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../precalculus.html">14. Introduzione al pre-calcolo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../precalculus/real-functions.html">15. Funzioni reali a variabile reale, <span class="math notranslate nohighlight">\(f: D \subseteq \mathbb{R} \rightarrow \mathbb{R}\)</span></a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../series.html">16. Serie e successioni numeriche</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../series/series-numerical-real.html">16.11. Serie e successioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../series/sequence-numerical-real.html">16.1. Successioni numeriche reali</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../series/series-numerical-real.html">16.2. Serie di numeri reali</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../difference-equations.html">17. Equazioni alle differenze</a></li>
@@ -280,25 +281,26 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../control-intro.html">27.4. Introduzione ai sistemi di controllo</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../multivariable-calculus.html">28. Introduzione al calcolo multi-variabile</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../multivariable-calculus/limits.html">28.1. Limite di una funzione di più variabili</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../multivariable-calculus/derivatives.html">28.2. Derivate di funzioni di più variabili</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../multivariable-calculus/integrals.html">28.3. Integrali su domini multi-dimensionali</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../series/series-functions-real.html">28. Successioni e serie di funzioni reali</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../multivariable-calculus.html">29. Introduzione al calcolo multi-variabile</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../multivariable-calculus/limits.html">29.1. Limite di una funzione di più variabili</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../multivariable-calculus/derivatives.html">29.2. Derivate di funzioni di più variabili</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../multivariable-calculus/integrals.html">29.3. Integrali su domini multi-dimensionali</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../vector-calculus.html">29. Introduzione al calcolo vettoriale su spazi euclidei</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../vector-calculus/geometry.html">29.1. Cenni di geometria differenziale</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../vector-calculus/integrals.html">29.2. Integrali in spazi euclidei</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../vector-calculus/derivatives.html">29.3. Operatori differenziali in spazi euclidei</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../vector-calculus/stokes.html">29.4. Teorema di Stokes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../vector-calculus/problems.html">29.5. Problemi</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../vector-calculus.html">30. Introduzione al calcolo vettoriale su spazi euclidei</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../vector-calculus/geometry.html">30.1. Cenni di geometria differenziale</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../vector-calculus/integrals.html">30.2. Integrali in spazi euclidei</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../vector-calculus/derivatives.html">30.3. Operatori differenziali in spazi euclidei</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../vector-calculus/stokes.html">30.4. Teorema di Stokes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../vector-calculus/problems.html">30.5. Problemi</a></li>
 </ul>
 </li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Statistica</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../statistics.html">30. Introduzione alla statistica</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../statistics/combinatorics.html">30.1. Calcolo combinatorio</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../statistics.html">31. Introduzione alla statistica</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../statistics/combinatorics.html">31.1. Calcolo combinatorio</a></li>
 </ul>
 </li>
 </ul>
@@ -529,18 +531,17 @@ document.write(`
 -->
 <div class="tex2jax_ignore mathjax_ignore section" id="algebra-vettoriale">
 <span id="math-hs-algebra-vector"></span><h1><span class="section-number">7. </span>Algebra vettoriale<a class="headerlink" href="#algebra-vettoriale" title="Permalink to this heading">#</a></h1>
-<ul class="simple">
-<li><p>Definizione di spazio vettoriale: struttura algebrica e proprietà delle operazioni</p></li>
-<li><p>Definizione di combinazione lineare, vettori linearmente indipendenti</p></li>
-<li><p>Definizione di base di uno spazio vettoriale</p></li>
-<li><p>Spazio vettoriale euclideo:</p>
-<ul>
-<li><p>prodotto scalare e norma</p></li>
-<li><p>base ortonormale</p></li>
-<li><p>definizione del prodotto vettoriale</p></li>
-</ul>
-</li>
-</ul>
+<p><a class="reference internal" href="vector-algebra-def.html#math-hs-algebra-vector-def"><span class="std std-ref"><strong>Prime definizioni e operazioni.</strong></span></a> Definizione di spazio vettoriale; prime operazioni con i vettori (prodotto per uno scalare, somma di vettori); esempi; definizione di vettori linearmente indipendenti, di base e di dimensione dello spazio vettoriale.</p>
+<p><a class="reference internal" href="../algebra.html"><span class="doc std std-doc"><strong>Vettori in uno spazio euclideo.</strong></span></a> Scelta di un’origine e creazione di uno spazio vettoriale in uno spazio euclideo; prodotto interno tra vettori;  modulo di un vettore; base cartesiana; prodotto vettoriale; prodotto misto</p>
+<!--
+- Definizione di spazio vettoriale: struttura algebrica e proprietà delle operazioni
+- Definizione di combinazione lineare, vettori linearmente indipendenti
+- Definizione di base di uno spazio vettoriale
+- Spazio vettoriale euclideo:
+  - prodotto scalare e norma
+  - base ortonormale
+  - definizione del prodotto vettoriale
+-->
 <div class="toctree-wrapper compound">
 </div>
 </div>
@@ -589,7 +590,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">7.1. </span>Prime definizioni</p>
+        <p class="prev-next-title"><span class="section-number">7.1. </span>Defizioni e operazioni</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

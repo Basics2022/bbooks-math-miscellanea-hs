@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>12.1. Sistemi di coordinate &#8212; Matematica per le scuole superiori</title>
+    <title>12.1. Punti nel piano. Sistemi di coordinate &#8212; Matematica per le scuole superiori</title>
   
   
   
@@ -73,7 +73,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../../../genindex.html" />
     <link rel="search" title="Cerca" href="../../../search.html" />
-    <link rel="next" title="12.2. Distanze e angoli" href="points.html" />
+    <link rel="next" title="12.2. Punti nel piano. Vettori posizione" href="vectors.html" />
     <link rel="prev" title="12. Geometria analitica nel piano" href="../analytic_geometry_2d.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
@@ -197,7 +197,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../../algebra/real-n-algebra.html">5. Algebra su <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../algebra/linear-algebra.html">6. Algebra lineare</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../algebra/vector-algebra.html">7. Algebra vettoriale</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../algebra/vector-algebra-def.html">7.1. Prime definizioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../algebra/vector-algebra-def.html">7.1. Defizioni e operazioni</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../algebra/vector-algebra-euclidean-space.html">7.2. Spazio vettoriale euclideo</a></li>
 </ul>
 </li>
@@ -209,20 +209,21 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../../analytic_geometry.html">10. Introduzione alla geometria analitica</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../euclidean_space.html">11. Spazio euclideo</a></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../analytic_geometry_2d.html">12. Geometria analitica nel piano</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">12.1. Sistemi di coordinate</a></li>
-<li class="toctree-l2"><a class="reference internal" href="points.html">12.2. Distanze e angoli</a></li>
-<li class="toctree-l2"><a class="reference internal" href="curves.html">12.3. Curve nel piano</a></li>
-<li class="toctree-l2"><a class="reference internal" href="lines.html">12.4. Rette nel piano</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="conics.html">12.5. Coniche</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="conics-cartesian.html">12.5.1. Forma canonica in coordinate cartesiane</a></li>
-<li class="toctree-l3"><a class="reference internal" href="conics-polar.html">12.5.2. Forma canonica in coordinate polari</a></li>
-<li class="toctree-l3"><a class="reference internal" href="conics-general.html">12.5.3. Equazione generale delle coniche</a></li>
-<li class="toctree-l3"><a class="reference internal" href="conics-and-quadratic-forms.html">12.5.4. Coniche e forme quadratiche simmetriche</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">12.1. Punti nel piano. Sistemi di coordinate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vectors.html">12.2. Punti nel piano. Vettori posizione</a></li>
+<li class="toctree-l2"><a class="reference internal" href="points.html">12.3. Distanze e angoli</a></li>
+<li class="toctree-l2"><a class="reference internal" href="curves.html">12.4. Curve nel piano</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lines.html">12.5. Rette nel piano</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="conics.html">12.6. Coniche</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="conics-cartesian.html">12.6.1. Forma canonica in coordinate cartesiane</a></li>
+<li class="toctree-l3"><a class="reference internal" href="conics-polar.html">12.6.2. Forma canonica in coordinate polari</a></li>
+<li class="toctree-l3"><a class="reference internal" href="conics-general.html">12.6.3. Equazione generale delle coniche</a></li>
+<li class="toctree-l3"><a class="reference internal" href="conics-and-quadratic-forms.html">12.6.4. Coniche e forme quadratiche simmetriche</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="problems.html">12.6. Problemi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sol.html">12.7. Soluzioni</a></li>
-<li class="toctree-l2"><a class="reference internal" href="notes.html">12.8. Note e dimostrazioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="problems.html">12.7. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sol.html">12.8. Soluzioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notes.html">12.9. Note e dimostrazioni</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../analytic_geometry_3d.html">13. Geometria analitica nello spazio</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -512,7 +513,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Sistemi di coordinate</h1>
+    <h1>Punti nel piano. Sistemi di coordinate</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -523,9 +524,9 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">12.1.1. Esempi</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trasformazione-di-coordinate">12.1.2. Trasformazione di coordinate</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trasformazione-tra-coordinate-cartesiane-e-polari">12.1.3. Trasformazione tra coordinate cartesiane e polari</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#trasformazione-di-coordinate-tra-sistemi-cartesiani-con-origine-e-assi-diversi">12.1.3.1. Trasformazione di coordinate tra sistemi cartesiani con origine e assi diversi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trasformazione-di-coordinate">12.1.2. Trasformazione di coordinate</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#trasformazione-tra-coordinate-cartesiane-e-polari-con-stessa-origine">12.1.2.1. Trasformazione tra coordinate cartesiane e polari con stessa origine</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#trasformazione-di-coordinate-tra-sistemi-cartesiani-con-origine-e-assi-diversi">12.1.2.2. Trasformazione di coordinate tra sistemi cartesiani con origine e assi diversi</a></li>
 </ul>
 </li>
 </ul>
@@ -539,10 +540,12 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="sistemi-di-coordinate">
-<span id="geometry-analytic-2d-coordinates"></span><h1><span class="section-number">12.1. </span>Sistemi di coordinate<a class="headerlink" href="#sistemi-di-coordinate" title="Permalink to this heading">#</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="punti-nel-piano-sistemi-di-coordinate">
+<span id="geometry-analytic-2d-coordinates"></span><h1><span class="section-number">12.1. </span>Punti nel piano. Sistemi di coordinate<a class="headerlink" href="#punti-nel-piano-sistemi-di-coordinate" title="Permalink to this heading">#</a></h1>
 <p>Il piano è uno spazio euclideo a due dimensioni, poiché i suoi punti possono essere descritti da una coppia di numeri - coordinate. I sistemi di coordiante più comuni per la rappresentazione dei punti del piano sono i <strong>sistemi di coordinate cartesiane</strong> e i <strong>sistemi di coordinate polari</strong>. Si possono scegliere diversi sistemi di coordinate (tipicamente si sceglie il sistema più comodo per il problema da affrontare) per descrivere lo stesso problema: il problema rimane comunque invariante rispetto alla scelta arbitraria del sistema di coordinate. Questa invarianza è direttamente legata alla legge di trasformazione delle coordinate di diversi sistemi.</p>
-<p>L’invarianza di un problema dalla scelta arbitraria del sistema di coordinate viene discussa nell’esempio <a class="reference internal" href="#ex-coord-invariance-interactive">Example 12.2</a>.</p>
+<!--
+L'invarianza di un problema dalla scelta arbitraria del sistema di coordinate viene discussa nell'esempio {prf:ref}`ex-coord-invariance-interactive`.
+-->
 <div class="section" id="esempi">
 <span id="geometry-analytic-2d-coordinates-examples"></span><h2><span class="section-number">12.1.1. </span>Esempi<a class="headerlink" href="#esempi" title="Permalink to this heading">#</a></h2>
 <p><strong>Sistema di coordinate cartesiane, <span class="math notranslate nohighlight">\((x,y)\)</span>.</strong> Per corstuire un sistema di coordinate cartesiane, servono:</p>
@@ -559,57 +562,97 @@ document.write(`
 </ul>
 <table class="table">
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col style="width: 50%" />
+<col style="width: 50%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><img alt="" src="../../../_images/coordinates-cartesian.svg" /></p></td>
-<td><p><img alt="" src="../../../_images/coordinates-cartesian-polar.svg" /></p></td>
-<td><p><img alt="" src="../../../_images/coordinates-polar.svg" /></p></td>
+<tr class="row-odd"><td><p><img alt="Rappresentazione di 3 punti con coordinate cartesiane " src="../../../_images/coordinates-cartesian.svg" /></p></td>
+<td><p><img alt="Rappresentazione di 3 punti con coordinate polari " src="../../../_images/coordinates-polar.svg" /></p></td>
 </tr>
 </tbody>
 </table>
-<div class="proof example admonition" id="ex-coords-cartesian-polar">
-<p class="admonition-title"><span class="caption-number">Example 12.1 </span> (Coordinate cartesiane e coordinate polari)</p>
-<div class="example-content section" id="proof-content">
-<p>Una volta definito il sistema di coordinate cartesiano rappresentato nella figura di sinistra, i tre punti <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span>, <span class="math notranslate nohighlight">\(C\)</span> possono essere identificati con le loro coordinate cartesiane rispetto a questo sistema di riferimento</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-A: \ &amp; (x_A, y_A) = (3,5) \\
-B: \ &amp; (x_B, y_B) = (-4, 3) \\
-C: \ &amp; (x_C, y_C) = (1, -4) \\
-\end{aligned}\end{split}\]</div>
+<p>Rappresentazione di punti nel piano. Nell’immagine di sinistra, vengono usate coordinate cartesiane <span class="math notranslate nohighlight">\(P \equiv (x_P, y_P)\)</span>. Nell’immagine di destra, vengono usate coordinate polari <span class="math notranslate nohighlight">\(P \equiv (r_P, \theta_P)\)</span>. L’unità di misura naturale degli angoli sono i <strong>radianti</strong>.</p>
 </div>
-</div><div class="proof example admonition" id="ex-coord-invariance-interactive">
-<p class="admonition-title"><span class="caption-number">Example 12.2 </span></p>
-<div class="example-content section" id="proof-content">
-<iframe src="../../../_static/coordinate-transform.html" width="100%" height="800" style="border:0"></iframe>
-<!--
-height="1100"
--->
-</div>
-</div></div>
 <div class="section" id="trasformazione-di-coordinate">
 <span id="geometry-analytic-2d-coordinates-transform"></span><h2><span class="section-number">12.1.2. </span>Trasformazione di coordinate<a class="headerlink" href="#trasformazione-di-coordinate" title="Permalink to this heading">#</a></h2>
 <p>Vengono discusse alcune leggi di trasformazione tra le coordinate di diversi sistemi di coordinate.</p>
-</div>
-<div class="section" id="trasformazione-tra-coordinate-cartesiane-e-polari">
-<span id="geometry-analytic-2d-coordinates-transform-cartesian-polar"></span><h2><span class="section-number">12.1.3. </span>Trasformazione tra coordinate cartesiane e polari<a class="headerlink" href="#trasformazione-tra-coordinate-cartesiane-e-polari" title="Permalink to this heading">#</a></h2>
-<p>Se si usano le stesse unità di misura per la lunghezza sui due assi cartesiani, e per la coordinata polare di un sistema di riferimento polare, la legge di trasformazione delle coordinate tra un sistema di coordinate cartesiane ortonormale e un sistema di coordinate polari, con la stessa origine e l’asse <span class="math notranslate nohighlight">\(x\)</span> come direzione di riferimento per la misura dell’angolo <span class="math notranslate nohighlight">\(\theta\)</span> è</p>
+<!--
+L'esempio {prf:ref}`ex-coord-invariance-interactive` mostra la variazione delle coordinate di un punto $P$ al variare del sistema di coordinate scelto.
+-->
+<!--
+```{prf:example} Esempio interattivo di trasformazione di coordinate di un punto $\ P$ nel piano, e invarianza
+:label: ex-coord-invariance-interactive
+
+In questo esempio viene mostrata la trasformazione di coordinate di un punto $P$ appartenente a un piano. Senza toccare il punto $P$ rispetto al piano, ma modificando i sistemi di riferimento, le coordinate cambiano. 
+
+
+<iframe src="../../../_static/coordinate-transform.html" width="100%" height="800" style="border:0"></iframe>
+
+height="1100"
+
+
+```
+-->
+<div class="section" id="trasformazione-tra-coordinate-cartesiane-e-polari-con-stessa-origine">
+<span id="geometry-analytic-2d-coordinates-transform-cartesian-polar"></span><h3><span class="section-number">12.1.2.1. </span>Trasformazione tra coordinate cartesiane e polari con stessa origine<a class="headerlink" href="#trasformazione-tra-coordinate-cartesiane-e-polari-con-stessa-origine" title="Permalink to this heading">#</a></h3>
+<p>In questa sezione viene discussa la trasformazione di coordinate tra un sistema cartesiano e un sistema polare</p>
+<ul class="simple">
+<li><p>con la stessa origine</p></li>
+<li><p>con le stesse unità di misura per la lunghezza sui due assi cartesiani, e per la coordinata radiale <span class="math notranslate nohighlight">\(r\)</span> di un sistema di riferimento polare,</p></li>
+</ul>
+<p>Sotto queste ipotesi, la legge di trasformazione delle coordinate tra un sistema di coordinate cartesiane ortonormale e un sistema di coordinate polari, con la stessa origine e l’asse <span class="math notranslate nohighlight">\(x\)</span> come direzione di riferimento per la misura dell’angolo <span class="math notranslate nohighlight">\(\theta\)</span> è</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{cases}
   x = r \cos \theta \\
   y = r \sin \theta \ .
 \end{cases}\end{split}\]</div>
 <p>Note le coordinate <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span> si possono calcolare le coordinate polari come</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{cases}
+<div class="math notranslate nohighlight" id="equation-eq-coords-cartesian-to-polar">
+<span class="eqno">(12.1)<a class="headerlink" href="#equation-eq-coords-cartesian-to-polar" title="Permalink a questa equazione">#</a></span>\[\begin{split}\begin{cases}
   r = \sqrt{x^2 + y^2} \\
   \theta \quad \text{tale che} \quad \cos \theta = \frac{x}{\sqrt{x^2+y^2}} \quad \text{e} \quad \sin \theta = \frac{y}{\sqrt{x^2+y^2}}
 \end{cases}\end{split}\]</div>
+<p><img alt="" src="../../../_images/coordinates-cartesian-polar.svg" /></p>
+<div class="proof example admonition" id="ex-coords-cartesian-polar">
+<p class="admonition-title"><span class="caption-number">Example 12.1 </span> (Coordinate cartesiane e coordinate polari)</p>
+<div class="example-content section" id="proof-content">
+<table class="table">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><img alt="" src="../../../_images/coordinates-cartesian-1.svg" /></p></td>
+<td><p><img alt="" src="../../../_images/coordinates-polar-1.svg" /></p></td>
+</tr>
+</tbody>
+</table>
+<p>Una volta definito il sistema di coordinate cartesiano rappresentato nella figura di sinistra, i tre punti <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span>, <span class="math notranslate nohighlight">\(C\)</span> possono essere identificati con le loro coordinate cartesiane rispetto a questo sistema di riferimento</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+A: \ &amp; (x_A, y_A) = (2, 2\sqrt{3}) \\
+B: \ &amp; (x_B, y_B) = (-4, 4) \\
+C: \ &amp; (x_C, y_C) = (0, -3) \\
+\end{aligned}\end{split}\]</div>
+<p>Usando le relazioni <a class="reference internal" href="#equation-eq-coords-cartesian-to-polar">(12.1)</a>, si possono calcolare le coordinate polari dei punti <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span>, <span class="math notranslate nohighlight">\(C\)</span>, rispetto a un sistema di coordinate polari con la stessa origine e con l’asse <span class="math notranslate nohighlight">\(x\)</span> come direzione di riferimento per la misura degli angoli. Ad esempio, per il punto <span class="math notranslate nohighlight">\(A\)</span></p>
+<ul>
+<li><p>la coordinata radiale <span class="math notranslate nohighlight">\(r_A\)</span> è</p>
+<div class="math notranslate nohighlight">
+\[r_A = \sqrt{x_A^2 + y_A^2} = \sqrt{ 4 + 12 } = 4\]</div>
+</li>
+<li><p>la coordinata angolare <span class="math notranslate nohighlight">\(\theta_A\)</span> è quell’angolo che ha</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+      \cos \theta_A &amp; = \frac{x_A}{r_A} = \frac{2}{4} = \frac{1}{2} \\
+      \sin \theta_A &amp; = \frac{y_A}{r_A} = \frac{2 \sqrt{3}}{4} = \frac{\sqrt{3}}{2} \ ,
+   \end{aligned}\end{split}\]</div>
+<p>e quindi è l’angolo  <span class="math notranslate nohighlight">\(\theta_A = \frac{\pi}{3}\)</span>, cioè l’angolo di <span class="math notranslate nohighlight">\(60^\circ\)</span>.</p>
+</li>
+</ul>
+</div>
+</div></div>
 <div class="section" id="trasformazione-di-coordinate-tra-sistemi-cartesiani-con-origine-e-assi-diversi">
-<span id="geometry-analytic-2d-coordinates-transform-cartesian"></span><h3><span class="section-number">12.1.3.1. </span>Trasformazione di coordinate tra sistemi cartesiani con origine e assi diversi<a class="headerlink" href="#trasformazione-di-coordinate-tra-sistemi-cartesiani-con-origine-e-assi-diversi" title="Permalink to this heading">#</a></h3>
+<span id="geometry-analytic-2d-coordinates-transform-cartesian"></span><h3><span class="section-number">12.1.2.2. </span>Trasformazione di coordinate tra sistemi cartesiani con origine e assi diversi<a class="headerlink" href="#trasformazione-di-coordinate-tra-sistemi-cartesiani-con-origine-e-assi-diversi" title="Permalink to this heading">#</a></h3>
 <table class="table">
 <colgroup>
 <col style="width: 33%" />
@@ -700,11 +743,11 @@ height="1100"
       </div>
     </a>
     <a class="right-next"
-       href="points.html"
+       href="vectors.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">12.2. </span>Distanze e angoli</p>
+        <p class="prev-next-title"><span class="section-number">12.2. </span>Punti nel piano. Vettori posizione</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -724,9 +767,9 @@ height="1100"
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">12.1.1. Esempi</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trasformazione-di-coordinate">12.1.2. Trasformazione di coordinate</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trasformazione-tra-coordinate-cartesiane-e-polari">12.1.3. Trasformazione tra coordinate cartesiane e polari</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#trasformazione-di-coordinate-tra-sistemi-cartesiani-con-origine-e-assi-diversi">12.1.3.1. Trasformazione di coordinate tra sistemi cartesiani con origine e assi diversi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trasformazione-di-coordinate">12.1.2. Trasformazione di coordinate</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#trasformazione-tra-coordinate-cartesiane-e-polari-con-stessa-origine">12.1.2.1. Trasformazione tra coordinate cartesiane e polari con stessa origine</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#trasformazione-di-coordinate-tra-sistemi-cartesiani-con-origine-e-assi-diversi">12.1.2.2. Trasformazione di coordinate tra sistemi cartesiani con origine e assi diversi</a></li>
 </ul>
 </li>
 </ul>
