@@ -32,6 +32,9 @@ parts:
     sections:
     - file: ch/algebra/vector-algebra-def
     - file: ch/algebra/vector-algebra-euclidean-space
+      sections:
+      - file: ch/algebra/vector-algebra-euclidean-space-2d
+      - file: ch/algebra/vector-algebra-euclidean-space-3d
   - file: ch/algebra/complex-algebra-link
   - file: ch/algebra/set-algebra-link
 - caption: Geometria analitica

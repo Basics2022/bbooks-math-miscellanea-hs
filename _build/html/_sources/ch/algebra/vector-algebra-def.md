@@ -122,6 +122,7 @@ forma uno spazio vettoriale con le usuali definizioni di somma e moltiplicazione
 ```
 
 
+(math-hs:algebra:vector:def:basis)=
 ## Base di uno spazio vettoriale
 
 **Combinazione lineare.** Una combinazione lineare di $D$ vettori $\{ \mathbf{u}_i \}_{i=1:D}$ è data dalla somma 

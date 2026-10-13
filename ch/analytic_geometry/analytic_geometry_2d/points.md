@@ -20,7 +20,9 @@ $$|\vec{v}| = \sqrt{v_x^2 + v_y^2} \ .$$
 (geometry:analytic:2d:points:angles)=
 ## Angoli tra due direzioni
 
+Due direzioni possono essere rappresentate tramite vettori, $\hat{u}$, $\hat{v}$. Sfruttando le proprietà del prodotto scalare tra due vettori, l'angolo tra di essi vale
 
+$$\cos \theta_{uv} = \frac{\vec{u} \cdot \vec{v}}{|\vec{u}| |\vec{v}| \ .}$$
 
 
 (geometry:analytic:2d:points:point-line-distance)=

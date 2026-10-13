@@ -53,15 +53,23 @@
     \coordinate (A) at (2, {2*sqrt(3)}); % A = (2, 2\sqrt{3})
     \coordinate (B) at (-4, 4);          % B = (-4, 4)
     \coordinate (C) at (0, -3);          % C = (0, -3)
-
-    % --- UNIT VECTORS (i and j) ---
-    \draw[->, >=stealth, green!50!black, very thick] (O) -- (1,0) node[above right, font=\large] {$\hat{\mathbf{x}}$};
-    \draw[->, >=stealth, green!50!black, very thick] (O) -- (0,1) node[above left, font=\large] {$\hat{\mathbf{y}}$};
+    \coordinate (Ax) at (2, 0);           % Ax
+    \coordinate (Ay) at (0, {2*sqrt(3)}); % Ay
 
     % --- POSITION VECTORS (r_A, r_B, r_C) ---
     \draw[->, >=stealth, red!40!black, very thick] (O) -- (A) node[midway, right, font=\large] {$\mathbf{r}_A = 2 \hat{\mathbf{x}} + 2 \sqrt{3} \hat{\mathbf{y}}$};
     \draw[->, >=stealth, red!40!black, very thick] (O) -- (B) node[midway, below left, font=\large] {$\mathbf{r}_B = -4 \hat{\mathbf{x}} -4 \hat{\mathbf{y}}$};
     \draw[->, >=stealth, red!40!black, very thick] (O) -- (C) node[midway, right, font=\large] {$\mathbf{r}_C = - 3 \hat{\mathbf{y}}$};
+    
+    \draw[->, >=stealth, red!60!black, very thick] (O) -- (Ax) node[midway, below right, font=\large] {$2 \hat{\mathbf{x}}$};
+    \draw[->, >=stealth, red!60!black, very thick] (O) -- (Ay) node[midway, above left, font=\large] {$2\sqrt{3} \hat{\mathbf{y}}$};
+    
+    \draw[->, >=stealth, red!60!black, dashed, very thick] (Ax) -- (A);
+    \draw[->, >=stealth, red!60!black, dashed, very thick] (Ay) -- (A);
+
+    % --- UNIT VECTORS (i and j) ---
+    \draw[->, >=stealth, green!50!black, very thick] (O) -- (1,0) node[above right, font=\large] {$\hat{\mathbf{x}}$};
+    \draw[->, >=stealth, green!50!black, very thick] (O) -- (0,1) node[above left, font=\large] {$\hat{\mathbf{y}}$};
 
     % --- POINTS & LABELS ---
     \fill (A) circle (2pt) node[above right, font=\small] {$A \equiv (2, 2\sqrt{3})$};

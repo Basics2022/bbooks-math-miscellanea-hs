@@ -22,10 +22,10 @@ $$\mathbf{r}_P = x_P \hat{\mathbf{x}} + y_P \hat{\mathbf{y}} \ .$$ (eq:analytic-
 ```{dropdown} Geometria analitica e introduzione ai vettori
 :open:
 
-Questa può essere usata come una prima introduzione abbastanza pratica ai [vettori](math-hs:algebra:vector). Qui è già stato introdotto il concetto di:
-* base di spazio vettoriale, i **due** (numero minimo per un piano) vettori $\hat{\mathbf{x}}$, $\hat{\mathbf{y}}$ che possono essere combinati tramite la {eq}`eq:analytic-geometry:vector` per ottenere **tutti** i punti del piano
-* le operazioni elementari:
-  * prodotto per uno scalare: ogni componente cartesiana (numero scalare) moltiplica un vettore della base, $x_P \hat{\mathbf{x}}$
+Questa può essere usata come una prima introduzione abbastanza pratica ai [vettori](math-hs:algebra:vector). Qui sono stati introdotti qualitativamente
+* il concetto di [base di uno spazio vettoriale](math-hs:algebra:vector:def:basis), i **due** (numero minimo per un piano; due sono necessari e sufficienti) vettori $\hat{\mathbf{x}}$, $\hat{\mathbf{y}}$ che possono essere combinati tramite la {eq}`eq:analytic-geometry:vector` per ottenere **tutti** i punti del piano
+* le [operazioni vettoriali elementari](math-hs:algebra:vector:def:operations):
+  * prodotto per uno scalare: ogni componente cartesiana (numero scalare) moltiplica un vettore della base. Ad esempio, per la componente $x$, il prodotto tra il numero $x_P$ e il vettore $\hat{\mathbf{x}}$, $x_P \hat{\mathbf{x}}$, è ancora un vettore, con la stessa direzione di $\hat{\mathbf{x}}$ e la lunghezza uguale a $|x_P|$
   * somma di vettori: sia $x_P \hat{\mathbf{x}}$, sia $y_P \hat{\mathbf{y}}$ sono ancora vettori. La loro somma dà il vettore posizione $\mathbf{r}_P$
 
 ```

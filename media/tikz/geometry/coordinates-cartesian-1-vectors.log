@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.9.16)  13 OCT 2026 13:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.9.16)  13 OCT 2026 14:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -506,10 +506,10 @@ e
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 (./coordinates-cartesian-1-vectors.aux) ) 
 Here is how much of TeX's memory you used:
- 13190 strings out of 483172
- 262561 string characters out of 5965816
- 496653 words of memory out of 5000000
- 27947 multiletter control sequences out of 15000+600000
+ 13206 strings out of 483172
+ 262776 string characters out of 5965816
+ 498863 words of memory out of 5000000
+ 27963 multiletter control sequences out of 15000+600000
  538884 words of font info for 47 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  60i,7n,60p,432b,672s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -521,7 +521,7 @@ s/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 r12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on coordinates-cartesian-1-vectors.pdf (1 page, 67842 bytes).
+Output written on coordinates-cartesian-1-vectors.pdf (1 page, 68052 bytes).
 PDF statistics:
  43 PDF objects out of 1000 (max. 8388607)
  31 compressed objects within 1 object stream
