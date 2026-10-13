@@ -3,7 +3,7 @@
 
 Il piano è uno spazio euclideo a due dimensioni, poiché i suoi punti possono essere descritti da una coppia di numeri - coordinate. I sistemi di coordiante più comuni per la rappresentazione dei punti del piano sono i **sistemi di coordinate cartesiane** e i **sistemi di coordinate polari**. Si possono scegliere diversi sistemi di coordinate (tipicamente si sceglie il sistema più comodo per il problema da affrontare) per descrivere lo stesso problema: il problema rimane comunque invariante rispetto alla scelta arbitraria del sistema di coordinate. Questa invarianza è direttamente legata alla legge di trasformazione delle coordinate di diversi sistemi.
 
-L'invarianza di un problema dalla scelta arbitraria del sistema di coordinate viene discussa nell'esempio {prf:ref}`ex-coords-cartesian-polar`.
+L'invarianza di un problema dalla scelta arbitraria del sistema di coordinate viene discussa nell'esempio {prf:ref}`ex-coord-invariance-interactive`.
 
 (geometry:analytic:2d:coordinates:examples)=
 ## Esempi
@@ -40,8 +40,17 @@ C: \ & (x_C, y_C) = (1, -4) \\
 
 ```
 
+```{prf:example}
+:label: ex-coord-invariance-interactive
+
+<iframe src="../../../_static/coordinate-transform.html" width="100%" height="800" style="border:0"></iframe>
+
+<!--
+height="1100"
+-->
 
 
+```
 
 
 (geometry:analytic:2d:coordinates:transform)=

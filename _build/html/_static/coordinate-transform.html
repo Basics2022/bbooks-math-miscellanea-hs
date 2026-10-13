@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trasformazioni di coordinate</title>
+<style>
+:root{--bg:#f4f4f6;--fg:#1b1b1f;--card:#fff;--line:#d5d5da;--s1:#1f3fd0;--s2:#d1302b;}
+*{box-sizing:border-box}
+html,body{margin:0;background:transparent;color:var(--fg);
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+#app{max-width:980px;margin:0 auto;padding:10px;background:var(--bg);border-radius:10px}
+.controls{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;font-size:14px;margin-bottom:10px}
+.controls label{display:inline-flex;gap:6px;align-items:center}
+.controls .s1{color:var(--s1);font-weight:600}
+.controls .s2{color:var(--s2);font-weight:600}
+select,button{font:inherit;padding:3px 8px}
+button{cursor:pointer}
+.main{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:12px;align-items:start}
+@media(max-width:720px){.main{grid-template-columns:1fr}}
+svg{width:100%;height:auto;display:block;background:#e3e3e6;border-radius:8px;
+  touch-action:none;user-select:none;-webkit-user-select:none}
+.hint{font-size:12.5px;color:#55555c;margin:6px 2px 0}
+.card{background:var(--card);border-radius:8px;padding:8px 12px;margin-bottom:10px;
+  font-size:14px;line-height:1.55;border-left:5px solid var(--line);font-variant-numeric:tabular-nums}
+.card h4{margin:0 0 4px;font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:#55555c}
+.card.c1{border-left-color:var(--s1)}
+.card.c2{border-left-color:var(--s2)}
+.card.c3{border-left-color:#666}
+.card .eq{margin:2px 0}
+.card .sub{color:#55555c;font-size:12.5px}
+.card i{font-family:Georgia,"Times New Roman",serif}
+g.h{cursor:grab}
+g.h:active{cursor:grabbing}
+</style>
+</head>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P4PD40TTJE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-P4PD40TTJE');
+</script>
+
+<body>
+<div id="app">
+  <div class="controls">
+    <label><span class="s1" id="l0"></span>
+      <select id="t0"></select></label>
+    <label><span class="s2" id="l1"></span>
+      <select id="t1"></select></label>
+    <label><input type="checkbox" id="snap"><span id="lsnap"></span></label>
+    <label><input type="checkbox" id="grid" checked><span id="lgrid"></span></label>
+    <label><input type="checkbox" id="mid"><span id="lmid"></span></label>
+    <button id="reset"></button>
+  </div>
+  <div class="main">
+    <div>
+      <svg id="plot" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg">
+        <defs><clipPath id="clip"><rect x="0" y="0" width="700" height="700" rx="8"/></clipPath></defs>
+        <g id="dyn" clip-path="url(#clip)"></g>
+        <g id="hg"></g>
+      </svg>
+      <div class="hint" id="hint"></div>
+    </div>
+    <div id="panel"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+'use strict';
+
+/* ---------- i18n (use ?lang=en in the iframe URL for English) ---------- */
+var lang = (new URLSearchParams(location.search).get('lang')||'it')==='en' ? 'en' : 'it';
+var T = {
+  it:{sys:'Sistema',cart:'Cartesiano',pol:'Polare',snap:'Aggancia alla griglia',grid:'Griglie',
+      mid:'Passaggio intermedio',reset:'Reset',
+      hint:'Trascina: l\u2019origine (cerchio vuoto), gli assi per ruotarli (cerchi pieni) e il punto P (nero).',
+      pc:'Coordinate di P',trans:'Trasformazione',frame:'rispetto alla figura',
+      origin:'Origine',rot:'rotazione degli assi',transl:'Traslazione',
+      rotation:'Rotazione',polaxis:'asse polare',coordsOf:'coordinate di',in:'nel sistema',
+      polNote:'(l\u2019asse polare funge da asse x\u2032, la direzione a +90\u00B0 da asse y\u2032)'},
+  en:{sys:'System',cart:'Cartesian',pol:'Polar',snap:'Snap to grid',grid:'Grids',
+      mid:'Intermediate step',reset:'Reset',
+      hint:'Drag: the origin (open circle), the axes to rotate them (filled circles) and the point P (black).',
+      pc:'Coordinates of P',trans:'Transformation',frame:'w.r.t. the figure',
+      origin:'Origin',rot:'axes rotation',transl:'Translation',
+      rotation:'Rotation',polaxis:'polar axis',coordsOf:'coordinates of',in:'in system',
+      polNote:'(the polar axis plays the role of the x\u2032 axis, the +90\u00B0 direction of the y\u2032 axis)'}
+}[lang];
+
+/* ---------- geometry / helpers ---------- */
+var NS='http://www.w3.org/2000/svg';
+var SC=50, C=350, LIM=6.9;
+function rad(d){return d*Math.PI/180;}
+function deg(r){return r*180/Math.PI;}
+function px(x){return C+x*SC;}
+function py(y){return C-y*SC;}
+function f(v,n){n=(n===undefined)?2:n;
+  if(Math.abs(v)<0.5*Math.pow(10,-n))v=0;
+  return v.toFixed(n).replace('-','\u2212');}
+function fp(v){return v<0?'('+f(v)+')':f(v);}
+function norm360(a){a=a%360;return a<0?a+360:a;}
+function polar(u,v){return {r:Math.hypot(u,v),th:norm360(deg(Math.atan2(v,u)))};}
+
+var svg=document.getElementById('plot'),
+    dyn=document.getElementById('dyn'),
+    hg=document.getElementById('hg'),
+    panel=document.getElementById('panel');
+
+function defState(){
+  return {
+    s:[{name:'S', tag:'',  color:'#1f3fd0',type:'cart',o:{x:0,y:0},  phi:0},
+       {name:'S\u2032',tag:'\u2032',color:'#d1302b',type:'cart',o:{x:1.5,y:1},phi:rad(30)}],
+    P:{x:3,y:3.5}
+  };
+}
+var st=defState();
+var drag=null;
+
+function ex(s){return {x:Math.cos(s.phi),y:Math.sin(s.phi)};}
+function ey(s){return {x:-Math.sin(s.phi),y:Math.cos(s.phi)};}
+function loc(s,p){
+  var dx=p.x-s.o.x, dy=p.y-s.o.y, c=Math.cos(s.phi), n=Math.sin(s.phi);
+  return {u:dx*c+dy*n, v:-dx*n+dy*c};
+}
+function exitT(o,d){
+  var t=1e9;
+  if(d.x>1e-9)t=Math.min(t,(LIM-o.x)/d.x); else if(d.x<-1e-9)t=Math.min(t,(-LIM-o.x)/d.x);
+  if(d.y>1e-9)t=Math.min(t,(LIM-o.y)/d.y); else if(d.y<-1e-9)t=Math.min(t,(-LIM-o.y)/d.y);
+  return t;
+}
+
+/* ---------- SVG string builders ---------- */
+function L(x1,y1,x2,y2,a){return '<line x1="'+px(x1)+'" y1="'+py(y1)+'" x2="'+px(x2)+'" y2="'+py(y2)+'" '+a+'/>';}
+function TX(x,y,t,a){return '<text x="'+px(x)+'" y="'+py(y)+'" '+a+'>'+t+'</text>';}
+function lab(col,size){
+  return 'font-size="'+(size||17)+'" font-style="italic" font-family="Georgia,serif" text-anchor="middle" '+
+         'dominant-baseline="middle" fill="'+col+'" stroke="#e3e3e6" stroke-width="3" paint-order="stroke"';
+}
+function arc(o,R,a0,da,a){
+  var N=Math.max(8,Math.ceil(Math.abs(da)/rad(4))),pts=[];
+  for(var k=0;k<=N;k++){var t=a0+da*k/N;
+    pts.push(px(o.x+R*Math.cos(t))+','+py(o.y+R*Math.sin(t)));}
+  return '<polyline points="'+pts.join(' ')+'" fill="none" '+a+'/>';
+}
+
+function drawGrid(s){
+  var h='',e=ex(s),n=ey(s),o=s.o,col=s.color,k,a;
+  if(s.type==='cart'){
+    for(k=-20;k<=20;k++){
+      h+=L(o.x+k*e.x-30*n.x,o.y+k*e.y-30*n.y,o.x+k*e.x+30*n.x,o.y+k*e.y+30*n.y,
+           'stroke="'+col+'" stroke-opacity=".26" stroke-width="1"');
+      h+=L(o.x+k*n.x-30*e.x,o.y+k*n.y-30*e.y,o.x+k*n.x+30*e.x,o.y+k*n.y+30*e.y,
+           'stroke="'+col+'" stroke-opacity=".26" stroke-width="1"');
+    }
+  }else{
+    for(k=1;k<=14;k++)
+      h+='<circle cx="'+px(o.x)+'" cy="'+py(o.y)+'" r="'+(k*SC)+'" fill="none" stroke="'+col+
+         '" stroke-opacity=".26" stroke-width="1"/>';
+    for(a=0;a<360;a+=15){
+      var t=s.phi+rad(a);
+      h+=L(o.x,o.y,o.x+30*Math.cos(t),o.y+30*Math.sin(t),
+           'stroke="'+col+'" stroke-opacity="'+(a%45===0?'.4':'.2')+'" stroke-width="1"');
+    }
+  }
+  return h;
+}
+
+function drawAxes(s){
+  var h='',e=ex(s),n=ey(s),o=s.o,col=s.color,k,tx,ty;
+  var tick='font-size="12" text-anchor="middle" dominant-baseline="middle" fill="'+col+
+           '" stroke="#e3e3e6" stroke-width="3" paint-order="stroke"';
+  function inside(x,y){return Math.abs(x)<LIM-0.15&&Math.abs(y)<LIM-0.15;}
+  if(s.type==='cart'){
+    h+=L(o.x-30*e.x,o.y-30*e.y,o.x+30*e.x,o.y+30*e.y,'stroke="'+col+'" stroke-width="2.2"');
+    h+=L(o.x-30*n.x,o.y-30*n.y,o.x+30*n.x,o.y+30*n.y,'stroke="'+col+'" stroke-width="2.2"');
+    for(k=-14;k<=14;k++){ if(!k)continue;
+      tx=o.x+k*e.x-0.3*n.x; ty=o.y+k*e.y-0.3*n.y;
+      if(inside(tx,ty))h+=TX(tx,ty,f(k,0),tick);
+      tx=o.x+k*n.x-0.32*e.x; ty=o.y+k*n.y-0.32*e.y;
+      if(inside(tx,ty))h+=TX(tx,ty,f(k,0),tick);
+    }
+    var t1=Math.max(exitT(o,e)-0.4,0.5), t2=Math.max(exitT(o,n)-0.4,0.5);
+    h+=TX(o.x+t1*e.x+0.4*n.x,o.y+t1*e.y+0.4*n.y,'x'+s.tag,lab(col));
+    h+=TX(o.x+t2*n.x-0.4*e.x,o.y+t2*n.y-0.4*e.y,'y'+s.tag,lab(col));
+  }else{
+    h+=L(o.x,o.y,o.x+30*e.x,o.y+30*e.y,'stroke="'+col+'" stroke-width="2.8"');
+    for(k=1;k<=14;k++){
+      tx=o.x+k*e.x-0.3*n.x; ty=o.y+k*e.y-0.3*n.y;
+      if(inside(tx,ty))h+=TX(tx,ty,f(k,0),tick);
+    }
+    var t3=Math.max(exitT(o,e)-0.5,0.5);
+    h+=TX(o.x+t3*e.x+0.42*n.x,o.y+t3*e.y+0.42*n.y,'\u03B8'+s.tag+'=0',lab(col,15));
+  }
+  h+=TX(o.x-0.38*e.x-0.38*n.x,o.y-0.38*e.y-0.38*n.y,'O'+s.tag,lab(col));
+  return h;
+}
+
+function drawProj(s,P){
+  var h='',e=ex(s),n=ey(s),o=s.o,col=s.color,q=loc(s,P);
+  if(s.type==='cart'){
+    var fu={x:o.x+q.u*e.x,y:o.y+q.u*e.y}, fv={x:o.x+q.v*n.x,y:o.y+q.v*n.y};
+    var d='stroke="'+col+'" stroke-width="1.6" stroke-dasharray="6 4"';
+    h+=L(P.x,P.y,fu.x,fu.y,d)+L(P.x,P.y,fv.x,fv.y,d);
+    h+='<circle cx="'+px(fu.x)+'" cy="'+py(fu.y)+'" r="3.5" fill="'+col+'"/>';
+    h+='<circle cx="'+px(fv.x)+'" cy="'+py(fv.y)+'" r="3.5" fill="'+col+'"/>';
+  }else{
+    var p=polar(q.u,q.v), th=rad(p.th);
+    h+=L(o.x,o.y,P.x,P.y,'stroke="'+col+'" stroke-width="2.6"');
+    if(p.r>0.05){
+      var R=Math.min(1,p.r*0.6);
+      h+=arc(o,R,s.phi,th,'stroke="'+col+'" stroke-width="2.2"');
+      var m=s.phi+th/2;
+      h+=TX(o.x+(R+0.45)*Math.cos(m),o.y+(R+0.45)*Math.sin(m),'\u03B8'+s.tag,lab(col));
+      var dx=(P.x-o.x)/p.r, dy=(P.y-o.y)/p.r;
+      h+=TX((o.x+P.x)/2-0.4*dy,(o.y+P.y)/2+0.4*dx,'r'+s.tag,lab(col));
+    }
+  }
+  return h;
+}
+
+function drawMid(){
+  var s1=st.s[0], s2=st.s[1], o=s2.o, e=ex(s1), n=ey(s1), g='#555', h='';
+  var d='stroke="'+g+'" stroke-width="1.4" stroke-dasharray="7 5" stroke-opacity=".85"';
+  h+=L(s1.o.x,s1.o.y,o.x,o.y,'stroke="'+g+'" stroke-width="1.4" stroke-dasharray="2 4"');
+  h+=L(o.x-30*e.x,o.y-30*e.y,o.x+30*e.x,o.y+30*e.y,d);
+  h+=L(o.x-30*n.x,o.y-30*n.y,o.x+30*n.x,o.y+30*n.y,d);
+  var t1=Math.max(exitT(o,e)-0.4,0.5), t2=Math.max(exitT(o,n)-0.4,0.5);
+  h+=TX(o.x+t1*e.x-0.4*n.x,o.y+t1*e.y-0.4*n.y,'x\u2033',lab(g));
+  h+=TX(o.x+t2*n.x+0.4*e.x,o.y+t2*n.y+0.4*e.y,'y\u2033',lab(g));
+  var D=deg(s2.phi-s1.phi); D=((D+180)%360+360)%360-180;
+  if(Math.abs(D)>1){
+    var da=rad(D);
+    h+=arc(o,1.35,s1.phi,da,'stroke="'+g+'" stroke-width="1.8"');
+    var m=s1.phi+da/2;
+    h+=TX(o.x+1.8*Math.cos(m),o.y+1.8*Math.sin(m),'\u0394',lab(g));
+  }
+  return h;
+}
+
+/* ---------- handles ---------- */
+var H={};
+function mk(key,kind,i,col,filled,r){
+  var g=document.createElementNS(NS,'g'); g.setAttribute('class','h');
+  g.innerHTML='<circle r="30" fill="transparent"/><circle r="'+(r||11)+'" fill="'+(filled?col:'#fff')+
+              '" stroke="'+col+'" stroke-width="3.5"/>';
+  hg.appendChild(g);
+  g.addEventListener('pointerdown',function(e){
+    drag={kind:kind,i:i}; g.setPointerCapture(e.pointerId); e.preventDefault();});
+  g.addEventListener('pointermove',onMove);
+  g.addEventListener('pointerup',function(){drag=null;});
+  g.addEventListener('pointercancel',function(){drag=null;});
+  H[key]=g;
+}
+[0,1].forEach(function(i){
+  var c=st.s[i].color;
+  mk('A'+i,'A',i,c,true,10);
+  mk('B'+i,'B',i,c,true,10);
+  mk('O'+i,'O',i,c,false,12);
+});
+mk('P','P',0,'#111',true,11);
+
+function place(g,x,y){g.setAttribute('transform','translate('+px(x)+','+py(y)+')');}
+
+function toWorld(e){
+  var pt=svg.createSVGPoint(); pt.x=e.clientX; pt.y=e.clientY;
+  var p=pt.matrixTransform(svg.getScreenCTM().inverse());
+  return {x:(p.x-C)/SC,y:(C-p.y)/SC};
+}
+function clamp(p,m){m=m||6.6;return {x:Math.max(-m,Math.min(m,p.x)),y:Math.max(-m,Math.min(m,p.y))};}
+function snapP(p){
+  if(!document.getElementById('snap').checked)return p;
+  return {x:Math.round(p.x*2)/2,y:Math.round(p.y*2)/2};
+}
+function onMove(e){
+  if(!drag)return;
+  var w=toWorld(e), s=st.s[drag.i];
+  if(drag.kind==='P'){ st.P=clamp(snapP(w)); }
+  else if(drag.kind==='O'){ s.o=clamp(snapP(w),6.3); }
+  else{
+    var dx=w.x-s.o.x, dy=w.y-s.o.y;
+    if(Math.hypot(dx,dy)<0.2)return;
+    var a=Math.atan2(dy,dx);
+    if(drag.kind==='B')a-=Math.PI/2;
+    if(document.getElementById('snap').checked)a=Math.round(a/rad(15))*rad(15);
+    s.phi=a;
+  }
+  render();
+}
+
+/* ---------- readout ---------- */
+function eq(t){return '<div class="eq">'+t+'</div>';}
+function sysCard(s,idx){
+  var q=loc(s,st.P), t=s.tag, h='<div class="card c'+(idx+1)+'"><h4>'+T.sys+' '+s.name+' \u2014 '+
+          (s.type==='cart'?T.cart:T.pol)+'</h4>';
+  if(s.type==='cart'){
+    h+=eq('(<i>x'+t+'</i>, <i>y'+t+'</i>) = ('+f(q.u)+', '+f(q.v)+')');
+  }else{
+    var p=polar(q.u,q.v);
+    h+=eq('(<i>r'+t+'</i>, <i>\u03B8'+t+'</i>) = ('+f(p.r)+', '+f(p.th,1)+'\u00B0)');
+    h+=eq('<span class="sub"><i>\u03B8'+t+'</i> = '+f(rad(p.th),3)+' rad</span>');
+  }
+  h+=eq('<span class="sub">'+T.origin+' <i>O'+t+'</i> = ('+f(s.o.x)+', '+f(s.o.y)+') '+T.frame+
+        '; '+T.rot+' <i>\u03C6'+t+'</i> = '+f(norm360(deg(s.phi)),1)+'\u00B0</span>');
+  return h+'</div>';
+}
+function transCard(){
+  var s1=st.s[0], s2=st.s[1], P=st.P;
+  var q1=loc(s1,P), q2=loc(s2,P), ab=loc(s1,s2.o);
+  var d=deg(s2.phi-s1.phi); d=((d+180)%360+360)%360-180; if(d===-180)d=180;
+  var D=rad(d), c=Math.cos(D), n=Math.sin(D);
+  var xm=q1.u-ab.u, ym=q1.v-ab.v;
+  var h='<div class="card c3"><h4>'+T.trans+' '+s1.name+' \u2192 '+s2.name+'</h4>';
+  h+=eq('<span class="sub">(<i>a</i>, <i>b</i>) = '+T.coordsOf+' <i>O\u2032</i> '+T.in+' '+s1.name+' = ('+
+        f(ab.u)+', '+f(ab.v)+');&nbsp; <i>\u0394</i> = <i>\u03C6\u2032</i> \u2212 <i>\u03C6</i> = '+f(d,1)+'\u00B0</span>');
+  if(s1.type==='pol'){
+    var p1=polar(q1.u,q1.v);
+    h+=eq('<i>x</i> = <i>r</i> cos <i>\u03B8</i> = '+f(p1.r)+'\u00B7cos '+f(p1.th,1)+'\u00B0 = '+f(q1.u));
+    h+=eq('<i>y</i> = <i>r</i> sin <i>\u03B8</i> = '+f(p1.r)+'\u00B7sin '+f(p1.th,1)+'\u00B0 = '+f(q1.v));
+  }
+  h+=eq('<b>'+T.transl+'</b>: (<i>x</i>\u2212<i>a</i>, <i>y</i>\u2212<i>b</i>) = ('+
+        f(q1.u)+'\u2212'+fp(ab.u)+', '+f(q1.v)+'\u2212'+fp(ab.v)+') = ('+f(xm)+', '+f(ym)+')');
+  h+=eq('<b>'+T.rotation+'</b>:');
+  h+=eq('<i>x\u2032</i> = (<i>x</i>\u2212<i>a</i>) cos<i>\u0394</i> + (<i>y</i>\u2212<i>b</i>) sin<i>\u0394</i> = '+
+        fp(xm)+'\u00B7'+fp(c*1)+' + '+fp(ym)+'\u00B7'+fp(n)+' = <b>'+f(q2.u)+'</b>');
+  h+=eq('<i>y\u2032</i> = \u2212(<i>x</i>\u2212<i>a</i>) sin<i>\u0394</i> + (<i>y</i>\u2212<i>b</i>) cos<i>\u0394</i> = '+
+        '\u2212'+fp(xm)+'\u00B7'+fp(n)+' + '+fp(ym)+'\u00B7'+fp(c)+' = <b>'+f(q2.v)+'</b>');
+  if(s2.type==='pol'){
+    var p2=polar(q2.u,q2.v);
+    h+=eq('<i>r\u2032</i> = \u221A(<i>x\u2032</i>\u00B2+<i>y\u2032</i>\u00B2) = <b>'+f(p2.r)+'</b>');
+    h+=eq('<i>\u03B8\u2032</i> = atan2(<i>y\u2032</i>, <i>x\u2032</i>) = <b>'+f(p2.th,1)+'\u00B0</b>');
+    h+=eq('<span class="sub">'+T.polNote+'</span>');
+  }
+  return h+'</div>';
+}
+
+/* ---------- render ---------- */
+function render(){
+  var s1=st.s[0], s2=st.s[1], showGrid=document.getElementById('grid').checked,
+      showMid=document.getElementById('mid').checked, h='';
+  if(showGrid)h+=drawGrid(s1)+drawGrid(s2);
+  if(showMid)h+=drawMid();
+  h+=drawAxes(s1)+drawAxes(s2);
+  h+=drawProj(s1,st.P)+drawProj(s2,st.P);
+  h+=TX(st.P.x+0.42,st.P.y+0.42,'P','font-size="20" font-weight="700" font-family="Georgia,serif" '+
+        'text-anchor="middle" dominant-baseline="middle" fill="#111" stroke="#e3e3e6" stroke-width="3" paint-order="stroke"');
+  dyn.innerHTML=h;
+
+  [0,1].forEach(function(i){
+    var s=st.s[i], e=ex(s), n=ey(s);
+    var dA=Math.min(3,Math.max(1,exitT(s.o,e)-0.5));
+    var dB=Math.min(3,Math.max(1,exitT(s.o,n)-0.5));
+    place(H['O'+i],s.o.x,s.o.y);
+    place(H['A'+i],s.o.x+dA*e.x,s.o.y+dA*e.y);
+    place(H['B'+i],s.o.x+dB*n.x,s.o.y+dB*n.y);
+    H['B'+i].style.display=(s.type==='cart')?'':'none';
+  });
+  place(H.P,st.P.x,st.P.y);
+
+  panel.innerHTML='<div class="card" style="border-left-color:#111"><h4>'+T.pc+'</h4>'+
+    eq('<span class="sub">'+T.frame+': (' +f(st.P.x)+', '+f(st.P.y)+')</span>')+'</div>'+
+    sysCard(s1,0)+sysCard(s2,1)+transCard();
+}
+
+/* ---------- controls ---------- */
+function fillSel(id,i){
+  var sel=document.getElementById(id);
+  sel.innerHTML='<option value="cart">'+T.cart+'</option><option value="pol">'+T.pol+'</option>';
+  sel.value=st.s[i].type;
+  sel.addEventListener('change',function(){st.s[i].type=sel.value;render();});
+}
+function labels(){
+  document.getElementById('l0').textContent=T.sys+' S:';
+  document.getElementById('l1').textContent=T.sys+' S\u2032:';
+  document.getElementById('lsnap').textContent=T.snap;
+  document.getElementById('lgrid').textContent=T.grid;
+  document.getElementById('lmid').textContent=T.mid;
+  document.getElementById('reset').textContent=T.reset;
+  document.getElementById('hint').textContent=T.hint;
+}
+labels(); fillSel('t0',0); fillSel('t1',1);
+['grid','mid','snap'].forEach(function(id){document.getElementById(id).addEventListener('change',render);});
+document.getElementById('reset').addEventListener('click',function(){
+  st=defState();
+  document.getElementById('t0').value='cart'; document.getElementById('t1').value='cart';
+  render();
+});
+render();
+})();
+</script>
+</body>
+</html>
