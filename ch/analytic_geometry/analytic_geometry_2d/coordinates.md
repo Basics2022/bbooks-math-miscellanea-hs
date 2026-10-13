@@ -1,9 +1,11 @@
 (geometry:analytic:2d:coordinates)=
-# Sistemi di coordinate
+# Punti nel piano. Sistemi di coordinate
 
 Il piano è uno spazio euclideo a due dimensioni, poiché i suoi punti possono essere descritti da una coppia di numeri - coordinate. I sistemi di coordiante più comuni per la rappresentazione dei punti del piano sono i **sistemi di coordinate cartesiane** e i **sistemi di coordinate polari**. Si possono scegliere diversi sistemi di coordinate (tipicamente si sceglie il sistema più comodo per il problema da affrontare) per descrivere lo stesso problema: il problema rimane comunque invariante rispetto alla scelta arbitraria del sistema di coordinate. Questa invarianza è direttamente legata alla legge di trasformazione delle coordinate di diversi sistemi.
 
+<!--
 L'invarianza di un problema dalla scelta arbitraria del sistema di coordinate viene discussa nell'esempio {prf:ref}`ex-coord-invariance-interactive`.
+-->
 
 (geometry:analytic:2d:coordinates:examples)=
 ## Esempi
@@ -22,35 +24,13 @@ Costruito questo sistema di coordinate, un punto $P$ può essere identificato co
 
 ```{list-table}
 :header-rows: 0
-* - ![](../../../media/tikz/geometry/coordinates-cartesian.svg)
-  - ![](../../../media/tikz/geometry/coordinates-cartesian-polar.svg)
-  - ![](../../../media/tikz/geometry/coordinates-polar.svg)
-```
-
-```{prf:example} Coordinate cartesiane e coordinate polari
-:label: ex-coords-cartesian-polar
-
-Una volta definito il sistema di coordinate cartesiano rappresentato nella figura di sinistra, i tre punti $A$, $B$, $C$ possono essere identificati con le loro coordinate cartesiane rispetto a questo sistema di riferimento
-
-$$\begin{aligned}
-A: \ & (x_A, y_A) = (3,5) \\
-B: \ & (x_B, y_B) = (-4, 3) \\
-C: \ & (x_C, y_C) = (1, -4) \\
-\end{aligned}$$
+* - ![Rappresentazione di 3 punti con coordinate cartesiane $P equiv (x_P, y_P)$](../../../media/tikz/geometry/coordinates-cartesian.svg)
+  - ![Rappresentazione di 3 punti con coordinate polari $P equiv (r_P, \theta_P)$](../../../media/tikz/geometry/coordinates-polar.svg)
 
 ```
-
-```{prf:example}
-:label: ex-coord-invariance-interactive
-
-<iframe src="../../../_static/coordinate-transform.html" width="100%" height="800" style="border:0"></iframe>
-
-<!--
-height="1100"
--->
+Rappresentazione di punti nel piano. Nell'immagine di sinistra, vengono usate coordinate cartesiane $P \equiv (x_P, y_P)$. Nell'immagine di destra, vengono usate coordinate polari $P \equiv (r_P, \theta_P)$. L'unità di misura naturale degli angoli sono i **radianti**.
 
 
-```
 
 
 (geometry:analytic:2d:coordinates:transform)=
@@ -58,10 +38,33 @@ height="1100"
 
 Vengono discusse alcune leggi di trasformazione tra le coordinate di diversi sistemi di coordinate.
 
-(geometry:analytic:2d:coordinates:transform:cartesian-polar)=
-## Trasformazione tra coordinate cartesiane e polari
+<!--
+L'esempio {prf:ref}`ex-coord-invariance-interactive` mostra la variazione delle coordinate di un punto $P$ al variare del sistema di coordinate scelto.
+-->
 
-Se si usano le stesse unità di misura per la lunghezza sui due assi cartesiani, e per la coordinata polare di un sistema di riferimento polare, la legge di trasformazione delle coordinate tra un sistema di coordinate cartesiane ortonormale e un sistema di coordinate polari, con la stessa origine e l'asse $x$ come direzione di riferimento per la misura dell'angolo $\theta$ è
+<!--
+```{prf:example} Esempio interattivo di trasformazione di coordinate di un punto $\ P$ nel piano, e invarianza
+:label: ex-coord-invariance-interactive
+
+In questo esempio viene mostrata la trasformazione di coordinate di un punto $P$ appartenente a un piano. Senza toccare il punto $P$ rispetto al piano, ma modificando i sistemi di riferimento, le coordinate cambiano. 
+
+
+<iframe src="../../../_static/coordinate-transform.html" width="100%" height="800" style="border:0"></iframe>
+
+height="1100"
+
+
+```
+-->
+
+(geometry:analytic:2d:coordinates:transform:cartesian-polar)=
+### Trasformazione tra coordinate cartesiane e polari con stessa origine
+
+In questa sezione viene discussa la trasformazione di coordinate tra un sistema cartesiano e un sistema polare
+* con la stessa origine
+* con le stesse unità di misura per la lunghezza sui due assi cartesiani, e per la coordinata radiale $r$ di un sistema di riferimento polare,
+
+Sotto queste ipotesi, la legge di trasformazione delle coordinate tra un sistema di coordinate cartesiane ortonormale e un sistema di coordinate polari, con la stessa origine e l'asse $x$ come direzione di riferimento per la misura dell'angolo $\theta$ è
 
 $$\begin{cases}
   x = r \cos \theta \\
@@ -73,7 +76,45 @@ Note le coordinate $x$, $y$ si possono calcolare le coordinate polari come
 $$\begin{cases}
   r = \sqrt{x^2 + y^2} \\
   \theta \quad \text{tale che} \quad \cos \theta = \frac{x}{\sqrt{x^2+y^2}} \quad \text{e} \quad \sin \theta = \frac{y}{\sqrt{x^2+y^2}}
-\end{cases}$$
+\end{cases}$$ (eq:coords:cartesian-to-polar)
+
+![](../../../media/tikz/geometry/coordinates-cartesian-polar.svg)
+
+
+````{prf:example} Coordinate cartesiane e coordinate polari
+:label: ex-coords-cartesian-polar
+
+```{list-table}
+:header-rows: 0
+* - ![](../../../media/tikz/geometry/coordinates-cartesian-1.svg)
+  - ![](../../../media/tikz/geometry/coordinates-polar-1.svg)
+```
+
+Una volta definito il sistema di coordinate cartesiano rappresentato nella figura di sinistra, i tre punti $A$, $B$, $C$ possono essere identificati con le loro coordinate cartesiane rispetto a questo sistema di riferimento
+
+$$\begin{aligned}
+A: \ & (x_A, y_A) = (2, 2\sqrt{3}) \\
+B: \ & (x_B, y_B) = (-4, 4) \\
+C: \ & (x_C, y_C) = (0, -3) \\
+\end{aligned}$$
+
+Usando le relazioni {eq}`eq:coords:cartesian-to-polar`, si possono calcolare le coordinate polari dei punti $A$, $B$, $C$, rispetto a un sistema di coordinate polari con la stessa origine e con l'asse $x$ come direzione di riferimento per la misura degli angoli. Ad esempio, per il punto $A$
+
+* la coordinata radiale $r_A$ è
+
+   $$r_A = \sqrt{x_A^2 + y_A^2} = \sqrt{ 4 + 12 } = 4$$
+
+* la coordinata angolare $\theta_A$ è quell'angolo che ha 
+  
+   $$\begin{aligned}
+      \cos \theta_A & = \frac{x_A}{r_A} = \frac{2}{4} = \frac{1}{2} \\
+      \sin \theta_A & = \frac{y_A}{r_A} = \frac{2 \sqrt{3}}{4} = \frac{\sqrt{3}}{2} \ ,
+   \end{aligned}$$
+
+   e quindi è l'angolo  $\theta_A = \frac{\pi}{3}$, cioè l'angolo di $60^\circ$.
+
+
+````
 
 
 (geometry:analytic:2d:coordinates:transform:cartesian)=

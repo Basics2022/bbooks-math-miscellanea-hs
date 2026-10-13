@@ -1,13 +1,17 @@
+<!--
 ```{article-info}
 :author: basics
 :date: "{sub-ref}`today`"
 :read-time: "{sub-ref}`wordcount-minutes` min read"
 ```
+-->
 
 (math-hs:algebra:vector:def)=
-# Prime definizioni
+# Defizioni e operazioni
 
+(math-hs:algebra:vector:def:vector-space)=
 ## Definizione di spazio vettoriale
+
 Uno spazio vettoriale è una struttura algebrica formata da:
 - un insieme $V$, i cui elementi sono chiamati **vettori**
 - un campo $K$ (di solito quello dei numeri reali $\mathbb{R}$ o complessi $\mathbb{C}$), i cui elementi sono chiamati **scalari**
@@ -20,7 +24,9 @@ Un'**operazione** è **chiusa** rispetto a un'insieme, se il risultato delle ope
 
 Nel seguito del capitolo verranno considerati solo campi vettoriali definiti sui numeri reali, per i quali $K = \mathbb{R}$.
 
-### Operazioni sui vettori: definizione di spazio vettoriale
+
+(math-hs:algebra:vector:def:operations)=
+## Operazioni sui vettori: definizione di spazio vettoriale
 
 - La **somma** tra due vettori $\mathbf{v}$, $\mathbf{w} \, \in V$ è il vettore
 
@@ -64,9 +70,11 @@ $$\alpha (\mathbf{u} + \mathbf{v}) = \alpha \mathbf{u} + \alpha \mathbf{v} $$
 ```
 
 (math-hs:algebra:vector:def:examples)=
-### Esempi
+## Esempi
 
-**Esempio 1 - $n$-upla di numeri reali ordinati.**
+```{prf:example} $n$-upla di numeri reali ordinati
+:label: ex-vectors-nuple
+
 Gli elementi $\mathbf{u} = (u_1, u_2, \dots, u_N)$ formano uno spazio vettoriale sui numeri reali, con le operazioni di somma e moltiplicazione per uno scalare con la seguenti definizioni:
 
 - somma:
@@ -81,23 +89,38 @@ $$
   \alpha \mathbf{u}       = \alpha (u_1, u_2, \dots, u_N)                   = (\alpha u_1, \alpha u_2, \dots, \alpha u_N)
 $$
 
-**Esempio 2 - vettori in uno spazio euclideo.**
+```
+
+```{prf:example} Vettori in uno spazio euclideo.
+:label: ex-vectors-euclidean-space
+
 Fissato un punto $O$ in uno spazio euclideo (**todo** *riferimenti?*), si può associare a ogni punto $P$ nello spazio il segmento orientato $\overrightarrow{OP}$. L'insieme dei segmenti orientati associati a ogni punto dello spazio forma uno spazio vettoriale con le operazioni di somma e moltiplicazione per uno scalare con le seguenti definizioni:
 
 - somma: tramite il metodo del parallelogramma **todo**
 
 - moltiplicazione per uno scalare: **todo**
+```
 
-(math-hs:algebra:vector:def:example:translations)=
-**Esempio 3 - spazio vettoriale delle traslazioni.** In uno spazio euclideo, l'insieme delle traslazioni forma uno spazio vettoriale.
+```{prf:example} Spazio vettoriale delle traslazioni.
+:label: ex-vectors-euclidean-space-translation
 
-**todo**
+In uno spazio euclideo, l'insieme delle traslazioni forma uno spazio vettoriale. 
 
-**Esempio 4 - polinomi di grado minore o uguale a $n$** L'insieme dei polinomi di grado minore o uguale a $n$,
+**todo**...
+
+```
+
+```{prf:example} Polinomi di grado minore o uguale a $n$.
+:label: ex-vectors-polynomials
+
+L'insieme dei polinomi di grado minore o uguale a $n$,
 
 $$\mathbf{u} = u_n x^n + u_{n-1} x^{n-1} + \dots u_1 x + u_0 \ ,$$
 
 forma uno spazio vettoriale con le usuali definizioni di somma e moltiplicazione per uno scalare valide per i polinomi.
+
+```
+
 
 ## Base di uno spazio vettoriale
 

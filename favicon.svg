@@ -46,16 +46,16 @@
          offset="1"
          id="stop1164" />
     </linearGradient>
-    <radialGradient
+    <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient1166"
-       id="radialGradient2186"
-       cx="64.277725"
-       cy="64.036537"
-       fx="64.277725"
-       fy="64.036537"
-       r="64.377953"
-       gradientUnits="userSpaceOnUse" />
+       id="linearGradient828"
+       x1="154.20972"
+       y1="-25.895451"
+       x2="25.831717"
+       y2="102.48255"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-26.209717,25.895449)" />
   </defs>
   <sodipodi:namedview
      pagecolor="#ffffff"
@@ -71,8 +71,8 @@
      id="namedview4"
      showgrid="false"
      inkscape:zoom="3.1819805"
-     inkscape:cx="61.010663"
-     inkscape:cy="70.390201"
+     inkscape:cx="3.0279067"
+     inkscape:cy="69.133122"
      inkscape:window-x="72"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
@@ -135,10 +135,10 @@
      r="19.200001"
      transform="rotate(-50)" />
   <rect
-     style="opacity:1;fill:url(#radialGradient2186);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.75590551;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+     style="opacity:0.59600004;fill:url(#linearGradient828);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.756;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
      id="rect820"
      width="128"
      height="128"
      x="0"
-     y="0" />
+     y="-1.9073486e-06" />
 </svg>

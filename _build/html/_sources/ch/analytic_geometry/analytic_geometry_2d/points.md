@@ -1,6 +1,7 @@
 (geometry:analytic:2d:points)=
 # Distanze e angoli
 
+(geometry:analytic:2d:points:point-point-distance)=
 ## Distanza tra punti
 Usando un sistema di coordinate cartesiane, la distanza tra due punti nel piano viene calcolata usando il teorema di Pitagora ,
 
@@ -15,6 +16,19 @@ $$|\vec{v}| = \sqrt{v_x^2 + v_y^2} \ .$$
 * - ![](../../../media/tikz/geometry/distance-cartesian.svg)
   - ![](../../../media/tikz/geometry/distance-cartesian-vector.svg)
 ```
+
+(geometry:analytic:2d:points:angles)=
+## Angoli tra due direzioni
+
+
+
+
+(geometry:analytic:2d:points:point-line-distance)=
+## Distanza punto-retta
+
+La discussione distanza di un punto $A$ da una retta $r$ viene definita come il minimo valore della distanza tra il punto $A$ dato e i punti appartenenti alla retta $r$. La discussione viene rimandata alla sezione [distanza punto-retta](geometry:analytic:2d:lines:distance-point-line) dopo aver discusso la retta nel piano.
+
+
 <!--
 ## Angoli tra direzioni
 Nello spazio euclideo, una direzione con verso può essere identificata da un vettore $\vec{v}$. Date due direzioni con verso identificate dai vettori $\vec{u}$, $\vec{v}$, l'angolo formato tra i due vettori può essere identificato dalla proiezione di un vettore sull'altro tramite il prodotto interno

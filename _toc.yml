@@ -43,6 +43,7 @@ parts:
   - file: ch/analytic_geometry/analytic_geometry_2d
     sections:
     - file: ch/analytic_geometry/analytic_geometry_2d/coordinates
+    - file: ch/analytic_geometry/analytic_geometry_2d/vectors
     - file: ch/analytic_geometry/analytic_geometry_2d/points
     - file: ch/analytic_geometry/analytic_geometry_2d/curves
     - file: ch/analytic_geometry/analytic_geometry_2d/lines

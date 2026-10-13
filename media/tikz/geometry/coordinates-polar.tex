@@ -50,7 +50,7 @@
     % Axis ticks
     \foreach \x in {0,15,...,345}{
         \draw[blue!50, thin] (0,0) -- ({\rmax*cos(\x)},{\rmax*sin(\x)});
-        \filldraw[blue!50] ({6*cos(\x)},{6*sin(\x)}) circle (0) node[above,rotate=\x] {$\theta=\x$};
+        \filldraw[blue!50] ({6*cos(\x)},{6*sin(\x)}) circle (0) node[above,rotate=\x] {$\theta=\x^\circ$};
     }
     \foreach \y in {0,...,\rmax}{
         \draw[purple!50, thin] (0,0) circle (\y);
@@ -60,9 +60,9 @@
     % Origin
     \filldraw[black] (0,0) circle (2pt) node[below left] {$O$};
 
-    \filldraw[black] ({2*cos( 30)}, {2*sin( 30)}) circle (2pt) node[above right] {$A$};
-    \filldraw[black] ({4*cos(135)}, {4*sin(135)}) circle (2pt) node[above left ] {$B$};
-    \filldraw[black] ({2.5*cos(-60)}, {2.5*sin(-60)}) circle (2pt) node[below right] {$C$};
+    \filldraw[black] ({2*cos( 30)}, {2*sin( 30)}) circle (2pt) node[above right] {$A \equiv \left(2, \frac{\pi}{6}\right)$};
+    \filldraw[black] ({4*cos(135)}, {4*sin(135)}) circle (2pt) node[above right] {$B \equiv \left(4, \frac{3}{4}\pi\right)$};
+    \filldraw[black] ({2.5*cos(-120)}, {2.5*sin(-120)}) circle (2pt) node[below right] {$C \equiv \left(2.5, \frac{4}{3}\pi\right)$};
 
     \draw[->, black!50] (1.8,0) arc (0: 30:1.8);
     \draw[->, black!50] (1.6,0) arc (0:135:1.6);
@@ -71,8 +71,8 @@
 %   \filldraw[blue]  (3,5) circle (1pt) node[below right] {$\equiv (3,5)$};
 %   \filldraw[black] (3,5) circle (2pt) node[below right] {$A \equiv (3,5)$};
 
-%   \filldraw[blue]  (-4,3) circle (1pt) node[below right] {$\equiv (-4,3)$};
-%   \filldraw[black] (-4,3) circle (2pt) node[below right] {$B \equiv (-4,3)$};
+    % \filldraw[blue]  (-4,3) circle (1pt) node[below right] {$\equiv (-4,3)$};
+    % \filldraw[black] (-4,3) circle (2pt) node[below right] {$B \equiv (-4,3)$};
 
 %   \filldraw[blue]   (1,-4) circle (0pt) node[above right=8pt] {$\qquad \ 1$};
 %   \filldraw[purple] (1,-4) circle (0pt) node[above right=8pt] {$\qquad \quad \ -4$};
