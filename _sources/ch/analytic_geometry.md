@@ -53,7 +53,9 @@ L'uso di sistemi di coordinate per la descrizione dello spazio crea un legame tr
 [**Spazi euclidei**](geometry:analytic:euclidean-space). Viene data una formalizzazione del concetto di spazio euclideo $E^d$, un modello dello spazio come percepito da noi nella nostra esperienza quotidiana. Negli spazi euclidei è possibile applicare senza troppe complicazioni - e non diremo altro - gli strumenti dell'[algebra vettoriale](math-hs:algebra:vector), usati qui per introdurre le coordinate cartesiane, e la misura di distanzee angoli in spazi euclidei.
 
 [**Geometria nel piano - spazio euclideo 2D, $E^2$**](geometry:analytic:2d).
-- [Sistemi di coordinate](geometry:analytic:2d:coordinates)
+- [Posizione dei punti nel piano]()
+  - [Sistemi di coordinate](geometry:analytic:2d:coordinates)
+  - [Vettore posizione](geometry:analytic:2d:vectors)
 - [Curve nel piano](geometry:analytic:2d:curves)
   - [Rette](geometry:analytic:2d:lines)
   - [Coniche](geometry:analytic:2d:conics)
