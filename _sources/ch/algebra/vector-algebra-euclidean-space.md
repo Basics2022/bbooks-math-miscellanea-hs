@@ -9,7 +9,11 @@
 (math-hs:algebra:vector:euclidean-space)=
 # Spazio vettoriale euclideo
 
-**Definizione di uno spazio vettoriale euclideo.** ...
+Questa sezione è un complemento alla [geometria analitica]()...
+
+<!--
+Lo spazio euclideo è il modello matematico della percezione comune dello spazio in cui viviamo,  
+-->
 
 Per motivi di chiarezza espositiva, pensando alle prime applicazioni nella geometria euclidea nel piano e nello spazio 3-dimensionale, i due spazi vengono discussi in sezioni separate
 
