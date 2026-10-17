@@ -1,6 +1,29 @@
 (infinitesimal-calculus:derivatives)=
 # Derivate
 
+```{dropdown} Argomenti
+:open:
+
+* [Definizione](infinitesimal-calculus:derivatives:def)
+
+* [Interpretazione geometrica](infinitesimal-calculus:derivatives:geom)
+
+* [Incremento di una funzione e differenziale](infinitesimal-calculus:derivatives:differential)
+
+* [Regole di derivazione](infinitesimal-calculus:derivatives:rules)
+
+* [Teoremi](infinitesimal-calculus:derivatives:thm)
+
+* [Derivate delle funzioni fondamentali](infinitesimal-calculus:derivatives:fund)
+
+* [Derivate di ordine superiore](infinitesimal-calculus:derivatives:higher)
+
+* [Serie di Taylor e di MacLaurin](infinitesimal-calculus:derivatives:taylor)
+
+* [Altre applicazioni](infinitesimal-calculus:derivatives:applications)
+
+```
+
 (infinitesimal-calculus:derivatives:def)=
 ## Definizione
 
