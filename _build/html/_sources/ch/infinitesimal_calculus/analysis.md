@@ -3,6 +3,27 @@
 
 In questa sezione viene richiamato il concetto di funzione introdotto nella sezione [precalcolo](math-hs:precalculus). Viene introdotto il concetto di [limite](infinitesimal-calculus:limits) e definito in termini topologici (intervalli, punti di accumulazione, insiemi aperti e chiusi,...). Il concetto di limite viene utilizzato per dare una definizione di [funzione continua](infinitesimal-calculus:continuous-fun). Vengono poi presentati alcuni teoremi e proprietà di limiti e funzioni continue.
 
+```{dropdown} Argomenti
+
+* [Funzioni reali a variabile reale](infinitesimal-calculus:analysis:real-functions)
+
+* [Limiti](infinitesimal-calculus:limits)
+
+* [Funzioni continue](infinitesimal-calculus:continuous-fun)
+
+* [Operazioni e teoremi sui limiti](infinitesimal-calculus:limits:thms)
+
+* [Limiti fondamentali](infinitesimal-calculus:limits:fund)
+
+* [Confronto di infiniti e infinitesimi](infinitesimal-calculus:limits:fund)
+
+* [Esempi](infinitesimal-calculus:limits:eval)
+
+* [Applicazioni](infinitesimal-calculus:analysis:applications)
+
+```
+
+
 <!--
 ````{dropdown} Contenuti e cosa sarebbe bene portare a casa
 :open:

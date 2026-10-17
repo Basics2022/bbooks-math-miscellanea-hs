@@ -51,19 +51,21 @@ rappresentazione astratta (vettoriale/tensoriale, che non dipende dalla scelta d
 
 ```
 
+<!--
 (math-hs:algebra:vector:euclidean-space:2d:vector-product)=
 ## Prodotto vettoriale
 
 (math-hs:algebra:vector:euclidean-space:2d:mixed-product)=
 ## Prodotto misto
+-->
 
 (math-hs:algebra:vector:euclidean-space:2d:cartesian-basis)=
 ## Base cartesiana
-In uno spazio vettoriale euclideo, $E^2$, è possibile definire una base carteisana, $\{ \hat{x}, \hat{y}, \}$, come un'insieme di vettori di norma unitaria e reciprocamente ortogonali,
+In uno spazio vettoriale euclideo, $E^2$, è possibile definire una base carteisana, $\{ \hat{x}, \hat{y} \}$, come un'insieme di vettori di norma unitaria e reciprocamente ortogonali,
 
 $$\begin{aligned}
   \hat{x} \cdot  \hat{x} & = \hat{y} \cdot  \hat{y} = 1 \\
-  \hat{x} \cdot  \hat{y} & =                        = 0
+  \hat{x} \cdot  \hat{y} & =                          0
 \end{aligned}$$
 
 Un vettore di uno spazio vettoriale può essere sempre scritto come combinazione lineare degli elementi di una base vettoriale,
@@ -77,7 +79,6 @@ Usando una base cartesiana, è immediato ricavare le coordinate cartesiane di un
 $$\begin{aligned}
   v_x & = \hat{x} \cdot \vec{v} \\
   v_y & = \hat{y} \cdot \vec{v} \\
-  v_z & = \hat{z} \cdot \vec{v} \\
 \end{aligned}$$
 
 ```
