@@ -46,6 +46,8 @@ repository:
 html:
   use_issues_button: true
   use_repository_button: true
+  comments:
+    hypothesis: true
 
 # sphinx extensions
 sphinx:
@@ -68,6 +70,9 @@ sphinx:
         colab_url: "https://colab.research.google.com"    # colab
         extra_footer: <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
     html_favicon: favicon.svg
+    hypothesis_config:
+      openSidebar: false
+      showHighlights: whenSidebarOpen
   extra_extensions:
     - sphinx_proof
     - sphinx_exercise
@@ -80,8 +85,5 @@ comments:
     mapping: title          # Matches post title to discussion thread
     reactions-enabled: true
     theme: light            # Options: light, dark, preferred_color_scheme
-  hypothesis:
-    openSidebar: false
-    showHighlights: whenSidebarOpen
 
 
