@@ -68,22 +68,37 @@ sphinx:
       use_issues_button: True
       launch_buttons:
         colab_url: "https://colab.research.google.com"    # colab
-        extra_footer: <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+        extra_footer: |
+            <div class="giscus"></div>
+            <script src="https://giscus.app/client.js"
+                    data-repo="your-username/your-repo-name"
+                    data-repo-id="R_kgDOM_BoZg"
+                    data-category="Announcements"
+                    data-category-id="DIC_kwDOM_BoZs4DJK-h"
+                    data-mapping="pathname"
+                    data-reactions-enabled="1"
+                    data-emit-metadata="0"
+                    data-input-position="bottom"
+                    data-theme="light"
+                    data-lang="en"
+                    crossorigin="anonymous"
+                    async>
+            </script>
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
     html_favicon: favicon.svg
+    # templates_path: ["_templates"]
     hypothesis_config:
       openSidebar: false
       showHighlights: whenSidebarOpen
   extra_extensions:
     - sphinx_proof
     - sphinx_exercise
-comments:
-  giscus:
-    repo: Basics2022/bbooks-math-miscellanea-hs
-    repo-id: R_kgDOM_BoZg
-    category: Announcements
-    category-id: DIC_kwDOM_BoZs4DJK-h
-    mapping: title          # Matches post title to discussion thread
-    reactions-enabled: true
-    theme: light            # Options: light, dark, preferred_color_scheme
-
-
+# comments:
+#   giscus:
+#     repo: Basics2022/bbooks-math-miscellanea-hs
+#     repo-id: R_kgDOM_BoZg
+#     category: Announcements
+#     category-id: DIC_kwDOM_BoZs4DJK-h
+#     mapping: title          # Matches post title to discussion thread
+#     reactions-enabled: true
+#     theme: light            # Options: light, dark, preferred_color_scheme
