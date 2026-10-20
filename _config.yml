@@ -73,8 +73,8 @@ sphinx:
     - sphinx_exercise
 comments:
   giscus:
-    repo: Basics2022/bbooks-math-miscellanea
-    repo-id: R_kgDOM_BoZq
+    repo: Basics2022/bbooks-math-miscellanea-hs
+    repo-id: R_kgDOM_BoZg
     category: Announcements
     category-id: DIC_kwDOM_BoZs4DJK-h
     mapping: title          # Matches post title to discussion thread
