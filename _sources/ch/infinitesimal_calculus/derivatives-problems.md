@@ -8,12 +8,84 @@
 Calcolare le derivate delle seguenti funzioni usando la definizione
 
 1. $f(x) = x^2$
-2. $f(x) = \sqrt{x}$
+2. $f(x) = x^3+1$
 3. $f(x) = e^x$
 4. $f(x) = \ln(x)$
 5. $f(x) = \sin(x)$
+6. $f(x) = \sqrt{x}$
+7. $f(x) = \frac{x+1}{x^2-2}$
 
 *Essendo la derivata definita come limite di un rapporto incrementale, questi esercizi possono essere visti come ulteriori esercizi sui limiti.*
+
+```
+
+```{dropdown} Soluzioni
+
+**1.**
+
+$$\begin{aligned}
+  f'(x) 
+  & = \lim_{\varepsilon \to 0} \frac{(x+\varepsilon)^2 - x^2}{\varepsilon} = \\
+  & = \lim_{\varepsilon \to 0} \frac{x^2+ 2 x \varepsilon + \varepsilon^2 - x^2}{\varepsilon} = \\
+  & = \lim_{\varepsilon \to 0} \frac{2 x \varepsilon + \varepsilon^2}{\varepsilon} = \\
+  & = \lim_{\varepsilon \to 0} \left( 2 x + \varepsilon^2 \right) = 2x  \ .
+\end{aligned}$$
+
+**2.**
+
+$$\begin{aligned}
+  f'(x) 
+  & = \lim_{\varepsilon \to 0} \frac{(x+\varepsilon)^3+1 - x^3-1}{\varepsilon} = \\
+  & = \lim_{\varepsilon \to 0} \frac{x^3+ 3 x^2 \varepsilon + 3 x \varepsilon^2 + \varepsilon^3 + 1 - x^3 - 1}{\varepsilon} = \\
+  & = \lim_{\varepsilon \to 0} \frac{3 x^2 \varepsilon + 3 x \varepsilon^2 + \varepsilon^3}{\varepsilon} = \\
+  & = \lim_{\varepsilon \to 0} \left( 3 x^2 + 3 x \varepsilon + \varepsilon^2 \right) = 3 x^2  \ .
+\end{aligned}$$
+
+**3.**
+
+$$\begin{aligned}
+  f'(x)
+  & = \lim_{\varepsilon \to 0} \frac{e^{x+\varepsilon} - e^x}{\varepsilon} = \\
+  & = \lim_{\varepsilon \to 0} \frac{e^{x} \left( e^{\varepsilon} - 1 \right)}{\varepsilon} = \\
+  & = e^{x} \ ,
+\end{aligned}$$
+
+avendo usato il [limite fondamentale](infinitesimal-calculus:limits:fund), $\lim_{\varepsilon \to 0} \frac{e^\varepsilon-1}{\varepsilon} = 1$, o analogamente, il confronto tra infinitesimi $e^{\varepsilon} - 1 \sim \varepsilon$ per $\varepsilon \to 0$.
+
+**4.** Vedi [dimostrazione delle derivate fondamentali](infinitesimal-calculus:derivatives:fund:notes)
+
+**5.** Vedi [dimostrazione delle derivate fondamentali](infinitesimal-calculus:derivatives:fund:notes)
+
+**6.** Per $x > 0$,
+
+$$\begin{aligned}
+ f'(x)
+ & = \lim_{\varepsilon \to 0} \frac{\sqrt{x+\varepsilon} - \sqrt{x}}{\varepsilon} = \\
+ & = \lim_{\varepsilon \to 0} \frac{\left(\sqrt{x+\varepsilon} - \sqrt{x}\right)\left(\sqrt{x+\varepsilon} + \sqrt{x}\right)}{\varepsilon\left(\sqrt{x+\varepsilon} + \sqrt{x}\right)} = \\
+ & = \lim_{\varepsilon \to 0} \frac{x+\varepsilon - x}{\varepsilon\left(\sqrt{x+\varepsilon} + \sqrt{x}\right)} = \\
+ & = \lim_{\varepsilon \to 0} \frac{1}{\left(\sqrt{x+\varepsilon} + \sqrt{x}\right)} = \frac{1}{2 \sqrt{x}} \ .
+\end{aligned}$$
+
+**7.** Per $x \ne 2$, dove la funzione non è nemmeno continua,
+
+$$\begin{aligned}
+  f'(x)
+  & = \lim_{\varepsilon \to 0} \frac{1}{\varepsilon} \left[ \frac{x+\varepsilon+1}{(x+\varepsilon)^2-2} - \frac{x+1}{x^2-2} \right] = \\
+  & = \lim_{\varepsilon \to 0} \frac{1}{\varepsilon} \frac{1}{x^2-2} \left[ (x^2-2) \frac{x+\varepsilon+1}{(x+\varepsilon)^2-2} - 1 \right] = \\
+  & = \lim_{\varepsilon \to 0} \frac{1}{\varepsilon} \frac{1}{x^2-2} \left[ \frac{(x^2-2)(x+\varepsilon+1) - (x+1)( (x+\varepsilon)^2-2)}{( (x+\varepsilon)^2-2)} \right] = \\
+  & = \lim_{\varepsilon \to 0} \frac{1}{\varepsilon} \frac{1}{x^2-2} \left[ \frac{x^3-2 x + x^2 -2 + \varepsilon(x^2-2) - x^3 - x^2 + 2 x + 2 - 2 \varepsilon x ( x+1) - \varepsilon^2 (x+1) }{ (x+\varepsilon)^2-2} \right] = \\
+  & = \lim_{\varepsilon \to 0} \frac{1}{\varepsilon} \frac{1}{x^2-2} \left[ \frac{\varepsilon (x^2-2 - 2x^2-2x) - \varepsilon^2 (x+1) }{ (x+\varepsilon)^2-2} \right] = \\
+  & = \frac{-x^2-2x-2}{(x^2-2)^2} \ ,
+\end{aligned}$$
+
+che coincide con il risultato ottenibile con la [regola di derivazione](infinitesimal-calculus:derivatives:rules) del rapporto di funzioni, {eq}`infinitesimal-calculus:derivatives:rules:division`,
+
+$$\begin{aligned}
+  \frac{d}{dx} \frac{f(x)}{g(x)} 
+  & = \frac{f'(x) g(x) - f(x) g'(x)}{g^2(x)} = \\
+  & = \frac{(x^2-2) - (x+1)\cdot 2 x}{(x^2-2)^2} = \\
+  & = \frac{-x^2 - 2x - 2}{(x^2-2)^2} \ .
+\end{aligned}$$
 
 ```
 
@@ -111,8 +183,9 @@ forme indeterminate $\frac{f(x)}{g(x)}$
 (infinitesimal-calculus:derivatives:problems:fun)=
 ## Studio di funzione: massimi, minimi e flessi; concavità
 Le derivate permettono di aggiungere dettagli allo studio di funzione, iniziato nel capitolo precedente. Grazie alle derivate, è possibile e studiarne la tendenza e la concavità, identificabili rispettivalemnte con $f'(x)$ e $f''(x)$); le condizioni di derivata prima e/o seconda nulla definiscono poi i punti di minimo e di massimo locali di una funzione (derivabile), i punti di flesso.
+
 ```{exercise}
-Si completi lo studio di funzione delle funzioni elencate nell'[esercizio](infinitesimal-calculus:analysis:problems:funs) nel capitolo precedente, con:
+Si completi lo studio di funzione delle funzioni elencate nell'{numref}`ex-limits-fun-study` nel capitolo precedente, con:
 - lo studio del segno, della tendenza e della concavità della funzione
 - i punti di minimo e massimo locale
 - i punti di flesso
