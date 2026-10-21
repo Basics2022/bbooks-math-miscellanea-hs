@@ -1,10 +1,14 @@
 (infinitesimal-calculus:analysis:problems)=
 # Problemi
 
-## Limiti
+## Funzioni reali a variabile reale
+
+
+## Calcolo dei limiti con definizione $\varepsilon-\delta$
 
 ```{exercise} Verifica/calcolo con definizione
 :class: dropdown
+
 1. Usa la definizione di limite $\varepsilon$-$\delta$ per provare che $\lim_{x \to 1} (3x - 4) = -1$.  
 2. Usa la definizione di limite per provare che $\lim_{x \to 0} \frac{1}{x^2}$ non esiste.  
 3. Usa la definizione di limite per provare che $\lim_{x \to 1} \frac{1}{x} = 1$.  
@@ -104,9 +108,16 @@ $$\begin{aligned}
 
 ```
 
+## Funzioni continue e punti di discontinuità
+
+## Teoremi sulle funzioni continue
+
+(infinitesimal-calculus:analysis:problems:elementary)=
+## Primi esercizi sul calcolo di limiti
+
 (infinitesimal-calculus:analysis:problems:limits-easy)=
 ```{exercise} Primi limiti
-:class: dropdown
+<!-- :class: dropdown -->
 1. $\lim_{x \to 1} (x^2 + 3x - 4)$  
 2. $\lim_{x \to -2} (x^3 + 2x^2 - 1)$  
 3. $\lim_{x \to 0} \frac{x + 1}{2x + 3}$  
@@ -115,8 +126,8 @@ $$\begin{aligned}
 6. $\lim_{x \to 0} \frac{x^2 - 1}{x}$  
 7. $\lim_{x \to 1} \frac{1 - x}{\sqrt{x} - 1}$  
 8. $\lim_{x \to 3} \frac{2x - 6}{x^2 - 9}$  
-9. $\lim_{x \to 0} \frac{x + \sin(x)}{x^2}$  
-10. $\lim_{x \to 0} e^x - 1$  
+9. $\lim_{x \to 0} \frac{x + \cos(x)}{x^2}$  
+10. $\lim_{x \to 0} \left( e^x - 1 \right)$  
 ```
 
 ```{dropdown} Soluzioni
@@ -151,17 +162,15 @@ $$\begin{aligned}
 
 7. Fattorizzando il numeratore come $1 - x = (1-\sqrt{x})(1+\sqrt{x})$, si può risolvere la forma indeterminata $\frac{0}{0}$,
 
-   $$\lim_{x \to 1} \frac{1-x}{\sqrt{x}-1} = \lim_{x \to 1} \frac{(1-\sqrt{x})(1+\sqrt{x})}{\sqrt{x}-1} = - lim_{x \to 1} -(1+\sqrt{x}) = - 2 \ .$$
+   $$\lim_{x \to 1} \frac{1-x}{\sqrt{x}-1} = \lim_{x \to 1} \frac{(1-\sqrt{x})(1+\sqrt{x})}{\sqrt{x}-1} = - \lim_{x \to 1} (1+\sqrt{x}) = - 2 \ .$$
 
 8. La fattorizzazione del numeratore e del denominatore della funzione razionale permette di risolvere la forma indeterminata $\frac{0}{0}$,
 
    $$\lim_{x \to 3} \frac{2x - 6}{x^2 - 9} = \lim_{x \to 3} \frac{2(x-3)}{(x-3)(x+3)} = \lim_{x \to 3} \frac{2}{x+3} = \frac{1}{3} \ .$$  
 
-9. Sostituendo $\sin x$ con l'asintotico $x$, facendo attenzione che non avvengano cancellazioni nell'ordine dell'infinitesimo,
+9. Il numeratore è una funzione continua che vale $1$ quando valutato in $x = 0$. Il denominatore è sempre non-negativo e si annulla per $x = 0$. E' una situazione in cui c'è una frazione con numeratore finito e denominatore che si annulla, che produce un'infinito. Poiché non c'è incertezza sul segno dei termini della frazione, non c'è incertezza sul segno dell'infinito
 
-   $$\lim_{x \to 0} \frac{x + \sin x}{x^2} = \lim_{x \to 0} \frac{x + x}{x^2} = \lim_{x \to 0} \frac{2}{x} = \infty \ .$$
-
-   Se viene specificato il lato del limite, è possibile anche determinare il segno dell'infinito, $\lim_{x \to 0^{\mp}} \frac{x + \sin x}{x^2} = \mp \infty$.
+   $$\lim_{x \to 0} \frac{x + \cos x}{x^2} = \lim_{x \to 0} \frac{1}{x^2} = + \infty \ .$$
 
 10. La funzione è continua, e quindi è sufficiente sostituire il valore $x = 0$ nella funzione
 
@@ -170,11 +179,65 @@ $$\begin{aligned}
 
 ```
 
+(infinitesimal-calculus:analysis:problems:limits-infinite)=
+```{exercise} Limiti all'infinito
+<!-- :class: dropdown -->
+
+Dove non indicato, risolvere il limite sia per $x \rightarrow - \infty$, sia per $x \rightarrow + \infty$. **Suggerimenti:** regole di fattorizzazione dei polinomi, riconoscere funzioni limitate
+
+1. $\lim_{x \to \infty} \frac{3x + 1}{2x - 4}$  
+2. $\lim_{x \to -\infty} \frac{x^2 - x + 1}{2x^2 + x}$  
+3. $\lim_{x \to \infty} \frac{\sqrt{x^2 + 1}}{x + 3}$  
+4. $\lim_{x \to -\infty} (x^3 - 2x + 5)$  
+5. $\lim_{x \to \infty} e^x$  
+6. $\lim_{x \to -\infty} e^x$  
+7. $\lim_{x \to \infty} \ln(x)$  
+8. $\lim_{x \to -\infty} \frac{1}{x} \sin\left(\frac{1}{x}\right)$  
+9.  $\lim_{x \to \infty} \frac{1}{x} \sin\left( x \right)$  
+10. $\lim_{x \to \infty} x \sin\left( x \right)$  
+11. $\lim_{x \to \infty} e^{-x^2+x}$  
+12. $\lim_{x \to +\infty} \ln \left| \frac{1}{1 + e^{-x}} \right|$  
+13. $\lim_{x \to -\infty} \ln \left| \frac{1}{1 - e^{-x}} \right|$
+
+```
+
+```{dropdown} Soluzioni
+:open:
+
+**1.** 
+
+$$\lim_{x \to \infty} \frac{3x + 1}{2x - 4} = \lim_{x \to \infty} \frac{\cancel{x} \left( 3 + \cancelto{0}{\frac{1}{x}} \right)}{\cancel{x} \left(2 - \cancelto{0}{\frac{4}{x}}\right)} = \frac{3}{2}$$
+
+**8.** Il limite del primo fattore vale $\lim_{x\to-\infty}\frac{1}{x} \to 0^-$; quindi anche il limite dell'argomento della funzione seno tende anch'esso a $0^-$, e quindi anche $\lim_{x\to\infty-} \sin\left(\frac{1}{x}\right) = 0^-$ ("il seno di un angolo molto piccolo e negativo è un numero molto piccolo e negativo"). Il prodotto di due zeri restituisce uno zero. Poiché i segni dei due zeri sono determinati, è possibile anche definire il segno dello zero del limite: meno per meno fa più, e quindi
+
+$$\lim_{x \to -\infty} \frac{1}{x} \sin\left(\frac{1}{x}\right) = 0^+ \ .$$
+
+**9.** Il limite del primo fattore è $0^-$, mentre il secondo fattore è una funzione oscillante (e quindi segno indefinito) limitata tra $-1$ e $1$. Il prodotto di uno zero per una numero finito è uno zero. Poiché il fattore finito ha segno indeterminato, non è possibile determinare il segno dello zero del limite,
+
+$$\lim_{x \to -\infty} \underbrace{\frac{1}{x}}_{\to 0^-} \underbrace{\sin\left( x \right)}_{\text{limitata}} = 0 \ .$$
+
+**10.** Il primo fattore tende all'infinito, mentre il secondo è oscillante e limitato tra [-1,1]. In questo caso non esiste il limite della funzione per $x \rightarrow \infty$. Se non si fosse convinti, il disegno del grafico della funzione può togliere ogni dubbio.
+
+**11.** La funzione è continua. L'esponente tende a $-\infty$ per $x \rightarrow \infty$. Poiché $e > 1$, allora
+
+$$\lim_{x \to \infty} e^{-x^2+x} = 0^+ \ .$$  
+
+**12.**
+
+**13.**
+
+$$\lim_{x \to -\infty} \ln \left| \frac{1}{1 - e^{-x}} \right| =\lim_{x \to -\infty} \ln \frac{1}{\left| 1 - e^{-x} \right|} = - \infty \ ,$$
+
+poiché il denominatore della frazione tende all'infinito, quindi la frazione tende a $0^+$. Il limite della funzione $\ln$ per l'argomento che tende a $0^+$ è $-\infty$
+
+
+
+```
 
 (infinitesimal-calculus:analysis:problems:limits-lateral)=
 ```{exercise} Limiti laterali
 :label: ex-limits-lateral
-:class: dropdown
+<!-- :class: dropdown -->
 
 1. $\lim_{x \to 0^+} \frac{1}{x}$  
 2. $\lim_{x \to 0^-} \frac{1}{x}$  
@@ -191,6 +254,10 @@ $$\begin{aligned}
 
 ```{dropdown} Soluzioni
 
+**1.**
+
+...
+
 **11.** I limiti
 
 $$\lim_{x \to 0^\mp} \frac{\cos x}{\text{atan} x} \, dx$$
@@ -205,24 +272,21 @@ $$\begin{aligned}
 
 ```
 
-(infinitesimal-calculus:analysis:problems:limits-infinite)=
-```{exercise} Limiti all'infinito
-:class: dropdown
-1. $\lim_{x \to \infty} \frac{3x + 1}{2x - 4}$  
-2. $\lim_{x \to -\infty} \frac{x^2 - x + 1}{2x^2 + x}$  
-3. $\lim_{x \to \infty} \frac{\sqrt{x^2 + 1}}{x + 3}$  
-4. $\lim_{x \to -\infty} (x^3 - 2x + 5)$  
-5. $\lim_{x \to \infty} e^x$  
-6. $\lim_{x \to -\infty} e^x$  
-7. $\lim_{x \to \infty} \ln(x)$  
-8. $\lim_{x \to \infty} x \sin\left(\frac{1}{x}\right)$  
-9. $\lim_{x \to \infty} \frac{\sin(x)}{x}$  
-10. $\lim_{x \to \infty} e^{-x}$  
-```
+<!--
+(infinitesimal-calculus:analysis:problems:indeterminate-forms-easy)=
+## Primi esercizi sulle forme indeterminate
+-->
+
+(infinitesimal-calculus:analysis:problems:fundamental-limits)=
+## Limiti fondamentali
+
+
+## Esercizi generali sui limiti
 
 (infinitesimal-calculus:analysis:problems:limits-indeterminate)=
 ```{exercise} Forme indeterminate
-:class: dropdown
+<!-- :class: dropdown -->
+
 Risolvere i seguenti limiti. Alcuni esercizi potrebbero non essere di immediata soluzione con gli strumenti introdotti in questo capitolo, ma saranno di soluzione immediata una volta introdotto il [teorema di de l'Hopital](infinitesimal-calculus:derivatives:thm:hopital) nel capitolo sulle [derivate](infinitesimal-calculus:derivatives).
 1. $\lim_{x \to 0} \frac{\sin(x)}{x}$  
 2. $\lim_{x \to \infty} \frac{\ln(x)}{x}$  
@@ -234,11 +298,25 @@ Risolvere i seguenti limiti. Alcuni esercizi potrebbero non essere di immediata 
 8. $\lim_{x \to \infty} \frac{x^2}{e^x}$  
 9. $\lim_{x \to 0^+} x \ln(x)$  
 10. $\lim_{x \to \infty} \frac{\ln(x)}{x^2}$  
+11. $\lim_{x \to 0} \frac{x + \sin(x)}{x^2}$  
+```
+
+```{dropdown} Soluzioni
+
+11. Sostituendo $\sin x$ con l'asintotico $x$, facendo attenzione che non avvengano cancellazioni nell'ordine dell'infinitesimo,
+
+   $$\lim_{x \to 0} \frac{x + \sin x}{x^2} = \lim_{x \to 0} \frac{x + x}{x^2} = \lim_{x \to 0} \frac{2}{x} = \infty \ .$$
+
+   Se viene specificato il lato del limite, è possibile anche determinare il segno dell'infinito, $\lim_{x \to 0^{\mp}} \frac{x + \sin x}{x^2} = \mp \infty$.
+
+   **Osservazione.** Una soluzione più rigorosa prevede di riconoscere che i limiti laterali destro e sinistro sono diversi tra loro e quindi il limite per $x \rightarrow 0$ della funzione **non esiste**.
+
 ```
 
 (infinitesimal-calculus:analysis:problems:limits-miscellanea)=
 ```{exercise} Esercizi vari
-:class: dropdown
+<!-- :class: dropdown -->
+
 Risolvere i seguenti limiti, con le tecniche studiate nel capitolo. Inutile qui fare la divisione degli esercizi per tecniche (razionalizzazione, confronto, limiti notevoli,...) e "tipo di limite", quando sono possibili diversi approcci portano allo stesso risultato. Che ognuno scelga l'approccio più conveniente. In linea generale, la tecnica risolutiva si riassume nella semplificazione del limite per ricondursi a casi più semplici di cui è noto il limite o facilmente calcolabile.
 
 1. $\lim_{x \to 0^+} x \ln(x)$  
@@ -321,6 +399,23 @@ Dimostrare i seguenti limiti:
 
 ```
 
+```{exercise} Altri esercizi
+<!-- :class: dropdown -->
+
+Dimostrare i seguenti limiti:
+1.  $\lim_{x \to 0} x^2 \sin\left(\frac{1}{x}\right) = 0$  
+2.  $\lim_{x \to 0} \frac{\sin(x)}{x^2} = \infty$  
+3.  $\lim_{x \to 0} x \cos\left(\frac{1}{x}\right) = 0$  
+4.  $\lim_{x \to 0} x^2 \ln(x) = 0$
+5.  ...  
+6.  ...
+7.  ...
+8.  ...
+9.  ...
+10. $\lim_{x \to 0} \frac{x \cos(x)}{1 + x^2} = 0$ 
+
+```
+
 ```{dropdown} Soluzioni
 
 1. Il limite è dimostrato osservando che la funzione $\sin y$ è limitata tra $-1$ e $1$ per qualsiasi valore dell'argomento, mentre il fattore $x^2$ tende a zero. Il limite è quindi nella forma $0 \cdot M$, con $M$ finito e limitato, e quindi è uguale a $0$.
@@ -343,6 +438,16 @@ Dimostrare i seguenti limiti:
 10. 
 
 ```
+
+## Studio di funzione: dominio, continuità, limiti
+
+## Metodo di bisezione
+
+
+
+
+
+
 
 
 (infinitesimal-calculus:analysis:problems:funs)=
