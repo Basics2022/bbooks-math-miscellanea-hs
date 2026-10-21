@@ -439,16 +439,6 @@ Dimostrare i seguenti limiti:
 
 ```
 
-## Studio di funzione: dominio, continuità, limiti
-
-## Metodo di bisezione
-
-
-
-
-
-
-
 
 (infinitesimal-calculus:analysis:problems:funs)=
 ## Studio di funzione: dominio, continuità e limiti
@@ -497,7 +487,9 @@ Dimostrare i seguenti limiti:
 
 <!-- (infinitesimal-calculus:analysis:problems:funs)= -->
 ```{exercise} Studio funzione - dominio, continuità, grafico
-:class: dropdown
+:label: ex-limits-fun-study
+<!-- :class: dropdown -->
+
 Delle seguenti funzioni viene chiesto di:
 - determinare se sono definite e continue in tutti i punti dei domini indicati; dove non è indicato esplicitamente il dominio, determinare il dominio
 - calcolare i limiti al finito in eventuali [punti di discontinuità](infinitesimal-calculus:continuous-fun:disc), e i limiti agli estremi del dominio
@@ -506,9 +498,10 @@ Delle seguenti funzioni viene chiesto di:
 - stabilire se le funzioni sono pari, dispari, periodiche, o se esistono rette o punti di simmetria
 - discutere l'esistenza degli zeri della funzione e darne una stima, facendo riferimento al [teorema degli zeri](infinitesimal-calculus:continuous-fun:thms:zeros) 
 
-1.  $f(x) = x^4-4x^2+3 \qquad , \qquad x \in \mathbb{R}$ (md.8)
-2.  $f(x) = \frac{x^2+12 x +20}{x+1} \qquad , \qquad x \in \mathbb{R}$ (md)
-3.  $f(x) = \frac{x^2+2x-4}{x^2-4x+3} \qquad , \qquad x \in [0,2]$ (md)
+0.  $f(x) = x^2 - \frac{1}{2}x^3$, $x \in \mathbb{R}$ <!-- (md.8) -->
+1.  $f(x) = x^4-4x^2+3$, $x \in \mathbb{R}$ <!-- (md.8) -->
+2.  $f(x) = \frac{x^2+12 x +20}{x+1}$, $x \in \mathbb{R}$ <!-- (md) -->
+3.  $f(x) = \frac{x^2+2x-4}{x^2-4x+3}$, $x \in [0,2]$ <!-- (md) -->
 4.  $f(x) = \ln \left[(x-1)(x-3)\right] $
 5.  $f(x) = \frac{|x-2|}{x-2}$
 6.  $f(x) = \frac{\sin x}{x}$

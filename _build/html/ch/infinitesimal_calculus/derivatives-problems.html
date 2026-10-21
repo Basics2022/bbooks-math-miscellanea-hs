@@ -559,15 +559,82 @@ document.write(`
 <p>Calcolare le derivate delle seguenti funzioni usando la definizione</p>
 <ol class="arabic simple">
 <li><p><span class="math notranslate nohighlight">\(f(x) = x^2\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(f(x) = \sqrt{x}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = x^3+1\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(f(x) = e^x\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(f(x) = \ln(x)\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(f(x) = \sin(x)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = \sqrt{x}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = \frac{x+1}{x^2-2}\)</span></p></li>
 </ol>
 <p><em>Essendo la derivata definita come limite di un rapporto incrementale, questi esercizi possono essere visti come ulteriori esercizi sui limiti.</em></p>
 </div>
 </div>
-<div class="exercise admonition" id="ch/infinitesimal_calculus/derivatives-problems-exercise-1">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Soluzioni<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>1.</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  f'(x) 
+  &amp; = \lim_{\varepsilon \to 0} \frac{(x+\varepsilon)^2 - x^2}{\varepsilon} = \\
+  &amp; = \lim_{\varepsilon \to 0} \frac{x^2+ 2 x \varepsilon + \varepsilon^2 - x^2}{\varepsilon} = \\
+  &amp; = \lim_{\varepsilon \to 0} \frac{2 x \varepsilon + \varepsilon^2}{\varepsilon} = \\
+  &amp; = \lim_{\varepsilon \to 0} \left( 2 x + \varepsilon^2 \right) = 2x  \ .
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text"><strong>2.</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  f'(x) 
+  &amp; = \lim_{\varepsilon \to 0} \frac{(x+\varepsilon)^3+1 - x^3-1}{\varepsilon} = \\
+  &amp; = \lim_{\varepsilon \to 0} \frac{x^3+ 3 x^2 \varepsilon + 3 x \varepsilon^2 + \varepsilon^3 + 1 - x^3 - 1}{\varepsilon} = \\
+  &amp; = \lim_{\varepsilon \to 0} \frac{3 x^2 \varepsilon + 3 x \varepsilon^2 + \varepsilon^3}{\varepsilon} = \\
+  &amp; = \lim_{\varepsilon \to 0} \left( 3 x^2 + 3 x \varepsilon + \varepsilon^2 \right) = 3 x^2  \ .
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text"><strong>3.</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  f'(x)
+  &amp; = \lim_{\varepsilon \to 0} \frac{e^{x+\varepsilon} - e^x}{\varepsilon} = \\
+  &amp; = \lim_{\varepsilon \to 0} \frac{e^{x} \left( e^{\varepsilon} - 1 \right)}{\varepsilon} = \\
+  &amp; = e^{x} \ ,
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">avendo usato il <a class="reference internal" href="analysis.html#infinitesimal-calculus-limits-fund"><span class="std std-ref">limite fondamentale</span></a>, <span class="math notranslate nohighlight">\(\lim_{\varepsilon \to 0} \frac{e^\varepsilon-1}{\varepsilon} = 1\)</span>, o analogamente, il confronto tra infinitesimi <span class="math notranslate nohighlight">\(e^{\varepsilon} - 1 \sim \varepsilon\)</span> per <span class="math notranslate nohighlight">\(\varepsilon \to 0\)</span>.</p>
+<p class="sd-card-text"><strong>4.</strong> Vedi <a class="reference internal" href="derivatives-notes.html#infinitesimal-calculus-derivatives-fund-notes"><span class="std std-ref">dimostrazione delle derivate fondamentali</span></a></p>
+<p class="sd-card-text"><strong>5.</strong> Vedi <a class="reference internal" href="derivatives-notes.html#infinitesimal-calculus-derivatives-fund-notes"><span class="std std-ref">dimostrazione delle derivate fondamentali</span></a></p>
+<p class="sd-card-text"><strong>6.</strong> Per <span class="math notranslate nohighlight">\(x &gt; 0\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+ f'(x)
+ &amp; = \lim_{\varepsilon \to 0} \frac{\sqrt{x+\varepsilon} - \sqrt{x}}{\varepsilon} = \\
+ &amp; = \lim_{\varepsilon \to 0} \frac{\left(\sqrt{x+\varepsilon} - \sqrt{x}\right)\left(\sqrt{x+\varepsilon} + \sqrt{x}\right)}{\varepsilon\left(\sqrt{x+\varepsilon} + \sqrt{x}\right)} = \\
+ &amp; = \lim_{\varepsilon \to 0} \frac{x+\varepsilon - x}{\varepsilon\left(\sqrt{x+\varepsilon} + \sqrt{x}\right)} = \\
+ &amp; = \lim_{\varepsilon \to 0} \frac{1}{\left(\sqrt{x+\varepsilon} + \sqrt{x}\right)} = \frac{1}{2 \sqrt{x}} \ .
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text"><strong>7.</strong> Per <span class="math notranslate nohighlight">\(x \ne 2\)</span>, dove la funzione non è nemmeno continua,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  f'(x)
+  &amp; = \lim_{\varepsilon \to 0} \frac{1}{\varepsilon} \left[ \frac{x+\varepsilon+1}{(x+\varepsilon)^2-2} - \frac{x+1}{x^2-2} \right] = \\
+  &amp; = \lim_{\varepsilon \to 0} \frac{1}{\varepsilon} \frac{1}{x^2-2} \left[ (x^2-2) \frac{x+\varepsilon+1}{(x+\varepsilon)^2-2} - 1 \right] = \\
+  &amp; = \lim_{\varepsilon \to 0} \frac{1}{\varepsilon} \frac{1}{x^2-2} \left[ \frac{(x^2-2)(x+\varepsilon+1) - (x+1)( (x+\varepsilon)^2-2)}{( (x+\varepsilon)^2-2)} \right] = \\
+  &amp; = \lim_{\varepsilon \to 0} \frac{1}{\varepsilon} \frac{1}{x^2-2} \left[ \frac{x^3-2 x + x^2 -2 + \varepsilon(x^2-2) - x^3 - x^2 + 2 x + 2 - 2 \varepsilon x ( x+1) - \varepsilon^2 (x+1) }{ (x+\varepsilon)^2-2} \right] = \\
+  &amp; = \lim_{\varepsilon \to 0} \frac{1}{\varepsilon} \frac{1}{x^2-2} \left[ \frac{\varepsilon (x^2-2 - 2x^2-2x) - \varepsilon^2 (x+1) }{ (x+\varepsilon)^2-2} \right] = \\
+  &amp; = \frac{-x^2-2x-2}{(x^2-2)^2} \ ,
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">che coincide con il risultato ottenibile con la <a class="reference internal" href="derivatives.html#infinitesimal-calculus-derivatives-rules"><span class="std std-ref">regola di derivazione</span></a> del rapporto di funzioni, <a class="reference internal" href="derivatives.html#equation-infinitesimal-calculus-derivatives-rules-division">(25.7)</a>,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \frac{d}{dx} \frac{f(x)}{g(x)} 
+  &amp; = \frac{f'(x) g(x) - f(x) g'(x)}{g^2(x)} = \\
+  &amp; = \frac{(x^2-2) - (x+1)\cdot 2 x}{(x^2-2)^2} = \\
+  &amp; = \frac{-x^2 - 2x - 2}{(x^2-2)^2} \ .
+\end{aligned}\end{split}\]</div>
+</div>
+</details><div class="exercise admonition" id="ch/infinitesimal_calculus/derivatives-problems-exercise-1">
 
 <p class="admonition-title"><span class="caption-number">Exercise 25.2 </span> (Verifica della derivabilità di funzioni)</p>
 <div class="section" id="exercise-content">
@@ -685,7 +752,7 @@ document.write(`
 
 <p class="admonition-title"><span class="caption-number">Exercise 25.7 </span></p>
 <div class="section" id="exercise-content">
-<p>Si completi lo studio di funzione delle funzioni elencate nell”<a class="reference internal" href="analysis-problems.html#infinitesimal-calculus-analysis-problems-funs"><span class="std std-ref">esercizio</span></a> nel capitolo precedente, con:</p>
+<p>Si completi lo studio di funzione delle funzioni elencate nell”<a class="reference internal" href="analysis-problems.html#ex-limits-fun-study"><span class="std std-numref">Exercise 24.10</span></a> nel capitolo precedente, con:</p>
 <ul class="simple">
 <li><p>lo studio del segno, della tendenza e della concavità della funzione</p></li>
 <li><p>i punti di minimo e massimo locale</p></li>
