@@ -9,7 +9,7 @@
 (geometry:analytic:euclidean-space)=
 # Spazio euclideo
 
-Qualitativamente, la geometria di Euclide corrisponde alla **concezione comune dello spazio** nel quale viviamo, e formalizzati negli *Elementi di Euclide*. Esso è il modello di spazio usato dalla meccanica classica.
+Qualitativamente, la geometria di Euclide corrisponde alla **concezione comune dello spazio** nel quale viviamo, e formalizzati negli *Elementi di Euclide*. Esso è il modello di spazio usato dalla meccanica classica. Dal punto di vista matematico, i punti di uno spazio euclideo di dimensione $n$ possono essere descritti usando un sistema di $n$ coordinate cartesiane.
 
 ```{prf:example} Geometria euclidea e senso comune 
 :label: ex-euclidean-space-common-sense
@@ -51,6 +51,10 @@ Alcuni esempi del senso comune formalizzato in una geometria euclidea
   $$P(q^1, q^2, \dots, q^n) \ .$$
   
    Così, ad esempio i punti di un piano possono essere rappresentati tramite l'uso di una coppia di coordinate, come discusso nella [sezione dedicata](geometry:analytic:2d:coordinates), mentre servono tre coordinate per rappresentare i punti nello spazio.
+
+* Uno spazio euclideo di dimensione $n$ può essere rappresentato da un sistema di $n$ coordinate cartesiane. Questo non è vero in generale per spazi geometrici non piatti.[^link-basics-math-euclidean-spaces]
+
+[^link-basics-math-euclidean-spaces]: Per una discussione più approfondita, i lettori più maturi possono fare riferimento alle note di matematica sulla [geometria differenziale](https://basics2022.github.io/bbooks-math-miscellanea/ch/differential-geometry/intro.html).
 
 ```
 
