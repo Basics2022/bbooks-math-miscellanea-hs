@@ -37,6 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/exercise.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/style.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/style.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -57,8 +58,9 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js"></script>
     <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/loading-attribute-polyfill@2.1.0/dist/loading-attribute-polyfill.min.js"></script>
+    <script src="../../_static/giscus.js"></script>
+    <script src="../../_static/giscus.js"></script>
+    <script src="../../_static/giscus.js"></script>
     <script src="../../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/design-tabs.js"></script>
@@ -705,7 +707,7 @@ L’integrale viene calcolato usando le proprietà dellle funzioni trigonometric
 \end{aligned}\end{split}\]</div>
 <p class="sd-card-text">poiché la funzione <span class="math notranslate nohighlight">\(\sin u\)</span> è limitata, mentre <span class="math notranslate nohighlight">\(\lim_{u\rightarrow -\infty} e^{u} = 0\)</span>.</p>
 <p class="sd-card-text"><strong>4.</strong>
-<strong>!!!</strong> Questo integrale è un <a class="reference internal" href="integrals.html#infinitesimal-calculus-integrals-improper"><span class="std std-ref">integrale improprio</span></a>, poiché l’integranda non è definita nel punto <span class="math notranslate nohighlight">\(x=0\)</span> e tende a <span class="math notranslate nohighlight">\(-\infty\)</span> per <span class="math notranslate nohighlight">\(x \rightarrow 0^-\)</span> e <span class="math notranslate nohighlight">\(+\infty\)</span> per <span class="math notranslate nohighlight">\(x \rightarrow 0^+\)</span> , come facilmente verificabile, e come già calcolato nell’esercizio <a class="reference internal" href="analysis-problems.html#ex-limits-lateral"><span class="std std-numref">Exercise 24.3</span></a> <strong>11.</strong> Se si intende questo integrale come <a class="reference internal" href="integrals.html#infinitesimal-calculus-integrals-improper-cauchy"><span class="std std-ref">valore principlae di Cauchy</span></a>, si può sfruttare le proprietà di simmetria della funzione senza indagare se l’integrale non sia la somma di due integrali divergenti.</p>
+<strong>!!!</strong> Questo integrale è un <a class="reference internal" href="integrals.html#infinitesimal-calculus-integrals-improper"><span class="std std-ref">integrale improprio</span></a>, poiché l’integranda non è definita nel punto <span class="math notranslate nohighlight">\(x=0\)</span> e tende a <span class="math notranslate nohighlight">\(-\infty\)</span> per <span class="math notranslate nohighlight">\(x \rightarrow 0^-\)</span> e <span class="math notranslate nohighlight">\(+\infty\)</span> per <span class="math notranslate nohighlight">\(x \rightarrow 0^+\)</span> , come facilmente verificabile, e come già calcolato nell’esercizio <a class="reference internal" href="analysis-problems.html#ex-limits-lateral"><span class="std std-numref">Exercise 24.4</span></a> <strong>11.</strong> Se si intende questo integrale come <a class="reference internal" href="integrals.html#infinitesimal-calculus-integrals-improper-cauchy"><span class="std std-ref">valore principlae di Cauchy</span></a>, si può sfruttare le proprietà di simmetria della funzione senza indagare se l’integrale non sia la somma di due integrali divergenti.</p>
 <p class="sd-card-text">Osservando che l’integranda è una <a class="reference internal" href="../precalculus/real-functions.html#math-hs-precalculus-real-functions-types"><span class="std std-ref">funzione dispari</span></a> (poiché prodotto della funzione pari <span class="math notranslate nohighlight">\(\cos x\)</span> e funzione dispari <span class="math notranslate nohighlight">\(\text{atan}(x)\)</span>) e il dominio di integrazione è simmetrico, si può concludere immediatamente che il valore dell’integrale è <span class="math notranslate nohighlight">\(0\)</span>.</p>
 <p class="sd-card-text"><strong>5.</strong> Osservando l’argomento della radice, è lecito che venga il sospetto che sia utile usare qualche proprietà delle funzioni trigonometriche. In particolare, grazie alla relazione <a class="reference internal" href="../trigonometry.html#equation-eq-trigonometry-costo2x-sinto2x">(18.4)</a>, si può scrivere per il generico angolo <span class="math notranslate nohighlight">\(1 + \cos (2a) = 2 \cos^2 a\)</span>. Questa relazione viene utilizzata per l’angolo <span class="math notranslate nohighlight">\(\frac{x}{2}\)</span> per poter scrivere l’integranda come</p>
 <div class="math notranslate nohighlight">
