@@ -86,6 +86,9 @@ sphinx:
         colab_url: "https://colab.research.google.com"    # colab
         extra_footer: <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
     html_favicon: favicon.svg
+    html_static_path: ["_static"]
+    html_js_files:
+      - giscus.js
     # templates_path: ["_templates"]
     # hypothesis_config:
     #   openSidebar: false
